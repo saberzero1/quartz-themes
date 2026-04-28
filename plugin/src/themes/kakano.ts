@@ -6,66 +6,67 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["roboto", "sf-mono"],
+    styleSettingsId: "kakano-style",
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --background-input: light-dark(hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ), hsl(from black h s l / 0.06)) !important;
+  ), hsl(from black h s l / 0.06));
   --background-modifier-active-hover: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --background-modifier-active-hover-alt: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --background-modifier-border: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --background-modifier-border-focus: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
-  --background-modifier-error: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
-  --background-modifier-error-hover: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
-  --background-modifier-hover: hsl(215, 67%, 45%) !important;
+  );
+  --background-modifier-error: hsl(from hsl(215, 67%, 45%) 356 s l);
+  --background-modifier-error-hover: hsl(from hsl(215, 67%, 45%) 356 s l);
+  --background-modifier-hover: hsl(215, 67%, 45%);
   --background-modifier-message: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
-  --background-modifier-success: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  );
+  --background-modifier-success: hsl(from hsl(215, 67%, 45%) 124 s l);
   --background-primary: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
+  );
   --background-prompt: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --background-secondary: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
-  --base-h: 215 !important;
-  --base-l: 45% !important;
-  --base-s: 67% !important;
+  );
+  --base-h: 215;
+  --base-l: 45%;
+  --base-s: 67%;
   --bases-cards-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
-  --bases-cards-cover-background: light-dark(hsl(from black h s l / 0.06), hsl(from white h s l / 0.06)) !important;
-  --bases-cards-radius: 0.5rem !important;
+  );
+  --bases-cards-cover-background: light-dark(hsl(from black h s l / 0.06), hsl(from white h s l / 0.06));
+  --bases-cards-radius: 0.5rem;
   --bases-cards-shadow: 0 0 0.05rem
       color-mix(in srgb, color-mix(
     in srgb,
@@ -94,7 +95,7 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) 10%, transparent) !important;
+  ) 10%, transparent);
   --bases-cards-shadow-hover: 0 0 0.05rem
       color-mix(in srgb, color-mix(
     in srgb,
@@ -123,63 +124,63 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) 10%, transparent) !important;
+  ) 10%, transparent);
   --bases-embed-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
-  --bases-embed-border-radius: 0.25rem !important;
+  );
+  --bases-embed-border-radius: 0.25rem;
   --bases-group-heading-property-color: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
-  --bases-group-heading-property-size: 0.7rem !important;
-  --bases-header-padding-end: 0.5em !important;
-  --bases-header-padding-start: 0.5em !important;
+  ), transparent 30%);
+  --bases-group-heading-property-size: 0.7rem;
+  --bases-header-padding-end: 0.5em;
+  --bases-header-padding-start: 0.5em;
   --bases-table-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --bases-table-cell-background-active: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
+  );
   --bases-table-cell-shadow-active: 0 0 0 2px color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(215, 67%, 45%) !important;
-  --bases-table-container-border-radius: 0.25rem !important;
+  );
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(215, 67%, 45%);
+  --bases-table-container-border-radius: 0.25rem;
   --bases-table-header-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
-  --bases-table-header-background-hover: hsl(215, 67%, 45%) !important;
+  );
+  --bases-table-header-background-hover: hsl(215, 67%, 45%);
   --bases-table-header-color: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --bases-table-summary-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
-  --bases-table-summary-background-hover: hsl(215, 67%, 45%) !important;
+  );
+  --bases-table-summary-background-hover: hsl(215, 67%, 45%);
   --blockquote-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
-  --bodyFont: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  );
+  --bodyFont: var(--font-text, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
   --callout-padding: 0.75em
     1.5em;
   --callout-radius: 0.25rem;
@@ -187,95 +188,95 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
+  );
   --canvas-card-label-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
-  --canvas-controls-radius: 0.25rem !important;
-  --caret-color: hsl(258, 150%, 80%) !important;
-  --checkbox-border-color: hsl(215, 67%, 45%) !important;
-  --checkbox-border-color-hover: hsl(255, 89.76%, 75.9%) !important;
-  --checkbox-color: hsl(215, 67%, 45%) !important;
+  );
+  --canvas-controls-radius: 0.25rem;
+  --caret-color: hsl(258, 150%, 80%);
+  --checkbox-border-color: hsl(215, 67%, 45%);
+  --checkbox-border-color-hover: hsl(255, 89.76%, 75.9%);
+  --checkbox-color: hsl(215, 67%, 45%);
   --checkbox-marker-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
-  --checkbox-radius: 0.25rem !important;
+  );
+  --checkbox-radius: 0.25rem;
   --checklist-done-color: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
-  --clickable-icon-radius: 0.25rem !important;
+  ), transparent 30%);
+  --clickable-icon-radius: 0.25rem;
   --code-background: light-dark(
     hsl(from black h s l / 0.06),
     hsl(from white h s l / 0.06)
-  ) !important;
+  );
   --code-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
-  --code-bracket-background: hsl(215, 67%, 45%) !important;
+  );
+  --code-bracket-background: hsl(215, 67%, 45%);
   --code-comment: light-dark(
     hsl(from black h s l / 0.5),
     hsl(from white h s l / 0.5)
-  ) !important;
-  --code-function: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
-  --code-important: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
-  --code-keyword: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
+  );
+  --code-function: hsl(from hsl(215, 67%, 45%) 57 s l);
+  --code-important: hsl(from hsl(215, 67%, 45%) 27 s l);
+  --code-keyword: hsl(from hsl(215, 67%, 45%) 331 s l);
   --code-normal: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
-  --code-operator: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
-  --code-property: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
+  );
+  --code-operator: hsl(from hsl(215, 67%, 45%) 356 s l);
+  --code-property: hsl(from hsl(215, 67%, 45%) 179 s l);
   --code-punctuation: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
-  --code-radius: 0.25rem !important;
-  --code-string: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
-  --code-tag: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
-  --code-value: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
-  --codeFont: ui-monospace, Menlo, SFMono-Regular, Consolas,
+  ), transparent 30%);
+  --code-radius: 0.25rem;
+  --code-string: hsl(from hsl(215, 67%, 45%) 124 s l);
+  --code-tag: hsl(from hsl(215, 67%, 45%) 356 s l);
+  --code-value: hsl(from hsl(215, 67%, 45%) 253 s l);
+  --codeFont: var(--font-monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
         "Roboto Mono", "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
-        "Roboto Mono", "Source Code Pro", monospace !important;
-  --collapse-icon-color: hsl(215, 67%, 45%) !important;
-  --collapse-icon-color-collapsed: hsl(215, 67%, 45%) !important;
-  --color-blue: hsl(from hsl(215, 67%, 45%) 219 s l) !important;
-  --color-cyan: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
-  --color-green: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
-  --color-orange: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
-  --color-pink: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
-  --color-purple: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
-  --color-red: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
-  --color-yellow: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
-  --dark: color-mix(
+        "Roboto Mono", "Source Code Pro", monospace);
+  --collapse-icon-color: hsl(215, 67%, 45%);
+  --collapse-icon-color-collapsed: hsl(215, 67%, 45%);
+  --color-blue: hsl(from hsl(215, 67%, 45%) 219 s l);
+  --color-cyan: hsl(from hsl(215, 67%, 45%) 179 s l);
+  --color-green: hsl(from hsl(215, 67%, 45%) 124 s l);
+  --color-orange: hsl(from hsl(215, 67%, 45%) 27 s l);
+  --color-pink: hsl(from hsl(215, 67%, 45%) 331 s l);
+  --color-purple: hsl(from hsl(215, 67%, 45%) 253 s l);
+  --color-red: hsl(from hsl(215, 67%, 45%) 356 s l);
+  --color-yellow: hsl(from hsl(215, 67%, 45%) 57 s l);
+  --dark: var(--text-normal, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
-  --darkgray: color-mix(
+  ));
+  --darkgray: var(--text-normal, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  ));
   --divider-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
-  --divider-color-hover: hsl(215, 67%, 45%) !important;
-  --divider-width: 0 !important;
+  );
+  --divider-color-hover: hsl(215, 67%, 45%);
+  --divider-width: 0;
   --embed-background: hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ) !important;
+  );
   --embed-block-shadow-hover: 0 0 0 1px color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -284,210 +285,210 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
-  --embed-border-left: none !important;
-  --embed-border-right: none !important;
-  --embed-border-start: none !important;
-  --embed-padding: 1em !important;
+  );
+  --embed-border-left: none;
+  --embed-border-right: none;
+  --embed-border-start: none;
+  --embed-padding: 1em;
   --empty-pane-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --file-header-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
+  );
   --file-header-background-focused: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
+  );
   --file-header-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --file-header-font-size: 0.8rem !important;
-  --file-line-width: 37.5rem !important;
-  --file-margins: 0 2em !important;
-  --flair-background: hsl(215, 67%, 45%) !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --file-header-font-size: 0.8rem;
+  --file-line-width: 37.5rem;
+  --file-margins: 0 2em;
+  --flair-background: hsl(215, 67%, 45%);
   --flair-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
+  );
   --font-default: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-interface: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-interface-theme: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-mermaid: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-monospace: ui-monospace, Menlo, SFMono-Regular, Consolas,
         "Roboto Mono", "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
-        "Roboto Mono", "Source Code Pro", monospace !important;
+        "Roboto Mono", "Source Code Pro", monospace;
   --font-monospace-default: ui-monospace, Menlo, SFMono-Regular, Consolas,
-        "Roboto Mono", "Source Code Pro", monospace !important;
+        "Roboto Mono", "Source Code Pro", monospace;
   --font-monospace-theme: ui-monospace, Menlo, SFMono-Regular, Consolas,
-        "Roboto Mono", "Source Code Pro", monospace !important;
+        "Roboto Mono", "Source Code Pro", monospace;
   --font-print: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Arial' !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Arial';
   --font-text: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-text-theme: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --font-ui-large: 1.125rem !important;
-  --font-ui-medium: 1rem !important;
-  --font-ui-small: 0.8rem !important;
-  --font-ui-smaller: 0.7rem !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-ui-large: 1.125rem;
+  --font-ui-medium: 1rem;
+  --font-ui-small: 0.8rem;
+  --font-ui-smaller: 0.7rem;
   --footnote-divider-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --footnote-id-color: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --footnote-id-color-no-occurrences: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --footnote-input-background-active: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
-  --footnote-radius: 0.25rem !important;
+  );
+  --footnote-radius: 0.25rem;
   --graph-node: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
-  --graph-node-attachment: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
-  --graph-node-tag: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  ), transparent 30%);
+  --graph-node-attachment: hsl(from hsl(215, 67%, 45%) 57 s l);
+  --graph-node-tag: hsl(from hsl(215, 67%, 45%) 124 s l);
   --graph-node-unresolved: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --graph-text: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
-  --gray: color-mix(in srgb, color-mix(
+  );
+  --gray: var(--text-muted, color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
-  --h1-line-height: 1.5 !important;
-  --h1-size: 39.81312px !important;
-  --h1-weight: 100 !important;
-  --h2-line-height: 1.5 !important;
-  --h2-size: 33.1776px !important;
-  --h2-weight: 200 !important;
-  --h3-line-height: 1.5 !important;
-  --h3-size: 27.648px !important;
-  --h3-weight: 300 !important;
-  --h4-line-height: 1.5 !important;
-  --h4-size: 23.04px !important;
-  --h4-weight: 400 !important;
-  --h5-size: 19.2px !important;
-  --h5-weight: 500 !important;
-  --h6-size: 16px !important;
-  --h6-weight: 500 !important;
-  --header-height: calc(18px + 1rem) !important;
-  --headerFont: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  ), transparent 30%));
+  --h1-line-height: 1.5;
+  --h1-size: 39.81312px;
+  --h1-weight: 100;
+  --h2-line-height: 1.5;
+  --h2-size: 33.1776px;
+  --h2-weight: 200;
+  --h3-line-height: 1.5;
+  --h3-size: 27.648px;
+  --h3-weight: 300;
+  --h4-line-height: 1.5;
+  --h4-size: 23.04px;
+  --h4-weight: 400;
+  --h5-size: 19.2px;
+  --h5-weight: 500;
+  --h6-size: 16px;
+  --h6-weight: 500;
+  --header-height: calc(18px + 1rem);
+  --headerFont: var(--font-text, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
   --heading-formatting: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
-  --heading-spacing: 0.67em !important;
-  --highlight: hsl(215, 67%, 45%) !important;
+  );
+  --heading-spacing: 0.67em;
+  --highlight: var(--background-modifier-hover, hsl(215, 67%, 45%));
   --hr-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
-  --icon-color: hsl(215, 67%, 45%) !important;
-  --icon-color-active: light-dark(white, black) !important;
+  );
+  --icon-color: hsl(215, 67%, 45%);
+  --icon-color-active: light-dark(white, black);
   --icon-color-focused: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
+  );
   --icon-color-hover: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
-  --inline-title-line-height: 1.5 !important;
-  --inline-title-size: 27.648px !important;
-  --inline-title-weight: 400 !important;
-  --input-border-width: 2px !important;
+  );
+  --inline-title-line-height: 1.5;
+  --inline-title-size: 27.648px;
+  --inline-title-weight: 400;
+  --input-border-width: 2px;
   --input-date-separator: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --input-placeholder-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --input-shadow: 0px 1px 2px
     hsl(
       215,
       6.7%,
       4.5%,
       0.1
-    ) !important;
-  --interactive-accent: hsl(215, 67%, 45%) !important;
-  --light: color-mix(
+    );
+  --interactive-accent: hsl(215, 67%, 45%);
+  --light: var(--background-primary, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
-  --lightgray: color-mix(
+  ));
+  --lightgray: var(--background-secondary, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
-  --link-decoration-thickness: 1px !important;
-  --link-unresolved-decoration-style: dashed !important;
-  --list-bullet-size: 0.25em !important;
-  --list-indent: 1.5em !important;
+  ));
+  --link-decoration-thickness: 1px;
+  --link-unresolved-decoration-style: dashed;
+  --list-bullet-size: 0.25em;
+  --list-indent: 1.5em;
   --list-marker-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --list-marker-color-collapsed: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --list-marker-color-hover: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --menu-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
-  --menu-radius: 0.5rem !important;
+  );
+  --menu-radius: 0.5rem;
   --menu-shadow: 0 0 0.05rem
       color-mix(in srgb, color-mix(
     in srgb,
@@ -516,285 +517,285 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) 10%, transparent) !important;
+  ) 10%, transparent);
   --metadata-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --metadata-divider-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
-  --metadata-gap: 0.5em !important;
+  );
+  --metadata-gap: 0.5em;
   --metadata-input-background-active: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
+  );
   --metadata-input-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --metadata-input-text-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --metadata-label-background-active: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
+  );
   --metadata-label-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --metadata-label-text-color: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --metadata-label-text-color-hover: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --metadata-property-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
-  --metadata-property-background-active: hsl(215, 67%, 45%) !important;
+  );
+  --metadata-property-background-active: hsl(215, 67%, 45%);
   --metadata-property-background-hover: hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ) !important;
+  );
   --metadata-property-box-shadow-focus: 0 0 0 2px color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
-  --metadata-property-box-shadow-hover: none !important;
-  --metadata-sidebar-input-font-size: 0.8rem !important;
-  --metadata-sidebar-label-font-size: 0.8rem !important;
+  );
+  --metadata-property-box-shadow-hover: none;
+  --metadata-sidebar-input-font-size: 0.8rem;
+  --metadata-sidebar-label-font-size: 0.8rem;
   --modal-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
-  --modal-border-color: black !important;
-  --modal-border-width: 0 !important;
-  --modal-max-height: calc(100vh - 2em) !important;
-  --modal-max-width: calc(100vw - 2em) !important;
-  --modal-radius: 0.75rem !important;
-  --modal-width: 65rem !important;
+  );
+  --modal-border-color: black;
+  --modal-border-width: 0;
+  --modal-max-height: calc(100vh - 2em);
+  --modal-max-width: calc(100vw - 2em);
+  --modal-radius: 0.75rem;
+  --modal-width: 65rem;
   --nav-collapse-icon-color: hsl(
     from hsl(215, 67%, 45%) h s l / 0.75
-  ) !important;
+  );
   --nav-collapse-icon-color-collapsed: hsl(
     from hsl(215, 67%, 45%) h s l / 0.75
-  ) !important;
+  );
   --nav-heading-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --nav-heading-color-collapsed: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --nav-heading-color-collapsed-hover: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --nav-heading-color-hover: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --nav-indentation-guide-color: hsl(
     from hsl(215, 67%, 45%) h s l / 0.25
-  ) !important;
-  --nav-item-background-active: hsl(215, 67%, 45%) !important;
+  );
+  --nav-item-background-active: hsl(215, 67%, 45%);
   --nav-item-background-hover: hsl(
     from hsl(215, 67%, 45%) h s l / 0.75
-  ) !important;
+  );
   --nav-item-background-selected: hsl(
     from hsl(215, 67%, 45%) h s l / 0.25
-  ) !important;
-  --nav-item-children-margin-start: 7.5px !important;
-  --nav-item-children-padding-start: calc(1em - 0.5px) !important;
+  );
+  --nav-item-children-margin-start: 7.5px;
+  --nav-item-children-padding-start: calc(1em - 0.5px);
   --nav-item-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --nav-item-color-active: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
-  --nav-item-color-hover: black !important;
+  );
+  --nav-item-color-hover: black;
   --nav-item-color-selected: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
-  --nav-item-padding: 0.375em 0.75em 0.375em 0.75em !important;
-  --nav-item-parent-padding: 0.25em 0 0.25em 0 !important;
-  --nav-item-radius: 0.25rem !important;
-  --nav-item-size: 0.8rem !important;
+  );
+  --nav-item-padding: 0.375em 0.75em 0.375em 0.75em;
+  --nav-item-parent-padding: 0.25em 0 0.25em 0;
+  --nav-item-radius: 0.25rem;
+  --nav-item-size: 0.8rem;
   --nav-tag-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --nav-tag-color-active: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --nav-tag-color-hover: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
-  --nav-tag-radius: 0.25rem !important;
-  --obsidian-columns-def-span: 1 !important;
-  --obsidian-columns-gap: 1em !important;
-  --obsidian-columns-min-width: 10em !important;
-  --obsidian-columns-padding: 0 0 !important;
-  --p-spacing: 1em !important;
+  ), transparent 30%);
+  --nav-tag-radius: 0.25rem;
+  --obsidian-columns-def-span: 1;
+  --obsidian-columns-gap: 1em;
+  --obsidian-columns-min-width: 10em;
+  --obsidian-columns-padding: 0 0;
+  --p-spacing: 1em;
   --pdf-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
+  );
   --pdf-page-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
+  );
   --pdf-shadow: 0 0 0 1px color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --pdf-sidebar-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
+  );
   --pdf-thumbnail-shadow: 0 0 0 1px color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --pill-background: hsl(
     from hsl(215, 67%, 45%) h s l / 0.75
-  ) !important;
-  --pill-background-hover: hsl(215, 67%, 45%) !important;
+  );
+  --pill-background-hover: hsl(215, 67%, 45%);
   --pill-background-remove-hover: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --pill-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
-  --pill-color: black !important;
-  --pill-color-hover: black !important;
+  );
+  --pill-color: black;
+  --pill-color-hover: black;
   --pill-color-remove: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --pill-color-remove-hover: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
-  --pill-focus-left-adjust: 0 !important;
-  --pill-focus-width: 100% !important;
+  );
+  --pill-focus-left-adjust: 0;
+  --pill-focus-width: 100%;
   --prompt-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
-  --prompt-border-color: transparent !important;
-  --prompt-border-width: 0 !important;
+  );
+  --prompt-border-color: transparent;
+  --prompt-border-width: 0;
   --r-background-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
-  --r-block-margin: 20px !important;
+  );
+  --r-block-margin: 20px;
   --r-code-font: ui-monospace, Menlo, SFMono-Regular, Consolas,
-        "Roboto Mono", "Source Code Pro", monospace !important;
+        "Roboto Mono", "Source Code Pro", monospace;
   --r-heading-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
-  --r-heading-font-weight: 100 !important;
-  --r-heading-letter-spacing: normal !important;
-  --r-heading-line-height: 1.2 !important;
-  --r-heading-margin: 0.67em 0 0 0 !important;
-  --r-heading-text-shadow: none !important;
-  --r-heading-text-transform: none !important;
-  --r-heading1-size: 2.5em !important;
-  --r-heading1-text-shadow: none !important;
-  --r-heading2-size: 1.6em !important;
-  --r-heading3-size: 1.3em !important;
-  --r-heading4-size: 1em !important;
-  --r-link-color: hsl(255, 89.76%, 75.9%) !important;
-  --r-link-color-hover: hsl(253, 92.4%, 85.14%) !important;
+  );
+  --r-heading-font-weight: 100;
+  --r-heading-letter-spacing: normal;
+  --r-heading-line-height: 1.2;
+  --r-heading-margin: 0.67em 0 0 0;
+  --r-heading-text-shadow: none;
+  --r-heading-text-transform: none;
+  --r-heading1-size: 2.5em;
+  --r-heading1-text-shadow: none;
+  --r-heading2-size: 1.6em;
+  --r-heading3-size: 1.3em;
+  --r-heading4-size: 1em;
+  --r-link-color: hsl(255, 89.76%, 75.9%);
+  --r-link-color-hover: hsl(253, 92.4%, 85.14%);
   --r-main-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --r-main-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --r-main-font-size: 42px !important;
-  --radius-l: 0.75rem !important;
-  --radius-m: 0.5rem !important;
-  --radius-s: 0.25rem !important;
-  --radius-xl: 1rem !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --r-main-font-size: 42px;
+  --radius-l: 0.75rem;
+  --radius-m: 0.5rem;
+  --radius-s: 0.25rem;
+  --radius-xl: 1rem;
   --raised-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
-  --ribbon-background: transparent !important;
-  --ribbon-background-collapsed: transparent !important;
-  --ribbon-width: 3em !important;
-  --scrollbar-radius: 0.75rem !important;
-  --search-clear-button-color: hsl(215, 67%, 45%) !important;
-  --search-icon-color: hsl(215, 67%, 45%) !important;
+  );
+  --ribbon-background: transparent;
+  --ribbon-background-collapsed: transparent;
+  --ribbon-width: 3em;
+  --scrollbar-radius: 0.75rem;
+  --search-clear-button-color: hsl(215, 67%, 45%);
+  --search-icon-color: hsl(215, 67%, 45%);
   --search-result-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
-  --secondary: hsl(215, 67%, 45%) !important;
+  );
+  --secondary: var(--interactive-accent, hsl(215, 67%, 45%));
   --setting-group-heading-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
-  --setting-group-heading-size: 1rem !important;
-  --setting-items-background: none !important;
+  );
+  --setting-group-heading-size: 1rem;
+  --setting-items-background: none;
   --setting-items-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
-  --setting-items-padding: 0 !important;
-  --setting-items-radius: 0 !important;
+  );
+  --setting-items-padding: 0;
+  --setting-items-radius: 0;
   --shadow-l: 0 0 0.2rem
       color-mix(in srgb, color-mix(
     in srgb,
@@ -822,7 +823,7 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) 10%, transparent) !important;
+  ) 10%, transparent);
   --shadow-s: 0 0 0.05rem
       color-mix(in srgb, color-mix(
     in srgb,
@@ -851,136 +852,136 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) 10%, transparent) !important;
+  ) 10%, transparent);
   --shiki-active-tab-border-color: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --shiki-code-background: light-dark(
     hsl(from black h s l / 0.06),
     hsl(from white h s l / 0.06)
-  ) !important;
-  --shiki-code-block-border-radius: 0.25rem !important;
-  --shiki-code-block-spacing: 1em !important;
+  );
+  --shiki-code-block-border-radius: 0.25rem;
+  --shiki-code-block-spacing: 1em;
   --shiki-code-comment: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
-  --shiki-code-function: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
-  --shiki-code-important: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
-  --shiki-code-keyword: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
+  );
+  --shiki-code-function: hsl(from hsl(215, 67%, 45%) 124 s l);
+  --shiki-code-important: hsl(from hsl(215, 67%, 45%) 27 s l);
+  --shiki-code-keyword: hsl(from hsl(215, 67%, 45%) 331 s l);
   --shiki-code-normal: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
-  --shiki-code-property: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
+  ), transparent 30%);
+  --shiki-code-property: hsl(from hsl(215, 67%, 45%) 179 s l);
   --shiki-code-punctuation: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
-  --shiki-code-string: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
-  --shiki-code-value: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
+  ), transparent 30%);
+  --shiki-code-string: hsl(from hsl(215, 67%, 45%) 57 s l);
+  --shiki-code-value: hsl(from hsl(215, 67%, 45%) 253 s l);
   --shiki-gutter-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --shiki-gutter-text-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --shiki-gutter-text-color-highlight: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --shiki-highlight-neutral: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --shiki-terminal-dots-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --shiki-tooltip-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
-  --sidebar-markdown-font-size: 12.8px !important;
+  );
+  --sidebar-markdown-font-size: 12.8px;
   --slider-track-background: hsl(
     from hsl(215, 67%, 45%) h s l / 0.5
-  ) !important;
+  );
   --status-bar-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 60%
-  ) !important;
+  );
   --status-bar-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
-  --status-bar-font-size: 0.7rem !important;
-  --status-bar-radius: 0.5rem 0 0 0 !important;
+  );
+  --status-bar-font-size: 0.7rem;
+  --status-bar-radius: 0.5rem 0 0 0;
   --status-bar-text-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --suggestion-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
-  --sync-avatar-color-1: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
-  --sync-avatar-color-2: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
-  --sync-avatar-color-3: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
-  --sync-avatar-color-4: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
-  --sync-avatar-color-5: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
-  --sync-avatar-color-6: hsl(from hsl(215, 67%, 45%) 219 s l) !important;
-  --sync-avatar-color-7: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
-  --sync-avatar-color-8: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
+  );
+  --sync-avatar-color-1: hsl(from hsl(215, 67%, 45%) 356 s l);
+  --sync-avatar-color-2: hsl(from hsl(215, 67%, 45%) 27 s l);
+  --sync-avatar-color-3: hsl(from hsl(215, 67%, 45%) 57 s l);
+  --sync-avatar-color-4: hsl(from hsl(215, 67%, 45%) 124 s l);
+  --sync-avatar-color-5: hsl(from hsl(215, 67%, 45%) 179 s l);
+  --sync-avatar-color-6: hsl(from hsl(215, 67%, 45%) 219 s l);
+  --sync-avatar-color-7: hsl(from hsl(215, 67%, 45%) 253 s l);
+  --sync-avatar-color-8: hsl(from hsl(215, 67%, 45%) 331 s l);
   --tab-background-active: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
+  );
   --tab-background-inactive: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 85%
-  ) !important;
-  --tab-container-background: transparent !important;
-  --tab-curve: 0.125em !important;
-  --tab-font-size: 0.8rem !important;
+  );
+  --tab-container-background: transparent;
+  --tab-curve: 0.125em;
+  --tab-font-size: 0.8rem;
   --tab-outline-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
-  --tab-outline-width: 0 !important;
-  --tab-radius: 0.25em !important;
-  --tab-radius-active: 0.25em !important;
-  --tab-stacked-font-size: 0.8rem !important;
-  --tab-stacked-header-width: calc(18px + 1rem) !important;
+  );
+  --tab-outline-width: 0;
+  --tab-radius: 0.25em;
+  --tab-radius-active: 0.25em;
+  --tab-stacked-font-size: 0.8rem;
+  --tab-stacked-header-width: calc(18px + 1rem);
   --tab-switcher-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --tab-switcher-menubar-background: linear-gradient(to top, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ), transparent) !important;
+  ), transparent);
   --tab-switcher-preview-background-shadow: 0 0 0.2rem
       color-mix(in srgb, color-mix(
     in srgb,
@@ -1008,213 +1009,213 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) 10%, transparent) !important;
-  --tab-switcher-preview-radius: 1rem !important;
-  --tab-switcher-preview-shadow: none !important;
-  --tab-switcher-preview-shadow-active: none !important;
+  ) 10%, transparent);
+  --tab-switcher-preview-radius: 1rem;
+  --tab-switcher-preview-shadow: none;
+  --tab-switcher-preview-shadow-active: none;
   --tab-text-color: hsl(
     from hsl(215, 67%, 45%) h s l / 0.5
-  ) !important;
+  );
   --tab-text-color-active: hsl(
     from hsl(215, 67%, 45%) h s l / 0.5
-  ) !important;
+  );
   --tab-text-color-focused: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --tab-text-color-focused-active: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --tab-text-color-focused-active-current: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
-  --tab-text-color-focused-highlighted: hsl(215, 67%, 45%) !important;
+  );
+  --tab-text-color-focused-highlighted: hsl(215, 67%, 45%);
   --table-add-button-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --table-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
-  --table-drag-handle-background-active: hsl(215, 67%, 45%) !important;
+  );
+  --table-drag-handle-background-active: hsl(215, 67%, 45%);
   --table-drag-handle-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --table-drag-handle-color-active: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
+  );
   --table-header-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --table-header-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
-  --table-selection-border-color: hsl(215, 67%, 45%) !important;
-  --tag-background: hsl(258, 88%, 66%, 0.3) !important;
+  );
+  --table-selection-border-color: hsl(215, 67%, 45%);
+  --tag-background: hsl(258, 88%, 66%, 0.3);
   --tag-color: hsl(
     258,
     96.8%,
     79.2%
-  ) !important;
-  --tag-weight: 400 !important;
-  --text-error: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  );
+  --tag-weight: 400;
+  --text-error: hsl(from hsl(215, 67%, 45%) 356 s l);
   --text-faint: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --text-muted: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --text-normal: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --text-on-accent: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
-  --text-success: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
-  --text-warning: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
-  --textHighlight: hsl(215, 67%, 45%) !important;
-  --theme-cardAspectRatio: auto !important;
-  --theme-cardImageFit: contain !important;
+  );
+  --text-success: hsl(from hsl(215, 67%, 45%) 124 s l);
+  --text-warning: hsl(from hsl(215, 67%, 45%) 27 s l);
+  --textHighlight: var(--background-modifier-hover, hsl(215, 67%, 45%));
+  --theme-cardAspectRatio: auto;
+  --theme-cardImageFit: contain;
   --theme-color-activeLineHighlight: hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ) !important;
+  );
   --theme-color-audioRecordingActive: hsl(
     from hsl(from hsl(215, 67%, 45%) 356 s l) h calc(s * 1.5) calc(l * 1.5)
-  ) !important;
-  --theme-color-base: hsl(215, 67%, 45%) !important;
+  );
+  --theme-color-base: hsl(215, 67%, 45%);
   --theme-color-baseDarkened12: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 12.5%
-  ) !important;
+  );
   --theme-color-baseDarkened25: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --theme-color-baseDarkened40: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 40%
-  ) !important;
+  );
   --theme-color-baseDarkened60: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 60%
-  ) !important;
+  );
   --theme-color-baseDarkened70: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --theme-color-baseDarkened80: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --theme-color-baseDarkened85: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 85%
-  ) !important;
+  );
   --theme-color-baseDarkened90: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
+  );
   --theme-color-baseLightened12: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 12.5%
-  ) !important;
+  );
   --theme-color-baseLightened25: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --theme-color-baseLightened40: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 40%
-  ) !important;
+  );
   --theme-color-baseLightened60: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --theme-color-baseLightened70: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 70%
-  ) !important;
+  );
   --theme-color-baseLightened80: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
+  );
   --theme-color-baseLightened85: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 85%
-  ) !important;
+  );
   --theme-color-baseLightened95: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
+  );
   --theme-color-baseTransparent06: hsl(
     from hsl(215, 67%, 45%) h s l / 0.06
-  ) !important;
+  );
   --theme-color-baseTransparent12: hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ) !important;
+  );
   --theme-color-baseTransparent25: hsl(
     from hsl(215, 67%, 45%) h s l / 0.25
-  ) !important;
+  );
   --theme-color-baseTransparent35: hsl(
     from hsl(215, 67%, 45%) h s l / 0.35
-  ) !important;
+  );
   --theme-color-baseTransparent50: hsl(
     from hsl(215, 67%, 45%) h s l / 0.5
-  ) !important;
+  );
   --theme-color-baseTransparent75: hsl(
     from hsl(215, 67%, 45%) h s l / 0.75
-  ) !important;
+  );
   --theme-color-blockId: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --theme-color-blueDarkened: hsl(
     from hsl(from hsl(215, 67%, 45%) 219 s l) h calc(s * 1.5) calc(l * 0.5)
-  ) !important;
+  );
   --theme-color-blueLightened: hsl(
     from hsl(from hsl(215, 67%, 45%) 219 s l) h calc(s * 1.5) calc(l * 1.5)
-  ) !important;
+  );
   --theme-color-calendarBg: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -1223,39 +1224,39 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  )) !important;
-  --theme-color-calendarDayBg: hsl(from black h s l / 0.5) !important;
+  ));
+  --theme-color-calendarDayBg: hsl(from black h s l / 0.5);
   --theme-color-card: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --theme-color-cardBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 95%
-  ) !important;
-  --theme-color-cardBgHover: hsl(215, 67%, 45%) !important;
-  --theme-color-cardHover: black !important;
+  );
+  --theme-color-cardBgHover: hsl(215, 67%, 45%);
+  --theme-color-cardHover: black;
   --theme-color-communityItemBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
-  --theme-color-communityItemBgActive: hsl(215, 67%, 45%) !important;
+  );
+  --theme-color-communityItemBgActive: hsl(215, 67%, 45%);
   --theme-color-communityItemBgHover: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --theme-color-communityItemBgSelected: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 12.5%
-  ) !important;
-  --theme-color-contentItemBg: rgb(0, 0, 0, 0.2) !important;
-  --theme-color-contentItemBgActive: hsl(215, 67%, 45%) !important;
-  --theme-color-contentItemBgHover: rgb(0, 0, 0, 0.1) !important;
+  );
+  --theme-color-contentItemBg: rgb(0, 0, 0, 0.2);
+  --theme-color-contentItemBgActive: hsl(215, 67%, 45%);
+  --theme-color-contentItemBgHover: rgb(0, 0, 0, 0.1);
   --theme-color-control: light-dark(
     color-mix(
     in srgb,
@@ -1267,7 +1268,7 @@ export const theme: ThemeData = {
     hsl(215, 67%, 45%),
     white 60%
   )
-  ) !important;
+  );
   --theme-color-controlActive: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -1276,13 +1277,13 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  )) !important;
+  ));
   --theme-color-controlBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
-  --theme-color-controlBgActive: hsl(215, 67%, 45%) !important;
+  );
+  --theme-color-controlBgActive: hsl(215, 67%, 45%);
   --theme-color-controlBgHover: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -1291,17 +1292,17 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 40%
-  )) !important;
+  ));
   --theme-color-controlContentArea: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --theme-color-controlContentAreaHover: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --theme-color-controlHasActiveMenu: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -1310,7 +1311,7 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  )) !important;
+  ));
   --theme-color-controlHover: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -1319,49 +1320,49 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  )) !important;
+  ));
   --theme-color-controlLightweightActive: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
-  --theme-color-controlLowWeightBg: hsl(from black h s l / 0.25) !important;
+  );
+  --theme-color-controlLowWeightBg: hsl(from black h s l / 0.25);
   --theme-color-controlSetBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --theme-color-controlText: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --theme-color-controlTextHover: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --theme-color-controlUIHover: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --theme-color-controlUISelected: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --theme-color-cyanDarkened: hsl(
     from hsl(from hsl(215, 67%, 45%) 179 s l) h calc(s * 1.5) calc(l * 0.5)
-  ) !important;
+  );
   --theme-color-cyanLightened: hsl(
     from hsl(from hsl(215, 67%, 45%) 179 s l) h calc(s * 1.5) calc(l * 1.5)
-  ) !important;
-  --theme-color-darkenTransparent06: hsl(from black h s l / 0.06) !important;
-  --theme-color-darkenTransparent12: hsl(from black h s l / 0.12) !important;
-  --theme-color-darkenTransparent25: hsl(from black h s l / 0.25) !important;
-  --theme-color-darkenTransparent50: hsl(from black h s l / 0.5) !important;
-  --theme-color-darkenTransparent75: hsl(from black h s l / 0.75) !important;
+  );
+  --theme-color-darkenTransparent06: hsl(from black h s l / 0.06);
+  --theme-color-darkenTransparent12: hsl(from black h s l / 0.12);
+  --theme-color-darkenTransparent25: hsl(from black h s l / 0.25);
+  --theme-color-darkenTransparent50: hsl(from black h s l / 0.5);
+  --theme-color-darkenTransparent75: hsl(from black h s l / 0.75);
   --theme-color-dataviewEmpty: light-dark(
     color-mix(
     in srgb,
@@ -1373,65 +1374,65 @@ export const theme: ThemeData = {
     hsl(215, 67%, 45%),
     black 40%
   )
-  ) !important;
+  );
   --theme-color-dragTarget: hsl(
     from hsl(215, 67%, 45%) h s l / 0.5
-  ) !important;
+  );
   --theme-color-dragTargetBg: hsl(
     from hsl(215, 67%, 45%) h s l / 0.25
-  ) !important;
+  );
   --theme-color-emptyStateBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --theme-color-gradientBottom: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --theme-color-gradientCardsetBottom: hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ) !important;
+  );
   --theme-color-gradientCardsetGeneratedBottom: hsl(
     from hsl(215, 67%, 45%) h s l / 0.25
-  ) !important;
+  );
   --theme-color-gradientCardsetGeneratedTop: hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ) !important;
+  );
   --theme-color-gradientCardsetTop: hsl(
     from hsl(215, 67%, 45%) h s l / 0.06
-  ) !important;
+  );
   --theme-color-gradientTop: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 60%
-  ) !important;
-  --theme-color-graphLine: white !important;
-  --theme-color-graphViewBg: transparent !important;
+  );
+  --theme-color-graphLine: white;
+  --theme-color-graphViewBg: transparent;
   --theme-color-greenDarkened: hsl(
     from hsl(from hsl(215, 67%, 45%) 124 s l) h calc(s * 1.5) calc(l * 0.5)
-  ) !important;
+  );
   --theme-color-greenLightened: hsl(
     from hsl(from hsl(215, 67%, 45%) 124 s l) h calc(s * 1.5) calc(l * 1.5)
-  ) !important;
-  --theme-color-greenTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 124 s l) h s l / 0.25) !important;
-  --theme-color-greenTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 124 s l) h s l / 0.75) !important;
-  --theme-color-hotkey: hsl(215, 67%, 45%) !important;
+  );
+  --theme-color-greenTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 124 s l) h s l / 0.25);
+  --theme-color-greenTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 124 s l) h s l / 0.75);
+  --theme-color-hotkey: hsl(215, 67%, 45%);
   --theme-color-inputBorder: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
-  --theme-color-inputPlaceholder: hsl(215, 67%, 45%) !important;
+  );
+  --theme-color-inputPlaceholder: hsl(215, 67%, 45%);
   --theme-color-interactiveActive: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
-  --theme-color-jiraIssueDanger: white !important;
-  --theme-color-jiraIssueDangerBg: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.25) !important;
-  --theme-color-jiraIssueDeleteBg: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  );
+  --theme-color-jiraIssueDanger: white;
+  --theme-color-jiraIssueDangerBg: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.25);
+  --theme-color-jiraIssueDeleteBg: hsl(from hsl(215, 67%, 45%) 356 s l);
   --theme-color-jiraIssueInfoBg: light-dark(
     hsl(
     from hsl(from hsl(215, 67%, 45%) 219 s l) h calc(s * 1.5) calc(l * 1.5)
@@ -1439,12 +1440,12 @@ export const theme: ThemeData = {
     hsl(
     from hsl(from hsl(215, 67%, 45%) 219 s l) h calc(s * 1.5) calc(l * 0.5)
   )
-  ) !important;
+  );
   --theme-color-jiraIssueStatus: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
+  );
   --theme-color-jiraIssueStatusBg: light-dark(
     color-mix(
     in srgb,
@@ -1456,7 +1457,7 @@ export const theme: ThemeData = {
     hsl(215, 67%, 45%),
     black 90%
   )
-  ) !important;
+  );
   --theme-color-jiraIssueSuccessBg: light-dark(
     hsl(
     from hsl(from hsl(215, 67%, 45%) 124 s l) h calc(s * 1.5) calc(l * 1.5)
@@ -1464,11 +1465,11 @@ export const theme: ThemeData = {
     hsl(
     from hsl(from hsl(215, 67%, 45%) 124 s l) h calc(s * 1.5) calc(l * 0.5)
   )
-  ) !important;
+  );
   --theme-color-jiraIssueTableStripe: light-dark(
     hsl(from white h s l / 0.5),
     hsl(from black h s l / 0.5)
-  ) !important;
+  );
   --theme-color-jiraIssueWarningBg: light-dark(control
     hsl(
     from hsl(from hsl(215, 67%, 45%) 57 s l) h calc(s * 1.5) calc(l * 1.5)
@@ -1476,17 +1477,17 @@ export const theme: ThemeData = {
     hsl(
     from hsl(from hsl(215, 67%, 45%) 57 s l) h calc(s * 1.5) calc(l * 0.5)
   )
-  ) !important;
+  );
   --theme-color-kanbanLaneBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
-  --theme-color-lightenTransparent06: hsl(from white h s l / 0.06) !important;
-  --theme-color-lightenTransparent12: hsl(from white h s l / 0.12) !important;
-  --theme-color-lightenTransparent25: hsl(from white h s l / 0.25) !important;
-  --theme-color-lightenTransparent50: hsl(from white h s l / 0.5) !important;
-  --theme-color-lightenTransparent75: hsl(from white h s l / 0.75) !important;
+  );
+  --theme-color-lightenTransparent06: hsl(from white h s l / 0.06);
+  --theme-color-lightenTransparent12: hsl(from white h s l / 0.12);
+  --theme-color-lightenTransparent25: hsl(from white h s l / 0.25);
+  --theme-color-lightenTransparent50: hsl(from white h s l / 0.5);
+  --theme-color-lightenTransparent75: hsl(from white h s l / 0.75);
   --theme-color-lineNumbers: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -1495,124 +1496,124 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 60%
-  )) !important;
+  ));
   --theme-color-log: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
+  );
   --theme-color-logBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --theme-color-menuBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --theme-color-mobileToolbarBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --theme-color-modalContentBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --theme-color-navFileTag: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --theme-color-navFileTagActive: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --theme-color-navFileTagActiveBorder: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --theme-color-navFileTagBorder: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
-  --theme-color-navigationButtonBgHover: hsl(215, 67%, 45%) !important;
+  );
+  --theme-color-navigationButtonBgHover: hsl(215, 67%, 45%);
   --theme-color-notice: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
+  );
   --theme-color-noticeBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
+  );
   --theme-color-orangeDarkened: hsl(
     from hsl(from hsl(215, 67%, 45%) 27 s l) h calc(s * 1.5) calc(l * 0.5)
-  ) !important;
+  );
   --theme-color-orangeLightened: hsl(
     from hsl(from hsl(215, 67%, 45%) 27 s l) h calc(s * 1.5) calc(l * 1.5)
-  ) !important;
-  --theme-color-orangeTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 27 s l) h s l / 0.25) !important;
-  --theme-color-orangeTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 27 s l) h s l / 0.75) !important;
+  );
+  --theme-color-orangeTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 27 s l) h s l / 0.25);
+  --theme-color-orangeTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 27 s l) h s l / 0.75);
   --theme-color-pinkDarkened: hsl(
     from hsl(from hsl(215, 67%, 45%) 331 s l) h calc(s * 1.5) calc(l * 0.5)
-  ) !important;
+  );
   --theme-color-pinkLightened: hsl(
     from hsl(from hsl(215, 67%, 45%) 331 s l) h calc(s * 1.5) calc(l * 1.5)
-  ) !important;
+  );
   --theme-color-promptInstructions: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 40%
-  ) !important;
+  );
   --theme-color-purpleDarkened: hsl(
     from hsl(from hsl(215, 67%, 45%) 253 s l) h calc(s * 1.5) calc(l * 0.5)
-  ) !important;
+  );
   --theme-color-purpleLightened: hsl(
     from hsl(from hsl(215, 67%, 45%) 253 s l) h calc(s * 1.5) calc(l * 1.5)
-  ) !important;
+  );
   --theme-color-queryComponentBg: hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ) !important;
+  );
   --theme-color-redDarkened: hsl(
     from hsl(from hsl(215, 67%, 45%) 356 s l) h calc(s * 1.5) calc(l * 0.5)
-  ) !important;
+  );
   --theme-color-redLightened: hsl(
     from hsl(from hsl(215, 67%, 45%) 356 s l) h calc(s * 1.5) calc(l * 1.5)
-  ) !important;
-  --theme-color-redTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.25) !important;
-  --theme-color-redTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.75) !important;
+  );
+  --theme-color-redTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.25);
+  --theme-color-redTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.75);
   --theme-color-settingsBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --theme-color-settingsBgStripe: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
-  --theme-color-settingsGroupBg: hsl(from black h s l / 0.5) !important;
+  );
+  --theme-color-settingsGroupBg: hsl(from black h s l / 0.5);
   --theme-color-shadow: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
+  );
   --theme-color-suggestionBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 85%
-  ) !important;
-  --theme-color-switcherBgActive: hsl(215, 67%, 45%) !important;
+  );
+  --theme-color-switcherBgActive: hsl(215, 67%, 45%);
   --theme-color-tabBgInactiveHover: hsl(
     from hsl(215, 67%, 45%) h s l / 0.75
-  ) !important;
+  );
   --theme-color-tabNavActiveBg: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -1621,7 +1622,7 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  )) !important;
+  ));
   --theme-color-tabNavBg: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -1630,62 +1631,62 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 60%
-  )) !important;
+  ));
   --theme-color-tableHeaderBg: hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ) !important;
+  );
   --theme-color-tagBgHover: hsl(
     258,
     105.6%,
     52.8%,
     0.75
-  ) !important;
+  );
   --theme-color-tagBgSidebar: hsl(
     258,
     105.6%,
     16.5%,
     0.5
-  ) !important;
+  );
   --theme-color-tagBgSidebarHover: hsl(
     258,
     96.8%,
     52.8%,
     0.5
-  ) !important;
+  );
   --theme-color-tagHover: hsl(
     258,
     92.4%,
     85.14%
-  ) !important;
+  );
   --theme-color-tagSidebar: hsl(
     258,
     96.8%,
     79.2%
-  ) !important;
+  );
   --theme-color-tagSidebarHover: hsl(
     258,
     123.2%,
     85.8%
-  ) !important;
-  --theme-color-textMeta: hsl(215, 67%, 45%) !important;
+  );
+  --theme-color-textMeta: hsl(215, 67%, 45%);
   --theme-color-textSelected: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --theme-color-warningBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
+  );
   --theme-color-yellowDarkened: hsl(
     from hsl(from hsl(215, 67%, 45%) 57 s l) h calc(s * 1.5) calc(l * 0.5)
-  ) !important;
+  );
   --theme-color-yellowLightened: hsl(
     from hsl(from hsl(215, 67%, 45%) 57 s l) h calc(s * 1.5) calc(l * 1.5)
-  ) !important;
-  --theme-color-yellowTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 57 s l) h s l / 0.25) !important;
-  --theme-color-yellowTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 57 s l) h s l / 0.75) !important;
+  );
+  --theme-color-yellowTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 57 s l) h s l / 0.25);
+  --theme-color-yellowTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 57 s l) h s l / 0.75);
   --theme-gradient-bottomToTop: linear-gradient(
     0deg,
     color-mix(
@@ -1698,7 +1699,7 @@ export const theme: ThemeData = {
     hsl(215, 67%, 45%),
     black 60%
   ) 100%
-  ) !important;
+  );
   --theme-gradient-topToBottom: linear-gradient(
     0deg,
     color-mix(
@@ -1711,33 +1712,33 @@ export const theme: ThemeData = {
     hsl(215, 67%, 45%),
     black 80%
   ) 100%
-  ) !important;
+  );
   --theme-grid-cardSet: repeat(
     auto-fit,
     minmax(8em, 1fr)
-  ) !important;
-  --theme-length-cardImageHeight: 25em !important;
-  --theme-length-cardMaxWidth: 1fr !important;
-  --theme-length-cardMinWidth: 8em !important;
-  --theme-length-checkboxBorderWidth: 1px !important;
-  --theme-length-closeButtonWidth: 1.5rem !important;
-  --theme-length-collapseIndicatorSize: 1.5rem !important;
-  --theme-length-controlSetSpacing: 0.5rem !important;
-  --theme-length-fullBorderRadius: 9999px !important;
-  --theme-length-radiusXS: 0.125rem !important;
-  --theme-length-statusBarHeight: 2rem !important;
+  );
+  --theme-length-cardImageHeight: 25em;
+  --theme-length-cardMaxWidth: 1fr;
+  --theme-length-cardMinWidth: 8em;
+  --theme-length-checkboxBorderWidth: 1px;
+  --theme-length-closeButtonWidth: 1.5rem;
+  --theme-length-collapseIndicatorSize: 1.5rem;
+  --theme-length-controlSetSpacing: 0.5rem;
+  --theme-length-fullBorderRadius: 9999px;
+  --theme-length-radiusXS: 0.125rem;
+  --theme-length-statusBarHeight: 2rem;
   --theme-padding-block: 0.75em
-    1.5em !important;
-  --theme-padding-blockHorizontal: 1.5em !important;
-  --theme-padding-blockVertical: 0.75em !important;
-  --theme-setting-lineWidth: 60 !important;
+    1.5em;
+  --theme-padding-blockHorizontal: 1.5em;
+  --theme-padding-blockVertical: 0.75em;
+  --theme-setting-lineWidth: 60;
   --theme-shadow-control: 0px 1px 2px
     hsl(
       215,
       6.7%,
       4.5%,
       0.1
-    ) !important;
+    );
   --theme-shadow-indent: 0 0 0.2rem
       color-mix(in srgb, color-mix(
     in srgb,
@@ -1763,7 +1764,7 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) 15%, transparent) !important;
+  ) 15%, transparent);
   --theme-shadow-indent-small: 0 0 0.05rem
       color-mix(in srgb, color-mix(
     in srgb,
@@ -1789,7 +1790,7 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) 20%, transparent) !important;
+  ) 20%, transparent);
   --theme-shadow-input: 0px 1px 2px
       hsl(
         215,
@@ -1810,37 +1811,37 @@ export const theme: ThemeData = {
         50.25%,
         4.5%,
         0.15
-      ) !important;
-  --theme-value-gradientContrast: 0.2 !important;
-  --theme-value-headingScaleFactor: 1.2 !important;
-  --theme-value-sidebarFontScalingFactor: 0.8 !important;
-  --titleFont: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+      );
+  --theme-value-gradientContrast: 0.2;
+  --theme-value-headingScaleFactor: 1.2;
+  --theme-value-sidebarFontScalingFactor: 0.8;
+  --titleFont: var(--font-text, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --titlebar-background: transparent !important;
-  --titlebar-background-focused: transparent !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+  --titlebar-background: transparent;
+  --titlebar-background-focused: transparent;
   --titlebar-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --titlebar-text-color: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --titlebar-text-color-focused: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
-  --traffic-lights-offset-x: calc(18px + 1rem) !important;
-  --traffic-lights-offset-y: calc(18px + 1rem) !important;
+  );
+  --traffic-lights-offset-x: calc(18px + 1rem);
+  --traffic-lights-offset-y: calc(18px + 1rem);
   --vault-profile-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --vault-profile-color-hover: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -1849,14 +1850,14 @@ export const theme: ThemeData = {
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  )) !important;
-  --vault-profile-font-size: 0.8rem !important;
-  --quartz-icon-color: currentColor !important;
+  ));
+  --vault-profile-font-size: 0.8rem;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -3525,49 +3526,49 @@ html[saved-theme="dark"] body ul.tags > li {
     base: `:root:root {
   --background-input: light-dark(hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ), hsl(from black h s l / 0.06)) !important;
+  ), hsl(from black h s l / 0.06));
   --background-modifier-active-hover: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --background-modifier-active-hover-alt: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --background-modifier-border: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
-  --background-modifier-border-focus: hsl(215, 67%, 45%) !important;
-  --background-modifier-error: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
-  --background-modifier-error-hover: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
-  --background-modifier-hover: hsl(215, 67%, 45%) !important;
+  );
+  --background-modifier-border-focus: hsl(215, 67%, 45%);
+  --background-modifier-error: hsl(from hsl(215, 67%, 45%) 356 s l);
+  --background-modifier-error-hover: hsl(from hsl(215, 67%, 45%) 356 s l);
+  --background-modifier-hover: hsl(215, 67%, 45%);
   --background-modifier-message: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
-  --background-modifier-success: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
-  --background-primary: white !important;
+  );
+  --background-modifier-success: hsl(from hsl(215, 67%, 45%) 124 s l);
+  --background-primary: white;
   --background-prompt: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
+  );
   --background-secondary: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
-  --base-h: 215 !important;
-  --base-l: 45% !important;
-  --base-s: 67% !important;
-  --bases-cards-background: white !important;
-  --bases-cards-cover-background: light-dark(hsl(from black h s l / 0.06), hsl(from white h s l / 0.06)) !important;
-  --bases-cards-radius: 0.5rem !important;
+  );
+  --base-h: 215;
+  --base-l: 45%;
+  --base-s: 67%;
+  --bases-cards-background: white;
+  --bases-cards-cover-background: light-dark(hsl(from black h s l / 0.06), hsl(from white h s l / 0.06));
+  --bases-cards-radius: 0.5rem;
   --bases-cards-shadow: 0 0 0.05rem
       color-mix(in srgb, color-mix(
     in srgb,
@@ -3596,7 +3597,7 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) 10%, transparent) !important;
+  ) 10%, transparent);
   --bases-cards-shadow-hover: 0 0 0.05rem
       color-mix(in srgb, color-mix(
     in srgb,
@@ -3625,137 +3626,137 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) 10%, transparent) !important;
+  ) 10%, transparent);
   --bases-embed-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
-  --bases-embed-border-radius: 0.25rem !important;
+  );
+  --bases-embed-border-radius: 0.25rem;
   --bases-group-heading-property-color: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
-  --bases-group-heading-property-size: 0.7rem !important;
-  --bases-header-padding-end: 0.5em !important;
-  --bases-header-padding-start: 0.5em !important;
+  ), transparent 30%);
+  --bases-group-heading-property-size: 0.7rem;
+  --bases-header-padding-end: 0.5em;
+  --bases-header-padding-start: 0.5em;
   --bases-table-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
-  --bases-table-cell-background-active: white !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(215, 67%, 45%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(215, 67%, 45%) !important;
-  --bases-table-container-border-radius: 0.25rem !important;
-  --bases-table-header-background: white !important;
-  --bases-table-header-background-hover: hsl(215, 67%, 45%) !important;
+  );
+  --bases-table-cell-background-active: white;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(215, 67%, 45%);
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(215, 67%, 45%);
+  --bases-table-container-border-radius: 0.25rem;
+  --bases-table-header-background: white;
+  --bases-table-header-background-hover: hsl(215, 67%, 45%);
   --bases-table-header-color: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
-  --bases-table-summary-background: white !important;
-  --bases-table-summary-background-hover: hsl(215, 67%, 45%) !important;
+  ), transparent 30%);
+  --bases-table-summary-background: white;
+  --bases-table-summary-background-hover: hsl(215, 67%, 45%);
   --blockquote-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
-  --blur-background: color-mix(in srgb, white 65%, transparent) linear-gradient(white, color-mix(in srgb, white 65%, transparent)) !important;
-  --bodyFont: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  );
+  --blur-background: color-mix(in srgb, white 65%, transparent) linear-gradient(white, color-mix(in srgb, white 65%, transparent));
+  --bodyFont: var(--font-text, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
   --callout-padding: 0.75em
     1.5em;
   --callout-radius: 0.25rem;
-  --canvas-background: white !important;
+  --canvas-background: white;
   --canvas-card-label-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
-  --canvas-controls-radius: 0.25rem !important;
-  --caret-color: hsl(258, 150%, 50%) !important;
-  --checkbox-border-color: hsl(215, 67%, 45%) !important;
-  --checkbox-border-color-hover: hsl(215, 67%, 45%) !important;
-  --checkbox-color: hsl(215, 67%, 45%) !important;
-  --checkbox-color-hover: hsl(215, 67%, 45%) !important;
-  --checkbox-marker-color: white !important;
-  --checkbox-radius: 0.25rem !important;
+  );
+  --canvas-controls-radius: 0.25rem;
+  --caret-color: hsl(258, 150%, 50%);
+  --checkbox-border-color: hsl(215, 67%, 45%);
+  --checkbox-border-color-hover: hsl(215, 67%, 45%);
+  --checkbox-color: hsl(215, 67%, 45%);
+  --checkbox-color-hover: hsl(215, 67%, 45%);
+  --checkbox-marker-color: white;
+  --checkbox-radius: 0.25rem;
   --checklist-done-color: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
-  --clickable-icon-radius: 0.25rem !important;
+  ), transparent 30%);
+  --clickable-icon-radius: 0.25rem;
   --code-background: light-dark(
     hsl(from black h s l / 0.06),
     hsl(from white h s l / 0.06)
-  ) !important;
+  );
   --code-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
-  --code-bracket-background: hsl(215, 67%, 45%) !important;
+  );
+  --code-bracket-background: hsl(215, 67%, 45%);
   --code-comment: light-dark(
     hsl(from black h s l / 0.5),
     hsl(from white h s l / 0.5)
-  ) !important;
-  --code-function: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
-  --code-important: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
-  --code-keyword: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
+  );
+  --code-function: hsl(from hsl(215, 67%, 45%) 57 s l);
+  --code-important: hsl(from hsl(215, 67%, 45%) 27 s l);
+  --code-keyword: hsl(from hsl(215, 67%, 45%) 331 s l);
   --code-normal: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
-  --code-operator: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
-  --code-property: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
+  );
+  --code-operator: hsl(from hsl(215, 67%, 45%) 356 s l);
+  --code-property: hsl(from hsl(215, 67%, 45%) 179 s l);
   --code-punctuation: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
-  --code-radius: 0.25rem !important;
-  --code-string: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
-  --code-tag: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
-  --code-value: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
-  --codeFont: ui-monospace, Menlo, SFMono-Regular, Consolas,
+  ), transparent 30%);
+  --code-radius: 0.25rem;
+  --code-string: hsl(from hsl(215, 67%, 45%) 124 s l);
+  --code-tag: hsl(from hsl(215, 67%, 45%) 356 s l);
+  --code-value: hsl(from hsl(215, 67%, 45%) 253 s l);
+  --codeFont: var(--font-monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
         "Roboto Mono", "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
-        "Roboto Mono", "Source Code Pro", monospace !important;
-  --collapse-icon-color: hsl(215, 67%, 45%) !important;
-  --collapse-icon-color-collapsed: hsl(215, 67%, 45%) !important;
-  --color-blue: hsl(from hsl(215, 67%, 45%) 219 s l) !important;
-  --color-cyan: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
-  --color-green: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
-  --color-orange: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
-  --color-pink: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
-  --color-purple: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
-  --color-red: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
-  --color-yellow: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
-  --dark: color-mix(
+        "Roboto Mono", "Source Code Pro", monospace);
+  --collapse-icon-color: hsl(215, 67%, 45%);
+  --collapse-icon-color-collapsed: hsl(215, 67%, 45%);
+  --color-blue: hsl(from hsl(215, 67%, 45%) 219 s l);
+  --color-cyan: hsl(from hsl(215, 67%, 45%) 179 s l);
+  --color-green: hsl(from hsl(215, 67%, 45%) 124 s l);
+  --color-orange: hsl(from hsl(215, 67%, 45%) 27 s l);
+  --color-pink: hsl(from hsl(215, 67%, 45%) 331 s l);
+  --color-purple: hsl(from hsl(215, 67%, 45%) 253 s l);
+  --color-red: hsl(from hsl(215, 67%, 45%) 356 s l);
+  --color-yellow: hsl(from hsl(215, 67%, 45%) 57 s l);
+  --dark: var(--text-normal, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
-  --darkgray: color-mix(
+  ));
+  --darkgray: var(--text-normal, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
+  ));
   --divider-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
-  --divider-color-hover: hsl(215, 67%, 45%) !important;
-  --divider-width: 0 !important;
+  );
+  --divider-color-hover: hsl(215, 67%, 45%);
+  --divider-width: 0;
   --embed-background: hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ) !important;
+  );
   --embed-block-shadow-hover: 0 0 0 1px color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -3764,191 +3765,191 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
-  --embed-border-left: none !important;
-  --embed-border-right: none !important;
-  --embed-border-start: none !important;
-  --embed-padding: 1em !important;
+  );
+  --embed-border-left: none;
+  --embed-border-right: none;
+  --embed-border-start: none;
+  --embed-padding: 1em;
   --empty-pane-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
-  --file-header-background: white !important;
-  --file-header-background-focused: white !important;
+  );
+  --file-header-background: white;
+  --file-header-background-focused: white;
   --file-header-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --file-header-font-size: 0.8rem !important;
-  --file-line-width: 37.5rem !important;
-  --file-margins: 0 2em !important;
-  --flair-background: hsl(215, 67%, 45%) !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --file-header-font-size: 0.8rem;
+  --file-line-width: 37.5rem;
+  --file-margins: 0 2em;
+  --flair-background: hsl(215, 67%, 45%);
   --flair-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
+  );
   --font-default: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-interface: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-interface-theme: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-mermaid: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-monospace: ui-monospace, Menlo, SFMono-Regular, Consolas,
         "Roboto Mono", "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
-        "Roboto Mono", "Source Code Pro", monospace !important;
+        "Roboto Mono", "Source Code Pro", monospace;
   --font-monospace-default: ui-monospace, Menlo, SFMono-Regular, Consolas,
-        "Roboto Mono", "Source Code Pro", monospace !important;
+        "Roboto Mono", "Source Code Pro", monospace;
   --font-monospace-theme: ui-monospace, Menlo, SFMono-Regular, Consolas,
-        "Roboto Mono", "Source Code Pro", monospace !important;
+        "Roboto Mono", "Source Code Pro", monospace;
   --font-print: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Arial' !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Arial';
   --font-text: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-text-theme: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --font-ui-large: 1.125rem !important;
-  --font-ui-medium: 1rem !important;
-  --font-ui-small: 0.8rem !important;
-  --font-ui-smaller: 0.7rem !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-ui-large: 1.125rem;
+  --font-ui-medium: 1rem;
+  --font-ui-small: 0.8rem;
+  --font-ui-smaller: 0.7rem;
   --footnote-divider-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --footnote-id-color: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --footnote-id-color-no-occurrences: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --footnote-input-background-active: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
-  --footnote-radius: 0.25rem !important;
+  );
+  --footnote-radius: 0.25rem;
   --graph-node: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
-  --graph-node-attachment: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
-  --graph-node-tag: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  ), transparent 30%);
+  --graph-node-attachment: hsl(from hsl(215, 67%, 45%) 57 s l);
+  --graph-node-tag: hsl(from hsl(215, 67%, 45%) 124 s l);
   --graph-node-unresolved: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --graph-text: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
-  --gray: color-mix(in srgb, color-mix(
+  );
+  --gray: var(--text-muted, color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
-  --h1-line-height: 1.5 !important;
-  --h1-size: 39.81312px !important;
-  --h1-weight: 100 !important;
-  --h2-line-height: 1.5 !important;
-  --h2-size: 33.1776px !important;
-  --h2-weight: 200 !important;
-  --h3-line-height: 1.5 !important;
-  --h3-size: 27.648px !important;
-  --h3-weight: 300 !important;
-  --h4-line-height: 1.5 !important;
-  --h4-size: 23.04px !important;
-  --h4-weight: 400 !important;
-  --h5-size: 19.2px !important;
-  --h5-weight: 500 !important;
-  --h6-size: 16px !important;
-  --h6-weight: 500 !important;
-  --header-height: calc(18px + 1rem) !important;
-  --headerFont: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  ), transparent 30%));
+  --h1-line-height: 1.5;
+  --h1-size: 39.81312px;
+  --h1-weight: 100;
+  --h2-line-height: 1.5;
+  --h2-size: 33.1776px;
+  --h2-weight: 200;
+  --h3-line-height: 1.5;
+  --h3-size: 27.648px;
+  --h3-weight: 300;
+  --h4-line-height: 1.5;
+  --h4-size: 23.04px;
+  --h4-weight: 400;
+  --h5-size: 19.2px;
+  --h5-weight: 500;
+  --h6-size: 16px;
+  --h6-weight: 500;
+  --header-height: calc(18px + 1rem);
+  --headerFont: var(--font-text, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
   --heading-formatting: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
-  --heading-spacing: 0.67em !important;
-  --highlight: hsl(215, 67%, 45%) !important;
+  );
+  --heading-spacing: 0.67em;
+  --highlight: var(--background-modifier-hover, hsl(215, 67%, 45%));
   --hr-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
-  --icon-color: hsl(215, 67%, 45%) !important;
-  --icon-color-active: light-dark(white, black) !important;
-  --icon-color-focused: white !important;
-  --icon-color-hover: white !important;
-  --inline-title-line-height: 1.5 !important;
-  --inline-title-size: 27.648px !important;
-  --inline-title-weight: 400 !important;
-  --input-border-width: 2px !important;
+  );
+  --icon-color: hsl(215, 67%, 45%);
+  --icon-color-active: light-dark(white, black);
+  --icon-color-focused: white;
+  --icon-color-hover: white;
+  --inline-title-line-height: 1.5;
+  --inline-title-size: 27.648px;
+  --inline-title-weight: 400;
+  --input-border-width: 2px;
   --input-date-separator: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --input-placeholder-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --input-shadow: 0 1px 2px
     hsl(
       215,
       100.5%,
       11.25%,
       0.5
-    ) !important;
-  --interactive-accent: hsl(215, 67%, 45%) !important;
-  --interactive-accent-hover: hsl(215, 67%, 45%) !important;
-  --light: white !important;
-  --lightgray: color-mix(
+    );
+  --interactive-accent: hsl(215, 67%, 45%);
+  --interactive-accent-hover: hsl(215, 67%, 45%);
+  --light: var(--background-primary, white);
+  --lightgray: var(--background-secondary, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
-  --link-decoration-thickness: 1px !important;
-  --link-unresolved-decoration-style: dashed !important;
-  --list-bullet-size: 0.25em !important;
-  --list-indent: 1.5em !important;
+  ));
+  --link-decoration-thickness: 1px;
+  --link-unresolved-decoration-style: dashed;
+  --list-bullet-size: 0.25em;
+  --list-indent: 1.5em;
   --list-marker-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
+  );
   --list-marker-color-collapsed: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
+  );
   --list-marker-color-hover: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --menu-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
-  --menu-radius: 0.5rem !important;
+  );
+  --menu-radius: 0.5rem;
   --menu-shadow: 0 0 0.05rem
       color-mix(in srgb, color-mix(
     in srgb,
@@ -3977,247 +3978,247 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) 10%, transparent) !important;
+  ) 10%, transparent);
   --metadata-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --metadata-divider-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
-  --metadata-gap: 0.5em !important;
+  );
+  --metadata-gap: 0.5em;
   --metadata-input-background-active: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
+  );
   --metadata-input-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --metadata-input-text-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
+  );
   --metadata-label-background-active: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
+  );
   --metadata-label-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --metadata-label-text-color: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --metadata-label-text-color-hover: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --metadata-property-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
-  --metadata-property-background-active: hsl(215, 67%, 45%) !important;
+  );
+  --metadata-property-background-active: hsl(215, 67%, 45%);
   --metadata-property-background-hover: hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(215, 67%, 45%) !important;
-  --metadata-property-box-shadow-hover: none !important;
-  --metadata-sidebar-input-font-size: 0.8rem !important;
-  --metadata-sidebar-label-font-size: 0.8rem !important;
+  );
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(215, 67%, 45%);
+  --metadata-property-box-shadow-hover: none;
+  --metadata-sidebar-input-font-size: 0.8rem;
+  --metadata-sidebar-label-font-size: 0.8rem;
   --modal-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
-  --modal-border-color: black !important;
-  --modal-border-width: 0 !important;
-  --modal-max-height: calc(100vh - 2em) !important;
-  --modal-max-width: calc(100vw - 2em) !important;
-  --modal-radius: 0.75rem !important;
-  --modal-width: 65rem !important;
+  );
+  --modal-border-color: black;
+  --modal-border-width: 0;
+  --modal-max-height: calc(100vh - 2em);
+  --modal-max-width: calc(100vw - 2em);
+  --modal-radius: 0.75rem;
+  --modal-width: 65rem;
   --nav-collapse-icon-color: hsl(
     from hsl(215, 67%, 45%) h s l / 0.75
-  ) !important;
+  );
   --nav-collapse-icon-color-collapsed: hsl(
     from hsl(215, 67%, 45%) h s l / 0.75
-  ) !important;
+  );
   --nav-heading-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
+  );
   --nav-heading-color-collapsed: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --nav-heading-color-collapsed-hover: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --nav-heading-color-hover: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
+  );
   --nav-indentation-guide-color: hsl(
     from hsl(215, 67%, 45%) h s l / 0.25
-  ) !important;
-  --nav-item-background-active: hsl(215, 67%, 45%) !important;
+  );
+  --nav-item-background-active: hsl(215, 67%, 45%);
   --nav-item-background-hover: hsl(
     from hsl(215, 67%, 45%) h s l / 0.75
-  ) !important;
+  );
   --nav-item-background-selected: hsl(
     from hsl(215, 67%, 45%) h s l / 0.25
-  ) !important;
-  --nav-item-children-margin-start: 7.5px !important;
-  --nav-item-children-padding-start: calc(1em - 0.5px) !important;
+  );
+  --nav-item-children-margin-start: 7.5px;
+  --nav-item-children-padding-start: calc(1em - 0.5px);
   --nav-item-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --nav-item-color-active: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
-  --nav-item-color-hover: white !important;
+  );
+  --nav-item-color-hover: white;
   --nav-item-color-selected: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
-  --nav-item-padding: 0.375em 0.75em 0.375em 0.75em !important;
-  --nav-item-parent-padding: 0.25em 0 0.25em 0 !important;
-  --nav-item-radius: 0.25rem !important;
-  --nav-item-size: 0.8rem !important;
+  );
+  --nav-item-padding: 0.375em 0.75em 0.375em 0.75em;
+  --nav-item-parent-padding: 0.25em 0 0.25em 0;
+  --nav-item-radius: 0.25rem;
+  --nav-item-size: 0.8rem;
   --nav-tag-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --nav-tag-color-active: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --nav-tag-color-hover: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
-  --nav-tag-radius: 0.25rem !important;
-  --obsidian-columns-def-span: 1 !important;
-  --obsidian-columns-gap: 1em !important;
-  --obsidian-columns-min-width: 10em !important;
-  --obsidian-columns-padding: 0 0 !important;
-  --p-spacing: 1em !important;
-  --pdf-background: white !important;
-  --pdf-page-background: white !important;
-  --pdf-sidebar-background: white !important;
+  ), transparent 30%);
+  --nav-tag-radius: 0.25rem;
+  --obsidian-columns-def-span: 1;
+  --obsidian-columns-gap: 1em;
+  --obsidian-columns-min-width: 10em;
+  --obsidian-columns-padding: 0 0;
+  --p-spacing: 1em;
+  --pdf-background: white;
+  --pdf-page-background: white;
+  --pdf-sidebar-background: white;
   --pill-background: hsl(
     from hsl(215, 67%, 45%) h s l / 0.75
-  ) !important;
-  --pill-background-hover: hsl(215, 67%, 45%) !important;
+  );
+  --pill-background-hover: hsl(215, 67%, 45%);
   --pill-background-remove-hover: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --pill-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
-  --pill-color: white !important;
-  --pill-color-hover: white !important;
+  );
+  --pill-color: white;
+  --pill-color-hover: white;
   --pill-color-remove: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
+  );
   --pill-color-remove-hover: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
-  --pill-focus-left-adjust: 0 !important;
-  --pill-focus-width: 100% !important;
-  --prompt-background: white !important;
-  --prompt-border-color: transparent !important;
-  --prompt-border-width: 0 !important;
-  --r-background-color: white !important;
-  --r-block-margin: 20px !important;
+  );
+  --pill-focus-left-adjust: 0;
+  --pill-focus-width: 100%;
+  --prompt-background: white;
+  --prompt-border-color: transparent;
+  --prompt-border-width: 0;
+  --r-background-color: white;
+  --r-block-margin: 20px;
   --r-code-font: ui-monospace, Menlo, SFMono-Regular, Consolas,
-        "Roboto Mono", "Source Code Pro", monospace !important;
+        "Roboto Mono", "Source Code Pro", monospace;
   --r-heading-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
-  --r-heading-font-weight: 100 !important;
-  --r-heading-letter-spacing: normal !important;
-  --r-heading-line-height: 1.2 !important;
-  --r-heading-margin: 0.67em 0 0 0 !important;
-  --r-heading-text-shadow: none !important;
-  --r-heading-text-transform: none !important;
-  --r-heading1-size: 2.5em !important;
-  --r-heading1-text-shadow: none !important;
-  --r-heading2-size: 1.6em !important;
-  --r-heading3-size: 1.3em !important;
-  --r-heading4-size: 1em !important;
-  --r-link-color: hsl(258, 88%, 66%) !important;
-  --r-link-color-hover: hsl(255, 89.76%, 75.9%) !important;
+  );
+  --r-heading-font-weight: 100;
+  --r-heading-letter-spacing: normal;
+  --r-heading-line-height: 1.2;
+  --r-heading-margin: 0.67em 0 0 0;
+  --r-heading-text-shadow: none;
+  --r-heading-text-transform: none;
+  --r-heading1-size: 2.5em;
+  --r-heading1-text-shadow: none;
+  --r-heading2-size: 1.6em;
+  --r-heading3-size: 1.3em;
+  --r-heading4-size: 1em;
+  --r-link-color: hsl(258, 88%, 66%);
+  --r-link-color-hover: hsl(255, 89.76%, 75.9%);
   --r-main-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
+  );
   --r-main-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --r-main-font-size: 42px !important;
-  --radius-l: 0.75rem !important;
-  --radius-m: 0.5rem !important;
-  --radius-s: 0.25rem !important;
-  --radius-xl: 1rem !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --r-main-font-size: 42px;
+  --radius-l: 0.75rem;
+  --radius-m: 0.5rem;
+  --radius-s: 0.25rem;
+  --radius-xl: 1rem;
   --raised-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
-  --ribbon-background: transparent !important;
-  --ribbon-background-collapsed: transparent !important;
-  --ribbon-width: 3em !important;
-  --scrollbar-radius: 0.75rem !important;
-  --search-clear-button-color: hsl(215, 67%, 45%) !important;
-  --search-icon-color: hsl(215, 67%, 45%) !important;
-  --search-result-background: white !important;
-  --secondary: hsl(215, 67%, 45%) !important;
+  );
+  --ribbon-background: transparent;
+  --ribbon-background-collapsed: transparent;
+  --ribbon-width: 3em;
+  --scrollbar-radius: 0.75rem;
+  --search-clear-button-color: hsl(215, 67%, 45%);
+  --search-icon-color: hsl(215, 67%, 45%);
+  --search-result-background: white;
+  --secondary: var(--interactive-accent, hsl(215, 67%, 45%));
   --setting-group-heading-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
-  --setting-group-heading-size: 1rem !important;
-  --setting-items-background: none !important;
+  );
+  --setting-group-heading-size: 1rem;
+  --setting-items-background: none;
   --setting-items-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
-  --setting-items-padding: 0 !important;
-  --setting-items-radius: 0 !important;
+  );
+  --setting-items-padding: 0;
+  --setting-items-radius: 0;
   --shadow-l: 0 0 0.2rem
       color-mix(in srgb, color-mix(
     in srgb,
@@ -4245,7 +4246,7 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) 10%, transparent) !important;
+  ) 10%, transparent);
   --shadow-s: 0 0 0.05rem
       color-mix(in srgb, color-mix(
     in srgb,
@@ -4274,124 +4275,124 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) 10%, transparent) !important;
+  ) 10%, transparent);
   --shiki-active-tab-border-color: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --shiki-code-background: light-dark(
     hsl(from black h s l / 0.06),
     hsl(from white h s l / 0.06)
-  ) !important;
-  --shiki-code-block-border-radius: 0.25rem !important;
-  --shiki-code-block-spacing: 1em !important;
+  );
+  --shiki-code-block-border-radius: 0.25rem;
+  --shiki-code-block-spacing: 1em;
   --shiki-code-comment: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
-  --shiki-code-function: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
-  --shiki-code-important: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
-  --shiki-code-keyword: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
+  );
+  --shiki-code-function: hsl(from hsl(215, 67%, 45%) 124 s l);
+  --shiki-code-important: hsl(from hsl(215, 67%, 45%) 27 s l);
+  --shiki-code-keyword: hsl(from hsl(215, 67%, 45%) 331 s l);
   --shiki-code-normal: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
-  --shiki-code-property: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
+  ), transparent 30%);
+  --shiki-code-property: hsl(from hsl(215, 67%, 45%) 179 s l);
   --shiki-code-punctuation: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
-  --shiki-code-string: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
-  --shiki-code-value: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
+  ), transparent 30%);
+  --shiki-code-string: hsl(from hsl(215, 67%, 45%) 57 s l);
+  --shiki-code-value: hsl(from hsl(215, 67%, 45%) 253 s l);
   --shiki-gutter-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --shiki-gutter-text-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --shiki-gutter-text-color-highlight: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --shiki-highlight-neutral: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --shiki-terminal-dots-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --shiki-tooltip-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
-  --sidebar-markdown-font-size: 12.8px !important;
+  );
+  --sidebar-markdown-font-size: 12.8px;
   --slider-track-background: hsl(
     from hsl(215, 67%, 45%) h s l / 0.5
-  ) !important;
+  );
   --status-bar-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --status-bar-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
-  --status-bar-font-size: 0.7rem !important;
-  --status-bar-radius: 0.5rem 0 0 0 !important;
-  --status-bar-text-color: black !important;
-  --suggestion-background: white !important;
-  --sync-avatar-color-1: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
-  --sync-avatar-color-2: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
-  --sync-avatar-color-3: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
-  --sync-avatar-color-4: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
-  --sync-avatar-color-5: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
-  --sync-avatar-color-6: hsl(from hsl(215, 67%, 45%) 219 s l) !important;
-  --sync-avatar-color-7: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
-  --sync-avatar-color-8: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
-  --tab-background-active: white !important;
+  );
+  --status-bar-font-size: 0.7rem;
+  --status-bar-radius: 0.5rem 0 0 0;
+  --status-bar-text-color: black;
+  --suggestion-background: white;
+  --sync-avatar-color-1: hsl(from hsl(215, 67%, 45%) 356 s l);
+  --sync-avatar-color-2: hsl(from hsl(215, 67%, 45%) 27 s l);
+  --sync-avatar-color-3: hsl(from hsl(215, 67%, 45%) 57 s l);
+  --sync-avatar-color-4: hsl(from hsl(215, 67%, 45%) 124 s l);
+  --sync-avatar-color-5: hsl(from hsl(215, 67%, 45%) 179 s l);
+  --sync-avatar-color-6: hsl(from hsl(215, 67%, 45%) 219 s l);
+  --sync-avatar-color-7: hsl(from hsl(215, 67%, 45%) 253 s l);
+  --sync-avatar-color-8: hsl(from hsl(215, 67%, 45%) 331 s l);
+  --tab-background-active: white;
   --tab-background-inactive: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
-  --tab-container-background: transparent !important;
-  --tab-curve: 0.125em !important;
-  --tab-font-size: 0.8rem !important;
+  );
+  --tab-container-background: transparent;
+  --tab-curve: 0.125em;
+  --tab-font-size: 0.8rem;
   --tab-outline-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
-  --tab-outline-width: 0 !important;
-  --tab-radius: 0.25em !important;
-  --tab-radius-active: 0.25em !important;
-  --tab-stacked-font-size: 0.8rem !important;
-  --tab-stacked-header-width: calc(18px + 1rem) !important;
+  );
+  --tab-outline-width: 0;
+  --tab-radius: 0.25em;
+  --tab-radius-active: 0.25em;
+  --tab-stacked-font-size: 0.8rem;
+  --tab-stacked-header-width: calc(18px + 1rem);
   --tab-switcher-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --tab-switcher-menubar-background: linear-gradient(to top, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ), transparent) !important;
+  ), transparent);
   --tab-switcher-preview-background-shadow: 0 0 0.2rem
       color-mix(in srgb, color-mix(
     in srgb,
@@ -4419,214 +4420,214 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) 10%, transparent) !important;
-  --tab-switcher-preview-radius: 1rem !important;
-  --tab-switcher-preview-shadow: none !important;
-  --tab-switcher-preview-shadow-active: none !important;
+  ) 10%, transparent);
+  --tab-switcher-preview-radius: 1rem;
+  --tab-switcher-preview-shadow: none;
+  --tab-switcher-preview-shadow-active: none;
   --tab-text-color: hsl(
     from hsl(215, 67%, 45%) h s l / 0.5
-  ) !important;
+  );
   --tab-text-color-active: hsl(
     from hsl(215, 67%, 45%) h s l / 0.5
-  ) !important;
+  );
   --tab-text-color-focused: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --tab-text-color-focused-active: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --tab-text-color-focused-active-current: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
-  --tab-text-color-focused-highlighted: hsl(215, 67%, 45%) !important;
+  );
+  --tab-text-color-focused-highlighted: hsl(215, 67%, 45%);
   --table-add-button-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --table-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
-  --table-drag-handle-background-active: hsl(215, 67%, 45%) !important;
+  );
+  --table-drag-handle-background-active: hsl(215, 67%, 45%);
   --table-drag-handle-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --table-drag-handle-color-active: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
+  );
   --table-header-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --table-header-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
-  --table-selection-border-color: hsl(215, 67%, 45%) !important;
+  );
+  --table-selection-border-color: hsl(215, 67%, 45%);
   --tag-background: hsl(
     258,
     88%,
     66%,
     0.15
-  ) !important;
+  );
   --tag-color: hsl(
     258,
     88%,
     59.4%
-  ) !important;
-  --tag-weight: 400 !important;
-  --tertiary: hsl(215, 67%, 45%) !important;
-  --text-error: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  );
+  --tag-weight: 400;
+  --tertiary: var(--interactive-accent-hover, hsl(215, 67%, 45%));
+  --text-error: hsl(from hsl(215, 67%, 45%) 356 s l);
   --text-faint: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --text-muted: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --text-normal: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
+  );
   --text-on-accent: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
-  --text-success: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
-  --text-warning: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
-  --textHighlight: hsl(215, 67%, 45%) !important;
-  --theme-cardAspectRatio: auto !important;
-  --theme-cardImageFit: contain !important;
+  );
+  --text-success: hsl(from hsl(215, 67%, 45%) 124 s l);
+  --text-warning: hsl(from hsl(215, 67%, 45%) 27 s l);
+  --textHighlight: var(--background-modifier-hover, hsl(215, 67%, 45%));
+  --theme-cardAspectRatio: auto;
+  --theme-cardImageFit: contain;
   --theme-color-activeLineHighlight: hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ) !important;
+  );
   --theme-color-audioRecordingActive: hsl(
     from hsl(from hsl(215, 67%, 45%) 356 s l) h calc(s * 1.5) calc(l * 0.5)
-  ) !important;
-  --theme-color-base: hsl(215, 67%, 45%) !important;
+  );
+  --theme-color-base: hsl(215, 67%, 45%);
   --theme-color-baseDarkened12: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 12.5%
-  ) !important;
+  );
   --theme-color-baseDarkened25: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --theme-color-baseDarkened40: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 40%
-  ) !important;
+  );
   --theme-color-baseDarkened60: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 60%
-  ) !important;
+  );
   --theme-color-baseDarkened70: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --theme-color-baseDarkened80: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --theme-color-baseDarkened85: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 85%
-  ) !important;
+  );
   --theme-color-baseDarkened90: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
+  );
   --theme-color-baseLightened12: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 12.5%
-  ) !important;
+  );
   --theme-color-baseLightened25: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --theme-color-baseLightened40: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 40%
-  ) !important;
+  );
   --theme-color-baseLightened60: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --theme-color-baseLightened70: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 70%
-  ) !important;
+  );
   --theme-color-baseLightened80: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
+  );
   --theme-color-baseLightened85: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 85%
-  ) !important;
+  );
   --theme-color-baseLightened95: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
+  );
   --theme-color-baseTransparent06: hsl(
     from hsl(215, 67%, 45%) h s l / 0.06
-  ) !important;
+  );
   --theme-color-baseTransparent12: hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ) !important;
+  );
   --theme-color-baseTransparent25: hsl(
     from hsl(215, 67%, 45%) h s l / 0.25
-  ) !important;
+  );
   --theme-color-baseTransparent35: hsl(
     from hsl(215, 67%, 45%) h s l / 0.35
-  ) !important;
+  );
   --theme-color-baseTransparent50: hsl(
     from hsl(215, 67%, 45%) h s l / 0.5
-  ) !important;
+  );
   --theme-color-baseTransparent75: hsl(
     from hsl(215, 67%, 45%) h s l / 0.75
-  ) !important;
+  );
   --theme-color-blueDarkened: hsl(
     from hsl(from hsl(215, 67%, 45%) 219 s l) h calc(s * 1.5) calc(l * 0.5)
-  ) !important;
+  );
   --theme-color-blueLightened: hsl(
     from hsl(from hsl(215, 67%, 45%) 219 s l) h calc(s * 1.5) calc(l * 1.5)
-  ) !important;
+  );
   --theme-color-calendarBg: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -4635,35 +4636,35 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  )) !important;
-  --theme-color-calendarDayBg: hsl(from white h s l / 0.75) !important;
+  ));
+  --theme-color-calendarDayBg: hsl(from white h s l / 0.75);
   --theme-color-card: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
-  --theme-color-cardBg: white !important;
-  --theme-color-cardBgHover: hsl(215, 67%, 45%) !important;
-  --theme-color-cardHover: white !important;
+  );
+  --theme-color-cardBg: white;
+  --theme-color-cardBgHover: hsl(215, 67%, 45%);
+  --theme-color-cardHover: white;
   --theme-color-communityItemBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
-  --theme-color-communityItemBgActive: hsl(215, 67%, 45%) !important;
+  );
+  --theme-color-communityItemBgActive: hsl(215, 67%, 45%);
   --theme-color-communityItemBgHover: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --theme-color-communityItemBgSelected: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 12.5%
-  ) !important;
-  --theme-color-contentItemBg: hsl(from white h s l / 0.5) !important;
-  --theme-color-contentItemBgActive: hsl(215, 67%, 45%) !important;
-  --theme-color-contentItemBgHover: hsl(from white h s l / 0.25) !important;
+  );
+  --theme-color-contentItemBg: hsl(from white h s l / 0.5);
+  --theme-color-contentItemBgActive: hsl(215, 67%, 45%);
+  --theme-color-contentItemBgHover: hsl(from white h s l / 0.25);
   --theme-color-control: light-dark(
     color-mix(
     in srgb,
@@ -4675,7 +4676,7 @@ html[saved-theme="dark"] body ul.tags > li {
     hsl(215, 67%, 45%),
     white 60%
   )
-  ) !important;
+  );
   --theme-color-controlActive: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -4684,13 +4685,13 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  )) !important;
+  ));
   --theme-color-controlBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
-  --theme-color-controlBgActive: hsl(215, 67%, 45%) !important;
+  );
+  --theme-color-controlBgActive: hsl(215, 67%, 45%);
   --theme-color-controlBgHover: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -4699,13 +4700,13 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     black 40%
-  )) !important;
-  --theme-color-controlContentArea: hsl(215, 67%, 45%) !important;
+  ));
+  --theme-color-controlContentArea: hsl(215, 67%, 45%);
   --theme-color-controlContentAreaHover: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
+  );
   --theme-color-controlHasActiveMenu: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -4714,7 +4715,7 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  )) !important;
+  ));
   --theme-color-controlHover: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -4723,49 +4724,49 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  )) !important;
+  ));
   --theme-color-controlLightweightActive: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
-  --theme-color-controlLowWeightBg: hsl(from white h s l / 0.5) !important;
+  );
+  --theme-color-controlLowWeightBg: hsl(from white h s l / 0.5);
   --theme-color-controlSetBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
+  );
   --theme-color-controlText: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  ) !important;
+  );
   --theme-color-controlTextHover: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
+  );
   --theme-color-controlUIHover: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
+  );
   --theme-color-controlUISelected: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
+  );
   --theme-color-cyanDarkened: hsl(
     from hsl(from hsl(215, 67%, 45%) 179 s l) h calc(s * 1.5) calc(l * 0.5)
-  ) !important;
+  );
   --theme-color-cyanLightened: hsl(
     from hsl(from hsl(215, 67%, 45%) 179 s l) h calc(s * 1.5) calc(l * 1.5)
-  ) !important;
-  --theme-color-darkenTransparent06: hsl(from black h s l / 0.06) !important;
-  --theme-color-darkenTransparent12: hsl(from black h s l / 0.12) !important;
-  --theme-color-darkenTransparent25: hsl(from black h s l / 0.25) !important;
-  --theme-color-darkenTransparent50: hsl(from black h s l / 0.5) !important;
-  --theme-color-darkenTransparent75: hsl(from black h s l / 0.75) !important;
+  );
+  --theme-color-darkenTransparent06: hsl(from black h s l / 0.06);
+  --theme-color-darkenTransparent12: hsl(from black h s l / 0.12);
+  --theme-color-darkenTransparent25: hsl(from black h s l / 0.25);
+  --theme-color-darkenTransparent50: hsl(from black h s l / 0.5);
+  --theme-color-darkenTransparent75: hsl(from black h s l / 0.75);
   --theme-color-dataviewEmpty: light-dark(
     color-mix(
     in srgb,
@@ -4777,75 +4778,75 @@ html[saved-theme="dark"] body ul.tags > li {
     hsl(215, 67%, 45%),
     black 40%
   )
-  ) !important;
+  );
   --theme-color-dragTarget: hsl(
     from hsl(215, 67%, 45%) h s l / 0.5
-  ) !important;
+  );
   --theme-color-dragTargetBg: hsl(
     from hsl(215, 67%, 45%) h s l / 0.25
-  ) !important;
+  );
   --theme-color-emptyStateBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
+  );
   --theme-color-gradientBottom: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 40%
-  ) !important;
+  );
   --theme-color-gradientCardsetBottom: hsl(
     from hsl(215, 67%, 45%) h s l / 0.06
-  ) !important;
+  );
   --theme-color-gradientCardsetGeneratedBottom: hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ) !important;
+  );
   --theme-color-gradientCardsetGeneratedTop: hsl(
     from hsl(215, 67%, 45%) h s l / 0.35
-  ) !important;
+  );
   --theme-color-gradientCardsetTop: hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ) !important;
+  );
   --theme-color-gradientDarkenedBottom: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --theme-color-gradientDarkenedTop: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 45%
-  ) !important;
+  );
   --theme-color-gradientTop: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
-  --theme-color-graphLine: black !important;
-  --theme-color-graphViewBg: transparent !important;
+  );
+  --theme-color-graphLine: black;
+  --theme-color-graphViewBg: transparent;
   --theme-color-greenDarkened: hsl(
     from hsl(from hsl(215, 67%, 45%) 124 s l) h calc(s * 1.5) calc(l * 0.5)
-  ) !important;
+  );
   --theme-color-greenLightened: hsl(
     from hsl(from hsl(215, 67%, 45%) 124 s l) h calc(s * 1.5) calc(l * 1.5)
-  ) !important;
-  --theme-color-greenTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 124 s l) h s l / 0.25) !important;
-  --theme-color-greenTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 124 s l) h s l / 0.75) !important;
-  --theme-color-hotkey: hsl(215, 67%, 45%) !important;
+  );
+  --theme-color-greenTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 124 s l) h s l / 0.25);
+  --theme-color-greenTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 124 s l) h s l / 0.75);
+  --theme-color-hotkey: hsl(215, 67%, 45%);
   --theme-color-inputBorder: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
-  --theme-color-inputPlaceholder: hsl(215, 67%, 45%) !important;
+  );
+  --theme-color-inputPlaceholder: hsl(215, 67%, 45%);
   --theme-color-interactiveActive: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
-  --theme-color-jiraIssueDanger: white !important;
-  --theme-color-jiraIssueDangerBg: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.25) !important;
-  --theme-color-jiraIssueDeleteBg: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  );
+  --theme-color-jiraIssueDanger: white;
+  --theme-color-jiraIssueDangerBg: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.25);
+  --theme-color-jiraIssueDeleteBg: hsl(from hsl(215, 67%, 45%) 356 s l);
   --theme-color-jiraIssueInfoBg: light-dark(
     hsl(
     from hsl(from hsl(215, 67%, 45%) 219 s l) h calc(s * 1.5) calc(l * 1.5)
@@ -4853,12 +4854,12 @@ html[saved-theme="dark"] body ul.tags > li {
     hsl(
     from hsl(from hsl(215, 67%, 45%) 219 s l) h calc(s * 1.5) calc(l * 0.5)
   )
-  ) !important;
+  );
   --theme-color-jiraIssueStatus: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
+  );
   --theme-color-jiraIssueStatusBg: light-dark(
     color-mix(
     in srgb,
@@ -4870,7 +4871,7 @@ html[saved-theme="dark"] body ul.tags > li {
     hsl(215, 67%, 45%),
     black 90%
   )
-  ) !important;
+  );
   --theme-color-jiraIssueSuccessBg: light-dark(
     hsl(
     from hsl(from hsl(215, 67%, 45%) 124 s l) h calc(s * 1.5) calc(l * 1.5)
@@ -4878,11 +4879,11 @@ html[saved-theme="dark"] body ul.tags > li {
     hsl(
     from hsl(from hsl(215, 67%, 45%) 124 s l) h calc(s * 1.5) calc(l * 0.5)
   )
-  ) !important;
+  );
   --theme-color-jiraIssueTableStripe: light-dark(
     hsl(from white h s l / 0.5),
     hsl(from black h s l / 0.5)
-  ) !important;
+  );
   --theme-color-jiraIssueWarningBg: light-dark(control
     hsl(
     from hsl(from hsl(215, 67%, 45%) 57 s l) h calc(s * 1.5) calc(l * 1.5)
@@ -4890,17 +4891,17 @@ html[saved-theme="dark"] body ul.tags > li {
     hsl(
     from hsl(from hsl(215, 67%, 45%) 57 s l) h calc(s * 1.5) calc(l * 0.5)
   )
-  ) !important;
+  );
   --theme-color-kanbanLaneBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
-  --theme-color-lightenTransparent06: hsl(from white h s l / 0.06) !important;
-  --theme-color-lightenTransparent12: hsl(from white h s l / 0.12) !important;
-  --theme-color-lightenTransparent25: hsl(from white h s l / 0.25) !important;
-  --theme-color-lightenTransparent50: hsl(from white h s l / 0.5) !important;
-  --theme-color-lightenTransparent75: hsl(from white h s l / 0.75) !important;
+  );
+  --theme-color-lightenTransparent06: hsl(from white h s l / 0.06);
+  --theme-color-lightenTransparent12: hsl(from white h s l / 0.12);
+  --theme-color-lightenTransparent25: hsl(from white h s l / 0.25);
+  --theme-color-lightenTransparent50: hsl(from white h s l / 0.5);
+  --theme-color-lightenTransparent75: hsl(from white h s l / 0.75);
   --theme-color-lineNumbers: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -4909,116 +4910,116 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     black 60%
-  )) !important;
+  ));
   --theme-color-log: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --theme-color-logBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --theme-color-menuBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
+  );
   --theme-color-mobileToolbarBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
+  );
   --theme-color-modalContentBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 60%
-  ) !important;
-  --theme-color-navFileTag: hsl(215, 67%, 45%) !important;
+  );
+  --theme-color-navFileTag: hsl(215, 67%, 45%);
   --theme-color-navFileTagActive: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
+  );
   --theme-color-navFileTagActiveBorder: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
-  --theme-color-navFileTagBorder: hsl(215, 67%, 45%) !important;
-  --theme-color-navigationButtonBgHover: hsl(215, 67%, 45%) !important;
+  );
+  --theme-color-navFileTagBorder: hsl(215, 67%, 45%);
+  --theme-color-navigationButtonBgHover: hsl(215, 67%, 45%);
   --theme-color-notice: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
+  );
   --theme-color-noticeBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 80%
-  ) !important;
+  );
   --theme-color-orangeDarkened: hsl(
     from hsl(from hsl(215, 67%, 45%) 27 s l) h calc(s * 1.5) calc(l * 0.5)
-  ) !important;
+  );
   --theme-color-orangeLightened: hsl(
     from hsl(from hsl(215, 67%, 45%) 27 s l) h calc(s * 1.5) calc(l * 1.5)
-  ) !important;
-  --theme-color-orangeTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 27 s l) h s l / 0.25) !important;
-  --theme-color-orangeTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 27 s l) h s l / 0.75) !important;
+  );
+  --theme-color-orangeTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 27 s l) h s l / 0.25);
+  --theme-color-orangeTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 27 s l) h s l / 0.75);
   --theme-color-pinkDarkened: hsl(
     from hsl(from hsl(215, 67%, 45%) 331 s l) h calc(s * 1.5) calc(l * 0.5)
-  ) !important;
+  );
   --theme-color-pinkLightened: hsl(
     from hsl(from hsl(215, 67%, 45%) 331 s l) h calc(s * 1.5) calc(l * 1.5)
-  ) !important;
+  );
   --theme-color-promptInstructions: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 40%
-  ) !important;
+  );
   --theme-color-purpleDarkened: hsl(
     from hsl(from hsl(215, 67%, 45%) 253 s l) h calc(s * 1.5) calc(l * 0.5)
-  ) !important;
+  );
   --theme-color-purpleLightened: hsl(
     from hsl(from hsl(215, 67%, 45%) 253 s l) h calc(s * 1.5) calc(l * 1.5)
-  ) !important;
+  );
   --theme-color-queryComponentBg: hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ) !important;
+  );
   --theme-color-redDarkened: hsl(
     from hsl(from hsl(215, 67%, 45%) 356 s l) h calc(s * 1.5) calc(l * 0.5)
-  ) !important;
+  );
   --theme-color-redLightened: hsl(
     from hsl(from hsl(215, 67%, 45%) 356 s l) h calc(s * 1.5) calc(l * 1.5)
-  ) !important;
-  --theme-color-redTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.25) !important;
-  --theme-color-redTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.75) !important;
+  );
+  --theme-color-redTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.25);
+  --theme-color-redTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.75);
   --theme-color-settingsBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
+  );
   --theme-color-settingsBgStripe: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
-  --theme-color-settingsGroupBg: hsl(from white h s l / 0.5) !important;
+  );
+  --theme-color-settingsGroupBg: hsl(from white h s l / 0.5);
   --theme-color-shadow: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) !important;
+  );
   --theme-color-suggestionBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 85%
-  ) !important;
-  --theme-color-switcherBgActive: hsl(215, 67%, 45%) !important;
+  );
+  --theme-color-switcherBgActive: hsl(215, 67%, 45%);
   --theme-color-tabBgInactiveHover: hsl(
     from hsl(215, 67%, 45%) h s l / 0.75
-  ) !important;
+  );
   --theme-color-tabNavActiveBg: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -5027,7 +5028,7 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     black 70%
-  )) !important;
+  ));
   --theme-color-tabNavBg: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -5036,62 +5037,62 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     black 60%
-  )) !important;
+  ));
   --theme-color-tableHeaderBg: hsl(
     from hsl(215, 67%, 45%) h s l / 0.12
-  ) !important;
+  );
   --theme-color-tagBgHover: hsl(
     258,
     89.76%,
     68.31%,
     0.1
-  ) !important;
+  );
   --theme-color-tagBgSidebar: hsl(
     258,
     105.6%,
     66%,
     0.15
-  ) !important;
+  );
   --theme-color-tagBgSidebarHover: hsl(
     258,
     107.36%,
     75.9%,
     0.15
-  ) !important;
+  );
   --theme-color-tagHover: hsl(
     258,
     89.76%,
     68.31%
-  ) !important;
+  );
   --theme-color-tagSidebar: hsl(
     258,
     88%,
     26.4%
-  ) !important;
+  );
   --theme-color-tagSidebarHover: hsl(
     258,
     89.76%,
     30.36%
-  ) !important;
-  --theme-color-textMeta: hsl(215, 67%, 45%) !important;
+  );
+  --theme-color-textMeta: hsl(215, 67%, 45%);
   --theme-color-textSelected: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 80%
-  ) !important;
+  );
   --theme-color-warningBg: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 95%
-  ) !important;
+  );
   --theme-color-yellowDarkened: hsl(
     from hsl(from hsl(215, 67%, 45%) 57 s l) h calc(s * 1.5) calc(l * 0.5)
-  ) !important;
+  );
   --theme-color-yellowLightened: hsl(
     from hsl(from hsl(215, 67%, 45%) 57 s l) h calc(s * 1.5) calc(l * 1.5)
-  ) !important;
-  --theme-color-yellowTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 57 s l) h s l / 0.25) !important;
-  --theme-color-yellowTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 57 s l) h s l / 0.75) !important;
+  );
+  --theme-color-yellowTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 57 s l) h s l / 0.25);
+  --theme-color-yellowTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 57 s l) h s l / 0.75);
   --theme-gradient-DarkenedTopToBottom: linear-gradient(
     0deg,
     color-mix(
@@ -5104,7 +5105,7 @@ html[saved-theme="dark"] body ul.tags > li {
     hsl(215, 67%, 45%),
     white 25%
   ) 100%
-  ) !important;
+  );
   --theme-gradient-bottomToTop: linear-gradient(
     0deg,
     color-mix(
@@ -5117,7 +5118,7 @@ html[saved-theme="dark"] body ul.tags > li {
     hsl(215, 67%, 45%),
     white 60%
   ) 100%
-  ) !important;
+  );
   --theme-gradient-topToBottom: linear-gradient(
     0deg,
     color-mix(
@@ -5130,33 +5131,33 @@ html[saved-theme="dark"] body ul.tags > li {
     hsl(215, 67%, 45%),
     white 40%
   ) 100%
-  ) !important;
+  );
   --theme-grid-cardSet: repeat(
     auto-fit,
     minmax(8em, 1fr)
-  ) !important;
-  --theme-length-cardImageHeight: 25em !important;
-  --theme-length-cardMaxWidth: 1fr !important;
-  --theme-length-cardMinWidth: 8em !important;
-  --theme-length-checkboxBorderWidth: 1px !important;
-  --theme-length-closeButtonWidth: 1.5rem !important;
-  --theme-length-collapseIndicatorSize: 1.5rem !important;
-  --theme-length-controlSetSpacing: 0.5rem !important;
-  --theme-length-fullBorderRadius: 9999px !important;
-  --theme-length-radiusXS: 0.125rem !important;
-  --theme-length-statusBarHeight: 2rem !important;
+  );
+  --theme-length-cardImageHeight: 25em;
+  --theme-length-cardMaxWidth: 1fr;
+  --theme-length-cardMinWidth: 8em;
+  --theme-length-checkboxBorderWidth: 1px;
+  --theme-length-closeButtonWidth: 1.5rem;
+  --theme-length-collapseIndicatorSize: 1.5rem;
+  --theme-length-controlSetSpacing: 0.5rem;
+  --theme-length-fullBorderRadius: 9999px;
+  --theme-length-radiusXS: 0.125rem;
+  --theme-length-statusBarHeight: 2rem;
   --theme-padding-block: 0.75em
-    1.5em !important;
-  --theme-padding-blockHorizontal: 1.5em !important;
-  --theme-padding-blockVertical: 0.75em !important;
-  --theme-setting-lineWidth: 60 !important;
+    1.5em;
+  --theme-padding-blockHorizontal: 1.5em;
+  --theme-padding-blockVertical: 0.75em;
+  --theme-setting-lineWidth: 60;
   --theme-shadow-control: 0 1px 2px
     hsl(
       215,
       100.5%,
       11.25%,
       0.5
-    ) !important;
+    );
   --theme-shadow-indent: 0 0 0.2rem
       color-mix(in srgb, color-mix(
     in srgb,
@@ -5182,7 +5183,7 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) 15%, transparent) !important;
+  ) 15%, transparent);
   --theme-shadow-indent-small: 0 0 0.05rem
       color-mix(in srgb, color-mix(
     in srgb,
@@ -5208,7 +5209,7 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     black 25%
-  ) 20%, transparent) !important;
+  ) 20%, transparent);
   --theme-shadow-input: 0 1px 2px
       hsl(
         215,
@@ -5229,37 +5230,37 @@ html[saved-theme="dark"] body ul.tags > li {
         50.25%,
         11.25%,
         0.05
-      ) !important;
-  --theme-value-gradientContrast: 0.2 !important;
-  --theme-value-headingScaleFactor: 1.2 !important;
-  --theme-value-sidebarFontScalingFactor: 0.8 !important;
-  --titleFont: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+      );
+  --theme-value-gradientContrast: 0.2;
+  --theme-value-headingScaleFactor: 1.2;
+  --theme-value-sidebarFontScalingFactor: 0.8;
+  --titleFont: var(--font-text, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --titlebar-background: transparent !important;
-  --titlebar-background-focused: transparent !important;
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+  --titlebar-background: transparent;
+  --titlebar-background-focused: transparent;
   --titlebar-border-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     white 25%
-  ) !important;
+  );
   --titlebar-text-color: color-mix(in srgb, color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ), transparent 30%) !important;
+  ), transparent 30%);
   --titlebar-text-color-focused: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
-  --traffic-lights-offset-x: calc(18px + 1rem) !important;
-  --traffic-lights-offset-y: calc(18px + 1rem) !important;
+  );
+  --traffic-lights-offset-x: calc(18px + 1rem);
+  --traffic-lights-offset-y: calc(18px + 1rem);
   --vault-profile-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  ) !important;
+  );
   --vault-profile-color-hover: light-dark(color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -5268,14 +5269,14 @@ html[saved-theme="dark"] body ul.tags > li {
     in srgb,
     hsl(215, 67%, 45%),
     black 90%
-  )) !important;
-  --vault-profile-font-size: 0.8rem !important;
-  --quartz-icon-color: currentColor !important;
+  ));
+  --vault-profile-font-size: 0.8rem;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -6932,6 +6933,2622 @@ html[saved-theme="light"] body sup {
 html[saved-theme="light"] body ul.tags > li {
   background-color: rgba(138, 92, 245, 0.15);
   color: rgb(115, 60, 243);
+}`,
+  },
+  classSettings: {
+    "theme-setting-baseColorPreset-accent": `body.css-settings-manager.theme-setting-baseColorPreset-accent {
+--base-h: var(--accent-h);
+--base-s: var(--accent-s);
+--base-l: var(--accent-l);
+}`,
+    "theme-setting-baseColorPreset-whero": `body.css-settings-manager.theme-setting-baseColorPreset-whero {
+--base-h: 0;
+--base-s: 65%;
+--base-l: 50%;
+}`,
+    "theme-setting-baseColorPreset-karaka": `body.css-settings-manager.theme-setting-baseColorPreset-karaka {
+--base-h: 30;
+--base-s: 80%;
+--base-l: 50%;
+}`,
+    "theme-setting-baseColorPreset-koowhai": `body.css-settings-manager.theme-setting-baseColorPreset-koowhai {
+--base-h: 52;
+--base-s: 70%;
+--base-l: 45%;
+}`,
+    "theme-setting-baseColorPreset-kaakaariki": `body.css-settings-manager.theme-setting-baseColorPreset-kaakaariki {
+--base-h: 90;
+--base-s: 65%;
+--base-l: 39%;
+}`,
+    "theme-setting-baseColorPreset-kaarikioorangi": `body.css-settings-manager.theme-setting-baseColorPreset-kaarikioorangi {
+--base-h: 175;
+--base-s: 57%;
+--base-l: 40%;
+}`,
+    "theme-setting-baseColorPreset-kahurangi": `body.css-settings-manager.theme-setting-baseColorPreset-kahurangi {
+--base-h: 215;
+--base-s: 67%;
+--base-l: 45%;
+}`,
+    "theme-setting-baseColorPreset-waiporoporo": `body.css-settings-manager.theme-setting-baseColorPreset-waiporoporo {
+--base-h: 275;
+--base-s: 50%;
+--base-l: 40%;
+}`,
+    "theme-setting-baseColorPreset-maawhero": `body.css-settings-manager.theme-setting-baseColorPreset-maawhero {
+--base-h: 335;
+--base-s: 60%;
+--base-l: 60%;
+}`,
+    "theme-setting-baseColorPreset-mangu": `body.css-settings-manager.theme-setting-baseColorPreset-mangu {
+--base-h: 240;
+--base-s: 5%;
+--base-l: 20%;
+}
+body.css-settings-manager.theme-setting-baseColorPreset-mangu {
+--text-on-accent: white;
+--nav-item-color-active: white;
+--icon-color: white;
+--icon-color-focused: white;
+--theme-color-controlLightweightActive: white;
+--theme-color-controlActive: white;
+--theme-color-controlHover: white;
+--vault-profile-color-hover: white;
+--nav-item-color-hover: white;
+--interactive-accent: var(--theme-color-baseLightened25);
+}`,
+    "theme-setting-baseColorPreset-maa": `body.css-settings-manager.theme-setting-baseColorPreset-maa {
+--text-on-accent: black;
+--nav-item-color-active: black;
+--icon-color: black;
+--icon-color-focused: black;
+--theme-color-controlLightweightActive: black;
+--theme-color-controlActive: black;
+--theme-color-controlHover: black;
+--theme-color-controlTextHover: black;
+--vault-profile-color-hover: black;
+--nav-item-color-hover: black;
+--interactive-accent: var(--theme-color-baseDarkened25);
+--icon-color-focused: black;
+}
+
+body.css-settings-manager.theme-setting-baseColorPreset-maawhero {
+--base-h: 335;
+--base-s: 60%;
+--base-l: 60%;
+}
+
+body.css-settings-manager.theme-setting-baseColorPreset-maa {
+--base-h: 50;
+--base-s: 0%;
+--base-l: 95%;
+}
+body.css-settings-manager.theme-setting-baseColorPreset-maa {
+--icon-color: white;
+}`,
+    "theme-setting-baseColorPreset-kiwikiwi": `body.css-settings-manager.theme-setting-baseColorPreset-kiwikiwi {
+--base-h: 40;
+--base-s: 5%;
+--base-l: 50%;
+}`,
+    "theme-setting-lightModeNoteBgNearWhite": `.theme-setting-lightModeNoteBgNearWhite {
+--background-primary: color-mix(
+    in srgb,
+    var(--theme-color-base),
+    white calc(100% * 0.97)
+  );
+}`,
+    "theme-value-darkModeNoteBgFullBlack": `.theme-value-darkModeNoteBgFullBlack {
+/* Override note background when specified by style settings. */
+/* There's no equivalent of this for light mode. */
+--background-primary: black;
+}`,
+    "theme-setting-distinguishNonContentTabs": `body.theme-setting-distinguishNonContentTabs {
+.workspace-split.mod-root {
+    & .workspace-tab-header-container {
+      .workspace-tab-header[data-type="bases"],
+      .workspace-tab-header[data-type="calendar"],
+      .workspace-tab-header[data-type="graph"],
+      .workspace-tab-header[data-type="localgraph"],
+      .workspace-tab-header[data-type="map"],
+      .workspace-tab-header[data-type="webviewer"] {
+        background-color: var(--theme-color-tabNavBg);
+
+        &:before,
+        &:after {
+          box-shadow: inset 0 0 0 var(--tab-outline-width) var(--tab-outline-color), 0 0 0 calc(var(--tab-curve)* 4) var(--theme-color-tabNavBg);
+        }
+      }
+
+      .workspace-tab-header[data-type="bases"].is-active,
+      .workspace-tab-header[data-type="calendar"].is-active,
+      .workspace-tab-header[data-type="graph"].is-active,
+      .workspace-tab-header[data-type="localgraph"].is-active,
+      .workspace-tab-header[data-type="map"].is-active,
+      .workspace-tab-header[data-type="webviewer"].is-active {
+        background-color: var(--theme-color-tabNavActiveBg);
+
+        &:before,
+        &:after {
+          box-shadow: inset 0 0 0 var(--tab-outline-width) var(--tab-outline-color), 0 0 0 calc(var(--tab-curve)* 4) var(--theme-color-tabNavActiveBg);
+        }
+      }
+    }
+  };
+.workspace-leaf-content[data-type="bases"],
+  .workspace-leaf-content[data-type="calendar"],
+  .workspace-leaf-content[data-type="graph"],
+  .workspace-leaf-content[data-type="localgraph"],
+  .workspace-leaf-content[data-type="map"],
+  .workspace-leaf-content[data-type="webviewer"],
+  .is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="bases"],
+  .is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="calendar"],
+  .is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="graph"],
+  .is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="localgraph"],
+  .is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="map"],
+  .is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="webviewer"] {
+    .view-header {
+      background-color: var(--theme-color-tabNavActiveBg);
+      border-bottom: none;
+
+      .mod-fade:after {
+        display: none;
+      }
+    }
+  };
+}`,
+    "theme-setting-wrapTabs": `body.theme-setting-wrapTabs {
+.workspace-tab-header-container {
+    height: auto;
+  };
+.workspace-tab-header-container-inner {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.25em 0.25em;
+  };
+.workspace .mod-root .workspace-tab-header {
+    min-width: 8em;
+    height: calc(var(--icon-size) + 1rem);
+    flex-basis: content;
+    flex-grow: 0;
+    order: 0;
+    container-type: normal;
+    z-index: 1;
+
+    &.is-active {
+      order: 1;
+    }
+  };
+.workspace .mod-root .workspace-tab-header-inner {
+    container-type: normal;
+  };
+}`,
+    "setting-properties-position-above": `.setting-properties-position-above .mod-root .is-live-preview .metadata-container {
+order: 1;
+}`,
+    "setting-properties-position-below": `.setting-properties-position-below .mod-root .is-live-preview .metadata-container {
+margin-top: 1em;
+order: 3;
+}
+
+.setting-properties-position-below .mod-root .is-live-preview .embedded-backlinks {
+padding: 0 2rem 0.5rem 2rem;
+}
+
+.setting-properties-position-below .mod-root .is-live-preview .metadata-container {
+padding: 0.5em 2em 0 2em;
+}
+
+.setting-properties-position-below .mod-root .is-live-preview .metadata-container:has(~ .embedded-backlinks[style*="display: none"]) {
+padding-bottom: 0.5em;
+}
+
+.setting-properties-position-below .mod-root .is-live-preview .metadata-container[data-property-count="0"] ~ .embedded-backlinks {
+padding-top: 0.5rem;
+}
+
+body.theme-setting-stickyEmbeddedLinks-on .setting-properties-position-below .mod-root .is-live-preview .metadata-container {
+position: sticky;
+bottom: 0;
+overflow-y: visible;
+}`,
+    "theme-setting-embeddedNoteTitleVisibilityHide": `body.theme-setting-embeddedNoteTitleVisibilityHide .embed-title {
+display: none;
+}`,
+    "theme-setting-embeddedNoteTitleVisibilityHover": `body.theme-setting-embeddedNoteTitleVisibilityHover .internal-embed:has(.embed-title:not(:empty)) {
+padding-top: 1.5rem;
+}
+
+body.theme-setting-embeddedNoteTitleVisibilityHover .internal-embed:has(.embed-title:not(:empty)):hover .embed-title {
+display: flex;
+position: absolute;
+top: 0.5rem;
+left: 1rem;
+}`,
+    "theme-setting-embeddedNoteTitleVisibilityShow": `body.theme-setting-embeddedNoteTitleVisibilityShow .internal-embed:has(.embed-title:not(:empty)) {
+padding-top: 0.5rem;
+}
+
+body.theme-setting-embeddedNoteTitleVisibilityShow .embed-title {
+display: flex;
+}`,
+    "theme-setting-stickyEmbeddedLinks-on": `body.theme-setting-stickyEmbeddedLinks-on .cm-sizer > .embedded-backlinks, body.theme-setting-stickyEmbeddedLinks-on .mod-footer:has(> .embedded-backlinks) {
+position: sticky;
+bottom: 0;
+width: 100%;
+overflow-y: visible;
+& > .backlink-pane,
+  & > .embedded-backlinks > .backlink-pane {
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  };
+}
+
+body.theme-setting-stickyEmbeddedLinks-on .markdown-source-view.mod-cm6 .cm-scroller {
+overflow-y: scroll;
+flex-grow: 0;
+flex-shrink: 1;
+flex-basis: 100%;
+}
+
+body.theme-setting-stickyEmbeddedLinks-on .setting-properties-position-below .mod-root .is-live-preview .metadata-container {
+position: sticky;
+bottom: 0;
+overflow-y: visible;
+}`,
+    "theme-setting-differentiateBulletLevels": `body.theme-setting-differentiateBulletLevels {
+.markdown-source-view.mod-cm6 .HyperMD-list-line-1 .list-bullet:after,
+      .markdown-preview-view .el-ul > ul > li > .list-bullet:after {
+        background-color: var(--list-marker-color);
+      };
+.markdown-source-view.mod-cm6 .HyperMD-list-line-2 .list-bullet:after,
+      .markdown-preview-view .el-ul > ul > li > ul > li > .list-bullet:after {
+        background-color: transparent;
+      };
+.markdown-source-view.mod-cm6 .HyperMD-list-line-3 .list-bullet:after,
+      .markdown-preview-view
+        .el-ul
+        > ul
+        > li
+        > ul
+        > li
+        > ul
+        > li
+        > .list-bullet:after {
+        border-radius: 0;
+        background-color: var(--list-marker-color);
+      };
+.markdown-source-view.mod-cm6 .HyperMD-list-line-4 .list-bullet:after,
+      .markdown-preview-view
+        .el-ul
+        > ul
+        > li
+        > ul
+        > li
+        > ul
+        > li
+        > ul
+        > li
+        > .list-bullet:after {
+        border-radius: 0;
+        background-color: transparent;
+      };
+}`,
+    "theme-setting-headingScaleFactor1point067": `body.theme-setting-headingScaleFactor1point067 {
+--theme-value-headingScaleFactor: 1.067;
+}`,
+    "theme-setting-headingScaleFactor1point125": `body.theme-setting-headingScaleFactor1point125 {
+--theme-value-headingScaleFactor: 1.125;
+}`,
+    "theme-setting-headingScaleFactor1point2": `body.theme-setting-headingScaleFactor1point2 {
+--theme-value-headingScaleFactor: 1.2;
+}
+
+body.theme-setting-headingScaleFactor1point25 {
+--theme-value-headingScaleFactor: 1.25;
+}`,
+    "theme-setting-headingScaleFactor1point25": `body.theme-setting-headingScaleFactor1point25 {
+--theme-value-headingScaleFactor: 1.25;
+}`,
+    "theme-setting-headingScaleFactor1point333": `body.theme-setting-headingScaleFactor1point333 {
+--theme-value-headingScaleFactor: 1.333;
+}`,
+    "theme-setting-headingScaleFactor1point414": `body.theme-setting-headingScaleFactor1point414 {
+--theme-value-headingScaleFactor: 1.414;
+}`,
+    "theme-setting-headingScaleFactor1point5": `body.theme-setting-headingScaleFactor1point5 {
+--theme-value-headingScaleFactor: 1.5;
+}`,
+    "theme-setting-headingScaleFactor1point618": `body.theme-setting-headingScaleFactor1point618 {
+--theme-value-headingScaleFactor: 1.618;
+}`,
+    "theme-setting-headingScaleFactorPhone1point067": `body.is-phone.theme-setting-headingScaleFactorPhone1point067 {
+--theme-value-headingScaleFactorPhone: 1.067;
+}`,
+    "theme-setting-headingScaleFactorPhone1point125": `body.is-phone.theme-setting-headingScaleFactorPhone1point125 {
+--theme-value-headingScaleFactorPhone: 1.125;
+}`,
+    "theme-setting-headingScaleFactorPhone1point2": `body.is-phone.theme-setting-headingScaleFactorPhone1point2 {
+--theme-value-headingScaleFactorPhone: 1.2;
+}
+
+body.is-phone.theme-setting-headingScaleFactorPhone1point25 {
+--theme-value-headingScaleFactorPhone: 1.25;
+}`,
+    "theme-setting-headingScaleFactorPhone1point25": `body.is-phone.theme-setting-headingScaleFactorPhone1point25 {
+--theme-value-headingScaleFactorPhone: 1.25;
+}`,
+    "theme-setting-headingScaleFactorPhone1point333": `body.is-phone.theme-setting-headingScaleFactorPhone1point333 {
+--theme-value-headingScaleFactorPhone: 1.333;
+}`,
+    "theme-setting-headingScaleFactorPhone1point414": `body.is-phone.theme-setting-headingScaleFactorPhone1point414 {
+--theme-value-headingScaleFactorPhone: 1.414;
+}`,
+    "theme-setting-headingScaleFactorPhone1point5": `body.is-phone.theme-setting-headingScaleFactorPhone1point5 {
+--theme-value-headingScaleFactorPhone: 1.5;
+}`,
+    "theme-setting-headingScaleFactorPhone1point618": `body.is-phone.theme-setting-headingScaleFactorPhone1point618 {
+--theme-value-headingScaleFactorPhone: 1.618;
+}`,
+    "theme-setting-highlightActiveLine": `body.theme-setting-highlightActiveLine {
+.markdown-source-view.mod-cm6 {
+      .cm-active:not(.HyperMD-codeblock) {
+        background-color: var(--theme-color-activeLineHighlight);
+        border-radius: var(--theme-length-radiusXS);
+      }
+    };
+}`,
+    "theme-setting-codeBlockLineNumbers": `body.theme-setting-codeBlockLineNumbers {
+.markdown-source-view.mod-cm6 {
+          .cm-line.HyperMD-codeblock-begin
+            + .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-end) {
+            counter-reset: codeLineCount 0;
+          }
+          .cm-line.HyperMD-codeblock-begin + .cm-line.HyperMD-codeblock,
+          .cm-line.HyperMD-codeblock
+            + .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-end) {
+            counter-increment: codeLineCount 1;
+            position: relative;
+            padding-inline-start: 1em;
+          }
+          .cm-line.HyperMD-codeblock-begin + .cm-line.HyperMD-codeblock:before,
+          .cm-line.HyperMD-codeblock
+            + .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-end):before {
+            content: counter(codeLineCount, decimal) " ";
+            text-align: right;
+            width: 3em;
+            margin-inline-end: 1em;
+            align-items: flex-end;
+            justify-content: flex-end;
+            opacity: 0.25;
+            font-size: 0.8em;
+          }
+        };
+}`,
+    "theme-setting-centerImages": `body.theme-setting-centerImages {
+.markdown-source-view.mod-cm6 .cm-content > img,
+      .markdown-source-view.mod-cm6 .cm-content .image-embed img,
+      .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img {
+        display: block;
+        margin: 0 auto !important;
+      };
+.markdown-preview-view img {
+        display: block;
+        margin: 0 auto;
+      };
+}`,
+    "theme-setting-customGradient": `body.theme-setting-customGradient {
+--theme-color-gradientTop: color-mix(
+    in srgb,
+    var(--theme-color-customGradientBaseTop),
+    black calc(100% * (0.7 - 0.5 * var(--theme-value-gradientContrast)))
+  );
+--theme-color-gradientBottom: color-mix(
+    in srgb,
+    var(--theme-color-customGradientBaseBottom),
+    black calc(100% * (0.7 + 0.5 * var(--theme-value-gradientContrast)))
+  );
+}
+body.theme-setting-customGradient {
+--theme-color-gradientTop: color-mix(
+    in srgb,
+    var(--theme-color-customGradientBaseTop),
+    white calc(100% * (0.5 + 0.5 * var(--theme-value-gradientContrast)))
+  );
+--theme-color-gradientBottom: color-mix(
+    in srgb,
+    var(--theme-color-customGradientBaseBottom),
+    white calc(100% * (0.5 - 0.5 * var(--theme-value-gradientContrast)))
+  );
+}`,
+    "theme-setting-fullWidthStatusBar": `body.theme-setting-fullWidthStatusBar .horizontal-main-container {
+margin-bottom: var(--theme-length-statusBarHeight);
+}
+
+body.theme-setting-fullWidthStatusBar .status-bar {
+width: 100%;
+}`,
+    "theme-setting-enableIconsInSettings": `body.theme-setting-enableIconsInSettings {
+.vertical-tab-nav-item-icon {
+    display: flex;
+  };
+}
+
+&.theme-setting-enableIconsInSettings {
+.setting-item.setting-item-heading.style-settings-heading[data-id="kakano-style"]
+      + .style-settings-container {
+      .setting-item.setting-item-heading.style-settings-heading
+        .style-settings-collapse-indicator:after {
+        margin-inline-start: 0.5em;
+        vertical-align: top;
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        margin: 0.125em 0 0 0.5em;
+        opacity: 75%;
+      }
+
+      .setting-item.setting-item-heading.style-settings-heading[data-id="heading-baseColor"]
+        .style-settings-collapse-indicator:after {
+        filter: hue-rotate(0deg);
+        content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'><g><rect x='0' y='0' width='1' height='24' style='fill:rgb(255,0,0);'/><rect x='4' y='0' width='1' height='24' style='fill:rgb(255,255,0);'/><rect x='8' y='0' width='1' height='24' style='fill:rgb(0,255,0);'/><rect x='12' y='0' width='1' height='24' style='fill:rgb(0,255,255);'/><rect x='16' y='0' width='1' height='24' style='fill:rgb(0,0,255);'/><rect x='20' y='0' width='1' height='24' style='fill:rgb(255,0,255);'/><rect x='2' y='0' width='1' height='24' style='fill:rgb(255,127,0);'/><rect x='6' y='0' width='1' height='24' style='fill:rgb(127,255,0);'/><rect x='10' y='0' width='1' height='24' style='fill:rgb(0,255,127);'/><rect x='14' y='0' width='1' height='24' style='fill:rgb(0,127,255);'/><rect x='18' y='0' width='1' height='24' style='fill:rgb(127,0,255);'/><rect x='22' y='0' width='1' height='24' style='fill:rgb(255,0,127);'/><rect x='1' y='0' width='1' height='24' style='fill:rgb(255,63,0);'/><rect x='5' y='0' width='1' height='24' style='fill:rgb(191,255,0);'/><rect x='9' y='0' width='1' height='24' style='fill:rgb(0,255,63);'/><rect x='13' y='0' width='1' height='24' style='fill:rgb(0,191,255);'/><rect x='17' y='0' width='1' height='24' style='fill:rgb(63,0,255);'/><rect x='21' y='0' width='1' height='24' style='fill:rgb(255,0,191);'/><rect x='3' y='0' width='1' height='24' style='fill:rgb(255,191,0);'/><rect x='7' y='0' width='1' height='24' style='fill:rgb(63,255,0);'/><rect x='11' y='0' width='1' height='24' style='fill:rgb(0,255,191);'/><rect x='15' y='0' width='1' height='24' style='fill:rgb(0,63,255);'/><rect x='19' y='0' width='1' height='24' style='fill:rgb(191,0,255);'/><rect x='23' y='0' width='1' height='24' style='fill:rgb(255,0,63);'/></g></svg>");
+        opacity: 100%;
+      }
+    };
+}
+body.theme-setting-overrideStyleSettings.theme-dark {
+.setting-item.setting-item-heading.style-settings-heading
+    .style-settings-collapse-indicator:after {
+    filter: hue-rotate(calc(var(--base-h) * 1deg));
+  };
+.setting-item.setting-item-heading.style-settings-heading[data-id="kakano-style"]
+    + .style-settings-container {
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-background"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;'><g transform='matrix(1,0,0,0.981029,0.249756,0.225573)'><path d='M23.21,0.789L23.21,23.215L0.765,23.215L0.765,0.789L23.21,0.789ZM22.19,5.886L11.988,5.886L11.988,2.828L3.826,2.828L3.826,5.886L1.786,5.886L1.786,21.176L22.19,21.176L22.19,5.886Z' style='fill:hsl(0deg,86%,81%);stroke:hsl(0deg,86%,81%);stroke-width:2.04px;'/></g></svg>");
+    }
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-notes"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;'><g transform='matrix(1,0,0,1,-1,-2)'><g transform='matrix(0.913043,0,0,0.913043,1.04348,-5.63549)'><path d='M22.952,12.744L22.952,29.172L1.048,29.172L1.048,12.744L3.238,12.744L3.238,9.458L12,9.458L12,12.744L22.952,12.744Z' style='fill:none;stroke:hsl(0deg,86%,81%);stroke-width:2.19px;'/></g></g></svg>");
+    }
+
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-typographySettings"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='stroke:hsl(0deg,86%,81%);fill:hsl(0deg,86%,81%);fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'><path d='M8.39,13.544L6.734,5.84L6.686,5.84L5.03,13.544L8.39,13.544ZM8.846,2.864L13.382,20L9.782,20L8.99,16.376L4.43,16.376L3.638,20L0.038,20L4.574,2.864L8.846,2.864Z' style='fill-rule:nonzero;'/><path d='M19.886,13.544L19.886,16.088C19.886,16.44 19.822,16.744 19.694,17C19.566,17.256 19.402,17.464 19.202,17.624C19.002,17.784 18.782,17.9 18.542,17.972C18.302,18.044 18.07,18.08 17.846,18.08C17.398,18.08 17.078,17.904 16.886,17.552C16.694,17.2 16.598,16.776 16.598,16.28C16.598,15.704 16.742,15.248 17.03,14.912C17.318,14.576 17.798,14.336 18.47,14.192C18.678,14.144 18.91,14.068 19.166,13.964C19.422,13.86 19.662,13.72 19.886,13.544ZM13.838,11.048L16.814,11.048L16.814,10.688C16.814,10.176 16.942,9.768 17.198,9.464C17.454,9.16 17.838,9.008 18.35,9.008C18.91,9.008 19.306,9.148 19.538,9.428C19.77,9.708 19.886,10.096 19.886,10.592C19.886,11.024 19.79,11.352 19.598,11.576C19.406,11.8 19.062,11.976 18.566,12.104L16.694,12.608C16.118,12.768 15.626,12.952 15.218,13.16C14.81,13.368 14.474,13.628 14.21,13.94C13.946,14.252 13.75,14.628 13.622,15.068C13.494,15.508 13.43,16.032 13.43,16.64C13.43,17.072 13.486,17.508 13.598,17.948C13.71,18.388 13.886,18.784 14.126,19.136C14.366,19.488 14.686,19.764 15.086,19.964C15.486,20.164 15.974,20.264 16.55,20.264C17.35,20.264 18.002,20.164 18.506,19.964C19.01,19.764 19.454,19.328 19.838,18.656L19.886,18.656C19.934,18.88 19.986,19.108 20.042,19.34C20.098,19.572 20.182,19.792 20.294,20L23.462,20C23.302,19.616 23.194,19.256 23.138,18.92C23.082,18.584 23.054,18.112 23.054,17.504L23.054,10.712C23.054,10.136 22.994,9.604 22.874,9.116C22.754,8.628 22.526,8.208 22.19,7.856C21.854,7.504 21.382,7.232 20.774,7.04C20.166,6.848 19.366,6.752 18.374,6.752C17.75,6.752 17.162,6.82 16.61,6.956C16.058,7.092 15.578,7.316 15.17,7.628C14.762,7.94 14.438,8.348 14.198,8.852C13.958,9.356 13.838,9.984 13.838,10.736L13.838,11.048Z' style='fill-rule:nonzero;'/></svg>");
+    }
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-editing"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;'><path d='M12,20L21,20' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,86%,81%);stroke-width:2px;'/><path d='M16.5,3.5C16.898,3.102 17.438,2.879 18,2.879C19.164,2.879 20.121,3.836 20.121,5C20.121,5.562 19.898,6.102 19.5,6.5L7,19L3,20L4,16L16.5,3.5Z' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,86%,81%);stroke-width:2px;'/></svg>");
+    }
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-mobile"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;'><path d='M13,10L13,20C13,21.104 12.104,22 11,22L5,22C3.896,22 3,21.104 3,20L3,10C3,8.896 3.896,8 5,8L11,8C12.104,8 13,8.896 13,10Z' style='fill:none;stroke:hsl(0deg,86%,81%);stroke-width:2px;'/><path d='M5,4C5,2.903 5.903,2 7,2L19,2C20.097,2 21,2.903 21,4L21,20C21,21.097 20.097,22 19,22L16.6,22' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,86%,81%);stroke-width:2px;'/><path d='M8,18L8.01,18' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,86%,81%);stroke-width:2px;'/></svg>");
+    }
+  };
+}
+body.theme-setting-overrideStyleSettings.theme-light {
+.setting-item.setting-item-heading.style-settings-heading
+    .style-settings-collapse-indicator:after {
+    filter: hue-rotate(calc(var(--base-h) * 1deg));
+  };
+/* .setting-item.setting-item-heading.style-settings-heading[data-id="kakano-style"] .style-settings-collapse-indicator:after {
+    content: "TODO: logo goes here";
+  } */
+.setting-item.setting-item-heading.style-settings-heading[data-id="kakano-style"]
+    + .style-settings-container {
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-ui-background"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;'><g transform='matrix(1,0,0,0.981029,0.249756,0.225573)'><path d='M23.21,0.789L23.21,23.215L0.765,23.215L0.765,0.789L23.21,0.789ZM22.19,5.886L11.988,5.886L11.988,2.828L3.826,2.828L3.826,5.886L1.786,5.886L1.786,21.176L22.19,21.176L22.19,5.886Z' style='fill:hsl(0deg,75%,5%);stroke:hsl(0deg,75%,5%);stroke-width:2.04px;'/></g></svg>");
+    }
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-notes-appearance"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;'><g transform='matrix(1,0,0,1,-1,-2)'><g transform='matrix(0.913043,0,0,0.913043,1.04348,-5.63549)'><path d='M22.952,12.744L22.952,29.172L1.048,29.172L1.048,12.744L3.238,12.744L3.238,9.458L12,9.458L12,12.744L22.952,12.744Z' style='fill:none;stroke:hsl(0deg,75%,5%);stroke-width:2.19px;'/></g></g></svg>");
+    }
+
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-typographySettings"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='stroke:hsl(0deg,75%,5%);fill:hsl(0deg,75%,5%);fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'><path d='M8.39,13.544L6.734,5.84L6.686,5.84L5.03,13.544L8.39,13.544ZM8.846,2.864L13.382,20L9.782,20L8.99,16.376L4.43,16.376L3.638,20L0.038,20L4.574,2.864L8.846,2.864Z' style='fill-rule:nonzero;'/><path d='M19.886,13.544L19.886,16.088C19.886,16.44 19.822,16.744 19.694,17C19.566,17.256 19.402,17.464 19.202,17.624C19.002,17.784 18.782,17.9 18.542,17.972C18.302,18.044 18.07,18.08 17.846,18.08C17.398,18.08 17.078,17.904 16.886,17.552C16.694,17.2 16.598,16.776 16.598,16.28C16.598,15.704 16.742,15.248 17.03,14.912C17.318,14.576 17.798,14.336 18.47,14.192C18.678,14.144 18.91,14.068 19.166,13.964C19.422,13.86 19.662,13.72 19.886,13.544ZM13.838,11.048L16.814,11.048L16.814,10.688C16.814,10.176 16.942,9.768 17.198,9.464C17.454,9.16 17.838,9.008 18.35,9.008C18.91,9.008 19.306,9.148 19.538,9.428C19.77,9.708 19.886,10.096 19.886,10.592C19.886,11.024 19.79,11.352 19.598,11.576C19.406,11.8 19.062,11.976 18.566,12.104L16.694,12.608C16.118,12.768 15.626,12.952 15.218,13.16C14.81,13.368 14.474,13.628 14.21,13.94C13.946,14.252 13.75,14.628 13.622,15.068C13.494,15.508 13.43,16.032 13.43,16.64C13.43,17.072 13.486,17.508 13.598,17.948C13.71,18.388 13.886,18.784 14.126,19.136C14.366,19.488 14.686,19.764 15.086,19.964C15.486,20.164 15.974,20.264 16.55,20.264C17.35,20.264 18.002,20.164 18.506,19.964C19.01,19.764 19.454,19.328 19.838,18.656L19.886,18.656C19.934,18.88 19.986,19.108 20.042,19.34C20.098,19.572 20.182,19.792 20.294,20L23.462,20C23.302,19.616 23.194,19.256 23.138,18.92C23.082,18.584 23.054,18.112 23.054,17.504L23.054,10.712C23.054,10.136 22.994,9.604 22.874,9.116C22.754,8.628 22.526,8.208 22.19,7.856C21.854,7.504 21.382,7.232 20.774,7.04C20.166,6.848 19.366,6.752 18.374,6.752C17.75,6.752 17.162,6.82 16.61,6.956C16.058,7.092 15.578,7.316 15.17,7.628C14.762,7.94 14.438,8.348 14.198,8.852C13.958,9.356 13.838,9.984 13.838,10.736L13.838,11.048Z' style='fill-rule:nonzero;'/></svg>");
+    }
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-editing"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;'><path d='M12,20L21,20' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,75%,5%);stroke-width:2px;'/><path d='M16.5,3.5C16.898,3.102 17.438,2.879 18,2.879C19.164,2.879 20.121,3.836 20.121,5C20.121,5.562 19.898,6.102 19.5,6.5L7,19L3,20L4,16L16.5,3.5Z' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,75%,5%);stroke-width:2px;'/></svg>");
+    }
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-mobile"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;'><path d='M13,10L13,20C13,21.104 12.104,22 11,22L5,22C3.896,22 3,21.104 3,20L3,10C3,8.896 3.896,8 5,8L11,8C12.104,8 13,8.896 13,10Z' style='fill:none;stroke:hsl(0deg,75%,5%);stroke-width:2px;'/><path d='M5,4C5,2.903 5.903,2 7,2L19,2C20.097,2 21,2.903 21,4L21,20C21,21.097 20.097,22 19,22L16.6,22' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,75%,5%);stroke-width:2px;'/><path d='M8,18L8.01,18' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,75%,5%);stroke-width:2px;'/></svg>");
+    }
+  };
+}`,
+    "theme-setting-enableIconsInMenus": `body.theme-setting-enableIconsInMenus {
+.menu-item-icon {
+    display: flex;
+  };
+}`,
+    "theme-setting-mobileCardsUI": `body.is-phone.theme-setting-mobileCardsUI .modal.mod-sidebar-layout .modal-title {
+padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+body.is-phone.theme-setting-mobileCardsUI .modal.mod-sidebar-layout .modal-setting-back-button {
+top: 0.5rem;
+left: 2.5rem;
+padding: 0;
+}
+
+body.is-phone.theme-setting-mobileCardsUI .community-modal-search-summary {
+padding: 0;
+}
+
+body.is-phone.theme-setting-mobileCardsUI:has(.modal-container) .workspace > .mod-root .mod-active, body.is-phone.theme-setting-mobileCardsUI:has(.workspace-drawer) .workspace > .mod-root .mod-active {
+transition: transform 0.5s ease-in-out;
+transform: scale(0.95) translateY(-1.5rem);
+}
+
+body.is-phone.theme-setting-mobileCardsUI:not( :has(.modal-container:focus-within) ):not(:has(.modal)) .workspace > .mod-root .mod-active {
+transition: transform 0.5s ease-in-out;
+transform: scale(1) translateY(0);
+}
+
+body.is-phone.theme-setting-mobileCardsUI:has(.modal-container) .workspace > .mod-root .mod-active .view-header-title-container {
+border-top-left-radius: var(--tab-radius);
+border-top-right-radius: var(--tab-radius);
+}
+
+body.is-phone.theme-setting-mobileCardsUI:has(.modal-container) .workspace > .mod-root .mod-active .view-content {
+border-bottom-left-radius: var(--tab-radius);
+border-bottom-right-radius: var(--tab-radius);
+}
+
+body.is-phone.is-phone.theme-setting-mobileCardsUI .modal-container {
+padding: max(calc(var(--theme-spacing-mobileHorizontalSpacing)), 0.5rem);
+}
+
+body.is-phone.theme-setting-mobileCardsUI .mod-confirmation .modal {
+left: max(calc(var(--theme-spacing-mobileHorizontalSpacing)), 0.5rem);
+right: max(calc(var(--theme-spacing-mobileHorizontalSpacing)), 0.5rem);
+width: min(
+    calc(
+      100vw - 2 * var(--theme-spacing-mobileHorizontalSpacing),
+      calc(100vw - 1rem)
+    )
+  );
+}
+
+body.is-phone.theme-setting-mobileCardsUI .modal.mod-sidebar-layout {
+width: min(
+    calc(100vw - 2 * var(--theme-spacing-mobileHorizontalSpacing)),
+    calc(100vw - 1rem)
+  );
+margin-inline-end: max(calc(var(--theme-spacing-mobileHorizontalSpacing)), 0.5rem);
+margin-inline-start: max(calc(var(--theme-spacing-mobileHorizontalSpacing)), 0.5rem);
+margin-top: calc(var(--safe-area-inset-top) + var(--header-height) + 1em);
+border-radius: var(--radius-l) var(--radius-l) 0 0;
+}`,
+    "theme-setting-enableBuiltInAlternativeCheckboxes": `body.theme-setting-enableBuiltInAlternativeCheckboxes {
+/* Alternate incomplete states */
+& input.task-list-item-checkbox[data-task="/"]:checked,
+  & input.task-list-item-checkbox[data-task="<"]:checked,
+  & input.task-list-item-checkbox[data-task="!"]:checked,
+  & input.task-list-item-checkbox[data-task="?"]:checked,
+  & li[data-task="/"] > input:checked,
+  & li[data-task="<"] > input:checked,
+  & li[data-task="!"] > input:checked,
+  & li[data-task="?"] > input:checked,
+  & li[data-task="/"] > p > input:checked,
+  & li[data-task="<"] > p > input:checked,
+  & li[data-task="!"] > p > input:checked,
+  & li[data-task="?"] > p > input:checked {
+    background-image: none;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+  };
+& input[data-task="/"]:checked:after,
+  & input[data-task="<"]:checked:after,
+  & input[data-task="!"]:checked:after,
+  & input[data-task="?"]:checked:after,
+  & li[data-task="/"] > input:checked:after,
+  & li[data-task="<"] > input:checked:after,
+  & li[data-task="!"] > input:checked:after,
+  & li[data-task="?"] > input:checked:after,
+  & li[data-task="/"] > p > input:checked:after,
+  & li[data-task="<"] > p > input:checked:after,
+  & li[data-task="!"] > p > input:checked:after,
+  & li[data-task="?"] > p > input:checked:after {
+    content: "";
+    top: -1px;
+    left: -1px;
+    position: absolute;
+    width: var(--checkbox-size);
+    height: var(--checkbox-size);
+    display: block;
+    background-color: var(--theme-color-controlContentArea);
+    -webkit-mask-position: 50% 50%;
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+  };
+& input[data-task="/"]:checked:after,
+  & li[data-task="/"] > input:checked:after,
+  & li[data-task="/"] > p > input:checked:after {
+    -webkit-mask-image: url('data:image/svg+xml; utf8, <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="%23000000"><polyline points="12,-12 48,-12 48,36 12,36" transform="rotate(45) translate(5,-12)"></polyline></g></g></svg>');
+  };
+& input[data-task="<"]:checked:after,
+  & li[data-task="<"] > input:checked:after,
+  & li[data-task="<"] > p > input:checked:after {
+    -webkit-mask-image: url('data:image/svg+xml; utf8, <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="%23000000"><polyline points="15,4.5 6,12 15,19.5 16.75,17.5 10,12 16.75,6.5"></polyline></g></g></svg>');
+  };
+& input[data-task="!"]:checked:after,
+  & li[data-task="!"] > input:checked:after,
+  & li[data-task="!"] > p > input:checked:after {
+    -webkit-mask-image: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="5" y2="13"/><line x1="12" x2="12" y1="19" y2="19"/></svg>');
+  };
+& input[data-task="?"]:checked:after,
+  & li[data-task="?"] > input:checked:after,
+  & li[data-task="?"] > p > input:checked:after {
+    -webkit-mask-image: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.5,6.852c0.463,-1.049 1.493,-2.872 4.5,-2.852c3.957,0.026 5.001,2.617 5,4.5c-0.002,2.952 -4.963,3.463 -5,7.5"/><path d="M12.25,20l-0.443,-0"/></svg>');
+  };
+/* Complete states */
+& .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
+  & .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"],
+  & .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=">"],
+  .bases-tbody input[type=checkbox][data-indeterminate="true"]:not(:checked) {
+    text-decoration: var(--checklist-done-decoration);
+    color: var(--checklist-done-color);
+  };
+& input[data-task="x"]:checked,
+  & li[data-task="x"] > input:checked,
+  & li[data-task="x"] > p > input:checked,
+  & input[data-task="X"]:checked,
+  & li[data-task="X"] > input:checked,
+  & li[data-task="X"] > p > input:checked,
+  & input.task-list-item-checkbox[data-task=">"]:checked,
+  & li[data-task=">"] > input:checked,
+  & li[data-task=">"] > p > input:checked,
+  & input.task-list-item-checkbox[data-task="-"]:checked,
+  & li[data-task="-"] > input:checked,
+  & li[data-task="-"] > p > input:checked,
+  .bases-tbody input[type=checkbox][data-indeterminate="true"]:not(:checked) {
+    background-image: none;
+    border-color: var(--theme-color-controlContentArea);
+    position: relative;
+    overflow: hidden;
+    background-color: var(--theme-color-controlContentArea);
+    color: white;
+  };
+& input[data-task="x"]:checked:after,
+  & li[data-task="x"] > input:checked:after,
+  & li[data-task="x"] > p > input:checked:after,
+  & input[data-task="x"]:checked:after,
+  & li[data-task="x"] > input:checked:after,
+  & li[data-task="x"] > p > input:checked:after,
+  & input[data-task="-"]:checked:after,
+  & li[data-task="-"] > input:checked:after,
+  & li[data-task="-"] > p > input:checked:after,
+  & input[data-task=">"]:checked:after,
+  & li[data-task=">"] > input:checked:after,
+  & li[data-task=">"] > p > input:checked:after,
+  .bases-tbody input[type=checkbox][data-indeterminate="true"]:not(:checked):after {
+    content: "";
+    top: -1px;
+    left: -1px;
+    position: absolute;
+    width: var(--checkbox-size);
+    height: var(--checkbox-size);
+    display: block;
+    background-color: var(--checkbox-marker-color);
+    -webkit-mask-repeat: no-repeat;
+  };
+& input[data-task="x"]:checked:after,
+  & li[data-task="x"] > input:checked:after,
+  & li[data-task="x"] > p > input:checked:after {
+    -webkit-mask-position: 52% 52%;
+    -webkit-mask-size: 65%;
+    -webkit-mask-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+  };
+& input[data-task="-"]:checked:after,
+  & li[data-task="-"] > input:checked:after,
+  & li[data-task="-"] > p > input:checked:after,
+  .bases-tbody input[type=checkbox][data-indeterminate="true"]:not(:checked):after {
+    -webkit-mask-position: 50% 50%;
+    -webkit-mask-size: 100%;
+    -webkit-mask-image: url('data:image/svg+xml; utf8, <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="%23000000"><polyline points="4,10.5 20,10.5 20,13.5 4,13.5"></polyline></g></g></svg>');
+  };
+& input[data-task=">"]:checked:after,
+  & li[data-task=">"] > input:checked:after,
+  & li[data-task=">"] > p > input:checked:after {
+    -webkit-mask-position: 50% 50%;
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-image: url('data:image/svg+xml; utf8, <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="%23000000"><polyline points="9,4.5 18,12 9,19.5 7.25,17.5 14,12 7.25,6.5"></polyline></g></g></svg>');
+  };
+}`,
+    "theme-setting-enableImageAdjustmentWithAltText": `body.theme-setting-enableImageAdjustmentWithAltText {
+/* Center images */
+.markdown-source-view.mod-cm6 .cm-content > img[alt~=center],
+      .markdown-source-view.mod-cm6 .cm-content .image-embed[alt~=center] img,
+      .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img[alt~=center] {
+        display: block;
+        margin: 0 auto !important;
+      };
+.markdown-preview-view img[alt~=center] {
+        display: block;
+        margin: 0 auto;
+      };
+/* Float images left/right */
+/* Unfortunately, floats make live preview mode confused about how to assign line numbers. Left/right floating only applies to reading view */
+.markdown-preview-view img[alt~=right] {
+        margin: 0 0 1em 1em !important;
+        float: right;
+      };
+.markdown-preview-view img[alt~=left] {
+        margin: 0 1em 1em 0 !important;
+        float: left;
+      };
+/* Round corners of images */
+.markdown-source-view.mod-cm6 .cm-content > img[alt~=round],
+      .markdown-source-view.mod-cm6 .cm-content .image-embed[alt~=round] img,
+      .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img[alt~=round],
+      .markdown-preview-view img[alt~=round],
+      .markdown-preview-view .image-embed[alt~=round] img {
+        border-radius: 0.5em;
+      };
+.markdown-source-view.mod-cm6 .cm-content > img[alt~=circle],
+      .markdown-source-view.mod-cm6 .cm-content .image-embed[alt~=circle] img,
+      .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img[alt~=circle],
+      .markdown-preview-view img[alt~=circle],
+      .markdown-preview-view .image-embed[alt~=circle] img {
+        border-radius: var(--theme-length-fullBorderRadius);
+      };
+}`,
+    "theme-setting-overrideAdvancedTables": `body.theme-setting-overrideAdvancedTables {
+.workspace-leaf-content[data-type="advanced-tables-toolbar"] .view-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  };
+[data-type="advanced-tables-toolbar"]
+    .nav-buttons-container
+    .nav-action-button
+    > svg {
+    fill: currentColor;
+    --text-muted: currentColor; /* For some reason the CSV button specifies text-muted as stroke color */
+  };
+.advanced-tables-buttons > div > .title {
+    font-weight: var(--font-semibold);
+    font-size: var(--font-ui-small);
+    color: var(--text-normal);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding-top: 0.5em;
+  };
+.advanced-tables-row-label {
+    font-weight: var(--font-semibold);
+    font-size: var(--font-ui-small);
+    color: var(--text-normal);
+  };
+[data-type="advanced-tables-toolbar"]
+    .nav-buttons-container
+    .nav-action-button {
+    margin-inline-end: 0.25em;
+  };
+}`,
+    "theme-setting-overrideCalendar": `body.theme-setting-overrideCalendar {
+.workspace-leaf-content[data-type="calendar"] {
+    .view-content {
+      background-color: var(--theme-color-tabNavActiveBg);
+
+      .mod-fade:after {
+        display: none;
+      }
+    }
+    .container {
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+    .container > .calendar {
+      width: 100%;
+      margin: 0;
+    }
+  };
+.container:has(> .calendar) {
+    background-color: var(--theme-color-calendarBg);
+    margin: 0;
+    padding: 0 !important;
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end !important;
+      margin: 0 !important;
+      padding: 1em 0.5em 0.5em 0.5em !important;
+
+      .title {
+        cursor: default;
+        line-height: 1;
+        padding: 0;
+      }
+      .right-nav {
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+      .arrow svg,
+      .reset-button {
+        color: var(--icon-color);
+      }
+    }
+  };
+.calendar .day {
+    padding: 0.5em 1em;
+    min-height: 10em;
+  };
+.container > .calendar {
+    table-layout: fixed;
+    margin: 1rem;
+  };
+.container > .calendar thead th {
+    background: transparent;
+    border: none;
+    text-transform: none;
+    font-size: var(--font-ui-small);
+    font-weight: normal;
+    color: var(--theme-color-control);
+    text-align: left;
+    padding: 0.25em 1em;
+  };
+.container > .calendar tbody td {
+    display: table-cell;
+    max-width: 0;
+    border: none;
+    padding: 0;
+    vertical-align: top;
+  };
+/* Days for current month */
+.container > .calendar tbody td {
+    .day {
+      background-color: var(--theme-color-calendarDayBg);
+      border-radius: 0;
+      margin: 0;
+    }
+
+    .day.today {
+      background-color: var(--theme-color-tabNavBg);
+      color: var(--text-normal);
+      font-weight: bold;
+    }
+    .day.active {
+      background-color: var(--background-primary);
+      color: var(--text-normal);
+    }
+  };
+.container > .calendar tbody td:has(.day.today) {
+    background-color: var(--theme-color-calendarDayBg);
+  };
+.container > .calendar tbody td:has(.adjacent-month) {
+    background-color: transparent;
+
+    .day {
+      background-color: transparent;
+    }
+  };
+@media (hover: hover) {
+    .container > .calendar tbody td .day:hover {
+      background: transparent;
+    }
+    .container > .calendar tbody td:not(:has(.adjacent-month)) .day:hover {
+      background-color: var(--theme-color-controlBgHover);
+      color: var(--theme-color-controlHover);
+    }
+  };
+.calendar .day {
+    text-align: left;
+  };
+.mod-sidedock .workspace-leaf-content[data-type="calendar"] {
+    .view-content {
+      background: transparent;
+    }
+
+    .container {
+      border-radius: var(--radius-m);
+      overflow: hidden;
+
+      .calendar .day {
+        padding: 0.25em 0.25em;
+        min-height: 3em;
+      }
+
+    }
+    .container > .calendar {
+      table-layout: fixed;
+      width: 100%;
+      margin: 0.0;
+    }
+    .container > .calendar thead th {
+      padding: 0.25em;
+    }
+    .container > .calendar tbody td .day.today {
+      border-radius: 0.25em;
+    }
+
+  };
+}`,
+    "theme-setting-overrideClearUnusedImages": `body.theme-setting-overrideClearUnusedImages {
+.modal:has(.unused-images-logs) {
+    padding-bottom: 1em;
+  };
+}`,
+    "theme-setting-overrideColumns": `body.theme-setting-overrideColumns {
+/* Callout format – this also works without the plugin */
+--obsidian-columns-gap: 1em;
+--obsidian-columns-padding: 0 0;
+--obsidian-columns-min-width: 10em;
+--obsidian-columns-def-span: 1;
+div[data-callout|="col"].callout {
+    background-color: var(--background-primary); /* Override callout bg */
+    padding: 0;
+    border-style: none;
+
+    > div.callout-title {
+      display: none;
+    }
+
+    > div.callout-content {
+      > div[data-callout^="col-md"].callout {
+        flex-grow: var(--obsidian-columns-custom-span);
+        flex-basis: calc(
+          var(--obsidian-columns-min-width) *
+            var(--obsidian-columns-custom-span)
+        );
+        width: calc(
+          var(--obsidian-columns-min-width) *
+            var(--obsidian-columns-custom-span)
+        );
+
+        background-color: var(--background-primary); /* Override callout bg */
+        padding: 0;
+        border-style: none;
+      }
+      > div[data-callout|="col-md"].callout {
+        margin-block-start: 0;
+      }
+
+      > div[data-callout="-0.5"].callout {
+        --obsidian-columns-custom-span: 0.5;
+      }
+      > div[data-callout$="-1"].callout,
+      > div[data-callout="col-md"].callout {
+        --obsidian-columns-custom-span: 1;
+      }
+      > div[data-callout$="-1.5"].callout {
+        --obsidian-columns-custom-span: 1.5;
+      }
+      > div[data-callout$="-2"].callout {
+        --obsidian-columns-custom-span: 2;
+      }
+      > div[data-callout$="-2.5"].callout {
+        --obsidian-columns-custom-span: 2.5;
+      }
+      > div[data-callout$="-3"].callout {
+        --obsidian-columns-custom-span: 3;
+      }
+      > div[data-callout$="-3.5"].callout {
+        --obsidian-columns-custom-span: 3.5;
+      }
+      > div[data-callout$="-4"].callout {
+        --obsidian-columns-custom-span: 4;
+      }
+      > div[data-callout$="-4.5"].callout {
+        --obsidian-columns-custom-span: 4.5;
+      }
+      > div[data-callout$="-5"].callout {
+        --obsidian-columns-custom-span: 5;
+      }
+      > div[data-callout$="-5.5"].callout {
+        --obsidian-columns-custom-span: 5.5;
+      }
+      > div[data-callout$="-6"].callout {
+        --obsidian-columns-custom-span: 6;
+      }
+      > div[data-callout$="-6.5"].callout {
+        --obsidian-columns-custom-span: 6.5;
+      }
+      > div[data-callout$="-7"].callout {
+        --obsidian-columns-custom-span: 7;
+      }
+      > div[data-callout$="-7.5"].callout {
+        --obsidian-columns-custom-span: 7.5;
+      }
+      > div[data-callout$="-8"].callout {
+        --obsidian-columns-custom-span: 8;
+      }
+      > div[data-callout$="-8.5"].callout {
+        --obsidian-columns-custom-span: 8.5;
+      }
+      > div[data-callout$="-9"].callout {
+        --obsidian-columns-custom-span: 9;
+      }
+      > div[data-callout$="-9.5"].callout {
+        --obsidian-columns-custom-span: 9.5;
+      }
+      > div[data-callout$="-10"].callout {
+        --obsidian-columns-custom-span: 10;
+      }
+    }
+  };
+.columnParent,
+  div[data-callout="col"].callout > div.callout-content {
+    display: flex !important;
+    padding: var(--obsidian-columns-padding);
+    flex-wrap: wrap;
+    gap: var(--obsidian-columns-gap);
+    white-space: normal;
+  };
+.columnChild,
+  div[data-callout="col"].callout > div.callout-content > * {
+    flex-grow: var(--obsidian-columns-def-span);
+    flex-basis: calc(
+      var(--obsidian-columns-min-width) * var(--obsidian-columns-def-span)
+    );
+    width: calc(
+      var(--obsidian-columns-min-width) * var(--obsidian-columns-def-span)
+    );
+  };
+}`,
+    "theme-setting-overrideDataview": `body.theme-setting-overrideDataview {
+/* Styled to match embeds */
+.block-language-dataview {
+    background-color: var(--embed-background);
+    border-bottom: var(--embed-border-bottom);
+    border-inline-start: var(--embed-border-left);
+    border-radius: var(--radius-m);
+    border-inline-end: var(--embed-border-right);
+    border-top: var(--embed-border-top);
+    margin: 0;
+  };
+@media (hover: hover) {
+    /* Undo hover effect styles from app. There doesn't seem to be any clickable behaviour. */
+    .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):hover {
+      box-shadow: none;
+      border-radius: inherit;
+      cursor: inherit;
+      overflow: visible;
+    }
+  };
+/* List query */
+.dataview.list-view-ul {
+    padding: var(--theme-padding-block);
+    margin: 0;
+
+    & li {
+      margin: 0 0 0 0.5em;
+    }
+  };
+/* Table query */
+.block-language-dataview:has(
+      .dataview.table-view-table .dataview.table-view-table
+    ) {
+    border-radius: 0;
+  };
+.dataview.table-view-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    --list-indent: 1em;
+  };
+.dataview.table-view-table th {
+    font-size: var(--table-header-size);
+    font-weight: var(--table-header-weight);
+    color: var(--table-header-color);
+    font-family: var(--table-header-font);
+    text-align: start;
+    line-height: var(--line-height-tight);
+  };
+.dataview.table-view-table thead th:first-of-type {
+    border-top-left-radius: 0.5rem;
+  };
+.dataview.table-view-table thead th:last-of-type {
+    border-top-right-radius: 0.5rem;
+    /* Make room for edit-block button */
+    padding-inline-end: 2.5rem;
+  };
+.dataview.table-view-table tbody tr:last-of-type td:first-of-type {
+    border-bottom-left-radius: 0.5rem;
+  };
+.dataview.table-view-table tbody tr:last-of-type td:last-of-type {
+    border-bottom-right-radius: 0.5rem;
+  };
+.dataview.table-view-table > thead > tr > th,
+  .dataview.table-view-table > tbody > tr > td {
+    border: solid var(--table-header-border-width)
+      var(--table-header-border-color);
+    border-left-width: 0;
+    border-top-width: 0;
+  };
+.dataview.table-view-table > tbody > tr > td:first-child,
+  .dataview.table-view-table > thead > tr > th:first-child {
+    border-left-width: var(--table-header-border-width);
+  };
+.dataview.table-view-table > thead:first-child > tr:first-child th,
+  .dataview.table-view-table > tbody:first-child > tr:first-child td {
+    border-top-width: var(--table-header-border-width);
+  };
+/* Table query with card layout (idea borrowed from Minimal) */
+.cards .block-language-dataview:has(.dataview.table-view-table) {
+    background: var(--theme-gradient-cardSetGenerated);
+  };
+.cards table.dataview {
+    --table-width: 100%;
+    --table-edge-cell-padding-first: 0;
+    --table-edge-cell-padding-last: 0;
+    --table-cell-padding: 0;
+    line-height: 1.3;
+    --table-min-width: none;
+    margin: 0;
+  };
+.cards table.dataview thead {
+    user-select: none;
+    width: 180px;
+    display: block;
+    display: none;
+    float: right;
+    position: relative;
+    text-align: right;
+    height: 24px;
+    padding-bottom: 0;
+  };
+.cards table.dataview tbody {
+    clear: both;
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: var(--theme-grid-cardSet);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+  };
+.cards table.dataview tbody:empty {
+    padding: 0;
+  };
+.cards table.dataview > tbody > tr {
+    background-color: var(--theme-color-cardBg);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: box-shadow 0.15s linear;
+    max-width: var(--theme-length-cardMaxWidth);
+    height: auto;
+    border-radius: var(--radius-m);
+    border: none;
+    box-shadow: var(--shadow-s);
+  };
+.cards table.dataview.table-view-table > tbody > tr > td,
+  .cards
+    table.dataview.table-view-table
+    > tbody
+    > tr:last-of-type
+    > td:first-of-type,
+  .cards
+    table.dataview.table-view-table
+    > tbody
+    > tr:last-of-type
+    > td:last-of-type {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    padding: 0.5em 0.75em 0.5em 0.75em;
+  };
+.cards table.dataview.table-view-table > tbody > tr > td:has(img) {
+    padding: 0;
+  };
+.cards table.dataview tbody > tr > td img {
+    aspect-ratio: var(--theme-cardAspectRatio);
+    width: 100%;
+    object-fit: var(--theme-cardImageFit);
+    max-height: var(--theme-length-cardImageHeight);
+    display: inline-block;
+    background-color: var(--theme-color-baseTransparent12);
+    vertical-align: bottom;
+    margin: 0;
+    text-align: center;
+  };
+.cards table.dataview tbody > tr > td button {
+    width: 100%;
+  };
+/* Task query */
+.dataview-container:has(.contains-task-list) {
+    padding: var(--theme-padding-block);
+  };
+.dataview-container .contains-task-list {
+    padding-inline-start: 0;
+    margin: 0;
+  };
+@media (hover: hover) {
+    /* Style as a link */
+    .dataview.task-list-item:hover,
+    .dataview.task-list-basic-item:hover {
+      box-shadow: none;
+      background-color: transparent;
+      cursor: var(--cursor-link);
+      text-decoration-line: var(--link-decoration);
+      color: var(--link-color);
+    }
+  };
+/* Calendar query */
+/* Most styles shared with Calendar plugin */
+.block-language-dataview:has(.calendar) {
+    padding: var(--theme-padding-block);
+  };
+/* Empty and error queries */
+& div.dataview-error-box,
+  .dataview.dataview-error {
+    align-items: center;
+    border: 0.25rem dashed var(--theme-color-dataviewEmpty);
+    display: flex;
+    justify-content: center;
+    min-height: 5em;
+    width: 100%;
+    background-color: transparent;
+  };
+.dataview-error-message,
+  .dataview-error {
+    color: var(--theme-color-dataviewEmpty);
+    text-align: center;
+    font-family: var(--font-interface);
+  };
+/* Callouts with dataviews */
+.callout .dataview.dataview-container {
+    padding-top: 0;
+  };
+.callout:has(.dataview.list-view-ul) .callout-content,
+  .callout:has(.dataview-container > .contains-task-list) .callout-content,
+  .callout:has(.block-language-dataview > .container > table.calendar)
+    .callout-content {
+    margin: 0 -1.5em;
+  };
+.callout:has(.dataview.table-view-table) .callout-content {
+    margin: 0 -0.75em;
+  };
+.cards .callout:has(.dataview.table-view-table) .callout-content {
+    margin: 0 -1.5em;
+  };
+}`,
+    "theme-setting-overrideExcalidraw": `body.theme-setting-overrideExcalidraw {
+.workspace-leaf-content[data-type="excalidraw"] {
+    & .view-header {
+      padding-bottom: 0;
+    }
+    & .excalidraw-view {
+      /* I don't know why the default styles have 1px padding left and right. */
+      padding: 0;
+    }
+  };
+.excalidraw-view {
+    .excalidraw {
+      .FixedSideContainer_side_top {
+        top: var(--theme-length-controlSetSpacing) !important;
+        right: var(--theme-length-controlSetSpacing) !important;
+        bottom: var(--theme-length-controlSetSpacing) !important;
+        left: var(--theme-length-controlSetSpacing) !important;
+      }
+      .App-bottom-bar {
+        gap: 0.5rem;
+        margin: var(--theme-length-controlSetSpacing) !important;
+      }
+
+      /* Control sets */
+      & .Island,
+      & .mobile-misc-tools-container {
+        background: var(--theme-color-controlSetBg);
+        border: none;
+        padding: 0.25rem;
+        gap: 0;
+        box-shadow: var(--theme-shadow-input);
+        border-radius: var(--radius-m);
+      }
+      & .mobile-misc-tools-container {
+        gap: 0.5rem;
+        right: 0;
+        top: 0;
+      }
+
+      /* Layout structures inside control sets */
+      .Stack,
+      .App-toolbar-content {
+        gap: 0.5em;
+        padding: 0;
+      }
+      .App-toolbar-content {
+        /* I think these are supposed to be spacers, but I don't think we need them. */
+        > .ToolIcon__icon:empty {
+          display: none;
+        }
+
+        /* Container div for undeo/redo, which for somer eason has no class */
+        > div:last-child {
+          display: flex;
+        }
+      }
+
+      /* Menus */
+      & .dropdown-menu--mobile {
+        width: auto;
+      }
+      & .dropdown-menu .dropdown-menu-container {
+        background-color: var(--theme-color-menuBg);
+        border: 0;
+        box-shadow: var(--shadow-l);
+        border-radius: var(--radius-l);
+        margin: 0 1rem;
+        padding: 0.5em;
+
+        & > button {
+          border: none;
+          border-color: var(--nav-item-color);
+          color: var(--nav-item-color);
+          background-color: var(--nav-item-background);
+          box-shadow: none;
+        }
+
+        /* Match other hotkeys */
+        & .dropdown-menu-item__shortcut {
+          background: transparent;
+          border: solid 1px var(--theme-color-hotkey);
+          color: var(--theme-color-hotkey);
+          font-size: var(--font-ui-smaller);
+          font-family: var(--font-interface);
+          padding: 2px 6px;
+          border-radius: var(--radius-s);
+        }
+      }
+
+      .popover {
+        margin: 0 1rem;
+      }
+      .context-menu {
+        background-color: var(--theme-color-menuBg);
+        border: 0;
+        box-shadow: var(--shadow-l);
+        border-radius: var(--radius-l);
+        padding: 0.5em;
+        margin: 0;
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+
+        & button {
+          border: none;
+          border-color: var(--nav-item-color);
+          color: var(--nav-item-color);
+          background-color: var(--nav-item-background);
+          box-shadow: none;
+        }
+
+        @media (hover: hover) {
+          & button:hover {
+            border-color: var(--nav-item-color-hover);
+            color: var(--nav-item-color-hover);
+            background-color: var(--nav-item-background-hover) !important;
+            font-weight: var(--nav-item-weight-hover);
+            --icon-fill-color: var(--nav-item-color-hover);
+          }
+        }
+
+        hr {
+          margin: 0.5em 0;
+          border-top: var(--border-width) solid var(--background-modifier-border);
+        }
+      }
+    }
+  };
+@media (hover: hover) {
+    .excalidraw-view {
+      & .excalidraw {
+        & .dropdown-menu .dropdown-menu-container {
+          & > button:hover {
+            border-color: var(--nav-item-color-hover);
+            color: var(--nav-item-color-hover);
+            background-color: var(--nav-item-background-hover) !important;
+            font-weight: var(--nav-item-weight-hover);
+            --icon-fill-color: var(--nav-item-color-hover);
+          }
+
+          & .dropdown-menu-item__shortcut {
+            color: inherit;
+            border-color: inherit;
+          }
+        }
+      }
+    }
+  };
+/* Patch weird use of .is-mobile that clashes with Obsidian's use */
+body:not(.is-mobile) .mobile-misc-tools-container .ToolIcon.is-mobile {
+    --input-height: 30px;
+  };
+/* Buttons – duplicated from lightweight buttons above */
+.excalidraw-view .excalidraw .ToolIcon,
+  .excalidraw-view .excalidraw .dropdown-menu-button,
+  .excalidraw-view .excalidraw .sidebar-trigger__label-element {
+    align-items: center;
+    background-color: transparent;
+    border-radius: var(--clickable-icon-radius);
+    border: none;
+    box-shadow: none;
+    color: var(--theme-color-control);
+    cursor: var(--cursor);
+    display: flex;
+    height: 2em;
+    justify-content: center;
+    min-height: var(--input-height);
+    opacity: var(--icon-opacity);
+    padding: 0.25rem;
+    text-decoration: none;
+    transition: opacity 0.15s ease-in-out;
+    width: 2em;
+    --icon-fill-color: var(--theme-color-control);
+  };
+.is-mobile .excalidraw-view .excalidraw .ToolIcon,
+  .is-mobile .excalidraw-view .excalidraw .dropdown-menu-button {
+    min-height: 44px;
+    min-width: 44px;
+  };
+.excalidraw-view .excalidraw .dropdown-menu-button:focus {
+    box-shadow: none;
+  };
+@media (hover: hover) {
+    .excalidraw-view .excalidraw .Island .ToolIcon:hover,
+    .excalidraw-view .excalidraw .dropdown-menu-button:hover,
+    .excalidraw-view .excalidraw .sidebar-trigger__label-element:hover,
+    .excalidraw-view .excalidraw .mobile-misc-tools-container .ToolIcon:hover,
+    .excalidraw-view .excalidraw .reset-zoom-button:hover {
+      color: var(--theme-color-controlHover);
+      --icon-fill-color: var(--theme-color-controlHover);
+      background-color: var(--background-modifier-hover);
+    }
+  };
+/* Active state */
+.excalidraw-view .excalidraw .ToolIcon:has(.ToolIcon_type_radio:checked),
+  .excalidraw-view .excalidraw .dropdown-menu-button:has(~ .dropdown-menu) {
+    opacity: var(--icon-opacity-hover);
+    color: var(--theme-color-controlLightweightActive);
+    background-color: var(--theme-color-interactiveActive);
+    --icon-fill-color: var(--theme-color-controlLightweightActive);
+  };
+.excalidraw-view
+    .excalidraw
+    .ToolIcon.fillable:has(.ToolIcon_type_radio:checked)
+    .ToolIcon__icon,
+  .excalidraw-view
+    .excalidraw
+    .ToolIcon.fillable:has(.ToolIcon_type_radio:checked)
+    .ToolIcon__keybinding,
+  .excalidraw .ToolIcon .ToolIcon_type_checkbox:checked + .ToolIcon__icon,
+  .excalidraw .ToolIcon .ToolIcon_type_radio:checked + .ToolIcon__icon {
+    color: inherit;
+    --icon-fill-color: inherit;
+  };
+@media (hover: hover) {
+    .excalidraw-view .excalidraw .ToolIcon:hover,
+    .excalidraw-view .excalidraw .dropdown-menu-button:hover {
+      color: var(--theme-color-controlHover);
+      background-color: var(--background-modifier-hover);
+    }
+    .excalidraw-view
+      .excalidraw
+      .ToolIcon:has(.ToolIcon_type_radio:checked):hover,
+    .excalidraw-view .excalidraw .dropdown-menu-button:focus:hover {
+      background-color: var(--background-modifier-hover);
+      color: var(--theme-color-controlHover);
+    }
+  };
+.excalidraw-view
+    .excalidraw
+    .ToolIcon
+    .ToolIcon_type_checkbox:checked
+    + .ToolIcon__icon,
+  .excalidraw-view
+    .excalidraw
+    .ToolIcon
+    .ToolIcon_type_radio:checked
+    + .ToolIcon__icon {
+    background-color: transparent;
+  };
+/* Icons inside buttons */
+.excalidraw-view .excalidraw .Island .ToolIcon__icon,
+  .excalidraw-view .excalidraw .Island .ToolIcon__keybinding,
+  .excalidraw-view .excalidraw .mobile-misc-tools-container .ToolIcon__icon {
+    --icon-size: var(--icon-s);
+    --icon-stroke: var(--icon-s-stroke-width);
+    border-radius: var(--clickable-icon-radius);
+    color: inherit;
+    opacity: var(--icon-opacity);
+    background-color: transparent;
+    border: none;
+  };
+.excalidraw-view .excalidraw .sidebar-trigger {
+    box-shadow: none;
+    background: transparent;
+  };
+.excalidraw-view .excalidraw .App-toolbar__divider {
+    width: 1rem;
+    height: 1.5rem;
+    align-self: center;
+    background-color: transparent;
+    margin: 0 0.25rem;
+  };
+.excalidraw-view .excalidraw .ToolIcon {
+    cursor: default;
+  };
+.excalidraw-view .excalidraw .zoom-actions,
+  .excalidraw-view .excalidraw .zoom-actions .Stack {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  };
+.excalidraw-view .excalidraw .zoom-button {
+    background: transparent !important; /* Ugh. */
+    border-radius: var(--clickable-icon-radius) !important;
+    font-size: inherit !important;
+  };
+@media (hover: hover) {
+    .excalidraw-view .excalidraw .zoom-button:hover {
+      background-color: var(--background-modifier-hover) !important; /* Ugh. */
+    }
+  };
+/* Match style of small notice */
+.excalidraw .HintViewer {
+    border-radius: var(--radius-xl);
+    background-color: var(--background-modifier-message);
+    color: var(--theme-color-notice);
+    box-shadow: var(--shadow-s);
+    padding: 0.5em 0.75em;
+    width: auto;
+
+    & span {
+      padding: 0;
+    }
+  };
+.excalidraw-setting-hr {
+    border: none;
+  };
+}`,
+    "theme-setting-overrideFolderNote": `body.theme-setting-overrideFolderNote {
+.block-language-ccard {
+    /* Styled as embed, but with gradient background to give more contrast for cards */
+    border-bottom: var(--embed-border-bottom);
+    border-inline-start: var(--embed-border-left);
+    border-radius: var(--radius-m);
+    border-inline-end: var(--embed-border-right);
+    border-top: var(--embed-border-top);
+    margin: 0;
+    padding: 1em;
+    background: var(--theme-gradient-cardSetGenerated);
+    border: 0;
+    padding: 1.5em;
+    gap: 1.5em;
+
+    .cute-card-band {
+      margin-top: 0;
+      grid-template-columns: var(--theme-grid-cardSet);
+      grid-gap: 1em;
+    }
+
+    .cute-card-view,
+    .is-phone .cute-card-view {
+      background-color: var(--theme-color-cardBg);
+      border-radius: var(--radius-m);
+      border: none;
+      box-shadow: var(--shadow-s);
+      cursor: var(--cursor);
+      padding: 0;
+      position: relative;
+
+      & article {
+        padding: 0.25em 0.75em 0.5em 0.75em;
+      }
+      & h1 {
+        color: inherit;
+        padding: 0;
+        font-size: var(--font-text);
+        font-weight: var(--inline-title-weight);
+        line-height: var(--inline-title-line-height);
+        font-style: var(--inline-title-style);
+        font-variant: var(--inline-title-variant);
+        font-family: var(--inline-title-font);
+        margin-bottom: var(--inline-title-margin-bottom);
+        letter-spacing: -0.015em;
+        color: var(--inline-title-color);
+        white-space: pre-wrap;
+      }
+      & p,
+      & span {
+        color: var(--text-muted);
+        font-weight: normal;
+        margin-block-end: 0;
+        margin-block-start: 0;
+        font-size: 0.8rem;
+      }
+
+      .thumb-color {
+        display: none;
+      }
+      .thumb-color-folder {
+        font-weight: bold;
+      }
+    }
+    .cute-card-view:hover {
+      top: 0;
+      box-shadow: var(--shadow-s);
+    }
+  };
+}`,
+    "theme-setting-overrideJiraIssue": `body.theme-setting-overrideJiraIssue {
+.jira-issue-container {
+    margin: 0 0 0.5em 0;
+  };
+.jira-issue-container a {
+    text-decoration-line: var(--link-decoration);
+    text-decoration-thickness: var(--link-decoration-thickness);
+  };
+@media (hover: hover) {
+    .jira-issue-container a:hover {
+      color: var(--link-color-hover);
+      text-decoration-line: var(--link-decoration-hover);
+    }
+  };
+.jira-issue-container .ji-tags {
+    border: solid 1px var(--embed-background);
+    border-radius: var(--radius-s);
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    gap: 0.25em;
+    padding: 0;
+
+    .ji-tag,
+    .ji-tag.is-link {
+      background-color: transparent;
+      color: inherit;
+      margin: 0;
+    }
+    .ji-tag.is-link {
+      color: var(--link-color);
+      font-weight: var(--link-weight);
+      text-decoration-line: var(--link-decoration);
+      text-decoration-thickness: var(--link-decoration-thickness);
+      cursor: var(--cursor-link);
+      transition: opacity 0.15s ease-in-out;
+    }
+    .ji-tag {
+      padding: 0.25em;
+    }
+    .ji-tag:last-child {
+      border-radius: var(--radius-s);
+      border: var(--tag-border-width) solid var(--tag-border-color);
+      font-weight: var(--tag-weight);
+      padding: 0.25em 0.5em;
+      vertical-align: baseline;
+      line-height: var(--line-height-tight);
+      margin: 0.25em 0.5em;
+      background-color: var(--theme-color-jiraIssueStatusBg);
+      color: var(--theme-color-jiraIssueStatus);
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .ji-tag.is-info {
+      background-color: var(--theme-color-jiraIssueInfoBg);
+      color: var(--text-normal);
+    }
+    .ji-tag.is-warning {
+      background-color: var(--theme-color-jiraIssueWarningBg);
+      color: var(--text-normal);
+    }
+    .ji-tag.is-success {
+      background-color: var(--theme-color-jiraIssueSuccessBg);
+      color: var(--text-normal);
+    }
+  };
+.ji-inline-issue.jira-issue-container .ji-tag.ji-band,
+  .jira-issue-container .ji-tags .ji-tag.ji-band,
+  .jira-issue-container .ji-tags.has-addons .ji-tag.ji-band {
+    width: 1em;
+    height: 1em;
+    margin: 0 0 0 0.5em;
+    border-radius: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 0;
+  };
+.jira-issue-container {
+    .ji-tags:has(.ji-tag.is-danger) {
+      border: solid 1px var(--theme-color-jiraIssueDangerBg);
+      .ji-tag.is-danger {
+        color: inherit;
+        flex-grow: 1;
+
+        &:last-child {
+          flex-grow: 0;
+          color: var(--theme-color-jiraIssueDanger);
+          background-color: var(--color-red);
+          border-radius: var(--radius-s);
+          border: var(--tag-border-width) solid var(--tag-border-color);
+          font-weight: var(--tag-weight);
+          padding: 0.25em 0.5em;
+          vertical-align: baseline;
+          line-height: var(--line-height-tight);
+          margin: 0.5em 0.5em 0.5em 0;
+        }
+      }
+      .ji-tag.is-danger.is-delete {
+        background-color: var(--theme-color-jiraIssueDeleteBg);
+        width: 1em;
+        height: 1em;
+        margin: 0 0 0 0.5em;
+        border-radius: 100%;
+        border-top-right-radius: 1em;
+        flex-shrink: 0;
+        flex-grow: 0;
+        padding: 0;
+        color: var(--theme-color-jiraIssueDanger);
+      }
+    }
+  };
+.block-language-jira-search {
+    background-color: var(--embed-background);
+    border-bottom: var(--embed-border-bottom);
+    border-inline-start: var(--embed-border-left);
+    border-radius: var(--radius-m);
+    border-inline-end: var(--embed-border-right);
+    border-top: var(--embed-border-top);
+    overflow-x: auto;
+
+    .jira-issue-container .table {
+      color: inherit;
+      background-color: transparent;
+    }
+    .jira-issue-container .table td {
+      border-top: none;
+      border-bottom: none;
+      font-size: small;
+      padding: 0.5em;
+      border-color: var(--table-border-color);
+
+      &:first-child {
+        border-inline-start: none;
+      }
+
+      &:last-child {
+        border-inline-end: none;
+      }
+    }
+    .jira-issue-container .table th {
+      background: transparent;
+      border-top: none;
+      border-bottom: none;
+      padding: 0.5em;
+      color: var(--text-normal);
+      border-color: var(--table-border-color);
+
+      &:first-child {
+        border-inline-start: none;
+      }
+
+      &:last-child {
+        border-inline-end: none;
+      }
+    }
+    .jira-issue-container
+      .table.is-striped
+      tbody
+      tr:not(.is-selected):nth-child(odd),
+    .jira-issue-container
+      .table.is-striped
+      tbody
+      tr:not(.is-selected):nth-child(odd):hover {
+      background-color: var(--theme-color-jiraIssueTableStripe);
+    }
+    .jira-issue-container
+      .table.is-striped
+      tbody
+      tr:not(.is-selected):nth-child(even),
+    .jira-issue-container
+      .table.is-striped
+      tbody
+      tr:not(.is-selected):nth-child(even):hover {
+      background-color: transparent;
+    }
+    .jira-issue-container .search-footer {
+      margin-top: 0.5em;
+      padding: 0 0.5em 0 1em;
+      font-size: small;
+      align-items: center;
+
+      > div {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+      }
+    }
+  };
+.block-language-jira-count {
+    .jira-issue-container .ji-tags {
+      width: auto;
+      padding-inline-end: 0.5em;
+
+      .ji-tag,
+      .ji-tag.is-link {
+        text-decoration: none;
+        color: var(--text-normal);
+        cursor: default;
+        background-color: transparent;
+
+        &:last-child {
+          font-weight: bold;
+        }
+      }
+    }
+  };
+}`,
+    "theme-setting-overrideKanban": `body.theme-setting-overrideKanban {
+.kanban-plugin {
+    gap: 0.5rem;
+    background: var(--theme-gradient-cardSetGenerated);
+  };
+.kanban-plugin__lane {
+    background-color: var(--theme-color-kanbanLaneBg);
+    border: none;
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-s);
+  };
+.kanban-plugin__lane-header-wrapper {
+    border-bottom: none;
+    gap: 0.5em;
+    padding: 0.5em;
+  };
+.kanban-plugin__lane-grip {
+    margin-inline-end: 0;
+    color: var(--theme-color-control);
+  };
+.kanban-plugin__lane-setting-wrapper > div {
+    padding: 0.5em 1em;
+  };
+.kanban-plugin__lane-setting-wrapper > div:last-child {
+    border: none;
+    margin-bottom: 0;
+  };
+.kanban-plugin__grow-wrap > textarea {
+    /* Style as regular text field */
+    background: var(--background-input);
+    border-radius: var(--input-radius);
+    border: none;
+    box-shadow: 0 0 0 var(--input-border-width) var(--theme-color-base);
+    font-size: var(--font-ui-small);
+    line-height: normal;
+    padding: var(--size-4-1) var(--size-4-2);
+  };
+.kanban-plugin__grow-wrap > textarea:focus {
+    box-shadow: 0 0 0 var(--input-border-width) var(--theme-color-base);
+  };
+.kanban-plugin__item-button-wrapper {
+    border-top: none;
+  };
+.kanban-plugin__lane-items {
+    gap: 0.5em;
+    margin: 0;
+    padding: 0.5em 0.5em 0 0.5em;
+  };
+.kanban-plugin__lane-items > .kanban-plugin__item-wrapper {
+    margin: 0;
+  };
+.kanban-plugin__item {
+    border: none;
+    box-shadow: var(--shadow-s);
+
+    &.is-search-hit {
+      box-shadow: inherit;
+    }
+  };
+.kanban-plugin__item:has(.markdown-source-view) {
+    border: var(--input-border-width) solid
+      var(--background-modifier-border-focus);
+    background-color: var(--background-input);
+
+    .kanban-plugin__item-content-wrapper {
+      background: transparent;
+    }
+    .kanban-plugin__item-title-wrapper {
+      background: transparent;
+    }
+    .cm-contentContainer {
+      padding: 0;
+    }
+    .kanban-plugin__item-postfix-button {
+      /* Style as search input clear button */
+      border-radius: 100%;
+      background-color: var(--search-clear-button-color);
+      color: var(--background-secondary);
+      cursor: var(--cursor);
+      line-height: 0;
+      height: var(--search-clear-button-size);
+      width: var(--search-clear-button-size);
+      min-height: var(--search-clear-button-size);
+      min-width: var(--search-clear-button-size);
+      margin: auto;
+      padding: 0 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: color 0.15s ease-in-out;
+
+      .kanban-plugin__icon svg {
+        height: calc(0.8 * var(--search-clear-button-size));
+        width: calc(0.8 * var(--search-clear-button-size));
+        display: block;
+        color: inherit;
+      }
+    }
+    @media (hover: hover) {
+      .kanban-plugin__item-postfix-button:hover {
+        background-color: var(--text-normal);
+        transition: color 0.15s ease-in-out;
+      }
+    }
+  };
+.kanban-plugin__drag-container
+    > .kanban-plugin__item-wrapper
+    .kanban-plugin__item {
+    border-color: none;
+    box-shadow: var(--theme-shadow-draggingItem);
+  };
+.kanban-plugin__item-title-wrapper:not(:only-child) {
+    border-bottom: none;
+  };
+.kanban-plugin__item-form {
+    border: none;
+  };
+.kanban-plugin__item-form .kanban-plugin__item-input-wrapper {
+    padding: var(--input-border-width);
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    min-height: var(--input-height);
+  };
+/* Autocomplete menu when [[ is entered */
+.kanban-plugin__autocomplete {
+    font-size: inherit;
+    min-width: 20ch;
+    max-width: 40ch;
+    max-height: 12rem;
+  };
+.kanban-plugin__lane-form-wrapper {
+    background: var(--theme-color-controlSetBg);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 1rem;
+    box-shadow: var(--shadow-s);
+    border-radius: var(--radius-m);
+    top: 0.5em;
+    right: 0.5em;
+    width: auto;
+
+    .kanban-plugin__lane-input-wrapper {
+      padding: 0;
+    }
+
+    .kanban-plugin__checkbox-wrapper {
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .kanban-plugin__lane-input-actions {
+      padding: 0;
+      justify-content: flex-end;
+    }
+  };
+.kanban-plugin__draggable-setting-container>.kanban-plugin__placeholder,
+  .kanban-plugin__setting-item-wrapper {
+    border: none;
+  };
+.kanban-plugin__setting-item {
+    background: none;
+    padding: 1em 0 0 0;
+  };
+}`,
+    "theme-setting-overrideMapView": `body.theme-setting-overrideMapView .map-view-graph-controls .graph-control-div .collapsible label {
+border-radius: var(--radius-s);
+color: var(--text-faint);
+font-size: var(--nav-item-size);
+font-weight: var(--font-medium);
+padding: 0.25em 0.5em 0.25em 0;
+line-height: var(--theme-lineHeight-tight);
+display: flex;
+align-items: center;
+width: 100%;
+}
+
+body.theme-setting-overrideMapView .map-view-graph-controls .graph-control-div .collapsible label:hover {
+color: var(--nav-item-color-hover);
+background-color: var(--nav-item-background-hover);
+font-weight: var(--font-medium);
+}
+
+body.theme-setting-overrideMapView .map-view-graph-controls .graph-control-div .collapsible .contents {
+margin: 0 1em 1em 1em;
+font-size: var(--font-ui-small);
+padding: 0;
+margin: 0.5em 0;
+}
+
+body.theme-setting-overrideMapView {
+.mod-sidedock .workspace-leaf-content[data-type="map"] {
+    margin: 0.5rem 0;
+  };
+.view-header {
+    border-bottom: none;
+  };
+.map-view-main {
+    overflow: hidden;
+    border-radius: var(--tab-radius);
+    background-color: var(--theme-color-graphViewBg);
+  };
+.map-view-main:before,
+  .map-view-main:after {
+    /* Match graph view */
+    background: transparent;
+    box-shadow: var(--theme-shadow-indent);
+    content: "";
+    display: block;
+    height: 1rem;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    width: 120%;
+    z-index: 2;
+  };
+.map-view-main:before {
+    top: -1rem;
+  };
+.map-view-main:after {
+    bottom: -1rem;
+  };
+.map-view-graph-controls {
+    background: var(--theme-color-controlSetBg);
+    border: none;
+    padding: 0.25rem;
+    gap: 0;
+    box-shadow: var(--theme-shadow-input);
+    border-radius: var(--radius-m);
+    top: var(--theme-length-controlSetSpacing);
+    left: var(--theme-length-controlSetSpacing);
+    min-width: 7em;
+
+    .graph-control-div {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 0;
+
+      .collapsible {
+        padding: 0;
+
+        label {
+          padding-inline-start: 0.5em;
+        }
+      }
+    }
+
+    & select,
+    & button {
+      flex-basis: calc(50% - 0.325em);
+      flex-shrink: 1;
+      flex-grow: 0;
+    }
+    .graph-control-follow-div {
+      display: flex;
+      gap: 0.5em;
+      align-content: baseline;
+      justify-content: flex-start;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+    .graph-control-follow-label {
+      margin: 0.1875em 0 0 0;
+    }
+
+    .graph-control-content {
+      width: 100%;
+      flex-shrink: 0;
+      padding: 0.5em 0;
+      margin: 0;
+      gap: 0.25em;
+      overflow: visible;
+    }
+    /* Presets section */
+    .graph-control-div:last-child .graph-control-content {
+      /* Presets dropdown */
+      & .dropdown.mv-map-control:first-child {
+        flex-shrink: 0;
+        flex-basis: 100%;
+      }
+    }
+    .top-right-controls.svelte-1sl5jax {
+      padding: 0;
+      top: 0.25em;
+      right: 0.25em;
+    }
+  };
+.map-view-graph-controls.minimized {
+    min-width: 0;
+  };
+.map-view-graph-controls.svelte-1sl5jax:not(.minimized):has(.top-right-controls:where(.svelte-1sl5jax)) {
+    /* Override styles that I think are inserted by Map View. Weird thing for a plugin to do. */
+    padding: 0.25rem;
+  };
+.map-view-main {
+    .marker-cluster-small,
+    .marker-cluster-small div {
+      background-color: var(--theme-color-greenTransparent25);
+    }
+    .marker-cluster-medium,
+    .marker-cluster-medium div {
+      background-color: var(--theme-color-yellowTransparent25);
+    }
+    .marker-cluster-large,
+    .marker-cluster-large div {
+      background-color: var(--theme-color-orangeTransparent25);
+    }
+  };
+.map-view-graph-controls .lbl-triangle {
+    border-top-left-radius: var(--radius-s);
+    border-bottom-left-radius: var(--radius-s);
+    font-size: var(--nav-item-size);
+    font-weight: var(--font-medium);
+    gap: 0.5em;
+    margin: 0;
+    padding: 0.25em 1.5em 0.25em 0.5em;
+    line-height: var(--theme-lineHeight-tight);
+    width: 1em;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    transition: none;
+    position: relative;
+    color: transparent;
+    top: 0;
+  };
+.map-view-graph-controls .lbl-triangle:before {
+    position: absolute;
+    top: 50%;
+    left: 0.5em;
+    content: "";
+    background-color: var(--theme-color-control);
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-image: url('data:image/svg+xml; utf8, <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8L12 17L21 8"></path></svg>');
+    transition: transform 100ms ease-in-out;
+    transform: rotate(-90deg);
+  };
+.map-view-graph-controls .controls-toggle:checked + .lbl-triangle {
+    transform: none;
+  };
+.map-view-graph-controls .controls-toggle:checked + .lbl-triangle:before {
+    transform: rotate(0deg);
+  };
+.map-view-graph-controls .lbl-toggle {
+    border-top-right-radius: var(--radius-s);
+    border-bottom-right-radius: var(--radius-s);
+    color: var(--text-faint);
+    font-size: var(--nav-item-size);
+    font-weight: var(--font-medium);
+    gap: 0.5em;
+    margin: 0;
+    padding: 0.25em 0.5em 0.25em 0;
+    line-height: var(--theme-lineHeight-tight);
+    display: flex;
+    width: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    transition: none;
+  };
+@media (hover: hover) {
+    .map-view-graph-controls .lbl-triangle:hover,
+    .map-view-graph-controls
+      .graph-control-div:has(.lbl-toggle:hover)
+      .lbl-triangle {
+      background-color: var(--nav-item-background-hover);
+      color: transparent;
+    }
+    .map-view-graph-controls .lbl-triangle:hover:before,
+    .map-view-graph-controls
+      .graph-control-div:has(.lbl-toggle:hover)
+      .lbl-triangle:before {
+      background-color: var(--theme-color-controlHover);
+    }
+    .map-view-graph-controls .lbl-toggle:hover,
+    .map-view-graph-controls
+      .graph-control-div:has(.lbl-triangle:hover)
+      .lbl-toggle {
+      color: var(--nav-item-color-hover);
+      background-color: var(--nav-item-background-hover);
+      font-weight: var(--font-medium);
+    }
+  };
+.map-view-graph-controls
+    .controls-toggle:checked
+    + .lbl-triangle
+    + .lbl-toggle
+    + .graph-control-content {
+    display: flex;
+    flex-wrap: wrap;
+  };
+.map-view-graph-controls .search-input-container {
+    width: 100%;
+    padding: var(--input-border-width);
+
+    &:before {
+      top: calc(
+        (var(--input-height) - var(--search-icon-size)) / 2 +
+          var(--input-border-width)
+      );
+    }
+  };
+.map-view-main {
+    .leaflet-control-container {
+      .leaflet-top {
+        top: var(--theme-length-controlSetSpacing);
+      }
+      .leaflet-right {
+        right: var(--theme-length-controlSetSpacing);
+      }
+      .leaflet-bottom {
+        bottom: var(--theme-length-controlSetSpacing);
+      }
+      .leaflet-left {
+        left: var(--theme-length-controlSetSpacing);
+      }
+    }
+  };
+.map-view-main .leaflet-control-container .leaflet-top.leaflet-right {
+    background: var(--theme-color-controlSetBg);
+    border: none;
+    padding: 0.25rem;
+    gap: 0;
+    box-shadow: var(--theme-shadow-input);
+    border-radius: var(--radius-m);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    & .leaflet-control {
+      border: none;
+      margin: 0;
+    }
+
+    & .leaflet-control-zoom {
+      padding: 0;
+    }
+
+    & a {
+      align-items: center;
+      background-color: transparent;
+      border-radius: var(--clickable-icon-radius);
+      border: none;
+      box-shadow: none;
+      color: var(--theme-color-control);
+      cursor: var(--cursor);
+      display: flex;
+      height: 2em;
+      justify-content: center;
+      min-height: var(--input-height);
+      opacity: var(--icon-opacity);
+      padding: 0.25rem;
+      text-decoration: none;
+      transition: opacity 0.15s ease-in-out;
+      width: 2em;
+      font-size: 1rem;
+
+      &.on {
+        opacity: var(--icon-opacity-hover);
+        color: var(--theme-color-controlLightweightActive);
+        background-color: var(--theme-color-interactiveActive);
+      }
+    }
+    @media (hover: hover) {
+      & a:hover {
+        color: var(--theme-color-controlHover);
+        background-color: var(--background-modifier-hover);
+      }
+    }
+  };
+.leaflet-touch .leaflet-bar a:first-child,
+  .leaflet-touch .leaflet-bar a:last-child {
+    border-radius: var(--clickable-icon-radius);
+  };
+.cm-embed-block .block-language-mapview .map-view-main {
+    background-color: var(--embed-background);
+    border-bottom: var(--embed-border-bottom);
+    border-inline-start: var(--embed-border-left);
+    border-radius: var(--radius-m);
+    border-inline-end: var(--embed-border-right);
+    border-top: var(--embed-border-top);
+    margin: 0;
+
+    /* Open button */
+    & .map-view-graph-controls > .mv-map-control.mv-control-button {
+      border: none;
+      box-shadow: var(--theme-shadow-control);
+      background-color: var(--theme-color-controlLowWeightBg);
+      color: var(--theme-color-controlText);
+      font-size: var(--font-ui-smaller);
+      line-height: var(--line-height-tight);
+      min-height: 0;
+      padding: 0.25em 0.5em;
+      width: 100%;
+      margin-bottom: 0.5em;
+    }
+    & .map-view-graph-controls > .mv-map-control.mv-control-button :focus {
+      box-shadow: 0 0 0 3px var(--background-modifier-border-focus);
+      outline: none;
+    }
+    @media (hover: hover) {
+      & .map-view-graph-controls > .mv-map-control.mv-control-button :hover {
+        border: none;
+        background: var(--theme-color-controlBgHover);
+        color: var(--theme-color-controlTextHover);
+      }
+    }
+  };
+/* Map view preset save-as modal */
+.modal-content:has(.newPresetDialogGrid) {
+    padding: 1rem 1rem 1rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    .newPresetDialogLine:last-child {
+      display: flex;
+      justify-content: flex-end;
+
+      > button {
+        margin-inline-start: 0.5rem;
+      }
+    }
+  };
+.geolink:has(.cm-underline) {
+    /* Don't make a double underline */
+    text-decoration-line: none;
+  };
+}`,
+    "theme-setting-overridePluginUpdateTracker": `body.theme-setting-overridePluginUpdateTracker {
+.plugin-update-tracker-icon {
+    background-color: var(--theme-color-baseTransparent25);
+    border-radius: 9999px;
+    padding: 0.25rem;
+
+    .plugin-update-tracker-icon-chip {
+      color: var(--flair-color);
+      font-size: var(--font-ui-smaller);
+      letter-spacing: 0.05em;
+      margin-inline-start: 0.25em;
+      line-height: 1;
+      padding: 0.375em 0.75em;
+      text-transform: uppercase;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 9999px;
+    }
+    &.plugin-update-tracker-icon--updates-available .plugin-update-tracker-icon-chip {
+      background-color: var(--theme-color-orangeDarkened);
+    }
+    &.plugin-update-tracker-icon--no-updates-available .plugin-update-tracker-icon-chip {
+      background-color: var(--theme-color-greenDarkened);
+    }
+  };
+}`,
+    "theme-setting-overrideRecentFiles": `body.theme-setting-overrideRecentFiles {
+.recent-files-title {
+    align-items: center;
+    padding-inline-end: 0.375em;
+  };
+}`,
+    "theme-setting-overrideTasks": `body.theme-setting-overrideTasks {
+.block-language-tasks {
+    background-color: var(--embed-background);
+    border-bottom: var(--embed-border-bottom);
+    border-inline-start: var(--embed-border-left);
+    border-radius: var(--radius-m);
+    border-inline-end: var(--embed-border-right);
+    border-top: var(--embed-border-top);
+    margin: 0;
+    padding: 0.5em;
+  };
+.tasks-edit {
+    display: inline-flex;
+  };
+.tasks-modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+  };
+.tasks-modal-section + .tasks-modal-section {
+    margin: 0;
+  };
+.tasks-modal-priorities {
+    row-gap: 1em;
+    column-gap: 0.5em;
+  };
+.tasks-modal-dates {
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+  };
+.tasks-modal-priorities label {
+    grid-row-end: 3;
+    margin: 0;
+    padding: 0 0.25em;
+  };
+}`,
+    "theme-setting-overrideStyleSettings": `body.theme-setting-overrideStyleSettings {
+/* Settings modal */
+.style-settings-heading {
+    border-bottom: none;
+    margin-top: 1.5em;
+  };
+.style-settings-heading[data-level="0"] {
+    margin-bottom: 0;
+  };
+.setting-item + div > .style-settings-heading[data-level="0"],
+  .setting-item + .style-settings-heading[data-level="0"] {
+    margin-top: 1.5em;
+  };
+/* Import/export modals */
+.modal-style-settings {
+    /* Show shadow below buttons */
+    overflow: visible;
+
+    & .modal-content {
+      padding: 1em 1em 1em 1em;
+      margin-bottom: 0;
+    }
+    & .setting-item {
+      margin-bottom: 1em;
+      align-items: baseline;
+    }
+    & .setting-item:first-child {
+      margin-inline-start: 1.5em;
+    }
+    & textarea {
+      margin-top: var(--input-border-width);
+      margin-bottom: var(--input-border-width);
+    }
+  };
+.setting-item-heading {
+    padding: 0 0.5em;
+
+    .style-settings-collapse-indicator,
+    .setting-item-name,
+    .extra-setting-button {
+      color: inherit;
+    }
+  };
+.style-settings-collapse-indicator > svg {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-inline-start: 0.5rem;
+  };
+.style-settings-heading[data-level="0"] + .style-settings-container,
+  .style-settings-heading[data-level="1"] + .style-settings-container,
+  .style-settings-heading[data-level="2"] + .style-settings-container,
+  .style-settings-heading[data-level="3"] + .style-settings-container,
+  .style-settings-heading[data-level="4"] + .style-settings-container,
+  .style-settings-heading[data-level="5"] + .style-settings-container,
+  .style-settings-heading[data-level="6"] + .style-settings-container {
+    padding-inline-start: calc(0.5em + 10px + 0.5em);
+  };
+.style-settings-heading[data-level="0"]
+    + .style-settings-container
+    .style-settings-collapse-indicator {
+    margin-inline-start: 0;
+  };
+&.theme-setting-enableIconsInSettings {
+    .setting-item.setting-item-heading.style-settings-heading[data-id="kakano-style"]
+      + .style-settings-container {
+      .setting-item.setting-item-heading.style-settings-heading
+        .style-settings-collapse-indicator:after {
+        margin-inline-start: 0.5em;
+        vertical-align: top;
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        margin: 0.125em 0 0 0.5em;
+        opacity: 75%;
+      }
+
+      .setting-item.setting-item-heading.style-settings-heading[data-id="heading-baseColor"]
+        .style-settings-collapse-indicator:after {
+        filter: hue-rotate(0deg);
+        content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'><g><rect x='0' y='0' width='1' height='24' style='fill:rgb(255,0,0);'/><rect x='4' y='0' width='1' height='24' style='fill:rgb(255,255,0);'/><rect x='8' y='0' width='1' height='24' style='fill:rgb(0,255,0);'/><rect x='12' y='0' width='1' height='24' style='fill:rgb(0,255,255);'/><rect x='16' y='0' width='1' height='24' style='fill:rgb(0,0,255);'/><rect x='20' y='0' width='1' height='24' style='fill:rgb(255,0,255);'/><rect x='2' y='0' width='1' height='24' style='fill:rgb(255,127,0);'/><rect x='6' y='0' width='1' height='24' style='fill:rgb(127,255,0);'/><rect x='10' y='0' width='1' height='24' style='fill:rgb(0,255,127);'/><rect x='14' y='0' width='1' height='24' style='fill:rgb(0,127,255);'/><rect x='18' y='0' width='1' height='24' style='fill:rgb(127,0,255);'/><rect x='22' y='0' width='1' height='24' style='fill:rgb(255,0,127);'/><rect x='1' y='0' width='1' height='24' style='fill:rgb(255,63,0);'/><rect x='5' y='0' width='1' height='24' style='fill:rgb(191,255,0);'/><rect x='9' y='0' width='1' height='24' style='fill:rgb(0,255,63);'/><rect x='13' y='0' width='1' height='24' style='fill:rgb(0,191,255);'/><rect x='17' y='0' width='1' height='24' style='fill:rgb(63,0,255);'/><rect x='21' y='0' width='1' height='24' style='fill:rgb(255,0,191);'/><rect x='3' y='0' width='1' height='24' style='fill:rgb(255,191,0);'/><rect x='7' y='0' width='1' height='24' style='fill:rgb(63,255,0);'/><rect x='11' y='0' width='1' height='24' style='fill:rgb(0,255,191);'/><rect x='15' y='0' width='1' height='24' style='fill:rgb(0,63,255);'/><rect x='19' y='0' width='1' height='24' style='fill:rgb(191,0,255);'/><rect x='23' y='0' width='1' height='24' style='fill:rgb(255,0,63);'/></g></svg>");
+        opacity: 100%;
+      }
+    }
+  };
+}
+body.theme-setting-enableIconsInSettings.theme-dark {
+.setting-item.setting-item-heading.style-settings-heading
+    .style-settings-collapse-indicator:after {
+    filter: hue-rotate(calc(var(--base-h) * 1deg));
+  };
+.setting-item.setting-item-heading.style-settings-heading[data-id="kakano-style"]
+    + .style-settings-container {
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-background"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;'><g transform='matrix(1,0,0,0.981029,0.249756,0.225573)'><path d='M23.21,0.789L23.21,23.215L0.765,23.215L0.765,0.789L23.21,0.789ZM22.19,5.886L11.988,5.886L11.988,2.828L3.826,2.828L3.826,5.886L1.786,5.886L1.786,21.176L22.19,21.176L22.19,5.886Z' style='fill:hsl(0deg,86%,81%);stroke:hsl(0deg,86%,81%);stroke-width:2.04px;'/></g></svg>");
+    }
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-notes"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;'><g transform='matrix(1,0,0,1,-1,-2)'><g transform='matrix(0.913043,0,0,0.913043,1.04348,-5.63549)'><path d='M22.952,12.744L22.952,29.172L1.048,29.172L1.048,12.744L3.238,12.744L3.238,9.458L12,9.458L12,12.744L22.952,12.744Z' style='fill:none;stroke:hsl(0deg,86%,81%);stroke-width:2.19px;'/></g></g></svg>");
+    }
+
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-typographySettings"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='stroke:hsl(0deg,86%,81%);fill:hsl(0deg,86%,81%);fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'><path d='M8.39,13.544L6.734,5.84L6.686,5.84L5.03,13.544L8.39,13.544ZM8.846,2.864L13.382,20L9.782,20L8.99,16.376L4.43,16.376L3.638,20L0.038,20L4.574,2.864L8.846,2.864Z' style='fill-rule:nonzero;'/><path d='M19.886,13.544L19.886,16.088C19.886,16.44 19.822,16.744 19.694,17C19.566,17.256 19.402,17.464 19.202,17.624C19.002,17.784 18.782,17.9 18.542,17.972C18.302,18.044 18.07,18.08 17.846,18.08C17.398,18.08 17.078,17.904 16.886,17.552C16.694,17.2 16.598,16.776 16.598,16.28C16.598,15.704 16.742,15.248 17.03,14.912C17.318,14.576 17.798,14.336 18.47,14.192C18.678,14.144 18.91,14.068 19.166,13.964C19.422,13.86 19.662,13.72 19.886,13.544ZM13.838,11.048L16.814,11.048L16.814,10.688C16.814,10.176 16.942,9.768 17.198,9.464C17.454,9.16 17.838,9.008 18.35,9.008C18.91,9.008 19.306,9.148 19.538,9.428C19.77,9.708 19.886,10.096 19.886,10.592C19.886,11.024 19.79,11.352 19.598,11.576C19.406,11.8 19.062,11.976 18.566,12.104L16.694,12.608C16.118,12.768 15.626,12.952 15.218,13.16C14.81,13.368 14.474,13.628 14.21,13.94C13.946,14.252 13.75,14.628 13.622,15.068C13.494,15.508 13.43,16.032 13.43,16.64C13.43,17.072 13.486,17.508 13.598,17.948C13.71,18.388 13.886,18.784 14.126,19.136C14.366,19.488 14.686,19.764 15.086,19.964C15.486,20.164 15.974,20.264 16.55,20.264C17.35,20.264 18.002,20.164 18.506,19.964C19.01,19.764 19.454,19.328 19.838,18.656L19.886,18.656C19.934,18.88 19.986,19.108 20.042,19.34C20.098,19.572 20.182,19.792 20.294,20L23.462,20C23.302,19.616 23.194,19.256 23.138,18.92C23.082,18.584 23.054,18.112 23.054,17.504L23.054,10.712C23.054,10.136 22.994,9.604 22.874,9.116C22.754,8.628 22.526,8.208 22.19,7.856C21.854,7.504 21.382,7.232 20.774,7.04C20.166,6.848 19.366,6.752 18.374,6.752C17.75,6.752 17.162,6.82 16.61,6.956C16.058,7.092 15.578,7.316 15.17,7.628C14.762,7.94 14.438,8.348 14.198,8.852C13.958,9.356 13.838,9.984 13.838,10.736L13.838,11.048Z' style='fill-rule:nonzero;'/></svg>");
+    }
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-editing"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;'><path d='M12,20L21,20' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,86%,81%);stroke-width:2px;'/><path d='M16.5,3.5C16.898,3.102 17.438,2.879 18,2.879C19.164,2.879 20.121,3.836 20.121,5C20.121,5.562 19.898,6.102 19.5,6.5L7,19L3,20L4,16L16.5,3.5Z' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,86%,81%);stroke-width:2px;'/></svg>");
+    }
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-mobile"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;'><path d='M13,10L13,20C13,21.104 12.104,22 11,22L5,22C3.896,22 3,21.104 3,20L3,10C3,8.896 3.896,8 5,8L11,8C12.104,8 13,8.896 13,10Z' style='fill:none;stroke:hsl(0deg,86%,81%);stroke-width:2px;'/><path d='M5,4C5,2.903 5.903,2 7,2L19,2C20.097,2 21,2.903 21,4L21,20C21,21.097 20.097,22 19,22L16.6,22' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,86%,81%);stroke-width:2px;'/><path d='M8,18L8.01,18' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,86%,81%);stroke-width:2px;'/></svg>");
+    }
+  };
+}
+body.theme-setting-enableIconsInSettings.theme-light {
+.setting-item.setting-item-heading.style-settings-heading
+    .style-settings-collapse-indicator:after {
+    filter: hue-rotate(calc(var(--base-h) * 1deg));
+  };
+/* .setting-item.setting-item-heading.style-settings-heading[data-id="kakano-style"] .style-settings-collapse-indicator:after {
+    content: "TODO: logo goes here";
+  } */
+.setting-item.setting-item-heading.style-settings-heading[data-id="kakano-style"]
+    + .style-settings-container {
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-ui-background"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;'><g transform='matrix(1,0,0,0.981029,0.249756,0.225573)'><path d='M23.21,0.789L23.21,23.215L0.765,23.215L0.765,0.789L23.21,0.789ZM22.19,5.886L11.988,5.886L11.988,2.828L3.826,2.828L3.826,5.886L1.786,5.886L1.786,21.176L22.19,21.176L22.19,5.886Z' style='fill:hsl(0deg,75%,5%);stroke:hsl(0deg,75%,5%);stroke-width:2.04px;'/></g></svg>");
+    }
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-notes-appearance"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;'><g transform='matrix(1,0,0,1,-1,-2)'><g transform='matrix(0.913043,0,0,0.913043,1.04348,-5.63549)'><path d='M22.952,12.744L22.952,29.172L1.048,29.172L1.048,12.744L3.238,12.744L3.238,9.458L12,9.458L12,12.744L22.952,12.744Z' style='fill:none;stroke:hsl(0deg,75%,5%);stroke-width:2.19px;'/></g></g></svg>");
+    }
+
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-typographySettings"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='stroke:hsl(0deg,75%,5%);fill:hsl(0deg,75%,5%);fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'><path d='M8.39,13.544L6.734,5.84L6.686,5.84L5.03,13.544L8.39,13.544ZM8.846,2.864L13.382,20L9.782,20L8.99,16.376L4.43,16.376L3.638,20L0.038,20L4.574,2.864L8.846,2.864Z' style='fill-rule:nonzero;'/><path d='M19.886,13.544L19.886,16.088C19.886,16.44 19.822,16.744 19.694,17C19.566,17.256 19.402,17.464 19.202,17.624C19.002,17.784 18.782,17.9 18.542,17.972C18.302,18.044 18.07,18.08 17.846,18.08C17.398,18.08 17.078,17.904 16.886,17.552C16.694,17.2 16.598,16.776 16.598,16.28C16.598,15.704 16.742,15.248 17.03,14.912C17.318,14.576 17.798,14.336 18.47,14.192C18.678,14.144 18.91,14.068 19.166,13.964C19.422,13.86 19.662,13.72 19.886,13.544ZM13.838,11.048L16.814,11.048L16.814,10.688C16.814,10.176 16.942,9.768 17.198,9.464C17.454,9.16 17.838,9.008 18.35,9.008C18.91,9.008 19.306,9.148 19.538,9.428C19.77,9.708 19.886,10.096 19.886,10.592C19.886,11.024 19.79,11.352 19.598,11.576C19.406,11.8 19.062,11.976 18.566,12.104L16.694,12.608C16.118,12.768 15.626,12.952 15.218,13.16C14.81,13.368 14.474,13.628 14.21,13.94C13.946,14.252 13.75,14.628 13.622,15.068C13.494,15.508 13.43,16.032 13.43,16.64C13.43,17.072 13.486,17.508 13.598,17.948C13.71,18.388 13.886,18.784 14.126,19.136C14.366,19.488 14.686,19.764 15.086,19.964C15.486,20.164 15.974,20.264 16.55,20.264C17.35,20.264 18.002,20.164 18.506,19.964C19.01,19.764 19.454,19.328 19.838,18.656L19.886,18.656C19.934,18.88 19.986,19.108 20.042,19.34C20.098,19.572 20.182,19.792 20.294,20L23.462,20C23.302,19.616 23.194,19.256 23.138,18.92C23.082,18.584 23.054,18.112 23.054,17.504L23.054,10.712C23.054,10.136 22.994,9.604 22.874,9.116C22.754,8.628 22.526,8.208 22.19,7.856C21.854,7.504 21.382,7.232 20.774,7.04C20.166,6.848 19.366,6.752 18.374,6.752C17.75,6.752 17.162,6.82 16.61,6.956C16.058,7.092 15.578,7.316 15.17,7.628C14.762,7.94 14.438,8.348 14.198,8.852C13.958,9.356 13.838,9.984 13.838,10.736L13.838,11.048Z' style='fill-rule:nonzero;'/></svg>");
+    }
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-editing"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;'><path d='M12,20L21,20' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,75%,5%);stroke-width:2px;'/><path d='M16.5,3.5C16.898,3.102 17.438,2.879 18,2.879C19.164,2.879 20.121,3.836 20.121,5C20.121,5.562 19.898,6.102 19.5,6.5L7,19L3,20L4,16L16.5,3.5Z' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,75%,5%);stroke-width:2px;'/></svg>");
+    }
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-mobile"]
+      .style-settings-collapse-indicator:after {
+      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;'><path d='M13,10L13,20C13,21.104 12.104,22 11,22L5,22C3.896,22 3,21.104 3,20L3,10C3,8.896 3.896,8 5,8L11,8C12.104,8 13,8.896 13,10Z' style='fill:none;stroke:hsl(0deg,75%,5%);stroke-width:2px;'/><path d='M5,4C5,2.903 5.903,2 7,2L19,2C20.097,2 21,2.903 21,4L21,20C21,21.097 20.097,22 19,22L16.6,22' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,75%,5%);stroke-width:2px;'/><path d='M8,18L8.01,18' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,75%,5%);stroke-width:2px;'/></svg>");
+    }
+  };
 }`,
   },
 };

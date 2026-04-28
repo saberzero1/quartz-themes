@@ -26,7 +26,6 @@ settings:
         value: theme-rose-pine
       - label: Everforest
         value: theme-everforest
-
       - label: Gruvbox
         value: theme-gruvbox-s
   - id: color-accent-class-select
@@ -106,7 +105,7 @@ settings:
     title: Base Saturation
     type: variable-number-slider
     min: 0
-    format: "%"
+    format: '%'
     max: 100
     step: 0.25
     default: 100
@@ -114,7 +113,7 @@ settings:
     title: Base Brightness
     type: variable-number-slider
     min: 0
-    format: "%"
+    format: '%'
     max: 100
     step: 0.25
     default: 99
@@ -129,7 +128,7 @@ settings:
     title: Secondary Saturation
     type: variable-number-slider
     min: 0
-    format: "%"
+    format: '%'
     max: 100
     step: 0.25
     default: 77
@@ -137,7 +136,7 @@ settings:
     title: Secondary Brightness
     type: variable-number-slider
     min: 0
-    format: "%"
+    format: '%'
     max: 100
     step: 0.25
     default: 97
@@ -152,7 +151,7 @@ settings:
     title: Text Saturation
     type: variable-number-slider
     min: 0
-    format: "%"
+    format: '%'
     max: 100
     step: 0.25
     default: 25
@@ -160,7 +159,7 @@ settings:
     title: Text Contrast
     type: variable-number-slider
     min: 0
-    format: "%"
+    format: '%'
     max: 100
     step: 0.25
     default: 43
@@ -168,10 +167,11 @@ settings:
     title: Border Contrast
     type: variable-number-slider
     min: 0
-    format: "%"
+    format: '%'
     max: 100
     step: 0.25
     default: 82
+  - null
   - id: custom-color-scheme-heading-dark
     title: Custom Dark Theme
     type: heading
@@ -192,7 +192,7 @@ settings:
     title: Base Saturation
     type: variable-number-slider
     min: 0
-    format: "%"
+    format: '%'
     max: 100
     step: 0.25
     default: 63
@@ -200,7 +200,7 @@ settings:
     title: Base Brightness
     type: variable-number-slider
     min: 0
-    format: "%"
+    format: '%'
     max: 100
     step: 0.25
     default: 9
@@ -215,7 +215,7 @@ settings:
     title: Secondary Saturation
     type: variable-number-slider
     min: 0
-    format: "%"
+    format: '%'
     max: 100
     step: 0.25
     default: 50
@@ -223,7 +223,7 @@ settings:
     title: Secondary Brightness
     type: variable-number-slider
     min: 0
-    format: "%"
+    format: '%'
     max: 100
     step: 0.25
     default: 13
@@ -238,7 +238,7 @@ settings:
     title: Text Saturation
     type: variable-number-slider
     min: 0
-    format: "%"
+    format: '%'
     max: 100
     step: 0.25
     default: 19
@@ -246,7 +246,7 @@ settings:
     title: Text Contrast
     type: variable-number-slider
     min: 0
-    format: "%"
+    format: '%'
     max: 100
     step: 0.25
     default: 73
@@ -254,7 +254,7 @@ settings:
     title: Border Contrast
     type: variable-number-slider
     min: 0
-    format: "%"
+    format: '%'
     max: 100
     step: 0.25
     default: 31
@@ -346,7 +346,6 @@ settings:
     type: heading
     level: 2
     collapsed: true
-
   - id: paragraphs-heading
     title: Paragraphs
     type: heading
@@ -355,11 +354,11 @@ settings:
   - id: line-height-normal
     title: Line Height
     type: variable-text
-    default: "1.75"
+    default: '1.75'
   - id: p-margin
     title: Paragraph Margin
     description: The spacing between paragraphs.
-    default: "20px"
+    default: 20px
     type: variable-text
   - id: even-p
     title: Even Paragraphs
@@ -378,7 +377,7 @@ settings:
     title: Paragraph Indent
     description: Control the degree of indentation on a paragraph (requires Indent Paragraphs to be toggled on.)
     type: variable-text
-    default: "15px"
+    default: 15px
   - id: fonts-heading
     title: Fonts
     type: heading
@@ -395,7 +394,6 @@ settings:
         value: font-select
       - label: Use a System Font
         value: custom-font
-
   - id: font-bundle-select
     title: Font Bundle
     type: class-select
@@ -425,222 +423,222 @@ settings:
   - id: font-default-select
     title: Default Font
     type: variable-select
-    default: "iA Writer Quattro S"
+    default: iA Writer Quattro S
     options:
       - Inter
-      - "Alegreya"
-      - "Almarai"
-      - "Anonymous Pro"
-      - "Anuphan"
-      - "Assistant"
-      - "Avenir Next"
-      - "Barlow"
-      - "Bitter"
-      - "Cabin"
-      - "Chivo Mono"
-      - "Comfortaa"
-      - "Courgette"
-      - "Courier Prime"
-      - "Cousine"
-      - "DM Sans"
-      - "Domine"
-      - "Edu TAS Beginner"
-      - "Figtree"
-      - "Fira Code"
-      - "Fira Sans Extra Condensed"
-      - "Fira Sans"
-      - "Heebo"
-      - "IBM Plex Serif"
-      - "Inconsolata"
-      - "Inter"
-      - "Jost"
-      - "Kalam"
-      - "Karla"
-      - "Lato"
-      - "Lexend"
-      - "Libre Baskerville"
-      - "Lobster Two"
-      - "Lora"
-      - "Martel"
-      - "Merriweather Sans"
-      - "Montserrat"
-      - "Mulish"
-      - "Nanum Gothic Coding"
-      - "Nanum Gothic"
-      - "Nanum Myeongjo"
-      - "Noto Sans Mono"
-      - "Noto Sans"
-      - "Outfit"
-      - "Overpass"
-      - "PT Sans"
-      - "PT Serif"
-      - "Poppins"
-      - "Questrial"
-      - "Quicksand"
-      - "Red Hat Mono"
-      - "Roboto Condensed"
-      - "Roboto Mono"
-      - "Roboto Slab"
-      - "Roboto"
-      - "Rubik"
-      - "Sawarabi Mincho"
-      - "Schibsted Grotesk"
-      - "Sono"
-      - "Source Sans Pro"
-      - "Source Serif Pro"
-      - "Special Elite"
-      - "Spectral"
-      - "Spinnaker"
-      - "Spline Sans Mono"
-      - "Spline Sans"
-      - "Spline Sans"
-      - "Stoke"
-      - "Tajawal"
-      - "Titillium Web"
-      - "Trykker"
-      - "Ubuntu Condensed"
-      - "Ubuntu"
-      - "Varela Round"
-      - "Vollkorn"
-      - "Work Sans"
-      - "Ysabeau"
-      - "Zilla Slab"
-      - "iA Writer Duo S"
-      - "iA Writer Mono S"
-      - "iA Writer Quattro S"
-      - "DotGothic16"
-      - "Exo"
-      - "Klee One"
-      - "Rubik Dirt"
+      - Alegreya
+      - Almarai
+      - Anonymous Pro
+      - Anuphan
+      - Assistant
+      - Avenir Next
+      - Barlow
+      - Bitter
+      - Cabin
+      - Chivo Mono
+      - Comfortaa
+      - Courgette
+      - Courier Prime
+      - Cousine
+      - DM Sans
+      - Domine
+      - Edu TAS Beginner
+      - Figtree
+      - Fira Code
+      - Fira Sans Extra Condensed
+      - Fira Sans
+      - Heebo
+      - IBM Plex Serif
+      - Inconsolata
+      - Inter
+      - Jost
+      - Kalam
+      - Karla
+      - Lato
+      - Lexend
+      - Libre Baskerville
+      - Lobster Two
+      - Lora
+      - Martel
+      - Merriweather Sans
+      - Montserrat
+      - Mulish
+      - Nanum Gothic Coding
+      - Nanum Gothic
+      - Nanum Myeongjo
+      - Noto Sans Mono
+      - Noto Sans
+      - Outfit
+      - Overpass
+      - PT Sans
+      - PT Serif
+      - Poppins
+      - Questrial
+      - Quicksand
+      - Red Hat Mono
+      - Roboto Condensed
+      - Roboto Mono
+      - Roboto Slab
+      - Roboto
+      - Rubik
+      - Sawarabi Mincho
+      - Schibsted Grotesk
+      - Sono
+      - Source Sans Pro
+      - Source Serif Pro
+      - Special Elite
+      - Spectral
+      - Spinnaker
+      - Spline Sans Mono
+      - Spline Sans
+      - Spline Sans
+      - Stoke
+      - Tajawal
+      - Titillium Web
+      - Trykker
+      - Ubuntu Condensed
+      - Ubuntu
+      - Varela Round
+      - Vollkorn
+      - Work Sans
+      - Ysabeau
+      - Zilla Slab
+      - iA Writer Duo S
+      - iA Writer Mono S
+      - iA Writer Quattro S
+      - DotGothic16
+      - Exo
+      - Klee One
+      - Rubik Dirt
   - id: font-secondary-select
     title: Secondary Font
     type: variable-select
-    default: "iA Writer Duo S"
+    default: iA Writer Duo S
     options:
       - var(--font-text)
-      - "Alegreya"
-      - "Almarai"
-      - "Anonymous Pro"
-      - "Anuphan"
-      - "Assistant"
-      - "Avenir Next"
-      - "Barlow"
-      - "Bitter"
-      - "Cabin"
-      - "Chivo Mono"
-      - "Comfortaa"
-      - "Courgette"
-      - "Courier Prime"
-      - "Cousine"
-      - "DM Sans"
-      - "Domine"
-      - "Edu TAS Beginner"
-      - "Figtree"
-      - "Fira Code"
-      - "Fira Sans Extra Condensed"
-      - "Fira Sans"
-      - "Heebo"
-      - "IBM Plex Serif"
-      - "Inconsolata"
-      - "Inter"
-      - "Jost"
-      - "Kalam"
-      - "Karla"
-      - "Lato"
-      - "Lexend"
-      - "Libre Baskerville"
-      - "Lobster Two"
-      - "Lora"
-      - "Martel"
-      - "Merriweather Sans"
-      - "Montserrat"
-      - "Mulish"
-      - "Nanum Gothic Coding"
-      - "Nanum Gothic"
-      - "Nanum Myeongjo"
-      - "Noto Sans Mono"
-      - "Noto Sans"
-      - "Outfit"
-      - "Overpass"
-      - "PT Sans"
-      - "PT Serif"
-      - "Poppins"
-      - "Questrial"
-      - "Quicksand"
-      - "Red Hat Mono"
-      - "Roboto Condensed"
-      - "Roboto Mono"
-      - "Roboto Slab"
-      - "Roboto"
-      - "Rubik"
-      - "Schibsted Grotesk"
-      - "Sawarabi Mincho"
-      - "Sono"
-      - "Source Sans Pro"
-      - "Source Serif Pro"
-      - "Special Elite"
-      - "Spectral"
-      - "Spinnaker"
-      - "Spline Sans Mono"
-      - "Spline Sans"
-      - "Spline Sans"
-      - "Stoke"
-      - "Tajawal"
-      - "Titillium Web"
-      - "Trykker"
-      - "Ubuntu Condensed"
-      - "Ubuntu"
-      - "Varela Round"
-      - "Vollkorn"
-      - "Work Sans"
-      - "Ysabeau"
-      - "Zilla Slab"
-      - "iA Writer Duo S"
-      - "iA Writer Mono S"
-      - "iA Writer Quattro S"
-      - "DotGothic16"
-      - "Exo"
-      - "Klee One"
-      - "Rubik Dirt"
+      - Alegreya
+      - Almarai
+      - Anonymous Pro
+      - Anuphan
+      - Assistant
+      - Avenir Next
+      - Barlow
+      - Bitter
+      - Cabin
+      - Chivo Mono
+      - Comfortaa
+      - Courgette
+      - Courier Prime
+      - Cousine
+      - DM Sans
+      - Domine
+      - Edu TAS Beginner
+      - Figtree
+      - Fira Code
+      - Fira Sans Extra Condensed
+      - Fira Sans
+      - Heebo
+      - IBM Plex Serif
+      - Inconsolata
+      - Inter
+      - Jost
+      - Kalam
+      - Karla
+      - Lato
+      - Lexend
+      - Libre Baskerville
+      - Lobster Two
+      - Lora
+      - Martel
+      - Merriweather Sans
+      - Montserrat
+      - Mulish
+      - Nanum Gothic Coding
+      - Nanum Gothic
+      - Nanum Myeongjo
+      - Noto Sans Mono
+      - Noto Sans
+      - Outfit
+      - Overpass
+      - PT Sans
+      - PT Serif
+      - Poppins
+      - Questrial
+      - Quicksand
+      - Red Hat Mono
+      - Roboto Condensed
+      - Roboto Mono
+      - Roboto Slab
+      - Roboto
+      - Rubik
+      - Schibsted Grotesk
+      - Sawarabi Mincho
+      - Sono
+      - Source Sans Pro
+      - Source Serif Pro
+      - Special Elite
+      - Spectral
+      - Spinnaker
+      - Spline Sans Mono
+      - Spline Sans
+      - Spline Sans
+      - Stoke
+      - Tajawal
+      - Titillium Web
+      - Trykker
+      - Ubuntu Condensed
+      - Ubuntu
+      - Varela Round
+      - Vollkorn
+      - Work Sans
+      - Ysabeau
+      - Zilla Slab
+      - iA Writer Duo S
+      - iA Writer Mono S
+      - iA Writer Quattro S
+      - DotGothic16
+      - Exo
+      - Klee One
+      - Rubik Dirt
   - id: font-monospace-select
     title: Monospace Font
     type: variable-select
-    default: "iA Writer Mono S"
+    default: iA Writer Mono S
     options:
-      - "Anonymous Pro"
-      - "Barlow"
-      - "Chivo Mono"
-      - "Courier Prime"
-      - "Cousine"
-      - "Fira Code"
-      - "Inconsolata"
-      - "Nanum Gothic Coding"
-      - "Noto Sans Mono"
-      - "Red Hat Mono"
-      - "Roboto Mono"
-      - "Sono"
-      - "Special Elite"
-      - "Spline Sans Mono"
-      - "Titillium Web"
-      - "Ubuntu Condensed"
-      - "Ubuntu"
-      - "iA Writer Duo S"
-      - "iA Writer Mono S"
-      - "iA Writer Quattro S"
-      - "DotGothic16"
-      - "Exo"
+      - Anonymous Pro
+      - Barlow
+      - Chivo Mono
+      - Courier Prime
+      - Cousine
+      - Fira Code
+      - Inconsolata
+      - Nanum Gothic Coding
+      - Noto Sans Mono
+      - Red Hat Mono
+      - Roboto Mono
+      - Sono
+      - Special Elite
+      - Spline Sans Mono
+      - Titillium Web
+      - Ubuntu Condensed
+      - Ubuntu
+      - iA Writer Duo S
+      - iA Writer Mono S
+      - iA Writer Quattro S
+      - DotGothic16
+      - Exo
   - id: font-default-custom
     title: Custom Font Default
     type: variable-text
-    default: "iA Writer Quattro S"
+    default: iA Writer Quattro S
   - id: font-secondary-custom
     title: Custom Font Secondary
     type: variable-text
-    default: "iA Writer Duo S"
+    default: iA Writer Duo S
   - id: font-monospace-custom
     title: Custom Font Monospace
     type: variable-text
-    default: "iA Writer Mono S"
+    default: iA Writer Mono S
   - id: font-weight-default
     title: Font Weight
     type: variable-number-slider
@@ -656,7 +654,6 @@ settings:
     min: 0
     max: 2
     format: px
-
   - id: bold-italic-colors-heading
     title: Bold & Italic Colors
     type: heading
@@ -754,7 +751,7 @@ settings:
   - id: h-weight-s
     title: Heading Weight
     description: The weight used for all headings unless individually specified.
-    default: "600"
+    default: '600'
     type: variable-text
   - id: h-align-s
     title: Heading Alignment
@@ -1232,7 +1229,6 @@ settings:
       - left
       - center
       - right
-
   - id: inline-title-style
     title: Style
     type: variable-select
@@ -1250,7 +1246,7 @@ settings:
       - All-small-caps
   - id: inline-title-weight
     title: Font Weight
-    default: "700"
+    default: '700'
     type: variable-text
   - id: properties-heading
     title: Properties
@@ -1291,11 +1287,11 @@ settings:
   - id: tag-opacity
     title: Tag Opacity
     type: variable-text
-    default: "0.25"
+    default: '0.25'
   - id: tag-opacity-hover
     title: Tag Opacity (hover)
     type: variable-text
-    default: "0.2"
+    default: '0.2'
   - id: tag-radius
     title: Tag Radius
     type: variable-text
@@ -1318,7 +1314,7 @@ settings:
       - label: Center
         value: auto
       - label: Left
-        value: "0"
+        value: '0'
   - id: embeds-heading
     title: Embeds
     type: heading
@@ -1368,7 +1364,7 @@ settings:
   - id: speech-opacity
     title: Speech Bubble Opacity
     type: variable-text
-    default: "0.5"
+    default: '0.5'
   - id: speech-color
     title: Speech Bubble Color
     type: variable-select
@@ -1484,7 +1480,7 @@ settings:
     title: Inactive Line Opacity
     description: control the opacity of inactive lines in edit mode (enable the setting above to see effect).
     type: variable-text
-    default: "0.4"
+    default: '0.4'
   - id: inactive-line-blur
     title: Inactive Line Blur
     type: variable-number-slider
@@ -1516,7 +1512,7 @@ settings:
   - id: inactive-pane-opacity
     title: Inactive Pane Opacity
     description: control the opacity of inactive panes
-    default: "0.55"
+    default: '0.55'
     type: variable-text
   - id: inactive-pane-blur
     title: Inactive Pane Blur
@@ -1630,7 +1626,7 @@ settings:
     title: Font Size in Serenity Mode
     description: To keep the font size dynamic and unchanged, type "var(--font-text-size)"
     type: variable-text
-    default: "18px"
+    default: 18px
   - id: pure-serenity-light
     title: Pure Serenity - Light Mode
     description: Change the light mode colors to be a dim shade of grey in edit mode, ignoring the theme.

@@ -7,10 +7,32 @@ String.prototype.endsWithAnyOf = endsWithAnyOf
 
 
 
+const SETTINGS_BLOCK_RE = /\/\*\s*@settings[\s\S]*?\*\//g
+
+function extractSettingsBlocks(cssString) {
+  const matches = cssString.match(SETTINGS_BLOCK_RE)
+  if (!matches) return []
+  return matches.map((block) => {
+    // Strip the /* @settings prefix and trailing */
+    let inner = block.replace(/^\/\*\s*@settings\s*/, "").replace(/\s*\*\/$/, "")
+    return inner.trim()
+  })
+}
+
+function parseSettingsYaml(yamlString) {
+  try {
+    // Tabs are invalid YAML indentation but common in Obsidian theme CSS
+    const normalized = yamlString.replace(/\t/g, "  ")
+    return yaml.load(normalized)
+  } catch {
+    return null
+  }
+}
+
 /**
  * Extracts all style settings from a CSS string.
  * @param {string} cssString
- * @returns {object[]} Array of settings objects
+ * @returns {object[]} Array of parsed settings objects
  */
 export function extractStyleSettings(cssString) {
   const blocks = extractSettingsBlocks(cssString)
@@ -30,10 +52,16 @@ export function extractStyleSettingsFromFile(filePath) {
   try {
     const yamlString = fs.readFileSync(filePath, 'utf8')
     const settings = yaml.load(yamlString)
-    return settings && Array.isArray(settings.settings) ? settings.settings : []
+    return settings
+      ? {
+          id: settings.id || "",
+          name: settings.name || "",
+          settings: Array.isArray(settings.settings) ? settings.settings : [],
+        }
+      : { id: "", name: "", settings: [] }
   } catch (e) {
     console.error(`Failed to read or parse file ${filePath}:`, e)
-    return []
+    return { id: "", name: "", settings: [] }
   }
 }
 

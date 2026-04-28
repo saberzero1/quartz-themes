@@ -92,6 +92,9 @@
       },
       "variation": {
         "type": "string"
+      },
+      "styleSettings": {
+        "type": "object"
       }
     }
   },

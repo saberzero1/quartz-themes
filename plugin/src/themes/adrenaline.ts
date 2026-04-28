@@ -6,109 +6,110 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
+    styleSettingsId: "Adrenaline",
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --background-1: #171717 !important;
-  --background-1-h: hsl(258, 88%, 66%) !important;
-  --background-1-item: #b3b3b3 !important;
-  --background-2: hsl(258, 0.98%, 15%) !important;
-  --background-2_h: 258 !important;
-  --background-2_l: 15% !important;
-  --background-2_s: 0% !important;
-  --background-3: hsl(258, -7%, 10%, 100%) !important;
-  --background-4: rgb(12, 12, 12) !important;
-  --background-5: hsla(258, 88%, 66%, 30%) !important;
-  --background-6: hsla(258, 8.8%, 66%, 0.2) !important;
-  --background-primary: hsl(258, 0.98%, 10%) !important;
-  --background-secondary: hsl(258, 0.98%, 15%) !important;
-  --bases-cards-background: hsl(258, 0.98%, 10%) !important;
-  --bases-table-cell-background-active: hsl(258, 0.98%, 10%) !important;
-  --bases-table-header-background: hsl(258, 0.98%, 10%) !important;
-  --bases-table-summary-background: hsl(258, 0.98%, 10%) !important;
-  --blur-background: color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent) linear-gradient(hsl(258, 88%, 66%), color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent)) !important;
-  --bold-modifier: 300 !important;
-  --bold-weight: 700 !important;
+  --background-1: #171717;
+  --background-1-h: hsl(258, 88%, 66%);
+  --background-1-item: #b3b3b3;
+  --background-2: hsl(258, 0.98%, 15%);
+  --background-2_h: 258;
+  --background-2_l: 15%;
+  --background-2_s: 0%;
+  --background-3: hsl(258, -7%, 10%, 100%);
+  --background-4: rgb(12, 12, 12);
+  --background-5: hsla(258, 88%, 66%, 30%);
+  --background-6: hsla(258, 8.8%, 66%, 0.2);
+  --background-primary: hsl(258, 0.98%, 10%);
+  --background-secondary: hsl(258, 0.98%, 15%);
+  --bases-cards-background: hsl(258, 0.98%, 10%);
+  --bases-table-cell-background-active: hsl(258, 0.98%, 10%);
+  --bases-table-header-background: hsl(258, 0.98%, 10%);
+  --bases-table-summary-background: hsl(258, 0.98%, 10%);
+  --blur-background: color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent) linear-gradient(hsl(258, 88%, 66%), color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent));
+  --bold-modifier: 300;
+  --bold-weight: 700;
   --callout-title-weight: 700;
-  --canvas-background: hsl(258, 0.98%, 15%) !important;
-  --canvas-card-label-color: hsl(258, 88%, 66%) !important;
-  --checkbox-border-color: hsl(258, 88%, 66%) !important;
-  --checkbox-marker-color: hsl(258, 0.98%, 10%) !important;
-  --code-background: hsl(258, -7%, 10%, 100%) !important;
-  --code-comment: hsl(258, 88%, 66%) !important;
-  --collapse-icon-color: hsl(258, 88%, 66%) !important;
-  --color-base-00: hsl(258, -7%, 10%, 100%) !important;
-  --color-base-50: hsl(258, 88%, 66%) !important;
-  --colored-accent-1: hsl(258, 88%, 66%) !important;
-  --colored-accent-2: hsla(258, 88%, 66%, 0.5) !important;
-  --colored-accent-3: hsla(258, 35.2%, 39.6%, 1) !important;
-  --colored-accent-i1: hsl(258, 88%, -1700%) !important;
-  --colored-accent-i2: hsl(258, 88%, -4600%) !important;
-  --custom-accent-bold: hsl(258, 88%, 66%) !important;
-  --divider-color: rgba(105, 105, 105, 0.441) !important;
-  --dropdown-background: hsl(258, 88%, 66%) !important;
-  --file-header-background: hsl(258, 0.98%, 10%) !important;
-  --file-header-background-focused: hsl(258, 0.98%, 10%) !important;
-  --flair-background: hsl(258, 88%, 66%) !important;
-  --footnote-id-color-no-occurrences: hsl(258, 88%, 66%) !important;
-  --frame-right-space: 100px !important;
-  --graph-node-unresolved: hsl(258, 88%, 66%) !important;
-  --gray: hsl(258, 88%, 66%) !important;
-  --heading-formatting: hsl(258, 88%, 66%) !important;
-  --highlight-1: rgba(255, 255, 255, 0.075) !important;
-  --highlight-2: rgba(255, 255, 255, 0.075) !important;
-  --input-date-separator: hsl(258, 88%, 66%) !important;
-  --input-placeholder-color: hsl(258, 88%, 66%) !important;
-  --interactive-normal: hsl(258, 88%, 66%) !important;
-  --light: hsl(258, 0.98%, 10%) !important;
-  --lightgray: hsl(258, 0.98%, 15%) !important;
-  --list-marker-color: hsl(258, 88%, 66%) !important;
-  --menu-background: hsl(258, 0.98%, 15%) !important;
-  --modal-background: hsl(258, 0.98%, 10%) !important;
-  --nav-collapse-icon-color: hsl(258, 88%, 66%) !important;
-  --nav-collapse-icon-color-collapsed: hsl(258, 88%, 66%) !important;
-  --nav-heading-color-collapsed: hsl(258, 88%, 66%) !important;
-  --nav-tag-color: hsl(258, 88%, 66%) !important;
-  --pdf-background: hsl(258, 0.98%, 10%) !important;
-  --pdf-page-background: hsl(258, 0.98%, 10%) !important;
-  --pdf-sidebar-background: hsl(258, 0.98%, 10%) !important;
-  --pill-color-remove: hsl(258, 88%, 66%) !important;
-  --popover-height: 1250px !important;
-  --popover-width: 1050px !important;
-  --prompt-background: hsl(258, 0.98%, 10%) !important;
-  --raised-background: color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent) linear-gradient(hsl(258, 88%, 66%), color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent)) !important;
-  --ribbon-background: hsl(258, 0.98%, 15%) !important;
-  --ribbon-background-collapsed: hsl(258, 0.98%, 10%) !important;
-  --search-result-background: hsl(258, 0.98%, 10%) !important;
-  --shadow-1: hsla(258, 88%, 5%, .5) !important;
-  --shadow-2: hsla(258, 0%, 6.6%, .4) !important;
-  --shadow-3: rgba(0, 0, 0, 0.47) !important;
-  --shadow-4: hsla(258, 44.1%, -5%, .5) !important;
-  --shiki-code-background: hsl(258, -7%, 10%, 100%) !important;
-  --shiki-code-comment: hsl(258, 88%, 66%) !important;
-  --shiki-gutter-text-color: hsl(258, 88%, 66%) !important;
-  --shiki-terminal-dots-color: hsl(258, 88%, 66%) !important;
-  --status-bar-background: hsl(258, 0.98%, 15%) !important;
-  --status-bar-border-color: rgba(105, 105, 105, 0.441) !important;
-  --suggestion-background: hsl(258, 0.98%, 10%) !important;
-  --tab-background-active: hsl(258, 0.98%, 10%) !important;
-  --tab-container-background: hsl(258, 0.98%, 15%) !important;
-  --tab-outline-color: rgba(105, 105, 105, 0.441) !important;
-  --tab-switcher-background: hsl(258, 0.98%, 15%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(258, 0.98%, 15%), transparent) !important;
-  --tab-text-color: hsl(258, 88%, 66%) !important;
-  --table-drag-handle-color: hsl(258, 88%, 66%) !important;
-  --table-header-weight: 700 !important;
-  --tc: rgb(209, 209, 209) !important;
-  --text-color-inverted: white !important;
-  --text-faint: hsl(258, 88%, 66%) !important;
-  --titlebar-background: hsl(258, 0.98%, 15%) !important;
-  --quartz-icon-color: currentColor !important;
+  --canvas-background: hsl(258, 0.98%, 15%);
+  --canvas-card-label-color: hsl(258, 88%, 66%);
+  --checkbox-border-color: hsl(258, 88%, 66%);
+  --checkbox-marker-color: hsl(258, 0.98%, 10%);
+  --code-background: hsl(258, -7%, 10%, 100%);
+  --code-comment: hsl(258, 88%, 66%);
+  --collapse-icon-color: hsl(258, 88%, 66%);
+  --color-base-00: hsl(258, -7%, 10%, 100%);
+  --color-base-50: hsl(258, 88%, 66%);
+  --colored-accent-1: hsl(258, 88%, 66%);
+  --colored-accent-2: hsla(258, 88%, 66%, 0.5);
+  --colored-accent-3: hsla(258, 35.2%, 39.6%, 1);
+  --colored-accent-i1: hsl(258, 88%, -1700%);
+  --colored-accent-i2: hsl(258, 88%, -4600%);
+  --custom-accent-bold: hsl(258, 88%, 66%);
+  --divider-color: rgba(105, 105, 105, 0.441);
+  --dropdown-background: hsl(258, 88%, 66%);
+  --file-header-background: hsl(258, 0.98%, 10%);
+  --file-header-background-focused: hsl(258, 0.98%, 10%);
+  --flair-background: hsl(258, 88%, 66%);
+  --footnote-id-color-no-occurrences: hsl(258, 88%, 66%);
+  --frame-right-space: 100px;
+  --graph-node-unresolved: hsl(258, 88%, 66%);
+  --gray: var(--text-faint, hsl(258, 88%, 66%));
+  --heading-formatting: hsl(258, 88%, 66%);
+  --highlight-1: rgba(255, 255, 255, 0.075);
+  --highlight-2: rgba(255, 255, 255, 0.075);
+  --input-date-separator: hsl(258, 88%, 66%);
+  --input-placeholder-color: hsl(258, 88%, 66%);
+  --interactive-normal: hsl(258, 88%, 66%);
+  --light: var(--background-primary, hsl(258, 0.98%, 10%));
+  --lightgray: var(--background-secondary, hsl(258, 0.98%, 15%));
+  --list-marker-color: hsl(258, 88%, 66%);
+  --menu-background: hsl(258, 0.98%, 15%);
+  --modal-background: hsl(258, 0.98%, 10%);
+  --nav-collapse-icon-color: hsl(258, 88%, 66%);
+  --nav-collapse-icon-color-collapsed: hsl(258, 88%, 66%);
+  --nav-heading-color-collapsed: hsl(258, 88%, 66%);
+  --nav-tag-color: hsl(258, 88%, 66%);
+  --pdf-background: hsl(258, 0.98%, 10%);
+  --pdf-page-background: hsl(258, 0.98%, 10%);
+  --pdf-sidebar-background: hsl(258, 0.98%, 10%);
+  --pill-color-remove: hsl(258, 88%, 66%);
+  --popover-height: 1250px;
+  --popover-width: 1050px;
+  --prompt-background: hsl(258, 0.98%, 10%);
+  --raised-background: color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent) linear-gradient(hsl(258, 88%, 66%), color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent));
+  --ribbon-background: hsl(258, 0.98%, 15%);
+  --ribbon-background-collapsed: hsl(258, 0.98%, 10%);
+  --search-result-background: hsl(258, 0.98%, 10%);
+  --shadow-1: hsla(258, 88%, 5%, .5);
+  --shadow-2: hsla(258, 0%, 6.6%, .4);
+  --shadow-3: rgba(0, 0, 0, 0.47);
+  --shadow-4: hsla(258, 44.1%, -5%, .5);
+  --shiki-code-background: hsl(258, -7%, 10%, 100%);
+  --shiki-code-comment: hsl(258, 88%, 66%);
+  --shiki-gutter-text-color: hsl(258, 88%, 66%);
+  --shiki-terminal-dots-color: hsl(258, 88%, 66%);
+  --status-bar-background: hsl(258, 0.98%, 15%);
+  --status-bar-border-color: rgba(105, 105, 105, 0.441);
+  --suggestion-background: hsl(258, 0.98%, 10%);
+  --tab-background-active: hsl(258, 0.98%, 10%);
+  --tab-container-background: hsl(258, 0.98%, 15%);
+  --tab-outline-color: rgba(105, 105, 105, 0.441);
+  --tab-switcher-background: hsl(258, 0.98%, 15%);
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(258, 0.98%, 15%), transparent);
+  --tab-text-color: hsl(258, 88%, 66%);
+  --table-drag-handle-color: hsl(258, 88%, 66%);
+  --table-header-weight: 700;
+  --tc: rgb(209, 209, 209);
+  --text-color-inverted: white;
+  --text-faint: hsl(258, 88%, 66%);
+  --titlebar-background: hsl(258, 0.98%, 15%);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -1722,119 +1723,119 @@ html[saved-theme="dark"] body sup {
   },
   light: {
     base: `:root:root {
-  --background-1: hsl(258, 68%, 90%, 100%) !important;
-  --background-1-h: #bdbdbd !important;
-  --background-1-item: #5c5c5c !important;
-  --background-1_2: rgb(234, 234, 234) !important;
-  --background-2: hsl(258, 9.8%, 96%) !important;
-  --background-2_h: 258 !important;
-  --background-2_l: 96% !important;
-  --background-2_s: 10% !important;
-  --background-3: hsl(258, 48%, 95%, 100%) !important;
-  --background-4: white !important;
-  --background-5: hsla(258, 88%, 66%, 90%) !important;
-  --background-6: hsla(258, 88%, 66%, .2) !important;
-  --background-modifier-form-field: hsl(258, 48%, 95%, 100%) !important;
-  --background-modifier-form-field-hover: hsl(258, 48%, 95%, 100%) !important;
-  --background-primary: hsl(258, 18.1%, 94%) !important;
-  --background-secondary: hsl(258, 9.8%, 96%) !important;
-  --bases-cards-background: hsl(258, 18.1%, 94%) !important;
-  --bases-table-cell-background-active: hsl(258, 18.1%, 94%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(258, 88%, 66%) !important;
-  --bases-table-header-background: hsl(258, 18.1%, 94%) !important;
-  --bases-table-summary-background: hsl(258, 18.1%, 94%) !important;
-  --blockquote-border-color: hsl(258, 88%, 66%) !important;
-  --blur-background: color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent) linear-gradient(hsl(258, 18.1%, 94%), color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent)) !important;
-  --bold-modifier: 300 !important;
-  --bold-weight: 700 !important;
+  --background-1: hsl(258, 68%, 90%, 100%);
+  --background-1-h: #bdbdbd;
+  --background-1-item: #5c5c5c;
+  --background-1_2: rgb(234, 234, 234);
+  --background-2: hsl(258, 9.8%, 96%);
+  --background-2_h: 258;
+  --background-2_l: 96%;
+  --background-2_s: 10%;
+  --background-3: hsl(258, 48%, 95%, 100%);
+  --background-4: white;
+  --background-5: hsla(258, 88%, 66%, 90%);
+  --background-6: hsla(258, 88%, 66%, .2);
+  --background-modifier-form-field: hsl(258, 48%, 95%, 100%);
+  --background-modifier-form-field-hover: hsl(258, 48%, 95%, 100%);
+  --background-primary: hsl(258, 18.1%, 94%);
+  --background-secondary: hsl(258, 9.8%, 96%);
+  --bases-cards-background: hsl(258, 18.1%, 94%);
+  --bases-table-cell-background-active: hsl(258, 18.1%, 94%);
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(258, 88%, 66%);
+  --bases-table-header-background: hsl(258, 18.1%, 94%);
+  --bases-table-summary-background: hsl(258, 18.1%, 94%);
+  --blockquote-border-color: hsl(258, 88%, 66%);
+  --blur-background: color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent) linear-gradient(hsl(258, 18.1%, 94%), color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent));
+  --bold-modifier: 300;
+  --bold-weight: 700;
   --callout-title-weight: 700;
-  --canvas-background: hsl(258, 9.8%, 96%) !important;
-  --canvas-card-label-color: hsl(258, 88%, 66%) !important;
-  --checkbox-border-color: hsl(258, 88%, 66%) !important;
-  --checkbox-color: hsl(258, 88%, 66%) !important;
-  --checkbox-marker-color: hsl(258, 18.1%, 94%) !important;
-  --code-background: rgb(234, 234, 234) !important;
-  --code-comment: hsl(258, 88%, 66%) !important;
-  --collapse-icon-color: hsl(258, 88%, 66%) !important;
-  --color-base-00: hsl(258, 48%, 95%, 100%) !important;
-  --color-base-50: hsl(258, 88%, 66%) !important;
-  --colored-accent-1: hsl(258, 88%, 66%) !important;
-  --colored-accent-2: hsla(258, 88%, 66%, 0.5) !important;
-  --colored-accent-3: hsla(258, 79.2%, 79.2%, 1) !important;
-  --colored-accent-i1: hsl(258, 88%, -1700%) !important;
-  --colored-accent-i2: hsl(258, 88%, -4600%) !important;
-  --custom-accent-bold: hsl(258, 88%, 66%) !important;
-  --divider-color: rgba(200, 200, 200, 0.441) !important;
-  --divider-color-hover: hsl(258, 88%, 66%) !important;
-  --dropdown-background: hsl(258, 88%, 66%) !important;
-  --embed-border-start: 2px solid hsl(258, 88%, 66%) !important;
-  --file-header-background: hsl(258, 18.1%, 94%) !important;
-  --file-header-background-focused: hsl(258, 18.1%, 94%) !important;
-  --flair-background: hsl(258, 88%, 66%) !important;
-  --footnote-id-color-no-occurrences: hsl(258, 88%, 66%) !important;
-  --frame-right-space: 100px !important;
-  --graph-node-unresolved: hsl(258, 88%, 66%) !important;
-  --gray: hsl(258, 88%, 66%) !important;
-  --heading-formatting: hsl(258, 88%, 66%) !important;
-  --highlight-1: rgba(0, 0, 0, 0.056) !important;
-  --highlight-2: rgba(214, 214, 214, 0.308) !important;
-  --icon-color: hsl(258, 88%, 66%) !important;
-  --input-date-separator: hsl(258, 88%, 66%) !important;
-  --input-placeholder-color: hsl(258, 88%, 66%) !important;
-  --interactive-accent: hsl(258, 88%, 66%) !important;
-  --interactive-normal: hsl(258, 88%, 66%) !important;
-  --light: hsl(258, 18.1%, 94%) !important;
-  --lightgray: hsl(258, 9.8%, 96%) !important;
-  --list-marker-color: hsl(258, 88%, 66%) !important;
-  --menu-background: hsl(258, 9.8%, 96%) !important;
-  --modal-background: hsl(258, 18.1%, 94%) !important;
-  --nav-collapse-icon-color: hsl(258, 88%, 66%) !important;
-  --nav-collapse-icon-color-collapsed: hsl(258, 88%, 66%) !important;
-  --nav-heading-color-collapsed: hsl(258, 88%, 66%) !important;
-  --nav-tag-color: hsl(258, 88%, 66%) !important;
-  --pdf-background: hsl(258, 18.1%, 94%) !important;
-  --pdf-page-background: hsl(258, 18.1%, 94%) !important;
-  --pdf-sidebar-background: hsl(258, 18.1%, 94%) !important;
-  --pill-color-remove: hsl(258, 88%, 66%) !important;
-  --popover-height: 1250px !important;
-  --popover-width: 1050px !important;
-  --prompt-background: hsl(258, 18.1%, 94%) !important;
-  --raised-background: color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent) linear-gradient(hsl(258, 18.1%, 94%), color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent)) !important;
-  --ribbon-background: hsl(258, 9.8%, 96%) !important;
-  --ribbon-background-collapsed: hsl(258, 18.1%, 94%) !important;
-  --search-result-background: hsl(258, 18.1%, 94%) !important;
-  --secondary: hsl(258, 88%, 66%) !important;
-  --shadow-1: hsla(258, 88%, 5%, .5) !important;
-  --shadow-2: rgba(0, 0, 0, 0.257) !important;
-  --shadow-3: rgba(0, 0, 0, 0.227) !important;
-  --shadow-4: hsla(258, 44.1%, 76%, .5) !important;
-  --shiki-code-background: rgb(234, 234, 234) !important;
-  --shiki-code-comment: hsl(258, 88%, 66%) !important;
-  --shiki-gutter-text-color: hsl(258, 88%, 66%) !important;
-  --shiki-terminal-dots-color: hsl(258, 88%, 66%) !important;
-  --status-bar-background: hsl(258, 9.8%, 96%) !important;
-  --status-bar-border-color: rgba(200, 200, 200, 0.441) !important;
-  --suggestion-background: hsl(258, 18.1%, 94%) !important;
-  --tab-background-active: hsl(258, 18.1%, 94%) !important;
-  --tab-container-background: hsl(258, 9.8%, 96%) !important;
-  --tab-outline-color: rgba(200, 200, 200, 0.441) !important;
-  --tab-switcher-background: hsl(258, 9.8%, 96%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(258, 9.8%, 96%), transparent) !important;
-  --tab-text-color: hsl(258, 88%, 66%) !important;
-  --table-drag-handle-background-active: hsl(258, 88%, 66%) !important;
-  --table-drag-handle-color: hsl(258, 88%, 66%) !important;
-  --table-header-weight: 700 !important;
-  --table-selection-border-color: hsl(258, 88%, 66%) !important;
-  --tc: rgb(25, 25, 25) !important;
-  --text-color-inverted: black !important;
-  --text-faint: hsl(258, 88%, 66%) !important;
-  --titlebar-background: hsl(258, 9.8%, 96%) !important;
-  --quartz-icon-color: currentColor !important;
+  --canvas-background: hsl(258, 9.8%, 96%);
+  --canvas-card-label-color: hsl(258, 88%, 66%);
+  --checkbox-border-color: hsl(258, 88%, 66%);
+  --checkbox-color: hsl(258, 88%, 66%);
+  --checkbox-marker-color: hsl(258, 18.1%, 94%);
+  --code-background: rgb(234, 234, 234);
+  --code-comment: hsl(258, 88%, 66%);
+  --collapse-icon-color: hsl(258, 88%, 66%);
+  --color-base-00: hsl(258, 48%, 95%, 100%);
+  --color-base-50: hsl(258, 88%, 66%);
+  --colored-accent-1: hsl(258, 88%, 66%);
+  --colored-accent-2: hsla(258, 88%, 66%, 0.5);
+  --colored-accent-3: hsla(258, 79.2%, 79.2%, 1);
+  --colored-accent-i1: hsl(258, 88%, -1700%);
+  --colored-accent-i2: hsl(258, 88%, -4600%);
+  --custom-accent-bold: hsl(258, 88%, 66%);
+  --divider-color: rgba(200, 200, 200, 0.441);
+  --divider-color-hover: hsl(258, 88%, 66%);
+  --dropdown-background: hsl(258, 88%, 66%);
+  --embed-border-start: 2px solid hsl(258, 88%, 66%);
+  --file-header-background: hsl(258, 18.1%, 94%);
+  --file-header-background-focused: hsl(258, 18.1%, 94%);
+  --flair-background: hsl(258, 88%, 66%);
+  --footnote-id-color-no-occurrences: hsl(258, 88%, 66%);
+  --frame-right-space: 100px;
+  --graph-node-unresolved: hsl(258, 88%, 66%);
+  --gray: var(--text-faint, hsl(258, 88%, 66%));
+  --heading-formatting: hsl(258, 88%, 66%);
+  --highlight-1: rgba(0, 0, 0, 0.056);
+  --highlight-2: rgba(214, 214, 214, 0.308);
+  --icon-color: hsl(258, 88%, 66%);
+  --input-date-separator: hsl(258, 88%, 66%);
+  --input-placeholder-color: hsl(258, 88%, 66%);
+  --interactive-accent: hsl(258, 88%, 66%);
+  --interactive-normal: hsl(258, 88%, 66%);
+  --light: var(--background-primary, hsl(258, 18.1%, 94%));
+  --lightgray: var(--background-secondary, hsl(258, 9.8%, 96%));
+  --list-marker-color: hsl(258, 88%, 66%);
+  --menu-background: hsl(258, 9.8%, 96%);
+  --modal-background: hsl(258, 18.1%, 94%);
+  --nav-collapse-icon-color: hsl(258, 88%, 66%);
+  --nav-collapse-icon-color-collapsed: hsl(258, 88%, 66%);
+  --nav-heading-color-collapsed: hsl(258, 88%, 66%);
+  --nav-tag-color: hsl(258, 88%, 66%);
+  --pdf-background: hsl(258, 18.1%, 94%);
+  --pdf-page-background: hsl(258, 18.1%, 94%);
+  --pdf-sidebar-background: hsl(258, 18.1%, 94%);
+  --pill-color-remove: hsl(258, 88%, 66%);
+  --popover-height: 1250px;
+  --popover-width: 1050px;
+  --prompt-background: hsl(258, 18.1%, 94%);
+  --raised-background: color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent) linear-gradient(hsl(258, 18.1%, 94%), color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent));
+  --ribbon-background: hsl(258, 9.8%, 96%);
+  --ribbon-background-collapsed: hsl(258, 18.1%, 94%);
+  --search-result-background: hsl(258, 18.1%, 94%);
+  --secondary: var(--interactive-accent, hsl(258, 88%, 66%));
+  --shadow-1: hsla(258, 88%, 5%, .5);
+  --shadow-2: rgba(0, 0, 0, 0.257);
+  --shadow-3: rgba(0, 0, 0, 0.227);
+  --shadow-4: hsla(258, 44.1%, 76%, .5);
+  --shiki-code-background: rgb(234, 234, 234);
+  --shiki-code-comment: hsl(258, 88%, 66%);
+  --shiki-gutter-text-color: hsl(258, 88%, 66%);
+  --shiki-terminal-dots-color: hsl(258, 88%, 66%);
+  --status-bar-background: hsl(258, 9.8%, 96%);
+  --status-bar-border-color: rgba(200, 200, 200, 0.441);
+  --suggestion-background: hsl(258, 18.1%, 94%);
+  --tab-background-active: hsl(258, 18.1%, 94%);
+  --tab-container-background: hsl(258, 9.8%, 96%);
+  --tab-outline-color: rgba(200, 200, 200, 0.441);
+  --tab-switcher-background: hsl(258, 9.8%, 96%);
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(258, 9.8%, 96%), transparent);
+  --tab-text-color: hsl(258, 88%, 66%);
+  --table-drag-handle-background-active: hsl(258, 88%, 66%);
+  --table-drag-handle-color: hsl(258, 88%, 66%);
+  --table-header-weight: 700;
+  --table-selection-border-color: hsl(258, 88%, 66%);
+  --tc: rgb(25, 25, 25);
+  --text-color-inverted: black;
+  --text-faint: hsl(258, 88%, 66%);
+  --titlebar-background: hsl(258, 9.8%, 96%);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -3461,6 +3462,199 @@ html[saved-theme="light"] body summary {
 
 html[saved-theme="light"] body sup {
   color: rgb(25, 25, 25);
+}`,
+  },
+  classSettings: {
+    tv1: `body.tv1 .callout {
+color: inherit;
+border-radius: 10px;
+box-shadow: 0px 0px 0px 1px var(--c-tv1), 0px 0px 3px 1px var(--s-tv1);
+--callout-padding: 0;
+--callout-title-color: inherit;
+--callout-title-padding: 6px 10px;
+--callout-title-size: inherit;
+--callout-content-padding: 5px 10px 5px 10px;
+--callout-content-radius: 0px;
+--callout-blend-mode: normal;
+background: var(--background-1-tv1) !important;
+margin-bottom: 5px;
+}
+
+body.tv1 .cm-embed-block.cm-callout {
+border-radius: 10px;
+box-shadow: 0px 0px 0px 1px var(--c-tv1), 0px 0px 3px 1px var(--s-tv1);
+}
+
+body.tv1 .cm-embed-block.cm-callout:hover {
+border-radius: 10px !important;
+}
+
+body.tv1 .callout-title {
+position: relative;
+color: var(--colored-accent-text-color-inverted);
+border-radius: 5px;
+font-size: 1.3em;
+}
+
+body.tv1 .callout-title:before {
+display: none;
+}
+
+body.tv1 .markdown-rendered blockquote, body.tv1 .blockquote, body.tv1 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+border-radius: 10px;
+background-color: var(--background-1-tv1);
+border-left: none;
+}
+
+body.tv1 .markdown-rendered blockquote {
+padding-top: .4em !important;
+padding-bottom: .4em !important;
+}
+
+body.tv1 .is-live-preview .HyperMD-quote:before {
+content: '';
+box-shadow: 0px 0px 0px 1px var(--c-tv1), 0px 0px 3px 1px var(--s-tv1);
+z-index: -1 !important;
+position: absolute;
+width: calc(100%) !important;
+border: 0px solid transparent !important;
+border-radius: 10px;
+}
+
+body.tv1 blockquote {
+box-shadow: 0px 0px 0px 1px var(--c-tv1), 0px 0px 3px 1px var(--s-tv1);
+border-radius: 10px;
+}
+
+body.tv1 blockquote:has(blockquote) {
+padding-bottom: 5px !important;
+}
+
+body.tv1 .workspace-leaf-content {
+--scrollbar-thumb-bg: transparent;
+&:hover {
+        --scrollbar-thumb-bg: transparent !important;
+    };
+}
+
+body.tv1 {
+--cbr: 20px !important;
+}
+.tv1 {
+--c-tv1: rgb(58, 58, 58);
+--s-tv1: rgba(0, 0, 0, 0.47);
+--background-1-tv1: hsl(var(--background-2_h), calc(calc(var(--accent-s) *.1) + calc(.1% * var(--bgt_s, 1))), calc(var(--background-2_l) + calc(var(--bgt_l, 0) * .1% - 3%)));
+}
+.tv1 {
+--c-tv1: rgb(209, 209, 209);
+--s-tv1: rgba(0, 0, 0, 0.089);
+--background-1-tv1: hsl(var(--background-2_h), calc(calc(var(--accent-s) * 1) + calc(.5% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 2%) + calc(var(--bgt_l, 0) * 1%)));
+}`,
+    "custom-accent-bold": `body.custom-accent-bold {
+--bold-color: var(--colored-accent-1);
+}`,
+    "custom-accent-italic": `body.custom-accent-italic {
+--italic-color: var(--colored-accent-1);
+}`,
+    "heading-highlighting": `body.heading-highlighting .cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1), body.heading-highlighting .cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2), body.heading-highlighting .cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3), body.heading-highlighting .cm-header.cm-header-4:not(.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4), body.heading-highlighting .cm-header.cm-header-5:not(.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5), body.heading-highlighting .cm-header.cm-header-6:not(.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6), body.heading-highlighting .markdown-rendered h1, body.heading-highlighting .markdown-rendered h2, body.heading-highlighting .markdown-rendered h3, body.heading-highlighting .markdown-rendered h4, body.heading-highlighting .markdown-rendered h5, body.heading-highlighting .markdown-rendered h6 {
+color: var(--colored-accent-i1);
+border-bottom: 2px solid var(--shadow-1);
+padding-left: 5px !important;
+padding-right: 5px !important;
+-moz-border-bottom-left-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+border-bottom-left-radius: 5px;
+-moz-border-bottom-right-radius: 5px;
+-webkit-border-bottom-right-radius: 5px;
+border-bottom-right-radius: 5px;
+-moz-border-top-right-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+border-top-right-radius: 5px;
+-moz-border-top-left-radius: 5px;
+-webkit-border-top-left-radius: 5px;
+border-top-left-radius: 5px;
+-webkit-box-decoration-break: clone;
+-o-box-decoration-break: clone;
+box-decoration-break: clone;
+}
+
+body.heading-highlighting h1 > a, body.heading-highlighting h2 > a, body.heading-highlighting h3 > a, body.heading-highlighting h4 > a, body.heading-highlighting h5 > a, body.heading-highlighting h6 > a {
+color: var(--text-color-inverted) !important;
+}
+
+body.heading-highlighting .cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1), body.heading-highlighting .markdown-rendered h1 {
+background-color: var(--custom-h1-color, var(--general-heading-color, var(--colored-accent-1)));
+}
+
+body.heading-highlighting .cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2), body.heading-highlighting .markdown-rendered h2 {
+background-color: var(--custom-h2-color, var(--general-heading-color, var(--colored-accent-1)));
+}
+
+body.heading-highlighting .cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3), body.heading-highlighting .markdown-rendered h3 {
+background-color: var(--custom-h3-color, var(--general-heading-color, var(--colored-accent-1)));
+}
+
+body.heading-highlighting .cm-header.cm-header-4:not(.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4), body.heading-highlighting .markdown-rendered h4 {
+background-color: var(--custom-h4-color, var(--general-heading-color, var(--colored-accent-1)));
+}
+
+body.heading-highlighting .cm-header.cm-header-5:not(.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5), body.heading-highlighting .markdown-rendered h5 {
+background-color: var(--custom-h5-color, var(--general-heading-color, var(--colored-accent-1)));
+}
+
+body.heading-highlighting .cm-header.cm-header-6:not(.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6), body.heading-highlighting .markdown-rendered h6 {
+background-color: var(--custom-h6-color, var(--general-heading-color, var(--colored-accent-1)));
+}`,
+    "status-bar-hover": `body.status-bar-hover .status-bar {
+opacity: 0;
+transition: all .5s;
+&:hover {        
+        opacity: 1;
+    };
+}`,
+    "enhanced-buttons-disable": `body.enhanced-buttons-disable {
+--highlight-1: transparent !important;
+--highlight-2: transparent !important;
+}`,
+    "enhanced-cursor": `body.is-focused .x-cursor {
+position:flex;
+opacity: 1;
+background: transparent;
+backdrop-filter: invert(100%);
+filter: grayscale(100%);
+width: calc(var(--cursor-height) * .55);
+left: calc(var(--cursor-height) * -0);
+height: calc(2px + var(--cursor-height));
+max-height: 2rem;
+max-width: 17px;
+top: calc(0px - var(--header-height));
+transition: all .07s;
+}
+
+.enhanced-cursor .x-cursor::after {
+display: none;
+}
+
+.enhanced-cursor .cursorWrapper .x-cursor0, .enhanced-cursor .cursorWrapper .x-cursor1 {
+animation: blink1 1s 0s both infinite;
+}
+
+body.enhanced-cursor:has(.x-cursor) .cm-editor * {
+caret-color: transparent;
+}`,
+    "blend-images": `.blend-images .internal-embed.media-embed.image-embed.is-loaded {
+mix-blend-mode: color-dodge;
+}
+
+.blend-images img {
+filter: invert(1) saturate(0);
+}
+.blend-images .internal-embed.media-embed.image-embed.is-loaded {
+mix-blend-mode: multiply;
+}
+
+.blend-images img {
+filter: invert(0) saturate(0);
 }`,
   },
 };

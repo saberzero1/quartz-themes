@@ -13,7 +13,7 @@ settings:
     title: Base size for the interface texts [px]
     title.fr: Taille de base pour les caractères de l’interface [px]
     type: variable-number
-    default: 18
+    default: 16
     format: px
   - id: OT-filesNavigator-spacing
     title: Spacing for the files listing in sidepannels and the settings list in settings pane
@@ -37,8 +37,8 @@ settings:
   - id: OT-headings-scaling
     title: Scaling of the headings and subheadings
     title.fr: Accroissement des titres et intertitres
-    description: Different ways of increasing the size of headings from H6 to H1. By default, a choice “generous but not too much”
-    description.fr: Différentes façons de grader la taille des H1 à H6. Par défaut, un choix généreux, mais pas trop.
+    description: "Different ways of increasing the size of headings from H6\_to H1. By default, a choice “generous but not too much”"
+    description.fr: "Différentes façons de grader la taille des H1\_à H6. Par défaut, un choix généreux, mais pas trop."
     type: class-select
     allowEmpty: false
     default: headings-scaling-OpSpl
@@ -141,7 +141,7 @@ settings:
     title: Suppress line wrapping within code blocks
     title.fr: Supprimer les retours à la ligne dans les blocs de code
     type: class-toggle
-    default: TRUE
+    default: true
   - id: OT-tab-title-highlighted
     title: Highlight current tab
     title.fr: Tab courant mis en évidence
@@ -149,6 +149,25 @@ settings:
     description.fr: Met en évidence sur le tab le nom de la fiche courante
     type: class-toggle
     default: false
+  - id: OT-suppress-title-bar-breadcrumb
+    title: Suppress the Title Bar breadcrumb
+    title.fr: Suppression du “breadcrumb” dans la barre de titre
+    type: class-toggle
+    default: false
+  - id: OT-status-bar-padding
+    title: Status Bar padding [px]
+    description: Number of pixels between the status bar and the window border.
+    dsecription.fr: Nombre de pixels entre la “Status Bar” et le bord de la fenêtre.
+    type: variable-number
+    default: 6
+    format: px
+  - id: OT-metadata-label-width
+    title: Width of the properties labels [em]
+    description: null
+    dsecription.fr: Largeur des noms des champs des propriétés
+    type: variable-number
+    default: 9
+    format: em
   - id: OT-canvas-dot-pattern-hidden
     title: Hide canvas dot pattern
     title.fr: Cacher les points en fond des canvas
@@ -196,6 +215,9 @@ settings:
       - label: Icy
         label.fr: Glacé
         value: lightPalette-icy
+      - label: Ivory
+        label.fr: Ivoire
+        value: lightPalette-ivory
       - label: Orange
         label.fr: Orange
         value: lightPalette-Orange
@@ -209,11 +231,11 @@ settings:
         value: lightPalette-red
       - label: Solarized
         value: lightPalette-solarized
-      - label: Sunny memos
-        value: lightPalette-sunnyMemos
       - label: Stone
         label.fr: Pierre
         value: lightPalette-stone
+      - label: Sunny memos
+        value: lightPalette-sunnyMemos
       - label: Violet
         value: lightPalette-violet
       - label: Yellow
@@ -644,7 +666,7 @@ settings:
     default: darkPalette-default
     options:
       - label: Default < light mode
-        label.fr: = mode LIGHT
+        label.fr: '= mode LIGHT'
         value: darkPalette-default
       - label: Beige
         value: darkPalette-beige
@@ -669,6 +691,9 @@ settings:
       - label: Icy
         label.fr: Glacé
         value: darkPalette-icy
+      - label: Ivory
+        label.fr: Ivoire
+        value: darkPalette-ivory
       - label: LYT
         value: darkPalette-LYT
       - label: Obsidian
@@ -935,7 +960,7 @@ settings:
       - label: Teal
         label.fr: Bleu sarcelle
         value: inkColor-darkMode-teal
-      - label: intense    Violet
+      - label: intense  Violet
         label.fr: Violet brillant
         value: inkColor-darkMode-violet
       - label: dark Violet
@@ -1117,23 +1142,29 @@ settings:
     type: variable-number
     default: 39
     format: em
+  - id: OT-readingMode-tableText-percent
+    title: "Size of the text in table cells, in percents of the body text. 100\_=\_same size"
+    title.fr: "Taille des caractères dans les tables, en pourcents du texte normal. 100\_=\_même taille"
+    description: It’s generally practical to have a smaller text size inside table cells.
+    type: variable-number
+    default: 90
   - id: OT-tables-style
     title: Tables
     description: Three different styles for tables.
     description.fr: Différents styles de tables. Par défaut, le modèle « Obsidian nature ».
     type: class-select
     allowEmpty: false
-    default: OT-tables-tinted-rows
+    default: OT-tables-alternate-rows
     options:
       - label: Obsidian plain
         label.fr: Obsidian nature
         value: OT-tables-native
       - label: Improved
         label.fr: Améliorées
-        value: OT-tables-custom
+        value: OT-tables-improved
       - label: Alternate row backgrounds
         label.fr: Avec fonds alternés
-        value: OT-tables-tinted-rows
+        value: OT-tables-alternate-rows
   - id: OT-images-rendering
     title: How do you prefer your images?
     title.fr: Comment préférez-vous vos images?
@@ -1285,7 +1316,7 @@ settings:
         value: Trebuchet MS
       - label: Verdana
         value: Verdana
-  - id: OT-editMode-font-size
+  - id: OT-editMode-text-size
     title: Body text size [px]
     title.fr: Taille des caractères [px]
     type: variable-number
@@ -1305,13 +1336,12 @@ settings:
     type: variable-number
     default: 44
     format: em
-  - id: OT-editMode-tableText-size
-    title: Size of the text in table cells.
-    title.fr: Taille des caractères dans les tables [px]
+  - id: OT-editMode-tableText-percent
+    title: "Size of the text in table cells, in percents of the body text. 100\_=\_same size"
+    title.fr: "Taille des caractères dans les tables, en pourcents du texte normal. 100\_=\_même taille"
     description: It’s generally practical to have a smaller text size inside table cells.
     type: variable-number
-    default: 17
-    format: px
+    default: 90
   - id: OlivierPS-support
     title: Support OlivierPS
     description: If you like the theme, here is a way to support development
@@ -1320,6 +1350,6 @@ settings:
     collapsed: true
   - id: OlivierPS-url-donate
     title: Buy Me a Book
-    description: "[→ BuyMeACoffee.com](https://www.buymeacoffee.com/mp2ncr4vh9x)"
+    description: '[→ BuyMeACoffee.com](https://www.buymeacoffee.com/mp2ncr4vh9x)'
     type: info-text
     markdown: true

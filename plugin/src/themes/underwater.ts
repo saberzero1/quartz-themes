@@ -6,59 +6,60 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["lexend"],
+    styleSettingsId: "underwater-theme",
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-h: 193 !important;
-  --accent-l: 75% !important;
-  --accent-s: 46% !important;
-  --background: #191724 !important;
-  --background-modifier-active-hover: hsla(193, 46%, 75%, 0.1) !important;
-  --background-modifier-border: rgba(64, 61, 82, 0.6) !important;
-  --background-modifier-border-focus: rgba(64, 61, 82, 0.6) !important;
-  --background-modifier-border-hover: rgb(64, 61, 82) !important;
-  --background-modifier-error: rgb(235, 188, 186) !important;
-  --background-modifier-error-hover: rgb(235, 188, 186) !important;
-  --background-modifier-error-rgb: 235, 188, 186 !important;
-  --background-modifier-form-field: #26233a !important;
-  --background-modifier-form-field-hover: transparent !important;
-  --background-modifier-success: rgb(156, 207, 216) !important;
-  --background-modifier-success-rgb: 156, 207, 216 !important;
-  --background-primary: rgb(31, 29, 46) !important;
-  --background-primary-alt: #26233a !important;
-  --background-secondary: rgb(31, 29, 46) !important;
-  --background-secondary-alt: #26233a !important;
-  --base: #191724 !important;
-  --bases-cards-background: #191724 !important;
-  --bases-cards-cover-background: #26233a !important;
-  --bases-cards-shadow: 0 0 0 1px rgba(64, 61, 82, 0.6) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(64, 61, 82) !important;
-  --bases-embed-border-color: rgb(64, 61, 82) !important;
-  --bases-embed-border-radius: 11px !important;
-  --bases-embed-radius: 10px !important;
-  --bases-group-heading-property-color: #6e6a86 !important;
-  --bases-header-border-width: 0px !important;
-  --bases-table-border-color: #524f67 !important;
-  --bases-table-cell-background-active: rgb(31, 29, 46) !important;
-  --bases-table-cell-background-disabled: #26233a !important;
-  --bases-table-cell-background-selected: hsla(193, 46%, 75%, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgba(64, 61, 82, 0.6) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(235, 188, 186) !important;
-  --bases-table-column-border-width: 0px !important;
-  --bases-table-container-border-radius: 10px !important;
-  --bases-table-group-background: transparent !important;
-  --bases-table-header-background: #26233a !important;
-  --bases-table-header-background-hover: transparent !important;
-  --bases-table-header-color: #e0def4 !important;
-  --bases-table-row-border-width: 0px !important;
-  --bases-table-summary-background: rgb(31, 29, 46) !important;
-  --bases-toolbar-label-display: none !important;
-  --blockquote-border-color: rgb(246, 193, 119) !important;
-  --blockquote-border-thickness: 3px !important;
-  --blur-background: color-mix(in srgb, rgba(64, 61, 82, 0.5) 65%, transparent) linear-gradient(rgba(64, 61, 82, 0.5), color-mix(in srgb, rgba(64, 61, 82, 0.5) 65%, transparent)) !important;
-  --bodyFont: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --bold-color: rgb(235, 111, 146) !important;
-  --button-radius: 7px !important;
+  --accent-h: 193;
+  --accent-l: 75%;
+  --accent-s: 46%;
+  --background: #191724;
+  --background-modifier-active-hover: hsla(193, 46%, 75%, 0.1);
+  --background-modifier-border: rgba(64, 61, 82, 0.6);
+  --background-modifier-border-focus: rgba(64, 61, 82, 0.6);
+  --background-modifier-border-hover: rgb(64, 61, 82);
+  --background-modifier-error: rgb(235, 188, 186);
+  --background-modifier-error-hover: rgb(235, 188, 186);
+  --background-modifier-error-rgb: 235, 188, 186;
+  --background-modifier-form-field: #26233a;
+  --background-modifier-form-field-hover: transparent;
+  --background-modifier-success: rgb(156, 207, 216);
+  --background-modifier-success-rgb: 156, 207, 216;
+  --background-primary: rgb(31, 29, 46);
+  --background-primary-alt: #26233a;
+  --background-secondary: rgb(31, 29, 46);
+  --background-secondary-alt: #26233a;
+  --base: #191724;
+  --bases-cards-background: #191724;
+  --bases-cards-cover-background: #26233a;
+  --bases-cards-shadow: 0 0 0 1px rgba(64, 61, 82, 0.6);
+  --bases-cards-shadow-hover: 0 0 0 1px rgb(64, 61, 82);
+  --bases-embed-border-color: rgb(64, 61, 82);
+  --bases-embed-border-radius: 11px;
+  --bases-embed-radius: 10px;
+  --bases-group-heading-property-color: #6e6a86;
+  --bases-header-border-width: 0px;
+  --bases-table-border-color: #524f67;
+  --bases-table-cell-background-active: rgb(31, 29, 46);
+  --bases-table-cell-background-disabled: #26233a;
+  --bases-table-cell-background-selected: hsla(193, 46%, 75%, 0.1);
+  --bases-table-cell-shadow-active: 0 0 0 2px rgba(64, 61, 82, 0.6);
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(235, 188, 186);
+  --bases-table-column-border-width: 0px;
+  --bases-table-container-border-radius: 10px;
+  --bases-table-group-background: transparent;
+  --bases-table-header-background: #26233a;
+  --bases-table-header-background-hover: transparent;
+  --bases-table-header-color: #e0def4;
+  --bases-table-row-border-width: 0px;
+  --bases-table-summary-background: rgb(31, 29, 46);
+  --bases-toolbar-label-display: none;
+  --blockquote-border-color: rgb(246, 193, 119);
+  --blockquote-border-thickness: 3px;
+  --blur-background: color-mix(in srgb, rgba(64, 61, 82, 0.5) 65%, transparent) linear-gradient(rgba(64, 61, 82, 0.5), color-mix(in srgb, rgba(64, 61, 82, 0.5) 65%, transparent));
+  --bodyFont: var(--font-text, "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --bold-color: rgb(235, 111, 146);
+  --button-radius: 7px;
   --callout-bug: 235, 188, 186;
   --callout-default: 49, 116, 143;
   --callout-error: 235, 188, 186;
@@ -76,351 +77,351 @@ export const theme: ThemeData = {
   --callout-title-weight: 400;
   --callout-todo: 49, 116, 143;
   --callout-warning: 246, 193, 119;
-  --canvas-background: rgb(31, 29, 46) !important;
-  --canvas-card-label-color: #6e6a86 !important;
-  --canvas-color-1: 49, 116, 143 !important;
-  --canvas-color-2: 156, 207, 216 !important;
-  --canvas-color-3: 196, 167, 231 !important;
-  --canvas-color-4: 235, 111, 146 !important;
-  --canvas-color-5: 235, 188, 186 !important;
-  --canvas-color-6: 246, 193, 119 !important;
-  --canvas-dot-pattern: #6e6a86 !important;
-  --caret-color: rgb(235, 111, 146) !important;
-  --checkbox-border: 5px !important;
-  --checkbox-border-color: rgb(235, 188, 186) !important;
-  --checkbox-border-color-hover: rgb(235, 111, 146) !important;
-  --checkbox-color: rgb(49, 116, 143) !important;
-  --checkbox-color-hover: rgb(156, 207, 216) !important;
-  --checkbox-marker-color: white !important;
-  --checkbox-radius: 5px !important;
-  --checklist-done-color: #6e6a86 !important;
-  --clickable-icon-radius: 8px !important;
-  --code-background: #191724 !important;
-  --code-border-color: rgba(64, 61, 82, 0.6) !important;
-  --code-comment: #6e6a86 !important;
-  --code-function: rgb(156, 207, 216) !important;
-  --code-important: rgb(235, 188, 186) !important;
-  --code-keyword: rgb(235, 188, 186) !important;
-  --code-normal: #908caa !important;
-  --code-operator: rgb(246, 193, 119) !important;
-  --code-property: rgb(49, 116, 143) !important;
-  --code-punctuation: rgb(235, 111, 146) !important;
-  --code-string: rgb(246, 193, 119) !important;
-  --code-tag: rgb(156, 207, 216) !important;
-  --code-value: rgb(196, 167, 231) !important;
-  --codeFont: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --collapse-icon-color: #6e6a86 !important;
-  --collapse-icon-color-collapsed: rgb(235, 188, 186) !important;
-  --color-accent: hsl(193, 46%, 75%) !important;
-  --color-accent-1: rgb(235, 188, 186) !important;
-  --color-accent-2: rgb(156, 207, 216) !important;
-  --color-accent-hsl: 193, 46%, 75% !important;
-  --color-base-00: #191724 !important;
-  --color-base-05: #191724 !important;
-  --color-base-10: rgb(31, 29, 46) !important;
-  --color-base-100: #e0def4 !important;
-  --color-base-20: rgb(31, 29, 46) !important;
-  --color-base-25: #26233a !important;
-  --color-base-30: #524f67 !important;
-  --color-base-35: rgba(64, 61, 82, 0.6) !important;
-  --color-base-40: rgb(64, 61, 82) !important;
-  --color-base-50: #21202e !important;
-  --color-base-60: #6e6a86 !important;
-  --color-base-70: #908caa !important;
-  --color-blue: rgb(49, 116, 143) !important;
-  --color-blue-rgb: 49, 116, 143 !important;
-  --color-cyan: rgb(156, 207, 216) !important;
-  --color-cyan-rgb: 156, 207, 216 !important;
-  --color-green: rgb(156, 207, 216) !important;
-  --color-green-rgb: 156, 207, 216 !important;
-  --color-orange: rgb(246, 193, 119) !important;
-  --color-orange-rgb: 246, 193, 119 !important;
-  --color-pink: rgb(235, 111, 146) !important;
-  --color-pink-rgb: 235, 111, 146 !important;
-  --color-purple: rgb(196, 167, 231) !important;
-  --color-purple-rgb: 196, 167, 231 !important;
-  --color-red: rgb(235, 188, 186) !important;
-  --color-red-rgb: 235, 188, 186 !important;
-  --color-yellow: rgb(246, 193, 119) !important;
-  --color-yellow-rgb: 246, 193, 119 !important;
-  --cursor: pointer !important;
-  --dark: #e0def4 !important;
-  --darkgray: #e0def4 !important;
-  --divider-color: rgba(64, 61, 82, 0.6) !important;
-  --divider-color-hover: rgb(235, 188, 186) !important;
-  --divider-width: 0px !important;
-  --dropdown-background: rgba(64, 61, 82, 0.5) !important;
-  --dropdown-background-hover: rgb(64, 61, 82) !important;
-  --embed-block-shadow-hover: transparent !important;
-  --embed-border-start: 2px solid rgb(235, 188, 186) !important;
-  --file-header-background: rgb(31, 29, 46) !important;
-  --file-header-background-focused: rgb(31, 29, 46) !important;
-  --file-header-border: 1px dashed rgb(64, 61, 82) !important;
-  --file-header-font: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --flair-background: rgba(64, 61, 82, 0.5) !important;
-  --flair-color: #e0def4 !important;
-  --foam: rgb(156, 207, 216) !important;
-  --foam-rgb: 156, 207, 216 !important;
-  --font-interface: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-interface-theme: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif !important;
-  --font-mermaid: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-print: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, Arial' !important;
-  --font-text: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-text-theme: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif !important;
-  --footnote-divider-color: rgba(64, 61, 82, 0.6) !important;
-  --footnote-id-color: #6e6a86 !important;
-  --footnote-id-color-no-occurrences: #6e6a86 !important;
-  --gold: rgb(246, 193, 119) !important;
-  --gold-rgb: 246, 193, 119 !important;
-  --graph-line: rgb(64, 61, 82) !important;
-  --graph-node: #e0def4 !important;
-  --graph-node-attachment: rgb(235, 188, 186) !important;
-  --graph-node-focused: rgb(235, 188, 186) !important;
-  --graph-node-tag: rgb(156, 207, 216) !important;
-  --graph-node-unresolved: #6e6a86 !important;
-  --graph-text: #e0def4 !important;
-  --gray: #6e6a86 !important;
-  --h1-color: rgb(235, 111, 146) !important;
-  --h1-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif !important;
-  --h1-size: 1.45em !important;
-  --h2-color: rgb(235, 188, 186) !important;
-  --h2-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif !important;
-  --h2-size: 1.3em !important;
-  --h3-color: rgb(246, 193, 119) !important;
-  --h3-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif !important;
-  --h3-size: 1.15em !important;
-  --h4-color: rgb(49, 116, 143) !important;
-  --h4-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif !important;
-  --h4-size: 1.05em !important;
-  --h5-color: rgb(196, 167, 231) !important;
-  --h5-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif !important;
-  --h5-size: 1em !important;
-  --h6-color: #e0def4 !important;
-  --h6-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif !important;
-  --h6-variant: small-caps !important;
-  --headerFont: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: #6e6a86 !important;
-  --headings-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif !important;
-  --highlight: rgba(246, 193, 119, 0.2) !important;
-  --highlight-high: #524f67 !important;
-  --highlight-low: #21202e !important;
-  --highlight-med: rgb(64, 61, 82) !important;
-  --highlight-med-rgb: 64, 61, 82 !important;
-  --hr-color: rgba(64, 61, 82, 0.6) !important;
-  --icon-color: #e0def4 !important;
-  --icon-color-active: rgb(235, 188, 186) !important;
-  --icon-color-focused: #e0def4 !important;
-  --icon-color-hover: #6e6a86 !important;
-  --inline-title-color: rgb(156, 207, 216) !important;
-  --inline-title-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif !important;
-  --inline-title-margin-bottom: 1.2em !important;
-  --inline-title-size: 1.8em !important;
-  --input-date-separator: #6e6a86 !important;
-  --input-placeholder-color: #6e6a86 !important;
-  --interactive-accent: rgb(235, 188, 186) !important;
-  --interactive-accent-hover: rgba(235, 188, 186, 0.8) !important;
-  --interactive-accent-hsl: 193, 46%, 75% !important;
-  --interactive-hover: rgb(64, 61, 82) !important;
-  --interactive-normal: rgba(64, 61, 82, 0.5) !important;
-  --iris: rgb(196, 167, 231) !important;
-  --iris-rgb: 196, 167, 231 !important;
-  --italic-color: rgb(156, 207, 216) !important;
-  --latex-color: rgb(246, 193, 119) !important;
-  --light: rgb(31, 29, 46) !important;
-  --lightgray: rgb(31, 29, 46) !important;
-  --link-color: rgb(235, 188, 186) !important;
-  --link-color-hover: rgba(235, 188, 186, 0.6) !important;
-  --link-decoration: none !important;
-  --link-decoration-hover: none !important;
-  --link-external-color: rgb(49, 116, 143) !important;
-  --link-external-color-hover: rgba(49, 116, 143, 0.6) !important;
-  --link-external-decoration: none !important;
-  --link-unresolved-color: #908caa !important;
-  --link-unresolved-decoration-color: hsla(193, 46%, 75%, 0.3) !important;
-  --list-bullet-size: 0.35em !important;
-  --list-indent-editing: 0 !important;
-  --list-marker-color: #6e6a86 !important;
-  --list-marker-color-collapsed: rgb(235, 188, 186) !important;
-  --list-marker-color-hover: #6e6a86 !important;
-  --love: rgb(235, 111, 146) !important;
-  --love-rgb: 235, 111, 146 !important;
-  --menu-background: rgb(31, 29, 46) !important;
-  --menu-border-color: rgb(64, 61, 82) !important;
-  --metadata-border-color: rgba(64, 61, 82, 0.6) !important;
-  --metadata-display-reading: none !important;
-  --metadata-divider-color: rgba(64, 61, 82, 0.6) !important;
-  --metadata-input-font: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: #e0def4 !important;
-  --metadata-label-font: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: #6e6a86 !important;
-  --metadata-label-text-color-hover: #6e6a86 !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgba(64, 61, 82, 0.6) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(64, 61, 82) !important;
-  --mk-ui-text-secondary: #e0def4 !important;
-  --modal-background: rgb(31, 29, 46) !important;
-  --modal-border-color: rgb(64, 61, 82) !important;
-  --muted: #6e6a86 !important;
-  --nav-collapse-icon-color: rgb(49, 116, 143) !important;
-  --nav-collapse-icon-color-collapsed: #6e6a86 !important;
-  --nav-heading-color: rgb(49, 116, 143) !important;
-  --nav-heading-color-collapsed: rgb(49, 116, 143) !important;
-  --nav-heading-color-collapsed-hover: #6e6a86 !important;
-  --nav-heading-color-hover: #e0def4 !important;
-  --nav-item-background-active: rgb(156, 207, 216) !important;
-  --nav-item-background-selected: hsla(193, 46%, 75%, 0.15) !important;
-  --nav-item-color: #e0def4 !important;
-  --nav-item-color-active: rgb(31, 29, 46) !important;
-  --nav-item-color-highlighted: rgb(235, 188, 186) !important;
-  --nav-item-color-hover: #908caa !important;
-  --nav-item-color-selected: #e0def4 !important;
-  --nav-tag-color: #6e6a86 !important;
-  --nav-tag-color-active: #6e6a86 !important;
-  --nav-tag-color-hover: #6e6a86 !important;
-  --overlay: #26233a !important;
-  --pdf-background: rgb(31, 29, 46) !important;
-  --pdf-page-background: rgb(31, 29, 46) !important;
-  --pdf-shadow: 0 0 0 1px rgba(64, 61, 82, 0.6) !important;
-  --pdf-sidebar-background: rgb(31, 29, 46) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(64, 61, 82, 0.6) !important;
-  --pill-border-color: rgba(64, 61, 82, 0.6) !important;
-  --pill-border-color-hover: rgb(64, 61, 82) !important;
-  --pill-color: #6e6a86 !important;
-  --pill-color-hover: #e0def4 !important;
-  --pill-color-remove: #6e6a86 !important;
-  --pill-color-remove-hover: rgb(235, 188, 186) !important;
-  --pine: rgb(49, 116, 143) !important;
-  --pine-rgb: 49, 116, 143 !important;
-  --pomodoro-timer-color: rgb(64, 61, 82, 0.5) !important;
-  --pomodoro-timer-dot-color: rgb(235, 111, 146) !important;
-  --prompt-background: rgb(31, 29, 46) !important;
-  --prompt-border-color: rgb(64, 61, 82) !important;
-  --raised-background: color-mix(in srgb, rgba(64, 61, 82, 0.5) 65%, transparent) linear-gradient(rgba(64, 61, 82, 0.5), color-mix(in srgb, rgba(64, 61, 82, 0.5) 65%, transparent)) !important;
-  --ribbon-background: rgb(31, 29, 46) !important;
-  --ribbon-background-collapsed: rgb(31, 29, 46) !important;
-  --rose: rgb(235, 188, 186) !important;
-  --rose-rgb: 235, 188, 186 !important;
-  --scrollbar-active-thumb-bg: #524f67 !important;
-  --scrollbar-thumb-bg: rgb(64, 61, 82) !important;
-  --search-clear-button-color: #6e6a86 !important;
-  --search-icon-color: #6e6a86 !important;
-  --search-result-background: #191724 !important;
-  --search-result-background-hover: rgb(235, 188, 186) !important;
-  --secondary: rgb(235, 188, 186) !important;
-  --setting-group-heading-color: #e0def4 !important;
-  --setting-items-background: #191724 !important;
-  --setting-items-border-color: rgba(64, 61, 82, 0.6) !important;
-  --shiki-active-tab-border-color: #6e6a86 !important;
-  --shiki-code-background: #191724 !important;
-  --shiki-code-comment: #6e6a86 !important;
-  --shiki-code-function: rgb(156, 207, 216) !important;
-  --shiki-code-important: rgb(246, 193, 119) !important;
-  --shiki-code-keyword: rgb(235, 111, 146) !important;
-  --shiki-code-normal: #6e6a86 !important;
-  --shiki-code-property: rgb(156, 207, 216) !important;
-  --shiki-code-punctuation: #6e6a86 !important;
-  --shiki-code-string: rgb(246, 193, 119) !important;
-  --shiki-code-value: rgb(196, 167, 231) !important;
-  --shiki-gutter-border-color: rgba(64, 61, 82, 0.6) !important;
-  --shiki-gutter-text-color: #6e6a86 !important;
-  --shiki-gutter-text-color-highlight: #6e6a86 !important;
-  --shiki-highlight-green: rgba(156, 207, 216, 0.5) !important;
-  --shiki-highlight-green-background: rgba(156, 207, 216, 0.1) !important;
-  --shiki-highlight-neutral: #6e6a86 !important;
-  --shiki-highlight-red: rgba(235, 188, 186, 0.5) !important;
-  --shiki-highlight-red-background: rgba(235, 188, 186, 0.1) !important;
-  --shiki-terminal-dots-color: #6e6a86 !important;
-  --slider-thumb-border-color: rgb(64, 61, 82) !important;
-  --slider-track-background: rgb(64, 61, 82) !important;
-  --status-bar-background: #191724 !important;
-  --status-bar-border-color: rgba(64, 61, 82, 0.6) !important;
-  --status-bar-font-size: 0.733em !important;
-  --status-bar-radius: 12px 0 0 12px !important;
-  --status-bar-text-color: #6e6a86 !important;
-  --subtle: #908caa !important;
-  --suggestion-background: rgb(31, 29, 46) !important;
-  --surface: rgb(31, 29, 46) !important;
-  --surface-rgb: 31, 29, 46 !important;
-  --sync-avatar-color-1: rgb(235, 188, 186) !important;
-  --sync-avatar-color-2: rgb(246, 193, 119) !important;
-  --sync-avatar-color-3: rgb(246, 193, 119) !important;
-  --sync-avatar-color-4: rgb(156, 207, 216) !important;
-  --sync-avatar-color-5: rgb(156, 207, 216) !important;
-  --sync-avatar-color-6: rgb(49, 116, 143) !important;
-  --sync-avatar-color-7: rgb(196, 167, 231) !important;
-  --sync-avatar-color-8: rgb(235, 111, 146) !important;
-  --tab-background-active: rgb(31, 29, 46) !important;
-  --tab-container-background: transparent !important;
-  --tab-curve: 0px !important;
-  --tab-divider-color: transparent !important;
-  --tab-img: url("%22data:image/svg+xml,%3Csvg version='1.1' id='svg1' xml:space='preserve' width='93.058769' height='115.69744' xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'%3E%3Cdefs id='defs1' /%3E%3Csodipodi:namedview id='namedview1' pagecolor='%2523ffffff' bordercolor='%2523000000' borderopacity='0.25' inkscape:showpageshadow='2' inkscape:pageopacity='0.0' inkscape:pagecheckerboard='0' inkscape:deskcolor='%2523d1d1d1' /%3E%3Cinkscape:clipboard style='font-variation-settings:normalopacity:1vector-effect:nonefill:%252300ff00fill-opacity:1stroke-width:3.77953stroke-linecap:roundstroke-linejoin:roundstroke-miterlimit:4stroke-dasharray:nonestroke-dashoffset:0stroke-opacity:1-inkscape-stroke:nonestop-color:%2523000000stop-opacity:1' min='69.195827,-2.7355726' max='162.2546,112.96187' geom-min='69.195827,-2.7355726' geom-max='162.2546,112.96187' /%3E%3Cg id='g1' transform='translate(-69.195827,2.7355726")'%3E%3Cpath d='m 122.01098,-2.7355726 c -1.43622,0.00378 -2.86866,0.037795 -4.28599,0.1133859 a 72.264614,72.264614 0 0 0 -10.80189,1.3266151 c -0.10205,0.018898 -0.21166,0.018898 -0.31371,0.037795 a 1.9842532,1.9842532 0 0 0 -0.034,0.015118 C 85.515837,1.433249 69.195827,19.431371 69.195827,41.212802 c 0.02268,18.701115 12.075598,30.822067 26.948049,32.035297 a 29.041909,29.041909 0 0 0 8.666464,-0.502678 c 2.30551,-0.461103 4.33134,-0.982678 7.7178,-1.171654 2.28661,-0.124725 5.08347,1.583623 6.67465,3.892916 0.7937,1.160315 1.26992,2.418899 1.34929,3.480947 0.0756,1.065827 -0.15874,1.904883 -0.86929,2.694805 -0.20032,0.222992 -1.24725,0.808819 -2.60032,1.273701 -1.36063,0.464882 -2.97071,0.903308 -4.45228,1.519371 -3.92694,1.644096 -9.0671,2.774175 -12.854186,5.336697 -2.502049,1.68945 -4.285987,3.635908 -5.38583,5.574806 -1.096064,1.942679 -1.602521,3.919373 -0.990237,5.78646 0.56315,1.71969 2.082521,2.85733 3.522522,3.2504 1.436221,0.38929 2.857325,0.30992 4.195281,0.18141 1.33795,-0.13228 2.60787,-0.34015 3.53764,-0.41574 0.7748,-0.0643 0.94488,0.034 0.84283,-0.0869 0.81638,1.19055 1.23213,2.52094 1.79906,4.07811 0.61228,1.68945 1.84441,3.78709 4.30866,4.55433 a 1.9842532,1.9842532 0 0 0 0.28725,0.0643 c 3.75685,0.57826 6.91276,-0.11339 9.35055,-1.67434 2.4378,-1.56094 4.11213,-3.87024 5.44253,-6.31559 2.61921,-4.811343 4.1726,-10.318118 6.37229,-13.247254 8.62866,-4.550554 15.12945,-9.346778 19.31339,-15.979853 4.14615,0.771024 7.25292,1.080946 7.25292,1.080946 a 1.9842532,1.9842532 0 0 0 2.16189,-1.738584 c 0,0 0.62363,-5.230869 0.43087,-11.327251 -0.18142,-5.858272 -0.86173,-12.585835 -4.40315,-16.758436 -1.06205,-9.316542 -4.49008,-19.14332 -8.95749,-26.842222 3.84756,-5.537012 5.63906,-11.5162284 5.21197,-17.703319 a 1.9842532,1.9842532 0 0 0 -1.64031,-1.8179539 c -9.94773,-1.7159066 -20.36033,-3.1974824 -30.41766,-3.1672461 z m 6.03969,4.2633099 c 7.2189,0.377953 14.60032,1.3681898 21.87214,2.5851985 -0.008,4.0856719 -1.24725,8.0163832 -3.59056,11.8828422 A 38.75908,38.75908 0 0 0 141.9858,10.74979 l -0.0265,-0.04535 a 1.9842532,1.9842532 0 0 0 -0.0151,-0.0076 1.9842532,1.9842532 0 0 0 -0.58205,-0.347717 l 0.27969,-0.0189 A 42.803177,42.803177 0 0 0 128.05067,1.5315168 Z m -17.6882,1.0658274 c 6.34961,0.00756 11.94331,0.9637802 16.8378,2.8875609 a 38.808214,38.808214 0 0 1 11.69009,7.7102414 1.9842532,1.9842532 0 0 0 0.0113,0 1.9842532,1.9842532 0 0 0 0.0227,0.03024 23.07781,23.07781 0 0 1 1.47779,1.579844 c 0.21166,0.245669 0.42709,0.483779 0.63496,0.744567 l 0.11339,0.136063 c 4.97764,6.198429 9.67182,16.705523 11.73922,26.838443 a 36.540496,36.540496 0 0 0 -11.52001,-5.238429 h -0.0151 a 29.27246,29.27246 0 0 0 -2.31685,-0.491339 h -0.008 a 23.448204,23.448204 0 0 0 -4.61858,-0.332598 c -0.75591,0.02268 -1.50048,0.09071 -2.22993,0.207874 h -0.008 l -0.27591,0.05291 c -0.63496,0.113386 -1.2548,0.253229 -1.85953,0.442205 a 12.018905,12.018905 0 0 0 -4.67906,2.683466 11.625834,11.625834 0 0 0 -0.78614,0.812599 9.5735495,9.5735495 0 0 0 -1.13386,1.579844 10.77166,10.77166 0 0 0 -1.36063,5.404728 c 0.008,2.483151 0.69921,4.996538 1.73858,7.434335 a 31.891674,31.891674 0 0 0 1.79906,3.590554 41.744909,41.744909 0 0 0 3.34488,4.954964 c 1.19434,1.534489 2.4378,2.929135 3.63591,4.123467 0.45355,0.453543 0.95244,0.88063 1.48158,1.28504 l 0.0227,0.0189 c 3.71905,2.823309 9.05953,4.437168 13.9389,5.582366 -3.77197,5.348034 -9.33544,9.550872 -17.36316,13.719693 a 1.9842532,1.9842532 0 0 0 -0.65008,0.540473 c -3.12567,4.006302 -4.51276,9.73229 -6.82205,13.984254 -1.15654,2.1241 -2.47559,3.82867 -4.10079,4.87182 -1.57606,1.00913 -3.52252,1.48157 -6.37607,1.09228 -1.03181,-0.34393 -1.22078,-0.73323 -1.70079,-2.05228 -0.49133,-1.36063 -0.97511,-3.47717 -2.5474,-5.503 a 1.9842532,1.9842532 0 0 0 -0.32882,-0.32882 c -1.34929,-1.084719 -2.60787,-0.85795 -3.81354,-0.76346 -1.19811,0.0983 -2.44914,0.30992 -3.6019,0.42331 -1.152752,0.11338 -2.192123,0.0945 -2.77417,-0.0643 -0.582048,-0.15496 -0.634961,-0.17386 -0.793702,-0.653852 -0.07559,-0.249449 -0.06425,-1.285041 0.680316,-2.596538 0.737008,-1.307717 2.101418,-2.849765 4.149926,-4.236853 2.75905,-1.870867 7.77449,-3.129451 12.1663,-4.966302 1.11119,-0.464882 2.67591,-0.903308 4.20284,-1.424883 1.52693,-0.525355 3.06142,-1.04315 4.26331,-2.373545 a 7.55906,7.55906 0 0 0 1.87843,-5.639058 c -0.14362,-1.950238 -0.91087,-3.805987 -2.03339,-5.438744 -2.24504,-3.265514 -5.99055,-5.843154 -10.16693,-5.612602 -3.71528,0.204094 -6.1115,0.816378 -8.2734,1.247245 -2.15811,0.427087 -4.119683,0.71811 -7.570394,0.434646 C 83.501348,68.232662 73.183231,58.254703 73.168113,41.209023 c 0,-19.884108 14.891348,-36.2343544 34.148057,-38.5474267 1.03181,-0.045354 2.0485,-0.068032 3.04252,-0.068032 z M 93.05222,21.513892 c -7.018587,0 -12.449772,6.478114 -12.449772,14.090088 0,7.611973 5.431185,14.090088 12.453552,14.090088 7.01859,0 12.44977,-6.478115 12.44977,-14.090088 0,-7.611974 -5.43118,-14.090088 -12.44977,-14.090088 z m 0,3.968506 c 4.542995,0 8.48505,4.361578 8.48505,10.121582 0,5.760003 -3.942055,10.121581 -8.48127,10.121581 -0.207874,0 -0.408189,-0.01134 -0.612284,-0.03024 a 5.4160665,5.7146494 0 0 0 2.165671,-4.550554 5.4160665,5.7146494 0 0 0 -5.416067,-5.71465 5.4160665,5.7146494 0 0 0 -4.410711,2.422679 12.132291,12.132291 0 0 1 -0.211654,-2.24882 c 0,-5.760004 3.945829,-10.121582 8.485045,-10.121582 z m 41.61263,14.936703 c 1.17921,-0.03024 2.43401,0.07181 3.73417,0.291024 0.64252,0.109606 1.29638,0.249449 1.9578,0.415748 0.0113,0 0.0189,0 0.0265,0.0076 h 0.0151 a 28.278443,28.278443 0 0 1 4.0063,1.337954 34.665849,34.665849 0 0 1 5.64284,2.951813 c 0.57449,0.377953 1.13008,0.759685 1.65544,1.156536 0.52913,0.393071 1.02047,0.793701 1.48913,1.20189 0.46488,0.40819 0.89953,0.816379 1.29638,1.232127 l 0.0151,0.01512 c 2.34331,2.452915 3.56787,8.893234 3.74929,14.653238 0.14362,4.633704 -0.18897,7.211343 -0.32882,8.643785 -1.18299,-0.136063 -3.06898,-0.31748 -6.25512,-0.96 -5.15906,-1.04693 -11.50111,-2.985829 -14.94426,-5.355594 l -0.0718,-0.04536 a 11.346149,11.346149 0 0 1 -0.51024,-0.385512 c -0.0605,-0.04535 -0.12472,-0.09071 -0.17764,-0.136063 a 8.0730761,8.0730761 0 0 1 -0.56693,-0.506457 37.587426,37.587426 0 0 1 -2.19212,-2.392442 39.96853,39.96853 0 0 1 -5.00032,-7.445675 c -0.26457,-0.529134 -0.51402,-1.054488 -0.73701,-1.579843 -0.89575,-2.097639 -1.40976,-4.146144 -1.41732,-5.888508 0,-1.307717 0.24189,-2.418899 0.8126,-3.401577 0.18897,-0.328819 0.41574,-0.64252 0.68409,-0.944882 0.1663,-0.188977 0.34016,-0.370394 0.52158,-0.536694 0.0378,-0.03779 0.0756,-0.06425 0.11338,-0.09449 a 7.9710288,7.9710288 0 0 1 1.73859,-1.171654 c 1.36063,-0.672756 2.97071,-1.012914 4.74331,-1.058269 z m -31.21136,9.274967 a 1.9842532,1.9842532 0 0 0 -1.92378,2.044725 c 0.0756,2.381104 -0.40441,3.77953 -0.96,4.42205 -0.5556,0.638741 -1.32284,0.963781 -3.099219,0.767245 a 1.9842532,1.9842532 0 0 0 -2.188348,1.753702 1.9842532,1.9842532 0 0 0 1.753702,2.192127 c 2.562521,0.279686 5.000315,-0.351496 6.531025,-2.116536 1.53449,-1.768821 2.01449,-4.221735 1.92756,-7.135753 a 1.9842532,1.9842532 0 0 0 -2.04094,-1.92756 z' class='class1' style='fill:%252397c0fffill-opacity:1stroke-width:3.77953stroke-linecap:roundstroke-linejoin:round' id='path1' /%3E%3C/g%3E%3C/svg%3E") !important;
-  --tab-max-width: 200px !important;
-  --tab-outline-color: transparent !important;
-  --tab-radius: 9px !important;
-  --tab-radius-active: 9px !important;
-  --tab-stacked-pane-width: 90% !important;
-  --tab-switcher-background: rgb(31, 29, 46) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(31, 29, 46), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(193, 46%, 75%) !important;
-  --tab-text-color: #6e6a86 !important;
-  --tab-text-color-active: #6e6a86 !important;
-  --tab-text-color-focused: #6e6a86 !important;
-  --tab-text-color-focused-active: #6e6a86 !important;
-  --tab-text-color-focused-active-current: #e0def4 !important;
-  --tab-text-color-focused-highlighted: rgb(235, 188, 186) !important;
-  --table-add-button-border-color: transparent !important;
-  --table-border-color: #524f67 !important;
-  --table-border-radius: 7px !important;
-  --table-drag-handle-background-active: rgb(235, 188, 186) !important;
-  --table-drag-handle-color: #6e6a86 !important;
-  --table-drag-handle-color-active: rgb(31, 29, 46) !important;
-  --table-header-background: rgb(196, 167, 231) !important;
-  --table-header-background-hover: rgb(196, 167, 231) !important;
-  --table-header-border-color: #524f67 !important;
-  --table-header-color: rgb(31, 29, 46) !important;
-  --table-row-alt-background: #21202e !important;
-  --table-row-alt-background-hover: #21202e !important;
-  --table-selection: hsla(193, 46%, 75%, 0.1) !important;
-  --table-selection-border-color: rgb(235, 188, 186) !important;
-  --tag-background: rgba(235, 188, 186, 0.1) !important;
-  --tag-background-hover: rgba(235, 188, 186, 0.2) !important;
-  --tag-border-color: hsla(193, 46%, 75%, 0.15) !important;
-  --tag-border-color-hover: hsla(193, 46%, 75%, 0.15) !important;
-  --tag-color: rgb(235, 188, 186) !important;
-  --tag-color-hover: rgb(235, 188, 186) !important;
-  --tertiary: rgb(156, 207, 216) !important;
-  --text: #e0def4 !important;
-  --text-accent: rgb(235, 188, 186) !important;
-  --text-accent-hover: rgb(156, 207, 216) !important;
-  --text-error: rgb(235, 188, 186) !important;
-  --text-faint: #6e6a86 !important;
-  --text-highlight-bg: rgba(246, 193, 119, 0.2) !important;
-  --text-muted: #6e6a86 !important;
-  --text-normal: #e0def4 !important;
-  --text-on-accent: rgb(31, 29, 46) !important;
-  --text-on-accent-inverted: rgb(31, 29, 46) !important;
-  --text-selection: rgb(64, 61, 82, 0.5) !important;
-  --text-success: rgb(156, 207, 216) !important;
-  --text-warning: rgb(246, 193, 119) !important;
-  --textHighlight: rgba(246, 193, 119, 0.2) !important;
-  --titleFont: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: transparent !important;
-  --titlebar-background-focused: transparent !important;
-  --titlebar-border-color: rgba(64, 61, 82, 0.6) !important;
-  --titlebar-text-color: #6e6a86 !important;
-  --titlebar-text-color-focused: #e0def4 !important;
-  --todoist-p4-border: rgb(235, 188, 186) !important;
-  --todoist-p4-border-hover: rgb(235, 111, 146) !important;
-  --todoist-task-separator-color: rgba(64, 61, 82, 0.6) !important;
-  --uw-background: #26233a !important;
-  --vault-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%235f6368'%3E%3Cpath d='M240-400q48 0 88 26t59 71l10 23h25q42 0 70 29.5t28 70.5q0 42-29 71t-71 29H240q-66 0-113-47T80-240q0-67 47-113.5T240-400Zm321-81q60 60 138.5 90.5T863-366q11-1 19.5 3t14.5 12q6 8 8 17t-1 19q-35 121-140.5 197T533-40q32-26 49.5-62.5T600-180q0-68-42.5-117.5T449-357q-32-57-87.5-90T240-480q-32 0-62.5 8T120-448q2-131 76.5-232T394-822q10-3 19.5-1t17.5 8q8 6 12.5 14.5T447-781q-5 86 24 162.5T561-481Z'/%3E%3C/svg%3E") !important;
-  --vault-profile-color: #e0def4 !important;
-  --vault-profile-color-hover: #e0def4 !important;
-  --quartz-icon-color: currentColor !important;
+  --canvas-background: rgb(31, 29, 46);
+  --canvas-card-label-color: #6e6a86;
+  --canvas-color-1: 49, 116, 143;
+  --canvas-color-2: 156, 207, 216;
+  --canvas-color-3: 196, 167, 231;
+  --canvas-color-4: 235, 111, 146;
+  --canvas-color-5: 235, 188, 186;
+  --canvas-color-6: 246, 193, 119;
+  --canvas-dot-pattern: #6e6a86;
+  --caret-color: rgb(235, 111, 146);
+  --checkbox-border: 5px;
+  --checkbox-border-color: rgb(235, 188, 186);
+  --checkbox-border-color-hover: rgb(235, 111, 146);
+  --checkbox-color: rgb(49, 116, 143);
+  --checkbox-color-hover: rgb(156, 207, 216);
+  --checkbox-marker-color: white;
+  --checkbox-radius: 5px;
+  --checklist-done-color: #6e6a86;
+  --clickable-icon-radius: 8px;
+  --code-background: #191724;
+  --code-border-color: rgba(64, 61, 82, 0.6);
+  --code-comment: #6e6a86;
+  --code-function: rgb(156, 207, 216);
+  --code-important: rgb(235, 188, 186);
+  --code-keyword: rgb(235, 188, 186);
+  --code-normal: #908caa;
+  --code-operator: rgb(246, 193, 119);
+  --code-property: rgb(49, 116, 143);
+  --code-punctuation: rgb(235, 111, 146);
+  --code-string: rgb(246, 193, 119);
+  --code-tag: rgb(156, 207, 216);
+  --code-value: rgb(196, 167, 231);
+  --codeFont: var(--font-text, "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --collapse-icon-color: #6e6a86;
+  --collapse-icon-color-collapsed: rgb(235, 188, 186);
+  --color-accent: hsl(193, 46%, 75%);
+  --color-accent-1: rgb(235, 188, 186);
+  --color-accent-2: rgb(156, 207, 216);
+  --color-accent-hsl: 193, 46%, 75%;
+  --color-base-00: #191724;
+  --color-base-05: #191724;
+  --color-base-10: rgb(31, 29, 46);
+  --color-base-100: #e0def4;
+  --color-base-20: rgb(31, 29, 46);
+  --color-base-25: #26233a;
+  --color-base-30: #524f67;
+  --color-base-35: rgba(64, 61, 82, 0.6);
+  --color-base-40: rgb(64, 61, 82);
+  --color-base-50: #21202e;
+  --color-base-60: #6e6a86;
+  --color-base-70: #908caa;
+  --color-blue: rgb(49, 116, 143);
+  --color-blue-rgb: 49, 116, 143;
+  --color-cyan: rgb(156, 207, 216);
+  --color-cyan-rgb: 156, 207, 216;
+  --color-green: rgb(156, 207, 216);
+  --color-green-rgb: 156, 207, 216;
+  --color-orange: rgb(246, 193, 119);
+  --color-orange-rgb: 246, 193, 119;
+  --color-pink: rgb(235, 111, 146);
+  --color-pink-rgb: 235, 111, 146;
+  --color-purple: rgb(196, 167, 231);
+  --color-purple-rgb: 196, 167, 231;
+  --color-red: rgb(235, 188, 186);
+  --color-red-rgb: 235, 188, 186;
+  --color-yellow: rgb(246, 193, 119);
+  --color-yellow-rgb: 246, 193, 119;
+  --cursor: pointer;
+  --dark: var(--text-normal, #e0def4);
+  --darkgray: var(--text-normal, #e0def4);
+  --divider-color: rgba(64, 61, 82, 0.6);
+  --divider-color-hover: rgb(235, 188, 186);
+  --divider-width: 0px;
+  --dropdown-background: rgba(64, 61, 82, 0.5);
+  --dropdown-background-hover: rgb(64, 61, 82);
+  --embed-block-shadow-hover: transparent;
+  --embed-border-start: 2px solid rgb(235, 188, 186);
+  --file-header-background: rgb(31, 29, 46);
+  --file-header-background-focused: rgb(31, 29, 46);
+  --file-header-border: 1px dashed rgb(64, 61, 82);
+  --file-header-font: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --flair-background: rgba(64, 61, 82, 0.5);
+  --flair-color: #e0def4;
+  --foam: rgb(156, 207, 216);
+  --foam-rgb: 156, 207, 216;
+  --font-interface: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-interface-theme: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif;
+  --font-mermaid: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-print: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, Arial';
+  --font-text: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-text-theme: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif;
+  --footnote-divider-color: rgba(64, 61, 82, 0.6);
+  --footnote-id-color: #6e6a86;
+  --footnote-id-color-no-occurrences: #6e6a86;
+  --gold: rgb(246, 193, 119);
+  --gold-rgb: 246, 193, 119;
+  --graph-line: rgb(64, 61, 82);
+  --graph-node: #e0def4;
+  --graph-node-attachment: rgb(235, 188, 186);
+  --graph-node-focused: rgb(235, 188, 186);
+  --graph-node-tag: rgb(156, 207, 216);
+  --graph-node-unresolved: #6e6a86;
+  --graph-text: #e0def4;
+  --gray: var(--text-muted, #6e6a86);
+  --h1-color: rgb(235, 111, 146);
+  --h1-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --h1-size: 1.45em;
+  --h2-color: rgb(235, 188, 186);
+  --h2-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --h2-size: 1.3em;
+  --h3-color: rgb(246, 193, 119);
+  --h3-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --h3-size: 1.15em;
+  --h4-color: rgb(49, 116, 143);
+  --h4-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --h4-size: 1.05em;
+  --h5-color: rgb(196, 167, 231);
+  --h5-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --h5-size: 1em;
+  --h6-color: #e0def4;
+  --h6-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --h6-variant: small-caps;
+  --headerFont: var(--font-text, "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --heading-formatting: #6e6a86;
+  --headings-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --highlight: var(--text-highlight-bg, rgba(246, 193, 119, 0.2));
+  --highlight-high: #524f67;
+  --highlight-low: #21202e;
+  --highlight-med: rgb(64, 61, 82);
+  --highlight-med-rgb: 64, 61, 82;
+  --hr-color: rgba(64, 61, 82, 0.6);
+  --icon-color: #e0def4;
+  --icon-color-active: rgb(235, 188, 186);
+  --icon-color-focused: #e0def4;
+  --icon-color-hover: #6e6a86;
+  --inline-title-color: rgb(156, 207, 216);
+  --inline-title-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --inline-title-margin-bottom: 1.2em;
+  --inline-title-size: 1.8em;
+  --input-date-separator: #6e6a86;
+  --input-placeholder-color: #6e6a86;
+  --interactive-accent: rgb(235, 188, 186);
+  --interactive-accent-hover: rgba(235, 188, 186, 0.8);
+  --interactive-accent-hsl: 193, 46%, 75%;
+  --interactive-hover: rgb(64, 61, 82);
+  --interactive-normal: rgba(64, 61, 82, 0.5);
+  --iris: rgb(196, 167, 231);
+  --iris-rgb: 196, 167, 231;
+  --italic-color: rgb(156, 207, 216);
+  --latex-color: rgb(246, 193, 119);
+  --light: var(--background-primary, rgb(31, 29, 46));
+  --lightgray: var(--background-secondary, rgb(31, 29, 46));
+  --link-color: rgb(235, 188, 186);
+  --link-color-hover: rgba(235, 188, 186, 0.6);
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-color: rgb(49, 116, 143);
+  --link-external-color-hover: rgba(49, 116, 143, 0.6);
+  --link-external-decoration: none;
+  --link-unresolved-color: #908caa;
+  --link-unresolved-decoration-color: hsla(193, 46%, 75%, 0.3);
+  --list-bullet-size: 0.35em;
+  --list-indent-editing: 0;
+  --list-marker-color: #6e6a86;
+  --list-marker-color-collapsed: rgb(235, 188, 186);
+  --list-marker-color-hover: #6e6a86;
+  --love: rgb(235, 111, 146);
+  --love-rgb: 235, 111, 146;
+  --menu-background: rgb(31, 29, 46);
+  --menu-border-color: rgb(64, 61, 82);
+  --metadata-border-color: rgba(64, 61, 82, 0.6);
+  --metadata-display-reading: none;
+  --metadata-divider-color: rgba(64, 61, 82, 0.6);
+  --metadata-input-font: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-input-text-color: #e0def4;
+  --metadata-label-font: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-label-text-color: #6e6a86;
+  --metadata-label-text-color-hover: #6e6a86;
+  --metadata-property-box-shadow-focus: 0 0 0 2px rgba(64, 61, 82, 0.6);
+  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(64, 61, 82);
+  --mk-ui-text-secondary: #e0def4;
+  --modal-background: rgb(31, 29, 46);
+  --modal-border-color: rgb(64, 61, 82);
+  --muted: #6e6a86;
+  --nav-collapse-icon-color: rgb(49, 116, 143);
+  --nav-collapse-icon-color-collapsed: #6e6a86;
+  --nav-heading-color: rgb(49, 116, 143);
+  --nav-heading-color-collapsed: rgb(49, 116, 143);
+  --nav-heading-color-collapsed-hover: #6e6a86;
+  --nav-heading-color-hover: #e0def4;
+  --nav-item-background-active: rgb(156, 207, 216);
+  --nav-item-background-selected: hsla(193, 46%, 75%, 0.15);
+  --nav-item-color: #e0def4;
+  --nav-item-color-active: rgb(31, 29, 46);
+  --nav-item-color-highlighted: rgb(235, 188, 186);
+  --nav-item-color-hover: #908caa;
+  --nav-item-color-selected: #e0def4;
+  --nav-tag-color: #6e6a86;
+  --nav-tag-color-active: #6e6a86;
+  --nav-tag-color-hover: #6e6a86;
+  --overlay: #26233a;
+  --pdf-background: rgb(31, 29, 46);
+  --pdf-page-background: rgb(31, 29, 46);
+  --pdf-shadow: 0 0 0 1px rgba(64, 61, 82, 0.6);
+  --pdf-sidebar-background: rgb(31, 29, 46);
+  --pdf-thumbnail-shadow: 0 0 0 1px rgba(64, 61, 82, 0.6);
+  --pill-border-color: rgba(64, 61, 82, 0.6);
+  --pill-border-color-hover: rgb(64, 61, 82);
+  --pill-color: #6e6a86;
+  --pill-color-hover: #e0def4;
+  --pill-color-remove: #6e6a86;
+  --pill-color-remove-hover: rgb(235, 188, 186);
+  --pine: rgb(49, 116, 143);
+  --pine-rgb: 49, 116, 143;
+  --pomodoro-timer-color: rgb(64, 61, 82, 0.5);
+  --pomodoro-timer-dot-color: rgb(235, 111, 146);
+  --prompt-background: rgb(31, 29, 46);
+  --prompt-border-color: rgb(64, 61, 82);
+  --raised-background: color-mix(in srgb, rgba(64, 61, 82, 0.5) 65%, transparent) linear-gradient(rgba(64, 61, 82, 0.5), color-mix(in srgb, rgba(64, 61, 82, 0.5) 65%, transparent));
+  --ribbon-background: rgb(31, 29, 46);
+  --ribbon-background-collapsed: rgb(31, 29, 46);
+  --rose: rgb(235, 188, 186);
+  --rose-rgb: 235, 188, 186;
+  --scrollbar-active-thumb-bg: #524f67;
+  --scrollbar-thumb-bg: rgb(64, 61, 82);
+  --search-clear-button-color: #6e6a86;
+  --search-icon-color: #6e6a86;
+  --search-result-background: #191724;
+  --search-result-background-hover: rgb(235, 188, 186);
+  --secondary: var(--text-accent, rgb(235, 188, 186));
+  --setting-group-heading-color: #e0def4;
+  --setting-items-background: #191724;
+  --setting-items-border-color: rgba(64, 61, 82, 0.6);
+  --shiki-active-tab-border-color: #6e6a86;
+  --shiki-code-background: #191724;
+  --shiki-code-comment: #6e6a86;
+  --shiki-code-function: rgb(156, 207, 216);
+  --shiki-code-important: rgb(246, 193, 119);
+  --shiki-code-keyword: rgb(235, 111, 146);
+  --shiki-code-normal: #6e6a86;
+  --shiki-code-property: rgb(156, 207, 216);
+  --shiki-code-punctuation: #6e6a86;
+  --shiki-code-string: rgb(246, 193, 119);
+  --shiki-code-value: rgb(196, 167, 231);
+  --shiki-gutter-border-color: rgba(64, 61, 82, 0.6);
+  --shiki-gutter-text-color: #6e6a86;
+  --shiki-gutter-text-color-highlight: #6e6a86;
+  --shiki-highlight-green: rgba(156, 207, 216, 0.5);
+  --shiki-highlight-green-background: rgba(156, 207, 216, 0.1);
+  --shiki-highlight-neutral: #6e6a86;
+  --shiki-highlight-red: rgba(235, 188, 186, 0.5);
+  --shiki-highlight-red-background: rgba(235, 188, 186, 0.1);
+  --shiki-terminal-dots-color: #6e6a86;
+  --slider-thumb-border-color: rgb(64, 61, 82);
+  --slider-track-background: rgb(64, 61, 82);
+  --status-bar-background: #191724;
+  --status-bar-border-color: rgba(64, 61, 82, 0.6);
+  --status-bar-font-size: 0.733em;
+  --status-bar-radius: 12px 0 0 12px;
+  --status-bar-text-color: #6e6a86;
+  --subtle: #908caa;
+  --suggestion-background: rgb(31, 29, 46);
+  --surface: rgb(31, 29, 46);
+  --surface-rgb: 31, 29, 46;
+  --sync-avatar-color-1: rgb(235, 188, 186);
+  --sync-avatar-color-2: rgb(246, 193, 119);
+  --sync-avatar-color-3: rgb(246, 193, 119);
+  --sync-avatar-color-4: rgb(156, 207, 216);
+  --sync-avatar-color-5: rgb(156, 207, 216);
+  --sync-avatar-color-6: rgb(49, 116, 143);
+  --sync-avatar-color-7: rgb(196, 167, 231);
+  --sync-avatar-color-8: rgb(235, 111, 146);
+  --tab-background-active: rgb(31, 29, 46);
+  --tab-container-background: transparent;
+  --tab-curve: 0px;
+  --tab-divider-color: transparent;
+  --tab-img: url("%22data:image/svg+xml,%3Csvg version='1.1' id='svg1' xml:space='preserve' width='93.058769' height='115.69744' xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'%3E%3Cdefs id='defs1' /%3E%3Csodipodi:namedview id='namedview1' pagecolor='%2523ffffff' bordercolor='%2523000000' borderopacity='0.25' inkscape:showpageshadow='2' inkscape:pageopacity='0.0' inkscape:pagecheckerboard='0' inkscape:deskcolor='%2523d1d1d1' /%3E%3Cinkscape:clipboard style='font-variation-settings:normalopacity:1vector-effect:nonefill:%252300ff00fill-opacity:1stroke-width:3.77953stroke-linecap:roundstroke-linejoin:roundstroke-miterlimit:4stroke-dasharray:nonestroke-dashoffset:0stroke-opacity:1-inkscape-stroke:nonestop-color:%2523000000stop-opacity:1' min='69.195827,-2.7355726' max='162.2546,112.96187' geom-min='69.195827,-2.7355726' geom-max='162.2546,112.96187' /%3E%3Cg id='g1' transform='translate(-69.195827,2.7355726")'%3E%3Cpath d='m 122.01098,-2.7355726 c -1.43622,0.00378 -2.86866,0.037795 -4.28599,0.1133859 a 72.264614,72.264614 0 0 0 -10.80189,1.3266151 c -0.10205,0.018898 -0.21166,0.018898 -0.31371,0.037795 a 1.9842532,1.9842532 0 0 0 -0.034,0.015118 C 85.515837,1.433249 69.195827,19.431371 69.195827,41.212802 c 0.02268,18.701115 12.075598,30.822067 26.948049,32.035297 a 29.041909,29.041909 0 0 0 8.666464,-0.502678 c 2.30551,-0.461103 4.33134,-0.982678 7.7178,-1.171654 2.28661,-0.124725 5.08347,1.583623 6.67465,3.892916 0.7937,1.160315 1.26992,2.418899 1.34929,3.480947 0.0756,1.065827 -0.15874,1.904883 -0.86929,2.694805 -0.20032,0.222992 -1.24725,0.808819 -2.60032,1.273701 -1.36063,0.464882 -2.97071,0.903308 -4.45228,1.519371 -3.92694,1.644096 -9.0671,2.774175 -12.854186,5.336697 -2.502049,1.68945 -4.285987,3.635908 -5.38583,5.574806 -1.096064,1.942679 -1.602521,3.919373 -0.990237,5.78646 0.56315,1.71969 2.082521,2.85733 3.522522,3.2504 1.436221,0.38929 2.857325,0.30992 4.195281,0.18141 1.33795,-0.13228 2.60787,-0.34015 3.53764,-0.41574 0.7748,-0.0643 0.94488,0.034 0.84283,-0.0869 0.81638,1.19055 1.23213,2.52094 1.79906,4.07811 0.61228,1.68945 1.84441,3.78709 4.30866,4.55433 a 1.9842532,1.9842532 0 0 0 0.28725,0.0643 c 3.75685,0.57826 6.91276,-0.11339 9.35055,-1.67434 2.4378,-1.56094 4.11213,-3.87024 5.44253,-6.31559 2.61921,-4.811343 4.1726,-10.318118 6.37229,-13.247254 8.62866,-4.550554 15.12945,-9.346778 19.31339,-15.979853 4.14615,0.771024 7.25292,1.080946 7.25292,1.080946 a 1.9842532,1.9842532 0 0 0 2.16189,-1.738584 c 0,0 0.62363,-5.230869 0.43087,-11.327251 -0.18142,-5.858272 -0.86173,-12.585835 -4.40315,-16.758436 -1.06205,-9.316542 -4.49008,-19.14332 -8.95749,-26.842222 3.84756,-5.537012 5.63906,-11.5162284 5.21197,-17.703319 a 1.9842532,1.9842532 0 0 0 -1.64031,-1.8179539 c -9.94773,-1.7159066 -20.36033,-3.1974824 -30.41766,-3.1672461 z m 6.03969,4.2633099 c 7.2189,0.377953 14.60032,1.3681898 21.87214,2.5851985 -0.008,4.0856719 -1.24725,8.0163832 -3.59056,11.8828422 A 38.75908,38.75908 0 0 0 141.9858,10.74979 l -0.0265,-0.04535 a 1.9842532,1.9842532 0 0 0 -0.0151,-0.0076 1.9842532,1.9842532 0 0 0 -0.58205,-0.347717 l 0.27969,-0.0189 A 42.803177,42.803177 0 0 0 128.05067,1.5315168 Z m -17.6882,1.0658274 c 6.34961,0.00756 11.94331,0.9637802 16.8378,2.8875609 a 38.808214,38.808214 0 0 1 11.69009,7.7102414 1.9842532,1.9842532 0 0 0 0.0113,0 1.9842532,1.9842532 0 0 0 0.0227,0.03024 23.07781,23.07781 0 0 1 1.47779,1.579844 c 0.21166,0.245669 0.42709,0.483779 0.63496,0.744567 l 0.11339,0.136063 c 4.97764,6.198429 9.67182,16.705523 11.73922,26.838443 a 36.540496,36.540496 0 0 0 -11.52001,-5.238429 h -0.0151 a 29.27246,29.27246 0 0 0 -2.31685,-0.491339 h -0.008 a 23.448204,23.448204 0 0 0 -4.61858,-0.332598 c -0.75591,0.02268 -1.50048,0.09071 -2.22993,0.207874 h -0.008 l -0.27591,0.05291 c -0.63496,0.113386 -1.2548,0.253229 -1.85953,0.442205 a 12.018905,12.018905 0 0 0 -4.67906,2.683466 11.625834,11.625834 0 0 0 -0.78614,0.812599 9.5735495,9.5735495 0 0 0 -1.13386,1.579844 10.77166,10.77166 0 0 0 -1.36063,5.404728 c 0.008,2.483151 0.69921,4.996538 1.73858,7.434335 a 31.891674,31.891674 0 0 0 1.79906,3.590554 41.744909,41.744909 0 0 0 3.34488,4.954964 c 1.19434,1.534489 2.4378,2.929135 3.63591,4.123467 0.45355,0.453543 0.95244,0.88063 1.48158,1.28504 l 0.0227,0.0189 c 3.71905,2.823309 9.05953,4.437168 13.9389,5.582366 -3.77197,5.348034 -9.33544,9.550872 -17.36316,13.719693 a 1.9842532,1.9842532 0 0 0 -0.65008,0.540473 c -3.12567,4.006302 -4.51276,9.73229 -6.82205,13.984254 -1.15654,2.1241 -2.47559,3.82867 -4.10079,4.87182 -1.57606,1.00913 -3.52252,1.48157 -6.37607,1.09228 -1.03181,-0.34393 -1.22078,-0.73323 -1.70079,-2.05228 -0.49133,-1.36063 -0.97511,-3.47717 -2.5474,-5.503 a 1.9842532,1.9842532 0 0 0 -0.32882,-0.32882 c -1.34929,-1.084719 -2.60787,-0.85795 -3.81354,-0.76346 -1.19811,0.0983 -2.44914,0.30992 -3.6019,0.42331 -1.152752,0.11338 -2.192123,0.0945 -2.77417,-0.0643 -0.582048,-0.15496 -0.634961,-0.17386 -0.793702,-0.653852 -0.07559,-0.249449 -0.06425,-1.285041 0.680316,-2.596538 0.737008,-1.307717 2.101418,-2.849765 4.149926,-4.236853 2.75905,-1.870867 7.77449,-3.129451 12.1663,-4.966302 1.11119,-0.464882 2.67591,-0.903308 4.20284,-1.424883 1.52693,-0.525355 3.06142,-1.04315 4.26331,-2.373545 a 7.55906,7.55906 0 0 0 1.87843,-5.639058 c -0.14362,-1.950238 -0.91087,-3.805987 -2.03339,-5.438744 -2.24504,-3.265514 -5.99055,-5.843154 -10.16693,-5.612602 -3.71528,0.204094 -6.1115,0.816378 -8.2734,1.247245 -2.15811,0.427087 -4.119683,0.71811 -7.570394,0.434646 C 83.501348,68.232662 73.183231,58.254703 73.168113,41.209023 c 0,-19.884108 14.891348,-36.2343544 34.148057,-38.5474267 1.03181,-0.045354 2.0485,-0.068032 3.04252,-0.068032 z M 93.05222,21.513892 c -7.018587,0 -12.449772,6.478114 -12.449772,14.090088 0,7.611973 5.431185,14.090088 12.453552,14.090088 7.01859,0 12.44977,-6.478115 12.44977,-14.090088 0,-7.611974 -5.43118,-14.090088 -12.44977,-14.090088 z m 0,3.968506 c 4.542995,0 8.48505,4.361578 8.48505,10.121582 0,5.760003 -3.942055,10.121581 -8.48127,10.121581 -0.207874,0 -0.408189,-0.01134 -0.612284,-0.03024 a 5.4160665,5.7146494 0 0 0 2.165671,-4.550554 5.4160665,5.7146494 0 0 0 -5.416067,-5.71465 5.4160665,5.7146494 0 0 0 -4.410711,2.422679 12.132291,12.132291 0 0 1 -0.211654,-2.24882 c 0,-5.760004 3.945829,-10.121582 8.485045,-10.121582 z m 41.61263,14.936703 c 1.17921,-0.03024 2.43401,0.07181 3.73417,0.291024 0.64252,0.109606 1.29638,0.249449 1.9578,0.415748 0.0113,0 0.0189,0 0.0265,0.0076 h 0.0151 a 28.278443,28.278443 0 0 1 4.0063,1.337954 34.665849,34.665849 0 0 1 5.64284,2.951813 c 0.57449,0.377953 1.13008,0.759685 1.65544,1.156536 0.52913,0.393071 1.02047,0.793701 1.48913,1.20189 0.46488,0.40819 0.89953,0.816379 1.29638,1.232127 l 0.0151,0.01512 c 2.34331,2.452915 3.56787,8.893234 3.74929,14.653238 0.14362,4.633704 -0.18897,7.211343 -0.32882,8.643785 -1.18299,-0.136063 -3.06898,-0.31748 -6.25512,-0.96 -5.15906,-1.04693 -11.50111,-2.985829 -14.94426,-5.355594 l -0.0718,-0.04536 a 11.346149,11.346149 0 0 1 -0.51024,-0.385512 c -0.0605,-0.04535 -0.12472,-0.09071 -0.17764,-0.136063 a 8.0730761,8.0730761 0 0 1 -0.56693,-0.506457 37.587426,37.587426 0 0 1 -2.19212,-2.392442 39.96853,39.96853 0 0 1 -5.00032,-7.445675 c -0.26457,-0.529134 -0.51402,-1.054488 -0.73701,-1.579843 -0.89575,-2.097639 -1.40976,-4.146144 -1.41732,-5.888508 0,-1.307717 0.24189,-2.418899 0.8126,-3.401577 0.18897,-0.328819 0.41574,-0.64252 0.68409,-0.944882 0.1663,-0.188977 0.34016,-0.370394 0.52158,-0.536694 0.0378,-0.03779 0.0756,-0.06425 0.11338,-0.09449 a 7.9710288,7.9710288 0 0 1 1.73859,-1.171654 c 1.36063,-0.672756 2.97071,-1.012914 4.74331,-1.058269 z m -31.21136,9.274967 a 1.9842532,1.9842532 0 0 0 -1.92378,2.044725 c 0.0756,2.381104 -0.40441,3.77953 -0.96,4.42205 -0.5556,0.638741 -1.32284,0.963781 -3.099219,0.767245 a 1.9842532,1.9842532 0 0 0 -2.188348,1.753702 1.9842532,1.9842532 0 0 0 1.753702,2.192127 c 2.562521,0.279686 5.000315,-0.351496 6.531025,-2.116536 1.53449,-1.768821 2.01449,-4.221735 1.92756,-7.135753 a 1.9842532,1.9842532 0 0 0 -2.04094,-1.92756 z' class='class1' style='fill:%252397c0fffill-opacity:1stroke-width:3.77953stroke-linecap:roundstroke-linejoin:round' id='path1' /%3E%3C/g%3E%3C/svg%3E");
+  --tab-max-width: 200px;
+  --tab-outline-color: transparent;
+  --tab-radius: 9px;
+  --tab-radius-active: 9px;
+  --tab-stacked-pane-width: 90%;
+  --tab-switcher-background: rgb(31, 29, 46);
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(31, 29, 46), transparent);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(193, 46%, 75%);
+  --tab-text-color: #6e6a86;
+  --tab-text-color-active: #6e6a86;
+  --tab-text-color-focused: #6e6a86;
+  --tab-text-color-focused-active: #6e6a86;
+  --tab-text-color-focused-active-current: #e0def4;
+  --tab-text-color-focused-highlighted: rgb(235, 188, 186);
+  --table-add-button-border-color: transparent;
+  --table-border-color: #524f67;
+  --table-border-radius: 7px;
+  --table-drag-handle-background-active: rgb(235, 188, 186);
+  --table-drag-handle-color: #6e6a86;
+  --table-drag-handle-color-active: rgb(31, 29, 46);
+  --table-header-background: rgb(196, 167, 231);
+  --table-header-background-hover: rgb(196, 167, 231);
+  --table-header-border-color: #524f67;
+  --table-header-color: rgb(31, 29, 46);
+  --table-row-alt-background: #21202e;
+  --table-row-alt-background-hover: #21202e;
+  --table-selection: hsla(193, 46%, 75%, 0.1);
+  --table-selection-border-color: rgb(235, 188, 186);
+  --tag-background: rgba(235, 188, 186, 0.1);
+  --tag-background-hover: rgba(235, 188, 186, 0.2);
+  --tag-border-color: hsla(193, 46%, 75%, 0.15);
+  --tag-border-color-hover: hsla(193, 46%, 75%, 0.15);
+  --tag-color: rgb(235, 188, 186);
+  --tag-color-hover: rgb(235, 188, 186);
+  --tertiary: var(--text-accent-hover, rgb(156, 207, 216));
+  --text: #e0def4;
+  --text-accent: rgb(235, 188, 186);
+  --text-accent-hover: rgb(156, 207, 216);
+  --text-error: rgb(235, 188, 186);
+  --text-faint: #6e6a86;
+  --text-highlight-bg: rgba(246, 193, 119, 0.2);
+  --text-muted: #6e6a86;
+  --text-normal: #e0def4;
+  --text-on-accent: rgb(31, 29, 46);
+  --text-on-accent-inverted: rgb(31, 29, 46);
+  --text-selection: rgb(64, 61, 82, 0.5);
+  --text-success: rgb(156, 207, 216);
+  --text-warning: rgb(246, 193, 119);
+  --textHighlight: var(--text-highlight-bg, rgba(246, 193, 119, 0.2));
+  --titleFont: var(--font-text, "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --titlebar-background: transparent;
+  --titlebar-background-focused: transparent;
+  --titlebar-border-color: rgba(64, 61, 82, 0.6);
+  --titlebar-text-color: #6e6a86;
+  --titlebar-text-color-focused: #e0def4;
+  --todoist-p4-border: rgb(235, 188, 186);
+  --todoist-p4-border-hover: rgb(235, 111, 146);
+  --todoist-task-separator-color: rgba(64, 61, 82, 0.6);
+  --uw-background: #26233a;
+  --vault-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%235f6368'%3E%3Cpath d='M240-400q48 0 88 26t59 71l10 23h25q42 0 70 29.5t28 70.5q0 42-29 71t-71 29H240q-66 0-113-47T80-240q0-67 47-113.5T240-400Zm321-81q60 60 138.5 90.5T863-366q11-1 19.5 3t14.5 12q6 8 8 17t-1 19q-35 121-140.5 197T533-40q32-26 49.5-62.5T600-180q0-68-42.5-117.5T449-357q-32-57-87.5-90T240-480q-32 0-62.5 8T120-448q2-131 76.5-232T394-822q10-3 19.5-1t17.5 8q8 6 12.5 14.5T447-781q-5 86 24 162.5T561-481Z'/%3E%3C/svg%3E");
+  --vault-profile-color: #e0def4;
+  --vault-profile-color-hover: #e0def4;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -2663,56 +2664,56 @@ html[saved-theme="dark"] body ul.tags > li {
   },
   light: {
     base: `:root:root {
-  --accent-h: 187 !important;
-  --accent-l: 45% !important;
-  --accent-s: 30% !important;
-  --background: #faf4ed !important;
-  --background-modifier-active-hover: hsla(187, 30%, 45%, 0.1) !important;
-  --background-modifier-border: rgba(223, 218, 217, 0.6) !important;
-  --background-modifier-border-focus: rgba(223, 218, 217, 0.6) !important;
-  --background-modifier-border-hover: rgb(223, 218, 217) !important;
-  --background-modifier-error: rgb(215, 130, 126) !important;
-  --background-modifier-error-hover: rgb(215, 130, 126) !important;
-  --background-modifier-error-rgb: 215, 130, 126 !important;
-  --background-modifier-form-field: #f2e9e1 !important;
-  --background-modifier-form-field-hover: transparent !important;
-  --background-modifier-success: rgb(86, 148, 159) !important;
-  --background-modifier-success-rgb: 86, 148, 159 !important;
-  --background-primary: rgb(255, 250, 243) !important;
-  --background-primary-alt: #f2e9e1 !important;
-  --background-secondary: rgb(255, 250, 243) !important;
-  --background-secondary-alt: #f2e9e1 !important;
-  --base: #faf4ed !important;
-  --bases-cards-background: #faf4ed !important;
-  --bases-cards-cover-background: #f2e9e1 !important;
-  --bases-cards-shadow: 0 0 0 1px rgba(223, 218, 217, 0.6) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(223, 218, 217) !important;
-  --bases-embed-border-color: rgb(223, 218, 217) !important;
-  --bases-embed-border-radius: 11px !important;
-  --bases-embed-radius: 10px !important;
-  --bases-group-heading-property-color: #9893a5 !important;
-  --bases-header-border-width: 0px !important;
-  --bases-table-border-color: #cecacd !important;
-  --bases-table-cell-background-active: rgb(255, 250, 243) !important;
-  --bases-table-cell-background-disabled: #f2e9e1 !important;
-  --bases-table-cell-background-selected: hsla(187, 30%, 45%, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgba(223, 218, 217, 0.6) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(215, 130, 126) !important;
-  --bases-table-column-border-width: 0px !important;
-  --bases-table-container-border-radius: 10px !important;
-  --bases-table-group-background: transparent !important;
-  --bases-table-header-background: #f2e9e1 !important;
-  --bases-table-header-background-hover: transparent !important;
-  --bases-table-header-color: #575279 !important;
-  --bases-table-row-border-width: 0px !important;
-  --bases-table-summary-background: rgb(255, 250, 243) !important;
-  --bases-toolbar-label-display: none !important;
-  --blockquote-border-color: rgb(234, 157, 52) !important;
-  --blockquote-border-thickness: 3px !important;
-  --blur-background: color-mix(in srgb, rgb(255, 250, 243) 65%, transparent) linear-gradient(rgb(255, 250, 243), color-mix(in srgb, rgb(255, 250, 243) 65%, transparent)) !important;
-  --bodyFont: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --bold-color: rgb(180, 99, 122) !important;
-  --button-radius: 7px !important;
+  --accent-h: 187;
+  --accent-l: 45%;
+  --accent-s: 30%;
+  --background: #faf4ed;
+  --background-modifier-active-hover: hsla(187, 30%, 45%, 0.1);
+  --background-modifier-border: rgba(223, 218, 217, 0.6);
+  --background-modifier-border-focus: rgba(223, 218, 217, 0.6);
+  --background-modifier-border-hover: rgb(223, 218, 217);
+  --background-modifier-error: rgb(215, 130, 126);
+  --background-modifier-error-hover: rgb(215, 130, 126);
+  --background-modifier-error-rgb: 215, 130, 126;
+  --background-modifier-form-field: #f2e9e1;
+  --background-modifier-form-field-hover: transparent;
+  --background-modifier-success: rgb(86, 148, 159);
+  --background-modifier-success-rgb: 86, 148, 159;
+  --background-primary: rgb(255, 250, 243);
+  --background-primary-alt: #f2e9e1;
+  --background-secondary: rgb(255, 250, 243);
+  --background-secondary-alt: #f2e9e1;
+  --base: #faf4ed;
+  --bases-cards-background: #faf4ed;
+  --bases-cards-cover-background: #f2e9e1;
+  --bases-cards-shadow: 0 0 0 1px rgba(223, 218, 217, 0.6);
+  --bases-cards-shadow-hover: 0 0 0 1px rgb(223, 218, 217);
+  --bases-embed-border-color: rgb(223, 218, 217);
+  --bases-embed-border-radius: 11px;
+  --bases-embed-radius: 10px;
+  --bases-group-heading-property-color: #9893a5;
+  --bases-header-border-width: 0px;
+  --bases-table-border-color: #cecacd;
+  --bases-table-cell-background-active: rgb(255, 250, 243);
+  --bases-table-cell-background-disabled: #f2e9e1;
+  --bases-table-cell-background-selected: hsla(187, 30%, 45%, 0.1);
+  --bases-table-cell-shadow-active: 0 0 0 2px rgba(223, 218, 217, 0.6);
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(215, 130, 126);
+  --bases-table-column-border-width: 0px;
+  --bases-table-container-border-radius: 10px;
+  --bases-table-group-background: transparent;
+  --bases-table-header-background: #f2e9e1;
+  --bases-table-header-background-hover: transparent;
+  --bases-table-header-color: #575279;
+  --bases-table-row-border-width: 0px;
+  --bases-table-summary-background: rgb(255, 250, 243);
+  --bases-toolbar-label-display: none;
+  --blockquote-border-color: rgb(234, 157, 52);
+  --blockquote-border-thickness: 3px;
+  --blur-background: color-mix(in srgb, rgb(255, 250, 243) 65%, transparent) linear-gradient(rgb(255, 250, 243), color-mix(in srgb, rgb(255, 250, 243) 65%, transparent));
+  --bodyFont: var(--font-text, "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --bold-color: rgb(180, 99, 122);
+  --button-radius: 7px;
   --callout-bug: 215, 130, 126;
   --callout-default: 40, 105, 131;
   --callout-error: 215, 130, 126;
@@ -2730,349 +2731,349 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-title-weight: 400;
   --callout-todo: 40, 105, 131;
   --callout-warning: 234, 157, 52;
-  --canvas-background: rgb(255, 250, 243) !important;
-  --canvas-card-label-color: #9893a5 !important;
-  --canvas-color-1: 40, 105, 131 !important;
-  --canvas-color-2: 86, 148, 159 !important;
-  --canvas-color-3: 144, 122, 169 !important;
-  --canvas-color-4: 180, 99, 122 !important;
-  --canvas-color-5: 215, 130, 126 !important;
-  --canvas-color-6: 234, 157, 52 !important;
-  --canvas-dot-pattern: #9893a5 !important;
-  --caret-color: rgb(180, 99, 122) !important;
-  --checkbox-border: 5px !important;
-  --checkbox-border-color: rgb(215, 130, 126) !important;
-  --checkbox-border-color-hover: rgb(180, 99, 122) !important;
-  --checkbox-color: rgb(40, 105, 131) !important;
-  --checkbox-color-hover: rgb(86, 148, 159) !important;
-  --checkbox-marker-color: white !important;
-  --checkbox-radius: 5px !important;
-  --checklist-done-color: #9893a5 !important;
-  --clickable-icon-radius: 8px !important;
-  --code-background: #faf4ed !important;
-  --code-border-color: rgba(223, 218, 217, 0.6) !important;
-  --code-comment: #9893a5 !important;
-  --code-function: rgb(86, 148, 159) !important;
-  --code-important: rgb(215, 130, 126) !important;
-  --code-keyword: rgb(215, 130, 126) !important;
-  --code-normal: #797593 !important;
-  --code-operator: rgb(234, 157, 52) !important;
-  --code-property: rgb(40, 105, 131) !important;
-  --code-punctuation: rgb(180, 99, 122) !important;
-  --code-string: rgb(234, 157, 52) !important;
-  --code-tag: rgb(86, 148, 159) !important;
-  --code-value: rgb(144, 122, 169) !important;
-  --codeFont: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --collapse-icon-color: #9893a5 !important;
-  --collapse-icon-color-collapsed: rgb(215, 130, 126) !important;
-  --color-accent: hsl(187, 30%, 45%) !important;
-  --color-accent-1: rgb(215, 130, 126) !important;
-  --color-accent-2: rgb(86, 148, 159) !important;
-  --color-accent-hsl: 187, 30%, 45% !important;
-  --color-base-00: #faf4ed !important;
-  --color-base-05: #faf4ed !important;
-  --color-base-10: rgb(255, 250, 243) !important;
-  --color-base-100: #575279 !important;
-  --color-base-20: rgb(255, 250, 243) !important;
-  --color-base-25: #f2e9e1 !important;
-  --color-base-30: #cecacd !important;
-  --color-base-35: rgba(223, 218, 217, 0.6) !important;
-  --color-base-40: rgb(223, 218, 217) !important;
-  --color-base-50: #f4ede8 !important;
-  --color-base-60: #9893a5 !important;
-  --color-base-70: #797593 !important;
-  --color-blue: rgb(40, 105, 131) !important;
-  --color-blue-rgb: 40, 105, 131 !important;
-  --color-cyan: rgb(86, 148, 159) !important;
-  --color-cyan-rgb: 86, 148, 159 !important;
-  --color-green: rgb(86, 148, 159) !important;
-  --color-green-rgb: 86, 148, 159 !important;
-  --color-orange: rgb(234, 157, 52) !important;
-  --color-orange-rgb: 234, 157, 52 !important;
-  --color-pink: rgb(180, 99, 122) !important;
-  --color-pink-rgb: 180, 99, 122 !important;
-  --color-purple: rgb(144, 122, 169) !important;
-  --color-purple-rgb: 144, 122, 169 !important;
-  --color-red: rgb(215, 130, 126) !important;
-  --color-red-rgb: 215, 130, 126 !important;
-  --color-yellow: rgb(234, 157, 52) !important;
-  --color-yellow-rgb: 234, 157, 52 !important;
-  --cursor: pointer !important;
-  --dark: #575279 !important;
-  --darkgray: #575279 !important;
-  --divider-color: rgba(223, 218, 217, 0.6) !important;
-  --divider-color-hover: rgb(215, 130, 126) !important;
-  --divider-width: 0px !important;
-  --dropdown-background: rgba(223, 218, 217, 0.5) !important;
-  --dropdown-background-hover: rgb(223, 218, 217) !important;
-  --embed-block-shadow-hover: transparent !important;
-  --embed-border-start: 2px solid rgb(215, 130, 126) !important;
-  --file-header-background: rgb(255, 250, 243) !important;
-  --file-header-background-focused: rgb(255, 250, 243) !important;
-  --file-header-border: 1px dashed rgb(223, 218, 217) !important;
-  --file-header-font: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --flair-background: rgba(223, 218, 217, 0.5) !important;
-  --flair-color: #575279 !important;
-  --foam: rgb(86, 148, 159) !important;
-  --foam-rgb: 86, 148, 159 !important;
-  --font-interface: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-interface-theme: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif !important;
-  --font-mermaid: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-print: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, Arial' !important;
-  --font-text: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-text-theme: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif !important;
-  --footnote-divider-color: rgba(223, 218, 217, 0.6) !important;
-  --footnote-id-color: #9893a5 !important;
-  --footnote-id-color-no-occurrences: #9893a5 !important;
-  --gold: rgb(234, 157, 52) !important;
-  --gold-rgb: 234, 157, 52 !important;
-  --graph-line: rgb(223, 218, 217) !important;
-  --graph-node: #575279 !important;
-  --graph-node-attachment: rgb(215, 130, 126) !important;
-  --graph-node-focused: rgb(215, 130, 126) !important;
-  --graph-node-tag: rgb(86, 148, 159) !important;
-  --graph-node-unresolved: #9893a5 !important;
-  --graph-text: #575279 !important;
-  --gray: #9893a5 !important;
-  --h1-color: rgb(180, 99, 122) !important;
-  --h1-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif !important;
-  --h1-size: 1.45em !important;
-  --h2-color: rgb(215, 130, 126) !important;
-  --h2-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif !important;
-  --h2-size: 1.3em !important;
-  --h3-color: rgb(234, 157, 52) !important;
-  --h3-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif !important;
-  --h3-size: 1.15em !important;
-  --h4-color: rgb(40, 105, 131) !important;
-  --h4-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif !important;
-  --h4-size: 1.05em !important;
-  --h5-color: rgb(144, 122, 169) !important;
-  --h5-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif !important;
-  --h5-size: 1em !important;
-  --h6-color: #575279 !important;
-  --h6-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif !important;
-  --h6-variant: small-caps !important;
-  --headerFont: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: #9893a5 !important;
-  --headings-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif !important;
-  --highlight: rgba(234, 157, 52, 0.2) !important;
-  --highlight-high: #cecacd !important;
-  --highlight-low: #f4ede8 !important;
-  --highlight-med: rgb(223, 218, 217) !important;
-  --highlight-med-rgb: 223, 218, 217 !important;
-  --hr-color: rgba(223, 218, 217, 0.6) !important;
-  --icon-color: #575279 !important;
-  --icon-color-active: rgb(215, 130, 126) !important;
-  --icon-color-focused: #575279 !important;
-  --icon-color-hover: #9893a5 !important;
-  --inline-title-color: rgb(86, 148, 159) !important;
-  --inline-title-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif !important;
-  --inline-title-margin-bottom: 1.2em !important;
-  --inline-title-size: 1.8em !important;
-  --input-date-separator: #9893a5 !important;
-  --input-placeholder-color: #9893a5 !important;
-  --interactive-accent: rgb(215, 130, 126) !important;
-  --interactive-accent-hover: rgba(215, 130, 126, 0.8) !important;
-  --interactive-accent-hsl: 187, 30%, 45% !important;
-  --interactive-hover: rgb(223, 218, 217) !important;
-  --interactive-normal: rgba(223, 218, 217, 0.5) !important;
-  --iris: rgb(144, 122, 169) !important;
-  --iris-rgb: 144, 122, 169 !important;
-  --italic-color: rgb(86, 148, 159) !important;
-  --latex-color: rgb(40, 105, 131) !important;
-  --light: rgb(255, 250, 243) !important;
-  --lightgray: rgb(255, 250, 243) !important;
-  --link-color: rgb(215, 130, 126) !important;
-  --link-color-hover: rgba(215, 130, 126, 0.6) !important;
-  --link-decoration: none !important;
-  --link-decoration-hover: none !important;
-  --link-external-color: rgb(40, 105, 131) !important;
-  --link-external-color-hover: rgba(40, 105, 131, 0.6) !important;
-  --link-external-decoration: none !important;
-  --link-unresolved-color: #797593 !important;
-  --link-unresolved-decoration-color: hsla(187, 30%, 45%, 0.3) !important;
-  --list-bullet-size: 0.35em !important;
-  --list-indent-editing: 0 !important;
-  --list-marker-color: #9893a5 !important;
-  --list-marker-color-collapsed: rgb(215, 130, 126) !important;
-  --list-marker-color-hover: #9893a5 !important;
-  --love: rgb(180, 99, 122) !important;
-  --love-rgb: 180, 99, 122 !important;
-  --menu-background: rgb(255, 250, 243) !important;
-  --menu-border-color: rgb(223, 218, 217) !important;
-  --metadata-border-color: rgba(223, 218, 217, 0.6) !important;
-  --metadata-display-reading: none !important;
-  --metadata-divider-color: rgba(223, 218, 217, 0.6) !important;
-  --metadata-input-font: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: #575279 !important;
-  --metadata-label-font: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: #9893a5 !important;
-  --metadata-label-text-color-hover: #9893a5 !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgba(223, 218, 217, 0.6) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(223, 218, 217) !important;
-  --mk-ui-text-secondary: #575279 !important;
-  --modal-background: rgb(255, 250, 243) !important;
-  --modal-border-color: rgb(223, 218, 217) !important;
-  --muted: #9893a5 !important;
-  --nav-collapse-icon-color: rgb(40, 105, 131) !important;
-  --nav-collapse-icon-color-collapsed: #9893a5 !important;
-  --nav-heading-color: rgb(40, 105, 131) !important;
-  --nav-heading-color-collapsed: rgb(40, 105, 131) !important;
-  --nav-heading-color-collapsed-hover: #9893a5 !important;
-  --nav-heading-color-hover: #575279 !important;
-  --nav-item-background-active: rgb(86, 148, 159) !important;
-  --nav-item-background-selected: hsla(187, 30%, 45%, 0.15) !important;
-  --nav-item-color: #575279 !important;
-  --nav-item-color-active: rgb(255, 250, 243) !important;
-  --nav-item-color-highlighted: rgb(215, 130, 126) !important;
-  --nav-item-color-hover: #797593 !important;
-  --nav-item-color-selected: #575279 !important;
-  --nav-tag-color: #9893a5 !important;
-  --nav-tag-color-active: #9893a5 !important;
-  --nav-tag-color-hover: #9893a5 !important;
-  --overlay: #f2e9e1 !important;
-  --pdf-background: rgb(255, 250, 243) !important;
-  --pdf-page-background: rgb(255, 250, 243) !important;
-  --pdf-sidebar-background: rgb(255, 250, 243) !important;
-  --pill-border-color: rgba(223, 218, 217, 0.6) !important;
-  --pill-border-color-hover: rgb(223, 218, 217) !important;
-  --pill-color: #9893a5 !important;
-  --pill-color-hover: #575279 !important;
-  --pill-color-remove: #9893a5 !important;
-  --pill-color-remove-hover: rgb(215, 130, 126) !important;
-  --pine: rgb(40, 105, 131) !important;
-  --pine-rgb: 40, 105, 131 !important;
-  --pomodoro-timer-color: rgb(223, 218, 217, 0.5) !important;
-  --pomodoro-timer-dot-color: rgb(180, 99, 122) !important;
-  --prompt-background: rgb(255, 250, 243) !important;
-  --prompt-border-color: rgb(223, 218, 217) !important;
-  --raised-background: color-mix(in srgb, rgb(255, 250, 243) 65%, transparent) linear-gradient(rgb(255, 250, 243), color-mix(in srgb, rgb(255, 250, 243) 65%, transparent)) !important;
-  --ribbon-background: rgb(255, 250, 243) !important;
-  --ribbon-background-collapsed: rgb(255, 250, 243) !important;
-  --rose: rgb(215, 130, 126) !important;
-  --rose-rgb: 215, 130, 126 !important;
-  --scrollbar-active-thumb-bg: #cecacd !important;
-  --scrollbar-thumb-bg: rgb(223, 218, 217) !important;
-  --search-clear-button-color: #9893a5 !important;
-  --search-icon-color: #9893a5 !important;
-  --search-result-background: #faf4ed !important;
-  --search-result-background-hover: rgb(215, 130, 126) !important;
-  --secondary: rgb(215, 130, 126) !important;
-  --setting-group-heading-color: #575279 !important;
-  --setting-items-background: #faf4ed !important;
-  --setting-items-border-color: rgba(223, 218, 217, 0.6) !important;
-  --shiki-active-tab-border-color: #9893a5 !important;
-  --shiki-code-background: #faf4ed !important;
-  --shiki-code-comment: #9893a5 !important;
-  --shiki-code-function: rgb(86, 148, 159) !important;
-  --shiki-code-important: rgb(234, 157, 52) !important;
-  --shiki-code-keyword: rgb(180, 99, 122) !important;
-  --shiki-code-normal: #9893a5 !important;
-  --shiki-code-property: rgb(86, 148, 159) !important;
-  --shiki-code-punctuation: #9893a5 !important;
-  --shiki-code-string: rgb(234, 157, 52) !important;
-  --shiki-code-value: rgb(144, 122, 169) !important;
-  --shiki-gutter-border-color: rgba(223, 218, 217, 0.6) !important;
-  --shiki-gutter-text-color: #9893a5 !important;
-  --shiki-gutter-text-color-highlight: #9893a5 !important;
-  --shiki-highlight-green: rgba(86, 148, 159, 0.5) !important;
-  --shiki-highlight-green-background: rgba(86, 148, 159, 0.1) !important;
-  --shiki-highlight-neutral: #9893a5 !important;
-  --shiki-highlight-red: rgba(215, 130, 126, 0.5) !important;
-  --shiki-highlight-red-background: rgba(215, 130, 126, 0.1) !important;
-  --shiki-terminal-dots-color: #9893a5 !important;
-  --slider-thumb-border-color: rgb(223, 218, 217) !important;
-  --slider-track-background: rgb(223, 218, 217) !important;
-  --status-bar-background: #faf4ed !important;
-  --status-bar-border-color: rgba(223, 218, 217, 0.6) !important;
-  --status-bar-font-size: 0.733em !important;
-  --status-bar-radius: 12px 0 0 12px !important;
-  --status-bar-text-color: #9893a5 !important;
-  --subtle: #797593 !important;
-  --suggestion-background: rgb(255, 250, 243) !important;
-  --surface: rgb(255, 250, 243) !important;
-  --surface-rgb: 255, 250, 243 !important;
-  --sync-avatar-color-1: rgb(215, 130, 126) !important;
-  --sync-avatar-color-2: rgb(234, 157, 52) !important;
-  --sync-avatar-color-3: rgb(234, 157, 52) !important;
-  --sync-avatar-color-4: rgb(86, 148, 159) !important;
-  --sync-avatar-color-5: rgb(86, 148, 159) !important;
-  --sync-avatar-color-6: rgb(40, 105, 131) !important;
-  --sync-avatar-color-7: rgb(144, 122, 169) !important;
-  --sync-avatar-color-8: rgb(180, 99, 122) !important;
-  --tab-background-active: rgb(255, 250, 243) !important;
-  --tab-container-background: transparent !important;
-  --tab-curve: 0px !important;
-  --tab-divider-color: transparent !important;
-  --tab-img: url("%22data:image/svg+xml,%3Csvg version='1.1' id='svg1' xml:space='preserve' width='93.058769' height='115.69744' xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'%3E%3Cdefs id='defs1' /%3E%3Csodipodi:namedview id='namedview1' pagecolor='%2523ffffff' bordercolor='%2523000000' borderopacity='0.25' inkscape:showpageshadow='2' inkscape:pageopacity='0.0' inkscape:pagecheckerboard='0' inkscape:deskcolor='%2523d1d1d1' /%3E%3Cinkscape:clipboard style='font-variation-settings:normalopacity:1vector-effect:nonefill:%252300ff00fill-opacity:1stroke-width:3.77953stroke-linecap:roundstroke-linejoin:roundstroke-miterlimit:4stroke-dasharray:nonestroke-dashoffset:0stroke-opacity:1-inkscape-stroke:nonestop-color:%2523000000stop-opacity:1' min='69.195827,-2.7355726' max='162.2546,112.96187' geom-min='69.195827,-2.7355726' geom-max='162.2546,112.96187' /%3E%3Cg id='g1' transform='translate(-69.195827,2.7355726")'%3E%3Cpath d='m 122.01098,-2.7355726 c -1.43622,0.00378 -2.86866,0.037795 -4.28599,0.1133859 a 72.264614,72.264614 0 0 0 -10.80189,1.3266151 c -0.10205,0.018898 -0.21166,0.018898 -0.31371,0.037795 a 1.9842532,1.9842532 0 0 0 -0.034,0.015118 C 85.515837,1.433249 69.195827,19.431371 69.195827,41.212802 c 0.02268,18.701115 12.075598,30.822067 26.948049,32.035297 a 29.041909,29.041909 0 0 0 8.666464,-0.502678 c 2.30551,-0.461103 4.33134,-0.982678 7.7178,-1.171654 2.28661,-0.124725 5.08347,1.583623 6.67465,3.892916 0.7937,1.160315 1.26992,2.418899 1.34929,3.480947 0.0756,1.065827 -0.15874,1.904883 -0.86929,2.694805 -0.20032,0.222992 -1.24725,0.808819 -2.60032,1.273701 -1.36063,0.464882 -2.97071,0.903308 -4.45228,1.519371 -3.92694,1.644096 -9.0671,2.774175 -12.854186,5.336697 -2.502049,1.68945 -4.285987,3.635908 -5.38583,5.574806 -1.096064,1.942679 -1.602521,3.919373 -0.990237,5.78646 0.56315,1.71969 2.082521,2.85733 3.522522,3.2504 1.436221,0.38929 2.857325,0.30992 4.195281,0.18141 1.33795,-0.13228 2.60787,-0.34015 3.53764,-0.41574 0.7748,-0.0643 0.94488,0.034 0.84283,-0.0869 0.81638,1.19055 1.23213,2.52094 1.79906,4.07811 0.61228,1.68945 1.84441,3.78709 4.30866,4.55433 a 1.9842532,1.9842532 0 0 0 0.28725,0.0643 c 3.75685,0.57826 6.91276,-0.11339 9.35055,-1.67434 2.4378,-1.56094 4.11213,-3.87024 5.44253,-6.31559 2.61921,-4.811343 4.1726,-10.318118 6.37229,-13.247254 8.62866,-4.550554 15.12945,-9.346778 19.31339,-15.979853 4.14615,0.771024 7.25292,1.080946 7.25292,1.080946 a 1.9842532,1.9842532 0 0 0 2.16189,-1.738584 c 0,0 0.62363,-5.230869 0.43087,-11.327251 -0.18142,-5.858272 -0.86173,-12.585835 -4.40315,-16.758436 -1.06205,-9.316542 -4.49008,-19.14332 -8.95749,-26.842222 3.84756,-5.537012 5.63906,-11.5162284 5.21197,-17.703319 a 1.9842532,1.9842532 0 0 0 -1.64031,-1.8179539 c -9.94773,-1.7159066 -20.36033,-3.1974824 -30.41766,-3.1672461 z m 6.03969,4.2633099 c 7.2189,0.377953 14.60032,1.3681898 21.87214,2.5851985 -0.008,4.0856719 -1.24725,8.0163832 -3.59056,11.8828422 A 38.75908,38.75908 0 0 0 141.9858,10.74979 l -0.0265,-0.04535 a 1.9842532,1.9842532 0 0 0 -0.0151,-0.0076 1.9842532,1.9842532 0 0 0 -0.58205,-0.347717 l 0.27969,-0.0189 A 42.803177,42.803177 0 0 0 128.05067,1.5315168 Z m -17.6882,1.0658274 c 6.34961,0.00756 11.94331,0.9637802 16.8378,2.8875609 a 38.808214,38.808214 0 0 1 11.69009,7.7102414 1.9842532,1.9842532 0 0 0 0.0113,0 1.9842532,1.9842532 0 0 0 0.0227,0.03024 23.07781,23.07781 0 0 1 1.47779,1.579844 c 0.21166,0.245669 0.42709,0.483779 0.63496,0.744567 l 0.11339,0.136063 c 4.97764,6.198429 9.67182,16.705523 11.73922,26.838443 a 36.540496,36.540496 0 0 0 -11.52001,-5.238429 h -0.0151 a 29.27246,29.27246 0 0 0 -2.31685,-0.491339 h -0.008 a 23.448204,23.448204 0 0 0 -4.61858,-0.332598 c -0.75591,0.02268 -1.50048,0.09071 -2.22993,0.207874 h -0.008 l -0.27591,0.05291 c -0.63496,0.113386 -1.2548,0.253229 -1.85953,0.442205 a 12.018905,12.018905 0 0 0 -4.67906,2.683466 11.625834,11.625834 0 0 0 -0.78614,0.812599 9.5735495,9.5735495 0 0 0 -1.13386,1.579844 10.77166,10.77166 0 0 0 -1.36063,5.404728 c 0.008,2.483151 0.69921,4.996538 1.73858,7.434335 a 31.891674,31.891674 0 0 0 1.79906,3.590554 41.744909,41.744909 0 0 0 3.34488,4.954964 c 1.19434,1.534489 2.4378,2.929135 3.63591,4.123467 0.45355,0.453543 0.95244,0.88063 1.48158,1.28504 l 0.0227,0.0189 c 3.71905,2.823309 9.05953,4.437168 13.9389,5.582366 -3.77197,5.348034 -9.33544,9.550872 -17.36316,13.719693 a 1.9842532,1.9842532 0 0 0 -0.65008,0.540473 c -3.12567,4.006302 -4.51276,9.73229 -6.82205,13.984254 -1.15654,2.1241 -2.47559,3.82867 -4.10079,4.87182 -1.57606,1.00913 -3.52252,1.48157 -6.37607,1.09228 -1.03181,-0.34393 -1.22078,-0.73323 -1.70079,-2.05228 -0.49133,-1.36063 -0.97511,-3.47717 -2.5474,-5.503 a 1.9842532,1.9842532 0 0 0 -0.32882,-0.32882 c -1.34929,-1.084719 -2.60787,-0.85795 -3.81354,-0.76346 -1.19811,0.0983 -2.44914,0.30992 -3.6019,0.42331 -1.152752,0.11338 -2.192123,0.0945 -2.77417,-0.0643 -0.582048,-0.15496 -0.634961,-0.17386 -0.793702,-0.653852 -0.07559,-0.249449 -0.06425,-1.285041 0.680316,-2.596538 0.737008,-1.307717 2.101418,-2.849765 4.149926,-4.236853 2.75905,-1.870867 7.77449,-3.129451 12.1663,-4.966302 1.11119,-0.464882 2.67591,-0.903308 4.20284,-1.424883 1.52693,-0.525355 3.06142,-1.04315 4.26331,-2.373545 a 7.55906,7.55906 0 0 0 1.87843,-5.639058 c -0.14362,-1.950238 -0.91087,-3.805987 -2.03339,-5.438744 -2.24504,-3.265514 -5.99055,-5.843154 -10.16693,-5.612602 -3.71528,0.204094 -6.1115,0.816378 -8.2734,1.247245 -2.15811,0.427087 -4.119683,0.71811 -7.570394,0.434646 C 83.501348,68.232662 73.183231,58.254703 73.168113,41.209023 c 0,-19.884108 14.891348,-36.2343544 34.148057,-38.5474267 1.03181,-0.045354 2.0485,-0.068032 3.04252,-0.068032 z M 93.05222,21.513892 c -7.018587,0 -12.449772,6.478114 -12.449772,14.090088 0,7.611973 5.431185,14.090088 12.453552,14.090088 7.01859,0 12.44977,-6.478115 12.44977,-14.090088 0,-7.611974 -5.43118,-14.090088 -12.44977,-14.090088 z m 0,3.968506 c 4.542995,0 8.48505,4.361578 8.48505,10.121582 0,5.760003 -3.942055,10.121581 -8.48127,10.121581 -0.207874,0 -0.408189,-0.01134 -0.612284,-0.03024 a 5.4160665,5.7146494 0 0 0 2.165671,-4.550554 5.4160665,5.7146494 0 0 0 -5.416067,-5.71465 5.4160665,5.7146494 0 0 0 -4.410711,2.422679 12.132291,12.132291 0 0 1 -0.211654,-2.24882 c 0,-5.760004 3.945829,-10.121582 8.485045,-10.121582 z m 41.61263,14.936703 c 1.17921,-0.03024 2.43401,0.07181 3.73417,0.291024 0.64252,0.109606 1.29638,0.249449 1.9578,0.415748 0.0113,0 0.0189,0 0.0265,0.0076 h 0.0151 a 28.278443,28.278443 0 0 1 4.0063,1.337954 34.665849,34.665849 0 0 1 5.64284,2.951813 c 0.57449,0.377953 1.13008,0.759685 1.65544,1.156536 0.52913,0.393071 1.02047,0.793701 1.48913,1.20189 0.46488,0.40819 0.89953,0.816379 1.29638,1.232127 l 0.0151,0.01512 c 2.34331,2.452915 3.56787,8.893234 3.74929,14.653238 0.14362,4.633704 -0.18897,7.211343 -0.32882,8.643785 -1.18299,-0.136063 -3.06898,-0.31748 -6.25512,-0.96 -5.15906,-1.04693 -11.50111,-2.985829 -14.94426,-5.355594 l -0.0718,-0.04536 a 11.346149,11.346149 0 0 1 -0.51024,-0.385512 c -0.0605,-0.04535 -0.12472,-0.09071 -0.17764,-0.136063 a 8.0730761,8.0730761 0 0 1 -0.56693,-0.506457 37.587426,37.587426 0 0 1 -2.19212,-2.392442 39.96853,39.96853 0 0 1 -5.00032,-7.445675 c -0.26457,-0.529134 -0.51402,-1.054488 -0.73701,-1.579843 -0.89575,-2.097639 -1.40976,-4.146144 -1.41732,-5.888508 0,-1.307717 0.24189,-2.418899 0.8126,-3.401577 0.18897,-0.328819 0.41574,-0.64252 0.68409,-0.944882 0.1663,-0.188977 0.34016,-0.370394 0.52158,-0.536694 0.0378,-0.03779 0.0756,-0.06425 0.11338,-0.09449 a 7.9710288,7.9710288 0 0 1 1.73859,-1.171654 c 1.36063,-0.672756 2.97071,-1.012914 4.74331,-1.058269 z m -31.21136,9.274967 a 1.9842532,1.9842532 0 0 0 -1.92378,2.044725 c 0.0756,2.381104 -0.40441,3.77953 -0.96,4.42205 -0.5556,0.638741 -1.32284,0.963781 -3.099219,0.767245 a 1.9842532,1.9842532 0 0 0 -2.188348,1.753702 1.9842532,1.9842532 0 0 0 1.753702,2.192127 c 2.562521,0.279686 5.000315,-0.351496 6.531025,-2.116536 1.53449,-1.768821 2.01449,-4.221735 1.92756,-7.135753 a 1.9842532,1.9842532 0 0 0 -2.04094,-1.92756 z' class='class1' style='fill:%252397c0fffill-opacity:1stroke-width:3.77953stroke-linecap:roundstroke-linejoin:round' id='path1' /%3E%3C/g%3E%3C/svg%3E") !important;
-  --tab-max-width: 200px !important;
-  --tab-outline-color: transparent !important;
-  --tab-radius: 9px !important;
-  --tab-radius-active: 9px !important;
-  --tab-stacked-pane-width: 90% !important;
-  --tab-switcher-background: rgb(255, 250, 243) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(255, 250, 243), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(187, 30%, 45%) !important;
-  --tab-text-color: #9893a5 !important;
-  --tab-text-color-active: #9893a5 !important;
-  --tab-text-color-focused: #9893a5 !important;
-  --tab-text-color-focused-active: #9893a5 !important;
-  --tab-text-color-focused-active-current: #575279 !important;
-  --tab-text-color-focused-highlighted: rgb(215, 130, 126) !important;
-  --table-add-button-border-color: transparent !important;
-  --table-border-color: #cecacd !important;
-  --table-border-radius: 7px !important;
-  --table-drag-handle-background-active: rgb(215, 130, 126) !important;
-  --table-drag-handle-color: #9893a5 !important;
-  --table-drag-handle-color-active: rgb(255, 250, 243) !important;
-  --table-header-background: rgb(144, 122, 169) !important;
-  --table-header-background-hover: rgb(144, 122, 169) !important;
-  --table-header-border-color: #cecacd !important;
-  --table-header-color: rgb(255, 250, 243) !important;
-  --table-row-alt-background: #f4ede8 !important;
-  --table-row-alt-background-hover: #f4ede8 !important;
-  --table-selection: hsla(187, 30%, 45%, 0.1) !important;
-  --table-selection-border-color: rgb(215, 130, 126) !important;
-  --tag-background: rgba(215, 130, 126, 0.1) !important;
-  --tag-background-hover: rgba(215, 130, 126, 0.2) !important;
-  --tag-border-color: hsla(187, 30%, 45%, 0.15) !important;
-  --tag-border-color-hover: hsla(187, 30%, 45%, 0.15) !important;
-  --tag-color: rgb(215, 130, 126) !important;
-  --tag-color-hover: rgb(215, 130, 126) !important;
-  --tertiary: rgb(86, 148, 159) !important;
-  --text: #575279 !important;
-  --text-accent: rgb(215, 130, 126) !important;
-  --text-accent-hover: rgb(86, 148, 159) !important;
-  --text-error: rgb(215, 130, 126) !important;
-  --text-faint: #9893a5 !important;
-  --text-highlight-bg: rgba(234, 157, 52, 0.2) !important;
-  --text-muted: #9893a5 !important;
-  --text-normal: #575279 !important;
-  --text-on-accent: rgb(255, 250, 243) !important;
-  --text-on-accent-inverted: rgb(255, 250, 243) !important;
-  --text-selection: rgb(223, 218, 217, 0.5) !important;
-  --text-success: rgb(86, 148, 159) !important;
-  --text-warning: rgb(234, 157, 52) !important;
-  --textHighlight: rgba(234, 157, 52, 0.2) !important;
-  --titleFont: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: transparent !important;
-  --titlebar-background-focused: transparent !important;
-  --titlebar-border-color: rgba(223, 218, 217, 0.6) !important;
-  --titlebar-text-color: #9893a5 !important;
-  --titlebar-text-color-focused: #575279 !important;
-  --todoist-p4-border: rgb(215, 130, 126) !important;
-  --todoist-p4-border-hover: rgb(180, 99, 122) !important;
-  --todoist-task-separator-color: rgba(223, 218, 217, 0.6) !important;
-  --uw-background: #f2e9e1 !important;
-  --vault-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%235f6368'%3E%3Cpath d='M240-400q48 0 88 26t59 71l10 23h25q42 0 70 29.5t28 70.5q0 42-29 71t-71 29H240q-66 0-113-47T80-240q0-67 47-113.5T240-400Zm321-81q60 60 138.5 90.5T863-366q11-1 19.5 3t14.5 12q6 8 8 17t-1 19q-35 121-140.5 197T533-40q32-26 49.5-62.5T600-180q0-68-42.5-117.5T449-357q-32-57-87.5-90T240-480q-32 0-62.5 8T120-448q2-131 76.5-232T394-822q10-3 19.5-1t17.5 8q8 6 12.5 14.5T447-781q-5 86 24 162.5T561-481Z'/%3E%3C/svg%3E") !important;
-  --vault-profile-color: #575279 !important;
-  --vault-profile-color-hover: #575279 !important;
-  --quartz-icon-color: currentColor !important;
+  --canvas-background: rgb(255, 250, 243);
+  --canvas-card-label-color: #9893a5;
+  --canvas-color-1: 40, 105, 131;
+  --canvas-color-2: 86, 148, 159;
+  --canvas-color-3: 144, 122, 169;
+  --canvas-color-4: 180, 99, 122;
+  --canvas-color-5: 215, 130, 126;
+  --canvas-color-6: 234, 157, 52;
+  --canvas-dot-pattern: #9893a5;
+  --caret-color: rgb(180, 99, 122);
+  --checkbox-border: 5px;
+  --checkbox-border-color: rgb(215, 130, 126);
+  --checkbox-border-color-hover: rgb(180, 99, 122);
+  --checkbox-color: rgb(40, 105, 131);
+  --checkbox-color-hover: rgb(86, 148, 159);
+  --checkbox-marker-color: white;
+  --checkbox-radius: 5px;
+  --checklist-done-color: #9893a5;
+  --clickable-icon-radius: 8px;
+  --code-background: #faf4ed;
+  --code-border-color: rgba(223, 218, 217, 0.6);
+  --code-comment: #9893a5;
+  --code-function: rgb(86, 148, 159);
+  --code-important: rgb(215, 130, 126);
+  --code-keyword: rgb(215, 130, 126);
+  --code-normal: #797593;
+  --code-operator: rgb(234, 157, 52);
+  --code-property: rgb(40, 105, 131);
+  --code-punctuation: rgb(180, 99, 122);
+  --code-string: rgb(234, 157, 52);
+  --code-tag: rgb(86, 148, 159);
+  --code-value: rgb(144, 122, 169);
+  --codeFont: var(--font-text, "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --collapse-icon-color: #9893a5;
+  --collapse-icon-color-collapsed: rgb(215, 130, 126);
+  --color-accent: hsl(187, 30%, 45%);
+  --color-accent-1: rgb(215, 130, 126);
+  --color-accent-2: rgb(86, 148, 159);
+  --color-accent-hsl: 187, 30%, 45%;
+  --color-base-00: #faf4ed;
+  --color-base-05: #faf4ed;
+  --color-base-10: rgb(255, 250, 243);
+  --color-base-100: #575279;
+  --color-base-20: rgb(255, 250, 243);
+  --color-base-25: #f2e9e1;
+  --color-base-30: #cecacd;
+  --color-base-35: rgba(223, 218, 217, 0.6);
+  --color-base-40: rgb(223, 218, 217);
+  --color-base-50: #f4ede8;
+  --color-base-60: #9893a5;
+  --color-base-70: #797593;
+  --color-blue: rgb(40, 105, 131);
+  --color-blue-rgb: 40, 105, 131;
+  --color-cyan: rgb(86, 148, 159);
+  --color-cyan-rgb: 86, 148, 159;
+  --color-green: rgb(86, 148, 159);
+  --color-green-rgb: 86, 148, 159;
+  --color-orange: rgb(234, 157, 52);
+  --color-orange-rgb: 234, 157, 52;
+  --color-pink: rgb(180, 99, 122);
+  --color-pink-rgb: 180, 99, 122;
+  --color-purple: rgb(144, 122, 169);
+  --color-purple-rgb: 144, 122, 169;
+  --color-red: rgb(215, 130, 126);
+  --color-red-rgb: 215, 130, 126;
+  --color-yellow: rgb(234, 157, 52);
+  --color-yellow-rgb: 234, 157, 52;
+  --cursor: pointer;
+  --dark: var(--text-normal, #575279);
+  --darkgray: var(--text-normal, #575279);
+  --divider-color: rgba(223, 218, 217, 0.6);
+  --divider-color-hover: rgb(215, 130, 126);
+  --divider-width: 0px;
+  --dropdown-background: rgba(223, 218, 217, 0.5);
+  --dropdown-background-hover: rgb(223, 218, 217);
+  --embed-block-shadow-hover: transparent;
+  --embed-border-start: 2px solid rgb(215, 130, 126);
+  --file-header-background: rgb(255, 250, 243);
+  --file-header-background-focused: rgb(255, 250, 243);
+  --file-header-border: 1px dashed rgb(223, 218, 217);
+  --file-header-font: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --flair-background: rgba(223, 218, 217, 0.5);
+  --flair-color: #575279;
+  --foam: rgb(86, 148, 159);
+  --foam-rgb: 86, 148, 159;
+  --font-interface: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-interface-theme: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif;
+  --font-mermaid: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-print: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, Arial';
+  --font-text: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-text-theme: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif;
+  --footnote-divider-color: rgba(223, 218, 217, 0.6);
+  --footnote-id-color: #9893a5;
+  --footnote-id-color-no-occurrences: #9893a5;
+  --gold: rgb(234, 157, 52);
+  --gold-rgb: 234, 157, 52;
+  --graph-line: rgb(223, 218, 217);
+  --graph-node: #575279;
+  --graph-node-attachment: rgb(215, 130, 126);
+  --graph-node-focused: rgb(215, 130, 126);
+  --graph-node-tag: rgb(86, 148, 159);
+  --graph-node-unresolved: #9893a5;
+  --graph-text: #575279;
+  --gray: var(--text-muted, #9893a5);
+  --h1-color: rgb(180, 99, 122);
+  --h1-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --h1-size: 1.45em;
+  --h2-color: rgb(215, 130, 126);
+  --h2-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --h2-size: 1.3em;
+  --h3-color: rgb(234, 157, 52);
+  --h3-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --h3-size: 1.15em;
+  --h4-color: rgb(40, 105, 131);
+  --h4-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --h4-size: 1.05em;
+  --h5-color: rgb(144, 122, 169);
+  --h5-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --h5-size: 1em;
+  --h6-color: #575279;
+  --h6-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --h6-variant: small-caps;
+  --headerFont: var(--font-text, "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --heading-formatting: #9893a5;
+  --headings-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --highlight: var(--text-highlight-bg, rgba(234, 157, 52, 0.2));
+  --highlight-high: #cecacd;
+  --highlight-low: #f4ede8;
+  --highlight-med: rgb(223, 218, 217);
+  --highlight-med-rgb: 223, 218, 217;
+  --hr-color: rgba(223, 218, 217, 0.6);
+  --icon-color: #575279;
+  --icon-color-active: rgb(215, 130, 126);
+  --icon-color-focused: #575279;
+  --icon-color-hover: #9893a5;
+  --inline-title-color: rgb(86, 148, 159);
+  --inline-title-font: "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --inline-title-margin-bottom: 1.2em;
+  --inline-title-size: 1.8em;
+  --input-date-separator: #9893a5;
+  --input-placeholder-color: #9893a5;
+  --interactive-accent: rgb(215, 130, 126);
+  --interactive-accent-hover: rgba(215, 130, 126, 0.8);
+  --interactive-accent-hsl: 187, 30%, 45%;
+  --interactive-hover: rgb(223, 218, 217);
+  --interactive-normal: rgba(223, 218, 217, 0.5);
+  --iris: rgb(144, 122, 169);
+  --iris-rgb: 144, 122, 169;
+  --italic-color: rgb(86, 148, 159);
+  --latex-color: rgb(40, 105, 131);
+  --light: var(--background-primary, rgb(255, 250, 243));
+  --lightgray: var(--background-secondary, rgb(255, 250, 243));
+  --link-color: rgb(215, 130, 126);
+  --link-color-hover: rgba(215, 130, 126, 0.6);
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-color: rgb(40, 105, 131);
+  --link-external-color-hover: rgba(40, 105, 131, 0.6);
+  --link-external-decoration: none;
+  --link-unresolved-color: #797593;
+  --link-unresolved-decoration-color: hsla(187, 30%, 45%, 0.3);
+  --list-bullet-size: 0.35em;
+  --list-indent-editing: 0;
+  --list-marker-color: #9893a5;
+  --list-marker-color-collapsed: rgb(215, 130, 126);
+  --list-marker-color-hover: #9893a5;
+  --love: rgb(180, 99, 122);
+  --love-rgb: 180, 99, 122;
+  --menu-background: rgb(255, 250, 243);
+  --menu-border-color: rgb(223, 218, 217);
+  --metadata-border-color: rgba(223, 218, 217, 0.6);
+  --metadata-display-reading: none;
+  --metadata-divider-color: rgba(223, 218, 217, 0.6);
+  --metadata-input-font: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-input-text-color: #575279;
+  --metadata-label-font: "Inter", "Lexend", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-label-text-color: #9893a5;
+  --metadata-label-text-color-hover: #9893a5;
+  --metadata-property-box-shadow-focus: 0 0 0 2px rgba(223, 218, 217, 0.6);
+  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(223, 218, 217);
+  --mk-ui-text-secondary: #575279;
+  --modal-background: rgb(255, 250, 243);
+  --modal-border-color: rgb(223, 218, 217);
+  --muted: #9893a5;
+  --nav-collapse-icon-color: rgb(40, 105, 131);
+  --nav-collapse-icon-color-collapsed: #9893a5;
+  --nav-heading-color: rgb(40, 105, 131);
+  --nav-heading-color-collapsed: rgb(40, 105, 131);
+  --nav-heading-color-collapsed-hover: #9893a5;
+  --nav-heading-color-hover: #575279;
+  --nav-item-background-active: rgb(86, 148, 159);
+  --nav-item-background-selected: hsla(187, 30%, 45%, 0.15);
+  --nav-item-color: #575279;
+  --nav-item-color-active: rgb(255, 250, 243);
+  --nav-item-color-highlighted: rgb(215, 130, 126);
+  --nav-item-color-hover: #797593;
+  --nav-item-color-selected: #575279;
+  --nav-tag-color: #9893a5;
+  --nav-tag-color-active: #9893a5;
+  --nav-tag-color-hover: #9893a5;
+  --overlay: #f2e9e1;
+  --pdf-background: rgb(255, 250, 243);
+  --pdf-page-background: rgb(255, 250, 243);
+  --pdf-sidebar-background: rgb(255, 250, 243);
+  --pill-border-color: rgba(223, 218, 217, 0.6);
+  --pill-border-color-hover: rgb(223, 218, 217);
+  --pill-color: #9893a5;
+  --pill-color-hover: #575279;
+  --pill-color-remove: #9893a5;
+  --pill-color-remove-hover: rgb(215, 130, 126);
+  --pine: rgb(40, 105, 131);
+  --pine-rgb: 40, 105, 131;
+  --pomodoro-timer-color: rgb(223, 218, 217, 0.5);
+  --pomodoro-timer-dot-color: rgb(180, 99, 122);
+  --prompt-background: rgb(255, 250, 243);
+  --prompt-border-color: rgb(223, 218, 217);
+  --raised-background: color-mix(in srgb, rgb(255, 250, 243) 65%, transparent) linear-gradient(rgb(255, 250, 243), color-mix(in srgb, rgb(255, 250, 243) 65%, transparent));
+  --ribbon-background: rgb(255, 250, 243);
+  --ribbon-background-collapsed: rgb(255, 250, 243);
+  --rose: rgb(215, 130, 126);
+  --rose-rgb: 215, 130, 126;
+  --scrollbar-active-thumb-bg: #cecacd;
+  --scrollbar-thumb-bg: rgb(223, 218, 217);
+  --search-clear-button-color: #9893a5;
+  --search-icon-color: #9893a5;
+  --search-result-background: #faf4ed;
+  --search-result-background-hover: rgb(215, 130, 126);
+  --secondary: var(--text-accent, rgb(215, 130, 126));
+  --setting-group-heading-color: #575279;
+  --setting-items-background: #faf4ed;
+  --setting-items-border-color: rgba(223, 218, 217, 0.6);
+  --shiki-active-tab-border-color: #9893a5;
+  --shiki-code-background: #faf4ed;
+  --shiki-code-comment: #9893a5;
+  --shiki-code-function: rgb(86, 148, 159);
+  --shiki-code-important: rgb(234, 157, 52);
+  --shiki-code-keyword: rgb(180, 99, 122);
+  --shiki-code-normal: #9893a5;
+  --shiki-code-property: rgb(86, 148, 159);
+  --shiki-code-punctuation: #9893a5;
+  --shiki-code-string: rgb(234, 157, 52);
+  --shiki-code-value: rgb(144, 122, 169);
+  --shiki-gutter-border-color: rgba(223, 218, 217, 0.6);
+  --shiki-gutter-text-color: #9893a5;
+  --shiki-gutter-text-color-highlight: #9893a5;
+  --shiki-highlight-green: rgba(86, 148, 159, 0.5);
+  --shiki-highlight-green-background: rgba(86, 148, 159, 0.1);
+  --shiki-highlight-neutral: #9893a5;
+  --shiki-highlight-red: rgba(215, 130, 126, 0.5);
+  --shiki-highlight-red-background: rgba(215, 130, 126, 0.1);
+  --shiki-terminal-dots-color: #9893a5;
+  --slider-thumb-border-color: rgb(223, 218, 217);
+  --slider-track-background: rgb(223, 218, 217);
+  --status-bar-background: #faf4ed;
+  --status-bar-border-color: rgba(223, 218, 217, 0.6);
+  --status-bar-font-size: 0.733em;
+  --status-bar-radius: 12px 0 0 12px;
+  --status-bar-text-color: #9893a5;
+  --subtle: #797593;
+  --suggestion-background: rgb(255, 250, 243);
+  --surface: rgb(255, 250, 243);
+  --surface-rgb: 255, 250, 243;
+  --sync-avatar-color-1: rgb(215, 130, 126);
+  --sync-avatar-color-2: rgb(234, 157, 52);
+  --sync-avatar-color-3: rgb(234, 157, 52);
+  --sync-avatar-color-4: rgb(86, 148, 159);
+  --sync-avatar-color-5: rgb(86, 148, 159);
+  --sync-avatar-color-6: rgb(40, 105, 131);
+  --sync-avatar-color-7: rgb(144, 122, 169);
+  --sync-avatar-color-8: rgb(180, 99, 122);
+  --tab-background-active: rgb(255, 250, 243);
+  --tab-container-background: transparent;
+  --tab-curve: 0px;
+  --tab-divider-color: transparent;
+  --tab-img: url("%22data:image/svg+xml,%3Csvg version='1.1' id='svg1' xml:space='preserve' width='93.058769' height='115.69744' xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'%3E%3Cdefs id='defs1' /%3E%3Csodipodi:namedview id='namedview1' pagecolor='%2523ffffff' bordercolor='%2523000000' borderopacity='0.25' inkscape:showpageshadow='2' inkscape:pageopacity='0.0' inkscape:pagecheckerboard='0' inkscape:deskcolor='%2523d1d1d1' /%3E%3Cinkscape:clipboard style='font-variation-settings:normalopacity:1vector-effect:nonefill:%252300ff00fill-opacity:1stroke-width:3.77953stroke-linecap:roundstroke-linejoin:roundstroke-miterlimit:4stroke-dasharray:nonestroke-dashoffset:0stroke-opacity:1-inkscape-stroke:nonestop-color:%2523000000stop-opacity:1' min='69.195827,-2.7355726' max='162.2546,112.96187' geom-min='69.195827,-2.7355726' geom-max='162.2546,112.96187' /%3E%3Cg id='g1' transform='translate(-69.195827,2.7355726")'%3E%3Cpath d='m 122.01098,-2.7355726 c -1.43622,0.00378 -2.86866,0.037795 -4.28599,0.1133859 a 72.264614,72.264614 0 0 0 -10.80189,1.3266151 c -0.10205,0.018898 -0.21166,0.018898 -0.31371,0.037795 a 1.9842532,1.9842532 0 0 0 -0.034,0.015118 C 85.515837,1.433249 69.195827,19.431371 69.195827,41.212802 c 0.02268,18.701115 12.075598,30.822067 26.948049,32.035297 a 29.041909,29.041909 0 0 0 8.666464,-0.502678 c 2.30551,-0.461103 4.33134,-0.982678 7.7178,-1.171654 2.28661,-0.124725 5.08347,1.583623 6.67465,3.892916 0.7937,1.160315 1.26992,2.418899 1.34929,3.480947 0.0756,1.065827 -0.15874,1.904883 -0.86929,2.694805 -0.20032,0.222992 -1.24725,0.808819 -2.60032,1.273701 -1.36063,0.464882 -2.97071,0.903308 -4.45228,1.519371 -3.92694,1.644096 -9.0671,2.774175 -12.854186,5.336697 -2.502049,1.68945 -4.285987,3.635908 -5.38583,5.574806 -1.096064,1.942679 -1.602521,3.919373 -0.990237,5.78646 0.56315,1.71969 2.082521,2.85733 3.522522,3.2504 1.436221,0.38929 2.857325,0.30992 4.195281,0.18141 1.33795,-0.13228 2.60787,-0.34015 3.53764,-0.41574 0.7748,-0.0643 0.94488,0.034 0.84283,-0.0869 0.81638,1.19055 1.23213,2.52094 1.79906,4.07811 0.61228,1.68945 1.84441,3.78709 4.30866,4.55433 a 1.9842532,1.9842532 0 0 0 0.28725,0.0643 c 3.75685,0.57826 6.91276,-0.11339 9.35055,-1.67434 2.4378,-1.56094 4.11213,-3.87024 5.44253,-6.31559 2.61921,-4.811343 4.1726,-10.318118 6.37229,-13.247254 8.62866,-4.550554 15.12945,-9.346778 19.31339,-15.979853 4.14615,0.771024 7.25292,1.080946 7.25292,1.080946 a 1.9842532,1.9842532 0 0 0 2.16189,-1.738584 c 0,0 0.62363,-5.230869 0.43087,-11.327251 -0.18142,-5.858272 -0.86173,-12.585835 -4.40315,-16.758436 -1.06205,-9.316542 -4.49008,-19.14332 -8.95749,-26.842222 3.84756,-5.537012 5.63906,-11.5162284 5.21197,-17.703319 a 1.9842532,1.9842532 0 0 0 -1.64031,-1.8179539 c -9.94773,-1.7159066 -20.36033,-3.1974824 -30.41766,-3.1672461 z m 6.03969,4.2633099 c 7.2189,0.377953 14.60032,1.3681898 21.87214,2.5851985 -0.008,4.0856719 -1.24725,8.0163832 -3.59056,11.8828422 A 38.75908,38.75908 0 0 0 141.9858,10.74979 l -0.0265,-0.04535 a 1.9842532,1.9842532 0 0 0 -0.0151,-0.0076 1.9842532,1.9842532 0 0 0 -0.58205,-0.347717 l 0.27969,-0.0189 A 42.803177,42.803177 0 0 0 128.05067,1.5315168 Z m -17.6882,1.0658274 c 6.34961,0.00756 11.94331,0.9637802 16.8378,2.8875609 a 38.808214,38.808214 0 0 1 11.69009,7.7102414 1.9842532,1.9842532 0 0 0 0.0113,0 1.9842532,1.9842532 0 0 0 0.0227,0.03024 23.07781,23.07781 0 0 1 1.47779,1.579844 c 0.21166,0.245669 0.42709,0.483779 0.63496,0.744567 l 0.11339,0.136063 c 4.97764,6.198429 9.67182,16.705523 11.73922,26.838443 a 36.540496,36.540496 0 0 0 -11.52001,-5.238429 h -0.0151 a 29.27246,29.27246 0 0 0 -2.31685,-0.491339 h -0.008 a 23.448204,23.448204 0 0 0 -4.61858,-0.332598 c -0.75591,0.02268 -1.50048,0.09071 -2.22993,0.207874 h -0.008 l -0.27591,0.05291 c -0.63496,0.113386 -1.2548,0.253229 -1.85953,0.442205 a 12.018905,12.018905 0 0 0 -4.67906,2.683466 11.625834,11.625834 0 0 0 -0.78614,0.812599 9.5735495,9.5735495 0 0 0 -1.13386,1.579844 10.77166,10.77166 0 0 0 -1.36063,5.404728 c 0.008,2.483151 0.69921,4.996538 1.73858,7.434335 a 31.891674,31.891674 0 0 0 1.79906,3.590554 41.744909,41.744909 0 0 0 3.34488,4.954964 c 1.19434,1.534489 2.4378,2.929135 3.63591,4.123467 0.45355,0.453543 0.95244,0.88063 1.48158,1.28504 l 0.0227,0.0189 c 3.71905,2.823309 9.05953,4.437168 13.9389,5.582366 -3.77197,5.348034 -9.33544,9.550872 -17.36316,13.719693 a 1.9842532,1.9842532 0 0 0 -0.65008,0.540473 c -3.12567,4.006302 -4.51276,9.73229 -6.82205,13.984254 -1.15654,2.1241 -2.47559,3.82867 -4.10079,4.87182 -1.57606,1.00913 -3.52252,1.48157 -6.37607,1.09228 -1.03181,-0.34393 -1.22078,-0.73323 -1.70079,-2.05228 -0.49133,-1.36063 -0.97511,-3.47717 -2.5474,-5.503 a 1.9842532,1.9842532 0 0 0 -0.32882,-0.32882 c -1.34929,-1.084719 -2.60787,-0.85795 -3.81354,-0.76346 -1.19811,0.0983 -2.44914,0.30992 -3.6019,0.42331 -1.152752,0.11338 -2.192123,0.0945 -2.77417,-0.0643 -0.582048,-0.15496 -0.634961,-0.17386 -0.793702,-0.653852 -0.07559,-0.249449 -0.06425,-1.285041 0.680316,-2.596538 0.737008,-1.307717 2.101418,-2.849765 4.149926,-4.236853 2.75905,-1.870867 7.77449,-3.129451 12.1663,-4.966302 1.11119,-0.464882 2.67591,-0.903308 4.20284,-1.424883 1.52693,-0.525355 3.06142,-1.04315 4.26331,-2.373545 a 7.55906,7.55906 0 0 0 1.87843,-5.639058 c -0.14362,-1.950238 -0.91087,-3.805987 -2.03339,-5.438744 -2.24504,-3.265514 -5.99055,-5.843154 -10.16693,-5.612602 -3.71528,0.204094 -6.1115,0.816378 -8.2734,1.247245 -2.15811,0.427087 -4.119683,0.71811 -7.570394,0.434646 C 83.501348,68.232662 73.183231,58.254703 73.168113,41.209023 c 0,-19.884108 14.891348,-36.2343544 34.148057,-38.5474267 1.03181,-0.045354 2.0485,-0.068032 3.04252,-0.068032 z M 93.05222,21.513892 c -7.018587,0 -12.449772,6.478114 -12.449772,14.090088 0,7.611973 5.431185,14.090088 12.453552,14.090088 7.01859,0 12.44977,-6.478115 12.44977,-14.090088 0,-7.611974 -5.43118,-14.090088 -12.44977,-14.090088 z m 0,3.968506 c 4.542995,0 8.48505,4.361578 8.48505,10.121582 0,5.760003 -3.942055,10.121581 -8.48127,10.121581 -0.207874,0 -0.408189,-0.01134 -0.612284,-0.03024 a 5.4160665,5.7146494 0 0 0 2.165671,-4.550554 5.4160665,5.7146494 0 0 0 -5.416067,-5.71465 5.4160665,5.7146494 0 0 0 -4.410711,2.422679 12.132291,12.132291 0 0 1 -0.211654,-2.24882 c 0,-5.760004 3.945829,-10.121582 8.485045,-10.121582 z m 41.61263,14.936703 c 1.17921,-0.03024 2.43401,0.07181 3.73417,0.291024 0.64252,0.109606 1.29638,0.249449 1.9578,0.415748 0.0113,0 0.0189,0 0.0265,0.0076 h 0.0151 a 28.278443,28.278443 0 0 1 4.0063,1.337954 34.665849,34.665849 0 0 1 5.64284,2.951813 c 0.57449,0.377953 1.13008,0.759685 1.65544,1.156536 0.52913,0.393071 1.02047,0.793701 1.48913,1.20189 0.46488,0.40819 0.89953,0.816379 1.29638,1.232127 l 0.0151,0.01512 c 2.34331,2.452915 3.56787,8.893234 3.74929,14.653238 0.14362,4.633704 -0.18897,7.211343 -0.32882,8.643785 -1.18299,-0.136063 -3.06898,-0.31748 -6.25512,-0.96 -5.15906,-1.04693 -11.50111,-2.985829 -14.94426,-5.355594 l -0.0718,-0.04536 a 11.346149,11.346149 0 0 1 -0.51024,-0.385512 c -0.0605,-0.04535 -0.12472,-0.09071 -0.17764,-0.136063 a 8.0730761,8.0730761 0 0 1 -0.56693,-0.506457 37.587426,37.587426 0 0 1 -2.19212,-2.392442 39.96853,39.96853 0 0 1 -5.00032,-7.445675 c -0.26457,-0.529134 -0.51402,-1.054488 -0.73701,-1.579843 -0.89575,-2.097639 -1.40976,-4.146144 -1.41732,-5.888508 0,-1.307717 0.24189,-2.418899 0.8126,-3.401577 0.18897,-0.328819 0.41574,-0.64252 0.68409,-0.944882 0.1663,-0.188977 0.34016,-0.370394 0.52158,-0.536694 0.0378,-0.03779 0.0756,-0.06425 0.11338,-0.09449 a 7.9710288,7.9710288 0 0 1 1.73859,-1.171654 c 1.36063,-0.672756 2.97071,-1.012914 4.74331,-1.058269 z m -31.21136,9.274967 a 1.9842532,1.9842532 0 0 0 -1.92378,2.044725 c 0.0756,2.381104 -0.40441,3.77953 -0.96,4.42205 -0.5556,0.638741 -1.32284,0.963781 -3.099219,0.767245 a 1.9842532,1.9842532 0 0 0 -2.188348,1.753702 1.9842532,1.9842532 0 0 0 1.753702,2.192127 c 2.562521,0.279686 5.000315,-0.351496 6.531025,-2.116536 1.53449,-1.768821 2.01449,-4.221735 1.92756,-7.135753 a 1.9842532,1.9842532 0 0 0 -2.04094,-1.92756 z' class='class1' style='fill:%252397c0fffill-opacity:1stroke-width:3.77953stroke-linecap:roundstroke-linejoin:round' id='path1' /%3E%3C/g%3E%3C/svg%3E");
+  --tab-max-width: 200px;
+  --tab-outline-color: transparent;
+  --tab-radius: 9px;
+  --tab-radius-active: 9px;
+  --tab-stacked-pane-width: 90%;
+  --tab-switcher-background: rgb(255, 250, 243);
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(255, 250, 243), transparent);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(187, 30%, 45%);
+  --tab-text-color: #9893a5;
+  --tab-text-color-active: #9893a5;
+  --tab-text-color-focused: #9893a5;
+  --tab-text-color-focused-active: #9893a5;
+  --tab-text-color-focused-active-current: #575279;
+  --tab-text-color-focused-highlighted: rgb(215, 130, 126);
+  --table-add-button-border-color: transparent;
+  --table-border-color: #cecacd;
+  --table-border-radius: 7px;
+  --table-drag-handle-background-active: rgb(215, 130, 126);
+  --table-drag-handle-color: #9893a5;
+  --table-drag-handle-color-active: rgb(255, 250, 243);
+  --table-header-background: rgb(144, 122, 169);
+  --table-header-background-hover: rgb(144, 122, 169);
+  --table-header-border-color: #cecacd;
+  --table-header-color: rgb(255, 250, 243);
+  --table-row-alt-background: #f4ede8;
+  --table-row-alt-background-hover: #f4ede8;
+  --table-selection: hsla(187, 30%, 45%, 0.1);
+  --table-selection-border-color: rgb(215, 130, 126);
+  --tag-background: rgba(215, 130, 126, 0.1);
+  --tag-background-hover: rgba(215, 130, 126, 0.2);
+  --tag-border-color: hsla(187, 30%, 45%, 0.15);
+  --tag-border-color-hover: hsla(187, 30%, 45%, 0.15);
+  --tag-color: rgb(215, 130, 126);
+  --tag-color-hover: rgb(215, 130, 126);
+  --tertiary: var(--text-accent-hover, rgb(86, 148, 159));
+  --text: #575279;
+  --text-accent: rgb(215, 130, 126);
+  --text-accent-hover: rgb(86, 148, 159);
+  --text-error: rgb(215, 130, 126);
+  --text-faint: #9893a5;
+  --text-highlight-bg: rgba(234, 157, 52, 0.2);
+  --text-muted: #9893a5;
+  --text-normal: #575279;
+  --text-on-accent: rgb(255, 250, 243);
+  --text-on-accent-inverted: rgb(255, 250, 243);
+  --text-selection: rgb(223, 218, 217, 0.5);
+  --text-success: rgb(86, 148, 159);
+  --text-warning: rgb(234, 157, 52);
+  --textHighlight: var(--text-highlight-bg, rgba(234, 157, 52, 0.2));
+  --titleFont: var(--font-text, "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --titlebar-background: transparent;
+  --titlebar-background-focused: transparent;
+  --titlebar-border-color: rgba(223, 218, 217, 0.6);
+  --titlebar-text-color: #9893a5;
+  --titlebar-text-color-focused: #575279;
+  --todoist-p4-border: rgb(215, 130, 126);
+  --todoist-p4-border-hover: rgb(180, 99, 122);
+  --todoist-task-separator-color: rgba(223, 218, 217, 0.6);
+  --uw-background: #f2e9e1;
+  --vault-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%235f6368'%3E%3Cpath d='M240-400q48 0 88 26t59 71l10 23h25q42 0 70 29.5t28 70.5q0 42-29 71t-71 29H240q-66 0-113-47T80-240q0-67 47-113.5T240-400Zm321-81q60 60 138.5 90.5T863-366q11-1 19.5 3t14.5 12q6 8 8 17t-1 19q-35 121-140.5 197T533-40q32-26 49.5-62.5T600-180q0-68-42.5-117.5T449-357q-32-57-87.5-90T240-480q-32 0-62.5 8T120-448q2-131 76.5-232T394-822q10-3 19.5-1t17.5 8q8 6 12.5 14.5T447-781q-5 86 24 162.5T561-481Z'/%3E%3C/svg%3E");
+  --vault-profile-color: #575279;
+  --vault-profile-color-hover: #575279;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -5311,6 +5312,807 @@ html[saved-theme="light"] body ul.tags > li {
   border-right-color: rgba(80, 141, 149, 0.15);
   border-top-color: rgba(80, 141, 149, 0.15);
   color: rgb(215, 130, 126);
+}`,
+  },
+  classSettings: {
+    "rose-pine": `.rose-pine-moon {
+--love-rgb: 235, 111, 146;
+--gold-rgb: 246, 193, 119;
+--rose-rgb: 234, 154, 151;
+--pine-rgb: 62, 143, 176;
+--foam-rgb: 156, 207, 216;
+--iris-rgb: 196, 167, 231;
+--base: #232136;
+--surface-rgb: 42, 39, 63;
+--overlay: #393552;
+--muted: #6e6a86;
+--subtle: #908caa;
+--text: #e0def4;
+--highlight-low: #2a283e;
+--highlight-med-rgb: 68, 65, 90;
+--highlight-high: #56526e;
+--accent-h: 193;
+--accent-s: 46%;
+--accent-l: 75%;
+--color-accent-hsl: 193, 46%, 75%;
+}`,
+    "rose-pine-moon": `.rose-pine-moon {
+--love-rgb: 235, 111, 146;
+--gold-rgb: 246, 193, 119;
+--rose-rgb: 234, 154, 151;
+--pine-rgb: 62, 143, 176;
+--foam-rgb: 156, 207, 216;
+--iris-rgb: 196, 167, 231;
+--base: #232136;
+--surface-rgb: 42, 39, 63;
+--overlay: #393552;
+--muted: #6e6a86;
+--subtle: #908caa;
+--text: #e0def4;
+--highlight-low: #2a283e;
+--highlight-med-rgb: 68, 65, 90;
+--highlight-high: #56526e;
+--accent-h: 193;
+--accent-s: 46%;
+--accent-l: 75%;
+--color-accent-hsl: 193, 46%, 75%;
+}`,
+    "nord-dark": `.nord-dark {
+--love-rgb: 191, 97, 106;
+/*nord11*/
+--gold-rgb: 235, 203, 139;
+/*nord13*/
+--rose-rgb: 208, 135, 112;
+/*nord12*/
+--pine-rgb: 129, 161, 193;
+/*nord9*/
+--foam-rgb: 143, 188, 187;
+/*nord7*/
+--iris-rgb: 180, 142, 173;
+/*nord15*/
+--base: #3B4252;
+/*nord1*/
+--surface-rgb: 46, 52, 64;
+/*nord0*/
+--overlay: #434C5E;
+/*nord2*/
+--muted: #D8DEE9;
+/*nord4*/
+--subtle: #E5E9F0;
+/*nord5*/
+--text: #ECEFF4;
+/*nord6*/
+--highlight-low: #3b4252;
+/*nord 1*/
+--highlight-med-rgb: 67, 76, 94;
+/*nord 2*/
+--highlight-high: #4c566a;
+/*nord3*/
+--accent-h: 210;
+--accent-s: 34%;
+--accent-l: 63%;
+--color-accent-hsl: 210, 34%, 63%;
+}`,
+    "catppuccin-mocha": `.catppuccin-mocha {
+--love-rgb: 250, 179, 135;
+/*Peach*/
+--gold-rgb: 249, 226, 175;
+/*Yellow*/
+--rose-rgb: 235, 160, 172;
+/*Maroon*/
+--foam-rgb: 137, 180, 250;
+/*Blue*/
+--pine-rgb: 166, 227, 161;
+/*Green*/
+--iris-rgb: 203, 166, 247;
+/*Mauve*/
+--base: #181825;
+/*mantle*/
+--surface-rgb: 30, 30, 46;
+/*Base*/
+--overlay: #11111b;
+/*crust*/
+--muted: #a6adc8;
+/*subtext0*/
+--subtle: #bac2de;
+/*subtext1*/
+--text: #cdd6f4;
+/*text*/
+--highlight-low: rgba(49, 50, 68, 0.5);
+/*surface0*/
+--highlight-med-rgb: 69, 71, 90;
+/*surface1*/
+--highlight-high: #585b70;
+/*surface2*/
+--accent-h: 232;
+--accent-s: 97%;
+--accent-l: 85%;
+--color-accent-hsl: 232, 97%, 85%;
+/*Lavender*/
+}`,
+    "everforest-dark": `.everforest-dark {
+--love-rgb: 230, 126, 128;
+/*red*/
+--gold-rgb: 219, 188, 127;
+/*yellow*/
+--rose-rgb: 230, 152, 117;
+/*orange*/
+--pine-rgb: 131, 192, 146;
+/*aqua*/
+--foam-rgb: 127, 187, 179;
+/*blue*/
+--iris-rgb: 214, 153, 182;
+/*purple*/
+--base: #1E2326;
+/*bg_dim*/
+--surface-rgb: 39, 46, 51;
+/*bg0*/
+--overlay: #384B55;
+/*bg_blue*/
+--muted: #859289;
+/*gray1*/
+--subtle: #9DA9A0;
+/*gray2*/
+--text: #d3C6AA;
+/*fg*/
+--highlight-low: #374145;
+/*bg2*/
+--highlight-med-rgb: 65, 75, 80;
+/*bg3*/
+--highlight-high: #495156;
+/*bg4*/
+--accent-h: 90;
+--accent-s: 36%;
+--accent-l: 66%;
+--color-accent-hsl: 90, 36%, 66%;
+/*green/statusline1*/
+}`,
+    "biscuit-dark": `.biscuit-dark {
+--love-rgb: 202, 63, 63;
+/*Persian Red*/
+--gold-rgb: 227, 156, 69;
+/*Butterscotch*/
+--rose-rgb: 228, 106, 58;
+/*Flame*/
+--pine-rgb: 81, 120, 148;
+/*Steel Blue*/
+--foam-rgb: 98, 147, 134;
+/*Viridian*/
+--iris-rgb: 159, 86, 154;
+/*Purpureus*/
+--base: #181515;
+/*Night*/
+--surface-rgb: 34, 30, 30;
+/*Raisin Black*/
+--overlay: #423939;
+/*Van Dyke*/
+--muted: #978787;
+/*Cinereous*/
+--subtle: #B6A8A5;
+/*Silver*/
+--text: #F4E6D2;
+/*Antique White*/
+--highlight-low: #423939;
+/*Van Dyke*/
+--highlight-med-rgb: 109, 95, 95;
+/*Wenge*/
+--highlight-high: #978787;
+/*Cinereous*/
+--accent-h: 226;
+--accent-s: 31%;
+--accent-l: 42%;
+--color-accent-hsl: 226, 31%, 42%;
+/*YinMn Blue*/
+}`,
+    "obsidian-dark": `.obsidian-dark {
+--love-rgb: 251, 70, 76;
+/*red*/
+--gold-rgb: 224, 222, 113;
+/*yellow*/
+--rose-rgb: 233, 151, 63;
+/*orange*/
+--pine-rgb: 2, 122, 255  ;
+/*blue*/
+--foam-rgb: 68, 207, 110;
+/*green*/
+--iris-rgb: 168, 130, 255;
+/*purple*/
+--base: #262626;
+/*color-base-20*/
+--surface-rgb: 30, 30, 30;
+/*color-base-00*/
+--overlay: #363636;
+/*color-base-30*/
+--muted: #666666;
+/*color-base-50*/
+--subtle: #bababa;
+/*color-base-70*/
+--text: #dadada;
+/*color-base-100*/
+--highlight-low: #2a2a2a;
+/*--color-base-25*/
+--highlight-med-rgb: 63, 63, 63;
+/*3f3f3f*/
+/*color-base-35*/
+--highlight-high: #555555;
+/*color-base-40*/
+--accent-h: 258;
+--accent-s: 88%;
+--accent-l: 66%;
+--color-accent-hsl: 258, 88%, 66%;
+/*default purple*/
+}`,
+    "uw-deep": `.uw-deep {
+--love-rgb: 215, 97, 76;
+/*goldfish*/
+--gold-rgb: 217, 209, 89;
+/*Sand!*/
+--rose-rgb: 229, 156, 88;
+/*Crab!*/
+--pine-rgb: 105, 147, 194;
+/*Ocean!*/
+--foam-rgb: 159, 195, 135;
+/*Seaweed!*/
+--iris-rgb: 146, 135, 194;
+/*Jellyfish!*/
+--base: #11121a;
+--surface-rgb: 21, 23, 29;
+--overlay: #22252F;
+--muted: #57626B;
+--subtle: #7C8185;
+--text: #D5E1E5;
+--highlight-low: #272B2F;
+--highlight-med-rgb: 49, 60, 66;
+--highlight-high: #334852;
+--accent-h: 213;
+--accent-s: 49%;
+--accent-l: 61%;
+--color-accent-hsl: 213, 49%, 61%;
+/*Ocean*/
+}`,
+    "uw-ocean": `.uw-ocean {
+--love-rgb: 254, 114, 143;
+--gold-rgb: 255, 225, 97;
+--rose-rgb: 232, 177, 146;
+--pine-rgb: 235, 98, 59;
+--foam-rgb: 70, 201, 199;
+--iris-rgb: 115, 104, 182;
+--base: #081020;
+--surface-rgb: 8, 18, 43;
+--overlay: #06334D;
+--muted: #7585B2;
+--subtle: #97A4C9;
+--text: #E1E3FF;
+--highlight-low: #28344B;
+--highlight-med-rgb: 40, 56, 82;
+--highlight-high: #19263B;
+--accent-h: 179;
+--accent-s: 63%;
+--accent-l: 51%;
+--color-accent-hsl: 179, 63%, 51%;
+}`,
+    "uw-seaweed": `.uw-seaweed {
+--love-rgb: 255, 123, 123;
+--gold-rgb: 242, 225, 95;
+--rose-rgb: 216, 237, 141;
+--pine-rgb: 109, 196, 120;
+--foam-rgb: 191, 229, 222;
+--iris-rgb: 95, 163, 162;
+--base: #193233;
+--surface-rgb: 25, 57, 58;
+--overlay: #214B4C;
+--muted: #7CAB9B;
+--subtle: #A7C9C9;
+--text: #dee2b9;
+--highlight-low: #1F3533;
+--highlight-med-rgb: 63, 99, 96;
+--highlight-high: #5D817E;
+--accent-h: 169;
+--accent-s: 42%;
+--accent-l: 82%;
+--color-accent-hsl: 169, 42%, 82%;
+/*foam*/
+}`,
+    "uw-sand": `.uw-sand {
+--love-rgb: 232, 157, 149;
+--gold-rgb: 246, 173, 119;
+--rose-rgb: 187, 163, 121;
+--pine-rgb: 121, 166, 222;
+--foam-rgb: 195, 230, 148;
+--iris-rgb: 145, 145, 188;
+--base: #151527;
+--surface-rgb: 25, 25, 46;
+--overlay: #212037;
+--muted: #a09a79;
+--subtle: #b8b28e;
+--text: #CED9BF;
+--highlight-low: #1A2230;
+--highlight-med-rgb: 48, 62, 85;
+--highlight-high: #37465F;
+--accent-h: 213;
+--accent-s: 60%;
+--accent-l: 67%;
+--color-accent-hsl: 213, 60%, 67%%;
+/*pine*/
+}`,
+    "nord-bright": `.nord-bright {
+--love-rgb: 191, 97, 106;
+/*nord11*/
+--gold-rgb: 208, 135, 112;
+/*nord12*/
+--rose-rgb: 180, 142, 173;
+/*nord15*/
+--pine-rgb: 129, 161, 193;
+/*nord9*/
+--foam-rgb: 136, 192, 208;
+/*nord7*/
+--iris-rgb: 94, 129, 172;
+/*nord10*/
+--base: #E5E9F0;
+/*nord5*/
+--surface-rgb: 236, 239, 244;
+/*nord6*/
+--overlay: #D8DEE9;
+/*nord4*/
+--muted: #4C566A;
+/*nord3*/
+--subtle: #4C566A;
+/*nord3*/
+--text: #434C5E;
+/*nord2*/
+--highlight-low: #E5E9F0;
+/*nord5*/
+--highlight-med-rgb: 216, 222, 233;
+/*nord4*/
+--highlight-high: #d8dee9;
+/*nord4*/
+--accent-h: 210;
+--accent-s: 34%;
+--accent-l: 63%;
+--color-accent-hsl: 210, 34%, 63%;
+/*nord9*/
+}`,
+    "catppuccin-latte": `.catppuccin-latte {
+--love-rgb: 230, 69, 83;
+/*maroon*/
+--gold-rgb: 223, 142, 29;
+/*yellow*/
+--rose-rgb: 221, 120, 120;
+/*flamingo*/
+--pine-rgb: 4, 165, 229;
+/*sky*/
+--foam-rgb: 32, 159, 181;
+/*sapphire*/
+--iris-rgb: 114, 135, 253;
+/*lavender*/
+--base: #e6e9ef;
+/*mantle*/
+--surface-rgb: 239, 241, 245;
+/*base*/
+--overlay: #dce0e8;
+/*crust*/
+--muted: #6c6f85;
+/*subtext0*/
+--subtle: #5c5f77;
+/*subtext1*/
+--text: #4c4f69;
+/*text*/
+--highlight-low: #ccd0da;
+/*surface0*/
+--highlight-med-rgb: 188, 192, 204;
+/*surface1*/
+--highlight-high: #acb0be;
+/*surface2*/
+--accent-h: 11;
+--accent-s: 59%;
+--accent-l: 67%;
+--color-accent-hsl: 11, 59%, 67%;
+/*Rosewater*/
+}`,
+    "everforest-light": `.everforest-light {
+--love-rgb: 248, 85, 82;
+/*statusline3*/
+--gold-rgb: 223, 160, 0;
+/*yellow*/
+--rose-rgb: 245, 125, 38;
+/*orange*/
+--pine-rgb: 53, 167, 124;
+/*aqua*/
+--foam-rgb: 58, 148, 197;
+/*blue*/
+--iris-rgb: 223, 105, 186;
+/*purple*/
+--base: #efebd4;
+/*bg_dim*/
+--surface-rgb: 253, 246, 227;
+/*bg0*/
+--overlay: #eaedc8;
+/*bg_visual*/
+--muted: #939f91;
+/*gray1*/
+--subtle: #829181;
+/*gray2*/
+--text: #5c6a72;
+/*fg*/
+--highlight-low: #efebd4;
+/*bg2*/
+--highlight-med-rgb: 230, 226, 204;
+/*bg3*/
+--highlight-high: #e0dcc7;
+/*bg4*/
+--accent-h: 97;
+--accent-s: 38%;
+--accent-l: 53%;
+--color-accent-hsl: 97, 38%, 53%;
+/*green/statusline1*/
+}`,
+    "gruvbox-light": `.gruvbox-light {
+--love-rgb: 204, 36, 29;
+/*red*/
+--gold-rgb: 215, 153, 33;
+/*yellow*/
+--rose-rgb: 152, 151, 26;
+/*green*/
+--pine-rgb: 69, 133, 136;
+/*blue*/
+--foam-rgb: 104, 157, 106;
+/*aqua*/
+--iris-rgb: 177, 98, 134;
+/*purple*/
+--base: #ebdbb2;
+/*bg1*/
+--surface-rgb: 251, 241, 199;
+/*bg*/
+--overlay: #f2e5bc;
+/*bg0_s*/
+--muted: #7c6f54;
+/*fg4*/
+--subtle: #504945;
+/*fg2*/
+--text: #3c3836;
+/*fg*/
+--highlight-low: #d5c4a1;
+/*bg2*/
+--highlight-med-rgb: 189, 174, 147;
+/*bg3*/
+--highlight-high: #a89984;
+/*bg4*/
+--accent-h: 122;
+--accent-s: 22%;
+--accent-l: 51%;
+--color-accent-hsl: 122, 22%, 51%;
+/*aqua*/
+}`,
+    "obsidian-light": `.obsidian-light {
+--love-rgb: 233, 49, 71;
+/*red*/
+--gold-rgb: 224, 172, 0;
+/*yellow*/
+--rose-rgb: 236, 117, 0;
+/*orange*/
+--pine-rgb: 8, 109, 221	;
+/*blue*/
+--foam-rgb: 8, 185, 78;
+/*green*/
+--iris-rgb: 120, 82, 238;
+/*purple*/
+--base: #f6f6f6;
+/*color-base-20*/
+--surface-rgb: 255, 255, 255;
+/*color-base-00*/
+--overlay: #e3e3e3;
+/*color-base-25*/
+--muted: #ababab;
+/*color-base-50*/
+--subtle: #707070;
+/*color-base-60*/
+--text: #222222;
+/*color-base-100*/
+--highlight-low: #fafafa;
+/*color-base-10*/
+--highlight-med-rgb: 224, 224, 224;
+/*e0e0e0*/
+/*color-base-30*/
+--highlight-high: #d4d4d4;
+/*color-base-35*/
+--accent-h: 258;
+--accent-s: 88%;
+--accent-l: 66%;
+--color-accent-hsl: 258, 88%, 66%;
+/*default purple*/
+}`,
+    "uw-octopus": `.uw-octopus {
+--love-rgb: 205, 106, 94;
+--gold-rgb: 230, 161, 73;
+--rose-rgb: 127, 111, 134;
+--pine-rgb: 86, 139, 187;
+--foam-rgb: 106, 168, 149;
+--iris-rgb: 204, 135, 90;
+--base: #F2EDF4;
+--surface-rgb: 252, 251, 250;
+--overlay: #eee9f0;
+--muted: #798094;
+--subtle: #616980;
+--text: #475669;
+--highlight-low: #e3e9eb;
+--highlight-med-rgb: 206, 222, 227;
+--highlight-high: #B4C3C8;
+--accent-h: 6;
+--accent-s: 53%;
+--accent-l: 59%;
+--color-accent-hsl: 6, 53%, 59%;
+/*foam*/
+}`,
+    "uw-coral": `.uw-coral {
+--love-rgb: 145, 121, 123;
+--gold-rgb: 242, 154, 99;
+--rose-rgb: 145, 166, 204;
+--pine-rgb: 119, 166, 155;
+--foam-rgb: 138, 182, 189;
+--iris-rgb: 222, 152, 137;
+--base: #F3E9E2;
+--surface-rgb: 255, 244, 237;
+--overlay: #FBE1DB;
+--muted: #A79A8C;
+--subtle: #928577;
+--text: #6C6156;
+--highlight-low: #EDE2DA;
+--highlight-med-rgb: 231, 214, 196;
+--highlight-high: #D9C6B9;
+--accent-h: 11;
+--accent-s: 56%;
+--accent-l: 70%;
+--color-accent-hsl: 11, 56%, 70%;
+/*iris*/
+}`,
+    "uw-aqua": `.uw-aqua {
+--love-rgb: 194, 105, 128;
+--gold-rgb: 183, 195, 121;
+--rose-rgb: 215, 131, 116;
+--pine-rgb: 123, 168, 149;
+--foam-rgb: 96, 161, 169;
+--iris-rgb: 128, 127, 152;
+--base: #f0efec;
+--surface-rgb: 255, 251, 245;
+--overlay: #e6eeec;
+--muted: #80766f;
+--subtle: #7c726b;
+--text: #4e4c49;
+--highlight-low: #e9eef0;
+--highlight-med-rgb: 220, 227, 230;
+--highlight-high: #cfdadf;
+--accent-h: 187;
+--accent-s: 40%;
+--accent-l: 60%;
+--color-accent-hsl: 187, 40%, 60%;
+/*foam*/
+}`,
+    "uw-oyster": `.uw-oyster {
+--love-rgb: 64, 45, 48;
+--gold-rgb: 255, 150, 0;
+--rose-rgb: 140, 35, 51;
+--pine-rgb: 50, 111, 144;
+--foam-rgb: 70, 102, 67;
+--iris-rgb: 103, 67, 100;
+--base: #EEE6E5;
+--surface-rgb: 245, 239, 238;
+--overlay: #E6DAD7;
+--muted: #7F8284;
+--subtle: #545557;
+--text: #2C2E2F;
+--highlight-low: #EAE5E0;
+--highlight-med-rgb: 209, 201, 193;
+--highlight-high: #B8B3AD;
+--accent-h: 201;
+--accent-s: 48%;
+--accent-l: 38%;
+--color-accent-hsl: 201, 48%, 38%;
+/*pine*/
+}`,
+    "callout-solid": `.callout-solid {
+--callout-border-width: 2px 6px 6px 2px;
+}`,
+    "callout-outlined": `.callout-outlined {
+--callout-border-width: 1px;
+--callout-content-background: var(--background-primary);
+--callout-content-padding: 0px var(--size-4-6);
+--callout-padding: 0px;
+--callout-title-padding: 7px 15px;
+}`,
+    "callout-math": `.callout-math .callout {
+border-width: 2px;
+border-color: rgba(var(--callout-color));
+border-radius: 0px;
+background-color: transparent;
+}`,
+    "table-minimal": `.table-minimal {
+--table-header-background: transparent;
+--table-header-background-hover: var(--table-header-background);
+--table-header-color: var(--text-normal);
+--table-row-alt-background: transparent;
+--table-row-alt-background-hover: var(--table-row-alt-background);
+}`,
+    "checkbox-circle": `.checkbox-circle {
+--checkbox-radius: 100px;
+}`,
+    "vault-school": `.vault-school {
+--vault-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%235f6368'%3E%3Cpath d='M840-320v-236L518-381q-18 10-38 10t-38-10L104-565q-11-6-15.5-15T84-600q0-11 4.5-20t15.5-15l338-184q9-5 18.5-7.5T480-829q10 0 19.5 2.5T518-819l381 208q10 5 15.5 14.5T920-576v256q0 17-11.5 28.5T880-280q-17 0-28.5-11.5T840-320ZM442-141 242-249q-20-11-31-30t-11-41v-152l242 131q18 10 38 10t38-10l242-131v152q0 22-11 41t-31 30L518-141q-9 5-18.5 7.5T480-131q-10 0-19.5-2.5T442-141Z'/%3E%3C/svg%3E");
+}`,
+    "vault-science": `.vault-science {
+--vault-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%235f6368'%3E%3Cpath d='M200-120q-51 0-72.5-45.5T138-250l222-270v-240h-40q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760h-40v240l222 270q32 39 10.5 84.5T760-120H200Z'/%3E%3C/svg%3E");
+}`,
+    "vault-brain": `.vault-brain {
+--vault-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%235f6368'%3E%3Cpath d='M570-120q-13 0-25.5-2.5T520-130v-700q12-5 24.5-7.5T570-840q52 0 89.5 35t40.5 86q59 8 99.5 53T840-560q0 22-5.5 42T818-480q11 18 16.5 38.5T840-400q0 62-40.5 106.5T699-241q-5 50-41.5 85.5T570-120Zm-180 0q-51 0-88-35.5T260-241q-60-8-100-53t-40-106q0-21 5.5-41.5T142-480q-11-18-16.5-38t-5.5-42q0-61 40-105.5t99-52.5q3-51 41-86.5t90-35.5q13 0 25.5 3t24.5 8v699q-12 5-24.5 7.5T390-120Z'/%3E%3C/svg%3E");
+}`,
+    "vault-book": `.vault-book {
+--vault-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%235f6368'%3E%3Cpath d='M120-274v-286q0-32 23.5-54t55.5-20q79 12 150.5 46.5T480-498q59-55 130.5-89.5T761-634q32-2 55.5 20t23.5 54v286q0 32-21 54.5T766-195q-64 10-124 33t-112 61q-11 9-23.5 13.5T480-83q-14 0-26.5-4.5T430-101q-52-38-112-61t-124-33q-32-2-53-24.5T120-274Zm360-326q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Z'/%3E%3C/svg%3E");
+}`,
+    "vault-plant": `.vault-plant {
+--vault-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%235f6368'%3E%3Cpath d='M480-120q-17 0-28.5-11.5T440-160v-279q-64 0-123-24.5T213-533q-45-45-69-104t-24-123v-40q0-17 11.5-28.5T160-840h40q63 0 122 24.5T426-746q31 31 51.5 68t31.5 79q5-7 11-13.5t13-13.5q45-45 104-69.5T760-720h40q17 0 28.5 11.5T840-680v40q0 64-24.5 123T746-413q-45 45-103.5 69T520-320v160q0 17-11.5 28.5T480-120Z'/%3E%3C/svg%3E");
+}`,
+    "vault-rocket": `.vault-rocket {
+--vault-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%235f6368'%3E%3Cpath d='M245-474q26-66 62.5-127T390-716l-52-11q-20-4-39 2t-33 20L140-579q-15 15-11.5 36t23.5 29l93 40Zm588-390q-106-5-201.5 41T461-702q-48 48-84.5 104T313-480q-5 13-5 26.5t10 23.5l125 125q10 10 23.5 10t26.5-5q62-27 118-63.5T715-448q75-75 121-170.5T877-820q0-8-4-16t-10-14q-6-6-14-10t-16-4ZM579-566q-23-23-23-56.5t23-56.5q23-23 56.5-23t56.5 23q23 23 23 56.5T692-566q-23 23-56.5 23T579-566Zm-92 334 40 93q8 20 29 24t36-11l126-126q14-14 20-33.5t2-39.5l-10-52q-55 46-115.5 82.5T487-232Zm-325-86q35-35 85-35.5t85 34.5q35 35 35 85t-35 85q-48 48-113.5 57T87-74q9-66 18.5-131.5T162-318Z'/%3E%3C/svg%3E");
+}`,
+    "vault-dev": `.vault-dev {
+--vault-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjNWY2MzY4Ij48cGF0aCBkPSJtMzUzLTQ4MCA1OS01OXExMi0xMiAxMi0yOHQtMTItMjhxLTEyLTEyLTI4LjUtMTJUMzU1LTU5NWwtODcgODdxLTYgNi04LjUgMTN0LTIuNSAxNXEwIDggMi41IDE1dDguNSAxM2w4NyA4N3ExMiAxMiAyOC41IDEydDI4LjUtMTJxMTItMTIgMTItMjh0LTEyLTI4bC01OS01OVptMjU0IDAtNTkgNTlxLTEyIDEyLTEyIDI4dDEyIDI4cTEyIDEyIDI4LjUgMTJ0MjguNS0xMmw4Ny04N3E2LTYgOC41LTEzdDIuNS0xNXEwLTgtMi41LTE1dC04LjUtMTNsLTg3LTg3cS02LTYtMTMuNS05dC0xNS0zcS03LjUgMC0xNSAzdC0xMy41IDlxLTEyIDEyLTEyIDI4dDEyIDI4bDU5IDU5Wk0yMDAtMTIwcS0zMyAwLTU2LjUtMjMuNVQxMjAtMjAwdi01NjBxMC0zMyAyMy41LTU2LjVUMjAwLTg0MGg1NjBxMzMgMCA1Ni41IDIzLjVUODQwLTc2MHY1NjBxMCAzMy0yMy41IDU2LjVUNzYwLTEyMEgyMDBaIi8+PC9zdmc+");
+}`,
+    "box-links": `.box-links {
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link,
+  .markdown-rendered .internal-link {
+    border: 1px solid var(--highlight-med);
+    background-color: transparent;
+    
+    &:hover {
+      background-color: var(--highlight-med);
+      color: var(--link-color);
+    }
+};
+}`,
+    "no-links": `.no-links {
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link,
+  .markdown-rendered .internal-link {
+    background-color: transparent;
+    padding: 0px;
+
+    &:hover {
+      color: var(--link-color-hover);
+      transition: color 0.3s ease-out;
+      background-color: transparent;
+}};
+}`,
+    "no-center": `.no-center {
+:is(:is(.markdown-source-view.mod-cm6) :is(.cm-content, .cm-line), .markdown-rendered) :is(img, .external-embed, .internal-embed audio, .internal-embed video, .iframe-external-embed) {
+  margin-inline: 0;
+  display: inline;
+  border-radius: 10px;
+};
+table, .table-wrapper {
+  margin-inline: 0;
+};
+}`,
+    "visible-properties": `.visible-properties {
+--metadata-display-reading: block;
+}`,
+    "no-tooltips": `.no-tooltips .tooltip {
+display: none;
+}`,
+    "no-scrollbar": `.no-scrollbar .mod-left-split ::-webkit-scrollbar, .no-scrollbar .mod-right-split ::-webkit-scrollbar {
+display: none;
+}`,
+    "focus-mode": `.focus-mode .titlebar-button-container {
+display: none;
+}
+
+.focus-mode {
+.workspace-tab-header-container, .view-header, .status-bar, .metadata-properties-heading, ::-webkit-scrollbar {
+    display: none !important;
+};
+}
+
+.focus-mode .workspace-tab-container {
+margin-top: 14px;
+}`,
+    "workspace-bg": `.workspace-bg .app-container::before {
+background-image: var(--bg-url);
+opacity: var(--bg-opacity, 0.8);
+filter: blur(var(--bg-blur, 0px));
+background-color: var(--uw-background);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+z-index: -1;
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+}
+
+.workspace-bg .app-container {
+&.workspace, .workspace-tabs, .workspace-split, .horizontal-main-container {
+  background-color: transparent;
+};
+}
+
+.workspace-bg .mod-right-split, .workspace-bg .mod-left-split, .workspace-bg .workspace-leaf {
+--background-primary: rgba(var(--surface-rgb),var(--layout-opacity, 0.8));
+background-color: var(--background-primary);
+}
+
+.workspace-bg .workspace-split.mod-left-split, .workspace-bg .workspace-split.mod-right-split, .workspace-bg .workspace-split.mod-root .view-content, .workspace-bg .workspace-leaf.mod-active .view-header {
+background-color: transparent;
+}`,
+    "kanban-modern": `.kanban-modern {
+.kanban-plugin__lane {
+    background-color: var(--background-primary) !important;
+  };
+.kanban-plugin__lane:hover {
+    outline: 1px solid var(--highlight-med);
+  };
+.kanban-plugin__item-title-wrapper {
+    background-color: var(--overlay);
+    border-radius: 10px;
+    border: 1px solid var(--highlight-high);
+    padding: 10px;
+    transition-duration: .3s;
+    transition-property: border-color, box-shadow, background-color;
+  };
+.kanban-plugin__item:has(.markdown-source-view), .kanban-plugin__item, .kanban-plugin__item-button-wrapper, .kanban-plugin__item-form /*fix*/ {
+    outline: none;
+    border: none;
+  };
+.kanban-plugin__item-title-wrapper:hover {
+    border: 1px solid var(--text-faint);
+    cursor: pointer;
+  };
+button.kanban-plugin__new-item-button {
+    background-color: transparent;
+    color: var(--text-faint);
+  };
+button.kanban-plugin__new-item-button:hover {
+    background-color: transparent;
+    color: var(--color-pink);
+};
+}`,
+    dotted: `.dotted .excalidraw {
+background-image: radial-gradient(var(--background-modifier-border) 1px, transparent 0);
+background-size: 20px 20px;
+background-position: -19px -19px;
+}`,
+    "seamless-dataview": `.seamless-dataview .dataview.table-view-table th, .seamless-dataview .dataview.table-view-table :is(td, th) {
+border: 1px solid var(--table-border-color);
+font-size: var(--font-text-size);
+}`,
+    "tokei-plugin": `.tokei-plugin {
+.time {
+    padding: 20px;
+    font-size: 3.2em;
+    text-shadow: none;
+    color: var(--pine);
+  };
+.date {
+    font-size: 1.5em;
+    color: var(--rose);
+  };
+.timezone-container {
+    padding: 15px;
+    gap: 15px;
+  };
+.timezone-pair {
+    flex-direction: row;
+    border: 2px dotted var(--highlight-high);
+    background-color: transparent;
+    border-radius: 5px;
+  };
+.timezone-name {
+    color: var(--subtle);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  };
+.timezone-time {
+    color: var(--text-normal);
+};
 }`,
   },
 };

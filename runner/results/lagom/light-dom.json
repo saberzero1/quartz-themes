@@ -1408,7 +1408,7 @@
             "styles": {
               "color": "rgb(34, 34, 34)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgba(108, 108, 108, 0.42)",
+              "borderColor": "rgba(80, 80, 80, 0.533)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -1536,7 +1536,7 @@
                     "styles": {
                       "color": "rgb(34, 34, 34)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgba(108, 108, 108, 0.42)",
+                      "borderColor": "rgba(80, 80, 80, 0.533)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
                     },
@@ -1651,7 +1651,7 @@
                     "styles": {
                       "color": "rgb(34, 34, 34)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgba(108, 108, 108, 0.42)",
+                      "borderColor": "rgba(80, 80, 80, 0.533)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
                     },
@@ -1825,7 +1825,7 @@
             "styles": {
               "color": "rgb(34, 34, 34)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgba(108, 108, 108, 0.42)",
+              "borderColor": "rgba(80, 80, 80, 0.533)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -2122,7 +2122,7 @@
             "styles": {
               "color": "rgb(34, 34, 34)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgba(108, 108, 108, 0.42)",
+              "borderColor": "rgba(80, 80, 80, 0.533)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },

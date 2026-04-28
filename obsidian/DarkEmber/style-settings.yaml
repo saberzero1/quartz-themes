@@ -2,18 +2,18 @@ name: DarkEmber
 id: DarkEmber-settings
 settings:
   - id: dkem-head-decoration
-    title: "header( #1 - #5 ) decoration settings"
-    title.ja: "見出し( #1 ～ #5 )装飾設定"
+    title: 'header( #1 - #5 ) decoration settings'
+    title.ja: '見出し( #1 ～ #5 )装飾設定'
     type: heading
     level: 1
     collapsed: true
   - id: dkem-is-decoration
-    title: "is header decoration ( true / false )"
-    title.ja: "見出しの装飾のオン／オフ"
+    title: is header decoration ( true / false )
+    title.ja: 見出しの装飾のオン／オフ
     type: class-toggle
     default: true
   - id: color-scheme
-    title: "Dark Color Scheme"
+    title: Dark Color Scheme
     type: class-select
     allowEmpty: false
     default: theme-dark-orange
@@ -27,7 +27,7 @@ settings:
       - label: Purple
         value: theme-dark-purple
   - id: light-color-scheme
-    title: "Light Color Scheme"
+    title: Light Color Scheme
     type: class-select
     allowEmpty: false
     default: theme-light-orange

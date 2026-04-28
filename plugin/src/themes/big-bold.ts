@@ -1226,56 +1226,57 @@ export const theme: ThemeData = {
           "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,\n    U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,\n    U+2212, U+2215, U+FEFF, U+FFFD",
       },
     ],
+    styleSettingsId: "big-and-bold-theme",
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-h: 181 !important;
-  --accent-l: 35% !important;
-  --accent-s: 100% !important;
-  --anim-motion-swing: cubic-bezier(0.25, 0.05, 0.55, 0.95) !important;
-  --background-modifier-active-hover: hsla(181, 100%, 35%, 0.1) !important;
-  --background-modifier-border: hsl(216, 20%, 20%) !important;
-  --background-modifier-border-focus: hsl(218, 19%, 31%) !important;
-  --background-modifier-border-hover: hsl(218, 19%, 27%) !important;
-  --background-modifier-error: #ff4d3a !important;
-  --background-modifier-error-hover: #ff4d3a !important;
-  --background-modifier-error-rgb: 255, 77, 58 !important;
-  --background-modifier-form-field: hsl(216, 20%, 20%) !important;
-  --background-modifier-form-field-hover: hsl(216, 20%, 20%) !important;
-  --background-modifier-success: #7dcf2b !important;
-  --background-modifier-success-rgb: 125, 207, 43 !important;
-  --background-primary: hsla(216, 16%, 13%, 100%) !important;
-  --background-primary-alt: hsl(216, 17%, 14%) !important;
-  --background-secondary: hsl(216, 19%, 16%) !important;
-  --background-secondary-alt: hsl(218, 18%, 15%) !important;
-  --bases-cards-background: hsla(216, 16%, 13%, 100%) !important;
-  --bases-cards-cover-background: hsl(216, 17%, 14%) !important;
-  --bases-cards-radius: 14px !important;
-  --bases-cards-shadow: 0 0 0 1px hsl(216, 20%, 20%) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px hsl(218, 19%, 27%) !important;
-  --bases-embed-border-color: hsl(216, 20%, 20%) !important;
-  --bases-embed-border-radius: 7px !important;
-  --bases-group-heading-property-color: hsl(220, 17%, 66%) !important;
-  --bases-table-border-color: hsl(216, 20%, 20%) !important;
-  --bases-table-cell-background-active: hsla(216, 16%, 13%, 100%) !important;
-  --bases-table-cell-background-disabled: hsl(216, 17%, 14%) !important;
-  --bases-table-cell-background-selected: hsla(181, 100%, 35%, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(218, 19%, 31%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(181, 100%, 35%) !important;
-  --bases-table-container-border-radius: 7px !important;
-  --bases-table-group-background: hsl(216, 17%, 14%) !important;
-  --bases-table-header-background: hsla(216, 16%, 13%, 100%) !important;
-  --bases-table-header-color: hsl(220, 17%, 66%) !important;
-  --bases-table-row-background-hover: hsl(218, 18%, 15%) !important;
-  --bases-table-summary-background: hsla(216, 16%, 13%, 100%) !important;
-  --blockquote-border-color: hsl(181, 100%, 35%) !important;
-  --blur-background: color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent) linear-gradient(hsl(218, 18%, 15%), color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent)) !important;
-  --bodyFont: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --accent-h: 181;
+  --accent-l: 35%;
+  --accent-s: 100%;
+  --anim-motion-swing: cubic-bezier(0.25, 0.05, 0.55, 0.95);
+  --background-modifier-active-hover: hsla(181, 100%, 35%, 0.1);
+  --background-modifier-border: hsl(216, 20%, 20%);
+  --background-modifier-border-focus: hsl(218, 19%, 31%);
+  --background-modifier-border-hover: hsl(218, 19%, 27%);
+  --background-modifier-error: #ff4d3a;
+  --background-modifier-error-hover: #ff4d3a;
+  --background-modifier-error-rgb: 255, 77, 58;
+  --background-modifier-form-field: hsl(216, 20%, 20%);
+  --background-modifier-form-field-hover: hsl(216, 20%, 20%);
+  --background-modifier-success: #7dcf2b;
+  --background-modifier-success-rgb: 125, 207, 43;
+  --background-primary: hsla(216, 16%, 13%, 100%);
+  --background-primary-alt: hsl(216, 17%, 14%);
+  --background-secondary: hsl(216, 19%, 16%);
+  --background-secondary-alt: hsl(218, 18%, 15%);
+  --bases-cards-background: hsla(216, 16%, 13%, 100%);
+  --bases-cards-cover-background: hsl(216, 17%, 14%);
+  --bases-cards-radius: 14px;
+  --bases-cards-shadow: 0 0 0 1px hsl(216, 20%, 20%);
+  --bases-cards-shadow-hover: 0 0 0 1px hsl(218, 19%, 27%);
+  --bases-embed-border-color: hsl(216, 20%, 20%);
+  --bases-embed-border-radius: 7px;
+  --bases-group-heading-property-color: hsl(220, 17%, 66%);
+  --bases-table-border-color: hsl(216, 20%, 20%);
+  --bases-table-cell-background-active: hsla(216, 16%, 13%, 100%);
+  --bases-table-cell-background-disabled: hsl(216, 17%, 14%);
+  --bases-table-cell-background-selected: hsla(181, 100%, 35%, 0.1);
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(218, 19%, 31%);
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(181, 100%, 35%);
+  --bases-table-container-border-radius: 7px;
+  --bases-table-group-background: hsl(216, 17%, 14%);
+  --bases-table-header-background: hsla(216, 16%, 13%, 100%);
+  --bases-table-header-color: hsl(220, 17%, 66%);
+  --bases-table-row-background-hover: hsl(218, 18%, 15%);
+  --bases-table-summary-background: hsla(216, 16%, 13%, 100%);
+  --blockquote-border-color: hsl(181, 100%, 35%);
+  --blur-background: color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent) linear-gradient(hsl(218, 18%, 15%), color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent));
+  --bodyFont: var(--font-text, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
   --button-background: hsl(
     183,
     105%,
     39%
-  ) !important;
+  );
   --callout-bug: 230, 106, 180;
   --callout-default: 0, 155, 227;
   --callout-error: 246, 156, 0;
@@ -1290,493 +1291,493 @@ export const theme: ThemeData = {
   --callout-tip: 232, 201, 0;
   --callout-todo: 0, 155, 227;
   --callout-warning: 246, 156, 0;
-  --canvas-background: hsla(216, 16%, 13%, 100%) !important;
-  --canvas-card-label-color: hsl(219, 13%, 51%) !important;
-  --canvas-color-1: 255, 77, 58 !important;
-  --canvas-color-2: 246, 156, 0 !important;
-  --canvas-color-3: 232, 201, 0 !important;
-  --canvas-color-4: 125, 207, 43 !important;
-  --canvas-color-5: 0, 206, 203 !important;
-  --canvas-color-6: 180, 90, 245 !important;
-  --canvas-controls-icon-stroke: 1.3px !important;
-  --canvas-controls-radius: 7px !important;
-  --canvas-dot-pattern: hsl(218, 18%, 15%) !important;
-  --caret-color: #c8d4e6 !important;
-  --checkbox-border-color: #ff4d3a !important;
-  --checkbox-border-color-hover: hsl(220, 17%, 66%) !important;
-  --checkbox-color: transparent !important;
+  --canvas-background: hsla(216, 16%, 13%, 100%);
+  --canvas-card-label-color: hsl(219, 13%, 51%);
+  --canvas-color-1: 255, 77, 58;
+  --canvas-color-2: 246, 156, 0;
+  --canvas-color-3: 232, 201, 0;
+  --canvas-color-4: 125, 207, 43;
+  --canvas-color-5: 0, 206, 203;
+  --canvas-color-6: 180, 90, 245;
+  --canvas-controls-icon-stroke: 1.3px;
+  --canvas-controls-radius: 7px;
+  --canvas-dot-pattern: hsl(218, 18%, 15%);
+  --caret-color: #c8d4e6;
+  --checkbox-border-color: #ff4d3a;
+  --checkbox-border-color-hover: hsl(220, 17%, 66%);
+  --checkbox-color: transparent;
   --checkbox-color-hover: hsl(
     177,
     100%,
     33%
-  ) !important;
-  --checkbox-marker-color: hsla(216, 16%, 13%, 100%) !important;
-  --checkbox-radius: 14px !important;
-  --checkbox-size: 18px !important;
-  --checklist-done-color: hsl(220, 17%, 66%) !important;
-  --checklist-done-decoration: none !important;
-  --clickable-icon-radius: 7px !important;
-  --code-background: hsl(216, 17%, 14%) !important;
-  --code-border-color: hsl(216, 20%, 20%) !important;
-  --code-comment: hsl(219, 13%, 51%) !important;
-  --code-function: #e8c900 !important;
-  --code-important: #f69c00 !important;
-  --code-keyword: #e66ab4 !important;
-  --code-normal: #c8d4e6 !important;
-  --code-operator: #ff4d3a !important;
-  --code-property: #00cecb !important;
-  --code-punctuation: hsl(220, 17%, 66%) !important;
-  --code-radius: 7px !important;
-  --code-string: #7dcf2b !important;
-  --code-tag: #ff4d3a !important;
-  --code-value: #b45af5 !important;
-  --codeFont: "DM Mono", monospace !important;
-  --collapse-icon-color: hsl(219, 13%, 51%) !important;
+  );
+  --checkbox-marker-color: hsla(216, 16%, 13%, 100%);
+  --checkbox-radius: 14px;
+  --checkbox-size: 18px;
+  --checklist-done-color: hsl(220, 17%, 66%);
+  --checklist-done-decoration: none;
+  --clickable-icon-radius: 7px;
+  --code-background: hsl(216, 17%, 14%);
+  --code-border-color: hsl(216, 20%, 20%);
+  --code-comment: hsl(219, 13%, 51%);
+  --code-function: #e8c900;
+  --code-important: #f69c00;
+  --code-keyword: #e66ab4;
+  --code-normal: #c8d4e6;
+  --code-operator: #ff4d3a;
+  --code-property: #00cecb;
+  --code-punctuation: hsl(220, 17%, 66%);
+  --code-radius: 7px;
+  --code-string: #7dcf2b;
+  --code-tag: #ff4d3a;
+  --code-value: #b45af5;
+  --codeFont: var(--font-monospace, "DM Mono", monospace);
+  --collapse-icon-color: hsl(219, 13%, 51%);
   --collapse-icon-color-collapsed: hsl(
     177,
     100%,
     33%
-  ) !important;
-  --color-accent: hsl(181, 100%, 35%) !important;
+  );
+  --color-accent: hsl(181, 100%, 35%);
   --color-accent-1: hsl(
     177,
     100%,
     33%
-  ) !important;
+  );
   --color-accent-2: hsl(
     183,
     105%,
     39%
-  ) !important;
+  );
   --color-accent-3: hsl(
     216,
     100%,
     47%
-  ) !important;
-  --color-accent-hsl: 181, 100%, 35% !important;
-  --color-base-00: hsla(216, 16%, 13%, 100%) !important;
-  --color-base-10: hsl(216, 17%, 14%) !important;
-  --color-base-100: #c8d4e6 !important;
-  --color-base-20: hsl(216, 19%, 16%) !important;
-  --color-base-25: hsl(216, 20%, 20%) !important;
-  --color-base-30: hsl(218, 18%, 15%) !important;
-  --color-base-35: hsl(218, 19%, 27%) !important;
-  --color-base-40: hsl(218, 19%, 31%) !important;
-  --color-base-50: hsl(219, 13%, 51%) !important;
-  --color-base-60: hsl(219, 16%, 59%) !important;
-  --color-base-70: hsl(220, 17%, 66%) !important;
-  --color-blue: #009be3 !important;
-  --color-blue-rgb: 0, 155, 227 !important;
-  --color-cyan: #00cecb !important;
-  --color-cyan-rgb: 0, 206, 203 !important;
-  --color-green: #7dcf2b !important;
-  --color-green-rgb: 125, 207, 43 !important;
-  --color-orange: #f69c00 !important;
-  --color-orange-rgb: 246, 156, 0 !important;
-  --color-pink: #e66ab4 !important;
-  --color-pink-rgb: 230, 106, 180 !important;
-  --color-purple: #b45af5 !important;
-  --color-purple-rgb: 180, 90, 245 !important;
-  --color-red: #ff4d3a !important;
-  --color-red-rgb: 255, 77, 58 !important;
-  --color-yellow: #e8c900 !important;
-  --color-yellow-rgb: 232, 201, 0 !important;
-  --custom-code-height: 1em !important;
+  );
+  --color-accent-hsl: 181, 100%, 35%;
+  --color-base-00: hsla(216, 16%, 13%, 100%);
+  --color-base-10: hsl(216, 17%, 14%);
+  --color-base-100: #c8d4e6;
+  --color-base-20: hsl(216, 19%, 16%);
+  --color-base-25: hsl(216, 20%, 20%);
+  --color-base-30: hsl(218, 18%, 15%);
+  --color-base-35: hsl(218, 19%, 27%);
+  --color-base-40: hsl(218, 19%, 31%);
+  --color-base-50: hsl(219, 13%, 51%);
+  --color-base-60: hsl(219, 16%, 59%);
+  --color-base-70: hsl(220, 17%, 66%);
+  --color-blue: #009be3;
+  --color-blue-rgb: 0, 155, 227;
+  --color-cyan: #00cecb;
+  --color-cyan-rgb: 0, 206, 203;
+  --color-green: #7dcf2b;
+  --color-green-rgb: 125, 207, 43;
+  --color-orange: #f69c00;
+  --color-orange-rgb: 246, 156, 0;
+  --color-pink: #e66ab4;
+  --color-pink-rgb: 230, 106, 180;
+  --color-purple: #b45af5;
+  --color-purple-rgb: 180, 90, 245;
+  --color-red: #ff4d3a;
+  --color-red-rgb: 255, 77, 58;
+  --color-yellow: #e8c900;
+  --color-yellow-rgb: 232, 201, 0;
+  --custom-code-height: 1em;
   --custom-doc-bg: hsl(
     177,
     100%,
     33%
-  ) !important;
-  --custom-line-height: 2em !important;
-  --dark: #c8d4e6 !important;
-  --darkgray: #c8d4e6 !important;
-  --divider-color: hsl(216, 20%, 20%) !important;
-  --divider-color-hover: hsl(181, 100%, 35%) !important;
-  --doc-background: hsl(207, 24%, 22%) !important;
-  --doc-bg: hsl(207, 24%, 22%) !important;
-  --dropdown-background: hsl(218, 18%, 15%) !important;
-  --dropdown-background-hover: hsl(218, 19%, 27%) !important;
-  --embed-block-shadow-hover: 0 0 0 1px hsl(216, 20%, 20%), inset 0 0 0 1px hsl(216, 20%, 20%) !important;
-  --embed-border-left: none !important;
-  --embed-border-start: 2px solid hsl(181, 100%, 35%) !important;
-  --file-emoji: "Noto Emoji" !important;
-  --file-header-background: hsla(216, 16%, 13%, 100%) !important;
-  --file-header-background-focused: hsla(216, 16%, 13%, 100%) !important;
-  --file-header-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --file-line-width: 900px !important;
-  --flair-background: hsl(218, 18%, 15%) !important;
-  --flair-color: #c8d4e6 !important;
-  --folder-1: "📒" !important;
-  --folder-1-open: "📖" !important;
-  --folder-2: "📑" !important;
-  --folder-2-open: "📑" !important;
-  --folder-3: "🔖" !important;
-  --folder-3-open: "🔖" !important;
-  --folder-emoji: "Noto Emoji" !important;
-  --folder-icon-size: 1.6em !important;
-  --folder-padding: 4px !important;
-  --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --font-emoji: "Noto Color Emoji" !important;
-  --font-interface: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --font-main: "Nunito Sans" !important;
-  --font-mermaid: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --font-monospace: "DM Mono", monospace !important;
-  --font-text: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --footnote-divider-color: hsl(216, 20%, 20%) !important;
-  --footnote-id-color: hsl(220, 17%, 66%) !important;
-  --footnote-id-color-no-occurrences: hsl(219, 13%, 51%) !important;
-  --footnote-radius: 7px !important;
-  --google-font-color-notocoloremoji: colrv1 !important;
-  --graph-line: hsl(218, 19%, 27%) !important;
-  --graph-node: hsl(220, 17%, 66%) !important;
-  --graph-node-attachment: #e8c900 !important;
+  );
+  --custom-line-height: 2em;
+  --dark: var(--text-normal, #c8d4e6);
+  --darkgray: var(--text-normal, #c8d4e6);
+  --divider-color: hsl(216, 20%, 20%);
+  --divider-color-hover: hsl(181, 100%, 35%);
+  --doc-background: hsl(207, 24%, 22%);
+  --doc-bg: hsl(207, 24%, 22%);
+  --dropdown-background: hsl(218, 18%, 15%);
+  --dropdown-background-hover: hsl(218, 19%, 27%);
+  --embed-block-shadow-hover: 0 0 0 1px hsl(216, 20%, 20%), inset 0 0 0 1px hsl(216, 20%, 20%);
+  --embed-border-left: none;
+  --embed-border-start: 2px solid hsl(181, 100%, 35%);
+  --file-emoji: "Noto Emoji";
+  --file-header-background: hsla(216, 16%, 13%, 100%);
+  --file-header-background-focused: hsla(216, 16%, 13%, 100%);
+  --file-header-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --file-line-width: 900px;
+  --flair-background: hsl(218, 18%, 15%);
+  --flair-color: #c8d4e6;
+  --folder-1: "📒";
+  --folder-1-open: "📖";
+  --folder-2: "📑";
+  --folder-2-open: "📑";
+  --folder-3: "🔖";
+  --folder-3-open: "🔖";
+  --folder-emoji: "Noto Emoji";
+  --folder-icon-size: 1.6em;
+  --folder-padding: 4px;
+  --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-emoji: "Noto Color Emoji";
+  --font-interface: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-main: "Nunito Sans";
+  --font-mermaid: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-monospace: "DM Mono", monospace;
+  --font-text: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --footnote-divider-color: hsl(216, 20%, 20%);
+  --footnote-id-color: hsl(220, 17%, 66%);
+  --footnote-id-color-no-occurrences: hsl(219, 13%, 51%);
+  --footnote-radius: 7px;
+  --google-font-color-notocoloremoji: colrv1;
+  --graph-line: hsl(218, 19%, 27%);
+  --graph-node: hsl(220, 17%, 66%);
+  --graph-node-attachment: #e8c900;
   --graph-node-focused: hsl(
     177,
     100%,
     33%
-  ) !important;
-  --graph-node-tag: #7dcf2b !important;
-  --graph-node-unresolved: hsl(219, 13%, 51%) !important;
-  --graph-text: #c8d4e6 !important;
-  --gray: hsl(220, 17%, 66%) !important;
-  --h1-align: center !important;
-  --h1-color-custom: #00cecb !important;
-  --h1-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h1-size: 2.2em !important;
-  --h2-color-custom: #009be3 !important;
-  --h2-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h2-size: 1.87em !important;
-  --h2-weight: 700 !important;
-  --h3-color-custom: #b45af5 !important;
-  --h3-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h3-size: 1.57em !important;
-  --h3-weight: 700 !important;
-  --h4-color-custom: #e66ab4 !important;
-  --h4-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h4-size: 1.35em !important;
-  --h4-weight: 700 !important;
-  --h5-color-custom: #ff4d3a !important;
-  --h5-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h5-size: 1.3em !important;
-  --h5-weight: 700 !important;
-  --h6-color-custom: #f69c00 !important;
-  --h6-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h6-size: 1.1em !important;
-  --h6-weight: 700 !important;
-  --headerFont: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --heading-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --heading-font-2: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --heading-formatting: hsl(219, 13%, 51%) !important;
-  --heading-style: normal !important;
-  --heading-variant: normal !important;
-  --heading-weight: 700 !important;
-  --highlight: hsla(181, 100%, 35%, 0.475) !important;
-  --highlight-text: white !important;
-  --hr-color: hsl(216, 20%, 20%) !important;
-  --icon-background: hsl(218, 18%, 15%) !important;
-  --icon-color: hsl(220, 17%, 66%) !important;
+  );
+  --graph-node-tag: #7dcf2b;
+  --graph-node-unresolved: hsl(219, 13%, 51%);
+  --graph-text: #c8d4e6;
+  --gray: var(--text-muted, hsl(220, 17%, 66%));
+  --h1-align: center;
+  --h1-color-custom: #00cecb;
+  --h1-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h1-size: 2.2em;
+  --h2-color-custom: #009be3;
+  --h2-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h2-size: 1.87em;
+  --h2-weight: 700;
+  --h3-color-custom: #b45af5;
+  --h3-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h3-size: 1.57em;
+  --h3-weight: 700;
+  --h4-color-custom: #e66ab4;
+  --h4-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h4-size: 1.35em;
+  --h4-weight: 700;
+  --h5-color-custom: #ff4d3a;
+  --h5-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h5-size: 1.3em;
+  --h5-weight: 700;
+  --h6-color-custom: #f69c00;
+  --h6-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h6-size: 1.1em;
+  --h6-weight: 700;
+  --headerFont: var(--font-text, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --heading-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --heading-font-2: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --heading-formatting: hsl(219, 13%, 51%);
+  --heading-style: normal;
+  --heading-variant: normal;
+  --heading-weight: 700;
+  --highlight: var(--text-highlight-bg, hsla(181, 100%, 35%, 0.475));
+  --highlight-text: white;
+  --hr-color: hsl(216, 20%, 20%);
+  --icon-background: hsl(218, 18%, 15%);
+  --icon-color: hsl(220, 17%, 66%);
   --icon-color-active: hsl(
     177,
     100%,
     33%
-  ) !important;
-  --icon-color-focused: #c8d4e6 !important;
-  --icon-color-hover: hsl(220, 17%, 66%) !important;
-  --icon-emoji: "Noto Color Emoji" !important;
-  --icon-l-stroke-width: 1.3px !important;
-  --icon-m-stroke-width: 1.3px !important;
-  --icon-s-stroke-width: 1.3px !important;
-  --icon-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) inset, 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) !important;
-  --icon-stroke: 1.3px !important;
-  --img-align: auto !important;
-  --img-bg-size: cover !important;
-  --img-blur: 3px !important;
-  --img-position-x: 50% !important;
-  --img-position-y: 50% !important;
-  --img-sat: 100% !important;
-  --indentation-guide-color: transparent !important;
-  --inline-title-color: #c8d4e6 !important;
-  --inline-title-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --inline-title-size: 2.5em !important;
-  --input-date-separator: hsl(219, 13%, 51%) !important;
-  --input-placeholder-color: hsl(219, 13%, 51%) !important;
-  --interactive-accent: hsl(181, 100%, 35%) !important;
+  );
+  --icon-color-focused: #c8d4e6;
+  --icon-color-hover: hsl(220, 17%, 66%);
+  --icon-emoji: "Noto Color Emoji";
+  --icon-l-stroke-width: 1.3px;
+  --icon-m-stroke-width: 1.3px;
+  --icon-s-stroke-width: 1.3px;
+  --icon-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) inset, 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042);
+  --icon-stroke: 1.3px;
+  --img-align: auto;
+  --img-bg-size: cover;
+  --img-blur: 3px;
+  --img-position-x: 50%;
+  --img-position-y: 50%;
+  --img-sat: 100%;
+  --indentation-guide-color: transparent;
+  --inline-title-color: #c8d4e6;
+  --inline-title-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --inline-title-size: 2.5em;
+  --input-date-separator: hsl(219, 13%, 51%);
+  --input-placeholder-color: hsl(219, 13%, 51%);
+  --interactive-accent: hsl(181, 100%, 35%);
   --interactive-accent-hover: hsl(
     177,
     100%,
     33%
-  ) !important;
-  --interactive-accent-hsl: 181, 100%, 35% !important;
-  --interactive-hover: hsl(218, 19%, 27%) !important;
-  --interactive-normal: hsl(218, 18%, 15%) !important;
-  --light: hsla(216, 16%, 13%, 100%) !important;
-  --lightgray: hsl(216, 19%, 16%) !important;
+  );
+  --interactive-accent-hsl: 181, 100%, 35%;
+  --interactive-hover: hsl(218, 19%, 27%);
+  --interactive-normal: hsl(218, 18%, 15%);
+  --light: var(--background-primary, hsla(216, 16%, 13%, 100%));
+  --lightgray: var(--background-secondary, hsl(216, 19%, 16%));
   --link-color: hsl(
     177,
     100%,
     33%
-  ) !important;
+  );
   --link-color-hover: hsl(
     183,
     105%,
     39%
-  ) !important;
+  );
   --link-external-color: hsl(
     177,
     100%,
     33%
-  ) !important;
+  );
   --link-external-color-hover: hsl(
     183,
     105%,
     39%
-  ) !important;
-  --link-unresolved-color: hsl(219, 13%, 51%) !important;
-  --link-unresolved-decoration-color: hsl(218, 19%, 27%) !important;
-  --list-bullet-size: 0.45em !important;
-  --list-marker-color: #00cecb !important;
+  );
+  --link-unresolved-color: hsl(219, 13%, 51%);
+  --link-unresolved-decoration-color: hsl(218, 19%, 27%);
+  --list-bullet-size: 0.45em;
+  --list-marker-color: #00cecb;
   --list-marker-color-collapsed: hsl(
     177,
     100%,
     33%
-  ) !important;
-  --list-marker-color-hover: #e8c900 !important;
-  --menu-background: hsl(216, 19%, 16%) !important;
-  --menu-border-color: hsl(218, 19%, 27%) !important;
-  --menu-radius: 14px !important;
+  );
+  --list-marker-color-hover: #e8c900;
+  --menu-background: hsl(216, 19%, 16%);
+  --menu-border-color: hsl(218, 19%, 27%);
+  --menu-radius: 14px;
   --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
-  --metadata-border-color: hsl(216, 20%, 20%) !important;
-  --metadata-divider-color: hsl(216, 20%, 20%) !important;
-  --metadata-input-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --metadata-input-text-color: #c8d4e6 !important;
-  --metadata-label-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --metadata-label-text-color: hsl(220, 17%, 66%) !important;
-  --metadata-label-text-color-hover: hsl(220, 17%, 66%) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(218, 19%, 31%) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(218, 19%, 27%) !important;
-  --modal-background: hsla(216, 16%, 13%, 100%) !important;
-  --modal-border-color: hsl(218, 19%, 31%) !important;
-  --modal-community-sidebar-width: 25em !important;
-  --modal-height: 100% !important;
-  --modal-max-height: 100 !important;
-  --modal-max-width: 100% !important;
-  --modal-max-width-narrow: 75% !important;
-  --modal-radius: 0px !important;
-  --modal-width: 100% !important;
-  --nav-collapse-icon-color: hsl(219, 13%, 51%) !important;
-  --nav-collapse-icon-color-collapsed: hsl(219, 13%, 51%) !important;
-  --nav-heading-color: #c8d4e6 !important;
-  --nav-heading-color-collapsed: hsl(219, 13%, 51%) !important;
-  --nav-heading-color-collapsed-hover: hsl(220, 17%, 66%) !important;
-  --nav-heading-color-hover: #c8d4e6 !important;
-  --nav-indentation-guide-color: transparent !important;
-  --nav-indentation-guide-width: 0px !important;
-  --nav-item-background-selected: hsla(181, 100%, 35%, 0.15) !important;
-  --nav-item-color: hsl(220, 17%, 66%) !important;
-  --nav-item-color-active: #c8d4e6 !important;
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --metadata-border-color: hsl(216, 20%, 20%);
+  --metadata-divider-color: hsl(216, 20%, 20%);
+  --metadata-input-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --metadata-input-text-color: #c8d4e6;
+  --metadata-label-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --metadata-label-text-color: hsl(220, 17%, 66%);
+  --metadata-label-text-color-hover: hsl(220, 17%, 66%);
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(218, 19%, 31%);
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(218, 19%, 27%);
+  --modal-background: hsla(216, 16%, 13%, 100%);
+  --modal-border-color: hsl(218, 19%, 31%);
+  --modal-community-sidebar-width: 25em;
+  --modal-height: 100%;
+  --modal-max-height: 100;
+  --modal-max-width: 100%;
+  --modal-max-width-narrow: 75%;
+  --modal-radius: 0px;
+  --modal-width: 100%;
+  --nav-collapse-icon-color: hsl(219, 13%, 51%);
+  --nav-collapse-icon-color-collapsed: hsl(219, 13%, 51%);
+  --nav-heading-color: #c8d4e6;
+  --nav-heading-color-collapsed: hsl(219, 13%, 51%);
+  --nav-heading-color-collapsed-hover: hsl(220, 17%, 66%);
+  --nav-heading-color-hover: #c8d4e6;
+  --nav-indentation-guide-color: transparent;
+  --nav-indentation-guide-width: 0px;
+  --nav-item-background-selected: hsla(181, 100%, 35%, 0.15);
+  --nav-item-color: hsl(220, 17%, 66%);
+  --nav-item-color-active: #c8d4e6;
   --nav-item-color-highlighted: hsl(
     177,
     100%,
     33%
-  ) !important;
-  --nav-item-color-hover: #c8d4e6 !important;
-  --nav-item-color-selected: #c8d4e6 !important;
-  --nav-item-radius: 7px !important;
-  --nav-tag-color: hsl(219, 13%, 51%) !important;
-  --nav-tag-color-active: hsl(220, 17%, 66%) !important;
-  --nav-tag-color-hover: hsl(220, 17%, 66%) !important;
-  --nav-tag-radius: 7px !important;
-  --normal-folder-1: "📒" !important;
-  --normal-folder-1-open: "📖" !important;
-  --normal-folder-2: "📑" !important;
-  --normal-folder-2-open: "📑" !important;
-  --normal-folder-3: "🔖" !important;
-  --normal-folder-3-open: "🔖" !important;
-  --page-transparency: 100% !important;
-  --panel-child: hsl(216, 17%, 14%) !important;
-  --pdf-background: hsla(216, 16%, 13%, 100%) !important;
-  --pdf-page-background: hsla(216, 16%, 13%, 100%) !important;
-  --pdf-shadow: 0 0 0 1px hsl(216, 20%, 20%) !important;
-  --pdf-sidebar-background: hsla(216, 16%, 13%, 100%) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px hsl(216, 20%, 20%) !important;
-  --pill-border-color: hsl(216, 20%, 20%) !important;
-  --pill-border-color-hover: hsl(218, 19%, 27%) !important;
-  --pill-color: hsl(220, 17%, 66%) !important;
-  --pill-color-hover: #c8d4e6 !important;
-  --pill-color-remove: hsl(219, 13%, 51%) !important;
+  );
+  --nav-item-color-hover: #c8d4e6;
+  --nav-item-color-selected: #c8d4e6;
+  --nav-item-radius: 7px;
+  --nav-tag-color: hsl(219, 13%, 51%);
+  --nav-tag-color-active: hsl(220, 17%, 66%);
+  --nav-tag-color-hover: hsl(220, 17%, 66%);
+  --nav-tag-radius: 7px;
+  --normal-folder-1: "📒";
+  --normal-folder-1-open: "📖";
+  --normal-folder-2: "📑";
+  --normal-folder-2-open: "📑";
+  --normal-folder-3: "🔖";
+  --normal-folder-3-open: "🔖";
+  --page-transparency: 100%;
+  --panel-child: hsl(216, 17%, 14%);
+  --pdf-background: hsla(216, 16%, 13%, 100%);
+  --pdf-page-background: hsla(216, 16%, 13%, 100%);
+  --pdf-shadow: 0 0 0 1px hsl(216, 20%, 20%);
+  --pdf-sidebar-background: hsla(216, 16%, 13%, 100%);
+  --pdf-thumbnail-shadow: 0 0 0 1px hsl(216, 20%, 20%);
+  --pill-border-color: hsl(216, 20%, 20%);
+  --pill-border-color-hover: hsl(218, 19%, 27%);
+  --pill-color: hsl(220, 17%, 66%);
+  --pill-color-hover: #c8d4e6;
+  --pill-color-remove: hsl(219, 13%, 51%);
   --pill-color-remove-hover: hsl(
     177,
     100%,
     33%
-  ) !important;
-  --prompt-background: hsla(216, 16%, 13%, 100%) !important;
-  --prompt-border-color: hsl(218, 19%, 31%) !important;
-  --radius-l: 19px !important;
-  --radius-m: 14px !important;
-  --radius-s: 7px !important;
-  --radius-x: 28px !important;
-  --raised-background: color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent) linear-gradient(hsl(218, 18%, 15%), color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent)) !important;
-  --ribbon-background: transparent !important;
-  --ribbon-background-collapsed: transparent !important;
-  --scrollbar-radius: 19px !important;
-  --search-clear-button-color: hsl(220, 17%, 66%) !important;
-  --search-icon-color: hsl(220, 17%, 66%) !important;
-  --search-result-background: hsla(216, 16%, 13%, 100%) !important;
-  --secondary: hsl(
+  );
+  --prompt-background: hsla(216, 16%, 13%, 100%);
+  --prompt-border-color: hsl(218, 19%, 31%);
+  --radius-l: 19px;
+  --radius-m: 14px;
+  --radius-s: 7px;
+  --radius-x: 28px;
+  --raised-background: color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent) linear-gradient(hsl(218, 18%, 15%), color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent));
+  --ribbon-background: transparent;
+  --ribbon-background-collapsed: transparent;
+  --scrollbar-radius: 19px;
+  --search-clear-button-color: hsl(220, 17%, 66%);
+  --search-icon-color: hsl(220, 17%, 66%);
+  --search-result-background: hsla(216, 16%, 13%, 100%);
+  --secondary: var(--text-accent, hsl(
     177,
     100%,
     33%
-  ) !important;
-  --setting-group-heading-color: #c8d4e6 !important;
-  --setting-items-background: hsl(216, 17%, 14%) !important;
-  --setting-items-border-color: hsl(216, 20%, 20%) !important;
-  --setting-items-radius: 19px !important;
-  --shadow-color: rgba(0, 0, 0, 0.2) !important;
+  ));
+  --setting-group-heading-color: #c8d4e6;
+  --setting-items-background: hsl(216, 17%, 14%);
+  --setting-items-border-color: hsl(216, 20%, 20%);
+  --setting-items-radius: 19px;
+  --shadow-color: rgba(0, 0, 0, 0.2);
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2) !important;
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
-  --shadow-ui: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) !important;
-  --shiki-active-tab-border-color: hsl(220, 17%, 66%) !important;
-  --shiki-code-background: hsl(216, 17%, 14%) !important;
-  --shiki-code-block-border-radius: 7px !important;
-  --shiki-code-comment: hsl(219, 13%, 51%) !important;
-  --shiki-code-function: #7dcf2b !important;
-  --shiki-code-important: #f69c00 !important;
-  --shiki-code-keyword: #e66ab4 !important;
-  --shiki-code-normal: hsl(220, 17%, 66%) !important;
-  --shiki-code-property: #00cecb !important;
-  --shiki-code-punctuation: hsl(220, 17%, 66%) !important;
-  --shiki-code-string: #e8c900 !important;
-  --shiki-code-value: #b45af5 !important;
-  --shiki-gutter-border-color: hsl(216, 20%, 20%) !important;
-  --shiki-gutter-text-color: hsl(219, 13%, 51%) !important;
-  --shiki-gutter-text-color-highlight: hsl(220, 17%, 66%) !important;
-  --shiki-highlight-green: rgba(125, 207, 43, 0.5) !important;
-  --shiki-highlight-green-background: rgba(125, 207, 43, 0.1) !important;
-  --shiki-highlight-neutral: hsl(220, 17%, 66%) !important;
-  --shiki-highlight-red: rgba(255, 77, 58, 0.5) !important;
-  --shiki-highlight-red-background: rgba(255, 77, 58, 0.1) !important;
-  --shiki-terminal-dots-color: hsl(219, 13%, 51%) !important;
-  --slider-thumb-border-color: hsl(218, 19%, 27%) !important;
-  --slider-track-background: hsl(216, 20%, 20%) !important;
-  --slider-track-height: 1.2px !important;
-  --status-bar-background: hsl(216, 19%, 16%) !important;
-  --status-bar-border-color: hsl(216, 20%, 20%) !important;
-  --status-bar-radius: 14px 0 0 0 !important;
-  --status-bar-text-color: hsl(220, 17%, 66%) !important;
-  --suggestion-background: hsla(216, 16%, 13%, 100%) !important;
-  --sync-avatar-color-1: #ff4d3a !important;
-  --sync-avatar-color-2: #f69c00 !important;
-  --sync-avatar-color-3: #e8c900 !important;
-  --sync-avatar-color-4: #7dcf2b !important;
-  --sync-avatar-color-5: #00cecb !important;
-  --sync-avatar-color-6: #009be3 !important;
-  --sync-avatar-color-7: #b45af5 !important;
-  --sync-avatar-color-8: #e66ab4 !important;
-  --tab-background-active: hsl(218, 18%, 15%) !important;
-  --tab-container-background: hsl(216, 19%, 16%) !important;
-  --tab-curve: 0px !important;
-  --tab-divider-color: transparent !important;
-  --tab-outline-color: hsl(216, 20%, 20%) !important;
-  --tab-outline-width: 0.8px !important;
-  --tab-radius: 7px !important;
-  --tab-radius-active: 7px !important;
-  --tab-switcher-background: hsl(216, 19%, 16%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(216, 19%, 16%), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(181, 100%, 35%) !important;
-  --tab-text-color: hsl(219, 13%, 51%) !important;
-  --tab-text-color-active: hsl(220, 17%, 66%) !important;
-  --tab-text-color-focused: hsl(220, 17%, 66%) !important;
-  --tab-text-color-focused-active: hsl(220, 17%, 66%) !important;
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-ui: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042);
+  --shiki-active-tab-border-color: hsl(220, 17%, 66%);
+  --shiki-code-background: hsl(216, 17%, 14%);
+  --shiki-code-block-border-radius: 7px;
+  --shiki-code-comment: hsl(219, 13%, 51%);
+  --shiki-code-function: #7dcf2b;
+  --shiki-code-important: #f69c00;
+  --shiki-code-keyword: #e66ab4;
+  --shiki-code-normal: hsl(220, 17%, 66%);
+  --shiki-code-property: #00cecb;
+  --shiki-code-punctuation: hsl(220, 17%, 66%);
+  --shiki-code-string: #e8c900;
+  --shiki-code-value: #b45af5;
+  --shiki-gutter-border-color: hsl(216, 20%, 20%);
+  --shiki-gutter-text-color: hsl(219, 13%, 51%);
+  --shiki-gutter-text-color-highlight: hsl(220, 17%, 66%);
+  --shiki-highlight-green: rgba(125, 207, 43, 0.5);
+  --shiki-highlight-green-background: rgba(125, 207, 43, 0.1);
+  --shiki-highlight-neutral: hsl(220, 17%, 66%);
+  --shiki-highlight-red: rgba(255, 77, 58, 0.5);
+  --shiki-highlight-red-background: rgba(255, 77, 58, 0.1);
+  --shiki-terminal-dots-color: hsl(219, 13%, 51%);
+  --slider-thumb-border-color: hsl(218, 19%, 27%);
+  --slider-track-background: hsl(216, 20%, 20%);
+  --slider-track-height: 1.2px;
+  --status-bar-background: hsl(216, 19%, 16%);
+  --status-bar-border-color: hsl(216, 20%, 20%);
+  --status-bar-radius: 14px 0 0 0;
+  --status-bar-text-color: hsl(220, 17%, 66%);
+  --suggestion-background: hsla(216, 16%, 13%, 100%);
+  --sync-avatar-color-1: #ff4d3a;
+  --sync-avatar-color-2: #f69c00;
+  --sync-avatar-color-3: #e8c900;
+  --sync-avatar-color-4: #7dcf2b;
+  --sync-avatar-color-5: #00cecb;
+  --sync-avatar-color-6: #009be3;
+  --sync-avatar-color-7: #b45af5;
+  --sync-avatar-color-8: #e66ab4;
+  --tab-background-active: hsl(218, 18%, 15%);
+  --tab-container-background: hsl(216, 19%, 16%);
+  --tab-curve: 0px;
+  --tab-divider-color: transparent;
+  --tab-outline-color: hsl(216, 20%, 20%);
+  --tab-outline-width: 0.8px;
+  --tab-radius: 7px;
+  --tab-radius-active: 7px;
+  --tab-switcher-background: hsl(216, 19%, 16%);
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(216, 19%, 16%), transparent);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(181, 100%, 35%);
+  --tab-text-color: hsl(219, 13%, 51%);
+  --tab-text-color-active: hsl(220, 17%, 66%);
+  --tab-text-color-focused: hsl(220, 17%, 66%);
+  --tab-text-color-focused-active: hsl(220, 17%, 66%);
   --tab-text-color-focused-active-current: hsl(
     177,
     100%,
     33%
-  ) !important;
+  );
   --tab-text-color-focused-highlighted: hsl(
     177,
     100%,
     33%
-  ) !important;
-  --table-add-button-border-color: hsl(216, 20%, 20%) !important;
-  --table-background: hsl(218, 18%, 15%) !important;
-  --table-border-color: hsl(216, 20%, 20%) !important;
-  --table-column-alt-background: hsl(218, 18%, 15%) !important;
-  --table-drag-handle-background-active: hsl(181, 100%, 35%) !important;
-  --table-drag-handle-color: hsl(219, 13%, 51%) !important;
-  --table-header-background: hsl(218, 18%, 15%) !important;
-  --table-header-border-color: hsl(216, 20%, 20%) !important;
-  --table-header-color: #c8d4e6 !important;
-  --table-header-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --table-header-weight: normal !important;
-  --table-row-alt-background: hsl(218, 18%, 15%) !important;
-  --table-row-alt-background-hover: hsl(218, 18%, 15%) !important;
-  --table-row-background-hover: hsl(218, 18%, 15%) !important;
-  --table-selection: hsla(181, 100%, 35%, 0.1) !important;
-  --table-selection-border-color: hsl(181, 100%, 35%) !important;
-  --tag-background: hsla(181, 100%, 35%, 0.1) !important;
-  --tag-background-hover: hsla(181, 100%, 35%, 0.2) !important;
-  --tag-border-color: hsla(181, 100%, 35%, 0.15) !important;
-  --tag-border-color-hover: hsla(181, 100%, 35%, 0.15) !important;
+  );
+  --table-add-button-border-color: hsl(216, 20%, 20%);
+  --table-background: hsl(218, 18%, 15%);
+  --table-border-color: hsl(216, 20%, 20%);
+  --table-column-alt-background: hsl(218, 18%, 15%);
+  --table-drag-handle-background-active: hsl(181, 100%, 35%);
+  --table-drag-handle-color: hsl(219, 13%, 51%);
+  --table-header-background: hsl(218, 18%, 15%);
+  --table-header-border-color: hsl(216, 20%, 20%);
+  --table-header-color: #c8d4e6;
+  --table-header-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --table-header-weight: normal;
+  --table-row-alt-background: hsl(218, 18%, 15%);
+  --table-row-alt-background-hover: hsl(218, 18%, 15%);
+  --table-row-background-hover: hsl(218, 18%, 15%);
+  --table-selection: hsla(181, 100%, 35%, 0.1);
+  --table-selection-border-color: hsl(181, 100%, 35%);
+  --tag-background: hsla(181, 100%, 35%, 0.1);
+  --tag-background-hover: hsla(181, 100%, 35%, 0.2);
+  --tag-border-color: hsla(181, 100%, 35%, 0.15);
+  --tag-border-color-hover: hsla(181, 100%, 35%, 0.15);
   --tag-color: hsl(
     177,
     100%,
     33%
-  ) !important;
+  );
   --tag-color-hover: hsl(
     177,
     100%,
     33%
-  ) !important;
-  --tertiary: hsl(
+  );
+  --tertiary: var(--text-accent-hover, hsl(
     183,
     105%,
     39%
-  ) !important;
+  ));
   --text-accent: hsl(
     177,
     100%,
     33%
-  ) !important;
+  );
   --text-accent-hover: hsl(
     183,
     105%,
     39%
-  ) !important;
-  --text-error: #ff4d3a !important;
-  --text-faint: hsl(219, 13%, 51%) !important;
-  --text-highlight-bg: hsla(181, 100%, 35%, 0.475) !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
-  --text-muted: hsl(220, 17%, 66%) !important;
-  --text-normal: #c8d4e6 !important;
-  --text-selection: hsla(181, 100%, 35%, 0.25) !important;
-  --text-success: #7dcf2b !important;
-  --text-warning: #f69c00 !important;
-  --textHighlight: hsla(181, 100%, 35%, 0.475) !important;
-  --tile-field-padding: 5px !important;
-  --tile-img-radius: 14px !important;
-  --tile-padding: 8px !important;
-  --tile-radius: 14px !important;
-  --titleFont: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --titlebar-background: hsl(216, 19%, 16%) !important;
-  --titlebar-background-focused: hsl(218, 18%, 15%) !important;
-  --titlebar-border-color: hsl(216, 20%, 20%) !important;
-  --titlebar-text-color: hsl(220, 17%, 66%) !important;
-  --titlebar-text-color-focused: #c8d4e6 !important;
-  --vault-font: "Noto Emoji" !important;
-  --vault-icon: "💎" !important;
-  --vault-name-font-size: 1.57em !important;
-  --vault-name-font-weight: 700 !important;
-  --vault-profile-color: #c8d4e6 !important;
-  --vault-profile-color-hover: #c8d4e6 !important;
-  --quartz-icon-color: currentColor !important;
+  );
+  --text-error: #ff4d3a;
+  --text-faint: hsl(219, 13%, 51%);
+  --text-highlight-bg: hsla(181, 100%, 35%, 0.475);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-muted: hsl(220, 17%, 66%);
+  --text-normal: #c8d4e6;
+  --text-selection: hsla(181, 100%, 35%, 0.25);
+  --text-success: #7dcf2b;
+  --text-warning: #f69c00;
+  --textHighlight: var(--text-highlight-bg, hsla(181, 100%, 35%, 0.475));
+  --tile-field-padding: 5px;
+  --tile-img-radius: 14px;
+  --tile-padding: 8px;
+  --tile-radius: 14px;
+  --titleFont: var(--font-text, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --titlebar-background: hsl(216, 19%, 16%);
+  --titlebar-background-focused: hsl(218, 18%, 15%);
+  --titlebar-border-color: hsl(216, 20%, 20%);
+  --titlebar-text-color: hsl(220, 17%, 66%);
+  --titlebar-text-color-focused: #c8d4e6;
+  --vault-font: "Noto Emoji";
+  --vault-icon: "💎";
+  --vault-name-font-size: 1.57em;
+  --vault-name-font-weight: 700;
+  --vault-profile-color: #c8d4e6;
+  --vault-profile-color-hover: #c8d4e6;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -3861,60 +3862,60 @@ html[saved-theme="dark"] body ul.tags > li {
   },
   light: {
     base: `:root:root {
-  --accent-h: 181 !important;
-  --accent-l: 35% !important;
-  --accent-s: 100% !important;
-  --anim-motion-swing: cubic-bezier(0.25, 0.05, 0.55, 0.95) !important;
-  --background-modifier-active-hover: hsla(181, 100%, 35%, 0.1) !important;
-  --background-modifier-border: #9f9f9f66 !important;
-  --background-modifier-border-focus: #d7d7d7 !important;
-  --background-modifier-border-hover: #dedede !important;
-  --background-modifier-error: #c75f54 !important;
-  --background-modifier-error-hover: #c75f54 !important;
-  --background-modifier-error-rgb: 255, 77, 58 !important;
-  --background-modifier-form-field: hsla(0, 0%, 100%, 100%) !important;
-  --background-modifier-form-field-hover: hsla(0, 0%, 100%, 100%) !important;
-  --background-modifier-success: #8fb26b !important;
-  --background-modifier-success-rgb: 125, 207, 43 !important;
-  --background-primary: hsla(0, 0%, 100%, 100%) !important;
-  --background-primary-alt: #fdfdfd !important;
-  --background-secondary: hsl(0, 0%, 96%) !important;
-  --bases-cards-background: hsla(0, 0%, 100%, 100%) !important;
-  --bases-cards-cover-background: #fdfdfd !important;
-  --bases-cards-radius: 14px !important;
-  --bases-cards-shadow: 0 0 0 1px #9f9f9f66 !important;
-  --bases-cards-shadow-hover: 0 0 0 1px #dedede !important;
-  --bases-embed-border-color: #9f9f9f66 !important;
-  --bases-embed-border-radius: 7px !important;
-  --bases-group-heading-property-color: #7f7f7f !important;
-  --bases-table-border-color: #9f9f9f66 !important;
-  --bases-table-cell-background-active: hsla(0, 0%, 100%, 100%) !important;
-  --bases-table-cell-background-disabled: #fdfdfd !important;
-  --bases-table-cell-background-selected: hsla(181, 100%, 35%, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px #d7d7d7 !important;
+  --accent-h: 181;
+  --accent-l: 35%;
+  --accent-s: 100%;
+  --anim-motion-swing: cubic-bezier(0.25, 0.05, 0.55, 0.95);
+  --background-modifier-active-hover: hsla(181, 100%, 35%, 0.1);
+  --background-modifier-border: #9f9f9f66;
+  --background-modifier-border-focus: #d7d7d7;
+  --background-modifier-border-hover: #dedede;
+  --background-modifier-error: #c75f54;
+  --background-modifier-error-hover: #c75f54;
+  --background-modifier-error-rgb: 255, 77, 58;
+  --background-modifier-form-field: hsla(0, 0%, 100%, 100%);
+  --background-modifier-form-field-hover: hsla(0, 0%, 100%, 100%);
+  --background-modifier-success: #8fb26b;
+  --background-modifier-success-rgb: 125, 207, 43;
+  --background-primary: hsla(0, 0%, 100%, 100%);
+  --background-primary-alt: #fdfdfd;
+  --background-secondary: hsl(0, 0%, 96%);
+  --bases-cards-background: hsla(0, 0%, 100%, 100%);
+  --bases-cards-cover-background: #fdfdfd;
+  --bases-cards-radius: 14px;
+  --bases-cards-shadow: 0 0 0 1px #9f9f9f66;
+  --bases-cards-shadow-hover: 0 0 0 1px #dedede;
+  --bases-embed-border-color: #9f9f9f66;
+  --bases-embed-border-radius: 7px;
+  --bases-group-heading-property-color: #7f7f7f;
+  --bases-table-border-color: #9f9f9f66;
+  --bases-table-cell-background-active: hsla(0, 0%, 100%, 100%);
+  --bases-table-cell-background-disabled: #fdfdfd;
+  --bases-table-cell-background-selected: hsla(181, 100%, 35%, 0.1);
+  --bases-table-cell-shadow-active: 0 0 0 2px #d7d7d7;
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(
     177,
     100%,
     33%
-  ) !important;
-  --bases-table-container-border-radius: 7px !important;
-  --bases-table-group-background: #fdfdfd !important;
-  --bases-table-header-background: hsla(0, 0%, 100%, 100%) !important;
-  --bases-table-header-color: #7f7f7f !important;
-  --bases-table-row-background-hover: #fcfcfc !important;
-  --bases-table-summary-background: hsla(0, 0%, 100%, 100%) !important;
+  );
+  --bases-table-container-border-radius: 7px;
+  --bases-table-group-background: #fdfdfd;
+  --bases-table-header-background: hsla(0, 0%, 100%, 100%);
+  --bases-table-header-color: #7f7f7f;
+  --bases-table-row-background-hover: #fcfcfc;
+  --bases-table-summary-background: hsla(0, 0%, 100%, 100%);
   --blockquote-border-color: hsl(
     177,
     100%,
     33%
-  ) !important;
-  --blur-background: color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent) linear-gradient(hsla(0, 0%, 100%, 100%), color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent)) !important;
-  --bodyFont: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  );
+  --blur-background: color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent) linear-gradient(hsla(0, 0%, 100%, 100%), color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent));
+  --bodyFont: var(--font-text, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
   --button-background: hsl(
     183,
     105%,
     39%
-  ) !important;
+  );
   --callout-bug: 230, 106, 180;
   --callout-default: 0, 155, 227;
   --callout-error: 246, 156, 0;
@@ -3929,452 +3930,452 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-tip: 232, 201, 0;
   --callout-todo: 0, 155, 227;
   --callout-warning: 246, 156, 0;
-  --canvas-background: hsla(0, 0%, 100%, 100%) !important;
-  --canvas-card-label-color: #878787 !important;
-  --canvas-color-1: 255, 77, 58 !important;
-  --canvas-color-2: 246, 156, 0 !important;
-  --canvas-color-3: 232, 201, 0 !important;
-  --canvas-color-4: 125, 207, 43 !important;
-  --canvas-color-5: 0, 206, 203 !important;
-  --canvas-color-6: 180, 90, 245 !important;
-  --canvas-controls-icon-stroke: 1.3px !important;
-  --canvas-controls-radius: 7px !important;
-  --canvas-dot-pattern: #9f9f9f66 !important;
-  --caret-color: #252525 !important;
-  --checkbox-border-color: #c75f54 !important;
-  --checkbox-border-color-hover: #7f7f7f !important;
-  --checkbox-color: transparent !important;
+  --canvas-background: hsla(0, 0%, 100%, 100%);
+  --canvas-card-label-color: #878787;
+  --canvas-color-1: 255, 77, 58;
+  --canvas-color-2: 246, 156, 0;
+  --canvas-color-3: 232, 201, 0;
+  --canvas-color-4: 125, 207, 43;
+  --canvas-color-5: 0, 206, 203;
+  --canvas-color-6: 180, 90, 245;
+  --canvas-controls-icon-stroke: 1.3px;
+  --canvas-controls-radius: 7px;
+  --canvas-dot-pattern: #9f9f9f66;
+  --caret-color: #252525;
+  --checkbox-border-color: #c75f54;
+  --checkbox-border-color-hover: #7f7f7f;
+  --checkbox-color: transparent;
   --checkbox-color-hover: hsl(
     183,
     105%,
     39%
-  ) !important;
-  --checkbox-marker-color: hsla(0, 0%, 100%, 100%) !important;
-  --checkbox-radius: 14px !important;
-  --checkbox-size: 18px !important;
-  --checklist-done-color: #7f7f7f !important;
-  --checklist-done-decoration: none !important;
-  --clickable-icon-radius: 7px !important;
-  --code-background: #fdfdfd !important;
-  --code-border-color: #9f9f9f66 !important;
-  --code-comment: #878787 !important;
-  --code-function: #dca931 !important;
-  --code-important: #d08344 !important;
-  --code-keyword: #ac7aaa !important;
-  --code-normal: #252525 !important;
-  --code-operator: #c75f54 !important;
-  --code-property: #49a7ba !important;
-  --code-punctuation: #7f7f7f !important;
-  --code-radius: 7px !important;
-  --code-string: #8fb26b !important;
-  --code-tag: #c75f54 !important;
-  --code-value: #8076ad !important;
-  --codeFont: "DM Mono", monospace !important;
-  --collapse-icon-color: #878787 !important;
-  --collapse-icon-color-collapsed: hsl(181, 100%, 35%) !important;
-  --color-accent: hsl(181, 100%, 35%) !important;
+  );
+  --checkbox-marker-color: hsla(0, 0%, 100%, 100%);
+  --checkbox-radius: 14px;
+  --checkbox-size: 18px;
+  --checklist-done-color: #7f7f7f;
+  --checklist-done-decoration: none;
+  --clickable-icon-radius: 7px;
+  --code-background: #fdfdfd;
+  --code-border-color: #9f9f9f66;
+  --code-comment: #878787;
+  --code-function: #dca931;
+  --code-important: #d08344;
+  --code-keyword: #ac7aaa;
+  --code-normal: #252525;
+  --code-operator: #c75f54;
+  --code-property: #49a7ba;
+  --code-punctuation: #7f7f7f;
+  --code-radius: 7px;
+  --code-string: #8fb26b;
+  --code-tag: #c75f54;
+  --code-value: #8076ad;
+  --codeFont: var(--font-monospace, "DM Mono", monospace);
+  --collapse-icon-color: #878787;
+  --collapse-icon-color-collapsed: hsl(181, 100%, 35%);
+  --color-accent: hsl(181, 100%, 35%);
   --color-accent-1: hsl(
     177,
     100%,
     33%
-  ) !important;
+  );
   --color-accent-2: hsl(
     183,
     105%,
     39%
-  ) !important;
+  );
   --color-accent-3: hsl(
     216,
     100%,
     47%
-  ) !important;
-  --color-accent-hsl: 181, 100%, 35% !important;
-  --color-base-00: hsla(0, 0%, 100%, 100%) !important;
-  --color-base-10: #fdfdfd !important;
-  --color-base-100: #252525 !important;
-  --color-base-20: hsl(0, 0%, 96%) !important;
-  --color-base-25: #efefef !important;
-  --color-base-30: #9f9f9f66 !important;
-  --color-base-35: #dedede !important;
-  --color-base-40: #d7d7d7 !important;
-  --color-base-50: #878787 !important;
-  --color-base-60: #939393 !important;
-  --color-base-70: #7f7f7f !important;
-  --color-blue: #4e8aa6 !important;
-  --color-blue-rgb: 0, 155, 227 !important;
-  --color-cyan: #49a7ba !important;
-  --color-cyan-rgb: 0, 206, 203 !important;
-  --color-green: #8fb26b !important;
-  --color-green-rgb: 125, 207, 43 !important;
-  --color-orange: #d08344 !important;
-  --color-orange-rgb: 246, 156, 0 !important;
-  --color-pink: #ac7aaa !important;
-  --color-pink-rgb: 230, 106, 180 !important;
-  --color-purple: #8076ad !important;
-  --color-purple-rgb: 180, 90, 245 !important;
-  --color-red: #c75f54 !important;
-  --color-red-rgb: 255, 77, 58 !important;
-  --color-yellow: #dca931 !important;
-  --color-yellow-rgb: 232, 201, 0 !important;
-  --custom-code-height: 1em !important;
+  );
+  --color-accent-hsl: 181, 100%, 35%;
+  --color-base-00: hsla(0, 0%, 100%, 100%);
+  --color-base-10: #fdfdfd;
+  --color-base-100: #252525;
+  --color-base-20: hsl(0, 0%, 96%);
+  --color-base-25: #efefef;
+  --color-base-30: #9f9f9f66;
+  --color-base-35: #dedede;
+  --color-base-40: #d7d7d7;
+  --color-base-50: #878787;
+  --color-base-60: #939393;
+  --color-base-70: #7f7f7f;
+  --color-blue: #4e8aa6;
+  --color-blue-rgb: 0, 155, 227;
+  --color-cyan: #49a7ba;
+  --color-cyan-rgb: 0, 206, 203;
+  --color-green: #8fb26b;
+  --color-green-rgb: 125, 207, 43;
+  --color-orange: #d08344;
+  --color-orange-rgb: 246, 156, 0;
+  --color-pink: #ac7aaa;
+  --color-pink-rgb: 230, 106, 180;
+  --color-purple: #8076ad;
+  --color-purple-rgb: 180, 90, 245;
+  --color-red: #c75f54;
+  --color-red-rgb: 255, 77, 58;
+  --color-yellow: #dca931;
+  --color-yellow-rgb: 232, 201, 0;
+  --custom-code-height: 1em;
   --custom-doc-bg: hsl(
     177,
     100%,
     33%
-  ) !important;
-  --custom-line-height: 2em !important;
-  --dark: #252525 !important;
-  --darkgray: #252525 !important;
-  --divider-color: #9f9f9f66 !important;
+  );
+  --custom-line-height: 2em;
+  --dark: var(--text-normal, #252525);
+  --darkgray: var(--text-normal, #252525);
+  --divider-color: #9f9f9f66;
   --divider-color-hover: hsl(
     177,
     100%,
     33%
-  ) !important;
-  --doc-background: hsl(181, 20%, 95%) !important;
-  --doc-bg: hsl(181, 20%, 95%) !important;
-  --dropdown-background: hsla(0, 0%, 100%, 100%) !important;
-  --dropdown-background-hover: #fdfdfd !important;
-  --embed-block-shadow-hover: 0 0 0 1px #9f9f9f66, inset 0 0 0 1px #9f9f9f66 !important;
-  --embed-border-left: none !important;
+  );
+  --doc-background: hsl(181, 20%, 95%);
+  --doc-bg: hsl(181, 20%, 95%);
+  --dropdown-background: hsla(0, 0%, 100%, 100%);
+  --dropdown-background-hover: #fdfdfd;
+  --embed-block-shadow-hover: 0 0 0 1px #9f9f9f66, inset 0 0 0 1px #9f9f9f66;
+  --embed-border-left: none;
   --embed-border-start: 2px solid hsl(
     177,
     100%,
     33%
-  ) !important;
-  --file-emoji: "Noto Emoji" !important;
-  --file-header-background: hsla(0, 0%, 100%, 100%) !important;
-  --file-header-background-focused: hsla(0, 0%, 100%, 100%) !important;
-  --file-header-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --file-line-width: 900px !important;
-  --flair-background: hsla(0, 0%, 100%, 100%) !important;
-  --flair-color: #252525 !important;
-  --folder-1: "📒" !important;
-  --folder-1-open: "📖" !important;
-  --folder-2: "📑" !important;
-  --folder-2-open: "📑" !important;
-  --folder-3: "🔖" !important;
-  --folder-3-open: "🔖" !important;
-  --folder-emoji: "Noto Emoji" !important;
-  --folder-icon-size: 1.6em !important;
-  --folder-padding: 4px !important;
-  --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --font-emoji: "Noto Color Emoji" !important;
-  --font-interface: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --font-main: "Nunito Sans" !important;
-  --font-mermaid: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --font-monospace: "DM Mono", monospace !important;
-  --font-text: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --footnote-divider-color: #9f9f9f66 !important;
-  --footnote-id-color: #7f7f7f !important;
-  --footnote-id-color-no-occurrences: #878787 !important;
-  --footnote-radius: 7px !important;
-  --google-font-color-notocoloremoji: colrv1 !important;
-  --graph-line: #dedede !important;
-  --graph-node: #7f7f7f !important;
-  --graph-node-attachment: #dca931 !important;
-  --graph-node-focused: hsl(181, 100%, 35%) !important;
-  --graph-node-tag: #8fb26b !important;
-  --graph-node-unresolved: #878787 !important;
-  --graph-text: #252525 !important;
-  --gray: #7f7f7f !important;
-  --h1-align: center !important;
-  --h1-color-custom: #49a7ba !important;
-  --h1-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h1-size: 2.2em !important;
-  --h2-color-custom: #4e8aa6 !important;
-  --h2-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h2-size: 1.87em !important;
-  --h2-weight: 700 !important;
-  --h3-color-custom: #8076ad !important;
-  --h3-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h3-size: 1.57em !important;
-  --h3-weight: 700 !important;
-  --h4-color-custom: #ac7aaa !important;
-  --h4-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h4-size: 1.35em !important;
-  --h4-weight: 700 !important;
-  --h5-color-custom: #c75f54 !important;
-  --h5-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h5-size: 1.3em !important;
-  --h5-weight: 700 !important;
-  --h6-color-custom: #d08344 !important;
-  --h6-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h6-size: 1.1em !important;
-  --h6-weight: 700 !important;
-  --headerFont: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --heading-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --heading-font-2: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --heading-formatting: #878787 !important;
-  --heading-style: normal !important;
-  --heading-variant: normal !important;
-  --heading-weight: 700 !important;
-  --highlight: rgba(255, 200, 0, 0.459) !important;
-  --highlight-text: #252525 !important;
-  --hr-color: #9f9f9f66 !important;
-  --icon-background: #fcfcfc !important;
-  --icon-color: #7f7f7f !important;
-  --icon-color-active: hsl(181, 100%, 35%) !important;
-  --icon-color-focused: #252525 !important;
-  --icon-color-hover: #7f7f7f !important;
-  --icon-emoji: "Noto Color Emoji" !important;
-  --icon-l-stroke-width: 1.3px !important;
-  --icon-m-stroke-width: 1.3px !important;
-  --icon-s-stroke-width: 1.3px !important;
-  --icon-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) inset, 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) !important;
-  --icon-stroke: 1.3px !important;
-  --img-align: auto !important;
-  --img-bg-size: cover !important;
-  --img-blur: 3px !important;
-  --img-position-x: 50% !important;
-  --img-position-y: 50% !important;
-  --img-sat: 100% !important;
-  --indentation-guide-color: transparent !important;
-  --inline-title-color: #252525 !important;
-  --inline-title-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --inline-title-size: 2.5em !important;
-  --input-date-separator: #878787 !important;
-  --input-placeholder-color: #878787 !important;
+  );
+  --file-emoji: "Noto Emoji";
+  --file-header-background: hsla(0, 0%, 100%, 100%);
+  --file-header-background-focused: hsla(0, 0%, 100%, 100%);
+  --file-header-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --file-line-width: 900px;
+  --flair-background: hsla(0, 0%, 100%, 100%);
+  --flair-color: #252525;
+  --folder-1: "📒";
+  --folder-1-open: "📖";
+  --folder-2: "📑";
+  --folder-2-open: "📑";
+  --folder-3: "🔖";
+  --folder-3-open: "🔖";
+  --folder-emoji: "Noto Emoji";
+  --folder-icon-size: 1.6em;
+  --folder-padding: 4px;
+  --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-emoji: "Noto Color Emoji";
+  --font-interface: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-main: "Nunito Sans";
+  --font-mermaid: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-monospace: "DM Mono", monospace;
+  --font-text: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --footnote-divider-color: #9f9f9f66;
+  --footnote-id-color: #7f7f7f;
+  --footnote-id-color-no-occurrences: #878787;
+  --footnote-radius: 7px;
+  --google-font-color-notocoloremoji: colrv1;
+  --graph-line: #dedede;
+  --graph-node: #7f7f7f;
+  --graph-node-attachment: #dca931;
+  --graph-node-focused: hsl(181, 100%, 35%);
+  --graph-node-tag: #8fb26b;
+  --graph-node-unresolved: #878787;
+  --graph-text: #252525;
+  --gray: var(--text-muted, #7f7f7f);
+  --h1-align: center;
+  --h1-color-custom: #49a7ba;
+  --h1-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h1-size: 2.2em;
+  --h2-color-custom: #4e8aa6;
+  --h2-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h2-size: 1.87em;
+  --h2-weight: 700;
+  --h3-color-custom: #8076ad;
+  --h3-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h3-size: 1.57em;
+  --h3-weight: 700;
+  --h4-color-custom: #ac7aaa;
+  --h4-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h4-size: 1.35em;
+  --h4-weight: 700;
+  --h5-color-custom: #c75f54;
+  --h5-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h5-size: 1.3em;
+  --h5-weight: 700;
+  --h6-color-custom: #d08344;
+  --h6-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h6-size: 1.1em;
+  --h6-weight: 700;
+  --headerFont: var(--font-text, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --heading-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --heading-font-2: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --heading-formatting: #878787;
+  --heading-style: normal;
+  --heading-variant: normal;
+  --heading-weight: 700;
+  --highlight: var(--text-highlight-bg, rgba(255, 200, 0, 0.459));
+  --highlight-text: #252525;
+  --hr-color: #9f9f9f66;
+  --icon-background: #fcfcfc;
+  --icon-color: #7f7f7f;
+  --icon-color-active: hsl(181, 100%, 35%);
+  --icon-color-focused: #252525;
+  --icon-color-hover: #7f7f7f;
+  --icon-emoji: "Noto Color Emoji";
+  --icon-l-stroke-width: 1.3px;
+  --icon-m-stroke-width: 1.3px;
+  --icon-s-stroke-width: 1.3px;
+  --icon-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) inset, 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042);
+  --icon-stroke: 1.3px;
+  --img-align: auto;
+  --img-bg-size: cover;
+  --img-blur: 3px;
+  --img-position-x: 50%;
+  --img-position-y: 50%;
+  --img-sat: 100%;
+  --indentation-guide-color: transparent;
+  --inline-title-color: #252525;
+  --inline-title-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --inline-title-size: 2.5em;
+  --input-date-separator: #878787;
+  --input-placeholder-color: #878787;
   --interactive-accent: hsl(
     177,
     100%,
     33%
-  ) !important;
+  );
   --interactive-accent-hover: hsl(
     183,
     105%,
     39%
-  ) !important;
-  --interactive-accent-hsl: 181, 100%, 35% !important;
-  --interactive-hover: #fdfdfd !important;
-  --interactive-normal: hsla(0, 0%, 100%, 100%) !important;
-  --light: hsla(0, 0%, 100%, 100%) !important;
-  --lightgray: hsl(0, 0%, 96%) !important;
-  --link-color: hsl(181, 100%, 35%) !important;
+  );
+  --interactive-accent-hsl: 181, 100%, 35%;
+  --interactive-hover: #fdfdfd;
+  --interactive-normal: hsla(0, 0%, 100%, 100%);
+  --light: var(--background-primary, hsla(0, 0%, 100%, 100%));
+  --lightgray: var(--background-secondary, hsl(0, 0%, 96%));
+  --link-color: hsl(181, 100%, 35%);
   --link-color-hover: hsl(
     183,
     105%,
     39%
-  ) !important;
-  --link-external-color: hsl(181, 100%, 35%) !important;
+  );
+  --link-external-color: hsl(181, 100%, 35%);
   --link-external-color-hover: hsl(
     183,
     105%,
     39%
-  ) !important;
-  --link-unresolved-color: #878787 !important;
-  --link-unresolved-decoration-color: #dedede !important;
-  --list-bullet-size: 0.45em !important;
-  --list-marker-color: #49a7ba !important;
-  --list-marker-color-collapsed: hsl(181, 100%, 35%) !important;
-  --list-marker-color-hover: #dca931 !important;
-  --menu-background: hsl(0, 0%, 96%) !important;
-  --menu-border-color: #dedede !important;
-  --menu-radius: 14px !important;
-  --metadata-border-color: #9f9f9f66 !important;
-  --metadata-divider-color: #9f9f9f66 !important;
-  --metadata-input-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --metadata-input-text-color: #252525 !important;
-  --metadata-label-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --metadata-label-text-color: #7f7f7f !important;
-  --metadata-label-text-color-hover: #7f7f7f !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #d7d7d7 !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #dedede !important;
-  --modal-background: hsla(0, 0%, 100%, 100%) !important;
-  --modal-border-color: #d7d7d7 !important;
-  --modal-community-sidebar-width: 25em !important;
-  --modal-height: 100% !important;
-  --modal-max-height: 100 !important;
-  --modal-max-width: 100% !important;
-  --modal-max-width-narrow: 75% !important;
-  --modal-radius: 0px !important;
-  --modal-width: 100% !important;
-  --nav-collapse-icon-color: #878787 !important;
-  --nav-collapse-icon-color-collapsed: #878787 !important;
-  --nav-heading-color: #252525 !important;
-  --nav-heading-color-collapsed: #878787 !important;
-  --nav-heading-color-collapsed-hover: #7f7f7f !important;
-  --nav-heading-color-hover: #252525 !important;
-  --nav-indentation-guide-color: transparent !important;
-  --nav-indentation-guide-width: 0px !important;
-  --nav-item-background-selected: hsla(181, 100%, 35%, 0.15) !important;
-  --nav-item-color: #7f7f7f !important;
-  --nav-item-color-active: #252525 !important;
-  --nav-item-color-highlighted: hsl(181, 100%, 35%) !important;
-  --nav-item-color-hover: #252525 !important;
-  --nav-item-color-selected: #252525 !important;
-  --nav-item-radius: 7px !important;
-  --nav-tag-color: #878787 !important;
-  --nav-tag-color-active: #7f7f7f !important;
-  --nav-tag-color-hover: #7f7f7f !important;
-  --nav-tag-radius: 7px !important;
-  --normal-folder-1: "📒" !important;
-  --normal-folder-1-open: "📖" !important;
-  --normal-folder-2: "📑" !important;
-  --normal-folder-2-open: "📑" !important;
-  --normal-folder-3: "🔖" !important;
-  --normal-folder-3-open: "🔖" !important;
-  --page-transparency: 100% !important;
-  --panel-child: #fdfdfd !important;
-  --pdf-background: hsla(0, 0%, 100%, 100%) !important;
-  --pdf-page-background: hsla(0, 0%, 100%, 100%) !important;
-  --pdf-sidebar-background: hsla(0, 0%, 100%, 100%) !important;
-  --pill-border-color: #9f9f9f66 !important;
-  --pill-border-color-hover: #dedede !important;
-  --pill-color: #7f7f7f !important;
-  --pill-color-hover: #252525 !important;
-  --pill-color-remove: #878787 !important;
-  --pill-color-remove-hover: hsl(181, 100%, 35%) !important;
-  --prompt-background: hsla(0, 0%, 100%, 100%) !important;
-  --prompt-border-color: #d7d7d7 !important;
-  --radius-l: 19px !important;
-  --radius-m: 14px !important;
-  --radius-s: 7px !important;
-  --radius-x: 28px !important;
-  --raised-background: color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent) linear-gradient(hsla(0, 0%, 100%, 100%), color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent)) !important;
-  --ribbon-background: transparent !important;
-  --ribbon-background-collapsed: transparent !important;
-  --scrollbar-radius: 19px !important;
-  --search-clear-button-color: #7f7f7f !important;
-  --search-icon-color: #7f7f7f !important;
-  --search-result-background: hsla(0, 0%, 100%, 100%) !important;
-  --secondary: hsl(181, 100%, 35%) !important;
-  --setting-group-heading-color: #252525 !important;
-  --setting-items-background: #fdfdfd !important;
-  --setting-items-border-color: #9f9f9f66 !important;
-  --setting-items-radius: 19px !important;
-  --shadow-color: hsl(0, 0%, 96%) !important;
-  --shadow-ui: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) !important;
-  --shiki-active-tab-border-color: #7f7f7f !important;
-  --shiki-code-background: #fdfdfd !important;
-  --shiki-code-block-border-radius: 7px !important;
-  --shiki-code-comment: #878787 !important;
-  --shiki-code-function: #8fb26b !important;
-  --shiki-code-important: #d08344 !important;
-  --shiki-code-keyword: #ac7aaa !important;
-  --shiki-code-normal: #7f7f7f !important;
-  --shiki-code-property: #49a7ba !important;
-  --shiki-code-punctuation: #7f7f7f !important;
-  --shiki-code-string: #dca931 !important;
-  --shiki-code-value: #8076ad !important;
-  --shiki-gutter-border-color: #9f9f9f66 !important;
-  --shiki-gutter-text-color: #878787 !important;
-  --shiki-gutter-text-color-highlight: #7f7f7f !important;
-  --shiki-highlight-green: rgba(125, 207, 43, 0.5) !important;
-  --shiki-highlight-green-background: rgba(125, 207, 43, 0.1) !important;
-  --shiki-highlight-neutral: #7f7f7f !important;
-  --shiki-highlight-red: rgba(255, 77, 58, 0.5) !important;
-  --shiki-highlight-red-background: rgba(255, 77, 58, 0.1) !important;
-  --shiki-terminal-dots-color: #878787 !important;
-  --slider-thumb-border-color: #dedede !important;
-  --slider-track-background: #9f9f9f66 !important;
-  --slider-track-height: 1.2px !important;
-  --status-bar-background: hsl(0, 0%, 96%) !important;
-  --status-bar-border-color: #9f9f9f66 !important;
-  --status-bar-radius: 14px 0 0 0 !important;
-  --status-bar-text-color: #7f7f7f !important;
-  --suggestion-background: hsla(0, 0%, 100%, 100%) !important;
-  --sync-avatar-color-1: #c75f54 !important;
-  --sync-avatar-color-2: #d08344 !important;
-  --sync-avatar-color-3: #dca931 !important;
-  --sync-avatar-color-4: #8fb26b !important;
-  --sync-avatar-color-5: #49a7ba !important;
-  --sync-avatar-color-6: #4e8aa6 !important;
-  --sync-avatar-color-7: #8076ad !important;
-  --sync-avatar-color-8: #ac7aaa !important;
-  --tab-background-active: #fcfcfc !important;
-  --tab-container-background: hsl(0, 0%, 96%) !important;
-  --tab-curve: 0px !important;
-  --tab-divider-color: transparent !important;
-  --tab-outline-color: #9f9f9f66 !important;
-  --tab-outline-width: 0.8px !important;
-  --tab-radius: 7px !important;
-  --tab-radius-active: 7px !important;
-  --tab-switcher-background: hsl(0, 0%, 96%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 96%), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(181, 100%, 35%) !important;
-  --tab-text-color: #878787 !important;
-  --tab-text-color-active: #7f7f7f !important;
-  --tab-text-color-focused: #7f7f7f !important;
-  --tab-text-color-focused-active: #7f7f7f !important;
+  );
+  --link-unresolved-color: #878787;
+  --link-unresolved-decoration-color: #dedede;
+  --list-bullet-size: 0.45em;
+  --list-marker-color: #49a7ba;
+  --list-marker-color-collapsed: hsl(181, 100%, 35%);
+  --list-marker-color-hover: #dca931;
+  --menu-background: hsl(0, 0%, 96%);
+  --menu-border-color: #dedede;
+  --menu-radius: 14px;
+  --metadata-border-color: #9f9f9f66;
+  --metadata-divider-color: #9f9f9f66;
+  --metadata-input-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --metadata-input-text-color: #252525;
+  --metadata-label-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --metadata-label-text-color: #7f7f7f;
+  --metadata-label-text-color-hover: #7f7f7f;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #d7d7d7;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #dedede;
+  --modal-background: hsla(0, 0%, 100%, 100%);
+  --modal-border-color: #d7d7d7;
+  --modal-community-sidebar-width: 25em;
+  --modal-height: 100%;
+  --modal-max-height: 100;
+  --modal-max-width: 100%;
+  --modal-max-width-narrow: 75%;
+  --modal-radius: 0px;
+  --modal-width: 100%;
+  --nav-collapse-icon-color: #878787;
+  --nav-collapse-icon-color-collapsed: #878787;
+  --nav-heading-color: #252525;
+  --nav-heading-color-collapsed: #878787;
+  --nav-heading-color-collapsed-hover: #7f7f7f;
+  --nav-heading-color-hover: #252525;
+  --nav-indentation-guide-color: transparent;
+  --nav-indentation-guide-width: 0px;
+  --nav-item-background-selected: hsla(181, 100%, 35%, 0.15);
+  --nav-item-color: #7f7f7f;
+  --nav-item-color-active: #252525;
+  --nav-item-color-highlighted: hsl(181, 100%, 35%);
+  --nav-item-color-hover: #252525;
+  --nav-item-color-selected: #252525;
+  --nav-item-radius: 7px;
+  --nav-tag-color: #878787;
+  --nav-tag-color-active: #7f7f7f;
+  --nav-tag-color-hover: #7f7f7f;
+  --nav-tag-radius: 7px;
+  --normal-folder-1: "📒";
+  --normal-folder-1-open: "📖";
+  --normal-folder-2: "📑";
+  --normal-folder-2-open: "📑";
+  --normal-folder-3: "🔖";
+  --normal-folder-3-open: "🔖";
+  --page-transparency: 100%;
+  --panel-child: #fdfdfd;
+  --pdf-background: hsla(0, 0%, 100%, 100%);
+  --pdf-page-background: hsla(0, 0%, 100%, 100%);
+  --pdf-sidebar-background: hsla(0, 0%, 100%, 100%);
+  --pill-border-color: #9f9f9f66;
+  --pill-border-color-hover: #dedede;
+  --pill-color: #7f7f7f;
+  --pill-color-hover: #252525;
+  --pill-color-remove: #878787;
+  --pill-color-remove-hover: hsl(181, 100%, 35%);
+  --prompt-background: hsla(0, 0%, 100%, 100%);
+  --prompt-border-color: #d7d7d7;
+  --radius-l: 19px;
+  --radius-m: 14px;
+  --radius-s: 7px;
+  --radius-x: 28px;
+  --raised-background: color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent) linear-gradient(hsla(0, 0%, 100%, 100%), color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent));
+  --ribbon-background: transparent;
+  --ribbon-background-collapsed: transparent;
+  --scrollbar-radius: 19px;
+  --search-clear-button-color: #7f7f7f;
+  --search-icon-color: #7f7f7f;
+  --search-result-background: hsla(0, 0%, 100%, 100%);
+  --secondary: var(--text-accent, hsl(181, 100%, 35%));
+  --setting-group-heading-color: #252525;
+  --setting-items-background: #fdfdfd;
+  --setting-items-border-color: #9f9f9f66;
+  --setting-items-radius: 19px;
+  --shadow-color: hsl(0, 0%, 96%);
+  --shadow-ui: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042);
+  --shiki-active-tab-border-color: #7f7f7f;
+  --shiki-code-background: #fdfdfd;
+  --shiki-code-block-border-radius: 7px;
+  --shiki-code-comment: #878787;
+  --shiki-code-function: #8fb26b;
+  --shiki-code-important: #d08344;
+  --shiki-code-keyword: #ac7aaa;
+  --shiki-code-normal: #7f7f7f;
+  --shiki-code-property: #49a7ba;
+  --shiki-code-punctuation: #7f7f7f;
+  --shiki-code-string: #dca931;
+  --shiki-code-value: #8076ad;
+  --shiki-gutter-border-color: #9f9f9f66;
+  --shiki-gutter-text-color: #878787;
+  --shiki-gutter-text-color-highlight: #7f7f7f;
+  --shiki-highlight-green: rgba(125, 207, 43, 0.5);
+  --shiki-highlight-green-background: rgba(125, 207, 43, 0.1);
+  --shiki-highlight-neutral: #7f7f7f;
+  --shiki-highlight-red: rgba(255, 77, 58, 0.5);
+  --shiki-highlight-red-background: rgba(255, 77, 58, 0.1);
+  --shiki-terminal-dots-color: #878787;
+  --slider-thumb-border-color: #dedede;
+  --slider-track-background: #9f9f9f66;
+  --slider-track-height: 1.2px;
+  --status-bar-background: hsl(0, 0%, 96%);
+  --status-bar-border-color: #9f9f9f66;
+  --status-bar-radius: 14px 0 0 0;
+  --status-bar-text-color: #7f7f7f;
+  --suggestion-background: hsla(0, 0%, 100%, 100%);
+  --sync-avatar-color-1: #c75f54;
+  --sync-avatar-color-2: #d08344;
+  --sync-avatar-color-3: #dca931;
+  --sync-avatar-color-4: #8fb26b;
+  --sync-avatar-color-5: #49a7ba;
+  --sync-avatar-color-6: #4e8aa6;
+  --sync-avatar-color-7: #8076ad;
+  --sync-avatar-color-8: #ac7aaa;
+  --tab-background-active: #fcfcfc;
+  --tab-container-background: hsl(0, 0%, 96%);
+  --tab-curve: 0px;
+  --tab-divider-color: transparent;
+  --tab-outline-color: #9f9f9f66;
+  --tab-outline-width: 0.8px;
+  --tab-radius: 7px;
+  --tab-radius-active: 7px;
+  --tab-switcher-background: hsl(0, 0%, 96%);
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 96%), transparent);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(181, 100%, 35%);
+  --tab-text-color: #878787;
+  --tab-text-color-active: #7f7f7f;
+  --tab-text-color-focused: #7f7f7f;
+  --tab-text-color-focused-active: #7f7f7f;
   --tab-text-color-focused-active-current: hsl(
     177,
     100%,
     33%
-  ) !important;
-  --tab-text-color-focused-highlighted: hsl(181, 100%, 35%) !important;
-  --table-add-button-border-color: #9f9f9f66 !important;
-  --table-background: #fcfcfc !important;
-  --table-border-color: #9f9f9f66 !important;
-  --table-column-alt-background: #fcfcfc !important;
+  );
+  --tab-text-color-focused-highlighted: hsl(181, 100%, 35%);
+  --table-add-button-border-color: #9f9f9f66;
+  --table-background: #fcfcfc;
+  --table-border-color: #9f9f9f66;
+  --table-column-alt-background: #fcfcfc;
   --table-drag-handle-background-active: hsl(
     177,
     100%,
     33%
-  ) !important;
-  --table-drag-handle-color: #878787 !important;
-  --table-header-background: #fcfcfc !important;
-  --table-header-border-color: #9f9f9f66 !important;
-  --table-header-color: #252525 !important;
-  --table-header-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --table-header-weight: normal !important;
-  --table-row-alt-background: #fcfcfc !important;
-  --table-row-alt-background-hover: #fcfcfc !important;
-  --table-row-background-hover: #fcfcfc !important;
-  --table-selection: hsla(181, 100%, 35%, 0.1) !important;
+  );
+  --table-drag-handle-color: #878787;
+  --table-header-background: #fcfcfc;
+  --table-header-border-color: #9f9f9f66;
+  --table-header-color: #252525;
+  --table-header-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --table-header-weight: normal;
+  --table-row-alt-background: #fcfcfc;
+  --table-row-alt-background-hover: #fcfcfc;
+  --table-row-background-hover: #fcfcfc;
+  --table-selection: hsla(181, 100%, 35%, 0.1);
   --table-selection-border-color: hsl(
     177,
     100%,
     33%
-  ) !important;
-  --tag-background: hsla(181, 100%, 35%, 0.1) !important;
-  --tag-background-hover: hsla(181, 100%, 35%, 0.2) !important;
-  --tag-border-color: hsla(181, 100%, 35%, 0.15) !important;
-  --tag-border-color-hover: hsla(181, 100%, 35%, 0.15) !important;
-  --tag-color: hsl(181, 100%, 35%) !important;
-  --tag-color-hover: hsl(181, 100%, 35%) !important;
-  --tertiary: hsl(
+  );
+  --tag-background: hsla(181, 100%, 35%, 0.1);
+  --tag-background-hover: hsla(181, 100%, 35%, 0.2);
+  --tag-border-color: hsla(181, 100%, 35%, 0.15);
+  --tag-border-color-hover: hsla(181, 100%, 35%, 0.15);
+  --tag-color: hsl(181, 100%, 35%);
+  --tag-color-hover: hsl(181, 100%, 35%);
+  --tertiary: var(--text-accent-hover, hsl(
     183,
     105%,
     39%
-  ) !important;
-  --text-accent: hsl(181, 100%, 35%) !important;
+  ));
+  --text-accent: hsl(181, 100%, 35%);
   --text-accent-hover: hsl(
     183,
     105%,
     39%
-  ) !important;
-  --text-error: #c75f54 !important;
-  --text-faint: #878787 !important;
-  --text-highlight-bg: rgba(255, 200, 0, 0.459) !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
-  --text-muted: #7f7f7f !important;
-  --text-normal: #252525 !important;
-  --text-selection: hsla(181, 100%, 35%, 0.2) !important;
-  --text-success: #8fb26b !important;
-  --text-warning: #d08344 !important;
-  --textHighlight: rgba(255, 200, 0, 0.459) !important;
-  --tile-field-padding: 5px !important;
-  --tile-img-radius: 14px !important;
-  --tile-padding: 8px !important;
-  --tile-radius: 14px !important;
-  --titleFont: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --titlebar-background: hsl(0, 0%, 96%) !important;
-  --titlebar-border-color: #9f9f9f66 !important;
-  --titlebar-text-color: #7f7f7f !important;
-  --titlebar-text-color-focused: #252525 !important;
-  --vault-font: "Noto Emoji" !important;
-  --vault-icon: "💎" !important;
-  --vault-name-font-size: 1.57em !important;
-  --vault-name-font-weight: 700 !important;
-  --vault-profile-color: #252525 !important;
-  --vault-profile-color-hover: #252525 !important;
-  --quartz-icon-color: currentColor !important;
+  );
+  --text-error: #c75f54;
+  --text-faint: #878787;
+  --text-highlight-bg: rgba(255, 200, 0, 0.459);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-muted: #7f7f7f;
+  --text-normal: #252525;
+  --text-selection: hsla(181, 100%, 35%, 0.2);
+  --text-success: #8fb26b;
+  --text-warning: #d08344;
+  --textHighlight: var(--text-highlight-bg, rgba(255, 200, 0, 0.459));
+  --tile-field-padding: 5px;
+  --tile-img-radius: 14px;
+  --tile-padding: 8px;
+  --tile-radius: 14px;
+  --titleFont: var(--font-text, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --titlebar-background: hsl(0, 0%, 96%);
+  --titlebar-border-color: #9f9f9f66;
+  --titlebar-text-color: #7f7f7f;
+  --titlebar-text-color-focused: #252525;
+  --vault-font: "Noto Emoji";
+  --vault-icon: "💎";
+  --vault-name-font-size: 1.57em;
+  --vault-name-font-weight: 700;
+  --vault-profile-color: #252525;
+  --vault-profile-color-hover: #252525;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -6450,6 +6451,889 @@ html[saved-theme="light"] body ul.tags > li {
   border-top-right-radius: 7px;
   border-top-width: 1px;
   color: rgb(0, 176, 179);
+}`,
+  },
+  classSettings: {
+    "theme-matcha-light": `.theme-light {
+--vault-icon: "🍵";
+--accent-h: 85 !important;
+--accent-s: 55% !important;
+--accent-l: 55% !important;
+--color-red-rgb: 211, 130, 101;
+--color-red: #c57c4b;
+--color-green-rgb: 151, 203, 77;
+--color-green: #8ab252;
+--color-orange-rgb: 174, 141, 80;
+--color-orange: #c2982e;
+--color-yellow-rgb: 202, 204, 67;
+--color-yellow: #adad46;
+--color-cyan-rgb: 107, 192, 138;
+--color-cyan: #359c5b;
+--color-blue-rgb: 124, 198, 185;
+--color-blue: #399d8b;
+--color-purple-rgb: 130, 159, 181;
+--color-purple: #5097ad;
+--color-pink-rgb: 189, 144, 169;
+--color-pink: #7985ab;
+}
+
+.theme-light {
+--doc-bg: #e4efd9;
+--shadow-color: #e5ecdb !important;
+--color-base-05: hsl(90, 57%, 97%);
+--color-base-00: hsla(96, 100%, 99%, var(--page-transparency));
+--color-base-10: #e9f3df;
+--color-base-20: #e9f4db;
+--color-base-25: #e1edd3;
+--color-base-30: #6c983f37;
+--color-base-35: #d1ddc6;
+--color-base-40: #c8d9c1;
+--color-base-50: #80907a;
+--color-base-60: #849b81;
+--color-base-70: #6c826c;
+--color-base-100: #272d28;
+--panel-child: hsl(90, 80%, 97.5%);
+}`,
+    "theme-tropical-light": `.theme-light {
+--vault-icon: "🌺";
+--accent-h: 16 !important;
+--accent-s: 100% !important;
+--accent-l: 66% !important;
+--color-red-rgb: 255, 99, 99;
+--color-red: #ff6363;
+--color-green-rgb: 30, 177, 69;
+--color-green: #1eb145;
+--color-orange-rgb: 255, 152, 78;
+--color-orange: #ee7c2a;
+--color-yellow-rgb: 243, 198, 0;
+--color-yellow: #de9f00;
+--color-cyan-rgb: 0, 220, 190;
+--color-cyan: #00b59d;
+--color-blue-rgb: 64, 188, 255;
+--color-blue: #2a9ad6;
+--color-purple-rgb: 198, 113, 234;
+--color-purple: #c671ea;
+--color-pink-rgb: 255, 91, 135;
+--color-pink: #ff5b87;
+}
+
+.theme-light {
+--doc-bg: #ffe9cd;
+--shadow-color: hsla(38, 72%, 61%, 0.176) !important;
+--color-base-05: hsl(44, 100%, 92%);
+--color-base-00: hsla(51, 100%, 95%, var(--page-transparency));
+--color-base-10: #ffe9cd;
+--color-base-20: #ffdcc0;
+--color-base-25: #d3edea;
+--color-base-30: #7a2b0034;
+--color-base-35: #dac6dd;
+--color-base-40: #d9c1ca;
+--color-base-50: #7a8c90;
+--color-base-60: #818b9b;
+--color-base-70: #6c6e82;
+--color-base-100: #43475c;
+--panel-child: hsl(42, 100%, 92.5%);
+}`,
+    "theme-nord-light": `.theme-light {
+--vault-icon: "❄️";
+--accent-h: 210 !important;
+--accent-s: 44% !important;
+--accent-l: 59% !important;
+}
+
+.theme-light {
+--doc-bg: hsl(207, 40%, 90%);
+--color-base-00: hsla(208, 44%, 96%, var(--page-transparency));
+--color-base-05: hsl(208, 45%, 95%);
+--color-base-10: hsl(208, 48%, 93%);
+--color-base-20: hsl(208, 48%, 91%);
+--color-base-25: hsl(208, 47%, 88%);
+--color-base-30: hsl(208, 30%, 85%);
+--color-base-35: hsl(209, 45%, 81%);
+--color-base-40: hsl(210, 40%, 77%);
+--color-base-50: hsl(210, 30%, 61%);
+--color-base-60: hsl(210, 27%, 62%);
+--color-base-70: hsl(210, 22%, 53%);
+--color-base-100: hsl(210, 30%, 18%);
+--panel-child: hsl(208, 45%, 95.8%);
+--color-red-rgb: 191, 97, 106;
+--color-red: #bb5a64;
+--color-green-rgb: 163, 190, 140;
+--color-green: #8fad76;
+--color-orange-rgb: 208, 135, 112;
+--color-orange: #cf7b62;
+--color-yellow-rgb: 235, 203, 139;
+--color-yellow: #d3ad61;
+--color-cyan-rgb: 136, 192, 208;
+--color-cyan: #6ab0c4;
+--color-blue-rgb: 129, 161, 193;
+--color-blue: #6997c4;
+--color-purple-rgb: 94, 129, 172;
+--color-purple: #5e81ac;
+--color-pink-rgb: 180, 142, 173;
+--color-pink: #aa7aa1;
+}`,
+    "theme-library": `.theme-library img, .theme-library .page-gallery__tile-image--image {
+filter: sepia(15%) contrast(95%);
+}
+.theme-light {
+--vault-icon: "📚";
+--accent-h: 21 !important;
+--accent-s: 43% !important;
+--accent-l: 57% !important;
+--color-red-rgb: 211, 130, 101;
+--color-red: #c56c4b;
+--color-green-rgb: 151, 203, 77;
+--color-green: #93ab70;
+--color-orange-rgb: 174, 141, 80;
+--color-orange: #c2762e;
+--color-yellow-rgb: 202, 204, 67;
+--color-yellw: #cc9c43;
+--color-cyan-rgb: 107, 192, 138;
+--color-cyan: #61945f;
+--color-blue-rgb: 124, 198, 185;
+--color-blue: #6eada1;
+--color-purple-rgb: 130, 159, 181;
+--color-purple: #5084ad;
+--color-pink-rgb: 189, 144, 169;
+--color-pink: #ab618a;
+}
+
+.theme-light {
+--doc-bg: hsl(41, 53%, 89%);
+--color-base-00: hsla(43, 58%, 95%, var(--page-transparency));
+--color-base-05: hsl(43, 54%, 93%);
+--color-base-10: hsl(42, 55%, 89%);
+--color-base-20: hsl(42, 54%, 85%);
+--color-base-25: #eadbc4;
+--color-base-30: #6c390537;
+--color-base-35: #c2ab87;
+--color-base-40: #b69781;
+--color-base-50: #9f8465;
+--color-base-60: #8d6b4e;
+--color-base-70: #7a6141;
+--color-base-100: #49392d;
+--panel-child: hsl(43, 50%, 94.15%);
+}`,
+    "theme-gleam": `.theme-light {
+--vault-icon: "✨";
+--accent-h: 232 !important;
+--accent-s: 75% !important;
+--accent-l: 70% !important;
+--doc-bg: hsl(229, 13%, 83%);
+--shadow-color: hsl(0, 0%, 92%);
+--color-red-rgb: 255, 114, 114;
+--color-red: rgb(255, 114, 114);
+--color-green-rgb: 132, 204, 124;
+--color-green: rgb(132, 204, 124);
+--color-orange-rgb: 255, 160, 88;
+--color-orange: rgb(255, 160, 88);
+--color-yellow-rgb: 219, 202, 103;
+--color-yellow: rgb(219, 202, 103);
+--color-cyan-rgb: 84, 186, 182;
+--color-cyan: rgb(84, 186, 182);
+--color-blue-rgb: 131, 145, 237;
+--color-blue: rgb(131, 145, 237);
+--color-purple-rgb: 183, 140, 218;
+--color-purple: rgb(183, 140, 218);
+--color-pink-rgb: 233, 145, 196;
+--color-pink: rgb(233, 145, 196);
+--color-base-00: hsla(237, 10%, 97%, var(--page-transparency));
+--color-base-05: hsl(210, 10%, 96%);
+--color-base-10: hsl(220, 9%, 95%);
+--color-base-20: hsl(229, 14%, 91%);
+--color-base-25: #d9dde8;
+--color-base-30: #9496ac66;
+--color-base-35: hsl(220, 5%, 78%);
+--color-base-40: hsl(242, 19%, 72%);
+--color-base-50: #787689;
+--color-base-60: #7f7d8f;
+--color-base-70: #6d6b78;
+--color-base-100: #3e3a4f;
+}`,
+    "theme-matcha-dark": `.theme-dark {
+--vault-icon: "🍵";
+--accent-h: 85 !important;
+--accent-s: 55% !important;
+--accent-l: 55% !important;
+--color-red-rgb: 211, 130, 101;
+--color-red: #c57c4b;
+--color-green-rgb: 151, 203, 77;
+--color-green: #8ab252;
+--color-orange-rgb: 174, 141, 80;
+--color-orange: #c2982e;
+--color-yellow-rgb: 202, 204, 67;
+--color-yellow: #adad46;
+--color-cyan-rgb: 107, 192, 138;
+--color-cyan: #359c5b;
+--color-blue-rgb: 124, 198, 185;
+--color-blue: #399d8b;
+--color-purple-rgb: 130, 159, 181;
+--color-purple: #5097ad;
+--color-pink-rgb: 189, 144, 169;
+--color-pink: #7985ab;
+}
+
+.theme-dark {
+--doc-bg: #2d3428;
+--color-base-00: hsla(90, 16%, 13%, var(--page-transparency));
+--color-base-10: #2e3427;
+--color-base-20: #292f20;
+--color-base-25: #494f3b;
+--color-base-30: #252c21;
+--color-base-35: #575e52;
+--color-base-40: rgb(94, 106, 90);
+--color-base-50: rgb(140, 151, 133);
+--color-base-60: rgb(167, 179, 162);
+--color-base-70: #b8c7b6;
+--color-base-100: #dee7d7;
+}`,
+    "theme-tropical-dark": `.theme-dark {
+--vault-icon: "🌺";
+--accent-h: 16 !important;
+--accent-s: 100% !important;
+--accent-l: 66% !important;
+--color-red-rgb: 255, 99, 99;
+--color-red: #ff6363;
+--color-green-rgb: 30, 177, 69;
+--color-green: #1eb145;
+--color-orange-rgb: 255, 152, 78;
+--color-orange: #ee7c2a;
+--color-yellow-rgb: 243, 198, 0;
+--color-yellow: #de9f00;
+--color-cyan-rgb: 0, 220, 190;
+--color-cyan: #00b59d;
+--color-blue-rgb: 64, 188, 255;
+--color-blue: #2a9ad6;
+--color-purple-rgb: 198, 113, 234;
+--color-purple: #c671ea;
+--color-pink-rgb: 255, 91, 135;
+--color-pink: #ff5b87;
+}
+
+.theme-dark {
+--doc-bg: #3a2d35;
+--color-base-00: hsla(0, 16%, 13%, var(--page-transparency));
+--color-base-10: #4a353d;
+--color-base-20: #2f202c;
+--color-base-25: #4d3b4f;
+--color-base-30: #2d222c;
+--color-base-35: #54525e;
+--color-base-40: rgb(90, 92, 106);
+--color-base-50: rgb(133, 151, 149);
+--color-base-60: rgb(176, 179, 162);
+--color-base-70: #c7c4b6;
+--color-base-100: #e7ded7;
+}`,
+    "theme-nord-dark": `.theme-dark {
+--vault-icon: "❄️";
+--accent-h: 210 !important;
+--accent-s: 44% !important;
+--accent-l: 59% !important;
+}
+
+.theme-dark {
+--doc-bg: #374359;
+--color-red-rgb: 191, 97, 106;
+--color-red: #d58189;
+--color-green-rgb: 163, 190, 140;
+--color-green: #a3be8c;
+--color-orange-rgb: 208, 135, 112;
+--color-orange: #db947e;
+--color-yellow-rgb: 235, 203, 139;
+--color-yellow: #ebcb8b;
+--color-cyan-rgb: 136, 192, 208;
+--color-cyan: #88c0d0;
+--color-blue-rgb: 129, 161, 193;
+--color-blue: #8cb7e2;
+--color-purple-rgb: 94, 129, 172;
+--color-purple: #739ed3;
+--color-pink-rgb: 180, 142, 173;
+--color-pink: rgb(145, 148, 192);
+--color-base-00: hsla(220, 21%, 22%, var(--page-transparency));
+--color-base-05: hsl(220, 21%, 23%);
+--color-base-10: hsl(220, 21%, 25%);
+--color-base-20: hsl(220, 22%, 28%);
+--color-base-25: hsl(220, 22%, 31%);
+--color-base-30: hsl(220, 21%, 24%);
+--color-base-35: hsl(220, 21%, 34%);
+--color-base-40: hsl(220, 21%, 37%);
+--color-base-50: hsl(220, 21%, 60%);
+--color-base-60: hsl(220, 22%, 42%);
+--color-base-60: hsl(220, 23%, 65%);
+--color-base-70: hsl(220, 24%, 70%);
+--color-base-100: hsl(220, 24%, 95%);
+--panel-child: hsl(220, 20.8%, 25.5%);
+}`,
+    "theme-electric": `.theme-dark {
+--vault-icon: "⚡";
+--accent-h: 410 !important;
+--accent-s: 100% !important;
+--accent-l: 50% !important;
+--color-red-rgb: 255, 81, 0;
+--color-red: #ff5100;
+--color-green-rgb: 176, 228, 55;
+--color-green: rgb(176, 228, 55);
+--color-orange-rgb: 225, 124, 23;
+--color-orange: rgb(255, 124, 23);
+--color-yellow-rgb: 255, 208, 0;
+--color-yellow: hsl(49, 100%, 50%);
+--color-cyan-rgb: 38, 227, 192;
+--color-cyan: rgb(38, 224, 227);
+--color-blue-rgb: 56, 182, 255;
+--color-blue: rgb(56, 182, 255);
+--color-purple-rgb: 197, 135, 255;
+--color-purple: rgb(197, 135, 255);
+--color-pink-rgb: 255, 141, 232;
+--color-pink: rgb(255, 141, 232);
+--doc-bg: hsl(193, 7%, 25%);
+--highlight-mix-blend-mode: lighten;
+--color-base-00: hsla(43, 1%, 10%, var(--page-transparency));
+--color-base-10: hsl(43, 1%, 14%);
+--color-base-20: hsl(43, 1%, 15%);
+--color-base-25: hsl(43, 1%, 19%);
+--color-base-30: hsl(43, 1%, 11.5%);
+--color-base-35: hsl(43, 1%, 39%);
+--color-base-40: hsl(43, 1%, 40%);
+--color-base-50: hsl(43, 1%, 56%);
+--color-base-60: hsl(43, 1%, 66%);
+--color-base-70: hsl(43, 1%, 77%);
+--color-base-100: hsl(43, 1%, 87%);
+--panel-child: hsl(43, 1%, 13%);
+}`,
+    "theme-spectre": `.theme-dark {
+--vault-icon: "☄️";
+--accent-h: 340 !important;
+--accent-s: 79% !important;
+--accent-l: 65% !important;
+--color-red-rgb: 236, 93, 141;
+--color-red: #f8828a;
+--color-green-rgb: 179, 181, 78;
+--color-green: #d8db60;
+--color-orange-rgb: 226, 102, 86;
+--color-orange: #ff9572;
+--color-yellow-rgb: 233, 142, 67;
+--color-yellow: #ff9c4a;
+--color-cyan-rgb: 107, 187, 139;
+--color-cyan: #92f0b8;
+--color-blue-rgb: 93, 193, 181;
+--color-blue: #72dace;
+--color-purple-rgb: 193, 112, 197;
+--color-purple: #c170c5;
+--color-pink-rgb: 226, 103, 167;
+--color-pink: #ff5db1;
+--doc-bg: hsl(300, 9%, 15%);
+--highlight-mix-blend-mode: lighten;
+--color-base-00: hsla(253, 10%, 10%, var(--page-transparency));
+--color-base-10: hsl(254, 10%, 17%);
+--color-base-20: hsl(255, 10%, 20%);
+--color-base-25: hsl(256, 11%, 22%);
+--color-base-30: hsl(253, 11%, 13%);
+--color-base-35: hsl(260, 13%, 29%);
+--color-base-40: hsl(263, 12%, 32%);
+--color-base-50: hsl(264, 11%, 47%);
+--color-base-60: hsl(266, 11%, 57%);
+--color-base-70: hsl(268, 11%, 68%);
+--color-base-100: hsl(0, 0%, 100%);
+--panel-child: hsl(250, 10%, 15%);
+}`,
+    "theme-black": `.theme-dark {
+--vault-icon: "🌙";
+--accent-h: 0 !important;
+--accent-s: 0% !important;
+--accent-l: 73% !important;
+--doc-bg: hsl(193, 0%, 8%);
+--highlight-mix-blend-mode: lighten;
+--color-base-00: hsla(216, 0%, 0%, var(--page-transparency));
+--color-base-10: hsl(216, 0%, 5%);
+--color-base-20: hsl(216, 10%, 9%);
+--color-base-25: hsl(216, 10%, 16%);
+--color-base-30: hsl(216, 10%, 6%);
+--color-base-35: hsl(216, 10%, 13%);
+--color-base-40: hsl(216, 10%, 15%);
+--color-base-50: hsl(216, 12%, 69%);
+--color-base-60: hsl(216, 13%, 78%);
+--color-base-70: hsl(218, 14%, 85%);
+--color-base-100: hsl(0, 0%, 100%);
+--panel-child: hsl(216, 10%, 9%);
+}`,
+    "page-shadow": `.page-shadow .workspace-ribbon.is-collapsed {
+padding-right: 0px !important;
+padding-left: 0.1px !important;
+z-index: 500;
+}
+
+.page-shadow:not(.floating-doc) .workspace, .page-shadow:not(.floating-doc) .workspace > .workspace-split, .page-shadow:not(.floating-doc) .workspace-ribbon, .page-shadow:not(.floating-doc) .workspace-ribbon::before, .page-shadow .vertical-tab-content, .page-shadow .vertical-tab-header, .floating-doc .view-content {
+box-shadow: 0 0 70px var(--shadow-color) inset;
+}
+
+.is-focused:not(.floating-doc) .workspace-leaf.mod-active .view-header, .page-shadow:not(.floating-doc) .view-header, .page-shadow:not(.floating-doc) .workspace-leaf-content, .page-shadow:not(.floating-doc) .workspace-tab-container, .page-shadow:not(.floating-doc) .workspace-leaf.mod-active, .page-shadow:not(.floating-doc) .view-content {
+background-color: transparent !important;
+}
+
+.page-shadow {
+--ribbon-background-collapsed: var(--background-secondary);
+--ribbon-background: transparent;
+}
+
+.page-shadow .workspace-ribbon.mod-left.is-collapsed:before {
+background-color: var(--background-secondary) !important;
+}`,
+    "highlight-active-line": `.highlight-active-line .cm-active.cm-line {
+background-color: var(--background-secondary);
+border-radius: var(--radius-s);
+opacity: 1 !important;
+max-height: unset;
+min-height: 2em;
+filter: none !important;
+}
+
+.highlight-active-line .cm-active.cm-line:not(.HyperMD-list-line) {
+padding: 5px 0px 0px 10px !important;
+}
+
+.ultra-focus.highlight-active-line .cm-contentContainer .cm-line, .ultra-focus.highlight-active-line .cm-contentContainer img {
+opacity: 0.6;
+}`,
+    "ultra-focus": `.ultra-focus .workspace-ribbon.is-collapsed {
+display: none;
+}
+
+.ultra-focus .view-header {
+opacity: 0;
+height: 1px;
+transition:
+    height 0.1s,
+    opacity 0.25s;
+}
+
+.ultra-focus .view-header:hover {
+opacity: 1;
+height: var(--header-height);
+}
+
+body.ultra-focus:not(.is-mobile) .mod-root .workspace-tab-header-container:not( :has(.workspace-tab-header + .workspace-tab-header) ) .workspace-tab-header {
+display: none;
+}
+
+body.ultra-focus:not(.is-mobile) .mod-root .workspace-tab-header-container:not( :has(.workspace-tab-header + .workspace-tab-header) ) {
+--header-height: 25px;
+margin-bottom: 0px !important;
+margin-top: 7px;
+opacity: 0.5;
+}
+
+.ultra-focus .workspace-tab-header-container {
+opacity: 0;
+transition: 0.15s;
+}
+
+.ultra-focus .workspace-tab-header-container:not(:hover) {
+height: 20px;
+}
+
+.ultra-focus .workspace-tab-header-container:hover {
+opacity: 1;
+}
+
+.highlight-active-line .cm-contentContainer .cm-line, .highlight-active-line .cm-contentContainer img {
+opacity: 0.6;
+}`,
+    "floating-doc": `.floating-doc .workspace, .floating-doc .workspace > .workspace-split, .floating-doc .workspace-ribbon::before {
+background: var(--doc-background);
+}
+
+.enable-bg-img .workspace, .enable-bg-img .workspace > .workspace-split, .enable-bg-img .workspace-ribbon::before {
+background: transparent;
+}
+
+.floating-doc .workspace-leaf {
+background-color: transparent !important;
+margin: 0px 0.5em;
+}
+
+.floating-doc .workspace-leaf-content[data-type="markdown"] {
+max-width: var(--file-line-width) !important;
+margin: auto !important;
+}
+
+.floating-doc .workspace-leaf-content {
+border-radius: var(--radius-s) var(--radius-s) 0px 0px;
+box-shadow: var(--shadow-s);
+}
+
+.enable-bg-img .workspace-leaf-content {
+background-color: var(--background-primary) !important;
+}
+
+.floating-doc {
+--ribbon-background-collapsed: transparent;
+--ribbon-background: transparent;
+}
+
+.page-shadow.floating-doc .view-content {
+box-shadow: 0 0 70px var(--shadow-color) inset;
+}`,
+    "custom-doc": `.custom-doc {
+--doc-background: var(--custom-doc-bg) !important;
+}`,
+    "doc-1": `.doc-1 {
+--custom-doc-bg: var(--color-accent-1);
+}`,
+    "doc-2": `.doc-2 {
+--custom-doc-bg: var(--color-accent-2);
+}`,
+    "doc-3": `.doc-3 {
+--custom-doc-bg: var(--color-accent-3);
+}`,
+    "hide-m": `.hide-m .metadata-container {
+opacity: 0 !important;
+margin: 0px !important;
+padding: 0px !important;
+height: 0px !important;
+}`,
+    "minimal-m": `.minimal-m .frontmatter-container {
+background-color: var(--background-secondary-alt);
+clear: right !important;
+float: right !important;
+margin: 0px 0px 0.5em 0.5em !important;
+}
+
+.minimal-m .frontmatter-container.is-collapsed {
+max-width: 120px;
+background-color: transparent;
+}
+
+.minimal-m .frontmatter-container .frontmatter-container-header {
+border-radius: var(--radius-l);
+margin: 0px auto;
+width: fit-content;
+font-size: var(--font-ui-small);
+}
+
+.minimal-m .frontmatter-container.is-collapsed .frontmatter-container-header:hover {
+color: var(--interactive-accent);
+background-color: var(--interactive-hover) !important;
+border-color: var(--background-modifier-border-hover);
+}
+
+.minimal-m .frontmatter-container.is-collapsed .frontmatter-container-header {
+background-color: var(--background-primary-alt);
+color: var(--text-muted);
+}
+
+.minimal-m .frontmatter-container:not(.is-collapsed) .frontmatter-container-header {
+color: transparent;
+max-height: 1px;
+min-height: 1px;
+padding: 0px;
+margin: 0px;
+}
+
+.minimal-m .frontmatter-container:not(.is-collapsed) .frontmatter-container-header::before {
+color: var(--text-faint);
+content: "❌";
+font-family: "Noto Emoji";
+font-size: 0.5em;
+opacity: 0;
+}
+
+.minimal-m .frontmatter-container:not(.is-collapsed) .frontmatter-container-header:hover::before {
+color: var(--color-red);
+content: "❌";
+opacity: 1;
+}
+
+.minimal-m .frontmatter-container:not(.is-collapsed) {
+max-width: 30%;
+font-size: var(--font-ui-medium);
+float: left;
+margin: 0px 2em 1.5em 0px;
+}
+
+.minimal-m .frontmatter-section-label::after {
+content: none;
+}
+
+.minimal-m .frontmatter-section-label, .minimal-m .frontmatter-section {
+font-size: var(--font-ui-small);
+display: block;
+margin-bottom: 0px;
+padding-bottom: 0px;
+text-align: center;
+}
+
+.minimal-m .frontmatter-section-label {
+font-weight: var(--h1-weight);
+font-family: var(--h1-font);
+font-size: var(--font-ui-small);
+}
+
+.minimal-m .frontmatter-section {
+margin: 5px 0px;
+width: 100%;
+padding: 5px;
+border: none;
+background-color: transparent;
+}`,
+    "no-shadows": `.no-shadows {
+--shadow-ui: none;
+--shadow-s: none;
+--shadow-l: none;
+}`,
+    "unhide-ribbon": `.unhide-ribbon .workspace-ribbon.is-collapsed {
+opacity: 1;
+max-width: 5em;
+}`,
+    "remove-file-icons": `.remove-file-icons .nav-file-title:before {
+content: "" !important;
+padding-right: 0;
+}`,
+    "no-special-files": `.no-special-files .nav-file-title:before {
+content: "📄" !important;
+}`,
+    "remove-folder-icons": `.remove-folder-icons .nav-folder .nav-folder-title-content:not( .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content ):before {
+display: none;
+}`,
+    "remove-vault-icon": `.remove-vault-icon .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content:before {
+display: none;
+}`,
+    "folder-notebooks": `.folder-notebooks {
+--folder-icon-size: 1.6em;
+--normal-folder-1-open: "📖";
+--normal-folder-1: "📒";
+--normal-folder-2-open: "📑";
+--normal-folder-2: "📑";
+--normal-folder-3: "🔖";
+--normal-folder-3-open: "🔖";
+}`,
+    "folder-library": `.folder-library {
+--normal-folder-1: "📚";
+--normal-folder-1-open: "📚";
+--normal-folder-2: "📕";
+--normal-folder-2-open: "📖";
+--normal-folder-3: "📑";
+--normal-folder-3-open: "🔖";
+}`,
+    "folder-folders": `.folder-folders {
+--normal-folder-1: "📁";
+--normal-folder-1-open: "📂";
+--normal-folder-2: "📁";
+--normal-folder-2-open: "📂";
+--normal-folder-3: "📁";
+--normal-folder-3-open: "📂";
+}
+
+.folder-folders-2 {
+--normal-folder-1-open: "🗃️";
+--normal-folder-1: "🗄️";
+--normal-folder-2: "🗂️";
+--normal-folder-2-open: "🗂️";
+--normal-folder-3: "📁";
+--normal-folder-3-open: "📂";
+}`,
+    "folder-folders-2": `.folder-folders-2 {
+--normal-folder-1-open: "🗃️";
+--normal-folder-1: "🗄️";
+--normal-folder-2: "🗂️";
+--normal-folder-2-open: "🗂️";
+--normal-folder-3: "📁";
+--normal-folder-3-open: "📂";
+}`,
+    "folder-navigator": `.folder-navigator {
+--normal-folder-1-open: "🌐";
+--normal-folder-1: "🌍";
+--normal-folder-2: "🧭";
+--normal-folder-2-open: "🗺️";
+--normal-folder-3: "🏝️";
+--normal-folder-3-open: "📌";
+}`,
+    "folder-garden": `.folder-garden {
+--normal-folder-1: "🌱";
+--normal-folder-1-open: "🌳";
+--normal-folder-2: "🌷";
+--normal-folder-2-open: "🌺";
+--normal-folder-3: "🌹";
+--normal-folder-3-open: "💐";
+}`,
+    "folder-custom": `.folder-custom {
+--custom-folder-1-open: "🌟";
+--custom-folder-1: "⭐";
+--custom-folder-2-open: "🌷";
+--custom-folder-2: "🌺";
+--custom-folder-3: "🐱";
+--custom-folder-3-open: "😸";
+}
+
+.folder-custom {
+--folder-1: var(--custom-folder-1);
+--folder-1-open: var(--custom-folder-1-open);
+--folder-2: var(--custom-folder-2);
+--folder-2-open: var(--custom-folder-2-open);
+--folder-3: var(--custom-folder-3);
+--folder-3-open: var(--custom-folder-3-open);
+}
+
+.folder-custom .style-settings-heading[data-id="custom-folders-heading"] {
+display: block;
+}`,
+    "enable-bg-img": `.floating-doc.enable-bg-img .workspace, .floating-doc.enable-bg-img .workspace > .workspace-split, .floating-doc.enable-bg-img .workspace-ribbon::before {
+background: transparent;
+}
+
+.floating-doc.enable-bg-img .workspace-leaf-content {
+background-color: var(--background-primary) !important;
+}
+
+.enable-bg-img:not(.floating-doc) .workspace-split.mod-horizontal.mod-left-split, .enable-bg-img:not(.floating-doc) .workspace-ribbon, .enable-bg-img:not(.floating-doc) .workspace-ribbon.is-collapsed, .enable-bg-img:not(.floating-doc) .workspace-ribbon::before {
+background-color: var(--background-primary) !important;
+}
+
+.enable-bg-img .workspace-ribbon.is-collapsed {
+padding-right: 0px !important;
+padding-left: 0.1px !important;
+z-index: 500;
+}
+
+.enable-bg-img .horizontal-main-container {
+background: var(--img-bg);
+background-repeat: no-repeat;
+background-size: var(--img-bg-size);
+background-position-y: var(--img-position-y);
+background-position-x: var(--img-position-x);
+}
+
+.enable-bg-img .workspace {
+background-color: transparent !important;
+backdrop-filter: blur(var(--img-blur)) saturate(var(--img-sat)) !important;
+}
+
+.enable-bg-img .workspace-leaf {
+background-color: transparent !important;
+}
+
+.enable-bg-img .view-content, .enable-bg-img .view-header {
+background-color: transparent !important;
+}
+
+.enable-bg-img {
+--page-transparency-custom: 75%;
+}
+
+.enable-bg-img {
+--page-transparency: var(--page-transparency-custom);
+}`,
+    "headings-tiny": `.headings-tiny {
+--h1-size: 1.5em;
+--h2-size: 1.4em;
+--h3-size: 1.3em;
+--h4-size: 1.2em;
+--h5-size: 1.1em;
+--h6-size: 1em;
+}`,
+    "headings-small": `.headings-small {
+--h1-size: 1.75em;
+--h2-size: 1.55em;
+--h3-size: 1.45em;
+--h4-size: 1.3em;
+--h5-size: 1.25em;
+--h6-size: 1.05em;
+}`,
+    "headings-medium": `.headings-medium {
+--h1-size: 2.2em;
+--h2-size: 1.87em;
+--h3-size: 1.57em;
+--h4-size: 1.35em;
+--h5-size: 1.3em;
+--h6-size: 1.1em;
+}`,
+    "headings-large": `.headings-large {
+--h1-size: 2.5em;
+--h2-size: 2.2em;
+--h3-size: 1.87em;
+--h4-size: 1.57em;
+--h5-size: 1.35em;
+--h6-size: 1.3em;
+}`,
+    "headings-huge": `.headings-huge {
+--h1-size: 2.8em;
+--h2-size: 2.35em;
+--h3-size: 2em;
+--h4-size: 1.75em;
+--h5-size: 1.5em;
+--h6-size: 1.25em;
+}`,
+    "left-align-h1": `.left-align-h1 {
+--h1-align: left;
+}`,
+    "header-shadow": `.header-shadow .cm-header-1, .header-shadow h1, .header-shadow .cm-header-2, .header-shadow h2, .header-shadow .cm-header-3, .header-shadow h3, .header-shadow .cm-header-4, .header-shadow h4, .header-shadow .cm-header-5, .header-shadow h5, .header-shadow .cm-header-6, .header-shadow h6 {
+text-shadow: rgba(0, 0, 0, 0.155) 0em 0.04em 0.05em;
+}`,
+    "colored-headings": `.colored-headings {
+--h1-color: var(--h1-color-custom);
+--h2-color: var(--h2-color-custom);
+--h3-color: var(--h3-color-custom);
+--h4-color: var(--h4-color-custom);
+--h5-color: var(--h5-color-custom);
+--h6-color: var(--h6-color-custom);
+}`,
+    "title-shadow": `.title-shadow .inline-title {
+text-shadow:
+    rgba(0, 0, 0, 0.153) 0.01em 0.02em 0.03em,
+    rgba(0, 0, 0, 0.171) 0.05em 0.02em 0.05em;
+}`,
+    "hide-title": `.hide-title .inline-title {
+opacity: 0;
+margin: 0px !important;
+padding: 0px !important;
+height: 0px !important;
+}`,
+    "p-indent-bab": `.p-indent-bab p {
+text-indent: 0.25in;
+}`,
+    "img-adjust": `.img-adjust .view-content .markdown-rendered img:not([width]) {
+max-width: 700px;
+}
+
+.img-adjust .view-content img {
+max-width: 85%;
+}`,
+    "img-center": `.img-center {
+--img-align: auto;
+}`,
+    "hide-tag-icons": `.hide-tag-icons a.tag::before {
+display: none;
+}`,
+    "icon-square": `.icon-square .icon .inline-title::first-letter {
+border-radius: 12px;
+}`,
+    "icon-circle": `.icon-circle .icon .inline-title::first-letter {
+border-radius: 100px;
+padding: 18px;
+}`,
+    "icon-bordered": `.icon-bordered .icon .inline-title::first-letter {
+border-radius: 100px;
+border-width: 2px;
+border-color: var(--text-normal);
+padding: 18px;
+}`,
+    "icon-no-border": `.icon-no-border .icon .inline-title::first-letter {
+border: none;
+}`,
+    "full-screen-modal": `.full-screen-modal {
+--modal-max-width: 100%;
+--modal-width: 100%;
+--modal-height: 100%;
+--modal-max-width-narrow: 75%;
+--modal-radius: 0px;
+--modal-max-height: 100;
+}`,
+    "page-gallery-flexgrow": `.page-gallery-flexgrow .page-gallery__tile {
+max-width: unset;
+flex-grow: 1;
+height: flex;
+width: fit-content;
+min-width: 12em;
 }`,
   },
 };

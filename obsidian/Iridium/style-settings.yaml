@@ -1,0 +1,2470 @@
+name: Iridium
+id: iridium
+settings:
+  - id: layout
+    title: Layout
+    type: heading
+    level: 1
+    collapsed: true
+  - id: layout-desktop-only
+    title: Layout (desktop only)
+    type: class-select
+    default: none
+    options:
+      - label: Card layout
+        value: none
+      - label: Border layout
+        value: i-border-layout
+      - label: Default layout
+        value: i-default-layout
+  - id: i-card-radius
+    title: 'Card layout: Radius (px)'
+    type: variable-number-slider
+    default: 8
+    min: 0
+    max: 12
+    step: 1
+    format: px
+  - id: i-border-radius
+    title: 'Border layout: Radius'
+    type: variable-text
+    default: ''
+  - id: light-mode
+    title: Light mode
+    type: heading
+    level: 1
+    collapsed: true
+  - id: i-lt-s
+    title: Saturation (%)
+    type: variable-number-slider
+    default: 25
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-lt-l-multiplier
+    title: Lightness multiplier
+    type: variable-number-slider
+    default: 1
+    min: 0.5
+    max: 1.5
+    step: 0.05
+  - id: i-lt-border-l
+    title: Editor border lightness (%)
+    description: Border lightness of elements in the editor (tables, code blocks, embeds, horizontal rules, etc).
+    type: variable-number-slider
+    default: 14
+    min: 5
+    max: 25
+    step: 1
+    format: '%'
+  - id: i-lt-default-text-accent
+    title: Default accent text color
+    description: Use the default accent text color for links, file path, accent colored inline title, etc.
+    type: class-toggle
+  - id: light-mode-card-and-border-layouts
+    title: Card and border layouts
+    type: heading
+    level: 2
+  - id: i-lt-layout-s
+    title: Enable custom border saturation
+    type: class-toggle
+  - id: i-lt-custom-layout-s
+    title: Custom border saturation (%)
+    type: variable-number-slider
+    default: 25
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-lt-layout-l
+    title: Border lightness (%)
+    type: variable-number-slider
+    default: 12
+    min: 0
+    max: 25
+    step: 1
+    format: '%'
+  - id: i-lt-layout-border-l
+    title: Pane outline lightness (%)
+    type: variable-number-slider
+    default: 8
+    min: 0
+    max: 25
+    step: 1
+    format: '%'
+  - id: dark-mode
+    title: Dark mode
+    type: heading
+    level: 1
+    collapsed: true
+  - id: i-dk-s
+    title: Saturation (%)
+    type: variable-number-slider
+    default: 12
+    min: 0
+    max: 25
+    step: 1
+    format: '%'
+  - id: i-dk-l
+    title: Lightness (%)
+    type: variable-number-slider
+    default: 12
+    min: 0
+    max: 25
+    step: 1
+    format: '%'
+  - id: i-dk-l-multiplier
+    title: Lightness multiplier
+    type: variable-number-slider
+    default: 1
+    min: 0.5
+    max: 1.5
+    step: 0.05
+  - id: i-dk-border-l
+    title: Editor border lightness (%)
+    description: Border lightness of elements in the editor (tables, code blocks, embeds, horizontal rules, etc).
+    type: variable-number-slider
+    default: 11
+    min: 5
+    max: 25
+    step: 1
+    format: '%'
+  - id: i-dk-text-l-multiplier
+    title: Text lightness multiplier
+    type: variable-number-slider
+    default: 1
+    min: 0.7
+    max: 1.4
+    step: 0.05
+  - id: i-dk-default-text-accent
+    title: Default accent text color
+    description: Use the default accent text color for links, file path, accent colored inline title, etc.
+    type: class-toggle
+  - id: dark-mode-card-and-border-layouts
+    title: Card and border layouts
+    type: heading
+    level: 2
+  - id: i-dk-layout-s
+    title: Enable custom border saturation
+    type: class-toggle
+  - id: i-dk-custom-layout-s
+    title: Custom border saturation (%)
+    type: variable-number-slider
+    default: 12
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-dk-layout-l
+    title: Border lightness (%)
+    type: variable-number-slider
+    default: 8
+    min: 0
+    max: 25
+    step: 1
+    format: '%'
+  - id: i-dk-layout-border-l
+    title: Pane outline lightness (%)
+    type: variable-number-slider
+    default: 8
+    min: 0
+    max: 25
+    step: 1
+    format: '%'
+  - id: editor
+    title: Editor
+    type: heading
+    level: 1
+    collapsed: true
+  - id: active-line-highlight
+    title: Active line highlight
+    type: heading
+    level: 2
+    collapsed: true
+  - id: active-line-highlight-style
+    title: Active line highlight style (desktop only)
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Border
+        value: i-active-line-border
+      - label: Highlight
+        value: i-active-line-highlight
+      - label: Highlight + border
+        value: i-active-line-highlight-border
+  - id: i-active-line-active-pane-only
+    title: Only show in active pane
+    type: class-toggle
+    default: true
+  - id: i-active-line-color
+    title: Active line highlight color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: blockquotes
+    title: Blockquotes
+    type: heading
+    level: 2
+    collapsed: true
+  - id: i-italic-blockquote-text
+    title: Italic blockquote text
+    type: class-toggle
+  - id: i-transparent-blockquote-background
+    title: Transparent blockquote background
+    type: class-toggle
+  - id: callouts
+    title: Callouts
+    type: heading
+    level: 2
+    collapsed: true
+  - id: callout-style
+    title: Callout style
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Outlined
+        value: i-callout-outlined
+      - label: Filled
+        value: i-callout-filled
+      - label: Outlined + filled
+        value: i-callout-outlined-filled
+  - id: callout-colors
+    title: Callout colors
+    type: heading
+    level: 3
+    collapsed: true
+  - id: callout-bug
+    title: Bug
+    type: variable-select
+    default: var(--color-red-rgb)
+    options:
+      - label: Red
+        value: var(--color-red-rgb)
+      - label: Orange
+        value: var(--color-orange-rgb)
+      - label: Yellow
+        value: var(--color-yellow-rgb)
+      - label: Green
+        value: var(--color-green-rgb)
+      - label: Cyan
+        value: var(--color-cyan-rgb)
+      - label: Blue
+        value: var(--color-blue-rgb)
+      - label: Purple
+        value: var(--color-purple-rgb)
+      - label: Pink
+        value: var(--color-pink-rgb)
+      - label: Gray
+        value: 158, 158, 158
+  - id: callout-default
+    title: Default
+    type: variable-select
+    default: var(--color-blue-rgb)
+    options:
+      - label: Red
+        value: var(--color-red-rgb)
+      - label: Orange
+        value: var(--color-orange-rgb)
+      - label: Yellow
+        value: var(--color-yellow-rgb)
+      - label: Green
+        value: var(--color-green-rgb)
+      - label: Cyan
+        value: var(--color-cyan-rgb)
+      - label: Blue
+        value: var(--color-blue-rgb)
+      - label: Purple
+        value: var(--color-purple-rgb)
+      - label: Pink
+        value: var(--color-pink-rgb)
+      - label: Gray
+        value: 158, 158, 158
+  - id: callout-error
+    title: Error
+    type: variable-select
+    default: var(--color-red-rgb)
+    options:
+      - label: Red
+        value: var(--color-red-rgb)
+      - label: Orange
+        value: var(--color-orange-rgb)
+      - label: Yellow
+        value: var(--color-yellow-rgb)
+      - label: Green
+        value: var(--color-green-rgb)
+      - label: Cyan
+        value: var(--color-cyan-rgb)
+      - label: Blue
+        value: var(--color-blue-rgb)
+      - label: Purple
+        value: var(--color-purple-rgb)
+      - label: Pink
+        value: var(--color-pink-rgb)
+      - label: Gray
+        value: 158, 158, 158
+  - id: callout-example
+    title: Example
+    type: variable-select
+    default: var(--color-purple-rgb)
+    options:
+      - label: Red
+        value: var(--color-red-rgb)
+      - label: Orange
+        value: var(--color-orange-rgb)
+      - label: Yellow
+        value: var(--color-yellow-rgb)
+      - label: Green
+        value: var(--color-green-rgb)
+      - label: Cyan
+        value: var(--color-cyan-rgb)
+      - label: Blue
+        value: var(--color-blue-rgb)
+      - label: Purple
+        value: var(--color-purple-rgb)
+      - label: Pink
+        value: var(--color-pink-rgb)
+      - label: Gray
+        value: 158, 158, 158
+  - id: callout-fail
+    title: Fail
+    type: variable-select
+    default: var(--color-red-rgb)
+    options:
+      - label: Red
+        value: var(--color-red-rgb)
+      - label: Orange
+        value: var(--color-orange-rgb)
+      - label: Yellow
+        value: var(--color-yellow-rgb)
+      - label: Green
+        value: var(--color-green-rgb)
+      - label: Cyan
+        value: var(--color-cyan-rgb)
+      - label: Blue
+        value: var(--color-blue-rgb)
+      - label: Purple
+        value: var(--color-purple-rgb)
+      - label: Pink
+        value: var(--color-pink-rgb)
+      - label: Gray
+        value: 158, 158, 158
+  - id: callout-important
+    title: Important
+    type: variable-select
+    default: var(--color-cyan-rgb)
+    options:
+      - label: Red
+        value: var(--color-red-rgb)
+      - label: Orange
+        value: var(--color-orange-rgb)
+      - label: Yellow
+        value: var(--color-yellow-rgb)
+      - label: Green
+        value: var(--color-green-rgb)
+      - label: Cyan
+        value: var(--color-cyan-rgb)
+      - label: Blue
+        value: var(--color-blue-rgb)
+      - label: Purple
+        value: var(--color-purple-rgb)
+      - label: Pink
+        value: var(--color-pink-rgb)
+      - label: Gray
+        value: 158, 158, 158
+  - id: callout-info
+    title: Info
+    type: variable-select
+    default: var(--color-blue-rgb)
+    options:
+      - label: Red
+        value: var(--color-red-rgb)
+      - label: Orange
+        value: var(--color-orange-rgb)
+      - label: Yellow
+        value: var(--color-yellow-rgb)
+      - label: Green
+        value: var(--color-green-rgb)
+      - label: Cyan
+        value: var(--color-cyan-rgb)
+      - label: Blue
+        value: var(--color-blue-rgb)
+      - label: Purple
+        value: var(--color-purple-rgb)
+      - label: Pink
+        value: var(--color-pink-rgb)
+      - label: Gray
+        value: 158, 158, 158
+  - id: callout-question
+    title: Question
+    type: variable-select
+    default: var(--color-orange-rgb)
+    options:
+      - label: Red
+        value: var(--color-red-rgb)
+      - label: Orange
+        value: var(--color-orange-rgb)
+      - label: Yellow
+        value: var(--color-yellow-rgb)
+      - label: Green
+        value: var(--color-green-rgb)
+      - label: Cyan
+        value: var(--color-cyan-rgb)
+      - label: Blue
+        value: var(--color-blue-rgb)
+      - label: Purple
+        value: var(--color-purple-rgb)
+      - label: Pink
+        value: var(--color-pink-rgb)
+      - label: Gray
+        value: 158, 158, 158
+  - id: callout-success
+    title: Success
+    type: variable-select
+    default: var(--color-green-rgb)
+    options:
+      - label: Red
+        value: var(--color-red-rgb)
+      - label: Orange
+        value: var(--color-orange-rgb)
+      - label: Yellow
+        value: var(--color-yellow-rgb)
+      - label: Green
+        value: var(--color-green-rgb)
+      - label: Cyan
+        value: var(--color-cyan-rgb)
+      - label: Blue
+        value: var(--color-blue-rgb)
+      - label: Purple
+        value: var(--color-purple-rgb)
+      - label: Pink
+        value: var(--color-pink-rgb)
+      - label: Gray
+        value: 158, 158, 158
+  - id: callout-summary
+    title: Summary
+    type: variable-select
+    default: var(--color-cyan-rgb)
+    options:
+      - label: Red
+        value: var(--color-red-rgb)
+      - label: Orange
+        value: var(--color-orange-rgb)
+      - label: Yellow
+        value: var(--color-yellow-rgb)
+      - label: Green
+        value: var(--color-green-rgb)
+      - label: Cyan
+        value: var(--color-cyan-rgb)
+      - label: Blue
+        value: var(--color-blue-rgb)
+      - label: Purple
+        value: var(--color-purple-rgb)
+      - label: Pink
+        value: var(--color-pink-rgb)
+      - label: Gray
+        value: 158, 158, 158
+  - id: callout-tip
+    title: Tip
+    type: variable-select
+    default: var(--color-cyan-rgb)
+    options:
+      - label: Red
+        value: var(--color-red-rgb)
+      - label: Orange
+        value: var(--color-orange-rgb)
+      - label: Yellow
+        value: var(--color-yellow-rgb)
+      - label: Green
+        value: var(--color-green-rgb)
+      - label: Cyan
+        value: var(--color-cyan-rgb)
+      - label: Blue
+        value: var(--color-blue-rgb)
+      - label: Purple
+        value: var(--color-purple-rgb)
+      - label: Pink
+        value: var(--color-pink-rgb)
+      - label: Gray
+        value: 158, 158, 158
+  - id: callout-todo
+    title: Todo
+    type: variable-select
+    default: var(--color-blue-rgb)
+    options:
+      - label: Red
+        value: var(--color-red-rgb)
+      - label: Orange
+        value: var(--color-orange-rgb)
+      - label: Yellow
+        value: var(--color-yellow-rgb)
+      - label: Green
+        value: var(--color-green-rgb)
+      - label: Cyan
+        value: var(--color-cyan-rgb)
+      - label: Blue
+        value: var(--color-blue-rgb)
+      - label: Purple
+        value: var(--color-purple-rgb)
+      - label: Pink
+        value: var(--color-pink-rgb)
+      - label: Gray
+        value: 158, 158, 158
+  - id: callout-warning
+    title: Warning
+    type: variable-select
+    default: var(--color-orange-rgb)
+    options:
+      - label: Red
+        value: var(--color-red-rgb)
+      - label: Orange
+        value: var(--color-orange-rgb)
+      - label: Yellow
+        value: var(--color-yellow-rgb)
+      - label: Green
+        value: var(--color-green-rgb)
+      - label: Cyan
+        value: var(--color-cyan-rgb)
+      - label: Blue
+        value: var(--color-blue-rgb)
+      - label: Purple
+        value: var(--color-purple-rgb)
+      - label: Pink
+        value: var(--color-pink-rgb)
+      - label: Gray
+        value: 158, 158, 158
+  - id: callout-quote
+    title: Quote
+    type: variable-select
+    default: 158, 158, 158
+    options:
+      - label: Red
+        value: var(--color-red-rgb)
+      - label: Orange
+        value: var(--color-orange-rgb)
+      - label: Yellow
+        value: var(--color-yellow-rgb)
+      - label: Green
+        value: var(--color-green-rgb)
+      - label: Cyan
+        value: var(--color-cyan-rgb)
+      - label: Blue
+        value: var(--color-blue-rgb)
+      - label: Purple
+        value: var(--color-purple-rgb)
+      - label: Pink
+        value: var(--color-pink-rgb)
+      - label: Gray
+        value: 158, 158, 158
+  - id: code
+    title: Code
+    type: heading
+    level: 2
+    collapsed: true
+  - id: code-size
+    title: Code font size
+    type: variable-text
+    default: ''
+  - id: syntax-highlighting
+    title: Syntax highlighting
+    type: heading
+    level: 3
+    collapsed: true
+  - id: code-normal
+    title: Normal
+    type: variable-themed-color
+    description: 'Default: Normal text color'
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: code-comment
+    title: Comment
+    type: variable-themed-color
+    description: 'Default: Faint text color'
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: code-function
+    title: Function
+    type: variable-themed-color
+    description: 'Default: Yellow'
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: code-important
+    title: Important
+    type: variable-themed-color
+    description: 'Default: Orange'
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: code-keyword
+    title: Keyword
+    type: variable-themed-color
+    description: 'Default: Pink'
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: code-operator
+    title: Operator
+    type: variable-themed-color
+    description: 'Default: Red'
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: code-property
+    title: Property
+    type: variable-themed-color
+    description: 'Default: Cyan'
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: code-punctuation
+    title: Punctuation
+    type: variable-themed-color
+    description: 'Default: Muted text color'
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: code-string
+    title: String
+    type: variable-themed-color
+    description: 'Default: Green'
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: code-tag
+    title: Tag
+    type: variable-themed-color
+    description: 'Default: Red'
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: code-value
+    title: Value
+    type: variable-themed-color
+    description: 'Default: Purple'
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: editor-background-pattern
+    title: Editor background pattern
+    type: heading
+    level: 2
+    collapsed: true
+  - id: editor-background-pattern
+    title: Editor background pattern
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Lined
+        value: i-lined-bg
+      - label: Grid
+        value: i-grid-bg
+      - label: Dotted
+        value: i-dotted-bg
+  - id: i-pattern-lt-l
+    title: 'Light mode: Pattern lightness'
+    type: variable-number-slider
+    default: 3
+    min: 1
+    max: 25
+    step: 1
+    format: '%'
+  - id: i-pattern-dk-l
+    title: 'Dark mode: Pattern lightness'
+    type: variable-number-slider
+    default: 3
+    min: 1
+    max: 25
+    step: 1
+    format: '%'
+  - id: i-pattern-color
+    title: Pattern color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: i-pattern-line-width
+    title: Line width / dot size
+    type: variable-text
+    default: 1px
+  - id: i-pattern-width
+    title: Pattern width
+    type: variable-text
+    default: 10px
+  - id: i-pattern-height
+    title: Pattern height
+    type: variable-text
+    default: 10px
+  - id: embeds
+    title: Embeds
+    type: heading
+    level: 2
+    collapsed: true
+  - id: embed-max-height
+    title: Maximum height of embeds
+    type: variable-text
+    default: 4000px
+  - id: embed-canvas-max-height
+    title: Maximum height of canvas embeds
+    type: variable-text
+    default: 400px
+  - id: extended-colors
+    title: Extended colors
+    type: heading
+    level: 2
+    collapsed: true
+  - id: color-red
+    title: Red
+    type: variable-themed-color
+    format: hex
+    alt-format:
+      - id: color-red-rgb
+        format: rgb-values
+    default-light: '#e93147'
+    default-dark: '#fb464c'
+  - id: color-orange
+    title: Orange
+    type: variable-themed-color
+    format: hex
+    alt-format:
+      - id: color-orange-rgb
+        format: rgb-values
+    default-light: '#ec7500'
+    default-dark: '#e9973f'
+  - id: color-yellow
+    title: Yellow
+    type: variable-themed-color
+    format: hex
+    alt-format:
+      - id: color-yellow-rgb
+        format: rgb-values
+    default-light: '#e0ac00'
+    default-dark: '#e0de71'
+  - id: color-green
+    title: Green
+    type: variable-themed-color
+    format: hex
+    alt-format:
+      - id: color-green-rgb
+        format: rgb-values
+    default-light: '#08b94e'
+    default-dark: '#44cf6e'
+  - id: color-cyan
+    title: Cyan
+    type: variable-themed-color
+    format: hex
+    alt-format:
+      - id: color-cyan-rgb
+        format: rgb-values
+    default-light: '#00bfbc'
+    default-dark: '#53dfdd'
+  - id: color-blue
+    title: Blue
+    type: variable-themed-color
+    format: hex
+    alt-format:
+      - id: color-blue-rgb
+        format: rgb-values
+    default-light: '#086ddd'
+    default-dark: '#027aff'
+  - id: color-purple
+    title: Purple
+    type: variable-themed-color
+    format: hex
+    alt-format:
+      - id: color-purple-rgb
+        format: rgb-values
+    default-light: '#7852ee'
+    default-dark: '#a882ff'
+  - id: color-pink
+    title: Pink
+    type: variable-themed-color
+    format: hex
+    alt-format:
+      - id: color-pink-rgb
+        format: rgb-values
+    default-light: '#d53984'
+    default-dark: '#fa99cd'
+  - id: file-layout
+    title: File layout
+    type: heading
+    level: 2
+    collapsed: true
+  - id: file-line-width
+    title: Readable line length
+    type: variable-text
+    default: 700px
+  - id: headings
+    title: Headings
+    type: heading
+    level: 2
+    collapsed: true
+  - id: colorful-headings
+    title: Colorful headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: headings-light-mode
+    title: Light mode
+    type: heading
+    level: 4
+    collapsed: true
+  - id: i-lt-heading-colored
+    title: Colored headings
+    type: class-toggle
+    default: true
+  - id: i-lt-heading-highlighted
+    title: Highlighted headings
+    type: class-toggle
+  - id: i-lt-heading-accent
+    title: Start from accent color
+    description: Disable to start from red.
+    type: class-toggle
+    default: true
+  - id: light-mode-colored-headings
+    title: Colored headings
+    type: heading
+    level: 5
+    collapsed: true
+  - id: i-lt-heading-colored-l
+    title: Lightness (%)
+    type: variable-number-slider
+    default: 50
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-lt-heading-colored-c
+    title: Chroma (%)
+    type: variable-number-slider
+    default: 50
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: light-mode-highlighted-headings
+    title: Highlighted headings
+    type: heading
+    level: 5
+    collapsed: true
+  - id: i-lt-heading-highlighted-padding
+    title: Highlight height in editing view
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 0.25
+    step: 0.01
+    format: em
+  - id: i-lt-heading-highlighted-l
+    title: Lightness (%)
+    type: variable-number-slider
+    default: 95
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-lt-heading-highlighted-c
+    title: Chroma (%)
+    type: variable-number-slider
+    default: 8
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-lt-heading-highlighted-a
+    title: Opacity (%)
+    type: variable-number-slider
+    default: 50
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: light-mode-gradient-headings
+    title: Gradient headings
+    description: Generates a gradient from H1 to H6 based on different H1 and H6 hues. Affected by accent color if 'Start from accent color' is enabled.
+    type: heading
+    level: 5
+    collapsed: true
+  - id: i-lt-h1-h
+    title: H1 hue
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 360
+    step: 5
+  - id: i-lt-h6-h
+    title: H6 hue
+    type: variable-number-slider
+    default: 300
+    min: 0
+    max: 360
+    step: 5
+  - id: headings-dark-mode
+    title: Dark mode
+    type: heading
+    level: 4
+    collapsed: true
+  - id: i-dk-heading-colored
+    title: Colored headings
+    type: class-toggle
+    default: true
+  - id: i-dk-heading-highlighted
+    title: Highlighted headings
+    type: class-toggle
+  - id: i-dk-heading-accent
+    title: Start from accent color
+    description: Disable to start from red.
+    type: class-toggle
+    default: true
+  - id: dark-mode-colored-headings
+    title: Colored headings
+    type: heading
+    level: 5
+    collapsed: true
+  - id: i-dk-heading-colored-l
+    title: Lightness (%)
+    type: variable-number-slider
+    default: 80
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-dk-heading-colored-c
+    title: Chroma (%)
+    type: variable-number-slider
+    default: 20
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: dark-mode-highlighted-headings
+    title: Highlighted headings
+    type: heading
+    level: 5
+    collapsed: true
+  - id: i-dk-heading-highlighted-padding
+    title: Highlight height in editing view
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 0.25
+    step: 0.01
+    format: em
+  - id: i-dk-heading-highlighted-l
+    title: Lightness (%)
+    type: variable-number-slider
+    default: 40
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-dk-heading-highlighted-c
+    title: Chroma (%)
+    type: variable-number-slider
+    default: 15
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-dk-heading-highlighted-a
+    title: Opacity (%)
+    type: variable-number-slider
+    default: 50
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: dark-mode-gradient-headings
+    title: Gradient headings
+    description: Generates a gradient from H1 to H6 based on different H1 and H6 hues. Affected by accent color if 'Start from accent color' is enabled.
+    type: heading
+    level: 5
+    collapsed: true
+  - id: i-dk-h1-h
+    title: H1 hue
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 360
+    step: 5
+  - id: i-dk-h6-h
+    title: H6 hue
+    type: variable-number-slider
+    default: 300
+    min: 0
+    max: 360
+    step: 5
+  - id: iridium-headings
+    title: Iridium headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: i-headings
+    title: Iridium headings
+    description: Applies the same line height, weight and letter spacing to each heading level. Enable to adjust heading sizes below.
+    type: class-toggle
+    default: true
+  - id: i-h1-size
+    title: H1 size (em)
+    type: variable-number-slider
+    default: 1.5
+    min: 1
+    max: 2
+    step: 0.05
+    format: em
+  - id: i-h6-size
+    title: H6 size (em)
+    type: variable-number-slider
+    default: 1
+    min: 1
+    max: 2
+    step: 0.05
+    format: em
+  - id: heading-1
+    title: Heading 1
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h1-color
+    title: H1 color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: h1-font
+    title: H1 font
+    type: variable-text
+    default: ''
+  - id: h1-line-height
+    title: H1 line height
+    type: variable-text
+    default: ''
+  - id: h1-size
+    title: H1 font size
+    type: variable-text
+    default: ''
+  - id: h1-style
+    title: H1 font style
+    type: variable-select
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Italic
+        value: italic
+  - id: h1-variant
+    title: H1 font variant
+    type: variable-select
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Small caps
+        value: small-caps
+      - label: All small caps
+        value: all-small-caps
+  - id: h1-weight
+    title: H1 font weight
+    type: variable-text
+    default: ''
+  - id: heading-2
+    title: Heading 2
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h2-color
+    title: H2 color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: h2-font
+    title: H2 font
+    type: variable-text
+    default: ''
+  - id: h2-line-height
+    title: H2 line height
+    type: variable-text
+    default: ''
+  - id: h2-size
+    title: H2 font size
+    type: variable-text
+    default: ''
+  - id: h2-style
+    title: H2 font style
+    type: variable-select
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Italic
+        value: italic
+  - id: h2-variant
+    title: H2 font variant
+    type: variable-select
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Small caps
+        value: small-caps
+      - label: All small caps
+        value: all-small-caps
+  - id: h2-weight
+    title: H2 font weight
+    type: variable-text
+    default: ''
+  - id: heading-3
+    title: Heading 3
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h3-color
+    title: H3 color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: h3-font
+    title: H3 font
+    type: variable-text
+    default: ''
+  - id: h3-line-height
+    title: H3 line height
+    type: variable-text
+    default: ''
+  - id: h3-size
+    title: H3 font size
+    type: variable-text
+    default: ''
+  - id: h3-style
+    title: H3 font style
+    type: variable-select
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Italic
+        value: italic
+  - id: h3-variant
+    title: H3 font variant
+    type: variable-select
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Small caps
+        value: small-caps
+      - label: All small caps
+        value: all-small-caps
+  - id: h3-weight
+    title: H3 font weight
+    type: variable-text
+    default: ''
+  - id: heading-4
+    title: Heading 4
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h4-color
+    title: H4 color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: h4-font
+    title: H4 font
+    type: variable-text
+    default: ''
+  - id: h4-line-height
+    title: H4 line height
+    type: variable-text
+    default: ''
+  - id: h4-size
+    title: H4 font size
+    type: variable-text
+    default: ''
+  - id: h4-style
+    title: H4 font style
+    type: variable-select
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Italic
+        value: italic
+  - id: h4-variant
+    title: H4 font variant
+    type: variable-select
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Small caps
+        value: small-caps
+      - label: All small caps
+        value: all-small-caps
+  - id: h4-weight
+    title: H4 font weight
+    type: variable-text
+    default: ''
+  - id: heading-5
+    title: Heading 5
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h5-color
+    title: H5 color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: h5-font
+    title: H5 font
+    type: variable-text
+    default: ''
+  - id: h5-line-height
+    title: H5 line height
+    type: variable-text
+    default: ''
+  - id: h5-size
+    title: H5 font size
+    type: variable-text
+    default: ''
+  - id: h5-style
+    title: H5 font style
+    type: variable-select
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Italic
+        value: italic
+  - id: h5-variant
+    title: H5 font variant
+    type: variable-select
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Small caps
+        value: small-caps
+      - label: All small caps
+        value: all-small-caps
+  - id: h5-weight
+    title: H5 font weight
+    type: variable-text
+    default: ''
+  - id: heading-6
+    title: Heading 6
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h6-color
+    title: H6 color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: h6-font
+    title: H6 font
+    type: variable-text
+    default: ''
+  - id: h6-line-height
+    title: H6 line height
+    type: variable-text
+    default: ''
+  - id: h6-size
+    title: H6 font size
+    type: variable-text
+    default: ''
+  - id: h6-style
+    title: H6 font style
+    type: variable-select
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Italic
+        value: italic
+  - id: h6-variant
+    title: H6 font variant
+    type: variable-select
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Small caps
+        value: small-caps
+      - label: All small caps
+        value: all-small-caps
+  - id: h6-weight
+    title: H6 font weight
+    type: variable-text
+    default: ''
+  - id: horizontal-rules
+    title: Horizontal rules
+    type: heading
+    level: 2
+    collapsed: true
+  - id: hr-thickness
+    title: Horizontal rule thickness (px)
+    type: variable-number-slider
+    default: 2
+    min: 1
+    max: 5
+    step: 1
+    format: px
+  - id: i-hr-style
+    title: Horizontal rule style
+    type: variable-select
+    default: solid
+    options:
+      - label: Solid
+        value: solid
+      - label: Dashed
+        value: dashed
+      - label: Dotted
+        value: dotted
+  - id: images
+    title: Images
+    type: heading
+    level: 2
+    collapsed: true
+  - id: i-image-rounded-corners
+    title: Rounded corners
+    type: class-toggle
+  - id: i-image-border-width
+    title: Image border width (px)
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 12
+    step: 1
+    format: px
+  - id: i-image-border-style
+    title: Image border style
+    type: variable-select
+    default: solid
+    options:
+      - label: Solid
+        value: solid
+      - label: Dashed
+        value: dashed
+      - label: Dotted
+        value: dotted
+  - id: i-image-border-color
+    title: Image border color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: i-image-padding
+    title: Image padding (px)
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 12
+    step: 1
+    format: px
+  - id: i-center-images
+    title: Center images
+    type: class-toggle
+  - id: inline-title
+    title: Inline title
+    type: heading
+    level: 2
+    collapsed: true
+  - id: i-inline-title-centered
+    title: Centered inline title
+    type: class-toggle
+  - id: accent-colored-inline-title
+    title: Accent colored inline title
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Colored inline title
+        value: i-colored-inline-title
+      - label: Highlighted inline title
+        value: i-highlighted-inline-title
+  - id: inline-title-color
+    title: Inline title color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: inline-title-font
+    title: Inline title font
+    type: variable-text
+    default: ''
+  - id: inline-title-line-height
+    title: Inline title line height
+    type: variable-text
+    default: ''
+  - id: inline-title-size
+    title: Inline title font size
+    type: variable-text
+    default: ''
+  - id: inline-title-style
+    title: Inline title font style
+    type: variable-select
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Italic
+        value: italic
+  - id: inline-title-variant
+    title: Inline title font variant
+    type: variable-select
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Small caps
+        value: small-caps
+      - label: All small caps
+        value: all-small-caps
+  - id: inline-title-weight
+    title: Inline title font weight
+    type: variable-text
+    default: ''
+  - id: inline-title-margin-bottom
+    title: Margin below inline title
+    type: variable-text
+    default: 0.5em
+  - id: links
+    title: Links
+    type: heading
+    level: 2
+    collapsed: true
+  - id: i-link-underline-style
+    title: Link underline style
+    type: variable-select
+    default: solid
+    options:
+      - label: Solid
+        value: solid
+      - label: Dashed
+        value: dashed
+      - label: Dotted
+        value: dotted
+  - id: i-link-underline-opacity-multiplier
+    title: Link underline opacity
+    type: variable-number-slider
+    default: 1
+    min: 0
+    max: 4
+    step: 0.25
+  - id: i-link-underline-offset
+    title: Link underline offset
+    type: variable-text
+    default: 0.1em
+  - id: i-hide-link-underline
+    title: Hide link underline (unhovered)
+    type: class-toggle
+  - id: i-hide-link-underline-hover
+    title: Hide link underline (hovered)
+    type: class-toggle
+  - id: lists-and-checklists
+    title: Lists and checklists
+    type: heading
+    level: 2
+    collapsed: true
+  - id: list-indent
+    title: Nested list indent (em)
+    type: variable-number-slider
+    default: 2.25
+    min: 1
+    max: 4
+    step: 0.05
+    format: em
+  - id: list-spacing
+    title: List item spacing (em)
+    type: variable-number-slider
+    default: 0.075
+    min: 0
+    max: 0.75
+    step: 0.005
+    format: em
+  - id: bulleted-lists
+    title: Bulleted lists
+    type: heading
+    level: 3
+    collapsed: true
+  - id: i-bullet-color
+    title: Bullet color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: i-bullet-color-hover
+    title: Hovered bullet color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: i-bullet-color-collapsed
+    title: Collapsed bullet color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: checklists
+    title: Checklists
+    type: heading
+    level: 3
+    collapsed: true
+  - id: checkbox-radius
+    title: Checkbox radius (%)
+    type: variable-number-slider
+    default: 50
+    min: 0
+    max: 50
+    step: 5
+    format: '%'
+  - id: i-strike-completed-tasks
+    title: Strike completed tasks
+    type: class-toggle
+  - id: i-alternate-checkboxes-off
+    title: Disable alternate checkboxes
+    type: class-toggle
+  - id: properties
+    title: Properties
+    type: heading
+    level: 2
+    collapsed: true
+  - id: metadata-label-font-size
+    title: Properties label font size
+    type: variable-text
+    default: ''
+  - id: metadata-label-width
+    title: Properties label width
+    type: variable-text
+    default: 9em
+  - id: metadata-input-font-size
+    title: Properties input font size
+    type: variable-text
+    default: ''
+  - id: i-hide-properties-heading
+    title: Hide 'Properties' heading
+    type: class-toggle
+  - id: i-hide-add-property-button
+    title: Hide 'Add property' button
+    type: class-toggle
+  - id: i-hide-property-icons
+    title: Hide property icons
+    type: class-toggle
+  - id: i-lt-properties-background
+    title: 'Light mode: Use background saturation'
+    description: Also affects pills in Bases.
+    type: class-toggle
+  - id: i-dk-properties-accent
+    title: 'Dark mode: Use accent color saturation'
+    description: Also affects pills in Bases.
+    type: class-toggle
+  - id: i-highlight-active-property
+    title: Highlight active property
+    type: class-toggle
+  - id: spacing
+    title: Spacing
+    type: heading
+    level: 2
+    collapsed: true
+  - id: i-spacing
+    title: Improved spacing
+    description: Makes heading and paragraph spacing more consistent between Live Preview and Reading View. For both views, the extra spacing above headings is removed and the spacing below them is made the same (adjustable below if this is turned on).
+    type: class-toggle
+    default: true
+  - id: i-spacing-below-headings
+    title: Spacing below headings (rem)
+    type: variable-number-slider
+    default: 0.3
+    min: 0
+    max: 1.5
+    step: 0.1
+    format: rem
+  - id: tables
+    title: Tables
+    type: heading
+    level: 2
+    collapsed: true
+  - id: table-header-size
+    title: Table header font size
+    type: variable-text
+    default: ''
+  - id: table-header-weight
+    title: Table header font weight
+    type: variable-number-slider
+    default: 600
+    min: 100
+    max: 900
+    step: 100
+  - id: table-text-size
+    title: Table body font size
+    type: variable-text
+    default: ''
+  - id: table-column-min-width
+    title: Table column minimum width
+    type: variable-text
+    default: 4ch
+  - id: i-highlight-active-row
+    title: Highlight active row
+    type: class-toggle
+  - id: i-striped-rows
+    title: Striped rows
+    type: class-toggle
+  - id: i-striped-columns
+    title: Striped columns
+    type: class-toggle
+  - id: i-center-table-header-text
+    title: Center table header text
+    type: class-toggle
+  - id: i-center-table-body-text
+    title: Center table body text
+    type: class-toggle
+  - id: tags
+    title: Tags
+    type: heading
+    level: 2
+    collapsed: true
+  - id: i-smaller-tags
+    title: Smaller tags
+    type: class-toggle
+  - id: text-colors
+    title: Text colors
+    type: heading
+    level: 2
+    collapsed: true
+  - id: text-normal
+    title: Normal text color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: text-muted
+    title: Muted text color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: text-faint
+    title: Faint text color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: text-selection
+    title: Text selection color
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-light: '#'
+    default-dark: '#'
+  - id: text-highlight-bg-rgb
+    title: Highlight color
+    type: variable-themed-color
+    format: rgb-values
+    default-light: rgb(255, 208, 0)
+    default-dark: rgb(255, 208, 0)
+  - id: bold-color
+    title: Bold text color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: italic-color
+    title: Italic text color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: i-bold-italic-color
+    title: Bold + italic text color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: interface
+    title: Interface
+    type: heading
+    level: 1
+    collapsed: true
+  - id: focus-mode
+    title: Focus mode
+    type: heading
+    level: 2
+    collapsed: true
+  - id: i-focus-mode
+    title: Focus mode
+    description: 'Hides interface elements around the editor. Can be toggled with a custom hotkey which can be set in Hotkeys > Style Settings: Toggle Focus mode.'
+    type: class-toggle
+    addCommand: true
+  - id: i-focus-mode-main
+    title: Hide ribbon, tab bar, and sidebars
+    description: The Settings button is at the bottom left corner of the window and will show when hovered over.
+    type: class-toggle
+    default: true
+  - id: i-focus-mode-tab-titlebar
+    title: Hide tab titlebar
+    type: class-toggle
+    default: true
+  - id: i-focus-mode-status-bar
+    title: Hide status bar
+    type: class-toggle
+    default: true
+  - id: mobile
+    title: Mobile
+    type: heading
+    level: 2
+    collapsed: true
+  - id: i-remove-fade-effects
+    title: Remove fade effects
+    type: class-toggle
+  - id: i-anchored-toolbar
+    title: Anchored toolbar
+    type: class-toggle
+  - id: i-translucent-floating-nav
+    title: Translucent floating navigation buttons
+    type: class-toggle
+  - id: i-translucent-floating-nav-opacity
+    title: Translucent floating navigation opacity
+    type: variable-number-slider
+    default: 92
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: scrollbars
+    title: Scrollbars
+    type: heading
+    level: 2
+    collapsed: true
+  - id: i-scrollbar
+    title: Custom scrollbars
+    type: class-toggle
+  - id: i-scrollbar-phone-off
+    title: Disable custom scrollbars on phones
+    type: class-toggle
+  - id: i-scrollbar-color
+    title: Scrollbar color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: i-scrollbar-color-active
+    title: Active scrollbar color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: i-scrollbar-square
+    title: Square scrollbar style
+    type: class-toggle
+  - id: i-scrollbar-track-size
+    title: Scrollbar track size (px)
+    type: variable-number-slider
+    default: 9
+    min: 1
+    max: 12
+    step: 1
+    format: px
+  - id: i-scrollbar-thumb-size
+    title: Scrollbar thumb size (px)
+    type: variable-number-slider
+    default: 4
+    min: 1
+    max: 12
+    step: 1
+    format: px
+  - id: scrollbar-visibility
+    title: Scrollbar visibility
+    type: class-select
+    default: none
+    options:
+      - label: Show
+        value: i-scrollbar-show
+      - label: Autohide
+        value: none
+      - label: Hide
+        value: i-scrollbar-hide
+  - id: sidebar
+    title: Sidebar
+    type: heading
+    level: 2
+    collapsed: true
+  - id: sidebar-markdown-font-size
+    title: Font size for notes in the sidebar
+    type: variable-text
+    default: ''
+  - id: status-bar
+    title: Status bar
+    type: heading
+    level: 2
+    collapsed: true
+  - id: status-bar-visibility
+    title: Status bar visibility
+    type: class-select
+    default: none
+    options:
+      - label: Show
+        value: none
+      - label: Autohide
+        value: i-autohide-status-bar
+      - label: Hide
+        value: i-hide-status-bar
+  - id: i-centered-status-bar
+    title: Centered status bar
+    type: class-toggle
+  - id: i-full-width-status-bar
+    title: Full width status bar
+    type: class-toggle
+  - id: tab-titlebar
+    title: Tab titlebar
+    type: heading
+    level: 2
+    collapsed: true
+  - id: i-tab-titlebar-autohide
+    title: Autohide file path
+    type: class-toggle
+  - id: file-header-font-size
+    title: Tab titlebar font size
+    type: variable-text
+    default: ''
+  - id: tab-titlebar-buttons-visibility
+    title: Tab titlebar buttons visibilty
+    type: class-select
+    default: none
+    options:
+      - label: Show
+        value: none
+      - label: Autohide
+        value: i-autohide-tab-titlebar-buttons
+      - label: Hide
+        value: i-hide-tab-titlebar-buttons
+  - id: bottom-border
+    title: Bottom border
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Solid
+        value: i-tab-titlebar-border-solid
+      - label: Dashed
+        value: i-tab-titlebar-border-dashed
+  - id: tabs
+    title: Tabs
+    type: heading
+    level: 2
+    collapsed: true
+  - id: tab-font-size
+    title: Tab font size
+    type: variable-text
+    default: ''
+  - id: stacked-tabs
+    title: Stacked tabs
+    type: heading
+    level: 3
+    collapsed: true
+  - id: tab-stacked-pane-width
+    title: Stacked tab pane width
+    type: variable-text
+    default: 700px
+  - id: tab-stacked-font-size
+    title: Stacked tab header font size
+    type: variable-text
+    default: ''
+  - id: vault-profile
+    title: Vault profile
+    type: heading
+    level: 2
+    collapsed: true
+  - id: vault-profile-visibility
+    title: Vault profile visibility
+    type: class-select
+    default: none
+    options:
+      - label: Show
+        value: none
+      - label: Autohide
+        value: i-autohide-vault-profile
+      - label: Hide
+        value: i-hide-vault-profile
+  - id: plugins
+    title: Core & community plugins
+    type: heading
+    level: 1
+    collapsed: true
+  - id: core-plugins
+    title: Core plugins
+    type: heading
+    level: 2
+    collapsed: true
+  - id: bases
+    title: Bases
+    type: heading
+    level: 3
+    collapsed: true
+  - id: i-bases-hide-tab-titlebar
+    title: Hide tab titlebar (desktop only)
+    type: class-toggle
+  - id: i-bases-hide-table-header-icons
+    title: Hide table header icons
+    type: class-toggle
+  - id: bases-table-header-weight
+    title: Table header font weight
+    type: variable-number-slider
+    default: 600
+    min: 100
+    max: 900
+    step: 100
+  - id: i-bases-highlight-active-row
+    title: Highlight active row
+    type: class-toggle
+  - id: bases-table-font-size
+    title: Table body font size
+    type: variable-text
+    default: ''
+  - id: bases-table-row-height
+    title: Table row height
+    type: variable-text
+    default: 30px
+  - id: files
+    title: Files
+    type: heading
+    level: 3
+    collapsed: true
+  - id: files-light-mode
+    title: Light mode
+    type: heading
+    level: 4
+    collapsed: true
+  - id: i-lt-folder-weight
+    title: Folder name weight
+    type: variable-number-slider
+    default: 400
+    min: 100
+    max: 900
+    step: 100
+  - id: light-mode-colorful-folder-backgrounds
+    title: Colorful folder backgrounds
+    type: heading
+    level: 5
+    collapsed: true
+  - id: i-lt-folder-bg
+    title: Colorful folder backgrounds
+    type: class-toggle
+  - id: i-lt-folder-bg-accent
+    title: Start from accent color
+    description: Disable to start from red.
+    type: class-toggle
+    default: true
+  - id: i-lt-folder-borders-off
+    title: Hide borders
+    type: class-toggle
+  - id: i-lt-white-folder-names
+    title: White folder names
+    type: class-toggle
+  - id: light-mode-folder-backgrounds
+    title: Folder backgrounds
+    type: heading
+    level: 6
+    collapsed: true
+  - id: i-lt-folder-bg-l
+    title: Lightness (%)
+    type: variable-number-slider
+    default: 90
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-lt-folder-bg-c
+    title: Chroma (%)
+    type: variable-number-slider
+    default: 20
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-lt-folder-bg-a
+    title: Opacity (%)
+    type: variable-number-slider
+    default: 25
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: light-mode-folder-borders
+    title: Folder borders
+    type: heading
+    level: 6
+    collapsed: true
+  - id: i-lt-folder-border-l
+    title: Lightness (%)
+    type: variable-number-slider
+    default: 35
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-lt-folder-border-c
+    title: Chroma (%)
+    type: variable-number-slider
+    default: 10
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-lt-folder-border-a
+    title: Opacity (%)
+    type: variable-number-slider
+    default: 25
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: light-mode-folder-background-custom-colors
+    title: Custom colors
+    type: heading
+    level: 6
+    collapsed: true
+  - id: i-lt-folder-bg-1
+    title: Folder 1 background color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-lt-folder-border-1
+    title: Folder 1 border color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-lt-folder-bg-2
+    title: Folder 2 background color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-lt-folder-border-2
+    title: Folder 2 border color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-lt-folder-bg-3
+    title: Folder 3 background color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-lt-folder-border-3
+    title: Folder 3 border color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-lt-folder-bg-4
+    title: Folder 4 background color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-lt-folder-border-4
+    title: Folder 4 border color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-lt-folder-bg-5
+    title: Folder 5 background color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-lt-folder-border-5
+    title: Folder 5 border color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-lt-folder-bg-6
+    title: Folder 6 background color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-lt-folder-border-6
+    title: Folder 6 border color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: light-mode-colorful-folder-names
+    title: Colorful folder names
+    type: heading
+    level: 5
+    collapsed: true
+  - id: i-lt-folder-name
+    title: Colorful folder names
+    type: class-toggle
+  - id: i-lt-folder-name-accent
+    title: Start from accent color
+    description: Disable to start from red.
+    type: class-toggle
+    default: true
+  - id: i-lt-folder-name-l
+    title: Lightness (%)
+    type: variable-number-slider
+    default: 50
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-lt-folder-name-c
+    title: Chroma (%)
+    type: variable-number-slider
+    default: 50
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: light-mode-folder-name-custom-colors
+    title: Custom colors
+    type: heading
+    level: 6
+    collapsed: true
+  - id: i-lt-folder-name-1
+    title: Folder 1 name color
+    type: variable-color
+    format: hex
+    default: '#'
+  - id: i-lt-folder-name-2
+    title: Folder 2 name color
+    type: variable-color
+    format: hex
+    default: '#'
+  - id: i-lt-folder-name-3
+    title: Folder 3 name color
+    type: variable-color
+    format: hex
+    default: '#'
+  - id: i-lt-folder-name-4
+    title: Folder 4 name color
+    type: variable-color
+    format: hex
+    default: '#'
+  - id: i-lt-folder-name-5
+    title: Folder 5 name color
+    type: variable-color
+    format: hex
+    default: '#'
+  - id: i-lt-folder-name-6
+    title: Folder 6 name color
+    type: variable-color
+    format: hex
+    default: '#'
+  - id: files-dark-mode
+    title: Dark mode
+    type: heading
+    level: 4
+    collapsed: true
+  - id: i-dk-folder-weight
+    title: Folder name weight
+    type: variable-number-slider
+    default: 400
+    min: 100
+    max: 900
+    step: 100
+  - id: dark-mode-colorful-folder-backgrounds
+    title: Colorful folder backgrounds
+    type: heading
+    level: 5
+    collapsed: true
+  - id: i-dk-folder-bg
+    title: Colorful folder backgrounds
+    type: class-toggle
+  - id: i-dk-folder-bg-accent
+    title: Start from accent color
+    description: Disable to start from red.
+    type: class-toggle
+    default: true
+  - id: i-dk-folder-borders-off
+    title: Hide borders
+    type: class-toggle
+  - id: i-dk-black-folder-names
+    title: Black folder names
+    type: class-toggle
+  - id: dark-mode-folder-backgrounds
+    title: Folder backgrounds
+    type: heading
+    level: 6
+    collapsed: true
+  - id: i-dk-folder-bg-l
+    title: Lightness (%)
+    type: variable-number-slider
+    default: 70
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-dk-folder-bg-c
+    title: Chroma (%)
+    type: variable-number-slider
+    default: 25
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-dk-folder-bg-a
+    title: Opacity (%)
+    type: variable-number-slider
+    default: 25
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: dark-mode-folder-borders
+    title: Folder borders
+    type: heading
+    level: 6
+    collapsed: true
+  - id: i-dk-folder-border-l
+    title: Lightness (%)
+    type: variable-number-slider
+    default: 90
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-dk-folder-border-c
+    title: Chroma (%)
+    type: variable-number-slider
+    default: 25
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-dk-folder-border-a
+    title: Opacity (%)
+    type: variable-number-slider
+    default: 25
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: dark-mode-folder-background-custom-colors
+    title: Custom colors
+    type: heading
+    level: 6
+    collapsed: true
+  - id: i-dk-folder-bg-1
+    title: Folder 1 background color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-dk-folder-border-1
+    title: Folder 1 border color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-dk-folder-bg-2
+    title: Folder 2 background color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-dk-folder-border-2
+    title: Folder 2 border color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-dk-folder-bg-3
+    title: Folder 3 background color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-dk-folder-border-3
+    title: Folder 3 border color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-dk-folder-bg-4
+    title: Folder 4 background color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-dk-folder-border-4
+    title: Folder 4 border color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-dk-folder-bg-5
+    title: Folder 5 background color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-dk-folder-border-5
+    title: Folder 5 border color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-dk-folder-bg-6
+    title: Folder 6 background color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: i-dk-folder-border-6
+    title: Folder 6 border color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: '#'
+  - id: dark-mode-colorful-folder-names
+    title: Colorful folder names
+    type: heading
+    level: 5
+    collapsed: true
+  - id: i-dk-folder-name
+    title: Colorful folder names
+    type: class-toggle
+  - id: i-dk-folder-name-accent
+    title: Start from accent color
+    description: Disable to start from red.
+    type: class-toggle
+    default: true
+  - id: i-dk-folder-name-l
+    title: Lightness (%)
+    type: variable-number-slider
+    default: 80
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: i-dk-folder-name-c
+    title: Chroma (%)
+    type: variable-number-slider
+    default: 20
+    min: 0
+    max: 100
+    step: 1
+    format: '%'
+  - id: dark-mode-folder-name-custom-colors
+    title: Custom colors
+    type: heading
+    level: 6
+    collapsed: true
+  - id: i-dk-folder-name-1
+    title: Folder 1 name color
+    type: variable-color
+    format: hex
+    default: '#'
+  - id: i-dk-folder-name-2
+    title: Folder 2 name color
+    type: variable-color
+    format: hex
+    default: '#'
+  - id: i-dk-folder-name-3
+    title: Folder 3 name color
+    type: variable-color
+    format: hex
+    default: '#'
+  - id: i-dk-folder-name-4
+    title: Folder 4 name color
+    type: variable-color
+    format: hex
+    default: '#'
+  - id: i-dk-folder-name-5
+    title: Folder 5 name color
+    type: variable-color
+    format: hex
+    default: '#'
+  - id: i-dk-folder-name-6
+    title: Folder 6 name color
+    type: variable-color
+    format: hex
+    default: '#'
+  - id: graph-view
+    title: Graph view
+    type: heading
+    level: 3
+    collapsed: true
+  - id: graph-line
+    title: Line color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: graph-node
+    title: Node color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: graph-node-unresolved
+    title: Unresolved node color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: graph-node-tag
+    title: Tag node color
+    type: variable-themed-color
+    description: 'Default: Green'
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: graph-node-attachment
+    title: Attachment node color
+    type: variable-themed-color
+    description: 'Default: Yellow'
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - id: community-plugins
+    title: Community plugins
+    type: heading
+    level: 2
+    collapsed: true
+  - id: i-calendar-off
+    title: 'Calendar: Disable styling'
+    type: class-toggle
+  - id: i-calendar-remove-padding
+    title: 'Calendar: Remove side padding'
+    type: class-toggle
+  - id: i-dataview-off
+    title: 'Dataview: Disable styling'
+    type: class-toggle
+  - id: i-notebook-navigator-off
+    title: 'Notebook Navigator: Disable styling'
+    type: class-toggle
+  - id: i-notebook-navigator-hide-tab-titlebar
+    title: 'Notebook Navigator: Hide tab titlebar when NN is open in the editor'
+    type: class-toggle
+    default: true
+  - id: i-style-settings-off
+    title: 'Style Settings: Disable styling'
+    type: class-toggle
+  - id: i-vertical-tabs-off
+    title: 'Vertical Tabs: Disable styling'
+    type: class-toggle

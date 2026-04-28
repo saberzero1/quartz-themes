@@ -48,258 +48,259 @@ export const theme: ThemeData = {
         unicodeRange: null,
       },
     ],
+    styleSettingsId: "colorthemes",
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --background: hsl(265, 60%, 11%) !important;
-  --background-modifier-border: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --background-modifier-border-focus: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
-  --background-modifier-border-hover: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
-  --background-modifier-form-field: color-mix(in srgb, hsl(265, 60%, 11%) 80%, #000) !important;
-  --background-modifier-form-field-hover: color-mix(in srgb, hsl(265, 60%, 11%) 80%, #000) !important;
-  --background-modifier-hover: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
-  --background-primary: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --background-primary-alt: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
-  --background-secondary: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
-  --background-secondary-alt: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --bases-cards-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --bases-cards-cover-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
-  --bases-cards-shadow: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
-  --bases-embed-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --bases-group-heading-property-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --bases-table-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --bases-table-cell-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --bases-table-cell-background-disabled: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
-  --bases-table-group-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
-  --bases-table-header-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --bases-table-header-background-hover: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
-  --bases-table-header-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --bases-table-summary-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --bases-table-summary-background-hover: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
-  --black: #000 !important;
-  --blue: #437cf3 !important;
-  --blue-violet: #6f51f4 !important;
-  --blur-background: color-mix(in srgb, color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) 65%, transparent) linear-gradient(color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)), color-mix(in srgb, color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) 65%, transparent)) !important;
-  --bodyFont: "Computer Modern", "Inter", Sans-Serif !important;
-  --canvas-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --canvas-card-label-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --canvas-dot-pattern: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --caret-color: #faf4ed !important;
-  --checkbox-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --checkbox-border-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --checkbox-color: hsl(255, 89.76%, 75.9%) !important;
-  --checkbox-marker-color: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --checklist-done-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --code-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
-  --code-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --code-bracket-background: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
-  --code-comment: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --code-normal: #faf4ed !important;
-  --code-punctuation: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --codeFont: "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --collapse-icon-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --color-base-00: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --color-base-05: color-mix(in srgb, hsl(265, 60%, 11%) 40%, #000) !important;
-  --color-base-10: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
-  --color-base-100: color-mix(in srgb, hsl(265, 60%, 11%) 0%, hsl(265, 100%, 80%)) !important;
-  --color-base-20: color-mix(in srgb, hsl(265, 60%, 11%) 80%, #000) !important;
-  --color-base-25: color-mix(in srgb, hsl(265, 60%, 11%) 80%, #000) !important;
-  --color-base-30: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --color-base-35: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
-  --color-base-40: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
-  --color-base-50: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --color-base-60: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --color-base-70: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --cool-cyan: #43cfea !important;
-  --cool-gray: #515768 !important;
-  --cyan: #51e1e9 !important;
-  --dark: #faf4ed !important;
-  --darkgray: #faf4ed !important;
-  --divider-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --dropdown-background: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --dropdown-background-hover: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
-  --embed-block-shadow-hover: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)), inset 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --file-header-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --file-header-background-focused: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --file-header-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --flair-background: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --flair-color: #faf4ed !important;
-  --font-callout-theme: "Computer Modern", "Sans-Serif" !important;
-  --font-interface: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-interface-theme: "Jetbrains Mono", "Inter", Sans-Serif !important;
-  --font-mermaid: "Computer Modern", "Inter", Sans-Serif !important;
-  --font-monospace: "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --font-monospace-theme: "Jetbrains Mono", "Source Code Pro", monospace !important;
-  --font-text: "Computer Modern", "Inter", Sans-Serif !important;
-  --footnote-divider-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --footnote-id-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --footnote-id-color-no-occurrences: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --footnote-input-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
-  --foreground: hsl(265, 100%, 80%) !important;
-  --graph-line: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
-  --graph-node: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --graph-node-unresolved: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --graph-text: #faf4ed !important;
-  --gray: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --h1-color: hsl(265, 100%, 65%) !important;
-  --h1-size: 24px !important;
-  --h2-color: hsl(265, 100%, 75%) !important;
-  --h2-size: 22px !important;
-  --h3-color: hsl(265, 100%, 80%) !important;
-  --h3-size: 20px !important;
-  --h4-color: hsl(265, 100%, 80%) !important;
-  --h4-size: 18px !important;
-  --h5-color: hsl(265, 100%, 90%) !important;
-  --h5-size: 17px !important;
-  --h6-color: hsl(265, 100%, 95%) !important;
-  --h6-size: 16px !important;
-  --header-title-color: hsl(265, 100%, 65%) !important;
-  --headerFont: "Computer Modern", "Inter", Sans-Serif !important;
-  --heading-formatting: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --highlight: color-mix(in srgb, hsl(265, 100%, 65%) 25%, transparent) !important;
-  --hot-red: #e3365e !important;
-  --hr-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --hue-bg: 265 !important;
-  --hue-fg: 265 !important;
-  --icon-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --icon-color-focused: #faf4ed !important;
-  --icon-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --indentation-guide-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --indentation-guide-color-active: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
-  --inline-title-color: hsl(265, 100%, 65%) !important;
-  --inline-title-size: 24px !important;
-  --input-date-separator: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --input-placeholder-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --interactive-hover: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
-  --interactive-normal: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --light: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --light-blue: #54b6f8 !important;
-  --lightgray: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
-  --list-marker-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --list-marker-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --lum: 11% !important;
-  --magenta: #e54f9b !important;
-  --menu-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
-  --menu-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
-  --metadata-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --metadata-divider-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --metadata-input-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
-  --metadata-input-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: #faf4ed !important;
-  --metadata-label-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
-  --metadata-label-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --metadata-label-text-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --metadata-property-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
-  --mint: #52eea3 !important;
-  --modal-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --modal-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
-  --nav-collapse-icon-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --nav-collapse-icon-color-collapsed: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --nav-heading-color: #faf4ed !important;
-  --nav-heading-color-collapsed: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --nav-heading-color-collapsed-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --nav-heading-color-hover: #faf4ed !important;
-  --nav-indentation-guide-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --nav-item-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
-  --nav-item-background-hover: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
-  --nav-item-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --nav-item-color-active: #faf4ed !important;
-  --nav-item-color-hover: #faf4ed !important;
-  --nav-item-color-selected: #faf4ed !important;
-  --nav-tag-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --nav-tag-color-active: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --nav-tag-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --pdf-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --pdf-page-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --pdf-shadow: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --pdf-sidebar-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --pill-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --pill-border-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
-  --pill-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --pill-color-hover: #faf4ed !important;
-  --pill-color-remove: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --prompt-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --prompt-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
-  --purple: #c952ed !important;
-  --raised-background: color-mix(in srgb, color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) 65%, transparent) linear-gradient(color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)), color-mix(in srgb, color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) 65%, transparent)) !important;
-  --ribbon-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
-  --ribbon-background-collapsed: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --sat-bg: 60% !important;
-  --sat-fg: 100% !important;
-  --scrollbar-active-thumb-bg: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
-  --scrollbar-thumb-bg: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --search-clear-button-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --search-icon-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --search-result-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --setting-group-heading-color: #faf4ed !important;
-  --setting-items-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
-  --setting-items-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --shiki-active-tab-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --shiki-code-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
-  --shiki-code-comment: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --shiki-code-normal: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --shiki-code-punctuation: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --shiki-gutter-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --shiki-gutter-text-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --shiki-gutter-text-color-highlight: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --shiki-highlight-neutral: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --shiki-terminal-dots-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --slider-thumb-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
-  --slider-track-background: hsl(255, 89.76%, 75.9%) !important;
-  --status-bar-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
-  --status-bar-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --status-bar-text-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --suggestion-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --tab-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
-  --tab-container-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
-  --tab-curve: 10px !important;
-  --tab-divider-color: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
-  --tab-font-size: 10pt !important;
-  --tab-max-width: 300px !important;
-  --tab-outline-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --tab-switcher-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000), transparent) !important;
-  --tab-text-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --tab-text-color-active: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --tab-text-color-focused: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --tab-text-color-focused-active: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --tab-text-color-focused-active-current: #faf4ed !important;
-  --tab-width: 180px !important;
-  --table-add-button-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --table-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --table-drag-handle-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --table-header-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --table-header-color: #faf4ed !important;
-  --text-faint: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
-  --text-highlight-bg: color-mix(in srgb, hsl(265, 100%, 65%) 25%, transparent) !important;
-  --text-highlight-bg-active: color-mix(in srgb, hsl(265, 100%, 65%) 25%, transparent) !important;
-  --text-muted: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --text-normal: #faf4ed !important;
-  --textHighlight: color-mix(in srgb, hsl(265, 100%, 65%) 25%, transparent) !important;
-  --title-color: hsl(265, 100%, 65%) !important;
-  --titleFont: "Computer Modern", "Inter", Sans-Serif !important;
-  --titlebar-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
-  --titlebar-background-focused: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
-  --titlebar-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
-  --titlebar-text-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
-  --titlebar-text-color-focused: #faf4ed !important;
-  --unified-heading-space: 10px !important;
-  --vault-profile-color: #faf4ed !important;
-  --vault-profile-color-hover: #faf4ed !important;
-  --violet: #9446f8 !important;
-  --white: #fff !important;
-  --quartz-icon-color: currentColor !important;
+  --background: hsl(265, 60%, 11%);
+  --background-modifier-border: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --background-modifier-border-focus: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%));
+  --background-modifier-border-hover: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%));
+  --background-modifier-form-field: color-mix(in srgb, hsl(265, 60%, 11%) 80%, #000);
+  --background-modifier-form-field-hover: color-mix(in srgb, hsl(265, 60%, 11%) 80%, #000);
+  --background-modifier-hover: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%));
+  --background-primary: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --background-primary-alt: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000);
+  --background-secondary: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000);
+  --background-secondary-alt: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --bases-cards-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --bases-cards-cover-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000);
+  --bases-cards-shadow: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --bases-cards-shadow-hover: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%));
+  --bases-embed-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --bases-group-heading-property-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --bases-table-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --bases-table-cell-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --bases-table-cell-background-disabled: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000);
+  --bases-table-cell-shadow-active: 0 0 0 2px color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%));
+  --bases-table-group-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000);
+  --bases-table-header-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --bases-table-header-background-hover: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%));
+  --bases-table-header-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --bases-table-summary-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --bases-table-summary-background-hover: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%));
+  --black: #000;
+  --blue: #437cf3;
+  --blue-violet: #6f51f4;
+  --blur-background: color-mix(in srgb, color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) 65%, transparent) linear-gradient(color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)), color-mix(in srgb, color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) 65%, transparent));
+  --bodyFont: var(--font-text, "Computer Modern", "Inter", Sans-Serif);
+  --canvas-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --canvas-card-label-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --canvas-dot-pattern: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --caret-color: #faf4ed;
+  --checkbox-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --checkbox-border-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --checkbox-color: hsl(255, 89.76%, 75.9%);
+  --checkbox-marker-color: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --checklist-done-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --code-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000);
+  --code-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --code-bracket-background: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%));
+  --code-comment: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --code-normal: #faf4ed;
+  --code-punctuation: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --codeFont: var(--font-monospace, "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --collapse-icon-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --color-base-00: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --color-base-05: color-mix(in srgb, hsl(265, 60%, 11%) 40%, #000);
+  --color-base-10: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000);
+  --color-base-100: color-mix(in srgb, hsl(265, 60%, 11%) 0%, hsl(265, 100%, 80%));
+  --color-base-20: color-mix(in srgb, hsl(265, 60%, 11%) 80%, #000);
+  --color-base-25: color-mix(in srgb, hsl(265, 60%, 11%) 80%, #000);
+  --color-base-30: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --color-base-35: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%));
+  --color-base-40: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%));
+  --color-base-50: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --color-base-60: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --color-base-70: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --cool-cyan: #43cfea;
+  --cool-gray: #515768;
+  --cyan: #51e1e9;
+  --dark: var(--text-normal, #faf4ed);
+  --darkgray: var(--text-normal, #faf4ed);
+  --divider-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --dropdown-background: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --dropdown-background-hover: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%));
+  --embed-block-shadow-hover: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)), inset 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --file-header-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --file-header-background-focused: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --file-header-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --flair-background: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --flair-color: #faf4ed;
+  --font-callout-theme: "Computer Modern", "Sans-Serif";
+  --font-interface: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-interface-theme: "Jetbrains Mono", "Inter", Sans-Serif;
+  --font-mermaid: "Computer Modern", "Inter", Sans-Serif;
+  --font-monospace: "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-theme: "Jetbrains Mono", "Source Code Pro", monospace;
+  --font-text: "Computer Modern", "Inter", Sans-Serif;
+  --footnote-divider-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --footnote-id-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --footnote-id-color-no-occurrences: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --footnote-input-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%));
+  --foreground: hsl(265, 100%, 80%);
+  --graph-line: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%));
+  --graph-node: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --graph-node-unresolved: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --graph-text: #faf4ed;
+  --gray: var(--text-muted, color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)));
+  --h1-color: hsl(265, 100%, 65%);
+  --h1-size: 24px;
+  --h2-color: hsl(265, 100%, 75%);
+  --h2-size: 22px;
+  --h3-color: hsl(265, 100%, 80%);
+  --h3-size: 20px;
+  --h4-color: hsl(265, 100%, 80%);
+  --h4-size: 18px;
+  --h5-color: hsl(265, 100%, 90%);
+  --h5-size: 17px;
+  --h6-color: hsl(265, 100%, 95%);
+  --h6-size: 16px;
+  --header-title-color: hsl(265, 100%, 65%);
+  --headerFont: var(--font-text, "Computer Modern", "Inter", Sans-Serif);
+  --heading-formatting: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --highlight: var(--text-highlight-bg, color-mix(in srgb, hsl(265, 100%, 65%) 25%, transparent));
+  --hot-red: #e3365e;
+  --hr-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --hue-bg: 265;
+  --hue-fg: 265;
+  --icon-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --icon-color-focused: #faf4ed;
+  --icon-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --indentation-guide-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --indentation-guide-color-active: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%));
+  --inline-title-color: hsl(265, 100%, 65%);
+  --inline-title-size: 24px;
+  --input-date-separator: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --input-placeholder-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --interactive-hover: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%));
+  --interactive-normal: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --light: var(--background-primary, color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000));
+  --light-blue: #54b6f8;
+  --lightgray: var(--background-secondary, color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000));
+  --list-marker-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --list-marker-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --lum: 11%;
+  --magenta: #e54f9b;
+  --menu-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000);
+  --menu-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%));
+  --metadata-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --metadata-divider-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --metadata-input-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%));
+  --metadata-input-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-input-text-color: #faf4ed;
+  --metadata-label-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%));
+  --metadata-label-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-label-text-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --metadata-label-text-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --metadata-property-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%));
+  --metadata-property-box-shadow-focus: 0 0 0 2px color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%));
+  --metadata-property-box-shadow-hover: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%));
+  --mint: #52eea3;
+  --modal-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --modal-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%));
+  --nav-collapse-icon-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --nav-collapse-icon-color-collapsed: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --nav-heading-color: #faf4ed;
+  --nav-heading-color-collapsed: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --nav-heading-color-collapsed-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --nav-heading-color-hover: #faf4ed;
+  --nav-indentation-guide-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --nav-item-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%));
+  --nav-item-background-hover: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%));
+  --nav-item-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --nav-item-color-active: #faf4ed;
+  --nav-item-color-hover: #faf4ed;
+  --nav-item-color-selected: #faf4ed;
+  --nav-tag-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --nav-tag-color-active: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --nav-tag-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --pdf-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --pdf-page-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --pdf-shadow: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --pdf-sidebar-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --pdf-thumbnail-shadow: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --pill-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --pill-border-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%));
+  --pill-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --pill-color-hover: #faf4ed;
+  --pill-color-remove: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --prompt-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --prompt-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%));
+  --purple: #c952ed;
+  --raised-background: color-mix(in srgb, color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) 65%, transparent) linear-gradient(color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)), color-mix(in srgb, color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) 65%, transparent));
+  --ribbon-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000);
+  --ribbon-background-collapsed: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --sat-bg: 60%;
+  --sat-fg: 100%;
+  --scrollbar-active-thumb-bg: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%));
+  --scrollbar-thumb-bg: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --search-clear-button-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --search-icon-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --search-result-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --setting-group-heading-color: #faf4ed;
+  --setting-items-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000);
+  --setting-items-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --shiki-active-tab-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --shiki-code-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000);
+  --shiki-code-comment: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --shiki-code-normal: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --shiki-code-punctuation: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --shiki-gutter-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --shiki-gutter-text-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --shiki-gutter-text-color-highlight: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --shiki-highlight-neutral: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --shiki-terminal-dots-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --slider-thumb-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%));
+  --slider-track-background: hsl(255, 89.76%, 75.9%);
+  --status-bar-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000);
+  --status-bar-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --status-bar-text-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --suggestion-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --tab-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000);
+  --tab-container-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000);
+  --tab-curve: 10px;
+  --tab-divider-color: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%));
+  --tab-font-size: 10pt;
+  --tab-max-width: 300px;
+  --tab-outline-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --tab-switcher-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000);
+  --tab-switcher-menubar-background: linear-gradient(to top, color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000), transparent);
+  --tab-text-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --tab-text-color-active: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --tab-text-color-focused: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --tab-text-color-focused-active: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --tab-text-color-focused-active-current: #faf4ed;
+  --tab-width: 180px;
+  --table-add-button-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --table-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --table-drag-handle-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --table-header-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --table-header-color: #faf4ed;
+  --text-faint: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%));
+  --text-highlight-bg: color-mix(in srgb, hsl(265, 100%, 65%) 25%, transparent);
+  --text-highlight-bg-active: color-mix(in srgb, hsl(265, 100%, 65%) 25%, transparent);
+  --text-muted: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --text-normal: #faf4ed;
+  --textHighlight: var(--text-highlight-bg, color-mix(in srgb, hsl(265, 100%, 65%) 25%, transparent));
+  --title-color: hsl(265, 100%, 65%);
+  --titleFont: var(--font-text, "Computer Modern", "Inter", Sans-Serif);
+  --titlebar-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000);
+  --titlebar-background-focused: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000);
+  --titlebar-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%));
+  --titlebar-text-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%));
+  --titlebar-text-color-focused: #faf4ed;
+  --unified-heading-space: 10px;
+  --vault-profile-color: #faf4ed;
+  --vault-profile-color-hover: #faf4ed;
+  --violet: #9446f8;
+  --white: #fff;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -2146,46 +2147,46 @@ html[saved-theme="dark"] body sup {
   },
   light: {
     base: `:root:root {
-  --bodyFont: "Computer Modern", "Inter", Sans-Serif !important;
-  --codeFont: "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --file-header-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-callout-theme: "Computer Modern", "Sans-Serif" !important;
-  --font-interface: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-interface-theme: "Jetbrains Mono", "Inter", Sans-Serif !important;
-  --font-mermaid: "Computer Modern", "Inter", Sans-Serif !important;
-  --font-monospace: "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --font-monospace-theme: "Jetbrains Mono", "Source Code Pro", monospace !important;
-  --font-text: "Computer Modern", "Inter", Sans-Serif !important;
-  --h1-size: 24px !important;
-  --h2-size: 22px !important;
-  --h3-size: 20px !important;
-  --h4-size: 18px !important;
-  --h5-size: 17px !important;
-  --h6-size: 16px !important;
-  --headerFont: "Computer Modern", "Inter", Sans-Serif !important;
-  --hue-bg: 265 !important;
-  --hue-fg: 265 !important;
-  --inline-title-size: 24px !important;
-  --lum: 11% !important;
-  --lum-bg: 95% !important;
-  --lum-fg: 50% !important;
-  --metadata-input-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --sat-bg: 60% !important;
-  --sat-fg: 100% !important;
-  --tab-curve: 10px !important;
-  --tab-font-size: 10pt !important;
-  --tab-max-width: 300px !important;
-  --tab-width: 180px !important;
-  --title-color: black !important;
-  --titleFont: "Computer Modern", "Inter", Sans-Serif !important;
-  --unified-heading-space: 10px !important;
-  --quartz-icon-color: currentColor !important;
+  --bodyFont: var(--font-text, "Computer Modern", "Inter", Sans-Serif);
+  --codeFont: var(--font-monospace, "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --file-header-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-callout-theme: "Computer Modern", "Sans-Serif";
+  --font-interface: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-interface-theme: "Jetbrains Mono", "Inter", Sans-Serif;
+  --font-mermaid: "Computer Modern", "Inter", Sans-Serif;
+  --font-monospace: "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-theme: "Jetbrains Mono", "Source Code Pro", monospace;
+  --font-text: "Computer Modern", "Inter", Sans-Serif;
+  --h1-size: 24px;
+  --h2-size: 22px;
+  --h3-size: 20px;
+  --h4-size: 18px;
+  --h5-size: 17px;
+  --h6-size: 16px;
+  --headerFont: var(--font-text, "Computer Modern", "Inter", Sans-Serif);
+  --hue-bg: 265;
+  --hue-fg: 265;
+  --inline-title-size: 24px;
+  --lum: 11%;
+  --lum-bg: 95%;
+  --lum-fg: 50%;
+  --metadata-input-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-label-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --sat-bg: 60%;
+  --sat-fg: 100%;
+  --tab-curve: 10px;
+  --tab-font-size: 10pt;
+  --tab-max-width: 300px;
+  --tab-width: 180px;
+  --title-color: black;
+  --titleFont: var(--font-text, "Computer Modern", "Inter", Sans-Serif);
+  --unified-heading-space: 10px;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -3189,6 +3190,127 @@ html[saved-theme="light"] body input[type=text] {
 
 html[saved-theme="light"] body kbd {
   font-family: "??", "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
+}`,
+  },
+  classSettings: {
+    "red-passion": `.red-passion {
+--hue-bg: 340;
+--hue-fg: 320;
+--sat-bg: 60%;
+--sat-fg: 100%;
+&.theme-light {
+    --lum-fg: 50%;
+    --lum-bg: 95%;
+  };
+}`,
+    "orange-sunset": `.orange-sunset {
+--hue-bg: 30;
+--hue-fg: 30;
+--sat-bg: 60%;
+--sat-fg: 100%;
+&.theme-light {
+    --lum-fg: 50%;
+    --lum-bg: 95%;
+  };
+}`,
+    "yellow-glow": `.yellow-glow {
+--hue-bg: 60;
+--hue-fg: 60;
+--sat-bg: 60%;
+--sat-fg: 100%;
+&.theme-light {
+    --lum-fg: 50%;
+    --lum-bg: 95%;
+  };
+}`,
+    "green-serenity": `.green-serenity {
+--hue-bg: 120;
+--hue-fg: 120;
+--sat-bg: 60%;
+--sat-fg: 100%;
+&.theme-light {
+    --lum-fg: 50%;
+    --lum-bg: 95%;
+  };
+}`,
+    "indigo-harmony": `.indigo-harmony {
+--hue-bg: 238;
+--hue-fg: 255;
+--sat-bg: 60%;
+--sat-fg: 100%;
+&.theme-light {
+    --lum-fg: 50%;
+    --lum-bg: 95%;
+  };
+}`,
+    "blue-ocean": `.blue-ocean {
+--hue-bg: 228;
+--hue-fg: 220;
+--sat-bg: 60%;
+--sat-fg: 100%;
+&.theme-light {
+    --lum-fg: 50%;
+    --lum-bg: 95%;
+  };
+}`,
+    "purple-mystic": `.purple-mystic {
+--hue-bg: 265;
+--hue-fg: 265;
+--sat-bg: 60%;
+--sat-fg: 100%;
+&.theme-light {
+    --lum-fg: 50%;
+    --lum-bg: 95%;
+  };
+}`,
+    "white-dawn": `.white-dawn {
+--hue-bg: 228;
+--hue-fg: 220;
+--sat-bg: 20%;
+--sat-fg: 20%;
+&.theme-light {
+    --sat-bg: 30%;
+    --sat-fg: 0%;
+    --lum-bg: 90%;
+    --lum-fg: 0%;
+    &.intensity-abyss {
+      --lum-bg: 100%;
+    }
+    &.intensity-dawn {
+      --lum-bg: 80%;
+    }
+  };
+}`,
+    "black-night": `.black-night {
+--hue-bg: 0;
+--hue-fg: 0;
+--sat-bg: 0%;
+--sat-fg: 0%;
+&.theme-light {
+    --lum-fg: 20%;
+    --lum-bg: 80%;
+  };
+}`,
+    "intensity-abyss": `&.intensity-abyss {
+--lum-bg: 100%;
+}
+
+.intensity-abyss {
+--lum: 0%;
+--background-modifier-border: var(--color-base-40) !important;
+}`,
+    "intensity-twilight": `.intensity-twilight {
+--lum: 11%;
+}`,
+    "intensity-dawn": `&.intensity-dawn {
+--lum-bg: 80%;
+}
+
+.intensity-dawn {
+--lum: 22%;
+--background-secondary: var(--color-base-00) !important;
+--titlebar-background-focused: var(--color-base-05) !important;
+--background-modifier-form-field: var(--color-base-05) !important;
 }`,
   },
 };

@@ -16,160 +16,161 @@ export const theme: ThemeData = {
         unicodeRange: null,
       },
     ],
+    styleSettingsId: ["ROS98-Support", "CG-Support"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-h: 222 !important;
-  --accent-l: 19% !important;
-  --accent-s: 94% !important;
-  --background-modifier-active-hover: hsla(222, 94%, 19%, 0.1) !important;
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
-  --background-modifier-cover: rgba(43, 41, 41, 0.4) !important;
-  --background-modifier-hover: transparent !important;
-  --background-primary: #000000 !important;
-  --background-primary-alt: #050505 !important;
-  --background-secondary: rgb(64, 64, 64) !important;
-  --background-secondary-alt: rgb(64, 64, 64) !important;
-  --bases-cards-background: #000000 !important;
-  --bases-cards-cover-background: #050505 !important;
-  --bases-table-cell-background-active: #000000 !important;
-  --bases-table-cell-background-disabled: #050505 !important;
-  --bases-table-cell-background-selected: hsla(222, 94%, 19%, 0.1) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(222, 94%, 19%) !important;
-  --bases-table-group-background: #050505 !important;
-  --bases-table-header-background: #000000 !important;
-  --bases-table-header-background-hover: transparent !important;
-  --bases-table-summary-background: #000000 !important;
-  --bases-table-summary-background-hover: transparent !important;
-  --bg-button-light: rgb(128, 128, 128) !important;
-  --bg-button-shadow: black !important;
-  --blockquote-border-color: hsl(222, 94%, 19%) !important;
-  --bodyFont: Win95Font, Inter, Rubik, Segoe UI' !important;
+  --accent-h: 222;
+  --accent-l: 19%;
+  --accent-s: 94%;
+  --background-modifier-active-hover: hsla(222, 94%, 19%, 0.1);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(43, 41, 41, 0.4);
+  --background-modifier-hover: transparent;
+  --background-primary: #000000;
+  --background-primary-alt: #050505;
+  --background-secondary: rgb(64, 64, 64);
+  --background-secondary-alt: rgb(64, 64, 64);
+  --bases-cards-background: #000000;
+  --bases-cards-cover-background: #050505;
+  --bases-table-cell-background-active: #000000;
+  --bases-table-cell-background-disabled: #050505;
+  --bases-table-cell-background-selected: hsla(222, 94%, 19%, 0.1);
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(222, 94%, 19%);
+  --bases-table-group-background: #050505;
+  --bases-table-header-background: #000000;
+  --bases-table-header-background-hover: transparent;
+  --bases-table-summary-background: #000000;
+  --bases-table-summary-background-hover: transparent;
+  --bg-button-light: rgb(128, 128, 128);
+  --bg-button-shadow: black;
+  --blockquote-border-color: hsl(222, 94%, 19%);
+  --bodyFont: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
   --callout-blend-mode: darken;
-  --canvas-background: #000000 !important;
-  --checkbox-color: hsl(222, 94%, 19%) !important;
-  --checkbox-color-hover: hsl(221, 94.94%, 19.95%) !important;
-  --checkbox-marker-color: #000000 !important;
-  --closebutton: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 8 7' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' width='8' height='7'/%3e%3cdefs%3e%3cimage id='A' width='8' height='7' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOklEQVQImW2OQQ4AMAjCqv//MzssM0jGyaQIlCRxVWwJoA0oIVAd33L4EgjTut3wqxiDx65NnZ256QAPcA8KJ2HN6QAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e") !important;
-  --code-background: #050505 !important;
-  --code-bracket-background: transparent !important;
-  --codeFont: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --collapse-icon-color-collapsed: hsl(221, 94.94%, 19.95%) !important;
-  --color-accent: hsl(222, 94%, 19%) !important;
-  --color-accent-1: hsl(221, 94.94%, 19.95%) !important;
-  --color-accent-2: hsl(192, 142.88%, 29.45%) !important;
-  --color-accent-hsl: 222, 94%, 19% !important;
-  --color-base-00: #000000 !important;
-  --color-base-05: rgb(64, 64, 64) !important;
-  --color-base-10: #050505 !important;
-  --color-base-20: rgb(64, 64, 64) !important;
-  --color-opposite-100: #dddddd !important;
-  --color-opposite-25: #1c1c1c !important;
-  --color-opposite-30: #1f1f1f !important;
-  --color-opposite-35: #2b2b2b !important;
-  --color-opposite-40: #424242 !important;
-  --color-opposite-50: #545454 !important;
-  --color-opposite-60: #8f8f8f !important;
-  --color-opposite-70: #a3a3a3 !important;
-  --divider-color-hover: hsl(222, 94%, 19%) !important;
-  --downicon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='4.5' y='6.75' width='8' height='5'/%3e%3cdefs%3e%3cimage id='A' width='8' height='5' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAARklEQVQImXXNsRFAUAAE0dOHQAlCgeCHQqUKFSAQasGMPp70G2x4O3PbQP45gw6XNzvaJAkGHJVc0T%2b%2bMGHDgvEziBml3m6nPUz9aFAG8wAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e") !important;
-  --embed-border-start: 2px solid hsl(222, 94%, 19%) !important;
-  --file-header-background: #000000 !important;
-  --file-header-background-focused: #000000 !important;
-  --file-header-font: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --font-default: 'Win95Font', 'Inter', 'Rubik', 'Segoe UI' !important;
-  --font-interface: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --font-mermaid: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --font-text: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --footnote-input-background-active: transparent !important;
-  --graph-node-focused: hsl(221, 94.94%, 19.95%) !important;
-  --header-height: 35px !important;
-  --headerFont: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --highlight: transparent !important;
-  --highlight-mix-blend-mode: darken !important;
-  --icon-color-active: hsl(221, 94.94%, 19.95%) !important;
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
-  --interactive-accent: hsl(222, 94%, 19%) !important;
-  --interactive-accent-hover: hsl(221, 94.94%, 19.95%) !important;
-  --interactive-accent-hsl: 222, 94%, 19% !important;
-  --lefticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='6.75' y='5.062' width='5' height='8'/%3e%3cdefs%3e%3cimage id='A' width='5' height='8' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAYAAAAx8TU7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAWElEQVQImU3MoRHCQBQE0PdvztEYAolIGQgKoBAEkrJi4yggMxuTY%2b7Lt7u/TJfkg7VN8MUd2gRXXKCfk9uA0Vyxz79bVb3wxjawQ1U9k3QsfzyDR5IdvwPUnB2IEQfd7wAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e") !important;
-  --light: #000000 !important;
-  --lightgray: rgb(64, 64, 64) !important;
-  --link-color: hsl(221, 94.94%, 19.95%) !important;
-  --link-color-hover: hsl(192, 142.88%, 29.45%) !important;
-  --link-external-color: hsl(221, 94.94%, 19.95%) !important;
-  --link-external-color-hover: hsl(192, 142.88%, 29.45%) !important;
-  --link-unresolved-color: hsl(221, 94.94%, 19.95%) !important;
-  --link-unresolved-decoration-color: hsla(222, 94%, 19%, 0.3) !important;
-  --list-marker-color-collapsed: hsl(221, 94.94%, 19.95%) !important;
-  --maximize: url("data:image/svg+xml,%3Csvg width='9' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 0H0v9h9V0zM8 2H1v6h7V2z' fill='%23000'/%3E%3C/svg%3E") !important;
-  --menu-background: rgb(64, 64, 64) !important;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
-  --metadata-input-background-active: transparent !important;
-  --metadata-input-font: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --metadata-label-background-active: transparent !important;
-  --metadata-label-font: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --metadata-property-background-active: transparent !important;
-  --minimize: url("data:image/svg+xml,%3Csvg width='6' height='2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M0 0h6v2H0z'/%3E%3C/svg%3E") !important;
-  --modal-background: #000000 !important;
-  --nav-item-background-active: transparent !important;
-  --nav-item-background-hover: transparent !important;
-  --nav-item-background-selected: hsla(222, 94%, 19%, 0.15) !important;
-  --nav-item-color-highlighted: hsl(221, 94.94%, 19.95%) !important;
-  --pdf-background: #000000 !important;
-  --pdf-page-background: #000000 !important;
-  --pdf-sidebar-background: #000000 !important;
-  --pill-color-remove-hover: hsl(221, 94.94%, 19.95%) !important;
-  --prompt-background: #000000 !important;
-  --restoredown: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 64 64' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='13' y='15' width='34' height='34'/%3e%3cdefs%3e%3cimage id='A' width='34' height='34' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcUlEQVRYhe2XMQrAMAwDndL/fzmd2uEgxCkINOhmQw6DLFJlwmjOTalF1bjED7SJCIkIuQ/nuynr8qXRZiMRIREhb2q6XfK3c7Zps9lIREhECLtG1SXbtNluREXuyDERIREhESE2Irys6l//EpuN2PAAKfQHSOcj77YAAAAASUVORK5CYII='/%3e%3c/defs%3e%3c/svg%3e") !important;
-  --ribbon-background: rgb(64, 64, 64) !important;
-  --ribbon-background-collapsed: #000000 !important;
-  --righticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='6.75' y='5.063' width='5' height='8'/%3e%3cdefs%3e%3cimage id='A' width='5' height='8' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAYAAAAx8TU7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAS0lEQVQImV3NqRGAQBAF0SniQBACEkEASMLdABBIQkAgEZvBQ4AYtmXXP8LLEJlPXphaCQeWVsKGtYs/d0TUnCyYc33HmI9O9HnjAUuAVuCj%2bT4gAAAAAElFTkSuQmCC'/%3e%3c/defs%3e%3c/svg%3e") !important;
-  --scrollbar-width: 18px !important;
-  --search-result-background: #000000 !important;
-  --secondary: hsl(221, 94.94%, 19.95%) !important;
-  --setting-items-background: #050505 !important;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
-  --shiki-code-background: #050505 !important;
-  --status-bar-background: rgb(64, 64, 64) !important;
-  --suggestion-background: #000000 !important;
-  --system-status-background: rgb(64, 64, 64) !important;
-  --tab-background-active: #000000 !important;
-  --tab-container-background: rgb(64, 64, 64) !important;
-  --tab-stacked-header-width: 35px !important;
-  --tab-switcher-background: rgb(64, 64, 64) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(64, 64, 64), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(222, 94%, 19%) !important;
-  --tab-text-color-focused-highlighted: hsl(221, 94.94%, 19.95%) !important;
-  --table-drag-handle-background-active: hsl(222, 94%, 19%) !important;
-  --table-selection: hsla(222, 94%, 19%, 0.1) !important;
-  --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: hsl(222, 94%, 19%) !important;
-  --tag-background: hsla(222, 94%, 19%, 0.1) !important;
-  --tag-background-hover: hsla(222, 94%, 19%, 0.2) !important;
-  --tag-border-color: hsla(222, 94%, 19%, 0.15) !important;
-  --tag-border-color-hover: hsla(222, 94%, 19%, 0.15) !important;
-  --tag-color: hsl(221, 94.94%, 19.95%) !important;
-  --tag-color-hover: hsl(221, 94.94%, 19.95%) !important;
-  --tertiary: hsl(192, 142.88%, 29.45%) !important;
-  --text-accent: hsl(221, 94.94%, 19.95%) !important;
-  --text-accent-hover: hsl(192, 142.88%, 29.45%) !important;
-  --text-selection: hsla(222, 94%, 19%, 0.47) !important;
-  --textHighlight: transparent !important;
-  --titleFont: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --titlebar-background: rgb(64, 64, 64) !important;
-  --titlebar-background-focused: rgb(64, 64, 64) !important;
-  --tooltip-border: rgb(128, 128, 128) !important;
-  --traffic-lights-offset-x: 35px !important;
-  --traffic-lights-offset-y: 35px !important;
-  --upicon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='5.063' y='6.75' width='8' height='5'/%3e%3cdefs%3e%3cimage id='A' width='8' height='5' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAPElEQVQImXXNoRHAIBBE0aPzFICgBGRKQ57Av4gImAl59s/sRmzQccUJbkwk6immZaDts9PXQC2/n698AMKrUH0l/8BzAAAAAElFTkSuQmCC'/%3e%3c/defs%3e%3c/svg%3e") !important;
-  --quartz-icon-color: currentColor !important;
+  --canvas-background: #000000;
+  --checkbox-color: hsl(222, 94%, 19%);
+  --checkbox-color-hover: hsl(221, 94.94%, 19.95%);
+  --checkbox-marker-color: #000000;
+  --closebutton: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 8 7' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' width='8' height='7'/%3e%3cdefs%3e%3cimage id='A' width='8' height='7' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOklEQVQImW2OQQ4AMAjCqv//MzssM0jGyaQIlCRxVWwJoA0oIVAd33L4EgjTut3wqxiDx65NnZ256QAPcA8KJ2HN6QAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e");
+  --code-background: #050505;
+  --code-bracket-background: transparent;
+  --codeFont: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
+  --collapse-icon-color-collapsed: hsl(221, 94.94%, 19.95%);
+  --color-accent: hsl(222, 94%, 19%);
+  --color-accent-1: hsl(221, 94.94%, 19.95%);
+  --color-accent-2: hsl(192, 142.88%, 29.45%);
+  --color-accent-hsl: 222, 94%, 19%;
+  --color-base-00: #000000;
+  --color-base-05: rgb(64, 64, 64);
+  --color-base-10: #050505;
+  --color-base-20: rgb(64, 64, 64);
+  --color-opposite-100: #dddddd;
+  --color-opposite-25: #1c1c1c;
+  --color-opposite-30: #1f1f1f;
+  --color-opposite-35: #2b2b2b;
+  --color-opposite-40: #424242;
+  --color-opposite-50: #545454;
+  --color-opposite-60: #8f8f8f;
+  --color-opposite-70: #a3a3a3;
+  --divider-color-hover: hsl(222, 94%, 19%);
+  --downicon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='4.5' y='6.75' width='8' height='5'/%3e%3cdefs%3e%3cimage id='A' width='8' height='5' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAARklEQVQImXXNsRFAUAAE0dOHQAlCgeCHQqUKFSAQasGMPp70G2x4O3PbQP45gw6XNzvaJAkGHJVc0T%2b%2bMGHDgvEziBml3m6nPUz9aFAG8wAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e");
+  --embed-border-start: 2px solid hsl(222, 94%, 19%);
+  --file-header-background: #000000;
+  --file-header-background-focused: #000000;
+  --file-header-font: Win95Font, Inter, Rubik, Segoe UI';
+  --font-default: 'Win95Font', 'Inter', 'Rubik', 'Segoe UI';
+  --font-interface: Win95Font, Inter, Rubik, Segoe UI';
+  --font-mermaid: Win95Font, Inter, Rubik, Segoe UI';
+  --font-text: Win95Font, Inter, Rubik, Segoe UI';
+  --footnote-input-background-active: transparent;
+  --graph-node-focused: hsl(221, 94.94%, 19.95%);
+  --header-height: 35px;
+  --headerFont: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
+  --highlight: var(--background-modifier-hover, transparent);
+  --highlight-mix-blend-mode: darken;
+  --icon-color-active: hsl(221, 94.94%, 19.95%);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --interactive-accent: hsl(222, 94%, 19%);
+  --interactive-accent-hover: hsl(221, 94.94%, 19.95%);
+  --interactive-accent-hsl: 222, 94%, 19%;
+  --lefticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='6.75' y='5.062' width='5' height='8'/%3e%3cdefs%3e%3cimage id='A' width='5' height='8' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAYAAAAx8TU7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAWElEQVQImU3MoRHCQBQE0PdvztEYAolIGQgKoBAEkrJi4yggMxuTY%2b7Lt7u/TJfkg7VN8MUd2gRXXKCfk9uA0Vyxz79bVb3wxjawQ1U9k3QsfzyDR5IdvwPUnB2IEQfd7wAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e");
+  --light: var(--background-primary, #000000);
+  --lightgray: var(--background-secondary, rgb(64, 64, 64));
+  --link-color: hsl(221, 94.94%, 19.95%);
+  --link-color-hover: hsl(192, 142.88%, 29.45%);
+  --link-external-color: hsl(221, 94.94%, 19.95%);
+  --link-external-color-hover: hsl(192, 142.88%, 29.45%);
+  --link-unresolved-color: hsl(221, 94.94%, 19.95%);
+  --link-unresolved-decoration-color: hsla(222, 94%, 19%, 0.3);
+  --list-marker-color-collapsed: hsl(221, 94.94%, 19.95%);
+  --maximize: url("data:image/svg+xml,%3Csvg width='9' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 0H0v9h9V0zM8 2H1v6h7V2z' fill='%23000'/%3E%3C/svg%3E");
+  --menu-background: rgb(64, 64, 64);
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+  --metadata-input-background-active: transparent;
+  --metadata-input-font: Win95Font, Inter, Rubik, Segoe UI';
+  --metadata-label-background-active: transparent;
+  --metadata-label-font: Win95Font, Inter, Rubik, Segoe UI';
+  --metadata-property-background-active: transparent;
+  --minimize: url("data:image/svg+xml,%3Csvg width='6' height='2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M0 0h6v2H0z'/%3E%3C/svg%3E");
+  --modal-background: #000000;
+  --nav-item-background-active: transparent;
+  --nav-item-background-hover: transparent;
+  --nav-item-background-selected: hsla(222, 94%, 19%, 0.15);
+  --nav-item-color-highlighted: hsl(221, 94.94%, 19.95%);
+  --pdf-background: #000000;
+  --pdf-page-background: #000000;
+  --pdf-sidebar-background: #000000;
+  --pill-color-remove-hover: hsl(221, 94.94%, 19.95%);
+  --prompt-background: #000000;
+  --restoredown: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 64 64' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='13' y='15' width='34' height='34'/%3e%3cdefs%3e%3cimage id='A' width='34' height='34' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcUlEQVRYhe2XMQrAMAwDndL/fzmd2uEgxCkINOhmQw6DLFJlwmjOTalF1bjED7SJCIkIuQ/nuynr8qXRZiMRIREhb2q6XfK3c7Zps9lIREhECLtG1SXbtNluREXuyDERIREhESE2Irys6l//EpuN2PAAKfQHSOcj77YAAAAASUVORK5CYII='/%3e%3c/defs%3e%3c/svg%3e");
+  --ribbon-background: rgb(64, 64, 64);
+  --ribbon-background-collapsed: #000000;
+  --righticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='6.75' y='5.063' width='5' height='8'/%3e%3cdefs%3e%3cimage id='A' width='5' height='8' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAYAAAAx8TU7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAS0lEQVQImV3NqRGAQBAF0SniQBACEkEASMLdABBIQkAgEZvBQ4AYtmXXP8LLEJlPXphaCQeWVsKGtYs/d0TUnCyYc33HmI9O9HnjAUuAVuCj%2bT4gAAAAAElFTkSuQmCC'/%3e%3c/defs%3e%3c/svg%3e");
+  --scrollbar-width: 18px;
+  --search-result-background: #000000;
+  --secondary: var(--text-accent, hsl(221, 94.94%, 19.95%));
+  --setting-items-background: #050505;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shiki-code-background: #050505;
+  --status-bar-background: rgb(64, 64, 64);
+  --suggestion-background: #000000;
+  --system-status-background: rgb(64, 64, 64);
+  --tab-background-active: #000000;
+  --tab-container-background: rgb(64, 64, 64);
+  --tab-stacked-header-width: 35px;
+  --tab-switcher-background: rgb(64, 64, 64);
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(64, 64, 64), transparent);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(222, 94%, 19%);
+  --tab-text-color-focused-highlighted: hsl(221, 94.94%, 19.95%);
+  --table-drag-handle-background-active: hsl(222, 94%, 19%);
+  --table-selection: hsla(222, 94%, 19%, 0.1);
+  --table-selection-blend-mode: darken;
+  --table-selection-border-color: hsl(222, 94%, 19%);
+  --tag-background: hsla(222, 94%, 19%, 0.1);
+  --tag-background-hover: hsla(222, 94%, 19%, 0.2);
+  --tag-border-color: hsla(222, 94%, 19%, 0.15);
+  --tag-border-color-hover: hsla(222, 94%, 19%, 0.15);
+  --tag-color: hsl(221, 94.94%, 19.95%);
+  --tag-color-hover: hsl(221, 94.94%, 19.95%);
+  --tertiary: var(--text-accent-hover, hsl(192, 142.88%, 29.45%));
+  --text-accent: hsl(221, 94.94%, 19.95%);
+  --text-accent-hover: hsl(192, 142.88%, 29.45%);
+  --text-selection: hsla(222, 94%, 19%, 0.47);
+  --textHighlight: var(--background-modifier-hover, transparent);
+  --titleFont: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
+  --titlebar-background: rgb(64, 64, 64);
+  --titlebar-background-focused: rgb(64, 64, 64);
+  --tooltip-border: rgb(128, 128, 128);
+  --traffic-lights-offset-x: 35px;
+  --traffic-lights-offset-y: 35px;
+  --upicon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='5.063' y='6.75' width='8' height='5'/%3e%3cdefs%3e%3cimage id='A' width='8' height='5' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAPElEQVQImXXNoRHAIBBE0aPzFICgBGRKQ57Av4gImAl59s/sRmzQccUJbkwk6immZaDts9PXQC2/n698AMKrUH0l/8BzAAAAAElFTkSuQmCC'/%3e%3c/defs%3e%3c/svg%3e");
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -1890,118 +1891,118 @@ html[saved-theme="dark"] body ul.tags > li {
   },
   light: {
     base: `:root:root {
-  --accent-h: 222 !important;
-  --accent-l: 19% !important;
-  --accent-s: 94% !important;
-  --background-modifier-active-hover: hsla(222, 94%, 19%, 0.1) !important;
-  --background-modifier-cover: rgba(43, 41, 41, 0.4) !important;
-  --background-modifier-hover: transparent !important;
-  --background-secondary: silver !important;
-  --background-secondary-alt: silver !important;
-  --bases-table-cell-background-selected: hsla(222, 94%, 19%, 0.1) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(221, 94.94%, 19.95%) !important;
-  --bases-table-header-background-hover: transparent !important;
-  --bases-table-summary-background-hover: transparent !important;
-  --bg-button-light: white !important;
-  --bg-button-shadow: gray !important;
-  --blockquote-border-color: hsl(221, 94.94%, 19.95%) !important;
-  --bodyFont: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --checkbox-color: hsl(221, 94.94%, 19.95%) !important;
-  --checkbox-color-hover: hsl(192, 142.88%, 29.45%) !important;
-  --closebutton: url("data:image/svg+xml,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E") !important;
-  --code-bracket-background: transparent !important;
-  --codeFont: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --collapse-icon-color-collapsed: hsl(222, 94%, 19%) !important;
-  --color-accent: hsl(222, 94%, 19%) !important;
-  --color-accent-1: hsl(221, 94.94%, 19.95%) !important;
-  --color-accent-2: hsl(192, 142.88%, 29.45%) !important;
-  --color-accent-hsl: 222, 94%, 19% !important;
-  --color-base-05: silver !important;
-  --color-base-20: silver !important;
-  --divider-color-hover: hsl(221, 94.94%, 19.95%) !important;
-  --downicon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' shape-rendering='optimizeSpeed' width='18' height='18' viewBox='0 0 16 16' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M4 7V6h7v1h-1v1H9v1H8v1H7V9H6V8H5V7z'/%3e%3c/svg%3e") !important;
-  --embed-border-start: 2px solid hsl(221, 94.94%, 19.95%) !important;
-  --file-header-font: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --font-default: 'Win95Font', 'Inter', 'Rubik', 'Segoe UI' !important;
-  --font-interface: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --font-mermaid: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --font-text: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --footnote-input-background-active: transparent !important;
-  --graph-node-focused: hsl(222, 94%, 19%) !important;
-  --header-height: 35px !important;
-  --headerFont: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --highlight: transparent !important;
-  --icon-color-active: hsl(222, 94%, 19%) !important;
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
-  --interactive-accent: hsl(221, 94.94%, 19.95%) !important;
-  --interactive-accent-hover: hsl(192, 142.88%, 29.45%) !important;
-  --interactive-accent-hsl: 222, 94%, 19% !important;
-  --lefticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M10.875 5.063H12v7.875h-1.125v-1.125H9.75v-1.125H8.625V9.563H7.5V8.438h1.125V7.313H9.75V6.188h1.125V5.063z' fill-rule='nonzero'/%3e%3c/svg%3e") !important;
-  --lightgray: silver !important;
-  --link-color: hsl(222, 94%, 19%) !important;
-  --link-color-hover: hsl(192, 142.88%, 29.45%) !important;
-  --link-external-color: hsl(222, 94%, 19%) !important;
-  --link-external-color-hover: hsl(192, 142.88%, 29.45%) !important;
-  --link-unresolved-color: hsl(222, 94%, 19%) !important;
-  --link-unresolved-decoration-color: hsla(222, 94%, 19%, 0.3) !important;
-  --list-marker-color-collapsed: hsl(222, 94%, 19%) !important;
-  --maximize: url("data:image/svg+xml,%3Csvg width='9' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 0H0v9h9V0zM8 2H1v6h7V2z' fill='%23000'/%3E%3C/svg%3E") !important;
-  --menu-background: silver !important;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
-  --metadata-input-background-active: transparent !important;
-  --metadata-input-font: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --metadata-label-background-active: transparent !important;
-  --metadata-label-font: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --metadata-property-background-active: transparent !important;
-  --minimize: url("data:image/svg+xml,%3Csvg width='6' height='2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M0 0h6v2H0z'/%3E%3C/svg%3E") !important;
-  --nav-item-background-active: transparent !important;
-  --nav-item-background-hover: transparent !important;
-  --nav-item-background-selected: hsla(222, 94%, 19%, 0.15) !important;
-  --nav-item-color-highlighted: hsl(222, 94%, 19%) !important;
-  --pill-color-remove-hover: hsl(222, 94%, 19%) !important;
-  --restoredown: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 64 64' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='13' y='15' width='34' height='34'/%3e%3cdefs%3e%3cimage id='A' width='34' height='34' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcUlEQVRYhe2XMQrAMAwDndL/fzmd2uEgxCkINOhmQw6DLFJlwmjOTalF1bjED7SJCIkIuQ/nuynr8qXRZiMRIREhb2q6XfK3c7Zps9lIREhECLtG1SXbtNluREXuyDERIREhESE2Irys6l//EpuN2PAAKfQHSOcj77YAAAAASUVORK5CYII='/%3e%3c/defs%3e%3c/svg%3e") !important;
-  --ribbon-background: silver !important;
-  --righticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M10.125 12.938H9V5.063h1.125v1.125h1.125v1.125h1.125v1.125H13.5v1.125h-1.125v1.125H11.25v1.125h-1.125v1.125z' fill-rule='nonzero'/%3e%3c/svg%3e") !important;
-  --scrollbar-width: 18px !important;
-  --secondary: hsl(222, 94%, 19%) !important;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2) !important;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
-  --status-bar-background: silver !important;
-  --system-status-background: silver !important;
-  --tab-container-background: silver !important;
-  --tab-stacked-header-width: 35px !important;
-  --tab-switcher-background: silver !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, silver, transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(222, 94%, 19%) !important;
-  --tab-text-color-focused-highlighted: hsl(222, 94%, 19%) !important;
-  --table-drag-handle-background-active: hsl(221, 94.94%, 19.95%) !important;
-  --table-selection: hsla(222, 94%, 19%, 0.1) !important;
-  --table-selection-border-color: hsl(221, 94.94%, 19.95%) !important;
-  --tag-background: hsla(222, 94%, 19%, 0.1) !important;
-  --tag-background-hover: hsla(222, 94%, 19%, 0.2) !important;
-  --tag-border-color: hsla(222, 94%, 19%, 0.15) !important;
-  --tag-border-color-hover: hsla(222, 94%, 19%, 0.15) !important;
-  --tag-color: hsl(222, 94%, 19%) !important;
-  --tag-color-hover: hsl(222, 94%, 19%) !important;
-  --tertiary: hsl(192, 142.88%, 29.45%) !important;
-  --text-accent: hsl(222, 94%, 19%) !important;
-  --text-accent-hover: hsl(192, 142.88%, 29.45%) !important;
-  --text-selection: hsla(222, 94%, 19%, 0.47) !important;
-  --textHighlight: transparent !important;
-  --titleFont: Win95Font, Inter, Rubik, Segoe UI' !important;
-  --titlebar-background: silver !important;
-  --titlebar-background-focused: silver !important;
-  --tooltip-border: black !important;
-  --traffic-lights-offset-x: 35px !important;
-  --traffic-lights-offset-y: 35px !important;
-  --upicon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' shape-rendering='optimizeSpeed' width='18' height='18' viewBox='0 0 16 16' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M11 9v1H4V9h1V8h1V7h1V6h1v1h1v1h1v1z'/%3e%3c/svg%3e") !important;
-  --quartz-icon-color: currentColor !important;
+  --accent-h: 222;
+  --accent-l: 19%;
+  --accent-s: 94%;
+  --background-modifier-active-hover: hsla(222, 94%, 19%, 0.1);
+  --background-modifier-cover: rgba(43, 41, 41, 0.4);
+  --background-modifier-hover: transparent;
+  --background-secondary: silver;
+  --background-secondary-alt: silver;
+  --bases-table-cell-background-selected: hsla(222, 94%, 19%, 0.1);
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(221, 94.94%, 19.95%);
+  --bases-table-header-background-hover: transparent;
+  --bases-table-summary-background-hover: transparent;
+  --bg-button-light: white;
+  --bg-button-shadow: gray;
+  --blockquote-border-color: hsl(221, 94.94%, 19.95%);
+  --bodyFont: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
+  --checkbox-color: hsl(221, 94.94%, 19.95%);
+  --checkbox-color-hover: hsl(192, 142.88%, 29.45%);
+  --closebutton: url("data:image/svg+xml,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E");
+  --code-bracket-background: transparent;
+  --codeFont: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
+  --collapse-icon-color-collapsed: hsl(222, 94%, 19%);
+  --color-accent: hsl(222, 94%, 19%);
+  --color-accent-1: hsl(221, 94.94%, 19.95%);
+  --color-accent-2: hsl(192, 142.88%, 29.45%);
+  --color-accent-hsl: 222, 94%, 19%;
+  --color-base-05: silver;
+  --color-base-20: silver;
+  --divider-color-hover: hsl(221, 94.94%, 19.95%);
+  --downicon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' shape-rendering='optimizeSpeed' width='18' height='18' viewBox='0 0 16 16' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M4 7V6h7v1h-1v1H9v1H8v1H7V9H6V8H5V7z'/%3e%3c/svg%3e");
+  --embed-border-start: 2px solid hsl(221, 94.94%, 19.95%);
+  --file-header-font: Win95Font, Inter, Rubik, Segoe UI';
+  --font-default: 'Win95Font', 'Inter', 'Rubik', 'Segoe UI';
+  --font-interface: Win95Font, Inter, Rubik, Segoe UI';
+  --font-mermaid: Win95Font, Inter, Rubik, Segoe UI';
+  --font-text: Win95Font, Inter, Rubik, Segoe UI';
+  --footnote-input-background-active: transparent;
+  --graph-node-focused: hsl(222, 94%, 19%);
+  --header-height: 35px;
+  --headerFont: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
+  --highlight: var(--background-modifier-hover, transparent);
+  --icon-color-active: hsl(222, 94%, 19%);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --interactive-accent: hsl(221, 94.94%, 19.95%);
+  --interactive-accent-hover: hsl(192, 142.88%, 29.45%);
+  --interactive-accent-hsl: 222, 94%, 19%;
+  --lefticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M10.875 5.063H12v7.875h-1.125v-1.125H9.75v-1.125H8.625V9.563H7.5V8.438h1.125V7.313H9.75V6.188h1.125V5.063z' fill-rule='nonzero'/%3e%3c/svg%3e");
+  --lightgray: var(--background-secondary, silver);
+  --link-color: hsl(222, 94%, 19%);
+  --link-color-hover: hsl(192, 142.88%, 29.45%);
+  --link-external-color: hsl(222, 94%, 19%);
+  --link-external-color-hover: hsl(192, 142.88%, 29.45%);
+  --link-unresolved-color: hsl(222, 94%, 19%);
+  --link-unresolved-decoration-color: hsla(222, 94%, 19%, 0.3);
+  --list-marker-color-collapsed: hsl(222, 94%, 19%);
+  --maximize: url("data:image/svg+xml,%3Csvg width='9' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 0H0v9h9V0zM8 2H1v6h7V2z' fill='%23000'/%3E%3C/svg%3E");
+  --menu-background: silver;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+  --metadata-input-background-active: transparent;
+  --metadata-input-font: Win95Font, Inter, Rubik, Segoe UI';
+  --metadata-label-background-active: transparent;
+  --metadata-label-font: Win95Font, Inter, Rubik, Segoe UI';
+  --metadata-property-background-active: transparent;
+  --minimize: url("data:image/svg+xml,%3Csvg width='6' height='2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M0 0h6v2H0z'/%3E%3C/svg%3E");
+  --nav-item-background-active: transparent;
+  --nav-item-background-hover: transparent;
+  --nav-item-background-selected: hsla(222, 94%, 19%, 0.15);
+  --nav-item-color-highlighted: hsl(222, 94%, 19%);
+  --pill-color-remove-hover: hsl(222, 94%, 19%);
+  --restoredown: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 64 64' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='13' y='15' width='34' height='34'/%3e%3cdefs%3e%3cimage id='A' width='34' height='34' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcUlEQVRYhe2XMQrAMAwDndL/fzmd2uEgxCkINOhmQw6DLFJlwmjOTalF1bjED7SJCIkIuQ/nuynr8qXRZiMRIREhb2q6XfK3c7Zps9lIREhECLtG1SXbtNluREXuyDERIREhESE2Irys6l//EpuN2PAAKfQHSOcj77YAAAAASUVORK5CYII='/%3e%3c/defs%3e%3c/svg%3e");
+  --ribbon-background: silver;
+  --righticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M10.125 12.938H9V5.063h1.125v1.125h1.125v1.125h1.125v1.125H13.5v1.125h-1.125v1.125H11.25v1.125h-1.125v1.125z' fill-rule='nonzero'/%3e%3c/svg%3e");
+  --scrollbar-width: 18px;
+  --secondary: var(--text-accent, hsl(222, 94%, 19%));
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+  --status-bar-background: silver;
+  --system-status-background: silver;
+  --tab-container-background: silver;
+  --tab-stacked-header-width: 35px;
+  --tab-switcher-background: silver;
+  --tab-switcher-menubar-background: linear-gradient(to top, silver, transparent);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(222, 94%, 19%);
+  --tab-text-color-focused-highlighted: hsl(222, 94%, 19%);
+  --table-drag-handle-background-active: hsl(221, 94.94%, 19.95%);
+  --table-selection: hsla(222, 94%, 19%, 0.1);
+  --table-selection-border-color: hsl(221, 94.94%, 19.95%);
+  --tag-background: hsla(222, 94%, 19%, 0.1);
+  --tag-background-hover: hsla(222, 94%, 19%, 0.2);
+  --tag-border-color: hsla(222, 94%, 19%, 0.15);
+  --tag-border-color-hover: hsla(222, 94%, 19%, 0.15);
+  --tag-color: hsl(222, 94%, 19%);
+  --tag-color-hover: hsl(222, 94%, 19%);
+  --tertiary: var(--text-accent-hover, hsl(192, 142.88%, 29.45%));
+  --text-accent: hsl(222, 94%, 19%);
+  --text-accent-hover: hsl(192, 142.88%, 29.45%);
+  --text-selection: hsla(222, 94%, 19%, 0.47);
+  --textHighlight: var(--background-modifier-hover, transparent);
+  --titleFont: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
+  --titlebar-background: silver;
+  --titlebar-background-focused: silver;
+  --tooltip-border: black;
+  --traffic-lights-offset-x: 35px;
+  --traffic-lights-offset-y: 35px;
+  --upicon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' shape-rendering='optimizeSpeed' width='18' height='18' viewBox='0 0 16 16' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M11 9v1H4V9h1V8h1V7h1V6h1v1h1v1h1v1z'/%3e%3c/svg%3e");
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -3693,6 +3694,362 @@ html[saved-theme="light"] body ul.tags > li {
   border-right-color: rgba(3, 30, 94, 0.15);
   border-top-color: rgba(3, 30, 94, 0.15);
   color: rgb(3, 30, 94);
+}`,
+  },
+  classSettings: {
+    ROS98: `.ROS98-DC {
+--background-primary: #3c3c3c;
+--background-secondary: #707070;
+}
+
+.ROS98-Jungle {
+--background-primary: #625437;
+--background-secondary: #958054;
+}
+
+.ROS98-mystery {
+--background-primary: #343c34;
+--background-secondary: #607060;
+}
+
+.ROS98-Travel {
+--background-primary: #3f3731;
+--background-secondary: #726559;
+}
+
+.ROS98-Snow {
+--background-primary: #1a1c0e;
+--background-secondary: #4b4f2a;
+}
+
+.ROS98-Space {
+--background-primary: #3b4247;
+--background-secondary: #66737a;
+}
+
+.ROS98-steam {
+--background-primary: #3e4637;
+--background-secondary: #4c5844;
+}
+
+.ROS98-Water {
+--background-primary: #15294e;
+--background-secondary: #2a509a;
+}
+
+.ROS98-Ancient {
+--background-primary: #2b221a;
+--background-secondary: #7a614a;
+}
+.ROS98-Tropical {
+--background-primary: #dacea6;
+--background-secondary: #8e866c;
+}
+
+.ROS98-Photo {
+--background-primary: #dac9ad;
+--background-secondary: #8e8371;
+}
+
+.ROS98-Peanuts {
+--background-primary: #b9d8ba;
+--background-secondary: #9d9d9d;
+}
+
+.ROS98-Horror {
+--background-primary: #dfefa3;
+--background-secondary: #98a36f;
+}
+
+.ROS98-Foxtrot {
+--background-primary: #b8c0cd;
+--background-secondary: #747981;
+}
+
+.ROS98-Tree {
+--background-primary: #bcbfe7;
+--background-secondary: #7e809b;
+}
+
+.ROS98-reman {
+--background-primary: #d4d5b5;
+--background-secondary: #c1a600;
+}
+
+.ROS98-Messy {
+--background-secondary: #8284bc;
+}
+
+.ROS98-Horses {
+--background-primary: #f2d6e0;
+--background-secondary: #a6939a;
+}
+
+.ROS98-baseball {
+--background-primary: #ffcc87;
+--background-secondary: #d1a86f;
+}
+
+.ROS98-Bugs {
+--background-primary: #bfd2a0;
+--background-secondary: #7a8666;
+}
+
+.ROS98-brick {
+--background-primary: #fffbd8;
+--background-secondary: #c2bfa5;
+}
+
+.ROS98-desert {
+--background-primary: #fff4df;
+--background-secondary: #d5ccbb;
+}
+
+.ROS98-eggplant {
+--background-primary: #cefcf1;
+--background-secondary: #90b0a8;
+}
+
+.ROS98-GoldenEra {
+--background-secondary: #b8c8b9;
+--background-primary: #f8f1da;
+}
+
+.ROS98-lilac {
+--background-primary: #d6c4ff;
+--background-secondary: #afa0d0;
+}
+
+.ROS98-maple {
+--background-primary: #fff3ad;
+--background-secondary: #e0cc98;
+}
+
+.ROS98-marine {
+--background-primary: #c8e0d8;
+--background-secondary: #88c0b8;
+}
+
+.ROS98-MW {
+--background-secondary: #7c828a;
+--background-primary: #cad3e1;
+}
+
+.ROS98-nature {
+--background-secondary: #b09d82;
+--background-primary: #ebe3d4;
+}
+
+.ROS98-plum {
+--background-primary: #d8d0c8;
+--background-secondary: #a89890;
+}
+
+.ROS98-pumpkin {
+--background-primary: #ffecaa;
+--background-secondary: #f0d4a0;
+}
+
+.ROS98-rainyday {
+--background-secondary: #8098b0;
+--background-primary: #b7dafc;
+}
+
+.ROS98-rose {
+--background-secondary: #d0b0b8;
+--background-primary: #ffd7e1;
+}
+
+.ROS98-Science {
+--background-secondary: #8398b1;
+--background-primary: #bbd9fd;
+}
+
+.ROS98-slate {
+--background-secondary: #9db9c8;
+--background-primary: #c8ebff;
+}
+
+.ROS98-sports {
+--background-secondary: #afe1a0;
+--background-primary: #bcffb5;
+}
+
+.ROS98-spruce {
+--background-primary: #ceffd7;
+--background-secondary: #a2c8a9;
+}
+
+.ROS98-USA {
+--background-secondary: #d168d8;
+}
+
+.ROS98-Vinci {
+--background-primary: #ffdcd5;
+--background-secondary: #bfa5a0;
+}
+
+.ROS98-wheat {
+--background-primary: #f5ffb6;
+--background-secondary: #e0e0a0;
+}`,
+    "ROS98-Ancient": `.ROS98-Ancient {
+--background-primary: #2b221a;
+--background-secondary: #7a614a;
+}`,
+    "ROS98-DC": `.ROS98-DC {
+--background-primary: #3c3c3c;
+--background-secondary: #707070;
+}`,
+    "ROS98-Jungle": `.ROS98-Jungle {
+--background-primary: #625437;
+--background-secondary: #958054;
+}`,
+    "ROS98-mystery": `.ROS98-mystery {
+--background-primary: #343c34;
+--background-secondary: #607060;
+}`,
+    "ROS98-Travel": `.ROS98-Travel {
+--background-primary: #3f3731;
+--background-secondary: #726559;
+}`,
+    "ROS98-Snow": `.ROS98-Snow {
+--background-primary: #1a1c0e;
+--background-secondary: #4b4f2a;
+}`,
+    "ROS98-Space": `.ROS98-Space {
+--background-primary: #3b4247;
+--background-secondary: #66737a;
+}`,
+    "ROS98-steam": `.ROS98-steam {
+--background-primary: #3e4637;
+--background-secondary: #4c5844;
+}`,
+    "ROS98-Water": `.ROS98-Water {
+--background-primary: #15294e;
+--background-secondary: #2a509a;
+}`,
+    "ROS98-baseball": `.ROS98-baseball {
+--background-primary: #ffcc87;
+--background-secondary: #d1a86f;
+}`,
+    "ROS98-brick": `.ROS98-brick {
+--background-primary: #fffbd8;
+--background-secondary: #c2bfa5;
+}`,
+    "ROS98-Bugs": `.ROS98-Bugs {
+--background-primary: #bfd2a0;
+--background-secondary: #7a8666;
+}`,
+    "ROS98-desert": `.ROS98-desert {
+--background-primary: #fff4df;
+--background-secondary: #d5ccbb;
+}`,
+    "ROS98-eggplant": `.ROS98-eggplant {
+--background-primary: #cefcf1;
+--background-secondary: #90b0a8;
+}`,
+    "ROS98-Foxtrot": `.ROS98-Foxtrot {
+--background-primary: #b8c0cd;
+--background-secondary: #747981;
+}`,
+    "ROS98-Horses": `.ROS98-Horses {
+--background-primary: #f2d6e0;
+--background-secondary: #a6939a;
+}`,
+    "ROS98-Horror": `.ROS98-Horror {
+--background-primary: #dfefa3;
+--background-secondary: #98a36f;
+}`,
+    "ROS98-lilac": `.ROS98-lilac {
+--background-primary: #d6c4ff;
+--background-secondary: #afa0d0;
+}`,
+    "ROS98-maple": `.ROS98-maple {
+--background-primary: #fff3ad;
+--background-secondary: #e0cc98;
+}`,
+    "ROS98-marine": `.ROS98-marine {
+--background-primary: #c8e0d8;
+--background-secondary: #88c0b8;
+}`,
+    "ROS98-Messy": `.ROS98-Messy {
+--background-secondary: #8284bc;
+}`,
+    "ROS98-MW": `.ROS98-MW {
+--background-secondary: #7c828a;
+--background-primary: #cad3e1;
+}`,
+    "ROS98-nature": `.ROS98-nature {
+--background-secondary: #b09d82;
+--background-primary: #ebe3d4;
+}`,
+    "ROS98-Peanuts": `.ROS98-Peanuts {
+--background-primary: #b9d8ba;
+--background-secondary: #9d9d9d;
+}`,
+    "ROS98-Photo": `.ROS98-Photo {
+--background-primary: #dac9ad;
+--background-secondary: #8e8371;
+}`,
+    "ROS98-plum": `.ROS98-plum {
+--background-primary: #d8d0c8;
+--background-secondary: #a89890;
+}`,
+    "ROS98-pumpkin": `.ROS98-pumpkin {
+--background-primary: #ffecaa;
+--background-secondary: #f0d4a0;
+}`,
+    "ROS98-rainyday": `.ROS98-rainyday {
+--background-secondary: #8098b0;
+--background-primary: #b7dafc;
+}`,
+    "ROS98-reman": `.ROS98-reman {
+--background-primary: #d4d5b5;
+--background-secondary: #c1a600;
+}`,
+    "ROS98-rose": `.ROS98-rose {
+--background-secondary: #d0b0b8;
+--background-primary: #ffd7e1;
+}`,
+    "ROS98-Science": `.ROS98-Science {
+--background-secondary: #8398b1;
+--background-primary: #bbd9fd;
+}`,
+    "ROS98-slate": `.ROS98-slate {
+--background-secondary: #9db9c8;
+--background-primary: #c8ebff;
+}`,
+    "ROS98-sports": `.ROS98-sports {
+--background-secondary: #afe1a0;
+--background-primary: #bcffb5;
+}`,
+    "ROS98-spruce": `.ROS98-spruce {
+--background-primary: #ceffd7;
+--background-secondary: #a2c8a9;
+}`,
+    "ROS98-USA": `.ROS98-USA {
+--background-secondary: #d168d8;
+}`,
+    "ROS98-GoldenEra": `.ROS98-GoldenEra {
+--background-secondary: #b8c8b9;
+--background-primary: #f8f1da;
+}`,
+    "ROS98-Tree": `.ROS98-Tree {
+--background-primary: #bcbfe7;
+--background-secondary: #7e809b;
+}`,
+    "ROS98-Tropical": `.ROS98-Tropical {
+--background-primary: #dacea6;
+--background-secondary: #8e866c;
+}`,
+    "ROS98-Vinci": `.ROS98-Vinci {
+--background-primary: #ffdcd5;
+--background-secondary: #bfa5a0;
+}`,
+    "ROS98-wheat": `.ROS98-wheat {
+--background-primary: #f5ffb6;
+--background-secondary: #e0e0a0;
 }`,
   },
 };

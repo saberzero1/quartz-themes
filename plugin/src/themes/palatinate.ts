@@ -51,22 +51,22 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-light: #d9d4f0 !important;
-  --accent-lightest: #F5F4FB !important;
-  --accent-middle: #8272d0 !important;
-  --admonition-green: #64DD17 !important;
-  --altaccent-light: #BFDEFF !important;
-  --altaccent-lighter: #E3E5E8 !important;
-  --altaccent-middle: #277f8e !important;
-  --altaccent2-middle: #ad3fc9 !important;
-  --header-font: 'Caveat Brush' !important;
-  --infobox-header: #F2EDFF !important;
-  --quartz-icon-color: currentColor !important;
+  --accent-light: #d9d4f0;
+  --accent-lightest: #F5F4FB;
+  --accent-middle: #8272d0;
+  --admonition-green: #64DD17;
+  --altaccent-light: #BFDEFF;
+  --altaccent-lighter: #E3E5E8;
+  --altaccent-middle: #277f8e;
+  --altaccent2-middle: #ad3fc9;
+  --header-font: 'Caveat Brush';
+  --infobox-header: #F2EDFF;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body html {
@@ -656,22 +656,22 @@ html[saved-theme="dark"] body h6 {
   },
   light: {
     base: `:root:root {
-  --accent-light: #d9d4f0 !important;
-  --accent-lightest: #F5F4FB !important;
-  --accent-middle: #8272d0 !important;
-  --admonition-green: #64DD17 !important;
-  --altaccent-light: #BFDEFF !important;
-  --altaccent-lighter: #E3E5E8 !important;
-  --altaccent-middle: #277f8e !important;
-  --altaccent2-middle: #ad3fc9 !important;
-  --header-font: 'Caveat Brush' !important;
-  --infobox-header: #F2EDFF !important;
-  --quartz-icon-color: currentColor !important;
+  --accent-light: #d9d4f0;
+  --accent-lightest: #F5F4FB;
+  --accent-middle: #8272d0;
+  --admonition-green: #64DD17;
+  --altaccent-light: #BFDEFF;
+  --altaccent-lighter: #E3E5E8;
+  --altaccent-middle: #277f8e;
+  --altaccent2-middle: #ad3fc9;
+  --header-font: 'Caveat Brush';
+  --infobox-header: #F2EDFF;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body html {

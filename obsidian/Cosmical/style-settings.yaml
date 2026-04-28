@@ -1,0 +1,151 @@
+name: Cosmical
+id: cosmical
+collapsed: false
+settings:
+  - id: Theme-color-settings-heading
+    title: Theme Colors
+    title.es: Colores del Tema
+    type: heading
+    level: 1
+    collapsed: false
+  - id: subtheme
+    title: Subtheme
+    title.es: Subtema
+    description: Choose a color subtheme that affects properties, tags, and accent color
+    description.es: Elige un subtema de color que afecta a las propiedades, etiquetas y color de acento
+    type: class-select
+    allowEmpty: false
+    default: Ocean
+    options:
+      - label: Ocean (default)
+        label.es: Océano (predeterminado)
+        value: subtheme-ocean
+      - label: Forest
+        label.es: Bosque
+        value: subtheme-forest
+      - label: Twilight
+        label.es: Crepúsculo
+        value: subtheme-twilight
+      - label: Sunset
+        label.es: Atardecer
+        value: subtheme-sunset
+      - label: Night
+        label.es: Noche
+        value: subtheme-night
+  - id: colored-headings
+    title: Use subtheme colors for headings
+    title.es: Usar colores de subtema en los encabezados
+    description: Applies subtheme colors to heading levels (h1-h6)
+    description.es: Aplica los colores del subtema a los niveles de encabezados (h1-h6)
+    type: class-toggle
+    default: false
+  - id: Editor-settings-heading
+    title: Editor
+    title.es: Editor
+    type: heading
+    level: 1
+    collapsed: false
+  - id: wider-callouts
+    title: Wider callouts
+    title.es: Callouts más amplios
+    description: Makes callouts wider in the editor
+    description.es: Hace que los callouts sean más amplios en el editor
+    type: class-toggle
+    default: false
+  - id: custom-caret
+    title: Custom caret color
+    title.es: Color personalizado del cursor
+    description: Uses the subtheme color for the text cursor in the editor
+    description.es: Usa el color del subtema para el cursor de texto en el editor
+    type: class-toggle
+    default: false
+  - id: Headers-settings-heading
+    title: Headers
+    title.es: Encabezados
+    type: heading
+    level: 1
+    collapsed: false
+  - id: font-headings
+    title: Headings font family
+    title.es: Fuente para títulos
+    description: 'Font family used for note headers: inline-title, h1, h2, h3, h4, h5, h6'
+    description.es: 'Fuente usada para los títulos de las notas: título en una línea, h1, h2, h3, h4, h5, h6'
+    type: variable-text
+    default: var(--text-font)
+  - id: headings-underline
+    title: Underline headings
+    title.es: Subrayar encabezados
+    description: Adds underline decoration to all heading levels
+    description.es: Añade subrayado a todos los niveles de encabezados
+    type: class-toggle
+    default: false
+  - id: centered-file-title
+    title: Center file title
+    title.es: Centrar título del archivo
+    description: Centers the inline file title instead of left-aligned
+    description.es: Centra el título del archivo en lugar de alinearlo a la izquierda
+    type: class-toggle
+    default: false
+  - id: hide-file-title
+    title: Hide file title in topbar
+    title.es: Ocultar título de archivo en la barra superior
+    description: Completely hides the file title from the topbar
+    description.es: Oculta completamente el título del archivo de la barra superior
+    type: class-toggle
+    default: false
+  - id: hide-file-title-path
+    title: Hide file path in topbar
+    title.es: Ocultar ruta del archivo en la barra superior
+    description: Hides only the file path (parent folder) from the topbar, keeping the file name visible
+    description.es: Oculta solo la ruta del archivo (carpeta padre) de la barra superior, manteniendo visible el nombre del archivo
+    type: class-toggle
+    default: false
+  - id: Bases-settings-heading
+    title: Obsidian Bases settings
+    title.es: Ajustes de Obsidian Bases
+    type: heading
+    level: 1
+    collapsed: false
+  - id: disable-row-alternating-bg
+    title: Disable alternating row background color for bases
+    title.es: Deshabilitar alternar fondo de cada fila en bases
+    description: Disable alternating background color for row in Obsidian Bases
+    description.es: Deshabilitar alternar color de fondo para las filas en Obsidian Bases
+    type: class-toggle
+    default: false
+  - id: Properties-settings-heading
+    title: Properties settings (Metadata)
+    title.es: Ajustes de propiedades (Metadata)
+    type: heading
+    level: 1
+    collapsed: false
+  - id: metadata-container-alt
+    title: Options for the metadata (properties) container
+    title.es: Estilos para el contenedor de propiedades
+    description: Alternative visual styles for the properties container
+    description.es: Estilos visuales alternativos para el contenedor de propiedades o metadatos
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Dashed Separator
+        label.es: Separador de línea discontinua
+        value: metadata-container-alt-separator
+      - label: Outline
+        label.es: Contorno
+        value: metadata-container-alt-outline
+  - id: show-properties-label
+    title: Show "Properties" label
+    title.es: Mostrar la etiqueta "Propiedades"
+    description: Displays the "Properties" header above the properties section
+    description.es: Muestra el encabezado "Propiedades" sobre la sección de propiedades
+    type: class-toggle
+    default: false
+  - id: improve-multilist-ux
+    title: Improve multi-select list UX
+    title.es: Mejorar UX de listas multi-selección
+    description: Hides the remove button on multi-select pills until focused for a cleaner appearance
+    description.es: Oculta el botón de eliminar en las píldoras de multi-selección hasta que se enfoquen para una apariencia más limpia
+    type: class-toggle
+    default: false
+  - null

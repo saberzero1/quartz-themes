@@ -13,6 +13,7 @@ import type {
 } from "@quartz-community/types";
 import type { ThemeOptions } from "./types";
 import { composeCSS } from "./composer";
+import { processStyleSettings, loadStyleSettings } from "./styleSettings";
 
 const defaultOptions: ThemeOptions = { theme: "tokyo-night", mode: "both" };
 
@@ -44,7 +45,12 @@ export const QuartzTheme: QuartzTransformerPlugin<Partial<ThemeOptions>> = (
 ) => {
   const options: ThemeOptions = { ...defaultOptions, ...userOptions };
 
-  const { css: resolvedCSS, effectiveMode } = composeCSS(options);
+  const {
+    css: resolvedCSS,
+    effectiveMode,
+    styleSettingsId,
+    classSettings,
+  } = composeCSS(options);
 
   const isSingleMode = effectiveMode !== "both";
 
@@ -53,7 +59,9 @@ export const QuartzTheme: QuartzTransformerPlugin<Partial<ThemeOptions>> = (
 
   if (resolvedCSS) {
     cssResources.push({
-      content: `@layer obsidian-theme {\n${resolvedCSS}\n}`,
+      content:
+        `@layer quartz-base, obsidian-theme, obsidian-theme-overrides;\n` +
+        `@layer obsidian-theme {\n${resolvedCSS}\n}`,
       inline: true,
     });
   }
@@ -73,6 +81,32 @@ export const QuartzTheme: QuartzTransformerPlugin<Partial<ThemeOptions>> = (
         `document.documentElement.setAttribute("saved-theme", "${effectiveMode}");\n` +
         `localStorage.setItem("theme", "${effectiveMode}");`,
     });
+  }
+
+  if (options.styleSettings) {
+    if (
+      styleSettingsId &&
+      (!Array.isArray(styleSettingsId) || styleSettingsId.length > 0)
+    ) {
+      const settings = loadStyleSettings(options.styleSettings);
+      const { css: overrideCSS } = processStyleSettings(
+        settings,
+        styleSettingsId,
+        classSettings,
+      );
+
+      if (overrideCSS) {
+        cssResources.push({
+          content: `@layer obsidian-theme-overrides {\n${overrideCSS}\n}`,
+          inline: true,
+        });
+      }
+    } else {
+      console.warn(
+        `[QuartzTheme] styleSettings provided but theme "${options.theme}" has no Style Settings id. ` +
+          `Style Settings overrides will be ignored.`,
+      );
+    }
   }
 
   return {

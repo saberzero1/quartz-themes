@@ -861,6 +861,18 @@ body {
     --background-modifier-cover: rgba(0, 0, 0, 0.5);
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.15);
     --settings-home-background: var(--background-primary);
+
+    /* Canvas - GitHub Dark High Contrast palette */
+    --canvas-background: var(--color-base-00);
+    --canvas-dot-pattern: #3d444d;
+    --canvas-card-label-color: var(--color-base-70);
+    /* RGB triplets required — Obsidian uses rgba(var(--canvas-color-N), alpha) */
+    --canvas-color-1: 255, 148, 146;    /* #ff9492 red   */
+    --canvas-color-2: 255, 166, 87;     /* #ffa657 orange */
+    --canvas-color-3: 240, 183, 47;     /* #f0b72f yellow */
+    --canvas-color-4: 43, 216, 83;      /* #2bd853 green  */
+    --canvas-color-5: 165, 214, 255;    /* #a5d6ff cyan   */
+    --canvas-color-6: 210, 168, 255;    /* #d2a8ff purple */
 }
 
 /*
@@ -1006,6 +1018,18 @@ body {
     --kanban-lane-border: #d8dee4;
     --kanban-lane-count: rgba(175, 184, 193, 0.2);
     --kanban-options-btn: var(--background-primary-alt);
+
+    /* Canvas - GitHub Light Default palette */
+    --canvas-background: var(--color-base-00);
+    --canvas-dot-pattern: #afb8c1;
+    --canvas-card-label-color: var(--color-base-70);
+    /* RGB triplets required — Obsidian uses rgba(var(--canvas-color-N), alpha) */
+    --canvas-color-1: 207, 34, 46;      /* #cf222e red   */
+    --canvas-color-2: 188, 76, 0;       /* #bc4c00 orange */
+    --canvas-color-3: 154, 103, 0;      /* #9a6700 yellow */
+    --canvas-color-4: 26, 127, 55;      /* #1a7f37 green  */
+    --canvas-color-5: 9, 105, 218;      /* #0969da cyan   */
+    --canvas-color-6: 130, 80, 223;     /* #8250df purple */
 }
 
 /*
@@ -1889,22 +1913,96 @@ DOCUMENT CONTAINER - Full-width with side margins and border
     --file-line-width: 85%;
 }
 
-.markdown-preview-sizer,
-.cm-sizer {
+/* Always apply — GitHub-style bordered document container */
+.workspace-leaf-content[data-type="markdown"] .markdown-preview-sizer,
+.workspace-leaf-content[data-type="markdown"] .cm-sizer {
     padding: 32px;
-    margin-left: 54px;
-    /* ~3/4 inch from left edge */
-    margin-right: 54px;
-    /* ~3/4 inch from right edge */
-    max-width: calc(85% - 108px);
-    /* 85% width minus left/right margins */
+    margin-left: 14px;
+    margin-right: 14px;
     border: 1px solid var(--color-base-50);
     border-radius: 6px;
 }
 
-/* Ensure content fills the container width */
-.cm-content,
-.cm-line {
+
+/* Scoped to markdown note views — canvas nodes manage their own width */
+.workspace-leaf-content[data-type="markdown"] .cm-content,
+.workspace-leaf-content[data-type="markdown"] .cm-line {
     max-width: 100% !important;
     width: 100%;
 }
+
+/* ─────────────────────────────────────────────────────────────────────────
+   CANVAS
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* Background dot grid */
+svg.canvas-background circle {
+    fill: var(--canvas-dot-pattern);
+}
+
+/* Default card (node) container */
+.canvas-node-container {
+    background-color: var(--color-base-10);
+    border-color: var(--color-base-30);
+    border-radius: 6px;
+}
+
+/* Focused/selected card */
+.canvas-node.is-focused > .canvas-node-container,
+.canvas-node.is-selected > .canvas-node-container {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+/* Colored card variants — border uses full color, background uses 10% alpha tint */
+.canvas-node[data-color="1"] .canvas-node-container {
+    border-color: rgb(var(--canvas-color-1));
+    background-color: rgba(var(--canvas-color-1), 0.1);
+}
+.canvas-node[data-color="2"] .canvas-node-container {
+    border-color: rgb(var(--canvas-color-2));
+    background-color: rgba(var(--canvas-color-2), 0.1);
+}
+.canvas-node[data-color="3"] .canvas-node-container {
+    border-color: rgb(var(--canvas-color-3));
+    background-color: rgba(var(--canvas-color-3), 0.1);
+}
+.canvas-node[data-color="4"] .canvas-node-container {
+    border-color: rgb(var(--canvas-color-4));
+    background-color: rgba(var(--canvas-color-4), 0.1);
+}
+.canvas-node[data-color="5"] .canvas-node-container {
+    border-color: rgb(var(--canvas-color-5));
+    background-color: rgba(var(--canvas-color-5), 0.1);
+}
+.canvas-node[data-color="6"] .canvas-node-container {
+    border-color: rgb(var(--canvas-color-6));
+    background-color: rgba(var(--canvas-color-6), 0.1);
+}
+
+/* Group containers */
+.canvas-node[data-type="group"] > .canvas-node-container {
+    background-color: rgba(var(--mono-rgb-100), 0.03);
+    border-color: var(--color-base-35);
+    border-style: dashed;
+}
+
+/* Group label */
+.canvas-group-label {
+    color: var(--canvas-card-label-color);
+    font-size: var(--font-small);
+    font-weight: var(--font-semibold);
+}
+
+/* Edge / connection lines */
+.canvas-edges path.canvas-display-path {
+    stroke: var(--color-base-50);
+}
+
+/* Colored edges — parent <g> gets mod-canvas-color-N, child path is canvas-display-path */
+.mod-canvas-color-1 path.canvas-display-path { stroke: rgb(var(--canvas-color-1)); }
+.mod-canvas-color-2 path.canvas-display-path { stroke: rgb(var(--canvas-color-2)); }
+.mod-canvas-color-3 path.canvas-display-path { stroke: rgb(var(--canvas-color-3)); }
+.mod-canvas-color-4 path.canvas-display-path { stroke: rgb(var(--canvas-color-4)); }
+.mod-canvas-color-5 path.canvas-display-path { stroke: rgb(var(--canvas-color-5)); }
+.mod-canvas-color-6 path.canvas-display-path { stroke: rgb(var(--canvas-color-6)); }

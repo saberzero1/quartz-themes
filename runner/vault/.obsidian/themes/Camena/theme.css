@@ -98,6 +98,7 @@ body {
 	--background-modifier-message: var(--accent-color);
 	--background-secondary: var(--background-secondary-alt);
 
+	--bases-group-heading-property-display: none;
 	--bases-table-font-size: var(--text-size-normal);
 	--bases-table-header-color: var(--color-base-00);
 
@@ -224,7 +225,8 @@ body {
 }
 
 	/* CUSTOM — INLINE */
-.bases-embed[alt~="inline"] {
+.bases-embed[alt~="inline"],
+.bases-embed[alt~="Inlines"] {
 	.bases-header,
 	.edit-block-button {
 		display: none;
@@ -244,8 +246,30 @@ body {
 	}
 }
 
-.popover.hover-popover .bases-embed[alt~="inline"] .bases-view {
+.popover.hover-popover .bases-embed[alt~="inline"] .bases-view,
+.popover.hover-popover .bases-embed[alt~="Inlines"] .bases-view {
 	padding: 0;
+}
+
+	/* CUSTOM — QUOTES */
+.bases-embed[alt~="quotes"],
+.bases-embed[alt~="Quotes"] {
+	.bases-list-item {
+		width: 100%;
+		padding: 0.5rem 0;
+		margin-inline-start: 0;
+	}
+
+	.bases-list-item .list-bullet {
+		display: none;
+	}
+
+	.bases-list-item-properties {
+		padding: 0.25rem 0 0.25rem .75rem;
+		border-left: .5rem solid var(--color-accent);
+		border-radius: 0.5rem;
+		background-color: rgba(var(--accent-rgb) / var(--opacity));
+	}
 }
 
 	/* CUSTOM — RESULTS */
@@ -273,27 +297,6 @@ body {
 	}
 }
 
-	/* CUSTOM — QUOTES */
-.bases-embed[alt~="quotes"] {
-	.bases-list-item {
-		width: 100%;
-		padding: 0.5rem 0;
-		margin-inline-start: 0;
-		/* border-bottom: var(--border); */
-	}
-
-	.bases-list-item .list-bullet {
-		display: none;
-	}
-
-	.bases-list-item-properties {
-		padding: 0.25rem 0 0.25rem .75rem;
-		border-left: .5rem solid var(--color-accent);
-		border-radius: 0.5rem;
-		background-color: rgba(var(--accent-rgb) / var(--opacity));
-	}
-}
-
 	/* CARDS */
 .bases-cards-item:hover {
 	background-color: rgba(var(--accent-rgb) / var(--opacity));
@@ -306,6 +309,16 @@ body {
 	/* LIST */
 .bases-list-container {
 	font-family: var(--font-text-theme);
+
+	.bases-group-heading:has(h2, h3, h4, h5, h6) {
+		--bases-group-heading-property-display: none;
+
+		display: block;
+	}
+}
+
+.bases-list-group .bases-group-heading:has(h3) {
+	--bases-group-heading-property-display: none;
 }
 
 	/* TABLES */
@@ -441,22 +454,18 @@ blockquote a:hover,
 	}
 }
 
-.metadata-container .callout .internal-link.is-unresolved,
-.markdown-rendered .callout .internal-link.is-unresolved,
-.metadata-container .el-blockquote .internal-link.is-unresolved,
-.markdown-rendered .el-blockquote .internal-link.is-unresolved {
-	--link-color: rgb(var(--color));
-	--link-color-hover: rgb(var(--color));
-	--link-unresolved-color: rgb(var(--color));
-
+.metadata-container .callout .internal-link,
+.markdown-rendered .callout .internal-link,
+.metadata-container .el-blockquote .internal-link ,
+.markdown-rendered .el-blockquote .internal-link {
 	--checkbox-color: rgb(var(--color));
 	--checkbox-color-hover: rgba(var(--color) / 0.9);
 
 	--code-background: rgba(var(--color) / 0.1);
 	--code-normal: rgb(var(--color));
-
+	
 	--link-color: rgb(var(--color));
-	--link-unresolved-decoration-color: rgba(var(--color) / calc(var(--opacity) * 2));
+	--link-color-hover: rgb(var(--color));
 
 	--list-marker-color: var(--color);
 
@@ -699,6 +708,13 @@ iframe.external-embed,
 .HyperMD-header span.cm-footref.cm-header-5, 
 .HyperMD-header span.cm-footref.cm-header-6 {
 	font-size: var(--font-smallest) !important;
+}
+
+
+
+/* GRAPH */
+.graph-view.color-fill-unresolved {
+	opacity: 1.0;
 }
 
 
@@ -962,59 +978,20 @@ u {
 /* STYLES */
 	/* ALIGNMENTS */
 .center,
-p:has(span.center) {
+p:has(.center),
+.bases-table-cell:has(.center) {
 	text-align: center;
+	justify-content: center;
 }
 
 .right,
-p:has(span.right) {
+p:has(.right) {
 	text-align: right;
 }
 
 .left,
-p:has(span.left) {
+p:has(.left) {
 	text-align: left;
-}
-
-	/* COLORS */
-.r,
-.red {
-	color: var(--color-red)
-}
-
-.orange {
-	color: var(--color-orange);
-}
-
-.y,
-.yellow {
-	color: var(--color-yellow)
-}
-
-.g,
-.green {
-	color: var(--color-green)
-}
-
-.cyan {
-	color: var(--color-cyan);
-}
-
-.blue {
-	color: var(--color-blue);
-}
-
-.purple {
-	color: var(--color-purple);
-}
-
-.pink {
-	color: var(--color-pink);
-}
-
-.grey,
-.gray {
-	color: var(--color-grey);
 }
 
 	/* LINE NUMBERS */
@@ -1067,7 +1044,6 @@ table,
 	margin-inline: auto;
 
 	--link-color: var(--accent-color);
-	--link-unresolved-color: var(--accent-color);
 	--text-highlight-bg: rgba(var(--accent-rgb) / var(--opacity));
 }
 
@@ -1099,7 +1075,8 @@ table,
 }
 
 .cm-html-embed tbody tr > td:has(mark.red), 
-.markdown-rendered tbody tr > td:has(mark.red) {
+.markdown-rendered tbody tr > td:has(mark.red),
+.bases-table-cell:has(mark.red) {
 	background-color: rgba(var(--color-red-rgb) / 0.25);
 
 	mark {
@@ -1108,7 +1085,8 @@ table,
 }
 
 .cm-html-embed tbody tr > td:has(mark.orange), 
-.markdown-rendered tbody tr > td:has(mark.orange) {
+.markdown-rendered tbody tr > td:has(mark.orange),
+.bases-table-cell:has(mark.orange) {
 	background-color: rgba(var(--color-orange-rgb) / 0.25);
 
 	mark {
@@ -1117,7 +1095,8 @@ table,
 }
 
 .cm-html-embed tbody tr > td:has(mark.yellow), 
-.markdown-rendered tbody tr > td:has(mark.yellow) {
+.markdown-rendered tbody tr > td:has(mark.yellow),
+.bases-table-cell:has(mark.yellow) {
 	background-color: rgba(var(--color-yellow-rgb) / 0.25);
 
 	mark {
@@ -1126,7 +1105,8 @@ table,
 }
 
 .cm-html-embed tbody tr > td:has(mark.green), 
-.markdown-rendered tbody tr > td:has(mark.green) {
+.markdown-rendered tbody tr > td:has(mark.green),
+.bases-table-cell:has(mark.green) {
 	background-color: rgba(var(--color-green-rgb) / 0.25);
 
 	mark {
@@ -1135,7 +1115,8 @@ table,
 }
 
 .cm-html-embed tbody tr > td:has(mark.cyan), 
-.markdown-rendered tbody tr > td:has(mark.cyan) {
+.markdown-rendered tbody tr > td:has(mark.cyan),
+.bases-table-cell:has(mark.cyan) {
 	background-color: rgba(var(--color-cyan-rgb) / 0.25);
 
 	mark {
@@ -1144,7 +1125,8 @@ table,
 }
 
 .cm-html-embed tbody tr > td:has(mark.blue), 
-.markdown-rendered tbody tr > td:has(mark.blue) {
+.markdown-rendered tbody tr > td:has(mark.blue),
+.bases-table-cell:has(mark.blue) {
 	background-color: rgba(var(--color-blue-rgb) / 0.25);
 
 	mark {
@@ -1153,7 +1135,8 @@ table,
 }
 
 .cm-html-embed tbody tr > td:has(mark.purple), 
-.markdown-rendered tbody tr > td:has(mark.purple) {
+.markdown-rendered tbody tr > td:has(mark.purple),
+.bases-table-cell:has(mark.purple) {
 	background-color: rgba(var(--color-purple-rgb) / 0.25);
 
 	mark {
@@ -1162,7 +1145,8 @@ table,
 }
 
 .cm-html-embed tbody tr > td:has(mark.pink), 
-.markdown-rendered tbody tr > td:has(mark.pink) {
+.markdown-rendered tbody tr > td:has(mark.pink),
+.bases-table-cell:has(mark.pink) {
 	background-color: rgba(var(--color-pink-rgb) / 0.25);
 
 	mark {
@@ -1171,7 +1155,8 @@ table,
 }
 
 .cm-html-embed tbody tr > td:has(mark.grey), 
-.markdown-rendered tbody tr > td:has(mark.grey) {
+.markdown-rendered tbody tr > td:has(mark.grey),
+.bases-table-cell:has(mark.grey) {
 	background-color: rgba(from var(--text-normal) r g b / var(--opacity));
 
 	mark {

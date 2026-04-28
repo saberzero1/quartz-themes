@@ -5,311 +5,311 @@ export const theme: ThemeData = {
   dark: {},
   light: {
     base: `:root:root {
-  --accent-h: 0deg !important;
-  --accent-l: 40% !important;
-  --accent-s: 0% !important;
+  --accent-h: 0deg;
+  --accent-l: 40%;
+  --accent-s: 0%;
   --background-modifier-active-hover: hsla(0deg,
   0%,
-  40%, 0.1) !important;
-  --background-modifier-border: hsl(0deg 0% 70%) !important;
-  --background-modifier-border-focus: hsl(0deg 0% 60%) !important;
-  --background-modifier-border-hover: hsl(0deg 0% 65%) !important;
-  --background-modifier-form-field: hsl(0deg 0% 100%) !important;
-  --background-modifier-form-field-hover: hsl(0deg 0% 100%) !important;
-  --background-primary: hsl(0deg 0% 100%) !important;
-  --background-primary-alt: hsl(0deg 0% 95%) !important;
-  --background-secondary: hsl(0deg 0% 95%) !important;
-  --background-secondary-alt: hsl(0deg 0% 90%) !important;
-  --bases-cards-background: hsl(0deg 0% 100%) !important;
-  --bases-cards-cover-background: hsl(0deg 0% 95%) !important;
-  --bases-cards-shadow: 0 0 0 1px hsl(0deg 0% 70%) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px hsl(0deg 0% 65%) !important;
-  --bases-embed-border-color: hsl(0deg 0% 70%) !important;
-  --bases-group-heading-property-color: hsl(0deg 0% 30%) !important;
-  --bases-table-border-color: hsl(0deg 0% 70%) !important;
-  --bases-table-cell-background-active: hsl(0deg 0% 100%) !important;
-  --bases-table-cell-background-disabled: hsl(0deg 0% 95%) !important;
+  40%, 0.1);
+  --background-modifier-border: hsl(0deg 0% 70%);
+  --background-modifier-border-focus: hsl(0deg 0% 60%);
+  --background-modifier-border-hover: hsl(0deg 0% 65%);
+  --background-modifier-form-field: hsl(0deg 0% 100%);
+  --background-modifier-form-field-hover: hsl(0deg 0% 100%);
+  --background-primary: hsl(0deg 0% 100%);
+  --background-primary-alt: hsl(0deg 0% 95%);
+  --background-secondary: hsl(0deg 0% 95%);
+  --background-secondary-alt: hsl(0deg 0% 90%);
+  --bases-cards-background: hsl(0deg 0% 100%);
+  --bases-cards-cover-background: hsl(0deg 0% 95%);
+  --bases-cards-shadow: 0 0 0 1px hsl(0deg 0% 70%);
+  --bases-cards-shadow-hover: 0 0 0 1px hsl(0deg 0% 65%);
+  --bases-embed-border-color: hsl(0deg 0% 70%);
+  --bases-group-heading-property-color: hsl(0deg 0% 30%);
+  --bases-table-border-color: hsl(0deg 0% 70%);
+  --bases-table-cell-background-active: hsl(0deg 0% 100%);
+  --bases-table-cell-background-disabled: hsl(0deg 0% 95%);
   --bases-table-cell-background-selected: hsla(0deg,
   0%,
-  40%, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(0deg 0% 60%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(0deg 0% 30%) !important;
-  --bases-table-group-background: hsl(0deg 0% 95%) !important;
-  --bases-table-header-background: hsl(0deg 0% 100%) !important;
-  --bases-table-header-color: hsl(0deg 0% 30%) !important;
-  --bases-table-summary-background: hsl(0deg 0% 100%) !important;
-  --blockquote-border-color: hsl(0deg 0% 30%) !important;
-  --blur-background: color-mix(in srgb, hsl(0deg 0% 100%) 65%, transparent) linear-gradient(hsl(0deg 0% 100%), color-mix(in srgb, hsl(0deg 0% 100%) 65%, transparent)) !important;
-  --canvas-background: hsl(0deg 0% 100%) !important;
-  --canvas-card-label-color: hsl(0deg 0% 50%) !important;
-  --canvas-dot-pattern: hsl(0deg 0% 70%) !important;
-  --caret-color: hsl(0deg 0% 30%) !important;
+  40%, 0.1);
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(0deg 0% 60%);
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(0deg 0% 30%);
+  --bases-table-group-background: hsl(0deg 0% 95%);
+  --bases-table-header-background: hsl(0deg 0% 100%);
+  --bases-table-header-color: hsl(0deg 0% 30%);
+  --bases-table-summary-background: hsl(0deg 0% 100%);
+  --blockquote-border-color: hsl(0deg 0% 30%);
+  --blur-background: color-mix(in srgb, hsl(0deg 0% 100%) 65%, transparent) linear-gradient(hsl(0deg 0% 100%), color-mix(in srgb, hsl(0deg 0% 100%) 65%, transparent));
+  --canvas-background: hsl(0deg 0% 100%);
+  --canvas-card-label-color: hsl(0deg 0% 50%);
+  --canvas-dot-pattern: hsl(0deg 0% 70%);
+  --caret-color: hsl(0deg 0% 30%);
   --checkbox-border-color: hsl(0deg,
   0%,
-  40%) !important;
-  --checkbox-border-color-hover: hsl(0deg 0% 20%) !important;
+  40%);
+  --checkbox-border-color-hover: hsl(0deg 0% 20%);
   --checkbox-color: hsl(0deg,
   0%,
-  40%) !important;
-  --checkbox-color-hover: hsl(0deg 0% 20%) !important;
-  --checkbox-marker-color: hsl(0deg 0% 100%) !important;
-  --checklist-done-color: hsl(0deg 0% 30%) !important;
-  --code-background: hsl(0deg 0% 95%) !important;
-  --code-border-color: hsl(0deg 0% 70%) !important;
-  --code-comment: hsl(0deg 0% 50%) !important;
-  --code-function: hsl(0deg 0% 25%) !important;
-  --code-important: hsl(0deg 0% 20%) !important;
-  --code-keyword: hsl(0deg 0% 25%) !important;
-  --code-normal: hsl(0deg 0% 30%) !important;
-  --code-operator: hsl(0deg 0% 10%) !important;
-  --code-property: hsl(0deg 0% 5%) !important;
-  --code-punctuation: hsl(0deg 0% 30%) !important;
-  --code-string: hsl(0deg 0% 40%) !important;
-  --code-tag: hsl(0deg 0% 0%) !important;
-  --code-value: hsl(0deg 0% 35%) !important;
-  --collapse-icon-color: hsl(0deg 0% 50%) !important;
+  40%);
+  --checkbox-color-hover: hsl(0deg 0% 20%);
+  --checkbox-marker-color: hsl(0deg 0% 100%);
+  --checklist-done-color: hsl(0deg 0% 30%);
+  --code-background: hsl(0deg 0% 95%);
+  --code-border-color: hsl(0deg 0% 70%);
+  --code-comment: hsl(0deg 0% 50%);
+  --code-function: hsl(0deg 0% 25%);
+  --code-important: hsl(0deg 0% 20%);
+  --code-keyword: hsl(0deg 0% 25%);
+  --code-normal: hsl(0deg 0% 30%);
+  --code-operator: hsl(0deg 0% 10%);
+  --code-property: hsl(0deg 0% 5%);
+  --code-punctuation: hsl(0deg 0% 30%);
+  --code-string: hsl(0deg 0% 40%);
+  --code-tag: hsl(0deg 0% 0%);
+  --code-value: hsl(0deg 0% 35%);
+  --collapse-icon-color: hsl(0deg 0% 50%);
   --collapse-icon-color-collapsed: hsl(0deg,
   0%,
-  40%) !important;
+  40%);
   --color-accent: hsl(0deg,
   0%,
-  40%) !important;
-  --color-accent-1: hsl(0deg 0% 30%) !important;
-  --color-accent-2: hsl(0deg 0% 20%) !important;
+  40%);
+  --color-accent-1: hsl(0deg 0% 30%);
+  --color-accent-2: hsl(0deg 0% 20%);
   --color-accent-hsl: 0deg,
   0%,
-  40% !important;
-  --color-base-00: hsl(0deg 0% 100%) !important;
-  --color-base-05: hsl(0deg 0% 95%) !important;
-  --color-base-10: hsl(0deg 0% 90%) !important;
-  --color-base-100: hsl(0deg 0% 0%) !important;
-  --color-base-15: hsl(0deg 0% 85%) !important;
-  --color-base-20: hsl(0deg 0% 80%) !important;
-  --color-base-25: hsl(0deg 0% 75%) !important;
-  --color-base-30: hsl(0deg 0% 70%) !important;
-  --color-base-35: hsl(0deg 0% 65%) !important;
-  --color-base-40: hsl(0deg 0% 60%) !important;
-  --color-base-45: hsl(0deg 0% 55%) !important;
-  --color-base-50: hsl(0deg 0% 50%) !important;
-  --color-base-55: hsl(0deg 0% 45%) !important;
-  --color-base-60: hsl(0deg 0% 40%) !important;
-  --color-base-65: hsl(0deg 0% 35%) !important;
-  --color-base-70: hsl(0deg 0% 30%) !important;
-  --color-base-75: hsl(0deg 0% 25%) !important;
-  --color-base-80: hsl(0deg 0% 20%) !important;
-  --color-base-85: hsl(0deg 0% 15%) !important;
-  --color-base-90: hsl(0deg 0% 10%) !important;
-  --color-base-95: hsl(0deg 0% 5%) !important;
-  --dark: hsl(0deg 0% 0%) !important;
-  --darkgray: hsl(0deg 0% 0%) !important;
-  --divider-color: hsl(0deg 0% 70%) !important;
-  --divider-color-hover: hsl(0deg 0% 30%) !important;
-  --dropdown-background: hsl(0deg 0% 100%) !important;
-  --dropdown-background-hover: hsl(0deg 0% 90%) !important;
-  --embed-block-shadow-hover: 0 0 0 1px hsl(0deg 0% 70%), inset 0 0 0 1px hsl(0deg 0% 70%) !important;
-  --embed-border-start: 2px solid hsl(0deg 0% 30%) !important;
-  --file-header-background: hsl(0deg 0% 100%) !important;
-  --file-header-background-focused: hsl(0deg 0% 100%) !important;
-  --flair-background: hsl(0deg 0% 100%) !important;
-  --flair-color: hsl(0deg 0% 0%) !important;
-  --footnote-divider-color: hsl(0deg 0% 70%) !important;
-  --footnote-id-color: hsl(0deg 0% 30%) !important;
-  --footnote-id-color-no-occurrences: hsl(0deg 0% 50%) !important;
-  --graph-line: hsl(0deg 0% 65%) !important;
-  --graph-node: hsl(0deg 0% 30%) !important;
+  40%;
+  --color-base-00: hsl(0deg 0% 100%);
+  --color-base-05: hsl(0deg 0% 95%);
+  --color-base-10: hsl(0deg 0% 90%);
+  --color-base-100: hsl(0deg 0% 0%);
+  --color-base-15: hsl(0deg 0% 85%);
+  --color-base-20: hsl(0deg 0% 80%);
+  --color-base-25: hsl(0deg 0% 75%);
+  --color-base-30: hsl(0deg 0% 70%);
+  --color-base-35: hsl(0deg 0% 65%);
+  --color-base-40: hsl(0deg 0% 60%);
+  --color-base-45: hsl(0deg 0% 55%);
+  --color-base-50: hsl(0deg 0% 50%);
+  --color-base-55: hsl(0deg 0% 45%);
+  --color-base-60: hsl(0deg 0% 40%);
+  --color-base-65: hsl(0deg 0% 35%);
+  --color-base-70: hsl(0deg 0% 30%);
+  --color-base-75: hsl(0deg 0% 25%);
+  --color-base-80: hsl(0deg 0% 20%);
+  --color-base-85: hsl(0deg 0% 15%);
+  --color-base-90: hsl(0deg 0% 10%);
+  --color-base-95: hsl(0deg 0% 5%);
+  --dark: var(--text-normal, hsl(0deg 0% 0%));
+  --darkgray: var(--text-normal, hsl(0deg 0% 0%));
+  --divider-color: hsl(0deg 0% 70%);
+  --divider-color-hover: hsl(0deg 0% 30%);
+  --dropdown-background: hsl(0deg 0% 100%);
+  --dropdown-background-hover: hsl(0deg 0% 90%);
+  --embed-block-shadow-hover: 0 0 0 1px hsl(0deg 0% 70%), inset 0 0 0 1px hsl(0deg 0% 70%);
+  --embed-border-start: 2px solid hsl(0deg 0% 30%);
+  --file-header-background: hsl(0deg 0% 100%);
+  --file-header-background-focused: hsl(0deg 0% 100%);
+  --flair-background: hsl(0deg 0% 100%);
+  --flair-color: hsl(0deg 0% 0%);
+  --footnote-divider-color: hsl(0deg 0% 70%);
+  --footnote-id-color: hsl(0deg 0% 30%);
+  --footnote-id-color-no-occurrences: hsl(0deg 0% 50%);
+  --graph-line: hsl(0deg 0% 65%);
+  --graph-node: hsl(0deg 0% 30%);
   --graph-node-focused: hsl(0deg,
   0%,
-  40%) !important;
-  --graph-node-unresolved: hsl(0deg 0% 50%) !important;
-  --graph-text: hsl(0deg 0% 0%) !important;
-  --gray: hsl(0deg 0% 30%) !important;
-  --heading-formatting: hsl(0deg 0% 50%) !important;
-  --highlight: hsla(0deg,
+  40%);
+  --graph-node-unresolved: hsl(0deg 0% 50%);
+  --graph-text: hsl(0deg 0% 0%);
+  --gray: var(--text-muted, hsl(0deg 0% 30%));
+  --heading-formatting: hsl(0deg 0% 50%);
+  --highlight: var(--text-highlight-bg, hsla(0deg,
   0%,
-  40%, 0.3) !important;
-  --hr-color: hsl(0deg 0% 70%) !important;
-  --icon-color: hsl(0deg 0% 30%) !important;
+  40%, 0.3));
+  --hr-color: hsl(0deg 0% 70%);
+  --icon-color: hsl(0deg 0% 30%);
   --icon-color-active: hsl(0deg,
   0%,
-  40%) !important;
-  --icon-color-focused: hsl(0deg 0% 0%) !important;
-  --icon-color-hover: hsl(0deg 0% 30%) !important;
-  --input-date-separator: hsl(0deg 0% 50%) !important;
-  --input-placeholder-color: hsl(0deg 0% 50%) !important;
-  --interactive-accent: hsl(0deg 0% 30%) !important;
-  --interactive-accent-hover: hsl(0deg 0% 20%) !important;
+  40%);
+  --icon-color-focused: hsl(0deg 0% 0%);
+  --icon-color-hover: hsl(0deg 0% 30%);
+  --input-date-separator: hsl(0deg 0% 50%);
+  --input-placeholder-color: hsl(0deg 0% 50%);
+  --interactive-accent: hsl(0deg 0% 30%);
+  --interactive-accent-hover: hsl(0deg 0% 20%);
   --interactive-accent-hsl: 0deg,
   0%,
-  40% !important;
-  --interactive-hover: hsl(0deg 0% 90%) !important;
-  --interactive-normal: hsl(0deg 0% 100%) !important;
-  --light: hsl(0deg 0% 100%) !important;
-  --lightgray: hsl(0deg 0% 95%) !important;
+  40%;
+  --interactive-hover: hsl(0deg 0% 90%);
+  --interactive-normal: hsl(0deg 0% 100%);
+  --light: var(--background-primary, hsl(0deg 0% 100%));
+  --lightgray: var(--background-secondary, hsl(0deg 0% 95%));
   --link-color: hsl(0deg,
   0%,
-  40%) !important;
-  --link-color-hover: hsl(0deg 0% 20%) !important;
+  40%);
+  --link-color-hover: hsl(0deg 0% 20%);
   --link-external-color: hsl(0deg,
   0%,
-  40%) !important;
-  --link-external-color-hover: hsl(0deg 0% 20%) !important;
+  40%);
+  --link-external-color-hover: hsl(0deg 0% 20%);
   --link-unresolved-color: hsl(0deg,
   0%,
-  40%) !important;
+  40%);
   --link-unresolved-decoration-color: hsla(0deg,
   0%,
-  40%, 0.3) !important;
-  --list-marker-color: hsl(0deg 0% 50%) !important;
+  40%, 0.3);
+  --list-marker-color: hsl(0deg 0% 50%);
   --list-marker-color-collapsed: hsl(0deg,
   0%,
-  40%) !important;
-  --list-marker-color-hover: hsl(0deg 0% 30%) !important;
-  --menu-background: hsl(0deg 0% 95%) !important;
-  --menu-border-color: hsl(0deg 0% 65%) !important;
-  --metadata-border-color: hsl(0deg 0% 70%) !important;
-  --metadata-divider-color: hsl(0deg 0% 70%) !important;
-  --metadata-input-text-color: hsl(0deg 0% 0%) !important;
-  --metadata-label-text-color: hsl(0deg 0% 30%) !important;
-  --metadata-label-text-color-hover: hsl(0deg 0% 30%) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(0deg 0% 60%) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(0deg 0% 65%) !important;
-  --modal-background: hsl(0deg 0% 100%) !important;
-  --modal-border-color: hsl(0deg 0% 60%) !important;
-  --nav-collapse-icon-color: hsl(0deg 0% 50%) !important;
-  --nav-collapse-icon-color-collapsed: hsl(0deg 0% 50%) !important;
-  --nav-heading-color: hsl(0deg 0% 0%) !important;
-  --nav-heading-color-collapsed: hsl(0deg 0% 50%) !important;
-  --nav-heading-color-collapsed-hover: hsl(0deg 0% 30%) !important;
-  --nav-heading-color-hover: hsl(0deg 0% 0%) !important;
+  40%);
+  --list-marker-color-hover: hsl(0deg 0% 30%);
+  --menu-background: hsl(0deg 0% 95%);
+  --menu-border-color: hsl(0deg 0% 65%);
+  --metadata-border-color: hsl(0deg 0% 70%);
+  --metadata-divider-color: hsl(0deg 0% 70%);
+  --metadata-input-text-color: hsl(0deg 0% 0%);
+  --metadata-label-text-color: hsl(0deg 0% 30%);
+  --metadata-label-text-color-hover: hsl(0deg 0% 30%);
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(0deg 0% 60%);
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(0deg 0% 65%);
+  --modal-background: hsl(0deg 0% 100%);
+  --modal-border-color: hsl(0deg 0% 60%);
+  --nav-collapse-icon-color: hsl(0deg 0% 50%);
+  --nav-collapse-icon-color-collapsed: hsl(0deg 0% 50%);
+  --nav-heading-color: hsl(0deg 0% 0%);
+  --nav-heading-color-collapsed: hsl(0deg 0% 50%);
+  --nav-heading-color-collapsed-hover: hsl(0deg 0% 30%);
+  --nav-heading-color-hover: hsl(0deg 0% 0%);
   --nav-item-background-selected: hsla(0deg,
   0%,
-  40%, 0.15) !important;
-  --nav-item-color: hsl(0deg 0% 30%) !important;
-  --nav-item-color-active: hsl(0deg 0% 0%) !important;
+  40%, 0.15);
+  --nav-item-color: hsl(0deg 0% 30%);
+  --nav-item-color-active: hsl(0deg 0% 0%);
   --nav-item-color-highlighted: hsl(0deg,
   0%,
-  40%) !important;
-  --nav-item-color-hover: hsl(0deg 0% 0%) !important;
-  --nav-item-color-selected: hsl(0deg 0% 0%) !important;
-  --nav-tag-color: hsl(0deg 0% 50%) !important;
-  --nav-tag-color-active: hsl(0deg 0% 30%) !important;
-  --nav-tag-color-hover: hsl(0deg 0% 30%) !important;
-  --pdf-background: hsl(0deg 0% 100%) !important;
-  --pdf-page-background: hsl(0deg 0% 100%) !important;
-  --pdf-sidebar-background: hsl(0deg 0% 100%) !important;
-  --pill-border-color: hsl(0deg 0% 70%) !important;
-  --pill-border-color-hover: hsl(0deg 0% 65%) !important;
-  --pill-color: hsl(0deg 0% 30%) !important;
-  --pill-color-hover: hsl(0deg 0% 0%) !important;
-  --pill-color-remove: hsl(0deg 0% 50%) !important;
+  40%);
+  --nav-item-color-hover: hsl(0deg 0% 0%);
+  --nav-item-color-selected: hsl(0deg 0% 0%);
+  --nav-tag-color: hsl(0deg 0% 50%);
+  --nav-tag-color-active: hsl(0deg 0% 30%);
+  --nav-tag-color-hover: hsl(0deg 0% 30%);
+  --pdf-background: hsl(0deg 0% 100%);
+  --pdf-page-background: hsl(0deg 0% 100%);
+  --pdf-sidebar-background: hsl(0deg 0% 100%);
+  --pill-border-color: hsl(0deg 0% 70%);
+  --pill-border-color-hover: hsl(0deg 0% 65%);
+  --pill-color: hsl(0deg 0% 30%);
+  --pill-color-hover: hsl(0deg 0% 0%);
+  --pill-color-remove: hsl(0deg 0% 50%);
   --pill-color-remove-hover: hsl(0deg,
   0%,
-  40%) !important;
-  --prompt-background: hsl(0deg 0% 100%) !important;
-  --prompt-border-color: hsl(0deg 0% 60%) !important;
-  --raised-background: color-mix(in srgb, hsl(0deg 0% 100%) 65%, transparent) linear-gradient(hsl(0deg 0% 100%), color-mix(in srgb, hsl(0deg 0% 100%) 65%, transparent)) !important;
-  --ribbon-background: hsl(0deg 0% 95%) !important;
-  --ribbon-background-collapsed: hsl(0deg 0% 100%) !important;
-  --search-clear-button-color: hsl(0deg 0% 30%) !important;
-  --search-icon-color: hsl(0deg 0% 30%) !important;
-  --search-result-background: hsl(0deg 0% 100%) !important;
-  --secondary: hsl(0deg,
+  40%);
+  --prompt-background: hsl(0deg 0% 100%);
+  --prompt-border-color: hsl(0deg 0% 60%);
+  --raised-background: color-mix(in srgb, hsl(0deg 0% 100%) 65%, transparent) linear-gradient(hsl(0deg 0% 100%), color-mix(in srgb, hsl(0deg 0% 100%) 65%, transparent));
+  --ribbon-background: hsl(0deg 0% 95%);
+  --ribbon-background-collapsed: hsl(0deg 0% 100%);
+  --search-clear-button-color: hsl(0deg 0% 30%);
+  --search-icon-color: hsl(0deg 0% 30%);
+  --search-result-background: hsl(0deg 0% 100%);
+  --secondary: var(--text-accent, hsl(0deg,
   0%,
-  40%) !important;
-  --setting-group-heading-color: hsl(0deg 0% 0%) !important;
-  --setting-items-background: hsl(0deg 0% 95%) !important;
-  --setting-items-border-color: hsl(0deg 0% 70%) !important;
-  --shiki-active-tab-border-color: hsl(0deg 0% 30%) !important;
-  --shiki-code-background: hsl(0deg 0% 95%) !important;
-  --shiki-code-comment: hsl(0deg 0% 50%) !important;
-  --shiki-code-normal: hsl(0deg 0% 30%) !important;
-  --shiki-code-punctuation: hsl(0deg 0% 30%) !important;
-  --shiki-gutter-border-color: hsl(0deg 0% 70%) !important;
-  --shiki-gutter-text-color: hsl(0deg 0% 50%) !important;
-  --shiki-gutter-text-color-highlight: hsl(0deg 0% 30%) !important;
-  --shiki-highlight-neutral: hsl(0deg 0% 30%) !important;
-  --shiki-terminal-dots-color: hsl(0deg 0% 50%) !important;
-  --slider-thumb-border-color: hsl(0deg 0% 65%) !important;
-  --slider-track-background: hsl(0deg 0% 70%) !important;
-  --status-bar-background: hsl(0deg 0% 95%) !important;
-  --status-bar-border-color: hsl(0deg 0% 70%) !important;
-  --status-bar-text-color: hsl(0deg 0% 30%) !important;
-  --suggestion-background: hsl(0deg 0% 100%) !important;
-  --tab-background-active: hsl(0deg 0% 100%) !important;
-  --tab-container-background: hsl(0deg 0% 95%) !important;
-  --tab-divider-color: hsl(0deg 0% 65%) !important;
-  --tab-outline-color: hsl(0deg 0% 70%) !important;
-  --tab-switcher-background: hsl(0deg 0% 95%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0deg 0% 95%), transparent) !important;
+  40%));
+  --setting-group-heading-color: hsl(0deg 0% 0%);
+  --setting-items-background: hsl(0deg 0% 95%);
+  --setting-items-border-color: hsl(0deg 0% 70%);
+  --shiki-active-tab-border-color: hsl(0deg 0% 30%);
+  --shiki-code-background: hsl(0deg 0% 95%);
+  --shiki-code-comment: hsl(0deg 0% 50%);
+  --shiki-code-normal: hsl(0deg 0% 30%);
+  --shiki-code-punctuation: hsl(0deg 0% 30%);
+  --shiki-gutter-border-color: hsl(0deg 0% 70%);
+  --shiki-gutter-text-color: hsl(0deg 0% 50%);
+  --shiki-gutter-text-color-highlight: hsl(0deg 0% 30%);
+  --shiki-highlight-neutral: hsl(0deg 0% 30%);
+  --shiki-terminal-dots-color: hsl(0deg 0% 50%);
+  --slider-thumb-border-color: hsl(0deg 0% 65%);
+  --slider-track-background: hsl(0deg 0% 70%);
+  --status-bar-background: hsl(0deg 0% 95%);
+  --status-bar-border-color: hsl(0deg 0% 70%);
+  --status-bar-text-color: hsl(0deg 0% 30%);
+  --suggestion-background: hsl(0deg 0% 100%);
+  --tab-background-active: hsl(0deg 0% 100%);
+  --tab-container-background: hsl(0deg 0% 95%);
+  --tab-divider-color: hsl(0deg 0% 65%);
+  --tab-outline-color: hsl(0deg 0% 70%);
+  --tab-switcher-background: hsl(0deg 0% 95%);
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0deg 0% 95%), transparent);
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0deg,
   0%,
-  40%) !important;
-  --tab-text-color: hsl(0deg 0% 50%) !important;
-  --tab-text-color-active: hsl(0deg 0% 30%) !important;
-  --tab-text-color-focused: hsl(0deg 0% 30%) !important;
-  --tab-text-color-focused-active: hsl(0deg 0% 30%) !important;
-  --tab-text-color-focused-active-current: hsl(0deg 0% 0%) !important;
+  40%);
+  --tab-text-color: hsl(0deg 0% 50%);
+  --tab-text-color-active: hsl(0deg 0% 30%);
+  --tab-text-color-focused: hsl(0deg 0% 30%);
+  --tab-text-color-focused-active: hsl(0deg 0% 30%);
+  --tab-text-color-focused-active-current: hsl(0deg 0% 0%);
   --tab-text-color-focused-highlighted: hsl(0deg,
   0%,
-  40%) !important;
-  --table-add-button-border-color: hsl(0deg 0% 70%) !important;
-  --table-border-color: hsl(0deg 0% 70%) !important;
-  --table-drag-handle-background-active: hsl(0deg 0% 30%) !important;
-  --table-drag-handle-color: hsl(0deg 0% 50%) !important;
-  --table-header-border-color: hsl(0deg 0% 70%) !important;
-  --table-header-color: hsl(0deg 0% 0%) !important;
+  40%);
+  --table-add-button-border-color: hsl(0deg 0% 70%);
+  --table-border-color: hsl(0deg 0% 70%);
+  --table-drag-handle-background-active: hsl(0deg 0% 30%);
+  --table-drag-handle-color: hsl(0deg 0% 50%);
+  --table-header-border-color: hsl(0deg 0% 70%);
+  --table-header-color: hsl(0deg 0% 0%);
   --table-selection: hsla(0deg,
   0%,
-  40%, 0.1) !important;
-  --table-selection-border-color: hsl(0deg 0% 30%) !important;
+  40%, 0.1);
+  --table-selection-border-color: hsl(0deg 0% 30%);
   --tag-background: hsla(0deg,
   0%,
-  40%, 0.1) !important;
+  40%, 0.1);
   --tag-background-hover: hsla(0deg,
   0%,
-  40%, 0.2) !important;
+  40%, 0.2);
   --tag-border-color: hsla(0deg,
   0%,
-  40%, 0.15) !important;
+  40%, 0.15);
   --tag-border-color-hover: hsla(0deg,
   0%,
-  40%, 0.15) !important;
+  40%, 0.15);
   --tag-color: hsl(0deg,
   0%,
-  40%) !important;
+  40%);
   --tag-color-hover: hsl(0deg,
   0%,
-  40%) !important;
-  --tertiary: hsl(0deg 0% 20%) !important;
+  40%);
+  --tertiary: var(--text-accent-hover, hsl(0deg 0% 20%));
   --text-accent: hsl(0deg,
   0%,
-  40%) !important;
-  --text-accent-hover: hsl(0deg 0% 20%) !important;
-  --text-faint: hsl(0deg 0% 50%) !important;
+  40%);
+  --text-accent-hover: hsl(0deg 0% 20%);
+  --text-faint: hsl(0deg 0% 50%);
   --text-highlight-bg: hsla(0deg,
   0%,
-  40%, 0.3) !important;
-  --text-muted: hsl(0deg 0% 30%) !important;
-  --text-normal: hsl(0deg 0% 0%) !important;
+  40%, 0.3);
+  --text-muted: hsl(0deg 0% 30%);
+  --text-normal: hsl(0deg 0% 0%);
   --text-selection: hsla(0deg,
   0%,
-  40%, 0.2) !important;
-  --textHighlight: hsla(0deg,
+  40%, 0.2);
+  --textHighlight: var(--text-highlight-bg, hsla(0deg,
   0%,
-  40%, 0.3) !important;
-  --titlebar-background: hsl(0deg 0% 95%) !important;
-  --titlebar-background-focused: hsl(0deg 0% 90%) !important;
-  --titlebar-border-color: hsl(0deg 0% 70%) !important;
-  --titlebar-text-color: hsl(0deg 0% 30%) !important;
-  --titlebar-text-color-focused: hsl(0deg 0% 0%) !important;
-  --vault-profile-color: hsl(0deg 0% 0%) !important;
-  --vault-profile-color-hover: hsl(0deg 0% 0%) !important;
-  --quartz-icon-color: currentColor !important;
+  40%, 0.3));
+  --titlebar-background: hsl(0deg 0% 95%);
+  --titlebar-background-focused: hsl(0deg 0% 90%);
+  --titlebar-border-color: hsl(0deg 0% 70%);
+  --titlebar-text-color: hsl(0deg 0% 30%);
+  --titlebar-text-color-focused: hsl(0deg 0% 0%);
+  --vault-profile-color: hsl(0deg 0% 0%);
+  --vault-profile-color-hover: hsl(0deg 0% 0%);
+  --quartz-icon-color: currentColor;
 }
 
 html body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

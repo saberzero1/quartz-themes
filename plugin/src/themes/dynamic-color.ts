@@ -11,1309 +11,1309 @@ export const theme: ThemeData = {
     base: `:root:root[saved-theme="dark"] {
   --background-modifier-active-hover: hsl(
 		258 calc(max(48%, 88%)) 30%
-	) !important;
+	);
   --background-modifier-border: hsl(
 		258 8% 30%
-	) !important;
+	);
   --background-modifier-border-focus: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --background-modifier-border-hover: hsl(
 		258 8% 60%
-	) !important;
+	);
   --background-modifier-error: hsl(
 		0 84% 30%
-	) !important;
+	);
   --background-modifier-hover: hsl(
 		258 4% 12%
-	) !important;
+	);
   --background-primary: hsl(
 		258 4% 4%
-	) !important;
+	);
   --background-primary-alt: hsl(
 		258 4% 10%
-	) !important;
+	);
   --background-secondary: hsl(
 		258 4% 17%
-	) !important;
+	);
   --background-secondary-alt: hsl(
 		258 4% 22%
-	) !important;
+	);
   --bases-cards-background: hsl(
 		258 4% 4%
-	) !important;
+	);
   --bases-cards-cover-background: hsl(
 		258 4% 10%
-	) !important;
+	);
   --bases-cards-shadow: 0 0 0 1px hsl(
 		258 8% 30%
-	) !important;
+	);
   --bases-cards-shadow-hover: 0 0 0 1px hsl(
 		258 8% 60%
-	) !important;
+	);
   --bases-embed-border-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --bases-group-heading-property-color: hsl(
 		258 8% 60%
-	) !important;
+	);
   --bases-table-border-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --bases-table-cell-background-active: hsl(
 		258 4% 4%
-	) !important;
+	);
   --bases-table-cell-background-disabled: hsl(
 		258 4% 10%
-	) !important;
+	);
   --bases-table-cell-shadow-active: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --bases-table-group-background: hsl(
 		258 4% 10%
-	) !important;
+	);
   --bases-table-header-background: hsl(
 		258 4% 4%
-	) !important;
+	);
   --bases-table-header-background-hover: hsl(
 		258 4% 12%
-	) !important;
+	);
   --bases-table-header-color: hsl(
 		258 8% 60%
-	) !important;
+	);
   --bases-table-summary-background: hsl(
 		258 4% 4%
-	) !important;
+	);
   --bases-table-summary-background-hover: hsl(
 		258 4% 12%
-	) !important;
+	);
   --blockquote-background-color: hsl(
 		258 4% 17%
-	) !important;
+	);
   --blockquote-border-color: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --blockquote-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --blur-background: color-mix(in srgb, hsl(
 		258 4% 12%
 	) 65%, transparent) linear-gradient(hsl(
 		258 4% 12%
 	), color-mix(in srgb, hsl(
 		258 4% 12%
-	) 65%, transparent)) !important;
-  --button-radius: 20px !important;
+	) 65%, transparent));
+  --button-radius: 20px;
   --canvas-background: hsl(
 		258 4% 10%
-	) !important;
+	);
   --canvas-card-label-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --canvas-dot-pattern: hsl(
 		258 8% 30%
-	) !important;
+	);
   --caret-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --checkbox-border-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --checkbox-border-color-hover: hsl(
 		258 8% 60%
-	) !important;
+	);
   --checkbox-color: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --checkbox-marker-color: hsl(
 		258 4% 4%
-	) !important;
+	);
   --checklist-done-color: hsl(
 		258 8% 60%
-	) !important;
+	);
   --code-background: hsl(
 		258 4% 6%
-	) !important;
+	);
   --code-border-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --code-bracket-background: hsl(
 		258 4% 12%
-	) !important;
+	);
   --code-comment: hsl(
 		258 8% 30%
-	) !important;
+	);
   --code-normal: hsl(
 		258 4% 90%
-	) !important;
+	);
   --code-punctuation: hsl(
 		258 8% 60%
-	) !important;
+	);
   --collapse-icon-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --collapse-icon-color-collapsed: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
-  --dark: hsl(
+	);
+  --dark: var(--text-normal, hsl(
 		258 4% 90%
-	) !important;
-  --darkgray: hsl(
+	));
+  --darkgray: var(--text-normal, hsl(
 		258 4% 90%
-	) !important;
+	));
   --divider-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --divider-color-hover: hsl(
 		258 8% 60%
-	) !important;
+	);
   --dropdown-background: hsl(
 		258 4% 12%
-	) !important;
+	);
   --dropdown-background-hover: hsl(
 		258 calc(max(48%, 88%)) 30%
-	) !important;
+	);
   --embed-background: hsl(
 		258 4% 6%
-	) !important;
+	);
   --embed-block-shadow-hover: 0 0 0 1px hsl(
 		258 8% 30%
 	), inset 0 0 0 1px hsl(
 		258 8% 30%
-	) !important;
+	);
   --embed-border-start: 2px solid hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
-  --error-hue: 0 !important;
-  --error-saturation: 84% !important;
+	);
+  --error-hue: 0;
+  --error-saturation: 84%;
   --file-header-background: hsl(
 		258 4% 4%
-	) !important;
+	);
   --file-header-background-focused: hsl(
 		258 4% 4%
-	) !important;
+	);
   --flair-background: hsl(
 		258 4% 12%
-	) !important;
+	);
   --flair-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --footnote-divider-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --footnote-id-color: hsl(
 		258 8% 60%
-	) !important;
+	);
   --footnote-id-color-no-occurrences: hsl(
 		258 8% 30%
-	) !important;
+	);
   --footnote-input-background-active: hsl(
 		258 4% 12%
-	) !important;
+	);
   --graph-line: hsl(
 		258 8% 60%
-	) !important;
+	);
   --graph-node: hsl(
 		258 4% 12%
-	) !important;
+	);
   --graph-node-attachment: hsl(
 		318 24% 30%
-	) !important;
+	);
   --graph-node-focused: hsl(
 		258 4% 24%
-	) !important;
+	);
   --graph-node-tag: hsl(
 		258 calc(max(48%, 88%)) 30%
-	) !important;
+	);
   --graph-node-unresolved: hsl(
 		258 4% 10%
-	) !important;
+	);
   --graph-text: hsl(
 		258 4% 90%
-	) !important;
-  --gray: hsl(
+	);
+  --gray: var(--text-muted, hsl(
 		258 8% 60%
-	) !important;
+	));
   --h1-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --h2-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --h3-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --h4-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --h5-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --h6-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --heading-formatting: hsl(
 		258 8% 30%
-	) !important;
-  --highlight: hsl(
+	);
+  --highlight: var(--text-highlight-bg, hsl(
 		318 24% 30%
-	) !important;
+	));
   --hr-color: hsl(
 		258 8% 30%
-	) !important;
-  --hue: 258 !important;
+	);
+  --hue: 258;
   --icon-color: hsl(
 		258 8% 60%
-	) !important;
+	);
   --icon-color-active: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --icon-color-focused: hsl(
 		258 4% 90%
-	) !important;
+	);
   --icon-color-hover: hsl(
 		258 8% 60%
-	) !important;
+	);
   --inline-title-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --input-date-separator: hsl(
 		258 8% 30%
-	) !important;
+	);
   --input-placeholder-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --interactive-accent: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --interactive-hover: hsl(
 		258 calc(max(48%, 88%)) 30%
-	) !important;
+	);
   --interactive-normal: hsl(
 		258 4% 12%
-	) !important;
+	);
   --interactive-normal-accent: hsl(
 		258 4% 24%
-	) !important;
+	);
   --interactive-normal-hover: hsl(
 		258 4% 6%
-	) !important;
-  --light: hsl(
+	);
+  --light: var(--background-primary, hsl(
 		258 4% 4%
-	) !important;
-  --lightgray: hsl(
+	));
+  --lightgray: var(--background-secondary, hsl(
 		258 4% 17%
-	) !important;
+	));
   --link-color: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --link-color-hover: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --link-external-color: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --link-external-color-hover: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --link-unresolved-color: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --list-marker-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --list-marker-color-collapsed: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --list-marker-color-hover: hsl(
 		258 8% 60%
-	) !important;
-  --md-ref-palette-error-0: hsl(0 84% 0%) !important;
+	);
+  --md-ref-palette-error-0: hsl(0 84% 0%);
   --md-ref-palette-error-10: hsl(
 		0 84% 10%
-	) !important;
+	);
   --md-ref-palette-error-100: hsl(
 		0 84% 100%
-	) !important;
+	);
   --md-ref-palette-error-12: hsl(
 		0 84% 12%
-	) !important;
+	);
   --md-ref-palette-error-17: hsl(
 		0 84% 17%
-	) !important;
+	);
   --md-ref-palette-error-20: hsl(
 		0 84% 20%
-	) !important;
+	);
   --md-ref-palette-error-22: hsl(
 		0 84% 22%
-	) !important;
+	);
   --md-ref-palette-error-24: hsl(
 		0 84% 24%
-	) !important;
+	);
   --md-ref-palette-error-25: hsl(
 		0 84% 25%
-	) !important;
+	);
   --md-ref-palette-error-30: hsl(
 		0 84% 30%
-	) !important;
+	);
   --md-ref-palette-error-35: hsl(
 		0 84% 35%
-	) !important;
-  --md-ref-palette-error-4: hsl(0 84% 4%) !important;
+	);
+  --md-ref-palette-error-4: hsl(0 84% 4%);
   --md-ref-palette-error-40: hsl(
 		0 84% 40%
-	) !important;
-  --md-ref-palette-error-5: hsl(0 84% 5%) !important;
+	);
+  --md-ref-palette-error-5: hsl(0 84% 5%);
   --md-ref-palette-error-50: hsl(
 		0 84% 50%
-	) !important;
-  --md-ref-palette-error-6: hsl(0 84% 6%) !important;
+	);
+  --md-ref-palette-error-6: hsl(0 84% 6%);
   --md-ref-palette-error-60: hsl(
 		0 84% 60%
-	) !important;
+	);
   --md-ref-palette-error-70: hsl(
 		0 84% 70%
-	) !important;
+	);
   --md-ref-palette-error-80: hsl(
 		0 84% 80%
-	) !important;
+	);
   --md-ref-palette-error-87: hsl(
 		0 84% 87%
-	) !important;
+	);
   --md-ref-palette-error-90: hsl(
 		0 84% 90%
-	) !important;
+	);
   --md-ref-palette-error-92: hsl(
 		0 84% 92%
-	) !important;
+	);
   --md-ref-palette-error-94: hsl(
 		0 84% 94%
-	) !important;
+	);
   --md-ref-palette-error-95: hsl(
 		0 84% 95%
-	) !important;
+	);
   --md-ref-palette-error-96: hsl(
 		0 84% 96%
-	) !important;
+	);
   --md-ref-palette-error-98: hsl(
 		0 84% 98%
-	) !important;
+	);
   --md-ref-palette-error-99: hsl(
 		0 84% 99%
-	) !important;
+	);
   --md-ref-palette-neutral-0: hsl(
 		258 4% 0%
-	) !important;
+	);
   --md-ref-palette-neutral-10: hsl(
 		258 4% 10%
-	) !important;
+	);
   --md-ref-palette-neutral-100: hsl(
 		258 4% 100%
-	) !important;
+	);
   --md-ref-palette-neutral-12: hsl(
 		258 4% 12%
-	) !important;
+	);
   --md-ref-palette-neutral-17: hsl(
 		258 4% 17%
-	) !important;
+	);
   --md-ref-palette-neutral-20: hsl(
 		258 4% 20%
-	) !important;
+	);
   --md-ref-palette-neutral-22: hsl(
 		258 4% 22%
-	) !important;
+	);
   --md-ref-palette-neutral-24: hsl(
 		258 4% 24%
-	) !important;
+	);
   --md-ref-palette-neutral-25: hsl(
 		258 4% 25%
-	) !important;
+	);
   --md-ref-palette-neutral-30: hsl(
 		258 4% 30%
-	) !important;
+	);
   --md-ref-palette-neutral-35: hsl(
 		258 4% 35%
-	) !important;
+	);
   --md-ref-palette-neutral-4: hsl(
 		258 4% 4%
-	) !important;
+	);
   --md-ref-palette-neutral-40: hsl(
 		258 4% 40%
-	) !important;
+	);
   --md-ref-palette-neutral-5: hsl(
 		258 4% 5%
-	) !important;
+	);
   --md-ref-palette-neutral-50: hsl(
 		258 4% 50%
-	) !important;
+	);
   --md-ref-palette-neutral-6: hsl(
 		258 4% 6%
-	) !important;
+	);
   --md-ref-palette-neutral-60: hsl(
 		258 4% 60%
-	) !important;
+	);
   --md-ref-palette-neutral-70: hsl(
 		258 4% 70%
-	) !important;
+	);
   --md-ref-palette-neutral-80: hsl(
 		258 4% 80%
-	) !important;
+	);
   --md-ref-palette-neutral-87: hsl(
 		258 4% 87%
-	) !important;
+	);
   --md-ref-palette-neutral-90: hsl(
 		258 4% 90%
-	) !important;
+	);
   --md-ref-palette-neutral-92: hsl(
 		258 4% 92%
-	) !important;
+	);
   --md-ref-palette-neutral-94: hsl(
 		258 4% 94%
-	) !important;
+	);
   --md-ref-palette-neutral-95: hsl(
 		258 4% 95%
-	) !important;
+	);
   --md-ref-palette-neutral-96: hsl(
 		258 4% 96%
-	) !important;
+	);
   --md-ref-palette-neutral-98: hsl(
 		258 4% 98%
-	) !important;
+	);
   --md-ref-palette-neutral-99: hsl(
 		258 4% 99%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-0: hsl(
 		258 8% 0%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-10: hsl(
 		258 8% 10%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-100: hsl(
 		258 8% 100%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-12: hsl(
 		258 8% 12%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-17: hsl(
 		258 8% 17%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-20: hsl(
 		258 8% 20%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-22: hsl(
 		258 8% 22%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-24: hsl(
 		258 8% 24%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-25: hsl(
 		258 8% 25%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-30: hsl(
 		258 8% 30%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-35: hsl(
 		258 8% 35%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-4: hsl(
 		258 8% 4%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-40: hsl(
 		258 8% 40%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-5: hsl(
 		258 8% 5%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-50: hsl(
 		258 8% 50%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-6: hsl(
 		258 8% 6%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-60: hsl(
 		258 8% 60%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-70: hsl(
 		258 8% 70%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-80: hsl(
 		258 8% 80%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-87: hsl(
 		258 8% 87%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-90: hsl(
 		258 8% 90%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-92: hsl(
 		258 8% 92%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-94: hsl(
 		258 8% 94%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-95: hsl(
 		258 8% 95%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-96: hsl(
 		258 8% 96%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-98: hsl(
 		258 8% 98%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-99: hsl(
 		258 8% 99%
-	) !important;
+	);
   --md-ref-palette-primary-0: hsl(
 		258 calc(max(48%, 88%)) 0%
-	) !important;
+	);
   --md-ref-palette-primary-10: hsl(
 		258 calc(max(48%, 88%)) 10%
-	) !important;
+	);
   --md-ref-palette-primary-100: hsl(
 		258 calc(max(48%, 88%)) 100%
-	) !important;
+	);
   --md-ref-palette-primary-12: hsl(
 		258 calc(max(48%, 88%)) 12%
-	) !important;
+	);
   --md-ref-palette-primary-17: hsl(
 		258 calc(max(48%, 88%)) 17%
-	) !important;
+	);
   --md-ref-palette-primary-20: hsl(
 		258 calc(max(48%, 88%)) 20%
-	) !important;
+	);
   --md-ref-palette-primary-22: hsl(
 		258 calc(max(48%, 88%)) 22%
-	) !important;
+	);
   --md-ref-palette-primary-24: hsl(
 		258 calc(max(48%, 88%)) 24%
-	) !important;
+	);
   --md-ref-palette-primary-25: hsl(
 		258 calc(max(48%, 88%)) 25%
-	) !important;
+	);
   --md-ref-palette-primary-30: hsl(
 		258 calc(max(48%, 88%)) 30%
-	) !important;
+	);
   --md-ref-palette-primary-35: hsl(
 		258 calc(max(48%, 88%)) 35%
-	) !important;
+	);
   --md-ref-palette-primary-4: hsl(
 		258 calc(max(48%, 88%)) 4%
-	) !important;
+	);
   --md-ref-palette-primary-40: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --md-ref-palette-primary-5: hsl(
 		258 calc(max(48%, 88%)) 5%
-	) !important;
+	);
   --md-ref-palette-primary-50: hsl(
 		258 calc(max(48%, 88%)) 50%
-	) !important;
+	);
   --md-ref-palette-primary-6: hsl(
 		258 calc(max(48%, 88%)) 6%
-	) !important;
+	);
   --md-ref-palette-primary-60: hsl(
 		258 calc(max(48%, 88%)) 60%
-	) !important;
+	);
   --md-ref-palette-primary-70: hsl(
 		258 calc(max(48%, 88%)) 70%
-	) !important;
+	);
   --md-ref-palette-primary-80: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --md-ref-palette-primary-87: hsl(
 		258 calc(max(48%, 88%)) 87%
-	) !important;
+	);
   --md-ref-palette-primary-90: hsl(
 		258 calc(max(48%, 88%)) 90%
-	) !important;
+	);
   --md-ref-palette-primary-92: hsl(
 		258 calc(max(48%, 88%)) 92%
-	) !important;
+	);
   --md-ref-palette-primary-94: hsl(
 		258 calc(max(48%, 88%)) 94%
-	) !important;
+	);
   --md-ref-palette-primary-95: hsl(
 		258 calc(max(48%, 88%)) 95%
-	) !important;
+	);
   --md-ref-palette-primary-96: hsl(
 		258 calc(max(48%, 88%)) 96%
-	) !important;
+	);
   --md-ref-palette-primary-98: hsl(
 		258 calc(max(48%, 88%)) 98%
-	) !important;
+	);
   --md-ref-palette-primary-99: hsl(
 		258 calc(max(48%, 88%)) 99%
-	) !important;
+	);
   --md-ref-palette-secondary-0: hsl(
 		258 16% 0%
-	) !important;
+	);
   --md-ref-palette-secondary-10: hsl(
 		258 16% 10%
-	) !important;
+	);
   --md-ref-palette-secondary-100: hsl(
 		258 16% 100%
-	) !important;
+	);
   --md-ref-palette-secondary-12: hsl(
 		258 16% 12%
-	) !important;
+	);
   --md-ref-palette-secondary-17: hsl(
 		258 16% 17%
-	) !important;
+	);
   --md-ref-palette-secondary-20: hsl(
 		258 16% 20%
-	) !important;
+	);
   --md-ref-palette-secondary-22: hsl(
 		258 16% 22%
-	) !important;
+	);
   --md-ref-palette-secondary-24: hsl(
 		258 16% 24%
-	) !important;
+	);
   --md-ref-palette-secondary-25: hsl(
 		258 16% 25%
-	) !important;
+	);
   --md-ref-palette-secondary-30: hsl(
 		258 16% 30%
-	) !important;
+	);
   --md-ref-palette-secondary-35: hsl(
 		258 16% 35%
-	) !important;
+	);
   --md-ref-palette-secondary-4: hsl(
 		258 16% 4%
-	) !important;
+	);
   --md-ref-palette-secondary-40: hsl(
 		258 16% 40%
-	) !important;
+	);
   --md-ref-palette-secondary-5: hsl(
 		258 16% 5%
-	) !important;
+	);
   --md-ref-palette-secondary-50: hsl(
 		258 16% 50%
-	) !important;
+	);
   --md-ref-palette-secondary-6: hsl(
 		258 16% 6%
-	) !important;
+	);
   --md-ref-palette-secondary-60: hsl(
 		258 16% 60%
-	) !important;
+	);
   --md-ref-palette-secondary-70: hsl(
 		258 16% 70%
-	) !important;
+	);
   --md-ref-palette-secondary-80: hsl(
 		258 16% 80%
-	) !important;
+	);
   --md-ref-palette-secondary-87: hsl(
 		258 16% 87%
-	) !important;
+	);
   --md-ref-palette-secondary-90: hsl(
 		258 16% 90%
-	) !important;
+	);
   --md-ref-palette-secondary-92: hsl(
 		258 16% 92%
-	) !important;
+	);
   --md-ref-palette-secondary-94: hsl(
 		258 16% 94%
-	) !important;
+	);
   --md-ref-palette-secondary-95: hsl(
 		258 16% 95%
-	) !important;
+	);
   --md-ref-palette-secondary-96: hsl(
 		258 16% 96%
-	) !important;
+	);
   --md-ref-palette-secondary-98: hsl(
 		258 16% 98%
-	) !important;
+	);
   --md-ref-palette-secondary-99: hsl(
 		258 16% 99%
-	) !important;
+	);
   --md-ref-palette-tertiary-0: hsl(
 		318 24% 0%
-	) !important;
+	);
   --md-ref-palette-tertiary-10: hsl(
 		318 24% 10%
-	) !important;
+	);
   --md-ref-palette-tertiary-100: hsl(
 		318 24% 100%
-	) !important;
+	);
   --md-ref-palette-tertiary-12: hsl(
 		318 24% 12%
-	) !important;
+	);
   --md-ref-palette-tertiary-17: hsl(
 		318 24% 17%
-	) !important;
+	);
   --md-ref-palette-tertiary-20: hsl(
 		318 24% 20%
-	) !important;
+	);
   --md-ref-palette-tertiary-22: hsl(
 		318 24% 22%
-	) !important;
+	);
   --md-ref-palette-tertiary-24: hsl(
 		318 24% 24%
-	) !important;
+	);
   --md-ref-palette-tertiary-25: hsl(
 		318 24% 25%
-	) !important;
+	);
   --md-ref-palette-tertiary-30: hsl(
 		318 24% 30%
-	) !important;
+	);
   --md-ref-palette-tertiary-35: hsl(
 		318 24% 35%
-	) !important;
+	);
   --md-ref-palette-tertiary-4: hsl(
 		318 24% 4%
-	) !important;
+	);
   --md-ref-palette-tertiary-40: hsl(
 		318 24% 40%
-	) !important;
+	);
   --md-ref-palette-tertiary-5: hsl(
 		318 24% 5%
-	) !important;
+	);
   --md-ref-palette-tertiary-50: hsl(
 		318 24% 50%
-	) !important;
+	);
   --md-ref-palette-tertiary-6: hsl(
 		318 24% 6%
-	) !important;
+	);
   --md-ref-palette-tertiary-60: hsl(
 		318 24% 60%
-	) !important;
+	);
   --md-ref-palette-tertiary-70: hsl(
 		318 24% 70%
-	) !important;
+	);
   --md-ref-palette-tertiary-80: hsl(
 		318 24% 80%
-	) !important;
+	);
   --md-ref-palette-tertiary-87: hsl(
 		318 24% 87%
-	) !important;
+	);
   --md-ref-palette-tertiary-90: hsl(
 		318 24% 90%
-	) !important;
+	);
   --md-ref-palette-tertiary-92: hsl(
 		318 24% 92%
-	) !important;
+	);
   --md-ref-palette-tertiary-94: hsl(
 		318 24% 94%
-	) !important;
+	);
   --md-ref-palette-tertiary-95: hsl(
 		318 24% 95%
-	) !important;
+	);
   --md-ref-palette-tertiary-96: hsl(
 		318 24% 96%
-	) !important;
+	);
   --md-ref-palette-tertiary-98: hsl(
 		318 24% 98%
-	) !important;
+	);
   --md-ref-palette-tertiary-99: hsl(
 		318 24% 99%
-	) !important;
+	);
   --md-sys-color-background: hsl(
 		258 4% 10%
-	) !important;
+	);
   --md-sys-color-error: hsl(
 		0 84% 80%
-	) !important;
+	);
   --md-sys-color-error-container: hsl(
 		0 84% 30%
-	) !important;
+	);
   --md-sys-color-inverse-on-surface: hsl(
 		258 4% 20%
-	) !important;
+	);
   --md-sys-color-inverse-primary: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --md-sys-color-inverse-surface: hsl(
 		258 4% 90%
-	) !important;
+	);
   --md-sys-color-on-background: hsl(
 		258 4% 90%
-	) !important;
+	);
   --md-sys-color-on-error: hsl(
 		0 84% 20%
-	) !important;
+	);
   --md-sys-color-on-error-container: hsl(
 		0 84% 90%
-	) !important;
+	);
   --md-sys-color-on-primary: hsl(
 		258 calc(max(48%, 88%)) 20%
-	) !important;
+	);
   --md-sys-color-on-primary-container: hsl(
 		258 calc(max(48%, 88%)) 90%
-	) !important;
+	);
   --md-sys-color-on-primary-fixed: hsl(
 		258 calc(max(48%, 88%)) 10%
-	) !important;
+	);
   --md-sys-color-on-primary-fixed-dim: hsl(
 		258 calc(max(48%, 88%)) 30%
-	) !important;
+	);
   --md-sys-color-on-secondary: hsl(
 		258 16% 20%
-	) !important;
+	);
   --md-sys-color-on-secondary-container: hsl(
 		258 16% 90%
-	) !important;
+	);
   --md-sys-color-on-secondary-fixed: hsl(
 		258 16% 10%
-	) !important;
+	);
   --md-sys-color-on-secondary-fixed-dim: hsl(
 		258 16% 30%
-	) !important;
+	);
   --md-sys-color-on-surface: hsl(
 		258 4% 90%
-	) !important;
+	);
   --md-sys-color-on-surface-variant: hsl(
 		258 8% 80%
-	) !important;
+	);
   --md-sys-color-on-tertiary: hsl(
 		318 24% 20%
-	) !important;
+	);
   --md-sys-color-on-tertiary-container: hsl(
 		318 24% 90%
-	) !important;
+	);
   --md-sys-color-on-tertiary-fixed: hsl(
 		318 24% 10%
-	) !important;
+	);
   --md-sys-color-on-tertiary-fixed-dim: hsl(
 		318 24% 30%
-	) !important;
+	);
   --md-sys-color-outline: hsl(
 		258 8% 60%
-	) !important;
+	);
   --md-sys-color-outline-variant: hsl(
 		258 8% 30%
-	) !important;
+	);
   --md-sys-color-primary: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --md-sys-color-primary-container: hsl(
 		258 calc(max(48%, 88%)) 30%
-	) !important;
+	);
   --md-sys-color-primary-fixed: hsl(
 		258 calc(max(48%, 88%)) 90%
-	) !important;
+	);
   --md-sys-color-primary-fixed-dim: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --md-sys-color-scrim: hsl(
 		258 4% 0%
-	) !important;
+	);
   --md-sys-color-secondary: hsl(
 		258 16% 80%
-	) !important;
+	);
   --md-sys-color-secondary-container: hsl(
 		258 16% 30%
-	) !important;
+	);
   --md-sys-color-secondary-fixed: hsl(
 		258 16% 90%
-	) !important;
+	);
   --md-sys-color-secondary-fixed-dim: hsl(
 		258 16% 80%
-	) !important;
+	);
   --md-sys-color-shadow: hsl(
 		258 4% 0%
-	) !important;
+	);
   --md-sys-color-surface: hsl(
 		258 4% 6%
-	) !important;
+	);
   --md-sys-color-surface-bright: hsl(
 		258 4% 24%
-	) !important;
+	);
   --md-sys-color-surface-container: hsl(
 		258 4% 12%
-	) !important;
+	);
   --md-sys-color-surface-container-high: hsl(
 		258 4% 17%
-	) !important;
+	);
   --md-sys-color-surface-container-highest: hsl(
 		258 4% 22%
-	) !important;
+	);
   --md-sys-color-surface-container-low: hsl(
 		258 4% 10%
-	) !important;
+	);
   --md-sys-color-surface-container-lowest: hsl(
 		258 4% 4%
-	) !important;
+	);
   --md-sys-color-surface-dim: hsl(
 		258 4% 6%
-	) !important;
+	);
   --md-sys-color-surface-variant: hsl(
 		258 8% 30%
-	) !important;
+	);
   --md-sys-color-tertiary: hsl(
 		318 24% 80%
-	) !important;
+	);
   --md-sys-color-tertiary-container: hsl(
 		318 24% 30%
-	) !important;
+	);
   --md-sys-color-tertiary-fixed: hsl(
 		318 24% 90%
-	) !important;
+	);
   --md-sys-color-tertiary-fixed-dim: hsl(
 		318 24% 80%
-	) !important;
+	);
   --menu-background: hsl(
 		258 4% 17%
-	) !important;
+	);
   --menu-border-color: hsl(
 		258 8% 60%
-	) !important;
+	);
   --metadata-border-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --metadata-divider-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --metadata-input-background-active: hsl(
 		258 4% 12%
-	) !important;
+	);
   --metadata-input-text-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --metadata-label-background-active: hsl(
 		258 4% 12%
-	) !important;
+	);
   --metadata-label-text-color: hsl(
 		258 8% 60%
-	) !important;
+	);
   --metadata-label-text-color-hover: hsl(
 		258 8% 60%
-	) !important;
+	);
   --metadata-property-background-active: hsl(
 		258 4% 12%
-	) !important;
+	);
   --metadata-property-box-shadow-focus: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --metadata-property-box-shadow-hover: 0 0 0 1px hsl(
 		258 8% 60%
-	) !important;
+	);
   --modal-background: hsl(
 		258 4% 4%
-	) !important;
+	);
   --nav-collapse-icon-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --nav-collapse-icon-color-collapsed: hsl(
 		258 8% 30%
-	) !important;
+	);
   --nav-heading-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --nav-heading-color-collapsed: hsl(
 		258 8% 30%
-	) !important;
+	);
   --nav-heading-color-collapsed-hover: hsl(
 		258 8% 60%
-	) !important;
+	);
   --nav-heading-color-hover: hsl(
 		258 4% 90%
-	) !important;
+	);
   --nav-item-background-active: hsl(
 		258 4% 12%
-	) !important;
+	);
   --nav-item-background-hover: hsl(
 		258 4% 12%
-	) !important;
+	);
   --nav-item-color: hsl(
 		258 8% 60%
-	) !important;
+	);
   --nav-item-color-active: hsl(
 		258 4% 90%
-	) !important;
+	);
   --nav-item-color-highlighted: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --nav-item-color-hover: hsl(
 		258 4% 90%
-	) !important;
+	);
   --nav-item-color-selected: hsl(
 		258 4% 90%
-	) !important;
+	);
   --nav-tag-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --nav-tag-color-active: hsl(
 		258 8% 60%
-	) !important;
+	);
   --nav-tag-color-hover: hsl(
 		258 8% 60%
-	) !important;
-  --neutral-hue: 258 !important;
-  --neutral-saturation: 4% !important;
-  --neutral-variant-hue: 258 !important;
-  --neutral-variant-saturation: 8% !important;
+	);
+  --neutral-hue: 258;
+  --neutral-saturation: 4%;
+  --neutral-variant-hue: 258;
+  --neutral-variant-saturation: 8%;
   --pdf-background: hsl(
 		258 4% 4%
-	) !important;
+	);
   --pdf-page-background: hsl(
 		258 4% 4%
-	) !important;
+	);
   --pdf-shadow: 0 0 0 1px hsl(
 		258 8% 30%
-	) !important;
+	);
   --pdf-sidebar-background: hsl(
 		258 4% 4%
-	) !important;
+	);
   --pdf-thumbnail-shadow: 0 0 0 1px hsl(
 		258 8% 30%
-	) !important;
+	);
   --pill-border-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --pill-border-color-hover: hsl(
 		258 8% 60%
-	) !important;
+	);
   --pill-color: hsl(
 		258 8% 60%
-	) !important;
+	);
   --pill-color-hover: hsl(
 		258 4% 90%
-	) !important;
+	);
   --pill-color-remove: hsl(
 		258 8% 30%
-	) !important;
+	);
   --pill-color-remove-hover: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
-  --primary-hue: 258 !important;
-  --primary-saturation: calc(max(48%, 88%)) !important;
+	);
+  --primary-hue: 258;
+  --primary-saturation: calc(max(48%, 88%));
   --prompt-background: hsl(
 		258 4% 4%
-	) !important;
+	);
   --raised-background: color-mix(in srgb, hsl(
 		258 4% 12%
 	) 65%, transparent) linear-gradient(hsl(
 		258 4% 12%
 	), color-mix(in srgb, hsl(
 		258 4% 12%
-	) 65%, transparent)) !important;
+	) 65%, transparent));
   --ribbon-background: hsl(
 		258 4% 12%
-	) !important;
+	);
   --ribbon-background-collapsed: hsl(
 		258 4% 6%
-	) !important;
-  --saturation: 88% !important;
+	);
+  --saturation: 88%;
   --scrollbar-active-thumb-bg: hsl(
 		258 4% 90%
-	) !important;
+	);
   --scrollbar-bg: hsl(
 		258 4% 6%
-	) !important;
+	);
   --scrollbar-thumb-bg: hsl(
 		258 8% 60%
-	) !important;
+	);
   --search-clear-button-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --search-icon-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --search-result-background: hsl(
 		258 4% 12%
-	) !important;
-  --secondary: hsl(
+	);
+  --secondary: var(--text-accent, hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
-  --secondary-hue: 258 !important;
-  --secondary-saturation: 16% !important;
+	));
+  --secondary-hue: 258;
+  --secondary-saturation: 16%;
   --setting-group-heading-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --setting-items-background: hsl(
 		258 4% 10%
-	) !important;
+	);
   --setting-items-border-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --shiki-active-tab-border-color: hsl(
 		258 8% 60%
-	) !important;
+	);
   --shiki-code-background: hsl(
 		258 4% 6%
-	) !important;
+	);
   --shiki-code-comment: hsl(
 		258 8% 30%
-	) !important;
+	);
   --shiki-code-normal: hsl(
 		258 8% 60%
-	) !important;
+	);
   --shiki-code-punctuation: hsl(
 		258 8% 60%
-	) !important;
+	);
   --shiki-gutter-border-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --shiki-gutter-text-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --shiki-gutter-text-color-highlight: hsl(
 		258 8% 60%
-	) !important;
+	);
   --shiki-highlight-neutral: hsl(
 		258 8% 60%
-	) !important;
+	);
   --shiki-terminal-dots-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --slider-thumb-border-color: hsl(
 		258 8% 60%
-	) !important;
-  --slider-thumb-radius: 36px !important;
+	);
+  --slider-thumb-radius: 36px;
   --slider-track-background: hsl(
 		258 8% 30%
-	) !important;
+	);
   --status-bar-background: hsl(
 		258 calc(max(48%, 88%)) 30%
-	) !important;
+	);
   --status-bar-border-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --status-bar-text-color: hsl(
 		258 calc(max(48%, 88%)) 90%
-	) !important;
+	);
   --suggestion-background: hsl(
 		258 4% 4%
-	) !important;
+	);
   --tab-background-active: hsl(
 		258 4% 4%
-	) !important;
+	);
   --tab-container-background: hsl(
 		258 4% 17%
-	) !important;
+	);
   --tab-divider-color: hsl(
 		258 8% 60%
-	) !important;
+	);
   --tab-outline-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --tab-switcher-background: hsl(
 		258 4% 17%
-	) !important;
+	);
   --tab-switcher-menubar-background: linear-gradient(to top, hsl(
 		258 4% 17%
-	), transparent) !important;
+	), transparent);
   --tab-text-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --tab-text-color-active: hsl(
 		258 8% 60%
-	) !important;
+	);
   --tab-text-color-focused: hsl(
 		258 8% 60%
-	) !important;
+	);
   --tab-text-color-focused-active: hsl(
 		258 8% 60%
-	) !important;
+	);
   --tab-text-color-focused-active-current: hsl(
 		258 4% 90%
-	) !important;
+	);
   --tab-text-color-focused-highlighted: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --table-add-button-border-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --table-border-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --table-drag-handle-background-active: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --table-drag-handle-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --table-drag-handle-color-active: hsl(
 		258 calc(max(48%, 88%)) 20%
-	) !important;
+	);
   --table-header-border-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --table-header-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --table-selection-border-color: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --tag-background: hsl(
 		258 calc(max(48%, 88%)) 30%
-	) !important;
+	);
   --tag-background-hover: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --tag-color: hsl(
 		258 calc(max(48%, 88%)) 90%
-	) !important;
+	);
   --tag-color-hover: hsl(
 		258 calc(max(48%, 88%)) 20%
-	) !important;
-  --tertiary: hsl(
+	);
+  --tertiary: var(--text-accent-hover, hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
-  --tertiary-hue: 318 !important;
-  --tertiary-saturation: 24% !important;
+	));
+  --tertiary-hue: 318;
+  --tertiary-saturation: 24%;
   --text-accent: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --text-accent-hover: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --text-faint: hsl(
 		258 8% 30%
-	) !important;
+	);
   --text-highlight-bg: hsl(
 		318 24% 30%
-	) !important;
+	);
   --text-muted: hsl(
 		258 8% 60%
-	) !important;
+	);
   --text-normal: hsl(
 		258 4% 90%
-	) !important;
+	);
   --text-on-accent: hsl(
 		258 calc(max(48%, 88%)) 20%
-	) !important;
+	);
   --text-on-accent-inverted: hsl(
 		258 calc(max(48%, 88%)) 20%
-	) !important;
+	);
   --text-selection: hsl(
 		258 16% 30%
-	) !important;
-  --textHighlight: hsl(
+	);
+  --textHighlight: var(--text-highlight-bg, hsl(
 		318 24% 30%
-	) !important;
+	));
   --titlebar-background: hsl(
 		258 4% 6%
-	) !important;
+	);
   --titlebar-background-focused: hsl(
 		258 4% 12%
-	) !important;
+	);
   --titlebar-border-color: hsl(
 		258 8% 30%
-	) !important;
+	);
   --titlebar-text-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --titlebar-text-color-focused: hsl(
 		258 4% 90%
-	) !important;
+	);
   --vault-name-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --vault-profile-color: hsl(
 		258 4% 90%
-	) !important;
+	);
   --vault-profile-color-hover: hsl(
 		258 4% 90%
-	) !important;
-  --quartz-icon-color: currentColor !important;
+	);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -2683,1303 +2683,1303 @@ html[saved-theme="dark"] body ul.tags > li {
     base: `:root:root {
   --background-modifier-active-hover: hsl(
 		258 calc(max(48%, 88%)) 90%
-	) !important;
+	);
   --background-modifier-border: hsl(
 		258 8% 80%
-	) !important;
+	);
   --background-modifier-border-focus: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --background-modifier-border-hover: hsl(
 		258 8% 50%
-	) !important;
+	);
   --background-modifier-error: hsl(
 		0 84% 90%
-	) !important;
+	);
   --background-modifier-hover: hsl(
 		258 4% 94%
-	) !important;
+	);
   --background-primary: hsl(
 		258 4% 100%
-	) !important;
+	);
   --background-primary-alt: hsl(
 		258 4% 96%
-	) !important;
+	);
   --background-secondary: hsl(
 		258 4% 92%
-	) !important;
+	);
   --background-secondary-alt: hsl(
 		258 4% 90%
-	) !important;
+	);
   --bases-cards-background: hsl(
 		258 4% 100%
-	) !important;
+	);
   --bases-cards-cover-background: hsl(
 		258 4% 96%
-	) !important;
+	);
   --bases-cards-shadow: 0 0 0 1px hsl(
 		258 8% 80%
-	) !important;
+	);
   --bases-cards-shadow-hover: 0 0 0 1px hsl(
 		258 8% 50%
-	) !important;
+	);
   --bases-embed-border-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --bases-group-heading-property-color: hsl(
 		258 8% 50%
-	) !important;
+	);
   --bases-table-border-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --bases-table-cell-background-active: hsl(
 		258 4% 100%
-	) !important;
+	);
   --bases-table-cell-background-disabled: hsl(
 		258 4% 96%
-	) !important;
+	);
   --bases-table-cell-shadow-active: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --bases-table-group-background: hsl(
 		258 4% 96%
-	) !important;
+	);
   --bases-table-header-background: hsl(
 		258 4% 100%
-	) !important;
+	);
   --bases-table-header-background-hover: hsl(
 		258 4% 94%
-	) !important;
+	);
   --bases-table-header-color: hsl(
 		258 8% 50%
-	) !important;
+	);
   --bases-table-summary-background: hsl(
 		258 4% 100%
-	) !important;
+	);
   --bases-table-summary-background-hover: hsl(
 		258 4% 94%
-	) !important;
+	);
   --blockquote-background-color: hsl(
 		258 4% 92%
-	) !important;
+	);
   --blockquote-border-color: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --blockquote-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --blur-background: color-mix(in srgb, hsl(
 		258 4% 100%
 	) 65%, transparent) linear-gradient(hsl(
 		258 4% 100%
 	), color-mix(in srgb, hsl(
 		258 4% 100%
-	) 65%, transparent)) !important;
-  --button-radius: 20px !important;
+	) 65%, transparent));
+  --button-radius: 20px;
   --canvas-background: hsl(
 		258 4% 99%
-	) !important;
+	);
   --canvas-card-label-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --canvas-dot-pattern: hsl(
 		258 8% 80%
-	) !important;
+	);
   --caret-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --checkbox-border-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --checkbox-border-color-hover: hsl(
 		258 8% 50%
-	) !important;
+	);
   --checkbox-color: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --checkbox-marker-color: hsl(
 		258 4% 100%
-	) !important;
+	);
   --checklist-done-color: hsl(
 		258 8% 50%
-	) !important;
+	);
   --code-background: hsl(
 		258 4% 98%
-	) !important;
+	);
   --code-border-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --code-bracket-background: hsl(
 		258 4% 94%
-	) !important;
+	);
   --code-comment: hsl(
 		258 8% 80%
-	) !important;
+	);
   --code-normal: hsl(
 		258 4% 10%
-	) !important;
+	);
   --code-punctuation: hsl(
 		258 8% 50%
-	) !important;
+	);
   --collapse-icon-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --collapse-icon-color-collapsed: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
-  --dark: hsl(
+	);
+  --dark: var(--text-normal, hsl(
 		258 4% 10%
-	) !important;
-  --darkgray: hsl(
+	));
+  --darkgray: var(--text-normal, hsl(
 		258 4% 10%
-	) !important;
+	));
   --divider-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --divider-color-hover: hsl(
 		258 8% 50%
-	) !important;
+	);
   --dropdown-background: hsl(
 		258 4% 94%
-	) !important;
+	);
   --dropdown-background-hover: hsl(
 		258 calc(max(48%, 88%)) 90%
-	) !important;
+	);
   --embed-background: hsl(
 		258 4% 98%
-	) !important;
+	);
   --embed-block-shadow-hover: 0 0 0 1px hsl(
 		258 8% 80%
 	), inset 0 0 0 1px hsl(
 		258 8% 80%
-	) !important;
+	);
   --embed-border-start: 2px solid hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
-  --error-hue: 0 !important;
-  --error-saturation: 84% !important;
+	);
+  --error-hue: 0;
+  --error-saturation: 84%;
   --file-header-background: hsl(
 		258 4% 100%
-	) !important;
+	);
   --file-header-background-focused: hsl(
 		258 4% 100%
-	) !important;
+	);
   --flair-background: hsl(
 		258 4% 94%
-	) !important;
+	);
   --flair-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --footnote-divider-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --footnote-id-color: hsl(
 		258 8% 50%
-	) !important;
+	);
   --footnote-id-color-no-occurrences: hsl(
 		258 8% 80%
-	) !important;
+	);
   --footnote-input-background-active: hsl(
 		258 4% 94%
-	) !important;
+	);
   --graph-line: hsl(
 		258 8% 50%
-	) !important;
+	);
   --graph-node: hsl(
 		258 4% 94%
-	) !important;
+	);
   --graph-node-attachment: hsl(
 		318 24% 90%
-	) !important;
+	);
   --graph-node-focused: hsl(
 		258 4% 98%
-	) !important;
+	);
   --graph-node-tag: hsl(
 		258 calc(max(48%, 88%)) 90%
-	) !important;
+	);
   --graph-node-unresolved: hsl(
 		258 4% 96%
-	) !important;
+	);
   --graph-text: hsl(
 		258 4% 10%
-	) !important;
-  --gray: hsl(
+	);
+  --gray: var(--text-muted, hsl(
 		258 8% 50%
-	) !important;
+	));
   --h1-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --h2-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --h3-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --h4-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --h5-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --h6-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --heading-formatting: hsl(
 		258 8% 80%
-	) !important;
-  --highlight: hsl(
+	);
+  --highlight: var(--text-highlight-bg, hsl(
 		318 24% 90%
-	) !important;
+	));
   --hr-color: hsl(
 		258 8% 80%
-	) !important;
-  --hue: 258 !important;
+	);
+  --hue: 258;
   --icon-color: hsl(
 		258 8% 50%
-	) !important;
+	);
   --icon-color-active: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --icon-color-focused: hsl(
 		258 4% 10%
-	) !important;
+	);
   --icon-color-hover: hsl(
 		258 8% 50%
-	) !important;
+	);
   --inline-title-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --input-date-separator: hsl(
 		258 8% 80%
-	) !important;
+	);
   --input-placeholder-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --interactive-accent: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --interactive-hover: hsl(
 		258 calc(max(48%, 88%)) 90%
-	) !important;
+	);
   --interactive-normal: hsl(
 		258 4% 94%
-	) !important;
+	);
   --interactive-normal-accent: hsl(
 		258 4% 98%
-	) !important;
+	);
   --interactive-normal-hover: hsl(
 		258 4% 87%
-	) !important;
-  --light: hsl(
+	);
+  --light: var(--background-primary, hsl(
 		258 4% 100%
-	) !important;
-  --lightgray: hsl(
+	));
+  --lightgray: var(--background-secondary, hsl(
 		258 4% 92%
-	) !important;
+	));
   --link-color: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --link-color-hover: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --link-external-color: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --link-external-color-hover: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --link-unresolved-color: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --list-marker-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --list-marker-color-collapsed: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --list-marker-color-hover: hsl(
 		258 8% 50%
-	) !important;
-  --md-ref-palette-error-0: hsl(0 84% 0%) !important;
+	);
+  --md-ref-palette-error-0: hsl(0 84% 0%);
   --md-ref-palette-error-10: hsl(
 		0 84% 10%
-	) !important;
+	);
   --md-ref-palette-error-100: hsl(
 		0 84% 100%
-	) !important;
+	);
   --md-ref-palette-error-12: hsl(
 		0 84% 12%
-	) !important;
+	);
   --md-ref-palette-error-17: hsl(
 		0 84% 17%
-	) !important;
+	);
   --md-ref-palette-error-20: hsl(
 		0 84% 20%
-	) !important;
+	);
   --md-ref-palette-error-22: hsl(
 		0 84% 22%
-	) !important;
+	);
   --md-ref-palette-error-24: hsl(
 		0 84% 24%
-	) !important;
+	);
   --md-ref-palette-error-25: hsl(
 		0 84% 25%
-	) !important;
+	);
   --md-ref-palette-error-30: hsl(
 		0 84% 30%
-	) !important;
+	);
   --md-ref-palette-error-35: hsl(
 		0 84% 35%
-	) !important;
-  --md-ref-palette-error-4: hsl(0 84% 4%) !important;
+	);
+  --md-ref-palette-error-4: hsl(0 84% 4%);
   --md-ref-palette-error-40: hsl(
 		0 84% 40%
-	) !important;
-  --md-ref-palette-error-5: hsl(0 84% 5%) !important;
+	);
+  --md-ref-palette-error-5: hsl(0 84% 5%);
   --md-ref-palette-error-50: hsl(
 		0 84% 50%
-	) !important;
-  --md-ref-palette-error-6: hsl(0 84% 6%) !important;
+	);
+  --md-ref-palette-error-6: hsl(0 84% 6%);
   --md-ref-palette-error-60: hsl(
 		0 84% 60%
-	) !important;
+	);
   --md-ref-palette-error-70: hsl(
 		0 84% 70%
-	) !important;
+	);
   --md-ref-palette-error-80: hsl(
 		0 84% 80%
-	) !important;
+	);
   --md-ref-palette-error-87: hsl(
 		0 84% 87%
-	) !important;
+	);
   --md-ref-palette-error-90: hsl(
 		0 84% 90%
-	) !important;
+	);
   --md-ref-palette-error-92: hsl(
 		0 84% 92%
-	) !important;
+	);
   --md-ref-palette-error-94: hsl(
 		0 84% 94%
-	) !important;
+	);
   --md-ref-palette-error-95: hsl(
 		0 84% 95%
-	) !important;
+	);
   --md-ref-palette-error-96: hsl(
 		0 84% 96%
-	) !important;
+	);
   --md-ref-palette-error-98: hsl(
 		0 84% 98%
-	) !important;
+	);
   --md-ref-palette-error-99: hsl(
 		0 84% 99%
-	) !important;
+	);
   --md-ref-palette-neutral-0: hsl(
 		258 4% 0%
-	) !important;
+	);
   --md-ref-palette-neutral-10: hsl(
 		258 4% 10%
-	) !important;
+	);
   --md-ref-palette-neutral-100: hsl(
 		258 4% 100%
-	) !important;
+	);
   --md-ref-palette-neutral-12: hsl(
 		258 4% 12%
-	) !important;
+	);
   --md-ref-palette-neutral-17: hsl(
 		258 4% 17%
-	) !important;
+	);
   --md-ref-palette-neutral-20: hsl(
 		258 4% 20%
-	) !important;
+	);
   --md-ref-palette-neutral-22: hsl(
 		258 4% 22%
-	) !important;
+	);
   --md-ref-palette-neutral-24: hsl(
 		258 4% 24%
-	) !important;
+	);
   --md-ref-palette-neutral-25: hsl(
 		258 4% 25%
-	) !important;
+	);
   --md-ref-palette-neutral-30: hsl(
 		258 4% 30%
-	) !important;
+	);
   --md-ref-palette-neutral-35: hsl(
 		258 4% 35%
-	) !important;
+	);
   --md-ref-palette-neutral-4: hsl(
 		258 4% 4%
-	) !important;
+	);
   --md-ref-palette-neutral-40: hsl(
 		258 4% 40%
-	) !important;
+	);
   --md-ref-palette-neutral-5: hsl(
 		258 4% 5%
-	) !important;
+	);
   --md-ref-palette-neutral-50: hsl(
 		258 4% 50%
-	) !important;
+	);
   --md-ref-palette-neutral-6: hsl(
 		258 4% 6%
-	) !important;
+	);
   --md-ref-palette-neutral-60: hsl(
 		258 4% 60%
-	) !important;
+	);
   --md-ref-palette-neutral-70: hsl(
 		258 4% 70%
-	) !important;
+	);
   --md-ref-palette-neutral-80: hsl(
 		258 4% 80%
-	) !important;
+	);
   --md-ref-palette-neutral-87: hsl(
 		258 4% 87%
-	) !important;
+	);
   --md-ref-palette-neutral-90: hsl(
 		258 4% 90%
-	) !important;
+	);
   --md-ref-palette-neutral-92: hsl(
 		258 4% 92%
-	) !important;
+	);
   --md-ref-palette-neutral-94: hsl(
 		258 4% 94%
-	) !important;
+	);
   --md-ref-palette-neutral-95: hsl(
 		258 4% 95%
-	) !important;
+	);
   --md-ref-palette-neutral-96: hsl(
 		258 4% 96%
-	) !important;
+	);
   --md-ref-palette-neutral-98: hsl(
 		258 4% 98%
-	) !important;
+	);
   --md-ref-palette-neutral-99: hsl(
 		258 4% 99%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-0: hsl(
 		258 8% 0%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-10: hsl(
 		258 8% 10%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-100: hsl(
 		258 8% 100%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-12: hsl(
 		258 8% 12%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-17: hsl(
 		258 8% 17%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-20: hsl(
 		258 8% 20%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-22: hsl(
 		258 8% 22%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-24: hsl(
 		258 8% 24%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-25: hsl(
 		258 8% 25%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-30: hsl(
 		258 8% 30%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-35: hsl(
 		258 8% 35%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-4: hsl(
 		258 8% 4%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-40: hsl(
 		258 8% 40%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-5: hsl(
 		258 8% 5%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-50: hsl(
 		258 8% 50%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-6: hsl(
 		258 8% 6%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-60: hsl(
 		258 8% 60%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-70: hsl(
 		258 8% 70%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-80: hsl(
 		258 8% 80%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-87: hsl(
 		258 8% 87%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-90: hsl(
 		258 8% 90%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-92: hsl(
 		258 8% 92%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-94: hsl(
 		258 8% 94%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-95: hsl(
 		258 8% 95%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-96: hsl(
 		258 8% 96%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-98: hsl(
 		258 8% 98%
-	) !important;
+	);
   --md-ref-palette-neutral-variant-99: hsl(
 		258 8% 99%
-	) !important;
+	);
   --md-ref-palette-primary-0: hsl(
 		258 calc(max(48%, 88%)) 0%
-	) !important;
+	);
   --md-ref-palette-primary-10: hsl(
 		258 calc(max(48%, 88%)) 10%
-	) !important;
+	);
   --md-ref-palette-primary-100: hsl(
 		258 calc(max(48%, 88%)) 100%
-	) !important;
+	);
   --md-ref-palette-primary-12: hsl(
 		258 calc(max(48%, 88%)) 12%
-	) !important;
+	);
   --md-ref-palette-primary-17: hsl(
 		258 calc(max(48%, 88%)) 17%
-	) !important;
+	);
   --md-ref-palette-primary-20: hsl(
 		258 calc(max(48%, 88%)) 20%
-	) !important;
+	);
   --md-ref-palette-primary-22: hsl(
 		258 calc(max(48%, 88%)) 22%
-	) !important;
+	);
   --md-ref-palette-primary-24: hsl(
 		258 calc(max(48%, 88%)) 24%
-	) !important;
+	);
   --md-ref-palette-primary-25: hsl(
 		258 calc(max(48%, 88%)) 25%
-	) !important;
+	);
   --md-ref-palette-primary-30: hsl(
 		258 calc(max(48%, 88%)) 30%
-	) !important;
+	);
   --md-ref-palette-primary-35: hsl(
 		258 calc(max(48%, 88%)) 35%
-	) !important;
+	);
   --md-ref-palette-primary-4: hsl(
 		258 calc(max(48%, 88%)) 4%
-	) !important;
+	);
   --md-ref-palette-primary-40: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --md-ref-palette-primary-5: hsl(
 		258 calc(max(48%, 88%)) 5%
-	) !important;
+	);
   --md-ref-palette-primary-50: hsl(
 		258 calc(max(48%, 88%)) 50%
-	) !important;
+	);
   --md-ref-palette-primary-6: hsl(
 		258 calc(max(48%, 88%)) 6%
-	) !important;
+	);
   --md-ref-palette-primary-60: hsl(
 		258 calc(max(48%, 88%)) 60%
-	) !important;
+	);
   --md-ref-palette-primary-70: hsl(
 		258 calc(max(48%, 88%)) 70%
-	) !important;
+	);
   --md-ref-palette-primary-80: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --md-ref-palette-primary-87: hsl(
 		258 calc(max(48%, 88%)) 87%
-	) !important;
+	);
   --md-ref-palette-primary-90: hsl(
 		258 calc(max(48%, 88%)) 90%
-	) !important;
+	);
   --md-ref-palette-primary-92: hsl(
 		258 calc(max(48%, 88%)) 92%
-	) !important;
+	);
   --md-ref-palette-primary-94: hsl(
 		258 calc(max(48%, 88%)) 94%
-	) !important;
+	);
   --md-ref-palette-primary-95: hsl(
 		258 calc(max(48%, 88%)) 95%
-	) !important;
+	);
   --md-ref-palette-primary-96: hsl(
 		258 calc(max(48%, 88%)) 96%
-	) !important;
+	);
   --md-ref-palette-primary-98: hsl(
 		258 calc(max(48%, 88%)) 98%
-	) !important;
+	);
   --md-ref-palette-primary-99: hsl(
 		258 calc(max(48%, 88%)) 99%
-	) !important;
+	);
   --md-ref-palette-secondary-0: hsl(
 		258 16% 0%
-	) !important;
+	);
   --md-ref-palette-secondary-10: hsl(
 		258 16% 10%
-	) !important;
+	);
   --md-ref-palette-secondary-100: hsl(
 		258 16% 100%
-	) !important;
+	);
   --md-ref-palette-secondary-12: hsl(
 		258 16% 12%
-	) !important;
+	);
   --md-ref-palette-secondary-17: hsl(
 		258 16% 17%
-	) !important;
+	);
   --md-ref-palette-secondary-20: hsl(
 		258 16% 20%
-	) !important;
+	);
   --md-ref-palette-secondary-22: hsl(
 		258 16% 22%
-	) !important;
+	);
   --md-ref-palette-secondary-24: hsl(
 		258 16% 24%
-	) !important;
+	);
   --md-ref-palette-secondary-25: hsl(
 		258 16% 25%
-	) !important;
+	);
   --md-ref-palette-secondary-30: hsl(
 		258 16% 30%
-	) !important;
+	);
   --md-ref-palette-secondary-35: hsl(
 		258 16% 35%
-	) !important;
+	);
   --md-ref-palette-secondary-4: hsl(
 		258 16% 4%
-	) !important;
+	);
   --md-ref-palette-secondary-40: hsl(
 		258 16% 40%
-	) !important;
+	);
   --md-ref-palette-secondary-5: hsl(
 		258 16% 5%
-	) !important;
+	);
   --md-ref-palette-secondary-50: hsl(
 		258 16% 50%
-	) !important;
+	);
   --md-ref-palette-secondary-6: hsl(
 		258 16% 6%
-	) !important;
+	);
   --md-ref-palette-secondary-60: hsl(
 		258 16% 60%
-	) !important;
+	);
   --md-ref-palette-secondary-70: hsl(
 		258 16% 70%
-	) !important;
+	);
   --md-ref-palette-secondary-80: hsl(
 		258 16% 80%
-	) !important;
+	);
   --md-ref-palette-secondary-87: hsl(
 		258 16% 87%
-	) !important;
+	);
   --md-ref-palette-secondary-90: hsl(
 		258 16% 90%
-	) !important;
+	);
   --md-ref-palette-secondary-92: hsl(
 		258 16% 92%
-	) !important;
+	);
   --md-ref-palette-secondary-94: hsl(
 		258 16% 94%
-	) !important;
+	);
   --md-ref-palette-secondary-95: hsl(
 		258 16% 95%
-	) !important;
+	);
   --md-ref-palette-secondary-96: hsl(
 		258 16% 96%
-	) !important;
+	);
   --md-ref-palette-secondary-98: hsl(
 		258 16% 98%
-	) !important;
+	);
   --md-ref-palette-secondary-99: hsl(
 		258 16% 99%
-	) !important;
+	);
   --md-ref-palette-tertiary-0: hsl(
 		318 24% 0%
-	) !important;
+	);
   --md-ref-palette-tertiary-10: hsl(
 		318 24% 10%
-	) !important;
+	);
   --md-ref-palette-tertiary-100: hsl(
 		318 24% 100%
-	) !important;
+	);
   --md-ref-palette-tertiary-12: hsl(
 		318 24% 12%
-	) !important;
+	);
   --md-ref-palette-tertiary-17: hsl(
 		318 24% 17%
-	) !important;
+	);
   --md-ref-palette-tertiary-20: hsl(
 		318 24% 20%
-	) !important;
+	);
   --md-ref-palette-tertiary-22: hsl(
 		318 24% 22%
-	) !important;
+	);
   --md-ref-palette-tertiary-24: hsl(
 		318 24% 24%
-	) !important;
+	);
   --md-ref-palette-tertiary-25: hsl(
 		318 24% 25%
-	) !important;
+	);
   --md-ref-palette-tertiary-30: hsl(
 		318 24% 30%
-	) !important;
+	);
   --md-ref-palette-tertiary-35: hsl(
 		318 24% 35%
-	) !important;
+	);
   --md-ref-palette-tertiary-4: hsl(
 		318 24% 4%
-	) !important;
+	);
   --md-ref-palette-tertiary-40: hsl(
 		318 24% 40%
-	) !important;
+	);
   --md-ref-palette-tertiary-5: hsl(
 		318 24% 5%
-	) !important;
+	);
   --md-ref-palette-tertiary-50: hsl(
 		318 24% 50%
-	) !important;
+	);
   --md-ref-palette-tertiary-6: hsl(
 		318 24% 6%
-	) !important;
+	);
   --md-ref-palette-tertiary-60: hsl(
 		318 24% 60%
-	) !important;
+	);
   --md-ref-palette-tertiary-70: hsl(
 		318 24% 70%
-	) !important;
+	);
   --md-ref-palette-tertiary-80: hsl(
 		318 24% 80%
-	) !important;
+	);
   --md-ref-palette-tertiary-87: hsl(
 		318 24% 87%
-	) !important;
+	);
   --md-ref-palette-tertiary-90: hsl(
 		318 24% 90%
-	) !important;
+	);
   --md-ref-palette-tertiary-92: hsl(
 		318 24% 92%
-	) !important;
+	);
   --md-ref-palette-tertiary-94: hsl(
 		318 24% 94%
-	) !important;
+	);
   --md-ref-palette-tertiary-95: hsl(
 		318 24% 95%
-	) !important;
+	);
   --md-ref-palette-tertiary-96: hsl(
 		318 24% 96%
-	) !important;
+	);
   --md-ref-palette-tertiary-98: hsl(
 		318 24% 98%
-	) !important;
+	);
   --md-ref-palette-tertiary-99: hsl(
 		318 24% 99%
-	) !important;
+	);
   --md-sys-color-background: hsl(
 		258 4% 99%
-	) !important;
+	);
   --md-sys-color-error: hsl(
 		0 84% 40%
-	) !important;
+	);
   --md-sys-color-error-container: hsl(
 		0 84% 90%
-	) !important;
+	);
   --md-sys-color-inverse-on-surface: hsl(
 		258 4% 95%
-	) !important;
+	);
   --md-sys-color-inverse-primary: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --md-sys-color-inverse-surface: hsl(
 		258 4% 20%
-	) !important;
+	);
   --md-sys-color-on-background: hsl(
 		258 4% 10%
-	) !important;
+	);
   --md-sys-color-on-error: hsl(
 		0 84% 100%
-	) !important;
+	);
   --md-sys-color-on-error-container: hsl(
 		0 84% 10%
-	) !important;
+	);
   --md-sys-color-on-primary: hsl(
 		258 calc(max(48%, 88%)) 100%
-	) !important;
+	);
   --md-sys-color-on-primary-container: hsl(
 		258 calc(max(48%, 88%)) 10%
-	) !important;
+	);
   --md-sys-color-on-primary-fixed: hsl(
 		258 calc(max(48%, 88%)) 10%
-	) !important;
+	);
   --md-sys-color-on-primary-fixed-dim: hsl(
 		258 calc(max(48%, 88%)) 30%
-	) !important;
+	);
   --md-sys-color-on-secondary: hsl(
 		258 16% 100%
-	) !important;
+	);
   --md-sys-color-on-secondary-container: hsl(
 		258 16% 10%
-	) !important;
+	);
   --md-sys-color-on-secondary-fixed: hsl(
 		258 16% 10%
-	) !important;
+	);
   --md-sys-color-on-secondary-fixed-dim: hsl(
 		258 16% 30%
-	) !important;
+	);
   --md-sys-color-on-surface: hsl(
 		258 4% 10%
-	) !important;
+	);
   --md-sys-color-on-surface-variant: hsl(
 		258 8% 30%
-	) !important;
+	);
   --md-sys-color-on-tertiary: hsl(
 		318 24% 100%
-	) !important;
+	);
   --md-sys-color-on-tertiary-container: hsl(
 		318 24% 10%
-	) !important;
+	);
   --md-sys-color-on-tertiary-fixed: hsl(
 		318 24% 10%
-	) !important;
+	);
   --md-sys-color-on-tertiary-fixed-dim: hsl(
 		318 24% 30%
-	) !important;
+	);
   --md-sys-color-outline: hsl(
 		258 8% 50%
-	) !important;
+	);
   --md-sys-color-outline-variant: hsl(
 		258 8% 80%
-	) !important;
+	);
   --md-sys-color-primary: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --md-sys-color-primary-container: hsl(
 		258 calc(max(48%, 88%)) 90%
-	) !important;
+	);
   --md-sys-color-primary-fixed: hsl(
 		258 calc(max(48%, 88%)) 90%
-	) !important;
+	);
   --md-sys-color-primary-fixed-dim: hsl(
 		258 calc(max(48%, 88%)) 80%
-	) !important;
+	);
   --md-sys-color-scrim: hsl(
 		258 4% 0%
-	) !important;
+	);
   --md-sys-color-secondary: hsl(
 		258 16% 40%
-	) !important;
+	);
   --md-sys-color-secondary-container: hsl(
 		258 16% 90%
-	) !important;
+	);
   --md-sys-color-secondary-fixed: hsl(
 		258 16% 90%
-	) !important;
+	);
   --md-sys-color-secondary-fixed-dim: hsl(
 		258 16% 80%
-	) !important;
+	);
   --md-sys-color-shadow: hsl(
 		258 4% 0%
-	) !important;
+	);
   --md-sys-color-surface: hsl(
 		258 4% 98%
-	) !important;
+	);
   --md-sys-color-surface-bright: hsl(
 		258 4% 98%
-	) !important;
+	);
   --md-sys-color-surface-container: hsl(
 		258 4% 94%
-	) !important;
+	);
   --md-sys-color-surface-container-high: hsl(
 		258 4% 92%
-	) !important;
+	);
   --md-sys-color-surface-container-highest: hsl(
 		258 4% 90%
-	) !important;
+	);
   --md-sys-color-surface-container-low: hsl(
 		258 4% 96%
-	) !important;
+	);
   --md-sys-color-surface-container-lowest: hsl(
 		258 4% 100%
-	) !important;
+	);
   --md-sys-color-surface-dim: hsl(
 		258 4% 87%
-	) !important;
+	);
   --md-sys-color-surface-variant: hsl(
 		258 8% 90%
-	) !important;
+	);
   --md-sys-color-tertiary: hsl(
 		318 24% 40%
-	) !important;
+	);
   --md-sys-color-tertiary-container: hsl(
 		318 24% 90%
-	) !important;
+	);
   --md-sys-color-tertiary-fixed: hsl(
 		318 24% 90%
-	) !important;
+	);
   --md-sys-color-tertiary-fixed-dim: hsl(
 		318 24% 80%
-	) !important;
+	);
   --menu-background: hsl(
 		258 4% 92%
-	) !important;
+	);
   --menu-border-color: hsl(
 		258 8% 50%
-	) !important;
+	);
   --metadata-border-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --metadata-divider-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --metadata-input-background-active: hsl(
 		258 4% 94%
-	) !important;
+	);
   --metadata-input-text-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --metadata-label-background-active: hsl(
 		258 4% 94%
-	) !important;
+	);
   --metadata-label-text-color: hsl(
 		258 8% 50%
-	) !important;
+	);
   --metadata-label-text-color-hover: hsl(
 		258 8% 50%
-	) !important;
+	);
   --metadata-property-background-active: hsl(
 		258 4% 94%
-	) !important;
+	);
   --metadata-property-box-shadow-focus: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --metadata-property-box-shadow-hover: 0 0 0 1px hsl(
 		258 8% 50%
-	) !important;
+	);
   --modal-background: hsl(
 		258 4% 100%
-	) !important;
+	);
   --nav-collapse-icon-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --nav-collapse-icon-color-collapsed: hsl(
 		258 8% 80%
-	) !important;
+	);
   --nav-heading-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --nav-heading-color-collapsed: hsl(
 		258 8% 80%
-	) !important;
+	);
   --nav-heading-color-collapsed-hover: hsl(
 		258 8% 50%
-	) !important;
+	);
   --nav-heading-color-hover: hsl(
 		258 4% 10%
-	) !important;
+	);
   --nav-item-background-active: hsl(
 		258 4% 94%
-	) !important;
+	);
   --nav-item-background-hover: hsl(
 		258 4% 94%
-	) !important;
+	);
   --nav-item-color: hsl(
 		258 8% 50%
-	) !important;
+	);
   --nav-item-color-active: hsl(
 		258 4% 10%
-	) !important;
+	);
   --nav-item-color-highlighted: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --nav-item-color-hover: hsl(
 		258 4% 10%
-	) !important;
+	);
   --nav-item-color-selected: hsl(
 		258 4% 10%
-	) !important;
+	);
   --nav-tag-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --nav-tag-color-active: hsl(
 		258 8% 50%
-	) !important;
+	);
   --nav-tag-color-hover: hsl(
 		258 8% 50%
-	) !important;
-  --neutral-hue: 258 !important;
-  --neutral-saturation: 4% !important;
-  --neutral-variant-hue: 258 !important;
-  --neutral-variant-saturation: 8% !important;
+	);
+  --neutral-hue: 258;
+  --neutral-saturation: 4%;
+  --neutral-variant-hue: 258;
+  --neutral-variant-saturation: 8%;
   --pdf-background: hsl(
 		258 4% 100%
-	) !important;
+	);
   --pdf-page-background: hsl(
 		258 4% 100%
-	) !important;
+	);
   --pdf-sidebar-background: hsl(
 		258 4% 100%
-	) !important;
+	);
   --pill-border-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --pill-border-color-hover: hsl(
 		258 8% 50%
-	) !important;
+	);
   --pill-color: hsl(
 		258 8% 50%
-	) !important;
+	);
   --pill-color-hover: hsl(
 		258 4% 10%
-	) !important;
+	);
   --pill-color-remove: hsl(
 		258 8% 80%
-	) !important;
+	);
   --pill-color-remove-hover: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
-  --primary-hue: 258 !important;
-  --primary-saturation: calc(max(48%, 88%)) !important;
+	);
+  --primary-hue: 258;
+  --primary-saturation: calc(max(48%, 88%));
   --prompt-background: hsl(
 		258 4% 100%
-	) !important;
+	);
   --raised-background: color-mix(in srgb, hsl(
 		258 4% 100%
 	) 65%, transparent) linear-gradient(hsl(
 		258 4% 100%
 	), color-mix(in srgb, hsl(
 		258 4% 100%
-	) 65%, transparent)) !important;
+	) 65%, transparent));
   --ribbon-background: hsl(
 		258 4% 94%
-	) !important;
+	);
   --ribbon-background-collapsed: hsl(
 		258 4% 87%
-	) !important;
-  --saturation: 88% !important;
+	);
+  --saturation: 88%;
   --scrollbar-active-thumb-bg: hsl(
 		258 4% 10%
-	) !important;
+	);
   --scrollbar-bg: hsl(
 		258 4% 87%
-	) !important;
+	);
   --scrollbar-thumb-bg: hsl(
 		258 8% 50%
-	) !important;
+	);
   --search-clear-button-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --search-icon-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --search-result-background: hsl(
 		258 4% 94%
-	) !important;
-  --secondary: hsl(
+	);
+  --secondary: var(--text-accent, hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
-  --secondary-hue: 258 !important;
-  --secondary-saturation: 16% !important;
+	));
+  --secondary-hue: 258;
+  --secondary-saturation: 16%;
   --setting-group-heading-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --setting-items-background: hsl(
 		258 4% 96%
-	) !important;
+	);
   --setting-items-border-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --shiki-active-tab-border-color: hsl(
 		258 8% 50%
-	) !important;
+	);
   --shiki-code-background: hsl(
 		258 4% 98%
-	) !important;
+	);
   --shiki-code-comment: hsl(
 		258 8% 80%
-	) !important;
+	);
   --shiki-code-normal: hsl(
 		258 8% 50%
-	) !important;
+	);
   --shiki-code-punctuation: hsl(
 		258 8% 50%
-	) !important;
+	);
   --shiki-gutter-border-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --shiki-gutter-text-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --shiki-gutter-text-color-highlight: hsl(
 		258 8% 50%
-	) !important;
+	);
   --shiki-highlight-neutral: hsl(
 		258 8% 50%
-	) !important;
+	);
   --shiki-terminal-dots-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --slider-thumb-border-color: hsl(
 		258 8% 50%
-	) !important;
-  --slider-thumb-radius: 36px !important;
+	);
+  --slider-thumb-radius: 36px;
   --slider-track-background: hsl(
 		258 8% 80%
-	) !important;
+	);
   --status-bar-background: hsl(
 		258 calc(max(48%, 88%)) 90%
-	) !important;
+	);
   --status-bar-border-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --status-bar-text-color: hsl(
 		258 calc(max(48%, 88%)) 10%
-	) !important;
+	);
   --suggestion-background: hsl(
 		258 4% 100%
-	) !important;
+	);
   --tab-background-active: hsl(
 		258 4% 100%
-	) !important;
+	);
   --tab-container-background: hsl(
 		258 4% 92%
-	) !important;
+	);
   --tab-divider-color: hsl(
 		258 8% 50%
-	) !important;
+	);
   --tab-outline-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --tab-switcher-background: hsl(
 		258 4% 92%
-	) !important;
+	);
   --tab-switcher-menubar-background: linear-gradient(to top, hsl(
 		258 4% 92%
-	), transparent) !important;
+	), transparent);
   --tab-text-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --tab-text-color-active: hsl(
 		258 8% 50%
-	) !important;
+	);
   --tab-text-color-focused: hsl(
 		258 8% 50%
-	) !important;
+	);
   --tab-text-color-focused-active: hsl(
 		258 8% 50%
-	) !important;
+	);
   --tab-text-color-focused-active-current: hsl(
 		258 4% 10%
-	) !important;
+	);
   --tab-text-color-focused-highlighted: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --table-add-button-border-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --table-border-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --table-drag-handle-background-active: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --table-drag-handle-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --table-drag-handle-color-active: hsl(
 		258 calc(max(48%, 88%)) 100%
-	) !important;
+	);
   --table-header-border-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --table-header-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --table-selection-border-color: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --tag-background: hsl(
 		258 calc(max(48%, 88%)) 90%
-	) !important;
+	);
   --tag-background-hover: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --tag-color: hsl(
 		258 calc(max(48%, 88%)) 10%
-	) !important;
+	);
   --tag-color-hover: hsl(
 		258 calc(max(48%, 88%)) 100%
-	) !important;
-  --tertiary: hsl(
+	);
+  --tertiary: var(--text-accent-hover, hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
-  --tertiary-hue: 318 !important;
-  --tertiary-saturation: 24% !important;
+	));
+  --tertiary-hue: 318;
+  --tertiary-saturation: 24%;
   --text-accent: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --text-accent-hover: hsl(
 		258 calc(max(48%, 88%)) 40%
-	) !important;
+	);
   --text-faint: hsl(
 		258 8% 80%
-	) !important;
+	);
   --text-highlight-bg: hsl(
 		318 24% 90%
-	) !important;
+	);
   --text-muted: hsl(
 		258 8% 50%
-	) !important;
+	);
   --text-normal: hsl(
 		258 4% 10%
-	) !important;
+	);
   --text-on-accent: hsl(
 		258 calc(max(48%, 88%)) 100%
-	) !important;
+	);
   --text-on-accent-inverted: hsl(
 		258 calc(max(48%, 88%)) 100%
-	) !important;
+	);
   --text-selection: hsl(
 		258 16% 90%
-	) !important;
-  --textHighlight: hsl(
+	);
+  --textHighlight: var(--text-highlight-bg, hsl(
 		318 24% 90%
-	) !important;
+	));
   --titlebar-background: hsl(
 		258 4% 87%
-	) !important;
+	);
   --titlebar-background-focused: hsl(
 		258 4% 94%
-	) !important;
+	);
   --titlebar-border-color: hsl(
 		258 8% 80%
-	) !important;
+	);
   --titlebar-text-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --titlebar-text-color-focused: hsl(
 		258 4% 10%
-	) !important;
+	);
   --vault-name-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --vault-profile-color: hsl(
 		258 4% 10%
-	) !important;
+	);
   --vault-profile-color-hover: hsl(
 		258 4% 10%
-	) !important;
-  --quartz-icon-color: currentColor !important;
+	);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

@@ -6,61 +6,62 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["noto-serif"],
+    styleSettingsId: "fastppuccin-theme-settings",
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --anp-bold-color: 243, 139, 168 !important;
-  --anp-header-font: "Noto Serif" !important;
-  --anp-header-margin-value: 15px !important;
-  --anp-highlight-color: 249, 226, 175 !important;
-  --anp-italic-color: 166, 227, 161 !important;
-  --anp-preview-width-max: 800px !important;
-  --anp-preview-width-pct: 95% !important;
-  --anp-rainbow-folder-bg-opacity: 1 !important;
-  --anp-rainbow-folder-border-opacity: 1 !important;
-  --anp-rainbow-folder-collapse-border-custom: #00000044 !important;
-  --anp-speech-bubble-opacity: 0.9 !important;
-  --anp-table-width-pct: 100% !important;
-  --background-modifier-active: rgba(245, 224, 220, 0.1) !important;
-  --background-modifier-active-hover: rgba(245, 224, 220, 0.15) !important;
-  --background-modifier-border: rgb(49, 50, 68) !important;
-  --background-modifier-border-focus: rgb(86, 89, 112) !important;
-  --background-modifier-border-hover: rgb(67, 70, 90) !important;
-  --background-modifier-cover: rgba(24, 24, 37, 0.4) !important;
-  --background-modifier-error: rgb(243, 139, 168) !important;
-  --background-modifier-error-hover: rgba(243, 139, 168, 0.9) !important;
-  --background-modifier-error-rgb: 243, 139, 168 !important;
-  --background-modifier-form-field: rgba(17, 17, 27, 0.3) !important;
-  --background-modifier-form-field-hover: rgba(17, 17, 27, 0.3) !important;
-  --background-modifier-hover: rgba(198, 208, 245, 0.075) !important;
-  --background-modifier-message: rgba(17, 17, 27, 0.9) !important;
-  --background-modifier-success: rgb(166, 227, 161) !important;
-  --background-modifier-success-hover: rgba(166, 227, 161, 0.9) !important;
-  --background-modifier-success-rgb: 166, 227, 161 !important;
-  --background-primary: rgb(30, 30, 46) !important;
-  --background-primary-alt: rgb(24, 24, 37) !important;
-  --background-secondary: rgb(24, 24, 37) !important;
-  --background-secondary-alt: rgb(17, 17, 27) !important;
-  --bases-cards-background: rgb(30, 30, 46) !important;
-  --bases-cards-cover-background: rgb(24, 24, 37) !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(49, 50, 68) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(67, 70, 90) !important;
-  --bases-embed-border-color: rgb(49, 50, 68) !important;
-  --bases-group-heading-property-color: rgb(142, 149, 179) !important;
-  --bases-table-border-color: rgb(49, 50, 68) !important;
-  --bases-table-cell-background-active: rgb(30, 30, 46) !important;
-  --bases-table-cell-background-disabled: rgb(24, 24, 37) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(86, 89, 112) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(245, 224, 220) !important;
-  --bases-table-group-background: rgb(24, 24, 37) !important;
-  --bases-table-header-background: rgb(30, 30, 46) !important;
-  --bases-table-header-background-hover: rgba(198, 208, 245, 0.075) !important;
-  --bases-table-header-color: rgb(142, 149, 179) !important;
-  --bases-table-summary-background: rgb(30, 30, 46) !important;
-  --bases-table-summary-background-hover: rgba(198, 208, 245, 0.075) !important;
-  --blockquote-background-color: rgba(17, 17, 27, 0.5) !important;
-  --blockquote-border-color: rgb(245, 224, 220) !important;
-  --blur-background: color-mix(in srgb, rgb(49, 50, 68) 65%, transparent) linear-gradient(rgb(49, 50, 68), color-mix(in srgb, rgb(49, 50, 68) 65%, transparent)) !important;
+  --anp-bold-color: 243, 139, 168;
+  --anp-header-font: "Noto Serif";
+  --anp-header-margin-value: 15px;
+  --anp-highlight-color: 249, 226, 175;
+  --anp-italic-color: 166, 227, 161;
+  --anp-preview-width-max: 800px;
+  --anp-preview-width-pct: 95%;
+  --anp-rainbow-folder-bg-opacity: 1;
+  --anp-rainbow-folder-border-opacity: 1;
+  --anp-rainbow-folder-collapse-border-custom: #00000044;
+  --anp-speech-bubble-opacity: 0.9;
+  --anp-table-width-pct: 100%;
+  --background-modifier-active: rgba(245, 224, 220, 0.1);
+  --background-modifier-active-hover: rgba(245, 224, 220, 0.15);
+  --background-modifier-border: rgb(49, 50, 68);
+  --background-modifier-border-focus: rgb(86, 89, 112);
+  --background-modifier-border-hover: rgb(67, 70, 90);
+  --background-modifier-cover: rgba(24, 24, 37, 0.4);
+  --background-modifier-error: rgb(243, 139, 168);
+  --background-modifier-error-hover: rgba(243, 139, 168, 0.9);
+  --background-modifier-error-rgb: 243, 139, 168;
+  --background-modifier-form-field: rgba(17, 17, 27, 0.3);
+  --background-modifier-form-field-hover: rgba(17, 17, 27, 0.3);
+  --background-modifier-hover: rgba(198, 208, 245, 0.075);
+  --background-modifier-message: rgba(17, 17, 27, 0.9);
+  --background-modifier-success: rgb(166, 227, 161);
+  --background-modifier-success-hover: rgba(166, 227, 161, 0.9);
+  --background-modifier-success-rgb: 166, 227, 161;
+  --background-primary: rgb(30, 30, 46);
+  --background-primary-alt: rgb(24, 24, 37);
+  --background-secondary: rgb(24, 24, 37);
+  --background-secondary-alt: rgb(17, 17, 27);
+  --bases-cards-background: rgb(30, 30, 46);
+  --bases-cards-cover-background: rgb(24, 24, 37);
+  --bases-cards-shadow: 0 0 0 1px rgb(49, 50, 68);
+  --bases-cards-shadow-hover: 0 0 0 1px rgb(67, 70, 90);
+  --bases-embed-border-color: rgb(49, 50, 68);
+  --bases-group-heading-property-color: rgb(142, 149, 179);
+  --bases-table-border-color: rgb(49, 50, 68);
+  --bases-table-cell-background-active: rgb(30, 30, 46);
+  --bases-table-cell-background-disabled: rgb(24, 24, 37);
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(86, 89, 112);
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(245, 224, 220);
+  --bases-table-group-background: rgb(24, 24, 37);
+  --bases-table-header-background: rgb(30, 30, 46);
+  --bases-table-header-background-hover: rgba(198, 208, 245, 0.075);
+  --bases-table-header-color: rgb(142, 149, 179);
+  --bases-table-summary-background: rgb(30, 30, 46);
+  --bases-table-summary-background-hover: rgba(198, 208, 245, 0.075);
+  --blockquote-background-color: rgba(17, 17, 27, 0.5);
+  --blockquote-border-color: rgb(245, 224, 220);
+  --blur-background: color-mix(in srgb, rgb(49, 50, 68) 65%, transparent) linear-gradient(rgb(49, 50, 68), color-mix(in srgb, rgb(49, 50, 68) 65%, transparent));
   --callout-blend-mode: none;
   --callout-bug: 243, 139, 168;
   --callout-content-padding: 8px;
@@ -78,331 +79,331 @@ export const theme: ThemeData = {
   --callout-title-padding: 8px;
   --callout-todo: 135, 176, 249;
   --callout-warning: 250, 179, 135;
-  --canvas-background: rgb(30, 30, 46) !important;
-  --canvas-card-label-color: rgb(161, 168, 201) !important;
-  --canvas-color: 105, 109, 134 !important;
-  --canvas-color-1: 243, 139, 168 !important;
-  --canvas-color-2: 250, 179, 135 !important;
-  --canvas-color-3: 249, 226, 175 !important;
-  --canvas-color-4: 166, 227, 161 !important;
-  --canvas-color-5: 137, 220, 235 !important;
-  --canvas-color-6: 180, 190, 254 !important;
-  --canvas-dot-pattern: rgb(67, 70, 90) !important;
-  --card-background-color: rgb(17, 17, 27) !important;
-  --card-foreground-color: rgb(30, 30, 46) !important;
-  --caret-color: rgb(198, 208, 245) !important;
-  --checkbox-border-color: rgb(161, 168, 201) !important;
-  --checkbox-border-color-hover: rgb(142, 149, 179) !important;
-  --checkbox-color: rgb(245, 224, 220) !important;
-  --checkbox-color-hover: rgba(245, 224, 220, 0.9) !important;
-  --checkbox-marker-color: rgb(30, 30, 46) !important;
-  --checklist-done-color: rgb(142, 149, 179) !important;
-  --code-background: rgb(17, 17, 27) !important;
-  --code-border-color: rgb(49, 50, 68) !important;
-  --code-bracket-background: rgba(198, 208, 245, 0.075) !important;
-  --code-comment: rgb(161, 168, 201) !important;
-  --code-function: rgb(249, 226, 175) !important;
-  --code-important: rgb(250, 179, 135) !important;
-  --code-keyword: rgb(245, 194, 231) !important;
-  --code-normal: rgb(198, 208, 245) !important;
-  --code-operator: rgb(243, 139, 168) !important;
-  --code-property: rgb(137, 220, 235) !important;
-  --code-punctuation: rgb(142, 149, 179) !important;
-  --code-string: rgb(166, 227, 161) !important;
-  --code-tag: rgb(243, 139, 168) !important;
-  --code-value: rgb(180, 190, 254) !important;
-  --collapse-icon-color: rgb(161, 168, 201) !important;
-  --collapse-icon-color-collapsed: rgb(245, 224, 220) !important;
-  --color-accent: rgb(245, 224, 220) !important;
-  --color-accent-1: rgb(245, 224, 220) !important;
-  --color-accent-2: rgba(245, 224, 220, 0.9) !important;
-  --color-base-00: rgb(17, 17, 27) !important;
-  --color-base-10: rgb(24, 24, 37) !important;
-  --color-base-100: rgb(198, 208, 245) !important;
-  --color-base-20: rgb(30, 30, 46) !important;
-  --color-base-25: rgb(49, 50, 68) !important;
-  --color-base-30: rgb(67, 70, 90) !important;
-  --color-base-35: rgb(86, 89, 112) !important;
-  --color-base-40: rgb(105, 109, 134) !important;
-  --color-base-50: rgb(123, 129, 157) !important;
-  --color-base-60: rgb(142, 149, 179) !important;
-  --color-base-70: rgb(161, 168, 201) !important;
-  --color-blue: rgb(135, 176, 249) !important;
-  --color-blue-rgb: 135, 176, 249 !important;
-  --color-cyan: rgb(137, 220, 235) !important;
-  --color-cyan-rgb: 137, 220, 235 !important;
-  --color-green: rgb(166, 227, 161) !important;
-  --color-green-rgb: 166, 227, 161 !important;
-  --color-orange: rgb(250, 179, 135) !important;
-  --color-orange-rgb: 250, 179, 135 !important;
-  --color-pink: rgb(245, 194, 231) !important;
-  --color-pink-rgb: 245, 194, 231 !important;
-  --color-purple: rgb(180, 190, 254) !important;
-  --color-purple-rgb: 180, 190, 254 !important;
-  --color-red: rgb(243, 139, 168) !important;
-  --color-red-rgb: 243, 139, 168 !important;
-  --color-yellow: rgb(249, 226, 175) !important;
-  --color-yellow-rgb: 249, 226, 175 !important;
-  --ctp-accent: 245, 224, 220 !important;
-  --ctp-base: 30, 30, 46 !important;
-  --ctp-blue: 135, 176, 249 !important;
-  --ctp-crust: 17, 17, 27 !important;
-  --ctp-flamingo: 242, 205, 205 !important;
-  --ctp-green: 166, 227, 161 !important;
-  --ctp-lavender: 180, 190, 254 !important;
-  --ctp-mantle: 24, 24, 37 !important;
-  --ctp-maroon: 235, 160, 172 !important;
-  --ctp-mauve: 203, 166, 247 !important;
-  --ctp-overlay0: 105, 109, 134 !important;
-  --ctp-overlay1: 123, 129, 157 !important;
-  --ctp-overlay2: 142, 149, 179 !important;
-  --ctp-peach: 250, 179, 135 !important;
-  --ctp-pink: 245, 194, 231 !important;
-  --ctp-red: 243, 139, 168 !important;
-  --ctp-rosewater: 245, 224, 220 !important;
-  --ctp-sapphire: 116, 199, 236 !important;
-  --ctp-sky: 137, 220, 235 !important;
-  --ctp-subtext0: 161, 168, 201 !important;
-  --ctp-subtext1: 179, 188, 223 !important;
-  --ctp-surface0: 49, 50, 68 !important;
-  --ctp-surface1: 67, 70, 90 !important;
-  --ctp-surface2: 86, 89, 112 !important;
-  --ctp-teal: 148, 226, 213 !important;
-  --ctp-text: 198, 208, 245 !important;
-  --ctp-yellow: 249, 226, 175 !important;
-  --dark: rgb(198, 208, 245) !important;
-  --darkgray: rgb(198, 208, 245) !important;
-  --divider-color: rgb(49, 50, 68) !important;
-  --divider-color-hover: rgb(245, 224, 220) !important;
-  --drag-ghost-background: rgb(198, 208, 245) !important;
-  --drag-ghost-text-color: rgb(17, 17, 27) !important;
-  --dropdown-background: rgb(49, 50, 68) !important;
-  --dropdown-background-hover: rgb(67, 70, 90) !important;
-  --embed-block-shadow-hover: none !important;
-  --embed-border-start: 2px solid rgb(245, 224, 220) !important;
-  --file-header-background: rgb(30, 30, 46) !important;
-  --file-header-background-focused: rgb(30, 30, 46) !important;
-  --flair-background: rgb(49, 50, 68) !important;
-  --flair-color: rgb(198, 208, 245) !important;
-  --footnote-divider-color: rgb(49, 50, 68) !important;
-  --footnote-id-color: rgb(142, 149, 179) !important;
-  --footnote-id-color-no-occurrences: rgb(161, 168, 201) !important;
-  --footnote-input-background-active: rgba(198, 208, 245, 0.075) !important;
-  --graph-line: rgb(86, 89, 112) !important;
-  --graph-node: rgb(142, 149, 179) !important;
-  --graph-node-attachment: rgb(249, 226, 175) !important;
-  --graph-node-focused: rgb(245, 224, 220) !important;
-  --graph-node-tag: rgb(166, 227, 161) !important;
-  --graph-node-unresolved: rgb(161, 168, 201) !important;
-  --graph-text: rgb(198, 208, 245) !important;
-  --gray: rgb(142, 149, 179) !important;
-  --h1-color: rgb(243, 139, 168) !important;
-  --h2-color: rgb(250, 179, 135) !important;
-  --h3-color: rgb(166, 227, 161) !important;
-  --h4-color: rgb(148, 226, 213) !important;
-  --h5-color: rgb(180, 190, 254) !important;
-  --h6-color: rgb(203, 166, 247) !important;
-  --heading-formatting: rgb(245, 224, 220) !important;
-  --highlight: rgba(249, 226, 175, 0.2) !important;
-  --highlight-mix-blend-mode: none !important;
-  --hr-color: rgb(49, 50, 68) !important;
-  --icon-color: rgb(142, 149, 179) !important;
-  --icon-color-active: rgb(245, 224, 220) !important;
-  --icon-color-focused: rgb(245, 224, 220) !important;
-  --icon-color-hover: rgb(142, 149, 179) !important;
-  --indentation-guide-color: rgba(198, 208, 245, 0.12) !important;
-  --indentation-guide-color-active: rgba(198, 208, 245, 0.3) !important;
-  --inline-title-color: rgb(198, 208, 245) !important;
-  --input-date-separator: rgb(161, 168, 201) !important;
-  --input-placeholder-color: rgb(161, 168, 201) !important;
-  --interactive-accent: rgb(245, 224, 220) !important;
-  --interactive-accent-hover: rgba(245, 224, 220, 0.9) !important;
-  --interactive-accent-rgb: 245, 224, 220 !important;
-  --interactive-hover: rgb(67, 70, 90) !important;
-  --interactive-normal: rgb(49, 50, 68) !important;
-  --interactive-success: rgb(166, 227, 161) !important;
-  --light: rgb(30, 30, 46) !important;
-  --lightgray: rgb(24, 24, 37) !important;
-  --link-color: rgb(245, 224, 220) !important;
-  --link-color-hover: rgb(245, 224, 220) !important;
-  --link-external-color: rgb(245, 224, 220) !important;
-  --link-external-color-hover: rgb(245, 224, 220) !important;
-  --link-unresolved-color: rgb(245, 224, 220) !important;
-  --link-unresolved-decoration-color: rgba(245, 224, 220, 0.3) !important;
-  --list-marker-color: rgb(161, 168, 201) !important;
-  --list-marker-color-collapsed: rgb(245, 224, 220) !important;
-  --list-marker-color-hover: rgb(142, 149, 179) !important;
-  --max-width-image: 90% !important;
-  --menu-background: rgb(24, 24, 37) !important;
-  --menu-border-color: rgb(67, 70, 90) !important;
+  --canvas-background: rgb(30, 30, 46);
+  --canvas-card-label-color: rgb(161, 168, 201);
+  --canvas-color: 105, 109, 134;
+  --canvas-color-1: 243, 139, 168;
+  --canvas-color-2: 250, 179, 135;
+  --canvas-color-3: 249, 226, 175;
+  --canvas-color-4: 166, 227, 161;
+  --canvas-color-5: 137, 220, 235;
+  --canvas-color-6: 180, 190, 254;
+  --canvas-dot-pattern: rgb(67, 70, 90);
+  --card-background-color: rgb(17, 17, 27);
+  --card-foreground-color: rgb(30, 30, 46);
+  --caret-color: rgb(198, 208, 245);
+  --checkbox-border-color: rgb(161, 168, 201);
+  --checkbox-border-color-hover: rgb(142, 149, 179);
+  --checkbox-color: rgb(245, 224, 220);
+  --checkbox-color-hover: rgba(245, 224, 220, 0.9);
+  --checkbox-marker-color: rgb(30, 30, 46);
+  --checklist-done-color: rgb(142, 149, 179);
+  --code-background: rgb(17, 17, 27);
+  --code-border-color: rgb(49, 50, 68);
+  --code-bracket-background: rgba(198, 208, 245, 0.075);
+  --code-comment: rgb(161, 168, 201);
+  --code-function: rgb(249, 226, 175);
+  --code-important: rgb(250, 179, 135);
+  --code-keyword: rgb(245, 194, 231);
+  --code-normal: rgb(198, 208, 245);
+  --code-operator: rgb(243, 139, 168);
+  --code-property: rgb(137, 220, 235);
+  --code-punctuation: rgb(142, 149, 179);
+  --code-string: rgb(166, 227, 161);
+  --code-tag: rgb(243, 139, 168);
+  --code-value: rgb(180, 190, 254);
+  --collapse-icon-color: rgb(161, 168, 201);
+  --collapse-icon-color-collapsed: rgb(245, 224, 220);
+  --color-accent: rgb(245, 224, 220);
+  --color-accent-1: rgb(245, 224, 220);
+  --color-accent-2: rgba(245, 224, 220, 0.9);
+  --color-base-00: rgb(17, 17, 27);
+  --color-base-10: rgb(24, 24, 37);
+  --color-base-100: rgb(198, 208, 245);
+  --color-base-20: rgb(30, 30, 46);
+  --color-base-25: rgb(49, 50, 68);
+  --color-base-30: rgb(67, 70, 90);
+  --color-base-35: rgb(86, 89, 112);
+  --color-base-40: rgb(105, 109, 134);
+  --color-base-50: rgb(123, 129, 157);
+  --color-base-60: rgb(142, 149, 179);
+  --color-base-70: rgb(161, 168, 201);
+  --color-blue: rgb(135, 176, 249);
+  --color-blue-rgb: 135, 176, 249;
+  --color-cyan: rgb(137, 220, 235);
+  --color-cyan-rgb: 137, 220, 235;
+  --color-green: rgb(166, 227, 161);
+  --color-green-rgb: 166, 227, 161;
+  --color-orange: rgb(250, 179, 135);
+  --color-orange-rgb: 250, 179, 135;
+  --color-pink: rgb(245, 194, 231);
+  --color-pink-rgb: 245, 194, 231;
+  --color-purple: rgb(180, 190, 254);
+  --color-purple-rgb: 180, 190, 254;
+  --color-red: rgb(243, 139, 168);
+  --color-red-rgb: 243, 139, 168;
+  --color-yellow: rgb(249, 226, 175);
+  --color-yellow-rgb: 249, 226, 175;
+  --ctp-accent: 245, 224, 220;
+  --ctp-base: 30, 30, 46;
+  --ctp-blue: 135, 176, 249;
+  --ctp-crust: 17, 17, 27;
+  --ctp-flamingo: 242, 205, 205;
+  --ctp-green: 166, 227, 161;
+  --ctp-lavender: 180, 190, 254;
+  --ctp-mantle: 24, 24, 37;
+  --ctp-maroon: 235, 160, 172;
+  --ctp-mauve: 203, 166, 247;
+  --ctp-overlay0: 105, 109, 134;
+  --ctp-overlay1: 123, 129, 157;
+  --ctp-overlay2: 142, 149, 179;
+  --ctp-peach: 250, 179, 135;
+  --ctp-pink: 245, 194, 231;
+  --ctp-red: 243, 139, 168;
+  --ctp-rosewater: 245, 224, 220;
+  --ctp-sapphire: 116, 199, 236;
+  --ctp-sky: 137, 220, 235;
+  --ctp-subtext0: 161, 168, 201;
+  --ctp-subtext1: 179, 188, 223;
+  --ctp-surface0: 49, 50, 68;
+  --ctp-surface1: 67, 70, 90;
+  --ctp-surface2: 86, 89, 112;
+  --ctp-teal: 148, 226, 213;
+  --ctp-text: 198, 208, 245;
+  --ctp-yellow: 249, 226, 175;
+  --dark: var(--text-normal, rgb(198, 208, 245));
+  --darkgray: var(--text-normal, rgb(198, 208, 245));
+  --divider-color: rgb(49, 50, 68);
+  --divider-color-hover: rgb(245, 224, 220);
+  --drag-ghost-background: rgb(198, 208, 245);
+  --drag-ghost-text-color: rgb(17, 17, 27);
+  --dropdown-background: rgb(49, 50, 68);
+  --dropdown-background-hover: rgb(67, 70, 90);
+  --embed-block-shadow-hover: none;
+  --embed-border-start: 2px solid rgb(245, 224, 220);
+  --file-header-background: rgb(30, 30, 46);
+  --file-header-background-focused: rgb(30, 30, 46);
+  --flair-background: rgb(49, 50, 68);
+  --flair-color: rgb(198, 208, 245);
+  --footnote-divider-color: rgb(49, 50, 68);
+  --footnote-id-color: rgb(142, 149, 179);
+  --footnote-id-color-no-occurrences: rgb(161, 168, 201);
+  --footnote-input-background-active: rgba(198, 208, 245, 0.075);
+  --graph-line: rgb(86, 89, 112);
+  --graph-node: rgb(142, 149, 179);
+  --graph-node-attachment: rgb(249, 226, 175);
+  --graph-node-focused: rgb(245, 224, 220);
+  --graph-node-tag: rgb(166, 227, 161);
+  --graph-node-unresolved: rgb(161, 168, 201);
+  --graph-text: rgb(198, 208, 245);
+  --gray: var(--text-muted, rgb(142, 149, 179));
+  --h1-color: rgb(243, 139, 168);
+  --h2-color: rgb(250, 179, 135);
+  --h3-color: rgb(166, 227, 161);
+  --h4-color: rgb(148, 226, 213);
+  --h5-color: rgb(180, 190, 254);
+  --h6-color: rgb(203, 166, 247);
+  --heading-formatting: rgb(245, 224, 220);
+  --highlight: var(--text-highlight-bg, rgba(249, 226, 175, 0.2));
+  --highlight-mix-blend-mode: none;
+  --hr-color: rgb(49, 50, 68);
+  --icon-color: rgb(142, 149, 179);
+  --icon-color-active: rgb(245, 224, 220);
+  --icon-color-focused: rgb(245, 224, 220);
+  --icon-color-hover: rgb(142, 149, 179);
+  --indentation-guide-color: rgba(198, 208, 245, 0.12);
+  --indentation-guide-color-active: rgba(198, 208, 245, 0.3);
+  --inline-title-color: rgb(198, 208, 245);
+  --input-date-separator: rgb(161, 168, 201);
+  --input-placeholder-color: rgb(161, 168, 201);
+  --interactive-accent: rgb(245, 224, 220);
+  --interactive-accent-hover: rgba(245, 224, 220, 0.9);
+  --interactive-accent-rgb: 245, 224, 220;
+  --interactive-hover: rgb(67, 70, 90);
+  --interactive-normal: rgb(49, 50, 68);
+  --interactive-success: rgb(166, 227, 161);
+  --light: var(--background-primary, rgb(30, 30, 46));
+  --lightgray: var(--background-secondary, rgb(24, 24, 37));
+  --link-color: rgb(245, 224, 220);
+  --link-color-hover: rgb(245, 224, 220);
+  --link-external-color: rgb(245, 224, 220);
+  --link-external-color-hover: rgb(245, 224, 220);
+  --link-unresolved-color: rgb(245, 224, 220);
+  --link-unresolved-decoration-color: rgba(245, 224, 220, 0.3);
+  --list-marker-color: rgb(161, 168, 201);
+  --list-marker-color-collapsed: rgb(245, 224, 220);
+  --list-marker-color-hover: rgb(142, 149, 179);
+  --max-width-image: 90%;
+  --menu-background: rgb(24, 24, 37);
+  --menu-border-color: rgb(67, 70, 90);
   --menu-shadow: 0px 1px 2px rgba(17, 17, 27, 0.121),
       0px 3.4px 6.7px rgba(17, 17, 27, 0.179),
-      0px 15px 30px rgba(17, 17, 27, 0.3) !important;
-  --metadata-border-color: rgb(49, 50, 68) !important;
-  --metadata-divider-color: rgb(49, 50, 68) !important;
-  --metadata-input-background-active: rgba(198, 208, 245, 0.075) !important;
-  --metadata-input-text-color: rgb(198, 208, 245) !important;
-  --metadata-label-background-active: rgba(198, 208, 245, 0.075) !important;
-  --metadata-label-text-color: rgb(142, 149, 179) !important;
-  --metadata-label-text-color-hover: rgb(142, 149, 179) !important;
-  --metadata-property-background-active: rgba(198, 208, 245, 0.075) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(86, 89, 112) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(67, 70, 90) !important;
-  --min-width-image: 50% !important;
-  --modal-background: rgb(30, 30, 46) !important;
-  --modal-border-color: rgb(49, 50, 68) !important;
-  --mono-rgb-0: 17, 17, 27 !important;
-  --mono-rgb-100: 198, 208, 245 !important;
-  --nav-collapse-icon-color: rgb(161, 168, 201) !important;
-  --nav-collapse-icon-color-collapsed: rgb(161, 168, 201) !important;
-  --nav-heading-color: rgb(198, 208, 245) !important;
-  --nav-heading-color-collapsed: rgb(161, 168, 201) !important;
-  --nav-heading-color-collapsed-hover: rgb(142, 149, 179) !important;
-  --nav-heading-color-hover: rgb(198, 208, 245) !important;
-  --nav-indentation-guide-color: rgb(30, 30, 46) !important;
-  --nav-item-background-active: rgba(198, 208, 245, 0.075) !important;
-  --nav-item-background-hover: rgba(198, 208, 245, 0.075) !important;
-  --nav-item-background-selected: rgba(245, 224, 220, 0.2) !important;
-  --nav-item-color: rgb(142, 149, 179) !important;
-  --nav-item-color-active: rgb(198, 208, 245) !important;
-  --nav-item-color-highlighted: rgb(245, 224, 220) !important;
-  --nav-item-color-hover: rgb(198, 208, 245) !important;
-  --nav-item-color-selected: rgb(198, 208, 245) !important;
-  --nav-tag-color: rgb(161, 168, 201) !important;
-  --nav-tag-color-active: rgb(142, 149, 179) !important;
-  --nav-tag-color-hover: rgb(142, 149, 179) !important;
-  --pdf-background: rgb(30, 30, 46) !important;
-  --pdf-dark-opacity: 1 !important;
-  --pdf-page-background: rgb(30, 30, 46) !important;
-  --pdf-shadow: 0 0 0 1px rgb(49, 50, 68) !important;
-  --pdf-sidebar-background: rgb(30, 30, 46) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgb(49, 50, 68) !important;
-  --pill-border-color: rgb(49, 50, 68) !important;
-  --pill-border-color-hover: rgb(67, 70, 90) !important;
-  --pill-color: rgb(142, 149, 179) !important;
-  --pill-color-hover: rgb(198, 208, 245) !important;
-  --pill-color-remove: rgb(161, 168, 201) !important;
-  --pill-color-remove-hover: rgb(245, 224, 220) !important;
-  --prompt-background: rgb(30, 30, 46) !important;
-  --prompt-border-color: rgb(105, 109, 134) !important;
-  --raised-background: color-mix(in srgb, rgb(49, 50, 68) 65%, transparent) linear-gradient(rgb(49, 50, 68), color-mix(in srgb, rgb(49, 50, 68) 65%, transparent)) !important;
-  --ribbon-background: rgb(24, 24, 37) !important;
-  --ribbon-background-collapsed: rgb(30, 30, 46) !important;
-  --scrollbar-active-thumb-bg: rgba(198, 208, 245, 0.2) !important;
-  --scrollbar-bg: rgba(198, 208, 245, 0.05) !important;
-  --scrollbar-thumb-bg: rgba(198, 208, 245, 0.1) !important;
-  --search-clear-button-color: rgb(142, 149, 179) !important;
-  --search-icon-color: rgb(142, 149, 179) !important;
-  --search-result-background: rgb(30, 30, 46) !important;
-  --secondary: rgb(245, 224, 220) !important;
-  --setting-group-heading-color: rgb(198, 208, 245) !important;
-  --setting-items-background: rgb(24, 24, 37) !important;
-  --setting-items-border-color: rgb(49, 50, 68) !important;
+      0px 15px 30px rgba(17, 17, 27, 0.3);
+  --metadata-border-color: rgb(49, 50, 68);
+  --metadata-divider-color: rgb(49, 50, 68);
+  --metadata-input-background-active: rgba(198, 208, 245, 0.075);
+  --metadata-input-text-color: rgb(198, 208, 245);
+  --metadata-label-background-active: rgba(198, 208, 245, 0.075);
+  --metadata-label-text-color: rgb(142, 149, 179);
+  --metadata-label-text-color-hover: rgb(142, 149, 179);
+  --metadata-property-background-active: rgba(198, 208, 245, 0.075);
+  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(86, 89, 112);
+  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(67, 70, 90);
+  --min-width-image: 50%;
+  --modal-background: rgb(30, 30, 46);
+  --modal-border-color: rgb(49, 50, 68);
+  --mono-rgb-0: 17, 17, 27;
+  --mono-rgb-100: 198, 208, 245;
+  --nav-collapse-icon-color: rgb(161, 168, 201);
+  --nav-collapse-icon-color-collapsed: rgb(161, 168, 201);
+  --nav-heading-color: rgb(198, 208, 245);
+  --nav-heading-color-collapsed: rgb(161, 168, 201);
+  --nav-heading-color-collapsed-hover: rgb(142, 149, 179);
+  --nav-heading-color-hover: rgb(198, 208, 245);
+  --nav-indentation-guide-color: rgb(30, 30, 46);
+  --nav-item-background-active: rgba(198, 208, 245, 0.075);
+  --nav-item-background-hover: rgba(198, 208, 245, 0.075);
+  --nav-item-background-selected: rgba(245, 224, 220, 0.2);
+  --nav-item-color: rgb(142, 149, 179);
+  --nav-item-color-active: rgb(198, 208, 245);
+  --nav-item-color-highlighted: rgb(245, 224, 220);
+  --nav-item-color-hover: rgb(198, 208, 245);
+  --nav-item-color-selected: rgb(198, 208, 245);
+  --nav-tag-color: rgb(161, 168, 201);
+  --nav-tag-color-active: rgb(142, 149, 179);
+  --nav-tag-color-hover: rgb(142, 149, 179);
+  --pdf-background: rgb(30, 30, 46);
+  --pdf-dark-opacity: 1;
+  --pdf-page-background: rgb(30, 30, 46);
+  --pdf-shadow: 0 0 0 1px rgb(49, 50, 68);
+  --pdf-sidebar-background: rgb(30, 30, 46);
+  --pdf-thumbnail-shadow: 0 0 0 1px rgb(49, 50, 68);
+  --pill-border-color: rgb(49, 50, 68);
+  --pill-border-color-hover: rgb(67, 70, 90);
+  --pill-color: rgb(142, 149, 179);
+  --pill-color-hover: rgb(198, 208, 245);
+  --pill-color-remove: rgb(161, 168, 201);
+  --pill-color-remove-hover: rgb(245, 224, 220);
+  --prompt-background: rgb(30, 30, 46);
+  --prompt-border-color: rgb(105, 109, 134);
+  --raised-background: color-mix(in srgb, rgb(49, 50, 68) 65%, transparent) linear-gradient(rgb(49, 50, 68), color-mix(in srgb, rgb(49, 50, 68) 65%, transparent));
+  --ribbon-background: rgb(24, 24, 37);
+  --ribbon-background-collapsed: rgb(30, 30, 46);
+  --scrollbar-active-thumb-bg: rgba(198, 208, 245, 0.2);
+  --scrollbar-bg: rgba(198, 208, 245, 0.05);
+  --scrollbar-thumb-bg: rgba(198, 208, 245, 0.1);
+  --search-clear-button-color: rgb(142, 149, 179);
+  --search-icon-color: rgb(142, 149, 179);
+  --search-result-background: rgb(30, 30, 46);
+  --secondary: var(--text-accent, rgb(245, 224, 220));
+  --setting-group-heading-color: rgb(198, 208, 245);
+  --setting-items-background: rgb(24, 24, 37);
+  --setting-items-border-color: rgb(49, 50, 68);
   --shadow-l: 0px 1.8px 7.3px rgba(17, 17, 27, 0.071),
       0px 6.3px 24.7px rgba(17, 17, 27, 0.112),
-      0px 30px 90px rgba(17, 17, 27, 0.2) !important;
+      0px 30px 90px rgba(17, 17, 27, 0.2);
   --shadow-s: 0px 1px 2px rgba(17, 17, 27, 0.121),
       0px 3.4px 6.7px rgba(17, 17, 27, 0.179),
-      0px 15px 30px rgba(17, 17, 27, 0.3) !important;
-  --shiki-active-tab-border-color: rgb(142, 149, 179) !important;
-  --shiki-code-background: rgb(17, 17, 27) !important;
-  --shiki-code-comment: rgb(161, 168, 201) !important;
-  --shiki-code-function: rgb(166, 227, 161) !important;
-  --shiki-code-important: rgb(250, 179, 135) !important;
-  --shiki-code-keyword: rgb(245, 194, 231) !important;
-  --shiki-code-normal: rgb(142, 149, 179) !important;
-  --shiki-code-property: rgb(137, 220, 235) !important;
-  --shiki-code-punctuation: rgb(142, 149, 179) !important;
-  --shiki-code-string: rgb(249, 226, 175) !important;
-  --shiki-code-value: rgb(180, 190, 254) !important;
-  --shiki-gutter-border-color: rgb(49, 50, 68) !important;
-  --shiki-gutter-text-color: rgb(161, 168, 201) !important;
-  --shiki-gutter-text-color-highlight: rgb(142, 149, 179) !important;
-  --shiki-highlight-green: rgba(166, 227, 161, 0.5) !important;
-  --shiki-highlight-green-background: rgba(166, 227, 161, 0.1) !important;
-  --shiki-highlight-neutral: rgb(142, 149, 179) !important;
-  --shiki-highlight-neutral-background: rgba(198, 208, 245, 0.05) !important;
-  --shiki-highlight-red: rgba(243, 139, 168, 0.5) !important;
-  --shiki-highlight-red-background: rgba(243, 139, 168, 0.1) !important;
-  --shiki-terminal-dots-color: rgb(161, 168, 201) !important;
-  --shiki-tooltip-background: rgba(17, 17, 27, 0.9) !important;
-  --slider-thumb-border-color: rgb(67, 70, 90) !important;
-  --slider-track-background: rgb(49, 50, 68) !important;
-  --status-bar-background: rgb(24, 24, 37) !important;
-  --status-bar-border-color: rgb(49, 50, 68) !important;
-  --status-bar-text-color: rgb(142, 149, 179) !important;
-  --suggestion-background: rgb(30, 30, 46) !important;
-  --swatch-shadow: inset 0 0 0 1px rgba(198, 208, 245, 0.15) !important;
-  --sync-avatar-color-1: rgb(243, 139, 168) !important;
-  --sync-avatar-color-2: rgb(250, 179, 135) !important;
-  --sync-avatar-color-3: rgb(249, 226, 175) !important;
-  --sync-avatar-color-4: rgb(166, 227, 161) !important;
-  --sync-avatar-color-5: rgb(137, 220, 235) !important;
-  --sync-avatar-color-6: rgb(135, 176, 249) !important;
-  --sync-avatar-color-7: rgb(180, 190, 254) !important;
-  --sync-avatar-color-8: rgb(245, 194, 231) !important;
-  --tab-background-active: rgb(30, 30, 46) !important;
-  --tab-container-background: rgb(24, 24, 37) !important;
-  --tab-divider-color: rgb(67, 70, 90) !important;
-  --tab-inactive-color: rgb(24, 24, 37) !important;
-  --tab-outline-color: rgb(49, 50, 68) !important;
-  --tab-stacked-pane-width: 700px !important;
-  --tab-switcher-background: rgb(24, 24, 37) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(24, 24, 37), transparent) !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(198, 208, 245, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(245, 224, 220) !important;
-  --tab-text-color: rgb(161, 168, 201) !important;
-  --tab-text-color-active: rgb(142, 149, 179) !important;
-  --tab-text-color-focused: rgb(142, 149, 179) !important;
-  --tab-text-color-focused-active: rgb(142, 149, 179) !important;
-  --tab-text-color-focused-active-current: rgb(198, 208, 245) !important;
-  --tab-text-color-focused-highlighted: rgb(245, 224, 220) !important;
-  --table-add-button-border-color: rgb(49, 50, 68) !important;
-  --table-border-color: rgb(49, 50, 68) !important;
-  --table-drag-handle-background-active: rgb(245, 224, 220) !important;
-  --table-drag-handle-color: rgb(161, 168, 201) !important;
-  --table-drag-handle-color-active: rgb(30, 30, 46) !important;
-  --table-header-border-color: rgb(49, 50, 68) !important;
-  --table-header-color: rgb(198, 208, 245) !important;
-  --table-selection-blend-mode: none !important;
-  --table-selection-border-color: rgb(245, 224, 220) !important;
-  --tag-background: rgba(245, 224, 220, 0.1) !important;
-  --tag-background-hover: rgba(245, 224, 220, 0.2) !important;
-  --tag-border-color: rgba(245, 224, 220, 0.15) !important;
-  --tag-border-color-hover: rgba(245, 224, 220, 0.15) !important;
-  --tag-color: rgb(245, 224, 220) !important;
-  --tag-color-hover: rgb(245, 224, 220) !important;
-  --tertiary: rgb(245, 224, 220) !important;
-  --text-accent: rgb(245, 224, 220) !important;
-  --text-accent-hover: rgb(245, 224, 220) !important;
-  --text-error: rgb(243, 139, 168) !important;
-  --text-error-hover: rgba(243, 139, 168, 0.8) !important;
-  --text-faint: rgb(161, 168, 201) !important;
-  --text-highlight-bg: rgba(249, 226, 175, 0.2) !important;
-  --text-highlight-bg-active: rgba(249, 226, 175, 0.4) !important;
-  --text-muted: rgb(142, 149, 179) !important;
-  --text-muted-rgb: 142, 149, 179 !important;
-  --text-normal: rgb(198, 208, 245) !important;
-  --text-on-accent: rgb(30, 30, 46) !important;
-  --text-selection: rgba(245, 224, 220, 0.25) !important;
-  --text-success: rgb(166, 227, 161) !important;
-  --text-warning: rgb(250, 179, 135) !important;
-  --textHighlight: rgba(249, 226, 175, 0.2) !important;
-  --titlebar-background: rgb(24, 24, 37) !important;
-  --titlebar-background-focused: rgb(17, 17, 27) !important;
-  --titlebar-border-color: rgb(49, 50, 68) !important;
-  --titlebar-text-color: rgb(142, 149, 179) !important;
-  --titlebar-text-color-focused: rgb(245, 224, 220) !important;
-  --vault-profile-color: rgb(198, 208, 245) !important;
-  --vault-profile-color-hover: rgb(198, 208, 245) !important;
-  --width-image-gallery: 200px !important;
-  --workspace-background-translucent: rgba(17, 17, 27, 0.6) !important;
-  --quartz-icon-color: currentColor !important;
+      0px 15px 30px rgba(17, 17, 27, 0.3);
+  --shiki-active-tab-border-color: rgb(142, 149, 179);
+  --shiki-code-background: rgb(17, 17, 27);
+  --shiki-code-comment: rgb(161, 168, 201);
+  --shiki-code-function: rgb(166, 227, 161);
+  --shiki-code-important: rgb(250, 179, 135);
+  --shiki-code-keyword: rgb(245, 194, 231);
+  --shiki-code-normal: rgb(142, 149, 179);
+  --shiki-code-property: rgb(137, 220, 235);
+  --shiki-code-punctuation: rgb(142, 149, 179);
+  --shiki-code-string: rgb(249, 226, 175);
+  --shiki-code-value: rgb(180, 190, 254);
+  --shiki-gutter-border-color: rgb(49, 50, 68);
+  --shiki-gutter-text-color: rgb(161, 168, 201);
+  --shiki-gutter-text-color-highlight: rgb(142, 149, 179);
+  --shiki-highlight-green: rgba(166, 227, 161, 0.5);
+  --shiki-highlight-green-background: rgba(166, 227, 161, 0.1);
+  --shiki-highlight-neutral: rgb(142, 149, 179);
+  --shiki-highlight-neutral-background: rgba(198, 208, 245, 0.05);
+  --shiki-highlight-red: rgba(243, 139, 168, 0.5);
+  --shiki-highlight-red-background: rgba(243, 139, 168, 0.1);
+  --shiki-terminal-dots-color: rgb(161, 168, 201);
+  --shiki-tooltip-background: rgba(17, 17, 27, 0.9);
+  --slider-thumb-border-color: rgb(67, 70, 90);
+  --slider-track-background: rgb(49, 50, 68);
+  --status-bar-background: rgb(24, 24, 37);
+  --status-bar-border-color: rgb(49, 50, 68);
+  --status-bar-text-color: rgb(142, 149, 179);
+  --suggestion-background: rgb(30, 30, 46);
+  --swatch-shadow: inset 0 0 0 1px rgba(198, 208, 245, 0.15);
+  --sync-avatar-color-1: rgb(243, 139, 168);
+  --sync-avatar-color-2: rgb(250, 179, 135);
+  --sync-avatar-color-3: rgb(249, 226, 175);
+  --sync-avatar-color-4: rgb(166, 227, 161);
+  --sync-avatar-color-5: rgb(137, 220, 235);
+  --sync-avatar-color-6: rgb(135, 176, 249);
+  --sync-avatar-color-7: rgb(180, 190, 254);
+  --sync-avatar-color-8: rgb(245, 194, 231);
+  --tab-background-active: rgb(30, 30, 46);
+  --tab-container-background: rgb(24, 24, 37);
+  --tab-divider-color: rgb(67, 70, 90);
+  --tab-inactive-color: rgb(24, 24, 37);
+  --tab-outline-color: rgb(49, 50, 68);
+  --tab-stacked-pane-width: 700px;
+  --tab-switcher-background: rgb(24, 24, 37);
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(24, 24, 37), transparent);
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(198, 208, 245, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(245, 224, 220);
+  --tab-text-color: rgb(161, 168, 201);
+  --tab-text-color-active: rgb(142, 149, 179);
+  --tab-text-color-focused: rgb(142, 149, 179);
+  --tab-text-color-focused-active: rgb(142, 149, 179);
+  --tab-text-color-focused-active-current: rgb(198, 208, 245);
+  --tab-text-color-focused-highlighted: rgb(245, 224, 220);
+  --table-add-button-border-color: rgb(49, 50, 68);
+  --table-border-color: rgb(49, 50, 68);
+  --table-drag-handle-background-active: rgb(245, 224, 220);
+  --table-drag-handle-color: rgb(161, 168, 201);
+  --table-drag-handle-color-active: rgb(30, 30, 46);
+  --table-header-border-color: rgb(49, 50, 68);
+  --table-header-color: rgb(198, 208, 245);
+  --table-selection-blend-mode: none;
+  --table-selection-border-color: rgb(245, 224, 220);
+  --tag-background: rgba(245, 224, 220, 0.1);
+  --tag-background-hover: rgba(245, 224, 220, 0.2);
+  --tag-border-color: rgba(245, 224, 220, 0.15);
+  --tag-border-color-hover: rgba(245, 224, 220, 0.15);
+  --tag-color: rgb(245, 224, 220);
+  --tag-color-hover: rgb(245, 224, 220);
+  --tertiary: var(--text-accent-hover, rgb(245, 224, 220));
+  --text-accent: rgb(245, 224, 220);
+  --text-accent-hover: rgb(245, 224, 220);
+  --text-error: rgb(243, 139, 168);
+  --text-error-hover: rgba(243, 139, 168, 0.8);
+  --text-faint: rgb(161, 168, 201);
+  --text-highlight-bg: rgba(249, 226, 175, 0.2);
+  --text-highlight-bg-active: rgba(249, 226, 175, 0.4);
+  --text-muted: rgb(142, 149, 179);
+  --text-muted-rgb: 142, 149, 179;
+  --text-normal: rgb(198, 208, 245);
+  --text-on-accent: rgb(30, 30, 46);
+  --text-selection: rgba(245, 224, 220, 0.25);
+  --text-success: rgb(166, 227, 161);
+  --text-warning: rgb(250, 179, 135);
+  --textHighlight: var(--text-highlight-bg, rgba(249, 226, 175, 0.2));
+  --titlebar-background: rgb(24, 24, 37);
+  --titlebar-background-focused: rgb(17, 17, 27);
+  --titlebar-border-color: rgb(49, 50, 68);
+  --titlebar-text-color: rgb(142, 149, 179);
+  --titlebar-text-color-focused: rgb(245, 224, 220);
+  --vault-profile-color: rgb(198, 208, 245);
+  --vault-profile-color-hover: rgb(198, 208, 245);
+  --width-image-gallery: 200px;
+  --workspace-background-translucent: rgba(17, 17, 27, 0.6);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -2123,58 +2124,58 @@ html[saved-theme="dark"] body ul.tags > li {
   },
   light: {
     base: `:root:root {
-  --anp-bold-color: 210, 15, 57 !important;
-  --anp-header-font: "Noto Serif" !important;
-  --anp-header-margin-value: 15px !important;
-  --anp-highlight-color: 228, 147, 32 !important;
-  --anp-italic-color: 64, 160, 43 !important;
-  --anp-preview-width-max: 800px !important;
-  --anp-preview-width-pct: 95% !important;
-  --anp-rainbow-folder-bg-opacity: 1 !important;
-  --anp-rainbow-folder-border-opacity: 1 !important;
-  --anp-rainbow-folder-collapse-border-custom: #00000044 !important;
-  --anp-speech-bubble-opacity: 0.5 !important;
-  --anp-table-width-pct: 100% !important;
-  --background-modifier-active: rgba(222, 149, 132, 0.1) !important;
-  --background-modifier-active-hover: rgba(222, 149, 132, 0.15) !important;
-  --background-modifier-border: rgb(188, 192, 204) !important;
-  --background-modifier-border-focus: rgb(156, 160, 176) !important;
-  --background-modifier-border-hover: rgb(172, 176, 190) !important;
-  --background-modifier-cover: #00000022 !important;
-  --background-modifier-error: rgb(210, 15, 57) !important;
-  --background-modifier-error-hover: rgba(210, 15, 57, 0.9) !important;
-  --background-modifier-error-rgb: 210, 15, 57 !important;
-  --background-modifier-form-field: rgba(220, 224, 232, 0.3) !important;
-  --background-modifier-form-field-hover: rgba(220, 224, 232, 0.3) !important;
-  --background-modifier-hover: rgba(76, 79, 105, 0.075) !important;
-  --background-modifier-message: rgba(220, 224, 232, 0.9) !important;
-  --background-modifier-success: rgb(64, 160, 43) !important;
-  --background-modifier-success-hover: rgba(64, 160, 43, 0.9) !important;
-  --background-modifier-success-rgb: 64, 160, 43 !important;
-  --background-primary: rgb(239, 241, 245) !important;
-  --background-primary-alt: rgb(230, 233, 239) !important;
-  --background-secondary: rgb(230, 233, 239) !important;
-  --background-secondary-alt: rgb(220, 224, 232) !important;
-  --bases-cards-background: rgb(239, 241, 245) !important;
-  --bases-cards-cover-background: rgb(230, 233, 239) !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(188, 192, 204) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(172, 176, 190) !important;
-  --bases-embed-border-color: rgb(188, 192, 204) !important;
-  --bases-group-heading-property-color: rgb(124, 127, 147) !important;
-  --bases-table-border-color: rgb(188, 192, 204) !important;
-  --bases-table-cell-background-active: rgb(239, 241, 245) !important;
-  --bases-table-cell-background-disabled: rgb(230, 233, 239) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(156, 160, 176) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(222, 149, 132) !important;
-  --bases-table-group-background: rgb(230, 233, 239) !important;
-  --bases-table-header-background: rgb(239, 241, 245) !important;
-  --bases-table-header-background-hover: rgba(76, 79, 105, 0.075) !important;
-  --bases-table-header-color: rgb(124, 127, 147) !important;
-  --bases-table-summary-background: rgb(239, 241, 245) !important;
-  --bases-table-summary-background-hover: rgba(76, 79, 105, 0.075) !important;
-  --blockquote-background-color: rgba(220, 224, 232, 0.5) !important;
-  --blockquote-border-color: rgb(222, 149, 132) !important;
-  --blur-background: color-mix(in srgb, rgb(239, 241, 245) 65%, transparent) linear-gradient(rgb(239, 241, 245), color-mix(in srgb, rgb(239, 241, 245) 65%, transparent)) !important;
+  --anp-bold-color: 210, 15, 57;
+  --anp-header-font: "Noto Serif";
+  --anp-header-margin-value: 15px;
+  --anp-highlight-color: 228, 147, 32;
+  --anp-italic-color: 64, 160, 43;
+  --anp-preview-width-max: 800px;
+  --anp-preview-width-pct: 95%;
+  --anp-rainbow-folder-bg-opacity: 1;
+  --anp-rainbow-folder-border-opacity: 1;
+  --anp-rainbow-folder-collapse-border-custom: #00000044;
+  --anp-speech-bubble-opacity: 0.5;
+  --anp-table-width-pct: 100%;
+  --background-modifier-active: rgba(222, 149, 132, 0.1);
+  --background-modifier-active-hover: rgba(222, 149, 132, 0.15);
+  --background-modifier-border: rgb(188, 192, 204);
+  --background-modifier-border-focus: rgb(156, 160, 176);
+  --background-modifier-border-hover: rgb(172, 176, 190);
+  --background-modifier-cover: #00000022;
+  --background-modifier-error: rgb(210, 15, 57);
+  --background-modifier-error-hover: rgba(210, 15, 57, 0.9);
+  --background-modifier-error-rgb: 210, 15, 57;
+  --background-modifier-form-field: rgba(220, 224, 232, 0.3);
+  --background-modifier-form-field-hover: rgba(220, 224, 232, 0.3);
+  --background-modifier-hover: rgba(76, 79, 105, 0.075);
+  --background-modifier-message: rgba(220, 224, 232, 0.9);
+  --background-modifier-success: rgb(64, 160, 43);
+  --background-modifier-success-hover: rgba(64, 160, 43, 0.9);
+  --background-modifier-success-rgb: 64, 160, 43;
+  --background-primary: rgb(239, 241, 245);
+  --background-primary-alt: rgb(230, 233, 239);
+  --background-secondary: rgb(230, 233, 239);
+  --background-secondary-alt: rgb(220, 224, 232);
+  --bases-cards-background: rgb(239, 241, 245);
+  --bases-cards-cover-background: rgb(230, 233, 239);
+  --bases-cards-shadow: 0 0 0 1px rgb(188, 192, 204);
+  --bases-cards-shadow-hover: 0 0 0 1px rgb(172, 176, 190);
+  --bases-embed-border-color: rgb(188, 192, 204);
+  --bases-group-heading-property-color: rgb(124, 127, 147);
+  --bases-table-border-color: rgb(188, 192, 204);
+  --bases-table-cell-background-active: rgb(239, 241, 245);
+  --bases-table-cell-background-disabled: rgb(230, 233, 239);
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(156, 160, 176);
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(222, 149, 132);
+  --bases-table-group-background: rgb(230, 233, 239);
+  --bases-table-header-background: rgb(239, 241, 245);
+  --bases-table-header-background-hover: rgba(76, 79, 105, 0.075);
+  --bases-table-header-color: rgb(124, 127, 147);
+  --bases-table-summary-background: rgb(239, 241, 245);
+  --bases-table-summary-background-hover: rgba(76, 79, 105, 0.075);
+  --blockquote-background-color: rgba(220, 224, 232, 0.5);
+  --blockquote-border-color: rgb(222, 149, 132);
+  --blur-background: color-mix(in srgb, rgb(239, 241, 245) 65%, transparent) linear-gradient(rgb(239, 241, 245), color-mix(in srgb, rgb(239, 241, 245) 65%, transparent));
   --callout-blend-mode: none;
   --callout-bug: 210, 15, 57;
   --callout-content-padding: 8px;
@@ -2192,331 +2193,331 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-title-padding: 8px;
   --callout-todo: 42, 110, 245;
   --callout-warning: 254, 100, 11;
-  --canvas-background: rgb(239, 241, 245) !important;
-  --canvas-card-label-color: rgb(108, 111, 133) !important;
-  --canvas-color: 156, 160, 176 !important;
-  --canvas-color-1: 210, 15, 57 !important;
-  --canvas-color-2: 254, 100, 11 !important;
-  --canvas-color-3: 228, 147, 32 !important;
-  --canvas-color-4: 64, 160, 43 !important;
-  --canvas-color-5: 4, 165, 229 !important;
-  --canvas-color-6: 114, 135, 253 !important;
-  --canvas-dot-pattern: rgb(188, 192, 204) !important;
-  --card-background-color: rgb(220, 224, 232) !important;
-  --card-foreground-color: rgb(239, 241, 245) !important;
-  --caret-color: rgb(76, 79, 105) !important;
-  --checkbox-border-color: rgb(108, 111, 133) !important;
-  --checkbox-border-color-hover: rgb(124, 127, 147) !important;
-  --checkbox-color: rgb(222, 149, 132) !important;
-  --checkbox-color-hover: rgba(222, 149, 132, 0.9) !important;
-  --checkbox-marker-color: rgb(239, 241, 245) !important;
-  --checklist-done-color: rgb(124, 127, 147) !important;
-  --code-background: rgb(220, 224, 232) !important;
-  --code-border-color: rgb(188, 192, 204) !important;
-  --code-bracket-background: rgba(76, 79, 105, 0.075) !important;
-  --code-comment: rgb(108, 111, 133) !important;
-  --code-function: rgb(228, 147, 32) !important;
-  --code-important: rgb(254, 100, 11) !important;
-  --code-keyword: rgb(236, 131, 208) !important;
-  --code-normal: rgb(76, 79, 105) !important;
-  --code-operator: rgb(210, 15, 57) !important;
-  --code-property: rgb(4, 165, 229) !important;
-  --code-punctuation: rgb(124, 127, 147) !important;
-  --code-string: rgb(64, 160, 43) !important;
-  --code-tag: rgb(210, 15, 57) !important;
-  --code-value: rgb(114, 135, 253) !important;
-  --collapse-icon-color: rgb(108, 111, 133) !important;
-  --collapse-icon-color-collapsed: rgb(222, 149, 132) !important;
-  --color-accent: rgb(222, 149, 132) !important;
-  --color-accent-1: rgb(222, 149, 132) !important;
-  --color-accent-2: rgba(222, 149, 132, 0.9) !important;
-  --color-base-00: rgb(220, 224, 232) !important;
-  --color-base-10: rgb(230, 233, 239) !important;
-  --color-base-100: rgb(76, 79, 105) !important;
-  --color-base-20: rgb(239, 241, 245) !important;
-  --color-base-25: rgb(204, 208, 218) !important;
-  --color-base-30: rgb(188, 192, 204) !important;
-  --color-base-35: rgb(172, 176, 190) !important;
-  --color-base-40: rgb(156, 160, 176) !important;
-  --color-base-50: rgb(140, 143, 161) !important;
-  --color-base-60: rgb(124, 127, 147) !important;
-  --color-base-70: rgb(108, 111, 133) !important;
-  --color-blue: rgb(42, 110, 245) !important;
-  --color-blue-rgb: 42, 110, 245 !important;
-  --color-cyan: rgb(4, 165, 229) !important;
-  --color-cyan-rgb: 4, 165, 229 !important;
-  --color-green: rgb(64, 160, 43) !important;
-  --color-green-rgb: 64, 160, 43 !important;
-  --color-orange: rgb(254, 100, 11) !important;
-  --color-orange-rgb: 254, 100, 11 !important;
-  --color-pink: rgb(236, 131, 208) !important;
-  --color-pink-rgb: 236, 131, 208 !important;
-  --color-purple: rgb(114, 135, 253) !important;
-  --color-purple-rgb: 114, 135, 253 !important;
-  --color-red: rgb(210, 15, 57) !important;
-  --color-red-rgb: 210, 15, 57 !important;
-  --color-yellow: rgb(228, 147, 32) !important;
-  --color-yellow-rgb: 228, 147, 32 !important;
-  --ctp-accent: 222, 149, 132 !important;
-  --ctp-base: 239, 241, 245 !important;
-  --ctp-blue: 42, 110, 245 !important;
-  --ctp-crust: 220, 224, 232 !important;
-  --ctp-flamingo: 221, 120, 120 !important;
-  --ctp-green: 64, 160, 43 !important;
-  --ctp-lavender: 114, 135, 253 !important;
-  --ctp-mantle: 230, 233, 239 !important;
-  --ctp-maroon: 230, 69, 83 !important;
-  --ctp-mauve: 136, 57, 239 !important;
-  --ctp-overlay0: 156, 160, 176 !important;
-  --ctp-overlay1: 140, 143, 161 !important;
-  --ctp-overlay2: 124, 127, 147 !important;
-  --ctp-peach: 254, 100, 11 !important;
-  --ctp-pink: 236, 131, 208 !important;
-  --ctp-red: 210, 15, 57 !important;
-  --ctp-rosewater: 222, 149, 132 !important;
-  --ctp-sapphire: 32, 159, 181 !important;
-  --ctp-sky: 4, 165, 229 !important;
-  --ctp-subtext0: 108, 111, 133 !important;
-  --ctp-subtext1: 92, 95, 119 !important;
-  --ctp-surface0: 204, 208, 218 !important;
-  --ctp-surface1: 188, 192, 204 !important;
-  --ctp-surface2: 172, 176, 190 !important;
-  --ctp-teal: 23, 146, 153 !important;
-  --ctp-text: 76, 79, 105 !important;
-  --ctp-yellow: 228, 147, 32 !important;
-  --dark: rgb(76, 79, 105) !important;
-  --darkgray: rgb(76, 79, 105) !important;
-  --divider-color: rgb(188, 192, 204) !important;
-  --divider-color-hover: rgb(222, 149, 132) !important;
-  --drag-ghost-background: rgb(76, 79, 105) !important;
-  --drag-ghost-text-color: rgb(220, 224, 232) !important;
-  --dropdown-background: rgb(204, 208, 218) !important;
-  --dropdown-background-hover: rgb(188, 192, 204) !important;
-  --embed-block-shadow-hover: none !important;
-  --embed-border-start: 2px solid rgb(222, 149, 132) !important;
-  --file-header-background: rgb(239, 241, 245) !important;
-  --file-header-background-focused: rgb(239, 241, 245) !important;
-  --flair-background: rgb(204, 208, 218) !important;
-  --flair-color: rgb(76, 79, 105) !important;
-  --footnote-divider-color: rgb(188, 192, 204) !important;
-  --footnote-id-color: rgb(124, 127, 147) !important;
-  --footnote-id-color-no-occurrences: rgb(108, 111, 133) !important;
-  --footnote-input-background-active: rgba(76, 79, 105, 0.075) !important;
-  --graph-line: rgb(172, 176, 190) !important;
-  --graph-node: rgb(124, 127, 147) !important;
-  --graph-node-attachment: rgb(228, 147, 32) !important;
-  --graph-node-focused: rgb(222, 149, 132) !important;
-  --graph-node-tag: rgb(64, 160, 43) !important;
-  --graph-node-unresolved: rgb(108, 111, 133) !important;
-  --graph-text: rgb(76, 79, 105) !important;
-  --gray: rgb(124, 127, 147) !important;
-  --h1-color: rgb(210, 15, 57) !important;
-  --h2-color: rgb(254, 100, 11) !important;
-  --h3-color: rgb(64, 160, 43) !important;
-  --h4-color: rgb(23, 146, 153) !important;
-  --h5-color: rgb(114, 135, 253) !important;
-  --h6-color: rgb(136, 57, 239) !important;
-  --heading-formatting: rgb(222, 149, 132) !important;
-  --highlight: rgba(228, 147, 32, 0.2) !important;
-  --highlight-mix-blend-mode: none !important;
-  --hr-color: rgb(188, 192, 204) !important;
-  --icon-color: rgb(124, 127, 147) !important;
-  --icon-color-active: rgb(222, 149, 132) !important;
-  --icon-color-focused: rgb(222, 149, 132) !important;
-  --icon-color-hover: rgb(124, 127, 147) !important;
-  --indentation-guide-color: rgba(76, 79, 105, 0.12) !important;
-  --indentation-guide-color-active: rgba(76, 79, 105, 0.3) !important;
-  --inline-title-color: rgb(76, 79, 105) !important;
-  --input-date-separator: rgb(108, 111, 133) !important;
-  --input-placeholder-color: rgb(108, 111, 133) !important;
-  --interactive-accent: rgb(222, 149, 132) !important;
-  --interactive-accent-hover: rgba(222, 149, 132, 0.9) !important;
-  --interactive-accent-rgb: 222, 149, 132 !important;
-  --interactive-hover: rgb(188, 192, 204) !important;
-  --interactive-normal: rgb(204, 208, 218) !important;
-  --interactive-success: rgb(64, 160, 43) !important;
-  --light: rgb(239, 241, 245) !important;
-  --lightgray: rgb(230, 233, 239) !important;
-  --link-color: rgb(222, 149, 132) !important;
-  --link-color-hover: rgb(222, 149, 132) !important;
-  --link-external-color: rgb(222, 149, 132) !important;
-  --link-external-color-hover: rgb(222, 149, 132) !important;
-  --link-unresolved-color: rgb(222, 149, 132) !important;
-  --link-unresolved-decoration-color: rgba(222, 149, 132, 0.3) !important;
-  --list-marker-color: rgb(108, 111, 133) !important;
-  --list-marker-color-collapsed: rgb(222, 149, 132) !important;
-  --list-marker-color-hover: rgb(124, 127, 147) !important;
-  --max-width-image: 90% !important;
-  --menu-background: rgb(230, 233, 239) !important;
-  --menu-border-color: rgb(172, 176, 190) !important;
+  --canvas-background: rgb(239, 241, 245);
+  --canvas-card-label-color: rgb(108, 111, 133);
+  --canvas-color: 156, 160, 176;
+  --canvas-color-1: 210, 15, 57;
+  --canvas-color-2: 254, 100, 11;
+  --canvas-color-3: 228, 147, 32;
+  --canvas-color-4: 64, 160, 43;
+  --canvas-color-5: 4, 165, 229;
+  --canvas-color-6: 114, 135, 253;
+  --canvas-dot-pattern: rgb(188, 192, 204);
+  --card-background-color: rgb(220, 224, 232);
+  --card-foreground-color: rgb(239, 241, 245);
+  --caret-color: rgb(76, 79, 105);
+  --checkbox-border-color: rgb(108, 111, 133);
+  --checkbox-border-color-hover: rgb(124, 127, 147);
+  --checkbox-color: rgb(222, 149, 132);
+  --checkbox-color-hover: rgba(222, 149, 132, 0.9);
+  --checkbox-marker-color: rgb(239, 241, 245);
+  --checklist-done-color: rgb(124, 127, 147);
+  --code-background: rgb(220, 224, 232);
+  --code-border-color: rgb(188, 192, 204);
+  --code-bracket-background: rgba(76, 79, 105, 0.075);
+  --code-comment: rgb(108, 111, 133);
+  --code-function: rgb(228, 147, 32);
+  --code-important: rgb(254, 100, 11);
+  --code-keyword: rgb(236, 131, 208);
+  --code-normal: rgb(76, 79, 105);
+  --code-operator: rgb(210, 15, 57);
+  --code-property: rgb(4, 165, 229);
+  --code-punctuation: rgb(124, 127, 147);
+  --code-string: rgb(64, 160, 43);
+  --code-tag: rgb(210, 15, 57);
+  --code-value: rgb(114, 135, 253);
+  --collapse-icon-color: rgb(108, 111, 133);
+  --collapse-icon-color-collapsed: rgb(222, 149, 132);
+  --color-accent: rgb(222, 149, 132);
+  --color-accent-1: rgb(222, 149, 132);
+  --color-accent-2: rgba(222, 149, 132, 0.9);
+  --color-base-00: rgb(220, 224, 232);
+  --color-base-10: rgb(230, 233, 239);
+  --color-base-100: rgb(76, 79, 105);
+  --color-base-20: rgb(239, 241, 245);
+  --color-base-25: rgb(204, 208, 218);
+  --color-base-30: rgb(188, 192, 204);
+  --color-base-35: rgb(172, 176, 190);
+  --color-base-40: rgb(156, 160, 176);
+  --color-base-50: rgb(140, 143, 161);
+  --color-base-60: rgb(124, 127, 147);
+  --color-base-70: rgb(108, 111, 133);
+  --color-blue: rgb(42, 110, 245);
+  --color-blue-rgb: 42, 110, 245;
+  --color-cyan: rgb(4, 165, 229);
+  --color-cyan-rgb: 4, 165, 229;
+  --color-green: rgb(64, 160, 43);
+  --color-green-rgb: 64, 160, 43;
+  --color-orange: rgb(254, 100, 11);
+  --color-orange-rgb: 254, 100, 11;
+  --color-pink: rgb(236, 131, 208);
+  --color-pink-rgb: 236, 131, 208;
+  --color-purple: rgb(114, 135, 253);
+  --color-purple-rgb: 114, 135, 253;
+  --color-red: rgb(210, 15, 57);
+  --color-red-rgb: 210, 15, 57;
+  --color-yellow: rgb(228, 147, 32);
+  --color-yellow-rgb: 228, 147, 32;
+  --ctp-accent: 222, 149, 132;
+  --ctp-base: 239, 241, 245;
+  --ctp-blue: 42, 110, 245;
+  --ctp-crust: 220, 224, 232;
+  --ctp-flamingo: 221, 120, 120;
+  --ctp-green: 64, 160, 43;
+  --ctp-lavender: 114, 135, 253;
+  --ctp-mantle: 230, 233, 239;
+  --ctp-maroon: 230, 69, 83;
+  --ctp-mauve: 136, 57, 239;
+  --ctp-overlay0: 156, 160, 176;
+  --ctp-overlay1: 140, 143, 161;
+  --ctp-overlay2: 124, 127, 147;
+  --ctp-peach: 254, 100, 11;
+  --ctp-pink: 236, 131, 208;
+  --ctp-red: 210, 15, 57;
+  --ctp-rosewater: 222, 149, 132;
+  --ctp-sapphire: 32, 159, 181;
+  --ctp-sky: 4, 165, 229;
+  --ctp-subtext0: 108, 111, 133;
+  --ctp-subtext1: 92, 95, 119;
+  --ctp-surface0: 204, 208, 218;
+  --ctp-surface1: 188, 192, 204;
+  --ctp-surface2: 172, 176, 190;
+  --ctp-teal: 23, 146, 153;
+  --ctp-text: 76, 79, 105;
+  --ctp-yellow: 228, 147, 32;
+  --dark: var(--text-normal, rgb(76, 79, 105));
+  --darkgray: var(--text-normal, rgb(76, 79, 105));
+  --divider-color: rgb(188, 192, 204);
+  --divider-color-hover: rgb(222, 149, 132);
+  --drag-ghost-background: rgb(76, 79, 105);
+  --drag-ghost-text-color: rgb(220, 224, 232);
+  --dropdown-background: rgb(204, 208, 218);
+  --dropdown-background-hover: rgb(188, 192, 204);
+  --embed-block-shadow-hover: none;
+  --embed-border-start: 2px solid rgb(222, 149, 132);
+  --file-header-background: rgb(239, 241, 245);
+  --file-header-background-focused: rgb(239, 241, 245);
+  --flair-background: rgb(204, 208, 218);
+  --flair-color: rgb(76, 79, 105);
+  --footnote-divider-color: rgb(188, 192, 204);
+  --footnote-id-color: rgb(124, 127, 147);
+  --footnote-id-color-no-occurrences: rgb(108, 111, 133);
+  --footnote-input-background-active: rgba(76, 79, 105, 0.075);
+  --graph-line: rgb(172, 176, 190);
+  --graph-node: rgb(124, 127, 147);
+  --graph-node-attachment: rgb(228, 147, 32);
+  --graph-node-focused: rgb(222, 149, 132);
+  --graph-node-tag: rgb(64, 160, 43);
+  --graph-node-unresolved: rgb(108, 111, 133);
+  --graph-text: rgb(76, 79, 105);
+  --gray: var(--text-muted, rgb(124, 127, 147));
+  --h1-color: rgb(210, 15, 57);
+  --h2-color: rgb(254, 100, 11);
+  --h3-color: rgb(64, 160, 43);
+  --h4-color: rgb(23, 146, 153);
+  --h5-color: rgb(114, 135, 253);
+  --h6-color: rgb(136, 57, 239);
+  --heading-formatting: rgb(222, 149, 132);
+  --highlight: var(--text-highlight-bg, rgba(228, 147, 32, 0.2));
+  --highlight-mix-blend-mode: none;
+  --hr-color: rgb(188, 192, 204);
+  --icon-color: rgb(124, 127, 147);
+  --icon-color-active: rgb(222, 149, 132);
+  --icon-color-focused: rgb(222, 149, 132);
+  --icon-color-hover: rgb(124, 127, 147);
+  --indentation-guide-color: rgba(76, 79, 105, 0.12);
+  --indentation-guide-color-active: rgba(76, 79, 105, 0.3);
+  --inline-title-color: rgb(76, 79, 105);
+  --input-date-separator: rgb(108, 111, 133);
+  --input-placeholder-color: rgb(108, 111, 133);
+  --interactive-accent: rgb(222, 149, 132);
+  --interactive-accent-hover: rgba(222, 149, 132, 0.9);
+  --interactive-accent-rgb: 222, 149, 132;
+  --interactive-hover: rgb(188, 192, 204);
+  --interactive-normal: rgb(204, 208, 218);
+  --interactive-success: rgb(64, 160, 43);
+  --light: var(--background-primary, rgb(239, 241, 245));
+  --lightgray: var(--background-secondary, rgb(230, 233, 239));
+  --link-color: rgb(222, 149, 132);
+  --link-color-hover: rgb(222, 149, 132);
+  --link-external-color: rgb(222, 149, 132);
+  --link-external-color-hover: rgb(222, 149, 132);
+  --link-unresolved-color: rgb(222, 149, 132);
+  --link-unresolved-decoration-color: rgba(222, 149, 132, 0.3);
+  --list-marker-color: rgb(108, 111, 133);
+  --list-marker-color-collapsed: rgb(222, 149, 132);
+  --list-marker-color-hover: rgb(124, 127, 147);
+  --max-width-image: 90%;
+  --menu-background: rgb(230, 233, 239);
+  --menu-border-color: rgb(172, 176, 190);
   --menu-shadow: 0px 1px 2px rgba(220, 224, 232, 0.121),
       0px 3.4px 6.7px rgba(220, 224, 232, 0.179),
-      0px 15px 30px rgba(220, 224, 232, 0.3) !important;
-  --metadata-border-color: rgb(188, 192, 204) !important;
-  --metadata-divider-color: rgb(188, 192, 204) !important;
-  --metadata-input-background-active: rgba(76, 79, 105, 0.075) !important;
-  --metadata-input-text-color: rgb(76, 79, 105) !important;
-  --metadata-label-background-active: rgba(76, 79, 105, 0.075) !important;
-  --metadata-label-text-color: rgb(124, 127, 147) !important;
-  --metadata-label-text-color-hover: rgb(124, 127, 147) !important;
-  --metadata-property-background-active: rgba(76, 79, 105, 0.075) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(156, 160, 176) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(172, 176, 190) !important;
-  --min-width-image: 50% !important;
-  --modal-background: rgb(239, 241, 245) !important;
-  --modal-border-color: rgb(204, 208, 218) !important;
-  --mono-rgb-0: 220, 224, 232 !important;
-  --mono-rgb-100: 76, 79, 105 !important;
-  --nav-collapse-icon-color: rgb(108, 111, 133) !important;
-  --nav-collapse-icon-color-collapsed: rgb(108, 111, 133) !important;
-  --nav-heading-color: rgb(76, 79, 105) !important;
-  --nav-heading-color-collapsed: rgb(108, 111, 133) !important;
-  --nav-heading-color-collapsed-hover: rgb(124, 127, 147) !important;
-  --nav-heading-color-hover: rgb(76, 79, 105) !important;
-  --nav-indentation-guide-color: rgb(239, 241, 245) !important;
-  --nav-item-background-active: rgba(76, 79, 105, 0.075) !important;
-  --nav-item-background-hover: rgba(76, 79, 105, 0.075) !important;
-  --nav-item-background-selected: rgba(222, 149, 132, 0.2) !important;
-  --nav-item-color: rgb(124, 127, 147) !important;
-  --nav-item-color-active: rgb(76, 79, 105) !important;
-  --nav-item-color-highlighted: rgb(222, 149, 132) !important;
-  --nav-item-color-hover: rgb(76, 79, 105) !important;
-  --nav-item-color-selected: rgb(76, 79, 105) !important;
-  --nav-tag-color: rgb(108, 111, 133) !important;
-  --nav-tag-color-active: rgb(124, 127, 147) !important;
-  --nav-tag-color-hover: rgb(124, 127, 147) !important;
-  --pdf-background: rgb(239, 241, 245) !important;
-  --pdf-dark-opacity: 1 !important;
-  --pdf-page-background: rgb(239, 241, 245) !important;
-  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px transparent !important;
-  --pdf-sidebar-background: rgb(239, 241, 245) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px transparent !important;
-  --pill-border-color: rgb(188, 192, 204) !important;
-  --pill-border-color-hover: rgb(172, 176, 190) !important;
-  --pill-color: rgb(124, 127, 147) !important;
-  --pill-color-hover: rgb(76, 79, 105) !important;
-  --pill-color-remove: rgb(108, 111, 133) !important;
-  --pill-color-remove-hover: rgb(222, 149, 132) !important;
-  --prompt-background: rgb(239, 241, 245) !important;
-  --prompt-border-color: rgb(156, 160, 176) !important;
-  --raised-background: color-mix(in srgb, rgb(239, 241, 245) 65%, transparent) linear-gradient(rgb(239, 241, 245), color-mix(in srgb, rgb(239, 241, 245) 65%, transparent)) !important;
-  --ribbon-background: rgb(230, 233, 239) !important;
-  --ribbon-background-collapsed: rgb(239, 241, 245) !important;
-  --scrollbar-active-thumb-bg: rgba(76, 79, 105, 0.2) !important;
-  --scrollbar-bg: rgba(76, 79, 105, 0.05) !important;
-  --scrollbar-thumb-bg: rgba(76, 79, 105, 0.1) !important;
-  --search-clear-button-color: rgb(124, 127, 147) !important;
-  --search-icon-color: rgb(124, 127, 147) !important;
-  --search-result-background: rgb(239, 241, 245) !important;
-  --secondary: rgb(222, 149, 132) !important;
-  --setting-group-heading-color: rgb(76, 79, 105) !important;
-  --setting-items-background: rgb(230, 233, 239) !important;
-  --setting-items-border-color: rgb(188, 192, 204) !important;
+      0px 15px 30px rgba(220, 224, 232, 0.3);
+  --metadata-border-color: rgb(188, 192, 204);
+  --metadata-divider-color: rgb(188, 192, 204);
+  --metadata-input-background-active: rgba(76, 79, 105, 0.075);
+  --metadata-input-text-color: rgb(76, 79, 105);
+  --metadata-label-background-active: rgba(76, 79, 105, 0.075);
+  --metadata-label-text-color: rgb(124, 127, 147);
+  --metadata-label-text-color-hover: rgb(124, 127, 147);
+  --metadata-property-background-active: rgba(76, 79, 105, 0.075);
+  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(156, 160, 176);
+  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(172, 176, 190);
+  --min-width-image: 50%;
+  --modal-background: rgb(239, 241, 245);
+  --modal-border-color: rgb(204, 208, 218);
+  --mono-rgb-0: 220, 224, 232;
+  --mono-rgb-100: 76, 79, 105;
+  --nav-collapse-icon-color: rgb(108, 111, 133);
+  --nav-collapse-icon-color-collapsed: rgb(108, 111, 133);
+  --nav-heading-color: rgb(76, 79, 105);
+  --nav-heading-color-collapsed: rgb(108, 111, 133);
+  --nav-heading-color-collapsed-hover: rgb(124, 127, 147);
+  --nav-heading-color-hover: rgb(76, 79, 105);
+  --nav-indentation-guide-color: rgb(239, 241, 245);
+  --nav-item-background-active: rgba(76, 79, 105, 0.075);
+  --nav-item-background-hover: rgba(76, 79, 105, 0.075);
+  --nav-item-background-selected: rgba(222, 149, 132, 0.2);
+  --nav-item-color: rgb(124, 127, 147);
+  --nav-item-color-active: rgb(76, 79, 105);
+  --nav-item-color-highlighted: rgb(222, 149, 132);
+  --nav-item-color-hover: rgb(76, 79, 105);
+  --nav-item-color-selected: rgb(76, 79, 105);
+  --nav-tag-color: rgb(108, 111, 133);
+  --nav-tag-color-active: rgb(124, 127, 147);
+  --nav-tag-color-hover: rgb(124, 127, 147);
+  --pdf-background: rgb(239, 241, 245);
+  --pdf-dark-opacity: 1;
+  --pdf-page-background: rgb(239, 241, 245);
+  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px transparent;
+  --pdf-sidebar-background: rgb(239, 241, 245);
+  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px transparent;
+  --pill-border-color: rgb(188, 192, 204);
+  --pill-border-color-hover: rgb(172, 176, 190);
+  --pill-color: rgb(124, 127, 147);
+  --pill-color-hover: rgb(76, 79, 105);
+  --pill-color-remove: rgb(108, 111, 133);
+  --pill-color-remove-hover: rgb(222, 149, 132);
+  --prompt-background: rgb(239, 241, 245);
+  --prompt-border-color: rgb(156, 160, 176);
+  --raised-background: color-mix(in srgb, rgb(239, 241, 245) 65%, transparent) linear-gradient(rgb(239, 241, 245), color-mix(in srgb, rgb(239, 241, 245) 65%, transparent));
+  --ribbon-background: rgb(230, 233, 239);
+  --ribbon-background-collapsed: rgb(239, 241, 245);
+  --scrollbar-active-thumb-bg: rgba(76, 79, 105, 0.2);
+  --scrollbar-bg: rgba(76, 79, 105, 0.05);
+  --scrollbar-thumb-bg: rgba(76, 79, 105, 0.1);
+  --search-clear-button-color: rgb(124, 127, 147);
+  --search-icon-color: rgb(124, 127, 147);
+  --search-result-background: rgb(239, 241, 245);
+  --secondary: var(--text-accent, rgb(222, 149, 132));
+  --setting-group-heading-color: rgb(76, 79, 105);
+  --setting-items-background: rgb(230, 233, 239);
+  --setting-items-border-color: rgb(188, 192, 204);
   --shadow-l: 0px 1.8px 7.3px rgba(220, 224, 232, 0.071),
       0px 6.3px 24.7px rgba(220, 224, 232, 0.112),
-      0px 30px 90px rgba(220, 224, 232, 0.2) !important;
+      0px 30px 90px rgba(220, 224, 232, 0.2);
   --shadow-s: 0px 1px 2px rgba(220, 224, 232, 0.121),
       0px 3.4px 6.7px rgba(220, 224, 232, 0.179),
-      0px 15px 30px rgba(220, 224, 232, 0.3) !important;
-  --shiki-active-tab-border-color: rgb(124, 127, 147) !important;
-  --shiki-code-background: rgb(220, 224, 232) !important;
-  --shiki-code-comment: rgb(108, 111, 133) !important;
-  --shiki-code-function: rgb(64, 160, 43) !important;
-  --shiki-code-important: rgb(254, 100, 11) !important;
-  --shiki-code-keyword: rgb(236, 131, 208) !important;
-  --shiki-code-normal: rgb(124, 127, 147) !important;
-  --shiki-code-property: rgb(4, 165, 229) !important;
-  --shiki-code-punctuation: rgb(124, 127, 147) !important;
-  --shiki-code-string: rgb(228, 147, 32) !important;
-  --shiki-code-value: rgb(114, 135, 253) !important;
-  --shiki-gutter-border-color: rgb(188, 192, 204) !important;
-  --shiki-gutter-text-color: rgb(108, 111, 133) !important;
-  --shiki-gutter-text-color-highlight: rgb(124, 127, 147) !important;
-  --shiki-highlight-green: rgba(64, 160, 43, 0.5) !important;
-  --shiki-highlight-green-background: rgba(64, 160, 43, 0.1) !important;
-  --shiki-highlight-neutral: rgb(124, 127, 147) !important;
-  --shiki-highlight-neutral-background: rgba(76, 79, 105, 0.05) !important;
-  --shiki-highlight-red: rgba(210, 15, 57, 0.5) !important;
-  --shiki-highlight-red-background: rgba(210, 15, 57, 0.1) !important;
-  --shiki-terminal-dots-color: rgb(108, 111, 133) !important;
-  --shiki-tooltip-background: rgba(220, 224, 232, 0.9) !important;
-  --slider-thumb-border-color: rgb(172, 176, 190) !important;
-  --slider-track-background: rgb(188, 192, 204) !important;
-  --status-bar-background: rgb(230, 233, 239) !important;
-  --status-bar-border-color: rgb(188, 192, 204) !important;
-  --status-bar-text-color: rgb(124, 127, 147) !important;
-  --suggestion-background: rgb(239, 241, 245) !important;
-  --swatch-shadow: inset 0 0 0 1px rgba(76, 79, 105, 0.15) !important;
-  --sync-avatar-color-1: rgb(210, 15, 57) !important;
-  --sync-avatar-color-2: rgb(254, 100, 11) !important;
-  --sync-avatar-color-3: rgb(228, 147, 32) !important;
-  --sync-avatar-color-4: rgb(64, 160, 43) !important;
-  --sync-avatar-color-5: rgb(4, 165, 229) !important;
-  --sync-avatar-color-6: rgb(42, 110, 245) !important;
-  --sync-avatar-color-7: rgb(114, 135, 253) !important;
-  --sync-avatar-color-8: rgb(236, 131, 208) !important;
-  --tab-background-active: rgb(239, 241, 245) !important;
-  --tab-container-background: rgb(230, 233, 239) !important;
-  --tab-divider-color: rgb(172, 176, 190) !important;
-  --tab-inactive-color: rgb(230, 233, 239) !important;
-  --tab-outline-color: rgb(188, 192, 204) !important;
-  --tab-stacked-pane-width: 700px !important;
-  --tab-switcher-background: rgb(230, 233, 239) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(230, 233, 239), transparent) !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(76, 79, 105, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(222, 149, 132) !important;
-  --tab-text-color: rgb(108, 111, 133) !important;
-  --tab-text-color-active: rgb(124, 127, 147) !important;
-  --tab-text-color-focused: rgb(124, 127, 147) !important;
-  --tab-text-color-focused-active: rgb(124, 127, 147) !important;
-  --tab-text-color-focused-active-current: rgb(76, 79, 105) !important;
-  --tab-text-color-focused-highlighted: rgb(222, 149, 132) !important;
-  --table-add-button-border-color: rgb(188, 192, 204) !important;
-  --table-border-color: rgb(188, 192, 204) !important;
-  --table-drag-handle-background-active: rgb(222, 149, 132) !important;
-  --table-drag-handle-color: rgb(108, 111, 133) !important;
-  --table-drag-handle-color-active: rgb(239, 241, 245) !important;
-  --table-header-border-color: rgb(188, 192, 204) !important;
-  --table-header-color: rgb(76, 79, 105) !important;
-  --table-selection-blend-mode: none !important;
-  --table-selection-border-color: rgb(222, 149, 132) !important;
-  --tag-background: rgba(222, 149, 132, 0.1) !important;
-  --tag-background-hover: rgba(222, 149, 132, 0.2) !important;
-  --tag-border-color: rgba(222, 149, 132, 0.15) !important;
-  --tag-border-color-hover: rgba(222, 149, 132, 0.15) !important;
-  --tag-color: rgb(222, 149, 132) !important;
-  --tag-color-hover: rgb(222, 149, 132) !important;
-  --tertiary: rgb(222, 149, 132) !important;
-  --text-accent: rgb(222, 149, 132) !important;
-  --text-accent-hover: rgb(222, 149, 132) !important;
-  --text-error: rgb(210, 15, 57) !important;
-  --text-error-hover: rgba(210, 15, 57, 0.8) !important;
-  --text-faint: rgb(108, 111, 133) !important;
-  --text-highlight-bg: rgba(228, 147, 32, 0.2) !important;
-  --text-highlight-bg-active: rgba(228, 147, 32, 0.4) !important;
-  --text-muted: rgb(124, 127, 147) !important;
-  --text-muted-rgb: 124, 127, 147 !important;
-  --text-normal: rgb(76, 79, 105) !important;
-  --text-on-accent: rgb(239, 241, 245) !important;
-  --text-selection: rgba(222, 149, 132, 0.25) !important;
-  --text-success: rgb(64, 160, 43) !important;
-  --text-warning: rgb(254, 100, 11) !important;
-  --textHighlight: rgba(228, 147, 32, 0.2) !important;
-  --titlebar-background: rgb(230, 233, 239) !important;
-  --titlebar-background-focused: rgb(220, 224, 232) !important;
-  --titlebar-border-color: rgb(188, 192, 204) !important;
-  --titlebar-text-color: rgb(124, 127, 147) !important;
-  --titlebar-text-color-focused: rgb(222, 149, 132) !important;
-  --vault-profile-color: rgb(76, 79, 105) !important;
-  --vault-profile-color-hover: rgb(76, 79, 105) !important;
-  --width-image-gallery: 200px !important;
-  --workspace-background-translucent: rgba(220, 224, 232, 0.6) !important;
-  --quartz-icon-color: currentColor !important;
+      0px 15px 30px rgba(220, 224, 232, 0.3);
+  --shiki-active-tab-border-color: rgb(124, 127, 147);
+  --shiki-code-background: rgb(220, 224, 232);
+  --shiki-code-comment: rgb(108, 111, 133);
+  --shiki-code-function: rgb(64, 160, 43);
+  --shiki-code-important: rgb(254, 100, 11);
+  --shiki-code-keyword: rgb(236, 131, 208);
+  --shiki-code-normal: rgb(124, 127, 147);
+  --shiki-code-property: rgb(4, 165, 229);
+  --shiki-code-punctuation: rgb(124, 127, 147);
+  --shiki-code-string: rgb(228, 147, 32);
+  --shiki-code-value: rgb(114, 135, 253);
+  --shiki-gutter-border-color: rgb(188, 192, 204);
+  --shiki-gutter-text-color: rgb(108, 111, 133);
+  --shiki-gutter-text-color-highlight: rgb(124, 127, 147);
+  --shiki-highlight-green: rgba(64, 160, 43, 0.5);
+  --shiki-highlight-green-background: rgba(64, 160, 43, 0.1);
+  --shiki-highlight-neutral: rgb(124, 127, 147);
+  --shiki-highlight-neutral-background: rgba(76, 79, 105, 0.05);
+  --shiki-highlight-red: rgba(210, 15, 57, 0.5);
+  --shiki-highlight-red-background: rgba(210, 15, 57, 0.1);
+  --shiki-terminal-dots-color: rgb(108, 111, 133);
+  --shiki-tooltip-background: rgba(220, 224, 232, 0.9);
+  --slider-thumb-border-color: rgb(172, 176, 190);
+  --slider-track-background: rgb(188, 192, 204);
+  --status-bar-background: rgb(230, 233, 239);
+  --status-bar-border-color: rgb(188, 192, 204);
+  --status-bar-text-color: rgb(124, 127, 147);
+  --suggestion-background: rgb(239, 241, 245);
+  --swatch-shadow: inset 0 0 0 1px rgba(76, 79, 105, 0.15);
+  --sync-avatar-color-1: rgb(210, 15, 57);
+  --sync-avatar-color-2: rgb(254, 100, 11);
+  --sync-avatar-color-3: rgb(228, 147, 32);
+  --sync-avatar-color-4: rgb(64, 160, 43);
+  --sync-avatar-color-5: rgb(4, 165, 229);
+  --sync-avatar-color-6: rgb(42, 110, 245);
+  --sync-avatar-color-7: rgb(114, 135, 253);
+  --sync-avatar-color-8: rgb(236, 131, 208);
+  --tab-background-active: rgb(239, 241, 245);
+  --tab-container-background: rgb(230, 233, 239);
+  --tab-divider-color: rgb(172, 176, 190);
+  --tab-inactive-color: rgb(230, 233, 239);
+  --tab-outline-color: rgb(188, 192, 204);
+  --tab-stacked-pane-width: 700px;
+  --tab-switcher-background: rgb(230, 233, 239);
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(230, 233, 239), transparent);
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(76, 79, 105, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(222, 149, 132);
+  --tab-text-color: rgb(108, 111, 133);
+  --tab-text-color-active: rgb(124, 127, 147);
+  --tab-text-color-focused: rgb(124, 127, 147);
+  --tab-text-color-focused-active: rgb(124, 127, 147);
+  --tab-text-color-focused-active-current: rgb(76, 79, 105);
+  --tab-text-color-focused-highlighted: rgb(222, 149, 132);
+  --table-add-button-border-color: rgb(188, 192, 204);
+  --table-border-color: rgb(188, 192, 204);
+  --table-drag-handle-background-active: rgb(222, 149, 132);
+  --table-drag-handle-color: rgb(108, 111, 133);
+  --table-drag-handle-color-active: rgb(239, 241, 245);
+  --table-header-border-color: rgb(188, 192, 204);
+  --table-header-color: rgb(76, 79, 105);
+  --table-selection-blend-mode: none;
+  --table-selection-border-color: rgb(222, 149, 132);
+  --tag-background: rgba(222, 149, 132, 0.1);
+  --tag-background-hover: rgba(222, 149, 132, 0.2);
+  --tag-border-color: rgba(222, 149, 132, 0.15);
+  --tag-border-color-hover: rgba(222, 149, 132, 0.15);
+  --tag-color: rgb(222, 149, 132);
+  --tag-color-hover: rgb(222, 149, 132);
+  --tertiary: var(--text-accent-hover, rgb(222, 149, 132));
+  --text-accent: rgb(222, 149, 132);
+  --text-accent-hover: rgb(222, 149, 132);
+  --text-error: rgb(210, 15, 57);
+  --text-error-hover: rgba(210, 15, 57, 0.8);
+  --text-faint: rgb(108, 111, 133);
+  --text-highlight-bg: rgba(228, 147, 32, 0.2);
+  --text-highlight-bg-active: rgba(228, 147, 32, 0.4);
+  --text-muted: rgb(124, 127, 147);
+  --text-muted-rgb: 124, 127, 147;
+  --text-normal: rgb(76, 79, 105);
+  --text-on-accent: rgb(239, 241, 245);
+  --text-selection: rgba(222, 149, 132, 0.25);
+  --text-success: rgb(64, 160, 43);
+  --text-warning: rgb(254, 100, 11);
+  --textHighlight: var(--text-highlight-bg, rgba(228, 147, 32, 0.2));
+  --titlebar-background: rgb(230, 233, 239);
+  --titlebar-background-focused: rgb(220, 224, 232);
+  --titlebar-border-color: rgb(188, 192, 204);
+  --titlebar-text-color: rgb(124, 127, 147);
+  --titlebar-text-color-focused: rgb(222, 149, 132);
+  --vault-profile-color: rgb(76, 79, 105);
+  --vault-profile-color-hover: rgb(76, 79, 105);
+  --width-image-gallery: 200px;
+  --workspace-background-translucent: rgba(220, 224, 232, 0.6);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -4233,6 +4234,1161 @@ html[saved-theme="light"] body ul.tags > li {
   border-right-color: rgba(222, 149, 132, 0.15);
   border-top-color: rgba(222, 149, 132, 0.15);
   color: rgb(222, 149, 132);
+}`,
+  },
+  classSettings: {
+    "ctp-latte": `.ctp-latte, .ctp-latte .themed-color-wrapper > .theme-light {
+--ctp-rosewater: var(--ctp-ext-rosewater, 222, 149, 132);
+--ctp-flamingo: var(--ctp-ext-flamingo, 221, 120, 120);
+--ctp-pink: var(--ctp-ext-pink, 236, 131, 208);
+--ctp-mauve: var(--ctp-ext-mauve, 136, 57, 239);
+--ctp-red: var(--ctp-ext-red, 210, 15, 57);
+--ctp-maroon: var(--ctp-ext-maroon, 230, 69, 83);
+--ctp-peach: var(--ctp-ext-peach, 254, 100, 11);
+--ctp-yellow: var(--ctp-ext-yellow, 228, 147, 32);
+--ctp-green: var(--ctp-ext-green, 64, 160, 43);
+--ctp-teal: var(--ctp-ext-teal, 23, 146, 153);
+--ctp-sky: var(--ctp-ext-sky, 4, 165, 229);
+--ctp-sapphire: var(--ctp-ext-sapphire, 32, 159, 181);
+--ctp-blue: var(--ctp-ext-blue, 42, 110, 245);
+--ctp-lavender: var(--ctp-ext-lavender, 114, 135, 253);
+--ctp-text: var(--ctp-ext-text, 76, 79, 105);
+--ctp-subtext1: var(--ctp-ext-subtext1, 92, 95, 119);
+--ctp-subtext0: var(--ctp-ext-subtext0, 108, 111, 133);
+--ctp-overlay2: var(--ctp-ext-overlay2, 124, 127, 147);
+--ctp-overlay1: var(--ctp-ext-overlay1, 140, 143, 161);
+--ctp-overlay0: var(--ctp-ext-overlay0, 156, 160, 176);
+--ctp-surface2: var(--ctp-ext-surface2, 172, 176, 190);
+--ctp-surface1: var(--ctp-ext-surface1, 188, 192, 204);
+--ctp-surface0: var(--ctp-ext-surface0, 204, 208, 218);
+--ctp-base: var(--ctp-ext-base, 239, 241, 245);
+--ctp-mantle: var(--ctp-ext-mantle, 230, 233, 239);
+--ctp-crust: var(--ctp-ext-crust, 220, 224, 232);
+}`,
+    "ctp-rosepine-light": `.ctp-rosepine-light, .ctp-rosepine-light .themed-color-wrapper > .theme-light {
+--ctp-rosewater: var(--ctp-ext-rosewater, 214, 129, 125);
+--ctp-flamingo: var(--ctp-ext-flamingo, 214, 129, 125);
+--ctp-pink: var(--ctp-ext-pink, 144, 122, 169);
+--ctp-mauve: var(--ctp-ext-mauve, 144, 122, 169);
+--ctp-red: var(--ctp-ext-red, 180, 99, 122);
+--ctp-maroon: var(--ctp-ext-maroon, 180, 99, 122);
+--ctp-peach: var(--ctp-ext-peach, 214, 129, 125);
+--ctp-yellow: var(--ctp-ext-yellow, 234, 157, 52);
+--ctp-green: var(--ctp-ext-green, 86, 148, 159);
+--ctp-teal: var(--ctp-ext-teal, 86, 148, 159);
+--ctp-sky: var(--ctp-ext-sky, 40, 105, 131);
+--ctp-sapphire: var(--ctp-ext-sapphire, 40, 105, 131);
+--ctp-blue: var(--ctp-ext-blue, 40, 105, 131);
+--ctp-lavender: var(--ctp-ext-lavender, 144, 122, 169);
+--ctp-text: var(--ctp-ext-text, 87, 82, 121);
+--ctp-subtext1: var(--ctp-ext-subtext1, 97, 92, 132);
+--ctp-subtext0: var(--ctp-ext-subtext0, 121, 117, 147);
+--ctp-overlay2: var(--ctp-ext-overlay2, 128, 124, 153);
+--ctp-overlay1: var(--ctp-ext-overlay1, 152, 147, 165);
+--ctp-overlay0: var(--ctp-ext-overlay0, 161, 156, 173);
+--ctp-surface2: var(--ctp-ext-surface2, 202, 193, 185);
+--ctp-surface1: var(--ctp-ext-surface1, 209, 201, 194);
+--ctp-surface0: var(--ctp-ext-surface0, 220, 211, 203);
+--ctp-base: var(--ctp-ext-base, 238, 230, 221);
+--ctp-mantle: var(--ctp-ext-mantle, 230, 219, 209);
+--ctp-crust: var(--ctp-ext-crust, 221, 208, 198);
+}`,
+    "ctp-frappe": `.ctp-frappe, .ctp-frappe .themed-color-wrapper > .theme-dark {
+--ctp-rosewater: var(--ctp-ext-rosewater, 242, 213, 207);
+--ctp-flamingo: var(--ctp-ext-flamingo, 238, 190, 190);
+--ctp-pink: var(--ctp-ext-pink, 244, 184, 228);
+--ctp-mauve: var(--ctp-ext-mauve, 202, 158, 230);
+--ctp-red: var(--ctp-ext-red, 231, 130, 132);
+--ctp-maroon: var(--ctp-ext-maroon, 234, 153, 156);
+--ctp-peach: var(--ctp-ext-peach, 239, 159, 118);
+--ctp-yellow: var(--ctp-ext-yellow, 229, 200, 144);
+--ctp-green: var(--ctp-ext-green, 166, 209, 137);
+--ctp-teal: var(--ctp-ext-teal, 129, 200, 190);
+--ctp-sky: var(--ctp-ext-sky, 153, 209, 219);
+--ctp-sapphire: var(--ctp-ext-sapphire, 133, 193, 220);
+--ctp-blue: var(--ctp-ext-blue, 140, 170, 238);
+--ctp-lavender: var(--ctp-ext-lavender, 186, 187, 241);
+--ctp-text: var(--ctp-ext-text, 198, 206, 239);
+--ctp-subtext1: var(--ctp-ext-subtext1, 181, 189, 220);
+--ctp-subtext0: var(--ctp-ext-subtext0, 165, 172, 201);
+--ctp-overlay2: var(--ctp-ext-overlay2, 148, 155, 183);
+--ctp-overlay1: var(--ctp-ext-overlay1, 131, 138, 164);
+--ctp-overlay0: var(--ctp-ext-overlay0, 115, 120, 145);
+--ctp-surface2: var(--ctp-ext-surface2, 98, 103, 126);
+--ctp-surface1: var(--ctp-ext-surface1, 81, 86, 108);
+--ctp-surface0: var(--ctp-ext-surface0, 65, 69, 89);
+--ctp-base: var(--ctp-ext-base, 48, 52, 70);
+--ctp-mantle: var(--ctp-ext-mantle, 41, 44, 60);
+--ctp-crust: var(--ctp-ext-crust, 35, 38, 52);
+}`,
+    "ctp-macchiato": `.ctp-macchiato, .ctp-macchiato .themed-color-wrapper > .theme-dark {
+--ctp-rosewater: var(--ctp-ext-rosewater, 244, 219, 214);
+--ctp-flamingo: var(--ctp-ext-flamingo, 240, 198, 198);
+--ctp-pink: var(--ctp-ext-pink, 245, 189, 230);
+--ctp-mauve: var(--ctp-ext-mauve, 198, 160, 246);
+--ctp-red: var(--ctp-ext-red, 237, 135, 150);
+--ctp-maroon: var(--ctp-ext-maroon, 238, 153, 160);
+--ctp-peach: var(--ctp-ext-peach, 245, 169, 127);
+--ctp-yellow: var(--ctp-ext-yellow, 238, 212, 159);
+--ctp-green: var(--ctp-ext-green, 166, 218, 149);
+--ctp-teal: var(--ctp-ext-teal, 139, 213, 202);
+--ctp-sky: var(--ctp-ext-sky, 145, 215, 227);
+--ctp-sapphire: var(--ctp-ext-sapphire, 125, 196, 228);
+--ctp-blue: var(--ctp-ext-blue, 138, 173, 244);
+--ctp-lavender: var(--ctp-ext-lavender, 183, 189, 248);
+--ctp-text: var(--ctp-ext-text, 197, 207, 245);
+--ctp-subtext1: var(--ctp-ext-subtext1, 179, 188, 224);
+--ctp-subtext0: var(--ctp-ext-subtext0, 161, 170, 203);
+--ctp-overlay2: var(--ctp-ext-overlay2, 143, 151, 183);
+--ctp-overlay1: var(--ctp-ext-overlay1, 125, 132, 162);
+--ctp-overlay0: var(--ctp-ext-overlay0, 108, 114, 141);
+--ctp-surface2: var(--ctp-ext-surface2, 90, 95, 120);
+--ctp-surface1: var(--ctp-ext-surface1, 72, 76, 100);
+--ctp-surface0: var(--ctp-ext-surface0, 54, 58, 79);
+--ctp-base: var(--ctp-ext-base, 36, 39, 58);
+--ctp-mantle: var(--ctp-ext-mantle, 30, 32, 48);
+--ctp-crust: var(--ctp-ext-crust, 24, 25, 38);
+}`,
+    "ctp-mocha": `.ctp-mocha, .ctp-mocha .themed-color-wrapper > .theme-dark {
+--ctp-rosewater: var(--ctp-ext-rosewater, 245, 224, 220);
+--ctp-flamingo: var(--ctp-ext-flamingo, 242, 205, 205);
+--ctp-pink: var(--ctp-ext-pink, 245, 194, 231);
+--ctp-mauve: var(--ctp-ext-mauve, 203, 166, 247);
+--ctp-red: var(--ctp-ext-red, 243, 139, 168);
+--ctp-maroon: var(--ctp-ext-maroon, 235, 160, 172);
+--ctp-peach: var(--ctp-ext-peach, 250, 179, 135);
+--ctp-yellow: var(--ctp-ext-yellow, 249, 226, 175);
+--ctp-green: var(--ctp-ext-green, 166, 227, 161);
+--ctp-teal: var(--ctp-ext-teal, 148, 226, 213);
+--ctp-sky: var(--ctp-ext-sky, 137, 220, 235);
+--ctp-sapphire: var(--ctp-ext-sapphire, 116, 199, 236);
+--ctp-blue: var(--ctp-ext-blue, 135, 176, 249);
+--ctp-lavender: var(--ctp-ext-lavender, 180, 190, 254);
+--ctp-text: var(--ctp-ext-text, 198, 208, 245);
+--ctp-subtext1: var(--ctp-ext-subtext1, 179, 188, 223);
+--ctp-subtext0: var(--ctp-ext-subtext0, 161, 168, 201);
+--ctp-overlay2: var(--ctp-ext-overlay2, 142, 149, 179);
+--ctp-overlay1: var(--ctp-ext-overlay1, 123, 129, 157);
+--ctp-overlay0: var(--ctp-ext-overlay0, 105, 109, 134);
+--ctp-surface2: var(--ctp-ext-surface2, 86, 89, 112);
+--ctp-surface1: var(--ctp-ext-surface1, 67, 70, 90);
+--ctp-surface0: var(--ctp-ext-surface0, 49, 50, 68);
+--ctp-base: var(--ctp-ext-base, 30, 30, 46);
+--ctp-mantle: var(--ctp-ext-mantle, 24, 24, 37);
+--ctp-crust: var(--ctp-ext-crust, 17, 17, 27);
+}
+
+.ctp-mocha-old, .ctp-mocha-old .themed-color-wrapper > .theme-dark {
+--ctp-rosewater: var(--ctp-ext-rosewater, 245, 224, 220);
+--ctp-flamingo: var(--ctp-ext-flamingo, 242, 205, 205);
+--ctp-pink: var(--ctp-ext-pink, 245, 194, 231);
+--ctp-mauve: var(--ctp-ext-mauve, 203, 166, 247);
+--ctp-red: var(--ctp-ext-red, 243, 139, 168);
+--ctp-maroon: var(--ctp-ext-maroon, 235, 160, 172);
+--ctp-peach: var(--ctp-ext-peach, 250, 179, 135);
+--ctp-yellow: var(--ctp-ext-yellow, 249, 226, 175);
+--ctp-green: var(--ctp-ext-green, 166, 227, 161);
+--ctp-teal: var(--ctp-ext-teal, 148, 226, 213);
+--ctp-sky: var(--ctp-ext-sky, 137, 220, 235);
+--ctp-sapphire: var(--ctp-ext-sapphire, 116, 199, 236);
+--ctp-blue: var(--ctp-ext-blue, 135, 176, 249);
+--ctp-lavender: var(--ctp-ext-lavender, 180, 190, 254);
+--ctp-text: var(--ctp-ext-text, 217, 224, 238);
+--ctp-subtext1: var(--ctp-ext-subtext1, 211, 205, 214);
+--ctp-subtext0: var(--ctp-ext-subtext0, 190, 179, 193);
+--ctp-overlay2: var(--ctp-ext-overlay2, 167, 156, 176);
+--ctp-overlay1: var(--ctp-ext-overlay1, 152, 139, 162);
+--ctp-overlay0: var(--ctp-ext-overlay0, 109, 107, 125);
+--ctp-surface2: var(--ctp-ext-surface2, 87, 82, 105);
+--ctp-surface1: var(--ctp-ext-surface1, 45, 40, 72);
+--ctp-surface0: var(--ctp-ext-surface0, 48, 45, 65);
+--ctp-base: var(--ctp-ext-base, 30, 30, 46);
+--ctp-mantle: var(--ctp-ext-mantle, 26, 24, 38);
+--ctp-crust: var(--ctp-ext-crust, 22, 19, 32);
+}`,
+    "ctp-mocha-old": `.ctp-mocha-old, .ctp-mocha-old .themed-color-wrapper > .theme-dark {
+--ctp-rosewater: var(--ctp-ext-rosewater, 245, 224, 220);
+--ctp-flamingo: var(--ctp-ext-flamingo, 242, 205, 205);
+--ctp-pink: var(--ctp-ext-pink, 245, 194, 231);
+--ctp-mauve: var(--ctp-ext-mauve, 203, 166, 247);
+--ctp-red: var(--ctp-ext-red, 243, 139, 168);
+--ctp-maroon: var(--ctp-ext-maroon, 235, 160, 172);
+--ctp-peach: var(--ctp-ext-peach, 250, 179, 135);
+--ctp-yellow: var(--ctp-ext-yellow, 249, 226, 175);
+--ctp-green: var(--ctp-ext-green, 166, 227, 161);
+--ctp-teal: var(--ctp-ext-teal, 148, 226, 213);
+--ctp-sky: var(--ctp-ext-sky, 137, 220, 235);
+--ctp-sapphire: var(--ctp-ext-sapphire, 116, 199, 236);
+--ctp-blue: var(--ctp-ext-blue, 135, 176, 249);
+--ctp-lavender: var(--ctp-ext-lavender, 180, 190, 254);
+--ctp-text: var(--ctp-ext-text, 217, 224, 238);
+--ctp-subtext1: var(--ctp-ext-subtext1, 211, 205, 214);
+--ctp-subtext0: var(--ctp-ext-subtext0, 190, 179, 193);
+--ctp-overlay2: var(--ctp-ext-overlay2, 167, 156, 176);
+--ctp-overlay1: var(--ctp-ext-overlay1, 152, 139, 162);
+--ctp-overlay0: var(--ctp-ext-overlay0, 109, 107, 125);
+--ctp-surface2: var(--ctp-ext-surface2, 87, 82, 105);
+--ctp-surface1: var(--ctp-ext-surface1, 45, 40, 72);
+--ctp-surface0: var(--ctp-ext-surface0, 48, 45, 65);
+--ctp-base: var(--ctp-ext-base, 30, 30, 46);
+--ctp-mantle: var(--ctp-ext-mantle, 26, 24, 38);
+--ctp-crust: var(--ctp-ext-crust, 22, 19, 32);
+}`,
+    "inline-title-normal": `.inline-title-normal {
+--inline-title-color: var(--text-normal);
+}`,
+    "inline-title-muted": `.inline-title-muted {
+--inline-title-color: var(--text-muted);
+}`,
+    "inline-title-accent": `.inline-title-accent {
+--inline-title-color: var(--color-accent);
+}`,
+    "inline-title-h1": `.inline-title-h1 {
+--inline-title-color: var(--h1-color);
+}`,
+    "callout-title-force-default": `.callout-title-force-default {
+--callout-title-color: var(--text-normal);
+}`,
+    "fastppuccin-accent-toggle": `.fastppuccin-accent-toggle {
+--color-accent: rgb(var(--ctp-accent));
+--color-accent-1: rgb(var(--ctp-accent));
+--color-accent-2: rgba(var(--ctp-accent), 0.9);
+--text-selection: rgba(var(--ctp-accent), 0.25);
+--interactive-accent: rgb(var(--ctp-accent));
+--interactive-accent-hover: rgba(var(--ctp-accent), 0.9);
+--text-accent: rgb(var(--ctp-accent));
+--text-accent-hover: rgb(var(--ctp-accent));
+--text-highlight-bg: rgba(var(--ctp-accent), 0.4);
+--text-highlight-bg-active: rgba(var(--ctp-accent), 0.6);
+--interactive-accent: rgb(var(--ctp-accent));
+--interactive-accent-rgb: var(--ctp-accent);
+--blockquote-border-color: rgb(var(--ctp-accent));
+--background-modifier-active: rgba(var(--ctp-accent), 0.1);
+--background-modifier-active-hover: rgba(var(--ctp-accent), 0.15);
+--link-unresolved-decoration-color: rgba(var(--ctp-accent), 0.3);
+--tag-background: rgba(var(--ctp-accent), 0.1);
+--tag-background-hover: rgba(var(--ctp-accent), 0.2);
+--tag-border-color: rgba(var(--ctp-accent), 0.15);
+--tag-border-color-hover: rgba(var(--ctp-accent), 0.15);
+--nav-item-background-selected: rgba(var(--ctp-accent), 0.2);
+--heading-formatting: rgb(var(--ctp-accent));
+--icon-color-focused: rgb(var(--ctp-accent));
+}`,
+    "ctp-accent-light-rosewater": `.ctp-accent-light-rosewater {
+--ctp-accent: var(--ctp-rosewater) !important;
+}`,
+    "ctp-accent-light-flamingo": `.ctp-accent-light-flamingo {
+--ctp-accent: var(--ctp-flamingo) !important;
+}`,
+    "ctp-accent-light-pink": `.ctp-accent-light-pink {
+--ctp-accent: var(--ctp-pink) !important;
+}`,
+    "ctp-accent-light-mauve": `.ctp-accent-light-mauve {
+--ctp-accent: var(--ctp-mauve) !important;
+}`,
+    "ctp-accent-light-red": `.ctp-accent-light-red {
+--ctp-accent: var(--ctp-red) !important;
+}`,
+    "ctp-accent-light-maroon": `.ctp-accent-light-maroon {
+--ctp-accent: var(--ctp-maroon) !important;
+}`,
+    "ctp-accent-light-peach": `.ctp-accent-light-peach {
+--ctp-accent: var(--ctp-peach) !important;
+}`,
+    "ctp-accent-light-yellow": `.ctp-accent-light-yellow {
+--ctp-accent: var(--ctp-yellow) !important;
+}`,
+    "ctp-accent-light-green": `.ctp-accent-light-green {
+--ctp-accent: var(--ctp-green) !important;
+}`,
+    "ctp-accent-light-teal": `.ctp-accent-light-teal {
+--ctp-accent: var(--ctp-teal) !important;
+}`,
+    "ctp-accent-light-sky": `.ctp-accent-light-sky {
+--ctp-accent: var(--ctp-sky) !important;
+}`,
+    "ctp-accent-light-sapphire": `.ctp-accent-light-sapphire {
+--ctp-accent: var(--ctp-sapphire) !important;
+}`,
+    "ctp-accent-light-blue": `.ctp-accent-light-blue {
+--ctp-accent: var(--ctp-blue) !important;
+}`,
+    "ctp-accent-light-lavender": `.ctp-accent-light-lavender {
+--ctp-accent: var(--ctp-lavender) !important;
+}`,
+    "ctp-accent-rosewater": `.ctp-accent-rosewater {
+--ctp-accent: var(--ctp-rosewater) !important;
+}`,
+    "ctp-accent-flamingo": `.ctp-accent-flamingo {
+--ctp-accent: var(--ctp-flamingo) !important;
+}`,
+    "ctp-accent-pink": `.ctp-accent-pink {
+--ctp-accent: var(--ctp-pink) !important;
+}`,
+    "ctp-accent-mauve": `.ctp-accent-mauve {
+--ctp-accent: var(--ctp-mauve) !important;
+}`,
+    "ctp-accent-red": `.ctp-accent-red {
+--ctp-accent: var(--ctp-red) !important;
+}`,
+    "ctp-accent-maroon": `.ctp-accent-maroon {
+--ctp-accent: var(--ctp-maroon) !important;
+}`,
+    "ctp-accent-peach": `.ctp-accent-peach {
+--ctp-accent: var(--ctp-peach) !important;
+}`,
+    "ctp-accent-yellow": `.ctp-accent-yellow {
+--ctp-accent: var(--ctp-yellow) !important;
+}`,
+    "ctp-accent-green": `.ctp-accent-green {
+--ctp-accent: var(--ctp-green) !important;
+}`,
+    "ctp-accent-teal": `.ctp-accent-teal {
+--ctp-accent: var(--ctp-teal) !important;
+}`,
+    "ctp-accent-sky": `.ctp-accent-sky {
+--ctp-accent: var(--ctp-sky) !important;
+}`,
+    "ctp-accent-sapphire": `.ctp-accent-sapphire {
+--ctp-accent: var(--ctp-sapphire) !important;
+}`,
+    "ctp-accent-blue": `.ctp-accent-blue {
+--ctp-accent: var(--ctp-blue) !important;
+}`,
+    "ctp-accent-lavender": `.ctp-accent-lavender {
+--ctp-accent: var(--ctp-lavender) !important;
+}`,
+    "anp-decoration-toggle": `.anp-decoration-toggle {
+--italic-color: rgb(var(--anp-italic-color, var(--text-normal)));
+--bold-color: rgb(var(--anp-bold-color, var(--text-normal)));
+--text-highlight-bg: rgba(var(--anp-highlight-color, var(--ctp-yellow)), 0.2);
+}`,
+    "anp-bold-rosewater": `.anp-bold-rosewater {
+--anp-bold-color: var(--ctp-rosewater);
+}`,
+    "anp-bold-flamingo": `.anp-bold-flamingo {
+--anp-bold-color: var(--ctp-flamingo);
+}`,
+    "anp-bold-pink": `.anp-bold-pink {
+--anp-bold-color: var(--ctp-pink);
+}`,
+    "anp-bold-mauve": `.anp-bold-mauve {
+--anp-bold-color: var(--ctp-mauve);
+}`,
+    "anp-bold-red": `.anp-bold-red {
+--anp-bold-color: var(--ctp-red);
+}`,
+    "anp-bold-maroon": `.anp-bold-maroon {
+--anp-bold-color: var(--ctp-maroon);
+}`,
+    "anp-bold-peach": `.anp-bold-peach {
+--anp-bold-color: var(--ctp-peach);
+}`,
+    "anp-bold-yellow": `.anp-bold-yellow {
+--anp-bold-color: var(--ctp-yellow);
+}`,
+    "anp-bold-green": `.anp-bold-green {
+--anp-bold-color: var(--ctp-green);
+}`,
+    "anp-bold-teal": `.anp-bold-teal {
+--anp-bold-color: var(--ctp-teal);
+}`,
+    "anp-bold-sky": `.anp-bold-sky {
+--anp-bold-color: var(--ctp-sky);
+}`,
+    "anp-bold-sapphire": `.anp-bold-sapphire {
+--anp-bold-color: var(--ctp-sapphire);
+}`,
+    "anp-bold-blue": `.anp-bold-blue {
+--anp-bold-color: var(--ctp-blue);
+}`,
+    "anp-bold-lavender": `.anp-bold-lavender {
+--anp-bold-color: var(--ctp-lavender);
+}`,
+    "anp-italic-rosewater": `.anp-italic-rosewater {
+--anp-italic-color: var(--ctp-rosewater);
+}`,
+    "anp-italic-flamingo": `.anp-italic-flamingo {
+--anp-italic-color: var(--ctp-flamingo);
+}`,
+    "anp-italic-pink": `.anp-italic-pink {
+--anp-italic-color: var(--ctp-pink);
+}`,
+    "anp-italic-mauve": `.anp-italic-mauve {
+--anp-italic-color: var(--ctp-mauve);
+}`,
+    "anp-italic-red": `.anp-italic-red {
+--anp-italic-color: var(--ctp-red);
+}`,
+    "anp-italic-maroon": `.anp-italic-maroon {
+--anp-italic-color: var(--ctp-maroon);
+}`,
+    "anp-italic-peach": `.anp-italic-peach {
+--anp-italic-color: var(--ctp-peach);
+}`,
+    "anp-italic-yellow": `.anp-italic-yellow {
+--anp-italic-color: var(--ctp-yellow);
+}`,
+    "anp-italic-green": `.anp-italic-green {
+--anp-italic-color: var(--ctp-green);
+}`,
+    "anp-italic-teal": `.anp-italic-teal {
+--anp-italic-color: var(--ctp-teal);
+}`,
+    "anp-italic-sky": `.anp-italic-sky {
+--anp-italic-color: var(--ctp-sky);
+}`,
+    "anp-italic-sapphire": `.anp-italic-sapphire {
+--anp-italic-color: var(--ctp-sapphire);
+}`,
+    "anp-italic-blue": `.anp-italic-blue {
+--anp-italic-color: var(--ctp-blue);
+}`,
+    "anp-italic-lavender": `.anp-italic-lavender {
+--anp-italic-color: var(--ctp-lavender);
+}`,
+    "anp-highlight-rosewater": `.anp-highlight-rosewater {
+--anp-highlight-color: var(--ctp-rosewater);
+}`,
+    "anp-highlight-flamingo": `.anp-highlight-flamingo {
+--anp-highlight-color: var(--ctp-flamingo);
+}`,
+    "anp-highlight-pink": `.anp-highlight-pink {
+--anp-highlight-color: var(--ctp-pink);
+}`,
+    "anp-highlight-mauve": `.anp-highlight-mauve {
+--anp-highlight-color: var(--ctp-mauve);
+}`,
+    "anp-highlight-red": `.anp-highlight-red {
+--anp-highlight-color: var(--ctp-red);
+}`,
+    "anp-highlight-maroon": `.anp-highlight-maroon {
+--anp-highlight-color: var(--ctp-maroon);
+}`,
+    "anp-highlight-peach": `.anp-highlight-peach {
+--anp-highlight-color: var(--ctp-peach);
+}`,
+    "anp-highlight-yellow": `.anp-highlight-yellow {
+--anp-highlight-color: var(--ctp-yellow);
+}`,
+    "anp-highlight-green": `.anp-highlight-green {
+--anp-highlight-color: var(--ctp-green);
+}`,
+    "anp-highlight-teal": `.anp-highlight-teal {
+--anp-highlight-color: var(--ctp-teal);
+}`,
+    "anp-highlight-sky": `.anp-highlight-sky {
+--anp-highlight-color: var(--ctp-sky);
+}`,
+    "anp-highlight-sapphire": `.anp-highlight-sapphire {
+--anp-highlight-color: var(--ctp-sapphire);
+}`,
+    "anp-highlight-blue": `.anp-highlight-blue {
+--anp-highlight-color: var(--ctp-blue);
+}`,
+    "anp-highlight-lavender": `.anp-highlight-lavender {
+--anp-highlight-color: var(--ctp-lavender);
+}`,
+    "anp-custom-checkboxes": `.anp-custom-checkboxes [data-task="x"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="x"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="x"][type="checkbox"]:checked {
+--checkbox-color: rgb(var(--ctp-green));
+--checkbox-color-hover: rgb(var(--ctp-green));
+}
+
+.anp-custom-checkboxes [data-task="!"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="!"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="!"][type="checkbox"]:checked {
+--checkbox-color: rgb(var(--ctp-yellow));
+--checkbox-color-hover: rgb(var(--ctp-yellow));
+}
+
+.anp-custom-checkboxes [data-task="!"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="!"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="!"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 512'%3E%3C!--!  --%3E%3Cpath d='M96 64c0-17.7-14.3-32-32-32S32 46.3 32 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM64 480c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40s17.9 40 40 40z'/%3E%3C/svg%3E");
+-webkit-mask-size: 20%;
+}
+
+.anp-custom-checkboxes [data-task="!"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="!"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="!"][type="checkbox"]:checked:before {
+color: var(--checkbox-color);
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="?"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="?"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="?"][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task="?"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="?"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="?"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--!  --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM288 352c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+background-color: rgb(var(--ctp-peach));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task="?"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="?"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="?"][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-peach));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="-"] {
+text-decoration: var(--checklist-done-decoration);
+color: var(--checklist-done-color);
+}
+
+.anp-custom-checkboxes [data-task="-"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="-"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="-"][type="checkbox"]:checked {
+--checkbox-color: rgb(var(--ctp-red));
+--checkbox-color-hover: rgb(var(--ctp-red));
+}
+
+.anp-custom-checkboxes [data-task="-"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="-"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="-"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--!  --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
+-webkit-mask-size: 50%;
+}
+
+.anp-custom-checkboxes [data-task="-"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="-"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="-"][type="checkbox"]:checked:before {
+color: var(--checkbox-color);
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="b"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="b"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="b"][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task="b"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="b"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="b"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--!  --%3E%3Cpath d='M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+background-color: rgb(var(--ctp-red));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task="b"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="b"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="b"][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-red));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="I"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="I"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="I"][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task="I"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="I"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="I"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--!  --%3E%3Cpath d='M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+background-color: rgb(var(--ctp-yellow));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task="I"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="I"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="I"][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-yellow));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="p"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="p"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="p"][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task="p"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="p"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="p"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--!  --%3E%3Cpath d='M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+background-color: rgb(var(--ctp-green));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task="p"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="p"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="p"][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-green));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="c"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="c"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="c"][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task="c"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="c"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="c"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--!  --%3E%3Cpath d='M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z'/%3E%3C/svg%3E");
+-webkit-mask-size: 100%;
+background-color: rgb(var(--ctp-red));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task="c"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="c"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="c"][type="checkbox"]:checked:before {
+color: var(--checkbox-color);
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="i"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="i"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="i"][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task="i"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="i"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="i"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--!  --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+background-color: rgb(var(--ctp-blue));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task="i"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="i"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="i"][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-blue));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="l"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="l"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="l"][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task="l"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="l"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="l"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--!  --%3E%3Cpath d='M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+background-color: rgb(var(--ctp-mauve));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task="l"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="l"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="l"][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-mauve));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="*"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="*"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="*"][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task="*"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="*"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="*"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3C!--!  --%3E%3Cpath d='M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+background-color: rgb(var(--ctp-yellow));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task="*"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="*"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="*"][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-yellow));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="n"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="n"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="n"][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task="n"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="n"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="n"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--!  --%3E%3Cpath d='M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+background-color: rgb(var(--ctp-maroon));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task="n"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="n"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="n"][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-maroon));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="S"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="S"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="S"][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task="S"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="S"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="S"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--!  --%3E%3Cpath d='M320 96H192L144.6 24.9C137.5 14.2 145.1 0 157.9 0H354.1c12.8 0 20.4 14.2 13.3 24.9L320 96zM192 128H320c3.8 2.5 8.1 5.3 13 8.4C389.7 172.7 512 250.9 512 416c0 53-43 96-96 96H96c-53 0-96-43-96-96C0 250.9 122.3 172.7 179 136.4l0 0 0 0c4.8-3.1 9.2-5.9 13-8.4zm84.1 96c0-11.1-9-20.1-20.1-20.1s-20.1 9-20.1 20.1v6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.8 4.1c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9l0 0 0 0 0 0 0 0c-2.2-.8-4.3-1.5-6.3-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1V416c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1v-5.5c5.4-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4V224z'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+background-color: rgb(var(--ctp-green));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task="S"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="S"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="S"][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-green));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="/"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="/"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="/"][type="checkbox"]:checked {
+--checkbox-color: rgba(var(--ctp-subtext0), 0.3);
+--checkbox-color-hover: rgba(var(--ctp-subtext0), 0.3);
+border-color: rgb(var(--ctp-subtext0)) !important;
+}
+
+.anp-custom-checkboxes [data-task="/"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="/"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="/"][type="checkbox"]:checked:after {
+background-color: transparent;
+}
+
+.anp-custom-checkboxes [data-task="/"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="/"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="/"][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-subtext0));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="<"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="<"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="<"][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task="<"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="<"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="<"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--!  --%3E%3Cpath d='M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192z'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+background-color: rgb(var(--ctp-teal));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task="<"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="<"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="<"][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-teal));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task=">"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task=">"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task=">"][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task=">"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task=">"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task=">"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--!  --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+background-color: rgb(var(--ctp-sapphire));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task=">"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task=">"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task=">"][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-sapphire));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task='"'] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task='"'] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task='"'][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task='"'] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task='"'] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task='"'][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--!  --%3E%3Cpath d='M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+background-color: rgb(var(--ctp-subtext0));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task='"'] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task='"'] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task='"'][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-subtext0));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="u"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="u"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="u"][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task="u"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="u"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="u"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXRyZW5kaW5nLXVwIj48cG9seWxpbmUgcG9pbnRzPSIyMiA3IDEzLjUgMTUuNSA4LjUgMTAuNSAyIDE3Ii8+PHBvbHlsaW5lIHBvaW50cz0iMTYgNyAyMiA3IDIyIDEzIi8+PC9zdmc+");
+-webkit-mask-size: contain;
+background-color: rgb(var(--ctp-green));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task="u"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="u"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="u"][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-green));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="d"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="d"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="d"][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task="d"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="d"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="d"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXRyZW5kaW5nLWRvd24iPjxwb2x5bGluZSBwb2ludHM9IjIyIDE3IDEzLjUgOC41IDguNSAxMy41IDIgNyIvPjxwb2x5bGluZSBwb2ludHM9IjE2IDE3IDIyIDE3IDIyIDExIi8+PC9zdmc+");
+-webkit-mask-size: contain;
+background-color: rgb(var(--ctp-red));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task="d"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="d"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="d"][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-red));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="f"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="f"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="f"][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task="f"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="f"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="f"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+");
+-webkit-mask-size: contain;
+background-color: rgb(var(--ctp-red));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task="f"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="f"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="f"][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-red));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="k"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="k"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="k"][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task="k"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="k"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="k"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWtleS1yb3VuZCI+PHBhdGggZD0iTTIgMTh2M2MwIC42LjQgMSAxIDFoNHYtM2gzdi0zaDJsMS40LTEuNGE2LjUgNi41IDAgMSAwLTQtNFoiLz48Y2lyY2xlIGN4PSIxNi41IiBjeT0iNy41IiByPSIuNSIvPjwvc3ZnPg==");
+-webkit-mask-size: contain;
+background-color: rgb(var(--ctp-yellow));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task="k"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="k"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="k"][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-yellow));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes [data-task="w"] > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="w"] > p > input[type="checkbox"]:checked, .anp-custom-checkboxes [data-task="w"][type="checkbox"]:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+.anp-custom-checkboxes [data-task="w"] > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="w"] > p > input[type="checkbox"]:checked:after, .anp-custom-checkboxes [data-task="w"][type="checkbox"]:checked:after {
+-webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNha2UiPjxwYXRoIGQ9Ik0yMCAyMXYtOGEyIDIgMCAwIDAtMi0ySDZhMiAyIDAgMCAwLTIgMnY4Ii8+PHBhdGggZD0iTTQgMTZzLjUtMSAyLTEgMi41IDIgNCAyIDIuNS0yIDQtMiAyLjUgMiA0IDIgMi0xIDItMSIvPjxwYXRoIGQ9Ik0yIDIxaDIwIi8+PHBhdGggZD0iTTcgOHYzIi8+PHBhdGggZD0iTTEyIDh2MyIvPjxwYXRoIGQ9Ik0xNyA4djMiLz48cGF0aCBkPSJNNyA0aDAuMDEiLz48cGF0aCBkPSJNMTIgNGgwLjAxIi8+PHBhdGggZD0iTTE3IDRoMC4wMSIvPjwvc3ZnPg==");
+-webkit-mask-size: contain;
+background-color: rgb(var(--ctp-mauve));
+left: 0px;
+}
+
+.anp-custom-checkboxes [data-task="w"] > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="w"] > p > input[type="checkbox"]:checked:before, .anp-custom-checkboxes [data-task="w"][type="checkbox"]:checked:before {
+color: rgb(var(--ctp-mauve));
+margin: 0 3px;
+position: absolute;
+left: calc(var(--checkbox-size) * 1);
+font-weight: bold;
+}
+
+.anp-custom-checkboxes-labels [data-task="!"] input[type="checkbox"]:checked:before, .anp-custom-checkboxes-labels [data-task="!"][type="checkbox"]:checked:before {
+content: "IMP";
+}
+
+.anp-custom-checkboxes-labels [data-task=">"] input[type="checkbox"]:checked:before, .anp-custom-checkboxes-labels [data-task=">"][type="checkbox"]:checked:before {
+content: "RSCH";
+}
+
+.anp-custom-checkboxes-labels [data-task="<"] input[type="checkbox"]:checked:before, .anp-custom-checkboxes-labels [data-task="<"][type="checkbox"]:checked:before {
+content: "SCH";
+}
+
+.anp-custom-checkboxes-labels [data-task="-"] input[type="checkbox"]:checked:before, .anp-custom-checkboxes-labels [data-task="-"][type="checkbox"]:checked:before {
+content: "CNCL";
+}
+
+.anp-custom-checkboxes-labels [data-task="/"] input[type="checkbox"]:checked:before, .anp-custom-checkboxes-labels [data-task="/"][type="checkbox"]:checked:before {
+content: "PRG";
+}
+
+.anp-custom-checkboxes-labels [data-task="?"] input[type="checkbox"]:checked:before, .anp-custom-checkboxes-labels [data-task="?"][type="checkbox"]:checked:before {
+content: "QUE";
+}
+
+.anp-custom-checkboxes-labels [data-task="*"] input[type="checkbox"]:checked:before, .anp-custom-checkboxes-labels [data-task="*"][type="checkbox"]:checked:before {
+content: "STAR";
+}
+
+.anp-custom-checkboxes-labels [data-task="n"] input[type="checkbox"]:checked:before, .anp-custom-checkboxes-labels [data-task="n"][type="checkbox"]:checked:before {
+content: "NOTE";
+}
+
+.anp-custom-checkboxes-labels [data-task="l"] input[type="checkbox"]:checked:before, .anp-custom-checkboxes-labels [data-task="l"][type="checkbox"]:checked:before {
+content: "LCTN";
+}
+
+.anp-custom-checkboxes-labels [data-task="i"] input[type="checkbox"]:checked:before, .anp-custom-checkboxes-labels [data-task="i"][type="checkbox"]:checked:before {
+content: "INFO";
+}
+
+.anp-custom-checkboxes-labels [data-task="I"] input[type="checkbox"]:checked:before, .anp-custom-checkboxes-labels [data-task="I"][type="checkbox"]:checked:before {
+content: "IDEA";
+}
+
+.anp-custom-checkboxes-labels [data-task="S"] input[type="checkbox"]:checked:before, .anp-custom-checkboxes-labels [data-task="S"][type="checkbox"]:checked:before {
+content: "AMT";
+}
+
+.anp-custom-checkboxes-labels [data-task="p"] input[type="checkbox"]:checked:before, .anp-custom-checkboxes-labels [data-task="p"][type="checkbox"]:checked:before {
+content: "PRO";
+}
+
+.anp-custom-checkboxes-labels [data-task="c"] input[type="checkbox"]:checked:before, .anp-custom-checkboxes-labels [data-task="c"][type="checkbox"]:checked:before {
+content: "CON";
+}
+
+.anp-custom-checkboxes-labels [data-task="b"] input[type="checkbox"]:checked:before, .anp-custom-checkboxes-labels [data-task="b"][type="checkbox"]:checked:before {
+content: "BKMK";
+}
+
+.anp-custom-checkboxes-labels [data-task='"'] input[type="checkbox"]:checked:before, .anp-custom-checkboxes-labels [data-task='"'][type="checkbox"]:checked:before {
+content: "QUOT";
+}
+
+.anp-custom-checkboxes-labels .task-list-item .task-list-item-checkbox {
+margin-right: calc(var(--checkbox-size) * 2.7);
+}`,
+    "anp-file-icons": `.anp-file-icons .nav-file .nav-file-title[data-path] {
+align-items: center;
+}
+
+.anp-file-icons .nav-file .nav-file-title[data-path]::before {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpath d='M14 2v6h6'/%3E%3C/svg%3E%0A");
+-webkit-mask-repeat: no-repeat;
+background-color: var(--icon-color);
+content: "";
+display: flex;
+flex-shrink: 0;
+height: var(--size-4-4);
+margin-left: calc(-1 * var(--size-4-5));
+opacity: var(--icon-opacity);
+position: absolute;
+width: var(--size-4-4);
+}
+
+.anp-file-icons .nav-file .nav-file-title[data-path$=".md"]::before {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpath d='M14 2v6h6m-4 5H8m8 4H8m2-8H8'/%3E%3C/svg%3E%0A");
+-webkit-mask-repeat: no-repeat;
+}
+
+.anp-file-icons .nav-file .nav-file-title[data-path$=".canvas"]::before {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 3h7v9H3zm11 0h7v5h-7zm0 9h7v9h-7zM3 16h7v5H3z'/%3E%3C/svg%3E");
+-webkit-mask-repeat: no-repeat;
+}
+
+.anp-file-icons .nav-file .nav-file-title[data-path$=".excalidraw.md"]::before {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 13.5V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2h-5.5'/%3E%3Cpath d='M14 2v6h6'/%3E%3Cpath d='M10.4 12.6a2 2 0 0 1 3 3L8 21l-4 1 1-4Z'/%3E%3C/svg%3E");
+-webkit-mask-repeat: no-repeat;
+}
+
+.anp-file-icons .nav-file .nav-file-title[data-path$=".svg"]::before, .anp-file-icons .nav-file .nav-file-title[data-path$=".bmp"]::before, .anp-file-icons .nav-file .nav-file-title[data-path$=".jpg"]::before, .anp-file-icons .nav-file .nav-file-title[data-path$=".gif"]::before, .anp-file-icons .nav-file .nav-file-title[data-path$=".webp"]::before, .anp-file-icons .nav-file .nav-file-title[data-path$=".jpeg"]::before, .anp-file-icons .nav-file .nav-file-title[data-path$=".png"]::before {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpath d='M14 2v6h6'/%3E%3Ccircle cx='10' cy='13' r='2'/%3E%3Cpath d='m20 17-1.09-1.09a2 2 0 0 0-2.82 0L10 22'/%3E%3C/svg%3E%0A");
+-webkit-mask-repeat: no-repeat;
+}
+
+.anp-file-icons .nav-file .nav-file-title[data-path$=".mp3"]::before, .anp-file-icons .nav-file .nav-file-title[data-path$=".wav"]::before, .anp-file-icons .nav-file .nav-file-title[data-path$=".m4a"]::before, .anp-file-icons .nav-file .nav-file-title[data-path$=".ogg"]::before, .anp-file-icons .nav-file .nav-file-title[data-path$=".flac"]::before, .anp-file-icons .nav-file .nav-file-title[data-path$=".3gp"]::before {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 18V5l12-2v13M9 9l12-2'/%3E%3Ccircle cx='6' cy='18' r='3'/%3E%3Ccircle cx='18' cy='16' r='3'/%3E%3C/svg%3E");
+-webkit-mask-repeat: no-repeat;
+}
+
+.anp-file-icons .nav-file .nav-file-title[data-path$=".webm"]::before {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M10 8l6 4-6 4V8z'/%3E%3C/svg%3E");
+-webkit-mask-repeat: no-repeat;
+}
+
+.anp-file-icons .nav-file .nav-file-title[data-path$=".mp4"]::before, .anp-file-icons .nav-file .nav-file-title[data-path$=".ogv"]::before, .anp-file-icons .nav-file .nav-file-title[data-path$=".mov"]::before, .anp-file-icons .nav-file .nav-file-title[data-path$=".mkv"]::before {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 11v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8H4Z'/%3E%3Cpath d='m4 11-.88-2.87a2 2 0 0 1 1.33-2.5l11.48-3.5a2 2 0 0 1 2.5 1.32l.87 2.87L4 11.01Z'/%3E%3Cpath d='M6.6 4.99l3.38 4.2m1.88-5.81l3.38 4.2'/%3E%3C/svg%3E");
+-webkit-mask-repeat: no-repeat;
+}
+
+.anp-file-icons .nav-file .nav-file-title[data-path$=".loom"]::before {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v18'/%3E%3Crect width='18' height='18' x='3' y='3' rx='2'/%3E%3Cpath d='M3 9h18M3 15h18'/%3E%3C/svg%3E");
+-webkit-mask-repeat: no-repeat;
+}`,
+    "colored-headers": `.colored-headers {
+--h1-color: rgb(var(--ctp-red));
+--h2-color: rgb(var(--ctp-peach));
+--h3-color: rgb(var(--ctp-green));
+--h4-color: rgb(var(--ctp-teal));
+--h5-color: rgb(var(--ctp-lavender));
+--h6-color: rgb(var(--ctp-mauve));
+}`,
+    "file-ext-label-right": `.file-ext-label-right .nav-file-title-content {
+flex-grow: 1;
+}
+
+.file-ext-label-right .nav-folder-title-content {
+flex-grow: 1;
+}`,
+    "anp-alternate-tab-toggle": `.anp-alternate-tab-toggle {
+--header-height: var(--anp-alt-tab-custom-height, 40px);
+--tab-stacked-header-width: var(--anp-stacked-header-width, 40px);
+}
+
+.anp-alternate-tab-toggle .workspace-tabs:not(.mod-stacked) {
+--tab-background: var(--background-secondary);
+--tab-background-active: var(--background-primary);
+--tab-font-size: 12px;
+--tab-height: calc(var(--header-height) * 0.7);
+--tab-max-width: 200px;
+--tab-max-width-active: 300px;
+}
+
+.anp-alternate-tab-toggle .workspace-ribbon.mod-left {
+margin-top: var(--header-height);
+}
+
+.anp-alternate-tab-toggle .workspace-ribbon.mod-left:before {
+padding-bottom: 0px;
+}
+
+.anp-alternate-tab-toggle .workspace-tabs:not(.mod-stacked) .workspace-tab-header::before, .anp-alternate-tab-toggle .workspace-tabs:not(.mod-stacked) .workspace-tab-header::after, .anp-alternate-tab-toggle .workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner::after {
+display: none;
+}
+
+.anp-alternate-tab-toggle .mod-vertical:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner, .anp-alternate-tab-toggle .mod-horizontal:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner {
+align-items: center;
+justify-content: var(--anp-safari-tab-align, center);
+margin: 0;
+width: 100%;
+gap: var(--anp-safari-tab-gap, 10px);
+}
+
+.anp-disable-newtab-align.anp-alternate-tab-toggle .mod-vertical:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner, .anp-disable-newtab-align.anp-alternate-tab-toggle .mod-horizontal:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner {
+width: unset;
+gap: var(--anp-safari-tab-gap, 10px);
+}
+
+.anp-alternate-tab-toggle .mod-vertical:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header, .anp-alternate-tab-toggle .mod-horizontal:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+background: var(--tab-background);
+border-radius: var(--anp-safari-tab-radius, 6px);
+box-shadow: none !important;
+height: var(--tab-height);
+padding: 0 !important;
+transition: 400ms, background-color 150ms ease-in-out;
+}
+
+.anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+max-width: var(--tab-max-width);
+border: var(--anp-safari-border-width, 1px) solid var(--tab-outline-color);
+}
+
+.anp-alt-tab-anim-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+transition: 400ms, background-color 150ms ease-in-out;
+}
+
+.anp-alternate-tab-toggle .workspace-tabs:not(.mod-stacked) .workspace-tab-header:first-child {
+margin-left: 0;
+}
+
+.anp-alternate-tab-toggle .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner {
+padding: 7px 8px;
+}
+
+.anp-alternate-tab-toggle .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner {
+padding: 0 4px 0 8px;
+transition: 400ms, background-color 150ms ease-in-out, max-width 400ms;
+}
+
+.anp-alternate-tab-toggle .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner, .anp-alternate-tab-toggle .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner-close-button, .anp-alternate-tab-toggle .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner-icon {
+color: var(--text-muted);
+}
+
+.anp-alternate-tab-toggle .workspace .mod-root .workspace-tab-header-inner::after {
+display: none;
+}
+
+.anp-alternate-tab-toggle .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
+flex-grow: 1.67;
+max-width: var(--tab-max-width-active);
+background-color: var(--background-primary);
+}
+
+.anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+color: var(--color-accent);
+}
+
+.anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner, .anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner-title, .anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner-close-button, .anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+color: var(--text-faint);
+}
+
+.anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner:hover {
+background-color: rgba(var(--ctp-surface1), 0.4);
+}
+
+.anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked).mod-active .workspace-tab-header.is-active .workspace-tab-header-inner, .anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked).mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title, .anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked).mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-close-button, .anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked).mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+color: var(--color-accent) !important;
+}
+
+.anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active:hover {
+background-color: var(--background-modifier-border);
+}
+
+.anp-alternate-tab-toggle .sidebar-toggle-button.mod-left, .anp-alternate-tab-toggle .sidebar-toggle-button.mod-right {
+align-items: center;
+}
+
+.anp-alternate-tab-toggle .sidebar-toggle-button.mod-left .clickable-icon, .anp-alternate-tab-toggle .sidebar-toggle-button.mod-right .clickable-icon {
+height: var(--tab-height);
+}`,
+    "hide-external-link-icon": `.hide-external-link-icon .external-link, .hide-external-link-icon .external-link:hover {
+background-image: none;
+padding-right: 0px;
+}`,
+    "toggle-table-transition": `body.toggle-table-transition :is(.markdown-preview-view, .markdown-rendered, .markdown-source-view) tbody tr:hover, body.toggle-table-transition :is(.markdown-preview-view, .markdown-rendered, .markdown-source-view) thead tr:hover {
+background: var(--background-modifier-border);
+/* transform: scale(1.02); */
+transition: 0.1s cubic-bezier(0.11, 0.33, 0.23, 0.33);
 }`,
   },
 };

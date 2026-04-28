@@ -103,12 +103,11 @@ settings:
         value: color-scheme-rose-shadow
       - label: Custom
         value: color-scheme-custom
-  #-
-  #    id: separate-color-scheme
-  #    title: Customize each mode
-  #    description: Select a color scheme for each mode
-  #    type: class-toggle
-  #    default: false
+  - id: separate-color-scheme
+    title: Customize each mode
+    description: Select a color scheme for each mode
+    type: class-toggle
+    default: false
   - id: dark-mode-color-scheme-selector
     title: Dark mode
     type: class-select
@@ -155,148 +154,148 @@ settings:
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#372d29"
-    default-light: "#e1c4a6"
+    default-dark: '#372d29'
+    default-light: '#e1c4a6'
   - id: color-scheme-custom-background-secondary-alt
     title: Background secondary
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#413632"
-    default-light: "#cbaa87"
+    default-dark: '#413632'
+    default-light: '#cbaa87'
   - id: color-scheme-custom-background-primary-alt
     title: Background primary alt
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#2b2723"
-    default-light: "#daba97"
+    default-dark: '#2b2723'
+    default-light: '#daba97'
   - id: color-scheme-custom-background-secondary
     title: Background secondary
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#413632"
-    default-light: "#dabb9a"
+    default-dark: '#413632'
+    default-light: '#dabb9a'
   - id: color-scheme-custom-background-modifier-form-field
     title: Background modifier form field
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#2b2723"
-    default-light: "#4c4743"
+    default-dark: '#2b2723'
+    default-light: '#4c4743'
   - id: color-scheme-custom-background-modifier-border
     title: Background modifier border
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#504431"
-    default-light: "#c6a57f"
+    default-dark: '#504431'
+    default-light: '#c6a57f'
   - id: color-scheme-custom-background-modifier-border-hover
     title: Background modifier border hover
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#645743"
-    default-light: "#a8865f"
+    default-dark: '#645743'
+    default-light: '#a8865f'
   - id: color-scheme-custom-background-modifier-border-focus
     title: Background modifier border focus
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#504431"
-    default-light: "#b4916a"
+    default-dark: '#504431'
+    default-light: '#b4916a'
   - id: color-scheme-custom-text-faint
     title: Text faint
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#868074"
-    default-light: "#7a6d68"
+    default-dark: '#868074'
+    default-light: '#7a6d68'
   - id: color-scheme-custom-text-muted
     title: Text muted
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#b2a699"
-    default-light: "#5b4f4a"
+    default-dark: '#b2a699'
+    default-light: '#5b4f4a'
   - id: color-scheme-custom-text-normal
     title: Text normal
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#ccc2b7"
-    default-light: "#5f4f49"
+    default-dark: '#ccc2b7'
+    default-light: '#5f4f49'
   - id: color-scheme-custom-tooltip-notice-background-color
     title: Tooltip + Notice Background color
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#281f1b"
-    default-light: "#d7b38d"
+    default-dark: '#281f1b'
+    default-light: '#d7b38d'
   - id: color-scheme-custom-color-accent
     title: Color accent
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#ba945f"
-    default-light: "#800000"
+    default-dark: '#ba945f'
+    default-light: '#800000'
   - id: color-scheme-custom-color-accent-hover
     title: Color accent - Hover
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#e0ba86"
-    default-light: "#a00000"
+    default-dark: '#e0ba86'
+    default-light: '#a00000'
   - id: color-scheme-custom-activeline
     title: Active line
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#51454140"
-    default-light: "#d4b4946a"
+    default-dark: '#51454140'
+    default-light: '#d4b4946a'
   - id: color-scheme-custom-text-selection
     title: Text selection
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#6154508f"
-    default-light: "#c7a78683"
+    default-dark: '#6154508f'
+    default-light: '#c7a78683'
   - id: color-scheme-custom-bold
     title: Bold
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#ba945f"
-    default-light: "#bd5757"
+    default-dark: '#ba945f'
+    default-light: '#bd5757'
   - id: color-scheme-custom-italic
     title: Italic
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#e77a59"
-    default-light: "#ae612b"
+    default-dark: '#e77a59'
+    default-light: '#ae612b'
   - id: color-scheme-custom-highlight-bg
     title: Highlight background
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#926b22e6"
-    default-light: "#eac357"
+    default-dark: '#926b22e6'
+    default-light: '#eac357'
   - id: color-scheme-custom-heading-formatting-color
     title: Heading formatting color
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#c72626"
-    default-light: "#d34747"
+    default-dark: '#c72626'
+    default-light: '#d34747'
   - id: color-scheme-custom-in-between-background
     title: In between background (Smooth mode)
     type: variable-themed-color
     format: hex
     opacity: true
-    default-dark: "#2e2420"
-    default-light: "#d4af88"
+    default-dark: '#2e2420'
+    default-light: '#d4af88'
   - id: pop-callout
     title: Pop Callout
     type: heading
@@ -304,7 +303,7 @@ settings:
     collapsed: true
   - id: pop-callout-slide-out-duration
     title: Slide out duration
-    description: "Set to 0 to remove slide-out animation"
+    description: Set to 0 to remove slide-out animation
     type: variable-number
     default: 700
     format: ms

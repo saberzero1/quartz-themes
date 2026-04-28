@@ -118,7 +118,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#FFFFFF"
+    default: '#FFFFFF'
   - id: color-accent-custom-lt
     title: Custom Accent Color Tuning
     description: Make sure you selected 'Custom' in Accent Color Preset for this to work.
@@ -131,21 +131,21 @@ settings:
     type: variable-color
     format: hsl-values
     opacity: false
-    default: "#FF0000"
+    default: '#FF0000'
   - id: color-accent-tint-lt
     title: Custom Accent Tint Color
     description: Accent Tint Color should ideally be between Base and Text in terms of lightness.
     type: variable-color
     format: hsl-values
     opacity: false
-    default: "#FF0000"
+    default: '#FF0000'
   - id: color-accent-text-lt
     title: Custom Accent Text Color
     description: Accent Text Color should ideally be the darkest of the 3.
     type: variable-color
     format: hsl-values
     opacity: false
-    default: "#FF0000"
+    default: '#FF0000'
   - id: accent-colors-styles-dt
     title: Dark Theme
     type: heading
@@ -250,7 +250,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#FFFFFF"
+    default: '#FFFFFF'
   - id: color-accent-custom-dt
     title: Custom Accent Color Tuning
     description: Make sure you selected 'Custom' in Accent Color Preset for this to work.
@@ -263,21 +263,21 @@ settings:
     type: variable-color
     format: hsl-values
     opacity: false
-    default: "#FF0000"
+    default: '#FF0000'
   - id: color-accent-tint-dt
     title: Custom Accent Tint Color
     description: Accent Tint Color should ideally be between Base and Text in terms of lightness.
     type: variable-color
     format: hsl-values
     opacity: false
-    default: "#FF0000"
+    default: '#FF0000'
   - id: color-accent-text-dt
     title: Custom Accent Text Color
     description: Accent Text Color should ideally be the lightest of the 3.
     type: variable-color
     format: hsl-values
     opacity: false
-    default: "#FF0000"
+    default: '#FF0000'
   - id: graph-view-colors
     title: Graph Color Customisation
     description: Define the colors used in the Graph View. In order to see changes you need to refresh the Graph View (restart Obsidian or toggle the Light/Dark theme).
@@ -331,7 +331,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#C4C7CA"
+    default: '#C4C7CA'
   - id: graph-line-opacity-lt
     title: Graph Lines Opacity
     type: variable-number-slider
@@ -379,7 +379,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#C4C7CA"
+    default: '#C4C7CA'
   - id: graph-fill-opacity-lt
     title: Graph Note Opacity
     type: variable-number-slider
@@ -429,7 +429,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#8670FF"
+    default: '#8670FF'
   - id: graph-fill-focused-opacity-lt
     title: Graph Note Focused Opacity
     type: variable-number-slider
@@ -477,7 +477,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#619EFF"
+    default: '#619EFF'
   - id: graph-tag-opacity-lt
     title: Graph Tag Opacity
     type: variable-number-slider
@@ -525,7 +525,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#FDDB6D"
+    default: '#FDDB6D'
   - id: graph-attachment-opacity-lt
     title: Graph Attachment Opacity
     type: variable-number-slider
@@ -573,7 +573,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#FF7070"
+    default: '#FF7070'
   - id: graph-unresolved-opacity-lt
     title: Graph Unresolved Opacity
     type: variable-number-slider
@@ -623,7 +623,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#8670FF"
+    default: '#8670FF'
   - id: graph-highlight-opacity-lt
     title: Graph Highlight Opacity
     type: variable-number-slider
@@ -673,7 +673,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#8670FF"
+    default: '#8670FF'
   - id: graph-highlight-line-opacity-lt
     title: Graph Highlight Line Opacity
     type: variable-number-slider
@@ -728,7 +728,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#C4C7CA"
+    default: '#C4C7CA'
   - id: graph-line-opacity-dt
     title: Graph Lines Opacity
     type: variable-number-slider
@@ -776,7 +776,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#878787"
+    default: '#878787'
   - id: graph-fill-opacity-dt
     title: Graph Note Opacity
     type: variable-number-slider
@@ -826,7 +826,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#4C3AB6"
+    default: '#4C3AB6'
   - id: graph-fill-focused-opacity-dt
     title: Graph Note Focused Opacity
     type: variable-number-slider
@@ -874,7 +874,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#3663AB"
+    default: '#3663AB'
   - id: graph-tag-opacity-dt
     title: Graph Tag Opacity
     type: variable-number-slider
@@ -922,7 +922,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#AF943C"
+    default: '#AF943C'
   - id: graph-attachment-opacity-dt
     title: Graph Attachment Opacity
     type: variable-number-slider
@@ -970,7 +970,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#B63A3A"
+    default: '#B63A3A'
   - id: graph-unresolved-opacity-dt
     title: Graph Unresolved Opacity
     type: variable-number-slider
@@ -1020,7 +1020,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#4C3AB6"
+    default: '#4C3AB6'
   - id: graph-highlight-opacity-dt
     title: Graph Highlight Opacity
     type: variable-number-slider
@@ -1070,7 +1070,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#4C3AB6"
+    default: '#4C3AB6'
   - id: graph-highlight-line-opacity-dt
     title: Graph Highlight Line Opacity
     type: variable-number-slider
@@ -1092,7 +1092,7 @@ settings:
   - id: custom-vault-banner-icon-url
     title: Vault Banner Icon (URL)
     description: Customise the Vault Banner Icon. Insert a URL to an image in between the brackets of 'url()'.
-    type: info-text
+    type: variable-text
     default: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px'%0Awidth='40' height='40'%0AviewBox='0 0 40 40'%0Astyle=' fill:%23000000;'%3E%3Cpath fill='%23dbb065' d='M1.5 35.5L1.5 4.5 11.793 4.5 14.793 7.5 35.5 7.5 35.5 35.5z'%3E%3C/path%3E%3Cpath fill='%23967a44' d='M11.586,5l2.707,2.707L14.586,8H15h20v27H2V5H11.586 M12,4H1v32h35V7H15L12,4L12,4z'%3E%3C/path%3E%3Cg%3E%3Cpath fill='%23f5ce85' d='M1.599 35.5L5.417 14.5 16.151 14.5 19.151 12.5 39.41 12.5 35.577 35.5z'%3E%3C/path%3E%3Cpath fill='%23967a44' d='M38.82,13l-3.667,22H2.198l3.636-20H16h0.303l0.252-0.168L19.303,13H38.82 M40,12H19l-3,2H5L1,36 h35L40,12L40,12z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E)
   - id: focused-mode
     title: Focused Mode
@@ -1121,7 +1121,7 @@ settings:
         value: pt-focused-style-main-and-popout-only
   - id: fade-away-opacity
     title: Fade Away Opacity
-    description: Set the opacity value you would like the UI to fade to.
+    description: Set the opacity value you'd like the UI to fade to.
     type: variable-number-slider
     level: 2
     min: 0
@@ -1130,14 +1130,14 @@ settings:
     default: 0.25
   - id: fade-away-delay
     title: Fade Away Delay
-    description: Set the delay value (ms) you would like the UI to stay active after being hovered over.
+    description: Set the delay value (ms) you'd like the UI to stay active after being hovered over.
     type: variable-number-slider
     level: 2
     min: 0
     max: 4000
     step: 50
     default: 850
-    format: "ms"
+    format: ms
   - id: editor
     title: Editor
     description: Settings for elements inside the Editor / Preview area of Obsidian.
@@ -1293,7 +1293,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: h1-text-color-lt
     title: Header 1 (H1) Text Color Preset
     type: variable-select
@@ -1332,7 +1332,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: h2-text-color-lt
     title: Header 2 (H2) Text Color Preset
     type: variable-select
@@ -1371,7 +1371,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: h3-text-color-lt
     title: Header 3 (H3) Text Color Preset
     type: variable-select
@@ -1410,7 +1410,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: h4-text-color-lt
     title: Header 4 (H4) Text Color Preset
     type: variable-select
@@ -1449,7 +1449,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: h5-text-color-lt
     title: Header 5 (H5) Text Color Preset
     type: variable-select
@@ -1488,7 +1488,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: h6-text-color-lt
     title: Header 6 (H6) Text Color Preset
     type: variable-select
@@ -1527,7 +1527,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: header-text-color-dt
     title: Dark Theme
     type: heading
@@ -1571,7 +1571,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: h1-text-color-dt
     title: Header 1 (H1) Text Color Preset
     type: variable-select
@@ -1610,7 +1610,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: h2-text-color-dt
     title: Header 2 (H2) Text Color Preset
     type: variable-select
@@ -1649,7 +1649,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: h3-text-color-dt
     title: Header 3 (H3) Text Color Preset
     type: variable-select
@@ -1688,7 +1688,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: h4-text-color-dt
     title: Header 4 (H4) Text Color Preset
     type: variable-select
@@ -1727,7 +1727,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: h5-text-color-dt
     title: Header 5 (H5) Text Color Preset
     type: variable-select
@@ -1766,7 +1766,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: h6-text-color-dt
     title: Header 6 (H6) Text Color Preset
     type: variable-select
@@ -1805,7 +1805,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: editor-text-styles
     title: Editor Text Color
     description: Adjust the color of different types of text in the Editor.
@@ -1819,6 +1819,7 @@ settings:
     collapsed: true
   - id: text-italic-color-lt
     title: Italic Text Color Preset
+    description: 'Used for: *Italic Text* or _Italic Text_.'
     type: variable-select
     allowEmpty: false
     default: var(--text-normal)
@@ -1855,9 +1856,10 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: text-bold-color-lt
     title: Bold Text Color Preset
+    description: 'Used for: **Bold Text** or __Bold Text__.'
     type: variable-select
     allowEmpty: false
     default: var(--text-normal)
@@ -1894,9 +1896,10 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: text-italic-bold-color-lt
     title: Italic and Bold Text Color Preset
+    description: 'Used for: ***Italic and Bold Text*** or ___Italic and Bold Text___.'
     type: variable-select
     allowEmpty: false
     default: var(--text-normal)
@@ -1933,9 +1936,168 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
+  - id: strikethrough-text-color-lt
+    title: Strikethrough Text Color Preset
+    description: 'Used for: ~~Strikethrough Text~~ or ~~Strikethrough Text~~.'
+    type: variable-select
+    allowEmpty: false
+    default: var(--color-grey-text)
+    options:
+      - label: Default
+        value: var(--color-grey-text)
+      - label: Accent Color
+        value: var(--interactive-accent-text)
+      - label: Custom
+        value: var(--strikethrough-text-custom-color-lt)
+      - label: Red
+        value: var(--color-red-text)
+      - label: Orange
+        value: var(--color-orange-text)
+      - label: Yellow
+        value: var(--color-yellow-text)
+      - label: Green
+        value: var(--color-green-text)
+      - label: Mint
+        value: var(--color-mint-text)
+      - label: Cyan
+        value: var(--color-cyan-text)
+      - label: Blue
+        value: var(--color-blue-text)
+      - label: Purple
+        value: var(--color-purple-text)
+      - label: Pink
+        value: var(--color-pink-text)
+      - label: Grey
+        value: var(--color-grey-text)
+  - id: strikethrough-text-custom-color-lt
+    title: Strikethrough Text Custom Color
+    description: Make sure you selected 'Custom' in Light Theme Strikethrough Text Color Preset for this to work.
+    type: variable-color
+    format: hsl
+    opacity: false
+    default: '#2B2B2B'
+  - id: strikethrough-line-color-lt
+    title: Strikethrough Line Color Preset
+    type: variable-select
+    allowEmpty: false
+    default: var(--color-grey-text)
+    options:
+      - label: Default
+        value: var(--color-grey-text)
+      - label: Accent Color
+        value: var(--interactive-accent-text)
+      - label: Custom
+        value: var(--strikethrough-line-custom-color-lt)
+      - label: Red
+        value: var(--color-red-text)
+      - label: Orange
+        value: var(--color-orange-text)
+      - label: Yellow
+        value: var(--color-yellow-text)
+      - label: Green
+        value: var(--color-green-text)
+      - label: Mint
+        value: var(--color-mint-text)
+      - label: Cyan
+        value: var(--color-cyan-text)
+      - label: Blue
+        value: var(--color-blue-text)
+      - label: Purple
+        value: var(--color-purple-text)
+      - label: Pink
+        value: var(--color-pink-text)
+      - label: Grey
+        value: var(--color-grey-text)
+  - id: strikethrough-line-custom-color-lt
+    title: Strikethrough Line Custom Color
+    description: Make sure you selected 'Custom' in Light Theme Strikethrough Line Color Preset for this to work.
+    type: variable-color
+    format: hsl
+    opacity: false
+    default: '#2B2B2B'
+  - id: underline-text-color-lt
+    title: Underline Text Color Preset
+    description: 'Used for: <u>Underline Text</u>.'
+    type: variable-select
+    allowEmpty: false
+    default: var(--text-muted)
+    options:
+      - label: Default
+        value: var(--text-muted)
+      - label: Accent Color
+        value: var(--interactive-accent-text)
+      - label: Custom
+        value: var(--underline-text-custom-color-lt)
+      - label: Red
+        value: var(--color-red-text)
+      - label: Orange
+        value: var(--color-orange-text)
+      - label: Yellow
+        value: var(--color-yellow-text)
+      - label: Green
+        value: var(--color-green-text)
+      - label: Mint
+        value: var(--color-mint-text)
+      - label: Cyan
+        value: var(--color-cyan-text)
+      - label: Blue
+        value: var(--color-blue-text)
+      - label: Purple
+        value: var(--color-purple-text)
+      - label: Pink
+        value: var(--color-pink-text)
+      - label: Grey
+        value: var(--color-grey-text)
+  - id: underline-text-custom-color-lt
+    title: Underline Text Custom Color
+    description: Make sure you selected 'Custom' in Light Theme Underline Text Color Preset for this to work.
+    type: variable-color
+    format: hsl
+    opacity: false
+    default: '#2B2B2B'
+  - id: underline-line-color-lt
+    title: Underline Line Color Preset
+    type: variable-select
+    allowEmpty: false
+    default: var(--text-muted)
+    options:
+      - label: Default
+        value: var(--text-muted)
+      - label: Accent Color
+        value: var(--interactive-accent-text)
+      - label: Custom
+        value: var(--underline-line-custom-color-lt)
+      - label: Red
+        value: var(--color-red-text)
+      - label: Orange
+        value: var(--color-orange-text)
+      - label: Yellow
+        value: var(--color-yellow-text)
+      - label: Green
+        value: var(--color-green-text)
+      - label: Mint
+        value: var(--color-mint-text)
+      - label: Cyan
+        value: var(--color-cyan-text)
+      - label: Blue
+        value: var(--color-blue-text)
+      - label: Purple
+        value: var(--color-purple-text)
+      - label: Pink
+        value: var(--color-pink-text)
+      - label: Grey
+        value: var(--color-grey-text)
+  - id: underline-line-custom-color-lt
+    title: Underline Line Custom Color
+    description: Make sure you selected 'Custom' in Light Theme Underline Line Color Preset for this to work.
+    type: variable-color
+    format: hsl
+    opacity: false
+    default: '#2B2B2B'
   - id: link-internal-color-lt
     title: Internal Link Color Preset
+    description: 'Used for: [[Internal Link]] or [Internal Link](Internal%20Link.md).'
     type: variable-select
     allowEmpty: false
     default: var(--interactive-accent-text-hsl)
@@ -1970,9 +2132,10 @@ settings:
     type: variable-color
     format: hsl-values
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: link-external-color-lt
     title: External Link Color Preset
+    description: 'Used for: [Obsidian Website](https://obsidian.md) or [Note in another vault](obsidian://open?vault=MainVault&file=Note.md).'
     type: variable-select
     allowEmpty: false
     default: var(--interactive-accent-text-hsl)
@@ -2007,7 +2170,7 @@ settings:
     type: variable-color
     format: hsl-values
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: editor-text-dark-theme
     title: Dark Theme
     type: heading
@@ -2015,6 +2178,7 @@ settings:
     collapsed: true
   - id: text-italic-color-dt
     title: Italic Text Color Preset
+    description: 'Used for: *Italic Text* or _Italic Text_.'
     type: variable-select
     allowEmpty: false
     default: var(--text-normal)
@@ -2051,9 +2215,10 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: text-bold-color-dt
     title: Bold Text Color Preset
+    description: 'Used for: **Bold Text** or __Bold Text__.'
     type: variable-select
     allowEmpty: false
     default: var(--text-normal)
@@ -2090,9 +2255,10 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: text-italic-bold-color-dt
     title: Italic and Bold Text Color Preset
+    description: 'Used for: ***Italic and Bold Text*** or ___Italic and Bold Text___.'
     type: variable-select
     allowEmpty: false
     default: var(--text-normal)
@@ -2129,9 +2295,168 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
+  - id: strikethrough-text-color-dt
+    title: Strikethrough Text Color Preset
+    description: 'Used for: ~~Strikethrough Text~~ or ~~Strikethrough Text~~.'
+    type: variable-select
+    allowEmpty: false
+    default: var(--color-grey-text)
+    options:
+      - label: Default
+        value: var(--color-grey-text)
+      - label: Accent Color
+        value: var(--interactive-accent-text)
+      - label: Custom
+        value: var(--strikethrough-text-custom-color-dt)
+      - label: Red
+        value: var(--color-red-text)
+      - label: Orange
+        value: var(--color-orange-text)
+      - label: Yellow
+        value: var(--color-yellow-text)
+      - label: Green
+        value: var(--color-green-text)
+      - label: Mint
+        value: var(--color-mint-text)
+      - label: Cyan
+        value: var(--color-cyan-text)
+      - label: Blue
+        value: var(--color-blue-text)
+      - label: Purple
+        value: var(--color-purple-text)
+      - label: Pink
+        value: var(--color-pink-text)
+      - label: Grey
+        value: var(--color-grey-text)
+  - id: strikethrough-text-custom-color-dt
+    title: Strikethrough Text Custom Color
+    description: Make sure you selected 'Custom' in Dark Theme Strikethrough Text Color Preset for this to work.
+    type: variable-color
+    format: hsl
+    opacity: false
+    default: '#2B2B2B'
+  - id: strikethrough-line-color-dt
+    title: Strikethrough Line Color Preset
+    type: variable-select
+    allowEmpty: false
+    default: var(--color-grey-text)
+    options:
+      - label: Default
+        value: var(--color-grey-text)
+      - label: Accent Color
+        value: var(--interactive-accent-text)
+      - label: Custom
+        value: var(--strikethrough-line-custom-color-dt)
+      - label: Red
+        value: var(--color-red-text)
+      - label: Orange
+        value: var(--color-orange-text)
+      - label: Yellow
+        value: var(--color-yellow-text)
+      - label: Green
+        value: var(--color-green-text)
+      - label: Mint
+        value: var(--color-mint-text)
+      - label: Cyan
+        value: var(--color-cyan-text)
+      - label: Blue
+        value: var(--color-blue-text)
+      - label: Purple
+        value: var(--color-purple-text)
+      - label: Pink
+        value: var(--color-pink-text)
+      - label: Grey
+        value: var(--color-grey-text)
+  - id: strikethrough-line-custom-color-dt
+    title: Strikethrough Line Custom Color
+    description: Make sure you selected 'Custom' in Dark Theme Strikethrough Line Color Preset for this to work.
+    type: variable-color
+    format: hsl
+    opacity: false
+    default: '#2B2B2B'
+  - id: underline-text-color-dt
+    title: Underline Text Color Preset
+    description: 'Used for: <u>Underline Text</u>.'
+    type: variable-select
+    allowEmpty: false
+    default: var(--text-muted)
+    options:
+      - label: Default
+        value: var(--text-muted)
+      - label: Accent Color
+        value: var(--interactive-accent-text)
+      - label: Custom
+        value: var(--underline-text-custom-color-dt)
+      - label: Red
+        value: var(--color-red-text)
+      - label: Orange
+        value: var(--color-orange-text)
+      - label: Yellow
+        value: var(--color-yellow-text)
+      - label: Green
+        value: var(--color-green-text)
+      - label: Mint
+        value: var(--color-mint-text)
+      - label: Cyan
+        value: var(--color-cyan-text)
+      - label: Blue
+        value: var(--color-blue-text)
+      - label: Purple
+        value: var(--color-purple-text)
+      - label: Pink
+        value: var(--color-pink-text)
+      - label: Grey
+        value: var(--color-grey-text)
+  - id: underline-text-custom-color-dt
+    title: Underline Text Custom Color
+    description: Make sure you selected 'Custom' in Dark Theme Underline Text Color Preset for this to work.
+    type: variable-color
+    format: hsl
+    opacity: false
+    default: '#2B2B2B'
+  - id: underline-line-color-dt
+    title: Underline Line Color Preset
+    type: variable-select
+    allowEmpty: false
+    default: var(--text-muted)
+    options:
+      - label: Default
+        value: var(--text-muted)
+      - label: Accent Color
+        value: var(--interactive-accent-text)
+      - label: Custom
+        value: var(--underline-line-custom-color-dt)
+      - label: Red
+        value: var(--color-red-text)
+      - label: Orange
+        value: var(--color-orange-text)
+      - label: Yellow
+        value: var(--color-yellow-text)
+      - label: Green
+        value: var(--color-green-text)
+      - label: Mint
+        value: var(--color-mint-text)
+      - label: Cyan
+        value: var(--color-cyan-text)
+      - label: Blue
+        value: var(--color-blue-text)
+      - label: Purple
+        value: var(--color-purple-text)
+      - label: Pink
+        value: var(--color-pink-text)
+      - label: Grey
+        value: var(--color-grey-text)
+  - id: underline-line-custom-color-dt
+    title: Underline Line Custom Color
+    description: Make sure you selected 'Custom' in Dark Theme Underline Line Color Preset for this to work.
+    type: variable-color
+    format: hsl
+    opacity: false
+    default: '#2B2B2B'
   - id: link-internal-color-dt
     title: Internal Link Color Preset
+    description: 'Used for: [[Internal Link]] or [Internal Link](Internal%20Link.md).'
     type: variable-select
     allowEmpty: false
     default: var(--interactive-accent-text-hsl)
@@ -2166,9 +2491,10 @@ settings:
     type: variable-color
     format: hsl-values
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: link-external-color-dt
     title: External Link Color Preset
+    description: 'Used for: [Obsidian Website](https://obsidian.md) or [Note in another vault](obsidian://open?vault=MainVault&file=Note.md).'
     type: variable-select
     allowEmpty: false
     default: var(--interactive-accent-text-hsl)
@@ -2203,7 +2529,7 @@ settings:
     type: variable-color
     format: hsl-values
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: mark-highlight-styles
     title: Mark Highlight
     description: Adjusts the style used by the <mark> tag highlight system. Colors available = red, orange, yellow, green, mint, cyan, blue, purple, pink and grey. e.g. <mark class="red">Your Red text</mark>
@@ -2284,7 +2610,7 @@ settings:
     title: Border Radius Medium (px)
     description: The size of the border radius around larger elements of the UI.
     type: variable-number-slider
-    format: "px"
+    format: px
     default: 8
     level: 2
     min: 0
@@ -2294,7 +2620,7 @@ settings:
     title: Border Radius Small (px)
     description: The size of the border radius around smaller elements of the UI.
     type: variable-number-slider
-    format: "px"
+    format: px
     default: 4
     level: 2
     min: 0
@@ -2519,7 +2845,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#EBECEF"
+    default: '#EBECEF'
   - id: status-bar-text-color-lt
     title: Status Bar Text/Icons Color
     description: Choose the color used for the Light Theme Status Bar Text/Icons.
@@ -2554,7 +2880,7 @@ settings:
     type: variable-color
     format: hsl
     opacity: false
-    default: "#2B2B2B"
+    default: '#2B2B2B'
   - id: status-bar-text-color-dt
     title: Status Bar Text/Icons Color
     description: Choose the color used for the Dark Theme Status Bar Text/Icons.
@@ -2653,7 +2979,7 @@ settings:
     default: false
   - id: feature-toggles
     title: Feature Toggles
-    description: Disable / hide certain aspects of the theme.
+    description: Toggle / hide certain aspects of the theme.
     type: heading
     level: 1
     collapsed: true
@@ -2667,16 +2993,6 @@ settings:
     description: Disables the blur background in all elements that use it by making them opaque.
     default: false
     type: class-toggle
-  - id: pt-disable-callout-styling
-    title: Disable Prism Callout Styling
-    description: This option removes the custom Callout Styling introduced with Prism and reverts to a completely default look. This should be used if you prefer the default callout styling or have CSS Snippets that use its customisation options.
-    default: false
-    type: class-toggle
-  - id: pt-disable-mark-highlight-styling
-    title: Disable Mark Highlight Styling
-    description: This option removes the Prism Mark Highlight Styling (reverts to default look). This will be handy for those that already use a different <mark> tag based highlighting system.
-    default: false
-    type: class-toggle
   - id: pt-collapsed-pinned-tab
     title: Collapsed Pinned Tabs
     description: This option removes the title from pinned tabs and adds back the default file icon for the markdown files. Helps reduce the horizontal space wasted by pinned tabs. You can still see the title when you hover over the icon. NOTE - This option requires Installer Version 1.1.9+ due to use of CSS `has()`. Also, might not work on certain Mobile clients.
@@ -2684,9 +3000,43 @@ settings:
     type: class-toggle
   - id: pt-pdf-dark-theme
     title: Enable PDF Dark Theme
-    description: This option adds styling to the PDF pages by blending in with the colour scheme in Dark mode; making it more eye friendly. This is not a perfect solution. Note that some images might look inverted and colours be a different shade compared to the original file.
+    description: This option adds styling to the PDF pages by blending in with the colour scheme in Dark mode; making it more eye friendly. This isn't a perfect solution. Note that some images might look inverted and colours be a different shade compared to the original file.
     default: false
     type: class-toggle
+  - id: pt-disable-callout-styling
+    title: Disable Prism Callout Styling
+    description: This option removes the custom Callout Styling introduced with Prism and reverts to a completely default look. This should be used if you prefer the default callout styling or have CSS Snippets that use it's customisation options.
+    default: false
+    type: class-toggle
+  - id: pt-disable-mark-highlight-styling
+    title: Disable Prism Mark Highlight Styling
+    description: This option removes the Prism Mark Highlight Styling (reverts to default look). This will be handy for those that already use a different <mark> tag based highlighting system.
+    default: false
+    type: class-toggle
+  - null
+  - id: alternative-checkboxes-settings
+    title: Prism Alternative Checkboxes
+    description: Options for enabling and customising the Alternative Checkboxes feature.
+    type: heading
+    level: 2
+    collapsed: true
+  - id: enable-alternative-checkboxes
+    title: Enable Prism Alternative Checkboxes
+    description: Disable this if you are using your own implementation via a CSS Snippet.
+    default: false
+    type: class-toggle
+  - id: pt-alternative-checkboxes-color-icon
+    title: Enable Color Icons
+    type: class-toggle
+    default: false
+  - id: pt-alternative-checkboxes-color-text
+    title: Enable Color Text
+    type: class-toggle
+    default: false
+  - id: pt-alternative-checkboxes-color-background
+    title: Enable Color Backgrounds
+    type: class-toggle
+    default: false
   - id: theme-info
     title: Theme Info
     description: Additional help and information regarding Prism.
@@ -2696,7 +3046,7 @@ settings:
   - id: theme-info-buttons
     type: info-text
     markdown: true
-    description: '<div class="styleSettingsButton prism-wiki"><a href="https://github.com/damiankorcz/Prism-Theme/wiki"><span class="styleSettingsButtonEmoji">🏛️</span>Prism Wiki</a></div><div class="styleSettingsButton prism-releases"><a href="https://github.com/damiankorcz/Prism-Theme/releases"><span class="styleSettingsButtonEmoji">📦</span>Prism Releases & Changelog</a></div>'
+    description: <div class="styleSettingsButton prism-wiki"><a href="https://github.com/damiankorcz/Prism-Theme/wiki"><span class="styleSettingsButtonEmoji">🏛️</span>Prism Wiki</a></div><div class="styleSettingsButton prism-releases"><a href="https://github.com/damiankorcz/Prism-Theme/releases"><span class="styleSettingsButtonEmoji">📦</span>Prism Releases & Changelog</a></div>
   - id: support
     title: Support the Development of Prism
     description: If you are enjoying the theme, here are some ways to support its development.
@@ -2706,7 +3056,7 @@ settings:
   - id: support-buttons
     type: info-text
     markdown: true
-    description: '<div class="styleSettingsButton prism-star"><a href="https://github.com/damiankorcz/Prism-Theme"><span class="styleSettingsButtonEmoji">🌠</span>Star the project on GitHub</a></div><div class="styleSettingsButton prism-issue"><a href="https://github.com/damiankorcz/Prism-Theme/issues"><span class="styleSettingsButtonEmoji">⚠️</span>Submit an Issue</a></div><div class="styleSettingsButton prism-coffee"><a href="https://www.buymeacoffee.com/DamianKorcz"><span class="styleSettingsButtonEmoji">☕</span> Buy me a coffee!</a></div>'
+    description: <div class="styleSettingsButton prism-star"><a href="https://github.com/damiankorcz/Prism-Theme"><span class="styleSettingsButtonEmoji">🌠</span>Star the project on GitHub</a></div><div class="styleSettingsButton prism-issue"><a href="https://github.com/damiankorcz/Prism-Theme/issues"><span class="styleSettingsButtonEmoji">⚠️</span>Submit an Issue</a></div><div class="styleSettingsButton prism-coffee"><a href="https://www.buymeacoffee.com/DamianKorcz"><span class="styleSettingsButtonEmoji">☕</span> Buy me a coffee!</a></div>
   - id: prism-theme
     title: Prism Theme Class
     type: class-toggle

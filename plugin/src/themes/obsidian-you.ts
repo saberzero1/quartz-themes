@@ -6,381 +6,382 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
+    styleSettingsId: "title",
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --background: #1C1B1E !important;
-  --background-modifier-border: #48454F !important;
-  --background-modifier-cover: rgba(0, 0, 0, 0.8) !important;
-  --background-modifier-error: #FFB4A9 !important;
-  --background-modifier-error-hover: #470000 !important;
-  --background-modifier-error-rgb: 61, 0, 0 !important;
-  --background-modifier-form-field: rgba(0, 0, 0, 0.3) !important;
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22) !important;
-  --background-modifier-form-field-hover: rgba(0, 0, 0, 0.3) !important;
-  --background-modifier-success: #197300 !important;
-  --background-primary: #1C1B1E !important;
+  --background: #1C1B1E;
+  --background-modifier-border: #48454F;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --background-modifier-error: #FFB4A9;
+  --background-modifier-error-hover: #470000;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+  --background-modifier-form-field-hover: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #197300;
+  --background-primary: #1C1B1E;
   --background-primary-alt: rgb(
     36.7,
     35.15,
     41.25
-    ) !important;
-  --background-secondary: #48454F !important;
+    );
+  --background-secondary: #48454F;
   --background-secondary-alt: rgb(
     47.14,
     44.93,
     54.75
-    ) !important;
-  --bases-cards-background: #1C1B1E !important;
+    );
+  --bases-cards-background: #1C1B1E;
   --bases-cards-cover-background: rgb(
     36.7,
     35.15,
     41.25
-    ) !important;
-  --bases-cards-shadow: 0 0 0 1px #48454F !important;
-  --bases-embed-border-color: #48454F !important;
-  --bases-group-heading-property-color: #C9C4D0 !important;
-  --bases-table-border-color: #48454F !important;
-  --bases-table-cell-background-active: #1C1B1E !important;
+    );
+  --bases-cards-shadow: 0 0 0 1px #48454F;
+  --bases-embed-border-color: #48454F;
+  --bases-group-heading-property-color: #C9C4D0;
+  --bases-table-border-color: #48454F;
+  --bases-table-cell-background-active: #1C1B1E;
   --bases-table-cell-background-disabled: rgb(
     36.7,
     35.15,
     41.25
-    ) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px #CABEFF !important;
+    );
+  --bases-table-cell-shadow-focus: 0 0 0 2px #CABEFF;
   --bases-table-group-background: rgb(
     36.7,
     35.15,
     41.25
-    ) !important;
-  --bases-table-header-background: #1C1B1E !important;
-  --bases-table-header-color: #C9C4D0 !important;
-  --bases-table-summary-background: #1C1B1E !important;
-  --big-radius: 24px !important;
-  --blockquote-border-color: #CABEFF !important;
-  --blur-background: color-mix(in srgb, #2a2a2a 65%, transparent) linear-gradient(#2a2a2a, color-mix(in srgb, #2a2a2a 65%, transparent)) !important;
-  --bodyFont: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    );
+  --bases-table-header-background: #1C1B1E;
+  --bases-table-header-color: #C9C4D0;
+  --bases-table-summary-background: #1C1B1E;
+  --big-radius: 24px;
+  --blockquote-border-color: #CABEFF;
+  --blur-background: color-mix(in srgb, #2a2a2a 65%, transparent) linear-gradient(#2a2a2a, color-mix(in srgb, #2a2a2a 65%, transparent));
+  --bodyFont: var(--font-text, Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --bold: 650 !important;
-  --canvas-background: #1C1B1E !important;
-  --canvas-card-label-color: #666 !important;
-  --caret-color: #E5E1E5 !important;
-  --checkbox-border-color: #666 !important;
-  --checkbox-border-color-hover: #C9C4D0 !important;
-  --checkbox-color: #CABEFF !important;
-  --checkbox-color-hover: #CABEFF !important;
-  --checkbox-marker-color: #1C1B1E !important;
-  --checklist-done-color: #C9C4D0 !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --bold: 650;
+  --canvas-background: #1C1B1E;
+  --canvas-card-label-color: #666;
+  --caret-color: #E5E1E5;
+  --checkbox-border-color: #666;
+  --checkbox-border-color-hover: #C9C4D0;
+  --checkbox-color: #CABEFF;
+  --checkbox-color-hover: #CABEFF;
+  --checkbox-marker-color: #1C1B1E;
+  --checklist-done-color: #C9C4D0;
   --code-background: rgb(
     36.7,
     35.15,
     41.25
-    ) !important;
-  --code-border-color: #48454F !important;
-  --code-comment: #666 !important;
-  --code-normal: #E5E1E5 !important;
-  --code-punctuation: #C9C4D0 !important;
-  --codeFont: "Roboto Mono", monospace, Menlo, SFMono-Regular, Consolas, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --collapse-icon-color: #666 !important;
-  --collapse-icon-color-collapsed: #CABEFF !important;
-  --dark: #E5E1E5 !important;
-  --darkgray: #E5E1E5 !important;
-  --divider-color: #48454F !important;
-  --divider-color-hover: #CABEFF !important;
-  --dropdown-background: #2a2a2a !important;
-  --dropdown-background-hover: #303030 !important;
-  --elevation1: 0.05 !important;
-  --elevation2: 0.08 !important;
-  --elevation3: 0.11 !important;
-  --elevation4: 0.12 !important;
-  --elevation5: 0.14 !important;
-  --embed-block-shadow-hover: 0 0 0 1px #48454F, inset 0 0 0 1px #48454F !important;
-  --embed-border-start: 2px solid #CABEFF !important;
-  --error: #FFB4A9 !important;
-  --error-container: #930006 !important;
-  --errorContainer: #930006 !important;
-  --file-header-background: #1C1B1E !important;
-  --file-header-background-focused: #1C1B1E !important;
+    );
+  --code-border-color: #48454F;
+  --code-comment: #666;
+  --code-normal: #E5E1E5;
+  --code-punctuation: #C9C4D0;
+  --codeFont: var(--font-monospace, "Roboto Mono", monospace, Menlo, SFMono-Regular, Consolas, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --collapse-icon-color: #666;
+  --collapse-icon-color-collapsed: #CABEFF;
+  --dark: var(--text-normal, #E5E1E5);
+  --darkgray: var(--text-normal, #E5E1E5);
+  --divider-color: #48454F;
+  --divider-color-hover: #CABEFF;
+  --dropdown-background: #2a2a2a;
+  --dropdown-background-hover: #303030;
+  --elevation1: 0.05;
+  --elevation2: 0.08;
+  --elevation3: 0.11;
+  --elevation4: 0.12;
+  --elevation5: 0.14;
+  --embed-block-shadow-hover: 0 0 0 1px #48454F, inset 0 0 0 1px #48454F;
+  --embed-border-start: 2px solid #CABEFF;
+  --error: #FFB4A9;
+  --error-container: #930006;
+  --errorContainer: #930006;
+  --file-header-background: #1C1B1E;
+  --file-header-background-focused: #1C1B1E;
   --file-header-font: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --flair-background: #2a2a2a !important;
-  --flair-color: #E5E1E5 !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --flair-background: #2a2a2a;
+  --flair-color: #E5E1E5;
   --focus: rgb(
     48.88,
     46.56,
     57
-    ) !important;
+    );
   --font-interface: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --font-mermaid: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace: "Roboto Mono", monospace, Menlo, SFMono-Regular, Consolas, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --font-monospace-theme: "Roboto Mono", monospace, Menlo, SFMono-Regular, Consolas !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: "Roboto Mono", monospace, Menlo, SFMono-Regular, Consolas, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-theme: "Roboto Mono", monospace, Menlo, SFMono-Regular, Consolas;
   --font-print: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, Arial' !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, Arial';
   --font-text: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-theme: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
-  --footnote-divider-color: #48454F !important;
-  --footnote-id-color: #C9C4D0 !important;
-  --footnote-id-color-no-occurrences: #666 !important;
-  --graph-node: #C9C4D0 !important;
-  --graph-node-focused: #CABEFF !important;
-  --graph-node-unresolved: #666 !important;
-  --graph-text: #E5E1E5 !important;
-  --gray: #C9C4D0 !important;
-  --h1: 2.25rem !important;
-  --h2: 2rem !important;
-  --h3: 1.75rem !important;
-  --h4: 1.5rem !important;
-  --h5: 1.375rem !important;
-  --h6: 1rem !important;
-  --headerFont: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --footnote-divider-color: #48454F;
+  --footnote-id-color: #C9C4D0;
+  --footnote-id-color-no-occurrences: #666;
+  --graph-node: #C9C4D0;
+  --graph-node-focused: #CABEFF;
+  --graph-node-unresolved: #666;
+  --graph-text: #E5E1E5;
+  --gray: var(--text-muted, #C9C4D0);
+  --h1: 2.25rem;
+  --h2: 2rem;
+  --h3: 1.75rem;
+  --h4: 1.5rem;
+  --h5: 1.375rem;
+  --h6: 1rem;
+  --headerFont: var(--font-text, Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: #666 !important;
-  --highlight: #48454F !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --heading-formatting: #666;
+  --highlight: var(--text-highlight-bg, #48454F);
   --hover: rgb(
     41.92,
     40.04,
     48
-    ) !important;
-  --hr-color: #48454F !important;
-  --icon-color: #C9C4D0 !important;
-  --icon-color-active: #CABEFF !important;
-  --icon-color-focused: #E5E1E5 !important;
-  --icon-color-hover: #C9C4D0 !important;
-  --input-date-separator: #666 !important;
-  --input-placeholder-color: #666 !important;
-  --interactive-accent: #CABEFF !important;
-  --interactive-accent-hover: #CABEFF !important;
-  --interactive-accent-rgb: #CABEFF !important;
-  --interactive-hover: #303030 !important;
-  --interactive-normal: #2a2a2a !important;
-  --interactive-success: #197300 !important;
-  --inverse-on-surface: #1C1B1E !important;
-  --inverse-surface: #E5E1E5 !important;
-  --inverseOnSurface: #1C1B1E !important;
-  --inverseSurface: #E5E1E5 !important;
-  --light: 350 !important;
-  --lightgray: #48454F !important;
-  --link-color: #CABEFF !important;
-  --link-color-hover: #4731A4 !important;
-  --link-external-color: #CABEFF !important;
-  --link-external-color-hover: #4731A4 !important;
-  --link-unresolved-color: #CABEFF !important;
-  --list-marker-color: #666 !important;
-  --list-marker-color-collapsed: #CABEFF !important;
-  --list-marker-color-hover: #C9C4D0 !important;
-  --medium: 500 !important;
-  --medium-radius: 16px !important;
-  --menu-background: #48454F !important;
-  --metadata-border-color: #48454F !important;
-  --metadata-divider-color: #48454F !important;
+    );
+  --hr-color: #48454F;
+  --icon-color: #C9C4D0;
+  --icon-color-active: #CABEFF;
+  --icon-color-focused: #E5E1E5;
+  --icon-color-hover: #C9C4D0;
+  --input-date-separator: #666;
+  --input-placeholder-color: #666;
+  --interactive-accent: #CABEFF;
+  --interactive-accent-hover: #CABEFF;
+  --interactive-accent-rgb: #CABEFF;
+  --interactive-hover: #303030;
+  --interactive-normal: #2a2a2a;
+  --interactive-success: #197300;
+  --inverse-on-surface: #1C1B1E;
+  --inverse-surface: #E5E1E5;
+  --inverseOnSurface: #1C1B1E;
+  --inverseSurface: #E5E1E5;
+  --light: 350;
+  --lightgray: var(--background-secondary, #48454F);
+  --link-color: #CABEFF;
+  --link-color-hover: #4731A4;
+  --link-external-color: #CABEFF;
+  --link-external-color-hover: #4731A4;
+  --link-unresolved-color: #CABEFF;
+  --list-marker-color: #666;
+  --list-marker-color-collapsed: #CABEFF;
+  --list-marker-color-hover: #C9C4D0;
+  --medium: 500;
+  --medium-radius: 16px;
+  --menu-background: #48454F;
+  --metadata-border-color: #48454F;
+  --metadata-divider-color: #48454F;
   --metadata-input-font: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: #E5E1E5 !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-input-text-color: #E5E1E5;
   --metadata-label-font: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: #C9C4D0 !important;
-  --metadata-label-text-color-hover: #C9C4D0 !important;
-  --modal-background: #1C1B1E !important;
-  --nav-collapse-icon-color: #666 !important;
-  --nav-collapse-icon-color-collapsed: #666 !important;
-  --nav-heading-color: #E5E1E5 !important;
-  --nav-heading-color-collapsed: #666 !important;
-  --nav-heading-color-collapsed-hover: #C9C4D0 !important;
-  --nav-heading-color-hover: #E5E1E5 !important;
-  --nav-item-color: #C9C4D0 !important;
-  --nav-item-color-active: #E5E1E5 !important;
-  --nav-item-color-highlighted: #CABEFF !important;
-  --nav-item-color-hover: #E5E1E5 !important;
-  --nav-item-color-selected: #E5E1E5 !important;
-  --nav-tag-color: #666 !important;
-  --nav-tag-color-active: #C9C4D0 !important;
-  --nav-tag-color-hover: #C9C4D0 !important;
-  --on-background: #E5E1E5 !important;
-  --on-error: #680003 !important;
-  --on-error-container: #FFDAD4 !important;
-  --on-primary: #30128D !important;
-  --on-primary-container: #E7DEFF !important;
-  --on-secondary: #312E41 !important;
-  --on-secondary-container: #E6DFF9 !important;
-  --on-surface: #E5E1E5 !important;
-  --on-surface-variant: #C9C4D0 !important;
-  --on-tertiary: #482535 !important;
-  --on-tertiary-container: #FFD9E8 !important;
-  --onBackground: #E5E1E5 !important;
-  --onError: #680003 !important;
-  --onErrorContainer: #FFDAD4 !important;
-  --onPrimary: #30128D !important;
-  --onPrimaryContainer: #E7DEFF !important;
-  --onSecondary: #312E41 !important;
-  --onSecondaryContainer: #E6DFF9 !important;
-  --onSurface: #E5E1E5 !important;
-  --onSurfaceVariant: #C9C4D0 !important;
-  --onTertiary: #482535 !important;
-  --onTertiaryContainer: #FFD9E8 !important;
-  --outline: #938F99 !important;
-  --pdf-background: #1C1B1E !important;
-  --pdf-page-background: #1C1B1E !important;
-  --pdf-shadow: 0 0 0 1px #48454F !important;
-  --pdf-sidebar-background: #1C1B1E !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px #48454F !important;
-  --pill-border-color: #48454F !important;
-  --pill-color: #C9C4D0 !important;
-  --pill-color-hover: #E5E1E5 !important;
-  --pill-color-remove: #666 !important;
-  --pill-color-remove-hover: #CABEFF !important;
-  --primary: #CABEFF !important;
-  --primary-b: 255 !important;
-  --primary-container: #4731A4 !important;
-  --primary-g: 190 !important;
-  --primary-inverse: #5F4BBD !important;
-  --primary-r: 202 !important;
-  --primaryContainer: #4731A4 !important;
-  --primaryInverse: #5F4BBD !important;
-  --prompt-background: #1C1B1E !important;
-  --raised-background: color-mix(in srgb, #2a2a2a 65%, transparent) linear-gradient(#2a2a2a, color-mix(in srgb, #2a2a2a 65%, transparent)) !important;
-  --regular: 400 !important;
-  --ribbon-background: #48454F !important;
-  --ribbon-background-collapsed: #1C1B1E !important;
-  --search-clear-button-color: #C9C4D0 !important;
-  --search-icon-color: #C9C4D0 !important;
-  --search-result-background: #1C1B1E !important;
-  --secondary: #C9C3DC !important;
-  --secondary-container: #484459 !important;
-  --secondaryContainer: #484459 !important;
-  --setting-group-heading-color: #E5E1E5 !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-label-text-color: #C9C4D0;
+  --metadata-label-text-color-hover: #C9C4D0;
+  --modal-background: #1C1B1E;
+  --nav-collapse-icon-color: #666;
+  --nav-collapse-icon-color-collapsed: #666;
+  --nav-heading-color: #E5E1E5;
+  --nav-heading-color-collapsed: #666;
+  --nav-heading-color-collapsed-hover: #C9C4D0;
+  --nav-heading-color-hover: #E5E1E5;
+  --nav-item-color: #C9C4D0;
+  --nav-item-color-active: #E5E1E5;
+  --nav-item-color-highlighted: #CABEFF;
+  --nav-item-color-hover: #E5E1E5;
+  --nav-item-color-selected: #E5E1E5;
+  --nav-tag-color: #666;
+  --nav-tag-color-active: #C9C4D0;
+  --nav-tag-color-hover: #C9C4D0;
+  --on-background: #E5E1E5;
+  --on-error: #680003;
+  --on-error-container: #FFDAD4;
+  --on-primary: #30128D;
+  --on-primary-container: #E7DEFF;
+  --on-secondary: #312E41;
+  --on-secondary-container: #E6DFF9;
+  --on-surface: #E5E1E5;
+  --on-surface-variant: #C9C4D0;
+  --on-tertiary: #482535;
+  --on-tertiary-container: #FFD9E8;
+  --onBackground: #E5E1E5;
+  --onError: #680003;
+  --onErrorContainer: #FFDAD4;
+  --onPrimary: #30128D;
+  --onPrimaryContainer: #E7DEFF;
+  --onSecondary: #312E41;
+  --onSecondaryContainer: #E6DFF9;
+  --onSurface: #E5E1E5;
+  --onSurfaceVariant: #C9C4D0;
+  --onTertiary: #482535;
+  --onTertiaryContainer: #FFD9E8;
+  --outline: #938F99;
+  --pdf-background: #1C1B1E;
+  --pdf-page-background: #1C1B1E;
+  --pdf-shadow: 0 0 0 1px #48454F;
+  --pdf-sidebar-background: #1C1B1E;
+  --pdf-thumbnail-shadow: 0 0 0 1px #48454F;
+  --pill-border-color: #48454F;
+  --pill-color: #C9C4D0;
+  --pill-color-hover: #E5E1E5;
+  --pill-color-remove: #666;
+  --pill-color-remove-hover: #CABEFF;
+  --primary: #CABEFF;
+  --primary-b: 255;
+  --primary-container: #4731A4;
+  --primary-g: 190;
+  --primary-inverse: #5F4BBD;
+  --primary-r: 202;
+  --primaryContainer: #4731A4;
+  --primaryInverse: #5F4BBD;
+  --prompt-background: #1C1B1E;
+  --raised-background: color-mix(in srgb, #2a2a2a 65%, transparent) linear-gradient(#2a2a2a, color-mix(in srgb, #2a2a2a 65%, transparent));
+  --regular: 400;
+  --ribbon-background: #48454F;
+  --ribbon-background-collapsed: #1C1B1E;
+  --search-clear-button-color: #C9C4D0;
+  --search-icon-color: #C9C4D0;
+  --search-result-background: #1C1B1E;
+  --secondary: #C9C3DC;
+  --secondary-container: #484459;
+  --secondaryContainer: #484459;
+  --setting-group-heading-color: #E5E1E5;
   --setting-items-background: rgb(
     36.7,
     35.15,
     41.25
-    ) !important;
-  --setting-items-border-color: #48454F !important;
-  --shiki-active-tab-border-color: #C9C4D0 !important;
+    );
+  --setting-items-border-color: #48454F;
+  --shiki-active-tab-border-color: #C9C4D0;
   --shiki-code-background: rgb(
     36.7,
     35.15,
     41.25
-    ) !important;
-  --shiki-code-comment: #666 !important;
-  --shiki-code-normal: #C9C4D0 !important;
-  --shiki-code-punctuation: #C9C4D0 !important;
-  --shiki-gutter-border-color: #48454F !important;
-  --shiki-gutter-text-color: #666 !important;
-  --shiki-gutter-text-color-highlight: #C9C4D0 !important;
-  --shiki-highlight-neutral: #C9C4D0 !important;
-  --shiki-terminal-dots-color: #666 !important;
-  --slider-track-background: #48454F !important;
-  --small-radius: 8px !important;
-  --smaller: 0.875rem !important;
-  --smallest: 0.75rem !important;
-  --status-bar-background: #48454F !important;
-  --status-bar-border-color: #48454F !important;
-  --status-bar-text-color: #C9C4D0 !important;
-  --suggestion-background: #1C1B1E !important;
-  --surface: #1C1B1E !important;
-  --surface-b: 30 !important;
-  --surface-g: 27 !important;
-  --surface-r: 28 !important;
-  --surface-variant: #48454F !important;
+    );
+  --shiki-code-comment: #666;
+  --shiki-code-normal: #C9C4D0;
+  --shiki-code-punctuation: #C9C4D0;
+  --shiki-gutter-border-color: #48454F;
+  --shiki-gutter-text-color: #666;
+  --shiki-gutter-text-color-highlight: #C9C4D0;
+  --shiki-highlight-neutral: #C9C4D0;
+  --shiki-terminal-dots-color: #666;
+  --slider-track-background: #48454F;
+  --small-radius: 8px;
+  --smaller: 0.875rem;
+  --smallest: 0.75rem;
+  --status-bar-background: #48454F;
+  --status-bar-border-color: #48454F;
+  --status-bar-text-color: #C9C4D0;
+  --suggestion-background: #1C1B1E;
+  --surface: #1C1B1E;
+  --surface-b: 30;
+  --surface-g: 27;
+  --surface-r: 28;
+  --surface-variant: #48454F;
   --surface1: rgb(
     36.7,
     35.15,
     41.25
-    ) !important;
+    );
   --surface2: rgb(
     41.92,
     40.04,
     48
-    ) !important;
+    );
   --surface3: rgb(
     47.14,
     44.93,
     54.75
-    ) !important;
+    );
   --surface4: rgb(
     48.88,
     46.56,
     57
-    ) !important;
+    );
   --surface5: rgb(
     52.36,
     49.82,
     61.5
-    ) !important;
-  --surfaceVariant: #48454F !important;
-  --tab-background-active: #1C1B1E !important;
-  --tab-container-background: #48454F !important;
-  --tab-outline-color: #48454F !important;
-  --tab-switcher-background: #48454F !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, #48454F, transparent) !important;
-  --tab-text-color: #666 !important;
-  --tab-text-color-active: #C9C4D0 !important;
-  --tab-text-color-focused: #C9C4D0 !important;
-  --tab-text-color-focused-active: #C9C4D0 !important;
-  --tab-text-color-focused-active-current: #E5E1E5 !important;
-  --tab-text-color-focused-highlighted: #CABEFF !important;
-  --table-add-button-border-color: #48454F !important;
-  --table-border-color: #48454F !important;
-  --table-drag-handle-background-active: #CABEFF !important;
-  --table-drag-handle-color: #666 !important;
-  --table-drag-handle-color-active: #dcddde !important;
-  --table-header-border-color: #48454F !important;
-  --table-header-color: #E5E1E5 !important;
-  --table-selection-border-color: #CABEFF !important;
-  --tag-color: #CABEFF !important;
-  --tag-color-hover: #CABEFF !important;
-  --tertiary: #EDB8CD !important;
-  --tertiary-container: #623B4C !important;
-  --tertiaryContainer: #623B4C !important;
-  --text-accent: #CABEFF !important;
-  --text-accent-hover: #4731A4 !important;
-  --text-error: #cf6679 !important;
-  --text-error-hover: #990000 !important;
-  --text-faint: #666 !important;
-  --text-highlight-bg: #48454F !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
-  --text-muted: #C9C4D0 !important;
-  --text-muted-rgb: 153, 153, 153 !important;
-  --text-normal: #E5E1E5 !important;
-  --text-on-accent: #dcddde !important;
-  --text-selection: rgba(23, 48, 77, 0.99) !important;
-  --textHighlight: #48454F !important;
-  --titleFont: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    );
+  --surfaceVariant: #48454F;
+  --tab-background-active: #1C1B1E;
+  --tab-container-background: #48454F;
+  --tab-outline-color: #48454F;
+  --tab-switcher-background: #48454F;
+  --tab-switcher-menubar-background: linear-gradient(to top, #48454F, transparent);
+  --tab-text-color: #666;
+  --tab-text-color-active: #C9C4D0;
+  --tab-text-color-focused: #C9C4D0;
+  --tab-text-color-focused-active: #C9C4D0;
+  --tab-text-color-focused-active-current: #E5E1E5;
+  --tab-text-color-focused-highlighted: #CABEFF;
+  --table-add-button-border-color: #48454F;
+  --table-border-color: #48454F;
+  --table-drag-handle-background-active: #CABEFF;
+  --table-drag-handle-color: #666;
+  --table-drag-handle-color-active: #dcddde;
+  --table-header-border-color: #48454F;
+  --table-header-color: #E5E1E5;
+  --table-selection-border-color: #CABEFF;
+  --tag-color: #CABEFF;
+  --tag-color-hover: #CABEFF;
+  --tertiary: #EDB8CD;
+  --tertiary-container: #623B4C;
+  --tertiaryContainer: #623B4C;
+  --text-accent: #CABEFF;
+  --text-accent-hover: #4731A4;
+  --text-error: #cf6679;
+  --text-error-hover: #990000;
+  --text-faint: #666;
+  --text-highlight-bg: #48454F;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-muted: #C9C4D0;
+  --text-muted-rgb: 153, 153, 153;
+  --text-normal: #E5E1E5;
+  --text-on-accent: #dcddde;
+  --text-selection: rgba(23, 48, 77, 0.99);
+  --textHighlight: var(--text-highlight-bg, #48454F);
+  --titleFont: var(--font-text, Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: #48454F !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --titlebar-background: #48454F;
   --titlebar-background-focused: rgb(
     47.14,
     44.93,
     54.75
-    ) !important;
-  --titlebar-border-color: #48454F !important;
-  --titlebar-text-color: #C9C4D0 !important;
-  --titlebar-text-color-focused: #E5E1E5 !important;
-  --vault-profile-color: #E5E1E5 !important;
-  --vault-profile-color-hover: #E5E1E5 !important;
-  --quartz-icon-color: currentColor !important;
+    );
+  --titlebar-border-color: #48454F;
+  --titlebar-text-color: #C9C4D0;
+  --titlebar-text-color-focused: #E5E1E5;
+  --vault-profile-color: #E5E1E5;
+  --vault-profile-color-hover: #E5E1E5;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -1854,376 +1855,376 @@ html[saved-theme="dark"] body ul.tags > li {
   },
   light: {
     base: `:root:root {
-  --background: #FFFBFF !important;
-  --background-modifier-border: #E5E0EB !important;
-  --background-modifier-cover: rgba(0, 0, 0, 0.8) !important;
-  --background-modifier-error: #BA1B1B !important;
-  --background-modifier-error-hover: #b00020 !important;
-  --background-modifier-error-rgb: 230, 135, 135 !important;
-  --background-modifier-form-field: #fff !important;
-  --background-modifier-form-field-highlighted: #fff !important;
-  --background-modifier-form-field-hover: #fff !important;
-  --background-modifier-success: #a4e7c3 !important;
-  --background-primary: #FFFBFF !important;
+  --background: #FFFBFF;
+  --background-modifier-border: #E5E0EB;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --background-modifier-error: #BA1B1B;
+  --background-modifier-error-hover: #b00020;
+  --background-modifier-error-rgb: 230, 135, 135;
+  --background-modifier-form-field: #fff;
+  --background-modifier-form-field-highlighted: #fff;
+  --background-modifier-form-field-hover: #fff;
+  --background-modifier-success: #a4e7c3;
+  --background-primary: #FFFBFF;
   --background-primary-alt: rgb(
     247,
     242.2,
     251.7
-    ) !important;
-  --background-secondary: #E5E0EB !important;
+    );
+  --background-secondary: #E5E0EB;
   --background-secondary-alt: rgb(
     237.4,
     231.64,
     247.74
-    ) !important;
-  --bases-cards-background: #FFFBFF !important;
+    );
+  --bases-cards-background: #FFFBFF;
   --bases-cards-cover-background: rgb(
     247,
     242.2,
     251.7
-    ) !important;
-  --bases-cards-shadow: 0 0 0 1px #E5E0EB !important;
-  --bases-embed-border-color: #E5E0EB !important;
-  --bases-group-heading-property-color: #48454F !important;
-  --bases-table-border-color: #E5E0EB !important;
-  --bases-table-cell-background-active: #FFFBFF !important;
+    );
+  --bases-cards-shadow: 0 0 0 1px #E5E0EB;
+  --bases-embed-border-color: #E5E0EB;
+  --bases-group-heading-property-color: #48454F;
+  --bases-table-border-color: #E5E0EB;
+  --bases-table-cell-background-active: #FFFBFF;
   --bases-table-cell-background-disabled: rgb(
     247,
     242.2,
     251.7
-    ) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px #5F4BBD !important;
+    );
+  --bases-table-cell-shadow-focus: 0 0 0 2px #5F4BBD;
   --bases-table-group-background: rgb(
     247,
     242.2,
     251.7
-    ) !important;
-  --bases-table-header-background: #FFFBFF !important;
-  --bases-table-header-color: #48454F !important;
-  --bases-table-summary-background: #FFFBFF !important;
-  --big-radius: 24px !important;
-  --blockquote-border-color: #5F4BBD !important;
-  --blur-background: color-mix(in srgb, #FFFBFF 65%, transparent) linear-gradient(#FFFBFF, color-mix(in srgb, #FFFBFF 65%, transparent)) !important;
-  --bodyFont: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    );
+  --bases-table-header-background: #FFFBFF;
+  --bases-table-header-color: #48454F;
+  --bases-table-summary-background: #FFFBFF;
+  --big-radius: 24px;
+  --blockquote-border-color: #5F4BBD;
+  --blur-background: color-mix(in srgb, #FFFBFF 65%, transparent) linear-gradient(#FFFBFF, color-mix(in srgb, #FFFBFF 65%, transparent));
+  --bodyFont: var(--font-text, Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --bold: 650 !important;
-  --canvas-background: #FFFBFF !important;
-  --canvas-card-label-color: #605C71 !important;
-  --caret-color: #1C1B1E !important;
-  --checkbox-border-color: #605C71 !important;
-  --checkbox-border-color-hover: #48454F !important;
-  --checkbox-color: #5F4BBD !important;
-  --checkbox-color-hover: #5F4BBD !important;
-  --checkbox-marker-color: #FFFBFF !important;
-  --checklist-done-color: #48454F !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --bold: 650;
+  --canvas-background: #FFFBFF;
+  --canvas-card-label-color: #605C71;
+  --caret-color: #1C1B1E;
+  --checkbox-border-color: #605C71;
+  --checkbox-border-color-hover: #48454F;
+  --checkbox-color: #5F4BBD;
+  --checkbox-color-hover: #5F4BBD;
+  --checkbox-marker-color: #FFFBFF;
+  --checklist-done-color: #48454F;
   --code-background: rgb(
     247,
     242.2,
     251.7
-    ) !important;
-  --code-border-color: #E5E0EB !important;
-  --code-comment: #605C71 !important;
-  --code-normal: #1C1B1E !important;
-  --code-punctuation: #48454F !important;
-  --codeFont: "Roboto Mono", monospace, Menlo, SFMono-Regular, Consolas, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --collapse-icon-color: #605C71 !important;
-  --collapse-icon-color-collapsed: #5F4BBD !important;
-  --dark: #1C1B1E !important;
-  --darkgray: #1C1B1E !important;
-  --divider-color: #E5E0EB !important;
-  --divider-color-hover: #5F4BBD !important;
-  --dropdown-background: #f2f3f5 !important;
-  --dropdown-background-hover: #fcb2b2 !important;
-  --elevation1: 0.05 !important;
-  --elevation2: 0.08 !important;
-  --elevation3: 0.11 !important;
-  --elevation4: 0.12 !important;
-  --elevation5: 0.14 !important;
-  --embed-block-shadow-hover: 0 0 0 1px #E5E0EB, inset 0 0 0 1px #E5E0EB !important;
-  --embed-border-start: 2px solid #5F4BBD !important;
-  --error: #BA1B1B !important;
-  --error-container: #FFDAD4 !important;
-  --errorContainer: #FFDAD4 !important;
-  --file-header-background: #FFFBFF !important;
-  --file-header-background-focused: #FFFBFF !important;
+    );
+  --code-border-color: #E5E0EB;
+  --code-comment: #605C71;
+  --code-normal: #1C1B1E;
+  --code-punctuation: #48454F;
+  --codeFont: var(--font-monospace, "Roboto Mono", monospace, Menlo, SFMono-Regular, Consolas, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --collapse-icon-color: #605C71;
+  --collapse-icon-color-collapsed: #5F4BBD;
+  --dark: var(--text-normal, #1C1B1E);
+  --darkgray: var(--text-normal, #1C1B1E);
+  --divider-color: #E5E0EB;
+  --divider-color-hover: #5F4BBD;
+  --dropdown-background: #f2f3f5;
+  --dropdown-background-hover: #fcb2b2;
+  --elevation1: 0.05;
+  --elevation2: 0.08;
+  --elevation3: 0.11;
+  --elevation4: 0.12;
+  --elevation5: 0.14;
+  --embed-block-shadow-hover: 0 0 0 1px #E5E0EB, inset 0 0 0 1px #E5E0EB;
+  --embed-border-start: 2px solid #5F4BBD;
+  --error: #BA1B1B;
+  --error-container: #FFDAD4;
+  --errorContainer: #FFDAD4;
+  --file-header-background: #FFFBFF;
+  --file-header-background-focused: #FFFBFF;
   --file-header-font: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --flair-background: #f2f3f5 !important;
-  --flair-color: #1C1B1E !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --flair-background: #f2f3f5;
+  --flair-color: #1C1B1E;
   --focus: rgb(
     235.8,
     229.88,
     247.08
-    ) !important;
+    );
   --font-interface: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --font-mermaid: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace: "Roboto Mono", monospace, Menlo, SFMono-Regular, Consolas, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --font-monospace-theme: "Roboto Mono", monospace, Menlo, SFMono-Regular, Consolas !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: "Roboto Mono", monospace, Menlo, SFMono-Regular, Consolas, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-theme: "Roboto Mono", monospace, Menlo, SFMono-Regular, Consolas;
   --font-print: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, Arial' !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, Arial';
   --font-text: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-theme: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
-  --footnote-divider-color: #E5E0EB !important;
-  --footnote-id-color: #48454F !important;
-  --footnote-id-color-no-occurrences: #605C71 !important;
-  --graph-node: #48454F !important;
-  --graph-node-focused: #5F4BBD !important;
-  --graph-node-unresolved: #605C71 !important;
-  --graph-text: #1C1B1E !important;
-  --gray: #48454F !important;
-  --h1: 2.25rem !important;
-  --h2: 2rem !important;
-  --h3: 1.75rem !important;
-  --h4: 1.5rem !important;
-  --h5: 1.375rem !important;
-  --h6: 1rem !important;
-  --headerFont: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --footnote-divider-color: #E5E0EB;
+  --footnote-id-color: #48454F;
+  --footnote-id-color-no-occurrences: #605C71;
+  --graph-node: #48454F;
+  --graph-node-focused: #5F4BBD;
+  --graph-node-unresolved: #605C71;
+  --graph-text: #1C1B1E;
+  --gray: var(--text-muted, #48454F);
+  --h1: 2.25rem;
+  --h2: 2rem;
+  --h3: 1.75rem;
+  --h4: 1.5rem;
+  --h5: 1.375rem;
+  --h6: 1rem;
+  --headerFont: var(--font-text, Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: #605C71 !important;
-  --highlight: #E5E0EB !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --heading-formatting: #605C71;
+  --highlight: var(--text-highlight-bg, #E5E0EB);
   --hover: rgb(
     242.2,
     236.92,
     249.72
-    ) !important;
-  --hr-color: #E5E0EB !important;
-  --icon-color: #48454F !important;
-  --icon-color-active: #5F4BBD !important;
-  --icon-color-focused: #1C1B1E !important;
-  --icon-color-hover: #48454F !important;
-  --input-date-separator: #605C71 !important;
-  --input-placeholder-color: #605C71 !important;
-  --interactive-accent: #5F4BBD !important;
-  --interactive-accent-hover: #5F4BBD !important;
-  --interactive-accent-rgb: #5F4BBD !important;
-  --interactive-hover: #fcb2b2 !important;
-  --interactive-normal: #f2f3f5 !important;
-  --interactive-success: #197300 !important;
-  --inverse-on-surface: #F4EFF4 !important;
-  --inverse-surface: #313033 !important;
-  --inverseOnSurface: #F4EFF4 !important;
-  --inverseSurface: #313033 !important;
-  --light: 350 !important;
-  --lightgray: #E5E0EB !important;
-  --link-color: #5F4BBD !important;
-  --link-color-hover: #E7DEFF !important;
-  --link-external-color: #5F4BBD !important;
-  --link-external-color-hover: #E7DEFF !important;
-  --link-unresolved-color: #5F4BBD !important;
-  --list-marker-color: #605C71 !important;
-  --list-marker-color-collapsed: #5F4BBD !important;
-  --list-marker-color-hover: #48454F !important;
-  --medium: 500 !important;
-  --medium-radius: 16px !important;
-  --menu-background: #E5E0EB !important;
-  --metadata-border-color: #E5E0EB !important;
-  --metadata-divider-color: #E5E0EB !important;
+    );
+  --hr-color: #E5E0EB;
+  --icon-color: #48454F;
+  --icon-color-active: #5F4BBD;
+  --icon-color-focused: #1C1B1E;
+  --icon-color-hover: #48454F;
+  --input-date-separator: #605C71;
+  --input-placeholder-color: #605C71;
+  --interactive-accent: #5F4BBD;
+  --interactive-accent-hover: #5F4BBD;
+  --interactive-accent-rgb: #5F4BBD;
+  --interactive-hover: #fcb2b2;
+  --interactive-normal: #f2f3f5;
+  --interactive-success: #197300;
+  --inverse-on-surface: #F4EFF4;
+  --inverse-surface: #313033;
+  --inverseOnSurface: #F4EFF4;
+  --inverseSurface: #313033;
+  --light: 350;
+  --lightgray: var(--background-secondary, #E5E0EB);
+  --link-color: #5F4BBD;
+  --link-color-hover: #E7DEFF;
+  --link-external-color: #5F4BBD;
+  --link-external-color-hover: #E7DEFF;
+  --link-unresolved-color: #5F4BBD;
+  --list-marker-color: #605C71;
+  --list-marker-color-collapsed: #5F4BBD;
+  --list-marker-color-hover: #48454F;
+  --medium: 500;
+  --medium-radius: 16px;
+  --menu-background: #E5E0EB;
+  --metadata-border-color: #E5E0EB;
+  --metadata-divider-color: #E5E0EB;
   --metadata-input-font: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: #1C1B1E !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-input-text-color: #1C1B1E;
   --metadata-label-font: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: #48454F !important;
-  --metadata-label-text-color-hover: #48454F !important;
-  --modal-background: #FFFBFF !important;
-  --nav-collapse-icon-color: #605C71 !important;
-  --nav-collapse-icon-color-collapsed: #605C71 !important;
-  --nav-heading-color: #1C1B1E !important;
-  --nav-heading-color-collapsed: #605C71 !important;
-  --nav-heading-color-collapsed-hover: #48454F !important;
-  --nav-heading-color-hover: #1C1B1E !important;
-  --nav-item-color: #48454F !important;
-  --nav-item-color-active: #1C1B1E !important;
-  --nav-item-color-highlighted: #5F4BBD !important;
-  --nav-item-color-hover: #1C1B1E !important;
-  --nav-item-color-selected: #1C1B1E !important;
-  --nav-tag-color: #605C71 !important;
-  --nav-tag-color-active: #48454F !important;
-  --nav-tag-color-hover: #48454F !important;
-  --on-background: #1C1B1E !important;
-  --on-error: #FFFFFF !important;
-  --on-error-container: #410001 !important;
-  --on-primary: #FFFFFF !important;
-  --on-primary-container: #1A0064 !important;
-  --on-secondary: #FFFFFF !important;
-  --on-secondary-container: #1C192C !important;
-  --on-surface: #1C1B1E !important;
-  --on-surface-variant: #48454F !important;
-  --on-tertiary: #FFFFFF !important;
-  --on-tertiary-container: #301020 !important;
-  --onBackground: #1C1B1E !important;
-  --onError: #FFFFFF !important;
-  --onErrorContainer: #410001 !important;
-  --onPrimary: #FFFFFF !important;
-  --onPrimaryContainer: #1A0064 !important;
-  --onSecondary: #FFFFFF !important;
-  --onSecondaryContainer: #1C192C !important;
-  --onSurface: #1C1B1E !important;
-  --onSurfaceVariant: #48454F !important;
-  --onTertiary: #FFFFFF !important;
-  --onTertiaryContainer: #301020 !important;
-  --outline: #79767F !important;
-  --pdf-background: #FFFBFF !important;
-  --pdf-page-background: #FFFBFF !important;
-  --pdf-sidebar-background: #FFFBFF !important;
-  --pill-border-color: #E5E0EB !important;
-  --pill-color: #48454F !important;
-  --pill-color-hover: #1C1B1E !important;
-  --pill-color-remove: #605C71 !important;
-  --pill-color-remove-hover: #5F4BBD !important;
-  --primary: #5F4BBD !important;
-  --primary-b: 189 !important;
-  --primary-container: #E7DEFF !important;
-  --primary-g: 75 !important;
-  --primary-inverse: #CABEFF !important;
-  --primary-r: 95 !important;
-  --primaryContainer: #E7DEFF !important;
-  --primaryInverse: #CABEFF !important;
-  --prompt-background: #FFFBFF !important;
-  --raised-background: color-mix(in srgb, #FFFBFF 65%, transparent) linear-gradient(#FFFBFF, color-mix(in srgb, #FFFBFF 65%, transparent)) !important;
-  --regular: 400 !important;
-  --ribbon-background: #E5E0EB !important;
-  --ribbon-background-collapsed: #FFFBFF !important;
-  --search-clear-button-color: #48454F !important;
-  --search-icon-color: #48454F !important;
-  --search-result-background: #FFFBFF !important;
-  --secondary: #605C71 !important;
-  --secondary-container: #E6DFF9 !important;
-  --secondaryContainer: #E6DFF9 !important;
-  --setting-group-heading-color: #1C1B1E !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-label-text-color: #48454F;
+  --metadata-label-text-color-hover: #48454F;
+  --modal-background: #FFFBFF;
+  --nav-collapse-icon-color: #605C71;
+  --nav-collapse-icon-color-collapsed: #605C71;
+  --nav-heading-color: #1C1B1E;
+  --nav-heading-color-collapsed: #605C71;
+  --nav-heading-color-collapsed-hover: #48454F;
+  --nav-heading-color-hover: #1C1B1E;
+  --nav-item-color: #48454F;
+  --nav-item-color-active: #1C1B1E;
+  --nav-item-color-highlighted: #5F4BBD;
+  --nav-item-color-hover: #1C1B1E;
+  --nav-item-color-selected: #1C1B1E;
+  --nav-tag-color: #605C71;
+  --nav-tag-color-active: #48454F;
+  --nav-tag-color-hover: #48454F;
+  --on-background: #1C1B1E;
+  --on-error: #FFFFFF;
+  --on-error-container: #410001;
+  --on-primary: #FFFFFF;
+  --on-primary-container: #1A0064;
+  --on-secondary: #FFFFFF;
+  --on-secondary-container: #1C192C;
+  --on-surface: #1C1B1E;
+  --on-surface-variant: #48454F;
+  --on-tertiary: #FFFFFF;
+  --on-tertiary-container: #301020;
+  --onBackground: #1C1B1E;
+  --onError: #FFFFFF;
+  --onErrorContainer: #410001;
+  --onPrimary: #FFFFFF;
+  --onPrimaryContainer: #1A0064;
+  --onSecondary: #FFFFFF;
+  --onSecondaryContainer: #1C192C;
+  --onSurface: #1C1B1E;
+  --onSurfaceVariant: #48454F;
+  --onTertiary: #FFFFFF;
+  --onTertiaryContainer: #301020;
+  --outline: #79767F;
+  --pdf-background: #FFFBFF;
+  --pdf-page-background: #FFFBFF;
+  --pdf-sidebar-background: #FFFBFF;
+  --pill-border-color: #E5E0EB;
+  --pill-color: #48454F;
+  --pill-color-hover: #1C1B1E;
+  --pill-color-remove: #605C71;
+  --pill-color-remove-hover: #5F4BBD;
+  --primary: #5F4BBD;
+  --primary-b: 189;
+  --primary-container: #E7DEFF;
+  --primary-g: 75;
+  --primary-inverse: #CABEFF;
+  --primary-r: 95;
+  --primaryContainer: #E7DEFF;
+  --primaryInverse: #CABEFF;
+  --prompt-background: #FFFBFF;
+  --raised-background: color-mix(in srgb, #FFFBFF 65%, transparent) linear-gradient(#FFFBFF, color-mix(in srgb, #FFFBFF 65%, transparent));
+  --regular: 400;
+  --ribbon-background: #E5E0EB;
+  --ribbon-background-collapsed: #FFFBFF;
+  --search-clear-button-color: #48454F;
+  --search-icon-color: #48454F;
+  --search-result-background: #FFFBFF;
+  --secondary: #605C71;
+  --secondary-container: #E6DFF9;
+  --secondaryContainer: #E6DFF9;
+  --setting-group-heading-color: #1C1B1E;
   --setting-items-background: rgb(
     247,
     242.2,
     251.7
-    ) !important;
-  --setting-items-border-color: #E5E0EB !important;
-  --shiki-active-tab-border-color: #48454F !important;
+    );
+  --setting-items-border-color: #E5E0EB;
+  --shiki-active-tab-border-color: #48454F;
   --shiki-code-background: rgb(
     247,
     242.2,
     251.7
-    ) !important;
-  --shiki-code-comment: #605C71 !important;
-  --shiki-code-normal: #48454F !important;
-  --shiki-code-punctuation: #48454F !important;
-  --shiki-gutter-border-color: #E5E0EB !important;
-  --shiki-gutter-text-color: #605C71 !important;
-  --shiki-gutter-text-color-highlight: #48454F !important;
-  --shiki-highlight-neutral: #48454F !important;
-  --shiki-terminal-dots-color: #605C71 !important;
-  --slider-track-background: #E5E0EB !important;
-  --small-radius: 8px !important;
-  --smaller: 0.875rem !important;
-  --smallest: 0.75rem !important;
-  --status-bar-background: #E5E0EB !important;
-  --status-bar-border-color: #E5E0EB !important;
-  --status-bar-text-color: #48454F !important;
-  --suggestion-background: #FFFBFF !important;
-  --surface: #FFFBFF !important;
-  --surface-b: 255 !important;
-  --surface-g: 251 !important;
-  --surface-r: 255 !important;
-  --surface-variant: #E5E0EB !important;
+    );
+  --shiki-code-comment: #605C71;
+  --shiki-code-normal: #48454F;
+  --shiki-code-punctuation: #48454F;
+  --shiki-gutter-border-color: #E5E0EB;
+  --shiki-gutter-text-color: #605C71;
+  --shiki-gutter-text-color-highlight: #48454F;
+  --shiki-highlight-neutral: #48454F;
+  --shiki-terminal-dots-color: #605C71;
+  --slider-track-background: #E5E0EB;
+  --small-radius: 8px;
+  --smaller: 0.875rem;
+  --smallest: 0.75rem;
+  --status-bar-background: #E5E0EB;
+  --status-bar-border-color: #E5E0EB;
+  --status-bar-text-color: #48454F;
+  --suggestion-background: #FFFBFF;
+  --surface: #FFFBFF;
+  --surface-b: 255;
+  --surface-g: 251;
+  --surface-r: 255;
+  --surface-variant: #E5E0EB;
   --surface1: rgb(
     247,
     242.2,
     251.7
-    ) !important;
+    );
   --surface2: rgb(
     242.2,
     236.92,
     249.72
-    ) !important;
+    );
   --surface3: rgb(
     237.4,
     231.64,
     247.74
-    ) !important;
+    );
   --surface4: rgb(
     235.8,
     229.88,
     247.08
-    ) !important;
+    );
   --surface5: rgb(
     232.6,
     226.36,
     245.76
-    ) !important;
-  --surfaceVariant: #E5E0EB !important;
-  --tab-background-active: #FFFBFF !important;
-  --tab-container-background: #E5E0EB !important;
-  --tab-outline-color: #E5E0EB !important;
-  --tab-switcher-background: #E5E0EB !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, #E5E0EB, transparent) !important;
-  --tab-text-color: #605C71 !important;
-  --tab-text-color-active: #48454F !important;
-  --tab-text-color-focused: #48454F !important;
-  --tab-text-color-focused-active: #48454F !important;
-  --tab-text-color-focused-active-current: #1C1B1E !important;
-  --tab-text-color-focused-highlighted: #5F4BBD !important;
-  --table-add-button-border-color: #E5E0EB !important;
-  --table-border-color: #E5E0EB !important;
-  --table-drag-handle-background-active: #5F4BBD !important;
-  --table-drag-handle-color: #605C71 !important;
-  --table-drag-handle-color-active: #f2f2f2 !important;
-  --table-header-border-color: #E5E0EB !important;
-  --table-header-color: #1C1B1E !important;
-  --table-selection-border-color: #5F4BBD !important;
-  --tag-color: #5F4BBD !important;
-  --tag-color-hover: #5F4BBD !important;
-  --tertiary: #7C5264 !important;
-  --tertiary-container: #FFD9E8 !important;
-  --tertiaryContainer: #FFD9E8 !important;
-  --text-accent: #5F4BBD !important;
-  --text-accent-hover: #E7DEFF !important;
-  --text-error: #800000 !important;
-  --text-error-hover: #990000 !important;
-  --text-faint: #605C71 !important;
-  --text-highlight-bg: #E5E0EB !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
-  --text-muted: #48454F !important;
-  --text-muted-rgb: 136, 136, 136 !important;
-  --text-normal: #1C1B1E !important;
-  --text-on-accent: #f2f2f2 !important;
-  --text-selection: rgba(204, 230, 255, 0.99) !important;
-  --textHighlight: #E5E0EB !important;
-  --titleFont: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    );
+  --surfaceVariant: #E5E0EB;
+  --tab-background-active: #FFFBFF;
+  --tab-container-background: #E5E0EB;
+  --tab-outline-color: #E5E0EB;
+  --tab-switcher-background: #E5E0EB;
+  --tab-switcher-menubar-background: linear-gradient(to top, #E5E0EB, transparent);
+  --tab-text-color: #605C71;
+  --tab-text-color-active: #48454F;
+  --tab-text-color-focused: #48454F;
+  --tab-text-color-focused-active: #48454F;
+  --tab-text-color-focused-active-current: #1C1B1E;
+  --tab-text-color-focused-highlighted: #5F4BBD;
+  --table-add-button-border-color: #E5E0EB;
+  --table-border-color: #E5E0EB;
+  --table-drag-handle-background-active: #5F4BBD;
+  --table-drag-handle-color: #605C71;
+  --table-drag-handle-color-active: #f2f2f2;
+  --table-header-border-color: #E5E0EB;
+  --table-header-color: #1C1B1E;
+  --table-selection-border-color: #5F4BBD;
+  --tag-color: #5F4BBD;
+  --tag-color-hover: #5F4BBD;
+  --tertiary: #7C5264;
+  --tertiary-container: #FFD9E8;
+  --tertiaryContainer: #FFD9E8;
+  --text-accent: #5F4BBD;
+  --text-accent-hover: #E7DEFF;
+  --text-error: #800000;
+  --text-error-hover: #990000;
+  --text-faint: #605C71;
+  --text-highlight-bg: #E5E0EB;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-muted: #48454F;
+  --text-muted-rgb: 136, 136, 136;
+  --text-normal: #1C1B1E;
+  --text-on-accent: #f2f2f2;
+  --text-selection: rgba(204, 230, 255, 0.99);
+  --textHighlight: var(--text-highlight-bg, #E5E0EB);
+  --titleFont: var(--font-text, Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: #E5E0EB !important;
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --titlebar-background: #E5E0EB;
   --titlebar-background-focused: rgb(
     237.4,
     231.64,
     247.74
-    ) !important;
-  --titlebar-border-color: #E5E0EB !important;
-  --titlebar-text-color: #48454F !important;
-  --titlebar-text-color-focused: #1C1B1E !important;
-  --vault-profile-color: #1C1B1E !important;
-  --vault-profile-color-hover: #1C1B1E !important;
-  --quartz-icon-color: currentColor !important;
+    );
+  --titlebar-border-color: #E5E0EB;
+  --titlebar-text-color: #48454F;
+  --titlebar-text-color-focused: #1C1B1E;
+  --vault-profile-color: #1C1B1E;
+  --vault-profile-color-hover: #1C1B1E;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

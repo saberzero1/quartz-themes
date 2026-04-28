@@ -1,0 +1,89 @@
+name: Meridian
+id: mvahaste-meridian
+settings:
+  - id: background-opacity
+    title: Background Opacity
+    description: The opacity of the background mask (black in dark mode, white in light mode).
+    type: variable-number-slider
+    default: 0.5
+    step: 0.01
+    min: 0
+    max: 1
+  - id: minimal-image-captions
+    title: Minimal Image Captions
+    description: Use a minimal image caption style (preview mode).
+    type: class-toggle
+    default: true
+  - id: show-header-levels
+    title: Show Header Levels
+    description: Show header levels instead of collapse indicators in the editor (preview mode).
+    type: class-select
+    allowEmpty: false
+    default: show-header-levels-hover
+    options:
+      - label: Always
+        value: show-header-levels-always
+      - label: Hover
+        value: show-header-levels-hover
+  - id: show-header-hashtags
+    title: Show Header Hashtags
+    description: Show hashtags before headers in the editor (preview mode).
+    type: class-toggle
+    default: false
+  - id: hide-header-link-underline
+    title: Hide Header Link Underline
+    description: Hide the underline on header links in the editor (preview mode).
+    type: class-toggle
+    default: true
+  - id: hide-tab-bar
+    title: Hide Tab Bar
+    description: Hide the tab bar dynamically, always, or never.
+    type: class-select
+    allowEmpty: false
+    default: hide-tab-bar-dynamic
+    options:
+      - label: Dynamic
+        value: hide-tab-bar-dynamic
+      - label: Always
+        value: hide-tab-bar-always
+      - label: Never
+        value: hide-tab-bar-never
+  - id: hide-file-explorer-nav-header
+    title: Hide File Explorer Navigation Header
+    description: Hide the file explorer navigation header dynamically, always, or never.
+    type: class-select
+    allowEmpty: false
+    default: hide-file-explorer-nav-header-dynamic
+    options:
+      - label: Dynamic
+        value: hide-file-explorer-nav-header-dynamic
+      - label: Always
+        value: hide-file-explorer-nav-header-always
+      - label: Never
+        value: hide-file-explorer-nav-header-never
+  - id: hide-sidebar-buttons
+    title: Hide Sidebar Buttons
+    description: Hide the buttons for toggling left/right sidebars.
+    type: class-select
+    allowEmpty: false
+    default: hide-sidebar-buttons-always
+    options:
+      - label: Always
+        value: hide-sidebar-buttons-always
+      - label: Never
+        value: hide-sidebar-buttons-never
+  - id: deemphasize-status-bar
+    title: De-emphasize Status Bar
+    description: De-emphasize the status bar (preview mode).
+    type: class-toggle
+    default: true
+  - id: deemphasize-file-properties
+    title: De-emphasize File Properties
+    description: De-emphasize file properties in the editor (preview mode).
+    type: class-toggle
+    default: true
+  - id: deemphasize-embedded-backlinks
+    title: De-emphasize Embedded Backlinks
+    description: De-emphasize embedded backlinks in the editor (preview mode).
+    type: class-toggle
+    default: true

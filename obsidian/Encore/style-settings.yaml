@@ -72,7 +72,7 @@ settings:
   - id: encore-translucency-description
     title: About
     type: info-text
-    description: "Make sure you've enabled **👑 Encore Translucency** above. Check out the **Glass Royale** theme (dark mode only) for some translucent workspaces!"
+    description: Make sure you've enabled **👑 Encore Translucency** above. Check out the **Glass Royale** theme (dark mode only) for some translucent workspaces!
     markdown: true
   - id: encore-translucency-strength
     title: Translucency Strength
@@ -119,10 +119,6 @@ settings:
     min: 0
     max: 20
     step: 1
-
-  #########################################################
-  # Custom Colours
-
   - id: custom-colours
     title: 🖌️ Custom Colours
     type: heading
@@ -133,62 +129,57 @@ settings:
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#000000"
-    default-dark: "#ffffff"
+    default-light: '#000000'
+    default-dark: '#ffffff'
   - id: encore-custom-bold
     title: Bold Text
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#000000"
-    default-dark: "#ffffff"
-
+    default-light: '#000000'
+    default-dark: '#ffffff'
   - id: encore-custom-h1
     title: Header One
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#000000"
-    default-dark: "#ffffff"
+    default-light: '#000000'
+    default-dark: '#ffffff'
   - id: encore-custom-h2
     title: Header Two
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#000000"
-    default-dark: "#ffffff"
+    default-light: '#000000'
+    default-dark: '#ffffff'
   - id: encore-custom-h3
     title: Header Three
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#000000"
-    default-dark: "#ffffff"
+    default-light: '#000000'
+    default-dark: '#ffffff'
   - id: encore-custom-h4
     title: Header Four
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#000000"
-    default-dark: "#ffffff"
+    default-light: '#000000'
+    default-dark: '#ffffff'
   - id: encore-custom-h5
     title: Header Five
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#000000"
-    default-dark: "#ffffff"
+    default-light: '#000000'
+    default-dark: '#ffffff'
   - id: encore-custom-h6
     title: Header Six
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#000000"
-    default-dark: "#ffffff"
-
-  #########################################################
-  # Extras
-
+    default-light: '#000000'
+    default-dark: '#ffffff'
   - id: extras
     title: 💎 Extras
     type: heading
@@ -229,12 +220,8 @@ settings:
         value: encore-blur-full
       - label: Less
         value: encore-blur-less
-      - label: Off
+      - label: 'Off'
         value: encore-blur-off
-
-  #########################################################
-  # Feature Toggles
-
   - id: feature-toggles
     title: ⚙️ Feature Toggles
     type: heading

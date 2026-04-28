@@ -1866,14 +1866,14 @@ body {
     --vault-name-font-weight: var(--font-medium);
     --vault-name-color: var(--text-normal);
     --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
-    --accent-h: 228;
+    --accent-h: 128;
     --accent-s: 70%; 
     --accent-l: 70%;
-    --background-primary: hsl(calc(var(--accent-h) + 50), calc(var(--accent-s) - 30%), calc(var(--accent-l) + 25%));
+    --background-primary: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 10%), calc(var(--accent-l) + 25%));
     --background-primary-alt: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 20%));
-    --background-secondary: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 5%));
+    --background-secondary: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 15%));
     --background-table: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 20%));   
-    --background-tertiary: hsl(calc(var(--accent-h) - 40), calc(var(--accent-s) - 30%), calc(var(--accent-l) + 10%));
+    --background-tertiary: hsl(calc(var(--accent-h) - 20), calc(var(--accent-s) - 30%), calc(var(--accent-l) + 10%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
     --background-search: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 15%));
@@ -2858,7 +2858,8 @@ body.emulate-mobile button {
 
 .community-item.is-selected,
 .community-item.is-selected .community-item-downloads,
-.community-item.is-selected .community-item-author {
+.community-item.is-selected .community-item-author,
+.community-item.is-selected .community-item-updated {
     color: var(--text-muted) !important;
     background-color: var(--background-table) !important;
 }

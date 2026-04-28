@@ -6,182 +6,183 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["cantarell"],
+    styleSettingsId: "com-github-birneee-obsidian-adwaita",
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --adwaita-accent-bg-color: #3584e4 !important;
-  --adwaita-accent-color: #78aeed !important;
-  --adwaita-accent-fg-color: #ffffff !important;
-  --adwaita-blue-1: #99c1f1 !important;
-  --adwaita-blue-2: #62a0ea !important;
-  --adwaita-blue-3: #3584e4 !important;
-  --adwaita-blue-4: #1c71d8 !important;
-  --adwaita-blue-5: #1a5fb4 !important;
-  --adwaita-brown-1: #cdab8f !important;
-  --adwaita-brown-2: #b5835a !important;
-  --adwaita-brown-3: #986a44 !important;
-  --adwaita-brown-4: #865e3c !important;
-  --adwaita-brown-5: #63452c !important;
-  --adwaita-card-bg-color: rgba(255, 255, 255, 0.08) !important;
-  --adwaita-card-fg-color: #ffffff !important;
-  --adwaita-card-shade-color: rgba(0, 0, 0, 0.36) !important;
-  --adwaita-dark-1: #77767b !important;
-  --adwaita-dark-2: #5e5c64 !important;
-  --adwaita-dark-3: #3d3846 !important;
-  --adwaita-dark-4: #241f31 !important;
-  --adwaita-dark-5: #000000 !important;
-  --adwaita-destructive-bg-color: #c01c28 !important;
-  --adwaita-destructive-color: #ff7b63 !important;
-  --adwaita-destructive-fg-color: #ffffff !important;
-  --adwaita-dialog-bg-color: #383838 !important;
-  --adwaita-dialog-fg-color: #ffffff !important;
-  --adwaita-error-bg-color: #c01c28 !important;
-  --adwaita-error-color: #ff7b63 !important;
-  --adwaita-error-fg-color: #ffffff !important;
-  --adwaita-green-1: #8ff0a4 !important;
-  --adwaita-green-2: #57e389 !important;
-  --adwaita-green-3: #33d17a !important;
-  --adwaita-green-4: #2ec27e !important;
-  --adwaita-green-5: #26a269 !important;
-  --adwaita-headerbar-backdrop-color: #242424 !important;
-  --adwaita-headerbar-bg-color: #303030 !important;
-  --adwaita-headerbar-border-color: #ffffff !important;
-  --adwaita-headerbar-fg-color: #ffffff !important;
-  --adwaita-headerbar-shade-color: rgba(0, 0, 0, 0.36) !important;
-  --adwaita-icon-folder-saved-search-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDYuNjA1NDY5IDAuMDU4NTkzOCBjIC0zLjU3ODEyNSAwIC02LjUgMi45MjE4NzUyIC02LjUgNi41MDAwMDAyIHMgMi45MjE4NzUgNi40OTYwOTQgNi41IDYuNDk2MDk0IGMgMS40Mjk2ODcgMCAyLjc1MzkwNiAtMC40NjQ4NDQgMy44MjgxMjUgLTEuMjUzOTA3IGwgMi45NzI2NTYgMi45NzI2NTcgYyAwLjk1NzAzMSAwLjk0MTQwNiAyLjM2MzI4MSAtMC40OTYwOTQgMS40MDYyNSAtMS40Mzc1IGwgLTIuOTU3MDMxIC0yLjk1NzAzMiBjIDAuNzgxMjUgLTEuMDc0MjE4IDEuMjUgLTIuMzk0NTMxIDEuMjUgLTMuODIwMzEyIGMgMCAtMy41NzgxMjUgLTIuOTI1NzgxIC02LjUwMDAwMDIgLTYuNSAtNi41MDAwMDAyIHogbSAwIDIuMDAwMDAwMiBjIDIuNDk2MDkzIDAgNC41IDIuMDAzOTA2IDQuNSA0LjUgcyAtMi4wMDM5MDcgNC40OTYwOTQgLTQuNSA0LjQ5NjA5NCBjIC0yLjUgMCAtNC41IC0yIC00LjUgLTQuNDk2MDk0IHMgMiAtNC41IDQuNSAtNC41IHogbSAwIDAiIGZpbGw9IiMyZTM0MzYiLz4KPC9zdmc+Cg==") !important;
-  --adwaita-icon-folder-visiting-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDMgMSBjIC0xLjY0NDUzMSAwIC0zIDEuMzU1NDY5IC0zIDMgdiA4IGMgMCAxLjY0NDUzMSAxLjM1NTQ2OSAzIDMgMyBoIDEwIGMgMS42NDQ1MzEgMCAzIC0xLjM1NTQ2OSAzIC0zIHYgLTYgYyAwIC0xLjY0NDUzMSAtMS4zNTU0NjkgLTMgLTMgLTMgaCAtMy41ODU5MzggbCAtMS43MDcwMzEgLTEuNzA3MDMxIGMgLTAuMTg3NSAtMC4xODc1IC0wLjQ0MTQwNiAtMC4yOTI5NjkgLTAuNzA3MDMxIC0wLjI5Mjk2OSB6IG0gMCAyIGggMy41ODU5MzggbCAxLjcwNzAzMSAxLjcwNzAzMSBjIDAuMTg3NSAwLjE4NzUgMC40NDE0MDYgMC4yOTI5NjkgMC43MDcwMzEgMC4yOTI5NjkgaCA0IGMgMC41NjI1IDAgMSAwLjQzNzUgMSAxIHYgNiBjIDAgMC41NjY0MDYgLTAuNDM3NSAxIC0xIDEgaCAtMTAgYyAtMC41NjI1IDAgLTEgLTAuNDMzNTk0IC0xIC0xIHYgLTggYyAwIC0wLjU2MjUgMC40Mzc1IC0xIDEgLTEgeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K") !important;
-  --adwaita-icon-go-down-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDEgNSBjIDAgLTAuMjY1NjI1IDAuMTA1NDY5IC0wLjUxOTUzMSAwLjI5Mjk2OSAtMC43MDcwMzEgYyAwLjM5MDYyNSAtMC4zOTA2MjUgMS4wMjM0MzcgLTAuMzkwNjI1IDEuNDE0MDYyIDAgbCA1LjI5Mjk2OSA1LjI5Mjk2OSBsIDUuMjkyOTY5IC01LjI5Mjk2OSBjIDAuMzkwNjI1IC0wLjM5MDYyNSAxLjAyMzQzNyAtMC4zOTA2MjUgMS40MTQwNjIgMCBjIDAuMTg3NSAwLjE4NzUgMC4yOTI5NjkgMC40NDE0MDYgMC4yOTI5NjkgMC43MDcwMzEgcyAtMC4xMDU0NjkgMC41MTk1MzEgLTAuMjkyOTY5IDAuNzA3MDMxIGwgLTYgNiBjIC0wLjM5MDYyNSAwLjM5MDYyNSAtMS4wMjM0MzcgMC4zOTA2MjUgLTEuNDE0MDYyIDAgbCAtNiAtNiBjIC0wLjE4NzUgLTAuMTg3NSAtMC4yOTI5NjkgLTAuNDQxNDA2IC0wLjI5Mjk2OSAtMC43MDcwMzEgeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K") !important;
-  --adwaita-icon-sidebar-show-right-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSIjMmUzNDM2Ij4KICAgICAgICA8cGF0aCBkPSJtIDkuNSAxNCB2IC0xMiBoIDUgdiAxMiB6IG0gMCAwIiBmaWxsLW9wYWNpdHk9IjAuMzQ5MDIiLz4KICAgICAgICA8cGF0aCBkPSJtIDEzIDEgYyAxLjY0NDUzMSAwIDMgMS4zNTU0NjkgMyAzIHYgOCBjIDAgMS42NDQ1MzEgLTEuMzU1NDY5IDMgLTMgMyBoIC0xMCBjIC0xLjY0NDUzMSAwIC0zIC0xLjM1NTQ2OSAtMyAtMyB2IC04IGMgMCAtMS42NDQ1MzEgMS4zNTU0NjkgLTMgMyAtMyB6IG0gMCAyIGggLTEwIGMgLTAuNTcwMzEyIDAgLTEgMC40Mjk2ODggLTEgMSB2IDggYyAwIDAuNTcwMzEyIDAuNDI5Njg4IDEgMSAxIGggMTAgYyAwLjU3MDMxMiAwIDEgLTAuNDI5Njg4IDEgLTEgdiAtOCBjIDAgLTAuNTcwMzEyIC0wLjQyOTY4OCAtMSAtMSAtMSB6IG0gMCAwIi8+CiAgICAgICAgPHBhdGggZD0ibSAxMCAyIGggLTEgdiAxMiBoIDEgeiBtIDAgMCIvPgogICAgPC9nPgo8L3N2Zz4K") !important;
-  --adwaita-icon-sidebar-show-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSIjMmUzNDM2Ij4KICAgICAgICA8cGF0aCBkPSJtIDYuNSAxNCB2IC0xMiBoIC01IHYgMTIgeiBtIDAgMCIgZmlsbC1vcGFjaXR5PSIwLjM0OTAyIi8+CiAgICAgICAgPHBhdGggZD0ibSAzIDEgYyAtMS42NDQ1MzEgMCAtMyAxLjM1NTQ2OSAtMyAzIHYgOCBjIDAgMS42NDQ1MzEgMS4zNTU0NjkgMyAzIDMgaCAxMCBjIDEuNjQ0NTMxIDAgMyAtMS4zNTU0NjkgMyAtMyB2IC04IGMgMCAtMS42NDQ1MzEgLTEuMzU1NDY5IC0zIC0zIC0zIHogbSAwIDIgaCAxMCBjIDAuNTcwMzEyIDAgMSAwLjQyOTY4OCAxIDEgdiA4IGMgMCAwLjU3MDMxMiAtMC40Mjk2ODggMSAtMSAxIGggLTEwIGMgLTAuNTcwMzEyIDAgLTEgLTAuNDI5Njg4IC0xIC0xIHYgLTggYyAwIC0wLjU3MDMxMiAwLjQyOTY4OCAtMSAxIC0xIHogbSAwIDAiLz4KICAgICAgICA8cGF0aCBkPSJtIDYgMiBoIDEgdiAxMiBoIC0xIHogbSAwIDAiLz4KICAgIDwvZz4KPC9zdmc+Cg==") !important;
-  --adwaita-icon-tab-new-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSIjMmUzNDM2Ij4KICAgICAgICA8cGF0aCBkPSJtIDMgMCBjIC0xLjY0NDUzMSAwIC0zIDEuMzU1NDY5IC0zIDMgdiAxMCBjIDAgMS42NDQ1MzEgMS4zNTU0NjkgMyAzIDMgaCAxMCBjIDEuNjQ0NTMxIDAgMyAtMS4zNTU0NjkgMyAtMyB2IC0xMCBjIDAgLTEuNjQ0NTMxIC0xLjM1NTQ2OSAtMyAtMyAtMyB6IG0gMCAyIGggMTAgYyAwLjU3MDMxMiAwIDEgMC40Mjk2ODggMSAxIHYgMTAgYyAwIDAuNTcwMzEyIC0wLjQyOTY4OCAxIC0xIDEgaCAtMTAgYyAtMC41NzAzMTIgMCAtMSAtMC40Mjk2ODggLTEgLTEgdiAtMTAgYyAwIC0wLjU3MDMxMiAwLjQyOTY4OCAtMSAxIC0xIHogbSAwIDAiLz4KICAgICAgICA8cGF0aCBkPSJtIDQgNyBoIDggdiAyIGggLTggeiBtIDAgMCIvPgogICAgICAgIDxwYXRoIGQ9Im0gOSA0IHYgOCBoIC0yIHYgLTggeiBtIDAgMCIvPgogICAgPC9nPgo8L3N2Zz4K") !important;
-  --adwaita-icon-view-more-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDcuOTk2MDk0IDAgYyAtMS4xMDU0NjkgMCAtMiAwLjg5NDUzMSAtMiAyIHMgMC44OTQ1MzEgMiAyIDIgYyAxLjEwMTU2MiAwIDIgLTAuODk0NTMxIDIgLTIgcyAtMC44OTg0MzggLTIgLTIgLTIgeiBtIDAgNiBjIC0xLjEwNTQ2OSAwIC0yIDAuODk0NTMxIC0yIDIgcyAwLjg5NDUzMSAyIDIgMiBjIDEuMTAxNTYyIDAgMiAtMC44OTQ1MzEgMiAtMiBzIC0wLjg5ODQzOCAtMiAtMiAtMiB6IG0gMCA2IGMgLTEuMTA1NDY5IDAgLTIgMC44OTQ1MzEgLTIgMiBzIDAuODk0NTMxIDIgMiAyIGMgMS4xMDE1NjIgMCAyIC0wLjg5NDUzMSAyIC0yIHMgLTAuODk4NDM4IC0yIC0yIC0yIHogbSAwIDAiIGZpbGw9IiMyZTM0MzYiLz4KPC9zdmc+Cg==") !important;
-  --adwaita-icon-window-close-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDQgNCBoIDEgaCAwLjAzMTI1IGMgMC4yNTM5MDYgMC4wMTE3MTkgMC41MTE3MTkgMC4xMjg5MDYgMC42ODc1IDAuMzEyNSBsIDIuMjgxMjUgMi4yODEyNSBsIDIuMzEyNSAtMi4yODEyNSBjIDAuMjY1NjI1IC0wLjIzMDQ2OSAwLjQ0NTMxMiAtMC4zMDQ2ODggMC42ODc1IC0wLjMxMjUgaCAxIHYgMSBjIDAgMC4yODUxNTYgLTAuMDM1MTU2IDAuNTUwNzgxIC0wLjI1IDAuNzUgbCAtMi4yODEyNSAyLjI4MTI1IGwgMi4yNSAyLjI1IGMgMC4xODc1IDAuMTg3NSAwLjI4MTI1IDAuNDUzMTI1IDAuMjgxMjUgMC43MTg3NSB2IDEgaCAtMSBjIC0wLjI2NTYyNSAwIC0wLjUzMTI1IC0wLjA5Mzc1IC0wLjcxODc1IC0wLjI4MTI1IGwgLTIuMjgxMjUgLTIuMjgxMjUgbCAtMi4yODEyNSAyLjI4MTI1IGMgLTAuMTg3NSAwLjE4NzUgLTAuNDUzMTI1IDAuMjgxMjUgLTAuNzE4NzUgMC4yODEyNSBoIC0xIHYgLTEgYyAwIC0wLjI2NTYyNSAwLjA5Mzc1IC0wLjUzMTI1IDAuMjgxMjUgLTAuNzE4NzUgbCAyLjI4MTI1IC0yLjI1IGwgLTIuMjgxMjUgLTIuMjgxMjUgYyAtMC4yMTA5MzggLTAuMTk1MzEyIC0wLjMwNDY4OCAtMC40Njg3NSAtMC4yODEyNSAtMC43NSB6IG0gMCAwIiBmaWxsPSIjMmUzNDM2Ii8+Cjwvc3ZnPgo=") !important;
-  --adwaita-icon-window-maximize-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDMuOTg4MjgxIDMuOTkyMTg4IHYgOC4wMTE3MTggaCA4LjAxMTcxOSB2IC04LjAxMTcxOCB6IG0gMiAyIGggNC4wMTE3MTkgdiA0LjAxMTcxOCBoIC00LjAxMTcxOSB6IG0gMCAwIiBmaWxsPSIjMmUzNDM2Ii8+Cjwvc3ZnPgo=") !important;
-  --adwaita-icon-window-minimize-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDQgMTAuMDA3ODEyIGggOCB2IDEuOTg4MjgyIGggLTggeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K") !important;
-  --adwaita-light-1: #ffffff !important;
-  --adwaita-light-2: #f6f5f4 !important;
-  --adwaita-light-3: #deddda !important;
-  --adwaita-light-4: #c0bfbc !important;
-  --adwaita-light-5: #9a9996 !important;
-  --adwaita-mod-background: #2e2e2e !important;
-  --adwaita-mod-background-active: #6e6e6e !important;
-  --adwaita-mod-background-focus: #444444 !important;
-  --adwaita-mod-background-hover: #4f4f4f !important;
-  --adwaita-mod-foreground: #929292 !important;
-  --adwaita-mod-foreground-focus: #ffffff !important;
-  --adwaita-mod-right-margin: 8px !important;
-  --adwaita-mod-scale: 1 !important;
-  --adwaita-orange-1: #ffbe6f !important;
-  --adwaita-orange-2: #ffa348 !important;
-  --adwaita-orange-3: #ff7800 !important;
-  --adwaita-orange-4: #e66100 !important;
-  --adwaita-orange-5: #c64600 !important;
-  --adwaita-popover-bg-color: #383838 !important;
-  --adwaita-popover-fg-color: #ffffff !important;
-  --adwaita-popover-shader-color: rgba(0, 0, 0, 0.36) !important;
-  --adwaita-purple-1: #dc8add !important;
-  --adwaita-purple-2: #c061cb !important;
-  --adwaita-purple-3: #9141ac !important;
-  --adwaita-purple-4: #813d9c !important;
-  --adwaita-purple-5: #613583 !important;
-  --adwaita-red-1: #f66151 !important;
-  --adwaita-red-2: #ed333b !important;
-  --adwaita-red-3: #e01b24 !important;
-  --adwaita-red-4: #c01c28 !important;
-  --adwaita-red-5: #a51d2d !important;
-  --adwaita-scrollbar-outline-color: rgba(0, 0, 0, 0.5) !important;
-  --adwaita-shade-color: rgba(0, 0, 0, 0.36) !important;
-  --adwaita-success-bg-color: #26a269 !important;
-  --adwaita-success-color: #8ff0a4 !important;
-  --adwaita-success-fg-color: #ffffff !important;
-  --adwaita-view-bg-color: #1e1e1e !important;
-  --adwaita-view-fg-color: #ffffff !important;
-  --adwaita-warning-bg-color: #cd9309 !important;
-  --adwaita-warning-color: #f8e45c !important;
-  --adwaita-warning-fg-color: rgba(0, 0, 0, 0.8) !important;
-  --adwaita-window-bg-color: #242424 !important;
-  --adwaita-window-fg-color: #ffffff !important;
-  --adwaita-yellow-1: #f9f06b !important;
-  --adwaita-yellow-2: #f8e45c !important;
-  --adwaita-yellow-3: #f6d32d !important;
-  --adwaita-yellow-4: #f5c211 !important;
-  --adwaita-yellow-5: #e5a50a !important;
-  --background-modifier-hover: #323232 !important;
-  --bases-table-header-background-hover: #323232 !important;
-  --bases-table-summary-background-hover: #323232 !important;
-  --bodyFont: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --caret-color: #ffffff !important;
-  --code-bracket-background: #323232 !important;
-  --code-normal: #ffffff !important;
-  --codeFont: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --dark: #ffffff !important;
-  --darkgray: #ffffff !important;
-  --file-header-font: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --file-header-font-size: 15px !important;
-  --flair-color: #ffffff !important;
-  --font-interface: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-interface-theme: Cantarell !important;
-  --font-ui-small: 15px !important;
-  --footnote-input-background-active: #323232 !important;
-  --frame-right-space: 120px !important;
-  --graph-text: #ffffff !important;
-  --gray: #ffffff !important;
-  --h1-weight: 900 !important;
-  --header-height: 46px !important;
-  --headerFont: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --highlight: #323232 !important;
-  --icon-color: #929292 !important;
-  --icon-color-focused: #929292 !important;
-  --icon-color-hover: #929292 !important;
-  --inline-title-weight: 900 !important;
-  --metadata-input-background-active: #323232 !important;
-  --metadata-input-font: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: #ffffff !important;
-  --metadata-label-background-active: #323232 !important;
-  --metadata-label-font: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-property-background-active: #323232 !important;
-  --metadata-sidebar-input-font-size: 15px !important;
-  --metadata-sidebar-label-font-size: 15px !important;
-  --nav-heading-color: #ffffff !important;
-  --nav-heading-color-hover: #ffffff !important;
-  --nav-item-background-active: #323232 !important;
-  --nav-item-background-hover: #323232 !important;
-  --nav-item-color-active: #ffffff !important;
-  --nav-item-color-hover: #ffffff !important;
-  --nav-item-color-selected: #ffffff !important;
-  --nav-item-size: 15px !important;
-  --pill-color-hover: #ffffff !important;
-  --setting-group-heading-color: #ffffff !important;
-  --tab-background-active: #464646 !important;
-  --tab-font-size: 15px !important;
-  --tab-max-width: none !important;
-  --tab-radius-active: 4px !important;
-  --tab-stacked-font-size: 15px !important;
-  --tab-stacked-header-width: 46px !important;
-  --tab-text-color: #929292 !important;
-  --tab-text-color-focused: #8a8a8a !important;
-  --tab-text-color-focused-active-current: #8a8a8a !important;
-  --tab-width: 10000px !important;
-  --table-header-color: #ffffff !important;
-  --text-normal: #ffffff !important;
-  --textHighlight: #323232 !important;
-  --titleFont: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: #242424 !important;
-  --titlebar-background-focused: #303030 !important;
-  --titlebar-height: 45px !important;
-  --titlebar-text-color: #919191 !important;
-  --titlebar-text-color-focused: #ffffff !important;
-  --traffic-lights-offset-x: 46px !important;
-  --traffic-lights-offset-y: 46px !important;
-  --vault-profile-color: #ffffff !important;
-  --vault-profile-color-hover: #ffffff !important;
-  --vault-profile-font-size: 15px !important;
-  --quartz-icon-color: currentColor !important;
+  --adwaita-accent-bg-color: #3584e4;
+  --adwaita-accent-color: #78aeed;
+  --adwaita-accent-fg-color: #ffffff;
+  --adwaita-blue-1: #99c1f1;
+  --adwaita-blue-2: #62a0ea;
+  --adwaita-blue-3: #3584e4;
+  --adwaita-blue-4: #1c71d8;
+  --adwaita-blue-5: #1a5fb4;
+  --adwaita-brown-1: #cdab8f;
+  --adwaita-brown-2: #b5835a;
+  --adwaita-brown-3: #986a44;
+  --adwaita-brown-4: #865e3c;
+  --adwaita-brown-5: #63452c;
+  --adwaita-card-bg-color: rgba(255, 255, 255, 0.08);
+  --adwaita-card-fg-color: #ffffff;
+  --adwaita-card-shade-color: rgba(0, 0, 0, 0.36);
+  --adwaita-dark-1: #77767b;
+  --adwaita-dark-2: #5e5c64;
+  --adwaita-dark-3: #3d3846;
+  --adwaita-dark-4: #241f31;
+  --adwaita-dark-5: #000000;
+  --adwaita-destructive-bg-color: #c01c28;
+  --adwaita-destructive-color: #ff7b63;
+  --adwaita-destructive-fg-color: #ffffff;
+  --adwaita-dialog-bg-color: #383838;
+  --adwaita-dialog-fg-color: #ffffff;
+  --adwaita-error-bg-color: #c01c28;
+  --adwaita-error-color: #ff7b63;
+  --adwaita-error-fg-color: #ffffff;
+  --adwaita-green-1: #8ff0a4;
+  --adwaita-green-2: #57e389;
+  --adwaita-green-3: #33d17a;
+  --adwaita-green-4: #2ec27e;
+  --adwaita-green-5: #26a269;
+  --adwaita-headerbar-backdrop-color: #242424;
+  --adwaita-headerbar-bg-color: #303030;
+  --adwaita-headerbar-border-color: #ffffff;
+  --adwaita-headerbar-fg-color: #ffffff;
+  --adwaita-headerbar-shade-color: rgba(0, 0, 0, 0.36);
+  --adwaita-icon-folder-saved-search-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDYuNjA1NDY5IDAuMDU4NTkzOCBjIC0zLjU3ODEyNSAwIC02LjUgMi45MjE4NzUyIC02LjUgNi41MDAwMDAyIHMgMi45MjE4NzUgNi40OTYwOTQgNi41IDYuNDk2MDk0IGMgMS40Mjk2ODcgMCAyLjc1MzkwNiAtMC40NjQ4NDQgMy44MjgxMjUgLTEuMjUzOTA3IGwgMi45NzI2NTYgMi45NzI2NTcgYyAwLjk1NzAzMSAwLjk0MTQwNiAyLjM2MzI4MSAtMC40OTYwOTQgMS40MDYyNSAtMS40Mzc1IGwgLTIuOTU3MDMxIC0yLjk1NzAzMiBjIDAuNzgxMjUgLTEuMDc0MjE4IDEuMjUgLTIuMzk0NTMxIDEuMjUgLTMuODIwMzEyIGMgMCAtMy41NzgxMjUgLTIuOTI1NzgxIC02LjUwMDAwMDIgLTYuNSAtNi41MDAwMDAyIHogbSAwIDIuMDAwMDAwMiBjIDIuNDk2MDkzIDAgNC41IDIuMDAzOTA2IDQuNSA0LjUgcyAtMi4wMDM5MDcgNC40OTYwOTQgLTQuNSA0LjQ5NjA5NCBjIC0yLjUgMCAtNC41IC0yIC00LjUgLTQuNDk2MDk0IHMgMiAtNC41IDQuNSAtNC41IHogbSAwIDAiIGZpbGw9IiMyZTM0MzYiLz4KPC9zdmc+Cg==");
+  --adwaita-icon-folder-visiting-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDMgMSBjIC0xLjY0NDUzMSAwIC0zIDEuMzU1NDY5IC0zIDMgdiA4IGMgMCAxLjY0NDUzMSAxLjM1NTQ2OSAzIDMgMyBoIDEwIGMgMS42NDQ1MzEgMCAzIC0xLjM1NTQ2OSAzIC0zIHYgLTYgYyAwIC0xLjY0NDUzMSAtMS4zNTU0NjkgLTMgLTMgLTMgaCAtMy41ODU5MzggbCAtMS43MDcwMzEgLTEuNzA3MDMxIGMgLTAuMTg3NSAtMC4xODc1IC0wLjQ0MTQwNiAtMC4yOTI5NjkgLTAuNzA3MDMxIC0wLjI5Mjk2OSB6IG0gMCAyIGggMy41ODU5MzggbCAxLjcwNzAzMSAxLjcwNzAzMSBjIDAuMTg3NSAwLjE4NzUgMC40NDE0MDYgMC4yOTI5NjkgMC43MDcwMzEgMC4yOTI5NjkgaCA0IGMgMC41NjI1IDAgMSAwLjQzNzUgMSAxIHYgNiBjIDAgMC41NjY0MDYgLTAuNDM3NSAxIC0xIDEgaCAtMTAgYyAtMC41NjI1IDAgLTEgLTAuNDMzNTk0IC0xIC0xIHYgLTggYyAwIC0wLjU2MjUgMC40Mzc1IC0xIDEgLTEgeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K");
+  --adwaita-icon-go-down-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDEgNSBjIDAgLTAuMjY1NjI1IDAuMTA1NDY5IC0wLjUxOTUzMSAwLjI5Mjk2OSAtMC43MDcwMzEgYyAwLjM5MDYyNSAtMC4zOTA2MjUgMS4wMjM0MzcgLTAuMzkwNjI1IDEuNDE0MDYyIDAgbCA1LjI5Mjk2OSA1LjI5Mjk2OSBsIDUuMjkyOTY5IC01LjI5Mjk2OSBjIDAuMzkwNjI1IC0wLjM5MDYyNSAxLjAyMzQzNyAtMC4zOTA2MjUgMS40MTQwNjIgMCBjIDAuMTg3NSAwLjE4NzUgMC4yOTI5NjkgMC40NDE0MDYgMC4yOTI5NjkgMC43MDcwMzEgcyAtMC4xMDU0NjkgMC41MTk1MzEgLTAuMjkyOTY5IDAuNzA3MDMxIGwgLTYgNiBjIC0wLjM5MDYyNSAwLjM5MDYyNSAtMS4wMjM0MzcgMC4zOTA2MjUgLTEuNDE0MDYyIDAgbCAtNiAtNiBjIC0wLjE4NzUgLTAuMTg3NSAtMC4yOTI5NjkgLTAuNDQxNDA2IC0wLjI5Mjk2OSAtMC43MDcwMzEgeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K");
+  --adwaita-icon-sidebar-show-right-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSIjMmUzNDM2Ij4KICAgICAgICA8cGF0aCBkPSJtIDkuNSAxNCB2IC0xMiBoIDUgdiAxMiB6IG0gMCAwIiBmaWxsLW9wYWNpdHk9IjAuMzQ5MDIiLz4KICAgICAgICA8cGF0aCBkPSJtIDEzIDEgYyAxLjY0NDUzMSAwIDMgMS4zNTU0NjkgMyAzIHYgOCBjIDAgMS42NDQ1MzEgLTEuMzU1NDY5IDMgLTMgMyBoIC0xMCBjIC0xLjY0NDUzMSAwIC0zIC0xLjM1NTQ2OSAtMyAtMyB2IC04IGMgMCAtMS42NDQ1MzEgMS4zNTU0NjkgLTMgMyAtMyB6IG0gMCAyIGggLTEwIGMgLTAuNTcwMzEyIDAgLTEgMC40Mjk2ODggLTEgMSB2IDggYyAwIDAuNTcwMzEyIDAuNDI5Njg4IDEgMSAxIGggMTAgYyAwLjU3MDMxMiAwIDEgLTAuNDI5Njg4IDEgLTEgdiAtOCBjIDAgLTAuNTcwMzEyIC0wLjQyOTY4OCAtMSAtMSAtMSB6IG0gMCAwIi8+CiAgICAgICAgPHBhdGggZD0ibSAxMCAyIGggLTEgdiAxMiBoIDEgeiBtIDAgMCIvPgogICAgPC9nPgo8L3N2Zz4K");
+  --adwaita-icon-sidebar-show-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSIjMmUzNDM2Ij4KICAgICAgICA8cGF0aCBkPSJtIDYuNSAxNCB2IC0xMiBoIC01IHYgMTIgeiBtIDAgMCIgZmlsbC1vcGFjaXR5PSIwLjM0OTAyIi8+CiAgICAgICAgPHBhdGggZD0ibSAzIDEgYyAtMS42NDQ1MzEgMCAtMyAxLjM1NTQ2OSAtMyAzIHYgOCBjIDAgMS42NDQ1MzEgMS4zNTU0NjkgMyAzIDMgaCAxMCBjIDEuNjQ0NTMxIDAgMyAtMS4zNTU0NjkgMyAtMyB2IC04IGMgMCAtMS42NDQ1MzEgLTEuMzU1NDY5IC0zIC0zIC0zIHogbSAwIDIgaCAxMCBjIDAuNTcwMzEyIDAgMSAwLjQyOTY4OCAxIDEgdiA4IGMgMCAwLjU3MDMxMiAtMC40Mjk2ODggMSAtMSAxIGggLTEwIGMgLTAuNTcwMzEyIDAgLTEgLTAuNDI5Njg4IC0xIC0xIHYgLTggYyAwIC0wLjU3MDMxMiAwLjQyOTY4OCAtMSAxIC0xIHogbSAwIDAiLz4KICAgICAgICA8cGF0aCBkPSJtIDYgMiBoIDEgdiAxMiBoIC0xIHogbSAwIDAiLz4KICAgIDwvZz4KPC9zdmc+Cg==");
+  --adwaita-icon-tab-new-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSIjMmUzNDM2Ij4KICAgICAgICA8cGF0aCBkPSJtIDMgMCBjIC0xLjY0NDUzMSAwIC0zIDEuMzU1NDY5IC0zIDMgdiAxMCBjIDAgMS42NDQ1MzEgMS4zNTU0NjkgMyAzIDMgaCAxMCBjIDEuNjQ0NTMxIDAgMyAtMS4zNTU0NjkgMyAtMyB2IC0xMCBjIDAgLTEuNjQ0NTMxIC0xLjM1NTQ2OSAtMyAtMyAtMyB6IG0gMCAyIGggMTAgYyAwLjU3MDMxMiAwIDEgMC40Mjk2ODggMSAxIHYgMTAgYyAwIDAuNTcwMzEyIC0wLjQyOTY4OCAxIC0xIDEgaCAtMTAgYyAtMC41NzAzMTIgMCAtMSAtMC40Mjk2ODggLTEgLTEgdiAtMTAgYyAwIC0wLjU3MDMxMiAwLjQyOTY4OCAtMSAxIC0xIHogbSAwIDAiLz4KICAgICAgICA8cGF0aCBkPSJtIDQgNyBoIDggdiAyIGggLTggeiBtIDAgMCIvPgogICAgICAgIDxwYXRoIGQ9Im0gOSA0IHYgOCBoIC0yIHYgLTggeiBtIDAgMCIvPgogICAgPC9nPgo8L3N2Zz4K");
+  --adwaita-icon-view-more-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDcuOTk2MDk0IDAgYyAtMS4xMDU0NjkgMCAtMiAwLjg5NDUzMSAtMiAyIHMgMC44OTQ1MzEgMiAyIDIgYyAxLjEwMTU2MiAwIDIgLTAuODk0NTMxIDIgLTIgcyAtMC44OTg0MzggLTIgLTIgLTIgeiBtIDAgNiBjIC0xLjEwNTQ2OSAwIC0yIDAuODk0NTMxIC0yIDIgcyAwLjg5NDUzMSAyIDIgMiBjIDEuMTAxNTYyIDAgMiAtMC44OTQ1MzEgMiAtMiBzIC0wLjg5ODQzOCAtMiAtMiAtMiB6IG0gMCA2IGMgLTEuMTA1NDY5IDAgLTIgMC44OTQ1MzEgLTIgMiBzIDAuODk0NTMxIDIgMiAyIGMgMS4xMDE1NjIgMCAyIC0wLjg5NDUzMSAyIC0yIHMgLTAuODk4NDM4IC0yIC0yIC0yIHogbSAwIDAiIGZpbGw9IiMyZTM0MzYiLz4KPC9zdmc+Cg==");
+  --adwaita-icon-window-close-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDQgNCBoIDEgaCAwLjAzMTI1IGMgMC4yNTM5MDYgMC4wMTE3MTkgMC41MTE3MTkgMC4xMjg5MDYgMC42ODc1IDAuMzEyNSBsIDIuMjgxMjUgMi4yODEyNSBsIDIuMzEyNSAtMi4yODEyNSBjIDAuMjY1NjI1IC0wLjIzMDQ2OSAwLjQ0NTMxMiAtMC4zMDQ2ODggMC42ODc1IC0wLjMxMjUgaCAxIHYgMSBjIDAgMC4yODUxNTYgLTAuMDM1MTU2IDAuNTUwNzgxIC0wLjI1IDAuNzUgbCAtMi4yODEyNSAyLjI4MTI1IGwgMi4yNSAyLjI1IGMgMC4xODc1IDAuMTg3NSAwLjI4MTI1IDAuNDUzMTI1IDAuMjgxMjUgMC43MTg3NSB2IDEgaCAtMSBjIC0wLjI2NTYyNSAwIC0wLjUzMTI1IC0wLjA5Mzc1IC0wLjcxODc1IC0wLjI4MTI1IGwgLTIuMjgxMjUgLTIuMjgxMjUgbCAtMi4yODEyNSAyLjI4MTI1IGMgLTAuMTg3NSAwLjE4NzUgLTAuNDUzMTI1IDAuMjgxMjUgLTAuNzE4NzUgMC4yODEyNSBoIC0xIHYgLTEgYyAwIC0wLjI2NTYyNSAwLjA5Mzc1IC0wLjUzMTI1IDAuMjgxMjUgLTAuNzE4NzUgbCAyLjI4MTI1IC0yLjI1IGwgLTIuMjgxMjUgLTIuMjgxMjUgYyAtMC4yMTA5MzggLTAuMTk1MzEyIC0wLjMwNDY4OCAtMC40Njg3NSAtMC4yODEyNSAtMC43NSB6IG0gMCAwIiBmaWxsPSIjMmUzNDM2Ii8+Cjwvc3ZnPgo=");
+  --adwaita-icon-window-maximize-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDMuOTg4MjgxIDMuOTkyMTg4IHYgOC4wMTE3MTggaCA4LjAxMTcxOSB2IC04LjAxMTcxOCB6IG0gMiAyIGggNC4wMTE3MTkgdiA0LjAxMTcxOCBoIC00LjAxMTcxOSB6IG0gMCAwIiBmaWxsPSIjMmUzNDM2Ii8+Cjwvc3ZnPgo=");
+  --adwaita-icon-window-minimize-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDQgMTAuMDA3ODEyIGggOCB2IDEuOTg4MjgyIGggLTggeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K");
+  --adwaita-light-1: #ffffff;
+  --adwaita-light-2: #f6f5f4;
+  --adwaita-light-3: #deddda;
+  --adwaita-light-4: #c0bfbc;
+  --adwaita-light-5: #9a9996;
+  --adwaita-mod-background: #2e2e2e;
+  --adwaita-mod-background-active: #6e6e6e;
+  --adwaita-mod-background-focus: #444444;
+  --adwaita-mod-background-hover: #4f4f4f;
+  --adwaita-mod-foreground: #929292;
+  --adwaita-mod-foreground-focus: #ffffff;
+  --adwaita-mod-right-margin: 8px;
+  --adwaita-mod-scale: 1;
+  --adwaita-orange-1: #ffbe6f;
+  --adwaita-orange-2: #ffa348;
+  --adwaita-orange-3: #ff7800;
+  --adwaita-orange-4: #e66100;
+  --adwaita-orange-5: #c64600;
+  --adwaita-popover-bg-color: #383838;
+  --adwaita-popover-fg-color: #ffffff;
+  --adwaita-popover-shader-color: rgba(0, 0, 0, 0.36);
+  --adwaita-purple-1: #dc8add;
+  --adwaita-purple-2: #c061cb;
+  --adwaita-purple-3: #9141ac;
+  --adwaita-purple-4: #813d9c;
+  --adwaita-purple-5: #613583;
+  --adwaita-red-1: #f66151;
+  --adwaita-red-2: #ed333b;
+  --adwaita-red-3: #e01b24;
+  --adwaita-red-4: #c01c28;
+  --adwaita-red-5: #a51d2d;
+  --adwaita-scrollbar-outline-color: rgba(0, 0, 0, 0.5);
+  --adwaita-shade-color: rgba(0, 0, 0, 0.36);
+  --adwaita-success-bg-color: #26a269;
+  --adwaita-success-color: #8ff0a4;
+  --adwaita-success-fg-color: #ffffff;
+  --adwaita-view-bg-color: #1e1e1e;
+  --adwaita-view-fg-color: #ffffff;
+  --adwaita-warning-bg-color: #cd9309;
+  --adwaita-warning-color: #f8e45c;
+  --adwaita-warning-fg-color: rgba(0, 0, 0, 0.8);
+  --adwaita-window-bg-color: #242424;
+  --adwaita-window-fg-color: #ffffff;
+  --adwaita-yellow-1: #f9f06b;
+  --adwaita-yellow-2: #f8e45c;
+  --adwaita-yellow-3: #f6d32d;
+  --adwaita-yellow-4: #f5c211;
+  --adwaita-yellow-5: #e5a50a;
+  --background-modifier-hover: #323232;
+  --bases-table-header-background-hover: #323232;
+  --bases-table-summary-background-hover: #323232;
+  --bodyFont: var(--font-interface, Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --caret-color: #ffffff;
+  --code-bracket-background: #323232;
+  --code-normal: #ffffff;
+  --codeFont: var(--font-interface, Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --dark: var(--text-normal, #ffffff);
+  --darkgray: var(--text-normal, #ffffff);
+  --file-header-font: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --file-header-font-size: 15px;
+  --flair-color: #ffffff;
+  --font-interface: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-interface-theme: Cantarell;
+  --font-ui-small: 15px;
+  --footnote-input-background-active: #323232;
+  --frame-right-space: 120px;
+  --graph-text: #ffffff;
+  --gray: var(--text-normal, #ffffff);
+  --h1-weight: 900;
+  --header-height: 46px;
+  --headerFont: var(--font-interface, Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --highlight: var(--background-modifier-hover, #323232);
+  --icon-color: #929292;
+  --icon-color-focused: #929292;
+  --icon-color-hover: #929292;
+  --inline-title-weight: 900;
+  --metadata-input-background-active: #323232;
+  --metadata-input-font: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-input-text-color: #ffffff;
+  --metadata-label-background-active: #323232;
+  --metadata-label-font: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-property-background-active: #323232;
+  --metadata-sidebar-input-font-size: 15px;
+  --metadata-sidebar-label-font-size: 15px;
+  --nav-heading-color: #ffffff;
+  --nav-heading-color-hover: #ffffff;
+  --nav-item-background-active: #323232;
+  --nav-item-background-hover: #323232;
+  --nav-item-color-active: #ffffff;
+  --nav-item-color-hover: #ffffff;
+  --nav-item-color-selected: #ffffff;
+  --nav-item-size: 15px;
+  --pill-color-hover: #ffffff;
+  --setting-group-heading-color: #ffffff;
+  --tab-background-active: #464646;
+  --tab-font-size: 15px;
+  --tab-max-width: none;
+  --tab-radius-active: 4px;
+  --tab-stacked-font-size: 15px;
+  --tab-stacked-header-width: 46px;
+  --tab-text-color: #929292;
+  --tab-text-color-focused: #8a8a8a;
+  --tab-text-color-focused-active-current: #8a8a8a;
+  --tab-width: 10000px;
+  --table-header-color: #ffffff;
+  --text-normal: #ffffff;
+  --textHighlight: var(--background-modifier-hover, #323232);
+  --titleFont: var(--font-interface, Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --titlebar-background: #242424;
+  --titlebar-background-focused: #303030;
+  --titlebar-height: 45px;
+  --titlebar-text-color: #919191;
+  --titlebar-text-color-focused: #ffffff;
+  --traffic-lights-offset-x: 46px;
+  --traffic-lights-offset-y: 46px;
+  --vault-profile-color: #ffffff;
+  --vault-profile-color-hover: #ffffff;
+  --vault-profile-font-size: 15px;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -1377,179 +1378,179 @@ html[saved-theme="dark"] body sup {
   },
   light: {
     base: `:root:root {
-  --adwaita-accent-bg-color: #3584e4 !important;
-  --adwaita-accent-color: #1c71d8 !important;
-  --adwaita-accent-fg-color: #ffffff !important;
-  --adwaita-blue-1: #99c1f1 !important;
-  --adwaita-blue-2: #62a0ea !important;
-  --adwaita-blue-3: #3584e4 !important;
-  --adwaita-blue-4: #1c71d8 !important;
-  --adwaita-blue-5: #1a5fb4 !important;
-  --adwaita-brown-1: #cdab8f !important;
-  --adwaita-brown-2: #b5835a !important;
-  --adwaita-brown-3: #986a44 !important;
-  --adwaita-brown-4: #865e3c !important;
-  --adwaita-brown-5: #63452c !important;
-  --adwaita-card-bg-color: #ffffff !important;
-  --adwaita-card-fg-color: rgba(0, 0, 0, 0.8) !important;
-  --adwaita-card-shade-color: rgba(0, 0, 0, 0.07) !important;
-  --adwaita-dark-1: #77767b !important;
-  --adwaita-dark-2: #5e5c64 !important;
-  --adwaita-dark-3: #3d3846 !important;
-  --adwaita-dark-4: #241f31 !important;
-  --adwaita-dark-5: #000000 !important;
-  --adwaita-destructive-bg-color: #e01b24 !important;
-  --adwaita-destructive-color: #c01c28 !important;
-  --adwaita-destructive-fg-color: #ffffff !important;
-  --adwaita-dialog-bg-color: #ffffff !important;
-  --adwaita-dialog-fg-color: rgba(0, 0, 0, 0.8) !important;
-  --adwaita-error-bg-color: #e01b24 !important;
-  --adwaita-error-color: #c01c28 !important;
-  --adwaita-error-fg-color: #ffffff !important;
-  --adwaita-green-1: #8ff0a4 !important;
-  --adwaita-green-2: #57e389 !important;
-  --adwaita-green-3: #33d17a !important;
-  --adwaita-green-4: #2ec27e !important;
-  --adwaita-green-5: #26a269 !important;
-  --adwaita-headerbar-backdrop-color: #fafafa !important;
-  --adwaita-headerbar-bg-color: #ffffff !important;
-  --adwaita-headerbar-border-color: rgba(0, 0, 0, 0.8) !important;
-  --adwaita-headerbar-fg-color: rgba(0, 0, 0, 0.8) !important;
-  --adwaita-headerbar-shade-color: rgba(0, 0, 0, 0.12) !important;
-  --adwaita-icon-folder-saved-search-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDYuNjA1NDY5IDAuMDU4NTkzOCBjIC0zLjU3ODEyNSAwIC02LjUgMi45MjE4NzUyIC02LjUgNi41MDAwMDAyIHMgMi45MjE4NzUgNi40OTYwOTQgNi41IDYuNDk2MDk0IGMgMS40Mjk2ODcgMCAyLjc1MzkwNiAtMC40NjQ4NDQgMy44MjgxMjUgLTEuMjUzOTA3IGwgMi45NzI2NTYgMi45NzI2NTcgYyAwLjk1NzAzMSAwLjk0MTQwNiAyLjM2MzI4MSAtMC40OTYwOTQgMS40MDYyNSAtMS40Mzc1IGwgLTIuOTU3MDMxIC0yLjk1NzAzMiBjIDAuNzgxMjUgLTEuMDc0MjE4IDEuMjUgLTIuMzk0NTMxIDEuMjUgLTMuODIwMzEyIGMgMCAtMy41NzgxMjUgLTIuOTI1NzgxIC02LjUwMDAwMDIgLTYuNSAtNi41MDAwMDAyIHogbSAwIDIuMDAwMDAwMiBjIDIuNDk2MDkzIDAgNC41IDIuMDAzOTA2IDQuNSA0LjUgcyAtMi4wMDM5MDcgNC40OTYwOTQgLTQuNSA0LjQ5NjA5NCBjIC0yLjUgMCAtNC41IC0yIC00LjUgLTQuNDk2MDk0IHMgMiAtNC41IDQuNSAtNC41IHogbSAwIDAiIGZpbGw9IiMyZTM0MzYiLz4KPC9zdmc+Cg==") !important;
-  --adwaita-icon-folder-visiting-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDMgMSBjIC0xLjY0NDUzMSAwIC0zIDEuMzU1NDY5IC0zIDMgdiA4IGMgMCAxLjY0NDUzMSAxLjM1NTQ2OSAzIDMgMyBoIDEwIGMgMS42NDQ1MzEgMCAzIC0xLjM1NTQ2OSAzIC0zIHYgLTYgYyAwIC0xLjY0NDUzMSAtMS4zNTU0NjkgLTMgLTMgLTMgaCAtMy41ODU5MzggbCAtMS43MDcwMzEgLTEuNzA3MDMxIGMgLTAuMTg3NSAtMC4xODc1IC0wLjQ0MTQwNiAtMC4yOTI5NjkgLTAuNzA3MDMxIC0wLjI5Mjk2OSB6IG0gMCAyIGggMy41ODU5MzggbCAxLjcwNzAzMSAxLjcwNzAzMSBjIDAuMTg3NSAwLjE4NzUgMC40NDE0MDYgMC4yOTI5NjkgMC43MDcwMzEgMC4yOTI5NjkgaCA0IGMgMC41NjI1IDAgMSAwLjQzNzUgMSAxIHYgNiBjIDAgMC41NjY0MDYgLTAuNDM3NSAxIC0xIDEgaCAtMTAgYyAtMC41NjI1IDAgLTEgLTAuNDMzNTk0IC0xIC0xIHYgLTggYyAwIC0wLjU2MjUgMC40Mzc1IC0xIDEgLTEgeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K") !important;
-  --adwaita-icon-go-down-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDEgNSBjIDAgLTAuMjY1NjI1IDAuMTA1NDY5IC0wLjUxOTUzMSAwLjI5Mjk2OSAtMC43MDcwMzEgYyAwLjM5MDYyNSAtMC4zOTA2MjUgMS4wMjM0MzcgLTAuMzkwNjI1IDEuNDE0MDYyIDAgbCA1LjI5Mjk2OSA1LjI5Mjk2OSBsIDUuMjkyOTY5IC01LjI5Mjk2OSBjIDAuMzkwNjI1IC0wLjM5MDYyNSAxLjAyMzQzNyAtMC4zOTA2MjUgMS40MTQwNjIgMCBjIDAuMTg3NSAwLjE4NzUgMC4yOTI5NjkgMC40NDE0MDYgMC4yOTI5NjkgMC43MDcwMzEgcyAtMC4xMDU0NjkgMC41MTk1MzEgLTAuMjkyOTY5IDAuNzA3MDMxIGwgLTYgNiBjIC0wLjM5MDYyNSAwLjM5MDYyNSAtMS4wMjM0MzcgMC4zOTA2MjUgLTEuNDE0MDYyIDAgbCAtNiAtNiBjIC0wLjE4NzUgLTAuMTg3NSAtMC4yOTI5NjkgLTAuNDQxNDA2IC0wLjI5Mjk2OSAtMC43MDcwMzEgeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K") !important;
-  --adwaita-icon-sidebar-show-right-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSIjMmUzNDM2Ij4KICAgICAgICA8cGF0aCBkPSJtIDkuNSAxNCB2IC0xMiBoIDUgdiAxMiB6IG0gMCAwIiBmaWxsLW9wYWNpdHk9IjAuMzQ5MDIiLz4KICAgICAgICA8cGF0aCBkPSJtIDEzIDEgYyAxLjY0NDUzMSAwIDMgMS4zNTU0NjkgMyAzIHYgOCBjIDAgMS42NDQ1MzEgLTEuMzU1NDY5IDMgLTMgMyBoIC0xMCBjIC0xLjY0NDUzMSAwIC0zIC0xLjM1NTQ2OSAtMyAtMyB2IC04IGMgMCAtMS42NDQ1MzEgMS4zNTU0NjkgLTMgMyAtMyB6IG0gMCAyIGggLTEwIGMgLTAuNTcwMzEyIDAgLTEgMC40Mjk2ODggLTEgMSB2IDggYyAwIDAuNTcwMzEyIDAuNDI5Njg4IDEgMSAxIGggMTAgYyAwLjU3MDMxMiAwIDEgLTAuNDI5Njg4IDEgLTEgdiAtOCBjIDAgLTAuNTcwMzEyIC0wLjQyOTY4OCAtMSAtMSAtMSB6IG0gMCAwIi8+CiAgICAgICAgPHBhdGggZD0ibSAxMCAyIGggLTEgdiAxMiBoIDEgeiBtIDAgMCIvPgogICAgPC9nPgo8L3N2Zz4K") !important;
-  --adwaita-icon-sidebar-show-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSIjMmUzNDM2Ij4KICAgICAgICA8cGF0aCBkPSJtIDYuNSAxNCB2IC0xMiBoIC01IHYgMTIgeiBtIDAgMCIgZmlsbC1vcGFjaXR5PSIwLjM0OTAyIi8+CiAgICAgICAgPHBhdGggZD0ibSAzIDEgYyAtMS42NDQ1MzEgMCAtMyAxLjM1NTQ2OSAtMyAzIHYgOCBjIDAgMS42NDQ1MzEgMS4zNTU0NjkgMyAzIDMgaCAxMCBjIDEuNjQ0NTMxIDAgMyAtMS4zNTU0NjkgMyAtMyB2IC04IGMgMCAtMS42NDQ1MzEgLTEuMzU1NDY5IC0zIC0zIC0zIHogbSAwIDIgaCAxMCBjIDAuNTcwMzEyIDAgMSAwLjQyOTY4OCAxIDEgdiA4IGMgMCAwLjU3MDMxMiAtMC40Mjk2ODggMSAtMSAxIGggLTEwIGMgLTAuNTcwMzEyIDAgLTEgLTAuNDI5Njg4IC0xIC0xIHYgLTggYyAwIC0wLjU3MDMxMiAwLjQyOTY4OCAtMSAxIC0xIHogbSAwIDAiLz4KICAgICAgICA8cGF0aCBkPSJtIDYgMiBoIDEgdiAxMiBoIC0xIHogbSAwIDAiLz4KICAgIDwvZz4KPC9zdmc+Cg==") !important;
-  --adwaita-icon-tab-new-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSIjMmUzNDM2Ij4KICAgICAgICA8cGF0aCBkPSJtIDMgMCBjIC0xLjY0NDUzMSAwIC0zIDEuMzU1NDY5IC0zIDMgdiAxMCBjIDAgMS42NDQ1MzEgMS4zNTU0NjkgMyAzIDMgaCAxMCBjIDEuNjQ0NTMxIDAgMyAtMS4zNTU0NjkgMyAtMyB2IC0xMCBjIDAgLTEuNjQ0NTMxIC0xLjM1NTQ2OSAtMyAtMyAtMyB6IG0gMCAyIGggMTAgYyAwLjU3MDMxMiAwIDEgMC40Mjk2ODggMSAxIHYgMTAgYyAwIDAuNTcwMzEyIC0wLjQyOTY4OCAxIC0xIDEgaCAtMTAgYyAtMC41NzAzMTIgMCAtMSAtMC40Mjk2ODggLTEgLTEgdiAtMTAgYyAwIC0wLjU3MDMxMiAwLjQyOTY4OCAtMSAxIC0xIHogbSAwIDAiLz4KICAgICAgICA8cGF0aCBkPSJtIDQgNyBoIDggdiAyIGggLTggeiBtIDAgMCIvPgogICAgICAgIDxwYXRoIGQ9Im0gOSA0IHYgOCBoIC0yIHYgLTggeiBtIDAgMCIvPgogICAgPC9nPgo8L3N2Zz4K") !important;
-  --adwaita-icon-view-more-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDcuOTk2MDk0IDAgYyAtMS4xMDU0NjkgMCAtMiAwLjg5NDUzMSAtMiAyIHMgMC44OTQ1MzEgMiAyIDIgYyAxLjEwMTU2MiAwIDIgLTAuODk0NTMxIDIgLTIgcyAtMC44OTg0MzggLTIgLTIgLTIgeiBtIDAgNiBjIC0xLjEwNTQ2OSAwIC0yIDAuODk0NTMxIC0yIDIgcyAwLjg5NDUzMSAyIDIgMiBjIDEuMTAxNTYyIDAgMiAtMC44OTQ1MzEgMiAtMiBzIC0wLjg5ODQzOCAtMiAtMiAtMiB6IG0gMCA2IGMgLTEuMTA1NDY5IDAgLTIgMC44OTQ1MzEgLTIgMiBzIDAuODk0NTMxIDIgMiAyIGMgMS4xMDE1NjIgMCAyIC0wLjg5NDUzMSAyIC0yIHMgLTAuODk4NDM4IC0yIC0yIC0yIHogbSAwIDAiIGZpbGw9IiMyZTM0MzYiLz4KPC9zdmc+Cg==") !important;
-  --adwaita-icon-window-close-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDQgNCBoIDEgaCAwLjAzMTI1IGMgMC4yNTM5MDYgMC4wMTE3MTkgMC41MTE3MTkgMC4xMjg5MDYgMC42ODc1IDAuMzEyNSBsIDIuMjgxMjUgMi4yODEyNSBsIDIuMzEyNSAtMi4yODEyNSBjIDAuMjY1NjI1IC0wLjIzMDQ2OSAwLjQ0NTMxMiAtMC4zMDQ2ODggMC42ODc1IC0wLjMxMjUgaCAxIHYgMSBjIDAgMC4yODUxNTYgLTAuMDM1MTU2IDAuNTUwNzgxIC0wLjI1IDAuNzUgbCAtMi4yODEyNSAyLjI4MTI1IGwgMi4yNSAyLjI1IGMgMC4xODc1IDAuMTg3NSAwLjI4MTI1IDAuNDUzMTI1IDAuMjgxMjUgMC43MTg3NSB2IDEgaCAtMSBjIC0wLjI2NTYyNSAwIC0wLjUzMTI1IC0wLjA5Mzc1IC0wLjcxODc1IC0wLjI4MTI1IGwgLTIuMjgxMjUgLTIuMjgxMjUgbCAtMi4yODEyNSAyLjI4MTI1IGMgLTAuMTg3NSAwLjE4NzUgLTAuNDUzMTI1IDAuMjgxMjUgLTAuNzE4NzUgMC4yODEyNSBoIC0xIHYgLTEgYyAwIC0wLjI2NTYyNSAwLjA5Mzc1IC0wLjUzMTI1IDAuMjgxMjUgLTAuNzE4NzUgbCAyLjI4MTI1IC0yLjI1IGwgLTIuMjgxMjUgLTIuMjgxMjUgYyAtMC4yMTA5MzggLTAuMTk1MzEyIC0wLjMwNDY4OCAtMC40Njg3NSAtMC4yODEyNSAtMC43NSB6IG0gMCAwIiBmaWxsPSIjMmUzNDM2Ii8+Cjwvc3ZnPgo=") !important;
-  --adwaita-icon-window-maximize-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDMuOTg4MjgxIDMuOTkyMTg4IHYgOC4wMTE3MTggaCA4LjAxMTcxOSB2IC04LjAxMTcxOCB6IG0gMiAyIGggNC4wMTE3MTkgdiA0LjAxMTcxOCBoIC00LjAxMTcxOSB6IG0gMCAwIiBmaWxsPSIjMmUzNDM2Ii8+Cjwvc3ZnPgo=") !important;
-  --adwaita-icon-window-minimize-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDQgMTAuMDA3ODEyIGggOCB2IDEuOTg4MjgyIGggLTggeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K") !important;
-  --adwaita-light-1: #ffffff !important;
-  --adwaita-light-2: #f6f5f4 !important;
-  --adwaita-light-3: #deddda !important;
-  --adwaita-light-4: #c0bfbc !important;
-  --adwaita-light-5: #9a9996 !important;
-  --adwaita-mod-background: #efefef !important;
-  --adwaita-mod-background-active: #b3b3b3 !important;
-  --adwaita-mod-background-focus: #d8d8d8 !important;
-  --adwaita-mod-background-hover: #cfcfcf !important;
-  --adwaita-mod-foreground: #949494 !important;
-  --adwaita-mod-foreground-focus: rgba(0, 0, 0, 0.8) !important;
-  --adwaita-mod-right-margin: 8px !important;
-  --adwaita-mod-scale: 1 !important;
-  --adwaita-orange-1: #ffbe6f !important;
-  --adwaita-orange-2: #ffa348 !important;
-  --adwaita-orange-3: #ff7800 !important;
-  --adwaita-orange-4: #e66100 !important;
-  --adwaita-orange-5: #c64600 !important;
-  --adwaita-popover-bg-color: #fafafa !important;
-  --adwaita-popover-fg-color: rgba(0, 0, 0, 0.8) !important;
-  --adwaita-popover-shader-color: rgba(0, 0, 0, 0.07) !important;
-  --adwaita-purple-1: #dc8add !important;
-  --adwaita-purple-2: #c061cb !important;
-  --adwaita-purple-3: #9141ac !important;
-  --adwaita-purple-4: #813d9c !important;
-  --adwaita-purple-5: #613583 !important;
-  --adwaita-red-1: #f66151 !important;
-  --adwaita-red-2: #ed333b !important;
-  --adwaita-red-3: #e01b24 !important;
-  --adwaita-red-4: #c01c28 !important;
-  --adwaita-red-5: #a51d2d !important;
-  --adwaita-scrollbar-outline-color: #ffffff !important;
-  --adwaita-shade-color: rgba(0, 0, 0, 0.07) !important;
-  --adwaita-success-bg-color: #2ec27e !important;
-  --adwaita-success-color: #1b8553 !important;
-  --adwaita-success-fg-color: #ffffff !important;
-  --adwaita-view-bg-color: #ffffff !important;
-  --adwaita-view-fg-color: rgba(0, 0, 0, 0.8) !important;
-  --adwaita-warning-bg-color: #e5a50a !important;
-  --adwaita-warning-color: #9c6e03 !important;
-  --adwaita-warning-fg-color: rgba(0, 0, 0, 0.8) !important;
-  --adwaita-window-bg-color: #fafafa !important;
-  --adwaita-window-fg-color: rgba(0, 0, 0, 0.8) !important;
-  --adwaita-yellow-1: #f9f06b !important;
-  --adwaita-yellow-2: #f8e45c !important;
-  --adwaita-yellow-3: #f6d32d !important;
-  --adwaita-yellow-4: #f5c211 !important;
-  --adwaita-yellow-5: #e5a50a !important;
-  --background-modifier-hover: #f0f0f0 !important;
-  --bases-table-header-background-hover: #f0f0f0 !important;
-  --bases-table-summary-background-hover: #f0f0f0 !important;
-  --bodyFont: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --caret-color: rgba(0, 0, 0, 0.8) !important;
-  --code-bracket-background: #f0f0f0 !important;
-  --code-normal: rgba(0, 0, 0, 0.8) !important;
-  --codeFont: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --dark: rgba(0, 0, 0, 0.8) !important;
-  --darkgray: rgba(0, 0, 0, 0.8) !important;
-  --file-header-font: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --file-header-font-size: 15px !important;
-  --flair-color: rgba(0, 0, 0, 0.8) !important;
-  --font-interface: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-interface-theme: Cantarell !important;
-  --font-ui-small: 15px !important;
-  --footnote-input-background-active: #f0f0f0 !important;
-  --frame-right-space: 120px !important;
-  --graph-text: rgba(0, 0, 0, 0.8) !important;
-  --gray: rgba(0, 0, 0, 0.8) !important;
-  --h1-weight: 900 !important;
-  --header-height: 46px !important;
-  --headerFont: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --highlight: #f0f0f0 !important;
-  --icon-color: #939393 !important;
-  --icon-color-focused: #939393 !important;
-  --icon-color-hover: #939393 !important;
-  --inline-title-weight: 900 !important;
-  --metadata-input-background-active: #f0f0f0 !important;
-  --metadata-input-font: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: rgba(0, 0, 0, 0.8) !important;
-  --metadata-label-background-active: #f0f0f0 !important;
-  --metadata-label-font: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-property-background-active: #f0f0f0 !important;
-  --metadata-sidebar-input-font-size: 15px !important;
-  --metadata-sidebar-label-font-size: 15px !important;
-  --nav-heading-color: rgba(0, 0, 0, 0.8) !important;
-  --nav-heading-color-hover: rgba(0, 0, 0, 0.8) !important;
-  --nav-item-background-active: #f0f0f0 !important;
-  --nav-item-background-hover: #f0f0f0 !important;
-  --nav-item-color-active: rgba(0, 0, 0, 0.8) !important;
-  --nav-item-color-hover: rgba(0, 0, 0, 0.8) !important;
-  --nav-item-color-selected: rgba(0, 0, 0, 0.8) !important;
-  --nav-item-size: 15px !important;
-  --pill-color-hover: rgba(0, 0, 0, 0.8) !important;
-  --setting-group-heading-color: rgba(0, 0, 0, 0.8) !important;
-  --tab-background-active: #d8d8d8 !important;
-  --tab-font-size: 15px !important;
-  --tab-max-width: none !important;
-  --tab-radius-active: 4px !important;
-  --tab-stacked-font-size: 15px !important;
-  --tab-stacked-header-width: 46px !important;
-  --tab-text-color: #939393 !important;
-  --tab-text-color-focused: #939393 !important;
-  --tab-text-color-focused-active-current: #939393 !important;
-  --tab-width: 10000px !important;
-  --table-header-color: rgba(0, 0, 0, 0.8) !important;
-  --text-normal: rgba(0, 0, 0, 0.8) !important;
-  --textHighlight: #f0f0f0 !important;
-  --titleFont: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: #fafafa !important;
-  --titlebar-background-focused: #ffffff !important;
-  --titlebar-height: 45px !important;
-  --titlebar-text-color: #8c8c8c !important;
-  --titlebar-text-color-focused: rgba(0, 0, 0, 0.8) !important;
-  --traffic-lights-offset-x: 46px !important;
-  --traffic-lights-offset-y: 46px !important;
-  --vault-profile-color: rgba(0, 0, 0, 0.8) !important;
-  --vault-profile-color-hover: rgba(0, 0, 0, 0.8) !important;
-  --vault-profile-font-size: 15px !important;
-  --quartz-icon-color: currentColor !important;
+  --adwaita-accent-bg-color: #3584e4;
+  --adwaita-accent-color: #1c71d8;
+  --adwaita-accent-fg-color: #ffffff;
+  --adwaita-blue-1: #99c1f1;
+  --adwaita-blue-2: #62a0ea;
+  --adwaita-blue-3: #3584e4;
+  --adwaita-blue-4: #1c71d8;
+  --adwaita-blue-5: #1a5fb4;
+  --adwaita-brown-1: #cdab8f;
+  --adwaita-brown-2: #b5835a;
+  --adwaita-brown-3: #986a44;
+  --adwaita-brown-4: #865e3c;
+  --adwaita-brown-5: #63452c;
+  --adwaita-card-bg-color: #ffffff;
+  --adwaita-card-fg-color: rgba(0, 0, 0, 0.8);
+  --adwaita-card-shade-color: rgba(0, 0, 0, 0.07);
+  --adwaita-dark-1: #77767b;
+  --adwaita-dark-2: #5e5c64;
+  --adwaita-dark-3: #3d3846;
+  --adwaita-dark-4: #241f31;
+  --adwaita-dark-5: #000000;
+  --adwaita-destructive-bg-color: #e01b24;
+  --adwaita-destructive-color: #c01c28;
+  --adwaita-destructive-fg-color: #ffffff;
+  --adwaita-dialog-bg-color: #ffffff;
+  --adwaita-dialog-fg-color: rgba(0, 0, 0, 0.8);
+  --adwaita-error-bg-color: #e01b24;
+  --adwaita-error-color: #c01c28;
+  --adwaita-error-fg-color: #ffffff;
+  --adwaita-green-1: #8ff0a4;
+  --adwaita-green-2: #57e389;
+  --adwaita-green-3: #33d17a;
+  --adwaita-green-4: #2ec27e;
+  --adwaita-green-5: #26a269;
+  --adwaita-headerbar-backdrop-color: #fafafa;
+  --adwaita-headerbar-bg-color: #ffffff;
+  --adwaita-headerbar-border-color: rgba(0, 0, 0, 0.8);
+  --adwaita-headerbar-fg-color: rgba(0, 0, 0, 0.8);
+  --adwaita-headerbar-shade-color: rgba(0, 0, 0, 0.12);
+  --adwaita-icon-folder-saved-search-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDYuNjA1NDY5IDAuMDU4NTkzOCBjIC0zLjU3ODEyNSAwIC02LjUgMi45MjE4NzUyIC02LjUgNi41MDAwMDAyIHMgMi45MjE4NzUgNi40OTYwOTQgNi41IDYuNDk2MDk0IGMgMS40Mjk2ODcgMCAyLjc1MzkwNiAtMC40NjQ4NDQgMy44MjgxMjUgLTEuMjUzOTA3IGwgMi45NzI2NTYgMi45NzI2NTcgYyAwLjk1NzAzMSAwLjk0MTQwNiAyLjM2MzI4MSAtMC40OTYwOTQgMS40MDYyNSAtMS40Mzc1IGwgLTIuOTU3MDMxIC0yLjk1NzAzMiBjIDAuNzgxMjUgLTEuMDc0MjE4IDEuMjUgLTIuMzk0NTMxIDEuMjUgLTMuODIwMzEyIGMgMCAtMy41NzgxMjUgLTIuOTI1NzgxIC02LjUwMDAwMDIgLTYuNSAtNi41MDAwMDAyIHogbSAwIDIuMDAwMDAwMiBjIDIuNDk2MDkzIDAgNC41IDIuMDAzOTA2IDQuNSA0LjUgcyAtMi4wMDM5MDcgNC40OTYwOTQgLTQuNSA0LjQ5NjA5NCBjIC0yLjUgMCAtNC41IC0yIC00LjUgLTQuNDk2MDk0IHMgMiAtNC41IDQuNSAtNC41IHogbSAwIDAiIGZpbGw9IiMyZTM0MzYiLz4KPC9zdmc+Cg==");
+  --adwaita-icon-folder-visiting-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDMgMSBjIC0xLjY0NDUzMSAwIC0zIDEuMzU1NDY5IC0zIDMgdiA4IGMgMCAxLjY0NDUzMSAxLjM1NTQ2OSAzIDMgMyBoIDEwIGMgMS42NDQ1MzEgMCAzIC0xLjM1NTQ2OSAzIC0zIHYgLTYgYyAwIC0xLjY0NDUzMSAtMS4zNTU0NjkgLTMgLTMgLTMgaCAtMy41ODU5MzggbCAtMS43MDcwMzEgLTEuNzA3MDMxIGMgLTAuMTg3NSAtMC4xODc1IC0wLjQ0MTQwNiAtMC4yOTI5NjkgLTAuNzA3MDMxIC0wLjI5Mjk2OSB6IG0gMCAyIGggMy41ODU5MzggbCAxLjcwNzAzMSAxLjcwNzAzMSBjIDAuMTg3NSAwLjE4NzUgMC40NDE0MDYgMC4yOTI5NjkgMC43MDcwMzEgMC4yOTI5NjkgaCA0IGMgMC41NjI1IDAgMSAwLjQzNzUgMSAxIHYgNiBjIDAgMC41NjY0MDYgLTAuNDM3NSAxIC0xIDEgaCAtMTAgYyAtMC41NjI1IDAgLTEgLTAuNDMzNTk0IC0xIC0xIHYgLTggYyAwIC0wLjU2MjUgMC40Mzc1IC0xIDEgLTEgeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K");
+  --adwaita-icon-go-down-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDEgNSBjIDAgLTAuMjY1NjI1IDAuMTA1NDY5IC0wLjUxOTUzMSAwLjI5Mjk2OSAtMC43MDcwMzEgYyAwLjM5MDYyNSAtMC4zOTA2MjUgMS4wMjM0MzcgLTAuMzkwNjI1IDEuNDE0MDYyIDAgbCA1LjI5Mjk2OSA1LjI5Mjk2OSBsIDUuMjkyOTY5IC01LjI5Mjk2OSBjIDAuMzkwNjI1IC0wLjM5MDYyNSAxLjAyMzQzNyAtMC4zOTA2MjUgMS40MTQwNjIgMCBjIDAuMTg3NSAwLjE4NzUgMC4yOTI5NjkgMC40NDE0MDYgMC4yOTI5NjkgMC43MDcwMzEgcyAtMC4xMDU0NjkgMC41MTk1MzEgLTAuMjkyOTY5IDAuNzA3MDMxIGwgLTYgNiBjIC0wLjM5MDYyNSAwLjM5MDYyNSAtMS4wMjM0MzcgMC4zOTA2MjUgLTEuNDE0MDYyIDAgbCAtNiAtNiBjIC0wLjE4NzUgLTAuMTg3NSAtMC4yOTI5NjkgLTAuNDQxNDA2IC0wLjI5Mjk2OSAtMC43MDcwMzEgeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K");
+  --adwaita-icon-sidebar-show-right-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSIjMmUzNDM2Ij4KICAgICAgICA8cGF0aCBkPSJtIDkuNSAxNCB2IC0xMiBoIDUgdiAxMiB6IG0gMCAwIiBmaWxsLW9wYWNpdHk9IjAuMzQ5MDIiLz4KICAgICAgICA8cGF0aCBkPSJtIDEzIDEgYyAxLjY0NDUzMSAwIDMgMS4zNTU0NjkgMyAzIHYgOCBjIDAgMS42NDQ1MzEgLTEuMzU1NDY5IDMgLTMgMyBoIC0xMCBjIC0xLjY0NDUzMSAwIC0zIC0xLjM1NTQ2OSAtMyAtMyB2IC04IGMgMCAtMS42NDQ1MzEgMS4zNTU0NjkgLTMgMyAtMyB6IG0gMCAyIGggLTEwIGMgLTAuNTcwMzEyIDAgLTEgMC40Mjk2ODggLTEgMSB2IDggYyAwIDAuNTcwMzEyIDAuNDI5Njg4IDEgMSAxIGggMTAgYyAwLjU3MDMxMiAwIDEgLTAuNDI5Njg4IDEgLTEgdiAtOCBjIDAgLTAuNTcwMzEyIC0wLjQyOTY4OCAtMSAtMSAtMSB6IG0gMCAwIi8+CiAgICAgICAgPHBhdGggZD0ibSAxMCAyIGggLTEgdiAxMiBoIDEgeiBtIDAgMCIvPgogICAgPC9nPgo8L3N2Zz4K");
+  --adwaita-icon-sidebar-show-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSIjMmUzNDM2Ij4KICAgICAgICA8cGF0aCBkPSJtIDYuNSAxNCB2IC0xMiBoIC01IHYgMTIgeiBtIDAgMCIgZmlsbC1vcGFjaXR5PSIwLjM0OTAyIi8+CiAgICAgICAgPHBhdGggZD0ibSAzIDEgYyAtMS42NDQ1MzEgMCAtMyAxLjM1NTQ2OSAtMyAzIHYgOCBjIDAgMS42NDQ1MzEgMS4zNTU0NjkgMyAzIDMgaCAxMCBjIDEuNjQ0NTMxIDAgMyAtMS4zNTU0NjkgMyAtMyB2IC04IGMgMCAtMS42NDQ1MzEgLTEuMzU1NDY5IC0zIC0zIC0zIHogbSAwIDIgaCAxMCBjIDAuNTcwMzEyIDAgMSAwLjQyOTY4OCAxIDEgdiA4IGMgMCAwLjU3MDMxMiAtMC40Mjk2ODggMSAtMSAxIGggLTEwIGMgLTAuNTcwMzEyIDAgLTEgLTAuNDI5Njg4IC0xIC0xIHYgLTggYyAwIC0wLjU3MDMxMiAwLjQyOTY4OCAtMSAxIC0xIHogbSAwIDAiLz4KICAgICAgICA8cGF0aCBkPSJtIDYgMiBoIDEgdiAxMiBoIC0xIHogbSAwIDAiLz4KICAgIDwvZz4KPC9zdmc+Cg==");
+  --adwaita-icon-tab-new-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSIjMmUzNDM2Ij4KICAgICAgICA8cGF0aCBkPSJtIDMgMCBjIC0xLjY0NDUzMSAwIC0zIDEuMzU1NDY5IC0zIDMgdiAxMCBjIDAgMS42NDQ1MzEgMS4zNTU0NjkgMyAzIDMgaCAxMCBjIDEuNjQ0NTMxIDAgMyAtMS4zNTU0NjkgMyAtMyB2IC0xMCBjIDAgLTEuNjQ0NTMxIC0xLjM1NTQ2OSAtMyAtMyAtMyB6IG0gMCAyIGggMTAgYyAwLjU3MDMxMiAwIDEgMC40Mjk2ODggMSAxIHYgMTAgYyAwIDAuNTcwMzEyIC0wLjQyOTY4OCAxIC0xIDEgaCAtMTAgYyAtMC41NzAzMTIgMCAtMSAtMC40Mjk2ODggLTEgLTEgdiAtMTAgYyAwIC0wLjU3MDMxMiAwLjQyOTY4OCAtMSAxIC0xIHogbSAwIDAiLz4KICAgICAgICA8cGF0aCBkPSJtIDQgNyBoIDggdiAyIGggLTggeiBtIDAgMCIvPgogICAgICAgIDxwYXRoIGQ9Im0gOSA0IHYgOCBoIC0yIHYgLTggeiBtIDAgMCIvPgogICAgPC9nPgo8L3N2Zz4K");
+  --adwaita-icon-view-more-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDcuOTk2MDk0IDAgYyAtMS4xMDU0NjkgMCAtMiAwLjg5NDUzMSAtMiAyIHMgMC44OTQ1MzEgMiAyIDIgYyAxLjEwMTU2MiAwIDIgLTAuODk0NTMxIDIgLTIgcyAtMC44OTg0MzggLTIgLTIgLTIgeiBtIDAgNiBjIC0xLjEwNTQ2OSAwIC0yIDAuODk0NTMxIC0yIDIgcyAwLjg5NDUzMSAyIDIgMiBjIDEuMTAxNTYyIDAgMiAtMC44OTQ1MzEgMiAtMiBzIC0wLjg5ODQzOCAtMiAtMiAtMiB6IG0gMCA2IGMgLTEuMTA1NDY5IDAgLTIgMC44OTQ1MzEgLTIgMiBzIDAuODk0NTMxIDIgMiAyIGMgMS4xMDE1NjIgMCAyIC0wLjg5NDUzMSAyIC0yIHMgLTAuODk4NDM4IC0yIC0yIC0yIHogbSAwIDAiIGZpbGw9IiMyZTM0MzYiLz4KPC9zdmc+Cg==");
+  --adwaita-icon-window-close-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDQgNCBoIDEgaCAwLjAzMTI1IGMgMC4yNTM5MDYgMC4wMTE3MTkgMC41MTE3MTkgMC4xMjg5MDYgMC42ODc1IDAuMzEyNSBsIDIuMjgxMjUgMi4yODEyNSBsIDIuMzEyNSAtMi4yODEyNSBjIDAuMjY1NjI1IC0wLjIzMDQ2OSAwLjQ0NTMxMiAtMC4zMDQ2ODggMC42ODc1IC0wLjMxMjUgaCAxIHYgMSBjIDAgMC4yODUxNTYgLTAuMDM1MTU2IDAuNTUwNzgxIC0wLjI1IDAuNzUgbCAtMi4yODEyNSAyLjI4MTI1IGwgMi4yNSAyLjI1IGMgMC4xODc1IDAuMTg3NSAwLjI4MTI1IDAuNDUzMTI1IDAuMjgxMjUgMC43MTg3NSB2IDEgaCAtMSBjIC0wLjI2NTYyNSAwIC0wLjUzMTI1IC0wLjA5Mzc1IC0wLjcxODc1IC0wLjI4MTI1IGwgLTIuMjgxMjUgLTIuMjgxMjUgbCAtMi4yODEyNSAyLjI4MTI1IGMgLTAuMTg3NSAwLjE4NzUgLTAuNDUzMTI1IDAuMjgxMjUgLTAuNzE4NzUgMC4yODEyNSBoIC0xIHYgLTEgYyAwIC0wLjI2NTYyNSAwLjA5Mzc1IC0wLjUzMTI1IDAuMjgxMjUgLTAuNzE4NzUgbCAyLjI4MTI1IC0yLjI1IGwgLTIuMjgxMjUgLTIuMjgxMjUgYyAtMC4yMTA5MzggLTAuMTk1MzEyIC0wLjMwNDY4OCAtMC40Njg3NSAtMC4yODEyNSAtMC43NSB6IG0gMCAwIiBmaWxsPSIjMmUzNDM2Ii8+Cjwvc3ZnPgo=");
+  --adwaita-icon-window-maximize-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDMuOTg4MjgxIDMuOTkyMTg4IHYgOC4wMTE3MTggaCA4LjAxMTcxOSB2IC04LjAxMTcxOCB6IG0gMiAyIGggNC4wMTE3MTkgdiA0LjAxMTcxOCBoIC00LjAxMTcxOSB6IG0gMCAwIiBmaWxsPSIjMmUzNDM2Ii8+Cjwvc3ZnPgo=");
+  --adwaita-icon-window-minimize-symbolic: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDQgMTAuMDA3ODEyIGggOCB2IDEuOTg4MjgyIGggLTggeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K");
+  --adwaita-light-1: #ffffff;
+  --adwaita-light-2: #f6f5f4;
+  --adwaita-light-3: #deddda;
+  --adwaita-light-4: #c0bfbc;
+  --adwaita-light-5: #9a9996;
+  --adwaita-mod-background: #efefef;
+  --adwaita-mod-background-active: #b3b3b3;
+  --adwaita-mod-background-focus: #d8d8d8;
+  --adwaita-mod-background-hover: #cfcfcf;
+  --adwaita-mod-foreground: #949494;
+  --adwaita-mod-foreground-focus: rgba(0, 0, 0, 0.8);
+  --adwaita-mod-right-margin: 8px;
+  --adwaita-mod-scale: 1;
+  --adwaita-orange-1: #ffbe6f;
+  --adwaita-orange-2: #ffa348;
+  --adwaita-orange-3: #ff7800;
+  --adwaita-orange-4: #e66100;
+  --adwaita-orange-5: #c64600;
+  --adwaita-popover-bg-color: #fafafa;
+  --adwaita-popover-fg-color: rgba(0, 0, 0, 0.8);
+  --adwaita-popover-shader-color: rgba(0, 0, 0, 0.07);
+  --adwaita-purple-1: #dc8add;
+  --adwaita-purple-2: #c061cb;
+  --adwaita-purple-3: #9141ac;
+  --adwaita-purple-4: #813d9c;
+  --adwaita-purple-5: #613583;
+  --adwaita-red-1: #f66151;
+  --adwaita-red-2: #ed333b;
+  --adwaita-red-3: #e01b24;
+  --adwaita-red-4: #c01c28;
+  --adwaita-red-5: #a51d2d;
+  --adwaita-scrollbar-outline-color: #ffffff;
+  --adwaita-shade-color: rgba(0, 0, 0, 0.07);
+  --adwaita-success-bg-color: #2ec27e;
+  --adwaita-success-color: #1b8553;
+  --adwaita-success-fg-color: #ffffff;
+  --adwaita-view-bg-color: #ffffff;
+  --adwaita-view-fg-color: rgba(0, 0, 0, 0.8);
+  --adwaita-warning-bg-color: #e5a50a;
+  --adwaita-warning-color: #9c6e03;
+  --adwaita-warning-fg-color: rgba(0, 0, 0, 0.8);
+  --adwaita-window-bg-color: #fafafa;
+  --adwaita-window-fg-color: rgba(0, 0, 0, 0.8);
+  --adwaita-yellow-1: #f9f06b;
+  --adwaita-yellow-2: #f8e45c;
+  --adwaita-yellow-3: #f6d32d;
+  --adwaita-yellow-4: #f5c211;
+  --adwaita-yellow-5: #e5a50a;
+  --background-modifier-hover: #f0f0f0;
+  --bases-table-header-background-hover: #f0f0f0;
+  --bases-table-summary-background-hover: #f0f0f0;
+  --bodyFont: var(--font-interface, Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --caret-color: rgba(0, 0, 0, 0.8);
+  --code-bracket-background: #f0f0f0;
+  --code-normal: rgba(0, 0, 0, 0.8);
+  --codeFont: var(--font-interface, Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --dark: var(--text-normal, rgba(0, 0, 0, 0.8));
+  --darkgray: var(--text-normal, rgba(0, 0, 0, 0.8));
+  --file-header-font: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --file-header-font-size: 15px;
+  --flair-color: rgba(0, 0, 0, 0.8);
+  --font-interface: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-interface-theme: Cantarell;
+  --font-ui-small: 15px;
+  --footnote-input-background-active: #f0f0f0;
+  --frame-right-space: 120px;
+  --graph-text: rgba(0, 0, 0, 0.8);
+  --gray: var(--text-normal, rgba(0, 0, 0, 0.8));
+  --h1-weight: 900;
+  --header-height: 46px;
+  --headerFont: var(--font-interface, Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --highlight: var(--background-modifier-hover, #f0f0f0);
+  --icon-color: #939393;
+  --icon-color-focused: #939393;
+  --icon-color-hover: #939393;
+  --inline-title-weight: 900;
+  --metadata-input-background-active: #f0f0f0;
+  --metadata-input-font: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-input-text-color: rgba(0, 0, 0, 0.8);
+  --metadata-label-background-active: #f0f0f0;
+  --metadata-label-font: Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-property-background-active: #f0f0f0;
+  --metadata-sidebar-input-font-size: 15px;
+  --metadata-sidebar-label-font-size: 15px;
+  --nav-heading-color: rgba(0, 0, 0, 0.8);
+  --nav-heading-color-hover: rgba(0, 0, 0, 0.8);
+  --nav-item-background-active: #f0f0f0;
+  --nav-item-background-hover: #f0f0f0;
+  --nav-item-color-active: rgba(0, 0, 0, 0.8);
+  --nav-item-color-hover: rgba(0, 0, 0, 0.8);
+  --nav-item-color-selected: rgba(0, 0, 0, 0.8);
+  --nav-item-size: 15px;
+  --pill-color-hover: rgba(0, 0, 0, 0.8);
+  --setting-group-heading-color: rgba(0, 0, 0, 0.8);
+  --tab-background-active: #d8d8d8;
+  --tab-font-size: 15px;
+  --tab-max-width: none;
+  --tab-radius-active: 4px;
+  --tab-stacked-font-size: 15px;
+  --tab-stacked-header-width: 46px;
+  --tab-text-color: #939393;
+  --tab-text-color-focused: #939393;
+  --tab-text-color-focused-active-current: #939393;
+  --tab-width: 10000px;
+  --table-header-color: rgba(0, 0, 0, 0.8);
+  --text-normal: rgba(0, 0, 0, 0.8);
+  --textHighlight: var(--background-modifier-hover, #f0f0f0);
+  --titleFont: var(--font-interface, Cantarell, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --titlebar-background: #fafafa;
+  --titlebar-background-focused: #ffffff;
+  --titlebar-height: 45px;
+  --titlebar-text-color: #8c8c8c;
+  --titlebar-text-color-focused: rgba(0, 0, 0, 0.8);
+  --traffic-lights-offset-x: 46px;
+  --traffic-lights-offset-y: 46px;
+  --vault-profile-color: rgba(0, 0, 0, 0.8);
+  --vault-profile-color-hover: rgba(0, 0, 0, 0.8);
+  --vault-profile-font-size: 15px;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -2741,6 +2742,827 @@ html[saved-theme="light"] body summary {
 
 html[saved-theme="light"] body sup {
   color: rgba(0, 0, 0, 0.8);
+}`,
+  },
+  classSettings: {
+    "adwaita-mod-always": `body.adwaita-mod-always {
+--frame-right-space: calc(var(--adwaita-mod-scale) * 120px);
+--adwaita-mod-foreground-focus: var(--adwaita-headerbar-fg-color);
+}
+
+body.adwaita-window-button-minimize-hide .titlebar-button-container.mod-right .titlebar-button.mod-minimize {
+display: none;
+}
+
+body.adwaita-window-button-maximize-hide .titlebar-button-container.mod-right .titlebar-button.mod-maximize {
+display: none;
+}
+
+body.adwaita-window-button-close-hide .titlebar-button-container.mod-right .titlebar-button.mod-close {
+display: none;
+}
+
+body.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide), body.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide), body.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide) {
+--frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px));
+}
+
+body.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide), body.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide), body.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide) {
+--frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px - 38px));
+}
+
+body.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide {
+--frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px - 38px - 38px));
+}
+
+body.adwaita-mod-always .titlebar-button-container.mod-right {
+transform: scale(var(--adwaita-mod-scale));
+margin-right: var(--adwaita-mod-right-margin);
+transform-origin: right;
+}
+
+body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button {
+height: 24px;
+width: 24px;
+border-radius: 12px;
+padding: 0;
+margin: auto 0 auto 14px;
+background: var(--adwaita-mod-background);
+color: var(--adwaita-mod-foreground);
+}
+
+body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button.mod-minimize svg, body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button.mod-maximize svg, body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button.mod-close svg {
+display: none;
+}
+
+body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button::after {
+content: '';
+background-color: currentColor;
+width: 16px;
+height: 16px;
+margin: auto;
+}
+
+body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button.mod-minimize::after {
+-webkit-mask-image: var(--adwaita-icon-window-minimize-symbolic);
+mask-image: var(--adwaita-icon-window-minimize-symbolic);
+}
+
+body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button.mod-maximize::after {
+-webkit-mask-image: var(--adwaita-icon-window-maximize-symbolic);
+mask-image: var(--adwaita-icon-window-maximize-symbolic);
+}
+
+body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button.mod-close::after {
+-webkit-mask-image: var(--adwaita-icon-window-close-symbolic);
+mask-image: var(--adwaita-icon-window-close-symbolic);
+}
+
+body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button:hover {
+background: var(--adwaita-mod-background) !important;
+}
+
+body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button svg {
+width: 12px;
+height: 12px;
+margin: auto;
+}
+
+body.is-focused .titlebar-button-container.mod-right .titlebar-button, body.is-focused .modal-close-button {
+background: var(--adwaita-mod-background-focus);
+color: var(--adwaita-mod-foreground-focus);
+}
+
+body.is-focused .titlebar-button-container.mod-right .titlebar-button:hover, body.is-focused .modal-close-button:hover {
+background: var(--adwaita-mod-background-hover) !important;
+}
+
+body.is-focused .titlebar-button-container.mod-right .titlebar-button:active, body.is-focused .modal-close-button:active {
+background: var(--adwaita-mod-background-active) !important;
+}
+
+body.adwaita-mod-always .modal-close-button {
+height: 24px;
+width: 24px;
+border-radius: 12px;
+color: var(--adwaita-mod-foreground);
+background: var(--adwaita-mod-background);
+transform: scale(var(--adwaita-mod-scale));
+transform-origin: right;
+}
+
+body.adwaita-mod-always .modal-close-button:before {
+content: '';
+display: block;
+width: 16px;
+height: 16px;
+margin: auto;
+top: 50%;
+position: absolute;
+transform: translateY(-50%);
+-webkit-mask-image: var(--adwaita-icon-window-close-symbolic);
+mask-image: var(--adwaita-icon-window-close-symbolic);
+background-color: currentColor;
+}
+body.theme-dark {
+--adwaita-mod-background: #2e2e2e;
+--adwaita-mod-background-focus: #444444;
+--adwaita-mod-background-hover: #4f4f4f;
+--adwaita-mod-background-active: #6e6e6e;
+--adwaita-mod-foreground: #929292;
+}
+body.theme-light {
+--adwaita-mod-background: #efefef;
+--adwaita-mod-background-focus: #d8d8d8;
+--adwaita-mod-background-hover: #cfcfcf;
+--adwaita-mod-background-active: #b3b3b3;
+--adwaita-mod-foreground: #949494;
+}`,
+    "adwaita-mod-linux-only": `body.mod-linux {
+--frame-right-space: calc(var(--adwaita-mod-scale) * 120px);
+--adwaita-mod-foreground-focus: var(--adwaita-headerbar-fg-color);
+}
+
+body.mod-linux.adwaita-window-button-minimize-hide .titlebar-button-container.mod-right .titlebar-button.mod-minimize {
+display: none;
+}
+
+body.mod-linux.adwaita-window-button-maximize-hide .titlebar-button-container.mod-right .titlebar-button.mod-maximize {
+display: none;
+}
+
+body.mod-linux.adwaita-window-button-close-hide .titlebar-button-container.mod-right .titlebar-button.mod-close {
+display: none;
+}
+
+body.mod-linux.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide), body.mod-linux.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide), body.mod-linux.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide) {
+--frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px));
+}
+
+body.mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide), body.mod-linux.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide), body.mod-linux.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide) {
+--frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px - 38px));
+}
+
+body.mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide {
+--frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px - 38px - 38px));
+}
+
+body.mod-linux .titlebar-button-container.mod-right {
+transform: scale(var(--adwaita-mod-scale));
+margin-right: var(--adwaita-mod-right-margin);
+transform-origin: right;
+}
+
+body.mod-linux .titlebar-button-container.mod-right .titlebar-button {
+height: 24px;
+width: 24px;
+border-radius: 12px;
+padding: 0;
+margin: auto 0 auto 14px;
+background: var(--adwaita-mod-background);
+color: var(--adwaita-mod-foreground);
+}
+
+body.mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-minimize svg, body.mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-maximize svg, body.mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-close svg {
+display: none;
+}
+
+body.mod-linux .titlebar-button-container.mod-right .titlebar-button::after {
+content: '';
+background-color: currentColor;
+width: 16px;
+height: 16px;
+margin: auto;
+}
+
+body.mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-minimize::after {
+-webkit-mask-image: var(--adwaita-icon-window-minimize-symbolic);
+mask-image: var(--adwaita-icon-window-minimize-symbolic);
+}
+
+body.mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-maximize::after {
+-webkit-mask-image: var(--adwaita-icon-window-maximize-symbolic);
+mask-image: var(--adwaita-icon-window-maximize-symbolic);
+}
+
+body.mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-close::after {
+-webkit-mask-image: var(--adwaita-icon-window-close-symbolic);
+mask-image: var(--adwaita-icon-window-close-symbolic);
+}
+
+body.mod-linux .titlebar-button-container.mod-right .titlebar-button:hover {
+background: var(--adwaita-mod-background) !important;
+}
+
+body.mod-linux .titlebar-button-container.mod-right .titlebar-button svg {
+width: 12px;
+height: 12px;
+margin: auto;
+}
+
+body.mod-linux.is-focused .titlebar-button-container.mod-right .titlebar-button, body.mod-linux.is-focused .modal-close-button {
+background: var(--adwaita-mod-background-focus);
+color: var(--adwaita-mod-foreground-focus);
+}
+
+body.mod-linux.is-focused .titlebar-button-container.mod-right .titlebar-button:hover, body.mod-linux.is-focused .modal-close-button:hover {
+background: var(--adwaita-mod-background-hover) !important;
+}
+
+body.mod-linux.is-focused .titlebar-button-container.mod-right .titlebar-button:active, body.mod-linux.is-focused .modal-close-button:active {
+background: var(--adwaita-mod-background-active) !important;
+}
+
+body.mod-linux .modal-close-button {
+height: 24px;
+width: 24px;
+border-radius: 12px;
+color: var(--adwaita-mod-foreground);
+background: var(--adwaita-mod-background);
+transform: scale(var(--adwaita-mod-scale));
+transform-origin: right;
+}
+
+body.mod-linux .modal-close-button:before {
+content: '';
+display: block;
+width: 16px;
+height: 16px;
+margin: auto;
+top: 50%;
+position: absolute;
+transform: translateY(-50%);
+-webkit-mask-image: var(--adwaita-icon-window-close-symbolic);
+mask-image: var(--adwaita-icon-window-close-symbolic);
+background-color: currentColor;
+}
+body.mod-linux.theme-dark {
+--adwaita-mod-background: #2e2e2e;
+--adwaita-mod-background-focus: #444444;
+--adwaita-mod-background-hover: #4f4f4f;
+--adwaita-mod-background-active: #6e6e6e;
+--adwaita-mod-foreground: #929292;
+}
+body.mod-linux.theme-light {
+--adwaita-mod-background: #efefef;
+--adwaita-mod-background-focus: #d8d8d8;
+--adwaita-mod-background-hover: #cfcfcf;
+--adwaita-mod-background-active: #b3b3b3;
+--adwaita-mod-foreground: #949494;
+}`,
+    "adwaita-window-button-minimize-hide": `body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-minimize-hide .titlebar-button-container.mod-right .titlebar-button.mod-minimize, body.adwaita-mod-always.adwaita-window-button-minimize-hide .titlebar-button-container.mod-right .titlebar-button.mod-minimize, body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-minimize-hide .titlebar-button-container.mod-right .titlebar-button.mod-minimize {
+display: none;
+}
+
+body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide), body.adwaita-mod-always.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide), body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide) {
+--frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px));
+}
+
+body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide), body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide), body.adwaita-mod-always.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide), body.adwaita-mod-always.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide), body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide), body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide) {
+--frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px - 38px));
+}
+
+body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide, body.adwaita-mod-always.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide, body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide {
+--frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px - 38px - 38px));
+}`,
+    "adwaita-window-button-maximize-hide": `body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-maximize-hide .titlebar-button-container.mod-right .titlebar-button.mod-maximize, body.adwaita-mod-always.adwaita-window-button-maximize-hide .titlebar-button-container.mod-right .titlebar-button.mod-maximize, body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-maximize-hide .titlebar-button-container.mod-right .titlebar-button.mod-maximize {
+display: none;
+}
+
+body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide), body.adwaita-mod-always.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide), body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide) {
+--frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px));
+}
+
+body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide), body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide), body.adwaita-mod-always.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide), body.adwaita-mod-always.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide), body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide), body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide) {
+--frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px - 38px));
+}
+
+body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-close-hide, body.adwaita-mod-always.adwaita-window-button-minimize-hide.adwaita-window-button-close-hide, body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-close-hide {
+--frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px - 38px - 38px));
+}`,
+    "adwaita-window-button-close-hide": `body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-close-hide .titlebar-button-container.mod-right .titlebar-button.mod-close, body.adwaita-mod-always.adwaita-window-button-close-hide .titlebar-button-container.mod-right .titlebar-button.mod-close, body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-close-hide .titlebar-button-container.mod-right .titlebar-button.mod-close {
+display: none;
+}
+
+body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide), body.adwaita-mod-always.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide), body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide) {
+--frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px));
+}
+
+body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide), body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide), body.adwaita-mod-always.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide), body.adwaita-mod-always.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide), body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide), body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide) {
+--frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px - 38px));
+}
+
+body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide, body.adwaita-mod-always.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide, body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide {
+--frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px - 38px - 38px));
+}`,
+    "adwaita-tabs-always": `body.adwaita-tabs-always {
+--tab-radius-active: 4px;
+}
+
+body.adwaita-tabs-always:not(.adwaita-tabs-short) {
+--tab-width: 10000px;
+/* infinite width */
+--tab-max-width: none;
+}
+
+body.adwaita-tabs-always .workspace-tab-header-container .workspace-tab-header-container-inner {
+--tab-outline-width: 0;
+}
+
+body.adwaita-tabs-always .workspace-tab-header-container .workspace-tab-header-new-tab {
+margin-right: var(--size-4-1);
+}
+
+body.adwaita-tabs-always .workspace-tab-header-new-tab {
+order: 1;
+}
+
+body.adwaita-tabs-always .workspace-tab-header-tab-list, body.adwaita-tabs-always .sidebar-toggle-button.mod-right {
+order: 2;
+}
+
+body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+padding: 0;
+margin: 5px 3px 5px 2px;
+}
+
+body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
+color: var(--tab-text-color-focused);
+}
+
+body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:before, body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:after {
+content: none;
+}
+
+body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header .workspace-tab-header-inner::after {
+right: -6px;
+}
+
+body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header .workspace-tab-header-inner-title {
+padding-left: 20px;
+text-align: center;
+}
+
+body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:last-child .workspace-tab-header-inner::after {
+content: none;
+}
+
+body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header .workspace-tab-header-inner-close-button {
+opacity: 0;
+display: flex;
+}
+
+body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner-close-button, body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header :hover .workspace-tab-header-inner-close-button {
+opacity: 1;
+}
+body.theme-dark {
+--tab-background-active: #323232;
+}
+
+body.is-focused {
+--tab-background-active: #464646;
+}
+body.theme-light {
+--tab-background-active: #f0f0f0;
+}
+
+body.is-focused {
+--tab-background-active: #d8d8d8;
+}`,
+    "adwaita-tabs-linux-only": `body.mod-linux {
+--tab-radius-active: 4px;
+}
+
+body.mod-linux:not(.adwaita-tabs-short) {
+--tab-width: 10000px;
+/* infinite width */
+--tab-max-width: none;
+}
+
+body.mod-linux .workspace-tab-header-container .workspace-tab-header-container-inner {
+--tab-outline-width: 0;
+}
+
+body.mod-linux .workspace-tab-header-container .workspace-tab-header-new-tab {
+margin-right: var(--size-4-1);
+}
+
+body.mod-linux .workspace-tab-header-new-tab {
+order: 1;
+}
+
+body.mod-linux .workspace-tab-header-tab-list, body.mod-linux .sidebar-toggle-button.mod-right {
+order: 2;
+}
+
+body.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+padding: 0;
+margin: 5px 3px 5px 2px;
+}
+
+body.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
+color: var(--tab-text-color-focused);
+}
+
+body.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:before, body.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:after {
+content: none;
+}
+
+body.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header .workspace-tab-header-inner::after {
+right: -6px;
+}
+
+body.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header .workspace-tab-header-inner-title {
+padding-left: 20px;
+text-align: center;
+}
+
+body.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:last-child .workspace-tab-header-inner::after {
+content: none;
+}
+
+body.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header .workspace-tab-header-inner-close-button {
+opacity: 0;
+display: flex;
+}
+
+body.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner-close-button, body.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header :hover .workspace-tab-header-inner-close-button {
+opacity: 1;
+}
+body.mod-linux.theme-dark {
+--tab-background-active: #323232;
+}
+
+body.mod-linux.is-focused {
+--tab-background-active: #464646;
+}
+body.mod-linux.theme-light {
+--tab-background-active: #f0f0f0;
+}
+
+body.mod-linux.is-focused {
+--tab-background-active: #d8d8d8;
+}`,
+    "adwaita-colors-always": `body.adwaita-colors-always {
+--titlebar-background: var(--adwaita-headerbar-backdrop-color);
+--titlebar-background-focused: var(--adwaita-headerbar-bg-color);
+--titlebar-text-color-focused: var(--adwaita-headerbar-fg-color);
+--text-normal: var(--adwaita-view-fg-color);
+}
+
+body.is-focused .workspace-tabs.mod-top .workspace-tab-header-container, body.is-focused .sidebar-toggle-button {
+--icon-color: var(--adwaita-headerbar-fg-color);
+--icon-color-hover: var(--adwaita-headerbar-fg-color);
+--icon-color-focused: var(--adwaita-headerbar-fg-color);
+--tab-text-color-focused: var(--adwaita-headerbar-fg-color);
+--tab-text-color-focused-active-current: var(--adwaita-headerbar-fg-color);
+}
+
+body.adwaita-colors-always .titlebar-button.mod-logo:hover {
+background-color: inherit;
+}
+body.theme-dark {
+--titlebar-text-color: #919191;
+--icon-color: #929292;
+--icon-color-hover: #929292;
+--icon-color-focused: #929292;
+--tab-text-color: #929292;
+--tab-text-color-focused: #8a8a8a;
+--tab-text-color-focused-active-current: #8a8a8a;
+--background-modifier-hover: #323232;
+}
+
+body.is-focused .workspace-tabs.mod-top .workspace-tab-header-container, body.is-focused .sidebar-toggle-button {
+--background-modifier-hover: #464646;
+}
+body.theme-light {
+--titlebar-text-color: #8c8c8c;
+--icon-color: #939393;
+--icon-color-hover: #939393;
+--icon-color-focused: #939393;
+--tab-text-color: #939393;
+--tab-text-color-focused: #939393;
+--tab-text-color-focused-active-current: #939393;
+--background-modifier-hover: #f0f0f0;
+}
+
+body.is-focused .workspace-tabs.mod-top .workspace-tab-header-container, body.is-focused .sidebar-toggle-button {
+--background-modifier-hover: #d8d8d8;
+}`,
+    "adwaita-colors-linux-only": `body.mod-linux {
+--titlebar-background: var(--adwaita-headerbar-backdrop-color);
+--titlebar-background-focused: var(--adwaita-headerbar-bg-color);
+--titlebar-text-color-focused: var(--adwaita-headerbar-fg-color);
+--text-normal: var(--adwaita-view-fg-color);
+}
+
+body.mod-linux.is-focused .workspace-tabs.mod-top .workspace-tab-header-container, body.mod-linux.is-focused .sidebar-toggle-button {
+--icon-color: var(--adwaita-headerbar-fg-color);
+--icon-color-hover: var(--adwaita-headerbar-fg-color);
+--icon-color-focused: var(--adwaita-headerbar-fg-color);
+--tab-text-color-focused: var(--adwaita-headerbar-fg-color);
+--tab-text-color-focused-active-current: var(--adwaita-headerbar-fg-color);
+}
+
+body.mod-linux .titlebar-button.mod-logo:hover {
+background-color: inherit;
+}
+body.mod-linux.theme-dark {
+--titlebar-text-color: #919191;
+--icon-color: #929292;
+--icon-color-hover: #929292;
+--icon-color-focused: #929292;
+--tab-text-color: #929292;
+--tab-text-color-focused: #8a8a8a;
+--tab-text-color-focused-active-current: #8a8a8a;
+--background-modifier-hover: #323232;
+}
+
+body.mod-linux.is-focused .workspace-tabs.mod-top .workspace-tab-header-container, body.mod-linux.is-focused .sidebar-toggle-button {
+--background-modifier-hover: #464646;
+}
+body.mod-linux.theme-light {
+--titlebar-text-color: #8c8c8c;
+--icon-color: #939393;
+--icon-color-hover: #939393;
+--icon-color-focused: #939393;
+--tab-text-color: #939393;
+--tab-text-color-focused: #939393;
+--tab-text-color-focused-active-current: #939393;
+--background-modifier-hover: #f0f0f0;
+}
+
+body.mod-linux.is-focused .workspace-tabs.mod-top .workspace-tab-header-container, body.mod-linux.is-focused .sidebar-toggle-button {
+--background-modifier-hover: #d8d8d8;
+}`,
+    "adwaita-font-always": `body.adwaita-font-always {
+--titlebar-height: 45px;
+--font-interface-theme: Cantarell;
+--font-ui-small: 15px;
+--h1-weight: 900;
+}
+
+body.adwaita-font-always .titlebar-text {
+top: 10px;
+height: auto;
+}`,
+    "adwaita-font-linux-only": `body.mod-linux {
+--titlebar-height: 45px;
+--font-interface-theme: Cantarell;
+--font-ui-small: 15px;
+--h1-weight: 900;
+}
+
+body.mod-linux .titlebar-text {
+top: 10px;
+height: auto;
+}`,
+    "adwaita-icons-always": `body.adwaita-icons-always {
+--titlebar-height: 45px;
+--header-height: 46px;
+}
+
+body.adwaita-icons-always svg.logo-wireframe {
+stroke-width: 45;
+}
+
+body.is-frameless:not(.is-hidden-frameless) .app-container {
+margin-top: -9px;
+height: calc(100% + 9px);
+}
+
+body.adwaita-icons-always .sidebar-toggle-button, body.adwaita-icons-always .workspace-tab-header-new-tab, body.adwaita-icons-always .workspace-tab-header-tab-list, body.adwaita-icons-always .mod-left-split .workspace-tabs .workspace-tab-header-container-inner, body.adwaita-icons-always .mod-right-split .workspace-tabs .workspace-tab-header-container-inner {
+margin-top: 0;
+padding-top: 0;
+padding-bottom: 0;
+}
+
+body.adwaita-icons-always .mod-left-split .workspace-tabs .workspace-tab-header, body.adwaita-icons-always .mod-right-split .workspace-tabs .workspace-tab-header, body.adwaita-icons-always .sidebar-toggle-button .clickable-icon, body.adwaita-icons-always .workspace-tabs.mod-top .workspace-tab-header-container .clickable-icon {
+height: 34px;
+min-width: 34px;
+margin-top: auto;
+margin-bottom: auto;
+}
+
+body.adwaita-icons-always .sidebar-toggle-button.mod-left .clickable-icon svg {
+display: none;
+}
+
+body.adwaita-icons-always .sidebar-toggle-button.mod-left .clickable-icon::after {
+content: '';
+background-color: currentColor !important;
+-webkit-mask-image: var(--adwaita-icon-sidebar-show-symbolic);
+mask-image: var(--adwaita-icon-sidebar-show-symbolic);
+width: 16px;
+height: 16px;
+margin: auto;
+}
+
+body.adwaita-icons-always .sidebar-toggle-button.mod-right .clickable-icon svg {
+display: none;
+}
+
+body.adwaita-icons-always .sidebar-toggle-button.mod-right .clickable-icon::after {
+content: '';
+background-color: currentColor !important;
+-webkit-mask-image: var(--adwaita-icon-sidebar-show-right-symbolic);
+mask-image: var(--adwaita-icon-sidebar-show-right-symbolic);
+width: 16px;
+height: 16px;
+margin: auto;
+}
+
+body.adwaita-icons-always .workspace-tab-header-new-tab .clickable-icon svg {
+display: none;
+}
+
+body.adwaita-icons-always .workspace-tab-header-new-tab .clickable-icon::after {
+content: '';
+background-color: currentColor !important;
+-webkit-mask-image: var(--adwaita-icon-tab-new-symbolic);
+mask-image: var(--adwaita-icon-tab-new-symbolic);
+width: 16px;
+height: 16px;
+margin: auto;
+}
+
+body.adwaita-icons-always .workspace-tab-header-tab-list .clickable-icon svg {
+display: none;
+}
+
+body.adwaita-icons-always .workspace-tab-header-tab-list .clickable-icon::after {
+content: '';
+background-color: currentColor !important;
+-webkit-mask-image: var(--adwaita-icon-go-down-symbolic);
+mask-image: var(--adwaita-icon-go-down-symbolic);
+width: 16px;
+height: 16px;
+margin: auto;
+}
+
+body.adwaita-icons-always .workspace-tab-header-inner-close-button svg {
+display: none;
+}
+
+body.adwaita-icons-always .workspace-tab-header-inner-close-button::after {
+content: '';
+background-color: currentColor !important;
+-webkit-mask-image: var(--adwaita-icon-window-close-symbolic);
+mask-image: var(--adwaita-icon-window-close-symbolic);
+width: 16px;
+height: 16px;
+margin: auto;
+}
+
+body.adwaita-icons-always .workspace-tab-header[data-type="file-explorer"] .workspace-tab-header-inner-icon svg {
+display: none;
+}
+
+body.adwaita-icons-always .workspace-tab-header[data-type="file-explorer"] .workspace-tab-header-inner-icon::after {
+content: '';
+background-color: currentColor !important;
+-webkit-mask-image: var(--adwaita-icon-folder-visiting-symbolic);
+mask-image: var(--adwaita-icon-folder-visiting-symbolic);
+width: 16px;
+height: 16px;
+margin: auto;
+}
+
+body.adwaita-icons-always .workspace-tab-header[data-type="search"] .workspace-tab-header-inner-icon svg {
+display: none;
+}
+
+body.adwaita-icons-always .workspace-tab-header[data-type="search"] .workspace-tab-header-inner-icon::after {
+content: '';
+background-color: currentColor !important;
+-webkit-mask-image: var(--adwaita-icon-folder-saved-search-symbolic);
+mask-image: var(--adwaita-icon-folder-saved-search-symbolic);
+width: 16px;
+height: 16px;
+margin: auto;
+}`,
+    "adwaita-icons-linux-only": `body.mod-linux {
+--titlebar-height: 45px;
+--header-height: 46px;
+}
+
+body.mod-linux svg.logo-wireframe {
+stroke-width: 45;
+}
+
+body.mod-linux.is-frameless:not(.is-hidden-frameless) .app-container {
+margin-top: -9px;
+height: calc(100% + 9px);
+}
+
+body.mod-linux .sidebar-toggle-button, body.mod-linux .workspace-tab-header-new-tab, body.mod-linux .workspace-tab-header-tab-list, body.mod-linux .mod-left-split .workspace-tabs .workspace-tab-header-container-inner, body.mod-linux .mod-right-split .workspace-tabs .workspace-tab-header-container-inner {
+margin-top: 0;
+padding-top: 0;
+padding-bottom: 0;
+}
+
+body.mod-linux .mod-left-split .workspace-tabs .workspace-tab-header, body.mod-linux .mod-right-split .workspace-tabs .workspace-tab-header, body.mod-linux .sidebar-toggle-button .clickable-icon, body.mod-linux .workspace-tabs.mod-top .workspace-tab-header-container .clickable-icon {
+height: 34px;
+min-width: 34px;
+margin-top: auto;
+margin-bottom: auto;
+}
+
+body.mod-linux .sidebar-toggle-button.mod-left .clickable-icon svg {
+display: none;
+}
+
+body.mod-linux .sidebar-toggle-button.mod-left .clickable-icon::after {
+content: '';
+background-color: currentColor !important;
+-webkit-mask-image: var(--adwaita-icon-sidebar-show-symbolic);
+mask-image: var(--adwaita-icon-sidebar-show-symbolic);
+width: 16px;
+height: 16px;
+margin: auto;
+}
+
+body.mod-linux .sidebar-toggle-button.mod-right .clickable-icon svg {
+display: none;
+}
+
+body.mod-linux .sidebar-toggle-button.mod-right .clickable-icon::after {
+content: '';
+background-color: currentColor !important;
+-webkit-mask-image: var(--adwaita-icon-sidebar-show-right-symbolic);
+mask-image: var(--adwaita-icon-sidebar-show-right-symbolic);
+width: 16px;
+height: 16px;
+margin: auto;
+}
+
+body.mod-linux .workspace-tab-header-new-tab .clickable-icon svg {
+display: none;
+}
+
+body.mod-linux .workspace-tab-header-new-tab .clickable-icon::after {
+content: '';
+background-color: currentColor !important;
+-webkit-mask-image: var(--adwaita-icon-tab-new-symbolic);
+mask-image: var(--adwaita-icon-tab-new-symbolic);
+width: 16px;
+height: 16px;
+margin: auto;
+}
+
+body.mod-linux .workspace-tab-header-tab-list .clickable-icon svg {
+display: none;
+}
+
+body.mod-linux .workspace-tab-header-tab-list .clickable-icon::after {
+content: '';
+background-color: currentColor !important;
+-webkit-mask-image: var(--adwaita-icon-go-down-symbolic);
+mask-image: var(--adwaita-icon-go-down-symbolic);
+width: 16px;
+height: 16px;
+margin: auto;
+}
+
+body.mod-linux .workspace-tab-header-inner-close-button svg {
+display: none;
+}
+
+body.mod-linux .workspace-tab-header-inner-close-button::after {
+content: '';
+background-color: currentColor !important;
+-webkit-mask-image: var(--adwaita-icon-window-close-symbolic);
+mask-image: var(--adwaita-icon-window-close-symbolic);
+width: 16px;
+height: 16px;
+margin: auto;
+}
+
+body.mod-linux .workspace-tab-header[data-type="file-explorer"] .workspace-tab-header-inner-icon svg {
+display: none;
+}
+
+body.mod-linux .workspace-tab-header[data-type="file-explorer"] .workspace-tab-header-inner-icon::after {
+content: '';
+background-color: currentColor !important;
+-webkit-mask-image: var(--adwaita-icon-folder-visiting-symbolic);
+mask-image: var(--adwaita-icon-folder-visiting-symbolic);
+width: 16px;
+height: 16px;
+margin: auto;
+}
+
+body.mod-linux .workspace-tab-header[data-type="search"] .workspace-tab-header-inner-icon svg {
+display: none;
+}
+
+body.mod-linux .workspace-tab-header[data-type="search"] .workspace-tab-header-inner-icon::after {
+content: '';
+background-color: currentColor !important;
+-webkit-mask-image: var(--adwaita-icon-folder-saved-search-symbolic);
+mask-image: var(--adwaita-icon-folder-saved-search-symbolic);
+width: 16px;
+height: 16px;
+margin: auto;
 }`,
   },
 };

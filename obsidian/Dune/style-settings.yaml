@@ -2,9 +2,9 @@ name: DUNE - Silver
 id: obsidian-joval-theme
 settings:
   - id: all-fonts
-    title: "𝚨 Fonts"
+    title: 𝚨 Fonts
     description: manage fonts
-    title.de: "𝚨 Schriften"
+    title.de: 𝚨 Schriften
     description.de: Schriften verwalten
     type: heading
     level: 1
@@ -18,20 +18,20 @@ settings:
     level: 2
     collapsed: true
   - id: glob-fonts
-    title: ""
+    title: ''
     description: please click the "reset" button of "Font size" of (1 - Modern, 2 - Poetry, 3 - Dashboard) on first use.
     description.de: Bitte drücke die "wiederherstellen" Taste von "Schriftgröße" von (1 - Modern, 2 - Poesie, 3 - Hauptseite) vor den ersten Gebrauch.
     type: class-select
     allowEmpty: false
     default: fontmod-0
     options:
-      - label: "–"
+      - label: –
         value: fontmod-0
-      - label: "𝚨-1"
+      - label: 𝚨-1
         value: fontmod-1
-      - label: "𝚨-2"
+      - label: 𝚨-2
         value: fontmod-2
-      - label: "𝚨-3"
+      - label: 𝚨-3
         value: fontmod-3
   - id: font-modern
     title: 1 - Modern
@@ -74,7 +74,7 @@ settings:
     title: Character Font
     title.de: Charakterschrift
     type: variable-text
-    default: "cursive, Pecita, Mumsies, sans-serif"
+    default: cursive, Pecita, Mumsies, sans-serif
   - id: custom-fsz-2
     title: Font size
     title.de: Schriftgröße
@@ -94,12 +94,12 @@ settings:
     title: Header Font
     title.de: Überschriften
     type: variable-text
-    default: "Helvetica, Sengoa, Optima-Regular, GillSans"
+    default: Helvetica, Sengoa, Optima-Regular, GillSans
   - id: custom-font-c
     title: Character Font
     title.de: Charakterschrift
     type: variable-text
-    default: "Helvetica, Sengoa, Optima-Regular, GillSans"
+    default: Helvetica, Sengoa, Optima-Regular, GillSans
   - id: custom-fsz-3
     title: Font size
     title.de: Schriftgröße
@@ -131,14 +131,14 @@ settings:
   - id: prg-break
     title: Linebreak - blank
     description: ignore blank lines
-    title.de: Umbruch - Leerzeile
-    description.de: ignoriere Leerzeilen
+    title.de: Umbruch - Zeilenumbruch
+    description.de: ignoriere Zeilenumbruch (PV)
     type: class-toggle
   - id: add-link-space
     title: Empty space between links
-    description: empty space before and after links
+    description: empty space before and after [Url/Wiki]
     title.de: Leerzeichen zwischen Verweise
-    description.de: Leerraum vor und nach Verweisen
+    description.de: Leerraum vor und nach [Url/Wiki]
     type: class-toggle
   - id: mod-lines-fonts
     title: Headers
@@ -149,8 +149,8 @@ settings:
   - id: initial-sz
     title: Initial size
     title.de: Initiale/Majuskel Größe
-    description: "#raisecap ==L==orem - #dropcap ==L==orem"
-    description.de: "#majuskel ==L==orem - #initiale ==L==orem"
+    description: '#raisecap ==L==orem - #dropcap ==L==orem'
+    description.de: '#majuskel ==L==orem - #initiale ==L==orem'
     type: variable-number-slider
     format: px
     default: 110
@@ -170,28 +170,28 @@ settings:
     title.de: Überschrift - Kontakte
     description: cssclass "contacts"
     type: variable-text
-    default: 'Helvetica, "Century Gothic", Roboto, Arial, sans-serif'
+    default: Helvetica, "Century Gothic", Roboto, Arial, sans-serif
   - id: recipes-font
     title: Header - Recipes
     title.de: Überschrift - Rezepte
     description: cssclass "recipes"
     type: variable-text
-    default: 'cursive, Mumsies, Helvetica, "Century Gothic", Roboto, Arial, sans-serif'
+    default: cursive, Mumsies, Helvetica, "Century Gothic", Roboto, Arial, sans-serif
   - id: movies-font
     title: Header - Movies
     title.de: Überschrift - Filme
     description: cssclass "movies"
     type: variable-text
-    default: 'AbadiMT-CondensedLight, Helvetica, "Century Gothic", Roboto, Arial, sans-serif'
+    default: AbadiMT-CondensedLight, Helvetica, "Century Gothic", Roboto, Arial, sans-serif
   - id: initial-font
     title: Initial Font
     title.de: Initiale/Majuskelschrift
     type: variable-text
     default: '"Manuskript Gothisch", Pecita, Mumsies, Helvetica, Sengoa, Optima-Regular'
   - id: img-options
-    title: "∗ Pictures"
+    title: ∗ Pictures
     description: manage pictures
-    title.de: "∗ Bilder"
+    title.de: ∗ Bilder
     description.de: Bilder verwalten
     type: heading
     level: 1
@@ -250,8 +250,8 @@ settings:
   - id: bwidth-s1
     title: Frame 1 - frame thickness
     title.de: Rahmen 1 - Rahmenstärke
-    description: "![[image.png | frame-s1]]"
-    description.de: "![[bild.png | rahmen-s1]]"
+    description: '![[image.png | frame-s1]]'
+    description.de: '![[bild.png | rahmen-s1]]'
     type: variable-number-slider
     format: px
     default: 6
@@ -264,13 +264,13 @@ settings:
     type: variable-themed-color
     format: rgb
     opacity: true
-    default-light: "#4a6cb0"
-    default-dark: "#ff7029"
+    default-light: '#4a6cb0'
+    default-dark: '#ff7029'
   - id: bwidth-s2
     title: Frame 2 - frame thickness
     title.de: Rahmen 2 - Rahmenstärke
-    description: "![[image.png | frame-s2]]"
-    description.de: "![[bild.png | rahmen-s2]]"
+    description: '![[image.png | frame-s2]]'
+    description.de: '![[bild.png | rahmen-s2]]'
     type: variable-number-slider
     format: px
     default: 6
@@ -283,8 +283,8 @@ settings:
     type: variable-themed-color
     format: rgb
     opacity: true
-    default-light: "#4a6cb0"
-    default-dark: "#ff7029"
+    default-light: '#4a6cb0'
+    default-dark: '#ff7029'
   - id: image-frames-deco
     title: Deco frame
     title.de: Deko Rahmen
@@ -294,12 +294,12 @@ settings:
     level: 3
     collapsed: true
   - id: bframe-a
-    title: "picture.png | frame-a"
-    title.de: "![[bild.png | rahmen-a]]"
+    title: picture.png | frame-a
+    title.de: '![[bild.png | rahmen-a]]'
     description: load (png) image frames from the web.
     description.de: es werden (png)-Bilderrahmen aus dem Netz geladen.
     type: variable-text
-    default: "url('')"
+    default: url('')
   - id: bslice-a
     title: Frame tiling
     title.de: Rahmenteilung
@@ -319,12 +319,12 @@ settings:
     max: 100
     step: 5
   - id: bframe-b
-    title: "picture.png | frame-b"
-    title.de: "![[bild.png | rahmen-b]]"
+    title: picture.png | frame-b
+    title.de: '![[bild.png | rahmen-b]]'
     description: load (png) image frames from the web.
     description.de: es werden (png)-Bilderrahmen aus dem Netz geladen.
     type: variable-text
-    default: "url('')"
+    default: url('')
   - id: bslice-b
     title: Frame tiling
     title.de: Rahmenteilung
@@ -390,11 +390,11 @@ settings:
     title.de: Alternatives Profilbild
     description.de: Das Profilbild muss als gleichseitiges png vorliegen (aktive Netzverbindung erforderlich)
     type: variable-text
-    default: "url('')"
+    default: url('')
   - id: all-colors
-    title: "⫺ Colors"
+    title: ⫺ Colors
     description: manage colors
-    title.de: "⫺ Farben"
+    title.de: ⫺ Farben
     description.de: Farben verwalten
     type: heading
     level: 1
@@ -408,34 +408,34 @@ settings:
     level: 2
     collapsed: false
   - id: switch-dcol
-    title: "○ Light Theme"
-    title.de: "○ Helles Thema"
+    title: ○ Light Theme
+    title.de: ○ Helles Thema
     type: class-select
     allowEmpty: false
     default: col-mod-0
     options:
-      - label: "–"
+      - label: –
         value: col-mod-0
-      - label: "Dune-1"
+      - label: Dune-1
         value: col-mod-a
-      - label: "Dune-2"
+      - label: Dune-2
         value: col-mod-b
-      - label: "Dune-3"
+      - label: Dune-3
         value: col-mod-c
   - id: switch-lcol
-    title: "● Dark Theme"
-    title.de: "● Dunkles Thema"
+    title: ● Dark Theme
+    title.de: ● Dunkles Thema
     type: class-select
     allowEmpty: false
     default: col-mod-1
     options:
-      - label: "–"
+      - label: –
         value: col-mod-1
-      - label: "Dune-4"
+      - label: Dune-4
         value: col-mod-d
-      - label: "Dune-5"
+      - label: Dune-5
         value: col-mod-e
-      - label: "Dune-6"
+      - label: Dune-6
         value: col-mod-f
   - id: dim-pictures
     title: Dim Pictures
@@ -446,15 +446,15 @@ settings:
     allowEmpty: false
     default: dark-1
     options:
-      - label: "–"
+      - label: –
         value: dark-1
-      - label: "● 1"
+      - label: ● 1
         value: dark-2
-      - label: "● 2"
+      - label: ● 2
         value: dark-3
-      - label: "● 3"
+      - label: ● 3
         value: dark-4
-      - label: "● 4"
+      - label: ● 4
         value: dark-5
   - id: custom-colors-scheme
     title: Custom Theme
@@ -476,66 +476,66 @@ settings:
     type: variable-themed-color
     format: hex
     opacity: false
-    default-light: "#866A49"
-    default-dark: "#DA8924"
+    default-light: '#866A49'
+    default-dark: '#DA8924'
   - id: text-normal-c
-    title: "Text: Normal"
+    title: 'Text: Normal'
     title.de: Charakterschrift
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#433721"
-    default-dark: "#CAD3EB"
+    default-light: '#433721'
+    default-dark: '#CAD3EB'
   - id: text-muted-c
-    title: "Text: Muted"
+    title: 'Text: Muted'
     title.de: Kontrastarme Schrift
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#2C455F"
-    default-dark: "#B6B6B6"
+    default-light: '#2C455F'
+    default-dark: '#B6B6B6'
   - id: text-faint-c
-    title: "Text: Faint"
+    title: 'Text: Faint'
     title.de: Blasse Schrift
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#2C455F"
-    default-dark: "#B6B6B6"
+    default-light: '#2C455F'
+    default-dark: '#B6B6B6'
   - id: link-color-c
-    title: "Text: Links"
+    title: 'Text: Links'
     title.de: Verweise Schrift
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#965416"
-    default-dark: "#CFA96F"
+    default-light: '#965416'
+    default-dark: '#CFA96F'
   - id: bold-color-c
-    title: "Text: Bold"
+    title: 'Text: Bold'
     title.de: Fett Schrift
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#9A4931"
-    default-dark: "#E2A648"
+    default-light: '#9A4931'
+    default-dark: '#E2A648'
   - id: italic-color-c
-    title: "Text: Italic"
+    title: 'Text: Italic'
     title.de: Kursiv Schrift
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#9A4931"
-    default-dark: "#E2A648"
+    default-light: '#9A4931'
+    default-dark: '#E2A648'
   - id: text-selection-c
-    title: "Text: Background highlight"
+    title: 'Text: Background highlight'
     description: for selected text
     title.de: Hervorhebung Characterschrift
     description.de: für angewählten Text
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#DD94178A"
-    default-dark: "#4A6CB0A1"
+    default-light: '#DD94178A'
+    default-dark: '#4A6CB0A1'
   - id: interface-col-scheme
     title: Interface colors
     title.de: Oberflächenfarbe
@@ -548,26 +548,26 @@ settings:
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#D9B98C"
-    default-dark: "#2D2A28"
+    default-light: '#D9B98C'
+    default-dark: '#2D2A28'
   - id: background-secondary-c
     title: Background Secondary
     title.de: Hintergrund Sekundär
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#D5975F"
-    default-dark: "#33362D"
+    default-light: '#D5975F'
+    default-dark: '#33362D'
   - id: background-modifier-border-c
-    title: "Background Modifier: Border"
+    title: 'Background Modifier: Border'
     description: for border lines in Obsidians interface
     title.de: Menüunterteilungen
     description.de: Randlinien für Obsidians Oberfläche
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#B1B1B1"
-    default-dark: "#4B4D45"
+    default-light: '#B1B1B1'
+    default-dark: '#4B4D45'
   - id: def-red
     title: Default red
     title.de: Standard Rot
@@ -576,8 +576,8 @@ settings:
     type: variable-themed-color
     format: rgb
     opacity: true
-    default-light: "#db3434"
-    default-dark: "#b92b2b"
+    default-light: '#db3434'
+    default-dark: '#b92b2b'
   - id: def-green
     title: Default green
     title.de: Standard Grün
@@ -586,8 +586,8 @@ settings:
     type: variable-themed-color
     format: rgb
     opacity: true
-    default-light: "#52a543"
-    default-dark: "#228b22"
+    default-light: '#52a543'
+    default-dark: '#228b22'
   - id: def-blue
     title: Default blue
     title.de: Standard Blau
@@ -596,8 +596,8 @@ settings:
     type: variable-themed-color
     format: rgb
     opacity: true
-    default-light: "#0080ff"
-    default-dark: "#0080ff"
+    default-light: '#0080ff'
+    default-dark: '#0080ff'
   - id: extra-col-palette
     title: Extra colors
     title.de: Zusätzliche Farben
@@ -612,8 +612,8 @@ settings:
     type: variable-themed-color
     format: rgb
     opacity: true
-    default-light: "#808080"
-    default-dark: "#808080"
+    default-light: '#808080'
+    default-dark: '#808080'
   - id: hr-stars
     title: Decorative Stars
     description: decorative fences "stars"
@@ -622,18 +622,18 @@ settings:
     type: variable-themed-color
     format: rgb
     opacity: true
-    default-light: "#808080"
-    default-dark: "#808080"
+    default-light: '#808080'
+    default-dark: '#808080'
   - id: initial-col
     title: Initial (Poetry)
-    description: "#dropcap ==L==orem - #raisecap ==L==orem"
+    description: '#dropcap ==L==orem - #raisecap ==L==orem'
     title.de: Majuskel / Initiale (Poesie)
-    description.de: "#initiale ==L==orem - #majuskel ==L==orem"
+    description.de: '#initiale ==L==orem - #majuskel ==L==orem'
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#800000"
-    default-dark: "#800000"
+    default-light: '#800000'
+    default-dark: '#800000'
   - id: checkB-col
     title: Checkbox color
     title.de: Ankreuzpunkt - Farbe
@@ -665,9 +665,9 @@ settings:
     default: false
   - id: show-ui-btns
     title: Buttons
-    description: restore buttons (Mobile & Pc)
+    description: restore buttons
     title.de: Tasten
-    description.de: Wiederherstellung Tasten (Telefon & Rechner)
+    description.de: Wiederherstellung Tasten
     type: class-toggle
   - id: show-nav-btns
     title: Buttons - panels
@@ -689,11 +689,12 @@ settings:
     description.de: Wiederherstellung inaktiver Reiter
     type: class-toggle
   - id: slim-bars
-    title: Slim bars
-    description: restore default tab-height (Phone & Desktop)
-    title.de: Schmale Leisten
-    description.de: Wiederherstellung normale Reiterhöhe (Telefon & Rechner)
+    title: Slim bars (Phone & Desktop)
+    description: restore default tab-height
+    title.de: Schmale Leisten (Telefon & Rechner)
+    description.de: Wiederherstellung normale Reiterhöhe
     type: class-toggle
+    default: true
   - id: stacked-tabs-focused
     title: Stacked notes (One page)
     description: restore defaults for stacked-view (2 pages)
@@ -741,8 +742,8 @@ settings:
     type: class-toggle
   - id: show-ls-marker
     title: List marker
-    description: restore list marker
-    title.de: Listen Platzhalter
+    description: restore list enumeration
+    title.de: Listen Aufzählung
     description.de: Wiederherstellung Punkt anstatt Klammer
     type: class-toggle
   - id: edgy-tables
@@ -820,10 +821,10 @@ settings:
     level: 2
     collapsed: true
   - id: show-canvas-ui
-    title: Canvas buttons
-    description: restore canvas buttons
-    title.de: Canvas Tasten
-    description.de: Wiederherstellung Canvas Tasten
+    title: Canvas control buttons
+    description: restore canvas control buttons
+    title.de: Canvas Kontroll-Tasten
+    description.de: Wiederherstellung Canvas Kontroll-Tasten
     type: class-toggle
     default: true
   - id: show-canvas-nl
@@ -850,11 +851,6 @@ settings:
     description: restores standard. Note, 'Editor > Display > Properties in document > Visible / Source' must be active
     description.de: Wiederherstellung Standard. Beachte, 'Editor > Anzeige > Eigenschaften im Dokument > Sichtbar / Quelle' muss eingeschaltet sein
     type: class-toggle
-  - id: print-fontmatter
-    title: Print yaml-fontmatter (PDF)
-    title.de: Yaml-Kopfzeile ausdrucken (PDF)
-    type: class-toggle
-    default: false
   - id: fade-op-d
     title: Extra toggles
     title.de: Zusätzliche Schalter
@@ -880,11 +876,11 @@ settings:
     max: 18
     step: 1
   - id: phone-grid-tb
-    title: Toolbar lines
-    title.de: Werkzeugleiste Zeilen
+    title: Toolbar lines (phone)
+    title.de: Werkzeugleiste Zeilen (Tel)
+    description: Multiple rows (max 4)
+    description.de: Mehrfache Zeilen (max 4)
     type: variable-number-slider
-    description: Multiple rows (max 4) - phone
-    description.de: Mehrfache Zeilen (max 4) - Telefon
     format: px
     default: 70
     min: 35
@@ -900,14 +896,14 @@ settings:
   - id: man-info
     title: Manual
     title.de: Handbuch (in englisch, mit deutschen Optionen)
-    description: "[First steps](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main#first-steps)<br>[Features](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main/Wiki)<br> [Troubleshooting](https://github.com/Jopp-gh/Obsidian-Dune84/blob/main/Wiki/Troubleshooting.md)<br>[License](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main?tab=GPL-2.0-1-ov-file#)"
-    description.de: "[Erste Schritte](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main#first-steps)<br>[Funktionen](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main/Wiki)<br>[Problemsuche](https://github.com/Jopp-gh/Obsidian-Dune84/blob/main/Wiki/Troubleshooting.md)<br>[Lizenz](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main?tab=GPL-2.0-1-ov-file#)"
+    description: '[First steps](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main#first-steps)<br>[Features](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main/Wiki)<br> [Troubleshooting](https://github.com/Jopp-gh/Obsidian-Dune84/blob/main/Wiki/Troubleshooting.md)<br>[License](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main?tab=GPL-2.0-1-ov-file#)'
+    description.de: '[Erste Schritte](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main#first-steps)<br>[Funktionen](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main/Wiki)<br>[Problemsuche](https://github.com/Jopp-gh/Obsidian-Dune84/blob/main/Wiki/Troubleshooting.md)<br>[Lizenz](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main?tab=GPL-2.0-1-ov-file#)'
     type: info-text
     markdown: true
   - id: css-info
     title: Cheatsheet (Dune shorthands)
     title.de: Spickzettel (Dune Kürzel)
-    description: "[Css classes](https://github.com/Jopp-gh/Obsidian-Dune84/blob/main/Wiki/cheatsheet%20cssclasses%20Dune.md)<br>[Callout, fences, tags](https://github.com/Jopp-gh/Obsidian-Dune84/blob/main/Wiki/cheatsheet-Callouts%2C%20Fences%2C%20Tags.md)"
+    description: '[Css classes](https://github.com/Jopp-gh/Obsidian-Dune84/blob/main/Wiki/cheatsheet%20cssclasses%20Dune.md)<br>[Callout, fences, tags](https://github.com/Jopp-gh/Obsidian-Dune84/blob/main/Wiki/cheatsheet-Callouts%2C%20Fences%2C%20Tags.md)'
     type: info-text
     markdown: true
   - id: snipp-info

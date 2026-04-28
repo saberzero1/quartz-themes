@@ -46,6 +46,12 @@ export interface ThemeData {
   light: AspectCSS;
   /** Optional extra CSS to inject alongside the theme (e.g. CRT effects, snow animations). */
   extras?: string;
+  /**
+   * Pre-extracted CSS for class-toggle and class-select Style Settings.
+   * Maps class name → unconditional CSS (with body.class selector stripped).
+   * Generated at build time from the raw theme CSS.
+   */
+  classSettings?: Record<string, string>;
 }
 
 /** Metadata about a theme (modes, variations, fonts). */
@@ -71,6 +77,12 @@ export interface ThemeMeta {
   fontFiles?: FontFileEntry[];
   /** Base theme directory for font files (when variation references base theme's fonts). */
   fontDir?: string;
+  /**
+   * The Style Settings YAML root id(s) (e.g. "Appearance" for Tokyo Night).
+   * Used as the key prefix in Style Settings JSON exports (`<id>@@<setting-id>`).
+   * Themes with multiple `@settings` blocks have multiple ids.
+   */
+  styleSettingsId?: string | string[];
 }
 
 /** User-facing configuration for the QuartzTheme plugin. */
@@ -108,6 +120,14 @@ export interface ThemeOptions {
   calloutStyle?: string;
   /** Font overrides. */
   fonts?: { header?: string; body?: string; code?: string };
+  /**
+   * Style Settings overrides — either a JSON export from Obsidian's Style Settings plugin,
+   * or a path to a JSON file containing the export.
+   *
+   * Keys use the format `<style-settings-id>@@<setting-id>` (e.g. `"minimal-style@@bg1": "#1e1e2e"`).
+   * Values can be strings, numbers, or booleans.
+   */
+  styleSettings?: Record<string, string | number | boolean> | string;
 }
 
 /** Shape of a theme's lazy-loadable module. */

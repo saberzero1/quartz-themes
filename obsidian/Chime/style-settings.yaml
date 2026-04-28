@@ -35,7 +35,6 @@ settings:
         value: theme-classic
       - label: Light & Bright
         value: theme-light-and-bright
-
   - id: ui-options
     title: Layout
     type: heading
@@ -44,7 +43,6 @@ settings:
   - id: hide-dividers
     title: Hide Workspace Dividers
     type: class-toggle
-
   - id: cards-layout
     title: Cards Sidebar Layout
     description: Toggle a cards layout for sidebars. NOTE - will not have any effect if Classic Layout is turned on.
@@ -102,7 +100,7 @@ settings:
     title: Readable Line Length
     description: Change the width of the note when Readable Line Length is turned on.
     type: variable-text
-    default: "700px"
+    default: 700px
   - id: folders-heading
     title: Folders
     type: heading
@@ -140,7 +138,6 @@ settings:
         value: var(--text-faint)
       - label: Normal
         value: var(--text-normal)
-
   - id: workspace-options
     title: Background Image
     type: heading
@@ -326,7 +323,6 @@ settings:
         value: transparent
       - label: Accent
         value: hsla(var(--color-accent-hsl), 0.1
-
   - id: headings-settings
     title: Headings
     type: heading
@@ -542,13 +538,13 @@ settings:
     options:
       - Hindi
       - Roboto
-      - "Merriweather Sans"
-      - "Merriweather"
-      - "Nunito Sans"
-      - "IBM Plex Sans"
+      - Merriweather Sans
+      - Merriweather
+      - Nunito Sans
+      - IBM Plex Sans
       - Forum
-      - "EB Garamond"
-      - "Koh Santepheap"
+      - EB Garamond
+      - Koh Santepheap
       - Alice
       - Comfortaa
       - Nunito
@@ -561,12 +557,12 @@ settings:
       - Handlee
       - Arima
       - Courgette
-      - "Inknut Antiqua"
-      - "Averia Gruesa Libre"
-      - "Anonymous Pro"
-      - "Space Mono"
-      - "Ubuntu Mono"
-      - "DM Mono"
+      - Inknut Antiqua
+      - Averia Gruesa Libre
+      - Anonymous Pro
+      - Space Mono
+      - Ubuntu Mono
+      - DM Mono
   - id: plugin-options
     title: Plugins
     type: heading

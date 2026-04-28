@@ -14,9 +14,9 @@ settings:
     title: Heading 3-6 Color
     type: variable-color
     format: hex
-    default: "#FC6DAB"
+    default: '#FC6DAB'
   - id: inline-code-color
     title: Inline Code Color
     type: variable-color
     format: hex
-    default: "#FC6DAB"
+    default: '#FC6DAB'

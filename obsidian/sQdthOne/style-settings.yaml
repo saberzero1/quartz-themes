@@ -56,3 +56,4 @@ settings:
     description: Toggle this if you are using your own implementation via a CSS Snippet.
     default: false
     type: class-toggle
+  - null

@@ -9,46 +9,46 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-color: #8a5cf5 !important;
-  --highlight: color-mix(
+  --accent-color: #8a5cf5;
+  --highlight: var(--text-highlight-bg, color-mix(
 		in srgb,
 		#8a5cf5 45%,
 		transparent
-	) !important;
-  --link-color: #dadada !important;
-  --link-color-hover: #dadada !important;
-  --link-external-color: #dadada !important;
-  --link-external-color-hover: #dadada !important;
-  --link-unresolved-color: #8a5cf5 !important;
-  --link-unresolved-filter: brightness(120%) !important;
-  --link-unresolved-opacity: 1 !important;
-  --quietus-checkbox-checked-border-color: #b3b3b3 !important;
-  --quietus-checkbox-checked-hover-border-color: #dadada !important;
-  --quietus-checkbox-checked-svg-bg-color: #dadada !important;
+	));
+  --link-color: #dadada;
+  --link-color-hover: #dadada;
+  --link-external-color: #dadada;
+  --link-external-color-hover: #dadada;
+  --link-unresolved-color: #8a5cf5;
+  --link-unresolved-filter: brightness(120%);
+  --link-unresolved-opacity: 1;
+  --quietus-checkbox-checked-border-color: #b3b3b3;
+  --quietus-checkbox-checked-hover-border-color: #dadada;
+  --quietus-checkbox-checked-svg-bg-color: #dadada;
   --quietus-inline-code-background: color-mix(
 		in srgb,
 		#8a5cf5 45%,
 		transparent
-	) !important;
-  --tertiary: #dadada !important;
-  --text-accent-hover: #dadada !important;
+	);
+  --tertiary: var(--text-accent-hover, #dadada);
+  --text-accent-hover: #dadada;
   --text-highlight-bg: color-mix(
 		in srgb,
 		#8a5cf5 45%,
 		transparent
-	) !important;
-  --text-selection: color-mix(in srgb, #dadada 10%, transparent) !important;
-  --textHighlight: color-mix(
+	);
+  --text-selection: color-mix(in srgb, #dadada 10%, transparent);
+  --textHighlight: var(--text-highlight-bg, color-mix(
 		in srgb,
 		#8a5cf5 45%,
 		transparent
-	) !important;
-  --quartz-icon-color: currentColor !important;
+	));
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }`,
     typography: `html[saved-theme="dark"] body .text-highlight {
   background-color: color(srgb 0.541176 0.360784 0.960784 / 0.45);
@@ -1102,39 +1102,39 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   },
   light: {
     base: `:root:root {
-  --accent-color: #8a5cf5 !important;
-  --highlight: color-mix(
+  --accent-color: #8a5cf5;
+  --highlight: var(--text-highlight-bg, color-mix(
 		in srgb,
 		#8a5cf5 25%,
 		transparent
-	) !important;
-  --link-unresolved-color: #8a5cf5 !important;
-  --link-unresolved-opacity: 1 !important;
-  --quietus-checkbox-checked-border-color: #5c5c5c !important;
-  --quietus-checkbox-checked-hover-border-color: hsl(255, 89.76%, 75.9%) !important;
-  --quietus-checkbox-checked-svg-bg-color: #222222 !important;
+	));
+  --link-unresolved-color: #8a5cf5;
+  --link-unresolved-opacity: 1;
+  --quietus-checkbox-checked-border-color: #5c5c5c;
+  --quietus-checkbox-checked-hover-border-color: hsl(255, 89.76%, 75.9%);
+  --quietus-checkbox-checked-svg-bg-color: #222222;
   --quietus-inline-code-background: color-mix(
 		in srgb,
 		#8a5cf5 25%,
 		transparent
-	) !important;
-  --quietus-text-strong-color: #1a1a1a !important;
+	);
+  --quietus-text-strong-color: #1a1a1a;
   --text-highlight-bg: color-mix(
 		in srgb,
 		#8a5cf5 25%,
 		transparent
-	) !important;
-  --textHighlight: color-mix(
+	);
+  --textHighlight: var(--text-highlight-bg, color-mix(
 		in srgb,
 		#8a5cf5 25%,
 		transparent
-	) !important;
-  --quartz-icon-color: currentColor !important;
+	));
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }`,
     typography: `html[saved-theme="light"] body .text-highlight {
   background-color: color(srgb 0.541176 0.360784 0.960784 / 0.25);

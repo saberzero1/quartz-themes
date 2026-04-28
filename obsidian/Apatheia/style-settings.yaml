@@ -43,16 +43,12 @@ settings:
     options:
       - label: 🗿 Apatheia
         value: a-theme-apatheia
-
       - label: 👾 Purple
         value: a-theme-purple
-
       - label: 🌿 Catpuccin Mocha
         value: a-catpuccin-mocha
-
       - label: ☕ Catpuccin Espresso
         value: a-catpuccin-espresso
-
       - label: ❄ Winter
         value: a-winter
   - id: a-theme-purple-settings

@@ -3,7 +3,17 @@ id: obsidian-theme-dark-clarity
 settings:
   - id: my-info-text
     title: Dark Clarity Theme
-    description: "> 一款 obsidian 的主题 > 主要以 **高辨识度**、且 h1~h6 标题 **有主题色** 为主 > 参考 Dark Moss Theme 部分作为基底，并且进行了多处优化： > - 多款配色选择 > - 浅色模式时的配色 > - 优化辨识度（粗体明显、图片边框、引用块去斜体）> - 更多可选的优化功能（左边栏横向滚动、左边栏文件夹配色）"
+    description: |-
+      > 一款 obsidian 的主题 
+
+        > 主要以 **高辨识度**、且 h1~h6 标题 **有主题色** 为主 
+
+       > 参考 Dark Moss Theme 部分作为基底，并且进行了多处优化： 
+
+       > - 多款配色选择 
+       > - 浅色模式时的配色 
+       > - 优化辨识度（粗体明显、图片边框、引用块去斜体）
+        > - 更多可选的优化功能（左边栏横向滚动、左边栏文件夹配色） 
     type: info-text
     markdown: true
   - id: h1
@@ -13,7 +23,7 @@ settings:
     collapsed: false
   - id: main-theme
     title: 主题配色（标题、高亮等）
-    description:
+    description: null
     type: class-select
     allowEmpty: true
     default: theme-genshin-sangonomiya-kokomi1
@@ -46,7 +56,7 @@ settings:
         value: theme-testing
   - id: secondary-theme
     title: 副配色（超链、tag 等）
-    description:
+    description: null
     type: class-select
     allowEmpty: true
     default: secondary-theme-green-blue
@@ -59,7 +69,7 @@ settings:
         value: secondary-theme-testing
   - id: code-theme
     title: 代码配色（代码高亮方案）
-    description:
+    description: null
     type: class-select
     allowEmpty: true
     default: code-theme-jetbrains

@@ -1,0 +1,97 @@
+name: Future Theme
+id: future-theme
+settings:
+  - id: oled-style
+    title: OLED Dark Mode
+    type: class-toggle
+    default: false
+  - id: accent-color-options
+    title: Accent
+    type: class-select
+    allowEmpty: false
+    default: accent-yellow
+    options:
+      - label: Obsidian
+        value: accent-obsidian
+      - label: Red
+        value: accent-red
+      - label: Citrus
+        value: accent-orange
+      - label: Gold
+        value: accent-yellow
+      - label: Lime
+        value: accent-green
+      - label: Aqua
+        value: accent-cyan
+      - label: Sky Blue
+        value: accent-blue
+      - label: Cobalt
+        value: accent-purple
+      - label: Violet
+        value: accent-pink
+  - id: gradient-bg
+    title: Gradient Background
+    description: Make the note appear to be floating over an Anytype-style gradient background.
+    type: class-toggle
+    default: false
+  - id: custom-transparency
+    title: custom pane transparency
+    description: customize the note pane transparency in gradient background mode.
+    type: class-toggle
+    default: false
+  - id: page-transparency-custom
+    title: Pane Transparency
+    description: control the transparency of note panes when gradient background is enabled.
+    type: variable-number-slider
+    min: 0
+    max: 1
+    step: 0.01
+    default: 1
+  - id: heading-style
+    title: Heading Style
+    type: class-select
+    allowEmpty: false
+    default: headings-default
+    options:
+      - label: Colorful
+        value: headings-default
+      - label: Extra Colorful
+        value: headings-colored
+      - label: Less Colorful
+        value: headings-bland
+      - label: Colorless
+        value: headings-blander
+  - id: more-styles-heading
+    title: More Styles
+    description: Style specific markdown elements.
+    type: heading
+    level: 2
+    collapsed: true
+  - id: checkbox-style
+    title: Checkboxes
+    type: class-select
+    default: checkbox-alpha
+    options:
+      - label: Alpha
+        value: checkbox-alpha
+      - label: Modern
+        value: checkbox-modern
+  - id: hide-settings-descriptions
+    title: Hide item details in settings
+    description: show setting descriptions only on hover.
+    type: class-toggle
+    default: false
+  - id: user-heading
+    title: User Profile
+    description: Customize your 'User Profile' (as seen from settings)
+    type: heading
+    level: 2
+    collapsed: true
+  - id: user-icon
+    title: User Icon
+    type: variable-text
+    default: 👤
+  - id: username
+    title: Username
+    type: variable-text
+    default: Guest

@@ -1,197 +1,23 @@
-name: "Core"
-id: New-Willemstad-Core
+name: Theme Information
+id: V1-Willemstad-Info
 settings:
-  - id: no-animations
-    title: No Animations
+  - id: info-theme-documentation
+    title: Theme Documentation
+    type: info-text
+    description: '[Website](https://willemstad.cc)'
+    markdown: true
+  - id: info-theme-repository
+    title: Theme Repository
+    type: info-text
+    description: '[GitHub](https://github.com/tingmelvin/willemstad-x)'
+    markdown: true
+  - id: info-theme-mobile-support
+    title: Mobile Support
     type: class-toggle
-    description: "When enabled, this disables all animations in this theme."
+    description: Please note that Willemstad is not optimised for mobile devices at the moment.
     default: false
-  - id: no-backdrop-filter
-    title: No Backdrop Filter
+  - id: info-theme-macos-support
+    title: macOS and iOS Support
     type: class-toggle
-    description: "When enabled, this disables all backdrop filters set by this theme."
+    description: Please note that the maintainer of Willemstad does not have access to either a Mac and/or an iOS device, which have slightly different styling in the core Obsidian app. Therefore, the theme has not been ensured to work properly with macOS and iOS. Bug reports are however very welcome to resolve these issues.
     default: false
-  - id: typography-underlines
-    title: Underlines
-    description: Options to shift underlines lower/increase underline spacing (to increase readability) or to retain it as per default.
-    type: heading
-    level: 2
-    collapsed: true
-  - id: undl-text-norm
-    title: Underlines Spacing — Normal Text
-    description: Choose which underline spacing you would like your normal text to have.
-    type: class-select
-    allowEmpty: false
-    default: default
-    options:
-      - label: 🔴 Standard (Classic Obsidian Core/Classic Shimmering Focus style)
-        value: ssopt-typ-undl-nor-min
-      - label: 🟡 Additional (Shimmering Focus style for hyperlinks)
-        value: ssopt-typ-undl-nor-add
-      - label: 🟢 Maximum (Willemstad style) — Does not cross descenders (the bottom portion of letters "g, j, q, p, y")
-        value: default
-  - id: undl-hlink
-    title: Underlines Spacing — Hyperlinks
-    description: Choose which underline spacing you would like your hyperlinks to have.
-    type: class-select
-    allowEmpty: false
-    default: default
-    options:
-      - label: 🔴 Standard (Classic Obsidian style)
-        value: ssopt-typ-undl-hyp-min
-      - label: 🟡 Additional (Shimmering Focus style)
-        value: ssopt-typ-undl-hyp-add
-      - label: 🟢 Maximum (Willemstad style) — Does not cross descenders (the bottom portion of letters "g, j, q, p, y")
-        value: default
-  - id: workspace-panes-buttons
-    title: Main Workspace Buttons
-    description: Options to increase main workspace buttons icon size, paddings and margins
-    type: heading
-    level: 2
-    collapsed: true
-  - id: sidebar-icon-size
-    title: Icon Size — Sidebar Buttons
-    type: variable-number-slider
-    description: "The original settings are 18px."
-    format: px
-    default: 18
-    min: 10
-    max: 24
-    step: 1
-  - id: header-icon-size
-    title: Icon Size — Header Buttons
-    type: variable-number-slider
-    description: "The original settings are 16px."
-    format: px
-    default: 16
-    min: 10
-    max: 24
-    step: 1
-  - id: tab-icon-size
-    title: Icon Size — Tab Buttons
-    type: variable-number-slider
-    description: "The original settings are 14px."
-    format: px
-    default: 14
-    min: 10
-    max: 24
-    step: 1
-  - id: header-padding
-    title: Padding — Header Buttons
-    type: variable-number-slider
-    description: "The original settings are 6px. Math calculations sets the Tab Button Padding from this value."
-    format: px
-    default: 6
-    min: 0
-    max: 12
-    step: 1
-  - id: header-margin
-    title: Margin
-    type: variable-number-slider
-    description: "This sets many margin values in the UI, and works because of math magic. The original settings are 4px."
-    format: px
-    default: 4
-    min: 0
-    max: 12
-    step: 1
-  #name: "Editor"
-  #id: New-Willemstad-Editor
-  - id: ssopt-editor-vll
-    title: Override Line Lengths
-    type: class-toggle
-    description: "When enabled, this overrides the Readable Line Length core setting. You are then able to set the line length you would like to use."
-    default: false
-  - id: width-vll
-    title: Custom Maximum Line Length
-    description: "Set the maximum line length. Accepts all valid CSS units."
-    type: variable-text
-    default: 700px
-  - id: ssopt-editor-vll-title
-    title: Fit Titles to Line Length
-    description: "When enabled, this will fit titles to the editor line length."
-    warning: "Note that this changes the display of the title's bottom border too."
-    type: class-toggle
-    default: false
-  - id: typography-highlight
-    title: Highlights
-    description: Options to change highlighting colours.
-    type: heading
-    level: 2
-    collapsed: true
-  - id: highlight-col-original
-    title: "Use Standard Highlight Colours"
-    type: class-toggle
-    description: When enabled, this will disable the custom Willemstad highlight colours and use the standard colours used for highlighting.
-    default: false
-  - id: col-highlight-text
-    title: "Highlighted Text Colour"
-    type: variable-themed-color
-    description: "Colour of the text highlighted — this defaults to black."
-    opacity: false
-    format: hsl
-    default-light: hsl(0, 0%, 0%)
-    default-dark: hsl(0, 0%, 0%)
-  - id: col-highlight-0
-    title: "Highlight Colour (Willemstad) — default"
-    type: variable-themed-color
-    description: "Default highlight colour (==)"
-    opacity: false
-    format: hsl
-    default-light: hsl(46, 100%, 50%)
-    default-dark: hsl(46, 100%, 50%)
-  - id: col-highlight-1
-    title: "Highlight Colour (Willemstad) — additional #1 (italics + highlight markdown)"
-    type: variable-themed-color
-    description: "Colour of the highlight when you use the italics markdown syntax with the highlight markdown syntax (*==)."
-    opacity: false
-    format: hsl
-    default-light: hsl(76, 100%, 50%)
-    default-dark: hsl(76, 100%, 50%)
-  - id: col-highlight-2
-    title: "Highlight Colour (Willemstad) — additional #2 (bold + highlight markdown)"
-    description: "Colour of the highlight when you use the bold markdown syntax with the highlight markdown syntax (**==)."
-    type: variable-themed-color
-    opacity: false
-    format: hsl
-    default-light: hsl(166, 100%, 50%)
-    default-dark: hsl(166, 100%, 50%)
-  - id: col-highlight-3
-    title: "Highlight Colour (Willemstad) — additional #3 (bold + italics + highlight markdown)"
-    description: "Colour of the highlight when you use the italics, bold and highlight markdown syntax together (***==)."
-    type: variable-themed-color
-    opacity: false
-    format: hsl
-    default-light: hsl(262, 44%, 82%)
-    default-dark: hsl(262, 44%, 82%)
-  - id: col-highlight-0-org
-    title: "Highlight Colour (Standard) — default"
-    type: variable-themed-color
-    description: "Default highlight colour (==)"
-    opacity: false
-    format: hsl
-    default-light: hsl(60, 100%, 50%)
-    default-dark: hsl(60, 100%, 50%)
-  - id: col-highlight-1-org
-    title: "Highlight Colour (Standard) — additional #1 (italics + highlight markdown)"
-    type: variable-themed-color
-    description: "Colour of the highlight when you use the italics markdown syntax with the highlight markdown syntax (*==)."
-    opacity: false
-    format: hsl
-    default-light: hsl(120, 100%, 50%)
-    default-dark: hsl(120, 100%, 50%)
-  - id: col-highlight-2-org
-    title: "Highlight Colour (Standard) — additional #2 (bold + highlight markdown)"
-    description: "Colour of the highlight when you use the bold markdown syntax with the highlight markdown syntax (**==)."
-    type: variable-themed-color
-    opacity: false
-    format: hsl
-    default-light: hsl(180, 100%, 50%)
-    default-dark: hsl(180, 100%, 50%)
-  - id: col-highlight-3-org
-    title: "Highlight Colour (Standard) — additional #3 (bold + italics + highlight markdown)"
-    description: "Colour of the highlight when you use the italics, bold and highlight markdown syntax together (***==)."
-    type: variable-themed-color
-    opacity: false
-    format: hsl
-    default-light: hsl(300, 100%, 50%)
-    default-dark: hsl(300, 100%, 50%)

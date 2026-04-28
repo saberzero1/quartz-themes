@@ -1,299 +1,305 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "encore", modes: ["dark", "light"], variations: [], fonts: [] },
+  meta: {
+    name: "encore",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+    styleSettingsId: "encore-settings",
+  },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-h: 262 !important;
-  --accent-l: 69% !important;
-  --accent-s: 83% !important;
-  --background-modifier-active-hover: hsla(262, 83%, 69%, 0.1) !important;
-  --background-modifier-border: rgb(45, 45, 45) !important;
-  --background-modifier-border-focus: rgb(125, 125, 125) !important;
-  --background-modifier-border-hover: rgb(75, 75, 75) !important;
-  --background-modifier-form-field: rgb(38, 38, 38) !important;
-  --background-modifier-form-field-hover: rgb(38, 38, 38) !important;
-  --background-primary: rgb(15, 15, 15) !important;
-  --background-primary-alt: rgb(27, 27, 27) !important;
-  --background-secondary: rgb(34, 34, 34) !important;
-  --background-secondary-alt: rgb(45, 45, 45) !important;
-  --bases-cards-background: rgb(15, 15, 15) !important;
-  --bases-cards-cover-background: rgb(27, 27, 27) !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(45, 45, 45) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(75, 75, 75) !important;
-  --bases-embed-border-color: rgb(45, 45, 45) !important;
-  --bases-group-heading-property-color: rgb(200, 200, 200) !important;
-  --bases-table-border-color: rgb(45, 45, 45) !important;
-  --bases-table-cell-background-active: rgb(15, 15, 15) !important;
-  --bases-table-cell-background-disabled: rgb(27, 27, 27) !important;
-  --bases-table-cell-background-selected: hsla(262, 83%, 69%, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(125, 125, 125) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(262, 83%, 69%) !important;
-  --bases-table-group-background: rgb(27, 27, 27) !important;
-  --bases-table-header-background: rgb(15, 15, 15) !important;
-  --bases-table-header-color: rgb(200, 200, 200) !important;
-  --bases-table-summary-background: rgb(15, 15, 15) !important;
-  --blockquote-border-color: hsl(262, 83%, 69%) !important;
-  --blur-background: color-mix(in srgb, rgb(45, 45, 45) 65%, transparent) linear-gradient(rgb(45, 45, 45), color-mix(in srgb, rgb(45, 45, 45) 65%, transparent)) !important;
-  --bold-weight: 800 !important;
-  --canvas-background: rgb(15, 15, 15) !important;
-  --canvas-card-label-color: rgb(135, 135, 135) !important;
-  --canvas-dot-pattern: rgb(45, 45, 45) !important;
-  --caret-color: rgb(245, 245, 245) !important;
-  --checkbox-border-color: rgb(135, 135, 135) !important;
-  --checkbox-border-color-hover: rgb(200, 200, 200) !important;
-  --checkbox-color: hsl(262, 83%, 69%) !important;
-  --checkbox-color-hover: hsl(259, 84.66%, 79.35%) !important;
-  --checkbox-marker-color: rgb(15, 15, 15) !important;
-  --checklist-done-color: rgb(135, 135, 135) !important;
-  --checklist-done-decoration: none !important;
-  --code-background: rgb(27, 27, 27) !important;
-  --code-border-color: rgb(45, 45, 45) !important;
-  --code-comment: rgb(135, 135, 135) !important;
-  --code-normal: rgb(245, 245, 245) !important;
-  --code-punctuation: rgb(200, 200, 200) !important;
-  --collapse-icon-color: rgb(135, 135, 135) !important;
-  --collapse-icon-color-collapsed: hsl(259, 84.66%, 79.35%) !important;
-  --color-accent: hsl(262, 83%, 69%) !important;
-  --color-accent-1: hsl(259, 84.66%, 79.35%) !important;
-  --color-accent-2: hsl(257, 87.15%, 89.01%) !important;
-  --color-accent-hsl: 262, 83%, 69% !important;
-  --color-base-00: rgb(15, 15, 15) !important;
-  --color-base-05: rgb(22, 22, 22) !important;
-  --color-base-10: rgb(27, 27, 27) !important;
-  --color-base-100: rgb(245, 245, 245) !important;
-  --color-base-20: rgb(34, 34, 34) !important;
-  --color-base-25: rgb(38, 38, 38) !important;
-  --color-base-30: rgb(45, 45, 45) !important;
-  --color-base-35: rgb(75, 75, 75) !important;
-  --color-base-40: rgb(125, 125, 125) !important;
-  --color-base-50: rgb(135, 135, 135) !important;
-  --color-base-60: rgb(180, 180, 180) !important;
-  --color-base-70: rgb(200, 200, 200) !important;
-  --dark: rgb(245, 245, 245) !important;
-  --darkgray: rgb(245, 245, 245) !important;
-  --divider-color: rgb(45, 45, 45) !important;
-  --divider-color-hover: hsl(262, 83%, 69%) !important;
-  --dropdown-background: rgb(45, 45, 45) !important;
-  --dropdown-background-hover: rgb(75, 75, 75) !important;
-  --embed-block-shadow-hover: 0 0 0 1px rgb(45, 45, 45), inset 0 0 0 1px rgb(45, 45, 45) !important;
-  --embed-border-start: 2px solid hsl(262, 83%, 69%) !important;
-  --en-acrylic: blur(8px) !important;
-  --en-acrylic-opacity: 0.66 !important;
-  --en-modal-backdrop: blur(25px) !important;
-  --en-opacity: 1 !important;
-  --encore-translucency-image: url("https://images.unsplash.com/photo-1707494966495-a2cc8c1dac1f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") !important;
-  --encore-translucency-strength: 0.25 !important;
-  --file-header-background: rgb(15, 15, 15) !important;
-  --file-header-background-focused: rgb(15, 15, 15) !important;
-  --flair-background: rgb(45, 45, 45) !important;
-  --flair-color: rgb(245, 245, 245) !important;
-  --footnote-divider-color: rgb(45, 45, 45) !important;
-  --footnote-id-color: rgb(200, 200, 200) !important;
-  --footnote-id-color-no-occurrences: rgb(135, 135, 135) !important;
-  --footnote-line-height: 1.65 !important;
-  --grain: url("data:image/pngbase64,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") !important;
-  --graph-line: rgb(75, 75, 75) !important;
-  --graph-node: rgb(200, 200, 200) !important;
-  --graph-node-focused: hsl(259, 84.66%, 79.35%) !important;
-  --graph-node-unresolved: rgb(135, 135, 135) !important;
-  --graph-text: rgb(245, 245, 245) !important;
-  --gray: rgb(200, 200, 200) !important;
-  --grey-100-rgb: 245, 245, 245 !important;
-  --grey-200-rgb: 200, 200, 200 !important;
-  --grey-300-rgb: 180, 180, 180 !important;
-  --grey-350-rgb: 135, 135, 135 !important;
-  --grey-400-rgb: 125, 125, 125 !important;
-  --grey-50-rgb: 250, 250, 250 !important;
-  --grey-500-rgb: 75, 75, 75 !important;
-  --grey-600-rgb: 45, 45, 45 !important;
-  --grey-700-rgb: 38, 38, 38 !important;
-  --grey-800-rgb: 34, 34, 34 !important;
-  --grey-850-rgb: 27, 27, 27 !important;
-  --grey-875-rgb: 22, 22, 22 !important;
-  --grey-900-rgb: 15, 15, 15 !important;
-  --h1-color: rgba(245, 245, 245, 0.9) !important;
-  --h1-line-height: 1.111 !important;
-  --h1-size: 2.25rem !important;
-  --h1-weight: 800 !important;
-  --h2-color: rgba(245, 245, 245, 0.925) !important;
-  --h2-line-height: 1.333 !important;
-  --h2-size: 1.5rem !important;
-  --h2-weight: 700 !important;
-  --h3-color: rgba(245, 245, 245, 0.95) !important;
-  --h3-line-height: 1.6 !important;
-  --h3-size: 1.25rem !important;
-  --h3-weight: 600 !important;
-  --h4-color: rgba(245, 245, 245, 0.975) !important;
-  --h4-line-height: 1.5 !important;
-  --h4-size: 1rem !important;
-  --h4-weight: 600 !important;
-  --h5-line-height: 1.6 !important;
-  --h5-size: 0.95rem !important;
-  --h5-weight: 600 !important;
-  --h6-line-height: 1.7 !important;
-  --h6-size: 0.85rem !important;
-  --header-height: 44px !important;
-  --heading-formatting: rgb(135, 135, 135) !important;
-  --highlight: hsla(262, 83%, 69%, 0.1) !important;
-  --highlight-hue: 37 !important;
-  --hr-color: #ffffff90 !important;
-  --hr-thickness: 1px !important;
-  --icon-color: rgb(200, 200, 200) !important;
-  --icon-color-active: hsl(259, 84.66%, 79.35%) !important;
-  --icon-color-focused: rgb(245, 245, 245) !important;
-  --icon-color-hover: rgb(200, 200, 200) !important;
-  --inline-title-color: hsl(257, 87.15%, 89.01%) !important;
-  --inline-title-line-height: 1.111 !important;
-  --inline-title-size: 2.25rem !important;
-  --inline-title-weight: 800 !important;
-  --input-date-separator: rgb(135, 135, 135) !important;
-  --input-placeholder-color: rgb(135, 135, 135) !important;
-  --interactive-accent: hsl(262, 83%, 69%) !important;
-  --interactive-accent-hover: hsl(259, 84.66%, 79.35%) !important;
-  --interactive-accent-hsl: 262, 83%, 69% !important;
-  --interactive-hover: rgb(75, 75, 75) !important;
-  --interactive-normal: rgb(45, 45, 45) !important;
-  --light: rgb(15, 15, 15) !important;
-  --lightgray: rgb(34, 34, 34) !important;
-  --line-height-normal: 1.65 !important;
-  --link-color: hsl(257, 87.15%, 89.01%) !important;
-  --link-color-hover: hsl(257, 87.15%, 89.01%) !important;
-  --link-decoration: none !important;
-  --link-external-color: hsl(259, 84.66%, 79.35%) !important;
-  --link-external-color-hover: hsl(257, 87.15%, 89.01%) !important;
-  --link-unresolved-color: hsl(259, 84.66%, 79.35%) !important;
-  --link-unresolved-decoration-color: hsla(262, 83%, 69%, 0.3) !important;
-  --link-unresolved-filter: contrast(0.3) brightness(120%) !important;
-  --link-unresolved-opacity: 1 !important;
-  --list-marker-color: rgb(125, 125, 125) !important;
-  --list-marker-color-collapsed: hsl(259, 84.66%, 79.35%) !important;
-  --list-marker-color-hover: rgb(200, 200, 200) !important;
-  --lucide-maximize: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 3H5a2 2 0 0 0-2 2v3'%3E%3C/path%3E%3Cpath d='M21 8V5a2 2 0 0 0-2-2h-3'%3E%3C/path%3E%3Cpath d='M3 16v3a2 2 0 0 0 2 2h3'%3E%3C/path%3E%3Cpath d='M16 21h3a2 2 0 0 0 2-2v-3'%3E%3C/path%3E%3C/svg%3E") !important;
-  --lucide-minimize: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-minimize'%3E%3Cpath d='M8 3v3a2 2 0 0 1-2 2H3'/%3E%3Cpath d='M21 8h-3a2 2 0 0 1-2-2V3'/%3E%3Cpath d='M3 16h3a2 2 0 0 1 2 2v3'/%3E%3Cpath d='M16 21v-3a2 2 0 0 1 2-2h3'/%3E%3C/svg%3E") !important;
-  --lucide-minus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E") !important;
-  --lucide-x: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E") !important;
-  --menu-background: rgb(34, 34, 34) !important;
-  --menu-border-color: rgb(75, 75, 75) !important;
-  --metadata-border-color: rgb(45, 45, 45) !important;
-  --metadata-divider-color: rgb(45, 45, 45) !important;
-  --metadata-input-text-color: rgb(245, 245, 245) !important;
-  --metadata-label-text-color: rgb(200, 200, 200) !important;
-  --metadata-label-text-color-hover: rgb(200, 200, 200) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(125, 125, 125) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(75, 75, 75) !important;
-  --modal-background: rgb(15, 15, 15) !important;
-  --modal-border-color: rgb(125, 125, 125) !important;
-  --nav-collapse-icon-color: rgb(135, 135, 135) !important;
-  --nav-collapse-icon-color-collapsed: rgb(135, 135, 135) !important;
-  --nav-heading-color: rgb(245, 245, 245) !important;
-  --nav-heading-color-collapsed: rgb(135, 135, 135) !important;
-  --nav-heading-color-collapsed-hover: rgb(200, 200, 200) !important;
-  --nav-heading-color-hover: rgb(245, 245, 245) !important;
-  --nav-item-background-selected: hsla(262, 83%, 69%, 0.15) !important;
-  --nav-item-color: rgb(200, 200, 200) !important;
-  --nav-item-color-active: rgb(245, 245, 245) !important;
-  --nav-item-color-highlighted: hsl(259, 84.66%, 79.35%) !important;
-  --nav-item-color-hover: rgb(245, 245, 245) !important;
-  --nav-item-color-selected: rgb(245, 245, 245) !important;
-  --nav-tag-color: rgb(135, 135, 135) !important;
-  --nav-tag-color-active: rgb(200, 200, 200) !important;
-  --nav-tag-color-hover: rgb(200, 200, 200) !important;
-  --obsidian-logo-small: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='8' height='8' fill='none' stroke='%23ffffff90' stroke-width='5%' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E") !important;
-  --obsidian-logo-small-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='8' height='8' fill='none' stroke='%2300000090' stroke-width='5%' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E") !important;
-  --pdf-background: rgb(15, 15, 15) !important;
-  --pdf-page-background: rgb(15, 15, 15) !important;
-  --pdf-shadow: 0 0 0 1px rgb(45, 45, 45) !important;
-  --pdf-sidebar-background: rgb(15, 15, 15) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgb(45, 45, 45) !important;
-  --pill-border-color: rgb(45, 45, 45) !important;
-  --pill-border-color-hover: rgb(75, 75, 75) !important;
-  --pill-color: rgb(200, 200, 200) !important;
-  --pill-color-hover: rgb(245, 245, 245) !important;
-  --pill-color-remove: rgb(135, 135, 135) !important;
-  --pill-color-remove-hover: hsl(259, 84.66%, 79.35%) !important;
-  --prompt-background: rgb(15, 15, 15) !important;
-  --prompt-border-color: rgb(125, 125, 125) !important;
-  --raised-background: color-mix(in srgb, rgb(45, 45, 45) 65%, transparent) linear-gradient(rgb(45, 45, 45), color-mix(in srgb, rgb(45, 45, 45) 65%, transparent)) !important;
-  --ribbon-background: rgb(34, 34, 34) !important;
-  --ribbon-background-collapsed: rgb(15, 15, 15) !important;
-  --search-clear-button-color: rgb(200, 200, 200) !important;
-  --search-icon-color: rgb(200, 200, 200) !important;
-  --search-result-background: rgb(15, 15, 15) !important;
-  --secondary: hsl(259, 84.66%, 79.35%) !important;
-  --setting-group-heading-color: rgb(245, 245, 245) !important;
-  --setting-items-background: rgb(27, 27, 27) !important;
-  --setting-items-border-color: rgb(45, 45, 45) !important;
-  --shiki-active-tab-border-color: rgb(200, 200, 200) !important;
-  --shiki-code-background: rgb(27, 27, 27) !important;
-  --shiki-code-comment: rgb(135, 135, 135) !important;
-  --shiki-code-normal: rgb(200, 200, 200) !important;
-  --shiki-code-punctuation: rgb(200, 200, 200) !important;
-  --shiki-gutter-border-color: rgb(45, 45, 45) !important;
-  --shiki-gutter-text-color: rgb(135, 135, 135) !important;
-  --shiki-gutter-text-color-highlight: rgb(200, 200, 200) !important;
-  --shiki-highlight-neutral: rgb(200, 200, 200) !important;
-  --shiki-terminal-dots-color: rgb(135, 135, 135) !important;
-  --slider-thumb-border-color: rgb(75, 75, 75) !important;
-  --slider-track-background: rgb(45, 45, 45) !important;
-  --status-bar-background: rgb(34, 34, 34) !important;
-  --status-bar-border-color: rgb(45, 45, 45) !important;
-  --status-bar-text-color: rgb(200, 200, 200) !important;
-  --suggestion-background: rgb(15, 15, 15) !important;
-  --tab-background-active: rgb(15, 15, 15) !important;
-  --tab-container-background: transparent !important;
-  --tab-divider-color: rgb(75, 75, 75) !important;
-  --tab-height: 38px !important;
-  --tab-outline-color: rgb(45, 45, 45) !important;
-  --tab-radius: 6px !important;
-  --tab-stacked-header-width: 44px !important;
-  --tab-switcher-background: rgb(34, 34, 34) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(34, 34, 34), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(262, 83%, 69%) !important;
-  --tab-text-color: rgb(135, 135, 135) !important;
-  --tab-text-color-active: rgb(200, 200, 200) !important;
-  --tab-text-color-focused: rgb(200, 200, 200) !important;
-  --tab-text-color-focused-active: rgb(200, 200, 200) !important;
-  --tab-text-color-focused-active-current: rgb(245, 245, 245) !important;
-  --tab-text-color-focused-highlighted: hsl(259, 84.66%, 79.35%) !important;
-  --table-add-button-border-color: rgb(45, 45, 45) !important;
-  --table-border-color: rgb(45, 45, 45) !important;
-  --table-drag-handle-background-active: hsl(262, 83%, 69%) !important;
-  --table-drag-handle-color: rgb(135, 135, 135) !important;
-  --table-header-border-color: rgb(45, 45, 45) !important;
-  --table-header-color: rgb(245, 245, 245) !important;
-  --table-selection: hsla(262, 83%, 69%, 0.1) !important;
-  --table-selection-border-color: hsl(262, 83%, 69%) !important;
-  --tag-background: hsla(262, 83%, 69%, 0.1) !important;
-  --tag-background-hover: hsla(262, 83%, 69%, 0.2) !important;
-  --tag-border-color: hsla(262, 83%, 69%, 0.15) !important;
-  --tag-border-color-hover: hsla(262, 83%, 69%, 0.15) !important;
-  --tag-color: hsl(259, 84.66%, 79.35%) !important;
-  --tag-color-hover: hsl(259, 84.66%, 79.35%) !important;
-  --tertiary: hsl(257, 87.15%, 89.01%) !important;
-  --text-accent: hsl(259, 84.66%, 79.35%) !important;
-  --text-accent-hover: hsl(257, 87.15%, 89.01%) !important;
-  --text-faint: rgb(135, 135, 135) !important;
-  --text-muted: rgb(200, 200, 200) !important;
-  --text-normal: rgb(245, 245, 245) !important;
-  --text-selection: hsla(262, 83%, 69%, 0.33) !important;
-  --textHighlight: hsla(262, 83%, 69%, 0.1) !important;
-  --titlebar-background: rgb(34, 34, 34) !important;
-  --titlebar-background-focused: rgb(45, 45, 45) !important;
-  --titlebar-border-color: rgb(45, 45, 45) !important;
-  --titlebar-text-color: rgb(200, 200, 200) !important;
-  --titlebar-text-color-focused: rgb(245, 245, 245) !important;
-  --traffic-lights-offset-x: 44px !important;
-  --traffic-lights-offset-y: 44px !important;
-  --vault-profile-color: rgb(245, 245, 245) !important;
-  --vault-profile-color-hover: rgb(245, 245, 245) !important;
-  --workspace-background-translucent: rgba(15, 15, 15, 0.2) !important;
-  --quartz-icon-color: currentColor !important;
+  --accent-h: 262;
+  --accent-l: 69%;
+  --accent-s: 83%;
+  --background-modifier-active-hover: hsla(262, 83%, 69%, 0.1);
+  --background-modifier-border: rgb(45, 45, 45);
+  --background-modifier-border-focus: rgb(125, 125, 125);
+  --background-modifier-border-hover: rgb(75, 75, 75);
+  --background-modifier-form-field: rgb(38, 38, 38);
+  --background-modifier-form-field-hover: rgb(38, 38, 38);
+  --background-primary: rgb(15, 15, 15);
+  --background-primary-alt: rgb(27, 27, 27);
+  --background-secondary: rgb(34, 34, 34);
+  --background-secondary-alt: rgb(45, 45, 45);
+  --bases-cards-background: rgb(15, 15, 15);
+  --bases-cards-cover-background: rgb(27, 27, 27);
+  --bases-cards-shadow: 0 0 0 1px rgb(45, 45, 45);
+  --bases-cards-shadow-hover: 0 0 0 1px rgb(75, 75, 75);
+  --bases-embed-border-color: rgb(45, 45, 45);
+  --bases-group-heading-property-color: rgb(200, 200, 200);
+  --bases-table-border-color: rgb(45, 45, 45);
+  --bases-table-cell-background-active: rgb(15, 15, 15);
+  --bases-table-cell-background-disabled: rgb(27, 27, 27);
+  --bases-table-cell-background-selected: hsla(262, 83%, 69%, 0.1);
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(125, 125, 125);
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(262, 83%, 69%);
+  --bases-table-group-background: rgb(27, 27, 27);
+  --bases-table-header-background: rgb(15, 15, 15);
+  --bases-table-header-color: rgb(200, 200, 200);
+  --bases-table-summary-background: rgb(15, 15, 15);
+  --blockquote-border-color: hsl(262, 83%, 69%);
+  --blur-background: color-mix(in srgb, rgb(45, 45, 45) 65%, transparent) linear-gradient(rgb(45, 45, 45), color-mix(in srgb, rgb(45, 45, 45) 65%, transparent));
+  --bold-weight: 800;
+  --canvas-background: rgb(15, 15, 15);
+  --canvas-card-label-color: rgb(135, 135, 135);
+  --canvas-dot-pattern: rgb(45, 45, 45);
+  --caret-color: rgb(245, 245, 245);
+  --checkbox-border-color: rgb(135, 135, 135);
+  --checkbox-border-color-hover: rgb(200, 200, 200);
+  --checkbox-color: hsl(262, 83%, 69%);
+  --checkbox-color-hover: hsl(259, 84.66%, 79.35%);
+  --checkbox-marker-color: rgb(15, 15, 15);
+  --checklist-done-color: rgb(135, 135, 135);
+  --checklist-done-decoration: none;
+  --code-background: rgb(27, 27, 27);
+  --code-border-color: rgb(45, 45, 45);
+  --code-comment: rgb(135, 135, 135);
+  --code-normal: rgb(245, 245, 245);
+  --code-punctuation: rgb(200, 200, 200);
+  --collapse-icon-color: rgb(135, 135, 135);
+  --collapse-icon-color-collapsed: hsl(259, 84.66%, 79.35%);
+  --color-accent: hsl(262, 83%, 69%);
+  --color-accent-1: hsl(259, 84.66%, 79.35%);
+  --color-accent-2: hsl(257, 87.15%, 89.01%);
+  --color-accent-hsl: 262, 83%, 69%;
+  --color-base-00: rgb(15, 15, 15);
+  --color-base-05: rgb(22, 22, 22);
+  --color-base-10: rgb(27, 27, 27);
+  --color-base-100: rgb(245, 245, 245);
+  --color-base-20: rgb(34, 34, 34);
+  --color-base-25: rgb(38, 38, 38);
+  --color-base-30: rgb(45, 45, 45);
+  --color-base-35: rgb(75, 75, 75);
+  --color-base-40: rgb(125, 125, 125);
+  --color-base-50: rgb(135, 135, 135);
+  --color-base-60: rgb(180, 180, 180);
+  --color-base-70: rgb(200, 200, 200);
+  --dark: var(--text-normal, rgb(245, 245, 245));
+  --darkgray: var(--text-normal, rgb(245, 245, 245));
+  --divider-color: rgb(45, 45, 45);
+  --divider-color-hover: hsl(262, 83%, 69%);
+  --dropdown-background: rgb(45, 45, 45);
+  --dropdown-background-hover: rgb(75, 75, 75);
+  --embed-block-shadow-hover: 0 0 0 1px rgb(45, 45, 45), inset 0 0 0 1px rgb(45, 45, 45);
+  --embed-border-start: 2px solid hsl(262, 83%, 69%);
+  --en-acrylic: blur(8px);
+  --en-acrylic-opacity: 0.66;
+  --en-modal-backdrop: blur(25px);
+  --en-opacity: 1;
+  --encore-translucency-image: url("https://images.unsplash.com/photo-1707494966495-a2cc8c1dac1f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  --encore-translucency-strength: 0.25;
+  --file-header-background: rgb(15, 15, 15);
+  --file-header-background-focused: rgb(15, 15, 15);
+  --flair-background: rgb(45, 45, 45);
+  --flair-color: rgb(245, 245, 245);
+  --footnote-divider-color: rgb(45, 45, 45);
+  --footnote-id-color: rgb(200, 200, 200);
+  --footnote-id-color-no-occurrences: rgb(135, 135, 135);
+  --footnote-line-height: 1.65;
+  --grain: url("data:image/pngbase64,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");
+  --graph-line: rgb(75, 75, 75);
+  --graph-node: rgb(200, 200, 200);
+  --graph-node-focused: hsl(259, 84.66%, 79.35%);
+  --graph-node-unresolved: rgb(135, 135, 135);
+  --graph-text: rgb(245, 245, 245);
+  --gray: var(--text-muted, rgb(200, 200, 200));
+  --grey-100-rgb: 245, 245, 245;
+  --grey-200-rgb: 200, 200, 200;
+  --grey-300-rgb: 180, 180, 180;
+  --grey-350-rgb: 135, 135, 135;
+  --grey-400-rgb: 125, 125, 125;
+  --grey-50-rgb: 250, 250, 250;
+  --grey-500-rgb: 75, 75, 75;
+  --grey-600-rgb: 45, 45, 45;
+  --grey-700-rgb: 38, 38, 38;
+  --grey-800-rgb: 34, 34, 34;
+  --grey-850-rgb: 27, 27, 27;
+  --grey-875-rgb: 22, 22, 22;
+  --grey-900-rgb: 15, 15, 15;
+  --h1-color: rgba(245, 245, 245, 0.9);
+  --h1-line-height: 1.111;
+  --h1-size: 2.25rem;
+  --h1-weight: 800;
+  --h2-color: rgba(245, 245, 245, 0.925);
+  --h2-line-height: 1.333;
+  --h2-size: 1.5rem;
+  --h2-weight: 700;
+  --h3-color: rgba(245, 245, 245, 0.95);
+  --h3-line-height: 1.6;
+  --h3-size: 1.25rem;
+  --h3-weight: 600;
+  --h4-color: rgba(245, 245, 245, 0.975);
+  --h4-line-height: 1.5;
+  --h4-size: 1rem;
+  --h4-weight: 600;
+  --h5-line-height: 1.6;
+  --h5-size: 0.95rem;
+  --h5-weight: 600;
+  --h6-line-height: 1.7;
+  --h6-size: 0.85rem;
+  --header-height: 44px;
+  --heading-formatting: rgb(135, 135, 135);
+  --highlight: var(--background-modifier-active-hover, hsla(262, 83%, 69%, 0.1));
+  --highlight-hue: 37;
+  --hr-color: #ffffff90;
+  --hr-thickness: 1px;
+  --icon-color: rgb(200, 200, 200);
+  --icon-color-active: hsl(259, 84.66%, 79.35%);
+  --icon-color-focused: rgb(245, 245, 245);
+  --icon-color-hover: rgb(200, 200, 200);
+  --inline-title-color: hsl(257, 87.15%, 89.01%);
+  --inline-title-line-height: 1.111;
+  --inline-title-size: 2.25rem;
+  --inline-title-weight: 800;
+  --input-date-separator: rgb(135, 135, 135);
+  --input-placeholder-color: rgb(135, 135, 135);
+  --interactive-accent: hsl(262, 83%, 69%);
+  --interactive-accent-hover: hsl(259, 84.66%, 79.35%);
+  --interactive-accent-hsl: 262, 83%, 69%;
+  --interactive-hover: rgb(75, 75, 75);
+  --interactive-normal: rgb(45, 45, 45);
+  --light: var(--background-primary, rgb(15, 15, 15));
+  --lightgray: var(--background-secondary, rgb(34, 34, 34));
+  --line-height-normal: 1.65;
+  --link-color: hsl(257, 87.15%, 89.01%);
+  --link-color-hover: hsl(257, 87.15%, 89.01%);
+  --link-decoration: none;
+  --link-external-color: hsl(259, 84.66%, 79.35%);
+  --link-external-color-hover: hsl(257, 87.15%, 89.01%);
+  --link-unresolved-color: hsl(259, 84.66%, 79.35%);
+  --link-unresolved-decoration-color: hsla(262, 83%, 69%, 0.3);
+  --link-unresolved-filter: contrast(0.3) brightness(120%);
+  --link-unresolved-opacity: 1;
+  --list-marker-color: rgb(125, 125, 125);
+  --list-marker-color-collapsed: hsl(259, 84.66%, 79.35%);
+  --list-marker-color-hover: rgb(200, 200, 200);
+  --lucide-maximize: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 3H5a2 2 0 0 0-2 2v3'%3E%3C/path%3E%3Cpath d='M21 8V5a2 2 0 0 0-2-2h-3'%3E%3C/path%3E%3Cpath d='M3 16v3a2 2 0 0 0 2 2h3'%3E%3C/path%3E%3Cpath d='M16 21h3a2 2 0 0 0 2-2v-3'%3E%3C/path%3E%3C/svg%3E");
+  --lucide-minimize: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-minimize'%3E%3Cpath d='M8 3v3a2 2 0 0 1-2 2H3'/%3E%3Cpath d='M21 8h-3a2 2 0 0 1-2-2V3'/%3E%3Cpath d='M3 16h3a2 2 0 0 1 2 2v3'/%3E%3Cpath d='M16 21v-3a2 2 0 0 1 2-2h3'/%3E%3C/svg%3E");
+  --lucide-minus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");
+  --lucide-x: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");
+  --menu-background: rgb(34, 34, 34);
+  --menu-border-color: rgb(75, 75, 75);
+  --metadata-border-color: rgb(45, 45, 45);
+  --metadata-divider-color: rgb(45, 45, 45);
+  --metadata-input-text-color: rgb(245, 245, 245);
+  --metadata-label-text-color: rgb(200, 200, 200);
+  --metadata-label-text-color-hover: rgb(200, 200, 200);
+  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(125, 125, 125);
+  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(75, 75, 75);
+  --modal-background: rgb(15, 15, 15);
+  --modal-border-color: rgb(125, 125, 125);
+  --nav-collapse-icon-color: rgb(135, 135, 135);
+  --nav-collapse-icon-color-collapsed: rgb(135, 135, 135);
+  --nav-heading-color: rgb(245, 245, 245);
+  --nav-heading-color-collapsed: rgb(135, 135, 135);
+  --nav-heading-color-collapsed-hover: rgb(200, 200, 200);
+  --nav-heading-color-hover: rgb(245, 245, 245);
+  --nav-item-background-selected: hsla(262, 83%, 69%, 0.15);
+  --nav-item-color: rgb(200, 200, 200);
+  --nav-item-color-active: rgb(245, 245, 245);
+  --nav-item-color-highlighted: hsl(259, 84.66%, 79.35%);
+  --nav-item-color-hover: rgb(245, 245, 245);
+  --nav-item-color-selected: rgb(245, 245, 245);
+  --nav-tag-color: rgb(135, 135, 135);
+  --nav-tag-color-active: rgb(200, 200, 200);
+  --nav-tag-color-hover: rgb(200, 200, 200);
+  --obsidian-logo-small: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='8' height='8' fill='none' stroke='%23ffffff90' stroke-width='5%' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");
+  --obsidian-logo-small-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='8' height='8' fill='none' stroke='%2300000090' stroke-width='5%' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");
+  --pdf-background: rgb(15, 15, 15);
+  --pdf-page-background: rgb(15, 15, 15);
+  --pdf-shadow: 0 0 0 1px rgb(45, 45, 45);
+  --pdf-sidebar-background: rgb(15, 15, 15);
+  --pdf-thumbnail-shadow: 0 0 0 1px rgb(45, 45, 45);
+  --pill-border-color: rgb(45, 45, 45);
+  --pill-border-color-hover: rgb(75, 75, 75);
+  --pill-color: rgb(200, 200, 200);
+  --pill-color-hover: rgb(245, 245, 245);
+  --pill-color-remove: rgb(135, 135, 135);
+  --pill-color-remove-hover: hsl(259, 84.66%, 79.35%);
+  --prompt-background: rgb(15, 15, 15);
+  --prompt-border-color: rgb(125, 125, 125);
+  --raised-background: color-mix(in srgb, rgb(45, 45, 45) 65%, transparent) linear-gradient(rgb(45, 45, 45), color-mix(in srgb, rgb(45, 45, 45) 65%, transparent));
+  --ribbon-background: rgb(34, 34, 34);
+  --ribbon-background-collapsed: rgb(15, 15, 15);
+  --search-clear-button-color: rgb(200, 200, 200);
+  --search-icon-color: rgb(200, 200, 200);
+  --search-result-background: rgb(15, 15, 15);
+  --secondary: var(--text-accent, hsl(259, 84.66%, 79.35%));
+  --setting-group-heading-color: rgb(245, 245, 245);
+  --setting-items-background: rgb(27, 27, 27);
+  --setting-items-border-color: rgb(45, 45, 45);
+  --shiki-active-tab-border-color: rgb(200, 200, 200);
+  --shiki-code-background: rgb(27, 27, 27);
+  --shiki-code-comment: rgb(135, 135, 135);
+  --shiki-code-normal: rgb(200, 200, 200);
+  --shiki-code-punctuation: rgb(200, 200, 200);
+  --shiki-gutter-border-color: rgb(45, 45, 45);
+  --shiki-gutter-text-color: rgb(135, 135, 135);
+  --shiki-gutter-text-color-highlight: rgb(200, 200, 200);
+  --shiki-highlight-neutral: rgb(200, 200, 200);
+  --shiki-terminal-dots-color: rgb(135, 135, 135);
+  --slider-thumb-border-color: rgb(75, 75, 75);
+  --slider-track-background: rgb(45, 45, 45);
+  --status-bar-background: rgb(34, 34, 34);
+  --status-bar-border-color: rgb(45, 45, 45);
+  --status-bar-text-color: rgb(200, 200, 200);
+  --suggestion-background: rgb(15, 15, 15);
+  --tab-background-active: rgb(15, 15, 15);
+  --tab-container-background: transparent;
+  --tab-divider-color: rgb(75, 75, 75);
+  --tab-height: 38px;
+  --tab-outline-color: rgb(45, 45, 45);
+  --tab-radius: 6px;
+  --tab-stacked-header-width: 44px;
+  --tab-switcher-background: rgb(34, 34, 34);
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(34, 34, 34), transparent);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(262, 83%, 69%);
+  --tab-text-color: rgb(135, 135, 135);
+  --tab-text-color-active: rgb(200, 200, 200);
+  --tab-text-color-focused: rgb(200, 200, 200);
+  --tab-text-color-focused-active: rgb(200, 200, 200);
+  --tab-text-color-focused-active-current: rgb(245, 245, 245);
+  --tab-text-color-focused-highlighted: hsl(259, 84.66%, 79.35%);
+  --table-add-button-border-color: rgb(45, 45, 45);
+  --table-border-color: rgb(45, 45, 45);
+  --table-drag-handle-background-active: hsl(262, 83%, 69%);
+  --table-drag-handle-color: rgb(135, 135, 135);
+  --table-header-border-color: rgb(45, 45, 45);
+  --table-header-color: rgb(245, 245, 245);
+  --table-selection: hsla(262, 83%, 69%, 0.1);
+  --table-selection-border-color: hsl(262, 83%, 69%);
+  --tag-background: hsla(262, 83%, 69%, 0.1);
+  --tag-background-hover: hsla(262, 83%, 69%, 0.2);
+  --tag-border-color: hsla(262, 83%, 69%, 0.15);
+  --tag-border-color-hover: hsla(262, 83%, 69%, 0.15);
+  --tag-color: hsl(259, 84.66%, 79.35%);
+  --tag-color-hover: hsl(259, 84.66%, 79.35%);
+  --tertiary: var(--text-accent-hover, hsl(257, 87.15%, 89.01%));
+  --text-accent: hsl(259, 84.66%, 79.35%);
+  --text-accent-hover: hsl(257, 87.15%, 89.01%);
+  --text-faint: rgb(135, 135, 135);
+  --text-muted: rgb(200, 200, 200);
+  --text-normal: rgb(245, 245, 245);
+  --text-selection: hsla(262, 83%, 69%, 0.33);
+  --textHighlight: var(--background-modifier-active-hover, hsla(262, 83%, 69%, 0.1));
+  --titlebar-background: rgb(34, 34, 34);
+  --titlebar-background-focused: rgb(45, 45, 45);
+  --titlebar-border-color: rgb(45, 45, 45);
+  --titlebar-text-color: rgb(200, 200, 200);
+  --titlebar-text-color-focused: rgb(245, 245, 245);
+  --traffic-lights-offset-x: 44px;
+  --traffic-lights-offset-y: 44px;
+  --vault-profile-color: rgb(245, 245, 245);
+  --vault-profile-color-hover: rgb(245, 245, 245);
+  --workspace-background-translucent: rgba(15, 15, 15, 0.2);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -1737,294 +1743,294 @@ html[saved-theme="dark"] body ul.tags > li {
   },
   light: {
     base: `:root:root {
-  --accent-h: 254 !important;
-  --accent-l: 40% !important;
-  --accent-s: 40% !important;
-  --background-modifier-active-hover: hsla(254, 40%, 40%, 0.1) !important;
-  --background-modifier-border: rgb(209, 213, 219) !important;
-  --background-modifier-border-focus: rgb(107, 114, 128) !important;
-  --background-modifier-border-hover: rgb(156, 163, 175) !important;
-  --background-modifier-form-field: rgb(255, 255, 255) !important;
-  --background-modifier-form-field-hover: rgb(255, 255, 255) !important;
-  --background-primary: rgb(255, 255, 255) !important;
-  --background-primary-alt: rgb(250, 250, 250) !important;
-  --background-secondary: rgb(243, 244, 246) !important;
-  --background-secondary-alt: rgb(250, 250, 250) !important;
-  --bases-cards-background: rgb(255, 255, 255) !important;
-  --bases-cards-cover-background: rgb(250, 250, 250) !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(209, 213, 219) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(156, 163, 175) !important;
-  --bases-embed-border-color: rgb(209, 213, 219) !important;
-  --bases-group-heading-property-color: rgb(55, 65, 81) !important;
-  --bases-table-border-color: rgb(209, 213, 219) !important;
-  --bases-table-cell-background-active: rgb(255, 255, 255) !important;
-  --bases-table-cell-background-disabled: rgb(250, 250, 250) !important;
-  --bases-table-cell-background-selected: hsla(254, 40%, 40%, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(107, 114, 128) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(253, 40.4%, 43%) !important;
-  --bases-table-group-background: rgb(250, 250, 250) !important;
-  --bases-table-header-background: rgb(255, 255, 255) !important;
-  --bases-table-header-color: rgb(55, 65, 81) !important;
-  --bases-table-summary-background: rgb(255, 255, 255) !important;
-  --blockquote-border-color: hsl(253, 40.4%, 43%) !important;
-  --blur-background: color-mix(in srgb, rgb(255, 255, 255) 65%, transparent) linear-gradient(rgb(255, 255, 255), color-mix(in srgb, rgb(255, 255, 255) 65%, transparent)) !important;
-  --bold-weight: 800 !important;
-  --canvas-background: rgb(255, 255, 255) !important;
-  --canvas-card-label-color: rgb(90, 90, 90) !important;
-  --canvas-dot-pattern: rgb(209, 213, 219) !important;
-  --caret-color: rgb(31, 41, 55) !important;
-  --checkbox-border-color: rgb(90, 90, 90) !important;
-  --checkbox-border-color-hover: rgb(55, 65, 81) !important;
-  --checkbox-color: hsl(253, 40.4%, 43%) !important;
-  --checkbox-color-hover: hsl(251, 40.8%, 46%) !important;
-  --checkbox-marker-color: rgb(255, 255, 255) !important;
-  --checklist-done-color: rgb(90, 90, 90) !important;
-  --checklist-done-decoration: none !important;
-  --code-background: rgb(250, 250, 250) !important;
-  --code-border-color: rgb(209, 213, 219) !important;
-  --code-comment: rgb(90, 90, 90) !important;
-  --code-normal: rgb(31, 41, 55) !important;
-  --code-punctuation: rgb(55, 65, 81) !important;
-  --collapse-icon-color: rgb(90, 90, 90) !important;
-  --collapse-icon-color-collapsed: hsl(254, 40%, 40%) !important;
-  --color-accent: hsl(254, 40%, 40%) !important;
-  --color-accent-1: hsl(253, 40.4%, 43%) !important;
-  --color-accent-2: hsl(251, 40.8%, 46%) !important;
-  --color-accent-hsl: 254, 40%, 40% !important;
-  --color-base-00: rgb(255, 255, 255) !important;
-  --color-base-05: rgb(250, 250, 250) !important;
-  --color-base-10: rgb(250, 250, 250) !important;
-  --color-base-100: rgb(31, 41, 55) !important;
-  --color-base-20: rgb(243, 244, 246) !important;
-  --color-base-25: rgb(228, 228, 231) !important;
-  --color-base-30: rgb(209, 213, 219) !important;
-  --color-base-35: rgb(156, 163, 175) !important;
-  --color-base-40: rgb(107, 114, 128) !important;
-  --color-base-50: rgb(90, 90, 90) !important;
-  --color-base-60: rgb(75, 85, 99) !important;
-  --color-base-70: rgb(55, 65, 81) !important;
-  --dark: rgb(31, 41, 55) !important;
-  --darkgray: rgb(31, 41, 55) !important;
-  --divider-color: rgb(209, 213, 219) !important;
-  --divider-color-hover: hsl(253, 40.4%, 43%) !important;
-  --dropdown-background: rgb(255, 255, 255) !important;
-  --dropdown-background-hover: rgb(250, 250, 250) !important;
-  --embed-block-shadow-hover: 0 0 0 1px rgb(209, 213, 219), inset 0 0 0 1px rgb(209, 213, 219) !important;
-  --embed-border-start: 2px solid hsl(253, 40.4%, 43%) !important;
-  --en-acrylic: blur(8px) !important;
-  --en-acrylic-opacity: 0.66 !important;
-  --en-modal-backdrop: blur(25px) !important;
-  --en-opacity: 1 !important;
-  --encore-translucency-image: url("https://images.unsplash.com/photo-1707494966495-a2cc8c1dac1f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") !important;
-  --encore-translucency-strength: 0.25 !important;
-  --file-header-background: rgb(255, 255, 255) !important;
-  --file-header-background-focused: rgb(255, 255, 255) !important;
-  --flair-background: rgb(255, 255, 255) !important;
-  --flair-color: rgb(31, 41, 55) !important;
-  --footnote-divider-color: rgb(209, 213, 219) !important;
-  --footnote-id-color: rgb(55, 65, 81) !important;
-  --footnote-id-color-no-occurrences: rgb(90, 90, 90) !important;
-  --footnote-line-height: 1.65 !important;
-  --grain: url("data:image/pngbase64,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") !important;
-  --graph-line: rgb(156, 163, 175) !important;
-  --graph-node: rgb(55, 65, 81) !important;
-  --graph-node-focused: hsl(254, 40%, 40%) !important;
-  --graph-node-unresolved: rgb(90, 90, 90) !important;
-  --graph-text: rgb(31, 41, 55) !important;
-  --gray: rgb(55, 65, 81) !important;
-  --grey-100-rgb: 31, 41, 55 !important;
-  --grey-200-rgb: 55, 65, 81 !important;
-  --grey-300-rgb: 75, 85, 99 !important;
-  --grey-350-rgb: 90, 90, 90 !important;
-  --grey-400-rgb: 107, 114, 128 !important;
-  --grey-50-rgb: 17, 24, 39 !important;
-  --grey-500-rgb: 156, 163, 175 !important;
-  --grey-600-rgb: 209, 213, 219 !important;
-  --grey-700-rgb: 228, 228, 231 !important;
-  --grey-800-rgb: 243, 244, 246 !important;
-  --grey-850-rgb: 250, 250, 250 !important;
-  --grey-875-rgb: 250, 250, 250 !important;
-  --grey-900-rgb: 255, 255, 255 !important;
-  --h1-color: rgba(31, 41, 55, 0.9) !important;
-  --h1-line-height: 1.111 !important;
-  --h1-size: 2.25rem !important;
-  --h1-weight: 800 !important;
-  --h2-color: rgba(31, 41, 55, 0.925) !important;
-  --h2-line-height: 1.333 !important;
-  --h2-size: 1.5rem !important;
-  --h2-weight: 700 !important;
-  --h3-color: rgba(31, 41, 55, 0.95) !important;
-  --h3-line-height: 1.6 !important;
-  --h3-size: 1.25rem !important;
-  --h3-weight: 600 !important;
-  --h4-color: rgba(31, 41, 55, 0.975) !important;
-  --h4-line-height: 1.5 !important;
-  --h4-size: 1rem !important;
-  --h4-weight: 600 !important;
-  --h5-line-height: 1.6 !important;
-  --h5-size: 0.95rem !important;
-  --h5-weight: 600 !important;
-  --h6-line-height: 1.7 !important;
-  --h6-size: 0.85rem !important;
-  --header-height: 44px !important;
-  --heading-formatting: rgb(90, 90, 90) !important;
-  --highlight: hsla(254, 40%, 40%, 0.1) !important;
-  --highlight-hue: 37 !important;
-  --hr-color: #00000090 !important;
-  --hr-thickness: 1px !important;
-  --icon-color: rgb(55, 65, 81) !important;
-  --icon-color-active: hsl(254, 40%, 40%) !important;
-  --icon-color-focused: rgb(31, 41, 55) !important;
-  --icon-color-hover: rgb(55, 65, 81) !important;
-  --inline-title-color: hsl(251, 40.8%, 46%) !important;
-  --inline-title-line-height: 1.111 !important;
-  --inline-title-size: 2.25rem !important;
-  --inline-title-weight: 800 !important;
-  --input-date-separator: rgb(90, 90, 90) !important;
-  --input-placeholder-color: rgb(90, 90, 90) !important;
-  --interactive-accent: hsl(253, 40.4%, 43%) !important;
-  --interactive-accent-hover: hsl(251, 40.8%, 46%) !important;
-  --interactive-accent-hsl: 254, 40%, 40% !important;
-  --interactive-hover: rgb(250, 250, 250) !important;
-  --interactive-normal: rgb(255, 255, 255) !important;
-  --light: rgb(255, 255, 255) !important;
-  --lightgray: rgb(243, 244, 246) !important;
-  --line-height-normal: 1.65 !important;
-  --link-color: hsl(251, 40.8%, 46%) !important;
-  --link-color-hover: hsl(251, 40.8%, 46%) !important;
-  --link-decoration: none !important;
-  --link-external-color: hsl(254, 40%, 40%) !important;
-  --link-external-color-hover: hsl(251, 40.8%, 46%) !important;
-  --link-unresolved-color: hsl(254, 40%, 40%) !important;
-  --link-unresolved-decoration-color: hsla(254, 40%, 40%, 0.3) !important;
-  --link-unresolved-filter: contrast(0.3) brightness(120%) !important;
-  --link-unresolved-opacity: 1 !important;
-  --list-marker-color: rgb(107, 114, 128) !important;
-  --list-marker-color-collapsed: hsl(254, 40%, 40%) !important;
-  --list-marker-color-hover: rgb(55, 65, 81) !important;
-  --lucide-maximize: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 3H5a2 2 0 0 0-2 2v3'%3E%3C/path%3E%3Cpath d='M21 8V5a2 2 0 0 0-2-2h-3'%3E%3C/path%3E%3Cpath d='M3 16v3a2 2 0 0 0 2 2h3'%3E%3C/path%3E%3Cpath d='M16 21h3a2 2 0 0 0 2-2v-3'%3E%3C/path%3E%3C/svg%3E") !important;
-  --lucide-minimize: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-minimize'%3E%3Cpath d='M8 3v3a2 2 0 0 1-2 2H3'/%3E%3Cpath d='M21 8h-3a2 2 0 0 1-2-2V3'/%3E%3Cpath d='M3 16h3a2 2 0 0 1 2 2v3'/%3E%3Cpath d='M16 21v-3a2 2 0 0 1 2-2h3'/%3E%3C/svg%3E") !important;
-  --lucide-minus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E") !important;
-  --lucide-x: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E") !important;
-  --menu-background: rgb(243, 244, 246) !important;
-  --menu-border-color: rgb(156, 163, 175) !important;
-  --metadata-border-color: rgb(209, 213, 219) !important;
-  --metadata-divider-color: rgb(209, 213, 219) !important;
-  --metadata-input-text-color: rgb(31, 41, 55) !important;
-  --metadata-label-text-color: rgb(55, 65, 81) !important;
-  --metadata-label-text-color-hover: rgb(55, 65, 81) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(107, 114, 128) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(156, 163, 175) !important;
-  --modal-background: rgb(255, 255, 255) !important;
-  --modal-border-color: rgb(107, 114, 128) !important;
-  --nav-collapse-icon-color: rgb(90, 90, 90) !important;
-  --nav-collapse-icon-color-collapsed: rgb(90, 90, 90) !important;
-  --nav-heading-color: rgb(31, 41, 55) !important;
-  --nav-heading-color-collapsed: rgb(90, 90, 90) !important;
-  --nav-heading-color-collapsed-hover: rgb(55, 65, 81) !important;
-  --nav-heading-color-hover: rgb(31, 41, 55) !important;
-  --nav-item-background-selected: hsla(254, 40%, 40%, 0.15) !important;
-  --nav-item-color: rgb(55, 65, 81) !important;
-  --nav-item-color-active: rgb(31, 41, 55) !important;
-  --nav-item-color-highlighted: hsl(254, 40%, 40%) !important;
-  --nav-item-color-hover: rgb(31, 41, 55) !important;
-  --nav-item-color-selected: rgb(31, 41, 55) !important;
-  --nav-tag-color: rgb(90, 90, 90) !important;
-  --nav-tag-color-active: rgb(55, 65, 81) !important;
-  --nav-tag-color-hover: rgb(55, 65, 81) !important;
-  --obsidian-logo-small: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='8' height='8' fill='none' stroke='%23ffffff90' stroke-width='5%' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E") !important;
-  --obsidian-logo-small-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='8' height='8' fill='none' stroke='%2300000090' stroke-width='5%' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E") !important;
-  --pdf-background: rgb(255, 255, 255) !important;
-  --pdf-page-background: rgb(255, 255, 255) !important;
-  --pdf-sidebar-background: rgb(255, 255, 255) !important;
-  --pill-border-color: rgb(209, 213, 219) !important;
-  --pill-border-color-hover: rgb(156, 163, 175) !important;
-  --pill-color: rgb(55, 65, 81) !important;
-  --pill-color-hover: rgb(31, 41, 55) !important;
-  --pill-color-remove: rgb(90, 90, 90) !important;
-  --pill-color-remove-hover: hsl(254, 40%, 40%) !important;
-  --prompt-background: rgb(255, 255, 255) !important;
-  --prompt-border-color: rgb(107, 114, 128) !important;
-  --raised-background: color-mix(in srgb, rgb(255, 255, 255) 65%, transparent) linear-gradient(rgb(255, 255, 255), color-mix(in srgb, rgb(255, 255, 255) 65%, transparent)) !important;
-  --ribbon-background: rgb(243, 244, 246) !important;
-  --ribbon-background-collapsed: rgb(255, 255, 255) !important;
-  --search-clear-button-color: rgb(55, 65, 81) !important;
-  --search-icon-color: rgb(55, 65, 81) !important;
-  --search-result-background: rgb(255, 255, 255) !important;
-  --secondary: hsl(254, 40%, 40%) !important;
-  --setting-group-heading-color: rgb(31, 41, 55) !important;
-  --setting-items-background: rgb(250, 250, 250) !important;
-  --setting-items-border-color: rgb(209, 213, 219) !important;
-  --shiki-active-tab-border-color: rgb(55, 65, 81) !important;
-  --shiki-code-background: rgb(250, 250, 250) !important;
-  --shiki-code-comment: rgb(90, 90, 90) !important;
-  --shiki-code-normal: rgb(55, 65, 81) !important;
-  --shiki-code-punctuation: rgb(55, 65, 81) !important;
-  --shiki-gutter-border-color: rgb(209, 213, 219) !important;
-  --shiki-gutter-text-color: rgb(90, 90, 90) !important;
-  --shiki-gutter-text-color-highlight: rgb(55, 65, 81) !important;
-  --shiki-highlight-neutral: rgb(55, 65, 81) !important;
-  --shiki-terminal-dots-color: rgb(90, 90, 90) !important;
-  --slider-thumb-border-color: rgb(156, 163, 175) !important;
-  --slider-track-background: rgb(209, 213, 219) !important;
-  --status-bar-background: rgb(243, 244, 246) !important;
-  --status-bar-border-color: rgb(209, 213, 219) !important;
-  --status-bar-text-color: rgb(55, 65, 81) !important;
-  --suggestion-background: rgb(255, 255, 255) !important;
-  --tab-background-active: rgb(255, 255, 255) !important;
-  --tab-container-background: transparent !important;
-  --tab-divider-color: rgb(156, 163, 175) !important;
-  --tab-height: 38px !important;
-  --tab-outline-color: rgb(209, 213, 219) !important;
-  --tab-radius: 6px !important;
-  --tab-stacked-header-width: 44px !important;
-  --tab-switcher-background: rgb(243, 244, 246) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(243, 244, 246), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(254, 40%, 40%) !important;
-  --tab-text-color: rgb(90, 90, 90) !important;
-  --tab-text-color-active: rgb(55, 65, 81) !important;
-  --tab-text-color-focused: rgb(55, 65, 81) !important;
-  --tab-text-color-focused-active: rgb(55, 65, 81) !important;
-  --tab-text-color-focused-active-current: rgb(31, 41, 55) !important;
-  --tab-text-color-focused-highlighted: hsl(254, 40%, 40%) !important;
-  --table-add-button-border-color: rgb(209, 213, 219) !important;
-  --table-border-color: rgb(209, 213, 219) !important;
-  --table-drag-handle-background-active: hsl(253, 40.4%, 43%) !important;
-  --table-drag-handle-color: rgb(90, 90, 90) !important;
-  --table-header-border-color: rgb(209, 213, 219) !important;
-  --table-header-color: rgb(31, 41, 55) !important;
-  --table-selection: hsla(254, 40%, 40%, 0.1) !important;
-  --table-selection-border-color: hsl(253, 40.4%, 43%) !important;
-  --tag-background: hsla(254, 40%, 40%, 0.1) !important;
-  --tag-background-hover: hsla(254, 40%, 40%, 0.2) !important;
-  --tag-border-color: hsla(254, 40%, 40%, 0.15) !important;
-  --tag-border-color-hover: hsla(254, 40%, 40%, 0.15) !important;
-  --tag-color: hsl(254, 40%, 40%) !important;
-  --tag-color-hover: hsl(254, 40%, 40%) !important;
-  --tertiary: hsl(251, 40.8%, 46%) !important;
-  --text-accent: hsl(254, 40%, 40%) !important;
-  --text-accent-hover: hsl(251, 40.8%, 46%) !important;
-  --text-faint: rgb(90, 90, 90) !important;
-  --text-muted: rgb(55, 65, 81) !important;
-  --text-normal: rgb(31, 41, 55) !important;
-  --text-selection: hsla(254, 40%, 40%, 0.2) !important;
-  --textHighlight: hsla(254, 40%, 40%, 0.1) !important;
-  --titlebar-background: rgb(243, 244, 246) !important;
-  --titlebar-background-focused: rgb(250, 250, 250) !important;
-  --titlebar-border-color: rgb(209, 213, 219) !important;
-  --titlebar-text-color: rgb(55, 65, 81) !important;
-  --titlebar-text-color-focused: rgb(31, 41, 55) !important;
-  --traffic-lights-offset-x: 44px !important;
-  --traffic-lights-offset-y: 44px !important;
-  --vault-profile-color: rgb(31, 41, 55) !important;
-  --vault-profile-color-hover: rgb(31, 41, 55) !important;
-  --workspace-background-translucent: rgba(228, 228, 231, 0.7) !important;
-  --quartz-icon-color: currentColor !important;
+  --accent-h: 254;
+  --accent-l: 40%;
+  --accent-s: 40%;
+  --background-modifier-active-hover: hsla(254, 40%, 40%, 0.1);
+  --background-modifier-border: rgb(209, 213, 219);
+  --background-modifier-border-focus: rgb(107, 114, 128);
+  --background-modifier-border-hover: rgb(156, 163, 175);
+  --background-modifier-form-field: rgb(255, 255, 255);
+  --background-modifier-form-field-hover: rgb(255, 255, 255);
+  --background-primary: rgb(255, 255, 255);
+  --background-primary-alt: rgb(250, 250, 250);
+  --background-secondary: rgb(243, 244, 246);
+  --background-secondary-alt: rgb(250, 250, 250);
+  --bases-cards-background: rgb(255, 255, 255);
+  --bases-cards-cover-background: rgb(250, 250, 250);
+  --bases-cards-shadow: 0 0 0 1px rgb(209, 213, 219);
+  --bases-cards-shadow-hover: 0 0 0 1px rgb(156, 163, 175);
+  --bases-embed-border-color: rgb(209, 213, 219);
+  --bases-group-heading-property-color: rgb(55, 65, 81);
+  --bases-table-border-color: rgb(209, 213, 219);
+  --bases-table-cell-background-active: rgb(255, 255, 255);
+  --bases-table-cell-background-disabled: rgb(250, 250, 250);
+  --bases-table-cell-background-selected: hsla(254, 40%, 40%, 0.1);
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(107, 114, 128);
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(253, 40.4%, 43%);
+  --bases-table-group-background: rgb(250, 250, 250);
+  --bases-table-header-background: rgb(255, 255, 255);
+  --bases-table-header-color: rgb(55, 65, 81);
+  --bases-table-summary-background: rgb(255, 255, 255);
+  --blockquote-border-color: hsl(253, 40.4%, 43%);
+  --blur-background: color-mix(in srgb, rgb(255, 255, 255) 65%, transparent) linear-gradient(rgb(255, 255, 255), color-mix(in srgb, rgb(255, 255, 255) 65%, transparent));
+  --bold-weight: 800;
+  --canvas-background: rgb(255, 255, 255);
+  --canvas-card-label-color: rgb(90, 90, 90);
+  --canvas-dot-pattern: rgb(209, 213, 219);
+  --caret-color: rgb(31, 41, 55);
+  --checkbox-border-color: rgb(90, 90, 90);
+  --checkbox-border-color-hover: rgb(55, 65, 81);
+  --checkbox-color: hsl(253, 40.4%, 43%);
+  --checkbox-color-hover: hsl(251, 40.8%, 46%);
+  --checkbox-marker-color: rgb(255, 255, 255);
+  --checklist-done-color: rgb(90, 90, 90);
+  --checklist-done-decoration: none;
+  --code-background: rgb(250, 250, 250);
+  --code-border-color: rgb(209, 213, 219);
+  --code-comment: rgb(90, 90, 90);
+  --code-normal: rgb(31, 41, 55);
+  --code-punctuation: rgb(55, 65, 81);
+  --collapse-icon-color: rgb(90, 90, 90);
+  --collapse-icon-color-collapsed: hsl(254, 40%, 40%);
+  --color-accent: hsl(254, 40%, 40%);
+  --color-accent-1: hsl(253, 40.4%, 43%);
+  --color-accent-2: hsl(251, 40.8%, 46%);
+  --color-accent-hsl: 254, 40%, 40%;
+  --color-base-00: rgb(255, 255, 255);
+  --color-base-05: rgb(250, 250, 250);
+  --color-base-10: rgb(250, 250, 250);
+  --color-base-100: rgb(31, 41, 55);
+  --color-base-20: rgb(243, 244, 246);
+  --color-base-25: rgb(228, 228, 231);
+  --color-base-30: rgb(209, 213, 219);
+  --color-base-35: rgb(156, 163, 175);
+  --color-base-40: rgb(107, 114, 128);
+  --color-base-50: rgb(90, 90, 90);
+  --color-base-60: rgb(75, 85, 99);
+  --color-base-70: rgb(55, 65, 81);
+  --dark: var(--text-normal, rgb(31, 41, 55));
+  --darkgray: var(--text-normal, rgb(31, 41, 55));
+  --divider-color: rgb(209, 213, 219);
+  --divider-color-hover: hsl(253, 40.4%, 43%);
+  --dropdown-background: rgb(255, 255, 255);
+  --dropdown-background-hover: rgb(250, 250, 250);
+  --embed-block-shadow-hover: 0 0 0 1px rgb(209, 213, 219), inset 0 0 0 1px rgb(209, 213, 219);
+  --embed-border-start: 2px solid hsl(253, 40.4%, 43%);
+  --en-acrylic: blur(8px);
+  --en-acrylic-opacity: 0.66;
+  --en-modal-backdrop: blur(25px);
+  --en-opacity: 1;
+  --encore-translucency-image: url("https://images.unsplash.com/photo-1707494966495-a2cc8c1dac1f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  --encore-translucency-strength: 0.25;
+  --file-header-background: rgb(255, 255, 255);
+  --file-header-background-focused: rgb(255, 255, 255);
+  --flair-background: rgb(255, 255, 255);
+  --flair-color: rgb(31, 41, 55);
+  --footnote-divider-color: rgb(209, 213, 219);
+  --footnote-id-color: rgb(55, 65, 81);
+  --footnote-id-color-no-occurrences: rgb(90, 90, 90);
+  --footnote-line-height: 1.65;
+  --grain: url("data:image/pngbase64,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");
+  --graph-line: rgb(156, 163, 175);
+  --graph-node: rgb(55, 65, 81);
+  --graph-node-focused: hsl(254, 40%, 40%);
+  --graph-node-unresolved: rgb(90, 90, 90);
+  --graph-text: rgb(31, 41, 55);
+  --gray: var(--text-muted, rgb(55, 65, 81));
+  --grey-100-rgb: 31, 41, 55;
+  --grey-200-rgb: 55, 65, 81;
+  --grey-300-rgb: 75, 85, 99;
+  --grey-350-rgb: 90, 90, 90;
+  --grey-400-rgb: 107, 114, 128;
+  --grey-50-rgb: 17, 24, 39;
+  --grey-500-rgb: 156, 163, 175;
+  --grey-600-rgb: 209, 213, 219;
+  --grey-700-rgb: 228, 228, 231;
+  --grey-800-rgb: 243, 244, 246;
+  --grey-850-rgb: 250, 250, 250;
+  --grey-875-rgb: 250, 250, 250;
+  --grey-900-rgb: 255, 255, 255;
+  --h1-color: rgba(31, 41, 55, 0.9);
+  --h1-line-height: 1.111;
+  --h1-size: 2.25rem;
+  --h1-weight: 800;
+  --h2-color: rgba(31, 41, 55, 0.925);
+  --h2-line-height: 1.333;
+  --h2-size: 1.5rem;
+  --h2-weight: 700;
+  --h3-color: rgba(31, 41, 55, 0.95);
+  --h3-line-height: 1.6;
+  --h3-size: 1.25rem;
+  --h3-weight: 600;
+  --h4-color: rgba(31, 41, 55, 0.975);
+  --h4-line-height: 1.5;
+  --h4-size: 1rem;
+  --h4-weight: 600;
+  --h5-line-height: 1.6;
+  --h5-size: 0.95rem;
+  --h5-weight: 600;
+  --h6-line-height: 1.7;
+  --h6-size: 0.85rem;
+  --header-height: 44px;
+  --heading-formatting: rgb(90, 90, 90);
+  --highlight: var(--background-modifier-active-hover, hsla(254, 40%, 40%, 0.1));
+  --highlight-hue: 37;
+  --hr-color: #00000090;
+  --hr-thickness: 1px;
+  --icon-color: rgb(55, 65, 81);
+  --icon-color-active: hsl(254, 40%, 40%);
+  --icon-color-focused: rgb(31, 41, 55);
+  --icon-color-hover: rgb(55, 65, 81);
+  --inline-title-color: hsl(251, 40.8%, 46%);
+  --inline-title-line-height: 1.111;
+  --inline-title-size: 2.25rem;
+  --inline-title-weight: 800;
+  --input-date-separator: rgb(90, 90, 90);
+  --input-placeholder-color: rgb(90, 90, 90);
+  --interactive-accent: hsl(253, 40.4%, 43%);
+  --interactive-accent-hover: hsl(251, 40.8%, 46%);
+  --interactive-accent-hsl: 254, 40%, 40%;
+  --interactive-hover: rgb(250, 250, 250);
+  --interactive-normal: rgb(255, 255, 255);
+  --light: var(--background-primary, rgb(255, 255, 255));
+  --lightgray: var(--background-secondary, rgb(243, 244, 246));
+  --line-height-normal: 1.65;
+  --link-color: hsl(251, 40.8%, 46%);
+  --link-color-hover: hsl(251, 40.8%, 46%);
+  --link-decoration: none;
+  --link-external-color: hsl(254, 40%, 40%);
+  --link-external-color-hover: hsl(251, 40.8%, 46%);
+  --link-unresolved-color: hsl(254, 40%, 40%);
+  --link-unresolved-decoration-color: hsla(254, 40%, 40%, 0.3);
+  --link-unresolved-filter: contrast(0.3) brightness(120%);
+  --link-unresolved-opacity: 1;
+  --list-marker-color: rgb(107, 114, 128);
+  --list-marker-color-collapsed: hsl(254, 40%, 40%);
+  --list-marker-color-hover: rgb(55, 65, 81);
+  --lucide-maximize: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 3H5a2 2 0 0 0-2 2v3'%3E%3C/path%3E%3Cpath d='M21 8V5a2 2 0 0 0-2-2h-3'%3E%3C/path%3E%3Cpath d='M3 16v3a2 2 0 0 0 2 2h3'%3E%3C/path%3E%3Cpath d='M16 21h3a2 2 0 0 0 2-2v-3'%3E%3C/path%3E%3C/svg%3E");
+  --lucide-minimize: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-minimize'%3E%3Cpath d='M8 3v3a2 2 0 0 1-2 2H3'/%3E%3Cpath d='M21 8h-3a2 2 0 0 1-2-2V3'/%3E%3Cpath d='M3 16h3a2 2 0 0 1 2 2v3'/%3E%3Cpath d='M16 21v-3a2 2 0 0 1 2-2h3'/%3E%3C/svg%3E");
+  --lucide-minus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");
+  --lucide-x: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");
+  --menu-background: rgb(243, 244, 246);
+  --menu-border-color: rgb(156, 163, 175);
+  --metadata-border-color: rgb(209, 213, 219);
+  --metadata-divider-color: rgb(209, 213, 219);
+  --metadata-input-text-color: rgb(31, 41, 55);
+  --metadata-label-text-color: rgb(55, 65, 81);
+  --metadata-label-text-color-hover: rgb(55, 65, 81);
+  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(107, 114, 128);
+  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(156, 163, 175);
+  --modal-background: rgb(255, 255, 255);
+  --modal-border-color: rgb(107, 114, 128);
+  --nav-collapse-icon-color: rgb(90, 90, 90);
+  --nav-collapse-icon-color-collapsed: rgb(90, 90, 90);
+  --nav-heading-color: rgb(31, 41, 55);
+  --nav-heading-color-collapsed: rgb(90, 90, 90);
+  --nav-heading-color-collapsed-hover: rgb(55, 65, 81);
+  --nav-heading-color-hover: rgb(31, 41, 55);
+  --nav-item-background-selected: hsla(254, 40%, 40%, 0.15);
+  --nav-item-color: rgb(55, 65, 81);
+  --nav-item-color-active: rgb(31, 41, 55);
+  --nav-item-color-highlighted: hsl(254, 40%, 40%);
+  --nav-item-color-hover: rgb(31, 41, 55);
+  --nav-item-color-selected: rgb(31, 41, 55);
+  --nav-tag-color: rgb(90, 90, 90);
+  --nav-tag-color-active: rgb(55, 65, 81);
+  --nav-tag-color-hover: rgb(55, 65, 81);
+  --obsidian-logo-small: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='8' height='8' fill='none' stroke='%23ffffff90' stroke-width='5%' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");
+  --obsidian-logo-small-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='8' height='8' fill='none' stroke='%2300000090' stroke-width='5%' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");
+  --pdf-background: rgb(255, 255, 255);
+  --pdf-page-background: rgb(255, 255, 255);
+  --pdf-sidebar-background: rgb(255, 255, 255);
+  --pill-border-color: rgb(209, 213, 219);
+  --pill-border-color-hover: rgb(156, 163, 175);
+  --pill-color: rgb(55, 65, 81);
+  --pill-color-hover: rgb(31, 41, 55);
+  --pill-color-remove: rgb(90, 90, 90);
+  --pill-color-remove-hover: hsl(254, 40%, 40%);
+  --prompt-background: rgb(255, 255, 255);
+  --prompt-border-color: rgb(107, 114, 128);
+  --raised-background: color-mix(in srgb, rgb(255, 255, 255) 65%, transparent) linear-gradient(rgb(255, 255, 255), color-mix(in srgb, rgb(255, 255, 255) 65%, transparent));
+  --ribbon-background: rgb(243, 244, 246);
+  --ribbon-background-collapsed: rgb(255, 255, 255);
+  --search-clear-button-color: rgb(55, 65, 81);
+  --search-icon-color: rgb(55, 65, 81);
+  --search-result-background: rgb(255, 255, 255);
+  --secondary: var(--text-accent, hsl(254, 40%, 40%));
+  --setting-group-heading-color: rgb(31, 41, 55);
+  --setting-items-background: rgb(250, 250, 250);
+  --setting-items-border-color: rgb(209, 213, 219);
+  --shiki-active-tab-border-color: rgb(55, 65, 81);
+  --shiki-code-background: rgb(250, 250, 250);
+  --shiki-code-comment: rgb(90, 90, 90);
+  --shiki-code-normal: rgb(55, 65, 81);
+  --shiki-code-punctuation: rgb(55, 65, 81);
+  --shiki-gutter-border-color: rgb(209, 213, 219);
+  --shiki-gutter-text-color: rgb(90, 90, 90);
+  --shiki-gutter-text-color-highlight: rgb(55, 65, 81);
+  --shiki-highlight-neutral: rgb(55, 65, 81);
+  --shiki-terminal-dots-color: rgb(90, 90, 90);
+  --slider-thumb-border-color: rgb(156, 163, 175);
+  --slider-track-background: rgb(209, 213, 219);
+  --status-bar-background: rgb(243, 244, 246);
+  --status-bar-border-color: rgb(209, 213, 219);
+  --status-bar-text-color: rgb(55, 65, 81);
+  --suggestion-background: rgb(255, 255, 255);
+  --tab-background-active: rgb(255, 255, 255);
+  --tab-container-background: transparent;
+  --tab-divider-color: rgb(156, 163, 175);
+  --tab-height: 38px;
+  --tab-outline-color: rgb(209, 213, 219);
+  --tab-radius: 6px;
+  --tab-stacked-header-width: 44px;
+  --tab-switcher-background: rgb(243, 244, 246);
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(243, 244, 246), transparent);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(254, 40%, 40%);
+  --tab-text-color: rgb(90, 90, 90);
+  --tab-text-color-active: rgb(55, 65, 81);
+  --tab-text-color-focused: rgb(55, 65, 81);
+  --tab-text-color-focused-active: rgb(55, 65, 81);
+  --tab-text-color-focused-active-current: rgb(31, 41, 55);
+  --tab-text-color-focused-highlighted: hsl(254, 40%, 40%);
+  --table-add-button-border-color: rgb(209, 213, 219);
+  --table-border-color: rgb(209, 213, 219);
+  --table-drag-handle-background-active: hsl(253, 40.4%, 43%);
+  --table-drag-handle-color: rgb(90, 90, 90);
+  --table-header-border-color: rgb(209, 213, 219);
+  --table-header-color: rgb(31, 41, 55);
+  --table-selection: hsla(254, 40%, 40%, 0.1);
+  --table-selection-border-color: hsl(253, 40.4%, 43%);
+  --tag-background: hsla(254, 40%, 40%, 0.1);
+  --tag-background-hover: hsla(254, 40%, 40%, 0.2);
+  --tag-border-color: hsla(254, 40%, 40%, 0.15);
+  --tag-border-color-hover: hsla(254, 40%, 40%, 0.15);
+  --tag-color: hsl(254, 40%, 40%);
+  --tag-color-hover: hsl(254, 40%, 40%);
+  --tertiary: var(--text-accent-hover, hsl(251, 40.8%, 46%));
+  --text-accent: hsl(254, 40%, 40%);
+  --text-accent-hover: hsl(251, 40.8%, 46%);
+  --text-faint: rgb(90, 90, 90);
+  --text-muted: rgb(55, 65, 81);
+  --text-normal: rgb(31, 41, 55);
+  --text-selection: hsla(254, 40%, 40%, 0.2);
+  --textHighlight: var(--background-modifier-active-hover, hsla(254, 40%, 40%, 0.1));
+  --titlebar-background: rgb(243, 244, 246);
+  --titlebar-background-focused: rgb(250, 250, 250);
+  --titlebar-border-color: rgb(209, 213, 219);
+  --titlebar-text-color: rgb(55, 65, 81);
+  --titlebar-text-color-focused: rgb(31, 41, 55);
+  --traffic-lights-offset-x: 44px;
+  --traffic-lights-offset-y: 44px;
+  --vault-profile-color: rgb(31, 41, 55);
+  --vault-profile-color-hover: rgb(31, 41, 55);
+  --workspace-background-translucent: rgba(228, 228, 231, 0.7);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -3555,4 +3561,1514 @@ html[saved-theme="light"] body ul.tags > li {
   }
 }
 `,
+  classSettings: {
+    "encore-theme-dark": `body.encore-theme-dark-cobalt.theme-dark {
+--grey-50-rgb: 255, 255, 255;
+--grey-100-rgb: 235, 240, 246;
+--grey-200-rgb: 186, 192, 201;
+--grey-300-rgb: 163, 186, 178;
+--grey-350-rgb: 117, 122, 132;
+--grey-400-rgb: 108, 114, 125;
+--grey-500-rgb: 70, 76, 89;
+--grey-600-rgb: 48, 55, 66;
+--grey-700-rgb: 34, 43, 54;
+--grey-800-rgb: 23, 31, 43;
+--grey-850-rgb: 14, 18, 27;
+--grey-875-rgb: 9, 13, 21;
+--grey-900-rgb: 11, 16, 28;
+--accent-h: 93;
+--accent-s: 93%;
+--accent-l: 76%;
+}
+
+body.encore-theme-dark-cobalt.encore-colors-colorful {
+--highlight-hue: 50;
+--italic-color: #d2e6d2;
+--bold-color: #e0eec5;
+--h1-color: #b3bcf0;
+--h2-color: #989ed6;
+--h3-color: #8987c9;
+--h4-color: #9482c5;
+--h5-color: #9482c5;
+--h6-color: #9482c5;
+}
+
+body.encore-theme-dark-mercury.theme-dark {
+--grey-50-rgb: 255, 255, 255;
+--grey-100-rgb: 244, 244, 247;
+--grey-200-rgb: 199, 199, 204;
+--grey-300-rgb: 174, 175, 183;
+--grey-350-rgb: 129, 130, 144;
+--grey-400-rgb: 116, 116, 127;
+--grey-500-rgb: 73, 73, 80;
+--grey-600-rgb: 42, 42, 46;
+--grey-700-rgb: 33, 33, 36;
+--grey-800-rgb: 29, 29, 32;
+--grey-850-rgb: 23, 23, 26;
+--grey-875-rgb: 18, 18, 21;
+--grey-900-rgb: 12, 12, 15;
+--accent-h: 21;
+--accent-s: 92%;
+--accent-l: 69%;
+}
+
+body.encore-theme-dark-mercury.encore-colors-colorful {
+--highlight-hue: 50;
+--italic-color: #d2e6d2;
+--bold-color: #e0eec5;
+--h1-color: #61aafd;
+--h2-color: #5ce4ab;
+--h3-color: #50f3d8;
+--h4-color: #9adfff;
+--h5-color: #9482c5;
+--h6-color: #9482c5;
+}
+
+body.encore-theme-dark-iron.theme-dark {
+--grey-50-rgb: 255, 255, 255;
+--grey-100-rgb: 245, 240, 240;
+--grey-200-rgb: 231, 223, 219;
+--grey-300-rgb: 212, 204, 198;
+--grey-350-rgb: 147, 137, 136;
+--grey-400-rgb: 115, 105, 105;
+--grey-500-rgb: 97, 89, 87;
+--grey-600-rgb: 87, 79, 76;
+--grey-700-rgb: 57, 51, 50;
+--grey-800-rgb: 41, 36, 36;
+--grey-850-rgb: 36, 31, 31;
+--grey-875-rgb: 33, 29, 28;
+--grey-900-rgb: 28, 25, 23;
+--accent-h: 165;
+--accent-s: 74%;
+--accent-l: 52%;
+--color-red: #df2a51;
+--color-green: #2adfb2;
+--color-orange: #ff9b7c;
+--color-yellow: #abe667;
+--color-cyan: #2abbdf;
+--color-blue: #5c87ff;
+}
+
+body.encore-theme-dark-iron.encore-colors-colorful {
+--highlight-hue: 30;
+--italic-color: #82c0e9;
+--bold-color: #d86679;
+--h1-color: #ffc444;
+--h2-color: #faa250;
+--h3-color: #f88765;
+--h4-color: #f88773;
+--h5-color: #f88773;
+--h6-color: #f88773;
+}
+
+body.encore-theme-dark-carbon.theme-dark {
+--grey-50-rgb: 225, 227, 233;
+--grey-100-rgb: 222, 227, 241;
+--grey-200-rgb: 173, 181, 200;
+--grey-300-rgb: 162, 165, 186;
+--grey-350-rgb: 126, 128, 148;
+--grey-400-rgb: 97, 97, 115;
+--grey-500-rgb: 40, 40, 48;
+--grey-600-rgb: 26, 26, 32;
+--grey-700-rgb: 20, 20, 25;
+--grey-800-rgb: 11, 11, 12;
+--grey-850-rgb: 8, 8, 8;
+--grey-875-rgb: 6, 6, 6;
+--grey-900-rgb: 3, 3, 3;
+--accent-h: 203;
+--accent-s: 66%;
+--accent-l: 54%;
+--workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
+}
+
+body.encore-theme-dark-carbon.encore-colors-colorful {
+--highlight-hue: 30;
+--bold-color: var(--color-green);
+--italic-color: var(--color-red);
+--h1-color: #5af273;
+--h2-color: #65e4de;
+--h3-color: #e755db;
+--h4-color: #e9ca63;
+--h5-color: #9dee51;
+--h6-color: #8badec;
+}
+
+body.encore-theme-dark-blackout.theme-dark {
+--grey-50-rgb: 225, 227, 233;
+--grey-100-rgb: 222, 227, 241;
+--grey-200-rgb: 173, 181, 200;
+--grey-300-rgb: 162, 165, 186;
+--grey-350-rgb: 126, 128, 148;
+--grey-400-rgb: 97, 97, 115;
+--grey-500-rgb: 40, 40, 48;
+--grey-600-rgb: 26, 26, 32;
+--grey-700-rgb: 20, 20, 25;
+--grey-800-rgb: 0, 0, 0;
+--grey-850-rgb: 0, 0, 0;
+--grey-875-rgb: 0, 0, 0;
+--grey-900-rgb: 0, 0, 0;
+--accent-h: 203;
+--accent-s: 66%;
+--accent-l: 54%;
+--workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
+}
+
+body.encore-theme-dark-blackout.encore-colors-colorful {
+--highlight-hue: 30;
+--bold-color: #a283ec;
+--italic-color: #98f8eb;
+--h1-color: #975af2;
+--h2-color: #d965e4;
+--h3-color: #e05b9e;
+--h4-color: #e96363;
+--h5-color: #ee7e51;
+--h6-color: #ecc68b;
+}
+
+body.encore-theme-dark-slate.theme-dark {
+--grey-50-rgb: 255, 255, 255;
+--grey-100-rgb: 241, 243, 244;
+--grey-200-rgb: 228, 228, 231;
+--grey-300-rgb: 209, 213, 219;
+--grey-350-rgb: 177, 179, 192;
+--grey-400-rgb: 156, 163, 175;
+--grey-500-rgb: 107, 114, 128;
+--grey-600-rgb: 75, 85, 99;
+--grey-700-rgb: 55, 65, 81;
+--grey-800-rgb: 31, 41, 55;
+--grey-850-rgb: 23, 29, 44;
+--grey-875-rgb: 20, 26, 38;
+--grey-900-rgb: 17, 24, 39;
+--accent-h: 93;
+--accent-s: 93%;
+--accent-l: 76%;
+}
+
+body.encore-theme-dark-atom.theme-dark {
+--grey-900-rgb: 32, 36, 43;
+--grey-800-rgb: 39, 43, 52;
+--grey-700-rgb: 61, 68, 83;
+--grey-600-rgb: 79, 88, 107;
+--grey-500-rgb: 79, 88, 107;
+--grey-400-rgb: 171, 178, 191;
+--grey-300-rgb: 171, 178, 191;
+--grey-200-rgb: 171, 178, 191;
+--grey-100-rgb: 206, 210, 218;
+--grey-50-rgb: 206, 210, 218;
+--accent-h: 207;
+--accent-s: 82%;
+--accent-l: 66%;
+--workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
+--color-red: #e06c75;
+--color-green: #98c379;
+--color-orange: #d19a66;
+--color-yellow: #e5c07b;
+--color-cyan: #56b6c2;
+--color-blue: #61afef;
+}
+
+body.encore-theme-dark-atom.encore-colors-colorful {
+--bold-color: var(--color-blue);
+--italic-color: var(--color-green);
+--highlight-hue: 37;
+--h1-color: var(--color-orange);
+--h2-color: var(--color-green);
+--h3-color: var(--color-cyan);
+--h4-color: var(--color-blue);
+--h5-color: var(--color-red);
+--h6-color: var(--color-yellow);
+}
+
+body.encore-theme-dark-obsidian.theme-dark {
+--grey-900-rgb: 30, 30, 30;
+--grey-800-rgb: 38, 38, 38;
+--grey-700-rgb: 54, 54, 54;
+--grey-600-rgb: 82, 82, 91;
+--grey-500-rgb: 113, 113, 122;
+--grey-400-rgb: 161, 161, 170;
+--grey-300-rgb: 212, 212, 216;
+--grey-200-rgb: 228, 228, 231;
+--grey-100-rgb: 244, 244, 245;
+--grey-50-rgb: 250, 250, 250;
+--accent-h: 255;
+--accent-s: 92%;
+--accent-l: 76%;
+--inline-title-color: var(--text-color);
+--bold-color: var(--text-color);
+--italic-color: var(--text-color);
+--workspace-background-translucent: rgba(var(--grey-700-rgb), 0.33);
+background-color: rgba(var(--grey-800-rgb), var(--en-opacity));
+}
+
+body.encore-theme-dark-obsidian.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content {
+--en-opacity: 1;
+background-color: rgba(var(--grey-900-rgb), var(--en-opacity));
+}
+
+body.encore-theme-dark-obsidian.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content .canvas-wrapper .canvas-background {
+background-color: rgba(var(--grey-900-rgb), var(--en-opacity));
+}
+
+body.encore-theme-dark-obsidian.theme-dark .mk-note-header:after {
+--gradient-color: var(--color-base-10);
+}
+
+body.encore-theme-dark-obsidian.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-header {
+--en-opacity: 0.66;
+background-color: rgba(var(--grey-900-rgb), var(--en-opacity));
+backdrop-filter: var(--en-acrylic);
+}
+
+body.encore-theme-dark-rgb.theme-dark {
+--grey-50-rgb: 225, 227, 233;
+--grey-100-rgb: 222, 227, 241;
+--grey-200-rgb: 173, 181, 200;
+--grey-300-rgb: 162, 165, 186;
+--grey-350-rgb: 126, 128, 148;
+--grey-400-rgb: 97, 97, 115;
+--grey-500-rgb: 40, 40, 48;
+--grey-600-rgb: 26, 26, 32;
+--grey-700-rgb: 20, 20, 25;
+--grey-800-rgb: 11, 11, 12;
+--grey-850-rgb: 8, 8, 8;
+--grey-875-rgb: 6, 6, 6;
+--grey-900-rgb: 3, 3, 3;
+--workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
+--rainbow-gradient: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,222,0,1) 15%, rgba(167,255,0,1) 26%, rgba(0,255,136,1) 39%, rgba(15,245,254,1) 55%, rgba(111,0,255,1) 80%, rgba(253,45,45,1) 100%);
+}
+
+body.encore-theme-dark-rgb.encore-colors-colorful {
+--bold-color: var(--color-red);
+--italic-color: var(--color-green);
+}
+
+body.encore-theme-dark-rgb.theme-dark .mod-root .workspace-tab-container {
+border-radius: var(--tab-radius);
+--shadow-properties: 0 0 50px -25px;
+animation: rgb-shadow 12s linear infinite forwards;
+}
+
+body.encore-theme-dark-rgb.theme-dark .modal {
+--shadow-properties: 0 0 50px -15px;
+animation: rgb-shadow 12s linear infinite forwards;
+}
+
+body.encore-theme-dark-rgb.theme-dark .prompt::before {
+content: "";
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+height: 30px;
+background-color: red;
+background-image: var(--rainbow-gradient);
+animation: pan-right 5s linear infinite forwards;
+filter: blur(60px);
+}
+
+body.encore-theme-dark-rgb.theme-dark .prompt::after {
+content: "";
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+height: 10px;
+background-color: red;
+background-image: var(--rainbow-gradient);
+animation: pan-right 5s linear infinite forwards;
+filter: blur(15px);
+}
+
+body.encore-theme-dark-rgb.theme-dark .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
+--en-opacity: 0.2;
+background-color: rgba(var(--grey-100-rgb), var(--en-opacity));
+}
+
+body.encore-theme-dark-materialocean.theme-dark {
+--grey-50-rgb: 245, 248, 254;
+--grey-100-rgb: 237, 241, 249;
+--grey-200-rgb: 227, 231, 240;
+--grey-300-rgb: 200, 207, 223;
+--grey-350-rgb: 183, 191, 209;
+--grey-400-rgb: 152, 165, 188;
+--grey-500-rgb: 87, 98, 126;
+--grey-600-rgb: 58, 65, 89;
+--grey-700-rgb: 32, 36, 51;
+--grey-800-rgb: 15, 17, 26;
+--grey-850-rgb: 8, 9, 19;
+--grey-875-rgb: 1, 3, 17;
+--grey-900-rgb: 0, 1, 10;
+--accent-h: 355;
+--accent-s: 100%;
+--accent-l: 63%;
+--color-red: #bf616a;
+--color-green: #a3be8c;
+--color-orange: #b48ead;
+--color-yellow: #ebcb8b;
+--color-cyan: #88c0d0;
+--color-blue: #81a1c1;
+}
+
+body.encore-theme-dark-materialocean.encore-colors-colorful {
+--highlight-hue: 355;
+--italic-color: #d7dfec;
+--bold-color: #d9dee9;
+--h1-color: var(--color-red);
+--h2-color: var(--color-green);
+--h3-color: var(--color-blue);
+--h4-color: var(--color-cyan);
+--h5-color: var(--color-yellow);
+--h6-color: var(--color-orange);
+}
+
+body.encore-theme-dark-flexoki.theme-dark {
+--grey-50-rgb: 242, 240, 229;
+--grey-100-rgb: 206, 205, 195;
+--grey-200-rgb: 168, 166, 159;
+--grey-300-rgb: 135, 133, 128;
+--grey-350-rgb: 114, 111, 106;
+--grey-400-rgb: 85, 82, 78;
+--grey-500-rgb: 64, 62, 60;
+--grey-600-rgb: 52, 51, 49;
+--grey-700-rgb: 40, 39, 38;
+--grey-800-rgb: 28, 27, 26;
+--grey-850-rgb: 23, 22, 22;
+--grey-875-rgb: 20, 19, 19;
+--grey-900-rgb: 16, 15, 15;
+--accent-h: 175;
+--accent-s: 49%;
+--accent-l: 45%;
+--workspace-background-translucent: rgba(var(--grey-700-rgb), 0.33);
+background-color: rgb(var(--grey-875-rgb));
+}
+
+body.encore-theme-dark-flexoki.encore-colors-colorful {
+--highlight-hue: 50;
+--italic-color: #d2e6d2;
+--bold-color: #e0eec5;
+--h1-color: #b3bcf0;
+--h2-color: #989ed6;
+--h3-color: #8987c9;
+--h4-color: #9482c5;
+--h5-color: #9482c5;
+--h6-color: #9482c5;
+}
+
+body.encore-theme-dark-flexoki.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content {
+--en-opacity: 1;
+background-color: rgb(var(--grey-900-rgb));
+}
+
+body.encore-theme-dark-flexoki.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content .canvas-wrapper .canvas-background {
+background-color: rgb(var(--grey-900-rgb));
+}
+
+body.encore-theme-dark-flexoki.theme-dark .mk-note-header:after {
+--gradient-color: var(--color-base-10);
+}
+
+body.encore-theme-dark-flexoki.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-header {
+--en-opacity: 0.66;
+background-color: rgb(var(--grey-900-rgb));
+backdrop-filter: var(--en-acrylic);
+}
+
+body.encore-theme-dark-glass-royale.theme-dark {
+--grey-50-rgb: 225, 227, 233;
+--grey-100-rgb: 222, 227, 241;
+--grey-200-rgb: 173, 181, 200;
+--grey-300-rgb: 162, 165, 186;
+--grey-350-rgb: 126, 128, 148;
+--grey-400-rgb: 97, 97, 115;
+--grey-500-rgb: 40, 40, 48;
+--grey-600-rgb: 26, 26, 32;
+--grey-700-rgb: 20, 20, 25;
+--grey-800-rgb: 11, 11, 12;
+--grey-850-rgb: 8, 8, 8;
+--grey-875-rgb: 6, 6, 6;
+--grey-900-rgb: 0, 0, 0;
+--accent-h: 203;
+--accent-s: 66%;
+--accent-l: 54%;
+--workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
+}
+
+body.encore-theme-dark-glass-royale.encore-colors-colorful {
+--highlight-hue: 30;
+--bold-color: var(--color-green);
+--italic-color: var(--color-red);
+--h1-color: #5af273;
+--h2-color: #65e4de;
+--h3-color: #e755db;
+--h4-color: #e9ca63;
+--h5-color: #9dee51;
+--h6-color: #8badec;
+}
+
+body.encore-theme-dark-glass-royale.theme-dark .mod-left-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container, body.encore-theme-dark-glass-royale.theme-dark .mod-right-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container {
+background-color: rgba(255, 255, 255, 0.062745098);
+backdrop-filter: blur(20px) saturate(1.8);
+}
+
+body.encore-theme-dark-glass-royale.theme-dark .mod-left-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header.is-active, body.encore-theme-dark-glass-royale.theme-dark .mod-right-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header.is-active {
+background-color: rgba(255, 255, 255, 0.1882352941);
+}
+
+body.encore-theme-dark-glass-royale.theme-dark .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
+background-color: rgba(255, 255, 255, 0.1882352941);
+backdrop-filter: blur(50px) saturate(1.5);
+}
+
+body.encore-theme-dark-glass-royale.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content {
+--en-opacity: 0.75;
+background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2509803922)), linear-gradient(rgba(255, 255, 255, 0.031372549), rgba(255, 255, 255, 0.0078431373));
+backdrop-filter: blur(32px) saturate(2);
+}
+
+body.encore-theme-dark-glass-royale.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content .canvas-wrapper .canvas-background {
+background-color: transparent;
+--canvas-dot-pattern: #ffffff15;
+}
+
+body.encore-theme-dark-glass-royale.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-header {
+background-color: rgba(0, 0, 0, 0);
+backdrop-filter: var(--en-acrylic);
+}`,
+    "encore-theme-dark-cobalt": `body.theme-dark {
+--grey-50-rgb: 255, 255, 255;
+--grey-100-rgb: 235, 240, 246;
+--grey-200-rgb: 186, 192, 201;
+--grey-300-rgb: 163, 186, 178;
+--grey-350-rgb: 117, 122, 132;
+--grey-400-rgb: 108, 114, 125;
+--grey-500-rgb: 70, 76, 89;
+--grey-600-rgb: 48, 55, 66;
+--grey-700-rgb: 34, 43, 54;
+--grey-800-rgb: 23, 31, 43;
+--grey-850-rgb: 14, 18, 27;
+--grey-875-rgb: 9, 13, 21;
+--grey-900-rgb: 11, 16, 28;
+--accent-h: 93;
+--accent-s: 93%;
+--accent-l: 76%;
+}
+
+body.encore-colors-colorful {
+--highlight-hue: 50;
+--italic-color: #d2e6d2;
+--bold-color: #e0eec5;
+--h1-color: #b3bcf0;
+--h2-color: #989ed6;
+--h3-color: #8987c9;
+--h4-color: #9482c5;
+--h5-color: #9482c5;
+--h6-color: #9482c5;
+}`,
+    "encore-theme-dark-mercury": `body.theme-dark {
+--grey-50-rgb: 255, 255, 255;
+--grey-100-rgb: 244, 244, 247;
+--grey-200-rgb: 199, 199, 204;
+--grey-300-rgb: 174, 175, 183;
+--grey-350-rgb: 129, 130, 144;
+--grey-400-rgb: 116, 116, 127;
+--grey-500-rgb: 73, 73, 80;
+--grey-600-rgb: 42, 42, 46;
+--grey-700-rgb: 33, 33, 36;
+--grey-800-rgb: 29, 29, 32;
+--grey-850-rgb: 23, 23, 26;
+--grey-875-rgb: 18, 18, 21;
+--grey-900-rgb: 12, 12, 15;
+--accent-h: 21;
+--accent-s: 92%;
+--accent-l: 69%;
+}
+
+body.encore-colors-colorful {
+--highlight-hue: 50;
+--italic-color: #d2e6d2;
+--bold-color: #e0eec5;
+--h1-color: #61aafd;
+--h2-color: #5ce4ab;
+--h3-color: #50f3d8;
+--h4-color: #9adfff;
+--h5-color: #9482c5;
+--h6-color: #9482c5;
+}`,
+    "encore-theme-dark-iron": `body.theme-dark {
+--grey-50-rgb: 255, 255, 255;
+--grey-100-rgb: 245, 240, 240;
+--grey-200-rgb: 231, 223, 219;
+--grey-300-rgb: 212, 204, 198;
+--grey-350-rgb: 147, 137, 136;
+--grey-400-rgb: 115, 105, 105;
+--grey-500-rgb: 97, 89, 87;
+--grey-600-rgb: 87, 79, 76;
+--grey-700-rgb: 57, 51, 50;
+--grey-800-rgb: 41, 36, 36;
+--grey-850-rgb: 36, 31, 31;
+--grey-875-rgb: 33, 29, 28;
+--grey-900-rgb: 28, 25, 23;
+--accent-h: 165;
+--accent-s: 74%;
+--accent-l: 52%;
+--color-red: #df2a51;
+--color-green: #2adfb2;
+--color-orange: #ff9b7c;
+--color-yellow: #abe667;
+--color-cyan: #2abbdf;
+--color-blue: #5c87ff;
+}
+
+body.encore-colors-colorful {
+--highlight-hue: 30;
+--italic-color: #82c0e9;
+--bold-color: #d86679;
+--h1-color: #ffc444;
+--h2-color: #faa250;
+--h3-color: #f88765;
+--h4-color: #f88773;
+--h5-color: #f88773;
+--h6-color: #f88773;
+}`,
+    "encore-theme-dark-carbon": `body.theme-dark {
+--grey-50-rgb: 225, 227, 233;
+--grey-100-rgb: 222, 227, 241;
+--grey-200-rgb: 173, 181, 200;
+--grey-300-rgb: 162, 165, 186;
+--grey-350-rgb: 126, 128, 148;
+--grey-400-rgb: 97, 97, 115;
+--grey-500-rgb: 40, 40, 48;
+--grey-600-rgb: 26, 26, 32;
+--grey-700-rgb: 20, 20, 25;
+--grey-800-rgb: 11, 11, 12;
+--grey-850-rgb: 8, 8, 8;
+--grey-875-rgb: 6, 6, 6;
+--grey-900-rgb: 3, 3, 3;
+--accent-h: 203;
+--accent-s: 66%;
+--accent-l: 54%;
+--workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
+}
+
+body.encore-colors-colorful {
+--highlight-hue: 30;
+--bold-color: var(--color-green);
+--italic-color: var(--color-red);
+--h1-color: #5af273;
+--h2-color: #65e4de;
+--h3-color: #e755db;
+--h4-color: #e9ca63;
+--h5-color: #9dee51;
+--h6-color: #8badec;
+}`,
+    "encore-theme-dark-blackout": `body.theme-dark {
+--grey-50-rgb: 225, 227, 233;
+--grey-100-rgb: 222, 227, 241;
+--grey-200-rgb: 173, 181, 200;
+--grey-300-rgb: 162, 165, 186;
+--grey-350-rgb: 126, 128, 148;
+--grey-400-rgb: 97, 97, 115;
+--grey-500-rgb: 40, 40, 48;
+--grey-600-rgb: 26, 26, 32;
+--grey-700-rgb: 20, 20, 25;
+--grey-800-rgb: 0, 0, 0;
+--grey-850-rgb: 0, 0, 0;
+--grey-875-rgb: 0, 0, 0;
+--grey-900-rgb: 0, 0, 0;
+--accent-h: 203;
+--accent-s: 66%;
+--accent-l: 54%;
+--workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
+}
+
+body.encore-colors-colorful {
+--highlight-hue: 30;
+--bold-color: #a283ec;
+--italic-color: #98f8eb;
+--h1-color: #975af2;
+--h2-color: #d965e4;
+--h3-color: #e05b9e;
+--h4-color: #e96363;
+--h5-color: #ee7e51;
+--h6-color: #ecc68b;
+}`,
+    "encore-theme-dark-obsidian": `body.theme-dark {
+--grey-900-rgb: 30, 30, 30;
+--grey-800-rgb: 38, 38, 38;
+--grey-700-rgb: 54, 54, 54;
+--grey-600-rgb: 82, 82, 91;
+--grey-500-rgb: 113, 113, 122;
+--grey-400-rgb: 161, 161, 170;
+--grey-300-rgb: 212, 212, 216;
+--grey-200-rgb: 228, 228, 231;
+--grey-100-rgb: 244, 244, 245;
+--grey-50-rgb: 250, 250, 250;
+--accent-h: 255;
+--accent-s: 92%;
+--accent-l: 76%;
+--inline-title-color: var(--text-color);
+--bold-color: var(--text-color);
+--italic-color: var(--text-color);
+--workspace-background-translucent: rgba(var(--grey-700-rgb), 0.33);
+background-color: rgba(var(--grey-800-rgb), var(--en-opacity));
+}
+
+body.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content {
+--en-opacity: 1;
+background-color: rgba(var(--grey-900-rgb), var(--en-opacity));
+}
+
+body.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content .canvas-wrapper .canvas-background {
+background-color: rgba(var(--grey-900-rgb), var(--en-opacity));
+}
+
+body.theme-dark .mk-note-header:after {
+--gradient-color: var(--color-base-10);
+}
+
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-header {
+--en-opacity: 0.66;
+background-color: rgba(var(--grey-900-rgb), var(--en-opacity));
+backdrop-filter: var(--en-acrylic);
+}`,
+    "encore-theme-dark-slate": `body.theme-dark {
+--grey-50-rgb: 255, 255, 255;
+--grey-100-rgb: 241, 243, 244;
+--grey-200-rgb: 228, 228, 231;
+--grey-300-rgb: 209, 213, 219;
+--grey-350-rgb: 177, 179, 192;
+--grey-400-rgb: 156, 163, 175;
+--grey-500-rgb: 107, 114, 128;
+--grey-600-rgb: 75, 85, 99;
+--grey-700-rgb: 55, 65, 81;
+--grey-800-rgb: 31, 41, 55;
+--grey-850-rgb: 23, 29, 44;
+--grey-875-rgb: 20, 26, 38;
+--grey-900-rgb: 17, 24, 39;
+--accent-h: 93;
+--accent-s: 93%;
+--accent-l: 76%;
+}`,
+    "encore-theme-dark-atom": `body.theme-dark {
+--grey-900-rgb: 32, 36, 43;
+--grey-800-rgb: 39, 43, 52;
+--grey-700-rgb: 61, 68, 83;
+--grey-600-rgb: 79, 88, 107;
+--grey-500-rgb: 79, 88, 107;
+--grey-400-rgb: 171, 178, 191;
+--grey-300-rgb: 171, 178, 191;
+--grey-200-rgb: 171, 178, 191;
+--grey-100-rgb: 206, 210, 218;
+--grey-50-rgb: 206, 210, 218;
+--accent-h: 207;
+--accent-s: 82%;
+--accent-l: 66%;
+--workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
+--color-red: #e06c75;
+--color-green: #98c379;
+--color-orange: #d19a66;
+--color-yellow: #e5c07b;
+--color-cyan: #56b6c2;
+--color-blue: #61afef;
+}
+
+body.encore-colors-colorful {
+--bold-color: var(--color-blue);
+--italic-color: var(--color-green);
+--highlight-hue: 37;
+--h1-color: var(--color-orange);
+--h2-color: var(--color-green);
+--h3-color: var(--color-cyan);
+--h4-color: var(--color-blue);
+--h5-color: var(--color-red);
+--h6-color: var(--color-yellow);
+}`,
+    "encore-theme-dark-rgb": `body.theme-dark {
+--grey-50-rgb: 225, 227, 233;
+--grey-100-rgb: 222, 227, 241;
+--grey-200-rgb: 173, 181, 200;
+--grey-300-rgb: 162, 165, 186;
+--grey-350-rgb: 126, 128, 148;
+--grey-400-rgb: 97, 97, 115;
+--grey-500-rgb: 40, 40, 48;
+--grey-600-rgb: 26, 26, 32;
+--grey-700-rgb: 20, 20, 25;
+--grey-800-rgb: 11, 11, 12;
+--grey-850-rgb: 8, 8, 8;
+--grey-875-rgb: 6, 6, 6;
+--grey-900-rgb: 3, 3, 3;
+--workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
+--rainbow-gradient: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,222,0,1) 15%, rgba(167,255,0,1) 26%, rgba(0,255,136,1) 39%, rgba(15,245,254,1) 55%, rgba(111,0,255,1) 80%, rgba(253,45,45,1) 100%);
+}
+
+body.encore-colors-colorful {
+--bold-color: var(--color-red);
+--italic-color: var(--color-green);
+}
+
+body.theme-dark .mod-root .workspace-tab-container {
+border-radius: var(--tab-radius);
+--shadow-properties: 0 0 50px -25px;
+animation: rgb-shadow 12s linear infinite forwards;
+}
+
+body.theme-dark .modal {
+--shadow-properties: 0 0 50px -15px;
+animation: rgb-shadow 12s linear infinite forwards;
+}
+
+body.theme-dark .prompt::before {
+content: "";
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+height: 30px;
+background-color: red;
+background-image: var(--rainbow-gradient);
+animation: pan-right 5s linear infinite forwards;
+filter: blur(60px);
+}
+
+body.theme-dark .prompt::after {
+content: "";
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+height: 10px;
+background-color: red;
+background-image: var(--rainbow-gradient);
+animation: pan-right 5s linear infinite forwards;
+filter: blur(15px);
+}
+
+body.theme-dark .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
+--en-opacity: 0.2;
+background-color: rgba(var(--grey-100-rgb), var(--en-opacity));
+}`,
+    "encore-theme-dark-materialocean": `body.theme-dark {
+--grey-50-rgb: 245, 248, 254;
+--grey-100-rgb: 237, 241, 249;
+--grey-200-rgb: 227, 231, 240;
+--grey-300-rgb: 200, 207, 223;
+--grey-350-rgb: 183, 191, 209;
+--grey-400-rgb: 152, 165, 188;
+--grey-500-rgb: 87, 98, 126;
+--grey-600-rgb: 58, 65, 89;
+--grey-700-rgb: 32, 36, 51;
+--grey-800-rgb: 15, 17, 26;
+--grey-850-rgb: 8, 9, 19;
+--grey-875-rgb: 1, 3, 17;
+--grey-900-rgb: 0, 1, 10;
+--accent-h: 355;
+--accent-s: 100%;
+--accent-l: 63%;
+--color-red: #bf616a;
+--color-green: #a3be8c;
+--color-orange: #b48ead;
+--color-yellow: #ebcb8b;
+--color-cyan: #88c0d0;
+--color-blue: #81a1c1;
+}
+
+body.encore-colors-colorful {
+--highlight-hue: 355;
+--italic-color: #d7dfec;
+--bold-color: #d9dee9;
+--h1-color: var(--color-red);
+--h2-color: var(--color-green);
+--h3-color: var(--color-blue);
+--h4-color: var(--color-cyan);
+--h5-color: var(--color-yellow);
+--h6-color: var(--color-orange);
+}`,
+    "encore-theme-dark-flexoki": `body.theme-dark {
+--grey-50-rgb: 242, 240, 229;
+--grey-100-rgb: 206, 205, 195;
+--grey-200-rgb: 168, 166, 159;
+--grey-300-rgb: 135, 133, 128;
+--grey-350-rgb: 114, 111, 106;
+--grey-400-rgb: 85, 82, 78;
+--grey-500-rgb: 64, 62, 60;
+--grey-600-rgb: 52, 51, 49;
+--grey-700-rgb: 40, 39, 38;
+--grey-800-rgb: 28, 27, 26;
+--grey-850-rgb: 23, 22, 22;
+--grey-875-rgb: 20, 19, 19;
+--grey-900-rgb: 16, 15, 15;
+--accent-h: 175;
+--accent-s: 49%;
+--accent-l: 45%;
+--workspace-background-translucent: rgba(var(--grey-700-rgb), 0.33);
+background-color: rgb(var(--grey-875-rgb));
+}
+
+body.encore-colors-colorful {
+--highlight-hue: 50;
+--italic-color: #d2e6d2;
+--bold-color: #e0eec5;
+--h1-color: #b3bcf0;
+--h2-color: #989ed6;
+--h3-color: #8987c9;
+--h4-color: #9482c5;
+--h5-color: #9482c5;
+--h6-color: #9482c5;
+}
+
+body.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content {
+--en-opacity: 1;
+background-color: rgb(var(--grey-900-rgb));
+}
+
+body.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content .canvas-wrapper .canvas-background {
+background-color: rgb(var(--grey-900-rgb));
+}
+
+body.theme-dark .mk-note-header:after {
+--gradient-color: var(--color-base-10);
+}
+
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-header {
+--en-opacity: 0.66;
+background-color: rgb(var(--grey-900-rgb));
+backdrop-filter: var(--en-acrylic);
+}`,
+    "encore-theme-dark-glass-royale": `body.theme-dark {
+--grey-50-rgb: 225, 227, 233;
+--grey-100-rgb: 222, 227, 241;
+--grey-200-rgb: 173, 181, 200;
+--grey-300-rgb: 162, 165, 186;
+--grey-350-rgb: 126, 128, 148;
+--grey-400-rgb: 97, 97, 115;
+--grey-500-rgb: 40, 40, 48;
+--grey-600-rgb: 26, 26, 32;
+--grey-700-rgb: 20, 20, 25;
+--grey-800-rgb: 11, 11, 12;
+--grey-850-rgb: 8, 8, 8;
+--grey-875-rgb: 6, 6, 6;
+--grey-900-rgb: 0, 0, 0;
+--accent-h: 203;
+--accent-s: 66%;
+--accent-l: 54%;
+--workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
+}
+
+body.encore-colors-colorful {
+--highlight-hue: 30;
+--bold-color: var(--color-green);
+--italic-color: var(--color-red);
+--h1-color: #5af273;
+--h2-color: #65e4de;
+--h3-color: #e755db;
+--h4-color: #e9ca63;
+--h5-color: #9dee51;
+--h6-color: #8badec;
+}
+
+body.theme-dark .mod-left-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container, body.theme-dark .mod-right-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container {
+background-color: rgba(255, 255, 255, 0.062745098);
+backdrop-filter: blur(20px) saturate(1.8);
+}
+
+body.theme-dark .mod-left-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header.is-active, body.theme-dark .mod-right-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header.is-active {
+background-color: rgba(255, 255, 255, 0.1882352941);
+}
+
+body.theme-dark .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
+background-color: rgba(255, 255, 255, 0.1882352941);
+backdrop-filter: blur(50px) saturate(1.5);
+}
+
+body.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content {
+--en-opacity: 0.75;
+background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2509803922)), linear-gradient(rgba(255, 255, 255, 0.031372549), rgba(255, 255, 255, 0.0078431373));
+backdrop-filter: blur(32px) saturate(2);
+}
+
+body.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content .canvas-wrapper .canvas-background {
+background-color: transparent;
+--canvas-dot-pattern: #ffffff15;
+}
+
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-header {
+background-color: rgba(0, 0, 0, 0);
+backdrop-filter: var(--en-acrylic);
+}`,
+    "encore-theme-light": `body.encore-theme-light-sterling.encore-colors-colorful {
+--highlight-hue: 30;
+--italic-color: #82c0e9;
+--bold-color: #d86679;
+--h1-color: #ffc444;
+--h2-color: #faa250;
+--h3-color: #f88765;
+--h4-color: #f88773;
+--h5-color: #f88773;
+--h6-color: #f88773;
+}
+body.encore-theme-light-atom.theme-light {
+--grey-50-rgb: 32, 36, 43;
+--grey-100-rgb: 39, 43, 52;
+--grey-200-rgb: 61, 68, 83;
+--grey-300-rgb: 79, 88, 107;
+--grey-400-rgb: 79, 88, 107;
+--grey-500-rgb: 171, 178, 191;
+--grey-600-rgb: 171, 178, 191;
+--grey-700-rgb: 171, 178, 191;
+--grey-800-rgb: 206, 210, 218;
+--grey-900-rgb: 206, 210, 218;
+--accent-h: 207;
+--accent-s: 82%;
+--accent-l: 56%;
+--workspace-background-translucent: rgba(var(--grey-700-rgb), 0.7);
+--color-red: #b95059;
+--color-green: #759c59;
+--color-orange: #c78a51;
+--color-yellow: #d3a95c;
+--color-cyan: #42abb9;
+--color-blue: #469de4;
+--bold-color: var(--color-blue);
+--italic-color: var(--color-green);
+--highlight-hue: 37;
+--h1-color: var(--color-orange);
+--h2-color: var(--color-green);
+--h3-color: var(--color-cyan);
+--h4-color: var(--color-blue);
+--h5-color: var(--color-red);
+--h6-color: var(--color-yellow);
+}
+
+body.encore-theme-light-sterling.theme-light {
+--grey-50-rgb: 17, 24, 39;
+--grey-100-rgb: 31, 41, 55;
+--grey-200-rgb: 55, 65, 81;
+--grey-300-rgb: 75, 85, 99;
+--grey-350-rgb: 90, 90, 90;
+--grey-400-rgb: 107, 114, 128;
+--grey-500-rgb: 156, 163, 175;
+--grey-600-rgb: 209, 213, 219;
+--grey-700-rgb: 228, 228, 231;
+--grey-800-rgb: 243, 244, 246;
+--grey-850-rgb: 250, 250, 250;
+--grey-875-rgb: 250, 250, 250;
+--grey-900-rgb: 255, 255, 255;
+--accent-h: 165;
+--accent-s: 74%;
+--accent-l: 52%;
+--color-red: #df2a51;
+--color-green: #2adfb2;
+--color-orange: #ff9b7c;
+--color-yellow: #abe667;
+--color-cyan: #2abbdf;
+--color-blue: #5c87ff;
+}`,
+    "encore-theme-light-sterling": `body.encore-colors-colorful {
+--highlight-hue: 30;
+--italic-color: #82c0e9;
+--bold-color: #d86679;
+--h1-color: #ffc444;
+--h2-color: #faa250;
+--h3-color: #f88765;
+--h4-color: #f88773;
+--h5-color: #f88773;
+--h6-color: #f88773;
+}
+body.theme-light {
+--grey-50-rgb: 17, 24, 39;
+--grey-100-rgb: 31, 41, 55;
+--grey-200-rgb: 55, 65, 81;
+--grey-300-rgb: 75, 85, 99;
+--grey-350-rgb: 90, 90, 90;
+--grey-400-rgb: 107, 114, 128;
+--grey-500-rgb: 156, 163, 175;
+--grey-600-rgb: 209, 213, 219;
+--grey-700-rgb: 228, 228, 231;
+--grey-800-rgb: 243, 244, 246;
+--grey-850-rgb: 250, 250, 250;
+--grey-875-rgb: 250, 250, 250;
+--grey-900-rgb: 255, 255, 255;
+--accent-h: 165;
+--accent-s: 74%;
+--accent-l: 52%;
+--color-red: #df2a51;
+--color-green: #2adfb2;
+--color-orange: #ff9b7c;
+--color-yellow: #abe667;
+--color-cyan: #2abbdf;
+--color-blue: #5c87ff;
+}`,
+    "encore-theme-light-atom": `body.theme-light {
+--grey-50-rgb: 32, 36, 43;
+--grey-100-rgb: 39, 43, 52;
+--grey-200-rgb: 61, 68, 83;
+--grey-300-rgb: 79, 88, 107;
+--grey-400-rgb: 79, 88, 107;
+--grey-500-rgb: 171, 178, 191;
+--grey-600-rgb: 171, 178, 191;
+--grey-700-rgb: 171, 178, 191;
+--grey-800-rgb: 206, 210, 218;
+--grey-900-rgb: 206, 210, 218;
+--accent-h: 207;
+--accent-s: 82%;
+--accent-l: 56%;
+--workspace-background-translucent: rgba(var(--grey-700-rgb), 0.7);
+--color-red: #b95059;
+--color-green: #759c59;
+--color-orange: #c78a51;
+--color-yellow: #d3a95c;
+--color-cyan: #42abb9;
+--color-blue: #469de4;
+--bold-color: var(--color-blue);
+--italic-color: var(--color-green);
+--highlight-hue: 37;
+--h1-color: var(--color-orange);
+--h2-color: var(--color-green);
+--h3-color: var(--color-cyan);
+--h4-color: var(--color-blue);
+--h5-color: var(--color-red);
+--h6-color: var(--color-yellow);
+}`,
+    "encore-colors-colorful": `body.encore-theme-light-sterling.encore-colors-colorful {
+--highlight-hue: 30;
+--italic-color: #82c0e9;
+--bold-color: #d86679;
+--h1-color: #ffc444;
+--h2-color: #faa250;
+--h3-color: #f88765;
+--h4-color: #f88773;
+--h5-color: #f88773;
+--h6-color: #f88773;
+}
+body.encore-colors-colorful {
+--highlight-hue: 30;
+--h1-color: #975af2;
+--h2-color: #d965e4;
+--h3-color: #e05b9e;
+--h4-color: #e96363;
+--h5-color: #ee7e51;
+--h6-color: #ecc68b;
+}
+
+body.encore-theme-dark-cobalt.encore-colors-colorful {
+--highlight-hue: 50;
+--italic-color: #d2e6d2;
+--bold-color: #e0eec5;
+--h1-color: #b3bcf0;
+--h2-color: #989ed6;
+--h3-color: #8987c9;
+--h4-color: #9482c5;
+--h5-color: #9482c5;
+--h6-color: #9482c5;
+}
+
+body.encore-theme-dark-mercury.encore-colors-colorful {
+--highlight-hue: 50;
+--italic-color: #d2e6d2;
+--bold-color: #e0eec5;
+--h1-color: #61aafd;
+--h2-color: #5ce4ab;
+--h3-color: #50f3d8;
+--h4-color: #9adfff;
+--h5-color: #9482c5;
+--h6-color: #9482c5;
+}
+
+body.encore-theme-dark-iron.encore-colors-colorful {
+--highlight-hue: 30;
+--italic-color: #82c0e9;
+--bold-color: #d86679;
+--h1-color: #ffc444;
+--h2-color: #faa250;
+--h3-color: #f88765;
+--h4-color: #f88773;
+--h5-color: #f88773;
+--h6-color: #f88773;
+}
+
+body.encore-theme-dark-carbon.encore-colors-colorful {
+--highlight-hue: 30;
+--bold-color: var(--color-green);
+--italic-color: var(--color-red);
+--h1-color: #5af273;
+--h2-color: #65e4de;
+--h3-color: #e755db;
+--h4-color: #e9ca63;
+--h5-color: #9dee51;
+--h6-color: #8badec;
+}
+
+body.encore-theme-dark-blackout.encore-colors-colorful {
+--highlight-hue: 30;
+--bold-color: #a283ec;
+--italic-color: #98f8eb;
+--h1-color: #975af2;
+--h2-color: #d965e4;
+--h3-color: #e05b9e;
+--h4-color: #e96363;
+--h5-color: #ee7e51;
+--h6-color: #ecc68b;
+}
+
+body.encore-theme-dark-atom.encore-colors-colorful {
+--bold-color: var(--color-blue);
+--italic-color: var(--color-green);
+--highlight-hue: 37;
+--h1-color: var(--color-orange);
+--h2-color: var(--color-green);
+--h3-color: var(--color-cyan);
+--h4-color: var(--color-blue);
+--h5-color: var(--color-red);
+--h6-color: var(--color-yellow);
+}
+
+body.encore-theme-dark-rgb.encore-colors-colorful {
+--bold-color: var(--color-red);
+--italic-color: var(--color-green);
+}
+
+body.encore-theme-dark-materialocean.encore-colors-colorful {
+--highlight-hue: 355;
+--italic-color: #d7dfec;
+--bold-color: #d9dee9;
+--h1-color: var(--color-red);
+--h2-color: var(--color-green);
+--h3-color: var(--color-blue);
+--h4-color: var(--color-cyan);
+--h5-color: var(--color-yellow);
+--h6-color: var(--color-orange);
+}
+
+body.encore-theme-dark-flexoki.encore-colors-colorful {
+--highlight-hue: 50;
+--italic-color: #d2e6d2;
+--bold-color: #e0eec5;
+--h1-color: #b3bcf0;
+--h2-color: #989ed6;
+--h3-color: #8987c9;
+--h4-color: #9482c5;
+--h5-color: #9482c5;
+--h6-color: #9482c5;
+}
+
+body.encore-theme-dark-glass-royale.encore-colors-colorful {
+--highlight-hue: 30;
+--bold-color: var(--color-green);
+--italic-color: var(--color-red);
+--h1-color: #5af273;
+--h2-color: #65e4de;
+--h3-color: #e755db;
+--h4-color: #e9ca63;
+--h5-color: #9dee51;
+--h6-color: #8badec;
+}`,
+    "encore-colors-custom": `body.encore-colors-custom {
+--italic-color: var(--encore-custom-italic) !important;
+--bold-color: var(--encore-custom-bold) !important;
+--h1-color: var(--encore-custom-h1) !important;
+--h2-color: var(--encore-custom-h2) !important;
+--h3-color: var(--encore-custom-h3) !important;
+--h4-color: var(--encore-custom-h4) !important;
+--h5-color: var(--encore-custom-h5) !important;
+--h6-color: var(--encore-custom-h6) !important;
+}`,
+    "encore-translucency": `body.encore-bg-image .app-container {
+background-image: var(--encore-translucency-image);
+background-size: cover;
+}
+
+body.encore-bg-image .app-container::before {
+position: fixed;
+inset: 0;
+content: "";
+background: transparent;
+backdrop-filter: blur(calc(1px * pow(var(--encore-translucency-blur-amount, 10), 2)));
+}
+
+body.encore-bg-frosty {
+background-image: linear-gradient(rgb(12, 136, 126), rgb(78, 4, 250));
+}
+
+body.encore-bg-frosty .app-container {
+background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1920 3240' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3C/defs%3E%3Cellipse style='filter: blur(200px); fill: rgb(38, 214, 255);' cx='465.54' cy='549.634' rx='559.232' ry='230.137'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(59, 55, 212);' cx='1461.894' cy='749.77' rx='559.232' ry='338.301'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(123, 130, 208);' cx='398.22' cy='1237.125' rx='559.232' ry='338.301'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(17, 197, 255);' cx='1546.62' cy='1737.081' rx='603.713' ry='357.778'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(185, 185, 185);' cx='981.906' cy='1520.478' rx='371.639' ry='230.137'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(35, 30, 204);' cx='549.068' cy='2325.941' rx='721.684' ry='405.989'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(148, 19, 172);' cx='1338.121' cy='2790.09' rx='721.684' ry='405.989'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(148, 19, 172);' cx='1297.975' cy='-434.34' rx='721.684' ry='405.989'%3E%3C/ellipse%3E%3C/svg%3E");
+background-size: cover;
+background-repeat: mirror;
+animation: scroll-up infinite 120s linear;
+}
+
+body.encore-bg-chromatic {
+background-image: repeating-linear-gradient(45deg, rgb(15, 245, 254), rgb(111, 0, 255), rgb(255, 0, 0), rgb(255, 222, 0), rgb(167, 255, 0), rgb(0, 255, 136), rgb(15, 245, 254), rgb(111, 0, 255), rgb(253, 0, 0), rgb(255, 222, 0), rgb(167, 255, 0), rgb(0, 255, 136), rgb(15, 245, 254), rgb(111, 0, 255));
+background-size: 100% 800vh;
+animation: scroll-up-down infinite 180s ease-in-out alternate-reverse;
+}
+
+body.encore-bg-chromatic::before {
+position: fixed;
+inset: 0;
+content: "";
+background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9411764706));
+}
+
+body.encore-bg-prismatic {
+background-image: repeating-linear-gradient(45deg, rgb(0, 4, 255), rgb(107, 15, 254), rgb(153, 0, 255), rgb(255, 0, 242), rgb(255, 0, 170), rgb(255, 0, 242), rgb(153, 0, 255), rgb(107, 15, 254), rgb(0, 4, 255), rgb(107, 15, 254), rgb(153, 0, 255), rgb(255, 0, 242));
+background-size: 100% 400vh;
+animation: scroll-up infinite 30s linear;
+}
+
+body.encore-bg-prismatic::before {
+position: fixed;
+inset: 0;
+content: "";
+background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9411764706));
+}
+
+body.encore-bg-dawn {
+background-image: radial-gradient(transparent, rgba(1, 2, 36, 0.4784313725)), linear-gradient(to bottom, rgba(222, 244, 255, 0.11), transparent), linear-gradient(to bottom left, #0036e6, #400dcc);
+}
+
+body.encore-bg-dawn::before {
+position: fixed;
+inset: 0;
+content: "";
+animation: fade-in 60s linear infinite alternate;
+background-image: radial-gradient(transparent, rgba(1, 2, 36, 0.5764705882)), linear-gradient(to bottom, rgba(222, 244, 255, 0.1568627451), transparent), linear-gradient(to bottom left, #ee8d4d, rgba(0, 18, 182, 0.7058823529));
+}
+
+body.encore-bg-lava {
+background-image: radial-gradient(transparent, #360700), linear-gradient(to top, #d86800, transparent), linear-gradient(to bottom left, #b43900, #1a0101);
+}
+
+body.encore-bg-lava::before {
+position: fixed;
+inset: 0;
+content: "";
+animation: fade-in 60s linear infinite alternate;
+background-image: radial-gradient(transparent, #360700), linear-gradient(to top, #f5e498, transparent), linear-gradient(to bottom left, #ff0000, #ff0000);
+}
+
+body.encore-bg-emerald {
+background-image: radial-gradient(transparent, #071400), linear-gradient(to top, #54f1d7, transparent), linear-gradient(to bottom left, #55df00, #1b4900);
+}
+
+body.encore-bg-sapphire {
+background-image: radial-gradient(transparent, #000018), linear-gradient(to top, #5871ff, transparent), linear-gradient(to bottom left, #0400ff, #0084ff);
+}
+
+body.encore-translucency .horizontal-main-container {
+background-color: rgba(var(--grey-900-rgb), calc(1 - var(--encore-translucency-strength)));
+}`,
+    "encore-bg-image": `body.encore-translucency.encore-bg-image .app-container {
+background-image: var(--encore-translucency-image);
+background-size: cover;
+}
+
+body.encore-translucency.encore-bg-image .app-container::before {
+position: fixed;
+inset: 0;
+content: "";
+background: transparent;
+backdrop-filter: blur(calc(1px * pow(var(--encore-translucency-blur-amount, 10), 2)));
+}`,
+    "encore-bg-emerald": `body.encore-translucency.encore-bg-emerald {
+background-image: radial-gradient(transparent, #071400), linear-gradient(to top, #54f1d7, transparent), linear-gradient(to bottom left, #55df00, #1b4900);
+}`,
+    "encore-bg-sapphire": `body.encore-translucency.encore-bg-sapphire {
+background-image: radial-gradient(transparent, #000018), linear-gradient(to top, #5871ff, transparent), linear-gradient(to bottom left, #0400ff, #0084ff);
+}`,
+    "encore-bg-frosty": `body.encore-translucency.encore-bg-frosty {
+background-image: linear-gradient(rgb(12, 136, 126), rgb(78, 4, 250));
+}
+
+body.encore-translucency.encore-bg-frosty .app-container {
+background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1920 3240' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3C/defs%3E%3Cellipse style='filter: blur(200px); fill: rgb(38, 214, 255);' cx='465.54' cy='549.634' rx='559.232' ry='230.137'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(59, 55, 212);' cx='1461.894' cy='749.77' rx='559.232' ry='338.301'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(123, 130, 208);' cx='398.22' cy='1237.125' rx='559.232' ry='338.301'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(17, 197, 255);' cx='1546.62' cy='1737.081' rx='603.713' ry='357.778'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(185, 185, 185);' cx='981.906' cy='1520.478' rx='371.639' ry='230.137'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(35, 30, 204);' cx='549.068' cy='2325.941' rx='721.684' ry='405.989'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(148, 19, 172);' cx='1338.121' cy='2790.09' rx='721.684' ry='405.989'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(148, 19, 172);' cx='1297.975' cy='-434.34' rx='721.684' ry='405.989'%3E%3C/ellipse%3E%3C/svg%3E");
+background-size: cover;
+background-repeat: mirror;
+animation: scroll-up infinite 120s linear;
+}`,
+    "encore-bg-lava": `body.encore-translucency.encore-bg-lava {
+background-image: radial-gradient(transparent, #360700), linear-gradient(to top, #d86800, transparent), linear-gradient(to bottom left, #b43900, #1a0101);
+}
+
+body.encore-translucency.encore-bg-lava::before {
+position: fixed;
+inset: 0;
+content: "";
+animation: fade-in 60s linear infinite alternate;
+background-image: radial-gradient(transparent, #360700), linear-gradient(to top, #f5e498, transparent), linear-gradient(to bottom left, #ff0000, #ff0000);
+}`,
+    "encore-bg-dawn": `body.encore-translucency.encore-bg-dawn {
+background-image: radial-gradient(transparent, rgba(1, 2, 36, 0.4784313725)), linear-gradient(to bottom, rgba(222, 244, 255, 0.11), transparent), linear-gradient(to bottom left, #0036e6, #400dcc);
+}
+
+body.encore-translucency.encore-bg-dawn::before {
+position: fixed;
+inset: 0;
+content: "";
+animation: fade-in 60s linear infinite alternate;
+background-image: radial-gradient(transparent, rgba(1, 2, 36, 0.5764705882)), linear-gradient(to bottom, rgba(222, 244, 255, 0.1568627451), transparent), linear-gradient(to bottom left, #ee8d4d, rgba(0, 18, 182, 0.7058823529));
+}`,
+    "encore-bg-chromatic": `body.encore-translucency.encore-bg-chromatic {
+background-image: repeating-linear-gradient(45deg, rgb(15, 245, 254), rgb(111, 0, 255), rgb(255, 0, 0), rgb(255, 222, 0), rgb(167, 255, 0), rgb(0, 255, 136), rgb(15, 245, 254), rgb(111, 0, 255), rgb(253, 0, 0), rgb(255, 222, 0), rgb(167, 255, 0), rgb(0, 255, 136), rgb(15, 245, 254), rgb(111, 0, 255));
+background-size: 100% 800vh;
+animation: scroll-up-down infinite 180s ease-in-out alternate-reverse;
+}
+
+body.encore-translucency.encore-bg-chromatic::before {
+position: fixed;
+inset: 0;
+content: "";
+background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9411764706));
+}`,
+    "encore-bg-prismatic": `body.encore-translucency.encore-bg-prismatic {
+background-image: repeating-linear-gradient(45deg, rgb(0, 4, 255), rgb(107, 15, 254), rgb(153, 0, 255), rgb(255, 0, 242), rgb(255, 0, 170), rgb(255, 0, 242), rgb(153, 0, 255), rgb(107, 15, 254), rgb(0, 4, 255), rgb(107, 15, 254), rgb(153, 0, 255), rgb(255, 0, 242));
+background-size: 100% 400vh;
+animation: scroll-up infinite 30s linear;
+}
+
+body.encore-translucency.encore-bg-prismatic::before {
+position: fixed;
+inset: 0;
+content: "";
+background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9411764706));
+}`,
+    "encore-fancy-headers": `body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content {
+position: relative;
+}
+
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-header {
+position: absolute;
+left: 0;
+right: 0;
+--en-opacity: var(--en-acrylic-opacity);
+background-color: rgba(var(--grey-800-rgb), var(--en-opacity));
+backdrop-filter: var(--en-acrylic);
+}
+
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-content > div > div > .cm-scroller {
+padding-top: calc(var(--header-height) + 32px);
+}
+
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-content > iframe {
+padding-top: var(--header-height);
+}
+
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content .markdown-reading-view > .markdown-preview-view {
+padding-top: var(--header-height);
+}
+
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content .graph-controls {
+margin-top: var(--header-height);
+background-color: rgba(var(--grey-700-rgb), var(--en-opacity));
+border: none;
+box-shadow: none;
+}
+
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content .canvas-wrapper .canvas-controls {
+margin-top: var(--header-height);
+}
+
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content .canvas-wrapper .markdown-preview-view {
+padding-top: 0;
+}
+
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content[data-type=image] > .view-content {
+padding-top: var(--header-height);
+}
+
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content[data-type=style-settings] > .view-content {
+padding-top: var(--header-height);
+}
+
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content[data-type=kanban] > .view-header {
+position: relative !important;
+}
+
+body.encore-fancy-headers .workspace-leaf-content[data-type=excalidraw] .layer-ui__wrapper, body.encore-fancy-headers .workspace-leaf-content[data-type=excalidraw] .App-top-bar, body.encore-fancy-headers .workspace-leaf-content[data-type=excalidraw] .layer-ui__sidebar {
+margin-top: var(--header-height);
+}
+
+body.encore-fancy-headers .excalidraw .layer-ui__wrapper .layer-ui__wrapper__footer-left, body.encore-fancy-headers .excalidraw .layer-ui__wrapper .layer-ui__wrapper__footer-right {
+margin-bottom: var(--header-height);
+}
+
+.mod-root.encore-fancy-headers .workspace-tab-container .workspace-leaf-content .projects-container {
+padding-top: var(--header-height);
+}
+
+.mod-root.encore-fancy-headers .workspace-tab-container .workspace-leaf-content .projects-container .container {
+background-color: transparent;
+border-bottom: 1px solid rgba(var(--grey-700-rgb), var(--en-opacity));
+}
+body.encore-theme-dark-obsidian.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-header {
+--en-opacity: 0.66;
+background-color: rgba(var(--grey-900-rgb), var(--en-opacity));
+backdrop-filter: var(--en-acrylic);
+}
+
+body.encore-theme-dark-flexoki.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-header {
+--en-opacity: 0.66;
+background-color: rgb(var(--grey-900-rgb));
+backdrop-filter: var(--en-acrylic);
+}
+
+body.encore-theme-dark-glass-royale.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-header {
+background-color: rgba(0, 0, 0, 0);
+backdrop-filter: var(--en-acrylic);
+}
+body.theme-light .mod-root.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-header {
+background-color: rgba(var(--grey-900-rgb), var(--en-opacity));
+}`,
+    "encore-mobile-oled-mode": `.is-mobile.encore-mobile-oled-mode .mod-root .workspace-tab-container .workspace-leaf-content {
+background-color: black;
+}`,
+    "encore-mobile-translucency": `.is-mobile {
+--sidebar-filter: blur(16px);
+}
+
+.is-mobile.encore-blur-less {
+--sidebar-filter: blur(8px);
+}
+
+.is-mobile .workspace-drawer-inner {
+background-color: rgba(var(--grey-900-rgb), 0.6);
+backdrop-filter: var(--sidebar-filter);
+}
+
+.is-mobile .mobile-navbar {
+border-top: 1px solid var(--color-base-25);
+background-color: rgba(var(--grey-900-rgb), 0.66);
+backdrop-filter: var(--en-acrylic);
+}`,
+    "encore-coloured-tooltip": `body.encore-coloured-tooltip > .tooltip {
+--tooltip-edge-colour: var(--color-accent);
+}`,
+    "encore-highlight-border": `body.encore-highlight-border .markdown-rendered mark, body.encore-highlight-border .cm-s-obsidian span.cm-formatting-highlight, body.encore-highlight-border .cm-s-obsidian span.cm-highlight, body.encore-highlight-border .search-result-file-matched-text {
+outline: 1px solid hsla(var(--highlight-hue), 90%, 50%, 0.85);
+box-shadow: 0 0 10px hsla(var(--highlight-hue), 90%, 50%, 0.75);
+padding: 0 0.15em;
+border-radius: 0.2em;
+border: none;
+}`,
+    "encore-bright-accent": `body.encore-bright-accent {
+--text-on-accent: var(--color-base-00);
+}`,
+    "encore-blur-less": `.encore-mobile-translucency.is-mobile.encore-blur-less {
+--sidebar-filter: blur(8px);
+}
+
+body.encore-blur-less {
+--en-acrylic: blur(4px);
+--en-acrylic-opacity: 0.9;
+--en-modal-backdrop: blur(5px);
+}`,
+    "encore-blur-off": `body.encore-blur-off {
+--en-acrylic: brightness(0.5);
+--en-acrylic-opacity: 0.9;
+--en-modal-backdrop: brightness(0.5);
+}`,
+    "encore-disable-logo-on-hr": `body.encore-disable-logo-on-hr .markdown-rendered hr, body.encore-disable-logo-on-hr .cm-line.hr hr {
+height: 1px;
+background-image: linear-gradient(to right, transparent, var(--hr-color) 30%, var(--hr-color) 70%, transparent);
+border: none;
+}`,
+  },
 };

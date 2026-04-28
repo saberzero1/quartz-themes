@@ -7,36 +7,449 @@
 }
 
 :root:root {
+  --background-modifier-active-hover: rgb(255, 255, 255) !important;
+  --background-modifier-border: transparent !important;
+  --background-modifier-border-focus: var(--color-base-40, #bdbdbd) !important;
+  --background-modifier-border-hover: transparent !important;
+  --background-modifier-error: rgb(200, 50, 70) !important;
+  --background-modifier-error-hover: rgb(200, 50, 70) !important;
+  --background-modifier-error-rgb: var(--color-red-rgb, 233, 49, 71) !important;
+  --background-modifier-form-field: transparent !important;
+  --background-modifier-form-field-hover: transparent !important;
+  --background-modifier-hover: rgba(255, 255, 255, 0.7) !important;
+  --background-modifier-success: rgb(20, 140, 80) !important;
+  --background-modifier-success-rgb: var(--color-green-rgb, 8, 185, 78) !important;
+  --background-primary: #f8fafc !important;
+  --background-primary-alt: rgb(248, 250, 252) !important;
+  --background-secondary: #f8fafc !important;
+  --background-secondary-alt: rgb(240, 242, 246) !important;
+  --bases-cards-background: #f8fafc !important;
+  --bases-cards-border-width: var(--border-width, 1px) !important;
+  --bases-cards-corner-shape: var(--corner-shape, round) !important;
+  --bases-cards-cover-background: rgb(248, 250, 252) !important;
+  --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-cards-radius: var(--radius-m, 8px) !important;
+  --bases-cards-shadow: 0 0 0 1px transparent !important;
+  --bases-cards-shadow-hover: 0 0 0 1px transparent !important;
   --bases-embed-border-color: transparent !important;
-  --bases-table-border-color: #e0e0e0 !important;
+  --bases-embed-border-radius: 6px !important;
+  --bases-group-heading-property-color: rgb(75, 85, 95) !important;
+  --bases-group-heading-property-size: var(--font-ui-smaller, 12px) !important;
+  --bases-group-heading-property-weight: var(--font-normal, 400) !important;
+  --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
+  --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
+  --bases-header-border-width: 0 0 var(--border-width) 0 !important;
+  --bases-table-border-color: var(--table-border-color, #e0e0e0) !important;
+  --bases-table-cell-background-active: #f8fafc !important;
+  --bases-table-cell-background-disabled: rgb(248, 250, 252) !important;
+  --bases-table-cell-background-selected: hsla(265, 60%, 55%, 0.1) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px var(--background-modifier-border-focus) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(265, 60%, 55%) !important;
+  --bases-table-column-border-width: var(--border-width, 1px) !important;
+  --bases-table-container-border-radius: 6px !important;
+  --bases-table-container-border-width: var(--border-width, 1px) !important;
+  --bases-table-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-table-group-background: rgb(248, 250, 252) !important;
   --bases-table-header-background: #f8fafc !important;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.7) !important;
-  --focus-ring-color: #0df !important;
-  --tab-container-background: #f8fafc !important;
-  --table-border-color: #e0e0e0 !important;
-  --text-accent: rgb(160, 30, 140) !important;
-  --text-faint: rgb(75, 85, 95) !important;
-  --text-normal: rgb(30, 35, 42) !important;
-  --titlebar-background: transparent !important;
-  --input-height: 30px !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
-  --input-radius: 5px !important;
-  --background-modifier-border: transparent !important;
-  --background-modifier-form-field: transparent !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
+  --bases-table-header-color: rgb(75, 85, 95) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 18px, black 18px) !important;
+  --bases-table-header-weight: var(--font-weight, 400) !important;
+  --bases-table-row-background-hover: var(--table-row-background-hover, transparent) !important;
+  --bases-table-row-border-width: var(--border-width, 1px) !important;
+  --bases-table-summary-background: #f8fafc !important;
+  --bases-table-summary-background-hover: rgba(255, 255, 255, 0.7) !important;
+  --blockquote-border-color: hsl(265, 60%, 55%) !important;
+  --blur-background: color-mix(in srgb, #f8fafc 65%, transparent) linear-gradient(#f8fafc, color-mix(in srgb, #f8fafc 65%, transparent)) !important;
+  --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation)) brightness(var(--blur-brightness)) !important;
+  --blur-m: blur(var(--blur-radius-m)) saturate(var(--blur-saturation)) brightness(var(--blur-brightness)) !important;
+  --blur-s: blur(var(--blur-radius-s)) saturate(var(--blur-saturation)) brightness(var(--blur-brightness)) !important;
+  --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
+  --button-corner-shape: var(--corner-shape, round) !important;
+  --button-radius: var(--input-radius, 5px) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode, darken);
+  --callout-bug: 200, 50, 70;
+  --callout-default: 30, 70, 160;
+  --callout-error: 180, 30, 50;
+  --callout-example: 160, 30, 140;
+  --callout-fail: 180, 30, 50;
+  --callout-important: 20, 140, 80;
+  --callout-info: 30, 70, 160;
+  --callout-padding: 16px;
+  --callout-question: 180, 120, 0;
+  --callout-radius: 8px;
+  --callout-success: 0, 140, 160;
+  --callout-summary: 0, 120, 180;
+  --callout-tip: 0, 120, 180;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: 0, 120, 180;
+  --callout-warning: 220, 100, 20;
+  --canvas-background: #f8fafc !important;
+  --canvas-card-label-color: rgb(75, 85, 95) !important;
+  --canvas-color-1: var(--color-red-rgb, 233, 49, 71) !important;
+  --canvas-color-2: var(--color-orange-rgb, 236, 117, 0) !important;
+  --canvas-color-3: var(--color-yellow-rgb, 224, 172, 0) !important;
+  --canvas-color-4: var(--color-green-rgb, 8, 185, 78) !important;
+  --canvas-color-5: var(--color-cyan-rgb, 0, 191, 188) !important;
+  --canvas-color-6: var(--color-purple-rgb, 120, 82, 238) !important;
+  --canvas-controls-icon-size: var(--icon-s, 16px) !important;
+  --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
+  --canvas-controls-radius: 6px !important;
+  --canvas-dot-pattern: var(--color-base-30, #e0e0e0) !important;
+  --caret-color: rgb(30, 35, 42) !important;
+  --checkbox-border-color: rgb(120, 125, 135) !important;
+  --checkbox-border-color-hover: rgb(120, 125, 135) !important;
+  --checkbox-color: rgb(20, 140, 80) !important;
+  --checkbox-color-hover: hsl(262, 61.2%, 63.25%) !important;
+  --checkbox-marker-color: #f8fafc !important;
+  --checkbox-radius: 6px !important;
+  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checklist-done-color: rgb(75, 85, 95) !important;
+  --clickable-icon-radius: 6px !important;
+  --code-background: rgba(102, 63, 191, 0.06) !important;
+  --code-border-color: transparent !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.7) !important;
+  --code-comment: rgb(110, 115, 125) !important;
+  --code-function: rgb(180, 120, 0) !important;
+  --code-important: rgb(220, 100, 20) !important;
+  --code-keyword: rgb(160, 30, 140) !important;
+  --code-normal: rgb(30, 35, 42) !important;
+  --code-operator: rgb(200, 50, 70) !important;
+  --code-property: rgb(0, 120, 180) !important;
+  --code-punctuation: rgb(75, 85, 95) !important;
+  --code-radius: 6px !important;
+  --code-size: var(--font-smaller, 0.875em) !important;
+  --code-string: rgb(20, 140, 80) !important;
+  --code-tag: rgb(200, 50, 70) !important;
+  --code-value: rgb(160, 30, 140) !important;
+  --collapse-icon-color: rgb(75, 85, 95) !important;
+  --collapse-icon-color-collapsed: rgb(160, 30, 140) !important;
+  --color-accent: hsl(265, 60%, 55%) !important;
+  --color-accent-1: hsl(264, 60.6%, 59.125%) !important;
+  --color-accent-2: hsl(262, 61.2%, 63.25%) !important;
+  --color-accent-hsl: 265, 60%, 55% !important;
+  --divider-color: transparent !important;
+  --divider-color-hover: hsl(265, 60%, 55%) !important;
+  --divider-vertical-height: 0% !important;
+  --dropdown-background: #e2e8f0 !important;
+  --dropdown-background-hover: #cbd5e1 !important;
+  --dropdown-background-position: var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
+  --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
+  --dropdown-padding: 0 var(--dropdown-padding-end) 0 var(--dropdown-padding-start) !important;
+  --embed-block-shadow-hover: 0 0 0 1px transparent, inset 0 0 0 1px transparent !important;
+  --embed-border-start: 2px solid hsl(265, 60%, 55%) !important;
+  --embed-padding: 0 0 0 18px !important;
+  --file-header-background: #f8fafc !important;
+  --file-header-background-focused: #f8fafc !important;
+  --file-header-border: var(--border-width, 1px solid transparent) solid transparent !important;
+  --file-header-font: var(--font-interface, "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif) !important;
+  --file-header-font-size: var(--font-ui-small, 13px) !important;
+  --file-margins: clamp(8px, 4vw, 24px) !important;
+  --file-margins-x: var(--size-4-8, 32px) !important;
+  --file-margins-y: var(--size-4-8, 32px) !important;
+  --flair-background: #e2e8f0 !important;
+  --flair-color: rgb(30, 35, 42) !important;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
+  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
+  --font-interface: var(--font-interface-override), var(--font-interface-theme), var(--default-font, "??"), var(--font-default) !important;
+  --font-mermaid: var(--font-text, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif) !important;
+  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme), var(--font-monospace-default) !important;
+  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme), "Arial" !important;
+  --font-text: var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
+  --font-weight: var(--font-normal, 400) !important;
+  --footnote-divider-color: transparent !important;
+  --footnote-divider-color-active: var(--metadata-divider-color-focus, transparent) !important;
+  --footnote-divider-width: var(--border-width, 1px) !important;
+  --footnote-gap: 8px !important;
+  --footnote-id-color: rgb(75, 85, 95) !important;
+  --footnote-id-color-no-occurrences: rgb(75, 85, 95) !important;
+  --footnote-input-background: var(--metadata-input-background, transparent) !important;
+  --footnote-input-background-active: rgba(255, 255, 255, 0.7) !important;
+  --footnote-line-height: 1.6 !important;
+  --footnote-padding-block: var(--size-2-3, 6px) !important;
+  --footnote-padding-inline: var(--size-2-3, 6px) !important;
+  --footnote-radius: 6px !important;
+  --footnote-size: var(--font-smaller, 0.875em) !important;
+  --graph-line: rgb(120, 125, 135) !important;
+  --graph-node: rgb(30, 35, 42) !important;
+  --graph-node-attachment: rgb(30, 70, 160) !important;
+  --graph-node-focused: rgb(160, 30, 140) !important;
+  --graph-node-tag: rgb(220, 100, 20) !important;
+  --graph-node-unresolved: rgb(75, 85, 95) !important;
+  --graph-text: rgb(30, 35, 42) !important;
+  --h5-line-height: 1.6 !important;
+  --h6-line-height: 1.6 !important;
+  --heading-formatting: rgb(75, 85, 95) !important;
+  --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
+  --hr-color: transparent !important;
+  --icon-color: rgb(75, 85, 95) !important;
+  --icon-color-active: rgb(160, 30, 140) !important;
+  --icon-color-focused: rgb(30, 35, 42) !important;
+  --icon-color-hover: rgb(75, 85, 95) !important;
+  --icon-size: var(--icon-m, 18px) !important;
+  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12) !important;
+  --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3) !important;
+  --indentation-guide-width: var(--border-width, 1px) !important;
+  --indentation-guide-width-active: var(--border-width, 1px) !important;
+  --inline-title-line-height: var(--h1-line-height, 1.2) !important;
+  --inline-title-size: var(--h1-size, 1.618em) !important;
+  --inline-title-style: var(--h1-style, normal) !important;
+  --inline-title-variant: var(--h1-variant, normal) !important;
+  --inline-title-weight: var(--h1-weight, 700) !important;
+  --input-border-width: var(--border-width, 1px) !important;
+  --input-corner-shape: var(--corner-shape, round) !important;
+  --input-date-separator: rgb(75, 85, 95) !important;
+  --input-font-weight: var(--font-normal, 400) !important;
+  --input-icon-inset: 8px !important;
+  --input-padding: 8px 10px !important;
+  --input-placeholder-color: rgb(75, 85, 95) !important;
+  --interactive-accent: hsl(265, 60%, 55%) !important;
+  --interactive-accent-hover: hsl(262, 61.2%, 63.25%) !important;
+  --interactive-accent-hsl: 265, 60%, 55% !important;
+  --interactive-hover: #cbd5e1 !important;
+  --interactive-normal: #e2e8f0 !important;
+  --link-color: rgb(102, 63, 191) !important;
+  --link-color-hover: rgb(0, 120, 180) !important;
+  --link-external-color: rgb(102, 63, 191) !important;
+  --link-external-color-hover: rgb(0, 120, 180) !important;
+  --link-unresolved-color: rgb(160, 30, 140) !important;
+  --link-unresolved-decoration-color: hsla(265, 60%, 55%, 0.3) !important;
+  --link-weight: var(--font-weight, 400) !important;
+  --list-indent: 2em !important;
+  --list-marker-color: rgb(102, 63, 191) !important;
+  --list-marker-color-collapsed: rgb(75, 85, 95) !important;
+  --list-marker-color-hover: rgb(140, 100, 220) !important;
+  --menu-background: #f8fafc !important;
+  --menu-border-color: transparent !important;
+  --menu-border-width: var(--border-width, 1px) !important;
+  --menu-corner-shape: var(--corner-shape, round) !important;
+  --menu-padding: var(--size-2-3, 6px) !important;
+  --menu-radius: var(--radius-m, 8px) !important;
+  --menu-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+  --metadata-border-color: transparent !important;
+  --metadata-divider-color: transparent !important;
+  --metadata-input-background-active: rgba(255, 255, 255, 0.7) !important;
+  --metadata-input-font: var(--font-interface, "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif) !important;
+  --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
+  --metadata-input-padding: 8px 10px !important;
+  --metadata-input-text-color: rgb(30, 35, 42) !important;
+  --metadata-label-background-active: rgba(255, 255, 255, 0.7) !important;
+  --metadata-label-font: var(--font-interface, "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif) !important;
+  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-label-text-color: rgb(75, 85, 95) !important;
+  --metadata-label-text-color-hover: rgb(75, 85, 95) !important;
+  --metadata-padding: 10px 0 !important;
+  --metadata-property-background-active: rgba(255, 255, 255, 0.7) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px var(--background-modifier-border-focus) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px transparent !important;
+  --metadata-property-corner-shape: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape-focus: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
+  --modal-background: #f8fafc !important;
+  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus)) !important;
+  --modal-border-width: var(--border-width, 1px) !important;
+  --modal-radius: var(--radius-l, 12px) !important;
+  --nav-collapse-icon-color: rgb(75, 85, 95) !important;
+  --nav-collapse-icon-color-collapsed: rgb(75, 85, 95) !important;
+  --nav-heading-color: rgb(30, 35, 42) !important;
+  --nav-heading-color-collapsed: rgb(75, 85, 95) !important;
+  --nav-heading-color-collapsed-hover: rgb(75, 85, 95) !important;
+  --nav-heading-color-hover: rgb(30, 35, 42) !important;
+  --nav-heading-weight: var(--font-medium, 500) !important;
+  --nav-heading-weight-hover: var(--font-medium, 500) !important;
+  --nav-indentation-guide-color: var(--indentation-guide-color, rgba(0, 0, 0, 0.12)) !important;
+  --nav-indentation-guide-width: var(--indentation-guide-width, 1px) !important;
+  --nav-item-background-active: rgba(rgb(255, 255, 255), 0.2) !important;
+  --nav-item-background-hover: rgb(255, 255, 255) !important;
+  --nav-item-background-selected: hsla(265, 60%, 55%, 0.15) !important;
+  --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
+  --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
+  --nav-item-color: rgba(30, 35, 42, 0.9) !important;
+  --nav-item-color-active: rgb(30, 35, 42) !important;
+  --nav-item-color-highlighted: rgb(160, 30, 140) !important;
+  --nav-item-color-hover: rgb(30, 35, 42) !important;
+  --nav-item-color-selected: rgb(30, 35, 42) !important;
+  --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
+  --nav-item-padding: 4px 8px 4px 18px !important;
+  --nav-item-parent-padding: 4px 8px 4px 18px !important;
+  --nav-item-radius: 6px !important;
+  --nav-item-size: var(--font-ui-small, 13px) !important;
+  --nav-tag-color: rgb(75, 85, 95) !important;
+  --nav-tag-color-active: rgb(75, 85, 95) !important;
+  --nav-tag-color-hover: rgb(75, 85, 95) !important;
+  --nav-tag-radius: 6px !important;
+  --nav-tag-weight: var(--font-semibold, 600) !important;
+  --pdf-background: #f8fafc !important;
+  --pdf-page-background: #f8fafc !important;
+  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-sidebar-background: #f8fafc !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pill-border-color: transparent !important;
   --pill-border-color-hover: transparent !important;
-  --pill-border-width: 1px !important;
+  --pill-border-width: var(--border-width, 1px) !important;
   --pill-color: rgb(75, 85, 95) !important;
   --pill-color-hover: rgb(30, 35, 42) !important;
   --pill-color-remove: rgb(75, 85, 95) !important;
+  --pill-color-remove-hover: rgb(160, 30, 140) !important;
+  --popover-font-size: var(--font-text-size, 16px) !important;
+  --prompt-background: #f8fafc !important;
+  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus)) !important;
+  --prompt-border-width: var(--border-width, 1px) !important;
+  --raised-background: color-mix(in srgb, #f8fafc 65%, transparent) linear-gradient(#f8fafc, color-mix(in srgb, #f8fafc 65%, transparent)) !important;
+  --raised-blur: var(--blur-s, blur(6px) saturate(1.5) brightness(1.15)) !important;
+  --ribbon-background: #f8fafc !important;
+  --ribbon-background-collapsed: #f8fafc !important;
+  --ribbon-padding: 10px 8px 12px !important;
+  --scrollbar-active-thumb-bg: rgba(75, 85, 95, 0.4) !important;
+  --scrollbar-bg: transparent !important;
+  --scrollbar-radius: var(--radius-l, 12px) !important;
+  --scrollbar-thumb-bg: rgba(75, 85, 95, 0.2) !important;
+  --search-clear-button-color: rgb(75, 85, 95) !important;
+  --search-icon-color: rgb(75, 85, 95) !important;
+  --search-result-background: #f8fafc !important;
+  --setting-group-heading-color: rgb(30, 35, 42) !important;
+  --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
+  --setting-group-heading-weight: var(--font-semibold, 600) !important;
+  --setting-items-background: transparent !important;
+  --setting-items-border-color: transparent !important;
+  --setting-items-padding: 16px !important;
+  --setting-items-radius: var(--radius-l, 12px) !important;
+  --shiki-active-tab-border-color: rgb(75, 85, 95) !important;
+  --shiki-code-background: rgba(102, 63, 191, 0.06) !important;
+  --shiki-code-block-border-radius: 6px !important;
+  --shiki-code-block-spacing: var(--p-spacing, 1rem) !important;
+  --shiki-code-comment: rgb(75, 85, 95) !important;
+  --shiki-code-function: rgb(20, 140, 80) !important;
+  --shiki-code-important: rgb(220, 100, 20) !important;
+  --shiki-code-keyword: rgb(160, 30, 140) !important;
+  --shiki-code-normal: rgb(75, 85, 95) !important;
+  --shiki-code-property: rgb(0, 120, 180) !important;
+  --shiki-code-punctuation: rgb(75, 85, 95) !important;
+  --shiki-code-string: rgb(180, 120, 0) !important;
+  --shiki-code-value: rgb(160, 30, 140) !important;
+  --shiki-gutter-border-color: transparent !important;
+  --shiki-gutter-border-width: var(--border-width, 1px) !important;
+  --shiki-gutter-text-color: rgb(75, 85, 95) !important;
+  --shiki-gutter-text-color-highlight: rgb(75, 85, 95) !important;
+  --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
+  --shiki-highlight-green-background: rgba(var(--color-green-rgb), 0.1) !important;
+  --shiki-highlight-neutral: rgb(75, 85, 95) !important;
+  --shiki-highlight-neutral-background: rgba(var(--mono-rgb-100), 0.05) !important;
+  --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
+  --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
+  --shiki-terminal-dots-color: rgb(75, 85, 95) !important;
+  --shiki-tooltip-background: rgba(255, 255, 255, 0.9) !important;
+  --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9) !important;
+  --slider-thumb-border-color: transparent !important;
+  --slider-thumb-border-width: var(--border-width, 1px) !important;
+  --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
+  --slider-track-background: transparent !important;
+  --status-bar-background: #f8fafc !important;
+  --status-bar-border-color: transparent !important;
+  --status-bar-border-width: var(--border-width) 0 0 var(--border-width, 1px 0 0 1px) !important;
+  --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
+  --status-bar-radius: var(--radius-m, 8px 0 0 0) 0 0 0 !important;
+  --status-bar-text-color: rgb(75, 85, 95) !important;
+  --suggestion-background: #f8fafc !important;
+  --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
+  --sync-avatar-color-1: rgb(200, 50, 70) !important;
+  --sync-avatar-color-2: rgb(220, 100, 20) !important;
+  --sync-avatar-color-3: rgb(180, 120, 0) !important;
+  --sync-avatar-color-4: rgb(20, 140, 80) !important;
+  --sync-avatar-color-5: rgb(0, 120, 180) !important;
+  --sync-avatar-color-6: rgb(30, 70, 160) !important;
+  --sync-avatar-color-7: rgb(160, 30, 140) !important;
+  --sync-avatar-color-8: rgb(160, 30, 140) !important;
+  --tab-background-active: rgba(255, 255, 255, 0.95) !important;
+  --tab-container-background: #f8fafc !important;
+  --tab-divider-color: rgba(200, 205, 210, 0.4) !important;
+  --tab-font-size: var(--font-ui-small, 13px) !important;
+  --tab-outline-color: transparent !important;
+  --tab-radius: 6px !important;
+  --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
+  --tab-stacked-header-width: var(--header-height, 40px) !important;
+  --tab-switcher-background: #f8fafc !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, #f8fafc, transparent) !important;
+  --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(265, 60%, 55%) !important;
+  --tab-text-color: rgb(75, 85, 95) !important;
+  --tab-text-color-active: rgb(75, 85, 95) !important;
+  --tab-text-color-focused: rgb(75, 85, 95) !important;
+  --tab-text-color-focused-active: rgb(75, 85, 95) !important;
+  --tab-text-color-focused-active-current: rgb(30, 35, 42) !important;
+  --tab-text-color-focused-highlighted: rgb(160, 30, 140) !important;
+  --table-add-button-border-color: transparent !important;
+  --table-add-button-border-width: var(--table-border-width, 1px) !important;
+  --table-border-color: var(--background-modifier-border, #e0e0e0) !important;
+  --table-column-alt-background: var(--table-background, transparent) !important;
+  --table-column-first-border-width: var(--table-border-width, 1px) !important;
+  --table-column-last-border-width: var(--table-border-width, 1px) !important;
+  --table-drag-handle-background-active: hsl(265, 60%, 55%) !important;
+  --table-drag-handle-color: rgb(75, 85, 95) !important;
+  --table-drag-handle-color-active: rgb(248, 250, 252) !important;
+  --table-header-background: rgb(230, 232, 236) !important;
+  --table-header-border-color: var(--table-border-color, #e0e0e0) !important;
+  --table-header-border-width: var(--table-border-width, 1px) !important;
+  --table-header-color: rgb(30, 35, 42) !important;
+  --table-header-size: var(--table-text-size, 16px) !important;
+  --table-header-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
+  --table-line-height: var(--line-height-tight, 1.3) !important;
+  --table-row-alt-background: var(--table-background, transparent) !important;
+  --table-row-alt-background-hover: var(--table-background, transparent) !important;
+  --table-row-background-hover: var(--table-background, transparent) !important;
+  --table-row-last-border-width: var(--table-border-width, 1px) !important;
+  --table-selection: hsla(265, 60%, 55%, 0.1) !important;
+  --table-selection-blend-mode: var(--highlight-mix-blend-mode, darken) !important;
+  --table-selection-border-color: hsl(265, 60%, 55%) !important;
+  --table-text-size: var(--font-text-size, 16px) !important;
+  --tag-background: rgba(160, 30, 140, 0.15) !important;
+  --tag-background-hover: rgba(0, 120, 180, 0.15) !important;
+  --tag-border-color: hsla(265, 60%, 55%, 0.15) !important;
+  --tag-border-color-hover: hsla(265, 60%, 55%, 0.15) !important;
+  --tag-color: rgb(160, 30, 140) !important;
+  --tag-color-hover: rgb(0, 120, 180) !important;
+  --tag-size: var(--font-smaller, 0.875em) !important;
+  --text-accent: rgb(160, 30, 140) !important;
+  --text-accent-hover: rgb(0, 120, 180) !important;
+  --text-error: rgb(180, 30, 50) !important;
+  --text-faint: rgb(75, 85, 95) !important;
+  --text-highlight-bg: rgba(220, 100, 20, 0.25) !important;
+  --text-muted: rgb(75, 85, 95) !important;
+  --text-normal: rgb(30, 35, 42) !important;
+  --text-selection: hsla(265, 60%, 55%, 0.2) !important;
+  --text-success: rgb(20, 140, 80) !important;
+  --text-warning: rgb(220, 100, 20) !important;
+  --titlebar-background: transparent !important;
+  --titlebar-background-focused: transparent !important;
+  --titlebar-border-color: transparent !important;
+  --titlebar-text-color: rgb(75, 85, 95) !important;
+  --titlebar-text-color-focused: rgb(30, 35, 42) !important;
+  --titlebar-text-weight: var(--font-bold, 700) !important;
+  --touch-radius-l: var(--touch-size-l, 52px) !important;
+  --touch-radius-m: var(--touch-size-m, 44px) !important;
+  --touch-radius-s: var(--touch-size-s, 40px) !important;
+  --touch-radius-xl: var(--touch-size-xl, 60px) !important;
+  --touch-radius-xs: var(--touch-size-xs, 30px) !important;
+  --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
+  --traffic-lights-offset-x: var(--header-height, 40px) !important;
+  --traffic-lights-offset-y: var(--header-height, 40px) !important;
+  --vault-profile-color: rgb(30, 35, 42) !important;
+  --vault-profile-color-hover: rgb(30, 35, 42) !important;
+  --vault-profile-font-size: var(--font-ui-small, 13px) !important;
+  --vault-profile-font-weight: var(--font-medium, 500) !important;
+  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
+  --input-height: 30px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
   --pill-focus-left-adjust: -4px !important;
   --pill-focus-width: calc(100% + 6px) !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 265 !important;
   --accent-l: 55% !important;
   --accent-s: 60% !important;
@@ -49,164 +462,50 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgb(255, 255, 255) !important;
-  --background-modifier-border-focus: #bdbdbd !important;
-  --background-modifier-border-hover: transparent !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-cover: rgba(240, 242, 246, 0.8) !important;
-  --background-modifier-error: rgb(200, 50, 70) !important;
-  --background-modifier-error-hover: rgb(200, 50, 70) !important;
-  --background-modifier-error-rgb: 233, 49, 71 !important;
-  --background-modifier-form-field-hover: transparent !important;
-  --background-modifier-hover: rgba(255, 255, 255, 0.7) !important;
   --background-modifier-message: rgba(255, 255, 255, 0.9) !important;
-  --background-modifier-success: rgb(20, 140, 80) !important;
-  --background-modifier-success-rgb: 8, 185, 78 !important;
-  --background-primary: #f8fafc !important;
-  --background-primary-alt: rgb(248, 250, 252) !important;
-  --background-secondary: #f8fafc !important;
-  --background-secondary-alt: rgb(240, 242, 246) !important;
-  --bases-cards-background: #f8fafc !important;
-  --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-corner-shape: round !important;
-  --bases-cards-cover-background: rgb(248, 250, 252) !important;
-  --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
-  --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px transparent !important;
-  --bases-cards-shadow-hover: 0 0 0 1px transparent !important;
-  --bases-embed-border-radius: 6px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: rgb(75, 85, 95) !important;
   --bases-group-heading-property-display: block !important;
-  --bases-group-heading-property-size: 12px !important;
-  --bases-group-heading-property-weight: 400 !important;
-  --bases-group-heading-value-size: 0.875em !important;
-  --bases-group-heading-value-weight: 600 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-cell-background-active: #f8fafc !important;
-  --bases-table-cell-background-disabled: rgb(248, 250, 252) !important;
-  --bases-table-cell-background-selected: hsla(265, 60%, 55%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px #bdbdbd !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(265, 60%, 55%) !important;
-  --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 6px !important;
-  --bases-table-container-border-width: 1px !important;
-  --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: rgb(248, 250, 252) !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-color: rgb(75, 85, 95) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(to left, transparent 18px, black 18px) !important;
-  --bases-table-header-weight: 400 !important;
-  --bases-table-row-background-hover: transparent !important;
-  --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: #f8fafc !important;
-  --bases-table-summary-background-hover: rgba(255, 255, 255, 0.7) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: rgba(102, 63, 191, 0.08) !important;
-  --blockquote-border-color: hsl(265, 60%, 55%) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, #f8fafc 65%, transparent) linear-gradient(#f8fafc, color-mix(in srgb, #f8fafc 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
-  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
-  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
   --blur-opacity-m: 90% !important;
   --blur-opacity-s: 65% !important;
   --blur-radius-l: 16px !important;
   --blur-radius-m: 10px !important;
   --blur-radius-s: 6px !important;
-  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
   --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
-  --bold-weight: 600 !important;
   --border-width: 1px !important;
-  --button-corner-shape: round !important;
-  --button-radius: 5px !important;
-  --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: 200, 50, 70;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 30, 70, 160;
-  --callout-error: 180, 30, 50;
-  --callout-example: 160, 30, 140;
-  --callout-fail: 180, 30, 50;
-  --callout-important: 20, 140, 80;
-  --callout-info: 30, 70, 160;
-  --callout-padding: 16px;
-  --callout-question: 180, 120, 0;
   --callout-quote: 75, 85, 95;
-  --callout-radius: 8px;
-  --callout-success: 0, 140, 160;
-  --callout-summary: 0, 120, 180;
-  --callout-tip: 0, 120, 180;
   --callout-title-padding: 0;
-  --callout-title-weight: 600;
-  --callout-todo: 0, 120, 180;
-  --callout-warning: 220, 100, 20;
-  --canvas-background: #f8fafc !important;
-  --canvas-card-label-color: rgb(75, 85, 95) !important;
   --canvas-color: 192, 192, 192 !important;
-  --canvas-color-1: 233, 49, 71 !important;
-  --canvas-color-2: 236, 117, 0 !important;
-  --canvas-color-3: 224, 172, 0 !important;
-  --canvas-color-4: 8, 185, 78 !important;
-  --canvas-color-5: 0, 191, 188 !important;
-  --canvas-color-6: 120, 82, 238 !important;
-  --canvas-controls-icon-size: 16px !important;
-  --canvas-controls-icon-stroke: 2px !important;
-  --canvas-controls-radius: 6px !important;
-  --canvas-dot-pattern: #e0e0e0 !important;
-  --caret-color: rgb(30, 35, 42) !important;
-  --checkbox-border-color: rgb(120, 125, 135) !important;
-  --checkbox-border-color-hover: rgb(120, 125, 135) !important;
-  --checkbox-color: rgb(20, 140, 80) !important;
-  --checkbox-color-hover: hsl(262, 61.2%, 63.25%) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: #f8fafc !important;
-  --checkbox-radius: 6px !important;
-  --checkbox-size: 16px !important;
-  --checklist-done-color: rgb(75, 85, 95) !important;
   --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 6px !important;
-  --code-background: rgba(102, 63, 191, 0.06) !important;
-  --code-border-color: transparent !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: rgba(255, 255, 255, 0.7) !important;
-  --code-comment: rgb(110, 115, 125) !important;
-  --code-function: rgb(180, 120, 0) !important;
-  --code-important: rgb(220, 100, 20) !important;
-  --code-keyword: rgb(160, 30, 140) !important;
-  --code-normal: rgb(30, 35, 42) !important;
-  --code-operator: rgb(200, 50, 70) !important;
-  --code-property: rgb(0, 120, 180) !important;
-  --code-punctuation: rgb(75, 85, 95) !important;
-  --code-radius: 6px !important;
-  --code-size: 0.875em !important;
-  --code-string: rgb(20, 140, 80) !important;
-  --code-tag: rgb(200, 50, 70) !important;
-  --code-value: rgb(160, 30, 140) !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: rgb(75, 85, 95) !important;
-  --collapse-icon-color-collapsed: rgb(160, 30, 140) !important;
-  --color-accent: hsl(265, 60%, 55%) !important;
-  --color-accent-1: hsl(264, 60.6%, 59.125%) !important;
-  --color-accent-2: hsl(262, 61.2%, 63.25%) !important;
-  --color-accent-hsl: 265, 60%, 55% !important;
   --color-base-00: #ffffff !important;
   --color-base-05: #fcfcfc !important;
   --color-base-10: #fafafa !important;
@@ -242,69 +541,42 @@
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: transparent !important;
-  --divider-color-hover: hsl(265, 60%, 55%) !important;
-  --divider-vertical-height: 0% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: #e2e8f0 !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: #cbd5e1 !important;
-  --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
-  --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-icon-inset: 0.5em !important;
   --dropdown-icon-width: 1em !important;
-  --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover: 0 0 0 1px transparent, inset 0 0 0 1px transparent !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid hsl(265, 60%, 55%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
-  --embed-padding: 0 0 0 18px !important;
   --file-folding-offset: 24px !important;
-  --file-header-background: #f8fafc !important;
-  --file-header-background-focused: #f8fafc !important;
-  --file-header-border: 1px solid transparent !important;
-  --file-header-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: clamp(8px, 4vw, 24px) !important;
-  --file-margins-x: 32px !important;
-  --file-margins-y: 32px !important;
-  --flair-background: #e2e8f0 !important;
-  --flair-color: rgb(30, 35, 42) !important;
-  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
   --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "??", "??", "??", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -313,31 +585,10 @@
   --font-ui-medium: 15px !important;
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
-  --font-weight: 400 !important;
-  --footnote-divider-color: transparent !important;
-  --footnote-divider-color-active: transparent !important;
-  --footnote-divider-width: 1px !important;
-  --footnote-gap: 8px !important;
-  --footnote-id-color: rgb(75, 85, 95) !important;
-  --footnote-id-color-no-occurrences: rgb(75, 85, 95) !important;
   --footnote-id-delimiter: "." !important;
-  --footnote-input-background: transparent !important;
-  --footnote-input-background-active: rgba(255, 255, 255, 0.7) !important;
-  --footnote-line-height: 1.6 !important;
-  --footnote-padding-block: 6px !important;
-  --footnote-padding-inline: 6px !important;
-  --footnote-radius: 6px !important;
-  --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
   --frame-right-space: 80px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: rgb(120, 125, 135) !important;
-  --graph-node: rgb(30, 35, 42) !important;
-  --graph-node-attachment: rgb(30, 70, 160) !important;
-  --graph-node-focused: rgb(160, 30, 140) !important;
-  --graph-node-tag: rgb(220, 100, 20) !important;
-  --graph-node-unresolved: rgb(75, 85, 95) !important;
-  --graph-text: rgb(30, 35, 42) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.618em !important;
@@ -363,27 +614,18 @@
   --h4-variant: normal !important;
   --h4-weight: 640 !important;
   --h5-letter-spacing: -0.002em !important;
-  --h5-line-height: 1.6 !important;
   --h5-size: 1.076em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 620 !important;
   --h6-letter-spacing: 0em !important;
-  --h6-line-height: 1.6 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: rgb(75, 85, 95) !important;
-  --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: darken !important;
-  --hr-color: transparent !important;
   --hr-thickness: 2px !important;
-  --icon-color: rgb(75, 85, 95) !important;
-  --icon-color-active: rgb(160, 30, 140) !important;
-  --icon-color-focused: rgb(30, 35, 42) !important;
-  --icon-color-hover: rgb(75, 85, 95) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -399,34 +641,14 @@
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
-  --indentation-guide-color-active: rgba(0, 0, 0, 0.3) !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
-  --indentation-guide-width: 1px !important;
-  --indentation-guide-width-active: 1px !important;
-  --inline-title-line-height: 1.2 !important;
   --inline-title-margin-bottom: 0.5em !important;
-  --inline-title-size: 1.618em !important;
-  --inline-title-style: normal !important;
-  --inline-title-variant: normal !important;
-  --inline-title-weight: 700 !important;
-  --input-corner-shape: round !important;
-  --input-date-separator: rgb(75, 85, 95) !important;
-  --input-font-weight: 400 !important;
-  --input-icon-inset: 8px !important;
-  --input-padding: 8px 10px !important;
-  --input-placeholder-color: rgb(75, 85, 95) !important;
   --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
   --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: hsl(265, 60%, 55%) !important;
-  --interactive-accent-hover: hsl(262, 61.2%, 63.25%) !important;
-  --interactive-accent-hsl: 265, 60%, 55% !important;
-  --interactive-hover: #cbd5e1 !important;
-  --interactive-normal: #e2e8f0 !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -440,153 +662,72 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.6 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: rgb(102, 63, 191) !important;
-  --link-color-hover: rgb(0, 120, 180) !important;
   --link-decoration: none !important;
   --link-decoration-hover: none !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: rgb(102, 63, 191) !important;
-  --link-external-color-hover: rgb(0, 120, 180) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: rgb(160, 30, 140) !important;
-  --link-unresolved-decoration-color: hsla(265, 60%, 55%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
-  --link-weight: 400 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: 50% !important;
   --list-bullet-size: 0.3em !important;
   --list-bullet-transform: none !important;
-  --list-indent: 2em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: rgb(102, 63, 191) !important;
-  --list-marker-color-collapsed: rgb(75, 85, 95) !important;
-  --list-marker-color-hover: rgb(140, 100, 220) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0 !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: #f8fafc !important;
-  --menu-border-color: transparent !important;
-  --menu-border-width: 1px !important;
-  --menu-corner-shape: round !important;
-  --menu-padding: 6px !important;
-  --menu-radius: 8px !important;
   --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
-  --menu-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: transparent !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: transparent !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: rgba(255, 255, 255, 0.7) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-font-size: 0.875em !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-padding: 8px 10px !important;
-  --metadata-input-text-color: rgb(30, 35, 42) !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: rgba(255, 255, 255, 0.7) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: rgb(75, 85, 95) !important;
-  --metadata-label-text-color-hover: rgb(75, 85, 95) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
-  --metadata-padding: 10px 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: rgba(255, 255, 255, 0.7) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #bdbdbd !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px transparent !important;
-  --metadata-property-corner-shape: round !important;
-  --metadata-property-corner-shape-focus: round !important;
-  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
   --metadata-property-radius-hover: 6px !important;
-  --metadata-sidebar-input-font-size: 13px !important;
-  --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: #f8fafc !important;
-  --modal-border-color: #bdbdbd !important;
-  --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: 12px !important;
   --modal-shadow: none !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
-  --nav-collapse-icon-color: rgb(75, 85, 95) !important;
-  --nav-collapse-icon-color-collapsed: rgb(75, 85, 95) !important;
-  --nav-heading-color: rgb(30, 35, 42) !important;
-  --nav-heading-color-collapsed: rgb(75, 85, 95) !important;
-  --nav-heading-color-collapsed-hover: rgb(75, 85, 95) !important;
-  --nav-heading-color-hover: rgb(30, 35, 42) !important;
-  --nav-heading-weight: 500 !important;
-  --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
-  --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: rgba(rgb(255, 255, 255), 0.2) !important;
-  --nav-item-background-hover: rgb(255, 255, 255) !important;
-  --nav-item-background-selected: hsla(265, 60%, 55%, 0.15) !important;
-  --nav-item-children-margin-start: 12px !important;
-  --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: rgba(30, 35, 42, 0.9) !important;
-  --nav-item-color-active: rgb(30, 35, 42) !important;
-  --nav-item-color-highlighted: rgb(160, 30, 140) !important;
-  --nav-item-color-hover: rgb(30, 35, 42) !important;
-  --nav-item-color-selected: rgb(30, 35, 42) !important;
-  --nav-item-margin-bottom: 2px !important;
-  --nav-item-padding: 4px 8px 4px 18px !important;
-  --nav-item-parent-padding: 4px 8px 4px 18px !important;
-  --nav-item-radius: 6px !important;
-  --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: rgb(75, 85, 95) !important;
-  --nav-tag-color-active: rgb(75, 85, 95) !important;
-  --nav-tag-color-hover: rgb(75, 85, 95) !important;
-  --nav-tag-radius: 6px !important;
-  --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: #f8fafc !important;
-  --pdf-page-background: #f8fafc !important;
-  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: #f8fafc !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-color-remove-hover: rgb(160, 30, 140) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
-  --popover-font-size: 16px !important;
   --popover-height: 500px !important;
   --popover-max-height: 95vh !important;
   --popover-pdf-height: 400px !important;
@@ -594,9 +735,6 @@
   --popover-width: 500px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
-  --prompt-background: #f8fafc !important;
-  --prompt-border-color: #bdbdbd !important;
-  --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
@@ -605,75 +743,30 @@
   --radius-m: 8px !important;
   --radius-s: 6px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, #f8fafc 65%, transparent) linear-gradient(#f8fafc, color-mix(in srgb, #f8fafc 65%, transparent)) !important;
-  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
   --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
   --raised-mask-background: linear-gradient(to bottom left, white, transparent, white) border-box no-repeat !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
-  --ribbon-background: #f8fafc !important;
-  --ribbon-background-collapsed: #f8fafc !important;
-  --ribbon-padding: 10px 8px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: rgba(75, 85, 95, 0.4) !important;
-  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 12px !important;
-  --scrollbar-thumb-bg: rgba(75, 85, 95, 0.2) !important;
   --scrollbar-width: 10px !important;
-  --search-clear-button-color: rgb(75, 85, 95) !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: rgb(75, 85, 95) !important;
   --search-icon-size: 18px !important;
-  --search-result-background: #f8fafc !important;
-  --setting-group-heading-color: rgb(30, 35, 42) !important;
-  --setting-group-heading-size: 15px !important;
-  --setting-group-heading-weight: 600 !important;
-  --setting-items-background: transparent !important;
-  --setting-items-border-color: transparent !important;
   --setting-items-border-width: 0 !important;
-  --setting-items-padding: 16px !important;
-  --setting-items-radius: 12px !important;
   --shadow-l: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1) !important;
   --shadow-s: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
-  --shiki-active-tab-border-color: rgb(75, 85, 95) !important;
   --shiki-active-tab-border-width: 2px !important;
-  --shiki-code-background: rgba(102, 63, 191, 0.06) !important;
   --shiki-code-block-border-color: transparent !important;
-  --shiki-code-block-border-radius: 6px !important;
   --shiki-code-block-border-width: 0px !important;
-  --shiki-code-block-spacing: 1rem !important;
-  --shiki-code-comment: rgb(75, 85, 95) !important;
-  --shiki-code-function: rgb(20, 140, 80) !important;
-  --shiki-code-important: rgb(220, 100, 20) !important;
-  --shiki-code-keyword: rgb(160, 30, 140) !important;
-  --shiki-code-normal: rgb(75, 85, 95) !important;
-  --shiki-code-property: rgb(0, 120, 180) !important;
-  --shiki-code-punctuation: rgb(75, 85, 95) !important;
-  --shiki-code-string: rgb(180, 120, 0) !important;
-  --shiki-code-value: rgb(160, 30, 140) !important;
-  --shiki-gutter-border-color: transparent !important;
-  --shiki-gutter-border-width: 1px !important;
-  --shiki-gutter-text-color: rgb(75, 85, 95) !important;
-  --shiki-gutter-text-color-highlight: rgb(75, 85, 95) !important;
-  --shiki-highlight-green: rgba(8, 185, 78, 0.5) !important;
-  --shiki-highlight-green-background: rgba(8, 185, 78, 0.1) !important;
-  --shiki-highlight-neutral: rgb(75, 85, 95) !important;
-  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05) !important;
-  --shiki-highlight-red: rgba(233, 49, 71, 0.5) !important;
-  --shiki-highlight-red-background: rgba(233, 49, 71, 0.1) !important;
-  --shiki-terminal-dots-color: rgb(75, 85, 95) !important;
-  --shiki-tooltip-background: rgba(255, 255, 255, 0.9) !important;
   --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --sidebar-right-toggle-inner-width: 8.33% !important;
   --sidebar-right-toggle-inner-width-open: 24% !important;
   --sidebar-tab-text-display: none !important;
@@ -694,132 +787,52 @@
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: transparent !important;
-  --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: transparent !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: #f8fafc !important;
-  --status-bar-border-color: transparent !important;
-  --status-bar-border-width: 1px 0 0 1px !important;
-  --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
-  --status-bar-radius: 8px 0 0 0 !important;
-  --status-bar-text-color: rgb(75, 85, 95) !important;
   --suggestion-backdrop-filter: none !important;
-  --suggestion-background: #f8fafc !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
-  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
   --swatch-width: 22px !important;
-  --sync-avatar-color-1: rgb(200, 50, 70) !important;
-  --sync-avatar-color-2: rgb(220, 100, 20) !important;
-  --sync-avatar-color-3: rgb(180, 120, 0) !important;
-  --sync-avatar-color-4: rgb(20, 140, 80) !important;
-  --sync-avatar-color-5: rgb(0, 120, 180) !important;
-  --sync-avatar-color-6: rgb(30, 70, 160) !important;
-  --sync-avatar-color-7: rgb(160, 30, 140) !important;
-  --sync-avatar-color-8: rgb(160, 30, 140) !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: rgba(255, 255, 255, 0.95) !important;
   --tab-curve: 6px !important;
-  --tab-divider-color: rgba(200, 205, 210, 0.4) !important;
-  --tab-font-size: 13px !important;
   --tab-max-width: 200px !important;
-  --tab-outline-color: transparent !important;
   --tab-outline-width: 1px !important;
-  --tab-radius: 6px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
-  --tab-stacked-font-size: 13px !important;
   --tab-stacked-font-weight: 400 !important;
-  --tab-stacked-header-width: 40px !important;
   --tab-stacked-pane-width: 700px !important;
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: #f8fafc !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, #f8fafc, transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 16px !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(265, 60%, 55%) !important;
-  --tab-text-color: rgb(75, 85, 95) !important;
-  --tab-text-color-active: rgb(75, 85, 95) !important;
-  --tab-text-color-focused: rgb(75, 85, 95) !important;
-  --tab-text-color-focused-active: rgb(75, 85, 95) !important;
-  --tab-text-color-focused-active-current: rgb(30, 35, 42) !important;
-  --tab-text-color-focused-highlighted: rgb(160, 30, 140) !important;
   --tab-width: 120px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: transparent !important;
-  --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
-  --table-column-alt-background: transparent !important;
-  --table-column-first-border-width: 1px !important;
-  --table-column-last-border-width: 1px !important;
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: hsl(265, 60%, 55%) !important;
-  --table-drag-handle-color: rgb(75, 85, 95) !important;
-  --table-drag-handle-color-active: rgb(248, 250, 252) !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: rgb(230, 232, 236) !important;
-  --table-header-border-color: #e0e0e0 !important;
-  --table-header-border-width: 1px !important;
-  --table-header-color: rgb(30, 35, 42) !important;
-  --table-header-size: 16px !important;
-  --table-header-weight: 600 !important;
-  --table-line-height: 1.3 !important;
-  --table-row-alt-background: transparent !important;
-  --table-row-alt-background-hover: transparent !important;
-  --table-row-background-hover: transparent !important;
-  --table-row-last-border-width: 1px !important;
-  --table-selection: hsla(265, 60%, 55%, 0.1) !important;
-  --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: hsl(265, 60%, 55%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
-  --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(160, 30, 140, 0.15) !important;
-  --tag-background-hover: rgba(0, 120, 180, 0.15) !important;
-  --tag-border-color: hsla(265, 60%, 55%, 0.15) !important;
-  --tag-border-color-hover: hsla(265, 60%, 55%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: rgb(160, 30, 140) !important;
-  --tag-color-hover: rgb(0, 120, 180) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
-  --tag-size: 0.875em !important;
-  --text-accent-hover: rgb(0, 120, 180) !important;
-  --text-error: rgb(180, 30, 50) !important;
-  --text-highlight-bg: rgba(220, 100, 20, 0.25) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: rgb(75, 85, 95) !important;
   --text-on-accent: rgb(248, 250, 252) !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: hsla(265, 60%, 55%, 0.2) !important;
-  --text-success: rgb(20, 140, 80) !important;
-  --text-warning: rgb(220, 100, 20) !important;
-  --titlebar-background-focused: transparent !important;
-  --titlebar-border-color: transparent !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 40px !important;
-  --titlebar-text-color: rgb(75, 85, 95) !important;
-  --titlebar-text-color-focused: rgb(30, 35, 42) !important;
-  --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
   --toggle-s-border-width: 2px !important;
@@ -831,35 +844,22 @@
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
-  --touch-radius-l: 52px !important;
-  --touch-radius-m: 44px !important;
-  --touch-radius-s: 40px !important;
-  --touch-radius-xl: 60px !important;
-  --touch-radius-xs: 30px !important;
-  --touch-radius-xxs: 24px !important;
   --touch-size-l: 52px !important;
   --touch-size-m: 44px !important;
   --touch-size-s: 40px !important;
   --touch-size-xl: 60px !important;
   --touch-size-xs: 30px !important;
   --touch-size-xxs: 24px !important;
-  --traffic-lights-offset-x: 40px !important;
-  --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: rgb(30, 35, 42) !important;
-  --vault-profile-color-hover: rgb(30, 35, 42) !important;
   --vault-profile-display: flex !important;
-  --vault-profile-font-size: 13px !important;
-  --vault-profile-font-weight: 500 !important;
   --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
-  --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --raised-shadow: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
+  --raised-shadow: var(--shadow-xs, 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent) !important;
+  --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
-  --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
   --h1-color: rgb(200, 50, 70) !important;
   --h2-color: rgb(102, 63, 191) !important;
   --h3-color: rgb(20, 140, 80) !important;
@@ -959,39 +959,469 @@
   --spoiler-pattern: radial-gradient(circle 1px at 10px 8px, rgba(100, 100, 100, 0.6) 50%, transparent 50%), radial-gradient(circle 1px at 30px 2px, rgba(100, 100, 100, 0.4) 50%, transparent 50%), radial-gradient(circle 1px at 50px 12px, rgba(100, 100, 100, 0.7) 50%, transparent 50%), radial-gradient(circle 1px at 70px 6px, rgba(100, 100, 100, 0.5) 50%, transparent 50%), radial-gradient(circle 1px at 15px 24px, rgba(100, 100, 100, 0.6) 50%, transparent 50%), radial-gradient(circle 1px at 38px 28px, rgba(100, 100, 100, 0.4) 50%, transparent 50%), radial-gradient(circle 1px at 60px 36px, rgba(100, 100, 100, 0.7) 50%, transparent 50%), radial-gradient(circle 1px at 85px 22px, rgba(100, 100, 100, 0.5) 50%, transparent 50%) !important;
   --tab-background-hover: rgba(248, 250, 252, 0.8) !important;
 
+  --red: rgb(180, 30, 50);
+  --red1: rgb(200, 50, 70);
+  --green: rgb(20, 140, 80);
+  --cyan: rgb(0, 120, 180);
+  --blue: rgb(30, 70, 160);
+  --yellow: rgb(180, 120, 0);
+  --orange: rgb(220, 100, 20);
+  --magenta: rgb(160, 30, 140);
+  --pink: rgb(200, 30, 140);
+  --list-indent: 2em;
+  --list-spacing: 0;
+  --list-marker-color: rgb(160, 30, 140);
+  --list-marker-color-hover: rgb(0, 120, 180);
+  --list-marker-color-collapsed: rgb(120, 125, 135);
+  --list-number-color: rgb(160, 30, 140);
+  --list-number-color-hover: rgb(0, 120, 180);
+
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
+  --background-modifier-active-hover: rgb(25, 25, 25) !important;
+  --background-modifier-border: transparent !important;
+  --background-modifier-border-focus: var(--color-base-40, #555555) !important;
+  --background-modifier-border-hover: transparent !important;
+  --background-modifier-error: rgb(255, 117, 127) !important;
+  --background-modifier-error-hover: rgb(255, 117, 127) !important;
+  --background-modifier-error-rgb: var(--color-red-rgb, 251, 70, 76) !important;
+  --background-modifier-form-field: transparent !important;
+  --background-modifier-form-field-hover: transparent !important;
+  --background-modifier-hover: rgba(25, 25, 25, 0.7) !important;
+  --background-modifier-success: rgb(158, 206, 106) !important;
+  --background-modifier-success-rgb: var(--color-green-rgb, 68, 207, 110) !important;
+  --background-primary: #020202 !important;
+  --background-primary-alt: rgb(15, 15, 15) !important;
+  --background-secondary: #020202 !important;
+  --background-secondary-alt: rgb(8, 8, 8) !important;
+  --bases-cards-background: #020202 !important;
+  --bases-cards-border-width: var(--border-width, 1px) !important;
+  --bases-cards-corner-shape: var(--corner-shape, round) !important;
+  --bases-cards-cover-background: rgb(15, 15, 15) !important;
+  --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-cards-radius: var(--radius-m, 8px) !important;
+  --bases-cards-shadow: 0 0 0 1px transparent !important;
+  --bases-cards-shadow-hover: 0 0 0 1px transparent !important;
   --bases-embed-border-color: transparent !important;
-  --bases-table-border-color: #363636 !important;
+  --bases-embed-border-radius: 6px !important;
+  --bases-group-heading-property-color: rgb(180, 180, 180) !important;
+  --bases-group-heading-property-size: var(--font-ui-smaller, 12px) !important;
+  --bases-group-heading-property-weight: var(--font-normal, 400) !important;
+  --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
+  --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
+  --bases-header-border-width: 0 0 var(--border-width) 0 !important;
+  --bases-table-border-color: var(--table-border-color, #363636) !important;
+  --bases-table-cell-background-active: #020202 !important;
+  --bases-table-cell-background-disabled: rgb(15, 15, 15) !important;
+  --bases-table-cell-background-selected: hsla(202, 100%, 75%, 0.1) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px var(--background-modifier-border-focus) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(202, 100%, 75%) !important;
+  --bases-table-column-border-width: var(--border-width, 1px) !important;
+  --bases-table-container-border-radius: 6px !important;
+  --bases-table-container-border-width: var(--border-width, 1px) !important;
+  --bases-table-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-table-group-background: rgb(15, 15, 15) !important;
   --bases-table-header-background: #020202 !important;
   --bases-table-header-background-hover: rgba(25, 25, 25, 0.7) !important;
-  --focus-ring-color: #0df !important;
-  --tab-container-background: #020202 !important;
-  --table-border-color: #363636 !important;
-  --text-accent: rgb(187, 154, 247) !important;
-  --text-faint: rgb(180, 180, 180) !important;
-  --text-normal: rgb(220, 220, 220) !important;
-  --titlebar-background: transparent !important;
-  --input-height: 30px !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
-  --input-radius: 5px !important;
-  --background-modifier-border: transparent !important;
-  --background-modifier-form-field: transparent !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
+  --bases-table-header-color: rgb(180, 180, 180) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 18px, black 18px) !important;
+  --bases-table-header-weight: var(--font-weight, 400) !important;
+  --bases-table-row-background-hover: var(--table-row-background-hover, transparent) !important;
+  --bases-table-row-border-width: var(--border-width, 1px) !important;
+  --bases-table-summary-background: #020202 !important;
+  --bases-table-summary-background-hover: rgba(25, 25, 25, 0.7) !important;
+  --blockquote-border-color: hsl(202, 100%, 75%) !important;
+  --blur-background: color-mix(in srgb, rgb(8, 8, 8) 65%, transparent) linear-gradient(rgb(8, 8, 8), color-mix(in srgb, rgb(8, 8, 8) 65%, transparent)) !important;
+  --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation)) brightness(var(--blur-brightness)) !important;
+  --blur-m: blur(var(--blur-radius-m)) saturate(var(--blur-saturation)) brightness(var(--blur-brightness)) !important;
+  --blur-s: blur(var(--blur-radius-s)) saturate(var(--blur-saturation)) brightness(var(--blur-brightness)) !important;
+  --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
+  --button-corner-shape: var(--corner-shape, round) !important;
+  --button-radius: var(--input-radius, 5px) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode, lighten);
+  --callout-bug: 255, 117, 127;
+  --callout-default: 122, 162, 247;
+  --callout-error: 219, 75, 75;
+  --callout-example: 187, 154, 247;
+  --callout-fail: 219, 75, 75;
+  --callout-important: 158, 206, 106;
+  --callout-info: 122, 162, 247;
+  --callout-padding: 16px;
+  --callout-question: 224, 175, 104;
+  --callout-radius: 8px;
+  --callout-success: 26, 188, 156;
+  --callout-summary: 125, 207, 255;
+  --callout-tip: 125, 207, 255;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: 125, 207, 255;
+  --callout-warning: 255, 158, 100;
+  --canvas-background: #020202 !important;
+  --canvas-card-label-color: rgb(180, 180, 180) !important;
+  --canvas-color-1: var(--color-red-rgb, 251, 70, 76) !important;
+  --canvas-color-2: var(--color-orange-rgb, 233, 151, 63) !important;
+  --canvas-color-3: var(--color-yellow-rgb, 224, 222, 113) !important;
+  --canvas-color-4: var(--color-green-rgb, 68, 207, 110) !important;
+  --canvas-color-5: var(--color-cyan-rgb, 83, 223, 221) !important;
+  --canvas-color-6: var(--color-purple-rgb, 168, 130, 255) !important;
+  --canvas-controls-icon-size: var(--icon-s, 16px) !important;
+  --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
+  --canvas-controls-radius: 6px !important;
+  --canvas-dot-pattern: var(--color-base-30, #363636) !important;
+  --caret-color: rgb(220, 220, 220) !important;
+  --checkbox-border-color: rgb(120, 120, 120) !important;
+  --checkbox-border-color-hover: rgb(120, 120, 120) !important;
+  --checkbox-color: rgb(158, 206, 106) !important;
+  --checkbox-color-hover: hsl(199, 102%, 86.25%) !important;
+  --checkbox-marker-color: #020202 !important;
+  --checkbox-radius: 6px !important;
+  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checklist-done-color: rgb(180, 180, 180) !important;
+  --clickable-icon-radius: 6px !important;
+  --code-background: rgb(187, 154, 247, 0.05) !important;
+  --code-border-color: transparent !important;
+  --code-bracket-background: rgba(25, 25, 25, 0.7) !important;
+  --code-comment: rgb(115, 125, 165) !important;
+  --code-function: rgb(224, 175, 104) !important;
+  --code-important: rgb(255, 158, 100) !important;
+  --code-keyword: rgb(187, 154, 247) !important;
+  --code-normal: rgb(180, 180, 180) !important;
+  --code-operator: rgb(255, 117, 127) !important;
+  --code-property: rgb(125, 207, 255) !important;
+  --code-punctuation: rgb(180, 180, 180) !important;
+  --code-radius: 6px !important;
+  --code-size: var(--font-smaller, 0.875em) !important;
+  --code-string: rgb(158, 206, 106) !important;
+  --code-tag: rgb(255, 117, 127) !important;
+  --code-value: rgb(187, 154, 247) !important;
+  --collapse-icon-color: rgb(180, 180, 180) !important;
+  --collapse-icon-color-collapsed: rgb(187, 154, 247) !important;
+  --color-accent: hsl(202, 100%, 75%) !important;
+  --color-accent-1: hsl(199, 102%, 86.25%) !important;
+  --color-accent-2: hsl(197, 105%, 96.75%) !important;
+  --color-accent-hsl: 202, 100%, 75% !important;
+  --divider-color: transparent !important;
+  --divider-color-hover: hsl(202, 100%, 75%) !important;
+  --divider-vertical-height: 0% !important;
+  --dropdown-background: rgb(8, 8, 8) !important;
+  --dropdown-background-hover: rgb(25, 25, 25) !important;
+  --dropdown-background-position: var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
+  --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
+  --dropdown-padding: 0 var(--dropdown-padding-end) 0 var(--dropdown-padding-start) !important;
+  --embed-block-shadow-hover: 0 0 0 1px transparent, inset 0 0 0 1px transparent !important;
+  --embed-border-start: 2px solid hsl(202, 100%, 75%) !important;
+  --embed-padding: 0 0 0 18px !important;
+  --file-header-background: #020202 !important;
+  --file-header-background-focused: #020202 !important;
+  --file-header-border: var(--border-width, 1px solid transparent) solid transparent !important;
+  --file-header-font: var(--font-interface, "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif) !important;
+  --file-header-font-size: var(--font-ui-small, 13px) !important;
+  --file-margins: clamp(8px, 4vw, 24px) !important;
+  --file-margins-x: var(--size-4-8, 32px) !important;
+  --file-margins-y: var(--size-4-8, 32px) !important;
+  --flair-background: rgb(8, 8, 8) !important;
+  --flair-color: rgb(220, 220, 220) !important;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
+  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
+  --font-interface: var(--font-interface-override), var(--font-interface-theme), var(--default-font, "??"), var(--font-default) !important;
+  --font-mermaid: var(--font-text, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif) !important;
+  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme), var(--font-monospace-default) !important;
+  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme), "Arial" !important;
+  --font-text: var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
+  --font-weight: var(--font-normal, 400) !important;
+  --footnote-divider-color: transparent !important;
+  --footnote-divider-color-active: var(--metadata-divider-color-focus, transparent) !important;
+  --footnote-divider-width: var(--border-width, 1px) !important;
+  --footnote-gap: 8px !important;
+  --footnote-id-color: rgb(180, 180, 180) !important;
+  --footnote-id-color-no-occurrences: rgb(180, 180, 180) !important;
+  --footnote-input-background: var(--metadata-input-background, transparent) !important;
+  --footnote-input-background-active: rgba(25, 25, 25, 0.7) !important;
+  --footnote-line-height: 1.6 !important;
+  --footnote-padding-block: var(--size-2-3, 6px) !important;
+  --footnote-padding-inline: var(--size-2-3, 6px) !important;
+  --footnote-radius: 6px !important;
+  --footnote-size: var(--font-smaller, 0.875em) !important;
+  --graph-line: rgb(120, 120, 120) !important;
+  --graph-node: rgb(220, 220, 220) !important;
+  --graph-node-attachment: rgb(122, 162, 247) !important;
+  --graph-node-focused: rgb(187, 154, 247) !important;
+  --graph-node-tag: rgb(255, 158, 100) !important;
+  --graph-node-unresolved: rgb(180, 180, 180) !important;
+  --graph-text: rgb(220, 220, 220) !important;
+  --h5-line-height: 1.6 !important;
+  --h6-line-height: 1.6 !important;
+  --heading-formatting: rgb(180, 180, 180) !important;
+  --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
+  --hr-color: transparent !important;
+  --icon-color: rgb(180, 180, 180) !important;
+  --icon-color-active: rgb(187, 154, 247) !important;
+  --icon-color-focused: rgb(220, 220, 220) !important;
+  --icon-color-hover: rgb(180, 180, 180) !important;
+  --icon-size: var(--icon-m, 18px) !important;
+  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12) !important;
+  --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3) !important;
+  --indentation-guide-width: var(--border-width, 1px) !important;
+  --indentation-guide-width-active: var(--border-width, 1px) !important;
+  --inline-title-line-height: var(--h1-line-height, 1.2) !important;
+  --inline-title-size: var(--h1-size, 1.618em) !important;
+  --inline-title-style: var(--h1-style, normal) !important;
+  --inline-title-variant: var(--h1-variant, normal) !important;
+  --inline-title-weight: var(--h1-weight, 700) !important;
+  --input-border-width: var(--border-width, 1px) !important;
+  --input-corner-shape: var(--corner-shape, round) !important;
+  --input-date-separator: rgb(180, 180, 180) !important;
+  --input-font-weight: var(--font-normal, 400) !important;
+  --input-icon-inset: 8px !important;
+  --input-padding: 8px 10px !important;
+  --input-placeholder-color: rgb(180, 180, 180) !important;
+  --interactive-accent: hsl(202, 100%, 75%) !important;
+  --interactive-accent-hover: hsl(199, 102%, 86.25%) !important;
+  --interactive-accent-hsl: 202, 100%, 75% !important;
+  --interactive-hover: rgb(25, 25, 25) !important;
+  --interactive-normal: rgb(8, 8, 8) !important;
+  --link-color: rgb(187, 154, 247) !important;
+  --link-color-hover: rgb(125, 207, 255) !important;
+  --link-external-color: rgb(187, 154, 247) !important;
+  --link-external-color-hover: rgb(125, 207, 255) !important;
+  --link-unresolved-color: rgb(187, 154, 247) !important;
+  --link-unresolved-decoration-color: hsla(202, 100%, 75%, 0.3) !important;
+  --link-weight: var(--font-weight, 400) !important;
+  --list-indent: 2em !important;
+  --list-marker-color: rgb(187, 154, 247) !important;
+  --list-marker-color-collapsed: rgb(180, 180, 180) !important;
+  --list-marker-color-hover: rgb(210, 180, 255) !important;
+  --menu-background: #020202 !important;
+  --menu-border-color: transparent !important;
+  --menu-border-width: var(--border-width, 1px) !important;
+  --menu-corner-shape: var(--corner-shape, round) !important;
+  --menu-padding: var(--size-2-3, 6px) !important;
+  --menu-radius: var(--radius-m, 8px) !important;
+  --menu-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+  --metadata-border-color: transparent !important;
+  --metadata-divider-color: transparent !important;
+  --metadata-input-background-active: rgba(25, 25, 25, 0.7) !important;
+  --metadata-input-font: var(--font-interface, "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif) !important;
+  --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
+  --metadata-input-padding: 8px 10px !important;
+  --metadata-input-text-color: rgb(220, 220, 220) !important;
+  --metadata-label-background-active: rgba(25, 25, 25, 0.7) !important;
+  --metadata-label-font: var(--font-interface, "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif) !important;
+  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-label-text-color: rgb(180, 180, 180) !important;
+  --metadata-label-text-color-hover: rgb(180, 180, 180) !important;
+  --metadata-padding: 10px 0 !important;
+  --metadata-property-background-active: rgba(25, 25, 25, 0.7) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px var(--background-modifier-border-focus) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px transparent !important;
+  --metadata-property-corner-shape: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape-focus: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
+  --modal-background: #020202 !important;
+  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus)) !important;
+  --modal-border-width: var(--border-width, 1px) !important;
+  --modal-radius: var(--radius-l, 12px) !important;
+  --nav-collapse-icon-color: rgb(180, 180, 180) !important;
+  --nav-collapse-icon-color-collapsed: rgb(180, 180, 180) !important;
+  --nav-heading-color: rgb(220, 220, 220) !important;
+  --nav-heading-color-collapsed: rgb(180, 180, 180) !important;
+  --nav-heading-color-collapsed-hover: rgb(180, 180, 180) !important;
+  --nav-heading-color-hover: rgb(220, 220, 220) !important;
+  --nav-heading-weight: var(--font-medium, 500) !important;
+  --nav-heading-weight-hover: var(--font-medium, 500) !important;
+  --nav-indentation-guide-color: var(--indentation-guide-color, rgba(255, 255, 255, 0.12)) !important;
+  --nav-indentation-guide-width: var(--indentation-guide-width, 1px) !important;
+  --nav-item-background-active: rgba(rgb(25, 25, 25), 0.2) !important;
+  --nav-item-background-hover: rgb(25, 25, 25) !important;
+  --nav-item-background-selected: hsla(202, 100%, 75%, 0.15) !important;
+  --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
+  --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
+  --nav-item-color: rgba(220, 220, 220, 0.9) !important;
+  --nav-item-color-active: rgb(220, 220, 220) !important;
+  --nav-item-color-highlighted: rgb(187, 154, 247) !important;
+  --nav-item-color-hover: rgb(220, 220, 220) !important;
+  --nav-item-color-selected: rgb(220, 220, 220) !important;
+  --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
+  --nav-item-padding: 4px 8px 4px 18px !important;
+  --nav-item-parent-padding: 4px 8px 4px 18px !important;
+  --nav-item-radius: 6px !important;
+  --nav-item-size: var(--font-ui-small, 13px) !important;
+  --nav-tag-color: rgb(180, 180, 180) !important;
+  --nav-tag-color-active: rgb(180, 180, 180) !important;
+  --nav-tag-color-hover: rgb(180, 180, 180) !important;
+  --nav-tag-radius: 6px !important;
+  --nav-tag-weight: var(--font-semibold, 600) !important;
+  --pdf-background: #020202 !important;
+  --pdf-page-background: #020202 !important;
+  --pdf-shadow: 0 0 0 1px transparent !important;
+  --pdf-sidebar-background: #020202 !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent !important;
   --pill-border-color: transparent !important;
   --pill-border-color-hover: transparent !important;
-  --pill-border-width: 1px !important;
+  --pill-border-width: var(--border-width, 1px) !important;
   --pill-color: rgb(180, 180, 180) !important;
   --pill-color-hover: rgb(220, 220, 220) !important;
   --pill-color-remove: rgb(180, 180, 180) !important;
+  --pill-color-remove-hover: rgb(187, 154, 247) !important;
+  --popover-font-size: var(--font-text-size, 16px) !important;
+  --prompt-background: #020202 !important;
+  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus)) !important;
+  --prompt-border-width: var(--border-width, 1px) !important;
+  --raised-background: color-mix(in srgb, rgb(8, 8, 8) 65%, transparent) linear-gradient(rgb(8, 8, 8), color-mix(in srgb, rgb(8, 8, 8) 65%, transparent)) !important;
+  --raised-blur: var(--blur-s, blur(6px) saturate(1.5) brightness(1.15)) !important;
+  --ribbon-background: #020202 !important;
+  --ribbon-background-collapsed: #020202 !important;
+  --ribbon-padding: 10px 8px 12px !important;
+  --scrollbar-active-thumb-bg: rgba(180, 180, 180, 0.4) !important;
+  --scrollbar-bg: transparent !important;
+  --scrollbar-radius: var(--radius-l, 12px) !important;
+  --scrollbar-thumb-bg: rgba(180, 180, 180, 0.2) !important;
+  --search-clear-button-color: rgb(180, 180, 180) !important;
+  --search-icon-color: rgb(180, 180, 180) !important;
+  --search-result-background: #020202 !important;
+  --setting-group-heading-color: rgb(220, 220, 220) !important;
+  --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
+  --setting-group-heading-weight: var(--font-semibold, 600) !important;
+  --setting-items-background: transparent !important;
+  --setting-items-border-color: transparent !important;
+  --setting-items-padding: 16px !important;
+  --setting-items-radius: var(--radius-l, 12px) !important;
+  --shiki-active-tab-border-color: rgb(180, 180, 180) !important;
+  --shiki-code-background: rgb(187, 154, 247, 0.05) !important;
+  --shiki-code-block-border-radius: 6px !important;
+  --shiki-code-block-spacing: var(--p-spacing, 1rem) !important;
+  --shiki-code-comment: rgb(180, 180, 180) !important;
+  --shiki-code-function: rgb(158, 206, 106) !important;
+  --shiki-code-important: rgb(255, 158, 100) !important;
+  --shiki-code-keyword: rgb(187, 154, 247) !important;
+  --shiki-code-normal: rgb(180, 180, 180) !important;
+  --shiki-code-property: rgb(125, 207, 255) !important;
+  --shiki-code-punctuation: rgb(180, 180, 180) !important;
+  --shiki-code-string: rgb(224, 175, 104) !important;
+  --shiki-code-value: rgb(187, 154, 247) !important;
+  --shiki-gutter-border-color: transparent !important;
+  --shiki-gutter-border-width: var(--border-width, 1px) !important;
+  --shiki-gutter-text-color: rgb(180, 180, 180) !important;
+  --shiki-gutter-text-color-highlight: rgb(180, 180, 180) !important;
+  --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
+  --shiki-highlight-green-background: rgba(var(--color-green-rgb), 0.1) !important;
+  --shiki-highlight-neutral: rgb(180, 180, 180) !important;
+  --shiki-highlight-neutral-background: rgba(var(--mono-rgb-100), 0.05) !important;
+  --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
+  --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
+  --shiki-terminal-dots-color: rgb(180, 180, 180) !important;
+  --shiki-tooltip-background: rgba(25, 25, 25, 0.9) !important;
+  --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9) !important;
+  --slider-thumb-border-color: transparent !important;
+  --slider-thumb-border-width: var(--border-width, 1px) !important;
+  --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
+  --slider-track-background: transparent !important;
+  --status-bar-background: #020202 !important;
+  --status-bar-border-color: transparent !important;
+  --status-bar-border-width: var(--border-width) 0 0 var(--border-width, 1px 0 0 1px) !important;
+  --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
+  --status-bar-radius: var(--radius-m, 8px 0 0 0) 0 0 0 !important;
+  --status-bar-text-color: rgb(180, 180, 180) !important;
+  --suggestion-background: #020202 !important;
+  --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
+  --sync-avatar-color-1: rgb(255, 117, 127) !important;
+  --sync-avatar-color-2: rgb(255, 158, 100) !important;
+  --sync-avatar-color-3: rgb(224, 175, 104) !important;
+  --sync-avatar-color-4: rgb(158, 206, 106) !important;
+  --sync-avatar-color-5: rgb(125, 207, 255) !important;
+  --sync-avatar-color-6: rgb(122, 162, 247) !important;
+  --sync-avatar-color-7: rgb(187, 154, 247) !important;
+  --sync-avatar-color-8: rgb(187, 154, 247) !important;
+  --tab-background-active: rgba(25, 25, 25, 0.95) !important;
+  --tab-container-background: #020202 !important;
+  --tab-divider-color: rgba(40, 40, 40, 0.3) !important;
+  --tab-font-size: var(--font-ui-small, 13px) !important;
+  --tab-outline-color: transparent !important;
+  --tab-radius: 6px !important;
+  --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
+  --tab-stacked-header-width: var(--header-height, 40px) !important;
+  --tab-switcher-background: #020202 !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, #020202, transparent) !important;
+  --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(202, 100%, 75%) !important;
+  --tab-text-color: rgb(180, 180, 180) !important;
+  --tab-text-color-active: rgb(180, 180, 180) !important;
+  --tab-text-color-focused: rgb(180, 180, 180) !important;
+  --tab-text-color-focused-active: rgb(180, 180, 180) !important;
+  --tab-text-color-focused-active-current: rgb(220, 220, 220) !important;
+  --tab-text-color-focused-highlighted: rgb(187, 154, 247) !important;
+  --table-add-button-border-color: transparent !important;
+  --table-add-button-border-width: var(--table-border-width, 1px) !important;
+  --table-border-color: var(--background-modifier-border, #363636) !important;
+  --table-column-alt-background: var(--table-background, transparent) !important;
+  --table-column-first-border-width: var(--table-border-width, 1px) !important;
+  --table-column-last-border-width: var(--table-border-width, 1px) !important;
+  --table-drag-handle-background-active: hsl(202, 100%, 75%) !important;
+  --table-drag-handle-color: rgb(180, 180, 180) !important;
+  --table-drag-handle-color-active: rgb(15, 15, 15) !important;
+  --table-header-background: rgb(2, 2, 2) !important;
+  --table-header-border-color: var(--table-border-color, #363636) !important;
+  --table-header-border-width: var(--table-border-width, 1px) !important;
+  --table-header-color: rgb(220, 220, 220) !important;
+  --table-header-size: var(--table-text-size, 16px) !important;
+  --table-header-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
+  --table-line-height: var(--line-height-tight, 1.3) !important;
+  --table-row-alt-background: var(--table-background, transparent) !important;
+  --table-row-alt-background-hover: var(--table-background, transparent) !important;
+  --table-row-background-hover: var(--table-background, transparent) !important;
+  --table-row-last-border-width: var(--table-border-width, 1px) !important;
+  --table-selection: hsla(202, 100%, 75%, 0.1) !important;
+  --table-selection-blend-mode: var(--highlight-mix-blend-mode, lighten) !important;
+  --table-selection-border-color: hsl(202, 100%, 75%) !important;
+  --table-text-size: var(--font-text-size, 16px) !important;
+  --tag-background: rgba(187, 154, 247, 0.15) !important;
+  --tag-background-hover: rgba(125, 207, 255, 0.15) !important;
+  --tag-border-color: hsla(202, 100%, 75%, 0.15) !important;
+  --tag-border-color-hover: hsla(202, 100%, 75%, 0.15) !important;
+  --tag-color: rgb(187, 154, 247) !important;
+  --tag-color-hover: rgb(125, 207, 255) !important;
+  --tag-size: var(--font-smaller, 0.875em) !important;
+  --text-accent: rgb(187, 154, 247) !important;
+  --text-accent-hover: rgb(125, 207, 255) !important;
+  --text-error: rgb(219, 75, 75) !important;
+  --text-faint: rgb(180, 180, 180) !important;
+  --text-highlight-bg: rgba(255, 158, 100, 0.25) !important;
+  --text-muted: rgb(180, 180, 180) !important;
+  --text-normal: rgb(220, 220, 220) !important;
+  --text-selection: hsla(202, 100%, 75%, 0.33) !important;
+  --text-success: rgb(158, 206, 106) !important;
+  --text-warning: rgb(255, 158, 100) !important;
+  --titlebar-background: transparent !important;
+  --titlebar-background-focused: transparent !important;
+  --titlebar-border-color: transparent !important;
+  --titlebar-text-color: rgb(180, 180, 180) !important;
+  --titlebar-text-color-focused: rgb(220, 220, 220) !important;
+  --titlebar-text-weight: var(--font-bold, 700) !important;
+  --touch-radius-l: var(--touch-size-l, 52px) !important;
+  --touch-radius-m: var(--touch-size-m, 44px) !important;
+  --touch-radius-s: var(--touch-size-s, 40px) !important;
+  --touch-radius-xl: var(--touch-size-xl, 60px) !important;
+  --touch-radius-xs: var(--touch-size-xs, 30px) !important;
+  --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
+  --traffic-lights-offset-x: var(--header-height, 40px) !important;
+  --traffic-lights-offset-y: var(--header-height, 40px) !important;
+  --vault-profile-color: rgb(220, 220, 220) !important;
+  --vault-profile-color-hover: rgb(220, 220, 220) !important;
+  --vault-profile-font-size: var(--font-ui-small, 13px) !important;
+  --vault-profile-font-weight: var(--font-medium, 500) !important;
+  --workspace-background-translucent: rgba(2, 2, 2, 0.9) !important;
+  --input-height: 30px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
   --pill-focus-left-adjust: -4px !important;
   --pill-focus-width: calc(100% + 6px) !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 202 !important;
   --accent-l: 75% !important;
   --accent-s: 100% !important;
@@ -1004,164 +1434,50 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgb(25, 25, 25) !important;
-  --background-modifier-border-focus: #555555 !important;
-  --background-modifier-border-hover: transparent !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-cover: rgba(8, 8, 8, 0.8) !important;
-  --background-modifier-error: rgb(255, 117, 127) !important;
-  --background-modifier-error-hover: rgb(255, 117, 127) !important;
-  --background-modifier-error-rgb: 251, 70, 76 !important;
-  --background-modifier-form-field-hover: transparent !important;
-  --background-modifier-hover: rgba(25, 25, 25, 0.7) !important;
   --background-modifier-message: rgba(25, 25, 25, 0.9) !important;
-  --background-modifier-success: rgb(158, 206, 106) !important;
-  --background-modifier-success-rgb: 68, 207, 110 !important;
-  --background-primary: #020202 !important;
-  --background-primary-alt: rgb(15, 15, 15) !important;
-  --background-secondary: #020202 !important;
-  --background-secondary-alt: rgb(8, 8, 8) !important;
-  --bases-cards-background: #020202 !important;
-  --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-corner-shape: round !important;
-  --bases-cards-cover-background: rgb(15, 15, 15) !important;
-  --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
-  --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px transparent !important;
-  --bases-cards-shadow-hover: 0 0 0 1px transparent !important;
-  --bases-embed-border-radius: 6px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: rgb(180, 180, 180) !important;
   --bases-group-heading-property-display: block !important;
-  --bases-group-heading-property-size: 12px !important;
-  --bases-group-heading-property-weight: 400 !important;
-  --bases-group-heading-value-size: 0.875em !important;
-  --bases-group-heading-value-weight: 600 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-cell-background-active: #020202 !important;
-  --bases-table-cell-background-disabled: rgb(15, 15, 15) !important;
-  --bases-table-cell-background-selected: hsla(202, 100%, 75%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px #555555 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(202, 100%, 75%) !important;
-  --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 6px !important;
-  --bases-table-container-border-width: 1px !important;
-  --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: rgb(15, 15, 15) !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-color: rgb(180, 180, 180) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(to left, transparent 18px, black 18px) !important;
-  --bases-table-header-weight: 400 !important;
-  --bases-table-row-background-hover: transparent !important;
-  --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: #020202 !important;
-  --bases-table-summary-background-hover: rgba(25, 25, 25, 0.7) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: rgba(187, 154, 247, 0.12) !important;
-  --blockquote-border-color: hsl(202, 100%, 75%) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, rgb(8, 8, 8) 65%, transparent) linear-gradient(rgb(8, 8, 8), color-mix(in srgb, rgb(8, 8, 8) 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
-  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
-  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
   --blur-opacity-m: 90% !important;
   --blur-opacity-s: 65% !important;
   --blur-radius-l: 16px !important;
   --blur-radius-m: 10px !important;
   --blur-radius-s: 6px !important;
-  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
   --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
-  --bold-weight: 600 !important;
   --border-width: 1px !important;
-  --button-corner-shape: round !important;
-  --button-radius: 5px !important;
-  --callout-blend-mode: lighten;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: 255, 117, 127;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 122, 162, 247;
-  --callout-error: 219, 75, 75;
-  --callout-example: 187, 154, 247;
-  --callout-fail: 219, 75, 75;
-  --callout-important: 158, 206, 106;
-  --callout-info: 122, 162, 247;
-  --callout-padding: 16px;
-  --callout-question: 224, 175, 104;
   --callout-quote: 180, 180, 180;
-  --callout-radius: 8px;
-  --callout-success: 26, 188, 156;
-  --callout-summary: 125, 207, 255;
-  --callout-tip: 125, 207, 255;
   --callout-title-padding: 0;
-  --callout-title-weight: 600;
-  --callout-todo: 125, 207, 255;
-  --callout-warning: 255, 158, 100;
-  --canvas-background: #020202 !important;
-  --canvas-card-label-color: rgb(180, 180, 180) !important;
   --canvas-color: 126, 126, 126 !important;
-  --canvas-color-1: 251, 70, 76 !important;
-  --canvas-color-2: 233, 151, 63 !important;
-  --canvas-color-3: 224, 222, 113 !important;
-  --canvas-color-4: 68, 207, 110 !important;
-  --canvas-color-5: 83, 223, 221 !important;
-  --canvas-color-6: 168, 130, 255 !important;
-  --canvas-controls-icon-size: 16px !important;
-  --canvas-controls-icon-stroke: 2px !important;
-  --canvas-controls-radius: 6px !important;
-  --canvas-dot-pattern: #363636 !important;
-  --caret-color: rgb(220, 220, 220) !important;
-  --checkbox-border-color: rgb(120, 120, 120) !important;
-  --checkbox-border-color-hover: rgb(120, 120, 120) !important;
-  --checkbox-color: rgb(158, 206, 106) !important;
-  --checkbox-color-hover: hsl(199, 102%, 86.25%) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: #020202 !important;
-  --checkbox-radius: 6px !important;
-  --checkbox-size: 16px !important;
-  --checklist-done-color: rgb(180, 180, 180) !important;
   --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 6px !important;
-  --code-background: rgb(187, 154, 247, 0.05) !important;
-  --code-border-color: transparent !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: rgba(25, 25, 25, 0.7) !important;
-  --code-comment: rgb(115, 125, 165) !important;
-  --code-function: rgb(224, 175, 104) !important;
-  --code-important: rgb(255, 158, 100) !important;
-  --code-keyword: rgb(187, 154, 247) !important;
-  --code-normal: rgb(180, 180, 180) !important;
-  --code-operator: rgb(255, 117, 127) !important;
-  --code-property: rgb(125, 207, 255) !important;
-  --code-punctuation: rgb(180, 180, 180) !important;
-  --code-radius: 6px !important;
-  --code-size: 0.875em !important;
-  --code-string: rgb(158, 206, 106) !important;
-  --code-tag: rgb(255, 117, 127) !important;
-  --code-value: rgb(187, 154, 247) !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: rgb(180, 180, 180) !important;
-  --collapse-icon-color-collapsed: rgb(187, 154, 247) !important;
-  --color-accent: hsl(202, 100%, 75%) !important;
-  --color-accent-1: hsl(199, 102%, 86.25%) !important;
-  --color-accent-2: hsl(197, 105%, 96.75%) !important;
-  --color-accent-hsl: 202, 100%, 75% !important;
   --color-base-00: #1e1e1e !important;
   --color-base-05: #212121 !important;
   --color-base-10: #242424 !important;
@@ -1197,69 +1513,42 @@
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: transparent !important;
-  --divider-color-hover: hsl(202, 100%, 75%) !important;
-  --divider-vertical-height: 0% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: rgb(8, 8, 8) !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: rgb(25, 25, 25) !important;
-  --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
-  --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-icon-inset: 0.5em !important;
   --dropdown-icon-width: 1em !important;
-  --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover: 0 0 0 1px transparent, inset 0 0 0 1px transparent !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid hsl(202, 100%, 75%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
-  --embed-padding: 0 0 0 18px !important;
   --file-folding-offset: 24px !important;
-  --file-header-background: #020202 !important;
-  --file-header-background-focused: #020202 !important;
-  --file-header-border: 1px solid transparent !important;
-  --file-header-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: clamp(8px, 4vw, 24px) !important;
-  --file-margins-x: 32px !important;
-  --file-margins-y: 32px !important;
-  --flair-background: rgb(8, 8, 8) !important;
-  --flair-color: rgb(220, 220, 220) !important;
-  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
   --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "??", "??", "??", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -1268,31 +1557,10 @@
   --font-ui-medium: 15px !important;
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
-  --font-weight: 400 !important;
-  --footnote-divider-color: transparent !important;
-  --footnote-divider-color-active: transparent !important;
-  --footnote-divider-width: 1px !important;
-  --footnote-gap: 8px !important;
-  --footnote-id-color: rgb(180, 180, 180) !important;
-  --footnote-id-color-no-occurrences: rgb(180, 180, 180) !important;
   --footnote-id-delimiter: "." !important;
-  --footnote-input-background: transparent !important;
-  --footnote-input-background-active: rgba(25, 25, 25, 0.7) !important;
-  --footnote-line-height: 1.6 !important;
-  --footnote-padding-block: 6px !important;
-  --footnote-padding-inline: 6px !important;
-  --footnote-radius: 6px !important;
-  --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
   --frame-right-space: 80px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: rgb(120, 120, 120) !important;
-  --graph-node: rgb(220, 220, 220) !important;
-  --graph-node-attachment: rgb(122, 162, 247) !important;
-  --graph-node-focused: rgb(187, 154, 247) !important;
-  --graph-node-tag: rgb(255, 158, 100) !important;
-  --graph-node-unresolved: rgb(180, 180, 180) !important;
-  --graph-text: rgb(220, 220, 220) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.618em !important;
@@ -1318,27 +1586,18 @@
   --h4-variant: normal !important;
   --h4-weight: 640 !important;
   --h5-letter-spacing: -0.002em !important;
-  --h5-line-height: 1.6 !important;
   --h5-size: 1.076em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 620 !important;
   --h6-letter-spacing: 0em !important;
-  --h6-line-height: 1.6 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: rgb(180, 180, 180) !important;
-  --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: lighten !important;
-  --hr-color: transparent !important;
   --hr-thickness: 2px !important;
-  --icon-color: rgb(180, 180, 180) !important;
-  --icon-color-active: rgb(187, 154, 247) !important;
-  --icon-color-focused: rgb(220, 220, 220) !important;
-  --icon-color-hover: rgb(180, 180, 180) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -1354,34 +1613,14 @@
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
-  --indentation-guide-color-active: rgba(255, 255, 255, 0.3) !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
-  --indentation-guide-width: 1px !important;
-  --indentation-guide-width-active: 1px !important;
-  --inline-title-line-height: 1.2 !important;
   --inline-title-margin-bottom: 0.5em !important;
-  --inline-title-size: 1.618em !important;
-  --inline-title-style: normal !important;
-  --inline-title-variant: normal !important;
-  --inline-title-weight: 700 !important;
-  --input-corner-shape: round !important;
-  --input-date-separator: rgb(180, 180, 180) !important;
-  --input-font-weight: 400 !important;
-  --input-icon-inset: 8px !important;
-  --input-padding: 8px 10px !important;
-  --input-placeholder-color: rgb(180, 180, 180) !important;
   --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
   --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: hsl(202, 100%, 75%) !important;
-  --interactive-accent-hover: hsl(199, 102%, 86.25%) !important;
-  --interactive-accent-hsl: 202, 100%, 75% !important;
-  --interactive-hover: rgb(25, 25, 25) !important;
-  --interactive-normal: rgb(8, 8, 8) !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -1395,153 +1634,72 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.6 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: rgb(187, 154, 247) !important;
-  --link-color-hover: rgb(125, 207, 255) !important;
   --link-decoration: none !important;
   --link-decoration-hover: none !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: rgb(187, 154, 247) !important;
-  --link-external-color-hover: rgb(125, 207, 255) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: rgb(187, 154, 247) !important;
-  --link-unresolved-decoration-color: hsla(202, 100%, 75%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
-  --link-weight: 400 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: 50% !important;
   --list-bullet-size: 0.3em !important;
   --list-bullet-transform: none !important;
-  --list-indent: 2em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: rgb(187, 154, 247) !important;
-  --list-marker-color-collapsed: rgb(180, 180, 180) !important;
-  --list-marker-color-hover: rgb(210, 180, 255) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0 !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: #020202 !important;
-  --menu-border-color: transparent !important;
-  --menu-border-width: 1px !important;
-  --menu-corner-shape: round !important;
-  --menu-padding: 6px !important;
-  --menu-radius: 8px !important;
   --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
-  --menu-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: transparent !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: transparent !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: rgba(25, 25, 25, 0.7) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-font-size: 0.875em !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-padding: 8px 10px !important;
-  --metadata-input-text-color: rgb(220, 220, 220) !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: rgba(25, 25, 25, 0.7) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: rgb(180, 180, 180) !important;
-  --metadata-label-text-color-hover: rgb(180, 180, 180) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
-  --metadata-padding: 10px 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: rgba(25, 25, 25, 0.7) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #555555 !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px transparent !important;
-  --metadata-property-corner-shape: round !important;
-  --metadata-property-corner-shape-focus: round !important;
-  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
   --metadata-property-radius-hover: 6px !important;
-  --metadata-sidebar-input-font-size: 13px !important;
-  --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: #020202 !important;
-  --modal-border-color: #555555 !important;
-  --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: 12px !important;
   --modal-shadow: none !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
-  --nav-collapse-icon-color: rgb(180, 180, 180) !important;
-  --nav-collapse-icon-color-collapsed: rgb(180, 180, 180) !important;
-  --nav-heading-color: rgb(220, 220, 220) !important;
-  --nav-heading-color-collapsed: rgb(180, 180, 180) !important;
-  --nav-heading-color-collapsed-hover: rgb(180, 180, 180) !important;
-  --nav-heading-color-hover: rgb(220, 220, 220) !important;
-  --nav-heading-weight: 500 !important;
-  --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
-  --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: rgba(rgb(25, 25, 25), 0.2) !important;
-  --nav-item-background-hover: rgb(25, 25, 25) !important;
-  --nav-item-background-selected: hsla(202, 100%, 75%, 0.15) !important;
-  --nav-item-children-margin-start: 12px !important;
-  --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: rgba(220, 220, 220, 0.9) !important;
-  --nav-item-color-active: rgb(220, 220, 220) !important;
-  --nav-item-color-highlighted: rgb(187, 154, 247) !important;
-  --nav-item-color-hover: rgb(220, 220, 220) !important;
-  --nav-item-color-selected: rgb(220, 220, 220) !important;
-  --nav-item-margin-bottom: 2px !important;
-  --nav-item-padding: 4px 8px 4px 18px !important;
-  --nav-item-parent-padding: 4px 8px 4px 18px !important;
-  --nav-item-radius: 6px !important;
-  --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: rgb(180, 180, 180) !important;
-  --nav-tag-color-active: rgb(180, 180, 180) !important;
-  --nav-tag-color-hover: rgb(180, 180, 180) !important;
-  --nav-tag-radius: 6px !important;
-  --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: #020202 !important;
-  --pdf-page-background: #020202 !important;
-  --pdf-shadow: 0 0 0 1px transparent !important;
-  --pdf-sidebar-background: #020202 !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px transparent !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-color-remove-hover: rgb(187, 154, 247) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
-  --popover-font-size: 16px !important;
   --popover-height: 500px !important;
   --popover-max-height: 95vh !important;
   --popover-pdf-height: 400px !important;
@@ -1549,9 +1707,6 @@
   --popover-width: 500px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
-  --prompt-background: #020202 !important;
-  --prompt-border-color: #555555 !important;
-  --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
@@ -1560,75 +1715,30 @@
   --radius-m: 8px !important;
   --radius-s: 6px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, rgb(8, 8, 8) 65%, transparent) linear-gradient(rgb(8, 8, 8), color-mix(in srgb, rgb(8, 8, 8) 65%, transparent)) !important;
-  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
   --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
   --raised-mask-background: transparent !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
-  --ribbon-background: #020202 !important;
-  --ribbon-background-collapsed: #020202 !important;
-  --ribbon-padding: 10px 8px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: rgba(180, 180, 180, 0.4) !important;
-  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 12px !important;
-  --scrollbar-thumb-bg: rgba(180, 180, 180, 0.2) !important;
   --scrollbar-width: 10px !important;
-  --search-clear-button-color: rgb(180, 180, 180) !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: rgb(180, 180, 180) !important;
   --search-icon-size: 18px !important;
-  --search-result-background: #020202 !important;
-  --setting-group-heading-color: rgb(220, 220, 220) !important;
-  --setting-group-heading-size: 15px !important;
-  --setting-group-heading-weight: 600 !important;
-  --setting-items-background: transparent !important;
-  --setting-items-border-color: transparent !important;
   --setting-items-border-width: 0 !important;
-  --setting-items-padding: 16px !important;
-  --setting-items-radius: 12px !important;
   --shadow-l: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1) !important;
   --shadow-s: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
-  --shiki-active-tab-border-color: rgb(180, 180, 180) !important;
   --shiki-active-tab-border-width: 2px !important;
-  --shiki-code-background: rgb(187, 154, 247, 0.05) !important;
   --shiki-code-block-border-color: transparent !important;
-  --shiki-code-block-border-radius: 6px !important;
   --shiki-code-block-border-width: 0px !important;
-  --shiki-code-block-spacing: 1rem !important;
-  --shiki-code-comment: rgb(180, 180, 180) !important;
-  --shiki-code-function: rgb(158, 206, 106) !important;
-  --shiki-code-important: rgb(255, 158, 100) !important;
-  --shiki-code-keyword: rgb(187, 154, 247) !important;
-  --shiki-code-normal: rgb(180, 180, 180) !important;
-  --shiki-code-property: rgb(125, 207, 255) !important;
-  --shiki-code-punctuation: rgb(180, 180, 180) !important;
-  --shiki-code-string: rgb(224, 175, 104) !important;
-  --shiki-code-value: rgb(187, 154, 247) !important;
-  --shiki-gutter-border-color: transparent !important;
-  --shiki-gutter-border-width: 1px !important;
-  --shiki-gutter-text-color: rgb(180, 180, 180) !important;
-  --shiki-gutter-text-color-highlight: rgb(180, 180, 180) !important;
-  --shiki-highlight-green: rgba(68, 207, 110, 0.5) !important;
-  --shiki-highlight-green-background: rgba(68, 207, 110, 0.1) !important;
-  --shiki-highlight-neutral: rgb(180, 180, 180) !important;
-  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05) !important;
-  --shiki-highlight-red: rgba(251, 70, 76, 0.5) !important;
-  --shiki-highlight-red-background: rgba(251, 70, 76, 0.1) !important;
-  --shiki-terminal-dots-color: rgb(180, 180, 180) !important;
-  --shiki-tooltip-background: rgba(25, 25, 25, 0.9) !important;
   --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --sidebar-right-toggle-inner-width: 8.33% !important;
   --sidebar-right-toggle-inner-width-open: 24% !important;
   --sidebar-tab-text-display: none !important;
@@ -1649,132 +1759,52 @@
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: transparent !important;
-  --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: transparent !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: #020202 !important;
-  --status-bar-border-color: transparent !important;
-  --status-bar-border-width: 1px 0 0 1px !important;
-  --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
-  --status-bar-radius: 8px 0 0 0 !important;
-  --status-bar-text-color: rgb(180, 180, 180) !important;
   --suggestion-backdrop-filter: none !important;
-  --suggestion-background: #020202 !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
-  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
   --swatch-width: 22px !important;
-  --sync-avatar-color-1: rgb(255, 117, 127) !important;
-  --sync-avatar-color-2: rgb(255, 158, 100) !important;
-  --sync-avatar-color-3: rgb(224, 175, 104) !important;
-  --sync-avatar-color-4: rgb(158, 206, 106) !important;
-  --sync-avatar-color-5: rgb(125, 207, 255) !important;
-  --sync-avatar-color-6: rgb(122, 162, 247) !important;
-  --sync-avatar-color-7: rgb(187, 154, 247) !important;
-  --sync-avatar-color-8: rgb(187, 154, 247) !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: rgba(25, 25, 25, 0.95) !important;
   --tab-curve: 6px !important;
-  --tab-divider-color: rgba(40, 40, 40, 0.3) !important;
-  --tab-font-size: 13px !important;
   --tab-max-width: 200px !important;
-  --tab-outline-color: transparent !important;
   --tab-outline-width: 1px !important;
-  --tab-radius: 6px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
-  --tab-stacked-font-size: 13px !important;
   --tab-stacked-font-weight: 400 !important;
-  --tab-stacked-header-width: 40px !important;
   --tab-stacked-pane-width: 700px !important;
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: #020202 !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, #020202, transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 16px !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(202, 100%, 75%) !important;
-  --tab-text-color: rgb(180, 180, 180) !important;
-  --tab-text-color-active: rgb(180, 180, 180) !important;
-  --tab-text-color-focused: rgb(180, 180, 180) !important;
-  --tab-text-color-focused-active: rgb(180, 180, 180) !important;
-  --tab-text-color-focused-active-current: rgb(220, 220, 220) !important;
-  --tab-text-color-focused-highlighted: rgb(187, 154, 247) !important;
   --tab-width: 120px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: transparent !important;
-  --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
-  --table-column-alt-background: transparent !important;
-  --table-column-first-border-width: 1px !important;
-  --table-column-last-border-width: 1px !important;
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: hsl(202, 100%, 75%) !important;
-  --table-drag-handle-color: rgb(180, 180, 180) !important;
-  --table-drag-handle-color-active: rgb(15, 15, 15) !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: rgb(2, 2, 2) !important;
-  --table-header-border-color: #363636 !important;
-  --table-header-border-width: 1px !important;
-  --table-header-color: rgb(220, 220, 220) !important;
-  --table-header-size: 16px !important;
-  --table-header-weight: 600 !important;
-  --table-line-height: 1.3 !important;
-  --table-row-alt-background: transparent !important;
-  --table-row-alt-background-hover: transparent !important;
-  --table-row-background-hover: transparent !important;
-  --table-row-last-border-width: 1px !important;
-  --table-selection: hsla(202, 100%, 75%, 0.1) !important;
-  --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: hsl(202, 100%, 75%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
-  --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(187, 154, 247, 0.15) !important;
-  --tag-background-hover: rgba(125, 207, 255, 0.15) !important;
-  --tag-border-color: hsla(202, 100%, 75%, 0.15) !important;
-  --tag-border-color-hover: hsla(202, 100%, 75%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: rgb(187, 154, 247) !important;
-  --tag-color-hover: rgb(125, 207, 255) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
-  --tag-size: 0.875em !important;
-  --text-accent-hover: rgb(125, 207, 255) !important;
-  --text-error: rgb(219, 75, 75) !important;
-  --text-highlight-bg: rgba(255, 158, 100, 0.25) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: rgb(180, 180, 180) !important;
   --text-on-accent: rgb(15, 15, 15) !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: hsla(202, 100%, 75%, 0.33) !important;
-  --text-success: rgb(158, 206, 106) !important;
-  --text-warning: rgb(255, 158, 100) !important;
-  --titlebar-background-focused: transparent !important;
-  --titlebar-border-color: transparent !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 40px !important;
-  --titlebar-text-color: rgb(180, 180, 180) !important;
-  --titlebar-text-color-focused: rgb(220, 220, 220) !important;
-  --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
   --toggle-s-border-width: 2px !important;
@@ -1786,29 +1816,16 @@
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
-  --touch-radius-l: 52px !important;
-  --touch-radius-m: 44px !important;
-  --touch-radius-s: 40px !important;
-  --touch-radius-xl: 60px !important;
-  --touch-radius-xs: 30px !important;
-  --touch-radius-xxs: 24px !important;
   --touch-size-l: 52px !important;
   --touch-size-m: 44px !important;
   --touch-size-s: 40px !important;
   --touch-size-xl: 60px !important;
   --touch-size-xs: 30px !important;
   --touch-size-xxs: 24px !important;
-  --traffic-lights-offset-x: 40px !important;
-  --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: rgb(220, 220, 220) !important;
-  --vault-profile-color-hover: rgb(220, 220, 220) !important;
   --vault-profile-display: flex !important;
-  --vault-profile-font-size: 13px !important;
-  --vault-profile-font-weight: 500 !important;
   --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
-  --workspace-background-translucent: rgba(2, 2, 2, 0.9) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
@@ -1918,6 +1935,23 @@
   --spoiler-background-hover: rgba(25, 25, 25, 0.5) !important;
   --spoiler-pattern: radial-gradient(circle 1px at 10px 8px, rgba(255, 255, 255, 0.8) 50%, transparent 50%), radial-gradient(circle 1px at 30px 2px, rgba(255, 255, 255, 0.6) 50%, transparent 50%), radial-gradient(circle 1px at 50px 12px, rgba(255, 255, 255, 0.9) 50%, transparent 50%), radial-gradient(circle 1px at 70px 6px, rgba(255, 255, 255, 0.7) 50%, transparent 50%), radial-gradient(circle 1px at 15px 24px, rgba(255, 255, 255, 0.8) 50%, transparent 50%), radial-gradient(circle 1px at 38px 28px, rgba(255, 255, 255, 0.6) 50%, transparent 50%), radial-gradient(circle 1px at 60px 36px, rgba(255, 255, 255, 0.9) 50%, transparent 50%), radial-gradient(circle 1px at 85px 22px, rgba(255, 255, 255, 0.7) 50%, transparent 50%) !important;
   --tab-background-hover: rgba(18, 18, 18, 0.8) !important;
+
+  --red: rgb(219, 75, 75);
+  --red1: rgb(255, 117, 127);
+  --green: rgb(158, 206, 106);
+  --cyan: rgb(125, 207, 255);
+  --blue: rgb(122, 162, 247);
+  --yellow: rgb(224, 175, 104);
+  --orange: rgb(255, 158, 100);
+  --magenta: rgb(187, 154, 247);
+  --pink: rgb(217, 0, 105);
+  --list-indent: 2em;
+  --list-spacing: 0;
+  --list-marker-color: rgb(187, 154, 247);
+  --list-marker-color-hover: rgb(125, 207, 255);
+  --list-marker-color-collapsed: rgb(86, 95, 137);
+  --list-number-color: rgb(187, 154, 247);
+  --list-number-color-hover: rgb(125, 207, 255);
 
   --quartz-icon-color: currentColor;
 }
@@ -2442,7 +2476,7 @@ body {
   footer a {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(102, 63, 191);
-    cursor: pointer;
+    cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2460,11 +2494,11 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: var(--link-weight, 400);
     outline: rgb(102, 63, 191) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(102, 63, 191);
-    text-decoration-line: underline;
+    text-decoration-line: var(--link-external-decoration, underline);
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
     transform: none;
@@ -2498,7 +2532,7 @@ body {
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(20, 140, 80);
-    cursor: pointer;
+    cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2516,11 +2550,11 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: var(--link-weight, 400);
     outline: rgb(20, 140, 80) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(20, 140, 80);
-    text-decoration-line: underline;
+    text-decoration-line: var(--link-decoration, underline);
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
     transform: none;
@@ -2538,7 +2572,7 @@ body {
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(160, 30, 140);
-    cursor: pointer;
+    cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2556,12 +2590,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: var(--link-weight, 400);
     outline: rgb(160, 30, 140) none 0px;
     text-decoration: underline rgba(138, 92, 245, 0.3);
     text-decoration-color: rgb(160, 30, 140);
-    text-decoration-line: underline;
-    text-decoration-style: solid;
+    text-decoration-line: var(--link-decoration, underline);
+    text-decoration-style: var(--link-unresolved-decoration-style, solid);
     transition: opacity 0.14s ease-in-out;
     transform: none;
     user-select: text;
@@ -2953,7 +2987,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: var(--pill-weight, 400);
     margin-inline-start: 0px;
     border: 0px solid rgba(129, 71, 209, 0.15);
     border-top-left-radius: 28px;
@@ -3024,7 +3058,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: rgb(30, 35, 42);
-    font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
+    font-family: var(--font-monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
     padding: 2.1px 4.2px;
   }
 
@@ -3080,7 +3114,7 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    width: 16px;
+    width: var(--checkbox-size, 16px);
     transition: box-shadow 0.15s ease-in-out;
     position: relative;
     top: auto;
@@ -3413,25 +3447,12 @@ body {
   h2.page-title,
   h2.page-title a {
     color: rgb(200, 50, 70);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: var(--inline-title-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
     text-shadow: none;
   }
 
   li.depth-0 {
-    font-weight: 400;
+    font-weight: var(--nav-item-weight, 400);
   }
 
   ::-webkit-scrollbar {
@@ -3517,11 +3538,11 @@ body {
 
   .callout .callout-title > .callout-title-inner > p {
     color: rgb(30, 70, 160);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(30, 35, 42);
@@ -3567,11 +3588,11 @@ body {
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
     color: rgb(30, 70, 160);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="note"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(30, 35, 42);
@@ -3617,11 +3638,11 @@ body {
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
     color: rgb(30, 70, 160);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="abstract"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(30, 35, 42);
@@ -3667,11 +3688,11 @@ body {
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
     color: rgb(30, 70, 160);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="info"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(30, 35, 42);
@@ -3717,11 +3738,11 @@ body {
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
     color: rgb(30, 70, 160);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="todo"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(30, 35, 42);
@@ -3767,11 +3788,11 @@ body {
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
     color: rgb(30, 70, 160);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="tip"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(30, 35, 42);
@@ -3817,11 +3838,11 @@ body {
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
     color: rgb(30, 70, 160);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="success"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(30, 35, 42);
@@ -3867,11 +3888,11 @@ body {
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
     color: rgb(30, 70, 160);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="question"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(30, 35, 42);
@@ -3917,11 +3938,11 @@ body {
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
     color: rgb(30, 70, 160);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(30, 35, 42);
@@ -3967,11 +3988,11 @@ body {
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
     color: rgb(30, 70, 160);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="danger"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(30, 35, 42);
@@ -4017,11 +4038,11 @@ body {
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
     color: rgb(30, 70, 160);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="failure"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(30, 35, 42);
@@ -4067,11 +4088,11 @@ body {
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
     color: rgb(30, 70, 160);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="bug"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(30, 35, 42);
@@ -4117,11 +4138,11 @@ body {
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
     color: rgb(30, 70, 160);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="example"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(30, 35, 42);
@@ -4167,11 +4188,11 @@ body {
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
     color: rgb(30, 70, 160);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="quote"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(30, 35, 42);
@@ -4207,7 +4228,10 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 16px 0px 0px;
+    margin-top: var(--heading-spacing, 16px);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -4234,9 +4258,9 @@ body {
   th {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(30, 35, 42);
-    font-weight: 600;
+    font-weight: var(--table-header-weight, 600);
     text-align: start;
-    vertical-align: top;
+    vertical-align: var(--table-cell-vertical-alignment, top);
     border: 0px solid rgb(30, 35, 42);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -4254,7 +4278,7 @@ body {
     color: rgb(30, 35, 42);
     font-weight: 400;
     text-align: start;
-    vertical-align: top;
+    vertical-align: var(--table-cell-vertical-alignment, top);
     border: 0px solid rgb(30, 35, 42);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -4281,11 +4305,11 @@ body {
   }
 
   tbody tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--table-background, rgba(0, 0, 0, 0));
   }
 
   tbody tr:nth-child(odd) {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
   }
 
   img {
@@ -4428,7 +4452,7 @@ body {
   }
 
   .metadata {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
     color: rgb(75, 85, 95);
     font-family:
       ui-sans-serif,
@@ -4588,8 +4612,8 @@ body {
     background-color: rgba(102, 63, 191, 0.06);
     box-shadow: none;
     color: rgb(30, 35, 42);
-    font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
-    font-size: 14px;
+    font-family: var(--font-monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
+    font-size: var(--code-size, 14px);
     border: 0px rgb(30, 35, 42);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -4842,7 +4866,7 @@ body {
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
     color: rgba(30, 35, 42, 0.9);
-    cursor: default;
+    cursor: var(--cursor, default);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4857,13 +4881,13 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: var(--nav-item-weight, 400);
     text-decoration: rgb(34, 34, 34);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
     color: rgba(30, 35, 42, 0.9);
-    cursor: default;
+    cursor: var(--cursor, default);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4878,7 +4902,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: var(--nav-item-weight, 400);
     text-decoration: rgb(34, 34, 34);
   }
 
@@ -4897,12 +4921,12 @@ body {
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(30, 35, 42);
-    font-weight: 600;
+    font-weight: var(--table-header-weight, 600);
     border-color: rgb(30, 35, 42);
   }
 
   .bases-table tbody tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
   }
 
   .canvas-node {
@@ -4924,12 +4948,7 @@ body {
   .canvas-sidebar {
     background-color: rgb(248, 250, 252);
     border-color: rgb(30, 35, 42);
-    box-shadow:
-      rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset,
-      rgba(0, 0, 0, 0.05) 0px 2px 3px 0px,
-      rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px,
-      rgba(0, 0, 0, 0.04) 0px 1px 2px 0px,
-      rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    box-shadow: var(--input-shadow, rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 2px 3px 0px, rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
   }
 
   .canvas-node-group {
@@ -4939,7 +4958,7 @@ body {
   }
 
   .note-properties {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
     border-color: rgba(0, 0, 0, 0);
     border-radius: 0px;
   }
@@ -4970,7 +4989,7 @@ body {
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(75, 85, 95);
-    cursor: default;
+    cursor: var(--cursor, default);
     border-color: rgb(75, 85, 95);
     border-width: 0px;
     border-top-left-radius: 6px;
@@ -5107,7 +5126,7 @@ body {
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(75, 85, 95);
-    cursor: default;
+    cursor: var(--cursor, default);
     border-color: rgb(75, 85, 95);
     border-width: 0px;
     border-top-left-radius: 6px;
@@ -5173,7 +5192,7 @@ body {
   }
 
   .katex-display {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
     color: rgb(30, 35, 42);
     border-color: rgb(30, 35, 42);
     border-width: 0px;
@@ -5297,8 +5316,8 @@ body {
 
   h1.article-title {
     color: rgb(200, 50, 70);
-    font-size: 25.888px;
-    font-weight: 700;
+    font-size: var(--inline-title-size, 25.888px);
+    font-weight: var(--inline-title-weight, 700);
   }
 
   .stacked-page {
@@ -6570,7 +6589,7 @@ html[saved-theme="dark"] {
     footer a {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(187, 154, 247);
-      cursor: pointer;
+      cursor: var(--cursor-link, pointer);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -6588,11 +6607,11 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: var(--link-weight, 400);
       outline: rgb(187, 154, 247) none 0px;
       text-decoration: underline;
       text-decoration-color: rgb(187, 154, 247);
-      text-decoration-line: underline;
+      text-decoration-line: var(--link-external-decoration, underline);
       text-decoration-style: solid;
       transition: opacity 0.14s ease-in-out;
       transform: none;
@@ -6626,7 +6645,7 @@ html[saved-theme="dark"] {
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(158, 206, 106);
-      cursor: pointer;
+      cursor: var(--cursor-link, pointer);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -6644,11 +6663,11 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: var(--link-weight, 400);
       outline: rgb(158, 206, 106) none 0px;
       text-decoration: underline;
       text-decoration-color: rgb(158, 206, 106);
-      text-decoration-line: underline;
+      text-decoration-line: var(--link-decoration, underline);
       text-decoration-style: solid;
       transition: opacity 0.14s ease-in-out;
       transform: none;
@@ -6666,7 +6685,7 @@ html[saved-theme="dark"] {
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(187, 154, 247);
-      cursor: pointer;
+      cursor: var(--cursor-link, pointer);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -6684,12 +6703,12 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: var(--link-weight, 400);
       outline: rgb(187, 154, 247) none 0px;
       text-decoration: underline rgba(138, 92, 245, 0.3);
       text-decoration-color: rgb(187, 154, 247);
-      text-decoration-line: underline;
-      text-decoration-style: solid;
+      text-decoration-line: var(--link-decoration, underline);
+      text-decoration-style: var(--link-unresolved-decoration-style, solid);
       transition: opacity 0.14s ease-in-out;
       transform: none;
       user-select: text;
@@ -7081,7 +7100,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: var(--pill-weight, 400);
       margin-inline-start: 0px;
       border: 0px solid rgba(128, 208, 255, 0.15);
       border-top-left-radius: 28px;
@@ -7152,7 +7171,7 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       color: rgb(180, 180, 180);
-      font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
+      font-family: var(--font-monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
       padding: 2.1px 4.2px;
     }
 
@@ -7208,7 +7227,7 @@ html[saved-theme="dark"] {
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      width: 16px;
+      width: var(--checkbox-size, 16px);
       transition: box-shadow 0.15s ease-in-out;
       position: relative;
       top: auto;
@@ -7541,25 +7560,12 @@ html[saved-theme="dark"] {
     h2.page-title,
     h2.page-title a {
       color: rgb(255, 117, 127);
-      font-family:
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
+      font-family: var(--inline-title-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
       text-shadow: none;
     }
 
     li.depth-0 {
-      font-weight: 400;
+      font-weight: var(--nav-item-weight, 400);
     }
 
     ::-webkit-scrollbar {
@@ -7645,11 +7651,11 @@ html[saved-theme="dark"] {
 
     .callout .callout-title > .callout-title-inner > p {
       color: rgb(122, 162, 247);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(220, 220, 220);
@@ -7695,11 +7701,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
       color: rgb(122, 162, 247);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="note"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(220, 220, 220);
@@ -7745,11 +7751,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
       color: rgb(122, 162, 247);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="abstract"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(220, 220, 220);
@@ -7795,11 +7801,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
       color: rgb(122, 162, 247);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="info"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(220, 220, 220);
@@ -7845,11 +7851,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
       color: rgb(122, 162, 247);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="todo"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(220, 220, 220);
@@ -7895,11 +7901,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
       color: rgb(122, 162, 247);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="tip"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(220, 220, 220);
@@ -7945,11 +7951,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
       color: rgb(122, 162, 247);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="success"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(220, 220, 220);
@@ -7995,11 +8001,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
       color: rgb(122, 162, 247);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="question"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(220, 220, 220);
@@ -8045,11 +8051,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
       color: rgb(122, 162, 247);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="warning"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(220, 220, 220);
@@ -8095,11 +8101,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
       color: rgb(122, 162, 247);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="danger"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(220, 220, 220);
@@ -8145,11 +8151,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
       color: rgb(122, 162, 247);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="failure"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(220, 220, 220);
@@ -8195,11 +8201,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
       color: rgb(122, 162, 247);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="bug"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(220, 220, 220);
@@ -8245,11 +8251,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
       color: rgb(122, 162, 247);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="example"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(220, 220, 220);
@@ -8295,11 +8301,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
       color: rgb(122, 162, 247);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="quote"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(220, 220, 220);
@@ -8335,7 +8341,10 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin: 16px 0px 0px;
+      margin-top: var(--heading-spacing, 16px);
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
       margin-inline-end: 0px;
@@ -8362,9 +8371,9 @@ html[saved-theme="dark"] {
     th {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(220, 220, 220);
-      font-weight: 600;
+      font-weight: var(--table-header-weight, 600);
       text-align: start;
-      vertical-align: top;
+      vertical-align: var(--table-cell-vertical-alignment, top);
       border: 0px solid rgb(220, 220, 220);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8382,7 +8391,7 @@ html[saved-theme="dark"] {
       color: rgb(220, 220, 220);
       font-weight: 400;
       text-align: start;
-      vertical-align: top;
+      vertical-align: var(--table-cell-vertical-alignment, top);
       border: 0px solid rgb(220, 220, 220);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8409,11 +8418,11 @@ html[saved-theme="dark"] {
     }
 
     tbody tr:nth-child(even) {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--table-background, rgba(0, 0, 0, 0));
     }
 
     tbody tr:nth-child(odd) {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
     }
 
     img {
@@ -8556,7 +8565,7 @@ html[saved-theme="dark"] {
     }
 
     .metadata {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--metadata-background, rgba(0, 0, 0, 0));
       color: rgb(180, 180, 180);
       font-family:
         ui-sans-serif,
@@ -8716,8 +8725,8 @@ html[saved-theme="dark"] {
       background-color: rgba(187, 154, 247, 0.05);
       box-shadow: none;
       color: rgb(180, 180, 180);
-      font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
-      font-size: 14px;
+      font-family: var(--font-monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
+      font-size: var(--code-size, 14px);
       border: 0px rgb(180, 180, 180);
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
@@ -8970,7 +8979,7 @@ html[saved-theme="dark"] {
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
       color: rgba(220, 220, 220, 0.9);
-      cursor: default;
+      cursor: var(--cursor, default);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -8985,13 +8994,13 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: var(--nav-item-weight, 400);
       text-decoration: rgb(218, 218, 218);
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
       color: rgba(220, 220, 220, 0.9);
-      cursor: default;
+      cursor: var(--cursor, default);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -9006,7 +9015,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: var(--nav-item-weight, 400);
       text-decoration: rgb(218, 218, 218);
     }
 
@@ -9025,12 +9034,12 @@ html[saved-theme="dark"] {
     .bases-table thead th {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(220, 220, 220);
-      font-weight: 600;
+      font-weight: var(--table-header-weight, 600);
       border-color: rgb(220, 220, 220);
     }
 
     .bases-table tbody tr:nth-child(even) {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
     }
 
     .canvas-node {
@@ -9052,12 +9061,7 @@ html[saved-theme="dark"] {
     .canvas-sidebar {
       background-color: rgb(2, 2, 2);
       border-color: rgb(220, 220, 220);
-      box-shadow:
-        rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset,
-        rgba(0, 0, 0, 0.15) 0px 2px 4px 0px,
-        rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px,
-        rgba(0, 0, 0, 0.2) 0px 1px 2px 0px,
-        rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+      box-shadow: var(--input-shadow, rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
     }
 
     .canvas-node-group {
@@ -9067,7 +9071,7 @@ html[saved-theme="dark"] {
     }
 
     .note-properties {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--metadata-background, rgba(0, 0, 0, 0));
       border-color: rgba(0, 0, 0, 0);
       border-radius: 0px;
     }
@@ -9098,7 +9102,7 @@ html[saved-theme="dark"] {
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(180, 180, 180);
-      cursor: default;
+      cursor: var(--cursor, default);
       border-color: rgb(180, 180, 180);
       border-width: 0px;
       border-top-left-radius: 6px;
@@ -9235,7 +9239,7 @@ html[saved-theme="dark"] {
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(180, 180, 180);
-      cursor: default;
+      cursor: var(--cursor, default);
       border-color: rgb(180, 180, 180);
       border-width: 0px;
       border-top-left-radius: 6px;
@@ -9301,7 +9305,7 @@ html[saved-theme="dark"] {
     }
 
     .katex-display {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
       color: rgb(220, 220, 220);
       border-color: rgb(220, 220, 220);
       border-width: 0px;
@@ -9425,8 +9429,8 @@ html[saved-theme="dark"] {
 
     h1.article-title {
       color: rgb(255, 117, 127);
-      font-size: 25.888px;
-      font-weight: 700;
+      font-size: var(--inline-title-size, 25.888px);
+      font-weight: var(--inline-title-weight, 700);
     }
 
     .stacked-page {

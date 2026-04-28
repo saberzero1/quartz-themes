@@ -6,36 +6,549 @@
     format("woff");
 }
 body.theme-light {
+  --background-modifier-active-hover: hsla(181, 100%, 21%, 0.1) !important;
+  --background-modifier-border: #dbe8e8 !important;
+  --background-modifier-border-focus: #5fb9bb !important;
+  --background-modifier-border-hover: #dbe8e8 !important;
+  --background-modifier-error: var(--color-red, #e93147) !important;
+  --background-modifier-error-hover: var(--color-red, #e93147) !important;
+  --background-modifier-error-rgb: var(--color-red-rgb, 233, 49, 71) !important;
+  --background-modifier-form-field: #dbe8e8 !important;
+  --background-modifier-form-field-hover: #dbe8e8 !important;
+  --background-modifier-hover: hsla(181, 17%, 50%, 0.15) !important;
+  --background-modifier-success: var(--color-green, #08b94e) !important;
+  --background-modifier-success-rgb: var(
+    --color-green-rgb,
+    8,
+    185,
+    78
+  ) !important;
+  --background-primary: #fdfcfa !important;
+  --background-primary-alt: #dbe8e8 !important;
+  --background-secondary: #eef5f3 !important;
+  --background-secondary-alt: #eef5f3 !important;
+  --bases-cards-background: #fdfcfa !important;
+  --bases-cards-border-width: 2px !important;
+  --bases-cards-corner-shape: var(--corner-shape, round) !important;
+  --bases-cards-cover-background: #dbe8e8 !important;
+  --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-cards-radius: 1.1em !important;
+  --bases-cards-shadow: 0 0 0 1px #dbe8e8 !important;
+  --bases-cards-shadow-hover: 0 0 0 1px #dbe8e8 !important;
   --bases-embed-border-color: #dbe8e8 !important;
+  --bases-embed-border-radius: 0.75em !important;
+  --bases-group-heading-property-color: #3f4949 !important;
+  --bases-group-heading-property-size: var(--font-ui-smaller, 12px) !important;
+  --bases-group-heading-property-weight: var(--font-normal, 400) !important;
+  --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
+  --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
+  --bases-header-border-width: 0 0 2px 0 !important;
   --bases-table-border-color: #dbe8e8 !important;
+  --bases-table-cell-background-active: #fdfcfa !important;
+  --bases-table-cell-background-disabled: #dbe8e8 !important;
+  --bases-table-cell-background-selected: hsla(181, 100%, 21%, 0.1) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #5fb9bb !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(180, 101%, 22.575%) !important;
+  --bases-table-column-border-width: 2px !important;
+  --bases-table-container-border-radius: 0.75em !important;
+  --bases-table-container-border-width: 2px !important;
+  --bases-table-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-table-group-background: #dbe8e8 !important;
   --bases-table-header-background: #fdfcfa !important;
   --bases-table-header-background-hover: hsla(181, 17%, 50%, 0.15) !important;
-  --focus-ring-color: #0df !important;
-  --tab-container-background: #eef5f3 !important;
-  --table-border-color: #dbe8e8 !important;
-  --text-accent: hsl(181, 100%, 21%) !important;
-  --text-faint: #6f7979 !important;
-  --text-normal: #191c1c !important;
-  --titlebar-background: #eef5f3 !important;
-  --input-height: 30px !important;
+  --bases-table-header-color: #3f4949 !important;
+  --bases-table-header-sort-mask: linear-gradient(
+    to left,
+    transparent var(--size-4-6),
+    black var(--size-4-6)
+  ) !important;
+  --bases-table-header-weight: var(--font-weight, 400) !important;
+  --bases-table-row-background-hover: var(
+    --table-row-background-hover,
+    transparent
+  ) !important;
+  --bases-table-row-border-width: 2px !important;
+  --bases-table-summary-background: #fdfcfa !important;
+  --bases-table-summary-background-hover: hsla(181, 17%, 50%, 0.15) !important;
+  --blockquote-border-color: hsl(180, 101%, 22.575%) !important;
+  --blur-background: color-mix(in srgb, #fdfcfa 65%, transparent)
+    linear-gradient(#fdfcfa, color-mix(in srgb, #fdfcfa 65%, transparent)) !important;
+  --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation))
+    brightness(var(--blur-brightness)) !important;
+  --blur-m: blur(var(--blur-radius-m)) saturate(var(--blur-saturation))
+    brightness(var(--blur-brightness)) !important;
+  --blur-s: blur(var(--blur-radius-s)) saturate(var(--blur-saturation))
+    brightness(var(--blur-brightness)) !important;
+  --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
+  --button-corner-shape: var(--corner-shape, round) !important;
+  --button-radius: 20px !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode, darken);
+  --callout-bug: var(--color-red-rgb, 233, 49, 71);
+  --callout-default: var(--color-blue-rgb, 8, 109, 221);
+  --callout-error: var(--color-red-rgb, 233, 49, 71);
+  --callout-example: var(--color-purple-rgb, 120, 82, 238);
+  --callout-fail: var(--color-red-rgb, 233, 49, 71);
+  --callout-important: var(--color-cyan-rgb, 0, 191, 188);
+  --callout-info: var(--color-blue-rgb, 8, 109, 221);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6, 12px 12px 12px 24px);
+  --callout-question: var(--color-orange-rgb, 236, 117, 0);
+  --callout-radius: 0.75em;
+  --callout-success: var(--color-green-rgb, 8, 185, 78);
+  --callout-summary: var(--color-cyan-rgb, 0, 191, 188);
+  --callout-tip: var(--color-cyan-rgb, 0, 191, 188);
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb, 8, 109, 221);
+  --callout-warning: var(--color-orange-rgb, 236, 117, 0);
+  --canvas-background: #fdfcfa !important;
+  --canvas-card-label-color: #6f7979 !important;
+  --canvas-color-1: var(--color-red-rgb, 233, 49, 71) !important;
+  --canvas-color-2: var(--color-orange-rgb, 236, 117, 0) !important;
+  --canvas-color-3: var(--color-yellow-rgb, 224, 172, 0) !important;
+  --canvas-color-4: var(--color-green-rgb, 8, 185, 78) !important;
+  --canvas-color-5: var(--color-cyan-rgb, 0, 191, 188) !important;
+  --canvas-color-6: var(--color-purple-rgb, 120, 82, 238) !important;
+  --canvas-controls-icon-size: var(--icon-s, 16px) !important;
+  --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
+  --canvas-controls-radius: 0.75em !important;
+  --canvas-dot-pattern: #dbe8e8 !important;
+  --caret-color: #191c1c !important;
+  --checkbox-border-color: #6f7979 !important;
+  --checkbox-border-color-hover: #3f4949 !important;
+  --checkbox-color: hsl(180, 101%, 22.575%) !important;
+  --checkbox-color-hover: #4a6363 !important;
+  --checkbox-marker-color: #fdfcfa !important;
+  --checkbox-radius: 0.2rem !important;
+  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checklist-done-color: var(--text-muted, #5c5c5c) !important;
+  --clickable-icon-radius: 0.75em !important;
+  --code-background: #dbe8e8 !important;
+  --code-border-color: #dbe8e8 !important;
+  --code-bracket-background: hsla(181, 17%, 50%, 0.15) !important;
+  --code-comment: #6f7979 !important;
+  --code-function: var(--color-yellow, #e0ac00) !important;
+  --code-important: var(--color-orange, #ec7500) !important;
+  --code-keyword: var(--color-pink, #d53984) !important;
+  --code-normal: #191c1c !important;
+  --code-operator: var(--color-red, #e93147) !important;
+  --code-property: var(--color-cyan, #00bfbc) !important;
+  --code-punctuation: #3f4949 !important;
+  --code-radius: 0.75em !important;
+  --code-size: var(--font-smaller, 0.875em) !important;
+  --code-string: var(--color-green, #08b94e) !important;
+  --code-tag: var(--color-red, #e93147) !important;
+  --code-value: var(--color-purple, #7852ee) !important;
+  --collapse-icon-color: #6f7979 !important;
+  --collapse-icon-color-collapsed: hsl(181, 100%, 21%) !important;
+  --color-accent: hsl(181, 100%, 21%) !important;
+  --color-accent-1: hsl(180, 101%, 22.575%) !important;
+  --color-accent-2: #4a6363 !important;
+  --color-accent-hsl: 181, 100%, 21% !important;
+  --divider-color: transparent !important;
+  --divider-color-hover: hsl(180, 101%, 22.575%) !important;
+  --divider-vertical-height: calc(100% - var(--header-height)) !important;
+  --dropdown-background: #eef5f3 !important;
+  --dropdown-background-hover: #dbe8e8 !important;
+  --dropdown-background-position:
+    var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
+  --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
+  --dropdown-padding: 0 var(--dropdown-padding-end) 0
+    var(--dropdown-padding-start) !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px #dbe8e8, inset 0 0 0 1px #dbe8e8 !important;
+  --embed-border-start: 2px solid hsl(180, 101%, 22.575%) !important;
+  --embed-padding: 0 0 0 var(--size-4-6) !important;
+  --file-header-background: #fdfcfa !important;
+  --file-header-background-focused: #fdfcfa !important;
+  --file-header-border: 2px solid transparent !important;
+  --file-header-font:
+    "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R",
+    "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font-size: var(--font-ui-small, 13px) !important;
+  --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
+  --file-margins-x: var(--size-4-8, 32px) !important;
+  --file-margins-y: var(--size-4-8, 32px) !important;
+  --flair-background: #eef5f3 !important;
+  --flair-color: #191c1c !important;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
+  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
+  --font-interface:
+    "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R",
+    "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-mermaid: var(
+    --font-text,
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  ) !important;
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
+    var(--font-monospace-default) !important;
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial" !important;
+  --font-text:
+    var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
+  --font-weight: var(--font-normal, 400) !important;
+  --footnote-divider-color: #dbe8e8 !important;
+  --footnote-divider-color-active: var(
+    --metadata-divider-color-focus,
+    transparent
+  ) !important;
+  --footnote-divider-width: 2px !important;
+  --footnote-gap: var(--size-4-1, 4px) !important;
+  --footnote-id-color: #3f4949 !important;
+  --footnote-id-color-no-occurrences: #6f7979 !important;
+  --footnote-input-background: var(
+    --metadata-input-background,
+    transparent
+  ) !important;
+  --footnote-input-background-active: hsla(181, 17%, 50%, 0.15) !important;
+  --footnote-line-height: var(--line-height-normal, 1.5) !important;
+  --footnote-padding-block: var(--size-2-3, 6px) !important;
+  --footnote-padding-inline: var(--size-2-3, 6px) !important;
+  --footnote-radius: 0.75em !important;
+  --footnote-size: var(--font-smaller, 0.875em) !important;
+  --graph-line: #dbe8e8 !important;
+  --graph-node: hsl(181, 86%, 28%) !important;
+  --graph-node-attachment: var(--color-yellow, #e0ac00) !important;
+  --graph-node-focused: #5fb9bb !important;
+  --graph-node-tag: #00bfbc !important;
+  --graph-node-unresolved: #4c5f7c !important;
+  --graph-text: #191c1c !important;
+  --h5-line-height: var(--line-height-normal, 1.5) !important;
+  --h6-line-height: var(--line-height-normal, 1.5) !important;
+  --heading-formatting: #6f7979 !important;
+  --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
+  --hr-color: #dbe8e8 !important;
+  --icon-color: #3f4949 !important;
+  --icon-color-active: hsl(181, 100%, 21%) !important;
+  --icon-color-focused: #191c1c !important;
+  --icon-color-hover: #3f4949 !important;
+  --icon-size: var(--icon-m, 18px) !important;
+  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12) !important;
+  --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3) !important;
+  --indentation-guide-width: 2px !important;
+  --indentation-guide-width-active: 2px !important;
+  --inline-title-line-height: 1.3em !important;
+  --inline-title-size: 2.5em !important;
+  --inline-title-style: var(--h1-style, normal) !important;
+  --inline-title-variant: var(--h1-variant, normal) !important;
+  --inline-title-weight: 500 !important;
   --input-border-width: 0 !important;
-  --input-border-width-focus: 2px !important;
-  --input-radius: 20px !important;
-  --background-modifier-border: #dbe8e8 !important;
-  --background-modifier-form-field: #dbe8e8 !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
+  --input-corner-shape: var(--corner-shape, round) !important;
+  --input-date-separator: #6f7979 !important;
+  --input-font-weight: var(--font-normal, 400) !important;
+  --input-icon-inset: var(--size-4-1, 4px) !important;
+  --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --input-placeholder-color: #6f7979 !important;
+  --interactive-accent: hsl(180, 101%, 22.575%) !important;
+  --interactive-accent-hover: #4a6363 !important;
+  --interactive-accent-hsl: 181, 100%, 21% !important;
+  --interactive-hover: #dbe8e8 !important;
+  --interactive-normal: #eef5f3 !important;
+  --link-color: #00696b !important;
+  --link-color-hover: #00696b !important;
+  --link-external-color: #4c5f7c !important;
+  --link-external-color-hover: #4a6363 !important;
+  --link-unresolved-color: hsl(181, 100%, 21%) !important;
+  --link-unresolved-decoration-color: hsla(181, 100%, 21%, 0.3) !important;
+  --link-weight: var(--font-weight, 400) !important;
+  --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
+  --list-marker-color: #6f7979 !important;
+  --list-marker-color-collapsed: hsl(181, 100%, 21%) !important;
+  --list-marker-color-hover: #3f4949 !important;
+  --menu-background: #eef5f3 !important;
+  --menu-border-color: #dbe8e8 !important;
+  --menu-border-width: 2px !important;
+  --menu-corner-shape: var(--corner-shape, round) !important;
+  --menu-padding: var(--size-2-3, 6px) !important;
+  --menu-radius: 1.1em !important;
+  --menu-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+  --metadata-border-color: #dbe8e8 !important;
+  --metadata-divider-color: #dbe8e8 !important;
+  --metadata-input-background-active: hsla(181, 17%, 50%, 0.15) !important;
+  --metadata-input-font:
+    "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R",
+    "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
+  --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --metadata-input-text-color: #191c1c !important;
+  --metadata-label-background-active: hsla(181, 17%, 50%, 0.15) !important;
+  --metadata-label-font:
+    "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R",
+    "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-label-text-color: #3f4949 !important;
+  --metadata-label-text-color-hover: #3f4949 !important;
+  --metadata-padding: 1em !important;
+  --metadata-property-background-active: hsla(181, 17%, 50%, 0.15) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #5fb9bb !important;
+  --metadata-property-box-shadow-hover: 0 0 0 2px #dbe8e8 !important;
+  --metadata-property-corner-shape: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape-focus: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
+  --modal-background: #fdfcfa !important;
+  --modal-border-color: #dbe8e8 !important;
+  --modal-border-width: 2px !important;
+  --modal-radius: 20px !important;
+  --nav-collapse-icon-color: #6f7979 !important;
+  --nav-collapse-icon-color-collapsed: #6f7979 !important;
+  --nav-heading-color: #191c1c !important;
+  --nav-heading-color-collapsed: #6f7979 !important;
+  --nav-heading-color-collapsed-hover: #3f4949 !important;
+  --nav-heading-color-hover: #191c1c !important;
+  --nav-heading-weight: var(--font-medium, 500) !important;
+  --nav-heading-weight-hover: var(--font-medium, 500) !important;
+  --nav-indentation-guide-color: hsl(180, 101%, 22.575%) !important;
+  --nav-indentation-guide-width: 2px !important;
+  --nav-item-background-active: hsla(181, 17%, 50%, 0.15) !important;
+  --nav-item-background-hover: hsla(181, 17%, 50%, 0.15) !important;
+  --nav-item-background-selected: hsla(181, 100%, 21%, 0.15) !important;
+  --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
+  --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
+  --nav-item-color: #3f4949 !important;
+  --nav-item-color-active: #191c1c !important;
+  --nav-item-color-highlighted: hsl(181, 100%, 21%) !important;
+  --nav-item-color-hover: #191c1c !important;
+  --nav-item-color-selected: #191c1c !important;
+  --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6, 4px 8px 4px 24px) !important;
+  --nav-item-parent-padding: var(
+    --nav-item-padding,
+    4px 8px 4px 24px
+  ) !important;
+  --nav-item-radius: 0.75em !important;
+  --nav-item-size: var(--font-ui-small, 13px) !important;
+  --nav-tag-color: #6f7979 !important;
+  --nav-tag-color-active: #3f4949 !important;
+  --nav-tag-color-hover: #3f4949 !important;
+  --nav-tag-radius: 0.75em !important;
+  --nav-tag-weight: var(--font-semibold, 600) !important;
+  --pdf-background: #fdfcfa !important;
+  --pdf-page-background: #fdfcfa !important;
+  --pdf-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-sidebar-background: #fdfcfa !important;
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pill-border-color: #dbe8e8 !important;
   --pill-border-color-hover: #dbe8e8 !important;
   --pill-border-width: 2px !important;
   --pill-color: #3f4949 !important;
   --pill-color-hover: #191c1c !important;
   --pill-color-remove: #6f7979 !important;
+  --pill-color-remove-hover: hsl(181, 100%, 21%) !important;
+  --popover-font-size: var(--font-text-size, 16px) !important;
+  --prompt-background: #fdfcfa !important;
+  --prompt-border-color: #dbe8e8 !important;
+  --prompt-border-width: 2px !important;
+  --raised-background: color-mix(in srgb, #fdfcfa 65%, transparent)
+    linear-gradient(#fdfcfa, color-mix(in srgb, #fdfcfa 65%, transparent)) !important;
+  --raised-blur: var(
+    --blur-s,
+    blur(6px) saturate(1.5) brightness(1.15)
+  ) !important;
+  --ribbon-background: #eef5f3 !important;
+  --ribbon-background-collapsed: #fdfcfa !important;
+  --ribbon-padding: var(--size-4-2) var(--size-4-1)
+    var(--size-4-3, 8px 4px 12px) !important;
+  --scrollbar-active-thumb-bg: #cce8e8 !important;
+  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
+  --scrollbar-radius: 20px !important;
+  --scrollbar-thumb-bg: #dbe8e8 !important;
+  --search-clear-button-color: #3f4949 !important;
+  --search-icon-color: #3f4949 !important;
+  --search-result-background: #fdfcfa !important;
+  --setting-group-heading-color: #191c1c !important;
+  --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
+  --setting-group-heading-weight: var(--font-semibold, 600) !important;
+  --setting-items-background: #dbe8e8 !important;
+  --setting-items-border-color: #dbe8e8 !important;
+  --setting-items-padding: var(--size-4-5, 20px) !important;
+  --setting-items-radius: 20px !important;
+  --shiki-active-tab-border-color: #3f4949 !important;
+  --shiki-code-background: #dbe8e8 !important;
+  --shiki-code-block-border-radius: 0.75em !important;
+  --shiki-code-block-spacing: var(--p-spacing, 1rem) !important;
+  --shiki-code-comment: #6f7979 !important;
+  --shiki-code-function: var(--color-green, #08b94e) !important;
+  --shiki-code-important: var(--color-orange, #ec7500) !important;
+  --shiki-code-keyword: var(--color-pink, #d53984) !important;
+  --shiki-code-normal: #3f4949 !important;
+  --shiki-code-property: var(--color-cyan, #00bfbc) !important;
+  --shiki-code-punctuation: #3f4949 !important;
+  --shiki-code-string: var(--color-yellow, #e0ac00) !important;
+  --shiki-code-value: var(--color-purple, #7852ee) !important;
+  --shiki-gutter-border-color: #dbe8e8 !important;
+  --shiki-gutter-border-width: 2px !important;
+  --shiki-gutter-text-color: #6f7979 !important;
+  --shiki-gutter-text-color-highlight: #3f4949 !important;
+  --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
+  --shiki-highlight-green-background: rgba(
+    var(--color-green-rgb),
+    0.1
+  ) !important;
+  --shiki-highlight-neutral: #3f4949 !important;
+  --shiki-highlight-neutral-background: rgba(
+    var(--mono-rgb-100),
+    0.05
+  ) !important;
+  --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
+  --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
+  --shiki-terminal-dots-color: #6f7979 !important;
+  --shiki-tooltip-background: var(
+    --background-modifier-message,
+    rgba(0, 0, 0, 0.9)
+  ) !important;
+  --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9) !important;
+  --slider-thumb-border-color: #dbe8e8 !important;
+  --slider-thumb-border-width: 2px !important;
+  --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
+  --slider-track-background: #dbe8e8 !important;
+  --status-bar-background: #eef5f3 !important;
+  --status-bar-border-color: transparent !important;
+  --status-bar-border-width: 2px 0 0 2px !important;
+  --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
+  --status-bar-radius: 1.1em 0 0 0 !important;
+  --status-bar-text-color: #3f4949 !important;
+  --suggestion-background: #fdfcfa !important;
+  --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
+  --sync-avatar-color-1: var(--color-red, #e93147) !important;
+  --sync-avatar-color-2: var(--color-orange, #ec7500) !important;
+  --sync-avatar-color-3: var(--color-yellow, #e0ac00) !important;
+  --sync-avatar-color-4: var(--color-green, #08b94e) !important;
+  --sync-avatar-color-5: var(--color-cyan, #00bfbc) !important;
+  --sync-avatar-color-6: var(--color-blue, #086ddd) !important;
+  --sync-avatar-color-7: var(--color-purple, #7852ee) !important;
+  --sync-avatar-color-8: var(--color-pink, #d53984) !important;
+  --tab-background-active: transparent !important;
+  --tab-container-background: #eef5f3 !important;
+  --tab-divider-color: transparent !important;
+  --tab-font-size: var(--font-ui-small, 13px) !important;
+  --tab-outline-color: transparent !important;
+  --tab-radius: 0.75em !important;
+  --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
+  --tab-stacked-header-width: var(--header-height, 40px) !important;
+  --tab-switcher-background: #eef5f3 !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    #eef5f3,
+    transparent
+  ) !important;
+  --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(181, 100%, 21%) !important;
+  --tab-text-color: #6f7979 !important;
+  --tab-text-color-active: #3f4949 !important;
+  --tab-text-color-focused: #3f4949 !important;
+  --tab-text-color-focused-active: #3f4949 !important;
+  --tab-text-color-focused-active-current: #191c1c !important;
+  --tab-text-color-focused-highlighted: hsl(181, 100%, 21%) !important;
+  --table-add-button-border-color: #dbe8e8 !important;
+  --table-add-button-border-width: var(--table-border-width, 1px) !important;
+  --table-border-color: #dbe8e8 !important;
+  --table-column-alt-background: var(
+    --table-background,
+    transparent
+  ) !important;
+  --table-column-first-border-width: var(--table-border-width, 1px) !important;
+  --table-column-last-border-width: var(--table-border-width, 1px) !important;
+  --table-drag-handle-background-active: hsl(180, 101%, 22.575%) !important;
+  --table-drag-handle-color: #6f7979 !important;
+  --table-drag-handle-color-active: var(--text-on-accent, white) !important;
+  --table-header-background: #4a6363 !important;
+  --table-header-border-color: #dbe8e8 !important;
+  --table-header-border-width: var(--table-border-width, 1px) !important;
+  --table-header-color: #191c1c !important;
+  --table-header-size: 0.875em !important;
+  --table-header-weight: calc(
+    var(--font-weight) + var(--bold-modifier)
+  ) !important;
+  --table-line-height: var(--line-height-tight, 1.3) !important;
+  --table-row-alt-background: var(--table-background, transparent) !important;
+  --table-row-alt-background-hover: var(
+    --table-background,
+    transparent
+  ) !important;
+  --table-row-background-hover: var(--table-background, transparent) !important;
+  --table-row-last-border-width: var(--table-border-width, 1px) !important;
+  --table-selection: hsla(181, 100%, 21%, 0.1) !important;
+  --table-selection-blend-mode: var(
+    --highlight-mix-blend-mode,
+    darken
+  ) !important;
+  --table-selection-border-color: hsl(180, 101%, 22.575%) !important;
+  --table-text-size: var(--font-text-size, 16px) !important;
+  --tag-background: #d4e3ff !important;
+  --tag-background-hover: #d4e3ff !important;
+  --tag-border-color: hsla(181, 100%, 21%, 0.15) !important;
+  --tag-border-color-hover: hsla(181, 100%, 21%, 0.15) !important;
+  --tag-color: #061c36 !important;
+  --tag-color-hover: #061c36 !important;
+  --tag-size: var(--font-smaller, 0.875em) !important;
+  --text-accent: hsl(181, 100%, 21%) !important;
+  --text-accent-hover: #4a6363 !important;
+  --text-error: var(--color-red, #e93147) !important;
+  --text-faint: #6f7979 !important;
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4) !important;
+  --text-muted: #3f4949 !important;
+  --text-normal: #191c1c !important;
+  --text-selection: hsla(181, 100%, 21%, 0.2) !important;
+  --text-success: var(--color-green, #08b94e) !important;
+  --text-warning: var(--color-orange, #ec7500) !important;
+  --titlebar-background: #eef5f3 !important;
+  --titlebar-background-focused: #eef5f3 !important;
+  --titlebar-border-color: #dbe8e8 !important;
+  --titlebar-text-color: #3f4949 !important;
+  --titlebar-text-color-focused: #191c1c !important;
+  --titlebar-text-weight: var(--font-bold, 700) !important;
+  --touch-radius-l: var(--touch-size-l, 52px) !important;
+  --touch-radius-m: var(--touch-size-m, 44px) !important;
+  --touch-radius-s: var(--touch-size-s, 40px) !important;
+  --touch-radius-xl: var(--touch-size-xl, 60px) !important;
+  --touch-radius-xs: var(--touch-size-xs, 30px) !important;
+  --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
+  --traffic-lights-offset-x: var(--header-height, 40px) !important;
+  --traffic-lights-offset-y: var(--header-height, 40px) !important;
+  --vault-profile-color: #191c1c !important;
+  --vault-profile-color-hover: #191c1c !important;
+  --vault-profile-font-size: var(--font-ui-small, 13px) !important;
+  --vault-profile-font-weight: var(--font-medium, 500) !important;
+  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
+  --input-height: 30px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 20px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
   --pill-focus-left-adjust: -4px !important;
   --pill-focus-width: calc(100% + 6px) !important;
-  --bases-header-border-width: 0 0 2px 0 !important;
   --accent-h: 181 !important;
   --accent-l: 21% !important;
   --accent-s: 100% !important;
@@ -48,169 +561,50 @@ body.theme-light {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: hsla(181, 100%, 21%, 0.1) !important;
-  --background-modifier-border-focus: #5fb9bb !important;
-  --background-modifier-border-hover: #dbe8e8 !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
   --background-modifier-cover: rgba(220, 220, 220, 0.4) !important;
-  --background-modifier-error: #e93147 !important;
-  --background-modifier-error-hover: #e93147 !important;
-  --background-modifier-error-rgb: 233, 49, 71 !important;
-  --background-modifier-form-field-hover: #dbe8e8 !important;
-  --background-modifier-hover: hsla(181, 17%, 50%, 0.15) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
-  --background-modifier-success: #08b94e !important;
-  --background-modifier-success-rgb: 8, 185, 78 !important;
-  --background-primary: #fdfcfa !important;
-  --background-primary-alt: #dbe8e8 !important;
-  --background-secondary: #eef5f3 !important;
-  --background-secondary-alt: #eef5f3 !important;
-  --bases-cards-background: #fdfcfa !important;
-  --bases-cards-border-width: 2px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-corner-shape: round !important;
-  --bases-cards-cover-background: #dbe8e8 !important;
-  --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
-  --bases-cards-radius: 1.1em !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px #dbe8e8 !important;
-  --bases-cards-shadow-hover: 0 0 0 1px #dbe8e8 !important;
-  --bases-embed-border-radius: 0.75em !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: #3f4949 !important;
   --bases-group-heading-property-display: block !important;
-  --bases-group-heading-property-size: 12px !important;
-  --bases-group-heading-property-weight: 400 !important;
-  --bases-group-heading-value-size: 0.875em !important;
-  --bases-group-heading-value-weight: 600 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-cell-background-active: #fdfcfa !important;
-  --bases-table-cell-background-disabled: #dbe8e8 !important;
-  --bases-table-cell-background-selected: hsla(181, 100%, 21%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px #5fb9bb !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(180, 101%, 22.575%) !important;
-  --bases-table-column-border-width: 2px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 0.75em !important;
-  --bases-table-container-border-width: 2px !important;
-  --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #dbe8e8 !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-color: #3f4949 !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
-  --bases-table-header-weight: 400 !important;
-  --bases-table-row-background-hover: transparent !important;
-  --bases-table-row-border-width: 2px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: #fdfcfa !important;
-  --bases-table-summary-background-hover: hsla(181, 17%, 50%, 0.15) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: #cce8e8 !important;
-  --blockquote-border-color: hsl(180, 101%, 22.575%) !important;
   --blockquote-border-thickness: 0px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, #fdfcfa 65%, transparent)
-    linear-gradient(#fdfcfa, color-mix(in srgb, #fdfcfa 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
-  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
-  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
   --blur-opacity-m: 90% !important;
   --blur-opacity-s: 65% !important;
   --blur-radius-l: 16px !important;
   --blur-radius-m: 10px !important;
   --blur-radius-s: 6px !important;
-  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
   --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
-  --bold-weight: 600 !important;
   --border-width: 2px !important;
-  --button-corner-shape: round !important;
-  --button-radius: 20px !important;
-  --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: 233, 49, 71;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 8, 109, 221;
-  --callout-error: 233, 49, 71;
-  --callout-example: 120, 82, 238;
-  --callout-fail: 233, 49, 71;
-  --callout-important: 0, 191, 188;
-  --callout-info: 8, 109, 221;
-  --callout-padding: 12px 12px 12px 24px;
-  --callout-question: 236, 117, 0;
   --callout-quote: 158, 158, 158;
-  --callout-radius: 0.75em;
-  --callout-success: 8, 185, 78;
-  --callout-summary: 0, 191, 188;
-  --callout-tip: 0, 191, 188;
   --callout-title-padding: 0;
-  --callout-title-weight: 600;
-  --callout-todo: 8, 109, 221;
-  --callout-warning: 236, 117, 0;
-  --canvas-background: #fdfcfa !important;
-  --canvas-card-label-color: #6f7979 !important;
   --canvas-color: 192, 192, 192 !important;
-  --canvas-color-1: 233, 49, 71 !important;
-  --canvas-color-2: 236, 117, 0 !important;
-  --canvas-color-3: 224, 172, 0 !important;
-  --canvas-color-4: 8, 185, 78 !important;
-  --canvas-color-5: 0, 191, 188 !important;
-  --canvas-color-6: 120, 82, 238 !important;
-  --canvas-controls-icon-size: 16px !important;
-  --canvas-controls-icon-stroke: 2px !important;
-  --canvas-controls-radius: 0.75em !important;
-  --canvas-dot-pattern: #dbe8e8 !important;
-  --caret-color: #191c1c !important;
-  --checkbox-border-color: #6f7979 !important;
-  --checkbox-border-color-hover: #3f4949 !important;
-  --checkbox-color: hsl(180, 101%, 22.575%) !important;
-  --checkbox-color-hover: #4a6363 !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: #fdfcfa !important;
-  --checkbox-radius: 0.2rem !important;
-  --checkbox-size: 16px !important;
-  --checklist-done-color: #5c5c5c !important;
   --checklist-done-decoration: none !important;
-  --clickable-icon-radius: 0.75em !important;
-  --code-background: #dbe8e8 !important;
-  --code-border-color: #dbe8e8 !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: hsla(181, 17%, 50%, 0.15) !important;
-  --code-comment: #6f7979 !important;
-  --code-function: #e0ac00 !important;
-  --code-important: #ec7500 !important;
-  --code-keyword: #d53984 !important;
-  --code-normal: #191c1c !important;
-  --code-operator: #e93147 !important;
-  --code-property: #00bfbc !important;
-  --code-punctuation: #3f4949 !important;
-  --code-radius: 0.75em !important;
-  --code-size: 0.875em !important;
-  --code-string: #08b94e !important;
-  --code-tag: #e93147 !important;
-  --code-value: #7852ee !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: #6f7979 !important;
-  --collapse-icon-color-collapsed: hsl(181, 100%, 21%) !important;
-  --color-accent: hsl(181, 100%, 21%) !important;
-  --color-accent-1: hsl(180, 101%, 22.575%) !important;
-  --color-accent-2: #4a6363 !important;
-  --color-accent-hsl: 181, 100%, 21% !important;
   --color-base-00: #fdfcfa !important;
   --color-base-05: #eef5f3 !important;
   --color-base-10: #dbe8e8 !important;
@@ -246,51 +640,24 @@ body.theme-light {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: transparent !important;
-  --divider-color-hover: hsl(180, 101%, 22.575%) !important;
-  --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: #eef5f3 !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: #dbe8e8 !important;
-  --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
-  --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-icon-inset: 0.5em !important;
   --dropdown-icon-width: 1em !important;
-  --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px #dbe8e8, inset 0 0 0 1px #dbe8e8 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid hsl(180, 101%, 22.575%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
-  --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
-  --file-header-background: #fdfcfa !important;
-  --file-header-background-focused: #fdfcfa !important;
-  --file-header-border: 2px solid transparent !important;
-  --file-header-font:
-    "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R",
-    "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: left !important;
   --file-line-width: 750px !important;
-  --file-margins: 32px 32px !important;
-  --file-margins-x: 32px !important;
-  --file-margins-y: 32px !important;
-  --flair-background: #eef5f3 !important;
-  --flair-color: #191c1c !important;
-  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
   --font-default:
@@ -299,24 +666,11 @@ body.theme-light {
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R",
-    "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme:
     Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -324,16 +678,11 @@ body.theme-light {
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "??", "??", "??", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -342,31 +691,10 @@ body.theme-light {
   --font-ui-medium: 15px !important;
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
-  --font-weight: 400 !important;
-  --footnote-divider-color: #dbe8e8 !important;
-  --footnote-divider-color-active: transparent !important;
-  --footnote-divider-width: 2px !important;
-  --footnote-gap: 4px !important;
-  --footnote-id-color: #3f4949 !important;
-  --footnote-id-color-no-occurrences: #6f7979 !important;
   --footnote-id-delimiter: "." !important;
-  --footnote-input-background: transparent !important;
-  --footnote-input-background-active: hsla(181, 17%, 50%, 0.15) !important;
-  --footnote-line-height: 1.5 !important;
-  --footnote-padding-block: 6px !important;
-  --footnote-padding-inline: 6px !important;
-  --footnote-radius: 0.75em !important;
-  --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: #dbe8e8 !important;
-  --graph-node: hsl(181, 86%, 28%) !important;
-  --graph-node-attachment: #e0ac00 !important;
-  --graph-node-focused: #5fb9bb !important;
-  --graph-node-tag: #00bfbc !important;
-  --graph-node-unresolved: #4c5f7c !important;
-  --graph-text: #191c1c !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 2.3em !important;
@@ -392,27 +720,18 @@ body.theme-light {
   --h4-variant: normal !important;
   --h4-weight: 400 !important;
   --h5-letter-spacing: -0.002em !important;
-  --h5-line-height: 1.5 !important;
   --h5-size: 1.58em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 400 !important;
   --h6-letter-spacing: 0em !important;
-  --h6-line-height: 1.5 !important;
   --h6-size: 1.35em !important;
   --h6-style: normal !important;
   --h6-variant: normal !important;
   --h6-weight: 500 !important;
   --header-height: 40px !important;
-  --heading-formatting: #6f7979 !important;
-  --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: darken !important;
-  --hr-color: #dbe8e8 !important;
   --hr-thickness: 2px !important;
-  --icon-color: #3f4949 !important;
-  --icon-color-active: hsl(181, 100%, 21%) !important;
-  --icon-color-focused: #191c1c !important;
-  --icon-color-hover: #3f4949 !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -428,25 +747,10 @@ body.theme-light {
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
-  --indentation-guide-color-active: rgba(0, 0, 0, 0.3) !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
-  --indentation-guide-width: 2px !important;
-  --indentation-guide-width-active: 2px !important;
-  --inline-title-line-height: 1.3em !important;
   --inline-title-margin-bottom: 0.5em !important;
-  --inline-title-size: 2.5em !important;
-  --inline-title-style: normal !important;
-  --inline-title-variant: normal !important;
-  --inline-title-weight: 500 !important;
-  --input-corner-shape: round !important;
-  --input-date-separator: #6f7979 !important;
-  --input-font-weight: 400 !important;
-  --input-icon-inset: 4px !important;
-  --input-padding: 4px 8px !important;
-  --input-placeholder-color: #6f7979 !important;
   --input-shadow:
     0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
   --input-shadow-hover:
@@ -455,11 +759,6 @@ body.theme-light {
     0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: hsl(180, 101%, 22.575%) !important;
-  --interactive-accent-hover: #4a6363 !important;
-  --interactive-accent-hsl: 181, 100%, 21% !important;
-  --interactive-hover: #dbe8e8 !important;
-  --interactive-normal: #eef5f3 !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -473,168 +772,76 @@ body.theme-light {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: #00696b !important;
-  --link-color-hover: #00696b !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: 1.5px !important;
-  --link-external-color: #4c5f7c !important;
-  --link-external-color-hover: #4a6363 !important;
   --link-external-decoration: none !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: hsl(181, 100%, 21%) !important;
-  --link-unresolved-decoration-color: hsla(181, 100%, 21%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
-  --link-weight: 400 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: 50% !important;
   --list-bullet-size: 0.3em !important;
   --list-bullet-transform: none !important;
-  --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: #6f7979 !important;
-  --list-marker-color-collapsed: hsl(181, 100%, 21%) !important;
-  --list-marker-color-hover: #3f4949 !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: #eef5f3 !important;
-  --menu-border-color: #dbe8e8 !important;
-  --menu-border-width: 2px !important;
-  --menu-corner-shape: round !important;
-  --menu-padding: 6px !important;
-  --menu-radius: 1.1em !important;
   --menu-scroll-mask: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.05) 0%,
     rgba(0, 0, 0, 0.1) 48px
   ) !important;
-  --menu-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
   --metadata-background: #eef5f3 !important;
-  --metadata-border-color: #dbe8e8 !important;
   --metadata-border-radius: 0.75em !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: #dbe8e8 !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: hsla(181, 17%, 50%, 0.15) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R",
-    "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-font-size: 0.875em !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-padding: 4px 8px !important;
-  --metadata-input-text-color: #191c1c !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: hsla(181, 17%, 50%, 0.15) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R",
-    "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: #3f4949 !important;
-  --metadata-label-text-color-hover: #3f4949 !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
-  --metadata-padding: 1em !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: hsla(181, 17%, 50%, 0.15) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #5fb9bb !important;
-  --metadata-property-box-shadow-hover: 0 0 0 2px #dbe8e8 !important;
-  --metadata-property-corner-shape: round !important;
-  --metadata-property-corner-shape-focus: round !important;
-  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
   --metadata-property-radius-hover: 6px !important;
-  --metadata-sidebar-input-font-size: 13px !important;
-  --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: #fdfcfa !important;
-  --modal-border-color: #dbe8e8 !important;
-  --modal-border-width: 2px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: 20px !important;
   --modal-shadow: none !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
-  --nav-collapse-icon-color: #6f7979 !important;
-  --nav-collapse-icon-color-collapsed: #6f7979 !important;
-  --nav-heading-color: #191c1c !important;
-  --nav-heading-color-collapsed: #6f7979 !important;
-  --nav-heading-color-collapsed-hover: #3f4949 !important;
-  --nav-heading-color-hover: #191c1c !important;
-  --nav-heading-weight: 500 !important;
-  --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: hsl(180, 101%, 22.575%) !important;
-  --nav-indentation-guide-width: 2px !important;
-  --nav-item-background-active: hsla(181, 17%, 50%, 0.15) !important;
-  --nav-item-background-hover: hsla(181, 17%, 50%, 0.15) !important;
-  --nav-item-background-selected: hsla(181, 100%, 21%, 0.15) !important;
-  --nav-item-children-margin-start: 12px !important;
-  --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: #3f4949 !important;
-  --nav-item-color-active: #191c1c !important;
-  --nav-item-color-highlighted: hsl(181, 100%, 21%) !important;
-  --nav-item-color-hover: #191c1c !important;
-  --nav-item-color-selected: #191c1c !important;
-  --nav-item-margin-bottom: 2px !important;
-  --nav-item-padding: 4px 8px 4px 24px !important;
-  --nav-item-parent-padding: 4px 8px 4px 24px !important;
-  --nav-item-radius: 0.75em !important;
-  --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: #6f7979 !important;
-  --nav-tag-color-active: #3f4949 !important;
-  --nav-tag-color-hover: #3f4949 !important;
-  --nav-tag-radius: 0.75em !important;
-  --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: #fdfcfa !important;
-  --pdf-page-background: #fdfcfa !important;
-  --pdf-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: #fdfcfa !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-color-remove-hover: hsl(181, 100%, 21%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
-  --popover-font-size: 16px !important;
   --popover-height: 400px !important;
   --popover-max-height: 95vh !important;
   --popover-pdf-height: 400px !important;
@@ -642,9 +849,6 @@ body.theme-light {
   --popover-width: 450px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
-  --prompt-background: #fdfcfa !important;
-  --prompt-border-color: #dbe8e8 !important;
-  --prompt-border-width: 2px !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
@@ -653,9 +857,6 @@ body.theme-light {
   --radius-m: 1.1em !important;
   --radius-s: 0.75em !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, #fdfcfa 65%, transparent)
-    linear-gradient(#fdfcfa, color-mix(in srgb, #fdfcfa 65%, transparent)) !important;
-  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
   --raised-mask:
     linear-gradient(white, white) padding-box,
     linear-gradient(white, white) border-box !important;
@@ -669,71 +870,28 @@ body.theme-light {
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
-  --ribbon-background: #eef5f3 !important;
-  --ribbon-background-collapsed: #fdfcfa !important;
-  --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: #cce8e8 !important;
-  --scrollbar-bg: rgba(0, 0, 0, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 20px !important;
-  --scrollbar-thumb-bg: #dbe8e8 !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: #3f4949 !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: #3f4949 !important;
   --search-icon-size: 18px !important;
-  --search-result-background: #fdfcfa !important;
-  --setting-group-heading-color: #191c1c !important;
-  --setting-group-heading-size: 15px !important;
-  --setting-group-heading-weight: 600 !important;
-  --setting-items-background: #dbe8e8 !important;
-  --setting-items-border-color: #dbe8e8 !important;
   --setting-items-border-width: 0 !important;
-  --setting-items-padding: 20px !important;
-  --setting-items-radius: 20px !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 15px 30px rgba(0, 0, 0, 0.1) !important;
   --shadow-s:
     0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
-  --shiki-active-tab-border-color: #3f4949 !important;
   --shiki-active-tab-border-width: 2px !important;
-  --shiki-code-background: #dbe8e8 !important;
   --shiki-code-block-border-color: transparent !important;
-  --shiki-code-block-border-radius: 0.75em !important;
   --shiki-code-block-border-width: 0px !important;
-  --shiki-code-block-spacing: 1rem !important;
-  --shiki-code-comment: #6f7979 !important;
-  --shiki-code-function: #08b94e !important;
-  --shiki-code-important: #ec7500 !important;
-  --shiki-code-keyword: #d53984 !important;
-  --shiki-code-normal: #3f4949 !important;
-  --shiki-code-property: #00bfbc !important;
-  --shiki-code-punctuation: #3f4949 !important;
-  --shiki-code-string: #e0ac00 !important;
-  --shiki-code-value: #7852ee !important;
-  --shiki-gutter-border-color: #dbe8e8 !important;
-  --shiki-gutter-border-width: 2px !important;
-  --shiki-gutter-text-color: #6f7979 !important;
-  --shiki-gutter-text-color-highlight: #3f4949 !important;
-  --shiki-highlight-green: rgba(8, 185, 78, 0.5) !important;
-  --shiki-highlight-green-background: rgba(8, 185, 78, 0.1) !important;
-  --shiki-highlight-neutral: #3f4949 !important;
-  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05) !important;
-  --shiki-highlight-red: rgba(233, 49, 71, 0.5) !important;
-  --shiki-highlight-red-background: rgba(233, 49, 71, 0.1) !important;
-  --shiki-terminal-dots-color: #6f7979 !important;
-  --shiki-tooltip-background: rgba(0, 0, 0, 0.9) !important;
   --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --sidebar-right-toggle-inner-width: 8.33% !important;
   --sidebar-right-toggle-inner-width-open: 24% !important;
   --sidebar-tab-text-display: none !important;
@@ -754,136 +912,52 @@ body.theme-light {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: #dbe8e8 !important;
-  --slider-thumb-border-width: 2px !important;
   --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: #dbe8e8 !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: #eef5f3 !important;
-  --status-bar-border-color: transparent !important;
-  --status-bar-border-width: 2px 0 0 2px !important;
-  --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
-  --status-bar-radius: 1.1em 0 0 0 !important;
-  --status-bar-text-color: #3f4949 !important;
   --suggestion-backdrop-filter: none !important;
-  --suggestion-background: #fdfcfa !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
-  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
   --swatch-width: 22px !important;
-  --sync-avatar-color-1: #e93147 !important;
-  --sync-avatar-color-2: #ec7500 !important;
-  --sync-avatar-color-3: #e0ac00 !important;
-  --sync-avatar-color-4: #08b94e !important;
-  --sync-avatar-color-5: #00bfbc !important;
-  --sync-avatar-color-6: #086ddd !important;
-  --sync-avatar-color-7: #7852ee !important;
-  --sync-avatar-color-8: #d53984 !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: transparent !important;
   --tab-curve: 0 !important;
-  --tab-divider-color: transparent !important;
-  --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: transparent !important;
   --tab-outline-width: 0 !important;
-  --tab-radius: 0.75em !important;
   --tab-radius-active: 0 !important;
-  --tab-stacked-font-size: 13px !important;
   --tab-stacked-font-weight: 400 !important;
-  --tab-stacked-header-width: 40px !important;
   --tab-stacked-pane-width: 700px !important;
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: #eef5f3 !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    #eef5f3,
-    transparent
-  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 16px !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(181, 100%, 21%) !important;
-  --tab-text-color: #6f7979 !important;
-  --tab-text-color-active: #3f4949 !important;
-  --tab-text-color-focused: #3f4949 !important;
-  --tab-text-color-focused-active: #3f4949 !important;
-  --tab-text-color-focused-active-current: #191c1c !important;
-  --tab-text-color-focused-highlighted: hsl(181, 100%, 21%) !important;
   --tab-width: 250px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: #dbe8e8 !important;
-  --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
-  --table-column-alt-background: transparent !important;
-  --table-column-first-border-width: 1px !important;
-  --table-column-last-border-width: 1px !important;
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: hsl(180, 101%, 22.575%) !important;
-  --table-drag-handle-color: #6f7979 !important;
-  --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: #4a6363 !important;
-  --table-header-border-color: #dbe8e8 !important;
-  --table-header-border-width: 1px !important;
-  --table-header-color: #191c1c !important;
-  --table-header-size: 0.875em !important;
-  --table-header-weight: 600 !important;
-  --table-line-height: 1.3 !important;
-  --table-row-alt-background: transparent !important;
-  --table-row-alt-background-hover: transparent !important;
-  --table-row-background-hover: transparent !important;
-  --table-row-last-border-width: 1px !important;
-  --table-selection: hsla(181, 100%, 21%, 0.1) !important;
-  --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: hsl(180, 101%, 22.575%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
-  --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: #d4e3ff !important;
-  --tag-background-hover: #d4e3ff !important;
-  --tag-border-color: hsla(181, 100%, 21%, 0.15) !important;
-  --tag-border-color-hover: hsla(181, 100%, 21%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: #061c36 !important;
-  --tag-color-hover: #061c36 !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 5px !important;
-  --tag-size: 0.875em !important;
-  --text-accent-hover: #4a6363 !important;
-  --text-error: #e93147 !important;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: #3f4949 !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: hsla(181, 100%, 21%, 0.2) !important;
-  --text-success: #08b94e !important;
-  --text-warning: #ec7500 !important;
-  --titlebar-background-focused: #eef5f3 !important;
-  --titlebar-border-color: #dbe8e8 !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: #3f4949 !important;
-  --titlebar-text-color-focused: #191c1c !important;
-  --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
   --toggle-s-border-width: 2px !important;
@@ -895,39 +969,29 @@ body.theme-light {
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
-  --touch-radius-l: 52px !important;
-  --touch-radius-m: 44px !important;
-  --touch-radius-s: 40px !important;
-  --touch-radius-xl: 60px !important;
-  --touch-radius-xs: 30px !important;
-  --touch-radius-xxs: 24px !important;
   --touch-size-l: 52px !important;
   --touch-size-m: 44px !important;
   --touch-size-s: 40px !important;
   --touch-size-xl: 60px !important;
   --touch-size-xs: 30px !important;
   --touch-size-xxs: 24px !important;
-  --traffic-lights-offset-x: 40px !important;
-  --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: #191c1c !important;
-  --vault-profile-color-hover: #191c1c !important;
   --vault-profile-display: flex !important;
-  --vault-profile-font-size: 13px !important;
-  --vault-profile-font-weight: 500 !important;
   --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
-  --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --raised-shadow:
-    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    0 0 transparent !important;
-  --shadow-edges: 0 0 transparent !important;
+  --raised-shadow: var(
+    --shadow-xs,
+    0 1px 6px rgba(0, 0, 0, 0.015),
+    0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent
+  ) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    0 0 transparent !important;
+    var(--shadow-edges) !important;
+  --shadow-edges: 0 0 transparent !important;
   --blockquote-color: #041f20 !important;
   --table-header-background-hover: #4a6363 !important;
   --primary: #00696b !important;
@@ -967,36 +1031,547 @@ body.theme-light {
 }
 
 body.theme-dark {
+  --background-modifier-active-hover: hsla(181, 80%, 41%, 0.1) !important;
+  --background-modifier-border: #2f3f3f !important;
+  --background-modifier-border-focus: #2f8a8b !important;
+  --background-modifier-border-hover: #2f3f3f !important;
+  --background-modifier-error: var(--color-red, #fb464c) !important;
+  --background-modifier-error-hover: var(--color-red, #fb464c) !important;
+  --background-modifier-error-rgb: var(--color-red-rgb, 251, 70, 76) !important;
+  --background-modifier-form-field: #2f3f3f !important;
+  --background-modifier-form-field-hover: #2f3f3f !important;
+  --background-modifier-hover: hsla(181, 17%, 50%, 0.15) !important;
+  --background-modifier-success: var(--color-green, #44cf6e) !important;
+  --background-modifier-success-rgb: var(
+    --color-green-rgb,
+    68,
+    207,
+    110
+  ) !important;
+  --background-primary: #0d1a1a !important;
+  --background-primary-alt: #2f3f3f !important;
+  --background-secondary: #192e2e !important;
+  --background-secondary-alt: #2f3f3f !important;
+  --bases-cards-background: #0d1a1a !important;
+  --bases-cards-border-width: 2px !important;
+  --bases-cards-corner-shape: var(--corner-shape, round) !important;
+  --bases-cards-cover-background: #2f3f3f !important;
+  --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-cards-radius: 1.1em !important;
+  --bases-cards-shadow: 0 0 0 1px #2f3f3f !important;
+  --bases-cards-shadow-hover: 0 0 0 1px #2f3f3f !important;
   --bases-embed-border-color: #2f3f3f !important;
+  --bases-embed-border-radius: 0.75em !important;
+  --bases-group-heading-property-color: #bec8c8 !important;
+  --bases-group-heading-property-size: var(--font-ui-smaller, 12px) !important;
+  --bases-group-heading-property-weight: var(--font-normal, 400) !important;
+  --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
+  --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
+  --bases-header-border-width: 0 0 2px 0 !important;
   --bases-table-border-color: #2f3f3f !important;
+  --bases-table-cell-background-active: #0d1a1a !important;
+  --bases-table-cell-background-disabled: #2f3f3f !important;
+  --bases-table-cell-background-selected: hsla(181, 80%, 41%, 0.1) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #2f8a8b !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(181, 80%, 41%) !important;
+  --bases-table-column-border-width: 2px !important;
+  --bases-table-container-border-radius: 0.75em !important;
+  --bases-table-container-border-width: 2px !important;
+  --bases-table-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-table-group-background: #2f3f3f !important;
   --bases-table-header-background: #0d1a1a !important;
   --bases-table-header-background-hover: hsla(181, 17%, 50%, 0.15) !important;
-  --focus-ring-color: #0df !important;
-  --tab-container-background: #192e2e !important;
-  --table-border-color: #2f3f3f !important;
-  --text-accent: hsl(178, 81.6%, 47.15%) !important;
-  --text-faint: #899392 !important;
-  --text-normal: #e0e3e2 !important;
-  --titlebar-background: #192e2e !important;
-  --input-height: 30px !important;
+  --bases-table-header-color: #bec8c8 !important;
+  --bases-table-header-sort-mask: linear-gradient(
+    to left,
+    transparent var(--size-4-6),
+    black var(--size-4-6)
+  ) !important;
+  --bases-table-header-weight: var(--font-weight, 400) !important;
+  --bases-table-row-background-hover: var(
+    --table-row-background-hover,
+    transparent
+  ) !important;
+  --bases-table-row-border-width: 2px !important;
+  --bases-table-summary-background: #0d1a1a !important;
+  --bases-table-summary-background-hover: hsla(181, 17%, 50%, 0.15) !important;
+  --blockquote-border-color: hsl(181, 80%, 41%) !important;
+  --blur-background: color-mix(in srgb, #2f3f3f 65%, transparent)
+    linear-gradient(#2f3f3f, color-mix(in srgb, #2f3f3f 65%, transparent)) !important;
+  --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation))
+    brightness(var(--blur-brightness)) !important;
+  --blur-m: blur(var(--blur-radius-m)) saturate(var(--blur-saturation))
+    brightness(var(--blur-brightness)) !important;
+  --blur-s: blur(var(--blur-radius-s)) saturate(var(--blur-saturation))
+    brightness(var(--blur-brightness)) !important;
+  --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
+  --button-corner-shape: var(--corner-shape, round) !important;
+  --button-radius: 20px !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode, lighten);
+  --callout-bug: var(--color-red-rgb, 251, 70, 76);
+  --callout-default: var(--color-blue-rgb, 2, 122, 255);
+  --callout-error: var(--color-red-rgb, 251, 70, 76);
+  --callout-example: var(--color-purple-rgb, 168, 130, 255);
+  --callout-fail: var(--color-red-rgb, 251, 70, 76);
+  --callout-important: var(--color-cyan-rgb, 83, 223, 221);
+  --callout-info: var(--color-blue-rgb, 2, 122, 255);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6, 12px 12px 12px 24px);
+  --callout-question: var(--color-orange-rgb, 233, 151, 63);
+  --callout-radius: 0.75em;
+  --callout-success: var(--color-green-rgb, 68, 207, 110);
+  --callout-summary: var(--color-cyan-rgb, 83, 223, 221);
+  --callout-tip: var(--color-cyan-rgb, 83, 223, 221);
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb, 2, 122, 255);
+  --callout-warning: var(--color-orange-rgb, 233, 151, 63);
+  --canvas-background: #0d1a1a !important;
+  --canvas-card-label-color: #899392 !important;
+  --canvas-color-1: var(--color-red-rgb, 251, 70, 76) !important;
+  --canvas-color-2: var(--color-orange-rgb, 233, 151, 63) !important;
+  --canvas-color-3: var(--color-yellow-rgb, 224, 222, 113) !important;
+  --canvas-color-4: var(--color-green-rgb, 68, 207, 110) !important;
+  --canvas-color-5: var(--color-cyan-rgb, 83, 223, 221) !important;
+  --canvas-color-6: var(--color-purple-rgb, 168, 130, 255) !important;
+  --canvas-controls-icon-size: var(--icon-s, 16px) !important;
+  --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
+  --canvas-controls-radius: 0.75em !important;
+  --canvas-dot-pattern: #2f3f3f !important;
+  --caret-color: #e0e3e2 !important;
+  --checkbox-border-color: #899392 !important;
+  --checkbox-border-color-hover: #bec8c8 !important;
+  --checkbox-color: hsl(181, 80%, 41%) !important;
+  --checkbox-color-hover: hsl(178, 81.6%, 47.15%) !important;
+  --checkbox-marker-color: #0d1a1a !important;
+  --checkbox-radius: 0.2rem !important;
+  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checklist-done-color: var(--text-muted, #b3b3b3) !important;
+  --clickable-icon-radius: 0.75em !important;
+  --code-background: #2f3f3f !important;
+  --code-border-color: #2f3f3f !important;
+  --code-bracket-background: hsla(181, 17%, 50%, 0.15) !important;
+  --code-comment: #899392 !important;
+  --code-function: var(--color-yellow, #e0de71) !important;
+  --code-important: var(--color-orange, #e9973f) !important;
+  --code-keyword: var(--color-pink, #fa99cd) !important;
+  --code-normal: #e0e3e2 !important;
+  --code-operator: var(--color-red, #fb464c) !important;
+  --code-property: var(--color-cyan, #53dfdd) !important;
+  --code-punctuation: #bec8c8 !important;
+  --code-radius: 0.75em !important;
+  --code-size: var(--font-smaller, 0.875em) !important;
+  --code-string: var(--color-green, #44cf6e) !important;
+  --code-tag: var(--color-red, #fb464c) !important;
+  --code-value: var(--color-purple, #a882ff) !important;
+  --collapse-icon-color: #899392 !important;
+  --collapse-icon-color-collapsed: hsl(178, 81.6%, 47.15%) !important;
+  --color-accent: hsl(181, 80%, 41%) !important;
+  --color-accent-1: hsl(178, 81.6%, 47.15%) !important;
+  --color-accent-2: #b0cccc !important;
+  --color-accent-hsl: 181, 80%, 41% !important;
+  --divider-color: transparent !important;
+  --divider-color-hover: hsl(181, 80%, 41%) !important;
+  --divider-vertical-height: calc(100% - var(--header-height)) !important;
+  --dropdown-background: #2f3f3f !important;
+  --dropdown-background-hover: #2f3f3f !important;
+  --dropdown-background-position:
+    var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
+  --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
+  --dropdown-padding: 0 var(--dropdown-padding-end) 0
+    var(--dropdown-padding-start) !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px #2f3f3f, inset 0 0 0 1px #2f3f3f !important;
+  --embed-border-start: 2px solid hsl(181, 80%, 41%) !important;
+  --embed-padding: 0 0 0 var(--size-4-6) !important;
+  --file-header-background: #0d1a1a !important;
+  --file-header-background-focused: #0d1a1a !important;
+  --file-header-border: 2px solid transparent !important;
+  --file-header-font:
+    "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R",
+    "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font-size: var(--font-ui-small, 13px) !important;
+  --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
+  --file-margins-x: var(--size-4-8, 32px) !important;
+  --file-margins-y: var(--size-4-8, 32px) !important;
+  --flair-background: #2f3f3f !important;
+  --flair-color: #e0e3e2 !important;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
+  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
+  --font-interface:
+    "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R",
+    "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-mermaid: var(
+    --font-text,
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  ) !important;
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
+    var(--font-monospace-default) !important;
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial" !important;
+  --font-text:
+    var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
+  --font-weight: var(--font-normal, 400) !important;
+  --footnote-divider-color: #2f3f3f !important;
+  --footnote-divider-color-active: var(
+    --metadata-divider-color-focus,
+    transparent
+  ) !important;
+  --footnote-divider-width: 2px !important;
+  --footnote-gap: var(--size-4-1, 4px) !important;
+  --footnote-id-color: #bec8c8 !important;
+  --footnote-id-color-no-occurrences: #899392 !important;
+  --footnote-input-background: var(
+    --metadata-input-background,
+    transparent
+  ) !important;
+  --footnote-input-background-active: hsla(181, 17%, 50%, 0.15) !important;
+  --footnote-line-height: var(--line-height-normal, 1.5) !important;
+  --footnote-padding-block: var(--size-2-3, 6px) !important;
+  --footnote-padding-inline: var(--size-2-3, 6px) !important;
+  --footnote-radius: 0.75em !important;
+  --footnote-size: var(--font-smaller, 0.875em) !important;
+  --graph-line: #2f3f3f !important;
+  --graph-node: hsl(181, 78%, 46%) !important;
+  --graph-node-attachment: var(--color-yellow, #e0de71) !important;
+  --graph-node-focused: #2f8a8b !important;
+  --graph-node-tag: #53dfdd !important;
+  --graph-node-unresolved: #b4c8e9 !important;
+  --graph-text: #e0e3e2 !important;
+  --h5-line-height: var(--line-height-normal, 1.5) !important;
+  --h6-line-height: var(--line-height-normal, 1.5) !important;
+  --heading-formatting: #899392 !important;
+  --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
+  --hr-color: #2f3f3f !important;
+  --icon-color: #bec8c8 !important;
+  --icon-color-active: hsl(178, 81.6%, 47.15%) !important;
+  --icon-color-focused: #e0e3e2 !important;
+  --icon-color-hover: #bec8c8 !important;
+  --icon-size: var(--icon-m, 18px) !important;
+  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12) !important;
+  --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3) !important;
+  --indentation-guide-width: 2px !important;
+  --indentation-guide-width-active: 2px !important;
+  --inline-title-line-height: 1.3em !important;
+  --inline-title-size: 2.5em !important;
+  --inline-title-style: var(--h1-style, normal) !important;
+  --inline-title-variant: var(--h1-variant, normal) !important;
+  --inline-title-weight: 500 !important;
   --input-border-width: 0 !important;
-  --input-border-width-focus: 2px !important;
-  --input-radius: 20px !important;
-  --background-modifier-border: #2f3f3f !important;
-  --background-modifier-form-field: #2f3f3f !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
+  --input-corner-shape: var(--corner-shape, round) !important;
+  --input-date-separator: #899392 !important;
+  --input-font-weight: var(--font-normal, 400) !important;
+  --input-icon-inset: var(--size-4-1, 4px) !important;
+  --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --input-placeholder-color: #899392 !important;
+  --interactive-accent: hsl(181, 80%, 41%) !important;
+  --interactive-accent-hover: hsl(178, 81.6%, 47.15%) !important;
+  --interactive-accent-hsl: 181, 80%, 41% !important;
+  --interactive-hover: #2f3f3f !important;
+  --interactive-normal: #2f3f3f !important;
+  --link-color: hsl(181, 80%, 41%) !important;
+  --link-color-hover: hsl(181, 80%, 41%) !important;
+  --link-external-color: #b4c8e9 !important;
+  --link-external-color-hover: #b0cccc !important;
+  --link-unresolved-color: hsl(178, 81.6%, 47.15%) !important;
+  --link-unresolved-decoration-color: hsla(181, 80%, 41%, 0.3) !important;
+  --link-weight: var(--font-weight, 400) !important;
+  --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
+  --list-marker-color: #899392 !important;
+  --list-marker-color-collapsed: hsl(178, 81.6%, 47.15%) !important;
+  --list-marker-color-hover: #bec8c8 !important;
+  --menu-background: #192e2e !important;
+  --menu-border-color: #2f3f3f !important;
+  --menu-border-width: 2px !important;
+  --menu-corner-shape: var(--corner-shape, round) !important;
+  --menu-padding: var(--size-2-3, 6px) !important;
+  --menu-radius: 1.1em !important;
+  --menu-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+  --metadata-border-color: #2f3f3f !important;
+  --metadata-divider-color: #2f3f3f !important;
+  --metadata-input-background-active: hsla(181, 17%, 50%, 0.15) !important;
+  --metadata-input-font:
+    "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R",
+    "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
+  --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --metadata-input-text-color: #e0e3e2 !important;
+  --metadata-label-background-active: hsla(181, 17%, 50%, 0.15) !important;
+  --metadata-label-font:
+    "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R",
+    "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-label-text-color: #bec8c8 !important;
+  --metadata-label-text-color-hover: #bec8c8 !important;
+  --metadata-padding: 1em !important;
+  --metadata-property-background-active: hsla(181, 17%, 50%, 0.15) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #2f8a8b !important;
+  --metadata-property-box-shadow-hover: 0 0 0 2px #2f3f3f !important;
+  --metadata-property-corner-shape: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape-focus: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
+  --modal-background: #0d1a1a !important;
+  --modal-border-color: #2f3f3f !important;
+  --modal-border-width: 2px !important;
+  --modal-radius: 20px !important;
+  --nav-collapse-icon-color: #899392 !important;
+  --nav-collapse-icon-color-collapsed: #899392 !important;
+  --nav-heading-color: #e0e3e2 !important;
+  --nav-heading-color-collapsed: #899392 !important;
+  --nav-heading-color-collapsed-hover: #bec8c8 !important;
+  --nav-heading-color-hover: #e0e3e2 !important;
+  --nav-heading-weight: var(--font-medium, 500) !important;
+  --nav-heading-weight-hover: var(--font-medium, 500) !important;
+  --nav-indentation-guide-color: hsl(181, 80%, 41%) !important;
+  --nav-indentation-guide-width: 2px !important;
+  --nav-item-background-active: hsla(181, 17%, 50%, 0.15) !important;
+  --nav-item-background-hover: hsla(181, 17%, 50%, 0.15) !important;
+  --nav-item-background-selected: hsla(181, 80%, 41%, 0.15) !important;
+  --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
+  --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
+  --nav-item-color: #bec8c8 !important;
+  --nav-item-color-active: #e0e3e2 !important;
+  --nav-item-color-highlighted: hsl(178, 81.6%, 47.15%) !important;
+  --nav-item-color-hover: #e0e3e2 !important;
+  --nav-item-color-selected: #e0e3e2 !important;
+  --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6, 4px 8px 4px 24px) !important;
+  --nav-item-parent-padding: var(
+    --nav-item-padding,
+    4px 8px 4px 24px
+  ) !important;
+  --nav-item-radius: 0.75em !important;
+  --nav-item-size: var(--font-ui-small, 13px) !important;
+  --nav-tag-color: #899392 !important;
+  --nav-tag-color-active: #bec8c8 !important;
+  --nav-tag-color-hover: #bec8c8 !important;
+  --nav-tag-radius: 0.75em !important;
+  --nav-tag-weight: var(--font-semibold, 600) !important;
+  --pdf-background: #0d1a1a !important;
+  --pdf-page-background: #0d1a1a !important;
+  --pdf-shadow: 0 0 0 1px #2f3f3f !important;
+  --pdf-sidebar-background: #0d1a1a !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px #2f3f3f !important;
   --pill-border-color: #2f3f3f !important;
   --pill-border-color-hover: #2f3f3f !important;
   --pill-border-width: 2px !important;
   --pill-color: #bec8c8 !important;
   --pill-color-hover: #e0e3e2 !important;
   --pill-color-remove: #899392 !important;
+  --pill-color-remove-hover: hsl(178, 81.6%, 47.15%) !important;
+  --popover-font-size: var(--font-text-size, 16px) !important;
+  --prompt-background: #0d1a1a !important;
+  --prompt-border-color: #2f3f3f !important;
+  --prompt-border-width: 2px !important;
+  --raised-background: color-mix(in srgb, #2f3f3f 65%, transparent)
+    linear-gradient(#2f3f3f, color-mix(in srgb, #2f3f3f 65%, transparent)) !important;
+  --raised-blur: var(
+    --blur-s,
+    blur(6px) saturate(1.5) brightness(1.15)
+  ) !important;
+  --ribbon-background: #192e2e !important;
+  --ribbon-background-collapsed: #0d1a1a !important;
+  --ribbon-padding: var(--size-4-2) var(--size-4-1)
+    var(--size-4-3, 8px 4px 12px) !important;
+  --scrollbar-active-thumb-bg: #156f73 !important;
+  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
+  --scrollbar-radius: 20px !important;
+  --scrollbar-thumb-bg: #2f3f3f !important;
+  --search-clear-button-color: #bec8c8 !important;
+  --search-icon-color: #bec8c8 !important;
+  --search-result-background: #0d1a1a !important;
+  --setting-group-heading-color: #e0e3e2 !important;
+  --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
+  --setting-group-heading-weight: var(--font-semibold, 600) !important;
+  --setting-items-background: #2f3f3f !important;
+  --setting-items-border-color: #2f3f3f !important;
+  --setting-items-padding: var(--size-4-5, 20px) !important;
+  --setting-items-radius: 20px !important;
+  --shiki-active-tab-border-color: #bec8c8 !important;
+  --shiki-code-background: #2f3f3f !important;
+  --shiki-code-block-border-radius: 0.75em !important;
+  --shiki-code-block-spacing: var(--p-spacing, 1rem) !important;
+  --shiki-code-comment: #899392 !important;
+  --shiki-code-function: var(--color-green, #44cf6e) !important;
+  --shiki-code-important: var(--color-orange, #e9973f) !important;
+  --shiki-code-keyword: var(--color-pink, #fa99cd) !important;
+  --shiki-code-normal: #bec8c8 !important;
+  --shiki-code-property: var(--color-cyan, #53dfdd) !important;
+  --shiki-code-punctuation: #bec8c8 !important;
+  --shiki-code-string: var(--color-yellow, #e0de71) !important;
+  --shiki-code-value: var(--color-purple, #a882ff) !important;
+  --shiki-gutter-border-color: #2f3f3f !important;
+  --shiki-gutter-border-width: 2px !important;
+  --shiki-gutter-text-color: #899392 !important;
+  --shiki-gutter-text-color-highlight: #bec8c8 !important;
+  --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
+  --shiki-highlight-green-background: rgba(
+    var(--color-green-rgb),
+    0.1
+  ) !important;
+  --shiki-highlight-neutral: #bec8c8 !important;
+  --shiki-highlight-neutral-background: rgba(
+    var(--mono-rgb-100),
+    0.05
+  ) !important;
+  --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
+  --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
+  --shiki-terminal-dots-color: #899392 !important;
+  --shiki-tooltip-background: var(
+    --background-modifier-message,
+    rgba(0, 0, 0, 0.9)
+  ) !important;
+  --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9) !important;
+  --slider-thumb-border-color: #2f3f3f !important;
+  --slider-thumb-border-width: 2px !important;
+  --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
+  --slider-track-background: #2f3f3f !important;
+  --status-bar-background: #192e2e !important;
+  --status-bar-border-color: transparent !important;
+  --status-bar-border-width: 2px 0 0 2px !important;
+  --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
+  --status-bar-radius: 1.1em 0 0 0 !important;
+  --status-bar-text-color: #bec8c8 !important;
+  --suggestion-background: #0d1a1a !important;
+  --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
+  --sync-avatar-color-1: var(--color-red, #fb464c) !important;
+  --sync-avatar-color-2: var(--color-orange, #e9973f) !important;
+  --sync-avatar-color-3: var(--color-yellow, #e0de71) !important;
+  --sync-avatar-color-4: var(--color-green, #44cf6e) !important;
+  --sync-avatar-color-5: var(--color-cyan, #53dfdd) !important;
+  --sync-avatar-color-6: var(--color-blue, #027aff) !important;
+  --sync-avatar-color-7: var(--color-purple, #a882ff) !important;
+  --sync-avatar-color-8: var(--color-pink, #fa99cd) !important;
+  --tab-background-active: transparent !important;
+  --tab-container-background: #192e2e !important;
+  --tab-divider-color: transparent !important;
+  --tab-font-size: var(--font-ui-small, 13px) !important;
+  --tab-outline-color: transparent !important;
+  --tab-radius: 0.75em !important;
+  --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
+  --tab-stacked-header-width: var(--header-height, 40px) !important;
+  --tab-switcher-background: #192e2e !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    #192e2e,
+    transparent
+  ) !important;
+  --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(181, 80%, 41%) !important;
+  --tab-text-color: #899392 !important;
+  --tab-text-color-active: #bec8c8 !important;
+  --tab-text-color-focused: #bec8c8 !important;
+  --tab-text-color-focused-active: #bec8c8 !important;
+  --tab-text-color-focused-active-current: #e0e3e2 !important;
+  --tab-text-color-focused-highlighted: hsl(178, 81.6%, 47.15%) !important;
+  --table-add-button-border-color: #2f3f3f !important;
+  --table-add-button-border-width: var(--table-border-width, 1px) !important;
+  --table-border-color: #2f3f3f !important;
+  --table-column-alt-background: var(
+    --table-background,
+    transparent
+  ) !important;
+  --table-column-first-border-width: var(--table-border-width, 1px) !important;
+  --table-column-last-border-width: var(--table-border-width, 1px) !important;
+  --table-drag-handle-background-active: hsl(181, 80%, 41%) !important;
+  --table-drag-handle-color: #899392 !important;
+  --table-drag-handle-color-active: var(--text-on-accent, white) !important;
+  --table-header-background: #b0cccc !important;
+  --table-header-border-color: #2f3f3f !important;
+  --table-header-border-width: var(--table-border-width, 1px) !important;
+  --table-header-color: #e0e3e2 !important;
+  --table-header-size: 0.875em !important;
+  --table-header-weight: calc(
+    var(--font-weight) + var(--bold-modifier)
+  ) !important;
+  --table-line-height: var(--line-height-tight, 1.3) !important;
+  --table-row-alt-background: var(--table-background, transparent) !important;
+  --table-row-alt-background-hover: var(
+    --table-background,
+    transparent
+  ) !important;
+  --table-row-background-hover: var(--table-background, transparent) !important;
+  --table-row-last-border-width: var(--table-border-width, 1px) !important;
+  --table-selection: hsla(181, 80%, 41%, 0.1) !important;
+  --table-selection-blend-mode: var(
+    --highlight-mix-blend-mode,
+    lighten
+  ) !important;
+  --table-selection-border-color: hsl(181, 80%, 41%) !important;
+  --table-text-size: var(--font-text-size, 16px) !important;
+  --tag-background: #354863 !important;
+  --tag-background-hover: #354863 !important;
+  --tag-border-color: hsla(181, 80%, 41%, 0.15) !important;
+  --tag-border-color-hover: hsla(181, 80%, 41%, 0.15) !important;
+  --tag-color: #d4e3ff !important;
+  --tag-color-hover: #d4e3ff !important;
+  --tag-size: var(--font-smaller, 0.875em) !important;
+  --text-accent: hsl(178, 81.6%, 47.15%) !important;
+  --text-accent-hover: #b0cccc !important;
+  --text-error: var(--color-red, #fb464c) !important;
+  --text-faint: #899392 !important;
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4) !important;
+  --text-muted: #bec8c8 !important;
+  --text-normal: #e0e3e2 !important;
+  --text-selection: hsla(181, 80%, 41%, 0.33) !important;
+  --text-success: var(--color-green, #44cf6e) !important;
+  --text-warning: var(--color-orange, #e9973f) !important;
+  --titlebar-background: #192e2e !important;
+  --titlebar-background-focused: #2f3f3f !important;
+  --titlebar-border-color: #2f3f3f !important;
+  --titlebar-text-color: #bec8c8 !important;
+  --titlebar-text-color-focused: #e0e3e2 !important;
+  --titlebar-text-weight: var(--font-bold, 700) !important;
+  --touch-radius-l: var(--touch-size-l, 52px) !important;
+  --touch-radius-m: var(--touch-size-m, 44px) !important;
+  --touch-radius-s: var(--touch-size-s, 40px) !important;
+  --touch-radius-xl: var(--touch-size-xl, 60px) !important;
+  --touch-radius-xs: var(--touch-size-xs, 30px) !important;
+  --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
+  --traffic-lights-offset-x: var(--header-height, 40px) !important;
+  --traffic-lights-offset-y: var(--header-height, 40px) !important;
+  --vault-profile-color: #e0e3e2 !important;
+  --vault-profile-color-hover: #e0e3e2 !important;
+  --vault-profile-font-size: var(--font-ui-small, 13px) !important;
+  --vault-profile-font-weight: var(--font-medium, 500) !important;
+  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
+  --input-height: 30px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 20px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
   --pill-focus-left-adjust: -4px !important;
   --pill-focus-width: calc(100% + 6px) !important;
-  --bases-header-border-width: 0 0 2px 0 !important;
   --accent-h: 181 !important;
   --accent-l: 41% !important;
   --accent-s: 80% !important;
@@ -1009,169 +1584,50 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: hsla(181, 80%, 41%, 0.1) !important;
-  --background-modifier-border-focus: #2f8a8b !important;
-  --background-modifier-border-hover: #2f3f3f !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
-  --background-modifier-error: #fb464c !important;
-  --background-modifier-error-hover: #fb464c !important;
-  --background-modifier-error-rgb: 251, 70, 76 !important;
-  --background-modifier-form-field-hover: #2f3f3f !important;
-  --background-modifier-hover: hsla(181, 17%, 50%, 0.15) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
-  --background-modifier-success: #44cf6e !important;
-  --background-modifier-success-rgb: 68, 207, 110 !important;
-  --background-primary: #0d1a1a !important;
-  --background-primary-alt: #2f3f3f !important;
-  --background-secondary: #192e2e !important;
-  --background-secondary-alt: #2f3f3f !important;
-  --bases-cards-background: #0d1a1a !important;
-  --bases-cards-border-width: 2px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-corner-shape: round !important;
-  --bases-cards-cover-background: #2f3f3f !important;
-  --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
-  --bases-cards-radius: 1.1em !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px #2f3f3f !important;
-  --bases-cards-shadow-hover: 0 0 0 1px #2f3f3f !important;
-  --bases-embed-border-radius: 0.75em !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: #bec8c8 !important;
   --bases-group-heading-property-display: block !important;
-  --bases-group-heading-property-size: 12px !important;
-  --bases-group-heading-property-weight: 400 !important;
-  --bases-group-heading-value-size: 0.875em !important;
-  --bases-group-heading-value-weight: 600 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-cell-background-active: #0d1a1a !important;
-  --bases-table-cell-background-disabled: #2f3f3f !important;
-  --bases-table-cell-background-selected: hsla(181, 80%, 41%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px #2f8a8b !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(181, 80%, 41%) !important;
-  --bases-table-column-border-width: 2px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 0.75em !important;
-  --bases-table-container-border-width: 2px !important;
-  --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #2f3f3f !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-color: #bec8c8 !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
-  --bases-table-header-weight: 400 !important;
-  --bases-table-row-background-hover: transparent !important;
-  --bases-table-row-border-width: 2px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: #0d1a1a !important;
-  --bases-table-summary-background-hover: hsla(181, 17%, 50%, 0.15) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: #156f73 !important;
-  --blockquote-border-color: hsl(181, 80%, 41%) !important;
   --blockquote-border-thickness: 0px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, #2f3f3f 65%, transparent)
-    linear-gradient(#2f3f3f, color-mix(in srgb, #2f3f3f 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
-  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
-  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
   --blur-opacity-m: 90% !important;
   --blur-opacity-s: 65% !important;
   --blur-radius-l: 16px !important;
   --blur-radius-m: 10px !important;
   --blur-radius-s: 6px !important;
-  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
   --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
-  --bold-weight: 600 !important;
   --border-width: 2px !important;
-  --button-corner-shape: round !important;
-  --button-radius: 20px !important;
-  --callout-blend-mode: lighten;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: 251, 70, 76;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 2, 122, 255;
-  --callout-error: 251, 70, 76;
-  --callout-example: 168, 130, 255;
-  --callout-fail: 251, 70, 76;
-  --callout-important: 83, 223, 221;
-  --callout-info: 2, 122, 255;
-  --callout-padding: 12px 12px 12px 24px;
-  --callout-question: 233, 151, 63;
   --callout-quote: 158, 158, 158;
-  --callout-radius: 0.75em;
-  --callout-success: 68, 207, 110;
-  --callout-summary: 83, 223, 221;
-  --callout-tip: 83, 223, 221;
   --callout-title-padding: 0;
-  --callout-title-weight: 600;
-  --callout-todo: 2, 122, 255;
-  --callout-warning: 233, 151, 63;
-  --canvas-background: #0d1a1a !important;
-  --canvas-card-label-color: #899392 !important;
   --canvas-color: 126, 126, 126 !important;
-  --canvas-color-1: 251, 70, 76 !important;
-  --canvas-color-2: 233, 151, 63 !important;
-  --canvas-color-3: 224, 222, 113 !important;
-  --canvas-color-4: 68, 207, 110 !important;
-  --canvas-color-5: 83, 223, 221 !important;
-  --canvas-color-6: 168, 130, 255 !important;
-  --canvas-controls-icon-size: 16px !important;
-  --canvas-controls-icon-stroke: 2px !important;
-  --canvas-controls-radius: 0.75em !important;
-  --canvas-dot-pattern: #2f3f3f !important;
-  --caret-color: #e0e3e2 !important;
-  --checkbox-border-color: #899392 !important;
-  --checkbox-border-color-hover: #bec8c8 !important;
-  --checkbox-color: hsl(181, 80%, 41%) !important;
-  --checkbox-color-hover: hsl(178, 81.6%, 47.15%) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: #0d1a1a !important;
-  --checkbox-radius: 0.2rem !important;
-  --checkbox-size: 16px !important;
-  --checklist-done-color: #b3b3b3 !important;
   --checklist-done-decoration: none !important;
-  --clickable-icon-radius: 0.75em !important;
-  --code-background: #2f3f3f !important;
-  --code-border-color: #2f3f3f !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: hsla(181, 17%, 50%, 0.15) !important;
-  --code-comment: #899392 !important;
-  --code-function: #e0de71 !important;
-  --code-important: #e9973f !important;
-  --code-keyword: #fa99cd !important;
-  --code-normal: #e0e3e2 !important;
-  --code-operator: #fb464c !important;
-  --code-property: #53dfdd !important;
-  --code-punctuation: #bec8c8 !important;
-  --code-radius: 0.75em !important;
-  --code-size: 0.875em !important;
-  --code-string: #44cf6e !important;
-  --code-tag: #fb464c !important;
-  --code-value: #a882ff !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: #899392 !important;
-  --collapse-icon-color-collapsed: hsl(178, 81.6%, 47.15%) !important;
-  --color-accent: hsl(181, 80%, 41%) !important;
-  --color-accent-1: hsl(178, 81.6%, 47.15%) !important;
-  --color-accent-2: #b0cccc !important;
-  --color-accent-hsl: 181, 80%, 41% !important;
   --color-base-00: #0d1a1a !important;
   --color-base-05: #192e2e !important;
   --color-base-10: #2f3f3f !important;
@@ -1207,51 +1663,24 @@ body.theme-dark {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: transparent !important;
-  --divider-color-hover: hsl(181, 80%, 41%) !important;
-  --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: #2f3f3f !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: #2f3f3f !important;
-  --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
-  --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-icon-inset: 0.5em !important;
   --dropdown-icon-width: 1em !important;
-  --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px #2f3f3f, inset 0 0 0 1px #2f3f3f !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid hsl(181, 80%, 41%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
-  --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
-  --file-header-background: #0d1a1a !important;
-  --file-header-background-focused: #0d1a1a !important;
-  --file-header-border: 2px solid transparent !important;
-  --file-header-font:
-    "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R",
-    "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: left !important;
   --file-line-width: 750px !important;
-  --file-margins: 32px 32px !important;
-  --file-margins-x: 32px !important;
-  --file-margins-y: 32px !important;
-  --flair-background: #2f3f3f !important;
-  --flair-color: #e0e3e2 !important;
-  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
   --font-default:
@@ -1260,24 +1689,11 @@ body.theme-dark {
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R",
-    "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme:
     Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1285,16 +1701,11 @@ body.theme-dark {
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "??", "??", "??", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -1303,31 +1714,10 @@ body.theme-dark {
   --font-ui-medium: 15px !important;
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
-  --font-weight: 400 !important;
-  --footnote-divider-color: #2f3f3f !important;
-  --footnote-divider-color-active: transparent !important;
-  --footnote-divider-width: 2px !important;
-  --footnote-gap: 4px !important;
-  --footnote-id-color: #bec8c8 !important;
-  --footnote-id-color-no-occurrences: #899392 !important;
   --footnote-id-delimiter: "." !important;
-  --footnote-input-background: transparent !important;
-  --footnote-input-background-active: hsla(181, 17%, 50%, 0.15) !important;
-  --footnote-line-height: 1.5 !important;
-  --footnote-padding-block: 6px !important;
-  --footnote-padding-inline: 6px !important;
-  --footnote-radius: 0.75em !important;
-  --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: #2f3f3f !important;
-  --graph-node: hsl(181, 78%, 46%) !important;
-  --graph-node-attachment: #e0de71 !important;
-  --graph-node-focused: #2f8a8b !important;
-  --graph-node-tag: #53dfdd !important;
-  --graph-node-unresolved: #b4c8e9 !important;
-  --graph-text: #e0e3e2 !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 2.3em !important;
@@ -1353,27 +1743,18 @@ body.theme-dark {
   --h4-variant: normal !important;
   --h4-weight: 400 !important;
   --h5-letter-spacing: -0.002em !important;
-  --h5-line-height: 1.5 !important;
   --h5-size: 1.58em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 400 !important;
   --h6-letter-spacing: 0em !important;
-  --h6-line-height: 1.5 !important;
   --h6-size: 1.35em !important;
   --h6-style: normal !important;
   --h6-variant: normal !important;
   --h6-weight: 500 !important;
   --header-height: 40px !important;
-  --heading-formatting: #899392 !important;
-  --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: lighten !important;
-  --hr-color: #2f3f3f !important;
   --hr-thickness: 2px !important;
-  --icon-color: #bec8c8 !important;
-  --icon-color-active: hsl(178, 81.6%, 47.15%) !important;
-  --icon-color-focused: #e0e3e2 !important;
-  --icon-color-hover: #bec8c8 !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -1389,25 +1770,10 @@ body.theme-dark {
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
-  --indentation-guide-color-active: rgba(255, 255, 255, 0.3) !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
-  --indentation-guide-width: 2px !important;
-  --indentation-guide-width-active: 2px !important;
-  --inline-title-line-height: 1.3em !important;
   --inline-title-margin-bottom: 0.5em !important;
-  --inline-title-size: 2.5em !important;
-  --inline-title-style: normal !important;
-  --inline-title-variant: normal !important;
-  --inline-title-weight: 500 !important;
-  --input-corner-shape: round !important;
-  --input-date-separator: #899392 !important;
-  --input-font-weight: 400 !important;
-  --input-icon-inset: 4px !important;
-  --input-padding: 4px 8px !important;
-  --input-placeholder-color: #899392 !important;
   --input-shadow:
     0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
   --input-shadow-hover:
@@ -1416,11 +1782,6 @@ body.theme-dark {
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: hsl(181, 80%, 41%) !important;
-  --interactive-accent-hover: hsl(178, 81.6%, 47.15%) !important;
-  --interactive-accent-hsl: 181, 80%, 41% !important;
-  --interactive-hover: #2f3f3f !important;
-  --interactive-normal: #2f3f3f !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -1434,166 +1795,76 @@ body.theme-dark {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: hsl(181, 80%, 41%) !important;
-  --link-color-hover: hsl(181, 80%, 41%) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: 1.5px !important;
-  --link-external-color: #b4c8e9 !important;
-  --link-external-color-hover: #b0cccc !important;
   --link-external-decoration: none !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: hsl(178, 81.6%, 47.15%) !important;
-  --link-unresolved-decoration-color: hsla(181, 80%, 41%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
-  --link-weight: 400 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: 50% !important;
   --list-bullet-size: 0.3em !important;
   --list-bullet-transform: none !important;
-  --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: #899392 !important;
-  --list-marker-color-collapsed: hsl(178, 81.6%, 47.15%) !important;
-  --list-marker-color-hover: #bec8c8 !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: #192e2e !important;
-  --menu-border-color: #2f3f3f !important;
-  --menu-border-width: 2px !important;
-  --menu-corner-shape: round !important;
-  --menu-padding: 6px !important;
-  --menu-radius: 1.1em !important;
   --menu-scroll-mask: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.05) 0%,
     rgba(0, 0, 0, 0.1) 48px
   ) !important;
-  --menu-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
   --metadata-background: #192e2e !important;
-  --metadata-border-color: #2f3f3f !important;
   --metadata-border-radius: 0.75em !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: #2f3f3f !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: hsla(181, 17%, 50%, 0.15) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R",
-    "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-font-size: 0.875em !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-padding: 4px 8px !important;
-  --metadata-input-text-color: #e0e3e2 !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: hsla(181, 17%, 50%, 0.15) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R",
-    "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: #bec8c8 !important;
-  --metadata-label-text-color-hover: #bec8c8 !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
-  --metadata-padding: 1em !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: hsla(181, 17%, 50%, 0.15) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #2f8a8b !important;
-  --metadata-property-box-shadow-hover: 0 0 0 2px #2f3f3f !important;
-  --metadata-property-corner-shape: round !important;
-  --metadata-property-corner-shape-focus: round !important;
-  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
   --metadata-property-radius-hover: 6px !important;
-  --metadata-sidebar-input-font-size: 13px !important;
-  --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: #0d1a1a !important;
-  --modal-border-color: #2f3f3f !important;
-  --modal-border-width: 2px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: 20px !important;
   --modal-shadow: none !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
-  --nav-collapse-icon-color: #899392 !important;
-  --nav-collapse-icon-color-collapsed: #899392 !important;
-  --nav-heading-color: #e0e3e2 !important;
-  --nav-heading-color-collapsed: #899392 !important;
-  --nav-heading-color-collapsed-hover: #bec8c8 !important;
-  --nav-heading-color-hover: #e0e3e2 !important;
-  --nav-heading-weight: 500 !important;
-  --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: hsl(181, 80%, 41%) !important;
-  --nav-indentation-guide-width: 2px !important;
-  --nav-item-background-active: hsla(181, 17%, 50%, 0.15) !important;
-  --nav-item-background-hover: hsla(181, 17%, 50%, 0.15) !important;
-  --nav-item-background-selected: hsla(181, 80%, 41%, 0.15) !important;
-  --nav-item-children-margin-start: 12px !important;
-  --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: #bec8c8 !important;
-  --nav-item-color-active: #e0e3e2 !important;
-  --nav-item-color-highlighted: hsl(178, 81.6%, 47.15%) !important;
-  --nav-item-color-hover: #e0e3e2 !important;
-  --nav-item-color-selected: #e0e3e2 !important;
-  --nav-item-margin-bottom: 2px !important;
-  --nav-item-padding: 4px 8px 4px 24px !important;
-  --nav-item-parent-padding: 4px 8px 4px 24px !important;
-  --nav-item-radius: 0.75em !important;
-  --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: #899392 !important;
-  --nav-tag-color-active: #bec8c8 !important;
-  --nav-tag-color-hover: #bec8c8 !important;
-  --nav-tag-radius: 0.75em !important;
-  --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: #0d1a1a !important;
-  --pdf-page-background: #0d1a1a !important;
-  --pdf-shadow: 0 0 0 1px #2f3f3f !important;
-  --pdf-sidebar-background: #0d1a1a !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px #2f3f3f !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-color-remove-hover: hsl(178, 81.6%, 47.15%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
-  --popover-font-size: 16px !important;
   --popover-height: 400px !important;
   --popover-max-height: 95vh !important;
   --popover-pdf-height: 400px !important;
@@ -1601,9 +1872,6 @@ body.theme-dark {
   --popover-width: 450px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
-  --prompt-background: #0d1a1a !important;
-  --prompt-border-color: #2f3f3f !important;
-  --prompt-border-width: 2px !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
@@ -1612,9 +1880,6 @@ body.theme-dark {
   --radius-m: 1.1em !important;
   --radius-s: 0.75em !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, #2f3f3f 65%, transparent)
-    linear-gradient(#2f3f3f, color-mix(in srgb, #2f3f3f 65%, transparent)) !important;
-  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
   --raised-mask:
     linear-gradient(white, white) padding-box,
     linear-gradient(white, white) border-box !important;
@@ -1622,71 +1887,28 @@ body.theme-dark {
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
-  --ribbon-background: #192e2e !important;
-  --ribbon-background-collapsed: #0d1a1a !important;
-  --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: #156f73 !important;
-  --scrollbar-bg: rgba(255, 255, 255, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 20px !important;
-  --scrollbar-thumb-bg: #2f3f3f !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: #bec8c8 !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: #bec8c8 !important;
   --search-icon-size: 18px !important;
-  --search-result-background: #0d1a1a !important;
-  --setting-group-heading-color: #e0e3e2 !important;
-  --setting-group-heading-size: 15px !important;
-  --setting-group-heading-weight: 600 !important;
-  --setting-items-background: #2f3f3f !important;
-  --setting-items-border-color: #2f3f3f !important;
   --setting-items-border-width: 0 !important;
-  --setting-items-padding: 20px !important;
-  --setting-items-radius: 20px !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2) !important;
   --shadow-s:
     0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
-  --shiki-active-tab-border-color: #bec8c8 !important;
   --shiki-active-tab-border-width: 2px !important;
-  --shiki-code-background: #2f3f3f !important;
   --shiki-code-block-border-color: transparent !important;
-  --shiki-code-block-border-radius: 0.75em !important;
   --shiki-code-block-border-width: 0px !important;
-  --shiki-code-block-spacing: 1rem !important;
-  --shiki-code-comment: #899392 !important;
-  --shiki-code-function: #44cf6e !important;
-  --shiki-code-important: #e9973f !important;
-  --shiki-code-keyword: #fa99cd !important;
-  --shiki-code-normal: #bec8c8 !important;
-  --shiki-code-property: #53dfdd !important;
-  --shiki-code-punctuation: #bec8c8 !important;
-  --shiki-code-string: #e0de71 !important;
-  --shiki-code-value: #a882ff !important;
-  --shiki-gutter-border-color: #2f3f3f !important;
-  --shiki-gutter-border-width: 2px !important;
-  --shiki-gutter-text-color: #899392 !important;
-  --shiki-gutter-text-color-highlight: #bec8c8 !important;
-  --shiki-highlight-green: rgba(68, 207, 110, 0.5) !important;
-  --shiki-highlight-green-background: rgba(68, 207, 110, 0.1) !important;
-  --shiki-highlight-neutral: #bec8c8 !important;
-  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05) !important;
-  --shiki-highlight-red: rgba(251, 70, 76, 0.5) !important;
-  --shiki-highlight-red-background: rgba(251, 70, 76, 0.1) !important;
-  --shiki-terminal-dots-color: #899392 !important;
-  --shiki-tooltip-background: rgba(0, 0, 0, 0.9) !important;
   --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --sidebar-right-toggle-inner-width: 8.33% !important;
   --sidebar-right-toggle-inner-width-open: 24% !important;
   --sidebar-tab-text-display: none !important;
@@ -1707,136 +1929,52 @@ body.theme-dark {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: #2f3f3f !important;
-  --slider-thumb-border-width: 2px !important;
   --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: #2f3f3f !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: #192e2e !important;
-  --status-bar-border-color: transparent !important;
-  --status-bar-border-width: 2px 0 0 2px !important;
-  --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
-  --status-bar-radius: 1.1em 0 0 0 !important;
-  --status-bar-text-color: #bec8c8 !important;
   --suggestion-backdrop-filter: none !important;
-  --suggestion-background: #0d1a1a !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
-  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
   --swatch-width: 22px !important;
-  --sync-avatar-color-1: #fb464c !important;
-  --sync-avatar-color-2: #e9973f !important;
-  --sync-avatar-color-3: #e0de71 !important;
-  --sync-avatar-color-4: #44cf6e !important;
-  --sync-avatar-color-5: #53dfdd !important;
-  --sync-avatar-color-6: #027aff !important;
-  --sync-avatar-color-7: #a882ff !important;
-  --sync-avatar-color-8: #fa99cd !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: transparent !important;
   --tab-curve: 0 !important;
-  --tab-divider-color: transparent !important;
-  --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: transparent !important;
   --tab-outline-width: 0 !important;
-  --tab-radius: 0.75em !important;
   --tab-radius-active: 0 !important;
-  --tab-stacked-font-size: 13px !important;
   --tab-stacked-font-weight: 400 !important;
-  --tab-stacked-header-width: 40px !important;
   --tab-stacked-pane-width: 700px !important;
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: #192e2e !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    #192e2e,
-    transparent
-  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 16px !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(181, 80%, 41%) !important;
-  --tab-text-color: #899392 !important;
-  --tab-text-color-active: #bec8c8 !important;
-  --tab-text-color-focused: #bec8c8 !important;
-  --tab-text-color-focused-active: #bec8c8 !important;
-  --tab-text-color-focused-active-current: #e0e3e2 !important;
-  --tab-text-color-focused-highlighted: hsl(178, 81.6%, 47.15%) !important;
   --tab-width: 250px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: #2f3f3f !important;
-  --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
-  --table-column-alt-background: transparent !important;
-  --table-column-first-border-width: 1px !important;
-  --table-column-last-border-width: 1px !important;
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: hsl(181, 80%, 41%) !important;
-  --table-drag-handle-color: #899392 !important;
-  --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: #b0cccc !important;
-  --table-header-border-color: #2f3f3f !important;
-  --table-header-border-width: 1px !important;
-  --table-header-color: #e0e3e2 !important;
-  --table-header-size: 0.875em !important;
-  --table-header-weight: 600 !important;
-  --table-line-height: 1.3 !important;
-  --table-row-alt-background: transparent !important;
-  --table-row-alt-background-hover: transparent !important;
-  --table-row-background-hover: transparent !important;
-  --table-row-last-border-width: 1px !important;
-  --table-selection: hsla(181, 80%, 41%, 0.1) !important;
-  --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: hsl(181, 80%, 41%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
-  --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: #354863 !important;
-  --tag-background-hover: #354863 !important;
-  --tag-border-color: hsla(181, 80%, 41%, 0.15) !important;
-  --tag-border-color-hover: hsla(181, 80%, 41%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: #d4e3ff !important;
-  --tag-color-hover: #d4e3ff !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 5px !important;
-  --tag-size: 0.875em !important;
-  --text-accent-hover: #b0cccc !important;
-  --text-error: #fb464c !important;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: #bec8c8 !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: hsla(181, 80%, 41%, 0.33) !important;
-  --text-success: #44cf6e !important;
-  --text-warning: #e9973f !important;
-  --titlebar-background-focused: #2f3f3f !important;
-  --titlebar-border-color: #2f3f3f !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: #bec8c8 !important;
-  --titlebar-text-color-focused: #e0e3e2 !important;
-  --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
   --toggle-s-border-width: 2px !important;
@@ -1848,29 +1986,16 @@ body.theme-dark {
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
-  --touch-radius-l: 52px !important;
-  --touch-radius-m: 44px !important;
-  --touch-radius-s: 40px !important;
-  --touch-radius-xl: 60px !important;
-  --touch-radius-xs: 30px !important;
-  --touch-radius-xxs: 24px !important;
   --touch-size-l: 52px !important;
   --touch-size-m: 44px !important;
   --touch-size-s: 40px !important;
   --touch-size-xl: 60px !important;
   --touch-size-xs: 30px !important;
   --touch-size-xxs: 24px !important;
-  --traffic-lights-offset-x: 40px !important;
-  --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: #e0e3e2 !important;
-  --vault-profile-color-hover: #e0e3e2 !important;
   --vault-profile-display: flex !important;
-  --vault-profile-font-size: 13px !important;
-  --vault-profile-font-weight: 500 !important;
   --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
-  --workspace-background-translucent: rgba(0, 0, 0, 0.6) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
@@ -1934,7 +2059,7 @@ body {
 body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(76, 95, 124);
-  cursor: pointer;
+  cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1952,11 +2077,11 @@ body body.theme-light .markdown-rendered a.external-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--link-weight, 400);
   outline: rgb(76, 95, 124) none 0px;
   text-decoration: 1.5px;
   text-decoration-color: rgb(76, 95, 124);
-  text-decoration-line: underline;
+  text-decoration-line: var(--link-external-decoration, underline);
   text-decoration-style: solid;
   text-decoration-thickness: 1.5px;
   transition: opacity 0.14s ease-in-out;
@@ -1974,7 +2099,7 @@ body body.theme-light .markdown-rendered a.external-link {
 body body.theme-light .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(0, 105, 107);
-  cursor: pointer;
+  cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1992,11 +2117,11 @@ body body.theme-light .markdown-rendered a.internal-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--link-weight, 400);
   outline: rgb(0, 105, 107) none 0px;
   text-decoration: underline 1.5px;
   text-decoration-color: rgb(0, 105, 107);
-  text-decoration-line: underline;
+  text-decoration-line: var(--link-decoration, underline);
   text-decoration-style: solid;
   text-decoration-thickness: 1.5px;
   transition: opacity 0.14s ease-in-out;
@@ -2014,7 +2139,7 @@ body body.theme-light .markdown-rendered a.internal-link {
 body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(0, 105, 107);
-  cursor: pointer;
+  cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2032,12 +2157,12 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--link-weight, 400);
   outline: rgb(0, 105, 107) none 0px;
   text-decoration: underline 1.5px rgba(0, 105, 107, 0.3);
   text-decoration-color: rgba(0, 105, 107, 0.3);
-  text-decoration-line: underline;
-  text-decoration-style: solid;
+  text-decoration-line: var(--link-decoration, underline);
+  text-decoration-style: var(--link-unresolved-decoration-style, solid);
   text-decoration-thickness: 1.5px;
   transition: opacity 0.14s ease-in-out;
   transform: none;
@@ -2129,7 +2254,7 @@ body body.theme-light strong {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: calc(var(--font-weight) + var(--bold-modifier));
   outline: rgb(25, 28, 28) none 0px;
   text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(25, 28, 28);
@@ -2168,7 +2293,7 @@ body body.theme-light b {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: calc(var(--font-weight) + var(--bold-modifier));
   outline: rgb(25, 28, 28) none 0px;
   text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(25, 28, 28);
@@ -2265,7 +2390,7 @@ body body.theme-light i {
   animation-play-state: running;
 }
 body body.theme-light .markdown-rendered mark {
-  background-color: rgba(255, 208, 0, 0.4);
+  background-color: var(--text-highlight-bg, rgba(255, 208, 0, 0.4));
   color: rgb(25, 28, 28);
   cursor: grab;
   filter: none;
@@ -2409,7 +2534,7 @@ body body.theme-light div.multi-select-pill {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--pill-weight, 400);
   margin-inline-start: 0px;
   border: 0px solid rgba(0, 105, 107, 0.15);
   border-top-left-radius: 5px;
@@ -2474,10 +2599,20 @@ body body.theme-light .markdown-rendered code {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   color: rgb(25, 28, 28);
-  font-family:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-    "Source Code Pro", monospace;
+  font-family: var(
+    --font-monospace,
+    ui-monospace,
+    SFMono-Regular,
+    "Cascadia Mono",
+    "Roboto Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    Menlo,
+    Monaco,
+    Consolas,
+    "Source Code Pro",
+    monospace
+  );
   padding: 1.4px 5.6px;
 }
 body body.theme-light .markdown-rendered pre > code {
@@ -2534,7 +2669,7 @@ body
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  width: 16px;
+  width: var(--checkbox-size, 16px);
   transition: box-shadow 0.15s ease-in-out;
   position: relative;
   top: auto;
@@ -2626,10 +2761,12 @@ body body.theme-light .search-results {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  box-shadow:
+  box-shadow: var(
+    --shadow-l,
     rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
     rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
-    rgba(0, 0, 0, 0.1) 0px 15px 30px 0px;
+    rgba(0, 0, 0, 0.1) 0px 15px 30px 0px
+  );
 }
 body body.theme-light .search-results > * {
   background-color: rgba(0, 0, 0, 0);
@@ -2705,7 +2842,8 @@ body body.theme-light div.search-results .suggestion-item.is-selected {
 }
 body body.theme-light .published-container .markdown-rendered h1 {
   color: rgb(25, 28, 28);
-  font-family:
+  font-family: var(
+    --h1-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2718,12 +2856,14 @@ body body.theme-light .published-container .markdown-rendered h1 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h2 {
   color: rgb(25, 28, 28);
-  font-family:
+  font-family: var(
+    --h2-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2736,12 +2876,14 @@ body body.theme-light .published-container .markdown-rendered h2 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h3 {
   color: rgb(25, 28, 28);
-  font-family:
+  font-family: var(
+    --h3-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2754,12 +2896,14 @@ body body.theme-light .published-container .markdown-rendered h3 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h4 {
   color: rgb(25, 28, 28);
-  font-family:
+  font-family: var(
+    --h4-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2772,12 +2916,14 @@ body body.theme-light .published-container .markdown-rendered h4 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h5 {
   color: rgb(25, 28, 28);
-  font-family:
+  font-family: var(
+    --h5-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2790,12 +2936,14 @@ body body.theme-light .published-container .markdown-rendered h5 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h6 {
   color: rgb(25, 28, 28);
-  font-family:
+  font-family: var(
+    --h6-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2808,7 +2956,8 @@ body body.theme-light .published-container .markdown-rendered h6 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body
@@ -2908,10 +3057,10 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
 }
 body body.theme-light .callout > .callout-title > .callout-title-inner {
   color: rgb(6, 28, 54);
-  font-weight: 600;
+  font-weight: var(--font-weight, 600);
 }
 body body.theme-light .callout > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3391,7 +3540,10 @@ body body.theme-light .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px 0px;
+  margin-top: var(--heading-spacing, 16px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -3415,9 +3567,9 @@ body body.theme-light .markdown-rendered tbody {
 body body.theme-light .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(255, 255, 255);
-  font-weight: 600;
+  font-weight: var(--table-header-weight, 600);
   text-align: center;
-  vertical-align: top;
+  vertical-align: var(--table-cell-vertical-alignment, top);
   border: 0px solid rgb(255, 255, 255);
   border-top-left-radius: 10.5px;
   border-top-right-radius: 0px;
@@ -3434,9 +3586,12 @@ body body.theme-light .markdown-rendered td {
   color: rgb(25, 28, 28);
   font-weight: 400;
   text-align: start;
-  vertical-align: top;
-  border: 1px solid rgb(219, 232, 232);
+  vertical-align: var(--table-cell-vertical-alignment, top);
+  border-left: var(--table-column-first-border-width, 1px) solid
+    rgb(219, 232, 232);
+  border-right: 1px solid rgb(219, 232, 232);
   border-top: 0px solid rgb(219, 232, 232);
+  border-bottom: 1px solid rgb(219, 232, 232);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3460,10 +3615,10 @@ body body.theme-light .markdown-rendered tr {
   border-end-end-radius: 0px;
 }
 body body.theme-light .markdown-rendered tbody tr:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--table-background, rgba(0, 0, 0, 0));
 }
 body body.theme-light .markdown-rendered tbody tr:nth-child(odd) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
 }
 body body.theme-light .markdown-rendered img {
   border-radius: 40.48px;
@@ -3571,7 +3726,7 @@ body body.theme-light .markdown-rendered audio {
   padding: 0px;
 }
 body body.theme-light .internal-embed {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--embed-background, rgba(0, 0, 0, 0));
   border-color: rgb(25, 28, 28);
   border-left: 2px solid rgb(0, 115, 115);
   border-right-width: 0px;
@@ -3585,7 +3740,7 @@ body body.theme-light .internal-embed {
   padding: 0px;
 }
 body body.theme-light .markdown-embed {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--embed-background, rgba(0, 0, 0, 0));
   border-left: solid;
   border-width: 0px;
   border-color: rgb(25, 28, 28);
@@ -3765,11 +3920,21 @@ body body.theme-light kbd {
   background-color: rgb(219, 232, 232);
   box-shadow: none;
   color: rgb(25, 28, 28);
-  font-family:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-    "Source Code Pro", monospace;
-  font-size: 14px;
+  font-family: var(
+    --font-monospace,
+    ui-monospace,
+    SFMono-Regular,
+    "Cascadia Mono",
+    "Roboto Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    Menlo,
+    Monaco,
+    Consolas,
+    "Source Code Pro",
+    monospace
+  );
+  font-size: var(--code-size, 14px);
   border: 0px rgb(25, 28, 28);
   border-top-left-radius: 10.5px;
   border-top-right-radius: 10.5px;
@@ -3999,7 +4164,7 @@ body
   > .tree-item
   > .tree-item-self {
   color: rgb(63, 73, 73);
-  cursor: default;
+  cursor: var(--cursor, default);
   font-family:
     Roboto,
     OpenSans,
@@ -4031,7 +4196,7 @@ body
   > .tree-item
   > .tree-item-self {
   color: rgb(63, 73, 73);
-  cursor: default;
+  cursor: var(--cursor, default);
   font-family:
     Roboto,
     OpenSans,
@@ -4057,7 +4222,7 @@ body
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(63, 73, 73);
-  cursor: default;
+  cursor: var(--cursor, default);
   border-color: rgb(63, 73, 73);
   border-width: 0px;
   border-top-left-radius: 11.25px;
@@ -4168,7 +4333,7 @@ body body.theme-light .nav-files-container {
 body body.theme-light .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(63, 73, 73);
-  cursor: default;
+  cursor: var(--cursor, default);
   border-color: rgb(63, 73, 73);
   border-width: 0px;
   border-top-left-radius: 11.25px;
@@ -4235,7 +4400,7 @@ body body.theme-light .page-header .page-title {
     sans-serif;
 }
 body body.theme-light .math-block {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
   color: rgb(25, 28, 28);
   border-color: rgb(25, 28, 28);
   border-width: 0px;
@@ -4341,7 +4506,7 @@ body body.theme-light .search-highlight {
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(180, 200, 233);
-  cursor: pointer;
+  cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4359,11 +4524,11 @@ body body.theme-dark .markdown-rendered a.external-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--link-weight, 400);
   outline: rgb(180, 200, 233) none 0px;
   text-decoration: 1.5px;
   text-decoration-color: rgb(180, 200, 233);
-  text-decoration-line: underline;
+  text-decoration-line: var(--link-external-decoration, underline);
   text-decoration-style: solid;
   text-decoration-thickness: 1.5px;
   transition: opacity 0.14s ease-in-out;
@@ -4381,7 +4546,7 @@ body body.theme-dark .markdown-rendered a.external-link {
 body body.theme-dark .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(21, 185, 188);
-  cursor: pointer;
+  cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4399,11 +4564,11 @@ body body.theme-dark .markdown-rendered a.internal-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--link-weight, 400);
   outline: rgb(21, 185, 188) none 0px;
   text-decoration: underline 1.5px;
   text-decoration-color: rgb(21, 185, 188);
-  text-decoration-line: underline;
+  text-decoration-line: var(--link-decoration, underline);
   text-decoration-style: solid;
   text-decoration-thickness: 1.5px;
   transition: opacity 0.14s ease-in-out;
@@ -4421,7 +4586,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
 body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(22, 218, 212);
-  cursor: pointer;
+  cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4439,12 +4604,12 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--link-weight, 400);
   outline: rgb(22, 218, 212) none 0px;
   text-decoration: underline 1.5px rgba(21, 185, 188, 0.3);
   text-decoration-color: rgba(21, 185, 188, 0.3);
-  text-decoration-line: underline;
-  text-decoration-style: solid;
+  text-decoration-line: var(--link-decoration, underline);
+  text-decoration-style: var(--link-unresolved-decoration-style, solid);
   text-decoration-thickness: 1.5px;
   transition: opacity 0.14s ease-in-out;
   transform: none;
@@ -4536,7 +4701,7 @@ body body.theme-dark strong {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: calc(var(--font-weight) + var(--bold-modifier));
   outline: rgb(224, 227, 226) none 0px;
   text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(224, 227, 226);
@@ -4575,7 +4740,7 @@ body body.theme-dark b {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: calc(var(--font-weight) + var(--bold-modifier));
   outline: rgb(224, 227, 226) none 0px;
   text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(224, 227, 226);
@@ -4672,7 +4837,7 @@ body body.theme-dark i {
   animation-play-state: running;
 }
 body body.theme-dark .markdown-rendered mark {
-  background-color: rgba(255, 208, 0, 0.4);
+  background-color: var(--text-highlight-bg, rgba(255, 208, 0, 0.4));
   color: rgb(224, 227, 226);
   cursor: grab;
   filter: none;
@@ -4816,7 +4981,7 @@ body body.theme-dark div.multi-select-pill {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--pill-weight, 400);
   margin-inline-start: 0px;
   border: 0px solid rgba(21, 185, 188, 0.15);
   border-top-left-radius: 5px;
@@ -4881,10 +5046,20 @@ body body.theme-dark .markdown-rendered code {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   color: rgb(224, 227, 226);
-  font-family:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-    "Source Code Pro", monospace;
+  font-family: var(
+    --font-monospace,
+    ui-monospace,
+    SFMono-Regular,
+    "Cascadia Mono",
+    "Roboto Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    Menlo,
+    Monaco,
+    Consolas,
+    "Source Code Pro",
+    monospace
+  );
   padding: 1.4px 5.6px;
 }
 body body.theme-dark .markdown-rendered pre > code {
@@ -4941,7 +5116,7 @@ body
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  width: 16px;
+  width: var(--checkbox-size, 16px);
   transition: box-shadow 0.15s ease-in-out;
   position: relative;
   top: auto;
@@ -5033,10 +5208,12 @@ body body.theme-dark .search-results {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  box-shadow:
+  box-shadow: var(
+    --shadow-l,
     rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
     rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
-    rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
+    rgba(0, 0, 0, 0.2) 0px 30px 90px 0px
+  );
 }
 body body.theme-dark .search-results > * {
   background-color: rgba(0, 0, 0, 0);
@@ -5112,7 +5289,8 @@ body body.theme-dark div.search-results .suggestion-item.is-selected {
 }
 body body.theme-dark .published-container .markdown-rendered h1 {
   color: rgb(224, 227, 226);
-  font-family:
+  font-family: var(
+    --h1-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5125,12 +5303,14 @@ body body.theme-dark .published-container .markdown-rendered h1 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
   color: rgb(224, 227, 226);
-  font-family:
+  font-family: var(
+    --h2-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5143,12 +5323,14 @@ body body.theme-dark .published-container .markdown-rendered h2 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
   color: rgb(224, 227, 226);
-  font-family:
+  font-family: var(
+    --h3-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5161,12 +5343,14 @@ body body.theme-dark .published-container .markdown-rendered h3 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
   color: rgb(224, 227, 226);
-  font-family:
+  font-family: var(
+    --h4-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5179,12 +5363,14 @@ body body.theme-dark .published-container .markdown-rendered h4 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
   color: rgb(224, 227, 226);
-  font-family:
+  font-family: var(
+    --h5-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5197,12 +5383,14 @@ body body.theme-dark .published-container .markdown-rendered h5 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
   color: rgb(224, 227, 226);
-  font-family:
+  font-family: var(
+    --h6-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5215,7 +5403,8 @@ body body.theme-dark .published-container .markdown-rendered h6 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body
@@ -5315,10 +5504,10 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
   color: rgb(212, 227, 255);
-  font-weight: 600;
+  font-weight: var(--font-weight, 600);
 }
 body body.theme-dark .callout > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5798,7 +5987,10 @@ body body.theme-dark .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px 0px;
+  margin-top: var(--heading-spacing, 16px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -5822,9 +6014,9 @@ body body.theme-dark .markdown-rendered tbody {
 body body.theme-dark .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(3, 71, 71);
-  font-weight: 600;
+  font-weight: var(--table-header-weight, 600);
   text-align: center;
-  vertical-align: top;
+  vertical-align: var(--table-cell-vertical-alignment, top);
   border: 0px solid rgb(3, 71, 71);
   border-top-left-radius: 10.5px;
   border-top-right-radius: 0px;
@@ -5841,9 +6033,11 @@ body body.theme-dark .markdown-rendered td {
   color: rgb(224, 227, 226);
   font-weight: 400;
   text-align: start;
-  vertical-align: top;
-  border: 1px solid rgb(47, 63, 63);
+  vertical-align: var(--table-cell-vertical-alignment, top);
+  border-left: var(--table-column-first-border-width, 1px) solid rgb(47, 63, 63);
+  border-right: 1px solid rgb(47, 63, 63);
   border-top: 0px solid rgb(47, 63, 63);
+  border-bottom: 1px solid rgb(47, 63, 63);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5867,10 +6061,10 @@ body body.theme-dark .markdown-rendered tr {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--table-background, rgba(0, 0, 0, 0));
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(odd) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
 }
 body body.theme-dark .markdown-rendered img {
   border-radius: 40.48px;
@@ -5978,7 +6172,7 @@ body body.theme-dark .markdown-rendered audio {
   padding: 0px;
 }
 body body.theme-dark .internal-embed {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--embed-background, rgba(0, 0, 0, 0));
   border-color: rgb(224, 227, 226);
   border-left: 2px solid rgb(21, 185, 188);
   border-right-width: 0px;
@@ -5992,7 +6186,7 @@ body body.theme-dark .internal-embed {
   padding: 0px;
 }
 body body.theme-dark .markdown-embed {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--embed-background, rgba(0, 0, 0, 0));
   border-left: solid;
   border-width: 0px;
   border-color: rgb(224, 227, 226);
@@ -6172,11 +6366,21 @@ body body.theme-dark kbd {
   background-color: rgb(47, 63, 63);
   box-shadow: none;
   color: rgb(224, 227, 226);
-  font-family:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-    "Source Code Pro", monospace;
-  font-size: 14px;
+  font-family: var(
+    --font-monospace,
+    ui-monospace,
+    SFMono-Regular,
+    "Cascadia Mono",
+    "Roboto Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    Menlo,
+    Monaco,
+    Consolas,
+    "Source Code Pro",
+    monospace
+  );
+  font-size: var(--code-size, 14px);
   border: 0px rgb(224, 227, 226);
   border-top-left-radius: 10.5px;
   border-top-right-radius: 10.5px;
@@ -6406,7 +6610,7 @@ body
   > .tree-item
   > .tree-item-self {
   color: rgb(190, 200, 200);
-  cursor: default;
+  cursor: var(--cursor, default);
   font-family:
     Roboto,
     OpenSans,
@@ -6438,7 +6642,7 @@ body
   > .tree-item
   > .tree-item-self {
   color: rgb(190, 200, 200);
-  cursor: default;
+  cursor: var(--cursor, default);
   font-family:
     Roboto,
     OpenSans,
@@ -6464,7 +6668,7 @@ body
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(190, 200, 200);
-  cursor: default;
+  cursor: var(--cursor, default);
   border-color: rgb(190, 200, 200);
   border-width: 0px;
   border-top-left-radius: 11.25px;
@@ -6575,7 +6779,7 @@ body body.theme-dark .nav-files-container {
 body body.theme-dark .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(190, 200, 200);
-  cursor: default;
+  cursor: var(--cursor, default);
   border-color: rgb(190, 200, 200);
   border-width: 0px;
   border-top-left-radius: 11.25px;
@@ -6642,7 +6846,7 @@ body body.theme-dark .page-header .page-title {
     sans-serif;
 }
 body body.theme-dark .math-block {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
   color: rgb(224, 227, 226);
   border-color: rgb(224, 227, 226);
   border-width: 0px;

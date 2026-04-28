@@ -13,13 +13,12 @@ settings:
     alt-format:
       - id: the-color-rgb
         format: rgb
-    default: "#15d00d"
+    default: '#15d00d'
   - id: the-background-color
     title: Background Color
     type: variable-color
     format: hex
-    default: "#000000"
-
+    default: '#000000'
   - id: prompts
     title: Prompts (Not Supported Yet)
     type: heading

@@ -7,15 +7,9 @@ settings:
     allowEmpty: false
     default: matcha
     options:
-      - label: Matcha
-        value: matcha
-      - label: Dreamscape
-        value: dreamscape
-      - label: Matcha
-        value: peach
-      - label: Pool
-        value: pool
-      - label: Strawberry
-        value: strawberry
-      - label: Vanilla
-        value: vanilla
+      - matcha
+      - dreamscape
+      - peach
+      - pool
+      - strawberry
+      - vanilla

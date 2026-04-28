@@ -9,103 +9,103 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --background-modifier-border: transparent !important;
-  --background-primary: hsl(258, 20%, 7%) !important;
-  --background-secondary: hsl(258, 30%, 12%) !important;
-  --bases-cards-background: hsl(258, 20%, 7%) !important;
-  --bases-cards-shadow: 0 0 0 1px transparent !important;
-  --bases-embed-border-color: transparent !important;
-  --bases-embed-border-radius: 100px !important;
-  --bases-table-border-color: transparent !important;
-  --bases-table-cell-background-active: hsl(258, 20%, 7%) !important;
-  --bases-table-container-border-radius: 100px !important;
-  --bases-table-header-background: hsl(258, 20%, 7%) !important;
-  --bases-table-summary-background: hsl(258, 20%, 7%) !important;
-  --button-radius: 100px !important;
+  --background-modifier-border: transparent;
+  --background-primary: hsl(258, 20%, 7%);
+  --background-secondary: hsl(258, 30%, 12%);
+  --bases-cards-background: hsl(258, 20%, 7%);
+  --bases-cards-shadow: 0 0 0 1px transparent;
+  --bases-embed-border-color: transparent;
+  --bases-embed-border-radius: 100px;
+  --bases-table-border-color: transparent;
+  --bases-table-cell-background-active: hsl(258, 20%, 7%);
+  --bases-table-container-border-radius: 100px;
+  --bases-table-header-background: hsl(258, 20%, 7%);
+  --bases-table-summary-background: hsl(258, 20%, 7%);
+  --button-radius: 100px;
   --callout-radius: 100px;
-  --canvas-background: hsl(258, 20%, 7%) !important;
-  --canvas-controls-radius: 100px !important;
-  --checkbox-marker-color: hsl(258, 20%, 7%) !important;
-  --checkbox-radius: 100px !important;
-  --clickable-icon-radius: 100px !important;
-  --code-background: hsl(258, 100%, 10%) !important;
-  --code-border-color: transparent !important;
-  --code-normal: hsl(258, 100%, 80%) !important;
-  --code-radius: 100px !important;
-  --colorBackgroundPrimary: hsl(258, 20%, 7%) !important;
-  --colorBackgroundSecondary: hsl(258, 30%, 12%) !important;
-  --colorOnPrimary: hsl(258, 30%, 12%) !important;
-  --colorPrimary: hsl(258, 100%, 80%) !important;
-  --colorPrimaryContainer: hsl(258, 100%, 10%) !important;
-  --colorPrimaryContainerVariant: hsl(258, 100%, 20%) !important;
-  --colorPrimaryContainerVariantHover: hsl(258, 100%, 10%) !important;
-  --divider-color: transparent !important;
-  --embed-block-shadow-hover: 0 0 0 1px transparent, inset 0 0 0 1px transparent !important;
-  --file-header-background: hsl(258, 20%, 7%) !important;
-  --file-header-background-focused: hsl(258, 20%, 7%) !important;
-  --footnote-divider-color: transparent !important;
-  --footnote-radius: 100px !important;
-  --highlight: hsl(258, 100%, 20%) !important;
-  --hr-color: transparent !important;
-  --light: hsl(258, 20%, 7%) !important;
-  --lightgray: hsl(258, 30%, 12%) !important;
-  --link-external-color: hsl(258, 100%, 80%) !important;
-  --link-external-color-hover: hsl(258, 100%, 80%) !important;
-  --menu-background: hsl(258, 30%, 12%) !important;
-  --metadata-border-color: transparent !important;
-  --metadata-divider-color: transparent !important;
-  --modal-background: hsl(258, 20%, 7%) !important;
-  --nav-item-background-active: hsl(258, 100%, 20%) !important;
-  --nav-item-background-hover: hsl(258, 100%, 10%) !important;
-  --nav-item-color: white !important;
-  --nav-item-radius: 100px !important;
-  --nav-tag-radius: 100px !important;
-  --pdf-background: hsl(258, 20%, 7%) !important;
-  --pdf-page-background: hsl(258, 20%, 7%) !important;
-  --pdf-shadow: 0 0 0 1px transparent !important;
-  --pdf-sidebar-background: hsl(258, 20%, 7%) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px transparent !important;
-  --pill-border-color: transparent !important;
-  --prompt-background: hsl(258, 20%, 7%) !important;
-  --radius-s: 100px !important;
-  --ribbon-background: hsl(258, 30%, 12%) !important;
-  --ribbon-background-collapsed: hsl(258, 20%, 7%) !important;
-  --search-result-background: hsl(258, 20%, 7%) !important;
-  --setting-items-border-color: transparent !important;
-  --shiki-code-background: hsl(258, 100%, 10%) !important;
-  --shiki-code-block-border-radius: 100px !important;
-  --shiki-gutter-border-color: transparent !important;
-  --slider-track-background: transparent !important;
-  --status-bar-background: hsl(258, 30%, 12%) !important;
-  --status-bar-border-color: transparent !important;
-  --suggestion-background: hsl(258, 20%, 7%) !important;
-  --tab-background-active: hsl(258, 100%, 20%) !important;
-  --tab-container-background: hsl(258, 30%, 12%) !important;
-  --tab-outline-color: transparent !important;
-  --tab-radius: 100px !important;
-  --tab-switcher-background: hsl(258, 30%, 12%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(258, 30%, 12%), transparent) !important;
-  --table-add-button-border-color: transparent !important;
-  --table-border-color: transparent !important;
-  --table-drag-handle-color-active: hsl(258, 30%, 12%) !important;
-  --table-header-border-color: transparent !important;
-  --tag-background: hsl(258, 100%, 20%) !important;
-  --tag-background-hover: hsl(258, 100%, 20%) !important;
-  --tag-color: hsl(258, 100%, 80%) !important;
-  --text-highlight-bg: hsl(258, 100%, 20%) !important;
-  --text-on-accent: hsl(258, 30%, 12%) !important;
-  --text-on-accent-inverted: hsl(258, 30%, 12%) !important;
-  --textHighlight: hsl(258, 100%, 20%) !important;
-  --titlebar-background: hsl(258, 30%, 12%) !important;
-  --titlebar-background-focused: hsl(258, 30%, 12%) !important;
-  --titlebar-border-color: transparent !important;
-  --toggle-thumb-color: hsl(258, 30%, 12%) !important;
-  --quartz-icon-color: currentColor !important;
+  --canvas-background: hsl(258, 20%, 7%);
+  --canvas-controls-radius: 100px;
+  --checkbox-marker-color: hsl(258, 20%, 7%);
+  --checkbox-radius: 100px;
+  --clickable-icon-radius: 100px;
+  --code-background: hsl(258, 100%, 10%);
+  --code-border-color: transparent;
+  --code-normal: hsl(258, 100%, 80%);
+  --code-radius: 100px;
+  --colorBackgroundPrimary: hsl(258, 20%, 7%);
+  --colorBackgroundSecondary: hsl(258, 30%, 12%);
+  --colorOnPrimary: hsl(258, 30%, 12%);
+  --colorPrimary: hsl(258, 100%, 80%);
+  --colorPrimaryContainer: hsl(258, 100%, 10%);
+  --colorPrimaryContainerVariant: hsl(258, 100%, 20%);
+  --colorPrimaryContainerVariantHover: hsl(258, 100%, 10%);
+  --divider-color: transparent;
+  --embed-block-shadow-hover: 0 0 0 1px transparent, inset 0 0 0 1px transparent;
+  --file-header-background: hsl(258, 20%, 7%);
+  --file-header-background-focused: hsl(258, 20%, 7%);
+  --footnote-divider-color: transparent;
+  --footnote-radius: 100px;
+  --highlight: var(--text-highlight-bg, hsl(258, 100%, 20%));
+  --hr-color: transparent;
+  --light: var(--background-primary, hsl(258, 20%, 7%));
+  --lightgray: var(--background-secondary, hsl(258, 30%, 12%));
+  --link-external-color: hsl(258, 100%, 80%);
+  --link-external-color-hover: hsl(258, 100%, 80%);
+  --menu-background: hsl(258, 30%, 12%);
+  --metadata-border-color: transparent;
+  --metadata-divider-color: transparent;
+  --modal-background: hsl(258, 20%, 7%);
+  --nav-item-background-active: hsl(258, 100%, 20%);
+  --nav-item-background-hover: hsl(258, 100%, 10%);
+  --nav-item-color: white;
+  --nav-item-radius: 100px;
+  --nav-tag-radius: 100px;
+  --pdf-background: hsl(258, 20%, 7%);
+  --pdf-page-background: hsl(258, 20%, 7%);
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-sidebar-background: hsl(258, 20%, 7%);
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --pill-border-color: transparent;
+  --prompt-background: hsl(258, 20%, 7%);
+  --radius-s: 100px;
+  --ribbon-background: hsl(258, 30%, 12%);
+  --ribbon-background-collapsed: hsl(258, 20%, 7%);
+  --search-result-background: hsl(258, 20%, 7%);
+  --setting-items-border-color: transparent;
+  --shiki-code-background: hsl(258, 100%, 10%);
+  --shiki-code-block-border-radius: 100px;
+  --shiki-gutter-border-color: transparent;
+  --slider-track-background: transparent;
+  --status-bar-background: hsl(258, 30%, 12%);
+  --status-bar-border-color: transparent;
+  --suggestion-background: hsl(258, 20%, 7%);
+  --tab-background-active: hsl(258, 100%, 20%);
+  --tab-container-background: hsl(258, 30%, 12%);
+  --tab-outline-color: transparent;
+  --tab-radius: 100px;
+  --tab-switcher-background: hsl(258, 30%, 12%);
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(258, 30%, 12%), transparent);
+  --table-add-button-border-color: transparent;
+  --table-border-color: transparent;
+  --table-drag-handle-color-active: hsl(258, 30%, 12%);
+  --table-header-border-color: transparent;
+  --tag-background: hsl(258, 100%, 20%);
+  --tag-background-hover: hsl(258, 100%, 20%);
+  --tag-color: hsl(258, 100%, 80%);
+  --text-highlight-bg: hsl(258, 100%, 20%);
+  --text-on-accent: hsl(258, 30%, 12%);
+  --text-on-accent-inverted: hsl(258, 30%, 12%);
+  --textHighlight: var(--text-highlight-bg, hsl(258, 100%, 20%));
+  --titlebar-background: hsl(258, 30%, 12%);
+  --titlebar-background-focused: hsl(258, 30%, 12%);
+  --titlebar-border-color: transparent;
+  --toggle-thumb-color: hsl(258, 30%, 12%);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -752,170 +752,170 @@ html[saved-theme="dark"] body ul.tags > li {
   },
   light: {
     base: `:root:root {
-  --background-modifier-border: transparent !important;
-  --background-primary: hsl(258, 100%, 97%) !important;
+  --background-modifier-border: transparent;
+  --background-primary: hsl(258, 100%, 97%);
   --background-secondary: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	) !important;
-  --bases-cards-background: hsl(258, 100%, 97%) !important;
-  --bases-cards-shadow: 0 0 0 1px transparent !important;
-  --bases-embed-border-color: transparent !important;
-  --bases-embed-border-radius: 100px !important;
-  --bases-table-border-color: transparent !important;
-  --bases-table-cell-background-active: hsl(258, 100%, 97%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(258, 100%, 31%) !important;
-  --bases-table-container-border-radius: 100px !important;
-  --bases-table-header-background: hsl(258, 100%, 97%) !important;
-  --bases-table-summary-background: hsl(258, 100%, 97%) !important;
-  --blockquote-border-color: hsl(258, 100%, 31%) !important;
-  --blur-background: color-mix(in srgb, hsl(258, 100%, 97%) 65%, transparent) linear-gradient(hsl(258, 100%, 97%), color-mix(in srgb, hsl(258, 100%, 97%) 65%, transparent)) !important;
-  --button-radius: 100px !important;
+	);
+  --bases-cards-background: hsl(258, 100%, 97%);
+  --bases-cards-shadow: 0 0 0 1px transparent;
+  --bases-embed-border-color: transparent;
+  --bases-embed-border-radius: 100px;
+  --bases-table-border-color: transparent;
+  --bases-table-cell-background-active: hsl(258, 100%, 97%);
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(258, 100%, 31%);
+  --bases-table-container-border-radius: 100px;
+  --bases-table-header-background: hsl(258, 100%, 97%);
+  --bases-table-summary-background: hsl(258, 100%, 97%);
+  --blockquote-border-color: hsl(258, 100%, 31%);
+  --blur-background: color-mix(in srgb, hsl(258, 100%, 97%) 65%, transparent) linear-gradient(hsl(258, 100%, 97%), color-mix(in srgb, hsl(258, 100%, 97%) 65%, transparent));
+  --button-radius: 100px;
   --callout-radius: 100px;
-  --canvas-background: hsl(258, 100%, 97%) !important;
-  --canvas-controls-radius: 100px !important;
-  --checkbox-color: hsl(258, 100%, 31%) !important;
-  --checkbox-color-hover: hsl(258, 100%, 31%) !important;
-  --checkbox-marker-color: hsl(258, 100%, 97%) !important;
-  --checkbox-radius: 100px !important;
-  --clickable-icon-radius: 100px !important;
-  --code-background: hsl(258, 100%, 93%) !important;
-  --code-border-color: transparent !important;
-  --code-normal: hsl(258, 100%, 31%) !important;
-  --code-radius: 100px !important;
-  --colorBackgroundPrimary: hsl(258, 100%, 97%) !important;
+  --canvas-background: hsl(258, 100%, 97%);
+  --canvas-controls-radius: 100px;
+  --checkbox-color: hsl(258, 100%, 31%);
+  --checkbox-color-hover: hsl(258, 100%, 31%);
+  --checkbox-marker-color: hsl(258, 100%, 97%);
+  --checkbox-radius: 100px;
+  --clickable-icon-radius: 100px;
+  --code-background: hsl(258, 100%, 93%);
+  --code-border-color: transparent;
+  --code-normal: hsl(258, 100%, 31%);
+  --code-radius: 100px;
+  --colorBackgroundPrimary: hsl(258, 100%, 97%);
   --colorBackgroundSecondary: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	) !important;
-  --colorOnPrimary: white !important;
-  --colorPrimary: hsl(258, 100%, 31%) !important;
-  --colorPrimaryContainer: hsl(258, 100%, 93%) !important;
-  --colorPrimaryContainerVariant: hsl(258, 100%, 85%) !important;
-  --colorPrimaryContainerVariantHover: hsl(258, 100%, 91%) !important;
-  --divider-color: transparent !important;
-  --divider-color-hover: hsl(258, 100%, 31%) !important;
-  --dropdown-background: hsl(258, 100%, 90%) !important;
-  --embed-block-shadow-hover: 0 0 0 1px transparent, inset 0 0 0 1px transparent !important;
-  --embed-border-start: 2px solid hsl(258, 100%, 31%) !important;
-  --file-header-background: hsl(258, 100%, 97%) !important;
-  --file-header-background-focused: hsl(258, 100%, 97%) !important;
-  --flair-background: hsl(258, 100%, 90%) !important;
-  --footnote-divider-color: transparent !important;
-  --footnote-radius: 100px !important;
-  --highlight: hsl(258, 100%, 85%) !important;
-  --hr-color: transparent !important;
-  --interactive-accent: hsl(258, 100%, 31%) !important;
-  --interactive-accent-hover: hsl(258, 100%, 31%) !important;
-  --interactive-normal: hsl(258, 100%, 90%) !important;
-  --light: hsl(258, 100%, 97%) !important;
-  --lightgray: hsla(
+	);
+  --colorOnPrimary: white;
+  --colorPrimary: hsl(258, 100%, 31%);
+  --colorPrimaryContainer: hsl(258, 100%, 93%);
+  --colorPrimaryContainerVariant: hsl(258, 100%, 85%);
+  --colorPrimaryContainerVariantHover: hsl(258, 100%, 91%);
+  --divider-color: transparent;
+  --divider-color-hover: hsl(258, 100%, 31%);
+  --dropdown-background: hsl(258, 100%, 90%);
+  --embed-block-shadow-hover: 0 0 0 1px transparent, inset 0 0 0 1px transparent;
+  --embed-border-start: 2px solid hsl(258, 100%, 31%);
+  --file-header-background: hsl(258, 100%, 97%);
+  --file-header-background-focused: hsl(258, 100%, 97%);
+  --flair-background: hsl(258, 100%, 90%);
+  --footnote-divider-color: transparent;
+  --footnote-radius: 100px;
+  --highlight: var(--text-highlight-bg, hsl(258, 100%, 85%));
+  --hr-color: transparent;
+  --interactive-accent: hsl(258, 100%, 31%);
+  --interactive-accent-hover: hsl(258, 100%, 31%);
+  --interactive-normal: hsl(258, 100%, 90%);
+  --light: var(--background-primary, hsl(258, 100%, 97%));
+  --lightgray: var(--background-secondary, hsla(
 		258,
 		88%,
 		66%,
 		2%
-	) !important;
-  --link-external-color: hsl(258, 100%, 31%) !important;
-  --link-external-color-hover: hsl(258, 100%, 31%) !important;
+	));
+  --link-external-color: hsl(258, 100%, 31%);
+  --link-external-color-hover: hsl(258, 100%, 31%);
   --menu-background: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	) !important;
-  --metadata-border-color: transparent !important;
-  --metadata-divider-color: transparent !important;
-  --modal-background: hsl(258, 100%, 97%) !important;
-  --nav-item-background-active: hsl(258, 100%, 85%) !important;
-  --nav-item-background-hover: hsl(258, 100%, 91%) !important;
-  --nav-item-color: black !important;
-  --nav-item-radius: 100px !important;
-  --nav-tag-radius: 100px !important;
-  --pdf-background: hsl(258, 100%, 97%) !important;
-  --pdf-page-background: hsl(258, 100%, 97%) !important;
-  --pdf-sidebar-background: hsl(258, 100%, 97%) !important;
-  --pill-border-color: transparent !important;
-  --prompt-background: hsl(258, 100%, 97%) !important;
-  --radius-s: 100px !important;
-  --raised-background: color-mix(in srgb, hsl(258, 100%, 97%) 65%, transparent) linear-gradient(hsl(258, 100%, 97%), color-mix(in srgb, hsl(258, 100%, 97%) 65%, transparent)) !important;
+	);
+  --metadata-border-color: transparent;
+  --metadata-divider-color: transparent;
+  --modal-background: hsl(258, 100%, 97%);
+  --nav-item-background-active: hsl(258, 100%, 85%);
+  --nav-item-background-hover: hsl(258, 100%, 91%);
+  --nav-item-color: black;
+  --nav-item-radius: 100px;
+  --nav-tag-radius: 100px;
+  --pdf-background: hsl(258, 100%, 97%);
+  --pdf-page-background: hsl(258, 100%, 97%);
+  --pdf-sidebar-background: hsl(258, 100%, 97%);
+  --pill-border-color: transparent;
+  --prompt-background: hsl(258, 100%, 97%);
+  --radius-s: 100px;
+  --raised-background: color-mix(in srgb, hsl(258, 100%, 97%) 65%, transparent) linear-gradient(hsl(258, 100%, 97%), color-mix(in srgb, hsl(258, 100%, 97%) 65%, transparent));
   --ribbon-background: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	) !important;
-  --ribbon-background-collapsed: hsl(258, 100%, 97%) !important;
-  --search-result-background: hsl(258, 100%, 97%) !important;
-  --secondary: hsl(258, 100%, 31%) !important;
-  --setting-items-border-color: transparent !important;
-  --shiki-code-background: hsl(258, 100%, 93%) !important;
-  --shiki-code-block-border-radius: 100px !important;
-  --shiki-gutter-border-color: transparent !important;
-  --slider-track-background: transparent !important;
+	);
+  --ribbon-background-collapsed: hsl(258, 100%, 97%);
+  --search-result-background: hsl(258, 100%, 97%);
+  --secondary: var(--interactive-accent, hsl(258, 100%, 31%));
+  --setting-items-border-color: transparent;
+  --shiki-code-background: hsl(258, 100%, 93%);
+  --shiki-code-block-border-radius: 100px;
+  --shiki-gutter-border-color: transparent;
+  --slider-track-background: transparent;
   --status-bar-background: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	) !important;
-  --status-bar-border-color: transparent !important;
-  --suggestion-background: hsl(258, 100%, 97%) !important;
-  --tab-background-active: hsl(258, 100%, 85%) !important;
+	);
+  --status-bar-border-color: transparent;
+  --suggestion-background: hsl(258, 100%, 97%);
+  --tab-background-active: hsl(258, 100%, 85%);
   --tab-container-background: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	) !important;
-  --tab-outline-color: transparent !important;
-  --tab-radius: 100px !important;
+	);
+  --tab-outline-color: transparent;
+  --tab-radius: 100px;
   --tab-switcher-background: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	) !important;
+	);
   --tab-switcher-menubar-background: linear-gradient(to top, hsla(
 		258,
 		88%,
 		66%,
 		2%
-	), transparent) !important;
-  --table-add-button-border-color: transparent !important;
-  --table-border-color: transparent !important;
-  --table-drag-handle-background-active: hsl(258, 100%, 31%) !important;
-  --table-header-border-color: transparent !important;
-  --table-selection-border-color: hsl(258, 100%, 31%) !important;
-  --tag-background: hsl(258, 100%, 85%) !important;
-  --tag-background-hover: hsl(258, 100%, 85%) !important;
-  --tag-color: hsl(258, 100%, 31%) !important;
-  --tertiary: hsl(258, 100%, 31%) !important;
-  --text-highlight-bg: hsl(258, 100%, 85%) !important;
-  --text-on-accent-inverted: white !important;
-  --textHighlight: hsl(258, 100%, 85%) !important;
+	), transparent);
+  --table-add-button-border-color: transparent;
+  --table-border-color: transparent;
+  --table-drag-handle-background-active: hsl(258, 100%, 31%);
+  --table-header-border-color: transparent;
+  --table-selection-border-color: hsl(258, 100%, 31%);
+  --tag-background: hsl(258, 100%, 85%);
+  --tag-background-hover: hsl(258, 100%, 85%);
+  --tag-color: hsl(258, 100%, 31%);
+  --tertiary: var(--interactive-accent-hover, hsl(258, 100%, 31%));
+  --text-highlight-bg: hsl(258, 100%, 85%);
+  --text-on-accent-inverted: white;
+  --textHighlight: var(--text-highlight-bg, hsl(258, 100%, 85%));
   --titlebar-background: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	) !important;
+	);
   --titlebar-background-focused: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	) !important;
-  --titlebar-border-color: transparent !important;
-  --quartz-icon-color: currentColor !important;
+	);
+  --titlebar-border-color: transparent;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

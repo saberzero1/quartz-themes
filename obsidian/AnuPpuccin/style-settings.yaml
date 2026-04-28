@@ -1,8 +1,6 @@
 name: AnuPpuccin
 id: anuppuccin-theme-settings
 settings:
-  # Colors
-
   - id: anp-colors-section-header
     title: Colors
     description: Theme Accent and Flavors, Color Overrides, Extended Color Schemes
@@ -112,177 +110,171 @@ settings:
     default: true
   - id: anuppuccin-url-extended-colorschemes
     title: Extended Color Schemes Snippet
-    description: "Download the snippet by clicking on [this link](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css)."
+    description: Download the snippet by clicking on [this link](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css).
     type: info-text
     markdown: true
-
-  # Colors :: Color Overrides
-
   - id: anp-color-overrides-header
     title: Color Overrides
-    description:
+    description: null
     type: heading
     level: 2
     collapsed: true
   - id: ctp-custom-rosewater
     title: Rosewater
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-flamingo
     title: Flamingo
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-pink
     title: Pink
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-mauve
     title: Mauve
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-red
     title: Red
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-maroon
     title: Maroon
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-peach
     title: Peach
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-yellow
     title: Yellow
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-green
     title: Green
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-teal
     title: Teal
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-sky
     title: Sky
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-sapphire
     title: Sapphire
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-blue
     title: Blue
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-lavender
     title: Lavender
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-text
     title: Text
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-subtext1
     title: Subtext 1
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-subtext0
     title: Subtext0
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-overlay2
     title: Overlay 2
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-overlay1
     title: Overlay 1
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-overlay0
     title: Overlay 0
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-surface2
     title: Surface 2
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-surface1
     title: Surface 1
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-surface0
     title: Surface 0
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-base
     title: Base
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-mantle
     title: Mantle
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: ctp-custom-crust
     title: Crust
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "rgb-values"
-
-  # File Editor
-
+    default-light: '#'
+    default-dark: '#'
+    format: rgb-values
   - id: anp-editor-header
     title: File Editor & Markdown Elements
     description: Callouts, Checkboxes, Codeblocks, Lists, Tables, Tags, etc.
@@ -303,8 +295,6 @@ settings:
         value: anp-current-line-border
       - label: Border Only
         value: anp-current-line-border-only
-
-  # File Editor & Markdown Elements :: Callouts
   - id: anp-callout-header
     title: Callouts
     description: Callout styles, border radius, custom colors
@@ -335,6 +325,11 @@ settings:
     type: variable-number
     default: 4
     format: px
+  - id: callout-padding
+    title: Callout Padding
+    description: Be careful, it does not properly work with all the callouts style yet.
+    type: variable-text
+    default: 0px
   - id: callout-title-padding
     title: Callout Title Padding
     type: variable-text
@@ -354,15 +349,12 @@ settings:
   - id: anp-callout-fold-position
     title: Callout Fold Position
     type: variable-select
-    default: "0"
+    default: '0'
     options:
       - label: Left
         value: 0
       - label: Right
         value: 1
-
-  # File Editor & Markdown Elements :: Checkboxes
-
   - id: anp-custom-checkboxes-header
     title: Checkboxes
     description: Custom checkboxes and speech bubbles
@@ -375,9 +367,6 @@ settings:
   - id: anp-speech-bubble
     title: Enable Speech Bubbles
     type: class-toggle
-
-  # File Editor & Markdown Elements :: Codeblocks
-
   - id: anp-codeblock-header
     title: Codeblocks
     description: Codeblock wrapping, line numbering
@@ -422,8 +411,8 @@ settings:
     allowEmpty: true
     format: hex
     opacity: false
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: anp-code-text-color
     title: Codeblock Text Color
     type: variable-themed-color
@@ -431,40 +420,135 @@ settings:
     allowEmpty: true
     format: hex
     opacity: false
-    default-light: "#"
-    default-dark: "#"
-
-  # File Editor & Markdown Elements :: Embeds
+    default-light: '#'
+    default-dark: '#'
   - id: anp-embed-header
     title: Embeds
-    description: Maximum embed height
+    description: Images, videos, iframes, etc.
     type: heading
     level: 2
     collapsed: true
-  - id: embed-max-height
-    title: Maximum embed height in px
+  - id: embed-corner-radius
+    title: Embed Corner Radius
     type: variable-number
-    default: 200
-
-  # File Editor & Markdown Elements :: LaTeX
-
+    default: 4
+    format: px
   - id: anp-latex-header
     title: LaTex
     type: heading
+    description: LaTeX (Math) color, font size
     level: 2
     collapsed: true
-  - id: anp-latex-color
-    title: LaTeX Color
-    type: variable-themed-color
-    description: Applies to LaTeX blocks
+  - id: anp-latex-inline-color
+    title: LaTeX Inline Color
+    type: class-select
     allowEmpty: true
-    format: hex
-    opacity: false
-    default-light: "#"
-    default-dark: "#"
-
-  # File Editor & Markdown Elements :: Lists
-
+    default: anp-latex-inline-text
+    options:
+      - label: Rosewater
+        value: anp-latex-inline-rosewater
+      - label: Flamingo
+        value: anp-latex-inline-flamingo
+      - label: Pink
+        value: anp-latex-inline-pink
+      - label: Mauve
+        value: anp-latex-inline-mauve
+      - label: Red
+        value: anp-latex-inline-red
+      - label: Maroon
+        value: anp-latex-inline-maroon
+      - label: Peach
+        value: anp-latex-inline-peach
+      - label: Yellow
+        value: anp-latex-inline-yellow
+      - label: Green
+        value: anp-latex-inline-green
+      - label: Teal
+        value: anp-latex-inline-teal
+      - label: Sky
+        value: anp-latex-inline-sky
+      - label: Sapphire
+        value: anp-latex-inline-sapphire
+      - label: Blue
+        value: anp-latex-inline-blue
+      - label: Lavender
+        value: anp-latex-inline-lavender
+      - label: Text
+        value: anp-latex-inline-text
+      - label: Subtext 1
+        value: anp-latex-inline-subtext1
+      - label: Subtext 0
+        value: anp-latex-inline-subtext0
+      - label: Overlay 2
+        value: anp-latex-inline-overlay2
+      - label: Overlay 1
+        value: anp-latex-inline-overlay1
+      - label: Overlay 0
+        value: anp-latex-inline-overlay0
+      - label: Surface 2
+        value: anp-latex-inline-surface2
+      - label: Surface 1
+        value: anp-latex-inline-surface1
+      - label: Surface 0
+        value: anp-latex-inline-surface0
+  - id: anp-latex-block-color
+    title: LaTeX Block Color
+    type: class-select
+    allowEmpty: true
+    default: anp-latex-block-text
+    options:
+      - label: Rosewater
+        value: anp-latex-block-rosewater
+      - label: Flamingo
+        value: anp-latex-block-flamingo
+      - label: Pink
+        value: anp-latex-block-pink
+      - label: Mauve
+        value: anp-latex-block-mauve
+      - label: Red
+        value: anp-latex-block-red
+      - label: Maroon
+        value: anp-latex-block-maroon
+      - label: Peach
+        value: anp-latex-block-peach
+      - label: Yellow
+        value: anp-latex-block-yellow
+      - label: Green
+        value: anp-latex-block-green
+      - label: Teal
+        value: anp-latex-block-teal
+      - label: Sky
+        value: anp-latex-block-sky
+      - label: Sapphire
+        value: anp-latex-block-sapphire
+      - label: Blue
+        value: anp-latex-block-blue
+      - label: Lavender
+        value: anp-latex-block-lavender
+      - label: Text
+        value: anp-latex-block-text
+      - label: Subtext 1
+        value: anp-latex-block-subtext1
+      - label: Subtext 0
+        value: anp-latex-block-subtext0
+      - label: Overlay 2
+        value: anp-latex-block-overlay2
+      - label: Overlay 1
+        value: anp-latex-block-overlay1
+      - label: Overlay 0
+        value: anp-latex-block-overlay0
+      - label: Surface 2
+        value: anp-latex-block-surface2
+      - label: Surface 1
+        value: anp-latex-block-surface1
+      - label: Surface 0
+        value: anp-latex-block-surface0
+  - id: anp-latex-block-font-size
+    title: LaTeX Block Font Size
+    description: Change the font size of LaTeX blocks.
+    type: variable-number
+    default: 100
+    format: '%'
   - id: anp-list-header
     title: Lists
     description: Styling, indent, spacing
@@ -487,51 +571,48 @@ settings:
   - id: list-marker-color
     title: Unordered list bullet color
     type: variable-themed-color
-    default-light: "#"
-    default-dark: "#"
-    format: "hex"
+    default-light: '#'
+    default-dark: '#'
+    format: hex
   - id: list-numbered-style
     title: Ordered list style
     type: variable-select
     default: decimal
     options:
-      - label: "Decimal"
+      - label: Decimal
         value: decimal
-      - label: "Decimal with leading zeroes"
+      - label: Decimal with leading zeroes
         value: decimal-leading-zero
-      - label: "Lowercase alphabetical"
+      - label: Lowercase alphabetical
         value: lower-alpha
-      - label: "Uppercase alphabetical"
+      - label: Uppercase alphabetical
         value: upper-alpha
-      - label: "Lowercase Roman Numerals"
+      - label: Lowercase Roman Numerals
         value: lower-roman
-      - label: "Uppercase Roman Numerals"
+      - label: Uppercase Roman Numerals
         value: upper-roman
-      - label: "Lowercase Latin"
+      - label: Lowercase Latin
         value: lower-latin
-      - label: "Uppercase Latin"
+      - label: Uppercase Latin
         value: upper-latin
-      - label: "Lowercase Greek"
+      - label: Lowercase Greek
         value: lower-greek
-      - label: "Uppercase Greek"
+      - label: Uppercase Greek
         value: upper-greek
-      - label: "Hiragana"
+      - label: Hiragana
         value: hiragana
-      - label: "Hiragana Iroha"
+      - label: Hiragana Iroha
         value: hiragana-iroha
-      - label: "Katakana"
+      - label: Katakana
         value: armenian
-      - label: "Katakana Iroha"
+      - label: Katakana Iroha
         value: katakana-iroha
-      - label: "Armenian"
+      - label: Armenian
         value: armenian
-      - label: "CJK Ideographic"
+      - label: CJK Ideographic
         value: cjk-ideographic
-      - label: "Hebrew"
+      - label: Hebrew
         value: hebrew
-
-  # File Editor & Markdown Elements :: Tables
-
   - id: anp-table-header
     title: Tables
     description: Table width, alignment, table element highlight and alignment, border width
@@ -606,10 +687,7 @@ settings:
     title: Custom Table Width
     type: variable-number
     default: 100
-    format: "%"
-
-  # File Editor & Markdown Elements :: Tags
-
+    format: '%'
   - id: anp-tags-header
     title: Tags
     description: Border Width and Border Radius of Tags
@@ -629,9 +707,6 @@ settings:
     min: 0
     step: 0.1
     format: em
-
-  # File Preview
-
   - id: anp-preview-header
     title: File Preview
     description: File Preview Margins and Word-Wrap Width
@@ -650,36 +725,27 @@ settings:
     title: Preview Width
     type: variable-number
     default: 80
-    format: "%"
+    format: '%'
   - id: file-line-width
     title: Maximum Preview Width
     type: variable-number
     default: 700
     format: px
-
-  # Integrations
-
   - id: anp-plugin-header
     title: Integrations
     description: Kanban, MAKE.md, Minimal Cards Snippet, etc.
     type: heading
     level: 1
     collapsed: true
-
-  # Integrations :: Kanban
-
   - id: anp-plugin-kanban
     title: Kanban
-    description:
+    description: null
     type: heading
     level: 2
     collapsed: true
-
-  # Integrations :: Kanban :: Card Settings
-
   - id: anp-plugin-card-settings
     title: Card Settings
-    description:
+    description: null
     type: heading
     level: 3
     collapsed: true
@@ -715,12 +781,9 @@ settings:
     min: -1
     max: 8
     step: 1
-
-  # Integrations :: Kanban :: Lane Settings
-
   - id: anp-plugin-lane-settings
     title: Lane Settings
-    description:
+    description: null
     type: heading
     level: 3
     collapsed: true
@@ -754,41 +817,35 @@ settings:
     min: -1
     max: 20
     step: 1
-
-  # Integrations :: Kanban :: Search Settings
-
   - id: anp-plugin-kanban-search-settings
     title: Search Settings
-    description:
+    description: null
     type: heading
     level: 3
     collapsed: true
   - id: anp-kanban-search-full
     title: Enable Full Width Search Bar
-    description:
+    description: null
     type: class-toggle
   - id: anp-kanban-collapse-lanes
     title: Collapse Lanes With No Search Results
-    description:
+    description: null
     type: class-toggle
   - id: anp-kanban-hide-cards
     title: Hide Cards That Don't Contain the Search Query
-    description:
+    description: null
     type: class-toggle
   - id: anp-kanban-hide-mark
     title: Hide Search Result Highlight in Cards
-    description:
+    description: null
     type: class-toggle
   - id: anp-kanban-uncollapse-lanes
     title: Uncollapse Lanes and Unhide Cards When Sorting
-    description:
+    description: null
     type: class-toggle
-
-  # Integrations :: MAKE.md
-
   - id: anp-plugin-makemd
     title: MAKE.md
-    description:
+    description: null
     type: heading
     level: 2
     collapsed: true
@@ -802,9 +859,6 @@ settings:
         value: block
       - label: Invisible
         value: none
-
-  # Integrations :: Minimal Cards
-
   - id: anp-snippet-minimal-cards
     title: Minimal Cards
     type: heading
@@ -812,12 +866,12 @@ settings:
     collapsed: true
   - id: anp-snippet-minimal-cards-disc
     title: Usage
-    description: "Minimal Cards is a feature of [Minimal](https://github.com/kepano/obsidian-minimal). AnuPpuccin does not come compiled with the snippet, however you can use a compiled version with this theme."
+    description: Minimal Cards is a feature of [Minimal](https://github.com/kepano/obsidian-minimal). AnuPpuccin does not come compiled with the snippet, however you can use a compiled version with this theme.
     type: info-text
     markdown: true
   - id: anuppuccin-url-minimal-cards-snippet
     title: Minimal Cards Snippet
-    description: "Download the snippet from [kepano](https://github.com/kepano/)'s github via [this link](https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/cards.scss)."
+    description: Download the snippet from [kepano](https://github.com/kepano/)'s github via [this link](https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/cards.scss).
     type: info-text
     markdown: true
   - id: cards-min-width
@@ -845,9 +899,6 @@ settings:
     title: Card border width
     type: variable-text
     default: 1px
-
-  # Miscellaneous
-
   - id: anp-misc-element-header
     title: Miscellaneous
     description: Color Palette Transition, Custom Metadata Button
@@ -856,7 +907,7 @@ settings:
     collapsed: true
   - id: anp-color-transition-toggle
     title: Enable Color Transition (WIP)
-    description: "Adds a transition when switching palettes, looks really neat :)"
+    description: Adds a transition when switching palettes, looks really neat :)
     type: class-toggle
   - id: anp-button-metadata-toggle
     title: Enable Custom Metadata Button
@@ -864,9 +915,6 @@ settings:
   - id: anp-print
     title: Enable Print Styling
     type: class-toggle
-
-  # Show/Hide UI Elements
-
   - id: anp-show-hide-elements-header
     title: Show/Hide UI Elements
     description: Toggle Visibility of UI Elements
@@ -897,21 +945,19 @@ settings:
   - id: anp-tooltip-toggle
     title: Hide Tooltips
     type: class-toggle
-
-  # Typography
-
+  - id: anp-hide-external-link-icon
+    title: Hide External Link Icon
+    type: class-toggle
+    default: true
   - id: anp-typography-header
     title: Typography
     description: Fonts, Headings, Text Decoration, etc.
     type: heading
     level: 1
     collapsed: true
-
-  # Typography :: Font Families
-
   - id: anp-font-families-header
     title: Font Families
-    description:
+    description: null
     type: heading
     level: 2
     collapsed: true
@@ -923,21 +969,22 @@ settings:
     title: Live Preview Editor Font
     type: variable-text
     default: Noto Sans
-
-  # Typography :: Font Weights
-
+  - id: anp-editor-font-rv
+    title: Reading View Editor Font
+    type: variable-text
+    default: Noto Sans
   - id: anp-font-weight-header
     title: Font Weights
-    description:
+    description: null
     type: heading
     level: 2
     collapsed: true
   - id: bold-weight
     title: Bold Weight
     type: variable-select
-    default: "600"
+    default: '600'
     options:
-      - label: "Bolder (Relative)"
+      - label: Bolder (Relative)
         value: bolder
       - label: Lightest
         value: 100
@@ -960,7 +1007,7 @@ settings:
   - id: anp-font-live-preview-wt
     title: Live Preview Mode Weight
     type: variable-select
-    default: "400"
+    default: '400'
     options:
       - label: Lightest
         value: 100
@@ -983,7 +1030,7 @@ settings:
   - id: anp-font-preview-wt
     title: Reading Mode Weight
     type: variable-select
-    default: "400"
+    default: '400'
     options:
       - label: Lightest
         value: 100
@@ -1006,7 +1053,7 @@ settings:
   - id: anp-font-editor-wt
     title: Source Mode Weight
     type: variable-select
-    default: "400"
+    default: '400'
     options:
       - label: Lightest
         value: 100
@@ -1026,12 +1073,9 @@ settings:
         value: 800
       - label: Black
         value: 900
-
-  # Typography :: Headings
-
   - id: anp-header-header
     title: Headings
-    description:
+    description: null
     type: heading
     level: 2
     collapsed: true
@@ -1053,12 +1097,9 @@ settings:
     step: 2
     default: 15
     format: px
-
-  # Typography :: Headings :: H1
-
   - id: anp-h1-header
     title: H1
-    description:
+    description: null
     type: heading
     level: 3
     collapsed: true
@@ -1116,12 +1157,9 @@ settings:
   - id: anp-h1-divider
     title: H1 Divider
     type: class-toggle
-
-  # Typography :: Headings :: H2
-
   - id: anp-h2-header
     title: H2
-    description:
+    description: null
     type: heading
     level: 3
     collapsed: true
@@ -1179,12 +1217,9 @@ settings:
   - id: anp-h2-divider
     title: H2 Divider
     type: class-toggle
-
-  # Typography :: Headings :: H3
-
   - id: anp-h3-header
     title: H3
-    description:
+    description: null
     type: heading
     level: 3
     collapsed: true
@@ -1242,12 +1277,9 @@ settings:
   - id: anp-h3-divider
     title: H3 Divider
     type: class-toggle
-
-  # Typography :: Headings :: H4
-
   - id: anp-h4-header
     title: H4
-    description:
+    description: null
     type: heading
     level: 3
     collapsed: true
@@ -1305,12 +1337,9 @@ settings:
   - id: anp-h4-divider
     title: H4 Divider
     type: class-toggle
-
-  # Typography :: Headings :: H5
-
   - id: anp-h5-header
     title: H5
-    description:
+    description: null
     type: heading
     level: 3
     collapsed: true
@@ -1368,12 +1397,9 @@ settings:
   - id: anp-h5-divider
     title: H5 Divider
     type: class-toggle
-
-  # Typography :: Headings :: H6
-
   - id: anp-h6-header
     title: H6
-    description:
+    description: null
     type: heading
     level: 3
     collapsed: true
@@ -1431,12 +1457,23 @@ settings:
   - id: anp-h6-divider
     title: H6 Divider
     type: class-toggle
-
-  # Typography :: Text Decoration
-
+  - id: anp-comment-header
+    title: Comments
+    description: null
+    type: heading
+    level: 2
+    collapsed: true
+  - id: hide-comments
+    title: Hide Comments
+    description: Hides the comments while not editing them.
+    type: class-toggle
+  - id: hide-comment-indicators
+    title: Hide Comment Indicators
+    description: Hides the '%%' while not editing comments.
+    type: class-toggle
   - id: anp-decor-header
     title: Text Decoration
-    description:
+    description: null
     type: heading
     level: 2
     collapsed: true
@@ -1446,9 +1483,11 @@ settings:
   - id: anp-bold-custom
     title: Bold Color
     type: class-select
-    allowEmpty: true
+    allowEmpty: false
     default: anp-bold-red
     options:
+      - label: None
+        value: none
       - label: Rosewater
         value: anp-bold-rosewater
       - label: Flamingo
@@ -1480,9 +1519,11 @@ settings:
   - id: anp-italic-custom
     title: Italic Color
     type: class-select
-    allowEmpty: true
+    allowEmpty: false
     default: anp-italic-green
     options:
+      - label: None
+        value: none
       - label: Rosewater
         value: anp-italic-rosewater
       - label: Flamingo
@@ -1514,7 +1555,7 @@ settings:
   - id: anp-highlight-custom
     title: Highlight Color
     type: class-select
-    allowEmpty: true
+    allowEmpty: false
     default: anp-highlight-yellow
     options:
       - label: Rosewater
@@ -1545,18 +1586,12 @@ settings:
         value: anp-highlight-blue
       - label: Lavender
         value: anp-highlight-lavender
-
-  # Workspace
-
   - id: anp-workspace-header
     title: Workspace
     description: Background, Colorful Frame, Layout, Sidebar, Tabs, Translucency, etc.
     type: heading
     level: 1
     collapsed: true
-
-  # Workspace :: Canvas
-
   - id: anp-canvas-header
     title: Canvas
     description: Darken Canvas Background
@@ -1566,23 +1601,20 @@ settings:
   - id: anp-canvas-dark-bg
     title: Darker Canvas Background
     type: class-toggle
-
-  # Workspace :: Colorful Frame
-
   - id: colorful-frame
     title: Colorful Frame
-    description:
+    description: null
     type: heading
     level: 2
     collapsed: true
   - id: anp-colorful-frame
-    title: "Enable Colorful Frame (WIP)"
+    title: Enable Colorful Frame (WIP)
     type: class-toggle
   - id: anp-colorful-frame-icon-toggle-light
-    title: "Invert Icon Colors - Light"
+    title: Invert Icon Colors - Light
     type: class-toggle
   - id: anp-colorful-frame-icon-toggle-dark
-    title: "Invert Icon Colors - Dark"
+    title: Invert Icon Colors - Dark
     type: class-toggle
   - id: anp-colorful-frame-opacity
     title: Colorful Frame Opacity
@@ -1594,19 +1626,16 @@ settings:
   - id: anp-colorful-frame-color
     title: Custom Colorful Frame Color
     type: variable-themed-color
-    format: "rgb-values"
+    format: rgb-values
     opacity: false
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
     alt-format:
       - id: anp-colorful-frame-color-hsl
-        format: "hsl-values"
-
-  # Workspace :: File Browser
-
+        format: hsl-values
   - id: anp-filebrowser-header
     title: File Browser
-    description: "Enable/Disable File Browser elements"
+    description: Enable/Disable File Browser elements
     type: heading
     level: 2
     collapsed: true
@@ -1625,18 +1654,15 @@ settings:
   - id: anp-file-label-align
     title: File label alignment
     type: variable-select
-    default: "0"
+    default: '0'
     options:
       - label: Right
         value: 1
       - label: Left
         value: 0
-
-  # Workspace :: PDF Viewer
-
   - id: anp-pdf-viewer-header
     title: PDF Viewer
-    description:
+    description: null
     type: heading
     level: 2
     collapsed: true
@@ -1648,18 +1674,15 @@ settings:
     title: Toggle PDF background blending - Light Mode
     desc: Blends PDF viewer background with obsidian background in light mode
     type: class-toggle
-
-  # Workspace :: Rainbow Folders
-
   - id: anp-rainbow-section-header
     title: Rainbow Folders
-    description:
+    description: null
     type: heading
     level: 2
     collapsed: true
   - id: anuppuccin-url-custom-rainbow-colors
     title: Custom rainbow folder colors snippet
-    description: "Download the snippet through [this link](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/custom-rainbow-colors.css)."
+    description: Download the snippet through [this link](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/custom-rainbow-colors.css).
     type: info-text
     markdown: true
   - id: anp-alt-rainbow-style
@@ -1674,12 +1697,9 @@ settings:
         value: anp-full-rainbow-color-toggle
       - label: Simple
         value: anp-simple-rainbow-color-toggle
-
-  # Workspace :: Rainbow Folders :: Full Folder Settings
-
   - id: anp-full-rainbow-folder-settings
     title: Full Folder Settings
-    description:
+    description: null
     type: heading
     level: 3
     collapsed: true
@@ -1697,12 +1717,9 @@ settings:
     title: Folder background color opacity
     type: variable-number
     default: 0.7
-
-  # Workspace :: Rainbow Folders :: Simple Folder Settings
-
   - id: anp-simple-rainbow-folder-settings
     title: Simple Folder Settings
-    description:
+    description: null
     type: heading
     level: 3
     collapsed: true
@@ -1721,12 +1738,9 @@ settings:
   - id: anp-rainbow-subfolder-color-toggle
     title: Enable subfolder color inheritance
     type: class-toggle
-
-  # Workspace :: Stacked Tabs
-
   - id: anp-stacked-tabs-header
     title: Stacked Tabs
-    description:
+    description: null
     type: heading
     level: 2
     collapsed: true
@@ -1740,9 +1754,6 @@ settings:
     description: Multiplies the stack tab pane with which depends on file line width
     type: variable-number
     default: 1
-
-  # Workspace :: Status Bar
-
   - id: anp-status-bar-header
     title: Status Bar
     description: Select status bar style
@@ -1760,12 +1771,9 @@ settings:
         value: anp-floating-status-bar
       - label: Fixed
         value: anp-fixed-status-bar
-
-  # Workspace :: Tabs
-
   - id: anp-alt-tab-header
     title: Tabs
-    description:
+    description: null
     type: heading
     level: 2
     collapsed: true
@@ -1794,9 +1802,6 @@ settings:
   - id: anp-disable-newtab-align
     title: Disable new tab button right alignment
     type: class-toggle
-
-  # Workspace :: Tabs :: Depth Tab Settings
-
   - id: anp-depth-tab-header
     title: Depth Tab Settings
     description: Only applies to inactive tabs
@@ -1818,9 +1823,6 @@ settings:
     type: variable-number
     default: 10
     format: px
-
-  # Workspace :: Tabs :: Animated Safari-style Tab Settings
-
   - id: anp-safari-tab-header
     title: Animated Safari-style Tab Settings
     description: Adapted from github.com/chuckharmston's snippets
@@ -1842,24 +1844,18 @@ settings:
     type: variable-number
     default: 1
     format: px
-
-  # Workspace :: Tabs :: Vanilla Safari-style Tab Settings
-
   - id: anp-safari-vanilla-tab-header
     title: Vanilla Safari-style Tab Settings
-    description:
+    description: null
     type: heading
     level: 3
     collapsed: true
   - id: anp-safari-tab-animated
     title: Enable WIP animated safari tabs
     type: class-toggle
-
-  # Workspace :: Translucency
-
   - id: anp-translucency-header
     title: Translucency
-    description:
+    description: null
     type: heading
     level: 2
     collapsed: true
@@ -1868,9 +1864,6 @@ settings:
     title: Window opacity
     type: variable-number
     default: 0.15
-
-  # Workspace :: Workspace Layout
-
   - id: anp-layout-header
     title: Workspace Layout
     description: Workspace layout and arrangement
@@ -1895,12 +1888,9 @@ settings:
   - id: anp-hide-borders
     title: Hide borders
     type: class-toggle
-
-  # Workspace :: Workspace Layout :: Card Layout
-
   - id: anp-layout-card
     title: Card Layout Settings
-    description:
+    description: null
     type: heading
     level: 3
     collapsed: true
@@ -1930,7 +1920,7 @@ settings:
     type: class-toggle
   - id: anp-layout-border
     title: Border Layout Settings
-    description:
+    description: null
     type: heading
     level: 3
     collapsed: true
@@ -1944,9 +1934,6 @@ settings:
     type: variable-number
     default: 20
     format: px
-
-  # Credits
-
   - id: anuppuccin-support
     title: Support AnuPpuccin
     description: If you like the theme, here are some ways to support development
@@ -1955,16 +1942,16 @@ settings:
     collapsed: true
   - id: anuppuccin-url-donate
     title: Buy Me a Coffee
-    description: "[https://www.buymeacoffee.com/anubisnekhet](https://www.buymeacoffee.com/anubisnekhet)"
+    description: '[https://www.buymeacoffee.com/anubisnekhet](https://www.buymeacoffee.com/anubisnekhet)'
     type: info-text
     markdown: true
   - id: anuppuccin-url-star-repo
     title: Star the Theme on GitHub
-    description: "[https://github.com/anubisnekhet/anuppuccin](https://github.com/anubisnekhet/anuppuccin)"
+    description: '[https://github.com/anubisnekhet/anuppuccin](https://github.com/anubisnekhet/anuppuccin)'
     type: info-text
     markdown: true
   - id: anuppuccin-url-submit-issue
     title: Submit an Issue on GitHub
-    description: "[https://github.com/anubisnekhet/anuppuccin/issues](https://github.com/anubisnekhet/anuppuccin/issues)"
+    description: '[https://github.com/anubisnekhet/anuppuccin/issues](https://github.com/anubisnekhet/anuppuccin/issues)'
     type: info-text
     markdown: true

@@ -625,7 +625,7 @@ function generateFullExtractionScript(selectors) {
       "--callout-icon",
     ]);
 
-    function getAllCssVars(style, baseline, selector) {
+    function getAllCssVars(style, baseline, selector, el) {
       const vars = {};
       const isCallout = selector && selector.includes(".callout");
       for (const prop of allVarNames) {
@@ -639,18 +639,272 @@ function generateFullExtractionScript(selectors) {
               continue;
             }
           }
-          vars[prop] = trimmed;
+          vars[prop] = el ? resolveAuthoredValue(el, prop, trimmed) : trimmed;
         }
       }
       return vars;
     }
 
-    function getStandardProps(style) {
+    const SHORTHAND_TO_LONGHANDS = {
+      "border": ["border-top-color","border-right-color","border-bottom-color","border-left-color",
+                  "border-top-width","border-right-width","border-bottom-width","border-left-width",
+                  "border-top-style","border-right-style","border-bottom-style","border-left-style"],
+      "border-color": ["border-top-color","border-right-color","border-bottom-color","border-left-color"],
+      "border-top": ["border-top-color","border-top-width","border-top-style"],
+      "border-right": ["border-right-color","border-right-width","border-right-style"],
+      "border-bottom": ["border-bottom-color","border-bottom-width","border-bottom-style"],
+      "border-left": ["border-left-color","border-left-width","border-left-style"],
+      "outline": ["outline-color","outline-width","outline-style"],
+      "background": ["background-color","background-image"],
+      "text-decoration": ["text-decoration-color","text-decoration-line","text-decoration-style","text-decoration-thickness"],
+    };
+
+    function computeSpecificity(selector) {
+      let s = selector.trim();
+      let a = 0, b = 0, c = 0;
+
+      // Strip :where() content (0 specificity)
+      s = s.replace(/:where\([^)]*\)/g, "");
+
+      // Handle :is(), :not(), :has() — take max specificity of arguments
+      const pseudoFuncRe = /:(is|not|has)\(([^)]*)\)/g;
+      let funcMatch;
+      while ((funcMatch = pseudoFuncRe.exec(s)) !== null) {
+        const args = funcMatch[2].split(",");
+        let maxA = 0, maxB = 0, maxC = 0;
+        for (const arg of args) {
+          const [ia, ib, ic] = computeSpecificity(arg);
+          if (ia > maxA || (ia === maxA && ib > maxB) || (ia === maxA && ib === maxB && ic > maxC)) {
+            maxA = ia; maxB = ib; maxC = ic;
+          }
+        }
+        a += maxA; b += maxB; c += maxC;
+      }
+      s = s.replace(pseudoFuncRe, "");
+
+      // #id
+      const ids = s.match(/#[a-zA-Z_-][a-zA-Z0-9_-]*/g);
+      if (ids) a += ids.length;
+
+      // .class, [attr], :pseudo-class (not pseudo-elements)
+      const classes = s.match(/\.[a-zA-Z_-][a-zA-Z0-9_-]*/g);
+      if (classes) b += classes.length;
+      const attrs = s.match(/\[[^\]]*\]/g);
+      if (attrs) b += attrs.length;
+      const pseudoClasses = s.match(/:(?!:)[a-zA-Z-]+/g);
+      if (pseudoClasses) b += pseudoClasses.length;
+
+      // type selectors (element names) — exclude * and pseudo-elements
+      const stripped = s.replace(/#[a-zA-Z_-][a-zA-Z0-9_-]*/g, "")
+        .replace(/\.[a-zA-Z_-][a-zA-Z0-9_-]*/g, "")
+        .replace(/\[[^\]]*\]/g, "")
+        .replace(/::[a-zA-Z-]+/g, "")
+        .replace(/:[a-zA-Z-]+/g, "")
+        .replace(/[>+~ ]+/g, " ");
+      const types = stripped.trim().split(/\s+/).filter(t => t && t !== "*");
+      c += types.length;
+
+      // ::pseudo-element counts as (0,0,1)
+      const pseudoEls = selector.match(/::[a-zA-Z-]+/g);
+      if (pseudoEls) c += pseudoEls.length;
+
+      return [a, b, c];
+    }
+
+    function specificityCmp(a, b) {
+      if (a[0] !== b[0]) return a[0] - b[0];
+      if (a[1] !== b[1]) return a[1] - b[1];
+      return a[2] - b[2];
+    }
+
+    function buildVarCandidateIndex() {
+      const index = new Map();
+      let order = 0;
+
+      function processRule(rule, containerApplies) {
+        if (rule.cssRules && rule.cssRules.length > 0 && !rule.selectorText) {
+          let applies = containerApplies;
+          if (rule.type === CSSRule.MEDIA_RULE) {
+            try { applies = window.matchMedia(rule.conditionText || rule.media.mediaText).matches; }
+            catch (e) { applies = true; }
+          } else if (rule.type === CSSRule.SUPPORTS_RULE) {
+            try { applies = CSS.supports(rule.conditionText); }
+            catch (e) { applies = true; }
+          }
+          for (const nested of rule.cssRules) {
+            processRule(nested, applies);
+          }
+          return;
+        }
+
+        if (!rule.selectorText || !rule.style) return;
+
+        for (let i = 0; i < rule.style.length; i++) {
+          const prop = rule.style[i];
+          const val = rule.style.getPropertyValue(prop);
+          if (!val || !val.includes("var(")) continue;
+          const important = rule.style.getPropertyPriority(prop) === "important";
+          const selectors = rule.selectorText.split(",").map(s => s.trim());
+          const specs = selectors.map(s => computeSpecificity(s));
+
+          if (!index.has(prop)) index.set(prop, []);
+          index.get(prop).push({
+            selectors,
+            specs,
+            value: val.trim(),
+            important,
+            order: order++,
+            containerApplies,
+          });
+
+          // Shorthand: also register for longhands
+          const longhands = SHORTHAND_TO_LONGHANDS[prop];
+          if (longhands) {
+            for (const lh of longhands) {
+              if (!index.has(lh)) index.set(lh, []);
+              index.get(lh).push({
+                selectors,
+                specs,
+                value: val.trim(),
+                important,
+                order: order++,
+                containerApplies,
+                isShorthand: prop,
+              });
+            }
+          }
+        }
+      }
+
+      for (const sheet of document.styleSheets) {
+        try {
+          const rules = sheet.cssRules || sheet.rules;
+          if (!rules) continue;
+          for (const rule of rules) {
+            processRule(rule, true);
+          }
+        } catch (e) {
+          // CORS or access error, skip
+        }
+      }
+
+      return index;
+    }
+
+    const varCandidateIndex = buildVarCandidateIndex();
+
+    let matchCache = new Map();
+    let matchCacheEl = null;
+    function elMatchesSelector(el, selector) {
+      if (el !== matchCacheEl) {
+        matchCache = new Map();
+        matchCacheEl = el;
+      }
+      if (matchCache.has(selector)) return matchCache.get(selector);
+      let result = false;
+      try { result = el.matches(selector); } catch (e) {}
+      matchCache.set(selector, result);
+      return result;
+    }
+
+    function extractVarToken(shorthandValue, longhandProp) {
+      if (!shorthandValue || !shorthandValue.includes("var(")) return null;
+      const isColorProp = longhandProp.endsWith("-color");
+      if (!isColorProp) return null;
+      const varRe = /var\([^)]+\)/g;
+      const matches = shorthandValue.match(varRe);
+      if (matches && matches.length === 1) return matches[0];
+      if (matches && matches.length > 1) {
+        for (const m of matches) {
+          if (/color/i.test(m)) return m;
+        }
+        return matches[matches.length - 1];
+      }
+      return null;
+    }
+
+    function resolveAuthoredValue(el, prop, computedValue) {
+      const candidates = varCandidateIndex.get(prop);
+      if (!candidates || candidates.length === 0) return computedValue;
+
+      let winner = null;
+      let winnerSpec = [-1, -1, -1];
+      let winnerOrder = -1;
+      let winnerImportant = false;
+
+      for (const candidate of candidates) {
+        if (!candidate.containerApplies) continue;
+        let matchedSpec = null;
+        for (let i = 0; i < candidate.selectors.length; i++) {
+          if (elMatchesSelector(el, candidate.selectors[i])) {
+            const spec = candidate.specs[i];
+            if (!matchedSpec || specificityCmp(spec, matchedSpec) > 0) {
+              matchedSpec = spec;
+            }
+          }
+        }
+        if (!matchedSpec) continue;
+
+        const dominated =
+          (!winnerImportant && candidate.important) ||
+          (winnerImportant === candidate.important && (
+            specificityCmp(matchedSpec, winnerSpec) > 0 ||
+            (specificityCmp(matchedSpec, winnerSpec) === 0 && candidate.order > winnerOrder)
+          ));
+
+        if (!winner || dominated) {
+          winner = candidate;
+          winnerSpec = matchedSpec;
+          winnerOrder = candidate.order;
+          winnerImportant = candidate.important;
+        }
+      }
+
+      if (!winner) return computedValue;
+
+      if (winner.isShorthand) {
+        const token = extractVarToken(winner.value, prop);
+        if (token) {
+          const fc = token.indexOf(",");
+          const fp = token.indexOf("(");
+          if (fc > fp && fc !== -1) return token;
+          const lp = token.lastIndexOf(")");
+          if (lp === -1) return computedValue;
+          return token.slice(0, lp) + ", " + computedValue + token.slice(lp);
+        }
+        return computedValue;
+      }
+
+      const authored = winner.value;
+
+      // Inject computed fallbacks into var() calls that lack one.
+      // "rgb(var(--ctp-base))" → "rgb(var(--ctp-base, 30, 30, 46))"
+      const injected = authored.replace(
+        /var\(\s*(--[a-zA-Z0-9_-]+)\s*\)/g,
+        (match, varName) => {
+          const refComputed = el
+            ? window.getComputedStyle(el).getPropertyValue(varName)?.trim()
+            : null;
+          if (refComputed) return "var(" + varName + ", " + refComputed + ")";
+          return match;
+        }
+      );
+      if (injected !== authored) return injected;
+      if (authored.includes("var(") && authored.includes(",")) return authored;
+      if (authored.startsWith("var(") && !authored.includes(",")) {
+        const lastParen = authored.lastIndexOf(")");
+        if (lastParen !== -1) return authored.slice(0, lastParen) + ", " + computedValue + authored.slice(lastParen);
+      }
+      return injected;
+    }
+
+    function getStandardProps(style, el) {
       const props = {};
       for (const prop of styleProps) {
         const val = style.getPropertyValue(prop);
         if (val && val.trim() && val !== "none" && val !== "normal" && val !== "auto") {
-          props[prop] = val.trim();
+          const computed = val.trim();
+          props[prop] = el ? resolveAuthoredValue(el, prop, computed) : computed;
         }
       }
       return props;
@@ -667,7 +921,7 @@ function generateFullExtractionScript(selectors) {
           const hasMask = maskImage && maskImage !== "none";
           if (!hasContent && !hasMask) continue;
 
-          const extracted = { ...getAllCssVars(pseudoStyle, baseline), ...getStandardProps(pseudoStyle) };
+          const extracted = { ...getAllCssVars(pseudoStyle, baseline, undefined, el), ...getStandardProps(pseudoStyle, el) };
           if (hasContent) extracted["content"] = content.trim();
 
           if (Object.keys(extracted).length > 0) {
@@ -682,14 +936,14 @@ function generateFullExtractionScript(selectors) {
 
     // Extract from html element
     const htmlStyle = window.getComputedStyle(document.documentElement);
-    const htmlExtracted = { ...getAllCssVars(htmlStyle), ...getStandardProps(htmlStyle) };
+    const htmlExtracted = { ...getAllCssVars(htmlStyle, undefined, undefined, document.documentElement), ...getStandardProps(htmlStyle, document.documentElement) };
     if (Object.keys(htmlExtracted).length > 0) {
       results["html"] = htmlExtracted;
     }
 
     // Extract from body element
     const bodyStyle = window.getComputedStyle(document.body);
-    results["body"] = { ...getAllCssVars(bodyStyle), ...getStandardProps(bodyStyle) };
+    results["body"] = { ...getAllCssVars(bodyStyle, undefined, undefined, document.body), ...getStandardProps(bodyStyle, document.body) };
 
     // Extract pseudo-elements from html and body
     extractPseudoStyles(document.documentElement, "html");
@@ -713,7 +967,7 @@ function generateFullExtractionScript(selectors) {
         if (!el) continue;
 
         const style = window.getComputedStyle(el);
-        const extracted = { ...getAllCssVars(style, cssVarBaseline, selector), ...getStandardProps(style) };
+        const extracted = { ...getAllCssVars(style, cssVarBaseline, selector, el), ...getStandardProps(style, el) };
 
         if (Object.keys(extracted).length > 0) {
           results[selector] = { ...results[selector], ...extracted };

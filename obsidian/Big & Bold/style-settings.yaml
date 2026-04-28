@@ -156,10 +156,10 @@ settings:
     title: File Emoji
     type: variable-select
     allowEmpty: false
-    default: "Noto Emoji"
+    default: Noto Emoji
     options:
-      - "Noto Emoji"
-      - "Noto Color Emoji"
+      - Noto Emoji
+      - Noto Color Emoji
   - id: folders-heading
     title: Folders
     type: heading
@@ -194,10 +194,10 @@ settings:
     title: Folder Emoji
     type: variable-select
     allowEmpty: false
-    default: "Noto Emoji"
+    default: Noto Emoji
     options:
-      - "Noto Emoji"
-      - "Noto Color Emoji"
+      - Noto Emoji
+      - Noto Color Emoji
   - id: folder-style
     title: Folder Style
     type: class-select
@@ -225,29 +225,29 @@ settings:
     collapsed: true
   - id: custom-folder-1
     title: Level 1 Emoji
-    description: "This is the emoji that will be displayed on a level 1 folder. You must wrap the emoji in quotes, like this: '⭐'"
+    description: 'This is the emoji that will be displayed on a level 1 folder. You must wrap the emoji in quotes, like this: ''⭐'''
     type: variable-text
-    default: "'⭐'"
+    default: '''⭐'''
   - id: custom-folder-1-open
     title: Level 1 Emoji - Open
     description: This is the emoji that will be displayed on a level 1 folder when it is open.
     type: variable-text
-    default: "'🌟'"
+    default: '''🌟'''
   - id: custom-folder-2
     title: Level 2 Emoji
-    default: "'🌷'"
+    default: '''🌷'''
     type: variable-text
   - id: custom-folder-2-open
     title: Level 2 Emoji - Open
-    default: "'🌺'"
+    default: '''🌺'''
     type: variable-text
   - id: custom-folder-3
     title: Level 3 Emoji
-    default: "'🐱'"
+    default: '''🐱'''
     type: variable-text
   - id: custom-folder-3-open
     title: Level 3 Emoji - Open
-    default: "'😸'"
+    default: '''😸'''
     type: variable-text
   - id: workspace-background-heading
     title: Background Image
@@ -351,7 +351,7 @@ settings:
     title: Note Transparency
     default: 75
     type: variable-number-slider
-    format: "%"
+    format: '%'
     min: 0
     max: 100
     step: 5
@@ -373,7 +373,7 @@ settings:
     default: 100
     type: variable-number-slider
     min: 0
-    format: "%"
+    format: '%'
     max: 200
     step: 5
   - id: position-heading
@@ -384,7 +384,7 @@ settings:
   - id: img-position-y
     title: Vertical Position
     type: variable-number-slider
-    format: "%"
+    format: '%'
     default: 50
     min: 0
     max: 100
@@ -392,7 +392,7 @@ settings:
   - id: img-position-x
     title: Horizontal Position
     type: variable-number-slider
-    format: "%"
+    format: '%'
     default: 50
     min: 0
     max: 100
@@ -409,7 +409,7 @@ settings:
   - id: img-bg-size-custom
     title: Zoom
     type: variable-number-slider
-    format: "%"
+    format: '%'
     default: 100
     min: 100
     max: 200
@@ -434,75 +434,75 @@ settings:
     description: This font effects headings, links, and highlighted text.
     type: variable-select
     allowEmpty: false
-    default: "Merriweather Sans"
+    default: Merriweather Sans
     options:
-      - "Merriweather Sans"
-      - "Merriweather"
-      - "DM Serif Display"
-      - "Vollkorn"
-      - "EB Garamond"
-      - "Abril Fatface"
-      - "Playfair Display"
-      - "Inknut Antiqua"
-      - "Marko One"
-      - "Quattrocento"
-      - "Avenir Next"
-      - "Crimson Text"
-      - "Fraunces"
-      - "Gentium Book Plus"
-      - "Koh Santepheap"
-      - "PT Serif"
-      - "Tajawal"
-      - "Vesper Libre"
-      - "Montserrat"
-      - "Faster One"
-      - "Oleo Script"
-      - "Lemon"
-      - "Lilita One"
-      - "Merienda"
-      - "Playball"
-      - "Rowdies"
-      - "Nabla"
-      - "Shrikhand"
-      - "Aboreto"
-      - "Bangers"
-      - "Figtree"
-      - "Albert Sans"
-      - "General Sans"
-      - "Outfit"
-      - "Lexend"
-      - "Red Hat Text"
-      - "Satoshi"
-      - "Sen"
-      - "Spline Sans"
-      - "Inter"
-      - "Prompt"
-      - "Poppins"
-      - "Roboto"
-      - "Roboto Condensed"
-      - "Rubik"
-      - "Nunito"
-      - "Nunito Sans"
-      - "Quicksand"
-      - "Tilt Warp"
-      - "Fira Code"
-      - "Fira Sans"
-      - "Fira Sans Condensed"
-      - "Teko"
-      - "Cutive Mono"
-      - "IBM Plex Mono"
-      - "Jetbrains Mono"
-      - "Spline Sans Mono"
-      - "Space Mono"
-      - "Titillium Web"
-      - "Martian Mono"
-      - "DM Mono"
-      - "Source Code Pro"
+      - Merriweather Sans
+      - Merriweather
+      - DM Serif Display
+      - Vollkorn
+      - EB Garamond
+      - Abril Fatface
+      - Playfair Display
+      - Inknut Antiqua
+      - Marko One
+      - Quattrocento
+      - Avenir Next
+      - Crimson Text
+      - Fraunces
+      - Gentium Book Plus
+      - Koh Santepheap
+      - PT Serif
+      - Tajawal
+      - Vesper Libre
+      - Montserrat
+      - Faster One
+      - Oleo Script
+      - Lemon
+      - Lilita One
+      - Merienda
+      - Playball
+      - Rowdies
+      - Nabla
+      - Shrikhand
+      - Aboreto
+      - Bangers
+      - Figtree
+      - Albert Sans
+      - General Sans
+      - Outfit
+      - Lexend
+      - Red Hat Text
+      - Satoshi
+      - Sen
+      - Spline Sans
+      - Inter
+      - Prompt
+      - Poppins
+      - Roboto
+      - Roboto Condensed
+      - Rubik
+      - Nunito
+      - Nunito Sans
+      - Quicksand
+      - Tilt Warp
+      - Fira Code
+      - Fira Sans
+      - Fira Sans Condensed
+      - Teko
+      - Cutive Mono
+      - IBM Plex Mono
+      - Jetbrains Mono
+      - Spline Sans Mono
+      - Space Mono
+      - Titillium Web
+      - Martian Mono
+      - DM Mono
+      - Source Code Pro
   - id: heading-weight
     title: Heading Weight
     type: variable-select
     allowEmpty: false
-    default: "700"
+    default: '700'
     options:
       - label: Light
         value: 300
@@ -746,7 +746,6 @@ settings:
         value: 3.8em
       - label: Huge
         value: 4.4em
-
   - id: inline-title-weight
     title: Inline Title Weight
     default: var(--heading-weight)
@@ -766,7 +765,6 @@ settings:
         value: 700
       - label: Extra Bold
         value: 800
-
   - id: inline-title-font
     title: Inline Title Font Font
     type: variable-select
@@ -774,68 +772,68 @@ settings:
     default: var(--heading-font)
     options:
       - var(--heading-font)
-      - "Merriweather Sans"
-      - "Merriweather"
-      - "DM Serif Display"
-      - "Vollkorn"
-      - "EB Garamond"
-      - "Abril Fatface"
-      - "Playfair Display"
-      - "Inknut Antiqua"
-      - "Marko One"
-      - "Quattrocento"
-      - "Avenir Next"
-      - "Crimson Text"
-      - "Fraunces"
-      - "Gentium Book Plus"
-      - "Koh Santepheap"
-      - "PT Serif"
-      - "Tajawal"
-      - "Vesper Libre"
-      - "Montserrat"
-      - "Faster One"
-      - "Oleo Script"
-      - "Lemon"
-      - "Lilita One"
-      - "Merienda"
-      - "Playball"
-      - "Rowdies"
-      - "Nabla"
-      - "Shrikhand"
-      - "Aboreto"
-      - "Bangers"
-      - "Figtree"
-      - "Albert Sans"
-      - "General Sans"
-      - "Outfit"
-      - "Lexend"
-      - "Red Hat Text"
-      - "Satoshi"
-      - "Sen"
-      - "Spline Sans"
-      - "Inter"
-      - "Prompt"
-      - "Poppins"
-      - "Roboto"
-      - "Roboto Condensed"
-      - "Rubik"
-      - "Nunito"
-      - "Nunito Sans"
-      - "Quicksand"
-      - "Tilt Warp"
-      - "Fira Code"
-      - "Fira Sans"
-      - "Fira Sans Condensed"
-      - "Teko"
-      - "Cutive Mono"
-      - "IBM Plex Mono"
-      - "Jetbrains Mono"
-      - "Spline Sans Mono"
-      - "Space Mono"
-      - "Titillium Web"
-      - "Martian Mono"
-      - "DM Mono"
-      - "Source Code Pro"
+      - Merriweather Sans
+      - Merriweather
+      - DM Serif Display
+      - Vollkorn
+      - EB Garamond
+      - Abril Fatface
+      - Playfair Display
+      - Inknut Antiqua
+      - Marko One
+      - Quattrocento
+      - Avenir Next
+      - Crimson Text
+      - Fraunces
+      - Gentium Book Plus
+      - Koh Santepheap
+      - PT Serif
+      - Tajawal
+      - Vesper Libre
+      - Montserrat
+      - Faster One
+      - Oleo Script
+      - Lemon
+      - Lilita One
+      - Merienda
+      - Playball
+      - Rowdies
+      - Nabla
+      - Shrikhand
+      - Aboreto
+      - Bangers
+      - Figtree
+      - Albert Sans
+      - General Sans
+      - Outfit
+      - Lexend
+      - Red Hat Text
+      - Satoshi
+      - Sen
+      - Spline Sans
+      - Inter
+      - Prompt
+      - Poppins
+      - Roboto
+      - Roboto Condensed
+      - Rubik
+      - Nunito
+      - Nunito Sans
+      - Quicksand
+      - Tilt Warp
+      - Fira Code
+      - Fira Sans
+      - Fira Sans Condensed
+      - Teko
+      - Cutive Mono
+      - IBM Plex Mono
+      - Jetbrains Mono
+      - Spline Sans Mono
+      - Space Mono
+      - Titillium Web
+      - Martian Mono
+      - DM Mono
+      - Source Code Pro
   - id: inline-title-style
     title: Inline Title Style
     type: variable-select
@@ -903,61 +901,61 @@ settings:
     description: This font is used for much of the interface and makes up most of a notes body.
     type: variable-select
     allowEmpty: false
-    default: "Nunito Sans"
+    default: Nunito Sans
     options:
-      - "Nunito Sans"
-      - "Nunito"
-      - "Quicksand"
-      - "Albert Sans"
-      - "Avenir Next"
-      - "Red Hat Text"
-      - "Figtree"
-      - "Inter"
-      - "Lexend"
-      - "Outfit"
-      - "Poppins"
-      - "Prompt"
-      - "Roboto"
-      - "Roboto Condensed"
-      - "Rubik"
-      - "General Sans"
-      - "Satoshi"
-      - "Sen"
-      - "Spline Sans"
-      - "Merriweather Sans"
-      - "Merriweather"
-      - "Crimson Text"
-      - "Fraunces"
-      - "Gentium Book Plus"
-      - "Vesper Libre"
-      - "PT Serif"
-      - "Koh Santepheap"
-      - "Tajawal"
-      - "EB Garamond"
-      - "Quattrocento"
-      - "Vollkorn"
-      - "Inknut Antiqua"
-      - "Montserrat"
-      - "Oleo Script"
-      - "Playball"
-      - "Merienda"
-      - "Fira Code"
-      - "Fira Sans"
-      - "Fira Sans Condensed"
-      - "Titillium Web"
-      - "Cutive Mono"
-      - "Martian Mono"
-      - "Space Mono"
-      - "Spline Sans Mono"
-      - "DM Mono"
-      - "IBM Plex Mono"
-      - "Jetbrains Mono"
-      - "Source Code Pro"
+      - Nunito Sans
+      - Nunito
+      - Quicksand
+      - Albert Sans
+      - Avenir Next
+      - Red Hat Text
+      - Figtree
+      - Inter
+      - Lexend
+      - Outfit
+      - Poppins
+      - Prompt
+      - Roboto
+      - Roboto Condensed
+      - Rubik
+      - General Sans
+      - Satoshi
+      - Sen
+      - Spline Sans
+      - Merriweather Sans
+      - Merriweather
+      - Crimson Text
+      - Fraunces
+      - Gentium Book Plus
+      - Vesper Libre
+      - PT Serif
+      - Koh Santepheap
+      - Tajawal
+      - EB Garamond
+      - Quattrocento
+      - Vollkorn
+      - Inknut Antiqua
+      - Montserrat
+      - Oleo Script
+      - Playball
+      - Merienda
+      - Fira Code
+      - Fira Sans
+      - Fira Sans Condensed
+      - Titillium Web
+      - Cutive Mono
+      - Martian Mono
+      - Space Mono
+      - Spline Sans Mono
+      - DM Mono
+      - IBM Plex Mono
+      - Jetbrains Mono
+      - Source Code Pro
   - id: font-normal
     title: Main Font Weight
     type: variable-select
     allowEmpty: false
-    default: "400"
+    default: '400'
     options:
       - label: Light
         value: 300
@@ -976,10 +974,10 @@ settings:
     description: Choose how emojis will appear in the body of a note.
     type: variable-select
     allowEmpty: false
-    default: "Noto Color Emoji"
+    default: Noto Color Emoji
     options:
-      - "Noto Color Emoji"
-      - "Noto Emoji"
+      - Noto Color Emoji
+      - Noto Emoji
   - id: custom-line-height
     title: Line Height
     description: Control the line spacing in the body of a note.
@@ -1056,10 +1054,10 @@ settings:
     title: Icon Emoji Style
     type: variable-select
     allowEmpty: false
-    default: "Noto Color Emoji"
+    default: Noto Color Emoji
     options:
-      - "Noto Color Emoji"
-      - "Noto Emoji"
+      - Noto Color Emoji
+      - Noto Emoji
   - id: icon-background
     title: Icon Background
     type: variable-select

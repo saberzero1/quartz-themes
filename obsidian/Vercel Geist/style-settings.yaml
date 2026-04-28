@@ -8,9 +8,9 @@ settings:
     allowEmpty: false
     default: vercel-dark
     options:
-      - label: "Vercel Dark"
+      - label: Vercel Dark
         value: vercel-dark
-      - label: "Vercel Light"
+      - label: Vercel Light
         value: vercel-light
   - id: vercel-theme-accent
     title: Accent Color
@@ -25,61 +25,3 @@ settings:
         value: accent-purple
       - label: Cyan
         value: accent-cyan
-  #name: "Vercel Header Colors"
-  #id: vercel-headers
-  - id: heading-color-h1
-    title: H1 color
-    description: Select your H1 color
-    type: variable-select
-    allowEmpty: false
-    default: var(--vercel-blue-500)
-    options:
-      - label: Blue
-        value: var(--vercel-blue-500)
-      - label: Text Primary
-        value: var(--text-1)
-      - label: Text Secondary
-        value: var(--text-2)
-  - id: heading-color-h2
-    title: H2 color
-    description: Select your H2 color
-    type: variable-select
-    allowEmpty: false
-    default: var(--vercel-blue-600)
-    options:
-      - label: Blue
-        value: var(--vercel-blue-600)
-      - label: Text Primary
-        value: var(--text-1)
-      - label: Text Secondary
-        value: var(--text-2)
-  - id: heading-color-h3
-    title: H3 color
-    description: Select your H3 color
-    type: variable-select
-    allowEmpty: false
-    default: var(--text-1)
-    options:
-      - label: Blue
-        value: var(--vercel-blue-500)
-      - label: Text Primary
-        value: var(--text-1)
-      - label: Text Secondary
-        value: var(--text-2)
-  #name: "Vercel Misc Config"
-  #id: vercel-misc
-  - id: text-highlight-bg
-    title: Highlight Color
-    description: Select your text highlight color
-    type: variable-select
-    allowEmpty: false
-    default: rgba(77, 139, 249, 0.3)
-    options:
-      - label: Blue (Light)
-        value: rgba(77, 139, 249, 0.3)
-      - label: Blue (Medium)
-        value: rgba(77, 139, 249, 0.5)
-      - label: Gray (Light)
-        value: rgba(136, 136, 136, 0.3)
-      - label: Gray (Medium)
-        value: rgba(136, 136, 136, 0.5)

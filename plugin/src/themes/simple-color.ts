@@ -4,57 +4,57 @@ export const theme: ThemeData = {
   meta: { name: "simple-color", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
-  --background-primary: black !important;
-  --background-secondary: black !important;
-  --bases-cards-background: black !important;
-  --bases-table-cell-background-active: black !important;
-  --bases-table-header-background: black !important;
-  --bases-table-summary-background: black !important;
-  --bodyFont: Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --canvas-background: black !important;
-  --checkbox-marker-color: black !important;
-  --codeFont: Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --file-header-background: black !important;
-  --file-header-background-focused: black !important;
-  --font-mermaid: Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-print: Georgia, serif, Arial' !important;
-  --font-text: Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-text-theme: Georgia, serif !important;
-  --h1-color: #bf616a !important;
-  --h2-color: #d08770 !important;
-  --h3-color: #ebcb8b !important;
-  --h4-color: #a3be8c !important;
-  --h5-color: #b48ead !important;
-  --h6-color: #8fbcbb !important;
-  --headerFont: Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --inline-title-color: #bf616a !important;
-  --light: black !important;
-  --lightgray: black !important;
-  --menu-background: black !important;
-  --modal-background: black !important;
-  --pdf-background: black !important;
-  --pdf-page-background: black !important;
-  --pdf-sidebar-background: black !important;
-  --prompt-background: black !important;
-  --ribbon-background: black !important;
-  --ribbon-background-collapsed: black !important;
-  --search-result-background: black !important;
-  --status-bar-background: black !important;
-  --suggestion-background: black !important;
-  --tab-background-active: black !important;
-  --tab-container-background: black !important;
-  --tab-switcher-background: black !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, black, transparent) !important;
-  --text-color: #81a1c1 !important;
-  --titleFont: Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: black !important;
-  --titlebar-background-focused: black !important;
-  --quartz-icon-color: currentColor !important;
+  --background-primary: black;
+  --background-secondary: black;
+  --bases-cards-background: black;
+  --bases-table-cell-background-active: black;
+  --bases-table-header-background: black;
+  --bases-table-summary-background: black;
+  --bodyFont: var(--font-text, Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --canvas-background: black;
+  --checkbox-marker-color: black;
+  --codeFont: var(--font-text, Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --file-header-background: black;
+  --file-header-background-focused: black;
+  --font-mermaid: Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-print: Georgia, serif, Arial';
+  --font-text: Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-text-theme: Georgia, serif;
+  --h1-color: #bf616a;
+  --h2-color: #d08770;
+  --h3-color: #ebcb8b;
+  --h4-color: #a3be8c;
+  --h5-color: #b48ead;
+  --h6-color: #8fbcbb;
+  --headerFont: var(--font-text, Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --inline-title-color: #bf616a;
+  --light: var(--background-primary, black);
+  --lightgray: var(--background-secondary, black);
+  --menu-background: black;
+  --modal-background: black;
+  --pdf-background: black;
+  --pdf-page-background: black;
+  --pdf-sidebar-background: black;
+  --prompt-background: black;
+  --ribbon-background: black;
+  --ribbon-background-collapsed: black;
+  --search-result-background: black;
+  --status-bar-background: black;
+  --suggestion-background: black;
+  --tab-background-active: black;
+  --tab-container-background: black;
+  --tab-switcher-background: black;
+  --tab-switcher-menubar-background: linear-gradient(to top, black, transparent);
+  --text-color: #81a1c1;
+  --titleFont: var(--font-text, Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --titlebar-background: black;
+  --titlebar-background-focused: black;
+  --quartz-icon-color: currentColor;
 }
 
 html body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

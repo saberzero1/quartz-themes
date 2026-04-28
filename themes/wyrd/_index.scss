@@ -7,36 +7,449 @@
 }
 
 :root:root {
+  --background-modifier-active-hover: hsla(270, 65%, 58.8%, 0.15) !important;
+  --background-modifier-border: hsl(37, 100%, 50%) !important;
+  --background-modifier-border-focus: hsl(270, 8%, 35%) !important;
+  --background-modifier-border-hover: hsl(270, 8%, 50%) !important;
+  --background-modifier-error: hsl(340, 85%, 48.3%) !important;
+  --background-modifier-error-hover: hsl(340, 85%, 48.3%) !important;
+  --background-modifier-error-rgb: 228, 18, 88 !important;
+  --background-modifier-form-field: hsl(270, 10%, 82.5%) !important;
+  --background-modifier-form-field-hover: hsl(270, 10%, 82.5%) !important;
+  --background-modifier-hover: rgba(0, 0, 0, 0.075) !important;
+  --background-modifier-success: hsla(100, 90%, 33.5%) !important;
+  --background-modifier-success-rgb: 51, 138, 7 !important;
+  --background-primary: hsl(270, 10%, 77.5%) !important;
+  --background-primary-alt: hsl(270, 10%, 75%) !important;
+  --background-secondary: hsl(270, 10%, 77.5%) !important;
+  --background-secondary-alt: hsl(270, 10%, 80%) !important;
+  --bases-cards-background: hsl(270, 10%, 77.5%) !important;
+  --bases-cards-border-width: var(--border-width, 1px) !important;
+  --bases-cards-corner-shape: var(--corner-shape, round) !important;
+  --bases-cards-cover-background: hsl(270, 10%, 75%) !important;
+  --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-cards-radius: var(--radius-m, 8px) !important;
+  --bases-cards-shadow: 0 0 0 1px hsl(37, 100%, 50%) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px hsl(270, 8%, 50%) !important;
   --bases-embed-border-color: hsl(37, 100%, 50%) !important;
+  --bases-embed-border-radius: var(--radius-s, 4px) !important;
+  --bases-group-heading-property-color: hsl(270, 10%, 20%) !important;
+  --bases-group-heading-property-size: var(--font-ui-smaller, 12px) !important;
+  --bases-group-heading-property-weight: var(--font-normal, 400) !important;
+  --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
+  --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
+  --bases-header-border-width: 0 0 var(--border-width) 0 !important;
   --bases-table-border-color: hsl(37, 100%, 50%) !important;
+  --bases-table-cell-background-active: hsl(270, 10%, 77.5%) !important;
+  --bases-table-cell-background-disabled: hsl(270, 10%, 75%) !important;
+  --bases-table-cell-background-selected: hsla(270, 65%, 58.8%, 0.1) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(270, 8%, 35%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(269, 65.65%, 63.21%) !important;
+  --bases-table-column-border-width: var(--border-width, 1px) !important;
+  --bases-table-container-border-radius: var(--radius-s, 4px) !important;
+  --bases-table-container-border-width: var(--border-width, 1px) !important;
+  --bases-table-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-table-group-background: hsl(270, 10%, 75%) !important;
   --bases-table-header-background: hsl(270, 10%, 77.5%) !important;
   --bases-table-header-background-hover: rgba(0, 0, 0, 0.075) !important;
-  --focus-ring-color: #0df !important;
-  --tab-container-background: hsl(270, 10%, 75%) !important;
-  --table-border-color: hsl(37, 100%, 50%) !important;
-  --text-accent: hsl(270, 65%, 58.8%) !important;
-  --text-faint: hsl(270, 10%, 17.5%) !important;
-  --text-normal: hsl(270, 8%, 35%) !important;
-  --titlebar-background: hsl(270, 10%, 77.5%) !important;
-  --input-height: 30px !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
-  --input-radius: 5px !important;
-  --background-modifier-border: hsl(37, 100%, 50%) !important;
-  --background-modifier-form-field: hsl(270, 10%, 82.5%) !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
+  --bases-table-header-color: hsl(270, 10%, 20%) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent var(--size-4-6), black var(--size-4-6)) !important;
+  --bases-table-header-weight: var(--font-weight, 400) !important;
+  --bases-table-row-background-hover: var(--table-row-background-hover, transparent) !important;
+  --bases-table-row-border-width: var(--border-width, 1px) !important;
+  --bases-table-summary-background: hsl(270, 10%, 77.5%) !important;
+  --bases-table-summary-background-hover: rgba(0, 0, 0, 0.075) !important;
+  --blockquote-border-color: hsl(269, 65.65%, 63.21%) !important;
+  --blur-background: color-mix(in srgb, hsl(270, 10%, 77.5%) 65%, transparent) linear-gradient(hsl(270, 10%, 77.5%), color-mix(in srgb, hsl(270, 10%, 77.5%) 65%, transparent)) !important;
+  --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation)) brightness(var(--blur-brightness)) !important;
+  --blur-m: blur(var(--blur-radius-m)) saturate(var(--blur-saturation)) brightness(var(--blur-brightness)) !important;
+  --blur-s: blur(var(--blur-radius-s)) saturate(var(--blur-saturation)) brightness(var(--blur-brightness)) !important;
+  --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
+  --button-corner-shape: var(--corner-shape, round) !important;
+  --button-radius: var(--input-radius, 5px) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode, darken);
+  --callout-bug: 228, 18, 88;
+  --callout-default: var(--color-blue-rgb, 8, 109, 221);
+  --callout-error: 228, 18, 88;
+  --callout-example: var(--color-purple-rgb, 120, 82, 238);
+  --callout-fail: 228, 18, 88;
+  --callout-important: var(--color-cyan-rgb, 0, 191, 188);
+  --callout-info: var(--color-blue-rgb, 8, 109, 221);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 12px 12px 12px 24px);
+  --callout-question: var(--color-orange-rgb, 236, 117, 0);
+  --callout-radius: var(--radius-s, 4px);
+  --callout-success: 51, 138, 7;
+  --callout-summary: var(--color-cyan-rgb, 0, 191, 188);
+  --callout-tip: var(--color-cyan-rgb, 0, 191, 188);
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb, 8, 109, 221);
+  --callout-warning: var(--color-orange-rgb, 236, 117, 0);
+  --canvas-background: hsl(270, 10%, 77.5%) !important;
+  --canvas-card-label-color: hsl(270, 10%, 17.5%) !important;
+  --canvas-color-1: 228, 18, 88 !important;
+  --canvas-color-2: var(--color-orange-rgb, 236, 117, 0) !important;
+  --canvas-color-3: var(--color-yellow-rgb, 224, 172, 0) !important;
+  --canvas-color-4: 51, 138, 7 !important;
+  --canvas-color-5: var(--color-cyan-rgb, 0, 191, 188) !important;
+  --canvas-color-6: var(--color-purple-rgb, 120, 82, 238) !important;
+  --canvas-controls-icon-size: var(--icon-s, 16px) !important;
+  --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
+  --canvas-controls-radius: var(--radius-s, 4px) !important;
+  --canvas-dot-pattern: hsl(270, 13%, 65%) !important;
+  --caret-color: hsl(270, 8%, 35%) !important;
+  --checkbox-border-color: hsl(270, 10%, 17.5%) !important;
+  --checkbox-border-color-hover: hsl(270, 10%, 20%) !important;
+  --checkbox-color: hsl(269, 65.65%, 63.21%) !important;
+  --checkbox-color-hover: hsl(267, 66.3%, 67.62%) !important;
+  --checkbox-marker-color: hsl(270, 10%, 77.5%) !important;
+  --checkbox-radius: var(--radius-s, 4px) !important;
+  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checklist-done-color: hsl(270, 10%, 20%) !important;
+  --clickable-icon-radius: var(--radius-s, 4px) !important;
+  --code-background: hsl(270, 10%, 75%) !important;
+  --code-border-color: hsl(37, 100%, 50%) !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.075) !important;
+  --code-comment: hsl(270, 10%, 17.5%) !important;
+  --code-function: hsl(37, 100%, 50%) !important;
+  --code-important: hsl(25, 85%, 50%) !important;
+  --code-keyword: hsl(330, 85%, 47.2%) !important;
+  --code-normal: hsl(270, 8%, 35%) !important;
+  --code-operator: hsl(340, 85%, 48.3%) !important;
+  --code-property: hsla(175, 100%, 50%) !important;
+  --code-punctuation: hsl(270, 10%, 20%) !important;
+  --code-radius: var(--radius-s, 4px) !important;
+  --code-size: var(--font-smaller, 0.875em) !important;
+  --code-string: hsla(100, 90%, 33.5%) !important;
+  --code-tag: hsl(340, 85%, 48.3%) !important;
+  --code-value: hsl(270, 65%, 58.8%) !important;
+  --collapse-icon-color: hsl(270, 10%, 17.5%) !important;
+  --collapse-icon-color-collapsed: hsl(270, 65%, 58.8%) !important;
+  --color-accent: hsl(270, 65%, 58.8%) !important;
+  --color-accent-1: hsl(269, 65.65%, 63.21%) !important;
+  --color-accent-2: hsl(267, 66.3%, 67.62%) !important;
+  --color-accent-hsl: 270, 65%, 58.8% !important;
+  --divider-color: hsl(37, 100%, 50%) !important;
+  --divider-color-hover: hsl(269, 65.65%, 63.21%) !important;
+  --divider-vertical-height: calc(100% - var(--header-height)) !important;
+  --dropdown-background: hsl(270, 10%, 82.5%) !important;
+  --dropdown-background-hover: hsl(270, 10%, 77.5%) !important;
+  --dropdown-background-position: var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
+  --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
+  --dropdown-padding: 0 var(--dropdown-padding-end) 0 var(--dropdown-padding-start) !important;
+  --embed-block-shadow-hover: 0 0 0 1px hsl(37, 100%, 50%), inset 0 0 0 1px hsl(37, 100%, 50%) !important;
+  --embed-border-start: 2px solid hsl(269, 65.65%, 63.21%) !important;
+  --embed-padding: 0 0 0 var(--size-4-6) !important;
+  --file-header-background: hsl(270, 10%, 77.5%) !important;
+  --file-header-background-focused: hsl(270, 10%, 77.5%) !important;
+  --file-header-border: var(--border-width, 1px solid transparent) solid transparent !important;
+  --file-header-font: "??", Neucha, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font-size: var(--font-ui-small, 13px) !important;
+  --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
+  --file-margins-x: var(--size-4-8, 32px) !important;
+  --file-margins-y: var(--size-4-8, 32px) !important;
+  --flair-background: hsl(270, 10%, 82.5%) !important;
+  --flair-color: hsl(270, 8%, 35%) !important;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
+  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
+  --font-interface: "??", Neucha, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-mermaid: "??", Neucha, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-monospace: "??", "Space Mono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-print: "??", "??", Neucha, "Arial" !important;
+  --font-text: "??", Neucha, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-weight: var(--font-normal, 400) !important;
+  --footnote-divider-color: hsl(37, 100%, 50%) !important;
+  --footnote-divider-color-active: var(--metadata-divider-color-focus, transparent) !important;
+  --footnote-divider-width: var(--border-width, 1px) !important;
+  --footnote-gap: var(--size-4-1, 4px) !important;
+  --footnote-id-color: hsl(270, 10%, 20%) !important;
+  --footnote-id-color-no-occurrences: hsl(270, 10%, 17.5%) !important;
+  --footnote-input-background: var(--metadata-input-background, transparent) !important;
+  --footnote-input-background-active: rgba(0, 0, 0, 0.075) !important;
+  --footnote-line-height: var(--line-height-normal, 1.5) !important;
+  --footnote-padding-block: var(--size-2-3, 6px) !important;
+  --footnote-padding-inline: var(--size-2-3, 6px) !important;
+  --footnote-radius: var(--radius-s, 4px) !important;
+  --footnote-size: var(--font-smaller, 0.875em) !important;
+  --graph-line: hsl(37, 100%, 40%) !important;
+  --graph-node: hsl(270, 10%, 20%) !important;
+  --graph-node-attachment: hsl(25, 85%, 50%) !important;
+  --graph-node-focused: hsl(37, 100%, 50%) !important;
+  --graph-node-tag: hsla(100, 90%, 33.5%) !important;
+  --graph-node-unresolved: hsl(270, 10%, 17.5%) !important;
+  --graph-text: hsl(270, 8%, 35%) !important;
+  --h5-line-height: var(--line-height-normal, 1.5) !important;
+  --h6-line-height: var(--line-height-normal, 1.5) !important;
+  --heading-formatting: hsl(270, 10%, 20%) !important;
+  --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
+  --hr-color: hsl(37, 100%, 50%) !important;
+  --icon-color: hsl(270, 10%, 20%) !important;
+  --icon-color-active: hsl(270, 65%, 58.8%) !important;
+  --icon-color-focused: hsl(270, 8%, 35%) !important;
+  --icon-color-hover: hsl(270, 10%, 20%) !important;
+  --icon-size: var(--icon-m, 18px) !important;
+  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12) !important;
+  --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3) !important;
+  --indentation-guide-width: var(--border-width, 1px) !important;
+  --indentation-guide-width-active: var(--border-width, 1px) !important;
+  --inline-title-line-height: var(--h1-line-height, 1.2) !important;
+  --inline-title-size: var(--h1-size, 1.618em) !important;
+  --inline-title-style: var(--h1-style, normal) !important;
+  --inline-title-variant: var(--h1-variant, normal) !important;
+  --inline-title-weight: var(--h1-weight, 700) !important;
+  --input-border-width: var(--border-width, 1px) !important;
+  --input-corner-shape: var(--corner-shape, round) !important;
+  --input-date-separator: hsl(270, 10%, 17.5%) !important;
+  --input-font-weight: var(--font-normal, 400) !important;
+  --input-icon-inset: var(--size-4-1, 4px) !important;
+  --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --input-placeholder-color: hsl(270, 10%, 17.5%) !important;
+  --interactive-accent: hsl(269, 65.65%, 63.21%) !important;
+  --interactive-accent-hover: hsl(267, 66.3%, 67.62%) !important;
+  --interactive-accent-hsl: 270, 65%, 58.8% !important;
+  --interactive-hover: hsl(270, 10%, 77.5%) !important;
+  --interactive-normal: hsl(270, 10%, 82.5%) !important;
+  --link-color: hsl(37, 100%, 50%) !important;
+  --link-color-hover: hsl(37, 100%, 60%) !important;
+  --link-external-color: hsla(175, 100%, 40%) !important;
+  --link-external-color-hover: hsla(175, 100%, 50%) !important;
+  --link-unresolved-color: hsl(25, 85%, 40%) !important;
+  --link-unresolved-decoration-color: hsla(270, 65%, 58.8%, 0.5) !important;
+  --link-weight: var(--font-weight, 400) !important;
+  --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
+  --list-marker-color: hsl(270, 10%, 17.5%) !important;
+  --list-marker-color-collapsed: hsl(270, 65%, 58.8%) !important;
+  --list-marker-color-hover: hsl(270, 10%, 20%) !important;
+  --menu-background: hsl(270, 10%, 77.5%) !important;
+  --menu-border-color: hsl(270, 8%, 50%) !important;
+  --menu-border-width: var(--border-width, 1px) !important;
+  --menu-corner-shape: var(--corner-shape, round) !important;
+  --menu-padding: var(--size-2-3, 6px) !important;
+  --menu-radius: var(--radius-m, 8px) !important;
+  --menu-shadow: var(--shadow-s, 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07)) !important;
+  --metadata-border-color: hsl(37, 100%, 50%) !important;
+  --metadata-divider-color: hsl(37, 100%, 50%) !important;
+  --metadata-input-background-active: rgba(0, 0, 0, 0.075) !important;
+  --metadata-input-font: "??", Neucha, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
+  --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --metadata-input-text-color: hsl(270, 8%, 35%) !important;
+  --metadata-label-background-active: rgba(0, 0, 0, 0.075) !important;
+  --metadata-label-font: "??", Neucha, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-label-text-color: hsl(270, 10%, 20%) !important;
+  --metadata-label-text-color-hover: hsl(270, 10%, 20%) !important;
+  --metadata-padding: var(--size-4-2, 8px 0) 0 !important;
+  --metadata-property-background-active: rgba(0, 0, 0, 0.075) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(270, 8%, 35%) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(270, 8%, 50%) !important;
+  --metadata-property-corner-shape: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape-focus: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
+  --modal-background: hsl(270, 10%, 77.5%) !important;
+  --modal-border-color: hsl(270, 8%, 35%) !important;
+  --modal-border-width: var(--border-width, 1px) !important;
+  --modal-radius: var(--radius-l, 12px) !important;
+  --nav-collapse-icon-color: hsl(270, 10%, 17.5%) !important;
+  --nav-collapse-icon-color-collapsed: hsl(270, 10%, 17.5%) !important;
+  --nav-heading-color: hsl(270, 8%, 35%) !important;
+  --nav-heading-color-collapsed: hsl(270, 10%, 17.5%) !important;
+  --nav-heading-color-collapsed-hover: hsl(270, 10%, 20%) !important;
+  --nav-heading-color-hover: hsl(270, 8%, 35%) !important;
+  --nav-heading-weight: var(--font-medium, 500) !important;
+  --nav-heading-weight-hover: var(--font-medium, 500) !important;
+  --nav-indentation-guide-color: var(--indentation-guide-color, rgba(0, 0, 0, 0.12)) !important;
+  --nav-indentation-guide-width: var(--indentation-guide-width, 1px) !important;
+  --nav-item-background-active: rgba(0, 0, 0, 0.075) !important;
+  --nav-item-background-hover: rgba(0, 0, 0, 0.075) !important;
+  --nav-item-background-selected: hsla(270, 65%, 58.8%, 0.15) !important;
+  --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
+  --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
+  --nav-item-color: hsl(270, 10%, 20%) !important;
+  --nav-item-color-active: hsl(270, 8%, 35%) !important;
+  --nav-item-color-highlighted: hsl(267, 66.3%, 67.62%) !important;
+  --nav-item-color-hover: hsl(270, 8%, 35%) !important;
+  --nav-item-color-selected: hsl(270, 8%, 35%) !important;
+  --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6, 4px 8px 4px 24px) !important;
+  --nav-item-parent-padding: var(--nav-item-padding, 4px 8px 4px 24px) !important;
+  --nav-item-radius: var(--radius-s, 4px) !important;
+  --nav-item-size: var(--font-ui-small, 13px) !important;
+  --nav-tag-color: hsl(270, 10%, 17.5%) !important;
+  --nav-tag-color-active: hsl(270, 10%, 20%) !important;
+  --nav-tag-color-hover: hsl(270, 10%, 20%) !important;
+  --nav-tag-radius: var(--radius-s, 4px) !important;
+  --nav-tag-weight: var(--font-semibold, 600) !important;
+  --pdf-background: hsl(270, 10%, 77.5%) !important;
+  --pdf-page-background: hsl(270, 10%, 77.5%) !important;
+  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-sidebar-background: hsl(270, 10%, 77.5%) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pill-border-color: hsl(37, 100%, 50%) !important;
   --pill-border-color-hover: hsl(270, 8%, 50%) !important;
-  --pill-border-width: 1px !important;
+  --pill-border-width: var(--border-width, 1px) !important;
   --pill-color: hsl(270, 10%, 20%) !important;
   --pill-color-hover: hsl(270, 8%, 35%) !important;
   --pill-color-remove: hsl(270, 10%, 17.5%) !important;
+  --pill-color-remove-hover: hsl(270, 65%, 58.8%) !important;
+  --popover-font-size: var(--font-text-size, 16px) !important;
+  --prompt-background: hsl(270, 10%, 77.5%) !important;
+  --prompt-border-color: hsl(270, 8%, 35%) !important;
+  --prompt-border-width: var(--border-width, 1px) !important;
+  --raised-background: color-mix(in srgb, hsl(270, 10%, 77.5%) 65%, transparent) linear-gradient(hsl(270, 10%, 77.5%), color-mix(in srgb, hsl(270, 10%, 77.5%) 65%, transparent)) !important;
+  --raised-blur: var(--blur-s, blur(6px) saturate(1.5) brightness(1.15)) !important;
+  --ribbon-background: hsl(270, 10%, 77.5%) !important;
+  --ribbon-background-collapsed: hsl(270, 10%, 77.5%) !important;
+  --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3, 8px 4px 12px) !important;
+  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
+  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
+  --scrollbar-radius: var(--radius-l, 12px) !important;
+  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
+  --search-clear-button-color: hsl(270, 10%, 20%) !important;
+  --search-icon-color: hsl(270, 10%, 20%) !important;
+  --search-result-background: hsl(270, 10%, 77.5%) !important;
+  --setting-group-heading-color: hsl(270, 8%, 35%) !important;
+  --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
+  --setting-group-heading-weight: var(--font-semibold, 600) !important;
+  --setting-items-background: hsl(270, 10%, 75%) !important;
+  --setting-items-border-color: hsl(37, 100%, 50%) !important;
+  --setting-items-padding: var(--size-4-5, 20px) !important;
+  --setting-items-radius: var(--radius-l, 12px) !important;
+  --shiki-active-tab-border-color: hsl(270, 10%, 20%) !important;
+  --shiki-code-background: hsl(270, 10%, 75%) !important;
+  --shiki-code-block-border-radius: var(--code-radius, 4px) !important;
+  --shiki-code-block-spacing: var(--p-spacing, 1rem) !important;
+  --shiki-code-comment: hsl(270, 10%, 17.5%) !important;
+  --shiki-code-function: hsla(100, 90%, 33.5%) !important;
+  --shiki-code-important: hsl(25, 85%, 50%) !important;
+  --shiki-code-keyword: hsl(330, 85%, 47.2%) !important;
+  --shiki-code-normal: hsl(270, 10%, 20%) !important;
+  --shiki-code-property: hsla(175, 100%, 50%) !important;
+  --shiki-code-punctuation: hsl(270, 10%, 20%) !important;
+  --shiki-code-string: hsl(37, 100%, 50%) !important;
+  --shiki-code-value: hsl(270, 65%, 58.8%) !important;
+  --shiki-gutter-border-color: hsl(37, 100%, 50%) !important;
+  --shiki-gutter-border-width: var(--border-width, 1px) !important;
+  --shiki-gutter-text-color: hsl(270, 10%, 17.5%) !important;
+  --shiki-gutter-text-color-highlight: hsl(270, 10%, 20%) !important;
+  --shiki-highlight-green: rgba(51, 138, 7, 0.5) !important;
+  --shiki-highlight-green-background: rgba(51, 138, 7, 0.1) !important;
+  --shiki-highlight-neutral: hsl(270, 10%, 20%) !important;
+  --shiki-highlight-neutral-background: rgba(var(--mono-rgb-100), 0.05) !important;
+  --shiki-highlight-red: rgba(228, 18, 88, 0.5) !important;
+  --shiki-highlight-red-background: rgba(228, 18, 88, 0.1) !important;
+  --shiki-terminal-dots-color: hsl(270, 10%, 17.5%) !important;
+  --shiki-tooltip-background: var(--background-modifier-message, rgba(0, 0, 0, 0.9)) !important;
+  --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9) !important;
+  --slider-thumb-border-color: hsl(270, 8%, 50%) !important;
+  --slider-thumb-border-width: var(--border-width, 1px) !important;
+  --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
+  --slider-track-background: hsl(37, 100%, 50%) !important;
+  --status-bar-background: hsl(270, 10%, 77.5%) !important;
+  --status-bar-border-color: hsl(37, 100%, 50%) !important;
+  --status-bar-border-width: var(--border-width) 0 0 var(--border-width, 1px 0 0 1px) !important;
+  --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
+  --status-bar-radius: var(--radius-m, 8px 0 0 0) 0 0 0 !important;
+  --status-bar-text-color: hsl(270, 10%, 20%) !important;
+  --suggestion-background: hsl(270, 10%, 77.5%) !important;
+  --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
+  --sync-avatar-color-1: hsl(340, 85%, 48.3%) !important;
+  --sync-avatar-color-2: hsl(25, 85%, 50%) !important;
+  --sync-avatar-color-3: hsl(37, 100%, 50%) !important;
+  --sync-avatar-color-4: hsla(100, 90%, 33.5%) !important;
+  --sync-avatar-color-5: hsla(175, 100%, 50%) !important;
+  --sync-avatar-color-6: hsl(190, 100%, 26%) !important;
+  --sync-avatar-color-7: hsl(270, 65%, 58.8%) !important;
+  --sync-avatar-color-8: hsl(330, 85%, 47.2%) !important;
+  --tab-background-active: hsl(270, 10%, 77.5%) !important;
+  --tab-container-background: hsl(270, 10%, 75%) !important;
+  --tab-divider-color: hsl(270, 8%, 50%) !important;
+  --tab-font-size: var(--font-ui-small, 13px) !important;
+  --tab-outline-color: hsl(37, 100%, 50%) !important;
+  --tab-radius: var(--radius-s, 4px) !important;
+  --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
+  --tab-stacked-header-width: var(--header-height, 40px) !important;
+  --tab-switcher-background: hsl(270, 10%, 77.5%) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(270, 10%, 77.5%), transparent) !important;
+  --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(270, 65%, 58.8%) !important;
+  --tab-text-color: hsl(270, 10%, 17.5%) !important;
+  --tab-text-color-active: hsl(270, 10%, 20%) !important;
+  --tab-text-color-focused: hsl(270, 10%, 20%) !important;
+  --tab-text-color-focused-active: hsl(270, 8%, 35%) !important;
+  --tab-text-color-focused-active-current: hsl(270, 8%, 35%) !important;
+  --tab-text-color-focused-highlighted: hsl(270, 65%, 58.8%) !important;
+  --table-add-button-border-color: hsl(37, 100%, 50%) !important;
+  --table-add-button-border-width: var(--table-border-width, 1px) !important;
+  --table-border-color: hsl(37, 100%, 50%) !important;
+  --table-column-alt-background: var(--table-background, transparent) !important;
+  --table-column-first-border-width: var(--table-border-width, 1px) !important;
+  --table-column-last-border-width: var(--table-border-width, 1px) !important;
+  --table-drag-handle-background-active: hsl(269, 65.65%, 63.21%) !important;
+  --table-drag-handle-color: hsl(270, 10%, 17.5%) !important;
+  --table-drag-handle-color-active: var(--text-on-accent, white) !important;
+  --table-header-background: var(--table-background, transparent) !important;
+  --table-header-border-color: hsl(37, 100%, 50%) !important;
+  --table-header-border-width: var(--table-border-width, 1px) !important;
+  --table-header-color: hsl(270, 8%, 35%) !important;
+  --table-header-size: 0.875em !important;
+  --table-header-weight: 700 !important;
+  --table-line-height: var(--line-height-tight, 1.3) !important;
+  --table-row-alt-background: var(--table-background, transparent) !important;
+  --table-row-alt-background-hover: var(--table-background, transparent) !important;
+  --table-row-background-hover: var(--table-background, transparent) !important;
+  --table-row-last-border-width: var(--table-border-width, 1px) !important;
+  --table-selection: hsla(270, 65%, 58.8%, 0.1) !important;
+  --table-selection-blend-mode: var(--highlight-mix-blend-mode, darken) !important;
+  --table-selection-border-color: hsl(269, 65.65%, 63.21%) !important;
+  --table-text-size: var(--font-text-size, 16px) !important;
+  --tag-background: hsla(270, 65%, 58.8%, 0.1) !important;
+  --tag-background-hover: hsla(270, 65%, 58.8%, 0.2) !important;
+  --tag-border-color: hsla(270, 65%, 58.8%, 0.15) !important;
+  --tag-border-color-hover: hsla(270, 65%, 58.8%, 0.15) !important;
+  --tag-color: hsl(270, 65%, 58.8%) !important;
+  --tag-color-hover: hsl(270, 65%, 58.8%) !important;
+  --tag-size: var(--font-smaller, 0.875em) !important;
+  --text-accent: hsl(270, 65%, 58.8%) !important;
+  --text-accent-hover: hsl(267, 66.3%, 67.62%) !important;
+  --text-error: hsl(340, 85%, 48.3%) !important;
+  --text-faint: hsl(270, 10%, 17.5%) !important;
+  --text-highlight-bg: rgba(255, 157, 0, 0.7) !important;
+  --text-muted: hsl(270, 10%, 20%) !important;
+  --text-normal: hsl(270, 8%, 35%) !important;
+  --text-selection: hsla(270, 65%, 58.8%, 0.2) !important;
+  --text-success: hsla(100, 90%, 33.5%) !important;
+  --text-warning: hsl(25, 85%, 50%) !important;
+  --titlebar-background: hsl(270, 10%, 77.5%) !important;
+  --titlebar-background-focused: hsl(270, 10%, 75%) !important;
+  --titlebar-border-color: hsl(37, 100%, 50%) !important;
+  --titlebar-text-color: hsl(270, 10%, 20%) !important;
+  --titlebar-text-color-focused: hsl(270, 8%, 35%) !important;
+  --titlebar-text-weight: var(--font-bold, 700) !important;
+  --touch-radius-l: var(--touch-size-l, 52px) !important;
+  --touch-radius-m: var(--touch-size-m, 44px) !important;
+  --touch-radius-s: var(--touch-size-s, 40px) !important;
+  --touch-radius-xl: var(--touch-size-xl, 60px) !important;
+  --touch-radius-xs: var(--touch-size-xs, 30px) !important;
+  --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
+  --traffic-lights-offset-x: var(--header-height, 40px) !important;
+  --traffic-lights-offset-y: var(--header-height, 40px) !important;
+  --vault-profile-color: hsl(270, 8%, 35%) !important;
+  --vault-profile-color-hover: hsl(270, 8%, 35%) !important;
+  --vault-profile-font-size: var(--font-ui-small, 13px) !important;
+  --vault-profile-font-weight: var(--font-medium, 500) !important;
+  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
+  --input-height: 30px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
   --pill-focus-left-adjust: -4px !important;
   --pill-focus-width: calc(100% + 6px) !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 270 !important;
   --accent-l: 58.8% !important;
   --accent-s: 65% !important;
@@ -49,164 +462,50 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: hsla(270, 65%, 58.8%, 0.15) !important;
-  --background-modifier-border-focus: hsl(270, 8%, 35%) !important;
-  --background-modifier-border-hover: hsl(270, 8%, 50%) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
   --background-modifier-cover: rgba(220, 220, 220, 0.4) !important;
-  --background-modifier-error: hsl(340, 85%, 48.3%) !important;
-  --background-modifier-error-hover: hsl(340, 85%, 48.3%) !important;
-  --background-modifier-error-rgb: 228, 18, 88 !important;
-  --background-modifier-form-field-hover: hsl(270, 10%, 82.5%) !important;
-  --background-modifier-hover: rgba(0, 0, 0, 0.075) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
-  --background-modifier-success: hsla(100, 90%, 33.5%) !important;
-  --background-modifier-success-rgb: 51, 138, 7 !important;
-  --background-primary: hsl(270, 10%, 77.5%) !important;
-  --background-primary-alt: hsl(270, 10%, 75%) !important;
-  --background-secondary: hsl(270, 10%, 77.5%) !important;
-  --background-secondary-alt: hsl(270, 10%, 80%) !important;
-  --bases-cards-background: hsl(270, 10%, 77.5%) !important;
-  --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-corner-shape: round !important;
-  --bases-cards-cover-background: hsl(270, 10%, 75%) !important;
-  --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
-  --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px hsl(37, 100%, 50%) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px hsl(270, 8%, 50%) !important;
-  --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: hsl(270, 10%, 20%) !important;
   --bases-group-heading-property-display: block !important;
-  --bases-group-heading-property-size: 12px !important;
-  --bases-group-heading-property-weight: 400 !important;
-  --bases-group-heading-value-size: 0.875em !important;
-  --bases-group-heading-value-weight: 600 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-cell-background-active: hsl(270, 10%, 77.5%) !important;
-  --bases-table-cell-background-disabled: hsl(270, 10%, 75%) !important;
-  --bases-table-cell-background-selected: hsla(270, 65%, 58.8%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(270, 8%, 35%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(269, 65.65%, 63.21%) !important;
-  --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 4px !important;
-  --bases-table-container-border-width: 1px !important;
-  --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: hsl(270, 10%, 75%) !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-color: hsl(270, 10%, 20%) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
-  --bases-table-header-weight: 400 !important;
-  --bases-table-row-background-hover: transparent !important;
-  --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: hsl(270, 10%, 77.5%) !important;
-  --bases-table-summary-background-hover: rgba(0, 0, 0, 0.075) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: hsl(269, 65.65%, 63.21%) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, hsl(270, 10%, 77.5%) 65%, transparent) linear-gradient(hsl(270, 10%, 77.5%), color-mix(in srgb, hsl(270, 10%, 77.5%) 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
-  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
-  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
   --blur-opacity-m: 90% !important;
   --blur-opacity-s: 65% !important;
   --blur-radius-l: 16px !important;
   --blur-radius-m: 10px !important;
   --blur-radius-s: 6px !important;
-  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
   --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
-  --bold-weight: 600 !important;
   --border-width: 1px !important;
-  --button-corner-shape: round !important;
-  --button-radius: 5px !important;
-  --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: 228, 18, 88;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 8, 109, 221;
-  --callout-error: 228, 18, 88;
-  --callout-example: 120, 82, 238;
-  --callout-fail: 228, 18, 88;
-  --callout-important: 0, 191, 188;
-  --callout-info: 8, 109, 221;
-  --callout-padding: 12px 12px 12px 24px;
-  --callout-question: 236, 117, 0;
   --callout-quote: 158, 158, 158;
-  --callout-radius: 4px;
-  --callout-success: 51, 138, 7;
-  --callout-summary: 0, 191, 188;
-  --callout-tip: 0, 191, 188;
   --callout-title-padding: 0;
-  --callout-title-weight: 600;
-  --callout-todo: 8, 109, 221;
-  --callout-warning: 236, 117, 0;
-  --canvas-background: hsl(270, 10%, 77.5%) !important;
-  --canvas-card-label-color: hsl(270, 10%, 17.5%) !important;
   --canvas-color: 192, 192, 192 !important;
-  --canvas-color-1: 228, 18, 88 !important;
-  --canvas-color-2: 236, 117, 0 !important;
-  --canvas-color-3: 224, 172, 0 !important;
-  --canvas-color-4: 51, 138, 7 !important;
-  --canvas-color-5: 0, 191, 188 !important;
-  --canvas-color-6: 120, 82, 238 !important;
-  --canvas-controls-icon-size: 16px !important;
-  --canvas-controls-icon-stroke: 2px !important;
-  --canvas-controls-radius: 4px !important;
-  --canvas-dot-pattern: hsl(270, 13%, 65%) !important;
-  --caret-color: hsl(270, 8%, 35%) !important;
-  --checkbox-border-color: hsl(270, 10%, 17.5%) !important;
-  --checkbox-border-color-hover: hsl(270, 10%, 20%) !important;
-  --checkbox-color: hsl(269, 65.65%, 63.21%) !important;
-  --checkbox-color-hover: hsl(267, 66.3%, 67.62%) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: hsl(270, 10%, 77.5%) !important;
-  --checkbox-radius: 4px !important;
-  --checkbox-size: 16px !important;
-  --checklist-done-color: hsl(270, 10%, 20%) !important;
   --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 4px !important;
-  --code-background: hsl(270, 10%, 75%) !important;
-  --code-border-color: hsl(37, 100%, 50%) !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: rgba(0, 0, 0, 0.075) !important;
-  --code-comment: hsl(270, 10%, 17.5%) !important;
-  --code-function: hsl(37, 100%, 50%) !important;
-  --code-important: hsl(25, 85%, 50%) !important;
-  --code-keyword: hsl(330, 85%, 47.2%) !important;
-  --code-normal: hsl(270, 8%, 35%) !important;
-  --code-operator: hsl(340, 85%, 48.3%) !important;
-  --code-property: hsla(175, 100%, 50%) !important;
-  --code-punctuation: hsl(270, 10%, 20%) !important;
-  --code-radius: 4px !important;
-  --code-size: 0.875em !important;
-  --code-string: hsla(100, 90%, 33.5%) !important;
-  --code-tag: hsl(340, 85%, 48.3%) !important;
-  --code-value: hsl(270, 65%, 58.8%) !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: hsl(270, 10%, 17.5%) !important;
-  --collapse-icon-color-collapsed: hsl(270, 65%, 58.8%) !important;
-  --color-accent: hsl(270, 65%, 58.8%) !important;
-  --color-accent-1: hsl(269, 65.65%, 63.21%) !important;
-  --color-accent-2: hsl(267, 66.3%, 67.62%) !important;
-  --color-accent-hsl: 270, 65%, 58.8% !important;
   --color-base-00: hsl(270, 10%, 82.5%) !important;
   --color-base-05: hsl(270, 10%, 80%) !important;
   --color-base-10: hsl(270, 10%, 77.5%) !important;
@@ -242,69 +541,42 @@
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: hsl(37, 100%, 50%) !important;
-  --divider-color-hover: hsl(269, 65.65%, 63.21%) !important;
-  --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: hsl(270, 10%, 82.5%) !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: hsl(270, 10%, 77.5%) !important;
-  --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
-  --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-icon-inset: 0.5em !important;
   --dropdown-icon-width: 1em !important;
-  --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover: 0 0 0 1px hsl(37, 100%, 50%), inset 0 0 0 1px hsl(37, 100%, 50%) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid hsl(269, 65.65%, 63.21%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
-  --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
-  --file-header-background: hsl(270, 10%, 77.5%) !important;
-  --file-header-background-focused: hsl(270, 10%, 77.5%) !important;
-  --file-header-border: 1px solid transparent !important;
-  --file-header-font: "??", Neucha, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: 32px 32px !important;
-  --file-margins-x: 32px !important;
-  --file-margins-y: 32px !important;
-  --flair-background: hsl(270, 10%, 82.5%) !important;
-  --flair-color: hsl(270, 8%, 35%) !important;
-  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
   --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface: "??", Neucha, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: Neucha !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid: "??", Neucha, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace: "??", "Space Mono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "Space Mono" !important;
   --font-normal: 400 !important;
-  --font-print: "??", "??", Neucha, "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text: "??", Neucha, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: Neucha !important;
@@ -313,31 +585,10 @@
   --font-ui-medium: 15px !important;
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
-  --font-weight: 400 !important;
-  --footnote-divider-color: hsl(37, 100%, 50%) !important;
-  --footnote-divider-color-active: transparent !important;
-  --footnote-divider-width: 1px !important;
-  --footnote-gap: 4px !important;
-  --footnote-id-color: hsl(270, 10%, 20%) !important;
-  --footnote-id-color-no-occurrences: hsl(270, 10%, 17.5%) !important;
   --footnote-id-delimiter: "." !important;
-  --footnote-input-background: transparent !important;
-  --footnote-input-background-active: rgba(0, 0, 0, 0.075) !important;
-  --footnote-line-height: 1.5 !important;
-  --footnote-padding-block: 6px !important;
-  --footnote-padding-inline: 6px !important;
-  --footnote-radius: 4px !important;
-  --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: hsl(37, 100%, 40%) !important;
-  --graph-node: hsl(270, 10%, 20%) !important;
-  --graph-node-attachment: hsl(25, 85%, 50%) !important;
-  --graph-node-focused: hsl(37, 100%, 50%) !important;
-  --graph-node-tag: hsla(100, 90%, 33.5%) !important;
-  --graph-node-unresolved: hsl(270, 10%, 17.5%) !important;
-  --graph-text: hsl(270, 8%, 35%) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.618em !important;
@@ -363,27 +614,18 @@
   --h4-variant: normal !important;
   --h4-weight: 640 !important;
   --h5-letter-spacing: -0.002em !important;
-  --h5-line-height: 1.5 !important;
   --h5-size: 1.076em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 620 !important;
   --h6-letter-spacing: 0em !important;
-  --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: hsl(270, 10%, 20%) !important;
-  --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: darken !important;
-  --hr-color: hsl(37, 100%, 50%) !important;
   --hr-thickness: 2px !important;
-  --icon-color: hsl(270, 10%, 20%) !important;
-  --icon-color-active: hsl(270, 65%, 58.8%) !important;
-  --icon-color-focused: hsl(270, 8%, 35%) !important;
-  --icon-color-hover: hsl(270, 10%, 20%) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -399,34 +641,14 @@
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
-  --indentation-guide-color-active: rgba(0, 0, 0, 0.3) !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
-  --indentation-guide-width: 1px !important;
-  --indentation-guide-width-active: 1px !important;
-  --inline-title-line-height: 1.2 !important;
   --inline-title-margin-bottom: 0.5em !important;
-  --inline-title-size: 1.618em !important;
-  --inline-title-style: normal !important;
-  --inline-title-variant: normal !important;
-  --inline-title-weight: 700 !important;
-  --input-corner-shape: round !important;
-  --input-date-separator: hsl(270, 10%, 17.5%) !important;
-  --input-font-weight: 400 !important;
-  --input-icon-inset: 4px !important;
-  --input-padding: 4px 8px !important;
-  --input-placeholder-color: hsl(270, 10%, 17.5%) !important;
   --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
   --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: hsl(269, 65.65%, 63.21%) !important;
-  --interactive-accent-hover: hsl(267, 66.3%, 67.62%) !important;
-  --interactive-accent-hsl: 270, 65%, 58.8% !important;
-  --interactive-hover: hsl(270, 10%, 77.5%) !important;
-  --interactive-normal: hsl(270, 10%, 82.5%) !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -440,153 +662,72 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: hsl(37, 100%, 50%) !important;
-  --link-color-hover: hsl(37, 100%, 60%) !important;
   --link-decoration: none !important;
   --link-decoration-hover: none !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: hsla(175, 100%, 40%) !important;
-  --link-external-color-hover: hsla(175, 100%, 50%) !important;
   --link-external-decoration: none !important;
   --link-external-decoration-hover: none !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: hsl(25, 85%, 40%) !important;
-  --link-unresolved-decoration-color: hsla(270, 65%, 58.8%, 0.5) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.8 !important;
-  --link-weight: 400 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: 50% !important;
   --list-bullet-size: 0.3em !important;
   --list-bullet-transform: none !important;
-  --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: hsl(270, 10%, 17.5%) !important;
-  --list-marker-color-collapsed: hsl(270, 65%, 58.8%) !important;
-  --list-marker-color-hover: hsl(270, 10%, 20%) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: hsl(270, 10%, 77.5%) !important;
-  --menu-border-color: hsl(270, 8%, 50%) !important;
-  --menu-border-width: 1px !important;
-  --menu-corner-shape: round !important;
-  --menu-padding: 6px !important;
-  --menu-radius: 8px !important;
   --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: hsl(37, 100%, 50%) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: hsl(37, 100%, 50%) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: rgba(0, 0, 0, 0.075) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font: "??", Neucha, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-font-size: 0.875em !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-padding: 4px 8px !important;
-  --metadata-input-text-color: hsl(270, 8%, 35%) !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: rgba(0, 0, 0, 0.075) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font: "??", Neucha, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: hsl(270, 10%, 20%) !important;
-  --metadata-label-text-color-hover: hsl(270, 10%, 20%) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
-  --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: rgba(0, 0, 0, 0.075) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(270, 8%, 35%) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(270, 8%, 50%) !important;
-  --metadata-property-corner-shape: round !important;
-  --metadata-property-corner-shape-focus: round !important;
-  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
   --metadata-property-radius-hover: 6px !important;
-  --metadata-sidebar-input-font-size: 13px !important;
-  --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: hsl(270, 10%, 77.5%) !important;
-  --modal-border-color: hsl(270, 8%, 35%) !important;
-  --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: 12px !important;
   --modal-shadow: none !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
-  --nav-collapse-icon-color: hsl(270, 10%, 17.5%) !important;
-  --nav-collapse-icon-color-collapsed: hsl(270, 10%, 17.5%) !important;
-  --nav-heading-color: hsl(270, 8%, 35%) !important;
-  --nav-heading-color-collapsed: hsl(270, 10%, 17.5%) !important;
-  --nav-heading-color-collapsed-hover: hsl(270, 10%, 20%) !important;
-  --nav-heading-color-hover: hsl(270, 8%, 35%) !important;
-  --nav-heading-weight: 500 !important;
-  --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
-  --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: rgba(0, 0, 0, 0.075) !important;
-  --nav-item-background-hover: rgba(0, 0, 0, 0.075) !important;
-  --nav-item-background-selected: hsla(270, 65%, 58.8%, 0.15) !important;
-  --nav-item-children-margin-start: 12px !important;
-  --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: hsl(270, 10%, 20%) !important;
-  --nav-item-color-active: hsl(270, 8%, 35%) !important;
-  --nav-item-color-highlighted: hsl(267, 66.3%, 67.62%) !important;
-  --nav-item-color-hover: hsl(270, 8%, 35%) !important;
-  --nav-item-color-selected: hsl(270, 8%, 35%) !important;
-  --nav-item-margin-bottom: 2px !important;
-  --nav-item-padding: 4px 8px 4px 24px !important;
-  --nav-item-parent-padding: 4px 8px 4px 24px !important;
-  --nav-item-radius: 4px !important;
-  --nav-item-size: 13px !important;
   --nav-item-white-space: nowrap !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: hsl(270, 10%, 17.5%) !important;
-  --nav-tag-color-active: hsl(270, 10%, 20%) !important;
-  --nav-tag-color-hover: hsl(270, 10%, 20%) !important;
-  --nav-tag-radius: 4px !important;
-  --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: hsl(270, 10%, 77.5%) !important;
-  --pdf-page-background: hsl(270, 10%, 77.5%) !important;
-  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: hsl(270, 10%, 77.5%) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-color-remove-hover: hsl(270, 65%, 58.8%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
-  --popover-font-size: 16px !important;
   --popover-height: 400px !important;
   --popover-max-height: 95vh !important;
   --popover-pdf-height: 400px !important;
@@ -594,9 +735,6 @@
   --popover-width: 450px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
-  --prompt-background: hsl(270, 10%, 77.5%) !important;
-  --prompt-border-color: hsl(270, 8%, 35%) !important;
-  --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
@@ -605,75 +743,30 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, hsl(270, 10%, 77.5%) 65%, transparent) linear-gradient(hsl(270, 10%, 77.5%), color-mix(in srgb, hsl(270, 10%, 77.5%) 65%, transparent)) !important;
-  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
   --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
   --raised-mask-background: linear-gradient(to bottom left, white, transparent, white) border-box no-repeat !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
-  --ribbon-background: hsl(270, 10%, 77.5%) !important;
-  --ribbon-background-collapsed: hsl(270, 10%, 77.5%) !important;
-  --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2) !important;
-  --scrollbar-bg: rgba(0, 0, 0, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 12px !important;
-  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1) !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: hsl(270, 10%, 20%) !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: hsl(270, 10%, 20%) !important;
   --search-icon-size: 18px !important;
-  --search-result-background: hsl(270, 10%, 77.5%) !important;
-  --setting-group-heading-color: hsl(270, 8%, 35%) !important;
-  --setting-group-heading-size: 15px !important;
-  --setting-group-heading-weight: 600 !important;
-  --setting-items-background: hsl(270, 10%, 75%) !important;
-  --setting-items-border-color: hsl(37, 100%, 50%) !important;
   --setting-items-border-width: 0 !important;
-  --setting-items-padding: 20px !important;
-  --setting-items-radius: 12px !important;
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 15px 30px rgba(0, 0, 0, 0.1) !important;
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
-  --shiki-active-tab-border-color: hsl(270, 10%, 20%) !important;
   --shiki-active-tab-border-width: 2px !important;
-  --shiki-code-background: hsl(270, 10%, 75%) !important;
   --shiki-code-block-border-color: transparent !important;
-  --shiki-code-block-border-radius: 4px !important;
   --shiki-code-block-border-width: 0px !important;
-  --shiki-code-block-spacing: 1rem !important;
-  --shiki-code-comment: hsl(270, 10%, 17.5%) !important;
-  --shiki-code-function: hsla(100, 90%, 33.5%) !important;
-  --shiki-code-important: hsl(25, 85%, 50%) !important;
-  --shiki-code-keyword: hsl(330, 85%, 47.2%) !important;
-  --shiki-code-normal: hsl(270, 10%, 20%) !important;
-  --shiki-code-property: hsla(175, 100%, 50%) !important;
-  --shiki-code-punctuation: hsl(270, 10%, 20%) !important;
-  --shiki-code-string: hsl(37, 100%, 50%) !important;
-  --shiki-code-value: hsl(270, 65%, 58.8%) !important;
-  --shiki-gutter-border-color: hsl(37, 100%, 50%) !important;
-  --shiki-gutter-border-width: 1px !important;
-  --shiki-gutter-text-color: hsl(270, 10%, 17.5%) !important;
-  --shiki-gutter-text-color-highlight: hsl(270, 10%, 20%) !important;
-  --shiki-highlight-green: rgba(51, 138, 7, 0.5) !important;
-  --shiki-highlight-green-background: rgba(51, 138, 7, 0.1) !important;
-  --shiki-highlight-neutral: hsl(270, 10%, 20%) !important;
-  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05) !important;
-  --shiki-highlight-red: rgba(228, 18, 88, 0.5) !important;
-  --shiki-highlight-red-background: rgba(228, 18, 88, 0.1) !important;
-  --shiki-terminal-dots-color: hsl(270, 10%, 17.5%) !important;
-  --shiki-tooltip-background: rgba(0, 0, 0, 0.9) !important;
   --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --sidebar-right-toggle-inner-width: 8.33% !important;
   --sidebar-right-toggle-inner-width-open: 24% !important;
   --sidebar-tab-text-display: none !important;
@@ -694,132 +787,52 @@
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: hsl(270, 8%, 50%) !important;
-  --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: hsl(37, 100%, 50%) !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: hsl(270, 10%, 77.5%) !important;
-  --status-bar-border-color: hsl(37, 100%, 50%) !important;
-  --status-bar-border-width: 1px 0 0 1px !important;
-  --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
-  --status-bar-radius: 8px 0 0 0 !important;
-  --status-bar-text-color: hsl(270, 10%, 20%) !important;
   --suggestion-backdrop-filter: none !important;
-  --suggestion-background: hsl(270, 10%, 77.5%) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
-  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
   --swatch-width: 22px !important;
-  --sync-avatar-color-1: hsl(340, 85%, 48.3%) !important;
-  --sync-avatar-color-2: hsl(25, 85%, 50%) !important;
-  --sync-avatar-color-3: hsl(37, 100%, 50%) !important;
-  --sync-avatar-color-4: hsla(100, 90%, 33.5%) !important;
-  --sync-avatar-color-5: hsla(175, 100%, 50%) !important;
-  --sync-avatar-color-6: hsl(190, 100%, 26%) !important;
-  --sync-avatar-color-7: hsl(270, 65%, 58.8%) !important;
-  --sync-avatar-color-8: hsl(330, 85%, 47.2%) !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: hsl(270, 10%, 77.5%) !important;
   --tab-curve: 6px !important;
-  --tab-divider-color: hsl(270, 8%, 50%) !important;
-  --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: hsl(37, 100%, 50%) !important;
   --tab-outline-width: 1px !important;
-  --tab-radius: 4px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
-  --tab-stacked-font-size: 13px !important;
   --tab-stacked-font-weight: 400 !important;
-  --tab-stacked-header-width: 40px !important;
   --tab-stacked-pane-width: 700px !important;
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: hsl(270, 10%, 77.5%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(270, 10%, 77.5%), transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 16px !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(270, 65%, 58.8%) !important;
-  --tab-text-color: hsl(270, 10%, 17.5%) !important;
-  --tab-text-color-active: hsl(270, 10%, 20%) !important;
-  --tab-text-color-focused: hsl(270, 10%, 20%) !important;
-  --tab-text-color-focused-active: hsl(270, 8%, 35%) !important;
-  --tab-text-color-focused-active-current: hsl(270, 8%, 35%) !important;
-  --tab-text-color-focused-highlighted: hsl(270, 65%, 58.8%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: hsl(37, 100%, 50%) !important;
-  --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
-  --table-column-alt-background: transparent !important;
-  --table-column-first-border-width: 1px !important;
-  --table-column-last-border-width: 1px !important;
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: hsl(269, 65.65%, 63.21%) !important;
-  --table-drag-handle-color: hsl(270, 10%, 17.5%) !important;
-  --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: transparent !important;
-  --table-header-border-color: hsl(37, 100%, 50%) !important;
-  --table-header-border-width: 1px !important;
-  --table-header-color: hsl(270, 8%, 35%) !important;
-  --table-header-size: 0.875em !important;
-  --table-header-weight: 700 !important;
-  --table-line-height: 1.3 !important;
-  --table-row-alt-background: transparent !important;
-  --table-row-alt-background-hover: transparent !important;
-  --table-row-background-hover: transparent !important;
-  --table-row-last-border-width: 1px !important;
-  --table-selection: hsla(270, 65%, 58.8%, 0.1) !important;
-  --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: hsl(269, 65.65%, 63.21%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
-  --table-text-size: 16px !important;
   --table-white-space: normal !important;
-  --tag-background: hsla(270, 65%, 58.8%, 0.1) !important;
-  --tag-background-hover: hsla(270, 65%, 58.8%, 0.2) !important;
-  --tag-border-color: hsla(270, 65%, 58.8%, 0.15) !important;
-  --tag-border-color-hover: hsla(270, 65%, 58.8%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: hsl(270, 65%, 58.8%) !important;
-  --tag-color-hover: hsl(270, 65%, 58.8%) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
-  --tag-size: 0.875em !important;
-  --text-accent-hover: hsl(267, 66.3%, 67.62%) !important;
-  --text-error: hsl(340, 85%, 48.3%) !important;
-  --text-highlight-bg: rgba(255, 157, 0, 0.7) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: hsl(270, 10%, 20%) !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: hsla(270, 65%, 58.8%, 0.2) !important;
-  --text-success: hsla(100, 90%, 33.5%) !important;
-  --text-warning: hsl(25, 85%, 50%) !important;
-  --titlebar-background-focused: hsl(270, 10%, 75%) !important;
-  --titlebar-border-color: hsl(37, 100%, 50%) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: hsl(270, 10%, 20%) !important;
-  --titlebar-text-color-focused: hsl(270, 8%, 35%) !important;
-  --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
   --toggle-s-border-width: 2px !important;
@@ -831,35 +844,22 @@
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
-  --touch-radius-l: 52px !important;
-  --touch-radius-m: 44px !important;
-  --touch-radius-s: 40px !important;
-  --touch-radius-xl: 60px !important;
-  --touch-radius-xs: 30px !important;
-  --touch-radius-xxs: 24px !important;
   --touch-size-l: 52px !important;
   --touch-size-m: 44px !important;
   --touch-size-s: 40px !important;
   --touch-size-xl: 60px !important;
   --touch-size-xs: 30px !important;
   --touch-size-xxs: 24px !important;
-  --traffic-lights-offset-x: 40px !important;
-  --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: hsl(270, 8%, 35%) !important;
-  --vault-profile-color-hover: hsl(270, 8%, 35%) !important;
   --vault-profile-display: flex !important;
-  --vault-profile-font-size: 13px !important;
-  --vault-profile-font-weight: 500 !important;
   --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
-  --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --raised-shadow: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
+  --raised-shadow: var(--shadow-xs, 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent) !important;
+  --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
-  --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
   --h1-color: hsl(270, 65%, 58.8%) !important;
   --h2-color: hsl(330, 85%, 47.2%) !important;
   --h3-color: hsl(257, 60%, 50%) !important;
@@ -941,36 +941,449 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
+  --background-modifier-active-hover: hsla(270, 65%, 58.8%, 0.15) !important;
+  --background-modifier-border: hsl(37, 100%, 50%) !important;
+  --background-modifier-border-focus: hsl(270, 13%, 65%) !important;
+  --background-modifier-border-hover: hsl(270, 8%, 50%) !important;
+  --background-modifier-error: hsl(340, 85%, 48.3%) !important;
+  --background-modifier-error-hover: hsl(340, 85%, 48.3%) !important;
+  --background-modifier-error-rgb: 228, 18, 88 !important;
+  --background-modifier-form-field: hsl(270, 10%, 20%) !important;
+  --background-modifier-form-field-hover: hsl(270, 10%, 20%) !important;
+  --background-modifier-hover: rgba(255, 255, 255, 0.075) !important;
+  --background-modifier-success: hsla(100, 90%, 33.5%) !important;
+  --background-modifier-success-rgb: 51, 138, 7 !important;
+  --background-primary: hsl(270, 10%, 15%) !important;
+  --background-primary-alt: hsl(270, 10%, 17.5%) !important;
+  --background-secondary: hsl(270, 10%, 15%) !important;
+  --background-secondary-alt: hsl(270, 8%, 35%) !important;
+  --bases-cards-background: hsl(270, 10%, 15%) !important;
+  --bases-cards-border-width: var(--border-width, 1px) !important;
+  --bases-cards-corner-shape: var(--corner-shape, round) !important;
+  --bases-cards-cover-background: hsl(270, 10%, 17.5%) !important;
+  --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-cards-radius: var(--radius-m, 8px) !important;
+  --bases-cards-shadow: 0 0 0 1px hsl(37, 100%, 50%) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px hsl(270, 8%, 50%) !important;
   --bases-embed-border-color: hsl(37, 100%, 50%) !important;
+  --bases-embed-border-radius: var(--radius-s, 4px) !important;
+  --bases-group-heading-property-color: hsl(270, 10%, 72.5%) !important;
+  --bases-group-heading-property-size: var(--font-ui-smaller, 12px) !important;
+  --bases-group-heading-property-weight: var(--font-normal, 400) !important;
+  --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
+  --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
+  --bases-header-border-width: 0 0 var(--border-width) 0 !important;
   --bases-table-border-color: hsl(37, 100%, 50%) !important;
+  --bases-table-cell-background-active: hsl(270, 10%, 15%) !important;
+  --bases-table-cell-background-disabled: hsl(270, 10%, 17.5%) !important;
+  --bases-table-cell-background-selected: hsla(270, 65%, 58.8%, 0.1) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(270, 13%, 65%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(270, 65%, 58.8%) !important;
+  --bases-table-column-border-width: var(--border-width, 1px) !important;
+  --bases-table-container-border-radius: var(--radius-s, 4px) !important;
+  --bases-table-container-border-width: var(--border-width, 1px) !important;
+  --bases-table-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-table-group-background: hsl(270, 10%, 17.5%) !important;
   --bases-table-header-background: hsl(270, 10%, 15%) !important;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.075) !important;
-  --focus-ring-color: #0df !important;
-  --tab-container-background: hsl(270, 10%, 17.5%) !important;
-  --table-border-color: hsl(37, 100%, 50%) !important;
-  --text-accent: hsl(267, 66.3%, 67.62%) !important;
-  --text-faint: hsl(270, 13%, 65%) !important;
-  --text-normal: hsl(270, 10%, 75%) !important;
-  --titlebar-background: hsl(270, 10%, 15%) !important;
-  --input-height: 30px !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
-  --input-radius: 5px !important;
-  --background-modifier-border: hsl(37, 100%, 50%) !important;
-  --background-modifier-form-field: hsl(270, 10%, 20%) !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
+  --bases-table-header-color: hsl(270, 10%, 72.5%) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent var(--size-4-6), black var(--size-4-6)) !important;
+  --bases-table-header-weight: var(--font-weight, 400) !important;
+  --bases-table-row-background-hover: var(--table-row-background-hover, transparent) !important;
+  --bases-table-row-border-width: var(--border-width, 1px) !important;
+  --bases-table-summary-background: hsl(270, 10%, 15%) !important;
+  --bases-table-summary-background-hover: rgba(255, 255, 255, 0.075) !important;
+  --blockquote-border-color: hsl(270, 65%, 58.8%) !important;
+  --blur-background: color-mix(in srgb, hsl(270, 8%, 35%) 65%, transparent) linear-gradient(hsl(270, 8%, 35%), color-mix(in srgb, hsl(270, 8%, 35%) 65%, transparent)) !important;
+  --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation)) brightness(var(--blur-brightness)) !important;
+  --blur-m: blur(var(--blur-radius-m)) saturate(var(--blur-saturation)) brightness(var(--blur-brightness)) !important;
+  --blur-s: blur(var(--blur-radius-s)) saturate(var(--blur-saturation)) brightness(var(--blur-brightness)) !important;
+  --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
+  --button-corner-shape: var(--corner-shape, round) !important;
+  --button-radius: var(--input-radius, 5px) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode, lighten);
+  --callout-bug: 228, 18, 88;
+  --callout-default: var(--color-blue-rgb, 2, 122, 255);
+  --callout-error: 228, 18, 88;
+  --callout-example: var(--color-purple-rgb, 168, 130, 255);
+  --callout-fail: 228, 18, 88;
+  --callout-important: var(--color-cyan-rgb, 83, 223, 221);
+  --callout-info: var(--color-blue-rgb, 2, 122, 255);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 12px 12px 12px 24px);
+  --callout-question: var(--color-orange-rgb, 233, 151, 63);
+  --callout-radius: var(--radius-s, 4px);
+  --callout-success: 51, 138, 7;
+  --callout-summary: var(--color-cyan-rgb, 83, 223, 221);
+  --callout-tip: var(--color-cyan-rgb, 83, 223, 221);
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb, 2, 122, 255);
+  --callout-warning: var(--color-orange-rgb, 233, 151, 63);
+  --canvas-background: hsl(270, 10%, 15%) !important;
+  --canvas-card-label-color: hsl(270, 13%, 65%) !important;
+  --canvas-color-1: 228, 18, 88 !important;
+  --canvas-color-2: var(--color-orange-rgb, 233, 151, 63) !important;
+  --canvas-color-3: var(--color-yellow-rgb, 224, 222, 113) !important;
+  --canvas-color-4: 51, 138, 7 !important;
+  --canvas-color-5: var(--color-cyan-rgb, 83, 223, 221) !important;
+  --canvas-color-6: var(--color-purple-rgb, 168, 130, 255) !important;
+  --canvas-controls-icon-size: var(--icon-s, 16px) !important;
+  --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
+  --canvas-controls-radius: var(--radius-s, 4px) !important;
+  --canvas-dot-pattern: hsl(270, 8%, 35%) !important;
+  --caret-color: hsl(270, 10%, 75%) !important;
+  --checkbox-border-color: hsl(270, 13%, 65%) !important;
+  --checkbox-border-color-hover: hsl(270, 10%, 72.5%) !important;
+  --checkbox-color: hsl(270, 65%, 58.8%) !important;
+  --checkbox-color-hover: hsl(267, 66.3%, 67.62%) !important;
+  --checkbox-marker-color: hsl(270, 10%, 15%) !important;
+  --checkbox-radius: var(--radius-s, 4px) !important;
+  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checklist-done-color: hsl(270, 10%, 72.5%) !important;
+  --clickable-icon-radius: var(--radius-s, 4px) !important;
+  --code-background: hsl(270, 10%, 17.5%) !important;
+  --code-border-color: hsl(37, 100%, 50%) !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.075) !important;
+  --code-comment: hsl(270, 13%, 65%) !important;
+  --code-function: hsl(37, 100%, 50%) !important;
+  --code-important: hsl(25, 85%, 50%) !important;
+  --code-keyword: hsl(330, 85%, 47.2%) !important;
+  --code-normal: hsl(270, 10%, 75%) !important;
+  --code-operator: hsl(340, 85%, 48.3%) !important;
+  --code-property: hsla(175, 100%, 50%) !important;
+  --code-punctuation: hsl(270, 10%, 72.5%) !important;
+  --code-radius: var(--radius-s, 4px) !important;
+  --code-size: var(--font-smaller, 0.875em) !important;
+  --code-string: hsla(100, 90%, 33.5%) !important;
+  --code-tag: hsl(340, 85%, 48.3%) !important;
+  --code-value: hsl(270, 65%, 58.8%) !important;
+  --collapse-icon-color: hsl(270, 13%, 65%) !important;
+  --collapse-icon-color-collapsed: hsl(267, 66.3%, 67.62%) !important;
+  --color-accent: hsl(270, 65%, 58.8%) !important;
+  --color-accent-1: hsl(267, 66.3%, 67.62%) !important;
+  --color-accent-2: hsl(265, 68.25%, 75.852%) !important;
+  --color-accent-hsl: 270, 65%, 58.8% !important;
+  --divider-color: hsl(37, 100%, 50%) !important;
+  --divider-color-hover: hsl(270, 65%, 58.8%) !important;
+  --divider-vertical-height: calc(100% - var(--header-height)) !important;
+  --dropdown-background: hsl(270, 8%, 35%) !important;
+  --dropdown-background-hover: hsl(270, 8%, 50%) !important;
+  --dropdown-background-position: var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
+  --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
+  --dropdown-padding: 0 var(--dropdown-padding-end) 0 var(--dropdown-padding-start) !important;
+  --embed-block-shadow-hover: 0 0 0 1px hsl(37, 100%, 50%), inset 0 0 0 1px hsl(37, 100%, 50%) !important;
+  --embed-border-start: 2px solid hsl(270, 65%, 58.8%) !important;
+  --embed-padding: 0 0 0 var(--size-4-6) !important;
+  --file-header-background: hsl(270, 10%, 15%) !important;
+  --file-header-background-focused: hsl(270, 10%, 15%) !important;
+  --file-header-border: var(--border-width, 1px solid transparent) solid transparent !important;
+  --file-header-font: "??", Neucha, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font-size: var(--font-ui-small, 13px) !important;
+  --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
+  --file-margins-x: var(--size-4-8, 32px) !important;
+  --file-margins-y: var(--size-4-8, 32px) !important;
+  --flair-background: hsl(270, 8%, 35%) !important;
+  --flair-color: hsl(270, 10%, 75%) !important;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
+  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
+  --font-interface: "??", Neucha, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-mermaid: "??", Neucha, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-monospace: "??", "Space Mono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-print: "??", "??", Neucha, "Arial" !important;
+  --font-text: "??", Neucha, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-weight: var(--font-normal, 400) !important;
+  --footnote-divider-color: hsl(37, 100%, 50%) !important;
+  --footnote-divider-color-active: var(--metadata-divider-color-focus, transparent) !important;
+  --footnote-divider-width: var(--border-width, 1px) !important;
+  --footnote-gap: var(--size-4-1, 4px) !important;
+  --footnote-id-color: hsl(270, 10%, 72.5%) !important;
+  --footnote-id-color-no-occurrences: hsl(270, 13%, 65%) !important;
+  --footnote-input-background: var(--metadata-input-background, transparent) !important;
+  --footnote-input-background-active: rgba(255, 255, 255, 0.075) !important;
+  --footnote-line-height: var(--line-height-normal, 1.5) !important;
+  --footnote-padding-block: var(--size-2-3, 6px) !important;
+  --footnote-padding-inline: var(--size-2-3, 6px) !important;
+  --footnote-radius: var(--radius-s, 4px) !important;
+  --footnote-size: var(--font-smaller, 0.875em) !important;
+  --graph-line: hsl(37, 100%, 40%) !important;
+  --graph-node: hsl(270, 10%, 72.5%) !important;
+  --graph-node-attachment: hsl(25, 85%, 50%) !important;
+  --graph-node-focused: hsl(37, 100%, 50%) !important;
+  --graph-node-tag: hsla(100, 90%, 33.5%) !important;
+  --graph-node-unresolved: hsl(270, 13%, 65%) !important;
+  --graph-text: hsl(270, 10%, 75%) !important;
+  --h5-line-height: var(--line-height-normal, 1.5) !important;
+  --h6-line-height: var(--line-height-normal, 1.5) !important;
+  --heading-formatting: hsl(270, 10%, 72.5%) !important;
+  --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
+  --hr-color: hsl(37, 100%, 50%) !important;
+  --icon-color: hsl(270, 10%, 72.5%) !important;
+  --icon-color-active: hsl(267, 66.3%, 67.62%) !important;
+  --icon-color-focused: hsl(270, 10%, 75%) !important;
+  --icon-color-hover: hsl(270, 10%, 72.5%) !important;
+  --icon-size: var(--icon-m, 18px) !important;
+  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12) !important;
+  --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3) !important;
+  --indentation-guide-width: var(--border-width, 1px) !important;
+  --indentation-guide-width-active: var(--border-width, 1px) !important;
+  --inline-title-line-height: var(--h1-line-height, 1.2) !important;
+  --inline-title-size: var(--h1-size, 1.618em) !important;
+  --inline-title-style: var(--h1-style, normal) !important;
+  --inline-title-variant: var(--h1-variant, normal) !important;
+  --inline-title-weight: var(--h1-weight, 700) !important;
+  --input-border-width: var(--border-width, 1px) !important;
+  --input-corner-shape: var(--corner-shape, round) !important;
+  --input-date-separator: hsl(270, 13%, 65%) !important;
+  --input-font-weight: var(--font-normal, 400) !important;
+  --input-icon-inset: var(--size-4-1, 4px) !important;
+  --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --input-placeholder-color: hsl(270, 13%, 65%) !important;
+  --interactive-accent: hsl(270, 65%, 58.8%) !important;
+  --interactive-accent-hover: hsl(267, 66.3%, 67.62%) !important;
+  --interactive-accent-hsl: 270, 65%, 58.8% !important;
+  --interactive-hover: hsl(270, 8%, 50%) !important;
+  --interactive-normal: hsl(270, 8%, 35%) !important;
+  --link-color: hsl(37, 100%, 50%) !important;
+  --link-color-hover: hsl(37, 100%, 60%) !important;
+  --link-external-color: hsla(175, 100%, 40%) !important;
+  --link-external-color-hover: hsla(175, 100%, 50%) !important;
+  --link-unresolved-color: hsl(25, 85%, 40%) !important;
+  --link-unresolved-decoration-color: hsla(270, 65%, 58.8%, 0.5) !important;
+  --link-weight: var(--font-weight, 400) !important;
+  --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
+  --list-marker-color: hsl(270, 13%, 65%) !important;
+  --list-marker-color-collapsed: hsl(267, 66.3%, 67.62%) !important;
+  --list-marker-color-hover: hsl(270, 10%, 72.5%) !important;
+  --menu-background: hsl(270, 10%, 15%) !important;
+  --menu-border-color: hsl(270, 8%, 50%) !important;
+  --menu-border-width: var(--border-width, 1px) !important;
+  --menu-corner-shape: var(--corner-shape, round) !important;
+  --menu-padding: var(--size-2-3, 6px) !important;
+  --menu-radius: var(--radius-m, 8px) !important;
+  --menu-shadow: var(--shadow-s, 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3)) !important;
+  --metadata-border-color: hsl(37, 100%, 50%) !important;
+  --metadata-divider-color: hsl(37, 100%, 50%) !important;
+  --metadata-input-background-active: rgba(255, 255, 255, 0.075) !important;
+  --metadata-input-font: "??", Neucha, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
+  --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --metadata-input-text-color: hsl(270, 10%, 75%) !important;
+  --metadata-label-background-active: rgba(255, 255, 255, 0.075) !important;
+  --metadata-label-font: "??", Neucha, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-label-text-color: hsl(270, 10%, 72.5%) !important;
+  --metadata-label-text-color-hover: hsl(270, 10%, 72.5%) !important;
+  --metadata-padding: var(--size-4-2, 8px 0) 0 !important;
+  --metadata-property-background-active: rgba(255, 255, 255, 0.075) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(270, 13%, 65%) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(270, 8%, 50%) !important;
+  --metadata-property-corner-shape: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape-focus: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
+  --modal-background: hsl(270, 10%, 15%) !important;
+  --modal-border-color: hsl(270, 13%, 65%) !important;
+  --modal-border-width: var(--border-width, 1px) !important;
+  --modal-radius: var(--radius-l, 12px) !important;
+  --nav-collapse-icon-color: hsl(270, 13%, 65%) !important;
+  --nav-collapse-icon-color-collapsed: hsl(270, 13%, 65%) !important;
+  --nav-heading-color: hsl(270, 10%, 75%) !important;
+  --nav-heading-color-collapsed: hsl(270, 13%, 65%) !important;
+  --nav-heading-color-collapsed-hover: hsl(270, 10%, 72.5%) !important;
+  --nav-heading-color-hover: hsl(270, 10%, 75%) !important;
+  --nav-heading-weight: var(--font-medium, 500) !important;
+  --nav-heading-weight-hover: var(--font-medium, 500) !important;
+  --nav-indentation-guide-color: var(--indentation-guide-color, rgba(255, 255, 255, 0.12)) !important;
+  --nav-indentation-guide-width: var(--indentation-guide-width, 1px) !important;
+  --nav-item-background-active: rgba(255, 255, 255, 0.075) !important;
+  --nav-item-background-hover: rgba(255, 255, 255, 0.075) !important;
+  --nav-item-background-selected: hsla(270, 65%, 58.8%, 0.15) !important;
+  --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
+  --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
+  --nav-item-color: hsl(270, 10%, 72.5%) !important;
+  --nav-item-color-active: hsl(270, 10%, 75%) !important;
+  --nav-item-color-highlighted: hsl(265, 68.25%, 75.852%) !important;
+  --nav-item-color-hover: hsl(270, 10%, 75%) !important;
+  --nav-item-color-selected: hsl(270, 10%, 75%) !important;
+  --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6, 4px 8px 4px 24px) !important;
+  --nav-item-parent-padding: var(--nav-item-padding, 4px 8px 4px 24px) !important;
+  --nav-item-radius: var(--radius-s, 4px) !important;
+  --nav-item-size: var(--font-ui-small, 13px) !important;
+  --nav-tag-color: hsl(270, 13%, 65%) !important;
+  --nav-tag-color-active: hsl(270, 10%, 72.5%) !important;
+  --nav-tag-color-hover: hsl(270, 10%, 72.5%) !important;
+  --nav-tag-radius: var(--radius-s, 4px) !important;
+  --nav-tag-weight: var(--font-semibold, 600) !important;
+  --pdf-background: hsl(270, 10%, 15%) !important;
+  --pdf-page-background: hsl(270, 10%, 15%) !important;
+  --pdf-shadow: 0 0 0 1px hsl(37, 100%, 50%) !important;
+  --pdf-sidebar-background: hsl(270, 10%, 15%) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px hsl(37, 100%, 50%) !important;
   --pill-border-color: hsl(37, 100%, 50%) !important;
   --pill-border-color-hover: hsl(270, 8%, 50%) !important;
-  --pill-border-width: 1px !important;
+  --pill-border-width: var(--border-width, 1px) !important;
   --pill-color: hsl(270, 10%, 72.5%) !important;
   --pill-color-hover: hsl(270, 10%, 75%) !important;
   --pill-color-remove: hsl(270, 13%, 65%) !important;
+  --pill-color-remove-hover: hsl(267, 66.3%, 67.62%) !important;
+  --popover-font-size: var(--font-text-size, 16px) !important;
+  --prompt-background: hsl(270, 10%, 15%) !important;
+  --prompt-border-color: hsl(270, 13%, 65%) !important;
+  --prompt-border-width: var(--border-width, 1px) !important;
+  --raised-background: color-mix(in srgb, hsl(270, 8%, 35%) 65%, transparent) linear-gradient(hsl(270, 8%, 35%), color-mix(in srgb, hsl(270, 8%, 35%) 65%, transparent)) !important;
+  --raised-blur: var(--blur-s, blur(6px) saturate(1.5) brightness(1.15)) !important;
+  --ribbon-background: hsl(270, 10%, 15%) !important;
+  --ribbon-background-collapsed: hsl(270, 10%, 15%) !important;
+  --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3, 8px 4px 12px) !important;
+  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
+  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
+  --scrollbar-radius: var(--radius-l, 12px) !important;
+  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
+  --search-clear-button-color: hsl(270, 10%, 72.5%) !important;
+  --search-icon-color: hsl(270, 10%, 72.5%) !important;
+  --search-result-background: hsl(270, 10%, 15%) !important;
+  --setting-group-heading-color: hsl(270, 10%, 75%) !important;
+  --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
+  --setting-group-heading-weight: var(--font-semibold, 600) !important;
+  --setting-items-background: hsl(270, 10%, 17.5%) !important;
+  --setting-items-border-color: hsl(37, 100%, 50%) !important;
+  --setting-items-padding: var(--size-4-5, 20px) !important;
+  --setting-items-radius: var(--radius-l, 12px) !important;
+  --shiki-active-tab-border-color: hsl(270, 10%, 72.5%) !important;
+  --shiki-code-background: hsl(270, 10%, 17.5%) !important;
+  --shiki-code-block-border-radius: var(--code-radius, 4px) !important;
+  --shiki-code-block-spacing: var(--p-spacing, 1rem) !important;
+  --shiki-code-comment: hsl(270, 13%, 65%) !important;
+  --shiki-code-function: hsla(100, 90%, 33.5%) !important;
+  --shiki-code-important: hsl(25, 85%, 50%) !important;
+  --shiki-code-keyword: hsl(330, 85%, 47.2%) !important;
+  --shiki-code-normal: hsl(270, 10%, 72.5%) !important;
+  --shiki-code-property: hsla(175, 100%, 50%) !important;
+  --shiki-code-punctuation: hsl(270, 10%, 72.5%) !important;
+  --shiki-code-string: hsl(37, 100%, 50%) !important;
+  --shiki-code-value: hsl(270, 65%, 58.8%) !important;
+  --shiki-gutter-border-color: hsl(37, 100%, 50%) !important;
+  --shiki-gutter-border-width: var(--border-width, 1px) !important;
+  --shiki-gutter-text-color: hsl(270, 13%, 65%) !important;
+  --shiki-gutter-text-color-highlight: hsl(270, 10%, 72.5%) !important;
+  --shiki-highlight-green: rgba(51, 138, 7, 0.5) !important;
+  --shiki-highlight-green-background: rgba(51, 138, 7, 0.1) !important;
+  --shiki-highlight-neutral: hsl(270, 10%, 72.5%) !important;
+  --shiki-highlight-neutral-background: rgba(var(--mono-rgb-100), 0.05) !important;
+  --shiki-highlight-red: rgba(228, 18, 88, 0.5) !important;
+  --shiki-highlight-red-background: rgba(228, 18, 88, 0.1) !important;
+  --shiki-terminal-dots-color: hsl(270, 13%, 65%) !important;
+  --shiki-tooltip-background: var(--background-modifier-message, rgba(0, 0, 0, 0.9)) !important;
+  --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9) !important;
+  --slider-thumb-border-color: hsl(270, 8%, 50%) !important;
+  --slider-thumb-border-width: var(--border-width, 1px) !important;
+  --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
+  --slider-track-background: hsl(37, 100%, 50%) !important;
+  --status-bar-background: hsl(270, 10%, 15%) !important;
+  --status-bar-border-color: hsl(37, 100%, 50%) !important;
+  --status-bar-border-width: var(--border-width) 0 0 var(--border-width, 1px 0 0 1px) !important;
+  --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
+  --status-bar-radius: var(--radius-m, 8px 0 0 0) 0 0 0 !important;
+  --status-bar-text-color: hsl(270, 10%, 72.5%) !important;
+  --suggestion-background: hsl(270, 10%, 15%) !important;
+  --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
+  --sync-avatar-color-1: hsl(340, 85%, 48.3%) !important;
+  --sync-avatar-color-2: hsl(25, 85%, 50%) !important;
+  --sync-avatar-color-3: hsl(37, 100%, 50%) !important;
+  --sync-avatar-color-4: hsla(100, 90%, 33.5%) !important;
+  --sync-avatar-color-5: hsla(175, 100%, 50%) !important;
+  --sync-avatar-color-6: hsl(190, 100%, 26%) !important;
+  --sync-avatar-color-7: hsl(270, 65%, 58.8%) !important;
+  --sync-avatar-color-8: hsl(330, 85%, 47.2%) !important;
+  --tab-background-active: hsl(270, 10%, 15%) !important;
+  --tab-container-background: hsl(270, 10%, 17.5%) !important;
+  --tab-divider-color: hsl(270, 8%, 50%) !important;
+  --tab-font-size: var(--font-ui-small, 13px) !important;
+  --tab-outline-color: hsl(37, 100%, 50%) !important;
+  --tab-radius: var(--radius-s, 4px) !important;
+  --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
+  --tab-stacked-header-width: var(--header-height, 40px) !important;
+  --tab-switcher-background: hsl(270, 10%, 15%) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(270, 10%, 15%), transparent) !important;
+  --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(270, 65%, 58.8%) !important;
+  --tab-text-color: hsl(270, 13%, 65%) !important;
+  --tab-text-color-active: hsl(270, 10%, 72.5%) !important;
+  --tab-text-color-focused: hsl(270, 10%, 72.5%) !important;
+  --tab-text-color-focused-active: hsl(270, 10%, 75%) !important;
+  --tab-text-color-focused-active-current: hsl(270, 10%, 75%) !important;
+  --tab-text-color-focused-highlighted: hsl(267, 66.3%, 67.62%) !important;
+  --table-add-button-border-color: hsl(37, 100%, 50%) !important;
+  --table-add-button-border-width: var(--table-border-width, 1px) !important;
+  --table-border-color: hsl(37, 100%, 50%) !important;
+  --table-column-alt-background: var(--table-background, transparent) !important;
+  --table-column-first-border-width: var(--table-border-width, 1px) !important;
+  --table-column-last-border-width: var(--table-border-width, 1px) !important;
+  --table-drag-handle-background-active: hsl(270, 65%, 58.8%) !important;
+  --table-drag-handle-color: hsl(270, 13%, 65%) !important;
+  --table-drag-handle-color-active: var(--text-on-accent, white) !important;
+  --table-header-background: var(--table-background, transparent) !important;
+  --table-header-border-color: hsl(37, 100%, 50%) !important;
+  --table-header-border-width: var(--table-border-width, 1px) !important;
+  --table-header-color: hsl(270, 10%, 75%) !important;
+  --table-header-size: 0.875em !important;
+  --table-header-weight: 700 !important;
+  --table-line-height: var(--line-height-tight, 1.3) !important;
+  --table-row-alt-background: var(--table-background, transparent) !important;
+  --table-row-alt-background-hover: var(--table-background, transparent) !important;
+  --table-row-background-hover: var(--table-background, transparent) !important;
+  --table-row-last-border-width: var(--table-border-width, 1px) !important;
+  --table-selection: hsla(270, 65%, 58.8%, 0.1) !important;
+  --table-selection-blend-mode: var(--highlight-mix-blend-mode, lighten) !important;
+  --table-selection-border-color: hsl(270, 65%, 58.8%) !important;
+  --table-text-size: var(--font-text-size, 16px) !important;
+  --tag-background: hsla(270, 65%, 58.8%, 0.1) !important;
+  --tag-background-hover: hsla(270, 65%, 58.8%, 0.2) !important;
+  --tag-border-color: hsla(270, 65%, 58.8%, 0.15) !important;
+  --tag-border-color-hover: hsla(270, 65%, 58.8%, 0.15) !important;
+  --tag-color: hsl(267, 66.3%, 67.62%) !important;
+  --tag-color-hover: hsl(267, 66.3%, 67.62%) !important;
+  --tag-size: var(--font-smaller, 0.875em) !important;
+  --text-accent: hsl(267, 66.3%, 67.62%) !important;
+  --text-accent-hover: hsl(265, 68.25%, 75.852%) !important;
+  --text-error: hsl(340, 85%, 48.3%) !important;
+  --text-faint: hsl(270, 13%, 65%) !important;
+  --text-highlight-bg: rgba(255, 157, 0, 0.7) !important;
+  --text-muted: hsl(270, 10%, 72.5%) !important;
+  --text-normal: hsl(270, 10%, 75%) !important;
+  --text-selection: hsla(270, 65%, 58.8%, 0.33) !important;
+  --text-success: hsla(100, 90%, 33.5%) !important;
+  --text-warning: hsl(25, 85%, 50%) !important;
+  --titlebar-background: hsl(270, 10%, 15%) !important;
+  --titlebar-background-focused: hsl(270, 10%, 17.5%) !important;
+  --titlebar-border-color: hsl(37, 100%, 50%) !important;
+  --titlebar-text-color: hsl(270, 10%, 72.5%) !important;
+  --titlebar-text-color-focused: hsl(270, 10%, 75%) !important;
+  --titlebar-text-weight: var(--font-bold, 700) !important;
+  --touch-radius-l: var(--touch-size-l, 52px) !important;
+  --touch-radius-m: var(--touch-size-m, 44px) !important;
+  --touch-radius-s: var(--touch-size-s, 40px) !important;
+  --touch-radius-xl: var(--touch-size-xl, 60px) !important;
+  --touch-radius-xs: var(--touch-size-xs, 30px) !important;
+  --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
+  --traffic-lights-offset-x: var(--header-height, 40px) !important;
+  --traffic-lights-offset-y: var(--header-height, 40px) !important;
+  --vault-profile-color: hsl(270, 10%, 75%) !important;
+  --vault-profile-color-hover: hsl(270, 10%, 75%) !important;
+  --vault-profile-font-size: var(--font-ui-small, 13px) !important;
+  --vault-profile-font-weight: var(--font-medium, 500) !important;
+  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
+  --input-height: 30px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
   --pill-focus-left-adjust: -4px !important;
   --pill-focus-width: calc(100% + 6px) !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 270 !important;
   --accent-l: 58.8% !important;
   --accent-s: 65% !important;
@@ -983,164 +1396,50 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: hsla(270, 65%, 58.8%, 0.15) !important;
-  --background-modifier-border-focus: hsl(270, 13%, 65%) !important;
-  --background-modifier-border-hover: hsl(270, 8%, 50%) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
-  --background-modifier-error: hsl(340, 85%, 48.3%) !important;
-  --background-modifier-error-hover: hsl(340, 85%, 48.3%) !important;
-  --background-modifier-error-rgb: 228, 18, 88 !important;
-  --background-modifier-form-field-hover: hsl(270, 10%, 20%) !important;
-  --background-modifier-hover: rgba(255, 255, 255, 0.075) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
-  --background-modifier-success: hsla(100, 90%, 33.5%) !important;
-  --background-modifier-success-rgb: 51, 138, 7 !important;
-  --background-primary: hsl(270, 10%, 15%) !important;
-  --background-primary-alt: hsl(270, 10%, 17.5%) !important;
-  --background-secondary: hsl(270, 10%, 15%) !important;
-  --background-secondary-alt: hsl(270, 8%, 35%) !important;
-  --bases-cards-background: hsl(270, 10%, 15%) !important;
-  --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-corner-shape: round !important;
-  --bases-cards-cover-background: hsl(270, 10%, 17.5%) !important;
-  --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
-  --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px hsl(37, 100%, 50%) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px hsl(270, 8%, 50%) !important;
-  --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: hsl(270, 10%, 72.5%) !important;
   --bases-group-heading-property-display: block !important;
-  --bases-group-heading-property-size: 12px !important;
-  --bases-group-heading-property-weight: 400 !important;
-  --bases-group-heading-value-size: 0.875em !important;
-  --bases-group-heading-value-weight: 600 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-cell-background-active: hsl(270, 10%, 15%) !important;
-  --bases-table-cell-background-disabled: hsl(270, 10%, 17.5%) !important;
-  --bases-table-cell-background-selected: hsla(270, 65%, 58.8%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(270, 13%, 65%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(270, 65%, 58.8%) !important;
-  --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 4px !important;
-  --bases-table-container-border-width: 1px !important;
-  --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: hsl(270, 10%, 17.5%) !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-color: hsl(270, 10%, 72.5%) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
-  --bases-table-header-weight: 400 !important;
-  --bases-table-row-background-hover: transparent !important;
-  --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: hsl(270, 10%, 15%) !important;
-  --bases-table-summary-background-hover: rgba(255, 255, 255, 0.075) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: hsl(270, 65%, 58.8%) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, hsl(270, 8%, 35%) 65%, transparent) linear-gradient(hsl(270, 8%, 35%), color-mix(in srgb, hsl(270, 8%, 35%) 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
-  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
-  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
   --blur-opacity-m: 90% !important;
   --blur-opacity-s: 65% !important;
   --blur-radius-l: 16px !important;
   --blur-radius-m: 10px !important;
   --blur-radius-s: 6px !important;
-  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
   --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
-  --bold-weight: 600 !important;
   --border-width: 1px !important;
-  --button-corner-shape: round !important;
-  --button-radius: 5px !important;
-  --callout-blend-mode: lighten;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: 228, 18, 88;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 2, 122, 255;
-  --callout-error: 228, 18, 88;
-  --callout-example: 168, 130, 255;
-  --callout-fail: 228, 18, 88;
-  --callout-important: 83, 223, 221;
-  --callout-info: 2, 122, 255;
-  --callout-padding: 12px 12px 12px 24px;
-  --callout-question: 233, 151, 63;
   --callout-quote: 158, 158, 158;
-  --callout-radius: 4px;
-  --callout-success: 51, 138, 7;
-  --callout-summary: 83, 223, 221;
-  --callout-tip: 83, 223, 221;
   --callout-title-padding: 0;
-  --callout-title-weight: 600;
-  --callout-todo: 2, 122, 255;
-  --callout-warning: 233, 151, 63;
-  --canvas-background: hsl(270, 10%, 15%) !important;
-  --canvas-card-label-color: hsl(270, 13%, 65%) !important;
   --canvas-color: 126, 126, 126 !important;
-  --canvas-color-1: 228, 18, 88 !important;
-  --canvas-color-2: 233, 151, 63 !important;
-  --canvas-color-3: 224, 222, 113 !important;
-  --canvas-color-4: 51, 138, 7 !important;
-  --canvas-color-5: 83, 223, 221 !important;
-  --canvas-color-6: 168, 130, 255 !important;
-  --canvas-controls-icon-size: 16px !important;
-  --canvas-controls-icon-stroke: 2px !important;
-  --canvas-controls-radius: 4px !important;
-  --canvas-dot-pattern: hsl(270, 8%, 35%) !important;
-  --caret-color: hsl(270, 10%, 75%) !important;
-  --checkbox-border-color: hsl(270, 13%, 65%) !important;
-  --checkbox-border-color-hover: hsl(270, 10%, 72.5%) !important;
-  --checkbox-color: hsl(270, 65%, 58.8%) !important;
-  --checkbox-color-hover: hsl(267, 66.3%, 67.62%) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: hsl(270, 10%, 15%) !important;
-  --checkbox-radius: 4px !important;
-  --checkbox-size: 16px !important;
-  --checklist-done-color: hsl(270, 10%, 72.5%) !important;
   --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 4px !important;
-  --code-background: hsl(270, 10%, 17.5%) !important;
-  --code-border-color: hsl(37, 100%, 50%) !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: rgba(255, 255, 255, 0.075) !important;
-  --code-comment: hsl(270, 13%, 65%) !important;
-  --code-function: hsl(37, 100%, 50%) !important;
-  --code-important: hsl(25, 85%, 50%) !important;
-  --code-keyword: hsl(330, 85%, 47.2%) !important;
-  --code-normal: hsl(270, 10%, 75%) !important;
-  --code-operator: hsl(340, 85%, 48.3%) !important;
-  --code-property: hsla(175, 100%, 50%) !important;
-  --code-punctuation: hsl(270, 10%, 72.5%) !important;
-  --code-radius: 4px !important;
-  --code-size: 0.875em !important;
-  --code-string: hsla(100, 90%, 33.5%) !important;
-  --code-tag: hsl(340, 85%, 48.3%) !important;
-  --code-value: hsl(270, 65%, 58.8%) !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: hsl(270, 13%, 65%) !important;
-  --collapse-icon-color-collapsed: hsl(267, 66.3%, 67.62%) !important;
-  --color-accent: hsl(270, 65%, 58.8%) !important;
-  --color-accent-1: hsl(267, 66.3%, 67.62%) !important;
-  --color-accent-2: hsl(265, 68.25%, 75.852%) !important;
-  --color-accent-hsl: 270, 65%, 58.8% !important;
   --color-base-00: hsl(270, 10%, 12.5%) !important;
   --color-base-05: #212121 !important;
   --color-base-10: hsl(270, 10%, 15%) !important;
@@ -1176,69 +1475,42 @@
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: hsl(37, 100%, 50%) !important;
-  --divider-color-hover: hsl(270, 65%, 58.8%) !important;
-  --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: hsl(270, 8%, 35%) !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: hsl(270, 8%, 50%) !important;
-  --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
-  --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-icon-inset: 0.5em !important;
   --dropdown-icon-width: 1em !important;
-  --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover: 0 0 0 1px hsl(37, 100%, 50%), inset 0 0 0 1px hsl(37, 100%, 50%) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid hsl(270, 65%, 58.8%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
-  --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
-  --file-header-background: hsl(270, 10%, 15%) !important;
-  --file-header-background-focused: hsl(270, 10%, 15%) !important;
-  --file-header-border: 1px solid transparent !important;
-  --file-header-font: "??", Neucha, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: 32px 32px !important;
-  --file-margins-x: 32px !important;
-  --file-margins-y: 32px !important;
-  --flair-background: hsl(270, 8%, 35%) !important;
-  --flair-color: hsl(270, 10%, 75%) !important;
-  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
   --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface: "??", Neucha, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: Neucha !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid: "??", Neucha, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace: "??", "Space Mono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "Space Mono" !important;
   --font-normal: 400 !important;
-  --font-print: "??", "??", Neucha, "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text: "??", Neucha, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: Neucha !important;
@@ -1247,31 +1519,10 @@
   --font-ui-medium: 15px !important;
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
-  --font-weight: 400 !important;
-  --footnote-divider-color: hsl(37, 100%, 50%) !important;
-  --footnote-divider-color-active: transparent !important;
-  --footnote-divider-width: 1px !important;
-  --footnote-gap: 4px !important;
-  --footnote-id-color: hsl(270, 10%, 72.5%) !important;
-  --footnote-id-color-no-occurrences: hsl(270, 13%, 65%) !important;
   --footnote-id-delimiter: "." !important;
-  --footnote-input-background: transparent !important;
-  --footnote-input-background-active: rgba(255, 255, 255, 0.075) !important;
-  --footnote-line-height: 1.5 !important;
-  --footnote-padding-block: 6px !important;
-  --footnote-padding-inline: 6px !important;
-  --footnote-radius: 4px !important;
-  --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: hsl(37, 100%, 40%) !important;
-  --graph-node: hsl(270, 10%, 72.5%) !important;
-  --graph-node-attachment: hsl(25, 85%, 50%) !important;
-  --graph-node-focused: hsl(37, 100%, 50%) !important;
-  --graph-node-tag: hsla(100, 90%, 33.5%) !important;
-  --graph-node-unresolved: hsl(270, 13%, 65%) !important;
-  --graph-text: hsl(270, 10%, 75%) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.618em !important;
@@ -1297,27 +1548,18 @@
   --h4-variant: normal !important;
   --h4-weight: 640 !important;
   --h5-letter-spacing: -0.002em !important;
-  --h5-line-height: 1.5 !important;
   --h5-size: 1.076em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 620 !important;
   --h6-letter-spacing: 0em !important;
-  --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: hsl(270, 10%, 72.5%) !important;
-  --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: lighten !important;
-  --hr-color: hsl(37, 100%, 50%) !important;
   --hr-thickness: 2px !important;
-  --icon-color: hsl(270, 10%, 72.5%) !important;
-  --icon-color-active: hsl(267, 66.3%, 67.62%) !important;
-  --icon-color-focused: hsl(270, 10%, 75%) !important;
-  --icon-color-hover: hsl(270, 10%, 72.5%) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -1333,34 +1575,14 @@
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
-  --indentation-guide-color-active: rgba(255, 255, 255, 0.3) !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
-  --indentation-guide-width: 1px !important;
-  --indentation-guide-width-active: 1px !important;
-  --inline-title-line-height: 1.2 !important;
   --inline-title-margin-bottom: 0.5em !important;
-  --inline-title-size: 1.618em !important;
-  --inline-title-style: normal !important;
-  --inline-title-variant: normal !important;
-  --inline-title-weight: 700 !important;
-  --input-corner-shape: round !important;
-  --input-date-separator: hsl(270, 13%, 65%) !important;
-  --input-font-weight: 400 !important;
-  --input-icon-inset: 4px !important;
-  --input-padding: 4px 8px !important;
-  --input-placeholder-color: hsl(270, 13%, 65%) !important;
   --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
   --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: hsl(270, 65%, 58.8%) !important;
-  --interactive-accent-hover: hsl(267, 66.3%, 67.62%) !important;
-  --interactive-accent-hsl: 270, 65%, 58.8% !important;
-  --interactive-hover: hsl(270, 8%, 50%) !important;
-  --interactive-normal: hsl(270, 8%, 35%) !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -1374,153 +1596,72 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: hsl(37, 100%, 50%) !important;
-  --link-color-hover: hsl(37, 100%, 60%) !important;
   --link-decoration: none !important;
   --link-decoration-hover: none !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: hsla(175, 100%, 40%) !important;
-  --link-external-color-hover: hsla(175, 100%, 50%) !important;
   --link-external-decoration: none !important;
   --link-external-decoration-hover: none !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: hsl(25, 85%, 40%) !important;
-  --link-unresolved-decoration-color: hsla(270, 65%, 58.8%, 0.5) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.8 !important;
-  --link-weight: 400 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: 50% !important;
   --list-bullet-size: 0.3em !important;
   --list-bullet-transform: none !important;
-  --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: hsl(270, 13%, 65%) !important;
-  --list-marker-color-collapsed: hsl(267, 66.3%, 67.62%) !important;
-  --list-marker-color-hover: hsl(270, 10%, 72.5%) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: hsl(270, 10%, 15%) !important;
-  --menu-border-color: hsl(270, 8%, 50%) !important;
-  --menu-border-width: 1px !important;
-  --menu-corner-shape: round !important;
-  --menu-padding: 6px !important;
-  --menu-radius: 8px !important;
   --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: hsl(37, 100%, 50%) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: hsl(37, 100%, 50%) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: rgba(255, 255, 255, 0.075) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font: "??", Neucha, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-font-size: 0.875em !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-padding: 4px 8px !important;
-  --metadata-input-text-color: hsl(270, 10%, 75%) !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: rgba(255, 255, 255, 0.075) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font: "??", Neucha, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: hsl(270, 10%, 72.5%) !important;
-  --metadata-label-text-color-hover: hsl(270, 10%, 72.5%) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
-  --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: rgba(255, 255, 255, 0.075) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(270, 13%, 65%) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(270, 8%, 50%) !important;
-  --metadata-property-corner-shape: round !important;
-  --metadata-property-corner-shape-focus: round !important;
-  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
   --metadata-property-radius-hover: 6px !important;
-  --metadata-sidebar-input-font-size: 13px !important;
-  --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: hsl(270, 10%, 15%) !important;
-  --modal-border-color: hsl(270, 13%, 65%) !important;
-  --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: 12px !important;
   --modal-shadow: none !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
-  --nav-collapse-icon-color: hsl(270, 13%, 65%) !important;
-  --nav-collapse-icon-color-collapsed: hsl(270, 13%, 65%) !important;
-  --nav-heading-color: hsl(270, 10%, 75%) !important;
-  --nav-heading-color-collapsed: hsl(270, 13%, 65%) !important;
-  --nav-heading-color-collapsed-hover: hsl(270, 10%, 72.5%) !important;
-  --nav-heading-color-hover: hsl(270, 10%, 75%) !important;
-  --nav-heading-weight: 500 !important;
-  --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
-  --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: rgba(255, 255, 255, 0.075) !important;
-  --nav-item-background-hover: rgba(255, 255, 255, 0.075) !important;
-  --nav-item-background-selected: hsla(270, 65%, 58.8%, 0.15) !important;
-  --nav-item-children-margin-start: 12px !important;
-  --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: hsl(270, 10%, 72.5%) !important;
-  --nav-item-color-active: hsl(270, 10%, 75%) !important;
-  --nav-item-color-highlighted: hsl(265, 68.25%, 75.852%) !important;
-  --nav-item-color-hover: hsl(270, 10%, 75%) !important;
-  --nav-item-color-selected: hsl(270, 10%, 75%) !important;
-  --nav-item-margin-bottom: 2px !important;
-  --nav-item-padding: 4px 8px 4px 24px !important;
-  --nav-item-parent-padding: 4px 8px 4px 24px !important;
-  --nav-item-radius: 4px !important;
-  --nav-item-size: 13px !important;
   --nav-item-white-space: nowrap !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: hsl(270, 13%, 65%) !important;
-  --nav-tag-color-active: hsl(270, 10%, 72.5%) !important;
-  --nav-tag-color-hover: hsl(270, 10%, 72.5%) !important;
-  --nav-tag-radius: 4px !important;
-  --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: hsl(270, 10%, 15%) !important;
-  --pdf-page-background: hsl(270, 10%, 15%) !important;
-  --pdf-shadow: 0 0 0 1px hsl(37, 100%, 50%) !important;
-  --pdf-sidebar-background: hsl(270, 10%, 15%) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px hsl(37, 100%, 50%) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-color-remove-hover: hsl(267, 66.3%, 67.62%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
-  --popover-font-size: 16px !important;
   --popover-height: 400px !important;
   --popover-max-height: 95vh !important;
   --popover-pdf-height: 400px !important;
@@ -1528,9 +1669,6 @@
   --popover-width: 450px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
-  --prompt-background: hsl(270, 10%, 15%) !important;
-  --prompt-border-color: hsl(270, 13%, 65%) !important;
-  --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
@@ -1539,75 +1677,30 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, hsl(270, 8%, 35%) 65%, transparent) linear-gradient(hsl(270, 8%, 35%), color-mix(in srgb, hsl(270, 8%, 35%) 65%, transparent)) !important;
-  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
   --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
   --raised-mask-background: transparent !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
-  --ribbon-background: hsl(270, 10%, 15%) !important;
-  --ribbon-background-collapsed: hsl(270, 10%, 15%) !important;
-  --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2) !important;
-  --scrollbar-bg: rgba(255, 255, 255, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 12px !important;
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1) !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: hsl(270, 10%, 72.5%) !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: hsl(270, 10%, 72.5%) !important;
   --search-icon-size: 18px !important;
-  --search-result-background: hsl(270, 10%, 15%) !important;
-  --setting-group-heading-color: hsl(270, 10%, 75%) !important;
-  --setting-group-heading-size: 15px !important;
-  --setting-group-heading-weight: 600 !important;
-  --setting-items-background: hsl(270, 10%, 17.5%) !important;
-  --setting-items-border-color: hsl(37, 100%, 50%) !important;
   --setting-items-border-width: 0 !important;
-  --setting-items-padding: 20px !important;
-  --setting-items-radius: 12px !important;
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2) !important;
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
-  --shiki-active-tab-border-color: hsl(270, 10%, 72.5%) !important;
   --shiki-active-tab-border-width: 2px !important;
-  --shiki-code-background: hsl(270, 10%, 17.5%) !important;
   --shiki-code-block-border-color: transparent !important;
-  --shiki-code-block-border-radius: 4px !important;
   --shiki-code-block-border-width: 0px !important;
-  --shiki-code-block-spacing: 1rem !important;
-  --shiki-code-comment: hsl(270, 13%, 65%) !important;
-  --shiki-code-function: hsla(100, 90%, 33.5%) !important;
-  --shiki-code-important: hsl(25, 85%, 50%) !important;
-  --shiki-code-keyword: hsl(330, 85%, 47.2%) !important;
-  --shiki-code-normal: hsl(270, 10%, 72.5%) !important;
-  --shiki-code-property: hsla(175, 100%, 50%) !important;
-  --shiki-code-punctuation: hsl(270, 10%, 72.5%) !important;
-  --shiki-code-string: hsl(37, 100%, 50%) !important;
-  --shiki-code-value: hsl(270, 65%, 58.8%) !important;
-  --shiki-gutter-border-color: hsl(37, 100%, 50%) !important;
-  --shiki-gutter-border-width: 1px !important;
-  --shiki-gutter-text-color: hsl(270, 13%, 65%) !important;
-  --shiki-gutter-text-color-highlight: hsl(270, 10%, 72.5%) !important;
-  --shiki-highlight-green: rgba(51, 138, 7, 0.5) !important;
-  --shiki-highlight-green-background: rgba(51, 138, 7, 0.1) !important;
-  --shiki-highlight-neutral: hsl(270, 10%, 72.5%) !important;
-  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05) !important;
-  --shiki-highlight-red: rgba(228, 18, 88, 0.5) !important;
-  --shiki-highlight-red-background: rgba(228, 18, 88, 0.1) !important;
-  --shiki-terminal-dots-color: hsl(270, 13%, 65%) !important;
-  --shiki-tooltip-background: rgba(0, 0, 0, 0.9) !important;
   --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --sidebar-right-toggle-inner-width: 8.33% !important;
   --sidebar-right-toggle-inner-width-open: 24% !important;
   --sidebar-tab-text-display: none !important;
@@ -1628,132 +1721,52 @@
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: hsl(270, 8%, 50%) !important;
-  --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: hsl(37, 100%, 50%) !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: hsl(270, 10%, 15%) !important;
-  --status-bar-border-color: hsl(37, 100%, 50%) !important;
-  --status-bar-border-width: 1px 0 0 1px !important;
-  --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
-  --status-bar-radius: 8px 0 0 0 !important;
-  --status-bar-text-color: hsl(270, 10%, 72.5%) !important;
   --suggestion-backdrop-filter: none !important;
-  --suggestion-background: hsl(270, 10%, 15%) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
-  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
   --swatch-width: 22px !important;
-  --sync-avatar-color-1: hsl(340, 85%, 48.3%) !important;
-  --sync-avatar-color-2: hsl(25, 85%, 50%) !important;
-  --sync-avatar-color-3: hsl(37, 100%, 50%) !important;
-  --sync-avatar-color-4: hsla(100, 90%, 33.5%) !important;
-  --sync-avatar-color-5: hsla(175, 100%, 50%) !important;
-  --sync-avatar-color-6: hsl(190, 100%, 26%) !important;
-  --sync-avatar-color-7: hsl(270, 65%, 58.8%) !important;
-  --sync-avatar-color-8: hsl(330, 85%, 47.2%) !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: hsl(270, 10%, 15%) !important;
   --tab-curve: 6px !important;
-  --tab-divider-color: hsl(270, 8%, 50%) !important;
-  --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: hsl(37, 100%, 50%) !important;
   --tab-outline-width: 1px !important;
-  --tab-radius: 4px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
-  --tab-stacked-font-size: 13px !important;
   --tab-stacked-font-weight: 400 !important;
-  --tab-stacked-header-width: 40px !important;
   --tab-stacked-pane-width: 700px !important;
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: hsl(270, 10%, 15%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(270, 10%, 15%), transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 16px !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(270, 65%, 58.8%) !important;
-  --tab-text-color: hsl(270, 13%, 65%) !important;
-  --tab-text-color-active: hsl(270, 10%, 72.5%) !important;
-  --tab-text-color-focused: hsl(270, 10%, 72.5%) !important;
-  --tab-text-color-focused-active: hsl(270, 10%, 75%) !important;
-  --tab-text-color-focused-active-current: hsl(270, 10%, 75%) !important;
-  --tab-text-color-focused-highlighted: hsl(267, 66.3%, 67.62%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: hsl(37, 100%, 50%) !important;
-  --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
-  --table-column-alt-background: transparent !important;
-  --table-column-first-border-width: 1px !important;
-  --table-column-last-border-width: 1px !important;
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: hsl(270, 65%, 58.8%) !important;
-  --table-drag-handle-color: hsl(270, 13%, 65%) !important;
-  --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: transparent !important;
-  --table-header-border-color: hsl(37, 100%, 50%) !important;
-  --table-header-border-width: 1px !important;
-  --table-header-color: hsl(270, 10%, 75%) !important;
-  --table-header-size: 0.875em !important;
-  --table-header-weight: 700 !important;
-  --table-line-height: 1.3 !important;
-  --table-row-alt-background: transparent !important;
-  --table-row-alt-background-hover: transparent !important;
-  --table-row-background-hover: transparent !important;
-  --table-row-last-border-width: 1px !important;
-  --table-selection: hsla(270, 65%, 58.8%, 0.1) !important;
-  --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: hsl(270, 65%, 58.8%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
-  --table-text-size: 16px !important;
   --table-white-space: normal !important;
-  --tag-background: hsla(270, 65%, 58.8%, 0.1) !important;
-  --tag-background-hover: hsla(270, 65%, 58.8%, 0.2) !important;
-  --tag-border-color: hsla(270, 65%, 58.8%, 0.15) !important;
-  --tag-border-color-hover: hsla(270, 65%, 58.8%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: hsl(267, 66.3%, 67.62%) !important;
-  --tag-color-hover: hsl(267, 66.3%, 67.62%) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
-  --tag-size: 0.875em !important;
-  --text-accent-hover: hsl(265, 68.25%, 75.852%) !important;
-  --text-error: hsl(340, 85%, 48.3%) !important;
-  --text-highlight-bg: rgba(255, 157, 0, 0.7) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: hsl(270, 10%, 72.5%) !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: hsla(270, 65%, 58.8%, 0.33) !important;
-  --text-success: hsla(100, 90%, 33.5%) !important;
-  --text-warning: hsl(25, 85%, 50%) !important;
-  --titlebar-background-focused: hsl(270, 10%, 17.5%) !important;
-  --titlebar-border-color: hsl(37, 100%, 50%) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: hsl(270, 10%, 72.5%) !important;
-  --titlebar-text-color-focused: hsl(270, 10%, 75%) !important;
-  --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
   --toggle-s-border-width: 2px !important;
@@ -1765,29 +1778,16 @@
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
-  --touch-radius-l: 52px !important;
-  --touch-radius-m: 44px !important;
-  --touch-radius-s: 40px !important;
-  --touch-radius-xl: 60px !important;
-  --touch-radius-xs: 30px !important;
-  --touch-radius-xxs: 24px !important;
   --touch-size-l: 52px !important;
   --touch-size-m: 44px !important;
   --touch-size-s: 40px !important;
   --touch-size-xl: 60px !important;
   --touch-size-xs: 30px !important;
   --touch-size-xxs: 24px !important;
-  --traffic-lights-offset-x: 40px !important;
-  --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: hsl(270, 10%, 75%) !important;
-  --vault-profile-color-hover: hsl(270, 10%, 75%) !important;
   --vault-profile-display: flex !important;
-  --vault-profile-font-size: 13px !important;
-  --vault-profile-font-weight: 500 !important;
   --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
-  --workspace-background-translucent: rgba(0, 0, 0, 0.6) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
@@ -2256,7 +2256,7 @@ body {
   footer a {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(0, 204, 187);
-    cursor: pointer;
+    cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2275,11 +2275,11 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: var(--link-weight, 400);
     outline: rgb(0, 204, 187) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(0, 204, 187);
-    text-decoration-line: underline;
+    text-decoration-line: var(--link-external-decoration, underline);
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
     transform: none;
@@ -2298,7 +2298,7 @@ body {
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 157, 0);
-    cursor: pointer;
+    cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2317,11 +2317,11 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: var(--link-weight, 400);
     outline: rgb(255, 157, 0) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(255, 157, 0);
-    text-decoration-line: underline;
+    text-decoration-line: var(--link-decoration, underline);
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
     transform: none;
@@ -2339,7 +2339,7 @@ body {
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(189, 88, 15);
-    cursor: pointer;
+    cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2358,12 +2358,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: var(--link-weight, 400);
     outline: rgb(189, 88, 15) none 0px;
     text-decoration: rgba(150, 82, 218, 0.5);
     text-decoration-color: rgba(150, 82, 218, 0.5);
-    text-decoration-line: underline;
-    text-decoration-style: solid;
+    text-decoration-line: var(--link-decoration, underline);
+    text-decoration-style: var(--link-unresolved-decoration-style, solid);
     transition: opacity 0.14s ease-in-out;
     transform: none;
     user-select: text;
@@ -2458,7 +2458,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: calc(var(--font-weight) + var(--bold-modifier));
     outline: rgb(89, 82, 96) none 0px;
     text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(89, 82, 96);
@@ -2500,7 +2500,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: calc(var(--font-weight) + var(--bold-modifier));
     outline: rgb(89, 82, 96) none 0px;
     text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(89, 82, 96);
@@ -2763,7 +2763,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: var(--pill-weight, 400);
     margin-inline-start: 0px;
     border: 0px solid rgba(150, 82, 218, 0.15);
     border-top-left-radius: 28px;
@@ -2890,7 +2890,7 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    width: 16px;
+    width: var(--checkbox-size, 16px);
     transition: box-shadow 0.15s ease-in-out;
     position: relative;
     top: auto;
@@ -2912,7 +2912,7 @@ body {
   }
 
   blockquote {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--blockquote-background-color, rgba(0, 0, 0, 0));
     font-family:
       Neucha,
       ui-sans-serif,
@@ -2981,10 +2981,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    box-shadow:
-      rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
-      rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
-      rgba(0, 0, 0, 0.1) 0px 15px 30px 0px;
+    box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.1) 0px 15px 30px 0px);
   }
 
   .search > .search-container > .search-space > input {
@@ -3211,7 +3208,7 @@ body {
   }
 
   li.depth-0 {
-    font-weight: 400;
+    font-weight: var(--nav-item-weight, 400);
   }
 
   ::-webkit-scrollbar {
@@ -3297,11 +3294,11 @@ body {
 
   .callout .callout-title > .callout-title-inner > p {
     color: rgb(150, 82, 218);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(89, 82, 96);
@@ -3347,11 +3344,11 @@ body {
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
     color: rgb(150, 82, 218);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="note"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(89, 82, 96);
@@ -3397,11 +3394,11 @@ body {
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
     color: rgb(150, 82, 218);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="abstract"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(89, 82, 96);
@@ -3447,11 +3444,11 @@ body {
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
     color: rgb(150, 82, 218);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="info"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(89, 82, 96);
@@ -3497,11 +3494,11 @@ body {
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
     color: rgb(150, 82, 218);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="todo"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(89, 82, 96);
@@ -3547,11 +3544,11 @@ body {
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
     color: rgb(150, 82, 218);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="tip"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(89, 82, 96);
@@ -3597,11 +3594,11 @@ body {
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
     color: rgb(150, 82, 218);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="success"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(89, 82, 96);
@@ -3647,11 +3644,11 @@ body {
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
     color: rgb(150, 82, 218);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="question"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(89, 82, 96);
@@ -3697,11 +3694,11 @@ body {
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
     color: rgb(150, 82, 218);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(89, 82, 96);
@@ -3747,11 +3744,11 @@ body {
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
     color: rgb(150, 82, 218);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="danger"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(89, 82, 96);
@@ -3797,11 +3794,11 @@ body {
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
     color: rgb(150, 82, 218);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="failure"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(89, 82, 96);
@@ -3847,11 +3844,11 @@ body {
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
     color: rgb(150, 82, 218);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="bug"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(89, 82, 96);
@@ -3897,11 +3894,11 @@ body {
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
     color: rgb(150, 82, 218);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="example"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(89, 82, 96);
@@ -3947,11 +3944,11 @@ body {
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
     color: rgb(150, 82, 218);
-    font-weight: 600;
+    font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="quote"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(89, 82, 96);
@@ -3988,7 +3985,10 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 16px 230.281px 0px;
+    margin-top: var(--heading-spacing, 16px);
+    margin-bottom: 0px;
+    margin-left: 230.281px;
+    margin-right: 230.281px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -4017,8 +4017,11 @@ body {
     color: rgb(89, 82, 96);
     font-weight: 700;
     text-align: start;
-    vertical-align: top;
-    border: 1px solid rgb(255, 157, 0);
+    vertical-align: var(--table-cell-vertical-alignment, top);
+    border-left: var(--table-column-first-border-width, 1px) solid rgb(255, 157, 0);
+    border-right: 1px solid rgb(255, 157, 0);
+    border-top: var(--table-header-border-width, 1px) solid rgb(255, 157, 0);
+    border-bottom: 1px solid rgb(255, 157, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -4035,8 +4038,9 @@ body {
     color: rgb(89, 82, 96);
     font-weight: 400;
     text-align: start;
-    vertical-align: top;
+    vertical-align: var(--table-cell-vertical-alignment, top);
     border: 1px solid rgb(255, 157, 0);
+    border-left: var(--table-column-first-border-width, 1px) solid rgb(255, 157, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -4049,7 +4053,7 @@ body {
   }
 
   tr {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--table-header-background, rgba(0, 0, 0, 0));
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -4062,11 +4066,11 @@ body {
   }
 
   tbody tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--table-background, rgba(0, 0, 0, 0));
   }
 
   tbody tr:nth-child(odd) {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
   }
 
   img {
@@ -4176,7 +4180,7 @@ body {
   }
 
   .transclude {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--embed-background, rgba(0, 0, 0, 0));
     border-color: rgb(89, 82, 96);
     border-left: 2px solid rgb(159, 100, 223);
     border-right-width: 0px;
@@ -4191,7 +4195,7 @@ body {
   }
 
   .transclude-inner {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--embed-background, rgba(0, 0, 0, 0));
     border-left: solid;
     border-width: 0px;
     border-color: rgb(89, 82, 96);
@@ -4216,7 +4220,7 @@ body {
   }
 
   .metadata {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
     color: rgb(51, 46, 56);
     font-family:
       Neucha,
@@ -4380,7 +4384,7 @@ body {
     box-shadow: none;
     color: rgb(89, 82, 96);
     font-family: "Space Mono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
-    font-size: 14px;
+    font-size: var(--code-size, 14px);
     border: 0px rgb(89, 82, 96);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -4635,7 +4639,7 @@ body {
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
     color: rgb(51, 46, 56);
-    cursor: default;
+    cursor: var(--cursor, default);
     font-family:
       Neucha,
       ui-sans-serif,
@@ -4651,13 +4655,13 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: var(--nav-item-weight, 400);
     text-decoration: rgb(34, 34, 34);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
     color: rgb(51, 46, 56);
-    cursor: default;
+    cursor: var(--cursor, default);
     font-family:
       Neucha,
       ui-sans-serif,
@@ -4673,7 +4677,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: var(--nav-item-weight, 400);
     text-decoration: rgb(34, 34, 34);
   }
 
@@ -4697,7 +4701,7 @@ body {
   }
 
   .bases-table tbody tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
   }
 
   .canvas-node {
@@ -4719,12 +4723,7 @@ body {
   .canvas-sidebar {
     background-color: rgb(198, 192, 203);
     border-color: rgb(89, 82, 96);
-    box-shadow:
-      rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset,
-      rgba(0, 0, 0, 0.05) 0px 2px 3px 0px,
-      rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px,
-      rgba(0, 0, 0, 0.04) 0px 1px 2px 0px,
-      rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    box-shadow: var(--input-shadow, rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 2px 3px 0px, rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
   }
 
   .canvas-node-group {
@@ -4734,7 +4733,7 @@ body {
   }
 
   .note-properties {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
     border-color: rgb(255, 157, 0);
     border-radius: 0px;
   }
@@ -4765,7 +4764,7 @@ body {
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(51, 46, 56);
-    cursor: default;
+    cursor: var(--cursor, default);
     border-color: rgb(51, 46, 56);
     border-width: 0px;
     border-top-left-radius: 4px;
@@ -4914,7 +4913,7 @@ body {
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(51, 46, 56);
-    cursor: default;
+    cursor: var(--cursor, default);
     border-color: rgb(51, 46, 56);
     border-width: 0px;
     border-top-left-radius: 4px;
@@ -4982,7 +4981,7 @@ body {
   }
 
   .katex-display {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
     color: rgb(89, 82, 96);
     border-color: rgb(89, 82, 96);
     border-width: 0px;
@@ -5106,8 +5105,8 @@ body {
 
   h1.article-title {
     color: rgb(150, 82, 218);
-    font-size: 25.888px;
-    font-weight: 700;
+    font-size: var(--inline-title-size, 25.888px);
+    font-weight: var(--inline-title-weight, 700);
   }
 
   .stacked-page {
@@ -7038,7 +7037,7 @@ html[saved-theme="dark"] {
     footer a {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(0, 204, 187);
-      cursor: pointer;
+      cursor: var(--cursor-link, pointer);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -7057,11 +7056,11 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: var(--link-weight, 400);
       outline: rgb(0, 204, 187) none 0px;
       text-decoration: underline;
       text-decoration-color: rgb(0, 204, 187);
-      text-decoration-line: underline;
+      text-decoration-line: var(--link-external-decoration, underline);
       text-decoration-style: solid;
       transition: opacity 0.14s ease-in-out;
       transform: none;
@@ -7080,7 +7079,7 @@ html[saved-theme="dark"] {
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(255, 157, 0);
-      cursor: pointer;
+      cursor: var(--cursor-link, pointer);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -7099,11 +7098,11 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: var(--link-weight, 400);
       outline: rgb(255, 157, 0) none 0px;
       text-decoration: underline;
       text-decoration-color: rgb(255, 157, 0);
-      text-decoration-line: underline;
+      text-decoration-line: var(--link-decoration, underline);
       text-decoration-style: solid;
       transition: opacity 0.14s ease-in-out;
       transform: none;
@@ -7121,7 +7120,7 @@ html[saved-theme="dark"] {
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(189, 88, 15);
-      cursor: pointer;
+      cursor: var(--cursor-link, pointer);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -7140,12 +7139,12 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: var(--link-weight, 400);
       outline: rgb(189, 88, 15) none 0px;
       text-decoration: rgba(150, 82, 218, 0.5);
       text-decoration-color: rgba(150, 82, 218, 0.5);
-      text-decoration-line: underline;
-      text-decoration-style: solid;
+      text-decoration-line: var(--link-decoration, underline);
+      text-decoration-style: var(--link-unresolved-decoration-style, solid);
       transition: opacity 0.14s ease-in-out;
       transform: none;
       user-select: text;
@@ -7240,7 +7239,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 600;
+      font-weight: calc(var(--font-weight) + var(--bold-modifier));
       outline: rgb(191, 185, 198) none 0px;
       text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(191, 185, 198);
@@ -7282,7 +7281,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 600;
+      font-weight: calc(var(--font-weight) + var(--bold-modifier));
       outline: rgb(191, 185, 198) none 0px;
       text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(191, 185, 198);
@@ -7545,7 +7544,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: var(--pill-weight, 400);
       margin-inline-start: 0px;
       border: 0px solid rgba(150, 82, 218, 0.15);
       border-top-left-radius: 28px;
@@ -7672,7 +7671,7 @@ html[saved-theme="dark"] {
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      width: 16px;
+      width: var(--checkbox-size, 16px);
       transition: box-shadow 0.15s ease-in-out;
       position: relative;
       top: auto;
@@ -7694,7 +7693,7 @@ html[saved-theme="dark"] {
     }
 
     blockquote {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--blockquote-background-color, rgba(0, 0, 0, 0));
       font-family:
         Neucha,
         ui-sans-serif,
@@ -7763,10 +7762,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
-        rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
-        rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
+      box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px);
     }
 
     .search > .search-container > .search-space > input {
@@ -7993,7 +7989,7 @@ html[saved-theme="dark"] {
     }
 
     li.depth-0 {
-      font-weight: 400;
+      font-weight: var(--nav-item-weight, 400);
     }
 
     ::-webkit-scrollbar {
@@ -8079,11 +8075,11 @@ html[saved-theme="dark"] {
 
     .callout .callout-title > .callout-title-inner > p {
       color: rgb(150, 82, 218);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(191, 185, 198);
@@ -8129,11 +8125,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
       color: rgb(150, 82, 218);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="note"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(191, 185, 198);
@@ -8179,11 +8175,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
       color: rgb(150, 82, 218);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="abstract"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(191, 185, 198);
@@ -8229,11 +8225,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
       color: rgb(150, 82, 218);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="info"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(191, 185, 198);
@@ -8279,11 +8275,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
       color: rgb(150, 82, 218);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="todo"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(191, 185, 198);
@@ -8329,11 +8325,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
       color: rgb(150, 82, 218);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="tip"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(191, 185, 198);
@@ -8379,11 +8375,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
       color: rgb(150, 82, 218);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="success"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(191, 185, 198);
@@ -8429,11 +8425,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
       color: rgb(150, 82, 218);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="question"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(191, 185, 198);
@@ -8479,11 +8475,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
       color: rgb(150, 82, 218);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="warning"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(191, 185, 198);
@@ -8529,11 +8525,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
       color: rgb(150, 82, 218);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="danger"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(191, 185, 198);
@@ -8579,11 +8575,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
       color: rgb(150, 82, 218);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="failure"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(191, 185, 198);
@@ -8629,11 +8625,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
       color: rgb(150, 82, 218);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="bug"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(191, 185, 198);
@@ -8679,11 +8675,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
       color: rgb(150, 82, 218);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="example"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(191, 185, 198);
@@ -8729,11 +8725,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
       color: rgb(150, 82, 218);
-      font-weight: 600;
+      font-weight: var(--font-weight, 600);
     }
 
     .callout[data-callout="quote"] > .callout-content {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(191, 185, 198);
@@ -8770,7 +8766,10 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin: 16px 230.281px 0px;
+      margin-top: var(--heading-spacing, 16px);
+      margin-bottom: 0px;
+      margin-left: 230.281px;
+      margin-right: 230.281px;
       margin-block-end: 0px;
       margin-block-start: 0px;
       margin-inline-end: 0px;
@@ -8799,8 +8798,11 @@ html[saved-theme="dark"] {
       color: rgb(191, 185, 198);
       font-weight: 700;
       text-align: start;
-      vertical-align: top;
-      border: 1px solid rgb(255, 157, 0);
+      vertical-align: var(--table-cell-vertical-alignment, top);
+      border-left: var(--table-column-first-border-width, 1px) solid rgb(255, 157, 0);
+      border-right: 1px solid rgb(255, 157, 0);
+      border-top: var(--table-header-border-width, 1px) solid rgb(255, 157, 0);
+      border-bottom: 1px solid rgb(255, 157, 0);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8817,8 +8819,9 @@ html[saved-theme="dark"] {
       color: rgb(191, 185, 198);
       font-weight: 400;
       text-align: start;
-      vertical-align: top;
+      vertical-align: var(--table-cell-vertical-alignment, top);
       border: 1px solid rgb(255, 157, 0);
+      border-left: var(--table-column-first-border-width, 1px) solid rgb(255, 157, 0);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8831,7 +8834,7 @@ html[saved-theme="dark"] {
     }
 
     tr {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--table-header-background, rgba(0, 0, 0, 0));
       border: 0px rgb(128, 128, 128);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8844,11 +8847,11 @@ html[saved-theme="dark"] {
     }
 
     tbody tr:nth-child(even) {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--table-background, rgba(0, 0, 0, 0));
     }
 
     tbody tr:nth-child(odd) {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
     }
 
     img {
@@ -8958,7 +8961,7 @@ html[saved-theme="dark"] {
     }
 
     .transclude {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--embed-background, rgba(0, 0, 0, 0));
       border-color: rgb(191, 185, 198);
       border-left: 2px solid rgb(150, 82, 218);
       border-right-width: 0px;
@@ -8973,7 +8976,7 @@ html[saved-theme="dark"] {
     }
 
     .transclude-inner {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--embed-background, rgba(0, 0, 0, 0));
       border-left: solid;
       border-width: 0px;
       border-color: rgb(191, 185, 198);
@@ -8998,7 +9001,7 @@ html[saved-theme="dark"] {
     }
 
     .metadata {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--metadata-background, rgba(0, 0, 0, 0));
       color: rgb(185, 178, 192);
       font-family:
         Neucha,
@@ -9162,7 +9165,7 @@ html[saved-theme="dark"] {
       box-shadow: none;
       color: rgb(191, 185, 198);
       font-family: "Space Mono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
-      font-size: 14px;
+      font-size: var(--code-size, 14px);
       border: 0px rgb(191, 185, 198);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -9417,7 +9420,7 @@ html[saved-theme="dark"] {
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
       color: rgb(185, 178, 192);
-      cursor: default;
+      cursor: var(--cursor, default);
       font-family:
         Neucha,
         ui-sans-serif,
@@ -9433,13 +9436,13 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: var(--nav-item-weight, 400);
       text-decoration: rgb(218, 218, 218);
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
       color: rgb(185, 178, 192);
-      cursor: default;
+      cursor: var(--cursor, default);
       font-family:
         Neucha,
         ui-sans-serif,
@@ -9455,7 +9458,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: var(--nav-item-weight, 400);
       text-decoration: rgb(218, 218, 218);
     }
 
@@ -9479,7 +9482,7 @@ html[saved-theme="dark"] {
     }
 
     .bases-table tbody tr:nth-child(even) {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
     }
 
     .canvas-node {
@@ -9501,12 +9504,7 @@ html[saved-theme="dark"] {
     .canvas-sidebar {
       background-color: rgb(38, 34, 42);
       border-color: rgb(191, 185, 198);
-      box-shadow:
-        rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset,
-        rgba(0, 0, 0, 0.15) 0px 2px 4px 0px,
-        rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px,
-        rgba(0, 0, 0, 0.2) 0px 1px 2px 0px,
-        rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+      box-shadow: var(--input-shadow, rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
     }
 
     .canvas-node-group {
@@ -9516,7 +9514,7 @@ html[saved-theme="dark"] {
     }
 
     .note-properties {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--metadata-background, rgba(0, 0, 0, 0));
       border-color: rgb(255, 157, 0);
       border-radius: 0px;
     }
@@ -9547,7 +9545,7 @@ html[saved-theme="dark"] {
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(185, 178, 192);
-      cursor: default;
+      cursor: var(--cursor, default);
       border-color: rgb(185, 178, 192);
       border-width: 0px;
       border-top-left-radius: 4px;
@@ -9696,7 +9694,7 @@ html[saved-theme="dark"] {
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(185, 178, 192);
-      cursor: default;
+      cursor: var(--cursor, default);
       border-color: rgb(185, 178, 192);
       border-width: 0px;
       border-top-left-radius: 4px;
@@ -9764,7 +9762,7 @@ html[saved-theme="dark"] {
     }
 
     .katex-display {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
       color: rgb(191, 185, 198);
       border-color: rgb(191, 185, 198);
       border-width: 0px;
@@ -9888,8 +9886,8 @@ html[saved-theme="dark"] {
 
     h1.article-title {
       color: rgb(150, 82, 218);
-      font-size: 25.888px;
-      font-weight: 700;
+      font-size: var(--inline-title-size, 25.888px);
+      font-weight: var(--inline-title-weight, 700);
     }
 
     .stacked-page {

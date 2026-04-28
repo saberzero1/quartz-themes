@@ -10,7 +10,6 @@ settings:
     options:
       - nordic-base
       - nordic-uniform
-
   - id: nordic-colored-headers
     title: Colored Headers (Rainbow Headers)
     description: adds different colors for each of the headings
@@ -19,7 +18,7 @@ settings:
     title: Darker Dark Theme
     description: prefer things a little darker? mix the base colors with this percentage of black
     type: variable-number-slider
-    format: "%"
+    format: '%'
     default: 0
     min: 0
     max: 50

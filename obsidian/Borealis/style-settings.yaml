@@ -7,72 +7,72 @@ settings:
     level: 1
     collapsed: true
   - id: color-primary
-    title: "Color primary"
+    title: Color primary
     description: Used for accent, faint, interactive, bold, tags, button, checkbox and callout
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#a1f98f"
-    default-dark: "#a1f98f"
+    default-light: '#a1f98f'
+    default-dark: '#a1f98f'
   - id: color-secondary
-    title: "Color secondary"
+    title: Color secondary
     description: Used for italic, button, callout and blockquote
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#e78ff9"
-    default-dark: "#e78ff9"
+    default-light: '#e78ff9'
+    default-dark: '#e78ff9'
   - id: rgb-primary
-    title: "Color primary (RGB)"
+    title: Color primary (RGB)
     description: Used for tags, button, callout and properties
     type: variable-themed-color
     opacity: false
     format: rgb-values
-    default-light: "rgb(34, 176, 67)"
-    default-dark: "rgb(161, 249, 143)"
+    default-light: rgb(34, 176, 67)
+    default-dark: rgb(161, 249, 143)
   - id: rgb-secondary
-    title: "Color secondary (RGB)"
+    title: Color secondary (RGB)
     description: Used for button, callout and blockquote
     type: variable-themed-color
     opacity: false
     format: rgb-values
-    default-light: "rgb(231, 143, 249)"
-    default-dark: "rgb(176, 33, 142)"
+    default-light: rgb(231, 143, 249)
+    default-dark: rgb(176, 33, 142)
   - id: text-normal
-    title: "Text: Normal"
+    title: 'Text: Normal'
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#141414"
-    default-dark: "#d1d1d1"
+    default-light: '#141414'
+    default-dark: '#d1d1d1'
   - id: text-muted
-    title: "Text: Muted"
+    title: 'Text: Muted'
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#888888"
-    default-dark: "#999999"
+    default-light: '#888888'
+    default-dark: '#999999'
   - id: text-faint
-    title: "Text: Faint"
+    title: 'Text: Faint'
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#21b043"
-    default-dark: "#a1f98f"
+    default-light: '#21b043'
+    default-dark: '#a1f98f'
   - id: text-error
-    title: "Text: Error"
+    title: 'Text: Error'
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#CF6679"
-    default-dark: "#ff2f00"
+    default-light: '#CF6679'
+    default-dark: '#ff2f00'
   - id: text-error-hover
-    title: "Text: Error (hover)"
+    title: 'Text: Error (hover)'
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#CF6679"
-    default-dark: "#ff2f00"
+    default-light: '#CF6679'
+    default-dark: '#ff2f00'
   - id: heading-colors-background
     title: Backgrounds
     type: heading
@@ -83,50 +83,50 @@ settings:
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#f6f6f6"
-    default-dark: "#141414"
+    default-light: '#f6f6f6'
+    default-dark: '#141414'
   - id: background-primary-alt
     title: Background Primary (alt)
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#f0f0f0"
-    default-dark: "#191919"
+    default-light: '#f0f0f0'
+    default-dark: '#191919'
   - id: background-secondary
     title: Background Secondary
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#f6f6f6"
-    default-dark: "#141414"
+    default-light: '#f6f6f6'
+    default-dark: '#141414'
   - id: background-secondary-alt
     title: Background Secondary (alt)
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#f6f6f6"
-    default-dark: "#141414"
+    default-light: '#f6f6f6'
+    default-dark: '#141414'
   - id: background-modifier-border
-    title: "Background Modifier: Border"
+    title: 'Background Modifier: Border'
     type: variable-themed-color
     opacity: true
     format: rgb
-    default-light: "#f6f6f6"
-    default-dark: "#141414"
+    default-light: '#f6f6f6'
+    default-dark: '#141414'
   - id: background-modifier-form-field
-    title: "Background Modifier: Form Field"
+    title: 'Background Modifier: Form Field'
     type: variable-themed-color
     opacity: true
     format: rgb
-    default-light: "#f6f6f6"
-    default-dark: "#141414"
+    default-light: '#f6f6f6'
+    default-dark: '#141414'
   - id: background-modifier-form-field-highlighted
-    title: "Background Modifier: Form Field (highlighted)"
+    title: 'Background Modifier: Form Field (highlighted)'
     type: variable-themed-color
     opacity: true
     format: rgb
-    default-light: "#f6f6f6"
-    default-dark: "#141414"
+    default-light: '#f6f6f6'
+    default-dark: '#141414'
   - id: heading-fonts
     title: Fonts
     type: heading
@@ -154,6 +154,53 @@ settings:
     description: Used for heading.
     type: variable-text
     default: '"JetBrains Mono", monospace'
+  - null
+  - id: tables
+    title: Tables
+    type: heading
+    level: 1
+    collapsed: true
+  - id: width
+    title: Width
+    description: Adjusts the width of the tables
+    type: class-select
+    allowEmpty: false
+    default: tw1
+    options:
+      - label: Full-length
+        value: tw1
+      - label: Regular
+        value: tw2
+      - label: Narrow
+        value: tw3
+  - id: height
+    title: Height
+    description: Adjusts the height of the tables
+    type: class-select
+    allowEmpty: false
+    default: th1
+    options:
+      - label: Full-length
+        value: th1
+      - label: Regular
+        value: th2
+      - label: Compact
+        value: th3
+  - id: style
+    title: Style
+    description: Adjusts the style of the tables
+    type: class-select
+    allowEmpty: false
+    default: t1
+    options:
+      - label: Style 1
+        value: t1
+      - label: Style 2
+        value: t2
+      - label: Style 3
+        value: t3
+      - label: Style 4
+        value: t4
   - id: checkboxes
     title: Checkboxes
     type: heading
@@ -190,3 +237,4 @@ settings:
         value: sh6
       - label: Tomorrow Night Bright
         value: sh7
+  - null

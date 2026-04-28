@@ -1,0 +1,274 @@
+name: Theme - Rift
+id: obsidian-theme-rift
+settings:
+  - id: obsidian-theme-rift-core-config
+    title: Core settings
+    type: heading
+    level: 2
+  - id: workspace-ribbon-hide
+    title: Hidden ribbon
+    description: If set to true, the ribbon at the left will be hidden, else if set to false, the ribbon at the left will be displayed.
+    type: class-toggle
+  - id: obsidian-theme-rift-hsl
+    title: Accent colour
+    type: heading
+    level: 2
+  - id: accent-h
+    title: Hue
+    type: variable-number-slider
+    default: 160
+    min: 0
+    max: 255
+    step: 1
+  - id: accent-s
+    title: Saturation
+    type: variable-text
+    default: 20%
+  - id: accent-l
+    title: Lightness
+    type: variable-text
+    default: 45%
+  - id: obsidian-theme-rift-typography
+    title: Typography
+    type: heading
+    level: 2
+  - id: obsidian-theme-rift-heading
+    title: Heading
+    type: heading
+    level: 3
+  - id: h1-color
+    title: H1
+    description: Define the colour used for H1.
+    type: variable-select
+    default: var(--h1-default)
+    options:
+      - label: Default
+        value: var(--h1-default)
+      - label: Red
+        value: var(--h1-red)
+      - label: Orange
+        value: var(--h1-orange)
+      - label: Yellow
+        value: var(--h1-yellow)
+      - label: Green
+        value: var(--h1-green)
+      - label: Cyan
+        value: var(--h1-cyan)
+      - label: Blue
+        value: var(--h1-blue)
+      - label: Purple
+        value: var(--h1-purple)
+      - label: Pink
+        value: var(--h1-pink)
+  - id: h2-color
+    title: H2
+    description: Define the colour used for H2.
+    type: variable-select
+    default: var(--h2-default)
+    options:
+      - label: Default
+        value: var(--h2-default)
+      - label: Red
+        value: var(--h2-red)
+      - label: Orange
+        value: var(--h2-orange)
+      - label: Yellow
+        value: var(--h2-yellow)
+      - label: Green
+        value: var(--h2-green)
+      - label: Cyan
+        value: var(--h2-cyan)
+      - label: Blue
+        value: var(--h2-blue)
+      - label: Purple
+        value: var(--h2-purple)
+      - label: Pink
+        value: var(--h2-pink)
+  - id: h3-color
+    title: H3
+    description: Define the colour used for H3.
+    type: variable-select
+    default: var(--h3-default)
+    options:
+      - label: Default
+        value: var(--h3-default)
+      - label: Red
+        value: var(--h3-red)
+      - label: Orange
+        value: var(--h3-orange)
+      - label: Yellow
+        value: var(--h3-yellow)
+      - label: Green
+        value: var(--h3-green)
+      - label: Cyan
+        value: var(--h3-cyan)
+      - label: Blue
+        value: var(--h3-blue)
+      - label: Purple
+        value: var(--h3-purple)
+      - label: Pink
+        value: var(--h3-pink)
+  - id: h4-color
+    title: H4
+    description: Define the colour used for H4.
+    type: variable-select
+    default: var(--h4-default)
+    options:
+      - label: Default
+        value: var(--h4-default)
+      - label: Red
+        value: var(--h4-red)
+      - label: Orange
+        value: var(--h4-orange)
+      - label: Yellow
+        value: var(--h4-yellow)
+      - label: Green
+        value: var(--h4-green)
+      - label: Cyan
+        value: var(--h4-cyan)
+      - label: Blue
+        value: var(--h4-blue)
+      - label: Purple
+        value: var(--h4-purple)
+      - label: Pink
+        value: var(--h4-pink)
+  - id: h5-color
+    title: H5
+    description: Define the colour used for H5.
+    type: variable-select
+    default: var(--h5-default)
+    options:
+      - label: Default
+        value: var(--h5-default)
+      - label: Red
+        value: var(--h5-red)
+      - label: Orange
+        value: var(--h5-orange)
+      - label: Yellow
+        value: var(--h5-yellow)
+      - label: Green
+        value: var(--h5-green)
+      - label: Cyan
+        value: var(--h5-cyan)
+      - label: Blue
+        value: var(--h5-blue)
+      - label: Purple
+        value: var(--h5-purple)
+      - label: Pink
+        value: var(--h5-pink)
+  - id: h6-color
+    title: H6
+    description: Define the colour used for H6.
+    type: variable-select
+    default: var(--h6-default)
+    options:
+      - label: Default
+        value: var(--h6-default)
+      - label: Red
+        value: var(--h6-red)
+      - label: Orange
+        value: var(--h6-orange)
+      - label: Yellow
+        value: var(--h6-yellow)
+      - label: Green
+        value: var(--h6-green)
+      - label: Cyan
+        value: var(--h6-cyan)
+      - label: Blue
+        value: var(--h6-blue)
+      - label: Purple
+        value: var(--h6-purple)
+      - label: Pink
+        value: var(--h6-pink)
+  - id: obsidian-theme-rift-regular-text
+    title: Regular text
+    type: heading
+    level: 3
+  - id: text-accent
+    title: Text accent
+    description: Define the colour used for accented text.
+    type: variable-select
+    default: var(--color-green)
+    options:
+      - label: Red
+        value: var(--color-red)
+      - label: Orange
+        value: var(--color-orange)
+      - label: Yellow
+        value: var(--color-yellow)
+      - label: Green
+        value: var(--color-green)
+      - label: Cyan
+        value: var(--color-cyan)
+      - label: Blue
+        value: var(--color-blue)
+      - label: Purple
+        value: var(--color-purple)
+      - label: Pink
+        value: var(--color-pink)
+  - id: text-accent-hover
+    title: Text accent - Hover
+    description: Define the colour used for accented text when they are hovered.
+    type: variable-select
+    default: var(--color-green-hover)
+    options:
+      - label: Red
+        value: var(--color-red-hover)
+      - label: Orange
+        value: var(--color-orange-hover)
+      - label: Yellow
+        value: var(--color-yellow-hover)
+      - label: Green
+        value: var(--color-green-hover)
+      - label: Cyan
+        value: var(--color-cyan-hover)
+      - label: Blue
+        value: var(--color-blue-hover)
+      - label: Purple
+        value: var(--color-purple-hover)
+      - label: Pink
+        value: var(--color-pink-hover)
+  - id: bold-color
+    title: Bold colour
+    description: Define the colour used for bold text.
+    type: variable-select
+    default: var(--color-yellow)
+    options:
+      - label: Red
+        value: var(--color-red)
+      - label: Orange
+        value: var(--color-orange)
+      - label: Yellow
+        value: var(--color-yellow)
+      - label: Green
+        value: var(--color-green)
+      - label: Cyan
+        value: var(--color-cyan)
+      - label: Blue
+        value: var(--color-blue)
+      - label: Purple
+        value: var(--color-purple)
+      - label: Pink
+        value: var(--color-pink)
+  - id: italic-color
+    title: Italic colour
+    description: Define the colour used for italic text.
+    type: variable-select
+    default: var(--color-orange)
+    options:
+      - label: Red
+        value: var(--color-red)
+      - label: Orange
+        value: var(--color-orange)
+      - label: Yellow
+        value: var(--color-yellow)
+      - label: Green
+        value: var(--color-green)
+      - label: Cyan
+        value: var(--color-cyan)
+      - label: Blue
+        value: var(--color-blue)
+      - label: Purple
+        value: var(--color-purple)
+      - label: Pink
+        value: var(--color-pink)

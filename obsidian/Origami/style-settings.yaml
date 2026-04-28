@@ -10,19 +10,17 @@ settings:
     markdown: true
     type: info-text
     level: 0
-
   - id: o-sub-themes
     title: 🎨 color palettes
     description: a curation of custom & classic color palettes. don't see your favorite scheme? open a feature request on gitHub!
     type: heading
     level: 1
     collapsed: true
-
   - id: o-color-accent
     title: accent
     type: class-select
     allowEmpty: false
-    default: "o-red"
+    default: o-red
     options:
       - label: 💖 sorcery
         value: o-red
@@ -32,12 +30,13 @@ settings:
         value: o-blue
       - label: 💜 umbra
         value: o-purple
-
+      - label: 💜 custom
+        value: o-custom
   - id: o-theme-light
     title: themes, light
     type: class-select
     allowEmpty: true
-    default: ""
+    default: ''
     options:
       - label: 🔴 sorcery
         value: o-red-l
@@ -57,12 +56,11 @@ settings:
         value: o-solar-lt
       - label: 🧰 gruvbox
         value: o-gruvbox-lt
-
   - id: o-theme-dark
     title: themes, dark
     type: class-select
     allowEmpty: true
-    default: ""
+    default: ''
     options:
       - label: 🔴 sorcery
         value: o-red-d
@@ -90,49 +88,79 @@ settings:
         value: o-end-d
       - label: 💻 nano
         value: o-hack-d
-
+      - label: 🔥 heckhound
+        value: o-heck-d
+      - label: 🔥 siren
+        value: o-si-d
   - id: o-list-distinct
     title: top level lists
     description: enable list header demarking 🚨 does not work in reading mode
     type: class-toggle
-
   - id: o-border
     title: border style
     type: variable-select
     allowEmpty: false
-    default: "--bb-border-dashed"
+    default: '--bb-border-dashed'
     options:
       - label: dashed
-        value: "var(--bb-border-dashed)"
+        value: var(--bb-border-dashed)
       - label: solid
-        value: "var(--bb-border)"
+        value: var(--bb-border)
       - label: none
-        value: "none"
-
+        value: none
   - id: o-typography
     title: 📑 typography
     type: heading
     level: 1
     collapsed: true
-
+  - id: o-font-general
+    title: editor font
+    type: variable-select
+    allowEmpty: false
+    default: IAWriter
+    options:
+      - Monaspace
+      - Satoshi
+      - Fraunces
+      - Nightingale
+      - Instrument
+      - Aspekta
+      - IAWriter
+      - Overused Grotesk
+      - Lexend
+      - Uncut
+      - DobbinTextSF-Roman
+  - id: o-font-title
+    title: title type
+    type: variable-select
+    allowEmpty: false
+    default: Fraunces
+    options:
+      - Monaspace
+      - Satoshi
+      - Lexend
+      - Fraunces
+      - Nightingale
+      - Instrument
+      - Aspekta
+      - IAWriter
+      - Nightingale
+      - Uncut
+      - Overused Grotesk
   - id: o-bold-italic
     title: change bold-italic to accent color
     type: class-toggle
-
   - id: o-justify
     title: justify text
     type: class-toggle
-
   - id: o-headings
     title: ⌨️ heading settings
     type: heading
     level: 2
     collapsed: true
-
   - id: o-colorful-headings
     title: rainbow headers
     type: class-toggle
-
   - id: o-header-size
     title: header size arrays
     type: class-select
@@ -151,7 +179,6 @@ settings:
         value: o-headings-flat
       - label: fabulous
         value: o-headings-fabulous
-
   - id: o-header-line-accent
     title: header underline color
     type: class-select
@@ -182,38 +209,36 @@ settings:
   - id: o-header-line-h6
     title: header 6 underline
     type: class-toggle
-
   - id: o-special-features
     title: 🧪 special features
     description: option toggles, experimental features, wip testbed
     type: heading
     level: 1
     collapsed: true
-
   - id: o-frontmatter
     title: frontmatter card
     type: class-toggle
-
   - id: o-header-lapel
     title: header lapels
     description: Add numbered tags to each header gutter
     type: class-toggle
-
+  - id: o-hover-status-bar
+    title: status bar hover
+    description: show status bar on hover
+    type: class-toggle
   - id: o-plugins
     title: ⬇️ plugins
     type: heading
     level: 2
     collapsed: true
-
   - id: o-kanban-wrap
     title: wrap kanban lanes
     type: class-toggle
-
   - id: o-kanban-style
     title: kanban Style
     type: class-select
     allowEmpty: true
-    default: ""
+    default: ''
     options:
       - label: border
         value: o-kanban-border

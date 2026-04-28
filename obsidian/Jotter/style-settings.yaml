@@ -165,37 +165,37 @@ settings:
     id: h1-color
     type: variable-color
     format: hex
-    default: "#"
+    default: '#'
   - title: H2 color
     title.fr: Couleur H2
     id: h2-color
     type: variable-color
     format: hex
-    default: "#"
+    default: '#'
   - title: H3 color
     title.fr: Couleur H3
     id: h3-color
     type: variable-color
     format: hex
-    default: "#"
+    default: '#'
   - title: H4 color
     title.fr: Couleur H4
     id: h4-color
     type: variable-color
     format: hex
-    default: "#"
+    default: '#'
   - title: H5 color
     title.fr: Couleur H5
     id: h5-color
     type: variable-color
     format: hex
-    default: "#"
+    default: '#'
   - title: H6 color
     title.fr: Couleur H6
     id: h6-color
     type: variable-color
     format: hex
-    default: "#"
+    default: '#'
   - id: sizes-headings
     title: Size
     title.fr: Taille
@@ -230,13 +230,13 @@ settings:
     title.fr: Taille H5
     id: h5-size
     type: variable-number
-    default: .85
+    default: 0.85
     format: em
   - title: H6 size
     title.fr: Taille H6
     id: h6-size
     type: variable-number
-    default: .75
+    default: 0.75
     format: em
   - id: typography
     title: Typography
@@ -255,7 +255,7 @@ settings:
     title.fr: Couleur des italiques
     type: variable-color
     format: hex
-    default: "#"
+    default: '#'
   - id: em-underline
     title: Italics underline
     title.fr: Soulignement des italiques
@@ -270,7 +270,7 @@ settings:
     description.fr: Changer la couleur du soulignement
     type: variable-color
     format: hex
-    default: "var(--yellow)"
+    default: var(--yellow)
   - id: bold-text-typography
     title: Bold text
     title.fr: Texte en gras
@@ -282,7 +282,7 @@ settings:
     title.fr: Couleur texte gras
     type: variable-color
     format: hex
-    default: "#"
+    default: '#'
   - id: bold-underline
     title: Bold underline
     title.fr: Soulignement texte gras
@@ -297,7 +297,7 @@ settings:
     description.fr: Changer la couleur du soulignement (par défaut, la couleur sera la même que celle de la couleur d'accentuation)
     type: variable-color
     format: hex
-    default: "var(--text-accent)"
+    default: var(--text-accent)
   - id: custom-links
     title: Hyperlinks
     title.fr: Hyperliens
@@ -309,10 +309,10 @@ settings:
     id: link-color
     type: variable-color
     format: hex
-    default: "var(--text-accent)"
+    default: var(--text-accent)
   - title: External links
     title.fr: Liens externes
     id: link-external-color
     type: variable-color
     format: hex
-    default: "var(--text-accent)"
+    default: var(--text-accent)

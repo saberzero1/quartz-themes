@@ -4,18 +4,18 @@ export const theme: ThemeData = {
   meta: { name: "pure", modes: ["dark", "light"], variations: [], fonts: [] },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --collapse-icon-color: #b3b3b3 !important;
-  --collapse-icon-color-collapsed: #b3b3b3 !important;
-  --list-bullet-size: 4px !important;
-  --list-marker-color: #b3b3b3 !important;
-  --list-marker-color-hover: #666666 !important;
-  --nav-collapse-icon-color: #b3b3b3 !important;
-  --quartz-icon-color: currentColor !important;
+  --collapse-icon-color: #b3b3b3;
+  --collapse-icon-color-collapsed: #b3b3b3;
+  --list-bullet-size: 4px;
+  --list-marker-color: #b3b3b3;
+  --list-marker-color-hover: #666666;
+  --nav-collapse-icon-color: #b3b3b3;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body html {
@@ -781,18 +781,18 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   },
   light: {
     base: `:root:root {
-  --collapse-icon-color: #5c5c5c !important;
-  --collapse-icon-color-collapsed: #5c5c5c !important;
-  --list-bullet-size: 4px !important;
-  --list-marker-color: #5c5c5c !important;
-  --list-marker-color-hover: #ababab !important;
-  --nav-collapse-icon-color: #5c5c5c !important;
-  --quartz-icon-color: currentColor !important;
+  --collapse-icon-color: #5c5c5c;
+  --collapse-icon-color-collapsed: #5c5c5c;
+  --list-bullet-size: 4px;
+  --list-marker-color: #5c5c5c;
+  --list-marker-color-hover: #ababab;
+  --nav-collapse-icon-color: #5c5c5c;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body html {

@@ -1,0 +1,163 @@
+name: Typography & Typeface
+id: brutalist-typography
+settings:
+  - id: font-text-override
+    title: Body Font
+    description: Main font for reading notes.
+    type: variable-select
+    default: '''Lora'', serif'
+    options:
+      - label: iA Writer Quattro S (Sans)
+        value: '''iA Writer Quattro S'', sans-serif'
+      - label: Montserrat (Sans)
+        value: '''Montserrat'', sans-serif'
+      - label: Sen (Sans)
+        value: '''Sen'', sans-serif'
+      - label: iA Writer Duo S (Sans)
+        value: '''iA Writer Duo S'', sans-serif'
+      - label: IBM Plex Serif (Serif)
+        value: '''IBM Plex Serif'', serif'
+      - label: Ibarra Real Nova (Serif)
+        value: '''Ibarra Real Nova'', serif'
+      - label: Lora (Serif)
+        value: '''Lora'', serif'
+      - label: iA Writer Mono S (Mono Sans)
+        value: '''iA Writer Mono S'', monospace'
+      - label: Space Mono (Mono Sans)
+        value: '''Space Mono'', monospace'
+  - id: font-interface-override
+    title: Interface Font
+    description: Font for sidebar, tabs, and headers.
+    type: variable-select
+    default: '''Marcellus'', serif'
+    options:
+      - label: Sen (Sans)
+        value: '''Sen'', sans-serif'
+      - label: Montserrat (Sans)
+        value: '''Montserrat'', sans-serif'
+      - label: iA Writer Quattro S (Sans)
+        value: '''iA Writer Quattro S'', sans-serif'
+      - label: iA Writer Duo S (Sans)
+        value: '''iA Writer Duo S'', sans-serif'
+      - label: IBM Plex Serif (Serif)
+        value: '''IBM Plex Serif'', serif'
+      - label: Ibarra Real Nova (Serif)
+        value: '''Ibarra Real Nova'', serif'
+      - label: Lora (Serif)
+        value: '''Lora'', serif'
+      - label: Marcellus (Default Serif)
+        value: '''Marcellus'', serif'
+      - label: iA Writer Mono S (Mono Sans)
+        value: '''iA Writer Mono S'', monospace'
+      - label: Space Mono (Mono Sans)
+        value: '''Space Mono'', monospace'
+  - id: font-monospace-override
+    title: Monospace Font
+    description: Font for code blocks and inline code.
+    type: variable-select
+    default: '''iA Writer Mono S'', monospace'
+    options:
+      - label: iA Writer Mono S (Default)
+        value: '''iA Writer Mono S'', monospace'
+      - label: Space Mono (Mono Sans)
+        value: '''Space Mono'', monospace'
+  - id: section-typography-light
+    title: Light Mode Font Colours
+    type: heading
+    level: 2
+  - id: ui-font-color-light
+    title: UI Font Colour (Light Mode)
+    type: variable-select
+    default: '#222222'
+    options:
+      - label: '#505050 (Soft Grey)'
+        value: '#505050'
+      - label: '#404040 (Charcoal)'
+        value: '#404040'
+      - label: '#303030 (Deep Charcoal)'
+        value: '#303030'
+      - label: '#222222 (Default)'
+        value: '#222222'
+      - label: '#202020 (Near Black)'
+        value: '#202020'
+      - label: '#101010 (Pitch Black)'
+        value: '#101010'
+      - label: '#000000 (Pure Black)'
+        value: '#000000'
+  - id: body-font-color-light
+    title: Body Font Color (Light Mode)
+    type: variable-select
+    default: '#000000'
+    options:
+      - label: '#505050 (Soft Grey)'
+        value: '#505050'
+      - label: '#404040 (Charcoal)'
+        value: '#404040'
+      - label: '#303030 (Deep Charcoal)'
+        value: '#303030'
+      - label: '#202020 (Near Black)'
+        value: '#202020'
+      - label: '#101010 (Pitch Black)'
+        value: '#101010'
+      - label: '#000000 (Pure Black - Default)'
+        value: '#000000'
+  - id: link-color-light-custom
+    title: Internal Link Colour (Light Mode)
+    type: variable-color
+    format: hex
+    default: '#000000'
+  - id: link-ext-color-light-custom
+    title: External Link Colour (Light Mode)
+    type: variable-color
+    format: hex
+    default: '#000000'
+  - id: section-typography-dark
+    title: Dark Mode Font Colours
+    type: heading
+    level: 2
+  - id: ui-font-color-dark
+    title: UI Font Colour (Dark Mode)
+    type: variable-select
+    default: '#b3b3b3'
+    options:
+      - label: '#a0a0a0 (Dark Grey)'
+        value: '#a0a0a0'
+      - label: '#a9a9a9 (Silver Grey)'
+        value: '#a9a9a9'
+      - label: '#b3b3b3 (Light Grey - Default)'
+        value: '#b3b3b3'
+      - label: '#ffffff (Pure White)'
+        value: '#ffffff'
+      - label: '#c8bc9f (Everforest)'
+        value: '#c8bc9f'
+      - label: '#bcb094 (Deep Everforest)'
+        value: '#bcb094'
+      - label: '#b0a589 (Dark Everforest)'
+        value: '#b0a589'
+  - id: body-font-color-dark
+    title: Body Font Color (Dark Mode)
+    type: variable-select
+    default: '#a0a0a0'
+    options:
+      - label: '#a0a0a0 (Dark Grey - Default)'
+        value: '#a0a0a0'
+      - label: '#b3b3b3 (Light Grey)'
+        value: '#b3b3b3'
+      - label: '#ffffff (Pure White)'
+        value: '#ffffff'
+      - label: '#c8bc9f (Everforest)'
+        value: '#c8bc9f'
+      - label: '#bcb094 (Deep Everforest)'
+        value: '#bcb094'
+      - label: '#b0a589 (Dark Everforest)'
+        value: '#b0a589'
+  - id: link-color-dark-custom
+    title: Internal Link Colour (Dark Mode)
+    type: variable-color
+    format: hex
+    default: '#a0a0a0'
+  - id: link-ext-color-dark-custom
+    title: External Link Colour (Dark Mode)
+    type: variable-color
+    format: hex
+    default: '#a0a0a0'

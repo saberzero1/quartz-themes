@@ -3229,7 +3229,7 @@ settings:
   # ────୨ৎ──── core theme & colors
 
   - id: ulu-subtheme 
-    title: 0️⃣ subthemes & colors 
+    title: "0️⃣ .𖥔 ݁ ˖ subthemes & colors ⊹ ࣪ ˖" 
     type: heading 
     level: 1 
     collapsed: true 
@@ -3348,9 +3348,15 @@ settings:
   # ────୨ৎ──── interface & components
 
   - id: ulu-interface 
-    title: 🖥️ interface & components 
+    title: "🖥️ .𖥔 ݁ ˖ interface & components ⊹ ࣪ ˖" 
     type: heading 
     level: 1 
+    collapsed: true 
+
+  - id: ulu-interface-fancy 
+    title: "✨ .𖥔 ݁ ˖ fancy stuff ⊹ ࣪ ˖" 
+    type: heading 
+    level: 2 
     collapsed: true 
   - id: ulu-enable-custom-bg 
     title: enable custom workspace background 
@@ -3361,6 +3367,48 @@ settings:
     description: "paste a direct image link wrapped in url(\"\"). example: url(\"https://i.imgur.com/image.png\")" 
     type: variable-text 
     default: 'url("https://512pixels.net/downloads/macos-wallpapers/11-0-color-day.jpg")' 
+  - id: ulu-grad 
+    title: halo gradient 
+    description: enable a wip background animation inspired by soft grainy gradients and angel numbers 
+    type: class-toggle 
+  - id: ulu-we1 
+    title: new-tab empty state (gradient + lobster) 
+    description: applies the “working edits” style empty state when no tabs are open 
+    type: class-toggle 
+
+  - id: ulu-interface-blur 
+    title: "🌫️ .𖥔 ݁ ˖ blur settings ⊹ ࣪ ˖" 
+    type: heading 
+    level: 2 
+    collapsed: true 
+  - id: ulu-no-blur-callouts 
+    title: disable callout blur 
+    type: class-toggle 
+  - id: ulu-no-blur-mobile 
+    title: disable mobile nav blur 
+    type: class-toggle 
+  - id: ulu-blur-modal 
+    title: blur bg of settings pane 
+    type: class-toggle 
+  - id: ulu-blur-prompt 
+    title: blur prompt (cmd/search) bg 
+    type: class-toggle 
+  - id: ulu-blur-tooltip 
+    title: blur tooltip bg 
+    type: class-toggle 
+  - id: ulu-status-pills-blur 
+    title: blurred status-pills bg 
+    description: blurs bg of statusbar pill option 
+    type: class-toggle 
+  - id: ulu-blur-menu 
+    title: blur popup menu 
+    type: class-toggle 
+
+  - id: ulu-interface-other 
+    title: "🎛️ .𖥔 ݁ ˖ everything else ⊹ ࣪ ˖" 
+    type: heading 
+    level: 2 
+    collapsed: true 
   - id: ulu-minimal-properties 
     title: minimal properties card
     description: removes the glass slab styling from the properties card
@@ -3421,31 +3469,9 @@ settings:
   - id: ulu-active-line 
     title: highlight active line 
     type: class-toggle 
-  - id: ulu-no-blur-callouts 
-    title: disable callout blur 
-    type: class-toggle 
-  - id: ulu-no-blur-mobile 
-    title: disable mobile nav blur 
-    type: class-toggle 
-  - id: ulu-blur-modal 
-    title: blur bg of settings pane 
-    type: class-toggle 
-  - id: ulu-blur-prompt 
-    title: blur prompt (cmd/search) bg 
-    type: class-toggle 
-  - id: ulu-blur-tooltip 
-    title: blur tooltip bg 
-    type: class-toggle 
   - id: ulu-status-pills 
     title: island pill statusbar 
     description: seperates statusbar items into pills 
-    type: class-toggle 
-  - id: ulu-status-pills-blur 
-    title: blurred status-pills bg 
-    description: blurs bg of statusbar pill option 
-    type: class-toggle 
-  - id: ulu-blur-menu 
-    title: blur popup menu 
     type: class-toggle 
   - id: ulu-accent-bold-italic 
     title: make bold/italic different colors 
@@ -3456,22 +3482,12 @@ settings:
   - id: ulu-duo-tag 
     title: make tags split 
     type: class-toggle 
-  - id: ulu-grad 
-    title: halo gradient 
-    description: enable a wip background animation inspired by soft grainy gradients and angel numbers 
-    type: class-toggle 
-  - id: ulu-we1 
-    title: new-tab empty state (gradient + lobster) 
-    description: applies the “working edits” style empty state when no tabs are open 
-    type: class-toggle 
   - id: ulu-justify 
     title: justify paragraph text 
     type: class-toggle 
 
-  # ────୨ৎ──── typography
-
   - id: ulu-typography 
-    title: 📑 typography 
+    title: "📑 .𖥔 ݁ ˖ typography ⊹ ࣪ ˖" 
     type: heading 
     level: 1 
     collapsed: true 
@@ -3603,7 +3619,7 @@ settings:
   # ────୨ৎ──── headings
 
   - id: ulu-headings 
-    title: ⌨️ heading settings 
+    title: "⌨️ .𖥔 ݁ ˖ heading settings ⊹ ࣪ ˖" 
     type: heading 
     level: 2 
     collapsed: true 
@@ -4232,7 +4248,7 @@ settings:
   # ────୨ৎ──── canvas
 
   - id: ulu-canvas 
-    title: 🖼️ canvas settings 
+    title: "🖼️ .𖥔 ݁ ˖ canvas settings ⊹ ࣪ ˖" 
     type: heading 
     level: 1 
     collapsed: true 
@@ -13070,12 +13086,23 @@ th.svelte-pcimu8 {
 }
 
 .style-settings-heading {
-    background: var(--background-secondary);
+    background-color: rgb(from var(--color-accent) r g b/0.05) !important;
+    backdrop-filter: blur(25px) saturate(130%);
+    -webkit-backdrop-filter: blur(25px) saturate(130%);
+    box-shadow:
+        0 8px 24px -6px rgb(from var(--mono-rgb-0) r g b/0.15),
+        inset 1px 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.15),
+        inset -1px -1px 0 0 rgb(from var(--color-accent) r g b/0.15),
+        0 0 0 1px rgb(from var(--color-accent) r g b/0.1) !important;
 
     padding: 18px 16px;
 
     border: none !important;
     border-radius: var(--radius-l);
+
+    transition:
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
 }
 
 .style-settings-heading:active {
@@ -13103,12 +13130,27 @@ th.svelte-pcimu8 {
 }
 
 .style-settings-heading[data-level="1"] + .style-settings-container {
-    background: var(--background-primary);
+    background: transparent;
 
     padding: 32px 28px;
 
+    border: 1px dashed rgb(from var(--color-accent) r g b/0.2);
+    border-radius: 0px 0px var(--radius-l) var(--radius-l);
+    border-top: none;
+
+    margin-top: -8px;
+}
+
+.style-settings-heading[data-level="2"] + .style-settings-container {
+    background: rgb(from var(--mono-rgb-100) r g b/0.02);
+
+    padding: 32px 28px;
+
+    border-radius: 0px 0px var(--radius-l) var(--radius-l);
+
+    margin-top: -8px;
+
     border: none;
-    border-radius: var(--radius-l);
 }
 
 .vertical-tab-content .setting-item ~ :is(h1, h2, h3, h4, .setting-item-heading) {
@@ -13246,6 +13288,48 @@ span.dataview.inline-field {
 .excalidraw .App-menu_top,
 .excalidraw .App-toolbar {
     border-radius: var(--radius-m);
+}
+
+/* .𖥔 ݁ ˖  setting item hover highlight & vertical pill ⊹ ࣪ ˖ */
+.style-settings-container .setting-item {
+    position: relative;
+
+    border-radius: 8px;
+
+    transition: background-color 0.2s ease;
+
+    padding: 12px 16px;
+    margin: 4px 0;
+}
+
+.style-settings-container .setting-item:hover {
+    background-color: rgb(from var(--mono-rgb-100) r g b/0.03);
+}
+
+.style-settings-container .setting-item::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    transform: translateY(-50%) scaleY(0);
+
+    height: 60%;
+    width: 4px;
+
+    background-color: var(--color-accent);
+    border-radius: 4px;
+
+    transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    opacity: 0;
+}
+
+.style-settings-container .setting-item:hover::before {
+    transform: translateY(-50%) scaleY(1);
+
+    opacity: 1;
 }
 
 /*

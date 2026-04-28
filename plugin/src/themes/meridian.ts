@@ -6,111 +6,112 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
+    styleSettingsId: "mvahaste-meridian",
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --background-primary: transparent !important;
-  --background-secondary: #141414 !important;
-  --bases-cards-background: transparent !important;
-  --bases-group-heading-property-color: #707070 !important;
-  --bases-table-cell-background-active: transparent !important;
-  --bases-table-header-background: transparent !important;
-  --bases-table-header-color: #707070 !important;
-  --bases-table-summary-background: transparent !important;
-  --blockquote-border-color: #707070 !important;
-  --blockquote-color: #707070 !important;
-  --canvas-background: transparent !important;
-  --caret-color: #ccc !important;
-  --checkbox-border-color-hover: #707070 !important;
-  --checkbox-marker-color: #141414 !important;
-  --checklist-done-color: #707070 !important;
-  --code-background: rgba(255, 255, 255, 0.05) !important;
-  --code-normal: #ccc !important;
-  --code-punctuation: #707070 !important;
-  --dark: #ccc !important;
-  --darkgray: #ccc !important;
-  --divider-color: transparent !important;
-  --file-header-background: transparent !important;
-  --file-header-background-focused: transparent !important;
-  --flair-color: #ccc !important;
-  --footnote-id-color: #707070 !important;
-  --footnote-line-height: 1.6 !important;
-  --graph-node: #707070 !important;
-  --graph-text: #ccc !important;
-  --gray: #707070 !important;
-  --h1-size: 32px !important;
-  --h5-line-height: 1.6 !important;
-  --h6-line-height: 1.6 !important;
-  --icon-color: #707070 !important;
-  --icon-color-focused: #ccc !important;
-  --icon-color-hover: #707070 !important;
-  --inline-title-size: 32px !important;
-  --light: transparent !important;
-  --lightgray: #141414 !important;
-  --line-height-normal: 1.6 !important;
-  --link-unresolved-decoration-style: dotted !important;
-  --list-marker-color-hover: #707070 !important;
-  --menu-background: #141414 !important;
-  --metadata-input-text-color: #ccc !important;
-  --metadata-label-text-color: #707070 !important;
-  --metadata-label-text-color-hover: #707070 !important;
-  --modal-background: #141414 !important;
-  --nav-heading-color: #ccc !important;
-  --nav-heading-color-collapsed-hover: #707070 !important;
-  --nav-heading-color-hover: #ccc !important;
-  --nav-item-color: #707070 !important;
-  --nav-item-color-active: #ccc !important;
-  --nav-item-color-hover: #ccc !important;
-  --nav-item-color-selected: #ccc !important;
-  --nav-tag-color-active: #707070 !important;
-  --nav-tag-color-hover: #707070 !important;
-  --pdf-background: transparent !important;
-  --pdf-page-background: transparent !important;
-  --pdf-sidebar-background: transparent !important;
-  --pill-color: #707070 !important;
-  --pill-color-hover: #ccc !important;
-  --prompt-background: transparent !important;
-  --ribbon-background: #141414 !important;
-  --ribbon-background-collapsed: transparent !important;
-  --search-clear-button-color: #707070 !important;
-  --search-icon-color: #707070 !important;
-  --search-result-background: transparent !important;
-  --setting-group-heading-color: #ccc !important;
-  --shiki-active-tab-border-color: #707070 !important;
-  --shiki-code-background: rgba(255, 255, 255, 0.05) !important;
-  --shiki-code-normal: #707070 !important;
-  --shiki-code-punctuation: #707070 !important;
-  --shiki-gutter-text-color-highlight: #707070 !important;
-  --shiki-highlight-neutral: #707070 !important;
-  --status-bar-background: #141414 !important;
-  --status-bar-border-color: transparent !important;
-  --status-bar-text-color: #707070 !important;
-  --suggestion-background: transparent !important;
-  --tab-background-active: transparent !important;
-  --tab-container-background: #141414 !important;
-  --tab-outline-color: transparent !important;
-  --tab-switcher-background: #141414 !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, #141414, transparent) !important;
-  --tab-text-color-active: #707070 !important;
-  --tab-text-color-focused: #707070 !important;
-  --tab-text-color-focused-active: #707070 !important;
-  --tab-text-color-focused-active-current: #ccc !important;
-  --table-header-color: #ccc !important;
-  --text-muted: #707070 !important;
-  --text-normal: #ccc !important;
-  --titlebar-background: #141414 !important;
-  --titlebar-background-focused: transparent !important;
-  --titlebar-text-color: #707070 !important;
-  --titlebar-text-color-focused: #ccc !important;
-  --vault-profile-color: #ccc !important;
-  --vault-profile-color-hover: #ccc !important;
-  --workspace-background-translucent: rgba(0, 0, 0, 0.5) !important;
-  --quartz-icon-color: currentColor !important;
+  --background-primary: transparent;
+  --background-secondary: #141414;
+  --bases-cards-background: transparent;
+  --bases-group-heading-property-color: #707070;
+  --bases-table-cell-background-active: transparent;
+  --bases-table-header-background: transparent;
+  --bases-table-header-color: #707070;
+  --bases-table-summary-background: transparent;
+  --blockquote-border-color: #707070;
+  --blockquote-color: #707070;
+  --canvas-background: transparent;
+  --caret-color: #ccc;
+  --checkbox-border-color-hover: #707070;
+  --checkbox-marker-color: #141414;
+  --checklist-done-color: #707070;
+  --code-background: rgba(255, 255, 255, 0.05);
+  --code-normal: #ccc;
+  --code-punctuation: #707070;
+  --dark: var(--text-normal, #ccc);
+  --darkgray: var(--text-normal, #ccc);
+  --divider-color: transparent;
+  --file-header-background: transparent;
+  --file-header-background-focused: transparent;
+  --flair-color: #ccc;
+  --footnote-id-color: #707070;
+  --footnote-line-height: 1.6;
+  --graph-node: #707070;
+  --graph-text: #ccc;
+  --gray: var(--text-muted, #707070);
+  --h1-size: 32px;
+  --h5-line-height: 1.6;
+  --h6-line-height: 1.6;
+  --icon-color: #707070;
+  --icon-color-focused: #ccc;
+  --icon-color-hover: #707070;
+  --inline-title-size: 32px;
+  --light: var(--background-primary, transparent);
+  --lightgray: var(--background-secondary, #141414);
+  --line-height-normal: 1.6;
+  --link-unresolved-decoration-style: dotted;
+  --list-marker-color-hover: #707070;
+  --menu-background: #141414;
+  --metadata-input-text-color: #ccc;
+  --metadata-label-text-color: #707070;
+  --metadata-label-text-color-hover: #707070;
+  --modal-background: #141414;
+  --nav-heading-color: #ccc;
+  --nav-heading-color-collapsed-hover: #707070;
+  --nav-heading-color-hover: #ccc;
+  --nav-item-color: #707070;
+  --nav-item-color-active: #ccc;
+  --nav-item-color-hover: #ccc;
+  --nav-item-color-selected: #ccc;
+  --nav-tag-color-active: #707070;
+  --nav-tag-color-hover: #707070;
+  --pdf-background: transparent;
+  --pdf-page-background: transparent;
+  --pdf-sidebar-background: transparent;
+  --pill-color: #707070;
+  --pill-color-hover: #ccc;
+  --prompt-background: transparent;
+  --ribbon-background: #141414;
+  --ribbon-background-collapsed: transparent;
+  --search-clear-button-color: #707070;
+  --search-icon-color: #707070;
+  --search-result-background: transparent;
+  --setting-group-heading-color: #ccc;
+  --shiki-active-tab-border-color: #707070;
+  --shiki-code-background: rgba(255, 255, 255, 0.05);
+  --shiki-code-normal: #707070;
+  --shiki-code-punctuation: #707070;
+  --shiki-gutter-text-color-highlight: #707070;
+  --shiki-highlight-neutral: #707070;
+  --status-bar-background: #141414;
+  --status-bar-border-color: transparent;
+  --status-bar-text-color: #707070;
+  --suggestion-background: transparent;
+  --tab-background-active: transparent;
+  --tab-container-background: #141414;
+  --tab-outline-color: transparent;
+  --tab-switcher-background: #141414;
+  --tab-switcher-menubar-background: linear-gradient(to top, #141414, transparent);
+  --tab-text-color-active: #707070;
+  --tab-text-color-focused: #707070;
+  --tab-text-color-focused-active: #707070;
+  --tab-text-color-focused-active-current: #ccc;
+  --table-header-color: #ccc;
+  --text-muted: #707070;
+  --text-normal: #ccc;
+  --titlebar-background: #141414;
+  --titlebar-background-focused: transparent;
+  --titlebar-text-color: #707070;
+  --titlebar-text-color-focused: #ccc;
+  --vault-profile-color: #ccc;
+  --vault-profile-color-hover: #ccc;
+  --workspace-background-translucent: rgba(0, 0, 0, 0.5);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -1404,110 +1405,110 @@ html[saved-theme="dark"] body sup {
   },
   light: {
     base: `:root:root {
-  --background-primary: #f7f7f7 !important;
-  --background-secondary: #fcfcfc !important;
-  --bases-cards-background: #f7f7f7 !important;
-  --bases-group-heading-property-color: #b5b3b1 !important;
-  --bases-table-cell-background-active: #f7f7f7 !important;
-  --bases-table-header-background: #f7f7f7 !important;
-  --bases-table-header-color: #b5b3b1 !important;
-  --bases-table-summary-background: #f7f7f7 !important;
-  --blockquote-border-color: #b5b3b1 !important;
-  --blockquote-color: #b5b3b1 !important;
-  --blur-background: color-mix(in srgb, #f7f7f7 65%, transparent) linear-gradient(#f7f7f7, color-mix(in srgb, #f7f7f7 65%, transparent)) !important;
-  --canvas-background: #f7f7f7 !important;
-  --caret-color: #1a1a1a !important;
-  --checkbox-border-color-hover: #b5b3b1 !important;
-  --checkbox-marker-color: #fcfcfc !important;
-  --checklist-done-color: #b5b3b1 !important;
-  --code-background: rgba(0, 0, 0, 0.05) !important;
-  --code-normal: #1a1a1a !important;
-  --code-punctuation: #b5b3b1 !important;
-  --dark: #1a1a1a !important;
-  --darkgray: #1a1a1a !important;
-  --divider-color: transparent !important;
-  --file-header-background: #f7f7f7 !important;
-  --file-header-background-focused: #f7f7f7 !important;
-  --flair-color: #1a1a1a !important;
-  --footnote-id-color: #b5b3b1 !important;
-  --footnote-line-height: 1.6 !important;
-  --graph-node: #b5b3b1 !important;
-  --graph-text: #1a1a1a !important;
-  --gray: #b5b3b1 !important;
-  --h1-size: 32px !important;
-  --h5-line-height: 1.6 !important;
-  --h6-line-height: 1.6 !important;
-  --icon-color: #b5b3b1 !important;
-  --icon-color-focused: #1a1a1a !important;
-  --icon-color-hover: #b5b3b1 !important;
-  --inline-title-size: 32px !important;
-  --light: #f7f7f7 !important;
-  --lightgray: #fcfcfc !important;
-  --line-height-normal: 1.6 !important;
-  --link-unresolved-decoration-style: dotted !important;
-  --list-marker-color-hover: #b5b3b1 !important;
-  --menu-background: #fcfcfc !important;
-  --metadata-input-text-color: #1a1a1a !important;
-  --metadata-label-text-color: #b5b3b1 !important;
-  --metadata-label-text-color-hover: #b5b3b1 !important;
-  --modal-background: #fcfcfc !important;
-  --nav-heading-color: #1a1a1a !important;
-  --nav-heading-color-collapsed-hover: #b5b3b1 !important;
-  --nav-heading-color-hover: #1a1a1a !important;
-  --nav-item-color: #b5b3b1 !important;
-  --nav-item-color-active: #1a1a1a !important;
-  --nav-item-color-hover: #1a1a1a !important;
-  --nav-item-color-selected: #1a1a1a !important;
-  --nav-tag-color-active: #b5b3b1 !important;
-  --nav-tag-color-hover: #b5b3b1 !important;
-  --pdf-background: #f7f7f7 !important;
-  --pdf-page-background: #f7f7f7 !important;
-  --pdf-sidebar-background: #f7f7f7 !important;
-  --pill-color: #b5b3b1 !important;
-  --pill-color-hover: #1a1a1a !important;
-  --prompt-background: #f7f7f7 !important;
-  --raised-background: color-mix(in srgb, #f7f7f7 65%, transparent) linear-gradient(#f7f7f7, color-mix(in srgb, #f7f7f7 65%, transparent)) !important;
-  --ribbon-background: #fcfcfc !important;
-  --ribbon-background-collapsed: #f7f7f7 !important;
-  --search-clear-button-color: #b5b3b1 !important;
-  --search-icon-color: #b5b3b1 !important;
-  --search-result-background: #f7f7f7 !important;
-  --setting-group-heading-color: #1a1a1a !important;
-  --shiki-active-tab-border-color: #b5b3b1 !important;
-  --shiki-code-background: rgba(0, 0, 0, 0.05) !important;
-  --shiki-code-normal: #b5b3b1 !important;
-  --shiki-code-punctuation: #b5b3b1 !important;
-  --shiki-gutter-text-color-highlight: #b5b3b1 !important;
-  --shiki-highlight-neutral: #b5b3b1 !important;
-  --status-bar-background: #fcfcfc !important;
-  --status-bar-border-color: transparent !important;
-  --status-bar-text-color: #b5b3b1 !important;
-  --suggestion-background: #f7f7f7 !important;
-  --tab-background-active: #f7f7f7 !important;
-  --tab-container-background: #fcfcfc !important;
-  --tab-outline-color: transparent !important;
-  --tab-switcher-background: #fcfcfc !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, #fcfcfc, transparent) !important;
-  --tab-text-color-active: #b5b3b1 !important;
-  --tab-text-color-focused: #b5b3b1 !important;
-  --tab-text-color-focused-active: #b5b3b1 !important;
-  --tab-text-color-focused-active-current: #1a1a1a !important;
-  --table-header-color: #1a1a1a !important;
-  --text-muted: #b5b3b1 !important;
-  --text-normal: #1a1a1a !important;
-  --titlebar-background: #fcfcfc !important;
-  --titlebar-background-focused: #f7f7f7 !important;
-  --titlebar-text-color: #b5b3b1 !important;
-  --titlebar-text-color-focused: #1a1a1a !important;
-  --vault-profile-color: #1a1a1a !important;
-  --vault-profile-color-hover: #1a1a1a !important;
-  --workspace-background-translucent: rgba(255, 255, 255, 0.5) !important;
-  --quartz-icon-color: currentColor !important;
+  --background-primary: #f7f7f7;
+  --background-secondary: #fcfcfc;
+  --bases-cards-background: #f7f7f7;
+  --bases-group-heading-property-color: #b5b3b1;
+  --bases-table-cell-background-active: #f7f7f7;
+  --bases-table-header-background: #f7f7f7;
+  --bases-table-header-color: #b5b3b1;
+  --bases-table-summary-background: #f7f7f7;
+  --blockquote-border-color: #b5b3b1;
+  --blockquote-color: #b5b3b1;
+  --blur-background: color-mix(in srgb, #f7f7f7 65%, transparent) linear-gradient(#f7f7f7, color-mix(in srgb, #f7f7f7 65%, transparent));
+  --canvas-background: #f7f7f7;
+  --caret-color: #1a1a1a;
+  --checkbox-border-color-hover: #b5b3b1;
+  --checkbox-marker-color: #fcfcfc;
+  --checklist-done-color: #b5b3b1;
+  --code-background: rgba(0, 0, 0, 0.05);
+  --code-normal: #1a1a1a;
+  --code-punctuation: #b5b3b1;
+  --dark: var(--text-normal, #1a1a1a);
+  --darkgray: var(--text-normal, #1a1a1a);
+  --divider-color: transparent;
+  --file-header-background: #f7f7f7;
+  --file-header-background-focused: #f7f7f7;
+  --flair-color: #1a1a1a;
+  --footnote-id-color: #b5b3b1;
+  --footnote-line-height: 1.6;
+  --graph-node: #b5b3b1;
+  --graph-text: #1a1a1a;
+  --gray: var(--text-muted, #b5b3b1);
+  --h1-size: 32px;
+  --h5-line-height: 1.6;
+  --h6-line-height: 1.6;
+  --icon-color: #b5b3b1;
+  --icon-color-focused: #1a1a1a;
+  --icon-color-hover: #b5b3b1;
+  --inline-title-size: 32px;
+  --light: var(--background-primary, #f7f7f7);
+  --lightgray: var(--background-secondary, #fcfcfc);
+  --line-height-normal: 1.6;
+  --link-unresolved-decoration-style: dotted;
+  --list-marker-color-hover: #b5b3b1;
+  --menu-background: #fcfcfc;
+  --metadata-input-text-color: #1a1a1a;
+  --metadata-label-text-color: #b5b3b1;
+  --metadata-label-text-color-hover: #b5b3b1;
+  --modal-background: #fcfcfc;
+  --nav-heading-color: #1a1a1a;
+  --nav-heading-color-collapsed-hover: #b5b3b1;
+  --nav-heading-color-hover: #1a1a1a;
+  --nav-item-color: #b5b3b1;
+  --nav-item-color-active: #1a1a1a;
+  --nav-item-color-hover: #1a1a1a;
+  --nav-item-color-selected: #1a1a1a;
+  --nav-tag-color-active: #b5b3b1;
+  --nav-tag-color-hover: #b5b3b1;
+  --pdf-background: #f7f7f7;
+  --pdf-page-background: #f7f7f7;
+  --pdf-sidebar-background: #f7f7f7;
+  --pill-color: #b5b3b1;
+  --pill-color-hover: #1a1a1a;
+  --prompt-background: #f7f7f7;
+  --raised-background: color-mix(in srgb, #f7f7f7 65%, transparent) linear-gradient(#f7f7f7, color-mix(in srgb, #f7f7f7 65%, transparent));
+  --ribbon-background: #fcfcfc;
+  --ribbon-background-collapsed: #f7f7f7;
+  --search-clear-button-color: #b5b3b1;
+  --search-icon-color: #b5b3b1;
+  --search-result-background: #f7f7f7;
+  --setting-group-heading-color: #1a1a1a;
+  --shiki-active-tab-border-color: #b5b3b1;
+  --shiki-code-background: rgba(0, 0, 0, 0.05);
+  --shiki-code-normal: #b5b3b1;
+  --shiki-code-punctuation: #b5b3b1;
+  --shiki-gutter-text-color-highlight: #b5b3b1;
+  --shiki-highlight-neutral: #b5b3b1;
+  --status-bar-background: #fcfcfc;
+  --status-bar-border-color: transparent;
+  --status-bar-text-color: #b5b3b1;
+  --suggestion-background: #f7f7f7;
+  --tab-background-active: #f7f7f7;
+  --tab-container-background: #fcfcfc;
+  --tab-outline-color: transparent;
+  --tab-switcher-background: #fcfcfc;
+  --tab-switcher-menubar-background: linear-gradient(to top, #fcfcfc, transparent);
+  --tab-text-color-active: #b5b3b1;
+  --tab-text-color-focused: #b5b3b1;
+  --tab-text-color-focused-active: #b5b3b1;
+  --tab-text-color-focused-active-current: #1a1a1a;
+  --table-header-color: #1a1a1a;
+  --text-muted: #b5b3b1;
+  --text-normal: #1a1a1a;
+  --titlebar-background: #fcfcfc;
+  --titlebar-background-focused: #f7f7f7;
+  --titlebar-text-color: #b5b3b1;
+  --titlebar-text-color-focused: #1a1a1a;
+  --vault-profile-color: #1a1a1a;
+  --vault-profile-color-hover: #1a1a1a;
+  --workspace-background-translucent: rgba(255, 255, 255, 0.5);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -2797,6 +2798,123 @@ html[saved-theme="light"] body summary {
 
 html[saved-theme="light"] body sup {
   color: rgb(26, 26, 26);
+}`,
+  },
+  classSettings: {
+    "minimal-image-captions": `.minimal-image-captions .image-captions-figure {
+background-color: transparent !important;
+}
+
+.minimal-image-captions .image-captions-caption {
+background-color: transparent !important;
+font-size: 0.8em !important;
+text-align: left !important;
+}`,
+    "show-header-levels-always": `.show-header-levels-always .HyperMD-header .cm-fold-indicator .collapse-indicator {
+opacity: 1 !important;
+}`,
+    "show-header-hashtags": `.show-header-hashtags .HyperMD-header-1:not(.cm-active) .cm-header::before {
+content: "# ";
+color: var(--text-faint);
+}
+
+.show-header-hashtags .HyperMD-header-2:not(.cm-active) .cm-header::before {
+content: "## ";
+color: var(--text-faint);
+}
+
+.show-header-hashtags .HyperMD-header-3:not(.cm-active) .cm-header::before {
+content: "### ";
+color: var(--text-faint);
+}
+
+.show-header-hashtags .HyperMD-header-4:not(.cm-active) .cm-header::before {
+content: "#### ";
+color: var(--text-faint);
+}
+
+.show-header-hashtags .HyperMD-header-5:not(.cm-active) .cm-header::before {
+content: "##### ";
+color: var(--text-faint);
+}
+
+.show-header-hashtags .HyperMD-header-6:not(.cm-active) .cm-header::before {
+content: "###### ";
+color: var(--text-faint);
+}`,
+    "hide-header-link-underline": `.hide-header-link-underline .HyperMD-header .cm-hmd-internal-link a {
+text-decoration: none !important;
+}`,
+    "hide-tab-bar-dynamic": `.hide-tab-bar-dynamic .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container {
+max-height: 3em;
+opacity: 1;
+overflow: hidden;
+transition:
+    opacity 0.3s ease,
+    max-height 0.3s ease;
+}
+
+.hide-tab-bar-dynamic .mod-root .workspace-tabs:not(.mod-stacked):not( :has(.workspace-tab-header:nth-of-type(2)) ) .workspace-tab-header-container {
+max-height: 0;
+opacity: 0;
+}`,
+    "hide-tab-bar-always": `.hide-tab-bar-always .mod-root .workspace-tabs .workspace-tab-header-container {
+display: none;
+}`,
+    "hide-file-explorer-nav-header-dynamic": `.hide-file-explorer-nav-header-dynamic .workspace-leaf-content[data-type="file-explorer"] .nav-header {
+max-height: 0;
+opacity: 0;
+transition:
+    opacity 0.3s ease,
+    max-height 0.3s ease;
+}
+
+.hide-file-explorer-nav-header-dynamic .workspace-leaf-content[data-type="file-explorer"]:hover .nav-header {
+max-height: 2.5em;
+opacity: 1;
+}`,
+    "hide-file-explorer-nav-header-always": `.hide-file-explorer-nav-header-always .workspace-leaf-content[data-type="file-explorer"] .nav-header {
+display: none;
+}`,
+    "hide-sidebar-buttons-always": `.hide-sidebar-buttons-always .sidebar-toggle-button.mod-right, .hide-sidebar-buttons-always .sidebar-toggle-button.mod-left {
+display: none;
+}`,
+    "deemphasize-status-bar": `.deemphasize-status-bar .status-bar {
+filter: saturate(0);
+opacity: 0.5;
+border: none;
+transition:
+    filter 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.deemphasize-status-bar .status-bar:hover, .deemphasize-status-bar .status-bar:focus-within {
+filter: saturate(1);
+opacity: 1;
+}`,
+    "deemphasize-file-properties": `.deemphasize-file-properties .metadata-container {
+filter: grayscale(1);
+opacity: 0.3;
+transition:
+    filter 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.deemphasize-file-properties .metadata-container:hover, .deemphasize-file-properties .metadata-container:focus-within {
+filter: grayscale(0);
+opacity: 1;
+}`,
+    "deemphasize-embedded-backlinks": `.deemphasize-embedded-backlinks .embedded-backlinks {
+filter: grayscale(1);
+opacity: 0.3;
+transition:
+    filter 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.deemphasize-embedded-backlinks .embedded-backlinks:hover, .deemphasize-embedded-backlinks .embedded-backlinks:focus-within {
+filter: grayscale(0);
+opacity: 1;
 }`,
   },
 };

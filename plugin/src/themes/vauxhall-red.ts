@@ -13,90 +13,90 @@ export const theme: ThemeData = {
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --background-modifier-border-focus: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 80%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --background-modifier-border-hover: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --background-modifier-error: #e3365e !important;
-  --background-modifier-error-hover: #e3365e !important;
-  --background-modifier-form-field: color-mix(in srgb, hsl(340, 60%, 11%) 80%, #000) !important;
-  --background-modifier-form-field-hover: color-mix(in srgb, hsl(340, 60%, 11%) 80%, #000) !important;
+  );
+  --background-modifier-error: #e3365e;
+  --background-modifier-error-hover: #e3365e;
+  --background-modifier-form-field: color-mix(in srgb, hsl(340, 60%, 11%) 80%, #000);
+  --background-modifier-form-field-hover: color-mix(in srgb, hsl(340, 60%, 11%) 80%, #000);
   --background-modifier-hover: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --background-modifier-success: #52eea3 !important;
-  --background-primary: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
-  --background-primary-alt: color-mix(in srgb, hsl(340, 60%, 11%) 50%, #000) !important;
-  --background-secondary: color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000) !important;
+  );
+  --background-modifier-success: #52eea3;
+  --background-primary: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
+  --background-primary-alt: color-mix(in srgb, hsl(340, 60%, 11%) 50%, #000);
+  --background-secondary: color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000);
   --background-secondary-alt: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --bases-cards-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
-  --bases-cards-cover-background: color-mix(in srgb, hsl(340, 60%, 11%) 50%, #000) !important;
+  );
+  --bases-cards-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
+  --bases-cards-cover-background: color-mix(in srgb, hsl(340, 60%, 11%) 50%, #000);
   --bases-cards-shadow: 0 0 0 1px color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --bases-cards-shadow-hover: 0 0 0 1px color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --bases-embed-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --bases-group-heading-property-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --bases-table-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --bases-table-cell-background-active: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
-  --bases-table-cell-background-disabled: color-mix(in srgb, hsl(340, 60%, 11%) 50%, #000) !important;
+  );
+  --bases-table-cell-background-active: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
+  --bases-table-cell-background-disabled: color-mix(in srgb, hsl(340, 60%, 11%) 50%, #000);
   --bases-table-cell-shadow-active: 0 0 0 2px color-mix(
     in srgb,
     hsl(340, 60%, 11%) 80%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --bases-table-group-background: color-mix(in srgb, hsl(340, 60%, 11%) 50%, #000) !important;
-  --bases-table-header-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
+  );
+  --bases-table-group-background: color-mix(in srgb, hsl(340, 60%, 11%) 50%, #000);
+  --bases-table-header-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
   --bases-table-header-background-hover: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --bases-table-header-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --bases-table-summary-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
+  );
+  --bases-table-summary-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
   --bases-table-summary-background-hover: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --black: #000 !important;
-  --blue: #437cf3 !important;
-  --blue-violet: #6f51f4 !important;
+  );
+  --black: #000;
+  --blue: #437cf3;
+  --blue-violet: #6f51f4;
   --blur-background: color-mix(in srgb, color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
@@ -109,138 +109,138 @@ export const theme: ThemeData = {
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) 65%, transparent)) !important;
-  --canvas-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
+  ) 65%, transparent));
+  --canvas-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
   --canvas-card-label-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --canvas-dot-pattern: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --caret-color: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
+  );
+  --caret-color: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
   --checkbox-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --checkbox-border-color-hover: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --checkbox-marker-color: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
+  );
+  --checkbox-marker-color: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
   --checklist-done-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --code-background: color-mix(in srgb, hsl(340, 60%, 11%) 80%, #000) !important;
+  );
+  --code-background: color-mix(in srgb, hsl(340, 60%, 11%) 80%, #000);
   --code-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --code-bracket-background: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --code-comment: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --code-function: #ffd85e !important;
-  --code-important: #fa9f50 !important;
-  --code-keyword: #e54f9b !important;
-  --code-normal: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
-  --code-operator: #e3365e !important;
-  --code-property: #43cfea !important;
+  );
+  --code-function: #ffd85e;
+  --code-important: #fa9f50;
+  --code-keyword: #e54f9b;
+  --code-normal: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
+  --code-operator: #e3365e;
+  --code-property: #43cfea;
   --code-punctuation: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --code-string: #52eea3 !important;
-  --code-tag: #e3365e !important;
-  --code-value: #9446f8 !important;
+  );
+  --code-string: #52eea3;
+  --code-tag: #e3365e;
+  --code-value: #9446f8;
   --collapse-icon-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --color-base-00: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
-  --color-base-05: color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000) !important;
-  --color-base-10: color-mix(in srgb, hsl(340, 60%, 11%) 50%, #000) !important;
+  );
+  --color-base-00: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
+  --color-base-05: color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000);
+  --color-base-10: color-mix(in srgb, hsl(340, 60%, 11%) 50%, #000);
   --color-base-100: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 0%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --color-base-20: color-mix(in srgb, hsl(340, 60%, 11%) 80%, #000) !important;
-  --color-base-25: color-mix(in srgb, hsl(340, 60%, 11%) 80%, #000) !important;
+  );
+  --color-base-20: color-mix(in srgb, hsl(340, 60%, 11%) 80%, #000);
+  --color-base-25: color-mix(in srgb, hsl(340, 60%, 11%) 80%, #000);
   --color-base-30: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --color-base-35: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --color-base-40: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 80%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --color-base-50: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --color-base-60: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --color-base-70: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --color-blue: #437cf3 !important;
-  --color-cyan: #43cfea !important;
-  --color-green: #52eea3 !important;
-  --color-orange: #fa9f50 !important;
-  --color-pink: #e54f9b !important;
-  --color-purple: #9446f8 !important;
-  --color-red: #e3365e !important;
-  --color-yellow: #ffd85e !important;
-  --cool-cyan: #43cfea !important;
-  --cool-gray: #515768 !important;
-  --cyan: #51e1e9 !important;
-  --dark: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
-  --darkgray: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
+  );
+  --color-blue: #437cf3;
+  --color-cyan: #43cfea;
+  --color-green: #52eea3;
+  --color-orange: #fa9f50;
+  --color-pink: #e54f9b;
+  --color-purple: #9446f8;
+  --color-red: #e3365e;
+  --color-yellow: #ffd85e;
+  --cool-cyan: #43cfea;
+  --cool-gray: #515768;
+  --cyan: #51e1e9;
+  --dark: var(--text-normal, color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff));
+  --darkgray: var(--text-normal, color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff));
   --divider-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --dropdown-background: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --dropdown-background-hover: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --embed-block-shadow-hover: 0 0 0 1px color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
@@ -249,295 +249,295 @@ export const theme: ThemeData = {
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --file-header-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
-  --file-header-background-focused: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
+  );
+  --file-header-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
+  --file-header-background-focused: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
   --flair-background: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --flair-color: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
+  );
+  --flair-color: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
   --footnote-divider-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --footnote-id-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --footnote-id-color-no-occurrences: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --footnote-input-background-active: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --graph-line: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --graph-node: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --graph-node-attachment: #ffd85e !important;
-  --graph-node-tag: #52eea3 !important;
+  );
+  --graph-node-attachment: #ffd85e;
+  --graph-node-tag: #52eea3;
   --graph-node-unresolved: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --graph-text: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
-  --gray: color-mix(
+  );
+  --graph-text: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
+  --gray: var(--text-muted, color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --h1-color: #43cfea !important;
-  --h2-color: #54b6f8 !important;
-  --h3-color: #437cf3 !important;
-  --h4-color: #6f51f4 !important;
-  --h5-color: #9446f8 !important;
-  --h6-color: #c952ed !important;
+  ));
+  --h1-color: #43cfea;
+  --h2-color: #54b6f8;
+  --h3-color: #437cf3;
+  --h4-color: #6f51f4;
+  --h5-color: #9446f8;
+  --h6-color: #c952ed;
   --heading-formatting: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --highlight: color-mix(in srgb, #43cfea 25%, transparent) !important;
-  --hot-red: #e3365e !important;
+  );
+  --highlight: var(--text-highlight-bg, color-mix(in srgb, #43cfea 25%, transparent));
+  --hot-red: #e3365e;
   --hr-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --hue-bg: 340 !important;
-  --hue-fg: 320 !important;
+  );
+  --hue-bg: 340;
+  --hue-fg: 320;
   --icon-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --icon-color-focused: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
+  );
+  --icon-color-focused: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
   --icon-color-hover: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --indentation-guide-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --indentation-guide-color-active: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --inline-title-color: #43cfea !important;
+  );
+  --inline-title-color: #43cfea;
   --input-date-separator: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --input-placeholder-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --interactive-hover: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --interactive-normal: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --light: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
-  --light-blue: #54b6f8 !important;
-  --lightgray: color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000) !important;
+  );
+  --light: var(--background-primary, color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000));
+  --light-blue: #54b6f8;
+  --lightgray: var(--background-secondary, color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000));
   --list-marker-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --list-marker-color-hover: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --lum: 11% !important;
-  --magenta: #e54f9b !important;
-  --menu-background: color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000) !important;
+  );
+  --lum: 11%;
+  --magenta: #e54f9b;
+  --menu-background: color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000);
   --menu-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --metadata-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --metadata-divider-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --metadata-input-background-active: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --metadata-input-text-color: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
+  );
+  --metadata-input-text-color: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
   --metadata-label-background-active: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --metadata-label-text-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --metadata-label-text-color-hover: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --metadata-property-background-active: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --metadata-property-box-shadow-focus: 0 0 0 2px color-mix(
     in srgb,
     hsl(340, 60%, 11%) 80%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --metadata-property-box-shadow-hover: 0 0 0 1px color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --mint: #52eea3 !important;
-  --modal-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
+  );
+  --mint: #52eea3;
+  --modal-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
   --modal-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 80%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --nav-collapse-icon-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --nav-collapse-icon-color-collapsed: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --nav-heading-color: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
+  );
+  --nav-heading-color: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
   --nav-heading-color-collapsed: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --nav-heading-color-collapsed-hover: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --nav-heading-color-hover: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
+  );
+  --nav-heading-color-hover: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
   --nav-indentation-guide-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --nav-item-background-active: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --nav-item-background-hover: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --nav-item-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --nav-item-color-active: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
-  --nav-item-color-hover: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
-  --nav-item-color-selected: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
+  );
+  --nav-item-color-active: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
+  --nav-item-color-hover: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
+  --nav-item-color-selected: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
   --nav-tag-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --nav-tag-color-active: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --nav-tag-color-hover: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --pdf-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
-  --pdf-page-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
+  );
+  --pdf-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
+  --pdf-page-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
   --pdf-shadow: 0 0 0 1px color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --pdf-sidebar-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
+  );
+  --pdf-sidebar-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
   --pdf-thumbnail-shadow: 0 0 0 1px color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --pill-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --pill-border-color-hover: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --pill-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --pill-color-hover: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
+  );
+  --pill-color-hover: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
   --pill-color-remove: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --prompt-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
+  );
+  --prompt-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
   --prompt-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 80%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --purple: #c952ed !important;
+  );
+  --purple: #c952ed;
   --raised-background: color-mix(in srgb, color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
@@ -550,213 +550,213 @@ export const theme: ThemeData = {
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) 65%, transparent)) !important;
-  --ribbon-background: color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000) !important;
-  --ribbon-background-collapsed: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
-  --sat-bg: 60% !important;
-  --sat-fg: 100% !important;
+  ) 65%, transparent));
+  --ribbon-background: color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000);
+  --ribbon-background-collapsed: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
+  --sat-bg: 60%;
+  --sat-fg: 100%;
   --search-clear-button-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --search-icon-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --search-result-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
-  --setting-group-heading-color: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
-  --setting-items-background: color-mix(in srgb, hsl(340, 60%, 11%) 50%, #000) !important;
+  );
+  --search-result-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
+  --setting-group-heading-color: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
+  --setting-items-background: color-mix(in srgb, hsl(340, 60%, 11%) 50%, #000);
   --setting-items-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --shiki-active-tab-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --shiki-code-background: color-mix(in srgb, hsl(340, 60%, 11%) 80%, #000) !important;
+  );
+  --shiki-code-background: color-mix(in srgb, hsl(340, 60%, 11%) 80%, #000);
   --shiki-code-comment: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --shiki-code-function: #52eea3 !important;
-  --shiki-code-important: #fa9f50 !important;
-  --shiki-code-keyword: #e54f9b !important;
+  );
+  --shiki-code-function: #52eea3;
+  --shiki-code-important: #fa9f50;
+  --shiki-code-keyword: #e54f9b;
   --shiki-code-normal: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --shiki-code-property: #43cfea !important;
+  );
+  --shiki-code-property: #43cfea;
   --shiki-code-punctuation: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --shiki-code-string: #ffd85e !important;
-  --shiki-code-value: #9446f8 !important;
+  );
+  --shiki-code-string: #ffd85e;
+  --shiki-code-value: #9446f8;
   --shiki-gutter-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --shiki-gutter-text-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --shiki-gutter-text-color-highlight: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --shiki-highlight-neutral: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --shiki-terminal-dots-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --slider-thumb-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --slider-track-background: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --status-bar-background: color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000) !important;
+  );
+  --status-bar-background: color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000);
   --status-bar-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --status-bar-text-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --suggestion-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
-  --sync-avatar-color-1: #e3365e !important;
-  --sync-avatar-color-2: #fa9f50 !important;
-  --sync-avatar-color-3: #ffd85e !important;
-  --sync-avatar-color-4: #52eea3 !important;
-  --sync-avatar-color-5: #43cfea !important;
-  --sync-avatar-color-6: #437cf3 !important;
-  --sync-avatar-color-7: #9446f8 !important;
-  --sync-avatar-color-8: #e54f9b !important;
-  --tab-background-active: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
-  --tab-container-background: color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000) !important;
+  );
+  --suggestion-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
+  --sync-avatar-color-1: #e3365e;
+  --sync-avatar-color-2: #fa9f50;
+  --sync-avatar-color-3: #ffd85e;
+  --sync-avatar-color-4: #52eea3;
+  --sync-avatar-color-5: #43cfea;
+  --sync-avatar-color-6: #437cf3;
+  --sync-avatar-color-7: #9446f8;
+  --sync-avatar-color-8: #e54f9b;
+  --tab-background-active: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
+  --tab-container-background: color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000);
   --tab-divider-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 95%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --tab-outline-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --tab-switcher-background: color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000), transparent) !important;
+  );
+  --tab-switcher-background: color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000);
+  --tab-switcher-menubar-background: linear-gradient(to top, color-mix(in srgb, hsl(340, 60%, 11%) 40%, #000), transparent);
   --tab-text-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --tab-text-color-active: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --tab-text-color-focused: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --tab-text-color-focused-active: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --tab-text-color-focused-active-current: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
+  );
+  --tab-text-color-focused-active-current: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
   --table-add-button-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --table-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --table-drag-handle-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --table-header-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --table-header-color: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
-  --text-error: #e3365e !important;
+  );
+  --table-header-color: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
+  --text-error: #e3365e;
   --text-faint: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 60%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --text-highlight-bg: color-mix(in srgb, #43cfea 25%, transparent) !important;
+  );
+  --text-highlight-bg: color-mix(in srgb, #43cfea 25%, transparent);
   --text-highlight-bg-active: color-mix(
     in srgb,
     #43cfea 25%,
     transparent
-  ) !important;
+  );
   --text-muted: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --text-normal: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
-  --text-success: #52eea3 !important;
-  --text-warning: #fa9f50 !important;
-  --textHighlight: color-mix(in srgb, #43cfea 25%, transparent) !important;
-  --titlebar-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000) !important;
-  --titlebar-background-focused: color-mix(in srgb, hsl(340, 60%, 11%) 50%, #000) !important;
+  );
+  --text-normal: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
+  --text-success: #52eea3;
+  --text-warning: #fa9f50;
+  --textHighlight: var(--text-highlight-bg, color-mix(in srgb, #43cfea 25%, transparent));
+  --titlebar-background: color-mix(in srgb, hsl(340, 60%, 11%) 25%, #000);
+  --titlebar-background-focused: color-mix(in srgb, hsl(340, 60%, 11%) 50%, #000);
   --titlebar-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 90%,
     hsl(320, 100%, 80%)
-  ) !important;
+  );
   --titlebar-text-color: color-mix(
     in srgb,
     hsl(340, 60%, 11%) 30%,
     hsl(320, 100%, 80%)
-  ) !important;
-  --titlebar-text-color-focused: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
-  --vault-profile-color: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
-  --vault-profile-color-hover: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff) !important;
-  --vauxhall-bg: hsl(340, 60%, 11%) !important;
-  --vauxhall-fg: hsl(320, 100%, 80%) !important;
-  --violet: #9446f8 !important;
-  --white: #fff !important;
-  --quartz-icon-color: currentColor !important;
+  );
+  --titlebar-text-color-focused: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
+  --vault-profile-color: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
+  --vault-profile-color-hover: color-mix(in srgb, hsl(320, 100%, 80%) 30%, #fff);
+  --vauxhall-bg: hsl(340, 60%, 11%);
+  --vauxhall-fg: hsl(320, 100%, 80%);
+  --violet: #9446f8;
+  --white: #fff;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -2214,214 +2214,214 @@ html[saved-theme="dark"] body sup {
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --background-modifier-border-focus: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 80%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --background-modifier-border-hover: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --background-modifier-error: #e3365e !important;
-  --background-modifier-error-hover: #e3365e !important;
-  --background-modifier-form-field: color-mix(in srgb, hsl(340, 60%, 95%) 80%, #fff) !important;
-  --background-modifier-form-field-hover: color-mix(in srgb, hsl(340, 60%, 95%) 80%, #fff) !important;
+  );
+  --background-modifier-error: #e3365e;
+  --background-modifier-error-hover: #e3365e;
+  --background-modifier-form-field: color-mix(in srgb, hsl(340, 60%, 95%) 80%, #fff);
+  --background-modifier-form-field-hover: color-mix(in srgb, hsl(340, 60%, 95%) 80%, #fff);
   --background-modifier-hover: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --background-modifier-success: #47cc91 !important;
-  --background-primary: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
-  --background-primary-alt: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff) !important;
-  --background-secondary: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
-  --background-secondary-alt: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
-  --bases-cards-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
-  --bases-cards-cover-background: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff) !important;
+  );
+  --background-modifier-success: #47cc91;
+  --background-primary: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
+  --background-primary-alt: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff);
+  --background-secondary: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
+  --background-secondary-alt: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
+  --bases-cards-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
+  --bases-cards-cover-background: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff);
   --bases-cards-shadow: 0 0 0 1px color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --bases-cards-shadow-hover: 0 0 0 1px color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --bases-embed-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --bases-group-heading-property-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --bases-table-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --bases-table-cell-background-active: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
-  --bases-table-cell-background-disabled: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff) !important;
+  );
+  --bases-table-cell-background-active: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
+  --bases-table-cell-background-disabled: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff);
   --bases-table-cell-shadow-active: 0 0 0 2px color-mix(
     in srgb,
     hsl(340, 60%, 95%) 80%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --bases-table-group-background: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff) !important;
-  --bases-table-header-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
+  );
+  --bases-table-group-background: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff);
+  --bases-table-header-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
   --bases-table-header-background-hover: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --bases-table-header-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --bases-table-summary-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
+  );
+  --bases-table-summary-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
   --bases-table-summary-background-hover: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --black: #000 !important;
-  --blue: #437cf3 !important;
-  --blue-violet: #6f51f4 !important;
-  --blur-background: color-mix(in srgb, color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) 65%, transparent) linear-gradient(color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff), color-mix(in srgb, color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) 65%, transparent)) !important;
-  --canvas-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
+  );
+  --black: #000;
+  --blue: #437cf3;
+  --blue-violet: #6f51f4;
+  --blur-background: color-mix(in srgb, color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) 65%, transparent) linear-gradient(color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff), color-mix(in srgb, color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) 65%, transparent));
+  --canvas-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
   --canvas-card-label-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --canvas-dot-pattern: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --caret-color: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
+  );
+  --caret-color: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
   --checkbox-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --checkbox-border-color-hover: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --checkbox-marker-color: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
+  );
+  --checkbox-marker-color: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
   --checklist-done-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --code-background: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --code-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --code-bracket-background: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --code-comment: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --code-function: #ffd85e !important;
-  --code-important: #fa9f50 !important;
-  --code-keyword: #e54f9b !important;
-  --code-normal: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
-  --code-operator: #e3365e !important;
-  --code-property: #3bb2ce !important;
+  );
+  --code-function: #ffd85e;
+  --code-important: #fa9f50;
+  --code-keyword: #e54f9b;
+  --code-normal: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
+  --code-operator: #e3365e;
+  --code-property: #3bb2ce;
   --code-punctuation: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --code-string: #47cc91 !important;
-  --code-tag: #e3365e !important;
-  --code-value: #9446f8 !important;
+  );
+  --code-string: #47cc91;
+  --code-tag: #e3365e;
+  --code-value: #9446f8;
   --collapse-icon-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --color-base-00: color-mix(in srgb, hsl(340, 60%, 95%) 25%, #fff) !important;
-  --color-base-05: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
-  --color-base-10: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff) !important;
+  );
+  --color-base-00: color-mix(in srgb, hsl(340, 60%, 95%) 25%, #fff);
+  --color-base-05: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
+  --color-base-10: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff);
   --color-base-100: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 0%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --color-base-20: color-mix(in srgb, hsl(340, 60%, 95%) 80%, #fff) !important;
-  --color-base-25: color-mix(in srgb, hsl(340, 60%, 95%) 80%, #fff) !important;
+  );
+  --color-base-20: color-mix(in srgb, hsl(340, 60%, 95%) 80%, #fff);
+  --color-base-25: color-mix(in srgb, hsl(340, 60%, 95%) 80%, #fff);
   --color-base-30: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --color-base-35: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --color-base-40: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 80%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --color-base-50: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --color-base-60: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --color-base-70: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --color-blue: #437cf3 !important;
-  --color-cyan: #3bb2ce !important;
-  --color-green: #47cc91 !important;
-  --color-orange: #fa9f50 !important;
-  --color-pink: #e54f9b !important;
-  --color-purple: #9446f8 !important;
-  --color-red: #e3365e !important;
-  --color-yellow: #ffd85e !important;
-  --cool-cyan: #3bb2ce !important;
-  --cool-gray: #515768 !important;
-  --cyan: #47c1cd !important;
-  --dark: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
-  --darkgray: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
+  );
+  --color-blue: #437cf3;
+  --color-cyan: #3bb2ce;
+  --color-green: #47cc91;
+  --color-orange: #fa9f50;
+  --color-pink: #e54f9b;
+  --color-purple: #9446f8;
+  --color-red: #e3365e;
+  --color-yellow: #ffd85e;
+  --cool-cyan: #3bb2ce;
+  --cool-gray: #515768;
+  --cyan: #47c1cd;
+  --dark: var(--text-normal, color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000));
+  --darkgray: var(--text-normal, color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000));
   --divider-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --dropdown-background: color-mix(in srgb, hsl(340, 60%, 95%) 25%, #fff) !important;
-  --dropdown-background-hover: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff) !important;
+  );
+  --dropdown-background: color-mix(in srgb, hsl(340, 60%, 95%) 25%, #fff);
+  --dropdown-background-hover: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff);
   --embed-block-shadow-hover: 0 0 0 1px color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
@@ -2430,486 +2430,486 @@ html[saved-theme="dark"] body sup {
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --file-header-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
-  --file-header-background-focused: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
-  --flair-background: color-mix(in srgb, hsl(340, 60%, 95%) 25%, #fff) !important;
-  --flair-color: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
+  );
+  --file-header-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
+  --file-header-background-focused: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
+  --flair-background: color-mix(in srgb, hsl(340, 60%, 95%) 25%, #fff);
+  --flair-color: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
   --footnote-divider-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --footnote-id-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --footnote-id-color-no-occurrences: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --footnote-input-background-active: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --graph-line: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --graph-node: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --graph-node-attachment: #ffd85e !important;
-  --graph-node-tag: #47cc91 !important;
+  );
+  --graph-node-attachment: #ffd85e;
+  --graph-node-tag: #47cc91;
   --graph-node-unresolved: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --graph-text: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
-  --gray: color-mix(
+  );
+  --graph-text: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
+  --gray: var(--text-muted, color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --h1-color: #3bb2ce !important;
-  --h2-color: #54b6f8 !important;
-  --h3-color: #437cf3 !important;
-  --h4-color: #6f51f4 !important;
-  --h5-color: #9446f8 !important;
-  --h6-color: #c952ed !important;
+  ));
+  --h1-color: #3bb2ce;
+  --h2-color: #54b6f8;
+  --h3-color: #437cf3;
+  --h4-color: #6f51f4;
+  --h5-color: #9446f8;
+  --h6-color: #c952ed;
   --heading-formatting: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --highlight: color-mix(in srgb, #3bb2ce 25%, transparent) !important;
-  --hot-red: #e3365e !important;
+  );
+  --highlight: var(--text-highlight-bg, color-mix(in srgb, #3bb2ce 25%, transparent));
+  --hot-red: #e3365e;
   --hr-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --hue-bg: 340 !important;
-  --hue-fg: 320 !important;
+  );
+  --hue-bg: 340;
+  --hue-fg: 320;
   --icon-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --icon-color-focused: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
+  );
+  --icon-color-focused: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
   --icon-color-hover: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --indentation-guide-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --indentation-guide-color-active: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --inline-title-color: #3bb2ce !important;
+  );
+  --inline-title-color: #3bb2ce;
   --input-date-separator: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --input-placeholder-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --interactive-hover: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff) !important;
-  --interactive-normal: color-mix(in srgb, hsl(340, 60%, 95%) 25%, #fff) !important;
-  --light: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
-  --light-blue: #54b6f8 !important;
-  --lightgray: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
+  );
+  --interactive-hover: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff);
+  --interactive-normal: color-mix(in srgb, hsl(340, 60%, 95%) 25%, #fff);
+  --light: var(--background-primary, color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff));
+  --light-blue: #54b6f8;
+  --lightgray: var(--background-secondary, color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff));
   --list-marker-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --list-marker-color-hover: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --lum: 11% !important;
-  --lum-bg: 95% !important;
-  --lum-fg: 50% !important;
-  --magenta: #e54f9b !important;
-  --menu-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
+  );
+  --lum: 11%;
+  --lum-bg: 95%;
+  --lum-fg: 50%;
+  --magenta: #e54f9b;
+  --menu-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
   --menu-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --metadata-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --metadata-divider-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --metadata-input-background-active: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --metadata-input-text-color: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
+  );
+  --metadata-input-text-color: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
   --metadata-label-background-active: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --metadata-label-text-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --metadata-label-text-color-hover: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --metadata-property-background-active: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --metadata-property-box-shadow-focus: 0 0 0 2px color-mix(
     in srgb,
     hsl(340, 60%, 95%) 80%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --metadata-property-box-shadow-hover: 0 0 0 1px color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --mint: #47cc91 !important;
-  --modal-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
+  );
+  --mint: #47cc91;
+  --modal-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
   --modal-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 80%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --nav-collapse-icon-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --nav-collapse-icon-color-collapsed: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --nav-heading-color: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
+  );
+  --nav-heading-color: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
   --nav-heading-color-collapsed: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --nav-heading-color-collapsed-hover: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --nav-heading-color-hover: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
+  );
+  --nav-heading-color-hover: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
   --nav-indentation-guide-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --nav-item-background-active: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --nav-item-background-hover: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --nav-item-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --nav-item-color-active: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
-  --nav-item-color-hover: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
-  --nav-item-color-selected: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
+  );
+  --nav-item-color-active: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
+  --nav-item-color-hover: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
+  --nav-item-color-selected: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
   --nav-tag-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --nav-tag-color-active: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --nav-tag-color-hover: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --pdf-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
-  --pdf-page-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
-  --pdf-sidebar-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
+  );
+  --pdf-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
+  --pdf-page-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
+  --pdf-sidebar-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
   --pill-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --pill-border-color-hover: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --pill-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --pill-color-hover: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
+  );
+  --pill-color-hover: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
   --pill-color-remove: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --prompt-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
+  );
+  --prompt-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
   --prompt-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 80%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --purple: #c952ed !important;
-  --raised-background: color-mix(in srgb, color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) 65%, transparent) linear-gradient(color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff), color-mix(in srgb, color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) 65%, transparent)) !important;
-  --ribbon-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
-  --ribbon-background-collapsed: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
-  --sat-bg: 60% !important;
-  --sat-fg: 100% !important;
+  );
+  --purple: #c952ed;
+  --raised-background: color-mix(in srgb, color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) 65%, transparent) linear-gradient(color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff), color-mix(in srgb, color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) 65%, transparent));
+  --ribbon-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
+  --ribbon-background-collapsed: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
+  --sat-bg: 60%;
+  --sat-fg: 100%;
   --search-clear-button-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --search-icon-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --search-result-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
-  --setting-group-heading-color: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
-  --setting-items-background: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff) !important;
+  );
+  --search-result-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
+  --setting-group-heading-color: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
+  --setting-items-background: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff);
   --setting-items-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --shiki-active-tab-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --shiki-code-background: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --shiki-code-comment: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --shiki-code-function: #47cc91 !important;
-  --shiki-code-important: #fa9f50 !important;
-  --shiki-code-keyword: #e54f9b !important;
+  );
+  --shiki-code-function: #47cc91;
+  --shiki-code-important: #fa9f50;
+  --shiki-code-keyword: #e54f9b;
   --shiki-code-normal: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --shiki-code-property: #3bb2ce !important;
+  );
+  --shiki-code-property: #3bb2ce;
   --shiki-code-punctuation: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --shiki-code-string: #ffd85e !important;
-  --shiki-code-value: #9446f8 !important;
+  );
+  --shiki-code-string: #ffd85e;
+  --shiki-code-value: #9446f8;
   --shiki-gutter-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --shiki-gutter-text-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --shiki-gutter-text-color-highlight: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --shiki-highlight-neutral: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --shiki-terminal-dots-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --slider-thumb-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --slider-track-background: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --status-bar-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
+  );
+  --status-bar-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
   --status-bar-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --status-bar-text-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --suggestion-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
-  --sync-avatar-color-1: #e3365e !important;
-  --sync-avatar-color-2: #fa9f50 !important;
-  --sync-avatar-color-3: #ffd85e !important;
-  --sync-avatar-color-4: #47cc91 !important;
-  --sync-avatar-color-5: #3bb2ce !important;
-  --sync-avatar-color-6: #437cf3 !important;
-  --sync-avatar-color-7: #9446f8 !important;
-  --sync-avatar-color-8: #e54f9b !important;
-  --tab-background-active: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
-  --tab-container-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
+  );
+  --suggestion-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
+  --sync-avatar-color-1: #e3365e;
+  --sync-avatar-color-2: #fa9f50;
+  --sync-avatar-color-3: #ffd85e;
+  --sync-avatar-color-4: #47cc91;
+  --sync-avatar-color-5: #3bb2ce;
+  --sync-avatar-color-6: #437cf3;
+  --sync-avatar-color-7: #9446f8;
+  --sync-avatar-color-8: #e54f9b;
+  --tab-background-active: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
+  --tab-container-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
   --tab-divider-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 95%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --tab-outline-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --tab-switcher-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff), transparent) !important;
+  );
+  --tab-switcher-background: color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff);
+  --tab-switcher-menubar-background: linear-gradient(to top, color-mix(in srgb, hsl(340, 60%, 95%) 40%, #fff), transparent);
   --tab-text-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --tab-text-color-active: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --tab-text-color-focused: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --tab-text-color-focused-active: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --tab-text-color-focused-active-current: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
+  );
+  --tab-text-color-focused-active-current: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
   --table-add-button-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --table-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --table-drag-handle-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --table-header-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --table-header-color: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
-  --text-error: #e3365e !important;
+  );
+  --table-header-color: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
+  --text-error: #e3365e;
   --text-faint: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 60%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --text-highlight-bg: color-mix(in srgb, #3bb2ce 25%, transparent) !important;
+  );
+  --text-highlight-bg: color-mix(in srgb, #3bb2ce 25%, transparent);
   --text-highlight-bg-active: color-mix(
     in srgb,
     #3bb2ce 25%,
     transparent
-  ) !important;
+  );
   --text-muted: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --text-normal: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
-  --text-success: #47cc91 !important;
-  --text-warning: #fa9f50 !important;
-  --textHighlight: color-mix(in srgb, #3bb2ce 25%, transparent) !important;
-  --titlebar-background: color-mix(in srgb, hsl(340, 60%, 95%) 25%, #fff) !important;
-  --titlebar-background-focused: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff) !important;
+  );
+  --text-normal: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
+  --text-success: #47cc91;
+  --text-warning: #fa9f50;
+  --textHighlight: var(--text-highlight-bg, color-mix(in srgb, #3bb2ce 25%, transparent));
+  --titlebar-background: color-mix(in srgb, hsl(340, 60%, 95%) 25%, #fff);
+  --titlebar-background-focused: color-mix(in srgb, hsl(340, 60%, 95%) 50%, #fff);
   --titlebar-border-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 90%,
     hsl(320, 100%, 50%)
-  ) !important;
+  );
   --titlebar-text-color: color-mix(
     in srgb,
     hsl(340, 60%, 95%) 30%,
     hsl(320, 100%, 50%)
-  ) !important;
-  --titlebar-text-color-focused: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
-  --vault-profile-color: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
-  --vault-profile-color-hover: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000) !important;
-  --vauxhall-bg: hsl(340, 60%, 95%) !important;
-  --vauxhall-fg: hsl(320, 100%, 50%) !important;
-  --violet: #9446f8 !important;
-  --white: #fff !important;
-  --quartz-icon-color: currentColor !important;
+  );
+  --titlebar-text-color-focused: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
+  --vault-profile-color: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
+  --vault-profile-color-hover: color-mix(in srgb, hsl(320, 100%, 50%) 50%, #000);
+  --vauxhall-bg: hsl(340, 60%, 95%);
+  --vauxhall-fg: hsl(320, 100%, 50%);
+  --violet: #9446f8;
+  --white: #fff;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

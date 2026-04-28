@@ -1,7 +1,13 @@
 import fs from "node:fs/promises";
+import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import * as lucideIcons from "@lucide/icons";
+import {
+  extractClassToggleCss,
+  extractStyleSettings,
+} from "../../util/postcss-style-settings.mjs";
+import { sanitizeFilenamePreservingEmojis as sanitize } from "../../util/util.mjs";
 
 const USE_AUTO_CONFIG = process.argv.includes("--auto");
 
@@ -14,6 +20,7 @@ const themesJsonPath = path.join(repoRoot, "themes.json");
 const resultsDir = path.join(repoRoot, "runner", "results");
 const outputDir = path.join(repoRoot, "plugin", "src", "themes");
 const extrasDir = path.join(repoRoot, "plugin", "extras");
+const obsidianDir = path.join(repoRoot, "obsidian");
 
 async function resolveGenerateFontManifest(root, themeName) {
   const manifestPath = path.join(root, "fonts", themeName, "manifest.json");
@@ -27,6 +34,56 @@ async function resolveGenerateFontManifest(root, themeName) {
     return resolveGenerateFontManifest(root, manifest.base);
   }
   return { manifest, fontDir: themeName };
+}
+
+const obsidianSlugToDir = new Map();
+if (existsSync(obsidianDir)) {
+  for (const dirName of readdirSync(obsidianDir).filter((n) =>
+    statSync(path.join(obsidianDir, n)).isDirectory(),
+  )) {
+    const slug = sanitize(dirName);
+    if (!obsidianSlugToDir.has(slug)) {
+      obsidianSlugToDir.set(slug, dirName);
+    }
+  }
+}
+
+function extractClassSettings(themeSlug, styleSettings) {
+  if (!styleSettings?.length) return null;
+
+  const dirName = obsidianSlugToDir.get(themeSlug);
+  if (!dirName) return null;
+
+  const cssPath = path.join(obsidianDir, dirName, "theme.css");
+  if (!existsSync(cssPath)) return null;
+
+  const classSettingIds = [];
+  for (const setting of styleSettings) {
+    if (!setting || !setting.type) continue;
+    if (setting.type === "class-toggle") {
+      if (setting.id) classSettingIds.push(setting.id);
+    } else if (setting.type === "class-select" && setting.options) {
+      for (const opt of setting.options) {
+        if (opt?.value) classSettingIds.push(opt.value);
+      }
+    }
+  }
+
+  if (classSettingIds.length === 0) return null;
+
+  const css = readFileSync(cssPath, "utf8");
+  const result = {};
+  for (const classId of classSettingIds) {
+    try {
+      const [general, dark, light] = extractClassToggleCss(css, classId);
+      const combined = [general, dark, light].filter(Boolean).join("\n");
+      if (combined) result[classId] = combined;
+    } catch {
+      // Malformed CSS — skip this class setting
+    }
+  }
+
+  return Object.keys(result).length > 0 ? result : null;
 }
 
 const ASPECT_ORDER = [
@@ -758,7 +815,7 @@ function buildModeCSS(data, mode, bothModes, config, aspectMap, warnings) {
     if (baseVars[quartzVar]) continue;
     for (const source of sources) {
       if (baseVars[source]) {
-        baseVars[quartzVar] = baseVars[source];
+        baseVars[quartzVar] = `var(${source}, ${baseVars[source]})`;
         break;
       }
     }
@@ -829,14 +886,11 @@ function buildModeCSS(data, mode, bothModes, config, aspectMap, warnings) {
 
     if (aspect === "base") {
       const varKeys = Object.keys(baseVars).sort();
-      const varLines = varKeys.map((key) => {
-        const suffix = key.startsWith("--callout-") ? "" : " !important";
-        return `  ${key}: ${baseVars[key]}${suffix};`;
-      });
-      varLines.push("  --quartz-icon-color: currentColor !important;");
+      const varLines = varKeys.map((key) => `  ${key}: ${baseVars[key]};`);
+      varLines.push("  --quartz-icon-color: currentColor;");
       cssParts.push(`${rootSelector} {\n${varLines.join("\n")}\n}`);
       cssParts.push(
-        `${htmlSelector} body {\n  background-color: var(--background-primary) !important;\n  color: var(--text-normal) !important;\n}`,
+        `${htmlSelector} body {\n  background-color: var(--background-primary);\n  color: var(--text-normal);\n}`,
       );
     }
 
@@ -892,6 +946,11 @@ function renderThemeModule(themeData) {
   if (themeData.meta.fontDir) {
     lines.push(`    fontDir: ${JSON.stringify(themeData.meta.fontDir)},`);
   }
+  if (themeData.meta.styleSettingsId) {
+    lines.push(
+      `    styleSettingsId: ${JSON.stringify(themeData.meta.styleSettingsId)},`,
+    );
+  }
   lines.push("  },");
 
   for (const mode of ["dark", "light"]) {
@@ -907,6 +966,19 @@ function renderThemeModule(themeData) {
 
   if (themeData.extras) {
     lines.push(`  extras: ${toTemplateLiteral(themeData.extras)},`);
+  }
+
+  if (
+    themeData.classSettings &&
+    Object.keys(themeData.classSettings).length > 0
+  ) {
+    lines.push("  classSettings: {");
+    for (const [className, css] of Object.entries(themeData.classSettings)) {
+      lines.push(
+        `    ${JSON.stringify(className)}: ${toTemplateLiteral(css)},`,
+      );
+    }
+    lines.push("  },");
   }
 
   lines.push("};");
@@ -1106,6 +1178,28 @@ async function main() {
       }
     } catch {}
 
+    // Collect all style-settings-id values from the raw CSS @settings blocks.
+    // themes.json only stores the primary id; the CSS may have additional blocks.
+    let styleSettingsId = undefined;
+    let cssSettingsBlocks = null;
+    const primaryId = themeMeta.style_settings?.id;
+    if (primaryId) {
+      const dirName = obsidianSlugToDir.get(themeId);
+      const cssPath = dirName
+        ? path.join(obsidianDir, dirName, "theme.css")
+        : null;
+      if (cssPath && existsSync(cssPath)) {
+        const cssContent = readFileSync(cssPath, "utf8");
+        cssSettingsBlocks = extractStyleSettings(cssContent);
+        const allIds = [
+          ...new Set(cssSettingsBlocks.map((b) => b?.id).filter(Boolean)),
+        ];
+        styleSettingsId = allIds.length > 1 ? allIds : primaryId;
+      } else {
+        styleSettingsId = primaryId;
+      }
+    }
+
     const meta = {
       name: themeId,
       modes: metaModes,
@@ -1113,6 +1207,7 @@ async function main() {
       fonts: normalizeFonts(themeMeta.fonts ?? []),
       ...(fontFiles && fontFiles.length > 0 ? { fontFiles } : {}),
       ...(fontDir && fontDir !== themeId ? { fontDir } : {}),
+      ...(styleSettingsId ? { styleSettingsId } : {}),
     };
 
     const bothModes = hasDark && hasLight;
@@ -1224,11 +1319,17 @@ async function main() {
       );
     }
 
+    const allStyleSettings = cssSettingsBlocks
+      ? cssSettingsBlocks.flatMap((b) => b?.settings ?? [])
+      : (themeMeta.style_settings?.settings ?? []);
+    const classSettings = extractClassSettings(themeId, allStyleSettings);
+
     const moduleContent = renderThemeModule({
       meta,
       dark: darkAspectCSS,
       light: lightAspectCSS,
       extras,
+      classSettings,
     });
 
     await fs.writeFile(outputPath, moduleContent, "utf8");

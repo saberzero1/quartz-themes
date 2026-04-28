@@ -3,7 +3,7 @@ id: vauxhall
 settings:
   - id: main-color
     title: Main Color
-    description: "The main color influencing the interface colors."
+    description: The main color influencing the interface colors.
     type: class-select
     default: vauxhall-indigo
     options:
@@ -23,7 +23,7 @@ settings:
         value: vauxhall-white
   - id: color-intensity
     title: Color Intensity
-    description: "How intense the main color appears across the interface. (Dark Theme only)"
+    description: How intense the main color appears across the interface. (Dark Theme only)
     type: class-select
     default: intensity-standard
     options:
@@ -35,7 +35,7 @@ settings:
         value: intensity-nebula
   - id: header-color-type
     title: Header Color Style
-    description: "How intense the main color appears across the interface."
+    description: How intense the main color appears across the interface.
     type: class-select
     default: headers-gradient-cyan-to-purple
     options:
@@ -53,5 +53,5 @@ settings:
         value: headers-gradient-blue-to-red
   - id: h1-accent
     title: Accent Color Main Header
-    description: "Apply the user's accent color to H1 headers."
+    description: Apply the user's accent color to H1 headers.
     type: class-toggle

@@ -43,6 +43,11 @@ settings:
     description: When enable, we put the new note button at the bottom of sidebar
     type: class-toggle
     default: true
+  - id: enable-alternative-checkboxes
+    title: Enable Alternative Checkboxes
+    description: Disable this if you are using your own implementation via a CSS Snippet.
+    default: true
+    type: class-toggle
   - id: eis-font-family
     title: Font size of headings and paragraphs
     type: heading
@@ -129,12 +134,12 @@ settings:
     description: Titles text colors
     type: variable-themed-color
     format: hex
-    default-light: "#37352f"
-    default-dark: "#fff"
+    default-light: '#37352f'
+    default-dark: '#fff'
   - id: sidebar-themed-bg
     title: Colors of sidebar and tabbar
     description: If you wanna change the light browser of Notion...
     type: variable-themed-color
     format: hex
-    default-light: "#F7F7F5"
-    default-dark: "#202020"
+    default-light: '#F7F7F5'
+    default-dark: '#202020'

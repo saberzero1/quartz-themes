@@ -8,18 +8,27 @@ settings:
     collapsed: false
   - id: theme-variant
     title: Dark Theme variant
-    description: Variations of dark theme
+    description: Variations of dark theme colors
     type: class-select
     allowEmpty: false
-    default: default
+    default: dark-theme-default
     options:
-      - default
-      - darker
-  - id: accent-headings-off
-    title: White Headings
-    description: Use white for headings instead of accent color
-    type: class-toggle
-    default: false
+      - label: Dark
+        value: dark-theme-default
+      - label: Midnight
+        value: dark-theme-midnight
+  - id: heading-color
+    title: Headings Color
+    type: class-select
+    allowEmpty: false
+    default: headings-color-accent
+    options:
+      - label: Accent
+        value: headings-color-accent
+      - label: White
+        value: headings-color-white
+      - label: Colorful
+        value: headings-color-colorful
   - id: accent-affect-bg
     title: Accent affect Background
     description: Background colors follow Accent color (set in appearance settings)
@@ -37,7 +46,7 @@ settings:
     default: false
   - id: no-dv-table-border
     title: Hide dataview table borders
-    description:
+    description: null
     type: class-toggle
     default: false
   - id: table-auto-capitalization

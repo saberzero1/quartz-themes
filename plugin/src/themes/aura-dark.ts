@@ -1,79 +1,85 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "aura-dark", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "aura-dark",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+    styleSettingsId: "aura-theme-settings",
+  },
   dark: {
     base: `:root:root {
-  --background-modifier-border: #61ffca !important;
-  --background-primary: #15141b !important;
-  --background-secondary: #110f18 !important;
-  --background-secondary-alt: #61ffca !important;
-  --bases-cards-background: #15141b !important;
-  --bases-cards-shadow: 0 0 0 1px #61ffca !important;
-  --bases-embed-border-color: #61ffca !important;
-  --bases-table-border-color: #61ffca !important;
-  --bases-table-cell-background-active: #15141b !important;
-  --bases-table-header-background: #15141b !important;
-  --bases-table-summary-background: #15141b !important;
-  --blur-background: color-mix(in srgb, #61ffca 65%, transparent) linear-gradient(#61ffca, color-mix(in srgb, #61ffca 65%, transparent)) !important;
-  --canvas-background: #15141b !important;
-  --canvas-dot-pattern: #61ffca !important;
-  --checkbox-marker-color: #15141b !important;
-  --code-background: #110f18 !important;
-  --code-border-color: #61ffca !important;
-  --color-base-30: #61ffca !important;
-  --divider-color: #61ffca !important;
-  --dropdown-background: #61ffca !important;
-  --embed-block-shadow-hover: 0 0 0 1px #61ffca, inset 0 0 0 1px #61ffca !important;
-  --file-header-background: #15141b !important;
-  --file-header-background-focused: #15141b !important;
-  --flair-background: #61ffca !important;
-  --footnote-divider-color: #61ffca !important;
-  --hr-color: #61ffca !important;
-  --indentation-guide-color: #edecee !important;
-  --interactive-normal: #61ffca !important;
-  --light: #15141b !important;
-  --lightgray: #110f18 !important;
-  --menu-background: #110f18 !important;
-  --metadata-border-color: #61ffca !important;
-  --metadata-divider-color: #61ffca !important;
-  --modal-background: #15141b !important;
-  --nav-indentation-guide-color: #edecee !important;
-  --pdf-background: #15141b !important;
-  --pdf-page-background: #15141b !important;
-  --pdf-shadow: 0 0 0 1px #61ffca !important;
-  --pdf-sidebar-background: #15141b !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px #61ffca !important;
-  --pill-border-color: #61ffca !important;
-  --prompt-background: #15141b !important;
-  --raised-background: color-mix(in srgb, #61ffca 65%, transparent) linear-gradient(#61ffca, color-mix(in srgb, #61ffca 65%, transparent)) !important;
-  --ribbon-background: #15141b !important;
-  --ribbon-background-collapsed: #15141b !important;
-  --search-result-background: #15141b !important;
-  --setting-items-border-color: #61ffca !important;
-  --shiki-code-background: #110f18 !important;
-  --shiki-gutter-border-color: #61ffca !important;
-  --slider-track-background: #61ffca !important;
-  --status-bar-background: #110f18 !important;
-  --status-bar-border-color: #61ffca !important;
-  --suggestion-background: #15141b !important;
-  --tab-background-active: #15141b !important;
-  --tab-container-background: #110f18 !important;
-  --tab-outline-color: #61ffca !important;
-  --tab-switcher-background: #110f18 !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, #110f18, transparent) !important;
-  --table-add-button-border-color: #61ffca !important;
-  --table-border-color: #61ffca !important;
-  --table-header-border-color: #61ffca !important;
-  --titlebar-background: #110f18 !important;
-  --titlebar-background-focused: #110f18 !important;
-  --titlebar-border-color: #61ffca !important;
-  --quartz-icon-color: currentColor !important;
+  --background-modifier-border: #61ffca;
+  --background-primary: #15141b;
+  --background-secondary: #110f18;
+  --background-secondary-alt: #61ffca;
+  --bases-cards-background: #15141b;
+  --bases-cards-shadow: 0 0 0 1px #61ffca;
+  --bases-embed-border-color: #61ffca;
+  --bases-table-border-color: #61ffca;
+  --bases-table-cell-background-active: #15141b;
+  --bases-table-header-background: #15141b;
+  --bases-table-summary-background: #15141b;
+  --blur-background: color-mix(in srgb, #61ffca 65%, transparent) linear-gradient(#61ffca, color-mix(in srgb, #61ffca 65%, transparent));
+  --canvas-background: #15141b;
+  --canvas-dot-pattern: #61ffca;
+  --checkbox-marker-color: #15141b;
+  --code-background: #110f18;
+  --code-border-color: #61ffca;
+  --color-base-30: #61ffca;
+  --divider-color: #61ffca;
+  --dropdown-background: #61ffca;
+  --embed-block-shadow-hover: 0 0 0 1px #61ffca, inset 0 0 0 1px #61ffca;
+  --file-header-background: #15141b;
+  --file-header-background-focused: #15141b;
+  --flair-background: #61ffca;
+  --footnote-divider-color: #61ffca;
+  --hr-color: #61ffca;
+  --indentation-guide-color: #edecee;
+  --interactive-normal: #61ffca;
+  --light: var(--background-primary, #15141b);
+  --lightgray: var(--background-secondary, #110f18);
+  --menu-background: #110f18;
+  --metadata-border-color: #61ffca;
+  --metadata-divider-color: #61ffca;
+  --modal-background: #15141b;
+  --nav-indentation-guide-color: #edecee;
+  --pdf-background: #15141b;
+  --pdf-page-background: #15141b;
+  --pdf-shadow: 0 0 0 1px #61ffca;
+  --pdf-sidebar-background: #15141b;
+  --pdf-thumbnail-shadow: 0 0 0 1px #61ffca;
+  --pill-border-color: #61ffca;
+  --prompt-background: #15141b;
+  --raised-background: color-mix(in srgb, #61ffca 65%, transparent) linear-gradient(#61ffca, color-mix(in srgb, #61ffca 65%, transparent));
+  --ribbon-background: #15141b;
+  --ribbon-background-collapsed: #15141b;
+  --search-result-background: #15141b;
+  --setting-items-border-color: #61ffca;
+  --shiki-code-background: #110f18;
+  --shiki-gutter-border-color: #61ffca;
+  --slider-track-background: #61ffca;
+  --status-bar-background: #110f18;
+  --status-bar-border-color: #61ffca;
+  --suggestion-background: #15141b;
+  --tab-background-active: #15141b;
+  --tab-container-background: #110f18;
+  --tab-outline-color: #61ffca;
+  --tab-switcher-background: #110f18;
+  --tab-switcher-menubar-background: linear-gradient(to top, #110f18, transparent);
+  --table-add-button-border-color: #61ffca;
+  --table-border-color: #61ffca;
+  --table-header-border-color: #61ffca;
+  --titlebar-background: #110f18;
+  --titlebar-background-focused: #110f18;
+  --titlebar-border-color: #61ffca;
+  --quartz-icon-color: currentColor;
 }
 
 html body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -545,4 +551,41 @@ html body kbd {
 }`,
   },
   light: {},
+  classSettings: {
+    "aura-dark": `.aura-dark {
+--background-primary: #15141b;
+--background-secondary: #110f18;
+--ribbon-background: #15141b;
+--titlebar-background: var(--background-secondary);
+--titlebar-background-focused: var(--background-secondary);
+--code-background: var(--background-secondary);
+--indentation-guide-color: #edecee;
+--color-base-30: #61ffca;
+}`,
+    "aura-soft": `.clickable-icon.aura-soft:hover, .clickable-icon.aura-soft:hover svg, .is-focused.aura-soft .titlebar-inner.aura-soft {
+color: #61ffca;
+}
+
+body.aura-soft:not(.is-grabbing) .nav-file-title.is-active.aura-soft:hover, body.aura-soft:not(.is-grabbing) .nav-folder-title.is-active.aura-soft:hover, .nav-file-title.is-active.aura-soft, .nav-folder-title.is-active.aura-soft {
+color: #a277ff;
+}
+
+.dropdown.aura-soft {
+background-color: #3d375e7f;
+}
+
+.dropdown.aura-soft:hover {
+background-color: #af8aff7f;
+}
+.aura-soft {
+--background-primary: #21202e;
+--background-secondary: #1c1b22;
+--ribbon-background: #21202e;
+--titlebar-background: var(--background-secondary);
+--titlebar-background-focused: var(--background-secondary);
+--code-background: var(--background-secondary);
+--indentation-guide-color: #edecee;
+--color-base-30: #61ffca;
+}`,
+  },
 };

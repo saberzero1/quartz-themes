@@ -87,6 +87,40 @@ if (singleThemeArg) {
   );
 }
 
+const themesJsonData = JSON.parse(readFileSync("./themes.json", "utf-8"));
+
+function generateStyleSettingsDefaults(settings, mode) {
+  const declarations = [];
+  for (const setting of settings) {
+    if (!setting || !setting.type) continue;
+    if (setting.type === "variable-themed-color") {
+      const defaultVal =
+        mode === "dark" ? setting["default-dark"] : setting["default-light"];
+      if (defaultVal && defaultVal !== "#" && defaultVal !== "") {
+        if (setting.format === "hsl-split") {
+          // hsl-split not useful as a raw hex default — skip
+        } else {
+          declarations.push(`  --${setting.id}: ${defaultVal};`);
+        }
+      }
+    } else if (setting.type?.startsWith("variable-")) {
+      if (setting.default !== undefined && setting.default !== "") {
+        let value;
+        if (
+          setting.type === "variable-number" ||
+          setting.type === "variable-number-slider"
+        ) {
+          value = `${setting.default}${setting.format || ""}`;
+        } else {
+          value = setting.default;
+        }
+        declarations.push(`  --${setting.id}: ${value};`);
+      }
+    }
+  }
+  return declarations.join("\n");
+}
+
 const neededSelectors = new Set(["body"]);
 config.forEach((mapping) => {
   if (mapping.obsidianSelector) {
@@ -1184,20 +1218,29 @@ function buildCSSStrings(themeData) {
     }
   }
 
-  // Generate Quartz SCSS
-  // Note: We skip toHexColors() on the colorSchemeSection because some themes have malformed
-  // CSS values (e.g., "hsl(23025%95%)" instead of "hsl(230, 25%, 95%)") that cause postcss
-  // to hang indefinitely. Since these are CSS variables being injected as-is, conversion isn't necessary.
+  // Style Settings default variable declarations
+  const baseSlug = themeName.split(".")[0];
+  const themeJsonEntry = themesJsonData.themes?.[baseSlug];
+  const styleSettingsArr = themeJsonEntry?.style_settings?.settings;
+  let ssDefaultsLight = "";
+  let ssDefaultsDark = "";
+  if (Array.isArray(styleSettingsArr) && styleSettingsArr.length > 0) {
+    ssDefaultsLight = generateStyleSettingsDefaults(styleSettingsArr, "light");
+    ssDefaultsDark = generateStyleSettingsDefaults(styleSettingsArr, "dark");
+  }
+
   const colorSchemeSection =
     lightData && darkData
       ? `
 :root:root {
 ${bodyVarsStringLightQuartz}
+${ssDefaultsLight}
 ${fontOverrideLightString}
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
 ${bodyVarsStringDarkQuartz}
+${ssDefaultsDark}
 ${fontOverrideDarkString}
   --quartz-icon-color: currentColor;
 }
@@ -1206,6 +1249,7 @@ ${fontOverrideDarkString}
         ? `
 :root:root {
 ${bodyVarsStringLightQuartz}
+${ssDefaultsLight}
 ${fontOverrideLightString}
   --quartz-icon-color: currentColor;
 }
@@ -1214,6 +1258,7 @@ ${fontOverrideLightString}
           ? `
 :root:root {
 ${bodyVarsStringDarkQuartz}
+${ssDefaultsDark}
 ${fontOverrideDarkString}
   --quartz-icon-color: currentColor;
 }

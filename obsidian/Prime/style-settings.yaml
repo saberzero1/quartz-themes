@@ -79,7 +79,7 @@ settings:
     title: Choose a custom color
     description: ❗️ Make sure that 'None' is selected from the 'Choose a default color' option!
     type: variable-color
-    default: "#"
+    default: '#'
     format: hex
   - id: h2
     title: H2
@@ -110,7 +110,7 @@ settings:
     title: Choose a custom color
     description: ❗️ Make sure that 'None' is selected from the 'Choose a default color' option!
     type: variable-color
-    default: "#"
+    default: '#'
     format: hex
   - id: h3
     title: H3
@@ -141,7 +141,7 @@ settings:
     title: Choose a custom color
     description: ❗️ Make sure that 'None' is selected from the 'Choose a default color' option!
     type: variable-color
-    default: "#"
+    default: '#'
     format: hex
   - id: h4
     title: H4
@@ -172,7 +172,7 @@ settings:
     title: Choose a custom color
     description: ❗️ Make sure that 'None' is selected from the 'Choose a default color' option!
     type: variable-color
-    default: "#"
+    default: '#'
     format: hex
   - id: h5
     title: H5
@@ -203,7 +203,7 @@ settings:
     title: Choose a custom color
     description: ❗️ Make sure that 'None' is selected from the 'Choose a default color' option!
     type: variable-color
-    default: "#"
+    default: '#'
     format: hex
   - id: h6
     title: H6
@@ -234,7 +234,7 @@ settings:
     title: Choose a custom color
     description: ❗️ Make sure that 'None' is selected from the 'Choose a default color' option!
     type: variable-color
-    default: "#"
+    default: '#'
     format: hex
   - id: text-decoration-colors-header
     title: Text Decoration Colors
@@ -271,7 +271,7 @@ settings:
     title: Choose a custom color
     description: ❗️ Make sure that 'None' is selected from the 'Choose a default color' option!
     type: variable-color
-    default: "#"
+    default: '#'
     format: hex
   - id: italic
     title: Italic text
@@ -302,7 +302,7 @@ settings:
     title: Choose a custom color
     description: ❗️ Make sure that 'None' is selected from the 'Choose a default color' option!
     type: variable-color
-    default: "#"
+    default: '#'
     format: hex
   - id: highlighted-text
     title: Highlighted text
@@ -343,12 +343,12 @@ settings:
   - id: highlight-color-custom-bg
     title: Background color
     type: variable-color
-    default: "#"
+    default: '#'
     format: hex
   - id: highlight-color-custom-text
     title: Text color
     type: variable-color
-    default: "#"
+    default: '#'
     format: hex
   - id: syntax-highlighting-header
     title: Syntax Highlighting Options

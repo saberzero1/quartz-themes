@@ -171,48 +171,48 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-h: 1 !important;
-  --accent-l: 52.4% !important;
-  --accent-s: 71.2% !important;
-  --ancestor-editor-color: #839496 !important;
-  --background-modifier-active-hover: hsla(204.8, 69.4%, 48.6%, 0.1) !important;
-  --background-modifier-border: #0e4b5a !important;
-  --background-modifier-border-alt: #375662 !important;
-  --background-modifier-border-focus: #002b36 !important;
-  --background-modifier-border-hover: #637c84 !important;
-  --background-modifier-error: #dc322f !important;
-  --background-modifier-error-hover: #dc322f !important;
-  --background-modifier-error-rgb: 220, 50, 47 !important;
-  --background-modifier-form-field: #023845 !important;
-  --background-modifier-form-field-hover: #023845 !important;
-  --background-modifier-hover: rgba(#93a1a1, 0.067) !important;
-  --background-modifier-success: #859900 !important;
-  --background-modifier-success-rgb: 133, 153, 0 !important;
-  --background-primary: #073642 !important;
-  --background-primary-alt: #08404e !important;
-  --background-secondary: #002b36 !important;
-  --background-secondary-alt: #0e4b5a !important;
-  --bases-cards-background: #073642 !important;
-  --bases-cards-cover-background: #08404e !important;
-  --bases-cards-shadow: 0 0 0 1px #0e4b5a !important;
-  --bases-cards-shadow-hover: 0 0 0 1px #637c84 !important;
-  --bases-embed-border-color: #0e4b5a !important;
-  --bases-group-heading-property-color: #586e75 !important;
-  --bases-table-border-color: #0e4b5a !important;
-  --bases-table-cell-background-active: #073642 !important;
-  --bases-table-cell-background-disabled: #08404e !important;
-  --bases-table-cell-background-selected: hsla(204.8, 69.4%, 48.6%, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px #002b36 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(204.8, 69.4%, 48.6%) !important;
-  --bases-table-group-background: #08404e !important;
-  --bases-table-header-background: #073642 !important;
-  --bases-table-header-background-hover: rgba(#93a1a1, 0.067) !important;
-  --bases-table-header-color: #586e75 !important;
-  --bases-table-summary-background: #073642 !important;
-  --bases-table-summary-background-hover: rgba(#93a1a1, 0.067) !important;
-  --blockquote-border-color: hsl(204.8, 69.4%, 48.6%) !important;
-  --blur-background: color-mix(in srgb, #002b36 65%, transparent) linear-gradient(#002b36, color-mix(in srgb, #002b36 65%, transparent)) !important;
-  --bodyFont: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --accent-h: 1;
+  --accent-l: 52.4%;
+  --accent-s: 71.2%;
+  --ancestor-editor-color: #839496;
+  --background-modifier-active-hover: hsla(204.8, 69.4%, 48.6%, 0.1);
+  --background-modifier-border: #0e4b5a;
+  --background-modifier-border-alt: #375662;
+  --background-modifier-border-focus: #002b36;
+  --background-modifier-border-hover: #637c84;
+  --background-modifier-error: #dc322f;
+  --background-modifier-error-hover: #dc322f;
+  --background-modifier-error-rgb: 220, 50, 47;
+  --background-modifier-form-field: #023845;
+  --background-modifier-form-field-hover: #023845;
+  --background-modifier-hover: rgba(#93a1a1, 0.067);
+  --background-modifier-success: #859900;
+  --background-modifier-success-rgb: 133, 153, 0;
+  --background-primary: #073642;
+  --background-primary-alt: #08404e;
+  --background-secondary: #002b36;
+  --background-secondary-alt: #0e4b5a;
+  --bases-cards-background: #073642;
+  --bases-cards-cover-background: #08404e;
+  --bases-cards-shadow: 0 0 0 1px #0e4b5a;
+  --bases-cards-shadow-hover: 0 0 0 1px #637c84;
+  --bases-embed-border-color: #0e4b5a;
+  --bases-group-heading-property-color: #586e75;
+  --bases-table-border-color: #0e4b5a;
+  --bases-table-cell-background-active: #073642;
+  --bases-table-cell-background-disabled: #08404e;
+  --bases-table-cell-background-selected: hsla(204.8, 69.4%, 48.6%, 0.1);
+  --bases-table-cell-shadow-active: 0 0 0 2px #002b36;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(204.8, 69.4%, 48.6%);
+  --bases-table-group-background: #08404e;
+  --bases-table-header-background: #073642;
+  --bases-table-header-background-hover: rgba(#93a1a1, 0.067);
+  --bases-table-header-color: #586e75;
+  --bases-table-summary-background: #073642;
+  --bases-table-summary-background-hover: rgba(#93a1a1, 0.067);
+  --blockquote-border-color: hsl(204.8, 69.4%, 48.6%);
+  --blur-background: color-mix(in srgb, #002b36 65%, transparent) linear-gradient(#002b36, color-mix(in srgb, #002b36 65%, transparent));
+  --bodyFont: var(--font-text, "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   --callout-blend-mode: normal;
   --callout-bug: 220, 50, 47;
   --callout-default: 38, 139, 210;
@@ -228,377 +228,377 @@ export const theme: ThemeData = {
   --callout-tip: 42, 161, 152;
   --callout-todo: 38, 139, 210;
   --callout-warning: 203, 75, 22;
-  --canvas-background: #073642 !important;
-  --canvas-card-label-color: #93a1a1 !important;
-  --canvas-color: #0e4b5a !important;
-  --canvas-color-1: 220, 50, 47 !important;
-  --canvas-color-2: 203, 75, 22 !important;
-  --canvas-color-3: 181, 137, 0 !important;
-  --canvas-color-4: 133, 153, 0 !important;
-  --canvas-color-5: 42, 161, 152 !important;
-  --canvas-color-6: 108, 113, 196 !important;
-  --canvas-dot-pattern: #0e4b5a !important;
-  --caret-color: #839496 !important;
-  --checkbox-border-color: #93a1a1 !important;
-  --checkbox-border-color-hover: #586e75 !important;
-  --checkbox-color: hsl(204.8, 69.4%, 48.6%) !important;
-  --checkbox-color-hover: #d33682 !important;
-  --checkbox-marker-color: #073642 !important;
-  --checklist-done-color: #586e75 !important;
-  --code-background: #08404e !important;
-  --code-border-color: #0e4b5a !important;
-  --code-bracket-background: rgba(#93a1a1, 0.067) !important;
-  --code-comment: #93a1a1 !important;
-  --code-function: #b58900 !important;
-  --code-important: #cb4b16 !important;
-  --code-keyword: #d33682 !important;
-  --code-normal: #839496 !important;
-  --code-operator: #dc322f !important;
-  --code-property: #2aa198 !important;
-  --code-punctuation: #586e75 !important;
-  --code-string: #859900 !important;
-  --code-tag: #dc322f !important;
-  --code-value: #6c71c4 !important;
-  --codeFont: "Monaspace", monospace !important;
-  --collapse-icon-color: #93a1a1 !important;
-  --collapse-icon-color-collapsed: hsl(204.8, 69.4%, 48.6%) !important;
-  --color-accent: hsl(204.8, 69.4%, 48.6%) !important;
-  --color-accent-1: #d33682 !important;
-  --color-accent-1-rgb: 211, 54, 130 !important;
+  --canvas-background: #073642;
+  --canvas-card-label-color: #93a1a1;
+  --canvas-color: #0e4b5a;
+  --canvas-color-1: 220, 50, 47;
+  --canvas-color-2: 203, 75, 22;
+  --canvas-color-3: 181, 137, 0;
+  --canvas-color-4: 133, 153, 0;
+  --canvas-color-5: 42, 161, 152;
+  --canvas-color-6: 108, 113, 196;
+  --canvas-dot-pattern: #0e4b5a;
+  --caret-color: #839496;
+  --checkbox-border-color: #93a1a1;
+  --checkbox-border-color-hover: #586e75;
+  --checkbox-color: hsl(204.8, 69.4%, 48.6%);
+  --checkbox-color-hover: #d33682;
+  --checkbox-marker-color: #073642;
+  --checklist-done-color: #586e75;
+  --code-background: #08404e;
+  --code-border-color: #0e4b5a;
+  --code-bracket-background: rgba(#93a1a1, 0.067);
+  --code-comment: #93a1a1;
+  --code-function: #b58900;
+  --code-important: #cb4b16;
+  --code-keyword: #d33682;
+  --code-normal: #839496;
+  --code-operator: #dc322f;
+  --code-property: #2aa198;
+  --code-punctuation: #586e75;
+  --code-string: #859900;
+  --code-tag: #dc322f;
+  --code-value: #6c71c4;
+  --codeFont: var(--font-monospace, "Monaspace", monospace);
+  --collapse-icon-color: #93a1a1;
+  --collapse-icon-color-collapsed: hsl(204.8, 69.4%, 48.6%);
+  --color-accent: hsl(204.8, 69.4%, 48.6%);
+  --color-accent-1: #d33682;
+  --color-accent-1-rgb: 211, 54, 130;
   --color-accent-2: hsl(
         1 calc(71.2% + 180) 52.4%
-    ) !important;
+    );
   --color-accent-hover: hsl(
         1 calc(71.2% + 180) 52.4%
-    ) !important;
-  --color-accent-hsl: 204.8, 69.4%, 48.6% !important;
-  --color-accent-rgb: 38, 139, 210 !important;
-  --color-base-00: #073642 !important;
-  --color-base-10: #08404e !important;
-  --color-base-100: #93a1a1 !important;
-  --color-base-20: #002b36 !important;
-  --color-base-25: #023845 !important;
-  --color-base-30: #0e4b5a !important;
-  --color-base-35: #637c84 !important;
-  --color-base-40: #002b36 !important;
-  --color-base-50: #586e75 !important;
-  --color-base-60: #93a1a1 !important;
-  --color-base-70: #839496 !important;
-  --color-blue: #268bd2 !important;
-  --color-blue-hsl: 204.8, 69.4%, 48.6% !important;
-  --color-blue-rgb: 38, 139, 210 !important;
-  --color-cyan: #2aa198 !important;
-  --color-cyan-hsl: 175.5, 58.6%, 39.8% !important;
-  --color-cyan-rgb: 42, 161, 152 !important;
-  --color-green: #859900 !important;
-  --color-green-hsl: 67.8, 100%, 30% !important;
-  --color-green-rgb: 133, 153, 0 !important;
-  --color-orange: #cb4b16 !important;
-  --color-orange-hsl: 17.6, 80.4%, 44.1% !important;
-  --color-orange-rgb: 203, 75, 22 !important;
-  --color-pink: #d33682 !important;
-  --color-pink-hsl: 331, 64.1%, 52% !important;
-  --color-pink-rgb: 211, 54, 130 !important;
-  --color-purple: #6c71c4 !important;
-  --color-purple-hsl: 236.6, 42.7%, 59.6% !important;
-  --color-purple-rgb: 108, 113, 196 !important;
-  --color-red: #dc322f !important;
-  --color-red-hsl: 1, 71.2%, 52.4% !important;
-  --color-red-rgb: 220, 50, 47 !important;
-  --color-yellow: #b58900 !important;
-  --color-yellow-hsl: 45.4, 100%, 35.5% !important;
-  --color-yellow-rgb: 181, 137, 0 !important;
-  --dark: #839496 !important;
-  --darkgray: #839496 !important;
-  --divider-color: #0e4b5a !important;
-  --divider-color-hover: hsl(204.8, 69.4%, 48.6%) !important;
-  --dropdown-background: #002b36 !important;
-  --dropdown-background-hover: #637c84 !important;
-  --embed-block-shadow-hover: 0 0 0 1px #0e4b5a, inset 0 0 0 1px #0e4b5a !important;
-  --embed-border-start: 2px solid hsl(204.8, 69.4%, 48.6%) !important;
-  --file-header-background: #073642 !important;
-  --file-header-background-focused: #073642 !important;
-  --file-header-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --flair-background: #002b36 !important;
-  --flair-color: #839496 !important;
-  --font-interface: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-interface-theme: "Instrument", sans-serif !important;
-  --font-mermaid: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace: "Monaspace", monospace !important;
-  --font-print: "Instrument", sans-serif, Arial' !important;
-  --font-serif: "Fraunces", serif !important;
-  --font-text: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-text-theme: "Instrument", sans-serif !important;
-  --font-title: "Getai" !important;
-  --footnote-divider-color: #0e4b5a !important;
-  --footnote-id-color: #586e75 !important;
-  --footnote-id-color-no-occurrences: #93a1a1 !important;
-  --footnote-input-background-active: rgba(#93a1a1, 0.067) !important;
-  --footnote-line-height: 1.65 !important;
-  --glass-border-dark: #073642 !important;
-  --glass-border-light: #586e75 !important;
+    );
+  --color-accent-hsl: 204.8, 69.4%, 48.6%;
+  --color-accent-rgb: 38, 139, 210;
+  --color-base-00: #073642;
+  --color-base-10: #08404e;
+  --color-base-100: #93a1a1;
+  --color-base-20: #002b36;
+  --color-base-25: #023845;
+  --color-base-30: #0e4b5a;
+  --color-base-35: #637c84;
+  --color-base-40: #002b36;
+  --color-base-50: #586e75;
+  --color-base-60: #93a1a1;
+  --color-base-70: #839496;
+  --color-blue: #268bd2;
+  --color-blue-hsl: 204.8, 69.4%, 48.6%;
+  --color-blue-rgb: 38, 139, 210;
+  --color-cyan: #2aa198;
+  --color-cyan-hsl: 175.5, 58.6%, 39.8%;
+  --color-cyan-rgb: 42, 161, 152;
+  --color-green: #859900;
+  --color-green-hsl: 67.8, 100%, 30%;
+  --color-green-rgb: 133, 153, 0;
+  --color-orange: #cb4b16;
+  --color-orange-hsl: 17.6, 80.4%, 44.1%;
+  --color-orange-rgb: 203, 75, 22;
+  --color-pink: #d33682;
+  --color-pink-hsl: 331, 64.1%, 52%;
+  --color-pink-rgb: 211, 54, 130;
+  --color-purple: #6c71c4;
+  --color-purple-hsl: 236.6, 42.7%, 59.6%;
+  --color-purple-rgb: 108, 113, 196;
+  --color-red: #dc322f;
+  --color-red-hsl: 1, 71.2%, 52.4%;
+  --color-red-rgb: 220, 50, 47;
+  --color-yellow: #b58900;
+  --color-yellow-hsl: 45.4, 100%, 35.5%;
+  --color-yellow-rgb: 181, 137, 0;
+  --dark: var(--text-normal, #839496);
+  --darkgray: var(--text-normal, #839496);
+  --divider-color: #0e4b5a;
+  --divider-color-hover: hsl(204.8, 69.4%, 48.6%);
+  --dropdown-background: #002b36;
+  --dropdown-background-hover: #637c84;
+  --embed-block-shadow-hover: 0 0 0 1px #0e4b5a, inset 0 0 0 1px #0e4b5a;
+  --embed-border-start: 2px solid hsl(204.8, 69.4%, 48.6%);
+  --file-header-background: #073642;
+  --file-header-background-focused: #073642;
+  --file-header-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --flair-background: #002b36;
+  --flair-color: #839496;
+  --font-interface: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-interface-theme: "Instrument", sans-serif;
+  --font-mermaid: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: "Monaspace", monospace;
+  --font-print: "Instrument", sans-serif, Arial';
+  --font-serif: "Fraunces", serif;
+  --font-text: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-text-theme: "Instrument", sans-serif;
+  --font-title: "Getai";
+  --footnote-divider-color: #0e4b5a;
+  --footnote-id-color: #586e75;
+  --footnote-id-color-no-occurrences: #93a1a1;
+  --footnote-input-background-active: rgba(#93a1a1, 0.067);
+  --footnote-line-height: 1.65;
+  --glass-border-dark: #073642;
+  --glass-border-light: #586e75;
   --gradient-bg-primary: linear-gradient(
         135deg,
         #08404e 1.62%,
         #073642 50.72%
-    ) !important;
+    );
   --gradient-bg-secondary: linear-gradient(
         135deg,
         #003947 1.62%,
         #002b36 50.72%
-    ) !important;
-  --graph-line: rgb(from #93a1a1 r g b / 0.15) !important;
-  --graph-node: #586e75 !important;
-  --graph-node-attachment: #b58900 !important;
-  --graph-node-focused: hsl(204.8, 69.4%, 48.6%) !important;
-  --graph-node-tag: hsl(204.8, 69.4%, 48.6%) !important;
-  --graph-node-unresolved: #93a1a1 !important;
-  --graph-text: #839496 !important;
-  --gray: #586e75 !important;
-  --h1-font: "Getai" !important;
-  --h1-size: clamp(2.5rem, 8vw - 2rem, 3rem) !important;
-  --h1-weight: 900 !important;
-  --h2-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --h2-weight: 600 !important;
-  --h3-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --h3-weight: 600 !important;
-  --h4-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --h4-weight: 600 !important;
-  --h5-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --h5-line-height: 1.65 !important;
-  --h5-weight: 600 !important;
-  --h6-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --h6-line-height: 1.65 !important;
-  --headerFont: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: #93a1a1 !important;
-  --highlight: rgba(#93a1a1, 0.067) !important;
-  --hr-color: #0e4b5a !important;
-  --icon-color: #586e75 !important;
-  --icon-color-active: hsl(204.8, 69.4%, 48.6%) !important;
-  --icon-color-focused: #839496 !important;
-  --icon-color-hover: #586e75 !important;
-  --indentation-guide-color: rgba(#93a1a1, 0.12) !important;
-  --indentation-guide-color-active: rgba(#93a1a1, 0.3) !important;
-  --inline-title-color: #93a1a1 !important;
-  --inline-title-font: "Getai" !important;
-  --inline-title-size: clamp(2.5rem, 8vw - 2rem, 3rem) !important;
-  --inline-title-weight: 500 !important;
-  --input-date-separator: #93a1a1 !important;
-  --input-placeholder-color: #93a1a1 !important;
-  --interactive-accent: hsl(204.8, 69.4%, 48.6%) !important;
-  --interactive-accent-hover: #d33682 !important;
-  --interactive-accent-hsl: 204.8, 69.4%, 48.6% !important;
-  --interactive-hover: #637c84 !important;
-  --interactive-normal: #002b36 !important;
-  --lbs: 0px 20px 30px rgba(0, 0, 5, 0.15) !important;
-  --light: #073642 !important;
-  --lightgray: #002b36 !important;
-  --line-height-normal: 1.65 !important;
-  --link-color: #586e75 !important;
-  --link-color-hover: #839496 !important;
-  --link-decoration-hover: none !important;
-  --link-decoration-thickness: 13% !important;
-  --link-external-color: hsl(204.8, 69.4%, 48.6%) !important;
+    );
+  --graph-line: rgb(from #93a1a1 r g b / 0.15);
+  --graph-node: #586e75;
+  --graph-node-attachment: #b58900;
+  --graph-node-focused: hsl(204.8, 69.4%, 48.6%);
+  --graph-node-tag: hsl(204.8, 69.4%, 48.6%);
+  --graph-node-unresolved: #93a1a1;
+  --graph-text: #839496;
+  --gray: var(--text-muted, #586e75);
+  --h1-font: "Getai";
+  --h1-size: clamp(2.5rem, 8vw - 2rem, 3rem);
+  --h1-weight: 900;
+  --h2-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --h2-weight: 600;
+  --h3-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --h3-weight: 600;
+  --h4-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --h4-weight: 600;
+  --h5-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --h5-line-height: 1.65;
+  --h5-weight: 600;
+  --h6-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --h6-line-height: 1.65;
+  --headerFont: var(--font-text, "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --heading-formatting: #93a1a1;
+  --highlight: var(--background-modifier-hover, rgba(#93a1a1, 0.067));
+  --hr-color: #0e4b5a;
+  --icon-color: #586e75;
+  --icon-color-active: hsl(204.8, 69.4%, 48.6%);
+  --icon-color-focused: #839496;
+  --icon-color-hover: #586e75;
+  --indentation-guide-color: rgba(#93a1a1, 0.12);
+  --indentation-guide-color-active: rgba(#93a1a1, 0.3);
+  --inline-title-color: #93a1a1;
+  --inline-title-font: "Getai";
+  --inline-title-size: clamp(2.5rem, 8vw - 2rem, 3rem);
+  --inline-title-weight: 500;
+  --input-date-separator: #93a1a1;
+  --input-placeholder-color: #93a1a1;
+  --interactive-accent: hsl(204.8, 69.4%, 48.6%);
+  --interactive-accent-hover: #d33682;
+  --interactive-accent-hsl: 204.8, 69.4%, 48.6%;
+  --interactive-hover: #637c84;
+  --interactive-normal: #002b36;
+  --lbs: 0px 20px 30px rgba(0, 0, 5, 0.15);
+  --light: var(--background-primary, #073642);
+  --lightgray: var(--background-secondary, #002b36);
+  --line-height-normal: 1.65;
+  --link-color: #586e75;
+  --link-color-hover: #839496;
+  --link-decoration-hover: none;
+  --link-decoration-thickness: 13%;
+  --link-external-color: hsl(204.8, 69.4%, 48.6%);
   --link-external-color-hover: hsl(
         1 calc(71.2% + 180) 52.4%
-    ) !important;
-  --link-external-decoration: none !important;
-  --link-external-decoration-hover: none !important;
-  --link-unresolved-color: #586e75 !important;
-  --link-unresolved-decoration-color: transparent !important;
-  --list-marker-color: #93a1a1 !important;
-  --list-marker-color-collapsed: hsl(204.8, 69.4%, 48.6%) !important;
-  --list-marker-color-hover: #586e75 !important;
-  --menu-background: #002b36 !important;
-  --menu-border-color: #637c84 !important;
-  --menu-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16) !important;
-  --metadata-border-color: #0e4b5a !important;
-  --metadata-divider-color: #0e4b5a !important;
-  --metadata-input-background-active: rgba(#93a1a1, 0.067) !important;
-  --metadata-input-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: #839496 !important;
-  --metadata-label-background-active: rgba(#93a1a1, 0.067) !important;
-  --metadata-label-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: #586e75 !important;
-  --metadata-label-text-color-hover: #586e75 !important;
-  --metadata-property-background-active: rgba(#93a1a1, 0.067) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #002b36 !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #637c84 !important;
-  --modal-background: #073642 !important;
-  --modal-border-color: #002b36 !important;
-  --mono-rgb-0: #002b36 !important;
-  --mono-rgb-100: #93a1a1 !important;
-  --nav-collapse-icon-color: #93a1a1 !important;
-  --nav-collapse-icon-color-collapsed: #93a1a1 !important;
-  --nav-heading-color: #839496 !important;
-  --nav-heading-color-collapsed: #93a1a1 !important;
-  --nav-heading-color-collapsed-hover: #586e75 !important;
-  --nav-heading-color-hover: #839496 !important;
-  --nav-indentation-guide-color: rgba(#93a1a1, 0.12) !important;
-  --nav-item-background-active: rgba(#93a1a1, 0.067) !important;
-  --nav-item-background-hover: rgba(#93a1a1, 0.067) !important;
-  --nav-item-background-selected: hsla(204.8, 69.4%, 48.6%, 0.15) !important;
-  --nav-item-color: #586e75 !important;
-  --nav-item-color-active: #839496 !important;
+    );
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --link-unresolved-color: #586e75;
+  --link-unresolved-decoration-color: transparent;
+  --list-marker-color: #93a1a1;
+  --list-marker-color-collapsed: hsl(204.8, 69.4%, 48.6%);
+  --list-marker-color-hover: #586e75;
+  --menu-background: #002b36;
+  --menu-border-color: #637c84;
+  --menu-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+  --metadata-border-color: #0e4b5a;
+  --metadata-divider-color: #0e4b5a;
+  --metadata-input-background-active: rgba(#93a1a1, 0.067);
+  --metadata-input-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-input-text-color: #839496;
+  --metadata-label-background-active: rgba(#93a1a1, 0.067);
+  --metadata-label-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-label-text-color: #586e75;
+  --metadata-label-text-color-hover: #586e75;
+  --metadata-property-background-active: rgba(#93a1a1, 0.067);
+  --metadata-property-box-shadow-focus: 0 0 0 2px #002b36;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #637c84;
+  --modal-background: #073642;
+  --modal-border-color: #002b36;
+  --mono-rgb-0: #002b36;
+  --mono-rgb-100: #93a1a1;
+  --nav-collapse-icon-color: #93a1a1;
+  --nav-collapse-icon-color-collapsed: #93a1a1;
+  --nav-heading-color: #839496;
+  --nav-heading-color-collapsed: #93a1a1;
+  --nav-heading-color-collapsed-hover: #586e75;
+  --nav-heading-color-hover: #839496;
+  --nav-indentation-guide-color: rgba(#93a1a1, 0.12);
+  --nav-item-background-active: rgba(#93a1a1, 0.067);
+  --nav-item-background-hover: rgba(#93a1a1, 0.067);
+  --nav-item-background-selected: hsla(204.8, 69.4%, 48.6%, 0.15);
+  --nav-item-color: #586e75;
+  --nav-item-color-active: #839496;
   --nav-item-color-highlighted: hsl(
         1 calc(71.2% + 180) 52.4%
-    ) !important;
-  --nav-item-color-hover: #839496 !important;
-  --nav-item-color-selected: #839496 !important;
-  --nav-tag-color: #93a1a1 !important;
-  --nav-tag-color-active: #586e75 !important;
-  --nav-tag-color-hover: #586e75 !important;
-  --pdf-background: #073642 !important;
-  --pdf-page-background: #073642 !important;
-  --pdf-shadow: 0 0 0 1px #0e4b5a !important;
-  --pdf-sidebar-background: #073642 !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px #0e4b5a !important;
-  --pill-border-color: #0e4b5a !important;
-  --pill-border-color-hover: #637c84 !important;
-  --pill-color: #586e75 !important;
-  --pill-color-hover: #839496 !important;
-  --pill-color-remove: #93a1a1 !important;
-  --pill-color-remove-hover: hsl(204.8, 69.4%, 48.6%) !important;
-  --prompt-background: #073642 !important;
-  --prompt-border-color: #002b36 !important;
-  --proxy-00: #073642 !important;
-  --proxy-10: #08404e !important;
-  --proxy-20: #002b36 !important;
-  --radius-xl: 24px !important;
-  --raised-background: color-mix(in srgb, #002b36 65%, transparent) linear-gradient(#002b36, color-mix(in srgb, #002b36 65%, transparent)) !important;
-  --ribbon-background: #002b36 !important;
-  --ribbon-background-collapsed: #073642 !important;
-  --sbs: 24px 24px 84px -4px rgba(0, 0, 13, 0.05), 0px 16px 64px 6px rgba(0, 13, 0, 0.007) !important;
-  --scrollbar-active-thumb-bg: hsl(204.8, 69.4%, 48.6%) !important;
-  --scrollbar-bg: rgb(from #93a1a1 r g b / 0.1) !important;
-  --scrollbar-thumb-bg: rgba(#93a1a1, 0.1) !important;
-  --search-clear-button-color: #586e75 !important;
-  --search-icon-color: #586e75 !important;
-  --search-result-background: #073642 !important;
-  --secondary: hsl(204.8, 69.4%, 48.6%) !important;
-  --setting-group-heading-color: #839496 !important;
-  --setting-items-background: #08404e !important;
-  --setting-items-border-color: #0e4b5a !important;
-  --shadow-l: 0px 8px 24px rgba(0, 0, 0, 0.2) !important;
-  --shadow-lm-only: none !important;
-  --shadow-s: 0px 1px 4px rgba(0, 0, 0, 0.16) !important;
-  --shiki-active-tab-border-color: #586e75 !important;
-  --shiki-code-background: #08404e !important;
-  --shiki-code-comment: #93a1a1 !important;
-  --shiki-code-function: #859900 !important;
-  --shiki-code-important: #cb4b16 !important;
-  --shiki-code-keyword: #d33682 !important;
-  --shiki-code-normal: #586e75 !important;
-  --shiki-code-property: #2aa198 !important;
-  --shiki-code-punctuation: #586e75 !important;
-  --shiki-code-string: #b58900 !important;
-  --shiki-code-value: #6c71c4 !important;
-  --shiki-gutter-border-color: #0e4b5a !important;
-  --shiki-gutter-text-color: #93a1a1 !important;
-  --shiki-gutter-text-color-highlight: #586e75 !important;
-  --shiki-highlight-green: rgba(133, 153, 0, 0.5) !important;
-  --shiki-highlight-green-background: rgba(133, 153, 0, 0.1) !important;
-  --shiki-highlight-neutral: #586e75 !important;
-  --shiki-highlight-neutral-background: rgba(#93a1a1, .05) !important;
-  --shiki-highlight-red: rgba(220, 50, 47, 0.5) !important;
-  --shiki-highlight-red-background: rgba(220, 50, 47, 0.1) !important;
-  --shiki-terminal-dots-color: #93a1a1 !important;
-  --slider-thumb-border-color: #637c84 !important;
-  --slider-track-background: #0e4b5a !important;
-  --status-bar-background: #002b36 !important;
-  --status-bar-border-color: #0e4b5a !important;
-  --status-bar-text-color: #586e75 !important;
-  --suggestion-background: #073642 !important;
-  --swatch-shadow: inset 0 0 0 1px rgba(#93a1a1, 0.15) !important;
-  --sync-avatar-color-1: #dc322f !important;
-  --sync-avatar-color-2: #cb4b16 !important;
-  --sync-avatar-color-3: #b58900 !important;
-  --sync-avatar-color-4: #859900 !important;
-  --sync-avatar-color-5: #2aa198 !important;
-  --sync-avatar-color-6: #268bd2 !important;
-  --sync-avatar-color-7: #6c71c4 !important;
-  --sync-avatar-color-8: #d33682 !important;
-  --tab-background-active: #073642 !important;
-  --tab-container-background: #002b36 !important;
-  --tab-divider-color: #637c84 !important;
-  --tab-outline-color: #0e4b5a !important;
-  --tab-switcher-background: #002b36 !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, #002b36, transparent) !important;
-  --tab-switcher-preview-radius: 24px !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(#93a1a1, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(204.8, 69.4%, 48.6%) !important;
-  --tab-text-color: #93a1a1 !important;
-  --tab-text-color-active: #586e75 !important;
-  --tab-text-color-focused: #586e75 !important;
-  --tab-text-color-focused-active: #586e75 !important;
-  --tab-text-color-focused-active-current: #839496 !important;
-  --tab-text-color-focused-highlighted: hsl(204.8, 69.4%, 48.6%) !important;
-  --table-add-button-border-color: #0e4b5a !important;
-  --table-border-color: #0e4b5a !important;
-  --table-drag-handle-background-active: hsl(204.8, 69.4%, 48.6%) !important;
-  --table-drag-handle-color: #93a1a1 !important;
-  --table-header-border-color: #0e4b5a !important;
-  --table-header-color: #839496 !important;
-  --table-selection: hsla(204.8, 69.4%, 48.6%, 0.1) !important;
-  --table-selection-border-color: hsl(204.8, 69.4%, 48.6%) !important;
-  --tag-background: hsla(204.8, 69.4%, 48.6%, 0.1) !important;
-  --tag-background-hover: hsla(204.8, 69.4%, 48.6%, 0.2) !important;
-  --tag-border-color: hsla(204.8, 69.4%, 48.6%, 0.15) !important;
-  --tag-border-color-hover: hsla(204.8, 69.4%, 48.6%, 0.15) !important;
-  --tag-color: hsl(204.8, 69.4%, 48.6%) !important;
-  --tag-color-hover: hsl(204.8, 69.4%, 48.6%) !important;
-  --tertiary: hsl(
+    );
+  --nav-item-color-hover: #839496;
+  --nav-item-color-selected: #839496;
+  --nav-tag-color: #93a1a1;
+  --nav-tag-color-active: #586e75;
+  --nav-tag-color-hover: #586e75;
+  --pdf-background: #073642;
+  --pdf-page-background: #073642;
+  --pdf-shadow: 0 0 0 1px #0e4b5a;
+  --pdf-sidebar-background: #073642;
+  --pdf-thumbnail-shadow: 0 0 0 1px #0e4b5a;
+  --pill-border-color: #0e4b5a;
+  --pill-border-color-hover: #637c84;
+  --pill-color: #586e75;
+  --pill-color-hover: #839496;
+  --pill-color-remove: #93a1a1;
+  --pill-color-remove-hover: hsl(204.8, 69.4%, 48.6%);
+  --prompt-background: #073642;
+  --prompt-border-color: #002b36;
+  --proxy-00: #073642;
+  --proxy-10: #08404e;
+  --proxy-20: #002b36;
+  --radius-xl: 24px;
+  --raised-background: color-mix(in srgb, #002b36 65%, transparent) linear-gradient(#002b36, color-mix(in srgb, #002b36 65%, transparent));
+  --ribbon-background: #002b36;
+  --ribbon-background-collapsed: #073642;
+  --sbs: 24px 24px 84px -4px rgba(0, 0, 13, 0.05), 0px 16px 64px 6px rgba(0, 13, 0, 0.007);
+  --scrollbar-active-thumb-bg: hsl(204.8, 69.4%, 48.6%);
+  --scrollbar-bg: rgb(from #93a1a1 r g b / 0.1);
+  --scrollbar-thumb-bg: rgba(#93a1a1, 0.1);
+  --search-clear-button-color: #586e75;
+  --search-icon-color: #586e75;
+  --search-result-background: #073642;
+  --secondary: var(--text-accent, hsl(204.8, 69.4%, 48.6%));
+  --setting-group-heading-color: #839496;
+  --setting-items-background: #08404e;
+  --setting-items-border-color: #0e4b5a;
+  --shadow-l: 0px 8px 24px rgba(0, 0, 0, 0.2);
+  --shadow-lm-only: none;
+  --shadow-s: 0px 1px 4px rgba(0, 0, 0, 0.16);
+  --shiki-active-tab-border-color: #586e75;
+  --shiki-code-background: #08404e;
+  --shiki-code-comment: #93a1a1;
+  --shiki-code-function: #859900;
+  --shiki-code-important: #cb4b16;
+  --shiki-code-keyword: #d33682;
+  --shiki-code-normal: #586e75;
+  --shiki-code-property: #2aa198;
+  --shiki-code-punctuation: #586e75;
+  --shiki-code-string: #b58900;
+  --shiki-code-value: #6c71c4;
+  --shiki-gutter-border-color: #0e4b5a;
+  --shiki-gutter-text-color: #93a1a1;
+  --shiki-gutter-text-color-highlight: #586e75;
+  --shiki-highlight-green: rgba(133, 153, 0, 0.5);
+  --shiki-highlight-green-background: rgba(133, 153, 0, 0.1);
+  --shiki-highlight-neutral: #586e75;
+  --shiki-highlight-neutral-background: rgba(#93a1a1, .05);
+  --shiki-highlight-red: rgba(220, 50, 47, 0.5);
+  --shiki-highlight-red-background: rgba(220, 50, 47, 0.1);
+  --shiki-terminal-dots-color: #93a1a1;
+  --slider-thumb-border-color: #637c84;
+  --slider-track-background: #0e4b5a;
+  --status-bar-background: #002b36;
+  --status-bar-border-color: #0e4b5a;
+  --status-bar-text-color: #586e75;
+  --suggestion-background: #073642;
+  --swatch-shadow: inset 0 0 0 1px rgba(#93a1a1, 0.15);
+  --sync-avatar-color-1: #dc322f;
+  --sync-avatar-color-2: #cb4b16;
+  --sync-avatar-color-3: #b58900;
+  --sync-avatar-color-4: #859900;
+  --sync-avatar-color-5: #2aa198;
+  --sync-avatar-color-6: #268bd2;
+  --sync-avatar-color-7: #6c71c4;
+  --sync-avatar-color-8: #d33682;
+  --tab-background-active: #073642;
+  --tab-container-background: #002b36;
+  --tab-divider-color: #637c84;
+  --tab-outline-color: #0e4b5a;
+  --tab-switcher-background: #002b36;
+  --tab-switcher-menubar-background: linear-gradient(to top, #002b36, transparent);
+  --tab-switcher-preview-radius: 24px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(#93a1a1, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(204.8, 69.4%, 48.6%);
+  --tab-text-color: #93a1a1;
+  --tab-text-color-active: #586e75;
+  --tab-text-color-focused: #586e75;
+  --tab-text-color-focused-active: #586e75;
+  --tab-text-color-focused-active-current: #839496;
+  --tab-text-color-focused-highlighted: hsl(204.8, 69.4%, 48.6%);
+  --table-add-button-border-color: #0e4b5a;
+  --table-border-color: #0e4b5a;
+  --table-drag-handle-background-active: hsl(204.8, 69.4%, 48.6%);
+  --table-drag-handle-color: #93a1a1;
+  --table-header-border-color: #0e4b5a;
+  --table-header-color: #839496;
+  --table-selection: hsla(204.8, 69.4%, 48.6%, 0.1);
+  --table-selection-border-color: hsl(204.8, 69.4%, 48.6%);
+  --tag-background: hsla(204.8, 69.4%, 48.6%, 0.1);
+  --tag-background-hover: hsla(204.8, 69.4%, 48.6%, 0.2);
+  --tag-border-color: hsla(204.8, 69.4%, 48.6%, 0.15);
+  --tag-border-color-hover: hsla(204.8, 69.4%, 48.6%, 0.15);
+  --tag-color: hsl(204.8, 69.4%, 48.6%);
+  --tag-color-hover: hsl(204.8, 69.4%, 48.6%);
+  --tertiary: var(--text-accent-hover, hsl(
         1 calc(71.2% + 180) 52.4%
-    ) !important;
-  --text-accent: hsl(204.8, 69.4%, 48.6%) !important;
+    ));
+  --text-accent: hsl(204.8, 69.4%, 48.6%);
   --text-accent-hover: hsl(
         1 calc(71.2% + 180) 52.4%
-    ) !important;
-  --text-error: #dc322f !important;
-  --text-faint: #93a1a1 !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
-  --text-muted: #586e75 !important;
-  --text-normal: #839496 !important;
-  --text-on-button: white !important;
-  --text-selection: hsla(204.8, 69.4%, 48.6%, 0.33) !important;
-  --text-success: #859900 !important;
-  --text-warning: #cb4b16 !important;
-  --textHighlight: rgba(#93a1a1, 0.067) !important;
-  --titleFont: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: transparent !important;
-  --titlebar-background-focused: transparent !important;
-  --titlebar-border-color: #0e4b5a !important;
-  --titlebar-text-color: #586e75 !important;
-  --titlebar-text-color-focused: #839496 !important;
-  --ulu-font-general: "Instrument", sans-serif !important;
-  --ulu-font-title: "Getai" !important;
-  --ulu-kanban-border-color: transparent !important;
-  --ulu-kanban-border-width: 0px !important;
-  --ulu-radius: 8px !important;
-  --vault-profile-color: #839496 !important;
-  --vault-profile-color-hover: #839496 !important;
-  --view-bottom-fade-mask: none !important;
-  --workspace-background-translucent: rgba(#002b36, 0.6) !important;
-  --quartz-icon-color: currentColor !important;
+    );
+  --text-error: #dc322f;
+  --text-faint: #93a1a1;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-muted: #586e75;
+  --text-normal: #839496;
+  --text-on-button: white;
+  --text-selection: hsla(204.8, 69.4%, 48.6%, 0.33);
+  --text-success: #859900;
+  --text-warning: #cb4b16;
+  --textHighlight: var(--background-modifier-hover, rgba(#93a1a1, 0.067));
+  --titleFont: var(--font-text, "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --titlebar-background: transparent;
+  --titlebar-background-focused: transparent;
+  --titlebar-border-color: #0e4b5a;
+  --titlebar-text-color: #586e75;
+  --titlebar-text-color-focused: #839496;
+  --ulu-font-general: "Instrument", sans-serif;
+  --ulu-font-title: "Getai";
+  --ulu-kanban-border-color: transparent;
+  --ulu-kanban-border-width: 0px;
+  --ulu-radius: 8px;
+  --vault-profile-color: #839496;
+  --vault-profile-color-hover: #839496;
+  --view-bottom-fade-mask: none;
+  --workspace-background-translucent: rgba(#002b36, 0.6);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   color: rgb(131, 148, 150);
 }
 
 html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-primary, rgba(0, 0, 0, 0));
   color: rgb(131, 148, 150);
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   color: rgb(131, 148, 150);
 }
 
@@ -607,42 +607,42 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(131, 148, 150);
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 700;
+  font-weight: calc(var(--font-weight) + var(--bold-modifier), 700);
   outline: rgb(131, 148, 150) none 0px;
   text-decoration-color: rgb(131, 148, 150);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
-  color: rgb(147, 161, 161);
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--color-base-100, rgb(147, 161, 161));
+  font-family: var(--font-text, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   outline: rgb(147, 161, 161) none 0px;
   text-decoration-color: rgb(147, 161, 161);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
-  color: rgb(147, 161, 161);
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--color-base-100, rgb(147, 161, 161));
+  font-family: var(--font-text, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   outline: rgb(147, 161, 161) none 0px;
   text-decoration-color: rgb(147, 161, 161);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 700;
+  font-weight: calc(var(--font-weight) + var(--bold-modifier), 700);
   outline: rgb(131, 148, 150) none 0px;
   text-decoration-color: rgb(131, 148, 150);
 }
 
 html[saved-theme="dark"] body .text-highlight {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(131, 148, 150) none 0px;
   text-decoration-color: rgb(131, 148, 150);
@@ -656,7 +656,7 @@ html[saved-theme="dark"] body del {
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
 }
 
 html[saved-theme="dark"] body h2 {
@@ -677,17 +677,17 @@ html[saved-theme="dark"] body h2 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(38, 139, 210);
+  color: var(--ulu-h2-text-color, var(--h2-color, var(--color-accent)));
   content: "";
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: -0.36px;
-  line-height: 28.8px;
+  font-family: var(--h2-font, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h2-size, 24px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.36px);
+  line-height: var(--h2-line-height, 28.8px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -695,47 +695,48 @@ html[saved-theme="dark"] body h2 {
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
-  background-color: color(srgb 0.576471 0.631373 0.631373 / 0.05);
+  background-color: rgb(from var(--mono-rgb-100) r g b/0.05, color(srgb 0.576471 0.631373 0.631373 / 0.05));
   border-color: color(srgb 0.576471 0.631373 0.631373 / 0.15);
   border-radius: 50%;
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(38, 139, 210);
+  background-color: var(--color-accent, rgb(38, 139, 210));
   border-color: rgba(0, 0, 0, 0);
 }
 
 html[saved-theme="dark"] body p {
-  color: rgb(88, 110, 117);
+  color: var(--text-muted, rgb(88, 110, 117));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(88, 110, 117) none 0px;
   text-decoration-color: rgb(88, 110, 117);
 }`,
     links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
-  color: rgb(38, 139, 210);
+  color: var(--link-external-color, rgb(38, 139, 210));
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(38, 139, 210) none 0px;
   text-decoration: 13%;
   text-decoration-color: rgb(38, 139, 210);
-  text-decoration-thickness: 13%;
+  text-decoration-thickness: var(--link-decoration-thickness, 13%);
 }
 
 html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   background-color: color(srgb 0.148716 0.544463 0.823284 / 0.1);
-  color: rgb(38, 139, 210);
+  color: var(--color-accent, rgb(38, 139, 210));
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 500;
+  font-weight: var(--link-weight, 500);
   outline: rgb(38, 139, 210) none 0px;
   text-decoration-color: rgb(38, 139, 210);
   transition: 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 html[saved-theme="dark"] body a.internal-link.broken {
-  color: rgb(147, 161, 161);
+  background-color: var(--color-base-30, rgba(0, 0, 0, 0));
+  color: var(--text-faint, rgb(147, 161, 161));
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 500;
+  font-weight: var(--link-weight, 500);
   outline: rgb(147, 161, 161) none 0px;
-  text-decoration-color: rgb(147, 161, 161);
+  text-decoration-color: var(--link-unresolved-decoration-color, rgb(147, 161, 161));
   transition: 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }`,
     lists: `html[saved-theme="dark"] body dd {
@@ -773,11 +774,11 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-width: 1px;
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
-  color: rgb(147, 161, 161);
+  color: var(--text-faint, rgb(147, 161, 161));
 }
 
 html[saved-theme="dark"] body blockquote {
-  background-color: color(srgb 0.027451 0.211765 0.258824 / 0.3);
+  background-color: rgb(from var(--color-base-00) r g b/0.3, color(srgb 0.027451 0.211765 0.258824 / 0.3));
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-bottom: 16px;
   padding-top: 16px;
@@ -807,11 +808,11 @@ html[saved-theme="dark"] body table {
   border-top-style: solid;
   border-top-width: 1px;
   color: rgb(131, 148, 150);
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: var(--font-text, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   margin-bottom: 24px;
   margin-left: 16px;
   margin-right: 16px;
-  margin-top: 24px;
+  margin-top: var(--heading-spacing, 24px);
   width: 604px;
 }
 
@@ -819,38 +820,38 @@ html[saved-theme="dark"] body td {
   border-bottom-color: rgb(131, 148, 150);
   border-bottom-width: 0px;
   border-left-color: rgb(131, 148, 150);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: rgb(131, 148, 150);
   border-right-width: 0px;
   border-top-color: rgb(131, 148, 150);
   border-top-width: 0px;
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   font-weight: 500;
   padding-bottom: 2px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 2px;
   text-align: left;
-  vertical-align: middle;
+  vertical-align: var(--table-cell-vertical-alignment, middle);
 }
 
 html[saved-theme="dark"] body th {
   border-bottom-color: rgb(88, 110, 117);
   border-bottom-width: 0px;
   border-left-color: rgb(88, 110, 117);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: rgb(88, 110, 117);
   border-right-width: 0px;
   border-top-color: rgb(88, 110, 117);
-  border-top-width: 0px;
-  color: rgb(88, 110, 117);
-  font-weight: 700;
+  border-top-width: var(--table-header-border-width, 0px);
+  color: var(--text-muted, rgb(88, 110, 117));
+  font-weight: var(--table-header-weight, 700);
   padding-bottom: 12px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 12px;
   text-align: left;
-  vertical-align: middle;
+  vertical-align: var(--table-cell-vertical-alignment, middle);
 }
 
 html[saved-theme="dark"] body thead {
@@ -867,7 +868,7 @@ html[saved-theme="dark"] body tr {
   border-top-color: rgba(0, 0, 0, 0);
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--code-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(88, 110, 117);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -876,8 +877,8 @@ html[saved-theme="dark"] body tr {
   border-top-color: rgb(88, 110, 117);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(88, 110, 117);
-  font-family: Monaspace, monospace;
+  color: var(--ec-codeFg, rgb(88, 110, 117));
+  font-family: var(--ec-codeFontFml, Monaspace, monospace);
   padding-bottom: 12px;
   padding-left: 0px;
   padding-right: 0px;
@@ -885,7 +886,7 @@ html[saved-theme="dark"] body tr {
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: rgb(8, 64, 78);
+  background-color: var(--code-background, rgb(8, 64, 78));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
@@ -928,7 +929,7 @@ html[saved-theme="dark"] body video {
   border-top-color: rgb(131, 148, 150);
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: color(srgb 0.00784314 0.219608 0.270588 / 0.6);
+  background-color: rgb(from var(--color-base-25) r g b/0.6, color(srgb 0.00784314 0.219608 0.270588 / 0.6));
   border-bottom-color: rgb(14, 75, 90);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -953,7 +954,7 @@ html[saved-theme="dark"] body .footnotes {
 }
 
 html[saved-theme="dark"] body .transclude {
-  background-color: color(srgb 0.00784314 0.219608 0.270588 / 0.6);
+  background-color: rgb(from var(--color-base-25) r g b/0.6, color(srgb 0.00784314 0.219608 0.270588 / 0.6));
   border-bottom-color: rgb(14, 75, 90);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -998,7 +999,7 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   transition: 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
-  width: 18px;
+  width: var(--checkbox-size, 18px);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
@@ -2226,7 +2227,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="check
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2234,11 +2235,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="check
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2264,12 +2265,13 @@ html[saved-theme="dark"] body .callout-title {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   content: "";
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: var(--callout-title-size, 16px);
   font-weight: 600;
   letter-spacing: 0.16px;
-  line-height: 20.8px;
+  line-height: var(--line-height-tight, 20.8px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2283,7 +2285,7 @@ html[saved-theme="dark"] body .callout-title {
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   --callout-color: 42, 161, 152;
   background: rgba(42, 161, 152, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(42, 161, 152, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(131, 148, 150);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -2303,7 +2305,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2311,11 +2313,11 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-content {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2325,7 +2327,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
   --callout-color: 220, 50, 47;
   background: rgba(220, 50, 47, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(220, 50, 47, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(131, 148, 150);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -2345,7 +2347,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2353,11 +2355,11 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2367,7 +2369,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
   --callout-color: 220, 50, 47;
   background: rgba(220, 50, 47, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(220, 50, 47, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(131, 148, 150);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -2387,7 +2389,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2395,11 +2397,11 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2409,7 +2411,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 html[saved-theme="dark"] body .callout[data-callout="example"] {
   --callout-color: 108, 113, 196;
   background: rgba(108, 113, 196, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(108, 113, 196, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(131, 148, 150);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -2429,7 +2431,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2437,11 +2439,11 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-content {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2451,7 +2453,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
   --callout-color: 220, 50, 47;
   background: rgba(220, 50, 47, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(220, 50, 47, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(131, 148, 150);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -2471,7 +2473,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2479,11 +2481,11 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-content {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2493,7 +2495,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 html[saved-theme="dark"] body .callout[data-callout="info"] {
   --callout-color: 38, 139, 210;
   background: rgba(38, 139, 210, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(38, 139, 210, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(131, 148, 150);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -2513,7 +2515,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2521,11 +2523,11 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2535,7 +2537,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 html[saved-theme="dark"] body .callout[data-callout="note"] {
   --callout-color: 38, 139, 210;
   background: rgba(38, 139, 210, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(38, 139, 210, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(131, 148, 150);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -2555,7 +2557,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2563,11 +2565,11 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2577,7 +2579,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 html[saved-theme="dark"] body .callout[data-callout="question"] {
   --callout-color: 203, 75, 22;
   background: rgba(203, 75, 22, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(203, 75, 22, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(131, 148, 150);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -2597,7 +2599,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2605,11 +2607,11 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-content {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2619,7 +2621,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
   --callout-color: 158, 158, 158;
   background: rgba(158, 158, 158, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(158, 158, 158, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(131, 148, 150);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -2639,7 +2641,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2647,11 +2649,11 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2661,7 +2663,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
   --callout-color: 133, 153, 0;
   background: rgba(133, 153, 0, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(133, 153, 0, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(131, 148, 150);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -2681,7 +2683,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2689,11 +2691,11 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-content {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2703,7 +2705,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
   --callout-color: 42, 161, 152;
   background: rgba(42, 161, 152, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(42, 161, 152, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(131, 148, 150);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -2723,7 +2725,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2731,11 +2733,11 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2745,7 +2747,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
   --callout-color: 38, 139, 210;
   background: rgba(38, 139, 210, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(38, 139, 210, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(131, 148, 150);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -2765,7 +2767,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2773,11 +2775,11 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2787,7 +2789,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --callout-color: 203, 75, 22;
   background: rgba(203, 75, 22, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(203, 75, 22, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(131, 148, 150);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -2807,7 +2809,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2815,11 +2817,11 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] > .callout-content {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -2882,7 +2884,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(from var(--color-base-0) r g b/0.3, rgba(0, 0, 0, 0));
   border-bottom-color: color(srgb 0.576471 0.631373 0.631373 / 0.1);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -2891,17 +2893,18 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-color: color(srgb 0.576471 0.631373 0.631373 / 0.1);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: rgb(7, 54, 66);
+  background-color: var(--prompt-background, rgb(7, 54, 66));
   border-bottom-color: color(srgb 0.576471 0.631373 0.631373 / 0.08);
   border-left-color: color(srgb 0.576471 0.631373 0.631373 / 0.08);
   border-right-color: color(srgb 0.576471 0.631373 0.631373 / 0.08);
   border-top-color: color(srgb 0.576471 0.631373 0.631373 / 0.08);
-  box-shadow: color(srgb 0 0.168627 0.211765 / 0.6) 0px 40px 80px -20px, color(srgb 0.576471 0.631373 0.631373 / 0.1) 0px 1px 0px 0px inset;
+  box-shadow: 0 40px 80px -20px rgb(from var(--mono-rgb-0) r g b/0.6),
+        inset 0 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.1);
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > * {
@@ -2927,7 +2930,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: rgb(99, 124, 132);
+  background-color: var(--interactive-hover, rgb(99, 124, 132));
   color: rgb(131, 148, 150);
 }
 
@@ -2939,7 +2942,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
-  background-color: rgb(2, 56, 69);
+  background-color: rgb(from var(--color-base-0) r g b/0.3, rgb(2, 56, 69));
   border-bottom-color: rgb(14, 75, 90);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -2954,11 +2957,11 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
   border-top-right-radius: 12px;
   border-top-style: solid;
   border-top-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px 0px;
+  box-shadow: inset 0 2px 4px rgb(from var(--mono-rgb-0) r g b/0.1, rgba(0, 0, 0, 0.16) 0px 1px 4px 0px);
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
-  background-color: rgb(99, 124, 132);
+  background-color: var(--interactive-hover, rgb(99, 124, 132));
   border-bottom-color: rgb(131, 148, 150);
   border-left-color: rgb(131, 148, 150);
   border-right-color: rgb(131, 148, 150);
@@ -2967,12 +2970,12 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: rgb(99, 124, 132);
+  background-color: var(--interactive-hover, rgb(99, 124, 132));
   color: rgb(131, 148, 150);
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-bottom-color: color(srgb 0.148716 0.544463 0.823284 / 0.4);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -2986,52 +2989,52 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-top-right-radius: 8px;
   border-top-width: 1px;
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 600;
+  font-weight: var(--pill-weight, 600);
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
-  color: rgb(147, 161, 161);
+  color: var(--color-base-100, rgb(147, 161, 161));
 }
 
 html[saved-theme="dark"] body h1 {
-  color: rgb(147, 161, 161);
-  font-family: Getai;
+  color: var(--ulu-h1-text-color, var(--h1-color, var(--color-base-100)));
+  font-family: var(--h1-font, Getai);
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(147, 161, 161);
-  font-size: 48px;
-  font-weight: 500;
+  color: var(--inline-title-color, rgb(147, 161, 161));
+  font-size: var(--inline-title-size, 48px);
+  font-weight: var(--inline-title-weight, 500);
 }
 
 html[saved-theme="dark"] body h2 {
-  color: rgb(38, 139, 210);
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--ulu-h2-text-color, var(--h2-color, var(--color-accent)));
+  font-family: var(--h2-font, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  color: rgb(147, 161, 161);
-  font-family: Getai;
+  color: var(--inline-title-color, rgb(147, 161, 161));
+  font-family: var(--inline-title-font, Getai);
 }
 
 html[saved-theme="dark"] body h3 {
-  color: rgb(147, 161, 161);
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--ulu-h3-text-color, var(--h3-color, var(--color-base-100)));
+  font-family: var(--h3-font, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
-  color: rgb(147, 161, 161);
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--ulu-h4-text-color, var(--h4-color, var(--color-base-100)));
+  font-family: var(--h4-font, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
-  color: rgb(147, 161, 161);
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--ulu-h5-text-color, var(--h5-color, var(--color-base-100)));
+  font-family: var(--h5-font, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
-  color: rgb(147, 161, 161);
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--ulu-h6-text-color, var(--h6-color, var(--color-base-100)));
+  font-family: var(--h6-font, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body hr {
@@ -3060,12 +3063,12 @@ html[saved-theme="dark"] body hr {
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(88, 110, 117);
+  color: var(--nav-item-color, rgb(88, 110, 117));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(88, 110, 117);
+  color: var(--nav-item-color, rgb(88, 110, 117));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
@@ -3088,10 +3091,10 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-right-radius: 24px;
   border-top-style: solid;
   border-top-width: 1px;
-  color: rgb(88, 110, 117);
+  color: var(--text-muted, rgb(88, 110, 117));
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -3101,12 +3104,12 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-right-width: 1px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-right-radius: 8px;
-  color: rgb(88, 110, 117);
+  color: var(--status-bar-text-color, rgb(88, 110, 117));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body footer ul li a {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(131, 148, 150);
@@ -3122,7 +3125,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(88, 110, 117);
+  color: var(--nav-item-color, rgb(88, 110, 117));
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3142,7 +3145,7 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(88, 110, 117);
+  color: var(--nav-item-color, rgb(88, 110, 117));
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -3168,7 +3171,7 @@ html[saved-theme="dark"] body ul.section-ul {
   border-top-right-radius: 24px;
   border-top-style: solid;
   border-top-width: 1px;
-  color: rgb(88, 110, 117);
+  color: var(--text-muted, rgb(88, 110, 117));
 }
 
 html[saved-theme="dark"] body .darkmode svg {
@@ -3196,7 +3199,7 @@ html[saved-theme="dark"] body .darkmode svg {
 }
 
 html[saved-theme="dark"] body .breadcrumb-element p {
-  color: rgb(147, 161, 161);
+  color: var(--text-faint, rgb(147, 161, 161));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     canvas: `html[saved-theme="dark"] body .canvas-node {
@@ -3208,7 +3211,7 @@ html[saved-theme="dark"] body .canvas-node-content {
 }
 
 html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
 }
 
 html[saved-theme="dark"] body .canvas-node-group {
@@ -3216,7 +3219,7 @@ html[saved-theme="dark"] body .canvas-node-group {
 }
 
 html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(var(--canvas-card-base), 0.05);
   border-color: rgb(131, 148, 150);
 }`,
     bases: `html[saved-theme="dark"] body .bases-table {
@@ -3225,8 +3228,8 @@ html[saved-theme="dark"] body .canvas-sidebar {
 
 html[saved-theme="dark"] body .bases-table thead th {
   border-color: rgb(88, 110, 117);
-  color: rgb(88, 110, 117);
-  font-weight: 700;
+  color: var(--text-muted, rgb(88, 110, 117));
+  font-weight: var(--table-header-weight, 700);
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgba(0, 0, 0, 0);
@@ -3241,7 +3244,7 @@ html[saved-theme="dark"] body .bases-table thead th {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   border-top-width: 1px;
-  color: rgb(88, 110, 117);
+  color: var(--text-muted, rgb(88, 110, 117));
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   margin-bottom: 16px;
   margin-left: 16px;
@@ -3276,9 +3279,9 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-radius: 8px;
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
 }
 
 html[saved-theme="dark"] body .note-properties-value {
@@ -3286,8 +3289,8 @@ html[saved-theme="dark"] body .note-properties-value {
 }
 
 html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(7, 54, 66);
-  color: rgb(131, 148, 150);
+  background-color: var(--background-primary, rgb(7, 54, 66));
+  color: var(--text-normal, rgb(131, 148, 150));
 }
 
 html[saved-theme="dark"] body ol.overflow {
@@ -3309,12 +3312,12 @@ html[saved-theme="dark"] body ol.overflow {
   border-top-width: 1px;
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(131, 148, 150);
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
 html[saved-theme="dark"] body .stacked-page.active {
@@ -3329,11 +3332,11 @@ html[saved-theme="dark"] body .stacked-page.active {
 }
 
 html[saved-theme="dark"] body .navigation-progress {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
-  color: rgb(131, 148, 150);
+  color: var(--text-normal, rgb(131, 148, 150));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -3349,6 +3352,7 @@ html[saved-theme="dark"] body details {
 }
 
 html[saved-theme="dark"] body input[type=text] {
+  background-color: rgb(from var(--color-base-0) r g b/0.3, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(88, 110, 117);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -3357,20 +3361,20 @@ html[saved-theme="dark"] body input[type=text] {
   border-top-color: rgb(88, 110, 117);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  color: rgb(88, 110, 117);
+  color: var(--text-normal, rgb(88, 110, 117));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-left: 28px;
 }
 
 html[saved-theme="dark"] body kbd {
-  background-color: color(srgb 0.148716 0.544463 0.823284 / 0.7);
+  background-color: var(--code-background, color(srgb 0.148716 0.544463 0.823284 / 0.7));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
-  font-family: Monaspace, monospace;
-  font-size: 12px;
+  color: var(--text-on-accent, rgb(255, 255, 255));
+  font-family: var(--font-monospace, Monaspace, monospace);
+  font-size: var(--code-size, 12px);
   padding-bottom: 2px;
   padding-left: 6px;
   padding-right: 6px;
@@ -3397,7 +3401,7 @@ html[saved-theme="dark"] body sup {
 }
 
 html[saved-theme="dark"] body ul.tags > li {
-  background-color: color(srgb 0.148716 0.544463 0.823284 / 0.05);
+  background-color: rgb(from var(--color-accent) r g b/0.05, color(srgb 0.148716 0.544463 0.823284 / 0.05));
   border-bottom-color: color(srgb 0.148716 0.544463 0.823284 / 0.3);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -3410,52 +3414,52 @@ html[saved-theme="dark"] body ul.tags > li {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: rgb(38, 139, 210);
+  color: var(--color-accent, rgb(38, 139, 210));
 }`,
   },
   light: {
     base: `:root:root {
-  --accent-h: 175.5 !important;
-  --accent-l: 39.8% !important;
-  --accent-s: 58.6% !important;
-  --ancestor-editor-color: #657b83 !important;
-  --background-modifier-active-hover: hsla(204.8, 69.4%, 48.6%, 0.1) !important;
-  --background-modifier-border: #f3edd7 !important;
-  --background-modifier-border-alt: #e2e1df !important;
-  --background-modifier-border-focus: #b7b6b2 !important;
-  --background-modifier-border-hover: #eee8d5 !important;
-  --background-modifier-error: #dc322f !important;
-  --background-modifier-error-hover: #dc322f !important;
-  --background-modifier-error-rgb: 220, 50, 47 !important;
-  --background-modifier-form-field: #fdf6e3 !important;
-  --background-modifier-form-field-hover: #fdf6e3 !important;
-  --background-modifier-hover: rgba(#433c34, 0.067) !important;
-  --background-modifier-success: #859900 !important;
-  --background-modifier-success-rgb: 133, 153, 0 !important;
-  --background-primary: #fdf6e3 !important;
-  --background-primary-alt: #fffaeb !important;
-  --background-secondary: #eee8d5 !important;
-  --bases-cards-background: #fdf6e3 !important;
-  --bases-cards-cover-background: #fffaeb !important;
-  --bases-cards-shadow: 0 0 0 1px #f3edd7 !important;
-  --bases-cards-shadow-hover: 0 0 0 1px #eee8d5 !important;
-  --bases-embed-border-color: #f3edd7 !important;
-  --bases-group-heading-property-color: #93a1a1 !important;
-  --bases-table-border-color: #f3edd7 !important;
-  --bases-table-cell-background-active: #fdf6e3 !important;
-  --bases-table-cell-background-disabled: #fffaeb !important;
-  --bases-table-cell-background-selected: hsla(204.8, 69.4%, 48.6%, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px #b7b6b2 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(204.8, 69.4%, 48.6%) !important;
-  --bases-table-group-background: #fffaeb !important;
-  --bases-table-header-background: #fdf6e3 !important;
-  --bases-table-header-background-hover: rgba(#433c34, 0.067) !important;
-  --bases-table-header-color: #93a1a1 !important;
-  --bases-table-summary-background: #fdf6e3 !important;
-  --bases-table-summary-background-hover: rgba(#433c34, 0.067) !important;
-  --blockquote-border-color: hsl(204.8, 69.4%, 48.6%) !important;
-  --blur-background: color-mix(in srgb, #fdf6e3 65%, transparent) linear-gradient(#fdf6e3, color-mix(in srgb, #fdf6e3 65%, transparent)) !important;
-  --bodyFont: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --accent-h: 175.5;
+  --accent-l: 39.8%;
+  --accent-s: 58.6%;
+  --ancestor-editor-color: #657b83;
+  --background-modifier-active-hover: hsla(204.8, 69.4%, 48.6%, 0.1);
+  --background-modifier-border: #f3edd7;
+  --background-modifier-border-alt: #e2e1df;
+  --background-modifier-border-focus: #b7b6b2;
+  --background-modifier-border-hover: #eee8d5;
+  --background-modifier-error: #dc322f;
+  --background-modifier-error-hover: #dc322f;
+  --background-modifier-error-rgb: 220, 50, 47;
+  --background-modifier-form-field: #fdf6e3;
+  --background-modifier-form-field-hover: #fdf6e3;
+  --background-modifier-hover: rgba(#433c34, 0.067);
+  --background-modifier-success: #859900;
+  --background-modifier-success-rgb: 133, 153, 0;
+  --background-primary: #fdf6e3;
+  --background-primary-alt: #fffaeb;
+  --background-secondary: #eee8d5;
+  --bases-cards-background: #fdf6e3;
+  --bases-cards-cover-background: #fffaeb;
+  --bases-cards-shadow: 0 0 0 1px #f3edd7;
+  --bases-cards-shadow-hover: 0 0 0 1px #eee8d5;
+  --bases-embed-border-color: #f3edd7;
+  --bases-group-heading-property-color: #93a1a1;
+  --bases-table-border-color: #f3edd7;
+  --bases-table-cell-background-active: #fdf6e3;
+  --bases-table-cell-background-disabled: #fffaeb;
+  --bases-table-cell-background-selected: hsla(204.8, 69.4%, 48.6%, 0.1);
+  --bases-table-cell-shadow-active: 0 0 0 2px #b7b6b2;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(204.8, 69.4%, 48.6%);
+  --bases-table-group-background: #fffaeb;
+  --bases-table-header-background: #fdf6e3;
+  --bases-table-header-background-hover: rgba(#433c34, 0.067);
+  --bases-table-header-color: #93a1a1;
+  --bases-table-summary-background: #fdf6e3;
+  --bases-table-summary-background-hover: rgba(#433c34, 0.067);
+  --blockquote-border-color: hsl(204.8, 69.4%, 48.6%);
+  --blur-background: color-mix(in srgb, #fdf6e3 65%, transparent) linear-gradient(#fdf6e3, color-mix(in srgb, #fdf6e3 65%, transparent));
+  --bodyFont: var(--font-text, "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   --callout-blend-mode: normal;
   --callout-bug: 220, 50, 47;
   --callout-default: 38, 139, 210;
@@ -3471,381 +3475,381 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-tip: 42, 161, 152;
   --callout-todo: 38, 139, 210;
   --callout-warning: 203, 75, 22;
-  --canvas-background: #fdf6e3 !important;
-  --canvas-card-label-color: #586e75 !important;
-  --canvas-color: #f3edd7 !important;
-  --canvas-color-1: 220, 50, 47 !important;
-  --canvas-color-2: 203, 75, 22 !important;
-  --canvas-color-3: 181, 137, 0 !important;
-  --canvas-color-4: 133, 153, 0 !important;
-  --canvas-color-5: 42, 161, 152 !important;
-  --canvas-color-6: 108, 113, 196 !important;
-  --canvas-dot-pattern: #f3edd7 !important;
-  --caret-color: #657b83 !important;
-  --checkbox-border-color: #586e75 !important;
-  --checkbox-border-color-hover: #93a1a1 !important;
-  --checkbox-color: #2aa198 !important;
+  --canvas-background: #fdf6e3;
+  --canvas-card-label-color: #586e75;
+  --canvas-color: #f3edd7;
+  --canvas-color-1: 220, 50, 47;
+  --canvas-color-2: 203, 75, 22;
+  --canvas-color-3: 181, 137, 0;
+  --canvas-color-4: 133, 153, 0;
+  --canvas-color-5: 42, 161, 152;
+  --canvas-color-6: 108, 113, 196;
+  --canvas-dot-pattern: #f3edd7;
+  --caret-color: #657b83;
+  --checkbox-border-color: #586e75;
+  --checkbox-border-color-hover: #93a1a1;
+  --checkbox-color: #2aa198;
   --checkbox-color-hover: hsl(
         175.5 58.6% 44.8%
-    ) !important;
-  --checkbox-marker-color: #fdf6e3 !important;
-  --checklist-done-color: #93a1a1 !important;
-  --code-background: #fffaeb !important;
-  --code-border-color: #f3edd7 !important;
-  --code-bracket-background: rgba(#433c34, 0.067) !important;
-  --code-comment: #586e75 !important;
-  --code-function: #b58900 !important;
-  --code-important: #cb4b16 !important;
-  --code-keyword: #d33682 !important;
-  --code-normal: #657b83 !important;
-  --code-operator: #dc322f !important;
-  --code-property: #2aa198 !important;
-  --code-punctuation: #93a1a1 !important;
-  --code-string: #859900 !important;
-  --code-tag: #dc322f !important;
-  --code-value: #6c71c4 !important;
-  --codeFont: "Monaspace", monospace !important;
-  --collapse-icon-color: #586e75 !important;
-  --collapse-icon-color-collapsed: hsl(204.8, 69.4%, 48.6%) !important;
-  --color-accent: hsl(204.8, 69.4%, 48.6%) !important;
-  --color-accent-1: #d33682 !important;
-  --color-accent-1-rgb: 211, 54, 130 !important;
+    );
+  --checkbox-marker-color: #fdf6e3;
+  --checklist-done-color: #93a1a1;
+  --code-background: #fffaeb;
+  --code-border-color: #f3edd7;
+  --code-bracket-background: rgba(#433c34, 0.067);
+  --code-comment: #586e75;
+  --code-function: #b58900;
+  --code-important: #cb4b16;
+  --code-keyword: #d33682;
+  --code-normal: #657b83;
+  --code-operator: #dc322f;
+  --code-property: #2aa198;
+  --code-punctuation: #93a1a1;
+  --code-string: #859900;
+  --code-tag: #dc322f;
+  --code-value: #6c71c4;
+  --codeFont: var(--font-monospace, "Monaspace", monospace);
+  --collapse-icon-color: #586e75;
+  --collapse-icon-color-collapsed: hsl(204.8, 69.4%, 48.6%);
+  --color-accent: hsl(204.8, 69.4%, 48.6%);
+  --color-accent-1: #d33682;
+  --color-accent-1-rgb: 211, 54, 130;
   --color-accent-2: hsl(
         175.5 58.6% 44.8%
-    ) !important;
+    );
   --color-accent-hover: hsl(
         175.5 58.6% 44.8%
-    ) !important;
-  --color-accent-hsl: 204.8, 69.4%, 48.6% !important;
-  --color-accent-rgb: 38, 139, 210 !important;
-  --color-base-00: #fdf6e3 !important;
-  --color-base-10: #fffaeb !important;
-  --color-base-100: #586e75 !important;
-  --color-base-20: #eee8d5 !important;
-  --color-base-25: #f8f3e6 !important;
-  --color-base-30: #f3edd7 !important;
-  --color-base-35: #eee8d5 !important;
-  --color-base-40: #b7b6b2 !important;
-  --color-base-50: #93a1a1 !important;
-  --color-base-60: #586e75 !important;
-  --color-base-70: #657b83 !important;
-  --color-blue: #268bd2 !important;
-  --color-blue-hsl: 204.8, 69.4%, 48.6% !important;
-  --color-blue-rgb: 38, 139, 210 !important;
-  --color-cyan: #2aa198 !important;
-  --color-cyan-hsl: 175.5, 58.6%, 39.8% !important;
-  --color-cyan-rgb: 42, 161, 152 !important;
-  --color-green: #859900 !important;
-  --color-green-hsl: 67.8, 100%, 30% !important;
-  --color-green-rgb: 133, 153, 0 !important;
-  --color-orange: #cb4b16 !important;
-  --color-orange-hsl: 17.6, 80.4%, 44.1% !important;
-  --color-orange-rgb: 203, 75, 22 !important;
-  --color-pink: #d33682 !important;
-  --color-pink-hsl: 331, 64.1%, 52% !important;
-  --color-pink-rgb: 211, 54, 130 !important;
-  --color-purple: #6c71c4 !important;
-  --color-purple-hsl: 236.6, 42.7%, 59.6% !important;
-  --color-purple-rgb: 108, 113, 196 !important;
-  --color-red: #dc322f !important;
-  --color-red-hsl: 1, 71.2%, 52.4% !important;
-  --color-red-rgb: 220, 50, 47 !important;
-  --color-yellow: #b58900 !important;
-  --color-yellow-hsl: 45.4, 100%, 35.5% !important;
-  --color-yellow-rgb: 181, 137, 0 !important;
-  --dark: #657b83 !important;
-  --darkgray: #657b83 !important;
-  --divider-color: #f3edd7 !important;
-  --divider-color-hover: hsl(204.8, 69.4%, 48.6%) !important;
-  --dropdown-background: #fdf6e3 !important;
-  --dropdown-background-hover: #fffaeb !important;
-  --embed-block-shadow-hover: 0 0 0 1px #f3edd7, inset 0 0 0 1px #f3edd7 !important;
-  --embed-border-start: 2px solid hsl(204.8, 69.4%, 48.6%) !important;
-  --file-header-background: #fdf6e3 !important;
-  --file-header-background-focused: #fdf6e3 !important;
-  --file-header-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --flair-background: #fdf6e3 !important;
-  --flair-color: #657b83 !important;
-  --font-interface: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-interface-theme: "Instrument", sans-serif !important;
-  --font-mermaid: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace: "Monaspace", monospace !important;
-  --font-print: "Instrument", sans-serif, Arial' !important;
-  --font-serif: "Fraunces", serif !important;
-  --font-text: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-text-theme: "Instrument", sans-serif !important;
-  --font-title: "Getai" !important;
-  --footnote-divider-color: #f3edd7 !important;
-  --footnote-id-color: #93a1a1 !important;
-  --footnote-id-color-no-occurrences: #586e75 !important;
-  --footnote-input-background-active: rgba(#433c34, 0.067) !important;
-  --footnote-line-height: 1.65 !important;
-  --glass-border-dark: #b7b6b2 !important;
-  --glass-border-light: #fff !important;
+    );
+  --color-accent-hsl: 204.8, 69.4%, 48.6%;
+  --color-accent-rgb: 38, 139, 210;
+  --color-base-00: #fdf6e3;
+  --color-base-10: #fffaeb;
+  --color-base-100: #586e75;
+  --color-base-20: #eee8d5;
+  --color-base-25: #f8f3e6;
+  --color-base-30: #f3edd7;
+  --color-base-35: #eee8d5;
+  --color-base-40: #b7b6b2;
+  --color-base-50: #93a1a1;
+  --color-base-60: #586e75;
+  --color-base-70: #657b83;
+  --color-blue: #268bd2;
+  --color-blue-hsl: 204.8, 69.4%, 48.6%;
+  --color-blue-rgb: 38, 139, 210;
+  --color-cyan: #2aa198;
+  --color-cyan-hsl: 175.5, 58.6%, 39.8%;
+  --color-cyan-rgb: 42, 161, 152;
+  --color-green: #859900;
+  --color-green-hsl: 67.8, 100%, 30%;
+  --color-green-rgb: 133, 153, 0;
+  --color-orange: #cb4b16;
+  --color-orange-hsl: 17.6, 80.4%, 44.1%;
+  --color-orange-rgb: 203, 75, 22;
+  --color-pink: #d33682;
+  --color-pink-hsl: 331, 64.1%, 52%;
+  --color-pink-rgb: 211, 54, 130;
+  --color-purple: #6c71c4;
+  --color-purple-hsl: 236.6, 42.7%, 59.6%;
+  --color-purple-rgb: 108, 113, 196;
+  --color-red: #dc322f;
+  --color-red-hsl: 1, 71.2%, 52.4%;
+  --color-red-rgb: 220, 50, 47;
+  --color-yellow: #b58900;
+  --color-yellow-hsl: 45.4, 100%, 35.5%;
+  --color-yellow-rgb: 181, 137, 0;
+  --dark: var(--text-normal, #657b83);
+  --darkgray: var(--text-normal, #657b83);
+  --divider-color: #f3edd7;
+  --divider-color-hover: hsl(204.8, 69.4%, 48.6%);
+  --dropdown-background: #fdf6e3;
+  --dropdown-background-hover: #fffaeb;
+  --embed-block-shadow-hover: 0 0 0 1px #f3edd7, inset 0 0 0 1px #f3edd7;
+  --embed-border-start: 2px solid hsl(204.8, 69.4%, 48.6%);
+  --file-header-background: #fdf6e3;
+  --file-header-background-focused: #fdf6e3;
+  --file-header-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --flair-background: #fdf6e3;
+  --flair-color: #657b83;
+  --font-interface: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-interface-theme: "Instrument", sans-serif;
+  --font-mermaid: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: "Monaspace", monospace;
+  --font-print: "Instrument", sans-serif, Arial';
+  --font-serif: "Fraunces", serif;
+  --font-text: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-text-theme: "Instrument", sans-serif;
+  --font-title: "Getai";
+  --footnote-divider-color: #f3edd7;
+  --footnote-id-color: #93a1a1;
+  --footnote-id-color-no-occurrences: #586e75;
+  --footnote-input-background-active: rgba(#433c34, 0.067);
+  --footnote-line-height: 1.65;
+  --glass-border-dark: #b7b6b2;
+  --glass-border-light: #fff;
   --gradient-bg-primary: linear-gradient(
         135deg,
         #fcf9f0 1.62%,
         #fdf6e3 50.72%
-    ) !important;
+    );
   --gradient-bg-secondary: linear-gradient(
         135deg,
         #ede8d7 1.62%,
         #ede8d7 50.72%
-    ) !important;
-  --graph-line: rgb(from #433c34 r g b / 0.15) !important;
-  --graph-node: #93a1a1 !important;
-  --graph-node-attachment: #b58900 !important;
-  --graph-node-focused: hsl(204.8, 69.4%, 48.6%) !important;
-  --graph-node-tag: hsl(204.8, 69.4%, 48.6%) !important;
-  --graph-node-unresolved: #586e75 !important;
-  --graph-text: #657b83 !important;
-  --gray: #93a1a1 !important;
-  --h1-font: "Getai" !important;
-  --h1-size: clamp(2.5rem, 8vw - 2rem, 3rem) !important;
-  --h1-weight: 900 !important;
-  --h2-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --h2-weight: 600 !important;
-  --h3-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --h3-weight: 600 !important;
-  --h4-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --h4-weight: 600 !important;
-  --h5-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --h5-line-height: 1.65 !important;
-  --h5-weight: 600 !important;
-  --h6-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --h6-line-height: 1.65 !important;
-  --headerFont: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: #586e75 !important;
-  --highlight: rgba(#433c34, 0.067) !important;
-  --hr-color: #f3edd7 !important;
-  --icon-color: #93a1a1 !important;
-  --icon-color-active: hsl(204.8, 69.4%, 48.6%) !important;
-  --icon-color-focused: #657b83 !important;
-  --icon-color-hover: #93a1a1 !important;
-  --indentation-guide-color: rgba(#433c34, 0.12) !important;
-  --indentation-guide-color-active: rgba(#433c34, 0.3) !important;
-  --inline-title-color: #586e75 !important;
-  --inline-title-font: "Getai" !important;
-  --inline-title-size: clamp(2.5rem, 8vw - 2rem, 3rem) !important;
-  --inline-title-weight: 500 !important;
-  --input-date-separator: #586e75 !important;
-  --input-placeholder-color: #586e75 !important;
-  --interactive-accent: hsl(204.8, 69.4%, 48.6%) !important;
+    );
+  --graph-line: rgb(from #433c34 r g b / 0.15);
+  --graph-node: #93a1a1;
+  --graph-node-attachment: #b58900;
+  --graph-node-focused: hsl(204.8, 69.4%, 48.6%);
+  --graph-node-tag: hsl(204.8, 69.4%, 48.6%);
+  --graph-node-unresolved: #586e75;
+  --graph-text: #657b83;
+  --gray: var(--text-muted, #93a1a1);
+  --h1-font: "Getai";
+  --h1-size: clamp(2.5rem, 8vw - 2rem, 3rem);
+  --h1-weight: 900;
+  --h2-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --h2-weight: 600;
+  --h3-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --h3-weight: 600;
+  --h4-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --h4-weight: 600;
+  --h5-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --h5-line-height: 1.65;
+  --h5-weight: 600;
+  --h6-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --h6-line-height: 1.65;
+  --headerFont: var(--font-text, "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --heading-formatting: #586e75;
+  --highlight: var(--background-modifier-hover, rgba(#433c34, 0.067));
+  --hr-color: #f3edd7;
+  --icon-color: #93a1a1;
+  --icon-color-active: hsl(204.8, 69.4%, 48.6%);
+  --icon-color-focused: #657b83;
+  --icon-color-hover: #93a1a1;
+  --indentation-guide-color: rgba(#433c34, 0.12);
+  --indentation-guide-color-active: rgba(#433c34, 0.3);
+  --inline-title-color: #586e75;
+  --inline-title-font: "Getai";
+  --inline-title-size: clamp(2.5rem, 8vw - 2rem, 3rem);
+  --inline-title-weight: 500;
+  --input-date-separator: #586e75;
+  --input-placeholder-color: #586e75;
+  --interactive-accent: hsl(204.8, 69.4%, 48.6%);
   --interactive-accent-hover: hsl(
         175.5 58.6% 44.8%
-    ) !important;
-  --interactive-accent-hsl: 204.8, 69.4%, 48.6% !important;
-  --interactive-hover: #fffaeb !important;
-  --interactive-normal: #fdf6e3 !important;
-  --lbs: 0px 20px 30px rgba(0, 5, 0, 0.03) !important;
-  --light: #fdf6e3 !important;
-  --lightgray: #eee8d5 !important;
-  --line-height-normal: 1.65 !important;
-  --link-color: #93a1a1 !important;
-  --link-color-hover: #657b83 !important;
-  --link-decoration-hover: none !important;
-  --link-decoration-thickness: 13% !important;
-  --link-external-color: hsl(204.8, 69.4%, 48.6%) !important;
+    );
+  --interactive-accent-hsl: 204.8, 69.4%, 48.6%;
+  --interactive-hover: #fffaeb;
+  --interactive-normal: #fdf6e3;
+  --lbs: 0px 20px 30px rgba(0, 5, 0, 0.03);
+  --light: var(--background-primary, #fdf6e3);
+  --lightgray: var(--background-secondary, #eee8d5);
+  --line-height-normal: 1.65;
+  --link-color: #93a1a1;
+  --link-color-hover: #657b83;
+  --link-decoration-hover: none;
+  --link-decoration-thickness: 13%;
+  --link-external-color: hsl(204.8, 69.4%, 48.6%);
   --link-external-color-hover: hsl(
         175.5 58.6% 44.8%
-    ) !important;
-  --link-external-decoration: none !important;
-  --link-external-decoration-hover: none !important;
-  --link-unresolved-color: #93a1a1 !important;
-  --link-unresolved-decoration-color: transparent !important;
-  --list-marker-color: #586e75 !important;
-  --list-marker-color-collapsed: hsl(204.8, 69.4%, 48.6%) !important;
-  --list-marker-color-hover: #93a1a1 !important;
-  --menu-background: #eee8d5 !important;
-  --menu-border-color: #eee8d5 !important;
-  --menu-shadow: 0px 3px 5px rgba(0, 0, 0, 0.04) !important;
-  --metadata-border-color: #f3edd7 !important;
-  --metadata-divider-color: #f3edd7 !important;
-  --metadata-input-background-active: rgba(#433c34, 0.067) !important;
-  --metadata-input-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: #657b83 !important;
-  --metadata-label-background-active: rgba(#433c34, 0.067) !important;
-  --metadata-label-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: #93a1a1 !important;
-  --metadata-label-text-color-hover: #93a1a1 !important;
-  --metadata-property-background-active: rgba(#433c34, 0.067) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #b7b6b2 !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #eee8d5 !important;
-  --modal-background: #fdf6e3 !important;
-  --modal-border-color: #b7b6b2 !important;
-  --mono-rgb-0: #fffcf4 !important;
-  --mono-rgb-100: #433c34 !important;
-  --nav-collapse-icon-color: #586e75 !important;
-  --nav-collapse-icon-color-collapsed: #586e75 !important;
-  --nav-heading-color: #657b83 !important;
-  --nav-heading-color-collapsed: #586e75 !important;
-  --nav-heading-color-collapsed-hover: #93a1a1 !important;
-  --nav-heading-color-hover: #657b83 !important;
-  --nav-indentation-guide-color: rgba(#433c34, 0.12) !important;
-  --nav-item-background-active: rgba(#433c34, 0.067) !important;
-  --nav-item-background-hover: rgba(#433c34, 0.067) !important;
-  --nav-item-background-selected: hsla(204.8, 69.4%, 48.6%, 0.15) !important;
-  --nav-item-color: #93a1a1 !important;
-  --nav-item-color-active: #657b83 !important;
+    );
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --link-unresolved-color: #93a1a1;
+  --link-unresolved-decoration-color: transparent;
+  --list-marker-color: #586e75;
+  --list-marker-color-collapsed: hsl(204.8, 69.4%, 48.6%);
+  --list-marker-color-hover: #93a1a1;
+  --menu-background: #eee8d5;
+  --menu-border-color: #eee8d5;
+  --menu-shadow: 0px 3px 5px rgba(0, 0, 0, 0.04);
+  --metadata-border-color: #f3edd7;
+  --metadata-divider-color: #f3edd7;
+  --metadata-input-background-active: rgba(#433c34, 0.067);
+  --metadata-input-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-input-text-color: #657b83;
+  --metadata-label-background-active: rgba(#433c34, 0.067);
+  --metadata-label-font: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-label-text-color: #93a1a1;
+  --metadata-label-text-color-hover: #93a1a1;
+  --metadata-property-background-active: rgba(#433c34, 0.067);
+  --metadata-property-box-shadow-focus: 0 0 0 2px #b7b6b2;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #eee8d5;
+  --modal-background: #fdf6e3;
+  --modal-border-color: #b7b6b2;
+  --mono-rgb-0: #fffcf4;
+  --mono-rgb-100: #433c34;
+  --nav-collapse-icon-color: #586e75;
+  --nav-collapse-icon-color-collapsed: #586e75;
+  --nav-heading-color: #657b83;
+  --nav-heading-color-collapsed: #586e75;
+  --nav-heading-color-collapsed-hover: #93a1a1;
+  --nav-heading-color-hover: #657b83;
+  --nav-indentation-guide-color: rgba(#433c34, 0.12);
+  --nav-item-background-active: rgba(#433c34, 0.067);
+  --nav-item-background-hover: rgba(#433c34, 0.067);
+  --nav-item-background-selected: hsla(204.8, 69.4%, 48.6%, 0.15);
+  --nav-item-color: #93a1a1;
+  --nav-item-color-active: #657b83;
   --nav-item-color-highlighted: hsl(
         175.5 58.6% 44.8%
-    ) !important;
-  --nav-item-color-hover: #657b83 !important;
-  --nav-item-color-selected: #657b83 !important;
-  --nav-tag-color: #586e75 !important;
-  --nav-tag-color-active: #93a1a1 !important;
-  --nav-tag-color-hover: #93a1a1 !important;
-  --pdf-background: #fdf6e3 !important;
-  --pdf-page-background: #fdf6e3 !important;
-  --pdf-sidebar-background: #fdf6e3 !important;
-  --pill-border-color: #f3edd7 !important;
-  --pill-border-color-hover: #eee8d5 !important;
-  --pill-color: #93a1a1 !important;
-  --pill-color-hover: #657b83 !important;
-  --pill-color-remove: #586e75 !important;
-  --pill-color-remove-hover: hsl(204.8, 69.4%, 48.6%) !important;
-  --prompt-background: #fdf6e3 !important;
-  --prompt-border-color: #b7b6b2 !important;
-  --proxy-00: #fdf6e3 !important;
-  --proxy-10: #fffaeb !important;
-  --proxy-20: #eee8d5 !important;
-  --radius-xl: 24px !important;
-  --raised-background: color-mix(in srgb, #fdf6e3 65%, transparent) linear-gradient(#fdf6e3, color-mix(in srgb, #fdf6e3 65%, transparent)) !important;
-  --ribbon-background: #eee8d5 !important;
-  --ribbon-background-collapsed: #fdf6e3 !important;
-  --sbs: 24px 24px 84px -4px rgba(0, 0, 0, 0.05), 0px 16px 64px 6px rgba(0, 0, 0, 0.007) !important;
-  --scrollbar-active-thumb-bg: hsl(204.8, 69.4%, 48.6%) !important;
-  --scrollbar-bg: rgb(from #433c34 r g b / 0.1) !important;
-  --scrollbar-thumb-bg: rgba(#433c34, 0.1) !important;
-  --search-clear-button-color: #93a1a1 !important;
-  --search-icon-color: #93a1a1 !important;
-  --search-result-background: #fdf6e3 !important;
-  --secondary: hsl(204.8, 69.4%, 48.6%) !important;
-  --setting-group-heading-color: #657b83 !important;
-  --setting-items-background: #fffaeb !important;
-  --setting-items-border-color: #f3edd7 !important;
-  --shadow-l: 0px 8px 24px rgba(149, 157, 165, 0.2) !important;
-  --shadow-lm-only: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
-  --shadow-s: 0px 3px 5px rgba(0, 0, 0, 0.04) !important;
-  --shiki-active-tab-border-color: #93a1a1 !important;
-  --shiki-code-background: #fffaeb !important;
-  --shiki-code-comment: #586e75 !important;
-  --shiki-code-function: #859900 !important;
-  --shiki-code-important: #cb4b16 !important;
-  --shiki-code-keyword: #d33682 !important;
-  --shiki-code-normal: #93a1a1 !important;
-  --shiki-code-property: #2aa198 !important;
-  --shiki-code-punctuation: #93a1a1 !important;
-  --shiki-code-string: #b58900 !important;
-  --shiki-code-value: #6c71c4 !important;
-  --shiki-gutter-border-color: #f3edd7 !important;
-  --shiki-gutter-text-color: #586e75 !important;
-  --shiki-gutter-text-color-highlight: #93a1a1 !important;
-  --shiki-highlight-green: rgba(133, 153, 0, 0.5) !important;
-  --shiki-highlight-green-background: rgba(133, 153, 0, 0.1) !important;
-  --shiki-highlight-neutral: #93a1a1 !important;
-  --shiki-highlight-neutral-background: rgba(#433c34, .05) !important;
-  --shiki-highlight-red: rgba(220, 50, 47, 0.5) !important;
-  --shiki-highlight-red-background: rgba(220, 50, 47, 0.1) !important;
-  --shiki-terminal-dots-color: #586e75 !important;
-  --slider-thumb-border-color: #eee8d5 !important;
-  --slider-track-background: #f3edd7 !important;
-  --status-bar-background: #eee8d5 !important;
-  --status-bar-border-color: #f3edd7 !important;
-  --status-bar-text-color: #93a1a1 !important;
-  --suggestion-background: #fdf6e3 !important;
-  --swatch-shadow: inset 0 0 0 1px rgba(#433c34, 0.15) !important;
-  --sync-avatar-color-1: #dc322f !important;
-  --sync-avatar-color-2: #cb4b16 !important;
-  --sync-avatar-color-3: #b58900 !important;
-  --sync-avatar-color-4: #859900 !important;
-  --sync-avatar-color-5: #2aa198 !important;
-  --sync-avatar-color-6: #268bd2 !important;
-  --sync-avatar-color-7: #6c71c4 !important;
-  --sync-avatar-color-8: #d33682 !important;
-  --tab-background-active: #fdf6e3 !important;
-  --tab-container-background: #eee8d5 !important;
-  --tab-divider-color: #eee8d5 !important;
-  --tab-outline-color: #f3edd7 !important;
-  --tab-switcher-background: #eee8d5 !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, #eee8d5, transparent) !important;
-  --tab-switcher-preview-radius: 24px !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(#433c34, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(204.8, 69.4%, 48.6%) !important;
-  --tab-text-color: #586e75 !important;
-  --tab-text-color-active: #93a1a1 !important;
-  --tab-text-color-focused: #93a1a1 !important;
-  --tab-text-color-focused-active: #93a1a1 !important;
-  --tab-text-color-focused-active-current: #657b83 !important;
-  --tab-text-color-focused-highlighted: hsl(204.8, 69.4%, 48.6%) !important;
-  --table-add-button-border-color: #f3edd7 !important;
-  --table-border-color: #f3edd7 !important;
-  --table-drag-handle-background-active: hsl(204.8, 69.4%, 48.6%) !important;
-  --table-drag-handle-color: #586e75 !important;
-  --table-header-border-color: #f3edd7 !important;
-  --table-header-color: #657b83 !important;
-  --table-selection: hsla(204.8, 69.4%, 48.6%, 0.1) !important;
-  --table-selection-border-color: hsl(204.8, 69.4%, 48.6%) !important;
-  --tag-background: hsla(204.8, 69.4%, 48.6%, 0.1) !important;
-  --tag-background-hover: hsla(204.8, 69.4%, 48.6%, 0.2) !important;
-  --tag-border-color: hsla(204.8, 69.4%, 48.6%, 0.15) !important;
-  --tag-border-color-hover: hsla(204.8, 69.4%, 48.6%, 0.15) !important;
-  --tag-color: hsl(204.8, 69.4%, 48.6%) !important;
-  --tag-color-hover: hsl(204.8, 69.4%, 48.6%) !important;
-  --tertiary: hsl(
+    );
+  --nav-item-color-hover: #657b83;
+  --nav-item-color-selected: #657b83;
+  --nav-tag-color: #586e75;
+  --nav-tag-color-active: #93a1a1;
+  --nav-tag-color-hover: #93a1a1;
+  --pdf-background: #fdf6e3;
+  --pdf-page-background: #fdf6e3;
+  --pdf-sidebar-background: #fdf6e3;
+  --pill-border-color: #f3edd7;
+  --pill-border-color-hover: #eee8d5;
+  --pill-color: #93a1a1;
+  --pill-color-hover: #657b83;
+  --pill-color-remove: #586e75;
+  --pill-color-remove-hover: hsl(204.8, 69.4%, 48.6%);
+  --prompt-background: #fdf6e3;
+  --prompt-border-color: #b7b6b2;
+  --proxy-00: #fdf6e3;
+  --proxy-10: #fffaeb;
+  --proxy-20: #eee8d5;
+  --radius-xl: 24px;
+  --raised-background: color-mix(in srgb, #fdf6e3 65%, transparent) linear-gradient(#fdf6e3, color-mix(in srgb, #fdf6e3 65%, transparent));
+  --ribbon-background: #eee8d5;
+  --ribbon-background-collapsed: #fdf6e3;
+  --sbs: 24px 24px 84px -4px rgba(0, 0, 0, 0.05), 0px 16px 64px 6px rgba(0, 0, 0, 0.007);
+  --scrollbar-active-thumb-bg: hsl(204.8, 69.4%, 48.6%);
+  --scrollbar-bg: rgb(from #433c34 r g b / 0.1);
+  --scrollbar-thumb-bg: rgba(#433c34, 0.1);
+  --search-clear-button-color: #93a1a1;
+  --search-icon-color: #93a1a1;
+  --search-result-background: #fdf6e3;
+  --secondary: var(--text-accent, hsl(204.8, 69.4%, 48.6%));
+  --setting-group-heading-color: #657b83;
+  --setting-items-background: #fffaeb;
+  --setting-items-border-color: #f3edd7;
+  --shadow-l: 0px 8px 24px rgba(149, 157, 165, 0.2);
+  --shadow-lm-only: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-s: 0px 3px 5px rgba(0, 0, 0, 0.04);
+  --shiki-active-tab-border-color: #93a1a1;
+  --shiki-code-background: #fffaeb;
+  --shiki-code-comment: #586e75;
+  --shiki-code-function: #859900;
+  --shiki-code-important: #cb4b16;
+  --shiki-code-keyword: #d33682;
+  --shiki-code-normal: #93a1a1;
+  --shiki-code-property: #2aa198;
+  --shiki-code-punctuation: #93a1a1;
+  --shiki-code-string: #b58900;
+  --shiki-code-value: #6c71c4;
+  --shiki-gutter-border-color: #f3edd7;
+  --shiki-gutter-text-color: #586e75;
+  --shiki-gutter-text-color-highlight: #93a1a1;
+  --shiki-highlight-green: rgba(133, 153, 0, 0.5);
+  --shiki-highlight-green-background: rgba(133, 153, 0, 0.1);
+  --shiki-highlight-neutral: #93a1a1;
+  --shiki-highlight-neutral-background: rgba(#433c34, .05);
+  --shiki-highlight-red: rgba(220, 50, 47, 0.5);
+  --shiki-highlight-red-background: rgba(220, 50, 47, 0.1);
+  --shiki-terminal-dots-color: #586e75;
+  --slider-thumb-border-color: #eee8d5;
+  --slider-track-background: #f3edd7;
+  --status-bar-background: #eee8d5;
+  --status-bar-border-color: #f3edd7;
+  --status-bar-text-color: #93a1a1;
+  --suggestion-background: #fdf6e3;
+  --swatch-shadow: inset 0 0 0 1px rgba(#433c34, 0.15);
+  --sync-avatar-color-1: #dc322f;
+  --sync-avatar-color-2: #cb4b16;
+  --sync-avatar-color-3: #b58900;
+  --sync-avatar-color-4: #859900;
+  --sync-avatar-color-5: #2aa198;
+  --sync-avatar-color-6: #268bd2;
+  --sync-avatar-color-7: #6c71c4;
+  --sync-avatar-color-8: #d33682;
+  --tab-background-active: #fdf6e3;
+  --tab-container-background: #eee8d5;
+  --tab-divider-color: #eee8d5;
+  --tab-outline-color: #f3edd7;
+  --tab-switcher-background: #eee8d5;
+  --tab-switcher-menubar-background: linear-gradient(to top, #eee8d5, transparent);
+  --tab-switcher-preview-radius: 24px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(#433c34, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(204.8, 69.4%, 48.6%);
+  --tab-text-color: #586e75;
+  --tab-text-color-active: #93a1a1;
+  --tab-text-color-focused: #93a1a1;
+  --tab-text-color-focused-active: #93a1a1;
+  --tab-text-color-focused-active-current: #657b83;
+  --tab-text-color-focused-highlighted: hsl(204.8, 69.4%, 48.6%);
+  --table-add-button-border-color: #f3edd7;
+  --table-border-color: #f3edd7;
+  --table-drag-handle-background-active: hsl(204.8, 69.4%, 48.6%);
+  --table-drag-handle-color: #586e75;
+  --table-header-border-color: #f3edd7;
+  --table-header-color: #657b83;
+  --table-selection: hsla(204.8, 69.4%, 48.6%, 0.1);
+  --table-selection-border-color: hsl(204.8, 69.4%, 48.6%);
+  --tag-background: hsla(204.8, 69.4%, 48.6%, 0.1);
+  --tag-background-hover: hsla(204.8, 69.4%, 48.6%, 0.2);
+  --tag-border-color: hsla(204.8, 69.4%, 48.6%, 0.15);
+  --tag-border-color-hover: hsla(204.8, 69.4%, 48.6%, 0.15);
+  --tag-color: hsl(204.8, 69.4%, 48.6%);
+  --tag-color-hover: hsl(204.8, 69.4%, 48.6%);
+  --tertiary: var(--text-accent-hover, hsl(
         175.5 58.6% 44.8%
-    ) !important;
-  --text-accent: hsl(204.8, 69.4%, 48.6%) !important;
+    ));
+  --text-accent: hsl(204.8, 69.4%, 48.6%);
   --text-accent-hover: hsl(
         175.5 58.6% 44.8%
-    ) !important;
-  --text-error: #dc322f !important;
-  --text-faint: #586e75 !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
-  --text-muted: #93a1a1 !important;
-  --text-normal: #657b83 !important;
-  --text-on-button: #657b83 !important;
-  --text-selection: #f3edd7 !important;
-  --text-success: #859900 !important;
-  --text-warning: #cb4b16 !important;
-  --textHighlight: rgba(#433c34, 0.067) !important;
-  --titleFont: "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: transparent !important;
-  --titlebar-background-focused: transparent !important;
-  --titlebar-border-color: #f3edd7 !important;
-  --titlebar-text-color: #93a1a1 !important;
-  --titlebar-text-color-focused: #657b83 !important;
-  --toggle-border-color: #b7b6b2 !important;
-  --toggle-thumb-color: #fdf6e3 !important;
-  --ulu-font-general: "Instrument", sans-serif !important;
-  --ulu-font-title: "Getai" !important;
-  --ulu-kanban-border-color: transparent !important;
-  --ulu-kanban-border-width: 0px !important;
-  --ulu-radius: 8px !important;
-  --vault-profile-color: #657b83 !important;
-  --vault-profile-color-hover: #657b83 !important;
-  --view-bottom-fade-mask: none !important;
-  --workspace-background-translucent: rgba(#fffcf4, 0.6) !important;
-  --quartz-icon-color: currentColor !important;
+    );
+  --text-error: #dc322f;
+  --text-faint: #586e75;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-muted: #93a1a1;
+  --text-normal: #657b83;
+  --text-on-button: #657b83;
+  --text-selection: #f3edd7;
+  --text-success: #859900;
+  --text-warning: #cb4b16;
+  --textHighlight: var(--background-modifier-hover, rgba(#433c34, 0.067));
+  --titleFont: var(--font-text, "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --titlebar-background: transparent;
+  --titlebar-background-focused: transparent;
+  --titlebar-border-color: #f3edd7;
+  --titlebar-text-color: #93a1a1;
+  --titlebar-text-color-focused: #657b83;
+  --toggle-border-color: #b7b6b2;
+  --toggle-thumb-color: #fdf6e3;
+  --ulu-font-general: "Instrument", sans-serif;
+  --ulu-font-title: "Getai";
+  --ulu-kanban-border-color: transparent;
+  --ulu-kanban-border-width: 0px;
+  --ulu-radius: 8px;
+  --vault-profile-color: #657b83;
+  --vault-profile-color-hover: #657b83;
+  --view-bottom-fade-mask: none;
+  --workspace-background-translucent: rgba(#fffcf4, 0.6);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   color: rgb(101, 123, 131);
 }
 
 html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-primary, rgba(0, 0, 0, 0));
   color: rgb(101, 123, 131);
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   color: rgb(101, 123, 131);
 }
 
@@ -3854,42 +3858,42 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(101, 123, 131);
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 700;
+  font-weight: calc(var(--font-weight) + var(--bold-modifier), 700);
   outline: rgb(101, 123, 131) none 0px;
   text-decoration-color: rgb(101, 123, 131);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
-  color: rgb(88, 110, 117);
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--color-base-100, rgb(88, 110, 117));
+  font-family: var(--font-text, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   outline: rgb(88, 110, 117) none 0px;
   text-decoration-color: rgb(88, 110, 117);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
-  color: rgb(88, 110, 117);
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--color-base-100, rgb(88, 110, 117));
+  font-family: var(--font-text, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   outline: rgb(88, 110, 117) none 0px;
   text-decoration-color: rgb(88, 110, 117);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 700;
+  font-weight: calc(var(--font-weight) + var(--bold-modifier), 700);
   outline: rgb(101, 123, 131) none 0px;
   text-decoration-color: rgb(101, 123, 131);
 }
 
 html[saved-theme="light"] body .text-highlight {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(101, 123, 131) none 0px;
   text-decoration-color: rgb(101, 123, 131);
@@ -3903,7 +3907,7 @@ html[saved-theme="light"] body del {
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
 }
 
 html[saved-theme="light"] body h2 {
@@ -3924,17 +3928,17 @@ html[saved-theme="light"] body h2 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(38, 139, 210);
+  color: var(--ulu-h2-text-color, var(--h2-color, var(--color-accent)));
   content: "";
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: -0.36px;
-  line-height: 28.8px;
+  font-family: var(--h2-font, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h2-size, 24px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.36px);
+  line-height: var(--h2-line-height, 28.8px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -3942,47 +3946,47 @@ html[saved-theme="light"] body h2 {
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
-  background-color: color(srgb 0.262745 0.235294 0.203922 / 0.05);
+  background-color: rgb(from var(--mono-rgb-100) r g b/0.05, color(srgb 0.262745 0.235294 0.203922 / 0.05));
   border-color: color(srgb 0.262745 0.235294 0.203922 / 0.15);
   border-radius: 50%;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(38, 139, 210);
+  background-color: var(--color-accent, rgb(38, 139, 210));
   border-color: rgba(0, 0, 0, 0);
 }
 
 html[saved-theme="light"] body p {
-  color: rgb(147, 161, 161);
+  color: var(--text-muted, rgb(147, 161, 161));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(147, 161, 161) none 0px;
   text-decoration-color: rgb(147, 161, 161);
 }`,
     links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
-  color: rgb(38, 139, 210);
+  color: var(--link-external-color, rgb(38, 139, 210));
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(38, 139, 210) none 0px;
   text-decoration: 13%;
   text-decoration-color: rgb(38, 139, 210);
-  text-decoration-thickness: 13%;
+  text-decoration-thickness: var(--link-decoration-thickness, 13%);
 }
 
 html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   background-color: color(srgb 0.148716 0.544463 0.823284 / 0.1);
-  color: rgb(38, 139, 210);
+  color: var(--color-accent, rgb(38, 139, 210));
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 500;
+  font-weight: var(--link-weight, 500);
   outline: rgb(38, 139, 210) none 0px;
   text-decoration-color: rgb(38, 139, 210);
   transition: 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 html[saved-theme="light"] body a.internal-link.broken {
-  color: rgb(88, 110, 117);
+  color: var(--text-faint, rgb(88, 110, 117));
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 500;
+  font-weight: var(--link-weight, 500);
   outline: rgb(88, 110, 117) none 0px;
-  text-decoration-color: rgb(88, 110, 117);
+  text-decoration-color: var(--link-unresolved-decoration-color, rgb(88, 110, 117));
   transition: 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }`,
     lists: `html[saved-theme="light"] body dd {
@@ -4020,11 +4024,11 @@ html[saved-theme="light"] body ul.overflow {
   border-top-width: 1px;
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
-  color: rgb(88, 110, 117);
+  color: var(--text-faint, rgb(88, 110, 117));
 }
 
 html[saved-theme="light"] body blockquote {
-  background-color: color(srgb 0.992157 0.964706 0.890196 / 0.3);
+  background-color: rgb(from var(--color-base-00) r g b/0.3, color(srgb 0.992157 0.964706 0.890196 / 0.3));
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-bottom: 16px;
   padding-top: 16px;
@@ -4054,11 +4058,11 @@ html[saved-theme="light"] body table {
   border-top-style: solid;
   border-top-width: 1px;
   color: rgb(101, 123, 131);
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: var(--font-text, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   margin-bottom: 24px;
   margin-left: 16px;
   margin-right: 16px;
-  margin-top: 24px;
+  margin-top: var(--heading-spacing, 24px);
   width: 604px;
 }
 
@@ -4066,38 +4070,38 @@ html[saved-theme="light"] body td {
   border-bottom-color: rgb(101, 123, 131);
   border-bottom-width: 0px;
   border-left-color: rgb(101, 123, 131);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: rgb(101, 123, 131);
   border-right-width: 0px;
   border-top-color: rgb(101, 123, 131);
   border-top-width: 0px;
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   font-weight: 500;
   padding-bottom: 2px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 2px;
   text-align: left;
-  vertical-align: middle;
+  vertical-align: var(--table-cell-vertical-alignment, middle);
 }
 
 html[saved-theme="light"] body th {
   border-bottom-color: rgb(147, 161, 161);
   border-bottom-width: 0px;
   border-left-color: rgb(147, 161, 161);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: rgb(147, 161, 161);
   border-right-width: 0px;
   border-top-color: rgb(147, 161, 161);
-  border-top-width: 0px;
-  color: rgb(147, 161, 161);
-  font-weight: 700;
+  border-top-width: var(--table-header-border-width, 0px);
+  color: var(--text-muted, rgb(147, 161, 161));
+  font-weight: var(--table-header-weight, 700);
   padding-bottom: 12px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 12px;
   text-align: left;
-  vertical-align: middle;
+  vertical-align: var(--table-cell-vertical-alignment, middle);
 }
 
 html[saved-theme="light"] body thead {
@@ -4114,7 +4118,7 @@ html[saved-theme="light"] body tr {
   border-top-color: rgba(0, 0, 0, 0);
 }`,
     code: `html[saved-theme="light"] body code {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--code-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(147, 161, 161);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4123,8 +4127,8 @@ html[saved-theme="light"] body tr {
   border-top-color: rgb(147, 161, 161);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(147, 161, 161);
-  font-family: Monaspace, monospace;
+  color: var(--ec-codeFg, rgb(147, 161, 161));
+  font-family: var(--ec-codeFontFml, Monaspace, monospace);
   padding-bottom: 12px;
   padding-left: 0px;
   padding-right: 0px;
@@ -4132,7 +4136,7 @@ html[saved-theme="light"] body tr {
 }
 
 html[saved-theme="light"] body pre:has(> code) {
-  background-color: rgb(255, 250, 235);
+  background-color: var(--code-background, rgb(255, 250, 235));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
@@ -4175,7 +4179,7 @@ html[saved-theme="light"] body video {
   border-top-color: rgb(101, 123, 131);
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
-  background-color: color(srgb 0.972549 0.952941 0.901961 / 0.6);
+  background-color: rgb(from var(--color-base-25) r g b/0.6, color(srgb 0.972549 0.952941 0.901961 / 0.6));
   border-bottom-color: rgb(243, 237, 215);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -4200,7 +4204,7 @@ html[saved-theme="light"] body .footnotes {
 }
 
 html[saved-theme="light"] body .transclude {
-  background-color: color(srgb 0.972549 0.952941 0.901961 / 0.6);
+  background-color: rgb(from var(--color-base-25) r g b/0.6, color(srgb 0.972549 0.952941 0.901961 / 0.6));
   border-bottom-color: rgb(243, 237, 215);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -4245,7 +4249,7 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   transition: 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
-  width: 18px;
+  width: var(--checkbox-size, 18px);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="#"] {
@@ -5473,7 +5477,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="chec
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5481,11 +5485,11 @@ html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="chec
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="light"] body .callout > .callout-content {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5511,12 +5515,13 @@ html[saved-theme="light"] body .callout-title {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   content: "";
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: var(--callout-title-size, 16px);
   font-weight: 600;
   letter-spacing: 0.16px;
-  line-height: 20.8px;
+  line-height: var(--line-height-tight, 20.8px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -5530,7 +5535,7 @@ html[saved-theme="light"] body .callout-title {
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
   --callout-color: 42, 161, 152;
   background: rgba(42, 161, 152, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(42, 161, 152, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(101, 123, 131);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -5550,7 +5555,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5558,11 +5563,11 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-content {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5572,7 +5577,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 html[saved-theme="light"] body .callout[data-callout="bug"] {
   --callout-color: 220, 50, 47;
   background: rgba(220, 50, 47, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(220, 50, 47, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(101, 123, 131);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -5592,7 +5597,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5600,11 +5605,11 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5614,7 +5619,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 html[saved-theme="light"] body .callout[data-callout="danger"] {
   --callout-color: 220, 50, 47;
   background: rgba(220, 50, 47, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(220, 50, 47, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(101, 123, 131);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -5634,7 +5639,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5642,11 +5647,11 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-content {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5656,7 +5661,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 html[saved-theme="light"] body .callout[data-callout="example"] {
   --callout-color: 108, 113, 196;
   background: rgba(108, 113, 196, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(108, 113, 196, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(101, 123, 131);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -5676,7 +5681,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5684,11 +5689,11 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] > .callout-content {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5698,7 +5703,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 html[saved-theme="light"] body .callout[data-callout="failure"] {
   --callout-color: 220, 50, 47;
   background: rgba(220, 50, 47, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(220, 50, 47, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(101, 123, 131);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -5718,7 +5723,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5726,11 +5731,11 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-content {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5740,7 +5745,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 html[saved-theme="light"] body .callout[data-callout="info"] {
   --callout-color: 38, 139, 210;
   background: rgba(38, 139, 210, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(38, 139, 210, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(101, 123, 131);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -5760,7 +5765,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5768,11 +5773,11 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5782,7 +5787,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 html[saved-theme="light"] body .callout[data-callout="note"] {
   --callout-color: 38, 139, 210;
   background: rgba(38, 139, 210, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(38, 139, 210, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(101, 123, 131);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -5802,7 +5807,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5810,11 +5815,11 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5824,7 +5829,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 html[saved-theme="light"] body .callout[data-callout="question"] {
   --callout-color: 203, 75, 22;
   background: rgba(203, 75, 22, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(203, 75, 22, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(101, 123, 131);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -5844,7 +5849,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5852,11 +5857,11 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] > .callout-content {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5866,7 +5871,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 html[saved-theme="light"] body .callout[data-callout="quote"] {
   --callout-color: 158, 158, 158;
   background: rgba(158, 158, 158, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(158, 158, 158, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(101, 123, 131);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -5886,7 +5891,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5894,11 +5899,11 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5908,7 +5913,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 html[saved-theme="light"] body .callout[data-callout="success"] {
   --callout-color: 133, 153, 0;
   background: rgba(133, 153, 0, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(133, 153, 0, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(101, 123, 131);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -5928,7 +5933,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5936,11 +5941,11 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] > .callout-content {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5950,7 +5955,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 html[saved-theme="light"] body .callout[data-callout="tip"] {
   --callout-color: 42, 161, 152;
   background: rgba(42, 161, 152, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(42, 161, 152, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(101, 123, 131);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -5970,7 +5975,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5978,11 +5983,11 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -5992,7 +5997,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 html[saved-theme="light"] body .callout[data-callout="todo"] {
   --callout-color: 38, 139, 210;
   background: rgba(38, 139, 210, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(38, 139, 210, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(101, 123, 131);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -6012,7 +6017,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -6020,11 +6025,11 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -6034,7 +6039,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
   --callout-color: 203, 75, 22;
   background: rgba(203, 75, 22, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(203, 75, 22, 0.05);
+  background-color: rgba(var(--callout-color), 0.05);
   border-bottom-color: rgb(101, 123, 131);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -6054,7 +6059,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   border-left-color: rgb(38, 139, 210);
   border-right-color: rgb(38, 139, 210);
   border-top-color: rgb(38, 139, 210);
-  color: rgb(38, 139, 210);
+  color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -6062,11 +6067,11 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(38, 139, 210);
+  color: var(--callout-title-color, rgb(38, 139, 210));
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] > .callout-content {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
@@ -6129,7 +6134,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(from var(--color-base-0) r g b/0.3, rgba(0, 0, 0, 0));
   border-bottom-color: color(srgb 0.262745 0.235294 0.203922 / 0.1);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -6138,17 +6143,17 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-color: color(srgb 0.262745 0.235294 0.203922 / 0.1);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
-  background-color: rgb(253, 246, 227);
+  background-color: var(--prompt-background, rgb(253, 246, 227));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px 0px;
+  box-shadow: var(--shadow-l, rgba(149, 157, 165, 0.2) 0px 8px 24px 0px);
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > * {
@@ -6174,7 +6179,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: rgb(255, 250, 235);
+  background-color: var(--interactive-hover, rgb(255, 250, 235));
   color: rgb(101, 123, 131);
 }
 
@@ -6186,7 +6191,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
-  background-color: rgb(248, 243, 230);
+  background-color: rgb(from var(--color-base-0) r g b/0.3, rgb(248, 243, 230));
   border-bottom-color: rgb(243, 237, 215);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -6201,11 +6206,11 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
   border-top-right-radius: 12px;
   border-top-style: solid;
   border-top-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px 0px;
+  box-shadow: inset 0 2px 4px rgb(from var(--mono-rgb-0) r g b/0.1, rgba(0, 0, 0, 0.04) 0px 3px 5px 0px);
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
-  background-color: rgb(255, 250, 235);
+  background-color: var(--interactive-hover, rgb(255, 250, 235));
   border-bottom-color: rgb(101, 123, 131);
   border-left-color: rgb(101, 123, 131);
   border-right-color: rgb(101, 123, 131);
@@ -6214,12 +6219,12 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: rgb(255, 250, 235);
+  background-color: var(--interactive-hover, rgb(255, 250, 235));
   color: rgb(101, 123, 131);
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-bottom-color: color(srgb 0.148716 0.544463 0.823284 / 0.4);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -6233,52 +6238,52 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-top-right-radius: 8px;
   border-top-width: 1px;
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 600;
+  font-weight: var(--pill-weight, 600);
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
-  color: rgb(88, 110, 117);
+  color: var(--color-base-100, rgb(88, 110, 117));
 }
 
 html[saved-theme="light"] body h1 {
-  color: rgb(88, 110, 117);
-  font-family: Getai;
+  color: var(--ulu-h1-text-color, var(--h1-color, var(--color-base-100)));
+  font-family: var(--h1-font, Getai);
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(88, 110, 117);
-  font-size: 48px;
-  font-weight: 500;
+  color: var(--inline-title-color, rgb(88, 110, 117));
+  font-size: var(--inline-title-size, 48px);
+  font-weight: var(--inline-title-weight, 500);
 }
 
 html[saved-theme="light"] body h2 {
-  color: rgb(38, 139, 210);
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--ulu-h2-text-color, var(--h2-color, var(--color-accent)));
+  font-family: var(--h2-font, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  color: rgb(88, 110, 117);
-  font-family: Getai;
+  color: var(--inline-title-color, rgb(88, 110, 117));
+  font-family: var(--inline-title-font, Getai);
 }
 
 html[saved-theme="light"] body h3 {
-  color: rgb(88, 110, 117);
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--ulu-h3-text-color, var(--h3-color, var(--color-base-100)));
+  font-family: var(--h3-font, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
-  color: rgb(88, 110, 117);
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--ulu-h4-text-color, var(--h4-color, var(--color-base-100)));
+  font-family: var(--h4-font, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
-  color: rgb(88, 110, 117);
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--ulu-h5-text-color, var(--h5-color, var(--color-base-100)));
+  font-family: var(--h5-font, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
-  color: rgb(88, 110, 117);
-  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--ulu-h6-text-color, var(--h6-color, var(--color-base-100)));
+  font-family: var(--h6-font, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body hr {
@@ -6307,12 +6312,12 @@ html[saved-theme="light"] body hr {
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(147, 161, 161);
+  color: var(--nav-item-color, rgb(147, 161, 161));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(147, 161, 161);
+  color: var(--nav-item-color, rgb(147, 161, 161));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
@@ -6335,10 +6340,10 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-right-radius: 24px;
   border-top-style: solid;
   border-top-width: 1px;
-  color: rgb(147, 161, 161);
+  color: var(--text-muted, rgb(147, 161, 161));
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -6348,12 +6353,12 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-right-width: 1px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-right-radius: 8px;
-  color: rgb(147, 161, 161);
+  color: var(--status-bar-text-color, rgb(147, 161, 161));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body footer ul li a {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(101, 123, 131);
@@ -6369,7 +6374,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(147, 161, 161);
+  color: var(--nav-item-color, rgb(147, 161, 161));
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -6389,7 +6394,7 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(147, 161, 161);
+  color: var(--nav-item-color, rgb(147, 161, 161));
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -6415,7 +6420,7 @@ html[saved-theme="light"] body ul.section-ul {
   border-top-right-radius: 24px;
   border-top-style: solid;
   border-top-width: 1px;
-  color: rgb(147, 161, 161);
+  color: var(--text-muted, rgb(147, 161, 161));
 }
 
 html[saved-theme="light"] body .darkmode svg {
@@ -6443,7 +6448,7 @@ html[saved-theme="light"] body .darkmode svg {
 }
 
 html[saved-theme="light"] body .breadcrumb-element p {
-  color: rgb(88, 110, 117);
+  color: var(--text-faint, rgb(88, 110, 117));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     canvas: `html[saved-theme="light"] body .canvas-node {
@@ -6455,7 +6460,7 @@ html[saved-theme="light"] body .canvas-node-content {
 }
 
 html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
 }
 
 html[saved-theme="light"] body .canvas-node-group {
@@ -6463,7 +6468,7 @@ html[saved-theme="light"] body .canvas-node-group {
 }
 
 html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(var(--canvas-card-base), 0.05);
   border-color: rgb(101, 123, 131);
 }`,
     bases: `html[saved-theme="light"] body .bases-table {
@@ -6472,8 +6477,8 @@ html[saved-theme="light"] body .canvas-sidebar {
 
 html[saved-theme="light"] body .bases-table thead th {
   border-color: rgb(147, 161, 161);
-  color: rgb(147, 161, 161);
-  font-weight: 700;
+  color: var(--text-muted, rgb(147, 161, 161));
+  font-weight: var(--table-header-weight, 700);
 }`,
     properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgba(0, 0, 0, 0);
@@ -6488,7 +6493,7 @@ html[saved-theme="light"] body .bases-table thead th {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   border-top-width: 1px;
-  color: rgb(147, 161, 161);
+  color: var(--text-muted, rgb(147, 161, 161));
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   margin-bottom: 16px;
   margin-left: 16px;
@@ -6523,9 +6528,9 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-radius: 8px;
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
 }
 
 html[saved-theme="light"] body .note-properties-value {
@@ -6533,8 +6538,8 @@ html[saved-theme="light"] body .note-properties-value {
 }
 
 html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(253, 246, 227);
-  color: rgb(101, 123, 131);
+  background-color: var(--background-primary, rgb(253, 246, 227));
+  color: var(--text-normal, rgb(101, 123, 131));
 }
 
 html[saved-theme="light"] body ol.overflow {
@@ -6556,12 +6561,12 @@ html[saved-theme="light"] body ol.overflow {
   border-top-width: 1px;
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(101, 123, 131);
 }
 
 html[saved-theme="light"] body .stacked-page-header {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
 html[saved-theme="light"] body .stacked-page.active {
@@ -6576,11 +6581,11 @@ html[saved-theme="light"] body .stacked-page.active {
 }
 
 html[saved-theme="light"] body .navigation-progress {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
-  color: rgb(101, 123, 131);
+  color: var(--text-normal, rgb(101, 123, 131));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -6596,6 +6601,7 @@ html[saved-theme="light"] body details {
 }
 
 html[saved-theme="light"] body input[type=text] {
+  background-color: rgb(from var(--color-base-0) r g b/0.3, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(147, 161, 161);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -6604,20 +6610,20 @@ html[saved-theme="light"] body input[type=text] {
   border-top-color: rgb(147, 161, 161);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  color: rgb(147, 161, 161);
+  color: var(--text-normal, rgb(147, 161, 161));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-left: 28px;
 }
 
 html[saved-theme="light"] body kbd {
-  background-color: color(srgb 0.148716 0.544463 0.823284 / 0.7);
+  background-color: var(--code-background, color(srgb 0.148716 0.544463 0.823284 / 0.7));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
-  font-family: Monaspace, monospace;
-  font-size: 12px;
+  color: var(--text-on-accent, rgb(255, 255, 255));
+  font-family: var(--font-monospace, Monaspace, monospace);
+  font-size: var(--code-size, 12px);
   padding-bottom: 2px;
   padding-left: 6px;
   padding-right: 6px;
@@ -6644,7 +6650,7 @@ html[saved-theme="light"] body sup {
 }
 
 html[saved-theme="light"] body ul.tags > li {
-  background-color: color(srgb 0.148716 0.544463 0.823284 / 0.05);
+  background-color: rgb(from var(--color-accent) r g b/0.05, color(srgb 0.148716 0.544463 0.823284 / 0.05));
   border-bottom-color: color(srgb 0.148716 0.544463 0.823284 / 0.3);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -6657,7 +6663,7 @@ html[saved-theme="light"] body ul.tags > li {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: rgb(38, 139, 210);
+  color: var(--color-accent, rgb(38, 139, 210));
 }`,
   },
 };

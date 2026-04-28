@@ -40,364 +40,365 @@ export const theme: ThemeData = {
         unicodeRange: null,
       },
     ],
+    styleSettingsId: "lumines-theme-obsidian",
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-h: 259.1 !important;
-  --accent-l: 69.9% !important;
-  --accent-s: 89.9% !important;
-  --background-modifier-active-hover: transparent !important;
-  --background-modifier-border: hsl(0, 0%, 20%) !important;
-  --background-modifier-border-focus: transparent !important;
-  --background-modifier-border-hover: transparent !important;
-  --background-modifier-form-field: hsl(0, 0%, 20%) !important;
-  --background-modifier-form-field-hover: hsl(0, 0%, 20%) !important;
-  --background-primary: hsl(0, 0%, 11%) !important;
-  --background-primary-alt: hsl(0, 0%, 17%) !important;
-  --background-secondary: hsl(0, 0%, 14%) !important;
-  --background-secondary-alt: hsl(0, 0%, 30%) !important;
-  --bases-cards-background: hsl(0, 0%, 14%) !important;
-  --bases-cards-cover-background: hsl(0, 0%, 17%) !important;
-  --bases-cards-shadow: 0 0 0 1px hsl(0, 0%, 17%) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px hsl(259.1, 89.9%, 69.9%) !important;
-  --bases-cards-text-size: 0.875em !important;
-  --bases-embed-border-color: hsl(0, 0%, 17%) !important;
-  --bases-embed-border-radius: 8px !important;
-  --bases-group-heading-property-color: hsl(0, 0%, 90%) !important;
-  --bases-table-border-color: hsl(0, 0%, 17%) !important;
-  --bases-table-cell-background-active: hsl(0, 0%, 14%) !important;
-  --bases-table-cell-background-disabled: transparent !important;
-  --bases-table-cell-background-selected: hsla(259.1, 89.9%, 69.9%, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(259.1, 89.9%, 69.9%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(259.1, 89.9%, 69.9%) !important;
-  --bases-table-container-border-radius: 8px !important;
-  --bases-table-group-background: hsl(0, 0%, 17%) !important;
-  --bases-table-header-background: hsl(0, 0%, 11%) !important;
-  --bases-table-header-background-hover: none !important;
-  --bases-table-header-color: hsl(0, 0%, 90%) !important;
-  --bases-table-header-icon-display: none !important;
-  --bases-table-row-background-hover: hsl(0, 0%, 14%) !important;
-  --bases-table-summary-background: hsl(0, 0%, 11%) !important;
-  --bases-table-text-size: 0.875em !important;
-  --blockquote-border-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --blue-h: 207 !important;
-  --blue-l: 57% !important;
-  --blue-s: 86% !important;
-  --blur-background: color-mix(in srgb, hsl(0, 0%, 20%) 65%, transparent) linear-gradient(hsl(0, 0%, 20%), color-mix(in srgb, hsl(0, 0%, 20%) 65%, transparent)) !important;
-  --bold-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --button-radius: 8px !important;
+  --accent-h: 259.1;
+  --accent-l: 69.9%;
+  --accent-s: 89.9%;
+  --background-modifier-active-hover: transparent;
+  --background-modifier-border: hsl(0, 0%, 20%);
+  --background-modifier-border-focus: transparent;
+  --background-modifier-border-hover: transparent;
+  --background-modifier-form-field: hsl(0, 0%, 20%);
+  --background-modifier-form-field-hover: hsl(0, 0%, 20%);
+  --background-primary: hsl(0, 0%, 11%);
+  --background-primary-alt: hsl(0, 0%, 17%);
+  --background-secondary: hsl(0, 0%, 14%);
+  --background-secondary-alt: hsl(0, 0%, 30%);
+  --bases-cards-background: hsl(0, 0%, 14%);
+  --bases-cards-cover-background: hsl(0, 0%, 17%);
+  --bases-cards-shadow: 0 0 0 1px hsl(0, 0%, 17%);
+  --bases-cards-shadow-hover: 0 0 0 1px hsl(259.1, 89.9%, 69.9%);
+  --bases-cards-text-size: 0.875em;
+  --bases-embed-border-color: hsl(0, 0%, 17%);
+  --bases-embed-border-radius: 8px;
+  --bases-group-heading-property-color: hsl(0, 0%, 90%);
+  --bases-table-border-color: hsl(0, 0%, 17%);
+  --bases-table-cell-background-active: hsl(0, 0%, 14%);
+  --bases-table-cell-background-disabled: transparent;
+  --bases-table-cell-background-selected: hsla(259.1, 89.9%, 69.9%, 0.1);
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(259.1, 89.9%, 69.9%);
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(259.1, 89.9%, 69.9%);
+  --bases-table-container-border-radius: 8px;
+  --bases-table-group-background: hsl(0, 0%, 17%);
+  --bases-table-header-background: hsl(0, 0%, 11%);
+  --bases-table-header-background-hover: none;
+  --bases-table-header-color: hsl(0, 0%, 90%);
+  --bases-table-header-icon-display: none;
+  --bases-table-row-background-hover: hsl(0, 0%, 14%);
+  --bases-table-summary-background: hsl(0, 0%, 11%);
+  --bases-table-text-size: 0.875em;
+  --blockquote-border-color: hsl(259.1, 89.9%, 69.9%);
+  --blue-h: 207;
+  --blue-l: 57%;
+  --blue-s: 86%;
+  --blur-background: color-mix(in srgb, hsl(0, 0%, 20%) 65%, transparent) linear-gradient(hsl(0, 0%, 20%), color-mix(in srgb, hsl(0, 0%, 20%) 65%, transparent));
+  --bold-color: hsl(259.1, 89.9%, 69.9%);
+  --button-radius: 8px;
   --callout-background-color-opacity: 0.1;
   --callout-border-width: 1px;
   --callout-padding: 24px;
   --callout-radius: 8px;
-  --canvas-background: hsl(0, 0%, 11%) !important;
-  --canvas-card-label-color: hsl(0, 0%, 50%) !important;
-  --canvas-dot-pattern: hsl(0, 0%, 30%) !important;
-  --caret-color: hsl(0, 0%, 96%) !important;
-  --checkbox-border-color: hsl(0, 0%, 50%) !important;
-  --checkbox-border-color-hover: hsl(259.1, 89.9%, 69.9%) !important;
-  --checkbox-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --checkbox-color-hover: hsl(256.1, 91.698%, 80.385%) !important;
-  --checkbox-marker-color: hsl(0, 0%, 11%) !important;
-  --checkbox-radius: 35% !important;
-  --checklist-done-color: hsl(0, 0%, 50%) !important;
-  --checklist-done-decoration: none !important;
-  --code-background: hsl(0, 0%, 14%) !important;
-  --code-border-color: hsl(0, 0%, 17%) !important;
-  --code-border-width: 1px !important;
-  --code-comment: hsl(0, 0%, 50%) !important;
-  --code-function: rgb(152, 195, 121) !important;
-  --code-important: rgb(198, 120, 221) !important;
-  --code-keyword: rgb(86, 182, 194) !important;
-  --code-normal: hsl(0, 0%, 93%) !important;
-  --code-operator: hsl(0, 0%, 93%) !important;
-  --code-property: rgb(86, 182, 194) !important;
-  --code-punctuation: hsl(0, 0%, 90%) !important;
-  --code-radius: 8px !important;
-  --code-string: rgb(229, 192, 123) !important;
-  --code-tag: rgb(224, 108, 117) !important;
-  --code-value: rgb(198, 120, 221) !important;
-  --collapse-icon-color: hsl(0, 0%, 50%) !important;
-  --collapse-icon-color-collapsed: hsl(259.1, 89.9%, 69.9%) !important;
-  --color-accent: hsl(259.1, 89.9%, 69.9%) !important;
-  --color-accent-1: hsl(256.1, 91.698%, 80.385%) !important;
-  --color-accent-2: hsl(254.1, 94.395%, 90.171%) !important;
-  --color-accent-hsl: 259.1, 89.9%, 69.9% !important;
-  --color-base-00: hsl(0, 0%, 11%) !important;
-  --color-base-05: hsl(0, 0%, 14%) !important;
-  --color-base-10: hsl(0, 0%, 17%) !important;
-  --color-base-100: hsl(0, 0%, 99%) !important;
-  --color-base-20: hsl(0, 0%, 20%) !important;
-  --color-base-25: hsl(0, 0%, 25%) !important;
-  --color-base-30: hsl(0, 0%, 30%) !important;
-  --color-base-35: hsl(0, 0%, 35%) !important;
-  --color-base-40: hsl(0, 0%, 40%) !important;
-  --color-base-50: hsl(0, 0%, 50%) !important;
-  --color-base-60: hsl(0, 0%, 60%) !important;
-  --color-base-70: hsl(0, 0%, 90%) !important;
-  --color-base-80: hsl(0, 0%, 93%) !important;
-  --color-base-90: hsl(0, 0%, 96%) !important;
-  --components-background: hsl(0, 0%, 20%) !important;
-  --components-background-hover: hsl(0, 0%, 25%) !important;
-  --custom-icon-size: 1.2em !important;
-  --cyan-h: 187 !important;
-  --cyan-l: 55% !important;
-  --cyan-s: 69% !important;
-  --dark: hsl(0, 0%, 96%) !important;
-  --darkgray: hsl(0, 0%, 96%) !important;
-  --divider-color: hsl(0, 0%, 17%) !important;
-  --divider-color-hover: hsl(259.1, 89.9%, 69.9%) !important;
-  --divider-vertical-height: calc(100% - 40px) !important;
-  --dropdown-background: hsl(0, 0%, 20%) !important;
-  --dropdown-background-hover: hsl(0, 0%, 25%) !important;
-  --embed-block-shadow-hover: none !important;
-  --embed-border-start: 2px solid hsl(259.1, 89.9%, 69.9%) !important;
-  --file-header-background: hsl(0, 0%, 11%) !important;
-  --file-header-background-focused: hsl(0, 0%, 11%) !important;
-  --filename-margin-bottom: 0.8rem !important;
-  --flair-background: hsl(0, 0%, 20%) !important;
-  --flair-color: hsl(0, 0%, 96%) !important;
-  --font-weight-table-titles: 700 !important;
-  --footnote-divider-color: transparent !important;
-  --footnote-id-color: hsl(0, 0%, 90%) !important;
-  --footnote-id-color-no-occurrences: hsl(0, 0%, 50%) !important;
-  --footnote-input-background-active: transparent !important;
-  --graph-line: hsl(0, 0%, 30%) !important;
-  --graph-node: hsl(0, 0%, 90%) !important;
-  --graph-node-attachment: hsl(47, 100%, 62%) !important;
-  --graph-node-focused: transparent !important;
-  --graph-node-tag: hsl(259.1, 89.9%, 69.9%) !important;
-  --graph-node-unresolved: hsl(0, 0%, 50%) !important;
-  --graph-text: hsl(0, 0%, 96%) !important;
-  --gray: hsl(0, 0%, 90%) !important;
-  --gray-h: 210 !important;
-  --gray-l: 71% !important;
-  --gray-s: 11% !important;
-  --green-h: 130 !important;
-  --green-l: 64% !important;
-  --green-s: 61% !important;
-  --h1-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --h1-size: 1.5em !important;
-  --h2-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --h2-size: 1.4em !important;
-  --h3-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --h3-size: 1.3em !important;
-  --h4-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --h4-size: 1.2em !important;
-  --h5-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --h5-size: 1.1em !important;
-  --h6-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --h6-size: 1.0em !important;
-  --header-padding-top: 0.3em !important;
-  --heading-formatting: hsl(0, 0%, 50%) !important;
-  --highlight: transparent !important;
-  --hr-color: hsl(0, 0%, 17%) !important;
-  --icon-color: hsl(0, 0%, 90%) !important;
-  --icon-color-active: hsl(0, 0%, 93%) !important;
-  --icon-color-focused: hsl(0, 0%, 96%) !important;
-  --icon-color-hover: hsl(0, 0%, 90%) !important;
-  --indigo-h: 228 !important;
-  --indigo-l: 72% !important;
-  --indigo-s: 96% !important;
-  --inline-title-color: hsl(0, 0%, 96%) !important;
-  --inline-title-size: 1.5em !important;
-  --input-date-separator: hsl(0, 0%, 50%) !important;
-  --input-placeholder-color: hsl(0, 0%, 50%) !important;
-  --input-radius: 8px !important;
-  --interactive-accent: hsl(259.1, 89.9%, 69.9%) !important;
-  --interactive-accent-hover: hsl(256.1, 91.698%, 80.385%) !important;
-  --interactive-accent-hsl: 259.1, 89.9%, 69.9% !important;
-  --interactive-hover: hsl(0, 0%, 25%) !important;
-  --interactive-normal: hsl(0, 0%, 20%) !important;
-  --italic-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --light: hsl(0, 0%, 11%) !important;
-  --lightgray: hsl(0, 0%, 14%) !important;
-  --lime-h: 82 !important;
-  --lime-l: 69% !important;
-  --lime-s: 75% !important;
-  --link-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --link-color-hover: hsl(254.1, 94.395%, 90.171%) !important;
-  --link-decoration: none !important;
-  --link-decoration-hover: none !important;
-  --link-external-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --link-external-color-hover: hsl(254.1, 94.395%, 90.171%) !important;
-  --link-external-decoration: none !important;
-  --link-external-decoration-hover: none !important;
-  --link-unresolved-color: hsl(256.1, 91.698%, 80.385%) !important;
-  --link-unresolved-decoration-color: hsla(259.1, 89.9%, 69.9%, 0.3) !important;
-  --list-marker-color: hsl(0, 0%, 50%) !important;
-  --list-marker-color-collapsed: hsl(256.1, 91.698%, 80.385%) !important;
-  --list-marker-color-hover: hsl(0, 0%, 90%) !important;
-  --menu-background: hsl(0, 0%, 14%) !important;
-  --menu-border-color: transparent !important;
-  --metadata-border-color: transparent !important;
-  --metadata-divider-color: transparent !important;
-  --metadata-input-background-active: transparent !important;
-  --metadata-input-text-color: hsl(0, 0%, 96%) !important;
-  --metadata-label-background-active: transparent !important;
-  --metadata-label-text-color: hsl(0, 0%, 90%) !important;
-  --metadata-label-text-color-hover: hsl(0, 0%, 90%) !important;
-  --metadata-margin-bottom: 0.8rem !important;
-  --metadata-padding: 0 !important;
-  --metadata-property-background-active: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px transparent !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px transparent !important;
-  --metadata-property-radius: 8px !important;
-  --metadata-property-radius-focus: 8px !important;
-  --metadata-property-radius-hover: 8px !important;
-  --modal-background: hsl(0, 0%, 11%) !important;
-  --modal-border-color: hsl(0, 0%, 17%) !important;
-  --modal-radius: 8px !important;
-  --nav-collapse-icon-color: hsl(0, 0%, 50%) !important;
-  --nav-collapse-icon-color-collapsed: hsl(0, 0%, 50%) !important;
-  --nav-heading-color: hsl(0, 0%, 96%) !important;
-  --nav-heading-color-collapsed: hsl(0, 0%, 50%) !important;
-  --nav-heading-color-collapsed-hover: hsl(0, 0%, 90%) !important;
-  --nav-heading-color-hover: hsl(0, 0%, 96%) !important;
-  --nav-indentation-guide-color: rgba(255, 255, 255, 0.07) !important;
-  --nav-item-background-active: transparent !important;
-  --nav-item-background-hover: transparent !important;
-  --nav-item-background-selected: hsla(259.1, 89.9%, 69.9%, 0.15) !important;
-  --nav-item-color: hsl(0, 0%, 90%) !important;
-  --nav-item-color-active: hsl(0, 0%, 90%) !important;
-  --nav-item-color-highlighted: hsl(256.1, 91.698%, 80.385%) !important;
-  --nav-item-color-hover: hsl(0, 0%, 90%) !important;
-  --nav-item-color-selected: hsl(0, 0%, 96%) !important;
-  --nav-tag-color: hsl(0, 0%, 50%) !important;
-  --nav-tag-color-active: hsl(0, 0%, 90%) !important;
-  --nav-tag-color-hover: hsl(0, 0%, 90%) !important;
-  --orange-h: 31 !important;
-  --orange-l: 65% !important;
-  --orange-s: 100% !important;
-  --pdf-background: hsl(0, 0%, 11%) !important;
-  --pdf-page-background: hsl(0, 0%, 11%) !important;
-  --pdf-shadow: 0 0 0 1px hsl(0, 0%, 20%) !important;
-  --pdf-sidebar-background: hsl(0, 0%, 11%) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px hsl(0, 0%, 20%) !important;
-  --pill-border-color: hsl(0, 0%, 20%) !important;
-  --pill-border-color-hover: transparent !important;
-  --pill-color: hsl(0, 0%, 90%) !important;
-  --pill-color-hover: hsl(0, 0%, 96%) !important;
-  --pill-color-remove: hsl(0, 0%, 50%) !important;
-  --pill-color-remove-hover: hsl(256.1, 91.698%, 80.385%) !important;
-  --pink-h: 339 !important;
-  --pink-l: 74% !important;
-  --pink-s: 88% !important;
-  --popover-height: 300px !important;
-  --popover-width: 500px !important;
-  --primary-blue: 207, 86%, 57% !important;
-  --primary-cyan: 187, 69%, 55% !important;
-  --primary-gray: 210, 11%, 71% !important;
-  --primary-green: 130, 61%, 64% !important;
-  --primary-indigo: 228, 96%, 72% !important;
-  --primary-lime: 82, 75%, 69% !important;
-  --primary-orange: 31, 100%, 65% !important;
-  --primary-pink: 339, 88%, 74% !important;
-  --primary-red: 0, 94%, 65% !important;
-  --primary-sky: 206, 96%, 72% !important;
-  --primary-violet: 259, 90%, 70% !important;
-  --primary-white: 0, 0%, 100% !important;
-  --primary-yellow: 47, 100%, 62% !important;
-  --prompt-background: hsl(0, 0%, 11%) !important;
-  --prompt-border-color: hsl(0, 0%, 17%) !important;
-  --raised-background: color-mix(in srgb, hsl(0, 0%, 20%) 65%, transparent) linear-gradient(hsl(0, 0%, 20%), color-mix(in srgb, hsl(0, 0%, 20%) 65%, transparent)) !important;
-  --red-h: 0 !important;
-  --red-l: 65% !important;
-  --red-s: 94% !important;
-  --ribbon-background: hsl(0, 0%, 11%) !important;
-  --ribbon-background-collapsed: hsl(0, 0%, 11%) !important;
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.1) !important;
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.05) !important;
-  --search-clear-button-color: hsl(0, 0%, 90%) !important;
-  --search-icon-color: hsl(0, 0%, 90%) !important;
-  --search-result-background: hsl(0, 0%, 14%) !important;
-  --secondary: hsl(256.1, 91.698%, 80.385%) !important;
-  --setting-group-heading-color: hsl(0, 0%, 96%) !important;
-  --setting-items-background: hsl(0, 0%, 14%) !important;
-  --setting-items-border-color: hsl(0, 0%, 20%) !important;
-  --shiki-active-tab-border-color: hsl(0, 0%, 90%) !important;
-  --shiki-code-background: hsl(0, 0%, 14%) !important;
-  --shiki-code-block-border-radius: 8px !important;
-  --shiki-code-comment: hsl(0, 0%, 50%) !important;
-  --shiki-code-normal: hsl(0, 0%, 90%) !important;
-  --shiki-code-punctuation: hsl(0, 0%, 90%) !important;
-  --shiki-gutter-border-color: hsl(0, 0%, 20%) !important;
-  --shiki-gutter-text-color: hsl(0, 0%, 50%) !important;
-  --shiki-gutter-text-color-highlight: hsl(0, 0%, 90%) !important;
-  --shiki-highlight-neutral: hsl(0, 0%, 90%) !important;
-  --shiki-terminal-dots-color: hsl(0, 0%, 50%) !important;
-  --sky-h: 206 !important;
-  --sky-l: 72% !important;
-  --sky-s: 96% !important;
-  --slider-thumb-border-color: transparent !important;
-  --slider-track-background: hsl(0, 0%, 20%) !important;
-  --status-bar-background: hsl(0, 0%, 14%) !important;
-  --status-bar-border-color: hsl(0, 0%, 17%) !important;
-  --status-bar-border-width: 0 !important;
-  --status-bar-position: related !important;
-  --status-bar-radius: 0 !important;
-  --status-bar-text-color: hsl(0, 0%, 90%) !important;
-  --suggestion-background: hsl(0, 0%, 11%) !important;
-  --tab-background-active: hsl(0, 0%, 11%) !important;
-  --tab-container-background: hsl(0, 0%, 11%) !important;
-  --tab-curve: 8px !important;
-  --tab-divider-color: transparent !important;
-  --tab-outline-color: hsl(0, 0%, 17%) !important;
-  --tab-radius-active: 8px 8px 0 0 !important;
-  --tab-switcher-background: hsl(0, 0%, 14%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 14%), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(259.1, 89.9%, 69.9%) !important;
-  --tab-text-color: hsl(0, 0%, 50%) !important;
-  --tab-text-color-active: hsl(0, 0%, 90%) !important;
-  --tab-text-color-focused: hsl(0, 0%, 50%) !important;
-  --tab-text-color-focused-active: hsl(0, 0%, 50%) !important;
-  --tab-text-color-focused-active-current: hsl(0, 0%, 96%) !important;
-  --tab-text-color-focused-highlighted: hsl(256.1, 91.698%, 80.385%) !important;
-  --table-add-button-border-color: hsl(0, 0%, 20%) !important;
-  --table-border-color: hsl(0, 0%, 20%) !important;
-  --table-drag-handle-background-active: hsl(259.1, 89.9%, 69.9%) !important;
-  --table-drag-handle-color: hsl(0, 0%, 50%) !important;
-  --table-header-background: hsl(0, 0%, 14%) !important;
-  --table-header-border-color: hsl(0, 0%, 20%) !important;
-  --table-header-color: hsl(0, 0%, 96%) !important;
-  --table-selection: hsla(259.1, 89.9%, 69.9%, 0.1) !important;
-  --table-selection-border-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --tag-background: hsla(259.1, 89.9%, 69.9%, 0.1) !important;
-  --tag-background-hover: hsla(259.1, 89.9%, 69.9%, 0.2) !important;
-  --tag-border-color: hsla(259.1, 89.9%, 69.9%, 0.15) !important;
-  --tag-border-color-hover: hsla(259.1, 89.9%, 69.9%, 0.15) !important;
-  --tag-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --tag-color-hover: hsl(256.1, 91.698%, 80.385%) !important;
-  --tertiary: hsl(254.1, 94.395%, 90.171%) !important;
-  --text-accent: hsl(256.1, 91.698%, 80.385%) !important;
-  --text-accent-hover: hsl(254.1, 94.395%, 90.171%) !important;
-  --text-faint: hsl(0, 0%, 50%) !important;
-  --text-muted: hsl(0, 0%, 90%) !important;
-  --text-normal: hsl(0, 0%, 96%) !important;
-  --text-selection: hsla(259.1, 89.9%, 69.9%, 0.33) !important;
-  --textHighlight: transparent !important;
-  --titlebar-background: hsl(0, 0%, 14%) !important;
-  --titlebar-background-focused: hsl(0, 0%, 14%) !important;
-  --titlebar-border-color: hsl(0, 0%, 20%) !important;
-  --titlebar-text-color: hsl(0, 0%, 90%) !important;
-  --titlebar-text-color-focused: hsl(0, 0%, 96%) !important;
-  --vault-profile-color: hsl(0, 0%, 96%) !important;
-  --vault-profile-color-hover: hsl(0, 0%, 96%) !important;
-  --violet-h: 259 !important;
-  --violet-l: 70% !important;
-  --violet-s: 90% !important;
-  --white-h: 0 !important;
-  --white-l: 100% !important;
-  --white-s: 0% !important;
-  --yellow-h: 47 !important;
-  --yellow-l: 62% !important;
-  --yellow-s: 100% !important;
-  --quartz-icon-color: currentColor !important;
+  --canvas-background: hsl(0, 0%, 11%);
+  --canvas-card-label-color: hsl(0, 0%, 50%);
+  --canvas-dot-pattern: hsl(0, 0%, 30%);
+  --caret-color: hsl(0, 0%, 96%);
+  --checkbox-border-color: hsl(0, 0%, 50%);
+  --checkbox-border-color-hover: hsl(259.1, 89.9%, 69.9%);
+  --checkbox-color: hsl(259.1, 89.9%, 69.9%);
+  --checkbox-color-hover: hsl(256.1, 91.698%, 80.385%);
+  --checkbox-marker-color: hsl(0, 0%, 11%);
+  --checkbox-radius: 35%;
+  --checklist-done-color: hsl(0, 0%, 50%);
+  --checklist-done-decoration: none;
+  --code-background: hsl(0, 0%, 14%);
+  --code-border-color: hsl(0, 0%, 17%);
+  --code-border-width: 1px;
+  --code-comment: hsl(0, 0%, 50%);
+  --code-function: rgb(152, 195, 121);
+  --code-important: rgb(198, 120, 221);
+  --code-keyword: rgb(86, 182, 194);
+  --code-normal: hsl(0, 0%, 93%);
+  --code-operator: hsl(0, 0%, 93%);
+  --code-property: rgb(86, 182, 194);
+  --code-punctuation: hsl(0, 0%, 90%);
+  --code-radius: 8px;
+  --code-string: rgb(229, 192, 123);
+  --code-tag: rgb(224, 108, 117);
+  --code-value: rgb(198, 120, 221);
+  --collapse-icon-color: hsl(0, 0%, 50%);
+  --collapse-icon-color-collapsed: hsl(259.1, 89.9%, 69.9%);
+  --color-accent: hsl(259.1, 89.9%, 69.9%);
+  --color-accent-1: hsl(256.1, 91.698%, 80.385%);
+  --color-accent-2: hsl(254.1, 94.395%, 90.171%);
+  --color-accent-hsl: 259.1, 89.9%, 69.9%;
+  --color-base-00: hsl(0, 0%, 11%);
+  --color-base-05: hsl(0, 0%, 14%);
+  --color-base-10: hsl(0, 0%, 17%);
+  --color-base-100: hsl(0, 0%, 99%);
+  --color-base-20: hsl(0, 0%, 20%);
+  --color-base-25: hsl(0, 0%, 25%);
+  --color-base-30: hsl(0, 0%, 30%);
+  --color-base-35: hsl(0, 0%, 35%);
+  --color-base-40: hsl(0, 0%, 40%);
+  --color-base-50: hsl(0, 0%, 50%);
+  --color-base-60: hsl(0, 0%, 60%);
+  --color-base-70: hsl(0, 0%, 90%);
+  --color-base-80: hsl(0, 0%, 93%);
+  --color-base-90: hsl(0, 0%, 96%);
+  --components-background: hsl(0, 0%, 20%);
+  --components-background-hover: hsl(0, 0%, 25%);
+  --custom-icon-size: 1.2em;
+  --cyan-h: 187;
+  --cyan-l: 55%;
+  --cyan-s: 69%;
+  --dark: var(--text-normal, hsl(0, 0%, 96%));
+  --darkgray: var(--text-normal, hsl(0, 0%, 96%));
+  --divider-color: hsl(0, 0%, 17%);
+  --divider-color-hover: hsl(259.1, 89.9%, 69.9%);
+  --divider-vertical-height: calc(100% - 40px);
+  --dropdown-background: hsl(0, 0%, 20%);
+  --dropdown-background-hover: hsl(0, 0%, 25%);
+  --embed-block-shadow-hover: none;
+  --embed-border-start: 2px solid hsl(259.1, 89.9%, 69.9%);
+  --file-header-background: hsl(0, 0%, 11%);
+  --file-header-background-focused: hsl(0, 0%, 11%);
+  --filename-margin-bottom: 0.8rem;
+  --flair-background: hsl(0, 0%, 20%);
+  --flair-color: hsl(0, 0%, 96%);
+  --font-weight-table-titles: 700;
+  --footnote-divider-color: transparent;
+  --footnote-id-color: hsl(0, 0%, 90%);
+  --footnote-id-color-no-occurrences: hsl(0, 0%, 50%);
+  --footnote-input-background-active: transparent;
+  --graph-line: hsl(0, 0%, 30%);
+  --graph-node: hsl(0, 0%, 90%);
+  --graph-node-attachment: hsl(47, 100%, 62%);
+  --graph-node-focused: transparent;
+  --graph-node-tag: hsl(259.1, 89.9%, 69.9%);
+  --graph-node-unresolved: hsl(0, 0%, 50%);
+  --graph-text: hsl(0, 0%, 96%);
+  --gray: var(--text-muted, hsl(0, 0%, 90%));
+  --gray-h: 210;
+  --gray-l: 71%;
+  --gray-s: 11%;
+  --green-h: 130;
+  --green-l: 64%;
+  --green-s: 61%;
+  --h1-color: hsl(259.1, 89.9%, 69.9%);
+  --h1-size: 1.5em;
+  --h2-color: hsl(259.1, 89.9%, 69.9%);
+  --h2-size: 1.4em;
+  --h3-color: hsl(259.1, 89.9%, 69.9%);
+  --h3-size: 1.3em;
+  --h4-color: hsl(259.1, 89.9%, 69.9%);
+  --h4-size: 1.2em;
+  --h5-color: hsl(259.1, 89.9%, 69.9%);
+  --h5-size: 1.1em;
+  --h6-color: hsl(259.1, 89.9%, 69.9%);
+  --h6-size: 1.0em;
+  --header-padding-top: 0.3em;
+  --heading-formatting: hsl(0, 0%, 50%);
+  --highlight: var(--background-modifier-active-hover, transparent);
+  --hr-color: hsl(0, 0%, 17%);
+  --icon-color: hsl(0, 0%, 90%);
+  --icon-color-active: hsl(0, 0%, 93%);
+  --icon-color-focused: hsl(0, 0%, 96%);
+  --icon-color-hover: hsl(0, 0%, 90%);
+  --indigo-h: 228;
+  --indigo-l: 72%;
+  --indigo-s: 96%;
+  --inline-title-color: hsl(0, 0%, 96%);
+  --inline-title-size: 1.5em;
+  --input-date-separator: hsl(0, 0%, 50%);
+  --input-placeholder-color: hsl(0, 0%, 50%);
+  --input-radius: 8px;
+  --interactive-accent: hsl(259.1, 89.9%, 69.9%);
+  --interactive-accent-hover: hsl(256.1, 91.698%, 80.385%);
+  --interactive-accent-hsl: 259.1, 89.9%, 69.9%;
+  --interactive-hover: hsl(0, 0%, 25%);
+  --interactive-normal: hsl(0, 0%, 20%);
+  --italic-color: hsl(259.1, 89.9%, 69.9%);
+  --light: var(--background-primary, hsl(0, 0%, 11%));
+  --lightgray: var(--background-secondary, hsl(0, 0%, 14%));
+  --lime-h: 82;
+  --lime-l: 69%;
+  --lime-s: 75%;
+  --link-color: hsl(259.1, 89.9%, 69.9%);
+  --link-color-hover: hsl(254.1, 94.395%, 90.171%);
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-color: hsl(259.1, 89.9%, 69.9%);
+  --link-external-color-hover: hsl(254.1, 94.395%, 90.171%);
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --link-unresolved-color: hsl(256.1, 91.698%, 80.385%);
+  --link-unresolved-decoration-color: hsla(259.1, 89.9%, 69.9%, 0.3);
+  --list-marker-color: hsl(0, 0%, 50%);
+  --list-marker-color-collapsed: hsl(256.1, 91.698%, 80.385%);
+  --list-marker-color-hover: hsl(0, 0%, 90%);
+  --menu-background: hsl(0, 0%, 14%);
+  --menu-border-color: transparent;
+  --metadata-border-color: transparent;
+  --metadata-divider-color: transparent;
+  --metadata-input-background-active: transparent;
+  --metadata-input-text-color: hsl(0, 0%, 96%);
+  --metadata-label-background-active: transparent;
+  --metadata-label-text-color: hsl(0, 0%, 90%);
+  --metadata-label-text-color-hover: hsl(0, 0%, 90%);
+  --metadata-margin-bottom: 0.8rem;
+  --metadata-padding: 0;
+  --metadata-property-background-active: transparent;
+  --metadata-property-box-shadow-focus: 0 0 0 2px transparent;
+  --metadata-property-box-shadow-hover: 0 0 0 1px transparent;
+  --metadata-property-radius: 8px;
+  --metadata-property-radius-focus: 8px;
+  --metadata-property-radius-hover: 8px;
+  --modal-background: hsl(0, 0%, 11%);
+  --modal-border-color: hsl(0, 0%, 17%);
+  --modal-radius: 8px;
+  --nav-collapse-icon-color: hsl(0, 0%, 50%);
+  --nav-collapse-icon-color-collapsed: hsl(0, 0%, 50%);
+  --nav-heading-color: hsl(0, 0%, 96%);
+  --nav-heading-color-collapsed: hsl(0, 0%, 50%);
+  --nav-heading-color-collapsed-hover: hsl(0, 0%, 90%);
+  --nav-heading-color-hover: hsl(0, 0%, 96%);
+  --nav-indentation-guide-color: rgba(255, 255, 255, 0.07);
+  --nav-item-background-active: transparent;
+  --nav-item-background-hover: transparent;
+  --nav-item-background-selected: hsla(259.1, 89.9%, 69.9%, 0.15);
+  --nav-item-color: hsl(0, 0%, 90%);
+  --nav-item-color-active: hsl(0, 0%, 90%);
+  --nav-item-color-highlighted: hsl(256.1, 91.698%, 80.385%);
+  --nav-item-color-hover: hsl(0, 0%, 90%);
+  --nav-item-color-selected: hsl(0, 0%, 96%);
+  --nav-tag-color: hsl(0, 0%, 50%);
+  --nav-tag-color-active: hsl(0, 0%, 90%);
+  --nav-tag-color-hover: hsl(0, 0%, 90%);
+  --orange-h: 31;
+  --orange-l: 65%;
+  --orange-s: 100%;
+  --pdf-background: hsl(0, 0%, 11%);
+  --pdf-page-background: hsl(0, 0%, 11%);
+  --pdf-shadow: 0 0 0 1px hsl(0, 0%, 20%);
+  --pdf-sidebar-background: hsl(0, 0%, 11%);
+  --pdf-thumbnail-shadow: 0 0 0 1px hsl(0, 0%, 20%);
+  --pill-border-color: hsl(0, 0%, 20%);
+  --pill-border-color-hover: transparent;
+  --pill-color: hsl(0, 0%, 90%);
+  --pill-color-hover: hsl(0, 0%, 96%);
+  --pill-color-remove: hsl(0, 0%, 50%);
+  --pill-color-remove-hover: hsl(256.1, 91.698%, 80.385%);
+  --pink-h: 339;
+  --pink-l: 74%;
+  --pink-s: 88%;
+  --popover-height: 300px;
+  --popover-width: 500px;
+  --primary-blue: 207, 86%, 57%;
+  --primary-cyan: 187, 69%, 55%;
+  --primary-gray: 210, 11%, 71%;
+  --primary-green: 130, 61%, 64%;
+  --primary-indigo: 228, 96%, 72%;
+  --primary-lime: 82, 75%, 69%;
+  --primary-orange: 31, 100%, 65%;
+  --primary-pink: 339, 88%, 74%;
+  --primary-red: 0, 94%, 65%;
+  --primary-sky: 206, 96%, 72%;
+  --primary-violet: 259, 90%, 70%;
+  --primary-white: 0, 0%, 100%;
+  --primary-yellow: 47, 100%, 62%;
+  --prompt-background: hsl(0, 0%, 11%);
+  --prompt-border-color: hsl(0, 0%, 17%);
+  --raised-background: color-mix(in srgb, hsl(0, 0%, 20%) 65%, transparent) linear-gradient(hsl(0, 0%, 20%), color-mix(in srgb, hsl(0, 0%, 20%) 65%, transparent));
+  --red-h: 0;
+  --red-l: 65%;
+  --red-s: 94%;
+  --ribbon-background: hsl(0, 0%, 11%);
+  --ribbon-background-collapsed: hsl(0, 0%, 11%);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.1);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.05);
+  --search-clear-button-color: hsl(0, 0%, 90%);
+  --search-icon-color: hsl(0, 0%, 90%);
+  --search-result-background: hsl(0, 0%, 14%);
+  --secondary: var(--text-accent, hsl(256.1, 91.698%, 80.385%));
+  --setting-group-heading-color: hsl(0, 0%, 96%);
+  --setting-items-background: hsl(0, 0%, 14%);
+  --setting-items-border-color: hsl(0, 0%, 20%);
+  --shiki-active-tab-border-color: hsl(0, 0%, 90%);
+  --shiki-code-background: hsl(0, 0%, 14%);
+  --shiki-code-block-border-radius: 8px;
+  --shiki-code-comment: hsl(0, 0%, 50%);
+  --shiki-code-normal: hsl(0, 0%, 90%);
+  --shiki-code-punctuation: hsl(0, 0%, 90%);
+  --shiki-gutter-border-color: hsl(0, 0%, 20%);
+  --shiki-gutter-text-color: hsl(0, 0%, 50%);
+  --shiki-gutter-text-color-highlight: hsl(0, 0%, 90%);
+  --shiki-highlight-neutral: hsl(0, 0%, 90%);
+  --shiki-terminal-dots-color: hsl(0, 0%, 50%);
+  --sky-h: 206;
+  --sky-l: 72%;
+  --sky-s: 96%;
+  --slider-thumb-border-color: transparent;
+  --slider-track-background: hsl(0, 0%, 20%);
+  --status-bar-background: hsl(0, 0%, 14%);
+  --status-bar-border-color: hsl(0, 0%, 17%);
+  --status-bar-border-width: 0;
+  --status-bar-position: related;
+  --status-bar-radius: 0;
+  --status-bar-text-color: hsl(0, 0%, 90%);
+  --suggestion-background: hsl(0, 0%, 11%);
+  --tab-background-active: hsl(0, 0%, 11%);
+  --tab-container-background: hsl(0, 0%, 11%);
+  --tab-curve: 8px;
+  --tab-divider-color: transparent;
+  --tab-outline-color: hsl(0, 0%, 17%);
+  --tab-radius-active: 8px 8px 0 0;
+  --tab-switcher-background: hsl(0, 0%, 14%);
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 14%), transparent);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(259.1, 89.9%, 69.9%);
+  --tab-text-color: hsl(0, 0%, 50%);
+  --tab-text-color-active: hsl(0, 0%, 90%);
+  --tab-text-color-focused: hsl(0, 0%, 50%);
+  --tab-text-color-focused-active: hsl(0, 0%, 50%);
+  --tab-text-color-focused-active-current: hsl(0, 0%, 96%);
+  --tab-text-color-focused-highlighted: hsl(256.1, 91.698%, 80.385%);
+  --table-add-button-border-color: hsl(0, 0%, 20%);
+  --table-border-color: hsl(0, 0%, 20%);
+  --table-drag-handle-background-active: hsl(259.1, 89.9%, 69.9%);
+  --table-drag-handle-color: hsl(0, 0%, 50%);
+  --table-header-background: hsl(0, 0%, 14%);
+  --table-header-border-color: hsl(0, 0%, 20%);
+  --table-header-color: hsl(0, 0%, 96%);
+  --table-selection: hsla(259.1, 89.9%, 69.9%, 0.1);
+  --table-selection-border-color: hsl(259.1, 89.9%, 69.9%);
+  --tag-background: hsla(259.1, 89.9%, 69.9%, 0.1);
+  --tag-background-hover: hsla(259.1, 89.9%, 69.9%, 0.2);
+  --tag-border-color: hsla(259.1, 89.9%, 69.9%, 0.15);
+  --tag-border-color-hover: hsla(259.1, 89.9%, 69.9%, 0.15);
+  --tag-color: hsl(259.1, 89.9%, 69.9%);
+  --tag-color-hover: hsl(256.1, 91.698%, 80.385%);
+  --tertiary: var(--text-accent-hover, hsl(254.1, 94.395%, 90.171%));
+  --text-accent: hsl(256.1, 91.698%, 80.385%);
+  --text-accent-hover: hsl(254.1, 94.395%, 90.171%);
+  --text-faint: hsl(0, 0%, 50%);
+  --text-muted: hsl(0, 0%, 90%);
+  --text-normal: hsl(0, 0%, 96%);
+  --text-selection: hsla(259.1, 89.9%, 69.9%, 0.33);
+  --textHighlight: var(--background-modifier-active-hover, transparent);
+  --titlebar-background: hsl(0, 0%, 14%);
+  --titlebar-background-focused: hsl(0, 0%, 14%);
+  --titlebar-border-color: hsl(0, 0%, 20%);
+  --titlebar-text-color: hsl(0, 0%, 90%);
+  --titlebar-text-color-focused: hsl(0, 0%, 96%);
+  --vault-profile-color: hsl(0, 0%, 96%);
+  --vault-profile-color-hover: hsl(0, 0%, 96%);
+  --violet-h: 259;
+  --violet-l: 70%;
+  --violet-s: 90%;
+  --white-h: 0;
+  --white-l: 100%;
+  --white-s: 0%;
+  --yellow-h: 47;
+  --yellow-l: 62%;
+  --yellow-s: 100%;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -3597,359 +3598,359 @@ html[saved-theme="dark"] body ul.tags > li {
   },
   light: {
     base: `:root:root {
-  --accent-h: 259.1 !important;
-  --accent-l: 69.9% !important;
-  --accent-s: 89.9% !important;
-  --background-modifier-active-hover: transparent !important;
-  --background-modifier-border: hsl(0, 0%, 90%) !important;
-  --background-modifier-border-focus: transparent !important;
-  --background-modifier-border-hover: transparent !important;
-  --background-modifier-form-field: hsl(0, 0%, 90%) !important;
-  --background-modifier-form-field-hover: hsl(0, 0%, 90%) !important;
-  --background-primary: hsl(0, 0%, 99%) !important;
-  --background-primary-alt: hsl(0, 0%, 93%) !important;
-  --background-secondary: hsl(0, 0%, 96%) !important;
-  --background-secondary-alt: hsl(0, 0%, 96%) !important;
-  --bases-cards-background: hsl(0, 0%, 96%) !important;
-  --bases-cards-cover-background: hsl(0, 0%, 93%) !important;
-  --bases-cards-shadow: 0 0 0 1px hsl(0, 0%, 93%) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px hsl(259.1, 89.9%, 69.9%) !important;
-  --bases-cards-text-size: 0.875em !important;
-  --bases-embed-border-color: hsl(0, 0%, 93%) !important;
-  --bases-embed-border-radius: 8px !important;
-  --bases-group-heading-property-color: hsl(0, 0%, 20%) !important;
-  --bases-table-border-color: hsl(0, 0%, 93%) !important;
-  --bases-table-cell-background-active: hsl(0, 0%, 96%) !important;
-  --bases-table-cell-background-disabled: transparent !important;
-  --bases-table-cell-background-selected: hsla(259.1, 89.9%, 69.9%, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(258.1, 90.799%, 75.1425%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(258.1, 90.799%, 75.1425%) !important;
-  --bases-table-container-border-radius: 8px !important;
-  --bases-table-group-background: hsl(0, 0%, 93%) !important;
-  --bases-table-header-background: hsl(0, 0%, 99%) !important;
-  --bases-table-header-background-hover: none !important;
-  --bases-table-header-color: hsl(0, 0%, 20%) !important;
-  --bases-table-header-icon-display: none !important;
-  --bases-table-row-background-hover: hsl(0, 0%, 96%) !important;
-  --bases-table-summary-background: hsl(0, 0%, 99%) !important;
-  --bases-table-text-size: 0.875em !important;
-  --blockquote-border-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --blue-h: 207 !important;
-  --blue-l: 57% !important;
-  --blue-s: 86% !important;
-  --blur-background: color-mix(in srgb, hsl(0, 0%, 99%) 65%, transparent) linear-gradient(hsl(0, 0%, 99%), color-mix(in srgb, hsl(0, 0%, 99%) 65%, transparent)) !important;
-  --bold-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --button-radius: 8px !important;
+  --accent-h: 259.1;
+  --accent-l: 69.9%;
+  --accent-s: 89.9%;
+  --background-modifier-active-hover: transparent;
+  --background-modifier-border: hsl(0, 0%, 90%);
+  --background-modifier-border-focus: transparent;
+  --background-modifier-border-hover: transparent;
+  --background-modifier-form-field: hsl(0, 0%, 90%);
+  --background-modifier-form-field-hover: hsl(0, 0%, 90%);
+  --background-primary: hsl(0, 0%, 99%);
+  --background-primary-alt: hsl(0, 0%, 93%);
+  --background-secondary: hsl(0, 0%, 96%);
+  --background-secondary-alt: hsl(0, 0%, 96%);
+  --bases-cards-background: hsl(0, 0%, 96%);
+  --bases-cards-cover-background: hsl(0, 0%, 93%);
+  --bases-cards-shadow: 0 0 0 1px hsl(0, 0%, 93%);
+  --bases-cards-shadow-hover: 0 0 0 1px hsl(259.1, 89.9%, 69.9%);
+  --bases-cards-text-size: 0.875em;
+  --bases-embed-border-color: hsl(0, 0%, 93%);
+  --bases-embed-border-radius: 8px;
+  --bases-group-heading-property-color: hsl(0, 0%, 20%);
+  --bases-table-border-color: hsl(0, 0%, 93%);
+  --bases-table-cell-background-active: hsl(0, 0%, 96%);
+  --bases-table-cell-background-disabled: transparent;
+  --bases-table-cell-background-selected: hsla(259.1, 89.9%, 69.9%, 0.1);
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(258.1, 90.799%, 75.1425%);
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(258.1, 90.799%, 75.1425%);
+  --bases-table-container-border-radius: 8px;
+  --bases-table-group-background: hsl(0, 0%, 93%);
+  --bases-table-header-background: hsl(0, 0%, 99%);
+  --bases-table-header-background-hover: none;
+  --bases-table-header-color: hsl(0, 0%, 20%);
+  --bases-table-header-icon-display: none;
+  --bases-table-row-background-hover: hsl(0, 0%, 96%);
+  --bases-table-summary-background: hsl(0, 0%, 99%);
+  --bases-table-text-size: 0.875em;
+  --blockquote-border-color: hsl(259.1, 89.9%, 69.9%);
+  --blue-h: 207;
+  --blue-l: 57%;
+  --blue-s: 86%;
+  --blur-background: color-mix(in srgb, hsl(0, 0%, 99%) 65%, transparent) linear-gradient(hsl(0, 0%, 99%), color-mix(in srgb, hsl(0, 0%, 99%) 65%, transparent));
+  --bold-color: hsl(259.1, 89.9%, 69.9%);
+  --button-radius: 8px;
   --callout-background-color-opacity: 0.1;
   --callout-border-width: 1px;
   --callout-padding: 24px;
   --callout-radius: 8px;
-  --canvas-background: hsl(0, 0%, 99%) !important;
-  --canvas-card-label-color: hsl(0, 0%, 60%) !important;
-  --canvas-dot-pattern: hsl(0, 0%, 80%) !important;
-  --caret-color: hsl(0, 0%, 14%) !important;
-  --checkbox-border-color: hsl(0, 0%, 60%) !important;
-  --checkbox-border-color-hover: hsl(259.1, 89.9%, 69.9%) !important;
-  --checkbox-color: hsl(258.1, 90.799%, 75.1425%) !important;
-  --checkbox-color-hover: hsl(256.1, 91.698%, 80.385%) !important;
-  --checkbox-marker-color: hsl(0, 0%, 99%) !important;
-  --checkbox-radius: 35% !important;
-  --checklist-done-color: hsl(0, 0%, 60%) !important;
-  --checklist-done-decoration: none !important;
-  --code-background: hsl(0, 0%, 96%) !important;
-  --code-border-color: hsl(0, 0%, 93%) !important;
-  --code-border-width: 1px !important;
-  --code-comment: hsl(0, 0%, 60%) !important;
-  --code-function: rgb(152, 195, 121) !important;
-  --code-important: rgb(198, 120, 221) !important;
-  --code-keyword: rgb(86, 182, 194) !important;
-  --code-normal: hsl(0, 0%, 17%) !important;
-  --code-operator: hsl(0, 0%, 17%) !important;
-  --code-property: rgb(86, 182, 194) !important;
-  --code-punctuation: hsl(0, 0%, 20%) !important;
-  --code-radius: 8px !important;
-  --code-string: rgb(229, 192, 123) !important;
-  --code-tag: rgb(224, 108, 117) !important;
-  --code-value: rgb(198, 120, 221) !important;
-  --collapse-icon-color: hsl(0, 0%, 60%) !important;
-  --collapse-icon-color-collapsed: hsl(259.1, 89.9%, 69.9%) !important;
-  --color-accent: hsl(259.1, 89.9%, 69.9%) !important;
-  --color-accent-1: hsl(258.1, 90.799%, 75.1425%) !important;
-  --color-accent-2: hsl(256.1, 91.698%, 80.385%) !important;
-  --color-accent-hsl: 259.1, 89.9%, 69.9% !important;
-  --color-base-00: hsl(0, 0%, 99%) !important;
-  --color-base-05: hsl(0, 0%, 96%) !important;
-  --color-base-10: hsl(0, 0%, 93%) !important;
-  --color-base-100: hsl(0, 0%, 11%) !important;
-  --color-base-20: hsl(0, 0%, 90%) !important;
-  --color-base-25: hsl(0, 0%, 85%) !important;
-  --color-base-30: hsl(0, 0%, 80%) !important;
-  --color-base-35: hsl(0, 0%, 75%) !important;
-  --color-base-40: hsl(0, 0%, 70%) !important;
-  --color-base-50: hsl(0, 0%, 60%) !important;
-  --color-base-60: hsl(0, 0%, 50%) !important;
-  --color-base-70: hsl(0, 0%, 20%) !important;
-  --color-base-80: hsl(0, 0%, 17%) !important;
-  --color-base-90: hsl(0, 0%, 14%) !important;
-  --components-background: hsl(0, 0%, 90%) !important;
-  --components-background-hover: hsl(0, 0%, 85%) !important;
-  --custom-icon-size: 1.2em !important;
-  --cyan-h: 187 !important;
-  --cyan-l: 55% !important;
-  --cyan-s: 69% !important;
-  --dark: hsl(0, 0%, 14%) !important;
-  --darkgray: hsl(0, 0%, 14%) !important;
-  --divider-color: hsl(0, 0%, 93%) !important;
-  --divider-color-hover: hsl(258.1, 90.799%, 75.1425%) !important;
-  --divider-vertical-height: calc(100% - 40px) !important;
-  --dropdown-background: hsl(0, 0%, 90%) !important;
-  --dropdown-background-hover: hsl(0, 0%, 85%) !important;
-  --embed-block-shadow-hover: none !important;
-  --embed-border-start: 2px solid hsl(258.1, 90.799%, 75.1425%) !important;
-  --file-header-background: hsl(0, 0%, 99%) !important;
-  --file-header-background-focused: hsl(0, 0%, 99%) !important;
-  --filename-margin-bottom: 0.8rem !important;
-  --flair-background: hsl(0, 0%, 90%) !important;
-  --flair-color: hsl(0, 0%, 14%) !important;
-  --font-weight-table-titles: 700 !important;
-  --footnote-divider-color: transparent !important;
-  --footnote-id-color: hsl(0, 0%, 20%) !important;
-  --footnote-id-color-no-occurrences: hsl(0, 0%, 60%) !important;
-  --footnote-input-background-active: transparent !important;
-  --graph-line: hsl(0, 0%, 80%) !important;
-  --graph-node: hsl(0, 0%, 20%) !important;
-  --graph-node-attachment: hsl(47, 100%, 62%) !important;
-  --graph-node-focused: transparent !important;
-  --graph-node-tag: hsl(259.1, 89.9%, 69.9%) !important;
-  --graph-node-unresolved: hsl(0, 0%, 60%) !important;
-  --graph-text: hsl(0, 0%, 14%) !important;
-  --gray: hsl(0, 0%, 20%) !important;
-  --gray-h: 210 !important;
-  --gray-l: 71% !important;
-  --gray-s: 11% !important;
-  --green-h: 130 !important;
-  --green-l: 64% !important;
-  --green-s: 61% !important;
-  --h1-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --h1-size: 1.5em !important;
-  --h2-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --h2-size: 1.4em !important;
-  --h3-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --h3-size: 1.3em !important;
-  --h4-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --h4-size: 1.2em !important;
-  --h5-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --h5-size: 1.1em !important;
-  --h6-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --h6-size: 1.0em !important;
-  --header-padding-top: 0.3em !important;
-  --heading-formatting: hsl(0, 0%, 60%) !important;
-  --highlight: transparent !important;
-  --hr-color: hsl(0, 0%, 93%) !important;
-  --icon-color: hsl(0, 0%, 20%) !important;
-  --icon-color-active: hsl(0, 0%, 17%) !important;
-  --icon-color-focused: hsl(0, 0%, 14%) !important;
-  --icon-color-hover: hsl(0, 0%, 20%) !important;
-  --indigo-h: 228 !important;
-  --indigo-l: 72% !important;
-  --indigo-s: 96% !important;
-  --inline-title-color: hsl(0, 0%, 14%) !important;
-  --inline-title-size: 1.5em !important;
-  --input-date-separator: hsl(0, 0%, 60%) !important;
-  --input-placeholder-color: hsl(0, 0%, 60%) !important;
-  --input-radius: 8px !important;
-  --interactive-accent: hsl(258.1, 90.799%, 75.1425%) !important;
-  --interactive-accent-hover: hsl(256.1, 91.698%, 80.385%) !important;
-  --interactive-accent-hsl: 259.1, 89.9%, 69.9% !important;
-  --interactive-hover: hsl(0, 0%, 85%) !important;
-  --interactive-normal: hsl(0, 0%, 90%) !important;
-  --italic-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --light: hsl(0, 0%, 99%) !important;
-  --lightgray: hsl(0, 0%, 96%) !important;
-  --lime-h: 82 !important;
-  --lime-l: 69% !important;
-  --lime-s: 75% !important;
-  --link-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --link-color-hover: hsl(256.1, 91.698%, 80.385%) !important;
-  --link-decoration: none !important;
-  --link-decoration-hover: none !important;
-  --link-external-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --link-external-color-hover: hsl(256.1, 91.698%, 80.385%) !important;
-  --link-external-decoration: none !important;
-  --link-external-decoration-hover: none !important;
-  --link-unresolved-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --link-unresolved-decoration-color: hsla(259.1, 89.9%, 69.9%, 0.3) !important;
-  --list-marker-color: hsl(0, 0%, 60%) !important;
-  --list-marker-color-collapsed: hsl(259.1, 89.9%, 69.9%) !important;
-  --list-marker-color-hover: hsl(0, 0%, 20%) !important;
-  --menu-background: hsl(0, 0%, 96%) !important;
-  --menu-border-color: transparent !important;
-  --metadata-border-color: transparent !important;
-  --metadata-divider-color: transparent !important;
-  --metadata-input-background-active: transparent !important;
-  --metadata-input-text-color: hsl(0, 0%, 14%) !important;
-  --metadata-label-background-active: transparent !important;
-  --metadata-label-text-color: hsl(0, 0%, 20%) !important;
-  --metadata-label-text-color-hover: hsl(0, 0%, 20%) !important;
-  --metadata-margin-bottom: 0.8rem !important;
-  --metadata-padding: 0 !important;
-  --metadata-property-background-active: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px transparent !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px transparent !important;
-  --metadata-property-radius: 8px !important;
-  --metadata-property-radius-focus: 8px !important;
-  --metadata-property-radius-hover: 8px !important;
-  --modal-background: hsl(0, 0%, 99%) !important;
-  --modal-border-color: hsl(0, 0%, 93%) !important;
-  --modal-radius: 8px !important;
-  --nav-collapse-icon-color: hsl(0, 0%, 60%) !important;
-  --nav-collapse-icon-color-collapsed: hsl(0, 0%, 60%) !important;
-  --nav-heading-color: hsl(0, 0%, 14%) !important;
-  --nav-heading-color-collapsed: hsl(0, 0%, 60%) !important;
-  --nav-heading-color-collapsed-hover: hsl(0, 0%, 20%) !important;
-  --nav-heading-color-hover: hsl(0, 0%, 14%) !important;
-  --nav-indentation-guide-color: rgba(0, 0, 0, 0.07) !important;
-  --nav-item-background-active: transparent !important;
-  --nav-item-background-hover: transparent !important;
-  --nav-item-background-selected: hsla(259.1, 89.9%, 69.9%, 0.15) !important;
-  --nav-item-color: hsl(0, 0%, 20%) !important;
-  --nav-item-color-active: hsl(0, 0%, 20%) !important;
-  --nav-item-color-highlighted: hsl(259.1, 89.9%, 69.9%) !important;
-  --nav-item-color-hover: hsl(0, 0%, 20%) !important;
-  --nav-item-color-selected: hsl(0, 0%, 14%) !important;
-  --nav-tag-color: hsl(0, 0%, 60%) !important;
-  --nav-tag-color-active: hsl(0, 0%, 20%) !important;
-  --nav-tag-color-hover: hsl(0, 0%, 20%) !important;
-  --orange-h: 31 !important;
-  --orange-l: 65% !important;
-  --orange-s: 100% !important;
-  --pdf-background: hsl(0, 0%, 99%) !important;
-  --pdf-page-background: hsl(0, 0%, 99%) !important;
-  --pdf-sidebar-background: hsl(0, 0%, 99%) !important;
-  --pill-border-color: hsl(0, 0%, 90%) !important;
-  --pill-border-color-hover: transparent !important;
-  --pill-color: hsl(0, 0%, 20%) !important;
-  --pill-color-hover: hsl(0, 0%, 14%) !important;
-  --pill-color-remove: hsl(0, 0%, 60%) !important;
-  --pill-color-remove-hover: hsl(259.1, 89.9%, 69.9%) !important;
-  --pink-h: 339 !important;
-  --pink-l: 74% !important;
-  --pink-s: 88% !important;
-  --popover-height: 300px !important;
-  --popover-width: 500px !important;
-  --primary-blue: 207, 86%, 57% !important;
-  --primary-cyan: 187, 69%, 55% !important;
-  --primary-gray: 210, 11%, 71% !important;
-  --primary-green: 130, 61%, 64% !important;
-  --primary-indigo: 228, 96%, 72% !important;
-  --primary-lime: 82, 75%, 69% !important;
-  --primary-orange: 31, 100%, 65% !important;
-  --primary-pink: 339, 88%, 74% !important;
-  --primary-red: 0, 94%, 65% !important;
-  --primary-sky: 206, 96%, 72% !important;
-  --primary-violet: 259, 90%, 70% !important;
-  --primary-white: 0, 0%, 100% !important;
-  --primary-yellow: 47, 100%, 62% !important;
-  --prompt-background: hsl(0, 0%, 99%) !important;
-  --prompt-border-color: hsl(0, 0%, 93%) !important;
-  --raised-background: color-mix(in srgb, hsl(0, 0%, 99%) 65%, transparent) linear-gradient(hsl(0, 0%, 99%), color-mix(in srgb, hsl(0, 0%, 99%) 65%, transparent)) !important;
-  --red-h: 0 !important;
-  --red-l: 65% !important;
-  --red-s: 94% !important;
-  --ribbon-background: hsl(0, 0%, 99%) !important;
-  --ribbon-background-collapsed: hsl(0, 0%, 99%) !important;
-  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.1) !important;
-  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.05) !important;
-  --search-clear-button-color: hsl(0, 0%, 20%) !important;
-  --search-icon-color: hsl(0, 0%, 20%) !important;
-  --search-result-background: hsl(0, 0%, 96%) !important;
-  --secondary: hsl(259.1, 89.9%, 69.9%) !important;
-  --setting-group-heading-color: hsl(0, 0%, 14%) !important;
-  --setting-items-background: hsl(0, 0%, 96%) !important;
-  --setting-items-border-color: hsl(0, 0%, 90%) !important;
-  --shiki-active-tab-border-color: hsl(0, 0%, 20%) !important;
-  --shiki-code-background: hsl(0, 0%, 96%) !important;
-  --shiki-code-block-border-radius: 8px !important;
-  --shiki-code-comment: hsl(0, 0%, 60%) !important;
-  --shiki-code-normal: hsl(0, 0%, 20%) !important;
-  --shiki-code-punctuation: hsl(0, 0%, 20%) !important;
-  --shiki-gutter-border-color: hsl(0, 0%, 90%) !important;
-  --shiki-gutter-text-color: hsl(0, 0%, 60%) !important;
-  --shiki-gutter-text-color-highlight: hsl(0, 0%, 20%) !important;
-  --shiki-highlight-neutral: hsl(0, 0%, 20%) !important;
-  --shiki-terminal-dots-color: hsl(0, 0%, 60%) !important;
-  --sky-h: 206 !important;
-  --sky-l: 72% !important;
-  --sky-s: 96% !important;
-  --slider-thumb-border-color: transparent !important;
-  --slider-track-background: hsl(0, 0%, 90%) !important;
-  --status-bar-background: hsl(0, 0%, 96%) !important;
-  --status-bar-border-color: hsl(0, 0%, 93%) !important;
-  --status-bar-border-width: 0 !important;
-  --status-bar-position: related !important;
-  --status-bar-radius: 0 !important;
-  --status-bar-text-color: hsl(0, 0%, 20%) !important;
-  --suggestion-background: hsl(0, 0%, 99%) !important;
-  --tab-background-active: hsl(0, 0%, 99%) !important;
-  --tab-container-background: hsl(0, 0%, 99%) !important;
-  --tab-curve: 8px !important;
-  --tab-divider-color: transparent !important;
-  --tab-outline-color: hsl(0, 0%, 93%) !important;
-  --tab-radius-active: 8px 8px 0 0 !important;
-  --tab-switcher-background: hsl(0, 0%, 96%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 96%), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(259.1, 89.9%, 69.9%) !important;
-  --tab-text-color: hsl(0, 0%, 60%) !important;
-  --tab-text-color-active: hsl(0, 0%, 20%) !important;
-  --tab-text-color-focused: hsl(0, 0%, 60%) !important;
-  --tab-text-color-focused-active: hsl(0, 0%, 60%) !important;
-  --tab-text-color-focused-active-current: hsl(0, 0%, 14%) !important;
-  --tab-text-color-focused-highlighted: hsl(259.1, 89.9%, 69.9%) !important;
-  --table-add-button-border-color: hsl(0, 0%, 90%) !important;
-  --table-border-color: hsl(0, 0%, 90%) !important;
-  --table-drag-handle-background-active: hsl(258.1, 90.799%, 75.1425%) !important;
-  --table-drag-handle-color: hsl(0, 0%, 60%) !important;
-  --table-header-background: hsl(0, 0%, 96%) !important;
-  --table-header-border-color: hsl(0, 0%, 90%) !important;
-  --table-header-color: hsl(0, 0%, 14%) !important;
-  --table-selection: hsla(259.1, 89.9%, 69.9%, 0.1) !important;
-  --table-selection-border-color: hsl(258.1, 90.799%, 75.1425%) !important;
-  --tag-background: hsla(259.1, 89.9%, 69.9%, 0.1) !important;
-  --tag-background-hover: hsla(259.1, 89.9%, 69.9%, 0.2) !important;
-  --tag-border-color: hsla(259.1, 89.9%, 69.9%, 0.15) !important;
-  --tag-border-color-hover: hsla(259.1, 89.9%, 69.9%, 0.15) !important;
-  --tag-color: hsl(259.1, 89.9%, 69.9%) !important;
-  --tag-color-hover: hsl(259.1, 89.9%, 69.9%) !important;
-  --tertiary: hsl(256.1, 91.698%, 80.385%) !important;
-  --text-accent: hsl(259.1, 89.9%, 69.9%) !important;
-  --text-accent-hover: hsl(256.1, 91.698%, 80.385%) !important;
-  --text-faint: hsl(0, 0%, 60%) !important;
-  --text-muted: hsl(0, 0%, 20%) !important;
-  --text-normal: hsl(0, 0%, 14%) !important;
-  --text-selection: hsla(259.1, 89.9%, 69.9%, 0.2) !important;
-  --textHighlight: transparent !important;
-  --titlebar-background: hsl(0, 0%, 96%) !important;
-  --titlebar-background-focused: hsl(0, 0%, 96%) !important;
-  --titlebar-border-color: hsl(0, 0%, 90%) !important;
-  --titlebar-text-color: hsl(0, 0%, 20%) !important;
-  --titlebar-text-color-focused: hsl(0, 0%, 14%) !important;
-  --vault-profile-color: hsl(0, 0%, 14%) !important;
-  --vault-profile-color-hover: hsl(0, 0%, 14%) !important;
-  --violet-h: 259 !important;
-  --violet-l: 70% !important;
-  --violet-s: 90% !important;
-  --white-h: 0 !important;
-  --white-l: 100% !important;
-  --white-s: 0% !important;
-  --yellow-h: 47 !important;
-  --yellow-l: 62% !important;
-  --yellow-s: 100% !important;
-  --quartz-icon-color: currentColor !important;
+  --canvas-background: hsl(0, 0%, 99%);
+  --canvas-card-label-color: hsl(0, 0%, 60%);
+  --canvas-dot-pattern: hsl(0, 0%, 80%);
+  --caret-color: hsl(0, 0%, 14%);
+  --checkbox-border-color: hsl(0, 0%, 60%);
+  --checkbox-border-color-hover: hsl(259.1, 89.9%, 69.9%);
+  --checkbox-color: hsl(258.1, 90.799%, 75.1425%);
+  --checkbox-color-hover: hsl(256.1, 91.698%, 80.385%);
+  --checkbox-marker-color: hsl(0, 0%, 99%);
+  --checkbox-radius: 35%;
+  --checklist-done-color: hsl(0, 0%, 60%);
+  --checklist-done-decoration: none;
+  --code-background: hsl(0, 0%, 96%);
+  --code-border-color: hsl(0, 0%, 93%);
+  --code-border-width: 1px;
+  --code-comment: hsl(0, 0%, 60%);
+  --code-function: rgb(152, 195, 121);
+  --code-important: rgb(198, 120, 221);
+  --code-keyword: rgb(86, 182, 194);
+  --code-normal: hsl(0, 0%, 17%);
+  --code-operator: hsl(0, 0%, 17%);
+  --code-property: rgb(86, 182, 194);
+  --code-punctuation: hsl(0, 0%, 20%);
+  --code-radius: 8px;
+  --code-string: rgb(229, 192, 123);
+  --code-tag: rgb(224, 108, 117);
+  --code-value: rgb(198, 120, 221);
+  --collapse-icon-color: hsl(0, 0%, 60%);
+  --collapse-icon-color-collapsed: hsl(259.1, 89.9%, 69.9%);
+  --color-accent: hsl(259.1, 89.9%, 69.9%);
+  --color-accent-1: hsl(258.1, 90.799%, 75.1425%);
+  --color-accent-2: hsl(256.1, 91.698%, 80.385%);
+  --color-accent-hsl: 259.1, 89.9%, 69.9%;
+  --color-base-00: hsl(0, 0%, 99%);
+  --color-base-05: hsl(0, 0%, 96%);
+  --color-base-10: hsl(0, 0%, 93%);
+  --color-base-100: hsl(0, 0%, 11%);
+  --color-base-20: hsl(0, 0%, 90%);
+  --color-base-25: hsl(0, 0%, 85%);
+  --color-base-30: hsl(0, 0%, 80%);
+  --color-base-35: hsl(0, 0%, 75%);
+  --color-base-40: hsl(0, 0%, 70%);
+  --color-base-50: hsl(0, 0%, 60%);
+  --color-base-60: hsl(0, 0%, 50%);
+  --color-base-70: hsl(0, 0%, 20%);
+  --color-base-80: hsl(0, 0%, 17%);
+  --color-base-90: hsl(0, 0%, 14%);
+  --components-background: hsl(0, 0%, 90%);
+  --components-background-hover: hsl(0, 0%, 85%);
+  --custom-icon-size: 1.2em;
+  --cyan-h: 187;
+  --cyan-l: 55%;
+  --cyan-s: 69%;
+  --dark: var(--text-normal, hsl(0, 0%, 14%));
+  --darkgray: var(--text-normal, hsl(0, 0%, 14%));
+  --divider-color: hsl(0, 0%, 93%);
+  --divider-color-hover: hsl(258.1, 90.799%, 75.1425%);
+  --divider-vertical-height: calc(100% - 40px);
+  --dropdown-background: hsl(0, 0%, 90%);
+  --dropdown-background-hover: hsl(0, 0%, 85%);
+  --embed-block-shadow-hover: none;
+  --embed-border-start: 2px solid hsl(258.1, 90.799%, 75.1425%);
+  --file-header-background: hsl(0, 0%, 99%);
+  --file-header-background-focused: hsl(0, 0%, 99%);
+  --filename-margin-bottom: 0.8rem;
+  --flair-background: hsl(0, 0%, 90%);
+  --flair-color: hsl(0, 0%, 14%);
+  --font-weight-table-titles: 700;
+  --footnote-divider-color: transparent;
+  --footnote-id-color: hsl(0, 0%, 20%);
+  --footnote-id-color-no-occurrences: hsl(0, 0%, 60%);
+  --footnote-input-background-active: transparent;
+  --graph-line: hsl(0, 0%, 80%);
+  --graph-node: hsl(0, 0%, 20%);
+  --graph-node-attachment: hsl(47, 100%, 62%);
+  --graph-node-focused: transparent;
+  --graph-node-tag: hsl(259.1, 89.9%, 69.9%);
+  --graph-node-unresolved: hsl(0, 0%, 60%);
+  --graph-text: hsl(0, 0%, 14%);
+  --gray: var(--text-muted, hsl(0, 0%, 20%));
+  --gray-h: 210;
+  --gray-l: 71%;
+  --gray-s: 11%;
+  --green-h: 130;
+  --green-l: 64%;
+  --green-s: 61%;
+  --h1-color: hsl(259.1, 89.9%, 69.9%);
+  --h1-size: 1.5em;
+  --h2-color: hsl(259.1, 89.9%, 69.9%);
+  --h2-size: 1.4em;
+  --h3-color: hsl(259.1, 89.9%, 69.9%);
+  --h3-size: 1.3em;
+  --h4-color: hsl(259.1, 89.9%, 69.9%);
+  --h4-size: 1.2em;
+  --h5-color: hsl(259.1, 89.9%, 69.9%);
+  --h5-size: 1.1em;
+  --h6-color: hsl(259.1, 89.9%, 69.9%);
+  --h6-size: 1.0em;
+  --header-padding-top: 0.3em;
+  --heading-formatting: hsl(0, 0%, 60%);
+  --highlight: var(--background-modifier-active-hover, transparent);
+  --hr-color: hsl(0, 0%, 93%);
+  --icon-color: hsl(0, 0%, 20%);
+  --icon-color-active: hsl(0, 0%, 17%);
+  --icon-color-focused: hsl(0, 0%, 14%);
+  --icon-color-hover: hsl(0, 0%, 20%);
+  --indigo-h: 228;
+  --indigo-l: 72%;
+  --indigo-s: 96%;
+  --inline-title-color: hsl(0, 0%, 14%);
+  --inline-title-size: 1.5em;
+  --input-date-separator: hsl(0, 0%, 60%);
+  --input-placeholder-color: hsl(0, 0%, 60%);
+  --input-radius: 8px;
+  --interactive-accent: hsl(258.1, 90.799%, 75.1425%);
+  --interactive-accent-hover: hsl(256.1, 91.698%, 80.385%);
+  --interactive-accent-hsl: 259.1, 89.9%, 69.9%;
+  --interactive-hover: hsl(0, 0%, 85%);
+  --interactive-normal: hsl(0, 0%, 90%);
+  --italic-color: hsl(259.1, 89.9%, 69.9%);
+  --light: var(--background-primary, hsl(0, 0%, 99%));
+  --lightgray: var(--background-secondary, hsl(0, 0%, 96%));
+  --lime-h: 82;
+  --lime-l: 69%;
+  --lime-s: 75%;
+  --link-color: hsl(259.1, 89.9%, 69.9%);
+  --link-color-hover: hsl(256.1, 91.698%, 80.385%);
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-color: hsl(259.1, 89.9%, 69.9%);
+  --link-external-color-hover: hsl(256.1, 91.698%, 80.385%);
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --link-unresolved-color: hsl(259.1, 89.9%, 69.9%);
+  --link-unresolved-decoration-color: hsla(259.1, 89.9%, 69.9%, 0.3);
+  --list-marker-color: hsl(0, 0%, 60%);
+  --list-marker-color-collapsed: hsl(259.1, 89.9%, 69.9%);
+  --list-marker-color-hover: hsl(0, 0%, 20%);
+  --menu-background: hsl(0, 0%, 96%);
+  --menu-border-color: transparent;
+  --metadata-border-color: transparent;
+  --metadata-divider-color: transparent;
+  --metadata-input-background-active: transparent;
+  --metadata-input-text-color: hsl(0, 0%, 14%);
+  --metadata-label-background-active: transparent;
+  --metadata-label-text-color: hsl(0, 0%, 20%);
+  --metadata-label-text-color-hover: hsl(0, 0%, 20%);
+  --metadata-margin-bottom: 0.8rem;
+  --metadata-padding: 0;
+  --metadata-property-background-active: transparent;
+  --metadata-property-box-shadow-focus: 0 0 0 2px transparent;
+  --metadata-property-box-shadow-hover: 0 0 0 1px transparent;
+  --metadata-property-radius: 8px;
+  --metadata-property-radius-focus: 8px;
+  --metadata-property-radius-hover: 8px;
+  --modal-background: hsl(0, 0%, 99%);
+  --modal-border-color: hsl(0, 0%, 93%);
+  --modal-radius: 8px;
+  --nav-collapse-icon-color: hsl(0, 0%, 60%);
+  --nav-collapse-icon-color-collapsed: hsl(0, 0%, 60%);
+  --nav-heading-color: hsl(0, 0%, 14%);
+  --nav-heading-color-collapsed: hsl(0, 0%, 60%);
+  --nav-heading-color-collapsed-hover: hsl(0, 0%, 20%);
+  --nav-heading-color-hover: hsl(0, 0%, 14%);
+  --nav-indentation-guide-color: rgba(0, 0, 0, 0.07);
+  --nav-item-background-active: transparent;
+  --nav-item-background-hover: transparent;
+  --nav-item-background-selected: hsla(259.1, 89.9%, 69.9%, 0.15);
+  --nav-item-color: hsl(0, 0%, 20%);
+  --nav-item-color-active: hsl(0, 0%, 20%);
+  --nav-item-color-highlighted: hsl(259.1, 89.9%, 69.9%);
+  --nav-item-color-hover: hsl(0, 0%, 20%);
+  --nav-item-color-selected: hsl(0, 0%, 14%);
+  --nav-tag-color: hsl(0, 0%, 60%);
+  --nav-tag-color-active: hsl(0, 0%, 20%);
+  --nav-tag-color-hover: hsl(0, 0%, 20%);
+  --orange-h: 31;
+  --orange-l: 65%;
+  --orange-s: 100%;
+  --pdf-background: hsl(0, 0%, 99%);
+  --pdf-page-background: hsl(0, 0%, 99%);
+  --pdf-sidebar-background: hsl(0, 0%, 99%);
+  --pill-border-color: hsl(0, 0%, 90%);
+  --pill-border-color-hover: transparent;
+  --pill-color: hsl(0, 0%, 20%);
+  --pill-color-hover: hsl(0, 0%, 14%);
+  --pill-color-remove: hsl(0, 0%, 60%);
+  --pill-color-remove-hover: hsl(259.1, 89.9%, 69.9%);
+  --pink-h: 339;
+  --pink-l: 74%;
+  --pink-s: 88%;
+  --popover-height: 300px;
+  --popover-width: 500px;
+  --primary-blue: 207, 86%, 57%;
+  --primary-cyan: 187, 69%, 55%;
+  --primary-gray: 210, 11%, 71%;
+  --primary-green: 130, 61%, 64%;
+  --primary-indigo: 228, 96%, 72%;
+  --primary-lime: 82, 75%, 69%;
+  --primary-orange: 31, 100%, 65%;
+  --primary-pink: 339, 88%, 74%;
+  --primary-red: 0, 94%, 65%;
+  --primary-sky: 206, 96%, 72%;
+  --primary-violet: 259, 90%, 70%;
+  --primary-white: 0, 0%, 100%;
+  --primary-yellow: 47, 100%, 62%;
+  --prompt-background: hsl(0, 0%, 99%);
+  --prompt-border-color: hsl(0, 0%, 93%);
+  --raised-background: color-mix(in srgb, hsl(0, 0%, 99%) 65%, transparent) linear-gradient(hsl(0, 0%, 99%), color-mix(in srgb, hsl(0, 0%, 99%) 65%, transparent));
+  --red-h: 0;
+  --red-l: 65%;
+  --red-s: 94%;
+  --ribbon-background: hsl(0, 0%, 99%);
+  --ribbon-background-collapsed: hsl(0, 0%, 99%);
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.1);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.05);
+  --search-clear-button-color: hsl(0, 0%, 20%);
+  --search-icon-color: hsl(0, 0%, 20%);
+  --search-result-background: hsl(0, 0%, 96%);
+  --secondary: var(--text-accent, hsl(259.1, 89.9%, 69.9%));
+  --setting-group-heading-color: hsl(0, 0%, 14%);
+  --setting-items-background: hsl(0, 0%, 96%);
+  --setting-items-border-color: hsl(0, 0%, 90%);
+  --shiki-active-tab-border-color: hsl(0, 0%, 20%);
+  --shiki-code-background: hsl(0, 0%, 96%);
+  --shiki-code-block-border-radius: 8px;
+  --shiki-code-comment: hsl(0, 0%, 60%);
+  --shiki-code-normal: hsl(0, 0%, 20%);
+  --shiki-code-punctuation: hsl(0, 0%, 20%);
+  --shiki-gutter-border-color: hsl(0, 0%, 90%);
+  --shiki-gutter-text-color: hsl(0, 0%, 60%);
+  --shiki-gutter-text-color-highlight: hsl(0, 0%, 20%);
+  --shiki-highlight-neutral: hsl(0, 0%, 20%);
+  --shiki-terminal-dots-color: hsl(0, 0%, 60%);
+  --sky-h: 206;
+  --sky-l: 72%;
+  --sky-s: 96%;
+  --slider-thumb-border-color: transparent;
+  --slider-track-background: hsl(0, 0%, 90%);
+  --status-bar-background: hsl(0, 0%, 96%);
+  --status-bar-border-color: hsl(0, 0%, 93%);
+  --status-bar-border-width: 0;
+  --status-bar-position: related;
+  --status-bar-radius: 0;
+  --status-bar-text-color: hsl(0, 0%, 20%);
+  --suggestion-background: hsl(0, 0%, 99%);
+  --tab-background-active: hsl(0, 0%, 99%);
+  --tab-container-background: hsl(0, 0%, 99%);
+  --tab-curve: 8px;
+  --tab-divider-color: transparent;
+  --tab-outline-color: hsl(0, 0%, 93%);
+  --tab-radius-active: 8px 8px 0 0;
+  --tab-switcher-background: hsl(0, 0%, 96%);
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 96%), transparent);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(259.1, 89.9%, 69.9%);
+  --tab-text-color: hsl(0, 0%, 60%);
+  --tab-text-color-active: hsl(0, 0%, 20%);
+  --tab-text-color-focused: hsl(0, 0%, 60%);
+  --tab-text-color-focused-active: hsl(0, 0%, 60%);
+  --tab-text-color-focused-active-current: hsl(0, 0%, 14%);
+  --tab-text-color-focused-highlighted: hsl(259.1, 89.9%, 69.9%);
+  --table-add-button-border-color: hsl(0, 0%, 90%);
+  --table-border-color: hsl(0, 0%, 90%);
+  --table-drag-handle-background-active: hsl(258.1, 90.799%, 75.1425%);
+  --table-drag-handle-color: hsl(0, 0%, 60%);
+  --table-header-background: hsl(0, 0%, 96%);
+  --table-header-border-color: hsl(0, 0%, 90%);
+  --table-header-color: hsl(0, 0%, 14%);
+  --table-selection: hsla(259.1, 89.9%, 69.9%, 0.1);
+  --table-selection-border-color: hsl(258.1, 90.799%, 75.1425%);
+  --tag-background: hsla(259.1, 89.9%, 69.9%, 0.1);
+  --tag-background-hover: hsla(259.1, 89.9%, 69.9%, 0.2);
+  --tag-border-color: hsla(259.1, 89.9%, 69.9%, 0.15);
+  --tag-border-color-hover: hsla(259.1, 89.9%, 69.9%, 0.15);
+  --tag-color: hsl(259.1, 89.9%, 69.9%);
+  --tag-color-hover: hsl(259.1, 89.9%, 69.9%);
+  --tertiary: var(--text-accent-hover, hsl(256.1, 91.698%, 80.385%));
+  --text-accent: hsl(259.1, 89.9%, 69.9%);
+  --text-accent-hover: hsl(256.1, 91.698%, 80.385%);
+  --text-faint: hsl(0, 0%, 60%);
+  --text-muted: hsl(0, 0%, 20%);
+  --text-normal: hsl(0, 0%, 14%);
+  --text-selection: hsla(259.1, 89.9%, 69.9%, 0.2);
+  --textHighlight: var(--background-modifier-active-hover, transparent);
+  --titlebar-background: hsl(0, 0%, 96%);
+  --titlebar-background-focused: hsl(0, 0%, 96%);
+  --titlebar-border-color: hsl(0, 0%, 90%);
+  --titlebar-text-color: hsl(0, 0%, 20%);
+  --titlebar-text-color-focused: hsl(0, 0%, 14%);
+  --vault-profile-color: hsl(0, 0%, 14%);
+  --vault-profile-color-hover: hsl(0, 0%, 14%);
+  --violet-h: 259;
+  --violet-l: 70%;
+  --violet-s: 90%;
+  --white-h: 0;
+  --white-l: 100%;
+  --white-s: 0%;
+  --yellow-h: 47;
+  --yellow-l: 62%;
+  --yellow-s: 100%;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -7162,4 +7163,210 @@ html[saved-theme="light"] body ul.tags > li {
   }
 }
 `,
+  classSettings: {
+    "obsidian-font-jetbrains-mono": `.obsidian-font-jetbrains-mono {
+--font-default: "JetBrains Mono", monospace;
+}`,
+    "obsidian-font-excalifont": `.obsidian-font-excalifont {
+--font-default: "Excalifont", sans-serif;
+}`,
+    "obsidian-font-cascadia-code": `.obsidian-font-cascadia-code {
+--font-default: "Cascadia Code", monospace;
+}`,
+    "folder-titles-accent": `.folder-titles-accent .nav-folder .nav-folder-title {
+color: var(--color-accent);
+}`,
+    "folder-titles-red": `.folder-titles-red .nav-folder .nav-folder-title {
+color: hsl(var(--primary-red));
+}`,
+    "folder-titles-orange": `.folder-titles-orange .nav-folder .nav-folder-title {
+color: hsl(var(--primary-orange));
+}`,
+    "folder-titles-yellow": `.folder-titles-yellow .nav-folder .nav-folder-title {
+color: hsl(var(--primary-yellow));
+}`,
+    "folder-titles-lime": `.folder-titles-lime .nav-folder .nav-folder-title {
+color: hsl(var(--primary-lime));
+}`,
+    "folder-titles-green": `.folder-titles-green .nav-folder .nav-folder-title {
+color: hsl(var(--primary-green));
+}`,
+    "folder-titles-cyan": `.folder-titles-cyan .nav-folder .nav-folder-title {
+color: hsl(var(--primary-cyan));
+}`,
+    "folder-titles-sky": `.folder-titles-sky .nav-folder .nav-folder-title {
+color: hsl(var(--primary-sky));
+}`,
+    "folder-titles-blue": `.folder-titles-blue .nav-folder .nav-folder-title {
+color: hsl(var(--primary-blue));
+}`,
+    "folder-titles-indigo": `.folder-titles-indigo .nav-folder .nav-folder-title {
+color: hsl(var(--primary-indigo));
+}`,
+    "folder-titles-violet": `.folder-titles-violet .nav-folder .nav-folder-title {
+color: hsl(var(--primary-violet));
+}`,
+    "folder-titles-pink": `.folder-titles-pink .nav-folder .nav-folder-title {
+color: hsl(var(--primary-pink));
+}`,
+    "folder-titles-gray": `.folder-titles-gray .nav-folder .nav-folder-title {
+color: hsl(var(--primary-gray));
+}`,
+    "folder-titles-none": `.folder-titles-none .nav-folder .nav-folder-title {
+color: var(--nav-item-color-active);
+}`,
+    "hide-button-new-note": `.hide-button-new-note .clickable-icon.nav-action-button:has(.svg-icon.lucide-edit) {
+display: none;
+}`,
+    "hide-button-new-folder": `.hide-button-new-folder .clickable-icon.nav-action-button:has(.svg-icon.lucide-folder-plus) {
+display: none;
+}`,
+    "hide-button-sort-order": `.hide-button-sort-order .clickable-icon.nav-action-button:has(.svg-icon.lucide-sort-asc) {
+display: none;
+}`,
+    "hide-button-auto-reveal": `.hide-button-auto-reveal .clickable-icon.nav-action-button:has(.svg-icon.lucide-gallery-vertical) {
+display: none;
+}`,
+    "hide-button-collapse-all": `.hide-button-collapse-all .clickable-icon.nav-action-button:has(.svg-icon.lucide-chevrons-up-down), .hide-button-collapse-all .clickable-icon.nav-action-button:has(.svg-icon.lucide-chevrons-down-up) {
+display: none;
+}`,
+    "hide-button-reading-mode": `.hide-button-reading-mode .view-header .clickable-icon.view-action:has(.svg-icon.lucide-book-open), .hide-button-reading-mode .view-header .clickable-icon.view-action:has(.svg-icon.lucide-edit-3) {
+display: none;
+}`,
+    "hide-button-search-settings": `.hide-button-search-settings .search-row .clickable-icon:has(.svg-icon.lucide-sliders-horizontal) {
+display: none;
+}`,
+    "hide-icon-mobile-chevrons": `.hide-icon-mobile-chevrons .mobile-navbar .navbar-action-flair:has(.svg-icon.lucide-chevrons-up-down) {
+display: none;
+}`,
+    "hide-button-mobile-navbar-action-back": `.hide-button-mobile-navbar-action-back .mobile-navbar-action.mobile-navbar-action-back {
+display: none;
+}`,
+    "hide-button-mobile-navbar-action-forward": `.hide-button-mobile-navbar-action-forward .mobile-navbar-action.mobile-navbar-action-forward {
+display: none;
+}`,
+    "hide-button-mobile-navbar-action-quick-switcher": `.hide-button-mobile-navbar-action-quick-switcher .mobile-navbar-action.mobile-navbar-action-quick-switcher {
+display: none;
+}`,
+    "hide-button-mobile-navbar-action-new-tab": `.hide-button-mobile-navbar-action-new-tab .mobile-navbar-action.mobile-navbar-action-new-tab {
+display: none;
+}`,
+    "hide-button-mobile-navbar-action-tabs": `.hide-button-mobile-navbar-action-tabs .mobile-navbar-action.mobile-navbar-action-tabs {
+display: none;
+}`,
+    "hide-button-mobile-navbar-action-menu": `.hide-button-mobile-navbar-action-menu .mobile-navbar-action.mobile-navbar-action-menu {
+display: none;
+}`,
+    "hide-button-help": `.hide-button-help .workspace-drawer-vault-actions .clickable-icon:has(.svg-icon.help) {
+display: none;
+}`,
+    "order-navbar-button-nth-child-1-1": `.order-navbar-button-nth-child-1-1 .mobile-navbar-action:nth-child(1) {
+order: 1;
+}`,
+    "order-navbar-button-nth-child-1-2": `.order-navbar-button-nth-child-1-2 .mobile-navbar-action:nth-child(1) {
+order: 2;
+}`,
+    "order-navbar-button-nth-child-1-3": `.order-navbar-button-nth-child-1-3 .mobile-navbar-action:nth-child(1) {
+order: 3;
+}`,
+    "order-navbar-button-nth-child-1-4": `.order-navbar-button-nth-child-1-4 .mobile-navbar-action:nth-child(1) {
+order: 4;
+}`,
+    "order-navbar-button-nth-child-1-5": `.order-navbar-button-nth-child-1-5 .mobile-navbar-action:nth-child(1) {
+order: 5;
+}`,
+    "order-navbar-button-nth-child-1-6": `.order-navbar-button-nth-child-1-6 .mobile-navbar-action:nth-child(1) {
+order: 6;
+}`,
+    "order-navbar-button-nth-child-2-1": `.order-navbar-button-nth-child-2-1 .mobile-navbar-action:nth-child(2) {
+order: 1;
+}`,
+    "order-navbar-button-nth-child-2-2": `.order-navbar-button-nth-child-2-2 .mobile-navbar-action:nth-child(2) {
+order: 2;
+}`,
+    "order-navbar-button-nth-child-2-3": `.order-navbar-button-nth-child-2-3 .mobile-navbar-action:nth-child(2) {
+order: 3;
+}`,
+    "order-navbar-button-nth-child-2-4": `.order-navbar-button-nth-child-2-4 .mobile-navbar-action:nth-child(2) {
+order: 4;
+}`,
+    "order-navbar-button-nth-child-2-5": `.order-navbar-button-nth-child-2-5 .mobile-navbar-action:nth-child(2) {
+order: 5;
+}`,
+    "order-navbar-button-nth-child-2-6": `.order-navbar-button-nth-child-2-6 .mobile-navbar-action:nth-child(2) {
+order: 6;
+}`,
+    "order-navbar-button-nth-child-3-1": `.order-navbar-button-nth-child-3-1 .mobile-navbar-action:nth-child(3) {
+order: 1;
+}`,
+    "order-navbar-button-nth-child-3-2": `.order-navbar-button-nth-child-3-2 .mobile-navbar-action:nth-child(3) {
+order: 2;
+}`,
+    "order-navbar-button-nth-child-3-3": `.order-navbar-button-nth-child-3-3 .mobile-navbar-action:nth-child(3) {
+order: 3;
+}`,
+    "order-navbar-button-nth-child-3-4": `.order-navbar-button-nth-child-3-4 .mobile-navbar-action:nth-child(3) {
+order: 4;
+}`,
+    "order-navbar-button-nth-child-3-5": `.order-navbar-button-nth-child-3-5 .mobile-navbar-action:nth-child(3) {
+order: 5;
+}`,
+    "order-navbar-button-nth-child-3-6": `.order-navbar-button-nth-child-3-6 .mobile-navbar-action:nth-child(3) {
+order: 6;
+}`,
+    "order-navbar-button-nth-child-4-1": `.order-navbar-button-nth-child-4-1 .mobile-navbar-action:nth-child(4) {
+order: 1;
+}`,
+    "order-navbar-button-nth-child-4-2": `.order-navbar-button-nth-child-4-2 .mobile-navbar-action:nth-child(4) {
+order: 2;
+}`,
+    "order-navbar-button-nth-child-4-3": `.order-navbar-button-nth-child-4-3 .mobile-navbar-action:nth-child(4) {
+order: 3;
+}`,
+    "order-navbar-button-nth-child-4-4": `.order-navbar-button-nth-child-4-4 .mobile-navbar-action:nth-child(4) {
+order: 4;
+}`,
+    "order-navbar-button-nth-child-4-5": `.order-navbar-button-nth-child-4-5 .mobile-navbar-action:nth-child(4) {
+order: 5;
+}`,
+    "order-navbar-button-nth-child-4-6": `.order-navbar-button-nth-child-4-6 .mobile-navbar-action:nth-child(4) {
+order: 6;
+}`,
+    "order-navbar-button-nth-child-5-1": `.order-navbar-button-nth-child-5-1 .mobile-navbar-action:nth-child(5) {
+order: 1;
+}`,
+    "order-navbar-button-nth-child-5-2": `.order-navbar-button-nth-child-5-2 .mobile-navbar-action:nth-child(5) {
+order: 2;
+}`,
+    "order-navbar-button-nth-child-5-3": `.order-navbar-button-nth-child-5-3 .mobile-navbar-action:nth-child(5) {
+order: 3;
+}`,
+    "order-navbar-button-nth-child-5-4": `.order-navbar-button-nth-child-5-4 .mobile-navbar-action:nth-child(5) {
+order: 4;
+}`,
+    "order-navbar-button-nth-child-5-5": `.order-navbar-button-nth-child-5-5 .mobile-navbar-action:nth-child(5) {
+order: 5;
+}`,
+    "order-navbar-button-nth-child-5-6": `.order-navbar-button-nth-child-5-6 .mobile-navbar-action:nth-child(5) {
+order: 6;
+}`,
+    "order-navbar-button-nth-child-6-1": `.order-navbar-button-nth-child-6-1 .mobile-navbar-action:nth-child(6) {
+order: 1;
+}`,
+    "order-navbar-button-nth-child-6-2": `.order-navbar-button-nth-child-6-2 .mobile-navbar-action:nth-child(6) {
+order: 2;
+}`,
+    "order-navbar-button-nth-child-6-3": `.order-navbar-button-nth-child-6-3 .mobile-navbar-action:nth-child(6) {
+order: 3;
+}`,
+    "order-navbar-button-nth-child-6-4": `.order-navbar-button-nth-child-6-4 .mobile-navbar-action:nth-child(6) {
+order: 4;
+}`,
+    "order-navbar-button-nth-child-6-5": `.order-navbar-button-nth-child-6-5 .mobile-navbar-action:nth-child(6) {
+order: 5;
+}`,
+    "order-navbar-button-nth-child-6-6": `.order-navbar-button-nth-child-6-6 .mobile-navbar-action:nth-child(6) {
+order: 6;
+}`,
+  },
 };

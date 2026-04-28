@@ -42,506 +42,507 @@ export const theme: ThemeData = {
         unicodeRange: null,
       },
     ],
+    styleSettingsId: "obsidian-prism-theme",
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-border-width: 2px !important;
-  --background-modifier-active-hover: hsla(267, 52%, 75%, 0.1) !important;
-  --background-modifier-border: hsl(0, 0%, 30%) !important;
-  --background-modifier-border-focus: hsl(271, 43%, 51%) !important;
-  --background-modifier-border-hover: hsl(271, 43%, 51%) !important;
-  --background-modifier-error: hsl(4, 74%, 74%) !important;
-  --background-modifier-error-hover: hsl(4, 74%, 74%) !important;
-  --background-modifier-form-field: hsl(0, 0%, 8%) !important;
-  --background-modifier-form-field-hover: hsl(0, 0%, 8%) !important;
-  --background-modifier-hover: hsla(271, 48%, 21%, 90%) !important;
-  --background-modifier-success: hsl(124, 48%, 54%) !important;
-  --background-primary: hsl(0, 0%, 18%) !important;
-  --background-primary-alt: hsl(0, 0%, 30%) !important;
-  --background-primary-alt-hsl: 0, 0%, 30% !important;
-  --background-primary-blur: hsl(0, 0%, 18%, 80%) !important;
-  --background-primary-hsl: 0, 0%, 18% !important;
-  --background-secondary: hsl(0, 0%, 12%) !important;
-  --background-secondary-alt: hsl(0, 0%, 8%) !important;
-  --background-secondary-alt-blur: hsla(0, 0%, 8%, 80%) !important;
-  --background-secondary-alt-hsl: 0, 0%, 8% !important;
-  --background-secondary-blur: hsla(0, 0%, 13%, 80%) !important;
-  --background-secondary-blur-hsl: 0, 0%, 13% !important;
-  --background-secondary-hsl: 0, 0%, 12% !important;
-  --bases-cards-background: hsl(0, 0%, 18%) !important;
-  --bases-cards-cover-background: hsl(0, 0%, 30%) !important;
-  --bases-cards-shadow: 0 0 0 1px hsl(0, 0%, 30%) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px hsl(271, 43%, 51%) !important;
-  --bases-embed-border-color: hsl(0, 0%, 30%) !important;
-  --bases-group-heading-property-color: hsl(0, 0%, 86%) !important;
-  --bases-table-border-color: hsl(0, 0%, 30%) !important;
-  --bases-table-cell-background-active: hsl(0, 0%, 8%) !important;
-  --bases-table-cell-background-disabled: hsl(0, 0%, 12%) !important;
-  --bases-table-cell-background-selected: hsla(267, 52%, 75%, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(271, 43%, 51%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(271, 43%, 51%) !important;
-  --bases-table-group-background: hsl(0, 0%, 30%) !important;
-  --bases-table-header-background: hsl(0, 0%, 8%) !important;
-  --bases-table-header-background-hover: hsla(271, 48%, 21%, 90%) !important;
-  --bases-table-header-color: hsl(0, 0%, 86%) !important;
-  --bases-table-summary-background: hsl(0, 0%, 18%) !important;
-  --bases-table-summary-background-hover: hsla(271, 48%, 21%, 90%) !important;
-  --blockquote-background-color: hsl(0, 0%, 12%) !important;
-  --blockquote-border-color: hsl(0, 0%, 30%) !important;
-  --blur-background: color-mix(in srgb, hsl(0, 0%, 12%) 65%, transparent) linear-gradient(hsl(0, 0%, 12%), color-mix(in srgb, hsl(0, 0%, 12%) 65%, transparent)) !important;
-  --blur-intensity: 8px !important;
-  --bodyFont: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --bold-color: hsl(0, 0%, 91%) !important;
-  --button-radius: 4px !important;
+  --accent-border-width: 2px;
+  --background-modifier-active-hover: hsla(267, 52%, 75%, 0.1);
+  --background-modifier-border: hsl(0, 0%, 30%);
+  --background-modifier-border-focus: hsl(271, 43%, 51%);
+  --background-modifier-border-hover: hsl(271, 43%, 51%);
+  --background-modifier-error: hsl(4, 74%, 74%);
+  --background-modifier-error-hover: hsl(4, 74%, 74%);
+  --background-modifier-form-field: hsl(0, 0%, 8%);
+  --background-modifier-form-field-hover: hsl(0, 0%, 8%);
+  --background-modifier-hover: hsla(271, 48%, 21%, 90%);
+  --background-modifier-success: hsl(124, 48%, 54%);
+  --background-primary: hsl(0, 0%, 18%);
+  --background-primary-alt: hsl(0, 0%, 30%);
+  --background-primary-alt-hsl: 0, 0%, 30%;
+  --background-primary-blur: hsl(0, 0%, 18%, 80%);
+  --background-primary-hsl: 0, 0%, 18%;
+  --background-secondary: hsl(0, 0%, 12%);
+  --background-secondary-alt: hsl(0, 0%, 8%);
+  --background-secondary-alt-blur: hsla(0, 0%, 8%, 80%);
+  --background-secondary-alt-hsl: 0, 0%, 8%;
+  --background-secondary-blur: hsla(0, 0%, 13%, 80%);
+  --background-secondary-blur-hsl: 0, 0%, 13%;
+  --background-secondary-hsl: 0, 0%, 12%;
+  --bases-cards-background: hsl(0, 0%, 18%);
+  --bases-cards-cover-background: hsl(0, 0%, 30%);
+  --bases-cards-shadow: 0 0 0 1px hsl(0, 0%, 30%);
+  --bases-cards-shadow-hover: 0 0 0 1px hsl(271, 43%, 51%);
+  --bases-embed-border-color: hsl(0, 0%, 30%);
+  --bases-group-heading-property-color: hsl(0, 0%, 86%);
+  --bases-table-border-color: hsl(0, 0%, 30%);
+  --bases-table-cell-background-active: hsl(0, 0%, 8%);
+  --bases-table-cell-background-disabled: hsl(0, 0%, 12%);
+  --bases-table-cell-background-selected: hsla(267, 52%, 75%, 0.1);
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(271, 43%, 51%);
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(271, 43%, 51%);
+  --bases-table-group-background: hsl(0, 0%, 30%);
+  --bases-table-header-background: hsl(0, 0%, 8%);
+  --bases-table-header-background-hover: hsla(271, 48%, 21%, 90%);
+  --bases-table-header-color: hsl(0, 0%, 86%);
+  --bases-table-summary-background: hsl(0, 0%, 18%);
+  --bases-table-summary-background-hover: hsla(271, 48%, 21%, 90%);
+  --blockquote-background-color: hsl(0, 0%, 12%);
+  --blockquote-border-color: hsl(0, 0%, 30%);
+  --blur-background: color-mix(in srgb, hsl(0, 0%, 12%) 65%, transparent) linear-gradient(hsl(0, 0%, 12%), color-mix(in srgb, hsl(0, 0%, 12%) 65%, transparent));
+  --blur-intensity: 8px;
+  --bodyFont: var(--font-text, "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --bold-color: hsl(0, 0%, 91%);
+  --button-radius: 4px;
   --callout-background-alpha: 20%;
   --callout-padding: 4px;
   --callout-radius: 8px;
-  --canvas-background: hsl(0, 0%, 18%) !important;
-  --canvas-background-color: 0, 0%, 16% !important;
-  --canvas-card-label-color: hsl(0, 0%, 81%) !important;
-  --canvas-color: 0, 0%, 40% !important;
-  --canvas-dot-pattern: hsla(0, 0%, 30%, 80%) !important;
-  --canvas-highlight-color: 0, 0%, 67% !important;
-  --caret-color: hsl(0, 0%, 91%) !important;
-  --cg-nt-tbar-bg-color: hsl(0, 0%, 12%) !important;
-  --cg-nt-tbar-top-sticky-pos-desktop: -33px !important;
-  --checkbox-border-color: hsl(0, 0%, 30%) !important;
-  --checkbox-border-color-hover: hsl(271, 43%, 51%) !important;
-  --checkbox-color: hsl(0, 0%, 18%) !important;
-  --checkbox-color-hover: hsl(271, 43%, 51%) !important;
-  --checkbox-marker-color: hsl(267, 52%, 75%) !important;
-  --checklist-done-color: hsl(271, 43%, 51%) !important;
-  --code-background: hsl(0, 0%, 8%) !important;
-  --code-border-color: hsl(0, 0%, 30%) !important;
-  --code-border-width: 1px !important;
-  --code-bracket-background: hsla(271, 48%, 21%, 90%) !important;
-  --code-comment: hsl(0, 0%, 67%) !important;
-  --code-function: hsl(44, 60%, 53%) !important;
-  --code-important: hsl(26, 85%, 63%) !important;
-  --code-keyword: hsl(330, 64%, 74%) !important;
-  --code-normal: hsl(0, 0%, 91%) !important;
-  --code-operator: hsl(4, 74%, 74%) !important;
-  --code-property: hsl(195, 69%, 58%) !important;
-  --code-punctuation: hsl(0, 0%, 86%) !important;
-  --code-string: hsl(124, 48%, 54%) !important;
-  --code-tag: hsl(4, 74%, 74%) !important;
-  --code-value: hsl(267, 52%, 75%) !important;
-  --codeFont: "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --collapse-icon-color: hsl(0, 0%, 81%) !important;
-  --collapse-icon-color-collapsed: hsl(0, 0%, 91%) !important;
-  --color-accent: hsl(267, 52%, 75%) !important;
-  --color-accent-1: hsl(271, 43%, 51%) !important;
-  --color-accent-2: hsl(271, 48%, 21%) !important;
-  --color-accent-base-dt: 2, 55%, 19% !important;
-  --color-accent-base-lt: 2, 55%, 19% !important;
-  --color-accent-hsl: 267, 52%, 75% !important;
-  --color-accent-text-dt: 4, 74%, 74% !important;
-  --color-accent-text-lt: 4, 74%, 74% !important;
-  --color-accent-tint-dt: 3, 49%, 46% !important;
-  --color-accent-tint-lt: 3, 49%, 46% !important;
-  --color-blue: hsl(225, 61%, 75%) !important;
-  --color-blue-base: hsl(225, 50%, 20%) !important;
-  --color-blue-base-hsl: 225, 50%, 20% !important;
-  --color-blue-text: hsl(225, 61%, 75%) !important;
-  --color-blue-text-hsl: 225, 61%, 75% !important;
-  --color-blue-tint: hsl(224, 44%, 49%) !important;
-  --color-blue-tint-hsl: 224, 44%, 49% !important;
-  --color-cyan: hsl(195, 69%, 58%) !important;
-  --color-cyan-base: hsl(195, 65%, 13%) !important;
-  --color-cyan-base-hsl: 195, 65%, 13% !important;
-  --color-cyan-text: hsl(195, 69%, 58%) !important;
-  --color-cyan-text-hsl: 195, 69%, 58% !important;
-  --color-cyan-tint: hsl(195, 52%, 34%) !important;
-  --color-cyan-tint-hsl: 195, 52%, 34% !important;
-  --color-green: hsl(124, 48%, 54%) !important;
-  --color-green-base: hsl(124, 54%, 12%) !important;
-  --color-green-base-hsl: 124, 54%, 12% !important;
-  --color-green-text: hsl(124, 48%, 54%) !important;
-  --color-green-text-hsl: 124, 48%, 54% !important;
-  --color-green-tint: hsl(123, 43%, 32%) !important;
-  --color-green-tint-hsl: 123, 43%, 32% !important;
-  --color-grey-base: hsl(0, 0%, 16%) !important;
-  --color-grey-base-hsl: 0, 0%, 16% !important;
-  --color-grey-text: hsl(0, 0%, 67%) !important;
-  --color-grey-text-hsl: 0, 0%, 67% !important;
-  --color-grey-tint: hsl(0, 0%, 40%) !important;
-  --color-grey-tint-hsl: 0, 0%, 40% !important;
-  --color-mint-base: hsl(165, 88%, 10%) !important;
-  --color-mint-base-hsl: 165, 88%, 10% !important;
-  --color-mint-text: hsl(166, 67%, 45%) !important;
-  --color-mint-text-hsl: 166, 67%, 45% !important;
-  --color-mint-tint: hsl(166, 73%, 26%) !important;
-  --color-mint-tint-hsl: 166, 73%, 26% !important;
-  --color-orange: hsl(26, 85%, 63%) !important;
-  --color-orange-base: hsl(26, 65%, 15%) !important;
-  --color-orange-base-hsl: 26, 65%, 15% !important;
-  --color-orange-text: hsl(26, 85%, 63%) !important;
-  --color-orange-text-hsl: 26, 85%, 63% !important;
-  --color-orange-tint: hsl(27, 53%, 37%) !important;
-  --color-orange-tint-hsl: 27, 53%, 37% !important;
-  --color-pink: hsl(330, 64%, 74%) !important;
-  --color-pink-base: hsl(325, 55%, 18%) !important;
-  --color-pink-base-hsl: 325, 55%, 18% !important;
-  --color-pink-text: hsl(330, 64%, 74%) !important;
-  --color-pink-text-hsl: 330, 64%, 74% !important;
-  --color-pink-tint: hsl(325, 47%, 45%) !important;
-  --color-pink-tint-hsl: 325, 47%, 45% !important;
-  --color-purple: hsl(267, 52%, 75%) !important;
-  --color-purple-base: hsl(271, 48%, 21%) !important;
-  --color-purple-base-hsl: 271, 48%, 21% !important;
-  --color-purple-text: hsl(267, 52%, 75%) !important;
-  --color-purple-text-hsl: 267, 52%, 75% !important;
-  --color-purple-tint: hsl(271, 43%, 51%) !important;
-  --color-purple-tint-hsl: 271, 43%, 51% !important;
-  --color-red: hsl(4, 74%, 74%) !important;
-  --color-red-base: hsl(2, 55%, 19%) !important;
-  --color-red-base-hsl: 2, 55%, 19% !important;
-  --color-red-text: hsl(4, 74%, 74%) !important;
-  --color-red-text-hsl: 4, 74%, 74% !important;
-  --color-red-tint: hsl(3, 49%, 46%) !important;
-  --color-red-tint-hsl: 3, 49%, 46% !important;
-  --color-yellow: hsl(44, 60%, 53%) !important;
-  --color-yellow-base: hsl(43, 73%, 12%) !important;
-  --color-yellow-base-hsl: 43, 73%, 12% !important;
-  --color-yellow-text: hsl(44, 60%, 53%) !important;
-  --color-yellow-text-hsl: 44, 60%, 53% !important;
-  --color-yellow-tint: hsl(44, 59%, 31%) !important;
-  --color-yellow-tint-hsl: 44, 59%, 31% !important;
-  --custom-vault-banner-icon-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px'%0Awidth='40' height='40'%0AviewBox='0 0 40 40'%0Astyle=' fill:%23000000'%3E%3Cpath fill='%23dbb065' d='M1.5 35.5L1.5 4.5 11.793 4.5 14.793 7.5 35.5 7.5 35.5 35.5z'%3E%3C/path%3E%3Cpath fill='%23967a44' d='M11.586,5l2.707,2.707L14.586,8H15h20v27H2V5H11.586 M12,4H1v32h35V7H15L12,4L12,4z'%3E%3C/path%3E%3Cg%3E%3Cpath fill='%23f5ce85' d='M1.599 35.5L5.417 14.5 16.151 14.5 19.151 12.5 39.41 12.5 35.577 35.5z'%3E%3C/path%3E%3Cpath fill='%23967a44' d='M38.82,13l-3.667,22H2.198l3.636-20H16h0.303l0.252-0.168L19.303,13H38.82 M40,12H19l-3,2H5L1,36 h35L40,12L40,12z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E") !important;
-  --dark: hsl(0, 0%, 91%) !important;
-  --darkgray: hsl(0, 0%, 91%) !important;
-  --divider-color: hsl(0, 0%, 30%) !important;
-  --divider-color-hover: hsl(271, 43%, 51%) !important;
-  --drag-ghost-text-color: hsl(0, 0%, 91%) !important;
-  --dropdown-background: hsl(0, 0%, 12%) !important;
-  --dropdown-background-hover: hsl(0, 0%, 18%) !important;
-  --embed-block-shadow-hover: 0 0 0 1px hsl(0, 0%, 30%), inset 0 0 0 1px hsl(0, 0%, 30%) !important;
-  --embed-border-bottom: 1px solid hsl(0, 0%, 30%) !important;
-  --embed-border-end: 1px solid hsl(0, 0%, 30%) !important;
-  --embed-border-start: 2px solid hsl(271, 43%, 51%) !important;
-  --embed-border-top: 1px solid hsl(0, 0%, 30%) !important;
-  --embed-max-height: 800px !important;
-  --embed-padding: 8px 16px !important;
-  --fade-away-delay: 850ms !important;
-  --fade-away-opacity: 0.25 !important;
-  --file-folding-offset: 20px !important;
-  --file-header-background: hsl(0, 0%, 18%) !important;
-  --file-header-background-focused: hsl(0, 0%, 18%) !important;
-  --file-header-font: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --file-header-font-size: 15px !important;
-  --flair-background: hsl(0, 0%, 12%) !important;
-  --flair-color: hsl(0, 0%, 91%) !important;
-  --font-interface: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-interface-theme: "Source Sans 3" !important;
-  --font-mermaid: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --font-monospace-theme: "JetBrains Mono" !important;
-  --font-print: "Source Sans 3", Arial' !important;
-  --font-text: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-text-theme: "Source Sans 3" !important;
-  --footnote-divider-color: hsl(0, 0%, 30%) !important;
-  --footnote-id-color: hsl(0, 0%, 86%) !important;
-  --footnote-id-color-no-occurrences: hsl(0, 0%, 81%) !important;
-  --footnote-input-background-active: hsl(0, 0%, 12%) !important;
-  --graph-attachment-color-dt: hsl(44, 60%, 53%) !important;
-  --graph-controls-width: 150px !important;
-  --graph-fill-color-dt: hsl(0, 0%, 67%) !important;
-  --graph-fill-focused-color-dt: hsl(267, 52%, 75%) !important;
-  --graph-line: hsl(0, 0%, 30%) !important;
-  --graph-line-color-dt: hsl(0, 0%, 30%) !important;
-  --graph-node: hsl(0, 0%, 67%) !important;
-  --graph-node-attachment: hsl(44, 60%, 53%) !important;
-  --graph-node-focused: hsl(267, 52%, 75%) !important;
-  --graph-node-tag: hsl(225, 61%, 75%) !important;
-  --graph-node-unresolved: hsl(4, 74%, 74%) !important;
-  --graph-tag-color-dt: hsl(225, 61%, 75%) !important;
-  --graph-text: hsl(0, 0%, 91%) !important;
-  --graph-unresolved-color-dt: hsl(4, 74%, 74%) !important;
-  --gray: hsl(0, 0%, 86%) !important;
-  --h1-color: hsl(0, 0%, 91%) !important;
-  --h1-line-height: 1.3 !important;
-  --h1-size: 2.2em !important;
-  --h1-text-color-dt: hsl(0, 0%, 91%) !important;
-  --h1-weight: 800 !important;
-  --h2-color: hsl(0, 0%, 91%) !important;
-  --h2-line-height: 1.3 !important;
-  --h2-size: 2em !important;
-  --h2-text-color-dt: hsl(0, 0%, 91%) !important;
-  --h2-weight: 800 !important;
-  --h3-color: hsl(0, 0%, 91%) !important;
-  --h3-line-height: 1.35 !important;
-  --h3-size: 1.8em !important;
-  --h3-text-color-dt: hsl(0, 0%, 91%) !important;
-  --h3-weight: 800 !important;
-  --h4-color: hsl(0, 0%, 91%) !important;
-  --h4-size: 1.6em !important;
-  --h4-text-color-dt: hsl(0, 0%, 91%) !important;
-  --h4-weight: 800 !important;
-  --h5-color: hsl(0, 0%, 91%) !important;
-  --h5-size: 1.4em !important;
-  --h5-text-color-dt: hsl(0, 0%, 91%) !important;
-  --h5-weight: 800 !important;
-  --h6-color: hsl(0, 0%, 91%) !important;
-  --h6-size: 1.2em !important;
-  --h6-text-color-dt: hsl(0, 0%, 91%) !important;
-  --h6-weight: 800 !important;
-  --header-height: 41px !important;
-  --headerFont: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: hsl(0, 0%, 81%) !important;
-  --heading-spacing: 1.25em !important;
-  --highlight: hsl(271, 48%, 21%) !important;
-  --highlight-text-normal: hsl(267, 52%, 75%) !important;
-  --hr-color: hsl(0, 0%, 30%) !important;
-  --icon-color: hsl(0, 0%, 86%) !important;
-  --icon-color-active: hsl(271, 43%, 51%) !important;
-  --icon-color-focused: hsl(267, 52%, 75%) !important;
-  --icon-color-hover: hsl(267, 52%, 75%) !important;
-  --indentation-guide-color: hsla(0, 0%, 30%, 80%) !important;
-  --indentation-guide-color-active: hsl(271, 43%, 51%) !important;
-  --indentation-guide-reading-indent: -0.55em !important;
-  --indentation-guide-source-indent: 0.85em !important;
-  --inline-title-line-height: 1.3 !important;
-  --inline-title-size: 2.2em !important;
-  --inline-title-weight: 800 !important;
-  --input-date-separator: hsl(0, 0%, 81%) !important;
-  --input-height: 32px !important;
-  --input-placeholder-color: hsl(0, 0%, 81%) !important;
-  --input-radius: 4px !important;
-  --interactive-accent: hsl(271, 43%, 51%) !important;
-  --interactive-accent-base: hsl(271, 48%, 21%) !important;
-  --interactive-accent-base-hsl: 271, 48%, 21% !important;
-  --interactive-accent-hover: hsl(271, 43%, 51%) !important;
-  --interactive-accent-hsl: 267, 52%, 75% !important;
-  --interactive-accent-text: hsl(267, 52%, 75%) !important;
-  --interactive-accent-text-hsl: 267, 52%, 75% !important;
-  --interactive-accent-tint: hsl(271, 43%, 51%) !important;
-  --interactive-accent-tint-hsl: 271, 43%, 51% !important;
-  --interactive-hover: hsl(0, 0%, 18%) !important;
-  --interactive-normal: hsl(0, 0%, 12%) !important;
-  --italic-color: hsl(0, 0%, 91%) !important;
-  --light: hsl(0, 0%, 18%) !important;
-  --lightgray: hsl(0, 0%, 12%) !important;
-  --link-color: hsl(267, 52%, 75%) !important;
-  --link-color-hover: hsla(267, 52%, 75%, 60%) !important;
-  --link-external-color: hsl(267, 52%, 75%) !important;
-  --link-external-color-dt: 267, 52%, 75% !important;
-  --link-external-color-hover: hsla(267, 52%, 75%, 60%) !important;
-  --link-internal-color-dt: 267, 52%, 75% !important;
-  --link-unresolved-color: hsl(267, 52%, 75%) !important;
-  --link-unresolved-decoration-color: hsla(267, 52%, 75%, 0.3) !important;
-  --list-bullet-end-padding: 3rem !important;
-  --list-indent: 2em !important;
-  --list-indent-source: 0.75em !important;
-  --list-marker-color: hsl(0, 0%, 81%) !important;
-  --list-marker-color-collapsed: hsl(271, 43%, 51%) !important;
-  --list-marker-color-hover: hsl(0, 0%, 86%) !important;
-  --mark-highlight-base: hsl(43, 73%, 12%) !important;
-  --menu-background: hsl(0, 0%, 12%) !important;
-  --menu-border-color: hsl(271, 43%, 51%) !important;
-  --menu-shadow: hsla(0, 0%, 0%, 10%) 0 1px 2px 0 !important;
-  --metadata-border-color: hsl(0, 0%, 30%) !important;
-  --metadata-divider-color: hsl(0, 0%, 30%) !important;
-  --metadata-gap: 2px !important;
-  --metadata-input-background-active: hsl(0, 0%, 12%) !important;
-  --metadata-input-font: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: hsl(0, 0%, 91%) !important;
-  --metadata-label-background-active: hsl(0, 0%, 12%) !important;
-  --metadata-label-font: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: hsl(0, 0%, 86%) !important;
-  --metadata-label-text-color-hover: hsl(0, 0%, 86%) !important;
-  --metadata-property-background-active: hsla(271, 48%, 21%, 90%) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(271, 43%, 51%) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(271, 43%, 51%) !important;
-  --modal-background: hsl(0, 0%, 8%) !important;
-  --modal-border-color: hsl(0, 0%, 30%) !important;
-  --nav-collapse-icon-color: hsl(0, 0%, 81%) !important;
-  --nav-collapse-icon-color-collapsed: hsl(0, 0%, 81%) !important;
-  --nav-header-padding-bottom: 40px !important;
-  --nav-heading-color: hsl(0, 0%, 91%) !important;
-  --nav-heading-color-collapsed: hsl(0, 0%, 81%) !important;
-  --nav-heading-color-collapsed-hover: hsl(0, 0%, 86%) !important;
-  --nav-heading-color-hover: hsl(0, 0%, 91%) !important;
-  --nav-indentation-guide-color: hsla(0, 0%, 30%, 80%) !important;
-  --nav-item-background-active: hsla(271, 48%, 21%, 90%) !important;
-  --nav-item-background-hover: hsla(271, 48%, 21%, 90%) !important;
-  --nav-item-background-selected: hsla(267, 52%, 75%, 0.15) !important;
-  --nav-item-children-margin-left: 13px !important;
-  --nav-item-color: hsl(0, 0%, 86%) !important;
-  --nav-item-color-active: hsl(0, 0%, 91%) !important;
-  --nav-item-color-highlighted: hsl(271, 43%, 51%) !important;
-  --nav-item-color-hover: hsl(267, 52%, 75%) !important;
-  --nav-item-color-selected: hsl(0, 0%, 91%) !important;
-  --nav-item-padding: 2px 8px 2px 24px !important;
-  --nav-item-parent-padding: 2px 8px 2px 24px !important;
-  --nav-tag-color: hsl(0, 0%, 81%) !important;
-  --nav-tag-color-active: hsl(0, 0%, 86%) !important;
-  --nav-tag-color-hover: hsl(0, 0%, 86%) !important;
-  --p-spacing: 0.5em !important;
-  --pdf-background: hsl(0, 0%, 8%) !important;
-  --pdf-page-background: hsl(0, 0%, 18%) !important;
-  --pdf-shadow: 0 0 0 1px hsl(0, 0%, 30%) !important;
-  --pdf-sidebar-background: hsl(0, 0%, 8%) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px hsl(0, 0%, 30%) !important;
-  --pill-border-color: hsl(0, 0%, 30%) !important;
-  --pill-border-color-hover: hsl(271, 43%, 51%) !important;
-  --pill-color: hsl(0, 0%, 86%) !important;
-  --pill-color-hover: hsl(0, 0%, 91%) !important;
-  --pill-color-remove: hsl(0, 0%, 81%) !important;
-  --pill-color-remove-hover: hsl(271, 43%, 51%) !important;
-  --pill-radius: 4px !important;
-  --prompt-background: hsl(0, 0%, 18%) !important;
-  --prompt-border-color: hsl(0, 0%, 30%) !important;
-  --raised-background: color-mix(in srgb, hsl(0, 0%, 12%) 65%, transparent) linear-gradient(hsl(0, 0%, 12%), color-mix(in srgb, hsl(0, 0%, 12%) 65%, transparent)) !important;
-  --ribbon-background: hsl(0, 0%, 12%) !important;
-  --ribbon-background-collapsed: hsl(0, 0%, 12%) !important;
-  --scroll-bar-size: 12px !important;
-  --scroll-button-background-color: hsl(0, 0%, 18%) !important;
-  --scrollbar-active-thumb-bg: hsl(271, 48%, 21%) !important;
-  --scrollbar-bg: hsl(0, 0%, 12%) !important;
-  --scrollbar-thumb-bg: hsl(0, 0%, 30%) !important;
-  --search-clear-button-color: hsl(0, 0%, 86%) !important;
-  --search-icon-color: hsl(0, 0%, 86%) !important;
-  --search-result-background: hsl(0, 0%, 18%) !important;
-  --secondary: hsl(271, 43%, 51%) !important;
-  --setting-group-heading-color: hsl(0, 0%, 91%) !important;
-  --setting-items-background: hsl(0, 0%, 8%) !important;
-  --setting-items-border-color: hsl(0, 0%, 30%) !important;
-  --setting-items-padding: 8px !important;
-  --shadow-color-hsl: 0, 0%, 0% !important;
+  --canvas-background: hsl(0, 0%, 18%);
+  --canvas-background-color: 0, 0%, 16%;
+  --canvas-card-label-color: hsl(0, 0%, 81%);
+  --canvas-color: 0, 0%, 40%;
+  --canvas-dot-pattern: hsla(0, 0%, 30%, 80%);
+  --canvas-highlight-color: 0, 0%, 67%;
+  --caret-color: hsl(0, 0%, 91%);
+  --cg-nt-tbar-bg-color: hsl(0, 0%, 12%);
+  --cg-nt-tbar-top-sticky-pos-desktop: -33px;
+  --checkbox-border-color: hsl(0, 0%, 30%);
+  --checkbox-border-color-hover: hsl(271, 43%, 51%);
+  --checkbox-color: hsl(0, 0%, 18%);
+  --checkbox-color-hover: hsl(271, 43%, 51%);
+  --checkbox-marker-color: hsl(267, 52%, 75%);
+  --checklist-done-color: hsl(271, 43%, 51%);
+  --code-background: hsl(0, 0%, 8%);
+  --code-border-color: hsl(0, 0%, 30%);
+  --code-border-width: 1px;
+  --code-bracket-background: hsla(271, 48%, 21%, 90%);
+  --code-comment: hsl(0, 0%, 67%);
+  --code-function: hsl(44, 60%, 53%);
+  --code-important: hsl(26, 85%, 63%);
+  --code-keyword: hsl(330, 64%, 74%);
+  --code-normal: hsl(0, 0%, 91%);
+  --code-operator: hsl(4, 74%, 74%);
+  --code-property: hsl(195, 69%, 58%);
+  --code-punctuation: hsl(0, 0%, 86%);
+  --code-string: hsl(124, 48%, 54%);
+  --code-tag: hsl(4, 74%, 74%);
+  --code-value: hsl(267, 52%, 75%);
+  --codeFont: var(--font-monospace, "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --collapse-icon-color: hsl(0, 0%, 81%);
+  --collapse-icon-color-collapsed: hsl(0, 0%, 91%);
+  --color-accent: hsl(267, 52%, 75%);
+  --color-accent-1: hsl(271, 43%, 51%);
+  --color-accent-2: hsl(271, 48%, 21%);
+  --color-accent-base-dt: 2, 55%, 19%;
+  --color-accent-base-lt: 2, 55%, 19%;
+  --color-accent-hsl: 267, 52%, 75%;
+  --color-accent-text-dt: 4, 74%, 74%;
+  --color-accent-text-lt: 4, 74%, 74%;
+  --color-accent-tint-dt: 3, 49%, 46%;
+  --color-accent-tint-lt: 3, 49%, 46%;
+  --color-blue: hsl(225, 61%, 75%);
+  --color-blue-base: hsl(225, 50%, 20%);
+  --color-blue-base-hsl: 225, 50%, 20%;
+  --color-blue-text: hsl(225, 61%, 75%);
+  --color-blue-text-hsl: 225, 61%, 75%;
+  --color-blue-tint: hsl(224, 44%, 49%);
+  --color-blue-tint-hsl: 224, 44%, 49%;
+  --color-cyan: hsl(195, 69%, 58%);
+  --color-cyan-base: hsl(195, 65%, 13%);
+  --color-cyan-base-hsl: 195, 65%, 13%;
+  --color-cyan-text: hsl(195, 69%, 58%);
+  --color-cyan-text-hsl: 195, 69%, 58%;
+  --color-cyan-tint: hsl(195, 52%, 34%);
+  --color-cyan-tint-hsl: 195, 52%, 34%;
+  --color-green: hsl(124, 48%, 54%);
+  --color-green-base: hsl(124, 54%, 12%);
+  --color-green-base-hsl: 124, 54%, 12%;
+  --color-green-text: hsl(124, 48%, 54%);
+  --color-green-text-hsl: 124, 48%, 54%;
+  --color-green-tint: hsl(123, 43%, 32%);
+  --color-green-tint-hsl: 123, 43%, 32%;
+  --color-grey-base: hsl(0, 0%, 16%);
+  --color-grey-base-hsl: 0, 0%, 16%;
+  --color-grey-text: hsl(0, 0%, 67%);
+  --color-grey-text-hsl: 0, 0%, 67%;
+  --color-grey-tint: hsl(0, 0%, 40%);
+  --color-grey-tint-hsl: 0, 0%, 40%;
+  --color-mint-base: hsl(165, 88%, 10%);
+  --color-mint-base-hsl: 165, 88%, 10%;
+  --color-mint-text: hsl(166, 67%, 45%);
+  --color-mint-text-hsl: 166, 67%, 45%;
+  --color-mint-tint: hsl(166, 73%, 26%);
+  --color-mint-tint-hsl: 166, 73%, 26%;
+  --color-orange: hsl(26, 85%, 63%);
+  --color-orange-base: hsl(26, 65%, 15%);
+  --color-orange-base-hsl: 26, 65%, 15%;
+  --color-orange-text: hsl(26, 85%, 63%);
+  --color-orange-text-hsl: 26, 85%, 63%;
+  --color-orange-tint: hsl(27, 53%, 37%);
+  --color-orange-tint-hsl: 27, 53%, 37%;
+  --color-pink: hsl(330, 64%, 74%);
+  --color-pink-base: hsl(325, 55%, 18%);
+  --color-pink-base-hsl: 325, 55%, 18%;
+  --color-pink-text: hsl(330, 64%, 74%);
+  --color-pink-text-hsl: 330, 64%, 74%;
+  --color-pink-tint: hsl(325, 47%, 45%);
+  --color-pink-tint-hsl: 325, 47%, 45%;
+  --color-purple: hsl(267, 52%, 75%);
+  --color-purple-base: hsl(271, 48%, 21%);
+  --color-purple-base-hsl: 271, 48%, 21%;
+  --color-purple-text: hsl(267, 52%, 75%);
+  --color-purple-text-hsl: 267, 52%, 75%;
+  --color-purple-tint: hsl(271, 43%, 51%);
+  --color-purple-tint-hsl: 271, 43%, 51%;
+  --color-red: hsl(4, 74%, 74%);
+  --color-red-base: hsl(2, 55%, 19%);
+  --color-red-base-hsl: 2, 55%, 19%;
+  --color-red-text: hsl(4, 74%, 74%);
+  --color-red-text-hsl: 4, 74%, 74%;
+  --color-red-tint: hsl(3, 49%, 46%);
+  --color-red-tint-hsl: 3, 49%, 46%;
+  --color-yellow: hsl(44, 60%, 53%);
+  --color-yellow-base: hsl(43, 73%, 12%);
+  --color-yellow-base-hsl: 43, 73%, 12%;
+  --color-yellow-text: hsl(44, 60%, 53%);
+  --color-yellow-text-hsl: 44, 60%, 53%;
+  --color-yellow-tint: hsl(44, 59%, 31%);
+  --color-yellow-tint-hsl: 44, 59%, 31%;
+  --custom-vault-banner-icon-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px'%0Awidth='40' height='40'%0AviewBox='0 0 40 40'%0Astyle=' fill:%23000000'%3E%3Cpath fill='%23dbb065' d='M1.5 35.5L1.5 4.5 11.793 4.5 14.793 7.5 35.5 7.5 35.5 35.5z'%3E%3C/path%3E%3Cpath fill='%23967a44' d='M11.586,5l2.707,2.707L14.586,8H15h20v27H2V5H11.586 M12,4H1v32h35V7H15L12,4L12,4z'%3E%3C/path%3E%3Cg%3E%3Cpath fill='%23f5ce85' d='M1.599 35.5L5.417 14.5 16.151 14.5 19.151 12.5 39.41 12.5 35.577 35.5z'%3E%3C/path%3E%3Cpath fill='%23967a44' d='M38.82,13l-3.667,22H2.198l3.636-20H16h0.303l0.252-0.168L19.303,13H38.82 M40,12H19l-3,2H5L1,36 h35L40,12L40,12z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  --dark: var(--text-normal, hsl(0, 0%, 91%));
+  --darkgray: var(--text-normal, hsl(0, 0%, 91%));
+  --divider-color: hsl(0, 0%, 30%);
+  --divider-color-hover: hsl(271, 43%, 51%);
+  --drag-ghost-text-color: hsl(0, 0%, 91%);
+  --dropdown-background: hsl(0, 0%, 12%);
+  --dropdown-background-hover: hsl(0, 0%, 18%);
+  --embed-block-shadow-hover: 0 0 0 1px hsl(0, 0%, 30%), inset 0 0 0 1px hsl(0, 0%, 30%);
+  --embed-border-bottom: 1px solid hsl(0, 0%, 30%);
+  --embed-border-end: 1px solid hsl(0, 0%, 30%);
+  --embed-border-start: 2px solid hsl(271, 43%, 51%);
+  --embed-border-top: 1px solid hsl(0, 0%, 30%);
+  --embed-max-height: 800px;
+  --embed-padding: 8px 16px;
+  --fade-away-delay: 850ms;
+  --fade-away-opacity: 0.25;
+  --file-folding-offset: 20px;
+  --file-header-background: hsl(0, 0%, 18%);
+  --file-header-background-focused: hsl(0, 0%, 18%);
+  --file-header-font: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --file-header-font-size: 15px;
+  --flair-background: hsl(0, 0%, 12%);
+  --flair-color: hsl(0, 0%, 91%);
+  --font-interface: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-interface-theme: "Source Sans 3";
+  --font-mermaid: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-theme: "JetBrains Mono";
+  --font-print: "Source Sans 3", Arial';
+  --font-text: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-text-theme: "Source Sans 3";
+  --footnote-divider-color: hsl(0, 0%, 30%);
+  --footnote-id-color: hsl(0, 0%, 86%);
+  --footnote-id-color-no-occurrences: hsl(0, 0%, 81%);
+  --footnote-input-background-active: hsl(0, 0%, 12%);
+  --graph-attachment-color-dt: hsl(44, 60%, 53%);
+  --graph-controls-width: 150px;
+  --graph-fill-color-dt: hsl(0, 0%, 67%);
+  --graph-fill-focused-color-dt: hsl(267, 52%, 75%);
+  --graph-line: hsl(0, 0%, 30%);
+  --graph-line-color-dt: hsl(0, 0%, 30%);
+  --graph-node: hsl(0, 0%, 67%);
+  --graph-node-attachment: hsl(44, 60%, 53%);
+  --graph-node-focused: hsl(267, 52%, 75%);
+  --graph-node-tag: hsl(225, 61%, 75%);
+  --graph-node-unresolved: hsl(4, 74%, 74%);
+  --graph-tag-color-dt: hsl(225, 61%, 75%);
+  --graph-text: hsl(0, 0%, 91%);
+  --graph-unresolved-color-dt: hsl(4, 74%, 74%);
+  --gray: var(--text-muted, hsl(0, 0%, 86%));
+  --h1-color: hsl(0, 0%, 91%);
+  --h1-line-height: 1.3;
+  --h1-size: 2.2em;
+  --h1-text-color-dt: hsl(0, 0%, 91%);
+  --h1-weight: 800;
+  --h2-color: hsl(0, 0%, 91%);
+  --h2-line-height: 1.3;
+  --h2-size: 2em;
+  --h2-text-color-dt: hsl(0, 0%, 91%);
+  --h2-weight: 800;
+  --h3-color: hsl(0, 0%, 91%);
+  --h3-line-height: 1.35;
+  --h3-size: 1.8em;
+  --h3-text-color-dt: hsl(0, 0%, 91%);
+  --h3-weight: 800;
+  --h4-color: hsl(0, 0%, 91%);
+  --h4-size: 1.6em;
+  --h4-text-color-dt: hsl(0, 0%, 91%);
+  --h4-weight: 800;
+  --h5-color: hsl(0, 0%, 91%);
+  --h5-size: 1.4em;
+  --h5-text-color-dt: hsl(0, 0%, 91%);
+  --h5-weight: 800;
+  --h6-color: hsl(0, 0%, 91%);
+  --h6-size: 1.2em;
+  --h6-text-color-dt: hsl(0, 0%, 91%);
+  --h6-weight: 800;
+  --header-height: 41px;
+  --headerFont: var(--font-text, "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --heading-formatting: hsl(0, 0%, 81%);
+  --heading-spacing: 1.25em;
+  --highlight: var(--text-highlight-bg, hsl(271, 48%, 21%));
+  --highlight-text-normal: hsl(267, 52%, 75%);
+  --hr-color: hsl(0, 0%, 30%);
+  --icon-color: hsl(0, 0%, 86%);
+  --icon-color-active: hsl(271, 43%, 51%);
+  --icon-color-focused: hsl(267, 52%, 75%);
+  --icon-color-hover: hsl(267, 52%, 75%);
+  --indentation-guide-color: hsla(0, 0%, 30%, 80%);
+  --indentation-guide-color-active: hsl(271, 43%, 51%);
+  --indentation-guide-reading-indent: -0.55em;
+  --indentation-guide-source-indent: 0.85em;
+  --inline-title-line-height: 1.3;
+  --inline-title-size: 2.2em;
+  --inline-title-weight: 800;
+  --input-date-separator: hsl(0, 0%, 81%);
+  --input-height: 32px;
+  --input-placeholder-color: hsl(0, 0%, 81%);
+  --input-radius: 4px;
+  --interactive-accent: hsl(271, 43%, 51%);
+  --interactive-accent-base: hsl(271, 48%, 21%);
+  --interactive-accent-base-hsl: 271, 48%, 21%;
+  --interactive-accent-hover: hsl(271, 43%, 51%);
+  --interactive-accent-hsl: 267, 52%, 75%;
+  --interactive-accent-text: hsl(267, 52%, 75%);
+  --interactive-accent-text-hsl: 267, 52%, 75%;
+  --interactive-accent-tint: hsl(271, 43%, 51%);
+  --interactive-accent-tint-hsl: 271, 43%, 51%;
+  --interactive-hover: hsl(0, 0%, 18%);
+  --interactive-normal: hsl(0, 0%, 12%);
+  --italic-color: hsl(0, 0%, 91%);
+  --light: var(--background-primary, hsl(0, 0%, 18%));
+  --lightgray: var(--background-secondary, hsl(0, 0%, 12%));
+  --link-color: hsl(267, 52%, 75%);
+  --link-color-hover: hsla(267, 52%, 75%, 60%);
+  --link-external-color: hsl(267, 52%, 75%);
+  --link-external-color-dt: 267, 52%, 75%;
+  --link-external-color-hover: hsla(267, 52%, 75%, 60%);
+  --link-internal-color-dt: 267, 52%, 75%;
+  --link-unresolved-color: hsl(267, 52%, 75%);
+  --link-unresolved-decoration-color: hsla(267, 52%, 75%, 0.3);
+  --list-bullet-end-padding: 3rem;
+  --list-indent: 2em;
+  --list-indent-source: 0.75em;
+  --list-marker-color: hsl(0, 0%, 81%);
+  --list-marker-color-collapsed: hsl(271, 43%, 51%);
+  --list-marker-color-hover: hsl(0, 0%, 86%);
+  --mark-highlight-base: hsl(43, 73%, 12%);
+  --menu-background: hsl(0, 0%, 12%);
+  --menu-border-color: hsl(271, 43%, 51%);
+  --menu-shadow: hsla(0, 0%, 0%, 10%) 0 1px 2px 0;
+  --metadata-border-color: hsl(0, 0%, 30%);
+  --metadata-divider-color: hsl(0, 0%, 30%);
+  --metadata-gap: 2px;
+  --metadata-input-background-active: hsl(0, 0%, 12%);
+  --metadata-input-font: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-input-text-color: hsl(0, 0%, 91%);
+  --metadata-label-background-active: hsl(0, 0%, 12%);
+  --metadata-label-font: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-label-text-color: hsl(0, 0%, 86%);
+  --metadata-label-text-color-hover: hsl(0, 0%, 86%);
+  --metadata-property-background-active: hsla(271, 48%, 21%, 90%);
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(271, 43%, 51%);
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(271, 43%, 51%);
+  --modal-background: hsl(0, 0%, 8%);
+  --modal-border-color: hsl(0, 0%, 30%);
+  --nav-collapse-icon-color: hsl(0, 0%, 81%);
+  --nav-collapse-icon-color-collapsed: hsl(0, 0%, 81%);
+  --nav-header-padding-bottom: 40px;
+  --nav-heading-color: hsl(0, 0%, 91%);
+  --nav-heading-color-collapsed: hsl(0, 0%, 81%);
+  --nav-heading-color-collapsed-hover: hsl(0, 0%, 86%);
+  --nav-heading-color-hover: hsl(0, 0%, 91%);
+  --nav-indentation-guide-color: hsla(0, 0%, 30%, 80%);
+  --nav-item-background-active: hsla(271, 48%, 21%, 90%);
+  --nav-item-background-hover: hsla(271, 48%, 21%, 90%);
+  --nav-item-background-selected: hsla(267, 52%, 75%, 0.15);
+  --nav-item-children-margin-left: 13px;
+  --nav-item-color: hsl(0, 0%, 86%);
+  --nav-item-color-active: hsl(0, 0%, 91%);
+  --nav-item-color-highlighted: hsl(271, 43%, 51%);
+  --nav-item-color-hover: hsl(267, 52%, 75%);
+  --nav-item-color-selected: hsl(0, 0%, 91%);
+  --nav-item-padding: 2px 8px 2px 24px;
+  --nav-item-parent-padding: 2px 8px 2px 24px;
+  --nav-tag-color: hsl(0, 0%, 81%);
+  --nav-tag-color-active: hsl(0, 0%, 86%);
+  --nav-tag-color-hover: hsl(0, 0%, 86%);
+  --p-spacing: 0.5em;
+  --pdf-background: hsl(0, 0%, 8%);
+  --pdf-page-background: hsl(0, 0%, 18%);
+  --pdf-shadow: 0 0 0 1px hsl(0, 0%, 30%);
+  --pdf-sidebar-background: hsl(0, 0%, 8%);
+  --pdf-thumbnail-shadow: 0 0 0 1px hsl(0, 0%, 30%);
+  --pill-border-color: hsl(0, 0%, 30%);
+  --pill-border-color-hover: hsl(271, 43%, 51%);
+  --pill-color: hsl(0, 0%, 86%);
+  --pill-color-hover: hsl(0, 0%, 91%);
+  --pill-color-remove: hsl(0, 0%, 81%);
+  --pill-color-remove-hover: hsl(271, 43%, 51%);
+  --pill-radius: 4px;
+  --prompt-background: hsl(0, 0%, 18%);
+  --prompt-border-color: hsl(0, 0%, 30%);
+  --raised-background: color-mix(in srgb, hsl(0, 0%, 12%) 65%, transparent) linear-gradient(hsl(0, 0%, 12%), color-mix(in srgb, hsl(0, 0%, 12%) 65%, transparent));
+  --ribbon-background: hsl(0, 0%, 12%);
+  --ribbon-background-collapsed: hsl(0, 0%, 12%);
+  --scroll-bar-size: 12px;
+  --scroll-button-background-color: hsl(0, 0%, 18%);
+  --scrollbar-active-thumb-bg: hsl(271, 48%, 21%);
+  --scrollbar-bg: hsl(0, 0%, 12%);
+  --scrollbar-thumb-bg: hsl(0, 0%, 30%);
+  --search-clear-button-color: hsl(0, 0%, 86%);
+  --search-icon-color: hsl(0, 0%, 86%);
+  --search-result-background: hsl(0, 0%, 18%);
+  --secondary: var(--text-accent, hsl(271, 43%, 51%));
+  --setting-group-heading-color: hsl(0, 0%, 91%);
+  --setting-items-background: hsl(0, 0%, 8%);
+  --setting-items-border-color: hsl(0, 0%, 30%);
+  --setting-items-padding: 8px;
+  --shadow-color-hsl: 0, 0%, 0%;
   --shadow-l: hsla(0, 0%, 0%, 5%) 0 1px 2px, hsla(0, 0%, 0%, 5%) 0 2px 4px,
-  	hsla(0, 0%, 0%, 5%) 0 4px 8px, hsla(0, 0%, 0%, 5%) 0 6px 12px !important;
-  --shadow-s: hsla(0, 0%, 0%, 10%) 0 1px 2px 0 !important;
-  --shiki-active-tab-border-color: hsl(0, 0%, 86%) !important;
-  --shiki-code-background: hsl(0, 0%, 8%) !important;
-  --shiki-code-block-spacing: 0.5em !important;
-  --shiki-code-comment: hsl(0, 0%, 81%) !important;
-  --shiki-code-function: hsl(124, 48%, 54%) !important;
-  --shiki-code-important: hsl(26, 85%, 63%) !important;
-  --shiki-code-keyword: hsl(330, 64%, 74%) !important;
-  --shiki-code-normal: hsl(0, 0%, 86%) !important;
-  --shiki-code-property: hsl(195, 69%, 58%) !important;
-  --shiki-code-punctuation: hsl(0, 0%, 86%) !important;
-  --shiki-code-string: hsl(44, 60%, 53%) !important;
-  --shiki-code-value: hsl(267, 52%, 75%) !important;
-  --shiki-gutter-border-color: hsl(0, 0%, 30%) !important;
-  --shiki-gutter-text-color: hsl(0, 0%, 81%) !important;
-  --shiki-gutter-text-color-highlight: hsl(0, 0%, 86%) !important;
-  --shiki-highlight-neutral: hsl(0, 0%, 86%) !important;
-  --shiki-terminal-dots-color: hsl(0, 0%, 81%) !important;
-  --slider-thumb-border-color: hsl(271, 43%, 51%) !important;
-  --slider-thumb-radius: 4px !important;
-  --slider-thumb-width: 10px !important;
-  --slider-track-background: hsl(0, 0%, 30%) !important;
-  --status-bar-background: hsl(0, 0%, 12%) !important;
-  --status-bar-background-color-dt: #2b2b2b !important;
-  --status-bar-background-color-lt: #ebecef !important;
-  --status-bar-border-color: hsl(0, 0%, 30%) !important;
-  --status-bar-font-size: 13px !important;
-  --status-bar-text-color: hsl(0, 0%, 86%) !important;
-  --strikethrough-line-color: hsl(0, 0%, 86%) !important;
-  --strikethrough-line-color-dt: hsl(0, 0%, 86%) !important;
-  --strikethrough-text-color: hsl(0, 0%, 86%) !important;
-  --strikethrough-text-color-dt: hsl(0, 0%, 86%) !important;
-  --suggestion-background: hsl(0, 0%, 18%) !important;
-  --sync-avatar-color-1: hsl(4, 74%, 74%) !important;
-  --sync-avatar-color-2: hsl(26, 85%, 63%) !important;
-  --sync-avatar-color-3: hsl(44, 60%, 53%) !important;
-  --sync-avatar-color-4: hsl(124, 48%, 54%) !important;
-  --sync-avatar-color-5: hsl(195, 69%, 58%) !important;
-  --sync-avatar-color-6: hsl(225, 61%, 75%) !important;
-  --sync-avatar-color-7: hsl(267, 52%, 75%) !important;
-  --sync-avatar-color-8: hsl(330, 64%, 74%) !important;
-  --tab-background-active: hsl(0, 0%, 18%) !important;
-  --tab-container-background: hsl(0, 0%, 12%) !important;
-  --tab-divider-color: hsl(271, 43%, 51%) !important;
-  --tab-outline-color: hsl(0, 0%, 30%) !important;
-  --tab-radius-active: 8px !important;
-  --tab-stacked-font-size: 15px !important;
-  --tab-stacked-header-width: 41px !important;
-  --tab-stacked-shadow: 0 !important;
-  --tab-switcher-background: hsl(0, 0%, 12%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 12%), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(267, 52%, 75%) !important;
-  --tab-text-color: hsl(0, 0%, 81%) !important;
-  --tab-text-color-active: hsl(0, 0%, 86%) !important;
-  --tab-text-color-focused: hsl(0, 0%, 86%) !important;
-  --tab-text-color-focused-active: hsl(0, 0%, 86%) !important;
-  --tab-text-color-focused-active-current: hsl(0, 0%, 91%) !important;
-  --tab-text-color-focused-highlighted: hsl(271, 43%, 51%) !important;
-  --table-add-button-border-color: hsl(0, 0%, 30%) !important;
-  --table-border-color: hsl(0, 0%, 30%) !important;
-  --table-drag-handle-background-active: hsl(271, 43%, 51%) !important;
-  --table-drag-handle-color: hsl(0, 0%, 81%) !important;
-  --table-drag-handle-color-active: hsl(267, 52%, 75%) !important;
-  --table-header-border-color: hsl(0, 0%, 30%) !important;
-  --table-header-color: hsl(0, 0%, 91%) !important;
-  --table-selection: hsla(267, 52%, 75%, 0.1) !important;
-  --table-selection-border-color: hsl(271, 43%, 51%) !important;
-  --tag-background: hsla(267, 52%, 75%, 0.1) !important;
-  --tag-background-hover: hsla(267, 52%, 75%, 0.2) !important;
-  --tag-border-color: hsla(267, 52%, 75%, 0.15) !important;
-  --tag-border-color-hover: hsla(267, 52%, 75%, 0.15) !important;
-  --tag-border-width: 2px !important;
-  --tag-color: hsl(271, 43%, 51%) !important;
-  --tag-color-hover: hsl(271, 43%, 51%) !important;
-  --tag-padding-x: 0.75ch !important;
-  --tag-padding-y: 0 !important;
-  --tag-radius: 4px !important;
-  --tag-size: 0.8em !important;
-  --tertiary: hsl(271, 43%, 51%) !important;
-  --text-accent: hsl(271, 43%, 51%) !important;
-  --text-accent-hover: hsl(271, 43%, 51%) !important;
-  --text-bold-color-dt: hsl(0, 0%, 91%) !important;
-  --text-error: hsl(4, 74%, 74%) !important;
-  --text-faint: hsl(0, 0%, 81%) !important;
-  --text-faint-hsl: 0, 0%, 81% !important;
-  --text-highlight-bg: hsl(271, 48%, 21%) !important;
-  --text-italic-bold-color-dt: hsl(0, 0%, 91%) !important;
-  --text-italic-color-dt: hsl(0, 0%, 91%) !important;
-  --text-muted: hsl(0, 0%, 86%) !important;
-  --text-muted-hsl: 0, 0%, 86% !important;
-  --text-normal: hsl(0, 0%, 91%) !important;
-  --text-normal-hsl: 0, 0%, 91% !important;
-  --text-on-accent: hsl(267, 52%, 75%) !important;
-  --text-on-accent-inverted: hsl(0, 0%, 91%) !important;
-  --text-selection: hsla(271, 43%, 51%, 55%) !important;
-  --text-success: hsl(124, 48%, 54%) !important;
-  --text-warning: hsl(26, 85%, 63%) !important;
-  --textHighlight: hsl(271, 48%, 21%) !important;
-  --titleFont: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: hsl(0, 0%, 12%) !important;
-  --titlebar-background-focused: hsl(0, 0%, 12%) !important;
-  --titlebar-border-color: hsl(0, 0%, 30%) !important;
-  --titlebar-text-color: hsl(0, 0%, 86%) !important;
-  --titlebar-text-color-focused: hsl(0, 0%, 91%) !important;
-  --toggle-radius: 4px !important;
-  --toggle-s-border-width: 1px !important;
-  --toggle-s-thumb-height: 18px !important;
-  --toggle-s-thumb-width: 18px !important;
-  --toggle-s-width: 44px !important;
-  --toggle-thumb-color: hsl(0, 0%, 91%) !important;
-  --toggle-thumb-height: 20px !important;
-  --toggle-thumb-radius: 3px !important;
-  --toggle-thumb-width: 20px !important;
-  --toggle-width: 42px !important;
-  --traffic-lights-offset-x: 41px !important;
-  --traffic-lights-offset-y: 41px !important;
-  --underline-line-color: hsl(0, 0%, 91%) !important;
-  --underline-line-color-dt: hsl(0, 0%, 91%) !important;
-  --underline-text-color: hsl(0, 0%, 91%) !important;
-  --underline-text-color-dt: hsl(0, 0%, 91%) !important;
-  --vault-name-font-size: 15px !important;
-  --vault-profile-color: hsl(0, 0%, 91%) !important;
-  --vault-profile-color-hover: hsl(0, 0%, 91%) !important;
-  --vault-profile-font-size: 15px !important;
-  --window-border: 1px solid hsl(0, 0%, 30%) !important;
-  --window-border-color: hsl(0, 0%, 30%) !important;
-  --quartz-icon-color: currentColor !important;
+  	hsla(0, 0%, 0%, 5%) 0 4px 8px, hsla(0, 0%, 0%, 5%) 0 6px 12px;
+  --shadow-s: hsla(0, 0%, 0%, 10%) 0 1px 2px 0;
+  --shiki-active-tab-border-color: hsl(0, 0%, 86%);
+  --shiki-code-background: hsl(0, 0%, 8%);
+  --shiki-code-block-spacing: 0.5em;
+  --shiki-code-comment: hsl(0, 0%, 81%);
+  --shiki-code-function: hsl(124, 48%, 54%);
+  --shiki-code-important: hsl(26, 85%, 63%);
+  --shiki-code-keyword: hsl(330, 64%, 74%);
+  --shiki-code-normal: hsl(0, 0%, 86%);
+  --shiki-code-property: hsl(195, 69%, 58%);
+  --shiki-code-punctuation: hsl(0, 0%, 86%);
+  --shiki-code-string: hsl(44, 60%, 53%);
+  --shiki-code-value: hsl(267, 52%, 75%);
+  --shiki-gutter-border-color: hsl(0, 0%, 30%);
+  --shiki-gutter-text-color: hsl(0, 0%, 81%);
+  --shiki-gutter-text-color-highlight: hsl(0, 0%, 86%);
+  --shiki-highlight-neutral: hsl(0, 0%, 86%);
+  --shiki-terminal-dots-color: hsl(0, 0%, 81%);
+  --slider-thumb-border-color: hsl(271, 43%, 51%);
+  --slider-thumb-radius: 4px;
+  --slider-thumb-width: 10px;
+  --slider-track-background: hsl(0, 0%, 30%);
+  --status-bar-background: hsl(0, 0%, 12%);
+  --status-bar-background-color-dt: #2b2b2b;
+  --status-bar-background-color-lt: #ebecef;
+  --status-bar-border-color: hsl(0, 0%, 30%);
+  --status-bar-font-size: 13px;
+  --status-bar-text-color: hsl(0, 0%, 86%);
+  --strikethrough-line-color: hsl(0, 0%, 86%);
+  --strikethrough-line-color-dt: hsl(0, 0%, 86%);
+  --strikethrough-text-color: hsl(0, 0%, 86%);
+  --strikethrough-text-color-dt: hsl(0, 0%, 86%);
+  --suggestion-background: hsl(0, 0%, 18%);
+  --sync-avatar-color-1: hsl(4, 74%, 74%);
+  --sync-avatar-color-2: hsl(26, 85%, 63%);
+  --sync-avatar-color-3: hsl(44, 60%, 53%);
+  --sync-avatar-color-4: hsl(124, 48%, 54%);
+  --sync-avatar-color-5: hsl(195, 69%, 58%);
+  --sync-avatar-color-6: hsl(225, 61%, 75%);
+  --sync-avatar-color-7: hsl(267, 52%, 75%);
+  --sync-avatar-color-8: hsl(330, 64%, 74%);
+  --tab-background-active: hsl(0, 0%, 18%);
+  --tab-container-background: hsl(0, 0%, 12%);
+  --tab-divider-color: hsl(271, 43%, 51%);
+  --tab-outline-color: hsl(0, 0%, 30%);
+  --tab-radius-active: 8px;
+  --tab-stacked-font-size: 15px;
+  --tab-stacked-header-width: 41px;
+  --tab-stacked-shadow: 0;
+  --tab-switcher-background: hsl(0, 0%, 12%);
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 12%), transparent);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(267, 52%, 75%);
+  --tab-text-color: hsl(0, 0%, 81%);
+  --tab-text-color-active: hsl(0, 0%, 86%);
+  --tab-text-color-focused: hsl(0, 0%, 86%);
+  --tab-text-color-focused-active: hsl(0, 0%, 86%);
+  --tab-text-color-focused-active-current: hsl(0, 0%, 91%);
+  --tab-text-color-focused-highlighted: hsl(271, 43%, 51%);
+  --table-add-button-border-color: hsl(0, 0%, 30%);
+  --table-border-color: hsl(0, 0%, 30%);
+  --table-drag-handle-background-active: hsl(271, 43%, 51%);
+  --table-drag-handle-color: hsl(0, 0%, 81%);
+  --table-drag-handle-color-active: hsl(267, 52%, 75%);
+  --table-header-border-color: hsl(0, 0%, 30%);
+  --table-header-color: hsl(0, 0%, 91%);
+  --table-selection: hsla(267, 52%, 75%, 0.1);
+  --table-selection-border-color: hsl(271, 43%, 51%);
+  --tag-background: hsla(267, 52%, 75%, 0.1);
+  --tag-background-hover: hsla(267, 52%, 75%, 0.2);
+  --tag-border-color: hsla(267, 52%, 75%, 0.15);
+  --tag-border-color-hover: hsla(267, 52%, 75%, 0.15);
+  --tag-border-width: 2px;
+  --tag-color: hsl(271, 43%, 51%);
+  --tag-color-hover: hsl(271, 43%, 51%);
+  --tag-padding-x: 0.75ch;
+  --tag-padding-y: 0;
+  --tag-radius: 4px;
+  --tag-size: 0.8em;
+  --tertiary: var(--text-accent-hover, hsl(271, 43%, 51%));
+  --text-accent: hsl(271, 43%, 51%);
+  --text-accent-hover: hsl(271, 43%, 51%);
+  --text-bold-color-dt: hsl(0, 0%, 91%);
+  --text-error: hsl(4, 74%, 74%);
+  --text-faint: hsl(0, 0%, 81%);
+  --text-faint-hsl: 0, 0%, 81%;
+  --text-highlight-bg: hsl(271, 48%, 21%);
+  --text-italic-bold-color-dt: hsl(0, 0%, 91%);
+  --text-italic-color-dt: hsl(0, 0%, 91%);
+  --text-muted: hsl(0, 0%, 86%);
+  --text-muted-hsl: 0, 0%, 86%;
+  --text-normal: hsl(0, 0%, 91%);
+  --text-normal-hsl: 0, 0%, 91%;
+  --text-on-accent: hsl(267, 52%, 75%);
+  --text-on-accent-inverted: hsl(0, 0%, 91%);
+  --text-selection: hsla(271, 43%, 51%, 55%);
+  --text-success: hsl(124, 48%, 54%);
+  --text-warning: hsl(26, 85%, 63%);
+  --textHighlight: var(--text-highlight-bg, hsl(271, 48%, 21%));
+  --titleFont: var(--font-text, "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --titlebar-background: hsl(0, 0%, 12%);
+  --titlebar-background-focused: hsl(0, 0%, 12%);
+  --titlebar-border-color: hsl(0, 0%, 30%);
+  --titlebar-text-color: hsl(0, 0%, 86%);
+  --titlebar-text-color-focused: hsl(0, 0%, 91%);
+  --toggle-radius: 4px;
+  --toggle-s-border-width: 1px;
+  --toggle-s-thumb-height: 18px;
+  --toggle-s-thumb-width: 18px;
+  --toggle-s-width: 44px;
+  --toggle-thumb-color: hsl(0, 0%, 91%);
+  --toggle-thumb-height: 20px;
+  --toggle-thumb-radius: 3px;
+  --toggle-thumb-width: 20px;
+  --toggle-width: 42px;
+  --traffic-lights-offset-x: 41px;
+  --traffic-lights-offset-y: 41px;
+  --underline-line-color: hsl(0, 0%, 91%);
+  --underline-line-color-dt: hsl(0, 0%, 91%);
+  --underline-text-color: hsl(0, 0%, 91%);
+  --underline-text-color-dt: hsl(0, 0%, 91%);
+  --vault-name-font-size: 15px;
+  --vault-profile-color: hsl(0, 0%, 91%);
+  --vault-profile-color-hover: hsl(0, 0%, 91%);
+  --vault-profile-font-size: 15px;
+  --window-border: 1px solid hsl(0, 0%, 30%);
+  --window-border-color: hsl(0, 0%, 30%);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -2412,500 +2413,500 @@ html[saved-theme="dark"] body ul.tags > li {
   },
   light: {
     base: `:root:root {
-  --accent-border-width: 2px !important;
-  --background-modifier-active-hover: hsla(258, 75%, 63%, 0.1) !important;
-  --background-modifier-border: hsl(0, 0%, 69%) !important;
-  --background-modifier-border-focus: hsl(252, 84%, 83%) !important;
-  --background-modifier-border-hover: hsl(252, 84%, 83%) !important;
-  --background-modifier-error: hsl(3, 68%, 52%) !important;
-  --background-modifier-error-hover: hsl(3, 68%, 52%) !important;
-  --background-modifier-form-field: hsl(0, 0%, 100%) !important;
-  --background-modifier-form-field-hover: hsl(0, 0%, 100%) !important;
-  --background-modifier-hover: hsla(251, 87%, 94%, 90%) !important;
-  --background-modifier-success: hsl(93, 100%, 27%) !important;
-  --background-primary: hsl(0, 0%, 100%) !important;
-  --background-primary-alt: hsl(0, 0%, 96%) !important;
-  --background-primary-alt-hsl: 0, 0%, 96% !important;
-  --background-primary-blur: hsl(0, 0%, 100%, 80%) !important;
-  --background-primary-hsl: 0, 0%, 100% !important;
-  --background-secondary: hsl(0, 0%, 93%) !important;
-  --background-secondary-alt: hsl(0, 0%, 69%) !important;
-  --background-secondary-alt-blur: hsla(0, 0%, 69%, 80%) !important;
-  --background-secondary-alt-hsl: 0, 0%, 69% !important;
-  --background-secondary-blur: hsla(0, 0%, 92%, 80%) !important;
-  --background-secondary-blur-hsl: 0, 0%, 92% !important;
-  --background-secondary-hsl: 0, 0%, 93% !important;
-  --bases-cards-background: hsl(0, 0%, 100%) !important;
-  --bases-cards-cover-background: hsl(0, 0%, 96%) !important;
-  --bases-cards-shadow: 0 0 0 1px hsl(0, 0%, 69%) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px hsl(252, 84%, 83%) !important;
-  --bases-embed-border-color: hsl(0, 0%, 69%) !important;
-  --bases-group-heading-property-color: hsl(0, 0%, 20%) !important;
-  --bases-table-border-color: hsl(0, 0%, 69%) !important;
-  --bases-table-cell-background-active: hsl(0, 0%, 100%) !important;
-  --bases-table-cell-background-disabled: hsl(0, 0%, 96%) !important;
-  --bases-table-cell-background-selected: hsla(258, 75%, 63%, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(252, 84%, 83%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(252, 84%, 83%) !important;
-  --bases-table-group-background: hsl(0, 0%, 96%) !important;
-  --bases-table-header-background: hsl(0, 0%, 100%) !important;
-  --bases-table-header-background-hover: hsla(251, 87%, 94%, 90%) !important;
-  --bases-table-header-color: hsl(0, 0%, 20%) !important;
-  --bases-table-summary-background: hsl(0, 0%, 100%) !important;
-  --bases-table-summary-background-hover: hsla(251, 87%, 94%, 90%) !important;
-  --blockquote-background-color: hsl(0, 0%, 96%) !important;
-  --blockquote-border-color: hsl(0, 0%, 69%) !important;
-  --blur-background: color-mix(in srgb, hsl(0, 0%, 100%) 65%, transparent) linear-gradient(hsl(0, 0%, 100%), color-mix(in srgb, hsl(0, 0%, 100%) 65%, transparent)) !important;
-  --blur-intensity: 8px !important;
-  --bodyFont: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --bold-color: hsl(0, 0%, 15%) !important;
-  --button-radius: 4px !important;
+  --accent-border-width: 2px;
+  --background-modifier-active-hover: hsla(258, 75%, 63%, 0.1);
+  --background-modifier-border: hsl(0, 0%, 69%);
+  --background-modifier-border-focus: hsl(252, 84%, 83%);
+  --background-modifier-border-hover: hsl(252, 84%, 83%);
+  --background-modifier-error: hsl(3, 68%, 52%);
+  --background-modifier-error-hover: hsl(3, 68%, 52%);
+  --background-modifier-form-field: hsl(0, 0%, 100%);
+  --background-modifier-form-field-hover: hsl(0, 0%, 100%);
+  --background-modifier-hover: hsla(251, 87%, 94%, 90%);
+  --background-modifier-success: hsl(93, 100%, 27%);
+  --background-primary: hsl(0, 0%, 100%);
+  --background-primary-alt: hsl(0, 0%, 96%);
+  --background-primary-alt-hsl: 0, 0%, 96%;
+  --background-primary-blur: hsl(0, 0%, 100%, 80%);
+  --background-primary-hsl: 0, 0%, 100%;
+  --background-secondary: hsl(0, 0%, 93%);
+  --background-secondary-alt: hsl(0, 0%, 69%);
+  --background-secondary-alt-blur: hsla(0, 0%, 69%, 80%);
+  --background-secondary-alt-hsl: 0, 0%, 69%;
+  --background-secondary-blur: hsla(0, 0%, 92%, 80%);
+  --background-secondary-blur-hsl: 0, 0%, 92%;
+  --background-secondary-hsl: 0, 0%, 93%;
+  --bases-cards-background: hsl(0, 0%, 100%);
+  --bases-cards-cover-background: hsl(0, 0%, 96%);
+  --bases-cards-shadow: 0 0 0 1px hsl(0, 0%, 69%);
+  --bases-cards-shadow-hover: 0 0 0 1px hsl(252, 84%, 83%);
+  --bases-embed-border-color: hsl(0, 0%, 69%);
+  --bases-group-heading-property-color: hsl(0, 0%, 20%);
+  --bases-table-border-color: hsl(0, 0%, 69%);
+  --bases-table-cell-background-active: hsl(0, 0%, 100%);
+  --bases-table-cell-background-disabled: hsl(0, 0%, 96%);
+  --bases-table-cell-background-selected: hsla(258, 75%, 63%, 0.1);
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(252, 84%, 83%);
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(252, 84%, 83%);
+  --bases-table-group-background: hsl(0, 0%, 96%);
+  --bases-table-header-background: hsl(0, 0%, 100%);
+  --bases-table-header-background-hover: hsla(251, 87%, 94%, 90%);
+  --bases-table-header-color: hsl(0, 0%, 20%);
+  --bases-table-summary-background: hsl(0, 0%, 100%);
+  --bases-table-summary-background-hover: hsla(251, 87%, 94%, 90%);
+  --blockquote-background-color: hsl(0, 0%, 96%);
+  --blockquote-border-color: hsl(0, 0%, 69%);
+  --blur-background: color-mix(in srgb, hsl(0, 0%, 100%) 65%, transparent) linear-gradient(hsl(0, 0%, 100%), color-mix(in srgb, hsl(0, 0%, 100%) 65%, transparent));
+  --blur-intensity: 8px;
+  --bodyFont: var(--font-text, "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --bold-color: hsl(0, 0%, 15%);
+  --button-radius: 4px;
   --callout-background-alpha: 20%;
   --callout-padding: 4px;
   --callout-radius: 8px;
-  --canvas-background: hsl(0, 0%, 100%) !important;
-  --canvas-background-color: 0, 0%, 90% !important;
-  --canvas-card-label-color: hsl(0, 0%, 35%) !important;
-  --canvas-color: 0, 0%, 73% !important;
-  --canvas-dot-pattern: hsla(0, 0%, 69%, 75%) !important;
-  --canvas-highlight-color: 0, 0%, 47% !important;
-  --caret-color: hsl(0, 0%, 15%) !important;
-  --cg-nt-tbar-top-sticky-pos-desktop: -33px !important;
-  --checkbox-border-color: hsl(0, 0%, 69%) !important;
-  --checkbox-border-color-hover: hsl(252, 84%, 83%) !important;
-  --checkbox-color: hsl(0, 0%, 96%) !important;
-  --checkbox-color-hover: hsl(252, 84%, 83%) !important;
-  --checkbox-marker-color: hsl(258, 75%, 63%) !important;
-  --checklist-done-color: hsl(252, 84%, 83%) !important;
-  --code-background: hsl(0, 0%, 100%) !important;
-  --code-border-color: hsl(0, 0%, 69%) !important;
-  --code-border-width: 1px !important;
-  --code-bracket-background: hsla(251, 87%, 94%, 90%) !important;
-  --code-comment: hsl(0, 0%, 47%) !important;
-  --code-function: hsl(38, 62%, 37%) !important;
-  --code-important: hsl(31, 100%, 36%) !important;
-  --code-keyword: hsl(320, 60%, 50%) !important;
-  --code-normal: hsl(0, 0%, 15%) !important;
-  --code-operator: hsl(3, 68%, 52%) !important;
-  --code-property: hsl(184, 100%, 28%) !important;
-  --code-punctuation: hsl(0, 0%, 20%) !important;
-  --code-string: hsl(93, 100%, 27%) !important;
-  --code-tag: hsl(3, 68%, 52%) !important;
-  --code-value: hsl(258, 75%, 63%) !important;
-  --codeFont: "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --collapse-icon-color: hsl(0, 0%, 35%) !important;
-  --collapse-icon-color-collapsed: hsl(0, 0%, 15%) !important;
-  --color-accent: hsl(258, 75%, 63%) !important;
-  --color-accent-1: hsl(252, 84%, 83%) !important;
-  --color-accent-2: hsl(251, 87%, 94%) !important;
-  --color-accent-base-dt: 7, 90%, 92% !important;
-  --color-accent-base-lt: 7, 90%, 92% !important;
-  --color-accent-hsl: 258, 75%, 63% !important;
-  --color-accent-text-dt: 3, 68%, 52% !important;
-  --color-accent-text-lt: 3, 68%, 52% !important;
-  --color-accent-tint-dt: 7, 82%, 78% !important;
-  --color-accent-tint-lt: 7, 82%, 78% !important;
-  --color-blue: hsl(221, 67%, 56%) !important;
-  --color-blue-base: hsl(217, 76%, 92%) !important;
-  --color-blue-base-hsl: 217, 76%, 92% !important;
-  --color-blue-text: hsl(221, 67%, 56%) !important;
-  --color-blue-text-hsl: 221, 67%, 56% !important;
-  --color-blue-tint: hsl(219, 73%, 78%) !important;
-  --color-blue-tint-hsl: 219, 73%, 78% !important;
-  --color-cyan: hsl(184, 100%, 28%) !important;
-  --color-cyan-base: hsl(184, 60%, 85%) !important;
-  --color-cyan-base-hsl: 184, 60%, 85% !important;
-  --color-cyan-text: hsl(184, 100%, 28%) !important;
-  --color-cyan-text-hsl: 184, 100%, 28% !important;
-  --color-cyan-tint: hsl(184, 61%, 56%) !important;
-  --color-cyan-tint-hsl: 184, 61%, 56% !important;
-  --color-green: hsl(93, 100%, 27%) !important;
-  --color-green-base: hsl(101, 49%, 85%) !important;
-  --color-green-base-hsl: 101, 49%, 85% !important;
-  --color-green-text: hsl(93, 100%, 27%) !important;
-  --color-green-text-hsl: 93, 100%, 27% !important;
-  --color-green-tint: hsl(99, 50%, 59%) !important;
-  --color-green-tint-hsl: 99, 50%, 59% !important;
-  --color-grey-base: hsl(0, 0%, 90%) !important;
-  --color-grey-base-hsl: 0, 0%, 90% !important;
-  --color-grey-text: hsl(0, 0%, 47%) !important;
-  --color-grey-text-hsl: 0, 0%, 47% !important;
-  --color-grey-tint: hsl(0, 0%, 73%) !important;
-  --color-grey-tint-hsl: 0, 0%, 73% !important;
-  --color-mint-base: hsl(152, 62%, 85%) !important;
-  --color-mint-base-hsl: 152, 62%, 85% !important;
-  --color-mint-text: hsl(161, 100%, 26%) !important;
-  --color-mint-text-hsl: 161, 100%, 26% !important;
-  --color-mint-tint: hsl(158, 59%, 55%) !important;
-  --color-mint-tint-hsl: 158, 59%, 55% !important;
-  --color-orange: hsl(31, 100%, 36%) !important;
-  --color-orange-base: hsl(26, 85%, 89%) !important;
-  --color-orange-base-hsl: 26, 85%, 89% !important;
-  --color-orange-text: hsl(31, 100%, 36%) !important;
-  --color-orange-text-hsl: 31, 100%, 36% !important;
-  --color-orange-tint: hsl(27, 80%, 69%) !important;
-  --color-orange-tint-hsl: 27, 80%, 69% !important;
-  --color-pink: hsl(320, 60%, 50%) !important;
-  --color-pink-base: hsl(328, 79%, 93%) !important;
-  --color-pink-base-hsl: 328, 79%, 93% !important;
-  --color-pink-text: hsl(320, 60%, 50%) !important;
-  --color-pink-text-hsl: 320, 60%, 50% !important;
-  --color-pink-tint: hsl(327, 72%, 79%) !important;
-  --color-pink-tint-hsl: 327, 72%, 79% !important;
-  --color-purple: hsl(258, 75%, 63%) !important;
-  --color-purple-base: hsl(251, 87%, 94%) !important;
-  --color-purple-base-hsl: 251, 87%, 94% !important;
-  --color-purple-text: hsl(258, 75%, 63%) !important;
-  --color-purple-text-hsl: 258, 75%, 63% !important;
-  --color-purple-tint: hsl(252, 84%, 83%) !important;
-  --color-purple-tint-hsl: 252, 84%, 83% !important;
-  --color-red: hsl(3, 68%, 52%) !important;
-  --color-red-base: hsl(7, 90%, 92%) !important;
-  --color-red-base-hsl: 7, 90%, 92% !important;
-  --color-red-text: hsl(3, 68%, 52%) !important;
-  --color-red-text-hsl: 3, 68%, 52% !important;
-  --color-red-tint: hsl(7, 82%, 78%) !important;
-  --color-red-tint-hsl: 7, 82%, 78% !important;
-  --color-yellow: hsl(38, 62%, 37%) !important;
-  --color-yellow-base: hsl(42, 88%, 83%) !important;
-  --color-yellow-base-hsl: 42, 88%, 83% !important;
-  --color-yellow-text: hsl(38, 62%, 37%) !important;
-  --color-yellow-text-hsl: 38, 62%, 37% !important;
-  --color-yellow-tint: hsl(44, 67%, 58%) !important;
-  --color-yellow-tint-hsl: 44, 67%, 58% !important;
-  --custom-vault-banner-icon-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px'%0Awidth='40' height='40'%0AviewBox='0 0 40 40'%0Astyle=' fill:%23000000'%3E%3Cpath fill='%23dbb065' d='M1.5 35.5L1.5 4.5 11.793 4.5 14.793 7.5 35.5 7.5 35.5 35.5z'%3E%3C/path%3E%3Cpath fill='%23967a44' d='M11.586,5l2.707,2.707L14.586,8H15h20v27H2V5H11.586 M12,4H1v32h35V7H15L12,4L12,4z'%3E%3C/path%3E%3Cg%3E%3Cpath fill='%23f5ce85' d='M1.599 35.5L5.417 14.5 16.151 14.5 19.151 12.5 39.41 12.5 35.577 35.5z'%3E%3C/path%3E%3Cpath fill='%23967a44' d='M38.82,13l-3.667,22H2.198l3.636-20H16h0.303l0.252-0.168L19.303,13H38.82 M40,12H19l-3,2H5L1,36 h35L40,12L40,12z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E") !important;
-  --dark: hsl(0, 0%, 15%) !important;
-  --darkgray: hsl(0, 0%, 15%) !important;
-  --divider-color: hsl(0, 0%, 69%) !important;
-  --divider-color-hover: hsl(252, 84%, 83%) !important;
-  --drag-ghost-text-color: hsl(0, 0%, 15%) !important;
-  --dropdown-background: hsl(0, 0%, 100%) !important;
-  --dropdown-background-hover: hsl(0, 0%, 100%) !important;
-  --embed-block-shadow-hover: 0 0 0 1px hsl(0, 0%, 69%), inset 0 0 0 1px hsl(0, 0%, 69%) !important;
-  --embed-border-bottom: 1px solid hsl(0, 0%, 69%) !important;
-  --embed-border-end: 1px solid hsl(0, 0%, 69%) !important;
-  --embed-border-start: 2px solid hsl(252, 84%, 83%) !important;
-  --embed-border-top: 1px solid hsl(0, 0%, 69%) !important;
-  --embed-max-height: 800px !important;
-  --embed-padding: 8px 16px !important;
-  --fade-away-delay: 850ms !important;
-  --fade-away-opacity: 0.25 !important;
-  --file-folding-offset: 20px !important;
-  --file-header-background: hsl(0, 0%, 100%) !important;
-  --file-header-background-focused: hsl(0, 0%, 100%) !important;
-  --file-header-font: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --file-header-font-size: 15px !important;
-  --flair-background: hsl(0, 0%, 100%) !important;
-  --flair-color: hsl(0, 0%, 15%) !important;
-  --font-interface: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-interface-theme: "Source Sans 3" !important;
-  --font-mermaid: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --font-monospace-theme: "JetBrains Mono" !important;
-  --font-print: "Source Sans 3", Arial' !important;
-  --font-text: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-text-theme: "Source Sans 3" !important;
-  --footnote-divider-color: hsl(0, 0%, 69%) !important;
-  --footnote-id-color: hsl(0, 0%, 20%) !important;
-  --footnote-id-color-no-occurrences: hsl(0, 0%, 35%) !important;
-  --footnote-input-background-active: hsl(0, 0%, 93%) !important;
-  --graph-attachment-color-lt: hsl(44, 67%, 58%) !important;
-  --graph-controls-width: 150px !important;
-  --graph-fill-color-lt: hsl(0, 0%, 73%) !important;
-  --graph-fill-focused-color-lt: hsl(252, 84%, 83%) !important;
-  --graph-line: hsl(0, 0%, 69%) !important;
-  --graph-line-color-lt: hsl(0, 0%, 69%) !important;
-  --graph-node: hsl(0, 0%, 73%) !important;
-  --graph-node-attachment: hsl(44, 67%, 58%) !important;
-  --graph-node-focused: hsl(252, 84%, 83%) !important;
-  --graph-node-tag: hsl(219, 73%, 78%) !important;
-  --graph-node-unresolved: hsl(7, 82%, 78%) !important;
-  --graph-tag-color-lt: hsl(219, 73%, 78%) !important;
-  --graph-text: hsl(0, 0%, 15%) !important;
-  --graph-unresolved-color-lt: hsl(7, 82%, 78%) !important;
-  --gray: hsl(0, 0%, 20%) !important;
-  --h1-color: hsl(0, 0%, 15%) !important;
-  --h1-line-height: 1.3 !important;
-  --h1-size: 2.2em !important;
-  --h1-text-color-lt: hsl(0, 0%, 15%) !important;
-  --h1-weight: 800 !important;
-  --h2-color: hsl(0, 0%, 15%) !important;
-  --h2-line-height: 1.3 !important;
-  --h2-size: 2em !important;
-  --h2-text-color-lt: hsl(0, 0%, 15%) !important;
-  --h2-weight: 800 !important;
-  --h3-color: hsl(0, 0%, 15%) !important;
-  --h3-line-height: 1.35 !important;
-  --h3-size: 1.8em !important;
-  --h3-text-color-lt: hsl(0, 0%, 15%) !important;
-  --h3-weight: 800 !important;
-  --h4-color: hsl(0, 0%, 15%) !important;
-  --h4-size: 1.6em !important;
-  --h4-text-color-lt: hsl(0, 0%, 15%) !important;
-  --h4-weight: 800 !important;
-  --h5-color: hsl(0, 0%, 15%) !important;
-  --h5-size: 1.4em !important;
-  --h5-text-color-lt: hsl(0, 0%, 15%) !important;
-  --h5-weight: 800 !important;
-  --h6-color: hsl(0, 0%, 15%) !important;
-  --h6-size: 1.2em !important;
-  --h6-text-color-lt: hsl(0, 0%, 15%) !important;
-  --h6-weight: 800 !important;
-  --header-height: 41px !important;
-  --headerFont: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: hsl(0, 0%, 35%) !important;
-  --heading-spacing: 1.25em !important;
-  --highlight: hsl(251, 87%, 94%) !important;
-  --highlight-text-normal: hsl(258, 75%, 63%) !important;
-  --hr-color: hsl(0, 0%, 69%) !important;
-  --icon-color: hsl(0, 0%, 20%) !important;
-  --icon-color-active: hsl(258, 75%, 63%) !important;
-  --icon-color-focused: hsl(258, 75%, 63%) !important;
-  --icon-color-hover: hsl(258, 75%, 63%) !important;
-  --indentation-guide-color: hsla(0, 0%, 69%, 75%) !important;
-  --indentation-guide-color-active: hsl(252, 84%, 83%) !important;
-  --indentation-guide-reading-indent: -0.55em !important;
-  --indentation-guide-source-indent: 0.85em !important;
-  --inline-title-line-height: 1.3 !important;
-  --inline-title-size: 2.2em !important;
-  --inline-title-weight: 800 !important;
-  --input-date-separator: hsl(0, 0%, 35%) !important;
-  --input-height: 32px !important;
-  --input-placeholder-color: hsl(0, 0%, 35%) !important;
-  --input-radius: 4px !important;
-  --interactive-accent: hsl(252, 84%, 83%) !important;
-  --interactive-accent-base: hsl(251, 87%, 94%) !important;
-  --interactive-accent-base-hsl: 251, 87%, 94% !important;
-  --interactive-accent-hover: hsl(252, 84%, 83%) !important;
-  --interactive-accent-hsl: 258, 75%, 63% !important;
-  --interactive-accent-text: hsl(258, 75%, 63%) !important;
-  --interactive-accent-text-hsl: 258, 75%, 63% !important;
-  --interactive-accent-tint: hsl(252, 84%, 83%) !important;
-  --interactive-accent-tint-hsl: 252, 84%, 83% !important;
-  --interactive-hover: hsl(0, 0%, 100%) !important;
-  --interactive-normal: hsl(0, 0%, 100%) !important;
-  --italic-color: hsl(0, 0%, 15%) !important;
-  --light: hsl(0, 0%, 100%) !important;
-  --lightgray: hsl(0, 0%, 93%) !important;
-  --link-color: hsl(258, 75%, 63%) !important;
-  --link-color-hover: hsla(258, 75%, 63%, 60%) !important;
-  --link-external-color: hsl(258, 75%, 63%) !important;
-  --link-external-color-hover: hsla(258, 75%, 63%, 60%) !important;
-  --link-external-color-lt: 258, 75%, 63% !important;
-  --link-internal-color-lt: 258, 75%, 63% !important;
-  --link-unresolved-color: hsl(258, 75%, 63%) !important;
-  --link-unresolved-decoration-color: hsla(258, 75%, 63%, 0.3) !important;
-  --list-bullet-end-padding: 3rem !important;
-  --list-indent: 2em !important;
-  --list-indent-source: 0.75em !important;
-  --list-marker-color: hsl(0, 0%, 35%) !important;
-  --list-marker-color-collapsed: hsl(258, 75%, 63%) !important;
-  --list-marker-color-hover: hsl(0, 0%, 20%) !important;
-  --mark-highlight-base: hsl(42, 88%, 83%) !important;
-  --menu-background: hsl(0, 0%, 93%) !important;
-  --menu-border-color: hsl(252, 84%, 83%) !important;
-  --menu-shadow: hsla(0, 0%, 0%, 10%) 0 1px 2px 0 !important;
-  --metadata-border-color: hsl(0, 0%, 69%) !important;
-  --metadata-divider-color: hsl(0, 0%, 69%) !important;
-  --metadata-gap: 2px !important;
-  --metadata-input-background-active: hsl(0, 0%, 93%) !important;
-  --metadata-input-font: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: hsl(0, 0%, 15%) !important;
-  --metadata-label-background-active: hsl(0, 0%, 93%) !important;
-  --metadata-label-font: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: hsl(0, 0%, 20%) !important;
-  --metadata-label-text-color-hover: hsl(0, 0%, 20%) !important;
-  --metadata-property-background-active: hsla(251, 87%, 94%, 90%) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(252, 84%, 83%) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(252, 84%, 83%) !important;
-  --modal-background: hsl(0, 0%, 100%) !important;
-  --modal-border-color: hsl(0, 0%, 69%) !important;
-  --nav-collapse-icon-color: hsl(0, 0%, 35%) !important;
-  --nav-collapse-icon-color-collapsed: hsl(0, 0%, 35%) !important;
-  --nav-header-padding-bottom: 40px !important;
-  --nav-heading-color: hsl(0, 0%, 15%) !important;
-  --nav-heading-color-collapsed: hsl(0, 0%, 35%) !important;
-  --nav-heading-color-collapsed-hover: hsl(0, 0%, 20%) !important;
-  --nav-heading-color-hover: hsl(0, 0%, 15%) !important;
-  --nav-indentation-guide-color: hsla(0, 0%, 69%, 75%) !important;
-  --nav-item-background-active: hsla(251, 87%, 94%, 90%) !important;
-  --nav-item-background-hover: hsla(251, 87%, 94%, 90%) !important;
-  --nav-item-background-selected: hsla(258, 75%, 63%, 0.15) !important;
-  --nav-item-children-margin-left: 13px !important;
-  --nav-item-color: hsl(0, 0%, 20%) !important;
-  --nav-item-color-active: hsl(0, 0%, 15%) !important;
-  --nav-item-color-highlighted: hsl(258, 75%, 63%) !important;
-  --nav-item-color-hover: hsl(258, 75%, 63%) !important;
-  --nav-item-color-selected: hsl(0, 0%, 15%) !important;
-  --nav-item-padding: 2px 8px 2px 24px !important;
-  --nav-item-parent-padding: 2px 8px 2px 24px !important;
-  --nav-tag-color: hsl(0, 0%, 35%) !important;
-  --nav-tag-color-active: hsl(0, 0%, 20%) !important;
-  --nav-tag-color-hover: hsl(0, 0%, 20%) !important;
-  --p-spacing: 0.5em !important;
-  --pdf-background: hsl(0, 0%, 100%) !important;
-  --pdf-page-background: hsl(0, 0%, 100%) !important;
-  --pdf-sidebar-background: hsl(0, 0%, 100%) !important;
-  --pill-border-color: hsl(0, 0%, 69%) !important;
-  --pill-border-color-hover: hsl(252, 84%, 83%) !important;
-  --pill-color: hsl(0, 0%, 20%) !important;
-  --pill-color-hover: hsl(0, 0%, 15%) !important;
-  --pill-color-remove: hsl(0, 0%, 35%) !important;
-  --pill-color-remove-hover: hsl(258, 75%, 63%) !important;
-  --pill-radius: 4px !important;
-  --prompt-background: hsl(0, 0%, 100%) !important;
-  --prompt-border-color: hsl(0, 0%, 69%) !important;
-  --raised-background: color-mix(in srgb, hsl(0, 0%, 100%) 65%, transparent) linear-gradient(hsl(0, 0%, 100%), color-mix(in srgb, hsl(0, 0%, 100%) 65%, transparent)) !important;
-  --ribbon-background: hsl(0, 0%, 93%) !important;
-  --ribbon-background-collapsed: hsl(0, 0%, 93%) !important;
-  --scroll-bar-size: 12px !important;
-  --scroll-button-background-color: hsl(0, 0%, 100%) !important;
-  --scrollbar-active-thumb-bg: hsl(251, 87%, 94%) !important;
-  --scrollbar-bg: hsl(0, 0%, 93%) !important;
-  --scrollbar-thumb-bg: hsl(0, 0%, 96%) !important;
-  --search-clear-button-color: hsl(0, 0%, 20%) !important;
-  --search-icon-color: hsl(0, 0%, 20%) !important;
-  --search-result-background: hsl(0, 0%, 100%) !important;
-  --secondary: hsl(258, 75%, 63%) !important;
-  --setting-group-heading-color: hsl(0, 0%, 15%) !important;
-  --setting-items-background: hsl(0, 0%, 100%) !important;
-  --setting-items-border-color: hsl(0, 0%, 69%) !important;
-  --setting-items-padding: 8px !important;
-  --shadow-color-hsl: 0, 0%, 0% !important;
+  --canvas-background: hsl(0, 0%, 100%);
+  --canvas-background-color: 0, 0%, 90%;
+  --canvas-card-label-color: hsl(0, 0%, 35%);
+  --canvas-color: 0, 0%, 73%;
+  --canvas-dot-pattern: hsla(0, 0%, 69%, 75%);
+  --canvas-highlight-color: 0, 0%, 47%;
+  --caret-color: hsl(0, 0%, 15%);
+  --cg-nt-tbar-top-sticky-pos-desktop: -33px;
+  --checkbox-border-color: hsl(0, 0%, 69%);
+  --checkbox-border-color-hover: hsl(252, 84%, 83%);
+  --checkbox-color: hsl(0, 0%, 96%);
+  --checkbox-color-hover: hsl(252, 84%, 83%);
+  --checkbox-marker-color: hsl(258, 75%, 63%);
+  --checklist-done-color: hsl(252, 84%, 83%);
+  --code-background: hsl(0, 0%, 100%);
+  --code-border-color: hsl(0, 0%, 69%);
+  --code-border-width: 1px;
+  --code-bracket-background: hsla(251, 87%, 94%, 90%);
+  --code-comment: hsl(0, 0%, 47%);
+  --code-function: hsl(38, 62%, 37%);
+  --code-important: hsl(31, 100%, 36%);
+  --code-keyword: hsl(320, 60%, 50%);
+  --code-normal: hsl(0, 0%, 15%);
+  --code-operator: hsl(3, 68%, 52%);
+  --code-property: hsl(184, 100%, 28%);
+  --code-punctuation: hsl(0, 0%, 20%);
+  --code-string: hsl(93, 100%, 27%);
+  --code-tag: hsl(3, 68%, 52%);
+  --code-value: hsl(258, 75%, 63%);
+  --codeFont: var(--font-monospace, "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --collapse-icon-color: hsl(0, 0%, 35%);
+  --collapse-icon-color-collapsed: hsl(0, 0%, 15%);
+  --color-accent: hsl(258, 75%, 63%);
+  --color-accent-1: hsl(252, 84%, 83%);
+  --color-accent-2: hsl(251, 87%, 94%);
+  --color-accent-base-dt: 7, 90%, 92%;
+  --color-accent-base-lt: 7, 90%, 92%;
+  --color-accent-hsl: 258, 75%, 63%;
+  --color-accent-text-dt: 3, 68%, 52%;
+  --color-accent-text-lt: 3, 68%, 52%;
+  --color-accent-tint-dt: 7, 82%, 78%;
+  --color-accent-tint-lt: 7, 82%, 78%;
+  --color-blue: hsl(221, 67%, 56%);
+  --color-blue-base: hsl(217, 76%, 92%);
+  --color-blue-base-hsl: 217, 76%, 92%;
+  --color-blue-text: hsl(221, 67%, 56%);
+  --color-blue-text-hsl: 221, 67%, 56%;
+  --color-blue-tint: hsl(219, 73%, 78%);
+  --color-blue-tint-hsl: 219, 73%, 78%;
+  --color-cyan: hsl(184, 100%, 28%);
+  --color-cyan-base: hsl(184, 60%, 85%);
+  --color-cyan-base-hsl: 184, 60%, 85%;
+  --color-cyan-text: hsl(184, 100%, 28%);
+  --color-cyan-text-hsl: 184, 100%, 28%;
+  --color-cyan-tint: hsl(184, 61%, 56%);
+  --color-cyan-tint-hsl: 184, 61%, 56%;
+  --color-green: hsl(93, 100%, 27%);
+  --color-green-base: hsl(101, 49%, 85%);
+  --color-green-base-hsl: 101, 49%, 85%;
+  --color-green-text: hsl(93, 100%, 27%);
+  --color-green-text-hsl: 93, 100%, 27%;
+  --color-green-tint: hsl(99, 50%, 59%);
+  --color-green-tint-hsl: 99, 50%, 59%;
+  --color-grey-base: hsl(0, 0%, 90%);
+  --color-grey-base-hsl: 0, 0%, 90%;
+  --color-grey-text: hsl(0, 0%, 47%);
+  --color-grey-text-hsl: 0, 0%, 47%;
+  --color-grey-tint: hsl(0, 0%, 73%);
+  --color-grey-tint-hsl: 0, 0%, 73%;
+  --color-mint-base: hsl(152, 62%, 85%);
+  --color-mint-base-hsl: 152, 62%, 85%;
+  --color-mint-text: hsl(161, 100%, 26%);
+  --color-mint-text-hsl: 161, 100%, 26%;
+  --color-mint-tint: hsl(158, 59%, 55%);
+  --color-mint-tint-hsl: 158, 59%, 55%;
+  --color-orange: hsl(31, 100%, 36%);
+  --color-orange-base: hsl(26, 85%, 89%);
+  --color-orange-base-hsl: 26, 85%, 89%;
+  --color-orange-text: hsl(31, 100%, 36%);
+  --color-orange-text-hsl: 31, 100%, 36%;
+  --color-orange-tint: hsl(27, 80%, 69%);
+  --color-orange-tint-hsl: 27, 80%, 69%;
+  --color-pink: hsl(320, 60%, 50%);
+  --color-pink-base: hsl(328, 79%, 93%);
+  --color-pink-base-hsl: 328, 79%, 93%;
+  --color-pink-text: hsl(320, 60%, 50%);
+  --color-pink-text-hsl: 320, 60%, 50%;
+  --color-pink-tint: hsl(327, 72%, 79%);
+  --color-pink-tint-hsl: 327, 72%, 79%;
+  --color-purple: hsl(258, 75%, 63%);
+  --color-purple-base: hsl(251, 87%, 94%);
+  --color-purple-base-hsl: 251, 87%, 94%;
+  --color-purple-text: hsl(258, 75%, 63%);
+  --color-purple-text-hsl: 258, 75%, 63%;
+  --color-purple-tint: hsl(252, 84%, 83%);
+  --color-purple-tint-hsl: 252, 84%, 83%;
+  --color-red: hsl(3, 68%, 52%);
+  --color-red-base: hsl(7, 90%, 92%);
+  --color-red-base-hsl: 7, 90%, 92%;
+  --color-red-text: hsl(3, 68%, 52%);
+  --color-red-text-hsl: 3, 68%, 52%;
+  --color-red-tint: hsl(7, 82%, 78%);
+  --color-red-tint-hsl: 7, 82%, 78%;
+  --color-yellow: hsl(38, 62%, 37%);
+  --color-yellow-base: hsl(42, 88%, 83%);
+  --color-yellow-base-hsl: 42, 88%, 83%;
+  --color-yellow-text: hsl(38, 62%, 37%);
+  --color-yellow-text-hsl: 38, 62%, 37%;
+  --color-yellow-tint: hsl(44, 67%, 58%);
+  --color-yellow-tint-hsl: 44, 67%, 58%;
+  --custom-vault-banner-icon-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px'%0Awidth='40' height='40'%0AviewBox='0 0 40 40'%0Astyle=' fill:%23000000'%3E%3Cpath fill='%23dbb065' d='M1.5 35.5L1.5 4.5 11.793 4.5 14.793 7.5 35.5 7.5 35.5 35.5z'%3E%3C/path%3E%3Cpath fill='%23967a44' d='M11.586,5l2.707,2.707L14.586,8H15h20v27H2V5H11.586 M12,4H1v32h35V7H15L12,4L12,4z'%3E%3C/path%3E%3Cg%3E%3Cpath fill='%23f5ce85' d='M1.599 35.5L5.417 14.5 16.151 14.5 19.151 12.5 39.41 12.5 35.577 35.5z'%3E%3C/path%3E%3Cpath fill='%23967a44' d='M38.82,13l-3.667,22H2.198l3.636-20H16h0.303l0.252-0.168L19.303,13H38.82 M40,12H19l-3,2H5L1,36 h35L40,12L40,12z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  --dark: var(--text-normal, hsl(0, 0%, 15%));
+  --darkgray: var(--text-normal, hsl(0, 0%, 15%));
+  --divider-color: hsl(0, 0%, 69%);
+  --divider-color-hover: hsl(252, 84%, 83%);
+  --drag-ghost-text-color: hsl(0, 0%, 15%);
+  --dropdown-background: hsl(0, 0%, 100%);
+  --dropdown-background-hover: hsl(0, 0%, 100%);
+  --embed-block-shadow-hover: 0 0 0 1px hsl(0, 0%, 69%), inset 0 0 0 1px hsl(0, 0%, 69%);
+  --embed-border-bottom: 1px solid hsl(0, 0%, 69%);
+  --embed-border-end: 1px solid hsl(0, 0%, 69%);
+  --embed-border-start: 2px solid hsl(252, 84%, 83%);
+  --embed-border-top: 1px solid hsl(0, 0%, 69%);
+  --embed-max-height: 800px;
+  --embed-padding: 8px 16px;
+  --fade-away-delay: 850ms;
+  --fade-away-opacity: 0.25;
+  --file-folding-offset: 20px;
+  --file-header-background: hsl(0, 0%, 100%);
+  --file-header-background-focused: hsl(0, 0%, 100%);
+  --file-header-font: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --file-header-font-size: 15px;
+  --flair-background: hsl(0, 0%, 100%);
+  --flair-color: hsl(0, 0%, 15%);
+  --font-interface: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-interface-theme: "Source Sans 3";
+  --font-mermaid: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-theme: "JetBrains Mono";
+  --font-print: "Source Sans 3", Arial';
+  --font-text: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-text-theme: "Source Sans 3";
+  --footnote-divider-color: hsl(0, 0%, 69%);
+  --footnote-id-color: hsl(0, 0%, 20%);
+  --footnote-id-color-no-occurrences: hsl(0, 0%, 35%);
+  --footnote-input-background-active: hsl(0, 0%, 93%);
+  --graph-attachment-color-lt: hsl(44, 67%, 58%);
+  --graph-controls-width: 150px;
+  --graph-fill-color-lt: hsl(0, 0%, 73%);
+  --graph-fill-focused-color-lt: hsl(252, 84%, 83%);
+  --graph-line: hsl(0, 0%, 69%);
+  --graph-line-color-lt: hsl(0, 0%, 69%);
+  --graph-node: hsl(0, 0%, 73%);
+  --graph-node-attachment: hsl(44, 67%, 58%);
+  --graph-node-focused: hsl(252, 84%, 83%);
+  --graph-node-tag: hsl(219, 73%, 78%);
+  --graph-node-unresolved: hsl(7, 82%, 78%);
+  --graph-tag-color-lt: hsl(219, 73%, 78%);
+  --graph-text: hsl(0, 0%, 15%);
+  --graph-unresolved-color-lt: hsl(7, 82%, 78%);
+  --gray: var(--text-muted, hsl(0, 0%, 20%));
+  --h1-color: hsl(0, 0%, 15%);
+  --h1-line-height: 1.3;
+  --h1-size: 2.2em;
+  --h1-text-color-lt: hsl(0, 0%, 15%);
+  --h1-weight: 800;
+  --h2-color: hsl(0, 0%, 15%);
+  --h2-line-height: 1.3;
+  --h2-size: 2em;
+  --h2-text-color-lt: hsl(0, 0%, 15%);
+  --h2-weight: 800;
+  --h3-color: hsl(0, 0%, 15%);
+  --h3-line-height: 1.35;
+  --h3-size: 1.8em;
+  --h3-text-color-lt: hsl(0, 0%, 15%);
+  --h3-weight: 800;
+  --h4-color: hsl(0, 0%, 15%);
+  --h4-size: 1.6em;
+  --h4-text-color-lt: hsl(0, 0%, 15%);
+  --h4-weight: 800;
+  --h5-color: hsl(0, 0%, 15%);
+  --h5-size: 1.4em;
+  --h5-text-color-lt: hsl(0, 0%, 15%);
+  --h5-weight: 800;
+  --h6-color: hsl(0, 0%, 15%);
+  --h6-size: 1.2em;
+  --h6-text-color-lt: hsl(0, 0%, 15%);
+  --h6-weight: 800;
+  --header-height: 41px;
+  --headerFont: var(--font-text, "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --heading-formatting: hsl(0, 0%, 35%);
+  --heading-spacing: 1.25em;
+  --highlight: var(--text-highlight-bg, hsl(251, 87%, 94%));
+  --highlight-text-normal: hsl(258, 75%, 63%);
+  --hr-color: hsl(0, 0%, 69%);
+  --icon-color: hsl(0, 0%, 20%);
+  --icon-color-active: hsl(258, 75%, 63%);
+  --icon-color-focused: hsl(258, 75%, 63%);
+  --icon-color-hover: hsl(258, 75%, 63%);
+  --indentation-guide-color: hsla(0, 0%, 69%, 75%);
+  --indentation-guide-color-active: hsl(252, 84%, 83%);
+  --indentation-guide-reading-indent: -0.55em;
+  --indentation-guide-source-indent: 0.85em;
+  --inline-title-line-height: 1.3;
+  --inline-title-size: 2.2em;
+  --inline-title-weight: 800;
+  --input-date-separator: hsl(0, 0%, 35%);
+  --input-height: 32px;
+  --input-placeholder-color: hsl(0, 0%, 35%);
+  --input-radius: 4px;
+  --interactive-accent: hsl(252, 84%, 83%);
+  --interactive-accent-base: hsl(251, 87%, 94%);
+  --interactive-accent-base-hsl: 251, 87%, 94%;
+  --interactive-accent-hover: hsl(252, 84%, 83%);
+  --interactive-accent-hsl: 258, 75%, 63%;
+  --interactive-accent-text: hsl(258, 75%, 63%);
+  --interactive-accent-text-hsl: 258, 75%, 63%;
+  --interactive-accent-tint: hsl(252, 84%, 83%);
+  --interactive-accent-tint-hsl: 252, 84%, 83%;
+  --interactive-hover: hsl(0, 0%, 100%);
+  --interactive-normal: hsl(0, 0%, 100%);
+  --italic-color: hsl(0, 0%, 15%);
+  --light: var(--background-primary, hsl(0, 0%, 100%));
+  --lightgray: var(--background-secondary, hsl(0, 0%, 93%));
+  --link-color: hsl(258, 75%, 63%);
+  --link-color-hover: hsla(258, 75%, 63%, 60%);
+  --link-external-color: hsl(258, 75%, 63%);
+  --link-external-color-hover: hsla(258, 75%, 63%, 60%);
+  --link-external-color-lt: 258, 75%, 63%;
+  --link-internal-color-lt: 258, 75%, 63%;
+  --link-unresolved-color: hsl(258, 75%, 63%);
+  --link-unresolved-decoration-color: hsla(258, 75%, 63%, 0.3);
+  --list-bullet-end-padding: 3rem;
+  --list-indent: 2em;
+  --list-indent-source: 0.75em;
+  --list-marker-color: hsl(0, 0%, 35%);
+  --list-marker-color-collapsed: hsl(258, 75%, 63%);
+  --list-marker-color-hover: hsl(0, 0%, 20%);
+  --mark-highlight-base: hsl(42, 88%, 83%);
+  --menu-background: hsl(0, 0%, 93%);
+  --menu-border-color: hsl(252, 84%, 83%);
+  --menu-shadow: hsla(0, 0%, 0%, 10%) 0 1px 2px 0;
+  --metadata-border-color: hsl(0, 0%, 69%);
+  --metadata-divider-color: hsl(0, 0%, 69%);
+  --metadata-gap: 2px;
+  --metadata-input-background-active: hsl(0, 0%, 93%);
+  --metadata-input-font: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-input-text-color: hsl(0, 0%, 15%);
+  --metadata-label-background-active: hsl(0, 0%, 93%);
+  --metadata-label-font: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-label-text-color: hsl(0, 0%, 20%);
+  --metadata-label-text-color-hover: hsl(0, 0%, 20%);
+  --metadata-property-background-active: hsla(251, 87%, 94%, 90%);
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(252, 84%, 83%);
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(252, 84%, 83%);
+  --modal-background: hsl(0, 0%, 100%);
+  --modal-border-color: hsl(0, 0%, 69%);
+  --nav-collapse-icon-color: hsl(0, 0%, 35%);
+  --nav-collapse-icon-color-collapsed: hsl(0, 0%, 35%);
+  --nav-header-padding-bottom: 40px;
+  --nav-heading-color: hsl(0, 0%, 15%);
+  --nav-heading-color-collapsed: hsl(0, 0%, 35%);
+  --nav-heading-color-collapsed-hover: hsl(0, 0%, 20%);
+  --nav-heading-color-hover: hsl(0, 0%, 15%);
+  --nav-indentation-guide-color: hsla(0, 0%, 69%, 75%);
+  --nav-item-background-active: hsla(251, 87%, 94%, 90%);
+  --nav-item-background-hover: hsla(251, 87%, 94%, 90%);
+  --nav-item-background-selected: hsla(258, 75%, 63%, 0.15);
+  --nav-item-children-margin-left: 13px;
+  --nav-item-color: hsl(0, 0%, 20%);
+  --nav-item-color-active: hsl(0, 0%, 15%);
+  --nav-item-color-highlighted: hsl(258, 75%, 63%);
+  --nav-item-color-hover: hsl(258, 75%, 63%);
+  --nav-item-color-selected: hsl(0, 0%, 15%);
+  --nav-item-padding: 2px 8px 2px 24px;
+  --nav-item-parent-padding: 2px 8px 2px 24px;
+  --nav-tag-color: hsl(0, 0%, 35%);
+  --nav-tag-color-active: hsl(0, 0%, 20%);
+  --nav-tag-color-hover: hsl(0, 0%, 20%);
+  --p-spacing: 0.5em;
+  --pdf-background: hsl(0, 0%, 100%);
+  --pdf-page-background: hsl(0, 0%, 100%);
+  --pdf-sidebar-background: hsl(0, 0%, 100%);
+  --pill-border-color: hsl(0, 0%, 69%);
+  --pill-border-color-hover: hsl(252, 84%, 83%);
+  --pill-color: hsl(0, 0%, 20%);
+  --pill-color-hover: hsl(0, 0%, 15%);
+  --pill-color-remove: hsl(0, 0%, 35%);
+  --pill-color-remove-hover: hsl(258, 75%, 63%);
+  --pill-radius: 4px;
+  --prompt-background: hsl(0, 0%, 100%);
+  --prompt-border-color: hsl(0, 0%, 69%);
+  --raised-background: color-mix(in srgb, hsl(0, 0%, 100%) 65%, transparent) linear-gradient(hsl(0, 0%, 100%), color-mix(in srgb, hsl(0, 0%, 100%) 65%, transparent));
+  --ribbon-background: hsl(0, 0%, 93%);
+  --ribbon-background-collapsed: hsl(0, 0%, 93%);
+  --scroll-bar-size: 12px;
+  --scroll-button-background-color: hsl(0, 0%, 100%);
+  --scrollbar-active-thumb-bg: hsl(251, 87%, 94%);
+  --scrollbar-bg: hsl(0, 0%, 93%);
+  --scrollbar-thumb-bg: hsl(0, 0%, 96%);
+  --search-clear-button-color: hsl(0, 0%, 20%);
+  --search-icon-color: hsl(0, 0%, 20%);
+  --search-result-background: hsl(0, 0%, 100%);
+  --secondary: var(--text-accent, hsl(258, 75%, 63%));
+  --setting-group-heading-color: hsl(0, 0%, 15%);
+  --setting-items-background: hsl(0, 0%, 100%);
+  --setting-items-border-color: hsl(0, 0%, 69%);
+  --setting-items-padding: 8px;
+  --shadow-color-hsl: 0, 0%, 0%;
   --shadow-l: hsla(0, 0%, 0%, 3%) 0 1px 2px, hsla(0, 0%, 0%, 3%) 0 2px 4px,
-  	hsla(0, 0%, 0%, 3%) 0 4px 8px, hsla(0, 0%, 0%, 3%) 0 6px 12px !important;
-  --shadow-s: hsla(0, 0%, 0%, 10%) 0 1px 2px 0 !important;
-  --shiki-active-tab-border-color: hsl(0, 0%, 20%) !important;
-  --shiki-code-background: hsl(0, 0%, 100%) !important;
-  --shiki-code-block-spacing: 0.5em !important;
-  --shiki-code-comment: hsl(0, 0%, 35%) !important;
-  --shiki-code-function: hsl(93, 100%, 27%) !important;
-  --shiki-code-important: hsl(31, 100%, 36%) !important;
-  --shiki-code-keyword: hsl(320, 60%, 50%) !important;
-  --shiki-code-normal: hsl(0, 0%, 20%) !important;
-  --shiki-code-property: hsl(184, 100%, 28%) !important;
-  --shiki-code-punctuation: hsl(0, 0%, 20%) !important;
-  --shiki-code-string: hsl(38, 62%, 37%) !important;
-  --shiki-code-value: hsl(258, 75%, 63%) !important;
-  --shiki-gutter-border-color: hsl(0, 0%, 69%) !important;
-  --shiki-gutter-text-color: hsl(0, 0%, 35%) !important;
-  --shiki-gutter-text-color-highlight: hsl(0, 0%, 20%) !important;
-  --shiki-highlight-neutral: hsl(0, 0%, 20%) !important;
-  --shiki-terminal-dots-color: hsl(0, 0%, 35%) !important;
-  --slider-thumb-border-color: hsl(252, 84%, 83%) !important;
-  --slider-thumb-radius: 4px !important;
-  --slider-thumb-width: 10px !important;
-  --slider-track-background: hsl(0, 0%, 69%) !important;
-  --status-bar-background: hsl(0, 0%, 93%) !important;
-  --status-bar-background-color-dt: #2b2b2b !important;
-  --status-bar-background-color-lt: #ebecef !important;
-  --status-bar-border-color: hsl(0, 0%, 69%) !important;
-  --status-bar-font-size: 13px !important;
-  --status-bar-text-color: hsl(0, 0%, 20%) !important;
-  --strikethrough-line-color: hsl(0, 0%, 20%) !important;
-  --strikethrough-line-color-lt: hsl(0, 0%, 20%) !important;
-  --strikethrough-text-color: hsl(0, 0%, 20%) !important;
-  --strikethrough-text-color-lt: hsl(0, 0%, 20%) !important;
-  --suggestion-background: hsl(0, 0%, 100%) !important;
-  --sync-avatar-color-1: hsl(3, 68%, 52%) !important;
-  --sync-avatar-color-2: hsl(31, 100%, 36%) !important;
-  --sync-avatar-color-3: hsl(38, 62%, 37%) !important;
-  --sync-avatar-color-4: hsl(93, 100%, 27%) !important;
-  --sync-avatar-color-5: hsl(184, 100%, 28%) !important;
-  --sync-avatar-color-6: hsl(221, 67%, 56%) !important;
-  --sync-avatar-color-7: hsl(258, 75%, 63%) !important;
-  --sync-avatar-color-8: hsl(320, 60%, 50%) !important;
-  --tab-background-active: hsl(0, 0%, 100%) !important;
-  --tab-container-background: hsl(0, 0%, 93%) !important;
-  --tab-divider-color: hsl(252, 84%, 83%) !important;
-  --tab-outline-color: hsl(0, 0%, 69%) !important;
-  --tab-radius-active: 8px !important;
-  --tab-stacked-font-size: 15px !important;
-  --tab-stacked-header-width: 41px !important;
-  --tab-stacked-shadow: 0 !important;
-  --tab-switcher-background: hsl(0, 0%, 93%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 93%), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 75%, 63%) !important;
-  --tab-text-color: hsl(0, 0%, 35%) !important;
-  --tab-text-color-active: hsl(0, 0%, 20%) !important;
-  --tab-text-color-focused: hsl(0, 0%, 20%) !important;
-  --tab-text-color-focused-active: hsl(0, 0%, 20%) !important;
-  --tab-text-color-focused-active-current: hsl(0, 0%, 15%) !important;
-  --tab-text-color-focused-highlighted: hsl(258, 75%, 63%) !important;
-  --table-add-button-border-color: hsl(0, 0%, 69%) !important;
-  --table-border-color: hsl(0, 0%, 69%) !important;
-  --table-drag-handle-background-active: hsl(252, 84%, 83%) !important;
-  --table-drag-handle-color: hsl(0, 0%, 35%) !important;
-  --table-drag-handle-color-active: hsl(258, 75%, 63%) !important;
-  --table-header-border-color: hsl(0, 0%, 69%) !important;
-  --table-header-color: hsl(0, 0%, 15%) !important;
-  --table-selection: hsla(258, 75%, 63%, 0.1) !important;
-  --table-selection-border-color: hsl(252, 84%, 83%) !important;
-  --tag-background: hsla(258, 75%, 63%, 0.1) !important;
-  --tag-background-hover: hsla(258, 75%, 63%, 0.2) !important;
-  --tag-border-color: hsla(258, 75%, 63%, 0.15) !important;
-  --tag-border-color-hover: hsla(258, 75%, 63%, 0.15) !important;
-  --tag-border-width: 2px !important;
-  --tag-color: hsl(258, 75%, 63%) !important;
-  --tag-color-hover: hsl(258, 75%, 63%) !important;
-  --tag-padding-x: 0.75ch !important;
-  --tag-padding-y: 0 !important;
-  --tag-radius: 4px !important;
-  --tag-size: 0.8em !important;
-  --tertiary: hsl(252, 84%, 83%) !important;
-  --text-accent: hsl(258, 75%, 63%) !important;
-  --text-accent-hover: hsl(252, 84%, 83%) !important;
-  --text-bold-color-lt: hsl(0, 0%, 15%) !important;
-  --text-error: hsl(3, 68%, 52%) !important;
-  --text-faint: hsl(0, 0%, 35%) !important;
-  --text-faint-hsl: 0, 0%, 35% !important;
-  --text-highlight-bg: hsl(251, 87%, 94%) !important;
-  --text-italic-bold-color-lt: hsl(0, 0%, 15%) !important;
-  --text-italic-color-lt: hsl(0, 0%, 15%) !important;
-  --text-muted: hsl(0, 0%, 20%) !important;
-  --text-muted-hsl: 0, 0%, 20% !important;
-  --text-normal: hsl(0, 0%, 15%) !important;
-  --text-normal-hsl: 0, 0%, 15% !important;
-  --text-on-accent: hsl(258, 75%, 63%) !important;
-  --text-on-accent-inverted: hsl(0, 0%, 15%) !important;
-  --text-selection: hsla(252, 84%, 83%, 55%) !important;
-  --text-success: hsl(93, 100%, 27%) !important;
-  --text-warning: hsl(31, 100%, 36%) !important;
-  --textHighlight: hsl(251, 87%, 94%) !important;
-  --titleFont: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: hsl(0, 0%, 93%) !important;
-  --titlebar-background-focused: hsl(0, 0%, 93%) !important;
-  --titlebar-border-color: hsl(0, 0%, 69%) !important;
-  --titlebar-text-color: hsl(0, 0%, 20%) !important;
-  --titlebar-text-color-focused: hsl(0, 0%, 15%) !important;
-  --toggle-radius: 4px !important;
-  --toggle-s-border-width: 1px !important;
-  --toggle-s-thumb-height: 18px !important;
-  --toggle-s-thumb-width: 18px !important;
-  --toggle-s-width: 44px !important;
-  --toggle-thumb-color: hsl(0, 0%, 100%) !important;
-  --toggle-thumb-height: 20px !important;
-  --toggle-thumb-radius: 3px !important;
-  --toggle-thumb-width: 20px !important;
-  --toggle-width: 42px !important;
-  --traffic-lights-offset-x: 41px !important;
-  --traffic-lights-offset-y: 41px !important;
-  --underline-line-color: hsl(0, 0%, 15%) !important;
-  --underline-line-color-lt: hsl(0, 0%, 15%) !important;
-  --underline-text-color: hsl(0, 0%, 15%) !important;
-  --underline-text-color-lt: hsl(0, 0%, 15%) !important;
-  --vault-name-font-size: 15px !important;
-  --vault-profile-color: hsl(0, 0%, 15%) !important;
-  --vault-profile-color-hover: hsl(0, 0%, 15%) !important;
-  --vault-profile-font-size: 15px !important;
-  --window-border: 1px solid hsl(0, 0%, 69%) !important;
-  --window-border-color: hsl(0, 0%, 69%) !important;
-  --quartz-icon-color: currentColor !important;
+  	hsla(0, 0%, 0%, 3%) 0 4px 8px, hsla(0, 0%, 0%, 3%) 0 6px 12px;
+  --shadow-s: hsla(0, 0%, 0%, 10%) 0 1px 2px 0;
+  --shiki-active-tab-border-color: hsl(0, 0%, 20%);
+  --shiki-code-background: hsl(0, 0%, 100%);
+  --shiki-code-block-spacing: 0.5em;
+  --shiki-code-comment: hsl(0, 0%, 35%);
+  --shiki-code-function: hsl(93, 100%, 27%);
+  --shiki-code-important: hsl(31, 100%, 36%);
+  --shiki-code-keyword: hsl(320, 60%, 50%);
+  --shiki-code-normal: hsl(0, 0%, 20%);
+  --shiki-code-property: hsl(184, 100%, 28%);
+  --shiki-code-punctuation: hsl(0, 0%, 20%);
+  --shiki-code-string: hsl(38, 62%, 37%);
+  --shiki-code-value: hsl(258, 75%, 63%);
+  --shiki-gutter-border-color: hsl(0, 0%, 69%);
+  --shiki-gutter-text-color: hsl(0, 0%, 35%);
+  --shiki-gutter-text-color-highlight: hsl(0, 0%, 20%);
+  --shiki-highlight-neutral: hsl(0, 0%, 20%);
+  --shiki-terminal-dots-color: hsl(0, 0%, 35%);
+  --slider-thumb-border-color: hsl(252, 84%, 83%);
+  --slider-thumb-radius: 4px;
+  --slider-thumb-width: 10px;
+  --slider-track-background: hsl(0, 0%, 69%);
+  --status-bar-background: hsl(0, 0%, 93%);
+  --status-bar-background-color-dt: #2b2b2b;
+  --status-bar-background-color-lt: #ebecef;
+  --status-bar-border-color: hsl(0, 0%, 69%);
+  --status-bar-font-size: 13px;
+  --status-bar-text-color: hsl(0, 0%, 20%);
+  --strikethrough-line-color: hsl(0, 0%, 20%);
+  --strikethrough-line-color-lt: hsl(0, 0%, 20%);
+  --strikethrough-text-color: hsl(0, 0%, 20%);
+  --strikethrough-text-color-lt: hsl(0, 0%, 20%);
+  --suggestion-background: hsl(0, 0%, 100%);
+  --sync-avatar-color-1: hsl(3, 68%, 52%);
+  --sync-avatar-color-2: hsl(31, 100%, 36%);
+  --sync-avatar-color-3: hsl(38, 62%, 37%);
+  --sync-avatar-color-4: hsl(93, 100%, 27%);
+  --sync-avatar-color-5: hsl(184, 100%, 28%);
+  --sync-avatar-color-6: hsl(221, 67%, 56%);
+  --sync-avatar-color-7: hsl(258, 75%, 63%);
+  --sync-avatar-color-8: hsl(320, 60%, 50%);
+  --tab-background-active: hsl(0, 0%, 100%);
+  --tab-container-background: hsl(0, 0%, 93%);
+  --tab-divider-color: hsl(252, 84%, 83%);
+  --tab-outline-color: hsl(0, 0%, 69%);
+  --tab-radius-active: 8px;
+  --tab-stacked-font-size: 15px;
+  --tab-stacked-header-width: 41px;
+  --tab-stacked-shadow: 0;
+  --tab-switcher-background: hsl(0, 0%, 93%);
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 93%), transparent);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 75%, 63%);
+  --tab-text-color: hsl(0, 0%, 35%);
+  --tab-text-color-active: hsl(0, 0%, 20%);
+  --tab-text-color-focused: hsl(0, 0%, 20%);
+  --tab-text-color-focused-active: hsl(0, 0%, 20%);
+  --tab-text-color-focused-active-current: hsl(0, 0%, 15%);
+  --tab-text-color-focused-highlighted: hsl(258, 75%, 63%);
+  --table-add-button-border-color: hsl(0, 0%, 69%);
+  --table-border-color: hsl(0, 0%, 69%);
+  --table-drag-handle-background-active: hsl(252, 84%, 83%);
+  --table-drag-handle-color: hsl(0, 0%, 35%);
+  --table-drag-handle-color-active: hsl(258, 75%, 63%);
+  --table-header-border-color: hsl(0, 0%, 69%);
+  --table-header-color: hsl(0, 0%, 15%);
+  --table-selection: hsla(258, 75%, 63%, 0.1);
+  --table-selection-border-color: hsl(252, 84%, 83%);
+  --tag-background: hsla(258, 75%, 63%, 0.1);
+  --tag-background-hover: hsla(258, 75%, 63%, 0.2);
+  --tag-border-color: hsla(258, 75%, 63%, 0.15);
+  --tag-border-color-hover: hsla(258, 75%, 63%, 0.15);
+  --tag-border-width: 2px;
+  --tag-color: hsl(258, 75%, 63%);
+  --tag-color-hover: hsl(258, 75%, 63%);
+  --tag-padding-x: 0.75ch;
+  --tag-padding-y: 0;
+  --tag-radius: 4px;
+  --tag-size: 0.8em;
+  --tertiary: var(--text-accent-hover, hsl(252, 84%, 83%));
+  --text-accent: hsl(258, 75%, 63%);
+  --text-accent-hover: hsl(252, 84%, 83%);
+  --text-bold-color-lt: hsl(0, 0%, 15%);
+  --text-error: hsl(3, 68%, 52%);
+  --text-faint: hsl(0, 0%, 35%);
+  --text-faint-hsl: 0, 0%, 35%;
+  --text-highlight-bg: hsl(251, 87%, 94%);
+  --text-italic-bold-color-lt: hsl(0, 0%, 15%);
+  --text-italic-color-lt: hsl(0, 0%, 15%);
+  --text-muted: hsl(0, 0%, 20%);
+  --text-muted-hsl: 0, 0%, 20%;
+  --text-normal: hsl(0, 0%, 15%);
+  --text-normal-hsl: 0, 0%, 15%;
+  --text-on-accent: hsl(258, 75%, 63%);
+  --text-on-accent-inverted: hsl(0, 0%, 15%);
+  --text-selection: hsla(252, 84%, 83%, 55%);
+  --text-success: hsl(93, 100%, 27%);
+  --text-warning: hsl(31, 100%, 36%);
+  --textHighlight: var(--text-highlight-bg, hsl(251, 87%, 94%));
+  --titleFont: var(--font-text, "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --titlebar-background: hsl(0, 0%, 93%);
+  --titlebar-background-focused: hsl(0, 0%, 93%);
+  --titlebar-border-color: hsl(0, 0%, 69%);
+  --titlebar-text-color: hsl(0, 0%, 20%);
+  --titlebar-text-color-focused: hsl(0, 0%, 15%);
+  --toggle-radius: 4px;
+  --toggle-s-border-width: 1px;
+  --toggle-s-thumb-height: 18px;
+  --toggle-s-thumb-width: 18px;
+  --toggle-s-width: 44px;
+  --toggle-thumb-color: hsl(0, 0%, 100%);
+  --toggle-thumb-height: 20px;
+  --toggle-thumb-radius: 3px;
+  --toggle-thumb-width: 20px;
+  --toggle-width: 42px;
+  --traffic-lights-offset-x: 41px;
+  --traffic-lights-offset-y: 41px;
+  --underline-line-color: hsl(0, 0%, 15%);
+  --underline-line-color-lt: hsl(0, 0%, 15%);
+  --underline-text-color: hsl(0, 0%, 15%);
+  --underline-text-color-lt: hsl(0, 0%, 15%);
+  --vault-name-font-size: 15px;
+  --vault-profile-color: hsl(0, 0%, 15%);
+  --vault-profile-color-hover: hsl(0, 0%, 15%);
+  --vault-profile-font-size: 15px;
+  --window-border: 1px solid hsl(0, 0%, 69%);
+  --window-border-color: hsl(0, 0%, 69%);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -4768,6 +4769,2673 @@ html[saved-theme="light"] body ul.tags > li {
   border-top-right-radius: 4px;
   border-top-width: 2px;
   color: rgb(132, 90, 231);
+}`,
+  },
+  classSettings: {
+    "pt-color-scheme-latte-lt": `.pt-color-scheme-latte-lt {
+--color-grey-base-hsl: 0, 0%, 90%;
+--color-red-base-hsl: 11, 100%, 92%;
+--color-orange-base-hsl: 30, 90%, 88%;
+--color-yellow-base-hsl: 41, 88%, 84%;
+--color-green-base-hsl: 101, 47%, 86%;
+--color-mint-base-hsl: 153, 61%, 85%;
+--color-cyan-base-hsl: 184, 58%, 86%;
+--color-blue-base-hsl: 220, 75%, 92%;
+--color-purple-base-hsl: 252, 81%, 94%;
+--color-pink-base-hsl: 329, 73%, 93%;
+--color-grey-tint-hsl: 0, 0%, 73%;
+--color-red-tint-hsl: 10, 91%, 78%;
+--color-orange-tint-hsl: 30, 79%, 68%;
+--color-yellow-tint-hsl: 43, 65%, 59%;
+--color-green-tint-hsl: 99, 48%, 60%;
+--color-mint-tint-hsl: 158, 56%, 56%;
+--color-cyan-tint-hsl: 184, 58%, 58%;
+--color-blue-tint-hsl: 220, 70%, 78%;
+--color-purple-tint-hsl: 253, 75%, 83%;
+--color-pink-tint-hsl: 327, 67%, 79%;
+--color-grey-text-hsl: 0, 0%, 47%;
+--color-red-text-hsl: 3, 64%, 53%;
+--color-orange-text-hsl: 33, 100%, 35%;
+--color-yellow-text-hsl: 37, 55%, 39%;
+--color-green-text-hsl: 91, 93%, 27%;
+--color-mint-text-hsl: 162, 100%, 27%;
+--color-cyan-text-hsl: 184, 100%, 28%;
+--color-blue-text-hsl: 221, 64%, 56%;
+--color-purple-text-hsl: 257, 69%, 63%;
+--color-pink-text-hsl: 321, 57%, 51%;
+--text-normal-hsl: 28, 42%, 15%;
+--text-muted-hsl: 28, 42%, 20%;
+--text-faint-hsl: 28, 42%, 35%;
+--background-primary-hsl: 28, 42%, 98%;
+--background-primary-alt-hsl: 28, 42%, 94%;
+--background-secondary-hsl: 28, 42%, 90%;
+--background-secondary-blur-hsl: 28, 42%, 88%;
+--background-secondary-alt-hsl: 28, 42%, 66%;
+--shadow-color-hsl: 28, 42%, 7%;
+--shadow-s: hsla(var(--shadow-color-hsl), 10%) 0 1px 2px 0;
+--shadow-l: hsla(var(--shadow-color-hsl), 4%) 0 1px 2px, hsla(var(--shadow-color-hsl), 4%) 0 2px 4px,
+  	hsla(var(--shadow-color-hsl), 4%) 0 4px 8px, hsla(var(--shadow-color-hsl), 4%) 0 6px 12px;
+}`,
+    "pt-color-scheme-periwinkle-lt": `.pt-color-scheme-periwinkle-lt {
+--color-grey-base-hsl: 0, 0%, 92%;
+--color-red-base-hsl: 6, 100%, 94%;
+--color-orange-base-hsl: 30, 100%, 91%;
+--color-yellow-base-hsl: 42, 80%, 88%;
+--color-green-base-hsl: 100, 52%, 89%;
+--color-mint-base-hsl: 153, 65%, 88%;
+--color-cyan-base-hsl: 185, 63%, 88%;
+--color-blue-base-hsl: 220, 100%, 94%;
+--color-purple-base-hsl: 250, 100%, 95%;
+--color-pink-base-hsl: 329, 86%, 94%;
+--color-grey-tint-hsl: 0, 0%, 75%;
+--color-red-tint-hsl: 8, 88%, 81%;
+--color-orange-tint-hsl: 31, 90%, 69%;
+--color-yellow-tint-hsl: 45, 60%, 64%;
+--color-green-tint-hsl: 99, 52%, 62%;
+--color-mint-tint-hsl: 159, 64%, 55%;
+--color-cyan-tint-hsl: 184, 67%, 58%;
+--color-blue-tint-hsl: 219, 96%, 81%;
+--color-purple-tint-hsl: 252, 100%, 86%;
+--color-pink-tint-hsl: 327, 77%, 81%;
+--color-grey-text-hsl: 0, 0%, 50%;
+--color-red-text-hsl: 3, 73%, 55%;
+--color-orange-text-hsl: 31, 100%, 38%;
+--color-yellow-text-hsl: 39, 78%, 37%;
+--color-green-text-hsl: 93, 100%, 28%;
+--color-mint-text-hsl: 161, 100%, 28%;
+--color-cyan-text-hsl: 184, 100%, 29%;
+--color-blue-text-hsl: 221, 87%, 60%;
+--color-purple-text-hsl: 257, 92%, 68%;
+--color-pink-text-hsl: 321, 67%, 54%;
+--text-normal-hsl: 221, 55%, 15%;
+--text-muted-hsl: 221, 55%, 20%;
+--text-faint-hsl: 221, 55%, 35%;
+--background-primary-hsl: 221, 55%, 98%;
+--background-primary-alt-hsl: 221, 55%, 95%;
+--background-secondary-hsl: 221, 55%, 92%;
+--background-secondary-blur-hsl: 221, 55%, 91%;
+--background-secondary-alt-hsl: 221, 55%, 72%;
+--shadow-color-hsl: 221, 55%, 7%;
+--shadow-s: hsla(var(--shadow-color-hsl), 10%) 0 1px 2px 0;
+--shadow-l: hsla(var(--shadow-color-hsl), 4%) 0 1px 2px, hsla(var(--shadow-color-hsl), 4%) 0 2px 4px,
+  	hsla(var(--shadow-color-hsl), 4%) 0 4px 8px, hsla(var(--shadow-color-hsl), 4%) 0 6px 12px;
+}`,
+    "pt-color-scheme-pistachio-lt": `.pt-color-scheme-pistachio-lt {
+--color-grey-base-hsl: 0, 0%, 90%;
+--color-red-base-hsl: 8, 100%, 93%;
+--color-orange-base-hsl: 26, 89%, 89%;
+--color-yellow-base-hsl: 41, 90%, 84%;
+--color-green-base-hsl: 109, 52%, 86%;
+--color-mint-base-hsl: 152, 65%, 85%;
+--color-cyan-base-hsl: 184, 63%, 85%;
+--color-blue-base-hsl: 220, 85%, 92%;
+--color-purple-base-hsl: 250, 100%, 94%;
+--color-pink-base-hsl: 327, 84%, 93%;
+--color-grey-tint-hsl: 0, 0%, 73%;
+--color-red-tint-hsl: 7, 85%, 79%;
+--color-orange-tint-hsl: 27, 83%, 69%;
+--color-yellow-tint-hsl: 44, 70%, 56%;
+--color-green-tint-hsl: 108, 52%, 60%;
+--color-mint-tint-hsl: 160, 61%, 52%;
+--color-cyan-tint-hsl: 184, 64%, 55%;
+--color-blue-tint-hsl: 220, 78%, 78%;
+--color-purple-tint-hsl: 252, 90%, 84%;
+--color-pink-tint-hsl: 326, 76%, 79%;
+--color-grey-text-hsl: 0, 0%, 47%;
+--color-red-text-hsl: 2, 71%, 52%;
+--color-orange-text-hsl: 30, 100%, 36%;
+--color-yellow-text-hsl: 39, 71%, 36%;
+--color-green-text-hsl: 116, 42%, 37%;
+--color-mint-text-hsl: 160, 100%, 27%;
+--color-cyan-text-hsl: 185, 100%, 28%;
+--color-blue-text-hsl: 221, 72%, 56%;
+--color-purple-text-hsl: 259, 80%, 64%;
+--color-pink-text-hsl: 319, 65%, 50%;
+--text-normal-hsl: 101, 35%, 15%;
+--text-muted-hsl: 101, 35%, 20%;
+--text-faint-hsl: 101, 35%, 35%;
+--background-primary-hsl: 101, 35%, 99%;
+--background-primary-alt-hsl: 101, 35%, 95%;
+--background-secondary-hsl: 101, 35%, 91%;
+--background-secondary-blur-hsl: 101, 35%, 90%;
+--background-secondary-alt-hsl: 101, 35%, 62%;
+--shadow-color-hsl: 101, 35%, 7%;
+--shadow-s: hsla(var(--shadow-color-hsl), 10%) 0 1px 2px 0;
+--shadow-l: hsla(var(--shadow-color-hsl), 4%) 0 1px 2px, hsla(var(--shadow-color-hsl), 4%) 0 2px 4px,
+  	hsla(var(--shadow-color-hsl), 4%) 0 4px 8px, hsla(var(--shadow-color-hsl), 4%) 0 6px 12px;
+}`,
+    "pt-color-scheme-peach-lt": `.pt-color-scheme-peach-lt {
+--color-grey-base-hsl: 0, 0%, 90%;
+--color-red-base-hsl: 9, 90%, 92%;
+--color-orange-base-hsl: 25, 96%, 89%;
+--color-yellow-base-hsl: 41, 91%, 83%;
+--color-green-base-hsl: 101, 53%, 85%;
+--color-mint-base-hsl: 153, 64%, 84%;
+--color-cyan-base-hsl: 184, 63%, 85%;
+--color-blue-base-hsl: 221, 85%, 92%;
+--color-purple-base-hsl: 250, 100%, 94%;
+--color-pink-base-hsl: 328, 84%, 93%;
+--color-grey-tint-hsl: 0, 0%, 73%;
+--color-red-tint-hsl: 7, 79%, 78%;
+--color-orange-tint-hsl: 26, 89%, 69%;
+--color-yellow-tint-hsl: 44, 70%, 56%;
+--color-green-tint-hsl: 98, 52%, 58%;
+--color-mint-tint-hsl: 160, 61%, 52%;
+--color-cyan-tint-hsl: 184, 63%, 54%;
+--color-blue-tint-hsl: 219, 78%, 78%;
+--color-purple-tint-hsl: 252, 90%, 84%;
+--color-pink-tint-hsl: 326, 76%, 79%;
+--color-grey-text-hsl: 0, 0%, 47%;
+--color-red-text-hsl: 4, 67%, 51%;
+--color-orange-text-hsl: 29, 100%, 37%;
+--color-yellow-text-hsl: 39, 70%, 36%;
+--color-green-text-hsl: 95, 100%, 26%;
+--color-mint-text-hsl: 160, 100%, 26%;
+--color-cyan-text-hsl: 185, 100%, 28%;
+--color-blue-text-hsl: 221, 72%, 56%;
+--color-purple-text-hsl: 259, 81%, 64%;
+--color-pink-text-hsl: 319, 66%, 49%;
+--text-normal-hsl: 3, 55%, 15%;
+--text-muted-hsl: 3, 55%, 20%;
+--text-faint-hsl: 3, 55%, 35%;
+--background-primary-hsl: 3, 55%, 98%;
+--background-primary-alt-hsl: 3, 55%, 95%;
+--background-secondary-hsl: 3, 55%, 93%;
+--background-secondary-blur-hsl: 3, 55%, 92%;
+--background-secondary-alt-hsl: 3, 55%, 74%;
+--shadow-color-hsl: 3, 55%, 7%;
+--shadow-s: hsla(var(--shadow-color-hsl), 10%) 0 1px 2px 0;
+--shadow-l: hsla(var(--shadow-color-hsl), 4%) 0 1px 2px, hsla(var(--shadow-color-hsl), 4%) 0 2px 4px,
+  	hsla(var(--shadow-color-hsl), 4%) 0 4px 8px, hsla(var(--shadow-color-hsl), 4%) 0 6px 12px;
+}`,
+    "pt-color-scheme-custom-lt": `.pt-color-scheme-custom-lt {
+--color-grey-base-hsl: 0, 0%, 90%;
+--color-red-base-hsl: 7, 90%, 92%;
+--color-orange-base-hsl: 26, 85%, 89%;
+--color-yellow-base-hsl: 42, 88%, 83%;
+--color-green-base-hsl: 101, 49%, 85%;
+--color-mint-base-hsl: 152, 62%, 85%;
+--color-cyan-base-hsl: 184, 60%, 85%;
+--color-blue-base-hsl: 217, 76%, 92%;
+--color-purple-base-hsl: 251, 87%, 94%;
+--color-pink-base-hsl: 328, 79%, 93%;
+--color-grey-tint-hsl: 0, 0%, 73%;
+--color-red-tint-hsl: 7, 82%, 78%;
+--color-orange-tint-hsl: 27, 80%, 69%;
+--color-yellow-tint-hsl: 44, 67%, 58%;
+--color-green-tint-hsl: 99, 50%, 59%;
+--color-mint-tint-hsl: 158, 59%, 55%;
+--color-cyan-tint-hsl: 184, 61%, 56%;
+--color-blue-tint-hsl: 219, 73%, 78%;
+--color-purple-tint-hsl: 252, 84%, 83%;
+--color-pink-tint-hsl: 327, 72%, 79%;
+--color-grey-text-hsl: 0, 0%, 47%;
+--color-red-text-hsl: 3, 68%, 52%;
+--color-orange-text-hsl: 31, 100%, 36%;
+--color-yellow-text-hsl: 38, 62%, 37%;
+--color-green-text-hsl: 93, 100%, 27%;
+--color-mint-text-hsl: 161, 100%, 26%;
+--color-cyan-text-hsl: 184, 100%, 28%;
+--color-blue-text-hsl: 221, 67%, 56%;
+--color-purple-text-hsl: 258, 75%, 63%;
+--color-pink-text-hsl: 320, 60%, 50%;
+--text-normal-hsl: 0, 0%, 15%;
+--text-muted-hsl: 0, 0%, 20%;
+--text-faint-hsl: 0, 0%, 35%;
+--background-primary-hsl: 0, 0%, 100%;
+--background-primary-alt-hsl: 0, 0%, 96%;
+--background-secondary-hsl: 0, 0%, 93%;
+--background-secondary-blur-hsl: 0, 0%, 92%;
+--background-secondary-alt-hsl: 0, 0%, 69%;
+--shadow-color-hsl: 0, 0%, 0%;
+--shadow-s: hsla(var(--shadow-color-hsl), 10%) 0 1px 2px 0;
+--shadow-l: hsla(var(--shadow-color-hsl), 3%) 0 1px 2px, hsla(var(--shadow-color-hsl), 3%) 0 2px 4px,
+  	hsla(var(--shadow-color-hsl), 3%) 0 4px 8px, hsla(var(--shadow-color-hsl), 3%) 0 6px 12px;
+}`,
+    "pt-color-scheme-style-minimal-lt": `.pt-color-scheme-style-minimal-lt .workspace-leaf div.workspace-leaf-content[data-type=file-tree-view] #file-tree-divider {
+background-color: transparent;
+}
+body.pt-color-scheme-style-minimal-lt {
+--background-secondary: var(--background-primary);
+--background-secondary-blur: var(--background-primary-blur);
+--window-border: 1px solid transparent;
+}
+
+body.pt-disable-blur {
+--background-secondary-blur: var(--background-primary);
+}`,
+    "pt-color-scheme-style-border-lt": `body.pt-color-scheme-style-border-lt {
+--background-secondary: var(--background-primary);
+--background-secondary-blur: var(--background-primary-blur);
+}
+
+body.pt-disable-blur {
+--background-secondary-blur: var(--background-primary);
+}`,
+    "pt-accent-color-custom-lt": `body.pt-accent-color-custom-lt {
+--interactive-accent-base-hsl: var(--color-accent-base-lt);
+--interactive-accent-tint-hsl: var(--color-accent-tint-lt);
+--interactive-accent-text-hsl: var(--color-accent-text-lt);
+--interactive-accent-base: hsl(var(--color-accent-base-lt));
+--interactive-accent-tint: hsl(var(--color-accent-tint-lt));
+--interactive-accent-text: hsl(var(--color-accent-text-lt));
+--interactive-accent-hover: hsl(var(--color-accent-tint-lt));
+}`,
+    "pt-accent-color-red-lt": `body.pt-accent-color-red-lt {
+--interactive-accent-base-hsl: var(--color-red-base-hsl);
+--interactive-accent-tint-hsl: var(--color-red-tint-hsl);
+--interactive-accent-text-hsl: var(--color-red-text-hsl);
+--interactive-accent-base: var(--color-red-base);
+--interactive-accent-tint: var(--color-red-tint);
+--interactive-accent-text: var(--color-red-text);
+--interactive-accent-hover: var(--color-red-tint);
+}`,
+    "pt-accent-color-orange-lt": `body.pt-accent-color-orange-lt {
+--interactive-accent-base-hsl: var(--color-orange-base-hsl);
+--interactive-accent-tint-hsl: var(--color-orange-tint-hsl);
+--interactive-accent-text-hsl: var(--color-orange-text-hsl);
+--interactive-accent-base: var(--color-orange-base);
+--interactive-accent-tint: var(--color-orange-tint);
+--interactive-accent-text: var(--color-orange-text);
+--interactive-accent-hover: var(--color-orange-tint);
+}`,
+    "pt-accent-color-yellow-lt": `body.pt-accent-color-yellow-lt {
+--interactive-accent-base-hsl: var(--color-yellow-base-hsl);
+--interactive-accent-tint-hsl: var(--color-yellow-tint-hsl);
+--interactive-accent-text-hsl: var(--color-yellow-text-hsl);
+--interactive-accent-base: var(--color-yellow-base);
+--interactive-accent-tint: var(--color-yellow-tint);
+--interactive-accent-text: var(--color-yellow-text);
+--interactive-accent-hover: var(--color-yellow-tint);
+}`,
+    "pt-accent-color-green-lt": `body.pt-accent-color-green-lt {
+--interactive-accent-base-hsl: var(--color-green-base-hsl);
+--interactive-accent-tint-hsl: var(--color-green-tint-hsl);
+--interactive-accent-text-hsl: var(--color-green-text-hsl);
+--interactive-accent-base: var(--color-green-base);
+--interactive-accent-tint: var(--color-green-tint);
+--interactive-accent-text: var(--color-green-text);
+--interactive-accent-hover: var(--color-green-tint);
+}`,
+    "pt-accent-color-mint-lt": `body.pt-accent-color-mint-lt {
+--interactive-accent-base-hsl: var(--color-mint-base-hsl);
+--interactive-accent-tint-hsl: var(--color-mint-tint-hsl);
+--interactive-accent-text-hsl: var(--color-mint-text-hsl);
+--interactive-accent-base: var(--color-mint-base);
+--interactive-accent-tint: var(--color-mint-tint);
+--interactive-accent-text: var(--color-mint-text);
+--interactive-accent-hover: var(--color-mint-tint);
+}`,
+    "pt-accent-color-cyan-lt": `body.pt-accent-color-cyan-lt {
+--interactive-accent-base-hsl: var(--color-cyan-base-hsl);
+--interactive-accent-tint-hsl: var(--color-cyan-tint-hsl);
+--interactive-accent-text-hsl: var(--color-cyan-text-hsl);
+--interactive-accent-base: var(--color-cyan-base);
+--interactive-accent-tint: var(--color-cyan-tint);
+--interactive-accent-text: var(--color-cyan-text);
+--interactive-accent-hover: var(--color-cyan-tint);
+}`,
+    "pt-accent-color-blue-lt": `body.pt-accent-color-blue-lt {
+--interactive-accent-base-hsl: var(--color-blue-base-hsl);
+--interactive-accent-tint-hsl: var(--color-blue-tint-hsl);
+--interactive-accent-text-hsl: var(--color-blue-text-hsl);
+--interactive-accent-base: var(--color-blue-base);
+--interactive-accent-tint: var(--color-blue-tint);
+--interactive-accent-text: var(--color-blue-text);
+--interactive-accent-hover: var(--color-blue-tint);
+}`,
+    "pt-accent-color-purple-lt": `body.pt-accent-color-purple-lt {
+--interactive-accent-base-hsl: var(--color-purple-base-hsl);
+--interactive-accent-tint-hsl: var(--color-purple-tint-hsl);
+--interactive-accent-text-hsl: var(--color-purple-text-hsl);
+--interactive-accent-base: var(--color-purple-base);
+--interactive-accent-tint: var(--color-purple-tint);
+--interactive-accent-text: var(--color-purple-text);
+--interactive-accent-hover: var(--color-purple-tint);
+}`,
+    "pt-accent-color-pink-lt": `body.pt-accent-color-pink-lt {
+--interactive-accent-base-hsl: var(--color-pink-base-hsl);
+--interactive-accent-tint-hsl: var(--color-pink-tint-hsl);
+--interactive-accent-text-hsl: var(--color-pink-text-hsl);
+--interactive-accent-base: var(--color-pink-base);
+--interactive-accent-tint: var(--color-pink-tint);
+--interactive-accent-text: var(--color-pink-text);
+--interactive-accent-hover: var(--color-pink-tint);
+}`,
+    "pt-accent-color-grey-lt": `body.pt-accent-color-grey-lt {
+--interactive-accent-base-hsl: var(--color-grey-base-hsl);
+--interactive-accent-tint-hsl: var(--color-grey-tint-hsl);
+--interactive-accent-text-hsl: var(--color-grey-text-hsl);
+--interactive-accent-base: var(--color-grey-base);
+--interactive-accent-tint: var(--color-grey-tint);
+--interactive-accent-text: var(--color-grey-text);
+--interactive-accent-hover: var(--color-grey-tint);
+}`,
+    "pt-highlight-text-custom-lt": `body.pt-highlight-text-custom-lt {
+--highlight-text-normal: var(--highlight-text-accent-custom-lt);
+}`,
+    "pt-highlight-text-dark-lt": `body.pt-highlight-text-dark-lt {
+--highlight-text-normal: var(--text-normal);
+}`,
+    "pt-highlight-text-light-lt": `body.pt-highlight-text-light-lt {
+--highlight-text-normal: var(--background-primary);
+}`,
+    "pt-highlight-text-accent-lt": `body.pt-highlight-text-accent-lt {
+--highlight-text-normal: var(--interactive-accent-text);
+}`,
+    "pt-color-scheme-mocha-dt": `.pt-color-scheme-mocha-dt {
+--color-grey-base-hsl: 0, 0%, 17%;
+--color-red-base-hsl: 2, 50%, 20%;
+--color-orange-base-hsl: 26, 58%, 16%;
+--color-yellow-base-hsl: 43, 64%, 13%;
+--color-green-base-hsl: 122, 47%, 13%;
+--color-mint-base-hsl: 165, 75%, 11%;
+--color-cyan-base-hsl: 196, 57%, 15%;
+--color-blue-base-hsl: 225, 47%, 21%;
+--color-purple-base-hsl: 271, 45%, 22%;
+--color-pink-base-hsl: 326, 50%, 20%;
+--color-grey-tint-hsl: 0, 0%, 41%;
+--color-red-tint-hsl: 4, 46%, 47%;
+--color-orange-tint-hsl: 26, 49%, 38%;
+--color-yellow-tint-hsl: 43, 53%, 32%;
+--color-green-tint-hsl: 123, 39%, 33%;
+--color-mint-tint-hsl: 164, 61%, 29%;
+--color-cyan-tint-hsl: 195, 47%, 36%;
+--color-blue-tint-hsl: 225, 42%, 50%;
+--color-purple-tint-hsl: 271, 41%, 51%;
+--color-pink-tint-hsl: 326, 44%, 46%;
+--color-grey-text-hsl: 0, 0%, 65%;
+--color-red-text-hsl: 4, 69%, 72%;
+--color-orange-text-hsl: 26, 74%, 61%;
+--color-yellow-text-hsl: 43, 53%, 52%;
+--color-green-text-hsl: 123, 43%, 54%;
+--color-mint-text-hsl: 165, 56%, 46%;
+--color-cyan-text-hsl: 196, 60%, 57%;
+--color-blue-text-hsl: 226, 56%, 72%;
+--color-purple-text-hsl: 267, 48%, 73%;
+--color-pink-text-hsl: 329, 60%, 71%;
+--text-normal-hsl: 25, 40%, 91%;
+--text-muted-hsl: 25, 40%, 86%;
+--text-faint-hsl: 25, 40%, 81%;
+--background-primary-hsl: 25, 40%, 18%;
+--background-primary-alt-hsl: 25, 40%, 28%;
+--background-secondary-hsl: 25, 40%, 12%;
+--background-secondary-blur-hsl: 25, 40%, 13%;
+--background-secondary-alt-hsl: 25, 40%, 8%;
+--shadow-color-hsl: 25, 40%, 7%;
+--shadow-s: hsla(var(--shadow-color-hsl), 50%) 0 1px 2px 0;
+--shadow-l: hsla(var(--shadow-color-hsl), 50%) 0 1px 2px, hsla(var(--shadow-color-hsl), 50%) 0 2px 4px,
+  	hsla(var(--shadow-color-hsl), 50%) 0 4px 8px, hsla(var(--shadow-color-hsl), 50%) 0 6px 12px;
+}`,
+    "pt-color-scheme-indigo-dt": `.pt-color-scheme-indigo-dt {
+--color-grey-base-hsl: 0, 0%, 17%;
+--color-red-base-hsl: 2, 50%, 20%;
+--color-orange-base-hsl: 26, 58%, 16%;
+--color-yellow-base-hsl: 43, 64%, 13%;
+--color-green-base-hsl: 124, 48%, 14%;
+--color-mint-base-hsl: 165, 75%, 11%;
+--color-cyan-base-hsl: 196, 57%, 15%;
+--color-blue-base-hsl: 225, 47%, 21%;
+--color-purple-base-hsl: 271, 45%, 22%;
+--color-pink-base-hsl: 326, 50%, 20%;
+--color-grey-tint-hsl: 0, 0%, 41%;
+--color-red-tint-hsl: 4, 46%, 47%;
+--color-orange-tint-hsl: 26, 49%, 38%;
+--color-yellow-tint-hsl: 43, 53%, 32%;
+--color-green-tint-hsl: 123, 39%, 33%;
+--color-mint-tint-hsl: 164, 61%, 29%;
+--color-cyan-tint-hsl: 196, 48%, 36%;
+--color-blue-tint-hsl: 225, 42%, 50%;
+--color-purple-tint-hsl: 271, 41%, 51%;
+--color-pink-tint-hsl: 326, 44%, 46%;
+--color-grey-text-hsl: 0, 0%, 65%;
+--color-red-text-hsl: 4, 69%, 72%;
+--color-orange-text-hsl: 26, 74%, 61%;
+--color-yellow-text-hsl: 43, 53%, 52%;
+--color-green-text-hsl: 123, 43%, 54%;
+--color-mint-text-hsl: 165, 56%, 46%;
+--color-cyan-text-hsl: 196, 60%, 57%;
+--color-blue-text-hsl: 226, 56%, 72%;
+--color-purple-text-hsl: 267, 48%, 73%;
+--color-pink-text-hsl: 329, 60%, 71%;
+--text-normal-hsl: 225, 40%, 91%;
+--text-muted-hsl: 225, 40%, 86%;
+--text-faint-hsl: 225, 40%, 81%;
+--background-primary-hsl: 225, 40%, 20%;
+--background-primary-alt-hsl: 225, 40%, 33%;
+--background-secondary-hsl: 225, 40%, 13%;
+--background-secondary-blur-hsl: 225, 40%, 14%;
+--background-secondary-alt-hsl: 225, 40%, 9%;
+--shadow-color-hsl: 225, 40%, 7%;
+--shadow-s: hsla(var(--shadow-color-hsl), 10%) 0 1px 2px 0;
+--shadow-l: hsla(var(--shadow-color-hsl), 10%) 0 1px 2px, hsla(var(--shadow-color-hsl), 10%) 0 2px 4px,
+  	hsla(var(--shadow-color-hsl), 10%) 0 4px 8px, hsla(var(--shadow-color-hsl), 10%) 0 6px 12px;
+}`,
+    "pt-color-scheme-pine-dt": `.pt-color-scheme-pine-dt {
+--color-grey-base-hsl: 0, 0%, 17%;
+--color-red-base-hsl: 2, 50%, 20%;
+--color-orange-base-hsl: 26, 59%, 15%;
+--color-yellow-base-hsl: 43, 66%, 13%;
+--color-green-base-hsl: 122, 48%, 13%;
+--color-mint-base-hsl: 164, 75%, 11%;
+--color-cyan-base-hsl: 196, 56%, 14%;
+--color-blue-base-hsl: 225, 48%, 21%;
+--color-purple-base-hsl: 272, 45%, 21%;
+--color-pink-base-hsl: 326, 52%, 19%;
+--color-grey-tint-hsl: 0, 0%, 40%;
+--color-red-tint-hsl: 3, 46%, 47%;
+--color-orange-tint-hsl: 26, 49%, 38%;
+--color-yellow-tint-hsl: 43, 52%, 32%;
+--color-green-tint-hsl: 123, 39%, 33%;
+--color-mint-tint-hsl: 165, 60%, 28%;
+--color-cyan-tint-hsl: 195, 48%, 35%;
+--color-blue-tint-hsl: 225, 42%, 49%;
+--color-purple-tint-hsl: 271, 41%, 51%;
+--color-pink-tint-hsl: 327, 44%, 46%;
+--color-grey-text-hsl: 0, 0%, 66%;
+--color-red-text-hsl: 5, 70%, 73%;
+--color-orange-text-hsl: 26, 78%, 63%;
+--color-yellow-text-hsl: 43, 56%, 53%;
+--color-green-text-hsl: 123, 44%, 55%;
+--color-mint-text-hsl: 165, 56%, 48%;
+--color-cyan-text-hsl: 196, 63%, 58%;
+--color-blue-text-hsl: 226, 56%, 74%;
+--color-purple-text-hsl: 268, 48%, 74%;
+--color-pink-text-hsl: 330, 59%, 73%;
+--text-normal-hsl: 123, 39%, 93%;
+--text-muted-hsl: 123, 39%, 88%;
+--text-faint-hsl: 123, 39%, 83%;
+--background-primary-hsl: 123, 39%, 15%;
+--background-primary-alt-hsl: 123, 39%, 23%;
+--background-secondary-hsl: 123, 39%, 9%;
+--background-secondary-blur-hsl: 123, 39%, 10%;
+--background-secondary-alt-hsl: 123, 39%, 6%;
+--shadow-color-hsl: 123, 39%, 7%;
+--shadow-s: hsla(var(--shadow-color-hsl), 10%) 0 1px 2px 0;
+--shadow-l: hsla(var(--shadow-color-hsl), 10%) 0 1px 2px, hsla(var(--shadow-color-hsl), 10%) 0 2px 4px,
+  	hsla(var(--shadow-color-hsl), 10%) 0 4px 8px, hsla(var(--shadow-color-hsl), 10%) 0 6px 12px;
+}`,
+    "pt-color-scheme-cherry-dt": `.pt-color-scheme-cherry-dt {
+--color-grey-base-hsl: 0, 0%, 17%;
+--color-red-base-hsl: 2, 50%, 20%;
+--color-orange-base-hsl: 26, 59%, 16%;
+--color-yellow-base-hsl: 43, 64%, 13%;
+--color-green-base-hsl: 124, 48%, 14%;
+--color-mint-base-hsl: 165, 75%, 11%;
+--color-cyan-base-hsl: 196, 57%, 15%;
+--color-blue-base-hsl: 225, 47%, 21%;
+--color-purple-base-hsl: 272, 45%, 22%;
+--color-pink-base-hsl: 326, 50%, 20%;
+--color-grey-tint-hsl: 0, 0%, 41%;
+--color-red-tint-hsl: 4, 46%, 47%;
+--color-orange-tint-hsl: 26, 49%, 38%;
+--color-yellow-tint-hsl: 43, 53%, 32%;
+--color-green-tint-hsl: 123, 39%, 33%;
+--color-mint-tint-hsl: 164, 61%, 29%;
+--color-cyan-tint-hsl: 196, 48%, 36%;
+--color-blue-tint-hsl: 225, 42%, 50%;
+--color-purple-tint-hsl: 272, 42%, 51%;
+--color-pink-tint-hsl: 326, 44%, 46%;
+--color-grey-text-hsl: 0, 0%, 67%;
+--color-red-text-hsl: 4, 70%, 74%;
+--color-orange-text-hsl: 26, 80%, 63%;
+--color-yellow-text-hsl: 43, 57%, 54%;
+--color-green-text-hsl: 123, 45%, 55%;
+--color-mint-text-hsl: 165, 56%, 48%;
+--color-cyan-text-hsl: 195, 64%, 59%;
+--color-blue-text-hsl: 226, 56%, 74%;
+--color-purple-text-hsl: 268, 48%, 75%;
+--color-pink-text-hsl: 330, 60%, 74%;
+--text-normal-hsl: 2, 48%, 93%;
+--text-muted-hsl: 2, 48%, 88%;
+--text-faint-hsl: 2, 48%, 83%;
+--background-primary-hsl: 2, 48%, 19%;
+--background-primary-alt-hsl: 2, 48%, 29%;
+--background-secondary-hsl: 2, 48%, 12%;
+--background-secondary-blur-hsl: 2, 48%, 13%;
+--background-secondary-alt-hsl: 2, 48%, 8%;
+--shadow-color-hsl: 2, 48%, 7%;
+--shadow-s: hsla(var(--shadow-color-hsl), 10%) 0 1px 2px 0;
+--shadow-l: hsla(var(--shadow-color-hsl), 10%) 0 1px 2px, hsla(var(--shadow-color-hsl), 10%) 0 2px 4px,
+  	hsla(var(--shadow-color-hsl), 10%) 0 4px 8px, hsla(var(--shadow-color-hsl), 10%) 0 6px 12px;
+}`,
+    "pt-color-scheme-custom-dt": `.pt-color-scheme-custom-dt {
+--color-grey-base-hsl: 0, 0%, 16%;
+--color-red-base-hsl: 2, 55%, 19%;
+--color-orange-base-hsl: 26, 65%, 15%;
+--color-yellow-base-hsl: 43, 73%, 12%;
+--color-green-base-hsl: 124, 54%, 12%;
+--color-mint-base-hsl: 165, 88%, 10%;
+--color-cyan-base-hsl: 195, 65%, 13%;
+--color-blue-base-hsl: 225, 50%, 20%;
+--color-purple-base-hsl: 271, 48%, 21%;
+--color-pink-base-hsl: 325, 55%, 18%;
+--color-grey-tint-hsl: 0, 0%, 40%;
+--color-red-tint-hsl: 3, 49%, 46%;
+--color-orange-tint-hsl: 27, 53%, 37%;
+--color-yellow-tint-hsl: 44, 59%, 31%;
+--color-green-tint-hsl: 123, 43%, 32%;
+--color-mint-tint-hsl: 166, 73%, 26%;
+--color-cyan-tint-hsl: 195, 52%, 34%;
+--color-blue-tint-hsl: 224, 44%, 49%;
+--color-purple-tint-hsl: 271, 43%, 51%;
+--color-pink-tint-hsl: 325, 47%, 45%;
+--color-grey-text-hsl: 0, 0%, 67%;
+--color-red-text-hsl: 4, 74%, 74%;
+--color-orange-text-hsl: 26, 85%, 63%;
+--color-yellow-text-hsl: 44, 60%, 53%;
+--color-green-text-hsl: 124, 48%, 54%;
+--color-mint-text-hsl: 166, 67%, 45%;
+--color-cyan-text-hsl: 195, 69%, 58%;
+--color-blue-text-hsl: 225, 61%, 75%;
+--color-purple-text-hsl: 267, 52%, 75%;
+--color-pink-text-hsl: 330, 64%, 74%;
+--text-normal-hsl: 0, 0%, 91%;
+--text-muted-hsl: 0, 0%, 86%;
+--text-faint-hsl: 0, 0%, 81%;
+--background-primary-hsl: 0, 0%, 18%;
+--background-primary-alt-hsl: 0, 0%, 30%;
+--background-secondary-hsl: 0, 0%, 12%;
+--background-secondary-blur-hsl: 0, 0%, 13%;
+--background-secondary-alt-hsl: 0, 0%, 8%;
+--shadow-color-hsl: 0, 0%, 0%;
+--shadow-s: hsla(var(--shadow-color-hsl), 10%) 0 1px 2px 0;
+--shadow-l: hsla(var(--shadow-color-hsl), 5%) 0 1px 2px, hsla(var(--shadow-color-hsl), 5%) 0 2px 4px,
+  	hsla(var(--shadow-color-hsl), 5%) 0 4px 8px, hsla(var(--shadow-color-hsl), 5%) 0 6px 12px;
+}`,
+    "pt-color-scheme-style-minimal-dt": `.pt-color-scheme-style-minimal-dt .workspace-ribbon.mod-left.is-collapsed {
+border-right-color: transparent;
+}
+
+.pt-color-scheme-style-minimal-dt .workspace-leaf div.workspace-leaf-content[data-type=file-tree-view] #file-tree-divider {
+background-color: transparent;
+}
+body.pt-color-scheme-style-minimal-dt {
+--background-secondary: var(--background-secondary-alt);
+--background-secondary-blur: var(--background-secondary-alt-blur);
+--window-border: 1px solid transparent;
+}
+
+body.pt-disable-blur {
+--background-secondary-blur: var(--background-secondary-alt);
+}`,
+    "pt-color-scheme-style-border-dt": `body.pt-color-scheme-style-border-dt {
+--background-secondary: var(--background-secondary-alt);
+--background-secondary-blur: var(--background-secondary-alt-blur);
+}
+
+body.pt-disable-blur {
+--background-secondary-blur: var(--background-secondary-alt);
+}`,
+    "pt-accent-color-custom-dt": `body.pt-accent-color-custom-dt {
+--interactive-accent-base-hsl: var(--color-accent-base-dt);
+--interactive-accent-tint-hsl: var(--color-accent-tint-dt);
+--interactive-accent-text-hsl: var(--color-accent-text-dt);
+--interactive-accent-base: hsl(var(--color-accent-base-dt));
+--interactive-accent-tint: hsl(var(--color-accent-tint-dt));
+--interactive-accent-text: hsl(var(--color-accent-text-dt));
+--interactive-accent-hover: hsl(var(--color-accent-tint-dt));
+}`,
+    "pt-accent-color-red-dt": `body.pt-accent-color-red-dt {
+--interactive-accent-base-hsl: var(--color-red-base-hsl);
+--interactive-accent-tint-hsl: var(--color-red-tint-hsl);
+--interactive-accent-text-hsl: var(--color-red-text-hsl);
+--interactive-accent-base: var(--color-red-base);
+--interactive-accent-tint: var(--color-red-tint);
+--interactive-accent-text: var(--color-red-text);
+--interactive-accent-hover: var(--color-red-tint);
+}`,
+    "pt-accent-color-orange-dt": `body.pt-accent-color-orange-dt {
+--interactive-accent-base-hsl: var(--color-orange-base-hsl);
+--interactive-accent-tint-hsl: var(--color-orange-tint-hsl);
+--interactive-accent-text-hsl: var(--color-orange-text-hsl);
+--interactive-accent-base: var(--color-orange-base);
+--interactive-accent-tint: var(--color-orange-tint);
+--interactive-accent-text: var(--color-orange-text);
+--interactive-accent-hover: var(--color-orange-tint);
+}`,
+    "pt-accent-color-yellow-dt": `body.pt-accent-color-yellow-dt {
+--interactive-accent-base-hsl: var(--color-yellow-base-hsl);
+--interactive-accent-tint-hsl: var(--color-yellow-tint-hsl);
+--interactive-accent-text-hsl: var(--color-yellow-text-hsl);
+--interactive-accent-base: var(--color-yellow-base);
+--interactive-accent-tint: var(--color-yellow-tint);
+--interactive-accent-text: var(--color-yellow-text);
+--interactive-accent-hover: var(--color-yellow-tint);
+}`,
+    "pt-accent-color-green-dt": `body.pt-accent-color-green-dt {
+--interactive-accent-base-hsl: var(--color-green-base-hsl);
+--interactive-accent-tint-hsl: var(--color-green-tint-hsl);
+--interactive-accent-text-hsl: var(--color-green-text-hsl);
+--interactive-accent-base: var(--color-green-base);
+--interactive-accent-tint: var(--color-green-tint);
+--interactive-accent-text: var(--color-green-text);
+--interactive-accent-hover: var(--color-green-tint);
+}`,
+    "pt-accent-color-mint-dt": `body.pt-accent-color-mint-dt {
+--interactive-accent-base-hsl: var(--color-mint-base-hsl);
+--interactive-accent-tint-hsl: var(--color-mint-tint-hsl);
+--interactive-accent-text-hsl: var(--color-mint-text-hsl);
+--interactive-accent-base: var(--color-mint-base);
+--interactive-accent-tint: var(--color-mint-tint);
+--interactive-accent-text: var(--color-mint-text);
+--interactive-accent-hover: var(--color-mint-tint);
+}`,
+    "pt-accent-color-cyan-dt": `body.pt-accent-color-cyan-dt {
+--interactive-accent-base-hsl: var(--color-cyan-base-hsl);
+--interactive-accent-tint-hsl: var(--color-cyan-tint-hsl);
+--interactive-accent-text-hsl: var(--color-cyan-text-hsl);
+--interactive-accent-base: var(--color-cyan-base);
+--interactive-accent-tint: var(--color-cyan-tint);
+--interactive-accent-text: var(--color-cyan-text);
+--interactive-accent-hover: var(--color-cyan-tint);
+}`,
+    "pt-accent-color-blue-dt": `body.pt-accent-color-blue-dt {
+--interactive-accent-base-hsl: var(--color-blue-base-hsl);
+--interactive-accent-tint-hsl: var(--color-blue-tint-hsl);
+--interactive-accent-text-hsl: var(--color-blue-text-hsl);
+--interactive-accent-base: var(--color-blue-base);
+--interactive-accent-tint: var(--color-blue-tint);
+--interactive-accent-text: var(--color-blue-text);
+--interactive-accent-hover: var(--color-blue-tint);
+}`,
+    "pt-accent-color-purple-dt": `body.pt-accent-color-purple-dt {
+--interactive-accent-base-hsl: var(--color-purple-base-hsl);
+--interactive-accent-tint-hsl: var(--color-purple-tint-hsl);
+--interactive-accent-text-hsl: var(--color-purple-text-hsl);
+--interactive-accent-base: var(--color-purple-base);
+--interactive-accent-tint: var(--color-purple-tint);
+--interactive-accent-text: var(--color-purple-text);
+--interactive-accent-hover: var(--color-purple-tint);
+}`,
+    "pt-accent-color-pink-dt": `body.pt-accent-color-pink-dt {
+--interactive-accent-base-hsl: var(--color-pink-base-hsl);
+--interactive-accent-tint-hsl: var(--color-pink-tint-hsl);
+--interactive-accent-text-hsl: var(--color-pink-text-hsl);
+--interactive-accent-base: var(--color-pink-base);
+--interactive-accent-tint: var(--color-pink-tint);
+--interactive-accent-text: var(--color-pink-text);
+--interactive-accent-hover: var(--color-pink-tint);
+}`,
+    "pt-accent-color-grey-dt": `body.pt-accent-color-grey-dt {
+--interactive-accent-base-hsl: var(--color-grey-base-hsl);
+--interactive-accent-tint-hsl: var(--color-grey-tint-hsl);
+--interactive-accent-text-hsl: var(--color-grey-text-hsl);
+--interactive-accent-base: var(--color-grey-base);
+--interactive-accent-tint: var(--color-grey-tint);
+--interactive-accent-text: var(--color-grey-text);
+--interactive-accent-hover: var(--color-grey-tint);
+}`,
+    "pt-highlight-text-custom-dt": `body.pt-highlight-text-custom-dt {
+--highlight-text-normal: var(--highlight-text-accent-custom-dt);
+}`,
+    "pt-highlight-text-dark-dt": `body.pt-highlight-text-dark-dt {
+--highlight-text-normal: var(--background-primary);
+}`,
+    "pt-highlight-text-light-dt": `body.pt-highlight-text-light-dt {
+--highlight-text-normal: var(--text-normal);
+}`,
+    "pt-highlight-text-accent-dt": `body.pt-highlight-text-accent-dt {
+--highlight-text-normal: var(--interactive-accent-text);
+}`,
+    "pt-custom-vault-banner": `.pt-custom-vault-banner .workspace-drawer-vault-name {
+display: flex;
+align-items: center;
+}
+
+.pt-custom-vault-banner .workspace-drawer-vault-name::before {
+display: inline-flex;
+min-width: 24px;
+height: 24px;
+margin-right: var(--size-4-2);
+content: "";
+background-image: var(--custom-vault-banner-icon-url);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+}
+
+.is-mobile .mod-left .workspace-drawer-header::before {
+display: block;
+width: 32px;
+height: 48px;
+margin: 0 var(--size-4-2);
+content: "";
+background-image: var(--custom-vault-banner-icon-url);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+border-radius: unset;
+}`,
+    "pt-focused-mode": `body.pt-focused-style-main-only:not(.is-popout-window) .status-bar, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon, body.pt-focused-style-main-only:not(.is-popout-window) .view-header, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-style-main-only:not(.is-popout-window) .mobile-navbar, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .status-bar, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .view-header, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .mobile-navbar, body.is-popout-window.pt-focused-style-popout-only .status-bar, body.is-popout-window.pt-focused-style-popout-only .workspace-ribbon, body.is-popout-window.pt-focused-style-popout-only .view-header, body.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-root .workspace-tab-header-container, body.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-horizontal.mod-left-split, body.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-horizontal.mod-right-split, body.is-popout-window.pt-focused-style-popout-only .workspace-ribbon.mod-left.is-collapsed, body.is-popout-window.pt-focused-style-popout-only .workspace-ribbon.mod-right.is-collapsed, body.is-popout-window.pt-focused-style-popout-only .mobile-navbar, body.is-popout-window.pt-focused-style-main-and-popout-only .status-bar, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon, body.is-popout-window.pt-focused-style-main-and-popout-only .view-header, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-root .workspace-tab-header-container, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-horizontal.mod-left-split, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-horizontal.mod-right-split, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon.mod-left.is-collapsed, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon.mod-right.is-collapsed, body.is-popout-window.pt-focused-style-main-and-popout-only .mobile-navbar {
+opacity: var(--fade-away-opacity);
+transition: opacity 250ms;
+transition-delay: var(--fade-away-delay);
+}
+
+body.pt-focused-style-main-only:not(.is-popout-window) .status-bar:hover, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon:hover, body.pt-focused-style-main-only:not(.is-popout-window) .view-header:hover, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-root .workspace-tab-header-container:hover, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-left-split:hover, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-right-split:hover, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon.mod-left.is-collapsed:hover, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon.mod-right.is-collapsed:hover, body.pt-focused-style-main-only:not(.is-popout-window) .mobile-navbar:hover, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .status-bar:hover, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon:hover, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .view-header:hover, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-root .workspace-tab-header-container:hover, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-left-split:hover, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-right-split:hover, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon.mod-left.is-collapsed:hover, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon.mod-right.is-collapsed:hover, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .mobile-navbar:hover, body.is-popout-window.pt-focused-style-popout-only .status-bar:hover, body.is-popout-window.pt-focused-style-popout-only .workspace-ribbon:hover, body.is-popout-window.pt-focused-style-popout-only .view-header:hover, body.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-root .workspace-tab-header-container:hover, body.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-horizontal.mod-left-split:hover, body.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-horizontal.mod-right-split:hover, body.is-popout-window.pt-focused-style-popout-only .workspace-ribbon.mod-left.is-collapsed:hover, body.is-popout-window.pt-focused-style-popout-only .workspace-ribbon.mod-right.is-collapsed:hover, body.is-popout-window.pt-focused-style-popout-only .mobile-navbar:hover, body.is-popout-window.pt-focused-style-main-and-popout-only .status-bar:hover, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon:hover, body.is-popout-window.pt-focused-style-main-and-popout-only .view-header:hover, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-root .workspace-tab-header-container:hover, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-horizontal.mod-left-split:hover, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-horizontal.mod-right-split:hover, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon.mod-left.is-collapsed:hover, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon.mod-right.is-collapsed:hover, body.is-popout-window.pt-focused-style-main-and-popout-only .mobile-navbar:hover {
+opacity: unset;
+transition: opacity 50ms;
+}`,
+    "pt-focused-style-main-only": `body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .status-bar, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .view-header, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .mobile-navbar {
+opacity: var(--fade-away-opacity);
+transition: opacity 250ms;
+transition-delay: var(--fade-away-delay);
+}
+
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .status-bar:hover, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon:hover, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .view-header:hover, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-root .workspace-tab-header-container:hover, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-left-split:hover, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-right-split:hover, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon.mod-left.is-collapsed:hover, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon.mod-right.is-collapsed:hover, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .mobile-navbar:hover {
+opacity: unset;
+transition: opacity 50ms;
+}`,
+    "pt-focused-style-popout-only": `body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .status-bar, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-ribbon, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .view-header, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .mobile-navbar {
+opacity: var(--fade-away-opacity);
+transition: opacity 250ms;
+transition-delay: var(--fade-away-delay);
+}
+
+body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .status-bar:hover, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-ribbon:hover, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .view-header:hover, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-root .workspace-tab-header-container:hover, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-horizontal.mod-left-split:hover, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-horizontal.mod-right-split:hover, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-ribbon.mod-left.is-collapsed:hover, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-ribbon.mod-right.is-collapsed:hover, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .mobile-navbar:hover {
+opacity: unset;
+transition: opacity 50ms;
+}`,
+    "pt-focused-style-main-and-popout-only": `body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .status-bar, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .view-header, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .mobile-navbar, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .status-bar, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .view-header, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .mobile-navbar {
+opacity: var(--fade-away-opacity);
+transition: opacity 250ms;
+transition-delay: var(--fade-away-delay);
+}
+
+body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .status-bar:hover, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon:hover, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .view-header:hover, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-root .workspace-tab-header-container:hover, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-left-split:hover, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-right-split:hover, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon.mod-left.is-collapsed:hover, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon.mod-right.is-collapsed:hover, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .mobile-navbar:hover, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .status-bar:hover, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon:hover, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .view-header:hover, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-root .workspace-tab-header-container:hover, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-horizontal.mod-left-split:hover, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-horizontal.mod-right-split:hover, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon.mod-left.is-collapsed:hover, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon.mod-right.is-collapsed:hover, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .mobile-navbar:hover {
+opacity: unset;
+transition: opacity 50ms;
+}`,
+    "pt-font-alt-a": `.pt-font-alt-a * {
+font-feature-settings: "ss03";
+}
+
+.pt-font-alt-g * {
+font-feature-settings: "ss03", "ss04";
+}`,
+    "pt-font-alt-g": `.pt-font-alt-g * {
+font-feature-settings: "ss04";
+}
+
+.pt-font-alt-a.pt-font-alt-g * {
+font-feature-settings: "ss03", "ss04";
+}`,
+    "pt-font-slashed-zero": `.pt-font-slashed-zero * {
+font-variant: slashed-zero;
+}`,
+    "pt-font-disable-ligatures": `.pt-font-disable-ligatures * {
+font-variant-ligatures: none;
+}`,
+    "pt-highlight-style-default-lt": `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+padding: 0;
+font-size: 1em;
+background-color: unset;
+border: unset;
+opacity: 1;
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-border) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: unset;
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-filled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-base);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-borderandfilled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+padding: 0;
+font-size: 1em;
+background-color: unset;
+border: unset;
+opacity: 1;
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-border) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: unset;
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-filled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-base);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-borderandfilled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}`,
+    "pt-highlight-style-border-lt": `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+padding: 0;
+font-size: 1em;
+background-color: unset;
+border: unset;
+opacity: 1;
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-border) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: unset;
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-filled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-base);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-borderandfilled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+padding: 0;
+font-size: 1em;
+background-color: unset;
+border: unset;
+opacity: 1;
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-border) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: unset;
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-filled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-base);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-borderandfilled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}`,
+    "pt-highlight-style-filled-lt": `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+padding: 0;
+font-size: 1em;
+background-color: unset;
+border: unset;
+opacity: 1;
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-border) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: unset;
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-filled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-base);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-borderandfilled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+padding: 0;
+font-size: 1em;
+background-color: unset;
+border: unset;
+opacity: 1;
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-border) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: unset;
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-filled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-base);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-borderandfilled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}`,
+    "pt-highlight-style-borderandfilled-lt": `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+padding: 0;
+font-size: 1em;
+background-color: unset;
+border: unset;
+opacity: 1;
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-border) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: unset;
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-filled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-base);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-borderandfilled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+padding: 0;
+font-size: 1em;
+background-color: unset;
+border: unset;
+opacity: 1;
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-border) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: unset;
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-filled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-base);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-borderandfilled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}`,
+    "pt-highlight-text-default-lt": `:is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-default-lt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-default-lt mark[class].mark-text-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt mark[class]).mark-text-default {
+color: var(--text-normal);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-default-lt mark[class].mark-text-color, body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt mark[class]).mark-text-color {
+color: var(--mark-highlight-text);
+}
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-lt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-default-dt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-lt mark[class].mark-text-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-default-dt mark[class]).mark-text-default {
+color: var(--text-normal);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-lt mark[class].mark-text-color, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-default-dt mark[class]).mark-text-color {
+color: var(--mark-highlight-text);
+}`,
+    "pt-highlight-text-color-lt": `:is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-color-lt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-dt mark[class]), body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-color-lt mark[class].mark-text-color {
+color: var(--mark-highlight-text);
+}
+body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-lt mark[class].mark-text-default {
+color: var(--text-normal);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-lt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-color-dt mark[class]), body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-lt mark[class].mark-text-color {
+color: var(--mark-highlight-text);
+}`,
+    "pt-highlight-style-default-dt": `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+padding: 0;
+font-size: 1em;
+background-color: unset;
+border: unset;
+opacity: 1;
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-border) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: unset;
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-filled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-base);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-borderandfilled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+padding: 0;
+font-size: 1em;
+background-color: unset;
+border: unset;
+opacity: 1;
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-border) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: unset;
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-filled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-base);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-borderandfilled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}`,
+    "pt-highlight-style-border-dt": `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+padding: 0;
+font-size: 1em;
+background-color: unset;
+border: unset;
+opacity: 1;
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-border) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: unset;
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-filled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-base);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-borderandfilled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+padding: 0;
+font-size: 1em;
+background-color: unset;
+border: unset;
+opacity: 1;
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-border) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: unset;
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-filled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-base);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-borderandfilled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}`,
+    "pt-highlight-style-filled-dt": `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+padding: 0;
+font-size: 1em;
+background-color: unset;
+border: unset;
+opacity: 1;
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-border) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: unset;
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-filled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-base);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-borderandfilled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+padding: 0;
+font-size: 1em;
+background-color: unset;
+border: unset;
+opacity: 1;
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-border) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: unset;
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-filled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-base);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-borderandfilled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}`,
+    "pt-highlight-style-borderandfilled-dt": `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+padding: 0;
+font-size: 1em;
+background-color: unset;
+border: unset;
+opacity: 1;
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-border) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: unset;
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-filled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-base);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-borderandfilled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+padding: 0;
+font-size: 1em;
+background-color: unset;
+border: unset;
+opacity: 1;
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-border, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-border) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: unset;
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-filled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-filled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-base);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-borderandfilled, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-borderandfilled) {
+padding: 0 3px;
+font-size: var(--font-smallest);
+background-color: var(--mark-highlight-base);
+border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}`,
+    "pt-highlight-text-default-dt": `:is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-default-lt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-default-lt mark[class].mark-text-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt mark[class]).mark-text-default {
+color: var(--text-normal);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-default-lt mark[class].mark-text-color, body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt mark[class]).mark-text-color {
+color: var(--mark-highlight-text);
+}
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-lt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-default-dt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-lt mark[class].mark-text-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-default-dt mark[class]).mark-text-default {
+color: var(--text-normal);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-lt mark[class].mark-text-color, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-default-dt mark[class]).mark-text-color {
+color: var(--mark-highlight-text);
+}`,
+    "pt-highlight-text-color-dt": `body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-dt mark[class].mark-text-default {
+color: var(--text-normal);
+}
+
+:is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-color-lt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-dt mark[class]), body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-dt mark[class].mark-text-color {
+color: var(--mark-highlight-text);
+}
+:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-lt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-color-dt mark[class]), body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-color-dt mark[class].mark-text-color {
+color: var(--mark-highlight-text);
+}`,
+    "pt-tab-label-left-sidebar-left": `.pt-tab-label-left-sidebar-left .workspace-split.mod-left-split .workspace-tab-header-container {
+justify-content: flex-start;
+}`,
+    "pt-tab-label-left-sidebar-center": `.pt-tab-label-left-sidebar-center .workspace-split.mod-left-split .workspace-tab-header-container {
+justify-content: center;
+}
+
+.pt-tab-label-left-sidebar-center .workspace-split.mod-left-split .workspace-tab-header-container .workspace-tab-header-spacer {
+display: none;
+}
+
+.pt-tab-label-left-sidebar-center .workspace-split.mod-left-split .workspace-tab-header-container .workspace-tab-header-container-inner {
+margin-left: auto;
+margin-right: auto;
+}`,
+    "pt-tab-label-left-sidebar-right": `.pt-tab-label-left-sidebar-right .workspace-split.mod-left-split .workspace-tab-header-container {
+justify-content: flex-end;
+}
+
+.pt-tab-label-left-sidebar-right .workspace-split.mod-left-split .workspace-tab-header-container .workspace-tab-header-spacer {
+display: none;
+}`,
+    "pt-tab-label-right-sidebar-left": `.pt-tab-label-right-sidebar-left .workspace-split.mod-right-split .workspace-tab-header-container {
+justify-content: flex-start;
+}`,
+    "pt-tab-label-right-sidebar-center": `.pt-tab-label-right-sidebar-center .workspace-split.mod-right-split .workspace-tab-header-container {
+justify-content: center;
+}
+
+.pt-tab-label-right-sidebar-center .workspace-split.mod-right-split .workspace-tab-header-container .workspace-tab-header-spacer {
+display: none;
+}
+
+.pt-tab-label-right-sidebar-center .workspace-split.mod-right-split .workspace-tab-header-container .workspace-tab-header-container-inner {
+margin-left: auto;
+margin-right: auto;
+}`,
+    "pt-tab-label-right-sidebar-right": `.pt-tab-label-right-sidebar-right .workspace-split.mod-right-split .workspace-tab-header-container {
+justify-content: flex-end;
+}
+
+.pt-tab-label-right-sidebar-right .workspace-split.mod-right-split .workspace-tab-header-container .workspace-tab-header-spacer {
+display: none;
+}`,
+    "pt-nav-header-left-sidebar-position-top": `.pt-nav-header-left-sidebar-position-top .workspace-leaf-content[data-type=dictionary-view] .search-input-container {
+border-top: var(--window-border);
+}`,
+    "pt-nav-header-left-sidebar-position-bottom": `.pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left .nav-header, .pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split .nav-header {
+position: absolute;
+bottom: calc(var(--size-2-2) + var(--scroll-bar-size));
+z-index: var(--layer-popover);
+order: 10;
+width: -webkit-fill-available;
+width: fill-available;
+height: unset;
+padding: 0 calc(var(--size-2-2) + var(--scroll-bar-size)) 0 var(--size-2-2);
+pointer-events: none;
+background-color: unset;
+border-bottom: unset;
+}
+
+.pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left .nav-buttons-container, .pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left .workspace-leaf-content[data-type=dangling-links] .nav-header, .pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split .nav-buttons-container, .pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split .workspace-leaf-content[data-type=dangling-links] .nav-header {
+padding: var(--size-4-1);
+pointer-events: auto;
+background: var(--background-secondary-blur);
+-webkit-backdrop-filter: blur(var(--blur-intensity));
+backdrop-filter: blur(var(--blur-intensity));
+border: 1px solid var(--window-border-color);
+border-radius: var(--radius-m);
+box-shadow: var(--shadow-l);
+}
+
+.pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left .workspace-leaf-content[data-type=dangling-links] .nav-header, .pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split .workspace-leaf-content[data-type=dangling-links] .nav-header {
+width: fit-content;
+}
+
+.pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left .workspace-leaf-content[data-type=dictionary-view] .nav-buttons-container, .pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split .workspace-leaf-content[data-type=dictionary-view] .nav-buttons-container {
+position: fixed;
+bottom: calc(var(--size-2-3) + var(--scroll-bar-size));
+z-index: var(--layer-popover);
+min-height: unset;
+}
+
+.pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left :is(.nav-files-container, .workspace-leaf-content[data-type=tag] .tag-container, .workspace-leaf-content[data-type=backlink] .backlink-pane, .workspace-leaf-content[data-type=starred] .item-list, .workspace-leaf-content[data-type=dictionary-view] .contents, .workspace-leaf-content[data-type=dangling-links] .view-content .container, .workspace-leaf-content[data-type=bookmarks] .view-content > div, .workspace-leaf-content[data-type=all-properties] .view-content, .workspace-leaf-content[data-type=properties] .view-content, .workspace-leaf-content[data-type=outline] .view-content), .pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split :is(.nav-files-container, .workspace-leaf-content[data-type=tag] .tag-container, .workspace-leaf-content[data-type=backlink] .backlink-pane, .workspace-leaf-content[data-type=starred] .item-list, .workspace-leaf-content[data-type=dictionary-view] .contents, .workspace-leaf-content[data-type=dangling-links] .view-content .container, .workspace-leaf-content[data-type=bookmarks] .view-content > div, .workspace-leaf-content[data-type=all-properties] .view-content, .workspace-leaf-content[data-type=properties] .view-content, .workspace-leaf-content[data-type=outline] .view-content) {
+padding-bottom: calc(var(--nav-header-padding-bottom) + 2 * var(--scroll-bar-size));
+}
+
+.is-mobile .workspace-drawer.mod-left .nav-buttons-container, .is-mobile .workspace-drawer.mod-left .workspace-leaf-content[data-type=dangling-links] .nav-header {
+padding: var(--size-4-1);
+}`,
+    "pt-nav-header-left-sidebar-align-left": `.pt-nav-header-left-sidebar-align-left .workspace-split.mod-left-split .embedded-backlinks .nav-header {
+position: sticky;
+top: 0;
+padding: 0 var(--size-2-2);
+}`,
+    "pt-nav-header-left-sidebar-align-center": `.pt-nav-header-left-sidebar-align-center .workspace-split.mod-left-split .embedded-backlinks .nav-header {
+position: sticky;
+top: 0;
+padding: 0 var(--size-2-2);
+}`,
+    "pt-nav-header-left-sidebar-align-right": `.pt-nav-header-left-sidebar-align-right .workspace-split.mod-left-split .embedded-backlinks .nav-header {
+position: sticky;
+top: 0;
+padding: 0 var(--size-2-2);
+}`,
+    "pt-nav-header-right-sidebar-position-top": `.pt-nav-header-right-sidebar-position-top .workspace-leaf-content[data-type=dictionary-view] .search-input-container {
+border-top: var(--window-border);
+}`,
+    "pt-nav-header-right-sidebar-position-bottom": `.pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right .nav-header, .pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split .nav-header {
+position: absolute;
+bottom: calc(var(--size-2-2) + var(--scroll-bar-size));
+z-index: var(--layer-popover);
+order: 10;
+width: -webkit-fill-available;
+width: fill-available;
+height: unset;
+padding: 0 calc(var(--size-2-2) + var(--scroll-bar-size)) 0 var(--size-2-2);
+pointer-events: none;
+background-color: unset;
+border-bottom: unset;
+}
+
+.pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right .nav-buttons-container, .pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right .workspace-leaf-content[data-type=dangling-links] .nav-header, .pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split .nav-buttons-container, .pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split .workspace-leaf-content[data-type=dangling-links] .nav-header {
+padding: var(--size-4-1);
+pointer-events: auto;
+background: var(--background-secondary-blur);
+-webkit-backdrop-filter: blur(var(--blur-intensity));
+backdrop-filter: blur(var(--blur-intensity));
+border: 1px solid var(--window-border-color);
+border-radius: var(--radius-m);
+box-shadow: var(--shadow-l);
+}
+
+.pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right .workspace-leaf-content[data-type=dangling-links] .nav-header, .pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split .workspace-leaf-content[data-type=dangling-links] .nav-header {
+width: fit-content;
+}
+
+.pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right .workspace-leaf-content[data-type=dictionary-view] .nav-buttons-container, .pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split .workspace-leaf-content[data-type=dictionary-view] .nav-buttons-container {
+position: fixed;
+bottom: calc(var(--size-2-3) + var(--scroll-bar-size));
+z-index: var(--layer-popover);
+min-height: unset;
+}
+
+.pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right :is(.nav-files-container, .workspace-leaf-content[data-type=tag] .tag-container, .workspace-leaf-content[data-type=backlink] .backlink-pane, .workspace-leaf-content[data-type=starred] .item-list, .workspace-leaf-content[data-type=dictionary-view] .contents, .workspace-leaf-content[data-type=dangling-links] .view-content .container, .workspace-leaf-content[data-type=bookmarks] .view-content > div, .workspace-leaf-content[data-type=all-properties] .view-content, .workspace-leaf-content[data-type=properties] .view-content, .workspace-leaf-content[data-type=outline] .view-content), .pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split :is(.nav-files-container, .workspace-leaf-content[data-type=tag] .tag-container, .workspace-leaf-content[data-type=backlink] .backlink-pane, .workspace-leaf-content[data-type=starred] .item-list, .workspace-leaf-content[data-type=dictionary-view] .contents, .workspace-leaf-content[data-type=dangling-links] .view-content .container, .workspace-leaf-content[data-type=bookmarks] .view-content > div, .workspace-leaf-content[data-type=all-properties] .view-content, .workspace-leaf-content[data-type=properties] .view-content, .workspace-leaf-content[data-type=outline] .view-content) {
+padding-bottom: calc(var(--nav-header-padding-bottom) + 2 * var(--scroll-bar-size));
+}
+
+.is-mobile .workspace-drawer.mod-right .nav-buttons-container, .is-mobile .workspace-drawer.mod-right .workspace-leaf-content[data-type=dangling-links] .nav-header {
+padding: var(--size-4-1);
+}`,
+    "pt-nav-header-right-sidebar-align-left": `.pt-nav-header-right-sidebar-align-left .workspace-split.mod-right-split .embedded-backlinks .nav-header {
+position: sticky;
+top: 0;
+padding: 0 var(--size-2-2);
+}`,
+    "pt-nav-header-right-sidebar-align-center": `.pt-nav-header-right-sidebar-align-center .workspace-split.mod-right-split .embedded-backlinks .nav-header {
+position: sticky;
+top: 0;
+padding: 0 var(--size-2-2);
+}`,
+    "pt-nav-header-right-sidebar-align-right": `.pt-nav-header-right-sidebar-align-right .workspace-split.mod-right-split .embedded-backlinks .nav-header {
+position: sticky;
+top: 0;
+padding: 0 var(--size-2-2);
+}`,
+    "pt-tab-header-center": `.pt-tab-header-center .mod-root .workspace-tab-header-container-inner {
+margin-left: auto;
+}
+
+.pt-tab-header-center .mod-root .workspace-tab-header-new-tab {
+margin-right: auto;
+}`,
+    "pt-tab-header-right": `.pt-tab-header-right .mod-root .workspace-tab-header-container-inner {
+margin-left: auto;
+}
+
+.pt-tab-header-right .mod-root .workspace-tab-header-new-tab {
+margin-right: var(--size-4-1);
+}`,
+    "pt-file-explorer-folder-icon": `.pt-file-explorer-folder-icon .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon {
+display: inline-flex;
+width: 17px;
+height: -webkit-fill-available;
+height: fill-available;
+content: " ";
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2'%3E%3C/path%3E%3C/svg%3E");
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+-webkit-mask-size: 17px;
+stroke-width: unset;
+}
+
+.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon {
+background-color: var(--text-muted);
+}
+
+.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon {
+background-color: var(--interactive-accent-text);
+}
+
+.pt-file-explorer-folder-icon .nav-folder.is-collapsed .collapse-icon svg.svg-icon {
+display: inline-flex;
+width: 17px;
+height: -webkit-fill-available;
+height: fill-available;
+content: " ";
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z'%3E%3C/path%3E%3C/svg%3E");
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+-webkit-mask-size: 17px;
+stroke-width: unset;
+transform: rotate(0);
+}
+
+.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon {
+background-color: var(--text-muted);
+}
+
+.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-file-explorer-folder-icon-default .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon {
+background-color: var(--interactive-accent-text);
+}
+
+.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon {
+background-color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+background-color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+background-color: var(--rainbow-text-color);
+}`,
+    "pt-file-explorer-folder-icon-default": `.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon {
+background-color: var(--text-muted);
+}
+
+.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon {
+background-color: var(--text-muted);
+}
+
+.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon {
+background-color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+background-color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+background-color: var(--rainbow-text-color);
+}`,
+    "pt-file-explorer-folder-icon-accent": `.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon {
+background-color: var(--interactive-accent-text);
+}
+
+.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon {
+background-color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+background-color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+background-color: var(--rainbow-text-color);
+}`,
+    "pt-file-explorer-folder-icon-active": `.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon {
+background-color: var(--interactive-accent-text);
+}
+
+.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon {
+background-color: var(--text-muted);
+}
+
+.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon {
+background-color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+background-color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+background-color: var(--rainbow-text-color);
+}`,
+    "pt-colored-folders": `.pt-colored-folders-style-accent.pt-colored-folders-files-match .workspace-leaf-content[data-type=file-explorer] .nav-folder .nav-file-title:not(.is-active, :hover) {
+color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders-style-accent .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder {
+--nav-indentation-guide-color: var(--interactive-accent-tint);
+}
+
+.pt-colored-folders-style-accent .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-folder-title {
+color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders-style-accent .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-file-title:hover, .pt-colored-folders-style-accent .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-folder-title:hover {
+color: var(--interactive-accent-text);
+background-color: var(--interactive-accent-base);
+}
+
+.pt-colored-folders-style-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders-style-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders-style-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders-style-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+background-color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders-style-rainbow.pt-colored-folders-files-match .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-file-title:not(.is-active, :hover) {
+color: var(--rainbow-text-color);
+}
+
+.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder {
+--nav-indentation-guide-color: var(--rainbow-indent-color);
+}
+
+.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-folder-title {
+color: var(--rainbow-text-color);
+}
+
+.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-file-title:hover, .pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-folder-title:hover {
+color: var(--rainbow-text-color);
+background-color: var(--rainbow-background-color);
+}
+
+.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+2) {
+--rainbow-text-color: var(--color-red-text);
+--rainbow-background-color: var(--color-red-base);
+--rainbow-indent-color: var(--color-red-tint);
+}
+
+.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+3) {
+--rainbow-text-color: var(--color-orange-text);
+--rainbow-background-color: var(--color-orange-base);
+--rainbow-indent-color: var(--color-orange-tint);
+}
+
+.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+4) {
+--rainbow-text-color: var(--color-yellow-text);
+--rainbow-background-color: var(--color-yellow-base);
+--rainbow-indent-color: var(--color-yellow-tint);
+}
+
+.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+5) {
+--rainbow-text-color: var(--color-green-text);
+--rainbow-background-color: var(--color-green-base);
+--rainbow-indent-color: var(--color-green-tint);
+}
+
+.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+6) {
+--rainbow-text-color: var(--color-mint-text);
+--rainbow-background-color: var(--color-mint-base);
+--rainbow-indent-color: var(--color-mint-tint);
+}
+
+.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+7) {
+--rainbow-text-color: var(--color-cyan-text);
+--rainbow-background-color: var(--color-cyan-base);
+--rainbow-indent-color: var(--color-cyan-tint);
+}
+
+.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+8) {
+--rainbow-text-color: var(--color-blue-text);
+--rainbow-background-color: var(--color-blue-base);
+--rainbow-indent-color: var(--color-blue-tint);
+}
+
+.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+9) {
+--rainbow-text-color: var(--color-purple-text);
+--rainbow-background-color: var(--color-purple-base);
+--rainbow-indent-color: var(--color-purple-tint);
+}
+
+.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+10) {
+--rainbow-text-color: var(--color-pink-text);
+--rainbow-background-color: var(--color-pink-base);
+--rainbow-indent-color: var(--color-pink-tint);
+}
+
+.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+11) {
+--rainbow-text-color: var(--color-grey-text);
+--rainbow-background-color: var(--color-grey-base);
+--rainbow-indent-color: var(--color-grey-tint);
+}
+
+.pt-colored-folders-style-rainbow .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+color: var(--rainbow-text-color);
+}
+
+.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+background-color: var(--rainbow-text-color);
+}`,
+    "pt-colored-folders-style-accent": `.pt-colored-folders.pt-colored-folders-files-match .workspace-leaf-content[data-type=file-explorer] .nav-folder .nav-file-title:not(.is-active, :hover) {
+color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders.pt-colored-folders-style-accent .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder {
+--nav-indentation-guide-color: var(--interactive-accent-tint);
+}
+
+.pt-colored-folders.pt-colored-folders-style-accent .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-folder-title {
+color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders.pt-colored-folders-style-accent .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-file-title:hover, .pt-colored-folders.pt-colored-folders-style-accent .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-folder-title:hover {
+color: var(--interactive-accent-text);
+background-color: var(--interactive-accent-base);
+}
+
+.pt-colored-folders.pt-colored-folders-style-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+background-color: var(--interactive-accent-text);
+}`,
+    "pt-colored-folders-style-rainbow": `.pt-colored-folders.pt-colored-folders-files-match .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-file-title:not(.is-active, :hover) {
+color: var(--rainbow-text-color);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder {
+--nav-indentation-guide-color: var(--rainbow-indent-color);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-folder-title {
+color: var(--rainbow-text-color);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-file-title:hover, .pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-folder-title:hover {
+color: var(--rainbow-text-color);
+background-color: var(--rainbow-background-color);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+2) {
+--rainbow-text-color: var(--color-red-text);
+--rainbow-background-color: var(--color-red-base);
+--rainbow-indent-color: var(--color-red-tint);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+3) {
+--rainbow-text-color: var(--color-orange-text);
+--rainbow-background-color: var(--color-orange-base);
+--rainbow-indent-color: var(--color-orange-tint);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+4) {
+--rainbow-text-color: var(--color-yellow-text);
+--rainbow-background-color: var(--color-yellow-base);
+--rainbow-indent-color: var(--color-yellow-tint);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+5) {
+--rainbow-text-color: var(--color-green-text);
+--rainbow-background-color: var(--color-green-base);
+--rainbow-indent-color: var(--color-green-tint);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+6) {
+--rainbow-text-color: var(--color-mint-text);
+--rainbow-background-color: var(--color-mint-base);
+--rainbow-indent-color: var(--color-mint-tint);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+7) {
+--rainbow-text-color: var(--color-cyan-text);
+--rainbow-background-color: var(--color-cyan-base);
+--rainbow-indent-color: var(--color-cyan-tint);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+8) {
+--rainbow-text-color: var(--color-blue-text);
+--rainbow-background-color: var(--color-blue-base);
+--rainbow-indent-color: var(--color-blue-tint);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+9) {
+--rainbow-text-color: var(--color-purple-text);
+--rainbow-background-color: var(--color-purple-base);
+--rainbow-indent-color: var(--color-purple-tint);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+10) {
+--rainbow-text-color: var(--color-pink-text);
+--rainbow-background-color: var(--color-pink-base);
+--rainbow-indent-color: var(--color-pink-tint);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+11) {
+--rainbow-text-color: var(--color-grey-text);
+--rainbow-background-color: var(--color-grey-base);
+--rainbow-indent-color: var(--color-grey-tint);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+color: var(--rainbow-text-color);
+}
+
+.pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+background-color: var(--rainbow-text-color);
+}`,
+    "pt-colored-folders-files-match": `.pt-colored-folders.pt-colored-folders-style-accent.pt-colored-folders-files-match .workspace-leaf-content[data-type=file-explorer] .nav-folder .nav-file-title:not(.is-active, :hover) {
+color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-colored-folders-files-match .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-file-title:not(.is-active, :hover) {
+color: var(--rainbow-text-color);
+}`,
+    "pt-titlebar-hide-text": `body.pt-titlebar-hide-text .titlebar .titlebar-text {
+display: none;
+}`,
+    "pt-status-bar-position-hidden": `.pt-status-bar-position-hidden .status-bar {
+display: none;
+}`,
+    "pt-status-bar-position-floating": `.pt-status-bar-position-floating .status-bar {
+--status-bar-position: absolute;
+right: 0;
+left: 0;
+width: fit-content;
+margin: 0 auto calc(var(--size-2-3) + var(--scroll-bar-size));
+background: var(--background-secondary-blur);
+-webkit-backdrop-filter: blur(var(--blur-intensity));
+backdrop-filter: blur(var(--blur-intensity));
+border: 1px solid var(--window-border-color);
+border-radius: var(--radius-s);
+box-shadow: var(--shadow-l);
+}
+
+.pt-status-bar-position-floating div#cMenuModalBar {
+bottom: calc(var(--size-4-3) + 33px + var(--scroll-bar-size)) !important;
+}`,
+    "pt-status-bar-position-fixed": `.pt-status-bar-position-fixed .status-bar {
+--status-bar-position: relative;
+padding: 1px var(--size-4-2);
+border: unset;
+border-top: var(--window-border);
+border-radius: unset;
+}
+
+.pt-status-bar-position-fixed div#cMenuModalBar {
+bottom: calc(var(--size-2-3) + 26px + var(--scroll-bar-size)) !important;
+}`,
+    "pt-fixed-status-bar-align-left": `.pt-fixed-status-bar-align-left .status-bar {
+justify-content: flex-start;
+}`,
+    "pt-fixed-status-bar-align-center": `.pt-fixed-status-bar-align-center .status-bar {
+justify-content: center;
+}`,
+    "pt-fixed-status-bar-align-right": `.pt-fixed-status-bar-align-right .status-bar {
+justify-content: flex-end;
+}`,
+    "pt-status-bar-custom-lt": `.pt-status-bar-custom-lt .status-bar {
+background: var(--status-bar-background-color-lt);
+}`,
+    "pt-status-bar-custom-dt": `.pt-status-bar-custom-dt .status-bar {
+background: var(--status-bar-background-color-dt);
+}`,
+    "pt-disable-kanban-title-count": `.pt-disable-kanban-title-count div.kanban-plugin__lane-title-count {
+display: none;
+}`,
+    "pt-center-kanban-title-text": `.pt-center-kanban-title-text .kanban-plugin__lane-title {
+align-items: center;
+}
+
+.pt-center-kanban-title-text .kanban-plugin__lane-input {
+width: -webkit-fill-available;
+width: fill-available;
+}`,
+    "pt-kanban-background-dots-lt": `.pt-kanban-background-dots-lt .kanban-plugin__board {
+background-image: radial-gradient(circle, hsla(var(--background-secondary-hsl), 90%) 1px, rgba(0, 0, 0, 0) 1px);
+background-attachment: local;
+background-size: 8px 8px;
+}`,
+    "pt-kanban-background-grid-lt": `.pt-kanban-background-grid-lt .kanban-plugin__board {
+background-image: linear-gradient(to right, hsla(var(--background-secondary-hsl), 90%) 1px, transparent 1px), linear-gradient(to bottom, hsla(var(--background-secondary-hsl), 90%) 1px, transparent 1px);
+background-attachment: local;
+background-size: 8px 8px;
+}`,
+    "pt-kanban-background-dots-dt": `.pt-kanban-background-dots-dt .kanban-plugin__board {
+background-image: radial-gradient(circle, hsla(var(--background-secondary-hsl), 90%) 1px, rgba(0, 0, 0, 0) 1px);
+background-attachment: local;
+background-size: 8px 8px;
+}`,
+    "pt-kanban-background-grid-dt": `.pt-kanban-background-grid-dt .kanban-plugin__board {
+background-image: linear-gradient(to right, hsla(var(--background-secondary-hsl), 90%) 1px, transparent 1px), linear-gradient(to bottom, hsla(var(--background-secondary-hsl), 90%) 1px, transparent 1px);
+background-attachment: local;
+background-size: 8px 8px;
+}`,
+    "pt-icon-folder-accent": `.pt-icon-folder-accent .obsidian-icon-folder-icon {
+color: var(--interactive-accent-text);
+}`,
+    "pt-icons-accent": `.pt-icons-accent .obsidian-icon {
+color: var(--interactive-accent-text);
+}`,
+    "pt-fade-inactive-tabs": `.pt-fade-inactive-tabs :not(.mod-active) .workspace-tab-header.is-active:not(.mod-active) {
+opacity: 0.55;
+}`,
+    "pt-disable-blur": `body:is(.theme-light, .theme-dark).pt-disable-blur {
+--background-secondary-blur: var(--background-secondary);
+}
+
+body.pt-color-scheme-style-border-dt.pt-disable-blur {
+--background-secondary-blur: var(--background-secondary-alt);
+}
+
+body.pt-color-scheme-style-minimal-dt.pt-disable-blur {
+--background-secondary-blur: var(--background-secondary-alt);
+}
+body:is(.theme-light, .theme-dark).pt-disable-blur {
+--background-secondary-blur: var(--background-secondary);
+}
+
+body.pt-color-scheme-style-border-lt.pt-disable-blur {
+--background-secondary-blur: var(--background-primary);
+}
+
+body.pt-color-scheme-style-minimal-lt.pt-disable-blur {
+--background-secondary-blur: var(--background-primary);
+}`,
+    "pt-collapsed-pinned-tab": `.pt-collapsed-pinned-tab .workspace .mod-root .workspace-tab-header[data-type=markdown]:has(.mod-pinned) .workspace-tab-header-inner-icon, .pt-collapsed-pinned-tab .workspace .mod-root .workspace-tab-header[data-type=empty]:has(.mod-pinned) .workspace-tab-header-inner-icon {
+display: flex;
+}
+
+.pt-collapsed-pinned-tab .workspace-tab-header:has(.mod-pinned) .workspace-tab-header-inner-title {
+display: none;
+}
+
+.pt-collapsed-pinned-tab .workspace .mod-root .workspace-tab-header:has(.mod-pinned), .pt-collapsed-pinned-tab .workspace-tab-header:has(.mod-pinned) .workspace-tab-header-inner {
+flex: unset;
+width: fit-content;
+min-width: unset;
+}`,
+    "pt-pdf-dark-theme": `.theme-dark .pdfViewer .canvasWrapper, .theme-dark .pdf-sidebar-container img.thumbnailImage {
+filter: invert(1) hue-rotate(180deg) saturate(100%);
+mix-blend-mode: screen;
+}`,
+    "enable-alternative-checkboxes": `body.enable-alternative-checkboxes {
+/* - [/] Incomplete */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task="/"], body.enable-alternative-checkboxes ul > li[data-task="/"] {
+/* Icon used: https://lucide.dev/icons/square-dashed */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNxdWFyZS1kYXNoZWQiPjxwYXRoIGQ9Ik01IDNhMiAyIDAgMCAwLTIgMiIvPjxwYXRoIGQ9Ik0xOSAzYTIgMiAwIDAgMSAyIDIiLz48cGF0aCBkPSJNMjEgMTlhMiAyIDAgMCAxLTIgMiIvPjxwYXRoIGQ9Ik01IDIxYTIgMiAwIDAgMS0yLTIiLz48cGF0aCBkPSJNOSAzaDEiLz48cGF0aCBkPSJNOSAyMWgxIi8+PHBhdGggZD0iTTE0IDNoMSIvPjxwYXRoIGQ9Ik0xNCAyMWgxIi8+PHBhdGggZD0iTTMgOXYxIi8+PHBhdGggZD0iTTIxIDl2MSIvPjxwYXRoIGQ9Ik0zIDE0djEiLz48cGF0aCBkPSJNMjEgMTR2MSIvPjwvc3ZnPg==");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task="/"], body.pt-alternative-checkboxes-color-icon ul > li[data-task="/"] {
+--icon-mask-color: var(--color-grey-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task="/"], body.pt-alternative-checkboxes-color-text ul > li[data-task="/"] {
+--line-text-color: var(--color-grey-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task="/"], body.pt-alternative-checkboxes-color-background ul > li[data-task="/"] {
+--line-background: var(--color-grey-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [-] Cancelled */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task="-"], body.enable-alternative-checkboxes ul > li[data-task="-"] {
+/* Icon used: https://lucide.dev/icons/ban */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1iYW4iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0ibTQuOSA0LjkgMTQuMiAxNC4yIi8+PC9zdmc+");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task="-"], body.pt-alternative-checkboxes-color-icon ul > li[data-task="-"] {
+--icon-mask-color: var(--color-red-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task="-"], body.pt-alternative-checkboxes-color-text ul > li[data-task="-"] {
+--line-text-color: var(--color-red-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task="-"], body.pt-alternative-checkboxes-color-background ul > li[data-task="-"] {
+--line-background: var(--color-red-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [>] Forwarded */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task=">"], body.enable-alternative-checkboxes ul > li[data-task=">"] {
+/* Icon used: https://lucide.dev/icons/send-horizontal */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1zZW5kLWhvcml6b250YWwiPjxwYXRoIGQ9Ik0zLjcxNCAzLjA0OGEuNDk4LjQ5OCAwIDAgMC0uNjgzLjYyN2wyLjg0MyA3LjYyN2EyIDIgMCAwIDEgMCAxLjM5NmwtMi44NDIgNy42MjdhLjQ5OC40OTggMCAwIDAgLjY4Mi42MjdsMTgtOC41YS41LjUgMCAwIDAgMC0uOTA0eiIvPjxwYXRoIGQ9Ik02IDEyaDE2Ii8+PC9zdmc+");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=">"], body.pt-alternative-checkboxes-color-icon ul > li[data-task=">"] {
+--icon-mask-color: var(--color-blue-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=">"], body.pt-alternative-checkboxes-color-text ul > li[data-task=">"] {
+--line-text-color: var(--color-blue-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=">"], body.pt-alternative-checkboxes-color-background ul > li[data-task=">"] {
+--line-background: var(--color-blue-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [<] Scheduling */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task="<"], body.enable-alternative-checkboxes ul > li[data-task="<"] {
+/* Icon used: https://lucide.dev/icons/calendar */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jYWxlbmRhciI+PHBhdGggZD0iTTggMnY0Ii8+PHBhdGggZD0iTTE2IDJ2NCIvPjxyZWN0IHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgeD0iMyIgeT0iNCIgcng9IjIiLz48cGF0aCBkPSJNMyAxMGgxOCIvPjwvc3ZnPg==");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task="<"], body.pt-alternative-checkboxes-color-icon ul > li[data-task="<"] {
+--icon-mask-color: var(--color-green-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task="<"], body.pt-alternative-checkboxes-color-text ul > li[data-task="<"] {
+--line-text-color: var(--color-green-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task="<"], body.pt-alternative-checkboxes-color-background ul > li[data-task="<"] {
+--line-background: var(--color-green-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [?] Question */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task="?"], body.enable-alternative-checkboxes ul > li[data-task="?"] {
+/* Icon used: https://lucide.dev/icons/circle-help */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jaXJjbGUtaGVscCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48cGF0aCBkPSJNOS4wOSA5YTMgMyAwIDAgMSA1LjgzIDFjMCAyLTMgMy0zIDMiLz48cGF0aCBkPSJNMTIgMTdoLjAxIi8+PC9zdmc+");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task="?"], body.pt-alternative-checkboxes-color-icon ul > li[data-task="?"] {
+--icon-mask-color: var(--color-yellow-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task="?"], body.pt-alternative-checkboxes-color-text ul > li[data-task="?"] {
+--line-text-color: var(--color-yellow-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task="?"], body.pt-alternative-checkboxes-color-background ul > li[data-task="?"] {
+--line-background: var(--color-yellow-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [!] Important */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task="!"], body.enable-alternative-checkboxes ul > li[data-task="!"] {
+/* Icon used: https://lucide.dev/icons/triangle-alert */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10cmlhbmdsZS1hbGVydCI+PHBhdGggZD0ibTIxLjczIDE4LTgtMTRhMiAyIDAgMCAwLTMuNDggMGwtOCAxNEEyIDIgMCAwIDAgNCAyMWgxNmEyIDIgMCAwIDAgMS43My0zIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task="!"], body.pt-alternative-checkboxes-color-icon ul > li[data-task="!"] {
+--icon-mask-color: var(--color-orange-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task="!"], body.pt-alternative-checkboxes-color-text ul > li[data-task="!"] {
+--line-text-color: var(--color-orange-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task="!"], body.pt-alternative-checkboxes-color-background ul > li[data-task="!"] {
+--line-background: var(--color-orange-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [*] Star */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task="*"], body.enable-alternative-checkboxes ul > li[data-task="*"] {
+/* Icon used: https://lucide.dev/icons/star */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1zdGFyIj48cG9seWdvbiBwb2ludHM9IjEyIDIgMTUuMDkgOC4yNiAyMiA5LjI3IDE3IDE0LjE0IDE4LjE4IDIxLjAyIDEyIDE3Ljc3IDUuODIgMjEuMDIgNyAxNC4xNCAyIDkuMjcgOC45MSA4LjI2IDEyIDIiLz48L3N2Zz4=");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task="*"], body.pt-alternative-checkboxes-color-icon ul > li[data-task="*"] {
+--icon-mask-color: var(--color-yellow-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task="*"], body.pt-alternative-checkboxes-color-text ul > li[data-task="*"] {
+--line-text-color: var(--color-yellow-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task="*"], body.pt-alternative-checkboxes-color-background ul > li[data-task="*"] {
+--line-background: var(--color-yellow-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - ["] Quote */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task='"'], body.enable-alternative-checkboxes ul > li[data-task='"'] {
+/* Icon used: https://lucide.dev/icons/quote */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1xdW90ZSI+PHBhdGggZD0iTTE2IDNhMiAyIDAgMCAwLTIgMnY2YTIgMiAwIDAgMCAyIDIgMSAxIDAgMCAxIDEgMXYxYTIgMiAwIDAgMS0yIDIgMSAxIDAgMCAwLTEgMXYyYTEgMSAwIDAgMCAxIDEgNiA2IDAgMCAwIDYtNlY1YTIgMiAwIDAgMC0yLTJ6Ii8+PHBhdGggZD0iTTUgM2EyIDIgMCAwIDAtMiAydjZhMiAyIDAgMCAwIDIgMiAxIDEgMCAwIDEgMSAxdjFhMiAyIDAgMCAxLTIgMiAxIDEgMCAwIDAtMSAxdjJhMSAxIDAgMCAwIDEgMSA2IDYgMCAwIDAgNi02VjVhMiAyIDAgMCAwLTItMnoiLz48L3N2Zz4=");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task='"'], body.pt-alternative-checkboxes-color-icon ul > li[data-task='"'] {
+--icon-mask-color: var(--color-grey-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task='"'], body.pt-alternative-checkboxes-color-text ul > li[data-task='"'] {
+--line-text-color: var(--color-grey-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task='"'], body.pt-alternative-checkboxes-color-background ul > li[data-task='"'] {
+--line-background: var(--color-grey-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [l] Location */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task=l], body.enable-alternative-checkboxes ul > li[data-task=l] {
+/* Icon used: https://lucide.dev/icons/map-pin */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1tYXAtcGluIj48cGF0aCBkPSJNMjAgMTBjMCA0Ljk5My01LjUzOSAxMC4xOTMtNy4zOTkgMTEuNzk5YTEgMSAwIDAgMS0xLjIwMiAwQzkuNTM5IDIwLjE5MyA0IDE0Ljk5MyA0IDEwYTggOCAwIDAgMSAxNiAwIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMCIgcj0iMyIvPjwvc3ZnPg==");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=l], body.pt-alternative-checkboxes-color-icon ul > li[data-task=l] {
+--icon-mask-color: var(--color-red-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=l], body.pt-alternative-checkboxes-color-text ul > li[data-task=l] {
+--line-text-color: var(--color-red-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=l], body.pt-alternative-checkboxes-color-background ul > li[data-task=l] {
+--line-background: var(--color-red-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [b] Bookmark */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task=b], body.enable-alternative-checkboxes ul > li[data-task=b] {
+/* Icon used: https://lucide.dev/icons/bookmark */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1ib29rbWFyayI+PHBhdGggZD0ibTE5IDIxLTctNC03IDRWNWEyIDIgMCAwIDEgMi0yaDEwYTIgMiAwIDAgMSAyIDJ2MTZ6Ii8+PC9zdmc+");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=b], body.pt-alternative-checkboxes-color-icon ul > li[data-task=b] {
+--icon-mask-color: var(--color-mint-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=b], body.pt-alternative-checkboxes-color-text ul > li[data-task=b] {
+--line-text-color: var(--color-mint-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=b], body.pt-alternative-checkboxes-color-background ul > li[data-task=b] {
+--line-background: var(--color-mint-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [i] Information */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task=i], body.enable-alternative-checkboxes ul > li[data-task=i] {
+/* Icon used: https://lucide.dev/icons/info */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1pbmZvIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik0xMiAxNnYtNCIvPjxwYXRoIGQ9Ik0xMiA4aC4wMSIvPjwvc3ZnPg==");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=i], body.pt-alternative-checkboxes-color-icon ul > li[data-task=i] {
+--icon-mask-color: var(--color-blue-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=i], body.pt-alternative-checkboxes-color-text ul > li[data-task=i] {
+--line-text-color: var(--color-blue-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=i], body.pt-alternative-checkboxes-color-background ul > li[data-task=i] {
+--line-background: var(--color-blue-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [S] Savings */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task=S], body.enable-alternative-checkboxes ul > li[data-task=S] {
+/* Icon used: https://lucide.dev/icons/dollar-sign */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWRvbGxhci1zaWduIj48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjIiIHkyPSIyMiIvPjxwYXRoIGQ9Ik0xNyA1SDkuNWEzLjUgMy41IDAgMCAwIDAgN2g1YTMuNSAzLjUgMCAwIDEgMCA3SDYiLz48L3N2Zz4=");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=S], body.pt-alternative-checkboxes-color-icon ul > li[data-task=S] {
+--icon-mask-color: var(--color-green-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=S], body.pt-alternative-checkboxes-color-text ul > li[data-task=S] {
+--line-text-color: var(--color-green-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=S], body.pt-alternative-checkboxes-color-background ul > li[data-task=S] {
+--line-background: var(--color-green-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [I] Idea */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task=I], body.enable-alternative-checkboxes ul > li[data-task=I] {
+/* Icon used: https://lucide.dev/icons/lightbulb */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1saWdodGJ1bGIiPjxwYXRoIGQ9Ik0xNSAxNGMuMi0xIC43LTEuNyAxLjUtMi41IDEtLjkgMS41LTIuMiAxLjUtMy41QTYgNiAwIDAgMCA2IDhjMCAxIC4yIDIuMiAxLjUgMy41LjcuNyAxLjMgMS41IDEuNSAyLjUiLz48cGF0aCBkPSJNOSAxOGg2Ii8+PHBhdGggZD0iTTEwIDIyaDQiLz48L3N2Zz4=");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=I], body.pt-alternative-checkboxes-color-icon ul > li[data-task=I] {
+--icon-mask-color: var(--color-yellow-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=I], body.pt-alternative-checkboxes-color-text ul > li[data-task=I] {
+--line-text-color: var(--color-yellow-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=I], body.pt-alternative-checkboxes-color-background ul > li[data-task=I] {
+--line-background: var(--color-yellow-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [p] Pros */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task=p], body.enable-alternative-checkboxes ul > li[data-task=p] {
+/* Icon used: https://lucide.dev/icons/thumbs-up */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10aHVtYnMtdXAiPjxwYXRoIGQ9Ik03IDEwdjEyIi8+PHBhdGggZD0iTTE1IDUuODggMTQgMTBoNS44M2EyIDIgMCAwIDEgMS45MiAyLjU2bC0yLjMzIDhBMiAyIDAgMCAxIDE3LjUgMjJINGEyIDIgMCAwIDEtMi0ydi04YTIgMiAwIDAgMSAyLTJoMi43NmEyIDIgMCAwIDAgMS43OS0xLjExTDEyIDJhMy4xMyAzLjEzIDAgMCAxIDMgMy44OFoiLz48L3N2Zz4=");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=p], body.pt-alternative-checkboxes-color-icon ul > li[data-task=p] {
+--icon-mask-color: var(--color-green-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=p], body.pt-alternative-checkboxes-color-text ul > li[data-task=p] {
+--line-text-color: var(--color-green-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=p], body.pt-alternative-checkboxes-color-background ul > li[data-task=p] {
+--line-background: var(--color-green-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [c] Cons */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task=c], body.enable-alternative-checkboxes ul > li[data-task=c] {
+/* Icon used: https://lucide.dev/icons/thumbs-down */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10aHVtYnMtZG93biI+PHBhdGggZD0iTTE3IDE0VjIiLz48cGF0aCBkPSJNOSAxOC4xMiAxMCAxNEg0LjE3YTIgMiAwIDAgMS0xLjkyLTIuNTZsMi4zMy04QTIgMiAwIDAgMSA2LjUgMkgyMGEyIDIgMCAwIDEgMiAydjhhMiAyIDAgMCAxLTIgMmgtMi43NmEyIDIgMCAwIDAtMS43OSAxLjExTDEyIDIyYTMuMTMgMy4xMyAwIDAgMS0zLTMuODhaIi8+PC9zdmc+");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=c], body.pt-alternative-checkboxes-color-icon ul > li[data-task=c] {
+--icon-mask-color: var(--color-red-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=c], body.pt-alternative-checkboxes-color-text ul > li[data-task=c] {
+--line-text-color: var(--color-red-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=c], body.pt-alternative-checkboxes-color-background ul > li[data-task=c] {
+--line-background: var(--color-red-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [f] Fire */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task=f], body.enable-alternative-checkboxes ul > li[data-task=f] {
+/* Icon used: https://lucide.dev/icons/flame */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1mbGFtZSI+PHBhdGggZD0iTTguNSAxNC41QTIuNSAyLjUgMCAwIDAgMTEgMTJjMC0xLjM4LS41LTItMS0zLTEuMDcyLTIuMTQzLS4yMjQtNC4wNTQgMi02IC41IDIuNSAyIDQuOSA0IDYuNSAyIDEuNiAzIDMuNSAzIDUuNWE3IDcgMCAxIDEtMTQgMGMwLTEuMTUzLjQzMy0yLjI5NCAxLTNhMi41IDIuNSAwIDAgMCAyLjUgMi41eiIvPjwvc3ZnPg==");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=f], body.pt-alternative-checkboxes-color-icon ul > li[data-task=f] {
+--icon-mask-color: var(--color-orange-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=f], body.pt-alternative-checkboxes-color-text ul > li[data-task=f] {
+--line-text-color: var(--color-orange-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=f], body.pt-alternative-checkboxes-color-background ul > li[data-task=f] {
+--line-background: var(--color-orange-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [k] Key */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task=k], body.enable-alternative-checkboxes ul > li[data-task=k] {
+/* Icon used: https://lucide.dev/icons/key-round */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1rZXktcm91bmQiPjxwYXRoIGQ9Ik0yLjU4NiAxNy40MTRBMiAyIDAgMCAwIDIgMTguODI4VjIxYTEgMSAwIDAgMCAxIDFoM2ExIDEgMCAwIDAgMS0xdi0xYTEgMSAwIDAgMSAxLTFoMWExIDEgMCAwIDAgMS0xdi0xYTEgMSAwIDAgMSAxLTFoLjE3MmEyIDIgMCAwIDAgMS40MTQtLjU4NmwuODE0LS44MTRhNi41IDYuNSAwIDEgMC00LTR6Ii8+PGNpcmNsZSBjeD0iMTYuNSIgY3k9IjcuNSIgcj0iLjUiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjwvc3ZnPg==");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=k], body.pt-alternative-checkboxes-color-icon ul > li[data-task=k] {
+--icon-mask-color: var(--color-cyan-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=k], body.pt-alternative-checkboxes-color-text ul > li[data-task=k] {
+--line-text-color: var(--color-cyan-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=k], body.pt-alternative-checkboxes-color-background ul > li[data-task=k] {
+--line-background: var(--color-cyan-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [w] Win */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task=w], body.enable-alternative-checkboxes ul > li[data-task=w] {
+/* Icon used: https://lucide.dev/icons/trophy */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10cm9waHkiPjxwYXRoIGQ9Ik02IDlINC41YTIuNSAyLjUgMCAwIDEgMC01SDYiLz48cGF0aCBkPSJNMTggOWgxLjVhMi41IDIuNSAwIDAgMCAwLTVIMTgiLz48cGF0aCBkPSJNNCAyMmgxNiIvPjxwYXRoIGQ9Ik0xMCAxNC42NlYxN2MwIC41NS0uNDcuOTgtLjk3IDEuMjFDNy44NSAxOC43NSA3IDIwLjI0IDcgMjIiLz48cGF0aCBkPSJNMTQgMTQuNjZWMTdjMCAuNTUuNDcuOTguOTcgMS4yMUMxNi4xNSAxOC43NSAxNyAyMC4yNCAxNyAyMiIvPjxwYXRoIGQ9Ik0xOCAySDZ2N2E2IDYgMCAwIDAgMTIgMFYyWiIvPjwvc3ZnPg==");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=w], body.pt-alternative-checkboxes-color-icon ul > li[data-task=w] {
+--icon-mask-color: var(--color-yellow-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=w], body.pt-alternative-checkboxes-color-text ul > li[data-task=w] {
+--line-text-color: var(--color-yellow-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=w], body.pt-alternative-checkboxes-color-background ul > li[data-task=w] {
+--line-background: var(--color-yellow-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [u] Up */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task=u], body.enable-alternative-checkboxes ul > li[data-task=u] {
+/* Icon used: https://lucide.dev/icons/trending-up */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10cmVuZGluZy11cCI+PHBvbHlsaW5lIHBvaW50cz0iMjIgNyAxMy41IDE1LjUgOC41IDEwLjUgMiAxNyIvPjxwb2x5bGluZSBwb2ludHM9IjE2IDcgMjIgNyAyMiAxMyIvPjwvc3ZnPg==");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=u], body.pt-alternative-checkboxes-color-icon ul > li[data-task=u] {
+--icon-mask-color: var(--color-green-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=u], body.pt-alternative-checkboxes-color-text ul > li[data-task=u] {
+--line-text-color: var(--color-green-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=u], body.pt-alternative-checkboxes-color-background ul > li[data-task=u] {
+--line-background: var(--color-green-base);
+}
+
+body.enable-alternative-checkboxes {
+/* - [d] Down */
+}
+
+body.enable-alternative-checkboxes div.HyperMD-task-line[data-task=d], body.enable-alternative-checkboxes ul > li[data-task=d] {
+/* Icon used: https://lucide.dev/icons/trending-down */
+--icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10cmVuZGluZy1kb3duIj48cG9seWxpbmUgcG9pbnRzPSIyMiAxNyAxMy41IDguNSA4LjUgMTMuNSAyIDciLz48cG9seWxpbmUgcG9pbnRzPSIxNiAxNyAyMiAxNyAyMiAxMSIvPjwvc3ZnPg==");
+}
+
+body.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=d], body.pt-alternative-checkboxes-color-icon ul > li[data-task=d] {
+--icon-mask-color: var(--color-red-text);
+}
+
+body.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=d], body.pt-alternative-checkboxes-color-text ul > li[data-task=d] {
+--line-text-color: var(--color-red-text);
+}
+
+body.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=d], body.pt-alternative-checkboxes-color-background ul > li[data-task=d] {
+--line-background: var(--color-red-base);
+}
+
+body.enable-alternative-checkboxes {
+/* ----------------------------------------------------------------------- */
+}
+
+body.enable-alternative-checkboxes .HyperMD-task-line:not([data-task=x], [data-task=X], [data-task=" "]), body.enable-alternative-checkboxes li:not([data-task=x], [data-task=X], [data-task=" "]) {
+--icon-mask-image: unset;
+--icon-mask-color: var(--text-normal);
+--icon-content: "";
+--icon-content-font: var(--font-monospace);
+--icon-content-weight: var(--font-bold);
+--icon-content-color: var(--text-normal);
+--icon-background: transparent;
+--icon-background-hover: transparent;
+--icon-border: unset;
+--icon-border-radius: unset;
+--line-text-color: inherit;
+--line-background: unset;
+--line-border: unset;
+--line-border-radius: unset;
+}
+
+body.enable-alternative-checkboxes .HyperMD-task-line:not([data-task=x], [data-task=X], [data-task=" "]), body.enable-alternative-checkboxes li:not([data-task=x], [data-task=X], [data-task=" "]).is-checked {
+color: var(--line-text-color);
+background: var(--line-background);
+border: var(--line-border);
+border-radius: var(--line-border-radius);
+}
+
+body.enable-alternative-checkboxes {
+/* Swapping margin for padding to allow background color to apply in Reading view the same
+     as in Live Preview */
+}
+
+body.enable-alternative-checkboxes .task-list-item.is-checked {
+margin-inline-start: unset;
+padding-inline-start: 3ch;
+}
+
+body.enable-alternative-checkboxes .markdown-reading-view li .task-list-item-checkbox {
+margin-inline-start: calc(var(--checkbox-size) * -1.5 + var(--size-4-2));
+}
+
+body.enable-alternative-checkboxes div.is-live-preview label > input[type=checkbox]:not([data-task=x], [data-task=X], [data-task=" "]):checked, body.enable-alternative-checkboxes li:not([data-task=x], [data-task=X], [data-task=" "]) > input[type=checkbox]:checked, body.enable-alternative-checkboxes li:not([data-task=x], [data-task=X], [data-task=" "]) > p > input[type=checkbox]:checked {
+--checkbox-marker-color: transparent;
+border: var(--icon-border);
+border-radius: var(--icon-border-radius);
+background: var(--icon-background);
+}
+
+body.enable-alternative-checkboxes div.is-live-preview label > input[type=checkbox]:not([data-task=x], [data-task=X], [data-task=" "]):checked:hover, body.enable-alternative-checkboxes li:not([data-task=x], [data-task=X], [data-task=" "]) > input[type=checkbox]:checked:hover, body.enable-alternative-checkboxes li:not([data-task=x], [data-task=X], [data-task=" "]) > p > input[type=checkbox]:checked:hover {
+background: var(--icon-background-hover);
+}
+
+body.enable-alternative-checkboxes div.is-live-preview label > input[type=checkbox]:not([data-task=x], [data-task=X], [data-task=" "]):checked::after, body.enable-alternative-checkboxes li:not([data-task=x], [data-task=X], [data-task=" "]) > input[type=checkbox]:checked::after, body.enable-alternative-checkboxes li:not([data-task=x], [data-task=X], [data-task=" "]) > p > input[type=checkbox]:checked::after {
+background-color: var(--icon-mask-color);
+-webkit-mask-image: var(--icon-mask-image);
+-webkit-mask-size: contain;
+-webkit-mask-position: center;
+color: var(--icon-content-color);
+background-image: var(--icon-image);
+background-repeat: no-repeat;
+background-position: center;
+content: var(--icon-content);
+text-align: center;
+font-weight: var(--icon-content-weight);
+font-family: var(--icon-content-font);
+font-size: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+/* Allows icons to remain scaled correctly within the checkbox when using a border */
+width: -webkit-fill-available;
+width: fill-available;
+/* Fallback for Safari */
+height: -webkit-fill-available;
+height: fill-available;
+/* Fallback for Safari */
+}`,
+    "pt-alternative-checkboxes-color-icon": `body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task="/"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task="/"] {
+--icon-mask-color: var(--color-grey-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task="-"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task="-"] {
+--icon-mask-color: var(--color-red-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=">"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task=">"] {
+--icon-mask-color: var(--color-blue-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task="<"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task="<"] {
+--icon-mask-color: var(--color-green-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task="?"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task="?"] {
+--icon-mask-color: var(--color-yellow-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task="!"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task="!"] {
+--icon-mask-color: var(--color-orange-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task="*"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task="*"] {
+--icon-mask-color: var(--color-yellow-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task='"'], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task='"'] {
+--icon-mask-color: var(--color-grey-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=l], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task=l] {
+--icon-mask-color: var(--color-red-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=b], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task=b] {
+--icon-mask-color: var(--color-mint-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=i], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task=i] {
+--icon-mask-color: var(--color-blue-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=S], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task=S] {
+--icon-mask-color: var(--color-green-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=I], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task=I] {
+--icon-mask-color: var(--color-yellow-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=p], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task=p] {
+--icon-mask-color: var(--color-green-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=c], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task=c] {
+--icon-mask-color: var(--color-red-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=f], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task=f] {
+--icon-mask-color: var(--color-orange-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=k], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task=k] {
+--icon-mask-color: var(--color-cyan-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=w], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task=w] {
+--icon-mask-color: var(--color-yellow-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=u], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task=u] {
+--icon-mask-color: var(--color-green-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=d], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task=d] {
+--icon-mask-color: var(--color-red-text);
+}`,
+    "pt-alternative-checkboxes-color-text": `body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task="/"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task="/"] {
+--line-text-color: var(--color-grey-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task="-"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task="-"] {
+--line-text-color: var(--color-red-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=">"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task=">"] {
+--line-text-color: var(--color-blue-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task="<"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task="<"] {
+--line-text-color: var(--color-green-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task="?"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task="?"] {
+--line-text-color: var(--color-yellow-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task="!"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task="!"] {
+--line-text-color: var(--color-orange-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task="*"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task="*"] {
+--line-text-color: var(--color-yellow-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task='"'], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task='"'] {
+--line-text-color: var(--color-grey-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=l], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task=l] {
+--line-text-color: var(--color-red-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=b], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task=b] {
+--line-text-color: var(--color-mint-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=i], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task=i] {
+--line-text-color: var(--color-blue-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=S], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task=S] {
+--line-text-color: var(--color-green-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=I], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task=I] {
+--line-text-color: var(--color-yellow-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=p], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task=p] {
+--line-text-color: var(--color-green-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=c], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task=c] {
+--line-text-color: var(--color-red-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=f], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task=f] {
+--line-text-color: var(--color-orange-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=k], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task=k] {
+--line-text-color: var(--color-cyan-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=w], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task=w] {
+--line-text-color: var(--color-yellow-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=u], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task=u] {
+--line-text-color: var(--color-green-text);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=d], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task=d] {
+--line-text-color: var(--color-red-text);
+}`,
+    "pt-alternative-checkboxes-color-background": `body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task="/"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task="/"] {
+--line-background: var(--color-grey-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task="-"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task="-"] {
+--line-background: var(--color-red-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=">"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=">"] {
+--line-background: var(--color-blue-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task="<"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task="<"] {
+--line-background: var(--color-green-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task="?"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task="?"] {
+--line-background: var(--color-yellow-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task="!"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task="!"] {
+--line-background: var(--color-orange-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task="*"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task="*"] {
+--line-background: var(--color-yellow-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task='"'], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task='"'] {
+--line-background: var(--color-grey-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=l], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=l] {
+--line-background: var(--color-red-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=b], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=b] {
+--line-background: var(--color-mint-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=i], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=i] {
+--line-background: var(--color-blue-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=S], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=S] {
+--line-background: var(--color-green-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=I], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=I] {
+--line-background: var(--color-yellow-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=p], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=p] {
+--line-background: var(--color-green-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=c], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=c] {
+--line-background: var(--color-red-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=f], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=f] {
+--line-background: var(--color-orange-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=k], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=k] {
+--line-background: var(--color-cyan-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=w], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=w] {
+--line-background: var(--color-yellow-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=u], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=u] {
+--line-background: var(--color-green-base);
+}
+
+body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=d], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=d] {
+--line-background: var(--color-red-base);
 }`,
   },
 };

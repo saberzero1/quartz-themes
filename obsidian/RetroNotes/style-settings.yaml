@@ -23,10 +23,10 @@ settings:
     allowEmpty: false
     default: retro-dm-midnight-journal
     options:
-      - label: Carbon Ink
-        value: retro-dm-carbon-ink
       - label: Midnight Journal
         value: retro-dm-midnight-journal
+      - label: Carbon Ink
+        value: retro-dm-carbon-ink
       - label: Forest Green
         value: retro-dm-forest-green
       - label: Blueprint

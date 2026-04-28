@@ -9,160 +9,160 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --background-primary: #1c1c1c !important;
-  --background-primary-alt: #1c1c1c !important;
-  --background-secondary: #1c1c1c !important;
-  --background-secondary-alt: #1c1c1c !important;
-  --bases-cards-background: #1c1c1c !important;
-  --bases-cards-cover-background: #1c1c1c !important;
-  --bases-table-cell-background-active: #1c1c1c !important;
-  --bases-table-cell-background-disabled: #1c1c1c !important;
-  --bases-table-group-background: #1c1c1c !important;
-  --bases-table-header-background: #1c1c1c !important;
-  --bases-table-summary-background: #1c1c1c !important;
+  --background-primary: #1c1c1c;
+  --background-primary-alt: #1c1c1c;
+  --background-secondary: #1c1c1c;
+  --background-secondary-alt: #1c1c1c;
+  --bases-cards-background: #1c1c1c;
+  --bases-cards-cover-background: #1c1c1c;
+  --bases-table-cell-background-active: #1c1c1c;
+  --bases-table-cell-background-disabled: #1c1c1c;
+  --bases-table-group-background: #1c1c1c;
+  --bases-table-header-background: #1c1c1c;
+  --bases-table-summary-background: #1c1c1c;
   --blockquote-background-color: color-mix(
 		in oklab,
 		#909090 3%,
 		transparent
-	) !important;
-  --blockquote-font-style: italic !important;
-  --bold-color: #e34234 !important;
-  --canvas-background: #1c1c1c !important;
-  --caret-color: #909090 !important;
-  --checkbox-color: #00ac5a !important;
-  --checkbox-marker-color: #000000 !important;
-  --checkbox-radius: 100px !important;
+	);
+  --blockquote-font-style: italic;
+  --bold-color: #e34234;
+  --canvas-background: #1c1c1c;
+  --caret-color: #909090;
+  --checkbox-color: #00ac5a;
+  --checkbox-marker-color: #000000;
+  --checkbox-radius: 100px;
   --checklist-done-color: color-mix(
 		in oklab,
 		#909090 60%,
 		transparent
-	) !important;
-  --code-background: #1c1c1c !important;
-  --code-normal: #d8d2c9 !important;
-  --color-black: #000000 !important;
-  --color-black-board: #1c1c1c !important;
-  --color-crescent-moon: #d8d2c9 !important;
-  --color-havelock-blue: #5590d9 !important;
-  --color-moon-gray: #909090 !important;
+	);
+  --code-background: #1c1c1c;
+  --code-normal: #d8d2c9;
+  --color-black: #000000;
+  --color-black-board: #1c1c1c;
+  --color-crescent-moon: #d8d2c9;
+  --color-havelock-blue: #5590d9;
+  --color-moon-gray: #909090;
   --color-moon-gray-03: color-mix(
 		in oklab,
 		#909090 3%,
 		transparent
-	) !important;
+	);
   --color-moon-gray-06: color-mix(
 		in oklab,
 		#909090 6%,
 		transparent
-	) !important;
+	);
   --color-moon-gray-08: color-mix(
 		in oklab,
 		#909090 8%,
 		transparent
-	) !important;
+	);
   --color-moon-gray-16: color-mix(
 		in oklab,
 		#909090 16%,
 		transparent
-	) !important;
+	);
   --color-moon-gray-60: color-mix(
 		in oklab,
 		#909090 60%,
 		transparent
-	) !important;
-  --color-moon-white: #f4f6f0 !important;
-  --color-muslim-green: #00ac5a !important;
-  --color-vermillion-red: #e34234 !important;
+	);
+  --color-moon-white: #f4f6f0;
+  --color-muslim-green: #00ac5a;
+  --color-vermillion-red: #e34234;
   --color-vermillion-red-30: color-mix(
 		in oklab,
 		#e34234 30%,
 		transparent
-	) !important;
+	);
   --color-vermillion-red-70: color-mix(
 		in oklab,
 		#e34234 70%,
 		transparent
-	) !important;
-  --dark: #909090 !important;
-  --darkgray: #909090 !important;
+	);
+  --dark: var(--text-normal, #909090);
+  --darkgray: var(--text-normal, #909090);
   --divider-color-hover: color-mix(
 		in oklab,
 		#e34234 30%,
 		transparent
-	) !important;
-  --file-header-background: #1c1c1c !important;
-  --file-header-background-focused: #1c1c1c !important;
-  --file-line-width: 65ch !important;
-  --flair-color: #909090 !important;
-  --footnote-line-height: 1.6 !important;
-  --graph-text: #909090 !important;
-  --gray: #909090 !important;
-  --h1-color: #f4f6f0 !important;
-  --h2-color: #f4f6f0 !important;
-  --h3-color: #f4f6f0 !important;
-  --h4-color: #f4f6f0 !important;
-  --h5-color: #f4f6f0 !important;
-  --h5-line-height: 1.6 !important;
-  --h6-color: #f4f6f0 !important;
-  --h6-line-height: 1.6 !important;
-  --icon-color-focused: #909090 !important;
-  --inline-title-color: #f4f6f0 !important;
-  --light: #1c1c1c !important;
-  --lightgray: #1c1c1c !important;
-  --line-height-normal: 1.6 !important;
-  --link-color: #5590d9 !important;
-  --link-external-color: #5590d9 !important;
-  --link-unresolved-color: #5590d9 !important;
-  --menu-background: #1c1c1c !important;
-  --metadata-input-text-color: #909090 !important;
-  --modal-background: #1c1c1c !important;
-  --nav-heading-color: #909090 !important;
-  --nav-heading-color-hover: #909090 !important;
+	);
+  --file-header-background: #1c1c1c;
+  --file-header-background-focused: #1c1c1c;
+  --file-line-width: 65ch;
+  --flair-color: #909090;
+  --footnote-line-height: 1.6;
+  --graph-text: #909090;
+  --gray: var(--text-normal, #909090);
+  --h1-color: #f4f6f0;
+  --h2-color: #f4f6f0;
+  --h3-color: #f4f6f0;
+  --h4-color: #f4f6f0;
+  --h5-color: #f4f6f0;
+  --h5-line-height: 1.6;
+  --h6-color: #f4f6f0;
+  --h6-line-height: 1.6;
+  --icon-color-focused: #909090;
+  --inline-title-color: #f4f6f0;
+  --light: var(--background-primary, #1c1c1c);
+  --lightgray: var(--background-secondary, #1c1c1c);
+  --line-height-normal: 1.6;
+  --link-color: #5590d9;
+  --link-external-color: #5590d9;
+  --link-unresolved-color: #5590d9;
+  --menu-background: #1c1c1c;
+  --metadata-input-text-color: #909090;
+  --modal-background: #1c1c1c;
+  --nav-heading-color: #909090;
+  --nav-heading-color-hover: #909090;
   --nav-item-background-active: color-mix(
 		in oklab,
 		#909090 6%,
 		transparent
-	) !important;
-  --nav-item-color-active: #d8d2c9 !important;
-  --nav-item-color-hover: #909090 !important;
-  --nav-item-color-selected: #909090 !important;
-  --pdf-background: #1c1c1c !important;
-  --pdf-page-background: #1c1c1c !important;
-  --pdf-sidebar-background: #1c1c1c !important;
-  --pill-color-hover: #909090 !important;
-  --prompt-background: #1c1c1c !important;
-  --ribbon-background: #1c1c1c !important;
-  --ribbon-background-collapsed: #1c1c1c !important;
-  --search-result-background: #1c1c1c !important;
-  --setting-group-heading-color: #909090 !important;
-  --setting-items-background: #1c1c1c !important;
-  --shiki-code-background: #1c1c1c !important;
-  --status-bar-background: #1c1c1c !important;
-  --suggestion-background: #1c1c1c !important;
-  --tab-background-active: transparent !important;
-  --tab-container-background: #1c1c1c !important;
-  --tab-switcher-background: #1c1c1c !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, #1c1c1c, transparent) !important;
-  --tab-text-color-focused-active-current: #d8d2c9 !important;
-  --table-header-color: #909090 !important;
+	);
+  --nav-item-color-active: #d8d2c9;
+  --nav-item-color-hover: #909090;
+  --nav-item-color-selected: #909090;
+  --pdf-background: #1c1c1c;
+  --pdf-page-background: #1c1c1c;
+  --pdf-sidebar-background: #1c1c1c;
+  --pill-color-hover: #909090;
+  --prompt-background: #1c1c1c;
+  --ribbon-background: #1c1c1c;
+  --ribbon-background-collapsed: #1c1c1c;
+  --search-result-background: #1c1c1c;
+  --setting-group-heading-color: #909090;
+  --setting-items-background: #1c1c1c;
+  --shiki-code-background: #1c1c1c;
+  --status-bar-background: #1c1c1c;
+  --suggestion-background: #1c1c1c;
+  --tab-background-active: transparent;
+  --tab-container-background: #1c1c1c;
+  --tab-switcher-background: #1c1c1c;
+  --tab-switcher-menubar-background: linear-gradient(to top, #1c1c1c, transparent);
+  --tab-text-color-focused-active-current: #d8d2c9;
+  --table-header-color: #909090;
   --tag-background: color-mix(
 		in oklab,
 		#909090 8%,
 		transparent
-	) !important;
-  --tag-color: #d8d2c9 !important;
-  --tag-radius: 4px !important;
-  --text-normal: #909090 !important;
-  --titlebar-background: #1c1c1c !important;
-  --titlebar-background-focused: #1c1c1c !important;
-  --titlebar-text-color-focused: #909090 !important;
-  --vault-profile-color: #909090 !important;
-  --vault-profile-color-hover: #909090 !important;
-  --quartz-icon-color: currentColor !important;
+	);
+  --tag-color: #d8d2c9;
+  --tag-radius: 4px;
+  --text-normal: #909090;
+  --titlebar-background: #1c1c1c;
+  --titlebar-background-focused: #1c1c1c;
+  --titlebar-text-color-focused: #909090;
+  --vault-profile-color: #909090;
+  --vault-profile-color-hover: #909090;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -1487,12 +1487,12 @@ html[saved-theme="dark"] body ul.tags > li {
   },
   light: {
     base: `:root:root {
-  --quartz-icon-color: currentColor !important;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }`,
     checkboxes: `html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");

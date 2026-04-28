@@ -5,22 +5,22 @@ settings:
     title: Colour scheme mode
     type: class-select
     allowEmpty: false
-    default: "color-scheme-complementary"
+    default: color-scheme-complementary
     options:
       - label: None
-        value: "color-scheme-none"
+        value: color-scheme-none
       - label: Monochromatic
-        value: "color-scheme-monochrome"
+        value: color-scheme-monochrome
       - label: Complementary
-        value: "color-scheme-complementary"
+        value: color-scheme-complementary
       - label: Even triad
-        value: "color-scheme-even-triad"
+        value: color-scheme-even-triad
       - label: Complementary triad
-        value: "color-scheme-comp-triad"
+        value: color-scheme-comp-triad
       - label: Analogous
-        value: "color-scheme-analogous"
+        value: color-scheme-analogous
       - label: Tetradic (experimental)
-        value: "color-scheme-tetradic"
+        value: color-scheme-tetradic
   - id: title-effects
     title: Effects
     type: heading

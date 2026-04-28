@@ -1,0 +1,766 @@
+name: Harmonic theme customization
+id: perso
+settings:
+  - id: logo
+    title: 1. Global customization (Accent color, Logo OR title, navigation folder style, icon style...)
+    type: heading
+    level: 2
+    collapsed: true
+  - id: wys-mode
+    title: Activate live preview and edit mode theme customization
+    type: class-toggle
+  - id: global-style
+    title: Global style (accent color, backgrounds, icons, title bar style)
+    type: heading
+    level: 3
+    collapsed: true
+  - id: accent
+    title: Accent color
+    type: variable-color
+    format: hsl-split
+    default: '#4F60B3'
+  - id: invert-background-color
+    title: Colorful background for pages
+    type: class-toggle
+  - id: minimal-icons-on
+    title: Icons
+    description: Activate minimal icons
+    type: class-toggle
+  - id: title-bar-style
+    title: Title bar style of main page
+    type: class-select
+    default: title-bar-style-2
+    options:
+      - label: Style 1
+        value: title-bar-style-2
+      - label: Style 2
+        value: title-bar-style-1
+  - id: logo-section
+    title: Choose a logo OR a title for your obsidian
+    type: heading
+    level: 3
+    collapsed: true
+  - id: site-title
+    title: Your obsidian title
+    description: Put the title in quotation marks (see default parameter)
+    type: variable-text
+    default: '"OBSIDIAN"'
+  - id: site-title-accent
+    title: Color accent for your obsidian title
+    description: Display the title with the bold and italic accent color (menu > Make pages pop)
+    type: class-toggle
+  - id: logo-url
+    title: Your obsidian logo (url)
+    description: Put the url syntax like in default
+    type: variable-text
+    default: url("")
+  - id: invert-logo
+    title: Invert logo colors in dark mode
+    description: B&W image works well
+    type: class-toggle
+  - id: nav-folder-section
+    title: Customize the navigation folder panel
+    type: heading
+    level: 3
+    collapsed: true
+  - id: menus
+    title: Alternative menu styles
+    description: Choose diffent styles for the left and right sidebars
+    type: class-select
+    default: menu-v1
+    options:
+      - label: Design 1
+        value: menu-v1
+      - label: Design 2
+        value: menu-v3
+      - label: Design 3
+        value: menu-v2
+      - label: Design 4
+        value: menu-v4
+      - label: Design 5
+        value: menu-v5
+      - label: Design 6
+        value: menu-v6
+  - id: menus-font
+    title: Font of navigation folders
+    description: Choose diffent styles for the left and right sidebars
+    type: class-select
+    default: font-nav-folder-text
+    options:
+      - label: Text
+        value: font-nav-folder-text
+      - label: Headings
+        value: font-nav-folder-header
+  - id: font-small
+    title: Font size of navigation folder
+    description: Select a font size
+    type: variable-number-slider
+    default: 0.85
+    min: 0.7
+    max: 1
+    step: 0.01
+  - id: black-background-sidebar
+    title: Dark navivation folder sidebar (light theme only)
+    type: class-toggle
+  - id: hue-nav-file-active
+    title: Bold and italic color for active file (color to choose in Make pages pop menu)
+    type: class-toggle
+  - id: focus-mode
+    title: 2. Focus mode
+    type: heading
+    level: 2
+    collapsed: true
+  - id: frameless-mode
+    title: Activate frameless mode
+    type: class-toggle
+  - id: hide-left-menu
+    title: Hide vertical menu of the left sidebar
+    type: class-toggle
+  - id: hide-tab-header
+    title: Hide tab header buttons
+    type: class-toggle
+  - id: hide-action-buttons
+    title: Hide action buttons
+    type: class-toggle
+  - id: hide-file-name
+    title: Hide file name in main window
+    type: class-toggle
+  - id: hide-tooltip
+    title: Hide tooltip
+    type: class-toggle
+  - id: hide-scrollbar
+    title: Hide scrollbar
+    type: class-toggle
+  - id: hide-instruction
+    title: Hide instructions
+    type: class-toggle
+  - id: hide-status-bar
+    title: Hide status bar
+    type: class-toggle
+  - id: edit-button
+    title: Edit button
+    description: Create a button to edit and preview
+    type: class-toggle
+  - id: writing-focus
+    title: Writing focus
+    description: Hightligh the paragraph you are writing, faint the others (edit mode)
+    type: class-toggle
+  - id: writing-focus-opacity
+    title: Opacity of the fainted text in writing focus mode
+    description: Change the Opacity of the fainted text
+    type: variable-number-slider
+    default: 0.6
+    min: 0
+    max: 0.95
+    step: 0.01
+  - id: features
+    title: 3. Make pages pop (bold and italic accentuation, image, blockquote, checkboxes, links, outline)
+    type: heading
+    level: 2
+    collapsed: true
+  - id: bold-italic-section
+    title: Customize bold and italic
+    type: heading
+    level: 3
+    collapsed: true
+  - id: bold-italic-accent
+    title: Bold and italic accentuation
+    description: Make bold and italic pop with an other color
+    type: class-toggle
+  - id: hue-bold-italic
+    title: Bold and italic hue
+    description: Change the hue of the accent color (step -> 45 degrees)
+    type: variable-number-slider
+    default: 180
+    min: 30
+    max: 330
+    step: 30
+    format: deg
+  - id: hue-tag
+    title: Use this color to display tag
+    type: class-toggle
+  - id: image-section
+    title: Customize images
+    type: heading
+    level: 3
+    collapsed: true
+  - id: img-border-radius
+    title: Border radius for images
+    type: class-toggle
+  - id: img-rounded
+    title: To make rounded images
+    type: class-toggle
+  - id: img-round
+    title: Choose the size of rounded image
+    description: Choose diffent styles for the left and right sidebars
+    type: class-select
+    default: img-rounded-medium
+    options:
+      - label: Small
+        value: img-rounded-small
+      - label: Medium
+        value: img-rounded-medium
+      - label: Big
+        value: img-rounded-big
+  - id: img-box-shadow
+    title: Shadow for images
+    type: class-toggle
+  - id: img-bw
+    title: Black and white for images
+    type: class-toggle
+  - id: img-grid
+    title: Display a sequence of images as grid
+    type: class-toggle
+  - id: blockquote-section
+    title: Customize blockquote
+    type: heading
+    level: 3
+    collapsed: true
+  - id: blockquote-background
+    title: Display background and border for quote
+    type: class-toggle
+  - id: blockquote-bracket
+    title: Quotation mark for quote
+    type: class-toggle
+  - id: blockquote-serif
+    title: Serif font for quote
+    type: class-toggle
+  - id: blockquote-text-center
+    title: Center text for quote
+    type: class-toggle
+  - id: blockquote-frame
+    title: Brackets for quote (works in combination with text serif, not the others)
+    type: class-toggle
+  - id: checkbox-section
+    title: Customize checkbox style
+    type: heading
+    level: 3
+    collapsed: true
+  - id: checkbox-type
+    title: Choose the style of checkboxes
+    description: Choose diffent styles for the left and right sidebars
+    type: variable-select
+    default: 100%
+    options:
+      - label: Rounded
+        value: 100%
+      - label: Squared
+        value: 25%
+  - id: external-link-section
+    title: External link style
+    type: heading
+    level: 3
+    collapsed: true
+  - id: icon-external-link
+    title: Display icon for external links
+    type: class-toggle
+  - id: external-link-width
+    title: External link underline width
+    type: variable-number-slider
+    default: 3
+    min: 0
+    max: 5
+    step: 1
+    format: px
+  - id: external-link-style
+    title: Text color of external links
+    type: class-select
+    default: external-link-normal
+    options:
+      - label: Faint
+        value: external-link-faint
+      - label: Normal
+        value: external-link-normal
+      - label: Color
+        value: external-link-color
+  - id: external-link-border-color
+    title: Border bottom color
+    type: variable-select
+    default: var(--text-normal)
+    options:
+      - label: Faint color border
+        value: var(--text-faint)
+      - label: Text color border
+        value: var(--text-normal)
+      - label: Accent color border
+        value: var(--text-accent)
+  - id: internal-link-section
+    title: Internal link style
+    type: heading
+    level: 3
+    collapsed: true
+  - id: icon-internal-link
+    title: Display icon for internal links
+    type: class-toggle
+  - id: internal-link-width
+    title: Internal link underline width
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 5
+    step: 1
+    format: px
+  - id: internal-link-style
+    title: Text color of internal links
+    type: class-select
+    default: internal-link-color
+    options:
+      - label: Faint
+        value: internal-link-faint
+      - label: Normal
+        value: internal-link-normal
+      - label: Color
+        value: internal-link-color
+  - id: internal-link-border-color
+    title: Border bottom color
+    type: variable-select
+    default: var(--text-accent)
+    options:
+      - label: Faint color border
+        value: var(--text-faint)
+      - label: Text color border
+        value: var(--text-normal)
+      - label: Accent color border
+        value: var(--text-accent)
+  - id: outline-section
+    title: Outlines for lists
+    type: heading
+    level: 3
+    collapsed: true
+  - id: outline-mode
+    title: Outline for list
+    description: Activate outlines for list
+    type: class-toggle
+  - id: page-settings
+    title: 4. Page settings (line width, fullwidth mode, paragraph offset)
+    type: heading
+    level: 2
+    collapsed: true
+  - id: line-width
+    title: Line width
+    description: Define your line width
+    type: variable-number-slider
+    default: 44
+    min: 30
+    max: 60
+    step: 1
+    format: rem
+  - id: full-width
+    title: Full width mode
+    description: Activate full width
+    type: class-toggle
+  - id: p-offset
+    title: Paragraph offset
+    description: Change your paragraph offset
+    type: variable-number-slider
+    default: 2.2
+    min: 0
+    max: 8
+    step: 0.1
+    format: rem
+  - id: fonts
+    title: 5. Fonts (Preview mode, edit mode, monospace, titles)
+    type: heading
+    level: 2
+    collapsed: true
+  - id: fonts-download
+    title: Font pre-installed with the theme
+    description: IA Writer Mono V, Ia Writer Quattro V and Pre-installed google fonts - Anton, Avenir Next Cyr, Cabin, Dosis, Fjalla one, Heebo, Hind, IBM Plex Sans, Josefin Sans, Jost, Kalam, Lato, Libre Baskerville, Lora, Metropolis, Montserrat, Mukta, Mulish, Noto Sans, Nunito, Nunito Sans, Open Sans, Oswald, Outfit, Oxygen, Poppins, Quicksand, Readex Pro, Roboto, "Source Sans 3", Source Sans Pro, Work Sans, Zen kaku Gothic new
+    type: heading
+    level: 3
+    collapsed: false
+  - id: fonts-choice
+    title: Choose your fonts
+    type: heading
+    level: 3
+    collapsed: false
+  - id: text
+    title: Text font
+    description: Font used for paragraph in preview mode
+    type: variable-text
+    default: mulish
+  - id: text-editor
+    title: Editor font
+    description: Font used for paragraph in edit mode
+    type: variable-text
+    default: mulish
+  - id: font-monospace
+    title: Monospace font
+    description: Font used for for code blocks and front matter
+    type: variable-text
+    default: menlo
+  - id: text-title
+    title: Header font
+    description: Font used for titles
+    type: variable-text
+    default: mulish
+  - id: custom-fonts
+    title: 6. Typography
+    type: heading
+    level: 2
+    collapsed: true
+  - id: font-normal
+    title: Body font size
+    description: Font size in px of paragraphs
+    type: variable-number
+    default: 17
+    format: px
+  - id: font-phone
+    title: Body font size for phone
+    description: Font size in px of paragraphs for phones
+    type: variable-number
+    default: 17
+    format: px
+  - id: normal-weight
+    title: Body font weight
+    description: Font weight of paragraphs
+    type: variable-number
+    default: 400
+  - id: text-spacing
+    title: Letter spacing for paragraph (preview mode)
+    type: variable-text
+    default: 0em
+  - id: editor-spacing
+    title: Letter spacing for paragraph (editor mode)
+    type: variable-text
+    default: 0em
+  - id: line-height
+    title: Body line height
+    description: Line height of the main text
+    type: variable-number
+    default: 1.8
+  - id: headings
+    title: 7. Headings
+    type: heading
+    level: 2
+    collapsed: true
+  - id: title-spacing
+    title: Letter spacing for titles
+    description: Letter spacing Used for every titles
+    type: variable-text
+    default: 0em
+  - id: title-accent-color
+    title: Accent color title
+    description: Choose the accent color for every titles
+    type: class-toggle
+  - id: title-hue
+    title: Bold and italic color for titles
+    type: class-toggle
+  - id: title-collapse
+    title: Collapse indicator for titles
+    description: Hide collapse indicators
+    type: class-toggle
+  - id: line-title
+    title: Add a line under titles
+    type: class-toggle
+  - id: h-reveal
+    title: Hx activate
+    description: activate Hx in titles
+    type: class-toggle
+  - id: h-change-color
+    title: Color of Hx
+    description: Apply color of bold-italic for Hx
+    type: class-toggle
+  - id: level-1-headings
+    title: Level 1 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h1
+    title: H1 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 2em
+  - id: h1-weight
+    title: H1 font weight
+    description: Accepts numbers representing the CSS font-weight
+    type: variable-number
+    default: 400
+  - id: h1-style
+    title: H1 font style
+    description: Accepts normal or italic representing the CSS font-style
+    type: variable-text
+    default: normal
+  - id: h1-color
+    title: H1 font color
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: h1-text-align
+    title: Title text align
+    type: variable-select
+    default: left
+    options:
+      - left
+      - center
+      - right
+  - id: level-2-headings
+    title: Level 2 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h2
+    title: H2 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 1.6em
+  - id: h2-weight
+    title: H2 font weight
+    description: Accepts numbers representing the CSS font-weight
+    type: variable-number
+    default: 400
+  - id: h2-style
+    title: H2 font style
+    description: Accepts normal or italic representing the CSS font-style
+    type: variable-text
+    default: normal
+  - id: h2-color
+    title: H2 font color
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: h2-text-align
+    title: Title text align
+    type: variable-select
+    default: left
+    options:
+      - left
+      - center
+      - right
+  - id: level-3-headings
+    title: Level 3 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h3
+    title: H3 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 1.2em
+  - id: h3-weight
+    title: H3 font weight
+    description: Accepts numbers representing the CSS font-weight
+    type: variable-number
+    default: 400
+  - id: h3-style
+    title: H3 font style
+    description: Accepts normal or italic representing the CSS font-style
+    type: variable-text
+    default: normal
+  - id: h3-color
+    title: H3 font color
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: h3-text-align
+    title: Title text align
+    type: variable-select
+    default: left
+    options:
+      - left
+      - center
+      - right
+  - id: level-4-headings
+    title: Level 4 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h4
+    title: H4 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 1em
+  - id: h4-weight
+    title: H4 font weight
+    description: Accepts numbers representing the CSS font-weight
+    type: variable-number
+    default: 400
+  - id: h4-style
+    title: H4 font style
+    description: Accepts normal or italic representing the CSS font-style
+    type: variable-text
+    default: normal
+  - id: h4-color
+    title: H4 font color
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: h4-text-align
+    title: Title text align
+    type: variable-select
+    default: left
+    options:
+      - left
+      - center
+      - right
+  - id: level-5-headings
+    title: Level 5 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h5
+    title: H5 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 0.85em
+  - id: h5-weight
+    title: H5 font weight
+    description: Accepts numbers representing the CSS font-weight
+    type: variable-number
+    default: 400
+  - id: h5-style
+    title: H5 font style
+    description: Accepts normal or italic representing the CSS font-style
+    type: variable-text
+    default: normal
+  - id: h5-color
+    title: H5 font color
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: h5-text-align
+    title: Title text align
+    type: variable-select
+    default: left
+    options:
+      - left
+      - center
+      - right
+  - id: level-6-headings
+    title: Level 6 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h6
+    title: H6 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 0.85em
+  - id: h6-weight
+    title: H6 font weight
+    description: Accepts numbers representing the CSS font-weight
+    type: variable-number
+    default: 400
+  - id: h6-style
+    title: H6 font style
+    description: Accepts normal or italic representing the CSS font-style
+    type: variable-text
+    default: normal
+  - id: h6-color
+    title: H6 font color
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: h6-text-align
+    title: Title text align
+    type: variable-select
+    default: left
+    options:
+      - left
+      - center
+      - right
+  - id: more-custom
+    title: 8. More options (‼️ Overwites previous option choices and can break color harmony)
+    description: If you really need it !
+    type: heading
+    level: 2
+    collapsed: true
+  - id: more-options
+    title: Activate more options
+    type: class-toggle
+  - id: main-panel-color
+    title: Main panel color
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: sidebars-color
+    title: Sidebar color
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: text-normal-color
+    title: Text color
+    type: variable-themed-color
+    format: hex
+    default-light: '#111'
+    default-dark: '#fff'
+  - id: nav-folder-color
+    title: Navigation folder text color
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: nav-file-color
+    title: Navigation file text color
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: nav-file-active-color
+    title: Active navigation file text color
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: nav-file-active-background
+    title: Active navigation file background color
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: strong-em-color
+    title: Bold and italic color (desactivate bold and italic accent in Make your page pop)
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: h-color
+    title: Hx color (for title)
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: internal-link-color
+    title: Internal link color
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: external-link-color
+    title: External link color
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: tag-color
+    title: Tag color
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: tag-background-color
+    title: Tag background color
+    type: variable-themed-color
+    format: hex
+    default-light: '#363636'
+    default-dark: '#d1d1d1'
+  - id: presets
+    title: → Presets
+    description: Available at https://github.com/Thiews/Obsidian-Harmonic > theme-presets
+    type: heading
+    level: 2
+    collapsed: true
+  - id: credits
+    title: ⭐️ Credits
+    type: heading
+    description: Made by @Thiews to be shared. Support my work at buymeacoffee.com/thiews
+    level: 2
+    collapsed: true

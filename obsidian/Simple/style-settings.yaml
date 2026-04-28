@@ -1,11 +1,6 @@
 name: Simple visual control settings
 id: custom-diegoeis-simple
 settings:
-  - id: appearance
-    title: General appearance
-    description: Where you config the interface appearance and other general options
-    type: heading
-    level: 1
   - id: eis-sidebar-dark
     title: Dark sidebar
     description: If enable, the sidebar will be dark, even in light mode.
@@ -16,6 +11,36 @@ settings:
     description: Disable this if you are using your own implementation via a CSS Snippet.
     default: true
     type: class-toggle
+  - id: hide-h1-after-properties
+    title: Hide h1 after properties?
+    description: If checked, the first H1 just before the properties will be hidden. Use with wise. Better use when inline title option in Obsidian is enabled.
+    default: false
+    type: class-toggle
+  - id: eis-content-order
+    title: Define the order of elements in content space.
+    description: Here you can define the vertical order position of elements in the editor panel. The default order is Properties, Inline Title (usually the filename), Content, embedded backlinks
+    type: heading
+    level: 1
+  - id: order-inline-title
+    title: Inline Title - Filename
+    description: Inline Title position
+    type: variable-number
+    default: 2
+  - id: order-properties-metadata
+    title: Properties metadata (YAML) position
+    description: Properties metadata panel position
+    type: variable-number
+    default: 1
+  - id: order-content
+    title: Content position
+    description: The order where content will be positioned
+    type: variable-number
+    default: 3
+  - id: order-embedded-backlinks
+    title: Backlinks list position
+    description: The order of backlinks list (normally at the end of editor)
+    type: variable-number
+    default: 4
   - id: eis-font-family
     title: Font size of headings and paragraphs
     type: heading
@@ -35,7 +60,6 @@ settings:
       - eis-font-default
       - eis-font-ibm
       - eis-font-iawriter-quattro
-
   - id: eis-font-size
     title: Font size of headings and paragraphs
     type: heading
@@ -44,7 +68,7 @@ settings:
     title: H1
     description: Font size of H1
     type: variable-number
-    default: 1.75
+    default: 1.65
     format: rem
   - id: size-h2
     title: H2
@@ -56,25 +80,25 @@ settings:
     title: H3
     description: Font size of H3
     type: variable-number
-    default: 1.2
+    default: 1.3
     format: rem
   - id: size-h4
     title: H4
     description: Font size of H4
     type: variable-number
-    default: 1
+    default: 1.15
     format: rem
   - id: size-h5
     title: H5
     description: Font size of H5
     type: variable-number
-    default: .95
+    default: 1
     format: rem
   - id: size-h6
     title: H6
     description: Font size of H6
     type: variable-number
-    default: .95
+    default: 0.95
     format: rem
   - id: font-paragraph
     title: Body paragraph
@@ -82,8 +106,67 @@ settings:
     type: variable-number
     default: 0.9
     format: rem
-  - id: eis-vintage-color
-    title: Vintage Theme
-    description: If enable, you will have a beauty vintage neutral style
-    type: class-toggle
-    default: true
+  - id: eis-heading-margin
+    title: Margin spaces of Heading Titles
+    type: heading
+    level: 1
+  - id: h2-margin-top
+    title: H2 TOP margin
+    description: TOP margin of H2
+    type: variable-number
+    default: 3
+    format: rem
+  - id: h3-margin-top
+    title: H3 TOP margin
+    description: TOP margin of H3
+    type: variable-number
+    default: 3
+    format: rem
+  - id: h4-margin-top
+    title: H4 TOP margin
+    description: TOP margin of H4
+    type: variable-number
+    default: 3
+    format: rem
+  - id: h5-margin-top
+    title: H5 TOP margin
+    description: TOP margin of H5
+    type: variable-number
+    default: 3
+    format: rem
+  - id: h6-margin-top
+    title: H6 TOP margin
+    description: TOP margin of H6
+    type: variable-number
+    default: 3
+    format: rem
+  - id: h2-margin-bottom
+    title: H2 BOTTOM margin
+    description: BOTTOM margin of H2
+    type: variable-number
+    default: 3
+    format: rem
+  - id: h3-margin-bottom
+    title: H3 BOTTOM margin
+    description: BOTTOM margin of H3
+    type: variable-number
+    default: 3
+    format: rem
+  - id: h4-margin-bottom
+    title: H4 BOTTOM margin
+    description: BOTTOM margin of H4
+    type: variable-number
+    default: 3
+    format: rem
+  - id: h5-margin-bottom
+    title: H5 BOTTOM margin
+    description: BOTTOM margin of H5
+    type: variable-number
+    default: 3
+    format: rem
+  - id: h6-margin-bottom
+    title: H6 BOTTOM margin
+    description: BOTTOM margin of H6
+    type: variable-number
+    default: 3
+    format: rem

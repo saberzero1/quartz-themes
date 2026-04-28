@@ -1,0 +1,112 @@
+name: Obsidian-Transparent Theme Configuration
+id: obsidian-transparent
+settings:
+  - id: info-section
+    title: ✨ Obsidian-Transparent
+    description: |
+      I'm actively developing this theme to provide the best transparent experience for Obsidian:)
+
+      **Support the project:**
+      If you find this theme useful, please consider dropping a ⭐ on GitHub. It's a huge motivation for me to keep shipping updates and new features!
+
+      [View Repository on GitHub](https://github.com/Oczko24/Obsidian-transparent)
+    type: info-text
+    markdown: true
+  - id: main-section
+    title: Adjust Obsidian Theme
+    type: heading
+    level: 1
+    collapsed: false
+  - id: set-blur
+    title: 🫧 Blur Intensity
+    type: variable-number-slider
+    default: 80
+    description: 'Adjust the background blur effect. Note: Higher values offer a smoother aesthetic but may impact performance on lower-end systems.'
+    min: 10
+    max: 200
+    step: 1
+    format: px
+  - id: show-scrollbars
+    title: Show Scrollbars
+    description: ':)'
+    type: class-toggle
+  - id: bg-type
+    title: Background Image
+    description: Choose between default green background and custom URL.
+    type: class-select
+    allowEmpty: false
+    default: bg-type-default
+    options:
+      - label: Default Green
+        value: bg-type-default
+      - label: Custom Background
+        value: bg-type-custom
+  - id: bg-custom-url
+    title: Custom Background URL
+    description: Paste your image URL inside the quotes. E.g. url('https://...')
+    type: variable-text
+    default: url('')
+  - id: bg-tint-color
+    title: Tint Color
+    description: Pick the color you want to overlay on the background.
+    type: variable-color
+    opacity: false
+    format: hsl-split
+    default: '#B13D00'
+  - id: bg-tint-opacity
+    title: Tint Intensity
+    description: How strongly the tint is applied. 0 = off (no performance cost), 0.3 = maximum.
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 0.3
+    step: 0.01
+  - id: animation-settings-section
+    title: ⚛️ Animation settings
+    description: work in progress, though you can use some of the animations
+    type: heading
+    level: 1
+    collapsed: false
+  - id: animate-modal-open
+    title: Animate Settings / Modal Opening
+    description: Smooth scale + fade animation when opening Settings or any modal window.
+    type: class-toggle
+    default: true
+  - id: animate-note-open
+    title: (beta) Animate Note Opening
+    description: Adds a smooth fade-in + slide-up animation when opening or switching notes.
+    type: class-toggle
+  - id: no-animation
+    title: Disable All Animations
+    description: Turn off every animation possbile in obsidian
+    type: class-toggle
+    default: false
+  - id: snippets-section
+    title: 🧩 Snippets / Addons
+    type: heading
+    level: 1
+  - id: hide-canvas-dots
+    title: Hide Canvas Dots
+    description: Removes the dot pattern from the canvas background.
+    type: class-toggle
+  - id: file-line-width
+    title: Note Max Width
+    description: Changes the maximum width of currently displayed note.
+    type: variable-number-slider
+    default: 700
+    min: 400
+    max: 1400
+    step: 10
+    format: px
+  - id: border-opacity
+    title: Border Opacity
+    description: Controls the visibility of subtle borders on tables, bases, and horizontal rules. 0 = invisible, 0.25 = clearly visible. not recommend above 0.50
+    type: variable-number-slider
+    default: 0.063
+    min: 0
+    max: 1
+    step: 0.001
+  - id: accent-everywhere
+    title: (Experimental) Accent Everywhere
+    description: Applies accent color to more UI elements (headings, sliders, icons).
+    type: class-toggle

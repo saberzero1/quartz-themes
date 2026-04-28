@@ -138,10 +138,9 @@ settings:
     type: variable-text
     description: Examples - 300px, 9em
     default: 300px
-
   - id: img-max-width
     default: 55
-    format: "%"
+    format: '%'
     type: variable-number-slider
     title: Image Max Width
     description: Set a max width for images (percentage)

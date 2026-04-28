@@ -8,11 +8,8 @@ settings:
       Welcome to Shiba Inu theme for Obsidian! If you need any assistance, please [submit an issue](https://github.com/faroukx/Obsidian-shiba-inu-theme/issues) on GitHub.
       - **[Github](https://github.com/faroukx/Obsidian-shiba-inu-theme)**
       - **[Obsidian Homepage by Farouk (Tutorial for Shiba Inu)](https://github.com/faroukx/obsidian-homepage)**    
-      - **[Obsidian forum thread for Shiba Inu (Shiba Inu Community)](https://forum.obsidian.md/t/theme-shiba-inu/53395)**
+      - **[Obsidian forum thread for Shiba Inu (Shiba Inu Community)](https://forum.obsidian.md/t/theme-shiba-inu/53395)**     
     markdown: true
-
-  #───────────────────────────────────── C O L O R S ──────────────────────────────────────  (Colors Settings)
-
   - id: shiba-colors-header
     title: Colors
     description: Customize the look and feel of the theme with color palettes, accents and styling.
@@ -99,46 +96,46 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: background-primary-alt
     title: Background Primary (alt)
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: background-secondary
     title: Background Secondary
     description: Side; as in layouts, vertical tab header and inactive tabs.
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: background-secondary-alt
     title: Background Secondary (alt)
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: background-modifier-border
     title: Background Modifier Border
     description: Surface; such as the scrollbars and the borders.
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: background-modifier-border
     title: Background Modifier Border
     description: Surface; such as the scrollbars and the borders.
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: shiba-custom-color-accent-header
     title: Custom Accents
     type: heading
@@ -151,11 +148,8 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
-
-  #───────────────────────────────────── E D I T O R ──────────────────────────────────────  (Editor Settings)
-
+    default-light: '#'
+    default-dark: '#'
   - id: shiba-editor-header
     title: Editor
     type: heading
@@ -177,33 +171,33 @@ settings:
     title: Text Font
     description: Main fonts used are not applied to the code texts.
     type: variable-text
-    default: "var(--font-default)"
+    default: var(--font-default)
   - id: font-family-vertical-bar
     title: Vertical Bar (Settings)
     type: variable-text
-    default: "var(--font-default)"
+    default: var(--font-default)
   - id: font-family-folder-file-title
     title: Folder & File Title
     type: variable-text
-    default: "var(--font-default)"
+    default: var(--font-default)
   - id: font-monospace-theme
     title: Codebox
-    description: "```codebox```"
+    description: '```codebox```'
     type: variable-text
-    default: "var(--font-default)"
+    default: var(--font-default)
   - id: font-family-inline-code
     title: Inline Code
-    description: "`inline`"
+    description: '`inline`'
     type: variable-text
     default: var(--font-monospace-theme)
   - id: font-family-tag
     title: Tag
     type: variable-text
-    default: "var(--font-default)"
+    default: var(--font-default)
   - id: font-family-vault
     title: Vault Name
     type: variable-text
-    default: "var(--font-default)"
+    default: var(--font-default)
   - id: fonts-size-header
     title: Fonts size
     type: heading
@@ -272,7 +266,7 @@ settings:
   - id: h1-size
     title: H1 size (em)
     type: variable-number
-    default: 1.90
+    default: 1.9
     format: em
   - id: h1-weight
     title: H1 weight
@@ -317,8 +311,8 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: shib-h1-underline
     title: H1 Underline
     description: You must have the Custom Heading Colors  enabled or, if disabled, have selected a custom color for it to work.
@@ -394,8 +388,8 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: shib-h2-underline
     title: H2 Underline
     description: You must have the Custom Heading Colors  enabled or, if disabled, have selected a custom color for it to work.
@@ -471,8 +465,8 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: shib-h3-underline
     title: H3 Underline
     description: You must have the Custom Heading Colors  enabled or, if disabled, have selected a custom color for it to work.
@@ -548,8 +542,8 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: shib-h4-underline
     title: H4 Underline
     description: You must have the Custom Heading Colors  enabled or, if disabled, have selected a custom color for it to work.
@@ -580,7 +574,7 @@ settings:
   - id: h5-size
     title: H5 size (em)
     type: variable-number
-    default: 1.20
+    default: 1.2
     format: em
   - id: h5-weight
     title: H5 weight
@@ -625,8 +619,8 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: shib-h5-underline
     title: H5 Underline
     description: You must have the Custom Heading Colors  enabled or, if disabled, have selected a custom color for it to work.
@@ -702,8 +696,8 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: shib-h6-underline
     title: H6 Underline
     description: You must have the Custom Heading Colors  enabled or, if disabled, have selected a custom color for it to work.
@@ -719,8 +713,8 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: shiba-italic-bold-style
     title: Enable Italic and Bold Colors
     type: class-toggle
@@ -760,8 +754,8 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: shiba-bold-colors
     title: Color of **Bold**
     type: class-select
@@ -797,8 +791,8 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: shiba-highlights-color-header
     title: Others Colors
     type: heading
@@ -810,15 +804,15 @@ settings:
     type: variable-themed-color
     opacity: 0.4
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: tag-background
     title: Custom tags color
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: shiba-image-settings-header
     title: Image Settings
     type: heading
@@ -855,22 +849,22 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: external-link-color
     title: External Link Color
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: unresolved-link-color
     title: Unresolved Link Color
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: tabs-style
     title: Tabs
     type: heading
@@ -1049,8 +1043,8 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: shib-checkboxes-header
     title: Checkboxes
     description: Custom checkboxes.
@@ -1081,9 +1075,6 @@ settings:
         value: blockquote-style-border-left
       - label: Quotation mark
         value: blockquote-style-quotation-mark
-
-  #────────────────────────────── M I S C E L L A N E O U S ───────────────────────────────  (Miscellaneous Settings)
-
   - id: shib-misc-element-header
     title: Miscellaneous
     description: Unique features specifically designed for the Shiba Inu theme.
@@ -1129,9 +1120,6 @@ settings:
     description: Make the background of the panel completely transparent
     type: class-toggle
     default: false
-
-  #────────────────────────────────── W O R K S P A C E ───────────────────────────────────  (Workspace Settings)
-
   - id: shib-workspace-header
     title: Workspace
     description: Configure all relevant workspace settings.
@@ -1264,22 +1252,22 @@ settings:
     type: variable-number-slider
     default: 0.9
     min: 0
-    max: 1.0
+    max: 1
     step: 0.01
   - id: nav-item-color
     title: Custom Color of Note Title
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#2486ff"
-    default-dark: "#b3b3b3"
+    default-light: '#2486ff'
+    default-dark: '#b3b3b3'
   - id: nav-folder-title-color
     title: Custom Color of Folder Title
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#2486ff"
-    default-dark: "#b3b3b3"
+    default-light: '#2486ff'
+    default-dark: '#b3b3b3'
   - id: custom-folders-colors-header
     title: Custom Folders Colors
     type: heading
@@ -1290,71 +1278,71 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#2486ff"
-    default-dark: "#b3b3b3"
+    default-light: '#2486ff'
+    default-dark: '#b3b3b3'
   - id: folder-colorful-custom-color2
     title: Custom Color of Folder 2
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#2486ff"
-    default-dark: "#b3b3b3"
+    default-light: '#2486ff'
+    default-dark: '#b3b3b3'
   - id: folder-colorful-custom-color3
     title: Custom Color of Folder 3
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#2486ff"
-    default-dark: "#b3b3b3"
+    default-light: '#2486ff'
+    default-dark: '#b3b3b3'
   - id: folder-colorful-custom-color4
     title: Custom Color of Folder 4
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#2486ff"
-    default-dark: "#b3b3b3"
+    default-light: '#2486ff'
+    default-dark: '#b3b3b3'
   - id: folder-colorful-custom-color5
     title: Custom Color of Folder 5
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#2486ff"
-    default-dark: "#b3b3b3"
+    default-light: '#2486ff'
+    default-dark: '#b3b3b3'
   - id: folder-colorful-custom-color6
     title: Custom Color of Folder 6
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#2486ff"
-    default-dark: "#b3b3b3"
+    default-light: '#2486ff'
+    default-dark: '#b3b3b3'
   - id: folder-colorful-custom-color7
     title: Custom Color of Folder 7
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#2486ff"
-    default-dark: "#b3b3b3"
+    default-light: '#2486ff'
+    default-dark: '#b3b3b3'
   - id: folder-colorful-custom-color8
     title: Custom Color of Folder 8
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#2486ff"
-    default-dark: "#b3b3b3"
+    default-light: '#2486ff'
+    default-dark: '#b3b3b3'
   - id: folder-colorful-custom-color9
     title: Custom Color of Folder 9
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#2486ff"
-    default-dark: "#b3b3b3"
+    default-light: '#2486ff'
+    default-dark: '#b3b3b3'
   - id: folder-colorful-custom-color10
     title: Custom Color of Folder 10
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#2486ff"
-    default-dark: "#b3b3b3"
+    default-light: '#2486ff'
+    default-dark: '#b3b3b3'
   - id: shib-scrollbar
     description: Settings for the Scrollbar. Adjust the width, Add Scroll Buttons, etc.
     title: Scrollbar
@@ -1383,64 +1371,64 @@ settings:
     opacity: true
     allowEmpty: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: graph-fill-tag
     title: Graph tag color
     type: variable-themed-color
     opacity: true
     allowEmpty: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: graph-fill-attachment
     title: Graph attachment color
     type: variable-themed-color
     opacity: true
     allowEmpty: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: graph-circle-fill-unresolved
     title: Graph unresolved color
     type: variable-themed-color
     opacity: true
     allowEmpty: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: graph-arrow
     title: Graph arrow color
     type: variable-themed-color
     opacity: true
     allowEmpty: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: graph-line-highlight
     title: Graph line highlight color
     type: variable-themed-color
     opacity: true
     allowEmpty: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: graph-circle-fill
     title: Graph circle color
     type: variable-themed-color
     opacity: true
     allowEmpty: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: graph-circle-fill-highlight
     title: Graph circle highlight color
     type: variable-themed-color
     opacity: true
     allowEmpty: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: shib-layout-header
     title: Layout
     description: settings for the workspace frames, such as tabs and borders.
@@ -1465,8 +1453,8 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: shib-layout-card
     title: Cards layout style
     type: heading
@@ -1692,9 +1680,6 @@ settings:
     description: Customize the background image. Use the default format below for an online image. Use the following format to point to a local file - url("app://local/D:/Pictures/Mountain.jpg").
     type: variable-text
     default: url("https://")
-
-  #──────────────────────────────── C O M P L E M E N T S ───────────────────────────────── (Complements Settings)
-
   - id: shib-snippets-plugins-settings
     title: Complements
     description: Customized snippets and plugins for the Shiba Inu theme.
@@ -1752,22 +1737,22 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: cards-background-modifier-border
     title: Custom cards borders Color
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: shiba-inu-support-header
     title: ❤️ Support
     type: heading
     level: 1
     collapsed: false
   - id: shiba-inu-support
-    title:
+    title: null
     level: 1
     type: info-text
     description: |
@@ -1777,5 +1762,5 @@ settings:
       - [Buying me a coffee](https://www.buymeacoffee.com/faroukx) ☕️
       - [Starring the theme on GitHub](https://github.com/faroukx/Obsidian-shiba-inu-theme) ⭐
 
-      If you enjoyed using the theme, consider sharing it with members of the community on the Discord or forum to help grow our community together!
+      If you enjoyed using the theme, consider sharing it with members of the community on the Discord or forum to help grow our community together!    
     markdown: true

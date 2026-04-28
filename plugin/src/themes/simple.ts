@@ -48,82 +48,83 @@ export const theme: ThemeData = {
         unicodeRange: null,
       },
     ],
+    styleSettingsId: "custom-diegoeis-simple",
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --bases-group-heading-property-size: 11px !important;
-  --blockquote-background-color: #242424 !important;
-  --bodyFont: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --codeFont: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --color-base-23: #323232 !important;
-  --default-border-radius: 3px !important;
-  --divider-color: #323232 !important;
-  --file-header-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --file-header-font-size: 12px !important;
-  --font-default: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-family-iawriter-quattro: "iaWriterQuattro", mono !important;
-  --font-family-ibm: "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-family-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-family-serif: Times, Georgia, "Times New Roman", serif !important;
-  --font-interface: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-mermaid: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-paragraph: .87rem !important;
-  --font-smallest: 0.7rem !important;
-  --font-text: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-ui-large: 17px !important;
-  --font-ui-medium: 13px !important;
-  --font-ui-small: 12px !important;
-  --font-ui-smaller: 11px !important;
-  --frontmatter-font-size: .65rem !important;
-  --h2-margin-bottom: .6rem !important;
-  --h2-margin-top: 3rem !important;
-  --h3-margin-bottom: .6rem !important;
-  --h3-margin-top: 3rem !important;
-  --h4-margin-bottom: .6rem !important;
-  --h4-margin-top: 3rem !important;
-  --h5-margin-bottom: .6rem !important;
-  --h5-margin-top: 3rem !important;
-  --h6-margin-bottom: .6rem !important;
-  --h6-margin-top: 3rem !important;
-  --headerFont: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --hr-thickness: 1px !important;
-  --list-spacing: 5px !important;
-  --metadata-input-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --metadata-input-font-size: .75rem !important;
-  --metadata-label-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --metadata-label-font-size: .75rem !important;
-  --metadata-sidebar-input-font-size: 12px !important;
-  --metadata-sidebar-label-font-size: 12px !important;
-  --modal-max-width: 900px !important;
-  --modal-radius: 5px !important;
-  --nav-item-size: 12px !important;
-  --order-content: 3 !important;
-  --order-embedded-backlinks: 4 !important;
-  --order-inline-title: 2 !important;
-  --order-properties-metadata: 1 !important;
-  --setting-group-heading-size: 13px !important;
-  --size-h1: 1.65rem !important;
-  --size-h2: 1.45rem !important;
-  --size-h3: 1.3rem !important;
-  --size-h4: 1.15rem !important;
-  --size-h5: 1rem !important;
-  --size-h6: .87rem !important;
-  --status-bar-border-color: #323232 !important;
-  --status-bar-font-size: 11px !important;
-  --tab-font-size: .7rem !important;
-  --tab-outline-color: #323232 !important;
-  --tab-radius-active: 3px !important;
-  --tab-stacked-font-size: 12px !important;
-  --tag-size: .75rem !important;
-  --titleFont: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --vault-profile-font-size: 12px !important;
-  --quartz-icon-color: currentColor !important;
+  --bases-group-heading-property-size: 11px;
+  --blockquote-background-color: #242424;
+  --bodyFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --codeFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --color-base-23: #323232;
+  --default-border-radius: 3px;
+  --divider-color: #323232;
+  --file-header-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --file-header-font-size: 12px;
+  --font-default: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-iawriter-quattro: "iaWriterQuattro", mono;
+  --font-family-ibm: "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-serif: Times, Georgia, "Times New Roman", serif;
+  --font-interface: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mermaid: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-paragraph: .87rem;
+  --font-smallest: 0.7rem;
+  --font-text: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-ui-large: 17px;
+  --font-ui-medium: 13px;
+  --font-ui-small: 12px;
+  --font-ui-smaller: 11px;
+  --frontmatter-font-size: .65rem;
+  --h2-margin-bottom: .6rem;
+  --h2-margin-top: 3rem;
+  --h3-margin-bottom: .6rem;
+  --h3-margin-top: 3rem;
+  --h4-margin-bottom: .6rem;
+  --h4-margin-top: 3rem;
+  --h5-margin-bottom: .6rem;
+  --h5-margin-top: 3rem;
+  --h6-margin-bottom: .6rem;
+  --h6-margin-top: 3rem;
+  --headerFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --hr-thickness: 1px;
+  --list-spacing: 5px;
+  --metadata-input-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --metadata-input-font-size: .75rem;
+  --metadata-label-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --metadata-label-font-size: .75rem;
+  --metadata-sidebar-input-font-size: 12px;
+  --metadata-sidebar-label-font-size: 12px;
+  --modal-max-width: 900px;
+  --modal-radius: 5px;
+  --nav-item-size: 12px;
+  --order-content: 3;
+  --order-embedded-backlinks: 4;
+  --order-inline-title: 2;
+  --order-properties-metadata: 1;
+  --setting-group-heading-size: 13px;
+  --size-h1: 1.65rem;
+  --size-h2: 1.45rem;
+  --size-h3: 1.3rem;
+  --size-h4: 1.15rem;
+  --size-h5: 1rem;
+  --size-h6: .87rem;
+  --status-bar-border-color: #323232;
+  --status-bar-font-size: 11px;
+  --tab-font-size: .7rem;
+  --tab-outline-color: #323232;
+  --tab-radius-active: 3px;
+  --tab-stacked-font-size: 12px;
+  --tag-size: .75rem;
+  --titleFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --vault-profile-font-size: 12px;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
@@ -877,79 +878,79 @@ html[saved-theme="dark"] body ul.tags > li {
   },
   light: {
     base: `:root:root {
-  --bases-group-heading-property-size: 11px !important;
-  --blockquote-background-color: #fafafa !important;
-  --bodyFont: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --codeFont: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --color-base-23: #eee !important;
-  --default-border-radius: 3px !important;
-  --divider-color: #eee !important;
-  --file-header-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --file-header-font-size: 12px !important;
-  --font-default: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-family-iawriter-quattro: "iaWriterQuattro", mono !important;
-  --font-family-ibm: "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-family-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-family-serif: Times, Georgia, "Times New Roman", serif !important;
-  --font-interface: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-mermaid: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-paragraph: .87rem !important;
-  --font-smallest: 0.7rem !important;
-  --font-text: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-ui-large: 17px !important;
-  --font-ui-medium: 13px !important;
-  --font-ui-small: 12px !important;
-  --font-ui-smaller: 11px !important;
-  --frontmatter-font-size: .65rem !important;
-  --h2-margin-bottom: .6rem !important;
-  --h2-margin-top: 3rem !important;
-  --h3-margin-bottom: .6rem !important;
-  --h3-margin-top: 3rem !important;
-  --h4-margin-bottom: .6rem !important;
-  --h4-margin-top: 3rem !important;
-  --h5-margin-bottom: .6rem !important;
-  --h5-margin-top: 3rem !important;
-  --h6-margin-bottom: .6rem !important;
-  --h6-margin-top: 3rem !important;
-  --headerFont: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --hr-thickness: 1px !important;
-  --list-spacing: 5px !important;
-  --metadata-input-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --metadata-input-font-size: .75rem !important;
-  --metadata-label-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --metadata-label-font-size: .75rem !important;
-  --metadata-sidebar-input-font-size: 12px !important;
-  --metadata-sidebar-label-font-size: 12px !important;
-  --modal-max-width: 900px !important;
-  --modal-radius: 5px !important;
-  --nav-item-size: 12px !important;
-  --order-content: 3 !important;
-  --order-embedded-backlinks: 4 !important;
-  --order-inline-title: 2 !important;
-  --order-properties-metadata: 1 !important;
-  --setting-group-heading-size: 13px !important;
-  --size-h1: 1.65rem !important;
-  --size-h2: 1.45rem !important;
-  --size-h3: 1.3rem !important;
-  --size-h4: 1.15rem !important;
-  --size-h5: 1rem !important;
-  --size-h6: .87rem !important;
-  --status-bar-border-color: #eee !important;
-  --status-bar-font-size: 11px !important;
-  --tab-font-size: .7rem !important;
-  --tab-outline-color: #eee !important;
-  --tab-radius-active: 3px !important;
-  --tab-stacked-font-size: 12px !important;
-  --tag-size: .75rem !important;
-  --titleFont: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --vault-profile-font-size: 12px !important;
-  --quartz-icon-color: currentColor !important;
+  --bases-group-heading-property-size: 11px;
+  --blockquote-background-color: #fafafa;
+  --bodyFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --codeFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --color-base-23: #eee;
+  --default-border-radius: 3px;
+  --divider-color: #eee;
+  --file-header-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --file-header-font-size: 12px;
+  --font-default: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-iawriter-quattro: "iaWriterQuattro", mono;
+  --font-family-ibm: "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-serif: Times, Georgia, "Times New Roman", serif;
+  --font-interface: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mermaid: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-paragraph: .87rem;
+  --font-smallest: 0.7rem;
+  --font-text: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-ui-large: 17px;
+  --font-ui-medium: 13px;
+  --font-ui-small: 12px;
+  --font-ui-smaller: 11px;
+  --frontmatter-font-size: .65rem;
+  --h2-margin-bottom: .6rem;
+  --h2-margin-top: 3rem;
+  --h3-margin-bottom: .6rem;
+  --h3-margin-top: 3rem;
+  --h4-margin-bottom: .6rem;
+  --h4-margin-top: 3rem;
+  --h5-margin-bottom: .6rem;
+  --h5-margin-top: 3rem;
+  --h6-margin-bottom: .6rem;
+  --h6-margin-top: 3rem;
+  --headerFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --hr-thickness: 1px;
+  --list-spacing: 5px;
+  --metadata-input-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --metadata-input-font-size: .75rem;
+  --metadata-label-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --metadata-label-font-size: .75rem;
+  --metadata-sidebar-input-font-size: 12px;
+  --metadata-sidebar-label-font-size: 12px;
+  --modal-max-width: 900px;
+  --modal-radius: 5px;
+  --nav-item-size: 12px;
+  --order-content: 3;
+  --order-embedded-backlinks: 4;
+  --order-inline-title: 2;
+  --order-properties-metadata: 1;
+  --setting-group-heading-size: 13px;
+  --size-h1: 1.65rem;
+  --size-h2: 1.45rem;
+  --size-h3: 1.3rem;
+  --size-h4: 1.15rem;
+  --size-h5: 1rem;
+  --size-h6: .87rem;
+  --status-bar-border-color: #eee;
+  --status-bar-font-size: 11px;
+  --tab-font-size: .7rem;
+  --tab-outline-color: #eee;
+  --tab-radius-active: 3px;
+  --tab-stacked-font-size: 12px;
+  --tag-size: .75rem;
+  --titleFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --vault-profile-font-size: 12px;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
@@ -1685,6 +1686,241 @@ html[saved-theme="light"] body ul.tags > li {
   border-bottom-right-radius: 24px;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
+}`,
+  },
+  classSettings: {
+    "eis-sidebar-dark": `body.eis-sidebar-dark .cm-hmd-frontmatter.cm-string {
+color: var(--color-base-60);
+}
+body.eis-sidebar-dark:not(body.theme-dark) {
+--ribbon-bg: #262626;
+--text-icon-color: #bababa;
+--nav-item: #bababa;
+}
+
+body.eis-sidebar-dark:not(body.theme-dark) .setting-item-description {
+color: var(--color-base-70);
+}
+
+body.eis-sidebar-dark:not(body.theme-dark).is-focused .workspace-tab-header .workspace-tab-header-inner .workspace-tab-header-inner-title {
+color: rgba(0, 0, 0, .5);
+}
+
+body.eis-sidebar-dark:not(body.theme-dark) .workspace .mod-root .workspace-tab-header-inner::after {
+background-color: var(--color-base-30);
+}
+
+body.eis-sidebar-dark:not(body.theme-dark) .nav-folder.mod-root>.nav-folder-title {
+color: var(--text-icon-color);
+}
+
+body.eis-sidebar-dark:not(body.theme-dark).is-focused .workspace-tab-header.is-active .workspace-tab-header-inner .workspace-tab-header-inner-title {
+color: #000;
+}
+
+body.eis-sidebar-dark:not(body.theme-dark) .nav-file-title.is-active, body.eis-sidebar-dark:not(body.theme-dark) .mod-left-split .workspace-tab-header.is-active, body.eis-sidebar-dark:not(body.theme-dark) .is-active .workspace-tab-header-inner-icon svg, body.eis-sidebar-dark:not(body.theme-dark):not(.is-grabbing) .tree-item-self.is-clickable:hover {
+color: #bababa;
+background-color: rgba(255, 255, 255, 0.075);
+}
+
+body.eis-sidebar-dark:not(body.theme-dark) .mod-left-split .workspace-tabs .workspace-leaf .nav-file-title, body.eis-sidebar-dark:not(body.theme-dark) .mod-left-split .workspace-tabs .workspace-leaf .nav-folder-title, body.eis-sidebar-dark:not(body.theme-dark) .mod-top-left-space .tree-item .tree-item-icon, body.eis-sidebar-dark:not(body.theme-dark) .mod-top-left-space .tree-item-inner-text, body.eis-sidebar-dark:not(body.theme-dark) .mod-top-left-space .search-result-file-title, body.eis-sidebar-dark:not(body.theme-dark) .side-dock-settings .clickable-icon, body.eis-sidebar-dark:not(body.theme-dark) .side-dock-actions .clickable-icon, body.eis-sidebar-dark:not(body.theme-dark) .workspace-tab-header-inner svg, body.eis-sidebar-dark:not(body.theme-dark) .clickable-icon {
+color: var(--nav-item);
+}
+
+body.eis-sidebar-dark:not(body.theme-dark) .nav-folder.mod-root .nav-folder>.nav-folder-children {
+border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.eis-sidebar-dark:not(body.theme-dark) .workspace-tab-header-container {
+
+}
+
+body.eis-sidebar-dark:not(body.theme-dark) .is-left-sidedock-open .workspace-split.mod-horizontal.mod-left-split .workspace-tab-header-container, body.eis-sidebar-dark:not(body.theme-dark) .is-left-sidedock-open .workspace-ribbon.side-dock-ribbon.mod-left, body.eis-sidebar-dark:not(body.theme-dark) .is-left-sidedock-open .workspace-ribbon.mod-left:not(.is-collapsed):before, body.eis-sidebar-dark:not(body.theme-dark) .is-left-sidedock-open .mod-left-split .workspace-tabs .workspace-leaf {
+background-color: var(--ribbon-bg);
+transition: all linear .1s;
+}
+
+body.eis-sidebar-dark:not(body.theme-dark) .workspace-ribbon.mod-left.is-collapsed {
+transition: none;
+}
+
+body.eis-sidebar-dark:not(body.theme-dark).is-hidden-frameless:not(.is-popout-window) .workspace .workspace-tabs.mod-top-right-space .workspace-tab-header-container {
+background-color: var(--tab-container-background);
+border-bottom-color: var(--divider-color);
+}
+
+body.eis-sidebar-dark:not(body.theme-dark) .is-left-sidedock-open .workspace-split.mod-horizontal.mod-left-split .workspace-tab-header-container, body.eis-sidebar-dark:not(body.theme-dark) .is-left-sidedock-open .workspace-ribbon.side-dock-ribbon.mod-left, body.eis-sidebar-dark:not(body.theme-dark) .is-left-sidedock-open .workspace-ribbon.mod-left:not(.is-collapsed):before, body.eis-sidebar-dark:not(body.theme-dark) .is-left-sidedock-open .mod-left-split .workspace-tabs .workspace-leaf, body.eis-sidebar-dark .tree-item-children {
+border-color: rgba(255, 255, 255, .15);
+}
+
+body.eis-sidebar-dark:not(body.theme-dark) [data-path="/"].tree-item-self.nav-folder-title {
+border-top-color: rgba(255, 255, 255, .1);
+border-bottom-color: rgba(255, 255, 255, .1);
+}`,
+    "enable-alternative-checkboxes": `body.enable-alternative-checkboxes input[data-task='!']:checked, body.enable-alternative-checkboxes input[data-task='*']:checked, body.enable-alternative-checkboxes input[data-task='-']:checked, body.enable-alternative-checkboxes input[data-task='<']:checked, body.enable-alternative-checkboxes input[data-task='>']:checked, body.enable-alternative-checkboxes input[data-task='I']:checked, body.enable-alternative-checkboxes input[data-task='b']:checked, body.enable-alternative-checkboxes input[data-task='c']:checked, body.enable-alternative-checkboxes input[data-task='d']:checked, body.enable-alternative-checkboxes input[data-task='f']:checked, body.enable-alternative-checkboxes input[data-task='k']:checked, body.enable-alternative-checkboxes input[data-task='l']:checked, body.enable-alternative-checkboxes input[data-task='p']:checked, body.enable-alternative-checkboxes input[data-task='u']:checked, body.enable-alternative-checkboxes input[data-task='w']:checked, body.enable-alternative-checkboxes li[data-task='!']>input:checked, body.enable-alternative-checkboxes li[data-task='!']>p>input:checked, body.enable-alternative-checkboxes li[data-task='*']>input:checked, body.enable-alternative-checkboxes li[data-task='*']>p>input:checked, body.enable-alternative-checkboxes li[data-task='-']>input:checked, body.enable-alternative-checkboxes li[data-task='-']>p>input:checked, body.enable-alternative-checkboxes li[data-task='<']>input:checked, body.enable-alternative-checkboxes li[data-task='<']>p>input:checked, body.enable-alternative-checkboxes li[data-task='>']>input:checked, body.enable-alternative-checkboxes li[data-task='>']>p>input:checked, body.enable-alternative-checkboxes li[data-task='I']>input:checked, body.enable-alternative-checkboxes li[data-task='I']>p>input:checked, body.enable-alternative-checkboxes li[data-task='b']>input:checked, body.enable-alternative-checkboxes li[data-task='b']>p>input:checked, body.enable-alternative-checkboxes li[data-task='c']>input:checked, body.enable-alternative-checkboxes li[data-task='c']>p>input:checked, body.enable-alternative-checkboxes li[data-task='d']>input:checked, body.enable-alternative-checkboxes li[data-task='d']>p>input:checked, body.enable-alternative-checkboxes li[data-task='f']>input:checked, body.enable-alternative-checkboxes li[data-task='f']>p>input:checked, body.enable-alternative-checkboxes li[data-task='k']>input:checked, body.enable-alternative-checkboxes li[data-task='k']>p>input:checked, body.enable-alternative-checkboxes li[data-task='l']>input:checked, body.enable-alternative-checkboxes li[data-task='l']>p>input:checked, body.enable-alternative-checkboxes li[data-task='p']>input:checked, body.enable-alternative-checkboxes li[data-task='p']>p>input:checked, body.enable-alternative-checkboxes li[data-task='u']>input:checked, body.enable-alternative-checkboxes li[data-task='u']>p>input:checked, body.enable-alternative-checkboxes li[data-task='w']>input:checked, body.enable-alternative-checkboxes li[data-task='w']>p>input:checked {
+--checkbox-marker-color: transparent;
+border: none;
+border-radius: 0;
+background-image: none;
+background-color: currentColor;
+-webkit-mask-size: var(--checkbox-icon);
+-webkit-mask-position: 50% 50%;
+}
+
+body.enable-alternative-checkboxes input[data-task='>']:checked, body.enable-alternative-checkboxes li[data-task='>']>input:checked, body.enable-alternative-checkboxes li[data-task='>']>p>input:checked {
+color: var(--text-faint);
+transform: rotate(90deg);
+-webkit-mask-position: 50% 100%;
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes input[data-task='<']:checked, body.enable-alternative-checkboxes li[data-task='<']>input:checked, body.enable-alternative-checkboxes li[data-task='<']>p>input:checked {
+color: var(--text-faint);
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z' clip-rule='evenodd' /%3E%3C/svg%3E");
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes input[data-task='?']:checked, body.enable-alternative-checkboxes li[data-task='?']>input:checked, body.enable-alternative-checkboxes li[data-task='?']>p>input:checked {
+--checkbox-marker-color: transparent;
+background-color: var(--color-yellow);
+border-color: var(--color-yellow);
+background-position: 50% 50%;
+background-size: 200% 90%;
+background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"%3E%3Cpath fill="white" fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+body.enable-alternative-checkboxes input[data-task='/']:checked, body.enable-alternative-checkboxes li[data-task='/']>input:checked, body.enable-alternative-checkboxes li[data-task='/']>p>input:checked {
+background-image: none;
+background-color: transparent;
+position: relative;
+overflow: hidden;
+}
+
+body.enable-alternative-checkboxes input[data-task='/']:checked:after, body.enable-alternative-checkboxes li[data-task='/']>input:checked:after, body.enable-alternative-checkboxes li[data-task='/']>p>input:checked:after {
+top: 0;
+left: 0;
+content: ' ';
+display: block;
+position: absolute;
+background-color: var(--color-accent);
+width: calc(50% - 0.5px);
+height: 100%;
+-webkit-mask-image: none;
+}
+
+body.enable-alternative-checkboxes input[data-task='!']:checked, body.enable-alternative-checkboxes li[data-task='!']>input:checked, body.enable-alternative-checkboxes li[data-task='!']>p>input:checked {
+color: var(--color-orange);
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes input[data-task='"']:checked, body.enable-alternative-checkboxes input[data-task='“']:checked, body.enable-alternative-checkboxes li[data-task='"']>input:checked, body.enable-alternative-checkboxes li[data-task='"']>p>input:checked, body.enable-alternative-checkboxes li[data-task='“']>input:checked, body.enable-alternative-checkboxes li[data-task='“']>p>input:checked {
+--checkbox-marker-color: transparent;
+background-position: 50% 50%;
+background-color: var(--color-cyan);
+border-color: var(--color-cyan);
+background-size: 75%;
+background-repeat: no-repeat;
+background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="white" d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"%2F%3E%3C%2Fsvg%3E');
+}
+
+body.enable-alternative-checkboxes input[data-task='-']:checked, body.enable-alternative-checkboxes li[data-task='-']>input:checked, body.enable-alternative-checkboxes li[data-task='-']>p>input:checked {
+color: var(--text-faint);
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes:not(.tasks) .markdown-preview-view ul li[data-task='-'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task='-']), body.enable-alternative-checkboxes:not(.tasks) li[data-task='-'].task-list-item.is-checked {
+color: var(--text-faint);
+text-decoration: line-through solid var(--text-faint) 1px;
+}
+
+body.enable-alternative-checkboxes input[data-task='*']:checked, body.enable-alternative-checkboxes li[data-task='*']>input:checked, body.enable-alternative-checkboxes li[data-task='*']>p>input:checked {
+color: var(--color-yellow);
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' /%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes input[data-task='l']:checked, body.enable-alternative-checkboxes li[data-task='l']>input:checked, body.enable-alternative-checkboxes li[data-task='l']>p>input:checked {
+color: var(--color-red);
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes input[data-task='i']:checked, body.enable-alternative-checkboxes li[data-task='i']>input:checked, body.enable-alternative-checkboxes li[data-task='i']>p>input:checked {
+--checkbox-marker-color: transparent;
+background-color: var(--color-blue);
+border-color: var(--color-blue);
+background-position: 50%;
+background-size: 100%;
+background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cpath fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M196 220h64v172"%2F%3E%3Cpath fill="none" stroke="white" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" d="M187 396h138"%2F%3E%3Cpath fill="white" d="M256 160a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+body.enable-alternative-checkboxes input[data-task='S']:checked, body.enable-alternative-checkboxes li[data-task='S']>input:checked, body.enable-alternative-checkboxes li[data-task='S']>p>input:checked {
+--checkbox-marker-color: transparent;
+border-color: var(--color-green);
+background-color: var(--color-green);
+background-size: 100%;
+background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"%3E%3Cpath fill="white" fill-rule="evenodd" d="M26 8a2 2 0 1 0-4 0v2a8 8 0 1 0 0 16v8a4.002 4.002 0 0 1-3.773-2.666a2 2 0 0 0-3.771 1.332A8.003 8.003 0 0 0 22 38v2a2 2 0 1 0 4 0v-2a8 8 0 1 0 0-16v-8a4.002 4.002 0 0 1 3.773 2.666a2 2 0 0 0 3.771-1.332A8.003 8.003 0 0 0 26 10V8Zm-4 6a4 4 0 0 0 0 8v-8Zm4 12v8a4 4 0 0 0 0-8Z" clip-rule="evenodd"%2F%3E%3C%2Fsvg%3E');
+}
+
+body.enable-alternative-checkboxes input[data-task='I']:checked, body.enable-alternative-checkboxes li[data-task='I']>input:checked, body.enable-alternative-checkboxes li[data-task='I']>p>input:checked {
+color: var(--color-yellow);
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z' /%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes input[data-task='f']:checked, body.enable-alternative-checkboxes li[data-task='f']>input:checked, body.enable-alternative-checkboxes li[data-task='f']>p>input:checked {
+color: var(--color-red);
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes input[data-task='k']:checked, body.enable-alternative-checkboxes li[data-task='k']>input:checked, body.enable-alternative-checkboxes li[data-task='k']>p>input:checked {
+color: var(--color-yellow);
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes input[data-task='u']:checked, body.enable-alternative-checkboxes li[data-task='u']>input:checked, body.enable-alternative-checkboxes li[data-task='u']>p>input:checked {
+color: var(--color-green);
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes input[data-task='d']:checked, body.enable-alternative-checkboxes li[data-task='d']>input:checked, body.enable-alternative-checkboxes li[data-task='d']>p>input:checked {
+color: var(--color-red);
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes input[data-task='w']:checked, body.enable-alternative-checkboxes li[data-task='w']>input:checked, body.enable-alternative-checkboxes li[data-task='w']>p>input:checked {
+color: var(--color-purple);
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 3a1 1 0 011-1h.01a1 1 0 010 2H7a1 1 0 01-1-1zm2 3a1 1 0 00-2 0v1a2 2 0 00-2 2v1a2 2 0 00-2 2v.683a3.7 3.7 0 011.055.485 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0A3.7 3.7 0 0118 12.683V12a2 2 0 00-2-2V9a2 2 0 00-2-2V6a1 1 0 10-2 0v1h-1V6a1 1 0 10-2 0v1H8V6zm10 8.868a3.704 3.704 0 01-4.055-.036 1.704 1.704 0 00-1.89 0 3.704 3.704 0 01-4.11 0 1.704 1.704 0 00-1.89 0A3.704 3.704 0 012 14.868V17a1 1 0 001 1h14a1 1 0 001-1v-2.132zM9 3a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm3 0a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes input[data-task='p']:checked, body.enable-alternative-checkboxes li[data-task='p']>input:checked, body.enable-alternative-checkboxes li[data-task='p']>p>input:checked {
+color: var(--color-green);
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z' /%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes input[data-task='c']:checked, body.enable-alternative-checkboxes li[data-task='c']>input:checked, body.enable-alternative-checkboxes li[data-task='c']>p>input:checked {
+color: var(--color-orange);
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M18 9.5a1.5 1.5 0 11-3 0v-6a1.5 1.5 0 013 0v6zM14 9.667v-5.43a2 2 0 00-1.105-1.79l-.05-.025A4 4 0 0011.055 2H5.64a2 2 0 00-1.962 1.608l-1.2 6A2 2 0 004.44 12H8v4a2 2 0 002 2 1 1 0 001-1v-.667a4 4 0 01.8-2.4l1.4-1.866a4 4 0 00.8-2.4z' /%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes input[data-task='b']:checked, body.enable-alternative-checkboxes li[data-task='b']>input:checked, body.enable-alternative-checkboxes li[data-task='b']>p>input:checked {
+color: var(--color-orange);
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z' /%3E%3C/svg%3E");
+}
+body.theme-dark input[data-task='?']:checked, body.theme-dark li[data-task='?']>input:checked, body.theme-dark li[data-task='?']>p>input:checked {
+background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"%3E%3Cpath fill="black" fill-opacity="0.8" fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+body.theme-dark input[data-task='"']:checked, body.theme-dark input[data-task='“']:checked, body.theme-dark li[data-task='"']>input:checked, body.theme-dark li[data-task='"']>p>input:checked, body.theme-dark li[data-task='“']>input:checked, body.theme-dark li[data-task='“']>p>input:checked {
+background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="black" fill-opacity="0.7" d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"%2F%3E%3C%2Fsvg%3E');
+}
+
+body.theme-dark input[data-task='i']:checked, body.theme-dark li[data-task='i']>input:checked, body.theme-dark li[data-task='i']>p>input:checked {
+background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cpath fill="none" stroke="black" stroke-opacity="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M196 220h64v172"%2F%3E%3Cpath fill="none" stroke="black" stroke-opacity="0.8" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" d="M187 396h138"%2F%3E%3Cpath fill="black" fill-opacity="0.8" d="M256 160a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+body.theme-dark input[data-task='S']:checked, body.theme-dark li[data-task='S']>input:checked, body.theme-dark li[data-task='S']>p>input:checked {
+background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"%3E%3Cpath fill-opacity="0.8" fill="black" fill-rule="evenodd" d="M26 8a2 2 0 1 0-4 0v2a8 8 0 1 0 0 16v8a4.002 4.002 0 0 1-3.773-2.666a2 2 0 0 0-3.771 1.332A8.003 8.003 0 0 0 22 38v2a2 2 0 1 0 4 0v-2a8 8 0 1 0 0-16v-8a4.002 4.002 0 0 1 3.773 2.666a2 2 0 0 0 3.771-1.332A8.003 8.003 0 0 0 26 10V8Zm-4 6a4 4 0 0 0 0 8v-8Zm4 12v8a4 4 0 0 0 0-8Z" clip-rule="evenodd"%2F%3E%3C%2Fsvg%3E');
+}`,
+    "hide-h1-after-properties": `.hide-h1-after-properties .cm-contentContainer .cm-content [contenteditable="false"]+.HyperMD-header.HyperMD-header-1.cm-line {
+display: none;
 }`,
   },
 };

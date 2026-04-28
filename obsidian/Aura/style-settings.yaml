@@ -83,10 +83,10 @@ settings:
         value: aura-colorschemes-dark-tokyonight
       - label: Solarized
         value: aura-colorschemes-dark-solarized
+      - label: Amoled Black
+        value: aura-colorschemes-dark-amoled-black
       - label: Mystical Nights
         value: aura-colorschemes-dark-mystical-nights
-
-  #---------- E D I T O R ----------
   - id: aura-editor-heading
     title: Editor
     description: Active Line, Headings, Callouts, Checkbox and Rainbow Tags, etc...
@@ -113,15 +113,15 @@ settings:
   - id: font-default-custom
     title: Custom Font Default
     type: variable-text
-    default: "iA Writer Quattro S"
+    default: iA Writer Quattro S
   - id: font-secondary-custom
     title: Custom Font Secondary
     type: variable-text
-    default: "iA Writer Duo S"
+    default: iA Writer Duo S
   - id: font-monospace-custom
     title: Custom Font Monospace
     type: variable-text
-    default: "iA Writer Mono S"
+    default: iA Writer Mono S
   - id: bold-color
     title: Bold Color
     type: variable-select
@@ -276,8 +276,8 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: aura-h2-heading
     title: H2 settings
     type: heading
@@ -327,8 +327,8 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: aura-h3-heading
     title: H3 settings
     type: heading
@@ -378,8 +378,8 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: aura-h4-heading
     title: H4 settings
     type: heading
@@ -429,8 +429,8 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: aura-h5-heading
     title: H5 settings
     type: heading
@@ -480,8 +480,8 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
+    default-light: '#'
+    default-dark: '#'
   - id: aura-h6-heading
     title: H6 settings
     type: heading
@@ -531,19 +531,16 @@ settings:
     type: variable-themed-color
     opacity: true
     format: hex
-    default-light: "#"
-    default-dark: "#"
-
+    default-light: '#'
+    default-dark: '#'
   - id: aura-callouts-heading
     title: Callouts
     type: heading
     level: 2
     collapsed: true
-
   - id: aura-callouts
     title: Enable Callout Styling
     type: class-toggle
-
   - id: aura-callouts-select
     title: Callout Styling
     type: class-select
@@ -592,8 +589,6 @@ settings:
     title: Enable Rainbow Tags
     description: Customize your tag with rainbow colors
     type: class-toggle
-
-  #---------- L A Y O U T ----------
   - id: aura-workspace-heading
     title: Workspace
     description: Layout, Background, Colorful frame, etc.
@@ -625,7 +620,7 @@ settings:
     type: variable-color
     opacity: true
     format: hex
-    default: "#"
+    default: '#'
   - id: aura-sliding-tabs
     title: Sliding Tabs
     description: Make stacked tabs sliding again
@@ -680,7 +675,6 @@ settings:
         value: aura-origin-tabs-default
       - label: Show Tabs Completely
         value: aura-origin-show-tabs
-
   - id: aura-workspace-background-heading
     title: Background
     type: heading
@@ -824,7 +818,6 @@ settings:
     title: Enable Rainbow Folders
     description: Customize your folder colors
     type: class-toggle
-
   - id: aura-show-hide-elements-header
     title: Show/Hide UI Elements
     description: Toggle Visibility of UI Elements

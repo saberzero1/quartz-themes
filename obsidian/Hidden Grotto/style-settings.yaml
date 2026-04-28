@@ -1,0 +1,52 @@
+name: Color Controls
+id: hidden-grotto-style
+collapsed: false
+settings:
+  - id: color-palettes
+    title: Color Presets
+    type: class-select
+    allowEmpty: false
+    default: preset-clobbopus
+    options:
+      - label: Absol
+        value: preset-absol
+      - label: Aegislash
+        value: preset-aegislash
+      - label: Aggron
+        value: preset-aggron
+      - label: Arcanine
+        value: preset-arcanine
+      - label: Aromatisse
+        value: preset-aromatisse
+      - label: Calyrex
+        value: preset-calyrex
+      - label: Clobbopus
+        value: preset-clobbopus
+      - label: Cryogonal
+        value: preset-cryogonal
+      - label: Darkrai
+        value: preset-darkrai
+      - label: Diancie
+        value: preset-diancie
+      - label: Hisuian Typhlosion
+        value: preset-hisuian-typhlosion
+      - label: Manectric
+        value: preset-manectric
+      - label: Mareep
+        value: preset-mareep
+      - label: Mega Lucario
+        value: preset-mega-lucario
+      - label: Meloetta
+        value: preset-meloetta
+      - label: Necrozma
+        value: preset-necrozma
+      - label: Pirouette Meloetta
+        value: preset-pirouette-meloetta
+      - label: Poltchageist
+        value: preset-poltchageist
+      - label: Scolipede
+        value: preset-scolipede
+      - label: Swampert
+        value: preset-swampert
+      - label: Ursaluna
+        value: preset-ursaluna

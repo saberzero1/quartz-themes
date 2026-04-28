@@ -4,12 +4,12 @@ export const theme: ThemeData = {
   meta: { name: "oledblack", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
-  --quartz-icon-color: currentColor !important;
+  --quartz-icon-color: currentColor;
 }
 
 html body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

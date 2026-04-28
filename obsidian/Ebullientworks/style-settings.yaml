@@ -45,7 +45,7 @@ settings:
     description: Font for text headings (h1 to h6); empty will use default text font
     id: ebw-header-font
     type: variable-text
-    default: "'Architects Daughter'"
+    default: '''Architects Daughter'''
   - title: Heading Font Caps Variant
     description: Capitalization variant for h1 text headings
     id: ebw-header-font-caps-variant
@@ -77,28 +77,28 @@ settings:
     description: Font for tags; empty will use default text font
     id: ebw-font-tags
     type: variable-text
-    default: "'Architects Daughter'"
+    default: '''Architects Daughter'''
   - id: ebw-font-callout-title
     title: Callout/admonition titles
     description: Font for callout/admonition titles; empty will use default text font
     type: variable-text
-    default: "'Architects Daughter'"
+    default: '''Architects Daughter'''
   - id: ebw-p-modifier
     title: Paragraph spacing modifier
     description: Gap between paragraphs (line height * this modifier)
     type: variable-number-slider
     default: 1
-    min: .4
+    min: 0.4
     max: 3
-    step: .1
+    step: 0.1
   - id: ebw-header-modifier
     title: Header spacing modifier
     description: Gap before headings (paragraph spacing * this modifier)
     type: variable-number-slider
     default: 1.4
-    min: .8
+    min: 0.8
     max: 3
-    step: .1
+    step: 0.1
   - id: other-font-settings
     title: Use Appearance to customize text/monospace fonts
     description: (This has no effect. ;) )

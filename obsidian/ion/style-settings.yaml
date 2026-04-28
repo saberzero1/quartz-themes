@@ -10,8 +10,8 @@ settings:
     title: Base color
     type: variable-color
     format: hsl-split-decimal
-    description: "Requires Style Settings v1.0.3+"
-    default: "#ecd2c6"
+    description: Requires Style Settings v1.0.3+
+    default: '#ecd2c6'
   - id: code-base-l
     title: Code base brightness
     description: Brightness adjustment for syntax highlighting
@@ -27,10 +27,10 @@ settings:
   - id: bloom-fct
     title: Strength
     type: variable-number-slider
-    default: .25
+    default: 0.25
     min: 0
     max: 1
-    step: .05
+    step: 0.05
   - id: ion-threshold
     title: Threshold
     type: variable-number-slider

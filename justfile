@@ -94,6 +94,9 @@ cli-extract-baseline:
 cli-clear-baseline:
   rm -rf ./runner/results/_baseline
 
+style-settings:
+  bun ./scripts/populate-style-settings.mjs
+
 [group('database')]
 ingest:
   node ./runner/scripts/ingest.js
@@ -149,4 +152,4 @@ tag:
   git tag -a "$TAG" -m "Release version $TAG"
   git push origin tag "$TAG"
 
-everything-and-the-kitchen-sink: generate-callout-manifest cli-extract-baseline cli-extract-all-force drop prepare ingest compile generate-plugin convert format-non-generated
+everything-and-the-kitchen-sink: generate-callout-manifest style-settings cli-extract-baseline cli-extract-all-force drop prepare ingest compile generate-plugin convert format-non-generated

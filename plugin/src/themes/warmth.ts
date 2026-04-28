@@ -4,12 +4,12 @@ export const theme: ThemeData = {
   meta: { name: "warmth", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
-  --quartz-icon-color: currentColor !important;
+  --quartz-icon-color: currentColor;
 }
 
 html body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }`,
     typography: `html body p {
   font-family: "Times New Roman";

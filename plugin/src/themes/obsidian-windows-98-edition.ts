@@ -35,19 +35,19 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root {
-  --border: #404040 !important;
-  --titlebar_active_1: #0a246a !important;
-  --titlebar_active_2: #a6caf0 !important;
-  --titlebar_inactive_1: #808080 !important;
-  --titlebar_inactive_2: #c0c0c0 !important;
-  --tooltip: rgb(255, 255, 225) !important;
-  --window: #d4d0c8 !important;
-  --quartz-icon-color: currentColor !important;
+  --border: #404040;
+  --titlebar_active_1: #0a246a;
+  --titlebar_active_2: #a6caf0;
+  --titlebar_inactive_1: #808080;
+  --titlebar_inactive_2: #c0c0c0;
+  --tooltip: rgb(255, 255, 225);
+  --window: #d4d0c8;
+  --quartz-icon-color: currentColor;
 }
 
 html body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html body .page > div#quartz-body div.sidebar {

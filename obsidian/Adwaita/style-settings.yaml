@@ -21,7 +21,7 @@ settings:
         value: adwaita-mod-never
   - id: adwaita-mod-scale
     title: Scale
-    description:
+    description: null
     type: variable-number
     default: 1
   - id: adwaita-mod-right-margin
@@ -38,7 +38,6 @@ settings:
   - id: adwaita-window-button-close-hide
     title: Hide close button
     type: class-toggle
-
   - title: Tabs
     type: heading
     level: 2
@@ -59,7 +58,6 @@ settings:
   - id: adwaita-tabs-short
     title: Short
     type: class-toggle
-
   - title: Colors
     type: heading
     level: 2
@@ -77,7 +75,6 @@ settings:
         value: adwaita-colors-linux-only
       - label: Never
         value: adwaita-colors-never
-
   - title: Font
     type: heading
     level: 2
@@ -95,7 +92,6 @@ settings:
         value: adwaita-font-linux-only
       - label: Never
         value: adwaita-font-never
-
   - title: Icons
     type: heading
     level: 2

@@ -377,36 +377,607 @@
     url("https://fonts.cdnfonts.com/s/14106/Monaco.woff") format("woff");
 }
 body.theme-light {
+  --background-modifier-active-hover: red !important;
+  --background-modifier-border: #d5cea3 !important;
+  --background-modifier-border-focus: #8a8980 !important;
+  --background-modifier-border-hover: #8a8980 !important;
+  --background-modifier-error: #d7474b !important;
+  --background-modifier-error-hover: #d7474b !important;
+  --background-modifier-error-rgb: var(--color-red-rgb, 233, 49, 71) !important;
+  --background-modifier-form-field: #e7dba0 !important;
+  --background-modifier-form-field-hover: #e7dba0 !important;
+  --background-modifier-hover: #c9cbd1 !important;
+  --background-modifier-success: #6f894e !important;
+  --background-modifier-success-rgb: var(
+    --color-green-rgb,
+    8,
+    185,
+    78
+  ) !important;
+  --background-primary: #f2ecbc !important;
+  --background-primary-alt: var(--color-base-10, #fafafa) !important;
+  --background-secondary: #e7dba0 !important;
+  --background-secondary-alt: var(--color-base-05, #fcfcfc) !important;
+  --bases-cards-background: #f2ecbc !important;
+  --bases-cards-border-width: var(--border-width, 1px) !important;
+  --bases-cards-corner-shape: var(--corner-shape, round) !important;
+  --bases-cards-cover-background: var(
+    --background-primary-alt,
+    #fafafa
+  ) !important;
+  --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-cards-radius: var(--radius-m, 8px) !important;
+  --bases-cards-shadow: 0 0 0 1px #d5cea3 !important;
+  --bases-cards-shadow-hover: 0 0 0 1px #8a8980 !important;
   --bases-embed-border-color: #d5cea3 !important;
+  --bases-embed-border-radius: var(--radius-s, 4px) !important;
+  --bases-group-heading-property-color: #545464 !important;
+  --bases-group-heading-property-size: var(--font-ui-smaller, 12px) !important;
+  --bases-group-heading-property-weight: var(--font-normal, 400) !important;
+  --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
+  --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
+  --bases-header-border-width: 0 0 var(--border-width) 0 !important;
   --bases-table-border-color: #d5cea3 !important;
+  --bases-table-cell-background-active: #f2ecbc !important;
+  --bases-table-cell-background-disabled: var(
+    --background-primary-alt,
+    #fafafa
+  ) !important;
+  --bases-table-cell-background-selected: #c9cbd1 !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #8a8980 !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(196, 35%, 47%) !important;
+  --bases-table-column-border-width: var(--border-width, 1px) !important;
+  --bases-table-container-border-radius: var(--radius-s, 4px) !important;
+  --bases-table-container-border-width: var(--border-width, 1px) !important;
+  --bases-table-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-table-group-background: var(
+    --background-primary-alt,
+    #fafafa
+  ) !important;
   --bases-table-header-background: #f2ecbc !important;
   --bases-table-header-background-hover: #c9cbd1 !important;
-  --focus-ring-color: #0df !important;
-  --tab-container-background: #e7dba0 !important;
-  --table-border-color: #d5cea3 !important;
-  --text-accent: hsl(196, 35%, 47%) !important;
-  --text-faint: #716e61 !important;
-  --text-normal: #545464 !important;
-  --titlebar-background: #e7dba0 !important;
-  --input-height: 30px !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
-  --input-radius: 5px !important;
-  --background-modifier-border: #d5cea3 !important;
-  --background-modifier-form-field: #e7dba0 !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
+  --bases-table-header-color: #545464 !important;
+  --bases-table-header-sort-mask: linear-gradient(
+    to left,
+    transparent var(--size-4-6),
+    black var(--size-4-6)
+  ) !important;
+  --bases-table-header-weight: var(--font-weight, 400) !important;
+  --bases-table-row-background-hover: var(
+    --table-row-background-hover,
+    transparent
+  ) !important;
+  --bases-table-row-border-width: var(--border-width, 1px) !important;
+  --bases-table-summary-background: #f2ecbc !important;
+  --bases-table-summary-background-hover: #c9cbd1 !important;
+  --blockquote-border-color: #4e8ca2 !important;
+  --blur-background: color-mix(in srgb, #f2ecbc 65%, transparent)
+    linear-gradient(#f2ecbc, color-mix(in srgb, #f2ecbc 65%, transparent)) !important;
+  --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation))
+    brightness(var(--blur-brightness)) !important;
+  --blur-m: blur(var(--blur-radius-m)) saturate(var(--blur-saturation))
+    brightness(var(--blur-brightness)) !important;
+  --blur-s: blur(var(--blur-radius-s)) saturate(var(--blur-saturation))
+    brightness(var(--blur-brightness)) !important;
+  --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
+  --button-corner-shape: var(--corner-shape, round) !important;
+  --button-radius: var(--input-radius, 5px) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode, darken);
+  --callout-bug: var(--color-red-rgb, 233, 49, 71);
+  --callout-default: var(--color-blue-rgb, 8, 109, 221);
+  --callout-error: var(--color-red-rgb, 233, 49, 71);
+  --callout-example: var(--color-purple-rgb, 120, 82, 238);
+  --callout-fail: var(--color-red-rgb, 233, 49, 71);
+  --callout-important: var(--color-cyan-rgb, 0, 191, 188);
+  --callout-info: var(--color-blue-rgb, 8, 109, 221);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6, 12px 12px 12px 24px);
+  --callout-question: var(--color-orange-rgb, 236, 117, 0);
+  --callout-radius: var(--radius-s, 4px);
+  --callout-success: var(--color-green-rgb, 8, 185, 78);
+  --callout-summary: var(--color-cyan-rgb, 0, 191, 188);
+  --callout-tip: var(--color-cyan-rgb, 0, 191, 188);
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb, 8, 109, 221);
+  --callout-warning: var(--color-orange-rgb, 236, 117, 0);
+  --canvas-background: #f2ecbc !important;
+  --canvas-card-label-color: #716e61 !important;
+  --canvas-color-1: var(--color-red-rgb, 233, 49, 71) !important;
+  --canvas-color-2: var(--color-orange-rgb, 236, 117, 0) !important;
+  --canvas-color-3: var(--color-yellow-rgb, 224, 172, 0) !important;
+  --canvas-color-4: var(--color-green-rgb, 8, 185, 78) !important;
+  --canvas-color-5: var(--color-cyan-rgb, 0, 191, 188) !important;
+  --canvas-color-6: var(--color-purple-rgb, 120, 82, 238) !important;
+  --canvas-controls-icon-size: var(--icon-s, 16px) !important;
+  --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
+  --canvas-controls-radius: var(--radius-s, 4px) !important;
+  --canvas-dot-pattern: var(--color-base-30, #e0e0e0) !important;
+  --caret-color: #545464 !important;
+  --checkbox-border-color: #716e61 !important;
+  --checkbox-border-color-hover: #b35b79 !important;
+  --checkbox-color: #4e8ca2 !important;
+  --checkbox-color-hover: #b35b79 !important;
+  --checkbox-marker-color: #f2ecbc !important;
+  --checkbox-radius: var(--radius-s, 4px) !important;
+  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checklist-done-color: #716e61 !important;
+  --clickable-icon-radius: var(--radius-s, 4px) !important;
+  --code-background: #e7dba0 !important;
+  --code-border-color: #d5cea3 !important;
+  --code-bracket-background: #c9cbd1 !important;
+  --code-comment: #8a8980 !important;
+  --code-function: #de9800 !important;
+  --code-important: #de9800 !important;
+  --code-keyword: #624c83 !important;
+  --code-normal: #545464 !important;
+  --code-operator: #836f4a !important;
+  --code-property: #545464 !important;
+  --code-punctuation: #545464 !important;
+  --code-radius: var(--radius-s, 4px) !important;
+  --code-size: var(--font-smaller, 0.875em) !important;
+  --code-string: #6f894e !important;
+  --code-tag: #d7474b !important;
+  --code-value: #b35b79 !important;
+  --collapse-icon-color: #716e61 !important;
+  --collapse-icon-color-collapsed: hsl(196, 35%, 47%) !important;
+  --color-accent: hsl(196, 35%, 47%) !important;
+  --color-accent-1: hsl(195, 35.35%, 50.525%) !important;
+  --color-accent-2: hsl(193, 35.7%, 54.05%) !important;
+  --color-accent-hsl: 196, 35%, 47% !important;
+  --divider-color: #d5cea3 !important;
+  --divider-color-hover: hsl(196, 35%, 47%) !important;
+  --divider-vertical-height: calc(100% - var(--header-height)) !important;
+  --dropdown-background: #e7dba0 !important;
+  --dropdown-background-hover: #d5cea3 !important;
+  --dropdown-background-position:
+    var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
+  --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
+  --dropdown-padding: 0 var(--dropdown-padding-end) 0
+    var(--dropdown-padding-start) !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px #d5cea3, inset 0 0 0 1px #d5cea3 !important;
+  --embed-border-start: 2px solid hsl(196, 35%, 47%) !important;
+  --embed-padding: 0 0 0 var(--size-4-6) !important;
+  --file-header-background: #f2ecbc !important;
+  --file-header-background-focused: #f2ecbc !important;
+  --file-header-border: var(--border-width, 1px solid transparent) solid
+    transparent !important;
+  --file-header-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  ) !important;
+  --file-header-font-size: var(--font-ui-small, 13px) !important;
+  --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
+  --file-margins-x: var(--size-4-8, 32px) !important;
+  --file-margins-y: var(--size-4-8, 32px) !important;
+  --flair-background: #e7dba0 !important;
+  --flair-color: #545464 !important;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
+  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
+    var(--default-font, "??"), var(--font-default) !important;
+  --font-mermaid: var(
+    --font-text,
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  ) !important;
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
+    var(--font-monospace-default) !important;
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial" !important;
+  --font-text:
+    var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
+  --font-weight: var(--font-normal, 400) !important;
+  --footnote-divider-color: #d5cea3 !important;
+  --footnote-divider-color-active: var(
+    --metadata-divider-color-focus,
+    transparent
+  ) !important;
+  --footnote-divider-width: var(--border-width, 1px) !important;
+  --footnote-gap: var(--size-4-1, 4px) !important;
+  --footnote-id-color: #545464 !important;
+  --footnote-id-color-no-occurrences: #716e61 !important;
+  --footnote-input-background: var(
+    --metadata-input-background,
+    transparent
+  ) !important;
+  --footnote-input-background-active: #c9cbd1 !important;
+  --footnote-line-height: var(--line-height-normal, 1.5) !important;
+  --footnote-padding-block: var(--size-2-3, 6px) !important;
+  --footnote-padding-inline: var(--size-2-3, 6px) !important;
+  --footnote-radius: var(--radius-s, 4px) !important;
+  --footnote-size: var(--font-smaller, 0.875em) !important;
+  --graph-line: #8a8980 !important;
+  --graph-node: hsl(196, 35%, 47%) !important;
+  --graph-node-attachment: #4e8ca2 !important;
+  --graph-node-focused: #b35b79 !important;
+  --graph-node-tag: #d7474b !important;
+  --graph-node-unresolved: #d5cea3 !important;
+  --graph-text: #545464 !important;
+  --h5-line-height: var(--line-height-normal, 1.5) !important;
+  --h6-line-height: var(--line-height-normal, 1.5) !important;
+  --heading-formatting: #716e61 !important;
+  --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
+  --hr-color: #8a8980 !important;
+  --icon-color: #545464 !important;
+  --icon-color-active: hsl(196, 35%, 47%) !important;
+  --icon-color-focused: #545464 !important;
+  --icon-color-hover: #545464 !important;
+  --icon-size: var(--icon-m, 18px) !important;
+  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --indentation-guide-color: #8a8980 !important;
+  --indentation-guide-color-active: #716e61 !important;
+  --indentation-guide-width: var(--border-width, 1px) !important;
+  --indentation-guide-width-active: var(--border-width, 1px) !important;
+  --inline-title-line-height: var(--h1-line-height, 1.2) !important;
+  --inline-title-size: var(--h1-size, 1.618em) !important;
+  --inline-title-style: var(--h1-style, normal) !important;
+  --inline-title-variant: var(--h1-variant, normal) !important;
+  --inline-title-weight: var(--h1-weight, 700) !important;
+  --input-border-width: var(--border-width, 1px) !important;
+  --input-corner-shape: var(--corner-shape, round) !important;
+  --input-date-separator: #716e61 !important;
+  --input-font-weight: var(--font-normal, 400) !important;
+  --input-icon-inset: var(--size-4-1, 4px) !important;
+  --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --input-placeholder-color: #716e61 !important;
+  --interactive-accent: hsl(196, 35%, 47%) !important;
+  --interactive-accent-hover: hsl(193, 35.7%, 54.05%) !important;
+  --interactive-accent-hsl: 196, 35%, 47% !important;
+  --interactive-hover: #d5cea3 !important;
+  --interactive-normal: #e7dba0 !important;
+  --link-color: #4e8ca2 !important;
+  --link-color-hover: #b35b79 !important;
+  --link-external-color: #4e8ca2 !important;
+  --link-external-color-hover: #b35b79 !important;
+  --link-unresolved-color: var(--text-accent, hsl(258, 88%, 66%)) !important;
+  --link-unresolved-decoration-color: hsla(196, 35%, 47%, 0.3) !important;
+  --link-weight: var(--font-weight, 400) !important;
+  --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
+  --list-marker-color: #4e8ca2 !important;
+  --list-marker-color-collapsed: hsl(196, 35%, 47%) !important;
+  --list-marker-color-hover: #545464 !important;
+  --menu-background: #e7dba0 !important;
+  --menu-border-color: #8a8980 !important;
+  --menu-border-width: var(--border-width, 1px) !important;
+  --menu-corner-shape: var(--corner-shape, round) !important;
+  --menu-padding: var(--size-2-3, 6px) !important;
+  --menu-radius: var(--radius-m, 8px) !important;
+  --menu-shadow: var(
+    --shadow-s,
+    0px 1px 2px rgba(0, 0, 0, 0.028),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07)
+  ) !important;
+  --metadata-border-color: #d5cea3 !important;
+  --metadata-divider-color: #d5cea3 !important;
+  --metadata-input-background-active: #c9cbd1 !important;
+  --metadata-input-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  ) !important;
+  --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
+  --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --metadata-input-text-color: #545464 !important;
+  --metadata-label-background-active: #c9cbd1 !important;
+  --metadata-label-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  ) !important;
+  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-label-text-color: #545464 !important;
+  --metadata-label-text-color-hover: #545464 !important;
+  --metadata-padding: var(--size-4-2, 8px 0) 0 !important;
+  --metadata-property-background-active: #c9cbd1 !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #8a8980 !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #8a8980 !important;
+  --metadata-property-corner-shape: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape-focus: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
+  --modal-background: #e7dba0 !important;
+  --modal-border-color: #d5cea3 !important;
+  --modal-border-width: var(--border-width, 1px) !important;
+  --modal-radius: var(--radius-l, 12px) !important;
+  --nav-collapse-icon-color: #8a8980 !important;
+  --nav-collapse-icon-color-collapsed: #8a8980 !important;
+  --nav-heading-color: #545464 !important;
+  --nav-heading-color-collapsed: #716e61 !important;
+  --nav-heading-color-collapsed-hover: #545464 !important;
+  --nav-heading-color-hover: #545464 !important;
+  --nav-heading-weight: var(--font-medium, 500) !important;
+  --nav-heading-weight-hover: var(--font-medium, 500) !important;
+  --nav-indentation-guide-color: #8a8980 !important;
+  --nav-indentation-guide-width: var(--indentation-guide-width, 1px) !important;
+  --nav-item-background-active: #4e8ca2 !important;
+  --nav-item-background-hover: #c9cbd1 !important;
+  --nav-item-background-selected: red !important;
+  --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
+  --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
+  --nav-item-color: #545464 !important;
+  --nav-item-color-active: white !important;
+  --nav-item-color-highlighted: #d7474b !important;
+  --nav-item-color-hover: white !important;
+  --nav-item-color-selected: red !important;
+  --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6, 4px 8px 4px 24px) !important;
+  --nav-item-parent-padding: var(
+    --nav-item-padding,
+    4px 8px 4px 24px
+  ) !important;
+  --nav-item-radius: var(--radius-s, 4px) !important;
+  --nav-item-size: var(--font-ui-small, 13px) !important;
+  --nav-tag-color: #716e61 !important;
+  --nav-tag-color-active: #545464 !important;
+  --nav-tag-color-hover: #545464 !important;
+  --nav-tag-radius: var(--radius-s, 4px) !important;
+  --nav-tag-weight: var(--font-semibold, 600) !important;
+  --pdf-background: #f2ecbc !important;
+  --pdf-page-background: #f2ecbc !important;
+  --pdf-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-sidebar-background: #f2ecbc !important;
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pill-border-color: #d5cea3 !important;
   --pill-border-color-hover: #8a8980 !important;
-  --pill-border-width: 1px !important;
+  --pill-border-width: var(--border-width, 1px) !important;
   --pill-color: #545464 !important;
   --pill-color-hover: #545464 !important;
   --pill-color-remove: #716e61 !important;
+  --pill-color-remove-hover: hsl(196, 35%, 47%) !important;
+  --popover-font-size: var(--font-text-size, 16px) !important;
+  --prompt-background: #f2ecbc !important;
+  --prompt-border-color: #d5cea3 !important;
+  --prompt-border-width: var(--border-width, 1px) !important;
+  --raised-background: color-mix(in srgb, #f2ecbc 65%, transparent)
+    linear-gradient(#f2ecbc, color-mix(in srgb, #f2ecbc 65%, transparent)) !important;
+  --raised-blur: var(
+    --blur-s,
+    blur(6px) saturate(1.5) brightness(1.15)
+  ) !important;
+  --ribbon-background: #e7dba0 !important;
+  --ribbon-background-collapsed: #f2ecbc !important;
+  --ribbon-padding: var(--size-4-2) var(--size-4-1)
+    var(--size-4-3, 8px 4px 12px) !important;
+  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
+  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
+  --scrollbar-radius: var(--radius-l, 12px) !important;
+  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
+  --search-clear-button-color: #545464 !important;
+  --search-icon-color: #545464 !important;
+  --search-result-background: #f2ecbc !important;
+  --setting-group-heading-color: #545464 !important;
+  --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
+  --setting-group-heading-weight: var(--font-semibold, 600) !important;
+  --setting-items-background: var(--background-primary-alt, #fafafa) !important;
+  --setting-items-border-color: #d5cea3 !important;
+  --setting-items-padding: var(--size-4-5, 20px) !important;
+  --setting-items-radius: var(--radius-l, 12px) !important;
+  --shiki-active-tab-border-color: #545464 !important;
+  --shiki-code-background: #e7dba0 !important;
+  --shiki-code-block-border-radius: var(--code-radius, 4px) !important;
+  --shiki-code-block-spacing: var(--p-spacing, 1rem) !important;
+  --shiki-code-comment: #716e61 !important;
+  --shiki-code-function: #6f894e !important;
+  --shiki-code-important: #cc6d00 !important;
+  --shiki-code-keyword: #b35b79 !important;
+  --shiki-code-normal: #545464 !important;
+  --shiki-code-property: #6693bf !important;
+  --shiki-code-punctuation: #545464 !important;
+  --shiki-code-string: #de9800 !important;
+  --shiki-code-value: #624c83 !important;
+  --shiki-gutter-border-color: #d5cea3 !important;
+  --shiki-gutter-border-width: var(--border-width, 1px) !important;
+  --shiki-gutter-text-color: #716e61 !important;
+  --shiki-gutter-text-color-highlight: #545464 !important;
+  --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
+  --shiki-highlight-green-background: rgba(
+    var(--color-green-rgb),
+    0.1
+  ) !important;
+  --shiki-highlight-neutral: #545464 !important;
+  --shiki-highlight-neutral-background: rgba(
+    var(--mono-rgb-100),
+    0.05
+  ) !important;
+  --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
+  --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
+  --shiki-terminal-dots-color: #716e61 !important;
+  --shiki-tooltip-background: var(
+    --background-modifier-message,
+    rgba(0, 0, 0, 0.9)
+  ) !important;
+  --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9) !important;
+  --slider-thumb-border-color: var(
+    --background-modifier-border-hover,
+    #d4d4d4
+  ) !important;
+  --slider-thumb-border-width: var(--border-width, 1px) !important;
+  --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
+  --slider-track-background: #e7dba0 !important;
+  --status-bar-background: #e7dba0 !important;
+  --status-bar-border-color: #d5cea3 !important;
+  --status-bar-border-width: var(--border-width) 0 0
+    var(--border-width, 1px 0 0 1px) !important;
+  --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
+  --status-bar-radius: var(--radius-m, 8px 0 0 0) 0 0 0 !important;
+  --status-bar-text-color: #545464 !important;
+  --suggestion-background: #f2ecbc !important;
+  --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
+  --sync-avatar-color-1: #d7474b !important;
+  --sync-avatar-color-2: #cc6d00 !important;
+  --sync-avatar-color-3: #de9800 !important;
+  --sync-avatar-color-4: #6f894e !important;
+  --sync-avatar-color-5: #6693bf !important;
+  --sync-avatar-color-6: #4e8ca2 !important;
+  --sync-avatar-color-7: #624c83 !important;
+  --sync-avatar-color-8: #b35b79 !important;
+  --tab-background-active: #f2ecbc !important;
+  --tab-container-background: #e7dba0 !important;
+  --tab-divider-color: #c9cbd1 !important;
+  --tab-font-size: var(--font-ui-small, 13px) !important;
+  --tab-outline-color: #d5cea3 !important;
+  --tab-radius: var(--radius-s, 4px) !important;
+  --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
+  --tab-stacked-header-width: var(--header-height, 40px) !important;
+  --tab-switcher-background: #e7dba0 !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    #e7dba0,
+    transparent
+  ) !important;
+  --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(196, 35%, 47%) !important;
+  --tab-text-color: #d5cea3 !important;
+  --tab-text-color-active: #545464 !important;
+  --tab-text-color-focused: #545464 !important;
+  --tab-text-color-focused-active: #545464 !important;
+  --tab-text-color-focused-active-current: #545464 !important;
+  --tab-text-color-focused-highlighted: red !important;
+  --table-add-button-border-color: #d5cea3 !important;
+  --table-add-button-border-width: var(--table-border-width, 1px) !important;
+  --table-border-color: #d5cea3 !important;
+  --table-column-alt-background: var(
+    --table-background,
+    transparent
+  ) !important;
+  --table-column-first-border-width: var(--table-border-width, 1px) !important;
+  --table-column-last-border-width: var(--table-border-width, 1px) !important;
+  --table-drag-handle-background-active: #b35b79 !important;
+  --table-drag-handle-color: #c9cbd1 !important;
+  --table-drag-handle-color-active: #c9cbd1 !important;
+  --table-header-background: var(--table-background, transparent) !important;
+  --table-header-border-color: #d5cea3 !important;
+  --table-header-border-width: var(--table-border-width, 1px) !important;
+  --table-header-color: #545464 !important;
+  --table-header-size: var(--table-text-size, 16px) !important;
+  --table-header-weight: calc(
+    var(--font-weight) + var(--bold-modifier)
+  ) !important;
+  --table-line-height: var(--line-height-tight, 1.3) !important;
+  --table-row-alt-background: var(--table-background, transparent) !important;
+  --table-row-alt-background-hover: var(
+    --table-background,
+    transparent
+  ) !important;
+  --table-row-background-hover: var(--table-background, transparent) !important;
+  --table-row-last-border-width: var(--table-border-width, 1px) !important;
+  --table-selection: #c9cbd1 !important;
+  --table-selection-blend-mode: var(
+    --highlight-mix-blend-mode,
+    darken
+  ) !important;
+  --table-selection-border-color: #b35b79 !important;
+  --table-text-size: var(--font-text-size, 16px) !important;
+  --tag-background: #8a8980 !important;
+  --tag-background-hover: #716e61 !important;
+  --tag-border-color: hsla(196, 35%, 47%, 0.15) !important;
+  --tag-border-color-hover: hsla(196, 35%, 47%, 0.15) !important;
+  --tag-color: #4e8ca2 !important;
+  --tag-color-hover: #4e8ca2 !important;
+  --tag-size: var(--font-smaller, 0.875em) !important;
+  --text-accent: hsl(196, 35%, 47%) !important;
+  --text-accent-hover: red !important;
+  --text-error: #d7474b !important;
+  --text-faint: #716e61 !important;
+  --text-highlight-bg: hsl(196, 35%, 47%) !important;
+  --text-muted: #545464 !important;
+  --text-normal: #545464 !important;
+  --text-selection: #c9cbd1 !important;
+  --text-success: #6f894e !important;
+  --text-warning: #de9800 !important;
+  --titlebar-background: #e7dba0 !important;
+  --titlebar-background-focused: #d5cea3 !important;
+  --titlebar-border-color: #d5cea3 !important;
+  --titlebar-text-color: #545464 !important;
+  --titlebar-text-color-focused: #545464 !important;
+  --titlebar-text-weight: var(--font-bold, 700) !important;
+  --touch-radius-l: var(--touch-size-l, 52px) !important;
+  --touch-radius-m: var(--touch-size-m, 44px) !important;
+  --touch-radius-s: var(--touch-size-s, 40px) !important;
+  --touch-radius-xl: var(--touch-size-xl, 60px) !important;
+  --touch-radius-xs: var(--touch-size-xs, 30px) !important;
+  --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
+  --traffic-lights-offset-x: var(--header-height, 40px) !important;
+  --traffic-lights-offset-y: var(--header-height, 40px) !important;
+  --vault-profile-color: #545464 !important;
+  --vault-profile-color-hover: #545464 !important;
+  --vault-profile-font-size: var(--font-ui-small, 13px) !important;
+  --vault-profile-font-weight: var(--font-medium, 500) !important;
+  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
+  --input-height: 30px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
   --pill-focus-left-adjust: -4px !important;
   --pill-focus-width: calc(100% + 6px) !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 196 !important;
   --accent-l: 47% !important;
   --accent-s: 35% !important;
@@ -419,169 +990,50 @@ body.theme-light {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: red !important;
-  --background-modifier-border-focus: #8a8980 !important;
-  --background-modifier-border-hover: #8a8980 !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
   --background-modifier-cover: rgba(220, 220, 220, 0.4) !important;
-  --background-modifier-error: #d7474b !important;
-  --background-modifier-error-hover: #d7474b !important;
-  --background-modifier-error-rgb: 233, 49, 71 !important;
-  --background-modifier-form-field-hover: #e7dba0 !important;
-  --background-modifier-hover: #c9cbd1 !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
-  --background-modifier-success: #6f894e !important;
-  --background-modifier-success-rgb: 8, 185, 78 !important;
-  --background-primary: #f2ecbc !important;
-  --background-primary-alt: #fafafa !important;
-  --background-secondary: #e7dba0 !important;
-  --background-secondary-alt: #fcfcfc !important;
-  --bases-cards-background: #f2ecbc !important;
-  --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-corner-shape: round !important;
-  --bases-cards-cover-background: #fafafa !important;
-  --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
-  --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px #d5cea3 !important;
-  --bases-cards-shadow-hover: 0 0 0 1px #8a8980 !important;
-  --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: #545464 !important;
   --bases-group-heading-property-display: block !important;
-  --bases-group-heading-property-size: 12px !important;
-  --bases-group-heading-property-weight: 400 !important;
-  --bases-group-heading-value-size: 0.875em !important;
-  --bases-group-heading-value-weight: 600 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-cell-background-active: #f2ecbc !important;
-  --bases-table-cell-background-disabled: #fafafa !important;
-  --bases-table-cell-background-selected: #c9cbd1 !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px #8a8980 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(196, 35%, 47%) !important;
-  --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 4px !important;
-  --bases-table-container-border-width: 1px !important;
-  --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #fafafa !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-color: #545464 !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
-  --bases-table-header-weight: 400 !important;
-  --bases-table-row-background-hover: transparent !important;
-  --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: #f2ecbc !important;
-  --bases-table-summary-background-hover: #c9cbd1 !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: #4e8ca2 !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, #f2ecbc 65%, transparent)
-    linear-gradient(#f2ecbc, color-mix(in srgb, #f2ecbc 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
-  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
-  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
   --blur-opacity-m: 90% !important;
   --blur-opacity-s: 65% !important;
   --blur-radius-l: 16px !important;
   --blur-radius-m: 10px !important;
   --blur-radius-s: 6px !important;
-  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
   --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
-  --bold-weight: 600 !important;
   --border-width: 1px !important;
-  --button-corner-shape: round !important;
-  --button-radius: 5px !important;
-  --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: 233, 49, 71;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 8, 109, 221;
-  --callout-error: 233, 49, 71;
-  --callout-example: 120, 82, 238;
-  --callout-fail: 233, 49, 71;
-  --callout-important: 0, 191, 188;
-  --callout-info: 8, 109, 221;
-  --callout-padding: 12px 12px 12px 24px;
-  --callout-question: 236, 117, 0;
   --callout-quote: 158, 158, 158;
-  --callout-radius: 4px;
-  --callout-success: 8, 185, 78;
-  --callout-summary: 0, 191, 188;
-  --callout-tip: 0, 191, 188;
   --callout-title-padding: 0;
-  --callout-title-weight: 600;
-  --callout-todo: 8, 109, 221;
-  --callout-warning: 236, 117, 0;
-  --canvas-background: #f2ecbc !important;
-  --canvas-card-label-color: #716e61 !important;
   --canvas-color: 78, 140, 162 !important;
-  --canvas-color-1: 233, 49, 71 !important;
-  --canvas-color-2: 236, 117, 0 !important;
-  --canvas-color-3: 224, 172, 0 !important;
-  --canvas-color-4: 8, 185, 78 !important;
-  --canvas-color-5: 0, 191, 188 !important;
-  --canvas-color-6: 120, 82, 238 !important;
-  --canvas-controls-icon-size: 16px !important;
-  --canvas-controls-icon-stroke: 2px !important;
-  --canvas-controls-radius: 4px !important;
-  --canvas-dot-pattern: #e0e0e0 !important;
-  --caret-color: #545464 !important;
-  --checkbox-border-color: #716e61 !important;
-  --checkbox-border-color-hover: #b35b79 !important;
-  --checkbox-color: #4e8ca2 !important;
-  --checkbox-color-hover: #b35b79 !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: #f2ecbc !important;
-  --checkbox-radius: 4px !important;
-  --checkbox-size: 16px !important;
-  --checklist-done-color: #716e61 !important;
   --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 4px !important;
-  --code-background: #e7dba0 !important;
-  --code-border-color: #d5cea3 !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: #c9cbd1 !important;
-  --code-comment: #8a8980 !important;
-  --code-function: #de9800 !important;
-  --code-important: #de9800 !important;
-  --code-keyword: #624c83 !important;
-  --code-normal: #545464 !important;
-  --code-operator: #836f4a !important;
-  --code-property: #545464 !important;
-  --code-punctuation: #545464 !important;
-  --code-radius: 4px !important;
-  --code-size: 0.875em !important;
-  --code-string: #6f894e !important;
-  --code-tag: #d7474b !important;
-  --code-value: #b35b79 !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: #716e61 !important;
-  --collapse-icon-color-collapsed: hsl(196, 35%, 47%) !important;
-  --color-accent: hsl(196, 35%, 47%) !important;
-  --color-accent-1: hsl(195, 35.35%, 50.525%) !important;
-  --color-accent-2: hsl(193, 35.7%, 54.05%) !important;
-  --color-accent-hsl: 196, 35%, 47% !important;
   --color-base-00: #ffffff !important;
   --color-base-05: #fcfcfc !important;
   --color-base-10: #fafafa !important;
@@ -617,51 +1069,24 @@ body.theme-light {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: #d5cea3 !important;
-  --divider-color-hover: hsl(196, 35%, 47%) !important;
-  --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: #e7dba0 !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: #d5cea3 !important;
-  --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
-  --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-icon-inset: 0.5em !important;
   --dropdown-icon-width: 1em !important;
-  --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px #d5cea3, inset 0 0 0 1px #d5cea3 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid hsl(196, 35%, 47%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
-  --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
-  --file-header-background: #f2ecbc !important;
-  --file-header-background-focused: #f2ecbc !important;
-  --file-header-border: 1px solid transparent !important;
-  --file-header-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
-  --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: 32px 32px !important;
-  --file-margins-x: 32px !important;
-  --file-margins-y: 32px !important;
-  --flair-background: #e7dba0 !important;
-  --flair-color: #545464 !important;
-  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
   --font-default:
@@ -670,23 +1095,10 @@ body.theme-light {
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -694,16 +1106,11 @@ body.theme-light {
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "??", "??", "??", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -712,31 +1119,10 @@ body.theme-light {
   --font-ui-medium: 15px !important;
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
-  --font-weight: 400 !important;
-  --footnote-divider-color: #d5cea3 !important;
-  --footnote-divider-color-active: transparent !important;
-  --footnote-divider-width: 1px !important;
-  --footnote-gap: 4px !important;
-  --footnote-id-color: #545464 !important;
-  --footnote-id-color-no-occurrences: #716e61 !important;
   --footnote-id-delimiter: "." !important;
-  --footnote-input-background: transparent !important;
-  --footnote-input-background-active: #c9cbd1 !important;
-  --footnote-line-height: 1.5 !important;
-  --footnote-padding-block: 6px !important;
-  --footnote-padding-inline: 6px !important;
-  --footnote-radius: 4px !important;
-  --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: #8a8980 !important;
-  --graph-node: hsl(196, 35%, 47%) !important;
-  --graph-node-attachment: #4e8ca2 !important;
-  --graph-node-focused: #b35b79 !important;
-  --graph-node-tag: #d7474b !important;
-  --graph-node-unresolved: #d5cea3 !important;
-  --graph-text: #545464 !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.618em !important;
@@ -762,27 +1148,18 @@ body.theme-light {
   --h4-variant: normal !important;
   --h4-weight: 640 !important;
   --h5-letter-spacing: -0.002em !important;
-  --h5-line-height: 1.5 !important;
   --h5-size: 1.076em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 620 !important;
   --h6-letter-spacing: 0em !important;
-  --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: #716e61 !important;
-  --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: darken !important;
-  --hr-color: #8a8980 !important;
   --hr-thickness: 2px !important;
-  --icon-color: #545464 !important;
-  --icon-color-active: hsl(196, 35%, 47%) !important;
-  --icon-color-focused: #545464 !important;
-  --icon-color-hover: #545464 !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -798,25 +1175,10 @@ body.theme-light {
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: #8a8980 !important;
-  --indentation-guide-color-active: #716e61 !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
-  --indentation-guide-width: 1px !important;
-  --indentation-guide-width-active: 1px !important;
-  --inline-title-line-height: 1.2 !important;
   --inline-title-margin-bottom: 0.5em !important;
-  --inline-title-size: 1.618em !important;
-  --inline-title-style: normal !important;
-  --inline-title-variant: normal !important;
-  --inline-title-weight: 700 !important;
-  --input-corner-shape: round !important;
-  --input-date-separator: #716e61 !important;
-  --input-font-weight: 400 !important;
-  --input-icon-inset: 4px !important;
-  --input-padding: 4px 8px !important;
-  --input-placeholder-color: #716e61 !important;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
@@ -827,11 +1189,6 @@ body.theme-light {
     0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: hsl(196, 35%, 47%) !important;
-  --interactive-accent-hover: hsl(193, 35.7%, 54.05%) !important;
-  --interactive-accent-hsl: 196, 35%, 47% !important;
-  --interactive-hover: #d5cea3 !important;
-  --interactive-normal: #e7dba0 !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -845,169 +1202,76 @@ body.theme-light {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: #4e8ca2 !important;
-  --link-color-hover: #b35b79 !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: #4e8ca2 !important;
-  --link-external-color-hover: #b35b79 !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: hsl(258, 88%, 66%) !important;
-  --link-unresolved-decoration-color: hsla(196, 35%, 47%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
-  --link-weight: 400 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: 50% !important;
   --list-bullet-size: 0.3em !important;
   --list-bullet-transform: none !important;
-  --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: #4e8ca2 !important;
-  --list-marker-color-collapsed: hsl(196, 35%, 47%) !important;
-  --list-marker-color-hover: #545464 !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: #e7dba0 !important;
-  --menu-border-color: #8a8980 !important;
-  --menu-border-width: 1px !important;
-  --menu-corner-shape: round !important;
-  --menu-padding: 6px !important;
-  --menu-radius: 8px !important;
   --menu-scroll-mask: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.05) 0%,
     rgba(0, 0, 0, 0.1) 48px
   ) !important;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: #d5cea3 !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: #d5cea3 !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: #c9cbd1 !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
-  --metadata-input-font-size: 0.875em !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-padding: 4px 8px !important;
-  --metadata-input-text-color: #545464 !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: #c9cbd1 !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
-  --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: #545464 !important;
-  --metadata-label-text-color-hover: #545464 !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
-  --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: #c9cbd1 !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #8a8980 !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #8a8980 !important;
-  --metadata-property-corner-shape: round !important;
-  --metadata-property-corner-shape-focus: round !important;
-  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
   --metadata-property-radius-hover: 6px !important;
-  --metadata-sidebar-input-font-size: 13px !important;
-  --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: #e7dba0 !important;
-  --modal-border-color: #d5cea3 !important;
-  --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: 12px !important;
   --modal-shadow: none !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
-  --nav-collapse-icon-color: #8a8980 !important;
-  --nav-collapse-icon-color-collapsed: #8a8980 !important;
-  --nav-heading-color: #545464 !important;
-  --nav-heading-color-collapsed: #716e61 !important;
-  --nav-heading-color-collapsed-hover: #545464 !important;
-  --nav-heading-color-hover: #545464 !important;
-  --nav-heading-weight: 500 !important;
-  --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: #8a8980 !important;
-  --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: #4e8ca2 !important;
-  --nav-item-background-hover: #c9cbd1 !important;
-  --nav-item-background-selected: red !important;
-  --nav-item-children-margin-start: 12px !important;
-  --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: #545464 !important;
-  --nav-item-color-active: white !important;
-  --nav-item-color-highlighted: #d7474b !important;
-  --nav-item-color-hover: white !important;
-  --nav-item-color-selected: red !important;
-  --nav-item-margin-bottom: 2px !important;
-  --nav-item-padding: 4px 8px 4px 24px !important;
-  --nav-item-parent-padding: 4px 8px 4px 24px !important;
-  --nav-item-radius: 4px !important;
-  --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: #716e61 !important;
-  --nav-tag-color-active: #545464 !important;
-  --nav-tag-color-hover: #545464 !important;
-  --nav-tag-radius: 4px !important;
-  --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: #f2ecbc !important;
-  --pdf-page-background: #f2ecbc !important;
-  --pdf-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: #f2ecbc !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-color-remove-hover: hsl(196, 35%, 47%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
-  --popover-font-size: 16px !important;
   --popover-height: 400px !important;
   --popover-max-height: 95vh !important;
   --popover-pdf-height: 400px !important;
@@ -1015,9 +1279,6 @@ body.theme-light {
   --popover-width: 450px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
-  --prompt-background: #f2ecbc !important;
-  --prompt-border-color: #d5cea3 !important;
-  --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
@@ -1026,9 +1287,6 @@ body.theme-light {
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, #f2ecbc 65%, transparent)
-    linear-gradient(#f2ecbc, color-mix(in srgb, #f2ecbc 65%, transparent)) !important;
-  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
   --raised-mask:
     linear-gradient(white, white) padding-box,
     linear-gradient(white, white) border-box !important;
@@ -1042,72 +1300,29 @@ body.theme-light {
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
-  --ribbon-background: #e7dba0 !important;
-  --ribbon-background-collapsed: #f2ecbc !important;
-  --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2) !important;
-  --scrollbar-bg: rgba(0, 0, 0, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 12px !important;
-  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1) !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: #545464 !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: #545464 !important;
   --search-icon-size: 18px !important;
-  --search-result-background: #f2ecbc !important;
-  --setting-group-heading-color: #545464 !important;
-  --setting-group-heading-size: 15px !important;
-  --setting-group-heading-weight: 600 !important;
-  --setting-items-background: #fafafa !important;
-  --setting-items-border-color: #d5cea3 !important;
   --setting-items-border-width: 0 !important;
-  --setting-items-padding: 20px !important;
-  --setting-items-radius: 12px !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 15px 30px rgba(0, 0, 0, 0.1) !important;
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
-  --shiki-active-tab-border-color: #545464 !important;
   --shiki-active-tab-border-width: 2px !important;
-  --shiki-code-background: #e7dba0 !important;
   --shiki-code-block-border-color: transparent !important;
-  --shiki-code-block-border-radius: 4px !important;
   --shiki-code-block-border-width: 0px !important;
-  --shiki-code-block-spacing: 1rem !important;
-  --shiki-code-comment: #716e61 !important;
-  --shiki-code-function: #6f894e !important;
-  --shiki-code-important: #cc6d00 !important;
-  --shiki-code-keyword: #b35b79 !important;
-  --shiki-code-normal: #545464 !important;
-  --shiki-code-property: #6693bf !important;
-  --shiki-code-punctuation: #545464 !important;
-  --shiki-code-string: #de9800 !important;
-  --shiki-code-value: #624c83 !important;
-  --shiki-gutter-border-color: #d5cea3 !important;
-  --shiki-gutter-border-width: 1px !important;
-  --shiki-gutter-text-color: #716e61 !important;
-  --shiki-gutter-text-color-highlight: #545464 !important;
-  --shiki-highlight-green: rgba(8, 185, 78, 0.5) !important;
-  --shiki-highlight-green-background: rgba(8, 185, 78, 0.1) !important;
-  --shiki-highlight-neutral: #545464 !important;
-  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05) !important;
-  --shiki-highlight-red: rgba(233, 49, 71, 0.5) !important;
-  --shiki-highlight-red-background: rgba(233, 49, 71, 0.1) !important;
-  --shiki-terminal-dots-color: #716e61 !important;
-  --shiki-tooltip-background: rgba(0, 0, 0, 0.9) !important;
   --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --sidebar-right-toggle-inner-width: 8.33% !important;
   --sidebar-right-toggle-inner-width-open: 24% !important;
   --sidebar-tab-text-display: none !important;
@@ -1128,136 +1343,52 @@ body.theme-light {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: #d4d4d4 !important;
-  --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: #e7dba0 !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: #e7dba0 !important;
-  --status-bar-border-color: #d5cea3 !important;
-  --status-bar-border-width: 1px 0 0 1px !important;
-  --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
-  --status-bar-radius: 8px 0 0 0 !important;
-  --status-bar-text-color: #545464 !important;
   --suggestion-backdrop-filter: none !important;
-  --suggestion-background: #f2ecbc !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
-  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
   --swatch-width: 22px !important;
-  --sync-avatar-color-1: #d7474b !important;
-  --sync-avatar-color-2: #cc6d00 !important;
-  --sync-avatar-color-3: #de9800 !important;
-  --sync-avatar-color-4: #6f894e !important;
-  --sync-avatar-color-5: #6693bf !important;
-  --sync-avatar-color-6: #4e8ca2 !important;
-  --sync-avatar-color-7: #624c83 !important;
-  --sync-avatar-color-8: #b35b79 !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: #f2ecbc !important;
   --tab-curve: 6px !important;
-  --tab-divider-color: #c9cbd1 !important;
-  --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: #d5cea3 !important;
   --tab-outline-width: 1px !important;
-  --tab-radius: 4px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
-  --tab-stacked-font-size: 13px !important;
   --tab-stacked-font-weight: 400 !important;
-  --tab-stacked-header-width: 40px !important;
   --tab-stacked-pane-width: 700px !important;
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: #e7dba0 !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    #e7dba0,
-    transparent
-  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 16px !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(196, 35%, 47%) !important;
-  --tab-text-color: #d5cea3 !important;
-  --tab-text-color-active: #545464 !important;
-  --tab-text-color-focused: #545464 !important;
-  --tab-text-color-focused-active: #545464 !important;
-  --tab-text-color-focused-active-current: #545464 !important;
-  --tab-text-color-focused-highlighted: red !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: #d5cea3 !important;
-  --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
-  --table-column-alt-background: transparent !important;
-  --table-column-first-border-width: 1px !important;
-  --table-column-last-border-width: 1px !important;
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: #b35b79 !important;
-  --table-drag-handle-color: #c9cbd1 !important;
-  --table-drag-handle-color-active: #c9cbd1 !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: transparent !important;
-  --table-header-border-color: #d5cea3 !important;
-  --table-header-border-width: 1px !important;
-  --table-header-color: #545464 !important;
-  --table-header-size: 16px !important;
-  --table-header-weight: 600 !important;
-  --table-line-height: 1.3 !important;
-  --table-row-alt-background: transparent !important;
-  --table-row-alt-background-hover: transparent !important;
-  --table-row-background-hover: transparent !important;
-  --table-row-last-border-width: 1px !important;
-  --table-selection: #c9cbd1 !important;
-  --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: #b35b79 !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
-  --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: #8a8980 !important;
-  --tag-background-hover: #716e61 !important;
-  --tag-border-color: hsla(196, 35%, 47%, 0.15) !important;
-  --tag-border-color-hover: hsla(196, 35%, 47%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: #4e8ca2 !important;
-  --tag-color-hover: #4e8ca2 !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
-  --tag-size: 0.875em !important;
-  --text-accent-hover: red !important;
-  --text-error: #d7474b !important;
-  --text-highlight-bg: hsl(196, 35%, 47%) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: #545464 !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: #f2ecbc !important;
-  --text-selection: #c9cbd1 !important;
-  --text-success: #6f894e !important;
-  --text-warning: #de9800 !important;
-  --titlebar-background-focused: #d5cea3 !important;
-  --titlebar-border-color: #d5cea3 !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: #545464 !important;
-  --titlebar-text-color-focused: #545464 !important;
-  --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
   --toggle-s-border-width: 2px !important;
@@ -1269,39 +1400,29 @@ body.theme-light {
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
-  --touch-radius-l: 52px !important;
-  --touch-radius-m: 44px !important;
-  --touch-radius-s: 40px !important;
-  --touch-radius-xl: 60px !important;
-  --touch-radius-xs: 30px !important;
-  --touch-radius-xxs: 24px !important;
   --touch-size-l: 52px !important;
   --touch-size-m: 44px !important;
   --touch-size-s: 40px !important;
   --touch-size-xl: 60px !important;
   --touch-size-xs: 30px !important;
   --touch-size-xxs: 24px !important;
-  --traffic-lights-offset-x: 40px !important;
-  --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: #545464 !important;
-  --vault-profile-color-hover: #545464 !important;
   --vault-profile-display: flex !important;
-  --vault-profile-font-size: 13px !important;
-  --vault-profile-font-weight: 500 !important;
   --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
-  --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --raised-shadow:
-    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    0 0 transparent !important;
-  --shadow-edges: 0 0 transparent !important;
+  --raised-shadow: var(
+    --shadow-xs,
+    0 1px 6px rgba(0, 0, 0, 0.015),
+    0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent
+  ) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    0 0 transparent !important;
+    var(--shadow-edges) !important;
+  --shadow-edges: 0 0 transparent !important;
   --h1-color: #624c83 !important;
   --h2-color: #4e8ca2 !important;
   --h3-color: #6f894e !important;
@@ -1372,36 +1493,608 @@ body.theme-light {
 }
 
 body.theme-dark {
+  --background-modifier-active-hover: red !important;
+  --background-modifier-border: #363646 !important;
+  --background-modifier-border-focus: #54546d !important;
+  --background-modifier-border-hover: #54546d !important;
+  --background-modifier-error: #e46876 !important;
+  --background-modifier-error-hover: #e46876 !important;
+  --background-modifier-error-rgb: var(--color-red-rgb, 251, 70, 76) !important;
+  --background-modifier-form-field: #2a2a37 !important;
+  --background-modifier-form-field-hover: #2a2a37 !important;
+  --background-modifier-hover: #223249 !important;
+  --background-modifier-success: #98bb6c !important;
+  --background-modifier-success-rgb: var(
+    --color-green-rgb,
+    68,
+    207,
+    110
+  ) !important;
+  --background-primary: #1f1f28 !important;
+  --background-primary-alt: var(--color-base-10, #242424) !important;
+  --background-secondary: #2a2a37 !important;
+  --background-secondary-alt: var(--color-base-30, #363636) !important;
+  --bases-cards-background: #1f1f28 !important;
+  --bases-cards-border-width: var(--border-width, 1px) !important;
+  --bases-cards-corner-shape: var(--corner-shape, round) !important;
+  --bases-cards-cover-background: var(
+    --background-primary-alt,
+    #242424
+  ) !important;
+  --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-cards-radius: var(--radius-m, 8px) !important;
+  --bases-cards-shadow: 0 0 0 1px #363646 !important;
+  --bases-cards-shadow-hover: 0 0 0 1px #54546d !important;
   --bases-embed-border-color: #363646 !important;
+  --bases-embed-border-radius: var(--radius-s, 4px) !important;
+  --bases-group-heading-property-color: #dcd7ba !important;
+  --bases-group-heading-property-size: var(--font-ui-smaller, 12px) !important;
+  --bases-group-heading-property-weight: var(--font-normal, 400) !important;
+  --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
+  --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
+  --bases-header-border-width: 0 0 var(--border-width) 0 !important;
   --bases-table-border-color: #363646 !important;
+  --bases-table-cell-background-active: #1f1f28 !important;
+  --bases-table-cell-background-disabled: var(
+    --background-primary-alt,
+    #242424
+  ) !important;
+  --bases-table-cell-background-selected: #223249 !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #54546d !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(220, 54%, 67%) !important;
+  --bases-table-column-border-width: var(--border-width, 1px) !important;
+  --bases-table-container-border-radius: var(--radius-s, 4px) !important;
+  --bases-table-container-border-width: var(--border-width, 1px) !important;
+  --bases-table-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-table-group-background: var(
+    --background-primary-alt,
+    #242424
+  ) !important;
   --bases-table-header-background: #1f1f28 !important;
   --bases-table-header-background-hover: #223249 !important;
-  --focus-ring-color: #0df !important;
-  --tab-container-background: #2a2a37 !important;
-  --table-border-color: #363646 !important;
-  --text-accent: hsl(220, 54%, 67%) !important;
-  --text-faint: #54546d !important;
-  --text-normal: #dcd7ba !important;
-  --titlebar-background: #2a2a37 !important;
-  --input-height: 30px !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
-  --input-radius: 5px !important;
-  --background-modifier-border: #363646 !important;
-  --background-modifier-form-field: #2a2a37 !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
+  --bases-table-header-color: #dcd7ba !important;
+  --bases-table-header-sort-mask: linear-gradient(
+    to left,
+    transparent var(--size-4-6),
+    black var(--size-4-6)
+  ) !important;
+  --bases-table-header-weight: var(--font-weight, 400) !important;
+  --bases-table-row-background-hover: var(
+    --table-row-background-hover,
+    transparent
+  ) !important;
+  --bases-table-row-border-width: var(--border-width, 1px) !important;
+  --bases-table-summary-background: #1f1f28 !important;
+  --bases-table-summary-background-hover: #223249 !important;
+  --blockquote-border-color: #7e9cd8 !important;
+  --blur-background: color-mix(in srgb, #2a2a37 65%, transparent)
+    linear-gradient(#2a2a37, color-mix(in srgb, #2a2a37 65%, transparent)) !important;
+  --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation))
+    brightness(var(--blur-brightness)) !important;
+  --blur-m: blur(var(--blur-radius-m)) saturate(var(--blur-saturation))
+    brightness(var(--blur-brightness)) !important;
+  --blur-s: blur(var(--blur-radius-s)) saturate(var(--blur-saturation))
+    brightness(var(--blur-brightness)) !important;
+  --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
+  --button-corner-shape: var(--corner-shape, round) !important;
+  --button-radius: var(--input-radius, 5px) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode, lighten);
+  --callout-bug: var(--color-red-rgb, 251, 70, 76);
+  --callout-default: var(--color-blue-rgb, 2, 122, 255);
+  --callout-error: var(--color-red-rgb, 251, 70, 76);
+  --callout-example: var(--color-purple-rgb, 168, 130, 255);
+  --callout-fail: var(--color-red-rgb, 251, 70, 76);
+  --callout-important: var(--color-cyan-rgb, 83, 223, 221);
+  --callout-info: var(--color-blue-rgb, 2, 122, 255);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6, 12px 12px 12px 24px);
+  --callout-question: var(--color-orange-rgb, 233, 151, 63);
+  --callout-radius: var(--radius-s, 4px);
+  --callout-success: var(--color-green-rgb, 68, 207, 110);
+  --callout-summary: var(--color-cyan-rgb, 83, 223, 221);
+  --callout-tip: var(--color-cyan-rgb, 83, 223, 221);
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb, 2, 122, 255);
+  --callout-warning: var(--color-orange-rgb, 233, 151, 63);
+  --canvas-background: #1f1f28 !important;
+  --canvas-card-label-color: #54546d !important;
+  --canvas-color-1: var(--color-red-rgb, 251, 70, 76) !important;
+  --canvas-color-2: var(--color-orange-rgb, 233, 151, 63) !important;
+  --canvas-color-3: var(--color-yellow-rgb, 224, 222, 113) !important;
+  --canvas-color-4: var(--color-green-rgb, 68, 207, 110) !important;
+  --canvas-color-5: var(--color-cyan-rgb, 83, 223, 221) !important;
+  --canvas-color-6: var(--color-purple-rgb, 168, 130, 255) !important;
+  --canvas-controls-icon-size: var(--icon-s, 16px) !important;
+  --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
+  --canvas-controls-radius: var(--radius-s, 4px) !important;
+  --canvas-dot-pattern: var(--color-base-30, #363636) !important;
+  --caret-color: #dcd7ba !important;
+  --checkbox-border-color: #54546d !important;
+  --checkbox-border-color-hover: #9cabca !important;
+  --checkbox-color: #7e9cd8 !important;
+  --checkbox-color-hover: #9cabca !important;
+  --checkbox-marker-color: #1f1f28 !important;
+  --checkbox-radius: var(--radius-s, 4px) !important;
+  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checklist-done-color: #54546d !important;
+  --clickable-icon-radius: var(--radius-s, 4px) !important;
+  --code-background: #2a2a37 !important;
+  --code-border-color: #363646 !important;
+  --code-bracket-background: #223249 !important;
+  --code-comment: #727169 !important;
+  --code-function: #e6c384 !important;
+  --code-important: #e6c384 !important;
+  --code-keyword: #957fb8 !important;
+  --code-normal: #dcd7ba !important;
+  --code-operator: #c0a36e !important;
+  --code-property: #e6c384 !important;
+  --code-punctuation: #dcd7ba !important;
+  --code-radius: var(--radius-s, 4px) !important;
+  --code-size: var(--font-smaller, 0.875em) !important;
+  --code-string: #98bb6c !important;
+  --code-tag: #e46876 !important;
+  --code-value: #d27e99 !important;
+  --collapse-icon-color: #54546d !important;
+  --collapse-icon-color-collapsed: hsl(220, 54%, 67%) !important;
+  --color-accent: hsl(220, 54%, 67%) !important;
+  --color-accent-1: hsl(217, 55.08%, 77.05%) !important;
+  --color-accent-2: hsl(215, 56.7%, 86.43%) !important;
+  --color-accent-hsl: 220, 54%, 67% !important;
+  --divider-color: #363646 !important;
+  --divider-color-hover: hsl(220, 54%, 67%) !important;
+  --divider-vertical-height: calc(100% - var(--header-height)) !important;
+  --dropdown-background: #2a2a37 !important;
+  --dropdown-background-hover: #363646 !important;
+  --dropdown-background-position:
+    var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
+  --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
+  --dropdown-padding: 0 var(--dropdown-padding-end) 0
+    var(--dropdown-padding-start) !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px #363646, inset 0 0 0 1px #363646 !important;
+  --embed-border-start: 2px solid hsl(220, 54%, 67%) !important;
+  --embed-padding: 0 0 0 var(--size-4-6) !important;
+  --file-header-background: #1f1f28 !important;
+  --file-header-background-focused: #1f1f28 !important;
+  --file-header-border: var(--border-width, 1px solid transparent) solid
+    transparent !important;
+  --file-header-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  ) !important;
+  --file-header-font-size: var(--font-ui-small, 13px) !important;
+  --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
+  --file-margins-x: var(--size-4-8, 32px) !important;
+  --file-margins-y: var(--size-4-8, 32px) !important;
+  --flair-background: #2a2a37 !important;
+  --flair-color: #dcd7ba !important;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
+  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
+    var(--default-font, "??"), var(--font-default) !important;
+  --font-mermaid: var(
+    --font-text,
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  ) !important;
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
+    var(--font-monospace-default) !important;
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial" !important;
+  --font-text:
+    var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
+  --font-weight: var(--font-normal, 400) !important;
+  --footnote-divider-color: #363646 !important;
+  --footnote-divider-color-active: var(
+    --metadata-divider-color-focus,
+    transparent
+  ) !important;
+  --footnote-divider-width: var(--border-width, 1px) !important;
+  --footnote-gap: var(--size-4-1, 4px) !important;
+  --footnote-id-color: #dcd7ba !important;
+  --footnote-id-color-no-occurrences: #54546d !important;
+  --footnote-input-background: var(
+    --metadata-input-background,
+    transparent
+  ) !important;
+  --footnote-input-background-active: #223249 !important;
+  --footnote-line-height: var(--line-height-normal, 1.5) !important;
+  --footnote-padding-block: var(--size-2-3, 6px) !important;
+  --footnote-padding-inline: var(--size-2-3, 6px) !important;
+  --footnote-radius: var(--radius-s, 4px) !important;
+  --footnote-size: var(--font-smaller, 0.875em) !important;
+  --graph-line: #54546d !important;
+  --graph-node: hsl(220, 54%, 67%) !important;
+  --graph-node-attachment: #7e9cd8 !important;
+  --graph-node-focused: #9cabca !important;
+  --graph-node-tag: #d27e99 !important;
+  --graph-node-unresolved: #363646 !important;
+  --graph-text: #dcd7ba !important;
+  --h5-line-height: var(--line-height-normal, 1.5) !important;
+  --h6-line-height: var(--line-height-normal, 1.5) !important;
+  --heading-formatting: #54546d !important;
+  --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
+  --hr-color: #363646 !important;
+  --icon-color: #dcd7ba !important;
+  --icon-color-active: hsl(220, 54%, 67%) !important;
+  --icon-color-focused: #dcd7ba !important;
+  --icon-color-hover: #dcd7ba !important;
+  --icon-size: var(--icon-m, 18px) !important;
+  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --indentation-guide-color: #363646 !important;
+  --indentation-guide-color-active: #54546d !important;
+  --indentation-guide-width: var(--border-width, 1px) !important;
+  --indentation-guide-width-active: var(--border-width, 1px) !important;
+  --inline-title-line-height: var(--h1-line-height, 1.2) !important;
+  --inline-title-size: var(--h1-size, 1.618em) !important;
+  --inline-title-style: var(--h1-style, normal) !important;
+  --inline-title-variant: var(--h1-variant, normal) !important;
+  --inline-title-weight: var(--h1-weight, 700) !important;
+  --input-border-width: var(--border-width, 1px) !important;
+  --input-corner-shape: var(--corner-shape, round) !important;
+  --input-date-separator: #54546d !important;
+  --input-font-weight: var(--font-normal, 400) !important;
+  --input-icon-inset: var(--size-4-1, 4px) !important;
+  --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --input-placeholder-color: #54546d !important;
+  --interactive-accent: hsl(220, 54%, 67%) !important;
+  --interactive-accent-hover: hsl(217, 55.08%, 77.05%) !important;
+  --interactive-accent-hsl: 220, 54%, 67% !important;
+  --interactive-hover: #363646 !important;
+  --interactive-normal: #2a2a37 !important;
+  --link-color: #7e9cd8 !important;
+  --link-color-hover: #9cabca !important;
+  --link-external-color: #7e9cd8 !important;
+  --link-external-color-hover: #9cabca !important;
+  --link-unresolved-color: var(
+    --text-accent,
+    hsl(255, 89.76%, 75.9%)
+  ) !important;
+  --link-unresolved-decoration-color: hsla(220, 54%, 67%, 0.3) !important;
+  --link-weight: var(--font-weight, 400) !important;
+  --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
+  --list-marker-color: #7e9cd8 !important;
+  --list-marker-color-collapsed: hsl(220, 54%, 67%) !important;
+  --list-marker-color-hover: #dcd7ba !important;
+  --menu-background: #2a2a37 !important;
+  --menu-border-color: #54546d !important;
+  --menu-border-width: var(--border-width, 1px) !important;
+  --menu-corner-shape: var(--corner-shape, round) !important;
+  --menu-padding: var(--size-2-3, 6px) !important;
+  --menu-radius: var(--radius-m, 8px) !important;
+  --menu-shadow: var(
+    --shadow-s,
+    0px 1px 2px rgba(0, 0, 0, 0.121),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3)
+  ) !important;
+  --metadata-border-color: #363646 !important;
+  --metadata-divider-color: #363646 !important;
+  --metadata-input-background-active: #223249 !important;
+  --metadata-input-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  ) !important;
+  --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
+  --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --metadata-input-text-color: #dcd7ba !important;
+  --metadata-label-background-active: #223249 !important;
+  --metadata-label-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  ) !important;
+  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-label-text-color: #dcd7ba !important;
+  --metadata-label-text-color-hover: #dcd7ba !important;
+  --metadata-padding: var(--size-4-2, 8px 0) 0 !important;
+  --metadata-property-background-active: #223249 !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #54546d !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #54546d !important;
+  --metadata-property-corner-shape: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape-focus: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
+  --modal-background: #2a2a37 !important;
+  --modal-border-color: #363646 !important;
+  --modal-border-width: var(--border-width, 1px) !important;
+  --modal-radius: var(--radius-l, 12px) !important;
+  --nav-collapse-icon-color: #54546d !important;
+  --nav-collapse-icon-color-collapsed: #54546d !important;
+  --nav-heading-color: #dcd7ba !important;
+  --nav-heading-color-collapsed: #54546d !important;
+  --nav-heading-color-collapsed-hover: #dcd7ba !important;
+  --nav-heading-color-hover: #dcd7ba !important;
+  --nav-heading-weight: var(--font-medium, 500) !important;
+  --nav-heading-weight-hover: var(--font-medium, 500) !important;
+  --nav-indentation-guide-color: #54546d !important;
+  --nav-indentation-guide-width: var(--indentation-guide-width, 1px) !important;
+  --nav-item-background-active: #7e9cd8 !important;
+  --nav-item-background-hover: #223249 !important;
+  --nav-item-background-selected: red !important;
+  --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
+  --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
+  --nav-item-color: #dcd7ba !important;
+  --nav-item-color-active: white !important;
+  --nav-item-color-highlighted: #d27e99 !important;
+  --nav-item-color-hover: white !important;
+  --nav-item-color-selected: red !important;
+  --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6, 4px 8px 4px 24px) !important;
+  --nav-item-parent-padding: var(
+    --nav-item-padding,
+    4px 8px 4px 24px
+  ) !important;
+  --nav-item-radius: var(--radius-s, 4px) !important;
+  --nav-item-size: var(--font-ui-small, 13px) !important;
+  --nav-tag-color: #54546d !important;
+  --nav-tag-color-active: #dcd7ba !important;
+  --nav-tag-color-hover: #dcd7ba !important;
+  --nav-tag-radius: var(--radius-s, 4px) !important;
+  --nav-tag-weight: var(--font-semibold, 600) !important;
+  --pdf-background: #1f1f28 !important;
+  --pdf-page-background: #1f1f28 !important;
+  --pdf-shadow: 0 0 0 1px #363646 !important;
+  --pdf-sidebar-background: #1f1f28 !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px #363646 !important;
   --pill-border-color: #363646 !important;
   --pill-border-color-hover: #54546d !important;
-  --pill-border-width: 1px !important;
+  --pill-border-width: var(--border-width, 1px) !important;
   --pill-color: #dcd7ba !important;
   --pill-color-hover: #dcd7ba !important;
   --pill-color-remove: #54546d !important;
+  --pill-color-remove-hover: hsl(220, 54%, 67%) !important;
+  --popover-font-size: var(--font-text-size, 16px) !important;
+  --prompt-background: #1f1f28 !important;
+  --prompt-border-color: #363646 !important;
+  --prompt-border-width: var(--border-width, 1px) !important;
+  --raised-background: color-mix(in srgb, #2a2a37 65%, transparent)
+    linear-gradient(#2a2a37, color-mix(in srgb, #2a2a37 65%, transparent)) !important;
+  --raised-blur: var(
+    --blur-s,
+    blur(6px) saturate(1.5) brightness(1.15)
+  ) !important;
+  --ribbon-background: #2a2a37 !important;
+  --ribbon-background-collapsed: #1f1f28 !important;
+  --ribbon-padding: var(--size-4-2) var(--size-4-1)
+    var(--size-4-3, 8px 4px 12px) !important;
+  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
+  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
+  --scrollbar-radius: var(--radius-l, 12px) !important;
+  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
+  --search-clear-button-color: #dcd7ba !important;
+  --search-icon-color: #dcd7ba !important;
+  --search-result-background: #1f1f28 !important;
+  --setting-group-heading-color: #dcd7ba !important;
+  --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
+  --setting-group-heading-weight: var(--font-semibold, 600) !important;
+  --setting-items-background: var(--background-primary-alt, #242424) !important;
+  --setting-items-border-color: #363646 !important;
+  --setting-items-padding: var(--size-4-5, 20px) !important;
+  --setting-items-radius: var(--radius-l, 12px) !important;
+  --shiki-active-tab-border-color: #dcd7ba !important;
+  --shiki-code-background: #2a2a37 !important;
+  --shiki-code-block-border-radius: var(--code-radius, 4px) !important;
+  --shiki-code-block-spacing: var(--p-spacing, 1rem) !important;
+  --shiki-code-comment: #54546d !important;
+  --shiki-code-function: #98bb6c !important;
+  --shiki-code-important: #ffa066 !important;
+  --shiki-code-keyword: #d27e99 !important;
+  --shiki-code-normal: #dcd7ba !important;
+  --shiki-code-property: #7e9cd8 !important;
+  --shiki-code-punctuation: #dcd7ba !important;
+  --shiki-code-string: #e6c384 !important;
+  --shiki-code-value: #957fb8 !important;
+  --shiki-gutter-border-color: #363646 !important;
+  --shiki-gutter-border-width: var(--border-width, 1px) !important;
+  --shiki-gutter-text-color: #54546d !important;
+  --shiki-gutter-text-color-highlight: #dcd7ba !important;
+  --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
+  --shiki-highlight-green-background: rgba(
+    var(--color-green-rgb),
+    0.1
+  ) !important;
+  --shiki-highlight-neutral: #dcd7ba !important;
+  --shiki-highlight-neutral-background: rgba(
+    var(--mono-rgb-100),
+    0.05
+  ) !important;
+  --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
+  --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
+  --shiki-terminal-dots-color: #54546d !important;
+  --shiki-tooltip-background: var(
+    --background-modifier-message,
+    rgba(0, 0, 0, 0.9)
+  ) !important;
+  --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9) !important;
+  --slider-thumb-border-color: var(
+    --background-modifier-border-hover,
+    #3f3f3f
+  ) !important;
+  --slider-thumb-border-width: var(--border-width, 1px) !important;
+  --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
+  --slider-track-background: #2a2a37 !important;
+  --status-bar-background: #2a2a37 !important;
+  --status-bar-border-color: #363646 !important;
+  --status-bar-border-width: var(--border-width) 0 0
+    var(--border-width, 1px 0 0 1px) !important;
+  --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
+  --status-bar-radius: var(--radius-m, 8px 0 0 0) 0 0 0 !important;
+  --status-bar-text-color: #dcd7ba !important;
+  --suggestion-background: #1f1f28 !important;
+  --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
+  --sync-avatar-color-1: #e46876 !important;
+  --sync-avatar-color-2: #ffa066 !important;
+  --sync-avatar-color-3: #e6c384 !important;
+  --sync-avatar-color-4: #98bb6c !important;
+  --sync-avatar-color-5: #7e9cd8 !important;
+  --sync-avatar-color-6: #7e9cd8 !important;
+  --sync-avatar-color-7: #957fb8 !important;
+  --sync-avatar-color-8: #d27e99 !important;
+  --tab-background-active: #1f1f28 !important;
+  --tab-container-background: #2a2a37 !important;
+  --tab-divider-color: #223249 !important;
+  --tab-font-size: var(--font-ui-small, 13px) !important;
+  --tab-outline-color: #363646 !important;
+  --tab-radius: var(--radius-s, 4px) !important;
+  --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
+  --tab-stacked-header-width: var(--header-height, 40px) !important;
+  --tab-switcher-background: #2a2a37 !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    #2a2a37,
+    transparent
+  ) !important;
+  --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(220, 54%, 67%) !important;
+  --tab-text-color: #363646 !important;
+  --tab-text-color-active: #dcd7ba !important;
+  --tab-text-color-focused: #dcd7ba !important;
+  --tab-text-color-focused-active: #dcd7ba !important;
+  --tab-text-color-focused-active-current: white !important;
+  --tab-text-color-focused-highlighted: red !important;
+  --table-add-button-border-color: #363646 !important;
+  --table-add-button-border-width: var(--table-border-width, 1px) !important;
+  --table-border-color: #363646 !important;
+  --table-column-alt-background: var(
+    --table-background,
+    transparent
+  ) !important;
+  --table-column-first-border-width: var(--table-border-width, 1px) !important;
+  --table-column-last-border-width: var(--table-border-width, 1px) !important;
+  --table-drag-handle-background-active: #9cabca !important;
+  --table-drag-handle-color: #223249 !important;
+  --table-drag-handle-color-active: #223249 !important;
+  --table-header-background: var(--table-background, transparent) !important;
+  --table-header-border-color: #363646 !important;
+  --table-header-border-width: var(--table-border-width, 1px) !important;
+  --table-header-color: #dcd7ba !important;
+  --table-header-size: var(--table-text-size, 16px) !important;
+  --table-header-weight: calc(
+    var(--font-weight) + var(--bold-modifier)
+  ) !important;
+  --table-line-height: var(--line-height-tight, 1.3) !important;
+  --table-row-alt-background: var(--table-background, transparent) !important;
+  --table-row-alt-background-hover: var(
+    --table-background,
+    transparent
+  ) !important;
+  --table-row-background-hover: var(--table-background, transparent) !important;
+  --table-row-last-border-width: var(--table-border-width, 1px) !important;
+  --table-selection: #223249 !important;
+  --table-selection-blend-mode: var(
+    --highlight-mix-blend-mode,
+    lighten
+  ) !important;
+  --table-selection-border-color: #9cabca !important;
+  --table-text-size: var(--font-text-size, 16px) !important;
+  --tag-background: #363646 !important;
+  --tag-background-hover: #54546d !important;
+  --tag-border-color: hsla(220, 54%, 67%, 0.15) !important;
+  --tag-border-color-hover: hsla(220, 54%, 67%, 0.15) !important;
+  --tag-color: #7e9cd8 !important;
+  --tag-color-hover: #7e9cd8 !important;
+  --tag-size: var(--font-smaller, 0.875em) !important;
+  --text-accent: hsl(220, 54%, 67%) !important;
+  --text-accent-hover: red !important;
+  --text-error: #e46876 !important;
+  --text-faint: #54546d !important;
+  --text-highlight-bg: hsl(220, 54%, 67%) !important;
+  --text-muted: #dcd7ba !important;
+  --text-normal: #dcd7ba !important;
+  --text-selection: #223249 !important;
+  --text-success: #98bb6c !important;
+  --text-warning: #e6c384 !important;
+  --titlebar-background: #2a2a37 !important;
+  --titlebar-background-focused: #363646 !important;
+  --titlebar-border-color: #363646 !important;
+  --titlebar-text-color: #dcd7ba !important;
+  --titlebar-text-color-focused: #dcd7ba !important;
+  --titlebar-text-weight: var(--font-bold, 700) !important;
+  --touch-radius-l: var(--touch-size-l, 52px) !important;
+  --touch-radius-m: var(--touch-size-m, 44px) !important;
+  --touch-radius-s: var(--touch-size-s, 40px) !important;
+  --touch-radius-xl: var(--touch-size-xl, 60px) !important;
+  --touch-radius-xs: var(--touch-size-xs, 30px) !important;
+  --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
+  --traffic-lights-offset-x: var(--header-height, 40px) !important;
+  --traffic-lights-offset-y: var(--header-height, 40px) !important;
+  --vault-profile-color: #dcd7ba !important;
+  --vault-profile-color-hover: #dcd7ba !important;
+  --vault-profile-font-size: var(--font-ui-small, 13px) !important;
+  --vault-profile-font-weight: var(--font-medium, 500) !important;
+  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
+  --input-height: 30px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
   --pill-focus-left-adjust: -4px !important;
   --pill-focus-width: calc(100% + 6px) !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 220 !important;
   --accent-l: 67% !important;
   --accent-s: 54% !important;
@@ -1414,169 +2107,50 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: red !important;
-  --background-modifier-border-focus: #54546d !important;
-  --background-modifier-border-hover: #54546d !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
-  --background-modifier-error: #e46876 !important;
-  --background-modifier-error-hover: #e46876 !important;
-  --background-modifier-error-rgb: 251, 70, 76 !important;
-  --background-modifier-form-field-hover: #2a2a37 !important;
-  --background-modifier-hover: #223249 !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
-  --background-modifier-success: #98bb6c !important;
-  --background-modifier-success-rgb: 68, 207, 110 !important;
-  --background-primary: #1f1f28 !important;
-  --background-primary-alt: #242424 !important;
-  --background-secondary: #2a2a37 !important;
-  --background-secondary-alt: #363636 !important;
-  --bases-cards-background: #1f1f28 !important;
-  --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-corner-shape: round !important;
-  --bases-cards-cover-background: #242424 !important;
-  --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
-  --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px #363646 !important;
-  --bases-cards-shadow-hover: 0 0 0 1px #54546d !important;
-  --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: #dcd7ba !important;
   --bases-group-heading-property-display: block !important;
-  --bases-group-heading-property-size: 12px !important;
-  --bases-group-heading-property-weight: 400 !important;
-  --bases-group-heading-value-size: 0.875em !important;
-  --bases-group-heading-value-weight: 600 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-cell-background-active: #1f1f28 !important;
-  --bases-table-cell-background-disabled: #242424 !important;
-  --bases-table-cell-background-selected: #223249 !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px #54546d !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(220, 54%, 67%) !important;
-  --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 4px !important;
-  --bases-table-container-border-width: 1px !important;
-  --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #242424 !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-color: #dcd7ba !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
-  --bases-table-header-weight: 400 !important;
-  --bases-table-row-background-hover: transparent !important;
-  --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: #1f1f28 !important;
-  --bases-table-summary-background-hover: #223249 !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: #7e9cd8 !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, #2a2a37 65%, transparent)
-    linear-gradient(#2a2a37, color-mix(in srgb, #2a2a37 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
-  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
-  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
   --blur-opacity-m: 90% !important;
   --blur-opacity-s: 65% !important;
   --blur-radius-l: 16px !important;
   --blur-radius-m: 10px !important;
   --blur-radius-s: 6px !important;
-  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
   --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
-  --bold-weight: 600 !important;
   --border-width: 1px !important;
-  --button-corner-shape: round !important;
-  --button-radius: 5px !important;
-  --callout-blend-mode: lighten;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: 251, 70, 76;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 2, 122, 255;
-  --callout-error: 251, 70, 76;
-  --callout-example: 168, 130, 255;
-  --callout-fail: 251, 70, 76;
-  --callout-important: 83, 223, 221;
-  --callout-info: 2, 122, 255;
-  --callout-padding: 12px 12px 12px 24px;
-  --callout-question: 233, 151, 63;
   --callout-quote: 158, 158, 158;
-  --callout-radius: 4px;
-  --callout-success: 68, 207, 110;
-  --callout-summary: 83, 223, 221;
-  --callout-tip: 83, 223, 221;
   --callout-title-padding: 0;
-  --callout-title-weight: 600;
-  --callout-todo: 2, 122, 255;
-  --callout-warning: 233, 151, 63;
-  --canvas-background: #1f1f28 !important;
-  --canvas-card-label-color: #54546d !important;
   --canvas-color: 126, 156, 216 !important;
-  --canvas-color-1: 251, 70, 76 !important;
-  --canvas-color-2: 233, 151, 63 !important;
-  --canvas-color-3: 224, 222, 113 !important;
-  --canvas-color-4: 68, 207, 110 !important;
-  --canvas-color-5: 83, 223, 221 !important;
-  --canvas-color-6: 168, 130, 255 !important;
-  --canvas-controls-icon-size: 16px !important;
-  --canvas-controls-icon-stroke: 2px !important;
-  --canvas-controls-radius: 4px !important;
-  --canvas-dot-pattern: #363636 !important;
-  --caret-color: #dcd7ba !important;
-  --checkbox-border-color: #54546d !important;
-  --checkbox-border-color-hover: #9cabca !important;
-  --checkbox-color: #7e9cd8 !important;
-  --checkbox-color-hover: #9cabca !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: #1f1f28 !important;
-  --checkbox-radius: 4px !important;
-  --checkbox-size: 16px !important;
-  --checklist-done-color: #54546d !important;
   --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 4px !important;
-  --code-background: #2a2a37 !important;
-  --code-border-color: #363646 !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: #223249 !important;
-  --code-comment: #727169 !important;
-  --code-function: #e6c384 !important;
-  --code-important: #e6c384 !important;
-  --code-keyword: #957fb8 !important;
-  --code-normal: #dcd7ba !important;
-  --code-operator: #c0a36e !important;
-  --code-property: #e6c384 !important;
-  --code-punctuation: #dcd7ba !important;
-  --code-radius: 4px !important;
-  --code-size: 0.875em !important;
-  --code-string: #98bb6c !important;
-  --code-tag: #e46876 !important;
-  --code-value: #d27e99 !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: #54546d !important;
-  --collapse-icon-color-collapsed: hsl(220, 54%, 67%) !important;
-  --color-accent: hsl(220, 54%, 67%) !important;
-  --color-accent-1: hsl(217, 55.08%, 77.05%) !important;
-  --color-accent-2: hsl(215, 56.7%, 86.43%) !important;
-  --color-accent-hsl: 220, 54%, 67% !important;
   --color-base-00: #1e1e1e !important;
   --color-base-05: #212121 !important;
   --color-base-10: #242424 !important;
@@ -1612,51 +2186,24 @@ body.theme-dark {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: #363646 !important;
-  --divider-color-hover: hsl(220, 54%, 67%) !important;
-  --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: #2a2a37 !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: #363646 !important;
-  --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
-  --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-icon-inset: 0.5em !important;
   --dropdown-icon-width: 1em !important;
-  --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px #363646, inset 0 0 0 1px #363646 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid hsl(220, 54%, 67%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
-  --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
-  --file-header-background: #1f1f28 !important;
-  --file-header-background-focused: #1f1f28 !important;
-  --file-header-border: 1px solid transparent !important;
-  --file-header-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
-  --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: 32px 32px !important;
-  --file-margins-x: 32px !important;
-  --file-margins-y: 32px !important;
-  --flair-background: #2a2a37 !important;
-  --flair-color: #dcd7ba !important;
-  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
   --font-default:
@@ -1665,23 +2212,10 @@ body.theme-dark {
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1689,16 +2223,11 @@ body.theme-dark {
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "??", "??", "??", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -1707,31 +2236,10 @@ body.theme-dark {
   --font-ui-medium: 15px !important;
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
-  --font-weight: 400 !important;
-  --footnote-divider-color: #363646 !important;
-  --footnote-divider-color-active: transparent !important;
-  --footnote-divider-width: 1px !important;
-  --footnote-gap: 4px !important;
-  --footnote-id-color: #dcd7ba !important;
-  --footnote-id-color-no-occurrences: #54546d !important;
   --footnote-id-delimiter: "." !important;
-  --footnote-input-background: transparent !important;
-  --footnote-input-background-active: #223249 !important;
-  --footnote-line-height: 1.5 !important;
-  --footnote-padding-block: 6px !important;
-  --footnote-padding-inline: 6px !important;
-  --footnote-radius: 4px !important;
-  --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: #54546d !important;
-  --graph-node: hsl(220, 54%, 67%) !important;
-  --graph-node-attachment: #7e9cd8 !important;
-  --graph-node-focused: #9cabca !important;
-  --graph-node-tag: #d27e99 !important;
-  --graph-node-unresolved: #363646 !important;
-  --graph-text: #dcd7ba !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.618em !important;
@@ -1757,27 +2265,18 @@ body.theme-dark {
   --h4-variant: normal !important;
   --h4-weight: 640 !important;
   --h5-letter-spacing: -0.002em !important;
-  --h5-line-height: 1.5 !important;
   --h5-size: 1.076em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 620 !important;
   --h6-letter-spacing: 0em !important;
-  --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: #54546d !important;
-  --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: lighten !important;
-  --hr-color: #363646 !important;
   --hr-thickness: 2px !important;
-  --icon-color: #dcd7ba !important;
-  --icon-color-active: hsl(220, 54%, 67%) !important;
-  --icon-color-focused: #dcd7ba !important;
-  --icon-color-hover: #dcd7ba !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -1793,25 +2292,10 @@ body.theme-dark {
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: #363646 !important;
-  --indentation-guide-color-active: #54546d !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
-  --indentation-guide-width: 1px !important;
-  --indentation-guide-width-active: 1px !important;
-  --inline-title-line-height: 1.2 !important;
   --inline-title-margin-bottom: 0.5em !important;
-  --inline-title-size: 1.618em !important;
-  --inline-title-style: normal !important;
-  --inline-title-variant: normal !important;
-  --inline-title-weight: 700 !important;
-  --input-corner-shape: round !important;
-  --input-date-separator: #54546d !important;
-  --input-font-weight: 400 !important;
-  --input-icon-inset: 4px !important;
-  --input-padding: 4px 8px !important;
-  --input-placeholder-color: #54546d !important;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -1822,11 +2306,6 @@ body.theme-dark {
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: hsl(220, 54%, 67%) !important;
-  --interactive-accent-hover: hsl(217, 55.08%, 77.05%) !important;
-  --interactive-accent-hsl: 220, 54%, 67% !important;
-  --interactive-hover: #363646 !important;
-  --interactive-normal: #2a2a37 !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -1840,167 +2319,76 @@ body.theme-dark {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: #7e9cd8 !important;
-  --link-color-hover: #9cabca !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: #7e9cd8 !important;
-  --link-external-color-hover: #9cabca !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: hsl(255, 89.76%, 75.9%) !important;
-  --link-unresolved-decoration-color: hsla(220, 54%, 67%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
-  --link-weight: 400 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: 50% !important;
   --list-bullet-size: 0.3em !important;
   --list-bullet-transform: none !important;
-  --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: #7e9cd8 !important;
-  --list-marker-color-collapsed: hsl(220, 54%, 67%) !important;
-  --list-marker-color-hover: #dcd7ba !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: #2a2a37 !important;
-  --menu-border-color: #54546d !important;
-  --menu-border-width: 1px !important;
-  --menu-corner-shape: round !important;
-  --menu-padding: 6px !important;
-  --menu-radius: 8px !important;
   --menu-scroll-mask: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.05) 0%,
     rgba(0, 0, 0, 0.1) 48px
   ) !important;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: #363646 !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: #363646 !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: #223249 !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
-  --metadata-input-font-size: 0.875em !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-padding: 4px 8px !important;
-  --metadata-input-text-color: #dcd7ba !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: #223249 !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
-  --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: #dcd7ba !important;
-  --metadata-label-text-color-hover: #dcd7ba !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
-  --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: #223249 !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #54546d !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #54546d !important;
-  --metadata-property-corner-shape: round !important;
-  --metadata-property-corner-shape-focus: round !important;
-  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
   --metadata-property-radius-hover: 6px !important;
-  --metadata-sidebar-input-font-size: 13px !important;
-  --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: #2a2a37 !important;
-  --modal-border-color: #363646 !important;
-  --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: 12px !important;
   --modal-shadow: none !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
-  --nav-collapse-icon-color: #54546d !important;
-  --nav-collapse-icon-color-collapsed: #54546d !important;
-  --nav-heading-color: #dcd7ba !important;
-  --nav-heading-color-collapsed: #54546d !important;
-  --nav-heading-color-collapsed-hover: #dcd7ba !important;
-  --nav-heading-color-hover: #dcd7ba !important;
-  --nav-heading-weight: 500 !important;
-  --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: #54546d !important;
-  --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: #7e9cd8 !important;
-  --nav-item-background-hover: #223249 !important;
-  --nav-item-background-selected: red !important;
-  --nav-item-children-margin-start: 12px !important;
-  --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: #dcd7ba !important;
-  --nav-item-color-active: white !important;
-  --nav-item-color-highlighted: #d27e99 !important;
-  --nav-item-color-hover: white !important;
-  --nav-item-color-selected: red !important;
-  --nav-item-margin-bottom: 2px !important;
-  --nav-item-padding: 4px 8px 4px 24px !important;
-  --nav-item-parent-padding: 4px 8px 4px 24px !important;
-  --nav-item-radius: 4px !important;
-  --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: #54546d !important;
-  --nav-tag-color-active: #dcd7ba !important;
-  --nav-tag-color-hover: #dcd7ba !important;
-  --nav-tag-radius: 4px !important;
-  --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: #1f1f28 !important;
-  --pdf-page-background: #1f1f28 !important;
-  --pdf-shadow: 0 0 0 1px #363646 !important;
-  --pdf-sidebar-background: #1f1f28 !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px #363646 !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-color-remove-hover: hsl(220, 54%, 67%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
-  --popover-font-size: 16px !important;
   --popover-height: 400px !important;
   --popover-max-height: 95vh !important;
   --popover-pdf-height: 400px !important;
@@ -2008,9 +2396,6 @@ body.theme-dark {
   --popover-width: 450px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
-  --prompt-background: #1f1f28 !important;
-  --prompt-border-color: #363646 !important;
-  --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
@@ -2019,9 +2404,6 @@ body.theme-dark {
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, #2a2a37 65%, transparent)
-    linear-gradient(#2a2a37, color-mix(in srgb, #2a2a37 65%, transparent)) !important;
-  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
   --raised-mask:
     linear-gradient(white, white) padding-box,
     linear-gradient(white, white) border-box !important;
@@ -2029,72 +2411,29 @@ body.theme-dark {
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
-  --ribbon-background: #2a2a37 !important;
-  --ribbon-background-collapsed: #1f1f28 !important;
-  --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2) !important;
-  --scrollbar-bg: rgba(255, 255, 255, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 12px !important;
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1) !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: #dcd7ba !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: #dcd7ba !important;
   --search-icon-size: 18px !important;
-  --search-result-background: #1f1f28 !important;
-  --setting-group-heading-color: #dcd7ba !important;
-  --setting-group-heading-size: 15px !important;
-  --setting-group-heading-weight: 600 !important;
-  --setting-items-background: #242424 !important;
-  --setting-items-border-color: #363646 !important;
   --setting-items-border-width: 0 !important;
-  --setting-items-padding: 20px !important;
-  --setting-items-radius: 12px !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2) !important;
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3) !important;
-  --shiki-active-tab-border-color: #dcd7ba !important;
   --shiki-active-tab-border-width: 2px !important;
-  --shiki-code-background: #2a2a37 !important;
   --shiki-code-block-border-color: transparent !important;
-  --shiki-code-block-border-radius: 4px !important;
   --shiki-code-block-border-width: 0px !important;
-  --shiki-code-block-spacing: 1rem !important;
-  --shiki-code-comment: #54546d !important;
-  --shiki-code-function: #98bb6c !important;
-  --shiki-code-important: #ffa066 !important;
-  --shiki-code-keyword: #d27e99 !important;
-  --shiki-code-normal: #dcd7ba !important;
-  --shiki-code-property: #7e9cd8 !important;
-  --shiki-code-punctuation: #dcd7ba !important;
-  --shiki-code-string: #e6c384 !important;
-  --shiki-code-value: #957fb8 !important;
-  --shiki-gutter-border-color: #363646 !important;
-  --shiki-gutter-border-width: 1px !important;
-  --shiki-gutter-text-color: #54546d !important;
-  --shiki-gutter-text-color-highlight: #dcd7ba !important;
-  --shiki-highlight-green: rgba(68, 207, 110, 0.5) !important;
-  --shiki-highlight-green-background: rgba(68, 207, 110, 0.1) !important;
-  --shiki-highlight-neutral: #dcd7ba !important;
-  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05) !important;
-  --shiki-highlight-red: rgba(251, 70, 76, 0.5) !important;
-  --shiki-highlight-red-background: rgba(251, 70, 76, 0.1) !important;
-  --shiki-terminal-dots-color: #54546d !important;
-  --shiki-tooltip-background: rgba(0, 0, 0, 0.9) !important;
   --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --sidebar-right-toggle-inner-width: 8.33% !important;
   --sidebar-right-toggle-inner-width-open: 24% !important;
   --sidebar-tab-text-display: none !important;
@@ -2115,136 +2454,52 @@ body.theme-dark {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: #3f3f3f !important;
-  --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: #2a2a37 !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: #2a2a37 !important;
-  --status-bar-border-color: #363646 !important;
-  --status-bar-border-width: 1px 0 0 1px !important;
-  --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
-  --status-bar-radius: 8px 0 0 0 !important;
-  --status-bar-text-color: #dcd7ba !important;
   --suggestion-backdrop-filter: none !important;
-  --suggestion-background: #1f1f28 !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
-  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
   --swatch-width: 22px !important;
-  --sync-avatar-color-1: #e46876 !important;
-  --sync-avatar-color-2: #ffa066 !important;
-  --sync-avatar-color-3: #e6c384 !important;
-  --sync-avatar-color-4: #98bb6c !important;
-  --sync-avatar-color-5: #7e9cd8 !important;
-  --sync-avatar-color-6: #7e9cd8 !important;
-  --sync-avatar-color-7: #957fb8 !important;
-  --sync-avatar-color-8: #d27e99 !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: #1f1f28 !important;
   --tab-curve: 6px !important;
-  --tab-divider-color: #223249 !important;
-  --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: #363646 !important;
   --tab-outline-width: 1px !important;
-  --tab-radius: 4px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
-  --tab-stacked-font-size: 13px !important;
   --tab-stacked-font-weight: 400 !important;
-  --tab-stacked-header-width: 40px !important;
   --tab-stacked-pane-width: 700px !important;
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: #2a2a37 !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    #2a2a37,
-    transparent
-  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 16px !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(220, 54%, 67%) !important;
-  --tab-text-color: #363646 !important;
-  --tab-text-color-active: #dcd7ba !important;
-  --tab-text-color-focused: #dcd7ba !important;
-  --tab-text-color-focused-active: #dcd7ba !important;
-  --tab-text-color-focused-active-current: white !important;
-  --tab-text-color-focused-highlighted: red !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: #363646 !important;
-  --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
-  --table-column-alt-background: transparent !important;
-  --table-column-first-border-width: 1px !important;
-  --table-column-last-border-width: 1px !important;
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: #9cabca !important;
-  --table-drag-handle-color: #223249 !important;
-  --table-drag-handle-color-active: #223249 !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: transparent !important;
-  --table-header-border-color: #363646 !important;
-  --table-header-border-width: 1px !important;
-  --table-header-color: #dcd7ba !important;
-  --table-header-size: 16px !important;
-  --table-header-weight: 600 !important;
-  --table-line-height: 1.3 !important;
-  --table-row-alt-background: transparent !important;
-  --table-row-alt-background-hover: transparent !important;
-  --table-row-background-hover: transparent !important;
-  --table-row-last-border-width: 1px !important;
-  --table-selection: #223249 !important;
-  --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: #9cabca !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
-  --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: #363646 !important;
-  --tag-background-hover: #54546d !important;
-  --tag-border-color: hsla(220, 54%, 67%, 0.15) !important;
-  --tag-border-color-hover: hsla(220, 54%, 67%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: #7e9cd8 !important;
-  --tag-color-hover: #7e9cd8 !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
-  --tag-size: 0.875em !important;
-  --text-accent-hover: red !important;
-  --text-error: #e46876 !important;
-  --text-highlight-bg: hsl(220, 54%, 67%) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: #dcd7ba !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: #1f1f28 !important;
-  --text-selection: #223249 !important;
-  --text-success: #98bb6c !important;
-  --text-warning: #e6c384 !important;
-  --titlebar-background-focused: #363646 !important;
-  --titlebar-border-color: #363646 !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: #dcd7ba !important;
-  --titlebar-text-color-focused: #dcd7ba !important;
-  --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
   --toggle-s-border-width: 2px !important;
@@ -2256,29 +2511,16 @@ body.theme-dark {
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
-  --touch-radius-l: 52px !important;
-  --touch-radius-m: 44px !important;
-  --touch-radius-s: 40px !important;
-  --touch-radius-xl: 60px !important;
-  --touch-radius-xs: 30px !important;
-  --touch-radius-xxs: 24px !important;
   --touch-size-l: 52px !important;
   --touch-size-m: 44px !important;
   --touch-size-s: 40px !important;
   --touch-size-xl: 60px !important;
   --touch-size-xs: 30px !important;
   --touch-size-xxs: 24px !important;
-  --traffic-lights-offset-x: 40px !important;
-  --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: #dcd7ba !important;
-  --vault-profile-color-hover: #dcd7ba !important;
   --vault-profile-display: flex !important;
-  --vault-profile-font-size: 13px !important;
-  --vault-profile-font-weight: 500 !important;
   --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
-  --workspace-background-translucent: rgba(0, 0, 0, 0.6) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
@@ -2348,7 +2590,7 @@ body {
 body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(78, 140, 162);
-  cursor: pointer;
+  cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2366,11 +2608,11 @@ body body.theme-light .markdown-rendered a.external-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--link-weight, 400);
   outline: rgb(78, 140, 162) none 0px;
   text-decoration: underline;
   text-decoration-color: rgb(78, 140, 162);
-  text-decoration-line: underline;
+  text-decoration-line: var(--link-external-decoration, underline);
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
   transform: none;
@@ -2387,7 +2629,7 @@ body body.theme-light .markdown-rendered a.external-link {
 body body.theme-light .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(78, 140, 162);
-  cursor: pointer;
+  cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2405,11 +2647,11 @@ body body.theme-light .markdown-rendered a.internal-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--link-weight, 400);
   outline: rgb(78, 140, 162) none 0px;
   text-decoration: underline;
   text-decoration-color: rgb(78, 140, 162);
-  text-decoration-line: underline;
+  text-decoration-line: var(--link-decoration, underline);
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
   transform: none;
@@ -2426,7 +2668,7 @@ body body.theme-light .markdown-rendered a.internal-link {
 body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(84, 84, 100);
-  cursor: pointer;
+  cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2444,12 +2686,12 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--link-weight, 400);
   outline: rgb(84, 84, 100) none 0px;
   text-decoration: underline rgba(78, 139, 162, 0.3);
   text-decoration-color: rgba(78, 139, 162, 0.3);
-  text-decoration-line: underline;
-  text-decoration-style: solid;
+  text-decoration-line: var(--link-decoration, underline);
+  text-decoration-style: var(--link-unresolved-decoration-style, solid);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -2535,7 +2777,7 @@ body body.theme-light strong {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: calc(var(--font-weight) + var(--bold-modifier));
   outline: rgb(215, 71, 75) none 0px;
   text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(215, 71, 75);
@@ -2574,7 +2816,7 @@ body body.theme-light b {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: calc(var(--font-weight) + var(--bold-modifier));
   outline: rgb(215, 71, 75) none 0px;
   text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(215, 71, 75);
@@ -2810,7 +3052,7 @@ body body.theme-light div.multi-select-pill {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--pill-weight, 400);
   margin-inline-start: 0px;
   border: 0px solid rgba(78, 139, 162, 0.15);
   border-top-left-radius: 28px;
@@ -2875,10 +3117,20 @@ body body.theme-light .markdown-rendered code {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   color: rgb(84, 84, 100);
-  font-family:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-    "Source Code Pro", monospace;
+  font-family: var(
+    --font-monospace,
+    ui-monospace,
+    SFMono-Regular,
+    "Cascadia Mono",
+    "Roboto Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    Menlo,
+    Monaco,
+    Consolas,
+    "Source Code Pro",
+    monospace
+  );
   padding: 2.1px 4.2px;
 }
 body body.theme-light .markdown-rendered pre > code {
@@ -2935,7 +3187,7 @@ body
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  width: 16px;
+  width: var(--checkbox-size, 16px);
   transition: box-shadow 0.15s ease-in-out;
   position: relative;
   top: auto;
@@ -2958,7 +3210,7 @@ body
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-light .markdown-rendered blockquote {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--blockquote-background-color, rgba(0, 0, 0, 0));
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3022,10 +3274,12 @@ body body.theme-light .search-results {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  box-shadow:
+  box-shadow: var(
+    --shadow-l,
     rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
     rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
-    rgba(0, 0, 0, 0.1) 0px 15px 30px 0px;
+    rgba(0, 0, 0, 0.1) 0px 15px 30px 0px
+  );
 }
 body body.theme-light .search-results > * {
   background-color: rgba(0, 0, 0, 0);
@@ -3101,7 +3355,8 @@ body body.theme-light div.search-results .suggestion-item.is-selected {
 }
 body body.theme-light .published-container .markdown-rendered h1 {
   color: rgb(98, 76, 131);
-  font-family:
+  font-family: var(
+    --h1-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3114,12 +3369,14 @@ body body.theme-light .published-container .markdown-rendered h1 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h2 {
   color: rgb(78, 140, 162);
-  font-family:
+  font-family: var(
+    --h2-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3132,12 +3389,14 @@ body body.theme-light .published-container .markdown-rendered h2 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h3 {
   color: rgb(111, 137, 78);
-  font-family:
+  font-family: var(
+    --h3-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3150,12 +3409,14 @@ body body.theme-light .published-container .markdown-rendered h3 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h4 {
   color: rgb(222, 152, 0);
-  font-family:
+  font-family: var(
+    --h4-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3168,12 +3429,14 @@ body body.theme-light .published-container .markdown-rendered h4 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h5 {
   color: rgb(204, 109, 0);
-  font-family:
+  font-family: var(
+    --h5-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3186,12 +3449,14 @@ body body.theme-light .published-container .markdown-rendered h5 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h6 {
   color: rgb(215, 71, 75);
-  font-family:
+  font-family: var(
+    --h6-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3204,7 +3469,8 @@ body body.theme-light .published-container .markdown-rendered h6 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body
@@ -3213,7 +3479,7 @@ body
   .outline-view
   .tree-item
   > .tree-item-self {
-  font-weight: 400;
+  font-weight: var(--nav-item-weight, 400);
 }
 body
   body.theme-light
@@ -3277,7 +3543,7 @@ body body.theme-light .callout[data-callout="note"] {
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 12px 12px 12px 24px;
-  background-color: rgba(8, 109, 221, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3285,7 +3551,7 @@ body body.theme-light .callout[data-callout="note"] {
 }
 body body.theme-light .callout[data-callout="note"] > .callout-title {
   --callout-color: 8, 109, 221;
-  color: rgb(8, 109, 221);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(8, 109, 221);
   border-top-left-radius: 0px;
@@ -3303,11 +3569,11 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout > .callout-title > .callout-title-inner {
-  color: rgb(8, 109, 221);
-  font-weight: 600;
+  color: var(--callout-title-color, rgb(8, 109, 221));
+  font-weight: var(--font-weight, 600);
 }
 body body.theme-light .callout > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3316,7 +3582,7 @@ body body.theme-light .callout > .callout-content {
 }
 body body.theme-light .callout[data-callout="abstract"] {
   --callout-color: 0, 191, 188;
-  background-color: rgba(0, 191, 188, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3334,7 +3600,7 @@ body body.theme-light .callout[data-callout="abstract"] {
 }
 body body.theme-light .callout[data-callout="abstract"] > .callout-title {
   --callout-color: 8, 109, 221;
-  color: rgb(8, 109, 221);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(8, 109, 221);
   border-top-left-radius: 0px;
@@ -3353,7 +3619,7 @@ body body.theme-light .callout[data-callout="abstract"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="info"] {
   --callout-color: 8, 109, 221;
-  background-color: rgba(8, 109, 221, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3371,7 +3637,7 @@ body body.theme-light .callout[data-callout="info"] {
 }
 body body.theme-light .callout[data-callout="info"] > .callout-title {
   --callout-color: 8, 109, 221;
-  color: rgb(8, 109, 221);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(8, 109, 221);
   border-top-left-radius: 0px;
@@ -3390,7 +3656,7 @@ body body.theme-light .callout[data-callout="info"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="todo"] {
   --callout-color: 8, 109, 221;
-  background-color: rgba(8, 109, 221, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3408,7 +3674,7 @@ body body.theme-light .callout[data-callout="todo"] {
 }
 body body.theme-light .callout[data-callout="todo"] > .callout-title {
   --callout-color: 8, 109, 221;
-  color: rgb(8, 109, 221);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(8, 109, 221);
   border-top-left-radius: 0px;
@@ -3427,7 +3693,7 @@ body body.theme-light .callout[data-callout="todo"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="tip"] {
   --callout-color: 0, 191, 188;
-  background-color: rgba(0, 191, 188, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3445,7 +3711,7 @@ body body.theme-light .callout[data-callout="tip"] {
 }
 body body.theme-light .callout[data-callout="tip"] > .callout-title {
   --callout-color: 8, 109, 221;
-  color: rgb(8, 109, 221);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(8, 109, 221);
   border-top-left-radius: 0px;
@@ -3464,7 +3730,7 @@ body body.theme-light .callout[data-callout="tip"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="success"] {
   --callout-color: 8, 185, 78;
-  background-color: rgba(8, 185, 78, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3482,7 +3748,7 @@ body body.theme-light .callout[data-callout="success"] {
 }
 body body.theme-light .callout[data-callout="success"] > .callout-title {
   --callout-color: 8, 109, 221;
-  color: rgb(8, 109, 221);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(8, 109, 221);
   border-top-left-radius: 0px;
@@ -3501,7 +3767,7 @@ body body.theme-light .callout[data-callout="success"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="question"] {
   --callout-color: 236, 117, 0;
-  background-color: rgba(236, 117, 0, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3519,7 +3785,7 @@ body body.theme-light .callout[data-callout="question"] {
 }
 body body.theme-light .callout[data-callout="question"] > .callout-title {
   --callout-color: 8, 109, 221;
-  color: rgb(8, 109, 221);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(8, 109, 221);
   border-top-left-radius: 0px;
@@ -3538,7 +3804,7 @@ body body.theme-light .callout[data-callout="question"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="warning"] {
   --callout-color: 236, 117, 0;
-  background-color: rgba(236, 117, 0, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3556,7 +3822,7 @@ body body.theme-light .callout[data-callout="warning"] {
 }
 body body.theme-light .callout[data-callout="warning"] > .callout-title {
   --callout-color: 8, 109, 221;
-  color: rgb(8, 109, 221);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(8, 109, 221);
   border-top-left-radius: 0px;
@@ -3575,7 +3841,7 @@ body body.theme-light .callout[data-callout="warning"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="danger"] {
   --callout-color: 233, 49, 71;
-  background-color: rgba(233, 49, 71, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3593,7 +3859,7 @@ body body.theme-light .callout[data-callout="danger"] {
 }
 body body.theme-light .callout[data-callout="danger"] > .callout-title {
   --callout-color: 8, 109, 221;
-  color: rgb(8, 109, 221);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(8, 109, 221);
   border-top-left-radius: 0px;
@@ -3612,7 +3878,7 @@ body body.theme-light .callout[data-callout="danger"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="failure"] {
   --callout-color: 233, 49, 71;
-  background-color: rgba(233, 49, 71, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3630,7 +3896,7 @@ body body.theme-light .callout[data-callout="failure"] {
 }
 body body.theme-light .callout[data-callout="failure"] > .callout-title {
   --callout-color: 8, 109, 221;
-  color: rgb(8, 109, 221);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(8, 109, 221);
   border-top-left-radius: 0px;
@@ -3649,7 +3915,7 @@ body body.theme-light .callout[data-callout="failure"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="bug"] {
   --callout-color: 233, 49, 71;
-  background-color: rgba(233, 49, 71, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3667,7 +3933,7 @@ body body.theme-light .callout[data-callout="bug"] {
 }
 body body.theme-light .callout[data-callout="bug"] > .callout-title {
   --callout-color: 8, 109, 221;
-  color: rgb(8, 109, 221);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(8, 109, 221);
   border-top-left-radius: 0px;
@@ -3686,7 +3952,7 @@ body body.theme-light .callout[data-callout="bug"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="example"] {
   --callout-color: 120, 82, 238;
-  background-color: rgba(120, 82, 238, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -3704,7 +3970,7 @@ body body.theme-light .callout[data-callout="example"] {
 }
 body body.theme-light .callout[data-callout="example"] > .callout-title {
   --callout-color: 8, 109, 221;
-  color: rgb(8, 109, 221);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(8, 109, 221);
   border-top-left-radius: 0px;
@@ -3723,7 +3989,7 @@ body body.theme-light .callout[data-callout="example"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="quote"] {
   --callout-color: 158, 158, 158;
-  background-color: rgba(158, 158, 158, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -3741,7 +4007,7 @@ body body.theme-light .callout[data-callout="quote"] {
 }
 body body.theme-light .callout[data-callout="quote"] > .callout-title {
   --callout-color: 8, 109, 221;
-  color: rgb(8, 109, 221);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(8, 109, 221);
   border-top-left-radius: 0px;
@@ -3787,7 +4053,10 @@ body body.theme-light .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px 0px;
+  margin-top: var(--heading-spacing, 16px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -3811,10 +4080,14 @@ body body.theme-light .markdown-rendered tbody {
 body body.theme-light .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(84, 84, 100);
-  font-weight: 600;
+  font-weight: var(--table-header-weight, 600);
   text-align: start;
-  vertical-align: top;
-  border: 1px solid rgb(213, 206, 163);
+  vertical-align: var(--table-cell-vertical-alignment, top);
+  border-left: var(--table-column-first-border-width, 1px) solid
+    rgb(213, 206, 163);
+  border-right: 1px solid rgb(213, 206, 163);
+  border-top: var(--table-header-border-width, 1px) solid rgb(213, 206, 163);
+  border-bottom: 1px solid rgb(213, 206, 163);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3830,8 +4103,10 @@ body body.theme-light .markdown-rendered td {
   color: rgb(84, 84, 100);
   font-weight: 400;
   text-align: start;
-  vertical-align: top;
+  vertical-align: var(--table-cell-vertical-alignment, top);
   border: 1px solid rgb(213, 206, 163);
+  border-left: var(--table-column-first-border-width, 1px) solid
+    rgb(213, 206, 163);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3843,7 +4118,7 @@ body body.theme-light .markdown-rendered td {
   padding: 4px 8px;
 }
 body body.theme-light .markdown-rendered tr {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--table-header-background, rgba(0, 0, 0, 0));
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3855,10 +4130,10 @@ body body.theme-light .markdown-rendered tr {
   border-end-end-radius: 0px;
 }
 body body.theme-light .markdown-rendered tbody tr:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--table-background, rgba(0, 0, 0, 0));
 }
 body body.theme-light .markdown-rendered tbody tr:nth-child(odd) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
 }
 body body.theme-light .markdown-rendered img {
   border-radius: 0px;
@@ -3961,7 +4236,7 @@ body body.theme-light .markdown-rendered audio {
   padding: 0px;
 }
 body body.theme-light .internal-embed {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--embed-background, rgba(0, 0, 0, 0));
   border-color: rgb(84, 84, 100);
   border-left: 2px solid rgb(78, 139, 162);
   border-right-width: 0px;
@@ -3975,7 +4250,7 @@ body body.theme-light .internal-embed {
   padding: 0px;
 }
 body body.theme-light .markdown-embed {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--embed-background, rgba(0, 0, 0, 0));
   border-left: solid;
   border-width: 0px;
   border-color: rgb(84, 84, 100);
@@ -3987,7 +4262,7 @@ body body.theme-light .markdown-embed {
   padding: 0px;
 }
 body body.theme-light .file-embed {
-  background-color: rgb(250, 250, 250);
+  background-color: var(--background-primary-alt, rgb(250, 250, 250));
   border-color: rgb(84, 84, 100);
   border-width: 0px;
   border-top-left-radius: 8px;
@@ -3998,7 +4273,7 @@ body body.theme-light .file-embed {
   padding: 8px;
 }
 body body.theme-light .metadata-container {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--metadata-background, rgba(0, 0, 0, 0));
   color: rgb(84, 84, 100);
   font-family:
     ui-sans-serif,
@@ -4150,11 +4425,21 @@ body body.theme-light kbd {
   background-color: rgb(231, 219, 160);
   box-shadow: none;
   color: rgb(84, 84, 100);
-  font-family:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-    "Source Code Pro", monospace;
-  font-size: 14px;
+  font-family: var(
+    --font-monospace,
+    ui-monospace,
+    SFMono-Regular,
+    "Cascadia Mono",
+    "Roboto Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    Menlo,
+    Monaco,
+    Consolas,
+    "Source Code Pro",
+    monospace
+  );
+  font-size: var(--code-size, 14px);
   border: 0px rgb(84, 84, 100);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -4384,7 +4669,7 @@ body
   > .tree-item
   > .tree-item-self {
   color: rgb(84, 84, 100);
-  cursor: default;
+  cursor: var(--cursor, default);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -4399,7 +4684,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--nav-item-weight, 400);
   text-decoration: rgb(34, 34, 34);
 }
 body
@@ -4411,7 +4696,7 @@ body
   > .tree-item
   > .tree-item-self {
   color: rgb(84, 84, 100);
-  cursor: default;
+  cursor: var(--cursor, default);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -4426,13 +4711,13 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--nav-item-weight, 400);
   text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(84, 84, 100);
-  cursor: default;
+  cursor: var(--cursor, default);
   border-color: rgb(84, 84, 100);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -4528,7 +4813,7 @@ body body.theme-light .nav-files-container {
 body body.theme-light .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(84, 84, 100);
-  cursor: default;
+  cursor: var(--cursor, default);
   border-color: rgb(84, 84, 100);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -4585,7 +4870,7 @@ body body.theme-light .page-header .page-title {
     sans-serif;
 }
 body body.theme-light .math-block {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
   color: rgb(84, 84, 100);
   border-color: rgb(84, 84, 100);
   border-width: 0px;
@@ -4691,7 +4976,7 @@ body body.theme-light .search-highlight {
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(126, 156, 216);
-  cursor: pointer;
+  cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4709,11 +4994,11 @@ body body.theme-dark .markdown-rendered a.external-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--link-weight, 400);
   outline: rgb(126, 156, 216) none 0px;
   text-decoration: underline;
   text-decoration-color: rgb(126, 156, 216);
-  text-decoration-line: underline;
+  text-decoration-line: var(--link-external-decoration, underline);
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
   transform: none;
@@ -4730,7 +5015,7 @@ body body.theme-dark .markdown-rendered a.external-link {
 body body.theme-dark .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(126, 156, 216);
-  cursor: pointer;
+  cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4748,11 +5033,11 @@ body body.theme-dark .markdown-rendered a.internal-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--link-weight, 400);
   outline: rgb(126, 156, 216) none 0px;
   text-decoration: underline;
   text-decoration-color: rgb(126, 156, 216);
-  text-decoration-line: underline;
+  text-decoration-line: var(--link-decoration, underline);
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
   transform: none;
@@ -4769,7 +5054,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
 body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(220, 215, 186);
-  cursor: pointer;
+  cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4787,12 +5072,12 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--link-weight, 400);
   outline: rgb(220, 215, 186) none 0px;
   text-decoration: underline rgba(125, 156, 216, 0.3);
   text-decoration-color: rgba(125, 156, 216, 0.3);
-  text-decoration-line: underline;
-  text-decoration-style: solid;
+  text-decoration-line: var(--link-decoration, underline);
+  text-decoration-style: var(--link-unresolved-decoration-style, solid);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -4878,7 +5163,7 @@ body body.theme-dark strong {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: calc(var(--font-weight) + var(--bold-modifier));
   outline: rgb(210, 126, 153) none 0px;
   text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(210, 126, 153);
@@ -4917,7 +5202,7 @@ body body.theme-dark b {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: calc(var(--font-weight) + var(--bold-modifier));
   outline: rgb(210, 126, 153) none 0px;
   text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(210, 126, 153);
@@ -5153,7 +5438,7 @@ body body.theme-dark div.multi-select-pill {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--pill-weight, 400);
   margin-inline-start: 0px;
   border: 0px solid rgba(125, 156, 216, 0.15);
   border-top-left-radius: 28px;
@@ -5218,10 +5503,20 @@ body body.theme-dark .markdown-rendered code {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   color: rgb(220, 215, 186);
-  font-family:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-    "Source Code Pro", monospace;
+  font-family: var(
+    --font-monospace,
+    ui-monospace,
+    SFMono-Regular,
+    "Cascadia Mono",
+    "Roboto Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    Menlo,
+    Monaco,
+    Consolas,
+    "Source Code Pro",
+    monospace
+  );
   padding: 2.1px 4.2px;
 }
 body body.theme-dark .markdown-rendered pre > code {
@@ -5278,7 +5573,7 @@ body
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  width: 16px;
+  width: var(--checkbox-size, 16px);
   transition: box-shadow 0.15s ease-in-out;
   position: relative;
   top: auto;
@@ -5301,7 +5596,7 @@ body
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-dark .markdown-rendered blockquote {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--blockquote-background-color, rgba(0, 0, 0, 0));
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -5365,10 +5660,12 @@ body body.theme-dark .search-results {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  box-shadow:
+  box-shadow: var(
+    --shadow-l,
     rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
     rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
-    rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
+    rgba(0, 0, 0, 0.2) 0px 30px 90px 0px
+  );
 }
 body body.theme-dark .search-results > * {
   background-color: rgba(0, 0, 0, 0);
@@ -5444,7 +5741,8 @@ body body.theme-dark div.search-results .suggestion-item.is-selected {
 }
 body body.theme-dark .published-container .markdown-rendered h1 {
   color: rgb(149, 127, 184);
-  font-family:
+  font-family: var(
+    --h1-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5457,12 +5755,14 @@ body body.theme-dark .published-container .markdown-rendered h1 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
   color: rgb(126, 156, 216);
-  font-family:
+  font-family: var(
+    --h2-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5475,12 +5775,14 @@ body body.theme-dark .published-container .markdown-rendered h2 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
   color: rgb(152, 187, 108);
-  font-family:
+  font-family: var(
+    --h3-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5493,12 +5795,14 @@ body body.theme-dark .published-container .markdown-rendered h3 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
   color: rgb(230, 195, 132);
-  font-family:
+  font-family: var(
+    --h4-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5511,12 +5815,14 @@ body body.theme-dark .published-container .markdown-rendered h4 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
   color: rgb(255, 160, 102);
-  font-family:
+  font-family: var(
+    --h5-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5529,12 +5835,14 @@ body body.theme-dark .published-container .markdown-rendered h5 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
   color: rgb(228, 104, 118);
-  font-family:
+  font-family: var(
+    --h6-font,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5547,7 +5855,8 @@ body body.theme-dark .published-container .markdown-rendered h6 {
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body
@@ -5556,7 +5865,7 @@ body
   .outline-view
   .tree-item
   > .tree-item-self {
-  font-weight: 400;
+  font-weight: var(--nav-item-weight, 400);
 }
 body
   body.theme-dark
@@ -5620,7 +5929,7 @@ body body.theme-dark .callout[data-callout="note"] {
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 12px 12px 12px 24px;
-  background-color: rgba(2, 122, 255, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5628,7 +5937,7 @@ body body.theme-dark .callout[data-callout="note"] {
 }
 body body.theme-dark .callout[data-callout="note"] > .callout-title {
   --callout-color: 2, 122, 255;
-  color: rgb(2, 122, 255);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(2, 122, 255);
   border-top-left-radius: 0px;
@@ -5646,11 +5955,11 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
-  color: rgb(2, 122, 255);
-  font-weight: 600;
+  color: var(--callout-title-color, rgb(2, 122, 255));
+  font-weight: var(--font-weight, 600);
 }
 body body.theme-dark .callout > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5659,7 +5968,7 @@ body body.theme-dark .callout > .callout-content {
 }
 body body.theme-dark .callout[data-callout="abstract"] {
   --callout-color: 83, 223, 221;
-  background-color: rgba(83, 223, 221, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -5677,7 +5986,7 @@ body body.theme-dark .callout[data-callout="abstract"] {
 }
 body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
   --callout-color: 2, 122, 255;
-  color: rgb(2, 122, 255);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(2, 122, 255);
   border-top-left-radius: 0px;
@@ -5696,7 +6005,7 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="info"] {
   --callout-color: 2, 122, 255;
-  background-color: rgba(2, 122, 255, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5714,7 +6023,7 @@ body body.theme-dark .callout[data-callout="info"] {
 }
 body body.theme-dark .callout[data-callout="info"] > .callout-title {
   --callout-color: 2, 122, 255;
-  color: rgb(2, 122, 255);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(2, 122, 255);
   border-top-left-radius: 0px;
@@ -5733,7 +6042,7 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="todo"] {
   --callout-color: 2, 122, 255;
-  background-color: rgba(2, 122, 255, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5751,7 +6060,7 @@ body body.theme-dark .callout[data-callout="todo"] {
 }
 body body.theme-dark .callout[data-callout="todo"] > .callout-title {
   --callout-color: 2, 122, 255;
-  color: rgb(2, 122, 255);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(2, 122, 255);
   border-top-left-radius: 0px;
@@ -5770,7 +6079,7 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="tip"] {
   --callout-color: 83, 223, 221;
-  background-color: rgba(83, 223, 221, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -5788,7 +6097,7 @@ body body.theme-dark .callout[data-callout="tip"] {
 }
 body body.theme-dark .callout[data-callout="tip"] > .callout-title {
   --callout-color: 2, 122, 255;
-  color: rgb(2, 122, 255);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(2, 122, 255);
   border-top-left-radius: 0px;
@@ -5807,7 +6116,7 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="success"] {
   --callout-color: 68, 207, 110;
-  background-color: rgba(68, 207, 110, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -5825,7 +6134,7 @@ body body.theme-dark .callout[data-callout="success"] {
 }
 body body.theme-dark .callout[data-callout="success"] > .callout-title {
   --callout-color: 2, 122, 255;
-  color: rgb(2, 122, 255);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(2, 122, 255);
   border-top-left-radius: 0px;
@@ -5844,7 +6153,7 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="question"] {
   --callout-color: 233, 151, 63;
-  background-color: rgba(233, 151, 63, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -5862,7 +6171,7 @@ body body.theme-dark .callout[data-callout="question"] {
 }
 body body.theme-dark .callout[data-callout="question"] > .callout-title {
   --callout-color: 2, 122, 255;
-  color: rgb(2, 122, 255);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(2, 122, 255);
   border-top-left-radius: 0px;
@@ -5881,7 +6190,7 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="warning"] {
   --callout-color: 233, 151, 63;
-  background-color: rgba(233, 151, 63, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -5899,7 +6208,7 @@ body body.theme-dark .callout[data-callout="warning"] {
 }
 body body.theme-dark .callout[data-callout="warning"] > .callout-title {
   --callout-color: 2, 122, 255;
-  color: rgb(2, 122, 255);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(2, 122, 255);
   border-top-left-radius: 0px;
@@ -5918,7 +6227,7 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="danger"] {
   --callout-color: 251, 70, 76;
-  background-color: rgba(251, 70, 76, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5936,7 +6245,7 @@ body body.theme-dark .callout[data-callout="danger"] {
 }
 body body.theme-dark .callout[data-callout="danger"] > .callout-title {
   --callout-color: 2, 122, 255;
-  color: rgb(2, 122, 255);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(2, 122, 255);
   border-top-left-radius: 0px;
@@ -5955,7 +6264,7 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="failure"] {
   --callout-color: 251, 70, 76;
-  background-color: rgba(251, 70, 76, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5973,7 +6282,7 @@ body body.theme-dark .callout[data-callout="failure"] {
 }
 body body.theme-dark .callout[data-callout="failure"] > .callout-title {
   --callout-color: 2, 122, 255;
-  color: rgb(2, 122, 255);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(2, 122, 255);
   border-top-left-radius: 0px;
@@ -5992,7 +6301,7 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="bug"] {
   --callout-color: 251, 70, 76;
-  background-color: rgba(251, 70, 76, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -6010,7 +6319,7 @@ body body.theme-dark .callout[data-callout="bug"] {
 }
 body body.theme-dark .callout[data-callout="bug"] > .callout-title {
   --callout-color: 2, 122, 255;
-  color: rgb(2, 122, 255);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(2, 122, 255);
   border-top-left-radius: 0px;
@@ -6029,7 +6338,7 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="example"] {
   --callout-color: 168, 130, 255;
-  background-color: rgba(168, 130, 255, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -6047,7 +6356,7 @@ body body.theme-dark .callout[data-callout="example"] {
 }
 body body.theme-dark .callout[data-callout="example"] > .callout-title {
   --callout-color: 2, 122, 255;
-  color: rgb(2, 122, 255);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(2, 122, 255);
   border-top-left-radius: 0px;
@@ -6066,7 +6375,7 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="quote"] {
   --callout-color: 158, 158, 158;
-  background-color: rgba(158, 158, 158, 0.1);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -6084,7 +6393,7 @@ body body.theme-dark .callout[data-callout="quote"] {
 }
 body body.theme-dark .callout[data-callout="quote"] > .callout-title {
   --callout-color: 2, 122, 255;
-  color: rgb(2, 122, 255);
+  color: rgb(var(--callout-color));
   gap: 4px;
   border: 0px rgb(2, 122, 255);
   border-top-left-radius: 0px;
@@ -6130,7 +6439,10 @@ body body.theme-dark .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px 0px;
+  margin-top: var(--heading-spacing, 16px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -6154,10 +6466,13 @@ body body.theme-dark .markdown-rendered tbody {
 body body.theme-dark .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(220, 215, 186);
-  font-weight: 600;
+  font-weight: var(--table-header-weight, 600);
   text-align: start;
-  vertical-align: top;
-  border: 1px solid rgb(54, 54, 70);
+  vertical-align: var(--table-cell-vertical-alignment, top);
+  border-left: var(--table-column-first-border-width, 1px) solid rgb(54, 54, 70);
+  border-right: 1px solid rgb(54, 54, 70);
+  border-top: var(--table-header-border-width, 1px) solid rgb(54, 54, 70);
+  border-bottom: 1px solid rgb(54, 54, 70);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -6173,8 +6488,9 @@ body body.theme-dark .markdown-rendered td {
   color: rgb(220, 215, 186);
   font-weight: 400;
   text-align: start;
-  vertical-align: top;
+  vertical-align: var(--table-cell-vertical-alignment, top);
   border: 1px solid rgb(54, 54, 70);
+  border-left: var(--table-column-first-border-width, 1px) solid rgb(54, 54, 70);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -6186,7 +6502,7 @@ body body.theme-dark .markdown-rendered td {
   padding: 4px 8px;
 }
 body body.theme-dark .markdown-rendered tr {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--table-header-background, rgba(0, 0, 0, 0));
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6198,10 +6514,10 @@ body body.theme-dark .markdown-rendered tr {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--table-background, rgba(0, 0, 0, 0));
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(odd) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
 }
 body body.theme-dark .markdown-rendered img {
   border-radius: 0px;
@@ -6304,7 +6620,7 @@ body body.theme-dark .markdown-rendered audio {
   padding: 0px;
 }
 body body.theme-dark .internal-embed {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--embed-background, rgba(0, 0, 0, 0));
   border-color: rgb(220, 215, 186);
   border-left: 2px solid rgb(125, 156, 216);
   border-right-width: 0px;
@@ -6318,7 +6634,7 @@ body body.theme-dark .internal-embed {
   padding: 0px;
 }
 body body.theme-dark .markdown-embed {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--embed-background, rgba(0, 0, 0, 0));
   border-left: solid;
   border-width: 0px;
   border-color: rgb(220, 215, 186);
@@ -6330,7 +6646,7 @@ body body.theme-dark .markdown-embed {
   padding: 0px;
 }
 body body.theme-dark .file-embed {
-  background-color: rgb(36, 36, 36);
+  background-color: var(--background-primary-alt, rgb(36, 36, 36));
   border-color: rgb(220, 215, 186);
   border-width: 0px;
   border-top-left-radius: 8px;
@@ -6341,7 +6657,7 @@ body body.theme-dark .file-embed {
   padding: 8px;
 }
 body body.theme-dark .metadata-container {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--metadata-background, rgba(0, 0, 0, 0));
   color: rgb(220, 215, 186);
   font-family:
     ui-sans-serif,
@@ -6493,11 +6809,21 @@ body body.theme-dark kbd {
   background-color: rgb(42, 42, 55);
   box-shadow: none;
   color: rgb(220, 215, 186);
-  font-family:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-    "Source Code Pro", monospace;
-  font-size: 14px;
+  font-family: var(
+    --font-monospace,
+    ui-monospace,
+    SFMono-Regular,
+    "Cascadia Mono",
+    "Roboto Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    Menlo,
+    Monaco,
+    Consolas,
+    "Source Code Pro",
+    monospace
+  );
+  font-size: var(--code-size, 14px);
   border: 0px rgb(220, 215, 186);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -6727,7 +7053,7 @@ body
   > .tree-item
   > .tree-item-self {
   color: rgb(220, 215, 186);
-  cursor: default;
+  cursor: var(--cursor, default);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -6742,7 +7068,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--nav-item-weight, 400);
   text-decoration: rgb(218, 218, 218);
 }
 body
@@ -6754,7 +7080,7 @@ body
   > .tree-item
   > .tree-item-self {
   color: rgb(220, 215, 186);
-  cursor: default;
+  cursor: var(--cursor, default);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -6769,13 +7095,13 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: var(--nav-item-weight, 400);
   text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(220, 215, 186);
-  cursor: default;
+  cursor: var(--cursor, default);
   border-color: rgb(220, 215, 186);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -6871,7 +7197,7 @@ body body.theme-dark .nav-files-container {
 body body.theme-dark .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(220, 215, 186);
-  cursor: default;
+  cursor: var(--cursor, default);
   border-color: rgb(220, 215, 186);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -6928,7 +7254,7 @@ body body.theme-dark .page-header .page-title {
     sans-serif;
 }
 body body.theme-dark .math-block {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
   color: rgb(220, 215, 186);
   border-color: rgb(220, 215, 186);
   border-width: 0px;

@@ -4,41 +4,41 @@ export const theme: ThemeData = {
   meta: { name: "black", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
-  --background-primary: #000 !important;
-  --background-secondary: #000 !important;
-  --bases-cards-background: #000 !important;
-  --bases-table-cell-background-active: #000 !important;
-  --bases-table-header-background: #000 !important;
-  --bases-table-summary-background: #000 !important;
-  --canvas-background: #000 !important;
-  --checkbox-marker-color: #000 !important;
-  --file-header-background: #000 !important;
-  --file-header-background-focused: #000 !important;
-  --light: #000 !important;
-  --lightgray: #000 !important;
-  --menu-background: #000 !important;
-  --modal-background: #000 !important;
-  --pdf-background: #000 !important;
-  --pdf-page-background: #000 !important;
-  --pdf-sidebar-background: #000 !important;
-  --prompt-background: #000 !important;
-  --ribbon-background: #000 !important;
-  --ribbon-background-collapsed: #000 !important;
-  --search-result-background: #000 !important;
-  --status-bar-background: #000 !important;
-  --suggestion-background: #000 !important;
-  --tab-background-active: #000 !important;
-  --tab-container-background: #000 !important;
-  --tab-switcher-background: #000 !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, #000, transparent) !important;
-  --titlebar-background: #000 !important;
-  --titlebar-background-focused: #000 !important;
-  --quartz-icon-color: currentColor !important;
+  --background-primary: #000;
+  --background-secondary: #000;
+  --bases-cards-background: #000;
+  --bases-table-cell-background-active: #000;
+  --bases-table-header-background: #000;
+  --bases-table-summary-background: #000;
+  --canvas-background: #000;
+  --checkbox-marker-color: #000;
+  --file-header-background: #000;
+  --file-header-background-focused: #000;
+  --light: var(--background-primary, #000);
+  --lightgray: var(--background-secondary, #000);
+  --menu-background: #000;
+  --modal-background: #000;
+  --pdf-background: #000;
+  --pdf-page-background: #000;
+  --pdf-sidebar-background: #000;
+  --prompt-background: #000;
+  --ribbon-background: #000;
+  --ribbon-background-collapsed: #000;
+  --search-result-background: #000;
+  --status-bar-background: #000;
+  --suggestion-background: #000;
+  --tab-background-active: #000;
+  --tab-container-background: #000;
+  --tab-switcher-background: #000;
+  --tab-switcher-menubar-background: linear-gradient(to top, #000, transparent);
+  --titlebar-background: #000;
+  --titlebar-background-focused: #000;
+  --quartz-icon-color: currentColor;
 }
 
 html body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

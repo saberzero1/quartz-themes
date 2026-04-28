@@ -1,0 +1,110 @@
+name: Xscriptor Settings
+id: xscriptor
+settings:
+  - id: transparency
+    title: Transparencia
+    type: heading
+    level: 2
+    collapsed: true
+  - id: background-opacity
+    title: Opacidad del fondo
+    description: Controla la transparencia de la aplicación
+    type: variable-number-slider
+    default: 0.8
+    min: 0.1
+    max: 1
+    step: 0.1
+    format: null
+  - id: mica-effect
+    title: Efecto Pseudo Mica
+    description: Habilita el efecto de vidrio esmerilado (requiere fondo translúcido)
+    type: variable-toggle
+    default: true
+  - id: blur-intensity
+    title: Intensidad del desenfoque
+    description: Controla la intensidad del efecto de desenfoque
+    type: variable-number-slider
+    default: 20
+    min: 5
+    max: 50
+    step: 5
+    format: px
+  - id: colors
+    title: Colores
+    type: heading
+    level: 2
+    collapsed: true
+  - id: accent-color
+    title: Color de acento
+    description: Color principal del tema
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#cc99ff'
+    default-dark: '#cc99ff'
+  - id: h1-color
+    title: Color de títulos H1
+    type: variable-themed-color
+    format: hex
+    default-light: '#8b0000'
+    default-dark: '#cd919e'
+  - id: h2-color
+    title: Color de títulos H2
+    type: variable-themed-color
+    format: hex
+    default-light: '#b8860b'
+    default-dark: '#daa520'
+  - id: h3-color
+    title: Color de títulos H3
+    type: variable-themed-color
+    format: hex
+    default-light: '#2e8b57'
+    default-dark: '#8fbc8f'
+  - id: italic-color
+    title: Color de texto en cursiva
+    type: variable-themed-color
+    format: hex
+    default-light: '#8b4513'
+    default-dark: '#8be3eb'
+  - id: typography
+    title: Tipografía
+    type: heading
+    level: 2
+    collapsed: true
+  - id: font-size
+    title: Tamaño de fuente
+    description: Tamaño base de la fuente
+    type: variable-number-slider
+    default: 16
+    min: 12
+    max: 24
+    step: 1
+    format: px
+  - id: line-height
+    title: Altura de línea
+    description: Espaciado entre líneas
+    type: variable-number-slider
+    default: 1.6
+    min: 1.2
+    max: 2
+    step: 0.1
+    format: null
+  - id: interface
+    title: Interfaz
+    type: heading
+    level: 2
+    collapsed: true
+  - id: border-radius
+    title: Radio de bordes
+    description: Redondez de los elementos
+    type: variable-number-slider
+    default: 8
+    min: 0
+    max: 20
+    step: 1
+    format: px
+  - id: folder-colors
+    title: Colores de carpetas
+    description: Habilitar colores en las carpetas
+    type: class-toggle
+    default: true

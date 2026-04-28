@@ -9,14 +9,14 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --bg-clr-opacity: 0.12 !important;
-  --bg-color: light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.12)) !important;
-  --quartz-icon-color: currentColor !important;
+  --bg-clr-opacity: 0.12;
+  --bg-color: light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.12));
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body html {
@@ -382,14 +382,14 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   },
   light: {
     base: `:root:root {
-  --bg-clr-opacity: 0.12 !important;
-  --bg-color: light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.12)) !important;
-  --quartz-icon-color: currentColor !important;
+  --bg-clr-opacity: 0.12;
+  --bg-color: light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.12));
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body html {

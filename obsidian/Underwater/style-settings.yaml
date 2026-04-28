@@ -3,8 +3,8 @@ id: underwater-theme
 collapsed: false
 settings:
   - id: my-info-text
-    title:
-    description: "💫 **Star the theme on Github: [Underwater on Github](https://github.com/Seniblue/Underwater)!** </br></br> ✨ Theme updates and new features: [Releases](https://github.com/Seniblue/Underwater/releases) </br></br> **💡** The theme looks nice with [Lexend](https://www.lexend.com/) font!"
+    title: null
+    description: '💫 **Star the theme on Github: [Underwater on Github](https://github.com/Seniblue/Underwater)!** </br></br> ✨ Theme updates and new features: [Releases](https://github.com/Seniblue/Underwater/releases) </br></br> **💡** The theme looks nice with [Lexend](https://www.lexend.com/) font!'
     type: info-text
     markdown: true
   - id: underwater-colors-dark
@@ -61,8 +61,6 @@ settings:
         value: uw-aqua
       - label: 🌊 Underwater Oyster
         value: uw-oyster
-
-  # 🎨 Theme colors
   - id: theme-colors
     title: 🎨 Theme colors
     type: heading
@@ -72,116 +70,114 @@ settings:
     title: Foam
     type: variable-themed-color
     opacity: false
-    format: "rgb-values"
-    default-light: "#56949f"
-    default-dark: "#9ccfd8"
+    format: rgb-values
+    default-light: '#56949f'
+    default-dark: '#9ccfd8'
   - id: pine-rgb
     title: Pine
     type: variable-themed-color
     opacity: false
-    format: "rgb-values"
-    default-light: "#286983"
-    default-dark: "#31748f"
+    format: rgb-values
+    default-light: '#286983'
+    default-dark: '#31748f'
   - id: iris-rgb
     title: Iris
     type: variable-themed-color
     opacity: false
-    format: "rgb-values"
-    default-light: "#907aa9"
-    default-dark: "#c4a7e7"
+    format: rgb-values
+    default-light: '#907aa9'
+    default-dark: '#c4a7e7'
   - id: gold-rgb
     title: Gold
     type: variable-themed-color
     opacity: false
-    format: "rgb-values"
-    default-light: "#ea9d34"
-    default-dark: "#f6c177"
+    format: rgb-values
+    default-light: '#ea9d34'
+    default-dark: '#f6c177'
   - id: rose-rgb
     title: Rose
     type: variable-themed-color
     opacity: false
-    format: "rgb-values"
-    default-light: "#d7827e"
-    default-dark: "#ebbcba"
+    format: rgb-values
+    default-light: '#d7827e'
+    default-dark: '#ebbcba'
   - id: love-rgb
     title: Love
     type: variable-themed-color
     opacity: false
-    format: "rgb-values"
-    default-light: "#b4637a"
-    default-dark: "#eb6f92"
+    format: rgb-values
+    default-light: '#b4637a'
+    default-dark: '#eb6f92'
   - id: base
     title: Base
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#faf4ed"
-    default-dark: "#191724"
+    default-light: '#faf4ed'
+    default-dark: '#191724'
   - id: surface-rgb
     title: Surface
     type: variable-themed-color
     opacity: false
-    format: "rgb-values"
-    default-light: "#fffaf3"
-    default-dark: "#1f1d2e"
+    format: rgb-values
+    default-light: '#fffaf3'
+    default-dark: '#1f1d2e'
   - id: overlay
     title: Overlay
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#f2e9e1"
-    default-dark: "#26233a"
+    default-light: '#f2e9e1'
+    default-dark: '#26233a'
   - id: muted
     title: Muted
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#9893a5"
-    default-dark: "#6e6a86"
+    default-light: '#9893a5'
+    default-dark: '#6e6a86'
   - id: subtle
     title: Subtle
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#797593"
-    default-dark: "#908caa"
+    default-light: '#797593'
+    default-dark: '#908caa'
   - id: text
     title: Text
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#575279"
-    default-dark: "#e0def4"
+    default-light: '#575279'
+    default-dark: '#e0def4'
   - id: highlight-low
     title: Highlight low
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#f4ede8"
-    default-dark: "#21202e"
+    default-light: '#f4ede8'
+    default-dark: '#21202e'
   - id: highlight-med-rgb
     title: Highlight med
     type: variable-themed-color
     opacity: false
-    format: "rgb-values"
-    default-light: "#dfdad9"
-    default-dark: "#403d52"
+    format: rgb-values
+    default-light: '#dfdad9'
+    default-dark: '#403d52'
   - id: highlight-high
     title: Highlight high
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: "#cecacd"
-    default-dark: "#524f67"
-
-  # ✏️ Editor colors
+    default-light: '#cecacd'
+    default-dark: '#524f67'
   - id: editor-colors
     title: ✏️ Editor colors
     type: heading
     collapsed: true
     level: 1
   - id: my-info-text
-    title:
+    title: null
     type: info-text
     description: 💡 You can tweak these values using theme variables (set in the previous "Theme Colors" section) like **`var(--pine)`** or color values like **`#8ec7e8`** (hex) or **`rgb(142, 199, 232)`** (rgb).
     markdown: true
@@ -196,7 +192,7 @@ settings:
   - id: list-marker-color
     title: List bullets
     type: variable-text
-    default: var(--bold-color)
+    default: var(--text-muted)
   - id: text-highlight-bg
     title: Highlight
     type: variable-text
@@ -226,8 +222,6 @@ settings:
     title: Workspace background color
     type: variable-text
     default: var(--overlay)
-
-  # Headers color
   - id: headings-color
     title: ✏️ HEADINGS color
     type: heading
@@ -261,8 +255,6 @@ settings:
     title: H6
     type: variable-text
     default: var(--text-normal)
-
-  # 🔧 Settings
   - id: settings
     title: 🔧 Settings
     type: heading
@@ -305,7 +297,7 @@ settings:
   - id: tab-img
     title: New tab image
     description: Looks better with a small image
-    type: info-text
+    type: variable-text
     default: url("")
   - id: vault-icon
     title: Vault icon
@@ -329,22 +321,39 @@ settings:
         value: vault-rocket
       - label: Dev
         value: vault-dev
-
+  - id: links-styling
+    title: Internal links styling
+    type: class-select
+    allowEmpty: false
+    default: normal
+    options:
+      - label: Modern
+        value: normal
+      - label: Boxed links
+        value: box-links
+      - label: Vanilla
+        value: no-links
   - id: headings-font
     title: Specific font for headings
     description: Just write the name of the font, or leave it blank for default font
     type: variable-text
     default: Default text font
     quotes: true
-
-  # 🔍 Options
   - id: options
     title: 🔍 Options
     type: heading
     collapsed: true
     level: 1
+  - id: no-bases
+    title: Disable styling for Bases
+    type: class-toggle
+    default: false
   - id: no-h5
     title: Disable h5 header centering
+    type: class-toggle
+    default: false
+  - id: no-center
+    title: Disable image/videos/embeds/etc. + Tables centering
     type: class-toggle
     default: false
   - id: no-animation
@@ -353,10 +362,6 @@ settings:
     default: false
   - id: no-button
     title: Disable slight button zoom on hover
-    type: class-toggle
-    default: false
-  - id: no-links
-    title: Disable border around internal links
     type: class-toggle
     default: false
   - id: visible-properties
@@ -392,10 +397,14 @@ settings:
     title: Disable smaller pinned tabs
     type: class-toggle
     default: false
+  - id: no-properties
+    title: Disable properties styling
+    type: class-toggle
+    default: false
   - id: my-info-text
-    title:
+    title: null
     type: info-text
-    description: "💡 You can set a hotkey for *Full focus mode* by going to **`Hotkeys`** (in the app settings), looking for **`Style settings: Toggle 🎯 Full focus mode`** and assigning your custom hotkey!"
+    description: '💡 You can set a hotkey for *Full focus mode* by going to **`Hotkeys`** (in the app settings), looking for **`Style settings: Toggle 🎯 Full focus mode`** and assigning your custom hotkey!'
     markdown: true
   - id: focus-mode
     title: 🎯 Full focus mode
@@ -403,17 +412,15 @@ settings:
     type: class-toggle
     default: false
     addCommand: true
-
-  # 🖼️ Background image
   - id: bg-image
     title: 🖼️ Background image
     type: heading
     collapsed: true
     level: 1
   - id: my-info-text
-    title:
+    title: null
     type: info-text
-    description: "🎨 If you're looking for a custom **background color**, you can go to *`✏️ Editor colors`* → *`Workspace background color`*. </br> You can also enable the background image setting below and adjust the opacity of your custom color."
+    description: 🎨 If you're looking for a custom **background color**, you can go to *`✏️ Editor colors`* → *`Workspace background color`*. </br> You can also enable the background image setting below and adjust the opacity of your custom color.
     markdown: true
   - id: workspace-bg
     title: Enable background image
@@ -421,7 +428,7 @@ settings:
     default: false
   - id: bg-url
     title: Background image url
-    type: info-text
+    type: variable-text
     default: url("")
   - id: bg-opacity
     title: Background opacity
@@ -445,8 +452,6 @@ settings:
     min: 0
     max: 1
     step: 0.1
-
-  # 🧩 Plugins styling
   - id: plugins
     title: 🧩 Plugins styling
     type: heading

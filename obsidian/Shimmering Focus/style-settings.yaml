@@ -10,9 +10,6 @@ settings:
       - 🔍 There is a search at the top of this settings page.
     markdown: true
     type: info-text
-
-  #─────────────────────────────────────────────────────────────────────────────
-  # Show / Hide UI Elements
   - id: show-hide-elements
     title: 🙈 Show/hide UI elements
     description: Re-enable user interface elements hidden by this theme
@@ -20,10 +17,7 @@ settings:
     level: 1
     collapsed: true
   - id: ribbon-info
-    description:
-      "The setting to remove the ribbon (the thin sidebar to the very left) has been removed, since
-      with Obsidan 1.6 you can do so via the Obsidian settings: `Appearance → Interface → Show
-      ribbon menu`"
+    description: 'The setting to remove the ribbon (the thin sidebar to the very left) has been removed, since with Obsidan 1.6 you can do so via the Obsidian settings: `Appearance → Interface → Show ribbon menu`'
     type: info-text
     markdown: true
   - id: normal-tab-bar
@@ -37,7 +31,7 @@ settings:
     type: class-toggle
     default: false
   - id: hide-vault-switcher-and-settings
-    title: "Left sidebar: Hide the vault switcher and settings button"
+    title: 'Left sidebar: Hide the vault switcher and settings button'
     description: You can still access the settings via `cmd/ctrl + ,`.
     type: class-toggle
     default: false
@@ -49,9 +43,7 @@ settings:
   - id: show-suggester-instructions
     title: Re-enable suggester hints
     type: class-toggle
-    description:
-      Suggesters are modals like the command palette or quick switcher. By default, this theme hides
-      the keyboard hints at the bottom of those suggesters. Enable this to display them again.
+    description: Suggesters are modals like the command palette or quick switcher. By default, this theme hides the keyboard hints at the bottom of those suggesters. Enable this to display them again.
     default: false
   - id: show-new-tab-button
     title: Re-enable new tab button
@@ -62,16 +54,12 @@ settings:
   - id: show-tab-list-button
     title: Re-enable tab list button
     type: class-toggle
-    description:
-      You can still switch to tabs via quick switcher, and you can toggle stacked tabs via the
-      command palette.
+    description: You can still switch to tabs via quick switcher, and you can toggle stacked tabs via the command palette.
     default: false
   - id: show-sidebar-toggle-buttons
     title: Re-enable sidebar toggle buttons
     type: class-toggle
-    description:
-      Note that sidebar buttons of hidden sidebars are going to be inaccessible when also enable the
-      setting to hide the tab bar. You can still toggle the sidebars via command palette or hotkey.
+    description: Note that sidebar buttons of hidden sidebars are going to be inaccessible when also enable the setting to hide the tab bar. You can still toggle the sidebars via command palette or hotkey.
     default: false
   - id: show-close-buttons
     title: Re-enable close buttons
@@ -87,9 +75,6 @@ settings:
       By default, the URLs of markdown links are hidden in Source Mode, except for the currently active line.
       ℹ️ This setting can also be toggled via command palette or hotkey.
     default: false
-
-  #─────────────────────────────────────────────────────────────────────────────
-  # Status bar
   - id: show-hide-statusbar-elements
     title: Status bar items
     description: Hide individual status bar items from plugins.
@@ -124,9 +109,6 @@ settings:
     title: Hide the Shimmering Focus icon (⟡)
     type: class-toggle
     default: false
-
-  #─────────────────────────────────────────────────────────────────────────────
-  # Workspace
   - id: user-interface
     title: 🔲 Workspace
     description: Header bar, tab width, sidebars, notifications
@@ -135,18 +117,12 @@ settings:
     collapsed: true
   - id: normal-header-bar
     title: Use normal header bar (tab title bar)
-    description:
-      By default, this theme hides most of the header bar and moves the breadcrumbs to the right.
-      You can still toggle reading/editing mode, navigate back/forward, and rename your current file
-      with the respective command in the command palette or a hotkey. (This setting has no effect if
-      `Show tab title bar` in the appearance settings is disabled.)
+    description: By default, this theme hides most of the header bar and moves the breadcrumbs to the right. You can still toggle reading/editing mode, navigate back/forward, and rename your current file with the respective command in the command palette or a hotkey. (This setting has no effect if `Show tab title bar` in the appearance settings is disabled.)
     type: class-toggle
     default: false
   - id: tab-width
     title: Tab width
-    description:
-      Only affects tab width when there is enough space in the tab bar. (Obsidian automatically
-      reduces tab width when there are more open tabs than there is space for them.)
+    description: Only affects tab width when there is enough space in the tab bar. (Obsidian automatically reduces tab width when there are more open tabs than there is space for them.)
     type: variable-number-slider
     default: 250
     min: 100
@@ -154,10 +130,8 @@ settings:
     step: 25
     format: px
   - id: overlaying-right-sidebar
-    title: "Sidebars: Overlaying right sidebar"
-    description:
-      "The right sidebar is placed on top of the editor instead of making the editor more narrow
-      (i.e. the behavior on mobile)."
+    title: 'Sidebars: Overlaying right sidebar'
+    description: The right sidebar is placed on top of the editor instead of making the editor more narrow (i.e. the behavior on mobile).
     type: class-toggle
     default: false
   - id: hidden-sidebars-hidden-statusbar
@@ -166,31 +140,26 @@ settings:
     type: class-toggle
     default: false
   - id: notices-at-bottom-right
-    title: "Notifications: Display at bottom right"
-    description:
-      By default, Obsidian displays notifications at the top right. Enable this to display them at
-      the bottom right instead.
+    title: 'Notifications: Display at bottom right'
+    description: By default, Obsidian displays notifications at the top right. Enable this to display them at the bottom right instead.
     type: class-toggle
     default: false
-
-  #─────────────────────────────────────────────────────────────────────────────
-  # Fonts & Headings
   - id: font-settings
     title: 🔠 Font
-    description: "Headings, code"
+    description: Headings, code
     type: heading
     level: 1
     collapsed: true
   - id: font-info
-    description: "You can change the Text, UI, and Code font in the Obsidian settings: `Appearance → Font`"
+    description: 'You can change the Text, UI, and Code font in the Obsidian settings: `Appearance → Font`'
     type: info-text
     markdown: true
   - id: font-heading-theme
-    title: "Headings: Font family"
+    title: 'Headings: Font family'
     type: variable-text
     default: '"Optima", "Recursive S"'
   - id: code-size
-    title: "Code: Font size"
+    title: 'Code: Font size'
     type: variable-number-slider
     default: 0.875
     min: 0.5
@@ -198,7 +167,7 @@ settings:
     step: 0.05
     format: em
   - id: heading-scaling
-    title: "Headings: Font size"
+    title: 'Headings: Font size'
     description: The font size of *all* headings is multiplied by this factor.
     markdown: true
     type: variable-number-slider
@@ -207,20 +176,20 @@ settings:
     max: 1.5
     step: 0.05
   - id: no-alternating-header-colors
-    title: "Headings: No alternating colors"
+    title: 'Headings: No alternating colors'
     description: Do not colorize odd heading levels (h1, h3, h5).
     type: class-toggle
     default: false
   - id: no-heading-background
-    title: "Headings: Disable background"
+    title: 'Headings: Disable background'
     type: class-toggle
     default: false
   - id: no-lp-heading-level-indicator
-    title: "Headings: No level indicators in live preview"
+    title: 'Headings: No level indicators in live preview'
     type: class-toggle
     default: false
   - id: heading-letter-spacing
-    title: "Headings: Letter spacing"
+    title: 'Headings: Letter spacing'
     description: Amount of space between letters.
     type: variable-number-slider
     default: 1.5
@@ -228,8 +197,6 @@ settings:
     max: 3
     step: 0.5
     format: px
-  #─────────────────────────────────────────────────────────────────────────────
-  # Colors & shapes
   - id: aesthetics
     title: 🎨 Colors & shapes
     description: Alternative color schemes, angular shape, colored bold/italics, highlight color
@@ -247,9 +214,6 @@ settings:
       Especially submissions of classic, well-known color schemes are welcome.
     markdown: true
     type: info-text
-
-  #─────────────────────────────────────────────────────────────────────────────
-  # COLOR SCHEMES
   - id: alt-colorschemes
     title: Alternative color schemes
     description: Colorschemes submitted by the community
@@ -267,8 +231,6 @@ settings:
         value: colorscheme-everforest
       - label: Gruvbox
         value: colorscheme-grubox
-  #─────────────────────────────────────────────────────────────────────────────
-
   - id: bg-hue-light
     title: Background color tone (light mode)
     description: Only available when using the default color scheme.
@@ -293,13 +255,13 @@ settings:
   - id: uncolored-bold
     title: Uncolored bold
     markdown: true
-    description: "**Bold text** will use the standard text color instead of being colored."
+    description: '**Bold text** will use the standard text color instead of being colored.'
     type: class-toggle
     default: false
   - id: uncolored-italic
     title: Uncolored italic
     markdown: true
-    description: "*Italic text* will use the standard text color instead of being colored."
+    description: '*Italic text* will use the standard text color instead of being colored.'
     type: class-toggle
     default: false
   - id: highlight-hue-1
@@ -314,12 +276,9 @@ settings:
   - id: uncolored-strikethroughs
     title: Uncolored strikethroughs
     markdown: true
-    description: "~~Strikethrough text~~ will use the standard text color instead of being red."
+    description: ~~Strikethrough text~~ will use the standard text color instead of being red.
     type: class-toggle
     default: false
-
-  #─────────────────────────────────────────────────────────────────────────────
-  # Editor Content
   - id: content-settings
     title: 📑 Editor content
     description: Active block highlights, dimmed panes, code blocks, line length, trailing spaces
@@ -346,12 +305,10 @@ settings:
     min: 50
     max: 100
     step: 1
-    format: "%"
+    format: '%'
   - id: file-line-width
     title: Line length
-    description:
-      The length of the editor content when Obsidian's `Readable line length` setting is enabled.
-      The theme also adds a command `Toggle readable line length`.
+    description: The length of the editor content when Obsidian's `Readable line length` setting is enabled. The theme also adds a command `Toggle readable line length`.
     markdown: true
     type: variable-number-slider
     default: 700
@@ -359,7 +316,6 @@ settings:
     max: 2500
     step: 25
     format: px
-  # INFO dummy setting, hidden via css and only added for the toggle-command
   - id: readable-line-length-toggle
     title: readable line length
     addCommand: true
@@ -367,15 +323,9 @@ settings:
     default: false
   - id: hide-trailing-whitespace
     title: Hide trailing spaces
-    description:
-      'By default, this theme indicates the presence of trailing spaces when there are more than one
-      with "··↵". This can be useful for the "two space rule" in markdown, where exactly two spaces
-      at the end of a line enforce a line break.'
+    description: By default, this theme indicates the presence of trailing spaces when there are more than one with "··↵". This can be useful for the "two space rule" in markdown, where exactly two spaces at the end of a line enforce a line break.
     type: class-toggle
     default: false
-
-  #─────────────────────────────────────────────────────────────────────────────
-  # Media
   - id: media-settings
     title: 🖼️ Media
     description: Images & tables
@@ -383,23 +333,19 @@ settings:
     level: 1
     collapsed: true
   - id: no-image-alttext-caption
-    title: "Images: No alt-text as caption"
+    title: 'Images: No alt-text as caption'
     description: By default, the theme adds the alt-text/filename of an image as caption.
     type: class-toggle
     default: false
   - id: image-size
-    title: "Images: Size (percent)"
-    description:
-      The theme also adds a command `Toggle between reduced and full image size` which toggles
-      between 100% image size and the reduced image size below. In addition, clicking & holding
-      images will also enlarge an image.
+    title: 'Images: Size (percent)'
+    description: The theme also adds a command `Toggle between reduced and full image size` which toggles between 100% image size and the reduced image size below. In addition, clicking & holding images will also enlarge an image.
     type: variable-number-slider
     markdown: true
     default: 50
     min: 10
     max: 100
     step: 5
-  # INFO dummy setting, hidden via css and only added for the toggle-command
   - id: max-image-size-toggle
     title: between reduced and full image size
     addCommand: true
@@ -410,8 +356,6 @@ settings:
     markdown: true
     type: class-toggle
     default: false
-  #─────────────────────────────────────────────────────────────────────────────
-  # Vim mode
   - id: vim-mode
     title: 🏃 Vim mode
     description: Cursor, blinking, cursorline, relative line numbers, disable mouse hovers & tooltips
@@ -430,26 +374,20 @@ settings:
   - id: use-relative-line-numbers
     title: Relative line numbers
     markdown: true
-    description: "`Line numbers` must also be enabled in the Obsidian settings."
+    description: '`Line numbers` must also be enabled in the Obsidian settings.'
     type: class-toggle
     default: false
   - id: vim-active-visual-line
     title: Cursorline
     markdown: true
-    description:
-      Only works in normal mode. As opposed to the "active line indicator", this works on visual
-      lines instead of logical lines. This setting is independent of the "active block indicator"
-      setting, so both can be used at the same time.
+    description: Only works in normal mode. As opposed to the "active line indicator", this works on visual lines instead of logical lines. This setting is independent of the "active block indicator" setting, so both can be used at the same time.
     type: class-toggle
     default: false
   - id: no-mouse-hovers
-    title: 'Disable tooltips & "Edit this block" button'
+    title: Disable tooltips & "Edit this block" button
     description: Disables tooltips and buttons displayed when hovering various elements in Live Preview.
     type: class-toggle
     default: false
-
-  #─────────────────────────────────────────────────────────────────────────────
-  # Longform & writing
   - id: longform-settings
     title: ✍️ Longform & writing
     description: Settings for notes in longform projects and notes with the writing cssclass.
@@ -485,17 +423,17 @@ settings:
     step: 0.05
     format: px
   - id: wordcount-only-when-writing
-    title: "Status bar: Show word count only when longform/writing note is open"
+    title: 'Status bar: Show word count only when longform/writing note is open'
     description: Works for the Word Count core plugin and the Better Word Count community plugin.
     type: class-toggle
     default: false
   - id: hide-longform-status-bar
-    title: "Status bar: Hide longform wordcount"
+    title: 'Status bar: Hide longform wordcount'
     description: This affects the word count from the longform plugin, not the other word count plugins.
     type: class-toggle
     default: false
   - id: longform-tasks-different
-    title: "Tasks: Use gray instead of normal text color"
+    title: 'Tasks: Use gray instead of normal text color'
     description: This can help with differentiating tasks from "finished" text.
     type: class-toggle
     default: false
@@ -509,9 +447,6 @@ settings:
     description: Indent the first line of a paragraph and remove the spacing between paragraphs.
     type: class-toggle
     default: false
-
-  #─────────────────────────────────────────────────────────────────────────────
-  # Plugin-Specific Settings
   - id: plugin-specific-settings
     title: ⚙️ Plugin-specific settings
     description: File explorer, bookmarks, backlinks, outgoing links, outline, bases
@@ -519,59 +454,48 @@ settings:
     level: 1
     collapsed: true
   - id: hide-attachment-folders
-    title: "File explorer: Hide attachments folders"
-    description: 'Affects folders exactly named "attachments" (case-insensitive).'
+    title: 'File explorer: Hide attachments folders'
+    description: Affects folders exactly named "attachments" (case-insensitive).
     type: class-toggle
     default: false
   - id: show-file-explorer-navigation
-    title: "File explorer: Show buttons"
+    title: 'File explorer: Show buttons'
     type: class-toggle
-    description:
-      "The buttons for new file, new folder, and sorting. You can do the former two without the
-      buttons by right-clicking a folder."
+    description: The buttons for new file, new folder, and sorting. You can do the former two without the buttons by right-clicking a folder.
     default: false
   - id: show-bookmark-controls
-    title: "Bookmarks: Show buttons in sidebar"
-    description:
-      By default, the Bookmark plugin buttons for new bookmarks, new folders, and collapsing are
-      hidden. Enable this setting to show them again.
+    title: 'Bookmarks: Show buttons in sidebar'
+    description: By default, the Bookmark plugin buttons for new bookmarks, new folders, and collapsing are hidden. Enable this setting to show them again.
     type: class-toggle
     default: false
   - id: show-bookmark-icons
-    title: "Bookmarks: Show icons in sidebar"
-    description:
-      By default, the icons indicating bookmark types are hidden. Enable this setting to show them
-      again.
+    title: 'Bookmarks: Show icons in sidebar'
+    description: By default, the icons indicating bookmark types are hidden. Enable this setting to show them again.
     type: class-toggle
     default: false
   - id: normal-out-back-links
     title: Normal outgoing links and backlinks
-    description:
-      By default, the sidebar for outgoing links and backlinks are reduced to linked mentions only.
-      Enable this setting to restore their original display.
+    description: By default, the sidebar for outgoing links and backlinks are reduced to linked mentions only. Enable this setting to restore their original display.
     type: class-toggle
     default: false
   - id: classic-inline-backlinks
     title: Use normal inline backlinks
-    description:
-      By default, the inline-backlinks are displayed in a more minimalistic manner. Enable this
-      setting to restore original display of backlinks. This also affects the Influx plugin.
+    description: By default, the inline-backlinks are displayed in a more minimalistic manner. Enable this setting to restore original display of backlinks. This also affects the Influx plugin.
     type: class-toggle
     default: false
   - id: show-outline-buttons
-    title: "Outline: Show buttons in sidebar"
-    description:
-      By default, the outline plugin buttons for collapsing, expanding, and searching headings are
-      hidden. Enable this setting to show a compact version of them.
+    title: 'Outline: Show buttons in sidebar'
+    description: By default, the outline plugin buttons for collapsing, expanding, and searching headings are hidden. Enable this setting to show a compact version of them.
     default: false
     type: class-toggle
   - id: bases-hide-column-header-icons
-    title: "Bases: Hide column header icons"
+    title: 'Bases: Hide column header icons'
     default: false
     type: class-toggle
-
-  #─────────────────────────────────────────────────────────────────────────────
-  # Appendix
+  - id: show-various-complements-icon
+    title: 'Various complements: Show completion source icon'
+    default: false
+    type: class-toggle
   - id: appendix-info
     title: ℹ️ Info
     type: heading

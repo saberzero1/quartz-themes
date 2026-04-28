@@ -70,6 +70,9 @@ function generateFontFaceCSS(
 export interface ComposedTheme {
   css: string;
   effectiveMode: "dark" | "light" | "both";
+  /** The Style Settings YAML root id(s) from the base theme, if available. */
+  styleSettingsId?: string | string[];
+  classSettings?: Record<string, string>;
 }
 
 export function composeCSS(options: ThemeOptions): ComposedTheme {
@@ -146,7 +149,12 @@ export function composeCSS(options: ThemeOptions): ComposedTheme {
     "\n" +
     TEMPLATE_CSS;
 
-  return { css, effectiveMode };
+  return {
+    css,
+    effectiveMode,
+    styleSettingsId: baseTheme.meta.styleSettingsId,
+    classSettings: baseTheme.classSettings,
+  };
 }
 
 function resolveEffectiveMode(

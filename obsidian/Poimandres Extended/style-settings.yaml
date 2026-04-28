@@ -1,0 +1,171 @@
+name: Poimandres Extended
+id: poimandres-extended
+settings:
+  - id: section-variant
+    title: Variants
+    type: heading
+    level: 2
+  - id: pm-variant-storm
+    title: Storm
+    description: More vibrant palette [dark mode]
+    type: class-toggle
+    class: pm-variant-storm
+    default: false
+  - id: section-headings
+    title: Dividers
+    type: heading
+    level: 2
+  - id: h1-divider-on
+    title: H1 divider
+    type: class-toggle
+    class: h1-divider-on
+    default: false
+  - id: h2-divider-on
+    title: H2 divider
+    type: class-toggle
+    class: h2-divider-on
+    default: false
+  - id: h3-divider-on
+    title: H3 divider
+    type: class-toggle
+    class: h3-divider-on
+    default: false
+  - id: h4-divider-on
+    title: H4 divider
+    type: class-toggle
+    class: h4-divider-on
+    default: false
+  - id: h5-divider-on
+    title: H5 divider
+    type: class-toggle
+    class: h5-divider-on
+    default: false
+  - id: h6-divider-on
+    title: H6 divider
+    type: class-toggle
+    class: h6-divider-on
+    default: false
+  - id: section-selection
+    title: Selection color
+    type: heading
+    level: 2
+  - id: text-selection
+    title: Selection background
+    description: Mouse/text selection color (supports alpha)
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-light: rgb(113, 124, 180)
+    default-dark: rgb(113, 124, 180)
+  - id: section-code
+    title: Code
+    type: heading
+    level: 2
+  - id: code-background
+    title: Code background
+    description: Inline and block code background color
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-light: rgb(192, 208, 223)
+    default-dark: rgb(32, 36, 48)
+  - id: section-links-tags
+    title: Links & tags
+    type: heading
+    level: 2
+  - id: link-color
+    title: Link color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#0EBFFF'
+    default-dark: '#ADD7FF'
+  - id: link-color-hover
+    title: Link hover color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#FFD467'
+    default-dark: '#ADD7FF'
+  - id: tag-color
+    title: Tag text color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#62AA9B'
+    default-dark: '#89DDFF'
+  - id: tag-background
+    title: Tag background color
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-light: rgb(192, 208, 223)
+    default-dark: rgb(137, 221, 255)
+  - id: section-ui
+    title: UI
+    type: heading
+    level: 2
+  - id: scrollbar-width
+    title: Scrollbar width
+    type: variable-number-slider
+    default: 7
+    min: 0
+    max: 16
+    step: 1
+    format: px
+  - id: image-radius
+    title: Image border radius
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 24
+    step: 1
+    format: px
+  - id: checkbox-radius
+    title: Checkbox radius
+    type: variable-number-slider
+    default: 8
+    min: 0
+    max: 20
+    step: 1
+    format: px
+  - id: table-width
+    title: Table width
+    description: Max table width in container query width units
+    type: variable-number-slider
+    default: 88
+    min: 40
+    max: 120
+    step: 1
+    format: cqw
+  - id: section-scrollbar
+    title: Scrollbar Colors
+    type: heading
+    level: 2
+  - id: scrollbar-high-contrast
+    title: Higher contrast
+    description: Better visibility
+    type: class-toggle
+    class: scrollbar-high-contrast
+    default: false
+  - id: scrollbar-bg
+    title: Track color
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-light: rgb(254, 254, 255)
+    default-dark: rgb(27, 30, 40)
+  - id: scrollbar-thumb-bg
+    title: Thumb color
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-light: rgb(150, 156, 189)
+    default-dark: rgb(118, 124, 157)
+  - id: scrollbar-active-thumb-bg
+    title: Thumb hover color
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-light: rgb(150, 156, 189)
+    default-dark: rgb(118, 124, 157)

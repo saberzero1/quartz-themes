@@ -531,222 +531,200 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-h: 254 !important;
-  --accent-l: 68% !important;
-  --accent-s: 80% !important;
-  --background-modifier-active-hover: hsl(254, 80%, 68%, 15%) !important;
-  --background-modifier-border: rgb(54, 58, 79) !important;
-  --background-modifier-border-focus: rgb(110, 115, 141) !important;
-  --background-modifier-border-hover: rgb(91, 96, 120) !important;
-  --background-modifier-box-shadow: rgb(24, 25, 38, 30%) !important;
-  --background-modifier-cover: rgb(24, 25, 38, 90%) !important;
-  --background-modifier-error: rgb(237, 135, 150, 90%) !important;
-  --background-modifier-error-hover: rgb(237, 135, 150, 100%) !important;
-  --background-modifier-error-rgb: 237, 135, 150 !important;
-  --background-modifier-form-field: rgb(24, 25, 38, 30%) !important;
-  --background-modifier-form-field-highlighted: rgb(24, 25, 38, 22%) !important;
-  --background-modifier-form-field-hover: rgb(24, 25, 38, 30%) !important;
-  --background-modifier-hover: rgb(202, 211, 245, 7.5%) !important;
-  --background-modifier-message: rgb(0, 0, 0, 90%) !important;
-  --background-modifier-success: rgb(166, 218, 149, 90%) !important;
-  --background-modifier-success-rgb: 166, 218, 149 !important;
-  --background-primary: rgb(36, 39, 58) !important;
-  --background-primary-alt: rgb(30, 32, 48) !important;
-  --background-primary-rgb: 36, 39, 58 !important;
-  --background-secondary: rgb(30, 32, 48) !important;
-  --background-secondary-alt: rgb(24, 25, 38) !important;
-  --bases-cards-background: rgb(36, 39, 58) !important;
-  --bases-cards-cover-background: rgb(30, 32, 48) !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(54, 58, 79) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(91, 96, 120) !important;
-  --bases-embed-border-color: rgb(54, 58, 79) !important;
-  --bases-group-heading-property-color: rgb(165, 173, 203) !important;
-  --bases-table-border-color: rgb(54, 58, 79) !important;
-  --bases-table-cell-background-active: rgb(36, 39, 58) !important;
-  --bases-table-cell-background-disabled: rgb(30, 32, 48) !important;
-  --bases-table-cell-background-selected: hsla(254, 80%, 68%, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(110, 115, 141) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(183, 189, 248) !important;
-  --bases-table-group-background: rgb(30, 32, 48) !important;
-  --bases-table-header-background: rgb(36, 39, 58) !important;
-  --bases-table-header-background-hover: rgb(202, 211, 245, 7.5%) !important;
-  --bases-table-header-color: rgb(165, 173, 203) !important;
-  --bases-table-summary-background: rgb(36, 39, 58) !important;
-  --bases-table-summary-background-hover: rgb(202, 211, 245, 7.5%) !important;
-  --blockquote-border-color: rgb(183, 189, 248) !important;
-  --blur-background: color-mix(in srgb, rgb(54, 58, 79) 65%, transparent) linear-gradient(rgb(54, 58, 79), color-mix(in srgb, rgb(54, 58, 79) 65%, transparent)) !important;
-  --bodyFont: "Vollkorn",
+  --accent-h: 254;
+  --accent-l: 68%;
+  --accent-s: 80%;
+  --background-modifier-active-hover: hsl(var(--interactive-accent-hsl), 15%);
+  --background-modifier-border: rgb(var(--ctp-surface0));
+  --background-modifier-border-focus: var(--color-base-40, rgb(110, 115, 141));
+  --background-modifier-border-hover: var(--color-base-35, rgb(91, 96, 120));
+  --background-modifier-box-shadow: rgb(var(--ctp-crust), 30%);
+  --background-modifier-cover: rgb(var(--ctp-crust), 90%);
+  --background-modifier-error: rgb(var(--ctp-red), 90%);
+  --background-modifier-error-hover: rgb(var(--ctp-red), 100%);
+  --background-modifier-error-rgb: var(--ctp-red, 237, 135, 150);
+  --background-modifier-form-field: rgb(var(--ctp-crust), 30%);
+  --background-modifier-form-field-highlighted: rgb(var(--ctp-crust), 22%);
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, rgb(24, 25, 38, 30%));
+  --background-modifier-hover: rgb(var(--mono-rgb-100), 7.5%);
+  --background-modifier-message: rgb(0, 0, 0, 90%);
+  --background-modifier-success: rgb(var(--ctp-green), 90%);
+  --background-modifier-success-rgb: var(--ctp-green, 166, 218, 149);
+  --background-primary: rgb(var(--ctp-base));
+  --background-primary-alt: rgb(var(--ctp-mantle));
+  --background-primary-rgb: var(--ctp-base, 36, 39, 58);
+  --background-secondary: rgb(var(--ctp-mantle));
+  --background-secondary-alt: rgb(var(--ctp-crust));
+  --bases-cards-background: var(--background-primary, rgb(36, 39, 58));
+  --bases-cards-cover-background: var(--background-primary-alt, rgb(30, 32, 48));
+  --bases-embed-border-color: var(--background-modifier-border, rgb(54, 58, 79));
+  --bases-group-heading-property-color: var(--text-muted, rgb(165, 173, 203));
+  --bases-table-border-color: var(--table-border-color, rgb(54, 58, 79));
+  --bases-table-cell-background-active: var(--background-primary, rgb(36, 39, 58));
+  --bases-table-cell-background-disabled: var(--background-primary-alt, rgb(30, 32, 48));
+  --bases-table-cell-background-selected: var(--table-selection, hsla(254, 80%, 68%, 0.1));
+  --bases-table-group-background: var(--background-primary-alt, rgb(30, 32, 48));
+  --bases-table-header-background: var(--background-primary, rgb(36, 39, 58));
+  --bases-table-header-background-hover: var(--background-modifier-hover, rgb(202, 211, 245, 7.5%));
+  --bases-table-header-color: var(--text-muted, rgb(165, 173, 203));
+  --bases-table-summary-background: var(--background-primary, rgb(36, 39, 58));
+  --bases-table-summary-background-hover: var(--background-modifier-hover, rgb(202, 211, 245, 7.5%));
+  --blockquote-border-color: rgb(var(--ctp-lavender));
+  --bodyFont: var(--font-text-theme, "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --bold-weight: 600 !important;
+    sans-serif);
+  --bold-weight: var(--font-semibold, 600);
   --callout-border-opacity: 0.2;
   --callout-border-width: 0.25px;
-  --callout-bug: 237, 135, 150;
-  --callout-default: 138, 173, 244;
-  --callout-error: 237, 135, 150;
-  --callout-example: 198, 160, 246;
-  --callout-fail: 237, 135, 150;
-  --callout-important: 125, 196, 228;
-  --callout-info: 138, 173, 244;
-  --callout-padding: 12px 12px
-    12px 24px;
-  --callout-question: 238, 212, 159;
-  --callout-success: 166, 218, 149;
-  --callout-summary: 125, 196, 228;
-  --callout-tip: 125, 196, 228;
-  --callout-todo: 138, 173, 244;
-  --callout-warning: 245, 169, 127;
-  --canvas-background: rgb(36, 39, 58) !important;
-  --canvas-card-label-color: rgb(73, 77, 100) !important;
-  --canvas-color-1: 237, 135, 150 !important;
-  --canvas-color-2: 245, 169, 127 !important;
-  --canvas-color-3: 238, 212, 159 !important;
-  --canvas-color-4: 166, 218, 149 !important;
-  --canvas-color-5: 125, 196, 228 !important;
-  --canvas-color-6: 198, 160, 246 !important;
-  --canvas-dot-pattern: rgb(73, 77, 100) !important;
-  --caret-color: rgb(202, 211, 245) !important;
-  --checkbox-border-color: rgb(73, 77, 100) !important;
-  --checkbox-border-color-hover: rgb(165, 173, 203) !important;
-  --checkbox-color: rgb(183, 189, 248) !important;
-  --checkbox-color-hover: rgb(183, 189, 248) !important;
-  --checkbox-marker-color: rgb(36, 39, 58) !important;
-  --checklist-done-color: rgb(166, 218, 149) !important;
-  --code-background: rgb(30, 32, 48) !important;
-  --code-border-color: rgb(54, 58, 79) !important;
-  --code-bracket-background: rgb(202, 211, 245, 7.5%) !important;
-  --code-comment: rgb(73, 77, 100) !important;
-  --code-function: rgb(238, 212, 159) !important;
-  --code-important: rgb(245, 169, 127) !important;
-  --code-keyword: rgb(245, 189, 230) !important;
-  --code-normal: rgb(165, 173, 203) !important;
-  --code-operator: rgb(237, 135, 150) !important;
-  --code-property: rgb(145, 215, 227) !important;
-  --code-punctuation: rgb(165, 173, 203) !important;
-  --code-string: rgb(166, 218, 149) !important;
-  --code-tag: rgb(237, 135, 150) !important;
-  --code-value: rgb(183, 189, 248) !important;
-  --codeFont: "Vollkorn",
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --collapse-icon-color: rgb(73, 77, 100) !important;
-  --collapse-icon-color-collapsed: rgb(165, 173, 203) !important;
-  --color-accent: rgb(183, 189, 248) !important;
-  --color-accent-1: rgb(183, 189, 248) !important;
-  --color-accent-2: rgb(183, 189, 248, 90%) !important;
-  --color-accent-hsl: 254, 80%, 68% !important;
-  --color-base-00: rgb(24, 25, 38) !important;
-  --color-base-10: rgb(30, 32, 48) !important;
-  --color-base-100: rgb(202, 211, 245) !important;
-  --color-base-20: rgb(36, 39, 58) !important;
-  --color-base-25: rgb(54, 58, 79) !important;
-  --color-base-30: rgb(73, 77, 100) !important;
-  --color-base-35: rgb(91, 96, 120) !important;
-  --color-base-40: rgb(110, 115, 141) !important;
-  --color-base-50: rgb(128, 135, 162) !important;
-  --color-base-60: rgb(147, 154, 183) !important;
-  --color-base-70: rgb(165, 173, 203) !important;
-  --color-blue: rgb(138, 173, 244) !important;
-  --color-blue-rgb: 138, 173, 244 !important;
-  --color-cyan: rgb(145, 215, 227) !important;
-  --color-cyan-rgb: 125, 196, 228 !important;
-  --color-green: rgb(166, 218, 149) !important;
-  --color-green-rgb: 166, 218, 149 !important;
-  --color-orange: rgb(245, 169, 127) !important;
-  --color-orange-rgb: 245, 169, 127 !important;
-  --color-pink: rgb(245, 189, 230) !important;
-  --color-pink-rgb: 245, 189, 230 !important;
-  --color-purple: rgb(183, 189, 248) !important;
-  --color-purple-rgb: 198, 160, 246 !important;
-  --color-red: rgb(237, 135, 150) !important;
-  --color-red-rgb: 237, 135, 150 !important;
-  --color-yellow: rgb(238, 212, 159) !important;
-  --color-yellow-rgb: 238, 212, 159 !important;
-  --ctp-accent: 183, 189, 248 !important;
-  --ctp-base: 36, 39, 58 !important;
-  --ctp-blockquote: 244, 219, 214 !important;
-  --ctp-blue: 138, 173, 244 !important;
-  --ctp-bold: 125, 196, 228 !important;
-  --ctp-crust: 24, 25, 38 !important;
-  --ctp-flamingo: 240, 198, 198 !important;
-  --ctp-green: 166, 218, 149 !important;
-  --ctp-h1: 183, 189, 248 !important;
-  --ctp-h2: 183, 189, 248 !important;
-  --ctp-h3: 183, 189, 248 !important;
-  --ctp-h4: 183, 189, 248 !important;
-  --ctp-h5: 183, 189, 248 !important;
-  --ctp-h6: 183, 189, 248 !important;
-  --ctp-italic: 166, 218, 149 !important;
-  --ctp-lavender: 183, 189, 248 !important;
-  --ctp-mantle: 30, 32, 48 !important;
-  --ctp-maroon: 238, 153, 160 !important;
-  --ctp-mauve: 198, 160, 246 !important;
-  --ctp-overlay0: 110, 115, 141 !important;
-  --ctp-overlay1: 128, 135, 162 !important;
-  --ctp-overlay2: 147, 154, 183 !important;
-  --ctp-page-title: 202, 211, 245 !important;
-  --ctp-peach: 245, 169, 127 !important;
-  --ctp-pink: 245, 189, 230 !important;
-  --ctp-red: 237, 135, 150 !important;
-  --ctp-rosewater: 244, 219, 214 !important;
-  --ctp-sapphire: 125, 196, 228 !important;
-  --ctp-sky: 145, 215, 227 !important;
-  --ctp-strikethrough: 238, 153, 160 !important;
-  --ctp-subtext0: 165, 173, 203 !important;
-  --ctp-subtext1: 184, 192, 224 !important;
-  --ctp-surface0: 54, 58, 79 !important;
-  --ctp-surface1: 73, 77, 100 !important;
-  --ctp-surface2: 91, 96, 120 !important;
-  --ctp-tag-pill-color: 183, 189, 248 !important;
-  --ctp-teal: 139, 213, 202 !important;
-  --ctp-text: 202, 211, 245 !important;
-  --ctp-yellow: 238, 212, 159 !important;
-  --dark: rgb(202, 211, 245) !important;
-  --darkgray: rgb(202, 211, 245) !important;
-  --divider-color: rgb(54, 58, 79) !important;
-  --divider-color-hover: rgb(138, 173, 244) !important;
-  --divider-width-hover: 2px !important;
-  --drag-ghost-background: rgb(0, 0, 0, 85%) !important;
-  --drag-ghost-text-color: rgb(202, 211, 245) !important;
-  --dropdown-background: rgb(54, 58, 79) !important;
-  --dropdown-background-hover: rgb(73, 77, 100) !important;
+  --callout-bug: var(--color-red-rgb, 237, 135, 150);
+  --callout-default: var(--color-blue-rgb, 138, 173, 244);
+  --callout-error: var(--color-red-rgb, 237, 135, 150);
+  --callout-example: var(--color-purple-rgb, 198, 160, 246);
+  --callout-fail: var(--color-red-rgb, 237, 135, 150);
+  --callout-important: var(--color-cyan-rgb, 125, 196, 228);
+  --callout-info: var(--color-blue-rgb, 138, 173, 244);
+  --callout-padding: var(--size-4-3) var(--size-4-3)
+    var(--size-4-3) var(--size-4-6, 12px 12px
+    12px 24px);
+  --callout-question: var(--color-yellow-rgb, 238, 212, 159);
+  --callout-success: var(--color-green-rgb, 166, 218, 149);
+  --callout-summary: var(--color-cyan-rgb, 125, 196, 228);
+  --callout-tip: var(--color-cyan-rgb, 125, 196, 228);
+  --callout-todo: var(--color-blue-rgb, 138, 173, 244);
+  --callout-warning: var(--color-orange-rgb, 245, 169, 127);
+  --canvas-background: var(--background-primary, rgb(36, 39, 58));
+  --canvas-card-label-color: var(--text-faint, rgb(73, 77, 100));
+  --canvas-color-1: var(--color-red-rgb, 237, 135, 150);
+  --canvas-color-2: var(--color-orange-rgb, 245, 169, 127);
+  --canvas-color-3: var(--color-yellow-rgb, 238, 212, 159);
+  --canvas-color-4: var(--color-green-rgb, 166, 218, 149);
+  --canvas-color-5: var(--color-cyan-rgb, 125, 196, 228);
+  --canvas-color-6: var(--color-purple-rgb, 198, 160, 246);
+  --canvas-dot-pattern: var(--color-base-30, rgb(73, 77, 100));
+  --caret-color: var(--text-normal, rgb(202, 211, 245));
+  --checkbox-border-color: var(--text-faint, rgb(73, 77, 100));
+  --checkbox-border-color-hover: var(--text-muted, rgb(165, 173, 203));
+  --checkbox-color: var(--interactive-accent, rgb(183, 189, 248));
+  --checkbox-color-hover: var(--interactive-accent-hover, rgb(183, 189, 248));
+  --checkbox-marker-color: var(--background-primary, rgb(36, 39, 58));
+  --checklist-done-color: rgb(var(--ctp-green));
+  --code-background: var(--background-primary-alt, rgb(30, 32, 48));
+  --code-border-color: var(--background-modifier-border, rgb(54, 58, 79));
+  --code-bracket-background: var(--background-modifier-hover, rgb(202, 211, 245, 7.5%));
+  --code-comment: var(--text-faint, rgb(73, 77, 100));
+  --code-function: var(--color-yellow, rgb(238, 212, 159));
+  --code-important: var(--color-orange, rgb(245, 169, 127));
+  --code-keyword: var(--color-pink, rgb(245, 189, 230));
+  --code-normal: var(--text-muted, rgb(165, 173, 203));
+  --code-operator: var(--color-red, rgb(237, 135, 150));
+  --code-property: var(--color-cyan, rgb(145, 215, 227));
+  --code-punctuation: var(--text-muted, rgb(165, 173, 203));
+  --code-string: var(--color-green, rgb(166, 218, 149));
+  --code-tag: var(--color-red, rgb(237, 135, 150));
+  --code-value: var(--color-purple, rgb(183, 189, 248));
+  --collapse-icon-color: var(--text-faint, rgb(73, 77, 100));
+  --collapse-icon-color-collapsed: var(--text-muted, rgb(165, 173, 203));
+  --color-accent: rgb(var(--ctp-accent));
+  --color-accent-1: rgb(var(--ctp-accent));
+  --color-accent-2: rgb(var(--ctp-accent), 90%);
+  --color-base-00: rgb(var(--ctp-crust));
+  --color-base-10: rgb(var(--ctp-mantle));
+  --color-base-100: rgb(var(--ctp-text));
+  --color-base-20: rgb(var(--ctp-base));
+  --color-base-25: rgb(var(--ctp-surface0));
+  --color-base-30: rgb(var(--ctp-surface1));
+  --color-base-35: rgb(var(--ctp-surface2));
+  --color-base-40: rgb(var(--ctp-overlay0));
+  --color-base-50: rgb(var(--ctp-overlay1));
+  --color-base-60: rgb(var(--ctp-overlay2));
+  --color-base-70: rgb(var(--ctp-subtext0));
+  --color-blue: rgb(var(--ctp-blue));
+  --color-blue-rgb: var(--ctp-blue, 138, 173, 244);
+  --color-cyan: rgb(var(--ctp-sky));
+  --color-cyan-rgb: var(--ctp-sapphire, 125, 196, 228);
+  --color-green: rgb(var(--ctp-green));
+  --color-green-rgb: var(--ctp-green, 166, 218, 149);
+  --color-orange: rgb(var(--ctp-peach));
+  --color-orange-rgb: var(--ctp-peach, 245, 169, 127);
+  --color-pink: rgb(var(--ctp-pink));
+  --color-pink-rgb: var(--ctp-pink, 245, 189, 230);
+  --color-purple: rgb(var(--ctp-lavender));
+  --color-purple-rgb: var(--ctp-mauve, 198, 160, 246);
+  --color-red: rgb(var(--ctp-red));
+  --color-red-rgb: var(--ctp-red, 237, 135, 150);
+  --color-yellow: rgb(var(--ctp-yellow));
+  --color-yellow-rgb: var(--ctp-yellow, 238, 212, 159);
+  --ctp-accent: var(--ctp-lavender, 183, 189, 248);
+  --ctp-base: 36, 39, 58;
+  --ctp-blockquote: var(--ctp-rosewater, 244, 219, 214);
+  --ctp-blue: 138, 173, 244;
+  --ctp-bold: var(--ctp-sapphire, 125, 196, 228);
+  --ctp-crust: 24, 25, 38;
+  --ctp-flamingo: 240, 198, 198;
+  --ctp-green: 166, 218, 149;
+  --ctp-h1: var(--ctp-accent, 183, 189, 248);
+  --ctp-h2: var(--ctp-accent, 183, 189, 248);
+  --ctp-h3: var(--ctp-accent, 183, 189, 248);
+  --ctp-h4: var(--ctp-accent, 183, 189, 248);
+  --ctp-h5: var(--ctp-accent, 183, 189, 248);
+  --ctp-h6: var(--ctp-accent, 183, 189, 248);
+  --ctp-italic: var(--ctp-green, 166, 218, 149);
+  --ctp-lavender: 183, 189, 248;
+  --ctp-mantle: 30, 32, 48;
+  --ctp-maroon: 238, 153, 160;
+  --ctp-mauve: 198, 160, 246;
+  --ctp-overlay0: 110, 115, 141;
+  --ctp-overlay1: 128, 135, 162;
+  --ctp-overlay2: 147, 154, 183;
+  --ctp-page-title: var(--ctp-text, 202, 211, 245);
+  --ctp-peach: 245, 169, 127;
+  --ctp-pink: 245, 189, 230;
+  --ctp-red: 237, 135, 150;
+  --ctp-rosewater: 244, 219, 214;
+  --ctp-sapphire: 125, 196, 228;
+  --ctp-sky: 145, 215, 227;
+  --ctp-strikethrough: var(--ctp-maroon, 238, 153, 160);
+  --ctp-subtext0: 165, 173, 203;
+  --ctp-subtext1: 184, 192, 224;
+  --ctp-surface0: 54, 58, 79;
+  --ctp-surface1: 73, 77, 100;
+  --ctp-surface2: 91, 96, 120;
+  --ctp-tag-pill-color: var(--ctp-accent, 183, 189, 248);
+  --ctp-teal: 139, 213, 202;
+  --ctp-text: 202, 211, 245;
+  --ctp-yellow: 238, 212, 159;
+  --dark: var(--text-normal, rgb(var(--ctp-text)));
+  --darkgray: var(--text-normal, rgb(var(--ctp-text)));
+  --divider-color: var(--background-modifier-border, rgb(54, 58, 79));
+  --divider-color-hover: rgb(var(--ctp-blue));
+  --divider-width-hover: 2px;
+  --drag-ghost-background: rgb(0, 0, 0, 85%);
+  --drag-ghost-text-color: var(--text-normal, rgb(202, 211, 245));
+  --dropdown-background: var(--interactive-normal, rgb(54, 58, 79));
+  --dropdown-background-hover: var(--interactive-hover, rgb(73, 77, 100));
   --embed-block-shadow-hover: 0 0 0 1px
-    rgb(54, 58, 79),
-    inset 0 0 0 1px rgb(54, 58, 79) !important;
-  --embed-border-left: 2px solid rgb(183, 189, 248) !important;
-  --embed-border-right: none !important;
-  --embed-border-start: 2px solid rgb(183, 189, 248) !important;
-  --file-header-background: rgb(36, 39, 58) !important;
-  --file-header-background-focused: rgb(36, 39, 58) !important;
-  --file-header-font: "Nunito Sans",
+    var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border);
+  --embed-border-left: 2px solid var(--interactive-accent);
+  --embed-border-right: none;
+  --file-header-background: var(--background-primary, rgb(36, 39, 58));
+  --file-header-background-focused: var(--background-primary, rgb(36, 39, 58));
+  --file-header-font: var(--font-interface, "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --file-margins: 32px !important;
-  --flair-background: rgb(54, 58, 79) !important;
-  --flair-color: rgb(202, 211, 245) !important;
-  --font-interface: "Nunito Sans",
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --file-margins: var(--size-4-8, 32px);
+  --flair-background: var(--interactive-normal, rgb(54, 58, 79));
+  --flair-color: var(--text-normal, rgb(202, 211, 245));
   --font-interface-theme: "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
@@ -754,31 +732,15 @@ export const theme: ThemeData = {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif !important;
-  --font-mermaid: "Vollkorn",
+    sans-serif;
+  --font-mermaid: var(--font-text, "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-print: "Vollkorn",
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif, Arial' !important;
-  --font-text: "Vollkorn",
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   --font-text-theme: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
@@ -786,335 +748,331 @@ export const theme: ThemeData = {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif !important;
-  --font-ui-medium: 16px !important;
-  --footnote-divider-color: rgb(54, 58, 79) !important;
-  --footnote-id-color: rgb(165, 173, 203) !important;
-  --footnote-id-color-no-occurrences: rgb(73, 77, 100) !important;
-  --footnote-input-background-active: rgb(202, 211, 245, 7.5%) !important;
-  --graph-line: rgb(91, 96, 120) !important;
-  --graph-node: rgb(165, 173, 203) !important;
-  --graph-node-attachment: rgb(238, 212, 159) !important;
-  --graph-node-focused: rgb(183, 189, 248) !important;
-  --graph-node-tag: rgb(166, 218, 149) !important;
-  --graph-node-unresolved: rgb(73, 77, 100) !important;
-  --graph-text: rgb(202, 211, 245) !important;
-  --gray: rgb(165, 173, 203) !important;
-  --h1-line-height: 1.5 !important;
-  --h1-size: 2em !important;
-  --h2-line-height: 1.5 !important;
-  --h2-size: 1.6em !important;
-  --h2-weight: 600 !important;
-  --h3-line-height: 1.5 !important;
-  --h3-size: 1.37em !important;
-  --h3-weight: 600 !important;
-  --h4-line-height: 1.5 !important;
-  --h4-size: 1.25em !important;
-  --h4-weight: 600 !important;
-  --h5-size: 1.12em !important;
-  --h5-weight: 600 !important;
-  --h6-size: 1.12em !important;
-  --headerFont: "Vollkorn",
+    sans-serif;
+  --font-ui-medium: 16px;
+  --footnote-divider-color: var(--metadata-divider-color, rgb(54, 58, 79));
+  --footnote-id-color: var(--text-muted, rgb(165, 173, 203));
+  --footnote-id-color-no-occurrences: var(--text-faint, rgb(73, 77, 100));
+  --footnote-input-background-active: var(--metadata-input-background-active, rgb(202, 211, 245, 7.5%));
+  --graph-line: var(
+      --color-base-35,
+      var(--background-modifier-border-focus)
+    );
+  --graph-node: var(--text-muted, rgb(165, 173, 203));
+  --graph-node-attachment: var(--color-yellow, rgb(238, 212, 159));
+  --graph-node-focused: var(--text-accent, rgb(183, 189, 248));
+  --graph-node-tag: var(--color-green, rgb(166, 218, 149));
+  --graph-node-unresolved: var(--text-faint, rgb(73, 77, 100));
+  --graph-text: var(--text-normal, rgb(202, 211, 245));
+  --gray: var(--text-muted, rgb(var(--ctp-subtext0)));
+  --h1-line-height: 1.5;
+  --h1-size: 2em;
+  --h2-line-height: 1.5;
+  --h2-size: 1.6em;
+  --h2-weight: 600;
+  --h3-line-height: 1.5;
+  --h3-size: 1.37em;
+  --h3-weight: 600;
+  --h4-line-height: 1.5;
+  --h4-size: 1.25em;
+  --h4-weight: 600;
+  --h5-size: 1.12em;
+  --h5-weight: 600;
+  --h6-size: 1.12em;
+  --headerFont: var(--font-text-theme, "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: rgb(73, 77, 100) !important;
-  --hex-blue: #8aadf4 !important;
-  --hex-green: #a6da95 !important;
-  --hex-lavender: #b7bdf8 !important;
-  --hex-mauve: #c6a0f6 !important;
-  --hex-peach: #f5a97f !important;
-  --hex-pink: #f5bde6 !important;
-  --hex-red: #ed8796 !important;
-  --hex-sapphire: #7dc4e4 !important;
-  --hex-sky: #91d7e3 !important;
-  --hex-teal: #8bd5ca !important;
-  --hex-yellow: #eed49f !important;
-  --highlight: rgb(244, 219, 214, 100%) !important;
-  --hr-color: rgb(138, 173, 244) !important;
-  --icon-color: rgb(165, 173, 203) !important;
-  --icon-color-active: rgb(183, 189, 248) !important;
-  --icon-color-focused: rgb(202, 211, 245) !important;
-  --icon-color-hover: rgb(30, 32, 48) !important;
-  --icon-opacity: 1 !important;
-  --indentation-guide-color: rgb(73, 77, 100) !important;
-  --indentation-guide-color-active: rgb(125, 196, 228, 70%) !important;
-  --indentation-guide-width: 2px !important;
-  --inline-title-line-height: 1.5 !important;
-  --inline-title-size: 2em !important;
-  --input-date-separator: rgb(73, 77, 100) !important;
-  --input-placeholder-color: rgb(73, 77, 100) !important;
-  --interactive-accent: rgb(183, 189, 248) !important;
-  --interactive-accent-hover: rgb(183, 189, 248) !important;
-  --interactive-accent-hsl: 254, 80%, 68% !important;
-  --interactive-accent-rgb: 183, 189, 248 !important;
-  --interactive-hover: rgb(73, 77, 100) !important;
-  --interactive-normal: rgb(54, 58, 79) !important;
-  --interactive-success: rgb(166, 218, 149) !important;
-  --light: rgb(36, 39, 58) !important;
-  --lightgray: rgb(30, 32, 48) !important;
-  --line-height-tight: 1.25 !important;
-  --link-color: rgb(138, 173, 244) !important;
-  --link-color-hover: rgb(138, 173, 244) !important;
-  --link-decoration: none !important;
-  --link-decoration-thickness: 2px !important;
-  --link-external-color: rgb(139, 213, 202) !important;
-  --link-external-color-hover: rgb(139, 213, 202) !important;
-  --link-external-decoration: none !important;
-  --link-unresolved-color: rgb(238, 153, 160) !important;
-  --link-unresolved-decoration-color: rgb(237, 135, 150) !important;
-  --link-unresolved-opacity: 1 !important;
-  --list-indent: 2em !important;
-  --list-marker-color: rgb(125, 196, 228) !important;
-  --list-marker-color-collapsed: rgb(183, 189, 248) !important;
-  --list-marker-color-hover: rgb(165, 173, 203) !important;
-  --list-spacing: 0.1em !important;
-  --menu-background: rgb(30, 32, 48) !important;
-  --menu-border-color: rgb(91, 96, 120) !important;
-  --metadata-border-color: rgb(54, 58, 79) !important;
-  --metadata-divider-color: rgb(54, 58, 79) !important;
-  --metadata-input-background-active: rgb(202, 211, 245, 7.5%) !important;
-  --metadata-input-font: "Nunito Sans",
+    sans-serif);
+  --heading-formatting: var(--text-faint, rgb(73, 77, 100));
+  --hex-blue: #8aadf4;
+  --hex-green: #a6da95;
+  --hex-lavender: #b7bdf8;
+  --hex-mauve: #c6a0f6;
+  --hex-peach: #f5a97f;
+  --hex-pink: #f5bde6;
+  --hex-red: #ed8796;
+  --hex-sapphire: #7dc4e4;
+  --hex-sky: #91d7e3;
+  --hex-teal: #8bd5ca;
+  --hex-yellow: #eed49f;
+  --highlight: var(--text-highlight-bg, rgb(var(--ctp-rosewater), 100%));
+  --hr-color: rgb(var(--ctp-blue));
+  --icon-color: var(--text-muted, rgb(165, 173, 203));
+  --icon-color-active: var(--text-accent, rgb(183, 189, 248));
+  --icon-color-focused: var(--text-normal, rgb(202, 211, 245));
+  --icon-color-hover: var(--text-on-accent, rgb(30, 32, 48));
+  --icon-opacity: 1;
+  --indentation-guide-color: rgb(var(--ctp-surface1));
+  --indentation-guide-color-active: rgb(var(--ctp-sapphire), 70%);
+  --indentation-guide-width: var(--border-width, 2px);
+  --inline-title-line-height: var(--h1-line-height, 1.5);
+  --inline-title-size: var(--h1-size, 2em);
+  --input-date-separator: var(--text-faint, rgb(73, 77, 100));
+  --input-placeholder-color: var(--text-faint, rgb(73, 77, 100));
+  --interactive-accent: rgb(var(--ctp-accent));
+  --interactive-accent-hover: rgb(var(--ctp-accent));
+  --interactive-accent-hsl: var(--color-accent-hsl, 254, 80%, 68%);
+  --interactive-accent-rgb: var(--ctp-accent, 183, 189, 248);
+  --interactive-hover: rgb(var(--ctp-surface1));
+  --interactive-normal: rgb(var(--ctp-surface0));
+  --interactive-success: rgb(var(--ctp-green));
+  --light: var(--background-primary, rgb(var(--ctp-base)));
+  --lightgray: var(--background-secondary, rgb(var(--ctp-mantle)));
+  --line-height-tight: 1.25;
+  --link-color: rgb(var(--ctp-blue));
+  --link-color-hover: rgb(var(--ctp-blue));
+  --link-decoration: none;
+  --link-decoration-thickness: 2px;
+  --link-external-color: rgb(var(--ctp-teal));
+  --link-external-color-hover: rgb(var(--ctp-teal));
+  --link-external-decoration: none;
+  --link-unresolved-color: rgb(var(--ctp-maroon));
+  --link-unresolved-decoration-color: rgb(var(--ctp-red));
+  --link-unresolved-opacity: 1;
+  --list-marker-color: rgb(var(--ctp-sapphire));
+  --list-marker-color-collapsed: var(--text-accent, rgb(183, 189, 248));
+  --list-marker-color-hover: var(--text-muted, rgb(165, 173, 203));
+  --list-spacing: 0.1em;
+  --menu-background: var(--background-secondary, rgb(30, 32, 48));
+  --menu-border-color: var(--background-modifier-border-hover, rgb(91, 96, 120));
+  --metadata-border-color: var(--background-modifier-border, rgb(54, 58, 79));
+  --metadata-divider-color: var(--background-modifier-border, rgb(54, 58, 79));
+  --metadata-input-background-active: var(--background-modifier-hover, rgb(202, 211, 245, 7.5%));
+  --metadata-input-font: var(--font-interface, "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: rgb(202, 211, 245) !important;
-  --metadata-label-background-active: rgb(202, 211, 245, 7.5%) !important;
-  --metadata-label-font: "Nunito Sans",
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-input-text-color: var(--text-normal, rgb(202, 211, 245));
+  --metadata-label-background-active: var(--background-modifier-hover, rgb(202, 211, 245, 7.5%));
+  --metadata-label-font: var(--font-interface, "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: rgb(165, 173, 203) !important;
-  --metadata-label-text-color-hover: rgb(165, 173, 203) !important;
-  --metadata-property-background-active: rgb(202, 211, 245, 7.5%) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(110, 115, 141) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(91, 96, 120) !important;
-  --modal-background: rgb(36, 39, 58) !important;
-  --modal-border-color: rgb(110, 115, 141) !important;
-  --modal-radius: 10px !important;
-  --mono-rgb-0: 24, 25, 38 !important;
-  --mono-rgb-100: 202, 211, 245 !important;
-  --nav-collapse-icon-color: rgb(73, 77, 100) !important;
-  --nav-collapse-icon-color-collapsed: rgb(73, 77, 100) !important;
-  --nav-heading-color: rgb(202, 211, 245) !important;
-  --nav-heading-color-collapsed: rgb(73, 77, 100) !important;
-  --nav-heading-color-collapsed-hover: rgb(165, 173, 203) !important;
-  --nav-heading-color-hover: rgb(202, 211, 245) !important;
-  --nav-indentation-guide-color: rgb(73, 77, 100) !important;
-  --nav-indentation-guide-width: 2px !important;
-  --nav-item-background-active: rgb(202, 211, 245, 7.5%) !important;
-  --nav-item-background-hover: rgb(202, 211, 245, 7.5%) !important;
-  --nav-item-background-selected: hsl(254, 80%, 68%, 20%) !important;
-  --nav-item-children-margin-left: 12px !important;
-  --nav-item-children-padding-left: 4px !important;
-  --nav-item-color: rgb(165, 173, 203) !important;
-  --nav-item-color-active: rgb(30, 32, 48) !important;
-  --nav-item-color-highlighted: rgb(183, 189, 248) !important;
-  --nav-item-color-hover: rgb(30, 32, 48) !important;
-  --nav-item-color-selected: rgb(30, 32, 48) !important;
-  --nav-item-white-space: nowrap !important;
-  --nav-tag-color: rgb(73, 77, 100) !important;
-  --nav-tag-color-active: rgb(165, 173, 203) !important;
-  --nav-tag-color-hover: rgb(165, 173, 203) !important;
-  --pdf-background: rgb(36, 39, 58) !important;
-  --pdf-page-background: rgb(36, 39, 58) !important;
-  --pdf-shadow: 0 0 0 1px rgb(54, 58, 79) !important;
-  --pdf-sidebar-background: rgb(36, 39, 58) !important;
-  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgb(54, 58, 79) !important;
-  --pill-border-color: rgb(54, 58, 79) !important;
-  --pill-border-color-hover: rgb(91, 96, 120) !important;
-  --pill-color: rgb(165, 173, 203) !important;
-  --pill-color-hover: rgb(202, 211, 245) !important;
-  --pill-color-remove: rgb(73, 77, 100) !important;
-  --pill-color-remove-hover: rgb(183, 189, 248) !important;
-  --popover-max-height: 70vh !important;
-  --popover-pdf-height: 800px !important;
-  --popover-pdf-width: 600px !important;
-  --prompt-background: rgb(36, 39, 58) !important;
-  --prompt-border-color: rgb(110, 115, 141) !important;
-  --radius-l: 10px !important;
-  --raised-background: color-mix(in srgb, rgb(54, 58, 79) 65%, transparent) linear-gradient(rgb(54, 58, 79), color-mix(in srgb, rgb(54, 58, 79) 65%, transparent)) !important;
-  --ribbon-background: rgb(30, 32, 48) !important;
-  --ribbon-background-collapsed: rgb(36, 39, 58) !important;
-  --ribbon-padding: 8px 4px
-    12px !important;
-  --scrollbar-active-thumb-bg: rgb(202, 211, 245, 20%) !important;
-  --scrollbar-bg: rgb(202, 211, 245, 5%) !important;
-  --scrollbar-radius: 10px !important;
-  --scrollbar-thumb-bg: rgb(202, 211, 245, 10%) !important;
-  --search-clear-button-color: rgb(165, 173, 203) !important;
-  --search-icon-color: rgb(165, 173, 203) !important;
-  --search-result-background: rgb(36, 39, 58) !important;
-  --secondary: rgb(183, 189, 248) !important;
-  --setting-group-heading-color: rgb(202, 211, 245) !important;
-  --setting-group-heading-size: 16px !important;
-  --setting-items-background: rgb(30, 32, 48) !important;
-  --setting-items-border-color: rgb(54, 58, 79) !important;
-  --setting-items-radius: 10px !important;
-  --shiki-active-tab-border-color: rgb(165, 173, 203) !important;
-  --shiki-code-background: rgb(30, 32, 48) !important;
-  --shiki-code-comment: rgb(73, 77, 100) !important;
-  --shiki-code-function: rgb(166, 218, 149) !important;
-  --shiki-code-important: rgb(245, 169, 127) !important;
-  --shiki-code-keyword: rgb(245, 189, 230) !important;
-  --shiki-code-normal: rgb(165, 173, 203) !important;
-  --shiki-code-property: rgb(145, 215, 227) !important;
-  --shiki-code-punctuation: rgb(165, 173, 203) !important;
-  --shiki-code-string: rgb(238, 212, 159) !important;
-  --shiki-code-value: rgb(183, 189, 248) !important;
-  --shiki-gutter-border-color: rgb(54, 58, 79) !important;
-  --shiki-gutter-text-color: rgb(73, 77, 100) !important;
-  --shiki-gutter-text-color-highlight: rgb(165, 173, 203) !important;
-  --shiki-highlight-green: rgba(166, 218, 149, 0.5) !important;
-  --shiki-highlight-green-background: rgba(166, 218, 149, 0.1) !important;
-  --shiki-highlight-neutral: rgb(165, 173, 203) !important;
-  --shiki-highlight-neutral-background: rgba(202, 211, 245, 0.05) !important;
-  --shiki-highlight-red: rgba(237, 135, 150, 0.5) !important;
-  --shiki-highlight-red-background: rgba(237, 135, 150, 0.1) !important;
-  --shiki-terminal-dots-color: rgb(73, 77, 100) !important;
-  --shiki-tooltip-background: rgb(0, 0, 0, 90%) !important;
-  --sidebar-markdown-font-size: 14.4px !important;
-  --slider-thumb-border-color: rgb(91, 96, 120) !important;
-  --slider-thumb-radius: 50% !important;
-  --slider-track-background: rgb(54, 58, 79) !important;
-  --status-bar-background: rgb(30, 32, 48) !important;
-  --status-bar-border-color: rgb(54, 58, 79) !important;
-  --status-bar-scroll-padding: 30px !important;
-  --status-bar-text-color: rgb(165, 173, 203) !important;
-  --suggestion-background: rgb(36, 39, 58) !important;
-  --swatch-height: 24px !important;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-label-text-color: var(--text-muted, rgb(165, 173, 203));
+  --metadata-label-text-color-hover: var(--text-muted, rgb(165, 173, 203));
+  --metadata-property-background-active: var(--background-modifier-hover, rgb(202, 211, 245, 7.5%));
+  --modal-background: var(--background-primary, rgb(36, 39, 58));
+  --modal-border-color: var(
+      --color-base-40,
+      var(--background-modifier-border-focus)
+    );
+  --modal-radius: var(--radius-l, 10px);
+  --mono-rgb-0: var(--ctp-crust, 24, 25, 38);
+  --mono-rgb-100: var(--ctp-text, 202, 211, 245);
+  --nav-collapse-icon-color: var(--collapse-icon-color, rgb(73, 77, 100));
+  --nav-collapse-icon-color-collapsed: var(--text-faint, rgb(73, 77, 100));
+  --nav-heading-color: var(--text-normal, rgb(202, 211, 245));
+  --nav-heading-color-collapsed: var(--text-faint, rgb(73, 77, 100));
+  --nav-heading-color-collapsed-hover: var(--text-muted, rgb(165, 173, 203));
+  --nav-heading-color-hover: var(--text-normal, rgb(202, 211, 245));
+  --nav-indentation-guide-color: var(--indentation-guide-color, rgb(73, 77, 100));
+  --nav-indentation-guide-width: var(--indentation-guide-width, 2px);
+  --nav-item-background-active: var(--background-modifier-hover, rgb(202, 211, 245, 7.5%));
+  --nav-item-background-hover: var(--background-modifier-hover, rgb(202, 211, 245, 7.5%));
+  --nav-item-background-selected: hsl(var(--color-accent-hsl), 20%);
+  --nav-item-children-margin-left: var(--size-4-3, 12px);
+  --nav-item-children-padding-left: var(--size-2-2, 4px);
+  --nav-item-color: var(--text-muted, rgb(165, 173, 203));
+  --nav-item-color-active: var(--text-on-accent, rgb(30, 32, 48));
+  --nav-item-color-highlighted: var(--text-accent-hover, rgb(183, 189, 248));
+  --nav-item-color-hover: var(--text-on-accent, rgb(30, 32, 48));
+  --nav-item-color-selected: var(--text-on-accent, rgb(30, 32, 48));
+  --nav-item-white-space: nowrap;
+  --nav-tag-color: var(--text-faint, rgb(73, 77, 100));
+  --nav-tag-color-active: var(--text-muted, rgb(165, 173, 203));
+  --nav-tag-color-hover: var(--text-muted, rgb(165, 173, 203));
+  --pdf-background: var(--background-primary, rgb(36, 39, 58));
+  --pdf-page-background: var(--background-primary, rgb(36, 39, 58));
+  --pdf-sidebar-background: var(--background-primary, rgb(36, 39, 58));
+  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --pill-border-color: var(--background-modifier-border, rgb(54, 58, 79));
+  --pill-border-color-hover: var(--background-modifier-border-hover, rgb(91, 96, 120));
+  --pill-color: var(--text-muted, rgb(165, 173, 203));
+  --pill-color-hover: var(--text-normal, rgb(202, 211, 245));
+  --pill-color-remove: var(--text-faint, rgb(73, 77, 100));
+  --pill-color-remove-hover: var(--text-accent, rgb(183, 189, 248));
+  --popover-max-height: 70vh;
+  --popover-pdf-height: 800px;
+  --popover-pdf-width: 600px;
+  --prompt-background: var(--background-primary, rgb(36, 39, 58));
+  --prompt-border-color: var(
+      --color-base-40,
+      var(--background-modifier-border-focus)
+    );
+  --radius-l: 10px;
+  --raised-background: var(--blur-background, color-mix(in srgb, rgb(54, 58, 79) 65%, transparent) linear-gradient(rgb(54, 58, 79), color-mix(in srgb, rgb(54, 58, 79) 65%, transparent)));
+  --ribbon-background: var(--background-secondary, rgb(30, 32, 48));
+  --ribbon-background-collapsed: var(--background-primary, rgb(36, 39, 58));
+  --ribbon-padding: var(--size-4-2) var(--size-4-1)
+    var(--size-4-3, 8px 4px
+    12px);
+  --scrollbar-active-thumb-bg: rgb(var(--ctp-text), 20%);
+  --scrollbar-bg: rgb(var(--ctp-text), 5%);
+  --scrollbar-radius: var(--radius-l, 10px);
+  --scrollbar-thumb-bg: rgb(var(--ctp-text), 10%);
+  --search-clear-button-color: var(--text-muted, rgb(165, 173, 203));
+  --search-icon-color: var(--text-muted, rgb(165, 173, 203));
+  --search-result-background: var(--background-primary, rgb(36, 39, 58));
+  --secondary: var(--text-accent, rgb(var(--ctp-accent)));
+  --setting-group-heading-color: var(--text-normal, rgb(202, 211, 245));
+  --setting-group-heading-size: var(--font-ui-medium, 16px);
+  --setting-items-background: var(--background-primary-alt, rgb(30, 32, 48));
+  --setting-items-border-color: var(--background-modifier-border, rgb(54, 58, 79));
+  --setting-items-radius: var(--radius-l, 10px);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, rgb(165, 173, 203));
+  --shiki-code-background: var(--code-background, rgb(30, 32, 48));
+  --shiki-code-comment: var(--text-faint, rgb(73, 77, 100));
+  --shiki-code-function: var(--color-green, rgb(166, 218, 149));
+  --shiki-code-important: var(--color-orange, rgb(245, 169, 127));
+  --shiki-code-keyword: var(--color-pink, rgb(245, 189, 230));
+  --shiki-code-normal: var(--text-muted, rgb(165, 173, 203));
+  --shiki-code-property: var(--color-cyan, rgb(145, 215, 227));
+  --shiki-code-punctuation: var(--text-muted, rgb(165, 173, 203));
+  --shiki-code-string: var(--color-yellow, rgb(238, 212, 159));
+  --shiki-code-value: var(--color-purple, rgb(183, 189, 248));
+  --shiki-gutter-border-color: var(--background-modifier-border, rgb(54, 58, 79));
+  --shiki-gutter-text-color: var(--text-faint, rgb(73, 77, 100));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, rgb(165, 173, 203));
+  --shiki-highlight-neutral: var(--shiki-code-normal, rgb(165, 173, 203));
+  --shiki-terminal-dots-color: var(--text-faint, rgb(73, 77, 100));
+  --shiki-tooltip-background: var(--background-modifier-message, rgb(0, 0, 0, 90%));
+  --sidebar-markdown-font-size: calc(var(--font-text-size)*0.9);
+  --slider-thumb-border-color: var(
+      --background-modifier-border-hover
+    , rgb(91, 96, 120));
+  --slider-thumb-radius: var(--slider-thumb-height, 50%);
+  --slider-track-background: var(--background-modifier-border, rgb(54, 58, 79));
+  --status-bar-background: var(--background-secondary, rgb(30, 32, 48));
+  --status-bar-border-color: var(--divider-color, rgb(54, 58, 79));
+  --status-bar-scroll-padding: calc(var(--status-bar-font-size) + 18px);
+  --status-bar-text-color: var(--text-muted, rgb(165, 173, 203));
+  --suggestion-background: var(--background-primary, rgb(36, 39, 58));
+  --swatch-height: 24px;
   --swatch-shadow: inset 0 0 0 1px
-    rgb(202, 211, 245, 15%) !important;
-  --swatch-width: 24px !important;
-  --sync-avatar-color-1: rgb(237, 135, 150) !important;
-  --sync-avatar-color-2: rgb(245, 169, 127) !important;
-  --sync-avatar-color-3: rgb(238, 212, 159) !important;
-  --sync-avatar-color-4: rgb(166, 218, 149) !important;
-  --sync-avatar-color-5: rgb(145, 215, 227) !important;
-  --sync-avatar-color-6: rgb(138, 173, 244) !important;
-  --sync-avatar-color-7: rgb(183, 189, 248) !important;
-  --sync-avatar-color-8: rgb(245, 189, 230) !important;
-  --tab-background-active: rgb(36, 39, 58) !important;
-  --tab-container-background: rgb(30, 32, 48) !important;
-  --tab-divider-color: rgb(91, 96, 120) !important;
-  --tab-outline-color: rgb(54, 58, 79) !important;
-  --tab-stacked-shadow: -8px 0 8px 0 rgb(0, 0, 0, 5%) !important;
-  --tab-stacked-text-align: left !important;
-  --tab-switcher-background: rgb(30, 32, 48) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(30, 32, 48), transparent) !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(202, 211, 245, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(183, 189, 248) !important;
-  --tab-text-color: rgb(73, 77, 100) !important;
-  --tab-text-color-active: rgb(165, 173, 203) !important;
-  --tab-text-color-focused: rgb(165, 173, 203) !important;
-  --tab-text-color-focused-active: rgb(202, 211, 245) !important;
-  --tab-text-color-focused-active-current: rgb(202, 211, 245) !important;
-  --tab-text-color-focused-highlighted: rgb(183, 189, 248) !important;
-  --table-add-button-border-color: rgb(54, 58, 79) !important;
-  --table-border-color: rgb(54, 58, 79) !important;
-  --table-drag-handle-background-active: rgb(183, 189, 248) !important;
-  --table-drag-handle-color: rgb(73, 77, 100) !important;
-  --table-drag-handle-color-active: rgb(30, 32, 48) !important;
-  --table-header-border-color: rgb(54, 58, 79) !important;
-  --table-header-color: rgb(165, 173, 203) !important;
-  --table-header-size: 0.875em !important;
-  --table-header-weight: 400 !important;
-  --table-line-height: 1.25 !important;
-  --table-selection: hsla(254, 80%, 68%, 0.1) !important;
-  --table-selection-border-color: rgb(183, 189, 248) !important;
-  --table-white-space: normal !important;
-  --tag-background: transparent !important;
-  --tag-background-hover: 0 !important;
-  --tag-border-color: hsl(254, 80%, 68%, 10%) !important;
+    rgb(var(--mono-rgb-100), 15%);
+  --swatch-width: 24px;
+  --sync-avatar-color-1: var(--color-red, rgb(237, 135, 150));
+  --sync-avatar-color-2: var(--color-orange, rgb(245, 169, 127));
+  --sync-avatar-color-3: var(--color-yellow, rgb(238, 212, 159));
+  --sync-avatar-color-4: var(--color-green, rgb(166, 218, 149));
+  --sync-avatar-color-5: var(--color-cyan, rgb(145, 215, 227));
+  --sync-avatar-color-6: var(--color-blue, rgb(138, 173, 244));
+  --sync-avatar-color-7: var(--color-purple, rgb(183, 189, 248));
+  --sync-avatar-color-8: var(--color-pink, rgb(245, 189, 230));
+  --tab-background-active: var(--background-primary, rgb(36, 39, 58));
+  --tab-container-background: var(--background-secondary, rgb(30, 32, 48));
+  --tab-divider-color: var(--background-modifier-border-hover, rgb(91, 96, 120));
+  --tab-outline-color: var(--divider-color, rgb(54, 58, 79));
+  --tab-stacked-shadow: -8px 0 8px 0 rgb(0, 0, 0, 5%);
+  --tab-stacked-text-align: left;
+  --tab-switcher-background: var(--background-secondary, rgb(30, 32, 48));
+  --tab-text-color: var(--text-faint, rgb(73, 77, 100));
+  --tab-text-color-active: var(--text-muted, rgb(165, 173, 203));
+  --tab-text-color-focused: var(--text-muted, rgb(165, 173, 203));
+  --tab-text-color-focused-active: var(--text-normal, rgb(202, 211, 245));
+  --tab-text-color-focused-active-current: var(--text-normal, rgb(202, 211, 245));
+  --tab-text-color-focused-highlighted: var(--text-accent, rgb(183, 189, 248));
+  --table-add-button-border-color: var(--background-modifier-border, rgb(54, 58, 79));
+  --table-border-color: var(--background-modifier-border, rgb(54, 58, 79));
+  --table-drag-handle-background-active: var(--table-selection-border-color, rgb(183, 189, 248));
+  --table-drag-handle-color: var(--text-faint, rgb(73, 77, 100));
+  --table-drag-handle-color-active: var(--text-on-accent, rgb(30, 32, 48));
+  --table-header-border-color: var(--table-border-color, rgb(54, 58, 79));
+  --table-header-color: var(--text-muted, rgb(165, 173, 203));
+  --table-header-size: var(--font-smaller, 0.875em);
+  --table-header-weight: var(--font-normal, 400);
+  --table-line-height: var(--line-height-tight, 1.25);
+  --table-selection-border-color: var(--interactive-accent, rgb(183, 189, 248));
+  --table-white-space: normal;
+  --tag-border-color: hsl(var(--interactive-accent-hsl), 10%);
   --tag-border-color-hover: hsl(
-      254, 80%, 68%,
+      var(--interactive-accent-hsl),
       15%
-    ) !important;
-  --tag-border-width: 0 !important;
-  --tag-color: rgb(183, 189, 248) !important;
-  --tag-color-hover: rgb(183, 189, 248) !important;
-  --tag-decoration-hover: underline !important;
-  --tag-padding-x: 0 !important;
-  --tag-padding-y: 0 !important;
-  --tag-radius: 0.8em !important;
-  --tag-size: max(16px, 0.933em) !important;
-  --tertiary: rgb(183, 189, 248) !important;
-  --text-accent: rgb(183, 189, 248) !important;
-  --text-accent-hover: rgb(183, 189, 248) !important;
-  --text-error: rgb(237, 135, 150) !important;
-  --text-error-hover: rgb(237, 135, 150, 80%) !important;
-  --text-faint: rgb(73, 77, 100) !important;
-  --text-highlight-bg: rgb(244, 219, 214, 100%) !important;
-  --text-highlight-bg-active: rgb(244, 219, 214, 100%) !important;
-  --text-muted: rgb(165, 173, 203) !important;
-  --text-muted-rgb: 165, 173, 203 !important;
-  --text-normal: rgb(202, 211, 245) !important;
-  --text-on-accent: rgb(30, 32, 48) !important;
-  --text-on-accent-inverted: rgb(30, 32, 48) !important;
-  --text-selection: rgb(147, 154, 183, 30%) !important;
-  --text-success: rgb(166, 218, 149) !important;
-  --text-warning: rgb(245, 169, 127) !important;
-  --textHighlight: rgb(244, 219, 214, 100%) !important;
-  --titleFont: "Vollkorn",
+    );
+  --tag-border-width: 0;
+  --tag-color: rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
+  --tag-color-hover: rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
+  --tag-decoration-hover: underline;
+  --tag-padding-x: 0;
+  --tag-padding-y: 0;
+  --tag-radius: 0.8em;
+  --tag-size: max(var(--font-ui-medium), var(--font-small));
+  --tertiary: var(--text-accent-hover, rgb(var(--ctp-accent)));
+  --text-accent: rgb(var(--ctp-accent));
+  --text-accent-hover: rgb(var(--ctp-accent));
+  --text-error: rgb(var(--ctp-red));
+  --text-error-hover: rgb(var(--ctp-red), 80%);
+  --text-faint: rgb(var(--ctp-surface1));
+  --text-highlight-bg: rgb(var(--ctp-rosewater), 100%);
+  --text-highlight-bg-active: rgb(var(--ctp-rosewater), 100%);
+  --text-muted: rgb(var(--ctp-subtext0));
+  --text-muted-rgb: var(--ctp-subtext0, 165, 173, 203);
+  --text-normal: rgb(var(--ctp-text));
+  --text-on-accent: rgb(var(--ctp-mantle));
+  --text-on-accent-inverted: rgb(var(--ctp-mantle));
+  --text-selection: rgb(var(--ctp-overlay2), 30%);
+  --text-success: var(--color-green, rgb(166, 218, 149));
+  --text-warning: var(--color-orange, rgb(245, 169, 127));
+  --textHighlight: var(--text-highlight-bg, rgb(var(--ctp-rosewater), 100%));
+  --titleFont: var(--font-text-theme, "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: rgb(30, 32, 48) !important;
-  --titlebar-background-focused: rgb(24, 25, 38) !important;
-  --titlebar-border-color: rgb(54, 58, 79) !important;
-  --titlebar-border-width: 0 !important;
-  --titlebar-text-color: rgb(165, 173, 203) !important;
-  --titlebar-text-color-focused: rgb(202, 211, 245) !important;
-  --titlebar-text-color-highlighted: rgb(183, 189, 248) !important;
-  --toggle-thumb-color: rgb(202, 211, 245) !important;
-  --transition-hover-bg: background-color 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
-  --transition-hover-box-shadow: box-shadow 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
-  --transition-hover-color: color 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
-  --transition-hover-color-fast: color 0.2s cubic-bezier(0.44, 0.21, 0, 1) !important;
-  --transition-text-decoration-color: text-decoration-color 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
-  --vault-name-color: rgb(202, 211, 245) !important;
-  --vault-name-font-size: 13px !important;
-  --vault-name-font-weight: 500 !important;
-  --vault-profile-color: rgb(202, 211, 245) !important;
-  --vault-profile-color-hover: rgb(202, 211, 245) !important;
-  --workspace-background-translucent: rgb(24, 25, 38, 60%) !important;
-  --quartz-icon-color: currentColor !important;
+    sans-serif);
+  --titlebar-background: var(--background-secondary, rgb(30, 32, 48));
+  --titlebar-background-focused: var(--background-secondary-alt, rgb(24, 25, 38));
+  --titlebar-border-color: var(--background-modifier-border, rgb(54, 58, 79));
+  --titlebar-border-width: 0;
+  --titlebar-text-color: var(--text-muted, rgb(165, 173, 203));
+  --titlebar-text-color-focused: var(--text-normal, rgb(202, 211, 245));
+  --titlebar-text-color-highlighted: var(--text-accent-hover, rgb(183, 189, 248));
+  --toggle-thumb-color: var(--text-normal, rgb(202, 211, 245));
+  --transition-hover-bg: background-color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
+  --transition-hover-box-shadow: box-shadow 0.3s cubic-bezier(0.44, 0.21, 0, 1);
+  --transition-hover-color: color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
+  --transition-hover-color-fast: color 0.2s cubic-bezier(0.44, 0.21, 0, 1);
+  --transition-text-decoration-color: text-decoration-color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
+  --vault-name-color: var(--text-normal, rgb(202, 211, 245));
+  --vault-name-font-size: var(--font-ui-small, 13px);
+  --vault-name-font-weight: var(--font-medium, 500);
+  --vault-profile-color: var(--text-normal, rgb(202, 211, 245));
+  --vault-profile-color-hover: var(--vault-profile-color, rgb(202, 211, 245));
+  --workspace-background-translucent: rgb(var(--mono-rgb-0), 60%);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(30, 32, 48);
+  background-color: var(--tab-container-background, rgb(30, 32, 48));
   color: rgb(202, 211, 245);
 }
 
 html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: rgb(36, 39, 58);
+  background-color: var(--background-primary, rgb(36, 39, 58));
   color: rgb(202, 211, 245);
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(30, 32, 48);
+  background-color: var(--background-secondary, rgb(30, 32, 48));
   color: rgb(202, 211, 245);
 }
 
@@ -1123,98 +1081,98 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(30, 32, 48);
+  background-color: var(--tab-container-background, rgb(30, 32, 48));
   border-left-color: rgb(54, 58, 79);
   color: rgb(202, 211, 245);
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
-  color: rgb(125, 196, 228);
+  color: rgb(var(--ctp-bold, var(--ctp-sapphire)));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(125, 196, 228) none 0px;
   text-decoration-color: rgb(125, 196, 228);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
-  color: rgb(166, 218, 149);
+  color: var(--italic-color, rgb(166, 218, 149));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(166, 218, 149) none 0px;
   text-decoration-color: rgb(166, 218, 149);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
-  color: rgb(166, 218, 149);
+  color: var(--italic-color, rgb(166, 218, 149));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(166, 218, 149) none 0px;
   text-decoration-color: rgb(166, 218, 149);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
-  color: rgb(125, 196, 228);
+  color: rgb(var(--ctp-bold, var(--ctp-sapphire)));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(125, 196, 228) none 0px;
   text-decoration-color: rgb(125, 196, 228);
 }
 
 html[saved-theme="dark"] body .text-highlight {
-  background-color: rgb(244, 219, 214);
-  color: rgb(30, 32, 48);
+  background-color: rgb(var(--ctp-rosewater));
+  color: var(--text-on-accent, rgb(30, 32, 48));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(30, 32, 48) none 0px;
   text-decoration-color: rgb(30, 32, 48);
 }
 
 html[saved-theme="dark"] body del {
-  color: rgb(238, 153, 160);
+  color: rgb(var(--ctp-strikethrough, var(--ctp-maroon)));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(238, 153, 160) none 0px;
   text-decoration-color: rgb(238, 153, 160);
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(202, 211, 245);
+  color: var(--text-normal, rgb(202, 211, 245));
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
-  background-color: rgb(237, 135, 150);
+  background-color: rgb(var(--ctp-red));
   border-color: rgb(238, 153, 160);
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(166, 218, 149);
+  background-color: rgb(var(--ctp-accent));
   border-color: rgba(0, 0, 0, 0);
 }
 
 html[saved-theme="dark"] body p {
-  color: rgb(165, 173, 203);
+  color: var(--text-muted, rgb(165, 173, 203));
   font-family: "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(165, 173, 203) none 0px;
   text-decoration-color: rgb(165, 173, 203);
 }`,
     links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
-  color: rgb(139, 213, 202);
+  color: var(--link-external-color, rgb(139, 213, 202));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(139, 213, 202) none 0px;
   text-decoration: 2px;
   text-decoration-color: rgb(139, 213, 202);
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: var(--link-decoration-thickness, 2px);
 }
 
 html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(138, 173, 244);
+  color: var(--link-color, rgb(138, 173, 244));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(138, 173, 244) none 0px;
   text-decoration: 2px;
   text-decoration-color: rgb(138, 173, 244);
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: var(--link-decoration-thickness, 2px);
 }
 
 html[saved-theme="dark"] body a.internal-link.broken {
-  color: rgb(238, 153, 160);
+  color: var(--link-unresolved-color, rgb(238, 153, 160));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(238, 153, 160) none 0px;
   text-decoration: 2px rgb(237, 135, 150);
-  text-decoration-color: rgb(237, 135, 150);
-  text-decoration-thickness: 2px;
+  text-decoration-color: var(--link-unresolved-decoration-color, rgb(237, 135, 150));
+  text-decoration-thickness: var(--link-decoration-thickness, 2px);
 }`,
     lists: `html[saved-theme="dark"] body dd {
   color: rgb(202, 211, 245);
@@ -1239,7 +1197,7 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-color: rgb(202, 211, 245);
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
-  color: rgb(73, 77, 100);
+  color: var(--text-faint, rgb(73, 77, 100));
 }
 
 html[saved-theme="dark"] body blockquote {
@@ -1263,7 +1221,7 @@ html[saved-theme="dark"] body td {
   border-left-color: rgb(54, 58, 79);
   border-right-color: rgb(54, 58, 79);
   border-top-color: rgb(54, 58, 79);
-  color: rgb(202, 211, 245);
+  color: var(--table-text-color, rgb(202, 211, 245));
 }
 
 html[saved-theme="dark"] body th {
@@ -1271,20 +1229,20 @@ html[saved-theme="dark"] body th {
   border-left-color: rgb(54, 58, 79);
   border-right-color: rgb(54, 58, 79);
   border-top-color: rgb(54, 58, 79);
-  color: rgb(165, 173, 203);
-  font-weight: 400;
+  color: var(--table-header-color, rgb(165, 173, 203));
+  font-weight: var(--table-header-weight, 400);
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: rgb(30, 32, 48);
+  background-color: var(--code-background, rgb(30, 32, 48));
   border-bottom-color: rgb(54, 58, 79);
   border-left-color: rgb(54, 58, 79);
   border-right-color: rgb(54, 58, 79);
   border-top-color: rgb(54, 58, 79);
-  color: rgb(165, 173, 203);
+  color: var(--code-normal, rgb(165, 173, 203));
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: rgb(30, 32, 48);
+  background-color: var(--code-background, rgb(30, 32, 48));
   border-bottom-color: rgb(54, 58, 79);
   border-left-color: rgb(54, 58, 79);
   border-right-color: rgb(54, 58, 79);
@@ -1323,7 +1281,7 @@ html[saved-theme="dark"] body video {
   border-top-color: rgb(202, 211, 245);
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: rgb(30, 32, 48);
+  background-color: var(--background-primary-alt, rgb(30, 32, 48));
   border-bottom-color: rgb(165, 173, 203);
   border-left-color: rgb(165, 173, 203);
   border-right-color: rgb(165, 173, 203);
@@ -2072,11 +2030,10 @@ html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="check
   border-left-color: rgb(138, 173, 244);
   border-right-color: rgb(138, 173, 244);
   border-top-color: rgb(138, 173, 244);
-  color: rgb(138, 173, 244);
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(138, 173, 244);
+  color: var(--callout-title-color, rgb(138, 173, 244));
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {
@@ -2084,9 +2041,9 @@ html[saved-theme="dark"] body .callout > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
-  --callout-color: 125, 196, 228;
+  --callout-color: var(--callout-summary, 125, 196, 228);
   background: rgba(125, 196, 228, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(125, 196, 228, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(125, 196, 228, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(125, 196, 228, 0.6);
@@ -2104,11 +2061,10 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   border-left-color: rgb(138, 173, 244);
   border-right-color: rgb(138, 173, 244);
   border-top-color: rgb(138, 173, 244);
-  color: rgb(138, 173, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(138, 173, 244);
+  color: var(--callout-title-color, rgb(138, 173, 244));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-content {
@@ -2116,9 +2072,9 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
-  --callout-color: 237, 135, 150;
+  --callout-color: var(--callout-bug, 237, 135, 150);
   background: rgba(237, 135, 150, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(237, 135, 150, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(237, 135, 150, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(237, 135, 150, 0.6);
@@ -2136,11 +2092,10 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   border-left-color: rgb(138, 173, 244);
   border-right-color: rgb(138, 173, 244);
   border-top-color: rgb(138, 173, 244);
-  color: rgb(138, 173, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(138, 173, 244);
+  color: var(--callout-title-color, rgb(138, 173, 244));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
@@ -2148,9 +2103,9 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
-  --callout-color: 237, 135, 150;
+  --callout-color: var(--callout-error, 237, 135, 150);
   background: rgba(237, 135, 150, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(237, 135, 150, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(237, 135, 150, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(237, 135, 150, 0.6);
@@ -2168,11 +2123,10 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   border-left-color: rgb(138, 173, 244);
   border-right-color: rgb(138, 173, 244);
   border-top-color: rgb(138, 173, 244);
-  color: rgb(138, 173, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(138, 173, 244);
+  color: var(--callout-title-color, rgb(138, 173, 244));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content {
@@ -2180,9 +2134,9 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
-  --callout-color: 198, 160, 246;
+  --callout-color: var(--callout-example, 198, 160, 246);
   background: rgba(198, 160, 246, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(198, 160, 246, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(198, 160, 246, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(198, 160, 246, 0.6);
@@ -2200,11 +2154,10 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   border-left-color: rgb(138, 173, 244);
   border-right-color: rgb(138, 173, 244);
   border-top-color: rgb(138, 173, 244);
-  color: rgb(138, 173, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(138, 173, 244);
+  color: var(--callout-title-color, rgb(138, 173, 244));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-content {
@@ -2212,9 +2165,9 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
-  --callout-color: 237, 135, 150;
+  --callout-color: var(--callout-fail, 237, 135, 150);
   background: rgba(237, 135, 150, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(237, 135, 150, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(237, 135, 150, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(237, 135, 150, 0.6);
@@ -2232,11 +2185,10 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   border-left-color: rgb(138, 173, 244);
   border-right-color: rgb(138, 173, 244);
   border-top-color: rgb(138, 173, 244);
-  color: rgb(138, 173, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(138, 173, 244);
+  color: var(--callout-title-color, rgb(138, 173, 244));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-content {
@@ -2244,9 +2196,9 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
-  --callout-color: 138, 173, 244;
+  --callout-color: var(--callout-info, 138, 173, 244);
   background: rgba(138, 173, 244, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 173, 244, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(138, 173, 244, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(138, 173, 244, 0.6);
@@ -2264,11 +2216,10 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   border-left-color: rgb(138, 173, 244);
   border-right-color: rgb(138, 173, 244);
   border-top-color: rgb(138, 173, 244);
-  color: rgb(138, 173, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(138, 173, 244);
+  color: var(--callout-title-color, rgb(138, 173, 244));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
@@ -2276,9 +2227,9 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
-  --callout-color: 138, 173, 244;
+  --callout-color: var(--callout-default, 138, 173, 244);
   background: rgba(138, 173, 244, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 173, 244, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(138, 173, 244, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(138, 173, 244, 0.6);
@@ -2296,11 +2247,10 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   border-left-color: rgb(138, 173, 244);
   border-right-color: rgb(138, 173, 244);
   border-top-color: rgb(138, 173, 244);
-  color: rgb(138, 173, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(138, 173, 244);
+  color: var(--callout-title-color, rgb(138, 173, 244));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
@@ -2308,9 +2258,9 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
-  --callout-color: 238, 212, 159;
+  --callout-color: var(--callout-question, 238, 212, 159);
   background: rgba(238, 212, 159, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(238, 212, 159, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(238, 212, 159, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(238, 212, 159, 0.6);
@@ -2328,11 +2278,10 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   border-left-color: rgb(138, 173, 244);
   border-right-color: rgb(138, 173, 244);
   border-top-color: rgb(138, 173, 244);
-  color: rgb(138, 173, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(138, 173, 244);
+  color: var(--callout-title-color, rgb(138, 173, 244));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-content {
@@ -2340,7 +2289,8 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(158, 158, 158, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(158, 158, 158, 0.6);
@@ -2358,11 +2308,10 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   border-left-color: rgb(138, 173, 244);
   border-right-color: rgb(138, 173, 244);
   border-top-color: rgb(138, 173, 244);
-  color: rgb(138, 173, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(138, 173, 244);
+  color: var(--callout-title-color, rgb(138, 173, 244));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content {
@@ -2370,9 +2319,9 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
-  --callout-color: 166, 218, 149;
+  --callout-color: var(--callout-success, 166, 218, 149);
   background: rgba(166, 218, 149, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(166, 218, 149, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(166, 218, 149, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(166, 218, 149, 0.6);
@@ -2390,11 +2339,10 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   border-left-color: rgb(138, 173, 244);
   border-right-color: rgb(138, 173, 244);
   border-top-color: rgb(138, 173, 244);
-  color: rgb(138, 173, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(138, 173, 244);
+  color: var(--callout-title-color, rgb(138, 173, 244));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-content {
@@ -2402,9 +2350,9 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
-  --callout-color: 125, 196, 228;
+  --callout-color: var(--callout-tip, 125, 196, 228);
   background: rgba(125, 196, 228, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(125, 196, 228, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(125, 196, 228, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(125, 196, 228, 0.6);
@@ -2422,11 +2370,10 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   border-left-color: rgb(138, 173, 244);
   border-right-color: rgb(138, 173, 244);
   border-top-color: rgb(138, 173, 244);
-  color: rgb(138, 173, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(138, 173, 244);
+  color: var(--callout-title-color, rgb(138, 173, 244));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
@@ -2434,9 +2381,9 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
-  --callout-color: 138, 173, 244;
+  --callout-color: var(--callout-todo, 138, 173, 244);
   background: rgba(138, 173, 244, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 173, 244, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(138, 173, 244, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(138, 173, 244, 0.6);
@@ -2454,11 +2401,10 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   border-left-color: rgb(138, 173, 244);
   border-right-color: rgb(138, 173, 244);
   border-top-color: rgb(138, 173, 244);
-  color: rgb(138, 173, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(138, 173, 244);
+  color: var(--callout-title-color, rgb(138, 173, 244));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
@@ -2466,9 +2412,9 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
-  --callout-color: 245, 169, 127;
+  --callout-color: var(--callout-warning, 245, 169, 127);
   background: rgba(245, 169, 127, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(245, 169, 127, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(245, 169, 127, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(245, 169, 127, 0.6);
@@ -2486,11 +2432,10 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   border-left-color: rgb(138, 173, 244);
   border-right-color: rgb(138, 173, 244);
   border-top-color: rgb(138, 173, 244);
-  color: rgb(138, 173, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(138, 173, 244);
+  color: var(--callout-title-color, rgb(138, 173, 244));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] > .callout-content {
@@ -2558,12 +2503,12 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-left-color: rgb(54, 58, 79);
   border-right-color: rgb(54, 58, 79);
   border-top-color: rgb(54, 58, 79);
-  color: rgb(202, 211, 245);
+  color: var(--text-normal, rgb(202, 211, 245));
   font-family: "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: rgb(36, 39, 58);
+  background-color: var(--prompt-background, rgb(36, 39, 58));
   border-bottom-color: rgb(73, 77, 100);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -2575,8 +2520,8 @@ html[saved-theme="dark"] body .search > .search-container > .search-space {
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > * {
-  background-color: rgb(30, 32, 48);
-  box-shadow: rgb(24, 25, 38) 0px 0px 10px 0px inset, rgb(36, 39, 58) 0px 0px 12px 0px inset;
+  background-color: var(--background-secondary, rgb(30, 32, 48));
+  box-shadow: inset 0 0 10px rgb(var(--ctp-crust)), inset 0 0 12px rgb(var(--ctp-base));
   color: rgb(202, 211, 245);
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(202, 211, 245) none 0px;
@@ -2584,7 +2529,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > * {
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container {
-  color: rgb(30, 32, 48);
+  color: var(--text-on-accent, rgb(30, 32, 48));
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
@@ -2595,12 +2540,12 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
-  color: rgb(30, 32, 48);
+  color: var(--text-on-accent, rgb(30, 32, 48));
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: rgb(183, 189, 248);
-  color: rgb(30, 32, 48);
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent, rgb(30, 32, 48));
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout.display-results {
@@ -2623,21 +2568,21 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
-  background-color: rgb(183, 189, 248);
+  background-color: rgb(var(--ctp-accent));
   border-bottom-color: rgb(30, 32, 48);
   border-left-color: rgb(30, 32, 48);
   border-right-color: rgb(30, 32, 48);
   border-top-color: rgb(30, 32, 48);
-  color: rgb(30, 32, 48);
+  color: var(--text-on-accent, rgb(30, 32, 48));
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: rgb(183, 189, 248);
-  color: rgb(30, 32, 48);
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent, rgb(30, 32, 48));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgba(139, 108, 239, 0.1);
   border-bottom-left-radius: 11.2px;
   border-bottom-right-radius: 11.2px;
@@ -2654,43 +2599,43 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
-  color: rgb(183, 189, 248);
-  font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h1-color, rgb(183, 189, 248));
+  font-family: var(--h1-font, "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(202, 211, 245);
-  font-size: 32px;
+  color: var(--inline-title-color, rgb(202, 211, 245));
+  font-size: var(--inline-title-size, 32px);
 }
 
 html[saved-theme="dark"] body h2 {
-  color: rgb(183, 189, 248);
-  font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h2-color, rgb(183, 189, 248));
+  font-family: var(--h2-font, "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  color: rgb(202, 211, 245);
-  font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--inline-title-color, rgb(202, 211, 245));
+  font-family: var(--inline-title-font, "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h3 {
-  color: rgb(183, 189, 248);
-  font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h3-color, rgb(183, 189, 248));
+  font-family: var(--h3-font, "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
-  color: rgb(183, 189, 248);
-  font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h4-color, rgb(183, 189, 248));
+  font-family: var(--h4-font, "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
-  color: rgb(183, 189, 248);
-  font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h5-color, rgb(183, 189, 248));
+  font-family: var(--h5-font, "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
-  color: rgb(183, 189, 248);
-  font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h6-color, rgb(183, 189, 248));
+  font-family: var(--h6-font, "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body hr {
@@ -2699,7 +2644,7 @@ html[saved-theme="dark"] body hr {
   border-right-color: rgb(54, 58, 79);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
-  --callout-color: 138, 173, 244;
+  --callout-color: var(--callout-default, 138, 173, 244);
   border-bottom-color: rgba(138, 173, 244, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(138, 173, 244, 0.6);
@@ -2715,12 +2660,12 @@ html[saved-theme="dark"] body hr {
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(165, 173, 203);
+  color: var(--nav-item-color, rgb(165, 173, 203));
   font-family: "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(165, 173, 203);
+  color: var(--nav-item-color, rgb(165, 173, 203));
   font-family: "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
@@ -2731,15 +2676,15 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-left-color: rgb(165, 173, 203);
   border-right-color: rgb(165, 173, 203);
   border-top-color: rgb(165, 173, 203);
-  color: rgb(165, 173, 203);
+  color: var(--icon-color, rgb(165, 173, 203));
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: rgb(30, 32, 48);
+  background-color: var(--status-bar-background, rgb(30, 32, 48));
   border-bottom-color: rgb(54, 58, 79);
   border-left-color: rgb(54, 58, 79);
   border-right-color: rgb(54, 58, 79);
   border-top-color: rgb(54, 58, 79);
-  color: rgb(165, 173, 203);
+  color: var(--status-bar-text-color, rgb(165, 173, 203));
   font-family: "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -2760,7 +2705,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(165, 173, 203);
+  color: var(--nav-item-color, rgb(165, 173, 203));
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -2780,7 +2725,7 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(165, 173, 203);
+  color: var(--nav-item-color, rgb(165, 173, 203));
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -2794,7 +2739,7 @@ html[saved-theme="dark"] body ul.section-ul {
   border-left-color: rgb(165, 173, 203);
   border-right-color: rgb(165, 173, 203);
   border-top-color: rgb(165, 173, 203);
-  color: rgb(165, 173, 203);
+  color: var(--icon-color, rgb(165, 173, 203));
 }
 
 html[saved-theme="dark"] body .darkmode svg {
@@ -2810,7 +2755,7 @@ html[saved-theme="dark"] body .darkmode svg {
 }
 
 html[saved-theme="dark"] body .breadcrumb-element p {
-  color: rgb(73, 77, 100);
+  color: var(--text-faint, rgb(73, 77, 100));
   font-family: "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     canvas: `html[saved-theme="dark"] body .canvas-node {
@@ -2822,7 +2767,7 @@ html[saved-theme="dark"] body .canvas-node-content {
 }
 
 html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(202, 211, 245);
+  color: var(--text-normal, rgb(202, 211, 245));
 }
 
 html[saved-theme="dark"] body .canvas-node-group {
@@ -2830,20 +2775,20 @@ html[saved-theme="dark"] body .canvas-node-group {
 }
 
 html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(30, 32, 48);
+  background-color: var(--background-secondary, rgb(30, 32, 48));
   border-color: rgb(202, 211, 245);
 }`,
     bases: `html[saved-theme="dark"] body .bases-table thead th {
   border-color: rgb(54, 58, 79);
-  color: rgb(165, 173, 203);
-  font-weight: 400;
+  color: var(--table-header-color, rgb(165, 173, 203));
+  font-weight: var(--table-header-weight, 400);
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(54, 58, 79);
   border-left-color: rgb(54, 58, 79);
   border-right-color: rgb(54, 58, 79);
   border-top-color: rgb(54, 58, 79);
-  color: rgb(165, 173, 203);
+  color: var(--text-muted, rgb(165, 173, 203));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -2869,9 +2814,9 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-radius: 11.2px;
-  color: rgb(183, 189, 248);
+  color: var(--pill-color, rgb(183, 189, 248));
 }
 
 html[saved-theme="dark"] body .note-properties-value {
@@ -2879,8 +2824,8 @@ html[saved-theme="dark"] body .note-properties-value {
 }
 
 html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(36, 39, 58);
-  color: rgb(202, 211, 245);
+  background-color: var(--background-primary, rgb(36, 39, 58));
+  color: var(--text-normal, rgb(202, 211, 245));
 }
 
 html[saved-theme="dark"] body ol.overflow {
@@ -2890,12 +2835,12 @@ html[saved-theme="dark"] body ol.overflow {
   border-top-color: rgb(202, 211, 245);
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
-  background-color: rgb(30, 32, 48);
+  background-color: var(--background-secondary, rgb(30, 32, 48));
   border-color: rgb(202, 211, 245);
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
-  background-color: rgb(24, 25, 38);
+  background-color: var(--tab-container-background, rgb(24, 25, 38));
 }
 
 html[saved-theme="dark"] body .stacked-page.active {
@@ -2910,11 +2855,11 @@ html[saved-theme="dark"] body .stacked-page.active {
 }
 
 html[saved-theme="dark"] body .navigation-progress {
-  background-color: rgb(30, 32, 48);
+  background-color: var(--status-bar-background, rgb(30, 32, 48));
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
-  color: rgb(202, 211, 245);
+  color: var(--text-normal, rgb(202, 211, 245));
   font-family: "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -2934,17 +2879,17 @@ html[saved-theme="dark"] body input[type=text] {
   border-left-color: rgb(165, 173, 203);
   border-right-color: rgb(165, 173, 203);
   border-top-color: rgb(165, 173, 203);
-  color: rgb(165, 173, 203);
+  color: var(--text-normal, rgb(165, 173, 203));
   font-family: "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body kbd {
-  background-color: rgb(30, 32, 48);
+  background-color: var(--code-background, rgb(30, 32, 48));
   border-bottom-color: rgb(165, 173, 203);
   border-left-color: rgb(165, 173, 203);
   border-right-color: rgb(165, 173, 203);
   border-top-color: rgb(165, 173, 203);
-  color: rgb(165, 173, 203);
+  color: var(--code-normal, rgb(165, 173, 203));
 }
 
 html[saved-theme="dark"] body progress {
@@ -2967,7 +2912,7 @@ html[saved-theme="dark"] body sup {
 }
 
 html[saved-theme="dark"] body ul.tags > li {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tag-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgba(139, 108, 239, 0.1);
   border-bottom-left-radius: 12.8px;
   border-bottom-right-radius: 12.8px;
@@ -2976,227 +2921,205 @@ html[saved-theme="dark"] body ul.tags > li {
   border-top-color: rgba(139, 108, 239, 0.1);
   border-top-left-radius: 12.8px;
   border-top-right-radius: 12.8px;
-  color: rgb(183, 189, 248);
+  color: var(--tag-color, rgb(183, 189, 248));
 }`,
   },
   light: {
     base: `:root:root {
-  --accent-h: 254 !important;
-  --accent-l: 68% !important;
-  --accent-s: 80% !important;
-  --background-modifier-active-hover: hsl(254, 80%, 68%, 15%) !important;
-  --background-modifier-border: rgb(204, 208, 218) !important;
-  --background-modifier-border-focus: rgb(156, 160, 176) !important;
-  --background-modifier-border-hover: rgb(172, 176, 190) !important;
-  --background-modifier-box-shadow: rgb(220, 224, 232, 30%) !important;
-  --background-modifier-cover: rgb(220, 224, 232, 90%) !important;
-  --background-modifier-error: rgb(210, 15, 57, 90%) !important;
-  --background-modifier-error-hover: rgb(210, 15, 57, 100%) !important;
-  --background-modifier-error-rgb: 210, 15, 57 !important;
-  --background-modifier-form-field: rgb(220, 224, 232, 30%) !important;
-  --background-modifier-form-field-highlighted: rgb(220, 224, 232, 22%) !important;
-  --background-modifier-form-field-hover: rgb(220, 224, 232, 30%) !important;
-  --background-modifier-hover: rgb(76, 79, 105, 7.5%) !important;
-  --background-modifier-message: rgb(0, 0, 0, 90%) !important;
-  --background-modifier-success: rgb(64, 160, 43, 90%) !important;
-  --background-modifier-success-rgb: 64, 160, 43 !important;
-  --background-primary: rgb(239, 241, 245) !important;
-  --background-primary-alt: rgb(230, 233, 239) !important;
-  --background-primary-rgb: 239, 241, 245 !important;
-  --background-secondary: rgb(230, 233, 239) !important;
-  --background-secondary-alt: rgb(220, 224, 232) !important;
-  --bases-cards-background: rgb(239, 241, 245) !important;
-  --bases-cards-cover-background: rgb(230, 233, 239) !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(204, 208, 218) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(172, 176, 190) !important;
-  --bases-embed-border-color: rgb(204, 208, 218) !important;
-  --bases-group-heading-property-color: rgb(108, 111, 133) !important;
-  --bases-table-border-color: rgb(204, 208, 218) !important;
-  --bases-table-cell-background-active: rgb(239, 241, 245) !important;
-  --bases-table-cell-background-disabled: rgb(230, 233, 239) !important;
-  --bases-table-cell-background-selected: hsla(254, 80%, 68%, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(156, 160, 176) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(114, 135, 253) !important;
-  --bases-table-group-background: rgb(230, 233, 239) !important;
-  --bases-table-header-background: rgb(239, 241, 245) !important;
-  --bases-table-header-background-hover: rgb(76, 79, 105, 7.5%) !important;
-  --bases-table-header-color: rgb(108, 111, 133) !important;
-  --bases-table-summary-background: rgb(239, 241, 245) !important;
-  --bases-table-summary-background-hover: rgb(76, 79, 105, 7.5%) !important;
-  --blockquote-border-color: rgb(114, 135, 253) !important;
-  --blur-background: color-mix(in srgb, rgb(239, 241, 245) 65%, transparent) linear-gradient(rgb(239, 241, 245), color-mix(in srgb, rgb(239, 241, 245) 65%, transparent)) !important;
-  --bodyFont: "Vollkorn",
+  --accent-h: 254;
+  --accent-l: 68%;
+  --accent-s: 80%;
+  --background-modifier-active-hover: hsl(var(--interactive-accent-hsl), 15%);
+  --background-modifier-border: rgb(var(--ctp-surface0));
+  --background-modifier-border-focus: var(--color-base-40, rgb(156, 160, 176));
+  --background-modifier-border-hover: var(--color-base-35, rgb(172, 176, 190));
+  --background-modifier-box-shadow: rgb(var(--ctp-crust), 30%);
+  --background-modifier-cover: rgb(var(--ctp-crust), 90%);
+  --background-modifier-error: rgb(var(--ctp-red), 90%);
+  --background-modifier-error-hover: rgb(var(--ctp-red), 100%);
+  --background-modifier-error-rgb: var(--ctp-red, 210, 15, 57);
+  --background-modifier-form-field: rgb(var(--ctp-crust), 30%);
+  --background-modifier-form-field-highlighted: rgb(var(--ctp-crust), 22%);
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, rgb(220, 224, 232, 30%));
+  --background-modifier-hover: rgb(var(--mono-rgb-100), 7.5%);
+  --background-modifier-message: rgb(0, 0, 0, 90%);
+  --background-modifier-success: rgb(var(--ctp-green), 90%);
+  --background-modifier-success-rgb: var(--ctp-green, 64, 160, 43);
+  --background-primary: rgb(var(--ctp-base));
+  --background-primary-alt: rgb(var(--ctp-mantle));
+  --background-primary-rgb: var(--ctp-base, 239, 241, 245);
+  --background-secondary: rgb(var(--ctp-mantle));
+  --background-secondary-alt: rgb(var(--ctp-crust));
+  --bases-cards-background: var(--background-primary, rgb(239, 241, 245));
+  --bases-cards-cover-background: var(--background-primary-alt, rgb(230, 233, 239));
+  --bases-embed-border-color: var(--background-modifier-border, rgb(204, 208, 218));
+  --bases-group-heading-property-color: var(--text-muted, rgb(108, 111, 133));
+  --bases-table-border-color: var(--table-border-color, rgb(204, 208, 218));
+  --bases-table-cell-background-active: var(--background-primary, rgb(239, 241, 245));
+  --bases-table-cell-background-disabled: var(--background-primary-alt, rgb(230, 233, 239));
+  --bases-table-cell-background-selected: var(--table-selection, hsla(254, 80%, 68%, 0.1));
+  --bases-table-group-background: var(--background-primary-alt, rgb(230, 233, 239));
+  --bases-table-header-background: var(--background-primary, rgb(239, 241, 245));
+  --bases-table-header-background-hover: var(--background-modifier-hover, rgb(76, 79, 105, 7.5%));
+  --bases-table-header-color: var(--text-muted, rgb(108, 111, 133));
+  --bases-table-summary-background: var(--background-primary, rgb(239, 241, 245));
+  --bases-table-summary-background-hover: var(--background-modifier-hover, rgb(76, 79, 105, 7.5%));
+  --blockquote-border-color: rgb(var(--ctp-lavender));
+  --bodyFont: var(--font-text-theme, "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --bold-weight: 600 !important;
+    sans-serif);
+  --bold-weight: var(--font-semibold, 600);
   --callout-border-opacity: 0.2;
   --callout-border-width: 0.25px;
-  --callout-bug: 210, 15, 57;
-  --callout-default: 30, 102, 245;
-  --callout-error: 210, 15, 57;
-  --callout-example: 136, 57, 239;
-  --callout-fail: 210, 15, 57;
-  --callout-important: 32, 159, 181;
-  --callout-info: 30, 102, 245;
-  --callout-padding: 12px 12px
-    12px 24px;
-  --callout-question: 223, 142, 29;
-  --callout-success: 64, 160, 43;
-  --callout-summary: 32, 159, 181;
-  --callout-tip: 32, 159, 181;
-  --callout-todo: 30, 102, 245;
-  --callout-warning: 254, 100, 11;
-  --canvas-background: rgb(239, 241, 245) !important;
-  --canvas-card-label-color: rgb(188, 192, 204) !important;
-  --canvas-color-1: 210, 15, 57 !important;
-  --canvas-color-2: 254, 100, 11 !important;
-  --canvas-color-3: 223, 142, 29 !important;
-  --canvas-color-4: 64, 160, 43 !important;
-  --canvas-color-5: 32, 159, 181 !important;
-  --canvas-color-6: 136, 57, 239 !important;
-  --canvas-dot-pattern: rgb(188, 192, 204) !important;
-  --caret-color: rgb(76, 79, 105) !important;
-  --checkbox-border-color: rgb(188, 192, 204) !important;
-  --checkbox-border-color-hover: rgb(108, 111, 133) !important;
-  --checkbox-color: rgb(114, 135, 253) !important;
-  --checkbox-color-hover: rgb(114, 135, 253) !important;
-  --checkbox-marker-color: rgb(239, 241, 245) !important;
-  --checklist-done-color: rgb(64, 160, 43) !important;
-  --code-background: rgb(230, 233, 239) !important;
-  --code-border-color: rgb(204, 208, 218) !important;
-  --code-bracket-background: rgb(76, 79, 105, 7.5%) !important;
-  --code-comment: rgb(188, 192, 204) !important;
-  --code-function: rgb(223, 142, 29) !important;
-  --code-important: rgb(254, 100, 11) !important;
-  --code-keyword: rgb(234, 118, 203) !important;
-  --code-normal: rgb(108, 111, 133) !important;
-  --code-operator: rgb(210, 15, 57) !important;
-  --code-property: rgb(4, 165, 229) !important;
-  --code-punctuation: rgb(108, 111, 133) !important;
-  --code-string: rgb(64, 160, 43) !important;
-  --code-tag: rgb(210, 15, 57) !important;
-  --code-value: rgb(114, 135, 253) !important;
-  --codeFont: "Vollkorn",
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --collapse-icon-color: rgb(188, 192, 204) !important;
-  --collapse-icon-color-collapsed: rgb(108, 111, 133) !important;
-  --color-accent: rgb(114, 135, 253) !important;
-  --color-accent-1: rgb(114, 135, 253) !important;
-  --color-accent-2: rgb(114, 135, 253, 90%) !important;
-  --color-accent-hsl: 254, 80%, 68% !important;
-  --color-base-00: rgb(220, 224, 232) !important;
-  --color-base-10: rgb(230, 233, 239) !important;
-  --color-base-100: rgb(76, 79, 105) !important;
-  --color-base-20: rgb(239, 241, 245) !important;
-  --color-base-25: rgb(204, 208, 218) !important;
-  --color-base-30: rgb(188, 192, 204) !important;
-  --color-base-35: rgb(172, 176, 190) !important;
-  --color-base-40: rgb(156, 160, 176) !important;
-  --color-base-50: rgb(140, 143, 161) !important;
-  --color-base-60: rgb(124, 127, 147) !important;
-  --color-base-70: rgb(108, 111, 133) !important;
-  --color-blue: rgb(30, 102, 245) !important;
-  --color-blue-rgb: 30, 102, 245 !important;
-  --color-cyan: rgb(4, 165, 229) !important;
-  --color-cyan-rgb: 32, 159, 181 !important;
-  --color-green: rgb(64, 160, 43) !important;
-  --color-green-rgb: 64, 160, 43 !important;
-  --color-orange: rgb(254, 100, 11) !important;
-  --color-orange-rgb: 254, 100, 11 !important;
-  --color-pink: rgb(234, 118, 203) !important;
-  --color-pink-rgb: 234, 118, 203 !important;
-  --color-purple: rgb(114, 135, 253) !important;
-  --color-purple-rgb: 136, 57, 239 !important;
-  --color-red: rgb(210, 15, 57) !important;
-  --color-red-rgb: 210, 15, 57 !important;
-  --color-yellow: rgb(223, 142, 29) !important;
-  --color-yellow-rgb: 223, 142, 29 !important;
-  --ctp-accent: 114, 135, 253 !important;
-  --ctp-base: 239, 241, 245 !important;
-  --ctp-blockquote: 220, 138, 120 !important;
-  --ctp-blue: 30, 102, 245 !important;
-  --ctp-bold: 32, 159, 181 !important;
-  --ctp-crust: 220, 224, 232 !important;
-  --ctp-flamingo: 221, 120, 120 !important;
-  --ctp-green: 64, 160, 43 !important;
-  --ctp-h1: 114, 135, 253 !important;
-  --ctp-h2: 114, 135, 253 !important;
-  --ctp-h3: 114, 135, 253 !important;
-  --ctp-h4: 114, 135, 253 !important;
-  --ctp-h5: 114, 135, 253 !important;
-  --ctp-h6: 114, 135, 253 !important;
-  --ctp-italic: 64, 160, 43 !important;
-  --ctp-lavender: 114, 135, 253 !important;
-  --ctp-mantle: 230, 233, 239 !important;
-  --ctp-maroon: 230, 69, 83 !important;
-  --ctp-mauve: 136, 57, 239 !important;
-  --ctp-overlay0: 156, 160, 176 !important;
-  --ctp-overlay1: 140, 143, 161 !important;
-  --ctp-overlay2: 124, 127, 147 !important;
-  --ctp-page-title: 76, 79, 105 !important;
-  --ctp-peach: 254, 100, 11 !important;
-  --ctp-pink: 234, 118, 203 !important;
-  --ctp-red: 210, 15, 57 !important;
-  --ctp-rosewater: 220, 138, 120 !important;
-  --ctp-sapphire: 32, 159, 181 !important;
-  --ctp-sky: 4, 165, 229 !important;
-  --ctp-strikethrough: 230, 69, 83 !important;
-  --ctp-subtext0: 108, 111, 133 !important;
-  --ctp-subtext1: 92, 95, 119 !important;
-  --ctp-surface0: 204, 208, 218 !important;
-  --ctp-surface1: 188, 192, 204 !important;
-  --ctp-surface2: 172, 176, 190 !important;
-  --ctp-tag-pill-color: 114, 135, 253 !important;
-  --ctp-teal: 23, 146, 153 !important;
-  --ctp-text: 76, 79, 105 !important;
-  --ctp-yellow: 223, 142, 29 !important;
-  --dark: rgb(76, 79, 105) !important;
-  --darkgray: rgb(76, 79, 105) !important;
-  --divider-color: rgb(204, 208, 218) !important;
-  --divider-color-hover: rgb(30, 102, 245) !important;
-  --divider-width-hover: 2px !important;
-  --drag-ghost-background: rgb(0, 0, 0, 85%) !important;
-  --drag-ghost-text-color: rgb(76, 79, 105) !important;
-  --dropdown-background: rgb(204, 208, 218) !important;
-  --dropdown-background-hover: rgb(188, 192, 204) !important;
+  --callout-bug: var(--color-red-rgb, 210, 15, 57);
+  --callout-default: var(--color-blue-rgb, 30, 102, 245);
+  --callout-error: var(--color-red-rgb, 210, 15, 57);
+  --callout-example: var(--color-purple-rgb, 136, 57, 239);
+  --callout-fail: var(--color-red-rgb, 210, 15, 57);
+  --callout-important: var(--color-cyan-rgb, 32, 159, 181);
+  --callout-info: var(--color-blue-rgb, 30, 102, 245);
+  --callout-padding: var(--size-4-3) var(--size-4-3)
+    var(--size-4-3) var(--size-4-6, 12px 12px
+    12px 24px);
+  --callout-question: var(--color-yellow-rgb, 223, 142, 29);
+  --callout-success: var(--color-green-rgb, 64, 160, 43);
+  --callout-summary: var(--color-cyan-rgb, 32, 159, 181);
+  --callout-tip: var(--color-cyan-rgb, 32, 159, 181);
+  --callout-todo: var(--color-blue-rgb, 30, 102, 245);
+  --callout-warning: var(--color-orange-rgb, 254, 100, 11);
+  --canvas-background: var(--background-primary, rgb(239, 241, 245));
+  --canvas-card-label-color: var(--text-faint, rgb(188, 192, 204));
+  --canvas-color-1: var(--color-red-rgb, 210, 15, 57);
+  --canvas-color-2: var(--color-orange-rgb, 254, 100, 11);
+  --canvas-color-3: var(--color-yellow-rgb, 223, 142, 29);
+  --canvas-color-4: var(--color-green-rgb, 64, 160, 43);
+  --canvas-color-5: var(--color-cyan-rgb, 32, 159, 181);
+  --canvas-color-6: var(--color-purple-rgb, 136, 57, 239);
+  --canvas-dot-pattern: var(--color-base-30, rgb(188, 192, 204));
+  --caret-color: var(--text-normal, rgb(76, 79, 105));
+  --checkbox-border-color: var(--text-faint, rgb(188, 192, 204));
+  --checkbox-border-color-hover: var(--text-muted, rgb(108, 111, 133));
+  --checkbox-color: var(--interactive-accent, rgb(114, 135, 253));
+  --checkbox-color-hover: var(--interactive-accent-hover, rgb(114, 135, 253));
+  --checkbox-marker-color: var(--background-primary, rgb(239, 241, 245));
+  --checklist-done-color: rgb(var(--ctp-green));
+  --code-background: var(--background-primary-alt, rgb(230, 233, 239));
+  --code-border-color: var(--background-modifier-border, rgb(204, 208, 218));
+  --code-bracket-background: var(--background-modifier-hover, rgb(76, 79, 105, 7.5%));
+  --code-comment: var(--text-faint, rgb(188, 192, 204));
+  --code-function: var(--color-yellow, rgb(223, 142, 29));
+  --code-important: var(--color-orange, rgb(254, 100, 11));
+  --code-keyword: var(--color-pink, rgb(234, 118, 203));
+  --code-normal: var(--text-muted, rgb(108, 111, 133));
+  --code-operator: var(--color-red, rgb(210, 15, 57));
+  --code-property: var(--color-cyan, rgb(4, 165, 229));
+  --code-punctuation: var(--text-muted, rgb(108, 111, 133));
+  --code-string: var(--color-green, rgb(64, 160, 43));
+  --code-tag: var(--color-red, rgb(210, 15, 57));
+  --code-value: var(--color-purple, rgb(114, 135, 253));
+  --collapse-icon-color: var(--text-faint, rgb(188, 192, 204));
+  --collapse-icon-color-collapsed: var(--text-muted, rgb(108, 111, 133));
+  --color-accent: rgb(var(--ctp-accent));
+  --color-accent-1: rgb(var(--ctp-accent));
+  --color-accent-2: rgb(var(--ctp-accent), 90%);
+  --color-base-00: rgb(var(--ctp-crust));
+  --color-base-10: rgb(var(--ctp-mantle));
+  --color-base-100: rgb(var(--ctp-text));
+  --color-base-20: rgb(var(--ctp-base));
+  --color-base-25: rgb(var(--ctp-surface0));
+  --color-base-30: rgb(var(--ctp-surface1));
+  --color-base-35: rgb(var(--ctp-surface2));
+  --color-base-40: rgb(var(--ctp-overlay0));
+  --color-base-50: rgb(var(--ctp-overlay1));
+  --color-base-60: rgb(var(--ctp-overlay2));
+  --color-base-70: rgb(var(--ctp-subtext0));
+  --color-blue: rgb(var(--ctp-blue));
+  --color-blue-rgb: var(--ctp-blue, 30, 102, 245);
+  --color-cyan: rgb(var(--ctp-sky));
+  --color-cyan-rgb: var(--ctp-sapphire, 32, 159, 181);
+  --color-green: rgb(var(--ctp-green));
+  --color-green-rgb: var(--ctp-green, 64, 160, 43);
+  --color-orange: rgb(var(--ctp-peach));
+  --color-orange-rgb: var(--ctp-peach, 254, 100, 11);
+  --color-pink: rgb(var(--ctp-pink));
+  --color-pink-rgb: var(--ctp-pink, 234, 118, 203);
+  --color-purple: rgb(var(--ctp-lavender));
+  --color-purple-rgb: var(--ctp-mauve, 136, 57, 239);
+  --color-red: rgb(var(--ctp-red));
+  --color-red-rgb: var(--ctp-red, 210, 15, 57);
+  --color-yellow: rgb(var(--ctp-yellow));
+  --color-yellow-rgb: var(--ctp-yellow, 223, 142, 29);
+  --ctp-accent: var(--ctp-lavender, 114, 135, 253);
+  --ctp-base: 239, 241, 245;
+  --ctp-blockquote: var(--ctp-rosewater, 220, 138, 120);
+  --ctp-blue: 30, 102, 245;
+  --ctp-bold: var(--ctp-sapphire, 32, 159, 181);
+  --ctp-crust: 220, 224, 232;
+  --ctp-flamingo: 221, 120, 120;
+  --ctp-green: 64, 160, 43;
+  --ctp-h1: var(--ctp-accent, 114, 135, 253);
+  --ctp-h2: var(--ctp-accent, 114, 135, 253);
+  --ctp-h3: var(--ctp-accent, 114, 135, 253);
+  --ctp-h4: var(--ctp-accent, 114, 135, 253);
+  --ctp-h5: var(--ctp-accent, 114, 135, 253);
+  --ctp-h6: var(--ctp-accent, 114, 135, 253);
+  --ctp-italic: var(--ctp-green, 64, 160, 43);
+  --ctp-lavender: 114, 135, 253;
+  --ctp-mantle: 230, 233, 239;
+  --ctp-maroon: 230, 69, 83;
+  --ctp-mauve: 136, 57, 239;
+  --ctp-overlay0: 156, 160, 176;
+  --ctp-overlay1: 140, 143, 161;
+  --ctp-overlay2: 124, 127, 147;
+  --ctp-page-title: var(--ctp-text, 76, 79, 105);
+  --ctp-peach: 254, 100, 11;
+  --ctp-pink: 234, 118, 203;
+  --ctp-red: 210, 15, 57;
+  --ctp-rosewater: 220, 138, 120;
+  --ctp-sapphire: 32, 159, 181;
+  --ctp-sky: 4, 165, 229;
+  --ctp-strikethrough: var(--ctp-maroon, 230, 69, 83);
+  --ctp-subtext0: 108, 111, 133;
+  --ctp-subtext1: 92, 95, 119;
+  --ctp-surface0: 204, 208, 218;
+  --ctp-surface1: 188, 192, 204;
+  --ctp-surface2: 172, 176, 190;
+  --ctp-tag-pill-color: var(--ctp-accent, 114, 135, 253);
+  --ctp-teal: 23, 146, 153;
+  --ctp-text: 76, 79, 105;
+  --ctp-yellow: 223, 142, 29;
+  --dark: var(--text-normal, rgb(var(--ctp-text)));
+  --darkgray: var(--text-normal, rgb(var(--ctp-text)));
+  --divider-color: var(--background-modifier-border, rgb(204, 208, 218));
+  --divider-color-hover: rgb(var(--ctp-blue));
+  --divider-width-hover: 2px;
+  --drag-ghost-background: rgb(0, 0, 0, 85%);
+  --drag-ghost-text-color: var(--text-normal, rgb(76, 79, 105));
+  --dropdown-background: var(--interactive-normal, rgb(204, 208, 218));
+  --dropdown-background-hover: var(--interactive-hover, rgb(188, 192, 204));
   --embed-block-shadow-hover: 0 0 0 1px
-    rgb(204, 208, 218),
-    inset 0 0 0 1px rgb(204, 208, 218) !important;
-  --embed-border-left: 2px solid rgb(114, 135, 253) !important;
-  --embed-border-right: none !important;
-  --embed-border-start: 2px solid rgb(114, 135, 253) !important;
-  --file-header-background: rgb(239, 241, 245) !important;
-  --file-header-background-focused: rgb(239, 241, 245) !important;
-  --file-header-font: "Nunito Sans",
+    var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border);
+  --embed-border-left: 2px solid var(--interactive-accent);
+  --embed-border-right: none;
+  --file-header-background: var(--background-primary, rgb(239, 241, 245));
+  --file-header-background-focused: var(--background-primary, rgb(239, 241, 245));
+  --file-header-font: var(--font-interface, "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --file-margins: 32px !important;
-  --flair-background: rgb(204, 208, 218) !important;
-  --flair-color: rgb(76, 79, 105) !important;
-  --font-interface: "Nunito Sans",
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --file-margins: var(--size-4-8, 32px);
+  --flair-background: var(--interactive-normal, rgb(204, 208, 218));
+  --flair-color: var(--text-normal, rgb(76, 79, 105));
   --font-interface-theme: "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
@@ -3204,31 +3127,15 @@ html[saved-theme="dark"] body ul.tags > li {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif !important;
-  --font-mermaid: "Vollkorn",
+    sans-serif;
+  --font-mermaid: var(--font-text, "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-print: "Vollkorn",
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif, Arial' !important;
-  --font-text: "Vollkorn",
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   --font-text-theme: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
@@ -3236,335 +3143,333 @@ html[saved-theme="dark"] body ul.tags > li {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif !important;
-  --font-ui-medium: 16px !important;
-  --footnote-divider-color: rgb(204, 208, 218) !important;
-  --footnote-id-color: rgb(108, 111, 133) !important;
-  --footnote-id-color-no-occurrences: rgb(188, 192, 204) !important;
-  --footnote-input-background-active: rgb(76, 79, 105, 7.5%) !important;
-  --graph-line: rgb(172, 176, 190) !important;
-  --graph-node: rgb(108, 111, 133) !important;
-  --graph-node-attachment: rgb(223, 142, 29) !important;
-  --graph-node-focused: rgb(114, 135, 253) !important;
-  --graph-node-tag: rgb(64, 160, 43) !important;
-  --graph-node-unresolved: rgb(188, 192, 204) !important;
-  --graph-text: rgb(76, 79, 105) !important;
-  --gray: rgb(108, 111, 133) !important;
-  --h1-line-height: 1.5 !important;
-  --h1-size: 2em !important;
-  --h2-line-height: 1.5 !important;
-  --h2-size: 1.6em !important;
-  --h2-weight: 600 !important;
-  --h3-line-height: 1.5 !important;
-  --h3-size: 1.37em !important;
-  --h3-weight: 600 !important;
-  --h4-line-height: 1.5 !important;
-  --h4-size: 1.25em !important;
-  --h4-weight: 600 !important;
-  --h5-size: 1.12em !important;
-  --h5-weight: 600 !important;
-  --h6-size: 1.12em !important;
-  --headerFont: "Vollkorn",
+    sans-serif;
+  --font-ui-medium: 16px;
+  --footnote-divider-color: var(--metadata-divider-color, rgb(204, 208, 218));
+  --footnote-id-color: var(--text-muted, rgb(108, 111, 133));
+  --footnote-id-color-no-occurrences: var(--text-faint, rgb(188, 192, 204));
+  --footnote-input-background-active: var(--metadata-input-background-active, rgb(76, 79, 105, 7.5%));
+  --graph-line: var(
+      --color-base-35,
+      var(--background-modifier-border-focus)
+    );
+  --graph-node: var(--text-muted, rgb(108, 111, 133));
+  --graph-node-attachment: var(--color-yellow, rgb(223, 142, 29));
+  --graph-node-focused: var(--text-accent, rgb(114, 135, 253));
+  --graph-node-tag: var(--color-green, rgb(64, 160, 43));
+  --graph-node-unresolved: var(--text-faint, rgb(188, 192, 204));
+  --graph-text: var(--text-normal, rgb(76, 79, 105));
+  --gray: var(--text-muted, rgb(var(--ctp-subtext0)));
+  --h1-line-height: 1.5;
+  --h1-size: 2em;
+  --h2-line-height: 1.5;
+  --h2-size: 1.6em;
+  --h2-weight: 600;
+  --h3-line-height: 1.5;
+  --h3-size: 1.37em;
+  --h3-weight: 600;
+  --h4-line-height: 1.5;
+  --h4-size: 1.25em;
+  --h4-weight: 600;
+  --h5-size: 1.12em;
+  --h5-weight: 600;
+  --h6-size: 1.12em;
+  --headerFont: var(--font-text-theme, "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: rgb(188, 192, 204) !important;
-  --hex-blue: #1e66f5 !important;
-  --hex-green: #40a02b !important;
-  --hex-lavender: #7287fd !important;
-  --hex-mauve: #8839ef !important;
-  --hex-peach: #fe640b !important;
-  --hex-pink: #ea76cb !important;
-  --hex-red: #d20f39 !important;
-  --hex-sapphire: #209fb5 !important;
-  --hex-sky: #04a5e5 !important;
-  --hex-teal: #179299 !important;
-  --hex-yellow: #df8e1d !important;
-  --highlight: rgb(220, 138, 120, 100%) !important;
-  --hr-color: rgb(30, 102, 245) !important;
-  --icon-color: rgb(108, 111, 133) !important;
-  --icon-color-active: rgb(114, 135, 253) !important;
-  --icon-color-focused: rgb(76, 79, 105) !important;
-  --icon-color-hover: rgb(230, 233, 239) !important;
-  --icon-opacity: 1 !important;
-  --indentation-guide-color: rgb(188, 192, 204) !important;
-  --indentation-guide-color-active: rgb(32, 159, 181, 70%) !important;
-  --indentation-guide-width: 2px !important;
-  --inline-title-line-height: 1.5 !important;
-  --inline-title-size: 2em !important;
-  --input-date-separator: rgb(188, 192, 204) !important;
-  --input-placeholder-color: rgb(188, 192, 204) !important;
-  --interactive-accent: rgb(114, 135, 253) !important;
-  --interactive-accent-hover: rgb(114, 135, 253) !important;
-  --interactive-accent-hsl: 254, 80%, 68% !important;
-  --interactive-accent-rgb: 114, 135, 253 !important;
-  --interactive-hover: rgb(188, 192, 204) !important;
-  --interactive-normal: rgb(204, 208, 218) !important;
-  --interactive-success: rgb(64, 160, 43) !important;
-  --light: rgb(239, 241, 245) !important;
-  --lightgray: rgb(230, 233, 239) !important;
-  --line-height-tight: 1.25 !important;
-  --link-color: rgb(30, 102, 245) !important;
-  --link-color-hover: rgb(30, 102, 245) !important;
-  --link-decoration: none !important;
-  --link-decoration-thickness: 2px !important;
-  --link-external-color: rgb(23, 146, 153) !important;
-  --link-external-color-hover: rgb(23, 146, 153) !important;
-  --link-external-decoration: none !important;
-  --link-unresolved-color: rgb(230, 69, 83) !important;
-  --link-unresolved-decoration-color: rgb(210, 15, 57) !important;
-  --link-unresolved-opacity: 1 !important;
-  --list-indent: 2em !important;
-  --list-marker-color: rgb(32, 159, 181) !important;
-  --list-marker-color-collapsed: rgb(114, 135, 253) !important;
-  --list-marker-color-hover: rgb(108, 111, 133) !important;
-  --list-spacing: 0.1em !important;
-  --menu-background: rgb(230, 233, 239) !important;
-  --menu-border-color: rgb(172, 176, 190) !important;
-  --metadata-border-color: rgb(204, 208, 218) !important;
-  --metadata-divider-color: rgb(204, 208, 218) !important;
-  --metadata-input-background-active: rgb(76, 79, 105, 7.5%) !important;
-  --metadata-input-font: "Nunito Sans",
+    sans-serif);
+  --heading-formatting: var(--text-faint, rgb(188, 192, 204));
+  --hex-blue: #1e66f5;
+  --hex-green: #40a02b;
+  --hex-lavender: #7287fd;
+  --hex-mauve: #8839ef;
+  --hex-peach: #fe640b;
+  --hex-pink: #ea76cb;
+  --hex-red: #d20f39;
+  --hex-sapphire: #209fb5;
+  --hex-sky: #04a5e5;
+  --hex-teal: #179299;
+  --hex-yellow: #df8e1d;
+  --highlight: var(--text-highlight-bg, rgb(var(--ctp-rosewater), 100%));
+  --hr-color: rgb(var(--ctp-blue));
+  --icon-color: var(--text-muted, rgb(108, 111, 133));
+  --icon-color-active: var(--text-accent, rgb(114, 135, 253));
+  --icon-color-focused: var(--text-normal, rgb(76, 79, 105));
+  --icon-color-hover: var(--text-on-accent, rgb(230, 233, 239));
+  --icon-opacity: 1;
+  --indentation-guide-color: rgb(var(--ctp-surface1));
+  --indentation-guide-color-active: rgb(var(--ctp-sapphire), 70%);
+  --indentation-guide-width: var(--border-width, 2px);
+  --inline-title-line-height: var(--h1-line-height, 1.5);
+  --inline-title-size: var(--h1-size, 2em);
+  --input-date-separator: var(--text-faint, rgb(188, 192, 204));
+  --input-placeholder-color: var(--text-faint, rgb(188, 192, 204));
+  --interactive-accent: rgb(var(--ctp-accent));
+  --interactive-accent-hover: rgb(var(--ctp-accent));
+  --interactive-accent-hsl: var(--color-accent-hsl, 254, 80%, 68%);
+  --interactive-accent-rgb: var(--ctp-accent, 114, 135, 253);
+  --interactive-hover: rgb(var(--ctp-surface1));
+  --interactive-normal: rgb(var(--ctp-surface0));
+  --interactive-success: rgb(var(--ctp-green));
+  --light: var(--background-primary, rgb(var(--ctp-base)));
+  --lightgray: var(--background-secondary, rgb(var(--ctp-mantle)));
+  --line-height-tight: 1.25;
+  --link-color: rgb(var(--ctp-blue));
+  --link-color-hover: rgb(var(--ctp-blue));
+  --link-decoration: none;
+  --link-decoration-thickness: 2px;
+  --link-external-color: rgb(var(--ctp-teal));
+  --link-external-color-hover: rgb(var(--ctp-teal));
+  --link-external-decoration: none;
+  --link-unresolved-color: rgb(var(--ctp-maroon));
+  --link-unresolved-decoration-color: rgb(var(--ctp-red));
+  --link-unresolved-opacity: 1;
+  --list-marker-color: rgb(var(--ctp-sapphire));
+  --list-marker-color-collapsed: var(--text-accent, rgb(114, 135, 253));
+  --list-marker-color-hover: var(--text-muted, rgb(108, 111, 133));
+  --list-spacing: 0.1em;
+  --menu-background: var(--background-secondary, rgb(230, 233, 239));
+  --menu-border-color: var(--background-modifier-border-hover, rgb(172, 176, 190));
+  --metadata-border-color: var(--background-modifier-border, rgb(204, 208, 218));
+  --metadata-divider-color: var(--background-modifier-border, rgb(204, 208, 218));
+  --metadata-input-background-active: var(--background-modifier-hover, rgb(76, 79, 105, 7.5%));
+  --metadata-input-font: var(--font-interface, "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: rgb(76, 79, 105) !important;
-  --metadata-label-background-active: rgb(76, 79, 105, 7.5%) !important;
-  --metadata-label-font: "Nunito Sans",
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-input-text-color: var(--text-normal, rgb(76, 79, 105));
+  --metadata-label-background-active: var(--background-modifier-hover, rgb(76, 79, 105, 7.5%));
+  --metadata-label-font: var(--font-interface, "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: rgb(108, 111, 133) !important;
-  --metadata-label-text-color-hover: rgb(108, 111, 133) !important;
-  --metadata-property-background-active: rgb(76, 79, 105, 7.5%) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(156, 160, 176) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(172, 176, 190) !important;
-  --modal-background: rgb(239, 241, 245) !important;
-  --modal-border-color: rgb(156, 160, 176) !important;
-  --modal-radius: 10px !important;
-  --mono-rgb-0: 220, 224, 232 !important;
-  --mono-rgb-100: 76, 79, 105 !important;
-  --nav-collapse-icon-color: rgb(188, 192, 204) !important;
-  --nav-collapse-icon-color-collapsed: rgb(188, 192, 204) !important;
-  --nav-heading-color: rgb(76, 79, 105) !important;
-  --nav-heading-color-collapsed: rgb(188, 192, 204) !important;
-  --nav-heading-color-collapsed-hover: rgb(108, 111, 133) !important;
-  --nav-heading-color-hover: rgb(76, 79, 105) !important;
-  --nav-indentation-guide-color: rgb(188, 192, 204) !important;
-  --nav-indentation-guide-width: 2px !important;
-  --nav-item-background-active: rgb(76, 79, 105, 7.5%) !important;
-  --nav-item-background-hover: rgb(76, 79, 105, 7.5%) !important;
-  --nav-item-background-selected: hsl(254, 80%, 68%, 20%) !important;
-  --nav-item-children-margin-left: 12px !important;
-  --nav-item-children-padding-left: 4px !important;
-  --nav-item-color: rgb(108, 111, 133) !important;
-  --nav-item-color-active: rgb(230, 233, 239) !important;
-  --nav-item-color-highlighted: rgb(114, 135, 253) !important;
-  --nav-item-color-hover: rgb(230, 233, 239) !important;
-  --nav-item-color-selected: rgb(230, 233, 239) !important;
-  --nav-item-white-space: nowrap !important;
-  --nav-tag-color: rgb(188, 192, 204) !important;
-  --nav-tag-color-active: rgb(108, 111, 133) !important;
-  --nav-tag-color-hover: rgb(108, 111, 133) !important;
-  --pdf-background: rgb(239, 241, 245) !important;
-  --pdf-page-background: rgb(239, 241, 245) !important;
-  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: rgb(239, 241, 245) !important;
-  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
-  --pill-border-color: rgb(204, 208, 218) !important;
-  --pill-border-color-hover: rgb(172, 176, 190) !important;
-  --pill-color: rgb(108, 111, 133) !important;
-  --pill-color-hover: rgb(76, 79, 105) !important;
-  --pill-color-remove: rgb(188, 192, 204) !important;
-  --pill-color-remove-hover: rgb(114, 135, 253) !important;
-  --popover-max-height: 70vh !important;
-  --popover-pdf-height: 800px !important;
-  --popover-pdf-width: 600px !important;
-  --prompt-background: rgb(239, 241, 245) !important;
-  --prompt-border-color: rgb(156, 160, 176) !important;
-  --radius-l: 10px !important;
-  --raised-background: color-mix(in srgb, rgb(239, 241, 245) 65%, transparent) linear-gradient(rgb(239, 241, 245), color-mix(in srgb, rgb(239, 241, 245) 65%, transparent)) !important;
-  --ribbon-background: rgb(230, 233, 239) !important;
-  --ribbon-background-collapsed: rgb(239, 241, 245) !important;
-  --ribbon-padding: 8px 4px
-    12px !important;
-  --scrollbar-active-thumb-bg: rgb(76, 79, 105, 20%) !important;
-  --scrollbar-bg: rgb(76, 79, 105, 5%) !important;
-  --scrollbar-radius: 10px !important;
-  --scrollbar-thumb-bg: rgb(76, 79, 105, 10%) !important;
-  --search-clear-button-color: rgb(108, 111, 133) !important;
-  --search-icon-color: rgb(108, 111, 133) !important;
-  --search-result-background: rgb(239, 241, 245) !important;
-  --secondary: rgb(114, 135, 253) !important;
-  --setting-group-heading-color: rgb(76, 79, 105) !important;
-  --setting-group-heading-size: 16px !important;
-  --setting-items-background: rgb(230, 233, 239) !important;
-  --setting-items-border-color: rgb(204, 208, 218) !important;
-  --setting-items-radius: 10px !important;
-  --shiki-active-tab-border-color: rgb(108, 111, 133) !important;
-  --shiki-code-background: rgb(230, 233, 239) !important;
-  --shiki-code-comment: rgb(188, 192, 204) !important;
-  --shiki-code-function: rgb(64, 160, 43) !important;
-  --shiki-code-important: rgb(254, 100, 11) !important;
-  --shiki-code-keyword: rgb(234, 118, 203) !important;
-  --shiki-code-normal: rgb(108, 111, 133) !important;
-  --shiki-code-property: rgb(4, 165, 229) !important;
-  --shiki-code-punctuation: rgb(108, 111, 133) !important;
-  --shiki-code-string: rgb(223, 142, 29) !important;
-  --shiki-code-value: rgb(114, 135, 253) !important;
-  --shiki-gutter-border-color: rgb(204, 208, 218) !important;
-  --shiki-gutter-text-color: rgb(188, 192, 204) !important;
-  --shiki-gutter-text-color-highlight: rgb(108, 111, 133) !important;
-  --shiki-highlight-green: rgba(64, 160, 43, 0.5) !important;
-  --shiki-highlight-green-background: rgba(64, 160, 43, 0.1) !important;
-  --shiki-highlight-neutral: rgb(108, 111, 133) !important;
-  --shiki-highlight-neutral-background: rgba(76, 79, 105, 0.05) !important;
-  --shiki-highlight-red: rgba(210, 15, 57, 0.5) !important;
-  --shiki-highlight-red-background: rgba(210, 15, 57, 0.1) !important;
-  --shiki-terminal-dots-color: rgb(188, 192, 204) !important;
-  --shiki-tooltip-background: rgb(0, 0, 0, 90%) !important;
-  --sidebar-markdown-font-size: 14.4px !important;
-  --slider-thumb-border-color: rgb(172, 176, 190) !important;
-  --slider-thumb-radius: 50% !important;
-  --slider-track-background: rgb(204, 208, 218) !important;
-  --status-bar-background: rgb(230, 233, 239) !important;
-  --status-bar-border-color: rgb(204, 208, 218) !important;
-  --status-bar-scroll-padding: 30px !important;
-  --status-bar-text-color: rgb(108, 111, 133) !important;
-  --suggestion-background: rgb(239, 241, 245) !important;
-  --swatch-height: 24px !important;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-label-text-color: var(--text-muted, rgb(108, 111, 133));
+  --metadata-label-text-color-hover: var(--text-muted, rgb(108, 111, 133));
+  --metadata-property-background-active: var(--background-modifier-hover, rgb(76, 79, 105, 7.5%));
+  --modal-background: var(--background-primary, rgb(239, 241, 245));
+  --modal-border-color: var(
+      --color-base-40,
+      var(--background-modifier-border-focus)
+    );
+  --modal-radius: var(--radius-l, 10px);
+  --mono-rgb-0: var(--ctp-crust, 220, 224, 232);
+  --mono-rgb-100: var(--ctp-text, 76, 79, 105);
+  --nav-collapse-icon-color: var(--collapse-icon-color, rgb(188, 192, 204));
+  --nav-collapse-icon-color-collapsed: var(--text-faint, rgb(188, 192, 204));
+  --nav-heading-color: var(--text-normal, rgb(76, 79, 105));
+  --nav-heading-color-collapsed: var(--text-faint, rgb(188, 192, 204));
+  --nav-heading-color-collapsed-hover: var(--text-muted, rgb(108, 111, 133));
+  --nav-heading-color-hover: var(--text-normal, rgb(76, 79, 105));
+  --nav-indentation-guide-color: var(--indentation-guide-color, rgb(188, 192, 204));
+  --nav-indentation-guide-width: var(--indentation-guide-width, 2px);
+  --nav-item-background-active: var(--background-modifier-hover, rgb(76, 79, 105, 7.5%));
+  --nav-item-background-hover: var(--background-modifier-hover, rgb(76, 79, 105, 7.5%));
+  --nav-item-background-selected: hsl(var(--color-accent-hsl), 20%);
+  --nav-item-children-margin-left: var(--size-4-3, 12px);
+  --nav-item-children-padding-left: var(--size-2-2, 4px);
+  --nav-item-color: var(--text-muted, rgb(108, 111, 133));
+  --nav-item-color-active: var(--text-on-accent, rgb(230, 233, 239));
+  --nav-item-color-highlighted: var(--text-accent-hover, rgb(114, 135, 253));
+  --nav-item-color-hover: var(--text-on-accent, rgb(230, 233, 239));
+  --nav-item-color-selected: var(--text-on-accent, rgb(230, 233, 239));
+  --nav-item-white-space: nowrap;
+  --nav-tag-color: var(--text-faint, rgb(188, 192, 204));
+  --nav-tag-color-active: var(--text-muted, rgb(108, 111, 133));
+  --nav-tag-color-hover: var(--text-muted, rgb(108, 111, 133));
+  --pdf-background: var(--background-primary, rgb(239, 241, 245));
+  --pdf-page-background: var(--background-primary, rgb(239, 241, 245));
+  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
+  --pdf-sidebar-background: var(--background-primary, rgb(239, 241, 245));
+  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+  --pill-border-color: var(--background-modifier-border, rgb(204, 208, 218));
+  --pill-border-color-hover: var(--background-modifier-border-hover, rgb(172, 176, 190));
+  --pill-color: var(--text-muted, rgb(108, 111, 133));
+  --pill-color-hover: var(--text-normal, rgb(76, 79, 105));
+  --pill-color-remove: var(--text-faint, rgb(188, 192, 204));
+  --pill-color-remove-hover: var(--text-accent, rgb(114, 135, 253));
+  --popover-max-height: 70vh;
+  --popover-pdf-height: 800px;
+  --popover-pdf-width: 600px;
+  --prompt-background: var(--background-primary, rgb(239, 241, 245));
+  --prompt-border-color: var(
+      --color-base-40,
+      var(--background-modifier-border-focus)
+    );
+  --radius-l: 10px;
+  --raised-background: var(--blur-background, color-mix(in srgb, rgb(239, 241, 245) 65%, transparent) linear-gradient(rgb(239, 241, 245), color-mix(in srgb, rgb(239, 241, 245) 65%, transparent)));
+  --ribbon-background: var(--background-secondary, rgb(230, 233, 239));
+  --ribbon-background-collapsed: var(--background-primary, rgb(239, 241, 245));
+  --ribbon-padding: var(--size-4-2) var(--size-4-1)
+    var(--size-4-3, 8px 4px
+    12px);
+  --scrollbar-active-thumb-bg: rgb(var(--ctp-text), 20%);
+  --scrollbar-bg: rgb(var(--ctp-text), 5%);
+  --scrollbar-radius: var(--radius-l, 10px);
+  --scrollbar-thumb-bg: rgb(var(--ctp-text), 10%);
+  --search-clear-button-color: var(--text-muted, rgb(108, 111, 133));
+  --search-icon-color: var(--text-muted, rgb(108, 111, 133));
+  --search-result-background: var(--background-primary, rgb(239, 241, 245));
+  --secondary: var(--text-accent, rgb(var(--ctp-accent)));
+  --setting-group-heading-color: var(--text-normal, rgb(76, 79, 105));
+  --setting-group-heading-size: var(--font-ui-medium, 16px);
+  --setting-items-background: var(--background-primary-alt, rgb(230, 233, 239));
+  --setting-items-border-color: var(--background-modifier-border, rgb(204, 208, 218));
+  --setting-items-radius: var(--radius-l, 10px);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, rgb(108, 111, 133));
+  --shiki-code-background: var(--code-background, rgb(230, 233, 239));
+  --shiki-code-comment: var(--text-faint, rgb(188, 192, 204));
+  --shiki-code-function: var(--color-green, rgb(64, 160, 43));
+  --shiki-code-important: var(--color-orange, rgb(254, 100, 11));
+  --shiki-code-keyword: var(--color-pink, rgb(234, 118, 203));
+  --shiki-code-normal: var(--text-muted, rgb(108, 111, 133));
+  --shiki-code-property: var(--color-cyan, rgb(4, 165, 229));
+  --shiki-code-punctuation: var(--text-muted, rgb(108, 111, 133));
+  --shiki-code-string: var(--color-yellow, rgb(223, 142, 29));
+  --shiki-code-value: var(--color-purple, rgb(114, 135, 253));
+  --shiki-gutter-border-color: var(--background-modifier-border, rgb(204, 208, 218));
+  --shiki-gutter-text-color: var(--text-faint, rgb(188, 192, 204));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, rgb(108, 111, 133));
+  --shiki-highlight-neutral: var(--shiki-code-normal, rgb(108, 111, 133));
+  --shiki-terminal-dots-color: var(--text-faint, rgb(188, 192, 204));
+  --shiki-tooltip-background: var(--background-modifier-message, rgb(0, 0, 0, 90%));
+  --sidebar-markdown-font-size: calc(var(--font-text-size)*0.9);
+  --slider-thumb-border-color: var(
+      --background-modifier-border-hover
+    , rgb(172, 176, 190));
+  --slider-thumb-radius: var(--slider-thumb-height, 50%);
+  --slider-track-background: var(--background-modifier-border, rgb(204, 208, 218));
+  --status-bar-background: var(--background-secondary, rgb(230, 233, 239));
+  --status-bar-border-color: var(--divider-color, rgb(204, 208, 218));
+  --status-bar-scroll-padding: calc(var(--status-bar-font-size) + 18px);
+  --status-bar-text-color: var(--text-muted, rgb(108, 111, 133));
+  --suggestion-background: var(--background-primary, rgb(239, 241, 245));
+  --swatch-height: 24px;
   --swatch-shadow: inset 0 0 0 1px
-    rgb(76, 79, 105, 15%) !important;
-  --swatch-width: 24px !important;
-  --sync-avatar-color-1: rgb(210, 15, 57) !important;
-  --sync-avatar-color-2: rgb(254, 100, 11) !important;
-  --sync-avatar-color-3: rgb(223, 142, 29) !important;
-  --sync-avatar-color-4: rgb(64, 160, 43) !important;
-  --sync-avatar-color-5: rgb(4, 165, 229) !important;
-  --sync-avatar-color-6: rgb(30, 102, 245) !important;
-  --sync-avatar-color-7: rgb(114, 135, 253) !important;
-  --sync-avatar-color-8: rgb(234, 118, 203) !important;
-  --tab-background-active: rgb(239, 241, 245) !important;
-  --tab-container-background: rgb(230, 233, 239) !important;
-  --tab-divider-color: rgb(172, 176, 190) !important;
-  --tab-outline-color: rgb(204, 208, 218) !important;
-  --tab-stacked-shadow: -8px 0 8px 0 rgb(0, 0, 0, 5%) !important;
-  --tab-stacked-text-align: left !important;
-  --tab-switcher-background: rgb(230, 233, 239) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(230, 233, 239), transparent) !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(76, 79, 105, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(114, 135, 253) !important;
-  --tab-text-color: rgb(188, 192, 204) !important;
-  --tab-text-color-active: rgb(108, 111, 133) !important;
-  --tab-text-color-focused: rgb(108, 111, 133) !important;
-  --tab-text-color-focused-active: rgb(76, 79, 105) !important;
-  --tab-text-color-focused-active-current: rgb(76, 79, 105) !important;
-  --tab-text-color-focused-highlighted: rgb(114, 135, 253) !important;
-  --table-add-button-border-color: rgb(204, 208, 218) !important;
-  --table-border-color: rgb(204, 208, 218) !important;
-  --table-drag-handle-background-active: rgb(114, 135, 253) !important;
-  --table-drag-handle-color: rgb(188, 192, 204) !important;
-  --table-drag-handle-color-active: rgb(230, 233, 239) !important;
-  --table-header-border-color: rgb(204, 208, 218) !important;
-  --table-header-color: rgb(108, 111, 133) !important;
-  --table-header-size: 0.875em !important;
-  --table-header-weight: 400 !important;
-  --table-line-height: 1.25 !important;
-  --table-selection: hsla(254, 80%, 68%, 0.1) !important;
-  --table-selection-border-color: rgb(114, 135, 253) !important;
-  --table-white-space: normal !important;
-  --tag-background: transparent !important;
-  --tag-background-hover: 0 !important;
-  --tag-border-color: hsl(254, 80%, 68%, 10%) !important;
+    rgb(var(--mono-rgb-100), 15%);
+  --swatch-width: 24px;
+  --sync-avatar-color-1: var(--color-red, rgb(210, 15, 57));
+  --sync-avatar-color-2: var(--color-orange, rgb(254, 100, 11));
+  --sync-avatar-color-3: var(--color-yellow, rgb(223, 142, 29));
+  --sync-avatar-color-4: var(--color-green, rgb(64, 160, 43));
+  --sync-avatar-color-5: var(--color-cyan, rgb(4, 165, 229));
+  --sync-avatar-color-6: var(--color-blue, rgb(30, 102, 245));
+  --sync-avatar-color-7: var(--color-purple, rgb(114, 135, 253));
+  --sync-avatar-color-8: var(--color-pink, rgb(234, 118, 203));
+  --tab-background-active: var(--background-primary, rgb(239, 241, 245));
+  --tab-container-background: var(--background-secondary, rgb(230, 233, 239));
+  --tab-divider-color: var(--background-modifier-border-hover, rgb(172, 176, 190));
+  --tab-outline-color: var(--divider-color, rgb(204, 208, 218));
+  --tab-stacked-shadow: -8px 0 8px 0 rgb(0, 0, 0, 5%);
+  --tab-stacked-text-align: left;
+  --tab-switcher-background: var(--background-secondary, rgb(230, 233, 239));
+  --tab-text-color: var(--text-faint, rgb(188, 192, 204));
+  --tab-text-color-active: var(--text-muted, rgb(108, 111, 133));
+  --tab-text-color-focused: var(--text-muted, rgb(108, 111, 133));
+  --tab-text-color-focused-active: var(--text-normal, rgb(76, 79, 105));
+  --tab-text-color-focused-active-current: var(--text-normal, rgb(76, 79, 105));
+  --tab-text-color-focused-highlighted: var(--text-accent, rgb(114, 135, 253));
+  --table-add-button-border-color: var(--background-modifier-border, rgb(204, 208, 218));
+  --table-border-color: var(--background-modifier-border, rgb(204, 208, 218));
+  --table-drag-handle-background-active: var(--table-selection-border-color, rgb(114, 135, 253));
+  --table-drag-handle-color: var(--text-faint, rgb(188, 192, 204));
+  --table-drag-handle-color-active: var(--text-on-accent, rgb(230, 233, 239));
+  --table-header-border-color: var(--table-border-color, rgb(204, 208, 218));
+  --table-header-color: var(--text-muted, rgb(108, 111, 133));
+  --table-header-size: var(--font-smaller, 0.875em);
+  --table-header-weight: var(--font-normal, 400);
+  --table-line-height: var(--line-height-tight, 1.25);
+  --table-selection-border-color: var(--interactive-accent, rgb(114, 135, 253));
+  --table-white-space: normal;
+  --tag-border-color: hsl(var(--interactive-accent-hsl), 10%);
   --tag-border-color-hover: hsl(
-      254, 80%, 68%,
+      var(--interactive-accent-hsl),
       15%
-    ) !important;
-  --tag-border-width: 0 !important;
-  --tag-color: rgb(114, 135, 253) !important;
-  --tag-color-hover: rgb(114, 135, 253) !important;
-  --tag-decoration-hover: underline !important;
-  --tag-padding-x: 0 !important;
-  --tag-padding-y: 0 !important;
-  --tag-radius: 0.8em !important;
-  --tag-size: max(16px, 0.933em) !important;
-  --tertiary: rgb(114, 135, 253) !important;
-  --text-accent: rgb(114, 135, 253) !important;
-  --text-accent-hover: rgb(114, 135, 253) !important;
-  --text-error: rgb(210, 15, 57) !important;
-  --text-error-hover: rgb(210, 15, 57, 80%) !important;
-  --text-faint: rgb(188, 192, 204) !important;
-  --text-highlight-bg: rgb(220, 138, 120, 100%) !important;
-  --text-highlight-bg-active: rgb(220, 138, 120, 100%) !important;
-  --text-muted: rgb(108, 111, 133) !important;
-  --text-muted-rgb: 108, 111, 133 !important;
-  --text-normal: rgb(76, 79, 105) !important;
-  --text-on-accent: rgb(230, 233, 239) !important;
-  --text-on-accent-inverted: rgb(230, 233, 239) !important;
-  --text-selection: rgb(124, 127, 147, 30%) !important;
-  --text-success: rgb(64, 160, 43) !important;
-  --text-warning: rgb(254, 100, 11) !important;
-  --textHighlight: rgb(220, 138, 120, 100%) !important;
-  --titleFont: "Vollkorn",
+    );
+  --tag-border-width: 0;
+  --tag-color: rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
+  --tag-color-hover: rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
+  --tag-decoration-hover: underline;
+  --tag-padding-x: 0;
+  --tag-padding-y: 0;
+  --tag-radius: 0.8em;
+  --tag-size: max(var(--font-ui-medium), var(--font-small));
+  --tertiary: var(--text-accent-hover, rgb(var(--ctp-accent)));
+  --text-accent: rgb(var(--ctp-accent));
+  --text-accent-hover: rgb(var(--ctp-accent));
+  --text-error: rgb(var(--ctp-red));
+  --text-error-hover: rgb(var(--ctp-red), 80%);
+  --text-faint: rgb(var(--ctp-surface1));
+  --text-highlight-bg: rgb(var(--ctp-rosewater), 100%);
+  --text-highlight-bg-active: rgb(var(--ctp-rosewater), 100%);
+  --text-muted: rgb(var(--ctp-subtext0));
+  --text-muted-rgb: var(--ctp-subtext0, 108, 111, 133);
+  --text-normal: rgb(var(--ctp-text));
+  --text-on-accent: rgb(var(--ctp-mantle));
+  --text-on-accent-inverted: rgb(var(--ctp-mantle));
+  --text-selection: rgb(var(--ctp-overlay2), 30%);
+  --text-success: var(--color-green, rgb(64, 160, 43));
+  --text-warning: var(--color-orange, rgb(254, 100, 11));
+  --textHighlight: var(--text-highlight-bg, rgb(var(--ctp-rosewater), 100%));
+  --titleFont: var(--font-text-theme, "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: rgb(230, 233, 239) !important;
-  --titlebar-background-focused: rgb(220, 224, 232) !important;
-  --titlebar-border-color: rgb(204, 208, 218) !important;
-  --titlebar-border-width: 0 !important;
-  --titlebar-text-color: rgb(108, 111, 133) !important;
-  --titlebar-text-color-focused: rgb(76, 79, 105) !important;
-  --titlebar-text-color-highlighted: rgb(114, 135, 253) !important;
-  --toggle-thumb-color: rgb(76, 79, 105) !important;
-  --transition-hover-bg: background-color 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
-  --transition-hover-box-shadow: box-shadow 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
-  --transition-hover-color: color 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
-  --transition-hover-color-fast: color 0.2s cubic-bezier(0.44, 0.21, 0, 1) !important;
-  --transition-text-decoration-color: text-decoration-color 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
-  --vault-name-color: rgb(76, 79, 105) !important;
-  --vault-name-font-size: 13px !important;
-  --vault-name-font-weight: 500 !important;
-  --vault-profile-color: rgb(76, 79, 105) !important;
-  --vault-profile-color-hover: rgb(76, 79, 105) !important;
-  --workspace-background-translucent: rgb(220, 224, 232, 60%) !important;
-  --quartz-icon-color: currentColor !important;
+    sans-serif);
+  --titlebar-background: var(--background-secondary, rgb(230, 233, 239));
+  --titlebar-background-focused: var(--background-secondary-alt, rgb(220, 224, 232));
+  --titlebar-border-color: var(--background-modifier-border, rgb(204, 208, 218));
+  --titlebar-border-width: 0;
+  --titlebar-text-color: var(--text-muted, rgb(108, 111, 133));
+  --titlebar-text-color-focused: var(--text-normal, rgb(76, 79, 105));
+  --titlebar-text-color-highlighted: var(--text-accent-hover, rgb(114, 135, 253));
+  --toggle-thumb-color: var(--text-normal, rgb(76, 79, 105));
+  --transition-hover-bg: background-color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
+  --transition-hover-box-shadow: box-shadow 0.3s cubic-bezier(0.44, 0.21, 0, 1);
+  --transition-hover-color: color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
+  --transition-hover-color-fast: color 0.2s cubic-bezier(0.44, 0.21, 0, 1);
+  --transition-text-decoration-color: text-decoration-color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
+  --vault-name-color: var(--text-normal, rgb(76, 79, 105));
+  --vault-name-font-size: var(--font-ui-small, 13px);
+  --vault-name-font-weight: var(--font-medium, 500);
+  --vault-profile-color: var(--text-normal, rgb(76, 79, 105));
+  --vault-profile-color-hover: var(--vault-profile-color, rgb(76, 79, 105));
+  --workspace-background-translucent: rgb(var(--mono-rgb-0), 60%);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(230, 233, 239);
+  background-color: var(--tab-container-background, rgb(230, 233, 239));
   color: rgb(76, 79, 105);
 }
 
 html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
-  background-color: rgb(239, 241, 245);
+  background-color: var(--background-primary, rgb(239, 241, 245));
   color: rgb(76, 79, 105);
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(230, 233, 239);
+  background-color: var(--background-secondary, rgb(230, 233, 239));
   color: rgb(76, 79, 105);
 }
 
@@ -3573,98 +3478,98 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(230, 233, 239);
+  background-color: var(--tab-container-background, rgb(230, 233, 239));
   border-left-color: rgb(204, 208, 218);
   color: rgb(76, 79, 105);
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
-  color: rgb(32, 159, 181);
+  color: rgb(var(--ctp-bold, var(--ctp-sapphire)));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(32, 159, 181) none 0px;
   text-decoration-color: rgb(32, 159, 181);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
-  color: rgb(64, 160, 43);
+  color: var(--italic-color, rgb(64, 160, 43));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(64, 160, 43) none 0px;
   text-decoration-color: rgb(64, 160, 43);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
-  color: rgb(64, 160, 43);
+  color: var(--italic-color, rgb(64, 160, 43));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(64, 160, 43) none 0px;
   text-decoration-color: rgb(64, 160, 43);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
-  color: rgb(32, 159, 181);
+  color: rgb(var(--ctp-bold, var(--ctp-sapphire)));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(32, 159, 181) none 0px;
   text-decoration-color: rgb(32, 159, 181);
 }
 
 html[saved-theme="light"] body .text-highlight {
-  background-color: rgb(220, 138, 120);
-  color: rgb(230, 233, 239);
+  background-color: rgb(var(--ctp-rosewater));
+  color: var(--text-on-accent, rgb(230, 233, 239));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(230, 233, 239) none 0px;
   text-decoration-color: rgb(230, 233, 239);
 }
 
 html[saved-theme="light"] body del {
-  color: rgb(230, 69, 83);
+  color: rgb(var(--ctp-strikethrough, var(--ctp-maroon)));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(230, 69, 83) none 0px;
   text-decoration-color: rgb(230, 69, 83);
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(76, 79, 105);
+  color: var(--text-normal, rgb(76, 79, 105));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
-  background-color: rgb(210, 15, 57);
+  background-color: rgb(var(--ctp-red));
   border-color: rgb(230, 69, 83);
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(64, 160, 43);
+  background-color: rgb(var(--ctp-accent));
   border-color: rgba(0, 0, 0, 0);
 }
 
 html[saved-theme="light"] body p {
-  color: rgb(108, 111, 133);
+  color: var(--text-muted, rgb(108, 111, 133));
   font-family: "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(108, 111, 133) none 0px;
   text-decoration-color: rgb(108, 111, 133);
 }`,
     links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
-  color: rgb(23, 146, 153);
+  color: var(--link-external-color, rgb(23, 146, 153));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(23, 146, 153) none 0px;
   text-decoration: 2px;
   text-decoration-color: rgb(23, 146, 153);
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: var(--link-decoration-thickness, 2px);
 }
 
 html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(30, 102, 245);
+  color: var(--link-color, rgb(30, 102, 245));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(30, 102, 245) none 0px;
   text-decoration: 2px;
   text-decoration-color: rgb(30, 102, 245);
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: var(--link-decoration-thickness, 2px);
 }
 
 html[saved-theme="light"] body a.internal-link.broken {
-  color: rgb(230, 69, 83);
+  color: var(--link-unresolved-color, rgb(230, 69, 83));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(230, 69, 83) none 0px;
   text-decoration: 2px rgb(210, 15, 57);
-  text-decoration-color: rgb(210, 15, 57);
-  text-decoration-thickness: 2px;
+  text-decoration-color: var(--link-unresolved-decoration-color, rgb(210, 15, 57));
+  text-decoration-thickness: var(--link-decoration-thickness, 2px);
 }`,
     lists: `html[saved-theme="light"] body dd {
   color: rgb(76, 79, 105);
@@ -3689,7 +3594,7 @@ html[saved-theme="light"] body ul.overflow {
   border-top-color: rgb(76, 79, 105);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
-  color: rgb(188, 192, 204);
+  color: var(--text-faint, rgb(188, 192, 204));
 }
 
 html[saved-theme="light"] body blockquote {
@@ -3713,7 +3618,7 @@ html[saved-theme="light"] body td {
   border-left-color: rgb(204, 208, 218);
   border-right-color: rgb(204, 208, 218);
   border-top-color: rgb(204, 208, 218);
-  color: rgb(76, 79, 105);
+  color: var(--table-text-color, rgb(76, 79, 105));
 }
 
 html[saved-theme="light"] body th {
@@ -3721,20 +3626,20 @@ html[saved-theme="light"] body th {
   border-left-color: rgb(204, 208, 218);
   border-right-color: rgb(204, 208, 218);
   border-top-color: rgb(204, 208, 218);
-  color: rgb(108, 111, 133);
-  font-weight: 400;
+  color: var(--table-header-color, rgb(108, 111, 133));
+  font-weight: var(--table-header-weight, 400);
 }`,
     code: `html[saved-theme="light"] body code {
-  background-color: rgb(230, 233, 239);
+  background-color: var(--code-background, rgb(230, 233, 239));
   border-bottom-color: rgb(204, 208, 218);
   border-left-color: rgb(204, 208, 218);
   border-right-color: rgb(204, 208, 218);
   border-top-color: rgb(204, 208, 218);
-  color: rgb(108, 111, 133);
+  color: var(--code-normal, rgb(108, 111, 133));
 }
 
 html[saved-theme="light"] body pre:has(> code) {
-  background-color: rgb(230, 233, 239);
+  background-color: var(--code-background, rgb(230, 233, 239));
   border-bottom-color: rgb(204, 208, 218);
   border-left-color: rgb(204, 208, 218);
   border-right-color: rgb(204, 208, 218);
@@ -3773,7 +3678,7 @@ html[saved-theme="light"] body video {
   border-top-color: rgb(76, 79, 105);
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
-  background-color: rgb(230, 233, 239);
+  background-color: var(--background-primary-alt, rgb(230, 233, 239));
   border-bottom-color: rgb(108, 111, 133);
   border-left-color: rgb(108, 111, 133);
   border-right-color: rgb(108, 111, 133);
@@ -4522,11 +4427,10 @@ html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="chec
   border-left-color: rgb(30, 102, 245);
   border-right-color: rgb(30, 102, 245);
   border-top-color: rgb(30, 102, 245);
-  color: rgb(30, 102, 245);
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(30, 102, 245);
+  color: var(--callout-title-color, rgb(30, 102, 245));
 }
 
 html[saved-theme="light"] body .callout > .callout-content {
@@ -4534,9 +4438,9 @@ html[saved-theme="light"] body .callout > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
-  --callout-color: 32, 159, 181;
+  --callout-color: var(--callout-summary, 32, 159, 181);
   background: rgba(32, 159, 181, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(32, 159, 181, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(32, 159, 181, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(32, 159, 181, 0.6);
@@ -4554,11 +4458,10 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
   border-left-color: rgb(30, 102, 245);
   border-right-color: rgb(30, 102, 245);
   border-top-color: rgb(30, 102, 245);
-  color: rgb(30, 102, 245);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(30, 102, 245);
+  color: var(--callout-title-color, rgb(30, 102, 245));
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-content {
@@ -4566,9 +4469,9 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
-  --callout-color: 210, 15, 57;
+  --callout-color: var(--callout-bug, 210, 15, 57);
   background: rgba(210, 15, 57, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(210, 15, 57, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(210, 15, 57, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(210, 15, 57, 0.6);
@@ -4586,11 +4489,10 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   border-left-color: rgb(30, 102, 245);
   border-right-color: rgb(30, 102, 245);
   border-top-color: rgb(30, 102, 245);
-  color: rgb(30, 102, 245);
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(30, 102, 245);
+  color: var(--callout-title-color, rgb(30, 102, 245));
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
@@ -4598,9 +4500,9 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
-  --callout-color: 210, 15, 57;
+  --callout-color: var(--callout-error, 210, 15, 57);
   background: rgba(210, 15, 57, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(210, 15, 57, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(210, 15, 57, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(210, 15, 57, 0.6);
@@ -4618,11 +4520,10 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   border-left-color: rgb(30, 102, 245);
   border-right-color: rgb(30, 102, 245);
   border-top-color: rgb(30, 102, 245);
-  color: rgb(30, 102, 245);
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(30, 102, 245);
+  color: var(--callout-title-color, rgb(30, 102, 245));
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-content {
@@ -4630,9 +4531,9 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
-  --callout-color: 136, 57, 239;
+  --callout-color: var(--callout-example, 136, 57, 239);
   background: rgba(136, 57, 239, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(136, 57, 239, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(136, 57, 239, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(136, 57, 239, 0.6);
@@ -4650,11 +4551,10 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   border-left-color: rgb(30, 102, 245);
   border-right-color: rgb(30, 102, 245);
   border-top-color: rgb(30, 102, 245);
-  color: rgb(30, 102, 245);
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(30, 102, 245);
+  color: var(--callout-title-color, rgb(30, 102, 245));
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] > .callout-content {
@@ -4662,9 +4562,9 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
-  --callout-color: 210, 15, 57;
+  --callout-color: var(--callout-fail, 210, 15, 57);
   background: rgba(210, 15, 57, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(210, 15, 57, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(210, 15, 57, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(210, 15, 57, 0.6);
@@ -4682,11 +4582,10 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   border-left-color: rgb(30, 102, 245);
   border-right-color: rgb(30, 102, 245);
   border-top-color: rgb(30, 102, 245);
-  color: rgb(30, 102, 245);
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(30, 102, 245);
+  color: var(--callout-title-color, rgb(30, 102, 245));
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-content {
@@ -4694,9 +4593,9 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
-  --callout-color: 30, 102, 245;
+  --callout-color: var(--callout-info, 30, 102, 245);
   background: rgba(30, 102, 245, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(30, 102, 245, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(30, 102, 245, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(30, 102, 245, 0.6);
@@ -4714,11 +4613,10 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   border-left-color: rgb(30, 102, 245);
   border-right-color: rgb(30, 102, 245);
   border-top-color: rgb(30, 102, 245);
-  color: rgb(30, 102, 245);
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(30, 102, 245);
+  color: var(--callout-title-color, rgb(30, 102, 245));
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content {
@@ -4726,9 +4624,9 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
-  --callout-color: 30, 102, 245;
+  --callout-color: var(--callout-default, 30, 102, 245);
   background: rgba(30, 102, 245, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(30, 102, 245, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(30, 102, 245, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(30, 102, 245, 0.6);
@@ -4746,11 +4644,10 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   border-left-color: rgb(30, 102, 245);
   border-right-color: rgb(30, 102, 245);
   border-top-color: rgb(30, 102, 245);
-  color: rgb(30, 102, 245);
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(30, 102, 245);
+  color: var(--callout-title-color, rgb(30, 102, 245));
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content {
@@ -4758,9 +4655,9 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
-  --callout-color: 223, 142, 29;
+  --callout-color: var(--callout-question, 223, 142, 29);
   background: rgba(223, 142, 29, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(223, 142, 29, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(223, 142, 29, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(223, 142, 29, 0.6);
@@ -4778,11 +4675,10 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
   border-left-color: rgb(30, 102, 245);
   border-right-color: rgb(30, 102, 245);
   border-top-color: rgb(30, 102, 245);
-  color: rgb(30, 102, 245);
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(30, 102, 245);
+  color: var(--callout-title-color, rgb(30, 102, 245));
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] > .callout-content {
@@ -4790,7 +4686,8 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(158, 158, 158, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(158, 158, 158, 0.6);
@@ -4808,11 +4705,10 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   border-left-color: rgb(30, 102, 245);
   border-right-color: rgb(30, 102, 245);
   border-top-color: rgb(30, 102, 245);
-  color: rgb(30, 102, 245);
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(30, 102, 245);
+  color: var(--callout-title-color, rgb(30, 102, 245));
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content {
@@ -4820,9 +4716,9 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
-  --callout-color: 64, 160, 43;
+  --callout-color: var(--callout-success, 64, 160, 43);
   background: rgba(64, 160, 43, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(64, 160, 43, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(64, 160, 43, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(64, 160, 43, 0.6);
@@ -4840,11 +4736,10 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   border-left-color: rgb(30, 102, 245);
   border-right-color: rgb(30, 102, 245);
   border-top-color: rgb(30, 102, 245);
-  color: rgb(30, 102, 245);
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(30, 102, 245);
+  color: var(--callout-title-color, rgb(30, 102, 245));
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] > .callout-content {
@@ -4852,9 +4747,9 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
-  --callout-color: 32, 159, 181;
+  --callout-color: var(--callout-tip, 32, 159, 181);
   background: rgba(32, 159, 181, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(32, 159, 181, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(32, 159, 181, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(32, 159, 181, 0.6);
@@ -4872,11 +4767,10 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   border-left-color: rgb(30, 102, 245);
   border-right-color: rgb(30, 102, 245);
   border-top-color: rgb(30, 102, 245);
-  color: rgb(30, 102, 245);
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(30, 102, 245);
+  color: var(--callout-title-color, rgb(30, 102, 245));
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
@@ -4884,9 +4778,9 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
-  --callout-color: 30, 102, 245;
+  --callout-color: var(--callout-todo, 30, 102, 245);
   background: rgba(30, 102, 245, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(30, 102, 245, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(30, 102, 245, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(30, 102, 245, 0.6);
@@ -4904,11 +4798,10 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   border-left-color: rgb(30, 102, 245);
   border-right-color: rgb(30, 102, 245);
   border-top-color: rgb(30, 102, 245);
-  color: rgb(30, 102, 245);
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(30, 102, 245);
+  color: var(--callout-title-color, rgb(30, 102, 245));
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content {
@@ -4916,9 +4809,9 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
-  --callout-color: 254, 100, 11;
+  --callout-color: var(--callout-warning, 254, 100, 11);
   background: rgba(254, 100, 11, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(254, 100, 11, 0.1);
+  background-color: rgb(var(--callout-color), 10%);
   border-bottom-color: rgba(254, 100, 11, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(254, 100, 11, 0.6);
@@ -4936,11 +4829,10 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   border-left-color: rgb(30, 102, 245);
   border-right-color: rgb(30, 102, 245);
   border-top-color: rgb(30, 102, 245);
-  color: rgb(30, 102, 245);
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(30, 102, 245);
+  color: var(--callout-title-color, rgb(30, 102, 245));
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] > .callout-content {
@@ -5008,12 +4900,12 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-left-color: rgb(204, 208, 218);
   border-right-color: rgb(204, 208, 218);
   border-top-color: rgb(204, 208, 218);
-  color: rgb(76, 79, 105);
+  color: var(--text-normal, rgb(76, 79, 105));
   font-family: "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
-  background-color: rgb(239, 241, 245);
+  background-color: var(--prompt-background, rgb(239, 241, 245));
   border-bottom-color: rgb(188, 192, 204);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -5025,8 +4917,8 @@ html[saved-theme="light"] body .search > .search-container > .search-space {
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > * {
-  background-color: rgb(230, 233, 239);
-  box-shadow: rgb(220, 224, 232) 0px 0px 10px 0px inset, rgb(239, 241, 245) 0px 0px 12px 0px inset;
+  background-color: var(--background-secondary, rgb(230, 233, 239));
+  box-shadow: inset 0 0 10px rgb(var(--ctp-crust)), inset 0 0 12px rgb(var(--ctp-base));
   color: rgb(76, 79, 105);
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(76, 79, 105) none 0px;
@@ -5034,7 +4926,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > * {
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container {
-  color: rgb(230, 233, 239);
+  color: var(--text-on-accent, rgb(230, 233, 239));
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
@@ -5045,12 +4937,12 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-description {
-  color: rgb(230, 233, 239);
+  color: var(--text-on-accent, rgb(230, 233, 239));
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: rgb(114, 135, 253);
-  color: rgb(230, 233, 239);
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent, rgb(230, 233, 239));
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout.display-results {
@@ -5073,21 +4965,21 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
-  background-color: rgb(114, 135, 253);
+  background-color: rgb(var(--ctp-accent));
   border-bottom-color: rgb(230, 233, 239);
   border-left-color: rgb(230, 233, 239);
   border-right-color: rgb(230, 233, 239);
   border-top-color: rgb(230, 233, 239);
-  color: rgb(230, 233, 239);
+  color: var(--text-on-accent, rgb(230, 233, 239));
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: rgb(114, 135, 253);
-  color: rgb(230, 233, 239);
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent, rgb(230, 233, 239));
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgba(139, 108, 239, 0.1);
   border-bottom-left-radius: 11.2px;
   border-bottom-right-radius: 11.2px;
@@ -5104,43 +4996,43 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
-  color: rgb(114, 135, 253);
-  font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h1-color, rgb(114, 135, 253));
+  font-family: var(--h1-font, "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(76, 79, 105);
-  font-size: 32px;
+  color: var(--inline-title-color, rgb(76, 79, 105));
+  font-size: var(--inline-title-size, 32px);
 }
 
 html[saved-theme="light"] body h2 {
-  color: rgb(114, 135, 253);
-  font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h2-color, rgb(114, 135, 253));
+  font-family: var(--h2-font, "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  color: rgb(76, 79, 105);
-  font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--inline-title-color, rgb(76, 79, 105));
+  font-family: var(--inline-title-font, "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h3 {
-  color: rgb(114, 135, 253);
-  font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h3-color, rgb(114, 135, 253));
+  font-family: var(--h3-font, "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
-  color: rgb(114, 135, 253);
-  font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h4-color, rgb(114, 135, 253));
+  font-family: var(--h4-font, "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
-  color: rgb(114, 135, 253);
-  font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h5-color, rgb(114, 135, 253));
+  font-family: var(--h5-font, "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
-  color: rgb(114, 135, 253);
-  font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h6-color, rgb(114, 135, 253));
+  font-family: var(--h6-font, "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body hr {
@@ -5149,7 +5041,7 @@ html[saved-theme="light"] body hr {
   border-right-color: rgb(204, 208, 218);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
-  --callout-color: 30, 102, 245;
+  --callout-color: var(--callout-default, 30, 102, 245);
   border-bottom-color: rgba(30, 102, 245, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(30, 102, 245, 0.6);
@@ -5165,12 +5057,12 @@ html[saved-theme="light"] body hr {
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(108, 111, 133);
+  color: var(--nav-item-color, rgb(108, 111, 133));
   font-family: "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(108, 111, 133);
+  color: var(--nav-item-color, rgb(108, 111, 133));
   font-family: "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
@@ -5181,15 +5073,15 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-left-color: rgb(108, 111, 133);
   border-right-color: rgb(108, 111, 133);
   border-top-color: rgb(108, 111, 133);
-  color: rgb(108, 111, 133);
+  color: var(--icon-color, rgb(108, 111, 133));
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: rgb(230, 233, 239);
+  background-color: var(--status-bar-background, rgb(230, 233, 239));
   border-bottom-color: rgb(204, 208, 218);
   border-left-color: rgb(204, 208, 218);
   border-right-color: rgb(204, 208, 218);
   border-top-color: rgb(204, 208, 218);
-  color: rgb(108, 111, 133);
+  color: var(--status-bar-text-color, rgb(108, 111, 133));
   font-family: "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -5210,7 +5102,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(108, 111, 133);
+  color: var(--nav-item-color, rgb(108, 111, 133));
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -5230,7 +5122,7 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(108, 111, 133);
+  color: var(--nav-item-color, rgb(108, 111, 133));
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -5244,7 +5136,7 @@ html[saved-theme="light"] body ul.section-ul {
   border-left-color: rgb(108, 111, 133);
   border-right-color: rgb(108, 111, 133);
   border-top-color: rgb(108, 111, 133);
-  color: rgb(108, 111, 133);
+  color: var(--icon-color, rgb(108, 111, 133));
 }
 
 html[saved-theme="light"] body .darkmode svg {
@@ -5260,7 +5152,7 @@ html[saved-theme="light"] body .darkmode svg {
 }
 
 html[saved-theme="light"] body .breadcrumb-element p {
-  color: rgb(188, 192, 204);
+  color: var(--text-faint, rgb(188, 192, 204));
   font-family: "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     canvas: `html[saved-theme="light"] body .canvas-node {
@@ -5272,7 +5164,7 @@ html[saved-theme="light"] body .canvas-node-content {
 }
 
 html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(76, 79, 105);
+  color: var(--text-normal, rgb(76, 79, 105));
 }
 
 html[saved-theme="light"] body .canvas-node-group {
@@ -5280,20 +5172,20 @@ html[saved-theme="light"] body .canvas-node-group {
 }
 
 html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(239, 241, 245);
+  background-color: var(--background-primary, rgb(239, 241, 245));
   border-color: rgb(76, 79, 105);
 }`,
     bases: `html[saved-theme="light"] body .bases-table thead th {
   border-color: rgb(204, 208, 218);
-  color: rgb(108, 111, 133);
-  font-weight: 400;
+  color: var(--table-header-color, rgb(108, 111, 133));
+  font-weight: var(--table-header-weight, 400);
 }`,
     properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgb(204, 208, 218);
   border-left-color: rgb(204, 208, 218);
   border-right-color: rgb(204, 208, 218);
   border-top-color: rgb(204, 208, 218);
-  color: rgb(108, 111, 133);
+  color: var(--text-muted, rgb(108, 111, 133));
   font-family: "??", Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -5319,9 +5211,9 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-radius: 11.2px;
-  color: rgb(114, 135, 253);
+  color: var(--pill-color, rgb(114, 135, 253));
 }
 
 html[saved-theme="light"] body .note-properties-value {
@@ -5329,8 +5221,8 @@ html[saved-theme="light"] body .note-properties-value {
 }
 
 html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(239, 241, 245);
-  color: rgb(76, 79, 105);
+  background-color: var(--background-primary, rgb(239, 241, 245));
+  color: var(--text-normal, rgb(76, 79, 105));
 }
 
 html[saved-theme="light"] body ol.overflow {
@@ -5340,12 +5232,12 @@ html[saved-theme="light"] body ol.overflow {
   border-top-color: rgb(76, 79, 105);
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
-  background-color: rgb(230, 233, 239);
+  background-color: var(--background-secondary, rgb(230, 233, 239));
   border-color: rgb(76, 79, 105);
 }
 
 html[saved-theme="light"] body .stacked-page-header {
-  background-color: rgb(220, 224, 232);
+  background-color: var(--tab-container-background, rgb(220, 224, 232));
 }
 
 html[saved-theme="light"] body .stacked-page.active {
@@ -5360,11 +5252,11 @@ html[saved-theme="light"] body .stacked-page.active {
 }
 
 html[saved-theme="light"] body .navigation-progress {
-  background-color: rgb(230, 233, 239);
+  background-color: var(--status-bar-background, rgb(230, 233, 239));
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
-  color: rgb(76, 79, 105);
+  color: var(--text-normal, rgb(76, 79, 105));
   font-family: "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -5384,17 +5276,17 @@ html[saved-theme="light"] body input[type=text] {
   border-left-color: rgb(108, 111, 133);
   border-right-color: rgb(108, 111, 133);
   border-top-color: rgb(108, 111, 133);
-  color: rgb(108, 111, 133);
+  color: var(--text-normal, rgb(108, 111, 133));
   font-family: "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body kbd {
-  background-color: rgb(230, 233, 239);
+  background-color: var(--code-background, rgb(230, 233, 239));
   border-bottom-color: rgb(108, 111, 133);
   border-left-color: rgb(108, 111, 133);
   border-right-color: rgb(108, 111, 133);
   border-top-color: rgb(108, 111, 133);
-  color: rgb(108, 111, 133);
+  color: var(--code-normal, rgb(108, 111, 133));
 }
 
 html[saved-theme="light"] body progress {
@@ -5417,7 +5309,7 @@ html[saved-theme="light"] body sup {
 }
 
 html[saved-theme="light"] body ul.tags > li {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tag-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgba(139, 108, 239, 0.1);
   border-bottom-left-radius: 12.8px;
   border-bottom-right-radius: 12.8px;
@@ -5426,7 +5318,7 @@ html[saved-theme="light"] body ul.tags > li {
   border-top-color: rgba(139, 108, 239, 0.1);
   border-top-left-radius: 12.8px;
   border-top-right-radius: 12.8px;
-  color: rgb(114, 135, 253);
+  color: var(--tag-color, rgb(114, 135, 253));
 }`,
   },
   extras: `/* Fix: rotate greater-than sign */

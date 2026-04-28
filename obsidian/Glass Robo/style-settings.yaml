@@ -2,13 +2,11 @@ name: Glass Robo theme settings
 id: glass-theme-settings
 collapsed: false
 settings:
-  # General
   - id: general-settings
     title: General settings
     type: heading
     level: 1
     collapsed: true
-
   - id: disable_fonts_settings
     title: Glass Robo theme fonts
     description: Disable Glass Robo theme fonts
@@ -36,8 +34,8 @@ settings:
     allowEmpty: true
     format: hex
     opacity: false
-    default-light: "#fafafa"
-    default-dark: "#141414"
+    default-light: '#fafafa'
+    default-dark: '#141414'
   - id: theme-settings
     title: Themes
     type: heading
@@ -105,7 +103,6 @@ settings:
         value: glass-robo-color-headers
       - label: Lorens
         value: lorens-color-headers
-
   - id: callouts-settings
     title: Callouts
     type: heading
@@ -115,7 +112,7 @@ settings:
     title: Callout styling
     type: class-select
     allowEmpty: false
-    default: "glass-robo-callouts"
+    default: glass-robo-callouts
     options:
       - label: Obsidian default
         value: obsidian-callouts
@@ -159,7 +156,6 @@ settings:
         value: swida-callouts
       - label: Tartus
         value: tartus-callouts
-
   - id: callout_center_settings
     title: Centering callouts titles
     description: works on (Glass Robo, Sham, Hama) themes.
@@ -178,7 +174,6 @@ settings:
     options:
       - label: Glass Robo
         value: glassRoboCode
-
       - label: Dracula
         value: dracula
       - label: One Dark
@@ -209,8 +204,6 @@ settings:
   - id: Ribbon-autohide
     title: Auto hide left ribbon menu
     type: class-toggle
-  # Credits
-
   - id: glass-support-settings
     title: Support Glass Robo theme
     description: If you like the theme, here are some ways to support development
@@ -219,16 +212,16 @@ settings:
     collapsed: true
   - id: glass-url-donate
     title: Buy Me a Coffee
-    description: "[https://www.buymeacoffee.com/lorens](https://www.buymeacoffee.com/lorens)"
+    description: '[https://www.buymeacoffee.com/lorens](https://www.buymeacoffee.com/lorens)'
     type: info-text
     markdown: true
   - id: glass-url-star-repo
     title: Star the Theme on GitHub
-    description: "[https://github.com/lorens-osman-dev/Glass-Robo](https://github.com/lorens-osman-dev/Glass-Robo)"
+    description: '[https://github.com/lorens-osman-dev/Glass-Robo](https://github.com/lorens-osman-dev/Glass-Robo)'
     type: info-text
     markdown: true
   - id: glass-url-submit-issue
     title: Submit an Issue on GitHub
-    description: "[https://github.com/lorens-osman-dev/Glass-Robo/issues](https://github.com/lorens-osman-dev/Glass-Robo/issues)"
+    description: '[https://github.com/lorens-osman-dev/Glass-Robo/issues](https://github.com/lorens-osman-dev/Glass-Robo/issues)'
     type: info-text
     markdown: true

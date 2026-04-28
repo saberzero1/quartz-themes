@@ -51,124 +51,124 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-1: oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5)) !important;
-  --accent-2: oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) !important;
+  --accent-1: oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5));
+  --accent-2: oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355));
   --background-modifier-border: oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) l c h) !important;
+  ) l c h);
   --background-modifier-border-focus: oklch(
     from oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
   ) 70% c h
-  ) !important;
+  );
   --background-modifier-error: oklch(
     from #d32f2f 70% 20% h
-  ) !important;
+  );
   --background-modifier-error-hover: oklch(
     from #d32f2f 70% 20% h
-  ) !important;
+  );
   --background-modifier-success: oklch(
     from #4caf50 70% 20% h
-  ) !important;
+  );
   --background-paper: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) 0.24 calc(c * 0.3)
       h
-  ) !important;
+  );
   --background-primary: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
+  );
   --background-primary-alt: oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04)
       calc(c * 0.3) h
-  ) !important;
+  );
   --background-secondary: oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) !important;
+  );
   --background-secondary-alt: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5)) calc(0.24 - 0.08)
       calc(c * 0.3) h
-  ) !important;
+  );
   --background-tertiary: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.1)
       calc(c * 0.3) h
-  ) !important;
-  --base-accent: oklch(from hsl(258, 88%, 66%) l c h) !important;
+  );
+  --base-accent: oklch(from hsl(258, 88%, 66%) l c h);
   --bases-cards-background: oklch(from oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.1)
       calc(c * 0.3) h
-  ) 25% c h) !important;
-  --bases-cards-border-width: 4px !important;
+  ) 25% c h);
+  --bases-cards-border-width: 4px;
   --bases-cards-cover-background: oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04)
       calc(c * 0.3) h
-  ) !important;
+  );
   --bases-cards-shadow: 0 0 0 1px oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) l c h) !important;
+  ) l c h);
   --bases-embed-border-color: oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) l c h) !important;
-  --bases-embed-border-radius: 12px !important;
-  --bases-header-border-width: 0 !important;
-  --bases-table-border-color: oklch(from #dadada 50% c h / 50%) !important;
+  ) l c h);
+  --bases-embed-border-radius: 12px;
+  --bases-header-border-width: 0;
+  --bases-table-border-color: oklch(from #dadada 50% c h / 50%);
   --bases-table-cell-background-active: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
+  );
   --bases-table-cell-background-disabled: oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04)
       calc(c * 0.3) h
-  ) !important;
+  );
   --bases-table-cell-shadow-active: 0 0 0 2px oklch(
     from oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
   ) 70% c h
-  ) !important;
-  --bases-table-container-border-radius: 8px !important;
+  );
+  --bases-table-container-border-radius: 8px;
   --bases-table-group-background: oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04)
       calc(c * 0.3) h
-  ) !important;
+  );
   --bases-table-header-background: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
-  --bases-table-header-weight: 100 !important;
+  );
+  --bases-table-header-weight: 100;
   --bases-table-summary-background: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
+  );
   --blockquote-background-color: oklch(
     from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
   ) l c h / 40%
-  ) !important;
-  --blockquote-border-color: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 75%) !important;
-  --blockquote-border-thickness: 4px !important;
+  );
+  --blockquote-border-color: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 75%);
+  --blockquote-border-thickness: 4px;
   --bold-color: oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20%
       calc(h + 100)
-  ) !important;
+  );
   --border-groove: 4px groove oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04)
       calc(c * 0.3) h
-  ) !important;
+  );
   --border-ridge: 4px ridge oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
+  );
   --border-solid: 4px solid oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5)) calc(0.24 - 0.12)
       calc(c * 0.3) h
-  ) !important;
+  );
   --box-shadow: inset -2px -2px oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
@@ -176,17 +176,17 @@ export const theme: ThemeData = {
     inset 2px 2px oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) 50% c h) !important;
+  ) 50% c h);
   --box-shadow-active: inset 2px 2px oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
   ) 0% c h),
-    inset -2px -2px oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h) !important;
+    inset -2px -2px oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h);
   --box-shadow-active-sm: inset 1px 1px oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
   ) 0% c h),
-    inset -1px -1px oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h) !important;
+    inset -1px -1px oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h);
   --box-shadow-sm: inset -1px -1px oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
@@ -194,577 +194,577 @@ export const theme: ThemeData = {
     inset 1px 1px oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) 50% c h) !important;
+  ) 50% c h);
   --button-active: oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) 25% c h) !important;
-  --button-border-radius: 8px !important;
+  ) 25% c h);
+  --button-border-radius: 8px;
   --button-hover: oklch(from oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) 0.24 calc(c * 0.3)
       h
-  ) l c h) !important;
+  ) l c h);
   --button-normal: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
-  --button-radius: 12px !important;
-  --button-text: #dadada !important;
+  );
+  --button-radius: 12px;
+  --button-text: #dadada;
   --callout-border-width: 4px;
   --callout-radius: 12px;
   --canvas-background: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) 0.24 calc(c * 0.3)
       h
-  ) !important;
-  --canvas-controls-radius: 8px !important;
+  );
+  --canvas-controls-radius: 8px;
   --canvas-dot-pattern: oklch(
     from #dadada l c h / 0.3
-  ) !important;
+  );
   --checkbox-color: oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) !important;
+  );
   --checkbox-color-hover: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5)) calc(0.24 - 0.08)
       calc(c * 0.3) h
-  ) !important;
+  );
   --checkbox-marker-color: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) 0.24 calc(c * 0.3)
       h
-  ) !important;
-  --checkbox-radius: 12px !important;
-  --chroma: 20% !important;
-  --chroma-accent: 0.3 !important;
-  --chroma-folder: 20% !important;
-  --clickable-icon-radius: 8px !important;
+  );
+  --checkbox-radius: 12px;
+  --chroma: 20%;
+  --chroma-accent: 0.3;
+  --chroma-folder: 20%;
+  --clickable-icon-radius: 8px;
   --code-background: oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) 10% c h / 50%) !important;
+  ) 10% c h / 50%);
   --code-border-color: oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) l c h) !important;
+  ) l c h);
   --code-function: oklch(
     from #ffeb3b 70% 20% h
-  ) !important;
+  );
   --code-important: oklch(
     from #ff9800 70% 20% h
-  ) !important;
+  );
   --code-operator: oklch(
     from #d32f2f 70% 20% h
-  ) !important;
+  );
   --code-property: oklch(
     from #00bcd4 70% 20% h
-  ) !important;
-  --code-radius: 12px !important;
+  );
+  --code-radius: 12px;
   --code-string: oklch(
     from #4caf50 70% 20% h
-  ) !important;
+  );
   --code-tag: oklch(
     from #d32f2f 70% 20% h
-  ) !important;
+  );
   --code-value: oklch(
     from #673ab7 70% 20% h
-  ) !important;
-  --collapse-icon-color: #b3b3b3 !important;
-  --collapse-icon-color-collapsed: #666666 !important;
+  );
+  --collapse-icon-color: #b3b3b3;
+  --collapse-icon-color-collapsed: #666666;
   --color-amber: oklch(
     from #ffb300 70% 20% h
-  ) !important;
+  );
   --color-blue: oklch(
     from #2196f3 70% 20% h
-  ) !important;
+  );
   --color-cyan: oklch(
     from #00bcd4 70% 20% h
-  ) !important;
+  );
   --color-green: oklch(
     from #4caf50 70% 20% h
-  ) !important;
+  );
   --color-indigo: oklch(
     from #3f51b5 70% 20% h
-  ) !important;
+  );
   --color-lime: oklch(
     from #8bc34a 70% 20% h
-  ) !important;
+  );
   --color-magenta: oklch(
     from #e91e63 70% 20% h
-  ) !important;
+  );
   --color-orange: oklch(
     from #ff9800 70% 20% h
-  ) !important;
+  );
   --color-purple: oklch(
     from #673ab7 70% 20% h
-  ) !important;
+  );
   --color-red: oklch(
     from #d32f2f 70% 20% h
-  ) !important;
+  );
   --color-rose: oklch(
     from #f48fb1 70% 20% h
-  ) !important;
+  );
   --color-teal: oklch(
     from #009688 70% 20% h
-  ) !important;
+  );
   --color-vermillion: oklch(
     from #ff5722 70% 20% h
-  ) !important;
+  );
   --color-violet: oklch(
     from #9c27b0 70% 20% h
-  ) !important;
+  );
   --color-yellow: oklch(
     from #ffeb3b 70% 20% h
-  ) !important;
+  );
   --divider-color: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5)) calc(0.24 - 0.12)
       calc(c * 0.3) h
-  ) !important;
-  --divider-width: 0px !important;
+  );
+  --divider-width: 0px;
   --embed-block-shadow-hover: 0 0 0 1px oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
   ) l c h), inset 0 0 0 1px oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) l c h) !important;
+  ) l c h);
   --file-header-background: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
+  );
   --file-header-background-focused: oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) !important;
-  --file-margins: 16px !important;
-  --folder-accent: oklch(from hsl(258, 88%, 66%) l c h) !important;
+  );
+  --file-margins: 16px;
+  --folder-accent: oklch(from hsl(258, 88%, 66%) l c h);
   --folder-color-1: oklch(
     from #d32f2f 70% 20% h
-  ) !important;
+  );
   --folder-color-10: oklch(
     from #8bc34a 70% 20% h
-  ) !important;
+  );
   --folder-color-11: oklch(
     from #009688 70% 20% h
-  ) !important;
+  );
   --folder-color-12: oklch(
     from #673ab7 70% 20% h
-  ) !important;
+  );
   --folder-color-13: oklch(
     from #e91e63 70% 20% h
-  ) !important;
+  );
   --folder-color-14: oklch(
     from #f48fb1 70% 20% h
-  ) !important;
+  );
   --folder-color-15: oklch(
     from #00bcd4 70% 20% h
-  ) !important;
+  );
   --folder-color-2: oklch(
     from #ff9800 70% 20% h
-  ) !important;
+  );
   --folder-color-3: oklch(
     from #ffeb3b 70% 20% h
-  ) !important;
+  );
   --folder-color-4: oklch(
     from #4caf50 70% 20% h
-  ) !important;
+  );
   --folder-color-5: oklch(
     from #2196f3 70% 20% h
-  ) !important;
+  );
   --folder-color-6: oklch(
     from #3f51b5 70% 20% h
-  ) !important;
+  );
   --folder-color-7: oklch(
     from #9c27b0 70% 20% h
-  ) !important;
+  );
   --folder-color-8: oklch(
     from #ff5722 70% 20% h
-  ) !important;
+  );
   --folder-color-9: oklch(
     from #ffb300 70% 20% h
-  ) !important;
+  );
   --footnote-divider-color: oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) l c h) !important;
-  --footnote-radius: 8px !important;
+  ) l c h);
+  --footnote-radius: 8px;
   --graph-node-attachment: oklch(
     from #ffeb3b 70% 20% h
-  ) !important;
+  );
   --graph-node-tag: oklch(
     from #4caf50 70% 20% h
-  ) !important;
+  );
   --h1-color: oklch(
     from #d32f2f 70% 20% h
-  ) !important;
+  );
   --h2-color: oklch(
     from #ff9800 70% 20% h
-  ) !important;
+  );
   --h3-color: oklch(
     from #ffeb3b 70% 20% h
-  ) !important;
+  );
   --h4-color: oklch(
     from #4caf50 70% 20% h
-  ) !important;
+  );
   --h5-color: oklch(
     from #2196f3 70% 20% h
-  ) !important;
+  );
   --h6-color: oklch(
     from #3f51b5 70% 20% h
-  ) !important;
-  --header-height: 48px !important;
-  --highlight: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5)) 50% 20% h / 75%) !important;
-  --hr-color: oklch(from #dadada l c h / 25%) !important;
-  --hue-amber: #ffb300 !important;
-  --hue-blue: #2196f3 !important;
-  --hue-cyan: #00bcd4 !important;
-  --hue-green: #4caf50 !important;
-  --hue-indigo: #3f51b5 !important;
-  --hue-lime: #8bc34a !important;
-  --hue-magenta: #e91e63 !important;
-  --hue-orange: #ff9800 !important;
-  --hue-purple: #673ab7 !important;
-  --hue-red: #d32f2f !important;
-  --hue-rose: #f48fb1 !important;
-  --hue-teal: #009688 !important;
-  --hue-vermillion: #ff5722 !important;
-  --hue-violet: #9c27b0 !important;
-  --hue-yellow: #ffeb3b !important;
+  );
+  --header-height: 48px;
+  --highlight: var(--text-highlight-bg, oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5)) 50% 20% h / 75%));
+  --hr-color: oklch(from #dadada l c h / 25%);
+  --hue-amber: #ffb300;
+  --hue-blue: #2196f3;
+  --hue-cyan: #00bcd4;
+  --hue-green: #4caf50;
+  --hue-indigo: #3f51b5;
+  --hue-lime: #8bc34a;
+  --hue-magenta: #e91e63;
+  --hue-orange: #ff9800;
+  --hue-purple: #673ab7;
+  --hue-red: #d32f2f;
+  --hue-rose: #f48fb1;
+  --hue-teal: #009688;
+  --hue-vermillion: #ff5722;
+  --hue-violet: #9c27b0;
+  --hue-yellow: #ffeb3b;
   --img-border-color: oklch(from oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.1)
       calc(c * 0.3) h
-  ) l 20% h) !important;
-  --img-border-radius: 0px !important;
-  --img-border-width: 0px !important;
+  ) l 20% h);
+  --img-border-radius: 0px;
+  --img-border-width: 0px;
   --inline-title-color: oklch(
     from #d32f2f 70% 20% h
-  ) !important;
-  --input-border-width: 2px !important;
-  --input-radius: 12px !important;
-  --interactive-active: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 50%) !important;
+  );
+  --input-border-width: 2px;
+  --input-radius: 12px;
+  --interactive-active: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 50%);
   --italic-color: oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20%
       calc(h + 200)
-  ) !important;
-  --light: oklch(
+  );
+  --light: var(--background-primary, oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
-  --lightgray: oklch(
+  ));
+  --lightgray: var(--background-secondary, oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) !important;
-  --lightness: 70% !important;
-  --lightness-accent: 0.24 !important;
+  ));
+  --lightness: 70%;
+  --lightness-accent: 0.24;
   --link-color: oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) 80% 20% h
-  ) !important;
+  );
   --link-color-hover: oklch(
     from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) 80% 20% h
   ) 80% 20% h / 80%
-  ) !important;
+  );
   --link-external-color: oklch(
     from #d32f2f 70% 20% h
-  ) !important;
+  );
   --link-external-color-hover: oklch(
     from oklch(
     from #d32f2f 70% 20% h
   ) 70% 20% h / 80%
-  ) !important;
+  );
   --link-unresolved-color: oklch(
     from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) 80% 20% h
   ) 80% 20% h / 60%
-  ) !important;
-  --link-weight: 700 !important;
+  );
+  --link-weight: 700;
   --menu-background: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) 0.24 calc(c * 0.3)
       h
-  ) !important;
+  );
   --metadata-background: oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) l c h / 75%) !important;
+  ) l c h / 75%);
   --metadata-border-color: oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) l c h) !important;
-  --metadata-border-radius: 12px !important;
+  ) l c h);
+  --metadata-border-radius: 12px;
   --metadata-divider-color: oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) l c h) !important;
-  --metadata-gap: 8px !important;
+  ) l c h);
+  --metadata-gap: 8px;
   --metadata-label-background: oklch(
     from oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.1)
       calc(c * 0.3) h
   ) l c h / 15%
-  ) !important;
+  );
   --metadata-label-background-active: oklch(
     from oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.1)
       calc(c * 0.3) h
   ) l c h / 30%
-  ) !important;
+  );
   --metadata-label-background-hover: oklch(
     from oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.1)
       calc(c * 0.3) h
   ) l c h / 30%
-  ) !important;
-  --metadata-label-font-weight: 700 !important;
-  --metadata-label-width: 8em !important;
+  );
+  --metadata-label-font-weight: 700;
+  --metadata-label-width: 8em;
   --metadata-property-background: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) 0.24 calc(c * 0.3)
       h
-  ) !important;
+  );
   --metadata-property-background-hover: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) 0.24 calc(c * 0.3)
       h
-  ) !important;
+  );
   --metadata-property-box-shadow-focus: 0 0 0 2px oklch(
     from oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
   ) 70% c h
-  ) !important;
+  );
   --metadata-property-box-shadow-hover: 0 0 0 1px oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.1)
       calc(c * 0.3) h
-  ) !important;
-  --metadata-property-radius: 12px !important;
-  --metadata-property-radius-focus: 12px !important;
-  --metadata-property-radius-hover: 12px !important;
-  --mobile-sidebar-width: 100% !important;
+  );
+  --metadata-property-radius: 12px;
+  --metadata-property-radius-focus: 12px;
+  --metadata-property-radius-hover: 12px;
+  --mobile-sidebar-width: 100%;
   --modal-background: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
-  --nav-collapse-icon-color: #b3b3b3 !important;
-  --nav-indentation-guide-width: 2px !important;
-  --nav-item-background-selected: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) 45% c h / 75%) !important;
-  --nav-item-radius: 8px !important;
-  --nav-tag-color: #b3b3b3 !important;
-  --nav-tag-radius: 8px !important;
-  --outline-color: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 25% c h) !important;
+  );
+  --nav-collapse-icon-color: #b3b3b3;
+  --nav-indentation-guide-width: 2px;
+  --nav-item-background-selected: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) 45% c h / 75%);
+  --nav-item-radius: 8px;
+  --nav-tag-color: #b3b3b3;
+  --nav-tag-radius: 8px;
+  --outline-color: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 25% c h);
   --pdf-background: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
+  );
   --pdf-page-background: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
+  );
   --pdf-shadow: 0 0 0 1px oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) l c h) !important;
+  ) l c h);
   --pdf-sidebar-background: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
+  );
   --pdf-thumbnail-shadow: 0 0 0 1px oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) l c h) !important;
+  ) l c h);
   --pill-border-color: oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) l c h) !important;
+  ) l c h);
   --prompt-background: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
-  --radius-s: 8px !important;
-  --radius-xs: 8px !important;
-  --radius-xxs: 8px !important;
-  --retroma-canvas-card-border-width: 3px !important;
-  --retroma-canvas-card-embed-border-width: 3px !important;
-  --retroma-canvas-dot-opacity: 0.3 !important;
-  --retroma-canvas-node-content-bg-opacity: 0.25 !important;
+  );
+  --radius-s: 8px;
+  --radius-xs: 8px;
+  --radius-xxs: 8px;
+  --retroma-canvas-card-border-width: 3px;
+  --retroma-canvas-card-embed-border-width: 3px;
+  --retroma-canvas-dot-opacity: 0.3;
+  --retroma-canvas-node-content-bg-opacity: 0.25;
   --retroma-folder-bg-color: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
+  );
   --retroma-folder-border: 1px solid
-    oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) 55% 20% h / 50%) !important;
+    oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) 55% 20% h / 50%);
   --retroma-folder-box-shadow: -1px 1px 0px oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.1)
       calc(c * 0.3) h
-  ) !important;
+  );
   --ribbon-background: oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) !important;
+  );
   --ribbon-background-collapsed: oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) !important;
-  --rotation-1: 5 !important;
-  --rotation-2: 355 !important;
+  );
+  --rotation-1: 5;
+  --rotation-2: 355;
   --search-result-background: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
+  );
   --setting-items-background: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
+  );
   --setting-items-border-color: oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) l c h) !important;
+  ) l c h);
   --settings-background: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) 0.24 calc(c * 0.3)
       h
-  ) !important;
+  );
   --shiki-code-background: oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) 10% c h / 50%) !important;
-  --shiki-code-block-border-radius: 12px !important;
+  ) 10% c h / 50%);
+  --shiki-code-block-border-radius: 12px;
   --shiki-code-function: oklch(
     from #4caf50 70% 20% h
-  ) !important;
+  );
   --shiki-code-important: oklch(
     from #ff9800 70% 20% h
-  ) !important;
+  );
   --shiki-code-property: oklch(
     from #00bcd4 70% 20% h
-  ) !important;
+  );
   --shiki-code-string: oklch(
     from #ffeb3b 70% 20% h
-  ) !important;
+  );
   --shiki-code-value: oklch(
     from #673ab7 70% 20% h
-  ) !important;
+  );
   --shiki-gutter-border-color: oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) l c h) !important;
-  --slider-track-background: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 50%) !important;
-  --slider-track-height: 6px !important;
+  ) l c h);
+  --slider-track-background: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 50%);
+  --slider-track-height: 6px;
   --status-bar-background: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.1)
       calc(c * 0.3) h
-  ) !important;
+  );
   --status-bar-border-color: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5)) calc(0.24 - 0.12)
       calc(c * 0.3) h
-  ) !important;
+  );
   --strong-emphasis: oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20%
       calc(h + 200)
-  ) !important;
+  );
   --suggestion-background: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
+  );
   --sync-avatar-color-1: oklch(
     from #d32f2f 70% 20% h
-  ) !important;
+  );
   --sync-avatar-color-2: oklch(
     from #ff9800 70% 20% h
-  ) !important;
+  );
   --sync-avatar-color-3: oklch(
     from #ffeb3b 70% 20% h
-  ) !important;
+  );
   --sync-avatar-color-4: oklch(
     from #4caf50 70% 20% h
-  ) !important;
+  );
   --sync-avatar-color-5: oklch(
     from #00bcd4 70% 20% h
-  ) !important;
+  );
   --sync-avatar-color-6: oklch(
     from #2196f3 70% 20% h
-  ) !important;
+  );
   --sync-avatar-color-7: oklch(
     from #673ab7 70% 20% h
-  ) !important;
+  );
   --tab-background-active: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) calc(0.24 - 0.02)
       calc(c * 0.3) h
-  ) !important;
+  );
   --tab-container-background: oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) !important;
+  );
   --tab-outline-color: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5)) calc(0.24 - 0.12)
       calc(c * 0.3) h
-  ) !important;
-  --tab-radius: 8px !important;
-  --tab-stacked-header-width: 48px !important;
+  );
+  --tab-radius: 8px;
+  --tab-stacked-header-width: 48px;
   --tab-switcher-background: oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) !important;
+  );
   --tab-switcher-menubar-background: linear-gradient(to top, oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ), transparent) !important;
-  --tab-switcher-preview-radius: 12px !important;
+  ), transparent);
+  --tab-switcher-preview-radius: 12px;
   --table-add-button-border-color: oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) l c h) !important;
-  --table-border-color: oklch(from #dadada 50% c h / 50%) !important;
-  --table-border-spacing: 2px !important;
-  --table-data-background: oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c h / 7%) !important;
-  --table-header-background: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5)) 50% c h / 30%) !important;
-  --table-header-border-color: oklch(from #dadada 50% c h / 50%) !important;
-  --tag-border-width: 1px !important;
-  --tag-color: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 80% c h / 75%) !important;
-  --tag-radius: 8px !important;
+  ) l c h);
+  --table-border-color: oklch(from #dadada 50% c h / 50%);
+  --table-border-spacing: 2px;
+  --table-data-background: oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c h / 7%);
+  --table-header-background: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5)) 50% c h / 30%);
+  --table-header-border-color: oklch(from #dadada 50% c h / 50%);
+  --tag-border-width: 1px;
+  --tag-color: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 80% c h / 75%);
+  --tag-radius: 8px;
   --text-error: oklch(
     from #d32f2f 70% 20% h
-  ) !important;
-  --text-highlight-bg: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5)) 50% 20% h / 75%) !important;
-  --text-selection: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) 45% c h / 75%) !important;
+  );
+  --text-highlight-bg: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5)) 50% 20% h / 75%);
+  --text-selection: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355)) 45% c h / 75%);
   --text-success: oklch(
     from #4caf50 70% 20% h
-  ) !important;
+  );
   --text-warning: oklch(
     from #ff9800 70% 20% h
-  ) !important;
-  --textHighlight: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5)) 50% 20% h / 75%) !important;
+  );
+  --textHighlight: var(--text-highlight-bg, oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5)) 50% 20% h / 75%));
   --titlebar-background: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5)) calc(0.24 - 0.12)
       calc(c * 0.3) h
-  ) !important;
+  );
   --titlebar-background-focused: oklch(
     from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5)) calc(0.24 - 0.12)
       calc(c * 0.3) h
-  ) !important;
+  );
   --titlebar-border-color: oklch(from oklch(
     from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
       calc(c * 0.3) h
-  ) l c h) !important;
-  --touch-radius-m: 8px !important;
-  --touch-radius-s: 8px !important;
-  --touch-radius-xs: 8px !important;
-  --touch-radius-xxs: 8px !important;
-  --traffic-lights-offset-x: 48px !important;
-  --traffic-lights-offset-y: 48px !important;
-  --window-border-radius: 12px !important;
-  --quartz-icon-color: currentColor !important;
+  ) l c h);
+  --touch-radius-m: 8px;
+  --touch-radius-s: 8px;
+  --touch-radius-xs: 8px;
+  --touch-radius-xxs: 8px;
+  --traffic-lights-offset-x: 48px;
+  --traffic-lights-offset-y: 48px;
+  --window-border-radius: 12px;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: oklch(0.18 0.0651659 292.489);
+  background-color: var(--tab-container-background, oklch(0.18 0.0651659 292.489));
 }
 
 html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: oklch(0.24 0.0651659 287.49);
+  background-color: var(--background-primary, oklch(0.24 0.0651659 287.49));
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
-  background-color: oklch(0.22 0.0651659 287.49);
+  background-color: var(--background-primary, oklch(0.22 0.0651659 287.49));
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
@@ -773,7 +773,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: oklch(0.18 0.0651659 292.489);
+  background-color: var(--tab-container-background, oklch(0.18 0.0651659 292.489));
   border-left-color: oklch(0.12 0.0651659 297.489);
 }
 
@@ -795,35 +795,35 @@ html[saved-theme="dark"] body html {
   --hue-yellow: #ffeb3b;
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
-  color: oklch(0.8 0.08 32.4895);
+  color: var(--bold-color, oklch(0.8 0.08 32.4895));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: oklch(0.8 0.08 32.4895) none 0px;
   text-decoration-color: oklch(0.8 0.08 32.4895);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
-  color: oklch(0.8 0.08 132.489);
+  color: var(--italic-color, oklch(0.8 0.08 132.489));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: oklch(0.8 0.08 132.489) none 0px;
   text-decoration-color: oklch(0.8 0.08 132.489);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
-  color: oklch(0.8 0.08 132.489);
+  color: var(--italic-color, oklch(0.8 0.08 132.489));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: oklch(0.8 0.08 132.489) none 0px;
   text-decoration-color: oklch(0.8 0.08 132.489);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
-  color: oklch(0.8 0.08 32.4895);
+  color: var(--bold-color, oklch(0.8 0.08 32.4895));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: oklch(0.8 0.08 32.4895) none 0px;
   text-decoration-color: oklch(0.8 0.08 32.4895);
 }
 
 html[saved-theme="dark"] body .text-highlight {
-  background-color: oklch(0.5 0.08 297.489 / 0.75);
+  background-color: var(--text-highlight-bg, oklch(0.5 0.08 297.489 / 0.75));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -836,33 +836,34 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
+  background-color: var(--background-paper, rgba(0, 0, 0, 0));
   border-radius: 12px;
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-paper, rgba(0, 0, 0, 0));
   border-color: rgb(255, 255, 255);
 }`,
     links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
-  color: oklch(0.7 0.08 26.4067);
+  color: var(--link-external-color, oklch(0.7 0.08 26.4067));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 700;
+  font-weight: var(--link-weight, 700);
   outline: oklch(0.7 0.08 26.4067) none 0px;
   text-decoration-color: oklch(0.7 0.08 26.4067);
 }
 
 html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
-  color: oklch(0.8 0.08 292.489);
+  color: var(--link-color, oklch(0.8 0.08 292.489));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 700;
+  font-weight: var(--link-weight, 700);
   outline: oklch(0.8 0.08 292.489) none 0px;
   text-decoration-color: oklch(0.8 0.08 292.489);
 }
 
 html[saved-theme="dark"] body a.internal-link.broken {
-  color: oklch(0.8 0.08 292.489 / 0.6);
+  color: var(--link-unresolved-color, oklch(0.8 0.08 292.489 / 0.6));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 700;
+  font-weight: var(--link-weight, 700);
   outline: oklch(0.8 0.08 292.489 / 0.6) none 0px;
 }`,
     lists: `html[saved-theme="dark"] body ul.overflow {
@@ -872,7 +873,7 @@ html[saved-theme="dark"] body a.internal-link.broken {
   border-top-style: ridge;
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
-  background-color: oklch(0.18 0.0651659 292.489 / 0.4);
+  background-color: var(--blockquote-background-color, oklch(0.18 0.0651659 292.489 / 0.4));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-bottom: 4px;
   padding-top: 4px;
@@ -898,7 +899,7 @@ html[saved-theme="dark"] body a.internal-link.broken {
 }
 
 html[saved-theme="dark"] body td {
-  background-color: oklch(0.603458 0.21722 292.489 / 0.07);
+  background-color: var(--table-data-background, oklch(0.603458 0.21722 292.489 / 0.07));
   border-bottom-color: oklch(0.5 0.000044365 23.517 / 0.5);
   border-left-color: oklch(0.5 0.000044365 23.517 / 0.5);
   border-right-color: oklch(0.5 0.000044365 23.517 / 0.5);
@@ -910,7 +911,7 @@ html[saved-theme="dark"] body th {
   border-left-color: oklch(0.5 0.000044365 23.517 / 0.5);
   border-right-color: oklch(0.5 0.000044365 23.517 / 0.5);
   border-top-color: oklch(0.5 0.000044365 23.517 / 0.5);
-  border-top-left-radius: 12px;
+  border-top-left-radius: var(--window-border-radius, 12px);
 }
 
 html[saved-theme="dark"] body thead {
@@ -921,14 +922,14 @@ html[saved-theme="dark"] body thead {
 }
 
 html[saved-theme="dark"] body tr {
-  background-color: oklch(0.5 0.21722 297.489 / 0.3);
+  background-color: var(--table-header-background, oklch(0.5 0.21722 297.489 / 0.3));
   border-bottom-color: oklch(0.22 0.0651659 287.49);
   border-left-color: oklch(0.22 0.0651659 287.49);
   border-right-color: oklch(0.22 0.0651659 287.49);
   border-top-color: oklch(0.22 0.0651659 287.49);
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: oklch(0.1 0.0651659 292.489 / 0.5);
+  background-color: var(--code-background, oklch(0.1 0.0651659 292.489 / 0.5));
   border-bottom-color: oklch(0.18 0.0651659 292.489);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -944,7 +945,7 @@ html[saved-theme="dark"] body tr {
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: oklch(0.1 0.0651659 292.489 / 0.5);
+  background-color: var(--code-background, oklch(0.1 0.0651659 292.489 / 0.5));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -972,7 +973,7 @@ html[saved-theme="dark"] body img {
   border-top-color: oklch(0.7 0.08 26.4067);
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: oklch(0.2 0.0651659 292.489);
+  background-color: var(--background-primary-alt, oklch(0.2 0.0651659 292.489));
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-left-radius: 12px;
@@ -1468,7 +1469,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
-  background-color: oklch(0.24 0.0651659 287.49);
+  background-color: var(--background-paper, oklch(0.24 0.0651659 287.49));
   border-bottom-color: oklch(0.25 0.21722 292.489);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1480,7 +1481,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: oklch(0.22 0.0651659 287.49);
+  background-color: var(--prompt-background, oklch(0.22 0.0651659 287.49));
   border-bottom-color: oklch(0.22 0.0651659 287.49);
   border-bottom-style: ridge;
   border-bottom-width: 4px;
@@ -1493,7 +1494,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space {
   border-top-color: oklch(0.22 0.0651659 287.49);
   border-top-style: ridge;
   border-top-width: 4px;
-  box-shadow: oklch(0 0 0 / 0.4) 0px 0px 12px 2px;
+  box-shadow: var(--shadow-l, oklch(0 0 0 / 0.4) 0px 0px 12px 2px);
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
@@ -1519,7 +1520,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
-  background-color: oklch(0.24 0.0651659 287.49);
+  background-color: var(--background-paper, oklch(0.24 0.0651659 287.49));
   border-bottom-color: oklch(0.25 0.21722 292.489);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1534,7 +1535,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
   border-top-right-radius: 12px;
   border-top-style: solid;
   border-top-width: 1px;
-  box-shadow: oklch(0 0.0651659 292.489) 2px 2px 0px 0px inset, oklch(0.5 0.21722 292.489) -2px -2px 0px 0px inset;
+  box-shadow: var(--box-shadow-active, oklch(0 0.0651659 292.489) 2px 2px 0px 0px inset, oklch(0.5 0.21722 292.489) -2px -2px 0px 0px inset);
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
@@ -1568,35 +1569,35 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
-  color: oklch(0.7 0.08 26.4067);
+  color: var(--h1-color, oklch(0.7 0.08 26.4067));
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: oklch(0.7 0.08 26.4067);
+  color: var(--inline-title-color, oklch(0.7 0.08 26.4067));
 }
 
 html[saved-theme="dark"] body h2 {
-  color: oklch(0.7 0.08 64.0453);
+  color: var(--h2-color, oklch(0.7 0.08 64.0453));
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  color: oklch(0.7 0.08 26.4067);
+  color: var(--inline-title-color, oklch(0.7 0.08 26.4067));
 }
 
 html[saved-theme="dark"] body h3 {
-  color: oklch(0.7 0.08 102.483);
+  color: var(--h3-color, oklch(0.7 0.08 102.483));
 }
 
 html[saved-theme="dark"] body h4 {
-  color: oklch(0.7 0.08 144.199);
+  color: var(--h4-color, oklch(0.7 0.08 144.199));
 }
 
 html[saved-theme="dark"] body h5 {
-  color: oklch(0.7 0.08 248.82);
+  color: var(--h5-color, oklch(0.7 0.08 248.82));
 }
 
 html[saved-theme="dark"] body h6 {
-  color: oklch(0.7 0.08 271.409);
+  color: var(--h6-color, oklch(0.7 0.08 271.409));
 }
 
 html[saved-theme="dark"] body hr {
@@ -1617,7 +1618,7 @@ html[saved-theme="dark"] body hr {
   border-top-width: 4px;
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container {
-  background-color: oklch(0.24 0.0651659 287.49);
+  background-color: var(--background-paper, oklch(0.24 0.0651659 287.49));
 }
 
 html[saved-theme="dark"] body .nav-files-container .tree-item-children {
@@ -1625,19 +1626,19 @@ html[saved-theme="dark"] body .nav-files-container .tree-item-children {
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: oklch(0.7 0.08 26.4067);
-  font-weight: 700;
+  color: var(--folder-color, oklch(0.7 0.08 26.4067));
+  font-weight: var(--nav-item-weight, 700);
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: oklch(0.7 0.08 26.4067);
-  font-weight: 700;
+  color: var(--folder-color, oklch(0.7 0.08 26.4067));
+  font-weight: var(--nav-item-weight, 700);
 }`,
     toc: `html[saved-theme="dark"] body li.depth-0 {
-  font-weight: 700;
+  font-weight: var(--nav-item-weight, 700);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
-  background-color: oklch(0.22 0.0651659 287.49);
+  background-color: var(--button-normal, oklch(0.22 0.0651659 287.49));
   border-bottom-color: oklch(0.25 0.21722 292.489);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1654,10 +1655,11 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-right-radius: 8px;
   border-top-style: solid;
   border-top-width: 1px;
-  cursor: pointer;
+  color: var(--text-muted, rgb(179, 179, 179));
+  cursor: var(--cursor, pointer);
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: oklch(0.14 0.0651659 287.49);
+  background-color: var(--status-bar-background, oklch(0.14 0.0651659 287.49));
   border-bottom-color: oklch(0.12 0.0651659 297.489);
   border-left-color: oklch(0.12 0.0651659 297.489);
   border-left-width: 0px;
@@ -1667,7 +1669,9 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-width: 0px;
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
-  background-color: oklch(0.7 0.08 26.4067 / 0.3);
+  background-color: oklch(
+    from var(--folder-color) l var(--chroma-folder) h / 30%
+  , oklch(0.7 0.08 26.4067 / 0.3));
   border-bottom-color: oklch(0.55 0.08 287.49 / 0.5);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1686,7 +1690,9 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-width: 1px;
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
-  background-color: oklch(0.7 0.08 26.4067 / 0.3);
+  background-color: oklch(
+    from var(--folder-color) l var(--chroma-folder) h / 30%
+  , oklch(0.7 0.08 26.4067 / 0.3));
   border-bottom-color: oklch(0.55 0.08 287.49 / 0.5);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1706,7 +1712,7 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
 }
 
 html[saved-theme="dark"] body ul.section-ul {
-  background-color: oklch(0.24 0.0651659 287.49);
+  background-color: var(--background-paper, oklch(0.24 0.0651659 287.49));
   border-bottom-color: oklch(0.22 0.0651659 287.49);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1725,7 +1731,7 @@ html[saved-theme="dark"] body ul.section-ul {
   border-top-width: 4px;
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
-  background-color: oklch(0.22 0.0651659 287.49);
+  background-color: var(--button-normal, oklch(0.22 0.0651659 287.49));
   border-bottom-color: oklch(0.25 0.21722 292.489);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1742,7 +1748,8 @@ html[saved-theme="dark"] body ul.section-ul {
   border-top-right-radius: 8px;
   border-top-style: solid;
   border-top-width: 1px;
-  cursor: pointer;
+  color: var(--text-muted, rgb(179, 179, 179));
+  cursor: var(--cursor, pointer);
 }`,
     breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-container {
   border-bottom-left-radius: 8px;
@@ -1751,7 +1758,7 @@ html[saved-theme="dark"] body ul.section-ul {
   border-top-right-radius: 8px;
 }`,
     canvas: `html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: oklch(0.18 0.0651659 292.489);
+  background-color: var(--background-secondary, oklch(0.18 0.0651659 292.489));
   border-color: oklch(0.2 0.0651659 292.489);
 }`,
     bases: `html[saved-theme="dark"] body .bases-table {
@@ -1762,7 +1769,7 @@ html[saved-theme="dark"] body .bases-table thead th {
   border-color: oklch(0.5 0.000044365 23.517 / 0.5);
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
-  background-color: oklch(0.18 0.0651659 292.489 / 0.75);
+  background-color: var(--metadata-background, oklch(0.18 0.0651659 292.489 / 0.75));
   border-bottom-color: oklch(0.22 0.0651659 287.49);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1785,7 +1792,7 @@ html[saved-theme="dark"] body .bases-table thead th {
 }
 
 html[saved-theme="dark"] body .note-properties {
-  background-color: oklch(0.18 0.0651659 292.489 / 0.75);
+  background-color: var(--metadata-background, oklch(0.18 0.0651659 292.489 / 0.75));
   border-color: oklch(0.22 0.0651659 287.49);
   border-radius: 12px;
 }
@@ -1796,11 +1803,11 @@ html[saved-theme="dark"] body .note-properties-row {
 
 html[saved-theme="dark"] body .note-properties-tags {
   border-radius: 8px;
-  color: oklch(0.8 0.21722 292.489 / 0.75);
+  color: var(--pill-color, oklch(0.8 0.21722 292.489 / 0.75));
 }
 
 html[saved-theme="dark"] body div#quartz-root {
-  background-color: oklch(0.22 0.0651659 287.49);
+  background-color: var(--background-primary, oklch(0.22 0.0651659 287.49));
 }
 
 html[saved-theme="dark"] body ol.overflow {
@@ -1810,32 +1817,32 @@ html[saved-theme="dark"] body ol.overflow {
   border-top-style: ridge;
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
-  background-color: oklch(0.22 0.0651659 287.49);
+  background-color: var(--background-primary, oklch(0.22 0.0651659 287.49));
   border-color: oklch(0.2 0.0651659 292.489);
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
-  background-color: oklch(0.12 0.0651659 297.489);
+  background-color: var(--tab-container-background, oklch(0.12 0.0651659 297.489));
 }
 
 html[saved-theme="dark"] body .stacked-page.active {
   border-color: oklch(0.2 0.0651659 292.489);
 }`,
     misc: `html[saved-theme="dark"] body .navigation-progress {
-  background-color: oklch(0.14 0.0651659 287.49);
+  background-color: var(--status-bar-background, oklch(0.14 0.0651659 287.49));
 }
 
 html[saved-theme="dark"] body kbd {
-  background-color: oklch(0.1 0.0651659 292.489 / 0.5);
+  background-color: var(--code-background, oklch(0.1 0.0651659 292.489 / 0.5));
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  box-shadow: oklch(0.888364 0.000044365 23.517 / 0.25) 0px 0px 0px 1px;
+  box-shadow: 0 0 0 1px oklch(from var(--text-normal) l c h / 25%, oklch(0.888364 0.000044365 23.517 / 0.25) 0px 0px 0px 1px);
 }
 
 html[saved-theme="dark"] body ul.tags > li {
-  background-color: oklch(0.8 0.21722 292.489 / 0.1);
+  background-color: var(--tag-background, oklch(0.8 0.21722 292.489 / 0.1));
   border-bottom-color: oklch(0.8 0.21722 292.489 / 0.75);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1848,645 +1855,645 @@ html[saved-theme="dark"] body ul.tags > li {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: oklch(0.8 0.21722 292.489 / 0.75);
+  color: var(--tag-color, oklch(0.8 0.21722 292.489 / 0.75));
 }`,
   },
   light: {
     base: `:root:root {
-  --accent-1: oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) !important;
-  --accent-2: oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) !important;
+  --accent-1: oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5));
+  --accent-2: oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355));
   --background-modifier-border: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h) !important;
+  ) l c h);
   --background-modifier-border-focus: oklch(
     from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
   ) 70% c h
-  ) !important;
+  );
   --background-modifier-error: oklch(
     from #d32f2f 50% 30% h
-  ) !important;
+  );
   --background-modifier-error-hover: oklch(
     from #d32f2f 50% 30% h
-  ) !important;
+  );
   --background-modifier-success: oklch(
     from #4caf50 50% 30% h
-  ) !important;
+  );
   --background-paper: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 98% calc(c * 0.4) h
-  ) !important;
+  );
   --background-primary: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
+  );
   --background-primary-alt: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 75% calc(c * 0.4) h
-  ) !important;
+  );
   --background-secondary: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) !important;
+  );
   --background-secondary-alt: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) 65% calc(c * 0.4) h
-  ) !important;
+  );
   --background-tertiary: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 60% calc(c * 0.4) h
-  ) !important;
-  --base-accent: oklch(from hsl(257, 88.88%, 70.95%) l c h) !important;
+  );
+  --base-accent: oklch(from hsl(257, 88.88%, 70.95%) l c h);
   --bases-cards-background: oklch(from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 60% calc(c * 0.4) h
-  ) 85% c h) !important;
-  --bases-cards-border-width: 4px !important;
+  ) 85% c h);
+  --bases-cards-border-width: 4px;
   --bases-cards-cover-background: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 75% calc(c * 0.4) h
-  ) !important;
+  );
   --bases-cards-shadow: 0 0 0 1px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h) !important;
+  ) l c h);
   --bases-embed-border-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h) !important;
-  --bases-embed-border-radius: 12px !important;
-  --bases-header-border-width: 0 !important;
-  --bases-table-border-color: oklch(from #222222 50% c h / 50%) !important;
+  ) l c h);
+  --bases-embed-border-radius: 12px;
+  --bases-header-border-width: 0;
+  --bases-table-border-color: oklch(from #222222 50% c h / 50%);
   --bases-table-cell-background-active: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
+  );
   --bases-table-cell-background-disabled: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 75% calc(c * 0.4) h
-  ) !important;
+  );
   --bases-table-cell-shadow-active: 0 0 0 2px oklch(
     from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
   ) 70% c h
-  ) !important;
-  --bases-table-container-border-radius: 8px !important;
+  );
+  --bases-table-container-border-radius: 8px;
   --bases-table-group-background: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 75% calc(c * 0.4) h
-  ) !important;
+  );
   --bases-table-header-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
-  --bases-table-header-weight: 100 !important;
+  );
+  --bases-table-header-weight: 100;
   --bases-table-summary-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
+  );
   --blockquote-background-color: oklch(
     from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) l c h / 40%
-  ) !important;
-  --blockquote-border-color: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 50% c h / 75%) !important;
-  --blockquote-border-thickness: 4px !important;
+  );
+  --blockquote-border-color: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 50% c h / 75%);
+  --blockquote-border-thickness: 4px;
   --blur-background: color-mix(in srgb, oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
   ) 65%, transparent) linear-gradient(oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
   ), color-mix(in srgb, oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) 65%, transparent)) !important;
+  ) 65%, transparent));
   --bold-color: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) calc(50% - 15%) 30%
       calc(h + 100)
-  ) !important;
+  );
   --border-groove: 4px groove oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 75% calc(c * 0.4) h
-  ) !important;
+  );
   --border-ridge: 4px ridge oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
+  );
   --border-solid: 4px solid oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) 65% calc(c * 0.4) h
-  ) !important;
+  );
   --box-shadow: inset -2px -2px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) 50% c h),
     inset 2px 2px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) 100% c h) !important;
+  ) 100% c h);
   --box-shadow-active: inset 2px 2px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) 50% c h),
     inset -2px -2px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) 100% c h) !important;
+  ) 100% c h);
   --box-shadow-active-sm: inset 1px 1px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) 50% c h),
     inset -1px -1px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) 100% c h) !important;
+  ) 100% c h);
   --box-shadow-sm: inset -1px -1px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) 50% c h),
     inset 1px 1px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) 100% c h) !important;
+  ) 100% c h);
   --button-active: oklch(from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) 65% calc(c * 0.4) h
-  ) 85% c h) !important;
-  --button-border-radius: 8px !important;
+  ) 85% c h);
+  --button-border-radius: 8px;
   --button-hover: oklch(from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 98% calc(c * 0.4) h
-  ) l c h) !important;
+  ) l c h);
   --button-normal: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
-  --button-radius: 12px !important;
-  --button-text: #222222 !important;
+  );
+  --button-radius: 12px;
+  --button-text: #222222;
   --callout-border-width: 4px;
   --callout-radius: 12px;
   --canvas-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 98% calc(c * 0.4) h
-  ) !important;
-  --canvas-controls-radius: 8px !important;
+  );
+  --canvas-controls-radius: 8px;
   --canvas-dot-pattern: oklch(
     from #222222 l c h / 0.3
-  ) !important;
+  );
   --checkbox-color: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) !important;
+  );
   --checkbox-color-hover: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) 65% calc(c * 0.4) h
-  ) !important;
+  );
   --checkbox-marker-color: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 98% calc(c * 0.4) h
-  ) !important;
-  --checkbox-radius: 12px !important;
-  --chroma: 30% !important;
-  --chroma-accent: 0.4 !important;
-  --chroma-folder: 30% !important;
-  --clickable-icon-radius: 8px !important;
+  );
+  --checkbox-radius: 12px;
+  --chroma: 30%;
+  --chroma-accent: 0.4;
+  --chroma-folder: 30%;
+  --clickable-icon-radius: 8px;
   --code-background: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) 85% c h / 50%) !important;
+  ) 85% c h / 50%);
   --code-border-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h) !important;
+  ) l c h);
   --code-function: oklch(
     from #ffeb3b 50% 30% h
-  ) !important;
+  );
   --code-important: oklch(
     from #ff9800 50% 30% h
-  ) !important;
+  );
   --code-operator: oklch(
     from #d32f2f 50% 30% h
-  ) !important;
+  );
   --code-property: oklch(
     from #00bcd4 50% 30% h
-  ) !important;
-  --code-radius: 12px !important;
+  );
+  --code-radius: 12px;
   --code-string: oklch(
     from #4caf50 50% 30% h
-  ) !important;
+  );
   --code-tag: oklch(
     from #d32f2f 50% 30% h
-  ) !important;
+  );
   --code-value: oklch(
     from #673ab7 50% 30% h
-  ) !important;
-  --collapse-icon-color: #5c5c5c !important;
-  --collapse-icon-color-collapsed: #ababab !important;
+  );
+  --collapse-icon-color: #5c5c5c;
+  --collapse-icon-color-collapsed: #ababab;
   --color-amber: oklch(
     from #ffb300 50% 30% h
-  ) !important;
+  );
   --color-blue: oklch(
     from #2196f3 50% 30% h
-  ) !important;
+  );
   --color-cyan: oklch(
     from #00bcd4 50% 30% h
-  ) !important;
+  );
   --color-green: oklch(
     from #4caf50 50% 30% h
-  ) !important;
+  );
   --color-indigo: oklch(
     from #3f51b5 50% 30% h
-  ) !important;
+  );
   --color-lime: oklch(
     from #8bc34a 50% 30% h
-  ) !important;
+  );
   --color-magenta: oklch(
     from #e91e63 50% 30% h
-  ) !important;
+  );
   --color-orange: oklch(
     from #ff9800 50% 30% h
-  ) !important;
+  );
   --color-purple: oklch(
     from #673ab7 50% 30% h
-  ) !important;
+  );
   --color-red: oklch(
     from #d32f2f 50% 30% h
-  ) !important;
+  );
   --color-rose: oklch(
     from #f48fb1 50% 30% h
-  ) !important;
+  );
   --color-teal: oklch(
     from #009688 50% 30% h
-  ) !important;
+  );
   --color-vermillion: oklch(
     from #ff5722 50% 30% h
-  ) !important;
+  );
   --color-violet: oklch(
     from #9c27b0 50% 30% h
-  ) !important;
+  );
   --color-yellow: oklch(
     from #ffeb3b 50% 30% h
-  ) !important;
+  );
   --divider-color: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) 65% calc(c * 0.4) h
-  ) !important;
-  --divider-width: 0px !important;
+  );
+  --divider-width: 0px;
   --embed-block-shadow-hover: 0 0 0 1px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) l c h), inset 0 0 0 1px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h) !important;
+  ) l c h);
   --file-header-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
+  );
   --file-header-background-focused: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) !important;
-  --file-margins: 16px !important;
-  --folder-accent: oklch(from hsl(257, 88.88%, 70.95%) l c h) !important;
+  );
+  --file-margins: 16px;
+  --folder-accent: oklch(from hsl(257, 88.88%, 70.95%) l c h);
   --folder-color-1: oklch(
     from #d32f2f 50% 30% h
-  ) !important;
+  );
   --folder-color-10: oklch(
     from #8bc34a 50% 30% h
-  ) !important;
+  );
   --folder-color-11: oklch(
     from #009688 50% 30% h
-  ) !important;
+  );
   --folder-color-12: oklch(
     from #673ab7 50% 30% h
-  ) !important;
+  );
   --folder-color-13: oklch(
     from #e91e63 50% 30% h
-  ) !important;
+  );
   --folder-color-14: oklch(
     from #f48fb1 50% 30% h
-  ) !important;
+  );
   --folder-color-15: oklch(
     from #00bcd4 50% 30% h
-  ) !important;
+  );
   --folder-color-2: oklch(
     from #ff9800 50% 30% h
-  ) !important;
+  );
   --folder-color-3: oklch(
     from #ffeb3b 50% 30% h
-  ) !important;
+  );
   --folder-color-4: oklch(
     from #4caf50 50% 30% h
-  ) !important;
+  );
   --folder-color-5: oklch(
     from #2196f3 50% 30% h
-  ) !important;
+  );
   --folder-color-6: oklch(
     from #3f51b5 50% 30% h
-  ) !important;
+  );
   --folder-color-7: oklch(
     from #9c27b0 50% 30% h
-  ) !important;
+  );
   --folder-color-8: oklch(
     from #ff5722 50% 30% h
-  ) !important;
+  );
   --folder-color-9: oklch(
     from #ffb300 50% 30% h
-  ) !important;
+  );
   --footnote-divider-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h) !important;
-  --footnote-radius: 8px !important;
+  ) l c h);
+  --footnote-radius: 8px;
   --graph-node-attachment: oklch(
     from #ffeb3b 50% 30% h
-  ) !important;
+  );
   --graph-node-tag: oklch(
     from #4caf50 50% 30% h
-  ) !important;
+  );
   --h1-color: oklch(
     from #d32f2f 50% 30% h
-  ) !important;
+  );
   --h2-color: oklch(
     from #ff9800 50% 30% h
-  ) !important;
+  );
   --h3-color: oklch(
     from #ffeb3b 50% 30% h
-  ) !important;
+  );
   --h4-color: oklch(
     from #4caf50 50% 30% h
-  ) !important;
+  );
   --h5-color: oklch(
     from #2196f3 50% 30% h
-  ) !important;
+  );
   --h6-color: oklch(
     from #3f51b5 50% 30% h
-  ) !important;
-  --header-height: 48px !important;
-  --highlight: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) 80% 30% h / 75%) !important;
-  --hr-color: oklch(from #222222 l c h / 25%) !important;
-  --hue-amber: #ffb300 !important;
-  --hue-blue: #2196f3 !important;
-  --hue-cyan: #00bcd4 !important;
-  --hue-green: #4caf50 !important;
-  --hue-indigo: #3f51b5 !important;
-  --hue-lime: #8bc34a !important;
-  --hue-magenta: #e91e63 !important;
-  --hue-orange: #ff9800 !important;
-  --hue-purple: #673ab7 !important;
-  --hue-red: #d32f2f !important;
-  --hue-rose: #f48fb1 !important;
-  --hue-teal: #009688 !important;
-  --hue-vermillion: #ff5722 !important;
-  --hue-violet: #9c27b0 !important;
-  --hue-yellow: #ffeb3b !important;
+  );
+  --header-height: 48px;
+  --highlight: var(--text-highlight-bg, oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) 80% 30% h / 75%));
+  --hr-color: oklch(from #222222 l c h / 25%);
+  --hue-amber: #ffb300;
+  --hue-blue: #2196f3;
+  --hue-cyan: #00bcd4;
+  --hue-green: #4caf50;
+  --hue-indigo: #3f51b5;
+  --hue-lime: #8bc34a;
+  --hue-magenta: #e91e63;
+  --hue-orange: #ff9800;
+  --hue-purple: #673ab7;
+  --hue-red: #d32f2f;
+  --hue-rose: #f48fb1;
+  --hue-teal: #009688;
+  --hue-vermillion: #ff5722;
+  --hue-violet: #9c27b0;
+  --hue-yellow: #ffeb3b;
   --img-border-color: oklch(from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 60% calc(c * 0.4) h
-  ) l 30% h) !important;
-  --img-border-radius: 0px !important;
-  --img-border-width: 0px !important;
+  ) l 30% h);
+  --img-border-radius: 0px;
+  --img-border-width: 0px;
   --inline-title-color: oklch(
     from #d32f2f 50% 30% h
-  ) !important;
-  --input-border-width: 2px !important;
-  --input-radius: 12px !important;
-  --interactive-active: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 50% c h / 50%) !important;
+  );
+  --input-border-width: 2px;
+  --input-radius: 12px;
+  --interactive-active: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 50% c h / 50%);
   --italic-color: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) calc(50% - 15%) 30%
       calc(h + 200)
-  ) !important;
-  --light: oklch(
+  );
+  --light: var(--background-primary, oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
-  --lightgray: oklch(
+  ));
+  --lightgray: var(--background-secondary, oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) !important;
-  --lightness: 50% !important;
+  ));
+  --lightness: 50%;
   --link-color: oklch(
     from oklch(from hsl(257, 88.88%, 70.95%) l c h) 35% 30% h
-  ) !important;
+  );
   --link-color-hover: oklch(
     from oklch(
     from oklch(from hsl(257, 88.88%, 70.95%) l c h) 35% 30% h
   ) 50% 30% h / 80%
-  ) !important;
+  );
   --link-external-color: oklch(
     from #d32f2f 50% 30% h
-  ) !important;
+  );
   --link-external-color-hover: oklch(
     from oklch(
     from #d32f2f 50% 30% h
   ) 50% 30% h / 80%
-  ) !important;
+  );
   --link-unresolved-color: oklch(
     from oklch(
     from oklch(from hsl(257, 88.88%, 70.95%) l c h) 35% 30% h
   ) 50% 30% h / 60%
-  ) !important;
-  --link-weight: 700 !important;
+  );
+  --link-weight: 700;
   --menu-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 98% calc(c * 0.4) h
-  ) !important;
+  );
   --metadata-background: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h / 75%) !important;
+  ) l c h / 75%);
   --metadata-border-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h) !important;
-  --metadata-border-radius: 12px !important;
+  ) l c h);
+  --metadata-border-radius: 12px;
   --metadata-divider-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h) !important;
-  --metadata-gap: 8px !important;
+  ) l c h);
+  --metadata-gap: 8px;
   --metadata-label-background: oklch(
     from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 60% calc(c * 0.4) h
   ) l c h / 15%
-  ) !important;
+  );
   --metadata-label-background-active: oklch(
     from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 60% calc(c * 0.4) h
   ) l c h / 30%
-  ) !important;
+  );
   --metadata-label-background-hover: oklch(
     from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 60% calc(c * 0.4) h
   ) l c h / 30%
-  ) !important;
-  --metadata-label-font-weight: 700 !important;
-  --metadata-label-width: 8em !important;
+  );
+  --metadata-label-font-weight: 700;
+  --metadata-label-width: 8em;
   --metadata-property-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 98% calc(c * 0.4) h
-  ) !important;
+  );
   --metadata-property-background-hover: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 98% calc(c * 0.4) h
-  ) !important;
+  );
   --metadata-property-box-shadow-focus: 0 0 0 2px oklch(
     from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
   ) 70% c h
-  ) !important;
+  );
   --metadata-property-box-shadow-hover: 0 0 0 1px oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 60% calc(c * 0.4) h
-  ) !important;
-  --metadata-property-radius: 12px !important;
-  --metadata-property-radius-focus: 12px !important;
-  --metadata-property-radius-hover: 12px !important;
-  --mobile-sidebar-width: 100% !important;
+  );
+  --metadata-property-radius: 12px;
+  --metadata-property-radius-focus: 12px;
+  --metadata-property-radius-hover: 12px;
+  --mobile-sidebar-width: 100%;
   --modal-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
-  --nav-collapse-icon-color: #5c5c5c !important;
-  --nav-indentation-guide-width: 2px !important;
-  --nav-item-background-selected: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 80% 30% h / 75%) !important;
-  --nav-item-radius: 8px !important;
-  --nav-tag-color: #5c5c5c !important;
-  --nav-tag-radius: 8px !important;
-  --outline-color: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 25% c h) !important;
+  );
+  --nav-collapse-icon-color: #5c5c5c;
+  --nav-indentation-guide-width: 2px;
+  --nav-item-background-selected: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 80% 30% h / 75%);
+  --nav-item-radius: 8px;
+  --nav-tag-color: #5c5c5c;
+  --nav-tag-radius: 8px;
+  --outline-color: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 25% c h);
   --pdf-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
+  );
   --pdf-page-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
+  );
   --pdf-sidebar-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
+  );
   --pill-border-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h) !important;
+  ) l c h);
   --prompt-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
-  --radius-s: 8px !important;
-  --radius-xs: 8px !important;
-  --radius-xxs: 8px !important;
-  --retroma-canvas-card-border-width: 3px !important;
-  --retroma-canvas-card-embed-border-width: 3px !important;
-  --retroma-canvas-dot-opacity: 0.3 !important;
-  --retroma-canvas-node-content-bg-opacity: 0.25 !important;
+  );
+  --radius-s: 8px;
+  --radius-xs: 8px;
+  --radius-xxs: 8px;
+  --retroma-canvas-card-border-width: 3px;
+  --retroma-canvas-card-embed-border-width: 3px;
+  --retroma-canvas-dot-opacity: 0.3;
+  --retroma-canvas-node-content-bg-opacity: 0.25;
   --retroma-folder-bg-color: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
+  );
   --retroma-folder-border: 1px solid
-    oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 55% 30% h / 50%) !important;
+    oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 55% 30% h / 50%);
   --retroma-folder-box-shadow: -1px 1px 0px oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 60% calc(c * 0.4) h
-  ) !important;
+  );
   --ribbon-background: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) !important;
+  );
   --ribbon-background-collapsed: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) !important;
-  --rotation-1: 5 !important;
-  --rotation-2: 355 !important;
+  );
+  --rotation-1: 5;
+  --rotation-2: 355;
   --search-result-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
+  );
   --setting-items-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
+  );
   --setting-items-border-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h) !important;
+  ) l c h);
   --settings-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 98% calc(c * 0.4) h
-  ) !important;
+  );
   --shiki-code-background: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) 85% c h / 50%) !important;
-  --shiki-code-block-border-radius: 12px !important;
+  ) 85% c h / 50%);
+  --shiki-code-block-border-radius: 12px;
   --shiki-code-function: oklch(
     from #4caf50 50% 30% h
-  ) !important;
+  );
   --shiki-code-important: oklch(
     from #ff9800 50% 30% h
-  ) !important;
+  );
   --shiki-code-property: oklch(
     from #00bcd4 50% 30% h
-  ) !important;
+  );
   --shiki-code-string: oklch(
     from #ffeb3b 50% 30% h
-  ) !important;
+  );
   --shiki-code-value: oklch(
     from #673ab7 50% 30% h
-  ) !important;
+  );
   --shiki-gutter-border-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h) !important;
-  --slider-track-background: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 50% c h / 50%) !important;
-  --slider-track-height: 6px !important;
+  ) l c h);
+  --slider-track-background: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 50% c h / 50%);
+  --slider-track-height: 6px;
   --status-bar-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 60% calc(c * 0.4) h
-  ) !important;
+  );
   --status-bar-border-color: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) 65% calc(c * 0.4) h
-  ) !important;
+  );
   --strong-emphasis: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) calc(50% - 15%) 30%
       calc(h + 200)
-  ) !important;
+  );
   --suggestion-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
+  );
   --sync-avatar-color-1: oklch(
     from #d32f2f 50% 30% h
-  ) !important;
+  );
   --sync-avatar-color-2: oklch(
     from #ff9800 50% 30% h
-  ) !important;
+  );
   --sync-avatar-color-3: oklch(
     from #ffeb3b 50% 30% h
-  ) !important;
+  );
   --sync-avatar-color-4: oklch(
     from #4caf50 50% 30% h
-  ) !important;
+  );
   --sync-avatar-color-5: oklch(
     from #00bcd4 50% 30% h
-  ) !important;
+  );
   --sync-avatar-color-6: oklch(
     from #2196f3 50% 30% h
-  ) !important;
+  );
   --sync-avatar-color-7: oklch(
     from #673ab7 50% 30% h
-  ) !important;
+  );
   --tab-background-active: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 93% calc(c * 0.4) h
-  ) !important;
+  );
   --tab-container-background: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) !important;
+  );
   --tab-outline-color: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) 65% calc(c * 0.4) h
-  ) !important;
-  --tab-radius: 8px !important;
-  --tab-stacked-header-width: 48px !important;
+  );
+  --tab-radius: 8px;
+  --tab-stacked-header-width: 48px;
   --tab-switcher-background: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) !important;
+  );
   --tab-switcher-menubar-background: linear-gradient(to top, oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ), transparent) !important;
-  --tab-switcher-preview-radius: 12px !important;
+  ), transparent);
+  --tab-switcher-preview-radius: 12px;
   --table-add-button-border-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h) !important;
-  --table-border-color: oklch(from #222222 50% c h / 50%) !important;
-  --table-border-spacing: 2px !important;
-  --table-data-background: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) l c h / 7%) !important;
-  --table-header-background: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) 50% c h / 30%) !important;
-  --table-header-border-color: oklch(from #222222 50% c h / 50%) !important;
-  --tag-border-width: 1px !important;
-  --tag-color: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 40% c h / 75%) !important;
-  --tag-radius: 8px !important;
+  ) l c h);
+  --table-border-color: oklch(from #222222 50% c h / 50%);
+  --table-border-spacing: 2px;
+  --table-data-background: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) l c h / 7%);
+  --table-header-background: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) 50% c h / 30%);
+  --table-header-border-color: oklch(from #222222 50% c h / 50%);
+  --tag-border-width: 1px;
+  --tag-color: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 40% c h / 75%);
+  --tag-radius: 8px;
   --text-error: oklch(
     from #d32f2f 50% 30% h
-  ) !important;
-  --text-highlight-bg: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) 80% 30% h / 75%) !important;
-  --text-selection: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 80% 30% h / 75%) !important;
+  );
+  --text-highlight-bg: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) 80% 30% h / 75%);
+  --text-selection: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 80% 30% h / 75%);
   --text-success: oklch(
     from #4caf50 50% 30% h
-  ) !important;
+  );
   --text-warning: oklch(
     from #ff9800 50% 30% h
-  ) !important;
-  --textHighlight: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) 80% 30% h / 75%) !important;
+  );
+  --textHighlight: var(--text-highlight-bg, oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) 80% 30% h / 75%));
   --titlebar-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) 65% calc(c * 0.4) h
-  ) !important;
+  );
   --titlebar-background-focused: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 5)) 65% calc(c * 0.4) h
-  ) !important;
+  );
   --titlebar-border-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h) !important;
+  ) l c h);
   --titlebar-text-color-focused: oklch(from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 355)) 98% calc(c * 0.4) h
-  ) 100% c h) !important;
-  --touch-radius-m: 8px !important;
-  --touch-radius-s: 8px !important;
-  --touch-radius-xs: 8px !important;
-  --touch-radius-xxs: 8px !important;
-  --traffic-lights-offset-x: 48px !important;
-  --traffic-lights-offset-y: 48px !important;
-  --window-border-radius: 12px !important;
-  --quartz-icon-color: currentColor !important;
+  ) 100% c h);
+  --touch-radius-m: 8px;
+  --touch-radius-s: 8px;
+  --touch-radius-xs: 8px;
+  --touch-radius-xxs: 8px;
+  --traffic-lights-offset-x: 48px;
+  --traffic-lights-offset-y: 48px;
+  --window-border-radius: 12px;
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: oklch(0.8 0.0756873 293.559);
+  background-color: var(--tab-container-background, oklch(0.8 0.0756873 293.559));
 }
 
 html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
-  background-color: oklch(0.98 0.0756873 288.559);
+  background-color: var(--background-primary, oklch(0.98 0.0756873 288.559));
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: oklch(0.93 0.0756873 288.559);
+  background-color: var(--background-primary, oklch(0.93 0.0756873 288.559));
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
@@ -2495,7 +2502,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: oklch(0.8 0.0756873 293.559);
+  background-color: var(--tab-container-background, oklch(0.8 0.0756873 293.559));
   border-left-color: oklch(0.65 0.0756873 298.559);
 }
 
@@ -2517,35 +2524,35 @@ html[saved-theme="light"] body html {
   --hue-yellow: #ffeb3b;
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
-  color: oklch(0.35 0.12 33.5585);
+  color: var(--bold-color, oklch(0.35 0.12 33.5585));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: oklch(0.35 0.12 33.5585) none 0px;
   text-decoration-color: oklch(0.35 0.12 33.5585);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
-  color: oklch(0.35 0.12 133.559);
+  color: var(--italic-color, oklch(0.35 0.12 133.559));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: oklch(0.35 0.12 133.559) none 0px;
   text-decoration-color: oklch(0.35 0.12 133.559);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
-  color: oklch(0.35 0.12 133.559);
+  color: var(--italic-color, oklch(0.35 0.12 133.559));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: oklch(0.35 0.12 133.559) none 0px;
   text-decoration-color: oklch(0.35 0.12 133.559);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
-  color: oklch(0.35 0.12 33.5585);
+  color: var(--bold-color, oklch(0.35 0.12 33.5585));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: oklch(0.35 0.12 33.5585) none 0px;
   text-decoration-color: oklch(0.35 0.12 33.5585);
 }
 
 html[saved-theme="light"] body .text-highlight {
-  background-color: oklch(0.8 0.12 298.559 / 0.75);
+  background-color: var(--text-highlight-bg, oklch(0.8 0.12 298.559 / 0.75));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -2558,33 +2565,34 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
+  background-color: var(--background-paper, rgba(0, 0, 0, 0));
   border-radius: 12px;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-paper, rgba(0, 0, 0, 0));
   border-color: rgb(0, 0, 0);
 }`,
     links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
-  color: oklch(0.5 0.12 26.4067);
+  color: var(--link-external-color, oklch(0.5 0.12 26.4067));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 700;
+  font-weight: var(--link-weight, 700);
   outline: oklch(0.5 0.12 26.4067) none 0px;
   text-decoration-color: oklch(0.5 0.12 26.4067);
 }
 
 html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
-  color: oklch(0.35 0.12 293.559);
+  color: var(--link-color, oklch(0.35 0.12 293.559));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 700;
+  font-weight: var(--link-weight, 700);
   outline: oklch(0.35 0.12 293.559) none 0px;
   text-decoration-color: oklch(0.35 0.12 293.559);
 }
 
 html[saved-theme="light"] body a.internal-link.broken {
-  color: oklch(0.5 0.12 293.559 / 0.6);
+  color: var(--link-unresolved-color, oklch(0.5 0.12 293.559 / 0.6));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 700;
+  font-weight: var(--link-weight, 700);
   outline: oklch(0.5 0.12 293.559 / 0.6) none 0px;
 }`,
     lists: `html[saved-theme="light"] body ul.overflow {
@@ -2594,7 +2602,7 @@ html[saved-theme="light"] body a.internal-link.broken {
   border-top-style: ridge;
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
-  background-color: oklch(0.8 0.0756873 293.559 / 0.4);
+  background-color: var(--blockquote-background-color, oklch(0.8 0.0756873 293.559 / 0.4));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-bottom: 4px;
   padding-top: 4px;
@@ -2620,7 +2628,7 @@ html[saved-theme="light"] body a.internal-link.broken {
 }
 
 html[saved-theme="light"] body td {
-  background-color: oklch(0.653792 0.189218 293.559 / 0.07);
+  background-color: var(--table-data-background, oklch(0.653792 0.189218 293.559 / 0.07));
   border-bottom-color: oklch(0.5 0.0000125793 23.5283 / 0.5);
   border-left-color: oklch(0.5 0.0000125793 23.5283 / 0.5);
   border-right-color: oklch(0.5 0.0000125793 23.5283 / 0.5);
@@ -2632,7 +2640,7 @@ html[saved-theme="light"] body th {
   border-left-color: oklch(0.5 0.0000125793 23.5283 / 0.5);
   border-right-color: oklch(0.5 0.0000125793 23.5283 / 0.5);
   border-top-color: oklch(0.5 0.0000125793 23.5283 / 0.5);
-  border-top-left-radius: 12px;
+  border-top-left-radius: var(--window-border-radius, 12px);
 }
 
 html[saved-theme="light"] body thead {
@@ -2643,14 +2651,14 @@ html[saved-theme="light"] body thead {
 }
 
 html[saved-theme="light"] body tr {
-  background-color: oklch(0.5 0.189218 298.559 / 0.3);
+  background-color: var(--table-header-background, oklch(0.5 0.189218 298.559 / 0.3));
   border-bottom-color: oklch(0.93 0.0756873 288.559);
   border-left-color: oklch(0.93 0.0756873 288.559);
   border-right-color: oklch(0.93 0.0756873 288.559);
   border-top-color: oklch(0.93 0.0756873 288.559);
 }`,
     code: `html[saved-theme="light"] body code {
-  background-color: oklch(0.85 0.0756873 293.559 / 0.5);
+  background-color: var(--code-background, oklch(0.85 0.0756873 293.559 / 0.5));
   border-bottom-color: oklch(0.8 0.0756873 293.559);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -2666,7 +2674,7 @@ html[saved-theme="light"] body tr {
 }
 
 html[saved-theme="light"] body pre:has(> code) {
-  background-color: oklch(0.85 0.0756873 293.559 / 0.5);
+  background-color: var(--code-background, oklch(0.85 0.0756873 293.559 / 0.5));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -2694,7 +2702,7 @@ html[saved-theme="light"] body img {
   border-top-color: oklch(0.5 0.12 26.4067);
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
-  background-color: oklch(0.75 0.0756873 293.559);
+  background-color: var(--background-primary-alt, oklch(0.75 0.0756873 293.559));
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-left-radius: 12px;
@@ -3190,7 +3198,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
-  background-color: oklch(0.98 0.0756873 288.559);
+  background-color: var(--background-paper, oklch(0.98 0.0756873 288.559));
   border-bottom-color: oklch(0.25 0.189218 293.559);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -3202,7 +3210,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
-  background-color: oklch(0.93 0.0756873 288.559);
+  background-color: var(--prompt-background, oklch(0.93 0.0756873 288.559));
   border-bottom-color: oklch(0.93 0.0756873 288.559);
   border-bottom-style: ridge;
   border-bottom-width: 4px;
@@ -3215,7 +3223,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space {
   border-top-color: oklch(0.93 0.0756873 288.559);
   border-top-style: ridge;
   border-top-width: 4px;
-  box-shadow: oklch(0 0 0 / 0.4) 0px 0px 12px 2px;
+  box-shadow: var(--shadow-l, oklch(0 0 0 / 0.4) 0px 0px 12px 2px);
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
@@ -3241,7 +3249,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
-  background-color: oklch(0.98 0.0756873 288.559);
+  background-color: var(--background-paper, oklch(0.98 0.0756873 288.559));
   border-bottom-color: oklch(0.25 0.189218 293.559);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -3256,7 +3264,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
   border-top-right-radius: 12px;
   border-top-style: solid;
   border-top-width: 1px;
-  box-shadow: oklch(0.5 0.0756873 293.559) 2px 2px 0px 0px inset, oklch(1 0.0756873 293.559) -2px -2px 0px 0px inset;
+  box-shadow: var(--box-shadow-active, oklch(0.5 0.0756873 293.559) 2px 2px 0px 0px inset, oklch(1 0.0756873 293.559) -2px -2px 0px 0px inset);
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
@@ -3290,35 +3298,35 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
-  color: oklch(0.5 0.12 26.4067);
+  color: var(--h1-color, oklch(0.5 0.12 26.4067));
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: oklch(0.5 0.12 26.4067);
+  color: var(--inline-title-color, oklch(0.5 0.12 26.4067));
 }
 
 html[saved-theme="light"] body h2 {
-  color: oklch(0.5 0.12 64.0453);
+  color: var(--h2-color, oklch(0.5 0.12 64.0453));
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  color: oklch(0.5 0.12 26.4067);
+  color: var(--inline-title-color, oklch(0.5 0.12 26.4067));
 }
 
 html[saved-theme="light"] body h3 {
-  color: oklch(0.5 0.12 102.483);
+  color: var(--h3-color, oklch(0.5 0.12 102.483));
 }
 
 html[saved-theme="light"] body h4 {
-  color: oklch(0.5 0.12 144.199);
+  color: var(--h4-color, oklch(0.5 0.12 144.199));
 }
 
 html[saved-theme="light"] body h5 {
-  color: oklch(0.5 0.12 248.82);
+  color: var(--h5-color, oklch(0.5 0.12 248.82));
 }
 
 html[saved-theme="light"] body h6 {
-  color: oklch(0.5 0.12 271.409);
+  color: var(--h6-color, oklch(0.5 0.12 271.409));
 }
 
 html[saved-theme="light"] body hr {
@@ -3339,7 +3347,7 @@ html[saved-theme="light"] body hr {
   border-top-width: 4px;
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container {
-  background-color: oklch(0.98 0.0756873 288.559);
+  background-color: var(--background-paper, oklch(0.98 0.0756873 288.559));
 }
 
 html[saved-theme="light"] body .nav-files-container .tree-item-children {
@@ -3347,19 +3355,19 @@ html[saved-theme="light"] body .nav-files-container .tree-item-children {
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: oklch(0.5 0.12 26.4067);
-  font-weight: 700;
+  color: var(--folder-color, oklch(0.5 0.12 26.4067));
+  font-weight: var(--nav-item-weight, 700);
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: oklch(0.5 0.12 26.4067);
-  font-weight: 700;
+  color: var(--folder-color, oklch(0.5 0.12 26.4067));
+  font-weight: var(--nav-item-weight, 700);
 }`,
     toc: `html[saved-theme="light"] body li.depth-0 {
-  font-weight: 700;
+  font-weight: var(--nav-item-weight, 700);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
-  background-color: oklch(0.93 0.0756873 288.559);
+  background-color: var(--button-normal, oklch(0.93 0.0756873 288.559));
   border-bottom-color: oklch(0.25 0.189218 293.559);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -3376,10 +3384,11 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-right-radius: 8px;
   border-top-style: solid;
   border-top-width: 1px;
-  cursor: pointer;
+  color: var(--text-muted, rgb(92, 92, 92));
+  cursor: var(--cursor, pointer);
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: oklch(0.6 0.0756873 288.559);
+  background-color: var(--status-bar-background, oklch(0.6 0.0756873 288.559));
   border-bottom-color: oklch(0.65 0.0756873 298.559);
   border-left-color: oklch(0.65 0.0756873 298.559);
   border-left-width: 0px;
@@ -3387,14 +3396,16 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-color: oklch(0.65 0.0756873 298.559);
   border-top-left-radius: 0px;
   border-top-width: 0px;
-  color: oklch(1 0.0756873 288.559);
+  color: oklch(from var(--background-paper) 100% c h, oklch(1 0.0756873 288.559));
 }
 
 html[saved-theme="light"] body footer ul li a {
   color: oklch(1 0.0756873 288.559);
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
-  background-color: oklch(0.5 0.12 26.4067 / 0.3);
+  background-color: oklch(
+    from var(--folder-color) l var(--chroma-folder) h / 30%
+  , oklch(0.5 0.12 26.4067 / 0.3));
   border-bottom-color: oklch(0.55 0.12 288.559 / 0.5);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -3413,7 +3424,9 @@ html[saved-theme="light"] body footer ul li a {
   border-top-width: 1px;
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
-  background-color: oklch(0.5 0.12 26.4067 / 0.3);
+  background-color: oklch(
+    from var(--folder-color) l var(--chroma-folder) h / 30%
+  , oklch(0.5 0.12 26.4067 / 0.3));
   border-bottom-color: oklch(0.55 0.12 288.559 / 0.5);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -3433,7 +3446,7 @@ html[saved-theme="light"] body footer ul li a {
 }
 
 html[saved-theme="light"] body ul.section-ul {
-  background-color: oklch(0.98 0.0756873 288.559);
+  background-color: var(--background-paper, oklch(0.98 0.0756873 288.559));
   border-bottom-color: oklch(0.93 0.0756873 288.559);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -3452,7 +3465,7 @@ html[saved-theme="light"] body ul.section-ul {
   border-top-width: 4px;
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
-  background-color: oklch(0.93 0.0756873 288.559);
+  background-color: var(--button-normal, oklch(0.93 0.0756873 288.559));
   border-bottom-color: oklch(0.25 0.189218 293.559);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -3469,7 +3482,8 @@ html[saved-theme="light"] body ul.section-ul {
   border-top-right-radius: 8px;
   border-top-style: solid;
   border-top-width: 1px;
-  cursor: pointer;
+  color: var(--text-muted, rgb(92, 92, 92));
+  cursor: var(--cursor, pointer);
 }`,
     breadcrumbs: `html[saved-theme="light"] body .breadcrumb-container {
   border-bottom-left-radius: 8px;
@@ -3478,7 +3492,7 @@ html[saved-theme="light"] body ul.section-ul {
   border-top-right-radius: 8px;
 }`,
     canvas: `html[saved-theme="light"] body .canvas-sidebar {
-  background-color: oklch(0.8 0.0756873 293.559);
+  background-color: var(--background-secondary, oklch(0.8 0.0756873 293.559));
   border-color: oklch(0.75 0.0756873 293.559);
 }`,
     bases: `html[saved-theme="light"] body .bases-table {
@@ -3489,7 +3503,7 @@ html[saved-theme="light"] body .bases-table thead th {
   border-color: oklch(0.5 0.0000125793 23.5283 / 0.5);
 }`,
     properties: `html[saved-theme="light"] body .metadata {
-  background-color: oklch(0.8 0.0756873 293.559 / 0.75);
+  background-color: var(--metadata-background, oklch(0.8 0.0756873 293.559 / 0.75));
   border-bottom-color: oklch(0.93 0.0756873 288.559);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -3512,7 +3526,7 @@ html[saved-theme="light"] body .bases-table thead th {
 }
 
 html[saved-theme="light"] body .note-properties {
-  background-color: oklch(0.8 0.0756873 293.559 / 0.75);
+  background-color: var(--metadata-background, oklch(0.8 0.0756873 293.559 / 0.75));
   border-color: oklch(0.93 0.0756873 288.559);
   border-radius: 12px;
 }
@@ -3523,11 +3537,11 @@ html[saved-theme="light"] body .note-properties-row {
 
 html[saved-theme="light"] body .note-properties-tags {
   border-radius: 8px;
-  color: oklch(0.4 0.189218 293.559 / 0.75);
+  color: var(--pill-color, oklch(0.4 0.189218 293.559 / 0.75));
 }
 
 html[saved-theme="light"] body div#quartz-root {
-  background-color: oklch(0.93 0.0756873 288.559);
+  background-color: var(--background-primary, oklch(0.93 0.0756873 288.559));
 }
 
 html[saved-theme="light"] body ol.overflow {
@@ -3537,32 +3551,32 @@ html[saved-theme="light"] body ol.overflow {
   border-top-style: ridge;
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
-  background-color: oklch(0.93 0.0756873 288.559);
+  background-color: var(--background-primary, oklch(0.93 0.0756873 288.559));
   border-color: oklch(0.75 0.0756873 293.559);
 }
 
 html[saved-theme="light"] body .stacked-page-header {
-  background-color: oklch(0.65 0.0756873 298.559);
+  background-color: var(--tab-container-background, oklch(0.65 0.0756873 298.559));
 }
 
 html[saved-theme="light"] body .stacked-page.active {
   border-color: oklch(0.75 0.0756873 293.559);
 }`,
     misc: `html[saved-theme="light"] body .navigation-progress {
-  background-color: oklch(0.6 0.0756873 288.559);
+  background-color: var(--status-bar-background, oklch(0.6 0.0756873 288.559));
 }
 
 html[saved-theme="light"] body kbd {
-  background-color: oklch(0.85 0.0756873 293.559 / 0.5);
+  background-color: var(--code-background, oklch(0.85 0.0756873 293.559 / 0.5));
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  box-shadow: oklch(0.251963 0.0000125793 23.5283 / 0.25) 0px 0px 0px 1px;
+  box-shadow: 0 0 0 1px oklch(from var(--text-normal) l c h / 25%, oklch(0.251963 0.0000125793 23.5283 / 0.25) 0px 0px 0px 1px);
 }
 
 html[saved-theme="light"] body ul.tags > li {
-  background-color: oklch(0.4 0.189218 293.559 / 0.1);
+  background-color: var(--tag-background, oklch(0.4 0.189218 293.559 / 0.1));
   border-bottom-color: oklch(0.4 0.189218 293.559 / 0.75);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -3575,7 +3589,7 @@ html[saved-theme="light"] body ul.tags > li {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: oklch(0.4 0.189218 293.559 / 0.75);
+  color: var(--tag-color, oklch(0.4 0.189218 293.559 / 0.75));
 }`,
   },
 };

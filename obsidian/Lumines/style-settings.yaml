@@ -1,41 +1,333 @@
-name: Lumines Theme
-id: lumines-theme
+name: Lumines Theme Obsidian
+id: lumines-theme-obsidian
 settings:
-  - id: folder-title-color
-
-    title: Folder title color
-    title.ru: Цвет названий папок
-
-    description: Select a color for folder titles
-    description.ru: Выберите цвет для названий папок
-
+  - type: heading
+    level: 1
+    title: General theme settings
+    title.ru: Главные настройки в теме
+    collapsed: true
+  - id: obsidian-fonts
     type: class-select
-    allowEmpty: false
-    default: folder-title-accent
+    title: Vault primary font
+    title.ru: Основной шрифт хранилища
+    description: Select a font for the vault.
+    description.ru: Определите шрифт для хранилища.
+    default: none
+    options:
+      - label: JetBrains Mono
+        value: obsidian-font-jetbrains-mono
+      - label: Excalifont
+        value: obsidian-font-excalifont
+      - label: Cascadia Code
+        value: obsidian-font-cascadia-code
+      - label: None
+        value: none
+  - id: folder-titles-color
+    type: class-select
+    title: Folder names color
+    title.ru: Цвета для названий папок
+    description: Set “None” to turn this off.
+    description.ru: Выберите “None” для отключения.
+    default: folder-titles-accent
     options:
       - label: Accent
-        value: folder-title-accent
+        value: folder-titles-accent
       - label: Red
-        value: folder-title-red
+        value: folder-titles-red
       - label: Orange
-        value: folder-title-orange
+        value: folder-titles-orange
       - label: Yellow
-        value: folder-title-yellow
+        value: folder-titles-yellow
       - label: Lime
-        value: folder-title-lime
+        value: folder-titles-lime
       - label: Green
-        value: folder-title-green
+        value: folder-titles-green
       - label: Cyan
-        value: folder-title-cyan
+        value: folder-titles-cyan
       - label: Sky
-        value: folder-title-sky
+        value: folder-titles-sky
       - label: Blue
-        value: folder-title-blue
+        value: folder-titles-blue
       - label: Indigo
-        value: folder-title-indigo
+        value: folder-titles-indigo
       - label: Violet
-        value: folder-title-violet
+        value: folder-titles-violet
       - label: Pink
-        value: folder-title-pink
-      - label: Purple
-        value: folder-title-purple
+        value: folder-titles-pink
+      - label: Gray
+        value: folder-titles-gray
+      - label: None
+        value: folder-titles-none
+  - id: header-padding-top
+    type: variable-number
+    title: Header padding top
+    title.ru: Верхний отступ заголовка
+    description: Enter the value in em units.
+    description.ru: Задайте значение в em единицах.
+    default: 0.3
+    format: em
+  - type: heading
+    level: 1
+    title: UI elements visibility
+    title.ru: Видимость всех элементов
+    collapsed: true
+  - type: heading
+    level: 2
+    title: Various devices
+    title.ru: Всевозможные устройства
+    collapsed: true
+  - type: heading
+    level: 3
+    title: Hide icons (Empty)
+    title.ru: Скрыть иконки (Пусто)
+    collapsed: true
+  - type: heading
+    level: 3
+    title: Hide buttons
+    title.ru: Скрыть кнопки
+    collapsed: true
+  - id: hide-button-new-note
+    type: class-toggle
+    title: “New note” button
+    title.ru: Кнопка «Новый файл»
+    description: Hide “New note” button.
+    description.ru: Скрыть кнопку «Новый файл».
+  - id: hide-button-new-folder
+    type: class-toggle
+    title: “New folder” button
+    title.ru: Кнопка «Новая папка»
+    description: Hide “New folder” button.
+    description.ru: Скрыть кнопку «Новая папка».
+  - id: hide-button-sort-order
+    type: class-toggle
+    title: “Sort order” button
+    title.ru: Кнопка «Отсортировать»
+    description: Hide “Sort order” button.
+    description.ru: Скрыть кнопку «Отсортировать».
+  - id: hide-button-auto-reveal
+    type: class-toggle
+    title: “Auto-reveal” button
+    title.ru: Кнопка «Автораскрыть»
+    description: Hide “Auto-reveal” button.
+    description.ru: Скрыть кнопку «Автораскрыть».
+  - id: hide-button-collapse-all
+    type: class-toggle
+    title: “Collapse all” button
+    title.ru: Кнопка «Свернуть все»
+    description: Hide “Collapse all” button.
+    description.ru: Скрыть кнопку «Свернуть все».
+  - id: hide-button-reading-mode
+    type: class-toggle
+    title: “Reading mode” button
+    title.ru: Кнопка «Режим чтения»
+    description: Hide “Reading mode” button.
+    description.ru: Скрыть кнопку «Режим чтения».
+  - id: hide-button-search-settings
+    type: class-toggle
+    title: “Search settings” button
+    title.ru: Кнопка «Настройки поиска»
+    description: Hide “Search settings” button.
+    description.ru: Скрыть кнопку «Настройки поиска».
+  - type: heading
+    level: 2
+    title: Mobile devices
+    title.ru: Мобильные устройства
+    collapsed: true
+  - type: heading
+    level: 3
+    title: Hide icons
+    title.ru: Скрыть иконки
+    collapsed: true
+  - id: hide-icon-mobile-chevrons
+    type: class-toggle
+    title: “Mobile chevrons” icon
+    title.ru: Иконка «Мобильные стрелки»
+    description: Hide “Mobile chevrons” icon.
+    description.ru: Скрыть иконку «Мобильные стрелки».
+  - type: heading
+    level: 3
+    title: Hide buttons
+    title.ru: Скрыть кнопки
+    collapsed: true
+  - id: hide-button-mobile-navbar-action-back
+    type: class-toggle
+    title: “Navigate back” button
+    title.ru: Кнопка «Вернуться назад»
+    description: Hide “Navigate back” button.
+    description.ru: Скрыть кнопку «Вернуться назад».
+  - id: hide-button-mobile-navbar-action-forward
+    type: class-toggle
+    title: “Navigate forward” button
+    title.ru: Кнопка «Вернуться вперед»
+    description: Hide “Navigate forward” button.
+    description.ru: Скрыть кнопку «Вернуться вперед».
+  - id: hide-button-mobile-navbar-action-quick-switcher
+    type: class-toggle
+    title: “Quick switcher” button
+    title.ru: Кнопка «Быстрый переход»
+    description: Hide “Quick switcher” button.
+    description.ru: Скрыть кнопку «Быстрый переход».
+  - id: hide-button-mobile-navbar-action-new-tab
+    type: class-toggle
+    title: “New tab” button
+    title.ru: Кнопка «Новая вкладка»
+    description: Hide “New tab” button.
+    description.ru: Скрыть кнопку «Новая вкладка».
+  - id: hide-button-mobile-navbar-action-tabs
+    type: class-toggle
+    title: “Open tabs” button
+    title.ru: Кнопка «Открыть вкладки»
+    description: Hide “Open tabs” button.
+    description.ru: Скрыть кнопку «Открыть вкладки».
+  - id: hide-button-mobile-navbar-action-menu
+    type: class-toggle
+    title: “Ribbon menu” button
+    title.ru: Кнопка «Выпадающее меню»
+    description: Hide “Ribbon menu” button.
+    description.ru: Скрыть кнопку «Выпадающее меню».
+  - type: heading
+    level: 2
+    title: Desktop devices
+    title.ru: Десктопные устройства
+    collapsed: true
+  - type: heading
+    level: 3
+    title: Hide icons (Empty)
+    title.ru: Скрыть иконки (Пусто)
+    collapsed: true
+  - type: heading
+    level: 3
+    title: Hide buttons
+    title.ru: Скрыть кнопки
+    collapsed: true
+  - id: hide-button-help
+    type: class-toggle
+    title: “Help” button
+    title.ru: Кнопка «Помощь»
+    description: Hide “Help” button.
+    description.ru: Скрыть кнопку «Помощь».
+  - type: heading
+    level: 1
+    title: Mobile navigation menu
+    title.ru: Мобильное меню навигации
+    collapsed: true
+  - id: order-navbar-button-nth-child-1
+    type: class-select
+    title: “Navigate back” button
+    title.ru: Кнопка «Вернуться назад»
+    description: Select the position for the 1st button.
+    description.ru: Выберите позицию для 1-ой кнопки.
+    default: order-navbar-button-nth-child-1-1
+    options:
+      - label: 1
+        value: order-navbar-button-nth-child-1-1
+      - label: 2
+        value: order-navbar-button-nth-child-1-2
+      - label: 3
+        value: order-navbar-button-nth-child-1-3
+      - label: 4
+        value: order-navbar-button-nth-child-1-4
+      - label: 5
+        value: order-navbar-button-nth-child-1-5
+      - label: 6
+        value: order-navbar-button-nth-child-1-6
+  - id: order-navbar-button-nth-child-2
+    type: class-select
+    title: “Navigate forward” button
+    title.ru: Кнопка «Вернуться вперед»
+    description: Select the position for the 2nd button.
+    description.ru: Выберите позицию для 2-ой кнопки.
+    default: order-navbar-button-nth-child-2-2
+    options:
+      - label: 1
+        value: order-navbar-button-nth-child-2-1
+      - label: 2
+        value: order-navbar-button-nth-child-2-2
+      - label: 3
+        value: order-navbar-button-nth-child-2-3
+      - label: 4
+        value: order-navbar-button-nth-child-2-4
+      - label: 5
+        value: order-navbar-button-nth-child-2-5
+      - label: 6
+        value: order-navbar-button-nth-child-2-6
+  - id: order-navbar-button-nth-child-3
+    type: class-select
+    title: “Quick switcher” button
+    title.ru: Кнопка «Быстрый переход»
+    description: Select the position for the 3rd button.
+    description.ru: Выберите позицию для 3-ей кнопки.
+    default: order-navbar-button-nth-child-3-3
+    options:
+      - label: 1
+        value: order-navbar-button-nth-child-3-1
+      - label: 2
+        value: order-navbar-button-nth-child-3-2
+      - label: 3
+        value: order-navbar-button-nth-child-3-3
+      - label: 4
+        value: order-navbar-button-nth-child-3-4
+      - label: 5
+        value: order-navbar-button-nth-child-3-5
+      - label: 6
+        value: order-navbar-button-nth-child-3-6
+  - id: order-navbar-button-nth-child-4
+    type: class-select
+    title: “New tab” button
+    title.ru: Кнопка «Новая вкладка»
+    description: Select the position for the 4th button.
+    description.ru: Выберите позицию для 4-ой кнопки.
+    default: order-navbar-button-nth-child-4-4
+    options:
+      - label: 1
+        value: order-navbar-button-nth-child-4-1
+      - label: 2
+        value: order-navbar-button-nth-child-4-2
+      - label: 3
+        value: order-navbar-button-nth-child-4-3
+      - label: 4
+        value: order-navbar-button-nth-child-4-4
+      - label: 5
+        value: order-navbar-button-nth-child-4-5
+      - label: 6
+        value: order-navbar-button-nth-child-4-6
+  - id: order-navbar-button-nth-child-5
+    type: class-select
+    title: “Open tabs” button
+    title.ru: Кнопка «Открыть вкладки»
+    description: Select the position for the 5th button.
+    description.ru: Выберите позицию для 5-ой кнопки.
+    default: order-navbar-button-nth-child-5-5
+    options:
+      - label: 1
+        value: order-navbar-button-nth-child-5-1
+      - label: 2
+        value: order-navbar-button-nth-child-5-2
+      - label: 3
+        value: order-navbar-button-nth-child-5-3
+      - label: 4
+        value: order-navbar-button-nth-child-5-4
+      - label: 5
+        value: order-navbar-button-nth-child-5-5
+      - label: 6
+        value: order-navbar-button-nth-child-5-6
+  - id: order-navbar-button-nth-child-6
+    type: class-select
+    title: “Ribbon menu” button
+    title.ru: Кнопка «Выпадающее меню»
+    description: Select the position for the 6th button.
+    description.ru: Выберите позицию для 6-ой кнопки.
+    default: order-navbar-button-nth-child-6-6
+    options:
+      - label: 1
+        value: order-navbar-button-nth-child-6-1
+      - label: 2
+        value: order-navbar-button-nth-child-6-2
+      - label: 3
+        value: order-navbar-button-nth-child-6-3
+      - label: 4
+        value: order-navbar-button-nth-child-6-4
+      - label: 5
+        value: order-navbar-button-nth-child-6-5
+      - label: 6
+        value: order-navbar-button-nth-child-6-6

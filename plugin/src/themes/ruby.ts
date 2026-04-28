@@ -4,63 +4,63 @@ export const theme: ThemeData = {
   meta: { name: "ruby", modes: ["dark", "light"], variations: [], fonts: [] },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-middle: #db4d4d !important;
-  --background-cursor: #703333 !important;
-  --background-editor-border: #3f2121 !important;
-  --background-header: rgba(112, 51, 51, 0.85) !important;
-  --background-search: #703333 !important;
-  --background-select-hover: #703333 !important;
-  --background-selection: #703333 !important;
-  --background-settings: #703333 !important;
-  --background-sidedock: #703333 !important;
-  --background-statusbar: #703333 !important;
-  --background-suggestion: #703333 !important;
-  --background-table-header: #703333 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px #703333 !important;
-  --blockquote-border-color: #703333 !important;
-  --bodyFont: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --checkbox-color: #703333 !important;
-  --codeFont: 'Dank Mono', monospace !important;
-  --collapse-icon-color-collapsed: #db4040 !important;
-  --color-active-action: #fe7575 !important;
-  --color-sidedock-hover: #e56969 !important;
-  --default-font: 'Dank Mono', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
-  --divider-color-hover: #703333 !important;
-  --embed-border-start: 2px solid #703333 !important;
-  --file-header-font: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-custom: "Quotable", "Dank Mono", 'Inter' !important;
-  --font-interface: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace: 'Dank Mono', monospace !important;
-  --graph-node-focused: #db4040 !important;
-  --header-font: 'Caveat Brush' !important;
-  --headerFont: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --icon-color-active: #db4040 !important;
-  --interactive-accent: #703333 !important;
-  --link-color: #db4040 !important;
-  --link-external-color: #db4040 !important;
-  --link-unresolved-color: #db4040 !important;
-  --list-marker-color-collapsed: #db4040 !important;
-  --metadata-input-font: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --nav-item-color-highlighted: #db4040 !important;
-  --pill-color-remove-hover: #db4040 !important;
-  --secondary: #db4040 !important;
-  --spoiler-bg: #EEE !important;
-  --tab-text-color-focused-highlighted: #db4040 !important;
-  --table-drag-handle-background-active: #703333 !important;
-  --table-selection-border-color: #703333 !important;
-  --tag-color: #db4040 !important;
-  --tag-color-hover: #db4040 !important;
-  --tertiary: #db4040 !important;
-  --text-accent: #db4040 !important;
-  --text-selection: rgba(206, 92, 92, 0.5) !important;
-  --titleFont: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --quartz-icon-color: currentColor !important;
+  --accent-middle: #db4d4d;
+  --background-cursor: #703333;
+  --background-editor-border: #3f2121;
+  --background-header: rgba(112, 51, 51, 0.85);
+  --background-search: #703333;
+  --background-select-hover: #703333;
+  --background-selection: #703333;
+  --background-settings: #703333;
+  --background-sidedock: #703333;
+  --background-statusbar: #703333;
+  --background-suggestion: #703333;
+  --background-table-header: #703333;
+  --bases-table-cell-shadow-focus: 0 0 0 2px #703333;
+  --blockquote-border-color: #703333;
+  --bodyFont: var(--font-interface, Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --checkbox-color: #703333;
+  --codeFont: var(--font-monospace, 'Dank Mono', monospace);
+  --collapse-icon-color-collapsed: #db4040;
+  --color-active-action: #fe7575;
+  --color-sidedock-hover: #e56969;
+  --default-font: 'Dank Mono', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --divider-color-hover: #703333;
+  --embed-border-start: 2px solid #703333;
+  --file-header-font: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-custom: "Quotable", "Dank Mono", 'Inter';
+  --font-interface: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: 'Dank Mono', monospace;
+  --graph-node-focused: #db4040;
+  --header-font: 'Caveat Brush';
+  --headerFont: var(--font-interface, Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --icon-color-active: #db4040;
+  --interactive-accent: #703333;
+  --link-color: #db4040;
+  --link-external-color: #db4040;
+  --link-unresolved-color: #db4040;
+  --list-marker-color-collapsed: #db4040;
+  --metadata-input-font: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-label-font: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --nav-item-color-highlighted: #db4040;
+  --pill-color-remove-hover: #db4040;
+  --secondary: var(--text-accent, #db4040);
+  --spoiler-bg: #EEE;
+  --tab-text-color-focused-highlighted: #db4040;
+  --table-drag-handle-background-active: #703333;
+  --table-selection-border-color: #703333;
+  --tag-color: #db4040;
+  --tag-color-hover: #db4040;
+  --tertiary: var(--text-accent, #db4040);
+  --text-accent: #db4040;
+  --text-selection: rgba(206, 92, 92, 0.5);
+  --titleFont: var(--font-interface, Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="dark"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="dark"] body html {
@@ -588,40 +588,40 @@ html[saved-theme="dark"] body ul.tags > li {
   },
   light: {
     base: `:root:root {
-  --accent-middle: #db4d4d !important;
-  --background-cursor: #e7afaf !important;
-  --background-editor-border: #e7afaf !important;
-  --background-header: rgba(206, 92, 92, 0.85) !important;
-  --background-search: #ce5c5c !important;
-  --background-select-hover: #ce5c5c !important;
-  --background-selection: #e7afaf !important;
-  --background-settings: #ce5c5c !important;
-  --background-sidedock: #ce5c5c !important;
-  --background-statusbar: #ce5c5c !important;
-  --background-suggestion: rgba(206, 92, 92, 0.75) !important;
-  --background-table-header: #ce5c5c !important;
-  --bodyFont: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --codeFont: 'Dank Mono', monospace !important;
-  --color-active-action: #ce5c5c !important;
-  --color-sidedock-hover: #372d2d !important;
-  --default-font: 'Dank Mono', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
-  --file-header-font: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-custom: "Quotable", "Dank Mono", 'Inter' !important;
-  --font-interface: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace: 'Dank Mono', monospace !important;
-  --header-font: 'Caveat Brush' !important;
-  --headerFont: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-font: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --spoiler-bg: #111 !important;
-  --text-selection: rgba(206, 92, 92, 0.5) !important;
-  --titleFont: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --quartz-icon-color: currentColor !important;
+  --accent-middle: #db4d4d;
+  --background-cursor: #e7afaf;
+  --background-editor-border: #e7afaf;
+  --background-header: rgba(206, 92, 92, 0.85);
+  --background-search: #ce5c5c;
+  --background-select-hover: #ce5c5c;
+  --background-selection: #e7afaf;
+  --background-settings: #ce5c5c;
+  --background-sidedock: #ce5c5c;
+  --background-statusbar: #ce5c5c;
+  --background-suggestion: rgba(206, 92, 92, 0.75);
+  --background-table-header: #ce5c5c;
+  --bodyFont: var(--font-interface, Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --codeFont: var(--font-monospace, 'Dank Mono', monospace);
+  --color-active-action: #ce5c5c;
+  --color-sidedock-hover: #372d2d;
+  --default-font: 'Dank Mono', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --file-header-font: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-custom: "Quotable", "Dank Mono", 'Inter';
+  --font-interface: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: 'Dank Mono', monospace;
+  --header-font: 'Caveat Brush';
+  --headerFont: var(--font-interface, Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-input-font: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-label-font: Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --spoiler-bg: #111;
+  --text-selection: rgba(206, 92, 92, 0.5);
+  --titleFont: var(--font-interface, Dank Mono, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --quartz-icon-color: currentColor;
 }
 
 html[saved-theme="light"] body {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 html[saved-theme="light"] body html {
