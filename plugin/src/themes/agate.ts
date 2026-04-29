@@ -53,70 +53,63 @@ export const theme: ThemeData = {
   light: {
     base: `:root:root {
   --accent-color: 55, 0, 255;
-  --background-modifier-border: rgba(20, 19, 19, 0.172);
-  --background-modifier-border-focus: #d5d0d034;
-  --background-modifier-border-hover: #d5d0d034;
-  --background-modifier-form-field: #f7f7f730;
-  --background-modifier-form-field-hover: #f7f7f730;
-  --background-primary: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
-  --background-primary-alt: #f7f7f7c1;
-  --background-secondary: linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2));
-  --background-secondary-alt: #d5d0d034;
-  --bases-cards-background: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
-  --bases-cards-cover-background: #f7f7f7c1;
-  --bases-cards-shadow: 0 0 0 1px rgba(20, 19, 19, 0.172);
-  --bases-cards-shadow-hover: 0 0 0 1px #d5d0d034;
-  --bases-embed-border-color: rgba(20, 19, 19, 0.172);
-  --bases-embed-border-radius: 2px;
-  --bases-table-border-color: rgba(20, 19, 19, 0.172);
-  --bases-table-cell-background-active: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
-  --bases-table-cell-background-disabled: #f7f7f7c1;
-  --bases-table-cell-shadow-active: 0 0 0 2px #d5d0d034;
-  --bases-table-container-border-radius: 2px;
-  --bases-table-group-background: #f7f7f7c1;
-  --bases-table-header-background: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
-  --bases-table-summary-background: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
-  --bg-color: rgba(170, 170, 170, 0);
-  --blockquote-border-color: rgba(55, 0, 255, 0.6);
+  --background-modifier-border: var(--color-base-30, rgba(20, 19, 19, 0.172));
+  --background-modifier-border-focus: var(--color-base-40, #d5d0d034);
+  --background-modifier-border-hover: var(--color-base-35, #d5d0d034);
+  --background-modifier-form-field: var(--color-base-00, #f7f7f730);
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, #f7f7f730);
+  --background-primary: linear-gradient(to left, #ffffff00 93%, var(--line-color));
+  --background-primary-alt: var(--color-base-10, #f7f7f7c1);
+  --background-secondary: linear-gradient(to left, var(--bg-color) 100%, var(--line-color));
+  --background-secondary-alt: var(--color-base-05, #d5d0d034);
+  --bases-cards-background: var(--background-primary, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)));
+  --bases-cards-cover-background: var(--background-primary-alt, #f7f7f7c1);
+  --bases-embed-border-color: var(--background-modifier-border, rgba(20, 19, 19, 0.172));
+  --bases-embed-border-radius: var(--radius-s, 2px);
+  --bases-table-border-color: var(--table-border-color, rgba(20, 19, 19, 0.172));
+  --bases-table-cell-background-active: var(--background-primary, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)));
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #f7f7f7c1);
+  --bases-table-container-border-radius: var(--radius-s, 2px);
+  --bases-table-group-background: var(--background-primary-alt, #f7f7f7c1);
+  --bases-table-header-background: var(--background-primary, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)));
+  --bases-table-summary-background: var(--background-primary, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)));
+  --bg-color: rgba(var(--light-color), var(--light-alpha-color));
+  --blockquote-border-color: rgba(var(--accent-color), 0.6);
   --blockquote-border-thickness: 3px;
   --blockquote-font-style: italic;
-  --blur-background: color-mix(in srgb, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)) 65%, transparent) linear-gradient(linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)), color-mix(in srgb, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)) 65%, transparent));
-  --bodyFont: var(--font-text, Noto Serif KR, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --bodyFont: var(--font-text-theme, 'Noto Serif KR', serif);
   --bold-modifier: 500;
-  --bold-weight: 900;
-  --button-radius: 2px;
-  --callout-blend-mode: multiply;
+  --button-radius: var(--radius-s, 2px);
+  --callout-blend-mode: var(--highlight-mix-blend-mode, multiply);
   --callout-border-opacity: 100%;
   --callout-border-width: 1px;
-  --callout-padding: 15px 20px;
-  --callout-radius: 20px;
-  --callout-title-weight: 900;
-  --canvas-background: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
-  --canvas-card-label-color: rgb(20, 20, 20);
-  --canvas-controls-radius: 2px;
-  --canvas-dot-pattern: rgba(20, 19, 19, 0.172);
-  --caret-color: rgb(20, 20, 20);
-  --checkbox-border-color: rgb(20, 20, 20);
-  --checkbox-color: rgba(152, 151, 151, 0.766);
-  --checkbox-marker-color: rgb(101, 101, 101);
-  --checkbox-radius: 0px;
-  --clickable-icon-radius: 2px;
-  --code-background: #f7f7f7c1;
-  --code-border-color: rgba(20, 19, 19, 0.172);
-  --code-comment: #5b6a6a;
-  --code-function: #b500e7;
-  --code-important: #d64609;
-  --code-keyword: #098800;
-  --code-normal: #333d40;
-  --code-operator: #c45b00;
-  --code-property: #333d40;
-  --code-punctuation: #00b4f0;
-  --code-radius: 2px;
-  --code-string: #b58900;
-  --code-tag: #dc322f;
-  --code-value: rgb(55, 0, 255);
-  --codeFont: var(--font-text, Noto Serif KR, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --collapse-icon-color: rgb(20, 20, 20);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 15px 20px);
+  --callout-radius: var(--radius-s, 20px);
+  --canvas-background: var(--background-primary, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)));
+  --canvas-card-label-color: var(--text-faint, rgb(20, 20, 20));
+  --canvas-controls-radius: var(--radius-s, 2px);
+  --canvas-dot-pattern: var(--color-base-30, rgba(20, 19, 19, 0.172));
+  --caret-color: var(--text-normal, rgb(20, 20, 20));
+  --checkbox-border-color: var(--text-faint, rgb(20, 20, 20));
+  --checkbox-color: var(--interactive-accent, rgba(152, 151, 151, 0.766));
+  --checkbox-marker-color: var(--background-primary, rgb(101, 101, 101));
+  --checkbox-radius: var(--radius-s, 0px);
+  --clickable-icon-radius: var(--radius-s, 2px);
+  --code-background: var(--background-primary-alt, #f7f7f7c1);
+  --code-border-color: var(--background-modifier-border, rgba(20, 19, 19, 0.172));
+  --code-comment: var(--text-faint, #5b6a6a);
+  --code-function: var(--color-yellow, #b500e7);
+  --code-important: var(--color-orange, #d64609);
+  --code-keyword: var(--color-pink, #098800);
+  --code-normal: var(--text-normal, #333d40);
+  --code-operator: var(--color-red, #c45b00);
+  --code-property: var(--color-cyan, #333d40);
+  --code-punctuation: var(--text-muted, #00b4f0);
+  --code-radius: var(--radius-s, 2px);
+  --code-string: var(--color-green, #b58900);
+  --code-tag: var(--color-red, #dc322f);
+  --code-value: rgb(var(--accent-color));
+  --collapse-icon-color: var(--text-faint, rgb(20, 20, 20));
   --color-base-00: #f7f7f730;
   --color-base-05: #d5d0d034;
   --color-base-10: #f7f7f7c1;
@@ -128,35 +121,31 @@ export const theme: ThemeData = {
   --color-base-40: #d5d0d034;
   --color-base-50: rgb(20, 20, 20);
   --color-base-60: #d5d0d034;
-  --dark: var(--text-normal, rgb(20, 20, 20));
-  --darkgray: var(--text-normal, rgb(20, 20, 20));
-  --divider-color: rgba(20, 19, 19, 0.172);
-  --dropdown-background: #f7f7f730;
-  --dropdown-background-hover: #f7f7f7c1;
-  --embed-block-shadow-hover: 0 0 0 1px rgba(20, 19, 19, 0.172), inset 0 0 0 1px rgba(20, 19, 19, 0.172);
+  --dark: var(--text-normal, var(--color-base-100, rgb(20, 20, 20)));
+  --darkgray: var(--text-normal, var(--color-base-100, rgb(20, 20, 20)));
+  --divider-color: var(--background-modifier-border, rgba(20, 19, 19, 0.172));
+  --dropdown-background: var(--interactive-normal, #f7f7f730);
+  --dropdown-background-hover: var(--interactive-hover, #f7f7f7c1);
   --file-folding-offset: 300px;
-  --file-header-background: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
-  --file-header-background-focused: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
-  --file-header-border: 1px solid rgba(20, 20, 20, 0.2);
-  --file-header-font: Pretendard-Regular, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --file-header-background: var(--background-primary, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)));
+  --file-header-background-focused: var(--background-primary, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)));
+  --file-header-border: 1px solid var(--line-color);
+  --file-header-font: var(--font-interface, Pretendard-Regular, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   --file-line-width: 630px;
-  --file-margins: 30px 10px;
-  --flair-background: #f7f7f730;
-  --flair-color: rgb(20, 20, 20);
-  --font-interface: Pretendard-Regular, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --file-margins: var(--file-margins-y) var(--file-margins-x, 30px 10px);
+  --flair-background: var(--interactive-normal, #f7f7f730);
+  --flair-color: var(--text-normal, rgb(20, 20, 20));
   --font-interface-theme: 'Pretendard-Regular', serif;
-  --font-mermaid: Noto Serif KR, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-print: Noto Serif KR, serif, Arial';
-  --font-text: Noto Serif KR, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-mermaid: var(--font-text, Noto Serif KR, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   --font-text-theme: 'Noto Serif KR', serif;
-  --footnote-divider-color: rgba(20, 19, 19, 0.172);
-  --footnote-id-color-no-occurrences: rgb(20, 20, 20);
-  --footnote-line-height: 2em;
-  --footnote-radius: 2px;
-  --graph-line: rgba(20, 20, 20, 0.2);
-  --graph-node-unresolved: rgb(20, 20, 20);
-  --graph-text: rgb(20, 20, 20);
-  --gray: var(--text-faint, rgb(20, 20, 20));
+  --footnote-divider-color: var(--metadata-divider-color, rgba(20, 19, 19, 0.172));
+  --footnote-id-color-no-occurrences: var(--text-faint, rgb(20, 20, 20));
+  --footnote-line-height: var(--line-height-normal, 2em);
+  --footnote-radius: var(--radius-s, 2px);
+  --graph-line: var(--line-color, rgba(20, 20, 20, 0.2));
+  --graph-node-unresolved: var(--text-faint, rgb(20, 20, 20));
+  --graph-text: var(--text-normal, rgb(20, 20, 20));
+  --gray: var(--text-faint, var(--color-base-50, rgb(20, 20, 20)));
   --h1-font: 'Pretendard-Bold';
   --h1-size: 2em;
   --h2-font: 'Pretendard-Bold';
@@ -169,142 +158,135 @@ export const theme: ThemeData = {
   --h4-size: 1.2em;
   --h4-weight: 700;
   --h5-font: 'Pretendard-Bold';
-  --h5-line-height: 2em;
+  --h5-line-height: var(--line-height-normal, 2em);
   --h5-size: 1.1em;
   --h5-weight: 700;
   --h6-font: 'Pretendard-Bold';
-  --h6-line-height: 2em;
+  --h6-line-height: var(--line-height-normal, 2em);
   --h6-weight: 700;
-  --headerFont: var(--font-text, Noto Serif KR, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --heading-formatting: rgb(20, 20, 20);
-  --highlight: var(--text-highlight-bg, rgba(55, 0, 255, 0.2));
-  --hr-color: rgba(20, 20, 20, 0.2);
-  --hr-thickness: 1px;
-  --icon-color-focused: rgb(20, 20, 20);
-  --inline-title-color: rgb(20, 20, 20);
-  --inline-title-font: "ITC Slimbach Std", 'Noto Serif KR';
-  --inline-title-line-height: 1.2em;
-  --inline-title-size: 3.5em;
-  --input-date-separator: rgb(20, 20, 20);
-  --input-placeholder-color: rgb(20, 20, 20);
+  --headerFont: var(--font-text-theme, 'Noto Serif KR', serif);
+  --heading-formatting: var(--text-faint, rgb(20, 20, 20));
+  --highlight: var(--text-highlight-bg, rgba(var(--accent-color), 0.2));
+  --hr-color: var(--line-color, rgba(20, 20, 20, 0.2));
+  --hr-thickness: var(--border-width, 1px);
+  --icon-color-focused: var(--text-normal, rgb(20, 20, 20));
+  --inline-title-color: var(--color-base-100, rgb(20, 20, 20));
+  --inline-title-font: var(--h1-font, "ITC Slimbach Std", 'Noto Serif KR');
+  --inline-title-line-height: var(--h1-line-height, 1.2em);
+  --inline-title-size: var(--h1-size, 3.5em);
+  --input-date-separator: var(--text-faint, rgb(20, 20, 20));
+  --input-placeholder-color: var(--text-faint, rgb(20, 20, 20));
   --input-radius: 0px;
-  --interactive-hover: #f7f7f7c1;
-  --interactive-normal: #f7f7f730;
-  --light: var(--background-primary, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)));
+  --interactive-hover: var(--color-base-10, #f7f7f7c1);
+  --interactive-normal: var(--color-base-00, #f7f7f730);
+  --light: var(--background-primary, linear-gradient(to left, #ffffff00 93%, var(--line-color)));
   --light-alpha-color: 0;
   --light-color: 170, 170, 170;
-  --lightgray: var(--background-secondary, linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2)));
+  --lightgray: var(--background-secondary, linear-gradient(to left, var(--bg-color) 100%, var(--line-color)));
   --line-color: rgba(20, 20, 20, 0.2);
   --line-height-normal: 2em;
-  --link-color: rgb(55, 0, 255);
-  --link-external-color: rgb(55, 0, 255);
-  --link-unresolved-color: rgb(55, 0, 255);
-  --link-unresolved-decoration-color: rgb(55, 0, 255);
-  --list-indent: 2em;
+  --link-color: rgb(var(--accent-color));
+  --link-external-color: rgb(var(--accent-color));
+  --link-unresolved-color: rgb(var(--accent-color));
+  --link-unresolved-decoration-color: rgb(var(--accent-color));
   --list-indent-editing: 2em;
   --list-indent-source: 2em;
-  --list-marker-color: rgb(20, 20, 20);
-  --list-marker-color-collapsed: rgb(20, 20, 20);
-  --list-marker-color-hover: rgb(20, 20, 20);
+  --list-marker-color: var(--color-base-100, rgb(20, 20, 20));
+  --list-marker-color-collapsed: var(--color-base-100, rgb(20, 20, 20));
+  --list-marker-color-hover: var(--color-base-100, rgb(20, 20, 20));
   --list-spacing: 0px;
-  --menu-background: linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2));
-  --menu-border-color: #d5d0d034;
+  --menu-background: var(--background-secondary, linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2)));
+  --menu-border-color: var(--background-modifier-border-hover, #d5d0d034);
   --metadata-background: rgba(20, 20, 20, 0.05);
-  --metadata-border-color: rgba(20, 19, 19, 0.172);
+  --metadata-border-color: var(--background-modifier-border, rgba(20, 19, 19, 0.172));
   --metadata-border-radius: 10px;
-  --metadata-divider-color: rgba(20, 19, 19, 0.172);
+  --metadata-divider-color: var(--background-modifier-border, rgba(20, 19, 19, 0.172));
   --metadata-gap: 0px;
-  --metadata-input-font: Pretendard-Regular, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-input-text-color: rgb(20, 20, 20);
-  --metadata-label-font: Pretendard-Regular, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-input-font: var(--font-interface, Pretendard-Regular, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-input-text-color: var(--text-normal, rgb(20, 20, 20));
+  --metadata-label-font: var(--font-interface, Pretendard-Regular, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   --metadata-max-width: 100%;
-  --metadata-padding: 5px 20px;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #d5d0d034;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #d5d0d034;
-  --modal-background: rgb(170, 170, 170);
-  --modal-border-color: #d5d0d034;
-  --modal-color: rgb(170, 170, 170);
-  --nav-collapse-icon-color: rgb(20, 20, 20);
-  --nav-collapse-icon-color-collapsed: rgb(20, 20, 20);
-  --nav-heading-color: rgb(20, 20, 20);
-  --nav-heading-color-collapsed: rgb(20, 20, 20);
-  --nav-heading-color-hover: rgb(20, 20, 20);
-  --nav-item-color-active: rgb(20, 20, 20);
-  --nav-item-color-hover: rgb(20, 20, 20);
-  --nav-item-color-selected: rgb(20, 20, 20);
-  --nav-item-radius: 2px;
-  --nav-tag-color: rgb(20, 20, 20);
-  --nav-tag-radius: 2px;
-  --pdf-background: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
-  --pdf-page-background: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
-  --pdf-sidebar-background: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
-  --pill-border-color: rgba(20, 19, 19, 0.172);
-  --pill-border-color-hover: #d5d0d034;
-  --pill-color-hover: rgb(20, 20, 20);
-  --pill-color-remove: rgb(20, 20, 20);
-  --popover-font-size: 0.9em;
+  --metadata-padding: var(--size-4-2, 5px 20px) 0;
+  --modal-background: var(--modal-color, rgb(170, 170, 170));
+  --modal-color: rgba(var(--light-color), 1);
+  --nav-collapse-icon-color: var(--collapse-icon-color, rgb(20, 20, 20));
+  --nav-collapse-icon-color-collapsed: var(--text-faint, rgb(20, 20, 20));
+  --nav-heading-color: var(--text-normal, rgb(20, 20, 20));
+  --nav-heading-color-collapsed: var(--text-faint, rgb(20, 20, 20));
+  --nav-heading-color-hover: var(--text-normal, rgb(20, 20, 20));
+  --nav-item-color-active: var(--text-normal, rgb(20, 20, 20));
+  --nav-item-color-hover: var(--text-normal, rgb(20, 20, 20));
+  --nav-item-color-selected: var(--text-normal, rgb(20, 20, 20));
+  --nav-item-radius: var(--radius-s, 2px);
+  --nav-tag-color: var(--text-faint, rgb(20, 20, 20));
+  --nav-tag-radius: var(--radius-s, 2px);
+  --pdf-background: var(--background-primary, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)));
+  --pdf-page-background: var(--background-primary, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)));
+  --pdf-sidebar-background: var(--background-primary, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)));
+  --pill-border-color: var(--background-modifier-border, rgba(20, 19, 19, 0.172));
+  --pill-border-color-hover: var(--background-modifier-border-hover, #d5d0d034);
+  --pill-color-hover: var(--text-normal, rgb(20, 20, 20));
+  --pill-color-remove: var(--text-faint, rgb(20, 20, 20));
+  --popover-font-size: var(--font-text-size, 0.9em);
   --popover-height: 300px;
-  --prompt-background: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
-  --prompt-border-color: #d5d0d034;
+  --prompt-background: var(--background-primary, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)));
   --radius-s: 2px;
-  --raised-background: color-mix(in srgb, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)) 65%, transparent) linear-gradient(linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)), color-mix(in srgb, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)) 65%, transparent));
-  --ribbon-background: linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2));
-  --ribbon-background-collapsed: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
-  --search-result-background: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
-  --setting-group-heading-color: rgb(20, 20, 20);
-  --setting-items-background: #f7f7f7c1;
-  --setting-items-border-color: rgba(20, 19, 19, 0.172);
-  --shiki-code-background: #f7f7f7c1;
-  --shiki-code-block-border-radius: 2px;
-  --shiki-code-comment: rgb(20, 20, 20);
-  --shiki-gutter-border-color: rgba(20, 19, 19, 0.172);
-  --shiki-gutter-text-color: rgb(20, 20, 20);
-  --shiki-terminal-dots-color: rgb(20, 20, 20);
-  --slider-thumb-border-color: #d5d0d034;
-  --slider-thumb-radius: 0px;
-  --slider-track-background: rgba(20, 19, 19, 0.172);
-  --status-bar-background: rgb(170, 170, 170);
-  --status-bar-border-color: rgba(20, 20, 20, 0.2);
-  --status-bar-border-width: 1px;
-  --status-bar-radius: 2px;
-  --suggestion-background: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
-  --tab-background-active: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
-  --tab-container-background: linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2));
-  --tab-divider-color: #d5d0d034;
-  --tab-outline-color: rgba(20, 19, 19, 0.172);
-  --tab-radius: 2px;
+  --raised-background: var(--blur-background, color-mix(in srgb, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)) 65%, transparent) linear-gradient(linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)), color-mix(in srgb, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)) 65%, transparent)));
+  --ribbon-background: var(--background-secondary, linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2)));
+  --ribbon-background-collapsed: var(--background-primary, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)));
+  --search-result-background: var(--background-primary, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)));
+  --setting-group-heading-color: var(--text-normal, rgb(20, 20, 20));
+  --setting-items-background: var(--background-primary-alt, #f7f7f7c1);
+  --setting-items-border-color: var(--background-modifier-border, rgba(20, 19, 19, 0.172));
+  --shiki-code-background: var(--code-background, #f7f7f7c1);
+  --shiki-code-block-border-radius: var(--code-radius, 2px);
+  --shiki-code-comment: var(--text-faint, rgb(20, 20, 20));
+  --shiki-gutter-border-color: var(--background-modifier-border, rgba(20, 19, 19, 0.172));
+  --shiki-gutter-text-color: var(--text-faint, rgb(20, 20, 20));
+  --shiki-terminal-dots-color: var(--text-faint, rgb(20, 20, 20));
+  --slider-thumb-border-color: var(--background-modifier-border-hover, #d5d0d034);
+  --slider-thumb-radius: var(--slider-thumb-height, 0px);
+  --slider-track-background: var(--background-modifier-border, rgba(20, 19, 19, 0.172));
+  --status-bar-background: var(--modal-background, rgb(170, 170, 170));
+  --status-bar-border-color: var(--line-color, rgba(20, 20, 20, 0.2));
+  --status-bar-border-width: var(--border-width, 1px);
+  --status-bar-radius: var(--radius-s, 2px);
+  --suggestion-background: var(--background-primary, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)));
+  --tab-background-active: var(--background-primary, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)));
+  --tab-container-background: var(--background-secondary, linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2)));
+  --tab-divider-color: var(--background-modifier-border-hover, #d5d0d034);
+  --tab-outline-color: var(--divider-color, rgba(20, 19, 19, 0.172));
+  --tab-radius: var(--radius-s, 2px);
   --tab-radius-active: 0px;
-  --tab-switcher-background: linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2));
-  --tab-switcher-menubar-background: linear-gradient(to top, linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2)), transparent);
-  --tab-text-color: rgb(20, 20, 20);
-  --tab-text-color-focused-active-current: rgb(20, 20, 20);
-  --table-add-button-border-color: rgba(20, 19, 19, 0.172);
-  --table-border-color: rgba(20, 19, 19, 0.172);
-  --table-column-first-border-width: 0;
-  --table-column-last-border-width: 0;
-  --table-drag-handle-color: rgb(20, 20, 20);
-  --table-header-border-color: rgba(20, 19, 19, 0.172);
-  --table-header-border-width: 0;
-  --table-header-color: rgb(20, 20, 20);
-  --table-header-weight: 900;
+  --tab-switcher-background: var(--background-secondary, linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2)));
+  --tab-text-color: var(--text-faint, rgb(20, 20, 20));
+  --tab-text-color-focused-active-current: var(--text-normal, rgb(20, 20, 20));
+  --table-add-button-border-color: var(--background-modifier-border, rgba(20, 19, 19, 0.172));
+  --table-border-color: var(--background-modifier-border, rgba(20, 19, 19, 0.172));
+  --table-column-first-border-width: var(--table-border-width, 0);
+  --table-column-last-border-width: var(--table-border-width, 0);
+  --table-drag-handle-color: var(--text-faint, rgb(20, 20, 20));
+  --table-header-border-color: var(--table-border-color, rgba(20, 19, 19, 0.172));
+  --table-header-border-width: var(--table-border-width, 0);
+  --table-header-color: var(--text-normal, rgb(20, 20, 20));
   --table-last-border-width: 0;
-  --table-row-last-border-width: 0;
-  --tag-background: rgba(55, 0, 255, 0.2);
-  --tag-color: rgb(55, 0, 255);
-  --text-faint: rgb(20, 20, 20);
-  --text-highlight-bg: rgba(55, 0, 255, 0.2);
-  --text-normal: rgb(20, 20, 20);
-  --text-selection: rgba(55, 0, 255, 0.2);
-  --textHighlight: var(--text-highlight-bg, rgba(55, 0, 255, 0.2));
-  --titleFont: var(--font-text, Noto Serif KR, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --titlebar-background: linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2));
-  --titlebar-background-focused: #d5d0d034;
-  --titlebar-border-color: rgba(20, 19, 19, 0.172);
-  --titlebar-text-color-focused: rgb(20, 20, 20);
+  --table-row-last-border-width: var(--table-border-width, 0);
+  --tag-background: rgba(var(--accent-color), 0.2);
+  --tag-color: rgb(var(--accent-color));
+  --text-faint: var(--color-base-50, rgb(20, 20, 20));
+  --text-highlight-bg: rgba(var(--accent-color), 0.2);
+  --text-normal: var(--color-base-100, rgb(20, 20, 20));
+  --text-selection: rgba(var(--accent-color), 0.2);
+  --textHighlight: var(--text-highlight-bg, rgba(var(--accent-color), 0.2));
+  --titleFont: var(--font-text-theme, 'Noto Serif KR', serif);
+  --titlebar-background: var(--background-secondary, linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2)));
+  --titlebar-background-focused: var(--background-secondary-alt, #d5d0d034);
+  --titlebar-border-color: var(--background-modifier-border, rgba(20, 19, 19, 0.172));
+  --titlebar-text-color-focused: var(--text-normal, rgb(20, 20, 20));
   --toggle-radius: 0px;
   --toggle-thumb-radius: 0px;
-  --vault-profile-color: rgb(20, 20, 20);
-  --vault-profile-color-hover: rgb(20, 20, 20);
+  --vault-profile-color: var(--text-normal, rgb(20, 20, 20));
+  --vault-profile-color-hover: var(--vault-profile-color, rgb(20, 20, 20));
   --quartz-icon-color: currentColor;
 }
 
@@ -314,17 +296,17 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   color: rgb(20, 20, 20);
 }
 
 html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-primary, rgba(0, 0, 0, 0));
   color: rgb(20, 20, 20);
 }
 
 html body .page > div#quartz-body div.sidebar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   color: rgb(20, 20, 20);
 }
 
@@ -333,43 +315,41 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgba(20, 19, 19, 0.173);
   color: rgb(20, 20, 20);
 }`,
     typography: `html body .markdown-rendered p > b, html b {
-  color: rgb(20, 20, 20);
+  color: var(--bold-color, rgb(20, 20, 20));
   font-family: "??", "Noto Serif KR", serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 900;
   outline: rgb(20, 20, 20) none 0px;
   text-decoration-color: rgb(20, 20, 20);
 }
 
 html body .markdown-rendered p > em, html em {
-  color: rgb(20, 20, 20);
+  color: var(--italic-color, rgb(20, 20, 20));
   font-family: "??", "Noto Serif KR", serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(20, 20, 20) none 0px;
   text-decoration-color: rgb(20, 20, 20);
 }
 
 html body .markdown-rendered p > i, html i {
-  color: rgb(20, 20, 20);
+  color: var(--italic-color, rgb(20, 20, 20));
   font-family: "??", "Noto Serif KR", serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(20, 20, 20) none 0px;
   text-decoration-color: rgb(20, 20, 20);
 }
 
 html body .markdown-rendered p > strong, html strong {
-  color: rgb(20, 20, 20);
+  color: var(--bold-color, rgb(20, 20, 20));
   font-family: "??", "Noto Serif KR", serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 900;
   outline: rgb(20, 20, 20) none 0px;
   text-decoration-color: rgb(20, 20, 20);
 }
 
 html body .text-highlight {
-  background-color: rgba(55, 0, 255, 0.2);
-  color: rgb(20, 20, 20);
+  background-color: var(--text-highlight-bg, rgba(55, 0, 255, 0.2));
+  color: var(--text-normal, rgb(20, 20, 20));
   font-family: "??", "Noto Serif KR", serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(20, 20, 20) none 0px;
   text-decoration-color: rgb(20, 20, 20);
@@ -385,7 +365,7 @@ html body del {
 }
 
 html body h1.article-title {
-  color: rgb(20, 20, 20);
+  color: var(--text-normal, rgb(20, 20, 20));
 }
 
 html body li.task-list-item input[type="checkbox"] {
@@ -394,7 +374,7 @@ html body li.task-list-item input[type="checkbox"] {
 }
 
 html body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgba(152, 151, 151, 0.765);
+  background-color: var(--checkbox-color, rgba(152, 151, 151, 0.765));
   border-color: rgba(152, 151, 151, 0.765);
 }
 
@@ -402,30 +382,30 @@ html body p {
   font-family: "??", Pretendard-Regular, serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     links: `html body a.external-link, html footer a {
-  color: rgb(55, 0, 255);
+  color: var(--link-external-color, rgb(55, 0, 255));
   font-family: "??", "Noto Serif KR", serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(55, 0, 255) none 0px;
   text-decoration: underline 1px;
   text-decoration-color: rgb(55, 0, 255);
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: var(--link-decoration-thickness, 1px);
 }
 
 html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(55, 0, 255);
+  color: var(--link-color, rgb(55, 0, 255));
   font-family: "??", "Noto Serif KR", serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(55, 0, 255) none 0px;
   text-decoration: underline 1px;
   text-decoration-color: rgb(55, 0, 255);
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: var(--link-decoration-thickness, 1px);
 }
 
 html body a.internal-link.broken {
-  color: rgb(55, 0, 255);
+  color: var(--link-unresolved-color, rgb(55, 0, 255));
   font-family: "??", "Noto Serif KR", serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(55, 0, 255) none 0px;
   text-decoration: underline 1px rgb(55, 0, 255);
-  text-decoration-color: rgb(55, 0, 255);
-  text-decoration-thickness: 1px;
+  text-decoration-color: var(--link-unresolved-decoration-color, rgb(55, 0, 255));
+  text-decoration-thickness: var(--link-decoration-thickness, 1px);
 }`,
     lists: `html body dd {
   color: rgb(20, 20, 20);
@@ -450,12 +430,12 @@ html body ul.overflow {
   border-top-color: rgb(20, 20, 20);
 }`,
     blockquotes: `html body .data-footnote-backref {
-  color: rgb(20, 20, 20);
+  color: var(--text-faint, rgb(20, 20, 20));
 }
 
 html body blockquote {
   font-family: "??", "Noto Serif KR", serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-style: italic;
+  font-style: var(--blockquote-font-style, italic);
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(20, 20, 20);
@@ -473,24 +453,24 @@ html body table {
 html body td {
   border-bottom-color: rgba(20, 19, 19, 0.173);
   border-left-color: rgba(20, 19, 19, 0.173);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: rgba(20, 19, 19, 0.173);
   border-top-color: rgba(20, 19, 19, 0.173);
-  color: rgb(20, 20, 20);
+  color: var(--table-text-color, rgb(20, 20, 20));
 }
 
 html body th {
   border-bottom-color: rgba(20, 19, 19, 0.173);
   border-left-color: rgba(20, 19, 19, 0.173);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: rgba(20, 19, 19, 0.173);
   border-top-color: rgba(20, 19, 19, 0.173);
-  border-top-width: 0px;
-  color: rgb(20, 20, 20);
-  font-weight: 900;
+  border-top-width: var(--table-header-border-width, 0px);
+  color: var(--table-header-color, rgb(20, 20, 20));
+  font-weight: var(--table-header-weight, 900);
 }`,
     code: `html body code {
-  background-color: rgba(247, 247, 247, 0.757);
+  background-color: var(--code-background, rgba(247, 247, 247, 0.757));
   border-bottom-color: rgba(20, 19, 19, 0.173);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -499,11 +479,11 @@ html body th {
   border-top-color: rgba(20, 19, 19, 0.173);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  color: rgb(51, 61, 64);
+  color: var(--code-normal, rgb(51, 61, 64));
 }
 
 html body pre:has(> code) {
-  background-color: rgba(247, 247, 247, 0.757);
+  background-color: var(--code-background, rgba(247, 247, 247, 0.757));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -554,7 +534,7 @@ html body video {
   border-top-color: rgb(20, 20, 20);
 }`,
     embeds: `html body .file-embed {
-  background-color: rgba(247, 247, 247, 0.757);
+  background-color: var(--background-primary-alt, rgba(247, 247, 247, 0.757));
 }
 
 html body .footnotes {
@@ -591,6 +571,266 @@ html body input[type=checkbox] {
   border-top-color: rgb(20, 20, 20);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+}
+
+html body li.task-list-item[data-task="#"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="$"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="%"] {
+  color: rgb(20, 20, 20);
+}
+
+html li.task-list-item[data-task="body"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="'"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="+"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task=", html "] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="."] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="0"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="1"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="2"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="3"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="4"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="5"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="6"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="7"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="8"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="9"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task=":"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task=";"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="<"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="="] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="@"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="A"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="B"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="C"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="D"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="E"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="F"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="G"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="H"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="J"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="K"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="L"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="M"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="N"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="O"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="P"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="Q"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="R"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="T"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="U"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="V"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="W"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="Y"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="Z"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="_"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="\`"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="a"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="e"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="g"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="h"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="j"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="m"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="n"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="o"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="q"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="r"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="s"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="t"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="v"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="y"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="z"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="|"] {
+  color: rgb(20, 20, 20);
+}
+
+html body li.task-list-item[data-task="~"] {
+  color: rgb(20, 20, 20);
 }
 
 html body li.task-list-item[data-task='!'] {
@@ -878,12 +1118,11 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
   border-left-color: rgb(55, 0, 255);
   border-right-color: rgb(55, 0, 255);
   border-top-color: rgb(55, 0, 255);
-  color: rgb(55, 0, 255);
 }
 
 html body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(55, 0, 255);
-  font-weight: 900;
+  color: var(--callout-title-color, rgb(55, 0, 255));
+  font-weight: var(--font-weight, 900);
 }
 
 html body .callout > .callout-content {
@@ -891,9 +1130,8 @@ html body .callout > .callout-content {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 0, 142, 123;
+  --callout-color: var(--callout-summary, 0, 142, 123);
   background: rgba(0, 142, 123, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 142, 123, 0.1);
   border-bottom-color: rgb(0, 142, 123);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -915,12 +1153,11 @@ html body .callout[data-callout="abstract"] .callout-title {
   border-left-color: rgb(55, 0, 255);
   border-right-color: rgb(55, 0, 255);
   border-top-color: rgb(55, 0, 255);
-  color: rgb(55, 0, 255);
 }
 
 html body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(55, 0, 255);
-  font-weight: 900;
+  color: var(--callout-title-color, rgb(55, 0, 255));
+  font-weight: var(--font-weight, 900);
 }
 
 html body .callout[data-callout="abstract"] > .callout-content {
@@ -928,9 +1165,8 @@ html body .callout[data-callout="abstract"] > .callout-content {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 149, 0, 0;
+  --callout-color: var(--callout-bug, 149, 0, 0);
   background: rgba(149, 0, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(149, 0, 0, 0.1);
   border-bottom-color: rgb(149, 0, 0);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -952,12 +1188,11 @@ html body .callout[data-callout="bug"] .callout-title {
   border-left-color: rgb(55, 0, 255);
   border-right-color: rgb(55, 0, 255);
   border-top-color: rgb(55, 0, 255);
-  color: rgb(55, 0, 255);
 }
 
 html body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(55, 0, 255);
-  font-weight: 900;
+  color: var(--callout-title-color, rgb(55, 0, 255));
+  font-weight: var(--font-weight, 900);
 }
 
 html body .callout[data-callout="bug"] > .callout-content {
@@ -965,9 +1200,260 @@ html body .callout[data-callout="bug"] > .callout-content {
 }
 
 html body .callout[data-callout="callout"] {
-  --callout-color: 55, 0, 255;
-  --table-border-color: color-mix(in srgb, rgb(55, 0, 255) 25%, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)) 50%);
-  background-color: rgba(55, 0, 255, 0.1);
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+  --background-modifier-border: rgba(20, 19, 19, 0.172);
+  --background-modifier-border-focus: #d5d0d034;
+  --background-modifier-border-hover: #d5d0d034;
+  --background-modifier-error: #e93147;
+  --background-modifier-error-hover: #e93147;
+  --background-modifier-error-rgb: 233, 49, 71;
+  --background-modifier-form-field: #f7f7f730;
+  --background-modifier-form-field-hover: #f7f7f730;
+  --background-modifier-hover: rgba(0, 0, 0, 0.067);
+  --background-modifier-success: #08b94e;
+  --background-modifier-success-rgb: 8, 185, 78;
+  --background-primary: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
+  --background-primary-alt: #f7f7f7c1;
+  --background-secondary: linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2));
+  --background-secondary-alt: #d5d0d034;
+  --bg-color: rgba(170, 170, 170, 0);
+  --blockquote-border-color: rgba(55, 0, 255, 0.6);
+  --blur-background: color-mix(in srgb, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)) 65%, transparent) linear-gradient(linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)), color-mix(in srgb, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)) 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 900;
+  --button-corner-shape: round;
+  --button-radius: 2px;
+  --callout-blend-mode: multiply;
+  --callout-bug: 233, 49, 71;
+  --callout-color: var(--accent-color, 55, 0, 255);
+  --callout-default: 8, 109, 221;
+  --callout-error: 233, 49, 71;
+  --callout-example: 120, 82, 238;
+  --callout-fail: 233, 49, 71;
+  --callout-important: 0, 191, 188;
+  --callout-info: 8, 109, 221;
+  --callout-padding: 15px 20px;
+  --callout-question: 236, 117, 0;
+  --callout-radius: 20px;
+  --callout-success: 8, 185, 78;
+  --callout-summary: 0, 191, 188;
+  --callout-tip: 0, 191, 188;
+  --callout-title-weight: 900;
+  --callout-todo: 8, 109, 221;
+  --callout-warning: 236, 117, 0;
+  --canvas-background: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 2px;
+  --canvas-dot-pattern: rgba(20, 19, 19, 0.172);
+  --caret-color: rgb(20, 20, 20);
+  --checkbox-border-color: rgb(20, 20, 20);
+  --checkbox-border-color-hover: #5c5c5c;
+  --checkbox-color: rgba(152, 151, 151, 0.766);
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+  --checkbox-marker-color: rgb(101, 101, 101);
+  --checkbox-radius: 0px;
+  --checkbox-size: 16px;
+  --checklist-done-color: #5c5c5c;
+  --clickable-icon-radius: 2px;
+  --code-background: #f7f7f7c1;
+  --code-border-color: rgba(20, 19, 19, 0.172);
+  --code-bracket-background: rgba(0, 0, 0, 0.067);
+  --code-comment: #5b6a6a;
+  --code-function: #b500e7;
+  --code-important: #d64609;
+  --code-keyword: #098800;
+  --code-normal: #333d40;
+  --code-operator: #c45b00;
+  --code-property: #333d40;
+  --code-punctuation: #00b4f0;
+  --code-radius: 2px;
+  --code-size: 0.875em;
+  --code-string: #b58900;
+  --code-tag: #dc322f;
+  --code-value: rgb(55, 0, 255);
+  --collapse-icon-color: rgb(20, 20, 20);
+  --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
+  --color-accent: hsl(258, 88%, 66%);
+  --color-accent-1: hsl(257, 88.88%, 70.95%);
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
+  --color-accent-hsl: 258, 88%, 66%;
+  --divider-color: rgba(20, 19, 19, 0.172);
+  --divider-color-hover: hsl(257, 88.88%, 70.95%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #f7f7f730;
+  --dropdown-background-hover: #f7f7f7c1;
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #f7f7f730;
+  --flair-color: rgb(20, 20, 20);
+  --font-interface: '??', 'Pretendard-Regular', serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-mermaid: '??', 'Noto Serif KR', serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-print: '??', '??', 'Noto Serif KR', serif, 'Arial';
+  --font-text: '??', 'Noto Serif KR', serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-weight: 400;
+  --graph-line: rgba(20, 20, 20, 0.2);
+  --graph-node: #5c5c5c;
+  --graph-node-attachment: #e0ac00;
+  --graph-node-focused: hsl(258, 88%, 66%);
+  --graph-node-tag: #08b94e;
+  --graph-node-unresolved: rgb(20, 20, 20);
+  --graph-text: rgb(20, 20, 20);
+  --h5-line-height: 2em;
+  --h6-line-height: 2em;
+  --heading-formatting: rgb(20, 20, 20);
+  --heading-spacing: 2.5rem;
+  --hr-color: rgba(20, 20, 20, 0.2);
+  --hr-thickness: 1px;
+  --interactive-accent: hsl(257, 88.88%, 70.95%);
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
+  --interactive-accent-hsl: 258, 88%, 66%;
+  --interactive-hover: #f7f7f7c1;
+  --interactive-normal: #f7f7f730;
+  --link-color: rgb(55, 0, 255);
+  --link-color-hover: hsl(255, 89.76%, 75.9%);
+  --link-external-color: rgb(55, 0, 255);
+  --link-external-color-hover: hsl(255, 89.76%, 75.9%);
+  --link-unresolved-color: rgb(55, 0, 255);
+  --link-unresolved-decoration-color: rgb(55, 0, 255);
+  --link-weight: 400;
+  --list-indent: 2em;
+  --menu-background: linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2));
+  --menu-border-color: #d5d0d034;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+  --pdf-background: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
+  --pdf-page-background: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
+  --pdf-sidebar-background: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
+  --popover-font-size: 0.9em;
+  --raised-background: color-mix(in srgb, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)) 65%, transparent) linear-gradient(linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)), color-mix(in srgb, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)) 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --raised-shadow: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent;
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --search-clear-button-color: #5c5c5c;
+  --search-icon-color: #5c5c5c;
+  --search-result-background: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
+  --setting-group-heading-color: rgb(20, 20, 20);
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #f7f7f7c1;
+  --setting-items-border-color: rgba(20, 19, 19, 0.172);
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent;
+  --shiki-active-tab-border-color: #5c5c5c;
+  --shiki-code-background: #f7f7f7c1;
+  --shiki-code-block-border-radius: 2px;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: rgb(20, 20, 20);
+  --shiki-code-function: #08b94e;
+  --shiki-code-important: #ec7500;
+  --shiki-code-keyword: #d53984;
+  --shiki-code-normal: #5c5c5c;
+  --shiki-code-property: #00bfbc;
+  --shiki-code-punctuation: #5c5c5c;
+  --shiki-code-string: #e0ac00;
+  --shiki-code-value: #7852ee;
+  --shiki-gutter-border-color: rgba(20, 19, 19, 0.172);
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: rgb(20, 20, 20);
+  --shiki-gutter-text-color-highlight: #5c5c5c;
+  --shiki-highlight-green: rgba(8, 185, 78, 0.5);
+  --shiki-highlight-green-background: rgba(8, 185, 78, 0.1);
+  --shiki-highlight-neutral: #5c5c5c;
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
+  --shiki-highlight-red: rgba(233, 49, 71, 0.5);
+  --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
+  --shiki-terminal-dots-color: rgb(20, 20, 20);
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
+  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  --sync-avatar-color-1: #e93147;
+  --sync-avatar-color-2: #ec7500;
+  --sync-avatar-color-3: #e0ac00;
+  --sync-avatar-color-4: #08b94e;
+  --sync-avatar-color-5: #00bfbc;
+  --sync-avatar-color-6: #086ddd;
+  --sync-avatar-color-7: #7852ee;
+  --sync-avatar-color-8: #d53984;
+  --tab-background-active: linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2));
+  --tab-divider-color: #d5d0d034;
+  --tab-font-size: 13px;
+  --tab-outline-color: rgba(20, 19, 19, 0.172);
+  --tab-radius: 2px;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2));
+  --tab-switcher-menubar-background: linear-gradient(to top, linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2)), transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
+  --tab-text-color: rgb(20, 20, 20);
+  --tab-text-color-active: #5c5c5c;
+  --tab-text-color-focused: #5c5c5c;
+  --tab-text-color-focused-active: #5c5c5c;
+  --tab-text-color-focused-active-current: rgb(20, 20, 20);
+  --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+  --table-add-button-border-color: rgba(20, 19, 19, 0.172);
+  --table-add-button-border-width: 1px;
+  --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 0;
+  --table-column-last-border-width: 0;
+  --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
+  --table-drag-handle-color: rgb(20, 20, 20);
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: rgba(20, 19, 19, 0.172);
+  --table-header-border-width: 0;
+  --table-header-color: rgb(20, 20, 20);
+  --table-header-size: 16px;
+  --table-header-weight: 900;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 0;
+  --table-selection: hsla(258, 88%, 66%, 0.1);
+  --table-selection-blend-mode: darken;
+  --table-selection-border-color: hsl(257, 88.88%, 70.95%);
+  --table-text-size: 16px;
+  --tag-background: rgba(55, 0, 255, 0.2);
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2);
+  --tag-border-color: hsla(258, 88%, 66%, 0.15);
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
+  --tag-color: rgb(55, 0, 255);
+  --tag-color-hover: hsl(258, 88%, 66%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(258, 88%, 66%);
+  --text-accent-hover: hsl(255, 89.76%, 75.9%);
+  --text-error: #e93147;
+  --text-faint: rgb(20, 20, 20);
+  --text-highlight-bg: rgba(55, 0, 255, 0.2);
+  --text-muted: #5c5c5c;
+  --text-normal: rgb(20, 20, 20);
+  --text-selection: rgba(55, 0, 255, 0.2);
+  --text-success: #08b94e;
+  --text-warning: #ec7500;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
+  background-color: rgba(var(--callout-color), 0.1);
   border-bottom-color: rgb(55, 0, 255);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -998,9 +1484,8 @@ html body .callout[data-callout="callout"] {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 149, 0, 0;
+  --callout-color: var(--callout-error, 149, 0, 0);
   background: rgba(149, 0, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(149, 0, 0, 0.1);
   border-bottom-color: rgb(149, 0, 0);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1022,12 +1507,11 @@ html body .callout[data-callout="danger"] .callout-title {
   border-left-color: rgb(55, 0, 255);
   border-right-color: rgb(55, 0, 255);
   border-top-color: rgb(55, 0, 255);
-  color: rgb(55, 0, 255);
 }
 
 html body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(55, 0, 255);
-  font-weight: 900;
+  color: var(--callout-title-color, rgb(55, 0, 255));
+  font-weight: var(--font-weight, 900);
 }
 
 html body .callout[data-callout="danger"] > .callout-content {
@@ -1035,7 +1519,7 @@ html body .callout[data-callout="danger"] > .callout-content {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 120, 82, 238;
+  --callout-color: var(--callout-example, 120, 82, 238);
   border-bottom-color: rgb(120, 82, 238);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1057,12 +1541,11 @@ html body .callout[data-callout="example"] .callout-title {
   border-left-color: rgb(55, 0, 255);
   border-right-color: rgb(55, 0, 255);
   border-top-color: rgb(55, 0, 255);
-  color: rgb(55, 0, 255);
 }
 
 html body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(55, 0, 255);
-  font-weight: 900;
+  color: var(--callout-title-color, rgb(55, 0, 255));
+  font-weight: var(--font-weight, 900);
 }
 
 html body .callout[data-callout="example"] > .callout-content {
@@ -1070,9 +1553,8 @@ html body .callout[data-callout="example"] > .callout-content {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 149, 0, 0;
+  --callout-color: var(--callout-fail, 149, 0, 0);
   background: rgba(149, 0, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(149, 0, 0, 0.1);
   border-bottom-color: rgb(149, 0, 0);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1094,12 +1576,11 @@ html body .callout[data-callout="failure"] .callout-title {
   border-left-color: rgb(55, 0, 255);
   border-right-color: rgb(55, 0, 255);
   border-top-color: rgb(55, 0, 255);
-  color: rgb(55, 0, 255);
 }
 
 html body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(55, 0, 255);
-  font-weight: 900;
+  color: var(--callout-title-color, rgb(55, 0, 255));
+  font-weight: var(--font-weight, 900);
 }
 
 html body .callout[data-callout="failure"] > .callout-content {
@@ -1107,7 +1588,7 @@ html body .callout[data-callout="failure"] > .callout-content {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-info, 8, 109, 221);
   border-bottom-color: rgb(8, 109, 221);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1129,12 +1610,11 @@ html body .callout[data-callout="info"] .callout-title {
   border-left-color: rgb(55, 0, 255);
   border-right-color: rgb(55, 0, 255);
   border-top-color: rgb(55, 0, 255);
-  color: rgb(55, 0, 255);
 }
 
 html body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(55, 0, 255);
-  font-weight: 900;
+  color: var(--callout-title-color, rgb(55, 0, 255));
+  font-weight: var(--font-weight, 900);
 }
 
 html body .callout[data-callout="info"] > .callout-content {
@@ -1142,9 +1622,8 @@ html body .callout[data-callout="info"] > .callout-content {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 55, 0, 255;
+  --callout-color: var(--accent-color, 55, 0, 255);
   background: rgba(55, 0, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(55, 0, 255, 0.1);
   border-bottom-color: rgb(55, 0, 255);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1166,12 +1645,11 @@ html body .callout[data-callout="note"] .callout-title {
   border-left-color: rgb(55, 0, 255);
   border-right-color: rgb(55, 0, 255);
   border-top-color: rgb(55, 0, 255);
-  color: rgb(55, 0, 255);
 }
 
 html body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(55, 0, 255);
-  font-weight: 900;
+  color: var(--callout-title-color, rgb(55, 0, 255));
+  font-weight: var(--font-weight, 900);
 }
 
 html body .callout[data-callout="note"] > .callout-content {
@@ -1179,9 +1657,8 @@ html body .callout[data-callout="note"] > .callout-content {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 149, 92, 0;
+  --callout-color: var(--callout-question, 149, 92, 0);
   background: rgba(149, 92, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(149, 92, 0, 0.1);
   border-bottom-color: rgb(149, 92, 0);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1203,12 +1680,11 @@ html body .callout[data-callout="question"] .callout-title {
   border-left-color: rgb(55, 0, 255);
   border-right-color: rgb(55, 0, 255);
   border-top-color: rgb(55, 0, 255);
-  color: rgb(55, 0, 255);
 }
 
 html body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(55, 0, 255);
-  font-weight: 900;
+  color: var(--callout-title-color, rgb(55, 0, 255));
+  font-weight: var(--font-weight, 900);
 }
 
 html body .callout[data-callout="question"] > .callout-content {
@@ -1216,7 +1692,7 @@ html body .callout[data-callout="question"] > .callout-content {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   border-bottom-color: rgb(158, 158, 158);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1238,12 +1714,11 @@ html body .callout[data-callout="quote"] .callout-title {
   border-left-color: rgb(55, 0, 255);
   border-right-color: rgb(55, 0, 255);
   border-top-color: rgb(55, 0, 255);
-  color: rgb(55, 0, 255);
 }
 
 html body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(55, 0, 255);
-  font-weight: 900;
+  color: var(--callout-title-color, rgb(55, 0, 255));
+  font-weight: var(--font-weight, 900);
 }
 
 html body .callout[data-callout="quote"] > .callout-content {
@@ -1251,9 +1726,8 @@ html body .callout[data-callout="quote"] > .callout-content {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 0, 124, 37;
+  --callout-color: var(--callout-success, 0, 124, 37);
   background: rgba(0, 124, 37, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 124, 37, 0.1);
   border-bottom-color: rgb(0, 124, 37);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1275,12 +1749,11 @@ html body .callout[data-callout="success"] .callout-title {
   border-left-color: rgb(55, 0, 255);
   border-right-color: rgb(55, 0, 255);
   border-top-color: rgb(55, 0, 255);
-  color: rgb(55, 0, 255);
 }
 
 html body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(55, 0, 255);
-  font-weight: 900;
+  color: var(--callout-title-color, rgb(55, 0, 255));
+  font-weight: var(--font-weight, 900);
 }
 
 html body .callout[data-callout="success"] > .callout-content {
@@ -1288,9 +1761,8 @@ html body .callout[data-callout="success"] > .callout-content {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 0, 142, 123;
+  --callout-color: var(--callout-tip, 0, 142, 123);
   background: rgba(0, 142, 123, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 142, 123, 0.1);
   border-bottom-color: rgb(0, 142, 123);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1312,12 +1784,11 @@ html body .callout[data-callout="tip"] .callout-title {
   border-left-color: rgb(55, 0, 255);
   border-right-color: rgb(55, 0, 255);
   border-top-color: rgb(55, 0, 255);
-  color: rgb(55, 0, 255);
 }
 
 html body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(55, 0, 255);
-  font-weight: 900;
+  color: var(--callout-title-color, rgb(55, 0, 255));
+  font-weight: var(--font-weight, 900);
 }
 
 html body .callout[data-callout="tip"] > .callout-content {
@@ -1325,7 +1796,7 @@ html body .callout[data-callout="tip"] > .callout-content {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-todo, 8, 109, 221);
   border-bottom-color: rgb(8, 109, 221);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1347,12 +1818,11 @@ html body .callout[data-callout="todo"] .callout-title {
   border-left-color: rgb(55, 0, 255);
   border-right-color: rgb(55, 0, 255);
   border-top-color: rgb(55, 0, 255);
-  color: rgb(55, 0, 255);
 }
 
 html body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(55, 0, 255);
-  font-weight: 900;
+  color: var(--callout-title-color, rgb(55, 0, 255));
+  font-weight: var(--font-weight, 900);
 }
 
 html body .callout[data-callout="todo"] > .callout-content {
@@ -1360,9 +1830,8 @@ html body .callout[data-callout="todo"] > .callout-content {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 149, 92, 0;
+  --callout-color: var(--callout-warning, 149, 92, 0);
   background: rgba(149, 92, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(149, 92, 0, 0.1);
   border-bottom-color: rgb(149, 92, 0);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1384,12 +1853,11 @@ html body .callout[data-callout="warning"] .callout-title {
   border-left-color: rgb(55, 0, 255);
   border-right-color: rgb(55, 0, 255);
   border-top-color: rgb(55, 0, 255);
-  color: rgb(55, 0, 255);
 }
 
 html body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(55, 0, 255);
-  font-weight: 900;
+  color: var(--callout-title-color, rgb(55, 0, 255));
+  font-weight: var(--font-weight, 900);
 }
 
 html body .callout[data-callout="warning"] > .callout-content {
@@ -1465,12 +1933,12 @@ html body .callout[data-callout="warning"] {
   border-top-color: rgba(20, 19, 19, 0.173);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(20, 20, 20);
+  color: var(--text-normal, rgb(20, 20, 20));
   font-family: "??", Pretendard-Regular, serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body .search > .search-container > .search-space {
-  background-color: rgb(170, 170, 170);
+  background-color: var(--modal-color, rgb(170, 170, 170));
   border-bottom-color: rgba(213, 208, 208, 0.204);
   border-left-color: rgba(213, 208, 208, 0.204);
   border-right-color: rgba(213, 208, 208, 0.204);
@@ -1543,7 +2011,7 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(55, 0, 255, 0.2);
+  background-color: var(--pill-background, rgba(55, 0, 255, 0.2));
   font-family: "??", Pretendard-Regular, serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -1552,43 +2020,43 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
-  color: rgb(20, 20, 20);
-  font-family: Pretendard-Bold;
+  color: var(--h1-color, rgb(20, 20, 20));
+  font-family: var(--h1-font, Pretendard-Bold);
 }
 
 html body h1.article-title {
-  color: rgb(20, 20, 20);
-  font-size: 56px;
+  color: var(--inline-title-color, rgb(20, 20, 20));
+  font-size: var(--inline-title-size, 56px);
 }
 
 html body h2 {
-  color: rgb(20, 20, 20);
-  font-family: Pretendard-Bold;
+  color: var(--h2-color, rgb(20, 20, 20));
+  font-family: var(--h2-font, Pretendard-Bold);
 }
 
 html body h2.page-title, html h2.page-title a {
-  color: rgb(20, 20, 20);
-  font-family: "ITC Slimbach Std", "Noto Serif KR";
+  color: var(--inline-title-color, rgb(20, 20, 20));
+  font-family: var(--inline-title-font, "ITC Slimbach Std", "Noto Serif KR");
 }
 
 html body h3 {
-  color: rgb(20, 20, 20);
-  font-family: Pretendard-Bold;
+  color: var(--h3-color, rgb(20, 20, 20));
+  font-family: var(--h3-font, Pretendard-Bold);
 }
 
 html body h4 {
-  color: rgb(20, 20, 20);
-  font-family: Pretendard-Bold;
+  color: var(--h4-color, rgb(20, 20, 20));
+  font-family: var(--h4-font, Pretendard-Bold);
 }
 
 html body h5 {
-  color: rgb(20, 20, 20);
-  font-family: Pretendard-Bold;
+  color: var(--h5-color, rgb(20, 20, 20));
+  font-family: var(--h5-font, Pretendard-Bold);
 }
 
 html body h6 {
-  color: rgb(20, 20, 20);
-  font-family: Pretendard-Bold;
+  color: var(--h6-color, rgb(20, 20, 20));
+  font-family: var(--h6-font, Pretendard-Bold);
 }
 
 html body hr {
@@ -1597,7 +2065,7 @@ html body hr {
   border-right-color: rgba(20, 19, 19, 0.173);
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 55, 0, 255;
+  --callout-color: var(--accent-color, 55, 0, 255);
   border-bottom-color: rgb(55, 0, 255);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1632,7 +2100,7 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-top-right-radius: 2px;
 }`,
     footer: `html body footer {
-  background-color: rgb(170, 170, 170);
+  background-color: var(--status-bar-background, rgb(170, 170, 170));
   border-bottom-color: rgba(20, 20, 20, 0.2);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1692,7 +2160,7 @@ html body ul.section-ul {
 }
 
 html body .breadcrumb-element p {
-  color: rgb(20, 20, 20);
+  color: var(--text-faint, rgb(20, 20, 20));
   font-family: "??", Pretendard-Regular, serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     canvas: `html body .canvas-node {
@@ -1704,7 +2172,7 @@ html body .canvas-node-content {
 }
 
 html body .canvas-node-file {
-  color: rgb(20, 20, 20);
+  color: var(--text-normal, rgb(20, 20, 20));
 }
 
 html body .canvas-node-group {
@@ -1712,16 +2180,16 @@ html body .canvas-node-group {
 }
 
 html body .canvas-sidebar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-primary, rgba(0, 0, 0, 0));
   border-color: rgb(20, 20, 20);
 }`,
     bases: `html body .bases-table thead th {
   border-color: rgba(20, 19, 19, 0.173);
-  color: rgb(20, 20, 20);
-  font-weight: 900;
+  color: var(--table-header-color, rgb(20, 20, 20));
+  font-weight: var(--table-header-weight, 900);
 }`,
     properties: `html body .metadata {
-  background-color: rgba(20, 20, 20, 0.05);
+  background-color: var(--metadata-background, rgba(20, 20, 20, 0.05));
   border-bottom-color: rgba(20, 19, 19, 0.173);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -1742,19 +2210,19 @@ html body .metadata-properties {
 }
 
 html body .note-properties {
-  background-color: rgba(20, 20, 20, 0.05);
+  background-color: var(--metadata-background, rgba(20, 20, 20, 0.05));
   border-color: rgba(20, 19, 19, 0.173);
   border-radius: 10px;
 }
 
 html body .note-properties-tags {
-  background-color: rgba(55, 0, 255, 0.2);
-  color: rgb(55, 0, 255);
+  background-color: var(--pill-background, rgba(55, 0, 255, 0.2));
+  color: var(--pill-color, rgb(55, 0, 255));
 }
 
 html body div#quartz-root {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(20, 20, 20);
+  background-color: var(--background-primary, rgba(0, 0, 0, 0));
+  color: var(--text-normal, rgb(20, 20, 20));
 }
 
 html body ol.overflow {
@@ -1764,12 +2232,12 @@ html body ol.overflow {
   border-top-color: rgb(20, 20, 20);
 }`,
     stacked: `html body .stacked-page {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(20, 20, 20);
 }
 
 html body .stacked-page-header {
-  background-color: rgba(213, 208, 208, 0.204);
+  background-color: var(--tab-container-background, rgba(213, 208, 208, 0.204));
 }
 
 html body .stacked-page.active {
@@ -1784,11 +2252,11 @@ html body .stacked-page.active {
 }
 
 html body .navigation-progress {
-  background-color: rgb(170, 170, 170);
+  background-color: var(--status-bar-background, rgb(170, 170, 170));
 }
 
 html body .page-header h2.page-title {
-  color: rgb(20, 20, 20);
+  color: var(--text-normal, rgb(20, 20, 20));
   font-family: "??", Pretendard-Regular, serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -1808,7 +2276,7 @@ html body input[type=text] {
 }
 
 html body kbd {
-  background-color: rgba(247, 247, 247, 0.757);
+  background-color: var(--code-background, rgba(247, 247, 247, 0.757));
   border-bottom-color: rgb(51, 61, 64);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1817,7 +2285,7 @@ html body kbd {
   border-top-color: rgb(51, 61, 64);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  color: rgb(51, 61, 64);
+  color: var(--code-normal, rgb(51, 61, 64));
 }
 
 html body progress {
@@ -1840,8 +2308,8 @@ html body sup {
 }
 
 html body ul.tags > li {
-  background-color: rgba(55, 0, 255, 0.2);
-  color: rgb(55, 0, 255);
+  background-color: var(--tag-background, rgba(55, 0, 255, 0.2));
+  color: var(--tag-color, rgb(55, 0, 255));
 }`,
   },
 };

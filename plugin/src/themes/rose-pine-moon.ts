@@ -5,65 +5,60 @@ export const theme: ThemeData = {
   dark: {
     base: `:root:root {
   --background-accent: #232136;
-  --background-modifier-border: #e0def4;
+  --background-modifier-border: var(--color-base-30, #e0def4);
   --background-modifier-cover: rgba(0, 0, 0, 0.6);
-  --background-modifier-error: #eb6f92;
-  --background-modifier-error-hover: #eb6f92;
-  --background-modifier-error-rgb: 61, 0, 0;
-  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
+  --background-modifier-error: var(--color-red, #eb6f92);
+  --background-modifier-error-hover: var(--color-red, #eb6f92);
+  --background-modifier-error-rgb: var(--color-red-rgb, 61, 0, 0);
+  --background-modifier-form-field: var(--color-base-25, rgba(0, 0, 0, 0.2));
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
-  --background-modifier-form-field-hover: rgba(0, 0, 0, 0.2);
-  --background-modifier-success: #3e8fb0;
-  --background-primary: #232136;
-  --background-primary-alt: #2a273f;
-  --background-secondary: #312f44;
-  --background-secondary-alt: #393552;
-  --bases-cards-background: #232136;
-  --bases-cards-cover-background: #2a273f;
-  --bases-cards-shadow: 0 0 0 1px #e0def4;
-  --bases-embed-border-color: #e0def4;
-  --bases-group-heading-property-color: #e0def4;
-  --bases-table-border-color: #e0def4;
-  --bases-table-cell-background-active: #232136;
-  --bases-table-cell-background-disabled: #2a273f;
-  --bases-table-cell-shadow-focus: 0 0 0 2px #f6c177;
-  --bases-table-group-background: #2a273f;
-  --bases-table-header-background: #232136;
-  --bases-table-header-color: #e0def4;
-  --bases-table-summary-background: #232136;
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, rgba(0, 0, 0, 0.2));
+  --background-modifier-success: var(--color-green, #3e8fb0);
+  --background-primary: var(--color-base-00, #232136);
+  --background-primary-alt: var(--color-base-10, #2a273f);
+  --background-secondary: var(--color-base-20, #312f44);
+  --background-secondary-alt: var(--color-base-30, #393552);
+  --bases-cards-background: var(--background-primary, #232136);
+  --bases-cards-cover-background: var(--background-primary-alt, #2a273f);
+  --bases-embed-border-color: var(--background-modifier-border, #e0def4);
+  --bases-group-heading-property-color: var(--text-muted, #e0def4);
+  --bases-table-border-color: var(--table-border-color, #e0def4);
+  --bases-table-cell-background-active: var(--background-primary, #232136);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #2a273f);
+  --bases-table-group-background: var(--background-primary-alt, #2a273f);
+  --bases-table-header-background: var(--background-primary, #232136);
+  --bases-table-header-color: var(--text-muted, #e0def4);
+  --bases-table-summary-background: var(--background-primary, #232136);
   --blockquote-border: #eb6f92;
-  --blockquote-border-color: #f6c177;
-  --blur-background: color-mix(in srgb, #f6c177 65%, transparent) linear-gradient(#f6c177, color-mix(in srgb, #f6c177 65%, transparent));
+  --blockquote-border-color: var(--interactive-accent, #f6c177);
   --border-color: #2b2727;
-  --canvas-background: #232136;
-  --canvas-card-label-color: #eb6f92;
-  --caret-color: #e0def4;
-  --checkbox-border-color: #eb6f92;
-  --checkbox-border-color-hover: #e0def4;
-  --checkbox-color: #f6c177;
-  --checkbox-color-hover: #ea9a97;
-  --checkbox-marker-color: #232136;
-  --checklist-done-color: #e0def4;
-  --code-background: #2a273f;
+  --canvas-background: var(--background-primary, #232136);
+  --canvas-card-label-color: var(--text-faint, #eb6f92);
+  --caret-color: var(--text-normal, #e0def4);
+  --checkbox-border-color: var(--text-faint, #eb6f92);
+  --checkbox-border-color-hover: var(--text-muted, #e0def4);
+  --checkbox-color: var(--interactive-accent, #f6c177);
+  --checkbox-color-hover: var(--interactive-accent-hover, #ea9a97);
+  --checkbox-marker-color: var(--background-primary, #232136);
+  --checklist-done-color: var(--text-muted, #e0def4);
+  --code-background: var(--background-primary-alt, #2a273f);
   --code-block: #9ccfd8;
-  --code-border-color: #e0def4;
-  --code-comment: #eb6f92;
-  --code-normal: #e0def4;
-  --code-punctuation: #e0def4;
-  --collapse-icon-color: #eb6f92;
-  --collapse-icon-color-collapsed: #c4a7e7;
-  --dark: var(--text-normal, #e0def4);
-  --darkgray: var(--text-normal, #e0def4);
-  --divider-color: #e0def4;
-  --divider-color-hover: #f6c177;
-  --dropdown-background: #f6c177;
-  --dropdown-background-hover: #ea9a97;
-  --embed-block-shadow-hover: 0 0 0 1px #e0def4, inset 0 0 0 1px #e0def4;
-  --embed-border-start: 2px solid #f6c177;
-  --file-header-background: #232136;
-  --file-header-background-focused: #232136;
-  --flair-background: #f6c177;
-  --flair-color: #e0def4;
+  --code-border-color: var(--background-modifier-border, #e0def4);
+  --code-comment: var(--text-faint, #eb6f92);
+  --code-normal: var(--text-normal, #e0def4);
+  --code-punctuation: var(--text-muted, #e0def4);
+  --collapse-icon-color: var(--text-faint, #eb6f92);
+  --collapse-icon-color-collapsed: var(--text-accent, #c4a7e7);
+  --dark: var(--text-normal, var(--color-base-100, #e0def4));
+  --darkgray: var(--text-normal, var(--color-base-100, #e0def4));
+  --divider-color: var(--background-modifier-border, #e0def4);
+  --divider-color-hover: var(--interactive-accent, #f6c177);
+  --dropdown-background: var(--interactive-normal, #f6c177);
+  --dropdown-background-hover: var(--interactive-hover, #ea9a97);
+  --file-header-background: var(--background-primary, #232136);
+  --file-header-background-focused: var(--background-primary, #232136);
+  --flair-background: var(--interactive-normal, #f6c177);
+  --flair-color: var(--text-normal, #e0def4);
   --font-family-editor: Avenir, Avenir Next, sans-serif;
   --font-family-preview: Avenir, Avenir Next, sans-serif;
   --font-size-code: 15px;
@@ -77,146 +72,136 @@ export const theme: ThemeData = {
   --font-size-side-dock: 15px;
   --font-size-side-dock-title: 18px;
   --font-size-status-bar: 15px;
-  --footnote-divider-color: #e0def4;
-  --footnote-id-color: #e0def4;
-  --footnote-id-color-no-occurrences: #eb6f92;
-  --graph-node: #e0def4;
-  --graph-node-focused: #c4a7e7;
-  --graph-node-unresolved: #eb6f92;
-  --graph-text: #e0def4;
-  --gray: var(--text-muted, #e0def4);
-  --heading-formatting: #eb6f92;
-  --highlight: var(--text-highlight-bg, #312f44);
-  --hr-color: #e0def4;
-  --icon-color: #e0def4;
-  --icon-color-active: #c4a7e7;
-  --icon-color-focused: #e0def4;
-  --icon-color-hover: #e0def4;
+  --footnote-divider-color: var(--metadata-divider-color, #e0def4);
+  --footnote-id-color: var(--text-muted, #e0def4);
+  --footnote-id-color-no-occurrences: var(--text-faint, #eb6f92);
+  --graph-node: var(--text-muted, #e0def4);
+  --graph-node-focused: var(--text-accent, #c4a7e7);
+  --graph-node-unresolved: var(--text-faint, #eb6f92);
+  --graph-text: var(--text-normal, #e0def4);
+  --gray: var(--text-muted, var(--color-base-70, #e0def4));
+  --heading-formatting: var(--text-faint, #eb6f92);
+  --hr-color: var(--background-modifier-border, #e0def4);
+  --icon-color: var(--text-muted, #e0def4);
+  --icon-color-active: var(--text-accent, #c4a7e7);
+  --icon-color-focused: var(--text-normal, #e0def4);
+  --icon-color-hover: var(--text-muted, #e0def4);
   --inline-code: #c4a7e7;
-  --input-date-separator: #eb6f92;
-  --input-placeholder-color: #eb6f92;
-  --interactive-accent: #f6c177;
-  --interactive-accent-hover: #ea9a97;
+  --input-date-separator: var(--text-faint, #eb6f92);
+  --input-placeholder-color: var(--text-faint, #eb6f92);
+  --interactive-accent: var(--color-accent, #f6c177);
+  --interactive-accent-hover: var(--color-accent-1, #ea9a97);
   --interactive-accent-rgb: 123, 108, 217;
-  --interactive-hover: #ea9a97;
-  --interactive-normal: #f6c177;
-  --light: var(--background-primary, #232136);
-  --lightgray: var(--background-secondary, #312f44);
-  --link-color: #c4a7e7;
-  --link-color-hover: #9ccfd8;
-  --link-external-color: #c4a7e7;
-  --link-external-color-hover: #9ccfd8;
-  --link-unresolved-color: #c4a7e7;
-  --list-marker-color: #eb6f92;
-  --list-marker-color-collapsed: #c4a7e7;
-  --list-marker-color-hover: #e0def4;
-  --menu-background: #312f44;
-  --metadata-border-color: #e0def4;
-  --metadata-divider-color: #e0def4;
-  --metadata-input-text-color: #e0def4;
-  --metadata-label-text-color: #e0def4;
-  --metadata-label-text-color-hover: #e0def4;
-  --modal-background: #232136;
-  --nav-collapse-icon-color: #eb6f92;
-  --nav-collapse-icon-color-collapsed: #eb6f92;
-  --nav-heading-color: #e0def4;
-  --nav-heading-color-collapsed: #eb6f92;
-  --nav-heading-color-collapsed-hover: #e0def4;
-  --nav-heading-color-hover: #e0def4;
-  --nav-item-color: #e0def4;
-  --nav-item-color-active: #e0def4;
-  --nav-item-color-highlighted: #c4a7e7;
-  --nav-item-color-hover: #e0def4;
-  --nav-item-color-selected: #e0def4;
-  --nav-tag-color: #eb6f92;
-  --nav-tag-color-active: #e0def4;
-  --nav-tag-color-hover: #e0def4;
-  --pdf-background: #232136;
-  --pdf-page-background: #232136;
-  --pdf-shadow: 0 0 0 1px #e0def4;
-  --pdf-sidebar-background: #232136;
-  --pdf-thumbnail-shadow: 0 0 0 1px #e0def4;
-  --pill-border-color: #e0def4;
-  --pill-color: #e0def4;
-  --pill-color-hover: #e0def4;
-  --pill-color-remove: #eb6f92;
-  --pill-color-remove-hover: #c4a7e7;
+  --interactive-hover: var(--color-base-35, #ea9a97);
+  --interactive-normal: var(--color-base-30, #f6c177);
+  --light: var(--background-primary, var(--color-base-00, #232136));
+  --lightgray: var(--background-secondary, var(--color-base-20, #312f44));
+  --link-color: var(--text-accent, #c4a7e7);
+  --link-color-hover: var(--text-accent-hover, #9ccfd8);
+  --link-external-color: var(--text-accent, #c4a7e7);
+  --link-external-color-hover: var(--text-accent-hover, #9ccfd8);
+  --link-unresolved-color: var(--text-accent, #c4a7e7);
+  --list-marker-color: var(--text-faint, #eb6f92);
+  --list-marker-color-collapsed: var(--text-accent, #c4a7e7);
+  --list-marker-color-hover: var(--text-muted, #e0def4);
+  --menu-background: var(--background-secondary, #312f44);
+  --metadata-border-color: var(--background-modifier-border, #e0def4);
+  --metadata-divider-color: var(--background-modifier-border, #e0def4);
+  --metadata-input-text-color: var(--text-normal, #e0def4);
+  --metadata-label-text-color: var(--text-muted, #e0def4);
+  --metadata-label-text-color-hover: var(--text-muted, #e0def4);
+  --modal-background: var(--background-primary, #232136);
+  --nav-collapse-icon-color: var(--collapse-icon-color, #eb6f92);
+  --nav-collapse-icon-color-collapsed: var(--text-faint, #eb6f92);
+  --nav-heading-color: var(--text-normal, #e0def4);
+  --nav-heading-color-collapsed: var(--text-faint, #eb6f92);
+  --nav-heading-color-collapsed-hover: var(--text-muted, #e0def4);
+  --nav-heading-color-hover: var(--text-normal, #e0def4);
+  --nav-item-color: var(--text-muted, #e0def4);
+  --nav-item-color-active: var(--text-normal, #e0def4);
+  --nav-item-color-highlighted: var(--text-accent, #c4a7e7);
+  --nav-item-color-hover: var(--text-normal, #e0def4);
+  --nav-item-color-selected: var(--text-normal, #e0def4);
+  --nav-tag-color: var(--text-faint, #eb6f92);
+  --nav-tag-color-active: var(--text-muted, #e0def4);
+  --nav-tag-color-hover: var(--text-muted, #e0def4);
+  --pdf-background: var(--background-primary, #232136);
+  --pdf-page-background: var(--background-primary, #232136);
+  --pdf-sidebar-background: var(--background-primary, #232136);
+  --pill-border-color: var(--background-modifier-border, #e0def4);
+  --pill-color: var(--text-muted, #e0def4);
+  --pill-color-hover: var(--text-normal, #e0def4);
+  --pill-color-remove: var(--text-faint, #eb6f92);
+  --pill-color-remove-hover: var(--text-accent, #c4a7e7);
   --pre-code: #312f44;
-  --prompt-background: #232136;
-  --raised-background: color-mix(in srgb, #f6c177 65%, transparent) linear-gradient(#f6c177, color-mix(in srgb, #f6c177 65%, transparent));
-  --ribbon-background: #312f44;
-  --ribbon-background-collapsed: #232136;
-  --scrollbar-active-thumb-bg: #232136;
-  --scrollbar-bg: #232136;
-  --scrollbar-thumb-bg: #232136;
-  --search-clear-button-color: #e0def4;
-  --search-icon-color: #e0def4;
-  --search-result-background: #232136;
-  --secondary: var(--text-accent, #c4a7e7);
-  --setting-group-heading-color: #e0def4;
-  --setting-items-background: #2a273f;
-  --setting-items-border-color: #e0def4;
-  --shiki-active-tab-border-color: #e0def4;
-  --shiki-code-background: #2a273f;
-  --shiki-code-comment: #eb6f92;
-  --shiki-code-normal: #e0def4;
-  --shiki-code-punctuation: #e0def4;
-  --shiki-gutter-border-color: #e0def4;
-  --shiki-gutter-text-color: #eb6f92;
-  --shiki-gutter-text-color-highlight: #e0def4;
-  --shiki-highlight-neutral: #e0def4;
-  --shiki-terminal-dots-color: #eb6f92;
-  --slider-track-background: #e0def4;
-  --status-bar-background: #312f44;
-  --status-bar-border-color: #e0def4;
-  --status-bar-text-color: #e0def4;
-  --suggestion-background: #232136;
-  --tab-background-active: #232136;
-  --tab-container-background: #312f44;
-  --tab-outline-color: #e0def4;
-  --tab-switcher-background: #312f44;
-  --tab-switcher-menubar-background: linear-gradient(to top, #312f44, transparent);
-  --tab-text-color: #eb6f92;
-  --tab-text-color-active: #e0def4;
-  --tab-text-color-focused: #e0def4;
-  --tab-text-color-focused-active: #e0def4;
-  --tab-text-color-focused-active-current: #e0def4;
-  --tab-text-color-focused-highlighted: #c4a7e7;
-  --table-add-button-border-color: #e0def4;
-  --table-border-color: #e0def4;
-  --table-drag-handle-background-active: #f6c177;
-  --table-drag-handle-color: #eb6f92;
-  --table-drag-handle-color-active: #c4a7e7;
-  --table-header-border-color: #e0def4;
-  --table-header-color: #e0def4;
-  --table-selection-border-color: #f6c177;
-  --tag-color: #c4a7e7;
-  --tag-color-hover: #c4a7e7;
-  --tertiary: var(--text-accent-hover, #9ccfd8);
-  --text-accent: #c4a7e7;
-  --text-accent-hover: #9ccfd8;
-  --text-error: #eb6f92;
+  --prompt-background: var(--background-primary, #232136);
+  --raised-background: var(--blur-background, color-mix(in srgb, #f6c177 65%, transparent) linear-gradient(#f6c177, color-mix(in srgb, #f6c177 65%, transparent)));
+  --ribbon-background: var(--background-secondary, #312f44);
+  --ribbon-background-collapsed: var(--background-primary, #232136);
+  --search-clear-button-color: var(--text-muted, #e0def4);
+  --search-icon-color: var(--text-muted, #e0def4);
+  --search-result-background: var(--background-primary, #232136);
+  --secondary: var(--text-accent, var(--color-accent-1, #c4a7e7));
+  --setting-group-heading-color: var(--text-normal, #e0def4);
+  --setting-items-background: var(--background-primary-alt, #2a273f);
+  --setting-items-border-color: var(--background-modifier-border, #e0def4);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, #e0def4);
+  --shiki-code-background: var(--code-background, #2a273f);
+  --shiki-code-comment: var(--text-faint, #eb6f92);
+  --shiki-code-normal: var(--text-muted, #e0def4);
+  --shiki-code-punctuation: var(--text-muted, #e0def4);
+  --shiki-gutter-border-color: var(--background-modifier-border, #e0def4);
+  --shiki-gutter-text-color: var(--text-faint, #eb6f92);
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, #e0def4);
+  --shiki-highlight-neutral: var(--shiki-code-normal, #e0def4);
+  --shiki-terminal-dots-color: var(--text-faint, #eb6f92);
+  --slider-track-background: var(--background-modifier-border, #e0def4);
+  --status-bar-background: var(--background-secondary, #312f44);
+  --status-bar-border-color: var(--divider-color, #e0def4);
+  --status-bar-text-color: var(--text-muted, #e0def4);
+  --suggestion-background: var(--background-primary, #232136);
+  --tab-background-active: var(--background-primary, #232136);
+  --tab-container-background: var(--background-secondary, #312f44);
+  --tab-outline-color: var(--divider-color, #e0def4);
+  --tab-switcher-background: var(--background-secondary, #312f44);
+  --tab-text-color: var(--text-faint, #eb6f92);
+  --tab-text-color-active: var(--text-muted, #e0def4);
+  --tab-text-color-focused: var(--text-muted, #e0def4);
+  --tab-text-color-focused-active: var(--text-muted, #e0def4);
+  --tab-text-color-focused-active-current: var(--text-normal, #e0def4);
+  --tab-text-color-focused-highlighted: var(--text-accent, #c4a7e7);
+  --table-add-button-border-color: var(--background-modifier-border, #e0def4);
+  --table-border-color: var(--background-modifier-border, #e0def4);
+  --table-drag-handle-background-active: var(--table-selection-border-color, #f6c177);
+  --table-drag-handle-color: var(--text-faint, #eb6f92);
+  --table-drag-handle-color-active: var(--text-on-accent, #c4a7e7);
+  --table-header-border-color: var(--table-border-color, #e0def4);
+  --table-header-color: var(--text-normal, #e0def4);
+  --table-selection-border-color: var(--interactive-accent, #f6c177);
+  --tag-color: var(--text-accent, #c4a7e7);
+  --tag-color-hover: var(--text-accent, #c4a7e7);
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, #9ccfd8));
+  --text-accent: var(--color-accent-1, #c4a7e7);
+  --text-accent-hover: var(--color-accent-2, #9ccfd8);
+  --text-error: var(--color-red, #eb6f92);
   --text-error-hover: #eb6f92;
-  --text-faint: #eb6f92;
-  --text-highlight-bg: #312f44;
-  --text-muted: #e0def4;
-  --text-normal: #e0def4;
+  --text-faint: var(--color-base-50, #eb6f92);
+  --text-muted: var(--color-base-70, #e0def4);
+  --text-normal: var(--color-base-100, #e0def4);
   --text-on-accent: #c4a7e7;
-  --text-selection: #6272a4;
   --text-title-h1: #eb6f92;
   --text-title-h2: #c4a7e7;
   --text-title-h3: #ea9a97;
   --text-title-h4: #f6c177;
   --text-title-h5: #3e8fb0;
   --text-title-h6: #9ccfd8;
-  --textHighlight: var(--text-highlight-bg, #312f44);
-  --titlebar-background: #312f44;
-  --titlebar-background-focused: #393552;
-  --titlebar-border-color: #e0def4;
-  --titlebar-text-color: #e0def4;
-  --titlebar-text-color-focused: #e0def4;
-  --vault-profile-color: #e0def4;
-  --vault-profile-color-hover: #e0def4;
+  --titlebar-background: var(--background-secondary, #312f44);
+  --titlebar-background-focused: var(--background-secondary-alt, #393552);
+  --titlebar-border-color: var(--background-modifier-border, #e0def4);
+  --titlebar-text-color: var(--text-muted, #e0def4);
+  --titlebar-text-color-focused: var(--text-normal, #e0def4);
+  --vault-profile-color: var(--text-normal, #e0def4);
+  --vault-profile-color-hover: var(--vault-profile-color, #e0def4);
   --vim-cursor: #ea9a97;
   --quartz-icon-color: currentColor;
 }
@@ -227,17 +212,17 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(49, 47, 68);
+  background-color: var(--tab-container-background, rgb(49, 47, 68));
   color: rgb(255, 255, 255);
 }
 
 html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
-  background-color: rgb(35, 33, 54);
+  background-color: var(--background-primary, rgb(35, 33, 54));
   color: rgb(255, 255, 255);
 }
 
 html body .page > div#quartz-body div.sidebar {
-  background-color: rgb(49, 47, 68);
+  background-color: var(--background-secondary, rgb(49, 47, 68));
   color: rgb(255, 255, 255);
 }
 
@@ -246,7 +231,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(49, 47, 68);
+  background-color: var(--tab-container-background, rgb(49, 47, 68));
   border-left-color: rgb(224, 222, 244);
   color: rgb(255, 255, 255);
 }
@@ -268,21 +253,21 @@ html body html {
 }`,
     typography: `html body .markdown-rendered p > b, html b {
   background-color: rgb(235, 111, 146);
-  color: rgb(235, 111, 146);
+  color: var(--bold-color, rgb(235, 111, 146));
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(235, 111, 146) none 0px;
   text-decoration-color: rgb(235, 111, 146);
 }
 
 html body .markdown-rendered p > em, html em {
-  color: rgb(196, 167, 231);
+  color: var(--text-accent, rgb(196, 167, 231));
   font-family: "Cartograph CF";
   outline: rgb(196, 167, 231) none 0px;
   text-decoration-color: rgb(196, 167, 231);
 }
 
 html body .markdown-rendered p > i, html i {
-  color: rgb(196, 167, 231);
+  color: var(--text-accent, rgb(196, 167, 231));
   font-family: "Cartograph CF";
   outline: rgb(196, 167, 231) none 0px;
   text-decoration-color: rgb(196, 167, 231);
@@ -290,15 +275,15 @@ html body .markdown-rendered p > i, html i {
 
 html body .markdown-rendered p > strong, html strong {
   background-color: rgb(235, 111, 146);
-  color: rgb(235, 111, 146);
+  color: var(--bold-color, rgb(235, 111, 146));
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(235, 111, 146) none 0px;
   text-decoration-color: rgb(235, 111, 146);
 }
 
 html body .text-highlight {
-  background-color: rgb(49, 47, 68);
-  color: rgb(224, 222, 244);
+  background-color: var(--text-highlight-bg, rgb(49, 47, 68));
+  color: var(--text-normal, rgb(224, 222, 244));
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(224, 222, 244) none 0px;
   text-decoration-color: rgb(224, 222, 244);
@@ -312,7 +297,7 @@ html body del {
 }
 
 html body h1.article-title {
-  color: rgb(224, 222, 244);
+  color: var(--text-normal, rgb(224, 222, 244));
 }
 
 html body li.task-list-item input[type="checkbox"] {
@@ -321,18 +306,18 @@ html body li.task-list-item input[type="checkbox"] {
 }
 
 html body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(156, 207, 216);
+  background-color: var(--text-accent-hover, rgb(156, 207, 216));
   border-color: rgb(156, 207, 216);
 }
 
 html body p {
-  color: rgb(224, 222, 244);
+  color: var(--text-muted, rgb(224, 222, 244));
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(224, 222, 244) none 0px;
   text-decoration-color: rgb(224, 222, 244);
 }`,
     links: `html body a.external-link, html footer a {
-  color: rgb(196, 167, 231);
+  color: var(--link-external-color, rgb(196, 167, 231));
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(196, 167, 231) none 0px;
   text-decoration-color: rgb(196, 167, 231);
@@ -340,17 +325,17 @@ html body p {
 }
 
 html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(196, 167, 231);
+  color: var(--link-color, rgb(196, 167, 231));
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(196, 167, 231) none 0px;
   text-decoration-color: rgb(196, 167, 231);
 }
 
 html body a.internal-link.broken {
-  color: rgb(196, 167, 231);
+  color: var(--link-unresolved-color, rgb(196, 167, 231));
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(196, 167, 231) none 0px;
-  text-decoration-color: rgb(196, 167, 231);
+  text-decoration-color: var(--link-unresolved-decoration-color, rgb(196, 167, 231));
 }`,
     lists: `html body dd {
   color: rgb(224, 222, 244);
@@ -380,13 +365,13 @@ html body ul.overflow {
   border-top-color: rgb(255, 255, 255);
 }`,
     blockquotes: `html body .data-footnote-backref {
-  color: rgb(235, 111, 146);
+  color: var(--text-faint, rgb(235, 111, 146));
 }
 
 html body blockquote {
-  background-color: rgb(49, 47, 68);
+  background-color: var(--pre-code, rgb(49, 47, 68));
   font-family: Avenir, "Avenir Next", sans-serif;
-  font-style: italic;
+  font-style: var(--blockquote-font-style, italic);
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(255, 255, 255);
@@ -406,17 +391,17 @@ html body td {
   border-left-color: rgb(224, 222, 244);
   border-right-color: rgb(224, 222, 244);
   border-top-color: rgb(224, 222, 244);
-  color: rgb(224, 222, 244);
+  color: var(--table-text-color, rgb(224, 222, 244));
 }
 
 html body th {
-  background-color: rgb(49, 47, 68);
+  background-color: var(--background-secondary, rgb(49, 47, 68));
   border-bottom-color: rgb(224, 222, 244);
   border-left-color: rgb(224, 222, 244);
   border-right-color: rgb(224, 222, 244);
   border-top-color: rgb(224, 222, 244);
-  color: rgb(224, 222, 244);
-  font-weight: 800;
+  color: var(--table-header-color, rgb(224, 222, 244));
+  font-weight: var(--table-header-weight, 800);
 }
 
 html body thead {
@@ -429,12 +414,12 @@ html body tr {
   border-bottom-color: rgb(224, 222, 244);
 }`,
     code: `html body code {
-  background-color: rgb(42, 39, 63);
+  background-color: var(--code-background, rgb(42, 39, 63));
   border-bottom-color: rgb(224, 222, 244);
   border-left-color: rgb(224, 222, 244);
   border-right-color: rgb(224, 222, 244);
   border-top-color: rgb(224, 222, 244);
-  color: rgb(196, 167, 231);
+  color: var(--inline-code, rgb(196, 167, 231));
   padding-bottom: 2.25px;
   padding-left: 4.5px;
   padding-right: 4.5px;
@@ -442,7 +427,7 @@ html body tr {
 }
 
 html body pre:has(> code) {
-  background-color: rgb(42, 39, 63);
+  background-color: var(--code-background, rgb(42, 39, 63));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
@@ -484,7 +469,7 @@ html body video {
   border-top-color: rgb(255, 255, 255);
 }`,
     embeds: `html body .file-embed {
-  background-color: rgb(42, 39, 63);
+  background-color: var(--background-primary-alt, rgb(42, 39, 63));
   border-bottom-color: rgb(224, 222, 244);
   border-left-color: rgb(224, 222, 244);
   border-right-color: rgb(224, 222, 244);
@@ -519,7 +504,7 @@ html body .transclude-inner {
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   margin-right: 0px;
-  width: 16.6562px;
+  width: var(--checkbox-size, 16.6562px);
 }
 
 html body li.task-list-item[data-task="#"] {
@@ -1078,7 +1063,7 @@ html body .callout > .callout-content {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   color: rgb(255, 255, 255);
 }
 
@@ -1091,7 +1076,7 @@ html body .callout[data-callout="abstract"] > .callout-content {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   color: rgb(255, 255, 255);
 }
 
@@ -1104,7 +1089,7 @@ html body .callout[data-callout="bug"] > .callout-content {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   color: rgb(255, 255, 255);
 }
 
@@ -1117,7 +1102,7 @@ html body .callout[data-callout="danger"] > .callout-content {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   color: rgb(255, 255, 255);
 }
 
@@ -1130,7 +1115,7 @@ html body .callout[data-callout="example"] > .callout-content {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   color: rgb(255, 255, 255);
 }
 
@@ -1143,7 +1128,7 @@ html body .callout[data-callout="failure"] > .callout-content {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   color: rgb(255, 255, 255);
 }
 
@@ -1156,7 +1141,7 @@ html body .callout[data-callout="info"] > .callout-content {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   color: rgb(255, 255, 255);
 }
 
@@ -1169,7 +1154,7 @@ html body .callout[data-callout="note"] > .callout-content {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   color: rgb(255, 255, 255);
 }
 
@@ -1182,7 +1167,7 @@ html body .callout[data-callout="question"] > .callout-content {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   color: rgb(224, 222, 244);
 }
 
@@ -1195,7 +1180,7 @@ html body .callout[data-callout="quote"] > .callout-content {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   color: rgb(255, 255, 255);
 }
 
@@ -1208,7 +1193,7 @@ html body .callout[data-callout="success"] > .callout-content {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   color: rgb(255, 255, 255);
 }
 
@@ -1221,7 +1206,7 @@ html body .callout[data-callout="tip"] > .callout-content {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   color: rgb(255, 255, 255);
 }
 
@@ -1234,7 +1219,7 @@ html body .callout[data-callout="todo"] > .callout-content {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   color: rgb(255, 255, 255);
 }
 
@@ -1307,12 +1292,12 @@ html body .callout[data-callout="warning"] {
   border-left-color: rgb(224, 222, 244);
   border-right-color: rgb(224, 222, 244);
   border-top-color: rgb(224, 222, 244);
-  color: rgb(224, 222, 244);
+  color: var(--text-normal, rgb(224, 222, 244));
   font-family: Avenir, "Avenir Next", sans-serif;
 }
 
 html body .search > .search-container > .search-space {
-  background-color: rgb(35, 33, 54);
+  background-color: var(--prompt-background, rgb(35, 33, 54));
 }
 
 html body .search > .search-container > .search-space > * {
@@ -1372,43 +1357,43 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
-  color: rgb(235, 111, 146);
-  font-family: Avenir, "Avenir Next", sans-serif;
+  color: var(--text-title-h1, rgb(235, 111, 146));
+  font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
 }
 
 html body h1.article-title {
-  color: rgb(224, 222, 244);
-  font-size: 29.124px;
+  color: var(--inline-title-color, rgb(224, 222, 244));
+  font-size: var(--inline-title-size, 29.124px);
 }
 
 html body h2 {
-  color: rgb(196, 167, 231);
-  font-family: Avenir, "Avenir Next", sans-serif;
+  color: var(--text-title-h2, rgb(196, 167, 231));
+  font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
 }
 
 html body h2.page-title, html h2.page-title a {
-  color: rgb(224, 222, 244);
-  font-family: Avenir, "Avenir Next", sans-serif;
+  color: var(--inline-title-color, rgb(224, 222, 244));
+  font-family: var(--inline-title-font, Avenir, "Avenir Next", sans-serif);
 }
 
 html body h3 {
-  color: rgb(234, 154, 151);
-  font-family: Avenir, "Avenir Next", sans-serif;
+  color: var(--text-title-h3, rgb(234, 154, 151));
+  font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
 }
 
 html body h4 {
-  color: rgb(246, 193, 119);
-  font-family: Avenir, "Avenir Next", sans-serif;
+  color: var(--text-title-h4, rgb(246, 193, 119));
+  font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
 }
 
 html body h5 {
-  color: rgb(62, 143, 176);
-  font-family: Avenir, "Avenir Next", sans-serif;
+  color: var(--text-title-h5, rgb(62, 143, 176));
+  font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
 }
 
 html body h6 {
-  color: rgb(156, 207, 216);
-  font-family: Avenir, "Avenir Next", sans-serif;
+  color: var(--text-title-h6, rgb(156, 207, 216));
+  font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
 }
 
 html body hr {
@@ -1417,15 +1402,15 @@ html body hr {
   border-right-color: rgb(224, 222, 244);
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }`,
     explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(224, 222, 244);
+  color: var(--nav-item-color, rgb(224, 222, 244));
   font-family: Avenir, "Avenir Next", sans-serif;
 }
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(224, 222, 244);
+  color: var(--nav-item-color, rgb(224, 222, 244));
   font-family: Avenir, "Avenir Next", sans-serif;
 }`,
     toc: `html body details.toc summary::marker {
@@ -1436,16 +1421,16 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-left-color: rgb(224, 222, 244);
   border-right-color: rgb(224, 222, 244);
   border-top-color: rgb(224, 222, 244);
-  color: rgb(224, 222, 244);
+  color: var(--icon-color, rgb(224, 222, 244));
 }`,
     footer: `html body footer {
-  background-color: rgb(57, 53, 82);
+  background-color: var(--background-secondary-alt, rgb(57, 53, 82));
   border-bottom-color: rgb(224, 222, 244);
   border-left-color: rgb(224, 222, 244);
   border-right-color: rgb(224, 222, 244);
   border-top-color: rgb(224, 222, 244);
   border-top-width: 0px;
-  color: rgb(224, 222, 244);
+  color: var(--status-bar-text-color, rgb(224, 222, 244));
   font-family: Avenir, "Avenir Next", sans-serif;
 }
 
@@ -1466,7 +1451,7 @@ html body .recent-notes > ul.recent-ul > li {
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(224, 222, 244);
+  color: var(--nav-item-color, rgb(224, 222, 244));
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1486,7 +1471,7 @@ html body li.section-li > .section .meta {
 }
 
 html body li.section-li > .section > .desc > h3 > a {
-  color: rgb(224, 222, 244);
+  color: var(--nav-item-color, rgb(224, 222, 244));
 }
 
 html body ul.section-ul {
@@ -1500,7 +1485,7 @@ html body ul.section-ul {
   border-left-color: rgb(224, 222, 244);
   border-right-color: rgb(224, 222, 244);
   border-top-color: rgb(224, 222, 244);
-  color: rgb(224, 222, 244);
+  color: var(--icon-color, rgb(224, 222, 244));
 }
 
 html body .darkmode svg {
@@ -1516,7 +1501,7 @@ html body .darkmode svg {
 }
 
 html body .breadcrumb-element p {
-  color: rgb(235, 111, 146);
+  color: var(--text-faint, rgb(235, 111, 146));
 }`,
     canvas: `html body .canvas-node {
   border-color: rgb(255, 255, 255);
@@ -1527,7 +1512,7 @@ html body .canvas-node-content {
 }
 
 html body .canvas-node-file {
-  color: rgb(224, 222, 244);
+  color: var(--text-normal, rgb(224, 222, 244));
 }
 
 html body .canvas-node-group {
@@ -1535,21 +1520,21 @@ html body .canvas-node-group {
 }
 
 html body .canvas-sidebar {
-  background-color: rgb(49, 47, 68);
+  background-color: var(--background-secondary, rgb(49, 47, 68));
   border-color: rgb(255, 255, 255);
 }`,
     bases: `html body .bases-table thead th {
-  background-color: rgb(49, 47, 68);
+  background-color: var(--background-secondary, rgb(49, 47, 68));
   border-color: rgb(224, 222, 244);
-  color: rgb(224, 222, 244);
-  font-weight: 800;
+  color: var(--table-header-color, rgb(224, 222, 244));
+  font-weight: var(--table-header-weight, 800);
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgb(224, 222, 244);
   border-left-color: rgb(224, 222, 244);
   border-right-color: rgb(224, 222, 244);
   border-top-color: rgb(224, 222, 244);
-  color: rgb(224, 222, 244);
+  color: var(--text-muted, rgb(224, 222, 244));
   font-family: Avenir, "Avenir Next", sans-serif;
 }
 
@@ -1576,7 +1561,7 @@ html body .note-properties-row {
 
 html body .note-properties-tags {
   border-radius: 31.5px;
-  color: rgb(196, 167, 231);
+  color: var(--pill-color, rgb(196, 167, 231));
 }
 
 html body .note-properties-value {
@@ -1584,8 +1569,8 @@ html body .note-properties-value {
 }
 
 html body div#quartz-root {
-  background-color: rgb(9, 15, 35);
-  color: rgb(255, 255, 255);
+  background-color: var(--background-primary, rgb(9, 15, 35));
+  color: var(--text-normal, rgb(255, 255, 255));
 }
 
 html body ol.overflow {
@@ -1595,12 +1580,12 @@ html body ol.overflow {
   border-top-color: rgb(255, 255, 255);
 }`,
     stacked: `html body .stacked-page {
-  background-color: rgb(49, 47, 68);
+  background-color: var(--background-secondary, rgb(49, 47, 68));
   border-color: rgb(255, 255, 255);
 }
 
 html body .stacked-page-header {
-  background-color: rgb(57, 53, 82);
+  background-color: var(--tab-container-background, rgb(57, 53, 82));
 }
 
 html body .stacked-page.active {
@@ -1615,11 +1600,11 @@ html body .stacked-page.active {
 }
 
 html body .navigation-progress {
-  background-color: rgb(57, 53, 82);
+  background-color: var(--background-secondary-alt, rgb(57, 53, 82));
 }
 
 html body .page-header h2.page-title {
-  color: rgb(224, 222, 244);
+  color: var(--text-normal, rgb(224, 222, 244));
 }
 
 html body abbr {
@@ -1638,17 +1623,17 @@ html body input[type=text] {
   border-left-color: rgb(224, 222, 244);
   border-right-color: rgb(224, 222, 244);
   border-top-color: rgb(224, 222, 244);
-  color: rgb(224, 222, 244);
+  color: var(--text-normal, rgb(224, 222, 244));
 }
 
 html body kbd {
-  background-color: rgb(42, 39, 63);
+  background-color: var(--code-background, rgb(42, 39, 63));
   border-bottom-color: rgb(224, 222, 244);
   border-left-color: rgb(224, 222, 244);
   border-right-color: rgb(224, 222, 244);
   border-top-color: rgb(224, 222, 244);
-  color: rgb(224, 222, 244);
-  font-size: 15.75px;
+  color: var(--code-normal, rgb(224, 222, 244));
+  font-size: var(--code-size, 15.75px);
   padding-bottom: 1.575px;
   padding-left: 3.9375px;
   padding-right: 3.9375px;
@@ -1681,7 +1666,7 @@ html body ul.tags > li {
   border-bottom-right-radius: 27.5625px;
   border-top-left-radius: 27.5625px;
   border-top-right-radius: 27.5625px;
-  color: rgb(156, 207, 216);
+  color: var(--text-accent-hover, rgb(156, 207, 216));
 }`,
   },
   light: {},

@@ -1368,6 +1368,11 @@ ul>li::marker {
 	margin-left: 12px;
 }
 
+.is-tablet .markdown-rendered.show-indentation-guide ol::before {
+	margin-left: 4px;
+}
+
+
 .markdown-rendered.show-indentation-guide ul::before {
 	margin-left: 5px;
 }
@@ -2742,7 +2747,7 @@ main.git-view .tree-item-inner.nav-file-title-content {
 
 .is-tablet .workspace .workspace-drawer .side-dock-settings {
 	/* display: none; */
-	background-color: red;
+	/* background-color: red; */
 }
 
 .is-tablet .workspace-drawer-ribbon .side-dock-actions {
@@ -2756,7 +2761,7 @@ main.git-view .tree-item-inner.nav-file-title-content {
 }
 
 .is-tablet .workspace-drawer.mod-left .workspace-drawer-inner .workspace-drawer-tab-container {
-	border-left: solid 1px var(--indentation-guide-color);
+	/* border-left: solid 1px var(--indentation-guide-color); */
 	/* box-shadow: 1px 0px 1px var(--card-border-color); */
 }
 

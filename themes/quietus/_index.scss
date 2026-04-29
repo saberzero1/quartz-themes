@@ -213,7 +213,7 @@
   --link-color-hover: var(--text-accent-hover, hsl(255, 89.76%, 75.9%)) !important;
   --link-external-color: var(--text-accent, hsl(258, 88%, 66%)) !important;
   --link-external-color-hover: var(--text-accent-hover, hsl(255, 89.76%, 75.9%)) !important;
-  --link-unresolved-color: #8a5cf5 !important;
+  --link-unresolved-color: var(--accent-color, #8a5cf5) !important;
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3) !important;
   --link-weight: var(--font-weight, 400) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
@@ -418,7 +418,7 @@
   --text-accent-hover: var(--color-accent-2, hsl(255, 89.76%, 75.9%)) !important;
   --text-error: var(--color-red, #e93147) !important;
   --text-faint: var(--color-base-50, #ababab) !important;
-  --text-highlight-bg: color-mix(in srgb, #8a5cf5 25%, transparent) !important;
+  --text-highlight-bg: color-mix(in srgb, var(--accent-color) 25%, transparent) !important;
   --text-muted: var(--color-base-70, #5c5c5c) !important;
   --text-normal: var(--color-base-100, #222222) !important;
   --text-selection: hsla(var(--color-accent-hsl), 0.2) !important;
@@ -861,10 +861,10 @@
   --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
   --accent-color: #8a5cf5 !important;
-  --quietus-checkbox-checked-border-color: #5c5c5c !important;
-  --quietus-checkbox-checked-hover-border-color: hsl(255, 89.76%, 75.9%) !important;
-  --quietus-checkbox-checked-svg-bg-color: #222222 !important;
-  --quietus-inline-code-background: color-mix(in srgb, #8a5cf5 25%, transparent) !important;
+  --quietus-checkbox-checked-border-color: var(--checklist-done-color, #5c5c5c) !important;
+  --quietus-checkbox-checked-hover-border-color: var(--checkbox-color-hover, hsl(255, 89.76%, 75.9%)) !important;
+  --quietus-checkbox-checked-svg-bg-color: var(--text-normal, #222222) !important;
+  --quietus-inline-code-background: var(--text-highlight-bg, color-mix(in srgb, #8a5cf5 25%, transparent)) !important;
   --quietus-text-strong-color: #1a1a1a !important;
 
   --quartz-icon-color: currentColor;
@@ -1072,11 +1072,11 @@
   --interactive-accent-hsl: var(--color-accent-hsl, 258, 88%, 66%) !important;
   --interactive-hover: var(--color-base-35, #3f3f3f) !important;
   --interactive-normal: var(--color-base-30, #363636) !important;
-  --link-color: #dadada !important;
-  --link-color-hover: #dadada !important;
-  --link-external-color: #dadada !important;
-  --link-external-color-hover: #dadada !important;
-  --link-unresolved-color: #8a5cf5 !important;
+  --link-color: var(--text-normal, #dadada) !important;
+  --link-color-hover: var(--text-accent-hover, #dadada) !important;
+  --link-external-color: var(--text-normal, #dadada) !important;
+  --link-external-color-hover: var(--text-accent-hover, #dadada) !important;
+  --link-unresolved-color: var(--accent-color, #8a5cf5) !important;
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3) !important;
   --link-weight: var(--font-weight, 400) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
@@ -1278,13 +1278,13 @@
   --tag-color-hover: var(--text-accent, hsl(255, 89.76%, 75.9%)) !important;
   --tag-size: var(--font-smaller, 0.875em) !important;
   --text-accent: var(--color-accent-1, hsl(255, 89.76%, 75.9%)) !important;
-  --text-accent-hover: #dadada !important;
+  --text-accent-hover: var(--text-normal, #dadada) !important;
   --text-error: var(--color-red, #fb464c) !important;
   --text-faint: var(--color-base-50, #666666) !important;
-  --text-highlight-bg: color-mix(in srgb, #8a5cf5 45%, transparent) !important;
+  --text-highlight-bg: color-mix(in srgb, var(--accent-color) 45%, transparent) !important;
   --text-muted: var(--color-base-70, #b3b3b3) !important;
   --text-normal: var(--color-base-100, #dadada) !important;
-  --text-selection: color-mix(in srgb, #dadada 10%, transparent) !important;
+  --text-selection: color-mix(in srgb, var(--text-normal) 10%, transparent) !important;
   --text-success: var(--color-green, #44cf6e) !important;
   --text-warning: var(--color-orange, #e9973f) !important;
   --titlebar-background: var(--background-secondary, #262626) !important;
@@ -1721,10 +1721,10 @@
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --accent-color: #8a5cf5 !important;
-  --quietus-checkbox-checked-border-color: #b3b3b3 !important;
-  --quietus-checkbox-checked-hover-border-color: #dadada !important;
-  --quietus-checkbox-checked-svg-bg-color: #dadada !important;
-  --quietus-inline-code-background: color-mix(in srgb, #8a5cf5 45%, transparent) !important;
+  --quietus-checkbox-checked-border-color: var(--checklist-done-color, #b3b3b3) !important;
+  --quietus-checkbox-checked-hover-border-color: var(--text-normal, #dadada) !important;
+  --quietus-checkbox-checked-svg-bg-color: var(--text-normal, #dadada) !important;
+  --quietus-inline-code-background: var(--text-highlight-bg, color-mix(in srgb, #8a5cf5 45%, transparent)) !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -2977,7 +2977,7 @@ body {
   }
 
   .callout {
-    --callout-color: 8, 109, 221;
+    --callout-color: var(--callout-default, 8, 109, 221);
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3024,7 +3024,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: 8, 109, 221;
+    --callout-color: var(--callout-default, 8, 109, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3074,7 +3074,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: 0, 191, 188;
+    --callout-color: var(--callout-summary, 0, 191, 188);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3124,7 +3124,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: 8, 109, 221;
+    --callout-color: var(--callout-info, 8, 109, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3174,7 +3174,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: 8, 109, 221;
+    --callout-color: var(--callout-todo, 8, 109, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3224,7 +3224,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: 0, 191, 188;
+    --callout-color: var(--callout-tip, 0, 191, 188);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3274,7 +3274,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: 8, 185, 78;
+    --callout-color: var(--callout-success, 8, 185, 78);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3324,7 +3324,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: 236, 117, 0;
+    --callout-color: var(--callout-question, 236, 117, 0);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3374,7 +3374,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: 236, 117, 0;
+    --callout-color: var(--callout-warning, 236, 117, 0);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3424,7 +3424,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: 233, 49, 71;
+    --callout-color: var(--callout-error, 233, 49, 71);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3474,7 +3474,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: 233, 49, 71;
+    --callout-color: var(--callout-fail, 233, 49, 71);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3524,7 +3524,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: 233, 49, 71;
+    --callout-color: var(--callout-bug, 233, 49, 71);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3574,7 +3574,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: 120, 82, 238;
+    --callout-color: var(--callout-example, 120, 82, 238);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3624,7 +3624,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: 158, 158, 158;
+    --callout-color: var(--callout-quote, 158, 158, 158);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -4794,7 +4794,7 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--checkbox-color, rgba(0, 0, 0, 0));
     border-color: rgb(92, 92, 92);
   }
 
@@ -5503,7 +5503,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: rgb(218, 218, 218);
+      color: var(--link-external-color, rgb(218, 218, 218));
       cursor: var(--cursor-link, pointer);
       filter: none;
       backdrop-filter: none;
@@ -5544,7 +5544,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: rgb(218, 218, 218);
+      color: var(--link-color, rgb(218, 218, 218));
       cursor: var(--cursor-link, pointer);
       filter: none;
       backdrop-filter: none;
@@ -5584,9 +5584,9 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: rgb(138, 92, 245);
+      color: var(--link-unresolved-color, rgb(138, 92, 245));
       cursor: var(--cursor-link, pointer);
-      filter: brightness(1.2);
+      filter: var(--link-unresolved-filter, brightness(1.2));
       backdrop-filter: none;
       box-shadow: none;
       font-family:
@@ -6415,7 +6415,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: 2, 122, 255;
+      --callout-color: var(--callout-default, 2, 122, 255);
       border: 0px solid rgba(2, 122, 255, 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -6462,7 +6462,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: 2, 122, 255;
+      --callout-color: var(--callout-default, 2, 122, 255);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6512,7 +6512,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: var(--callout-summary, 83, 223, 221);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6562,7 +6562,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: 2, 122, 255;
+      --callout-color: var(--callout-info, 2, 122, 255);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6612,7 +6612,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: 2, 122, 255;
+      --callout-color: var(--callout-todo, 2, 122, 255);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6662,7 +6662,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: var(--callout-tip, 83, 223, 221);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6712,7 +6712,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: 68, 207, 110;
+      --callout-color: var(--callout-success, 68, 207, 110);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6762,7 +6762,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: var(--callout-question, 233, 151, 63);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6812,7 +6812,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: var(--callout-warning, 233, 151, 63);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6862,7 +6862,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: var(--callout-error, 251, 70, 76);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6912,7 +6912,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: var(--callout-fail, 251, 70, 76);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6962,7 +6962,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: var(--callout-bug, 251, 70, 76);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7012,7 +7012,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: 168, 130, 255;
+      --callout-color: var(--callout-example, 168, 130, 255);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7062,7 +7062,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: 158, 158, 158;
+      --callout-color: var(--callout-quote, 158, 158, 158);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -8232,7 +8232,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item input[type="checkbox"]:checked {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--checkbox-color, rgba(0, 0, 0, 0));
       border-color: rgb(179, 179, 179);
     }
 

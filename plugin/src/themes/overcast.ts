@@ -4,35 +4,34 @@ export const theme: ThemeData = {
   meta: { name: "overcast", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
-  --background-primary: semi-transparent;
-  --background-secondary: semi-transparent;
-  --bases-cards-background: semi-transparent;
-  --bases-table-cell-background-active: semi-transparent;
-  --bases-table-header-background: semi-transparent;
-  --bases-table-summary-background: semi-transparent;
-  --canvas-background: semi-transparent;
-  --checkbox-marker-color: semi-transparent;
+  --background-primary: var(--color-base-00, semi-transparent);
+  --background-secondary: var(--color-base-20, semi-transparent);
+  --bases-cards-background: var(--background-primary, semi-transparent);
+  --bases-table-cell-background-active: var(--background-primary, semi-transparent);
+  --bases-table-header-background: var(--background-primary, semi-transparent);
+  --bases-table-summary-background: var(--background-primary, semi-transparent);
+  --canvas-background: var(--background-primary, semi-transparent);
+  --checkbox-marker-color: var(--background-primary, semi-transparent);
   --divider-width: 0px;
-  --file-header-background: semi-transparent;
-  --file-header-background-focused: semi-transparent;
-  --light: var(--background-primary, semi-transparent);
-  --lightgray: var(--background-secondary, semi-transparent);
-  --menu-background: semi-transparent;
-  --modal-background: semi-transparent;
-  --pdf-background: semi-transparent;
-  --pdf-page-background: semi-transparent;
-  --pdf-sidebar-background: semi-transparent;
-  --prompt-background: semi-transparent;
-  --ribbon-background: semi-transparent;
-  --ribbon-background-collapsed: semi-transparent;
-  --search-result-background: semi-transparent;
-  --status-bar-background: semi-transparent;
-  --suggestion-background: semi-transparent;
-  --tab-background-active: semi-transparent;
-  --tab-container-background: semi-transparent;
-  --tab-switcher-background: semi-transparent;
-  --tab-switcher-menubar-background: linear-gradient(to top, semi-transparent, transparent);
-  --titlebar-background: semi-transparent;
+  --file-header-background: var(--background-primary, semi-transparent);
+  --file-header-background-focused: var(--background-primary, semi-transparent);
+  --light: var(--background-primary, var(--color-base-00, semi-transparent));
+  --lightgray: var(--background-secondary, var(--color-base-20, semi-transparent));
+  --menu-background: var(--background-secondary, semi-transparent);
+  --modal-background: var(--background-primary, semi-transparent);
+  --pdf-background: var(--background-primary, semi-transparent);
+  --pdf-page-background: var(--background-primary, semi-transparent);
+  --pdf-sidebar-background: var(--background-primary, semi-transparent);
+  --prompt-background: var(--background-primary, semi-transparent);
+  --ribbon-background: var(--background-secondary, semi-transparent);
+  --ribbon-background-collapsed: var(--background-primary, semi-transparent);
+  --search-result-background: var(--background-primary, semi-transparent);
+  --status-bar-background: var(--background-secondary, semi-transparent);
+  --suggestion-background: var(--background-primary, semi-transparent);
+  --tab-background-active: var(--background-primary, semi-transparent);
+  --tab-container-background: var(--background-secondary, semi-transparent);
+  --tab-switcher-background: var(--background-secondary, semi-transparent);
+  --titlebar-background: var(--background-secondary, semi-transparent);
   --quartz-icon-color: currentColor;
 }
 
@@ -42,15 +41,15 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
 html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-primary, rgba(0, 0, 0, 0));
 }
 
 html body .page > div#quartz-body div.sidebar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
 }
 
 html body .page > div#quartz-body div.sidebar.left {
@@ -58,28 +57,28 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }`,
     typography: `html body .markdown-rendered p > b, html b {
-  color: rgb(255, 255, 255);
+  color: var(--bold-color, rgb(255, 255, 255));
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body .markdown-rendered p > em, html em {
-  color: rgb(255, 255, 255);
+  color: var(--italic-color, rgb(255, 255, 255));
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body .markdown-rendered p > i, html i {
-  color: rgb(255, 255, 255);
+  color: var(--italic-color, rgb(255, 255, 255));
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body .markdown-rendered p > strong, html strong {
-  color: rgb(255, 255, 255);
+  color: var(--bold-color, rgb(255, 255, 255));
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
@@ -116,7 +115,7 @@ html body table {
 }
 
 html body td {
-  color: rgb(255, 255, 255);
+  color: var(--table-text-color, rgb(255, 255, 255));
 }`,
     images: `html body audio {
   border-bottom-color: rgb(255, 255, 255);
@@ -721,7 +720,7 @@ html body .callout > .callout-content {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   color: rgb(255, 255, 255);
 }
 
@@ -734,7 +733,7 @@ html body .callout[data-callout="abstract"] > .callout-content {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   color: rgb(255, 255, 255);
 }
 
@@ -747,7 +746,7 @@ html body .callout[data-callout="bug"] > .callout-content {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   color: rgb(255, 255, 255);
 }
 
@@ -760,7 +759,7 @@ html body .callout[data-callout="danger"] > .callout-content {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   color: rgb(255, 255, 255);
 }
 
@@ -773,7 +772,7 @@ html body .callout[data-callout="example"] > .callout-content {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   color: rgb(255, 255, 255);
 }
 
@@ -786,7 +785,7 @@ html body .callout[data-callout="failure"] > .callout-content {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   color: rgb(255, 255, 255);
 }
 
@@ -799,7 +798,7 @@ html body .callout[data-callout="info"] > .callout-content {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   color: rgb(255, 255, 255);
 }
 
@@ -812,7 +811,7 @@ html body .callout[data-callout="note"] > .callout-content {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   color: rgb(255, 255, 255);
 }
 
@@ -825,7 +824,7 @@ html body .callout[data-callout="question"] > .callout-content {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   color: rgb(255, 255, 255);
 }
 
@@ -838,7 +837,7 @@ html body .callout[data-callout="quote"] > .callout-content {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   color: rgb(255, 255, 255);
 }
 
@@ -851,7 +850,7 @@ html body .callout[data-callout="success"] > .callout-content {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   color: rgb(255, 255, 255);
 }
 
@@ -864,7 +863,7 @@ html body .callout[data-callout="tip"] > .callout-content {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   color: rgb(255, 255, 255);
 }
 
@@ -877,7 +876,7 @@ html body .callout[data-callout="todo"] > .callout-content {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   color: rgb(255, 255, 255);
 }
 
@@ -945,7 +944,7 @@ html body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html body .search > .search-container > .search-space {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--prompt-background, rgba(0, 0, 0, 0));
 }
 
 html body .search > .search-container > .search-space > * {
@@ -991,41 +990,41 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body h1 {
-  color: rgb(255, 255, 255);
+  color: var(--h1-color, rgb(255, 255, 255));
   text-shadow: rgb(255, 255, 255) 0px 0px 3px;
 }
 
 html body h1.article-title {
-  color: rgb(255, 255, 255);
+  color: var(--inline-title-color, rgb(255, 255, 255));
 }
 
 html body h2 {
-  color: rgb(255, 255, 255);
+  color: var(--h2-color, rgb(255, 255, 255));
   text-shadow: rgb(255, 255, 255) 0px 0px 3px;
 }
 
 html body h2.page-title, html h2.page-title a {
-  color: rgb(255, 255, 255);
+  color: var(--inline-title-color, rgb(255, 255, 255));
   text-shadow: rgb(255, 255, 255) 0px 0px 3px;
 }
 
 html body h3 {
-  color: rgb(255, 255, 255);
+  color: var(--h3-color, rgb(255, 255, 255));
   text-shadow: rgb(255, 255, 255) 0px 0px 3px;
 }
 
 html body h4 {
-  color: rgb(255, 255, 255);
+  color: var(--h4-color, rgb(255, 255, 255));
   text-shadow: rgb(255, 255, 255) 0px 0px 3px;
 }
 
 html body h5 {
-  color: rgb(255, 255, 255);
+  color: var(--h5-color, rgb(255, 255, 255));
   text-shadow: rgb(255, 255, 255) 0px 0px 3px;
 }
 
 html body h6 {
-  color: rgb(255, 255, 255);
+  color: var(--h6-color, rgb(255, 255, 255));
   text-shadow: rgb(255, 255, 255) 0px 0px 3px;
 }
 
@@ -1033,34 +1032,34 @@ html body hr {
   border-right-width: 0px;
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(255, 255, 255);
 }`,
     footer: `html body footer {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(226, 226, 226);
   border-left-color: rgb(226, 226, 226);
   border-right-color: rgb(226, 226, 226);
   border-top-color: rgb(226, 226, 226);
 }`,
     canvas: `html body .canvas-node-file {
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
 }
 
 html body .canvas-sidebar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
 }`,
     properties: `html body div#quartz-root {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-primary, rgba(0, 0, 0, 0));
 }`,
     stacked: `html body .stacked-page {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
 }
 
 html body .stacked-page-header {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(255, 255, 255);
@@ -1071,7 +1070,7 @@ html body .stacked-page-header {
 }
 
 html body .navigation-progress {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
 }
 
 html body abbr {

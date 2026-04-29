@@ -52,26 +52,22 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --bases-group-heading-property-size: 11px;
-  --blockquote-background-color: #242424;
-  --bodyFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
-  --codeFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --bases-group-heading-property-size: var(--font-ui-smaller, 11px);
+  --blockquote-background-color: var(--color-base-10, #242424);
   --color-base-23: #323232;
   --default-border-radius: 3px;
-  --divider-color: #323232;
-  --file-header-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --file-header-font-size: 12px;
-  --font-default: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --divider-color: var(--color-base-23, #323232);
+  --file-header-font: var(--font-interface, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --file-header-font-size: var(--font-ui-small, 12px);
+  --font-default: var(--font-family-sans, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --font-family-iawriter-quattro: "iaWriterQuattro", mono;
   --font-family-ibm: "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-family-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-sans: var(--font-family-inter, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --font-family-serif: Times, Georgia, "Times New Roman", serif;
-  --font-interface: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-mermaid: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mermaid: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --font-paragraph: .87rem;
   --font-smallest: 0.7rem;
-  --font-text: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-ui-large: 17px;
   --font-ui-medium: 13px;
   --font-ui-small: 12px;
@@ -87,38 +83,36 @@ export const theme: ThemeData = {
   --h5-margin-top: 3rem;
   --h6-margin-bottom: .6rem;
   --h6-margin-top: 3rem;
-  --headerFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --hr-thickness: 1px;
   --list-spacing: 5px;
-  --metadata-input-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --metadata-input-font-size: .75rem;
-  --metadata-label-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --metadata-label-font-size: .75rem;
-  --metadata-sidebar-input-font-size: 12px;
-  --metadata-sidebar-label-font-size: 12px;
+  --metadata-input-font: var(--font-interface, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --metadata-input-font-size: var(--metadata-label-font-size, .75rem);
+  --metadata-label-font: var(--font-interface, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --metadata-label-font-size: var(--font-smaller, .75rem);
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 12px);
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 12px);
   --modal-max-width: 900px;
-  --modal-radius: 5px;
-  --nav-item-size: 12px;
+  --modal-radius: calc(var(--default-border-radius) + 2px);
+  --nav-item-size: var(--font-ui-small, 12px);
   --order-content: 3;
   --order-embedded-backlinks: 4;
   --order-inline-title: 2;
   --order-properties-metadata: 1;
-  --setting-group-heading-size: 13px;
+  --setting-group-heading-size: var(--font-ui-medium, 13px);
   --size-h1: 1.65rem;
   --size-h2: 1.45rem;
   --size-h3: 1.3rem;
   --size-h4: 1.15rem;
   --size-h5: 1rem;
-  --size-h6: .87rem;
-  --status-bar-border-color: #323232;
-  --status-bar-font-size: 11px;
-  --tab-font-size: .7rem;
-  --tab-outline-color: #323232;
-  --tab-radius-active: 3px;
-  --tab-stacked-font-size: 12px;
-  --tag-size: .75rem;
-  --titleFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
-  --vault-profile-font-size: 12px;
+  --size-h6: var(--font-paragraph, .87rem);
+  --status-bar-border-color: var(--divider-color, #323232);
+  --status-bar-font-size: var(--font-ui-smaller, 11px);
+  --tab-font-size: var(--font-ui-small, .7rem);
+  --tab-outline-color: var(--divider-color, #323232);
+  --tab-radius-active: var(--default-border-radius, 3px);
+  --tab-stacked-font-size: var(--font-ui-small, 12px);
+  --tag-size: var(--font-smaller, .75rem);
+  --vault-profile-font-size: var(--font-ui-small, 12px);
   --quartz-icon-color: currentColor;
 }
 
@@ -159,7 +153,7 @@ html[saved-theme="dark"] body del {
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(153, 153, 153);
+  color: var(--color-base-60, rgb(153, 153, 153));
   font-size: 12px;
 }
 
@@ -178,7 +172,7 @@ html[saved-theme="dark"] body a.internal-link.broken {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
-  background-color: rgb(36, 36, 36);
+  background-color: var(--blockquote-background-color, rgb(36, 36, 36));
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-bottom: 24px;
   padding-top: 24px;
@@ -578,7 +572,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="check
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
@@ -586,7 +580,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
@@ -594,7 +588,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
@@ -602,7 +596,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
@@ -610,7 +604,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
@@ -618,7 +612,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
@@ -626,7 +620,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
@@ -634,7 +628,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
@@ -642,7 +636,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
@@ -650,7 +644,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
@@ -658,7 +652,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
@@ -666,7 +660,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
@@ -674,7 +668,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
@@ -753,31 +747,37 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
 }
 
 html[saved-theme="dark"] body h1 {
-  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(218, 218, 218));
+  font-family: var(--h1-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h2 {
-  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(218, 218, 218));
+  font-family: var(--h2-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--inline-title-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h3 {
-  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(218, 218, 218));
+  font-family: var(--h3-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
-  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(218, 218, 218));
+  font-family: var(--h4-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
-  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(218, 218, 218));
+  font-family: var(--h5-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
-  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(218, 218, 218));
+  font-family: var(--h6-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body hr {
@@ -786,21 +786,21 @@ html[saved-theme="dark"] body hr {
   border-right-color: rgb(50, 50, 50);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  cursor: pointer;
+  cursor: var(--cursor, pointer);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: var(--nav-item-weight, 600);
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  cursor: pointer;
+  cursor: var(--cursor, pointer);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: var(--nav-item-weight, 600);
 }`,
     toc: `html[saved-theme="dark"] body li.depth-0 {
-  font-weight: 600;
+  font-weight: var(--nav-item-weight, 600);
 }`,
     footer: `html[saved-theme="dark"] body footer {
   border-bottom-color: rgb(50, 50, 50);
@@ -834,7 +834,7 @@ html[saved-theme="dark"] body .note-properties-tags {
   border-radius: 24px;
 }`,
     misc: `html[saved-theme="dark"] body .page-header h2.page-title {
-  color: rgb(153, 153, 153);
+  color: var(--color-base-60, rgb(153, 153, 153));
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -847,7 +847,7 @@ html[saved-theme="dark"] body input[type=text] {
 }
 
 html[saved-theme="dark"] body kbd {
-  font-size: 12.18px;
+  font-size: var(--code-size, 12.18px);
   padding-bottom: 1.218px;
   padding-left: 3.045px;
   padding-right: 3.045px;
@@ -878,26 +878,22 @@ html[saved-theme="dark"] body ul.tags > li {
   },
   light: {
     base: `:root:root {
-  --bases-group-heading-property-size: 11px;
-  --blockquote-background-color: #fafafa;
-  --bodyFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
-  --codeFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --bases-group-heading-property-size: var(--font-ui-smaller, 11px);
+  --blockquote-background-color: var(--color-base-10, #fafafa);
   --color-base-23: #eee;
   --default-border-radius: 3px;
-  --divider-color: #eee;
-  --file-header-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --file-header-font-size: 12px;
-  --font-default: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --divider-color: var(--color-base-23, #eee);
+  --file-header-font: var(--font-interface, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --file-header-font-size: var(--font-ui-small, 12px);
+  --font-default: var(--font-family-sans, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --font-family-iawriter-quattro: "iaWriterQuattro", mono;
   --font-family-ibm: "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-family-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-sans: var(--font-family-inter, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --font-family-serif: Times, Georgia, "Times New Roman", serif;
-  --font-interface: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-mermaid: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mermaid: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --font-paragraph: .87rem;
   --font-smallest: 0.7rem;
-  --font-text: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-ui-large: 17px;
   --font-ui-medium: 13px;
   --font-ui-small: 12px;
@@ -913,38 +909,36 @@ html[saved-theme="dark"] body ul.tags > li {
   --h5-margin-top: 3rem;
   --h6-margin-bottom: .6rem;
   --h6-margin-top: 3rem;
-  --headerFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --hr-thickness: 1px;
   --list-spacing: 5px;
-  --metadata-input-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --metadata-input-font-size: .75rem;
-  --metadata-label-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --metadata-label-font-size: .75rem;
-  --metadata-sidebar-input-font-size: 12px;
-  --metadata-sidebar-label-font-size: 12px;
+  --metadata-input-font: var(--font-interface, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --metadata-input-font-size: var(--metadata-label-font-size, .75rem);
+  --metadata-label-font: var(--font-interface, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --metadata-label-font-size: var(--font-smaller, .75rem);
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 12px);
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 12px);
   --modal-max-width: 900px;
-  --modal-radius: 5px;
-  --nav-item-size: 12px;
+  --modal-radius: calc(var(--default-border-radius) + 2px);
+  --nav-item-size: var(--font-ui-small, 12px);
   --order-content: 3;
   --order-embedded-backlinks: 4;
   --order-inline-title: 2;
   --order-properties-metadata: 1;
-  --setting-group-heading-size: 13px;
+  --setting-group-heading-size: var(--font-ui-medium, 13px);
   --size-h1: 1.65rem;
   --size-h2: 1.45rem;
   --size-h3: 1.3rem;
   --size-h4: 1.15rem;
   --size-h5: 1rem;
-  --size-h6: .87rem;
-  --status-bar-border-color: #eee;
-  --status-bar-font-size: 11px;
-  --tab-font-size: .7rem;
-  --tab-outline-color: #eee;
-  --tab-radius-active: 3px;
-  --tab-stacked-font-size: 12px;
-  --tag-size: .75rem;
-  --titleFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
-  --vault-profile-font-size: 12px;
+  --size-h6: var(--font-paragraph, .87rem);
+  --status-bar-border-color: var(--divider-color, #eee);
+  --status-bar-font-size: var(--font-ui-smaller, 11px);
+  --tab-font-size: var(--font-ui-small, .7rem);
+  --tab-outline-color: var(--divider-color, #eee);
+  --tab-radius-active: var(--default-border-radius, 3px);
+  --tab-stacked-font-size: var(--font-ui-small, 12px);
+  --tag-size: var(--font-smaller, .75rem);
+  --vault-profile-font-size: var(--font-ui-small, 12px);
   --quartz-icon-color: currentColor;
 }
 
@@ -985,7 +979,7 @@ html[saved-theme="light"] body del {
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(112, 112, 112);
+  color: var(--color-base-60, rgb(112, 112, 112));
   font-size: 12px;
 }
 
@@ -1004,7 +998,7 @@ html[saved-theme="light"] body a.internal-link.broken {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
-  background-color: rgb(250, 250, 250);
+  background-color: var(--blockquote-background-color, rgb(250, 250, 250));
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-bottom: 24px;
   padding-top: 24px;
@@ -1397,7 +1391,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="chec
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-summary, 0, 191, 188);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title {
@@ -1405,7 +1399,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-bug, 233, 49, 71);
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
@@ -1413,7 +1407,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-error, 233, 49, 71);
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
@@ -1421,7 +1415,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
-  --callout-color: 120, 82, 238;
+  --callout-color: var(--callout-example, 120, 82, 238);
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
@@ -1429,7 +1423,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-fail, 233, 49, 71);
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
@@ -1437,7 +1431,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-info, 8, 109, 221);
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
@@ -1445,7 +1439,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
@@ -1453,7 +1447,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-question, 236, 117, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title {
@@ -1461,7 +1455,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
@@ -1469,7 +1463,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
-  --callout-color: 8, 185, 78;
+  --callout-color: var(--callout-success, 8, 185, 78);
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
@@ -1477,7 +1471,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-tip, 0, 191, 188);
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
@@ -1485,7 +1479,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-todo, 8, 109, 221);
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
@@ -1493,7 +1487,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-warning, 236, 117, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
@@ -1572,31 +1566,37 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
 }
 
 html[saved-theme="light"] body h1 {
-  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(34, 34, 34));
+  font-family: var(--h1-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h2 {
-  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(34, 34, 34));
+  font-family: var(--h2-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--inline-title-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h3 {
-  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(34, 34, 34));
+  font-family: var(--h3-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
-  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(34, 34, 34));
+  font-family: var(--h4-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
-  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(34, 34, 34));
+  font-family: var(--h5-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
-  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(34, 34, 34));
+  font-family: var(--h6-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body hr {
@@ -1605,21 +1605,21 @@ html[saved-theme="light"] body hr {
   border-right-color: rgb(238, 238, 238);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  cursor: pointer;
+  cursor: var(--cursor, pointer);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: var(--nav-item-weight, 600);
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  cursor: pointer;
+  cursor: var(--cursor, pointer);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: var(--nav-item-weight, 600);
 }`,
     toc: `html[saved-theme="light"] body li.depth-0 {
-  font-weight: 600;
+  font-weight: var(--nav-item-weight, 600);
 }`,
     footer: `html[saved-theme="light"] body footer {
   border-bottom-color: rgb(238, 238, 238);
@@ -1653,7 +1653,7 @@ html[saved-theme="light"] body .note-properties-tags {
   border-radius: 24px;
 }`,
     misc: `html[saved-theme="light"] body .page-header h2.page-title {
-  color: rgb(112, 112, 112);
+  color: var(--color-base-60, rgb(112, 112, 112));
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -1666,7 +1666,7 @@ html[saved-theme="light"] body input[type=text] {
 }
 
 html[saved-theme="light"] body kbd {
-  font-size: 12.18px;
+  font-size: var(--code-size, 12.18px);
   padding-bottom: 1.218px;
   padding-left: 3.045px;
   padding-right: 3.045px;

@@ -10,536 +10,464 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --background-modifier-border: color-mix(
+  --background-modifier-border: var(--color-base-30, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --background-modifier-border-focus: color-mix(
+  ));
+  --background-modifier-border-focus: var(--color-base-40, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 80%,
     hsl(255, 100%, 80%)
-  );
-  --background-modifier-border-hover: color-mix(
+  ));
+  --background-modifier-border-hover: var(--color-base-35, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 95%,
     hsl(255, 100%, 80%)
-  );
-  --background-modifier-error: #e3365e;
-  --background-modifier-error-hover: #e3365e;
-  --background-modifier-form-field: color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000);
-  --background-modifier-form-field-hover: color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000);
-  --background-modifier-hover: color-mix(
+  ));
+  --background-modifier-error: var(--color-red, #e3365e);
+  --background-modifier-error-hover: var(--color-red, #e3365e);
+  --background-modifier-form-field: var(--color-base-20, color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000));
+  --background-modifier-hover: var(--color-base-35, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 95%,
     hsl(255, 100%, 80%)
-  );
-  --background-modifier-success: #52eea3;
-  --background-primary: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --background-primary-alt: color-mix(in srgb, hsl(238, 60%, 11%) 50%, #000);
-  --background-secondary: color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000);
-  --background-secondary-alt: color-mix(
+  ));
+  --background-modifier-success: var(--color-green, #52eea3);
+  --background-primary: var(--color-base-00, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  --background-primary-alt: var(--color-base-10, color-mix(in srgb, hsl(238, 60%, 11%) 50%, #000));
+  --background-secondary: var(--color-base-05, color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000));
+  --background-secondary-alt: var(--color-base-30, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --bases-cards-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --bases-cards-cover-background: color-mix(in srgb, hsl(238, 60%, 11%) 50%, #000);
-  --bases-cards-shadow: 0 0 0 1px color-mix(
+  ));
+  --bases-cards-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  --bases-cards-cover-background: var(--background-primary-alt, color-mix(in srgb, hsl(238, 60%, 11%) 50%, #000));
+  --bases-embed-border-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --bases-cards-shadow-hover: 0 0 0 1px color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 95%,
-    hsl(255, 100%, 80%)
-  );
-  --bases-embed-border-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 90%,
-    hsl(255, 100%, 80%)
-  );
-  --bases-group-heading-property-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 30%,
-    hsl(255, 100%, 80%)
-  );
-  --bases-table-border-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 90%,
-    hsl(255, 100%, 80%)
-  );
-  --bases-table-cell-background-active: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --bases-table-cell-background-disabled: color-mix(in srgb, hsl(238, 60%, 11%) 50%, #000);
-  --bases-table-cell-shadow-active: 0 0 0 2px color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 80%,
-    hsl(255, 100%, 80%)
-  );
-  --bases-table-group-background: color-mix(in srgb, hsl(238, 60%, 11%) 50%, #000);
-  --bases-table-header-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --bases-table-header-background-hover: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 95%,
-    hsl(255, 100%, 80%)
-  );
-  --bases-table-header-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 30%,
-    hsl(255, 100%, 80%)
-  );
-  --bases-table-summary-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --bases-table-summary-background-hover: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 95%,
-    hsl(255, 100%, 80%)
-  );
-  --black: #000;
-  --blue: #437cf3;
-  --blue-violet: #6f51f4;
-  --blur-background: color-mix(in srgb, color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 90%,
-    hsl(255, 100%, 80%)
-  ) 65%, transparent) linear-gradient(color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 90%,
-    hsl(255, 100%, 80%)
-  ), color-mix(in srgb, color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 90%,
-    hsl(255, 100%, 80%)
-  ) 65%, transparent));
-  --canvas-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --canvas-card-label-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 60%,
-    hsl(255, 100%, 80%)
-  );
-  --canvas-dot-pattern: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 90%,
-    hsl(255, 100%, 80%)
-  );
-  --caret-color: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --checkbox-border-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 60%,
-    hsl(255, 100%, 80%)
-  );
-  --checkbox-border-color-hover: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 30%,
-    hsl(255, 100%, 80%)
-  );
-  --checkbox-marker-color: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --checklist-done-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 30%,
-    hsl(255, 100%, 80%)
-  );
-  --code-background: color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000);
-  --code-border-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 90%,
-    hsl(255, 100%, 80%)
-  );
-  --code-bracket-background: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 95%,
-    hsl(255, 100%, 80%)
-  );
-  --code-comment: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 60%,
-    hsl(255, 100%, 80%)
-  );
-  --code-function: #ffd85e;
-  --code-important: #fa9f50;
-  --code-keyword: #e54f9b;
-  --code-normal: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --code-operator: #e3365e;
-  --code-property: #43cfea;
-  --code-punctuation: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 30%,
-    hsl(255, 100%, 80%)
-  );
-  --code-string: #52eea3;
-  --code-tag: #e3365e;
-  --code-value: #9446f8;
-  --collapse-icon-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 60%,
-    hsl(255, 100%, 80%)
-  );
-  --color-base-00: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --color-base-05: color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000);
-  --color-base-10: color-mix(in srgb, hsl(238, 60%, 11%) 50%, #000);
-  --color-base-100: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 0%,
-    hsl(255, 100%, 80%)
-  );
-  --color-base-20: color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000);
-  --color-base-25: color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000);
-  --color-base-30: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 90%,
-    hsl(255, 100%, 80%)
-  );
-  --color-base-35: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 95%,
-    hsl(255, 100%, 80%)
-  );
-  --color-base-40: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 80%,
-    hsl(255, 100%, 80%)
-  );
-  --color-base-50: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 60%,
-    hsl(255, 100%, 80%)
-  );
-  --color-base-60: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 60%,
-    hsl(255, 100%, 80%)
-  );
-  --color-base-70: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 30%,
-    hsl(255, 100%, 80%)
-  );
-  --color-blue: #437cf3;
-  --color-cyan: #43cfea;
-  --color-green: #52eea3;
-  --color-orange: #fa9f50;
-  --color-pink: #e54f9b;
-  --color-purple: #9446f8;
-  --color-red: #e3365e;
-  --color-yellow: #ffd85e;
-  --cool-cyan: #43cfea;
-  --cool-gray: #515768;
-  --cyan: #51e1e9;
-  --dark: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
-  --darkgray: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
-  --divider-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 90%,
-    hsl(255, 100%, 80%)
-  );
-  --dropdown-background: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 90%,
-    hsl(255, 100%, 80%)
-  );
-  --dropdown-background-hover: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 95%,
-    hsl(255, 100%, 80%)
-  );
-  --embed-block-shadow-hover: 0 0 0 1px color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 90%,
-    hsl(255, 100%, 80%)
-  ), inset 0 0 0 1px color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 90%,
-    hsl(255, 100%, 80%)
-  );
-  --file-header-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --file-header-background-focused: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --flair-background: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 90%,
-    hsl(255, 100%, 80%)
-  );
-  --flair-color: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --footnote-divider-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 90%,
-    hsl(255, 100%, 80%)
-  );
-  --footnote-id-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 30%,
-    hsl(255, 100%, 80%)
-  );
-  --footnote-id-color-no-occurrences: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 60%,
-    hsl(255, 100%, 80%)
-  );
-  --footnote-input-background-active: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 95%,
-    hsl(255, 100%, 80%)
-  );
-  --graph-line: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 95%,
-    hsl(255, 100%, 80%)
-  );
-  --graph-node: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 30%,
-    hsl(255, 100%, 80%)
-  );
-  --graph-node-attachment: #ffd85e;
-  --graph-node-tag: #52eea3;
-  --graph-node-unresolved: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 60%,
-    hsl(255, 100%, 80%)
-  );
-  --graph-text: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --gray: var(--text-muted, color-mix(
+  ));
+  --bases-group-heading-property-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
   ));
-  --h1-color: #43cfea;
-  --h2-color: #54b6f8;
-  --h3-color: #437cf3;
-  --h4-color: #6f51f4;
-  --h5-color: #9446f8;
-  --h6-color: #c952ed;
-  --heading-formatting: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 60%,
-    hsl(255, 100%, 80%)
-  );
-  --highlight: var(--text-highlight-bg, color-mix(in srgb, #43cfea 25%, transparent));
-  --hot-red: #e3365e;
-  --hr-color: color-mix(
+  --bases-table-border-color: var(--table-border-color, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
+  ));
+  --bases-table-cell-background-active: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  --bases-table-cell-background-disabled: var(--background-primary-alt, color-mix(in srgb, hsl(238, 60%, 11%) 50%, #000));
+  --bases-table-group-background: var(--background-primary-alt, color-mix(in srgb, hsl(238, 60%, 11%) 50%, #000));
+  --bases-table-header-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  --bases-table-header-background-hover: var(--background-modifier-hover, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 95%,
+    hsl(255, 100%, 80%)
+  ));
+  --bases-table-header-color: var(--text-muted, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  ));
+  --bases-table-summary-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  --bases-table-summary-background-hover: var(--background-modifier-hover, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 95%,
+    hsl(255, 100%, 80%)
+  ));
+  --black: #000;
+  --blue: #437cf3;
+  --blue-violet: #6f51f4;
+  --canvas-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  --canvas-card-label-color: var(--text-faint, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  ));
+  --canvas-dot-pattern: var(--color-base-30, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  ));
+  --caret-color: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --checkbox-border-color: var(--text-faint, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  ));
+  --checkbox-border-color-hover: var(--text-muted, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  ));
+  --checkbox-marker-color: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  --checklist-done-color: var(--text-muted, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  ));
+  --code-background: var(--color-base-25, color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000));
+  --code-border-color: var(--background-modifier-border, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  ));
+  --code-bracket-background: var(--background-modifier-hover, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 95%,
+    hsl(255, 100%, 80%)
+  ));
+  --code-comment: var(--text-faint, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  ));
+  --code-function: var(--color-yellow, #ffd85e);
+  --code-important: var(--color-orange, #fa9f50);
+  --code-keyword: var(--color-pink, #e54f9b);
+  --code-normal: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --code-operator: var(--color-red, #e3365e);
+  --code-property: var(--color-cyan, #43cfea);
+  --code-punctuation: var(--text-muted, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  ));
+  --code-string: var(--color-green, #52eea3);
+  --code-tag: var(--color-red, #e3365e);
+  --code-value: var(--color-purple, #9446f8);
+  --collapse-icon-color: var(--text-faint, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  ));
+  --color-base-00: color-mix(in srgb, var(--vauxhall-bg) 25%, var(--black));
+  --color-base-05: color-mix(in srgb, var(--vauxhall-bg) 40%, var(--black));
+  --color-base-10: color-mix(in srgb, var(--vauxhall-bg) 50%, var(--black));
+  --color-base-100: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 0%,
+    var(--vauxhall-fg)
   );
+  --color-base-20: color-mix(in srgb, var(--vauxhall-bg) 80%, var(--black));
+  --color-base-25: color-mix(in srgb, var(--vauxhall-bg) 80%, var(--black));
+  --color-base-30: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 90%,
+    var(--vauxhall-fg)
+  );
+  --color-base-35: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 95%,
+    var(--vauxhall-fg)
+  );
+  --color-base-40: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 80%,
+    var(--vauxhall-fg)
+  );
+  --color-base-50: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 60%,
+    var(--vauxhall-fg)
+  );
+  --color-base-60: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 60%,
+    var(--vauxhall-fg)
+  );
+  --color-base-70: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 30%,
+    var(--vauxhall-fg)
+  );
+  --color-blue: var(--blue, #437cf3);
+  --color-cyan: var(--cool-cyan, #43cfea);
+  --color-green: var(--mint, #52eea3);
+  --color-orange: #fa9f50;
+  --color-pink: var(--magenta, #e54f9b);
+  --color-purple: var(--violet, #9446f8);
+  --color-red: var(--hot-red, #e3365e);
+  --color-yellow: #ffd85e;
+  --cool-cyan: #43cfea;
+  --cool-gray: #515768;
+  --cyan: #51e1e9;
+  --dark: var(--text-normal, color-mix(in srgb, var(--vauxhall-fg) 30%, var(--white)));
+  --darkgray: var(--text-normal, color-mix(in srgb, var(--vauxhall-fg) 30%, var(--white)));
+  --divider-color: var(--background-modifier-border, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  ));
+  --dropdown-background: var(--interactive-normal, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  ));
+  --dropdown-background-hover: var(--interactive-hover, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 95%,
+    hsl(255, 100%, 80%)
+  ));
+  --file-header-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  --file-header-background-focused: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  --flair-background: var(--interactive-normal, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  ));
+  --flair-color: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --footnote-divider-color: var(--metadata-divider-color, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  ));
+  --footnote-id-color: var(--text-muted, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  ));
+  --footnote-id-color-no-occurrences: var(--text-faint, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  ));
+  --footnote-input-background-active: var(--metadata-input-background-active, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 95%,
+    hsl(255, 100%, 80%)
+  ));
+  --graph-node: var(--text-muted, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  ));
+  --graph-node-attachment: var(--color-yellow, #ffd85e);
+  --graph-node-tag: var(--color-green, #52eea3);
+  --graph-node-unresolved: var(--text-faint, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  ));
+  --graph-text: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --gray: var(--text-muted, var(--color-base-70, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  )));
+  --h1-color: var(--cool-cyan, #43cfea);
+  --h2-color: var(--light-blue, #54b6f8);
+  --h3-color: var(--blue, #437cf3);
+  --h4-color: var(--blue-violet, #6f51f4);
+  --h5-color: var(--violet, #9446f8);
+  --h6-color: var(--purple, #c952ed);
+  --heading-formatting: var(--text-faint, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  ));
+  --highlight: var(--text-highlight-bg, color-mix(in srgb, var(--h1-color) 25%, transparent));
+  --hot-red: #e3365e;
+  --hr-color: var(--background-modifier-border, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  ));
   --hue-bg: 238;
   --hue-fg: 255;
-  --icon-color: color-mix(
+  --icon-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --icon-color-focused: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --icon-color-hover: color-mix(
+  ));
+  --icon-color-focused: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --icon-color-hover: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --indentation-guide-color: color-mix(
+  ));
+  --indentation-guide-color: var(--color-base-30, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --indentation-guide-color-active: color-mix(
+  ));
+  --indentation-guide-color-active: var(--color-base-35, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 95%,
     hsl(255, 100%, 80%)
-  );
-  --inline-title-color: #43cfea;
-  --input-date-separator: color-mix(
+  ));
+  --inline-title-color: var(--h1-color, #43cfea);
+  --input-date-separator: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 60%,
     hsl(255, 100%, 80%)
-  );
-  --input-placeholder-color: color-mix(
+  ));
+  --input-placeholder-color: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 60%,
     hsl(255, 100%, 80%)
-  );
-  --interactive-hover: color-mix(
+  ));
+  --interactive-hover: var(--color-base-35, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 95%,
     hsl(255, 100%, 80%)
-  );
-  --interactive-normal: color-mix(
+  ));
+  --interactive-normal: var(--color-base-30, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --light: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  ));
+  --light: var(--background-primary, var(--color-base-00, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000)));
   --light-blue: #54b6f8;
-  --lightgray: var(--background-secondary, color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000));
-  --list-marker-color: color-mix(
+  --lightgray: var(--background-secondary, var(--color-base-05, color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000)));
+  --list-marker-color: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 60%,
     hsl(255, 100%, 80%)
-  );
-  --list-marker-color-hover: color-mix(
+  ));
+  --list-marker-color-hover: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
+  ));
   --lum: 11%;
   --magenta: #e54f9b;
-  --menu-background: color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000);
-  --menu-border-color: color-mix(
+  --menu-background: var(--background-secondary, color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000));
+  --menu-border-color: var(--background-modifier-border-hover, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 95%,
     hsl(255, 100%, 80%)
-  );
-  --metadata-border-color: color-mix(
+  ));
+  --metadata-border-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --metadata-divider-color: color-mix(
+  ));
+  --metadata-divider-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --metadata-input-background-active: color-mix(
+  ));
+  --metadata-input-background-active: var(--background-modifier-hover, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 95%,
     hsl(255, 100%, 80%)
-  );
-  --metadata-input-text-color: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --metadata-label-background-active: color-mix(
+  ));
+  --metadata-input-text-color: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --metadata-label-background-active: var(--background-modifier-hover, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 95%,
     hsl(255, 100%, 80%)
-  );
-  --metadata-label-text-color: color-mix(
+  ));
+  --metadata-label-text-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --metadata-label-text-color-hover: color-mix(
+  ));
+  --metadata-label-text-color-hover: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --metadata-property-background-active: color-mix(
+  ));
+  --metadata-property-background-active: var(--background-modifier-hover, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 95%,
     hsl(255, 100%, 80%)
-  );
-  --metadata-property-box-shadow-focus: 0 0 0 2px color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 80%,
-    hsl(255, 100%, 80%)
-  );
-  --metadata-property-box-shadow-hover: 0 0 0 1px color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 95%,
-    hsl(255, 100%, 80%)
-  );
+  ));
   --mint: #52eea3;
-  --modal-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --modal-border-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 80%,
-    hsl(255, 100%, 80%)
-  );
-  --nav-collapse-icon-color: color-mix(
+  --modal-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  --nav-collapse-icon-color: var(--collapse-icon-color, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 60%,
     hsl(255, 100%, 80%)
-  );
-  --nav-collapse-icon-color-collapsed: color-mix(
+  ));
+  --nav-collapse-icon-color-collapsed: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 60%,
     hsl(255, 100%, 80%)
-  );
-  --nav-heading-color: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --nav-heading-color-collapsed: color-mix(
+  ));
+  --nav-heading-color: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --nav-heading-color-collapsed: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 60%,
     hsl(255, 100%, 80%)
-  );
-  --nav-heading-color-collapsed-hover: color-mix(
+  ));
+  --nav-heading-color-collapsed-hover: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --nav-heading-color-hover: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --nav-indentation-guide-color: color-mix(
+  ));
+  --nav-heading-color-hover: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --nav-indentation-guide-color: var(--color-base-30, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --nav-item-background-active: color-mix(
+  ));
+  --nav-item-background-active: var(--background-modifier-hover, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 95%,
     hsl(255, 100%, 80%)
-  );
-  --nav-item-background-hover: color-mix(
+  ));
+  --nav-item-background-hover: var(--background-modifier-hover, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 95%,
     hsl(255, 100%, 80%)
-  );
-  --nav-item-color: color-mix(
+  ));
+  --nav-item-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --nav-item-color-active: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --nav-item-color-hover: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --nav-item-color-selected: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --nav-tag-color: color-mix(
+  ));
+  --nav-item-color-active: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --nav-item-color-hover: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --nav-item-color-selected: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --nav-tag-color: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 60%,
     hsl(255, 100%, 80%)
-  );
-  --nav-tag-color-active: color-mix(
+  ));
+  --nav-tag-color-active: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --nav-tag-color-hover: color-mix(
+  ));
+  --nav-tag-color-hover: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --pdf-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --pdf-page-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --pdf-shadow: 0 0 0 1px color-mix(
+  ));
+  --pdf-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  --pdf-page-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  --pdf-sidebar-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  --pill-border-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --pdf-sidebar-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --pdf-thumbnail-shadow: 0 0 0 1px color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 90%,
-    hsl(255, 100%, 80%)
-  );
-  --pill-border-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 90%,
-    hsl(255, 100%, 80%)
-  );
-  --pill-border-color-hover: color-mix(
+  ));
+  --pill-border-color-hover: var(--background-modifier-border-hover, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 95%,
     hsl(255, 100%, 80%)
-  );
-  --pill-color: color-mix(
+  ));
+  --pill-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --pill-color-hover: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --pill-color-remove: color-mix(
+  ));
+  --pill-color-hover: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --pill-color-remove: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 60%,
     hsl(255, 100%, 80%)
-  );
-  --prompt-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --prompt-border-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 80%,
-    hsl(255, 100%, 80%)
-  );
+  ));
+  --prompt-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
   --purple: #c952ed;
-  --raised-background: color-mix(in srgb, color-mix(
+  --raised-background: var(--blur-background, color-mix(in srgb, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
@@ -551,205 +479,204 @@ export const theme: ThemeData = {
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  ) 65%, transparent));
-  --ribbon-background: color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000);
-  --ribbon-background-collapsed: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
+  ) 65%, transparent)));
+  --ribbon-background: var(--background-secondary, color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000));
+  --ribbon-background-collapsed: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
   --sat-bg: 60%;
   --sat-fg: 100%;
-  --search-clear-button-color: color-mix(
+  --search-clear-button-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --search-icon-color: color-mix(
+  ));
+  --search-icon-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --search-result-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --setting-group-heading-color: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --setting-items-background: color-mix(in srgb, hsl(238, 60%, 11%) 50%, #000);
-  --setting-items-border-color: color-mix(
+  ));
+  --search-result-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  --setting-group-heading-color: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --setting-items-background: var(--background-primary-alt, color-mix(in srgb, hsl(238, 60%, 11%) 50%, #000));
+  --setting-items-border-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --shiki-active-tab-border-color: color-mix(
+  ));
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --shiki-code-background: color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000);
-  --shiki-code-comment: color-mix(
+  ));
+  --shiki-code-background: var(--code-background, color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000));
+  --shiki-code-comment: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 60%,
     hsl(255, 100%, 80%)
-  );
-  --shiki-code-function: #52eea3;
-  --shiki-code-important: #fa9f50;
-  --shiki-code-keyword: #e54f9b;
-  --shiki-code-normal: color-mix(
+  ));
+  --shiki-code-function: var(--color-green, #52eea3);
+  --shiki-code-important: var(--color-orange, #fa9f50);
+  --shiki-code-keyword: var(--color-pink, #e54f9b);
+  --shiki-code-normal: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --shiki-code-property: #43cfea;
-  --shiki-code-punctuation: color-mix(
+  ));
+  --shiki-code-property: var(--color-cyan, #43cfea);
+  --shiki-code-punctuation: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --shiki-code-string: #ffd85e;
-  --shiki-code-value: #9446f8;
-  --shiki-gutter-border-color: color-mix(
+  ));
+  --shiki-code-string: var(--color-yellow, #ffd85e);
+  --shiki-code-value: var(--color-purple, #9446f8);
+  --shiki-gutter-border-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --shiki-gutter-text-color: color-mix(
+  ));
+  --shiki-gutter-text-color: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 60%,
     hsl(255, 100%, 80%)
-  );
-  --shiki-gutter-text-color-highlight: color-mix(
+  ));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --shiki-highlight-neutral: color-mix(
+  ));
+  --shiki-highlight-neutral: var(--shiki-code-normal, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --shiki-terminal-dots-color: color-mix(
+  ));
+  --shiki-terminal-dots-color: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 60%,
     hsl(255, 100%, 80%)
-  );
-  --slider-thumb-border-color: color-mix(
+  ));
+  --slider-thumb-border-color: var(--background-modifier-border-hover, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 95%,
     hsl(255, 100%, 80%)
-  );
-  --slider-track-background: color-mix(
+  ));
+  --slider-track-background: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --status-bar-background: color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000);
-  --status-bar-border-color: color-mix(
+  ));
+  --status-bar-background: var(--background-secondary, color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000));
+  --status-bar-border-color: var(--divider-color, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --status-bar-text-color: color-mix(
+  ));
+  --status-bar-text-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --suggestion-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --sync-avatar-color-1: #e3365e;
-  --sync-avatar-color-2: #fa9f50;
-  --sync-avatar-color-3: #ffd85e;
-  --sync-avatar-color-4: #52eea3;
-  --sync-avatar-color-5: #43cfea;
-  --sync-avatar-color-6: #437cf3;
-  --sync-avatar-color-7: #9446f8;
-  --sync-avatar-color-8: #e54f9b;
-  --tab-background-active: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --tab-container-background: color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000);
-  --tab-divider-color: color-mix(
+  ));
+  --suggestion-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  --sync-avatar-color-1: var(--color-red, #e3365e);
+  --sync-avatar-color-2: var(--color-orange, #fa9f50);
+  --sync-avatar-color-3: var(--color-yellow, #ffd85e);
+  --sync-avatar-color-4: var(--color-green, #52eea3);
+  --sync-avatar-color-5: var(--color-cyan, #43cfea);
+  --sync-avatar-color-6: var(--color-blue, #437cf3);
+  --sync-avatar-color-7: var(--color-purple, #9446f8);
+  --sync-avatar-color-8: var(--color-pink, #e54f9b);
+  --tab-background-active: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  --tab-container-background: var(--background-secondary, color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000));
+  --tab-divider-color: var(--background-modifier-border-hover, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 95%,
     hsl(255, 100%, 80%)
-  );
-  --tab-outline-color: color-mix(
+  ));
+  --tab-outline-color: var(--divider-color, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --tab-switcher-background: color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000);
-  --tab-switcher-menubar-background: linear-gradient(to top, color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000), transparent);
-  --tab-text-color: color-mix(
+  ));
+  --tab-switcher-background: var(--background-secondary, color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000));
+  --tab-text-color: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 60%,
     hsl(255, 100%, 80%)
-  );
-  --tab-text-color-active: color-mix(
+  ));
+  --tab-text-color-active: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --tab-text-color-focused: color-mix(
+  ));
+  --tab-text-color-focused: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --tab-text-color-focused-active: color-mix(
+  ));
+  --tab-text-color-focused-active: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --tab-text-color-focused-active-current: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --table-add-button-border-color: color-mix(
+  ));
+  --tab-text-color-focused-active-current: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --table-add-button-border-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --table-border-color: color-mix(
+  ));
+  --table-border-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --table-drag-handle-color: color-mix(
+  ));
+  --table-drag-handle-color: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 60%,
     hsl(255, 100%, 80%)
-  );
-  --table-header-border-color: color-mix(
+  ));
+  --table-header-border-color: var(--table-border-color, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --table-header-color: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --text-error: #e3365e;
-  --text-faint: color-mix(
+  ));
+  --table-header-color: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --text-error: var(--color-red, #e3365e);
+  --text-faint: var(--color-base-50, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 60%,
     hsl(255, 100%, 80%)
-  );
-  --text-highlight-bg: color-mix(in srgb, #43cfea 25%, transparent);
+  ));
+  --text-highlight-bg: color-mix(in srgb, var(--h1-color) 25%, transparent);
   --text-highlight-bg-active: color-mix(
     in srgb,
-    #43cfea 25%,
+    var(--h1-color) 25%,
     transparent
   );
-  --text-muted: color-mix(
+  --text-muted: var(--color-base-70, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --text-normal: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --text-success: #52eea3;
-  --text-warning: #fa9f50;
-  --textHighlight: var(--text-highlight-bg, color-mix(in srgb, #43cfea 25%, transparent));
-  --titlebar-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
-  --titlebar-background-focused: color-mix(in srgb, hsl(238, 60%, 11%) 50%, #000);
-  --titlebar-border-color: color-mix(
+  ));
+  --text-normal: color-mix(in srgb, var(--vauxhall-fg) 30%, var(--white));
+  --text-success: var(--color-green, #52eea3);
+  --text-warning: var(--color-orange, #fa9f50);
+  --textHighlight: var(--text-highlight-bg, color-mix(in srgb, var(--h1-color) 25%, transparent));
+  --titlebar-background: var(--color-base-00, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000));
+  --titlebar-background-focused: var(--color-base-10, color-mix(in srgb, hsl(238, 60%, 11%) 50%, #000));
+  --titlebar-border-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
-  );
-  --titlebar-text-color: color-mix(
+  ));
+  --titlebar-text-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 11%) 30%,
     hsl(255, 100%, 80%)
-  );
-  --titlebar-text-color-focused: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --vault-profile-color: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --vault-profile-color-hover: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --vauxhall-bg: hsl(238, 60%, 11%);
-  --vauxhall-fg: hsl(255, 100%, 80%);
+  ));
+  --titlebar-text-color-focused: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --vault-profile-color: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --vault-profile-color-hover: var(--vault-profile-color, color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff));
+  --vauxhall-bg: hsl(var(--hue-bg), var(--sat-bg), var(--lum));
+  --vauxhall-fg: hsl(var(--hue-fg), var(--sat-fg), 80%);
   --violet: #9446f8;
   --white: #fff;
   --quartz-icon-color: currentColor;
@@ -761,17 +688,17 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: color(srgb 0.0176 0.01936 0.0704);
+  background-color: var(--tab-container-background, color(srgb 0.0176 0.01936 0.0704));
   color: color(srgb 0.91 0.88 1);
 }
 
 html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: color(srgb 0.011 0.0121 0.044);
+  background-color: var(--background-primary, color(srgb 0.011 0.0121 0.044));
   color: color(srgb 0.91 0.88 1);
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
-  background-color: color(srgb 0.0176 0.01936 0.0704);
+  background-color: var(--background-secondary, color(srgb 0.0176 0.01936 0.0704));
   color: color(srgb 0.91 0.88 1);
 }
 
@@ -780,37 +707,37 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: color(srgb 0.0176 0.01936 0.0704);
+  background-color: var(--tab-container-background, color(srgb 0.0176 0.01936 0.0704));
   border-left-color: color(srgb 0.1096 0.10356 0.2584);
   color: color(srgb 0.91 0.88 1);
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
-  color: color(srgb 0.91 0.88 1);
+  color: var(--bold-color, color(srgb 0.91 0.88 1));
   outline: color(srgb 0.91 0.88 1) none 0px;
   text-decoration-color: color(srgb 0.91 0.88 1);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
-  color: color(srgb 0.91 0.88 1);
+  color: var(--italic-color, color(srgb 0.91 0.88 1));
   outline: color(srgb 0.91 0.88 1) none 0px;
   text-decoration-color: color(srgb 0.91 0.88 1);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
-  color: color(srgb 0.91 0.88 1);
+  color: var(--italic-color, color(srgb 0.91 0.88 1));
   outline: color(srgb 0.91 0.88 1) none 0px;
   text-decoration-color: color(srgb 0.91 0.88 1);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
-  color: color(srgb 0.91 0.88 1);
+  color: var(--bold-color, color(srgb 0.91 0.88 1));
   outline: color(srgb 0.91 0.88 1) none 0px;
   text-decoration-color: color(srgb 0.91 0.88 1);
 }
 
 html[saved-theme="dark"] body .text-highlight {
-  background-color: color(srgb 0.262745 0.811765 0.917647 / 0.25);
-  color: color(srgb 0.91 0.88 1);
+  background-color: var(--text-highlight-bg, color(srgb 0.262745 0.811765 0.917647 / 0.25));
+  color: var(--text-normal, color(srgb 0.91 0.88 1));
   outline: color(srgb 0.91 0.88 1) none 0px;
   text-decoration-color: color(srgb 0.91 0.88 1);
 }
@@ -822,7 +749,7 @@ html[saved-theme="dark"] body del {
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: color(srgb 0.91 0.88 1);
+  color: var(--text-normal, color(srgb 0.91 0.88 1));
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
@@ -830,7 +757,7 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="dark"] body p {
-  color: color(srgb 0.5032 0.43452 0.7528);
+  color: var(--text-muted, color(srgb 0.5032 0.43452 0.7528));
   outline: color(srgb 0.5032 0.43452 0.7528) none 0px;
   text-decoration-color: color(srgb 0.5032 0.43452 0.7528);
 }`,
@@ -857,7 +784,7 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-color: color(srgb 0.91 0.88 1);
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
-  color: color(srgb 0.3064 0.26904 0.5056);
+  color: var(--text-faint, color(srgb 0.3064 0.26904 0.5056));
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: color(srgb 0.91 0.88 1);
@@ -875,7 +802,7 @@ html[saved-theme="dark"] body td {
   border-left-color: color(srgb 0.1096 0.10356 0.2584);
   border-right-color: color(srgb 0.1096 0.10356 0.2584);
   border-top-color: color(srgb 0.1096 0.10356 0.2584);
-  color: color(srgb 0.91 0.88 1);
+  color: var(--table-text-color, color(srgb 0.91 0.88 1));
 }
 
 html[saved-theme="dark"] body th {
@@ -883,19 +810,19 @@ html[saved-theme="dark"] body th {
   border-left-color: color(srgb 0.1096 0.10356 0.2584);
   border-right-color: color(srgb 0.1096 0.10356 0.2584);
   border-top-color: color(srgb 0.1096 0.10356 0.2584);
-  color: color(srgb 0.91 0.88 1);
+  color: var(--table-header-color, color(srgb 0.91 0.88 1));
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: color(srgb 0.0352 0.03872 0.1408);
+  background-color: var(--code-background, color(srgb 0.0352 0.03872 0.1408));
   border-bottom-color: color(srgb 0.1096 0.10356 0.2584);
   border-left-color: color(srgb 0.1096 0.10356 0.2584);
   border-right-color: color(srgb 0.1096 0.10356 0.2584);
   border-top-color: color(srgb 0.1096 0.10356 0.2584);
-  color: color(srgb 0.91 0.88 1);
+  color: var(--code-normal, color(srgb 0.91 0.88 1));
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: color(srgb 0.0352 0.03872 0.1408);
+  background-color: var(--code-background, color(srgb 0.0352 0.03872 0.1408));
   border-bottom-color: color(srgb 0.1096 0.10356 0.2584);
   border-left-color: color(srgb 0.1096 0.10356 0.2584);
   border-right-color: color(srgb 0.1096 0.10356 0.2584);
@@ -938,7 +865,7 @@ html[saved-theme="dark"] body video {
   border-top-color: color(srgb 0.91 0.88 1);
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: color(srgb 0.022 0.0242 0.088);
+  background-color: var(--background-primary-alt, color(srgb 0.022 0.0242 0.088));
   border-bottom-color: color(srgb 0.5032 0.43452 0.7528);
   border-left-color: color(srgb 0.5032 0.43452 0.7528);
   border-right-color: color(srgb 0.5032 0.43452 0.7528);
@@ -1525,7 +1452,7 @@ html[saved-theme="dark"] body .callout > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -1546,7 +1473,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -1567,7 +1494,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -1588,7 +1515,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -1609,7 +1536,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -1630,7 +1557,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -1651,7 +1578,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -1672,9 +1599,545 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
-  --callout-color: 2, 122, 255;
-  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000) 50%);
-  background-color: rgba(2, 122, 255, 0.1);
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+  --background-modifier-border: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 80%,
+    hsl(255, 100%, 80%)
+  );
+  --background-modifier-border-hover: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 95%,
+    hsl(255, 100%, 80%)
+  );
+  --background-modifier-error: #e3365e;
+  --background-modifier-error-hover: #e3365e;
+  --background-modifier-error-rgb: 251, 70, 76;
+  --background-modifier-form-field: color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000);
+  --background-modifier-form-field-hover: color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000);
+  --background-modifier-hover: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 95%,
+    hsl(255, 100%, 80%)
+  );
+  --background-modifier-success: #52eea3;
+  --background-modifier-success-rgb: 68, 207, 110;
+  --background-primary: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
+  --background-primary-alt: color-mix(in srgb, hsl(238, 60%, 11%) 50%, #000);
+  --background-secondary: color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000);
+  --background-secondary-alt: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  );
+  --blockquote-border-color: hsl(258, 88%, 66%);
+  --blur-background: color-mix(in srgb, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  ) 65%, transparent) linear-gradient(color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  ), color-mix(in srgb, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  ) 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-bug: 251, 70, 76;
+  --callout-color: var(--callout-default, 2, 122, 255);
+  --callout-default: 2, 122, 255;
+  --callout-error: 251, 70, 76;
+  --callout-example: 168, 130, 255;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-info: 2, 122, 255;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 233, 151, 63;
+  --callout-radius: 4px;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
+  --callout-title-weight: 600;
+  --callout-todo: 2, 122, 255;
+  --callout-warning: 233, 151, 63;
+  --canvas-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 4px;
+  --canvas-dot-pattern: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  );
+  --caret-color: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
+  --checkbox-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  );
+  --checkbox-border-color-hover: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  );
+  --checkbox-color: hsl(258, 88%, 66%);
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+  --checkbox-marker-color: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
+  --checkbox-radius: 4px;
+  --checkbox-size: 16px;
+  --checklist-done-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  );
+  --clickable-icon-radius: 4px;
+  --code-background: color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000);
+  --code-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  );
+  --code-bracket-background: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 95%,
+    hsl(255, 100%, 80%)
+  );
+  --code-comment: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  );
+  --code-function: #ffd85e;
+  --code-important: #fa9f50;
+  --code-keyword: #e54f9b;
+  --code-normal: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
+  --code-operator: #e3365e;
+  --code-property: #43cfea;
+  --code-punctuation: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  );
+  --code-radius: 4px;
+  --code-size: 0.875em;
+  --code-string: #52eea3;
+  --code-tag: #e3365e;
+  --code-value: #9446f8;
+  --collapse-icon-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  );
+  --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+  --color-accent: hsl(258, 88%, 66%);
+  --color-accent-1: hsl(255, 89.76%, 75.9%);
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
+  --color-accent-hsl: 258, 88%, 66%;
+  --color-base-00: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
+  --color-base-05: color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000);
+  --color-base-10: color-mix(in srgb, hsl(238, 60%, 11%) 50%, #000);
+  --color-base-100: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 0%,
+    hsl(255, 100%, 80%)
+  );
+  --color-base-20: color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000);
+  --color-base-25: color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000);
+  --color-base-30: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  );
+  --color-base-35: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 95%,
+    hsl(255, 100%, 80%)
+  );
+  --color-base-40: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 80%,
+    hsl(255, 100%, 80%)
+  );
+  --color-base-50: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  );
+  --color-base-60: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  );
+  --color-base-70: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  );
+  --color-blue: #437cf3;
+  --color-cyan: #43cfea;
+  --color-green: #52eea3;
+  --color-pink: #e54f9b;
+  --color-purple: #9446f8;
+  --color-red: #e3365e;
+  --divider-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  );
+  --divider-color-hover: hsl(258, 88%, 66%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  );
+  --dropdown-background-hover: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 95%,
+    hsl(255, 100%, 80%)
+  );
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  );
+  --flair-color: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
+  --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-weight: 400;
+  --graph-line: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 95%,
+    hsl(255, 100%, 80%)
+  );
+  --graph-node: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  );
+  --graph-node-attachment: #ffd85e;
+  --graph-node-focused: hsl(255, 89.76%, 75.9%);
+  --graph-node-tag: #52eea3;
+  --graph-node-unresolved: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  );
+  --graph-text: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
+  --h1-color: #43cfea;
+  --h2-color: #54b6f8;
+  --h3-color: #437cf3;
+  --h4-color: #6f51f4;
+  --h5-color: #9446f8;
+  --h5-line-height: 1.5;
+  --h6-color: #c952ed;
+  --h6-line-height: 1.5;
+  --heading-formatting: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  );
+  --heading-spacing: 2.5rem;
+  --hr-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  );
+  --interactive-accent: hsl(258, 88%, 66%);
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
+  --interactive-accent-hsl: 258, 88%, 66%;
+  --interactive-hover: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 95%,
+    hsl(255, 100%, 80%)
+  );
+  --interactive-normal: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  );
+  --link-color: hsl(255, 89.76%, 75.9%);
+  --link-color-hover: hsl(253, 92.4%, 85.14%);
+  --link-external-color: hsl(255, 89.76%, 75.9%);
+  --link-external-color-hover: hsl(253, 92.4%, 85.14%);
+  --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000);
+  --menu-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 95%,
+    hsl(255, 100%, 80%)
+  );
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --pdf-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
+  --pdf-page-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
+  --pdf-shadow: 0 0 0 1px color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  );
+  --pdf-sidebar-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
+  --pdf-thumbnail-shadow: 0 0 0 1px color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  );
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  ) 65%, transparent) linear-gradient(color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  ), color-mix(in srgb, color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  ) 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  );
+  --search-icon-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  );
+  --search-result-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
+  --setting-group-heading-color: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: color-mix(in srgb, hsl(238, 60%, 11%) 50%, #000);
+  --setting-items-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  );
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  );
+  --shiki-code-background: color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000);
+  --shiki-code-block-border-radius: 4px;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  );
+  --shiki-code-function: #52eea3;
+  --shiki-code-important: #fa9f50;
+  --shiki-code-keyword: #e54f9b;
+  --shiki-code-normal: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  );
+  --shiki-code-property: #43cfea;
+  --shiki-code-punctuation: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  );
+  --shiki-code-string: #ffd85e;
+  --shiki-code-value: #9446f8;
+  --shiki-gutter-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  );
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  );
+  --shiki-gutter-text-color-highlight: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  );
+  --shiki-highlight-green: rgba(68, 207, 110, 0.5);
+  --shiki-highlight-green-background: rgba(68, 207, 110, 0.1);
+  --shiki-highlight-neutral: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  );
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
+  --shiki-highlight-red: rgba(251, 70, 76, 0.5);
+  --shiki-highlight-red-background: rgba(251, 70, 76, 0.1);
+  --shiki-terminal-dots-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  );
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --sync-avatar-color-1: #e3365e;
+  --sync-avatar-color-2: #fa9f50;
+  --sync-avatar-color-3: #ffd85e;
+  --sync-avatar-color-4: #52eea3;
+  --sync-avatar-color-5: #43cfea;
+  --sync-avatar-color-6: #437cf3;
+  --sync-avatar-color-7: #9446f8;
+  --sync-avatar-color-8: #e54f9b;
+  --tab-background-active: color-mix(in srgb, hsl(238, 60%, 11%) 25%, #000);
+  --tab-divider-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 95%,
+    hsl(255, 100%, 80%)
+  );
+  --tab-font-size: 13px;
+  --tab-outline-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  );
+  --tab-radius: 4px;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000);
+  --tab-switcher-menubar-background: linear-gradient(to top, color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000), transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
+  --tab-text-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  );
+  --tab-text-color-active: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  );
+  --tab-text-color-focused: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  );
+  --tab-text-color-focused-active: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  );
+  --tab-text-color-focused-active-current: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
+  --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+  --table-add-button-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  );
+  --table-add-button-border-width: 1px;
+  --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(258, 88%, 66%);
+  --table-drag-handle-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  );
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  );
+  --table-header-border-width: 1px;
+  --table-header-color: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(258, 88%, 66%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(258, 88%, 66%);
+  --table-text-size: 16px;
+  --tag-background: hsla(258, 88%, 66%, 0.1);
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2);
+  --tag-border-color: hsla(258, 88%, 66%, 0.15);
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
+  --tag-color: hsl(255, 89.76%, 75.9%);
+  --tag-color-hover: hsl(255, 89.76%, 75.9%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(255, 89.76%, 75.9%);
+  --text-accent-hover: hsl(253, 92.4%, 85.14%);
+  --text-error: #e3365e;
+  --text-faint: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  );
+  --text-highlight-bg: color-mix(in srgb, #43cfea 25%, transparent);
+  --text-highlight-bg-active: color-mix(
+    in srgb,
+    #43cfea 25%,
+    transparent
+  );
+  --text-muted: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  );
+  --text-normal: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
+  --text-selection: hsla(258, 88%, 66%, 0.33);
+  --text-success: #52eea3;
+  --text-warning: #fa9f50;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
+  --vauxhall-bg: hsl(238, 60%, 11%);
+  --vauxhall-fg: hsl(255, 100%, 80%);
+  background-color: rgba(var(--callout-color), 0.1);
   border-bottom-color: rgba(2, 122, 255, 0.25);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -1705,7 +2168,7 @@ html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -1726,7 +2189,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -1747,7 +2210,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -1768,7 +2231,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -1789,7 +2252,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -1810,7 +2273,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -1895,11 +2358,11 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-left-color: color(srgb 0.1096 0.10356 0.2584);
   border-right-color: color(srgb 0.1096 0.10356 0.2584);
   border-top-color: color(srgb 0.1096 0.10356 0.2584);
-  color: color(srgb 0.91 0.88 1);
+  color: var(--text-normal, color(srgb 0.91 0.88 1));
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: color(srgb 0.011 0.0121 0.044);
+  background-color: var(--prompt-background, color(srgb 0.011 0.0121 0.044));
   border-bottom-color: color(srgb 0.1752 0.15872 0.3408);
   border-left-color: color(srgb 0.1752 0.15872 0.3408);
   border-right-color: color(srgb 0.1752 0.15872 0.3408);
@@ -1928,7 +2391,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: color(srgb 0.0768 0.07598 0.2172);
+  background-color: var(--background-modifier-hover, color(srgb 0.0768 0.07598 0.2172));
   color: color(srgb 0.91 0.88 1);
 }
 
@@ -1947,7 +2410,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
-  background-color: color(srgb 0.0768 0.07598 0.2172);
+  background-color: var(--background-modifier-hover, color(srgb 0.0768 0.07598 0.2172));
   border-bottom-color: color(srgb 0.91 0.88 1);
   border-left-color: color(srgb 0.91 0.88 1);
   border-right-color: color(srgb 0.91 0.88 1);
@@ -1956,40 +2419,40 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: color(srgb 0.0768 0.07598 0.2172);
+  background-color: var(--background-modifier-hover, color(srgb 0.0768 0.07598 0.2172));
   color: color(srgb 0.91 0.88 1);
 }
 
 html[saved-theme="dark"] body h1 {
-  color: rgb(67, 207, 234);
+  color: var(--h1-color, rgb(67, 207, 234));
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(67, 207, 234);
+  color: var(--inline-title-color, rgb(67, 207, 234));
 }
 
 html[saved-theme="dark"] body h2 {
-  color: rgb(84, 182, 248);
+  color: var(--h2-color, rgb(84, 182, 248));
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  color: rgb(67, 207, 234);
+  color: var(--inline-title-color, rgb(67, 207, 234));
 }
 
 html[saved-theme="dark"] body h3 {
-  color: rgb(67, 124, 243);
+  color: var(--h3-color, rgb(67, 124, 243));
 }
 
 html[saved-theme="dark"] body h4 {
-  color: rgb(111, 81, 244);
+  color: var(--h4-color, rgb(111, 81, 244));
 }
 
 html[saved-theme="dark"] body h5 {
-  color: rgb(148, 70, 248);
+  color: var(--h5-color, rgb(148, 70, 248));
 }
 
 html[saved-theme="dark"] body h6 {
-  color: rgb(201, 82, 237);
+  color: var(--h6-color, rgb(201, 82, 237));
 }
 
 html[saved-theme="dark"] body hr {
@@ -1998,7 +2461,7 @@ html[saved-theme="dark"] body hr {
   border-right-color: color(srgb 0.1096 0.10356 0.2584);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -2013,11 +2476,11 @@ html[saved-theme="dark"] body hr {
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: color(srgb 0.5032 0.43452 0.7528);
+  color: var(--nav-item-color, color(srgb 0.5032 0.43452 0.7528));
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: color(srgb 0.5032 0.43452 0.7528);
+  color: var(--nav-item-color, color(srgb 0.5032 0.43452 0.7528));
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: color(srgb 0.91 0.88 1);
@@ -2027,15 +2490,15 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-left-color: color(srgb 0.5032 0.43452 0.7528);
   border-right-color: color(srgb 0.5032 0.43452 0.7528);
   border-top-color: color(srgb 0.5032 0.43452 0.7528);
-  color: color(srgb 0.5032 0.43452 0.7528);
+  color: var(--icon-color, color(srgb 0.5032 0.43452 0.7528));
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: color(srgb 0.0176 0.01936 0.0704);
+  background-color: var(--status-bar-background, color(srgb 0.0176 0.01936 0.0704));
   border-bottom-color: color(srgb 0.1096 0.10356 0.2584);
   border-left-color: color(srgb 0.1096 0.10356 0.2584);
   border-right-color: color(srgb 0.1096 0.10356 0.2584);
   border-top-color: color(srgb 0.1096 0.10356 0.2584);
-  color: color(srgb 0.5032 0.43452 0.7528);
+  color: var(--status-bar-text-color, color(srgb 0.5032 0.43452 0.7528));
 }
 
 html[saved-theme="dark"] body footer ul li a {
@@ -2054,7 +2517,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: color(srgb 0.5032 0.43452 0.7528);
+  color: var(--nav-item-color, color(srgb 0.5032 0.43452 0.7528));
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -2072,7 +2535,7 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
-  color: color(srgb 0.5032 0.43452 0.7528);
+  color: var(--nav-item-color, color(srgb 0.5032 0.43452 0.7528));
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -2086,7 +2549,7 @@ html[saved-theme="dark"] body ul.section-ul {
   border-left-color: color(srgb 0.5032 0.43452 0.7528);
   border-right-color: color(srgb 0.5032 0.43452 0.7528);
   border-top-color: color(srgb 0.5032 0.43452 0.7528);
-  color: color(srgb 0.5032 0.43452 0.7528);
+  color: var(--icon-color, color(srgb 0.5032 0.43452 0.7528));
 }
 
 html[saved-theme="dark"] body .darkmode svg {
@@ -2102,7 +2565,7 @@ html[saved-theme="dark"] body .darkmode svg {
 }
 
 html[saved-theme="dark"] body .breadcrumb-element p {
-  color: color(srgb 0.3064 0.26904 0.5056);
+  color: var(--text-faint, color(srgb 0.3064 0.26904 0.5056));
 }`,
     canvas: `html[saved-theme="dark"] body .canvas-node {
   border-color: color(srgb 0.91 0.88 1);
@@ -2113,7 +2576,7 @@ html[saved-theme="dark"] body .canvas-node-content {
 }
 
 html[saved-theme="dark"] body .canvas-node-file {
-  color: color(srgb 0.91 0.88 1);
+  color: var(--text-normal, color(srgb 0.91 0.88 1));
 }
 
 html[saved-theme="dark"] body .canvas-node-group {
@@ -2121,19 +2584,19 @@ html[saved-theme="dark"] body .canvas-node-group {
 }
 
 html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: color(srgb 0.0176 0.01936 0.0704);
+  background-color: var(--background-secondary, color(srgb 0.0176 0.01936 0.0704));
   border-color: color(srgb 0.91 0.88 1);
 }`,
     bases: `html[saved-theme="dark"] body .bases-table thead th {
   border-color: color(srgb 0.1096 0.10356 0.2584);
-  color: color(srgb 0.91 0.88 1);
+  color: var(--table-header-color, color(srgb 0.91 0.88 1));
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: color(srgb 0.1096 0.10356 0.2584);
   border-left-color: color(srgb 0.1096 0.10356 0.2584);
   border-right-color: color(srgb 0.1096 0.10356 0.2584);
   border-top-color: color(srgb 0.1096 0.10356 0.2584);
-  color: color(srgb 0.5032 0.43452 0.7528);
+  color: var(--text-muted, color(srgb 0.5032 0.43452 0.7528));
 }
 
 html[saved-theme="dark"] body .metadata-properties {
@@ -2161,8 +2624,8 @@ html[saved-theme="dark"] body .note-properties-value {
 }
 
 html[saved-theme="dark"] body div#quartz-root {
-  background-color: color(srgb 0.011 0.0121 0.044);
-  color: color(srgb 0.91 0.88 1);
+  background-color: var(--background-primary, color(srgb 0.011 0.0121 0.044));
+  color: var(--text-normal, color(srgb 0.91 0.88 1));
 }
 
 html[saved-theme="dark"] body ol.overflow {
@@ -2172,12 +2635,12 @@ html[saved-theme="dark"] body ol.overflow {
   border-top-color: color(srgb 0.91 0.88 1);
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
-  background-color: color(srgb 0.0176 0.01936 0.0704);
+  background-color: var(--background-secondary, color(srgb 0.0176 0.01936 0.0704));
   border-color: color(srgb 0.91 0.88 1);
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
-  background-color: color(srgb 0.022 0.0242 0.088);
+  background-color: var(--tab-container-background, color(srgb 0.022 0.0242 0.088));
 }
 
 html[saved-theme="dark"] body .stacked-page.active {
@@ -2192,11 +2655,11 @@ html[saved-theme="dark"] body .stacked-page.active {
 }
 
 html[saved-theme="dark"] body .navigation-progress {
-  background-color: color(srgb 0.0176 0.01936 0.0704);
+  background-color: var(--status-bar-background, color(srgb 0.0176 0.01936 0.0704));
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
-  color: color(srgb 0.91 0.88 1);
+  color: var(--text-normal, color(srgb 0.91 0.88 1));
 }
 
 html[saved-theme="dark"] body abbr {
@@ -2215,16 +2678,16 @@ html[saved-theme="dark"] body input[type=text] {
   border-left-color: color(srgb 0.5032 0.43452 0.7528);
   border-right-color: color(srgb 0.5032 0.43452 0.7528);
   border-top-color: color(srgb 0.5032 0.43452 0.7528);
-  color: color(srgb 0.5032 0.43452 0.7528);
+  color: var(--text-normal, color(srgb 0.5032 0.43452 0.7528));
 }
 
 html[saved-theme="dark"] body kbd {
-  background-color: color(srgb 0.0352 0.03872 0.1408);
+  background-color: var(--code-background, color(srgb 0.0352 0.03872 0.1408));
   border-bottom-color: color(srgb 0.91 0.88 1);
   border-left-color: color(srgb 0.91 0.88 1);
   border-right-color: color(srgb 0.91 0.88 1);
   border-top-color: color(srgb 0.91 0.88 1);
-  color: color(srgb 0.91 0.88 1);
+  color: var(--code-normal, color(srgb 0.91 0.88 1));
 }
 
 html[saved-theme="dark"] body progress {
@@ -2248,698 +2711,647 @@ html[saved-theme="dark"] body sup {
   },
   light: {
     base: `:root:root {
-  --background-modifier-border: color-mix(
+  --background-modifier-border: var(--color-base-30, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 90%,
     hsl(255, 100%, 50%)
-  );
-  --background-modifier-border-focus: color-mix(
+  ));
+  --background-modifier-border-focus: var(--color-base-40, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 80%,
     hsl(255, 100%, 50%)
-  );
-  --background-modifier-border-hover: color-mix(
+  ));
+  --background-modifier-border-hover: var(--color-base-35, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 95%,
     hsl(255, 100%, 50%)
-  );
-  --background-modifier-error: #e3365e;
-  --background-modifier-error-hover: #e3365e;
-  --background-modifier-form-field: color-mix(in srgb, hsl(238, 60%, 95%) 80%, #fff);
-  --background-modifier-form-field-hover: color-mix(in srgb, hsl(238, 60%, 95%) 80%, #fff);
-  --background-modifier-hover: color-mix(
+  ));
+  --background-modifier-error: var(--color-red, #e3365e);
+  --background-modifier-error-hover: var(--color-red, #e3365e);
+  --background-modifier-form-field: var(--color-base-20, color-mix(in srgb, hsl(238, 60%, 95%) 80%, #fff));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, color-mix(in srgb, hsl(238, 60%, 95%) 80%, #fff));
+  --background-modifier-hover: var(--color-base-35, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 95%,
     hsl(255, 100%, 50%)
-  );
-  --background-modifier-success: #47cc91;
-  --background-primary: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --background-primary-alt: color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff);
-  --background-secondary: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --background-secondary-alt: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --bases-cards-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --bases-cards-cover-background: color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff);
-  --bases-cards-shadow: 0 0 0 1px color-mix(
+  ));
+  --background-modifier-success: var(--color-green, #47cc91);
+  --background-primary: var(--color-base-05, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --background-primary-alt: var(--color-base-10, color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff));
+  --background-secondary: var(--color-base-05, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --background-secondary-alt: var(--color-base-05, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --bases-cards-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --bases-cards-cover-background: var(--background-primary-alt, color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff));
+  --bases-embed-border-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 90%,
     hsl(255, 100%, 50%)
-  );
-  --bases-cards-shadow-hover: 0 0 0 1px color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 95%,
-    hsl(255, 100%, 50%)
-  );
-  --bases-embed-border-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 90%,
-    hsl(255, 100%, 50%)
-  );
-  --bases-group-heading-property-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 30%,
-    hsl(255, 100%, 50%)
-  );
-  --bases-table-border-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 90%,
-    hsl(255, 100%, 50%)
-  );
-  --bases-table-cell-background-active: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --bases-table-cell-background-disabled: color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff);
-  --bases-table-cell-shadow-active: 0 0 0 2px color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 80%,
-    hsl(255, 100%, 50%)
-  );
-  --bases-table-group-background: color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff);
-  --bases-table-header-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --bases-table-header-background-hover: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 95%,
-    hsl(255, 100%, 50%)
-  );
-  --bases-table-header-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 30%,
-    hsl(255, 100%, 50%)
-  );
-  --bases-table-summary-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --bases-table-summary-background-hover: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 95%,
-    hsl(255, 100%, 50%)
-  );
-  --black: #000;
-  --blue: #437cf3;
-  --blue-violet: #6f51f4;
-  --blur-background: color-mix(in srgb, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff) 65%, transparent) linear-gradient(color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff), color-mix(in srgb, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff) 65%, transparent));
-  --canvas-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --canvas-card-label-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 60%,
-    hsl(255, 100%, 50%)
-  );
-  --canvas-dot-pattern: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 90%,
-    hsl(255, 100%, 50%)
-  );
-  --caret-color: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --checkbox-border-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 60%,
-    hsl(255, 100%, 50%)
-  );
-  --checkbox-border-color-hover: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 30%,
-    hsl(255, 100%, 50%)
-  );
-  --checkbox-marker-color: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --checklist-done-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 30%,
-    hsl(255, 100%, 50%)
-  );
-  --code-background: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 90%,
-    hsl(255, 100%, 50%)
-  );
-  --code-border-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 90%,
-    hsl(255, 100%, 50%)
-  );
-  --code-bracket-background: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 95%,
-    hsl(255, 100%, 50%)
-  );
-  --code-comment: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 60%,
-    hsl(255, 100%, 50%)
-  );
-  --code-function: #ffd85e;
-  --code-important: #fa9f50;
-  --code-keyword: #e54f9b;
-  --code-normal: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --code-operator: #e3365e;
-  --code-property: #3bb2ce;
-  --code-punctuation: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 30%,
-    hsl(255, 100%, 50%)
-  );
-  --code-string: #47cc91;
-  --code-tag: #e3365e;
-  --code-value: #9446f8;
-  --collapse-icon-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 60%,
-    hsl(255, 100%, 50%)
-  );
-  --color-base-00: color-mix(in srgb, hsl(238, 60%, 95%) 25%, #fff);
-  --color-base-05: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --color-base-10: color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff);
-  --color-base-100: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 0%,
-    hsl(255, 100%, 50%)
-  );
-  --color-base-20: color-mix(in srgb, hsl(238, 60%, 95%) 80%, #fff);
-  --color-base-25: color-mix(in srgb, hsl(238, 60%, 95%) 80%, #fff);
-  --color-base-30: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 90%,
-    hsl(255, 100%, 50%)
-  );
-  --color-base-35: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 95%,
-    hsl(255, 100%, 50%)
-  );
-  --color-base-40: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 80%,
-    hsl(255, 100%, 50%)
-  );
-  --color-base-50: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 60%,
-    hsl(255, 100%, 50%)
-  );
-  --color-base-60: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 60%,
-    hsl(255, 100%, 50%)
-  );
-  --color-base-70: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 30%,
-    hsl(255, 100%, 50%)
-  );
-  --color-blue: #437cf3;
-  --color-cyan: #3bb2ce;
-  --color-green: #47cc91;
-  --color-orange: #fa9f50;
-  --color-pink: #e54f9b;
-  --color-purple: #9446f8;
-  --color-red: #e3365e;
-  --color-yellow: #ffd85e;
-  --cool-cyan: #3bb2ce;
-  --cool-gray: #515768;
-  --cyan: #47c1cd;
-  --dark: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
-  --darkgray: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
-  --divider-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 90%,
-    hsl(255, 100%, 50%)
-  );
-  --dropdown-background: color-mix(in srgb, hsl(238, 60%, 95%) 25%, #fff);
-  --dropdown-background-hover: color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff);
-  --embed-block-shadow-hover: 0 0 0 1px color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 90%,
-    hsl(255, 100%, 50%)
-  ), inset 0 0 0 1px color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 90%,
-    hsl(255, 100%, 50%)
-  );
-  --file-header-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --file-header-background-focused: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --flair-background: color-mix(in srgb, hsl(238, 60%, 95%) 25%, #fff);
-  --flair-color: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --footnote-divider-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 90%,
-    hsl(255, 100%, 50%)
-  );
-  --footnote-id-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 30%,
-    hsl(255, 100%, 50%)
-  );
-  --footnote-id-color-no-occurrences: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 60%,
-    hsl(255, 100%, 50%)
-  );
-  --footnote-input-background-active: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 95%,
-    hsl(255, 100%, 50%)
-  );
-  --graph-line: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 95%,
-    hsl(255, 100%, 50%)
-  );
-  --graph-node: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 30%,
-    hsl(255, 100%, 50%)
-  );
-  --graph-node-attachment: #ffd85e;
-  --graph-node-tag: #47cc91;
-  --graph-node-unresolved: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 60%,
-    hsl(255, 100%, 50%)
-  );
-  --graph-text: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --gray: var(--text-muted, color-mix(
+  ));
+  --bases-group-heading-property-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
   ));
-  --h1-color: #3bb2ce;
-  --h2-color: #54b6f8;
-  --h3-color: #437cf3;
-  --h4-color: #6f51f4;
-  --h5-color: #9446f8;
-  --h6-color: #c952ed;
-  --heading-formatting: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 60%,
-    hsl(255, 100%, 50%)
-  );
-  --highlight: var(--text-highlight-bg, color-mix(in srgb, #3bb2ce 25%, transparent));
-  --hot-red: #e3365e;
-  --hr-color: color-mix(
+  --bases-table-border-color: var(--table-border-color, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 90%,
     hsl(255, 100%, 50%)
-  );
-  --hue-bg: 238;
-  --hue-fg: 255;
-  --icon-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 30%,
-    hsl(255, 100%, 50%)
-  );
-  --icon-color-focused: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --icon-color-hover: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 30%,
-    hsl(255, 100%, 50%)
-  );
-  --indentation-guide-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 90%,
-    hsl(255, 100%, 50%)
-  );
-  --indentation-guide-color-active: color-mix(
+  ));
+  --bases-table-cell-background-active: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --bases-table-cell-background-disabled: var(--background-primary-alt, color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff));
+  --bases-table-group-background: var(--background-primary-alt, color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff));
+  --bases-table-header-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --bases-table-header-background-hover: var(--background-modifier-hover, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 95%,
     hsl(255, 100%, 50%)
-  );
-  --inline-title-color: #3bb2ce;
-  --input-date-separator: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 60%,
-    hsl(255, 100%, 50%)
-  );
-  --input-placeholder-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 60%,
-    hsl(255, 100%, 50%)
-  );
-  --interactive-hover: color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff);
-  --interactive-normal: color-mix(in srgb, hsl(238, 60%, 95%) 25%, #fff);
-  --light: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
-  --light-blue: #54b6f8;
-  --lightgray: var(--background-secondary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
-  --list-marker-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 60%,
-    hsl(255, 100%, 50%)
-  );
-  --list-marker-color-hover: color-mix(
+  ));
+  --bases-table-header-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
+  ));
+  --bases-table-summary-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --bases-table-summary-background-hover: var(--background-modifier-hover, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 95%,
+    hsl(255, 100%, 50%)
+  ));
+  --black: #000;
+  --blue: #437cf3;
+  --blue-violet: #6f51f4;
+  --canvas-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --canvas-card-label-color: var(--text-faint, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  ));
+  --canvas-dot-pattern: var(--color-base-30, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  ));
+  --caret-color: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --checkbox-border-color: var(--text-faint, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  ));
+  --checkbox-border-color-hover: var(--text-muted, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  ));
+  --checkbox-marker-color: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --checklist-done-color: var(--text-muted, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  ));
+  --code-background: var(--color-base-30, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  ));
+  --code-border-color: var(--background-modifier-border, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  ));
+  --code-bracket-background: var(--background-modifier-hover, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 95%,
+    hsl(255, 100%, 50%)
+  ));
+  --code-comment: var(--text-faint, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  ));
+  --code-function: var(--color-yellow, #ffd85e);
+  --code-important: var(--color-orange, #fa9f50);
+  --code-keyword: var(--color-pink, #e54f9b);
+  --code-normal: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --code-operator: var(--color-red, #e3365e);
+  --code-property: var(--color-cyan, #3bb2ce);
+  --code-punctuation: var(--text-muted, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  ));
+  --code-string: var(--color-green, #47cc91);
+  --code-tag: var(--color-red, #e3365e);
+  --code-value: var(--color-purple, #9446f8);
+  --collapse-icon-color: var(--text-faint, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  ));
+  --color-base-00: color-mix(in srgb, var(--vauxhall-bg) 25%, var(--white));
+  --color-base-05: color-mix(in srgb, var(--vauxhall-bg) 40%, var(--white));
+  --color-base-10: color-mix(in srgb, var(--vauxhall-bg) 50%, var(--white));
+  --color-base-100: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 0%,
+    var(--vauxhall-fg)
   );
+  --color-base-20: color-mix(in srgb, var(--vauxhall-bg) 80%, var(--white));
+  --color-base-25: color-mix(in srgb, var(--vauxhall-bg) 80%, var(--white));
+  --color-base-30: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 90%,
+    var(--vauxhall-fg)
+  );
+  --color-base-35: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 95%,
+    var(--vauxhall-fg)
+  );
+  --color-base-40: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 80%,
+    var(--vauxhall-fg)
+  );
+  --color-base-50: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 60%,
+    var(--vauxhall-fg)
+  );
+  --color-base-60: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 60%,
+    var(--vauxhall-fg)
+  );
+  --color-base-70: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 30%,
+    var(--vauxhall-fg)
+  );
+  --color-blue: var(--blue, #437cf3);
+  --color-cyan: var(--cool-cyan, #3bb2ce);
+  --color-green: var(--mint, #47cc91);
+  --color-orange: #fa9f50;
+  --color-pink: var(--magenta, #e54f9b);
+  --color-purple: var(--violet, #9446f8);
+  --color-red: var(--hot-red, #e3365e);
+  --color-yellow: #ffd85e;
+  --cool-cyan: #3bb2ce;
+  --cool-gray: #515768;
+  --cyan: #47c1cd;
+  --dark: var(--text-normal, color-mix(in srgb, var(--vauxhall-fg) 50%, var(--black)));
+  --darkgray: var(--text-normal, color-mix(in srgb, var(--vauxhall-fg) 50%, var(--black)));
+  --divider-color: var(--background-modifier-border, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  ));
+  --dropdown-background: var(--interactive-normal, color-mix(in srgb, hsl(238, 60%, 95%) 25%, #fff));
+  --dropdown-background-hover: var(--interactive-hover, color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff));
+  --file-header-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --file-header-background-focused: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --flair-background: var(--interactive-normal, color-mix(in srgb, hsl(238, 60%, 95%) 25%, #fff));
+  --flair-color: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --footnote-divider-color: var(--metadata-divider-color, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  ));
+  --footnote-id-color: var(--text-muted, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  ));
+  --footnote-id-color-no-occurrences: var(--text-faint, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  ));
+  --footnote-input-background-active: var(--metadata-input-background-active, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 95%,
+    hsl(255, 100%, 50%)
+  ));
+  --graph-node: var(--text-muted, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  ));
+  --graph-node-attachment: var(--color-yellow, #ffd85e);
+  --graph-node-tag: var(--color-green, #47cc91);
+  --graph-node-unresolved: var(--text-faint, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  ));
+  --graph-text: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --gray: var(--text-muted, var(--color-base-70, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  )));
+  --h1-color: var(--cool-cyan, #3bb2ce);
+  --h2-color: var(--light-blue, #54b6f8);
+  --h3-color: var(--blue, #437cf3);
+  --h4-color: var(--blue-violet, #6f51f4);
+  --h5-color: var(--violet, #9446f8);
+  --h6-color: var(--purple, #c952ed);
+  --heading-formatting: var(--text-faint, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  ));
+  --highlight: var(--text-highlight-bg, color-mix(in srgb, var(--h1-color) 25%, transparent));
+  --hot-red: #e3365e;
+  --hr-color: var(--background-modifier-border, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  ));
+  --hue-bg: 238;
+  --hue-fg: 255;
+  --icon-color: var(--text-muted, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  ));
+  --icon-color-focused: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --icon-color-hover: var(--text-muted, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  ));
+  --indentation-guide-color: var(--color-base-30, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  ));
+  --indentation-guide-color-active: var(--color-base-35, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 95%,
+    hsl(255, 100%, 50%)
+  ));
+  --inline-title-color: var(--h1-color, #3bb2ce);
+  --input-date-separator: var(--text-faint, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  ));
+  --input-placeholder-color: var(--text-faint, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  ));
+  --interactive-hover: var(--color-base-10, color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff));
+  --interactive-normal: var(--color-base-00, color-mix(in srgb, hsl(238, 60%, 95%) 25%, #fff));
+  --light: var(--background-primary, var(--color-base-05, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff)));
+  --light-blue: #54b6f8;
+  --lightgray: var(--background-secondary, var(--color-base-05, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff)));
+  --list-marker-color: var(--text-faint, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  ));
+  --list-marker-color-hover: var(--text-muted, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  ));
   --lum: 11%;
   --lum-bg: 95%;
   --lum-fg: 50%;
   --magenta: #e54f9b;
-  --menu-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --menu-border-color: color-mix(
+  --menu-background: var(--background-secondary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --menu-border-color: var(--background-modifier-border-hover, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 95%,
     hsl(255, 100%, 50%)
-  );
-  --metadata-border-color: color-mix(
+  ));
+  --metadata-border-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 90%,
     hsl(255, 100%, 50%)
-  );
-  --metadata-divider-color: color-mix(
+  ));
+  --metadata-divider-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 90%,
     hsl(255, 100%, 50%)
-  );
-  --metadata-input-background-active: color-mix(
+  ));
+  --metadata-input-background-active: var(--background-modifier-hover, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 95%,
     hsl(255, 100%, 50%)
-  );
-  --metadata-input-text-color: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --metadata-label-background-active: color-mix(
+  ));
+  --metadata-input-text-color: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --metadata-label-background-active: var(--background-modifier-hover, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 95%,
     hsl(255, 100%, 50%)
-  );
-  --metadata-label-text-color: color-mix(
+  ));
+  --metadata-label-text-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --metadata-label-text-color-hover: color-mix(
+  ));
+  --metadata-label-text-color-hover: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --metadata-property-background-active: color-mix(
+  ));
+  --metadata-property-background-active: var(--background-modifier-hover, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 95%,
     hsl(255, 100%, 50%)
-  );
-  --metadata-property-box-shadow-focus: 0 0 0 2px color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 80%,
-    hsl(255, 100%, 50%)
-  );
-  --metadata-property-box-shadow-hover: 0 0 0 1px color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 95%,
-    hsl(255, 100%, 50%)
-  );
+  ));
   --mint: #47cc91;
-  --modal-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --modal-border-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 80%,
-    hsl(255, 100%, 50%)
-  );
-  --nav-collapse-icon-color: color-mix(
+  --modal-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --nav-collapse-icon-color: var(--collapse-icon-color, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 60%,
     hsl(255, 100%, 50%)
-  );
-  --nav-collapse-icon-color-collapsed: color-mix(
+  ));
+  --nav-collapse-icon-color-collapsed: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 60%,
     hsl(255, 100%, 50%)
-  );
-  --nav-heading-color: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --nav-heading-color-collapsed: color-mix(
+  ));
+  --nav-heading-color: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --nav-heading-color-collapsed: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 60%,
     hsl(255, 100%, 50%)
-  );
-  --nav-heading-color-collapsed-hover: color-mix(
+  ));
+  --nav-heading-color-collapsed-hover: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --nav-heading-color-hover: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --nav-indentation-guide-color: color-mix(
+  ));
+  --nav-heading-color-hover: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --nav-indentation-guide-color: var(--color-base-30, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 90%,
     hsl(255, 100%, 50%)
-  );
-  --nav-item-background-active: color-mix(
+  ));
+  --nav-item-background-active: var(--background-modifier-hover, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 95%,
     hsl(255, 100%, 50%)
-  );
-  --nav-item-background-hover: color-mix(
+  ));
+  --nav-item-background-hover: var(--background-modifier-hover, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 95%,
     hsl(255, 100%, 50%)
-  );
-  --nav-item-color: color-mix(
+  ));
+  --nav-item-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --nav-item-color-active: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --nav-item-color-hover: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --nav-item-color-selected: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --nav-tag-color: color-mix(
+  ));
+  --nav-item-color-active: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --nav-item-color-hover: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --nav-item-color-selected: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --nav-tag-color: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 60%,
     hsl(255, 100%, 50%)
-  );
-  --nav-tag-color-active: color-mix(
+  ));
+  --nav-tag-color-active: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --nav-tag-color-hover: color-mix(
+  ));
+  --nav-tag-color-hover: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --pdf-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --pdf-page-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --pdf-sidebar-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --pill-border-color: color-mix(
+  ));
+  --pdf-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --pdf-page-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --pdf-sidebar-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --pill-border-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 90%,
     hsl(255, 100%, 50%)
-  );
-  --pill-border-color-hover: color-mix(
+  ));
+  --pill-border-color-hover: var(--background-modifier-border-hover, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 95%,
     hsl(255, 100%, 50%)
-  );
-  --pill-color: color-mix(
+  ));
+  --pill-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --pill-color-hover: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --pill-color-remove: color-mix(
+  ));
+  --pill-color-hover: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --pill-color-remove: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 60%,
     hsl(255, 100%, 50%)
-  );
-  --prompt-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --prompt-border-color: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 80%,
-    hsl(255, 100%, 50%)
-  );
+  ));
+  --prompt-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
   --purple: #c952ed;
-  --raised-background: color-mix(in srgb, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff) 65%, transparent) linear-gradient(color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff), color-mix(in srgb, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff) 65%, transparent));
-  --ribbon-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --ribbon-background-collapsed: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
+  --raised-background: var(--blur-background, color-mix(in srgb, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff) 65%, transparent) linear-gradient(color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff), color-mix(in srgb, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff) 65%, transparent)));
+  --ribbon-background: var(--background-secondary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --ribbon-background-collapsed: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
   --sat-bg: 60%;
   --sat-fg: 100%;
-  --search-clear-button-color: color-mix(
+  --search-clear-button-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --search-icon-color: color-mix(
+  ));
+  --search-icon-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --search-result-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --setting-group-heading-color: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --setting-items-background: color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff);
-  --setting-items-border-color: color-mix(
+  ));
+  --search-result-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --setting-group-heading-color: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --setting-items-background: var(--background-primary-alt, color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff));
+  --setting-items-border-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 90%,
     hsl(255, 100%, 50%)
-  );
-  --shiki-active-tab-border-color: color-mix(
+  ));
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --shiki-code-background: color-mix(
+  ));
+  --shiki-code-background: var(--code-background, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 90%,
     hsl(255, 100%, 50%)
-  );
-  --shiki-code-comment: color-mix(
+  ));
+  --shiki-code-comment: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 60%,
     hsl(255, 100%, 50%)
-  );
-  --shiki-code-function: #47cc91;
-  --shiki-code-important: #fa9f50;
-  --shiki-code-keyword: #e54f9b;
-  --shiki-code-normal: color-mix(
+  ));
+  --shiki-code-function: var(--color-green, #47cc91);
+  --shiki-code-important: var(--color-orange, #fa9f50);
+  --shiki-code-keyword: var(--color-pink, #e54f9b);
+  --shiki-code-normal: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --shiki-code-property: #3bb2ce;
-  --shiki-code-punctuation: color-mix(
+  ));
+  --shiki-code-property: var(--color-cyan, #3bb2ce);
+  --shiki-code-punctuation: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --shiki-code-string: #ffd85e;
-  --shiki-code-value: #9446f8;
-  --shiki-gutter-border-color: color-mix(
+  ));
+  --shiki-code-string: var(--color-yellow, #ffd85e);
+  --shiki-code-value: var(--color-purple, #9446f8);
+  --shiki-gutter-border-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 90%,
     hsl(255, 100%, 50%)
-  );
-  --shiki-gutter-text-color: color-mix(
+  ));
+  --shiki-gutter-text-color: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 60%,
     hsl(255, 100%, 50%)
-  );
-  --shiki-gutter-text-color-highlight: color-mix(
+  ));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --shiki-highlight-neutral: color-mix(
+  ));
+  --shiki-highlight-neutral: var(--shiki-code-normal, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --shiki-terminal-dots-color: color-mix(
+  ));
+  --shiki-terminal-dots-color: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 60%,
     hsl(255, 100%, 50%)
-  );
-  --slider-thumb-border-color: color-mix(
+  ));
+  --slider-thumb-border-color: var(--background-modifier-border-hover, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 95%,
     hsl(255, 100%, 50%)
-  );
-  --slider-track-background: color-mix(
+  ));
+  --slider-track-background: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 90%,
     hsl(255, 100%, 50%)
-  );
-  --status-bar-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --status-bar-border-color: color-mix(
+  ));
+  --status-bar-background: var(--background-secondary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --status-bar-border-color: var(--divider-color, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 90%,
     hsl(255, 100%, 50%)
-  );
-  --status-bar-text-color: color-mix(
+  ));
+  --status-bar-text-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --suggestion-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --sync-avatar-color-1: #e3365e;
-  --sync-avatar-color-2: #fa9f50;
-  --sync-avatar-color-3: #ffd85e;
-  --sync-avatar-color-4: #47cc91;
-  --sync-avatar-color-5: #3bb2ce;
-  --sync-avatar-color-6: #437cf3;
-  --sync-avatar-color-7: #9446f8;
-  --sync-avatar-color-8: #e54f9b;
-  --tab-background-active: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --tab-container-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --tab-divider-color: color-mix(
+  ));
+  --suggestion-background: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --sync-avatar-color-1: var(--color-red, #e3365e);
+  --sync-avatar-color-2: var(--color-orange, #fa9f50);
+  --sync-avatar-color-3: var(--color-yellow, #ffd85e);
+  --sync-avatar-color-4: var(--color-green, #47cc91);
+  --sync-avatar-color-5: var(--color-cyan, #3bb2ce);
+  --sync-avatar-color-6: var(--color-blue, #437cf3);
+  --sync-avatar-color-7: var(--color-purple, #9446f8);
+  --sync-avatar-color-8: var(--color-pink, #e54f9b);
+  --tab-background-active: var(--background-primary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --tab-container-background: var(--background-secondary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --tab-divider-color: var(--background-modifier-border-hover, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 95%,
     hsl(255, 100%, 50%)
-  );
-  --tab-outline-color: color-mix(
+  ));
+  --tab-outline-color: var(--divider-color, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 90%,
     hsl(255, 100%, 50%)
-  );
-  --tab-switcher-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
-  --tab-switcher-menubar-background: linear-gradient(to top, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff), transparent);
-  --tab-text-color: color-mix(
+  ));
+  --tab-switcher-background: var(--background-secondary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
+  --tab-text-color: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 60%,
     hsl(255, 100%, 50%)
-  );
-  --tab-text-color-active: color-mix(
+  ));
+  --tab-text-color-active: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --tab-text-color-focused: color-mix(
+  ));
+  --tab-text-color-focused: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --tab-text-color-focused-active: color-mix(
+  ));
+  --tab-text-color-focused-active: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --tab-text-color-focused-active-current: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --table-add-button-border-color: color-mix(
+  ));
+  --tab-text-color-focused-active-current: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --table-add-button-border-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 90%,
     hsl(255, 100%, 50%)
-  );
-  --table-border-color: color-mix(
+  ));
+  --table-border-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 90%,
     hsl(255, 100%, 50%)
-  );
-  --table-drag-handle-color: color-mix(
+  ));
+  --table-drag-handle-color: var(--text-faint, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 60%,
     hsl(255, 100%, 50%)
-  );
-  --table-header-border-color: color-mix(
+  ));
+  --table-header-border-color: var(--table-border-color, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 90%,
     hsl(255, 100%, 50%)
-  );
-  --table-header-color: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --text-error: #e3365e;
-  --text-faint: color-mix(
+  ));
+  --table-header-color: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --text-error: var(--color-red, #e3365e);
+  --text-faint: var(--color-base-50, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 60%,
     hsl(255, 100%, 50%)
-  );
-  --text-highlight-bg: color-mix(in srgb, #3bb2ce 25%, transparent);
+  ));
+  --text-highlight-bg: color-mix(in srgb, var(--h1-color) 25%, transparent);
   --text-highlight-bg-active: color-mix(
     in srgb,
-    #3bb2ce 25%,
+    var(--h1-color) 25%,
     transparent
   );
-  --text-muted: color-mix(
+  --text-muted: var(--color-base-70, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --text-normal: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --text-success: #47cc91;
-  --text-warning: #fa9f50;
-  --textHighlight: var(--text-highlight-bg, color-mix(in srgb, #3bb2ce 25%, transparent));
-  --titlebar-background: color-mix(in srgb, hsl(238, 60%, 95%) 25%, #fff);
-  --titlebar-background-focused: color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff);
-  --titlebar-border-color: color-mix(
+  ));
+  --text-normal: color-mix(in srgb, var(--vauxhall-fg) 50%, var(--black));
+  --text-success: var(--color-green, #47cc91);
+  --text-warning: var(--color-orange, #fa9f50);
+  --textHighlight: var(--text-highlight-bg, color-mix(in srgb, var(--h1-color) 25%, transparent));
+  --titlebar-background: var(--color-base-00, color-mix(in srgb, hsl(238, 60%, 95%) 25%, #fff));
+  --titlebar-background-focused: var(--color-base-10, color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff));
+  --titlebar-border-color: var(--background-modifier-border, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 90%,
     hsl(255, 100%, 50%)
-  );
-  --titlebar-text-color: color-mix(
+  ));
+  --titlebar-text-color: var(--text-muted, color-mix(
     in srgb,
     hsl(238, 60%, 95%) 30%,
     hsl(255, 100%, 50%)
-  );
-  --titlebar-text-color-focused: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --vault-profile-color: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --vault-profile-color-hover: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --vauxhall-bg: hsl(238, 60%, 95%);
-  --vauxhall-fg: hsl(255, 100%, 50%);
+  ));
+  --titlebar-text-color-focused: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --vault-profile-color: var(--text-normal, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --vault-profile-color-hover: var(--vault-profile-color, color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000));
+  --vauxhall-bg: hsl(var(--hue-bg), var(--sat-bg), var(--lum-bg));
+  --vauxhall-fg: hsl(var(--hue-fg), var(--sat-fg), var(--lum-fg));
   --violet: #9446f8;
   --white: #fff;
   --quartz-icon-color: currentColor;
@@ -2951,17 +3363,17 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: color(srgb 0.968 0.9688 0.992);
+  background-color: var(--tab-container-background, color(srgb 0.968 0.9688 0.992));
   color: color(srgb 0.125 0 0.5);
 }
 
 html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
-  background-color: color(srgb 0.968 0.9688 0.992);
+  background-color: var(--background-primary, color(srgb 0.968 0.9688 0.992));
   color: color(srgb 0.125 0 0.5);
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: color(srgb 0.968 0.9688 0.992);
+  background-color: var(--background-secondary, color(srgb 0.968 0.9688 0.992));
   color: color(srgb 0.125 0 0.5);
 }
 
@@ -2970,37 +3382,37 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: color(srgb 0.968 0.9688 0.992);
+  background-color: var(--tab-container-background, color(srgb 0.968 0.9688 0.992));
   border-left-color: color(srgb 0.853 0.8298 0.982);
   color: color(srgb 0.125 0 0.5);
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
-  color: color(srgb 0.125 0 0.5);
+  color: var(--bold-color, color(srgb 0.125 0 0.5));
   outline: color(srgb 0.125 0 0.5) none 0px;
   text-decoration-color: color(srgb 0.125 0 0.5);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
-  color: color(srgb 0.125 0 0.5);
+  color: var(--italic-color, color(srgb 0.125 0 0.5));
   outline: color(srgb 0.125 0 0.5) none 0px;
   text-decoration-color: color(srgb 0.125 0 0.5);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
-  color: color(srgb 0.125 0 0.5);
+  color: var(--italic-color, color(srgb 0.125 0 0.5));
   outline: color(srgb 0.125 0 0.5) none 0px;
   text-decoration-color: color(srgb 0.125 0 0.5);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
-  color: color(srgb 0.125 0 0.5);
+  color: var(--bold-color, color(srgb 0.125 0 0.5));
   outline: color(srgb 0.125 0 0.5) none 0px;
   text-decoration-color: color(srgb 0.125 0 0.5);
 }
 
 html[saved-theme="light"] body .text-highlight {
-  background-color: color(srgb 0.231373 0.698039 0.807843 / 0.25);
-  color: color(srgb 0.125 0 0.5);
+  background-color: var(--text-highlight-bg, color(srgb 0.231373 0.698039 0.807843 / 0.25));
+  color: var(--text-normal, color(srgb 0.125 0 0.5));
   outline: color(srgb 0.125 0 0.5) none 0px;
   text-decoration-color: color(srgb 0.125 0 0.5);
 }
@@ -3012,7 +3424,7 @@ html[saved-theme="light"] body del {
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: color(srgb 0.125 0 0.5);
+  color: var(--text-normal, color(srgb 0.125 0 0.5));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
@@ -3020,7 +3432,7 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="light"] body p {
-  color: color(srgb 0.451 0.2766 0.994);
+  color: var(--text-muted, color(srgb 0.451 0.2766 0.994));
   outline: color(srgb 0.451 0.2766 0.994) none 0px;
   text-decoration-color: color(srgb 0.451 0.2766 0.994);
 }`,
@@ -3047,7 +3459,7 @@ html[saved-theme="light"] body ul.overflow {
   border-top-color: color(srgb 0.125 0 0.5);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
-  color: color(srgb 0.652 0.5532 0.988);
+  color: var(--text-faint, color(srgb 0.652 0.5532 0.988));
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: color(srgb 0.125 0 0.5);
@@ -3065,7 +3477,7 @@ html[saved-theme="light"] body td {
   border-left-color: color(srgb 0.853 0.8298 0.982);
   border-right-color: color(srgb 0.853 0.8298 0.982);
   border-top-color: color(srgb 0.853 0.8298 0.982);
-  color: color(srgb 0.125 0 0.5);
+  color: var(--table-text-color, color(srgb 0.125 0 0.5));
 }
 
 html[saved-theme="light"] body th {
@@ -3073,19 +3485,19 @@ html[saved-theme="light"] body th {
   border-left-color: color(srgb 0.853 0.8298 0.982);
   border-right-color: color(srgb 0.853 0.8298 0.982);
   border-top-color: color(srgb 0.853 0.8298 0.982);
-  color: color(srgb 0.125 0 0.5);
+  color: var(--table-header-color, color(srgb 0.125 0 0.5));
 }`,
     code: `html[saved-theme="light"] body code {
-  background-color: color(srgb 0.853 0.8298 0.982);
+  background-color: var(--code-background, color(srgb 0.853 0.8298 0.982));
   border-bottom-color: color(srgb 0.853 0.8298 0.982);
   border-left-color: color(srgb 0.853 0.8298 0.982);
   border-right-color: color(srgb 0.853 0.8298 0.982);
   border-top-color: color(srgb 0.853 0.8298 0.982);
-  color: color(srgb 0.125 0 0.5);
+  color: var(--code-normal, color(srgb 0.125 0 0.5));
 }
 
 html[saved-theme="light"] body pre:has(> code) {
-  background-color: color(srgb 0.853 0.8298 0.982);
+  background-color: var(--code-background, color(srgb 0.853 0.8298 0.982));
   border-bottom-color: color(srgb 0.853 0.8298 0.982);
   border-left-color: color(srgb 0.853 0.8298 0.982);
   border-right-color: color(srgb 0.853 0.8298 0.982);
@@ -3128,7 +3540,7 @@ html[saved-theme="light"] body video {
   border-top-color: color(srgb 0.125 0 0.5);
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
-  background-color: color(srgb 0.96 0.961 0.99);
+  background-color: var(--background-primary-alt, color(srgb 0.96 0.961 0.99));
   border-bottom-color: color(srgb 0.451 0.2766 0.994);
   border-left-color: color(srgb 0.451 0.2766 0.994);
   border-right-color: color(srgb 0.451 0.2766 0.994);
@@ -3715,7 +4127,7 @@ html[saved-theme="light"] body .callout > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-summary, 0, 191, 188);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -3736,7 +4148,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-bug, 233, 49, 71);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -3757,7 +4169,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-error, 233, 49, 71);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -3778,7 +4190,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
-  --callout-color: 120, 82, 238;
+  --callout-color: var(--callout-example, 120, 82, 238);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -3799,7 +4211,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-fail, 233, 49, 71);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -3820,7 +4232,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-info, 8, 109, 221);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -3841,7 +4253,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -3862,9 +4274,495 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
-  --callout-color: 8, 109, 221;
-  --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff) 50%);
-  background-color: rgba(8, 109, 221, 0.1);
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+  --background-modifier-border: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 80%,
+    hsl(255, 100%, 50%)
+  );
+  --background-modifier-border-hover: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 95%,
+    hsl(255, 100%, 50%)
+  );
+  --background-modifier-error: #e3365e;
+  --background-modifier-error-hover: #e3365e;
+  --background-modifier-error-rgb: 233, 49, 71;
+  --background-modifier-form-field: color-mix(in srgb, hsl(238, 60%, 95%) 80%, #fff);
+  --background-modifier-form-field-hover: color-mix(in srgb, hsl(238, 60%, 95%) 80%, #fff);
+  --background-modifier-hover: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 95%,
+    hsl(255, 100%, 50%)
+  );
+  --background-modifier-success: #47cc91;
+  --background-modifier-success-rgb: 8, 185, 78;
+  --background-primary: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
+  --background-primary-alt: color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff);
+  --background-secondary: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
+  --background-secondary-alt: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
+  --blockquote-border-color: hsl(257, 88.88%, 70.95%);
+  --blur-background: color-mix(in srgb, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff) 65%, transparent) linear-gradient(color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff), color-mix(in srgb, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff) 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: darken;
+  --callout-bug: 233, 49, 71;
+  --callout-color: var(--callout-default, 8, 109, 221);
+  --callout-default: 8, 109, 221;
+  --callout-error: 233, 49, 71;
+  --callout-example: 120, 82, 238;
+  --callout-fail: 233, 49, 71;
+  --callout-important: 0, 191, 188;
+  --callout-info: 8, 109, 221;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 236, 117, 0;
+  --callout-radius: 4px;
+  --callout-success: 8, 185, 78;
+  --callout-summary: 0, 191, 188;
+  --callout-tip: 0, 191, 188;
+  --callout-title-weight: 600;
+  --callout-todo: 8, 109, 221;
+  --callout-warning: 236, 117, 0;
+  --canvas-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 4px;
+  --canvas-dot-pattern: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  );
+  --caret-color: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
+  --checkbox-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  );
+  --checkbox-border-color-hover: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  );
+  --checkbox-color: hsl(257, 88.88%, 70.95%);
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+  --checkbox-marker-color: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
+  --checkbox-radius: 4px;
+  --checkbox-size: 16px;
+  --checklist-done-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  );
+  --clickable-icon-radius: 4px;
+  --code-background: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  );
+  --code-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  );
+  --code-bracket-background: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 95%,
+    hsl(255, 100%, 50%)
+  );
+  --code-comment: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  );
+  --code-function: #ffd85e;
+  --code-important: #fa9f50;
+  --code-keyword: #e54f9b;
+  --code-normal: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
+  --code-operator: #e3365e;
+  --code-property: #3bb2ce;
+  --code-punctuation: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  );
+  --code-radius: 4px;
+  --code-size: 0.875em;
+  --code-string: #47cc91;
+  --code-tag: #e3365e;
+  --code-value: #9446f8;
+  --collapse-icon-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  );
+  --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
+  --color-accent: hsl(258, 88%, 66%);
+  --color-accent-1: hsl(257, 88.88%, 70.95%);
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
+  --color-accent-hsl: 258, 88%, 66%;
+  --color-base-00: color-mix(in srgb, hsl(238, 60%, 95%) 25%, #fff);
+  --color-base-05: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
+  --color-base-10: color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff);
+  --color-base-100: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 0%,
+    hsl(255, 100%, 50%)
+  );
+  --color-base-20: color-mix(in srgb, hsl(238, 60%, 95%) 80%, #fff);
+  --color-base-25: color-mix(in srgb, hsl(238, 60%, 95%) 80%, #fff);
+  --color-base-30: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  );
+  --color-base-35: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 95%,
+    hsl(255, 100%, 50%)
+  );
+  --color-base-40: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 80%,
+    hsl(255, 100%, 50%)
+  );
+  --color-base-50: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  );
+  --color-base-60: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  );
+  --color-base-70: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  );
+  --color-blue: #437cf3;
+  --color-cyan: #3bb2ce;
+  --color-green: #47cc91;
+  --color-pink: #e54f9b;
+  --color-purple: #9446f8;
+  --color-red: #e3365e;
+  --divider-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  );
+  --divider-color-hover: hsl(257, 88.88%, 70.95%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: color-mix(in srgb, hsl(238, 60%, 95%) 25%, #fff);
+  --dropdown-background-hover: color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: color-mix(in srgb, hsl(238, 60%, 95%) 25%, #fff);
+  --flair-color: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
+  --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-weight: 400;
+  --graph-line: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 95%,
+    hsl(255, 100%, 50%)
+  );
+  --graph-node: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  );
+  --graph-node-attachment: #ffd85e;
+  --graph-node-focused: hsl(258, 88%, 66%);
+  --graph-node-tag: #47cc91;
+  --graph-node-unresolved: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  );
+  --graph-text: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
+  --h1-color: #3bb2ce;
+  --h2-color: #54b6f8;
+  --h3-color: #437cf3;
+  --h4-color: #6f51f4;
+  --h5-color: #9446f8;
+  --h5-line-height: 1.5;
+  --h6-color: #c952ed;
+  --h6-line-height: 1.5;
+  --heading-formatting: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  );
+  --heading-spacing: 2.5rem;
+  --hr-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  );
+  --interactive-accent: hsl(257, 88.88%, 70.95%);
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
+  --interactive-accent-hsl: 258, 88%, 66%;
+  --interactive-hover: color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff);
+  --interactive-normal: color-mix(in srgb, hsl(238, 60%, 95%) 25%, #fff);
+  --link-color: hsl(258, 88%, 66%);
+  --link-color-hover: hsl(255, 89.76%, 75.9%);
+  --link-external-color: hsl(258, 88%, 66%);
+  --link-external-color-hover: hsl(255, 89.76%, 75.9%);
+  --link-unresolved-color: hsl(258, 88%, 66%);
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
+  --menu-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 95%,
+    hsl(255, 100%, 50%)
+  );
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+  --pdf-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
+  --pdf-page-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
+  --pdf-sidebar-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff) 65%, transparent) linear-gradient(color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff), color-mix(in srgb, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff) 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --search-clear-button-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  );
+  --search-icon-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  );
+  --search-result-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
+  --setting-group-heading-color: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff);
+  --setting-items-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  );
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  );
+  --shiki-code-background: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  );
+  --shiki-code-block-border-radius: 4px;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  );
+  --shiki-code-function: #47cc91;
+  --shiki-code-important: #fa9f50;
+  --shiki-code-keyword: #e54f9b;
+  --shiki-code-normal: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  );
+  --shiki-code-property: #3bb2ce;
+  --shiki-code-punctuation: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  );
+  --shiki-code-string: #ffd85e;
+  --shiki-code-value: #9446f8;
+  --shiki-gutter-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  );
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  );
+  --shiki-gutter-text-color-highlight: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  );
+  --shiki-highlight-green: rgba(8, 185, 78, 0.5);
+  --shiki-highlight-green-background: rgba(8, 185, 78, 0.1);
+  --shiki-highlight-neutral: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  );
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
+  --shiki-highlight-red: rgba(233, 49, 71, 0.5);
+  --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
+  --shiki-terminal-dots-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  );
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
+  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  --sync-avatar-color-1: #e3365e;
+  --sync-avatar-color-2: #fa9f50;
+  --sync-avatar-color-3: #ffd85e;
+  --sync-avatar-color-4: #47cc91;
+  --sync-avatar-color-5: #3bb2ce;
+  --sync-avatar-color-6: #437cf3;
+  --sync-avatar-color-7: #9446f8;
+  --sync-avatar-color-8: #e54f9b;
+  --tab-background-active: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
+  --tab-divider-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 95%,
+    hsl(255, 100%, 50%)
+  );
+  --tab-font-size: 13px;
+  --tab-outline-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  );
+  --tab-radius: 4px;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
+  --tab-switcher-menubar-background: linear-gradient(to top, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff), transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
+  --tab-text-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  );
+  --tab-text-color-active: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  );
+  --tab-text-color-focused: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  );
+  --tab-text-color-focused-active: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  );
+  --tab-text-color-focused-active-current: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
+  --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+  --table-add-button-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  );
+  --table-add-button-border-width: 1px;
+  --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
+  --table-drag-handle-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  );
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  );
+  --table-header-border-width: 1px;
+  --table-header-color: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(258, 88%, 66%, 0.1);
+  --table-selection-blend-mode: darken;
+  --table-selection-border-color: hsl(257, 88.88%, 70.95%);
+  --table-text-size: 16px;
+  --tag-background: hsla(258, 88%, 66%, 0.1);
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2);
+  --tag-border-color: hsla(258, 88%, 66%, 0.15);
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
+  --tag-color: hsl(258, 88%, 66%);
+  --tag-color-hover: hsl(258, 88%, 66%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(258, 88%, 66%);
+  --text-accent-hover: hsl(255, 89.76%, 75.9%);
+  --text-error: #e3365e;
+  --text-faint: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  );
+  --text-highlight-bg: color-mix(in srgb, #3bb2ce 25%, transparent);
+  --text-highlight-bg-active: color-mix(
+    in srgb,
+    #3bb2ce 25%,
+    transparent
+  );
+  --text-muted: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  );
+  --text-normal: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
+  --text-selection: hsla(258, 88%, 66%, 0.2);
+  --text-success: #47cc91;
+  --text-warning: #fa9f50;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
+  --vauxhall-bg: hsl(238, 60%, 95%);
+  --vauxhall-fg: hsl(255, 100%, 50%);
+  background-color: rgba(var(--callout-color), 0.1);
   border-bottom-color: rgba(8, 109, 221, 0.25);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -3895,7 +4793,7 @@ html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-question, 236, 117, 0);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -3916,7 +4814,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -3937,7 +4835,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
-  --callout-color: 8, 185, 78;
+  --callout-color: var(--callout-success, 8, 185, 78);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -3958,7 +4856,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-tip, 0, 191, 188);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -3979,7 +4877,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-todo, 8, 109, 221);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -4000,7 +4898,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-warning, 236, 117, 0);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -4085,11 +4983,11 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-left-color: color(srgb 0.853 0.8298 0.982);
   border-right-color: color(srgb 0.853 0.8298 0.982);
   border-top-color: color(srgb 0.853 0.8298 0.982);
-  color: color(srgb 0.125 0 0.5);
+  color: var(--text-normal, color(srgb 0.125 0 0.5));
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
-  background-color: color(srgb 0.968 0.9688 0.992);
+  background-color: var(--prompt-background, color(srgb 0.968 0.9688 0.992));
   border-bottom-color: color(srgb 0.786 0.7376 0.984);
   border-left-color: color(srgb 0.786 0.7376 0.984);
   border-right-color: color(srgb 0.786 0.7376 0.984);
@@ -4118,7 +5016,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: color(srgb 0.8865 0.8759 0.981);
+  background-color: var(--background-modifier-hover, color(srgb 0.8865 0.8759 0.981));
   color: color(srgb 0.125 0 0.5);
 }
 
@@ -4137,7 +5035,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
-  background-color: color(srgb 0.8865 0.8759 0.981);
+  background-color: var(--background-modifier-hover, color(srgb 0.8865 0.8759 0.981));
   border-bottom-color: color(srgb 0.125 0 0.5);
   border-left-color: color(srgb 0.125 0 0.5);
   border-right-color: color(srgb 0.125 0 0.5);
@@ -4146,40 +5044,40 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: color(srgb 0.8865 0.8759 0.981);
+  background-color: var(--background-modifier-hover, color(srgb 0.8865 0.8759 0.981));
   color: color(srgb 0.125 0 0.5);
 }
 
 html[saved-theme="light"] body h1 {
-  color: rgb(59, 178, 206);
+  color: var(--h1-color, rgb(59, 178, 206));
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(59, 178, 206);
+  color: var(--inline-title-color, rgb(59, 178, 206));
 }
 
 html[saved-theme="light"] body h2 {
-  color: rgb(84, 182, 248);
+  color: var(--h2-color, rgb(84, 182, 248));
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  color: rgb(59, 178, 206);
+  color: var(--inline-title-color, rgb(59, 178, 206));
 }
 
 html[saved-theme="light"] body h3 {
-  color: rgb(67, 124, 243);
+  color: var(--h3-color, rgb(67, 124, 243));
 }
 
 html[saved-theme="light"] body h4 {
-  color: rgb(111, 81, 244);
+  color: var(--h4-color, rgb(111, 81, 244));
 }
 
 html[saved-theme="light"] body h5 {
-  color: rgb(148, 70, 248);
+  color: var(--h5-color, rgb(148, 70, 248));
 }
 
 html[saved-theme="light"] body h6 {
-  color: rgb(201, 82, 237);
+  color: var(--h6-color, rgb(201, 82, 237));
 }
 
 html[saved-theme="light"] body hr {
@@ -4188,7 +5086,7 @@ html[saved-theme="light"] body hr {
   border-right-color: color(srgb 0.853 0.8298 0.982);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-width: 2px;
@@ -4203,11 +5101,11 @@ html[saved-theme="light"] body hr {
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: color(srgb 0.451 0.2766 0.994);
+  color: var(--nav-item-color, color(srgb 0.451 0.2766 0.994));
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: color(srgb 0.451 0.2766 0.994);
+  color: var(--nav-item-color, color(srgb 0.451 0.2766 0.994));
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: color(srgb 0.125 0 0.5);
@@ -4217,15 +5115,15 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-left-color: color(srgb 0.451 0.2766 0.994);
   border-right-color: color(srgb 0.451 0.2766 0.994);
   border-top-color: color(srgb 0.451 0.2766 0.994);
-  color: color(srgb 0.451 0.2766 0.994);
+  color: var(--icon-color, color(srgb 0.451 0.2766 0.994));
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: color(srgb 0.968 0.9688 0.992);
+  background-color: var(--status-bar-background, color(srgb 0.968 0.9688 0.992));
   border-bottom-color: color(srgb 0.853 0.8298 0.982);
   border-left-color: color(srgb 0.853 0.8298 0.982);
   border-right-color: color(srgb 0.853 0.8298 0.982);
   border-top-color: color(srgb 0.853 0.8298 0.982);
-  color: color(srgb 0.451 0.2766 0.994);
+  color: var(--status-bar-text-color, color(srgb 0.451 0.2766 0.994));
 }
 
 html[saved-theme="light"] body footer ul li a {
@@ -4244,7 +5142,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: color(srgb 0.451 0.2766 0.994);
+  color: var(--nav-item-color, color(srgb 0.451 0.2766 0.994));
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -4262,7 +5160,7 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
-  color: color(srgb 0.451 0.2766 0.994);
+  color: var(--nav-item-color, color(srgb 0.451 0.2766 0.994));
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -4276,7 +5174,7 @@ html[saved-theme="light"] body ul.section-ul {
   border-left-color: color(srgb 0.451 0.2766 0.994);
   border-right-color: color(srgb 0.451 0.2766 0.994);
   border-top-color: color(srgb 0.451 0.2766 0.994);
-  color: color(srgb 0.451 0.2766 0.994);
+  color: var(--icon-color, color(srgb 0.451 0.2766 0.994));
 }
 
 html[saved-theme="light"] body .darkmode svg {
@@ -4292,7 +5190,7 @@ html[saved-theme="light"] body .darkmode svg {
 }
 
 html[saved-theme="light"] body .breadcrumb-element p {
-  color: color(srgb 0.652 0.5532 0.988);
+  color: var(--text-faint, color(srgb 0.652 0.5532 0.988));
 }`,
     canvas: `html[saved-theme="light"] body .canvas-node {
   border-color: color(srgb 0.125 0 0.5);
@@ -4303,7 +5201,7 @@ html[saved-theme="light"] body .canvas-node-content {
 }
 
 html[saved-theme="light"] body .canvas-node-file {
-  color: color(srgb 0.125 0 0.5);
+  color: var(--text-normal, color(srgb 0.125 0 0.5));
 }
 
 html[saved-theme="light"] body .canvas-node-group {
@@ -4311,19 +5209,19 @@ html[saved-theme="light"] body .canvas-node-group {
 }
 
 html[saved-theme="light"] body .canvas-sidebar {
-  background-color: color(srgb 0.968 0.9688 0.992);
+  background-color: var(--background-primary, color(srgb 0.968 0.9688 0.992));
   border-color: color(srgb 0.125 0 0.5);
 }`,
     bases: `html[saved-theme="light"] body .bases-table thead th {
   border-color: color(srgb 0.853 0.8298 0.982);
-  color: color(srgb 0.125 0 0.5);
+  color: var(--table-header-color, color(srgb 0.125 0 0.5));
 }`,
     properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: color(srgb 0.853 0.8298 0.982);
   border-left-color: color(srgb 0.853 0.8298 0.982);
   border-right-color: color(srgb 0.853 0.8298 0.982);
   border-top-color: color(srgb 0.853 0.8298 0.982);
-  color: color(srgb 0.451 0.2766 0.994);
+  color: var(--text-muted, color(srgb 0.451 0.2766 0.994));
 }
 
 html[saved-theme="light"] body .metadata-properties {
@@ -4351,8 +5249,8 @@ html[saved-theme="light"] body .note-properties-value {
 }
 
 html[saved-theme="light"] body div#quartz-root {
-  background-color: color(srgb 0.968 0.9688 0.992);
-  color: color(srgb 0.125 0 0.5);
+  background-color: var(--background-primary, color(srgb 0.968 0.9688 0.992));
+  color: var(--text-normal, color(srgb 0.125 0 0.5));
 }
 
 html[saved-theme="light"] body ol.overflow {
@@ -4362,12 +5260,12 @@ html[saved-theme="light"] body ol.overflow {
   border-top-color: color(srgb 0.125 0 0.5);
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
-  background-color: color(srgb 0.968 0.9688 0.992);
+  background-color: var(--background-secondary, color(srgb 0.968 0.9688 0.992));
   border-color: color(srgb 0.125 0 0.5);
 }
 
 html[saved-theme="light"] body .stacked-page-header {
-  background-color: color(srgb 0.96 0.961 0.99);
+  background-color: var(--tab-container-background, color(srgb 0.96 0.961 0.99));
 }
 
 html[saved-theme="light"] body .stacked-page.active {
@@ -4382,11 +5280,11 @@ html[saved-theme="light"] body .stacked-page.active {
 }
 
 html[saved-theme="light"] body .navigation-progress {
-  background-color: color(srgb 0.968 0.9688 0.992);
+  background-color: var(--status-bar-background, color(srgb 0.968 0.9688 0.992));
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
-  color: color(srgb 0.125 0 0.5);
+  color: var(--text-normal, color(srgb 0.125 0 0.5));
 }
 
 html[saved-theme="light"] body abbr {
@@ -4405,16 +5303,16 @@ html[saved-theme="light"] body input[type=text] {
   border-left-color: color(srgb 0.451 0.2766 0.994);
   border-right-color: color(srgb 0.451 0.2766 0.994);
   border-top-color: color(srgb 0.451 0.2766 0.994);
-  color: color(srgb 0.451 0.2766 0.994);
+  color: var(--text-normal, color(srgb 0.451 0.2766 0.994));
 }
 
 html[saved-theme="light"] body kbd {
-  background-color: color(srgb 0.853 0.8298 0.982);
+  background-color: var(--code-background, color(srgb 0.853 0.8298 0.982));
   border-bottom-color: color(srgb 0.125 0 0.5);
   border-left-color: color(srgb 0.125 0 0.5);
   border-right-color: color(srgb 0.125 0 0.5);
   border-top-color: color(srgb 0.125 0 0.5);
-  color: color(srgb 0.125 0 0.5);
+  color: var(--code-normal, color(srgb 0.125 0 0.5));
 }
 
 html[saved-theme="light"] body progress {

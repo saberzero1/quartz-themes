@@ -4,8 +4,8 @@ export const theme: ThemeData = {
   meta: { name: "sodalite", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
-  --callout-padding: 18px;
-  --callout-radius: 0;
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 18px);
+  --callout-radius: var(--radius-s, 0);
   --file-header-justify: left;
   --file-line-width: 100%;
   --sdlt-accent: #8BA4CC;
@@ -44,15 +44,15 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
 html body .page > div#quartz-body div.sidebar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
 }
 
 html body .page > div#quartz-body div.sidebar.right {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
 html body html {
@@ -67,8 +67,8 @@ html body html {
   --sdlt-content-bg-end-transparent: rgba(33, 34, 35, 0.3);
   --sdlt-content-bg-start: #222832;
   --sdlt-content-bg-start-transparent: rgba(34, 40, 50, 0.3);
-  --sdlt-gradient-base: linear-gradient(135deg, #202028, #1B2020);
-  --sdlt-gradient-content: linear-gradient(135deg, #222832, #212223);
+  --sdlt-gradient-base: linear-gradient(135deg, var(--sdlt-base-bg-start), var(--sdlt-base-bg-end));
+  --sdlt-gradient-content: linear-gradient(135deg, var(--sdlt-content-bg-start), var(--sdlt-content-bg-end));
   --sdlt-gradient-subtle: linear-gradient(160deg, transparent, rgba(255, 255, 255, 0.02));
   --sdlt-graph-line: #404050;
   --sdlt-graph-line-highlight: #507090;
@@ -279,7 +279,7 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -291,7 +291,7 @@ html body .callout[data-callout="abstract"] .callout-title {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -303,7 +303,7 @@ html body .callout[data-callout="bug"] .callout-title {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -315,7 +315,7 @@ html body .callout[data-callout="danger"] .callout-title {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -327,7 +327,7 @@ html body .callout[data-callout="example"] .callout-title {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -339,7 +339,7 @@ html body .callout[data-callout="failure"] .callout-title {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -351,7 +351,7 @@ html body .callout[data-callout="info"] .callout-title {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -363,7 +363,7 @@ html body .callout[data-callout="note"] .callout-title {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -375,7 +375,7 @@ html body .callout[data-callout="question"] .callout-title {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -387,7 +387,7 @@ html body .callout[data-callout="quote"] .callout-title {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -399,7 +399,7 @@ html body .callout[data-callout="success"] .callout-title {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -411,7 +411,7 @@ html body .callout[data-callout="tip"] .callout-title {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -423,7 +423,7 @@ html body .callout[data-callout="todo"] .callout-title {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -490,10 +490,10 @@ html body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html body .search > .search-container > .search-space {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--prompt-background, rgba(0, 0, 0, 0));
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -504,7 +504,7 @@ html body .callout[data-callout="warning"] {
   padding-top: 18px;
 }`,
     footer: `html body footer {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(179, 179, 179);
   border-left-color: rgb(179, 179, 179);
   border-left-width: 0px;
@@ -513,17 +513,17 @@ html body .callout[data-callout="warning"] {
   border-top-width: 0px;
 }`,
     properties: `html body div#quartz-root {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-primary, rgba(0, 0, 0, 0));
 }`,
     stacked: `html body .stacked-page {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
 }
 
 html body .stacked-page-header {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }`,
     misc: `html body .navigation-progress {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
 }
 
 html body .page-header h2.page-title {

@@ -12,369 +12,339 @@ export const theme: ThemeData = {
   --accent-h: 202;
   --accent-l: 75%;
   --accent-s: 100%;
-  --background-modifier-active-hover: hsla(202, 100%, 75%, 0.1);
-  --background-modifier-border: rgb(65, 72, 104);
-  --background-modifier-border-focus: rgb(65, 72, 104);
-  --background-modifier-border-hover: rgb(65, 72, 104);
-  --background-modifier-cover: rgba(36, 40, 59, 0.8);
-  --background-modifier-error: rgba(255, 117, 127, 0.8);
-  --background-modifier-error-hover: rgb(255, 117, 127);
-  --background-modifier-form-field: rgb(36, 40, 59);
-  --background-modifier-form-field-highlighted: rgb(36, 40, 59);
-  --background-modifier-form-field-hover: rgb(36, 40, 59);
-  --background-modifier-hover: rgb(65, 72, 104);
-  --background-modifier-message: rgba(65, 72, 104, 0.9);
-  --background-modifier-success: rgb(158, 206, 106);
-  --background-primary: rgb(36, 40, 59);
-  --background-primary-alt: rgb(36, 40, 59);
-  --background-secondary: rgb(36, 40, 59);
-  --background-secondary-alt: rgb(36, 40, 59);
-  --bases-cards-background: rgb(36, 40, 59);
-  --bases-cards-border-width: 2px;
-  --bases-cards-cover-background: rgb(36, 40, 59);
-  --bases-cards-shadow: 0 0 0 1px rgb(65, 72, 104);
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(65, 72, 104);
-  --bases-embed-border-color: rgb(65, 72, 104);
-  --bases-group-heading-property-color: rgb(169, 177, 214);
-  --bases-header-border-width: 0 0 2px 0;
-  --bases-table-border-color: rgb(65, 72, 104);
-  --bases-table-cell-background-active: rgb(36, 40, 59);
-  --bases-table-cell-background-disabled: rgb(36, 40, 59);
-  --bases-table-cell-background-selected: hsla(202, 100%, 75%, 0.1);
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(65, 72, 104);
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(202, 100%, 75%);
-  --bases-table-column-border-width: 2px;
-  --bases-table-container-border-width: 2px;
-  --bases-table-group-background: rgb(36, 40, 59);
-  --bases-table-header-background: rgb(36, 40, 59);
-  --bases-table-header-background-hover: rgb(65, 72, 104);
-  --bases-table-header-color: rgb(169, 177, 214);
-  --bases-table-row-border-width: 2px;
-  --bases-table-summary-background: rgb(36, 40, 59);
-  --bases-table-summary-background-hover: rgb(65, 72, 104);
-  --bg: rgb(36, 40, 59);
-  --bg_dark: rgb(36, 40, 59);
-  --bg_dark2: rgb(18, 18, 24);
+  --background-modifier-border: var(--bg_highlight, rgb(65, 72, 104));
+  --background-modifier-border-focus: var(--bg_highlight, rgb(65, 72, 104));
+  --background-modifier-border-hover: var(--bg_highlight, rgb(65, 72, 104));
+  --background-modifier-cover: rgba(var(--bg_dark_x), 0.8);
+  --background-modifier-error: rgba(var(--red_x), 0.8);
+  --background-modifier-error-hover: var(--red, rgb(255, 117, 127));
+  --background-modifier-form-field: var(--bg_dark, rgb(36, 40, 59));
+  --background-modifier-form-field-highlighted: var(--bg_dark, rgb(36, 40, 59));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, rgb(36, 40, 59));
+  --background-modifier-hover: var(--bg_highlight, rgb(65, 72, 104));
+  --background-modifier-message: rgba(var(--bg_highlight_x), 0.9);
+  --background-modifier-success: var(--green, rgb(158, 206, 106));
+  --background-primary: var(--bg, rgb(36, 40, 59));
+  --background-primary-alt: var(--bg, rgb(36, 40, 59));
+  --background-secondary: var(--bg_dark, rgb(36, 40, 59));
+  --background-secondary-alt: var(--bg_dark, rgb(36, 40, 59));
+  --bases-cards-background: var(--background-primary, rgb(36, 40, 59));
+  --bases-cards-border-width: var(--border-width, 2px);
+  --bases-cards-cover-background: var(--background-primary-alt, rgb(36, 40, 59));
+  --bases-embed-border-color: var(--background-modifier-border, rgb(65, 72, 104));
+  --bases-group-heading-property-color: var(--text-muted, rgb(169, 177, 214));
+  --bases-table-border-color: var(--table-border-color, rgb(65, 72, 104));
+  --bases-table-cell-background-active: var(--background-primary, rgb(36, 40, 59));
+  --bases-table-cell-background-disabled: var(--background-primary-alt, rgb(36, 40, 59));
+  --bases-table-cell-background-selected: var(--table-selection, hsla(202, 100%, 75%, 0.1));
+  --bases-table-column-border-width: var(--border-width, 2px);
+  --bases-table-container-border-width: var(--border-width, 2px);
+  --bases-table-group-background: var(--background-primary-alt, rgb(36, 40, 59));
+  --bases-table-header-background: var(--background-primary, rgb(36, 40, 59));
+  --bases-table-header-background-hover: var(--background-modifier-hover, rgb(65, 72, 104));
+  --bases-table-header-color: var(--text-muted, rgb(169, 177, 214));
+  --bases-table-row-border-width: var(--border-width, 2px);
+  --bases-table-summary-background: var(--background-primary, rgb(36, 40, 59));
+  --bases-table-summary-background-hover: var(--background-modifier-hover, rgb(65, 72, 104));
+  --bg: rgb(var(--bg_x));
+  --bg_dark: rgb(var(--bg_dark_x));
+  --bg_dark2: rgb(var(--bg_dark2_x));
   --bg_dark2_x: 18, 18, 24;
   --bg_dark_x: 36, 40, 59;
-  --bg_highlight: rgb(65, 72, 104);
-  --bg_highlight_dark: rgb(35, 35, 55);
+  --bg_highlight: rgb(var(--bg_highlight_x));
+  --bg_highlight_dark: rgb(var(--bg_highlight_dark_x));
   --bg_highlight_dark_x: 35, 35, 55;
   --bg_highlight_x: 65, 72, 104;
   --bg_x: 36, 40, 59;
-  --blockquote-background-color: rgb(36, 40, 59);
-  --blockquote-border-color: hsl(202, 100%, 75%);
-  --blue: rgb(122, 162, 247);
-  --blue0: rgb(61, 89, 161);
+  --blockquote-background-color: var(--bg_dark, rgb(36, 40, 59));
+  --blockquote-border-color: var(--interactive-accent, hsl(202, 100%, 75%));
+  --blue: rgb(var(--blue_x));
+  --blue0: rgb(var(--blue0_x));
   --blue0_x: 61, 89, 161;
   --blue_x: 122, 162, 247;
-  --blur-background: color-mix(in srgb, rgb(36, 40, 59) 65%, transparent) linear-gradient(rgb(36, 40, 59), color-mix(in srgb, rgb(36, 40, 59) 65%, transparent));
-  --bodyFont: var(--font-interface, "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --bold-color: hsl(202, 100%, 75%);
+  --bold-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --border-width: 2px;
-  --callout-quote: rgb(169, 177, 214);
-  --canvas-background: rgb(36, 40, 59);
-  --canvas-card-label-color: rgb(86, 95, 137);
-  --caret-color: rgb(192, 202, 245);
-  --checkbox-border-color: rgb(86, 95, 137);
-  --checkbox-border-color-hover: rgb(86, 95, 137);
-  --checkbox-color: rgb(86, 95, 137);
-  --checkbox-color-hover: rgb(86, 95, 137);
-  --checkbox-marker-color: rgb(36, 40, 59);
-  --checklist-done-color: rgba(rgb(158, 206, 106), 0.5);
-  --code-background: rgb(35, 35, 55);
-  --code-border-color: rgb(65, 72, 104);
-  --code-bracket-background: rgb(65, 72, 104);
-  --code-comment: rgb(86, 95, 137);
-  --code-function: rgb(224, 175, 104);
-  --code-important: rgb(255, 158, 100);
-  --code-keyword: rgb(187, 154, 247);
-  --code-normal: rgb(192, 202, 245);
-  --code-operator: rgb(255, 117, 127);
-  --code-property: rgb(125, 207, 255);
-  --code-punctuation: rgb(169, 177, 214);
-  --code-string: rgb(158, 206, 106);
-  --code-tag: rgb(255, 117, 127);
-  --code-value: rgb(157, 124, 21);
-  --codeFont: var(--font-interface, "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --collapse-icon-color: rgb(86, 95, 137);
-  --collapse-icon-color-collapsed: hsl(199, 102%, 86.25%);
-  --color-accent: hsl(202, 100%, 75%);
-  --color-accent-1: hsl(199, 102%, 86.25%);
-  --color-accent-2: hsl(197, 105%, 96.75%);
-  --color-accent-hsl: 202, 100%, 75%;
-  --color-blue: rgb(122, 162, 247);
-  --color-cyan: rgb(125, 207, 255);
-  --color-green: rgb(158, 206, 106);
-  --color-orange: rgb(255, 158, 100);
-  --color-pink: rgb(187, 154, 247);
-  --color-purple: rgb(157, 124, 21);
-  --color-red: rgb(255, 117, 127);
-  --color-yellow: rgb(224, 175, 104);
-  --color_blue_rgb: 122, 162, 247;
-  --color_cyan_rgb: 125, 207, 255;
-  --color_green_rgb: 158, 206, 106;
-  --color_orange_rgb: 255, 158, 100;
-  --color_pink_rgb: 187, 154, 247;
-  --color_purple_rgb: 157, 124, 21;
-  --color_red_rgb: 255, 117, 127;
-  --color_yellow_rgb: 224, 175, 104;
-  --comment: rgb(86, 95, 137);
+  --callout-quote: var(--fg_dark, rgb(169, 177, 214));
+  --canvas-background: var(--background-primary, rgb(36, 40, 59));
+  --canvas-card-label-color: var(--text-faint, rgb(86, 95, 137));
+  --canvas-color: var(--bg_highlight_x, 126, 126, 126);
+  --caret-color: var(--text-normal, rgb(192, 202, 245));
+  --checkbox-border-color: var(--comment, rgb(86, 95, 137));
+  --checkbox-border-color-hover: var(--comment, rgb(86, 95, 137));
+  --checkbox-color: var(--comment, rgb(86, 95, 137));
+  --checkbox-color-hover: var(--comment, rgb(86, 95, 137));
+  --checkbox-marker-color: var(--background-primary, rgb(36, 40, 59));
+  --checklist-done-color: rgba(var(--green), 0.5);
+  --code-background: var(--bg_highlight_dark, rgb(35, 35, 55));
+  --code-border-color: var(--background-modifier-border, rgb(65, 72, 104));
+  --code-bracket-background: var(--background-modifier-hover, rgb(65, 72, 104));
+  --code-comment: var(--text-faint, rgb(86, 95, 137));
+  --code-function: var(--color-yellow, rgb(224, 175, 104));
+  --code-important: var(--color-orange, rgb(255, 158, 100));
+  --code-keyword: var(--color-pink, rgb(187, 154, 247));
+  --code-normal: var(--fg, rgb(192, 202, 245));
+  --code-operator: var(--color-red, rgb(255, 117, 127));
+  --code-property: var(--color-cyan, rgb(125, 207, 255));
+  --code-punctuation: var(--text-muted, rgb(169, 177, 214));
+  --code-string: var(--color-green, rgb(158, 206, 106));
+  --code-tag: var(--color-red, rgb(255, 117, 127));
+  --code-value: var(--color-purple, rgb(157, 124, 21));
+  --collapse-icon-color: var(--text-faint, rgb(86, 95, 137));
+  --collapse-icon-color-collapsed: var(--text-accent, hsl(199, 102%, 86.25%));
+  --color-blue: var(--blue, rgb(122, 162, 247));
+  --color-cyan: var(--cyan, rgb(125, 207, 255));
+  --color-green: var(--green, rgb(158, 206, 106));
+  --color-orange: var(--orange, rgb(255, 158, 100));
+  --color-pink: var(--magenta, rgb(187, 154, 247));
+  --color-purple: var(--purple, rgb(157, 124, 21));
+  --color-red: var(--red, rgb(255, 117, 127));
+  --color-yellow: var(--yellow, rgb(224, 175, 104));
+  --color_blue_rgb: var(--blue_x, 122, 162, 247);
+  --color_cyan_rgb: var(--cyan_x, 125, 207, 255);
+  --color_green_rgb: var(--green_x, 158, 206, 106);
+  --color_orange_rgb: var(--orange_x, 255, 158, 100);
+  --color_pink_rgb: var(--magenta_x, 187, 154, 247);
+  --color_purple_rgb: var(--purple_x, 157, 124, 21);
+  --color_red_rgb: var(--red_x, 255, 117, 127);
+  --color_yellow_rgb: var(--yellow_x, 224, 175, 104);
+  --comment: rgb(var(--comment_x));
   --comment_x: 86, 95, 137;
-  --cyan: rgb(125, 207, 255);
+  --cyan: rgb(var(--cyan_x));
   --cyan_hsl: 202 100% 75%;
   --cyan_x: 125, 207, 255;
-  --dark: var(--text-normal, rgb(192, 202, 245));
-  --darkgray: var(--text-normal, rgb(192, 202, 245));
+  --dark: var(--text-normal, var(--fg, rgb(192, 202, 245)));
+  --darkgray: var(--text-normal, var(--fg, rgb(192, 202, 245)));
   --default-font: "JetBrains Mono Nerd Font", monospace;
-  --divider-color: rgb(65, 72, 104);
-  --divider-color-hover: hsl(202, 100%, 75%);
-  --dropdown-background: rgb(36, 40, 59);
-  --dropdown-background-hover: rgb(36, 40, 59);
-  --embed-background: rgb(36, 40, 59);
-  --embed-block-shadow-hover: 0 0 0 1px rgb(65, 72, 104), inset 0 0 0 1px rgb(65, 72, 104);
-  --embed-border-start: 2px solid hsl(202, 100%, 75%);
-  --embed-padding: 1.5rem 1.5rem 0.5rem;
+  --divider-color: var(--background-modifier-border, rgb(65, 72, 104));
+  --divider-color-hover: var(--interactive-accent, hsl(202, 100%, 75%));
+  --dropdown-background: var(--interactive-normal, rgb(36, 40, 59));
+  --dropdown-background-hover: var(--interactive-hover, rgb(36, 40, 59));
+  --embed-background: var(--bg_dark, rgb(36, 40, 59));
   --external-link-filter: invert(35%) sepia(28%) saturate(681%)
     hue-rotate(192deg) brightness(94%) contrast(85%);
-  --fg: rgb(192, 202, 245);
-  --fg_dark: rgb(169, 177, 214);
+  --fg: rgb(var(--fg_x));
+  --fg_dark: rgb(var(--fg_dark_x));
   --fg_dark_x: 169, 177, 214;
   --fg_x: 192, 202, 245;
-  --file-header-background: rgb(36, 40, 59);
-  --file-header-background-focused: rgb(36, 40, 59);
-  --file-header-border: 2px solid transparent;
-  --file-header-font: "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --flair-background: rgb(36, 40, 59);
-  --flair-color: rgb(192, 202, 245);
-  --flashing-background: rgba(61, 89, 161, 0.3);
-  --font-interface: "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --footnote-divider-color: rgb(65, 72, 104);
-  --footnote-divider-width: 2px;
-  --footnote-id-color: rgb(169, 177, 214);
-  --footnote-id-color-no-occurrences: rgb(86, 95, 137);
-  --footnote-input-background-active: rgb(65, 72, 104);
-  --graph-line: rgb(86, 95, 137);
-  --graph-node: rgb(192, 202, 245);
-  --graph-node-attachment: rgb(122, 162, 247);
-  --graph-node-focused: hsl(199, 102%, 86.25%);
-  --graph-node-tag: rgb(255, 158, 100);
-  --graph-node-unresolved: rgb(86, 95, 137);
-  --graph-text: rgb(192, 202, 245);
-  --gray: var(--text-muted, rgb(169, 177, 214));
-  --green: rgb(158, 206, 106);
+  --file-header-background: var(--background-primary, rgb(36, 40, 59));
+  --file-header-background-focused: var(--background-primary, rgb(36, 40, 59));
+  --file-header-border: var(--border-width, 2px solid transparent) solid transparent;
+  --file-header-font: var(--font-interface, "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --flair-background: var(--interactive-normal, rgb(36, 40, 59));
+  --flair-color: var(--text-normal, rgb(192, 202, 245));
+  --flashing-background: rgba(var(--blue0_x), 0.3);
+  --footnote-divider-color: var(--metadata-divider-color, rgb(65, 72, 104));
+  --footnote-divider-width: var(--border-width, 2px);
+  --footnote-id-color: var(--text-muted, rgb(169, 177, 214));
+  --footnote-id-color-no-occurrences: var(--text-faint, rgb(86, 95, 137));
+  --footnote-input-background-active: var(--metadata-input-background-active, rgb(65, 72, 104));
+  --graph-line: var(--comment, rgb(86, 95, 137));
+  --graph-node: var(--fg, rgb(192, 202, 245));
+  --graph-node-attachment: var(--blue, rgb(122, 162, 247));
+  --graph-node-focused: var(--text-accent, hsl(199, 102%, 86.25%));
+  --graph-node-tag: var(--orange, rgb(255, 158, 100));
+  --graph-node-unresolved: var(--text-faint, rgb(86, 95, 137));
+  --graph-text: var(--text-normal, rgb(192, 202, 245));
+  --gray: var(--text-muted, var(--fg_dark, rgb(169, 177, 214)));
+  --green: rgb(var(--green_x));
   --green_x: 158, 206, 106;
-  --h1-color: rgb(255, 117, 127);
-  --h2-color: rgb(224, 175, 104);
-  --h3-color: rgb(158, 206, 106);
-  --h4-color: rgb(125, 207, 255);
-  --h5-color: rgb(122, 162, 247);
-  --h6-color: rgb(187, 154, 247);
-  --headerFont: var(--font-interface, "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --heading-formatting: rgb(86, 95, 137);
-  --highlight: var(--text-highlight-bg, rgba(255, 158, 100, 0.4));
-  --hr-color: rgb(65, 72, 104);
-  --icon-color: rgb(169, 177, 214);
-  --icon-color-active: hsl(199, 102%, 86.25%);
-  --icon-color-focused: rgb(122, 162, 247);
-  --icon-color-hover: rgb(224, 175, 104);
-  --indentation-guide-color: rgb(86, 95, 137);
-  --indentation-guide-color-active: rgb(86, 95, 137);
-  --indentation-guide-width: 2px;
-  --indentation-guide-width-active: 2px;
-  --inline-title-color: rgb(187, 154, 247);
-  --input-border-width: 2px;
-  --input-date-separator: rgb(86, 95, 137);
-  --input-placeholder-color: rgb(86, 95, 137);
-  --interactive-accent: hsl(202, 100%, 75%);
-  --interactive-accent-hover: hsl(199, 102%, 86.25%);
-  --interactive-accent-hsl: 202, 100%, 75%;
-  --interactive-hover: rgb(36, 40, 59);
-  --interactive-normal: rgb(36, 40, 59);
-  --interactive-success: rgb(158, 206, 106);
-  --italic-color: hsl(202, 100%, 75%);
-  --light: var(--background-primary, rgb(36, 40, 59));
-  --lightgray: var(--background-secondary, rgb(36, 40, 59));
-  --link-color: hsl(199, 102%, 86.25%);
-  --link-color-hover: hsl(197, 105%, 96.75%);
-  --link-external-color: hsl(199, 102%, 86.25%);
-  --link-external-color-hover: hsl(197, 105%, 96.75%);
-  --link-unresolved-color: hsl(199, 102%, 86.25%);
-  --link-unresolved-decoration-color: hsla(202, 100%, 75%, 0.3);
-  --list-marker-color: rgb(86, 95, 137);
-  --list-marker-color-collapsed: hsl(199, 102%, 86.25%);
-  --list-marker-color-hover: rgb(169, 177, 214);
+  --h1-color: var(--red, rgb(255, 117, 127));
+  --h2-color: var(--yellow, rgb(224, 175, 104));
+  --h3-color: var(--green, rgb(158, 206, 106));
+  --h4-color: var(--cyan, rgb(125, 207, 255));
+  --h5-color: var(--blue, rgb(122, 162, 247));
+  --h6-color: var(--magenta, rgb(187, 154, 247));
+  --heading-formatting: var(--text-faint, rgb(86, 95, 137));
+  --highlight: var(--text-highlight-bg, rgba(var(--orange_x), 0.4));
+  --hr-color: var(--background-modifier-border, rgb(65, 72, 104));
+  --icon-color: var(--text-muted, rgb(169, 177, 214));
+  --icon-color-active: var(--text-accent, hsl(199, 102%, 86.25%));
+  --icon-color-focused: var(--blue, rgb(122, 162, 247));
+  --icon-color-hover: var(--yellow, rgb(224, 175, 104));
+  --indentation-guide-color: var(--comment, rgb(86, 95, 137));
+  --indentation-guide-color-active: var(--comment, rgb(86, 95, 137));
+  --indentation-guide-width: var(--border-width, 2px);
+  --indentation-guide-width-active: var(--border-width, 2px);
+  --inline-title-color: var(--magenta, rgb(187, 154, 247));
+  --input-border-width: var(--border-width, 2px);
+  --input-date-separator: var(--text-faint, rgb(86, 95, 137));
+  --input-placeholder-color: var(--text-faint, rgb(86, 95, 137));
+  --interactive-accent: var(--color-accent, hsl(202, 100%, 75%));
+  --interactive-accent-hover: var(--color-accent-1, hsl(199, 102%, 86.25%));
+  --interactive-accent-hsl: var(--color-accent-hsl, 202, 100%, 75%);
+  --interactive-hover: var(--bg, rgb(36, 40, 59));
+  --interactive-normal: var(--bg_dark, rgb(36, 40, 59));
+  --interactive-success: var(--green, rgb(158, 206, 106));
+  --italic-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --light: var(--background-primary, var(--bg, rgb(36, 40, 59)));
+  --lightgray: var(--background-secondary, var(--bg_dark, rgb(36, 40, 59)));
+  --link-color: var(--text-accent, hsl(199, 102%, 86.25%));
+  --link-color-hover: var(--text-accent-hover, hsl(197, 105%, 96.75%));
+  --link-external-color: var(--text-accent, hsl(199, 102%, 86.25%));
+  --link-external-color-hover: var(--text-accent-hover, hsl(197, 105%, 96.75%));
+  --link-unresolved-color: var(--text-accent, hsl(199, 102%, 86.25%));
+  --list-marker-color: var(--text-faint, rgb(86, 95, 137));
+  --list-marker-color-collapsed: var(--text-accent, hsl(199, 102%, 86.25%));
+  --list-marker-color-hover: var(--text-muted, rgb(169, 177, 214));
   --magent_hsl: 261 85% 79%;
-  --magenta: rgb(187, 154, 247);
+  --magenta: rgb(var(--magenta_x));
   --magenta_x: 187, 154, 247;
-  --menu-background: rgb(36, 40, 59);
-  --menu-border-color: rgb(65, 72, 104);
-  --menu-border-width: 2px;
-  --mermaid-actor: rgb(169, 177, 214);
-  --mermaid-loopline: rgb(122, 162, 247);
-  --mermaid-note: rgb(61, 89, 161);
-  --metadata-border-color: rgb(65, 72, 104);
-  --metadata-divider-color: rgb(65, 72, 104);
-  --metadata-input-background-active: rgb(65, 72, 104);
-  --metadata-input-font: "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-input-text-color: rgb(192, 202, 245);
-  --metadata-label-background-active: rgb(65, 72, 104);
-  --metadata-label-font: "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-label-text-color: rgb(169, 177, 214);
-  --metadata-label-text-color-hover: rgb(169, 177, 214);
-  --metadata-property-background-active: rgb(65, 72, 104);
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(65, 72, 104);
-  --metadata-property-box-shadow-hover: 0 0 0 2px rgb(65, 72, 104);
-  --modal-background: rgb(36, 40, 59);
-  --modal-border-color: rgb(65, 72, 104);
-  --modal-border-width: 2px;
-  --nav-collapse-icon-color: rgb(86, 95, 137);
-  --nav-collapse-icon-color-collapsed: rgb(86, 95, 137);
-  --nav-file-tag: rgba(224, 175, 104, 0.9);
-  --nav-heading-color: rgb(192, 202, 245);
-  --nav-heading-color-collapsed: rgb(86, 95, 137);
-  --nav-heading-color-collapsed-hover: rgb(169, 177, 214);
-  --nav-heading-color-hover: rgb(192, 202, 245);
-  --nav-indentation-guide-color: rgb(65, 72, 104);
-  --nav-indentation-guide-width: 2px;
-  --nav-item-background-active: rgb(65, 72, 104);
-  --nav-item-background-hover: rgb(65, 72, 104);
-  --nav-item-background-selected: hsla(202, 100%, 75%, 0.15);
-  --nav-item-color: rgb(169, 177, 214);
-  --nav-item-color-active: rgb(255, 117, 127);
-  --nav-item-color-highlighted: hsl(199, 102%, 86.25%);
-  --nav-item-color-hover: rgb(192, 202, 245);
-  --nav-item-color-selected: rgb(192, 202, 245);
-  --nav-tag-color: rgb(86, 95, 137);
-  --nav-tag-color-active: rgb(169, 177, 214);
-  --nav-tag-color-hover: rgb(169, 177, 214);
-  --orange: rgb(255, 158, 100);
+  --menu-background: var(--background-secondary, rgb(36, 40, 59));
+  --menu-border-color: var(--background-modifier-border-hover, rgb(65, 72, 104));
+  --menu-border-width: var(--border-width, 2px);
+  --mermaid-actor: var(--fg_dark, rgb(169, 177, 214));
+  --mermaid-loopline: var(--blue, rgb(122, 162, 247));
+  --mermaid-note: var(--blue0, rgb(61, 89, 161));
+  --metadata-border-color: var(--background-modifier-border, rgb(65, 72, 104));
+  --metadata-divider-color: var(--background-modifier-border, rgb(65, 72, 104));
+  --metadata-input-background-active: var(--background-modifier-hover, rgb(65, 72, 104));
+  --metadata-input-font: var(--font-interface, "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-input-text-color: var(--text-normal, rgb(192, 202, 245));
+  --metadata-label-background-active: var(--background-modifier-hover, rgb(65, 72, 104));
+  --metadata-label-font: var(--font-interface, "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-label-text-color: var(--text-muted, rgb(169, 177, 214));
+  --metadata-label-text-color-hover: var(--text-muted, rgb(169, 177, 214));
+  --metadata-property-background-active: var(--background-modifier-hover, rgb(65, 72, 104));
+  --modal-background: var(--background-primary, rgb(36, 40, 59));
+  --modal-border-color: var(--bg_highlight, rgb(65, 72, 104));
+  --modal-border-width: var(--border-width, 2px);
+  --nav-collapse-icon-color: var(--collapse-icon-color, rgb(86, 95, 137));
+  --nav-collapse-icon-color-collapsed: var(--text-faint, rgb(86, 95, 137));
+  --nav-file-tag: rgba(var(--yellow_x), 0.9);
+  --nav-heading-color: var(--text-normal, rgb(192, 202, 245));
+  --nav-heading-color-collapsed: var(--text-faint, rgb(86, 95, 137));
+  --nav-heading-color-collapsed-hover: var(--text-muted, rgb(169, 177, 214));
+  --nav-heading-color-hover: var(--text-normal, rgb(192, 202, 245));
+  --nav-indentation-guide-color: var(--bg_highlight, rgb(65, 72, 104));
+  --nav-indentation-guide-width: var(--indentation-guide-width, 2px);
+  --nav-item-background-active: var(--bg_highlight, rgb(65, 72, 104));
+  --nav-item-background-hover: var(--bg_highlight, rgb(65, 72, 104));
+  --nav-item-color: var(--text-muted, rgb(169, 177, 214));
+  --nav-item-color-active: var(--red, rgb(255, 117, 127));
+  --nav-item-color-highlighted: var(--text-accent, hsl(199, 102%, 86.25%));
+  --nav-item-color-hover: var(--fg, rgb(192, 202, 245));
+  --nav-item-color-selected: var(--text-normal, rgb(192, 202, 245));
+  --nav-tag-color: var(--text-faint, rgb(86, 95, 137));
+  --nav-tag-color-active: var(--text-muted, rgb(169, 177, 214));
+  --nav-tag-color-hover: var(--text-muted, rgb(169, 177, 214));
+  --orange: rgb(var(--orange_x));
   --orange_x: 255, 158, 100;
-  --pdf-background: rgb(36, 40, 59);
-  --pdf-page-background: rgb(36, 40, 59);
-  --pdf-shadow: 0 0 0 1px rgb(65, 72, 104);
-  --pdf-sidebar-background: rgb(36, 40, 59);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgb(65, 72, 104);
-  --pill-border-color: rgb(65, 72, 104);
-  --pill-border-color-hover: rgb(65, 72, 104);
-  --pill-border-width: 2px;
-  --pill-color: rgb(169, 177, 214);
-  --pill-color-hover: rgb(192, 202, 245);
-  --pill-color-remove: rgb(86, 95, 137);
-  --pill-color-remove-hover: hsl(199, 102%, 86.25%);
-  --prompt-background: rgb(36, 40, 59);
-  --prompt-border-color: rgb(65, 72, 104);
-  --prompt-border-width: 2px;
-  --purple: rgb(157, 124, 21);
+  --pdf-background: var(--background-primary, rgb(36, 40, 59));
+  --pdf-page-background: var(--background-primary, rgb(36, 40, 59));
+  --pdf-sidebar-background: var(--background-primary, rgb(36, 40, 59));
+  --pill-border-color: var(--background-modifier-border, rgb(65, 72, 104));
+  --pill-border-color-hover: var(--background-modifier-border-hover, rgb(65, 72, 104));
+  --pill-border-width: var(--border-width, 2px);
+  --pill-color: var(--text-muted, rgb(169, 177, 214));
+  --pill-color-hover: var(--text-normal, rgb(192, 202, 245));
+  --pill-color-remove: var(--text-faint, rgb(86, 95, 137));
+  --pill-color-remove-hover: var(--text-accent, hsl(199, 102%, 86.25%));
+  --prompt-background: var(--background-primary, rgb(36, 40, 59));
+  --prompt-border-color: var(--bg_highlight, rgb(65, 72, 104));
+  --prompt-border-width: var(--border-width, 2px);
+  --purple: rgb(var(--purple_x));
   --purple_x: 157, 124, 21;
-  --raised-background: color-mix(in srgb, rgb(36, 40, 59) 65%, transparent) linear-gradient(rgb(36, 40, 59), color-mix(in srgb, rgb(36, 40, 59) 65%, transparent));
-  --red: rgb(255, 117, 127);
-  --red1: rgb(219, 75, 75);
+  --raised-background: var(--blur-background, color-mix(in srgb, rgb(36, 40, 59) 65%, transparent) linear-gradient(rgb(36, 40, 59), color-mix(in srgb, rgb(36, 40, 59) 65%, transparent)));
+  --red: rgb(var(--red_x));
+  --red1: rgb(var(--red1_x));
   --red1_x: 219, 75, 75;
   --red_x: 255, 117, 127;
-  --ribbon-background: rgb(36, 40, 59);
-  --ribbon-background-collapsed: rgb(36, 40, 59);
-  --search-clear-button-color: rgb(169, 177, 214);
-  --search-icon-color: rgb(169, 177, 214);
-  --search-result-background: rgb(36, 40, 59);
-  --secondary: var(--text-accent, hsl(199, 102%, 86.25%));
-  --setting-group-heading-color: rgb(192, 202, 245);
-  --setting-items-background: rgb(36, 40, 59);
-  --setting-items-border-color: rgb(65, 72, 104);
-  --shiki-active-tab-border-color: rgb(169, 177, 214);
-  --shiki-code-background: rgb(35, 35, 55);
-  --shiki-code-comment: rgb(86, 95, 137);
-  --shiki-code-function: rgb(158, 206, 106);
-  --shiki-code-important: rgb(255, 158, 100);
-  --shiki-code-keyword: rgb(187, 154, 247);
-  --shiki-code-normal: rgb(169, 177, 214);
-  --shiki-code-property: rgb(125, 207, 255);
-  --shiki-code-punctuation: rgb(169, 177, 214);
-  --shiki-code-string: rgb(224, 175, 104);
-  --shiki-code-value: rgb(157, 124, 21);
-  --shiki-gutter-border-color: rgb(65, 72, 104);
-  --shiki-gutter-border-width: 2px;
-  --shiki-gutter-text-color: rgb(86, 95, 137);
-  --shiki-gutter-text-color-highlight: rgb(169, 177, 214);
-  --shiki-highlight-neutral: rgb(169, 177, 214);
-  --shiki-terminal-dots-color: rgb(86, 95, 137);
-  --shiki-tooltip-background: rgba(65, 72, 104, 0.9);
-  --slider-thumb-border-color: rgb(65, 72, 104);
-  --slider-thumb-border-width: 2px;
-  --slider-track-background: rgb(65, 72, 104);
-  --status-bar-background: rgb(36, 40, 59);
-  --status-bar-border-color: rgb(65, 72, 104);
-  --status-bar-border-width: 2px 0 0 2px;
-  --status-bar-text-color: rgb(169, 177, 214);
-  --suggestion-background: rgb(36, 40, 59);
-  --sync-avatar-color-1: rgb(255, 117, 127);
-  --sync-avatar-color-2: rgb(255, 158, 100);
-  --sync-avatar-color-3: rgb(224, 175, 104);
-  --sync-avatar-color-4: rgb(158, 206, 106);
-  --sync-avatar-color-5: rgb(125, 207, 255);
-  --sync-avatar-color-6: rgb(122, 162, 247);
-  --sync-avatar-color-7: rgb(157, 124, 21);
-  --sync-avatar-color-8: rgb(187, 154, 247);
-  --tab-background-active: rgb(36, 40, 59);
-  --tab-container-background: rgb(36, 40, 59);
-  --tab-divider-color: rgb(65, 72, 104);
-  --tab-outline-color: rgb(65, 72, 104);
-  --tab-switcher-background: rgb(36, 40, 59);
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(36, 40, 59), transparent);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(202, 100%, 75%);
-  --tab-text-color: rgb(86, 95, 137);
-  --tab-text-color-active: rgb(169, 177, 214);
-  --tab-text-color-focused: rgb(169, 177, 214);
-  --tab-text-color-focused-active: rgba(255, 117, 127, 0.8);
-  --tab-text-color-focused-active-current: rgb(255, 117, 127);
-  --tab-text-color-focused-highlighted: hsl(199, 102%, 86.25%);
-  --table-add-button-border-color: rgb(65, 72, 104);
-  --table-border-color: rgb(65, 72, 104);
-  --table-drag-handle-background-active: hsl(202, 100%, 75%);
-  --table-drag-handle-color: rgb(86, 95, 137);
-  --table-drag-handle-color-active: rgb(36, 40, 59);
-  --table-header-background: rgb(36, 40, 59);
-  --table-header-background-hover: rgb(18, 18, 24);
-  --table-header-border-color: rgb(65, 72, 104);
-  --table-header-color: rgb(192, 202, 245);
-  --table-row-alt-background: rgb(36, 40, 59);
-  --table-selection: hsla(202, 100%, 75%, 0.1);
-  --table-selection-border-color: hsl(202, 100%, 75%);
-  --tag-background: rgba(187, 154, 247, 0.15);
-  --tag-background-hover: hsla(202, 100%, 75%, 0.2);
-  --tag-border-color: hsla(202, 100%, 75%, 0.15);
-  --tag-border-color-hover: hsla(202, 100%, 75%, 0.15);
-  --tag-color: rgb(187, 154, 247);
-  --tag-color-hover: hsl(199, 102%, 86.25%);
-  --teal: rgb(26, 188, 156);
+  --ribbon-background: var(--background-secondary, rgb(36, 40, 59));
+  --ribbon-background-collapsed: var(--background-primary, rgb(36, 40, 59));
+  --search-clear-button-color: var(--text-muted, rgb(169, 177, 214));
+  --search-icon-color: var(--text-muted, rgb(169, 177, 214));
+  --search-result-background: var(--background-primary, rgb(36, 40, 59));
+  --secondary: var(--text-accent, var(--color-accent-1, hsl(199, 102%, 86.25%)));
+  --setting-group-heading-color: var(--text-normal, rgb(192, 202, 245));
+  --setting-items-background: var(--background-primary-alt, rgb(36, 40, 59));
+  --setting-items-border-color: var(--background-modifier-border, rgb(65, 72, 104));
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, rgb(169, 177, 214));
+  --shiki-code-background: var(--code-background, rgb(35, 35, 55));
+  --shiki-code-comment: var(--text-faint, rgb(86, 95, 137));
+  --shiki-code-function: var(--color-green, rgb(158, 206, 106));
+  --shiki-code-important: var(--color-orange, rgb(255, 158, 100));
+  --shiki-code-keyword: var(--color-pink, rgb(187, 154, 247));
+  --shiki-code-normal: var(--text-muted, rgb(169, 177, 214));
+  --shiki-code-property: var(--color-cyan, rgb(125, 207, 255));
+  --shiki-code-punctuation: var(--text-muted, rgb(169, 177, 214));
+  --shiki-code-string: var(--color-yellow, rgb(224, 175, 104));
+  --shiki-code-value: var(--color-purple, rgb(157, 124, 21));
+  --shiki-gutter-border-color: var(--background-modifier-border, rgb(65, 72, 104));
+  --shiki-gutter-border-width: var(--border-width, 2px);
+  --shiki-gutter-text-color: var(--text-faint, rgb(86, 95, 137));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, rgb(169, 177, 214));
+  --shiki-highlight-neutral: var(--shiki-code-normal, rgb(169, 177, 214));
+  --shiki-terminal-dots-color: var(--text-faint, rgb(86, 95, 137));
+  --shiki-tooltip-background: var(--background-modifier-message, rgba(65, 72, 104, 0.9));
+  --slider-thumb-border-color: var(--background-modifier-border-hover, rgb(65, 72, 104));
+  --slider-thumb-border-width: var(--border-width, 2px);
+  --slider-track-background: var(--bg_highlight, rgb(65, 72, 104));
+  --status-bar-background: var(--background-secondary, rgb(36, 40, 59));
+  --status-bar-border-color: var(--divider-color, rgb(65, 72, 104));
+  --status-bar-border-width: var(--border-width) 0 0 var(--border-width, 2px 0 0 2px);
+  --status-bar-text-color: var(--text-muted, rgb(169, 177, 214));
+  --suggestion-background: var(--background-primary, rgb(36, 40, 59));
+  --sync-avatar-color-1: var(--color-red, rgb(255, 117, 127));
+  --sync-avatar-color-2: var(--color-orange, rgb(255, 158, 100));
+  --sync-avatar-color-3: var(--color-yellow, rgb(224, 175, 104));
+  --sync-avatar-color-4: var(--color-green, rgb(158, 206, 106));
+  --sync-avatar-color-5: var(--color-cyan, rgb(125, 207, 255));
+  --sync-avatar-color-6: var(--color-blue, rgb(122, 162, 247));
+  --sync-avatar-color-7: var(--color-purple, rgb(157, 124, 21));
+  --sync-avatar-color-8: var(--color-pink, rgb(187, 154, 247));
+  --tab-background-active: var(--background-primary, rgb(36, 40, 59));
+  --tab-container-background: var(--background-secondary, rgb(36, 40, 59));
+  --tab-divider-color: var(--background-modifier-border-hover, rgb(65, 72, 104));
+  --tab-outline-color: var(--divider-color, rgb(65, 72, 104));
+  --tab-switcher-background: var(--background-secondary, rgb(36, 40, 59));
+  --tab-text-color: var(--text-faint, rgb(86, 95, 137));
+  --tab-text-color-active: var(--text-muted, rgb(169, 177, 214));
+  --tab-text-color-focused: var(--text-muted, rgb(169, 177, 214));
+  --tab-text-color-focused-active: rgba(var(--red_x), 0.8);
+  --tab-text-color-focused-active-current: var(--red, rgb(255, 117, 127));
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(199, 102%, 86.25%));
+  --table-add-button-border-color: var(--background-modifier-border, rgb(65, 72, 104));
+  --table-border-color: var(--background-modifier-border, rgb(65, 72, 104));
+  --table-drag-handle-background-active: var(--table-selection-border-color, hsl(202, 100%, 75%));
+  --table-drag-handle-color: var(--text-faint, rgb(86, 95, 137));
+  --table-drag-handle-color-active: var(--text-on-accent, rgb(36, 40, 59));
+  --table-header-background: var(--bg, rgb(36, 40, 59));
+  --table-header-background-hover: var(--bg_dark2, rgb(18, 18, 24));
+  --table-header-border-color: var(--table-border-color, rgb(65, 72, 104));
+  --table-header-color: var(--text-normal, rgb(192, 202, 245));
+  --table-row-alt-background: var(--bg_dark, rgb(36, 40, 59));
+  --table-selection-border-color: var(--interactive-accent, hsl(202, 100%, 75%));
+  --tag-background: rgba(var(--magenta_x), 0.15);
+  --tag-color: var(--magenta, rgb(187, 154, 247));
+  --tag-color-hover: var(--text-accent, hsl(199, 102%, 86.25%));
+  --teal: rgb(var(--teal_x));
   --teal_x: 26, 188, 156;
-  --terminal_black: rgb(65, 72, 104);
+  --terminal_black: rgb(var(--terminal_black_x));
   --terminal_black_x: 65, 72, 104;
-  --tertiary: var(--text-accent-hover, hsl(197, 105%, 96.75%));
-  --text-accent: hsl(199, 102%, 86.25%);
-  --text-accent-hover: hsl(197, 105%, 96.75%);
-  --text-error: rgb(219, 75, 75);
-  --text-error-hover: rgb(255, 117, 127);
-  --text-faint: rgb(86, 95, 137);
-  --text-highlight-bg: rgba(255, 158, 100, 0.4);
-  --text-highlight-fg: rgb(36, 40, 59);
-  --text-muted: rgb(169, 177, 214);
-  --text-normal: rgb(192, 202, 245);
-  --text-on-accent: rgb(36, 40, 59);
-  --text-selection: rgba(61, 89, 161, 0.6);
-  --text-success: rgb(158, 206, 106);
-  --text-warning: rgb(255, 158, 100);
-  --textHighlight: var(--text-highlight-bg, rgba(255, 158, 100, 0.4));
-  --titleFont: var(--font-interface, "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --titlebar-background: rgb(36, 40, 59);
-  --titlebar-background-focused: rgb(36, 40, 59);
-  --titlebar-border-color: rgb(65, 72, 104);
-  --titlebar-text-color: rgb(169, 177, 214);
-  --titlebar-text-color-focused: rgb(187, 154, 247);
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, hsl(197, 105%, 96.75%)));
+  --text-accent: var(--color-accent-1, hsl(199, 102%, 86.25%));
+  --text-accent-hover: var(--color-accent-2, hsl(197, 105%, 96.75%));
+  --text-error: var(--red1, rgb(219, 75, 75));
+  --text-error-hover: var(--red, rgb(255, 117, 127));
+  --text-faint: var(--comment, rgb(86, 95, 137));
+  --text-highlight-bg: rgba(var(--orange_x), 0.4);
+  --text-highlight-fg: var(--bg, rgb(36, 40, 59));
+  --text-muted: var(--fg_dark, rgb(169, 177, 214));
+  --text-normal: var(--fg, rgb(192, 202, 245));
+  --text-on-accent: var(--bg, rgb(36, 40, 59));
+  --text-selection: rgba(var(--blue0_x), 0.6);
+  --text-success: var(--color-green, rgb(158, 206, 106));
+  --text-warning: var(--color-orange, rgb(255, 158, 100));
+  --textHighlight: var(--text-highlight-bg, rgba(var(--orange_x), 0.4));
+  --titlebar-background: var(--background-secondary, rgb(36, 40, 59));
+  --titlebar-background-focused: var(--background-secondary-alt, rgb(36, 40, 59));
+  --titlebar-border-color: var(--background-modifier-border, rgb(65, 72, 104));
+  --titlebar-text-color: var(--text-muted, rgb(169, 177, 214));
+  --titlebar-text-color-focused: var(--magenta, rgb(187, 154, 247));
   --unknown: #ffffff;
-  --vault-profile-color: rgb(192, 202, 245);
-  --vault-profile-color-hover: rgb(192, 202, 245);
-  --yellow: rgb(224, 175, 104);
+  --vault-profile-color: var(--text-normal, rgb(192, 202, 245));
+  --vault-profile-color-hover: var(--vault-profile-color, rgb(192, 202, 245));
+  --yellow: rgb(var(--yellow_x));
   --yellow_x: 224, 175, 104;
   --quartz-icon-color: currentColor;
 }
@@ -1189,7 +1159,7 @@ html body .callout > .callout-content {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   color: rgb(192, 202, 245);
 }
 
@@ -1202,7 +1172,7 @@ html body .callout[data-callout="abstract"] > .callout-content {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   color: rgb(192, 202, 245);
 }
 
@@ -1215,7 +1185,7 @@ html body .callout[data-callout="bug"] > .callout-content {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   color: rgb(192, 202, 245);
 }
 
@@ -1228,7 +1198,7 @@ html body .callout[data-callout="danger"] > .callout-content {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   color: rgb(192, 202, 245);
 }
 
@@ -1241,7 +1211,7 @@ html body .callout[data-callout="example"] > .callout-content {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   color: rgb(192, 202, 245);
 }
 
@@ -1254,7 +1224,7 @@ html body .callout[data-callout="failure"] > .callout-content {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   color: rgb(192, 202, 245);
 }
 
@@ -1267,7 +1237,7 @@ html body .callout[data-callout="info"] > .callout-content {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   color: rgb(192, 202, 245);
 }
 
@@ -1280,7 +1250,7 @@ html body .callout[data-callout="note"] > .callout-content {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   color: rgb(192, 202, 245);
 }
 
@@ -1293,7 +1263,7 @@ html body .callout[data-callout="question"] > .callout-content {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: rgb(169, 177, 214);
+  --callout-color: var(--callout-quote, rgb(169, 177, 214));
   background: rgba(35, 35, 55, 0.5) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--bg_highlight_dark_x), 0.5);
   border-bottom-color: rgb(192, 202, 245);
@@ -1312,7 +1282,7 @@ html body .callout[data-callout="quote"] > .callout-content {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   color: rgb(192, 202, 245);
 }
 
@@ -1325,7 +1295,7 @@ html body .callout[data-callout="success"] > .callout-content {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   color: rgb(192, 202, 245);
 }
 
@@ -1338,7 +1308,7 @@ html body .callout[data-callout="tip"] > .callout-content {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   color: rgb(192, 202, 245);
 }
 
@@ -1351,7 +1321,7 @@ html body .callout[data-callout="todo"] > .callout-content {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   color: rgb(192, 202, 245);
 }
 
@@ -1554,7 +1524,7 @@ html body hr {
   border-right-color: rgb(65, 72, 104);
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }`,
     explorer: `html body .nav-files-container .tree-item-children {
   border-left-color: rgb(65, 72, 104);

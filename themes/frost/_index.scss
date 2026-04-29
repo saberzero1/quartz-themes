@@ -2132,8 +2132,8 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(255, 255, 255));
-    color: rgb(26, 32, 44);
+    background-color: var(--color-bg-primary, rgb(255, 255, 255));
+    color: var(--color-text-primary, rgb(26, 32, 44));
   }
 
   &[data-slug],
@@ -2170,7 +2170,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(26, 32, 44);
+    color: var(--color-link, rgb(26, 32, 44));
     cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
@@ -2192,10 +2192,10 @@ body {
     font-weight: var(--link-weight, 400);
     outline: rgb(26, 32, 44) none 0px;
     text-decoration: underline 1px;
-    text-decoration-color: rgb(26, 32, 44);
+    text-decoration-color: var(--accent, rgb(26, 32, 44));
     text-decoration-line: var(--link-external-decoration, underline);
     text-decoration-style: solid;
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: var(--link-decoration-thickness, 1px);
     transition: 0.2s;
     transform: none;
     user-select: text;
@@ -2212,7 +2212,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(26, 32, 44);
+    color: var(--color-link, rgb(26, 32, 44));
     cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
@@ -2234,10 +2234,10 @@ body {
     font-weight: var(--link-weight, 400);
     outline: rgb(26, 32, 44) none 0px;
     text-decoration: underline 1px;
-    text-decoration-color: rgb(26, 32, 44);
+    text-decoration-color: var(--accent, rgb(26, 32, 44));
     text-decoration-line: var(--link-decoration, underline);
     text-decoration-style: solid;
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: var(--link-decoration-thickness, 1px);
     transition: opacity 0.14s ease-in-out;
     transform: none;
     user-select: text;
@@ -2253,7 +2253,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(26, 32, 44);
+    color: var(--color-link, rgb(26, 32, 44));
     cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
@@ -2278,7 +2278,7 @@ body {
     text-decoration-color: var(--link-unresolved-decoration-color, rgba(138, 92, 245, 0.3));
     text-decoration-line: var(--link-decoration, underline);
     text-decoration-style: var(--link-unresolved-decoration-style, solid);
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: var(--link-decoration-thickness, 1px);
     transition: opacity 0.14s ease-in-out;
     transform: none;
     user-select: text;
@@ -2788,7 +2788,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
-    margin: 0px 8px 0px -24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -24px;
+    margin-right: var(--spacing-sm, 8px);
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -2839,7 +2842,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: rgb(26, 32, 44);
+    color: var(--color-link, rgb(26, 32, 44));
     text-decoration: underline 1px;
   }
 
@@ -3077,7 +3080,7 @@ body {
   }
 
   .callout {
-    --callout-color: 8, 109, 221;
+    --callout-color: var(--callout-default, 8, 109, 221);
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3124,7 +3127,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: 8, 109, 221;
+    --callout-color: var(--callout-default, 8, 109, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3174,7 +3177,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: 0, 191, 188;
+    --callout-color: var(--callout-summary, 0, 191, 188);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3224,7 +3227,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: 8, 109, 221;
+    --callout-color: var(--callout-info, 8, 109, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3274,7 +3277,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: 8, 109, 221;
+    --callout-color: var(--callout-todo, 8, 109, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3324,7 +3327,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: 0, 191, 188;
+    --callout-color: var(--callout-tip, 0, 191, 188);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3374,7 +3377,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: 8, 185, 78;
+    --callout-color: var(--callout-success, 8, 185, 78);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3424,7 +3427,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: 236, 117, 0;
+    --callout-color: var(--callout-question, 236, 117, 0);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3474,7 +3477,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: 236, 117, 0;
+    --callout-color: var(--callout-warning, 236, 117, 0);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3524,7 +3527,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: 233, 49, 71;
+    --callout-color: var(--callout-error, 233, 49, 71);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3574,7 +3577,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: 233, 49, 71;
+    --callout-color: var(--callout-fail, 233, 49, 71);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3624,7 +3627,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: 233, 49, 71;
+    --callout-color: var(--callout-bug, 233, 49, 71);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3674,7 +3677,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: 120, 82, 238;
+    --callout-color: var(--callout-example, 120, 82, 238);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3724,7 +3727,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: 158, 158, 158;
+    --callout-color: var(--callout-quote, 158, 158, 158);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3830,7 +3833,7 @@ body {
   }
 
   th {
-    background-color: rgb(248, 249, 250);
+    background-color: var(--color-bg-secondary, rgb(248, 249, 250));
     color: var(--table-header-color, rgb(34, 34, 34));
     font-weight: var(--table-header-weight, 600);
     text-align: start;
@@ -4449,7 +4452,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: rgb(26, 32, 44);
+    color: var(--color-text-primary, rgb(26, 32, 44));
     cursor: var(--cursor, default);
     font-family:
       ui-sans-serif,
@@ -4466,7 +4469,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: rgb(26, 32, 44);
+    color: var(--color-text-primary, rgb(26, 32, 44));
     cursor: var(--cursor, default);
     font-family:
       ui-sans-serif,
@@ -4495,7 +4498,7 @@ body {
   }
 
   .bases-table thead th {
-    background-color: rgb(248, 249, 250);
+    background-color: var(--color-bg-secondary, rgb(248, 249, 250));
     color: var(--table-header-color, rgb(34, 34, 34));
     font-weight: var(--table-header-weight, 600);
     border-color: rgb(224, 224, 224);
@@ -4518,7 +4521,7 @@ body {
 
   .canvas-node-file {
     color: var(--text-normal, rgb(34, 34, 34));
-    background-color: rgb(248, 249, 250);
+    background-color: var(--color-bg-secondary, rgb(248, 249, 250));
   }
 
   .canvas-sidebar {
@@ -4628,7 +4631,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: rgb(26, 32, 44);
+    color: var(--color-text-primary, rgb(26, 32, 44));
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -4666,7 +4669,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: rgb(26, 32, 44);
+    color: var(--color-text-primary, rgb(26, 32, 44));
   }
 
   li.section-li > .section .meta {
@@ -4780,7 +4783,7 @@ body {
   }
 
   .spacer {
-    background-color: rgb(248, 249, 250);
+    background-color: var(--color-bg-secondary, rgb(248, 249, 250));
   }
 
   ul.overflow {
@@ -5541,8 +5544,8 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 html[saved-theme="dark"] {
   body {
     div#quartz-root {
-      background-color: rgb(26, 32, 44);
-      color: rgb(237, 242, 247);
+      background-color: var(--color-bg-primary, rgb(26, 32, 44));
+      color: var(--color-text-primary, rgb(237, 242, 247));
     }
 
     &[data-slug],
@@ -5579,7 +5582,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: rgb(218, 218, 218);
+      color: var(--color-link, rgb(218, 218, 218));
       cursor: var(--cursor-link, pointer);
       filter: none;
       backdrop-filter: none;
@@ -5601,10 +5604,10 @@ html[saved-theme="dark"] {
       font-weight: var(--link-weight, 400);
       outline: rgb(218, 218, 218) none 0px;
       text-decoration: underline 1px;
-      text-decoration-color: rgb(218, 218, 218);
+      text-decoration-color: var(--accent, rgb(218, 218, 218));
       text-decoration-line: var(--link-external-decoration, underline);
       text-decoration-style: solid;
-      text-decoration-thickness: 1px;
+      text-decoration-thickness: var(--link-decoration-thickness, 1px);
       transition: 0.2s;
       transform: none;
       user-select: text;
@@ -5621,7 +5624,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: rgb(218, 218, 218);
+      color: var(--color-link, rgb(218, 218, 218));
       cursor: var(--cursor-link, pointer);
       filter: none;
       backdrop-filter: none;
@@ -5643,10 +5646,10 @@ html[saved-theme="dark"] {
       font-weight: var(--link-weight, 400);
       outline: rgb(218, 218, 218) none 0px;
       text-decoration: underline 1px;
-      text-decoration-color: rgb(218, 218, 218);
+      text-decoration-color: var(--accent, rgb(218, 218, 218));
       text-decoration-line: var(--link-decoration, underline);
       text-decoration-style: solid;
-      text-decoration-thickness: 1px;
+      text-decoration-thickness: var(--link-decoration-thickness, 1px);
       transition: opacity 0.14s ease-in-out;
       transform: none;
       user-select: text;
@@ -5662,7 +5665,7 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: rgb(218, 218, 218);
+      color: var(--color-link, rgb(218, 218, 218));
       cursor: var(--cursor-link, pointer);
       filter: none;
       backdrop-filter: none;
@@ -5687,7 +5690,7 @@ html[saved-theme="dark"] {
       text-decoration-color: var(--link-unresolved-decoration-color, rgba(138, 92, 245, 0.3));
       text-decoration-line: var(--link-decoration, underline);
       text-decoration-style: var(--link-unresolved-decoration-style, solid);
-      text-decoration-thickness: 1px;
+      text-decoration-thickness: var(--link-decoration-thickness, 1px);
       transition: opacity 0.14s ease-in-out;
       transform: none;
       user-select: text;
@@ -6197,7 +6200,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
-      margin: 0px 8px 0px -24px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: -24px;
+      margin-right: var(--spacing-sm, 8px);
       margin-block-end: 0px;
       margin-block-start: 0px;
       margin-inline-end: 0px;
@@ -6248,7 +6254,7 @@ html[saved-theme="dark"] {
     }
 
     .data-footnote-backref {
-      color: rgb(218, 218, 218);
+      color: var(--color-link, rgb(218, 218, 218));
       text-decoration: underline 1px;
     }
 
@@ -6486,7 +6492,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: 2, 122, 255;
+      --callout-color: var(--callout-default, 2, 122, 255);
       border: 0px solid rgba(2, 122, 255, 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -6533,7 +6539,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: 2, 122, 255;
+      --callout-color: var(--callout-default, 2, 122, 255);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6583,7 +6589,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: var(--callout-summary, 83, 223, 221);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6633,7 +6639,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: 2, 122, 255;
+      --callout-color: var(--callout-info, 2, 122, 255);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6683,7 +6689,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: 2, 122, 255;
+      --callout-color: var(--callout-todo, 2, 122, 255);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6733,7 +6739,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: var(--callout-tip, 83, 223, 221);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6783,7 +6789,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: 68, 207, 110;
+      --callout-color: var(--callout-success, 68, 207, 110);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6833,7 +6839,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: var(--callout-question, 233, 151, 63);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6883,7 +6889,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: var(--callout-warning, 233, 151, 63);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6933,7 +6939,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: var(--callout-error, 251, 70, 76);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6983,7 +6989,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: var(--callout-fail, 251, 70, 76);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7033,7 +7039,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: var(--callout-bug, 251, 70, 76);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7083,7 +7089,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: 168, 130, 255;
+      --callout-color: var(--callout-example, 168, 130, 255);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7133,7 +7139,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: 158, 158, 158;
+      --callout-color: var(--callout-quote, 158, 158, 158);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7239,7 +7245,7 @@ html[saved-theme="dark"] {
     }
 
     th {
-      background-color: rgb(45, 55, 72);
+      background-color: var(--color-bg-secondary, rgb(45, 55, 72));
       color: var(--table-header-color, rgb(218, 218, 218));
       font-weight: var(--table-header-weight, 600);
       text-align: start;
@@ -7858,7 +7864,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-      color: rgb(237, 242, 247);
+      color: var(--color-text-primary, rgb(237, 242, 247));
       cursor: var(--cursor, default);
       font-family:
         ui-sans-serif,
@@ -7875,7 +7881,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-      color: rgb(237, 242, 247);
+      color: var(--color-text-primary, rgb(237, 242, 247));
       cursor: var(--cursor, default);
       font-family:
         ui-sans-serif,
@@ -7904,7 +7910,7 @@ html[saved-theme="dark"] {
     }
 
     .bases-table thead th {
-      background-color: rgb(45, 55, 72);
+      background-color: var(--color-bg-secondary, rgb(45, 55, 72));
       color: var(--table-header-color, rgb(218, 218, 218));
       font-weight: var(--table-header-weight, 600);
       border-color: rgb(54, 54, 54);
@@ -7927,7 +7933,7 @@ html[saved-theme="dark"] {
 
     .canvas-node-file {
       color: var(--text-normal, rgb(218, 218, 218));
-      background-color: rgb(45, 55, 72);
+      background-color: var(--color-bg-secondary, rgb(45, 55, 72));
     }
 
     .canvas-sidebar {
@@ -8037,7 +8043,7 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-      color: rgb(237, 242, 247);
+      color: var(--color-text-primary, rgb(237, 242, 247));
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -8075,7 +8081,7 @@ html[saved-theme="dark"] {
     }
 
     li.section-li > .section > .desc > h3 > a {
-      color: rgb(237, 242, 247);
+      color: var(--color-text-primary, rgb(237, 242, 247));
     }
 
     li.section-li > .section .meta {
@@ -8189,7 +8195,7 @@ html[saved-theme="dark"] {
     }
 
     .spacer {
-      background-color: rgb(45, 55, 72);
+      background-color: var(--color-bg-secondary, rgb(45, 55, 72));
     }
 
     ul.overflow {

@@ -1234,128 +1234,118 @@ export const theme: ThemeData = {
   --accent-l: 35%;
   --accent-s: 100%;
   --anim-motion-swing: cubic-bezier(0.25, 0.05, 0.55, 0.95);
-  --background-modifier-active-hover: hsla(181, 100%, 35%, 0.1);
-  --background-modifier-border: hsl(216, 20%, 20%);
-  --background-modifier-border-focus: hsl(218, 19%, 31%);
-  --background-modifier-border-hover: hsl(218, 19%, 27%);
-  --background-modifier-error: #ff4d3a;
-  --background-modifier-error-hover: #ff4d3a;
-  --background-modifier-error-rgb: 255, 77, 58;
-  --background-modifier-form-field: hsl(216, 20%, 20%);
-  --background-modifier-form-field-hover: hsl(216, 20%, 20%);
-  --background-modifier-success: #7dcf2b;
-  --background-modifier-success-rgb: 125, 207, 43;
-  --background-primary: hsla(216, 16%, 13%, 100%);
-  --background-primary-alt: hsl(216, 17%, 14%);
-  --background-secondary: hsl(216, 19%, 16%);
-  --background-secondary-alt: hsl(218, 18%, 15%);
-  --bases-cards-background: hsla(216, 16%, 13%, 100%);
-  --bases-cards-cover-background: hsl(216, 17%, 14%);
-  --bases-cards-radius: 14px;
-  --bases-cards-shadow: 0 0 0 1px hsl(216, 20%, 20%);
-  --bases-cards-shadow-hover: 0 0 0 1px hsl(218, 19%, 27%);
-  --bases-embed-border-color: hsl(216, 20%, 20%);
-  --bases-embed-border-radius: 7px;
-  --bases-group-heading-property-color: hsl(220, 17%, 66%);
-  --bases-table-border-color: hsl(216, 20%, 20%);
-  --bases-table-cell-background-active: hsla(216, 16%, 13%, 100%);
-  --bases-table-cell-background-disabled: hsl(216, 17%, 14%);
-  --bases-table-cell-background-selected: hsla(181, 100%, 35%, 0.1);
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(218, 19%, 31%);
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(181, 100%, 35%);
-  --bases-table-container-border-radius: 7px;
-  --bases-table-group-background: hsl(216, 17%, 14%);
-  --bases-table-header-background: hsla(216, 16%, 13%, 100%);
-  --bases-table-header-color: hsl(220, 17%, 66%);
-  --bases-table-row-background-hover: hsl(218, 18%, 15%);
-  --bases-table-summary-background: hsla(216, 16%, 13%, 100%);
-  --blockquote-border-color: hsl(181, 100%, 35%);
-  --blur-background: color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent) linear-gradient(hsl(218, 18%, 15%), color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent));
-  --bodyFont: var(--font-text, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
-  --button-background: hsl(
+  --background-modifier-border: var(--color-base-25, hsl(216, 20%, 20%));
+  --background-modifier-border-focus: var(--color-base-40, hsl(218, 19%, 31%));
+  --background-modifier-border-hover: var(--color-base-35, hsl(218, 19%, 27%));
+  --background-modifier-error: var(--color-red, #ff4d3a);
+  --background-modifier-error-hover: var(--color-red, #ff4d3a);
+  --background-modifier-error-rgb: var(--color-red-rgb, 255, 77, 58);
+  --background-modifier-form-field: var(--color-base-25, hsl(216, 20%, 20%));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, hsl(216, 20%, 20%));
+  --background-modifier-success: var(--color-green, #7dcf2b);
+  --background-modifier-success-rgb: var(--color-green-rgb, 125, 207, 43);
+  --background-primary: var(--color-base-00, hsla(216, 16%, 13%, 100%));
+  --background-primary-alt: var(--color-base-10, hsl(216, 17%, 14%));
+  --background-secondary: var(--color-base-20, hsl(216, 19%, 16%));
+  --background-secondary-alt: var(--color-base-30, hsl(218, 18%, 15%));
+  --bases-cards-background: var(--background-primary, hsla(216, 16%, 13%, 100%));
+  --bases-cards-cover-background: var(--background-primary-alt, hsl(216, 17%, 14%));
+  --bases-cards-radius: var(--radius-m, 14px);
+  --bases-embed-border-color: var(--background-modifier-border, hsl(216, 20%, 20%));
+  --bases-embed-border-radius: var(--radius-s, 7px);
+  --bases-group-heading-property-color: var(--text-muted, hsl(220, 17%, 66%));
+  --bases-table-border-color: var(--table-border-color, hsl(216, 20%, 20%));
+  --bases-table-cell-background-active: var(--background-primary, hsla(216, 16%, 13%, 100%));
+  --bases-table-cell-background-disabled: var(--background-primary-alt, hsl(216, 17%, 14%));
+  --bases-table-cell-background-selected: var(--table-selection, hsla(181, 100%, 35%, 0.1));
+  --bases-table-container-border-radius: var(--radius-s, 7px);
+  --bases-table-group-background: var(--background-primary-alt, hsl(216, 17%, 14%));
+  --bases-table-header-background: var(--background-primary, hsla(216, 16%, 13%, 100%));
+  --bases-table-header-color: var(--text-muted, hsl(220, 17%, 66%));
+  --bases-table-row-background-hover: var(--table-row-background-hover, hsl(218, 18%, 15%));
+  --bases-table-summary-background: var(--background-primary, hsla(216, 16%, 13%, 100%));
+  --blockquote-border-color: var(--interactive-accent, hsl(181, 100%, 35%));
+  --button-background: var(--color-accent-2, hsl(
     183,
     105%,
     39%
-  );
-  --callout-bug: 230, 106, 180;
-  --callout-default: 0, 155, 227;
-  --callout-error: 246, 156, 0;
-  --callout-example: 180, 90, 245;
-  --callout-fail: 255, 77, 58;
-  --callout-important: 0, 206, 203;
-  --callout-info: 0, 155, 227;
-  --callout-question: 232, 201, 0;
-  --callout-radius: 7px;
-  --callout-success: 125, 207, 43;
-  --callout-summary: 125, 207, 43;
-  --callout-tip: 232, 201, 0;
-  --callout-todo: 0, 155, 227;
-  --callout-warning: 246, 156, 0;
-  --canvas-background: hsla(216, 16%, 13%, 100%);
-  --canvas-card-label-color: hsl(219, 13%, 51%);
-  --canvas-color-1: 255, 77, 58;
-  --canvas-color-2: 246, 156, 0;
-  --canvas-color-3: 232, 201, 0;
-  --canvas-color-4: 125, 207, 43;
-  --canvas-color-5: 0, 206, 203;
-  --canvas-color-6: 180, 90, 245;
-  --canvas-controls-icon-stroke: 1.3px;
-  --canvas-controls-radius: 7px;
-  --canvas-dot-pattern: hsl(218, 18%, 15%);
-  --caret-color: #c8d4e6;
-  --checkbox-border-color: #ff4d3a;
-  --checkbox-border-color-hover: hsl(220, 17%, 66%);
-  --checkbox-color: transparent;
-  --checkbox-color-hover: hsl(
+  ));
+  --callout-bug: var(--color-pink-rgb, 230, 106, 180);
+  --callout-default: var(--color-blue-rgb, 0, 155, 227);
+  --callout-error: var(--color-orange-rgb, 246, 156, 0);
+  --callout-example: var(--color-purple-rgb, 180, 90, 245);
+  --callout-fail: var(--color-red-rgb, 255, 77, 58);
+  --callout-important: var(--color-cyan-rgb, 0, 206, 203);
+  --callout-info: var(--color-blue-rgb, 0, 155, 227);
+  --callout-question: var(--color-yellow-rgb, 232, 201, 0);
+  --callout-radius: var(--radius-s, 7px);
+  --callout-success: var(--color-green-rgb, 125, 207, 43);
+  --callout-summary: var(--color-green-rgb, 125, 207, 43);
+  --callout-tip: var(--color-yellow-rgb, 232, 201, 0);
+  --callout-todo: var(--color-blue-rgb, 0, 155, 227);
+  --callout-warning: var(--color-orange-rgb, 246, 156, 0);
+  --canvas-background: var(--background-primary, hsla(216, 16%, 13%, 100%));
+  --canvas-card-label-color: var(--text-faint, hsl(219, 13%, 51%));
+  --canvas-color-1: var(--color-red-rgb, 255, 77, 58);
+  --canvas-color-2: var(--color-orange-rgb, 246, 156, 0);
+  --canvas-color-3: var(--color-yellow-rgb, 232, 201, 0);
+  --canvas-color-4: var(--color-green-rgb, 125, 207, 43);
+  --canvas-color-5: var(--color-cyan-rgb, 0, 206, 203);
+  --canvas-color-6: var(--color-purple-rgb, 180, 90, 245);
+  --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 1.3px);
+  --canvas-controls-radius: var(--radius-s, 7px);
+  --canvas-dot-pattern: var(--color-base-30, hsl(218, 18%, 15%));
+  --caret-color: var(--text-normal, #c8d4e6);
+  --checkbox-border-color: var(--color-red, #ff4d3a);
+  --checkbox-border-color-hover: var(--text-muted, hsl(220, 17%, 66%));
+  --checkbox-color: var(--interactive-accent, transparent);
+  --checkbox-color-hover: var(--interactive-accent-hover, hsl(
     177,
     100%,
     33%
-  );
-  --checkbox-marker-color: hsla(216, 16%, 13%, 100%);
-  --checkbox-radius: 14px;
-  --checkbox-size: 18px;
-  --checklist-done-color: hsl(220, 17%, 66%);
+  ));
+  --checkbox-marker-color: var(--background-primary, hsla(216, 16%, 13%, 100%));
+  --checkbox-radius: var(--radius-m, 14px);
+  --checkbox-size: var(--font-text-size, 18px);
+  --checklist-done-color: var(--text-muted, hsl(220, 17%, 66%));
   --checklist-done-decoration: none;
-  --clickable-icon-radius: 7px;
-  --code-background: hsl(216, 17%, 14%);
-  --code-border-color: hsl(216, 20%, 20%);
-  --code-comment: hsl(219, 13%, 51%);
-  --code-function: #e8c900;
-  --code-important: #f69c00;
-  --code-keyword: #e66ab4;
-  --code-normal: #c8d4e6;
-  --code-operator: #ff4d3a;
-  --code-property: #00cecb;
-  --code-punctuation: hsl(220, 17%, 66%);
-  --code-radius: 7px;
-  --code-string: #7dcf2b;
-  --code-tag: #ff4d3a;
-  --code-value: #b45af5;
-  --codeFont: var(--font-monospace, "DM Mono", monospace);
-  --collapse-icon-color: hsl(219, 13%, 51%);
-  --collapse-icon-color-collapsed: hsl(
+  --clickable-icon-radius: var(--radius-s, 7px);
+  --code-background: var(--background-primary-alt, hsl(216, 17%, 14%));
+  --code-border-color: var(--background-modifier-border, hsl(216, 20%, 20%));
+  --code-comment: var(--text-faint, hsl(219, 13%, 51%));
+  --code-function: var(--color-yellow, #e8c900);
+  --code-important: var(--color-orange, #f69c00);
+  --code-keyword: var(--color-pink, #e66ab4);
+  --code-normal: var(--text-normal, #c8d4e6);
+  --code-operator: var(--color-red, #ff4d3a);
+  --code-property: var(--color-cyan, #00cecb);
+  --code-punctuation: var(--text-muted, hsl(220, 17%, 66%));
+  --code-radius: var(--radius-s, 7px);
+  --code-string: var(--color-green, #7dcf2b);
+  --code-tag: var(--color-red, #ff4d3a);
+  --code-value: var(--color-purple, #b45af5);
+  --collapse-icon-color: var(--text-faint, hsl(219, 13%, 51%));
+  --collapse-icon-color-collapsed: var(--text-accent, hsl(
     177,
     100%,
     33%
-  );
-  --color-accent: hsl(181, 100%, 35%);
+  ));
   --color-accent-1: hsl(
-    177,
-    100%,
-    33%
+    calc(var(--accent-h) - 4),
+    var(--accent-s),
+    calc(var(--accent-l) - 2%)
   );
   --color-accent-2: hsl(
-    183,
-    105%,
-    39%
+    calc(var(--accent-h) + 2),
+    calc(var(--accent-s) + 5%),
+    calc(var(--accent-l) + 4%)
   );
   --color-accent-3: hsl(
-    216,
-    100%,
-    47%
+    calc(var(--accent-h) + 35),
+    var(--accent-s),
+    calc(var(--accent-l) + 12%)
   );
-  --color-accent-hsl: 181, 100%, 35%;
-  --color-base-00: hsla(216, 16%, 13%, 100%);
+  --color-base-00: hsla(216, 16%, 13%, var(--page-transparency));
   --color-base-10: hsl(216, 17%, 14%);
   --color-base-100: #c8d4e6;
   --color-base-20: hsl(216, 19%, 16%);
@@ -1383,28 +1373,598 @@ export const theme: ThemeData = {
   --color-yellow: #e8c900;
   --color-yellow-rgb: 232, 201, 0;
   --custom-code-height: 1em;
+  --custom-doc-bg: var(--color-accent-1, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --custom-line-height: 2em;
+  --dark: var(--text-normal, var(--color-base-100, #c8d4e6));
+  --darkgray: var(--text-normal, var(--color-base-100, #c8d4e6));
+  --divider-color: var(--background-modifier-border, hsl(216, 20%, 20%));
+  --divider-color-hover: var(--interactive-accent, hsl(181, 100%, 35%));
+  --doc-background: var(--doc-bg, hsl(207, 24%, 22%));
+  --doc-bg: hsl(207, 24%, 22%);
+  --dropdown-background: var(--interactive-normal, hsl(218, 18%, 15%));
+  --dropdown-background-hover: var(--interactive-hover, hsl(218, 19%, 27%));
+  --embed-border-left: none;
+  --file-emoji: "Noto Emoji";
+  --file-header-background: var(--background-primary, hsla(216, 16%, 13%, 100%));
+  --file-header-background-focused: var(--background-primary, hsla(216, 16%, 13%, 100%));
+  --file-header-font: var(--font-interface, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --file-line-width: 900px;
+  --flair-background: var(--interactive-normal, hsl(218, 18%, 15%));
+  --flair-color: var(--text-normal, #c8d4e6);
+  --folder-1: var(--normal-folder-1, "📒");
+  --folder-1-open: var(--normal-folder-1-open, "📖");
+  --folder-2: var(--normal-folder-2, "📑");
+  --folder-2-open: var(--normal-folder-2-open, "📑");
+  --folder-3: var(--normal-folder-3, "🔖");
+  --folder-3-open: var(--normal-folder-3-open, "🔖");
+  --folder-emoji: "Noto Emoji";
+  --folder-icon-size: 1.6em;
+  --folder-padding: 4px;
+  --font-default: var(--font-main), var(--font-emoji), Inter, sans-serif;
+  --font-emoji: "Noto Color Emoji";
+  --font-main: "Nunito Sans";
+  --font-mermaid: var(--font-text, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --footnote-divider-color: var(--metadata-divider-color, hsl(216, 20%, 20%));
+  --footnote-id-color: var(--text-muted, hsl(220, 17%, 66%));
+  --footnote-id-color-no-occurrences: var(--text-faint, hsl(219, 13%, 51%));
+  --footnote-radius: var(--radius-s, 7px);
+  --google-font-color-notocoloremoji: colrv1;
+  --graph-node: var(--text-muted, hsl(220, 17%, 66%));
+  --graph-node-attachment: var(--color-yellow, #e8c900);
+  --graph-node-focused: var(--text-accent, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --graph-node-tag: var(--color-green, #7dcf2b);
+  --graph-node-unresolved: var(--text-faint, hsl(219, 13%, 51%));
+  --graph-text: var(--text-normal, #c8d4e6);
+  --gray: var(--text-muted, var(--color-base-70, hsl(220, 17%, 66%)));
+  --h1-align: center;
+  --h1-color-custom: var(--color-cyan, #00cecb);
+  --h1-font: var(--heading-font-2, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --h1-size: 2.2em;
+  --h1-style: var(--heading-style, normal);
+  --h1-variant: var(--heading-variant, normal);
+  --h1-weight: var(--heading-weight, 700);
+  --h2-color-custom: var(--color-blue, #009be3);
+  --h2-font: var(--heading-font-2, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --h2-size: 1.87em;
+  --h2-style: var(--heading-style, normal);
+  --h2-variant: var(--heading-variant, normal);
+  --h2-weight: var(--heading-weight, 700);
+  --h3-color-custom: var(--color-purple, #b45af5);
+  --h3-font: var(--heading-font-2, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --h3-size: 1.57em;
+  --h3-style: var(--heading-style, normal);
+  --h3-variant: var(--heading-variant, normal);
+  --h3-weight: var(--heading-weight, 700);
+  --h4-color-custom: var(--color-pink, #e66ab4);
+  --h4-font: var(--heading-font-2, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --h4-size: 1.35em;
+  --h4-style: var(--heading-style, normal);
+  --h4-variant: var(--heading-variant, normal);
+  --h4-weight: var(--heading-weight, 700);
+  --h5-color-custom: var(--color-red, #ff4d3a);
+  --h5-font: var(--heading-font-2, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --h5-size: 1.3em;
+  --h5-style: var(--heading-style, normal);
+  --h5-variant: var(--heading-variant, normal);
+  --h5-weight: var(--heading-weight, 700);
+  --h6-color-custom: var(--color-orange, #f69c00);
+  --h6-font: var(--heading-font-2, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --h6-size: 1.1em;
+  --h6-style: var(--heading-style, normal);
+  --h6-variant: var(--heading-variant, normal);
+  --h6-weight: var(--heading-weight, 700);
+  --heading-font: "Merriweather Sans", "Book Antiqua", var(--font-default);
+  --heading-font-2: var(--heading-font), var(--font-default);
+  --heading-formatting: var(--text-faint, hsl(219, 13%, 51%));
+  --heading-style: normal;
+  --heading-variant: normal;
+  --heading-weight: 700;
+  --highlight: var(--text-highlight-bg, hsla(var(--color-accent-hsl), 0.475));
+  --highlight-text: white;
+  --hr-color: var(--background-modifier-border, hsl(216, 20%, 20%));
+  --icon-background: var(--background-secondary-alt, hsl(218, 18%, 15%));
+  --icon-color: var(--text-muted, hsl(220, 17%, 66%));
+  --icon-color-active: var(--text-accent, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --icon-color-focused: var(--text-normal, #c8d4e6);
+  --icon-color-hover: var(--text-muted, hsl(220, 17%, 66%));
+  --icon-emoji: "Noto Color Emoji";
+  --icon-l-stroke-width: 1.3px;
+  --icon-m-stroke-width: 1.3px;
+  --icon-s-stroke-width: 1.3px;
+  --icon-shadow: var(--shadow-ui) inset, var(--shadow-ui);
+  --icon-stroke: var(--icon-m-stroke-width, 1.3px);
+  --img-align: auto;
+  --img-bg-size: cover;
+  --img-blur: 3px;
+  --img-position-x: 50%;
+  --img-position-y: 50%;
+  --img-sat: 100%;
+  --inline-title-color: var(--text-normal, #c8d4e6);
+  --inline-title-font: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --inline-title-size: var(--h1-size, 2.5em);
+  --input-date-separator: var(--text-faint, hsl(219, 13%, 51%));
+  --input-placeholder-color: var(--text-faint, hsl(219, 13%, 51%));
+  --interactive-accent: var(--color-accent, hsl(181, 100%, 35%));
+  --interactive-accent-hover: var(--color-accent-1, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --interactive-accent-hsl: var(--color-accent-hsl, 181, 100%, 35%);
+  --interactive-hover: var(--color-base-35, hsl(218, 19%, 27%));
+  --interactive-normal: var(--color-base-30, hsl(218, 18%, 15%));
+  --light: var(--background-primary, var(--color-base-00, hsla(216, 16%, 13%, 100%)));
+  --lightgray: var(--background-secondary, var(--color-base-20, hsl(216, 19%, 16%)));
+  --link-color: var(--text-accent, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --link-color-hover: var(--text-accent-hover, hsl(
+    183,
+    105%,
+    39%
+  ));
+  --link-external-color: var(--text-accent, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --link-external-color-hover: var(--text-accent-hover, hsl(
+    183,
+    105%,
+    39%
+  ));
+  --link-unresolved-color: var(--text-faint, hsl(219, 13%, 51%));
+  --link-unresolved-decoration-color: var(--background-modifier-border-hover, hsl(218, 19%, 27%));
+  --list-bullet-size: 0.45em;
+  --list-marker-color: var(--color-cyan, #00cecb);
+  --list-marker-color-collapsed: var(--text-accent, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --list-marker-color-hover: var(--color-yellow, #e8c900);
+  --menu-background: var(--background-secondary, hsl(216, 19%, 16%));
+  --menu-border-color: var(--background-modifier-border-hover, hsl(218, 19%, 27%));
+  --menu-radius: var(--radius-m, 14px);
+  --menu-shadow: var(--shadow-s, 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3));
+  --metadata-border-color: var(--background-modifier-border, hsl(216, 20%, 20%));
+  --metadata-divider-color: var(--background-modifier-border, hsl(216, 20%, 20%));
+  --metadata-input-font: var(--font-interface, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --metadata-input-text-color: var(--text-normal, #c8d4e6);
+  --metadata-label-font: var(--font-interface, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --metadata-label-text-color: var(--text-muted, hsl(220, 17%, 66%));
+  --metadata-label-text-color-hover: var(--text-muted, hsl(220, 17%, 66%));
+  --modal-background: var(--background-primary, hsla(216, 16%, 13%, 100%));
+  --modal-community-sidebar-width: 25em;
+  --modal-height: 100%;
+  --modal-max-height: 100;
+  --modal-max-width: 100%;
+  --modal-max-width-narrow: 75%;
+  --modal-radius: var(--radius-l, 0px);
+  --modal-width: 100%;
+  --nav-collapse-icon-color: var(--collapse-icon-color, hsl(219, 13%, 51%));
+  --nav-collapse-icon-color-collapsed: var(--text-faint, hsl(219, 13%, 51%));
+  --nav-heading-color: var(--text-normal, #c8d4e6);
+  --nav-heading-color-collapsed: var(--text-faint, hsl(219, 13%, 51%));
+  --nav-heading-color-collapsed-hover: var(--text-muted, hsl(220, 17%, 66%));
+  --nav-heading-color-hover: var(--text-normal, #c8d4e6);
+  --nav-indentation-guide-color: var(--indentation-guide-color, transparent);
+  --nav-indentation-guide-width: var(--indentation-guide-width, 0px);
+  --nav-item-color: var(--text-muted, hsl(220, 17%, 66%));
+  --nav-item-color-active: var(--text-normal, #c8d4e6);
+  --nav-item-color-highlighted: var(--text-accent, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --nav-item-color-hover: var(--text-normal, #c8d4e6);
+  --nav-item-color-selected: var(--text-normal, #c8d4e6);
+  --nav-item-radius: var(--radius-s, 7px);
+  --nav-tag-color: var(--text-faint, hsl(219, 13%, 51%));
+  --nav-tag-color-active: var(--text-muted, hsl(220, 17%, 66%));
+  --nav-tag-color-hover: var(--text-muted, hsl(220, 17%, 66%));
+  --nav-tag-radius: var(--radius-s, 7px);
+  --normal-folder-1: "📒";
+  --normal-folder-1-open: "📖";
+  --normal-folder-2: "📑";
+  --normal-folder-2-open: "📑";
+  --normal-folder-3: "🔖";
+  --normal-folder-3-open: "🔖";
+  --page-transparency: 100%;
+  --panel-child: var(--background-primary-alt, hsl(216, 17%, 14%));
+  --pdf-background: var(--background-primary, hsla(216, 16%, 13%, 100%));
+  --pdf-page-background: var(--background-primary, hsla(216, 16%, 13%, 100%));
+  --pdf-sidebar-background: var(--background-primary, hsla(216, 16%, 13%, 100%));
+  --pill-border-color: var(--background-modifier-border, hsl(216, 20%, 20%));
+  --pill-border-color-hover: var(--background-modifier-border-hover, hsl(218, 19%, 27%));
+  --pill-color: var(--text-muted, hsl(220, 17%, 66%));
+  --pill-color-hover: var(--text-normal, #c8d4e6);
+  --pill-color-remove: var(--text-faint, hsl(219, 13%, 51%));
+  --pill-color-remove-hover: var(--text-accent, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --prompt-background: var(--background-primary, hsla(216, 16%, 13%, 100%));
+  --radius-l: 19px;
+  --radius-m: 14px;
+  --radius-s: 7px;
+  --radius-x: 28px;
+  --raised-background: var(--blur-background, color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent) linear-gradient(hsl(218, 18%, 15%), color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent)));
+  --ribbon-background: var(--background-secondary, transparent);
+  --ribbon-background-collapsed: var(--background-primary, transparent);
+  --scrollbar-radius: var(--radius-l, 19px);
+  --search-clear-button-color: var(--text-muted, hsl(220, 17%, 66%));
+  --search-icon-color: var(--text-muted, hsl(220, 17%, 66%));
+  --search-result-background: var(--background-primary, hsla(216, 16%, 13%, 100%));
+  --secondary: var(--text-accent, var(--color-accent-1, hsl(
+    177,
+    100%,
+    33%
+  )));
+  --setting-group-heading-color: var(--text-normal, #c8d4e6);
+  --setting-items-background: var(--background-primary-alt, hsl(216, 17%, 14%));
+  --setting-items-border-color: var(--background-modifier-border, hsl(216, 20%, 20%));
+  --setting-items-radius: var(--radius-l, 19px);
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-ui: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, hsl(220, 17%, 66%));
+  --shiki-code-background: var(--code-background, hsl(216, 17%, 14%));
+  --shiki-code-block-border-radius: var(--code-radius, 7px);
+  --shiki-code-comment: var(--text-faint, hsl(219, 13%, 51%));
+  --shiki-code-function: var(--color-green, #7dcf2b);
+  --shiki-code-important: var(--color-orange, #f69c00);
+  --shiki-code-keyword: var(--color-pink, #e66ab4);
+  --shiki-code-normal: var(--text-muted, hsl(220, 17%, 66%));
+  --shiki-code-property: var(--color-cyan, #00cecb);
+  --shiki-code-punctuation: var(--text-muted, hsl(220, 17%, 66%));
+  --shiki-code-string: var(--color-yellow, #e8c900);
+  --shiki-code-value: var(--color-purple, #b45af5);
+  --shiki-gutter-border-color: var(--background-modifier-border, hsl(216, 20%, 20%));
+  --shiki-gutter-text-color: var(--text-faint, hsl(219, 13%, 51%));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, hsl(220, 17%, 66%));
+  --shiki-highlight-neutral: var(--shiki-code-normal, hsl(220, 17%, 66%));
+  --shiki-terminal-dots-color: var(--text-faint, hsl(219, 13%, 51%));
+  --slider-thumb-border-color: var(--background-modifier-border-hover, hsl(218, 19%, 27%));
+  --slider-track-background: var(--background-modifier-border, hsl(216, 20%, 20%));
+  --slider-track-height: 1.2px;
+  --status-bar-background: var(--background-secondary, hsl(216, 19%, 16%));
+  --status-bar-border-color: var(--divider-color, hsl(216, 20%, 20%));
+  --status-bar-radius: var(--radius-m, 14px 0 0 0) 0 0 0;
+  --status-bar-text-color: var(--text-muted, hsl(220, 17%, 66%));
+  --suggestion-background: var(--background-primary, hsla(216, 16%, 13%, 100%));
+  --sync-avatar-color-1: var(--color-red, #ff4d3a);
+  --sync-avatar-color-2: var(--color-orange, #f69c00);
+  --sync-avatar-color-3: var(--color-yellow, #e8c900);
+  --sync-avatar-color-4: var(--color-green, #7dcf2b);
+  --sync-avatar-color-5: var(--color-cyan, #00cecb);
+  --sync-avatar-color-6: var(--color-blue, #009be3);
+  --sync-avatar-color-7: var(--color-purple, #b45af5);
+  --sync-avatar-color-8: var(--color-pink, #e66ab4);
+  --tab-background-active: var(--background-secondary-alt, hsl(218, 18%, 15%));
+  --tab-container-background: var(--background-secondary, hsl(216, 19%, 16%));
+  --tab-curve: 0px;
+  --tab-divider-color: var(--background-modifier-border-hover, transparent);
+  --tab-outline-color: var(--divider-color, hsl(216, 20%, 20%));
+  --tab-outline-width: 0.8px;
+  --tab-radius: var(--radius-s, 7px);
+  --tab-radius-active: var(--radius-s, 7px);
+  --tab-switcher-background: var(--background-secondary, hsl(216, 19%, 16%));
+  --tab-text-color: var(--text-faint, hsl(219, 13%, 51%));
+  --tab-text-color-active: var(--text-muted, hsl(220, 17%, 66%));
+  --tab-text-color-focused: var(--text-muted, hsl(220, 17%, 66%));
+  --tab-text-color-focused-active: var(--text-muted, hsl(220, 17%, 66%));
+  --tab-text-color-focused-active-current: var(--color-accent-1, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --table-add-button-border-color: var(--background-modifier-border, hsl(216, 20%, 20%));
+  --table-background: var(--background-secondary-alt, hsl(218, 18%, 15%));
+  --table-border-color: var(--background-modifier-border, hsl(216, 20%, 20%));
+  --table-column-alt-background: var(--table-background, hsl(218, 18%, 15%));
+  --table-drag-handle-background-active: var(--table-selection-border-color, hsl(181, 100%, 35%));
+  --table-drag-handle-color: var(--text-faint, hsl(219, 13%, 51%));
+  --table-header-background: var(--table-background, hsl(218, 18%, 15%));
+  --table-header-border-color: var(--table-border-color, hsl(216, 20%, 20%));
+  --table-header-color: var(--text-normal, #c8d4e6);
+  --table-header-font: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --table-row-alt-background: var(--table-background, hsl(218, 18%, 15%));
+  --table-row-alt-background-hover: var(--table-background, hsl(218, 18%, 15%));
+  --table-row-background-hover: var(--table-background, hsl(218, 18%, 15%));
+  --table-selection-border-color: var(--interactive-accent, hsl(181, 100%, 35%));
+  --tag-color: var(--text-accent, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --tag-color-hover: var(--text-accent, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, hsl(
+    183,
+    105%,
+    39%
+  )));
+  --text-accent: var(--color-accent-1, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --text-accent-hover: var(--color-accent-2, hsl(
+    183,
+    105%,
+    39%
+  ));
+  --text-error: var(--color-red, #ff4d3a);
+  --text-faint: var(--color-base-50, hsl(219, 13%, 51%));
+  --text-highlight-bg: hsla(var(--color-accent-hsl), 0.475);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-muted: var(--color-base-70, hsl(220, 17%, 66%));
+  --text-normal: var(--color-base-100, #c8d4e6);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
+  --text-success: var(--color-green, #7dcf2b);
+  --text-warning: var(--color-orange, #f69c00);
+  --textHighlight: var(--text-highlight-bg, hsla(var(--color-accent-hsl), 0.475));
+  --tile-field-padding: 5px;
+  --tile-img-radius: var(--tile-radius, 14px);
+  --tile-padding: 8px;
+  --tile-radius: 14px;
+  --titlebar-background: var(--background-secondary, hsl(216, 19%, 16%));
+  --titlebar-background-focused: var(--background-secondary-alt, hsl(218, 18%, 15%));
+  --titlebar-border-color: var(--background-modifier-border, hsl(216, 20%, 20%));
+  --titlebar-text-color: var(--text-muted, hsl(220, 17%, 66%));
+  --titlebar-text-color-focused: var(--text-normal, #c8d4e6);
+  --vault-font: "Noto Emoji";
+  --vault-icon: "💎";
+  --vault-name-font-size: var(--h3-size, 1.57em);
+  --vault-name-font-weight: var(--h2-weight, 700);
+  --vault-profile-color: var(--text-normal, #c8d4e6);
+  --vault-profile-color-hover: var(--vault-profile-color, #c8d4e6);
+  --quartz-icon-color: currentColor;
+}
+
+html[saved-theme="dark"] body {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  background-color: var(--tab-container-background, rgb(33, 39, 49));
+  color: rgb(200, 212, 230);
+}
+
+html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
+  background-color: var(--background-primary, rgb(28, 32, 38));
+  color: rgb(200, 212, 230);
+}
+
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: rgb(200, 212, 230);
+}
+
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
+  border-right-color: rgb(41, 49, 61);
+  border-right-width: 0px;
+}
+
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  background-color: var(--tab-container-background, rgb(33, 39, 49));
+  border-left-color: rgb(41, 49, 61);
+  color: rgb(200, 212, 230);
+}`,
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
+  color: var(--bold-color, rgb(200, 212, 230));
+  font-family: var(--bold-font, "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  outline: rgb(200, 212, 230) none 0px;
+  text-decoration-color: rgb(200, 212, 230);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
+  color: var(--italic-color, rgb(200, 212, 230));
+  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  outline: rgb(200, 212, 230) none 0px;
+  text-decoration-color: rgb(200, 212, 230);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, rgb(200, 212, 230));
+  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  outline: rgb(200, 212, 230) none 0px;
+  text-decoration-color: rgb(200, 212, 230);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
+  color: var(--bold-color, rgb(200, 212, 230));
+  font-family: var(--bold-font, "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  outline: rgb(200, 212, 230) none 0px;
+  text-decoration-color: rgb(200, 212, 230);
+}
+
+html[saved-theme="dark"] body .text-highlight {
+  background-color: var(--text-highlight-bg, rgba(0, 176, 179, 0.475));
+  color: var(--highlight-text, rgb(255, 255, 255));
+  font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  outline: rgb(255, 255, 255) none 0px;
+  text-decoration-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body del {
+  color: rgb(200, 212, 230);
+  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  outline: rgb(200, 212, 230) none 0px;
+  text-decoration-color: rgb(200, 212, 230);
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: var(--text-normal, rgb(200, 212, 230));
+  font-size: var(--h6-size, 14.3px);
+}
+
+html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
+  background-color: rgba(var(--color-red-rgb), 0.1);
+  border-color: rgb(255, 77, 58);
+  border-radius: 14px;
+}
+
+html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgba(var(--color-green-rgb), 0.1);
+  border-color: rgb(125, 207, 43);
+}
+
+html[saved-theme="dark"] body p {
+  color: var(--text-muted, rgb(154, 163, 183));
+  font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  outline: rgb(154, 163, 183) none 0px;
+  text-decoration-color: rgb(154, 163, 183);
+}`,
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
+  --background-modifier-active-hover: hsla(181, 100%, 35%, 0.1);
+  --background-modifier-border: hsl(216, 20%, 20%);
+  --background-modifier-border-focus: hsl(218, 19%, 31%);
+  --background-modifier-border-hover: hsl(218, 19%, 27%);
+  --background-modifier-error: #ff4d3a;
+  --background-modifier-error-hover: #ff4d3a;
+  --background-modifier-error-rgb: 255, 77, 58;
+  --background-modifier-form-field: hsl(216, 20%, 20%);
+  --background-modifier-form-field-hover: hsl(216, 20%, 20%);
+  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-success: #7dcf2b;
+  --background-modifier-success-rgb: 125, 207, 43;
+  --background-primary: hsla(216, 16%, 13%, 100%);
+  --background-primary-alt: hsl(216, 17%, 14%);
+  --background-secondary: hsl(216, 19%, 16%);
+  --background-secondary-alt: hsl(218, 18%, 15%);
+  --blockquote-border-color: hsl(181, 100%, 35%);
+  --blur-background: color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent) linear-gradient(hsl(218, 18%, 15%), color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-background: hsl(
+    183,
+    105%,
+    39%
+  );
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-bug: 230, 106, 180;
+  --callout-default: 0, 155, 227;
+  --callout-error: 246, 156, 0;
+  --callout-example: 180, 90, 245;
+  --callout-fail: 255, 77, 58;
+  --callout-important: 0, 206, 203;
+  --callout-info: 0, 155, 227;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 232, 201, 0;
+  --callout-radius: 7px;
+  --callout-success: 125, 207, 43;
+  --callout-summary: 125, 207, 43;
+  --callout-tip: 232, 201, 0;
+  --callout-title-weight: 600;
+  --callout-todo: 0, 155, 227;
+  --callout-warning: 246, 156, 0;
+  --canvas-background: hsla(216, 16%, 13%, 100%);
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 1.3px;
+  --canvas-controls-radius: 7px;
+  --canvas-dot-pattern: hsl(218, 18%, 15%);
+  --caret-color: #c8d4e6;
+  --checkbox-border-color: #ff4d3a;
+  --checkbox-border-color-hover: hsl(220, 17%, 66%);
+  --checkbox-color: transparent;
+  --checkbox-color-hover: hsl(
+    177,
+    100%,
+    33%
+  );
+  --checkbox-marker-color: hsla(216, 16%, 13%, 100%);
+  --checkbox-radius: 14px;
+  --checkbox-size: 18px;
+  --checklist-done-color: hsl(220, 17%, 66%);
+  --clickable-icon-radius: 7px;
+  --code-background: hsl(216, 17%, 14%);
+  --code-border-color: hsl(216, 20%, 20%);
+  --code-bracket-background: rgba(255, 255, 255, 0.067);
+  --code-comment: hsl(219, 13%, 51%);
+  --code-function: #e8c900;
+  --code-important: #f69c00;
+  --code-keyword: #e66ab4;
+  --code-normal: #c8d4e6;
+  --code-operator: #ff4d3a;
+  --code-property: #00cecb;
+  --code-punctuation: hsl(220, 17%, 66%);
+  --code-radius: 7px;
+  --code-size: 0.875em;
+  --code-string: #7dcf2b;
+  --code-tag: #ff4d3a;
+  --code-value: #b45af5;
+  --collapse-icon-color: hsl(219, 13%, 51%);
+  --collapse-icon-color-collapsed: hsl(
+    177,
+    100%,
+    33%
+  );
+  --color-accent: hsl(181, 100%, 35%);
+  --color-accent-1: hsl(
+    177,
+    100%,
+    33%
+  );
+  --color-accent-2: hsl(
+    183,
+    105%,
+    39%
+  );
+  --color-accent-3: hsl(
+    216,
+    100%,
+    47%
+  );
+  --color-accent-hsl: 181, 100%, 35%;
+  --color-base-00: hsla(216, 16%, 13%, 100%);
   --custom-doc-bg: hsl(
     177,
     100%,
     33%
   );
-  --custom-line-height: 2em;
-  --dark: var(--text-normal, #c8d4e6);
-  --darkgray: var(--text-normal, #c8d4e6);
   --divider-color: hsl(216, 20%, 20%);
   --divider-color-hover: hsl(181, 100%, 35%);
+  --divider-vertical-height: 100%;
   --doc-background: hsl(207, 24%, 22%);
-  --doc-bg: hsl(207, 24%, 22%);
   --dropdown-background: hsl(218, 18%, 15%);
   --dropdown-background-hover: hsl(218, 19%, 27%);
-  --embed-block-shadow-hover: 0 0 0 1px hsl(216, 20%, 20%), inset 0 0 0 1px hsl(216, 20%, 20%);
-  --embed-border-left: none;
-  --embed-border-start: 2px solid hsl(181, 100%, 35%);
-  --file-emoji: "Noto Emoji";
-  --file-header-background: hsla(216, 16%, 13%, 100%);
-  --file-header-background-focused: hsla(216, 16%, 13%, 100%);
-  --file-header-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --file-line-width: 900px;
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(218, 18%, 15%);
   --flair-color: #c8d4e6;
   --folder-1: "📒";
@@ -1413,21 +1973,13 @@ export const theme: ThemeData = {
   --folder-2-open: "📑";
   --folder-3: "🔖";
   --folder-3-open: "🔖";
-  --folder-emoji: "Noto Emoji";
-  --folder-icon-size: 1.6em;
-  --folder-padding: 4px;
   --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --font-emoji: "Noto Color Emoji";
-  --font-interface: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --font-main: "Nunito Sans";
-  --font-mermaid: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-interface: '??', '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-mermaid: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --font-monospace: "DM Mono", monospace;
-  --font-text: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --footnote-divider-color: hsl(216, 20%, 20%);
-  --footnote-id-color: hsl(220, 17%, 66%);
-  --footnote-id-color-no-occurrences: hsl(219, 13%, 51%);
-  --footnote-radius: 7px;
-  --google-font-color-notocoloremoji: colrv1;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-weight: var(--link-weight, 400);
   --graph-line: hsl(218, 19%, 27%);
   --graph-node: hsl(220, 17%, 66%);
   --graph-node-attachment: #e8c900;
@@ -1439,68 +1991,42 @@ export const theme: ThemeData = {
   --graph-node-tag: #7dcf2b;
   --graph-node-unresolved: hsl(219, 13%, 51%);
   --graph-text: #c8d4e6;
-  --gray: var(--text-muted, hsl(220, 17%, 66%));
-  --h1-align: center;
   --h1-color-custom: #00cecb;
   --h1-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --h1-size: 2.2em;
+  --h1-style: normal;
+  --h1-variant: normal;
   --h2-color-custom: #009be3;
   --h2-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --h2-size: 1.87em;
+  --h2-style: normal;
+  --h2-variant: normal;
   --h2-weight: 700;
   --h3-color-custom: #b45af5;
   --h3-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --h3-size: 1.57em;
+  --h3-style: normal;
+  --h3-variant: normal;
   --h3-weight: 700;
   --h4-color-custom: #e66ab4;
   --h4-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --h4-size: 1.35em;
+  --h4-style: normal;
+  --h4-variant: normal;
   --h4-weight: 700;
   --h5-color-custom: #ff4d3a;
   --h5-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --h5-size: 1.3em;
+  --h5-line-height: 1.5;
+  --h5-style: normal;
+  --h5-variant: normal;
   --h5-weight: 700;
   --h6-color-custom: #f69c00;
   --h6-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --h6-size: 1.1em;
+  --h6-line-height: 1.5;
+  --h6-style: normal;
+  --h6-variant: normal;
   --h6-weight: 700;
-  --headerFont: var(--font-text, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
   --heading-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --heading-font-2: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --heading-formatting: hsl(219, 13%, 51%);
-  --heading-style: normal;
-  --heading-variant: normal;
-  --heading-weight: 700;
-  --highlight: var(--text-highlight-bg, hsla(181, 100%, 35%, 0.475));
-  --highlight-text: white;
+  --heading-spacing: 2.5rem;
   --hr-color: hsl(216, 20%, 20%);
-  --icon-background: hsl(218, 18%, 15%);
-  --icon-color: hsl(220, 17%, 66%);
-  --icon-color-active: hsl(
-    177,
-    100%,
-    33%
-  );
-  --icon-color-focused: #c8d4e6;
-  --icon-color-hover: hsl(220, 17%, 66%);
-  --icon-emoji: "Noto Color Emoji";
-  --icon-l-stroke-width: 1.3px;
-  --icon-m-stroke-width: 1.3px;
-  --icon-s-stroke-width: 1.3px;
-  --icon-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) inset, 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042);
-  --icon-stroke: 1.3px;
-  --img-align: auto;
-  --img-bg-size: cover;
-  --img-blur: 3px;
-  --img-position-x: 50%;
-  --img-position-y: 50%;
-  --img-sat: 100%;
-  --indentation-guide-color: transparent;
-  --inline-title-color: #c8d4e6;
-  --inline-title-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --inline-title-size: 2.5em;
-  --input-date-separator: hsl(219, 13%, 51%);
-  --input-placeholder-color: hsl(219, 13%, 51%);
   --interactive-accent: hsl(181, 100%, 35%);
   --interactive-accent-hover: hsl(
     177,
@@ -1510,8 +2036,6 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 181, 100%, 35%;
   --interactive-hover: hsl(218, 19%, 27%);
   --interactive-normal: hsl(218, 18%, 15%);
-  --light: var(--background-primary, hsla(216, 16%, 13%, 100%));
-  --lightgray: var(--background-secondary, hsl(216, 19%, 16%));
   --link-color: hsl(
     177,
     100%,
@@ -1534,114 +2058,46 @@ export const theme: ThemeData = {
   );
   --link-unresolved-color: hsl(219, 13%, 51%);
   --link-unresolved-decoration-color: hsl(218, 19%, 27%);
-  --list-bullet-size: 0.45em;
-  --list-marker-color: #00cecb;
-  --list-marker-color-collapsed: hsl(
-    177,
-    100%,
-    33%
-  );
-  --list-marker-color-hover: #e8c900;
+  --link-weight: 400;
+  --list-indent: 2.25em;
   --menu-background: hsl(216, 19%, 16%);
   --menu-border-color: hsl(218, 19%, 27%);
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
   --menu-radius: 14px;
   --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --metadata-border-color: hsl(216, 20%, 20%);
-  --metadata-divider-color: hsl(216, 20%, 20%);
-  --metadata-input-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --metadata-input-text-color: #c8d4e6;
-  --metadata-label-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --metadata-label-text-color: hsl(220, 17%, 66%);
-  --metadata-label-text-color-hover: hsl(220, 17%, 66%);
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(218, 19%, 31%);
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(218, 19%, 27%);
-  --modal-background: hsla(216, 16%, 13%, 100%);
-  --modal-border-color: hsl(218, 19%, 31%);
-  --modal-community-sidebar-width: 25em;
-  --modal-height: 100%;
-  --modal-max-height: 100;
-  --modal-max-width: 100%;
-  --modal-max-width-narrow: 75%;
-  --modal-radius: 0px;
-  --modal-width: 100%;
-  --nav-collapse-icon-color: hsl(219, 13%, 51%);
-  --nav-collapse-icon-color-collapsed: hsl(219, 13%, 51%);
-  --nav-heading-color: #c8d4e6;
-  --nav-heading-color-collapsed: hsl(219, 13%, 51%);
-  --nav-heading-color-collapsed-hover: hsl(220, 17%, 66%);
-  --nav-heading-color-hover: #c8d4e6;
-  --nav-indentation-guide-color: transparent;
-  --nav-indentation-guide-width: 0px;
-  --nav-item-background-selected: hsla(181, 100%, 35%, 0.15);
-  --nav-item-color: hsl(220, 17%, 66%);
-  --nav-item-color-active: #c8d4e6;
-  --nav-item-color-highlighted: hsl(
-    177,
-    100%,
-    33%
-  );
-  --nav-item-color-hover: #c8d4e6;
-  --nav-item-color-selected: #c8d4e6;
-  --nav-item-radius: 7px;
-  --nav-tag-color: hsl(219, 13%, 51%);
-  --nav-tag-color-active: hsl(220, 17%, 66%);
-  --nav-tag-color-hover: hsl(220, 17%, 66%);
-  --nav-tag-radius: 7px;
-  --normal-folder-1: "📒";
-  --normal-folder-1-open: "📖";
-  --normal-folder-2: "📑";
-  --normal-folder-2-open: "📑";
-  --normal-folder-3: "🔖";
-  --normal-folder-3-open: "🔖";
-  --page-transparency: 100%;
   --panel-child: hsl(216, 17%, 14%);
   --pdf-background: hsla(216, 16%, 13%, 100%);
   --pdf-page-background: hsla(216, 16%, 13%, 100%);
   --pdf-shadow: 0 0 0 1px hsl(216, 20%, 20%);
   --pdf-sidebar-background: hsla(216, 16%, 13%, 100%);
   --pdf-thumbnail-shadow: 0 0 0 1px hsl(216, 20%, 20%);
-  --pill-border-color: hsl(216, 20%, 20%);
-  --pill-border-color-hover: hsl(218, 19%, 27%);
-  --pill-color: hsl(220, 17%, 66%);
-  --pill-color-hover: #c8d4e6;
-  --pill-color-remove: hsl(219, 13%, 51%);
-  --pill-color-remove-hover: hsl(
-    177,
-    100%,
-    33%
-  );
-  --prompt-background: hsla(216, 16%, 13%, 100%);
-  --prompt-border-color: hsl(218, 19%, 31%);
-  --radius-l: 19px;
-  --radius-m: 14px;
-  --radius-s: 7px;
-  --radius-x: 28px;
+  --popover-font-size: 16px;
   --raised-background: color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent) linear-gradient(hsl(218, 18%, 15%), color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent));
-  --ribbon-background: transparent;
-  --ribbon-background-collapsed: transparent;
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --resizer-size: 20px;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
   --scrollbar-radius: 19px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --search-clear-button-color: hsl(220, 17%, 66%);
   --search-icon-color: hsl(220, 17%, 66%);
   --search-result-background: hsla(216, 16%, 13%, 100%);
-  --secondary: var(--text-accent, hsl(
-    177,
-    100%,
-    33%
-  ));
   --setting-group-heading-color: #c8d4e6;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
   --setting-items-background: hsl(216, 17%, 14%);
   --setting-items-border-color: hsl(216, 20%, 20%);
+  --setting-items-padding: 20px;
   --setting-items-radius: 19px;
-  --shadow-color: rgba(0, 0, 0, 0.2);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-ui: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042);
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
   --shiki-active-tab-border-color: hsl(220, 17%, 66%);
   --shiki-code-background: hsl(216, 17%, 14%);
   --shiki-code-block-border-radius: 7px;
+  --shiki-code-block-spacing: 1rem;
   --shiki-code-comment: hsl(219, 13%, 51%);
   --shiki-code-function: #7dcf2b;
   --shiki-code-important: #f69c00;
@@ -1652,22 +2108,19 @@ export const theme: ThemeData = {
   --shiki-code-string: #e8c900;
   --shiki-code-value: #b45af5;
   --shiki-gutter-border-color: hsl(216, 20%, 20%);
+  --shiki-gutter-border-width: 1px;
   --shiki-gutter-text-color: hsl(219, 13%, 51%);
   --shiki-gutter-text-color-highlight: hsl(220, 17%, 66%);
   --shiki-highlight-green: rgba(125, 207, 43, 0.5);
   --shiki-highlight-green-background: rgba(125, 207, 43, 0.1);
   --shiki-highlight-neutral: hsl(220, 17%, 66%);
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
   --shiki-highlight-red: rgba(255, 77, 58, 0.5);
   --shiki-highlight-red-background: rgba(255, 77, 58, 0.1);
   --shiki-terminal-dots-color: hsl(219, 13%, 51%);
-  --slider-thumb-border-color: hsl(218, 19%, 27%);
-  --slider-track-background: hsl(216, 20%, 20%);
-  --slider-track-height: 1.2px;
-  --status-bar-background: hsl(216, 19%, 16%);
-  --status-bar-border-color: hsl(216, 20%, 20%);
-  --status-bar-radius: 14px 0 0 0;
-  --status-bar-text-color: hsl(220, 17%, 66%);
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
   --suggestion-background: hsla(216, 16%, 13%, 100%);
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
   --sync-avatar-color-1: #ff4d3a;
   --sync-avatar-color-2: #f69c00;
   --sync-avatar-color-3: #e8c900;
@@ -1677,15 +2130,17 @@ export const theme: ThemeData = {
   --sync-avatar-color-7: #b45af5;
   --sync-avatar-color-8: #e66ab4;
   --tab-background-active: hsl(218, 18%, 15%);
-  --tab-container-background: hsl(216, 19%, 16%);
-  --tab-curve: 0px;
   --tab-divider-color: transparent;
+  --tab-font-size: 13px;
   --tab-outline-color: hsl(216, 20%, 20%);
-  --tab-outline-width: 0.8px;
   --tab-radius: 7px;
   --tab-radius-active: 7px;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
   --tab-switcher-background: hsl(216, 19%, 16%);
   --tab-switcher-menubar-background: linear-gradient(to top, hsl(216, 19%, 16%), transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(181, 100%, 35%);
   --tab-text-color: hsl(219, 13%, 51%);
   --tab-text-color-active: hsl(220, 17%, 66%);
@@ -1702,21 +2157,31 @@ export const theme: ThemeData = {
     33%
   );
   --table-add-button-border-color: hsl(216, 20%, 20%);
+  --table-add-button-border-width: 1px;
   --table-background: hsl(218, 18%, 15%);
   --table-border-color: hsl(216, 20%, 20%);
   --table-column-alt-background: hsl(218, 18%, 15%);
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
   --table-drag-handle-background-active: hsl(181, 100%, 35%);
   --table-drag-handle-color: hsl(219, 13%, 51%);
+  --table-drag-handle-color-active: white;
   --table-header-background: hsl(218, 18%, 15%);
   --table-header-border-color: hsl(216, 20%, 20%);
+  --table-header-border-width: 1px;
   --table-header-color: #c8d4e6;
   --table-header-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --table-header-size: 16px;
   --table-header-weight: normal;
+  --table-line-height: 1.3;
   --table-row-alt-background: hsl(218, 18%, 15%);
   --table-row-alt-background-hover: hsl(218, 18%, 15%);
   --table-row-background-hover: hsl(218, 18%, 15%);
+  --table-row-last-border-width: 1px;
   --table-selection: hsla(181, 100%, 35%, 0.1);
+  --table-selection-blend-mode: lighten;
   --table-selection-border-color: hsl(181, 100%, 35%);
+  --table-text-size: 16px;
   --tag-background: hsla(181, 100%, 35%, 0.1);
   --tag-background-hover: hsla(181, 100%, 35%, 0.2);
   --tag-border-color: hsla(181, 100%, 35%, 0.15);
@@ -1731,11 +2196,7 @@ export const theme: ThemeData = {
     100%,
     33%
   );
-  --tertiary: var(--text-accent-hover, hsl(
-    183,
-    105%,
-    39%
-  ));
+  --tag-size: 0.875em;
   --text-accent: hsl(
     177,
     100%,
@@ -1749,131 +2210,20 @@ export const theme: ThemeData = {
   --text-error: #ff4d3a;
   --text-faint: hsl(219, 13%, 51%);
   --text-highlight-bg: hsla(181, 100%, 35%, 0.475);
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-muted: hsl(220, 17%, 66%);
   --text-normal: #c8d4e6;
   --text-selection: hsla(181, 100%, 35%, 0.25);
   --text-success: #7dcf2b;
   --text-warning: #f69c00;
-  --textHighlight: var(--text-highlight-bg, hsla(181, 100%, 35%, 0.475));
-  --tile-field-padding: 5px;
   --tile-img-radius: 14px;
-  --tile-padding: 8px;
-  --tile-radius: 14px;
-  --titleFont: var(--font-text, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
-  --titlebar-background: hsl(216, 19%, 16%);
-  --titlebar-background-focused: hsl(218, 18%, 15%);
-  --titlebar-border-color: hsl(216, 20%, 20%);
-  --titlebar-text-color: hsl(220, 17%, 66%);
-  --titlebar-text-color-focused: #c8d4e6;
-  --vault-font: "Noto Emoji";
-  --vault-icon: "💎";
-  --vault-name-font-size: 1.57em;
-  --vault-name-font-weight: 700;
-  --vault-profile-color: #c8d4e6;
-  --vault-profile-color-hover: #c8d4e6;
-  --quartz-icon-color: currentColor;
-}
-
-html[saved-theme="dark"] body {
-  background-color: var(--background-primary);
-  color: var(--text-normal);
-}
-
-html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(33, 39, 49);
-  color: rgb(200, 212, 230);
-}
-
-html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: rgb(28, 32, 38);
-  color: rgb(200, 212, 230);
-}
-
-html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(200, 212, 230);
-}
-
-html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
-  border-right-color: rgb(41, 49, 61);
-  border-right-width: 0px;
-}
-
-html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(33, 39, 49);
-  border-left-color: rgb(41, 49, 61);
-  color: rgb(200, 212, 230);
-}`,
-    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
-  color: rgb(200, 212, 230);
-  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  outline: rgb(200, 212, 230) none 0px;
-  text-decoration-color: rgb(200, 212, 230);
-}
-
-html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
-  color: rgb(200, 212, 230);
-  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  outline: rgb(200, 212, 230) none 0px;
-  text-decoration-color: rgb(200, 212, 230);
-}
-
-html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
-  color: rgb(200, 212, 230);
-  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  outline: rgb(200, 212, 230) none 0px;
-  text-decoration-color: rgb(200, 212, 230);
-}
-
-html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
-  color: rgb(200, 212, 230);
-  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  outline: rgb(200, 212, 230) none 0px;
-  text-decoration-color: rgb(200, 212, 230);
-}
-
-html[saved-theme="dark"] body .text-highlight {
-  background-color: rgba(0, 176, 179, 0.475);
-  color: rgb(255, 255, 255);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  outline: rgb(255, 255, 255) none 0px;
-  text-decoration-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body del {
-  color: rgb(200, 212, 230);
-  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  outline: rgb(200, 212, 230) none 0px;
-  text-decoration-color: rgb(200, 212, 230);
-}
-
-html[saved-theme="dark"] body h1.article-title {
-  color: rgb(200, 212, 230);
-  font-size: 14.3px;
-}
-
-html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
-  background-color: rgba(255, 77, 58, 0.1);
-  border-color: rgb(255, 77, 58);
-  border-radius: 14px;
-}
-
-html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgba(125, 207, 43, 0.1);
-  border-color: rgb(125, 207, 43);
-}
-
-html[saved-theme="dark"] body p {
-  color: rgb(154, 163, 183);
-  font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  outline: rgb(154, 163, 183) none 0px;
-  text-decoration-color: rgb(154, 163, 183);
-}`,
-    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
-  --resizer-size: 20px;
-  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
   --zoom-multiplier: 1;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(200, 212, 230);
@@ -1888,11 +2238,11 @@ html[saved-theme="dark"] body p {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(200, 212, 230);
+  color: var(--text-normal, rgb(200, 212, 230));
   content: "🡥";
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
   font-size: 13.6px;
-  font-weight: 500;
+  font-weight: var(--link-weight, 500);
   line-height: 32px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -1905,14 +2255,389 @@ html[saved-theme="dark"] body p {
   padding-top: 0px;
   text-decoration: underline 1.5px rgb(41, 49, 61);
   text-decoration-color: rgb(41, 49, 61);
-  text-decoration-thickness: 1.5px;
+  text-decoration-thickness: var(--link-decoration-thickness, 1.5px);
   transition: 0.25s;
 }
 
 html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+  --background-modifier-active-hover: hsla(181, 100%, 35%, 0.1);
+  --background-modifier-border: hsl(216, 20%, 20%);
+  --background-modifier-border-focus: hsl(218, 19%, 31%);
+  --background-modifier-border-hover: hsl(218, 19%, 27%);
+  --background-modifier-error: #ff4d3a;
+  --background-modifier-error-hover: #ff4d3a;
+  --background-modifier-error-rgb: 255, 77, 58;
+  --background-modifier-form-field: hsl(216, 20%, 20%);
+  --background-modifier-form-field-hover: hsl(216, 20%, 20%);
+  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-success: #7dcf2b;
+  --background-modifier-success-rgb: 125, 207, 43;
+  --background-primary: hsla(216, 16%, 13%, 100%);
+  --background-primary-alt: hsl(216, 17%, 14%);
+  --background-secondary: hsl(216, 19%, 16%);
+  --background-secondary-alt: hsl(218, 18%, 15%);
+  --blockquote-border-color: hsl(181, 100%, 35%);
+  --blur-background: color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent) linear-gradient(hsl(218, 18%, 15%), color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-background: hsl(
+    183,
+    105%,
+    39%
+  );
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-bug: 230, 106, 180;
+  --callout-default: 0, 155, 227;
+  --callout-error: 246, 156, 0;
+  --callout-example: 180, 90, 245;
+  --callout-fail: 255, 77, 58;
+  --callout-important: 0, 206, 203;
+  --callout-info: 0, 155, 227;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 232, 201, 0;
+  --callout-radius: 7px;
+  --callout-success: 125, 207, 43;
+  --callout-summary: 125, 207, 43;
+  --callout-tip: 232, 201, 0;
+  --callout-title-weight: 600;
+  --callout-todo: 0, 155, 227;
+  --callout-warning: 246, 156, 0;
+  --canvas-background: hsla(216, 16%, 13%, 100%);
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 1.3px;
+  --canvas-controls-radius: 7px;
+  --canvas-dot-pattern: hsl(218, 18%, 15%);
+  --caret-color: #c8d4e6;
+  --checkbox-border-color: #ff4d3a;
+  --checkbox-border-color-hover: hsl(220, 17%, 66%);
+  --checkbox-color: transparent;
+  --checkbox-color-hover: hsl(
+    177,
+    100%,
+    33%
+  );
+  --checkbox-marker-color: hsla(216, 16%, 13%, 100%);
+  --checkbox-radius: 14px;
+  --checkbox-size: 18px;
+  --checklist-done-color: hsl(220, 17%, 66%);
+  --clickable-icon-radius: 7px;
+  --code-background: hsl(216, 17%, 14%);
+  --code-border-color: hsl(216, 20%, 20%);
+  --code-bracket-background: rgba(255, 255, 255, 0.067);
+  --code-comment: hsl(219, 13%, 51%);
+  --code-function: #e8c900;
+  --code-important: #f69c00;
+  --code-keyword: #e66ab4;
+  --code-normal: #c8d4e6;
+  --code-operator: #ff4d3a;
+  --code-property: #00cecb;
+  --code-punctuation: hsl(220, 17%, 66%);
+  --code-radius: 7px;
+  --code-size: 0.875em;
+  --code-string: #7dcf2b;
+  --code-tag: #ff4d3a;
+  --code-value: #b45af5;
+  --collapse-icon-color: hsl(219, 13%, 51%);
+  --collapse-icon-color-collapsed: hsl(
+    177,
+    100%,
+    33%
+  );
+  --color-accent: hsl(181, 100%, 35%);
+  --color-accent-1: hsl(
+    177,
+    100%,
+    33%
+  );
+  --color-accent-2: hsl(
+    183,
+    105%,
+    39%
+  );
+  --color-accent-3: hsl(
+    216,
+    100%,
+    47%
+  );
+  --color-accent-hsl: 181, 100%, 35%;
+  --color-base-00: hsla(216, 16%, 13%, 100%);
+  --custom-doc-bg: hsl(
+    177,
+    100%,
+    33%
+  );
+  --divider-color: hsl(216, 20%, 20%);
+  --divider-color-hover: hsl(181, 100%, 35%);
+  --divider-vertical-height: 100%;
+  --doc-background: hsl(207, 24%, 22%);
+  --dropdown-background: hsl(218, 18%, 15%);
+  --dropdown-background-hover: hsl(218, 19%, 27%);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: hsl(218, 18%, 15%);
+  --flair-color: #c8d4e6;
+  --folder-1: "📒";
+  --folder-1-open: "📖";
+  --folder-2: "📑";
+  --folder-2-open: "📑";
+  --folder-3: "🔖";
+  --folder-3-open: "🔖";
+  --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-interface: '??', '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-mermaid: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-monospace: "DM Mono", monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-weight: var(--link-weight, 400);
+  --graph-line: hsl(218, 19%, 27%);
+  --graph-node: hsl(220, 17%, 66%);
+  --graph-node-attachment: #e8c900;
+  --graph-node-focused: hsl(
+    177,
+    100%,
+    33%
+  );
+  --graph-node-tag: #7dcf2b;
+  --graph-node-unresolved: hsl(219, 13%, 51%);
+  --graph-text: #c8d4e6;
+  --h1-color-custom: #00cecb;
+  --h1-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h1-style: normal;
+  --h1-variant: normal;
+  --h2-color-custom: #009be3;
+  --h2-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h2-style: normal;
+  --h2-variant: normal;
+  --h2-weight: 700;
+  --h3-color-custom: #b45af5;
+  --h3-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h3-style: normal;
+  --h3-variant: normal;
+  --h3-weight: 700;
+  --h4-color-custom: #e66ab4;
+  --h4-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h4-style: normal;
+  --h4-variant: normal;
+  --h4-weight: 700;
+  --h5-color-custom: #ff4d3a;
+  --h5-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h5-line-height: 1.5;
+  --h5-style: normal;
+  --h5-variant: normal;
+  --h5-weight: 700;
+  --h6-color-custom: #f69c00;
+  --h6-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h6-line-height: 1.5;
+  --h6-style: normal;
+  --h6-variant: normal;
+  --h6-weight: 700;
+  --heading-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --heading-font-2: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --heading-formatting: hsl(219, 13%, 51%);
+  --heading-spacing: 2.5rem;
+  --hr-color: hsl(216, 20%, 20%);
+  --interactive-accent: hsl(181, 100%, 35%);
+  --interactive-accent-hover: hsl(
+    177,
+    100%,
+    33%
+  );
+  --interactive-accent-hsl: 181, 100%, 35%;
+  --interactive-hover: hsl(218, 19%, 27%);
+  --interactive-normal: hsl(218, 18%, 15%);
+  --link-color: hsl(
+    177,
+    100%,
+    33%
+  );
+  --link-color-hover: hsl(
+    183,
+    105%,
+    39%
+  );
+  --link-external-color: hsl(
+    177,
+    100%,
+    33%
+  );
+  --link-external-color-hover: hsl(
+    183,
+    105%,
+    39%
+  );
+  --link-unresolved-color: hsl(219, 13%, 51%);
+  --link-unresolved-decoration-color: hsl(218, 19%, 27%);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: hsl(216, 19%, 16%);
+  --menu-border-color: hsl(218, 19%, 27%);
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 14px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --panel-child: hsl(216, 17%, 14%);
+  --pdf-background: hsla(216, 16%, 13%, 100%);
+  --pdf-page-background: hsla(216, 16%, 13%, 100%);
+  --pdf-shadow: 0 0 0 1px hsl(216, 20%, 20%);
+  --pdf-sidebar-background: hsla(216, 16%, 13%, 100%);
+  --pdf-thumbnail-shadow: 0 0 0 1px hsl(216, 20%, 20%);
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent) linear-gradient(hsl(218, 18%, 15%), color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
   --resizer-size: 20px;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 19px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: hsl(220, 17%, 66%);
+  --search-icon-color: hsl(220, 17%, 66%);
+  --search-result-background: hsla(216, 16%, 13%, 100%);
+  --setting-group-heading-color: #c8d4e6;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: hsl(216, 17%, 14%);
+  --setting-items-border-color: hsl(216, 20%, 20%);
+  --setting-items-padding: 20px;
+  --setting-items-radius: 19px;
   --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
   --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --shiki-active-tab-border-color: hsl(220, 17%, 66%);
+  --shiki-code-background: hsl(216, 17%, 14%);
+  --shiki-code-block-border-radius: 7px;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: hsl(219, 13%, 51%);
+  --shiki-code-function: #7dcf2b;
+  --shiki-code-important: #f69c00;
+  --shiki-code-keyword: #e66ab4;
+  --shiki-code-normal: hsl(220, 17%, 66%);
+  --shiki-code-property: #00cecb;
+  --shiki-code-punctuation: hsl(220, 17%, 66%);
+  --shiki-code-string: #e8c900;
+  --shiki-code-value: #b45af5;
+  --shiki-gutter-border-color: hsl(216, 20%, 20%);
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: hsl(219, 13%, 51%);
+  --shiki-gutter-text-color-highlight: hsl(220, 17%, 66%);
+  --shiki-highlight-green: rgba(125, 207, 43, 0.5);
+  --shiki-highlight-green-background: rgba(125, 207, 43, 0.1);
+  --shiki-highlight-neutral: hsl(220, 17%, 66%);
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
+  --shiki-highlight-red: rgba(255, 77, 58, 0.5);
+  --shiki-highlight-red-background: rgba(255, 77, 58, 0.1);
+  --shiki-terminal-dots-color: hsl(219, 13%, 51%);
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: hsla(216, 16%, 13%, 100%);
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --sync-avatar-color-1: #ff4d3a;
+  --sync-avatar-color-2: #f69c00;
+  --sync-avatar-color-3: #e8c900;
+  --sync-avatar-color-4: #7dcf2b;
+  --sync-avatar-color-5: #00cecb;
+  --sync-avatar-color-6: #009be3;
+  --sync-avatar-color-7: #b45af5;
+  --sync-avatar-color-8: #e66ab4;
+  --tab-background-active: hsl(218, 18%, 15%);
+  --tab-divider-color: transparent;
+  --tab-font-size: 13px;
+  --tab-outline-color: hsl(216, 20%, 20%);
+  --tab-radius: 7px;
+  --tab-radius-active: 7px;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: hsl(216, 19%, 16%);
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(216, 19%, 16%), transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(181, 100%, 35%);
+  --tab-text-color: hsl(219, 13%, 51%);
+  --tab-text-color-active: hsl(220, 17%, 66%);
+  --tab-text-color-focused: hsl(220, 17%, 66%);
+  --tab-text-color-focused-active: hsl(220, 17%, 66%);
+  --tab-text-color-focused-active-current: hsl(
+    177,
+    100%,
+    33%
+  );
+  --tab-text-color-focused-highlighted: hsl(
+    177,
+    100%,
+    33%
+  );
+  --table-add-button-border-color: hsl(216, 20%, 20%);
+  --table-add-button-border-width: 1px;
+  --table-background: hsl(218, 18%, 15%);
+  --table-border-color: hsl(216, 20%, 20%);
+  --table-column-alt-background: hsl(218, 18%, 15%);
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(181, 100%, 35%);
+  --table-drag-handle-color: hsl(219, 13%, 51%);
+  --table-drag-handle-color-active: white;
+  --table-header-background: hsl(218, 18%, 15%);
+  --table-header-border-color: hsl(216, 20%, 20%);
+  --table-header-border-width: 1px;
+  --table-header-color: #c8d4e6;
+  --table-header-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --table-header-size: 16px;
+  --table-header-weight: normal;
+  --table-line-height: 1.3;
+  --table-row-alt-background: hsl(218, 18%, 15%);
+  --table-row-alt-background-hover: hsl(218, 18%, 15%);
+  --table-row-background-hover: hsl(218, 18%, 15%);
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(181, 100%, 35%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(181, 100%, 35%);
+  --table-text-size: 16px;
+  --tag-background: hsla(181, 100%, 35%, 0.1);
+  --tag-background-hover: hsla(181, 100%, 35%, 0.2);
+  --tag-border-color: hsla(181, 100%, 35%, 0.15);
+  --tag-border-color-hover: hsla(181, 100%, 35%, 0.15);
+  --tag-color: hsl(
+    177,
+    100%,
+    33%
+  );
+  --tag-color-hover: hsl(
+    177,
+    100%,
+    33%
+  );
+  --tag-size: 0.875em;
+  --text-accent: hsl(
+    177,
+    100%,
+    33%
+  );
+  --text-accent-hover: hsl(
+    183,
+    105%,
+    39%
+  );
+  --text-error: #ff4d3a;
+  --text-faint: hsl(219, 13%, 51%);
+  --text-highlight-bg: hsla(181, 100%, 35%, 0.475);
+  --text-muted: hsl(220, 17%, 66%);
+  --text-normal: #c8d4e6;
+  --text-selection: hsla(181, 100%, 35%, 0.25);
+  --text-success: #7dcf2b;
+  --text-warning: #f69c00;
+  --tile-img-radius: 14px;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
   --zoom-multiplier: 1;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(0, 168, 160);
@@ -1927,11 +2652,11 @@ html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcr
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(0, 168, 160);
+  color: var(--link-color, rgb(0, 168, 160));
   content: "🡥";
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
   font-size: 13.6px;
-  font-weight: 500;
+  font-weight: var(--link-weight, 500);
   line-height: 32px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -1944,14 +2669,389 @@ html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcr
   padding-top: 0px;
   text-decoration: underline 1.5px rgb(41, 49, 61);
   text-decoration-color: rgb(41, 49, 61);
-  text-decoration-thickness: 1.5px;
+  text-decoration-thickness: var(--link-decoration-thickness, 1.5px);
   transition: 0.25s;
 }
 
 html[saved-theme="dark"] body a.internal-link.broken {
+  --background-modifier-active-hover: hsla(181, 100%, 35%, 0.1);
+  --background-modifier-border: hsl(216, 20%, 20%);
+  --background-modifier-border-focus: hsl(218, 19%, 31%);
+  --background-modifier-border-hover: hsl(218, 19%, 27%);
+  --background-modifier-error: #ff4d3a;
+  --background-modifier-error-hover: #ff4d3a;
+  --background-modifier-error-rgb: 255, 77, 58;
+  --background-modifier-form-field: hsl(216, 20%, 20%);
+  --background-modifier-form-field-hover: hsl(216, 20%, 20%);
+  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-success: #7dcf2b;
+  --background-modifier-success-rgb: 125, 207, 43;
+  --background-primary: hsla(216, 16%, 13%, 100%);
+  --background-primary-alt: hsl(216, 17%, 14%);
+  --background-secondary: hsl(216, 19%, 16%);
+  --background-secondary-alt: hsl(218, 18%, 15%);
+  --blockquote-border-color: hsl(181, 100%, 35%);
+  --blur-background: color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent) linear-gradient(hsl(218, 18%, 15%), color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-background: hsl(
+    183,
+    105%,
+    39%
+  );
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-bug: 230, 106, 180;
+  --callout-default: 0, 155, 227;
+  --callout-error: 246, 156, 0;
+  --callout-example: 180, 90, 245;
+  --callout-fail: 255, 77, 58;
+  --callout-important: 0, 206, 203;
+  --callout-info: 0, 155, 227;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 232, 201, 0;
+  --callout-radius: 7px;
+  --callout-success: 125, 207, 43;
+  --callout-summary: 125, 207, 43;
+  --callout-tip: 232, 201, 0;
+  --callout-title-weight: 600;
+  --callout-todo: 0, 155, 227;
+  --callout-warning: 246, 156, 0;
+  --canvas-background: hsla(216, 16%, 13%, 100%);
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 1.3px;
+  --canvas-controls-radius: 7px;
+  --canvas-dot-pattern: hsl(218, 18%, 15%);
+  --caret-color: #c8d4e6;
+  --checkbox-border-color: #ff4d3a;
+  --checkbox-border-color-hover: hsl(220, 17%, 66%);
+  --checkbox-color: transparent;
+  --checkbox-color-hover: hsl(
+    177,
+    100%,
+    33%
+  );
+  --checkbox-marker-color: hsla(216, 16%, 13%, 100%);
+  --checkbox-radius: 14px;
+  --checkbox-size: 18px;
+  --checklist-done-color: hsl(220, 17%, 66%);
+  --clickable-icon-radius: 7px;
+  --code-background: hsl(216, 17%, 14%);
+  --code-border-color: hsl(216, 20%, 20%);
+  --code-bracket-background: rgba(255, 255, 255, 0.067);
+  --code-comment: hsl(219, 13%, 51%);
+  --code-function: #e8c900;
+  --code-important: #f69c00;
+  --code-keyword: #e66ab4;
+  --code-normal: #c8d4e6;
+  --code-operator: #ff4d3a;
+  --code-property: #00cecb;
+  --code-punctuation: hsl(220, 17%, 66%);
+  --code-radius: 7px;
+  --code-size: 0.875em;
+  --code-string: #7dcf2b;
+  --code-tag: #ff4d3a;
+  --code-value: #b45af5;
+  --collapse-icon-color: hsl(219, 13%, 51%);
+  --collapse-icon-color-collapsed: hsl(
+    177,
+    100%,
+    33%
+  );
+  --color-accent: hsl(181, 100%, 35%);
+  --color-accent-1: hsl(
+    177,
+    100%,
+    33%
+  );
+  --color-accent-2: hsl(
+    183,
+    105%,
+    39%
+  );
+  --color-accent-3: hsl(
+    216,
+    100%,
+    47%
+  );
+  --color-accent-hsl: 181, 100%, 35%;
+  --color-base-00: hsla(216, 16%, 13%, 100%);
+  --custom-doc-bg: hsl(
+    177,
+    100%,
+    33%
+  );
+  --divider-color: hsl(216, 20%, 20%);
+  --divider-color-hover: hsl(181, 100%, 35%);
+  --divider-vertical-height: 100%;
+  --doc-background: hsl(207, 24%, 22%);
+  --dropdown-background: hsl(218, 18%, 15%);
+  --dropdown-background-hover: hsl(218, 19%, 27%);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: hsl(218, 18%, 15%);
+  --flair-color: #c8d4e6;
+  --folder-1: "📒";
+  --folder-1-open: "📖";
+  --folder-2: "📑";
+  --folder-2-open: "📑";
+  --folder-3: "🔖";
+  --folder-3-open: "🔖";
+  --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-interface: '??', '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-mermaid: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-monospace: "DM Mono", monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-weight: var(--link-weight, 400);
+  --graph-line: hsl(218, 19%, 27%);
+  --graph-node: hsl(220, 17%, 66%);
+  --graph-node-attachment: #e8c900;
+  --graph-node-focused: hsl(
+    177,
+    100%,
+    33%
+  );
+  --graph-node-tag: #7dcf2b;
+  --graph-node-unresolved: hsl(219, 13%, 51%);
+  --graph-text: #c8d4e6;
+  --h1-color-custom: #00cecb;
+  --h1-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h1-style: normal;
+  --h1-variant: normal;
+  --h2-color-custom: #009be3;
+  --h2-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h2-style: normal;
+  --h2-variant: normal;
+  --h2-weight: 700;
+  --h3-color-custom: #b45af5;
+  --h3-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h3-style: normal;
+  --h3-variant: normal;
+  --h3-weight: 700;
+  --h4-color-custom: #e66ab4;
+  --h4-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h4-style: normal;
+  --h4-variant: normal;
+  --h4-weight: 700;
+  --h5-color-custom: #ff4d3a;
+  --h5-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h5-line-height: 1.5;
+  --h5-style: normal;
+  --h5-variant: normal;
+  --h5-weight: 700;
+  --h6-color-custom: #f69c00;
+  --h6-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h6-line-height: 1.5;
+  --h6-style: normal;
+  --h6-variant: normal;
+  --h6-weight: 700;
+  --heading-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --heading-font-2: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --heading-formatting: hsl(219, 13%, 51%);
+  --heading-spacing: 2.5rem;
+  --hr-color: hsl(216, 20%, 20%);
+  --interactive-accent: hsl(181, 100%, 35%);
+  --interactive-accent-hover: hsl(
+    177,
+    100%,
+    33%
+  );
+  --interactive-accent-hsl: 181, 100%, 35%;
+  --interactive-hover: hsl(218, 19%, 27%);
+  --interactive-normal: hsl(218, 18%, 15%);
+  --link-color: hsl(
+    177,
+    100%,
+    33%
+  );
+  --link-color-hover: hsl(
+    183,
+    105%,
+    39%
+  );
+  --link-external-color: hsl(
+    177,
+    100%,
+    33%
+  );
+  --link-external-color-hover: hsl(
+    183,
+    105%,
+    39%
+  );
+  --link-unresolved-color: hsl(219, 13%, 51%);
+  --link-unresolved-decoration-color: hsl(218, 19%, 27%);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: hsl(216, 19%, 16%);
+  --menu-border-color: hsl(218, 19%, 27%);
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 14px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --panel-child: hsl(216, 17%, 14%);
+  --pdf-background: hsla(216, 16%, 13%, 100%);
+  --pdf-page-background: hsla(216, 16%, 13%, 100%);
+  --pdf-shadow: 0 0 0 1px hsl(216, 20%, 20%);
+  --pdf-sidebar-background: hsla(216, 16%, 13%, 100%);
+  --pdf-thumbnail-shadow: 0 0 0 1px hsl(216, 20%, 20%);
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent) linear-gradient(hsl(218, 18%, 15%), color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
   --resizer-size: 20px;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 19px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: hsl(220, 17%, 66%);
+  --search-icon-color: hsl(220, 17%, 66%);
+  --search-result-background: hsla(216, 16%, 13%, 100%);
+  --setting-group-heading-color: #c8d4e6;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: hsl(216, 17%, 14%);
+  --setting-items-border-color: hsl(216, 20%, 20%);
+  --setting-items-padding: 20px;
+  --setting-items-radius: 19px;
   --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
   --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --shiki-active-tab-border-color: hsl(220, 17%, 66%);
+  --shiki-code-background: hsl(216, 17%, 14%);
+  --shiki-code-block-border-radius: 7px;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: hsl(219, 13%, 51%);
+  --shiki-code-function: #7dcf2b;
+  --shiki-code-important: #f69c00;
+  --shiki-code-keyword: #e66ab4;
+  --shiki-code-normal: hsl(220, 17%, 66%);
+  --shiki-code-property: #00cecb;
+  --shiki-code-punctuation: hsl(220, 17%, 66%);
+  --shiki-code-string: #e8c900;
+  --shiki-code-value: #b45af5;
+  --shiki-gutter-border-color: hsl(216, 20%, 20%);
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: hsl(219, 13%, 51%);
+  --shiki-gutter-text-color-highlight: hsl(220, 17%, 66%);
+  --shiki-highlight-green: rgba(125, 207, 43, 0.5);
+  --shiki-highlight-green-background: rgba(125, 207, 43, 0.1);
+  --shiki-highlight-neutral: hsl(220, 17%, 66%);
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
+  --shiki-highlight-red: rgba(255, 77, 58, 0.5);
+  --shiki-highlight-red-background: rgba(255, 77, 58, 0.1);
+  --shiki-terminal-dots-color: hsl(219, 13%, 51%);
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: hsla(216, 16%, 13%, 100%);
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --sync-avatar-color-1: #ff4d3a;
+  --sync-avatar-color-2: #f69c00;
+  --sync-avatar-color-3: #e8c900;
+  --sync-avatar-color-4: #7dcf2b;
+  --sync-avatar-color-5: #00cecb;
+  --sync-avatar-color-6: #009be3;
+  --sync-avatar-color-7: #b45af5;
+  --sync-avatar-color-8: #e66ab4;
+  --tab-background-active: hsl(218, 18%, 15%);
+  --tab-divider-color: transparent;
+  --tab-font-size: 13px;
+  --tab-outline-color: hsl(216, 20%, 20%);
+  --tab-radius: 7px;
+  --tab-radius-active: 7px;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: hsl(216, 19%, 16%);
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(216, 19%, 16%), transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(181, 100%, 35%);
+  --tab-text-color: hsl(219, 13%, 51%);
+  --tab-text-color-active: hsl(220, 17%, 66%);
+  --tab-text-color-focused: hsl(220, 17%, 66%);
+  --tab-text-color-focused-active: hsl(220, 17%, 66%);
+  --tab-text-color-focused-active-current: hsl(
+    177,
+    100%,
+    33%
+  );
+  --tab-text-color-focused-highlighted: hsl(
+    177,
+    100%,
+    33%
+  );
+  --table-add-button-border-color: hsl(216, 20%, 20%);
+  --table-add-button-border-width: 1px;
+  --table-background: hsl(218, 18%, 15%);
+  --table-border-color: hsl(216, 20%, 20%);
+  --table-column-alt-background: hsl(218, 18%, 15%);
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(181, 100%, 35%);
+  --table-drag-handle-color: hsl(219, 13%, 51%);
+  --table-drag-handle-color-active: white;
+  --table-header-background: hsl(218, 18%, 15%);
+  --table-header-border-color: hsl(216, 20%, 20%);
+  --table-header-border-width: 1px;
+  --table-header-color: #c8d4e6;
+  --table-header-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --table-header-size: 16px;
+  --table-header-weight: normal;
+  --table-line-height: 1.3;
+  --table-row-alt-background: hsl(218, 18%, 15%);
+  --table-row-alt-background-hover: hsl(218, 18%, 15%);
+  --table-row-background-hover: hsl(218, 18%, 15%);
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(181, 100%, 35%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(181, 100%, 35%);
+  --table-text-size: 16px;
+  --tag-background: hsla(181, 100%, 35%, 0.1);
+  --tag-background-hover: hsla(181, 100%, 35%, 0.2);
+  --tag-border-color: hsla(181, 100%, 35%, 0.15);
+  --tag-border-color-hover: hsla(181, 100%, 35%, 0.15);
+  --tag-color: hsl(
+    177,
+    100%,
+    33%
+  );
+  --tag-color-hover: hsl(
+    177,
+    100%,
+    33%
+  );
+  --tag-size: 0.875em;
+  --text-accent: hsl(
+    177,
+    100%,
+    33%
+  );
+  --text-accent-hover: hsl(
+    183,
+    105%,
+    39%
+  );
+  --text-error: #ff4d3a;
+  --text-faint: hsl(219, 13%, 51%);
+  --text-highlight-bg: hsla(181, 100%, 35%, 0.475);
+  --text-muted: hsl(220, 17%, 66%);
+  --text-normal: #c8d4e6;
+  --text-selection: hsla(181, 100%, 35%, 0.25);
+  --text-success: #7dcf2b;
+  --text-warning: #f69c00;
+  --tile-img-radius: 14px;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
   --zoom-multiplier: 1;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(114, 125, 146);
@@ -1966,11 +3066,11 @@ html[saved-theme="dark"] body a.internal-link.broken {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(114, 125, 146);
+  color: var(--link-unresolved-color, rgb(114, 125, 146));
   content: "＋";
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
   font-size: 13.6px;
-  font-weight: 600;
+  font-weight: var(--link-weight, 600);
   line-height: 32px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -1982,8 +3082,8 @@ html[saved-theme="dark"] body a.internal-link.broken {
   padding-right: 0px;
   padding-top: 0px;
   text-decoration: underline 1.5px rgb(56, 65, 82);
-  text-decoration-color: rgb(56, 65, 82);
-  text-decoration-thickness: 1.5px;
+  text-decoration-color: var(--link-unresolved-decoration-color, rgb(56, 65, 82));
+  text-decoration-thickness: var(--link-decoration-thickness, 1.5px);
   transition: 0.25s;
 }`,
     lists: `html[saved-theme="dark"] body dd {
@@ -2009,12 +3109,12 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-color: rgb(200, 212, 230);
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
-  color: rgb(114, 125, 146);
+  color: var(--text-faint, rgb(114, 125, 146));
 }
 
 html[saved-theme="dark"] body blockquote {
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  font-style: italic;
+  font-style: var(--blockquote-font-style, italic);
   padding-bottom: 16px;
   padding-top: 16px;
 }`,
@@ -2034,11 +3134,11 @@ html[saved-theme="dark"] body table {
 }
 
 html[saved-theme="dark"] body tbody tr:nth-child(even) {
-  background-color: rgb(31, 36, 45);
+  background-color: var(--table-background, rgb(31, 36, 45));
 }
 
 html[saved-theme="dark"] body tbody tr:nth-child(odd) {
-  background-color: rgb(31, 36, 45);
+  background-color: var(--table-row-alt-background, rgb(31, 36, 45));
 }
 
 html[saved-theme="dark"] body td {
@@ -2046,24 +3146,24 @@ html[saved-theme="dark"] body td {
   border-left-color: rgb(41, 49, 61);
   border-right-color: rgb(41, 49, 61);
   border-top-color: rgb(41, 49, 61);
-  color: rgb(200, 212, 230);
+  color: var(--table-text-color, rgb(200, 212, 230));
 }
 
 html[saved-theme="dark"] body th {
-  background-color: rgb(33, 39, 49);
+  background-color: var(--background-secondary, rgb(33, 39, 49));
   border-bottom-color: rgb(41, 49, 61);
   border-left-color: rgb(41, 49, 61);
   border-right-color: rgb(41, 49, 61);
   border-top-color: rgb(41, 49, 61);
-  color: rgb(200, 212, 230);
-  font-weight: 400;
+  color: var(--table-header-color, rgb(200, 212, 230));
+  font-weight: var(--table-header-weight, 400);
 }
 
 html[saved-theme="dark"] body tr {
-  background-color: rgb(31, 36, 45);
+  background-color: var(--table-header-background, rgb(31, 36, 45));
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--code-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(154, 163, 183);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -2072,8 +3172,8 @@ html[saved-theme="dark"] body tr {
   border-top-color: rgb(154, 163, 183);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(154, 163, 183);
-  font-family: "DM Mono", monospace;
+  color: var(--ec-codeFg, rgb(154, 163, 183));
+  font-family: var(--ec-codeFontFml, "DM Mono", monospace);
   padding-bottom: 12px;
   padding-left: 0px;
   padding-right: 0px;
@@ -2081,7 +3181,7 @@ html[saved-theme="dark"] body tr {
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: rgb(30, 34, 42);
+  background-color: var(--code-background, rgb(30, 34, 42));
   border-bottom-color: rgb(41, 49, 61);
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -2132,7 +3232,7 @@ html[saved-theme="dark"] body img {
   border-top-color: rgb(200, 212, 230);
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 2px 0px, rgba(0, 0, 0, 0.18) 0px 3.4px 6.7px 0px, rgba(0, 0, 0, 0.3) 0px 15px 30px 0px;
+  box-shadow: var(--shadow-s, rgba(0, 0, 0, 0.12) 0px 1px 2px 0px, rgba(0, 0, 0, 0.18) 0px 3.4px 6.7px 0px, rgba(0, 0, 0, 0.3) 0px 15px 30px 0px);
   filter: brightness(0.9);
 }
 
@@ -2143,7 +3243,7 @@ html[saved-theme="dark"] body video {
   border-top-color: rgb(200, 212, 230);
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: rgb(30, 34, 42);
+  background-color: var(--background-primary-alt, rgb(30, 34, 42));
   border-bottom-color: rgb(154, 163, 183);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -2191,7 +3291,7 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-top-right-radius: 14px;
   margin-left: -27px;
   transition: 0.25s;
-  width: 18px;
+  width: var(--checkbox-size, 18px);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
@@ -2746,12 +3846,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -2759,8 +3858,8 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {
@@ -2768,9 +3867,9 @@ html[saved-theme="dark"] body .callout > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
-  --callout-color: 125, 207, 43;
+  --callout-color: var(--callout-summary, 125, 207, 43);
   background: rgb(31, 36, 45) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(31, 36, 45);
+  background-color: var(--background-secondary-alt, rgb(31, 36, 45));
   border-bottom-color: rgba(125, 207, 43, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -2789,12 +3888,11 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -2802,8 +3900,8 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-content {
@@ -2811,9 +3909,9 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
-  --callout-color: 230, 106, 180;
+  --callout-color: var(--callout-bug, 230, 106, 180);
   background: rgb(31, 36, 45) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(31, 36, 45);
+  background-color: var(--background-secondary-alt, rgb(31, 36, 45));
   border-bottom-color: rgba(230, 106, 180, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -2832,12 +3930,11 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -2845,8 +3942,8 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
@@ -2854,9 +3951,9 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
-  --callout-color: 246, 156, 0;
+  --callout-color: var(--callout-error, 246, 156, 0);
   background: rgb(31, 36, 45) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(31, 36, 45);
+  background-color: var(--background-secondary-alt, rgb(31, 36, 45));
   border-bottom-color: rgba(246, 156, 0, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -2875,12 +3972,11 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -2888,8 +3984,8 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content {
@@ -2897,9 +3993,9 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
-  --callout-color: 180, 90, 245;
+  --callout-color: var(--callout-example, 180, 90, 245);
   background: rgb(31, 36, 45) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(31, 36, 45);
+  background-color: var(--background-secondary-alt, rgb(31, 36, 45));
   border-bottom-color: rgba(180, 90, 245, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -2918,12 +4014,11 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -2931,8 +4026,8 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-content {
@@ -2940,9 +4035,9 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
-  --callout-color: 255, 77, 58;
+  --callout-color: var(--callout-fail, 255, 77, 58);
   background: rgb(31, 36, 45) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(31, 36, 45);
+  background-color: var(--background-secondary-alt, rgb(31, 36, 45));
   border-bottom-color: rgba(255, 77, 58, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -2961,12 +4056,11 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -2974,8 +4068,8 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-content {
@@ -2983,9 +4077,9 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
-  --callout-color: 0, 155, 227;
+  --callout-color: var(--callout-info, 0, 155, 227);
   background: rgb(31, 36, 45) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(31, 36, 45);
+  background-color: var(--background-secondary-alt, rgb(31, 36, 45));
   border-bottom-color: rgba(0, 155, 227, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -3004,12 +4098,11 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -3017,8 +4110,8 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
@@ -3026,9 +4119,9 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
-  --callout-color: 0, 155, 227;
+  --callout-color: var(--callout-default, 0, 155, 227);
   background: rgb(31, 36, 45) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(31, 36, 45);
+  background-color: var(--background-secondary-alt, rgb(31, 36, 45));
   border-bottom-color: rgba(0, 155, 227, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -3047,12 +4140,11 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -3060,8 +4152,8 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
@@ -3069,9 +4161,9 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
-  --callout-color: 232, 201, 0;
+  --callout-color: var(--callout-question, 232, 201, 0);
   background: rgb(31, 36, 45) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(31, 36, 45);
+  background-color: var(--background-secondary-alt, rgb(31, 36, 45));
   border-bottom-color: rgba(232, 201, 0, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -3090,12 +4182,11 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -3103,8 +4194,8 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-content {
@@ -3112,9 +4203,9 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background: rgb(31, 36, 45) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(31, 36, 45);
+  background-color: var(--background-secondary-alt, rgb(31, 36, 45));
   border-bottom-color: rgba(158, 158, 158, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -3133,12 +4224,11 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -3146,8 +4236,8 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content {
@@ -3155,9 +4245,9 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
-  --callout-color: 125, 207, 43;
+  --callout-color: var(--callout-success, 125, 207, 43);
   background: rgb(31, 36, 45) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(31, 36, 45);
+  background-color: var(--background-secondary-alt, rgb(31, 36, 45));
   border-bottom-color: rgba(125, 207, 43, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -3176,12 +4266,11 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -3189,8 +4278,8 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-content {
@@ -3198,9 +4287,9 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
-  --callout-color: 232, 201, 0;
+  --callout-color: var(--callout-tip, 232, 201, 0);
   background: rgb(31, 36, 45) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(31, 36, 45);
+  background-color: var(--background-secondary-alt, rgb(31, 36, 45));
   border-bottom-color: rgba(232, 201, 0, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -3219,12 +4308,11 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -3232,8 +4320,8 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
@@ -3241,9 +4329,9 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
-  --callout-color: 0, 155, 227;
+  --callout-color: var(--callout-todo, 0, 155, 227);
   background: rgb(31, 36, 45) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(31, 36, 45);
+  background-color: var(--background-secondary-alt, rgb(31, 36, 45));
   border-bottom-color: rgba(0, 155, 227, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -3262,12 +4350,11 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -3275,8 +4362,8 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
@@ -3284,9 +4371,9 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
-  --callout-color: 246, 156, 0;
+  --callout-color: var(--callout-warning, 246, 156, 0);
   background: rgb(31, 36, 45) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(31, 36, 45);
+  background-color: var(--background-secondary-alt, rgb(31, 36, 45));
   border-bottom-color: rgba(246, 156, 0, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -3305,12 +4392,11 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -3318,8 +4404,8 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] > .callout-content {
@@ -3387,12 +4473,12 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-left-color: rgb(41, 49, 61);
   border-right-color: rgb(41, 49, 61);
   border-top-color: rgb(41, 49, 61);
-  color: rgb(200, 212, 230);
+  color: var(--text-normal, rgb(200, 212, 230));
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: rgb(28, 32, 38);
+  background-color: var(--prompt-background, rgb(28, 32, 38));
   border-bottom-color: rgb(64, 75, 94);
   border-bottom-left-radius: 19px;
   border-bottom-right-radius: 19px;
@@ -3472,7 +4558,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(0, 176, 179, 0.1);
+  background-color: var(--pill-background, rgba(0, 176, 179, 0.1));
   border-bottom-color: rgba(0, 176, 179, 0.15);
   border-left-color: rgba(0, 176, 179, 0.15);
   border-right-color: rgba(0, 176, 179, 0.15);
@@ -3485,43 +4571,43 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
-  color: rgb(200, 212, 230);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--h1-color, rgb(200, 212, 230));
+  font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(200, 212, 230);
-  font-size: 40px;
+  color: var(--inline-title-color, rgb(200, 212, 230));
+  font-size: var(--inline-title-size, 40px);
 }
 
 html[saved-theme="dark"] body h2 {
-  color: rgb(200, 212, 230);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--h2-color, rgb(200, 212, 230));
+  font-family: var(--h2-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  color: rgb(200, 212, 230);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--inline-title-color, rgb(200, 212, 230));
+  font-family: var(--inline-title-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="dark"] body h3 {
-  color: rgb(200, 212, 230);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--h3-color, rgb(200, 212, 230));
+  font-family: var(--h3-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
-  color: rgb(200, 212, 230);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--h4-color, rgb(200, 212, 230));
+  font-family: var(--h4-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
-  color: rgb(200, 212, 230);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--h5-color, rgb(200, 212, 230));
+  font-family: var(--h5-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
-  color: rgb(200, 212, 230);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--h6-color, rgb(200, 212, 230));
+  font-family: var(--h6-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="dark"] body hr {
@@ -3531,7 +4617,7 @@ html[saved-theme="dark"] body hr {
   border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
-  --callout-color: 0, 155, 227;
+  --callout-color: var(--callout-default, 0, 155, 227);
   border-bottom-color: rgba(0, 155, 227, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -3555,13 +4641,13 @@ html[saved-theme="dark"] body hr {
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(154, 163, 183);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--nav-item-color, rgb(154, 163, 183));
+  font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(154, 163, 183);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--nav-item-color, rgb(154, 163, 183));
+  font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(200, 212, 230);
@@ -3575,16 +4661,16 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-color: rgb(154, 163, 183);
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  color: rgb(154, 163, 183);
+  color: var(--icon-color, rgb(154, 163, 183));
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: rgb(33, 39, 49);
+  background-color: var(--status-bar-background, rgb(33, 39, 49));
   border-bottom-color: rgb(41, 49, 61);
   border-left-color: rgb(41, 49, 61);
   border-right-color: rgb(41, 49, 61);
   border-top-color: rgb(41, 49, 61);
   border-top-left-radius: 14px;
-  color: rgb(154, 163, 183);
+  color: var(--status-bar-text-color, rgb(154, 163, 183));
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
@@ -3605,7 +4691,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(154, 163, 183);
+  color: var(--nav-item-color, rgb(154, 163, 183));
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3625,7 +4711,7 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(154, 163, 183);
+  color: var(--nav-item-color, rgb(154, 163, 183));
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -3643,7 +4729,7 @@ html[saved-theme="dark"] body ul.section-ul {
   border-top-color: rgb(154, 163, 183);
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  color: rgb(154, 163, 183);
+  color: var(--icon-color, rgb(154, 163, 183));
 }
 
 html[saved-theme="dark"] body .darkmode svg {
@@ -3663,7 +4749,7 @@ html[saved-theme="dark"] body .darkmode svg {
 }
 
 html[saved-theme="dark"] body .breadcrumb-element p {
-  color: rgb(114, 125, 146);
+  color: var(--text-faint, rgb(114, 125, 146));
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }`,
     canvas: `html[saved-theme="dark"] body .canvas-node {
@@ -3675,7 +4761,7 @@ html[saved-theme="dark"] body .canvas-node-content {
 }
 
 html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(200, 212, 230);
+  color: var(--text-normal, rgb(200, 212, 230));
 }
 
 html[saved-theme="dark"] body .canvas-node-group {
@@ -3683,21 +4769,21 @@ html[saved-theme="dark"] body .canvas-node-group {
 }
 
 html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(33, 39, 49);
+  background-color: var(--background-secondary, rgb(33, 39, 49));
   border-color: rgb(200, 212, 230);
 }`,
     bases: `html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
-  background-color: rgb(31, 36, 45);
+  background-color: var(--table-row-alt-background, rgb(31, 36, 45));
 }
 
 html[saved-theme="dark"] body .bases-table thead th {
-  background-color: rgb(33, 39, 49);
+  background-color: var(--background-secondary, rgb(33, 39, 49));
   border-color: rgb(41, 49, 61);
-  color: rgb(200, 212, 230);
-  font-weight: 400;
+  color: var(--table-header-color, rgb(200, 212, 230));
+  font-weight: var(--table-header-weight, 400);
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
-  background-color: rgb(31, 36, 45);
+  background-color: var(--background-secondary-alt, rgb(31, 36, 45));
   border-bottom-color: rgb(41, 49, 61);
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -3710,7 +4796,7 @@ html[saved-theme="dark"] body .bases-table thead th {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   border-top-width: 1px;
-  color: rgb(154, 163, 183);
+  color: var(--text-muted, rgb(154, 163, 183));
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -3728,7 +4814,7 @@ html[saved-theme="dark"] body .metadata-properties {
 }
 
 html[saved-theme="dark"] body .note-properties {
-  background-color: rgb(31, 36, 45);
+  background-color: var(--background-secondary-alt, rgb(31, 36, 45));
   border-color: rgb(41, 49, 61);
   border-radius: 7px;
 }
@@ -3742,8 +4828,8 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(0, 176, 179, 0.1);
-  color: rgb(0, 168, 160);
+  background-color: var(--pill-background, rgba(0, 176, 179, 0.1));
+  color: var(--pill-color, rgb(0, 168, 160));
 }
 
 html[saved-theme="dark"] body .note-properties-value {
@@ -3751,8 +4837,8 @@ html[saved-theme="dark"] body .note-properties-value {
 }
 
 html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(28, 32, 38);
-  color: rgb(200, 212, 230);
+  background-color: var(--background-primary, rgb(28, 32, 38));
+  color: var(--text-normal, rgb(200, 212, 230));
 }
 
 html[saved-theme="dark"] body ol.overflow {
@@ -3762,12 +4848,12 @@ html[saved-theme="dark"] body ol.overflow {
   border-top-color: rgb(200, 212, 230);
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(200, 212, 230);
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
 html[saved-theme="dark"] body .stacked-page.active {
@@ -3782,11 +4868,11 @@ html[saved-theme="dark"] body .stacked-page.active {
 }
 
 html[saved-theme="dark"] body .navigation-progress {
-  background-color: rgb(33, 39, 49);
+  background-color: var(--status-bar-background, rgb(33, 39, 49));
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
-  color: rgb(200, 212, 230);
+  color: var(--text-normal, rgb(200, 212, 230));
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
@@ -3806,12 +4892,12 @@ html[saved-theme="dark"] body input[type=text] {
   border-left-color: rgb(154, 163, 183);
   border-right-color: rgb(154, 163, 183);
   border-top-color: rgb(154, 163, 183);
-  color: rgb(154, 163, 183);
+  color: var(--text-normal, rgb(154, 163, 183));
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
 html[saved-theme="dark"] body kbd {
-  background-color: rgb(30, 34, 42);
+  background-color: var(--code-background, rgb(30, 34, 42));
   border-bottom-color: rgb(200, 212, 230);
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -3820,8 +4906,8 @@ html[saved-theme="dark"] body kbd {
   border-top-color: rgb(200, 212, 230);
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  color: rgb(200, 212, 230);
-  font-family: "DM Mono", monospace;
+  color: var(--code-normal, rgb(200, 212, 230));
+  font-family: var(--font-monospace, "DM Mono", monospace);
 }
 
 html[saved-theme="dark"] body progress {
@@ -3844,7 +4930,7 @@ html[saved-theme="dark"] body sup {
 }
 
 html[saved-theme="dark"] body ul.tags > li {
-  background-color: rgb(31, 36, 45);
+  background-color: var(--background-secondary-alt, rgb(31, 36, 45));
   border-bottom-color: rgb(41, 49, 61);
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -3857,7 +4943,7 @@ html[saved-theme="dark"] body ul.tags > li {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   border-top-width: 1px;
-  color: rgb(0, 168, 160);
+  color: var(--text-accent, rgb(0, 168, 160));
 }`,
   },
   light: {
@@ -3866,131 +4952,117 @@ html[saved-theme="dark"] body ul.tags > li {
   --accent-l: 35%;
   --accent-s: 100%;
   --anim-motion-swing: cubic-bezier(0.25, 0.05, 0.55, 0.95);
-  --background-modifier-active-hover: hsla(181, 100%, 35%, 0.1);
-  --background-modifier-border: #9f9f9f66;
-  --background-modifier-border-focus: #d7d7d7;
-  --background-modifier-border-hover: #dedede;
-  --background-modifier-error: #c75f54;
-  --background-modifier-error-hover: #c75f54;
-  --background-modifier-error-rgb: 255, 77, 58;
-  --background-modifier-form-field: hsla(0, 0%, 100%, 100%);
-  --background-modifier-form-field-hover: hsla(0, 0%, 100%, 100%);
-  --background-modifier-success: #8fb26b;
-  --background-modifier-success-rgb: 125, 207, 43;
-  --background-primary: hsla(0, 0%, 100%, 100%);
-  --background-primary-alt: #fdfdfd;
-  --background-secondary: hsl(0, 0%, 96%);
-  --bases-cards-background: hsla(0, 0%, 100%, 100%);
-  --bases-cards-cover-background: #fdfdfd;
-  --bases-cards-radius: 14px;
-  --bases-cards-shadow: 0 0 0 1px #9f9f9f66;
-  --bases-cards-shadow-hover: 0 0 0 1px #dedede;
-  --bases-embed-border-color: #9f9f9f66;
-  --bases-embed-border-radius: 7px;
-  --bases-group-heading-property-color: #7f7f7f;
-  --bases-table-border-color: #9f9f9f66;
-  --bases-table-cell-background-active: hsla(0, 0%, 100%, 100%);
-  --bases-table-cell-background-disabled: #fdfdfd;
-  --bases-table-cell-background-selected: hsla(181, 100%, 35%, 0.1);
-  --bases-table-cell-shadow-active: 0 0 0 2px #d7d7d7;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(
+  --background-modifier-border: var(--color-base-30, #9f9f9f66);
+  --background-modifier-border-focus: var(--color-base-40, #d7d7d7);
+  --background-modifier-border-hover: var(--color-base-35, #dedede);
+  --background-modifier-error: var(--color-red, #c75f54);
+  --background-modifier-error-hover: var(--color-red, #c75f54);
+  --background-modifier-error-rgb: var(--color-red-rgb, 255, 77, 58);
+  --background-modifier-form-field: var(--color-base-00, hsla(0, 0%, 100%, 100%));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, hsla(0, 0%, 100%, 100%));
+  --background-modifier-success: var(--color-green, #8fb26b);
+  --background-modifier-success-rgb: var(--color-green-rgb, 125, 207, 43);
+  --background-primary: var(--color-base-00, hsla(0, 0%, 100%, 100%));
+  --background-primary-alt: var(--color-base-10, #fdfdfd);
+  --background-secondary: var(--color-base-20, hsl(0, 0%, 96%));
+  --bases-cards-background: var(--background-primary, hsla(0, 0%, 100%, 100%));
+  --bases-cards-cover-background: var(--background-primary-alt, #fdfdfd);
+  --bases-cards-radius: var(--radius-m, 14px);
+  --bases-embed-border-color: var(--background-modifier-border, #9f9f9f66);
+  --bases-embed-border-radius: var(--radius-s, 7px);
+  --bases-group-heading-property-color: var(--text-muted, #7f7f7f);
+  --bases-table-border-color: var(--table-border-color, #9f9f9f66);
+  --bases-table-cell-background-active: var(--background-primary, hsla(0, 0%, 100%, 100%));
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #fdfdfd);
+  --bases-table-cell-background-selected: var(--table-selection, hsla(181, 100%, 35%, 0.1));
+  --bases-table-container-border-radius: var(--radius-s, 7px);
+  --bases-table-group-background: var(--background-primary-alt, #fdfdfd);
+  --bases-table-header-background: var(--background-primary, hsla(0, 0%, 100%, 100%));
+  --bases-table-header-color: var(--text-muted, #7f7f7f);
+  --bases-table-row-background-hover: var(--table-row-background-hover, #fcfcfc);
+  --bases-table-summary-background: var(--background-primary, hsla(0, 0%, 100%, 100%));
+  --blockquote-border-color: var(--interactive-accent, hsl(
     177,
     100%,
     33%
-  );
-  --bases-table-container-border-radius: 7px;
-  --bases-table-group-background: #fdfdfd;
-  --bases-table-header-background: hsla(0, 0%, 100%, 100%);
-  --bases-table-header-color: #7f7f7f;
-  --bases-table-row-background-hover: #fcfcfc;
-  --bases-table-summary-background: hsla(0, 0%, 100%, 100%);
-  --blockquote-border-color: hsl(
-    177,
-    100%,
-    33%
-  );
-  --blur-background: color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent) linear-gradient(hsla(0, 0%, 100%, 100%), color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent));
-  --bodyFont: var(--font-text, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
-  --button-background: hsl(
+  ));
+  --button-background: var(--color-accent-2, hsl(
     183,
     105%,
     39%
-  );
-  --callout-bug: 230, 106, 180;
-  --callout-default: 0, 155, 227;
-  --callout-error: 246, 156, 0;
-  --callout-example: 180, 90, 245;
-  --callout-fail: 255, 77, 58;
-  --callout-important: 0, 206, 203;
-  --callout-info: 0, 155, 227;
-  --callout-question: 232, 201, 0;
-  --callout-radius: 7px;
-  --callout-success: 125, 207, 43;
-  --callout-summary: 125, 207, 43;
-  --callout-tip: 232, 201, 0;
-  --callout-todo: 0, 155, 227;
-  --callout-warning: 246, 156, 0;
-  --canvas-background: hsla(0, 0%, 100%, 100%);
-  --canvas-card-label-color: #878787;
-  --canvas-color-1: 255, 77, 58;
-  --canvas-color-2: 246, 156, 0;
-  --canvas-color-3: 232, 201, 0;
-  --canvas-color-4: 125, 207, 43;
-  --canvas-color-5: 0, 206, 203;
-  --canvas-color-6: 180, 90, 245;
-  --canvas-controls-icon-stroke: 1.3px;
-  --canvas-controls-radius: 7px;
-  --canvas-dot-pattern: #9f9f9f66;
-  --caret-color: #252525;
-  --checkbox-border-color: #c75f54;
-  --checkbox-border-color-hover: #7f7f7f;
-  --checkbox-color: transparent;
-  --checkbox-color-hover: hsl(
+  ));
+  --callout-bug: var(--color-pink-rgb, 230, 106, 180);
+  --callout-default: var(--color-blue-rgb, 0, 155, 227);
+  --callout-error: var(--color-orange-rgb, 246, 156, 0);
+  --callout-example: var(--color-purple-rgb, 180, 90, 245);
+  --callout-fail: var(--color-red-rgb, 255, 77, 58);
+  --callout-important: var(--color-cyan-rgb, 0, 206, 203);
+  --callout-info: var(--color-blue-rgb, 0, 155, 227);
+  --callout-question: var(--color-yellow-rgb, 232, 201, 0);
+  --callout-radius: var(--radius-s, 7px);
+  --callout-success: var(--color-green-rgb, 125, 207, 43);
+  --callout-summary: var(--color-green-rgb, 125, 207, 43);
+  --callout-tip: var(--color-yellow-rgb, 232, 201, 0);
+  --callout-todo: var(--color-blue-rgb, 0, 155, 227);
+  --callout-warning: var(--color-orange-rgb, 246, 156, 0);
+  --canvas-background: var(--background-primary, hsla(0, 0%, 100%, 100%));
+  --canvas-card-label-color: var(--text-faint, #878787);
+  --canvas-color-1: var(--color-red-rgb, 255, 77, 58);
+  --canvas-color-2: var(--color-orange-rgb, 246, 156, 0);
+  --canvas-color-3: var(--color-yellow-rgb, 232, 201, 0);
+  --canvas-color-4: var(--color-green-rgb, 125, 207, 43);
+  --canvas-color-5: var(--color-cyan-rgb, 0, 206, 203);
+  --canvas-color-6: var(--color-purple-rgb, 180, 90, 245);
+  --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 1.3px);
+  --canvas-controls-radius: var(--radius-s, 7px);
+  --canvas-dot-pattern: var(--color-base-30, #9f9f9f66);
+  --caret-color: var(--text-normal, #252525);
+  --checkbox-border-color: var(--color-red, #c75f54);
+  --checkbox-border-color-hover: var(--text-muted, #7f7f7f);
+  --checkbox-color: var(--interactive-accent, transparent);
+  --checkbox-color-hover: var(--interactive-accent-hover, hsl(
     183,
     105%,
     39%
-  );
-  --checkbox-marker-color: hsla(0, 0%, 100%, 100%);
-  --checkbox-radius: 14px;
-  --checkbox-size: 18px;
-  --checklist-done-color: #7f7f7f;
+  ));
+  --checkbox-marker-color: var(--background-primary, hsla(0, 0%, 100%, 100%));
+  --checkbox-radius: var(--radius-m, 14px);
+  --checkbox-size: var(--font-text-size, 18px);
+  --checklist-done-color: var(--text-muted, #7f7f7f);
   --checklist-done-decoration: none;
-  --clickable-icon-radius: 7px;
-  --code-background: #fdfdfd;
-  --code-border-color: #9f9f9f66;
-  --code-comment: #878787;
-  --code-function: #dca931;
-  --code-important: #d08344;
-  --code-keyword: #ac7aaa;
-  --code-normal: #252525;
-  --code-operator: #c75f54;
-  --code-property: #49a7ba;
-  --code-punctuation: #7f7f7f;
-  --code-radius: 7px;
-  --code-string: #8fb26b;
-  --code-tag: #c75f54;
-  --code-value: #8076ad;
-  --codeFont: var(--font-monospace, "DM Mono", monospace);
-  --collapse-icon-color: #878787;
-  --collapse-icon-color-collapsed: hsl(181, 100%, 35%);
-  --color-accent: hsl(181, 100%, 35%);
+  --clickable-icon-radius: var(--radius-s, 7px);
+  --code-background: var(--background-primary-alt, #fdfdfd);
+  --code-border-color: var(--background-modifier-border, #9f9f9f66);
+  --code-comment: var(--text-faint, #878787);
+  --code-function: var(--color-yellow, #dca931);
+  --code-important: var(--color-orange, #d08344);
+  --code-keyword: var(--color-pink, #ac7aaa);
+  --code-normal: var(--text-normal, #252525);
+  --code-operator: var(--color-red, #c75f54);
+  --code-property: var(--color-cyan, #49a7ba);
+  --code-punctuation: var(--text-muted, #7f7f7f);
+  --code-radius: var(--radius-s, 7px);
+  --code-string: var(--color-green, #8fb26b);
+  --code-tag: var(--color-red, #c75f54);
+  --code-value: var(--color-purple, #8076ad);
+  --collapse-icon-color: var(--text-faint, #878787);
+  --collapse-icon-color-collapsed: var(--text-accent, hsl(181, 100%, 35%));
   --color-accent-1: hsl(
-    177,
-    100%,
-    33%
+    calc(var(--accent-h) - 4),
+    var(--accent-s),
+    calc(var(--accent-l) - 2%)
   );
   --color-accent-2: hsl(
-    183,
-    105%,
-    39%
+    calc(var(--accent-h) + 2),
+    calc(var(--accent-s) + 5%),
+    calc(var(--accent-l) + 4%)
   );
   --color-accent-3: hsl(
-    216,
-    100%,
-    47%
+    calc(var(--accent-h) + 35),
+    var(--accent-s),
+    calc(var(--accent-l) + 12%)
   );
-  --color-accent-hsl: 181, 100%, 35%;
-  --color-base-00: hsla(0, 0%, 100%, 100%);
+  --color-base-00: hsla(0, 0%, 100%, var(--page-transparency));
   --color-base-10: #fdfdfd;
   --color-base-100: #252525;
   --color-base-20: hsl(0, 0%, 96%);
@@ -4018,36 +5090,558 @@ html[saved-theme="dark"] body ul.tags > li {
   --color-yellow: #dca931;
   --color-yellow-rgb: 232, 201, 0;
   --custom-code-height: 1em;
+  --custom-doc-bg: var(--color-accent-1, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --custom-line-height: 2em;
+  --dark: var(--text-normal, var(--color-base-100, #252525));
+  --darkgray: var(--text-normal, var(--color-base-100, #252525));
+  --divider-color: var(--background-modifier-border, #9f9f9f66);
+  --divider-color-hover: var(--interactive-accent, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --doc-background: var(--doc-bg, hsl(181, 20%, 95%));
+  --doc-bg: hsl(181, 20%, 95%);
+  --dropdown-background: var(--interactive-normal, hsla(0, 0%, 100%, 100%));
+  --dropdown-background-hover: var(--interactive-hover, #fdfdfd);
+  --embed-border-left: none;
+  --file-emoji: "Noto Emoji";
+  --file-header-background: var(--background-primary, hsla(0, 0%, 100%, 100%));
+  --file-header-background-focused: var(--background-primary, hsla(0, 0%, 100%, 100%));
+  --file-header-font: var(--font-interface, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --file-line-width: 900px;
+  --flair-background: var(--interactive-normal, hsla(0, 0%, 100%, 100%));
+  --flair-color: var(--text-normal, #252525);
+  --folder-1: var(--normal-folder-1, "📒");
+  --folder-1-open: var(--normal-folder-1-open, "📖");
+  --folder-2: var(--normal-folder-2, "📑");
+  --folder-2-open: var(--normal-folder-2-open, "📑");
+  --folder-3: var(--normal-folder-3, "🔖");
+  --folder-3-open: var(--normal-folder-3-open, "🔖");
+  --folder-emoji: "Noto Emoji";
+  --folder-icon-size: 1.6em;
+  --folder-padding: 4px;
+  --font-default: var(--font-main), var(--font-emoji), Inter, sans-serif;
+  --font-emoji: "Noto Color Emoji";
+  --font-main: "Nunito Sans";
+  --font-mermaid: var(--font-text, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --footnote-divider-color: var(--metadata-divider-color, #9f9f9f66);
+  --footnote-id-color: var(--text-muted, #7f7f7f);
+  --footnote-id-color-no-occurrences: var(--text-faint, #878787);
+  --footnote-radius: var(--radius-s, 7px);
+  --google-font-color-notocoloremoji: colrv1;
+  --graph-node: var(--text-muted, #7f7f7f);
+  --graph-node-attachment: var(--color-yellow, #dca931);
+  --graph-node-focused: var(--text-accent, hsl(181, 100%, 35%));
+  --graph-node-tag: var(--color-green, #8fb26b);
+  --graph-node-unresolved: var(--text-faint, #878787);
+  --graph-text: var(--text-normal, #252525);
+  --gray: var(--text-muted, var(--color-base-70, #7f7f7f));
+  --h1-align: center;
+  --h1-color-custom: var(--color-cyan, #49a7ba);
+  --h1-font: var(--heading-font-2, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --h1-size: 2.2em;
+  --h1-style: var(--heading-style, normal);
+  --h1-variant: var(--heading-variant, normal);
+  --h1-weight: var(--heading-weight, 700);
+  --h2-color-custom: var(--color-blue, #4e8aa6);
+  --h2-font: var(--heading-font-2, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --h2-size: 1.87em;
+  --h2-style: var(--heading-style, normal);
+  --h2-variant: var(--heading-variant, normal);
+  --h2-weight: var(--heading-weight, 700);
+  --h3-color-custom: var(--color-purple, #8076ad);
+  --h3-font: var(--heading-font-2, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --h3-size: 1.57em;
+  --h3-style: var(--heading-style, normal);
+  --h3-variant: var(--heading-variant, normal);
+  --h3-weight: var(--heading-weight, 700);
+  --h4-color-custom: var(--color-pink, #ac7aaa);
+  --h4-font: var(--heading-font-2, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --h4-size: 1.35em;
+  --h4-style: var(--heading-style, normal);
+  --h4-variant: var(--heading-variant, normal);
+  --h4-weight: var(--heading-weight, 700);
+  --h5-color-custom: var(--color-red, #c75f54);
+  --h5-font: var(--heading-font-2, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --h5-size: 1.3em;
+  --h5-style: var(--heading-style, normal);
+  --h5-variant: var(--heading-variant, normal);
+  --h5-weight: var(--heading-weight, 700);
+  --h6-color-custom: var(--color-orange, #d08344);
+  --h6-font: var(--heading-font-2, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --h6-size: 1.1em;
+  --h6-style: var(--heading-style, normal);
+  --h6-variant: var(--heading-variant, normal);
+  --h6-weight: var(--heading-weight, 700);
+  --heading-font: "Merriweather Sans", "Book Antiqua", var(--font-default);
+  --heading-font-2: var(--heading-font), var(--font-default);
+  --heading-formatting: var(--text-faint, #878787);
+  --heading-style: normal;
+  --heading-variant: normal;
+  --heading-weight: 700;
+  --highlight-text: var(--text-normal, #252525);
+  --hr-color: var(--background-modifier-border, #9f9f9f66);
+  --icon-background: var(--background-secondary-alt, #fcfcfc);
+  --icon-color: var(--text-muted, #7f7f7f);
+  --icon-color-active: var(--text-accent, hsl(181, 100%, 35%));
+  --icon-color-focused: var(--text-normal, #252525);
+  --icon-color-hover: var(--text-muted, #7f7f7f);
+  --icon-emoji: "Noto Color Emoji";
+  --icon-l-stroke-width: 1.3px;
+  --icon-m-stroke-width: 1.3px;
+  --icon-s-stroke-width: 1.3px;
+  --icon-shadow: var(--shadow-ui) inset, var(--shadow-ui);
+  --icon-stroke: var(--icon-m-stroke-width, 1.3px);
+  --img-align: auto;
+  --img-bg-size: cover;
+  --img-blur: 3px;
+  --img-position-x: 50%;
+  --img-position-y: 50%;
+  --img-sat: 100%;
+  --inline-title-color: var(--text-normal, #252525);
+  --inline-title-font: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --inline-title-size: var(--h1-size, 2.5em);
+  --input-date-separator: var(--text-faint, #878787);
+  --input-placeholder-color: var(--text-faint, #878787);
+  --interactive-accent: var(--color-accent-1, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --interactive-accent-hover: var(--color-accent-2, hsl(
+    183,
+    105%,
+    39%
+  ));
+  --interactive-accent-hsl: var(--color-accent-hsl, 181, 100%, 35%);
+  --interactive-hover: var(--color-base-10, #fdfdfd);
+  --interactive-normal: var(--color-base-00, hsla(0, 0%, 100%, 100%));
+  --light: var(--background-primary, var(--color-base-00, hsla(0, 0%, 100%, 100%)));
+  --lightgray: var(--background-secondary, var(--color-base-20, hsl(0, 0%, 96%)));
+  --link-color: var(--text-accent, hsl(181, 100%, 35%));
+  --link-color-hover: var(--text-accent-hover, hsl(
+    183,
+    105%,
+    39%
+  ));
+  --link-external-color: var(--text-accent, hsl(181, 100%, 35%));
+  --link-external-color-hover: var(--text-accent-hover, hsl(
+    183,
+    105%,
+    39%
+  ));
+  --link-unresolved-color: var(--text-faint, #878787);
+  --link-unresolved-decoration-color: var(--background-modifier-border-hover, #dedede);
+  --list-bullet-size: 0.45em;
+  --list-marker-color: var(--color-cyan, #49a7ba);
+  --list-marker-color-collapsed: var(--text-accent, hsl(181, 100%, 35%));
+  --list-marker-color-hover: var(--color-yellow, #dca931);
+  --menu-background: var(--background-secondary, hsl(0, 0%, 96%));
+  --menu-border-color: var(--background-modifier-border-hover, #dedede);
+  --menu-radius: var(--radius-m, 14px);
+  --metadata-border-color: var(--background-modifier-border, #9f9f9f66);
+  --metadata-divider-color: var(--background-modifier-border, #9f9f9f66);
+  --metadata-input-font: var(--font-interface, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --metadata-input-text-color: var(--text-normal, #252525);
+  --metadata-label-font: var(--font-interface, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --metadata-label-text-color: var(--text-muted, #7f7f7f);
+  --metadata-label-text-color-hover: var(--text-muted, #7f7f7f);
+  --modal-background: var(--background-primary, hsla(0, 0%, 100%, 100%));
+  --modal-community-sidebar-width: 25em;
+  --modal-height: 100%;
+  --modal-max-height: 100;
+  --modal-max-width: 100%;
+  --modal-max-width-narrow: 75%;
+  --modal-radius: var(--radius-l, 0px);
+  --modal-width: 100%;
+  --nav-collapse-icon-color: var(--collapse-icon-color, #878787);
+  --nav-collapse-icon-color-collapsed: var(--text-faint, #878787);
+  --nav-heading-color: var(--text-normal, #252525);
+  --nav-heading-color-collapsed: var(--text-faint, #878787);
+  --nav-heading-color-collapsed-hover: var(--text-muted, #7f7f7f);
+  --nav-heading-color-hover: var(--text-normal, #252525);
+  --nav-indentation-guide-color: var(--indentation-guide-color, transparent);
+  --nav-indentation-guide-width: var(--indentation-guide-width, 0px);
+  --nav-item-color: var(--text-muted, #7f7f7f);
+  --nav-item-color-active: var(--text-normal, #252525);
+  --nav-item-color-highlighted: var(--text-accent, hsl(181, 100%, 35%));
+  --nav-item-color-hover: var(--text-normal, #252525);
+  --nav-item-color-selected: var(--text-normal, #252525);
+  --nav-item-radius: var(--radius-s, 7px);
+  --nav-tag-color: var(--text-faint, #878787);
+  --nav-tag-color-active: var(--text-muted, #7f7f7f);
+  --nav-tag-color-hover: var(--text-muted, #7f7f7f);
+  --nav-tag-radius: var(--radius-s, 7px);
+  --normal-folder-1: "📒";
+  --normal-folder-1-open: "📖";
+  --normal-folder-2: "📑";
+  --normal-folder-2-open: "📑";
+  --normal-folder-3: "🔖";
+  --normal-folder-3-open: "🔖";
+  --page-transparency: 100%;
+  --panel-child: var(--background-primary-alt, #fdfdfd);
+  --pdf-background: var(--background-primary, hsla(0, 0%, 100%, 100%));
+  --pdf-page-background: var(--background-primary, hsla(0, 0%, 100%, 100%));
+  --pdf-sidebar-background: var(--background-primary, hsla(0, 0%, 100%, 100%));
+  --pill-border-color: var(--background-modifier-border, #9f9f9f66);
+  --pill-border-color-hover: var(--background-modifier-border-hover, #dedede);
+  --pill-color: var(--text-muted, #7f7f7f);
+  --pill-color-hover: var(--text-normal, #252525);
+  --pill-color-remove: var(--text-faint, #878787);
+  --pill-color-remove-hover: var(--text-accent, hsl(181, 100%, 35%));
+  --prompt-background: var(--background-primary, hsla(0, 0%, 100%, 100%));
+  --radius-l: 19px;
+  --radius-m: 14px;
+  --radius-s: 7px;
+  --radius-x: 28px;
+  --raised-background: var(--blur-background, color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent) linear-gradient(hsla(0, 0%, 100%, 100%), color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent)));
+  --ribbon-background: var(--background-secondary, transparent);
+  --ribbon-background-collapsed: var(--background-primary, transparent);
+  --scrollbar-radius: var(--radius-l, 19px);
+  --search-clear-button-color: var(--text-muted, #7f7f7f);
+  --search-icon-color: var(--text-muted, #7f7f7f);
+  --search-result-background: var(--background-primary, hsla(0, 0%, 100%, 100%));
+  --secondary: var(--text-accent, var(--color-accent, hsl(181, 100%, 35%)));
+  --setting-group-heading-color: var(--text-normal, #252525);
+  --setting-items-background: var(--background-primary-alt, #fdfdfd);
+  --setting-items-border-color: var(--background-modifier-border, #9f9f9f66);
+  --setting-items-radius: var(--radius-l, 19px);
+  --shadow-color: var(--background-secondary, hsl(0, 0%, 96%));
+  --shadow-ui: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, #7f7f7f);
+  --shiki-code-background: var(--code-background, #fdfdfd);
+  --shiki-code-block-border-radius: var(--code-radius, 7px);
+  --shiki-code-comment: var(--text-faint, #878787);
+  --shiki-code-function: var(--color-green, #8fb26b);
+  --shiki-code-important: var(--color-orange, #d08344);
+  --shiki-code-keyword: var(--color-pink, #ac7aaa);
+  --shiki-code-normal: var(--text-muted, #7f7f7f);
+  --shiki-code-property: var(--color-cyan, #49a7ba);
+  --shiki-code-punctuation: var(--text-muted, #7f7f7f);
+  --shiki-code-string: var(--color-yellow, #dca931);
+  --shiki-code-value: var(--color-purple, #8076ad);
+  --shiki-gutter-border-color: var(--background-modifier-border, #9f9f9f66);
+  --shiki-gutter-text-color: var(--text-faint, #878787);
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, #7f7f7f);
+  --shiki-highlight-neutral: var(--shiki-code-normal, #7f7f7f);
+  --shiki-terminal-dots-color: var(--text-faint, #878787);
+  --slider-thumb-border-color: var(--background-modifier-border-hover, #dedede);
+  --slider-track-background: var(--background-modifier-border, #9f9f9f66);
+  --slider-track-height: 1.2px;
+  --status-bar-background: var(--background-secondary, hsl(0, 0%, 96%));
+  --status-bar-border-color: var(--divider-color, #9f9f9f66);
+  --status-bar-radius: var(--radius-m, 14px 0 0 0) 0 0 0;
+  --status-bar-text-color: var(--text-muted, #7f7f7f);
+  --suggestion-background: var(--background-primary, hsla(0, 0%, 100%, 100%));
+  --sync-avatar-color-1: var(--color-red, #c75f54);
+  --sync-avatar-color-2: var(--color-orange, #d08344);
+  --sync-avatar-color-3: var(--color-yellow, #dca931);
+  --sync-avatar-color-4: var(--color-green, #8fb26b);
+  --sync-avatar-color-5: var(--color-cyan, #49a7ba);
+  --sync-avatar-color-6: var(--color-blue, #4e8aa6);
+  --sync-avatar-color-7: var(--color-purple, #8076ad);
+  --sync-avatar-color-8: var(--color-pink, #ac7aaa);
+  --tab-background-active: var(--background-secondary-alt, #fcfcfc);
+  --tab-container-background: var(--background-secondary, hsl(0, 0%, 96%));
+  --tab-curve: 0px;
+  --tab-divider-color: var(--background-modifier-border-hover, transparent);
+  --tab-outline-color: var(--divider-color, #9f9f9f66);
+  --tab-outline-width: 0.8px;
+  --tab-radius: var(--radius-s, 7px);
+  --tab-radius-active: var(--radius-s, 7px);
+  --tab-switcher-background: var(--background-secondary, hsl(0, 0%, 96%));
+  --tab-text-color: var(--text-faint, #878787);
+  --tab-text-color-active: var(--text-muted, #7f7f7f);
+  --tab-text-color-focused: var(--text-muted, #7f7f7f);
+  --tab-text-color-focused-active: var(--text-muted, #7f7f7f);
+  --tab-text-color-focused-active-current: var(--color-accent-1, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(181, 100%, 35%));
+  --table-add-button-border-color: var(--background-modifier-border, #9f9f9f66);
+  --table-background: var(--background-secondary-alt, #fcfcfc);
+  --table-border-color: var(--background-modifier-border, #9f9f9f66);
+  --table-column-alt-background: var(--table-background, #fcfcfc);
+  --table-drag-handle-background-active: var(--table-selection-border-color, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --table-drag-handle-color: var(--text-faint, #878787);
+  --table-header-background: var(--table-background, #fcfcfc);
+  --table-header-border-color: var(--table-border-color, #9f9f9f66);
+  --table-header-color: var(--text-normal, #252525);
+  --table-header-font: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  --table-row-alt-background: var(--table-background, #fcfcfc);
+  --table-row-alt-background-hover: var(--table-background, #fcfcfc);
+  --table-row-background-hover: var(--table-background, #fcfcfc);
+  --table-selection-border-color: var(--interactive-accent, hsl(
+    177,
+    100%,
+    33%
+  ));
+  --tag-color: var(--text-accent, hsl(181, 100%, 35%));
+  --tag-color-hover: var(--text-accent, hsl(181, 100%, 35%));
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, hsl(
+    183,
+    105%,
+    39%
+  )));
+  --text-accent: var(--color-accent, hsl(181, 100%, 35%));
+  --text-accent-hover: var(--color-accent-2, hsl(
+    183,
+    105%,
+    39%
+  ));
+  --text-error: var(--color-red, #c75f54);
+  --text-faint: var(--color-base-50, #878787);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-muted: var(--color-base-70, #7f7f7f);
+  --text-normal: var(--color-base-100, #252525);
+  --text-success: var(--color-green, #8fb26b);
+  --text-warning: var(--color-orange, #d08344);
+  --tile-field-padding: 5px;
+  --tile-img-radius: var(--tile-radius, 14px);
+  --tile-padding: 8px;
+  --tile-radius: 14px;
+  --titlebar-background: var(--background-secondary, hsl(0, 0%, 96%));
+  --titlebar-border-color: var(--background-modifier-border, #9f9f9f66);
+  --titlebar-text-color: var(--text-muted, #7f7f7f);
+  --titlebar-text-color-focused: var(--text-normal, #252525);
+  --vault-font: "Noto Emoji";
+  --vault-icon: "💎";
+  --vault-name-font-size: var(--h3-size, 1.57em);
+  --vault-name-font-weight: var(--h2-weight, 700);
+  --vault-profile-color: var(--text-normal, #252525);
+  --vault-profile-color-hover: var(--vault-profile-color, #252525);
+  --quartz-icon-color: currentColor;
+}
+
+html[saved-theme="light"] body {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  background-color: var(--tab-container-background, rgb(245, 245, 245));
+  color: rgb(37, 37, 37);
+}
+
+html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
+  color: rgb(37, 37, 37);
+}
+
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: rgb(37, 37, 37);
+}
+
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
+  border-right-color: rgba(159, 159, 159, 0.4);
+  border-right-width: 0px;
+}
+
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  background-color: var(--tab-container-background, rgb(245, 245, 245));
+  border-left-color: rgba(159, 159, 159, 0.4);
+  color: rgb(37, 37, 37);
+}`,
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
+  color: var(--bold-color, rgb(37, 37, 37));
+  font-family: var(--bold-font, "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  outline: rgb(37, 37, 37) none 0px;
+  text-decoration-color: rgb(37, 37, 37);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
+  color: var(--italic-color, rgb(37, 37, 37));
+  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  outline: rgb(37, 37, 37) none 0px;
+  text-decoration-color: rgb(37, 37, 37);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--italic-color, rgb(37, 37, 37));
+  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  outline: rgb(37, 37, 37) none 0px;
+  text-decoration-color: rgb(37, 37, 37);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
+  color: var(--bold-color, rgb(37, 37, 37));
+  font-family: var(--bold-font, "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  outline: rgb(37, 37, 37) none 0px;
+  text-decoration-color: rgb(37, 37, 37);
+}
+
+html[saved-theme="light"] body .text-highlight {
+  background-color: var(--text-highlight-bg, rgba(255, 200, 0, 0.46));
+  color: var(--highlight-text, rgb(37, 37, 37));
+  font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  outline: rgb(37, 37, 37) none 0px;
+  text-decoration-color: rgb(37, 37, 37);
+}
+
+html[saved-theme="light"] body del {
+  color: rgb(37, 37, 37);
+  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  outline: rgb(37, 37, 37) none 0px;
+  text-decoration-color: rgb(37, 37, 37);
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: var(--text-normal, rgb(37, 37, 37));
+  font-size: var(--h6-size, 14.3px);
+}
+
+html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
+  background-color: rgba(var(--color-red-rgb), 0.1);
+  border-color: rgb(199, 95, 84);
+  border-radius: 14px;
+}
+
+html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgba(var(--color-green-rgb), 0.1);
+  border-color: rgb(143, 178, 107);
+}
+
+html[saved-theme="light"] body p {
+  color: var(--text-muted, rgb(127, 127, 127));
+  font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  outline: rgb(127, 127, 127) none 0px;
+  text-decoration-color: rgb(127, 127, 127);
+}`,
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
+  --background-modifier-active-hover: hsla(181, 100%, 35%, 0.1);
+  --background-modifier-border: #9f9f9f66;
+  --background-modifier-border-focus: #d7d7d7;
+  --background-modifier-border-hover: #dedede;
+  --background-modifier-error: #c75f54;
+  --background-modifier-error-hover: #c75f54;
+  --background-modifier-error-rgb: 255, 77, 58;
+  --background-modifier-form-field: hsla(0, 0%, 100%, 100%);
+  --background-modifier-form-field-hover: hsla(0, 0%, 100%, 100%);
+  --background-modifier-hover: rgba(0, 0, 0, 0.067);
+  --background-modifier-success: #8fb26b;
+  --background-modifier-success-rgb: 125, 207, 43;
+  --background-primary: hsla(0, 0%, 100%, 100%);
+  --background-primary-alt: #fdfdfd;
+  --background-secondary: hsl(0, 0%, 96%);
+  --background-secondary-alt: #fcfcfc;
+  --blockquote-border-color: hsl(
+    177,
+    100%,
+    33%
+  );
+  --blur-background: color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent) linear-gradient(hsla(0, 0%, 100%, 100%), color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-background: hsl(
+    183,
+    105%,
+    39%
+  );
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: darken;
+  --callout-bug: 230, 106, 180;
+  --callout-default: 0, 155, 227;
+  --callout-error: 246, 156, 0;
+  --callout-example: 180, 90, 245;
+  --callout-fail: 255, 77, 58;
+  --callout-important: 0, 206, 203;
+  --callout-info: 0, 155, 227;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 232, 201, 0;
+  --callout-radius: 7px;
+  --callout-success: 125, 207, 43;
+  --callout-summary: 125, 207, 43;
+  --callout-tip: 232, 201, 0;
+  --callout-title-weight: 600;
+  --callout-todo: 0, 155, 227;
+  --callout-warning: 246, 156, 0;
+  --canvas-background: hsla(0, 0%, 100%, 100%);
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 1.3px;
+  --canvas-controls-radius: 7px;
+  --canvas-dot-pattern: #9f9f9f66;
+  --caret-color: #252525;
+  --checkbox-border-color: #c75f54;
+  --checkbox-border-color-hover: #7f7f7f;
+  --checkbox-color: transparent;
+  --checkbox-color-hover: hsl(
+    183,
+    105%,
+    39%
+  );
+  --checkbox-marker-color: hsla(0, 0%, 100%, 100%);
+  --checkbox-radius: 14px;
+  --checkbox-size: 18px;
+  --checklist-done-color: #7f7f7f;
+  --clickable-icon-radius: 7px;
+  --code-background: #fdfdfd;
+  --code-border-color: #9f9f9f66;
+  --code-bracket-background: rgba(0, 0, 0, 0.067);
+  --code-comment: #878787;
+  --code-function: #dca931;
+  --code-important: #d08344;
+  --code-keyword: #ac7aaa;
+  --code-normal: #252525;
+  --code-operator: #c75f54;
+  --code-property: #49a7ba;
+  --code-punctuation: #7f7f7f;
+  --code-radius: 7px;
+  --code-size: 0.875em;
+  --code-string: #8fb26b;
+  --code-tag: #c75f54;
+  --code-value: #8076ad;
+  --collapse-icon-color: #878787;
+  --collapse-icon-color-collapsed: hsl(181, 100%, 35%);
+  --color-accent: hsl(181, 100%, 35%);
+  --color-accent-1: hsl(
+    177,
+    100%,
+    33%
+  );
+  --color-accent-2: hsl(
+    183,
+    105%,
+    39%
+  );
+  --color-accent-3: hsl(
+    216,
+    100%,
+    47%
+  );
+  --color-accent-hsl: 181, 100%, 35%;
+  --color-base-00: hsla(0, 0%, 100%, 100%);
   --custom-doc-bg: hsl(
     177,
     100%,
     33%
   );
-  --custom-line-height: 2em;
-  --dark: var(--text-normal, #252525);
-  --darkgray: var(--text-normal, #252525);
   --divider-color: #9f9f9f66;
   --divider-color-hover: hsl(
     177,
     100%,
     33%
   );
+  --divider-vertical-height: 100%;
   --doc-background: hsl(181, 20%, 95%);
-  --doc-bg: hsl(181, 20%, 95%);
   --dropdown-background: hsla(0, 0%, 100%, 100%);
   --dropdown-background-hover: #fdfdfd;
-  --embed-block-shadow-hover: 0 0 0 1px #9f9f9f66, inset 0 0 0 1px #9f9f9f66;
-  --embed-border-left: none;
-  --embed-border-start: 2px solid hsl(
-    177,
-    100%,
-    33%
-  );
-  --file-emoji: "Noto Emoji";
-  --file-header-background: hsla(0, 0%, 100%, 100%);
-  --file-header-background-focused: hsla(0, 0%, 100%, 100%);
-  --file-header-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --file-line-width: 900px;
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsla(0, 0%, 100%, 100%);
   --flair-color: #252525;
   --folder-1: "📒";
@@ -4056,21 +5650,13 @@ html[saved-theme="dark"] body ul.tags > li {
   --folder-2-open: "📑";
   --folder-3: "🔖";
   --folder-3-open: "🔖";
-  --folder-emoji: "Noto Emoji";
-  --folder-icon-size: 1.6em;
-  --folder-padding: 4px;
   --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --font-emoji: "Noto Color Emoji";
-  --font-interface: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --font-main: "Nunito Sans";
-  --font-mermaid: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-interface: '??', '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-mermaid: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --font-monospace: "DM Mono", monospace;
-  --font-text: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --footnote-divider-color: #9f9f9f66;
-  --footnote-id-color: #7f7f7f;
-  --footnote-id-color-no-occurrences: #878787;
-  --footnote-radius: 7px;
-  --google-font-color-notocoloremoji: colrv1;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-weight: var(--link-weight, 400);
   --graph-line: #dedede;
   --graph-node: #7f7f7f;
   --graph-node-attachment: #dca931;
@@ -4078,64 +5664,42 @@ html[saved-theme="dark"] body ul.tags > li {
   --graph-node-tag: #8fb26b;
   --graph-node-unresolved: #878787;
   --graph-text: #252525;
-  --gray: var(--text-muted, #7f7f7f);
-  --h1-align: center;
   --h1-color-custom: #49a7ba;
   --h1-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --h1-size: 2.2em;
+  --h1-style: normal;
+  --h1-variant: normal;
   --h2-color-custom: #4e8aa6;
   --h2-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --h2-size: 1.87em;
+  --h2-style: normal;
+  --h2-variant: normal;
   --h2-weight: 700;
   --h3-color-custom: #8076ad;
   --h3-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --h3-size: 1.57em;
+  --h3-style: normal;
+  --h3-variant: normal;
   --h3-weight: 700;
   --h4-color-custom: #ac7aaa;
   --h4-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --h4-size: 1.35em;
+  --h4-style: normal;
+  --h4-variant: normal;
   --h4-weight: 700;
   --h5-color-custom: #c75f54;
   --h5-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --h5-size: 1.3em;
+  --h5-line-height: 1.5;
+  --h5-style: normal;
+  --h5-variant: normal;
   --h5-weight: 700;
   --h6-color-custom: #d08344;
   --h6-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --h6-size: 1.1em;
+  --h6-line-height: 1.5;
+  --h6-style: normal;
+  --h6-variant: normal;
   --h6-weight: 700;
-  --headerFont: var(--font-text, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
   --heading-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --heading-font-2: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --heading-formatting: #878787;
-  --heading-style: normal;
-  --heading-variant: normal;
-  --heading-weight: 700;
-  --highlight: var(--text-highlight-bg, rgba(255, 200, 0, 0.459));
-  --highlight-text: #252525;
+  --heading-spacing: 2.5rem;
   --hr-color: #9f9f9f66;
-  --icon-background: #fcfcfc;
-  --icon-color: #7f7f7f;
-  --icon-color-active: hsl(181, 100%, 35%);
-  --icon-color-focused: #252525;
-  --icon-color-hover: #7f7f7f;
-  --icon-emoji: "Noto Color Emoji";
-  --icon-l-stroke-width: 1.3px;
-  --icon-m-stroke-width: 1.3px;
-  --icon-s-stroke-width: 1.3px;
-  --icon-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) inset, 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042);
-  --icon-stroke: 1.3px;
-  --img-align: auto;
-  --img-bg-size: cover;
-  --img-blur: 3px;
-  --img-position-x: 50%;
-  --img-position-y: 50%;
-  --img-sat: 100%;
-  --indentation-guide-color: transparent;
-  --inline-title-color: #252525;
-  --inline-title-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --inline-title-size: 2.5em;
-  --input-date-separator: #878787;
-  --input-placeholder-color: #878787;
   --interactive-accent: hsl(
     177,
     100%,
@@ -4149,8 +5713,6 @@ html[saved-theme="dark"] body ul.tags > li {
   --interactive-accent-hsl: 181, 100%, 35%;
   --interactive-hover: #fdfdfd;
   --interactive-normal: hsla(0, 0%, 100%, 100%);
-  --light: var(--background-primary, hsla(0, 0%, 100%, 100%));
-  --lightgray: var(--background-secondary, hsl(0, 0%, 96%));
   --link-color: hsl(181, 100%, 35%);
   --link-color-hover: hsl(
     183,
@@ -4165,90 +5727,43 @@ html[saved-theme="dark"] body ul.tags > li {
   );
   --link-unresolved-color: #878787;
   --link-unresolved-decoration-color: #dedede;
-  --list-bullet-size: 0.45em;
-  --list-marker-color: #49a7ba;
-  --list-marker-color-collapsed: hsl(181, 100%, 35%);
-  --list-marker-color-hover: #dca931;
+  --link-weight: 400;
+  --list-indent: 2.25em;
   --menu-background: hsl(0, 0%, 96%);
   --menu-border-color: #dedede;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
   --menu-radius: 14px;
-  --metadata-border-color: #9f9f9f66;
-  --metadata-divider-color: #9f9f9f66;
-  --metadata-input-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --metadata-input-text-color: #252525;
-  --metadata-label-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --metadata-label-text-color: #7f7f7f;
-  --metadata-label-text-color-hover: #7f7f7f;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #d7d7d7;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #dedede;
-  --modal-background: hsla(0, 0%, 100%, 100%);
-  --modal-border-color: #d7d7d7;
-  --modal-community-sidebar-width: 25em;
-  --modal-height: 100%;
-  --modal-max-height: 100;
-  --modal-max-width: 100%;
-  --modal-max-width-narrow: 75%;
-  --modal-radius: 0px;
-  --modal-width: 100%;
-  --nav-collapse-icon-color: #878787;
-  --nav-collapse-icon-color-collapsed: #878787;
-  --nav-heading-color: #252525;
-  --nav-heading-color-collapsed: #878787;
-  --nav-heading-color-collapsed-hover: #7f7f7f;
-  --nav-heading-color-hover: #252525;
-  --nav-indentation-guide-color: transparent;
-  --nav-indentation-guide-width: 0px;
-  --nav-item-background-selected: hsla(181, 100%, 35%, 0.15);
-  --nav-item-color: #7f7f7f;
-  --nav-item-color-active: #252525;
-  --nav-item-color-highlighted: hsl(181, 100%, 35%);
-  --nav-item-color-hover: #252525;
-  --nav-item-color-selected: #252525;
-  --nav-item-radius: 7px;
-  --nav-tag-color: #878787;
-  --nav-tag-color-active: #7f7f7f;
-  --nav-tag-color-hover: #7f7f7f;
-  --nav-tag-radius: 7px;
-  --normal-folder-1: "📒";
-  --normal-folder-1-open: "📖";
-  --normal-folder-2: "📑";
-  --normal-folder-2-open: "📑";
-  --normal-folder-3: "🔖";
-  --normal-folder-3-open: "🔖";
-  --page-transparency: 100%;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
   --panel-child: #fdfdfd;
   --pdf-background: hsla(0, 0%, 100%, 100%);
   --pdf-page-background: hsla(0, 0%, 100%, 100%);
   --pdf-sidebar-background: hsla(0, 0%, 100%, 100%);
-  --pill-border-color: #9f9f9f66;
-  --pill-border-color-hover: #dedede;
-  --pill-color: #7f7f7f;
-  --pill-color-hover: #252525;
-  --pill-color-remove: #878787;
-  --pill-color-remove-hover: hsl(181, 100%, 35%);
-  --prompt-background: hsla(0, 0%, 100%, 100%);
-  --prompt-border-color: #d7d7d7;
-  --radius-l: 19px;
-  --radius-m: 14px;
-  --radius-s: 7px;
-  --radius-x: 28px;
+  --popover-font-size: 16px;
   --raised-background: color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent) linear-gradient(hsla(0, 0%, 100%, 100%), color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent));
-  --ribbon-background: transparent;
-  --ribbon-background-collapsed: transparent;
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --resizer-size: 20px;
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
   --scrollbar-radius: 19px;
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
   --search-clear-button-color: #7f7f7f;
   --search-icon-color: #7f7f7f;
   --search-result-background: hsla(0, 0%, 100%, 100%);
-  --secondary: var(--text-accent, hsl(181, 100%, 35%));
   --setting-group-heading-color: #252525;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
   --setting-items-background: #fdfdfd;
   --setting-items-border-color: #9f9f9f66;
+  --setting-items-padding: 20px;
   --setting-items-radius: 19px;
-  --shadow-color: hsl(0, 0%, 96%);
-  --shadow-ui: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042);
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
   --shiki-active-tab-border-color: #7f7f7f;
   --shiki-code-background: #fdfdfd;
   --shiki-code-block-border-radius: 7px;
+  --shiki-code-block-spacing: 1rem;
   --shiki-code-comment: #878787;
   --shiki-code-function: #8fb26b;
   --shiki-code-important: #d08344;
@@ -4259,22 +5774,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --shiki-code-string: #dca931;
   --shiki-code-value: #8076ad;
   --shiki-gutter-border-color: #9f9f9f66;
+  --shiki-gutter-border-width: 1px;
   --shiki-gutter-text-color: #878787;
   --shiki-gutter-text-color-highlight: #7f7f7f;
   --shiki-highlight-green: rgba(125, 207, 43, 0.5);
   --shiki-highlight-green-background: rgba(125, 207, 43, 0.1);
   --shiki-highlight-neutral: #7f7f7f;
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
   --shiki-highlight-red: rgba(255, 77, 58, 0.5);
   --shiki-highlight-red-background: rgba(255, 77, 58, 0.1);
   --shiki-terminal-dots-color: #878787;
-  --slider-thumb-border-color: #dedede;
-  --slider-track-background: #9f9f9f66;
-  --slider-track-height: 1.2px;
-  --status-bar-background: hsl(0, 0%, 96%);
-  --status-bar-border-color: #9f9f9f66;
-  --status-bar-radius: 14px 0 0 0;
-  --status-bar-text-color: #7f7f7f;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
   --suggestion-background: hsla(0, 0%, 100%, 100%);
+  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
   --sync-avatar-color-1: #c75f54;
   --sync-avatar-color-2: #d08344;
   --sync-avatar-color-3: #dca931;
@@ -4284,15 +5796,17 @@ html[saved-theme="dark"] body ul.tags > li {
   --sync-avatar-color-7: #8076ad;
   --sync-avatar-color-8: #ac7aaa;
   --tab-background-active: #fcfcfc;
-  --tab-container-background: hsl(0, 0%, 96%);
-  --tab-curve: 0px;
   --tab-divider-color: transparent;
+  --tab-font-size: 13px;
   --tab-outline-color: #9f9f9f66;
-  --tab-outline-width: 0.8px;
   --tab-radius: 7px;
   --tab-radius-active: 7px;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
   --tab-switcher-background: hsl(0, 0%, 96%);
   --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 96%), transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(181, 100%, 35%);
   --tab-text-color: #878787;
   --tab-text-color-active: #7f7f7f;
@@ -4305,40 +5819,46 @@ html[saved-theme="dark"] body ul.tags > li {
   );
   --tab-text-color-focused-highlighted: hsl(181, 100%, 35%);
   --table-add-button-border-color: #9f9f9f66;
+  --table-add-button-border-width: 1px;
   --table-background: #fcfcfc;
   --table-border-color: #9f9f9f66;
   --table-column-alt-background: #fcfcfc;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
   --table-drag-handle-background-active: hsl(
     177,
     100%,
     33%
   );
   --table-drag-handle-color: #878787;
+  --table-drag-handle-color-active: white;
   --table-header-background: #fcfcfc;
   --table-header-border-color: #9f9f9f66;
+  --table-header-border-width: 1px;
   --table-header-color: #252525;
   --table-header-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --table-header-size: 16px;
   --table-header-weight: normal;
+  --table-line-height: 1.3;
   --table-row-alt-background: #fcfcfc;
   --table-row-alt-background-hover: #fcfcfc;
   --table-row-background-hover: #fcfcfc;
+  --table-row-last-border-width: 1px;
   --table-selection: hsla(181, 100%, 35%, 0.1);
+  --table-selection-blend-mode: darken;
   --table-selection-border-color: hsl(
     177,
     100%,
     33%
   );
+  --table-text-size: 16px;
   --tag-background: hsla(181, 100%, 35%, 0.1);
   --tag-background-hover: hsla(181, 100%, 35%, 0.2);
   --tag-border-color: hsla(181, 100%, 35%, 0.15);
   --tag-border-color-hover: hsla(181, 100%, 35%, 0.15);
   --tag-color: hsl(181, 100%, 35%);
   --tag-color-hover: hsl(181, 100%, 35%);
-  --tertiary: var(--text-accent-hover, hsl(
-    183,
-    105%,
-    39%
-  ));
+  --tag-size: 0.875em;
   --text-accent: hsl(181, 100%, 35%);
   --text-accent-hover: hsl(
     183,
@@ -4348,129 +5868,20 @@ html[saved-theme="dark"] body ul.tags > li {
   --text-error: #c75f54;
   --text-faint: #878787;
   --text-highlight-bg: rgba(255, 200, 0, 0.459);
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-muted: #7f7f7f;
   --text-normal: #252525;
   --text-selection: hsla(181, 100%, 35%, 0.2);
   --text-success: #8fb26b;
   --text-warning: #d08344;
-  --textHighlight: var(--text-highlight-bg, rgba(255, 200, 0, 0.459));
-  --tile-field-padding: 5px;
   --tile-img-radius: 14px;
-  --tile-padding: 8px;
-  --tile-radius: 14px;
-  --titleFont: var(--font-text, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
-  --titlebar-background: hsl(0, 0%, 96%);
-  --titlebar-border-color: #9f9f9f66;
-  --titlebar-text-color: #7f7f7f;
-  --titlebar-text-color-focused: #252525;
-  --vault-font: "Noto Emoji";
-  --vault-icon: "💎";
-  --vault-name-font-size: 1.57em;
-  --vault-name-font-weight: 700;
-  --vault-profile-color: #252525;
-  --vault-profile-color-hover: #252525;
-  --quartz-icon-color: currentColor;
-}
-
-html[saved-theme="light"] body {
-  background-color: var(--background-primary);
-  color: var(--text-normal);
-}
-
-html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(245, 245, 245);
-  color: rgb(37, 37, 37);
-}
-
-html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
-  color: rgb(37, 37, 37);
-}
-
-html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(37, 37, 37);
-}
-
-html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
-  border-right-color: rgba(159, 159, 159, 0.4);
-  border-right-width: 0px;
-}
-
-html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(245, 245, 245);
-  border-left-color: rgba(159, 159, 159, 0.4);
-  color: rgb(37, 37, 37);
-}`,
-    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
-  color: rgb(37, 37, 37);
-  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  outline: rgb(37, 37, 37) none 0px;
-  text-decoration-color: rgb(37, 37, 37);
-}
-
-html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
-  color: rgb(37, 37, 37);
-  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  outline: rgb(37, 37, 37) none 0px;
-  text-decoration-color: rgb(37, 37, 37);
-}
-
-html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
-  color: rgb(37, 37, 37);
-  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  outline: rgb(37, 37, 37) none 0px;
-  text-decoration-color: rgb(37, 37, 37);
-}
-
-html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
-  color: rgb(37, 37, 37);
-  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  outline: rgb(37, 37, 37) none 0px;
-  text-decoration-color: rgb(37, 37, 37);
-}
-
-html[saved-theme="light"] body .text-highlight {
-  background-color: rgba(255, 200, 0, 0.46);
-  color: rgb(37, 37, 37);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  outline: rgb(37, 37, 37) none 0px;
-  text-decoration-color: rgb(37, 37, 37);
-}
-
-html[saved-theme="light"] body del {
-  color: rgb(37, 37, 37);
-  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  outline: rgb(37, 37, 37) none 0px;
-  text-decoration-color: rgb(37, 37, 37);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: rgb(37, 37, 37);
-  font-size: 14.3px;
-}
-
-html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
-  background-color: rgba(255, 77, 58, 0.1);
-  border-color: rgb(199, 95, 84);
-  border-radius: 14px;
-}
-
-html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgba(125, 207, 43, 0.1);
-  border-color: rgb(143, 178, 107);
-}
-
-html[saved-theme="light"] body p {
-  color: rgb(127, 127, 127);
-  font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  outline: rgb(127, 127, 127) none 0px;
-  text-decoration-color: rgb(127, 127, 127);
-}`,
-    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
-  --resizer-size: 20px;
-  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
   --zoom-multiplier: 1;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(37, 37, 37);
@@ -4485,11 +5896,11 @@ html[saved-theme="light"] body p {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(37, 37, 37);
+  color: var(--text-normal, rgb(37, 37, 37));
   content: "🡥";
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
   font-size: 13.6px;
-  font-weight: 500;
+  font-weight: var(--link-weight, 500);
   line-height: 32px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -4502,14 +5913,374 @@ html[saved-theme="light"] body p {
   padding-top: 0px;
   text-decoration: underline 1.5px rgba(159, 159, 159, 0.4);
   text-decoration-color: rgba(159, 159, 159, 0.4);
-  text-decoration-thickness: 1.5px;
+  text-decoration-thickness: var(--link-decoration-thickness, 1.5px);
   transition: 0.25s;
 }
 
 html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+  --background-modifier-active-hover: hsla(181, 100%, 35%, 0.1);
+  --background-modifier-border: #9f9f9f66;
+  --background-modifier-border-focus: #d7d7d7;
+  --background-modifier-border-hover: #dedede;
+  --background-modifier-error: #c75f54;
+  --background-modifier-error-hover: #c75f54;
+  --background-modifier-error-rgb: 255, 77, 58;
+  --background-modifier-form-field: hsla(0, 0%, 100%, 100%);
+  --background-modifier-form-field-hover: hsla(0, 0%, 100%, 100%);
+  --background-modifier-hover: rgba(0, 0, 0, 0.067);
+  --background-modifier-success: #8fb26b;
+  --background-modifier-success-rgb: 125, 207, 43;
+  --background-primary: hsla(0, 0%, 100%, 100%);
+  --background-primary-alt: #fdfdfd;
+  --background-secondary: hsl(0, 0%, 96%);
+  --background-secondary-alt: #fcfcfc;
+  --blockquote-border-color: hsl(
+    177,
+    100%,
+    33%
+  );
+  --blur-background: color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent) linear-gradient(hsla(0, 0%, 100%, 100%), color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-background: hsl(
+    183,
+    105%,
+    39%
+  );
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: darken;
+  --callout-bug: 230, 106, 180;
+  --callout-default: 0, 155, 227;
+  --callout-error: 246, 156, 0;
+  --callout-example: 180, 90, 245;
+  --callout-fail: 255, 77, 58;
+  --callout-important: 0, 206, 203;
+  --callout-info: 0, 155, 227;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 232, 201, 0;
+  --callout-radius: 7px;
+  --callout-success: 125, 207, 43;
+  --callout-summary: 125, 207, 43;
+  --callout-tip: 232, 201, 0;
+  --callout-title-weight: 600;
+  --callout-todo: 0, 155, 227;
+  --callout-warning: 246, 156, 0;
+  --canvas-background: hsla(0, 0%, 100%, 100%);
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 1.3px;
+  --canvas-controls-radius: 7px;
+  --canvas-dot-pattern: #9f9f9f66;
+  --caret-color: #252525;
+  --checkbox-border-color: #c75f54;
+  --checkbox-border-color-hover: #7f7f7f;
+  --checkbox-color: transparent;
+  --checkbox-color-hover: hsl(
+    183,
+    105%,
+    39%
+  );
+  --checkbox-marker-color: hsla(0, 0%, 100%, 100%);
+  --checkbox-radius: 14px;
+  --checkbox-size: 18px;
+  --checklist-done-color: #7f7f7f;
+  --clickable-icon-radius: 7px;
+  --code-background: #fdfdfd;
+  --code-border-color: #9f9f9f66;
+  --code-bracket-background: rgba(0, 0, 0, 0.067);
+  --code-comment: #878787;
+  --code-function: #dca931;
+  --code-important: #d08344;
+  --code-keyword: #ac7aaa;
+  --code-normal: #252525;
+  --code-operator: #c75f54;
+  --code-property: #49a7ba;
+  --code-punctuation: #7f7f7f;
+  --code-radius: 7px;
+  --code-size: 0.875em;
+  --code-string: #8fb26b;
+  --code-tag: #c75f54;
+  --code-value: #8076ad;
+  --collapse-icon-color: #878787;
+  --collapse-icon-color-collapsed: hsl(181, 100%, 35%);
+  --color-accent: hsl(181, 100%, 35%);
+  --color-accent-1: hsl(
+    177,
+    100%,
+    33%
+  );
+  --color-accent-2: hsl(
+    183,
+    105%,
+    39%
+  );
+  --color-accent-3: hsl(
+    216,
+    100%,
+    47%
+  );
+  --color-accent-hsl: 181, 100%, 35%;
+  --color-base-00: hsla(0, 0%, 100%, 100%);
+  --custom-doc-bg: hsl(
+    177,
+    100%,
+    33%
+  );
+  --divider-color: #9f9f9f66;
+  --divider-color-hover: hsl(
+    177,
+    100%,
+    33%
+  );
+  --divider-vertical-height: 100%;
+  --doc-background: hsl(181, 20%, 95%);
+  --dropdown-background: hsla(0, 0%, 100%, 100%);
+  --dropdown-background-hover: #fdfdfd;
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: hsla(0, 0%, 100%, 100%);
+  --flair-color: #252525;
+  --folder-1: "📒";
+  --folder-1-open: "📖";
+  --folder-2: "📑";
+  --folder-2-open: "📑";
+  --folder-3: "🔖";
+  --folder-3-open: "🔖";
+  --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-interface: '??', '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-mermaid: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-monospace: "DM Mono", monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-weight: var(--link-weight, 400);
+  --graph-line: #dedede;
+  --graph-node: #7f7f7f;
+  --graph-node-attachment: #dca931;
+  --graph-node-focused: hsl(181, 100%, 35%);
+  --graph-node-tag: #8fb26b;
+  --graph-node-unresolved: #878787;
+  --graph-text: #252525;
+  --h1-color-custom: #49a7ba;
+  --h1-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h1-style: normal;
+  --h1-variant: normal;
+  --h2-color-custom: #4e8aa6;
+  --h2-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h2-style: normal;
+  --h2-variant: normal;
+  --h2-weight: 700;
+  --h3-color-custom: #8076ad;
+  --h3-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h3-style: normal;
+  --h3-variant: normal;
+  --h3-weight: 700;
+  --h4-color-custom: #ac7aaa;
+  --h4-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h4-style: normal;
+  --h4-variant: normal;
+  --h4-weight: 700;
+  --h5-color-custom: #c75f54;
+  --h5-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h5-line-height: 1.5;
+  --h5-style: normal;
+  --h5-variant: normal;
+  --h5-weight: 700;
+  --h6-color-custom: #d08344;
+  --h6-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h6-line-height: 1.5;
+  --h6-style: normal;
+  --h6-variant: normal;
+  --h6-weight: 700;
+  --heading-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --heading-font-2: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --heading-formatting: #878787;
+  --heading-spacing: 2.5rem;
+  --hr-color: #9f9f9f66;
+  --interactive-accent: hsl(
+    177,
+    100%,
+    33%
+  );
+  --interactive-accent-hover: hsl(
+    183,
+    105%,
+    39%
+  );
+  --interactive-accent-hsl: 181, 100%, 35%;
+  --interactive-hover: #fdfdfd;
+  --interactive-normal: hsla(0, 0%, 100%, 100%);
+  --link-color: hsl(181, 100%, 35%);
+  --link-color-hover: hsl(
+    183,
+    105%,
+    39%
+  );
+  --link-external-color: hsl(181, 100%, 35%);
+  --link-external-color-hover: hsl(
+    183,
+    105%,
+    39%
+  );
+  --link-unresolved-color: #878787;
+  --link-unresolved-decoration-color: #dedede;
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: hsl(0, 0%, 96%);
+  --menu-border-color: #dedede;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 14px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+  --panel-child: #fdfdfd;
+  --pdf-background: hsla(0, 0%, 100%, 100%);
+  --pdf-page-background: hsla(0, 0%, 100%, 100%);
+  --pdf-sidebar-background: hsla(0, 0%, 100%, 100%);
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent) linear-gradient(hsla(0, 0%, 100%, 100%), color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
   --resizer-size: 20px;
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-radius: 19px;
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --search-clear-button-color: #7f7f7f;
+  --search-icon-color: #7f7f7f;
+  --search-result-background: hsla(0, 0%, 100%, 100%);
+  --setting-group-heading-color: #252525;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #fdfdfd;
+  --setting-items-border-color: #9f9f9f66;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 19px;
   --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
   --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --shiki-active-tab-border-color: #7f7f7f;
+  --shiki-code-background: #fdfdfd;
+  --shiki-code-block-border-radius: 7px;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #878787;
+  --shiki-code-function: #8fb26b;
+  --shiki-code-important: #d08344;
+  --shiki-code-keyword: #ac7aaa;
+  --shiki-code-normal: #7f7f7f;
+  --shiki-code-property: #49a7ba;
+  --shiki-code-punctuation: #7f7f7f;
+  --shiki-code-string: #dca931;
+  --shiki-code-value: #8076ad;
+  --shiki-gutter-border-color: #9f9f9f66;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #878787;
+  --shiki-gutter-text-color-highlight: #7f7f7f;
+  --shiki-highlight-green: rgba(125, 207, 43, 0.5);
+  --shiki-highlight-green-background: rgba(125, 207, 43, 0.1);
+  --shiki-highlight-neutral: #7f7f7f;
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
+  --shiki-highlight-red: rgba(255, 77, 58, 0.5);
+  --shiki-highlight-red-background: rgba(255, 77, 58, 0.1);
+  --shiki-terminal-dots-color: #878787;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: hsla(0, 0%, 100%, 100%);
+  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  --sync-avatar-color-1: #c75f54;
+  --sync-avatar-color-2: #d08344;
+  --sync-avatar-color-3: #dca931;
+  --sync-avatar-color-4: #8fb26b;
+  --sync-avatar-color-5: #49a7ba;
+  --sync-avatar-color-6: #4e8aa6;
+  --sync-avatar-color-7: #8076ad;
+  --sync-avatar-color-8: #ac7aaa;
+  --tab-background-active: #fcfcfc;
+  --tab-divider-color: transparent;
+  --tab-font-size: 13px;
+  --tab-outline-color: #9f9f9f66;
+  --tab-radius: 7px;
+  --tab-radius-active: 7px;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: hsl(0, 0%, 96%);
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 96%), transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(181, 100%, 35%);
+  --tab-text-color: #878787;
+  --tab-text-color-active: #7f7f7f;
+  --tab-text-color-focused: #7f7f7f;
+  --tab-text-color-focused-active: #7f7f7f;
+  --tab-text-color-focused-active-current: hsl(
+    177,
+    100%,
+    33%
+  );
+  --tab-text-color-focused-highlighted: hsl(181, 100%, 35%);
+  --table-add-button-border-color: #9f9f9f66;
+  --table-add-button-border-width: 1px;
+  --table-background: #fcfcfc;
+  --table-border-color: #9f9f9f66;
+  --table-column-alt-background: #fcfcfc;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(
+    177,
+    100%,
+    33%
+  );
+  --table-drag-handle-color: #878787;
+  --table-drag-handle-color-active: white;
+  --table-header-background: #fcfcfc;
+  --table-header-border-color: #9f9f9f66;
+  --table-header-border-width: 1px;
+  --table-header-color: #252525;
+  --table-header-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --table-header-size: 16px;
+  --table-header-weight: normal;
+  --table-line-height: 1.3;
+  --table-row-alt-background: #fcfcfc;
+  --table-row-alt-background-hover: #fcfcfc;
+  --table-row-background-hover: #fcfcfc;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(181, 100%, 35%, 0.1);
+  --table-selection-blend-mode: darken;
+  --table-selection-border-color: hsl(
+    177,
+    100%,
+    33%
+  );
+  --table-text-size: 16px;
+  --tag-background: hsla(181, 100%, 35%, 0.1);
+  --tag-background-hover: hsla(181, 100%, 35%, 0.2);
+  --tag-border-color: hsla(181, 100%, 35%, 0.15);
+  --tag-border-color-hover: hsla(181, 100%, 35%, 0.15);
+  --tag-color: hsl(181, 100%, 35%);
+  --tag-color-hover: hsl(181, 100%, 35%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(181, 100%, 35%);
+  --text-accent-hover: hsl(
+    183,
+    105%,
+    39%
+  );
+  --text-error: #c75f54;
+  --text-faint: #878787;
+  --text-highlight-bg: rgba(255, 200, 0, 0.459);
+  --text-muted: #7f7f7f;
+  --text-normal: #252525;
+  --text-selection: hsla(181, 100%, 35%, 0.2);
+  --text-success: #8fb26b;
+  --text-warning: #d08344;
+  --tile-img-radius: 14px;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
   --zoom-multiplier: 1;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(0, 176, 179);
@@ -4524,11 +6295,11 @@ html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .bread
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(0, 176, 179);
+  color: var(--link-color, rgb(0, 176, 179));
   content: "🡥";
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
   font-size: 13.6px;
-  font-weight: 500;
+  font-weight: var(--link-weight, 500);
   line-height: 32px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -4541,14 +6312,374 @@ html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .bread
   padding-top: 0px;
   text-decoration: underline 1.5px rgba(159, 159, 159, 0.4);
   text-decoration-color: rgba(159, 159, 159, 0.4);
-  text-decoration-thickness: 1.5px;
+  text-decoration-thickness: var(--link-decoration-thickness, 1.5px);
   transition: 0.25s;
 }
 
 html[saved-theme="light"] body a.internal-link.broken {
+  --background-modifier-active-hover: hsla(181, 100%, 35%, 0.1);
+  --background-modifier-border: #9f9f9f66;
+  --background-modifier-border-focus: #d7d7d7;
+  --background-modifier-border-hover: #dedede;
+  --background-modifier-error: #c75f54;
+  --background-modifier-error-hover: #c75f54;
+  --background-modifier-error-rgb: 255, 77, 58;
+  --background-modifier-form-field: hsla(0, 0%, 100%, 100%);
+  --background-modifier-form-field-hover: hsla(0, 0%, 100%, 100%);
+  --background-modifier-hover: rgba(0, 0, 0, 0.067);
+  --background-modifier-success: #8fb26b;
+  --background-modifier-success-rgb: 125, 207, 43;
+  --background-primary: hsla(0, 0%, 100%, 100%);
+  --background-primary-alt: #fdfdfd;
+  --background-secondary: hsl(0, 0%, 96%);
+  --background-secondary-alt: #fcfcfc;
+  --blockquote-border-color: hsl(
+    177,
+    100%,
+    33%
+  );
+  --blur-background: color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent) linear-gradient(hsla(0, 0%, 100%, 100%), color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-background: hsl(
+    183,
+    105%,
+    39%
+  );
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: darken;
+  --callout-bug: 230, 106, 180;
+  --callout-default: 0, 155, 227;
+  --callout-error: 246, 156, 0;
+  --callout-example: 180, 90, 245;
+  --callout-fail: 255, 77, 58;
+  --callout-important: 0, 206, 203;
+  --callout-info: 0, 155, 227;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 232, 201, 0;
+  --callout-radius: 7px;
+  --callout-success: 125, 207, 43;
+  --callout-summary: 125, 207, 43;
+  --callout-tip: 232, 201, 0;
+  --callout-title-weight: 600;
+  --callout-todo: 0, 155, 227;
+  --callout-warning: 246, 156, 0;
+  --canvas-background: hsla(0, 0%, 100%, 100%);
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 1.3px;
+  --canvas-controls-radius: 7px;
+  --canvas-dot-pattern: #9f9f9f66;
+  --caret-color: #252525;
+  --checkbox-border-color: #c75f54;
+  --checkbox-border-color-hover: #7f7f7f;
+  --checkbox-color: transparent;
+  --checkbox-color-hover: hsl(
+    183,
+    105%,
+    39%
+  );
+  --checkbox-marker-color: hsla(0, 0%, 100%, 100%);
+  --checkbox-radius: 14px;
+  --checkbox-size: 18px;
+  --checklist-done-color: #7f7f7f;
+  --clickable-icon-radius: 7px;
+  --code-background: #fdfdfd;
+  --code-border-color: #9f9f9f66;
+  --code-bracket-background: rgba(0, 0, 0, 0.067);
+  --code-comment: #878787;
+  --code-function: #dca931;
+  --code-important: #d08344;
+  --code-keyword: #ac7aaa;
+  --code-normal: #252525;
+  --code-operator: #c75f54;
+  --code-property: #49a7ba;
+  --code-punctuation: #7f7f7f;
+  --code-radius: 7px;
+  --code-size: 0.875em;
+  --code-string: #8fb26b;
+  --code-tag: #c75f54;
+  --code-value: #8076ad;
+  --collapse-icon-color: #878787;
+  --collapse-icon-color-collapsed: hsl(181, 100%, 35%);
+  --color-accent: hsl(181, 100%, 35%);
+  --color-accent-1: hsl(
+    177,
+    100%,
+    33%
+  );
+  --color-accent-2: hsl(
+    183,
+    105%,
+    39%
+  );
+  --color-accent-3: hsl(
+    216,
+    100%,
+    47%
+  );
+  --color-accent-hsl: 181, 100%, 35%;
+  --color-base-00: hsla(0, 0%, 100%, 100%);
+  --custom-doc-bg: hsl(
+    177,
+    100%,
+    33%
+  );
+  --divider-color: #9f9f9f66;
+  --divider-color-hover: hsl(
+    177,
+    100%,
+    33%
+  );
+  --divider-vertical-height: 100%;
+  --doc-background: hsl(181, 20%, 95%);
+  --dropdown-background: hsla(0, 0%, 100%, 100%);
+  --dropdown-background-hover: #fdfdfd;
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: hsla(0, 0%, 100%, 100%);
+  --flair-color: #252525;
+  --folder-1: "📒";
+  --folder-1-open: "📖";
+  --folder-2: "📑";
+  --folder-2-open: "📑";
+  --folder-3: "🔖";
+  --folder-3-open: "🔖";
+  --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-interface: '??', '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-mermaid: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-monospace: "DM Mono", monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-weight: var(--link-weight, 400);
+  --graph-line: #dedede;
+  --graph-node: #7f7f7f;
+  --graph-node-attachment: #dca931;
+  --graph-node-focused: hsl(181, 100%, 35%);
+  --graph-node-tag: #8fb26b;
+  --graph-node-unresolved: #878787;
+  --graph-text: #252525;
+  --h1-color-custom: #49a7ba;
+  --h1-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h1-style: normal;
+  --h1-variant: normal;
+  --h2-color-custom: #4e8aa6;
+  --h2-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h2-style: normal;
+  --h2-variant: normal;
+  --h2-weight: 700;
+  --h3-color-custom: #8076ad;
+  --h3-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h3-style: normal;
+  --h3-variant: normal;
+  --h3-weight: 700;
+  --h4-color-custom: #ac7aaa;
+  --h4-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h4-style: normal;
+  --h4-variant: normal;
+  --h4-weight: 700;
+  --h5-color-custom: #c75f54;
+  --h5-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h5-line-height: 1.5;
+  --h5-style: normal;
+  --h5-variant: normal;
+  --h5-weight: 700;
+  --h6-color-custom: #d08344;
+  --h6-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h6-line-height: 1.5;
+  --h6-style: normal;
+  --h6-variant: normal;
+  --h6-weight: 700;
+  --heading-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --heading-font-2: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --heading-formatting: #878787;
+  --heading-spacing: 2.5rem;
+  --hr-color: #9f9f9f66;
+  --interactive-accent: hsl(
+    177,
+    100%,
+    33%
+  );
+  --interactive-accent-hover: hsl(
+    183,
+    105%,
+    39%
+  );
+  --interactive-accent-hsl: 181, 100%, 35%;
+  --interactive-hover: #fdfdfd;
+  --interactive-normal: hsla(0, 0%, 100%, 100%);
+  --link-color: hsl(181, 100%, 35%);
+  --link-color-hover: hsl(
+    183,
+    105%,
+    39%
+  );
+  --link-external-color: hsl(181, 100%, 35%);
+  --link-external-color-hover: hsl(
+    183,
+    105%,
+    39%
+  );
+  --link-unresolved-color: #878787;
+  --link-unresolved-decoration-color: #dedede;
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: hsl(0, 0%, 96%);
+  --menu-border-color: #dedede;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 14px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+  --panel-child: #fdfdfd;
+  --pdf-background: hsla(0, 0%, 100%, 100%);
+  --pdf-page-background: hsla(0, 0%, 100%, 100%);
+  --pdf-sidebar-background: hsla(0, 0%, 100%, 100%);
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent) linear-gradient(hsla(0, 0%, 100%, 100%), color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
   --resizer-size: 20px;
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-radius: 19px;
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --search-clear-button-color: #7f7f7f;
+  --search-icon-color: #7f7f7f;
+  --search-result-background: hsla(0, 0%, 100%, 100%);
+  --setting-group-heading-color: #252525;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #fdfdfd;
+  --setting-items-border-color: #9f9f9f66;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 19px;
   --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
   --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --shiki-active-tab-border-color: #7f7f7f;
+  --shiki-code-background: #fdfdfd;
+  --shiki-code-block-border-radius: 7px;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #878787;
+  --shiki-code-function: #8fb26b;
+  --shiki-code-important: #d08344;
+  --shiki-code-keyword: #ac7aaa;
+  --shiki-code-normal: #7f7f7f;
+  --shiki-code-property: #49a7ba;
+  --shiki-code-punctuation: #7f7f7f;
+  --shiki-code-string: #dca931;
+  --shiki-code-value: #8076ad;
+  --shiki-gutter-border-color: #9f9f9f66;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #878787;
+  --shiki-gutter-text-color-highlight: #7f7f7f;
+  --shiki-highlight-green: rgba(125, 207, 43, 0.5);
+  --shiki-highlight-green-background: rgba(125, 207, 43, 0.1);
+  --shiki-highlight-neutral: #7f7f7f;
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
+  --shiki-highlight-red: rgba(255, 77, 58, 0.5);
+  --shiki-highlight-red-background: rgba(255, 77, 58, 0.1);
+  --shiki-terminal-dots-color: #878787;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: hsla(0, 0%, 100%, 100%);
+  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  --sync-avatar-color-1: #c75f54;
+  --sync-avatar-color-2: #d08344;
+  --sync-avatar-color-3: #dca931;
+  --sync-avatar-color-4: #8fb26b;
+  --sync-avatar-color-5: #49a7ba;
+  --sync-avatar-color-6: #4e8aa6;
+  --sync-avatar-color-7: #8076ad;
+  --sync-avatar-color-8: #ac7aaa;
+  --tab-background-active: #fcfcfc;
+  --tab-divider-color: transparent;
+  --tab-font-size: 13px;
+  --tab-outline-color: #9f9f9f66;
+  --tab-radius: 7px;
+  --tab-radius-active: 7px;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: hsl(0, 0%, 96%);
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 96%), transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(181, 100%, 35%);
+  --tab-text-color: #878787;
+  --tab-text-color-active: #7f7f7f;
+  --tab-text-color-focused: #7f7f7f;
+  --tab-text-color-focused-active: #7f7f7f;
+  --tab-text-color-focused-active-current: hsl(
+    177,
+    100%,
+    33%
+  );
+  --tab-text-color-focused-highlighted: hsl(181, 100%, 35%);
+  --table-add-button-border-color: #9f9f9f66;
+  --table-add-button-border-width: 1px;
+  --table-background: #fcfcfc;
+  --table-border-color: #9f9f9f66;
+  --table-column-alt-background: #fcfcfc;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(
+    177,
+    100%,
+    33%
+  );
+  --table-drag-handle-color: #878787;
+  --table-drag-handle-color-active: white;
+  --table-header-background: #fcfcfc;
+  --table-header-border-color: #9f9f9f66;
+  --table-header-border-width: 1px;
+  --table-header-color: #252525;
+  --table-header-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --table-header-size: 16px;
+  --table-header-weight: normal;
+  --table-line-height: 1.3;
+  --table-row-alt-background: #fcfcfc;
+  --table-row-alt-background-hover: #fcfcfc;
+  --table-row-background-hover: #fcfcfc;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(181, 100%, 35%, 0.1);
+  --table-selection-blend-mode: darken;
+  --table-selection-border-color: hsl(
+    177,
+    100%,
+    33%
+  );
+  --table-text-size: 16px;
+  --tag-background: hsla(181, 100%, 35%, 0.1);
+  --tag-background-hover: hsla(181, 100%, 35%, 0.2);
+  --tag-border-color: hsla(181, 100%, 35%, 0.15);
+  --tag-border-color-hover: hsla(181, 100%, 35%, 0.15);
+  --tag-color: hsl(181, 100%, 35%);
+  --tag-color-hover: hsl(181, 100%, 35%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(181, 100%, 35%);
+  --text-accent-hover: hsl(
+    183,
+    105%,
+    39%
+  );
+  --text-error: #c75f54;
+  --text-faint: #878787;
+  --text-highlight-bg: rgba(255, 200, 0, 0.459);
+  --text-muted: #7f7f7f;
+  --text-normal: #252525;
+  --text-selection: hsla(181, 100%, 35%, 0.2);
+  --text-success: #8fb26b;
+  --text-warning: #d08344;
+  --tile-img-radius: 14px;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
   --zoom-multiplier: 1;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(135, 135, 135);
@@ -4563,11 +6694,11 @@ html[saved-theme="light"] body a.internal-link.broken {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(135, 135, 135);
+  color: var(--link-unresolved-color, rgb(135, 135, 135));
   content: "＋";
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
   font-size: 13.6px;
-  font-weight: 600;
+  font-weight: var(--link-weight, 600);
   line-height: 32px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -4579,8 +6710,8 @@ html[saved-theme="light"] body a.internal-link.broken {
   padding-right: 0px;
   padding-top: 0px;
   text-decoration: underline 1.5px rgb(222, 222, 222);
-  text-decoration-color: rgb(222, 222, 222);
-  text-decoration-thickness: 1.5px;
+  text-decoration-color: var(--link-unresolved-decoration-color, rgb(222, 222, 222));
+  text-decoration-thickness: var(--link-decoration-thickness, 1.5px);
   transition: 0.25s;
 }`,
     lists: `html[saved-theme="light"] body dd {
@@ -4606,12 +6737,12 @@ html[saved-theme="light"] body ul.overflow {
   border-top-color: rgb(37, 37, 37);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
-  color: rgb(135, 135, 135);
+  color: var(--text-faint, rgb(135, 135, 135));
 }
 
 html[saved-theme="light"] body blockquote {
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  font-style: italic;
+  font-style: var(--blockquote-font-style, italic);
   padding-bottom: 16px;
   padding-top: 16px;
 }`,
@@ -4631,11 +6762,11 @@ html[saved-theme="light"] body table {
 }
 
 html[saved-theme="light"] body tbody tr:nth-child(even) {
-  background-color: rgb(252, 252, 252);
+  background-color: var(--table-background, rgb(252, 252, 252));
 }
 
 html[saved-theme="light"] body tbody tr:nth-child(odd) {
-  background-color: rgb(252, 252, 252);
+  background-color: var(--table-row-alt-background, rgb(252, 252, 252));
 }
 
 html[saved-theme="light"] body td {
@@ -4643,24 +6774,24 @@ html[saved-theme="light"] body td {
   border-left-color: rgba(159, 159, 159, 0.4);
   border-right-color: rgba(159, 159, 159, 0.4);
   border-top-color: rgba(159, 159, 159, 0.4);
-  color: rgb(37, 37, 37);
+  color: var(--table-text-color, rgb(37, 37, 37));
 }
 
 html[saved-theme="light"] body th {
-  background-color: rgb(245, 245, 245);
+  background-color: var(--background-secondary, rgb(245, 245, 245));
   border-bottom-color: rgba(159, 159, 159, 0.4);
   border-left-color: rgba(159, 159, 159, 0.4);
   border-right-color: rgba(159, 159, 159, 0.4);
   border-top-color: rgba(159, 159, 159, 0.4);
-  color: rgb(37, 37, 37);
-  font-weight: 400;
+  color: var(--table-header-color, rgb(37, 37, 37));
+  font-weight: var(--table-header-weight, 400);
 }
 
 html[saved-theme="light"] body tr {
-  background-color: rgb(252, 252, 252);
+  background-color: var(--table-header-background, rgb(252, 252, 252));
 }`,
     code: `html[saved-theme="light"] body code {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--code-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(127, 127, 127);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4669,8 +6800,8 @@ html[saved-theme="light"] body tr {
   border-top-color: rgb(127, 127, 127);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(127, 127, 127);
-  font-family: "DM Mono", monospace;
+  color: var(--ec-codeFg, rgb(127, 127, 127));
+  font-family: var(--ec-codeFontFml, "DM Mono", monospace);
   padding-bottom: 12px;
   padding-left: 0px;
   padding-right: 0px;
@@ -4678,7 +6809,7 @@ html[saved-theme="light"] body tr {
 }
 
 html[saved-theme="light"] body pre:has(> code) {
-  background-color: rgb(253, 253, 253);
+  background-color: var(--code-background, rgb(253, 253, 253));
   border-bottom-color: rgba(159, 159, 159, 0.4);
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -4729,7 +6860,7 @@ html[saved-theme="light"] body img {
   border-top-color: rgb(37, 37, 37);
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  box-shadow: rgba(0, 0, 0, 0.027) 0px 1px 2px 0px, rgba(0, 0, 0, 0.043) 0px 3.4px 6.7px 0px, rgba(0, 0, 0, 0.07) 0px 15px 30px 0px;
+  box-shadow: var(--shadow-s, rgba(0, 0, 0, 0.027) 0px 1px 2px 0px, rgba(0, 0, 0, 0.043) 0px 3.4px 6.7px 0px, rgba(0, 0, 0, 0.07) 0px 15px 30px 0px);
   filter: contrast(1.04) saturate(1.05);
 }
 
@@ -4740,7 +6871,7 @@ html[saved-theme="light"] body video {
   border-top-color: rgb(37, 37, 37);
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
-  background-color: rgb(253, 253, 253);
+  background-color: var(--background-primary-alt, rgb(253, 253, 253));
   border-bottom-color: rgb(127, 127, 127);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -4788,7 +6919,7 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-top-right-radius: 14px;
   margin-left: -27px;
   transition: 0.25s;
-  width: 18px;
+  width: var(--checkbox-size, 18px);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="#"] {
@@ -5343,12 +7474,11 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -5356,8 +7486,8 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="light"] body .callout > .callout-content {
@@ -5365,9 +7495,9 @@ html[saved-theme="light"] body .callout > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
-  --callout-color: 125, 207, 43;
+  --callout-color: var(--callout-summary, 125, 207, 43);
   background: rgb(252, 252, 252) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(252, 252, 252);
+  background-color: var(--background-secondary-alt, rgb(252, 252, 252));
   border-bottom-color: rgba(125, 207, 43, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -5386,12 +7516,11 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -5399,8 +7528,8 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-content {
@@ -5408,9 +7537,9 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
-  --callout-color: 230, 106, 180;
+  --callout-color: var(--callout-bug, 230, 106, 180);
   background: rgb(252, 252, 252) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(252, 252, 252);
+  background-color: var(--background-secondary-alt, rgb(252, 252, 252));
   border-bottom-color: rgba(230, 106, 180, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -5429,12 +7558,11 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -5442,8 +7570,8 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
@@ -5451,9 +7579,9 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
-  --callout-color: 246, 156, 0;
+  --callout-color: var(--callout-error, 246, 156, 0);
   background: rgb(252, 252, 252) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(252, 252, 252);
+  background-color: var(--background-secondary-alt, rgb(252, 252, 252));
   border-bottom-color: rgba(246, 156, 0, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -5472,12 +7600,11 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -5485,8 +7612,8 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-content {
@@ -5494,9 +7621,9 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
-  --callout-color: 180, 90, 245;
+  --callout-color: var(--callout-example, 180, 90, 245);
   background: rgb(252, 252, 252) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(252, 252, 252);
+  background-color: var(--background-secondary-alt, rgb(252, 252, 252));
   border-bottom-color: rgba(180, 90, 245, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -5515,12 +7642,11 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -5528,8 +7654,8 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] > .callout-content {
@@ -5537,9 +7663,9 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
-  --callout-color: 255, 77, 58;
+  --callout-color: var(--callout-fail, 255, 77, 58);
   background: rgb(252, 252, 252) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(252, 252, 252);
+  background-color: var(--background-secondary-alt, rgb(252, 252, 252));
   border-bottom-color: rgba(255, 77, 58, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -5558,12 +7684,11 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -5571,8 +7696,8 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-content {
@@ -5580,9 +7705,9 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
-  --callout-color: 0, 155, 227;
+  --callout-color: var(--callout-info, 0, 155, 227);
   background: rgb(252, 252, 252) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(252, 252, 252);
+  background-color: var(--background-secondary-alt, rgb(252, 252, 252));
   border-bottom-color: rgba(0, 155, 227, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -5601,12 +7726,11 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -5614,8 +7738,8 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content {
@@ -5623,9 +7747,9 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
-  --callout-color: 0, 155, 227;
+  --callout-color: var(--callout-default, 0, 155, 227);
   background: rgb(252, 252, 252) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(252, 252, 252);
+  background-color: var(--background-secondary-alt, rgb(252, 252, 252));
   border-bottom-color: rgba(0, 155, 227, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -5644,12 +7768,11 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -5657,8 +7780,8 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content {
@@ -5666,9 +7789,9 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
-  --callout-color: 232, 201, 0;
+  --callout-color: var(--callout-question, 232, 201, 0);
   background: rgb(252, 252, 252) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(252, 252, 252);
+  background-color: var(--background-secondary-alt, rgb(252, 252, 252));
   border-bottom-color: rgba(232, 201, 0, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -5687,12 +7810,11 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -5700,8 +7822,8 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] > .callout-content {
@@ -5709,9 +7831,9 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background: rgb(252, 252, 252) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(252, 252, 252);
+  background-color: var(--background-secondary-alt, rgb(252, 252, 252));
   border-bottom-color: rgba(158, 158, 158, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -5730,12 +7852,11 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -5743,8 +7864,8 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content {
@@ -5752,9 +7873,9 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
-  --callout-color: 125, 207, 43;
+  --callout-color: var(--callout-success, 125, 207, 43);
   background: rgb(252, 252, 252) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(252, 252, 252);
+  background-color: var(--background-secondary-alt, rgb(252, 252, 252));
   border-bottom-color: rgba(125, 207, 43, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -5773,12 +7894,11 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -5786,8 +7906,8 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] > .callout-content {
@@ -5795,9 +7915,9 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
-  --callout-color: 232, 201, 0;
+  --callout-color: var(--callout-tip, 232, 201, 0);
   background: rgb(252, 252, 252) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(252, 252, 252);
+  background-color: var(--background-secondary-alt, rgb(252, 252, 252));
   border-bottom-color: rgba(232, 201, 0, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -5816,12 +7936,11 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -5829,8 +7948,8 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
@@ -5838,9 +7957,9 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
-  --callout-color: 0, 155, 227;
+  --callout-color: var(--callout-todo, 0, 155, 227);
   background: rgb(252, 252, 252) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(252, 252, 252);
+  background-color: var(--background-secondary-alt, rgb(252, 252, 252));
   border-bottom-color: rgba(0, 155, 227, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -5859,12 +7978,11 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -5872,8 +7990,8 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content {
@@ -5881,9 +7999,9 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
-  --callout-color: 246, 156, 0;
+  --callout-color: var(--callout-warning, 246, 156, 0);
   background: rgb(252, 252, 252) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(252, 252, 252);
+  background-color: var(--background-secondary-alt, rgb(252, 252, 252));
   border-bottom-color: rgba(246, 156, 0, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -5902,12 +8020,11 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 0, 155, 227;
   background: rgba(0, 155, 227, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 155, 227, 0.08);
+  background-color: rgba(var(--callout-color), 0.08);
   border-bottom-color: rgb(0, 155, 227);
   border-left-color: rgb(0, 155, 227);
   border-right-color: rgb(0, 155, 227);
   border-top-color: rgb(0, 155, 227);
-  color: rgb(0, 155, 227);
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -5915,8 +8032,8 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 155, 227);
-  font-weight: 400;
+  color: var(--callout-title-color, rgb(0, 155, 227));
+  font-weight: var(--font-normal, 400);
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] > .callout-content {
@@ -5983,7 +8100,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-left-color: rgba(159, 159, 159, 0.4);
   border-right-color: rgba(159, 159, 159, 0.4);
   border-top-color: rgba(159, 159, 159, 0.4);
-  color: rgb(37, 37, 37);
+  color: var(--text-normal, rgb(37, 37, 37));
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
@@ -6067,7 +8184,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(0, 176, 179, 0.1);
+  background-color: var(--pill-background, rgba(0, 176, 179, 0.1));
   border-bottom-color: rgba(0, 176, 179, 0.15);
   border-left-color: rgba(0, 176, 179, 0.15);
   border-right-color: rgba(0, 176, 179, 0.15);
@@ -6080,43 +8197,43 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
-  color: rgb(37, 37, 37);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--h1-color, rgb(37, 37, 37));
+  font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(37, 37, 37);
-  font-size: 40px;
+  color: var(--inline-title-color, rgb(37, 37, 37));
+  font-size: var(--inline-title-size, 40px);
 }
 
 html[saved-theme="light"] body h2 {
-  color: rgb(37, 37, 37);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--h2-color, rgb(37, 37, 37));
+  font-family: var(--h2-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  color: rgb(37, 37, 37);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--inline-title-color, rgb(37, 37, 37));
+  font-family: var(--inline-title-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="light"] body h3 {
-  color: rgb(37, 37, 37);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--h3-color, rgb(37, 37, 37));
+  font-family: var(--h3-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
-  color: rgb(37, 37, 37);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--h4-color, rgb(37, 37, 37));
+  font-family: var(--h4-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
-  color: rgb(37, 37, 37);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--h5-color, rgb(37, 37, 37));
+  font-family: var(--h5-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
-  color: rgb(37, 37, 37);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--h6-color, rgb(37, 37, 37));
+  font-family: var(--h6-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="light"] body hr {
@@ -6126,7 +8243,7 @@ html[saved-theme="light"] body hr {
   border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
-  --callout-color: 0, 155, 227;
+  --callout-color: var(--callout-default, 0, 155, 227);
   border-bottom-color: rgba(0, 155, 227, 0.35);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -6150,13 +8267,13 @@ html[saved-theme="light"] body hr {
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(127, 127, 127);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--nav-item-color, rgb(127, 127, 127));
+  font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(127, 127, 127);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  color: var(--nav-item-color, rgb(127, 127, 127));
+  font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(37, 37, 37);
@@ -6170,16 +8287,16 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-color: rgb(127, 127, 127);
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  color: rgb(127, 127, 127);
+  color: var(--icon-color, rgb(127, 127, 127));
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: rgb(245, 245, 245);
+  background-color: var(--status-bar-background, rgb(245, 245, 245));
   border-bottom-color: rgba(159, 159, 159, 0.4);
   border-left-color: rgba(159, 159, 159, 0.4);
   border-right-color: rgba(159, 159, 159, 0.4);
   border-top-color: rgba(159, 159, 159, 0.4);
   border-top-left-radius: 14px;
-  color: rgb(127, 127, 127);
+  color: var(--status-bar-text-color, rgb(127, 127, 127));
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
@@ -6200,7 +8317,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(127, 127, 127);
+  color: var(--nav-item-color, rgb(127, 127, 127));
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -6220,7 +8337,7 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(127, 127, 127);
+  color: var(--nav-item-color, rgb(127, 127, 127));
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -6238,7 +8355,7 @@ html[saved-theme="light"] body ul.section-ul {
   border-top-color: rgb(127, 127, 127);
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  color: rgb(127, 127, 127);
+  color: var(--icon-color, rgb(127, 127, 127));
 }
 
 html[saved-theme="light"] body .darkmode svg {
@@ -6258,7 +8375,7 @@ html[saved-theme="light"] body .darkmode svg {
 }
 
 html[saved-theme="light"] body .breadcrumb-element p {
-  color: rgb(135, 135, 135);
+  color: var(--text-faint, rgb(135, 135, 135));
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }`,
     canvas: `html[saved-theme="light"] body .canvas-node {
@@ -6270,7 +8387,7 @@ html[saved-theme="light"] body .canvas-node-content {
 }
 
 html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(37, 37, 37);
+  color: var(--text-normal, rgb(37, 37, 37));
 }
 
 html[saved-theme="light"] body .canvas-node-group {
@@ -6281,17 +8398,17 @@ html[saved-theme="light"] body .canvas-sidebar {
   border-color: rgb(37, 37, 37);
 }`,
     bases: `html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
-  background-color: rgb(252, 252, 252);
+  background-color: var(--table-row-alt-background, rgb(252, 252, 252));
 }
 
 html[saved-theme="light"] body .bases-table thead th {
-  background-color: rgb(245, 245, 245);
+  background-color: var(--background-secondary, rgb(245, 245, 245));
   border-color: rgba(159, 159, 159, 0.4);
-  color: rgb(37, 37, 37);
-  font-weight: 400;
+  color: var(--table-header-color, rgb(37, 37, 37));
+  font-weight: var(--table-header-weight, 400);
 }`,
     properties: `html[saved-theme="light"] body .metadata {
-  background-color: rgb(252, 252, 252);
+  background-color: var(--background-secondary-alt, rgb(252, 252, 252));
   border-bottom-color: rgba(159, 159, 159, 0.4);
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -6304,7 +8421,7 @@ html[saved-theme="light"] body .bases-table thead th {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   border-top-width: 1px;
-  color: rgb(127, 127, 127);
+  color: var(--text-muted, rgb(127, 127, 127));
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -6322,7 +8439,7 @@ html[saved-theme="light"] body .metadata-properties {
 }
 
 html[saved-theme="light"] body .note-properties {
-  background-color: rgb(252, 252, 252);
+  background-color: var(--background-secondary-alt, rgb(252, 252, 252));
   border-color: rgba(159, 159, 159, 0.4);
   border-radius: 7px;
 }
@@ -6336,8 +8453,8 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(0, 176, 179, 0.1);
-  color: rgb(0, 176, 179);
+  background-color: var(--pill-background, rgba(0, 176, 179, 0.1));
+  color: var(--pill-color, rgb(0, 176, 179));
 }
 
 html[saved-theme="light"] body .note-properties-value {
@@ -6345,7 +8462,7 @@ html[saved-theme="light"] body .note-properties-value {
 }
 
 html[saved-theme="light"] body div#quartz-root {
-  color: rgb(37, 37, 37);
+  color: var(--text-normal, rgb(37, 37, 37));
 }
 
 html[saved-theme="light"] body ol.overflow {
@@ -6355,12 +8472,12 @@ html[saved-theme="light"] body ol.overflow {
   border-top-color: rgb(37, 37, 37);
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(37, 37, 37);
 }
 
 html[saved-theme="light"] body .stacked-page-header {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
 html[saved-theme="light"] body .stacked-page.active {
@@ -6375,11 +8492,11 @@ html[saved-theme="light"] body .stacked-page.active {
 }
 
 html[saved-theme="light"] body .navigation-progress {
-  background-color: rgb(245, 245, 245);
+  background-color: var(--status-bar-background, rgb(245, 245, 245));
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
-  color: rgb(37, 37, 37);
+  color: var(--text-normal, rgb(37, 37, 37));
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
@@ -6399,12 +8516,12 @@ html[saved-theme="light"] body input[type=text] {
   border-left-color: rgb(127, 127, 127);
   border-right-color: rgb(127, 127, 127);
   border-top-color: rgb(127, 127, 127);
-  color: rgb(127, 127, 127);
+  color: var(--text-normal, rgb(127, 127, 127));
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
 html[saved-theme="light"] body kbd {
-  background-color: rgb(253, 253, 253);
+  background-color: var(--code-background, rgb(253, 253, 253));
   border-bottom-color: rgb(37, 37, 37);
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -6413,8 +8530,8 @@ html[saved-theme="light"] body kbd {
   border-top-color: rgb(37, 37, 37);
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  color: rgb(37, 37, 37);
-  font-family: "DM Mono", monospace;
+  color: var(--code-normal, rgb(37, 37, 37));
+  font-family: var(--font-monospace, "DM Mono", monospace);
 }
 
 html[saved-theme="light"] body progress {
@@ -6437,7 +8554,7 @@ html[saved-theme="light"] body sup {
 }
 
 html[saved-theme="light"] body ul.tags > li {
-  background-color: rgb(252, 252, 252);
+  background-color: var(--background-secondary-alt, rgb(252, 252, 252));
   border-bottom-color: rgba(159, 159, 159, 0.4);
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -6450,7 +8567,7 @@ html[saved-theme="light"] body ul.tags > li {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   border-top-width: 1px;
-  color: rgb(0, 176, 179);
+  color: var(--text-accent, rgb(0, 176, 179));
 }`,
   },
   classSettings: {

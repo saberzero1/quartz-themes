@@ -400,34 +400,37 @@ body.theme-light {
     185,
     78
   ) !important;
-  --background-primary: #f5f5f5 !important;
+  --background-primary: var(--color-base-00, #f5f5f5) !important;
   --background-primary-alt: var(--color-base-10, #fafafa) !important;
-  --background-secondary: #efefef !important;
+  --background-secondary: var(--color-base-20, #efefef) !important;
   --background-secondary-alt: var(--color-base-05, #fcfcfc) !important;
-  --bases-cards-background: #f5f5f5 !important;
-  --bases-cards-border-width: 0.5px !important;
+  --bases-cards-background: var(--background-primary, #f5f5f5) !important;
+  --bases-cards-border-width: var(--border-width, 0.5px) !important;
   --bases-cards-corner-shape: var(--corner-shape, round) !important;
   --bases-cards-cover-background: var(
     --background-primary-alt,
     #fafafa
   ) !important;
   --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
-  --bases-cards-radius: 18px !important;
+  --bases-cards-radius: var(--radius-m, 18px) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
   --bases-embed-border-color: var(
     --background-modifier-border,
     #e0e0e0
   ) !important;
-  --bases-embed-border-radius: 10px !important;
+  --bases-embed-border-radius: var(--radius-s, 10px) !important;
   --bases-group-heading-property-color: var(--text-muted, #5c5c5c) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller, 12px) !important;
   --bases-group-heading-property-weight: var(--font-normal, 400) !important;
   --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
-  --bases-group-heading-value-weight: 500 !important;
-  --bases-header-border-width: 0 0 0.5px 0 !important;
+  --bases-group-heading-value-weight: var(--font-semibold, 500) !important;
+  --bases-header-border-width: 0 0 var(--border-width) 0 !important;
   --bases-table-border-color: var(--table-border-color, #e0e0e0) !important;
-  --bases-table-cell-background-active: #f5f5f5 !important;
+  --bases-table-cell-background-active: var(
+    --background-primary,
+    #f5f5f5
+  ) !important;
   --bases-table-cell-background-disabled: var(
     --background-primary-alt,
     #fafafa
@@ -439,15 +442,18 @@ body.theme-light {
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
-  --bases-table-column-border-width: 0.5px !important;
-  --bases-table-container-border-radius: 10px !important;
-  --bases-table-container-border-width: 0.5px !important;
+  --bases-table-column-border-width: var(--border-width, 0.5px) !important;
+  --bases-table-container-border-radius: var(--radius-s, 10px) !important;
+  --bases-table-container-border-width: var(--border-width, 0.5px) !important;
   --bases-table-font-size: var(--font-smaller, 0.875em) !important;
   --bases-table-group-background: var(
     --background-primary-alt,
     #fafafa
   ) !important;
-  --bases-table-header-background: #f5f5f5 !important;
+  --bases-table-header-background: var(
+    --background-primary,
+    #f5f5f5
+  ) !important;
   --bases-table-header-background-hover: var(
     --background-modifier-hover,
     rgba(0, 0, 0, 0.067)
@@ -463,15 +469,34 @@ body.theme-light {
     --table-row-background-hover,
     transparent
   ) !important;
-  --bases-table-row-border-width: 0.5px !important;
-  --bases-table-summary-background: #f5f5f5 !important;
+  --bases-table-row-border-width: var(--border-width, 0.5px) !important;
+  --bases-table-summary-background: var(
+    --background-primary,
+    #f5f5f5
+  ) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover,
     rgba(0, 0, 0, 0.067)
   ) !important;
-  --blockquote-border-color: hsla(138, 61.6%, 66%, 0.9) !important;
-  --blur-background: color-mix(in srgb, #f5f5f5 65%, transparent)
-    linear-gradient(#f5f5f5, color-mix(in srgb, #f5f5f5 65%, transparent)) !important;
+  --blockquote-border-color: hsla(
+    calc(var(--accent-h) - 120),
+    calc(var(--accent-s) * 0.7),
+    var(--accent-l),
+    0.9
+  ) !important;
+  --blur-background: color-mix(
+      in srgb,
+      var(--background-primary) var(--blur-opacity-s),
+      transparent
+    )
+    linear-gradient(
+      var(--background-primary),
+      color-mix(
+        in srgb,
+        var(--background-primary) var(--blur-opacity-s),
+        transparent
+      )
+    ) !important;
   --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
   --blur-m: blur(var(--blur-radius-m)) saturate(var(--blur-saturation))
@@ -480,7 +505,7 @@ body.theme-light {
     brightness(var(--blur-brightness)) !important;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
   --button-corner-shape: var(--corner-shape, round) !important;
-  --button-radius: 32px !important;
+  --button-radius: var(--radius-l, 32px) !important;
   --callout-blend-mode: var(--highlight-mix-blend-mode, darken);
   --callout-bug: var(--color-red-rgb, 233, 49, 71);
   --callout-default: var(--color-blue-rgb, 8, 109, 221);
@@ -489,16 +514,17 @@ body.theme-light {
   --callout-fail: var(--color-red-rgb, 233, 49, 71);
   --callout-important: var(--color-cyan-rgb, 0, 191, 188);
   --callout-info: var(--color-blue-rgb, 8, 109, 221);
-  --callout-padding: 15px 10px 0px 20px;
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6, 15px 10px 0px 20px);
   --callout-question: var(--color-orange-rgb, 236, 117, 0);
-  --callout-radius: 10px;
+  --callout-radius: var(--radius-s, 10px);
   --callout-success: var(--color-green-rgb, 8, 185, 78);
   --callout-summary: var(--color-cyan-rgb, 0, 191, 188);
   --callout-tip: var(--color-cyan-rgb, 0, 191, 188);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb, 8, 109, 221);
   --callout-warning: var(--color-orange-rgb, 236, 117, 0);
-  --canvas-background: #f5f5f5 !important;
+  --canvas-background: var(--background-primary, #f5f5f5) !important;
   --canvas-card-label-color: var(--text-faint, #ababab) !important;
   --canvas-color-1: var(--color-red-rgb, 233, 49, 71) !important;
   --canvas-color-2: var(--color-orange-rgb, 236, 117, 0) !important;
@@ -508,22 +534,22 @@ body.theme-light {
   --canvas-color-6: var(--color-purple-rgb, 120, 82, 238) !important;
   --canvas-controls-icon-size: var(--icon-s, 16px) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
-  --canvas-controls-radius: 10px !important;
+  --canvas-controls-radius: var(--radius-s, 10px) !important;
   --canvas-dot-pattern: var(--color-base-30, #e0e0e0) !important;
-  --caret-color: #404040 !important;
+  --caret-color: var(--text-normal, #404040) !important;
   --checkbox-border-color: var(--text-faint, #ababab) !important;
   --checkbox-border-color-hover: var(--text-muted, #5c5c5c) !important;
-  --checkbox-color: hsl(258, 88%, 66%) !important;
+  --checkbox-color: var(--color-accent, hsl(258, 88%, 66%)) !important;
   --checkbox-color-hover: var(
     --interactive-accent-hover,
     hsl(255, 89.76%, 75.9%)
   ) !important;
-  --checkbox-marker-color: #f5f5f5 !important;
-  --checkbox-radius: 10px !important;
+  --checkbox-marker-color: var(--background-primary, #f5f5f5) !important;
+  --checkbox-radius: var(--radius-s, 10px) !important;
   --checkbox-size: var(--font-text-size, 16px) !important;
-  --checklist-done-color: #ababab !important;
-  --clickable-icon-radius: 32px !important;
-  --code-background: #efefef !important;
+  --checklist-done-color: var(--text-faint, #ababab) !important;
+  --clickable-icon-radius: var(--radius-l, 32px) !important;
+  --code-background: var(--background-primary-alt, #efefef) !important;
   --code-border-color: var(--background-modifier-border, #e0e0e0) !important;
   --code-bracket-background: var(
     --background-modifier-hover,
@@ -533,11 +559,11 @@ body.theme-light {
   --code-function: var(--color-yellow, #e0ac00) !important;
   --code-important: var(--color-orange, #ec7500) !important;
   --code-keyword: var(--color-pink, #d53984) !important;
-  --code-normal: #404040 !important;
+  --code-normal: var(--text-normal, #404040) !important;
   --code-operator: var(--color-red, #e93147) !important;
   --code-property: var(--color-cyan, #00bfbc) !important;
   --code-punctuation: var(--text-muted, #5c5c5c) !important;
-  --code-radius: 10px !important;
+  --code-radius: var(--radius-s, 10px) !important;
   --code-size: var(--font-smaller, 0.875em) !important;
   --code-string: var(--color-green, #08b94e) !important;
   --code-tag: var(--color-red, #e93147) !important;
@@ -564,7 +590,10 @@ body.theme-light {
   ) !important;
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
-  --divider-color: rgba(0, 0, 0, 0.05) !important;
+  --divider-color: var(
+    --background-modifier-border,
+    rgba(0, 0, 0, 0.05)
+  ) !important;
   --divider-color-hover: var(
     --interactive-accent,
     hsl(257, 88.88%, 70.95%)
@@ -581,10 +610,14 @@ body.theme-light {
     0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-start: 2px solid var(--interactive-accent) !important;
-  --embed-padding: 0px !important;
-  --file-header-background: #f5f5f5 !important;
-  --file-header-background-focused: #f5f5f5 !important;
-  --file-header-border: 0.5px solid transparent !important;
+  --embed-padding: 0 0 0 var(--size-4-6) !important;
+  --file-header-background: var(--background-primary, #f5f5f5) !important;
+  --file-header-background-focused: var(
+    --background-primary,
+    #f5f5f5
+  ) !important;
+  --file-header-border: var(--border-width, 0.5px solid transparent) solid
+    transparent !important;
   --file-header-font: var(
     --font-interface,
     "??",
@@ -609,7 +642,7 @@ body.theme-light {
   --file-margins-x: var(--size-4-8, 32px) !important;
   --file-margins-y: var(--size-4-8, 32px) !important;
   --flair-background: var(--interactive-normal, #ffffff) !important;
-  --flair-color: #404040 !important;
+  --flair-color: var(--text-normal, #404040) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-interface:
@@ -647,7 +680,7 @@ body.theme-light {
     --metadata-divider-color-focus,
     transparent
   ) !important;
-  --footnote-divider-width: 0.5px !important;
+  --footnote-divider-width: var(--border-width, 0.5px) !important;
   --footnote-gap: var(--size-4-1, 4px) !important;
   --footnote-id-color: var(--text-muted, #5c5c5c) !important;
   --footnote-id-color-no-occurrences: var(--text-faint, #ababab) !important;
@@ -662,7 +695,7 @@ body.theme-light {
   --footnote-line-height: var(--line-height-normal, 1.5) !important;
   --footnote-padding-block: var(--size-2-3, 6px) !important;
   --footnote-padding-inline: var(--size-2-3, 6px) !important;
-  --footnote-radius: 10px !important;
+  --footnote-radius: var(--radius-s, 10px) !important;
   --footnote-size: var(--font-smaller, 0.875em) !important;
   --graph-line: var(
     --color-base-35,
@@ -673,28 +706,28 @@ body.theme-light {
   --graph-node-focused: var(--text-accent, hsl(258, 88%, 66%)) !important;
   --graph-node-tag: var(--color-green, #08b94e) !important;
   --graph-node-unresolved: var(--text-faint, #ababab) !important;
-  --graph-text: #404040 !important;
+  --graph-text: var(--text-normal, #404040) !important;
   --h5-line-height: var(--line-height-normal, 1.5) !important;
   --h6-line-height: var(--line-height-normal, 1.5) !important;
   --heading-formatting: var(--text-faint, #ababab) !important;
-  --heading-spacing: 2.5em !important;
+  --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --hr-color: var(--background-modifier-border, #e0e0e0) !important;
   --icon-color: var(--text-muted, #5c5c5c) !important;
   --icon-color-active: var(--text-accent, hsl(258, 88%, 66%)) !important;
-  --icon-color-focused: #404040 !important;
+  --icon-color-focused: var(--text-normal, #404040) !important;
   --icon-color-hover: var(--text-muted, #5c5c5c) !important;
   --icon-size: var(--icon-m, 18px) !important;
-  --icon-stroke: 1.5px !important;
+  --icon-stroke: var(--icon-m-stroke-width, 1.5px) !important;
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12) !important;
   --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3) !important;
-  --indentation-guide-width: 0.5px !important;
-  --indentation-guide-width-active: 0.5px !important;
+  --indentation-guide-width: var(--border-width, 0.5px) !important;
+  --indentation-guide-width-active: var(--border-width, 0.5px) !important;
   --inline-title-line-height: var(--h1-line-height, 1.2) !important;
   --inline-title-size: var(--h1-size, 1.618em) !important;
   --inline-title-style: var(--h1-style, normal) !important;
   --inline-title-variant: var(--h1-variant, normal) !important;
   --inline-title-weight: var(--h1-weight, 700) !important;
-  --input-border-width: 0.5px !important;
+  --input-border-width: var(--border-width, 0.5px) !important;
   --input-corner-shape: var(--corner-shape, round) !important;
   --input-date-separator: var(--text-faint, #ababab) !important;
   --input-font-weight: var(--font-normal, 400) !important;
@@ -735,15 +768,15 @@ body.theme-light {
     hsl(258, 88%, 66%)
   ) !important;
   --list-marker-color-hover: var(--text-muted, #5c5c5c) !important;
-  --menu-background: #efefef !important;
+  --menu-background: var(--background-secondary, #efefef) !important;
   --menu-border-color: var(
     --background-modifier-border-hover,
     #d4d4d4
   ) !important;
-  --menu-border-width: 0.5px !important;
+  --menu-border-width: var(--border-width, 0.5px) !important;
   --menu-corner-shape: var(--corner-shape, round) !important;
   --menu-padding: var(--size-2-3, 6px) !important;
-  --menu-radius: 18px !important;
+  --menu-radius: var(--radius-m, 18px) !important;
   --menu-shadow: var(
     --shadow-s,
     0px 1px 2px rgba(0, 0, 0, 0.028),
@@ -784,7 +817,7 @@ body.theme-light {
   --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
-  --metadata-input-text-color: #404040 !important;
+  --metadata-input-text-color: var(--text-normal, #404040) !important;
   --metadata-label-background-active: var(
     --background-modifier-hover,
     rgba(0, 0, 0, 0.067)
@@ -818,37 +851,44 @@ body.theme-light {
   ) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 0.5px #d4d4d4 !important;
+  --metadata-property-box-shadow-hover: 0 0 0 var(--border-width)
+    var(--background-modifier-border-hover) !important;
   --metadata-property-corner-shape: var(--corner-shape, round) !important;
   --metadata-property-corner-shape-focus: var(--corner-shape, round) !important;
   --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
-  --modal-background: #f5f5f5 !important;
+  --modal-background: var(--background-primary, #f5f5f5) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
-  --modal-border-width: 0.5px !important;
-  --modal-radius: 32px !important;
+  --modal-border-width: var(--border-width, 0.5px) !important;
+  --modal-radius: var(--radius-l, 32px) !important;
   --nav-collapse-icon-color: var(--collapse-icon-color, #ababab) !important;
   --nav-collapse-icon-color-collapsed: var(--text-faint, #ababab) !important;
-  --nav-heading-color: #404040 !important;
+  --nav-heading-color: var(--text-normal, #404040) !important;
   --nav-heading-color-collapsed: var(--text-faint, #ababab) !important;
   --nav-heading-color-collapsed-hover: var(--text-muted, #5c5c5c) !important;
-  --nav-heading-color-hover: #404040 !important;
+  --nav-heading-color-hover: var(--text-normal, #404040) !important;
   --nav-heading-weight: var(--font-medium, 500) !important;
   --nav-heading-weight-hover: var(--font-medium, 500) !important;
   --nav-indentation-guide-color: var(
     --indentation-guide-color,
     rgba(0, 0, 0, 0.12)
   ) !important;
-  --nav-indentation-guide-width: 0.5px !important;
+  --nav-indentation-guide-width: var(
+    --indentation-guide-width,
+    0.5px
+  ) !important;
   --nav-item-background-active: var(
     --background-modifier-hover,
     rgba(0, 0, 0, 0.067)
   ) !important;
-  --nav-item-background-hover: none !important;
+  --nav-item-background-hover: var(
+    --background-modifier-hover,
+    none
+  ) !important;
   --nav-item-background-selected: hsla(
     var(--color-accent-hsl),
     0.15
@@ -856,13 +896,13 @@ body.theme-light {
   --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
   --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
   --nav-item-color: var(--text-muted, #5c5c5c) !important;
-  --nav-item-color-active: #404040 !important;
+  --nav-item-color-active: var(--text-normal, #404040) !important;
   --nav-item-color-highlighted: var(
     --text-accent,
     hsl(258, 88%, 66%)
   ) !important;
-  --nav-item-color-hover: #404040 !important;
-  --nav-item-color-selected: #404040 !important;
+  --nav-item-color-hover: var(--text-normal, #404040) !important;
+  --nav-item-color-selected: var(--text-normal, #404040) !important;
   --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6, 4px 8px 4px 24px) !important;
@@ -870,18 +910,18 @@ body.theme-light {
     --nav-item-padding,
     4px 8px 4px 24px
   ) !important;
-  --nav-item-radius: 10px !important;
+  --nav-item-radius: var(--radius-s, 10px) !important;
   --nav-item-size: var(--font-ui-small, 13px) !important;
   --nav-tag-color: var(--text-faint, #ababab) !important;
   --nav-tag-color-active: var(--text-muted, #5c5c5c) !important;
   --nav-tag-color-hover: var(--text-muted, #5c5c5c) !important;
-  --nav-tag-radius: 10px !important;
-  --nav-tag-weight: 500 !important;
-  --pdf-background: #f5f5f5 !important;
-  --pdf-page-background: #f5f5f5 !important;
+  --nav-tag-radius: var(--radius-s, 10px) !important;
+  --nav-tag-weight: var(--font-semibold, 500) !important;
+  --pdf-background: var(--background-primary, #f5f5f5) !important;
+  --pdf-page-background: var(--background-primary, #f5f5f5) !important;
   --pdf-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: #f5f5f5 !important;
+  --pdf-sidebar-background: var(--background-primary, #f5f5f5) !important;
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pill-border-color: var(--background-modifier-border, #e0e0e0) !important;
@@ -891,50 +931,53 @@ body.theme-light {
   ) !important;
   --pill-border-width: var(--border-width, 1px) !important;
   --pill-color: var(--text-muted, #5c5c5c) !important;
-  --pill-color-hover: #404040 !important;
+  --pill-color-hover: var(--text-normal, #404040) !important;
   --pill-color-remove: var(--text-faint, #ababab) !important;
   --pill-color-remove-hover: var(--text-accent, hsl(258, 88%, 66%)) !important;
   --popover-font-size: var(--font-text-size, 16px) !important;
-  --prompt-background: #f5f5f5 !important;
+  --prompt-background: var(--background-primary, #f5f5f5) !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
-  --prompt-border-width: 0.5px !important;
-  --raised-background: color-mix(in srgb, #f5f5f5 65%, transparent)
-    linear-gradient(#f5f5f5, color-mix(in srgb, #f5f5f5 65%, transparent)) !important;
+  --prompt-border-width: var(--border-width, 0.5px) !important;
+  --raised-background: var(
+    --blur-background,
+    color-mix(in srgb, #f5f5f5 65%, transparent)
+      linear-gradient(#f5f5f5, color-mix(in srgb, #f5f5f5 65%, transparent))
+  ) !important;
   --raised-blur: var(
     --blur-s,
     blur(6px) saturate(1.5) brightness(1.15)
   ) !important;
-  --ribbon-background: #efefef !important;
-  --ribbon-background-collapsed: #f5f5f5 !important;
+  --ribbon-background: var(--background-secondary, #efefef) !important;
+  --ribbon-background-collapsed: var(--background-primary, #f5f5f5) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1)
     var(--size-4-3, 8px 4px 12px) !important;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
-  --scrollbar-radius: 32px !important;
+  --scrollbar-radius: var(--radius-l, 32px) !important;
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
   --search-clear-button-color: var(--text-muted, #5c5c5c) !important;
   --search-icon-color: var(--text-muted, #5c5c5c) !important;
-  --search-result-background: #f5f5f5 !important;
-  --setting-group-heading-color: #404040 !important;
+  --search-result-background: var(--background-primary, #f5f5f5) !important;
+  --setting-group-heading-color: var(--text-normal, #404040) !important;
   --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
-  --setting-group-heading-weight: 500 !important;
+  --setting-group-heading-weight: var(--font-semibold, 500) !important;
   --setting-items-background: var(--background-primary-alt, #fafafa) !important;
   --setting-items-border-color: var(
     --background-modifier-border,
     #e0e0e0
   ) !important;
   --setting-items-padding: var(--size-4-5, 20px) !important;
-  --setting-items-radius: 32px !important;
+  --setting-items-radius: var(--radius-l, 32px) !important;
   --shiki-active-tab-border-color: var(
     --shiki-highlight-neutral,
     #5c5c5c
   ) !important;
-  --shiki-code-background: #efefef !important;
-  --shiki-code-block-border-radius: 10px !important;
-  --shiki-code-block-spacing: 1em !important;
+  --shiki-code-background: var(--code-background, #efefef) !important;
+  --shiki-code-block-border-radius: var(--code-radius, 10px) !important;
+  --shiki-code-block-spacing: var(--p-spacing, 1em) !important;
   --shiki-code-comment: var(--text-faint, #ababab) !important;
   --shiki-code-function: var(--color-green, #08b94e) !important;
   --shiki-code-important: var(--color-orange, #ec7500) !important;
@@ -948,7 +991,7 @@ body.theme-light {
     --background-modifier-border,
     #e0e0e0
   ) !important;
-  --shiki-gutter-border-width: 0.5px !important;
+  --shiki-gutter-border-width: var(--border-width, 0.5px) !important;
   --shiki-gutter-text-color: var(--text-faint, #ababab) !important;
   --shiki-gutter-text-color-highlight: var(
     --shiki-code-normal,
@@ -976,19 +1019,23 @@ body.theme-light {
     --background-modifier-border-hover,
     #d4d4d4
   ) !important;
-  --slider-thumb-border-width: 0.5px !important;
+  --slider-thumb-border-width: var(--border-width, 0.5px) !important;
   --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
   --slider-track-background: var(
     --background-modifier-border,
     #e0e0e0
   ) !important;
-  --status-bar-background: #efefef !important;
-  --status-bar-border-color: rgba(0, 0, 0, 0.05) !important;
-  --status-bar-border-width: 0.5px 0 0 0.5px !important;
+  --status-bar-background: var(--background-secondary, #efefef) !important;
+  --status-bar-border-color: var(
+    --divider-color,
+    rgba(0, 0, 0, 0.05)
+  ) !important;
+  --status-bar-border-width: var(--border-width) 0 0
+    var(--border-width, 0.5px 0 0 0.5px) !important;
   --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
-  --status-bar-radius: 18px 0 0 0 !important;
+  --status-bar-radius: var(--radius-m, 18px 0 0 0) 0 0 0 !important;
   --status-bar-text-color: var(--text-muted, #5c5c5c) !important;
-  --suggestion-background: #f5f5f5 !important;
+  --suggestion-background: var(--background-primary, #f5f5f5) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(--color-red, #e93147) !important;
   --sync-avatar-color-2: var(--color-orange, #ec7500) !important;
@@ -998,31 +1045,34 @@ body.theme-light {
   --sync-avatar-color-6: var(--color-blue, #086ddd) !important;
   --sync-avatar-color-7: var(--color-purple, #7852ee) !important;
   --sync-avatar-color-8: var(--color-pink, #d53984) !important;
-  --tab-background-active: #f5f5f5 !important;
-  --tab-container-background: #efefef !important;
+  --tab-background-active: var(--background-primary, #f5f5f5) !important;
+  --tab-container-background: var(--background-secondary, #efefef) !important;
   --tab-divider-color: var(
     --background-modifier-border-hover,
     #d4d4d4
   ) !important;
   --tab-font-size: var(--font-ui-small, 13px) !important;
-  --tab-outline-color: rgba(0, 0, 0, 0.05) !important;
-  --tab-radius: 18px !important;
+  --tab-outline-color: var(--divider-color, rgba(0, 0, 0, 0.05)) !important;
+  --tab-radius: var(--radius-m, 18px) !important;
   --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
   --tab-stacked-header-width: var(--header-height, 40px) !important;
-  --tab-switcher-background: #efefef !important;
+  --tab-switcher-background: var(--background-secondary, #efefef) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
-    #efefef,
+    var(--background-secondary),
     transparent
   ) !important;
-  --tab-switcher-preview-radius: 36px !important;
+  --tab-switcher-preview-radius: var(--radius-xl, 36px) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
   --tab-text-color: var(--text-faint, #ababab) !important;
   --tab-text-color-active: var(--text-muted, #5c5c5c) !important;
   --tab-text-color-focused: var(--text-muted, #5c5c5c) !important;
   --tab-text-color-focused-active: var(--text-muted, #5c5c5c) !important;
-  --tab-text-color-focused-active-current: #000000 !important;
+  --tab-text-color-focused-active-current: var(
+    --text-extreme,
+    #000000
+  ) !important;
   --tab-text-color-focused-highlighted: var(
     --text-accent,
     hsl(258, 88%, 66%)
@@ -1048,7 +1098,7 @@ body.theme-light {
   --table-header-background: var(--table-background, transparent) !important;
   --table-header-border-color: var(--table-border-color, #e0e0e0) !important;
   --table-header-border-width: var(--table-border-width, 1px) !important;
-  --table-header-color: #404040 !important;
+  --table-header-color: var(--text-normal, #404040) !important;
   --table-header-size: var(--table-text-size, 16px) !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
@@ -1088,21 +1138,29 @@ body.theme-light {
   ) !important;
   --text-error: var(--color-red, #e93147) !important;
   --text-faint: var(--color-base-50, #ababab) !important;
-  --text-highlight-bg: hsla(378, 35.2%, 66%, 0.5) !important;
+  --text-highlight-bg: hsla(
+    calc(var(--accent-h) + 120),
+    calc(var(--accent-s) * 0.4),
+    var(--accent-l),
+    0.5
+  ) !important;
   --text-muted: var(--color-base-70, #5c5c5c) !important;
-  --text-normal: #404040 !important;
+  --text-normal: var(--color-base-100, #404040) !important;
   --text-selection: hsla(var(--color-accent-hsl), 0.2) !important;
   --text-success: var(--color-green, #08b94e) !important;
   --text-warning: var(--color-orange, #ec7500) !important;
-  --titlebar-background: #efefef !important;
-  --titlebar-background-focused: #efefef !important;
+  --titlebar-background: var(--background-secondary, #efefef) !important;
+  --titlebar-background-focused: var(
+    --background-secondary,
+    #efefef
+  ) !important;
   --titlebar-border-color: var(
     --background-modifier-border,
     #e0e0e0
   ) !important;
   --titlebar-text-color: var(--text-muted, #5c5c5c) !important;
-  --titlebar-text-color-focused: #404040 !important;
-  --titlebar-text-weight: 600 !important;
+  --titlebar-text-color-focused: var(--text-normal, #404040) !important;
+  --titlebar-text-weight: var(--font-bold, 600) !important;
   --touch-radius-l: var(--touch-size-l, 52px) !important;
   --touch-radius-m: var(--touch-size-m, 44px) !important;
   --touch-radius-s: var(--touch-size-s, 40px) !important;
@@ -1111,8 +1169,8 @@ body.theme-light {
   --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
   --traffic-lights-offset-x: var(--header-height, 40px) !important;
   --traffic-lights-offset-y: var(--header-height, 40px) !important;
-  --vault-profile-color: #404040 !important;
-  --vault-profile-color-hover: #404040 !important;
+  --vault-profile-color: var(--text-normal, #404040) !important;
+  --vault-profile-color-hover: var(--vault-profile-color, #404040) !important;
   --vault-profile-font-size: var(--font-ui-small, 13px) !important;
   --vault-profile-font-weight: var(--font-medium, 500) !important;
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
@@ -1568,20 +1626,29 @@ body.theme-light {
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
-  --bold-color: #000000 !important;
+  --bold-color: var(--text-extreme, #000000) !important;
   --side-padding: 20px !important;
+  --glass-edge: var(
+    --liquid-shadow-light,
+    inset 1.5px 1.5px 1px 0 rgba(255, 255, 255, 0.7),
+    inset -1.5px -1.5px 1px 0 rgba(255, 255, 255, 0.5),
+    0 3px 20px rgba(0, 0, 0, 0.08)
+  ) !important;
+  --glass-edge-tab: var(
+    --liquid-shadow-tab-light,
+    inset 1.5px 1.5px 1px 0 rgba(255, 255, 255, 0.7),
+    inset -1.5px -1.5px 1px 0 rgba(255, 255, 255, 0.5),
+    1px 1px 2px rgba(0, 0, 0, 0.1)
+  ) !important;
+  --statusbar-glass-bg: color-mix(
+    in srgb,
+    var(--background-primary) 35%,
+    transparent
+  ) !important;
   --active-tab-background: rgba(255, 255, 255, 0.4) !important;
   --div-color: rgba(170, 170, 170, 0.6) !important;
   --dnc-stroke: 1.95px !important;
   --element-shadow: 0 0px 15px rgba(0, 0, 0, 0.1) !important;
-  --glass-edge:
-    inset 1.5px 1.5px 1px 0 rgba(255, 255, 255, 0.7),
-    inset -1.5px -1.5px 1px 0 rgba(255, 255, 255, 0.5),
-    0 3px 20px rgba(0, 0, 0, 0.08) !important;
-  --glass-edge-tab:
-    inset 1.5px 1.5px 1px 0 rgba(255, 255, 255, 0.7),
-    inset -1.5px -1.5px 1px 0 rgba(255, 255, 255, 0.5),
-    1px 1px 2px rgba(0, 0, 0, 0.1) !important;
   --liquid-shadow-dark:
     inset 1.25px 1px 0.5px -0.5px rgba(180, 180, 180, 0.2),
     inset -1.25px -1px 0.5px -0.5px rgba(180, 180, 180, 0.2),
@@ -1598,7 +1665,6 @@ body.theme-light {
     inset 1.5px 1.5px 1px 0 rgba(255, 255, 255, 0.7),
     inset -1.5px -1.5px 1px 0 rgba(255, 255, 255, 0.5),
     1px 1px 2px rgba(0, 0, 0, 0.1) !important;
-  --statusbar-glass-bg: color-mix(in srgb, #f5f5f5 35%, transparent) !important;
   --statusbar-glass-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
   --text-extreme: #000000 !important;
   --transparent-bar: rgba(250, 250, 250, 0.8) !important;
@@ -1629,34 +1695,37 @@ body.theme-dark {
     207,
     110
   ) !important;
-  --background-primary: #000000 !important;
+  --background-primary: var(--color-base-00, #000000) !important;
   --background-primary-alt: var(--color-base-10, #242424) !important;
-  --background-secondary: #191919 !important;
-  --background-secondary-alt: #191919 !important;
-  --bases-cards-background: #000000 !important;
-  --bases-cards-border-width: 0.5px !important;
+  --background-secondary: var(--color-base-20, #191919) !important;
+  --background-secondary-alt: var(--color-base-30, #191919) !important;
+  --bases-cards-background: var(--background-primary, #000000) !important;
+  --bases-cards-border-width: var(--border-width, 0.5px) !important;
   --bases-cards-corner-shape: var(--corner-shape, round) !important;
   --bases-cards-cover-background: var(
     --background-primary-alt,
     #242424
   ) !important;
   --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
-  --bases-cards-radius: 18px !important;
+  --bases-cards-radius: var(--radius-m, 18px) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
   --bases-embed-border-color: var(
     --background-modifier-border,
     #363636
   ) !important;
-  --bases-embed-border-radius: 10px !important;
+  --bases-embed-border-radius: var(--radius-s, 10px) !important;
   --bases-group-heading-property-color: var(--text-muted, #b3b3b3) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller, 12px) !important;
   --bases-group-heading-property-weight: var(--font-normal, 400) !important;
   --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
-  --bases-group-heading-value-weight: 500 !important;
-  --bases-header-border-width: 0 0 0.5px 0 !important;
+  --bases-group-heading-value-weight: var(--font-semibold, 500) !important;
+  --bases-header-border-width: 0 0 var(--border-width) 0 !important;
   --bases-table-border-color: var(--table-border-color, #363636) !important;
-  --bases-table-cell-background-active: #000000 !important;
+  --bases-table-cell-background-active: var(
+    --background-primary,
+    #000000
+  ) !important;
   --bases-table-cell-background-disabled: var(
     --background-primary-alt,
     #242424
@@ -1668,15 +1737,18 @@ body.theme-dark {
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
-  --bases-table-column-border-width: 0.5px !important;
-  --bases-table-container-border-radius: 10px !important;
-  --bases-table-container-border-width: 0.5px !important;
+  --bases-table-column-border-width: var(--border-width, 0.5px) !important;
+  --bases-table-container-border-radius: var(--radius-s, 10px) !important;
+  --bases-table-container-border-width: var(--border-width, 0.5px) !important;
   --bases-table-font-size: var(--font-smaller, 0.875em) !important;
   --bases-table-group-background: var(
     --background-primary-alt,
     #242424
   ) !important;
-  --bases-table-header-background: #000000 !important;
+  --bases-table-header-background: var(
+    --background-primary,
+    #000000
+  ) !important;
   --bases-table-header-background-hover: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
@@ -1692,15 +1764,34 @@ body.theme-dark {
     --table-row-background-hover,
     transparent
   ) !important;
-  --bases-table-row-border-width: 0.5px !important;
-  --bases-table-summary-background: #000000 !important;
+  --bases-table-row-border-width: var(--border-width, 0.5px) !important;
+  --bases-table-summary-background: var(
+    --background-primary,
+    #000000
+  ) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
   ) !important;
-  --blockquote-border-color: hsla(138, 61.6%, 66%, 0.9) !important;
-  --blur-background: color-mix(in srgb, #191919 65%, transparent)
-    linear-gradient(#191919, color-mix(in srgb, #191919 65%, transparent)) !important;
+  --blockquote-border-color: hsla(
+    calc(var(--accent-h) - 120),
+    calc(var(--accent-s) * 0.7),
+    var(--accent-l),
+    0.9
+  ) !important;
+  --blur-background: color-mix(
+      in srgb,
+      var(--interactive-normal) var(--blur-opacity-s),
+      transparent
+    )
+    linear-gradient(
+      var(--interactive-normal),
+      color-mix(
+        in srgb,
+        var(--interactive-normal) var(--blur-opacity-s),
+        transparent
+      )
+    ) !important;
   --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
   --blur-m: blur(var(--blur-radius-m)) saturate(var(--blur-saturation))
@@ -1709,7 +1800,7 @@ body.theme-dark {
     brightness(var(--blur-brightness)) !important;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
   --button-corner-shape: var(--corner-shape, round) !important;
-  --button-radius: 32px !important;
+  --button-radius: var(--radius-l, 32px) !important;
   --callout-blend-mode: var(--highlight-mix-blend-mode, lighten);
   --callout-bug: var(--color-red-rgb, 251, 70, 76);
   --callout-default: var(--color-blue-rgb, 2, 122, 255);
@@ -1718,16 +1809,17 @@ body.theme-dark {
   --callout-fail: var(--color-red-rgb, 251, 70, 76);
   --callout-important: var(--color-cyan-rgb, 83, 223, 221);
   --callout-info: var(--color-blue-rgb, 2, 122, 255);
-  --callout-padding: 15px 10px 0px 20px;
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6, 15px 10px 0px 20px);
   --callout-question: var(--color-orange-rgb, 233, 151, 63);
-  --callout-radius: 10px;
+  --callout-radius: var(--radius-s, 10px);
   --callout-success: var(--color-green-rgb, 68, 207, 110);
   --callout-summary: var(--color-cyan-rgb, 83, 223, 221);
   --callout-tip: var(--color-cyan-rgb, 83, 223, 221);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb, 2, 122, 255);
   --callout-warning: var(--color-orange-rgb, 233, 151, 63);
-  --canvas-background: #000000 !important;
+  --canvas-background: var(--background-primary, #000000) !important;
   --canvas-card-label-color: var(--text-faint, #666666) !important;
   --canvas-color-1: var(--color-red-rgb, 251, 70, 76) !important;
   --canvas-color-2: var(--color-orange-rgb, 233, 151, 63) !important;
@@ -1737,22 +1829,22 @@ body.theme-dark {
   --canvas-color-6: var(--color-purple-rgb, 168, 130, 255) !important;
   --canvas-controls-icon-size: var(--icon-s, 16px) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
-  --canvas-controls-radius: 10px !important;
+  --canvas-controls-radius: var(--radius-s, 10px) !important;
   --canvas-dot-pattern: var(--color-base-30, #363636) !important;
-  --caret-color: #cccccc !important;
+  --caret-color: var(--text-normal, #cccccc) !important;
   --checkbox-border-color: var(--text-faint, #666666) !important;
   --checkbox-border-color-hover: var(--text-muted, #b3b3b3) !important;
-  --checkbox-color: var(--interactive-accent, hsl(258, 88%, 66%)) !important;
+  --checkbox-color: var(--color-accent, hsl(258, 88%, 66%)) !important;
   --checkbox-color-hover: var(
     --interactive-accent-hover,
     hsl(255, 89.76%, 75.9%)
   ) !important;
-  --checkbox-marker-color: #000000 !important;
-  --checkbox-radius: 10px !important;
+  --checkbox-marker-color: var(--background-primary, #000000) !important;
+  --checkbox-radius: var(--radius-s, 10px) !important;
   --checkbox-size: var(--font-text-size, 16px) !important;
-  --checklist-done-color: #666666 !important;
-  --clickable-icon-radius: 32px !important;
-  --code-background: #191919 !important;
+  --checklist-done-color: var(--text-faint, #666666) !important;
+  --clickable-icon-radius: var(--radius-l, 32px) !important;
+  --code-background: var(--background-primary-alt, #191919) !important;
   --code-border-color: var(--background-modifier-border, #363636) !important;
   --code-bracket-background: var(
     --background-modifier-hover,
@@ -1762,11 +1854,11 @@ body.theme-dark {
   --code-function: var(--color-yellow, #e0de71) !important;
   --code-important: var(--color-orange, #e9973f) !important;
   --code-keyword: var(--color-pink, #fa99cd) !important;
-  --code-normal: #cccccc !important;
+  --code-normal: var(--text-normal, #cccccc) !important;
   --code-operator: var(--color-red, #fb464c) !important;
   --code-property: var(--color-cyan, #53dfdd) !important;
   --code-punctuation: var(--text-muted, #b3b3b3) !important;
-  --code-radius: 10px !important;
+  --code-radius: var(--radius-s, 10px) !important;
   --code-size: var(--font-smaller, 0.875em) !important;
   --code-string: var(--color-green, #44cf6e) !important;
   --code-tag: var(--color-red, #fb464c) !important;
@@ -1793,14 +1885,17 @@ body.theme-dark {
   ) !important;
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
-  --divider-color: rgba(0, 0, 0, 0.05) !important;
+  --divider-color: var(
+    --background-modifier-border,
+    rgba(0, 0, 0, 0.05)
+  ) !important;
   --divider-color-hover: var(
     --interactive-accent,
     hsl(258, 88%, 66%)
   ) !important;
   --divider-vertical-height: calc(100% - var(--header-height)) !important;
-  --dropdown-background: #191919 !important;
-  --dropdown-background-hover: #232323 !important;
+  --dropdown-background: var(--interactive-normal, #191919) !important;
+  --dropdown-background-hover: var(--interactive-hover, #232323) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
@@ -1810,10 +1905,14 @@ body.theme-dark {
     0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-start: 2px solid var(--interactive-accent) !important;
-  --embed-padding: 0px !important;
-  --file-header-background: #000000 !important;
-  --file-header-background-focused: #000000 !important;
-  --file-header-border: 0.5px solid transparent !important;
+  --embed-padding: 0 0 0 var(--size-4-6) !important;
+  --file-header-background: var(--background-primary, #000000) !important;
+  --file-header-background-focused: var(
+    --background-primary,
+    #000000
+  ) !important;
+  --file-header-border: var(--border-width, 0.5px solid transparent) solid
+    transparent !important;
   --file-header-font: var(
     --font-interface,
     "??",
@@ -1837,8 +1936,8 @@ body.theme-dark {
   --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
   --file-margins-x: var(--size-4-8, 32px) !important;
   --file-margins-y: var(--size-4-8, 32px) !important;
-  --flair-background: #191919 !important;
-  --flair-color: #cccccc !important;
+  --flair-background: var(--interactive-normal, #191919) !important;
+  --flair-color: var(--text-normal, #cccccc) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-interface:
@@ -1876,7 +1975,7 @@ body.theme-dark {
     --metadata-divider-color-focus,
     transparent
   ) !important;
-  --footnote-divider-width: 0.5px !important;
+  --footnote-divider-width: var(--border-width, 0.5px) !important;
   --footnote-gap: var(--size-4-1, 4px) !important;
   --footnote-id-color: var(--text-muted, #b3b3b3) !important;
   --footnote-id-color-no-occurrences: var(--text-faint, #666666) !important;
@@ -1891,7 +1990,7 @@ body.theme-dark {
   --footnote-line-height: var(--line-height-normal, 1.5) !important;
   --footnote-padding-block: var(--size-2-3, 6px) !important;
   --footnote-padding-inline: var(--size-2-3, 6px) !important;
-  --footnote-radius: 10px !important;
+  --footnote-radius: var(--radius-s, 10px) !important;
   --footnote-size: var(--font-smaller, 0.875em) !important;
   --graph-line: var(
     --color-base-35,
@@ -1902,28 +2001,28 @@ body.theme-dark {
   --graph-node-focused: var(--text-accent, hsl(255, 89.76%, 75.9%)) !important;
   --graph-node-tag: var(--color-green, #44cf6e) !important;
   --graph-node-unresolved: var(--text-faint, #666666) !important;
-  --graph-text: #cccccc !important;
+  --graph-text: var(--text-normal, #cccccc) !important;
   --h5-line-height: var(--line-height-normal, 1.5) !important;
   --h6-line-height: var(--line-height-normal, 1.5) !important;
   --heading-formatting: var(--text-faint, #666666) !important;
-  --heading-spacing: 2.5em !important;
+  --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --hr-color: var(--background-modifier-border, #363636) !important;
   --icon-color: var(--text-muted, #b3b3b3) !important;
   --icon-color-active: var(--text-accent, hsl(255, 89.76%, 75.9%)) !important;
-  --icon-color-focused: #cccccc !important;
+  --icon-color-focused: var(--text-normal, #cccccc) !important;
   --icon-color-hover: var(--text-muted, #b3b3b3) !important;
   --icon-size: var(--icon-m, 18px) !important;
-  --icon-stroke: 1.5px !important;
+  --icon-stroke: var(--icon-m-stroke-width, 1.5px) !important;
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12) !important;
   --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3) !important;
-  --indentation-guide-width: 0.5px !important;
-  --indentation-guide-width-active: 0.5px !important;
+  --indentation-guide-width: var(--border-width, 0.5px) !important;
+  --indentation-guide-width-active: var(--border-width, 0.5px) !important;
   --inline-title-line-height: var(--h1-line-height, 1.2) !important;
   --inline-title-size: var(--h1-size, 1.618em) !important;
   --inline-title-style: var(--h1-style, normal) !important;
   --inline-title-variant: var(--h1-variant, normal) !important;
   --inline-title-weight: var(--h1-weight, 700) !important;
-  --input-border-width: 0.5px !important;
+  --input-border-width: var(--border-width, 0.5px) !important;
   --input-corner-shape: var(--corner-shape, round) !important;
   --input-date-separator: var(--text-faint, #666666) !important;
   --input-font-weight: var(--font-normal, 400) !important;
@@ -1936,8 +2035,8 @@ body.theme-dark {
     hsl(255, 89.76%, 75.9%)
   ) !important;
   --interactive-accent-hsl: var(--color-accent-hsl, 258, 88%, 66%) !important;
-  --interactive-hover: #232323 !important;
-  --interactive-normal: #191919 !important;
+  --interactive-hover: var(--color-base-35, #232323) !important;
+  --interactive-normal: var(--color-base-30, #191919) !important;
   --link-color: var(--text-accent, hsl(255, 89.76%, 75.9%)) !important;
   --link-color-hover: var(
     --text-accent-hover,
@@ -1964,15 +2063,15 @@ body.theme-dark {
     hsl(255, 89.76%, 75.9%)
   ) !important;
   --list-marker-color-hover: var(--text-muted, #b3b3b3) !important;
-  --menu-background: #191919 !important;
+  --menu-background: var(--background-secondary, #191919) !important;
   --menu-border-color: var(
     --background-modifier-border-hover,
     #3f3f3f
   ) !important;
-  --menu-border-width: 0.5px !important;
+  --menu-border-width: var(--border-width, 0.5px) !important;
   --menu-corner-shape: var(--corner-shape, round) !important;
   --menu-padding: var(--size-2-3, 6px) !important;
-  --menu-radius: 18px !important;
+  --menu-radius: var(--radius-m, 18px) !important;
   --menu-shadow: var(
     --shadow-s,
     0px 1px 2px rgba(0, 0, 0, 0.121),
@@ -2013,7 +2112,7 @@ body.theme-dark {
   --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
-  --metadata-input-text-color: #cccccc !important;
+  --metadata-input-text-color: var(--text-normal, #cccccc) !important;
   --metadata-label-background-active: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
@@ -2047,37 +2146,44 @@ body.theme-dark {
   ) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 0.5px #3f3f3f !important;
+  --metadata-property-box-shadow-hover: 0 0 0 var(--border-width)
+    var(--background-modifier-border-hover) !important;
   --metadata-property-corner-shape: var(--corner-shape, round) !important;
   --metadata-property-corner-shape-focus: var(--corner-shape, round) !important;
   --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
-  --modal-background: #000000 !important;
+  --modal-background: var(--background-primary, #000000) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
-  --modal-border-width: 0.5px !important;
-  --modal-radius: 32px !important;
+  --modal-border-width: var(--border-width, 0.5px) !important;
+  --modal-radius: var(--radius-l, 32px) !important;
   --nav-collapse-icon-color: var(--collapse-icon-color, #666666) !important;
   --nav-collapse-icon-color-collapsed: var(--text-faint, #666666) !important;
-  --nav-heading-color: #cccccc !important;
+  --nav-heading-color: var(--text-normal, #cccccc) !important;
   --nav-heading-color-collapsed: var(--text-faint, #666666) !important;
   --nav-heading-color-collapsed-hover: var(--text-muted, #b3b3b3) !important;
-  --nav-heading-color-hover: #cccccc !important;
+  --nav-heading-color-hover: var(--text-normal, #cccccc) !important;
   --nav-heading-weight: var(--font-medium, 500) !important;
   --nav-heading-weight-hover: var(--font-medium, 500) !important;
   --nav-indentation-guide-color: var(
     --indentation-guide-color,
     rgba(255, 255, 255, 0.12)
   ) !important;
-  --nav-indentation-guide-width: 0.5px !important;
+  --nav-indentation-guide-width: var(
+    --indentation-guide-width,
+    0.5px
+  ) !important;
   --nav-item-background-active: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
   ) !important;
-  --nav-item-background-hover: none !important;
+  --nav-item-background-hover: var(
+    --background-modifier-hover,
+    none
+  ) !important;
   --nav-item-background-selected: hsla(
     var(--color-accent-hsl),
     0.15
@@ -2085,13 +2191,13 @@ body.theme-dark {
   --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
   --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
   --nav-item-color: var(--text-muted, #b3b3b3) !important;
-  --nav-item-color-active: #cccccc !important;
+  --nav-item-color-active: var(--text-normal, #cccccc) !important;
   --nav-item-color-highlighted: var(
     --text-accent,
     hsl(255, 89.76%, 75.9%)
   ) !important;
-  --nav-item-color-hover: #cccccc !important;
-  --nav-item-color-selected: #cccccc !important;
+  --nav-item-color-hover: var(--text-normal, #cccccc) !important;
+  --nav-item-color-selected: var(--text-normal, #cccccc) !important;
   --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6, 4px 8px 4px 24px) !important;
@@ -2099,17 +2205,17 @@ body.theme-dark {
     --nav-item-padding,
     4px 8px 4px 24px
   ) !important;
-  --nav-item-radius: 10px !important;
+  --nav-item-radius: var(--radius-s, 10px) !important;
   --nav-item-size: var(--font-ui-small, 13px) !important;
   --nav-tag-color: var(--text-faint, #666666) !important;
   --nav-tag-color-active: var(--text-muted, #b3b3b3) !important;
   --nav-tag-color-hover: var(--text-muted, #b3b3b3) !important;
-  --nav-tag-radius: 10px !important;
-  --nav-tag-weight: 500 !important;
-  --pdf-background: #000000 !important;
-  --pdf-page-background: #000000 !important;
+  --nav-tag-radius: var(--radius-s, 10px) !important;
+  --nav-tag-weight: var(--font-semibold, 500) !important;
+  --pdf-background: var(--background-primary, #000000) !important;
+  --pdf-page-background: var(--background-primary, #000000) !important;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pdf-sidebar-background: #000000 !important;
+  --pdf-sidebar-background: var(--background-primary, #000000) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --pill-border-color: var(--background-modifier-border, #363636) !important;
   --pill-border-color-hover: var(
@@ -2118,53 +2224,56 @@ body.theme-dark {
   ) !important;
   --pill-border-width: var(--border-width, 1px) !important;
   --pill-color: var(--text-muted, #b3b3b3) !important;
-  --pill-color-hover: #cccccc !important;
+  --pill-color-hover: var(--text-normal, #cccccc) !important;
   --pill-color-remove: var(--text-faint, #666666) !important;
   --pill-color-remove-hover: var(
     --text-accent,
     hsl(255, 89.76%, 75.9%)
   ) !important;
   --popover-font-size: var(--font-text-size, 16px) !important;
-  --prompt-background: #191919 !important;
+  --prompt-background: var(--background-primary, #191919) !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
-  --prompt-border-width: 0.5px !important;
-  --raised-background: color-mix(in srgb, #191919 65%, transparent)
-    linear-gradient(#191919, color-mix(in srgb, #191919 65%, transparent)) !important;
+  --prompt-border-width: var(--border-width, 0.5px) !important;
+  --raised-background: var(
+    --blur-background,
+    color-mix(in srgb, #191919 65%, transparent)
+      linear-gradient(#191919, color-mix(in srgb, #191919 65%, transparent))
+  ) !important;
   --raised-blur: var(
     --blur-s,
     blur(6px) saturate(1.5) brightness(1.15)
   ) !important;
-  --ribbon-background: #191919 !important;
-  --ribbon-background-collapsed: #000000 !important;
+  --ribbon-background: var(--background-secondary, #191919) !important;
+  --ribbon-background-collapsed: var(--background-primary, #000000) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1)
     var(--size-4-3, 8px 4px 12px) !important;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
-  --scrollbar-radius: 32px !important;
+  --scrollbar-radius: var(--radius-l, 32px) !important;
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
   --search-clear-button-color: var(--text-muted, #b3b3b3) !important;
   --search-icon-color: var(--text-muted, #b3b3b3) !important;
-  --search-result-background: #000000 !important;
-  --setting-group-heading-color: #cccccc !important;
+  --search-result-background: var(--background-primary, #000000) !important;
+  --setting-group-heading-color: var(--text-normal, #cccccc) !important;
   --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
-  --setting-group-heading-weight: 500 !important;
-  --setting-items-background: #191919 !important;
+  --setting-group-heading-weight: var(--font-semibold, 500) !important;
+  --setting-items-background: var(--background-primary-alt, #191919) !important;
   --setting-items-border-color: var(
     --background-modifier-border,
     #363636
   ) !important;
   --setting-items-padding: var(--size-4-5, 20px) !important;
-  --setting-items-radius: 32px !important;
+  --setting-items-radius: var(--radius-l, 32px) !important;
   --shiki-active-tab-border-color: var(
     --shiki-highlight-neutral,
     #b3b3b3
   ) !important;
-  --shiki-code-background: #191919 !important;
-  --shiki-code-block-border-radius: 10px !important;
-  --shiki-code-block-spacing: 1em !important;
+  --shiki-code-background: var(--code-background, #191919) !important;
+  --shiki-code-block-border-radius: var(--code-radius, 10px) !important;
+  --shiki-code-block-spacing: var(--p-spacing, 1em) !important;
   --shiki-code-comment: var(--text-faint, #666666) !important;
   --shiki-code-function: var(--color-green, #44cf6e) !important;
   --shiki-code-important: var(--color-orange, #e9973f) !important;
@@ -2178,7 +2287,7 @@ body.theme-dark {
     --background-modifier-border,
     #363636
   ) !important;
-  --shiki-gutter-border-width: 0.5px !important;
+  --shiki-gutter-border-width: var(--border-width, 0.5px) !important;
   --shiki-gutter-text-color: var(--text-faint, #666666) !important;
   --shiki-gutter-text-color-highlight: var(
     --shiki-code-normal,
@@ -2206,19 +2315,23 @@ body.theme-dark {
     --background-modifier-border-hover,
     #3f3f3f
   ) !important;
-  --slider-thumb-border-width: 0.5px !important;
+  --slider-thumb-border-width: var(--border-width, 0.5px) !important;
   --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
   --slider-track-background: var(
     --background-modifier-border,
     #363636
   ) !important;
-  --status-bar-background: #191919 !important;
-  --status-bar-border-color: rgba(0, 0, 0, 0.05) !important;
-  --status-bar-border-width: 0.5px 0 0 0.5px !important;
+  --status-bar-background: var(--background-secondary, #191919) !important;
+  --status-bar-border-color: var(
+    --divider-color,
+    rgba(0, 0, 0, 0.05)
+  ) !important;
+  --status-bar-border-width: var(--border-width) 0 0
+    var(--border-width, 0.5px 0 0 0.5px) !important;
   --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
-  --status-bar-radius: 18px 0 0 0 !important;
+  --status-bar-radius: var(--radius-m, 18px 0 0 0) 0 0 0 !important;
   --status-bar-text-color: var(--text-muted, #b3b3b3) !important;
-  --suggestion-background: #000000 !important;
+  --suggestion-background: var(--background-primary, #000000) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(--color-red, #fb464c) !important;
   --sync-avatar-color-2: var(--color-orange, #e9973f) !important;
@@ -2228,31 +2341,34 @@ body.theme-dark {
   --sync-avatar-color-6: var(--color-blue, #027aff) !important;
   --sync-avatar-color-7: var(--color-purple, #a882ff) !important;
   --sync-avatar-color-8: var(--color-pink, #fa99cd) !important;
-  --tab-background-active: #000000 !important;
-  --tab-container-background: #191919 !important;
+  --tab-background-active: var(--background-primary, #000000) !important;
+  --tab-container-background: var(--background-secondary, #191919) !important;
   --tab-divider-color: var(
     --background-modifier-border-hover,
     #3f3f3f
   ) !important;
   --tab-font-size: var(--font-ui-small, 13px) !important;
-  --tab-outline-color: rgba(0, 0, 0, 0.05) !important;
-  --tab-radius: 18px !important;
+  --tab-outline-color: var(--divider-color, rgba(0, 0, 0, 0.05)) !important;
+  --tab-radius: var(--radius-m, 18px) !important;
   --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
   --tab-stacked-header-width: var(--header-height, 40px) !important;
-  --tab-switcher-background: #191919 !important;
+  --tab-switcher-background: var(--background-secondary, #191919) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
-    #191919,
+    var(--background-secondary),
     transparent
   ) !important;
-  --tab-switcher-preview-radius: 36px !important;
+  --tab-switcher-preview-radius: var(--radius-xl, 36px) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
   --tab-text-color: var(--text-faint, #666666) !important;
   --tab-text-color-active: var(--text-muted, #b3b3b3) !important;
   --tab-text-color-focused: var(--text-muted, #b3b3b3) !important;
   --tab-text-color-focused-active: var(--text-muted, #b3b3b3) !important;
-  --tab-text-color-focused-active-current: #ffffff !important;
+  --tab-text-color-focused-active-current: var(
+    --text-extreme,
+    #ffffff
+  ) !important;
   --tab-text-color-focused-highlighted: var(
     --text-accent,
     hsl(255, 89.76%, 75.9%)
@@ -2278,7 +2394,7 @@ body.theme-dark {
   --table-header-background: var(--table-background, transparent) !important;
   --table-header-border-color: var(--table-border-color, #363636) !important;
   --table-header-border-width: var(--table-border-width, 1px) !important;
-  --table-header-color: #cccccc !important;
+  --table-header-color: var(--text-normal, #cccccc) !important;
   --table-header-size: var(--table-text-size, 16px) !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
@@ -2318,21 +2434,29 @@ body.theme-dark {
   ) !important;
   --text-error: var(--color-red, #fb464c) !important;
   --text-faint: var(--color-base-50, #666666) !important;
-  --text-highlight-bg: hsla(378, 35.2%, 66%, 0.5) !important;
+  --text-highlight-bg: hsla(
+    calc(var(--accent-h) + 120),
+    calc(var(--accent-s) * 0.4),
+    var(--accent-l),
+    0.5
+  ) !important;
   --text-muted: var(--color-base-70, #b3b3b3) !important;
-  --text-normal: #cccccc !important;
+  --text-normal: var(--color-base-100, #cccccc) !important;
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33) !important;
   --text-success: var(--color-green, #44cf6e) !important;
   --text-warning: var(--color-orange, #e9973f) !important;
-  --titlebar-background: #191919 !important;
-  --titlebar-background-focused: #191919 !important;
+  --titlebar-background: var(--background-secondary, #191919) !important;
+  --titlebar-background-focused: var(
+    --background-secondary,
+    #191919
+  ) !important;
   --titlebar-border-color: var(
     --background-modifier-border,
     #363636
   ) !important;
   --titlebar-text-color: var(--text-muted, #b3b3b3) !important;
-  --titlebar-text-color-focused: #cccccc !important;
-  --titlebar-text-weight: 600 !important;
+  --titlebar-text-color-focused: var(--text-normal, #cccccc) !important;
+  --titlebar-text-weight: var(--font-bold, 600) !important;
   --touch-radius-l: var(--touch-size-l, 52px) !important;
   --touch-radius-m: var(--touch-size-m, 44px) !important;
   --touch-radius-s: var(--touch-size-s, 40px) !important;
@@ -2341,8 +2465,8 @@ body.theme-dark {
   --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
   --traffic-lights-offset-x: var(--header-height, 40px) !important;
   --traffic-lights-offset-y: var(--header-height, 40px) !important;
-  --vault-profile-color: #cccccc !important;
-  --vault-profile-color-hover: #cccccc !important;
+  --vault-profile-color: var(--text-normal, #cccccc) !important;
+  --vault-profile-color-hover: var(--vault-profile-color, #cccccc) !important;
   --vault-profile-font-size: var(--font-ui-small, 13px) !important;
   --vault-profile-font-weight: var(--font-medium, 500) !important;
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
@@ -2782,23 +2906,32 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --bold-color: #ffffff !important;
-  --mobile-sidebar-background: #191919 !important;
+  --bold-color: var(--text-extreme, #ffffff) !important;
+  --mobile-sidebar-background: var(--background-secondary, #191919) !important;
   --side-padding: 20px !important;
   --selected-item: #191919 !important;
+  --glass-edge: var(
+    --liquid-shadow-dark,
+    inset 1.25px 1px 0.5px -0.5px rgba(180, 180, 180, 0.2),
+    inset -1.25px -1px 0.5px -0.5px rgba(180, 180, 180, 0.2),
+    0 3px 20px rgba(0, 0, 0, 0.4)
+  ) !important;
+  --glass-edge-tab: var(
+    --liquid-shadow-tab-dark,
+    inset 1.25px 1px 0.5px -0.5px rgba(180, 180, 180, 0.2),
+    inset -1.25px -1px 0.5px -0.5px rgba(180, 180, 180, 0.2),
+    0 1px 0px rgba(0, 0, 0, 0.4)
+  ) !important;
+  --statusbar-glass-bg: color-mix(
+    in srgb,
+    var(--background-primary) 35%,
+    transparent
+  ) !important;
   --active-tab-background: rgba(100, 100, 100, 0.3) !important;
   --corner-smoothing: system-ui !important;
   --div-color: rgba(170, 170, 170, 0.2) !important;
   --dnc-stroke: 1.95px !important;
   --element-shadow: 0 0px 15px rgba(0, 0, 0, 0.8) !important;
-  --glass-edge:
-    inset 1.25px 1px 0.5px -0.5px rgba(180, 180, 180, 0.2),
-    inset -1.25px -1px 0.5px -0.5px rgba(180, 180, 180, 0.2),
-    0 3px 20px rgba(0, 0, 0, 0.4) !important;
-  --glass-edge-tab:
-    inset 1.25px 1px 0.5px -0.5px rgba(180, 180, 180, 0.2),
-    inset -1.25px -1px 0.5px -0.5px rgba(180, 180, 180, 0.2),
-    0 1px 0px rgba(0, 0, 0, 0.4) !important;
   --liquid-shadow-dark:
     inset 1.25px 1px 0.5px -0.5px rgba(180, 180, 180, 0.2),
     inset -1.25px -1px 0.5px -0.5px rgba(180, 180, 180, 0.2),
@@ -2818,7 +2951,6 @@ body.theme-dark {
   --popup-background: #191919 !important;
   --prompt-input-background: #191919 !important;
   --properties-background: #191919 !important;
-  --statusbar-glass-bg: color-mix(in srgb, #000000 35%, transparent) !important;
   --statusbar-glass-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
   --text-extreme: #ffffff !important;
   --transparent-bar: rgba(25, 25, 25, 0.8) !important;
@@ -3018,7 +3150,7 @@ body body.theme-light .markdown-rendered p {
 }
 body body.theme-light strong {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--bold-color, rgb(0, 0, 0));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3057,7 +3189,7 @@ body body.theme-light strong {
 }
 body body.theme-light b {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--bold-color, rgb(0, 0, 0));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3096,7 +3228,7 @@ body body.theme-light b {
 }
 body body.theme-light em {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(64, 64, 64);
+  color: var(--italic-color, rgb(64, 64, 64));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3135,7 +3267,7 @@ body body.theme-light em {
 }
 body body.theme-light i {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(64, 64, 64);
+  color: var(--italic-color, rgb(64, 64, 64));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3173,8 +3305,8 @@ body body.theme-light i {
   animation-play-state: running;
 }
 body body.theme-light .markdown-rendered mark {
-  background-color: rgba(199, 156, 138, 0.5);
-  color: rgb(64, 64, 64);
+  background-color: var(--text-highlight-bg, rgba(199, 156, 138, 0.5));
+  color: var(--text-normal, rgb(64, 64, 64));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3366,7 +3498,7 @@ body body.theme-light .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-light .markdown-rendered code {
-  background-color: rgb(239, 239, 239);
+  background-color: var(--code-background, rgb(239, 239, 239));
   border: 0px solid rgb(224, 224, 224);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -3376,7 +3508,7 @@ body body.theme-light .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(64, 64, 64);
+  color: var(--code-normal, rgb(64, 64, 64));
   font-family: var(
     --font-monospace,
     ui-monospace,
@@ -3411,7 +3543,7 @@ body body.theme-light .markdown-rendered pre > code {
 }
 body body.theme-light :not(pre) > code[class*="language-"],
 body body.theme-light pre[class*="language-"] {
-  background-color: rgb(239, 239, 239);
+  background-color: var(--code-background, rgb(239, 239, 239));
   border: 0px solid rgb(224, 224, 224);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -3470,7 +3602,10 @@ body
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-light .markdown-rendered blockquote {
-  background-color: rgba(128, 128, 128, 0.1);
+  background-color: var(
+    --blockquote-background-color,
+    rgba(128, 128, 128, 0.1)
+  );
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3507,7 +3642,7 @@ body body.theme-light .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3524,7 +3659,7 @@ body body.theme-light .site-body-left-column input.search-bar {
     sans-serif;
 }
 body body.theme-light .search-results {
-  background-color: rgb(245, 245, 245);
+  background-color: var(--prompt-background, rgb(245, 245, 245));
   border: 0px solid rgb(64, 64, 64);
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
@@ -3534,10 +3669,12 @@ body body.theme-light .search-results {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  box-shadow:
+  box-shadow: var(
+    --glass-edge,
     rgba(255, 255, 255, 0.7) 1.5px 1.5px 1px 0px inset,
     rgba(255, 255, 255, 0.5) -1.5px -1.5px 1px 0px inset,
-    rgba(0, 0, 0, 0.08) 0px 3px 20px 0px;
+    rgba(0, 0, 0, 0.08) 0px 3px 20px 0px
+  );
 }
 body body.theme-light .search-results > * {
   background-color: rgba(0, 0, 0, 0);
@@ -3612,7 +3749,7 @@ body body.theme-light div.search-results .suggestion-item.is-selected {
   color: rgb(64, 64, 64);
 }
 body body.theme-light .published-container .markdown-rendered h1 {
-  color: rgb(0, 0, 0);
+  color: var(--text-extreme, rgb(0, 0, 0));
   font-family: var(
     --h1-font,
     ui-sans-serif,
@@ -3632,7 +3769,7 @@ body body.theme-light .published-container .markdown-rendered h1 {
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h2 {
-  color: rgb(0, 0, 0);
+  color: var(--text-extreme, rgb(0, 0, 0));
   font-family: var(
     --h2-font,
     ui-sans-serif,
@@ -3652,7 +3789,7 @@ body body.theme-light .published-container .markdown-rendered h2 {
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h3 {
-  color: rgb(0, 0, 0);
+  color: var(--text-extreme, rgb(0, 0, 0));
   font-family: var(
     --h3-font,
     ui-sans-serif,
@@ -3672,7 +3809,7 @@ body body.theme-light .published-container .markdown-rendered h3 {
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h4 {
-  color: rgb(0, 0, 0);
+  color: var(--text-extreme, rgb(0, 0, 0));
   font-family: var(
     --h4-font,
     ui-sans-serif,
@@ -3692,7 +3829,7 @@ body body.theme-light .published-container .markdown-rendered h4 {
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h5 {
-  color: rgb(64, 64, 64);
+  color: var(--h5-color, rgb(64, 64, 64));
   font-family: var(
     --h5-font,
     ui-sans-serif,
@@ -3712,7 +3849,7 @@ body body.theme-light .published-container .markdown-rendered h5 {
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h6 {
-  color: rgb(138, 92, 245);
+  color: var(--color-accent, rgb(138, 92, 245));
   font-family: var(
     --h6-font,
     ui-sans-serif,
@@ -3737,7 +3874,7 @@ body
   .outline-view
   .tree-item
   > .tree-item-self {
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
 }
 body
   body.theme-light
@@ -3789,7 +3926,7 @@ body body.theme-light body {
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   border: 0px solid rgba(8, 109, 221, 0.25);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -3839,7 +3976,7 @@ body body.theme-light .callout > .callout-content {
   padding: 0px;
 }
 body body.theme-light .callout[data-callout="abstract"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-summary, 0, 191, 188);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3876,7 +4013,7 @@ body body.theme-light .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="info"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-info, 8, 109, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3913,7 +4050,7 @@ body body.theme-light .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="todo"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-todo, 8, 109, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3950,7 +4087,7 @@ body body.theme-light .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="tip"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-tip, 0, 191, 188);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3987,7 +4124,7 @@ body body.theme-light .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="success"] {
-  --callout-color: 8, 185, 78;
+  --callout-color: var(--callout-success, 8, 185, 78);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4024,7 +4161,7 @@ body body.theme-light .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="question"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-question, 236, 117, 0);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4061,7 +4198,7 @@ body body.theme-light .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="warning"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-warning, 236, 117, 0);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4098,7 +4235,7 @@ body body.theme-light .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="danger"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-error, 233, 49, 71);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4135,7 +4272,7 @@ body body.theme-light .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="failure"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-fail, 233, 49, 71);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4172,7 +4309,7 @@ body body.theme-light .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="bug"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-bug, 233, 49, 71);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4209,7 +4346,7 @@ body body.theme-light .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="example"] {
-  --callout-color: 120, 82, 238;
+  --callout-color: var(--callout-example, 120, 82, 238);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto
@@ -4246,7 +4383,7 @@ body body.theme-light .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -4337,7 +4474,7 @@ body body.theme-light .markdown-rendered tbody {
 }
 body body.theme-light .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(64, 64, 64);
+  color: var(--table-header-color, rgb(64, 64, 64));
   font-weight: var(--table-header-weight, 600);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
@@ -4359,7 +4496,7 @@ body body.theme-light .markdown-rendered th {
 }
 body body.theme-light .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(64, 64, 64);
+  color: var(--table-text-color, rgb(64, 64, 64));
   font-weight: 400;
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
@@ -4679,9 +4816,9 @@ body body.theme-light details[open] {
   padding: 0px;
 }
 body body.theme-light kbd {
-  background-color: rgb(239, 239, 239);
+  background-color: var(--code-background, rgb(239, 239, 239));
   box-shadow: none;
-  color: rgb(64, 64, 64);
+  color: var(--code-normal, rgb(64, 64, 64));
   font-family: var(
     --font-monospace,
     ui-monospace,
@@ -4925,7 +5062,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(0, 0, 0);
+  color: var(--text-extreme, rgb(0, 0, 0));
   cursor: var(--cursor, default);
   font-family:
     ui-sans-serif,
@@ -4941,7 +5078,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
   text-decoration: rgb(34, 34, 34);
 }
 body
@@ -4952,7 +5089,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(0, 0, 0);
+  color: var(--text-extreme, rgb(0, 0, 0));
   cursor: var(--cursor, default);
   font-family:
     ui-sans-serif,
@@ -4968,7 +5105,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
   text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
@@ -4983,7 +5120,10 @@ body body.theme-light .clickable-icon {
   border-bottom-right-radius: 32px;
 }
 body body.theme-light .site-footer {
-  background-color: color(srgb 0.960784 0.960784 0.960784 / 0.35);
+  background-color: var(
+    --status-bar-background,
+    color(srgb 0.960784 0.960784 0.960784 / 0.35)
+  );
   color: var(--status-bar-text-color, rgb(92, 92, 92));
   font-family:
     ui-sans-serif,
@@ -5108,7 +5248,7 @@ body body.theme-light .view-header-breadcrumb-separator {
     sans-serif;
 }
 body body.theme-light .page-header .page-title {
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -5402,7 +5542,7 @@ body body.theme-dark .markdown-rendered p {
 }
 body body.theme-dark strong {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--bold-color, rgb(255, 255, 255));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -5441,7 +5581,7 @@ body body.theme-dark strong {
 }
 body body.theme-dark b {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--bold-color, rgb(255, 255, 255));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -5480,7 +5620,7 @@ body body.theme-dark b {
 }
 body body.theme-dark em {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(204, 204, 204);
+  color: var(--italic-color, rgb(204, 204, 204));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -5519,7 +5659,7 @@ body body.theme-dark em {
 }
 body body.theme-dark i {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(204, 204, 204);
+  color: var(--italic-color, rgb(204, 204, 204));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -5557,8 +5697,8 @@ body body.theme-dark i {
   animation-play-state: running;
 }
 body body.theme-dark .markdown-rendered mark {
-  background-color: rgba(199, 156, 138, 0.5);
-  color: rgb(204, 204, 204);
+  background-color: var(--text-highlight-bg, rgba(199, 156, 138, 0.5));
+  color: var(--text-normal, rgb(204, 204, 204));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -5756,7 +5896,7 @@ body body.theme-dark .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-dark .markdown-rendered code {
-  background-color: rgb(25, 25, 25);
+  background-color: var(--code-background, rgb(25, 25, 25));
   border: 0px solid rgb(54, 54, 54);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -5766,7 +5906,7 @@ body body.theme-dark .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(204, 204, 204);
+  color: var(--code-normal, rgb(204, 204, 204));
   font-family: var(
     --font-monospace,
     ui-monospace,
@@ -5801,7 +5941,7 @@ body body.theme-dark .markdown-rendered pre > code {
 }
 body body.theme-dark :not(pre) > code[class*="language-"],
 body body.theme-dark pre[class*="language-"] {
-  background-color: rgb(25, 25, 25);
+  background-color: var(--code-background, rgb(25, 25, 25));
   border: 0px solid rgb(54, 54, 54);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -5860,7 +6000,10 @@ body
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-dark .markdown-rendered blockquote {
-  background-color: rgba(128, 128, 128, 0.1);
+  background-color: var(
+    --blockquote-background-color,
+    rgba(128, 128, 128, 0.1)
+  );
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -5897,7 +6040,7 @@ body body.theme-dark .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(204, 204, 204);
+  color: var(--text-normal, rgb(204, 204, 204));
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -5914,7 +6057,7 @@ body body.theme-dark .site-body-left-column input.search-bar {
     sans-serif;
 }
 body body.theme-dark .search-results {
-  background-color: rgb(25, 25, 25);
+  background-color: var(--prompt-background, rgb(25, 25, 25));
   border: 0px solid rgb(204, 204, 204);
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
@@ -5924,10 +6067,12 @@ body body.theme-dark .search-results {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  box-shadow:
+  box-shadow: var(
+    --glass-edge,
     rgba(180, 180, 180, 0.2) 1.25px 1px 0.5px -0.5px inset,
     rgba(180, 180, 180, 0.2) -1.25px -1px 0.5px -0.5px inset,
-    rgba(0, 0, 0, 0.4) 0px 3px 20px 0px;
+    rgba(0, 0, 0, 0.4) 0px 3px 20px 0px
+  );
 }
 body body.theme-dark .search-results > * {
   background-color: rgba(0, 0, 0, 0);
@@ -6005,7 +6150,7 @@ body body.theme-dark div.search-results .suggestion-item.is-selected {
   color: rgb(204, 204, 204);
 }
 body body.theme-dark .published-container .markdown-rendered h1 {
-  color: rgb(255, 255, 255);
+  color: var(--text-extreme, rgb(255, 255, 255));
   font-family: var(
     --h1-font,
     ui-sans-serif,
@@ -6025,7 +6170,7 @@ body body.theme-dark .published-container .markdown-rendered h1 {
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
-  color: rgb(255, 255, 255);
+  color: var(--text-extreme, rgb(255, 255, 255));
   font-family: var(
     --h2-font,
     ui-sans-serif,
@@ -6045,7 +6190,7 @@ body body.theme-dark .published-container .markdown-rendered h2 {
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
-  color: rgb(255, 255, 255);
+  color: var(--text-extreme, rgb(255, 255, 255));
   font-family: var(
     --h3-font,
     ui-sans-serif,
@@ -6065,7 +6210,7 @@ body body.theme-dark .published-container .markdown-rendered h3 {
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
-  color: rgb(255, 255, 255);
+  color: var(--text-extreme, rgb(255, 255, 255));
   font-family: var(
     --h4-font,
     ui-sans-serif,
@@ -6085,7 +6230,7 @@ body body.theme-dark .published-container .markdown-rendered h4 {
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
-  color: rgb(204, 204, 204);
+  color: var(--h5-color, rgb(204, 204, 204));
   font-family: var(
     --h5-font,
     ui-sans-serif,
@@ -6105,7 +6250,7 @@ body body.theme-dark .published-container .markdown-rendered h5 {
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
-  color: rgb(138, 92, 245);
+  color: var(--color-accent, rgb(138, 92, 245));
   font-family: var(
     --h6-font,
     ui-sans-serif,
@@ -6130,7 +6275,7 @@ body
   .outline-view
   .tree-item
   > .tree-item-self {
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
 }
 body
   body.theme-dark
@@ -6182,7 +6327,7 @@ body body.theme-dark body {
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border: 0px solid rgba(2, 122, 255, 0.25);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -6232,7 +6377,7 @@ body body.theme-dark .callout > .callout-content {
   padding: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -6269,7 +6414,7 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -6306,7 +6451,7 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -6343,7 +6488,7 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -6380,7 +6525,7 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
@@ -6417,7 +6562,7 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -6454,7 +6599,7 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -6491,7 +6636,7 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -6528,7 +6673,7 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -6565,7 +6710,7 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -6602,7 +6747,7 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
@@ -6639,7 +6784,7 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -6730,7 +6875,7 @@ body body.theme-dark .markdown-rendered tbody {
 }
 body body.theme-dark .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(204, 204, 204);
+  color: var(--table-header-color, rgb(204, 204, 204));
   font-weight: var(--table-header-weight, 600);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
@@ -6752,7 +6897,7 @@ body body.theme-dark .markdown-rendered th {
 }
 body body.theme-dark .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(204, 204, 204);
+  color: var(--table-text-color, rgb(204, 204, 204));
   font-weight: 400;
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
@@ -7072,9 +7217,9 @@ body body.theme-dark details[open] {
   padding: 0px;
 }
 body body.theme-dark kbd {
-  background-color: rgb(25, 25, 25);
+  background-color: var(--code-background, rgb(25, 25, 25));
   box-shadow: none;
-  color: rgb(204, 204, 204);
+  color: var(--code-normal, rgb(204, 204, 204));
   font-family: var(
     --font-monospace,
     ui-monospace,
@@ -7318,7 +7463,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(255, 255, 255);
+  color: var(--text-extreme, rgb(255, 255, 255));
   cursor: var(--cursor, default);
   font-family:
     ui-sans-serif,
@@ -7334,7 +7479,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
   text-decoration: rgb(218, 218, 218);
 }
 body
@@ -7345,7 +7490,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(255, 255, 255);
+  color: var(--text-extreme, rgb(255, 255, 255));
   cursor: var(--cursor, default);
   font-family:
     ui-sans-serif,
@@ -7361,7 +7506,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
   text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
@@ -7376,7 +7521,7 @@ body body.theme-dark .clickable-icon {
   border-bottom-right-radius: 32px;
 }
 body body.theme-dark .site-footer {
-  background-color: color(srgb 0 0 0 / 0.35);
+  background-color: var(--status-bar-background, color(srgb 0 0 0 / 0.35));
   color: var(--status-bar-text-color, rgb(179, 179, 179));
   font-family:
     ui-sans-serif,
@@ -7501,7 +7646,7 @@ body body.theme-dark .view-header-breadcrumb-separator {
     sans-serif;
 }
 body body.theme-dark .page-header .page-title {
-  color: rgb(204, 204, 204);
+  color: var(--text-normal, rgb(204, 204, 204));
   font-family:
     ui-sans-serif,
     -apple-system,

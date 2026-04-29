@@ -4,78 +4,75 @@ export const theme: ThemeData = {
   meta: { name: "dracula-slim", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
-  --background-primary: #282a36;
-  --background-primary-alt: #44475a;
-  --background-secondary: #282a36;
-  --background-secondary-alt: #1a1e24;
-  --bases-cards-background: #282a36;
-  --bases-cards-cover-background: #44475a;
-  --bases-table-cell-background-active: #282a36;
-  --bases-table-cell-background-disabled: #44475a;
-  --bases-table-cell-shadow-focus: 0 0 0 2px #b294bb;
-  --bases-table-group-background: #44475a;
-  --bases-table-header-background: #282a36;
-  --bases-table-summary-background: #282a36;
+  --background-primary: var(--color-base-00, #282a36);
+  --background-primary-alt: var(--color-base-10, #44475a);
+  --background-secondary: var(--color-base-20, #282a36);
+  --background-secondary-alt: var(--color-base-30, #1a1e24);
+  --bases-cards-background: var(--background-primary, #282a36);
+  --bases-cards-cover-background: var(--background-primary-alt, #44475a);
+  --bases-table-cell-background-active: var(--background-primary, #282a36);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #44475a);
+  --bases-table-group-background: var(--background-primary-alt, #44475a);
+  --bases-table-header-background: var(--background-primary, #282a36);
+  --bases-table-summary-background: var(--background-primary, #282a36);
   --blockquote-border: #b294bb;
-  --blockquote-border-color: #b294bb;
-  --canvas-background: #282a36;
-  --caret-color: #f8f8f2;
-  --checkbox-color: #b294bb;
-  --checkbox-marker-color: #282a36;
-  --code-background: #44475a;
-  --code-normal: #f8f8f2;
-  --dark: var(--text-normal, #f8f8f2);
-  --darkgray: var(--text-normal, #f8f8f2);
-  --divider-color-hover: #b294bb;
-  --embed-border-start: 2px solid #b294bb;
-  --file-header-background: #282a36;
-  --file-header-background-focused: #282a36;
-  --flair-color: #f8f8f2;
+  --blockquote-border-color: var(--interactive-accent, #b294bb);
+  --canvas-background: var(--background-primary, #282a36);
+  --caret-color: var(--text-normal, #f8f8f2);
+  --checkbox-color: var(--interactive-accent, #b294bb);
+  --checkbox-marker-color: var(--background-primary, #282a36);
+  --code-background: var(--background-primary-alt, #44475a);
+  --code-normal: var(--text-normal, #f8f8f2);
+  --dark: var(--text-normal, var(--color-base-100, #f8f8f2));
+  --darkgray: var(--text-normal, var(--color-base-100, #f8f8f2));
+  --divider-color-hover: var(--interactive-accent, #b294bb);
+  --file-header-background: var(--background-primary, #282a36);
+  --file-header-background-focused: var(--background-primary, #282a36);
+  --flair-color: var(--text-normal, #f8f8f2);
   --font-family-editor: Avenir, Avenir Next, sans-serif;
   --font-family-preview: Avenir, Avenir Next, sans-serif;
-  --graph-text: #f8f8f2;
-  --gray: var(--text-normal, #f8f8f2);
-  --icon-color-focused: #f8f8f2;
-  --interactive-accent: #b294bb;
+  --graph-text: var(--text-normal, #f8f8f2);
+  --gray: var(--text-normal, var(--color-base-100, #f8f8f2));
+  --icon-color-focused: var(--text-normal, #f8f8f2);
+  --interactive-accent: var(--color-accent, #b294bb);
   --interactive-accent-rgb: #f1fa8c;
-  --light: var(--background-primary, #282a36);
-  --lightgray: var(--background-secondary, #282a36);
+  --light: var(--background-primary, var(--color-base-00, #282a36));
+  --lightgray: var(--background-secondary, var(--color-base-20, #282a36));
   --markup-code: #ffb86c;
-  --menu-background: #282a36;
-  --metadata-input-text-color: #f8f8f2;
-  --modal-background: #282a36;
-  --nav-heading-color: #f8f8f2;
-  --nav-heading-color-hover: #f8f8f2;
-  --nav-item-color-active: #f8f8f2;
-  --nav-item-color-hover: #f8f8f2;
-  --nav-item-color-selected: #f8f8f2;
-  --pdf-background: #282a36;
-  --pdf-page-background: #282a36;
-  --pdf-sidebar-background: #282a36;
-  --pill-color-hover: #f8f8f2;
-  --prompt-background: #282a36;
-  --ribbon-background: #282a36;
-  --ribbon-background-collapsed: #282a36;
-  --search-result-background: #282a36;
-  --secondary: var(--interactive-accent, #b294bb);
-  --setting-group-heading-color: #f8f8f2;
-  --setting-items-background: #44475a;
-  --shiki-code-background: #44475a;
-  --status-bar-background: #282a36;
-  --suggestion-background: #282a36;
-  --tab-background-active: #282a36;
-  --tab-container-background: #282a36;
-  --tab-switcher-background: #282a36;
-  --tab-switcher-menubar-background: linear-gradient(to top, #282a36, transparent);
-  --tab-text-color-focused-active-current: #f8f8f2;
-  --table-drag-handle-background-active: #b294bb;
-  --table-header-color: #f8f8f2;
-  --table-selection-border-color: #b294bb;
+  --menu-background: var(--background-secondary, #282a36);
+  --metadata-input-text-color: var(--text-normal, #f8f8f2);
+  --modal-background: var(--background-primary, #282a36);
+  --nav-heading-color: var(--text-normal, #f8f8f2);
+  --nav-heading-color-hover: var(--text-normal, #f8f8f2);
+  --nav-item-color-active: var(--text-normal, #f8f8f2);
+  --nav-item-color-hover: var(--text-normal, #f8f8f2);
+  --nav-item-color-selected: var(--text-normal, #f8f8f2);
+  --pdf-background: var(--background-primary, #282a36);
+  --pdf-page-background: var(--background-primary, #282a36);
+  --pdf-sidebar-background: var(--background-primary, #282a36);
+  --pill-color-hover: var(--text-normal, #f8f8f2);
+  --prompt-background: var(--background-primary, #282a36);
+  --ribbon-background: var(--background-secondary, #282a36);
+  --ribbon-background-collapsed: var(--background-primary, #282a36);
+  --search-result-background: var(--background-primary, #282a36);
+  --secondary: var(--interactive-accent, var(--color-accent, #b294bb));
+  --setting-group-heading-color: var(--text-normal, #f8f8f2);
+  --setting-items-background: var(--background-primary-alt, #44475a);
+  --shiki-code-background: var(--code-background, #44475a);
+  --status-bar-background: var(--background-secondary, #282a36);
+  --suggestion-background: var(--background-primary, #282a36);
+  --tab-background-active: var(--background-primary, #282a36);
+  --tab-container-background: var(--background-secondary, #282a36);
+  --tab-switcher-background: var(--background-secondary, #282a36);
+  --tab-text-color-focused-active-current: var(--text-normal, #f8f8f2);
+  --table-drag-handle-background-active: var(--table-selection-border-color, #b294bb);
+  --table-header-color: var(--text-normal, #f8f8f2);
+  --table-selection-border-color: var(--interactive-accent, #b294bb);
   --text-a: #ff79c6;
   --text-a-hover: #ff79c0;
   --text-link: #8be9fd;
   --text-mark: #f1fa8c;
-  --text-normal: #f8f8f2;
+  --text-normal: var(--color-base-100, #f8f8f2);
   --text-tag: #50fa7b;
   --text-title-h1: #bd93f9;
   --text-title-h2: #bd93f8;
@@ -83,11 +80,11 @@ export const theme: ThemeData = {
   --text-title-h4: #bd93f6;
   --text-title-h5: #bd93f5;
   --text-title-h6: #bd93f4;
-  --titlebar-background: #282a36;
-  --titlebar-background-focused: #1a1e24;
-  --titlebar-text-color-focused: #f8f8f2;
-  --vault-profile-color: #f8f8f2;
-  --vault-profile-color-hover: #f8f8f2;
+  --titlebar-background: var(--background-secondary, #282a36);
+  --titlebar-background-focused: var(--background-secondary-alt, #1a1e24);
+  --titlebar-text-color-focused: var(--text-normal, #f8f8f2);
+  --vault-profile-color: var(--text-normal, #f8f8f2);
+  --vault-profile-color-hover: var(--vault-profile-color, #f8f8f2);
   --quartz-icon-color: currentColor;
 }
 
@@ -97,50 +94,50 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(40, 42, 54);
+  background-color: var(--tab-container-background, rgb(40, 42, 54));
   color: rgb(248, 248, 242);
 }
 
 html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
-  background-color: rgb(40, 42, 54);
+  background-color: var(--background-primary, rgb(40, 42, 54));
   color: rgb(248, 248, 242);
 }
 
 html body .page > div#quartz-body div.sidebar {
-  background-color: rgb(40, 42, 54);
+  background-color: var(--background-secondary, rgb(40, 42, 54));
   color: rgb(248, 248, 242);
 }
 
 html body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(40, 42, 54);
+  background-color: var(--tab-container-background, rgb(40, 42, 54));
   color: rgb(248, 248, 242);
 }`,
     typography: `html body .markdown-rendered p > b, html b {
-  color: rgb(248, 248, 242);
+  color: var(--bold-color, rgb(248, 248, 242));
   outline: rgb(248, 248, 242) none 0px;
   text-decoration-color: rgb(248, 248, 242);
 }
 
 html body .markdown-rendered p > em, html em {
-  color: rgb(248, 248, 242);
+  color: var(--italic-color, rgb(248, 248, 242));
   outline: rgb(248, 248, 242) none 0px;
   text-decoration-color: rgb(248, 248, 242);
 }
 
 html body .markdown-rendered p > i, html i {
-  color: rgb(248, 248, 242);
+  color: var(--italic-color, rgb(248, 248, 242));
   outline: rgb(248, 248, 242) none 0px;
   text-decoration-color: rgb(248, 248, 242);
 }
 
 html body .markdown-rendered p > strong, html strong {
-  color: rgb(248, 248, 242);
+  color: var(--bold-color, rgb(248, 248, 242));
   outline: rgb(248, 248, 242) none 0px;
   text-decoration-color: rgb(248, 248, 242);
 }
 
 html body .text-highlight {
-  color: rgb(248, 248, 242);
+  color: var(--text-normal, rgb(248, 248, 242));
   outline: rgb(248, 248, 242) none 0px;
   text-decoration-color: rgb(248, 248, 242);
 }
@@ -152,15 +149,15 @@ html body del {
 }
 
 html body h1.article-title {
-  color: rgb(248, 248, 242);
+  color: var(--text-normal, rgb(248, 248, 242));
 }
 
 html body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(178, 148, 187);
+  background-color: var(--checkbox-color, rgb(178, 148, 187));
   border-color: rgb(178, 148, 187);
 }`,
     links: `html body a.external-link, html footer a {
-  color: rgb(139, 233, 253);
+  color: var(--text-link, rgb(139, 233, 253));
   outline: rgb(139, 233, 253) none 0px;
   text-decoration-color: rgb(139, 233, 253);
 }`,
@@ -202,15 +199,15 @@ html body td {
   border-left-color: rgb(178, 148, 187);
   border-right-color: rgb(178, 148, 187);
   border-top-color: rgb(178, 148, 187);
-  color: rgb(248, 248, 242);
+  color: var(--table-text-color, rgb(248, 248, 242));
 }
 
 html body th {
-  color: rgb(248, 248, 242);
+  color: var(--table-header-color, rgb(248, 248, 242));
 }`,
     code: `html body code {
-  background-color: rgb(26, 30, 36);
-  color: rgb(248, 248, 242);
+  background-color: var(--background-secondary-alt, rgb(26, 30, 36));
+  color: var(--code-normal, rgb(248, 248, 242));
   padding-bottom: 2.16px;
   padding-left: 4.32px;
   padding-right: 4.32px;
@@ -218,7 +215,7 @@ html body th {
 }
 
 html body pre:has(> code) {
-  background-color: rgb(68, 71, 90);
+  background-color: var(--code-background, rgb(68, 71, 90));
 }`,
     images: `html body audio {
   border-bottom-color: rgb(248, 248, 242);
@@ -252,7 +249,7 @@ html body video {
   border-top-color: rgb(248, 248, 242);
 }`,
     embeds: `html body .file-embed {
-  background-color: rgb(68, 71, 90);
+  background-color: var(--background-primary-alt, rgb(68, 71, 90));
 }
 
 html body .footnotes {
@@ -821,7 +818,7 @@ html body .callout > .callout-content {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   color: rgb(248, 248, 242);
 }
 
@@ -834,7 +831,7 @@ html body .callout[data-callout="abstract"] > .callout-content {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   color: rgb(248, 248, 242);
 }
 
@@ -847,7 +844,7 @@ html body .callout[data-callout="bug"] > .callout-content {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   color: rgb(248, 248, 242);
 }
 
@@ -860,7 +857,7 @@ html body .callout[data-callout="danger"] > .callout-content {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   color: rgb(248, 248, 242);
 }
 
@@ -873,7 +870,7 @@ html body .callout[data-callout="example"] > .callout-content {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   color: rgb(248, 248, 242);
 }
 
@@ -886,7 +883,7 @@ html body .callout[data-callout="failure"] > .callout-content {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   color: rgb(248, 248, 242);
 }
 
@@ -899,7 +896,7 @@ html body .callout[data-callout="info"] > .callout-content {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   color: rgb(248, 248, 242);
 }
 
@@ -912,7 +909,7 @@ html body .callout[data-callout="note"] > .callout-content {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   color: rgb(248, 248, 242);
 }
 
@@ -925,7 +922,7 @@ html body .callout[data-callout="question"] > .callout-content {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   color: rgb(248, 248, 242);
 }
 
@@ -938,7 +935,7 @@ html body .callout[data-callout="quote"] > .callout-content {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   color: rgb(248, 248, 242);
 }
 
@@ -951,7 +948,7 @@ html body .callout[data-callout="success"] > .callout-content {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   color: rgb(248, 248, 242);
 }
 
@@ -964,7 +961,7 @@ html body .callout[data-callout="tip"] > .callout-content {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   color: rgb(248, 248, 242);
 }
 
@@ -977,7 +974,7 @@ html body .callout[data-callout="todo"] > .callout-content {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   color: rgb(248, 248, 242);
 }
 
@@ -1045,11 +1042,11 @@ html body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html body .search > .search-button {
-  color: rgb(248, 248, 242);
+  color: var(--text-normal, rgb(248, 248, 242));
 }
 
 html body .search > .search-container > .search-space {
-  background-color: rgb(40, 42, 54);
+  background-color: var(--prompt-background, rgb(40, 42, 54));
 }
 
 html body .search > .search-container > .search-space > * {
@@ -1074,7 +1071,7 @@ html body .search > .search-container > .search-space > .search-layout > .result
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
-  background-color: rgb(178, 148, 187);
+  background-color: var(--blockquote-border, rgb(178, 148, 187));
   color: rgb(248, 248, 242);
 }
 
@@ -1086,7 +1083,7 @@ html body .search > .search-container > .search-space > input {
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
-  background-color: rgb(178, 148, 187);
+  background-color: var(--blockquote-border, rgb(178, 148, 187));
   border-bottom-color: rgb(248, 248, 242);
   border-left-color: rgb(248, 248, 242);
   border-right-color: rgb(248, 248, 242);
@@ -1095,49 +1092,49 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
-  background-color: rgb(178, 148, 187);
+  background-color: var(--blockquote-border, rgb(178, 148, 187));
   color: rgb(248, 248, 242);
 }
 
 html body h1 {
-  color: rgb(248, 248, 242);
+  color: var(--h1-color, rgb(248, 248, 242));
 }
 
 html body h1.article-title {
-  color: rgb(248, 248, 242);
+  color: var(--inline-title-color, rgb(248, 248, 242));
 }
 
 html body h2 {
-  color: rgb(248, 248, 242);
+  color: var(--h2-color, rgb(248, 248, 242));
 }
 
 html body h2.page-title, html h2.page-title a {
-  color: rgb(248, 248, 242);
+  color: var(--inline-title-color, rgb(248, 248, 242));
 }
 
 html body h3 {
-  color: rgb(248, 248, 242);
+  color: var(--h3-color, rgb(248, 248, 242));
 }
 
 html body h4 {
-  color: rgb(248, 248, 242);
+  color: var(--h4-color, rgb(248, 248, 242));
 }
 
 html body h5 {
-  color: rgb(248, 248, 242);
+  color: var(--h5-color, rgb(248, 248, 242));
 }
 
 html body h6 {
-  color: rgb(248, 248, 242);
+  color: var(--h6-color, rgb(248, 248, 242));
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(248, 248, 242);
 }`,
     footer: `html body footer {
-  background-color: rgb(40, 42, 54);
+  background-color: var(--status-bar-background, rgb(40, 42, 54));
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgb(248, 248, 242);
@@ -1172,7 +1169,7 @@ html body .canvas-node-content {
 }
 
 html body .canvas-node-file {
-  color: rgb(248, 248, 242);
+  color: var(--text-normal, rgb(248, 248, 242));
 }
 
 html body .canvas-node-group {
@@ -1180,15 +1177,15 @@ html body .canvas-node-group {
 }
 
 html body .canvas-sidebar {
-  background-color: rgb(40, 42, 54);
+  background-color: var(--background-secondary, rgb(40, 42, 54));
   border-color: rgb(248, 248, 242);
 }`,
     bases: `html body .bases-table thead th {
-  color: rgb(248, 248, 242);
+  color: var(--table-header-color, rgb(248, 248, 242));
 }`,
     properties: `html body div#quartz-root {
-  background-color: rgb(40, 42, 54);
-  color: rgb(248, 248, 242);
+  background-color: var(--background-primary, rgb(40, 42, 54));
+  color: var(--text-normal, rgb(248, 248, 242));
 }
 
 html body ol.overflow {
@@ -1198,12 +1195,12 @@ html body ol.overflow {
   border-top-color: rgb(248, 248, 242);
 }`,
     stacked: `html body .stacked-page {
-  background-color: rgb(40, 42, 54);
+  background-color: var(--background-secondary, rgb(40, 42, 54));
   border-color: rgb(248, 248, 242);
 }
 
 html body .stacked-page-header {
-  background-color: rgb(26, 30, 36);
+  background-color: var(--tab-container-background, rgb(26, 30, 36));
 }
 
 html body .stacked-page.active {
@@ -1218,11 +1215,11 @@ html body .stacked-page.active {
 }
 
 html body .navigation-progress {
-  background-color: rgb(40, 42, 54);
+  background-color: var(--status-bar-background, rgb(40, 42, 54));
 }
 
 html body .page-header h2.page-title {
-  color: rgb(248, 248, 242);
+  color: var(--text-normal, rgb(248, 248, 242));
 }
 
 html body abbr {
@@ -1237,12 +1234,12 @@ html body details {
 }
 
 html body kbd {
-  background-color: rgb(68, 71, 90);
+  background-color: var(--code-background, rgb(68, 71, 90));
   border-bottom-color: rgb(248, 248, 242);
   border-left-color: rgb(248, 248, 242);
   border-right-color: rgb(248, 248, 242);
   border-top-color: rgb(248, 248, 242);
-  color: rgb(248, 248, 242);
+  color: var(--code-normal, rgb(248, 248, 242));
 }
 
 html body progress {

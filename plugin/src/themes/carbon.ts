@@ -78,195 +78,162 @@ export const theme: ThemeData = {
   --accent-h: 219;
   --accent-l: 53%;
   --accent-s: 99%;
-  --background-modifier-active-hover: #525252;
-  --background-modifier-border: #6F6F6F;
-  --background-modifier-border-hover: transparent;
-  --background-primary: #161616;
-  --background-secondary-alt: #000000;
-  --bases-cards-background: #161616;
-  --bases-cards-radius: 0px;
-  --bases-cards-shadow: 0 0 0 1px #6F6F6F;
-  --bases-cards-shadow-hover: 0 0 0 1px transparent;
-  --bases-embed-border-color: #6F6F6F;
-  --bases-embed-border-radius: 0px;
-  --bases-table-border-color: #6F6F6F;
-  --bases-table-cell-background-active: #161616;
-  --bases-table-cell-background-selected: hsla(219, 99%, 53%, 0.1);
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(219, 99%, 53%);
-  --bases-table-container-border-radius: 0px;
-  --bases-table-header-background: #161616;
-  --bases-table-summary-background: #161616;
-  --blockquote-border-color: hsl(219, 99%, 53%);
-  --bodyFont: var(--font-text, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
-  --button-radius: 0px;
-  --callout-radius: 0px;
-  --canvas-background: #161616;
-  --canvas-controls-radius: 0px;
-  --caret-color: #F4F4F4;
-  --checkbox-color: hsl(219, 99%, 53%);
-  --checkbox-color-hover: hsl(216, 100.98%, 60.95%);
-  --checkbox-marker-color: #161616;
-  --checkbox-radius: 0px;
-  --clickable-icon-radius: 0px;
-  --code-border-color: #6F6F6F;
-  --code-normal: #F4F4F4;
-  --code-radius: 0px;
-  --codeFont: var(--font-monospace, "IBM Plex Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace);
-  --collapse-icon-color-collapsed: hsl(216, 100.98%, 60.95%);
-  --color-accent: hsl(219, 99%, 53%);
-  --color-accent-1: hsl(216, 100.98%, 60.95%);
-  --color-accent-2: hsl(214, 103.95%, 68.37%);
-  --color-accent-hsl: 219, 99%, 53%;
-  --dark: var(--text-normal, #F4F4F4);
-  --darkgray: var(--text-normal, #F4F4F4);
-  --divider-color: transparent;
-  --divider-color-hover: hsl(219, 99%, 53%);
-  --embed-block-shadow-hover: 0 0 0 1px #6F6F6F, inset 0 0 0 1px #6F6F6F;
-  --embed-border-start: 2px solid hsl(219, 99%, 53%);
-  --file-header-background: #161616;
-  --file-header-background-focused: #161616;
-  --file-header-font: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --file-header-font-size: 14px;
-  --flair-color: #F4F4F4;
+  --background-modifier-border: var(--color-base-30, #6F6F6F);
+  --background-modifier-border-hover: var(--color-base-35, transparent);
+  --background-primary: var(--color-base-00, #161616);
+  --background-secondary-alt: var(--color-base-30, #000000);
+  --bases-cards-background: var(--background-primary, #161616);
+  --bases-cards-radius: var(--radius-m, 0px);
+  --bases-embed-border-color: var(--background-modifier-border, #6F6F6F);
+  --bases-embed-border-radius: var(--radius-s, 0px);
+  --bases-table-border-color: var(--table-border-color, #6F6F6F);
+  --bases-table-cell-background-active: var(--background-primary, #161616);
+  --bases-table-cell-background-selected: var(--table-selection, hsla(219, 99%, 53%, 0.1));
+  --bases-table-container-border-radius: var(--radius-s, 0px);
+  --bases-table-header-background: var(--background-primary, #161616);
+  --bases-table-summary-background: var(--background-primary, #161616);
+  --blockquote-border-color: var(--interactive-accent, hsl(219, 99%, 53%));
+  --button-radius: var(--input-radius, 0px);
+  --callout-radius: var(--radius-s, 0px);
+  --canvas-background: var(--background-primary, #161616);
+  --canvas-controls-radius: var(--radius-s, 0px);
+  --caret-color: var(--text-normal, #F4F4F4);
+  --checkbox-color: var(--interactive-accent, hsl(219, 99%, 53%));
+  --checkbox-color-hover: var(--interactive-accent-hover, hsl(216, 100.98%, 60.95%));
+  --checkbox-marker-color: var(--background-primary, #161616);
+  --checkbox-radius: var(--radius-s, 0px);
+  --clickable-icon-radius: var(--radius-s, 0px);
+  --code-border-color: var(--background-modifier-border, #6F6F6F);
+  --code-normal: var(--text-normal, #F4F4F4);
+  --code-radius: var(--radius-s, 0px);
+  --collapse-icon-color-collapsed: var(--text-accent, hsl(216, 100.98%, 60.95%));
+  --dark: var(--text-normal, var(--color-base-100, #F4F4F4));
+  --darkgray: var(--text-normal, var(--color-base-100, #F4F4F4));
+  --divider-color: var(--background-modifier-border, transparent);
+  --divider-color-hover: var(--interactive-accent, hsl(219, 99%, 53%));
+  --file-header-background: var(--background-primary, #161616);
+  --file-header-background-focused: var(--background-primary, #161616);
+  --file-header-font: var(--font-interface, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  --file-header-font-size: var(--font-ui-small, 14px);
+  --flair-color: var(--text-normal, #F4F4F4);
   --font-default: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --font-interface: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --font-mermaid: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --font-monospace: "IBM Plex Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-  --font-text: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --font-mermaid: var(--font-text, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
   --font-ui-small: 14px;
-  --footnote-divider-color: #6F6F6F;
-  --footnote-radius: 0px;
-  --graph-node-focused: hsl(216, 100.98%, 60.95%);
-  --graph-text: #F4F4F4;
-  --gray: var(--text-normal, #F4F4F4);
+  --footnote-divider-color: var(--metadata-divider-color, #6F6F6F);
+  --footnote-radius: var(--radius-s, 0px);
+  --graph-node-focused: var(--text-accent, hsl(216, 100.98%, 60.95%));
+  --graph-text: var(--text-normal, #F4F4F4);
+  --gray: var(--text-normal, var(--color-base-100, #F4F4F4));
   --h1-weight: 400;
   --h2-weight: 400;
-  --headerFont: var(--font-text, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
-  --highlight: var(--text-highlight-bg, #001d6c);
-  --hr-color: #6F6F6F;
-  --icon-color: #F4F4F4;
-  --icon-color-active: hsl(216, 100.98%, 60.95%);
-  --icon-color-focused: #FFFFFF;
-  --icon-color-hover: #F4F4F4;
+  --hr-color: var(--background-modifier-border, #6F6F6F);
+  --icon-color: var(--text-muted, #F4F4F4);
+  --icon-color-active: var(--text-accent, hsl(216, 100.98%, 60.95%));
+  --icon-color-focused: var(--text-normal, #FFFFFF);
+  --icon-color-hover: var(--text-muted, #F4F4F4);
   --inactive-tab-background: #262626;
-  --inline-title-weight: 400;
+  --inline-title-weight: var(--h1-weight, 400);
   --input-disabled-border-color: transparent;
-  --input-height: 40px;
+  --input-height: calc(var(--font-text-size)*2.5);
   --input-hover-border-color: black;
   --input-radius: 0px;
   --input-unfocused-border-color: transparent;
-  --interactive-accent: hsl(219, 99%, 53%);
-  --interactive-accent-hover: hsl(216, 100.98%, 60.95%);
-  --interactive-accent-hsl: 219, 99%, 53%;
-  --light: var(--background-primary, #161616);
-  --lightgray: var(--background-secondary-alt, #000000);
-  --link-color: hsl(216, 100.98%, 60.95%);
-  --link-color-hover: hsl(214, 103.95%, 68.37%);
-  --link-external-color: hsl(216, 100.98%, 60.95%);
-  --link-external-color-hover: hsl(214, 103.95%, 68.37%);
-  --link-unresolved-color: hsl(216, 100.98%, 60.95%);
-  --link-unresolved-decoration-color: hsla(219, 99%, 53%, 0.3);
+  --interactive-accent: var(--color-accent, hsl(219, 99%, 53%));
+  --interactive-accent-hover: var(--color-accent-1, hsl(216, 100.98%, 60.95%));
+  --interactive-accent-hsl: var(--color-accent-hsl, 219, 99%, 53%);
+  --light: var(--background-primary, var(--color-base-00, #161616));
+  --lightgray: var(--background-secondary-alt, var(--color-base-30, #000000));
+  --link-color: var(--text-accent, hsl(216, 100.98%, 60.95%));
+  --link-color-hover: var(--text-accent-hover, hsl(214, 103.95%, 68.37%));
+  --link-external-color: var(--text-accent, hsl(216, 100.98%, 60.95%));
+  --link-external-color-hover: var(--text-accent-hover, hsl(214, 103.95%, 68.37%));
+  --link-unresolved-color: var(--text-accent, hsl(216, 100.98%, 60.95%));
   --list-bullet-size: 0.4em;
-  --list-indent: 1.75em;
-  --list-marker-color: #F4F4F4;
-  --list-marker-color-collapsed: hsl(216, 100.98%, 60.95%);
+  --list-marker-color: var(--text-faint, #F4F4F4);
+  --list-marker-color-collapsed: var(--text-accent, hsl(216, 100.98%, 60.95%));
   --list-spacing: 0.05em;
-  --menu-border-color: transparent;
-  --menu-radius: 0px;
-  --metadata-border-color: #6F6F6F;
-  --metadata-divider-color: #6F6F6F;
-  --metadata-input-font: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --metadata-input-text-color: #F4F4F4;
-  --metadata-label-font: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --metadata-property-box-shadow-hover: 0 0 0 1px transparent;
-  --metadata-sidebar-input-font-size: 14px;
-  --metadata-sidebar-label-font-size: 14px;
-  --modal-background: #161616;
-  --modal-radius: 0px;
-  --nav-heading-color: #F4F4F4;
-  --nav-heading-color-hover: #F4F4F4;
-  --nav-item-background-selected: hsla(219, 99%, 53%, 0.15);
-  --nav-item-color-active: #F4F4F4;
-  --nav-item-color-highlighted: hsl(216, 100.98%, 60.95%);
-  --nav-item-color-hover: #F4F4F4;
-  --nav-item-color-selected: #F4F4F4;
-  --nav-item-radius: 0px;
-  --nav-item-size: 14px;
-  --nav-tag-radius: 0px;
-  --pdf-background: #161616;
-  --pdf-page-background: #161616;
-  --pdf-shadow: 0 0 0 1px #6F6F6F;
-  --pdf-sidebar-background: #161616;
-  --pdf-thumbnail-shadow: 0 0 0 1px #6F6F6F;
-  --pill-border-color: #6F6F6F;
-  --pill-border-color-hover: transparent;
-  --pill-color-hover: #F4F4F4;
-  --pill-color-remove-hover: hsl(216, 100.98%, 60.95%);
-  --prompt-background: #161616;
+  --menu-border-color: var(--background-modifier-border-hover, transparent);
+  --menu-radius: var(--radius-m, 0px);
+  --metadata-border-color: var(--background-modifier-border, #6F6F6F);
+  --metadata-divider-color: var(--background-modifier-border, #6F6F6F);
+  --metadata-input-font: var(--font-interface, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  --metadata-input-text-color: var(--text-normal, #F4F4F4);
+  --metadata-label-font: var(--font-interface, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 14px);
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 14px);
+  --modal-background: var(--background-primary, #161616);
+  --modal-radius: var(--radius-l, 0px);
+  --nav-heading-color: var(--text-normal, #F4F4F4);
+  --nav-heading-color-hover: var(--text-normal, #F4F4F4);
+  --nav-item-color-active: var(--text-normal, #F4F4F4);
+  --nav-item-color-highlighted: var(--text-accent, hsl(216, 100.98%, 60.95%));
+  --nav-item-color-hover: var(--text-normal, #F4F4F4);
+  --nav-item-color-selected: var(--text-normal, #F4F4F4);
+  --nav-item-radius: var(--radius-s, 0px);
+  --nav-item-size: var(--font-ui-small, 14px);
+  --nav-tag-radius: var(--radius-s, 0px);
+  --pdf-background: var(--background-primary, #161616);
+  --pdf-page-background: var(--background-primary, #161616);
+  --pdf-sidebar-background: var(--background-primary, #161616);
+  --pill-border-color: var(--background-modifier-border, #6F6F6F);
+  --pill-border-color-hover: var(--background-modifier-border-hover, transparent);
+  --pill-color-hover: var(--text-normal, #F4F4F4);
+  --pill-color-remove-hover: var(--text-accent, hsl(216, 100.98%, 60.95%));
+  --prompt-background: var(--background-primary, #161616);
   --radius-l: 0px;
   --radius-m: 0px;
   --radius-s: 0px;
-  --ribbon-background: #000000;
-  --ribbon-background-collapsed: #161616;
-  --scrollbar-radius: 0px;
-  --search-result-background: #161616;
-  --secondary: var(--text-accent, hsl(216, 100.98%, 60.95%));
-  --setting-group-heading-color: #F4F4F4;
-  --setting-items-border-color: #6F6F6F;
-  --setting-items-radius: 0px;
-  --shiki-code-block-border-radius: 0px;
-  --shiki-gutter-border-color: #6F6F6F;
-  --slider-thumb-border-color: transparent;
-  --slider-thumb-radius: 0px;
-  --slider-track-background: #6F6F6F;
-  --status-bar-border-color: transparent;
-  --status-bar-radius: 0px 0 0 0;
-  --suggestion-background: #161616;
-  --tab-background-active: #161616;
-  --tab-divider-color: transparent;
-  --tab-font-size: 14px;
-  --tab-outline-color: transparent;
-  --tab-radius: 0px;
+  --ribbon-background: var(--background-secondary, #000000);
+  --ribbon-background-collapsed: var(--background-primary, #161616);
+  --scrollbar-radius: var(--radius-l, 0px);
+  --search-result-background: var(--background-primary, #161616);
+  --secondary: var(--text-accent, var(--color-accent-1, hsl(216, 100.98%, 60.95%)));
+  --setting-group-heading-color: var(--text-normal, #F4F4F4);
+  --setting-items-border-color: var(--background-modifier-border, #6F6F6F);
+  --setting-items-radius: var(--radius-l, 0px);
+  --shiki-code-block-border-radius: var(--code-radius, 0px);
+  --shiki-gutter-border-color: var(--background-modifier-border, #6F6F6F);
+  --slider-thumb-border-color: var(--background-modifier-border-hover, transparent);
+  --slider-thumb-radius: var(--slider-thumb-height, 0px);
+  --slider-track-background: var(--background-modifier-border, #6F6F6F);
+  --status-bar-border-color: var(--divider-color, transparent);
+  --status-bar-radius: var(--radius-m, 0px 0 0 0) 0 0 0;
+  --suggestion-background: var(--background-primary, #161616);
+  --tab-background-active: var(--background-primary, #161616);
+  --tab-divider-color: var(--background-modifier-border-hover, transparent);
+  --tab-font-size: var(--font-ui-small, 14px);
+  --tab-outline-color: var(--divider-color, transparent);
+  --tab-radius: var(--radius-s, 0px);
   --tab-radius-active: 0;
-  --tab-stacked-font-size: 14px;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(219, 99%, 53%);
-  --tab-text-color: #8D8D8D;
-  --tab-text-color-focused: #8D8D8D;
-  --tab-text-color-focused-active-current: #F4F4F4;
-  --tab-text-color-focused-highlighted: hsl(216, 100.98%, 60.95%);
-  --table-add-button-border-color: #6F6F6F;
-  --table-border-color: #6F6F6F;
+  --tab-stacked-font-size: var(--font-ui-small, 14px);
+  --tab-text-color: var(--text-faint, #8D8D8D);
+  --tab-text-color-focused: var(--text-muted, #8D8D8D);
+  --tab-text-color-focused-active-current: var(--text-normal, #F4F4F4);
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(216, 100.98%, 60.95%));
+  --table-add-button-border-color: var(--background-modifier-border, #6F6F6F);
+  --table-border-color: var(--background-modifier-border, #6F6F6F);
   --table-borders: #8d8d8d;
-  --table-drag-handle-background-active: hsl(219, 99%, 53%);
-  --table-header-border-color: #6F6F6F;
-  --table-header-color: #F4F4F4;
+  --table-drag-handle-background-active: var(--table-selection-border-color, hsl(219, 99%, 53%));
+  --table-header-border-color: var(--table-border-color, #6F6F6F);
+  --table-header-color: var(--text-normal, #F4F4F4);
   --table-headers: #333333;
-  --table-selection: hsla(219, 99%, 53%, 0.1);
-  --table-selection-border-color: hsl(219, 99%, 53%);
-  --tag-background: hsla(219, 99%, 53%, 0.1);
-  --tag-background-hover: hsla(219, 99%, 53%, 0.2);
-  --tag-border-color: hsla(219, 99%, 53%, 0.15);
-  --tag-border-color-hover: hsla(219, 99%, 53%, 0.15);
-  --tag-color: hsl(216, 100.98%, 60.95%);
-  --tag-color-hover: hsl(216, 100.98%, 60.95%);
-  --tertiary: var(--text-accent-hover, hsl(214, 103.95%, 68.37%));
-  --text-accent: hsl(216, 100.98%, 60.95%);
-  --text-accent-hover: hsl(214, 103.95%, 68.37%);
-  --text-error: #d8343c;
-  --text-highlight-bg: #001d6c;
-  --text-normal: #F4F4F4;
-  --text-selection: hsla(219, 99%, 53%, 0.33);
-  --textHighlight: var(--text-highlight-bg, #001d6c);
-  --titleFont: var(--font-text, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
-  --titlebar-background: #000000;
-  --titlebar-background-focused: #000000;
-  --titlebar-border-color: #6F6F6F;
-  --titlebar-text-color-focused: #F4F4F4;
+  --table-selection-border-color: var(--interactive-accent, hsl(219, 99%, 53%));
+  --tag-color: var(--text-accent, hsl(216, 100.98%, 60.95%));
+  --tag-color-hover: var(--text-accent, hsl(216, 100.98%, 60.95%));
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, hsl(214, 103.95%, 68.37%)));
+  --text-accent: var(--color-accent-1, hsl(216, 100.98%, 60.95%));
+  --text-accent-hover: var(--color-accent-2, hsl(214, 103.95%, 68.37%));
+  --text-error: var(--color-red, #d8343c);
+  --text-normal: var(--color-base-100, #F4F4F4);
+  --titlebar-background: var(--background-secondary, #000000);
+  --titlebar-background-focused: var(--background-secondary-alt, #000000);
+  --titlebar-border-color: var(--background-modifier-border, #6F6F6F);
+  --titlebar-text-color-focused: var(--text-normal, #F4F4F4);
   --toggle-radius: 0px;
   --toggle-thumb-radius: 0px;
-  --vault-profile-color: #F4F4F4;
-  --vault-profile-color-hover: #F4F4F4;
-  --vault-profile-font-size: 14px;
+  --vault-profile-color: var(--text-normal, #F4F4F4);
+  --vault-profile-color-hover: var(--vault-profile-color, #F4F4F4);
+  --vault-profile-font-size: var(--font-ui-small, 14px);
   --quartz-icon-color: currentColor;
 }
 
@@ -280,7 +247,7 @@ html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme=
 }
 
 html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: rgb(22, 22, 22);
+  background-color: var(--background-primary, rgb(22, 22, 22));
   color: rgb(244, 244, 244);
 }
 
@@ -305,36 +272,36 @@ html[saved-theme="dark"] body html {
   --input-unfocused-border-color: transparent;
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
-  color: rgb(244, 244, 244);
+  color: var(--bold-color, rgb(244, 244, 244));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(244, 244, 244) none 0px;
   text-decoration-color: rgb(244, 244, 244);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
-  color: rgb(244, 244, 244);
+  color: var(--italic-color, rgb(244, 244, 244));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(244, 244, 244) none 0px;
   text-decoration-color: rgb(244, 244, 244);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
-  color: rgb(244, 244, 244);
+  color: var(--italic-color, rgb(244, 244, 244));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(244, 244, 244) none 0px;
   text-decoration-color: rgb(244, 244, 244);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
-  color: rgb(244, 244, 244);
+  color: var(--bold-color, rgb(244, 244, 244));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(244, 244, 244) none 0px;
   text-decoration-color: rgb(244, 244, 244);
 }
 
 html[saved-theme="dark"] body .text-highlight {
-  background-color: rgb(0, 29, 108);
-  color: rgb(244, 244, 244);
+  background-color: var(--text-highlight-bg, rgb(0, 29, 108));
+  color: var(--text-normal, rgb(244, 244, 244));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(244, 244, 244) none 0px;
   text-decoration-color: rgb(244, 244, 244);
@@ -348,7 +315,7 @@ html[saved-theme="dark"] body del {
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(244, 244, 244);
+  color: var(--text-normal, rgb(244, 244, 244));
   font-size: 14px;
 }
 
@@ -357,7 +324,7 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(16, 100, 254);
+  background-color: var(--checkbox-color, rgb(16, 100, 254));
   border-color: rgb(16, 100, 254);
 }
 
@@ -365,25 +332,25 @@ html[saved-theme="dark"] body p {
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }`,
     links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
-  color: rgb(56, 136, 255);
+  color: var(--link-external-color, rgb(56, 136, 255));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(56, 136, 255) none 0px;
   text-decoration-color: rgb(56, 136, 255);
 }
 
 html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(56, 136, 255);
+  color: var(--link-color, rgb(56, 136, 255));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(56, 136, 255) none 0px;
   text-decoration-color: rgb(56, 136, 255);
 }
 
 html[saved-theme="dark"] body a.internal-link.broken {
-  color: rgb(56, 136, 255);
+  color: var(--link-unresolved-color, rgb(56, 136, 255));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(56, 136, 255) none 0px;
   text-decoration: underline rgba(16, 100, 254, 0.3);
-  text-decoration-color: rgba(16, 100, 254, 0.3);
+  text-decoration-color: var(--link-unresolved-decoration-color, rgba(16, 100, 254, 0.3));
 }`,
     lists: `html[saved-theme="dark"] body dd {
   color: rgb(244, 244, 244);
@@ -411,7 +378,7 @@ html[saved-theme="dark"] body ul.overflow {
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
-  background-color: rgb(38, 38, 38);
+  background-color: var(--background-secondary, rgb(38, 38, 38));
   border-bottom-color: rgb(244, 244, 244);
   border-left-color: rgb(244, 244, 244);
   border-right-color: rgb(244, 244, 244);
@@ -428,28 +395,28 @@ html[saved-theme="dark"] body td {
   border-bottom-color: rgb(244, 244, 244);
   border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: rgb(244, 244, 244);
   border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
   border-top-width: 0px;
-  color: rgb(244, 244, 244);
+  color: var(--table-text-color, rgb(244, 244, 244));
 }
 
 html[saved-theme="dark"] body th {
   border-bottom-color: rgb(244, 244, 244);
   border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: rgb(244, 244, 244);
   border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
-  border-top-width: 0px;
-  color: rgb(244, 244, 244);
+  border-top-width: var(--table-header-border-width, 0px);
+  color: var(--table-header-color, rgb(244, 244, 244));
 }
 
 html[saved-theme="dark"] body thead {
-  background-color: rgb(51, 51, 51);
+  background-color: var(--table-headers, rgb(51, 51, 51));
 }`,
     code: `html[saved-theme="dark"] body code {
   border-bottom-color: rgb(111, 111, 111);
@@ -460,8 +427,8 @@ html[saved-theme="dark"] body thead {
   border-top-color: rgb(111, 111, 111);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(244, 244, 244);
-  font-family: "IBM Plex Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
+  color: var(--code-normal, rgb(244, 244, 244));
+  font-family: var(--font-monospace, "IBM Plex Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace);
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
@@ -515,7 +482,7 @@ html[saved-theme="dark"] body video {
   border-top-color: rgb(244, 244, 244);
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: rgb(38, 38, 38);
+  background-color: var(--background-secondary, rgb(38, 38, 38));
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -534,7 +501,7 @@ html[saved-theme="dark"] body .footnotes {
 }
 
 html[saved-theme="dark"] body .transclude {
-  background-color: rgb(38, 38, 38);
+  background-color: var(--background-secondary, rgb(38, 38, 38));
   border-bottom-color: rgb(244, 244, 244);
   border-left-color: rgb(244, 244, 244);
   border-left-width: 0px;
@@ -567,6 +534,266 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: rgb(244, 244, 244);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -857,7 +1084,7 @@ html[saved-theme="dark"] body .callout > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -874,7 +1101,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -891,7 +1118,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -908,7 +1135,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -925,7 +1152,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -942,7 +1169,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -959,7 +1186,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -976,7 +1203,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -993,7 +1220,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1010,7 +1237,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1027,7 +1254,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1044,7 +1271,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1061,7 +1288,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1144,12 +1371,12 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(244, 244, 244);
+  color: var(--text-normal, rgb(244, 244, 244));
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: rgb(22, 22, 22);
+  background-color: var(--prompt-background, rgb(22, 22, 22));
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1194,7 +1421,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
-  background-color: rgb(38, 38, 38);
+  background-color: var(--background-secondary, rgb(38, 38, 38));
   border-bottom-color: rgb(111, 111, 111);
   border-left-color: rgb(244, 244, 244);
   border-right-color: rgb(244, 244, 244);
@@ -1222,7 +1449,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(16, 100, 254, 0.1);
+  background-color: var(--pill-background, rgba(16, 100, 254, 0.1));
   border-bottom-color: rgba(16, 100, 254, 0.15);
   border-left-color: rgba(16, 100, 254, 0.15);
   border-right-color: rgba(16, 100, 254, 0.15);
@@ -1235,43 +1462,43 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
-  color: rgb(56, 136, 255);
-  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: var(--text-accent, rgb(56, 136, 255));
+  font-family: var(--h1-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(56, 136, 255);
-  font-weight: 400;
+  color: var(--text-accent, rgb(56, 136, 255));
+  font-weight: var(--inline-title-weight, 400);
 }
 
 html[saved-theme="dark"] body h2 {
-  color: rgb(244, 244, 244);
-  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: var(--h2-color, rgb(244, 244, 244));
+  font-family: var(--h2-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  color: rgb(56, 136, 255);
-  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: var(--text-accent, rgb(56, 136, 255));
+  font-family: var(--inline-title-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h3 {
-  color: rgb(244, 244, 244);
-  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: var(--h3-color, rgb(244, 244, 244));
+  font-family: var(--h3-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
-  color: rgb(244, 244, 244);
-  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: var(--h4-color, rgb(244, 244, 244));
+  font-family: var(--h4-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
-  color: rgb(244, 244, 244);
-  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: var(--h5-color, rgb(244, 244, 244));
+  font-family: var(--h5-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
-  color: rgb(244, 244, 244);
-  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: var(--h6-color, rgb(244, 244, 244));
+  font-family: var(--h6-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
 
 html[saved-theme="dark"] body hr {
@@ -1284,7 +1511,7 @@ html[saved-theme="dark"] body hr {
   border-right-color: rgba(0, 0, 0, 0);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1297,19 +1524,19 @@ html[saved-theme="dark"] body hr {
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(244, 244, 244);
 }
 
 html[saved-theme="dark"] body li.depth-0 {
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(244, 244, 244);
@@ -1320,7 +1547,7 @@ html[saved-theme="dark"] body li.depth-0 {
   border-top-color: rgb(244, 244, 244);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(244, 244, 244);
+  color: var(--icon-color, rgb(244, 244, 244));
 }`,
     footer: `html[saved-theme="dark"] body footer {
   border-bottom-color: rgba(0, 0, 0, 0);
@@ -1372,7 +1599,7 @@ html[saved-theme="dark"] body ul.section-ul {
   border-top-color: rgb(141, 141, 141);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(141, 141, 141);
+  color: var(--icon-color, rgb(141, 141, 141));
 }
 
 html[saved-theme="dark"] body .darkmode svg {
@@ -1398,7 +1625,7 @@ html[saved-theme="dark"] body .canvas-node-content {
 }
 
 html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(244, 244, 244);
+  color: var(--text-normal, rgb(244, 244, 244));
 }
 
 html[saved-theme="dark"] body .canvas-node-group {
@@ -1410,10 +1637,10 @@ html[saved-theme="dark"] body .canvas-sidebar {
 }`,
     bases: `html[saved-theme="dark"] body .bases-table thead th {
   border-color: rgb(244, 244, 244);
-  color: rgb(244, 244, 244);
+  color: var(--table-header-color, rgb(244, 244, 244));
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
-  background-color: rgb(51, 51, 51);
+  background-color: var(--table-headers, rgb(51, 51, 51));
   border-bottom-color: rgb(111, 111, 111);
   border-left-color: rgb(111, 111, 111);
   border-right-color: rgb(111, 111, 111);
@@ -1422,12 +1649,12 @@ html[saved-theme="dark"] body .canvas-sidebar {
 }
 
 html[saved-theme="dark"] body .metadata-properties {
-  background-color: rgb(38, 38, 38);
+  background-color: var(--background-secondary, rgb(38, 38, 38));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 html[saved-theme="dark"] body .note-properties {
-  background-color: rgb(51, 51, 51);
+  background-color: var(--table-headers, rgb(51, 51, 51));
   border-color: rgb(111, 111, 111);
 }
 
@@ -1436,17 +1663,17 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(16, 100, 254, 0.1);
-  color: rgb(56, 136, 255);
+  background-color: var(--pill-background, rgba(16, 100, 254, 0.1));
+  color: var(--pill-color, rgb(56, 136, 255));
 }
 
 html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(244, 244, 244);
+  color: var(--text-normal, rgb(244, 244, 244));
 }
 
 html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(22, 22, 22);
-  color: rgb(244, 244, 244);
+  background-color: var(--background-primary, rgb(22, 22, 22));
+  color: var(--text-normal, rgb(244, 244, 244));
 }
 
 html[saved-theme="dark"] body ol.overflow {
@@ -1460,7 +1687,7 @@ html[saved-theme="dark"] body ol.overflow {
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--tab-container-background, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body .stacked-page.active {
@@ -1475,7 +1702,7 @@ html[saved-theme="dark"] body .stacked-page.active {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
-  color: rgb(244, 244, 244);
+  color: var(--text-normal, rgb(244, 244, 244));
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
@@ -1494,8 +1721,8 @@ html[saved-theme="dark"] body input[type=text] {
   border-bottom-color: rgb(111, 111, 111);
   border-bottom-width: 1px;
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  padding-bottom: var(--size-4-2, 8px);
+  padding-top: var(--size-4-2, 8px);
 }
 
 html[saved-theme="dark"] body kbd {
@@ -1507,8 +1734,8 @@ html[saved-theme="dark"] body kbd {
   border-top-color: rgb(244, 244, 244);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(244, 244, 244);
-  font-family: "IBM Plex Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
+  color: var(--code-normal, rgb(244, 244, 244));
+  font-family: var(--font-monospace, "IBM Plex Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace);
 }
 
 html[saved-theme="dark"] body progress {
@@ -1531,7 +1758,7 @@ html[saved-theme="dark"] body sup {
 }
 
 html[saved-theme="dark"] body ul.tags > li {
-  background-color: rgba(16, 100, 254, 0.1);
+  background-color: var(--tag-background, rgba(16, 100, 254, 0.1));
   border-bottom-color: rgba(16, 100, 254, 0.15);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1540,7 +1767,7 @@ html[saved-theme="dark"] body ul.tags > li {
   border-top-color: rgba(16, 100, 254, 0.15);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(56, 136, 255);
+  color: var(--tag-color, rgb(56, 136, 255));
 }`,
   },
   light: {
@@ -1548,201 +1775,168 @@ html[saved-theme="dark"] body ul.tags > li {
   --accent-h: 219;
   --accent-l: 53%;
   --accent-s: 99%;
-  --background-modifier-active-hover: #E8E8E8;
-  --background-modifier-border: #8D8D8D;
-  --background-modifier-border-hover: transparent;
-  --background-primary: #FFFFFF;
-  --background-secondary: #F4F4F4;
-  --background-secondary-alt: #000000;
-  --bases-cards-background: #FFFFFF;
-  --bases-cards-radius: 0px;
-  --bases-cards-shadow: 0 0 0 1px #8D8D8D;
-  --bases-cards-shadow-hover: 0 0 0 1px transparent;
-  --bases-embed-border-color: #8D8D8D;
-  --bases-embed-border-radius: 0px;
-  --bases-table-border-color: #8D8D8D;
-  --bases-table-cell-background-active: #FFFFFF;
-  --bases-table-cell-background-selected: hsla(219, 99%, 53%, 0.1);
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(218, 99.99%, 56.975%);
-  --bases-table-container-border-radius: 0px;
-  --bases-table-header-background: #FFFFFF;
-  --bases-table-summary-background: #FFFFFF;
-  --blockquote-border-color: hsl(218, 99.99%, 56.975%);
-  --blur-background: color-mix(in srgb, #FFFFFF 65%, transparent) linear-gradient(#FFFFFF, color-mix(in srgb, #FFFFFF 65%, transparent));
-  --bodyFont: var(--font-text, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
-  --button-radius: 0px;
-  --callout-radius: 0px;
-  --canvas-background: #FFFFFF;
-  --canvas-controls-radius: 0px;
-  --caret-color: #262626;
-  --checkbox-color: hsl(218, 99.99%, 56.975%);
-  --checkbox-color-hover: hsl(216, 100.98%, 60.95%);
-  --checkbox-marker-color: #FFFFFF;
-  --checkbox-radius: 0px;
-  --clickable-icon-radius: 0px;
-  --code-border-color: #8D8D8D;
-  --code-normal: #262626;
-  --code-radius: 0px;
-  --codeFont: var(--font-monospace, "IBM Plex Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace);
-  --collapse-icon-color-collapsed: #0f62fe;
-  --color-accent: hsl(219, 99%, 53%);
-  --color-accent-1: hsl(218, 99.99%, 56.975%);
-  --color-accent-2: hsl(216, 100.98%, 60.95%);
-  --color-accent-hsl: 219, 99%, 53%;
-  --dark: var(--text-normal, #262626);
-  --darkgray: var(--text-normal, #262626);
-  --divider-color: transparent;
-  --divider-color-hover: hsl(218, 99.99%, 56.975%);
-  --embed-block-shadow-hover: 0 0 0 1px #8D8D8D, inset 0 0 0 1px #8D8D8D;
-  --embed-border-start: 2px solid hsl(218, 99.99%, 56.975%);
-  --file-header-background: #FFFFFF;
-  --file-header-background-focused: #FFFFFF;
-  --file-header-font: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --file-header-font-size: 14px;
-  --flair-color: #262626;
+  --background-modifier-border: var(--color-base-30, #8D8D8D);
+  --background-modifier-border-hover: var(--color-base-35, transparent);
+  --background-primary: var(--color-base-00, #FFFFFF);
+  --background-secondary: var(--color-base-20, #F4F4F4);
+  --background-secondary-alt: var(--color-base-05, #000000);
+  --bases-cards-background: var(--background-primary, #FFFFFF);
+  --bases-cards-radius: var(--radius-m, 0px);
+  --bases-embed-border-color: var(--background-modifier-border, #8D8D8D);
+  --bases-embed-border-radius: var(--radius-s, 0px);
+  --bases-table-border-color: var(--table-border-color, #8D8D8D);
+  --bases-table-cell-background-active: var(--background-primary, #FFFFFF);
+  --bases-table-cell-background-selected: var(--table-selection, hsla(219, 99%, 53%, 0.1));
+  --bases-table-container-border-radius: var(--radius-s, 0px);
+  --bases-table-header-background: var(--background-primary, #FFFFFF);
+  --bases-table-summary-background: var(--background-primary, #FFFFFF);
+  --blockquote-border-color: var(--interactive-accent, hsl(218, 99.99%, 56.975%));
+  --button-radius: var(--input-radius, 0px);
+  --callout-radius: var(--radius-s, 0px);
+  --canvas-background: var(--background-primary, #FFFFFF);
+  --canvas-controls-radius: var(--radius-s, 0px);
+  --caret-color: var(--text-normal, #262626);
+  --checkbox-color: var(--interactive-accent, hsl(218, 99.99%, 56.975%));
+  --checkbox-color-hover: var(--interactive-accent-hover, hsl(216, 100.98%, 60.95%));
+  --checkbox-marker-color: var(--background-primary, #FFFFFF);
+  --checkbox-radius: var(--radius-s, 0px);
+  --clickable-icon-radius: var(--radius-s, 0px);
+  --code-border-color: var(--background-modifier-border, #8D8D8D);
+  --code-normal: var(--text-normal, #262626);
+  --code-radius: var(--radius-s, 0px);
+  --collapse-icon-color-collapsed: var(--text-accent, #0f62fe);
+  --dark: var(--text-normal, var(--color-base-100, #262626));
+  --darkgray: var(--text-normal, var(--color-base-100, #262626));
+  --divider-color: var(--background-modifier-border, transparent);
+  --divider-color-hover: var(--interactive-accent, hsl(218, 99.99%, 56.975%));
+  --file-header-background: var(--background-primary, #FFFFFF);
+  --file-header-background-focused: var(--background-primary, #FFFFFF);
+  --file-header-font: var(--font-interface, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  --file-header-font-size: var(--font-ui-small, 14px);
+  --flair-color: var(--text-normal, #262626);
   --font-default: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --font-interface: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --font-mermaid: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --font-monospace: "IBM Plex Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-  --font-text: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --font-mermaid: var(--font-text, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
   --font-ui-small: 14px;
-  --footnote-divider-color: #8D8D8D;
-  --footnote-radius: 0px;
-  --graph-node-focused: #0f62fe;
-  --graph-text: #262626;
-  --gray: var(--text-normal, #262626);
+  --footnote-divider-color: var(--metadata-divider-color, #8D8D8D);
+  --footnote-radius: var(--radius-s, 0px);
+  --graph-node-focused: var(--text-accent, #0f62fe);
+  --graph-text: var(--text-normal, #262626);
+  --gray: var(--text-normal, var(--color-base-100, #262626));
   --h1-weight: 400;
   --h2-weight: 400;
-  --headerFont: var(--font-text, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
-  --highlight: var(--text-highlight-bg, #d0e2ff);
-  --hr-color: #8D8D8D;
-  --icon-color: #262626;
-  --icon-color-active: #0f62fe;
-  --icon-color-focused: #000000;
-  --icon-color-hover: #262626;
+  --hr-color: var(--background-modifier-border, #8D8D8D);
+  --icon-color: var(--text-muted, #262626);
+  --icon-color-active: var(--text-accent, #0f62fe);
+  --icon-color-focused: var(--text-normal, #000000);
+  --icon-color-hover: var(--text-muted, #262626);
   --inactive-tab-background: #262626;
-  --inline-title-weight: 400;
+  --inline-title-weight: var(--h1-weight, 400);
   --input-disabled-border-color: transparent;
-  --input-height: 40px;
+  --input-height: calc(var(--font-text-size)*2.5);
   --input-hover-border-color: black;
   --input-radius: 0px;
   --input-unfocused-border-color: transparent;
-  --interactive-accent: hsl(218, 99.99%, 56.975%);
-  --interactive-accent-hover: hsl(216, 100.98%, 60.95%);
-  --interactive-accent-hsl: 219, 99%, 53%;
-  --light: var(--background-primary, #FFFFFF);
-  --lightgray: var(--background-secondary, #F4F4F4);
-  --link-color: #0f62fe;
-  --link-color-hover: hsl(216, 100.98%, 60.95%);
-  --link-external-color: #0f62fe;
-  --link-external-color-hover: hsl(216, 100.98%, 60.95%);
-  --link-unresolved-color: #0f62fe;
-  --link-unresolved-decoration-color: hsla(219, 99%, 53%, 0.3);
+  --interactive-accent: var(--color-accent-1, hsl(218, 99.99%, 56.975%));
+  --interactive-accent-hover: var(--color-accent-2, hsl(216, 100.98%, 60.95%));
+  --interactive-accent-hsl: var(--color-accent-hsl, 219, 99%, 53%);
+  --light: var(--background-primary, var(--color-base-00, #FFFFFF));
+  --lightgray: var(--background-secondary, var(--color-base-20, #F4F4F4));
+  --link-color: var(--text-accent, #0f62fe);
+  --link-color-hover: var(--text-accent-hover, hsl(216, 100.98%, 60.95%));
+  --link-external-color: var(--text-accent, #0f62fe);
+  --link-external-color-hover: var(--text-accent-hover, hsl(216, 100.98%, 60.95%));
+  --link-unresolved-color: var(--text-accent, #0f62fe);
   --list-bullet-size: 0.4em;
-  --list-indent: 1.75em;
-  --list-marker-color: #262626;
-  --list-marker-color-collapsed: #0f62fe;
+  --list-marker-color: var(--text-faint, #262626);
+  --list-marker-color-collapsed: var(--text-accent, #0f62fe);
   --list-spacing: 0.05em;
-  --menu-background: #F4F4F4;
-  --menu-border-color: transparent;
-  --menu-radius: 0px;
-  --metadata-border-color: #8D8D8D;
-  --metadata-divider-color: #8D8D8D;
-  --metadata-input-font: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --metadata-input-text-color: #262626;
-  --metadata-label-font: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --metadata-property-box-shadow-hover: 0 0 0 1px transparent;
-  --metadata-sidebar-input-font-size: 14px;
-  --metadata-sidebar-label-font-size: 14px;
-  --modal-background: #FFFFFF;
-  --modal-radius: 0px;
-  --nav-heading-color: #262626;
-  --nav-heading-color-hover: #262626;
-  --nav-item-background-selected: hsla(219, 99%, 53%, 0.15);
-  --nav-item-color-active: #262626;
-  --nav-item-color-highlighted: #0f62fe;
-  --nav-item-color-hover: #262626;
-  --nav-item-color-selected: #262626;
-  --nav-item-radius: 0px;
-  --nav-item-size: 14px;
-  --nav-tag-radius: 0px;
-  --pdf-background: #FFFFFF;
-  --pdf-page-background: #FFFFFF;
-  --pdf-sidebar-background: #FFFFFF;
-  --pill-border-color: #8D8D8D;
-  --pill-border-color-hover: transparent;
-  --pill-color-hover: #262626;
-  --pill-color-remove-hover: #0f62fe;
-  --prompt-background: #FFFFFF;
+  --menu-background: var(--background-secondary, #F4F4F4);
+  --menu-border-color: var(--background-modifier-border-hover, transparent);
+  --menu-radius: var(--radius-m, 0px);
+  --metadata-border-color: var(--background-modifier-border, #8D8D8D);
+  --metadata-divider-color: var(--background-modifier-border, #8D8D8D);
+  --metadata-input-font: var(--font-interface, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  --metadata-input-text-color: var(--text-normal, #262626);
+  --metadata-label-font: var(--font-interface, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 14px);
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 14px);
+  --modal-background: var(--background-primary, #FFFFFF);
+  --modal-radius: var(--radius-l, 0px);
+  --nav-heading-color: var(--text-normal, #262626);
+  --nav-heading-color-hover: var(--text-normal, #262626);
+  --nav-item-color-active: var(--text-normal, #262626);
+  --nav-item-color-highlighted: var(--text-accent, #0f62fe);
+  --nav-item-color-hover: var(--text-normal, #262626);
+  --nav-item-color-selected: var(--text-normal, #262626);
+  --nav-item-radius: var(--radius-s, 0px);
+  --nav-item-size: var(--font-ui-small, 14px);
+  --nav-tag-radius: var(--radius-s, 0px);
+  --pdf-background: var(--background-primary, #FFFFFF);
+  --pdf-page-background: var(--background-primary, #FFFFFF);
+  --pdf-sidebar-background: var(--background-primary, #FFFFFF);
+  --pill-border-color: var(--background-modifier-border, #8D8D8D);
+  --pill-border-color-hover: var(--background-modifier-border-hover, transparent);
+  --pill-color-hover: var(--text-normal, #262626);
+  --pill-color-remove-hover: var(--text-accent, #0f62fe);
+  --prompt-background: var(--background-primary, #FFFFFF);
   --radius-l: 0px;
   --radius-m: 0px;
   --radius-s: 0px;
-  --raised-background: color-mix(in srgb, #FFFFFF 65%, transparent) linear-gradient(#FFFFFF, color-mix(in srgb, #FFFFFF 65%, transparent));
-  --ribbon-background: #000000;
-  --ribbon-background-collapsed: #FFFFFF;
-  --scrollbar-radius: 0px;
-  --search-result-background: #FFFFFF;
-  --secondary: var(--text-accent, #0f62fe);
-  --setting-group-heading-color: #262626;
-  --setting-items-border-color: #8D8D8D;
-  --setting-items-radius: 0px;
-  --shiki-code-block-border-radius: 0px;
-  --shiki-gutter-border-color: #8D8D8D;
-  --slider-thumb-border-color: transparent;
-  --slider-thumb-radius: 0px;
-  --slider-track-background: #8D8D8D;
-  --status-bar-background: #F4F4F4;
-  --status-bar-border-color: transparent;
-  --status-bar-radius: 0px 0 0 0;
-  --suggestion-background: #FFFFFF;
-  --tab-background-active: #FFFFFF;
-  --tab-container-background: #F4F4F4;
-  --tab-divider-color: transparent;
-  --tab-font-size: 14px;
-  --tab-outline-color: transparent;
-  --tab-radius: 0px;
+  --raised-background: var(--blur-background, color-mix(in srgb, #FFFFFF 65%, transparent) linear-gradient(#FFFFFF, color-mix(in srgb, #FFFFFF 65%, transparent)));
+  --ribbon-background: var(--background-secondary, #000000);
+  --ribbon-background-collapsed: var(--background-primary, #FFFFFF);
+  --scrollbar-radius: var(--radius-l, 0px);
+  --search-result-background: var(--background-primary, #FFFFFF);
+  --secondary: var(--text-accent, var(--color-accent, #0f62fe));
+  --setting-group-heading-color: var(--text-normal, #262626);
+  --setting-items-border-color: var(--background-modifier-border, #8D8D8D);
+  --setting-items-radius: var(--radius-l, 0px);
+  --shiki-code-block-border-radius: var(--code-radius, 0px);
+  --shiki-gutter-border-color: var(--background-modifier-border, #8D8D8D);
+  --slider-thumb-border-color: var(--background-modifier-border-hover, transparent);
+  --slider-thumb-radius: var(--slider-thumb-height, 0px);
+  --slider-track-background: var(--background-modifier-border, #8D8D8D);
+  --status-bar-background: var(--background-secondary, #F4F4F4);
+  --status-bar-border-color: var(--divider-color, transparent);
+  --status-bar-radius: var(--radius-m, 0px 0 0 0) 0 0 0;
+  --suggestion-background: var(--background-primary, #FFFFFF);
+  --tab-background-active: var(--background-primary, #FFFFFF);
+  --tab-container-background: var(--background-secondary, #F4F4F4);
+  --tab-divider-color: var(--background-modifier-border-hover, transparent);
+  --tab-font-size: var(--font-ui-small, 14px);
+  --tab-outline-color: var(--divider-color, transparent);
+  --tab-radius: var(--radius-s, 0px);
   --tab-radius-active: 0;
-  --tab-stacked-font-size: 14px;
-  --tab-switcher-background: #F4F4F4;
-  --tab-switcher-menubar-background: linear-gradient(to top, #F4F4F4, transparent);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(219, 99%, 53%);
-  --tab-text-color: #8D8D8D;
-  --tab-text-color-focused: #8D8D8D;
-  --tab-text-color-focused-active-current: #262626;
-  --tab-text-color-focused-highlighted: #0f62fe;
-  --table-add-button-border-color: #8D8D8D;
-  --table-border-color: #8D8D8D;
+  --tab-stacked-font-size: var(--font-ui-small, 14px);
+  --tab-switcher-background: var(--background-secondary, #F4F4F4);
+  --tab-text-color: var(--text-faint, #8D8D8D);
+  --tab-text-color-focused: var(--text-muted, #8D8D8D);
+  --tab-text-color-focused-active-current: var(--text-normal, #262626);
+  --tab-text-color-focused-highlighted: var(--text-accent, #0f62fe);
+  --table-add-button-border-color: var(--background-modifier-border, #8D8D8D);
+  --table-border-color: var(--background-modifier-border, #8D8D8D);
   --table-borders: #C6C6C6;
-  --table-drag-handle-background-active: hsl(218, 99.99%, 56.975%);
-  --table-header-border-color: #8D8D8D;
-  --table-header-color: #262626;
+  --table-drag-handle-background-active: var(--table-selection-border-color, hsl(218, 99.99%, 56.975%));
+  --table-header-border-color: var(--table-border-color, #8D8D8D);
+  --table-header-color: var(--text-normal, #262626);
   --table-headers: #e8e8e8;
-  --table-selection: hsla(219, 99%, 53%, 0.1);
-  --table-selection-border-color: hsl(218, 99.99%, 56.975%);
-  --tag-background: hsla(219, 99%, 53%, 0.1);
-  --tag-background-hover: hsla(219, 99%, 53%, 0.2);
-  --tag-border-color: hsla(219, 99%, 53%, 0.15);
-  --tag-border-color-hover: hsla(219, 99%, 53%, 0.15);
-  --tag-color: #0f62fe;
-  --tag-color-hover: #0f62fe;
-  --tertiary: var(--text-accent-hover, hsl(216, 100.98%, 60.95%));
-  --text-accent: #0f62fe;
-  --text-accent-hover: hsl(216, 100.98%, 60.95%);
-  --text-error: #da1e28;
-  --text-highlight-bg: #d0e2ff;
-  --text-normal: #262626;
-  --text-selection: hsla(219, 99%, 53%, 0.2);
-  --textHighlight: var(--text-highlight-bg, #d0e2ff);
-  --titleFont: var(--font-text, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
-  --titlebar-background: #000000;
-  --titlebar-background-focused: #000000;
-  --titlebar-border-color: #8D8D8D;
-  --titlebar-text-color-focused: #262626;
+  --table-selection-border-color: var(--interactive-accent, hsl(218, 99.99%, 56.975%));
+  --tag-color: var(--text-accent, #0f62fe);
+  --tag-color-hover: var(--text-accent, #0f62fe);
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, hsl(216, 100.98%, 60.95%)));
+  --text-accent: var(--color-accent, #0f62fe);
+  --text-accent-hover: var(--color-accent-2, hsl(216, 100.98%, 60.95%));
+  --text-error: var(--color-red, #da1e28);
+  --text-normal: var(--color-base-100, #262626);
+  --titlebar-background: var(--background-secondary, #000000);
+  --titlebar-background-focused: var(--background-secondary-alt, #000000);
+  --titlebar-border-color: var(--background-modifier-border, #8D8D8D);
+  --titlebar-text-color-focused: var(--text-normal, #262626);
   --toggle-radius: 0px;
   --toggle-thumb-radius: 0px;
-  --vault-profile-color: #262626;
-  --vault-profile-color-hover: #262626;
-  --vault-profile-font-size: 14px;
+  --vault-profile-color: var(--text-normal, #262626);
+  --vault-profile-color-hover: var(--vault-profile-color, #262626);
+  --vault-profile-font-size: var(--font-ui-small, 14px);
   --quartz-icon-color: currentColor;
 }
 
@@ -1752,7 +1946,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(244, 244, 244);
+  background-color: var(--tab-container-background, rgb(244, 244, 244));
   color: rgb(38, 38, 38);
 }
 
@@ -1761,7 +1955,7 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(244, 244, 244);
+  background-color: var(--background-secondary, rgb(244, 244, 244));
   color: rgb(38, 38, 38);
 }
 
@@ -1770,7 +1964,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(244, 244, 244);
+  background-color: var(--tab-container-background, rgb(244, 244, 244));
   border-left-color: rgba(0, 0, 0, 0);
   border-left-style: solid;
   border-left-width: 1px;
@@ -1783,36 +1977,36 @@ html[saved-theme="light"] body html {
   --input-unfocused-border-color: transparent;
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
-  color: rgb(38, 38, 38);
+  color: var(--bold-color, rgb(38, 38, 38));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(38, 38, 38) none 0px;
   text-decoration-color: rgb(38, 38, 38);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
-  color: rgb(38, 38, 38);
+  color: var(--italic-color, rgb(38, 38, 38));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(38, 38, 38) none 0px;
   text-decoration-color: rgb(38, 38, 38);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
-  color: rgb(38, 38, 38);
+  color: var(--italic-color, rgb(38, 38, 38));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(38, 38, 38) none 0px;
   text-decoration-color: rgb(38, 38, 38);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
-  color: rgb(38, 38, 38);
+  color: var(--bold-color, rgb(38, 38, 38));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(38, 38, 38) none 0px;
   text-decoration-color: rgb(38, 38, 38);
 }
 
 html[saved-theme="light"] body .text-highlight {
-  background-color: rgb(208, 226, 255);
-  color: rgb(38, 38, 38);
+  background-color: var(--text-highlight-bg, rgb(208, 226, 255));
+  color: var(--text-normal, rgb(38, 38, 38));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(38, 38, 38) none 0px;
   text-decoration-color: rgb(38, 38, 38);
@@ -1826,7 +2020,7 @@ html[saved-theme="light"] body del {
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(38, 38, 38);
+  color: var(--text-normal, rgb(38, 38, 38));
   font-size: 14px;
 }
 
@@ -1835,7 +2029,7 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(36, 116, 255);
+  background-color: var(--checkbox-color, rgb(36, 116, 255));
   border-color: rgb(36, 116, 255);
 }
 
@@ -1843,25 +2037,25 @@ html[saved-theme="light"] body p {
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }`,
     links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
-  color: rgb(15, 98, 254);
+  color: var(--link-external-color, rgb(15, 98, 254));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(15, 98, 254) none 0px;
   text-decoration-color: rgb(15, 98, 254);
 }
 
 html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(15, 98, 254);
+  color: var(--link-color, rgb(15, 98, 254));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(15, 98, 254) none 0px;
   text-decoration-color: rgb(15, 98, 254);
 }
 
 html[saved-theme="light"] body a.internal-link.broken {
-  color: rgb(15, 98, 254);
+  color: var(--link-unresolved-color, rgb(15, 98, 254));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(15, 98, 254) none 0px;
   text-decoration: underline rgba(16, 100, 254, 0.3);
-  text-decoration-color: rgba(16, 100, 254, 0.3);
+  text-decoration-color: var(--link-unresolved-decoration-color, rgba(16, 100, 254, 0.3));
 }`,
     lists: `html[saved-theme="light"] body dd {
   color: rgb(38, 38, 38);
@@ -1889,7 +2083,7 @@ html[saved-theme="light"] body ul.overflow {
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
-  background-color: rgb(244, 244, 244);
+  background-color: var(--background-secondary, rgb(244, 244, 244));
   border-bottom-color: rgb(38, 38, 38);
   border-left-color: rgb(38, 38, 38);
   border-right-color: rgb(38, 38, 38);
@@ -1906,28 +2100,28 @@ html[saved-theme="light"] body td {
   border-bottom-color: rgb(38, 38, 38);
   border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: rgb(38, 38, 38);
   border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
   border-top-width: 0px;
-  color: rgb(38, 38, 38);
+  color: var(--table-text-color, rgb(38, 38, 38));
 }
 
 html[saved-theme="light"] body th {
   border-bottom-color: rgb(38, 38, 38);
   border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: rgb(38, 38, 38);
   border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
-  border-top-width: 0px;
-  color: rgb(38, 38, 38);
+  border-top-width: var(--table-header-border-width, 0px);
+  color: var(--table-header-color, rgb(38, 38, 38));
 }
 
 html[saved-theme="light"] body thead {
-  background-color: rgb(232, 232, 232);
+  background-color: var(--table-headers, rgb(232, 232, 232));
 }`,
     code: `html[saved-theme="light"] body code {
   border-bottom-color: rgb(141, 141, 141);
@@ -1938,8 +2132,8 @@ html[saved-theme="light"] body thead {
   border-top-color: rgb(141, 141, 141);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(38, 38, 38);
-  font-family: "IBM Plex Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
+  color: var(--code-normal, rgb(38, 38, 38));
+  font-family: var(--font-monospace, "IBM Plex Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace);
 }
 
 html[saved-theme="light"] body pre:has(> code) {
@@ -1993,7 +2187,7 @@ html[saved-theme="light"] body video {
   border-top-color: rgb(38, 38, 38);
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
-  background-color: rgb(244, 244, 244);
+  background-color: var(--background-secondary, rgb(244, 244, 244));
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -2012,7 +2206,7 @@ html[saved-theme="light"] body .footnotes {
 }
 
 html[saved-theme="light"] body .transclude {
-  background-color: rgb(244, 244, 244);
+  background-color: var(--background-secondary, rgb(244, 244, 244));
   border-bottom-color: rgb(38, 38, 38);
   border-left-color: rgb(38, 38, 38);
   border-left-width: 0px;
@@ -2045,6 +2239,266 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] li.task-list-item[data-task="body"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] {
+  color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] {
+  color: rgb(38, 38, 38);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
@@ -2333,7 +2787,7 @@ html[saved-theme="light"] body .callout > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-summary, 0, 191, 188);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -2350,7 +2804,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-bug, 233, 49, 71);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -2367,7 +2821,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-error, 233, 49, 71);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -2384,7 +2838,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
-  --callout-color: 120, 82, 238;
+  --callout-color: var(--callout-example, 120, 82, 238);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -2401,7 +2855,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-fail, 233, 49, 71);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -2418,7 +2872,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-info, 8, 109, 221);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -2435,7 +2889,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -2452,7 +2906,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-question, 236, 117, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -2469,7 +2923,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -2486,7 +2940,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
-  --callout-color: 8, 185, 78;
+  --callout-color: var(--callout-success, 8, 185, 78);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -2503,7 +2957,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-tip, 0, 191, 188);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -2520,7 +2974,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-todo, 8, 109, 221);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -2537,7 +2991,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-warning, 236, 117, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -2620,7 +3074,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(38, 38, 38);
+  color: var(--text-normal, rgb(38, 38, 38));
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
@@ -2669,7 +3123,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
-  background-color: rgb(244, 244, 244);
+  background-color: var(--background-secondary, rgb(244, 244, 244));
   border-bottom-color: rgb(141, 141, 141);
   border-left-color: rgb(38, 38, 38);
   border-right-color: rgb(38, 38, 38);
@@ -2697,7 +3151,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(16, 100, 254, 0.1);
+  background-color: var(--pill-background, rgba(16, 100, 254, 0.1));
   border-bottom-color: rgba(16, 100, 254, 0.15);
   border-left-color: rgba(16, 100, 254, 0.15);
   border-right-color: rgba(16, 100, 254, 0.15);
@@ -2710,43 +3164,43 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
-  color: rgb(15, 98, 254);
-  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: var(--text-accent, rgb(15, 98, 254));
+  font-family: var(--h1-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(15, 98, 254);
-  font-weight: 400;
+  color: var(--text-accent, rgb(15, 98, 254));
+  font-weight: var(--inline-title-weight, 400);
 }
 
 html[saved-theme="light"] body h2 {
-  color: rgb(38, 38, 38);
-  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: var(--h2-color, rgb(38, 38, 38));
+  font-family: var(--h2-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  color: rgb(15, 98, 254);
-  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: var(--text-accent, rgb(15, 98, 254));
+  font-family: var(--inline-title-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
 
 html[saved-theme="light"] body h3 {
-  color: rgb(38, 38, 38);
-  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: var(--h3-color, rgb(38, 38, 38));
+  font-family: var(--h3-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
-  color: rgb(38, 38, 38);
-  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: var(--h4-color, rgb(38, 38, 38));
+  font-family: var(--h4-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
-  color: rgb(38, 38, 38);
-  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: var(--h5-color, rgb(38, 38, 38));
+  font-family: var(--h5-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
-  color: rgb(38, 38, 38);
-  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: var(--h6-color, rgb(38, 38, 38));
+  font-family: var(--h6-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
 
 html[saved-theme="light"] body hr {
@@ -2759,7 +3213,7 @@ html[saved-theme="light"] body hr {
   border-right-color: rgba(0, 0, 0, 0);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -2772,19 +3226,19 @@ html[saved-theme="light"] body hr {
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(38, 38, 38);
 }
 
 html[saved-theme="light"] body li.depth-0 {
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(38, 38, 38);
@@ -2795,10 +3249,10 @@ html[saved-theme="light"] body li.depth-0 {
   border-top-color: rgb(38, 38, 38);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(38, 38, 38);
+  color: var(--icon-color, rgb(38, 38, 38));
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: rgb(244, 244, 244);
+  background-color: var(--status-bar-background, rgb(244, 244, 244));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
@@ -2848,7 +3302,7 @@ html[saved-theme="light"] body ul.section-ul {
   border-top-color: rgb(141, 141, 141);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(141, 141, 141);
+  color: var(--icon-color, rgb(141, 141, 141));
 }
 
 html[saved-theme="light"] body .darkmode svg {
@@ -2874,7 +3328,7 @@ html[saved-theme="light"] body .canvas-node-content {
 }
 
 html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(38, 38, 38);
+  color: var(--text-normal, rgb(38, 38, 38));
 }
 
 html[saved-theme="light"] body .canvas-node-group {
@@ -2886,10 +3340,10 @@ html[saved-theme="light"] body .canvas-sidebar {
 }`,
     bases: `html[saved-theme="light"] body .bases-table thead th {
   border-color: rgb(38, 38, 38);
-  color: rgb(38, 38, 38);
+  color: var(--table-header-color, rgb(38, 38, 38));
 }`,
     properties: `html[saved-theme="light"] body .metadata {
-  background-color: rgb(232, 232, 232);
+  background-color: var(--table-headers, rgb(232, 232, 232));
   border-bottom-color: rgb(141, 141, 141);
   border-left-color: rgb(141, 141, 141);
   border-right-color: rgb(141, 141, 141);
@@ -2898,12 +3352,12 @@ html[saved-theme="light"] body .canvas-sidebar {
 }
 
 html[saved-theme="light"] body .metadata-properties {
-  background-color: rgb(244, 244, 244);
+  background-color: var(--background-secondary, rgb(244, 244, 244));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 html[saved-theme="light"] body .note-properties {
-  background-color: rgb(232, 232, 232);
+  background-color: var(--table-headers, rgb(232, 232, 232));
   border-color: rgb(141, 141, 141);
 }
 
@@ -2912,16 +3366,16 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(16, 100, 254, 0.1);
-  color: rgb(15, 98, 254);
+  background-color: var(--pill-background, rgba(16, 100, 254, 0.1));
+  color: var(--pill-color, rgb(15, 98, 254));
 }
 
 html[saved-theme="light"] body .note-properties-value {
-  color: rgb(38, 38, 38);
+  color: var(--text-normal, rgb(38, 38, 38));
 }
 
 html[saved-theme="light"] body div#quartz-root {
-  color: rgb(38, 38, 38);
+  color: var(--text-normal, rgb(38, 38, 38));
 }
 
 html[saved-theme="light"] body ol.overflow {
@@ -2931,12 +3385,12 @@ html[saved-theme="light"] body ol.overflow {
   border-top-color: rgb(38, 38, 38);
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
-  background-color: rgb(244, 244, 244);
+  background-color: var(--background-secondary, rgb(244, 244, 244));
   border-color: rgb(38, 38, 38);
 }
 
 html[saved-theme="light"] body .stacked-page-header {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--tab-container-background, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .stacked-page.active {
@@ -2951,11 +3405,11 @@ html[saved-theme="light"] body .stacked-page.active {
 }
 
 html[saved-theme="light"] body .navigation-progress {
-  background-color: rgb(244, 244, 244);
+  background-color: var(--status-bar-background, rgb(244, 244, 244));
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
-  color: rgb(38, 38, 38);
+  color: var(--text-normal, rgb(38, 38, 38));
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
@@ -2974,8 +3428,8 @@ html[saved-theme="light"] body input[type=text] {
   border-bottom-color: rgb(141, 141, 141);
   border-bottom-width: 1px;
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  padding-bottom: var(--size-4-2, 8px);
+  padding-top: var(--size-4-2, 8px);
 }
 
 html[saved-theme="light"] body kbd {
@@ -2987,8 +3441,8 @@ html[saved-theme="light"] body kbd {
   border-top-color: rgb(38, 38, 38);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(38, 38, 38);
-  font-family: "IBM Plex Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
+  color: var(--code-normal, rgb(38, 38, 38));
+  font-family: var(--font-monospace, "IBM Plex Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace);
 }
 
 html[saved-theme="light"] body progress {
@@ -3011,7 +3465,7 @@ html[saved-theme="light"] body sup {
 }
 
 html[saved-theme="light"] body ul.tags > li {
-  background-color: rgba(16, 100, 254, 0.1);
+  background-color: var(--tag-background, rgba(16, 100, 254, 0.1));
   border-bottom-color: rgba(16, 100, 254, 0.15);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3020,7 +3474,7 @@ html[saved-theme="light"] body ul.tags > li {
   border-top-color: rgba(16, 100, 254, 0.15);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(15, 98, 254);
+  color: var(--tag-color, rgb(15, 98, 254));
 }`,
   },
 };

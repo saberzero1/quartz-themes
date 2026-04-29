@@ -263,57 +263,132 @@
     U+2215, U+FEFF, U+FFFD;
 }
 body.theme-light {
-  --background-modifier-active-hover: hsla(0, 19.6%, 15%, 0.05) !important;
-  --background-modifier-border: hsla(0, 19.6%, 15%, 0.1) !important;
-  --background-modifier-border-focus: hsla(0, 19.6%, 15%, 0.1) !important;
-  --background-modifier-border-hover: hsla(0, 19.6%, 15%, 0.1) !important;
-  --background-modifier-error: rgb(250, 30, 0) !important;
-  --background-modifier-error-hover: rgb(250, 30, 0) !important;
+  --background-modifier-active-hover: var(
+    --accent-soft-light,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --background-modifier-border: var(
+    --accent-soft-dark,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
+  --background-modifier-border-focus: var(
+    --accent-soft-dark,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
+  --background-modifier-border-hover: var(
+    --accent-soft-dark,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
+  --background-modifier-error: var(--text-error, rgb(250, 30, 0)) !important;
+  --background-modifier-error-hover: var(
+    --text-error,
+    rgb(250, 30, 0)
+  ) !important;
   --background-modifier-error-rgb: var(--color-red-rgb, 233, 49, 71) !important;
-  --background-modifier-form-field: hsla(0, 19.6%, 15%, 0.05) !important;
-  --background-modifier-form-field-hover: hsla(0, 19.6%, 15%, 0.05) !important;
-  --background-modifier-hover: hsla(0, 19.6%, 15%, 0.05) !important;
-  --background-modifier-success: rgb(30, 169, 67) !important;
+  --background-modifier-form-field: var(
+    --accent-soft-light,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --background-modifier-form-field-hover: var(
+    --background-modifier-form-field,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --background-modifier-hover: var(
+    --accent-soft-light,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --background-modifier-success: var(
+    --color-green,
+    rgb(30, 169, 67)
+  ) !important;
   --background-modifier-success-rgb: var(
     --color-green-rgb,
     8,
     185,
     78
   ) !important;
-  --background-primary: hsl(0, 39.2%, 99.3%) !important;
-  --background-primary-alt: hsl(0, 34.3%, 97.3%) !important;
-  --background-secondary: hsl(0, 34.3%, 97.3%) !important;
-  --background-secondary-alt: hsl(0, 34.3%, 97.3%) !important;
-  --bases-cards-background: hsl(0, 39.2%, 99.3%) !important;
+  --background-primary: hsl(
+    var(--background-h),
+    var(--background-s),
+    var(--background-l)
+  ) !important;
+  --background-primary-alt: var(
+    --background-secondary,
+    hsl(0, 34.3%, 97.3%)
+  ) !important;
+  --background-secondary: hsl(
+    var(--background-h),
+    var(--background-secondary-s),
+    var(--background-secondary-l)
+  ) !important;
+  --background-secondary-alt: var(
+    --background-secondary,
+    hsl(0, 34.3%, 97.3%)
+  ) !important;
+  --bases-cards-background: var(
+    --background-primary,
+    hsl(0, 39.2%, 99.3%)
+  ) !important;
   --bases-cards-border-width: var(--border-width, 1px) !important;
   --bases-cards-corner-shape: var(--corner-shape, round) !important;
-  --bases-cards-cover-background: hsl(0, 34.3%, 97.3%) !important;
+  --bases-cards-cover-background: var(
+    --background-primary-alt,
+    hsl(0, 34.3%, 97.3%)
+  ) !important;
   --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
-  --bases-cards-radius: 4px !important;
-  --bases-cards-shadow: 0 0 0 1px hsla(0, 19.6%, 15%, 0.1) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px hsla(0, 19.6%, 15%, 0.1) !important;
-  --bases-embed-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
-  --bases-embed-border-radius: 2px !important;
-  --bases-group-heading-property-color: rgb(0, 0, 0) !important;
-  --bases-group-heading-property-size: 13px !important;
+  --bases-cards-radius: var(--radius-m, 4px) !important;
+  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
+  --bases-embed-border-color: var(
+    --background-modifier-border,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
+  --bases-embed-border-radius: var(--radius-s, 2px) !important;
+  --bases-group-heading-property-color: var(
+    --text-muted,
+    rgb(0, 0, 0)
+  ) !important;
+  --bases-group-heading-property-size: var(--font-ui-smaller, 13px) !important;
   --bases-group-heading-property-weight: var(--font-normal, 400) !important;
   --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
   --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: rgb(0, 0, 0) !important;
-  --bases-table-cell-background-active: hsl(0, 39.2%, 99.3%) !important;
-  --bases-table-cell-background-disabled: hsl(0, 34.3%, 97.3%) !important;
-  --bases-table-cell-background-selected: hsla(0, 75%, 52%, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsla(0, 19.6%, 15%, 0.1) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(0, 75%, 52%) !important;
+  --bases-table-border-color: var(
+    --table-border-color,
+    rgb(0, 0, 0)
+  ) !important;
+  --bases-table-cell-background-active: var(
+    --background-primary,
+    hsl(0, 39.2%, 99.3%)
+  ) !important;
+  --bases-table-cell-background-disabled: var(
+    --background-primary-alt,
+    hsl(0, 34.3%, 97.3%)
+  ) !important;
+  --bases-table-cell-background-selected: var(
+    --table-selection,
+    hsla(0, 75%, 52%, 0.1)
+  ) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px
+    var(--background-modifier-border-focus) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width, 1px) !important;
-  --bases-table-container-border-radius: 2px !important;
+  --bases-table-container-border-radius: var(--radius-s, 2px) !important;
   --bases-table-container-border-width: var(--border-width, 1px) !important;
   --bases-table-font-size: var(--font-smaller, 0.875em) !important;
-  --bases-table-group-background: hsl(0, 34.3%, 97.3%) !important;
-  --bases-table-header-background: hsl(0, 39.2%, 99.3%) !important;
-  --bases-table-header-background-hover: hsla(0, 19.6%, 15%, 0.05) !important;
-  --bases-table-header-color: rgb(0, 0, 0) !important;
+  --bases-table-group-background: var(
+    --background-primary-alt,
+    hsl(0, 34.3%, 97.3%)
+  ) !important;
+  --bases-table-header-background: var(
+    --background-primary,
+    hsl(0, 39.2%, 99.3%)
+  ) !important;
+  --bases-table-header-background-hover: var(
+    --background-modifier-hover,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --bases-table-header-color: var(--text-muted, rgb(0, 0, 0)) !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent var(--size-4-6),
@@ -325,13 +400,30 @@ body.theme-light {
     transparent
   ) !important;
   --bases-table-row-border-width: var(--border-width, 1px) !important;
-  --bases-table-summary-background: hsl(0, 39.2%, 99.3%) !important;
-  --bases-table-summary-background-hover: hsla(0, 19.6%, 15%, 0.05) !important;
-  --blockquote-border-color: hsl(0, 75%, 52%) !important;
-  --blur-background: color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent)
+  --bases-table-summary-background: var(
+    --background-primary,
+    hsl(0, 39.2%, 99.3%)
+  ) !important;
+  --bases-table-summary-background-hover: var(
+    --background-modifier-hover,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --blockquote-border-color: var(
+    --interactive-accent,
+    hsl(0, 75%, 52%)
+  ) !important;
+  --blur-background: color-mix(
+      in srgb,
+      var(--background-primary) var(--blur-opacity-s),
+      transparent
+    )
     linear-gradient(
-      hsl(0, 39.2%, 99.3%),
-      color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent)
+      var(--background-primary),
+      color-mix(
+        in srgb,
+        var(--background-primary) var(--blur-opacity-s),
+        transparent
+      )
     ) !important;
   --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
@@ -341,27 +433,30 @@ body.theme-light {
     brightness(var(--blur-brightness)) !important;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
   --button-corner-shape: var(--corner-shape, round) !important;
-  --button-radius: 2px !important;
+  --button-radius: var(--radius-s, 2px) !important;
   --callout-blend-mode: var(--highlight-mix-blend-mode, darken);
-  --callout-bug: 245, 0, 165;
-  --callout-default: 0, 0, 0;
-  --callout-error: 235, 0, 0;
-  --callout-example: 0, 0, 0;
-  --callout-fail: 235, 0, 0;
-  --callout-important: 224, 41, 41;
-  --callout-info: 0, 0, 0;
+  --callout-bug: var(--color-red-rgb, rgb(245, 0, 165));
+  --callout-default: var(--text-normal, rgb(0, 0, 0));
+  --callout-error: var(--color-red-rgb, rgb(235, 0, 0));
+  --callout-example: var(--text-normal, rgb(0, 0, 0));
+  --callout-fail: var(--color-red-rgb, rgb(235, 0, 0));
+  --callout-important: var(--color-accent, hsl(0, 75%, 52%));
+  --callout-info: var(--text-normal, rgb(0, 0, 0));
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
     var(--size-4-6, 12px 12px 12px 24px);
-  --callout-question: 0, 0, 0;
-  --callout-radius: 2px;
-  --callout-success: 0, 180, 0;
-  --callout-summary: 0, 0, 0;
-  --callout-tip: 240, 195, 0;
+  --callout-question: var(--text-normal, rgb(0, 0, 0));
+  --callout-radius: var(--radius-s, 2px);
+  --callout-success: var(--color-green-rgb, rgb(0, 180, 0));
+  --callout-summary: var(--text-normal, rgb(0, 0, 0));
+  --callout-tip: var(--color-cyan-rgb, rgb(240, 195, 0));
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: 0, 130, 235;
-  --callout-warning: 240, 150, 0;
-  --canvas-background: hsl(0, 39.2%, 99.3%) !important;
-  --canvas-card-label-color: rgb(0, 0, 0) !important;
+  --callout-todo: var(--color-blue-rgb, rgb(0, 130, 235));
+  --callout-warning: var(--color-orange-rgb, rgb(240, 150, 0));
+  --canvas-background: var(
+    --background-primary,
+    hsl(0, 39.2%, 99.3%)
+  ) !important;
+  --canvas-card-label-color: var(--text-faint, rgb(0, 0, 0)) !important;
   --canvas-color-1: var(--color-red-rgb, 233, 49, 71) !important;
   --canvas-color-2: var(--color-orange-rgb, 236, 117, 0) !important;
   --canvas-color-3: var(--color-yellow-rgb, 224, 172, 0) !important;
@@ -370,227 +465,390 @@ body.theme-light {
   --canvas-color-6: var(--color-purple-rgb, 120, 82, 238) !important;
   --canvas-controls-icon-size: var(--icon-s, 16px) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
-  --canvas-controls-radius: 2px !important;
+  --canvas-controls-radius: var(--radius-s, 2px) !important;
   --canvas-dot-pattern: var(--color-base-30, #e0e0e0) !important;
-  --caret-color: rgb(0, 0, 0) !important;
-  --checkbox-border-color: rgb(0, 0, 0) !important;
-  --checkbox-border-color-hover: rgb(0, 0, 0) !important;
-  --checkbox-color: hsl(0, 75%, 52%) !important;
-  --checkbox-color-hover: hsl(0, 75%, 52%) !important;
-  --checkbox-marker-color: hsl(0, 39.2%, 99.3%) !important;
-  --checkbox-radius: 2px !important;
+  --caret-color: var(--text-normal, rgb(0, 0, 0)) !important;
+  --checkbox-border-color: var(--list-elements, rgb(0, 0, 0)) !important;
+  --checkbox-border-color-hover: var(--text-muted, rgb(0, 0, 0)) !important;
+  --checkbox-color: var(--interactive-accent, hsl(0, 75%, 52%)) !important;
+  --checkbox-color-hover: var(
+    --interactive-accent-hover,
+    hsl(0, 75%, 52%)
+  ) !important;
+  --checkbox-marker-color: var(
+    --background-primary,
+    hsl(0, 39.2%, 99.3%)
+  ) !important;
+  --checkbox-radius: var(--radius-s, 2px) !important;
   --checkbox-size: var(--font-text-size, 16px) !important;
-  --checklist-done-color: rgb(0, 0, 0) !important;
-  --clickable-icon-radius: 2px !important;
-  --code-background: rgb(23, 35, 62) !important;
-  --code-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
-  --code-bracket-background: hsla(0, 19.6%, 15%, 0.05) !important;
-  --code-comment: rgba(159, 157, 190) !important;
-  --code-function: rgb(230, 205, 90) !important;
-  --code-important: rgb(220, 95, 0) !important;
-  --code-keyword: rgb(220, 100, 210) !important;
-  --code-normal: hsl(0, 0%, 89%) !important;
-  --code-operator: rgb(220, 65, 65) !important;
-  --code-property: rgb(0, 202, 235) !important;
-  --code-punctuation: hsl(0, 0%, 89%) !important;
-  --code-radius: 2px !important;
+  --checklist-done-color: var(--text-muted, rgb(0, 0, 0)) !important;
+  --clickable-icon-radius: var(--radius-s, 2px) !important;
+  --code-background: var(--background-dark, rgb(23, 35, 62)) !important;
+  --code-border-color: var(
+    --background-modifier-border,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
+  --code-bracket-background: var(
+    --background-modifier-hover,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --code-comment: rgba(var(--code-peripheral)) !important;
+  --code-function: var(--color-yellow, rgb(230, 205, 90)) !important;
+  --code-important: var(--color-orange, rgb(220, 95, 0)) !important;
+  --code-keyword: var(--color-pink, rgb(220, 100, 210)) !important;
+  --code-normal: var(--text-normal, hsl(0, 0%, 89%)) !important;
+  --code-operator: var(--color-red, rgb(220, 65, 65)) !important;
+  --code-property: var(--color-cyan, rgb(0, 202, 235)) !important;
+  --code-punctuation: var(--code-normal, hsl(0, 0%, 89%)) !important;
+  --code-radius: var(--radius-s, 2px) !important;
   --code-size: var(--font-smaller, 0.875em) !important;
-  --code-string: rgb(30, 169, 67) !important;
-  --code-tag: rgb(220, 65, 65) !important;
-  --code-value: rgb(140, 110, 240) !important;
-  --collapse-icon-color: hsl(0, 75%, 52%) !important;
-  --collapse-icon-color-collapsed: hsl(0, 75%, 52%) !important;
-  --color-accent: hsl(0, 75%, 52%) !important;
-  --color-accent-1: hsl(0, 75%, 52%) !important;
-  --color-accent-2: hsl(-3, 76.5%, 59.8%) !important;
-  --color-accent-hsl: 0, 75%, 52% !important;
-  --divider-color: transparent !important;
-  --divider-color-hover: hsl(0, 75%, 52%) !important;
+  --code-string: var(--color-green, rgb(30, 169, 67)) !important;
+  --code-tag: var(--color-red, rgb(220, 65, 65)) !important;
+  --code-value: var(--color-purple, rgb(140, 110, 240)) !important;
+  --collapse-icon-color: var(--color-accent, hsl(0, 75%, 52%)) !important;
+  --collapse-icon-color-collapsed: var(
+    --text-accent,
+    hsl(0, 75%, 52%)
+  ) !important;
+  --color-accent: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  ) !important;
+  --color-accent-1: var(--color-accent, hsl(0, 75%, 52%)) !important;
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  ) !important;
+  --color-accent-hsl:
+    var(--accent-h), var(--accent-s), var(--accent-l) !important;
+  --divider-color: var(--background-modifier-border, transparent) !important;
+  --divider-color-hover: var(--interactive-accent, hsl(0, 75%, 52%)) !important;
   --divider-vertical-height: calc(100% - var(--header-height)) !important;
-  --dropdown-background: hsla(0, 19.6%, 15%, 0.05) !important;
-  --dropdown-background-hover: hsla(0, 19.6%, 15%, 0.1) !important;
+  --dropdown-background: var(
+    --interactive-normal,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --dropdown-background-hover: var(
+    --interactive-hover,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
   --dropdown-padding: 0 var(--dropdown-padding-end) 0
     var(--dropdown-padding-start) !important;
   --embed-block-shadow-hover:
-    0 0 0 1px hsla(0, 19.6%, 15%, 0.1), inset 0 0 0 1px hsla(0, 19.6%, 15%, 0.1) !important;
-  --embed-border-start: 2px solid hsl(0, 75%, 52%) !important;
+    0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border) !important;
+  --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: hsl(0, 39.2%, 99.3%) !important;
-  --file-header-background-focused: hsl(0, 39.2%, 99.3%) !important;
+  --file-header-background: var(
+    --background-primary,
+    hsl(0, 39.2%, 99.3%)
+  ) !important;
+  --file-header-background-focused: var(
+    --background-primary,
+    hsl(0, 39.2%, 99.3%)
+  ) !important;
   --file-header-border: var(--border-width, 1px solid transparent) solid
     transparent !important;
-  --file-header-font:
-    "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??",
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
-  --file-header-font-size: 14px !important;
+  --file-header-font: var(
+    --font-interface,
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif,
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif
+  ) !important;
+  --file-header-font-size: var(--font-ui-small, 14px) !important;
   --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
   --file-margins-x: var(--size-4-8, 32px) !important;
   --file-margins-y: var(--size-4-8, 32px) !important;
-  --flair-background: hsla(0, 19.6%, 15%, 0.05) !important;
-  --flair-color: rgb(0, 0, 0) !important;
+  --flair-background: var(
+    --interactive-normal,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --flair-color: var(--text-normal, rgb(0, 0, 0)) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-interface:
-    "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??",
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
-  --font-mermaid:
-    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    var(--font-interface-override), var(--font-interface-theme),
+    var(--default-font, "??"), var(--font-default) !important;
+  --font-mermaid: var(
+    --font-text,
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif
+  ) !important;
   --font-monospace:
-    "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo,
-    SFMono-Regular, Consolas, "Source Code Pro", monospace !important;
+    var(--font-monospace-override), var(--font-monospace-theme),
+    var(--font-monospace-default) !important;
   --font-print:
     var(--font-print-override), var(--font-text-override),
     var(--font-text-theme), "Arial" !important;
   --font-text:
-    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-weight: var(--font-normal, 400) !important;
-  --footnote-divider-color: hsla(0, 19.6%, 15%, 0.1) !important;
+  --footnote-divider-color: var(
+    --metadata-divider-color,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus,
     transparent
   ) !important;
   --footnote-divider-width: var(--border-width, 1px) !important;
   --footnote-gap: var(--size-4-1, 4px) !important;
-  --footnote-id-color: rgb(0, 0, 0) !important;
-  --footnote-id-color-no-occurrences: rgb(0, 0, 0) !important;
+  --footnote-id-color: var(--text-muted, rgb(0, 0, 0)) !important;
+  --footnote-id-color-no-occurrences: var(
+    --text-faint,
+    rgb(0, 0, 0)
+  ) !important;
   --footnote-input-background: var(
     --metadata-input-background,
     transparent
   ) !important;
-  --footnote-input-background-active: hsla(0, 19.6%, 15%, 0.05) !important;
-  --footnote-line-height: 1.25em !important;
+  --footnote-input-background-active: var(
+    --metadata-input-background-active,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --footnote-line-height: var(--line-height-normal, 1.25em) !important;
   --footnote-padding-block: var(--size-2-3, 6px) !important;
   --footnote-padding-inline: var(--size-2-3, 6px) !important;
-  --footnote-radius: 2px !important;
+  --footnote-radius: var(--radius-s, 2px) !important;
   --footnote-size: var(--font-smaller, 0.875em) !important;
   --graph-line: var(
     --color-base-35,
     var(--background-modifier-border-focus)
   ) !important;
-  --graph-node: rgb(0, 0, 0) !important;
-  --graph-node-attachment: rgb(230, 205, 90) !important;
-  --graph-node-focused: hsl(0, 75%, 52%) !important;
-  --graph-node-tag: rgb(30, 169, 67) !important;
-  --graph-node-unresolved: rgb(0, 0, 0) !important;
-  --graph-text: rgb(0, 0, 0) !important;
-  --h5-line-height: 1.25em !important;
-  --h6-line-height: 1.25em !important;
-  --heading-formatting: rgb(0, 0, 0) !important;
+  --graph-node: var(--text-muted, rgb(0, 0, 0)) !important;
+  --graph-node-attachment: var(--color-yellow, rgb(230, 205, 90)) !important;
+  --graph-node-focused: var(--text-accent, hsl(0, 75%, 52%)) !important;
+  --graph-node-tag: var(--color-green, rgb(30, 169, 67)) !important;
+  --graph-node-unresolved: var(--text-faint, rgb(0, 0, 0)) !important;
+  --graph-text: var(--text-normal, rgb(0, 0, 0)) !important;
+  --h5-line-height: var(--line-height-normal, 1.25em) !important;
+  --h6-line-height: var(--line-height-normal, 1.25em) !important;
+  --heading-formatting: var(--text-normal, rgb(0, 0, 0)) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
-  --hr-color: rgba(0, 0, 0, 0.4) !important;
-  --icon-color: rgb(0, 0, 0) !important;
-  --icon-color-active: rgb(0, 0, 0) !important;
-  --icon-color-focused: rgb(0, 0, 0) !important;
-  --icon-color-hover: rgb(0, 0, 0) !important;
+  --hr-color: rgba(var(--ss-light-text-main), 0.4) !important;
+  --icon-color: var(--text-normal, rgb(0, 0, 0)) !important;
+  --icon-color-active: var(--text-normal, rgb(0, 0, 0)) !important;
+  --icon-color-focused: var(--text-normal, rgb(0, 0, 0)) !important;
+  --icon-color-hover: var(--text-normal, rgb(0, 0, 0)) !important;
   --icon-size: var(--icon-m, 18px) !important;
   --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
-  --indentation-guide-color: rgba(0, 0, 0, 0.4) !important;
+  --indentation-guide-color: var(--hr-color, rgba(0, 0, 0, 0.4)) !important;
   --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3) !important;
   --indentation-guide-width: var(--border-width, 1px) !important;
   --indentation-guide-width-active: var(--border-width, 1px) !important;
   --inline-title-line-height: var(--h1-line-height, 1.2) !important;
-  --inline-title-size: 1.625em !important;
+  --inline-title-size: var(--h1-size, 1.625em) !important;
   --inline-title-style: var(--h1-style, normal) !important;
   --inline-title-variant: var(--h1-variant, normal) !important;
   --inline-title-weight: var(--h1-weight, 700) !important;
   --input-border-width: var(--border-width, 1px) !important;
   --input-corner-shape: var(--corner-shape, round) !important;
-  --input-date-separator: rgb(0, 0, 0) !important;
+  --input-date-separator: var(--text-faint, rgb(0, 0, 0)) !important;
   --input-font-weight: var(--font-normal, 400) !important;
   --input-icon-inset: var(--size-4-1, 4px) !important;
   --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
-  --input-placeholder-color: rgb(0, 0, 0) !important;
-  --interactive-accent: hsl(0, 75%, 52%) !important;
-  --interactive-accent-hover: hsl(0, 75%, 52%) !important;
-  --interactive-accent-hsl: 0, 75%, 52% !important;
-  --interactive-hover: hsla(0, 19.6%, 15%, 0.1) !important;
-  --interactive-normal: hsla(0, 19.6%, 15%, 0.05) !important;
-  --link-color: hsl(0, 75%, 52%) !important;
-  --link-color-hover: #000 !important;
-  --link-external-color: hsl(0, 75%, 52%) !important;
-  --link-external-color-hover: #000 !important;
-  --link-unresolved-color: hsl(0, 75%, 52%) !important;
-  --link-unresolved-decoration-color: hsla(0, 75%, 52%, 0.3) !important;
+  --input-placeholder-color: var(--text-faint, rgb(0, 0, 0)) !important;
+  --interactive-accent: var(--color-accent-1, hsl(0, 75%, 52%)) !important;
+  --interactive-accent-hover: var(--color-accent, hsl(0, 75%, 52%)) !important;
+  --interactive-accent-hsl: var(--color-accent-hsl, 0, 75%, 52%) !important;
+  --interactive-hover: var(
+    --accent-soft-dark,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
+  --interactive-normal: var(
+    --accent-soft-light,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --link-color: var(--text-accent, hsl(0, 75%, 52%)) !important;
+  --link-color-hover: var(--text-accent-hover, #000) !important;
+  --link-external-color: var(--text-accent, hsl(0, 75%, 52%)) !important;
+  --link-external-color-hover: var(--text-accent-hover, #000) !important;
+  --link-unresolved-color: var(--text-accent, hsl(0, 75%, 52%)) !important;
+  --link-unresolved-decoration-color: hsla(
+    var(--interactive-accent-hsl),
+    0.3
+  ) !important;
   --link-weight: var(--font-weight, 400) !important;
-  --list-indent: 1.25em !important;
-  --list-marker-color: rgb(0, 0, 0) !important;
-  --list-marker-color-collapsed: hsl(0, 75%, 52%) !important;
-  --list-marker-color-hover: rgb(0, 0, 0) !important;
-  --menu-background: hsl(0, 34.3%, 97.3%) !important;
-  --menu-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
+  --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
+  --list-marker-color: var(--list-elements, rgb(0, 0, 0)) !important;
+  --list-marker-color-collapsed: var(
+    --text-accent,
+    hsl(0, 75%, 52%)
+  ) !important;
+  --list-marker-color-hover: var(--text-muted, rgb(0, 0, 0)) !important;
+  --menu-background: var(
+    --background-secondary,
+    hsl(0, 34.3%, 97.3%)
+  ) !important;
+  --menu-border-color: var(
+    --background-modifier-border-hover,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
   --menu-border-width: var(--border-width, 1px) !important;
   --menu-corner-shape: var(--corner-shape, round) !important;
   --menu-padding: var(--size-2-3, 6px) !important;
-  --menu-radius: 4px !important;
+  --menu-radius: var(--radius-m, 4px) !important;
   --menu-shadow: var(
     --shadow-s,
     0px 1px 2px rgba(0, 0, 0, 0.028),
     0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07)
   ) !important;
-  --metadata-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
-  --metadata-divider-color: hsla(0, 19.6%, 15%, 0.1) !important;
-  --metadata-input-background-active: hsla(0, 19.6%, 15%, 0.05) !important;
-  --metadata-input-font:
-    "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??",
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  --metadata-border-color: var(
+    --background-modifier-border,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
+  --metadata-divider-color: var(
+    --background-modifier-border,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
+  --metadata-input-background-active: var(
+    --background-modifier-hover,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --metadata-input-font: var(
+    --font-interface,
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif,
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif
+  ) !important;
   --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
-  --metadata-input-text-color: rgb(0, 0, 0) !important;
-  --metadata-label-background-active: hsla(0, 19.6%, 15%, 0.05) !important;
-  --metadata-label-font:
-    "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??",
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  --metadata-input-text-color: var(--text-normal, rgb(0, 0, 0)) !important;
+  --metadata-label-background-active: var(
+    --background-modifier-hover,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --metadata-label-font: var(
+    --font-interface,
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif,
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif
+  ) !important;
   --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
-  --metadata-label-text-color: rgb(0, 0, 0) !important;
-  --metadata-label-text-color-hover: rgb(0, 0, 0) !important;
+  --metadata-label-text-color: var(--text-muted, rgb(0, 0, 0)) !important;
+  --metadata-label-text-color-hover: var(--text-muted, rgb(0, 0, 0)) !important;
   --metadata-padding: var(--size-4-2, 8px 0) 0 !important;
-  --metadata-property-background-active: hsla(0, 19.6%, 15%, 0.05) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsla(0, 19.6%, 15%, 0.1) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsla(0, 19.6%, 15%, 0.1) !important;
+  --metadata-property-background-active: var(
+    --background-modifier-hover,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px
+    var(--background-modifier-border-focus) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 var(--border-width)
+    var(--background-modifier-border-hover) !important;
   --metadata-property-corner-shape: var(--corner-shape, round) !important;
   --metadata-property-corner-shape-focus: var(--corner-shape, round) !important;
   --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
-  --metadata-sidebar-input-font-size: 14px !important;
-  --metadata-sidebar-label-font-size: 14px !important;
-  --modal-background: hsl(0, 39.2%, 99.3%) !important;
-  --modal-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 14px) !important;
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 14px) !important;
+  --modal-background: var(
+    --background-primary,
+    hsl(0, 39.2%, 99.3%)
+  ) !important;
+  --modal-border-color: var(
+    --accent-soft-dark,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
   --modal-border-width: var(--border-width, 1px) !important;
-  --modal-radius: 6px !important;
-  --nav-collapse-icon-color: hsl(0, 75%, 52%) !important;
-  --nav-collapse-icon-color-collapsed: hsl(0, 75%, 52%) !important;
-  --nav-heading-color: rgb(0, 0, 0) !important;
-  --nav-heading-color-collapsed: rgb(0, 0, 0) !important;
-  --nav-heading-color-collapsed-hover: rgb(0, 0, 0) !important;
-  --nav-heading-color-hover: rgb(0, 0, 0) !important;
+  --modal-radius: var(--radius-l, 6px) !important;
+  --nav-collapse-icon-color: var(--color-accent, hsl(0, 75%, 52%)) !important;
+  --nav-collapse-icon-color-collapsed: var(
+    --color-accent,
+    hsl(0, 75%, 52%)
+  ) !important;
+  --nav-heading-color: var(--text-normal, rgb(0, 0, 0)) !important;
+  --nav-heading-color-collapsed: var(--text-faint, rgb(0, 0, 0)) !important;
+  --nav-heading-color-collapsed-hover: var(
+    --text-muted,
+    rgb(0, 0, 0)
+  ) !important;
+  --nav-heading-color-hover: var(--text-normal, rgb(0, 0, 0)) !important;
   --nav-heading-weight: var(--font-medium, 500) !important;
   --nav-heading-weight-hover: var(--font-medium, 500) !important;
-  --nav-indentation-guide-color: hsl(0, 75%, 52%) !important;
+  --nav-indentation-guide-color: var(
+    --color-accent,
+    hsl(0, 75%, 52%)
+  ) !important;
   --nav-indentation-guide-width: var(--indentation-guide-width, 1px) !important;
-  --nav-item-background-active: hsla(0, 19.6%, 15%, 0.05) !important;
-  --nav-item-background-hover: hsla(0, 19.6%, 15%, 0.05) !important;
-  --nav-item-background-selected: hsla(0, 75%, 52%, 0.15) !important;
+  --nav-item-background-active: var(
+    --accent-soft-light,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --nav-item-background-hover: var(
+    --accent-soft-light,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --nav-item-background-selected: hsla(
+    var(--color-accent-hsl),
+    0.15
+  ) !important;
   --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
   --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
-  --nav-item-color: rgb(0, 0, 0) !important;
-  --nav-item-color-active: rgb(0, 0, 0) !important;
-  --nav-item-color-highlighted: hsl(0, 75%, 52%) !important;
-  --nav-item-color-hover: rgb(0, 0, 0) !important;
-  --nav-item-color-selected: rgb(0, 0, 0) !important;
+  --nav-item-color: var(--text-normal, rgb(0, 0, 0)) !important;
+  --nav-item-color-active: var(--text-normal, rgb(0, 0, 0)) !important;
+  --nav-item-color-highlighted: var(--text-accent, hsl(0, 75%, 52%)) !important;
+  --nav-item-color-hover: var(--text-normal, rgb(0, 0, 0)) !important;
+  --nav-item-color-selected: var(--text-normal, rgb(0, 0, 0)) !important;
   --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6, 4px 8px 4px 24px) !important;
@@ -598,153 +856,243 @@ body.theme-light {
     --nav-item-padding,
     4px 8px 4px 24px
   ) !important;
-  --nav-item-radius: 2px !important;
-  --nav-item-size: 14px !important;
-  --nav-tag-color: rgb(0, 0, 0) !important;
-  --nav-tag-color-active: rgb(0, 0, 0) !important;
-  --nav-tag-color-hover: rgb(0, 0, 0) !important;
-  --nav-tag-radius: 2px !important;
+  --nav-item-radius: var(--radius-s, 2px) !important;
+  --nav-item-size: var(--font-ui-small, 14px) !important;
+  --nav-tag-color: var(--text-faint, rgb(0, 0, 0)) !important;
+  --nav-tag-color-active: var(--text-muted, rgb(0, 0, 0)) !important;
+  --nav-tag-color-hover: var(--text-muted, rgb(0, 0, 0)) !important;
+  --nav-tag-radius: var(--radius-s, 2px) !important;
   --nav-tag-weight: var(--font-semibold, 600) !important;
-  --pdf-background: hsl(0, 39.2%, 99.3%) !important;
-  --pdf-page-background: hsl(0, 39.2%, 99.3%) !important;
+  --pdf-background: var(--background-primary, hsl(0, 39.2%, 99.3%)) !important;
+  --pdf-page-background: var(
+    --background-primary,
+    hsl(0, 39.2%, 99.3%)
+  ) !important;
   --pdf-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: hsl(0, 39.2%, 99.3%) !important;
+  --pdf-sidebar-background: var(
+    --background-primary,
+    hsl(0, 39.2%, 99.3%)
+  ) !important;
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
-  --pill-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
-  --pill-border-color-hover: hsla(0, 19.6%, 15%, 0.1) !important;
+  --pill-border-color: var(
+    --background-modifier-border,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
+  --pill-border-color-hover: var(
+    --background-modifier-border-hover,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
   --pill-border-width: var(--border-width, 1px) !important;
-  --pill-color: rgb(0, 0, 0) !important;
-  --pill-color-hover: rgb(0, 0, 0) !important;
-  --pill-color-remove: rgb(0, 0, 0) !important;
-  --pill-color-remove-hover: hsl(0, 75%, 52%) !important;
+  --pill-color: var(--text-muted, rgb(0, 0, 0)) !important;
+  --pill-color-hover: var(--text-normal, rgb(0, 0, 0)) !important;
+  --pill-color-remove: var(--text-faint, rgb(0, 0, 0)) !important;
+  --pill-color-remove-hover: var(--text-accent, hsl(0, 75%, 52%)) !important;
   --popover-font-size: var(--font-text-size, 16px) !important;
-  --prompt-background: hsl(0, 39.2%, 99.3%) !important;
-  --prompt-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
+  --prompt-background: var(
+    --background-primary,
+    hsl(0, 39.2%, 99.3%)
+  ) !important;
+  --prompt-border-color: var(
+    --accent-soft-dark,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
   --prompt-border-width: var(--border-width, 1px) !important;
-  --raised-background: color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent)
-    linear-gradient(
-      hsl(0, 39.2%, 99.3%),
-      color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent)
-    ) !important;
+  --raised-background: var(
+    --blur-background,
+    color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent)
+      linear-gradient(
+        hsl(0, 39.2%, 99.3%),
+        color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent)
+      )
+  ) !important;
   --raised-blur: var(
     --blur-s,
     blur(6px) saturate(1.5) brightness(1.15)
   ) !important;
-  --ribbon-background: hsl(0, 34.3%, 97.3%) !important;
-  --ribbon-background-collapsed: hsl(0, 39.2%, 99.3%) !important;
+  --ribbon-background: var(
+    --background-secondary,
+    hsl(0, 34.3%, 97.3%)
+  ) !important;
+  --ribbon-background-collapsed: var(
+    --background-primary,
+    hsl(0, 39.2%, 99.3%)
+  ) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1)
     var(--size-4-3, 8px 4px 12px) !important;
-  --scrollbar-active-thumb-bg: hsla(0, 19.6%, 15%, 0.1) !important;
+  --scrollbar-active-thumb-bg: var(
+    --accent-soft-dark,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
-  --scrollbar-radius: 6px !important;
-  --scrollbar-thumb-bg: hsla(0, 19.6%, 15%, 0.05) !important;
-  --search-clear-button-color: rgb(0, 0, 0) !important;
-  --search-icon-color: rgb(0, 0, 0) !important;
-  --search-result-background: hsl(0, 39.2%, 99.3%) !important;
-  --setting-group-heading-color: rgb(0, 0, 0) !important;
+  --scrollbar-radius: var(--radius-l, 6px) !important;
+  --scrollbar-thumb-bg: var(
+    --accent-soft-light,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --search-clear-button-color: var(--text-muted, rgb(0, 0, 0)) !important;
+  --search-icon-color: var(--text-muted, rgb(0, 0, 0)) !important;
+  --search-result-background: var(
+    --background-primary,
+    hsl(0, 39.2%, 99.3%)
+  ) !important;
+  --setting-group-heading-color: var(--text-normal, rgb(0, 0, 0)) !important;
   --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
   --setting-group-heading-weight: var(--font-semibold, 600) !important;
-  --setting-items-background: hsl(0, 34.3%, 97.3%) !important;
-  --setting-items-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
+  --setting-items-background: var(
+    --background-primary-alt,
+    hsl(0, 34.3%, 97.3%)
+  ) !important;
+  --setting-items-border-color: var(
+    --background-modifier-border,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
   --setting-items-padding: var(--size-4-5, 20px) !important;
-  --setting-items-radius: 6px !important;
-  --shiki-active-tab-border-color: rgb(0, 0, 0) !important;
-  --shiki-code-background: rgb(23, 35, 62) !important;
-  --shiki-code-block-border-radius: 2px !important;
+  --setting-items-radius: var(--radius-l, 6px) !important;
+  --shiki-active-tab-border-color: var(
+    --shiki-highlight-neutral,
+    rgb(0, 0, 0)
+  ) !important;
+  --shiki-code-background: var(--code-background, rgb(23, 35, 62)) !important;
+  --shiki-code-block-border-radius: var(--code-radius, 2px) !important;
   --shiki-code-block-spacing: var(--p-spacing, 1rem) !important;
-  --shiki-code-comment: rgb(0, 0, 0) !important;
-  --shiki-code-function: rgb(30, 169, 67) !important;
-  --shiki-code-important: rgb(220, 95, 0) !important;
-  --shiki-code-keyword: rgb(220, 100, 210) !important;
-  --shiki-code-normal: rgb(0, 0, 0) !important;
-  --shiki-code-property: rgb(0, 202, 235) !important;
-  --shiki-code-punctuation: rgb(0, 0, 0) !important;
-  --shiki-code-string: rgb(230, 205, 90) !important;
-  --shiki-code-value: rgb(140, 110, 240) !important;
-  --shiki-gutter-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
+  --shiki-code-comment: var(--text-faint, rgb(0, 0, 0)) !important;
+  --shiki-code-function: var(--color-green, rgb(30, 169, 67)) !important;
+  --shiki-code-important: var(--color-orange, rgb(220, 95, 0)) !important;
+  --shiki-code-keyword: var(--color-pink, rgb(220, 100, 210)) !important;
+  --shiki-code-normal: var(--text-muted, rgb(0, 0, 0)) !important;
+  --shiki-code-property: var(--color-cyan, rgb(0, 202, 235)) !important;
+  --shiki-code-punctuation: var(--text-muted, rgb(0, 0, 0)) !important;
+  --shiki-code-string: var(--color-yellow, rgb(230, 205, 90)) !important;
+  --shiki-code-value: var(--color-purple, rgb(140, 110, 240)) !important;
+  --shiki-gutter-border-color: var(
+    --background-modifier-border,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
   --shiki-gutter-border-width: var(--border-width, 1px) !important;
-  --shiki-gutter-text-color: rgb(0, 0, 0) !important;
-  --shiki-gutter-text-color-highlight: rgb(0, 0, 0) !important;
+  --shiki-gutter-text-color: var(--text-faint, rgb(0, 0, 0)) !important;
+  --shiki-gutter-text-color-highlight: var(
+    --shiki-code-normal,
+    rgb(0, 0, 0)
+  ) !important;
   --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
   --shiki-highlight-green-background: rgba(
     var(--color-green-rgb),
     0.1
   ) !important;
-  --shiki-highlight-neutral: rgb(0, 0, 0) !important;
+  --shiki-highlight-neutral: var(--shiki-code-normal, rgb(0, 0, 0)) !important;
   --shiki-highlight-neutral-background: rgba(
     var(--mono-rgb-100),
     0.05
   ) !important;
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
-  --shiki-terminal-dots-color: rgb(0, 0, 0) !important;
+  --shiki-terminal-dots-color: var(--text-faint, rgb(0, 0, 0)) !important;
   --shiki-tooltip-background: var(
     --background-modifier-message,
     rgba(0, 0, 0, 0.9)
   ) !important;
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9) !important;
-  --slider-thumb-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
+  --slider-thumb-border-color: var(
+    --background-modifier-border-hover,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
   --slider-thumb-border-width: var(--border-width, 1px) !important;
   --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
-  --slider-track-background: hsla(0, 19.6%, 15%, 0.1) !important;
-  --status-bar-background: hsl(0, 34.3%, 97.3%) !important;
-  --status-bar-border-color: transparent !important;
+  --slider-track-background: var(
+    --background-modifier-border,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
+  --status-bar-background: var(
+    --background-secondary,
+    hsl(0, 34.3%, 97.3%)
+  ) !important;
+  --status-bar-border-color: var(--divider-color, transparent) !important;
   --status-bar-border-width: var(--border-width) 0 0
     var(--border-width, 1px 0 0 1px) !important;
-  --status-bar-font-size: 13px !important;
-  --status-bar-radius: 4px 0 0 0 !important;
-  --status-bar-text-color: rgb(0, 0, 0) !important;
-  --suggestion-background: hsl(0, 39.2%, 99.3%) !important;
+  --status-bar-font-size: var(--font-ui-smaller, 13px) !important;
+  --status-bar-radius: var(--radius-m, 4px 0 0 0) 0 0 0 !important;
+  --status-bar-text-color: var(--text-normal, rgb(0, 0, 0)) !important;
+  --suggestion-background: var(
+    --background-primary,
+    hsl(0, 39.2%, 99.3%)
+  ) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
-  --sync-avatar-color-1: rgb(220, 65, 65) !important;
-  --sync-avatar-color-2: rgb(220, 95, 0) !important;
-  --sync-avatar-color-3: rgb(230, 205, 90) !important;
-  --sync-avatar-color-4: rgb(30, 169, 67) !important;
-  --sync-avatar-color-5: rgb(0, 202, 235) !important;
+  --sync-avatar-color-1: var(--color-red, rgb(220, 65, 65)) !important;
+  --sync-avatar-color-2: var(--color-orange, rgb(220, 95, 0)) !important;
+  --sync-avatar-color-3: var(--color-yellow, rgb(230, 205, 90)) !important;
+  --sync-avatar-color-4: var(--color-green, rgb(30, 169, 67)) !important;
+  --sync-avatar-color-5: var(--color-cyan, rgb(0, 202, 235)) !important;
   --sync-avatar-color-6: var(--color-blue, #086ddd) !important;
-  --sync-avatar-color-7: rgb(140, 110, 240) !important;
-  --sync-avatar-color-8: rgb(220, 100, 210) !important;
-  --tab-background-active: hsl(0, 39.2%, 99.3%) !important;
-  --tab-container-background: hsl(0, 34.3%, 97.3%) !important;
-  --tab-divider-color: hsla(0, 19.6%, 15%, 0.1) !important;
-  --tab-font-size: 14px !important;
-  --tab-outline-color: hsl(0, 75%, 52%) !important;
-  --tab-radius: 2px !important;
-  --tab-stacked-font-size: 14px !important;
+  --sync-avatar-color-7: var(--color-purple, rgb(140, 110, 240)) !important;
+  --sync-avatar-color-8: var(--color-pink, rgb(220, 100, 210)) !important;
+  --tab-background-active: var(
+    --background-primary,
+    hsl(0, 39.2%, 99.3%)
+  ) !important;
+  --tab-container-background: var(
+    --background-secondary,
+    hsl(0, 34.3%, 97.3%)
+  ) !important;
+  --tab-divider-color: var(
+    --background-modifier-border-hover,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
+  --tab-font-size: var(--font-ui-small, 14px) !important;
+  --tab-outline-color: var(--color-accent, hsl(0, 75%, 52%)) !important;
+  --tab-radius: var(--radius-s, 2px) !important;
+  --tab-stacked-font-size: var(--font-ui-small, 14px) !important;
   --tab-stacked-header-width: var(--header-height, 40px) !important;
-  --tab-switcher-background: hsl(0, 34.3%, 97.3%) !important;
+  --tab-switcher-background: var(
+    --background-secondary,
+    hsl(0, 34.3%, 97.3%)
+  ) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
-    hsl(0, 34.3%, 97.3%),
+    var(--background-secondary),
     transparent
   ) !important;
-  --tab-switcher-preview-radius: 8px !important;
+  --tab-switcher-preview-radius: var(--radius-xl, 8px) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 75%, 52%) !important;
-  --tab-text-color: rgb(0, 0, 0) !important;
-  --tab-text-color-active: rgb(0, 0, 0) !important;
-  --tab-text-color-focused: rgb(0, 0, 0) !important;
-  --tab-text-color-focused-active: rgb(0, 0, 0) !important;
-  --tab-text-color-focused-active-current: rgb(0, 0, 0) !important;
-  --tab-text-color-focused-highlighted: hsl(0, 75%, 52%) !important;
-  --table-add-button-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
+  --tab-text-color: var(--text-faint, rgb(0, 0, 0)) !important;
+  --tab-text-color-active: var(--text-muted, rgb(0, 0, 0)) !important;
+  --tab-text-color-focused: var(--text-muted, rgb(0, 0, 0)) !important;
+  --tab-text-color-focused-active: var(--text-muted, rgb(0, 0, 0)) !important;
+  --tab-text-color-focused-active-current: var(
+    --text-normal,
+    rgb(0, 0, 0)
+  ) !important;
+  --tab-text-color-focused-highlighted: var(
+    --text-accent,
+    hsl(0, 75%, 52%)
+  ) !important;
+  --table-add-button-border-color: var(
+    --background-modifier-border,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
   --table-add-button-border-width: var(--table-border-width, 1px) !important;
-  --table-border-color: rgb(0, 0, 0) !important;
+  --table-border-color: var(--list-elements, rgb(0, 0, 0)) !important;
   --table-column-alt-background: var(
     --table-background,
     transparent
   ) !important;
   --table-column-first-border-width: var(--table-border-width, 1px) !important;
   --table-column-last-border-width: var(--table-border-width, 1px) !important;
-  --table-drag-handle-background-active: hsl(0, 75%, 52%) !important;
-  --table-drag-handle-color: rgb(0, 0, 0) !important;
-  --table-drag-handle-color-active: rgb(254, 252, 252) !important;
+  --table-drag-handle-background-active: var(
+    --table-selection-border-color,
+    hsl(0, 75%, 52%)
+  ) !important;
+  --table-drag-handle-color: var(--text-faint, rgb(0, 0, 0)) !important;
+  --table-drag-handle-color-active: var(
+    --text-on-accent,
+    rgb(254, 252, 252)
+  ) !important;
   --table-header-background: var(--table-background, transparent) !important;
-  --table-header-border-color: rgb(0, 0, 0) !important;
+  --table-header-border-color: var(--list-elements, rgb(0, 0, 0)) !important;
   --table-header-border-width: var(--table-border-width, 1px) !important;
-  --table-header-color: rgb(0, 0, 0) !important;
+  --table-header-color: var(--text-normal, rgb(0, 0, 0)) !important;
   --table-header-size: var(--table-text-size, 16px) !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
@@ -757,35 +1105,62 @@ body.theme-light {
   ) !important;
   --table-row-background-hover: var(--table-background, transparent) !important;
   --table-row-last-border-width: var(--table-border-width, 1px) !important;
-  --table-selection: hsla(0, 75%, 52%, 0.1) !important;
+  --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
   --table-selection-blend-mode: var(
     --highlight-mix-blend-mode,
     darken
   ) !important;
-  --table-selection-border-color: hsl(0, 75%, 52%) !important;
+  --table-selection-border-color: var(
+    --interactive-accent,
+    hsl(0, 75%, 52%)
+  ) !important;
   --table-text-size: var(--font-text-size, 16px) !important;
-  --tag-background: hsla(0, 75%, 52%, 0.1) !important;
-  --tag-background-hover: hsla(0, 75%, 52%, 0.2) !important;
-  --tag-border-color: hsla(0, 75%, 52%, 0.15) !important;
-  --tag-border-color-hover: hsla(0, 75%, 52%, 0.15) !important;
-  --tag-color: hsl(0, 75%, 52%) !important;
-  --tag-color-hover: hsl(0, 75%, 52%) !important;
+  --tag-background: var(
+    --color-accent-background,
+    hsla(0, 75%, 52%, 0.1)
+  ) !important;
+  --tag-background-hover: var(
+    --color-accent-background-hover,
+    hsla(0, 75%, 52%, 0.2)
+  ) !important;
+  --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15) !important;
+  --tag-border-color-hover: hsla(
+    var(--interactive-accent-hsl),
+    0.15
+  ) !important;
+  --tag-color: var(--text-accent, hsl(0, 75%, 52%)) !important;
+  --tag-color-hover: var(--text-accent, hsl(0, 75%, 52%)) !important;
   --tag-size: var(--font-smaller, 0.875em) !important;
-  --text-accent: hsl(0, 75%, 52%) !important;
-  --text-accent-hover: #000 !important;
-  --text-error: rgb(250, 30, 0) !important;
-  --text-faint: rgb(0, 0, 0) !important;
-  --text-highlight-bg: hsl(0, 82.5%, 67.2%) !important;
-  --text-muted: rgb(0, 0, 0) !important;
-  --text-normal: rgb(0, 0, 0) !important;
-  --text-selection: hsla(0, 75%, 52%, 0.4) !important;
-  --text-success: rgb(30, 169, 67) !important;
-  --text-warning: rgb(220, 95, 0) !important;
-  --titlebar-background: hsl(0, 34.3%, 97.3%) !important;
-  --titlebar-background-focused: hsl(0, 34.3%, 97.3%) !important;
-  --titlebar-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
-  --titlebar-text-color: rgb(0, 0, 0) !important;
-  --titlebar-text-color-focused: rgb(0, 0, 0) !important;
+  --text-accent: var(--color-accent, hsl(0, 75%, 52%)) !important;
+  --text-accent-hover: var(--color-accent-2, #000) !important;
+  --text-error: var(--color-red, rgb(250, 30, 0)) !important;
+  --text-faint: var(--text-normal, rgb(0, 0, 0)) !important;
+  --text-highlight-bg: var(
+    --ss-light-highlight-bg,
+    hsl(0, 82.5%, 67.2%)
+  ) !important;
+  --text-muted: var(--text-normal, rgb(0, 0, 0)) !important;
+  --text-normal: rgb(var(--ss-light-text-main)) !important;
+  --text-selection: var(
+    --accent-on-selection,
+    hsla(0, 75%, 52%, 0.4)
+  ) !important;
+  --text-success: var(--color-green, rgb(30, 169, 67)) !important;
+  --text-warning: var(--color-orange, rgb(220, 95, 0)) !important;
+  --titlebar-background: var(
+    --background-secondary,
+    hsl(0, 34.3%, 97.3%)
+  ) !important;
+  --titlebar-background-focused: var(
+    --background-secondary,
+    hsl(0, 34.3%, 97.3%)
+  ) !important;
+  --titlebar-border-color: var(
+    --background-modifier-border,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
+  --titlebar-text-color: var(--text-muted, rgb(0, 0, 0)) !important;
+  --titlebar-text-color-focused: var(--text-normal, rgb(0, 0, 0)) !important;
   --titlebar-text-weight: var(--font-bold, 700) !important;
   --touch-radius-l: var(--touch-size-l, 52px) !important;
   --touch-radius-m: var(--touch-size-m, 44px) !important;
@@ -795,14 +1170,17 @@ body.theme-light {
   --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
   --traffic-lights-offset-x: var(--header-height, 40px) !important;
   --traffic-lights-offset-y: var(--header-height, 40px) !important;
-  --vault-profile-color: rgb(0, 0, 0) !important;
-  --vault-profile-color-hover: rgb(0, 0, 0) !important;
-  --vault-profile-font-size: 14px !important;
+  --vault-profile-color: var(--text-normal, rgb(0, 0, 0)) !important;
+  --vault-profile-color-hover: var(
+    --vault-profile-color,
+    rgb(0, 0, 0)
+  ) !important;
+  --vault-profile-font-size: var(--font-ui-small, 14px) !important;
   --vault-profile-font-weight: var(--font-medium, 500) !important;
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
   --input-height: 30px !important;
   --input-border-width-focus: 2px !important;
-  --input-radius: 4px !important;
+  --input-radius: var(--radius-m, 4px) !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
   --pill-focus-left-adjust: -4px !important;
@@ -856,7 +1234,7 @@ body.theme-light {
   --callout-border-width: 0px;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-quote: 0, 0, 0;
+  --callout-quote: var(--text-normal, rgb(0, 0, 0));
   --callout-title-padding: 0;
   --canvas-color: 192, 192, 192 !important;
   --checkbox-margin-inline-start: 0.85em !important;
@@ -924,9 +1302,17 @@ body.theme-light {
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface-override: "??" !important;
-  --font-interface-theme:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  --font-interface-theme: var(
+    --font-default,
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif
+  ) !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-monospace-default:
@@ -1048,7 +1434,7 @@ body.theme-light {
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-numbered-style: decimal !important;
-  --list-spacing: 0.25em !important;
+  --list-spacing: calc(var(--line-height-normal)/5) !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
   --menu-scroll-mask: linear-gradient(
@@ -1112,10 +1498,10 @@ body.theme-light {
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
   --prompt-width: 700px !important;
-  --radius-l: 6px !important;
-  --radius-m: 4px !important;
-  --radius-s: 2px !important;
-  --radius-xl: 8px !important;
+  --radius-l: calc(var(--radius-s) * 3) !important;
+  --radius-m: calc(var(--radius-s) * 2) !important;
+  --radius-s: calc(var(--ss-border-radius) * 20) !important;
+  --radius-xl: calc(var(--radius-s) * 4) !important;
   --raised-mask:
     linear-gradient(white, white) padding-box,
     linear-gradient(white, white) border-box !important;
@@ -1212,9 +1598,9 @@ body.theme-light {
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
-  --tag-radius: 4px !important;
+  --tag-radius: var(--radius-m, 4px) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-on-accent: rgb(254, 252, 252) !important;
+  --text-on-accent: var(--text-white, rgb(254, 252, 252)) !important;
   --text-on-accent-inverted: black !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
@@ -1251,124 +1637,237 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
+  --inline-title-color: var(--h1-color, rgb(0, 0, 0)) !important;
   --shadow-edges: 0 0 transparent !important;
-  --h1-color: rgb(0, 0, 0) !important;
-  --h2-color: rgb(0, 0, 0) !important;
-  --h3-color: rgb(0, 0, 0) !important;
-  --h4-color: rgb(0, 0, 0) !important;
-  --h5-color: rgb(0, 0, 0) !important;
-  --h6-color: rgb(0, 0, 0) !important;
-  --inline-title-color: rgb(0, 0, 0) !important;
-  --embed-border-left: 2px dashed rgb(0, 0, 0) !important;
+  --h1-color: var(--text-normal, rgb(0, 0, 0)) !important;
+  --h2-color: var(--text-normal, rgb(0, 0, 0)) !important;
+  --h3-color: var(--text-normal, rgb(0, 0, 0)) !important;
+  --h4-color: var(--text-normal, rgb(0, 0, 0)) !important;
+  --h5-color: var(--text-normal, rgb(0, 0, 0)) !important;
+  --h6-color: var(--text-normal, rgb(0, 0, 0)) !important;
+  --embed-border-left: var(
+    --ss-embed-border-style,
+    2px dashed rgb(0, 0, 0)
+  ) !important;
   --vault-name-font-weight: bold !important;
-  --table-header-font:
-    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  --table-header-font: var(
+    --font-text,
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif
+  ) !important;
   --text-highlight-fg: #000 !important;
   --text-white: rgb(254, 252, 252) !important;
-  --oz-fta-file-font-size: 14px !important;
-  --oz-fta-folder-font-size: 14px !important;
+  --oz-fta-file-font-size: var(--nav-item-size, 14px) !important;
+  --oz-fta-folder-font-size: var(--nav-item-size, 14px) !important;
   --background-dark: rgb(23, 35, 62) !important;
-  --accent-on-selection: hsla(0, 75%, 52%, 0.4) !important;
-  --accent-soft-dark: hsla(0, 19.6%, 15%, 0.1) !important;
-  --accent-soft-hsl: 0, 19.6%, 15% !important;
-  --accent-soft-light: hsla(0, 19.6%, 15%, 0.05) !important;
-  --background-contrast: 0% !important;
-  --background-extra-dark: #000 !important;
-  --background-h: 0 !important;
-  --background-l: 99.3% !important;
-  --background-s: 39.2% !important;
-  --background-secondary-l: 97.3% !important;
-  --background-secondary-s: 34.3% !important;
-  --button-shadow: hsl(0, 19.6%, 15%, 0.6) !important;
-  --button-shadow-hover: rgba(0, 0, 0, 0.67) !important;
-  --code-indentation-guide-color: rgba(159, 157, 190, 0.33) !important;
-  --code-peripheral: 159, 157, 190 !important;
-  --color-accent-background: hsla(0, 75%, 52%, 0.1) !important;
-  --color-accent-background-hover: hsla(0, 75%, 52%, 0.2) !important;
-  --dictionary-background-primary: hsla(0, 19.6%, 15%, 0.05) !important;
-  --dictionary-background-secondary: hsl(0, 34.3%, 97.3%) !important;
-  --font-ui-smallest: 12px !important;
-  --kanban-button-text: rgb(0, 0, 0) !important;
-  --kanban-button-text-hover: rgb(254, 252, 252) !important;
-  --kanban-checkbox-border: hsla(0, 19.6%, 15%, 0.1) !important;
-  --list-elements: rgb(0, 0, 0) !important;
+  --accent-on-selection: hsla(var(--color-accent-hsl), 0.4) !important;
+  --accent-soft-dark: hsla(var(--accent-soft-hsl), 0.1) !important;
+  --accent-soft-hsl:
+    var(--background-h), calc(var(--background-s) * 0.5), 15% !important;
+  --accent-soft-light: hsla(var(--accent-soft-hsl), 0.05) !important;
+  --background-contrast: calc(var(--ss-light-contrast) * 4.8) !important;
+  --background-h: var(--ss-light-h, 0) !important;
+  --background-l: calc(var(--ss-light-l) * 5 + 50%) !important;
+  --background-s: calc(var(--ss-light-s) * 10) !important;
+  --background-secondary-l: calc(
+    var(--background-l) - 2% - var(--background-contrast)
+  ) !important;
+  --background-secondary-s: calc(var(--background-s) * 0.875) !important;
+  --button-shadow: hsl(var(--accent-soft-hsl), 0.6) !important;
+  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.33) !important;
+  --color-accent-background: hsla(var(--color-accent-hsl), 0.1) !important;
+  --color-accent-background-hover: hsla(
+    var(--color-accent-hsl),
+    0.2
+  ) !important;
+  --dictionary-background-primary: var(
+    --accent-soft-light,
+    hsla(0, 19.6%, 15%, 0.05)
+  ) !important;
+  --dictionary-background-secondary: var(
+    --background-secondary,
+    hsl(0, 34.3%, 97.3%)
+  ) !important;
+  --kanban-button-text: var(--text-normal, rgb(0, 0, 0)) !important;
+  --kanban-button-text-hover: var(--text-white, rgb(254, 252, 252)) !important;
+  --kanban-checkbox-border: var(
+    --accent-soft-dark,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
+  --list-elements: var(--text-normal, rgb(0, 0, 0)) !important;
   --polka-dots:
-    radial-gradient(hsl(0, 75%, 52%) 15%, transparent 25%),
-    radial-gradient(hsl(0, 75%, 52%) 17.5%, transparent 25%) !important;
+    radial-gradient(var(--color-accent) 15%, transparent 25%),
+    radial-gradient(var(--color-accent) 17.5%, transparent 25%) !important;
+  --search-result-bg-hover: var(
+    --accent-soft-dark,
+    hsla(0, 19.6%, 15%, 0.1)
+  ) !important;
+  --ss-embed-border-style: 2px dashed var(--text-normal) !important;
+  --table-body-font: var(
+    --font-text,
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif
+  ) !important;
+  --background-extra-dark: #000 !important;
+  --button-shadow-hover: rgba(0, 0, 0, 0.67) !important;
+  --code-peripheral: 159, 157, 190 !important;
+  --font-ui-smallest: 12px !important;
   --ribbon-border: none !important;
-  --search-result-bg-hover: hsla(0, 19.6%, 15%, 0.1) !important;
   --ss-border-radius: 0.1px !important;
-  --ss-embed-border-style: 2px dashed rgb(0, 0, 0) !important;
-  --table-body-font:
-    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   --table-body-font-size: 1em !important;
+  --ss-light-highlight-bg: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.1),
+    calc(var(--accent-l) * 1.1 + 10%)
+  ) !important;
   --ss-light-contrast: 0% !important;
   --ss-light-h: 0 !important;
-  --ss-light-highlight-bg: hsl(0, 82.5%, 67.2%) !important;
   --ss-light-l: 9.86% !important;
   --ss-light-s: 3.92% !important;
   --ss-light-text-main: 0, 0, 0 !important;
 }
 
 body.theme-dark {
-  --background-modifier-active-hover: hsla(221, 16.65%, 85%, 0.05) !important;
-  --background-modifier-border: hsla(221, 16.65%, 85%, 0.1) !important;
-  --background-modifier-border-focus: hsl(221, 33.3%, 8.9%) !important;
-  --background-modifier-border-hover: hsla(221, 16.65%, 85%, 0.1) !important;
-  --background-modifier-error: rgb(250, 30, 0) !important;
-  --background-modifier-error-hover: rgb(250, 30, 0) !important;
+  --background-modifier-active-hover: var(
+    --accent-soft-light,
+    hsla(221, 16.65%, 85%, 0.05)
+  ) !important;
+  --background-modifier-border: var(
+    --accent-soft-dark,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
+  --background-modifier-border-focus: hsl(
+    var(--background-h),
+    var(--background-s),
+    calc(var(--background-l) - 4%)
+  ) !important;
+  --background-modifier-border-hover: var(
+    --accent-soft-dark,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
+  --background-modifier-error: var(--text-error, rgb(250, 30, 0)) !important;
+  --background-modifier-error-hover: var(
+    --text-error,
+    rgb(250, 30, 0)
+  ) !important;
   --background-modifier-error-rgb: var(--color-red-rgb, 251, 70, 76) !important;
-  --background-modifier-form-field: rgb(10, 18, 30) !important;
-  --background-modifier-form-field-hover: rgb(10, 18, 30) !important;
-  --background-modifier-hover: hsla(221, 16.65%, 85%, 0.05) !important;
-  --background-modifier-success: rgb(30, 169, 67) !important;
+  --background-modifier-form-field: var(
+    --background-dark,
+    rgb(10, 18, 30)
+  ) !important;
+  --background-modifier-form-field-hover: var(
+    --background-modifier-form-field,
+    rgb(10, 18, 30)
+  ) !important;
+  --background-modifier-hover: var(
+    --accent-soft-light,
+    hsla(221, 16.65%, 85%, 0.05)
+  ) !important;
+  --background-modifier-success: var(
+    --color-green,
+    rgb(30, 169, 67)
+  ) !important;
   --background-modifier-success-rgb: var(
     --color-green-rgb,
     68,
     207,
     110
   ) !important;
-  --background-primary: hsl(221, 33.3%, 12.9%) !important;
-  --background-primary-alt: rgb(10, 18, 30) !important;
-  --background-secondary: hsl(221, 29.1375%, 18.404%) !important;
-  --background-secondary-alt: hsl(221, 29.1375%, 18.404%) !important;
-  --bases-cards-background: hsl(221, 33.3%, 12.9%) !important;
+  --background-primary: hsl(
+    var(--background-h),
+    var(--background-s),
+    var(--background-l)
+  ) !important;
+  --background-primary-alt: var(--background-dark, rgb(10, 18, 30)) !important;
+  --background-secondary: hsl(
+    var(--background-h),
+    var(--background-secondary-s),
+    var(--background-secondary-l)
+  ) !important;
+  --background-secondary-alt: var(
+    --background-secondary,
+    hsl(221, 29.1375%, 18.404%)
+  ) !important;
+  --bases-cards-background: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
   --bases-cards-border-width: var(--border-width, 1px) !important;
   --bases-cards-corner-shape: var(--corner-shape, round) !important;
-  --bases-cards-cover-background: rgb(10, 18, 30) !important;
+  --bases-cards-cover-background: var(
+    --background-primary-alt,
+    rgb(10, 18, 30)
+  ) !important;
   --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
-  --bases-cards-radius: 4px !important;
-  --bases-cards-shadow: 0 0 0 1px hsla(221, 16.65%, 85%, 0.1) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px hsla(221, 16.65%, 85%, 0.1) !important;
-  --bases-embed-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
-  --bases-embed-border-radius: 2px !important;
-  --bases-group-heading-property-color: rgb(250, 247, 245) !important;
-  --bases-group-heading-property-size: 13px !important;
+  --bases-cards-radius: var(--radius-m, 4px) !important;
+  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
+  --bases-embed-border-color: var(
+    --background-modifier-border,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
+  --bases-embed-border-radius: var(--radius-s, 2px) !important;
+  --bases-group-heading-property-color: var(
+    --text-muted,
+    rgb(250, 247, 245)
+  ) !important;
+  --bases-group-heading-property-size: var(--font-ui-smaller, 13px) !important;
   --bases-group-heading-property-weight: var(--font-normal, 400) !important;
   --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
   --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: rgb(250, 247, 245) !important;
-  --bases-table-cell-background-active: hsl(221, 33.3%, 12.9%) !important;
-  --bases-table-cell-background-disabled: rgb(10, 18, 30) !important;
-  --bases-table-cell-background-selected: hsla(189, 100%, 49%, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(221, 33.3%, 8.9%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(189, 100%, 49%) !important;
+  --bases-table-border-color: var(
+    --table-border-color,
+    rgb(250, 247, 245)
+  ) !important;
+  --bases-table-cell-background-active: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
+  --bases-table-cell-background-disabled: var(
+    --background-primary-alt,
+    rgb(10, 18, 30)
+  ) !important;
+  --bases-table-cell-background-selected: var(
+    --table-selection,
+    hsla(189, 100%, 49%, 0.1)
+  ) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px
+    var(--background-modifier-border-focus) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width, 1px) !important;
-  --bases-table-container-border-radius: 2px !important;
+  --bases-table-container-border-radius: var(--radius-s, 2px) !important;
   --bases-table-container-border-width: var(--border-width, 1px) !important;
   --bases-table-font-size: var(--font-smaller, 0.875em) !important;
-  --bases-table-group-background: rgb(10, 18, 30) !important;
-  --bases-table-header-background: hsl(221, 33.3%, 12.9%) !important;
-  --bases-table-header-background-hover: hsla(
-    221,
-    16.65%,
-    85%,
-    0.05
+  --bases-table-group-background: var(
+    --background-primary-alt,
+    rgb(10, 18, 30)
   ) !important;
-  --bases-table-header-color: rgb(250, 247, 245) !important;
+  --bases-table-header-background: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
+  --bases-table-header-background-hover: var(
+    --background-modifier-hover,
+    hsla(221, 16.65%, 85%, 0.05)
+  ) !important;
+  --bases-table-header-color: var(--text-muted, rgb(250, 247, 245)) !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent var(--size-4-6),
@@ -1380,18 +1879,30 @@ body.theme-dark {
     transparent
   ) !important;
   --bases-table-row-border-width: var(--border-width, 1px) !important;
-  --bases-table-summary-background: hsl(221, 33.3%, 12.9%) !important;
-  --bases-table-summary-background-hover: hsla(
-    221,
-    16.65%,
-    85%,
-    0.05
+  --bases-table-summary-background: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
   ) !important;
-  --blockquote-border-color: hsl(189, 100%, 49%) !important;
-  --blur-background: color-mix(in srgb, rgb(10, 18, 30) 65%, transparent)
+  --bases-table-summary-background-hover: var(
+    --background-modifier-hover,
+    hsla(221, 16.65%, 85%, 0.05)
+  ) !important;
+  --blockquote-border-color: var(
+    --interactive-accent,
+    hsl(189, 100%, 49%)
+  ) !important;
+  --blur-background: color-mix(
+      in srgb,
+      var(--interactive-normal) var(--blur-opacity-s),
+      transparent
+    )
     linear-gradient(
-      rgb(10, 18, 30),
-      color-mix(in srgb, rgb(10, 18, 30) 65%, transparent)
+      var(--interactive-normal),
+      color-mix(
+        in srgb,
+        var(--interactive-normal) var(--blur-opacity-s),
+        transparent
+      )
     ) !important;
   --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
@@ -1401,27 +1912,30 @@ body.theme-dark {
     brightness(var(--blur-brightness)) !important;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
   --button-corner-shape: var(--corner-shape, round) !important;
-  --button-radius: 2px !important;
+  --button-radius: var(--radius-s, 2px) !important;
   --callout-blend-mode: var(--highlight-mix-blend-mode, lighten);
-  --callout-bug: 245, 0, 170;
-  --callout-default: 250, 247, 245;
-  --callout-error: 250, 30, 0;
-  --callout-example: 250, 247, 245;
-  --callout-fail: 250, 30, 0;
-  --callout-important: 0, 212, 250;
-  --callout-info: 250, 247, 245;
+  --callout-bug: var(--color-red-rgb, rgb(245, 0, 170));
+  --callout-default: var(--text-normal, rgb(250, 247, 245));
+  --callout-error: var(--color-red-rgb, rgb(250, 30, 0));
+  --callout-example: var(--text-normal, rgb(250, 247, 245));
+  --callout-fail: var(--color-red-rgb, rgb(250, 30, 0));
+  --callout-important: var(--color-accent, hsl(189, 100%, 49%));
+  --callout-info: var(--text-normal, rgb(250, 247, 245));
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
     var(--size-4-6, 12px 12px 12px 24px);
-  --callout-question: 250, 247, 245;
-  --callout-radius: 2px;
-  --callout-success: 0, 190, 0;
-  --callout-summary: 250, 247, 245;
-  --callout-tip: 255, 220, 120;
+  --callout-question: var(--text-normal, rgb(250, 247, 245));
+  --callout-radius: var(--radius-s, 2px);
+  --callout-success: var(--color-green-rgb, rgb(0, 190, 0));
+  --callout-summary: var(--text-normal, rgb(250, 247, 245));
+  --callout-tip: var(--color-cyan-rgb, rgb(255, 220, 120));
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: 0, 130, 255;
-  --callout-warning: 220, 210, 0;
-  --canvas-background: hsl(221, 33.3%, 12.9%) !important;
-  --canvas-card-label-color: rgb(250, 247, 245) !important;
+  --callout-todo: var(--color-blue-rgb, rgb(0, 130, 255));
+  --callout-warning: var(--color-orange-rgb, rgb(220, 210, 0));
+  --canvas-background: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
+  --canvas-card-label-color: var(--text-faint, rgb(250, 247, 245)) !important;
   --canvas-color-1: var(--color-red-rgb, 251, 70, 76) !important;
   --canvas-color-2: var(--color-orange-rgb, 233, 151, 63) !important;
   --canvas-color-3: var(--color-yellow-rgb, 224, 222, 113) !important;
@@ -1430,233 +1944,408 @@ body.theme-dark {
   --canvas-color-6: var(--color-purple-rgb, 168, 130, 255) !important;
   --canvas-controls-icon-size: var(--icon-s, 16px) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
-  --canvas-controls-radius: 2px !important;
+  --canvas-controls-radius: var(--radius-s, 2px) !important;
   --canvas-dot-pattern: var(--color-base-30, #363636) !important;
-  --caret-color: rgb(250, 247, 245) !important;
-  --checkbox-border-color: rgb(250, 247, 245) !important;
-  --checkbox-border-color-hover: rgb(250, 247, 245) !important;
-  --checkbox-color: hsl(189, 100%, 49%) !important;
-  --checkbox-color-hover: hsl(189, 100%, 49%) !important;
-  --checkbox-marker-color: hsl(221, 33.3%, 12.9%) !important;
-  --checkbox-radius: 2px !important;
+  --caret-color: var(--text-normal, rgb(250, 247, 245)) !important;
+  --checkbox-border-color: var(--list-elements, rgb(250, 247, 245)) !important;
+  --checkbox-border-color-hover: var(
+    --text-muted,
+    rgb(250, 247, 245)
+  ) !important;
+  --checkbox-color: var(--interactive-accent, hsl(189, 100%, 49%)) !important;
+  --checkbox-color-hover: var(
+    --interactive-accent-hover,
+    hsl(189, 100%, 49%)
+  ) !important;
+  --checkbox-marker-color: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
+  --checkbox-radius: var(--radius-s, 2px) !important;
   --checkbox-size: var(--font-text-size, 16px) !important;
-  --checklist-done-color: rgb(250, 247, 245) !important;
-  --clickable-icon-radius: 2px !important;
-  --code-background: rgb(10, 18, 30) !important;
-  --code-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
-  --code-bracket-background: hsla(221, 16.65%, 85%, 0.05) !important;
-  --code-comment: rgba(175, 191, 255, 0.7) !important;
-  --code-function: rgb(230, 205, 90) !important;
-  --code-important: rgb(220, 95, 0) !important;
-  --code-keyword: rgb(220, 100, 210) !important;
-  --code-normal: hsl(0, 0%, 89%) !important;
-  --code-operator: rgb(220, 65, 65) !important;
-  --code-property: rgb(0, 202, 235) !important;
-  --code-punctuation: hsl(0, 0%, 89%) !important;
-  --code-radius: 2px !important;
+  --checklist-done-color: var(--text-muted, rgb(250, 247, 245)) !important;
+  --clickable-icon-radius: var(--radius-s, 2px) !important;
+  --code-background: var(--background-dark, rgb(10, 18, 30)) !important;
+  --code-border-color: var(
+    --background-modifier-border,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
+  --code-bracket-background: var(
+    --background-modifier-hover,
+    hsla(221, 16.65%, 85%, 0.05)
+  ) !important;
+  --code-comment: rgba(var(--code-peripheral), 0.7) !important;
+  --code-function: var(--color-yellow, rgb(230, 205, 90)) !important;
+  --code-important: var(--color-orange, rgb(220, 95, 0)) !important;
+  --code-keyword: var(--color-pink, rgb(220, 100, 210)) !important;
+  --code-normal: var(--text-normal, hsl(0, 0%, 89%)) !important;
+  --code-operator: var(--color-red, rgb(220, 65, 65)) !important;
+  --code-property: var(--color-cyan, rgb(0, 202, 235)) !important;
+  --code-punctuation: var(--code-normal, hsl(0, 0%, 89%)) !important;
+  --code-radius: var(--radius-s, 2px) !important;
   --code-size: var(--font-smaller, 0.875em) !important;
-  --code-string: rgb(30, 169, 67) !important;
-  --code-tag: rgb(220, 65, 65) !important;
-  --code-value: rgb(140, 110, 240) !important;
-  --collapse-icon-color: hsl(189, 100%, 49%) !important;
-  --collapse-icon-color-collapsed: hsl(189, 100%, 49%) !important;
-  --color-accent: hsl(189, 100%, 49%) !important;
-  --color-accent-1: hsl(189, 100%, 49%) !important;
-  --color-accent-2: hsl(184, 105%, 63.21%) !important;
-  --color-accent-hsl: 189, 100%, 49% !important;
-  --divider-color: transparent !important;
-  --divider-color-hover: hsl(189, 100%, 49%) !important;
+  --code-string: var(--color-green, rgb(30, 169, 67)) !important;
+  --code-tag: var(--color-red, rgb(220, 65, 65)) !important;
+  --code-value: var(--color-purple, rgb(140, 110, 240)) !important;
+  --collapse-icon-color: var(--color-accent, hsl(189, 100%, 49%)) !important;
+  --collapse-icon-color-collapsed: var(
+    --text-accent,
+    hsl(189, 100%, 49%)
+  ) !important;
+  --color-accent: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  ) !important;
+  --color-accent-1: var(--color-accent, hsl(189, 100%, 49%)) !important;
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  ) !important;
+  --color-accent-hsl:
+    var(--accent-h), var(--accent-s), var(--accent-l) !important;
+  --divider-color: var(--background-modifier-border, transparent) !important;
+  --divider-color-hover: var(
+    --interactive-accent,
+    hsl(189, 100%, 49%)
+  ) !important;
   --divider-vertical-height: calc(100% - var(--header-height)) !important;
-  --dropdown-background: rgb(10, 18, 30) !important;
-  --dropdown-background-hover: rgb(10, 18, 30) !important;
+  --dropdown-background: var(--interactive-normal, rgb(10, 18, 30)) !important;
+  --dropdown-background-hover: var(
+    --interactive-hover,
+    rgb(10, 18, 30)
+  ) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
   --dropdown-padding: 0 var(--dropdown-padding-end) 0
     var(--dropdown-padding-start) !important;
   --embed-block-shadow-hover:
-    0 0 0 1px hsla(221, 16.65%, 85%, 0.1),
-    inset 0 0 0 1px hsla(221, 16.65%, 85%, 0.1) !important;
-  --embed-border-start: 2px solid hsl(189, 100%, 49%) !important;
+    0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border) !important;
+  --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: hsl(221, 33.3%, 12.9%) !important;
-  --file-header-background-focused: hsl(221, 33.3%, 12.9%) !important;
+  --file-header-background: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
+  --file-header-background-focused: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
   --file-header-border: var(--border-width, 1px solid transparent) solid
     transparent !important;
-  --file-header-font:
-    "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??",
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
-  --file-header-font-size: 14px !important;
+  --file-header-font: var(
+    --font-interface,
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif,
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif
+  ) !important;
+  --file-header-font-size: var(--font-ui-small, 14px) !important;
   --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
   --file-margins-x: var(--size-4-8, 32px) !important;
   --file-margins-y: var(--size-4-8, 32px) !important;
-  --flair-background: rgb(10, 18, 30) !important;
-  --flair-color: rgb(250, 247, 245) !important;
+  --flair-background: var(--interactive-normal, rgb(10, 18, 30)) !important;
+  --flair-color: var(--text-normal, rgb(250, 247, 245)) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-interface:
-    "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??",
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
-  --font-mermaid:
-    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    var(--font-interface-override), var(--font-interface-theme),
+    var(--default-font, "??"), var(--font-default) !important;
+  --font-mermaid: var(
+    --font-text,
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif
+  ) !important;
   --font-monospace:
-    "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo,
-    SFMono-Regular, Consolas, "Source Code Pro", monospace !important;
+    var(--font-monospace-override), var(--font-monospace-theme),
+    var(--font-monospace-default) !important;
   --font-print:
     var(--font-print-override), var(--font-text-override),
     var(--font-text-theme), "Arial" !important;
   --font-text:
-    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-weight: var(--font-normal, 400) !important;
-  --footnote-divider-color: hsla(221, 16.65%, 85%, 0.1) !important;
+  --footnote-divider-color: var(
+    --metadata-divider-color,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus,
     transparent
   ) !important;
   --footnote-divider-width: var(--border-width, 1px) !important;
   --footnote-gap: var(--size-4-1, 4px) !important;
-  --footnote-id-color: rgb(250, 247, 245) !important;
-  --footnote-id-color-no-occurrences: rgb(250, 247, 245) !important;
+  --footnote-id-color: var(--text-muted, rgb(250, 247, 245)) !important;
+  --footnote-id-color-no-occurrences: var(
+    --text-faint,
+    rgb(250, 247, 245)
+  ) !important;
   --footnote-input-background: var(
     --metadata-input-background,
     transparent
   ) !important;
-  --footnote-input-background-active: hsla(221, 16.65%, 85%, 0.05) !important;
-  --footnote-line-height: 1.25em !important;
+  --footnote-input-background-active: var(
+    --metadata-input-background-active,
+    hsla(221, 16.65%, 85%, 0.05)
+  ) !important;
+  --footnote-line-height: var(--line-height-normal, 1.25em) !important;
   --footnote-padding-block: var(--size-2-3, 6px) !important;
   --footnote-padding-inline: var(--size-2-3, 6px) !important;
-  --footnote-radius: 2px !important;
+  --footnote-radius: var(--radius-s, 2px) !important;
   --footnote-size: var(--font-smaller, 0.875em) !important;
   --graph-line: var(
     --color-base-35,
     var(--background-modifier-border-focus)
   ) !important;
-  --graph-node: rgb(250, 247, 245) !important;
-  --graph-node-attachment: rgb(230, 205, 90) !important;
-  --graph-node-focused: hsl(189, 100%, 49%) !important;
-  --graph-node-tag: rgb(30, 169, 67) !important;
-  --graph-node-unresolved: rgb(250, 247, 245) !important;
-  --graph-text: rgb(250, 247, 245) !important;
-  --h5-line-height: 1.25em !important;
-  --h6-line-height: 1.25em !important;
-  --heading-formatting: rgb(250, 247, 245) !important;
+  --graph-node: var(--text-muted, rgb(250, 247, 245)) !important;
+  --graph-node-attachment: var(--color-yellow, rgb(230, 205, 90)) !important;
+  --graph-node-focused: var(--text-accent, hsl(189, 100%, 49%)) !important;
+  --graph-node-tag: var(--color-green, rgb(30, 169, 67)) !important;
+  --graph-node-unresolved: var(--text-faint, rgb(250, 247, 245)) !important;
+  --graph-text: var(--text-normal, rgb(250, 247, 245)) !important;
+  --h5-line-height: var(--line-height-normal, 1.25em) !important;
+  --h6-line-height: var(--line-height-normal, 1.25em) !important;
+  --heading-formatting: var(--text-normal, rgb(250, 247, 245)) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
-  --hr-color: rgba(250, 247, 245, 0.1) !important;
-  --icon-color: rgb(250, 247, 245) !important;
-  --icon-color-active: rgb(250, 247, 245) !important;
-  --icon-color-focused: rgb(250, 247, 245) !important;
-  --icon-color-hover: rgb(250, 247, 245) !important;
+  --hr-color: rgba(var(--ss-dark-text-main), 0.1) !important;
+  --icon-color: var(--text-normal, rgb(250, 247, 245)) !important;
+  --icon-color-active: var(--text-normal, rgb(250, 247, 245)) !important;
+  --icon-color-focused: var(--text-normal, rgb(250, 247, 245)) !important;
+  --icon-color-hover: var(--text-normal, rgb(250, 247, 245)) !important;
   --icon-size: var(--icon-m, 18px) !important;
   --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
-  --indentation-guide-color: rgba(250, 247, 245, 0.1) !important;
+  --indentation-guide-color: var(
+    --hr-color,
+    rgba(250, 247, 245, 0.1)
+  ) !important;
   --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3) !important;
   --indentation-guide-width: var(--border-width, 1px) !important;
   --indentation-guide-width-active: var(--border-width, 1px) !important;
   --inline-title-line-height: var(--h1-line-height, 1.2) !important;
-  --inline-title-size: 1.625em !important;
+  --inline-title-size: var(--h1-size, 1.625em) !important;
   --inline-title-style: var(--h1-style, normal) !important;
   --inline-title-variant: var(--h1-variant, normal) !important;
   --inline-title-weight: var(--h1-weight, 700) !important;
   --input-border-width: var(--border-width, 1px) !important;
   --input-corner-shape: var(--corner-shape, round) !important;
-  --input-date-separator: rgb(250, 247, 245) !important;
+  --input-date-separator: var(--text-faint, rgb(250, 247, 245)) !important;
   --input-font-weight: var(--font-normal, 400) !important;
   --input-icon-inset: var(--size-4-1, 4px) !important;
   --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
-  --input-placeholder-color: rgb(250, 247, 245) !important;
-  --interactive-accent: hsl(189, 100%, 49%) !important;
-  --interactive-accent-hover: hsl(189, 100%, 49%) !important;
-  --interactive-accent-hsl: 189, 100%, 49% !important;
-  --interactive-hover: rgb(10, 18, 30) !important;
-  --interactive-normal: rgb(10, 18, 30) !important;
-  --link-color: hsl(189, 100%, 49%) !important;
-  --link-color-hover: rgb(250, 247, 245) !important;
-  --link-external-color: hsl(189, 100%, 49%) !important;
-  --link-external-color-hover: rgb(250, 247, 245) !important;
-  --link-unresolved-color: hsl(189, 100%, 49%) !important;
-  --link-unresolved-decoration-color: hsla(189, 100%, 49%, 0.3) !important;
+  --input-placeholder-color: var(--text-faint, rgb(250, 247, 245)) !important;
+  --interactive-accent: var(--color-accent, hsl(189, 100%, 49%)) !important;
+  --interactive-accent-hover: var(
+    --color-accent,
+    hsl(189, 100%, 49%)
+  ) !important;
+  --interactive-accent-hsl: var(--color-accent-hsl, 189, 100%, 49%) !important;
+  --interactive-hover: var(--background-dark, rgb(10, 18, 30)) !important;
+  --interactive-normal: var(--background-dark, rgb(10, 18, 30)) !important;
+  --link-color: var(--text-accent, hsl(189, 100%, 49%)) !important;
+  --link-color-hover: var(--text-accent-hover, rgb(250, 247, 245)) !important;
+  --link-external-color: var(--text-accent, hsl(189, 100%, 49%)) !important;
+  --link-external-color-hover: var(
+    --text-accent-hover,
+    rgb(250, 247, 245)
+  ) !important;
+  --link-unresolved-color: var(--text-accent, hsl(189, 100%, 49%)) !important;
+  --link-unresolved-decoration-color: hsla(
+    var(--interactive-accent-hsl),
+    0.3
+  ) !important;
   --link-weight: var(--font-weight, 400) !important;
-  --list-indent: 1.25em !important;
-  --list-marker-color: rgb(250, 247, 245) !important;
-  --list-marker-color-collapsed: hsl(189, 100%, 49%) !important;
-  --list-marker-color-hover: rgb(250, 247, 245) !important;
-  --menu-background: hsl(221, 29.1375%, 18.404%) !important;
-  --menu-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
+  --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
+  --list-marker-color: var(--list-elements, rgb(250, 247, 245)) !important;
+  --list-marker-color-collapsed: var(
+    --text-accent,
+    hsl(189, 100%, 49%)
+  ) !important;
+  --list-marker-color-hover: var(--text-muted, rgb(250, 247, 245)) !important;
+  --menu-background: var(
+    --background-secondary,
+    hsl(221, 29.1375%, 18.404%)
+  ) !important;
+  --menu-border-color: var(
+    --background-modifier-border-hover,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
   --menu-border-width: var(--border-width, 1px) !important;
   --menu-corner-shape: var(--corner-shape, round) !important;
   --menu-padding: var(--size-2-3, 6px) !important;
-  --menu-radius: 4px !important;
+  --menu-radius: var(--radius-m, 4px) !important;
   --menu-shadow: var(
     --shadow-s,
     0px 1px 2px rgba(0, 0, 0, 0.121),
     0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3)
   ) !important;
-  --metadata-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
-  --metadata-divider-color: hsla(221, 16.65%, 85%, 0.1) !important;
-  --metadata-input-background-active: hsla(221, 16.65%, 85%, 0.05) !important;
-  --metadata-input-font:
-    "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??",
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  --metadata-border-color: var(
+    --background-modifier-border,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
+  --metadata-divider-color: var(
+    --background-modifier-border,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
+  --metadata-input-background-active: var(
+    --background-modifier-hover,
+    hsla(221, 16.65%, 85%, 0.05)
+  ) !important;
+  --metadata-input-font: var(
+    --font-interface,
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif,
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif
+  ) !important;
   --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
-  --metadata-input-text-color: rgb(250, 247, 245) !important;
-  --metadata-label-background-active: hsla(221, 16.65%, 85%, 0.05) !important;
-  --metadata-label-font:
-    "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??",
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
-  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
-  --metadata-label-text-color: rgb(250, 247, 245) !important;
-  --metadata-label-text-color-hover: rgb(250, 247, 245) !important;
-  --metadata-padding: var(--size-4-2, 8px 0) 0 !important;
-  --metadata-property-background-active: hsla(
-    221,
-    16.65%,
-    85%,
-    0.05
+  --metadata-input-text-color: var(
+    --text-normal,
+    rgb(250, 247, 245)
   ) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(221, 33.3%, 8.9%) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsla(221, 16.65%, 85%, 0.1) !important;
+  --metadata-label-background-active: var(
+    --background-modifier-hover,
+    hsla(221, 16.65%, 85%, 0.05)
+  ) !important;
+  --metadata-label-font: var(
+    --font-interface,
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif,
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif
+  ) !important;
+  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-label-text-color: var(--text-muted, rgb(250, 247, 245)) !important;
+  --metadata-label-text-color-hover: var(
+    --text-muted,
+    rgb(250, 247, 245)
+  ) !important;
+  --metadata-padding: var(--size-4-2, 8px 0) 0 !important;
+  --metadata-property-background-active: var(
+    --background-modifier-hover,
+    hsla(221, 16.65%, 85%, 0.05)
+  ) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px
+    var(--background-modifier-border-focus) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 var(--border-width)
+    var(--background-modifier-border-hover) !important;
   --metadata-property-corner-shape: var(--corner-shape, round) !important;
   --metadata-property-corner-shape-focus: var(--corner-shape, round) !important;
   --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
-  --metadata-sidebar-input-font-size: 14px !important;
-  --metadata-sidebar-label-font-size: 14px !important;
-  --modal-background: hsl(221, 33.3%, 12.9%) !important;
-  --modal-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 14px) !important;
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 14px) !important;
+  --modal-background: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
+  --modal-border-color: var(
+    --accent-soft-dark,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
   --modal-border-width: var(--border-width, 1px) !important;
-  --modal-radius: 6px !important;
-  --nav-collapse-icon-color: hsl(189, 100%, 49%) !important;
-  --nav-collapse-icon-color-collapsed: hsl(189, 100%, 49%) !important;
-  --nav-heading-color: rgb(250, 247, 245) !important;
-  --nav-heading-color-collapsed: rgb(250, 247, 245) !important;
-  --nav-heading-color-collapsed-hover: rgb(250, 247, 245) !important;
-  --nav-heading-color-hover: rgb(250, 247, 245) !important;
+  --modal-radius: var(--radius-l, 6px) !important;
+  --nav-collapse-icon-color: var(
+    --color-accent,
+    hsl(189, 100%, 49%)
+  ) !important;
+  --nav-collapse-icon-color-collapsed: var(
+    --color-accent,
+    hsl(189, 100%, 49%)
+  ) !important;
+  --nav-heading-color: var(--text-normal, rgb(250, 247, 245)) !important;
+  --nav-heading-color-collapsed: var(
+    --text-faint,
+    rgb(250, 247, 245)
+  ) !important;
+  --nav-heading-color-collapsed-hover: var(
+    --text-muted,
+    rgb(250, 247, 245)
+  ) !important;
+  --nav-heading-color-hover: var(--text-normal, rgb(250, 247, 245)) !important;
   --nav-heading-weight: var(--font-medium, 500) !important;
   --nav-heading-weight-hover: var(--font-medium, 500) !important;
-  --nav-indentation-guide-color: hsl(189, 100%, 49%) !important;
+  --nav-indentation-guide-color: var(
+    --color-accent,
+    hsl(189, 100%, 49%)
+  ) !important;
   --nav-indentation-guide-width: var(--indentation-guide-width, 1px) !important;
-  --nav-item-background-active: hsla(221, 16.65%, 85%, 0.05) !important;
-  --nav-item-background-hover: hsla(221, 16.65%, 85%, 0.05) !important;
-  --nav-item-background-selected: hsla(189, 100%, 49%, 0.15) !important;
+  --nav-item-background-active: var(
+    --accent-soft-light,
+    hsla(221, 16.65%, 85%, 0.05)
+  ) !important;
+  --nav-item-background-hover: var(
+    --accent-soft-light,
+    hsla(221, 16.65%, 85%, 0.05)
+  ) !important;
+  --nav-item-background-selected: hsla(
+    var(--color-accent-hsl),
+    0.15
+  ) !important;
   --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
   --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
-  --nav-item-color: rgb(250, 247, 245) !important;
-  --nav-item-color-active: rgb(250, 247, 245) !important;
-  --nav-item-color-highlighted: hsl(189, 100%, 49%) !important;
-  --nav-item-color-hover: rgb(250, 247, 245) !important;
-  --nav-item-color-selected: rgb(250, 247, 245) !important;
+  --nav-item-color: var(--text-normal, rgb(250, 247, 245)) !important;
+  --nav-item-color-active: var(--text-normal, rgb(250, 247, 245)) !important;
+  --nav-item-color-highlighted: var(
+    --text-accent,
+    hsl(189, 100%, 49%)
+  ) !important;
+  --nav-item-color-hover: var(--text-normal, rgb(250, 247, 245)) !important;
+  --nav-item-color-selected: var(--text-normal, rgb(250, 247, 245)) !important;
   --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6, 4px 8px 4px 24px) !important;
@@ -1664,151 +2353,253 @@ body.theme-dark {
     --nav-item-padding,
     4px 8px 4px 24px
   ) !important;
-  --nav-item-radius: 2px !important;
-  --nav-item-size: 14px !important;
-  --nav-tag-color: rgb(250, 247, 245) !important;
-  --nav-tag-color-active: rgb(250, 247, 245) !important;
-  --nav-tag-color-hover: rgb(250, 247, 245) !important;
-  --nav-tag-radius: 2px !important;
+  --nav-item-radius: var(--radius-s, 2px) !important;
+  --nav-item-size: var(--font-ui-small, 14px) !important;
+  --nav-tag-color: var(--text-faint, rgb(250, 247, 245)) !important;
+  --nav-tag-color-active: var(--text-muted, rgb(250, 247, 245)) !important;
+  --nav-tag-color-hover: var(--text-muted, rgb(250, 247, 245)) !important;
+  --nav-tag-radius: var(--radius-s, 2px) !important;
   --nav-tag-weight: var(--font-semibold, 600) !important;
-  --pdf-background: hsl(221, 33.3%, 12.9%) !important;
-  --pdf-page-background: hsl(221, 33.3%, 12.9%) !important;
-  --pdf-shadow: 0 0 0 1px hsla(221, 16.65%, 85%, 0.1) !important;
-  --pdf-sidebar-background: hsl(221, 33.3%, 12.9%) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px hsla(221, 16.65%, 85%, 0.1) !important;
-  --pill-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
-  --pill-border-color-hover: hsla(221, 16.65%, 85%, 0.1) !important;
+  --pdf-background: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
+  --pdf-page-background: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
+  --pdf-sidebar-background: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
+  --pill-border-color: var(
+    --background-modifier-border,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
+  --pill-border-color-hover: var(
+    --background-modifier-border-hover,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
   --pill-border-width: var(--border-width, 1px) !important;
-  --pill-color: rgb(250, 247, 245) !important;
-  --pill-color-hover: rgb(250, 247, 245) !important;
-  --pill-color-remove: rgb(250, 247, 245) !important;
-  --pill-color-remove-hover: hsl(189, 100%, 49%) !important;
+  --pill-color: var(--text-muted, rgb(250, 247, 245)) !important;
+  --pill-color-hover: var(--text-normal, rgb(250, 247, 245)) !important;
+  --pill-color-remove: var(--text-faint, rgb(250, 247, 245)) !important;
+  --pill-color-remove-hover: var(--text-accent, hsl(189, 100%, 49%)) !important;
   --popover-font-size: var(--font-text-size, 16px) !important;
-  --prompt-background: hsl(221, 33.3%, 12.9%) !important;
-  --prompt-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
+  --prompt-background: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
+  --prompt-border-color: var(
+    --accent-soft-dark,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
   --prompt-border-width: var(--border-width, 1px) !important;
-  --raised-background: color-mix(in srgb, rgb(10, 18, 30) 65%, transparent)
-    linear-gradient(
-      rgb(10, 18, 30),
-      color-mix(in srgb, rgb(10, 18, 30) 65%, transparent)
-    ) !important;
+  --raised-background: var(
+    --blur-background,
+    color-mix(in srgb, rgb(10, 18, 30) 65%, transparent)
+      linear-gradient(
+        rgb(10, 18, 30),
+        color-mix(in srgb, rgb(10, 18, 30) 65%, transparent)
+      )
+  ) !important;
   --raised-blur: var(
     --blur-s,
     blur(6px) saturate(1.5) brightness(1.15)
   ) !important;
-  --ribbon-background: hsl(221, 29.1375%, 18.404%) !important;
-  --ribbon-background-collapsed: hsl(221, 33.3%, 12.9%) !important;
+  --ribbon-background: var(
+    --background-secondary,
+    hsl(221, 29.1375%, 18.404%)
+  ) !important;
+  --ribbon-background-collapsed: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1)
     var(--size-4-3, 8px 4px 12px) !important;
-  --scrollbar-active-thumb-bg: hsla(221, 16.65%, 85%, 0.1) !important;
+  --scrollbar-active-thumb-bg: var(
+    --accent-soft-dark,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
-  --scrollbar-radius: 6px !important;
-  --scrollbar-thumb-bg: hsla(221, 16.65%, 85%, 0.05) !important;
-  --search-clear-button-color: rgb(250, 247, 245) !important;
-  --search-icon-color: rgb(250, 247, 245) !important;
-  --search-result-background: hsl(221, 33.3%, 12.9%) !important;
-  --setting-group-heading-color: rgb(250, 247, 245) !important;
+  --scrollbar-radius: var(--radius-l, 6px) !important;
+  --scrollbar-thumb-bg: var(
+    --accent-soft-light,
+    hsla(221, 16.65%, 85%, 0.05)
+  ) !important;
+  --search-clear-button-color: var(--text-muted, rgb(250, 247, 245)) !important;
+  --search-icon-color: var(--text-muted, rgb(250, 247, 245)) !important;
+  --search-result-background: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
+  --setting-group-heading-color: var(
+    --text-normal,
+    rgb(250, 247, 245)
+  ) !important;
   --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
   --setting-group-heading-weight: var(--font-semibold, 600) !important;
-  --setting-items-background: rgb(10, 18, 30) !important;
-  --setting-items-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
+  --setting-items-background: var(
+    --background-primary-alt,
+    rgb(10, 18, 30)
+  ) !important;
+  --setting-items-border-color: var(
+    --background-modifier-border,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
   --setting-items-padding: var(--size-4-5, 20px) !important;
-  --setting-items-radius: 6px !important;
-  --shiki-active-tab-border-color: rgb(250, 247, 245) !important;
-  --shiki-code-background: rgb(10, 18, 30) !important;
-  --shiki-code-block-border-radius: 2px !important;
+  --setting-items-radius: var(--radius-l, 6px) !important;
+  --shiki-active-tab-border-color: var(
+    --shiki-highlight-neutral,
+    rgb(250, 247, 245)
+  ) !important;
+  --shiki-code-background: var(--code-background, rgb(10, 18, 30)) !important;
+  --shiki-code-block-border-radius: var(--code-radius, 2px) !important;
   --shiki-code-block-spacing: var(--p-spacing, 1rem) !important;
-  --shiki-code-comment: rgb(250, 247, 245) !important;
-  --shiki-code-function: rgb(30, 169, 67) !important;
-  --shiki-code-important: rgb(220, 95, 0) !important;
-  --shiki-code-keyword: rgb(220, 100, 210) !important;
-  --shiki-code-normal: rgb(250, 247, 245) !important;
-  --shiki-code-property: rgb(0, 202, 235) !important;
-  --shiki-code-punctuation: rgb(250, 247, 245) !important;
-  --shiki-code-string: rgb(230, 205, 90) !important;
-  --shiki-code-value: rgb(140, 110, 240) !important;
-  --shiki-gutter-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
+  --shiki-code-comment: var(--text-faint, rgb(250, 247, 245)) !important;
+  --shiki-code-function: var(--color-green, rgb(30, 169, 67)) !important;
+  --shiki-code-important: var(--color-orange, rgb(220, 95, 0)) !important;
+  --shiki-code-keyword: var(--color-pink, rgb(220, 100, 210)) !important;
+  --shiki-code-normal: var(--text-muted, rgb(250, 247, 245)) !important;
+  --shiki-code-property: var(--color-cyan, rgb(0, 202, 235)) !important;
+  --shiki-code-punctuation: var(--text-muted, rgb(250, 247, 245)) !important;
+  --shiki-code-string: var(--color-yellow, rgb(230, 205, 90)) !important;
+  --shiki-code-value: var(--color-purple, rgb(140, 110, 240)) !important;
+  --shiki-gutter-border-color: var(
+    --background-modifier-border,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
   --shiki-gutter-border-width: var(--border-width, 1px) !important;
-  --shiki-gutter-text-color: rgb(250, 247, 245) !important;
-  --shiki-gutter-text-color-highlight: rgb(250, 247, 245) !important;
+  --shiki-gutter-text-color: var(--text-faint, rgb(250, 247, 245)) !important;
+  --shiki-gutter-text-color-highlight: var(
+    --shiki-code-normal,
+    rgb(250, 247, 245)
+  ) !important;
   --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
   --shiki-highlight-green-background: rgba(
     var(--color-green-rgb),
     0.1
   ) !important;
-  --shiki-highlight-neutral: rgb(250, 247, 245) !important;
+  --shiki-highlight-neutral: var(
+    --shiki-code-normal,
+    rgb(250, 247, 245)
+  ) !important;
   --shiki-highlight-neutral-background: rgba(
     var(--mono-rgb-100),
     0.05
   ) !important;
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
-  --shiki-terminal-dots-color: rgb(250, 247, 245) !important;
+  --shiki-terminal-dots-color: var(--text-faint, rgb(250, 247, 245)) !important;
   --shiki-tooltip-background: var(
     --background-modifier-message,
     rgba(0, 0, 0, 0.9)
   ) !important;
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9) !important;
-  --slider-thumb-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
+  --slider-thumb-border-color: var(
+    --background-modifier-border-hover,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
   --slider-thumb-border-width: var(--border-width, 1px) !important;
   --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
-  --slider-track-background: hsla(221, 16.65%, 85%, 0.1) !important;
-  --status-bar-background: hsl(221, 29.1375%, 18.404%) !important;
-  --status-bar-border-color: transparent !important;
+  --slider-track-background: var(
+    --background-modifier-border,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
+  --status-bar-background: var(
+    --background-secondary,
+    hsl(221, 29.1375%, 18.404%)
+  ) !important;
+  --status-bar-border-color: var(--divider-color, transparent) !important;
   --status-bar-border-width: var(--border-width) 0 0
     var(--border-width, 1px 0 0 1px) !important;
-  --status-bar-font-size: 13px !important;
-  --status-bar-radius: 4px 0 0 0 !important;
-  --status-bar-text-color: rgb(250, 247, 245) !important;
-  --suggestion-background: hsl(221, 33.3%, 12.9%) !important;
+  --status-bar-font-size: var(--font-ui-smaller, 13px) !important;
+  --status-bar-radius: var(--radius-m, 4px 0 0 0) 0 0 0 !important;
+  --status-bar-text-color: var(--text-normal, rgb(250, 247, 245)) !important;
+  --suggestion-background: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
-  --sync-avatar-color-1: rgb(220, 65, 65) !important;
-  --sync-avatar-color-2: rgb(220, 95, 0) !important;
-  --sync-avatar-color-3: rgb(230, 205, 90) !important;
-  --sync-avatar-color-4: rgb(30, 169, 67) !important;
-  --sync-avatar-color-5: rgb(0, 202, 235) !important;
+  --sync-avatar-color-1: var(--color-red, rgb(220, 65, 65)) !important;
+  --sync-avatar-color-2: var(--color-orange, rgb(220, 95, 0)) !important;
+  --sync-avatar-color-3: var(--color-yellow, rgb(230, 205, 90)) !important;
+  --sync-avatar-color-4: var(--color-green, rgb(30, 169, 67)) !important;
+  --sync-avatar-color-5: var(--color-cyan, rgb(0, 202, 235)) !important;
   --sync-avatar-color-6: var(--color-blue, #027aff) !important;
-  --sync-avatar-color-7: rgb(140, 110, 240) !important;
-  --sync-avatar-color-8: rgb(220, 100, 210) !important;
-  --tab-background-active: hsl(221, 33.3%, 12.9%) !important;
-  --tab-container-background: hsl(221, 29.1375%, 18.404%) !important;
-  --tab-divider-color: hsla(221, 16.65%, 85%, 0.1) !important;
-  --tab-font-size: 14px !important;
-  --tab-outline-color: hsl(189, 100%, 49%) !important;
-  --tab-radius: 2px !important;
-  --tab-stacked-font-size: 14px !important;
+  --sync-avatar-color-7: var(--color-purple, rgb(140, 110, 240)) !important;
+  --sync-avatar-color-8: var(--color-pink, rgb(220, 100, 210)) !important;
+  --tab-background-active: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
+  --tab-container-background: var(
+    --background-secondary,
+    hsl(221, 29.1375%, 18.404%)
+  ) !important;
+  --tab-divider-color: var(
+    --background-modifier-border-hover,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
+  --tab-font-size: var(--font-ui-small, 14px) !important;
+  --tab-outline-color: var(--color-accent, hsl(189, 100%, 49%)) !important;
+  --tab-radius: var(--radius-s, 2px) !important;
+  --tab-stacked-font-size: var(--font-ui-small, 14px) !important;
   --tab-stacked-header-width: var(--header-height, 40px) !important;
-  --tab-switcher-background: hsl(221, 29.1375%, 18.404%) !important;
+  --tab-switcher-background: var(
+    --background-secondary,
+    hsl(221, 29.1375%, 18.404%)
+  ) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
-    hsl(221, 29.1375%, 18.404%),
+    var(--background-secondary),
     transparent
   ) !important;
-  --tab-switcher-preview-radius: 8px !important;
+  --tab-switcher-preview-radius: var(--radius-xl, 8px) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(189, 100%, 49%) !important;
-  --tab-text-color: rgb(250, 247, 245) !important;
-  --tab-text-color-active: rgb(250, 247, 245) !important;
-  --tab-text-color-focused: rgb(250, 247, 245) !important;
-  --tab-text-color-focused-active: rgb(250, 247, 245) !important;
-  --tab-text-color-focused-active-current: rgb(250, 247, 245) !important;
-  --tab-text-color-focused-highlighted: hsl(189, 100%, 49%) !important;
-  --table-add-button-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
+  --tab-text-color: var(--text-faint, rgb(250, 247, 245)) !important;
+  --tab-text-color-active: var(--text-muted, rgb(250, 247, 245)) !important;
+  --tab-text-color-focused: var(--text-muted, rgb(250, 247, 245)) !important;
+  --tab-text-color-focused-active: var(
+    --text-muted,
+    rgb(250, 247, 245)
+  ) !important;
+  --tab-text-color-focused-active-current: var(
+    --text-normal,
+    rgb(250, 247, 245)
+  ) !important;
+  --tab-text-color-focused-highlighted: var(
+    --text-accent,
+    hsl(189, 100%, 49%)
+  ) !important;
+  --table-add-button-border-color: var(
+    --background-modifier-border,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
   --table-add-button-border-width: var(--table-border-width, 1px) !important;
-  --table-border-color: rgb(250, 247, 245) !important;
+  --table-border-color: var(--list-elements, rgb(250, 247, 245)) !important;
   --table-column-alt-background: var(
     --table-background,
     transparent
   ) !important;
   --table-column-first-border-width: var(--table-border-width, 1px) !important;
   --table-column-last-border-width: var(--table-border-width, 1px) !important;
-  --table-drag-handle-background-active: hsl(189, 100%, 49%) !important;
-  --table-drag-handle-color: rgb(250, 247, 245) !important;
-  --table-drag-handle-color-active: #000 !important;
+  --table-drag-handle-background-active: var(
+    --table-selection-border-color,
+    hsl(189, 100%, 49%)
+  ) !important;
+  --table-drag-handle-color: var(--text-faint, rgb(250, 247, 245)) !important;
+  --table-drag-handle-color-active: var(--text-on-accent, #000) !important;
   --table-header-background: var(--table-background, transparent) !important;
-  --table-header-border-color: rgb(250, 247, 245) !important;
+  --table-header-border-color: var(
+    --list-elements,
+    rgb(250, 247, 245)
+  ) !important;
   --table-header-border-width: var(--table-border-width, 1px) !important;
-  --table-header-color: rgb(250, 247, 245) !important;
+  --table-header-color: var(--text-normal, rgb(250, 247, 245)) !important;
   --table-header-size: var(--table-text-size, 16px) !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
@@ -1821,35 +2612,65 @@ body.theme-dark {
   ) !important;
   --table-row-background-hover: var(--table-background, transparent) !important;
   --table-row-last-border-width: var(--table-border-width, 1px) !important;
-  --table-selection: hsla(189, 100%, 49%, 0.1) !important;
+  --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
   --table-selection-blend-mode: var(
     --highlight-mix-blend-mode,
     lighten
   ) !important;
-  --table-selection-border-color: hsl(189, 100%, 49%) !important;
+  --table-selection-border-color: var(
+    --interactive-accent,
+    hsl(189, 100%, 49%)
+  ) !important;
   --table-text-size: var(--font-text-size, 16px) !important;
-  --tag-background: hsla(189, 100%, 49%, 0.1) !important;
-  --tag-background-hover: hsla(189, 100%, 49%, 0.2) !important;
-  --tag-border-color: hsla(189, 100%, 49%, 0.15) !important;
-  --tag-border-color-hover: hsla(189, 100%, 49%, 0.15) !important;
-  --tag-color: hsl(189, 100%, 49%) !important;
-  --tag-color-hover: hsl(189, 100%, 49%) !important;
+  --tag-background: var(
+    --color-accent-background,
+    hsla(189, 100%, 49%, 0.1)
+  ) !important;
+  --tag-background-hover: var(
+    --color-accent-background-hover,
+    hsla(189, 100%, 49%, 0.2)
+  ) !important;
+  --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15) !important;
+  --tag-border-color-hover: hsla(
+    var(--interactive-accent-hsl),
+    0.15
+  ) !important;
+  --tag-color: var(--text-accent, hsl(189, 100%, 49%)) !important;
+  --tag-color-hover: var(--text-accent, hsl(189, 100%, 49%)) !important;
   --tag-size: var(--font-smaller, 0.875em) !important;
-  --text-accent: hsl(189, 100%, 49%) !important;
-  --text-accent-hover: rgb(250, 247, 245) !important;
-  --text-error: rgb(250, 30, 0) !important;
-  --text-faint: rgb(250, 247, 245) !important;
-  --text-highlight-bg: hsl(189, 110%, 63.9%) !important;
-  --text-muted: rgb(250, 247, 245) !important;
-  --text-normal: rgb(250, 247, 245) !important;
-  --text-selection: hsla(189, 100%, 49%, 0.4) !important;
-  --text-success: rgb(30, 169, 67) !important;
-  --text-warning: rgb(220, 95, 0) !important;
-  --titlebar-background: hsl(221, 29.1375%, 18.404%) !important;
-  --titlebar-background-focused: hsl(221, 29.1375%, 18.404%) !important;
-  --titlebar-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
-  --titlebar-text-color: rgb(250, 247, 245) !important;
-  --titlebar-text-color-focused: rgb(250, 247, 245) !important;
+  --text-accent: var(--color-accent-1, hsl(189, 100%, 49%)) !important;
+  --text-accent-hover: var(--text-white, rgb(250, 247, 245)) !important;
+  --text-error: var(--color-red, rgb(250, 30, 0)) !important;
+  --text-faint: var(--text-normal, rgb(250, 247, 245)) !important;
+  --text-highlight-bg: var(
+    --ss-dark-highlight-bg,
+    hsl(189, 110%, 63.9%)
+  ) !important;
+  --text-muted: var(--text-normal, rgb(250, 247, 245)) !important;
+  --text-normal: rgb(var(--ss-dark-text-main)) !important;
+  --text-selection: var(
+    --accent-on-selection,
+    hsla(189, 100%, 49%, 0.4)
+  ) !important;
+  --text-success: var(--color-green, rgb(30, 169, 67)) !important;
+  --text-warning: var(--color-orange, rgb(220, 95, 0)) !important;
+  --titlebar-background: var(
+    --background-secondary,
+    hsl(221, 29.1375%, 18.404%)
+  ) !important;
+  --titlebar-background-focused: var(
+    --background-secondary,
+    hsl(221, 29.1375%, 18.404%)
+  ) !important;
+  --titlebar-border-color: var(
+    --background-modifier-border,
+    hsla(221, 16.65%, 85%, 0.1)
+  ) !important;
+  --titlebar-text-color: var(--text-muted, rgb(250, 247, 245)) !important;
+  --titlebar-text-color-focused: var(
+    --text-normal,
+    rgb(250, 247, 245)
+  ) !important;
   --titlebar-text-weight: var(--font-bold, 700) !important;
   --touch-radius-l: var(--touch-size-l, 52px) !important;
   --touch-radius-m: var(--touch-size-m, 44px) !important;
@@ -1859,14 +2680,17 @@ body.theme-dark {
   --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
   --traffic-lights-offset-x: var(--header-height, 40px) !important;
   --traffic-lights-offset-y: var(--header-height, 40px) !important;
-  --vault-profile-color: rgb(250, 247, 245) !important;
-  --vault-profile-color-hover: rgb(250, 247, 245) !important;
-  --vault-profile-font-size: 14px !important;
+  --vault-profile-color: var(--text-normal, rgb(250, 247, 245)) !important;
+  --vault-profile-color-hover: var(
+    --vault-profile-color,
+    rgb(250, 247, 245)
+  ) !important;
+  --vault-profile-font-size: var(--font-ui-small, 14px) !important;
   --vault-profile-font-weight: var(--font-medium, 500) !important;
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
   --input-height: 30px !important;
   --input-border-width-focus: 2px !important;
-  --input-radius: 4px !important;
+  --input-radius: var(--radius-m, 4px) !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
   --pill-focus-left-adjust: -4px !important;
@@ -1920,7 +2744,7 @@ body.theme-dark {
   --callout-border-width: 0px;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-quote: 250, 247, 245;
+  --callout-quote: var(--text-normal, rgb(250, 247, 245));
   --callout-title-padding: 0;
   --canvas-color: 126, 126, 126 !important;
   --checkbox-margin-inline-start: 0.85em !important;
@@ -1988,9 +2812,17 @@ body.theme-dark {
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface-override: "??" !important;
-  --font-interface-theme:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  --font-interface-theme: var(
+    --font-default,
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif
+  ) !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-monospace-default:
@@ -2112,7 +2944,7 @@ body.theme-dark {
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-numbered-style: decimal !important;
-  --list-spacing: 0.25em !important;
+  --list-spacing: calc(var(--line-height-normal)/5) !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
   --menu-scroll-mask: linear-gradient(
@@ -2176,10 +3008,10 @@ body.theme-dark {
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
   --prompt-width: 700px !important;
-  --radius-l: 6px !important;
-  --radius-m: 4px !important;
-  --radius-s: 2px !important;
-  --radius-xl: 8px !important;
+  --radius-l: calc(var(--radius-s) * 3) !important;
+  --radius-m: calc(var(--radius-s) * 2) !important;
+  --radius-s: calc(var(--ss-border-radius) * 20) !important;
+  --radius-xl: calc(var(--radius-s) * 4) !important;
   --raised-mask:
     linear-gradient(white, white) padding-box,
     linear-gradient(white, white) border-box !important;
@@ -2270,7 +3102,7 @@ body.theme-dark {
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
-  --tag-radius: 4px !important;
+  --tag-radius: var(--radius-m, 4px) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-on-accent: #000 !important;
   --text-on-accent-inverted: black !important;
@@ -2300,63 +3132,108 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --h1-color: rgb(250, 247, 245) !important;
-  --h2-color: rgb(250, 247, 245) !important;
-  --h3-color: rgb(250, 247, 245) !important;
-  --h4-color: rgb(250, 247, 245) !important;
-  --h5-color: rgb(250, 247, 245) !important;
-  --h6-color: rgb(250, 247, 245) !important;
-  --inline-title-color: rgb(250, 247, 245) !important;
-  --embed-border-left: 2px dashed rgb(250, 247, 245) !important;
+  --inline-title-color: var(--h1-color, rgb(250, 247, 245)) !important;
+  --h1-color: var(--text-normal, rgb(250, 247, 245)) !important;
+  --h2-color: var(--text-normal, rgb(250, 247, 245)) !important;
+  --h3-color: var(--text-normal, rgb(250, 247, 245)) !important;
+  --h4-color: var(--text-normal, rgb(250, 247, 245)) !important;
+  --h5-color: var(--text-normal, rgb(250, 247, 245)) !important;
+  --h6-color: var(--text-normal, rgb(250, 247, 245)) !important;
+  --embed-border-left: var(
+    --ss-embed-border-style,
+    2px dashed rgb(250, 247, 245)
+  ) !important;
   --vault-name-font-weight: bold !important;
-  --table-header-font:
-    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  --table-header-font: var(
+    --font-text,
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif
+  ) !important;
   --text-highlight-fg: #000 !important;
   --text-white: rgb(250, 247, 245) !important;
-  --oz-fta-file-font-size: 14px !important;
-  --oz-fta-folder-font-size: 14px !important;
+  --oz-fta-file-font-size: var(--nav-item-size, 14px) !important;
+  --oz-fta-folder-font-size: var(--nav-item-size, 14px) !important;
   --background-dark: rgb(10, 18, 30) !important;
-  --accent-on-selection: hsla(189, 100%, 49%, 0.4) !important;
-  --accent-soft-dark: hsla(221, 16.65%, 85%, 0.1) !important;
-  --accent-soft-hsl: 221, 16.65%, 85% !important;
-  --accent-soft-light: hsla(221, 16.65%, 85%, 0.05) !important;
-  --background-contrast: 3.504% !important;
-  --background-extra-dark: #000 !important;
-  --background-h: 221 !important;
-  --background-l: 12.9% !important;
-  --background-s: 33.3% !important;
-  --background-secondary-l: 18.404% !important;
-  --background-secondary-s: 29.1375% !important;
-  --button-shadow: hsl(221, 16.65%, 85%, 0.6) !important;
-  --button-shadow-hover: rgba(255, 255, 255, 0.67) !important;
-  --code-indentation-guide-color: rgba(175, 191, 255, 0.23) !important;
-  --code-peripheral: 175, 191, 255 !important;
-  --color-accent-background: hsla(189, 100%, 49%, 0.1) !important;
-  --color-accent-background-hover: hsla(189, 100%, 49%, 0.2) !important;
-  --dictionary-background-primary: hsl(221, 29.1375%, 18.404%) !important;
-  --dictionary-background-secondary: hsl(221, 33.3%, 12.9%) !important;
-  --font-ui-smallest: 12px !important;
-  --kanban-button-text: rgb(250, 247, 245) !important;
-  --kanban-button-text-hover: #000 !important;
-  --kanban-checkbox-border: hsl(221, 33.3%, 12.9%) !important;
-  --list-elements: rgb(250, 247, 245) !important;
+  --accent-on-selection: hsla(var(--color-accent-hsl), 0.4) !important;
+  --accent-soft-dark: hsla(var(--accent-soft-hsl), 0.1) !important;
+  --accent-soft-hsl:
+    var(--background-h), calc(var(--background-s) * 0.5), 85% !important;
+  --accent-soft-light: hsla(var(--accent-soft-hsl), 0.05) !important;
+  --background-contrast: calc(var(--ss-dark-contrast) * 4.8) !important;
+  --background-h: var(--ss-dark-h, 221) !important;
+  --background-l: calc(var(--ss-dark-l) * 5) !important;
+  --background-s: calc(var(--ss-dark-s) * 10) !important;
+  --background-secondary-l: calc(
+    var(--background-l) + 2% + var(--background-contrast)
+  ) !important;
+  --background-secondary-s: calc(var(--background-s) * 0.875) !important;
+  --button-shadow: hsl(var(--accent-soft-hsl), 0.6) !important;
+  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.23) !important;
+  --color-accent-background: hsla(var(--color-accent-hsl), 0.1) !important;
+  --color-accent-background-hover: hsla(
+    var(--color-accent-hsl),
+    0.2
+  ) !important;
+  --dictionary-background-primary: var(
+    --background-secondary,
+    hsl(221, 29.1375%, 18.404%)
+  ) !important;
+  --dictionary-background-secondary: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
+  --kanban-button-text: var(--text-normal, rgb(250, 247, 245)) !important;
+  --kanban-button-text-hover: var(--text-on-accent, #000) !important;
+  --kanban-checkbox-border: var(
+    --background-primary,
+    hsl(221, 33.3%, 12.9%)
+  ) !important;
+  --list-elements: var(--text-normal, rgb(250, 247, 245)) !important;
   --polka-dots:
-    radial-gradient(hsl(189, 100%, 49%) 15%, transparent 25%),
-    radial-gradient(hsl(189, 100%, 49%) 17.5%, transparent 25%) !important;
+    radial-gradient(var(--color-accent) 15%, transparent 25%),
+    radial-gradient(var(--color-accent) 17.5%, transparent 25%) !important;
+  --search-result-bg-hover: var(
+    --background-modifier-form-field,
+    rgb(10, 18, 30)
+  ) !important;
+  --ss-dark-highlight-bg: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.1),
+    calc(var(--accent-l) * 1.1 + 10%)
+  ) !important;
+  --ss-embed-border-style: 2px dashed var(--text-normal) !important;
+  --table-body-font: var(
+    --font-text,
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif
+  ) !important;
+  --background-extra-dark: #000 !important;
+  --button-shadow-hover: rgba(255, 255, 255, 0.67) !important;
+  --code-peripheral: 175, 191, 255 !important;
+  --font-ui-smallest: 12px !important;
   --ribbon-border: none !important;
-  --search-result-bg-hover: rgb(10, 18, 30) !important;
   --ss-border-radius: 0.1px !important;
   --ss-dark-contrast: 0.73% !important;
   --ss-dark-h: 221 !important;
-  --ss-dark-highlight-bg: hsl(189, 110%, 63.9%) !important;
   --ss-dark-l: 2.58% !important;
   --ss-dark-s: 3.33% !important;
   --ss-dark-text-main: 250, 247, 245 !important;
-  --ss-embed-border-style: 2px dashed rgb(250, 247, 245) !important;
-  --table-body-font:
-    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   --table-body-font-size: 1em !important;
 }
 
@@ -2381,7 +3258,7 @@ body {
 }
 body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(224, 41, 41);
+  color: var(--link-external-color, rgb(224, 41, 41));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -2415,7 +3292,7 @@ body body.theme-light .markdown-rendered a.external-link {
 }
 body body.theme-light .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(224, 41, 41);
+  color: var(--link-color, rgb(224, 41, 41));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -2449,7 +3326,7 @@ body body.theme-light .markdown-rendered a.internal-link {
 }
 body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(224, 41, 41);
+  color: var(--link-unresolved-color, rgb(224, 41, 41));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -2466,7 +3343,10 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   font-weight: var(--link-weight, 400);
   outline: rgb(224, 41, 41) none 0px;
   text-decoration: underline rgba(224, 41, 41, 0.3);
-  text-decoration-color: rgba(224, 41, 41, 0.3);
+  text-decoration-color: var(
+    --link-unresolved-decoration-color,
+    rgba(224, 41, 41, 0.3)
+  );
   text-decoration-line: var(--link-decoration, underline);
   text-decoration-style: var(--link-unresolved-decoration-style, solid);
   transition: opacity 0.14s ease-in-out;
@@ -2496,7 +3376,7 @@ body body.theme-light .markdown-rendered a.internal-link:hover {
 }
 body body.theme-light .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-muted, rgb(0, 0, 0));
   cursor: auto;
   filter: none;
   backdrop-filter: none;
@@ -2538,7 +3418,7 @@ body body.theme-light .markdown-rendered p {
 }
 body body.theme-light strong {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--bold-color, rgb(0, 0, 0));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -2572,7 +3452,7 @@ body body.theme-light strong {
 }
 body body.theme-light b {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--bold-color, rgb(0, 0, 0));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -2606,7 +3486,7 @@ body body.theme-light b {
 }
 body body.theme-light em {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--italic-color, rgb(0, 0, 0));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -2640,7 +3520,7 @@ body body.theme-light em {
 }
 body body.theme-light i {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--italic-color, rgb(0, 0, 0));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -2673,8 +3553,8 @@ body body.theme-light i {
   animation-play-state: running;
 }
 body body.theme-light .markdown-rendered mark {
-  background-color: rgb(240, 102, 102);
-  color: rgb(0, 0, 0);
+  background-color: var(--text-highlight-bg, rgb(240, 102, 102));
+  color: var(--text-highlight-fg, rgb(0, 0, 0));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -2741,7 +3621,7 @@ body body.theme-light del {
   animation-play-state: running;
 }
 body body.theme-light .suggestion-item.is-selected {
-  background-color: rgba(46, 31, 31, 0.05);
+  background-color: var(--background-modifier-hover, rgba(46, 31, 31, 0.05));
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -2753,7 +3633,7 @@ body body.theme-light .suggestion-item.is-selected {
   color: rgb(0, 0, 0);
 }
 body body.theme-light div.suggestion-item {
-  background-color: rgba(46, 31, 31, 0.05);
+  background-color: var(--background-modifier-hover, rgba(46, 31, 31, 0.05));
   border: 0px rgb(0, 0, 0);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -2786,7 +3666,7 @@ body body.theme-light .markdown-rendered hr {
 }
 body body.theme-light div.multi-select-pill {
   align-items: normal;
-  background-color: rgba(224, 41, 41, 0.1);
+  background-color: var(--pill-background, rgba(224, 41, 41, 0.1));
   display: flex;
   font-family:
     "Franklin Gothic Book",
@@ -2859,7 +3739,7 @@ body body.theme-light .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-light .markdown-rendered code {
-  background-color: rgb(23, 35, 62);
+  background-color: var(--code-background, rgb(23, 35, 62));
   border: 0px solid rgba(46, 31, 31, 0.1);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -2869,10 +3749,18 @@ body body.theme-light .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(227, 227, 227);
-  font-family:
-    "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular,
-    Consolas, "Source Code Pro", monospace;
+  color: var(--code-normal, rgb(227, 227, 227));
+  font-family: var(
+    --font-monospace,
+    "iA Writer Mono S",
+    "IBM Plex Mono",
+    "Roboto Mono",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Source Code Pro",
+    monospace
+  );
   padding: 2.1px 4.2px;
 }
 body body.theme-light .markdown-rendered pre > code {
@@ -2893,7 +3781,7 @@ body body.theme-light .markdown-rendered pre > code {
 }
 body body.theme-light :not(pre) > code[class*="language-"],
 body body.theme-light pre[class*="language-"] {
-  background-color: rgb(23, 35, 62);
+  background-color: var(--code-background, rgb(23, 35, 62));
   border: 0px solid rgba(46, 31, 31, 0.1);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -2970,7 +3858,7 @@ body body.theme-light .markdown-rendered blockquote {
   margin-inline-end: 40px;
 }
 body body.theme-light .footnote-backref {
-  color: rgb(0, 0, 0);
+  color: var(--text-faint, rgb(0, 0, 0));
   text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
@@ -2984,7 +3872,7 @@ body body.theme-light .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   font-family:
     "Franklin Gothic Book",
     Rubik,
@@ -3004,7 +3892,7 @@ body body.theme-light .site-body-left-column input.search-bar {
     sans-serif;
 }
 body body.theme-light .search-results {
-  background-color: rgb(254, 253, 253);
+  background-color: var(--prompt-background, rgb(254, 253, 253));
   border: 1px solid rgba(46, 31, 31, 0.1);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -3083,14 +3971,15 @@ body body.theme-light div.search-results .suggestion-item {
 body body.theme-light .search-results .suggestion-item.is-selected {
   color: rgb(0, 0, 0);
   font-weight: 400;
-  background-color: rgba(46, 31, 31, 0.05);
+  background-color: var(--background-modifier-hover, rgba(46, 31, 31, 0.05));
 }
 body body.theme-light div.search-results .suggestion-item.is-selected {
   color: rgb(0, 0, 0);
 }
 body body.theme-light .published-container .markdown-rendered h1 {
-  color: rgb(0, 0, 0);
-  font-family:
+  color: var(--h1-color, rgb(0, 0, 0));
+  font-family: var(
+    --h1-font,
     "Franklin Gothic Book",
     Rubik,
     "Helvetica Neue",
@@ -3098,12 +3987,14 @@ body body.theme-light .published-container .markdown-rendered h1 {
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h2 {
-  color: rgb(0, 0, 0);
-  font-family:
+  color: var(--h2-color, rgb(0, 0, 0));
+  font-family: var(
+    --h2-font,
     "Franklin Gothic Book",
     Rubik,
     "Helvetica Neue",
@@ -3111,12 +4002,14 @@ body body.theme-light .published-container .markdown-rendered h2 {
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h3 {
-  color: rgb(0, 0, 0);
-  font-family:
+  color: var(--h3-color, rgb(0, 0, 0));
+  font-family: var(
+    --h3-font,
     "Franklin Gothic Book",
     Rubik,
     "Helvetica Neue",
@@ -3124,12 +4017,14 @@ body body.theme-light .published-container .markdown-rendered h3 {
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h4 {
-  color: rgb(0, 0, 0);
-  font-family:
+  color: var(--h4-color, rgb(0, 0, 0));
+  font-family: var(
+    --h4-font,
     "Franklin Gothic Book",
     Rubik,
     "Helvetica Neue",
@@ -3137,12 +4032,14 @@ body body.theme-light .published-container .markdown-rendered h4 {
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h5 {
-  color: rgb(0, 0, 0);
-  font-family:
+  color: var(--h5-color, rgb(0, 0, 0));
+  font-family: var(
+    --h5-font,
     "Franklin Gothic Book",
     Rubik,
     "Helvetica Neue",
@@ -3150,12 +4047,14 @@ body body.theme-light .published-container .markdown-rendered h5 {
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h6 {
-  color: rgb(0, 0, 0);
-  font-family:
+  color: var(--h6-color, rgb(0, 0, 0));
+  font-family: var(
+    --h6-font,
     "Franklin Gothic Book",
     Rubik,
     "Helvetica Neue",
@@ -3163,7 +4062,8 @@ body body.theme-light .published-container .markdown-rendered h6 {
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body
@@ -3224,7 +4124,7 @@ body body.theme-light body {
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
-  --callout-color: rgb(0, 0, 0);
+  --callout-color: var(--callout-default, rgb(0, 0, 0));
   border: 2px dashed rgb(0, 0, 0);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -3236,7 +4136,7 @@ body body.theme-light .callout[data-callout="note"] {
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 12px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3244,7 +4144,7 @@ body body.theme-light .callout[data-callout="note"] {
 }
 body body.theme-light .callout[data-callout="note"] > .callout-title {
   --callout-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   gap: 4px;
   border: 0px rgb(0, 0, 0);
   border-top-left-radius: 0px;
@@ -3262,7 +4162,7 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout > .callout-title > .callout-title-inner {
-  color: rgb(0, 0, 0);
+  color: var(--callout-title-color, rgb(0, 0, 0));
   font-weight: var(--font-weight, 600);
 }
 body body.theme-light .callout > .callout-content {
@@ -3274,8 +4174,8 @@ body body.theme-light .callout > .callout-content {
   padding: 0px;
 }
 body body.theme-light .callout[data-callout="abstract"] {
-  --callout-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-summary, rgb(0, 0, 0));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3293,7 +4193,7 @@ body body.theme-light .callout[data-callout="abstract"] {
 }
 body body.theme-light .callout[data-callout="abstract"] > .callout-title {
   --callout-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   gap: 4px;
   border: 0px rgb(0, 0, 0);
   border-top-left-radius: 0px;
@@ -3311,8 +4211,8 @@ body body.theme-light .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="info"] {
-  --callout-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-info, rgb(0, 0, 0));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3330,7 +4230,7 @@ body body.theme-light .callout[data-callout="info"] {
 }
 body body.theme-light .callout[data-callout="info"] > .callout-title {
   --callout-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   gap: 4px;
   border: 0px rgb(0, 0, 0);
   border-top-left-radius: 0px;
@@ -3348,8 +4248,8 @@ body body.theme-light .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="todo"] {
-  --callout-color: rgb(0, 130, 235);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-todo, rgb(0, 130, 235));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3367,7 +4267,7 @@ body body.theme-light .callout[data-callout="todo"] {
 }
 body body.theme-light .callout[data-callout="todo"] > .callout-title {
   --callout-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   gap: 4px;
   border: 0px rgb(0, 0, 0);
   border-top-left-radius: 0px;
@@ -3385,8 +4285,8 @@ body body.theme-light .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="tip"] {
-  --callout-color: rgb(240, 195, 0);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-tip, rgb(240, 195, 0));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3404,7 +4304,7 @@ body body.theme-light .callout[data-callout="tip"] {
 }
 body body.theme-light .callout[data-callout="tip"] > .callout-title {
   --callout-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   gap: 4px;
   border: 0px rgb(0, 0, 0);
   border-top-left-radius: 0px;
@@ -3422,8 +4322,8 @@ body body.theme-light .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="success"] {
-  --callout-color: rgb(0, 180, 0);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-success, rgb(0, 180, 0));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3441,7 +4341,7 @@ body body.theme-light .callout[data-callout="success"] {
 }
 body body.theme-light .callout[data-callout="success"] > .callout-title {
   --callout-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   gap: 4px;
   border: 0px rgb(0, 0, 0);
   border-top-left-radius: 0px;
@@ -3459,8 +4359,8 @@ body body.theme-light .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="question"] {
-  --callout-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-question, rgb(0, 0, 0));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3478,7 +4378,7 @@ body body.theme-light .callout[data-callout="question"] {
 }
 body body.theme-light .callout[data-callout="question"] > .callout-title {
   --callout-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   gap: 4px;
   border: 0px rgb(0, 0, 0);
   border-top-left-radius: 0px;
@@ -3496,8 +4396,8 @@ body body.theme-light .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="warning"] {
-  --callout-color: rgb(240, 150, 0);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-warning, rgb(240, 150, 0));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3515,7 +4415,7 @@ body body.theme-light .callout[data-callout="warning"] {
 }
 body body.theme-light .callout[data-callout="warning"] > .callout-title {
   --callout-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   gap: 4px;
   border: 0px rgb(0, 0, 0);
   border-top-left-radius: 0px;
@@ -3533,8 +4433,8 @@ body body.theme-light .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="danger"] {
-  --callout-color: rgb(235, 0, 0);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-error, rgb(235, 0, 0));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3552,7 +4452,7 @@ body body.theme-light .callout[data-callout="danger"] {
 }
 body body.theme-light .callout[data-callout="danger"] > .callout-title {
   --callout-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   gap: 4px;
   border: 0px rgb(0, 0, 0);
   border-top-left-radius: 0px;
@@ -3570,8 +4470,8 @@ body body.theme-light .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="failure"] {
-  --callout-color: rgb(235, 0, 0);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-fail, rgb(235, 0, 0));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3589,7 +4489,7 @@ body body.theme-light .callout[data-callout="failure"] {
 }
 body body.theme-light .callout[data-callout="failure"] > .callout-title {
   --callout-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   gap: 4px;
   border: 0px rgb(0, 0, 0);
   border-top-left-radius: 0px;
@@ -3607,8 +4507,8 @@ body body.theme-light .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="bug"] {
-  --callout-color: rgb(245, 0, 165);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-bug, rgb(245, 0, 165));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3626,7 +4526,7 @@ body body.theme-light .callout[data-callout="bug"] {
 }
 body body.theme-light .callout[data-callout="bug"] > .callout-title {
   --callout-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   gap: 4px;
   border: 0px rgb(0, 0, 0);
   border-top-left-radius: 0px;
@@ -3644,8 +4544,8 @@ body body.theme-light .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="example"] {
-  --callout-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-example, rgb(0, 0, 0));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3663,7 +4563,7 @@ body body.theme-light .callout[data-callout="example"] {
 }
 body body.theme-light .callout[data-callout="example"] > .callout-title {
   --callout-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   gap: 4px;
   border: 0px rgb(0, 0, 0);
   border-top-left-radius: 0px;
@@ -3681,8 +4581,8 @@ body body.theme-light .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="quote"] {
-  --callout-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-quote, rgb(0, 0, 0));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3700,7 +4600,7 @@ body body.theme-light .callout[data-callout="quote"] {
 }
 body body.theme-light .callout[data-callout="quote"] > .callout-title {
   --callout-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   gap: 4px;
   border: 0px rgb(0, 0, 0);
   border-top-left-radius: 0px;
@@ -3721,7 +4621,8 @@ body body.theme-light .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
   border-collapse: separate;
   color: rgb(0, 0, 0);
-  font-family:
+  font-family: var(
+    --table-body-font,
     "Franklin Gothic Book",
     Rubik,
     "Helvetica Neue",
@@ -3729,7 +4630,8 @@ body body.theme-light .markdown-rendered table {
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
-    sans-serif;
+    sans-serif
+  );
   table-layout: auto;
   width: 195.062px;
   border: 0px rgb(128, 128, 128);
@@ -3767,7 +4669,7 @@ body body.theme-light .markdown-rendered tbody {
 }
 body body.theme-light .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--table-header-color, rgb(0, 0, 0));
   font-weight: var(--table-header-weight, 600);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
@@ -3787,7 +4689,7 @@ body body.theme-light .markdown-rendered th {
 }
 body body.theme-light .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--table-text-color, rgb(0, 0, 0));
   font-weight: 400;
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
@@ -3951,7 +4853,7 @@ body body.theme-light .markdown-embed {
   padding: 0px;
 }
 body body.theme-light .file-embed {
-  background-color: rgb(250, 246, 246);
+  background-color: var(--background-primary-alt, rgb(250, 246, 246));
   border-color: rgb(0, 0, 0);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -3963,7 +4865,7 @@ body body.theme-light .file-embed {
 }
 body body.theme-light .metadata-container {
   background-color: var(--metadata-background, rgba(0, 0, 0, 0));
-  color: rgb(0, 0, 0);
+  color: var(--text-muted, rgb(0, 0, 0));
   font-family:
     "Franklin Gothic Book",
     Rubik,
@@ -4031,7 +4933,7 @@ body body.theme-light input[type="range"] {
 }
 body body.theme-light input[type="text"] {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   font-family:
     "Franklin Gothic Book",
     Rubik,
@@ -4104,12 +5006,20 @@ body body.theme-light details[open] {
   padding: 0px;
 }
 body body.theme-light kbd {
-  background-color: rgb(23, 35, 62);
+  background-color: var(--code-background, rgb(23, 35, 62));
   box-shadow: none;
-  color: rgb(227, 227, 227);
-  font-family:
-    "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular,
-    Consolas, "Source Code Pro", monospace;
+  color: var(--code-normal, rgb(227, 227, 227));
+  font-family: var(
+    --font-monospace,
+    "iA Writer Mono S",
+    "IBM Plex Mono",
+    "Roboto Mono",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Source Code Pro",
+    monospace
+  );
   font-size: var(--code-size, 14px);
   border: 0px rgb(227, 227, 227);
   border-top-left-radius: 2px;
@@ -4329,7 +5239,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(0, 0, 0);
+  color: var(--nav-item-color, rgb(0, 0, 0));
   cursor: var(--cursor, default);
   font-family:
     "Franklin Gothic Book",
@@ -4359,7 +5269,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(0, 0, 0);
+  color: var(--nav-item-color, rgb(0, 0, 0));
   cursor: var(--cursor, default);
   font-family:
     "Franklin Gothic Book",
@@ -4383,7 +5293,7 @@ body
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--icon-color, rgb(0, 0, 0));
   cursor: var(--cursor, default);
   border-color: rgb(0, 0, 0);
   border-width: 0px;
@@ -4393,8 +5303,8 @@ body body.theme-light .clickable-icon {
   border-bottom-right-radius: 2px;
 }
 body body.theme-light .site-footer {
-  background-color: rgb(250, 246, 246);
-  color: rgb(0, 0, 0);
+  background-color: var(--background-secondary, rgb(250, 246, 246));
+  color: var(--status-bar-text-color, rgb(0, 0, 0));
   font-family:
     "Franklin Gothic Book",
     Rubik,
@@ -4455,7 +5365,7 @@ body body.theme-light .nav-files-container .tree-item {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light .nav-file-title {
-  color: rgb(0, 0, 0);
+  color: var(--nav-item-color, rgb(0, 0, 0));
 }
 body body.theme-light .nav-file-title-content {
   color: rgb(0, 0, 0);
@@ -4488,7 +5398,7 @@ body body.theme-light .nav-files-container {
 }
 body body.theme-light .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--icon-color, rgb(0, 0, 0));
   cursor: var(--cursor, default);
   border-color: rgb(0, 0, 0);
   border-width: 0px;
@@ -4512,7 +5422,7 @@ body body.theme-light .view-header-breadcrumb {
   border-bottom-right-radius: 2px;
 }
 body body.theme-light .view-header-breadcrumb-separator {
-  color: rgb(0, 0, 0);
+  color: var(--text-faint, rgb(0, 0, 0));
   font-family:
     "Franklin Gothic Book",
     Rubik,
@@ -4532,7 +5442,7 @@ body body.theme-light .view-header-breadcrumb-separator {
     sans-serif;
 }
 body body.theme-light .page-header .page-title {
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   font-family:
     "Franklin Gothic Book",
     Rubik,
@@ -4634,8 +5544,8 @@ body body.theme-light pre > code [data-highlighted-chars] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .tag {
-  background-color: rgba(224, 41, 41, 0.1);
-  color: rgb(224, 41, 41);
+  background-color: var(--tag-background, rgba(224, 41, 41, 0.1));
+  color: var(--tag-color, rgb(224, 41, 41));
   border: 0px solid rgba(224, 41, 41, 0.15);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -4657,7 +5567,7 @@ body body.theme-light .search-highlight {
 }
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 212, 250);
+  color: var(--link-external-color, rgb(0, 212, 250));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -4691,7 +5601,7 @@ body body.theme-dark .markdown-rendered a.external-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 212, 250);
+  color: var(--link-color, rgb(0, 212, 250));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -4725,7 +5635,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 212, 250);
+  color: var(--link-unresolved-color, rgb(0, 212, 250));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -4742,7 +5652,10 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   font-weight: var(--link-weight, 400);
   outline: rgb(0, 212, 250) none 0px;
   text-decoration: underline rgba(0, 212, 250, 0.3);
-  text-decoration-color: rgba(0, 212, 250, 0.3);
+  text-decoration-color: var(
+    --link-unresolved-decoration-color,
+    rgba(0, 212, 250, 0.3)
+  );
   text-decoration-line: var(--link-decoration, underline);
   text-decoration-style: var(--link-unresolved-decoration-style, solid);
   transition: opacity 0.14s ease-in-out;
@@ -4772,7 +5685,7 @@ body body.theme-dark .markdown-rendered a.internal-link:hover {
 }
 body body.theme-dark .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(250, 247, 245);
+  color: var(--text-muted, rgb(250, 247, 245));
   cursor: auto;
   filter: none;
   backdrop-filter: none;
@@ -4814,7 +5727,7 @@ body body.theme-dark .markdown-rendered p {
 }
 body body.theme-dark strong {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(250, 247, 245);
+  color: var(--bold-color, rgb(250, 247, 245));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -4848,7 +5761,7 @@ body body.theme-dark strong {
 }
 body body.theme-dark b {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(250, 247, 245);
+  color: var(--bold-color, rgb(250, 247, 245));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -4882,7 +5795,7 @@ body body.theme-dark b {
 }
 body body.theme-dark em {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(250, 247, 245);
+  color: var(--italic-color, rgb(250, 247, 245));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -4916,7 +5829,7 @@ body body.theme-dark em {
 }
 body body.theme-dark i {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(250, 247, 245);
+  color: var(--italic-color, rgb(250, 247, 245));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -4949,8 +5862,8 @@ body body.theme-dark i {
   animation-play-state: running;
 }
 body body.theme-dark .markdown-rendered mark {
-  background-color: rgb(71, 227, 255);
-  color: rgb(0, 0, 0);
+  background-color: var(--text-highlight-bg, rgb(71, 227, 255));
+  color: var(--text-highlight-fg, rgb(0, 0, 0));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -5017,7 +5930,7 @@ body body.theme-dark del {
   animation-play-state: running;
 }
 body body.theme-dark .suggestion-item.is-selected {
-  background-color: rgba(210, 214, 223, 0.05);
+  background-color: var(--background-modifier-hover, rgba(210, 214, 223, 0.05));
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -5029,7 +5942,7 @@ body body.theme-dark .suggestion-item.is-selected {
   color: rgb(250, 247, 245);
 }
 body body.theme-dark div.suggestion-item {
-  background-color: rgba(210, 214, 223, 0.05);
+  background-color: var(--background-modifier-hover, rgba(210, 214, 223, 0.05));
   border: 0px rgb(250, 247, 245);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -5062,7 +5975,7 @@ body body.theme-dark .markdown-rendered hr {
 }
 body body.theme-dark div.multi-select-pill {
   align-items: normal;
-  background-color: rgba(0, 212, 250, 0.1);
+  background-color: var(--pill-background, rgba(0, 212, 250, 0.1));
   display: flex;
   font-family:
     "Franklin Gothic Book",
@@ -5135,7 +6048,7 @@ body body.theme-dark .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-dark .markdown-rendered code {
-  background-color: rgb(10, 18, 30);
+  background-color: var(--code-background, rgb(10, 18, 30));
   border: 0px solid rgba(210, 214, 223, 0.1);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -5145,10 +6058,18 @@ body body.theme-dark .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(227, 227, 227);
-  font-family:
-    "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular,
-    Consolas, "Source Code Pro", monospace;
+  color: var(--code-normal, rgb(227, 227, 227));
+  font-family: var(
+    --font-monospace,
+    "iA Writer Mono S",
+    "IBM Plex Mono",
+    "Roboto Mono",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Source Code Pro",
+    monospace
+  );
   padding: 2.1px 4.2px;
 }
 body body.theme-dark .markdown-rendered pre > code {
@@ -5169,7 +6090,7 @@ body body.theme-dark .markdown-rendered pre > code {
 }
 body body.theme-dark :not(pre) > code[class*="language-"],
 body body.theme-dark pre[class*="language-"] {
-  background-color: rgb(10, 18, 30);
+  background-color: var(--code-background, rgb(10, 18, 30));
   border: 0px solid rgba(210, 214, 223, 0.1);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -5246,7 +6167,7 @@ body body.theme-dark .markdown-rendered blockquote {
   margin-inline-end: 40px;
 }
 body body.theme-dark .footnote-backref {
-  color: rgb(250, 247, 245);
+  color: var(--text-faint, rgb(250, 247, 245));
   text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
@@ -5260,7 +6181,7 @@ body body.theme-dark .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   font-family:
     "Franklin Gothic Book",
     Rubik,
@@ -5280,7 +6201,7 @@ body body.theme-dark .site-body-left-column input.search-bar {
     sans-serif;
 }
 body body.theme-dark .search-results {
-  background-color: rgb(22, 29, 44);
+  background-color: var(--prompt-background, rgb(22, 29, 44));
   border: 1px solid rgba(210, 214, 223, 0.1);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -5359,14 +6280,15 @@ body body.theme-dark div.search-results .suggestion-item {
 body body.theme-dark .search-results .suggestion-item.is-selected {
   color: rgb(250, 247, 245);
   font-weight: 400;
-  background-color: rgba(210, 214, 223, 0.05);
+  background-color: var(--background-modifier-hover, rgba(210, 214, 223, 0.05));
 }
 body body.theme-dark div.search-results .suggestion-item.is-selected {
   color: rgb(250, 247, 245);
 }
 body body.theme-dark .published-container .markdown-rendered h1 {
-  color: rgb(250, 247, 245);
-  font-family:
+  color: var(--h1-color, rgb(250, 247, 245));
+  font-family: var(
+    --h1-font,
     "Franklin Gothic Book",
     Rubik,
     "Helvetica Neue",
@@ -5374,12 +6296,14 @@ body body.theme-dark .published-container .markdown-rendered h1 {
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
-  color: rgb(250, 247, 245);
-  font-family:
+  color: var(--h2-color, rgb(250, 247, 245));
+  font-family: var(
+    --h2-font,
     "Franklin Gothic Book",
     Rubik,
     "Helvetica Neue",
@@ -5387,12 +6311,14 @@ body body.theme-dark .published-container .markdown-rendered h2 {
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
-  color: rgb(250, 247, 245);
-  font-family:
+  color: var(--h3-color, rgb(250, 247, 245));
+  font-family: var(
+    --h3-font,
     "Franklin Gothic Book",
     Rubik,
     "Helvetica Neue",
@@ -5400,12 +6326,14 @@ body body.theme-dark .published-container .markdown-rendered h3 {
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
-  color: rgb(250, 247, 245);
-  font-family:
+  color: var(--h4-color, rgb(250, 247, 245));
+  font-family: var(
+    --h4-font,
     "Franklin Gothic Book",
     Rubik,
     "Helvetica Neue",
@@ -5413,12 +6341,14 @@ body body.theme-dark .published-container .markdown-rendered h4 {
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
-  color: rgb(250, 247, 245);
-  font-family:
+  color: var(--h5-color, rgb(250, 247, 245));
+  font-family: var(
+    --h5-font,
     "Franklin Gothic Book",
     Rubik,
     "Helvetica Neue",
@@ -5426,12 +6356,14 @@ body body.theme-dark .published-container .markdown-rendered h5 {
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
-  color: rgb(250, 247, 245);
-  font-family:
+  color: var(--h6-color, rgb(250, 247, 245));
+  font-family: var(
+    --h6-font,
     "Franklin Gothic Book",
     Rubik,
     "Helvetica Neue",
@@ -5439,7 +6371,8 @@ body body.theme-dark .published-container .markdown-rendered h6 {
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
-    sans-serif;
+    sans-serif
+  );
   text-shadow: none;
 }
 body
@@ -5500,7 +6433,7 @@ body body.theme-dark body {
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {
-  --callout-color: rgb(250, 247, 245);
+  --callout-color: var(--callout-default, rgb(250, 247, 245));
   border: 2px dashed rgb(250, 247, 245);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -5512,7 +6445,7 @@ body body.theme-dark .callout[data-callout="note"] {
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 12px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5520,7 +6453,7 @@ body body.theme-dark .callout[data-callout="note"] {
 }
 body body.theme-dark .callout[data-callout="note"] > .callout-title {
   --callout-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   gap: 4px;
   border: 0px rgb(250, 247, 245);
   border-top-left-radius: 0px;
@@ -5538,7 +6471,7 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
-  color: rgb(250, 247, 245);
+  color: var(--callout-title-color, rgb(250, 247, 245));
   font-weight: var(--font-weight, 600);
 }
 body body.theme-dark .callout > .callout-content {
@@ -5550,8 +6483,8 @@ body body.theme-dark .callout > .callout-content {
   padding: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
-  --callout-color: rgb(250, 247, 245);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-summary, rgb(250, 247, 245));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5569,7 +6502,7 @@ body body.theme-dark .callout[data-callout="abstract"] {
 }
 body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
   --callout-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   gap: 4px;
   border: 0px rgb(250, 247, 245);
   border-top-left-radius: 0px;
@@ -5587,8 +6520,8 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="info"] {
-  --callout-color: rgb(250, 247, 245);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-info, rgb(250, 247, 245));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5606,7 +6539,7 @@ body body.theme-dark .callout[data-callout="info"] {
 }
 body body.theme-dark .callout[data-callout="info"] > .callout-title {
   --callout-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   gap: 4px;
   border: 0px rgb(250, 247, 245);
   border-top-left-radius: 0px;
@@ -5624,8 +6557,8 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="todo"] {
-  --callout-color: rgb(0, 130, 255);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-todo, rgb(0, 130, 255));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5643,7 +6576,7 @@ body body.theme-dark .callout[data-callout="todo"] {
 }
 body body.theme-dark .callout[data-callout="todo"] > .callout-title {
   --callout-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   gap: 4px;
   border: 0px rgb(250, 247, 245);
   border-top-left-radius: 0px;
@@ -5661,8 +6594,8 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="tip"] {
-  --callout-color: rgb(255, 220, 120);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-tip, rgb(255, 220, 120));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5680,7 +6613,7 @@ body body.theme-dark .callout[data-callout="tip"] {
 }
 body body.theme-dark .callout[data-callout="tip"] > .callout-title {
   --callout-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   gap: 4px;
   border: 0px rgb(250, 247, 245);
   border-top-left-radius: 0px;
@@ -5698,8 +6631,8 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="success"] {
-  --callout-color: rgb(0, 190, 0);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-success, rgb(0, 190, 0));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5717,7 +6650,7 @@ body body.theme-dark .callout[data-callout="success"] {
 }
 body body.theme-dark .callout[data-callout="success"] > .callout-title {
   --callout-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   gap: 4px;
   border: 0px rgb(250, 247, 245);
   border-top-left-radius: 0px;
@@ -5735,8 +6668,8 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="question"] {
-  --callout-color: rgb(250, 247, 245);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-question, rgb(250, 247, 245));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5754,7 +6687,7 @@ body body.theme-dark .callout[data-callout="question"] {
 }
 body body.theme-dark .callout[data-callout="question"] > .callout-title {
   --callout-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   gap: 4px;
   border: 0px rgb(250, 247, 245);
   border-top-left-radius: 0px;
@@ -5772,8 +6705,8 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="warning"] {
-  --callout-color: rgb(220, 210, 0);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-warning, rgb(220, 210, 0));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5791,7 +6724,7 @@ body body.theme-dark .callout[data-callout="warning"] {
 }
 body body.theme-dark .callout[data-callout="warning"] > .callout-title {
   --callout-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   gap: 4px;
   border: 0px rgb(250, 247, 245);
   border-top-left-radius: 0px;
@@ -5809,8 +6742,8 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="danger"] {
-  --callout-color: rgb(250, 30, 0);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-error, rgb(250, 30, 0));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5828,7 +6761,7 @@ body body.theme-dark .callout[data-callout="danger"] {
 }
 body body.theme-dark .callout[data-callout="danger"] > .callout-title {
   --callout-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   gap: 4px;
   border: 0px rgb(250, 247, 245);
   border-top-left-radius: 0px;
@@ -5846,8 +6779,8 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="failure"] {
-  --callout-color: rgb(250, 30, 0);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-fail, rgb(250, 30, 0));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5865,7 +6798,7 @@ body body.theme-dark .callout[data-callout="failure"] {
 }
 body body.theme-dark .callout[data-callout="failure"] > .callout-title {
   --callout-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   gap: 4px;
   border: 0px rgb(250, 247, 245);
   border-top-left-radius: 0px;
@@ -5883,8 +6816,8 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="bug"] {
-  --callout-color: rgb(245, 0, 170);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-bug, rgb(245, 0, 170));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5902,7 +6835,7 @@ body body.theme-dark .callout[data-callout="bug"] {
 }
 body body.theme-dark .callout[data-callout="bug"] > .callout-title {
   --callout-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   gap: 4px;
   border: 0px rgb(250, 247, 245);
   border-top-left-radius: 0px;
@@ -5920,8 +6853,8 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="example"] {
-  --callout-color: rgb(250, 247, 245);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-example, rgb(250, 247, 245));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5939,7 +6872,7 @@ body body.theme-dark .callout[data-callout="example"] {
 }
 body body.theme-dark .callout[data-callout="example"] > .callout-title {
   --callout-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   gap: 4px;
   border: 0px rgb(250, 247, 245);
   border-top-left-radius: 0px;
@@ -5957,8 +6890,8 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="quote"] {
-  --callout-color: rgb(250, 247, 245);
-  background-color: rgba(0, 0, 0, 0);
+  --callout-color: var(--callout-quote, rgb(250, 247, 245));
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5976,7 +6909,7 @@ body body.theme-dark .callout[data-callout="quote"] {
 }
 body body.theme-dark .callout[data-callout="quote"] > .callout-title {
   --callout-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   gap: 4px;
   border: 0px rgb(250, 247, 245);
   border-top-left-radius: 0px;
@@ -5997,7 +6930,8 @@ body body.theme-dark .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
   border-collapse: separate;
   color: rgb(250, 247, 245);
-  font-family:
+  font-family: var(
+    --table-body-font,
     "Franklin Gothic Book",
     Rubik,
     "Helvetica Neue",
@@ -6005,7 +6939,8 @@ body body.theme-dark .markdown-rendered table {
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
-    sans-serif;
+    sans-serif
+  );
   table-layout: auto;
   width: 195.062px;
   border: 0px rgb(128, 128, 128);
@@ -6043,7 +6978,7 @@ body body.theme-dark .markdown-rendered tbody {
 }
 body body.theme-dark .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(250, 247, 245);
+  color: var(--table-header-color, rgb(250, 247, 245));
   font-weight: var(--table-header-weight, 600);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
@@ -6064,7 +6999,7 @@ body body.theme-dark .markdown-rendered th {
 }
 body body.theme-dark .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(250, 247, 245);
+  color: var(--table-text-color, rgb(250, 247, 245));
   font-weight: 400;
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
@@ -6229,7 +7164,7 @@ body body.theme-dark .markdown-embed {
   padding: 0px;
 }
 body body.theme-dark .file-embed {
-  background-color: rgb(10, 18, 30);
+  background-color: var(--background-primary-alt, rgb(10, 18, 30));
   border-color: rgb(250, 247, 245);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -6241,7 +7176,7 @@ body body.theme-dark .file-embed {
 }
 body body.theme-dark .metadata-container {
   background-color: var(--metadata-background, rgba(0, 0, 0, 0));
-  color: rgb(250, 247, 245);
+  color: var(--text-muted, rgb(250, 247, 245));
   font-family:
     "Franklin Gothic Book",
     Rubik,
@@ -6309,7 +7244,7 @@ body body.theme-dark input[type="range"] {
 }
 body body.theme-dark input[type="text"] {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   font-family:
     "Franklin Gothic Book",
     Rubik,
@@ -6382,12 +7317,20 @@ body body.theme-dark details[open] {
   padding: 0px;
 }
 body body.theme-dark kbd {
-  background-color: rgb(10, 18, 30);
+  background-color: var(--code-background, rgb(10, 18, 30));
   box-shadow: none;
-  color: rgb(227, 227, 227);
-  font-family:
-    "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular,
-    Consolas, "Source Code Pro", monospace;
+  color: var(--code-normal, rgb(227, 227, 227));
+  font-family: var(
+    --font-monospace,
+    "iA Writer Mono S",
+    "IBM Plex Mono",
+    "Roboto Mono",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Source Code Pro",
+    monospace
+  );
   font-size: var(--code-size, 14px);
   border: 0px rgb(227, 227, 227);
   border-top-left-radius: 2px;
@@ -6607,7 +7550,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(250, 247, 245);
+  color: var(--nav-item-color, rgb(250, 247, 245));
   cursor: var(--cursor, default);
   font-family:
     "Franklin Gothic Book",
@@ -6637,7 +7580,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(250, 247, 245);
+  color: var(--nav-item-color, rgb(250, 247, 245));
   cursor: var(--cursor, default);
   font-family:
     "Franklin Gothic Book",
@@ -6661,7 +7604,7 @@ body
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(250, 247, 245);
+  color: var(--icon-color, rgb(250, 247, 245));
   cursor: var(--cursor, default);
   border-color: rgb(250, 247, 245);
   border-width: 0px;
@@ -6671,8 +7614,8 @@ body body.theme-dark .clickable-icon {
   border-bottom-right-radius: 2px;
 }
 body body.theme-dark .site-footer {
-  background-color: rgb(33, 42, 61);
-  color: rgb(250, 247, 245);
+  background-color: var(--background-secondary, rgb(33, 42, 61));
+  color: var(--status-bar-text-color, rgb(250, 247, 245));
   font-family:
     "Franklin Gothic Book",
     Rubik,
@@ -6733,7 +7676,7 @@ body body.theme-dark .nav-files-container .tree-item {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .nav-file-title {
-  color: rgb(250, 247, 245);
+  color: var(--nav-item-color, rgb(250, 247, 245));
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(250, 247, 245);
@@ -6766,7 +7709,7 @@ body body.theme-dark .nav-files-container {
 }
 body body.theme-dark .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(250, 247, 245);
+  color: var(--icon-color, rgb(250, 247, 245));
   cursor: var(--cursor, default);
   border-color: rgb(250, 247, 245);
   border-width: 0px;
@@ -6790,7 +7733,7 @@ body body.theme-dark .view-header-breadcrumb {
   border-bottom-right-radius: 2px;
 }
 body body.theme-dark .view-header-breadcrumb-separator {
-  color: rgb(250, 247, 245);
+  color: var(--text-faint, rgb(250, 247, 245));
   font-family:
     "Franklin Gothic Book",
     Rubik,
@@ -6810,7 +7753,7 @@ body body.theme-dark .view-header-breadcrumb-separator {
     sans-serif;
 }
 body body.theme-dark .page-header .page-title {
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   font-family:
     "Franklin Gothic Book",
     Rubik,
@@ -6912,8 +7855,8 @@ body body.theme-dark pre > code [data-highlighted-chars] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .tag {
-  background-color: rgba(0, 212, 250, 0.1);
-  color: rgb(0, 212, 250);
+  background-color: var(--tag-background, rgba(0, 212, 250, 0.1));
+  color: var(--tag-color, rgb(0, 212, 250));
   border: 0px solid rgba(0, 212, 250, 0.15);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;

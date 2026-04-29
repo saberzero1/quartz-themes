@@ -83,42 +83,42 @@ html body {
 }
 
 html body .page > div#quartz-body div.sidebar {
-  background-color: rgb(28, 28, 33);
+  background-color: var(--sidebar-background, rgb(28, 28, 33));
 }
 
 html body html {
   --accent: hsl(164, 68%, 72%);
-  --black: hsl(240, 7%, 12%);
+  --black: hsl(var(--h-black), var(--s-black), var(--l-black));
   --black-dark-1: hsl(240, 7%, 7%);
   --black-light-1: hsl(240, 7%, 17%);
   --black-light-2: hsl(240, 7%, 22%);
   --black-light-3: hsl(240, 7%, 27%);
-  --border: 0.5px solid hsl(246, 28%, 48%);
-  --current-line-bg: hsl(240, 7%, 12%);
-  --editor-background: hsl(240, 7%, 7%);
-  --editor-icons: hsl(211, 19%, 60%);
-  --editor-title: hsl(212, 61%, 91%);
-  --explorer-active: hsl(240, 7%, 12%);
-  --explorer-active-bg: hsl(164, 68%, 72%);
-  --explorer-hover: hsl(240, 7%, 17%);
+  --border: 0.5px solid var(--purple);
+  --current-line-bg: var(--black, hsl(240, 7%, 12%));
+  --editor-background: var(--black-dark-1, hsl(240, 7%, 7%));
+  --editor-icons: var(--white-dark-3, hsl(211, 19%, 60%));
+  --editor-title: var(--white, hsl(212, 61%, 91%));
+  --explorer-active: var(--black, hsl(240, 7%, 12%));
+  --explorer-active-bg: var(--accent, hsl(164, 68%, 72%));
+  --explorer-hover: var(--black-light-1, hsl(240, 7%, 17%));
   --font: "Fira Code", monospace;
-  --formatting: hsl(164, 68%, 72%);
+  --formatting: var(--accent, hsl(164, 68%, 72%));
   --h-black: 240;
   --h-purple: 246;
   --h-white: 212;
   --heading: 1.1rem;
-  --heading-color: hsl(246, 28%, 48%);
-  --icon-accent: hsl(164, 68%, 72%);
-  --icon-hover: hsl(164, 68%, 72%);
-  --icon-normal: hsl(246, 28%, 48%);
+  --heading-color: var(--purple, hsl(246, 28%, 48%));
+  --icon-accent: var(--accent, hsl(164, 68%, 72%));
+  --icon-hover: var(--accent, hsl(164, 68%, 72%));
+  --icon-normal: var(--purple, hsl(246, 28%, 48%));
   --l-black: 12%;
   --l-purple: 48%;
   --l-white: 91%;
-  --line-number: hsl(246, 28%, 33%);
-  --list: hsl(246, 28%, 48%);
+  --line-number: var(--purple-dark-3, hsl(246, 28%, 33%));
+  --list: var(--purple, hsl(246, 28%, 48%));
   --par: 0.9rem;
-  --popup-dark: hsl(240, 7%, 7%);
-  --purple: hsl(246, 28%, 48%);
+  --popup-dark: var(--black-dark-1, hsl(240, 7%, 7%));
+  --purple: hsl(var(--h-purple), var(--s-purple), var(--l-purple));
   --purple-dark-1: hsl(246, 28%, 43%);
   --purple-dark-2: hsl(246, 28%, 38%);
   --purple-dark-3: hsl(246, 28%, 33%);
@@ -128,54 +128,54 @@ html body html {
   --purple-light-1: hsl(246, 28%, 53%);
   --purple-light-2: hsl(246, 28%, 58%);
   --purple-light-3: hsl(246, 28%, 63%);
-  --ribbon-background: hsl(240, 7%, 7%);
+  --ribbon-background: var(--black-dark-1, hsl(240, 7%, 7%));
   --s-black: 7%;
   --s-purple: 28%;
   --s-white: 61%;
-  --scrollbar-bg: hsl(246, 28%, 48%);
-  --search-bar: hsl(240, 7%, 17%);
-  --search-hover: hsl(246, 28%, 48%);
-  --sidebar-background: hsl(240, 7%, 12%);
+  --scrollbar-bg: var(--purple, hsl(246, 28%, 48%));
+  --search-bar: var(--black-light-1, hsl(240, 7%, 17%));
+  --search-hover: var(--purple, hsl(246, 28%, 48%));
+  --sidebar-background: var(--black, hsl(240, 7%, 12%));
   --small: 0.7rem;
-  --tab-background: hsl(240, 7%, 7%);
-  --text: hsl(212, 61%, 91%);
-  --text-mute: hsl(211, 19%, 60%);
-  --white: hsl(212, 61%, 91%);
+  --tab-background: var(--black-dark-1, hsl(240, 7%, 7%));
+  --text: var(--white, hsl(212, 61%, 91%));
+  --text-mute: var(--white-dark-3, hsl(211, 19%, 60%));
+  --white: hsl(var(--h-white), var(--s-white), var(--l-white));
   --white-dark-1: hsl(212, 61%, 86%);
   --white-dark-2: hsl(212, 61%, 81%);
   --white-dark-3: hsl(211, 19%, 60%);
 }`,
     typography: `html body .markdown-rendered p > b, html b {
-  color: rgb(218, 231, 246);
+  color: var(--bold-color, rgb(218, 231, 246));
   font-family: "Fira Code", monospace;
   outline: rgb(218, 231, 246) none 0px;
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body .markdown-rendered p > em, html em {
-  color: rgb(218, 231, 246);
+  color: var(--italic-color, rgb(218, 231, 246));
   font-family: "Fira Code", monospace;
   outline: rgb(218, 231, 246) none 0px;
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body .markdown-rendered p > i, html i {
-  color: rgb(218, 231, 246);
+  color: var(--italic-color, rgb(218, 231, 246));
   font-family: "Fira Code", monospace;
   outline: rgb(218, 231, 246) none 0px;
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body .markdown-rendered p > strong, html strong {
-  color: rgb(218, 231, 246);
+  color: var(--bold-color, rgb(218, 231, 246));
   font-family: "Fira Code", monospace;
   outline: rgb(218, 231, 246) none 0px;
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body .text-highlight {
-  background-color: rgb(135, 232, 206);
-  color: rgb(17, 17, 19);
+  background-color: var(--accent, rgb(135, 232, 206));
+  color: var(--black-dark-1, rgb(17, 17, 19));
   font-family: "Fira Code", monospace;
   outline: rgb(17, 17, 19) none 0px;
   text-decoration-color: rgb(17, 17, 19);
@@ -189,30 +189,31 @@ html body del {
 }
 
 html body h1.article-title {
-  color: rgb(218, 231, 246);
+  color: var(--editor-title, rgb(218, 231, 246));
 }
 
 html body p {
   font-family: "Fira Code", monospace;
 }`,
     links: `html body a.external-link, html footer a {
-  color: rgb(218, 231, 246);
+  color: var(--white, rgb(218, 231, 246));
   font-family: "Fira Code", monospace;
   outline: rgb(218, 231, 246) none 0px;
   text-decoration: underline rgb(135, 232, 206);
-  text-decoration-color: rgb(135, 232, 206);
+  text-decoration-color: var(--accent, rgb(135, 232, 206));
 }
 
 html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
+  color: var(--white, rgb(166, 138, 249));
   font-family: "Fira Code", monospace;
   text-decoration: underline rgb(135, 232, 206);
-  text-decoration-color: rgb(135, 232, 206);
+  text-decoration-color: var(--accent, rgb(135, 232, 206));
 }
 
 html body a.internal-link.broken {
   font-family: "Fira Code", monospace;
   text-decoration: underline rgb(135, 232, 206);
-  text-decoration-color: rgb(135, 232, 206);
+  text-decoration-color: var(--accent, rgb(135, 232, 206));
 }`,
     lists: `html body dl {
   margin-bottom: 14.4px;
@@ -227,7 +228,7 @@ html body ul > li {
   color: rgb(218, 231, 246);
 }`,
     blockquotes: `html body .data-footnote-backref {
-  color: rgb(218, 231, 246);
+  color: var(--white, rgb(218, 231, 246));
   text-decoration: underline rgb(135, 232, 206);
 }
 
@@ -240,7 +241,7 @@ html body blockquote {
 }
 
 html body th {
-  color: rgb(135, 232, 206);
+  color: var(--accent, rgb(135, 232, 206));
 }`,
     code: `html body code {
   padding-bottom: 1.89px;
@@ -804,7 +805,7 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
 }
 
 html body .callout[data-callout="abstract"] .callout-title {
@@ -812,7 +813,7 @@ html body .callout[data-callout="abstract"] .callout-title {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
 }
 
 html body .callout[data-callout="bug"] .callout-title {
@@ -820,7 +821,7 @@ html body .callout[data-callout="bug"] .callout-title {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
 }
 
 html body .callout[data-callout="danger"] .callout-title {
@@ -828,7 +829,7 @@ html body .callout[data-callout="danger"] .callout-title {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
 }
 
 html body .callout[data-callout="example"] .callout-title {
@@ -836,7 +837,7 @@ html body .callout[data-callout="example"] .callout-title {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
 }
 
 html body .callout[data-callout="failure"] .callout-title {
@@ -844,7 +845,7 @@ html body .callout[data-callout="failure"] .callout-title {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
 }
 
 html body .callout[data-callout="info"] .callout-title {
@@ -852,7 +853,7 @@ html body .callout[data-callout="info"] .callout-title {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }
 
 html body .callout[data-callout="note"] .callout-title {
@@ -860,7 +861,7 @@ html body .callout[data-callout="note"] .callout-title {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
 }
 
 html body .callout[data-callout="question"] .callout-title {
@@ -868,7 +869,7 @@ html body .callout[data-callout="question"] .callout-title {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
 }
 
 html body .callout[data-callout="quote"] .callout-title {
@@ -876,7 +877,7 @@ html body .callout[data-callout="quote"] .callout-title {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
 }
 
 html body .callout[data-callout="success"] .callout-title {
@@ -884,7 +885,7 @@ html body .callout[data-callout="success"] .callout-title {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
 }
 
 html body .callout[data-callout="tip"] .callout-title {
@@ -892,7 +893,7 @@ html body .callout[data-callout="tip"] .callout-title {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
 }
 
 html body .callout[data-callout="todo"] .callout-title {
@@ -900,7 +901,7 @@ html body .callout[data-callout="todo"] .callout-title {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
 }
 
 html body .callout[data-callout="warning"] .callout-title {
@@ -963,8 +964,8 @@ html body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html body .search > .search-button {
-  background-color: rgb(17, 17, 19);
-  color: rgb(218, 231, 246);
+  background-color: var(--black-dark-1, rgb(17, 17, 19));
+  color: var(--text-normal, rgb(218, 231, 246));
   font-family: "Fira Code", monospace;
 }
 
@@ -980,44 +981,44 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
 }
 
 html body h1 {
-  color: rgb(135, 232, 206);
-  font-family: "Fira Code", monospace;
+  color: var(--accent, rgb(135, 232, 206));
+  font-family: var(--h1-font, "Fira Code", monospace);
 }
 
 html body h1.article-title {
-  font-size: 23.2992px;
+  font-size: var(--inline-title-size, 23.2992px);
 }
 
 html body h2 {
-  color: rgb(95, 88, 157);
-  font-family: "Fira Code", monospace;
+  color: var(--purple, rgb(95, 88, 157));
+  font-family: var(--h2-font, "Fira Code", monospace);
 }
 
 html body h2.page-title, html h2.page-title a {
-  font-family: "Fira Code", monospace;
+  font-family: var(--inline-title-font, "Fira Code", monospace);
 }
 
 html body h3 {
-  color: rgb(140, 134, 187);
-  font-family: "Fira Code", monospace;
+  color: var(--purple-light-3, rgb(140, 134, 187));
+  font-family: var(--h3-font, "Fira Code", monospace);
 }
 
 html body h4 {
-  color: rgb(95, 88, 157);
-  font-family: "Fira Code", monospace;
+  color: var(--purple, rgb(95, 88, 157));
+  font-family: var(--h4-font, "Fira Code", monospace);
 }
 
 html body h5 {
-  color: rgb(135, 232, 206);
-  font-family: "Fira Code", monospace;
+  color: var(--accent, rgb(135, 232, 206));
+  font-family: var(--h5-font, "Fira Code", monospace);
 }
 
 html body h6 {
-  color: rgb(95, 88, 157);
-  font-family: "Fira Code", monospace;
+  color: var(--purple, rgb(95, 88, 157));
+  font-family: var(--h6-font, "Fira Code", monospace);
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }`,
     explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: "Fira Code", monospace;
@@ -1027,20 +1028,20 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   font-family: "Fira Code", monospace;
 }`,
     footer: `html body footer {
-  background-color: rgb(17, 17, 19);
+  background-color: var(--editor-background, rgb(17, 17, 19));
   border-top-color: rgb(95, 88, 157);
   font-family: "Fira Code", monospace;
 }
 
 html body footer ul li a {
-  color: rgb(134, 152, 172);
+  color: var(--text-mute, rgb(134, 152, 172));
 }`,
     recentNotes: `html body .recent-notes > h3 {
   font-family: "Fira Code", monospace;
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(134, 152, 172);
+  color: var(--text-mute, rgb(134, 152, 172));
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1053,10 +1054,10 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 }
 
 html body li.section-li > .section > .desc > h3 > a {
-  color: rgb(134, 152, 172);
+  color: var(--text-mute, rgb(134, 152, 172));
 }`,
     bases: `html body .bases-table thead th {
-  color: rgb(135, 232, 206);
+  color: var(--accent, rgb(135, 232, 206));
 }`,
     properties: `html body .metadata {
   font-family: "Fira Code", monospace;
@@ -1070,18 +1071,18 @@ html body .note-properties-tags {
   border-radius: 25.2px;
 }`,
     stacked: `html body .stacked-page {
-  background-color: rgb(28, 28, 33);
+  background-color: var(--sidebar-background, rgb(28, 28, 33));
 }
 
 html body .stacked-page-header {
-  background-color: rgb(17, 17, 19);
+  background-color: var(--tab-background, rgb(17, 17, 19));
 }`,
     misc: `html body .navigation-progress {
-  background-color: rgb(17, 17, 19);
+  background-color: var(--editor-background, rgb(17, 17, 19));
 }
 
 html body .page-header h2.page-title {
-  color: rgb(218, 231, 246);
+  color: var(--editor-title, rgb(218, 231, 246));
 }
 
 html body abbr {
@@ -1089,7 +1090,7 @@ html body abbr {
 }
 
 html body kbd {
-  font-size: 12.6px;
+  font-size: var(--code-size, 12.6px);
   padding-bottom: 1.26px;
   padding-left: 3.15px;
   padding-right: 3.15px;
@@ -1118,7 +1119,7 @@ html body ul.tags > li {
   border-bottom-right-radius: 22.05px;
   border-top-left-radius: 22.05px;
   border-top-right-radius: 22.05px;
-  color: rgb(218, 231, 246);
+  color: var(--white, rgb(218, 231, 246));
 }`,
   },
   light: {},

@@ -52,44 +52,39 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --bodyFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
-  --codeFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --color-base-15: #1f1f1f;
   --color-base-23: #323232;
   --color-ghostwhite-rgb: 248, 248, 255;
   --color-whitesmoke-rgb: 245, 245, 245;
   --content-bgcolor: rgb(25, 25, 25);
   --default-border-color: rgba(255, 255, 255, 0.06);
-  --divider-color: #1f1f1f;
-  --file-header-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-default: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --divider-color: var(--color-base-15, #1f1f1f);
+  --file-header-font: var(--font-interface, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --font-default: var(--font-family-sans, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --font-family-iawriter-quattro: "iaWriterQuattro", mono;
   --font-family-ibm: "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-family-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-interface: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-mermaid: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-sans: var(--font-family-inter, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --font-mermaid: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --font-paragraph: .9rem;
   --font-smallest: 0.6rem;
-  --font-text: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --frontmatter-active-bg: rgba(255, 255, 255, 0.15);
   --frontmatter-active-color: rgba(0, 0, 0, 0.8);
   --frontmatter-atom-background: rgba(255, 255, 255, 0.04);
   --frontmatter-atom-color: rgba(255, 255, 255, 0.4);
   --frontmatter-font-size: .5rem;
-  --headerFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --heading-text-color: #fff;
   --link-hover-color: #fff;
   --link-unresolved-opacity: 0.85;
-  --list-indent: .8rem;
-  --metadata-input-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --metadata-label-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --metadata-input-font: var(--font-interface, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --metadata-label-font: var(--font-interface, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --nav-item-active: #FFF;
-  --nav-item-background-active: #252525;
-  --nav-item-background-hover: #2C2C2C;
-  --nav-item-color: #9B9B9B;
-  --nav-item-color-hover: #D7D7D7;
-  --pill-background: rgba(255, 255, 255, 0.1);
+  --nav-item-background-active: var(--background-modifier-hover, #252525);
+  --nav-item-background-hover: var(--background-modifier-hover, #2C2C2C);
+  --nav-item-color: var(--text-muted, #9B9B9B);
+  --nav-item-color-hover: var(--text-normal, #D7D7D7);
+  --pill-background: var(--tag-background, rgba(255, 255, 255, 0.1));
+  --ribbon-background: var(--color-base-20, #262626);
   --scrollbar-background: #272727;
   --scrollbar-color: #484C50;
   --setting-item-description-color: #838383;
@@ -100,10 +95,10 @@ export const theme: ThemeData = {
   --size-h4: .975rem;
   --size-h5: .862rem;
   --size-h6: .75rem;
-  --status-bar-border-color: #1f1f1f;
+  --status-bar-border-color: var(--divider-color, #1f1f1f);
   --tab-container-background2: rgba(0, 0, 0, 0.07);
-  --tab-header-active-background: rgb(25, 25, 25);
-  --tab-outline-color: #1f1f1f;
+  --tab-header-active-background: var(--content-bgcolor, rgb(25, 25, 25));
+  --tab-outline-color: var(--divider-color, #1f1f1f);
   --tab-radius-active: 0;
   --table-cell-fontsize: .85rem;
   --table-head-fontsize: .95rem;
@@ -117,14 +112,12 @@ export const theme: ThemeData = {
   --tag-7-bgcolor: rgba(189, 179, 251, 0.75);
   --tag-8-bgcolor: rgba(253, 255, 188, 0.75);
   --tag-9-bgcolor: rgba(228, 228, 228, 0.75);
-  --tag-background: rgba(255, 255, 255, 0.1);
-  --tag-color: #000;
+  --tag-color: var(--text-accent, #000);
   --tag-padding: 3px;
   --tag-padding-x: 6px;
   --tag-padding-y: 2px;
   --tag-radius: 5px;
-  --tag-size: .75rem;
-  --titleFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --tag-size: var(--font-smaller, .75rem);
   --width-body-content: 700px;
   --quartz-icon-color: currentColor;
 }
@@ -142,28 +135,28 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(31, 31, 31);
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
-  color: rgb(200, 200, 200);
+  color: var(--bold-color, rgb(200, 200, 200));
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(200, 200, 200) none 0px;
   text-decoration-color: rgb(200, 200, 200);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
-  color: rgb(200, 200, 200);
+  color: var(--italic-color, rgb(200, 200, 200));
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(200, 200, 200) none 0px;
   text-decoration-color: rgb(200, 200, 200);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
-  color: rgb(200, 200, 200);
+  color: var(--italic-color, rgb(200, 200, 200));
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(200, 200, 200) none 0px;
   text-decoration-color: rgb(200, 200, 200);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
-  color: rgb(200, 200, 200);
+  color: var(--bold-color, rgb(200, 200, 200));
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(200, 200, 200) none 0px;
   text-decoration-color: rgb(200, 200, 200);
@@ -210,7 +203,8 @@ html[saved-theme="dark"] body a.internal-link.broken {
 
 html[saved-theme="dark"] body table {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-top: 0px;
+  margin-bottom: calc(var(--heading-spacing) - 12px);
+  margin-top: calc(var(--heading-spacing) + 5px);
   width: 191px;
 }`,
     code: `html[saved-theme="dark"] body code {
@@ -624,7 +618,7 @@ html[saved-theme="dark"] body .callout > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   color: rgb(200, 200, 200);
 }
 
@@ -637,7 +631,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   color: rgb(200, 200, 200);
 }
 
@@ -650,7 +644,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   color: rgb(200, 200, 200);
 }
 
@@ -663,7 +657,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   color: rgb(200, 200, 200);
 }
 
@@ -676,7 +670,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   color: rgb(200, 200, 200);
 }
 
@@ -689,9 +683,8 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   background: rgb(255, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(255, 0, 0);
   color: rgb(200, 200, 200);
 }
 
@@ -704,7 +697,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   color: rgb(200, 200, 200);
 }
 
@@ -717,7 +710,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   color: rgb(200, 200, 200);
 }
 
@@ -730,7 +723,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
@@ -742,7 +735,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   color: rgb(200, 200, 200);
 }
 
@@ -755,7 +748,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   color: rgb(200, 200, 200);
 }
 
@@ -768,7 +761,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   color: rgb(200, 200, 200);
 }
 
@@ -781,7 +774,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   color: rgb(200, 200, 200);
 }
 
@@ -857,7 +850,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > * {
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -870,41 +863,41 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(255, 255, 255));
+  font-family: var(--h1-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  font-size: 23.2992px;
+  font-size: var(--inline-title-size, 23.2992px);
 }
 
 html[saved-theme="dark"] body h2 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(255, 255, 255));
+  font-family: var(--h2-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--inline-title-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h3 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(255, 255, 255));
+  font-family: var(--h3-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(255, 255, 255));
+  font-family: var(--h4-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(255, 255, 255));
+  font-family: var(--h5-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(255, 255, 255));
+  font-family: var(--h6-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body hr {
@@ -913,25 +906,25 @@ html[saved-theme="dark"] body hr {
   border-right-color: rgb(31, 31, 31);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container {
-  background-color: rgb(42, 42, 42);
+  background-color: var(--color-base-25, rgb(42, 42, 42));
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(155, 155, 155);
-  cursor: pointer;
+  color: var(--nav-item-color, rgb(155, 155, 155));
+  cursor: var(--cursor, pointer);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(155, 155, 155);
-  cursor: pointer;
+  color: var(--nav-item-color, rgb(155, 155, 155));
+  cursor: var(--cursor, pointer);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
-  cursor: pointer;
+  cursor: var(--cursor, pointer);
 }`,
     footer: `html[saved-theme="dark"] body footer {
   border-bottom-color: rgb(31, 31, 31);
@@ -945,7 +938,7 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(155, 155, 155);
+  color: var(--nav-item-color, rgb(155, 155, 155));
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -958,14 +951,14 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(155, 155, 155);
+  color: var(--nav-item-color, rgb(155, 155, 155));
 }
 
 html[saved-theme="dark"] body ul.section-ul {
-  background-color: rgb(42, 42, 42);
+  background-color: var(--color-base-25, rgb(42, 42, 42));
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
-  cursor: pointer;
+  cursor: var(--cursor, pointer);
 }`,
     breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-element p {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -980,9 +973,9 @@ html[saved-theme="dark"] body .metadata-properties {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-radius: 5px;
-  color: rgb(255, 255, 255);
+  color: var(--pill-color, rgb(255, 255, 255));
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(200, 200, 200);
@@ -1005,7 +998,7 @@ html[saved-theme="dark"] body input[type=text] {
 }
 
 html[saved-theme="dark"] body kbd {
-  font-size: 12.6px;
+  font-size: var(--code-size, 12.6px);
   padding-bottom: 1.26px;
   padding-left: 3.15px;
   padding-right: 3.15px;
@@ -1030,52 +1023,47 @@ html[saved-theme="dark"] body sup {
 }
 
 html[saved-theme="dark"] body ul.tags > li {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--tag-background, rgba(255, 255, 255, 0.1));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  color: rgb(0, 0, 0);
+  color: var(--tag-color, rgb(0, 0, 0));
 }`,
   },
   light: {
     base: `:root:root {
-  --bodyFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
-  --codeFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --color-base-15: #f0f0f0;
   --color-base-23: #eee;
   --content-bgcolor: rgb(255, 255, 255);
   --default-border-color: rgba(0, 0, 0, 0.06);
-  --divider-color: #f0f0f0;
-  --file-header-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --divider-color: var(--color-base-15, #f0f0f0);
+  --file-header-font: var(--font-interface, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --font-color-paragraph: #37352f;
-  --font-default: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-default: var(--font-family-sans, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --font-family-iawriter-quattro: "iaWriterQuattro", mono;
   --font-family-ibm: "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-family-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-interface: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-mermaid: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-sans: var(--font-family-inter, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --font-mermaid: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --font-paragraph: .9rem;
   --font-smallest: 0.6rem;
-  --font-text: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --frontmatter-active-bg: rgba(0, 0, 0, 0.15);
   --frontmatter-active-color: rgba(0, 0, 0, 0.8);
   --frontmatter-atom-background: rgba(0, 0, 0, 0.05);
   --frontmatter-atom-color: rgba(0, 0, 0, 0.5);
   --frontmatter-font-size: .5rem;
-  --headerFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --heading-text-color: #37352f;
   --link-hover-color: #000;
   --link-unresolved-opacity: 0.85;
-  --list-indent: .8rem;
-  --metadata-input-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --metadata-label-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --metadata-input-font: var(--font-interface, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --metadata-label-font: var(--font-interface, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
   --nav-item-active: #373530;
-  --nav-item-background-active: #EDEDEB;
-  --nav-item-background-hover: #E8E8E6;
-  --nav-item-color: #72716D;
-  --nav-item-color-hover: #6C6B67;
+  --nav-item-background-active: var(--background-modifier-hover, #EDEDEB);
+  --nav-item-background-hover: var(--background-modifier-hover, #E8E8E6);
+  --nav-item-color: var(--text-muted, #72716D);
+  --nav-item-color-hover: var(--text-normal, #6C6B67);
+  --ribbon-background: var(--color-base-20, #f6f6f6);
   --scrollbar-background: #EDECE9;
   --scrollbar-color: #D3D1CC;
   --setting-item-description-color: #7D7C78;
@@ -1086,10 +1074,10 @@ html[saved-theme="dark"] body ul.tags > li {
   --size-h4: .975rem;
   --size-h5: .862rem;
   --size-h6: .75rem;
-  --status-bar-border-color: #f0f0f0;
+  --status-bar-border-color: var(--divider-color, #f0f0f0);
   --tab-container-background2: rgba(0, 0, 0, 0.07);
   --tab-header-active-background: #fff;
-  --tab-outline-color: #f0f0f0;
+  --tab-outline-color: var(--divider-color, #f0f0f0);
   --tab-radius-active: 0;
   --table-cell-fontsize: .85rem;
   --table-head-fontsize: .95rem;
@@ -1103,13 +1091,12 @@ html[saved-theme="dark"] body ul.tags > li {
   --tag-7-bgcolor: rgb(189, 179, 251);
   --tag-8-bgcolor: rgb(253, 255, 188);
   --tag-9-bgcolor: rgb(228, 228, 228);
-  --tag-color: #000;
+  --tag-color: var(--text-accent, #000);
   --tag-padding: 3px;
   --tag-padding-x: 6px;
   --tag-padding-y: 2px;
   --tag-radius: 5px;
-  --tag-size: .75rem;
-  --titleFont: var(--font-text, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --tag-size: var(--font-smaller, .75rem);
   --width-body-content: 700px;
   --quartz-icon-color: currentColor;
 }
@@ -1173,7 +1160,8 @@ html[saved-theme="light"] body a.internal-link.broken {
 }`,
     tables: `html[saved-theme="light"] body table {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-top: 0px;
+  margin-bottom: calc(var(--heading-spacing) - 12px);
+  margin-top: calc(var(--heading-spacing) + 5px);
   width: 191px;
 }`,
     code: `html[saved-theme="light"] body code {
@@ -1556,7 +1544,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="chec
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-summary, 0, 191, 188);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title {
@@ -1564,7 +1552,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-bug, 233, 49, 71);
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
@@ -1572,7 +1560,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-error, 233, 49, 71);
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
@@ -1580,7 +1568,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
-  --callout-color: 120, 82, 238;
+  --callout-color: var(--callout-example, 120, 82, 238);
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
@@ -1588,7 +1576,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-fail, 233, 49, 71);
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
@@ -1596,9 +1584,8 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-info, 8, 109, 221);
   background: rgb(255, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(255, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
@@ -1606,7 +1593,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
@@ -1614,7 +1601,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-question, 236, 117, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title {
@@ -1622,7 +1609,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
@@ -1630,7 +1617,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
-  --callout-color: 8, 185, 78;
+  --callout-color: var(--callout-success, 8, 185, 78);
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
@@ -1638,7 +1625,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-tip, 0, 191, 188);
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
@@ -1646,7 +1633,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-todo, 8, 109, 221);
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
@@ -1654,7 +1641,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-warning, 236, 117, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
@@ -1737,41 +1724,41 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
-  color: rgb(55, 53, 47);
-  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(55, 53, 47));
+  font-family: var(--h1-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h1.article-title {
-  font-size: 23.2992px;
+  font-size: var(--inline-title-size, 23.2992px);
 }
 
 html[saved-theme="light"] body h2 {
-  color: rgb(55, 53, 47);
-  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(55, 53, 47));
+  font-family: var(--h2-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--inline-title-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h3 {
-  color: rgb(55, 53, 47);
-  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(55, 53, 47));
+  font-family: var(--h3-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
-  color: rgb(55, 53, 47);
-  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(55, 53, 47));
+  font-family: var(--h4-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
-  color: rgb(55, 53, 47);
-  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(55, 53, 47));
+  font-family: var(--h5-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
-  color: rgb(55, 53, 47);
-  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(55, 53, 47));
+  font-family: var(--h6-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body hr {
@@ -1780,25 +1767,25 @@ html[saved-theme="light"] body hr {
   border-right-color: rgb(240, 240, 240);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container {
-  background-color: rgb(250, 250, 250);
+  background-color: var(--color-base-10, rgb(250, 250, 250));
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(114, 113, 109);
-  cursor: pointer;
+  color: var(--nav-item-color, rgb(114, 113, 109));
+  cursor: var(--cursor, pointer);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(114, 113, 109);
-  cursor: pointer;
+  color: var(--nav-item-color, rgb(114, 113, 109));
+  cursor: var(--cursor, pointer);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
-  cursor: pointer;
+  cursor: var(--cursor, pointer);
 }`,
     footer: `html[saved-theme="light"] body footer {
   border-bottom-color: rgb(240, 240, 240);
@@ -1812,7 +1799,7 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(114, 113, 109);
+  color: var(--nav-item-color, rgb(114, 113, 109));
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1825,14 +1812,14 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(114, 113, 109);
+  color: var(--nav-item-color, rgb(114, 113, 109));
 }
 
 html[saved-theme="light"] body ul.section-ul {
-  background-color: rgb(250, 250, 250);
+  background-color: var(--color-base-10, rgb(250, 250, 250));
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
-  cursor: pointer;
+  cursor: var(--cursor, pointer);
 }`,
     breadcrumbs: `html[saved-theme="light"] body .breadcrumb-element p {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1848,7 +1835,7 @@ html[saved-theme="light"] body .metadata-properties {
 
 html[saved-theme="light"] body .note-properties-tags {
   border-radius: 5px;
-  color: rgb(0, 0, 0);
+  color: var(--pill-color, rgb(0, 0, 0));
 }`,
     misc: `html[saved-theme="light"] body .page-header h2.page-title {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1859,7 +1846,7 @@ html[saved-theme="light"] body input[type=text] {
 }
 
 html[saved-theme="light"] body kbd {
-  font-size: 12.6px;
+  font-size: var(--code-size, 12.6px);
   padding-bottom: 1.26px;
   padding-left: 3.15px;
   padding-right: 3.15px;
@@ -1879,7 +1866,7 @@ html[saved-theme="light"] body ul.tags > li {
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  color: rgb(0, 0, 0);
+  color: var(--tag-color, rgb(0, 0, 0));
 }`,
   },
   classSettings: {

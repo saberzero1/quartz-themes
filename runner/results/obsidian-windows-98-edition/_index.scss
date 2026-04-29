@@ -920,7 +920,7 @@ body {
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--background-secondary, rgb(255, 255, 255));
     color: rgb(218, 218, 218);
   }
 
@@ -1377,7 +1377,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: rgb(10, 36, 106);
+    background-color: var(--titlebar_active_1, rgb(10, 36, 106));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -1390,7 +1390,7 @@ body {
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-    background-color: rgb(10, 36, 106);
+    background-color: var(--titlebar_active_1, rgb(10, 36, 106));
     border: 1px dotted rgb(255, 255, 255);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1648,7 +1648,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(30, 30, 30));
+    background-color: var(--background-primary, rgb(30, 30, 30));
     border: 1px dotted rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -1674,10 +1674,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     box-shadow:
-      rgb(255, 255, 255) -1px -1px 0px 0px inset,
-      rgb(128, 128, 128) 1px 1px 0px 0px inset,
-      rgb(223, 223, 223) -2px -2px 0px 0px inset,
-      rgb(64, 64, 64) 2px 2px 0px 0px inset;
+      inset -1px -1px #fff,
+      inset 1px 1px var(--titlebar_inactive_1),
+      inset -2px -2px #dfdfdf,
+      inset 2px 2px var(--border);
   }
 
   .search > .search-container > .search-space > * {
@@ -1754,7 +1754,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(255, 255, 255);
     font-weight: 400;
-    background-color: rgb(10, 36, 106);
+    background-color: var(--titlebar_active_1, rgb(10, 36, 106));
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -1861,7 +1861,7 @@ body {
   }
 
   .callout {
-    --callout-color: 2, 122, 255;
+    --callout-color: var(--callout-default, 2, 122, 255);
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1908,7 +1908,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: 2, 122, 255;
+    --callout-color: var(--callout-default, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1958,7 +1958,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: 83, 223, 221;
+    --callout-color: var(--callout-summary, 83, 223, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2008,7 +2008,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: 2, 122, 255;
+    --callout-color: var(--callout-info, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2058,7 +2058,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: 2, 122, 255;
+    --callout-color: var(--callout-todo, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2108,7 +2108,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: 83, 223, 221;
+    --callout-color: var(--callout-tip, 83, 223, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2158,7 +2158,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: 68, 207, 110;
+    --callout-color: var(--callout-success, 68, 207, 110);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2208,7 +2208,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: 233, 151, 63;
+    --callout-color: var(--callout-question, 233, 151, 63);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2258,7 +2258,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: 233, 151, 63;
+    --callout-color: var(--callout-warning, 233, 151, 63);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2308,7 +2308,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: 251, 70, 76;
+    --callout-color: var(--callout-error, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2358,7 +2358,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: 251, 70, 76;
+    --callout-color: var(--callout-fail, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2408,7 +2408,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: 251, 70, 76;
+    --callout-color: var(--callout-bug, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2458,7 +2458,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: 168, 130, 255;
+    --callout-color: var(--callout-example, 168, 130, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2508,7 +2508,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: 158, 158, 158;
+    --callout-color: var(--callout-quote, 158, 158, 158);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3220,7 +3220,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: rgb(0, 0, 0);
+    color: var(--nav-item-color, rgb(0, 0, 0));
     cursor: var(--cursor, default);
     font-family: "Pixelated MS Sans Serif";
     font-weight: var(--nav-item-weight, 400);
@@ -3228,7 +3228,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: rgb(0, 0, 0);
+    color: var(--nav-item-color, rgb(0, 0, 0));
     cursor: var(--cursor, default);
     font-family: "Pixelated MS Sans Serif";
     font-weight: var(--nav-item-weight, 400);
@@ -3328,8 +3328,8 @@ body {
   }
 
   footer {
-    background-color: rgb(212, 208, 200);
-    color: rgb(0, 0, 0);
+    background-color: var(--window, rgb(212, 208, 200));
+    color: var(--status-bar-text-color, rgb(0, 0, 0));
     font-family: "Pixelated MS Sans Serif";
     border-color: rgb(0, 0, 0) rgb(54, 54, 54) rgb(54, 54, 54);
     border-style: solid;
@@ -3376,7 +3376,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: rgb(0, 0, 0);
+    color: var(--nav-item-color, rgb(0, 0, 0));
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3405,7 +3405,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: rgb(0, 0, 0);
+    color: var(--nav-item-color, rgb(0, 0, 0));
   }
 
   li.section-li > .section .meta {
@@ -3460,7 +3460,7 @@ body {
   }
 
   .navigation-progress {
-    background-color: rgb(212, 208, 200);
+    background-color: var(--window, rgb(212, 208, 200));
   }
 
   .page-header h2.page-title {
@@ -3599,11 +3599,11 @@ body {
 
   .stacked-page {
     border-color: rgb(218, 218, 218);
-    background-color: rgb(255, 255, 255);
+    background-color: var(--background-secondary, rgb(255, 255, 255));
   }
 
   .stacked-page-header {
-    background-color: rgb(212, 208, 200);
+    background-color: var(--window, rgb(212, 208, 200));
   }
 
   .stacked-page.active {
@@ -3621,10 +3621,10 @@ body {
     --tooltip: rgb(255, 255, 225);
     --window: #d4d0c8;
     box-shadow:
-      rgb(64, 64, 64) -1px -1px 0px 0px inset,
-      rgb(255, 255, 255) 1px 1px 0px 0px inset,
-      rgb(212, 208, 200) -2px -2px 0px 0px inset,
-      rgb(255, 255, 255) 2px 2px 0px 0px inset;
+      inset -1px -1px var(--border),
+      inset 1px 1px #fff,
+      inset -2px -2px var(--window),
+      inset 2px 2px #fff;
   }
 
   --current-page-slug: attr(data-slug raw-string);

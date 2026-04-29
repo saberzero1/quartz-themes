@@ -248,7 +248,7 @@ body.theme-light {
   ) !important;
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
-  --divider-color: #f0f0f0 !important;
+  --divider-color: var(--color-base-15, #f0f0f0) !important;
   --divider-color-hover: var(
     --interactive-accent,
     hsl(257, 88.88%, 70.95%)
@@ -273,8 +273,17 @@ body.theme-light {
   ) !important;
   --file-header-border: var(--border-width, 1px solid transparent) solid
     transparent !important;
-  --file-header-font:
-    "??", "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --file-header-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "??",
+    "Inter",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  ) !important;
   --file-header-font-size: var(--font-ui-small, 13px) !important;
   --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
   --file-margins-x: var(--size-4-8, 32px) !important;
@@ -284,9 +293,18 @@ body.theme-light {
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-interface:
-    "??", "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-mermaid:
-    "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    var(--font-interface-override), var(--font-interface-theme),
+    var(--default-font, "??"), var(--font-default) !important;
+  --font-mermaid: var(
+    --font-text,
+    "??",
+    "??",
+    "Inter",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  ) !important;
   --font-monospace:
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default) !important;
@@ -294,7 +312,7 @@ body.theme-light {
     var(--font-print-override), var(--font-text-override),
     var(--font-text-theme), "Arial" !important;
   --font-text:
-    "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-weight: var(--font-normal, 400) !important;
   --footnote-divider-color: var(--metadata-divider-color, #e0e0e0) !important;
   --footnote-divider-color-active: var(
@@ -382,7 +400,7 @@ body.theme-light {
     0.3
   ) !important;
   --link-weight: var(--font-weight, 400) !important;
-  --list-indent: 0.8rem !important;
+  --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-marker-color: var(--text-faint, #ababab) !important;
   --list-marker-color-collapsed: var(
     --text-accent,
@@ -416,8 +434,17 @@ body.theme-light {
     --background-modifier-hover,
     rgba(0, 0, 0, 0.067)
   ) !important;
-  --metadata-input-font:
-    "??", "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --metadata-input-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "??",
+    "Inter",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  ) !important;
   --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
@@ -426,8 +453,17 @@ body.theme-light {
     --background-modifier-hover,
     rgba(0, 0, 0, 0.067)
   ) !important;
-  --metadata-label-font:
-    "??", "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --metadata-label-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "??",
+    "Inter",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  ) !important;
   --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
   --metadata-label-text-color: var(--text-muted, #5c5c5c) !important;
   --metadata-label-text-color-hover: var(--text-muted, #5c5c5c) !important;
@@ -465,21 +501,27 @@ body.theme-light {
     rgba(0, 0, 0, 0.12)
   ) !important;
   --nav-indentation-guide-width: var(--indentation-guide-width, 1px) !important;
-  --nav-item-background-active: #ededeb !important;
-  --nav-item-background-hover: #e8e8e6 !important;
+  --nav-item-background-active: var(
+    --background-modifier-hover,
+    #ededeb
+  ) !important;
+  --nav-item-background-hover: var(
+    --background-modifier-hover,
+    #e8e8e6
+  ) !important;
   --nav-item-background-selected: hsla(
     var(--color-accent-hsl),
     0.15
   ) !important;
   --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
   --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
-  --nav-item-color: #72716d !important;
+  --nav-item-color: var(--text-muted, #72716d) !important;
   --nav-item-color-active: var(--text-normal, #222222) !important;
   --nav-item-color-highlighted: var(
     --text-accent,
     hsl(258, 88%, 66%)
   ) !important;
-  --nav-item-color-hover: #6c6b67 !important;
+  --nav-item-color-hover: var(--text-normal, #6c6b67) !important;
   --nav-item-color-selected: var(--text-normal, #222222) !important;
   --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
@@ -528,7 +570,7 @@ body.theme-light {
     --blur-s,
     blur(6px) saturate(1.5) brightness(1.15)
   ) !important;
-  --ribbon-background: var(--background-secondary, #f6f6f6) !important;
+  --ribbon-background: var(--color-base-20, #f6f6f6) !important;
   --ribbon-background-collapsed: var(--background-primary, #ffffff) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1)
     var(--size-4-3, 8px 4px 12px) !important;
@@ -604,7 +646,7 @@ body.theme-light {
     #e0e0e0
   ) !important;
   --status-bar-background: var(--background-secondary, #f6f6f6) !important;
-  --status-bar-border-color: #f0f0f0 !important;
+  --status-bar-border-color: var(--divider-color, #f0f0f0) !important;
   --status-bar-border-width: var(--border-width) 0 0
     var(--border-width, 1px 0 0 1px) !important;
   --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
@@ -627,7 +669,7 @@ body.theme-light {
     #d4d4d4
   ) !important;
   --tab-font-size: var(--font-ui-small, 13px) !important;
-  --tab-outline-color: #f0f0f0 !important;
+  --tab-outline-color: var(--divider-color, #f0f0f0) !important;
   --tab-radius: var(--radius-s, 4px) !important;
   --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
   --tab-stacked-header-width: var(--header-height, 40px) !important;
@@ -703,9 +745,9 @@ body.theme-light {
     var(--interactive-accent-hsl),
     0.15
   ) !important;
-  --tag-color: #000 !important;
+  --tag-color: var(--text-accent, #000) !important;
   --tag-color-hover: var(--text-accent, hsl(258, 88%, 66%)) !important;
-  --tag-size: 0.75rem !important;
+  --tag-size: var(--font-smaller, 0.75rem) !important;
   --text-accent: var(--color-accent, hsl(258, 88%, 66%)) !important;
   --text-accent-hover: var(
     --color-accent-2,
@@ -862,8 +904,14 @@ body.theme-light {
   --file-line-width: 700px !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default:
-    "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --font-default: var(
+    --font-family-sans,
+    "Inter",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  ) !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface-override: "??" !important;
@@ -1197,6 +1245,15 @@ body.theme-light {
   --color-base-15: #f0f0f0 !important;
   --scrollbar-color: #d3d1cc !important;
   --nav-item-active: #373530 !important;
+  --font-family-sans: var(
+    --font-family-inter,
+    "Inter",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  ) !important;
+  --tab-header-active-background: #fff !important;
   --color-base-23: #eee !important;
   --content-bgcolor: rgb(255, 255, 255) !important;
   --default-border-color: rgba(0, 0, 0, 0.06) !important;
@@ -1204,8 +1261,6 @@ body.theme-light {
   --font-family-ibm:
     "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --font-family-inter:
-    "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-family-sans:
     "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --font-paragraph: 0.9rem !important;
   --frontmatter-active-bg: rgba(0, 0, 0, 0.15) !important;
@@ -1225,7 +1280,6 @@ body.theme-light {
   --size-h5: 0.862rem !important;
   --size-h6: 0.75rem !important;
   --tab-container-background2: rgba(0, 0, 0, 0.07) !important;
-  --tab-header-active-background: #fff !important;
   --table-cell-fontsize: 0.85rem !important;
   --table-head-fontsize: 0.95rem !important;
   --tag-1-bgcolor: rgb(255, 214, 170) !important;
@@ -1455,7 +1509,7 @@ body.theme-dark {
   ) !important;
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
-  --divider-color: #1f1f1f !important;
+  --divider-color: var(--color-base-15, #1f1f1f) !important;
   --divider-color-hover: var(
     --interactive-accent,
     hsl(258, 88%, 66%)
@@ -1480,8 +1534,17 @@ body.theme-dark {
   ) !important;
   --file-header-border: var(--border-width, 1px solid transparent) solid
     transparent !important;
-  --file-header-font:
-    "??", "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --file-header-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "??",
+    "Inter",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  ) !important;
   --file-header-font-size: var(--font-ui-small, 13px) !important;
   --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
   --file-margins-x: var(--size-4-8, 32px) !important;
@@ -1491,9 +1554,18 @@ body.theme-dark {
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-interface:
-    "??", "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-mermaid:
-    "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    var(--font-interface-override), var(--font-interface-theme),
+    var(--default-font, "??"), var(--font-default) !important;
+  --font-mermaid: var(
+    --font-text,
+    "??",
+    "??",
+    "Inter",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  ) !important;
   --font-monospace:
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default) !important;
@@ -1501,7 +1573,7 @@ body.theme-dark {
     var(--font-print-override), var(--font-text-override),
     var(--font-text-theme), "Arial" !important;
   --font-text:
-    "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-weight: var(--font-normal, 400) !important;
   --footnote-divider-color: var(--metadata-divider-color, #363636) !important;
   --footnote-divider-color-active: var(
@@ -1589,7 +1661,7 @@ body.theme-dark {
     0.3
   ) !important;
   --link-weight: var(--font-weight, 400) !important;
-  --list-indent: 0.8rem !important;
+  --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-marker-color: var(--text-faint, #666666) !important;
   --list-marker-color-collapsed: var(
     --text-accent,
@@ -1623,8 +1695,17 @@ body.theme-dark {
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
   ) !important;
-  --metadata-input-font:
-    "??", "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --metadata-input-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "??",
+    "Inter",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  ) !important;
   --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
@@ -1633,8 +1714,17 @@ body.theme-dark {
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
   ) !important;
-  --metadata-label-font:
-    "??", "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --metadata-label-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "??",
+    "Inter",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  ) !important;
   --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
   --metadata-label-text-color: var(--text-muted, #b3b3b3) !important;
   --metadata-label-text-color-hover: var(--text-muted, #b3b3b3) !important;
@@ -1672,21 +1762,27 @@ body.theme-dark {
     rgba(255, 255, 255, 0.12)
   ) !important;
   --nav-indentation-guide-width: var(--indentation-guide-width, 1px) !important;
-  --nav-item-background-active: #252525 !important;
-  --nav-item-background-hover: #2c2c2c !important;
+  --nav-item-background-active: var(
+    --background-modifier-hover,
+    #252525
+  ) !important;
+  --nav-item-background-hover: var(
+    --background-modifier-hover,
+    #2c2c2c
+  ) !important;
   --nav-item-background-selected: hsla(
     var(--color-accent-hsl),
     0.15
   ) !important;
   --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
   --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
-  --nav-item-color: #9b9b9b !important;
+  --nav-item-color: var(--text-muted, #9b9b9b) !important;
   --nav-item-color-active: var(--text-normal, #dadada) !important;
   --nav-item-color-highlighted: var(
     --text-accent,
     hsl(255, 89.76%, 75.9%)
   ) !important;
-  --nav-item-color-hover: #d7d7d7 !important;
+  --nav-item-color-hover: var(--text-normal, #d7d7d7) !important;
   --nav-item-color-selected: var(--text-normal, #dadada) !important;
   --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
@@ -1736,7 +1832,7 @@ body.theme-dark {
     --blur-s,
     blur(6px) saturate(1.5) brightness(1.15)
   ) !important;
-  --ribbon-background: var(--background-secondary, #262626) !important;
+  --ribbon-background: var(--color-base-20, #262626) !important;
   --ribbon-background-collapsed: var(--background-primary, #1e1e1e) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1)
     var(--size-4-3, 8px 4px 12px) !important;
@@ -1812,7 +1908,7 @@ body.theme-dark {
     #363636
   ) !important;
   --status-bar-background: var(--background-secondary, #262626) !important;
-  --status-bar-border-color: #1f1f1f !important;
+  --status-bar-border-color: var(--divider-color, #1f1f1f) !important;
   --status-bar-border-width: var(--border-width) 0 0
     var(--border-width, 1px 0 0 1px) !important;
   --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
@@ -1835,7 +1931,7 @@ body.theme-dark {
     #3f3f3f
   ) !important;
   --tab-font-size: var(--font-ui-small, 13px) !important;
-  --tab-outline-color: #1f1f1f !important;
+  --tab-outline-color: var(--divider-color, #1f1f1f) !important;
   --tab-radius: var(--radius-s, 4px) !important;
   --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
   --tab-stacked-header-width: var(--header-height, 40px) !important;
@@ -1904,16 +2000,16 @@ body.theme-dark {
     hsl(258, 88%, 66%)
   ) !important;
   --table-text-size: var(--font-text-size, 16px) !important;
-  --tag-background: rgba(255, 255, 255, 0.1) !important;
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.1) !important;
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2) !important;
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15) !important;
   --tag-border-color-hover: hsla(
     var(--interactive-accent-hsl),
     0.15
   ) !important;
-  --tag-color: #000 !important;
+  --tag-color: var(--text-accent, #000) !important;
   --tag-color-hover: var(--text-accent, hsl(255, 89.76%, 75.9%)) !important;
-  --tag-size: 0.75rem !important;
+  --tag-size: var(--font-smaller, 0.75rem) !important;
   --text-accent: var(--color-accent-1, hsl(255, 89.76%, 75.9%)) !important;
   --text-accent-hover: var(
     --color-accent-2,
@@ -1955,7 +2051,7 @@ body.theme-dark {
   --input-height: 30px !important;
   --input-border-width-focus: 2px !important;
   --input-radius: 5px !important;
-  --pill-background: rgba(255, 255, 255, 0.1) !important;
+  --pill-background: var(--tag-background, rgba(255, 255, 255, 0.1)) !important;
   --pill-background-hover: transparent !important;
   --pill-focus-left-adjust: -4px !important;
   --pill-focus-width: calc(100% + 6px) !important;
@@ -2070,8 +2166,14 @@ body.theme-dark {
   --file-line-width: 700px !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default:
-    "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --font-default: var(
+    --font-family-sans,
+    "Inter",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  ) !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface-override: "??" !important;
@@ -2389,6 +2491,18 @@ body.theme-dark {
   --color-base-15: #1f1f1f !important;
   --scrollbar-color: #484c50 !important;
   --nav-item-active: #fff !important;
+  --font-family-sans: var(
+    --font-family-inter,
+    "Inter",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  ) !important;
+  --tab-header-active-background: var(
+    --content-bgcolor,
+    rgb(25, 25, 25)
+  ) !important;
   --color-base-23: #323232 !important;
   --color-ghostwhite-rgb: 248, 248, 255 !important;
   --color-whitesmoke-rgb: 245, 245, 245 !important;
@@ -2398,8 +2512,6 @@ body.theme-dark {
   --font-family-ibm:
     "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --font-family-inter:
-    "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-family-sans:
     "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --font-paragraph: 0.9rem !important;
   --frontmatter-active-bg: rgba(255, 255, 255, 0.15) !important;
@@ -2419,7 +2531,6 @@ body.theme-dark {
   --size-h5: 0.862rem !important;
   --size-h6: 0.75rem !important;
   --tab-container-background2: rgba(0, 0, 0, 0.07) !important;
-  --tab-header-active-background: rgb(25, 25, 25) !important;
   --table-cell-fontsize: 0.85rem !important;
   --table-head-fontsize: 0.95rem !important;
   --tag-1-bgcolor: rgba(255, 214, 170, 0.75) !important;
@@ -3043,33 +3154,75 @@ body body.theme-light div.search-results .suggestion-item.is-selected {
   color: rgb(34, 34, 34);
 }
 body body.theme-light .published-container .markdown-rendered h1 {
-  color: rgb(55, 53, 47);
-  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(55, 53, 47));
+  font-family: var(
+    --h1-font,
+    Inter,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h2 {
-  color: rgb(55, 53, 47);
-  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(55, 53, 47));
+  font-family: var(
+    --h2-font,
+    Inter,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h3 {
-  color: rgb(55, 53, 47);
-  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(55, 53, 47));
+  font-family: var(
+    --h3-font,
+    Inter,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h4 {
-  color: rgb(55, 53, 47);
-  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(55, 53, 47));
+  font-family: var(
+    --h4-font,
+    Inter,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h5 {
-  color: rgb(55, 53, 47);
-  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(55, 53, 47));
+  font-family: var(
+    --h5-font,
+    Inter,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h6 {
-  color: rgb(55, 53, 47);
-  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(55, 53, 47));
+  font-family: var(
+    --h6-font,
+    Inter,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  );
   text-shadow: none;
 }
 body
@@ -3130,7 +3283,7 @@ body body.theme-light body {
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   border: 0px solid rgba(8, 109, 221, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -3180,7 +3333,7 @@ body body.theme-light .callout > .callout-content {
   padding: 0px;
 }
 body body.theme-light .callout[data-callout="abstract"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-summary, 0, 191, 188);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3217,8 +3370,8 @@ body body.theme-light .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="info"] {
-  --callout-color: 8, 109, 221;
-  background-color: rgb(255, 0, 0);
+  --callout-color: var(--callout-info, 8, 109, 221);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgb(255, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3254,7 +3407,7 @@ body body.theme-light .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="todo"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-todo, 8, 109, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3291,7 +3444,7 @@ body body.theme-light .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="tip"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-tip, 0, 191, 188);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3328,7 +3481,7 @@ body body.theme-light .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="success"] {
-  --callout-color: 8, 185, 78;
+  --callout-color: var(--callout-success, 8, 185, 78);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3365,7 +3518,7 @@ body body.theme-light .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="question"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-question, 236, 117, 0);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3402,7 +3555,7 @@ body body.theme-light .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="warning"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-warning, 236, 117, 0);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3439,7 +3592,7 @@ body body.theme-light .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="danger"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-error, 233, 49, 71);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3476,7 +3629,7 @@ body body.theme-light .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="failure"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-fail, 233, 49, 71);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3513,7 +3666,7 @@ body body.theme-light .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="bug"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-bug, 233, 49, 71);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3550,7 +3703,7 @@ body body.theme-light .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="example"] {
-  --callout-color: 120, 82, 238;
+  --callout-color: var(--callout-example, 120, 82, 238);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto
@@ -3587,7 +3740,7 @@ body body.theme-light .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -3639,7 +3792,10 @@ body body.theme-light .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 0px;
+  margin-top: calc(var(--heading-spacing) + 5px);
+  margin-bottom: calc(var(--heading-spacing) - 12px);
+  margin-left: 0px;
+  margin-right: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -3970,7 +4126,7 @@ body body.theme-light kbd {
     "Source Code Pro",
     monospace
   );
-  font-size: 12.6px;
+  font-size: var(--code-size, 12.6px);
   border: 0px rgb(34, 34, 34);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -4173,8 +4329,8 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(114, 113, 109);
-  cursor: pointer;
+  color: var(--nav-item-color, rgb(114, 113, 109));
+  cursor: var(--cursor, pointer);
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: var(--nav-item-weight, 400);
   text-decoration: rgb(34, 34, 34);
@@ -4187,8 +4343,8 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(114, 113, 109);
-  cursor: pointer;
+  color: var(--nav-item-color, rgb(114, 113, 109));
+  cursor: var(--cursor, pointer);
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: var(--nav-item-weight, 400);
   text-decoration: rgb(34, 34, 34);
@@ -4196,7 +4352,7 @@ body
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
   color: var(--icon-color, rgb(92, 92, 92));
-  cursor: pointer;
+  cursor: var(--cursor, pointer);
   border-color: rgb(92, 92, 92);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -4235,14 +4391,14 @@ body body.theme-light .nav-files-container .tree-item {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light .nav-file-title {
-  color: rgb(114, 113, 109);
+  color: var(--nav-item-color, rgb(114, 113, 109));
 }
 body body.theme-light .nav-file-title-content {
   color: rgb(114, 113, 109);
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body body.theme-light .nav-files-container {
-  background-color: rgb(250, 250, 250);
+  background-color: var(--color-base-10, rgb(250, 250, 250));
   border-color: rgb(34, 34, 34);
   border-width: 0px;
   border-top-left-radius: 0px;
@@ -4253,7 +4409,7 @@ body body.theme-light .nav-files-container {
 body body.theme-light .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
   color: var(--icon-color, rgb(92, 92, 92));
-  cursor: pointer;
+  cursor: var(--cursor, pointer);
   border-color: rgb(92, 92, 92);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -4367,7 +4523,7 @@ body body.theme-light pre > code [data-highlighted-chars] {
 }
 body body.theme-light .tag {
   background-color: var(--tag-background, rgba(138, 92, 245, 0.1));
-  color: rgb(0, 0, 0);
+  color: var(--tag-color, rgb(0, 0, 0));
   border: 0px solid rgba(138, 92, 245, 0.15);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -4509,7 +4665,7 @@ body body.theme-dark .markdown-rendered p {
 }
 body body.theme-dark strong {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(200, 200, 200);
+  color: var(--bold-color, rgb(200, 200, 200));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -4535,7 +4691,7 @@ body body.theme-dark strong {
 }
 body body.theme-dark b {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(200, 200, 200);
+  color: var(--bold-color, rgb(200, 200, 200));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -4561,7 +4717,7 @@ body body.theme-dark b {
 }
 body body.theme-dark em {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(200, 200, 200);
+  color: var(--italic-color, rgb(200, 200, 200));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -4587,7 +4743,7 @@ body body.theme-dark em {
 }
 body body.theme-dark i {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(200, 200, 200);
+  color: var(--italic-color, rgb(200, 200, 200));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -4715,7 +4871,7 @@ body body.theme-dark .markdown-rendered hr {
 }
 body body.theme-dark div.multi-select-pill {
   align-items: normal;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--pill-background, rgba(0, 0, 0, 0));
   display: flex;
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: var(--pill-weight, 400);
@@ -4984,33 +5140,75 @@ body body.theme-dark div.search-results .suggestion-item.is-selected {
   color: rgb(218, 218, 218);
 }
 body body.theme-dark .published-container .markdown-rendered h1 {
-  color: rgb(255, 255, 255);
-  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(255, 255, 255));
+  font-family: var(
+    --h1-font,
+    Inter,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
-  color: rgb(255, 255, 255);
-  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(255, 255, 255));
+  font-family: var(
+    --h2-font,
+    Inter,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
-  color: rgb(255, 255, 255);
-  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(255, 255, 255));
+  font-family: var(
+    --h3-font,
+    Inter,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
-  color: rgb(255, 255, 255);
-  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(255, 255, 255));
+  font-family: var(
+    --h4-font,
+    Inter,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
-  color: rgb(255, 255, 255);
-  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(255, 255, 255));
+  font-family: var(
+    --h5-font,
+    Inter,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  );
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
-  color: rgb(255, 255, 255);
-  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--heading-text-color, rgb(255, 255, 255));
+  font-family: var(
+    --h6-font,
+    Inter,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif
+  );
   text-shadow: none;
 }
 body
@@ -5071,7 +5269,7 @@ body body.theme-dark body {
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border: 0px solid rgba(2, 122, 255, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -5121,7 +5319,7 @@ body body.theme-dark .callout > .callout-content {
   padding: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -5158,8 +5356,8 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
-  background-color: rgb(255, 0, 0);
+  --callout-color: var(--callout-info, 2, 122, 255);
+  background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgb(255, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5195,7 +5393,7 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5232,7 +5430,7 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -5269,7 +5467,7 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
@@ -5306,7 +5504,7 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -5343,7 +5541,7 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -5380,7 +5578,7 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5417,7 +5615,7 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5454,7 +5652,7 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5491,7 +5689,7 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
@@ -5528,7 +5726,7 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -5580,7 +5778,10 @@ body body.theme-dark .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 0px;
+  margin-top: calc(var(--heading-spacing) + 5px);
+  margin-bottom: calc(var(--heading-spacing) - 12px);
+  margin-left: 0px;
+  margin-right: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -5909,7 +6110,7 @@ body body.theme-dark kbd {
     "Source Code Pro",
     monospace
   );
-  font-size: 12.6px;
+  font-size: var(--code-size, 12.6px);
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -6112,8 +6313,8 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(155, 155, 155);
-  cursor: pointer;
+  color: var(--nav-item-color, rgb(155, 155, 155));
+  cursor: var(--cursor, pointer);
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: var(--nav-item-weight, 400);
   text-decoration: rgb(218, 218, 218);
@@ -6126,8 +6327,8 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(155, 155, 155);
-  cursor: pointer;
+  color: var(--nav-item-color, rgb(155, 155, 155));
+  cursor: var(--cursor, pointer);
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: var(--nav-item-weight, 400);
   text-decoration: rgb(218, 218, 218);
@@ -6135,7 +6336,7 @@ body
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
   color: var(--icon-color, rgb(179, 179, 179));
-  cursor: pointer;
+  cursor: var(--cursor, pointer);
   border-color: rgb(179, 179, 179);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -6174,14 +6375,14 @@ body body.theme-dark .nav-files-container .tree-item {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .nav-file-title {
-  color: rgb(155, 155, 155);
+  color: var(--nav-item-color, rgb(155, 155, 155));
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(155, 155, 155);
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body body.theme-dark .nav-files-container {
-  background-color: rgb(42, 42, 42);
+  background-color: var(--color-base-25, rgb(42, 42, 42));
   border-color: rgb(218, 218, 218);
   border-width: 0px;
   border-top-left-radius: 0px;
@@ -6192,7 +6393,7 @@ body body.theme-dark .nav-files-container {
 body body.theme-dark .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
   color: var(--icon-color, rgb(179, 179, 179));
-  cursor: pointer;
+  cursor: var(--cursor, pointer);
   border-color: rgb(179, 179, 179);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -6305,8 +6506,8 @@ body body.theme-dark pre > code [data-highlighted-chars] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .tag {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: rgb(0, 0, 0);
+  background-color: var(--tag-background, rgba(255, 255, 255, 0.1));
+  color: var(--tag-color, rgb(0, 0, 0));
   border: 0px solid rgba(138, 92, 245, 0.15);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;

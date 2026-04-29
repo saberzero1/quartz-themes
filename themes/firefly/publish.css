@@ -1683,7 +1683,7 @@ body {
 }
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(111, 161, 255);
+  color: var(--color-text-link, rgb(111, 161, 255));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -1709,7 +1709,7 @@ body body.theme-dark .markdown-rendered a.external-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(111, 161, 255);
+  color: var(--color-text-link, rgb(111, 161, 255));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -1735,7 +1735,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--link-unresolved-color, rgb(166, 138, 249));
+  color: var(--color-text-link, rgb(166, 138, 249));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -1816,13 +1816,13 @@ body body.theme-dark .markdown-rendered p {
 }
 body body.theme-dark strong {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(235, 239, 247);
+  color: var(--color-text-strong, rgb(235, 239, 247));
   cursor: grab;
-  filter: drop-shadow(rgb(192, 205, 243) 0px 0px 3px);
+  filter: drop-shadow(0 0 3px var(--color-text-paragraph));
   backdrop-filter: none;
   box-shadow: none;
   font-family: Inter, sans-serif;
-  font-weight: 400;
+  font-weight: calc(var(--font-weight) + var(--bold-modifier));
   outline: rgb(235, 239, 247) none 0px;
   text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 239, 247);
@@ -1842,13 +1842,13 @@ body body.theme-dark strong {
 }
 body body.theme-dark b {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(235, 239, 247);
+  color: var(--color-text-strong, rgb(235, 239, 247));
   cursor: grab;
-  filter: drop-shadow(rgb(192, 205, 243) 0px 0px 3px);
+  filter: drop-shadow(0 0 3px var(--color-text-paragraph));
   backdrop-filter: none;
   box-shadow: none;
   font-family: Inter, sans-serif;
-  font-weight: 400;
+  font-weight: calc(var(--font-weight) + var(--bold-modifier));
   outline: rgb(235, 239, 247) none 0px;
   text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 239, 247);
@@ -1868,7 +1868,7 @@ body body.theme-dark b {
 }
 body body.theme-dark em {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(192, 205, 243);
+  color: var(--italic-color, rgb(192, 205, 243));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -1894,7 +1894,7 @@ body body.theme-dark em {
 }
 body body.theme-dark i {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(192, 205, 243);
+  color: var(--italic-color, rgb(192, 205, 243));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -2054,7 +2054,7 @@ body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
   color: rgb(166, 138, 249);
 }
 body body.theme-dark .markdown-rendered ul > li {
-  color: rgb(192, 205, 243);
+  color: var(--color-text-paragraph, rgb(192, 205, 243));
   text-align: start;
 }
 body body.theme-dark .markdown-rendered ul > li::marker {
@@ -2073,7 +2073,7 @@ body body.theme-dark .markdown-rendered ul > li::marker {
   transform: none;
 }
 body body.theme-dark .markdown-rendered ol > li {
-  color: rgb(192, 205, 243);
+  color: var(--color-text-paragraph, rgb(192, 205, 243));
   text-align: start;
 }
 body body.theme-dark .markdown-rendered ol > li::marker {
@@ -2092,7 +2092,7 @@ body body.theme-dark .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-dark .markdown-rendered code {
-  background-color: rgb(5, 6, 8);
+  background-color: var(--color-text-code-background, rgb(5, 6, 8));
   border: 0px solid rgb(0, 201, 167);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -2102,7 +2102,7 @@ body body.theme-dark .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(0, 201, 167);
+  color: var(--color-text-inline-code, rgb(0, 201, 167));
   font-family: var(
     --font-monospace,
     ui-monospace,
@@ -2173,7 +2173,7 @@ body
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  width: 22px;
+  width: var(--checkbox-size, 22px);
   transition: box-shadow 0.15s ease-in-out;
   position: relative;
   top: auto;
@@ -2211,7 +2211,7 @@ body body.theme-dark .markdown-rendered blockquote {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-style: italic;
+  font-style: var(--blockquote-font-style, italic);
   padding-bottom: 0px;
   padding-top: 0px;
   padding-inline-start: 0px;
@@ -2219,7 +2219,7 @@ body body.theme-dark .markdown-rendered blockquote {
   margin-inline-end: 40px;
 }
 body body.theme-dark .footnote-backref {
-  color: rgb(111, 161, 255);
+  color: var(--color-text-link, rgb(111, 161, 255));
   text-decoration: underline;
 }
 body body.theme-dark .site-body-left-column input.search-bar {
@@ -2343,33 +2343,33 @@ body body.theme-dark div.search-results .suggestion-item.is-selected {
   color: rgb(218, 218, 218);
 }
 body body.theme-dark .published-container .markdown-rendered h1 {
-  color: rgb(255, 111, 205);
-  font-family: Inter, sans-serif;
+  color: var(--color-title-h1, rgb(255, 111, 205));
+  font-family: var(--color-family-primary, Inter, sans-serif);
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
-  color: rgb(255, 111, 145);
-  font-family: Inter, sans-serif;
+  color: var(--color-title-h2, rgb(255, 111, 145));
+  font-family: var(--color-family-primary, Inter, sans-serif);
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
-  color: rgb(255, 184, 108);
-  font-family: Inter, sans-serif;
+  color: var(--color-title-h3, rgb(255, 184, 108));
+  font-family: var(--color-family-primary, Inter, sans-serif);
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
-  color: rgb(255, 240, 108);
-  font-family: Inter, sans-serif;
+  color: var(--color-title-h4, rgb(255, 240, 108));
+  font-family: var(--color-family-primary, Inter, sans-serif);
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
-  color: rgb(197, 228, 120);
-  font-family: Inter, sans-serif;
+  color: var(--color-title-h5, rgb(197, 228, 120));
+  font-family: var(--color-family-primary, Inter, sans-serif);
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
-  color: rgb(192, 205, 243);
-  font-family: Inter, sans-serif;
+  color: var(--color-title-h6, rgb(192, 205, 243));
+  font-family: var(--color-family-primary, Inter, sans-serif);
   text-shadow: none;
 }
 body
@@ -2430,7 +2430,7 @@ body body.theme-dark body {
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border: 0px solid rgb(192, 205, 243);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2480,7 +2480,7 @@ body body.theme-dark .callout > .callout-content {
   padding: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -2517,7 +2517,7 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2554,7 +2554,7 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2591,7 +2591,7 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -2628,7 +2628,7 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
@@ -2665,7 +2665,7 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -2702,7 +2702,7 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -2739,7 +2739,7 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2776,7 +2776,7 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2813,7 +2813,7 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2850,7 +2850,7 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
@@ -2887,7 +2887,7 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -2977,12 +2977,16 @@ body body.theme-dark .markdown-rendered tbody {
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-dark .markdown-rendered th {
-  background-color: rgb(41, 44, 62);
-  color: rgb(255, 184, 108);
+  background-color: var(--color-primary-700, rgb(41, 44, 62));
+  color: var(--color-title-h3, rgb(255, 184, 108));
   font-weight: var(--table-header-weight, 600);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
-  border: 0px solid rgb(255, 184, 108);
+  border-left: var(--table-column-first-border-width, 0px) solid
+    rgb(255, 184, 108);
+  border-right: 0px solid rgb(255, 184, 108);
+  border-top: var(--table-header-border-width, 0px) solid rgb(255, 184, 108);
+  border-bottom: 0px solid rgb(255, 184, 108);
   border-top-left-radius: 20px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 20px;
@@ -3000,6 +3004,8 @@ body body.theme-dark .markdown-rendered td {
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
   border: 0px solid rgb(218, 218, 218);
+  border-left: var(--table-column-first-border-width, 0px) solid
+    rgb(218, 218, 218);
   border-top-left-radius: 20px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 20px;
@@ -3023,7 +3029,7 @@ body body.theme-dark .markdown-rendered tr {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(even) {
-  background-color: rgb(41, 44, 62);
+  background-color: var(--color-primary-700, rgb(41, 44, 62));
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(odd) {
   background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
@@ -3559,9 +3565,9 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(173, 185, 219);
+  color: var(--color-element-icon, rgb(173, 185, 219));
   cursor: var(--cursor, default);
-  font-family: Inter, sans-serif;
+  font-family: var(--color-family-primary, Inter, sans-serif);
   font-weight: var(--nav-item-weight, 400);
   text-decoration: rgb(218, 218, 218);
 }
@@ -3573,16 +3579,16 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(173, 185, 219);
+  color: var(--color-element-icon, rgb(173, 185, 219));
   cursor: var(--cursor, default);
-  font-family: Inter, sans-serif;
+  font-family: var(--color-family-primary, Inter, sans-serif);
   font-weight: var(--nav-item-weight, 400);
   text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
   color: var(--icon-color, rgb(179, 179, 179));
-  cursor: pointer;
+  cursor: var(--cursor, pointer);
   border-color: rgb(179, 179, 179);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -3591,8 +3597,8 @@ body body.theme-dark .clickable-icon {
   border-bottom-right-radius: 4px;
 }
 body body.theme-dark .site-footer {
-  background-color: rgb(21, 22, 31);
-  color: rgb(192, 205, 243);
+  background-color: var(--color-primary-900, rgb(21, 22, 31));
+  color: var(--color-text-quote, rgb(192, 205, 243));
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3645,7 +3651,7 @@ body body.theme-dark .nav-files-container .tree-item {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .nav-file-title {
-  color: rgb(173, 185, 219);
+  color: var(--color-element-icon, rgb(173, 185, 219));
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(173, 185, 219);
@@ -3663,7 +3669,7 @@ body body.theme-dark .nav-files-container {
 body body.theme-dark .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
   color: var(--icon-color, rgb(179, 179, 179));
-  cursor: pointer;
+  cursor: var(--cursor, pointer);
   border-color: rgb(179, 179, 179);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -3673,7 +3679,7 @@ body body.theme-dark .site-body-left-column-site-theme-toggle {
 }
 body body.theme-dark .site-body-left-column-site-theme-toggle svg {
   stroke: rgb(173, 185, 219);
-  color: rgb(173, 185, 219);
+  color: var(--color-element-icon, rgb(173, 185, 219));
 }
 body body.theme-dark .view-header-breadcrumb {
   background-color: rgba(0, 0, 0, 0);
@@ -3703,7 +3709,7 @@ body body.theme-dark .view-header-breadcrumb-separator {
     sans-serif;
 }
 body body.theme-dark .page-header .page-title {
-  color: rgb(173, 185, 219);
+  color: var(--color-element-icon, rgb(173, 185, 219));
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3803,7 +3809,7 @@ body body.theme-dark pre > code [data-highlighted-chars] {
 }
 body body.theme-dark .tag {
   background-color: var(--tag-background, rgba(138, 92, 245, 0.1));
-  color: rgb(111, 161, 255);
+  color: var(--color-text-link, rgb(111, 161, 255));
   border: 0px solid rgb(111, 161, 255);
   border-top-left-radius: 24.5px;
   border-top-right-radius: 24.5px;

@@ -12,7 +12,7 @@ export interface ProcessedStyleSettings {
  * keeps the class (`.dnd`, `.theme-dark .dnd`, `.dnd .child`, etc.).
  * Since Quartz has no runtime class toggling, we rewrite:
  *
- *   `.className`   → `body`
+ *   `.className`   → `:root`
  *   `.theme-dark`  → `:root[saved-theme="dark"]`
  *   `.theme-light` → `:root[saved-theme="light"]`
  */
@@ -33,8 +33,10 @@ function rewriteClassSelectors(css: string, className: string): string {
           /\.theme-light(?=[.\s,:{]|$)/g,
           ':root[saved-theme="light"]',
         );
-        s = s.replace(classRe, "body");
-        s = s.replace(/\bbody\s+body\b/g, "body");
+        s = s.replace(classRe, ":root");
+        // Collapse `:root :root` → `:root` and
+        // `:root[...] :root` → `:root[...]` (descendant of itself is identity)
+        s = s.replace(/(:root(?:\[[^\]]*\])?)\s+:root\b/g, "$1");
         return s.trim();
       })
       .join(", ");

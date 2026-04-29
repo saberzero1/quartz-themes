@@ -9,119 +9,115 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-color-alt: hsl(258, 88%, 99%, 1);
-  --accent-color-alt2: hsl(258, 88%, 112.2%, 1);
+  --accent-color-alt: hsl(var(--accent-h), calc(var(--accent-s)*1), calc(var(--accent-l)*1.5), 1);
+  --accent-color-alt2: hsl(var(--accent-h), calc(var(--accent-s)*1), calc(var(--accent-l)*1.7), 1);
   --accent-color-bg: white;
   --accent-color-bg2: white;
   --accent-color-bg2c: white;
   --accent-color-bg_d: #2e2e2e;
   --accent-color-bg_dc: #252525;
-  --accent-color-bright: hsla(258, 88%, 66%, .1);
-  --accent-color-bright2: hsl(258, 88%, 66%, .01);
-  --accent-color-hsl: hsla(258, 88%, 66%);
-  --accent-color-inverse: hsl(258, 88%, -1700%);
-  --accent-color-inverse2: hsl(258, 88%, 100%);
-  --accent-color-light01: hsla(258, 88%, 66%, .01);
-  --accent-color-light02: hsla(258, 88%, 66%, .02);
-  --accent-color-light03: hsla(258, 88%, 66%, .03);
-  --accent-color-light04: hsla(258, 88%, 66%, .04);
-  --accent-color-light05: hsla(258, 88%, 66%, .05);
-  --accent-color-light06: hsla(258, 88%, 66%, .06);
-  --accent-color-light07: hsla(258, 88%, 66%, .07);
-  --accent-color-light08: hsla(258, 88%, 66%, .08);
-  --accent-color-light09: hsla(258, 88%, 66%, .09);
-  --accent-color-light1: hsla(258, 88%, 66%, .1);
-  --accent-color-light10: hsla(258, 88%, 66%, 1);
-  --accent-color-light2: hsla(258, 88%, 66%, .2);
-  --accent-color-light3: hsla(258, 88%, 66%, .3);
-  --accent-color-light4: hsla(258, 88%, 66%, .4);
-  --accent-color-light5: hsla(258, 88%, 66%, .5);
-  --accent-color-light6: hsla(258, 88%, 66%, .6);
-  --accent-color-light7: hsla(258, 88%, 66%, .7);
-  --accent-color-light8: hsla(258, 88%, 66%, .8);
-  --accent-color-light9: hsla(258, 88%, 66%, .9);
-  --background-primary: #2e2e2e;
-  --background-secondary: #2e2e2e;
-  --background-secondary-alt: #2e2e2e;
-  --bases-cards-background: #2e2e2e;
-  --bases-cards-radius: 5px;
-  --bases-embed-border-radius: 5px;
-  --bases-table-cell-background-active: #2e2e2e;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsla(258, 88%, 66%);
-  --bases-table-container-border-radius: 5px;
-  --bases-table-header-background: #2e2e2e;
-  --bases-table-summary-background: #2e2e2e;
-  --blockquote-border-color: hsla(258, 88%, 66%);
-  --callout-radius: 5px;
-  --canvas-background: #2e2e2e;
-  --canvas-controls-radius: 5px;
-  --checkbox-color: hsla(258, 88%, 66%);
-  --checkbox-marker-color: #2e2e2e;
-  --checkbox-radius: 5px;
-  --clickable-icon-radius: 5px;
-  --code-radius: 5px;
-  --collapse-icon-color-collapsed: hsla(258, 88%, 66%);
-  --color-accent: hsla(258, 88%, 66%);
-  --divider-color-hover: hsla(258, 88%, 66%);
-  --embed-border-start: 2px solid hsla(258, 88%, 66%);
-  --file-header-background: #2e2e2e;
-  --file-header-background-focused: #2e2e2e;
+  --accent-color-bright: hsla(var(--accent-h), calc(var(--accent-s)*1), calc(var(--accent-l)*1), .1);
+  --accent-color-bright2: hsl(var(--accent-h), calc(var(--accent-s)*1), calc(var(--accent-l)*1), .01);
+  --accent-color-hsl: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --accent-color-inverse: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l)*-100 + 4900%));
+  --accent-color-inverse2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l)*-100 + 6700%));
+  --accent-color-light01: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .01);
+  --accent-color-light02: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .02);
+  --accent-color-light03: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .03);
+  --accent-color-light04: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .04);
+  --accent-color-light05: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .05);
+  --accent-color-light06: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .06);
+  --accent-color-light07: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .07);
+  --accent-color-light08: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .08);
+  --accent-color-light09: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .09);
+  --accent-color-light1: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .1);
+  --accent-color-light10: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1);
+  --accent-color-light2: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .2);
+  --accent-color-light3: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .3);
+  --accent-color-light4: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .4);
+  --accent-color-light5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .5);
+  --accent-color-light6: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .6);
+  --accent-color-light7: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .7);
+  --accent-color-light8: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .8);
+  --accent-color-light9: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .9);
+  --background-primary: var(--color-base-00, #2e2e2e);
+  --background-secondary: var(--accent-color-bg_d, #2e2e2e);
+  --background-secondary-alt: var(--accent-color-bg_d, #2e2e2e);
+  --bases-cards-background: var(--background-primary, #2e2e2e);
+  --bases-cards-radius: var(--radius-m, 5px);
+  --bases-embed-border-radius: var(--radius-s, 5px);
+  --bases-table-cell-background-active: var(--background-primary, #2e2e2e);
+  --bases-table-container-border-radius: var(--radius-s, 5px);
+  --bases-table-header-background: var(--background-primary, #2e2e2e);
+  --bases-table-summary-background: var(--background-primary, #2e2e2e);
+  --blockquote-border-color: var(--interactive-accent, hsla(258, 88%, 66%));
+  --callout-radius: var(--radius-s, 5px);
+  --canvas-background: var(--background-primary, #2e2e2e);
+  --canvas-controls-radius: var(--radius-s, 5px);
+  --checkbox-color: var(--interactive-accent, hsla(258, 88%, 66%));
+  --checkbox-marker-color: var(--background-primary, #2e2e2e);
+  --checkbox-radius: var(--radius-s, 5px);
+  --clickable-icon-radius: var(--radius-s, 5px);
+  --code-radius: var(--radius-s, 5px);
+  --collapse-icon-color-collapsed: var(--text-accent, hsla(258, 88%, 66%));
+  --color-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --divider-color-hover: var(--interactive-accent, hsla(258, 88%, 66%));
+  --file-header-background: var(--background-primary, #2e2e2e);
+  --file-header-background-focused: var(--background-primary, #2e2e2e);
   --file-line-width: 1000px;
-  --footnote-radius: 5px;
-  --graph-node-focused: hsla(258, 88%, 66%);
-  --icon-color-active: hsla(258, 88%, 66%);
-  --interactive-accent: hsla(258, 88%, 66%);
-  --light: var(--background-primary, #2e2e2e);
-  --lightgray: var(--background-secondary, #2e2e2e);
-  --link-color: hsla(258, 88%, 66%);
-  --link-external-color: hsla(258, 88%, 66%);
-  --link-unresolved-color: hsla(258, 88%, 66%);
-  --list-marker-color-collapsed: hsla(258, 88%, 66%);
-  --menu-background: #2e2e2e;
-  --menu-radius: 5px;
-  --modal-background: #2e2e2e;
-  --modal-radius: 5px;
-  --nav-item-color-highlighted: hsla(258, 88%, 66%);
-  --nav-item-radius: 5px;
-  --nav-tag-radius: 5px;
-  --pdf-background: #2e2e2e;
-  --pdf-page-background: #2e2e2e;
-  --pdf-sidebar-background: #2e2e2e;
-  --pill-color-remove-hover: hsla(258, 88%, 66%);
+  --footnote-radius: var(--radius-s, 5px);
+  --graph-node-focused: var(--text-accent, hsla(258, 88%, 66%));
+  --icon-color-active: var(--text-accent, hsla(258, 88%, 66%));
+  --interactive-accent: var(--color-accent, hsla(258, 88%, 66%));
+  --light: var(--background-primary, var(--color-base-00, #2e2e2e));
+  --lightgray: var(--background-secondary, var(--accent-color-bg_d, #2e2e2e));
+  --link-color: var(--text-accent, hsla(258, 88%, 66%));
+  --link-external-color: var(--text-accent, hsla(258, 88%, 66%));
+  --link-unresolved-color: var(--text-accent, hsla(258, 88%, 66%));
+  --list-marker-color-collapsed: var(--text-accent, hsla(258, 88%, 66%));
+  --menu-background: var(--background-secondary, #2e2e2e);
+  --menu-radius: var(--radius-m, 5px);
+  --modal-background: var(--background-primary, #2e2e2e);
+  --modal-radius: var(--radius-l, 5px);
+  --nav-item-color-highlighted: var(--text-accent, hsla(258, 88%, 66%));
+  --nav-item-radius: var(--radius-s, 5px);
+  --nav-tag-radius: var(--radius-s, 5px);
+  --pdf-background: var(--background-primary, #2e2e2e);
+  --pdf-page-background: var(--background-primary, #2e2e2e);
+  --pdf-sidebar-background: var(--background-primary, #2e2e2e);
+  --pill-color-remove-hover: var(--text-accent, hsla(258, 88%, 66%));
   --popover-height: 100%;
   --popover-width: 100%;
-  --prompt-background: #2e2e2e;
+  --prompt-background: var(--background-primary, #2e2e2e);
   --radius-l: 5px;
   --radius-m: 5px;
   --radius-s: 5px;
-  --ribbon-background: #2e2e2e;
-  --ribbon-background-collapsed: #2e2e2e;
-  --scrollbar-radius: 5px;
-  --search-result-background: #2e2e2e;
-  --secondary: var(--text-accent, hsla(258, 88%, 66%));
-  --setting-items-radius: 5px;
-  --shiki-code-block-border-radius: 5px;
-  --slider-thumb-radius: 5px;
-  --status-bar-background: #2e2e2e;
-  --status-bar-radius: 5px 0 0 0;
-  --suggestion-background: #2e2e2e;
-  --tab-background-active: #2e2e2e;
-  --tab-container-background: #2e2e2e;
+  --ribbon-background: var(--background-secondary, #2e2e2e);
+  --ribbon-background-collapsed: var(--background-primary, #2e2e2e);
+  --scrollbar-radius: var(--radius-l, 5px);
+  --search-result-background: var(--background-primary, #2e2e2e);
+  --secondary: var(--text-accent, hsla(var(--accent-h), var(--accent-s), var(--accent-l)));
+  --setting-items-radius: var(--radius-l, 5px);
+  --shiki-code-block-border-radius: var(--code-radius, 5px);
+  --slider-thumb-radius: var(--slider-thumb-height, 5px);
+  --status-bar-background: var(--background-secondary, #2e2e2e);
+  --status-bar-radius: var(--radius-m, 5px 0 0 0) 0 0 0;
+  --suggestion-background: var(--background-primary, #2e2e2e);
+  --tab-background-active: var(--background-primary, #2e2e2e);
+  --tab-container-background: var(--background-secondary, #2e2e2e);
   --tab-max-width: 50%;
-  --tab-radius: 5px;
+  --tab-radius: var(--radius-s, 5px);
   --tab-radius-active: 5px;
-  --tab-switcher-background: #2e2e2e;
-  --tab-switcher-menubar-background: linear-gradient(to top, #2e2e2e, transparent);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsla(258, 88%, 66%);
-  --tab-text-color-focused-highlighted: hsla(258, 88%, 66%);
-  --table-drag-handle-background-active: hsla(258, 88%, 66%);
-  --table-selection-border-color: hsla(258, 88%, 66%);
-  --tag-color: hsla(258, 88%, 66%);
-  --tag-color-hover: hsla(258, 88%, 66%);
-  --tertiary: var(--text-accent, hsla(258, 88%, 66%));
-  --text-accent: hsla(258, 88%, 66%);
-  --titlebar-background: #2e2e2e;
-  --titlebar-background-focused: #2e2e2e;
+  --tab-switcher-background: var(--background-secondary, #2e2e2e);
+  --tab-text-color-focused-highlighted: var(--text-accent, hsla(258, 88%, 66%));
+  --table-drag-handle-background-active: var(--table-selection-border-color, hsla(258, 88%, 66%));
+  --table-selection-border-color: var(--interactive-accent, hsla(258, 88%, 66%));
+  --tag-color: var(--text-accent, hsla(258, 88%, 66%));
+  --tag-color-hover: var(--text-accent, hsla(258, 88%, 66%));
+  --tertiary: var(--text-accent, hsla(var(--accent-h), var(--accent-s), var(--accent-l)));
+  --text-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --titlebar-background: var(--background-secondary, #2e2e2e);
+  --titlebar-background-focused: var(--background-secondary-alt, #2e2e2e);
   --toggle-radius: 5px;
   --toggle-thumb-radius: 5px;
   --quartz-icon-color: currentColor;
@@ -133,15 +129,15 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(46, 46, 46);
+  background-color: var(--tab-container-background, rgb(46, 46, 46));
 }
 
 html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: rgb(46, 46, 46);
+  background-color: var(--background-primary, rgb(46, 46, 46));
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(46, 46, 46);
+  background-color: var(--background-secondary, rgb(46, 46, 46));
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
@@ -150,7 +146,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(46, 46, 46);
+  background-color: var(--tab-container-background, rgb(46, 46, 46));
   border-left-color: rgb(138, 92, 245);
   border-left-style: solid;
 }`,
@@ -163,8 +159,8 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
 }
 
 html[saved-theme="dark"] body .text-highlight {
-  background-color: rgb(138, 92, 245);
-  color: rgb(0, 0, 0);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
   font-weight: 300;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
@@ -182,29 +178,29 @@ html[saved-theme="dark"] body p {
   font-weight: 300;
 }`,
     links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
-  color: rgb(138, 92, 245);
+  color: var(--link-external-color, rgb(138, 92, 245));
   outline: rgb(138, 92, 245) none 0px;
   text-decoration-color: rgb(138, 92, 245);
 }
 
 html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(138, 92, 245);
+  color: var(--link-color, rgb(138, 92, 245));
   outline: rgb(138, 92, 245) none 0px;
   text-decoration-color: rgb(138, 92, 245);
 }
 
 html[saved-theme="dark"] body a.internal-link.broken {
-  color: rgb(138, 92, 245);
+  color: var(--link-unresolved-color, rgb(138, 92, 245));
   outline: rgb(138, 92, 245) none 0px;
 }`,
     lists: `html[saved-theme="dark"] body dt {
   font-weight: 300;
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
-  background-color: rgba(138, 92, 245, 0.05);
+  background-color: var(--blockquote-background-color, rgba(138, 92, 245, 0.05));
 }`,
     tables: `html[saved-theme="dark"] body table {
-  margin-top: 15px;
+  margin-top: var(--heading-spacing, 15px);
   width: 202.938px;
 }
 
@@ -222,8 +218,8 @@ html[saved-theme="dark"] body th {
   border-left-color: rgb(138, 92, 245);
   border-right-color: rgb(138, 92, 245);
   border-top-color: rgb(138, 92, 245);
-  border-top-left-radius: 8px;
-  font-weight: 300;
+  border-top-left-radius: var(--table-border-radius, 8px);
+  font-weight: var(--table-header-weight, 300);
 }`,
     code: `html[saved-theme="dark"] body code {
   border-bottom-left-radius: 5px;
@@ -461,16 +457,15 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   --callout-color: 2, 122, 255;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {
@@ -481,9 +476,9 @@ html[saved-theme="dark"] body .callout > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -493,16 +488,15 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 2, 122, 255;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-content {
@@ -513,9 +507,9 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -525,16 +519,15 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 2, 122, 255;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
@@ -545,9 +538,284 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="c"] {
-  --callout-color: 2, 122, 255;
-  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #2e2e2e 50%);
-  background-color: rgba(138, 92, 245, 0.02);
+  --accent-color-alt: hsl(258, 88%, 99%, 1);
+  --accent-color-alt2: hsl(258, 88%, 112.2%, 1);
+  --accent-color-bright: hsla(258, 88%, 66%, .1);
+  --accent-color-bright2: hsl(258, 88%, 66%, .01);
+  --accent-color-hsl: hsla(258, 88%, 66%);
+  --accent-color-inverse: hsl(258, 88%, -1700%);
+  --accent-color-inverse2: hsl(258, 88%, 100%);
+  --accent-color-light01: hsla(258, 88%, 66%, .01);
+  --accent-color-light02: hsla(258, 88%, 66%, .02);
+  --accent-color-light03: hsla(258, 88%, 66%, .03);
+  --accent-color-light04: hsla(258, 88%, 66%, .04);
+  --accent-color-light05: hsla(258, 88%, 66%, .05);
+  --accent-color-light06: hsla(258, 88%, 66%, .06);
+  --accent-color-light07: hsla(258, 88%, 66%, .07);
+  --accent-color-light08: hsla(258, 88%, 66%, .08);
+  --accent-color-light09: hsla(258, 88%, 66%, .09);
+  --accent-color-light1: hsla(258, 88%, 66%, .1);
+  --accent-color-light10: hsla(258, 88%, 66%, 1);
+  --accent-color-light2: hsla(258, 88%, 66%, .2);
+  --accent-color-light3: hsla(258, 88%, 66%, .3);
+  --accent-color-light4: hsla(258, 88%, 66%, .4);
+  --accent-color-light5: hsla(258, 88%, 66%, .5);
+  --accent-color-light6: hsla(258, 88%, 66%, .6);
+  --accent-color-light7: hsla(258, 88%, 66%, .7);
+  --accent-color-light8: hsla(258, 88%, 66%, .8);
+  --accent-color-light9: hsla(258, 88%, 66%, .9);
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+  --background-modifier-border: #363636;
+  --background-modifier-border-focus: #555555;
+  --background-modifier-border-hover: #3f3f3f;
+  --background-modifier-error: #fb464c;
+  --background-modifier-error-hover: #fb464c;
+  --background-modifier-error-rgb: 251, 70, 76;
+  --background-modifier-form-field: #2a2a2a;
+  --background-modifier-form-field-hover: #2a2a2a;
+  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-success: #44cf6e;
+  --background-modifier-success-rgb: 68, 207, 110;
+  --background-primary: #2e2e2e;
+  --background-primary-alt: #242424;
+  --background-secondary: #2e2e2e;
+  --background-secondary-alt: #2e2e2e;
+  --blockquote-border-color: hsla(258, 88%, 66%);
+  --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-bug: 251, 70, 76;
+  --callout-color: var(--callout-default, 2, 122, 255);
+  --callout-default: 2, 122, 255;
+  --callout-error: 251, 70, 76;
+  --callout-example: 168, 130, 255;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-info: 2, 122, 255;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 233, 151, 63;
+  --callout-radius: 5px;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
+  --callout-title-weight: 600;
+  --callout-todo: 2, 122, 255;
+  --callout-warning: 233, 151, 63;
+  --canvas-background: #2e2e2e;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 5px;
+  --canvas-dot-pattern: #363636;
+  --caret-color: #dadada;
+  --checkbox-border-color: #666666;
+  --checkbox-border-color-hover: #b3b3b3;
+  --checkbox-color: hsla(258, 88%, 66%);
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+  --checkbox-marker-color: #2e2e2e;
+  --checkbox-radius: 5px;
+  --checkbox-size: 16px;
+  --checklist-done-color: #b3b3b3;
+  --clickable-icon-radius: 5px;
+  --code-background: #242424;
+  --code-border-color: #363636;
+  --code-bracket-background: rgba(255, 255, 255, 0.067);
+  --code-comment: #666666;
+  --code-function: #e0de71;
+  --code-important: #e9973f;
+  --code-keyword: #fa99cd;
+  --code-normal: #dadada;
+  --code-operator: #fb464c;
+  --code-property: #53dfdd;
+  --code-punctuation: #b3b3b3;
+  --code-radius: 5px;
+  --code-size: 0.875em;
+  --code-string: #44cf6e;
+  --code-tag: #fb464c;
+  --code-value: #a882ff;
+  --collapse-icon-color: #666666;
+  --collapse-icon-color-collapsed: hsla(258, 88%, 66%);
+  --color-accent: hsla(258, 88%, 66%);
+  --color-accent-1: hsl(255, 89.76%, 75.9%);
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
+  --color-accent-hsl: 258, 88%, 66%;
+  --divider-color: #363636;
+  --divider-color-hover: hsla(258, 88%, 66%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #363636;
+  --dropdown-background-hover: #3f3f3f;
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #363636;
+  --flair-color: #dadada;
+  --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-weight: 400;
+  --graph-line: #3f3f3f;
+  --graph-node: #b3b3b3;
+  --graph-node-attachment: #e0de71;
+  --graph-node-focused: hsla(258, 88%, 66%);
+  --graph-node-tag: #44cf6e;
+  --graph-node-unresolved: #666666;
+  --graph-text: #dadada;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #666666;
+  --heading-spacing: 2.5rem;
+  --hr-color: #363636;
+  --interactive-accent: hsla(258, 88%, 66%);
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
+  --interactive-accent-hsl: 258, 88%, 66%;
+  --interactive-hover: #3f3f3f;
+  --interactive-normal: #363636;
+  --link-color: hsla(258, 88%, 66%);
+  --link-color-hover: hsl(253, 92.4%, 85.14%);
+  --link-external-color: hsla(258, 88%, 66%);
+  --link-external-color-hover: hsl(253, 92.4%, 85.14%);
+  --link-unresolved-color: hsla(258, 88%, 66%);
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: #2e2e2e;
+  --menu-border-color: #3f3f3f;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 5px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --pdf-background: #2e2e2e;
+  --pdf-page-background: #2e2e2e;
+  --pdf-shadow: 0 0 0 1px #363636;
+  --pdf-sidebar-background: #2e2e2e;
+  --pdf-thumbnail-shadow: 0 0 0 1px #363636;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 5px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: #b3b3b3;
+  --search-icon-color: #b3b3b3;
+  --search-result-background: #2e2e2e;
+  --setting-group-heading-color: #dadada;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #242424;
+  --setting-items-border-color: #363636;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 5px;
+  --shiki-active-tab-border-color: #b3b3b3;
+  --shiki-code-background: #242424;
+  --shiki-code-block-border-radius: 5px;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #666666;
+  --shiki-code-function: #44cf6e;
+  --shiki-code-important: #e9973f;
+  --shiki-code-keyword: #fa99cd;
+  --shiki-code-normal: #b3b3b3;
+  --shiki-code-property: #53dfdd;
+  --shiki-code-punctuation: #b3b3b3;
+  --shiki-code-string: #e0de71;
+  --shiki-code-value: #a882ff;
+  --shiki-gutter-border-color: #363636;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #666666;
+  --shiki-gutter-text-color-highlight: #b3b3b3;
+  --shiki-highlight-green: rgba(68, 207, 110, 0.5);
+  --shiki-highlight-green-background: rgba(68, 207, 110, 0.1);
+  --shiki-highlight-neutral: #b3b3b3;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
+  --shiki-highlight-red: rgba(251, 70, 76, 0.5);
+  --shiki-highlight-red-background: rgba(251, 70, 76, 0.1);
+  --shiki-terminal-dots-color: #666666;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #2e2e2e;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --sync-avatar-color-1: #fb464c;
+  --sync-avatar-color-2: #e9973f;
+  --sync-avatar-color-3: #e0de71;
+  --sync-avatar-color-4: #44cf6e;
+  --sync-avatar-color-5: #53dfdd;
+  --sync-avatar-color-6: #027aff;
+  --sync-avatar-color-7: #a882ff;
+  --sync-avatar-color-8: #fa99cd;
+  --tab-background-active: #2e2e2e;
+  --tab-divider-color: #3f3f3f;
+  --tab-font-size: 13px;
+  --tab-outline-color: #363636;
+  --tab-radius: 5px;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #2e2e2e;
+  --tab-switcher-menubar-background: linear-gradient(to top, #2e2e2e, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsla(258, 88%, 66%);
+  --tab-text-color: #666666;
+  --tab-text-color-active: #b3b3b3;
+  --tab-text-color-focused: #b3b3b3;
+  --tab-text-color-focused-active: #b3b3b3;
+  --tab-text-color-focused-active-current: #dadada;
+  --tab-text-color-focused-highlighted: hsla(258, 88%, 66%);
+  --table-add-button-border-color: #363636;
+  --table-add-button-border-width: 1px;
+  --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsla(258, 88%, 66%);
+  --table-drag-handle-color: #666666;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: #363636;
+  --table-header-border-width: 1px;
+  --table-header-color: #dadada;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(258, 88%, 66%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsla(258, 88%, 66%);
+  --table-text-size: 16px;
+  --tag-background: hsla(258, 88%, 66%, 0.1);
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2);
+  --tag-border-color: hsla(258, 88%, 66%, 0.15);
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
+  --tag-color: hsla(258, 88%, 66%);
+  --tag-color-hover: hsla(258, 88%, 66%);
+  --tag-size: 0.875em;
+  --text-accent: hsla(258, 88%, 66%);
+  --text-accent-hover: hsl(253, 92.4%, 85.14%);
+  --text-error: #fb464c;
+  --text-faint: #666666;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #b3b3b3;
+  --text-normal: #dadada;
+  --text-selection: hsla(258, 88%, 66%, 0.33);
+  --text-success: #44cf6e;
+  --text-warning: #e9973f;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-color: rgba(2, 122, 255, 0.25);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -564,7 +832,7 @@ html[saved-theme="dark"] body .callout[data-callout="c"] {
   border-top-right-radius: 5px;
   border-top-style: solid;
   border-top-width: 0px;
-  box-shadow: rgb(138, 92, 245) 0px 0px 0px 3.2px inset;
+  box-shadow: inset 0px 0px 0px .2em var(--accent-color-light10);
   color: rgb(218, 218, 218);
   font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 300;
@@ -580,9 +848,9 @@ html[saved-theme="dark"] body .callout[data-callout="c"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -592,16 +860,15 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 2, 122, 255;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content {
@@ -612,9 +879,9 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -624,16 +891,15 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 2, 122, 255;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-content {
@@ -644,9 +910,9 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -656,16 +922,15 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 2, 122, 255;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-content {
@@ -676,9 +941,9 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -688,16 +953,15 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 2, 122, 255;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
@@ -708,9 +972,9 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -720,16 +984,15 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 2, 122, 255;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
@@ -740,9 +1003,9 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -752,16 +1015,15 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 2, 122, 255;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-content {
@@ -772,9 +1034,9 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -784,16 +1046,15 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 2, 122, 255;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content {
@@ -804,9 +1065,9 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -816,16 +1077,15 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 2, 122, 255;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-content {
@@ -836,9 +1096,9 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -848,16 +1108,15 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 2, 122, 255;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
@@ -868,9 +1127,9 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -880,16 +1139,15 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 2, 122, 255;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
@@ -900,9 +1158,9 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -912,16 +1170,15 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 2, 122, 255;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] > .callout-content {
@@ -1006,7 +1263,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: rgb(46, 46, 46);
+  background-color: var(--prompt-background, rgb(46, 46, 46));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -1054,7 +1311,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  font-weight: 300;
+  font-weight: var(--pill-weight, 300);
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -1062,37 +1319,37 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
-  color: rgb(138, 92, 245);
-  font-family: menda, "Cascadia Code", inter, verdana;
+  color: var(--accent-color-light10, rgb(138, 92, 245));
+  font-family: var(--h1-font, menda, "Cascadia Code", inter, verdana);
 }
 
 html[saved-theme="dark"] body h2 {
-  color: rgb(138, 92, 245);
-  font-family: menda, "Cascadia Code", inter, verdana;
+  color: var(--accent-color-light10, rgb(138, 92, 245));
+  font-family: var(--h2-font, menda, "Cascadia Code", inter, verdana);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  font-family: menda, "Cascadia Code", inter, verdana;
+  font-family: var(--inline-title-font, menda, "Cascadia Code", inter, verdana);
 }
 
 html[saved-theme="dark"] body h3 {
-  color: rgb(138, 92, 245);
-  font-family: menda, "Cascadia Code", inter, verdana;
+  color: var(--accent-color-light10, rgb(138, 92, 245));
+  font-family: var(--h3-font, menda, "Cascadia Code", inter, verdana);
 }
 
 html[saved-theme="dark"] body h4 {
-  color: rgba(138, 92, 245, 0.8);
-  font-family: menda, "Cascadia Code", inter, verdana;
+  color: var(--accent-color-light8, rgba(138, 92, 245, 0.8));
+  font-family: var(--h4-font, menda, "Cascadia Code", inter, verdana);
 }
 
 html[saved-theme="dark"] body h5 {
-  color: rgba(138, 92, 245, 0.7);
-  font-family: menda, "Cascadia Code", inter, verdana;
+  color: var(--accent-color-light7, rgba(138, 92, 245, 0.7));
+  font-family: var(--h5-font, menda, "Cascadia Code", inter, verdana);
 }
 
 html[saved-theme="dark"] body h6 {
-  color: rgba(138, 92, 245, 0.6);
-  font-family: menda, "Cascadia Code", inter, verdana;
+  color: var(--accent-color-light6, rgba(138, 92, 245, 0.6));
+  font-family: var(--h6-font, menda, "Cascadia Code", inter, verdana);
 }
 
 html[saved-theme="dark"] body hr {
@@ -1113,7 +1370,7 @@ html[saved-theme="dark"] body hr {
   margin-top: 15px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -1124,14 +1381,14 @@ html[saved-theme="dark"] body hr {
   padding-top: 1.6px;
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  font-weight: 300;
+  font-weight: var(--nav-item-weight, 300);
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  font-weight: 300;
+  font-weight: var(--nav-item-weight, 300);
 }`,
     toc: `html[saved-theme="dark"] body li.depth-0 {
-  font-weight: 300;
+  font-weight: var(--nav-item-weight, 300);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 5px;
@@ -1140,7 +1397,7 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-right-radius: 5px;
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: rgb(46, 46, 46);
+  background-color: var(--status-bar-background, rgb(46, 46, 46));
   border-bottom-color: rgb(179, 179, 179);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -1173,36 +1430,36 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
 }
 
 html[saved-theme="dark"] body .canvas-node-file {
-  background-color: rgb(46, 46, 46);
+  background-color: var(--accent-color-bg_d, rgb(46, 46, 46));
 }
 
 html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(46, 46, 46);
+  background-color: var(--background-secondary, rgb(46, 46, 46));
 }`,
     bases: `html[saved-theme="dark"] body .bases-table thead th {
   border-color: rgb(138, 92, 245);
-  font-weight: 300;
+  font-weight: var(--table-header-weight, 300);
 }`,
     properties: `html[saved-theme="dark"] body .note-properties-key {
   font-weight: 300;
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
-  color: rgb(138, 92, 245);
+  color: var(--pill-color, rgb(138, 92, 245));
 }
 
 html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(46, 46, 46);
+  background-color: var(--background-primary, rgb(46, 46, 46));
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
-  background-color: rgb(46, 46, 46);
+  background-color: var(--background-secondary, rgb(46, 46, 46));
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
-  background-color: rgb(46, 46, 46);
+  background-color: var(--tab-container-background, rgb(46, 46, 46));
 }`,
     misc: `html[saved-theme="dark"] body .navigation-progress {
-  background-color: rgb(46, 46, 46);
+  background-color: var(--status-bar-background, rgb(46, 46, 46));
 }
 
 html[saved-theme="dark"] body kbd {
@@ -1217,118 +1474,115 @@ html[saved-theme="dark"] body summary {
 }
 
 html[saved-theme="dark"] body ul.tags > li {
-  color: rgb(138, 92, 245);
+  color: var(--tag-color, rgb(138, 92, 245));
 }`,
   },
   light: {
     base: `:root:root {
-  --accent-color-alt: hsl(258, 88%, 99%, 1);
-  --accent-color-alt2: hsl(258, 88%, 112.2%, 1);
+  --accent-color-alt: hsl(var(--accent-h), calc(var(--accent-s)*1), calc(var(--accent-l)*1.5), 1);
+  --accent-color-alt2: hsl(var(--accent-h), calc(var(--accent-s)*1), calc(var(--accent-l)*1.7), 1);
   --accent-color-bg: white;
   --accent-color-bg2: white;
   --accent-color-bg2c: white;
   --accent-color-bg_d: #2e2e2e;
   --accent-color-bg_dc: #252525;
-  --accent-color-bright: hsla(258, 88%, 66%, .1);
-  --accent-color-bright2: hsl(258, 88%, 66%, .01);
-  --accent-color-hsl: hsla(258, 88%, 66%);
-  --accent-color-inverse: hsl(258, 88%, -1700%);
-  --accent-color-inverse2: hsl(258, 88%, 100%);
-  --accent-color-light01: hsla(258, 88%, 66%, .01);
-  --accent-color-light02: hsla(258, 88%, 66%, .02);
-  --accent-color-light03: hsla(258, 88%, 66%, .03);
-  --accent-color-light04: hsla(258, 88%, 66%, .04);
-  --accent-color-light05: hsla(258, 88%, 66%, .05);
-  --accent-color-light06: hsla(258, 88%, 66%, .06);
-  --accent-color-light07: hsla(258, 88%, 66%, .07);
-  --accent-color-light08: hsla(258, 88%, 66%, .08);
-  --accent-color-light09: hsla(258, 88%, 66%, .09);
-  --accent-color-light1: hsla(258, 88%, 66%, .1);
-  --accent-color-light10: hsla(258, 88%, 66%, 1);
-  --accent-color-light2: hsla(258, 88%, 66%, .2);
-  --accent-color-light3: hsla(258, 88%, 66%, .3);
-  --accent-color-light4: hsla(258, 88%, 66%, .4);
-  --accent-color-light5: hsla(258, 88%, 66%, .5);
-  --accent-color-light6: hsla(258, 88%, 66%, .6);
-  --accent-color-light7: hsla(258, 88%, 66%, .7);
-  --accent-color-light8: hsla(258, 88%, 66%, .8);
-  --accent-color-light9: hsla(258, 88%, 66%, .9);
-  --background-primary: white;
-  --background-secondary: white;
-  --background-secondary-alt: white;
-  --bases-cards-background: white;
-  --bases-cards-radius: 5px;
-  --bases-embed-border-radius: 5px;
-  --bases-table-cell-background-active: white;
-  --bases-table-container-border-radius: 5px;
-  --bases-table-header-background: white;
-  --bases-table-summary-background: white;
-  --blur-background: color-mix(in srgb, white 65%, transparent) linear-gradient(white, color-mix(in srgb, white 65%, transparent));
-  --callout-radius: 5px;
-  --canvas-background: white;
-  --canvas-controls-radius: 5px;
-  --checkbox-marker-color: white;
-  --checkbox-radius: 5px;
-  --clickable-icon-radius: 5px;
-  --code-radius: 5px;
-  --collapse-icon-color-collapsed: hsla(258, 88%, 66%);
-  --color-accent: hsla(258, 88%, 66%);
-  --file-header-background: white;
-  --file-header-background-focused: white;
+  --accent-color-bright: hsla(var(--accent-h), calc(var(--accent-s)*1), calc(var(--accent-l)*1), .1);
+  --accent-color-bright2: hsl(var(--accent-h), calc(var(--accent-s)*1), calc(var(--accent-l)*1), .01);
+  --accent-color-hsl: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --accent-color-inverse: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l)*-100 + 4900%));
+  --accent-color-inverse2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l)*-100 + 6700%));
+  --accent-color-light01: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .01);
+  --accent-color-light02: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .02);
+  --accent-color-light03: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .03);
+  --accent-color-light04: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .04);
+  --accent-color-light05: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .05);
+  --accent-color-light06: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .06);
+  --accent-color-light07: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .07);
+  --accent-color-light08: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .08);
+  --accent-color-light09: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .09);
+  --accent-color-light1: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .1);
+  --accent-color-light10: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1);
+  --accent-color-light2: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .2);
+  --accent-color-light3: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .3);
+  --accent-color-light4: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .4);
+  --accent-color-light5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .5);
+  --accent-color-light6: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .6);
+  --accent-color-light7: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .7);
+  --accent-color-light8: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .8);
+  --accent-color-light9: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .9);
+  --background-primary: var(--accent-color-bg, white);
+  --background-secondary: var(--accent-color-bg2, white);
+  --background-secondary-alt: var(--accent-color-bg2, white);
+  --bases-cards-background: var(--background-primary, white);
+  --bases-cards-radius: var(--radius-m, 5px);
+  --bases-embed-border-radius: var(--radius-s, 5px);
+  --bases-table-cell-background-active: var(--background-primary, white);
+  --bases-table-container-border-radius: var(--radius-s, 5px);
+  --bases-table-header-background: var(--background-primary, white);
+  --bases-table-summary-background: var(--background-primary, white);
+  --callout-radius: var(--radius-s, 5px);
+  --canvas-background: var(--background-primary, white);
+  --canvas-controls-radius: var(--radius-s, 5px);
+  --checkbox-marker-color: var(--background-primary, white);
+  --checkbox-radius: var(--radius-s, 5px);
+  --clickable-icon-radius: var(--radius-s, 5px);
+  --code-radius: var(--radius-s, 5px);
+  --collapse-icon-color-collapsed: var(--text-accent, hsla(258, 88%, 66%));
+  --color-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --file-header-background: var(--background-primary, white);
+  --file-header-background-focused: var(--background-primary, white);
   --file-line-width: 1000px;
-  --footnote-radius: 5px;
-  --graph-node-focused: hsla(258, 88%, 66%);
-  --icon-color-active: hsla(258, 88%, 66%);
-  --light: var(--background-primary, white);
-  --lightgray: var(--background-secondary, white);
-  --link-color: hsla(258, 88%, 66%);
-  --link-external-color: hsla(258, 88%, 66%);
-  --link-unresolved-color: hsla(258, 88%, 66%);
-  --list-marker-color-collapsed: hsla(258, 88%, 66%);
-  --menu-background: white;
-  --menu-radius: 5px;
-  --modal-background: white;
-  --modal-radius: 5px;
-  --nav-item-color-highlighted: hsla(258, 88%, 66%);
-  --nav-item-radius: 5px;
-  --nav-tag-radius: 5px;
-  --pdf-background: white;
-  --pdf-page-background: white;
-  --pdf-sidebar-background: white;
-  --pill-color-remove-hover: hsla(258, 88%, 66%);
+  --footnote-radius: var(--radius-s, 5px);
+  --graph-node-focused: var(--text-accent, hsla(258, 88%, 66%));
+  --icon-color-active: var(--text-accent, hsla(258, 88%, 66%));
+  --light: var(--background-primary, var(--accent-color-bg, white));
+  --lightgray: var(--background-secondary, var(--accent-color-bg2, white));
+  --link-color: var(--text-accent, hsla(258, 88%, 66%));
+  --link-external-color: var(--text-accent, hsla(258, 88%, 66%));
+  --link-unresolved-color: var(--text-accent, hsla(258, 88%, 66%));
+  --list-marker-color-collapsed: var(--text-accent, hsla(258, 88%, 66%));
+  --menu-background: var(--background-secondary, white);
+  --menu-radius: var(--radius-m, 5px);
+  --modal-background: var(--background-primary, white);
+  --modal-radius: var(--radius-l, 5px);
+  --nav-item-color-highlighted: var(--text-accent, hsla(258, 88%, 66%));
+  --nav-item-radius: var(--radius-s, 5px);
+  --nav-tag-radius: var(--radius-s, 5px);
+  --pdf-background: var(--background-primary, white);
+  --pdf-page-background: var(--background-primary, white);
+  --pdf-sidebar-background: var(--background-primary, white);
+  --pill-color-remove-hover: var(--text-accent, hsla(258, 88%, 66%));
   --popover-height: 100%;
   --popover-width: 100%;
-  --prompt-background: white;
+  --prompt-background: var(--background-primary, white);
   --radius-l: 5px;
   --radius-m: 5px;
   --radius-s: 5px;
-  --raised-background: color-mix(in srgb, white 65%, transparent) linear-gradient(white, color-mix(in srgb, white 65%, transparent));
-  --ribbon-background: white;
-  --ribbon-background-collapsed: white;
-  --scrollbar-radius: 5px;
-  --search-result-background: white;
-  --secondary: var(--text-accent, hsla(258, 88%, 66%));
-  --setting-items-radius: 5px;
-  --shiki-code-block-border-radius: 5px;
-  --slider-thumb-radius: 5px;
-  --status-bar-background: white;
-  --status-bar-radius: 5px 0 0 0;
-  --suggestion-background: white;
-  --tab-background-active: white;
-  --tab-container-background: white;
+  --raised-background: var(--blur-background, color-mix(in srgb, white 65%, transparent) linear-gradient(white, color-mix(in srgb, white 65%, transparent)));
+  --ribbon-background: var(--background-secondary, white);
+  --ribbon-background-collapsed: var(--background-primary, white);
+  --scrollbar-radius: var(--radius-l, 5px);
+  --search-result-background: var(--background-primary, white);
+  --secondary: var(--text-accent, hsla(var(--accent-h), var(--accent-s), var(--accent-l)));
+  --setting-items-radius: var(--radius-l, 5px);
+  --shiki-code-block-border-radius: var(--code-radius, 5px);
+  --slider-thumb-radius: var(--slider-thumb-height, 5px);
+  --status-bar-background: var(--background-secondary, white);
+  --status-bar-radius: var(--radius-m, 5px 0 0 0) 0 0 0;
+  --suggestion-background: var(--background-primary, white);
+  --tab-background-active: var(--background-primary, white);
+  --tab-container-background: var(--background-secondary, white);
   --tab-max-width: 50%;
-  --tab-radius: 5px;
+  --tab-radius: var(--radius-s, 5px);
   --tab-radius-active: 5px;
-  --tab-switcher-background: white;
-  --tab-switcher-menubar-background: linear-gradient(to top, white, transparent);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsla(258, 88%, 66%);
-  --tab-text-color-focused-highlighted: hsla(258, 88%, 66%);
-  --tag-color: hsla(258, 88%, 66%);
-  --tag-color-hover: hsla(258, 88%, 66%);
-  --tertiary: var(--text-accent, hsla(258, 88%, 66%));
-  --text-accent: hsla(258, 88%, 66%);
-  --titlebar-background: white;
-  --titlebar-background-focused: white;
+  --tab-switcher-background: var(--background-secondary, white);
+  --tab-text-color-focused-highlighted: var(--text-accent, hsla(258, 88%, 66%));
+  --tag-color: var(--text-accent, hsla(258, 88%, 66%));
+  --tag-color-hover: var(--text-accent, hsla(258, 88%, 66%));
+  --tertiary: var(--text-accent, hsla(var(--accent-h), var(--accent-s), var(--accent-l)));
+  --text-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --titlebar-background: var(--background-secondary, white);
+  --titlebar-background-focused: var(--background-secondary-alt, white);
   --toggle-radius: 5px;
   --toggle-thumb-radius: 5px;
   --quartz-icon-color: currentColor;
@@ -1340,11 +1594,11 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--tab-container-background, rgb(255, 255, 255));
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background-secondary, rgb(255, 255, 255));
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
@@ -1353,7 +1607,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--tab-container-background, rgb(255, 255, 255));
   border-left-color: rgb(138, 92, 245);
   border-left-style: solid;
 }`,
@@ -1366,8 +1620,8 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
 }
 
 html[saved-theme="light"] body .text-highlight {
-  background-color: rgb(138, 92, 245);
-  color: rgb(0, 0, 0);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
   font-weight: 300;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
@@ -1388,14 +1642,14 @@ html[saved-theme="light"] body p {
   font-weight: 300;
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
-  background-color: rgba(138, 92, 245, 0.05);
+  background-color: var(--blockquote-background-color, rgba(138, 92, 245, 0.05));
 }`,
     tables: `html[saved-theme="light"] body .spacer {
   background-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="light"] body table {
-  margin-top: 15px;
+  margin-top: var(--heading-spacing, 15px);
   width: 202.938px;
 }
 
@@ -1413,8 +1667,8 @@ html[saved-theme="light"] body th {
   border-left-color: rgb(138, 92, 245);
   border-right-color: rgb(138, 92, 245);
   border-top-color: rgb(138, 92, 245);
-  border-top-left-radius: 8px;
-  font-weight: 300;
+  border-top-left-radius: var(--table-border-radius, 8px);
+  font-weight: var(--table-header-weight, 300);
 }`,
     code: `html[saved-theme="light"] body code {
   border-bottom-left-radius: 5px;
@@ -1650,16 +1904,15 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   --callout-color: 8, 109, 221;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout > .callout-content {
@@ -1670,9 +1923,9 @@ html[saved-theme="light"] body .callout > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-summary, 0, 191, 188);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -1682,16 +1935,15 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 8, 109, 221;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-content {
@@ -1702,9 +1954,9 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-bug, 233, 49, 71);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -1714,16 +1966,15 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 8, 109, 221;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
@@ -1734,9 +1985,282 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="c"] {
-  --callout-color: 8, 109, 221;
-  --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, white 50%);
-  background-color: rgba(138, 92, 245, 0.02);
+  --accent-color-alt: hsl(258, 88%, 99%, 1);
+  --accent-color-alt2: hsl(258, 88%, 112.2%, 1);
+  --accent-color-bright: hsla(258, 88%, 66%, .1);
+  --accent-color-bright2: hsl(258, 88%, 66%, .01);
+  --accent-color-hsl: hsla(258, 88%, 66%);
+  --accent-color-inverse: hsl(258, 88%, -1700%);
+  --accent-color-inverse2: hsl(258, 88%, 100%);
+  --accent-color-light01: hsla(258, 88%, 66%, .01);
+  --accent-color-light02: hsla(258, 88%, 66%, .02);
+  --accent-color-light03: hsla(258, 88%, 66%, .03);
+  --accent-color-light04: hsla(258, 88%, 66%, .04);
+  --accent-color-light05: hsla(258, 88%, 66%, .05);
+  --accent-color-light06: hsla(258, 88%, 66%, .06);
+  --accent-color-light07: hsla(258, 88%, 66%, .07);
+  --accent-color-light08: hsla(258, 88%, 66%, .08);
+  --accent-color-light09: hsla(258, 88%, 66%, .09);
+  --accent-color-light1: hsla(258, 88%, 66%, .1);
+  --accent-color-light10: hsla(258, 88%, 66%, 1);
+  --accent-color-light2: hsla(258, 88%, 66%, .2);
+  --accent-color-light3: hsla(258, 88%, 66%, .3);
+  --accent-color-light4: hsla(258, 88%, 66%, .4);
+  --accent-color-light5: hsla(258, 88%, 66%, .5);
+  --accent-color-light6: hsla(258, 88%, 66%, .6);
+  --accent-color-light7: hsla(258, 88%, 66%, .7);
+  --accent-color-light8: hsla(258, 88%, 66%, .8);
+  --accent-color-light9: hsla(258, 88%, 66%, .9);
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+  --background-modifier-border: #e0e0e0;
+  --background-modifier-border-focus: #bdbdbd;
+  --background-modifier-border-hover: #d4d4d4;
+  --background-modifier-error: #e93147;
+  --background-modifier-error-hover: #e93147;
+  --background-modifier-error-rgb: 233, 49, 71;
+  --background-modifier-form-field: #ffffff;
+  --background-modifier-form-field-hover: #ffffff;
+  --background-modifier-hover: rgba(0, 0, 0, 0.067);
+  --background-modifier-success: #08b94e;
+  --background-modifier-success-rgb: 8, 185, 78;
+  --background-primary: white;
+  --background-primary-alt: #fafafa;
+  --background-secondary: white;
+  --background-secondary-alt: white;
+  --blockquote-border-color: hsl(257, 88.88%, 70.95%);
+  --blur-background: color-mix(in srgb, white 65%, transparent) linear-gradient(white, color-mix(in srgb, white 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: darken;
+  --callout-bug: 233, 49, 71;
+  --callout-color: var(--callout-default, 8, 109, 221);
+  --callout-default: 8, 109, 221;
+  --callout-error: 233, 49, 71;
+  --callout-example: 120, 82, 238;
+  --callout-fail: 233, 49, 71;
+  --callout-important: 0, 191, 188;
+  --callout-info: 8, 109, 221;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 236, 117, 0;
+  --callout-radius: 5px;
+  --callout-success: 8, 185, 78;
+  --callout-summary: 0, 191, 188;
+  --callout-tip: 0, 191, 188;
+  --callout-title-weight: 600;
+  --callout-todo: 8, 109, 221;
+  --callout-warning: 236, 117, 0;
+  --canvas-background: white;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 5px;
+  --canvas-dot-pattern: #e0e0e0;
+  --caret-color: #222222;
+  --checkbox-border-color: #ababab;
+  --checkbox-border-color-hover: #5c5c5c;
+  --checkbox-color: hsl(257, 88.88%, 70.95%);
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+  --checkbox-marker-color: white;
+  --checkbox-radius: 5px;
+  --checkbox-size: 16px;
+  --checklist-done-color: #5c5c5c;
+  --clickable-icon-radius: 5px;
+  --code-background: #fafafa;
+  --code-border-color: #e0e0e0;
+  --code-bracket-background: rgba(0, 0, 0, 0.067);
+  --code-comment: #ababab;
+  --code-function: #e0ac00;
+  --code-important: #ec7500;
+  --code-keyword: #d53984;
+  --code-normal: #222222;
+  --code-operator: #e93147;
+  --code-property: #00bfbc;
+  --code-punctuation: #5c5c5c;
+  --code-radius: 5px;
+  --code-size: 0.875em;
+  --code-string: #08b94e;
+  --code-tag: #e93147;
+  --code-value: #7852ee;
+  --collapse-icon-color: #ababab;
+  --collapse-icon-color-collapsed: hsla(258, 88%, 66%);
+  --color-accent: hsla(258, 88%, 66%);
+  --color-accent-1: hsl(257, 88.88%, 70.95%);
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
+  --color-accent-hsl: 258, 88%, 66%;
+  --divider-color: #e0e0e0;
+  --divider-color-hover: hsl(257, 88.88%, 70.95%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #ffffff;
+  --dropdown-background-hover: #fafafa;
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #ffffff;
+  --flair-color: #222222;
+  --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-weight: 400;
+  --graph-line: #d4d4d4;
+  --graph-node: #5c5c5c;
+  --graph-node-attachment: #e0ac00;
+  --graph-node-focused: hsla(258, 88%, 66%);
+  --graph-node-tag: #08b94e;
+  --graph-node-unresolved: #ababab;
+  --graph-text: #222222;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #ababab;
+  --heading-spacing: 2.5rem;
+  --hr-color: #e0e0e0;
+  --interactive-accent: hsl(257, 88.88%, 70.95%);
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
+  --interactive-accent-hsl: 258, 88%, 66%;
+  --interactive-hover: #fafafa;
+  --interactive-normal: #ffffff;
+  --link-color: hsla(258, 88%, 66%);
+  --link-color-hover: hsl(255, 89.76%, 75.9%);
+  --link-external-color: hsla(258, 88%, 66%);
+  --link-external-color-hover: hsl(255, 89.76%, 75.9%);
+  --link-unresolved-color: hsla(258, 88%, 66%);
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: white;
+  --menu-border-color: #d4d4d4;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 5px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+  --pdf-background: white;
+  --pdf-page-background: white;
+  --pdf-sidebar-background: white;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, white 65%, transparent) linear-gradient(white, color-mix(in srgb, white 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-radius: 5px;
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --search-clear-button-color: #5c5c5c;
+  --search-icon-color: #5c5c5c;
+  --search-result-background: white;
+  --setting-group-heading-color: #222222;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #fafafa;
+  --setting-items-border-color: #e0e0e0;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 5px;
+  --shiki-active-tab-border-color: #5c5c5c;
+  --shiki-code-background: #fafafa;
+  --shiki-code-block-border-radius: 5px;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #ababab;
+  --shiki-code-function: #08b94e;
+  --shiki-code-important: #ec7500;
+  --shiki-code-keyword: #d53984;
+  --shiki-code-normal: #5c5c5c;
+  --shiki-code-property: #00bfbc;
+  --shiki-code-punctuation: #5c5c5c;
+  --shiki-code-string: #e0ac00;
+  --shiki-code-value: #7852ee;
+  --shiki-gutter-border-color: #e0e0e0;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #ababab;
+  --shiki-gutter-text-color-highlight: #5c5c5c;
+  --shiki-highlight-green: rgba(8, 185, 78, 0.5);
+  --shiki-highlight-green-background: rgba(8, 185, 78, 0.1);
+  --shiki-highlight-neutral: #5c5c5c;
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
+  --shiki-highlight-red: rgba(233, 49, 71, 0.5);
+  --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
+  --shiki-terminal-dots-color: #ababab;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: white;
+  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  --sync-avatar-color-1: #e93147;
+  --sync-avatar-color-2: #ec7500;
+  --sync-avatar-color-3: #e0ac00;
+  --sync-avatar-color-4: #08b94e;
+  --sync-avatar-color-5: #00bfbc;
+  --sync-avatar-color-6: #086ddd;
+  --sync-avatar-color-7: #7852ee;
+  --sync-avatar-color-8: #d53984;
+  --tab-background-active: white;
+  --tab-divider-color: #d4d4d4;
+  --tab-font-size: 13px;
+  --tab-outline-color: #e0e0e0;
+  --tab-radius: 5px;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: white;
+  --tab-switcher-menubar-background: linear-gradient(to top, white, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsla(258, 88%, 66%);
+  --tab-text-color: #ababab;
+  --tab-text-color-active: #5c5c5c;
+  --tab-text-color-focused: #5c5c5c;
+  --tab-text-color-focused-active: #5c5c5c;
+  --tab-text-color-focused-active-current: #222222;
+  --tab-text-color-focused-highlighted: hsla(258, 88%, 66%);
+  --table-add-button-border-color: #e0e0e0;
+  --table-add-button-border-width: 1px;
+  --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
+  --table-drag-handle-color: #ababab;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: #e0e0e0;
+  --table-header-border-width: 1px;
+  --table-header-color: #222222;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(258, 88%, 66%, 0.1);
+  --table-selection-blend-mode: darken;
+  --table-selection-border-color: hsl(257, 88.88%, 70.95%);
+  --table-text-size: 16px;
+  --tag-background: hsla(258, 88%, 66%, 0.1);
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2);
+  --tag-border-color: hsla(258, 88%, 66%, 0.15);
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
+  --tag-color: hsla(258, 88%, 66%);
+  --tag-color-hover: hsla(258, 88%, 66%);
+  --tag-size: 0.875em;
+  --text-accent: hsla(258, 88%, 66%);
+  --text-accent-hover: hsl(255, 89.76%, 75.9%);
+  --text-error: #e93147;
+  --text-faint: #ababab;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #5c5c5c;
+  --text-normal: #222222;
+  --text-selection: hsla(258, 88%, 66%, 0.2);
+  --text-success: #08b94e;
+  --text-warning: #ec7500;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-color: rgba(8, 109, 221, 0.25);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -1753,7 +2277,7 @@ html[saved-theme="light"] body .callout[data-callout="c"] {
   border-top-right-radius: 5px;
   border-top-style: solid;
   border-top-width: 0px;
-  box-shadow: rgb(138, 92, 245) 0px 0px 0px 3.2px inset;
+  box-shadow: inset 0px 0px 0px .2em var(--accent-color-light10);
   color: rgb(34, 34, 34);
   font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 300;
@@ -1769,9 +2293,9 @@ html[saved-theme="light"] body .callout[data-callout="c"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-error, 233, 49, 71);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -1781,16 +2305,15 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 8, 109, 221;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-content {
@@ -1801,9 +2324,9 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
-  --callout-color: 120, 82, 238;
+  --callout-color: var(--callout-example, 120, 82, 238);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -1813,16 +2336,15 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 8, 109, 221;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] > .callout-content {
@@ -1833,9 +2355,9 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-fail, 233, 49, 71);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -1845,16 +2367,15 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 8, 109, 221;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-content {
@@ -1865,9 +2386,9 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-info, 8, 109, 221);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -1877,16 +2398,15 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 8, 109, 221;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content {
@@ -1897,9 +2417,9 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -1909,16 +2429,15 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 8, 109, 221;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content {
@@ -1929,9 +2448,9 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-question, 236, 117, 0);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -1941,16 +2460,15 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 8, 109, 221;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] > .callout-content {
@@ -1961,9 +2479,9 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -1973,16 +2491,15 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 8, 109, 221;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content {
@@ -1993,9 +2510,9 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
-  --callout-color: 8, 185, 78;
+  --callout-color: var(--callout-success, 8, 185, 78);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -2005,16 +2522,15 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 8, 109, 221;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] > .callout-content {
@@ -2025,9 +2541,9 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-tip, 0, 191, 188);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -2037,16 +2553,15 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 8, 109, 221;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
@@ -2057,9 +2572,9 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-todo, 8, 109, 221);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -2069,16 +2584,15 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 8, 109, 221;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content {
@@ -2089,9 +2603,9 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-warning, 236, 117, 0);
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -2101,16 +2615,15 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 8, 109, 221;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(138, 92, 245);
+  background-color: var(--accent-color-light10, rgb(138, 92, 245));
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--accent-color-inverse, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] > .callout-content {
@@ -2242,41 +2755,41 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  font-weight: 300;
+  font-weight: var(--pill-weight, 300);
 }
 
 html[saved-theme="light"] body h1 {
-  color: rgb(138, 92, 245);
-  font-family: menda, "Cascadia Code", inter, verdana;
+  color: var(--accent-color-light10, rgb(138, 92, 245));
+  font-family: var(--h1-font, menda, "Cascadia Code", inter, verdana);
 }
 
 html[saved-theme="light"] body h2 {
-  color: rgb(138, 92, 245);
-  font-family: menda, "Cascadia Code", inter, verdana;
+  color: var(--accent-color-light10, rgb(138, 92, 245));
+  font-family: var(--h2-font, menda, "Cascadia Code", inter, verdana);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  font-family: menda, "Cascadia Code", inter, verdana;
+  font-family: var(--inline-title-font, menda, "Cascadia Code", inter, verdana);
 }
 
 html[saved-theme="light"] body h3 {
-  color: rgb(138, 92, 245);
-  font-family: menda, "Cascadia Code", inter, verdana;
+  color: var(--accent-color-light10, rgb(138, 92, 245));
+  font-family: var(--h3-font, menda, "Cascadia Code", inter, verdana);
 }
 
 html[saved-theme="light"] body h4 {
-  color: rgba(138, 92, 245, 0.8);
-  font-family: menda, "Cascadia Code", inter, verdana;
+  color: var(--accent-color-light8, rgba(138, 92, 245, 0.8));
+  font-family: var(--h4-font, menda, "Cascadia Code", inter, verdana);
 }
 
 html[saved-theme="light"] body h5 {
-  color: rgba(138, 92, 245, 0.7);
-  font-family: menda, "Cascadia Code", inter, verdana;
+  color: var(--accent-color-light7, rgba(138, 92, 245, 0.7));
+  font-family: var(--h5-font, menda, "Cascadia Code", inter, verdana);
 }
 
 html[saved-theme="light"] body h6 {
-  color: rgba(138, 92, 245, 0.6);
-  font-family: menda, "Cascadia Code", inter, verdana;
+  color: var(--accent-color-light6, rgba(138, 92, 245, 0.6));
+  font-family: var(--h6-font, menda, "Cascadia Code", inter, verdana);
 }
 
 html[saved-theme="light"] body hr {
@@ -2297,7 +2810,7 @@ html[saved-theme="light"] body hr {
   margin-top: 15px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -2308,14 +2821,14 @@ html[saved-theme="light"] body hr {
   padding-top: 1.6px;
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  font-weight: 300;
+  font-weight: var(--nav-item-weight, 300);
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  font-weight: 300;
+  font-weight: var(--nav-item-weight, 300);
 }`,
     toc: `html[saved-theme="light"] body li.depth-0 {
-  font-weight: 300;
+  font-weight: var(--nav-item-weight, 300);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 5px;
@@ -2324,7 +2837,7 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-right-radius: 5px;
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--status-bar-background, rgb(255, 255, 255));
   border-bottom-color: rgb(92, 92, 92);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -2357,24 +2870,24 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
 }
 
 html[saved-theme="light"] body .canvas-node-file {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--accent-color-bg, rgb(255, 255, 255));
 }`,
     bases: `html[saved-theme="light"] body .bases-table thead th {
   border-color: rgb(138, 92, 245);
-  font-weight: 300;
+  font-weight: var(--table-header-weight, 300);
 }`,
     properties: `html[saved-theme="light"] body .note-properties-key {
   font-weight: 300;
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background-secondary, rgb(255, 255, 255));
 }
 
 html[saved-theme="light"] body .stacked-page-header {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--tab-container-background, rgb(255, 255, 255));
 }`,
     misc: `html[saved-theme="light"] body .navigation-progress {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--status-bar-background, rgb(255, 255, 255));
 }
 
 html[saved-theme="light"] body kbd {

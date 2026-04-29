@@ -4,56 +4,55 @@ export const theme: ThemeData = {
   meta: { name: "rezin", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
-  --background-primary: #181824;
-  --background-secondary: #0f0f18;
-  --background-secondary-alt: #181824;
-  --bases-cards-background: #181824;
-  --bases-table-cell-background-active: #181824;
-  --bases-table-header-background: #181824;
-  --bases-table-summary-background: #181824;
-  --canvas-background: #181824;
-  --caret-color: #4baaa8;
-  --checkbox-marker-color: #181824;
-  --code-normal: #4baaa8;
-  --dark: var(--text-normal, #4baaa8);
-  --darkgray: var(--text-normal, #4baaa8);
-  --file-header-background: #181824;
-  --file-header-background-focused: #181824;
-  --flair-color: #4baaa8;
+  --background-primary: var(--color-base-00, #181824);
+  --background-secondary: var(--color-base-20, #0f0f18);
+  --background-secondary-alt: var(--color-base-30, #181824);
+  --bases-cards-background: var(--background-primary, #181824);
+  --bases-table-cell-background-active: var(--background-primary, #181824);
+  --bases-table-header-background: var(--background-primary, #181824);
+  --bases-table-summary-background: var(--background-primary, #181824);
+  --canvas-background: var(--background-primary, #181824);
+  --caret-color: var(--text-normal, #4baaa8);
+  --checkbox-marker-color: var(--background-primary, #181824);
+  --code-normal: var(--text-normal, #4baaa8);
+  --dark: var(--text-normal, var(--color-base-100, #4baaa8));
+  --darkgray: var(--text-normal, var(--color-base-100, #4baaa8));
+  --file-header-background: var(--background-primary, #181824);
+  --file-header-background-focused: var(--background-primary, #181824);
+  --flair-color: var(--text-normal, #4baaa8);
   --font-family-editor: Avenir, Avenir Next, sans-serif;
-  --graph-text: #4baaa8;
-  --gray: var(--text-normal, #4baaa8);
-  --icon-color-focused: #4baaa8;
-  --light: var(--background-primary, #181824);
-  --lightgray: var(--background-secondary, #0f0f18);
-  --menu-background: #0f0f18;
-  --metadata-input-text-color: #4baaa8;
-  --modal-background: #181824;
-  --nav-heading-color: #4baaa8;
-  --nav-heading-color-hover: #4baaa8;
-  --nav-item-color-active: #4baaa8;
-  --nav-item-color-hover: #4baaa8;
-  --nav-item-color-selected: #4baaa8;
-  --pdf-background: #181824;
-  --pdf-page-background: #181824;
-  --pdf-sidebar-background: #181824;
-  --pill-color-hover: #4baaa8;
-  --prompt-background: #181824;
-  --ribbon-background: #0f0f18;
-  --ribbon-background-collapsed: #181824;
-  --search-result-background: #181824;
-  --setting-group-heading-color: #4baaa8;
-  --status-bar-background: #0f0f18;
-  --suggestion-background: #181824;
-  --tab-background-active: #181824;
-  --tab-container-background: #0f0f18;
-  --tab-switcher-background: #0f0f18;
-  --tab-switcher-menubar-background: linear-gradient(to top, #0f0f18, transparent);
-  --tab-text-color-focused-active-current: #4baaa8;
-  --table-header-color: #4baaa8;
+  --graph-text: var(--text-normal, #4baaa8);
+  --gray: var(--text-normal, var(--color-base-100, #4baaa8));
+  --icon-color-focused: var(--text-normal, #4baaa8);
+  --light: var(--background-primary, var(--color-base-00, #181824));
+  --lightgray: var(--background-secondary, var(--color-base-20, #0f0f18));
+  --menu-background: var(--background-secondary, #0f0f18);
+  --metadata-input-text-color: var(--text-normal, #4baaa8);
+  --modal-background: var(--background-primary, #181824);
+  --nav-heading-color: var(--text-normal, #4baaa8);
+  --nav-heading-color-hover: var(--text-normal, #4baaa8);
+  --nav-item-color-active: var(--text-normal, #4baaa8);
+  --nav-item-color-hover: var(--text-normal, #4baaa8);
+  --nav-item-color-selected: var(--text-normal, #4baaa8);
+  --pdf-background: var(--background-primary, #181824);
+  --pdf-page-background: var(--background-primary, #181824);
+  --pdf-sidebar-background: var(--background-primary, #181824);
+  --pill-color-hover: var(--text-normal, #4baaa8);
+  --prompt-background: var(--background-primary, #181824);
+  --ribbon-background: var(--background-secondary, #0f0f18);
+  --ribbon-background-collapsed: var(--background-primary, #181824);
+  --search-result-background: var(--background-primary, #181824);
+  --setting-group-heading-color: var(--text-normal, #4baaa8);
+  --status-bar-background: var(--background-secondary, #0f0f18);
+  --suggestion-background: var(--background-primary, #181824);
+  --tab-background-active: var(--background-primary, #181824);
+  --tab-container-background: var(--background-secondary, #0f0f18);
+  --tab-switcher-background: var(--background-secondary, #0f0f18);
+  --tab-text-color-focused-active-current: var(--text-normal, #4baaa8);
+  --table-header-color: var(--text-normal, #4baaa8);
   --text-a: #bea63a;
   --text-italic: #b37ceb;
-  --text-normal: #4baaa8;
+  --text-normal: var(--color-base-100, #4baaa8);
   --text-strong: #af3943;
   --text-title-h1: #af3943;
   --text-title-h2: #fcf601;
@@ -61,11 +60,11 @@ export const theme: ThemeData = {
   --text-title-h4: #7f5cc0;
   --text-title-h5: #b42478;
   --text-title-h6: #6171ff;
-  --titlebar-background: #0f0f18;
-  --titlebar-background-focused: #181824;
-  --titlebar-text-color-focused: #4baaa8;
-  --vault-profile-color: #4baaa8;
-  --vault-profile-color-hover: #4baaa8;
+  --titlebar-background: var(--background-secondary, #0f0f18);
+  --titlebar-background-focused: var(--background-secondary-alt, #181824);
+  --titlebar-text-color-focused: var(--text-normal, #4baaa8);
+  --vault-profile-color: var(--text-normal, #4baaa8);
+  --vault-profile-color-hover: var(--vault-profile-color, #4baaa8);
   --vim-cursor: #fcf601;
   --quartz-icon-color: currentColor;
 }
@@ -76,50 +75,50 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(15, 15, 24);
+  background-color: var(--tab-container-background, rgb(15, 15, 24));
   color: rgb(75, 170, 168);
 }
 
 html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
-  background-color: rgb(24, 24, 36);
+  background-color: var(--background-primary, rgb(24, 24, 36));
   color: rgb(75, 170, 168);
 }
 
 html body .page > div#quartz-body div.sidebar {
-  background-color: rgb(15, 15, 24);
+  background-color: var(--background-secondary, rgb(15, 15, 24));
   color: rgb(75, 170, 168);
 }
 
 html body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(15, 15, 24);
+  background-color: var(--tab-container-background, rgb(15, 15, 24));
   color: rgb(75, 170, 168);
 }`,
     typography: `html body .markdown-rendered p > b, html b {
-  color: rgb(175, 57, 67);
+  color: var(--text-strong, rgb(175, 57, 67));
   outline: rgb(175, 57, 67) none 0px;
   text-decoration-color: rgb(175, 57, 67);
 }
 
 html body .markdown-rendered p > em, html em {
-  color: rgb(179, 124, 235);
+  color: var(--text-italic, rgb(179, 124, 235));
   outline: rgb(179, 124, 235) none 0px;
   text-decoration-color: rgb(179, 124, 235);
 }
 
 html body .markdown-rendered p > i, html i {
-  color: rgb(179, 124, 235);
+  color: var(--text-italic, rgb(179, 124, 235));
   outline: rgb(179, 124, 235) none 0px;
   text-decoration-color: rgb(179, 124, 235);
 }
 
 html body .markdown-rendered p > strong, html strong {
-  color: rgb(175, 57, 67);
+  color: var(--text-strong, rgb(175, 57, 67));
   outline: rgb(175, 57, 67) none 0px;
   text-decoration-color: rgb(175, 57, 67);
 }
 
 html body .text-highlight {
-  color: rgb(75, 170, 168);
+  color: var(--text-normal, rgb(75, 170, 168));
   outline: rgb(75, 170, 168) none 0px;
   text-decoration-color: rgb(75, 170, 168);
 }
@@ -131,7 +130,7 @@ html body del {
 }
 
 html body h1.article-title {
-  color: rgb(75, 170, 168);
+  color: var(--text-normal, rgb(75, 170, 168));
 }
 
 html body li.task-list-item input[type="checkbox"] {
@@ -142,23 +141,23 @@ html body li.task-list-item input[type="checkbox"] {
 }
 
 html body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(15, 15, 24);
+  background-color: var(--background-secondary, rgb(15, 15, 24));
   border-color: rgb(20, 82, 133);
 }`,
     links: `html body a.external-link, html footer a {
-  color: rgb(190, 166, 58);
+  color: var(--text-a, rgb(190, 166, 58));
   outline: rgb(190, 166, 58) none 0px;
   text-decoration-color: rgb(190, 166, 58);
 }
 
 html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(190, 166, 58);
+  color: var(--text-a, rgb(190, 166, 58));
   outline: rgb(190, 166, 58) none 0px;
   text-decoration-color: rgb(190, 166, 58);
 }
 
 html body a.internal-link.broken {
-  color: rgb(190, 166, 58);
+  color: var(--text-a, rgb(190, 166, 58));
   outline: rgb(190, 166, 58) none 0px;
 }`,
     lists: `html body dd {
@@ -184,7 +183,7 @@ html body ul.overflow {
   border-top-color: rgb(75, 170, 168);
 }`,
     blockquotes: `html body .data-footnote-backref {
-  color: rgb(190, 166, 58);
+  color: var(--text-a, rgb(190, 166, 58));
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(75, 170, 168);
@@ -198,15 +197,15 @@ html body table {
 }
 
 html body td {
-  color: rgb(75, 170, 168);
+  color: var(--table-text-color, rgb(75, 170, 168));
 }
 
 html body th {
   background-color: rgb(15, 15, 26);
-  color: rgb(175, 57, 67);
+  color: var(--text-title-h1, rgb(175, 57, 67));
 }`,
     code: `html body code {
-  color: rgb(75, 170, 168);
+  color: var(--code-normal, rgb(75, 170, 168));
 }
 
 html body pre:has(> code) {
@@ -281,6 +280,266 @@ html body .transclude-inner {
   border-top-right-radius: 30%;
   border-top-width: 2px;
   margin-right: 6px;
+}
+
+html body li.task-list-item[data-task="#"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="$"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="%"] {
+  color: rgb(75, 170, 168);
+}
+
+html li.task-list-item[data-task="body"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="'"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="+"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task=", html "] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="."] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="0"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="1"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="2"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="3"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="4"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="5"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="6"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="7"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="8"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="9"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task=":"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task=";"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="<"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="="] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="@"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="A"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="B"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="C"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="D"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="E"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="F"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="G"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="H"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="J"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="K"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="L"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="M"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="N"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="O"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="P"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="Q"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="R"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="T"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="U"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="V"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="W"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="Y"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="Z"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="_"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="\`"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="a"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="e"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="g"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="h"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="j"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="m"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="n"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="o"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="q"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="r"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="s"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="t"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="v"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="y"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="z"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="|"] {
+  color: rgb(75, 170, 168);
+}
+
+html body li.task-list-item[data-task="~"] {
+  color: rgb(75, 170, 168);
 }
 
 html body li.task-list-item[data-task='!'] {
@@ -571,7 +830,7 @@ html body .callout > .callout-content {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   color: rgb(75, 170, 168);
 }
 
@@ -584,7 +843,7 @@ html body .callout[data-callout="abstract"] > .callout-content {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   color: rgb(75, 170, 168);
 }
 
@@ -597,7 +856,7 @@ html body .callout[data-callout="bug"] > .callout-content {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   color: rgb(75, 170, 168);
 }
 
@@ -610,7 +869,7 @@ html body .callout[data-callout="danger"] > .callout-content {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   color: rgb(75, 170, 168);
 }
 
@@ -623,7 +882,7 @@ html body .callout[data-callout="example"] > .callout-content {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   color: rgb(75, 170, 168);
 }
 
@@ -636,7 +895,7 @@ html body .callout[data-callout="failure"] > .callout-content {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   color: rgb(75, 170, 168);
 }
 
@@ -649,7 +908,7 @@ html body .callout[data-callout="info"] > .callout-content {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   color: rgb(75, 170, 168);
 }
 
@@ -662,7 +921,7 @@ html body .callout[data-callout="note"] > .callout-content {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   color: rgb(75, 170, 168);
 }
 
@@ -675,7 +934,7 @@ html body .callout[data-callout="question"] > .callout-content {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   color: rgb(75, 170, 168);
 }
 
@@ -688,7 +947,7 @@ html body .callout[data-callout="quote"] > .callout-content {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   color: rgb(75, 170, 168);
 }
 
@@ -701,7 +960,7 @@ html body .callout[data-callout="success"] > .callout-content {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   color: rgb(75, 170, 168);
 }
 
@@ -714,7 +973,7 @@ html body .callout[data-callout="tip"] > .callout-content {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   color: rgb(75, 170, 168);
 }
 
@@ -727,7 +986,7 @@ html body .callout[data-callout="todo"] > .callout-content {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   color: rgb(75, 170, 168);
 }
 
@@ -795,11 +1054,11 @@ html body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html body .search > .search-button {
-  color: rgb(75, 170, 168);
+  color: var(--text-normal, rgb(75, 170, 168));
 }
 
 html body .search > .search-container > .search-space {
-  background-color: rgb(24, 24, 36);
+  background-color: var(--prompt-background, rgb(24, 24, 36));
 }
 
 html body .search > .search-container > .search-space > * {
@@ -847,54 +1106,54 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body h1 {
-  color: rgb(175, 57, 67);
-  font-family: Avenir, "Avenir Next", sans-serif;
+  color: var(--text-title-h1, rgb(175, 57, 67));
+  font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
 }
 
 html body h1.article-title {
-  color: rgb(175, 57, 67);
+  color: var(--text-title-h1, rgb(175, 57, 67));
 }
 
 html body h2 {
-  color: rgb(252, 246, 1);
-  font-family: Avenir, "Avenir Next", sans-serif;
+  color: var(--text-title-h2, rgb(252, 246, 1));
+  font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
 }
 
 html body h2.page-title, html h2.page-title a {
-  color: rgb(175, 57, 67);
+  color: var(--text-title-h1, rgb(175, 57, 67));
 }
 
 html body h3 {
-  color: rgb(13, 150, 104);
-  font-family: Avenir, "Avenir Next", sans-serif;
+  color: var(--text-title-h3, rgb(13, 150, 104));
+  font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
 }
 
 html body h4 {
-  color: rgb(127, 92, 192);
-  font-family: Avenir, "Avenir Next", sans-serif;
+  color: var(--text-title-h4, rgb(127, 92, 192));
+  font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
 }
 
 html body h5 {
-  color: rgb(180, 36, 120);
-  font-family: Avenir, "Avenir Next", sans-serif;
+  color: var(--text-title-h5, rgb(180, 36, 120));
+  font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
 }
 
 html body h6 {
-  color: rgb(97, 113, 255);
-  font-family: Avenir, "Avenir Next", sans-serif;
+  color: var(--text-title-h6, rgb(97, 113, 255));
+  font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
 }
 
 html body hr {
   border-top-color: rgb(13, 150, 104);
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(75, 170, 168);
 }`,
     footer: `html body footer {
-  background-color: rgb(15, 15, 24);
+  background-color: var(--status-bar-background, rgb(15, 15, 24));
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgb(75, 170, 168);
@@ -929,7 +1188,7 @@ html body .canvas-node-content {
 }
 
 html body .canvas-node-file {
-  color: rgb(75, 170, 168);
+  color: var(--text-normal, rgb(75, 170, 168));
 }
 
 html body .canvas-node-group {
@@ -937,16 +1196,16 @@ html body .canvas-node-group {
 }
 
 html body .canvas-sidebar {
-  background-color: rgb(15, 15, 24);
+  background-color: var(--background-secondary, rgb(15, 15, 24));
   border-color: rgb(75, 170, 168);
 }`,
     bases: `html body .bases-table thead th {
   background-color: rgb(15, 15, 26);
-  color: rgb(175, 57, 67);
+  color: var(--text-title-h1, rgb(175, 57, 67));
 }`,
     properties: `html body div#quartz-root {
-  background-color: rgb(24, 24, 36);
-  color: rgb(75, 170, 168);
+  background-color: var(--background-primary, rgb(24, 24, 36));
+  color: var(--text-normal, rgb(75, 170, 168));
 }
 
 html body ol.overflow {
@@ -956,12 +1215,12 @@ html body ol.overflow {
   border-top-color: rgb(75, 170, 168);
 }`,
     stacked: `html body .stacked-page {
-  background-color: rgb(15, 15, 24);
+  background-color: var(--background-secondary, rgb(15, 15, 24));
   border-color: rgb(75, 170, 168);
 }
 
 html body .stacked-page-header {
-  background-color: rgb(24, 24, 36);
+  background-color: var(--tab-container-background, rgb(24, 24, 36));
 }
 
 html body .stacked-page.active {
@@ -976,11 +1235,11 @@ html body .stacked-page.active {
 }
 
 html body .navigation-progress {
-  background-color: rgb(15, 15, 24);
+  background-color: var(--status-bar-background, rgb(15, 15, 24));
 }
 
 html body .page-header h2.page-title {
-  color: rgb(75, 170, 168);
+  color: var(--text-normal, rgb(75, 170, 168));
 }
 
 html body abbr {
@@ -999,7 +1258,7 @@ html body kbd {
   border-left-color: rgb(75, 170, 168);
   border-right-color: rgb(75, 170, 168);
   border-top-color: rgb(75, 170, 168);
-  color: rgb(75, 170, 168);
+  color: var(--code-normal, rgb(75, 170, 168));
 }
 
 html body progress {
@@ -1022,7 +1281,7 @@ html body sup {
 }
 
 html body ul.tags > li {
-  color: rgb(190, 166, 58);
+  color: var(--text-a, rgb(190, 166, 58));
 }`,
   },
   light: {},

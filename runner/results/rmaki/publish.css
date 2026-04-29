@@ -1230,15 +1230,11 @@ body.theme-dark {
   --text: hsl(212, 61%, 91%) !important;
   --white: hsl(212, 61%, 91%) !important;
   --small: 0.7rem !important;
-  --black: hsl(240, 7%, 12%) !important;
   --border: 0.5px solid hsl(246, 28%, 48%) !important;
+  --black: hsl(240, 7%, 12%) !important;
   --font: "Fira Code", monospace !important;
   --tab-background: hsl(240, 7%, 7%) !important;
   --sidebar-background: hsl(240, 7%, 12%) !important;
-  --black-dark-1: hsl(240, 7%, 7%) !important;
-  --black-light-1: hsl(240, 7%, 17%) !important;
-  --black-light-2: hsl(240, 7%, 22%) !important;
-  --black-light-3: hsl(240, 7%, 27%) !important;
   --current-line-bg: hsl(240, 7%, 12%) !important;
   --editor-background: hsl(240, 7%, 7%) !important;
   --editor-icons: hsl(211, 19%, 60%) !important;
@@ -1247,20 +1243,27 @@ body.theme-dark {
   --explorer-active-bg: hsl(164, 68%, 72%) !important;
   --explorer-hover: hsl(240, 7%, 17%) !important;
   --formatting: hsl(164, 68%, 72%) !important;
+  --icon-accent: hsl(164, 68%, 72%) !important;
+  --icon-hover: hsl(164, 68%, 72%) !important;
+  --icon-normal: hsl(246, 28%, 48%) !important;
+  --line-number: hsl(246, 28%, 33%) !important;
+  --list: hsl(246, 28%, 48%) !important;
+  --popup-dark: hsl(240, 7%, 7%) !important;
+  --search-bar: hsl(240, 7%, 17%) !important;
+  --search-hover: hsl(246, 28%, 48%) !important;
+  --text-mute: hsl(211, 19%, 60%) !important;
+  --black-dark-1: hsl(240, 7%, 7%) !important;
+  --black-light-1: hsl(240, 7%, 17%) !important;
+  --black-light-2: hsl(240, 7%, 22%) !important;
+  --black-light-3: hsl(240, 7%, 27%) !important;
   --h-black: 240 !important;
   --h-purple: 246 !important;
   --h-white: 212 !important;
   --heading: 1.1rem !important;
-  --icon-accent: hsl(164, 68%, 72%) !important;
-  --icon-hover: hsl(164, 68%, 72%) !important;
-  --icon-normal: hsl(246, 28%, 48%) !important;
   --l-black: 12% !important;
   --l-purple: 48% !important;
   --l-white: 91% !important;
-  --line-number: hsl(246, 28%, 33%) !important;
-  --list: hsl(246, 28%, 48%) !important;
   --par: 0.9rem !important;
-  --popup-dark: hsl(240, 7%, 7%) !important;
   --purple-dark-1: hsl(246, 28%, 43%) !important;
   --purple-dark-2: hsl(246, 28%, 38%) !important;
   --purple-dark-3: hsl(246, 28%, 33%) !important;
@@ -1273,9 +1276,6 @@ body.theme-dark {
   --s-black: 7% !important;
   --s-purple: 28% !important;
   --s-white: 61% !important;
-  --search-bar: hsl(240, 7%, 17%) !important;
-  --search-hover: hsl(246, 28%, 48%) !important;
-  --text-mute: hsl(211, 19%, 60%) !important;
   --white-dark-1: hsl(212, 61%, 86%) !important;
   --white-dark-2: hsl(212, 61%, 81%) !important;
   --white-dark-3: hsl(211, 19%, 60%) !important;
@@ -1305,7 +1305,7 @@ body {
 }
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 231, 246);
+  color: var(--white, rgb(218, 231, 246));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -1314,7 +1314,7 @@ body body.theme-dark .markdown-rendered a.external-link {
   font-weight: var(--link-weight, 400);
   outline: rgb(218, 231, 246) none 0px;
   text-decoration: underline rgb(135, 232, 206);
-  text-decoration-color: rgb(135, 232, 206);
+  text-decoration-color: var(--accent, rgb(135, 232, 206));
   text-decoration-line: var(--link-external-decoration, underline);
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
@@ -1331,7 +1331,7 @@ body body.theme-dark .markdown-rendered a.external-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--link-color, rgb(166, 138, 249));
+  color: var(--white, rgb(166, 138, 249));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -1340,7 +1340,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
   font-weight: var(--link-weight, 400);
   outline: rgb(166, 138, 249) none 0px;
   text-decoration: underline rgb(135, 232, 206);
-  text-decoration-color: rgb(135, 232, 206);
+  text-decoration-color: var(--accent, rgb(135, 232, 206));
   text-decoration-line: var(--link-decoration, underline);
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
@@ -1366,7 +1366,7 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   font-weight: var(--link-weight, 400);
   outline: rgb(166, 138, 249) none 0px;
   text-decoration: underline rgb(135, 232, 206);
-  text-decoration-color: rgb(135, 232, 206);
+  text-decoration-color: var(--accent, rgb(135, 232, 206));
   text-decoration-line: var(--link-decoration, underline);
   text-decoration-style: var(--link-unresolved-decoration-style, solid);
   transition: opacity 0.14s ease-in-out;
@@ -1422,7 +1422,7 @@ body body.theme-dark .markdown-rendered p {
 }
 body body.theme-dark strong {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 231, 246);
+  color: var(--bold-color, rgb(218, 231, 246));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -1448,7 +1448,7 @@ body body.theme-dark strong {
 }
 body body.theme-dark b {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 231, 246);
+  color: var(--bold-color, rgb(218, 231, 246));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -1474,7 +1474,7 @@ body body.theme-dark b {
 }
 body body.theme-dark em {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 231, 246);
+  color: var(--italic-color, rgb(218, 231, 246));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -1500,7 +1500,7 @@ body body.theme-dark em {
 }
 body body.theme-dark i {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 231, 246);
+  color: var(--italic-color, rgb(218, 231, 246));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -1525,8 +1525,8 @@ body body.theme-dark i {
   animation-play-state: running;
 }
 body body.theme-dark .markdown-rendered mark {
-  background-color: rgb(135, 232, 206);
-  color: rgb(17, 17, 19);
+  background-color: var(--accent, rgb(135, 232, 206));
+  color: var(--black-dark-1, rgb(17, 17, 19));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -1812,11 +1812,11 @@ body body.theme-dark .markdown-rendered blockquote {
   margin-inline-end: 40px;
 }
 body body.theme-dark .footnote-backref {
-  color: rgb(218, 231, 246);
+  color: var(--white, rgb(218, 231, 246));
   text-decoration: underline rgb(135, 232, 206);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
-  background-color: rgb(17, 17, 19);
+  background-color: var(--black-dark-1, rgb(17, 17, 19));
   border: 1px solid rgb(54, 54, 54);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -1826,7 +1826,7 @@ body body.theme-dark .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(218, 231, 246);
+  color: var(--text-normal, rgb(218, 231, 246));
   font-family: "Fira Code", monospace;
 }
 body body.theme-dark .search-results {
@@ -1910,33 +1910,33 @@ body body.theme-dark div.search-results .suggestion-item.is-selected {
   color: rgb(218, 218, 218);
 }
 body body.theme-dark .published-container .markdown-rendered h1 {
-  color: rgb(135, 232, 206);
-  font-family: "Fira Code", monospace;
+  color: var(--accent, rgb(135, 232, 206));
+  font-family: var(--h1-font, "Fira Code", monospace);
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
-  color: rgb(95, 88, 157);
-  font-family: "Fira Code", monospace;
+  color: var(--purple, rgb(95, 88, 157));
+  font-family: var(--h2-font, "Fira Code", monospace);
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
-  color: rgb(140, 134, 187);
-  font-family: "Fira Code", monospace;
+  color: var(--purple-light-3, rgb(140, 134, 187));
+  font-family: var(--h3-font, "Fira Code", monospace);
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
-  color: rgb(95, 88, 157);
-  font-family: "Fira Code", monospace;
+  color: var(--purple, rgb(95, 88, 157));
+  font-family: var(--h4-font, "Fira Code", monospace);
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
-  color: rgb(135, 232, 206);
-  font-family: "Fira Code", monospace;
+  color: var(--accent, rgb(135, 232, 206));
+  font-family: var(--h5-font, "Fira Code", monospace);
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
-  color: rgb(95, 88, 157);
-  font-family: "Fira Code", monospace;
+  color: var(--purple, rgb(95, 88, 157));
+  font-family: var(--h6-font, "Fira Code", monospace);
   text-shadow: none;
 }
 body
@@ -1997,7 +1997,7 @@ body body.theme-dark body {
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border: 0px solid rgba(2, 122, 255, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2047,7 +2047,7 @@ body body.theme-dark .callout > .callout-content {
   padding: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -2084,7 +2084,7 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2121,7 +2121,7 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2158,7 +2158,7 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -2195,7 +2195,7 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
@@ -2232,7 +2232,7 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -2269,7 +2269,7 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -2306,7 +2306,7 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2343,7 +2343,7 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2380,7 +2380,7 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2417,7 +2417,7 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
@@ -2454,7 +2454,7 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -2532,7 +2532,7 @@ body body.theme-dark .markdown-rendered tbody {
 }
 body body.theme-dark .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(135, 232, 206);
+  color: var(--accent, rgb(135, 232, 206));
   font-weight: var(--table-header-weight, 600);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
@@ -2864,7 +2864,7 @@ body body.theme-dark kbd {
     "Source Code Pro",
     monospace
   );
-  font-size: 12.6px;
+  font-size: var(--code-size, 12.6px);
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -3099,7 +3099,7 @@ body body.theme-dark .clickable-icon {
   border-bottom-right-radius: 4px;
 }
 body body.theme-dark .site-footer {
-  background-color: rgb(17, 17, 19);
+  background-color: var(--editor-background, rgb(17, 17, 19));
   color: var(--status-bar-text-color, rgb(179, 179, 179));
   font-family: "Fira Code", monospace;
   border-color: rgb(95, 88, 157) rgb(54, 54, 54) rgb(54, 54, 54);
@@ -3111,7 +3111,7 @@ body body.theme-dark .site-footer {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .site-footer a {
-  color: rgb(134, 152, 172);
+  color: var(--text-mute, rgb(134, 152, 172));
 }
 body body.theme-dark .nav-header {
   color: rgb(218, 218, 218);
@@ -3129,7 +3129,7 @@ body body.theme-dark .nav-files-container .tree-item {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .nav-file-title {
-  color: rgb(134, 152, 172);
+  color: var(--text-mute, rgb(134, 152, 172));
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(134, 152, 172);
@@ -3187,7 +3187,7 @@ body body.theme-dark .view-header-breadcrumb-separator {
     sans-serif;
 }
 body body.theme-dark .page-header .page-title {
-  color: rgb(218, 231, 246);
+  color: var(--editor-title, rgb(218, 231, 246));
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3287,7 +3287,7 @@ body body.theme-dark pre > code [data-highlighted-chars] {
 }
 body body.theme-dark .tag {
   background-color: var(--tag-background, rgba(138, 92, 245, 0.1));
-  color: rgb(218, 231, 246);
+  color: var(--white, rgb(218, 231, 246));
   border: 0px solid rgba(138, 92, 245, 0.15);
   border-top-left-radius: 22.05px;
   border-top-right-radius: 22.05px;

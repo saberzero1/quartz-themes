@@ -4,28 +4,28 @@ export const theme: ThemeData = {
   meta: { name: "blackbird", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
-  --background-primary: #000000;
-  --background-primary-alt: #000000;
-  --background-secondary: #000000;
-  --background-secondary-alt: #000000;
-  --bases-cards-background: #000000;
-  --bases-cards-cover-background: #000000;
-  --bases-group-heading-property-color: #E1DC3F;
-  --bases-table-cell-background-active: #000000;
-  --bases-table-cell-background-disabled: #000000;
-  --bases-table-group-background: #000000;
-  --bases-table-header-background: #000000;
-  --bases-table-header-color: #E1DC3F;
-  --bases-table-summary-background: #000000;
-  --canvas-background: #000000;
-  --caret-color: #FDF7CD;
-  --checkbox-border-color-hover: #E1DC3F;
-  --checkbox-marker-color: #000000;
-  --checklist-done-color: #E1DC3F;
-  --code-background: #000000;
-  --code-normal: #FDF7CD;
-  --code-punctuation: #E1DC3F;
-  --collapse-icon-color-collapsed: #E92741;
+  --background-primary: var(--color-base-00, #000000);
+  --background-primary-alt: var(--color-base-10, #000000);
+  --background-secondary: var(--color-base-20, #000000);
+  --background-secondary-alt: var(--color-base-30, #000000);
+  --bases-cards-background: var(--background-primary, #000000);
+  --bases-cards-cover-background: var(--background-primary-alt, #000000);
+  --bases-group-heading-property-color: var(--text-muted, #E1DC3F);
+  --bases-table-cell-background-active: var(--background-primary, #000000);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #000000);
+  --bases-table-group-background: var(--background-primary-alt, #000000);
+  --bases-table-header-background: var(--background-primary, #000000);
+  --bases-table-header-color: var(--text-muted, #E1DC3F);
+  --bases-table-summary-background: var(--background-primary, #000000);
+  --canvas-background: var(--background-primary, #000000);
+  --caret-color: var(--text-normal, #FDF7CD);
+  --checkbox-border-color-hover: var(--text-muted, #E1DC3F);
+  --checkbox-marker-color: var(--background-primary, #000000);
+  --checklist-done-color: var(--text-muted, #E1DC3F);
+  --code-background: var(--background-primary-alt, #000000);
+  --code-normal: var(--text-normal, #FDF7CD);
+  --code-punctuation: var(--text-muted, #E1DC3F);
+  --collapse-icon-color-collapsed: var(--text-accent, #E92741);
   --color-1: #FDF7CD;
   --color-2: #00ECD8;
   --color-3: #E92741;
@@ -33,92 +33,90 @@ export const theme: ThemeData = {
   --color-5: #E1DC3F;
   --color-6: #418FDD;
   --color-7: #FF9900;
-  --dark: var(--text-normal, #FDF7CD);
-  --darkgray: var(--text-normal, #FDF7CD);
-  --file-header-background: #000000;
-  --file-header-background-focused: #000000;
-  --flair-color: #FDF7CD;
-  --footnote-id-color: #E1DC3F;
-  --graph-node: #E1DC3F;
-  --graph-node-focused: #E92741;
-  --graph-text: #FDF7CD;
-  --gray: var(--text-muted, #E1DC3F);
-  --icon-color: #E1DC3F;
-  --icon-color-active: #E92741;
-  --icon-color-focused: #FDF7CD;
-  --icon-color-hover: #E1DC3F;
+  --dark: var(--text-normal, var(--color-1, #FDF7CD));
+  --darkgray: var(--text-normal, var(--color-1, #FDF7CD));
+  --file-header-background: var(--background-primary, #000000);
+  --file-header-background-focused: var(--background-primary, #000000);
+  --flair-color: var(--text-normal, #FDF7CD);
+  --footnote-id-color: var(--text-muted, #E1DC3F);
+  --graph-node: var(--text-muted, #E1DC3F);
+  --graph-node-focused: var(--text-accent, #E92741);
+  --graph-text: var(--text-normal, #FDF7CD);
+  --gray: var(--text-muted, var(--color-5, #E1DC3F));
+  --icon-color: var(--text-muted, #E1DC3F);
+  --icon-color-active: var(--text-accent, #E92741);
+  --icon-color-focused: var(--text-normal, #FDF7CD);
+  --icon-color-hover: var(--text-muted, #E1DC3F);
   --interactive-accent-rgb: 72, 54, 153;
-  --light: var(--background-primary, #000000);
-  --lightgray: var(--background-secondary, #000000);
-  --link-color: #E92741;
-  --link-external-color: #E92741;
-  --link-unresolved-color: #E92741;
-  --list-marker-color-collapsed: #E92741;
-  --list-marker-color-hover: #E1DC3F;
-  --menu-background: #000000;
-  --metadata-input-text-color: #FDF7CD;
-  --metadata-label-text-color: #E1DC3F;
-  --metadata-label-text-color-hover: #E1DC3F;
-  --modal-background: #000000;
-  --nav-heading-color: #FDF7CD;
-  --nav-heading-color-collapsed-hover: #E1DC3F;
-  --nav-heading-color-hover: #FDF7CD;
-  --nav-item-color: #E1DC3F;
-  --nav-item-color-active: #FDF7CD;
-  --nav-item-color-highlighted: #E92741;
-  --nav-item-color-hover: #FDF7CD;
-  --nav-item-color-selected: #FDF7CD;
-  --nav-tag-color-active: #E1DC3F;
-  --nav-tag-color-hover: #E1DC3F;
-  --pdf-background: #000000;
-  --pdf-page-background: #000000;
-  --pdf-sidebar-background: #000000;
-  --pill-color: #E1DC3F;
-  --pill-color-hover: #FDF7CD;
-  --pill-color-remove-hover: #E92741;
-  --prompt-background: #000000;
-  --ribbon-background: #000000;
-  --ribbon-background-collapsed: #000000;
-  --search-clear-button-color: #E1DC3F;
-  --search-icon-color: #E1DC3F;
-  --search-result-background: #000000;
-  --secondary: var(--text-accent, #E92741);
-  --setting-group-heading-color: #FDF7CD;
-  --setting-items-background: #000000;
-  --shiki-active-tab-border-color: #E1DC3F;
-  --shiki-code-background: #000000;
-  --shiki-code-normal: #E1DC3F;
-  --shiki-code-punctuation: #E1DC3F;
-  --shiki-gutter-text-color-highlight: #E1DC3F;
-  --shiki-highlight-neutral: #E1DC3F;
-  --status-bar-background: #000000;
-  --status-bar-text-color: #E1DC3F;
-  --suggestion-background: #000000;
-  --tab-background-active: #000000;
-  --tab-container-background: #000000;
-  --tab-switcher-background: #000000;
-  --tab-switcher-menubar-background: linear-gradient(to top, #000000, transparent);
-  --tab-text-color-active: #E1DC3F;
-  --tab-text-color-focused: #E1DC3F;
-  --tab-text-color-focused-active: #E1DC3F;
-  --tab-text-color-focused-active-current: #FDF7CD;
-  --tab-text-color-focused-highlighted: #E92741;
-  --table-drag-handle-color-active: rgba(0, 0, 0, 0.8);
-  --table-header-color: #FDF7CD;
-  --tag-color: #E92741;
-  --tag-color-hover: #E92741;
-  --tertiary: var(--text-accent, #E92741);
-  --text-accent: #E92741;
-  --text-muted: #E1DC3F;
-  --text-normal: #FDF7CD;
+  --light: var(--background-primary, var(--color-base-00, #000000));
+  --lightgray: var(--background-secondary, var(--color-base-20, #000000));
+  --link-color: var(--text-accent, #E92741);
+  --link-external-color: var(--text-accent, #E92741);
+  --link-unresolved-color: var(--text-accent, #E92741);
+  --list-marker-color-collapsed: var(--text-accent, #E92741);
+  --list-marker-color-hover: var(--text-muted, #E1DC3F);
+  --menu-background: var(--background-secondary, #000000);
+  --metadata-input-text-color: var(--text-normal, #FDF7CD);
+  --metadata-label-text-color: var(--text-muted, #E1DC3F);
+  --metadata-label-text-color-hover: var(--text-muted, #E1DC3F);
+  --modal-background: var(--background-primary, #000000);
+  --nav-heading-color: var(--text-normal, #FDF7CD);
+  --nav-heading-color-collapsed-hover: var(--text-muted, #E1DC3F);
+  --nav-heading-color-hover: var(--text-normal, #FDF7CD);
+  --nav-item-color: var(--text-muted, #E1DC3F);
+  --nav-item-color-active: var(--text-normal, #FDF7CD);
+  --nav-item-color-highlighted: var(--text-accent, #E92741);
+  --nav-item-color-hover: var(--text-normal, #FDF7CD);
+  --nav-item-color-selected: var(--text-normal, #FDF7CD);
+  --nav-tag-color-active: var(--text-muted, #E1DC3F);
+  --nav-tag-color-hover: var(--text-muted, #E1DC3F);
+  --pdf-background: var(--background-primary, #000000);
+  --pdf-page-background: var(--background-primary, #000000);
+  --pdf-sidebar-background: var(--background-primary, #000000);
+  --pill-color: var(--text-muted, #E1DC3F);
+  --pill-color-hover: var(--text-normal, #FDF7CD);
+  --pill-color-remove-hover: var(--text-accent, #E92741);
+  --prompt-background: var(--background-primary, #000000);
+  --ribbon-background: var(--background-secondary, #000000);
+  --ribbon-background-collapsed: var(--background-primary, #000000);
+  --search-clear-button-color: var(--text-muted, #E1DC3F);
+  --search-icon-color: var(--text-muted, #E1DC3F);
+  --search-result-background: var(--background-primary, #000000);
+  --secondary: var(--text-accent, var(--color-3, #E92741));
+  --setting-group-heading-color: var(--text-normal, #FDF7CD);
+  --setting-items-background: var(--background-primary-alt, #000000);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, #E1DC3F);
+  --shiki-code-background: var(--code-background, #000000);
+  --shiki-code-normal: var(--text-muted, #E1DC3F);
+  --shiki-code-punctuation: var(--text-muted, #E1DC3F);
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, #E1DC3F);
+  --shiki-highlight-neutral: var(--shiki-code-normal, #E1DC3F);
+  --status-bar-background: var(--background-secondary, #000000);
+  --status-bar-text-color: var(--text-muted, #E1DC3F);
+  --suggestion-background: var(--background-primary, #000000);
+  --tab-background-active: var(--background-primary, #000000);
+  --tab-container-background: var(--background-secondary, #000000);
+  --tab-switcher-background: var(--background-secondary, #000000);
+  --tab-text-color-active: var(--text-muted, #E1DC3F);
+  --tab-text-color-focused: var(--text-muted, #E1DC3F);
+  --tab-text-color-focused-active: var(--text-muted, #E1DC3F);
+  --tab-text-color-focused-active-current: var(--text-normal, #FDF7CD);
+  --tab-text-color-focused-highlighted: var(--text-accent, #E92741);
+  --table-drag-handle-color-active: var(--text-on-accent, rgba(0, 0, 0, 0.8));
+  --table-header-color: var(--text-normal, #FDF7CD);
+  --tag-color: var(--text-accent, #E92741);
+  --tag-color-hover: var(--text-accent, #E92741);
+  --tertiary: var(--text-accent, var(--color-3, #E92741));
+  --text-accent: var(--color-3, #E92741);
+  --text-muted: var(--color-5, #E1DC3F);
+  --text-normal: var(--color-1, #FDF7CD);
   --text-on-accent: rgba(0, 0, 0, 0.8);
-  --text-selection: rgba(0, 122, 255, 0.2);
-  --titlebar-background: #000000;
-  --titlebar-background-focused: #000000;
-  --titlebar-text-color: #E1DC3F;
-  --titlebar-text-color-focused: #FDF7CD;
-  --vault-profile-color: #FDF7CD;
-  --vault-profile-color-hover: #FDF7CD;
+  --titlebar-background: var(--background-secondary, #000000);
+  --titlebar-background-focused: var(--background-secondary-alt, #000000);
+  --titlebar-text-color: var(--text-muted, #E1DC3F);
+  --titlebar-text-color-focused: var(--text-normal, #FDF7CD);
+  --vault-profile-color: var(--text-normal, #FDF7CD);
+  --vault-profile-color-hover: var(--vault-profile-color, #FDF7CD);
   --quartz-icon-color: currentColor;
 }
 
@@ -128,50 +126,50 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--tab-container-background, rgb(0, 0, 0));
   color: rgb(253, 247, 205);
 }
 
 html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--background-primary, rgb(0, 0, 0));
   color: rgb(253, 247, 205);
 }
 
 html body .page > div#quartz-body div.sidebar {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--background-secondary, rgb(0, 0, 0));
   color: rgb(253, 247, 205);
 }
 
 html body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--tab-container-background, rgb(0, 0, 0));
   color: rgb(253, 247, 205);
 }`,
     typography: `html body .markdown-rendered p > b, html b {
-  color: rgb(253, 247, 205);
+  color: var(--bold-color, rgb(253, 247, 205));
   outline: rgb(253, 247, 205) none 0px;
   text-decoration-color: rgb(253, 247, 205);
 }
 
 html body .markdown-rendered p > em, html em {
-  color: rgb(253, 247, 205);
+  color: var(--italic-color, rgb(253, 247, 205));
   outline: rgb(253, 247, 205) none 0px;
   text-decoration-color: rgb(253, 247, 205);
 }
 
 html body .markdown-rendered p > i, html i {
-  color: rgb(253, 247, 205);
+  color: var(--italic-color, rgb(253, 247, 205));
   outline: rgb(253, 247, 205) none 0px;
   text-decoration-color: rgb(253, 247, 205);
 }
 
 html body .markdown-rendered p > strong, html strong {
-  color: rgb(253, 247, 205);
+  color: var(--bold-color, rgb(253, 247, 205));
   outline: rgb(253, 247, 205) none 0px;
   text-decoration-color: rgb(253, 247, 205);
 }
 
 html body .text-highlight {
-  color: rgb(253, 247, 205);
+  color: var(--text-normal, rgb(253, 247, 205));
   outline: rgb(253, 247, 205) none 0px;
   text-decoration-color: rgb(253, 247, 205);
 }
@@ -183,28 +181,28 @@ html body del {
 }
 
 html body h1.article-title {
-  color: rgb(253, 247, 205);
+  color: var(--text-normal, rgb(253, 247, 205));
 }
 
 html body p {
-  color: rgb(225, 220, 63);
+  color: var(--text-muted, rgb(225, 220, 63));
   outline: rgb(225, 220, 63) none 0px;
   text-decoration-color: rgb(225, 220, 63);
 }`,
     links: `html body a.external-link, html footer a {
-  color: rgb(233, 39, 65);
+  color: var(--link-external-color, rgb(233, 39, 65));
   outline: rgb(233, 39, 65) none 0px;
   text-decoration-color: rgb(233, 39, 65);
 }
 
 html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(233, 39, 65);
+  color: var(--link-color, rgb(233, 39, 65));
   outline: rgb(233, 39, 65) none 0px;
   text-decoration-color: rgb(233, 39, 65);
 }
 
 html body a.internal-link.broken {
-  color: rgb(233, 39, 65);
+  color: var(--link-unresolved-color, rgb(233, 39, 65));
   outline: rgb(233, 39, 65) none 0px;
 }`,
     lists: `html body dd {
@@ -241,19 +239,19 @@ html body table {
 }
 
 html body td {
-  color: rgb(253, 247, 205);
+  color: var(--table-text-color, rgb(253, 247, 205));
 }
 
 html body th {
-  color: rgb(253, 247, 205);
+  color: var(--table-header-color, rgb(253, 247, 205));
 }`,
     code: `html body code {
-  background-color: rgb(0, 0, 0);
-  color: rgb(253, 247, 205);
+  background-color: var(--code-background, rgb(0, 0, 0));
+  color: var(--color-1, rgb(253, 247, 205));
 }
 
 html body pre:has(> code) {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--code-background, rgb(0, 0, 0));
 }`,
     images: `html body audio {
   border-bottom-color: rgb(253, 247, 205);
@@ -287,7 +285,7 @@ html body video {
   border-top-color: rgb(253, 247, 205);
 }`,
     embeds: `html body .file-embed {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--background-primary-alt, rgb(0, 0, 0));
   border-bottom-color: rgb(225, 220, 63);
   border-left-color: rgb(225, 220, 63);
   border-right-color: rgb(225, 220, 63);
@@ -867,7 +865,7 @@ html body .callout > .callout-content {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   color: rgb(253, 247, 205);
 }
 
@@ -880,7 +878,7 @@ html body .callout[data-callout="abstract"] > .callout-content {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   color: rgb(253, 247, 205);
 }
 
@@ -893,7 +891,7 @@ html body .callout[data-callout="bug"] > .callout-content {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   color: rgb(253, 247, 205);
 }
 
@@ -906,7 +904,7 @@ html body .callout[data-callout="danger"] > .callout-content {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   color: rgb(253, 247, 205);
 }
 
@@ -919,7 +917,7 @@ html body .callout[data-callout="example"] > .callout-content {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   color: rgb(253, 247, 205);
 }
 
@@ -932,7 +930,7 @@ html body .callout[data-callout="failure"] > .callout-content {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   color: rgb(253, 247, 205);
 }
 
@@ -945,7 +943,7 @@ html body .callout[data-callout="info"] > .callout-content {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   color: rgb(253, 247, 205);
 }
 
@@ -958,7 +956,7 @@ html body .callout[data-callout="note"] > .callout-content {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   color: rgb(253, 247, 205);
 }
 
@@ -971,7 +969,7 @@ html body .callout[data-callout="question"] > .callout-content {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   color: rgb(253, 247, 205);
 }
 
@@ -984,7 +982,7 @@ html body .callout[data-callout="quote"] > .callout-content {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   color: rgb(253, 247, 205);
 }
 
@@ -997,7 +995,7 @@ html body .callout[data-callout="success"] > .callout-content {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   color: rgb(253, 247, 205);
 }
 
@@ -1010,7 +1008,7 @@ html body .callout[data-callout="tip"] > .callout-content {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   color: rgb(253, 247, 205);
 }
 
@@ -1023,7 +1021,7 @@ html body .callout[data-callout="todo"] > .callout-content {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   color: rgb(253, 247, 205);
 }
 
@@ -1091,11 +1089,11 @@ html body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html body .search > .search-button {
-  color: rgb(253, 247, 205);
+  color: var(--text-normal, rgb(253, 247, 205));
 }
 
 html body .search > .search-container > .search-space {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--prompt-background, rgb(0, 0, 0));
 }
 
 html body .search > .search-container > .search-space > * {
@@ -1120,7 +1118,7 @@ html body .search > .search-container > .search-space > .search-layout > .result
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
-  background-color: rgba(0, 122, 255, 0.2);
+  background-color: var(--text-selection, rgba(0, 122, 255, 0.2));
   color: rgb(253, 247, 205);
 }
 
@@ -1132,7 +1130,7 @@ html body .search > .search-container > .search-space > input {
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
-  background-color: rgba(0, 122, 255, 0.2);
+  background-color: var(--text-selection, rgba(0, 122, 255, 0.2));
   border-bottom-color: rgb(253, 247, 205);
   border-left-color: rgb(253, 247, 205);
   border-right-color: rgb(253, 247, 205);
@@ -1141,7 +1139,7 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
-  background-color: rgba(0, 122, 255, 0.2);
+  background-color: var(--text-selection, rgba(0, 122, 255, 0.2));
   color: rgb(253, 247, 205);
 }
 
@@ -1150,45 +1148,45 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
-  color: rgb(253, 247, 205);
+  color: var(--h1-color, rgb(253, 247, 205));
 }
 
 html body h1.article-title {
-  color: rgb(253, 247, 205);
+  color: var(--inline-title-color, rgb(253, 247, 205));
 }
 
 html body h2 {
-  color: rgb(253, 247, 205);
+  color: var(--h2-color, rgb(253, 247, 205));
 }
 
 html body h2.page-title, html h2.page-title a {
-  color: rgb(253, 247, 205);
+  color: var(--inline-title-color, rgb(253, 247, 205));
 }
 
 html body h3 {
-  color: rgb(253, 247, 205);
+  color: var(--h3-color, rgb(253, 247, 205));
 }
 
 html body h4 {
-  color: rgb(253, 247, 205);
+  color: var(--h4-color, rgb(253, 247, 205));
 }
 
 html body h5 {
-  color: rgb(253, 247, 205);
+  color: var(--h5-color, rgb(253, 247, 205));
 }
 
 html body h6 {
-  color: rgb(233, 39, 65);
+  color: var(--color-3, rgb(233, 39, 65));
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }`,
     explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(225, 220, 63);
+  color: var(--nav-item-color, rgb(225, 220, 63));
 }
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(225, 220, 63);
+  color: var(--nav-item-color, rgb(225, 220, 63));
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(253, 247, 205);
@@ -1198,11 +1196,11 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-left-color: rgb(225, 220, 63);
   border-right-color: rgb(225, 220, 63);
   border-top-color: rgb(225, 220, 63);
-  color: rgb(225, 220, 63);
+  color: var(--icon-color, rgb(225, 220, 63));
 }`,
     footer: `html body footer {
-  background-color: rgb(0, 0, 0);
-  color: rgb(225, 220, 63);
+  background-color: var(--status-bar-background, rgb(0, 0, 0));
+  color: var(--status-bar-text-color, rgb(225, 220, 63));
 }
 
 html body footer ul li a {
@@ -1221,7 +1219,7 @@ html body .recent-notes > ul.recent-ul > li {
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(225, 220, 63);
+  color: var(--nav-item-color, rgb(225, 220, 63));
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1239,7 +1237,7 @@ html body li.section-li > .section .meta {
 }
 
 html body li.section-li > .section > .desc > h3 > a {
-  color: rgb(225, 220, 63);
+  color: var(--nav-item-color, rgb(225, 220, 63));
 }
 
 html body ul.section-ul {
@@ -1253,7 +1251,7 @@ html body ul.section-ul {
   border-left-color: rgb(225, 220, 63);
   border-right-color: rgb(225, 220, 63);
   border-top-color: rgb(225, 220, 63);
-  color: rgb(225, 220, 63);
+  color: var(--icon-color, rgb(225, 220, 63));
 }
 
 html body .darkmode svg {
@@ -1276,7 +1274,7 @@ html body .canvas-node-content {
 }
 
 html body .canvas-node-file {
-  color: rgb(253, 247, 205);
+  color: var(--text-normal, rgb(253, 247, 205));
 }
 
 html body .canvas-node-group {
@@ -1284,14 +1282,14 @@ html body .canvas-node-group {
 }
 
 html body .canvas-sidebar {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--background-secondary, rgb(0, 0, 0));
   border-color: rgb(253, 247, 205);
 }`,
     bases: `html body .bases-table thead th {
-  color: rgb(253, 247, 205);
+  color: var(--table-header-color, rgb(253, 247, 205));
 }`,
     properties: `html body .metadata {
-  color: rgb(225, 220, 63);
+  color: var(--text-muted, rgb(225, 220, 63));
 }
 
 html body .metadata-properties {
@@ -1311,7 +1309,7 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
-  color: rgb(233, 39, 65);
+  color: var(--pill-color, rgb(233, 39, 65));
 }
 
 html body .note-properties-value {
@@ -1319,8 +1317,8 @@ html body .note-properties-value {
 }
 
 html body div#quartz-root {
-  background-color: rgb(0, 0, 0);
-  color: rgb(253, 247, 205);
+  background-color: var(--background-primary, rgb(0, 0, 0));
+  color: var(--text-normal, rgb(253, 247, 205));
 }
 
 html body ol.overflow {
@@ -1330,12 +1328,12 @@ html body ol.overflow {
   border-top-color: rgb(253, 247, 205);
 }`,
     stacked: `html body .stacked-page {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--background-secondary, rgb(0, 0, 0));
   border-color: rgb(253, 247, 205);
 }
 
 html body .stacked-page-header {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--tab-container-background, rgb(0, 0, 0));
 }
 
 html body .stacked-page.active {
@@ -1350,11 +1348,11 @@ html body .stacked-page.active {
 }
 
 html body .navigation-progress {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--status-bar-background, rgb(0, 0, 0));
 }
 
 html body .page-header h2.page-title {
-  color: rgb(253, 247, 205);
+  color: var(--text-normal, rgb(253, 247, 205));
 }
 
 html body abbr {
@@ -1373,16 +1371,16 @@ html body input[type=text] {
   border-left-color: rgb(225, 220, 63);
   border-right-color: rgb(225, 220, 63);
   border-top-color: rgb(225, 220, 63);
-  color: rgb(225, 220, 63);
+  color: var(--text-normal, rgb(225, 220, 63));
 }
 
 html body kbd {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--code-background, rgb(0, 0, 0));
   border-bottom-color: rgb(253, 247, 205);
   border-left-color: rgb(253, 247, 205);
   border-right-color: rgb(253, 247, 205);
   border-top-color: rgb(253, 247, 205);
-  color: rgb(253, 247, 205);
+  color: var(--code-normal, rgb(253, 247, 205));
 }
 
 html body progress {
@@ -1405,7 +1403,7 @@ html body sup {
 }
 
 html body ul.tags > li {
-  color: rgb(0, 236, 216);
+  color: var(--color-2, rgb(0, 236, 216));
 }`,
   },
   light: {},

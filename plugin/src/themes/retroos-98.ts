@@ -23,43 +23,36 @@ export const theme: ThemeData = {
   --accent-h: 222;
   --accent-l: 19%;
   --accent-s: 94%;
-  --background-modifier-active-hover: hsla(222, 94%, 19%, 0.1);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(43, 41, 41, 0.4);
-  --background-modifier-hover: transparent;
-  --background-primary: #000000;
-  --background-primary-alt: #050505;
-  --background-secondary: rgb(64, 64, 64);
-  --background-secondary-alt: rgb(64, 64, 64);
-  --bases-cards-background: #000000;
-  --bases-cards-cover-background: #050505;
-  --bases-table-cell-background-active: #000000;
-  --bases-table-cell-background-disabled: #050505;
-  --bases-table-cell-background-selected: hsla(222, 94%, 19%, 0.1);
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(222, 94%, 19%);
-  --bases-table-group-background: #050505;
-  --bases-table-header-background: #000000;
-  --bases-table-header-background-hover: transparent;
-  --bases-table-summary-background: #000000;
-  --bases-table-summary-background-hover: transparent;
+  --background-primary: var(--color-base-00, #000000);
+  --background-primary-alt: var(--color-base-10, #050505);
+  --background-secondary: var(--color-base-20, rgb(64, 64, 64));
+  --background-secondary-alt: var(--color-base-05, rgb(64, 64, 64));
+  --bases-cards-background: var(--background-primary, #000000);
+  --bases-cards-cover-background: var(--background-primary-alt, #050505);
+  --bases-table-cell-background-active: var(--background-primary, #000000);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #050505);
+  --bases-table-cell-background-selected: var(--table-selection, hsla(222, 94%, 19%, 0.1));
+  --bases-table-group-background: var(--background-primary-alt, #050505);
+  --bases-table-header-background: var(--background-primary, #000000);
+  --bases-table-header-background-hover: var(--background-modifier-hover, transparent);
+  --bases-table-summary-background: var(--background-primary, #000000);
+  --bases-table-summary-background-hover: var(--background-modifier-hover, transparent);
   --bg-button-light: rgb(128, 128, 128);
   --bg-button-shadow: black;
-  --blockquote-border-color: hsl(222, 94%, 19%);
-  --bodyFont: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
-  --callout-blend-mode: darken;
-  --canvas-background: #000000;
-  --checkbox-color: hsl(222, 94%, 19%);
-  --checkbox-color-hover: hsl(221, 94.94%, 19.95%);
-  --checkbox-marker-color: #000000;
+  --blockquote-border-color: var(--interactive-accent, hsl(222, 94%, 19%));
+  --callout-blend-mode: var(--highlight-mix-blend-mode, darken);
+  --canvas-background: var(--background-primary, #000000);
+  --checkbox-color: var(--interactive-accent, hsl(222, 94%, 19%));
+  --checkbox-color-hover: var(--interactive-accent-hover, hsl(221, 94.94%, 19.95%));
+  --checkbox-marker-color: var(--background-primary, #000000);
   --closebutton: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 8 7' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' width='8' height='7'/%3e%3cdefs%3e%3cimage id='A' width='8' height='7' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOklEQVQImW2OQQ4AMAjCqv//MzssM0jGyaQIlCRxVWwJoA0oIVAd33L4EgjTut3wqxiDx65NnZ256QAPcA8KJ2HN6QAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e");
-  --code-background: #050505;
-  --code-bracket-background: transparent;
-  --codeFont: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
-  --collapse-icon-color-collapsed: hsl(221, 94.94%, 19.95%);
-  --color-accent: hsl(222, 94%, 19%);
-  --color-accent-1: hsl(221, 94.94%, 19.95%);
-  --color-accent-2: hsl(192, 142.88%, 29.45%);
-  --color-accent-hsl: 222, 94%, 19%;
+  --code-background: var(--background-primary-alt, #050505);
+  --code-bracket-background: var(--background-modifier-hover, transparent);
+  --collapse-icon-color-collapsed: var(--text-accent, hsl(221, 94.94%, 19.95%));
+  --color-accent-1: hsl(calc(var(--accent-h) - 1), calc(var(--accent-s)*1.01), calc(var(--accent-l)*1.05));
+  --color-accent-2: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s)*1.52), calc(var(--accent-l)*1.55));
   --color-base-00: #000000;
   --color-base-05: rgb(64, 64, 64);
   --color-base-10: #050505;
@@ -72,98 +65,82 @@ export const theme: ThemeData = {
   --color-opposite-50: #545454;
   --color-opposite-60: #8f8f8f;
   --color-opposite-70: #a3a3a3;
-  --divider-color-hover: hsl(222, 94%, 19%);
+  --divider-color-hover: var(--interactive-accent, hsl(222, 94%, 19%));
   --downicon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='4.5' y='6.75' width='8' height='5'/%3e%3cdefs%3e%3cimage id='A' width='8' height='5' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAARklEQVQImXXNsRFAUAAE0dOHQAlCgeCHQqUKFSAQasGMPp70G2x4O3PbQP45gw6XNzvaJAkGHJVc0T%2b%2bMGHDgvEziBml3m6nPUz9aFAG8wAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e");
-  --embed-border-start: 2px solid hsl(222, 94%, 19%);
-  --file-header-background: #000000;
-  --file-header-background-focused: #000000;
-  --file-header-font: Win95Font, Inter, Rubik, Segoe UI';
+  --file-header-background: var(--background-primary, #000000);
+  --file-header-background-focused: var(--background-primary, #000000);
+  --file-header-font: var(--font-interface, Win95Font, Inter, Rubik, Segoe UI');
   --font-default: 'Win95Font', 'Inter', 'Rubik', 'Segoe UI';
-  --font-interface: Win95Font, Inter, Rubik, Segoe UI';
-  --font-mermaid: Win95Font, Inter, Rubik, Segoe UI';
-  --font-text: Win95Font, Inter, Rubik, Segoe UI';
-  --footnote-input-background-active: transparent;
-  --graph-node-focused: hsl(221, 94.94%, 19.95%);
+  --font-mermaid: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
+  --footnote-input-background-active: var(--metadata-input-background-active, transparent);
+  --graph-node-focused: var(--text-accent, hsl(221, 94.94%, 19.95%));
   --header-height: 35px;
-  --headerFont: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
-  --highlight: var(--background-modifier-hover, transparent);
   --highlight-mix-blend-mode: darken;
-  --icon-color-active: hsl(221, 94.94%, 19.95%);
+  --icon-color-active: var(--text-accent, hsl(221, 94.94%, 19.95%));
   --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
   --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --interactive-accent: hsl(222, 94%, 19%);
-  --interactive-accent-hover: hsl(221, 94.94%, 19.95%);
-  --interactive-accent-hsl: 222, 94%, 19%;
+  --interactive-accent: var(--color-accent, hsl(222, 94%, 19%));
+  --interactive-accent-hover: var(--color-accent-1, hsl(221, 94.94%, 19.95%));
+  --interactive-accent-hsl: var(--color-accent-hsl, 222, 94%, 19%);
   --lefticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='6.75' y='5.062' width='5' height='8'/%3e%3cdefs%3e%3cimage id='A' width='5' height='8' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAYAAAAx8TU7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAWElEQVQImU3MoRHCQBQE0PdvztEYAolIGQgKoBAEkrJi4yggMxuTY%2b7Lt7u/TJfkg7VN8MUd2gRXXKCfk9uA0Vyxz79bVb3wxjawQ1U9k3QsfzyDR5IdvwPUnB2IEQfd7wAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e");
-  --light: var(--background-primary, #000000);
-  --lightgray: var(--background-secondary, rgb(64, 64, 64));
-  --link-color: hsl(221, 94.94%, 19.95%);
-  --link-color-hover: hsl(192, 142.88%, 29.45%);
-  --link-external-color: hsl(221, 94.94%, 19.95%);
-  --link-external-color-hover: hsl(192, 142.88%, 29.45%);
-  --link-unresolved-color: hsl(221, 94.94%, 19.95%);
-  --link-unresolved-decoration-color: hsla(222, 94%, 19%, 0.3);
-  --list-marker-color-collapsed: hsl(221, 94.94%, 19.95%);
+  --light: var(--background-primary, var(--color-base-00, #000000));
+  --lightgray: var(--background-secondary, var(--color-base-20, rgb(64, 64, 64)));
+  --link-color: var(--text-accent, hsl(221, 94.94%, 19.95%));
+  --link-color-hover: var(--text-accent-hover, hsl(192, 142.88%, 29.45%));
+  --link-external-color: var(--text-accent, hsl(221, 94.94%, 19.95%));
+  --link-external-color-hover: var(--text-accent-hover, hsl(192, 142.88%, 29.45%));
+  --link-unresolved-color: var(--text-accent, hsl(221, 94.94%, 19.95%));
+  --list-marker-color-collapsed: var(--text-accent, hsl(221, 94.94%, 19.95%));
   --maximize: url("data:image/svg+xml,%3Csvg width='9' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 0H0v9h9V0zM8 2H1v6h7V2z' fill='%23000'/%3E%3C/svg%3E");
-  --menu-background: rgb(64, 64, 64);
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
-  --metadata-input-background-active: transparent;
-  --metadata-input-font: Win95Font, Inter, Rubik, Segoe UI';
-  --metadata-label-background-active: transparent;
-  --metadata-label-font: Win95Font, Inter, Rubik, Segoe UI';
-  --metadata-property-background-active: transparent;
+  --menu-background: var(--background-secondary, rgb(64, 64, 64));
+  --menu-shadow: var(--shadow-s, 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07));
+  --metadata-input-background-active: var(--background-modifier-hover, transparent);
+  --metadata-input-font: var(--font-interface, Win95Font, Inter, Rubik, Segoe UI');
+  --metadata-label-background-active: var(--background-modifier-hover, transparent);
+  --metadata-label-font: var(--font-interface, Win95Font, Inter, Rubik, Segoe UI');
+  --metadata-property-background-active: var(--background-modifier-hover, transparent);
   --minimize: url("data:image/svg+xml,%3Csvg width='6' height='2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M0 0h6v2H0z'/%3E%3C/svg%3E");
-  --modal-background: #000000;
-  --nav-item-background-active: transparent;
-  --nav-item-background-hover: transparent;
-  --nav-item-background-selected: hsla(222, 94%, 19%, 0.15);
-  --nav-item-color-highlighted: hsl(221, 94.94%, 19.95%);
-  --pdf-background: #000000;
-  --pdf-page-background: #000000;
-  --pdf-sidebar-background: #000000;
-  --pill-color-remove-hover: hsl(221, 94.94%, 19.95%);
-  --prompt-background: #000000;
+  --modal-background: var(--background-primary, #000000);
+  --nav-item-background-active: var(--background-modifier-hover, transparent);
+  --nav-item-background-hover: var(--background-modifier-hover, transparent);
+  --nav-item-color-highlighted: var(--text-accent, hsl(221, 94.94%, 19.95%));
+  --pdf-background: var(--background-primary, #000000);
+  --pdf-page-background: var(--background-primary, #000000);
+  --pdf-sidebar-background: var(--background-primary, #000000);
+  --pill-color-remove-hover: var(--text-accent, hsl(221, 94.94%, 19.95%));
+  --prompt-background: var(--background-primary, #000000);
   --restoredown: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 64 64' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='13' y='15' width='34' height='34'/%3e%3cdefs%3e%3cimage id='A' width='34' height='34' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcUlEQVRYhe2XMQrAMAwDndL/fzmd2uEgxCkINOhmQw6DLFJlwmjOTalF1bjED7SJCIkIuQ/nuynr8qXRZiMRIREhb2q6XfK3c7Zps9lIREhECLtG1SXbtNluREXuyDERIREhESE2Irys6l//EpuN2PAAKfQHSOcj77YAAAAASUVORK5CYII='/%3e%3c/defs%3e%3c/svg%3e");
-  --ribbon-background: rgb(64, 64, 64);
-  --ribbon-background-collapsed: #000000;
+  --ribbon-background: var(--background-secondary, rgb(64, 64, 64));
+  --ribbon-background-collapsed: var(--background-primary, #000000);
   --righticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='6.75' y='5.063' width='5' height='8'/%3e%3cdefs%3e%3cimage id='A' width='5' height='8' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAYAAAAx8TU7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAS0lEQVQImV3NqRGAQBAF0SniQBACEkEASMLdABBIQkAgEZvBQ4AYtmXXP8LLEJlPXphaCQeWVsKGtYs/d0TUnCyYc33HmI9O9HnjAUuAVuCj%2bT4gAAAAAElFTkSuQmCC'/%3e%3c/defs%3e%3c/svg%3e");
   --scrollbar-width: 18px;
-  --search-result-background: #000000;
-  --secondary: var(--text-accent, hsl(221, 94.94%, 19.95%));
-  --setting-items-background: #050505;
+  --search-result-background: var(--background-primary, #000000);
+  --secondary: var(--text-accent, var(--color-accent-1, hsl(221, 94.94%, 19.95%)));
+  --setting-items-background: var(--background-primary-alt, #050505);
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shiki-code-background: #050505;
-  --status-bar-background: rgb(64, 64, 64);
-  --suggestion-background: #000000;
-  --system-status-background: rgb(64, 64, 64);
-  --tab-background-active: #000000;
-  --tab-container-background: rgb(64, 64, 64);
-  --tab-stacked-header-width: 35px;
-  --tab-switcher-background: rgb(64, 64, 64);
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(64, 64, 64), transparent);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(222, 94%, 19%);
-  --tab-text-color-focused-highlighted: hsl(221, 94.94%, 19.95%);
-  --table-drag-handle-background-active: hsl(222, 94%, 19%);
-  --table-selection: hsla(222, 94%, 19%, 0.1);
-  --table-selection-blend-mode: darken;
-  --table-selection-border-color: hsl(222, 94%, 19%);
-  --tag-background: hsla(222, 94%, 19%, 0.1);
-  --tag-background-hover: hsla(222, 94%, 19%, 0.2);
-  --tag-border-color: hsla(222, 94%, 19%, 0.15);
-  --tag-border-color-hover: hsla(222, 94%, 19%, 0.15);
-  --tag-color: hsl(221, 94.94%, 19.95%);
-  --tag-color-hover: hsl(221, 94.94%, 19.95%);
-  --tertiary: var(--text-accent-hover, hsl(192, 142.88%, 29.45%));
-  --text-accent: hsl(221, 94.94%, 19.95%);
-  --text-accent-hover: hsl(192, 142.88%, 29.45%);
-  --text-selection: hsla(222, 94%, 19%, 0.47);
-  --textHighlight: var(--background-modifier-hover, transparent);
-  --titleFont: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
-  --titlebar-background: rgb(64, 64, 64);
-  --titlebar-background-focused: rgb(64, 64, 64);
+  --shiki-code-background: var(--code-background, #050505);
+  --status-bar-background: var(--background-secondary, rgb(64, 64, 64));
+  --suggestion-background: var(--background-primary, #000000);
+  --system-status-background: var(--background-secondary, rgb(64, 64, 64));
+  --tab-background-active: var(--background-primary, #000000);
+  --tab-container-background: var(--background-secondary, rgb(64, 64, 64));
+  --tab-stacked-header-width: var(--header-height, 35px);
+  --tab-switcher-background: var(--background-secondary, rgb(64, 64, 64));
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(221, 94.94%, 19.95%));
+  --table-drag-handle-background-active: var(--table-selection-border-color, hsl(222, 94%, 19%));
+  --table-selection-blend-mode: var(--highlight-mix-blend-mode, darken);
+  --table-selection-border-color: var(--interactive-accent, hsl(222, 94%, 19%));
+  --tag-color: var(--text-accent, hsl(221, 94.94%, 19.95%));
+  --tag-color-hover: var(--text-accent, hsl(221, 94.94%, 19.95%));
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, hsl(192, 142.88%, 29.45%)));
+  --text-accent: var(--color-accent-1, hsl(221, 94.94%, 19.95%));
+  --text-accent-hover: var(--color-accent-2, hsl(192, 142.88%, 29.45%));
+  --text-selection: hsla(var(--color-accent-hsl), 0.47);
+  --titlebar-background: var(--background-secondary, rgb(64, 64, 64));
+  --titlebar-background-focused: var(--background-secondary-alt, rgb(64, 64, 64));
   --tooltip-border: rgb(128, 128, 128);
-  --traffic-lights-offset-x: 35px;
-  --traffic-lights-offset-y: 35px;
+  --traffic-lights-offset-x: var(--header-height, 35px);
+  --traffic-lights-offset-y: var(--header-height, 35px);
   --upicon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='5.063' y='6.75' width='8' height='5'/%3e%3cdefs%3e%3cimage id='A' width='8' height='5' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAPElEQVQImXXNoRHAIBBE0aPzFICgBGRKQ57Av4gImAl59s/sRmzQccUJbkwk6immZaDts9PXQC2/n698AMKrUH0l/8BzAAAAAElFTkSuQmCC'/%3e%3c/defs%3e%3c/svg%3e");
   --quartz-icon-color: currentColor;
 }
@@ -174,15 +151,15 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(64, 64, 64);
+  background-color: var(--tab-container-background, rgb(64, 64, 64));
 }
 
 html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--background-primary, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(64, 64, 64);
+  background-color: var(--background-secondary, rgb(64, 64, 64));
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
@@ -190,7 +167,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(64, 64, 64);
+  background-color: var(--tab-container-background, rgb(64, 64, 64));
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
@@ -221,7 +198,7 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--checkbox-color, rgba(0, 0, 0, 0));
   border-color: rgba(0, 0, 0, 0);
 }
 
@@ -229,25 +206,25 @@ html[saved-theme="dark"] body p {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
     links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
-  color: rgb(3, 33, 99);
+  color: var(--link-external-color, rgb(3, 33, 99));
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 33, 99) none 0px;
   text-decoration-color: rgb(3, 33, 99);
 }
 
 html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(3, 33, 99);
+  color: var(--link-color, rgb(3, 33, 99));
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 33, 99) none 0px;
   text-decoration-color: rgb(3, 33, 99);
 }
 
 html[saved-theme="dark"] body a.internal-link.broken {
-  color: rgb(3, 33, 99);
+  color: var(--link-unresolved-color, rgb(3, 33, 99));
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 33, 99) none 0px;
   text-decoration: underline rgba(3, 30, 94, 0.3);
-  text-decoration-color: rgba(3, 30, 94, 0.3);
+  text-decoration-color: var(--link-unresolved-decoration-color, rgba(3, 30, 94, 0.3));
 }`,
     lists: `html[saved-theme="dark"] body ul.overflow {
   border-left-color: rgb(64, 64, 64);
@@ -265,11 +242,11 @@ html[saved-theme="dark"] body a.internal-link.broken {
   width: 163.938px;
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: rgb(5, 5, 5);
+  background-color: var(--code-background, rgb(5, 5, 5));
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: rgb(5, 5, 5);
+  background-color: var(--code-background, rgb(5, 5, 5));
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -279,7 +256,7 @@ html[saved-theme="dark"] body pre:has(> code) {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: rgb(5, 5, 5);
+  background-color: var(--background-primary-alt, rgb(5, 5, 5));
 }
 
 html[saved-theme="dark"] body .transclude {
@@ -1258,9 +1235,9 @@ html[saved-theme="dark"] body .callout > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   background: rgba(83, 223, 221, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(83, 223, 221, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1281,9 +1258,9 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   background: rgba(251, 70, 76, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(251, 70, 76, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1304,9 +1281,9 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   background: rgba(251, 70, 76, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(251, 70, 76, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1327,9 +1304,9 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   background: rgba(168, 130, 255, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(168, 130, 255, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1350,9 +1327,9 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   background: rgba(251, 70, 76, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(251, 70, 76, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1373,9 +1350,9 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   background: rgba(2, 122, 255, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(2, 122, 255, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1396,9 +1373,9 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   background: rgba(2, 122, 255, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(2, 122, 255, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1419,9 +1396,9 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   background: rgba(233, 151, 63, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(233, 151, 63, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1442,9 +1419,9 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background: rgba(158, 158, 158, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(158, 158, 158, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1465,9 +1442,9 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   background: rgba(68, 207, 110, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(68, 207, 110, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1488,9 +1465,9 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   background: rgba(83, 223, 221, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(83, 223, 221, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1511,9 +1488,9 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   background: rgba(2, 122, 255, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(2, 122, 255, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1534,9 +1511,9 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   background: rgba(233, 151, 63, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(233, 151, 63, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1628,12 +1605,12 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: rgb(64, 64, 64);
+  background-color: var(--background-secondary, rgb(64, 64, 64));
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  box-shadow: rgb(0, 0, 0) -1.5px -1.5px 0px 0px inset, rgb(64, 64, 64) 0px 0px 0px 0px inset, rgb(0, 0, 0) -2px -2px 0px 0px inset, rgb(128, 128, 128) 2px 2px 0px 0px inset;
+  box-shadow: inset -1.5px -1.5px black, inset 0px 0px var(--background-secondary), inset -2px -2px var(--bg-button-shadow), inset 2px 2px var(--bg-button-light);
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > * {
@@ -1641,7 +1618,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > * {
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container {
-  color: rgb(128, 128, 128);
+  color: var(--bg-button-light, rgb(128, 128, 128));
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
@@ -1656,12 +1633,12 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
-  color: rgb(128, 128, 128);
+  color: var(--bg-button-light, rgb(128, 128, 128));
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: rgb(3, 30, 94);
-  color: rgb(128, 128, 128);
+  background-color: var(--color-accent, rgb(3, 30, 94));
+  color: var(--bg-button-light, rgb(128, 128, 128));
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout.display-results {
@@ -1674,11 +1651,11 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-width: 0px;
-  box-shadow: rgb(64, 64, 64) -1px -1px 0px 0px inset, rgb(0, 0, 0) 2px 2px 0px 0px inset, rgb(64, 64, 64) -1px -1px 0px 0px inset, rgb(0, 0, 0) 1px 1px 0px 0px inset;
+  box-shadow: inset -1px -1px var(--background-secondary), inset 2px 2px var(--bg-button-shadow), inset -1px -1px var(--background-secondary), inset 1px 1px black;
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
-  background-color: rgb(3, 30, 94);
+  background-color: var(--color-accent, rgb(3, 30, 94));
   border-bottom-color: rgb(128, 128, 128);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1687,20 +1664,20 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   border-top-color: rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(128, 128, 128);
+  color: var(--bg-button-light, rgb(128, 128, 128));
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: rgb(3, 30, 94);
+  background-color: var(--color-accent, rgb(3, 30, 94));
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(128, 128, 128);
+  color: var(--bg-button-light, rgb(128, 128, 128));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(3, 30, 94, 0.1);
+  background-color: var(--pill-background, rgba(3, 30, 94, 0.1));
   border-bottom-color: rgba(3, 30, 94, 0.15);
   border-left-color: rgba(3, 30, 94, 0.15);
   border-right-color: rgba(3, 30, 94, 0.15);
@@ -1713,38 +1690,38 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
-  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  font-family: var(--h1-font, "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
 }
 
 html[saved-theme="dark"] body h2 {
-  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  font-family: var(--h2-font, "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  font-family: var(--inline-title-font, "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
 }
 
 html[saved-theme="dark"] body h3 {
-  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  font-family: var(--h3-font, "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
 }
 
 html[saved-theme="dark"] body h4 {
-  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  font-family: var(--h4-font, "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
 }
 
 html[saved-theme="dark"] body h5 {
-  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  font-family: var(--h5-font, "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
 }
 
 html[saved-theme="dark"] body h6 {
-  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  font-family: var(--h6-font, "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
 }
 
 html[saved-theme="dark"] body hr {
   border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1755,7 +1732,7 @@ html[saved-theme="dark"] body hr {
   padding-top: 0px;
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--background-primary, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body .nav-files-container .tree-item-children {
@@ -1771,7 +1748,7 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
-  background-color: rgb(64, 64, 64);
+  background-color: var(--background-secondary, rgb(64, 64, 64));
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1780,10 +1757,10 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(218, 218, 218);
+  color: var(--text-normal, rgb(218, 218, 218));
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: rgb(64, 64, 64);
+  background-color: var(--status-bar-background, rgb(64, 64, 64));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
@@ -1803,13 +1780,13 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 }
 
 html[saved-theme="dark"] body ul.section-ul {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--background-primary, rgb(0, 0, 0));
   border-top-color: rgb(0, 0, 0);
   border-top-style: solid;
   border-top-width: 1px;
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
-  background-color: rgb(64, 64, 64);
+  background-color: var(--background-secondary, rgb(64, 64, 64));
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1818,7 +1795,7 @@ html[saved-theme="dark"] body ul.section-ul {
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(218, 218, 218);
+  color: var(--text-normal, rgb(218, 218, 218));
 }
 
 html[saved-theme="dark"] body .darkmode svg {
@@ -1829,8 +1806,8 @@ html[saved-theme="dark"] body .darkmode svg {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
     canvas: `html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(64, 64, 64);
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 2px 3px 0px, rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  background-color: var(--background-secondary, rgb(64, 64, 64));
+  box-shadow: var(--input-shadow, rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 2px 3px 0px, rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
@@ -1841,12 +1818,12 @@ html[saved-theme="dark"] body .metadata-properties {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(3, 30, 94, 0.1);
-  color: rgb(3, 33, 99);
+  background-color: var(--pill-background, rgba(3, 30, 94, 0.1));
+  color: var(--pill-color, rgb(3, 33, 99));
 }
 
 html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--background-primary, rgb(0, 0, 0));
 }
 
 html[saved-theme="dark"] body ol.overflow {
@@ -1858,14 +1835,14 @@ html[saved-theme="dark"] body ol.overflow {
   border-right-width: 5px;
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
-  background-color: rgb(64, 64, 64);
+  background-color: var(--background-secondary, rgb(64, 64, 64));
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
-  background-color: rgb(3, 30, 94);
+  background-color: var(--tab-container-background, rgb(3, 30, 94));
 }`,
     misc: `html[saved-theme="dark"] body .navigation-progress {
-  background-color: rgb(64, 64, 64);
+  background-color: var(--status-bar-background, rgb(64, 64, 64));
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
@@ -1877,16 +1854,16 @@ html[saved-theme="dark"] body input[type=text] {
 }
 
 html[saved-theme="dark"] body kbd {
-  background-color: rgb(5, 5, 5);
+  background-color: var(--code-background, rgb(5, 5, 5));
 }
 
 html[saved-theme="dark"] body ul.tags > li {
-  background-color: rgba(3, 30, 94, 0.1);
+  background-color: var(--tag-background, rgba(3, 30, 94, 0.1));
   border-bottom-color: rgba(3, 30, 94, 0.15);
   border-left-color: rgba(3, 30, 94, 0.15);
   border-right-color: rgba(3, 30, 94, 0.15);
   border-top-color: rgba(3, 30, 94, 0.15);
-  color: rgb(3, 33, 99);
+  color: var(--tag-color, rgb(3, 33, 99));
 }`,
   },
   light: {
@@ -1894,108 +1871,85 @@ html[saved-theme="dark"] body ul.tags > li {
   --accent-h: 222;
   --accent-l: 19%;
   --accent-s: 94%;
-  --background-modifier-active-hover: hsla(222, 94%, 19%, 0.1);
   --background-modifier-cover: rgba(43, 41, 41, 0.4);
-  --background-modifier-hover: transparent;
-  --background-secondary: silver;
-  --background-secondary-alt: silver;
-  --bases-table-cell-background-selected: hsla(222, 94%, 19%, 0.1);
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(221, 94.94%, 19.95%);
-  --bases-table-header-background-hover: transparent;
-  --bases-table-summary-background-hover: transparent;
+  --background-secondary: var(--color-base-20, silver);
+  --background-secondary-alt: var(--color-base-05, silver);
+  --bases-table-cell-background-selected: var(--table-selection, hsla(222, 94%, 19%, 0.1));
+  --bases-table-header-background-hover: var(--background-modifier-hover, transparent);
+  --bases-table-summary-background-hover: var(--background-modifier-hover, transparent);
   --bg-button-light: white;
   --bg-button-shadow: gray;
-  --blockquote-border-color: hsl(221, 94.94%, 19.95%);
-  --bodyFont: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
-  --checkbox-color: hsl(221, 94.94%, 19.95%);
-  --checkbox-color-hover: hsl(192, 142.88%, 29.45%);
+  --blockquote-border-color: var(--interactive-accent, hsl(221, 94.94%, 19.95%));
+  --checkbox-color: var(--interactive-accent, hsl(221, 94.94%, 19.95%));
+  --checkbox-color-hover: var(--interactive-accent-hover, hsl(192, 142.88%, 29.45%));
   --closebutton: url("data:image/svg+xml,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E");
-  --code-bracket-background: transparent;
-  --codeFont: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
-  --collapse-icon-color-collapsed: hsl(222, 94%, 19%);
-  --color-accent: hsl(222, 94%, 19%);
-  --color-accent-1: hsl(221, 94.94%, 19.95%);
-  --color-accent-2: hsl(192, 142.88%, 29.45%);
-  --color-accent-hsl: 222, 94%, 19%;
+  --code-bracket-background: var(--background-modifier-hover, transparent);
+  --collapse-icon-color-collapsed: var(--text-accent, hsl(222, 94%, 19%));
+  --color-accent-1: hsl(calc(var(--accent-h) - 1), calc(var(--accent-s)*1.01), calc(var(--accent-l)*1.05));
+  --color-accent-2: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s)*1.52), calc(var(--accent-l)*1.55));
   --color-base-05: silver;
   --color-base-20: silver;
-  --divider-color-hover: hsl(221, 94.94%, 19.95%);
+  --divider-color-hover: var(--interactive-accent, hsl(221, 94.94%, 19.95%));
   --downicon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' shape-rendering='optimizeSpeed' width='18' height='18' viewBox='0 0 16 16' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M4 7V6h7v1h-1v1H9v1H8v1H7V9H6V8H5V7z'/%3e%3c/svg%3e");
-  --embed-border-start: 2px solid hsl(221, 94.94%, 19.95%);
-  --file-header-font: Win95Font, Inter, Rubik, Segoe UI';
+  --file-header-font: var(--font-interface, Win95Font, Inter, Rubik, Segoe UI');
   --font-default: 'Win95Font', 'Inter', 'Rubik', 'Segoe UI';
-  --font-interface: Win95Font, Inter, Rubik, Segoe UI';
-  --font-mermaid: Win95Font, Inter, Rubik, Segoe UI';
-  --font-text: Win95Font, Inter, Rubik, Segoe UI';
-  --footnote-input-background-active: transparent;
-  --graph-node-focused: hsl(222, 94%, 19%);
+  --font-mermaid: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
+  --footnote-input-background-active: var(--metadata-input-background-active, transparent);
+  --graph-node-focused: var(--text-accent, hsl(222, 94%, 19%));
   --header-height: 35px;
-  --headerFont: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
-  --highlight: var(--background-modifier-hover, transparent);
-  --icon-color-active: hsl(222, 94%, 19%);
+  --icon-color-active: var(--text-accent, hsl(222, 94%, 19%));
   --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
   --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --interactive-accent: hsl(221, 94.94%, 19.95%);
-  --interactive-accent-hover: hsl(192, 142.88%, 29.45%);
-  --interactive-accent-hsl: 222, 94%, 19%;
+  --interactive-accent: var(--color-accent-1, hsl(221, 94.94%, 19.95%));
+  --interactive-accent-hover: var(--color-accent-2, hsl(192, 142.88%, 29.45%));
+  --interactive-accent-hsl: var(--color-accent-hsl, 222, 94%, 19%);
   --lefticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M10.875 5.063H12v7.875h-1.125v-1.125H9.75v-1.125H8.625V9.563H7.5V8.438h1.125V7.313H9.75V6.188h1.125V5.063z' fill-rule='nonzero'/%3e%3c/svg%3e");
-  --lightgray: var(--background-secondary, silver);
-  --link-color: hsl(222, 94%, 19%);
-  --link-color-hover: hsl(192, 142.88%, 29.45%);
-  --link-external-color: hsl(222, 94%, 19%);
-  --link-external-color-hover: hsl(192, 142.88%, 29.45%);
-  --link-unresolved-color: hsl(222, 94%, 19%);
-  --link-unresolved-decoration-color: hsla(222, 94%, 19%, 0.3);
-  --list-marker-color-collapsed: hsl(222, 94%, 19%);
+  --lightgray: var(--background-secondary, var(--color-base-20, silver));
+  --link-color: var(--text-accent, hsl(222, 94%, 19%));
+  --link-color-hover: var(--text-accent-hover, hsl(192, 142.88%, 29.45%));
+  --link-external-color: var(--text-accent, hsl(222, 94%, 19%));
+  --link-external-color-hover: var(--text-accent-hover, hsl(192, 142.88%, 29.45%));
+  --link-unresolved-color: var(--text-accent, hsl(222, 94%, 19%));
+  --list-marker-color-collapsed: var(--text-accent, hsl(222, 94%, 19%));
   --maximize: url("data:image/svg+xml,%3Csvg width='9' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 0H0v9h9V0zM8 2H1v6h7V2z' fill='%23000'/%3E%3C/svg%3E");
-  --menu-background: silver;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
-  --metadata-input-background-active: transparent;
-  --metadata-input-font: Win95Font, Inter, Rubik, Segoe UI';
-  --metadata-label-background-active: transparent;
-  --metadata-label-font: Win95Font, Inter, Rubik, Segoe UI';
-  --metadata-property-background-active: transparent;
+  --menu-background: var(--background-secondary, silver);
+  --menu-shadow: var(--shadow-s, 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07));
+  --metadata-input-background-active: var(--background-modifier-hover, transparent);
+  --metadata-input-font: var(--font-interface, Win95Font, Inter, Rubik, Segoe UI');
+  --metadata-label-background-active: var(--background-modifier-hover, transparent);
+  --metadata-label-font: var(--font-interface, Win95Font, Inter, Rubik, Segoe UI');
+  --metadata-property-background-active: var(--background-modifier-hover, transparent);
   --minimize: url("data:image/svg+xml,%3Csvg width='6' height='2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M0 0h6v2H0z'/%3E%3C/svg%3E");
-  --nav-item-background-active: transparent;
-  --nav-item-background-hover: transparent;
-  --nav-item-background-selected: hsla(222, 94%, 19%, 0.15);
-  --nav-item-color-highlighted: hsl(222, 94%, 19%);
-  --pill-color-remove-hover: hsl(222, 94%, 19%);
+  --nav-item-background-active: var(--background-modifier-hover, transparent);
+  --nav-item-background-hover: var(--background-modifier-hover, transparent);
+  --nav-item-color-highlighted: var(--text-accent, hsl(222, 94%, 19%));
+  --pill-color-remove-hover: var(--text-accent, hsl(222, 94%, 19%));
   --restoredown: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 64 64' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='13' y='15' width='34' height='34'/%3e%3cdefs%3e%3cimage id='A' width='34' height='34' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcUlEQVRYhe2XMQrAMAwDndL/fzmd2uEgxCkINOhmQw6DLFJlwmjOTalF1bjED7SJCIkIuQ/nuynr8qXRZiMRIREhb2q6XfK3c7Zps9lIREhECLtG1SXbtNluREXuyDERIREhESE2Irys6l//EpuN2PAAKfQHSOcj77YAAAAASUVORK5CYII='/%3e%3c/defs%3e%3c/svg%3e");
-  --ribbon-background: silver;
+  --ribbon-background: var(--background-secondary, silver);
   --righticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M10.125 12.938H9V5.063h1.125v1.125h1.125v1.125h1.125v1.125H13.5v1.125h-1.125v1.125H11.25v1.125h-1.125v1.125z' fill-rule='nonzero'/%3e%3c/svg%3e");
   --scrollbar-width: 18px;
-  --secondary: var(--text-accent, hsl(222, 94%, 19%));
+  --secondary: var(--text-accent, var(--color-accent, hsl(222, 94%, 19%)));
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
-  --status-bar-background: silver;
-  --system-status-background: silver;
-  --tab-container-background: silver;
-  --tab-stacked-header-width: 35px;
-  --tab-switcher-background: silver;
-  --tab-switcher-menubar-background: linear-gradient(to top, silver, transparent);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(222, 94%, 19%);
-  --tab-text-color-focused-highlighted: hsl(222, 94%, 19%);
-  --table-drag-handle-background-active: hsl(221, 94.94%, 19.95%);
-  --table-selection: hsla(222, 94%, 19%, 0.1);
-  --table-selection-border-color: hsl(221, 94.94%, 19.95%);
-  --tag-background: hsla(222, 94%, 19%, 0.1);
-  --tag-background-hover: hsla(222, 94%, 19%, 0.2);
-  --tag-border-color: hsla(222, 94%, 19%, 0.15);
-  --tag-border-color-hover: hsla(222, 94%, 19%, 0.15);
-  --tag-color: hsl(222, 94%, 19%);
-  --tag-color-hover: hsl(222, 94%, 19%);
-  --tertiary: var(--text-accent-hover, hsl(192, 142.88%, 29.45%));
-  --text-accent: hsl(222, 94%, 19%);
-  --text-accent-hover: hsl(192, 142.88%, 29.45%);
-  --text-selection: hsla(222, 94%, 19%, 0.47);
-  --textHighlight: var(--background-modifier-hover, transparent);
-  --titleFont: var(--font-text, Win95Font, Inter, Rubik, Segoe UI');
-  --titlebar-background: silver;
-  --titlebar-background-focused: silver;
+  --status-bar-background: var(--background-secondary, silver);
+  --system-status-background: var(--background-secondary, silver);
+  --tab-container-background: var(--background-secondary, silver);
+  --tab-stacked-header-width: var(--header-height, 35px);
+  --tab-switcher-background: var(--background-secondary, silver);
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(222, 94%, 19%));
+  --table-drag-handle-background-active: var(--table-selection-border-color, hsl(221, 94.94%, 19.95%));
+  --table-selection-border-color: var(--interactive-accent, hsl(221, 94.94%, 19.95%));
+  --tag-color: var(--text-accent, hsl(222, 94%, 19%));
+  --tag-color-hover: var(--text-accent, hsl(222, 94%, 19%));
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, hsl(192, 142.88%, 29.45%)));
+  --text-accent: var(--color-accent, hsl(222, 94%, 19%));
+  --text-accent-hover: var(--color-accent-2, hsl(192, 142.88%, 29.45%));
+  --text-selection: hsla(var(--color-accent-hsl), 0.47);
+  --titlebar-background: var(--background-secondary, silver);
+  --titlebar-background-focused: var(--background-secondary-alt, silver);
   --tooltip-border: black;
-  --traffic-lights-offset-x: 35px;
-  --traffic-lights-offset-y: 35px;
+  --traffic-lights-offset-x: var(--header-height, 35px);
+  --traffic-lights-offset-y: var(--header-height, 35px);
   --upicon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' shape-rendering='optimizeSpeed' width='18' height='18' viewBox='0 0 16 16' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M11 9v1H4V9h1V8h1V7h1V6h1v1h1v1h1v1z'/%3e%3c/svg%3e");
   --quartz-icon-color: currentColor;
 }
@@ -2006,11 +1960,11 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(192, 192, 192);
+  background-color: var(--tab-container-background, rgb(192, 192, 192));
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(192, 192, 192);
+  background-color: var(--background-secondary, rgb(192, 192, 192));
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
@@ -2018,7 +1972,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(192, 192, 192);
+  background-color: var(--tab-container-background, rgb(192, 192, 192));
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
@@ -2049,7 +2003,7 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--checkbox-color, rgba(0, 0, 0, 0));
   border-color: rgba(0, 0, 0, 0);
 }
 
@@ -2057,25 +2011,25 @@ html[saved-theme="light"] body p {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
     links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
-  color: rgb(3, 30, 94);
+  color: var(--link-external-color, rgb(3, 30, 94));
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 30, 94) none 0px;
   text-decoration-color: rgb(3, 30, 94);
 }
 
 html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(3, 30, 94);
+  color: var(--link-color, rgb(3, 30, 94));
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 30, 94) none 0px;
   text-decoration-color: rgb(3, 30, 94);
 }
 
 html[saved-theme="light"] body a.internal-link.broken {
-  color: rgb(3, 30, 94);
+  color: var(--link-unresolved-color, rgb(3, 30, 94));
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 30, 94) none 0px;
   text-decoration: underline rgba(3, 30, 94, 0.3);
-  text-decoration-color: rgba(3, 30, 94, 0.3);
+  text-decoration-color: var(--link-unresolved-decoration-color, rgba(3, 30, 94, 0.3));
 }`,
     lists: `html[saved-theme="light"] body ul.overflow {
   border-left-color: rgb(192, 192, 192);
@@ -3077,9 +3031,9 @@ html[saved-theme="light"] body .callout > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-summary, 0, 191, 188);
   background: rgba(0, 191, 188, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 191, 188, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -3100,9 +3054,9 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-bug, 233, 49, 71);
   background: rgba(233, 49, 71, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(233, 49, 71, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -3123,9 +3077,9 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-error, 233, 49, 71);
   background: rgba(233, 49, 71, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(233, 49, 71, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -3146,9 +3100,9 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
-  --callout-color: 120, 82, 238;
+  --callout-color: var(--callout-example, 120, 82, 238);
   background: rgba(120, 82, 238, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(120, 82, 238, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -3169,9 +3123,9 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-fail, 233, 49, 71);
   background: rgba(233, 49, 71, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(233, 49, 71, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -3192,9 +3146,9 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-info, 8, 109, 221);
   background: rgba(8, 109, 221, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(8, 109, 221, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -3215,9 +3169,9 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   background: rgba(8, 109, 221, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(8, 109, 221, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -3238,9 +3192,9 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-question, 236, 117, 0);
   background: rgba(236, 117, 0, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(236, 117, 0, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -3261,9 +3215,9 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background: rgba(158, 158, 158, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(158, 158, 158, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -3284,9 +3238,9 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
-  --callout-color: 8, 185, 78;
+  --callout-color: var(--callout-success, 8, 185, 78);
   background: rgba(8, 185, 78, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(8, 185, 78, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -3307,9 +3261,9 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-tip, 0, 191, 188);
   background: rgba(0, 191, 188, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 191, 188, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -3330,9 +3284,9 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-todo, 8, 109, 221);
   background: rgba(8, 109, 221, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(8, 109, 221, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -3353,9 +3307,9 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-warning, 236, 117, 0);
   background: rgba(236, 117, 0, 0.4) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(236, 117, 0, 0.4);
+  background-color: rgba(var(--callout-color), 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -3447,12 +3401,12 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
-  background-color: rgb(192, 192, 192);
+  background-color: var(--background-secondary, rgb(192, 192, 192));
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  box-shadow: rgb(0, 0, 0) -1.5px -1.5px 0px 0px inset, rgb(192, 192, 192) 0px 0px 0px 0px inset, rgb(128, 128, 128) -2px -2px 0px 0px inset, rgb(255, 255, 255) 2px 2px 0px 0px inset;
+  box-shadow: inset -1.5px -1.5px black, inset 0px 0px var(--background-secondary), inset -2px -2px var(--bg-button-shadow), inset 2px 2px var(--bg-button-light);
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > * {
@@ -3460,7 +3414,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > * {
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container {
-  color: rgb(255, 255, 255);
+  color: var(--bg-button-light, rgb(255, 255, 255));
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
@@ -3475,12 +3429,12 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-description {
-  color: rgb(255, 255, 255);
+  color: var(--bg-button-light, rgb(255, 255, 255));
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: rgb(3, 30, 94);
-  color: rgb(255, 255, 255);
+  background-color: var(--color-accent, rgb(3, 30, 94));
+  color: var(--bg-button-light, rgb(255, 255, 255));
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout.display-results {
@@ -3493,11 +3447,11 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-width: 0px;
-  box-shadow: rgb(192, 192, 192) -1px -1px 0px 0px inset, rgb(128, 128, 128) 2px 2px 0px 0px inset, rgb(192, 192, 192) -1px -1px 0px 0px inset, rgb(0, 0, 0) 1px 1px 0px 0px inset;
+  box-shadow: inset -1px -1px var(--background-secondary), inset 2px 2px var(--bg-button-shadow), inset -1px -1px var(--background-secondary), inset 1px 1px black;
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
-  background-color: rgb(3, 30, 94);
+  background-color: var(--color-accent, rgb(3, 30, 94));
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3506,20 +3460,20 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   border-top-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(255, 255, 255);
+  color: var(--bg-button-light, rgb(255, 255, 255));
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: rgb(3, 30, 94);
+  background-color: var(--color-accent, rgb(3, 30, 94));
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(255, 255, 255);
+  color: var(--bg-button-light, rgb(255, 255, 255));
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(3, 30, 94, 0.1);
+  background-color: var(--pill-background, rgba(3, 30, 94, 0.1));
   border-bottom-color: rgba(3, 30, 94, 0.15);
   border-left-color: rgba(3, 30, 94, 0.15);
   border-right-color: rgba(3, 30, 94, 0.15);
@@ -3532,38 +3486,38 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
-  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  font-family: var(--h1-font, "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
 }
 
 html[saved-theme="light"] body h2 {
-  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  font-family: var(--h2-font, "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  font-family: var(--inline-title-font, "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
 }
 
 html[saved-theme="light"] body h3 {
-  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  font-family: var(--h3-font, "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
 }
 
 html[saved-theme="light"] body h4 {
-  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  font-family: var(--h4-font, "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
 }
 
 html[saved-theme="light"] body h5 {
-  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  font-family: var(--h5-font, "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
 }
 
 html[saved-theme="light"] body h6 {
-  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  font-family: var(--h6-font, "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
 }
 
 html[saved-theme="light"] body hr {
   border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -3574,7 +3528,7 @@ html[saved-theme="light"] body hr {
   padding-top: 0px;
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background-primary, rgb(255, 255, 255));
 }
 
 html[saved-theme="light"] body .nav-files-container .tree-item-children {
@@ -3590,7 +3544,7 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
-  background-color: rgb(192, 192, 192);
+  background-color: var(--background-secondary, rgb(192, 192, 192));
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3599,10 +3553,10 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(34, 34, 34);
+  color: var(--text-normal, rgb(34, 34, 34));
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: rgb(192, 192, 192);
+  background-color: var(--status-bar-background, rgb(192, 192, 192));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
@@ -3622,13 +3576,13 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 }
 
 html[saved-theme="light"] body ul.section-ul {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background-primary, rgb(255, 255, 255));
   border-top-color: rgb(0, 0, 0);
   border-top-style: solid;
   border-top-width: 1px;
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
-  background-color: rgb(192, 192, 192);
+  background-color: var(--background-secondary, rgb(192, 192, 192));
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3637,7 +3591,7 @@ html[saved-theme="light"] body ul.section-ul {
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(34, 34, 34);
+  color: var(--text-normal, rgb(34, 34, 34));
 }
 
 html[saved-theme="light"] body .darkmode svg {
@@ -3656,8 +3610,8 @@ html[saved-theme="light"] body .metadata-properties {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(3, 30, 94, 0.1);
-  color: rgb(3, 30, 94);
+  background-color: var(--pill-background, rgba(3, 30, 94, 0.1));
+  color: var(--pill-color, rgb(3, 30, 94));
 }
 
 html[saved-theme="light"] body ol.overflow {
@@ -3669,14 +3623,14 @@ html[saved-theme="light"] body ol.overflow {
   border-right-width: 5px;
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
-  background-color: rgb(192, 192, 192);
+  background-color: var(--background-secondary, rgb(192, 192, 192));
 }
 
 html[saved-theme="light"] body .stacked-page-header {
-  background-color: rgb(3, 30, 94);
+  background-color: var(--tab-container-background, rgb(3, 30, 94));
 }`,
     misc: `html[saved-theme="light"] body .navigation-progress {
-  background-color: rgb(192, 192, 192);
+  background-color: var(--status-bar-background, rgb(192, 192, 192));
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
@@ -3688,12 +3642,12 @@ html[saved-theme="light"] body input[type=text] {
 }
 
 html[saved-theme="light"] body ul.tags > li {
-  background-color: rgba(3, 30, 94, 0.1);
+  background-color: var(--tag-background, rgba(3, 30, 94, 0.1));
   border-bottom-color: rgba(3, 30, 94, 0.15);
   border-left-color: rgba(3, 30, 94, 0.15);
   border-right-color: rgba(3, 30, 94, 0.15);
   border-top-color: rgba(3, 30, 94, 0.15);
-  color: rgb(3, 30, 94);
+  color: var(--tag-color, rgb(3, 30, 94));
 }`,
   },
   classSettings: {

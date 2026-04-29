@@ -10,65 +10,62 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-i-h: 438;
-  --accent-l-alt: max(66%, 75%);
-  --accent-s-alt: max(66%, 75%);
-  --background-blurred: hsl(0, 0%, 10.0%);
-  --background-blurred-alt: hsl(0, 0%, 13.6%);
-  --background-modifier-border: hsl(0, 0%, 26.7%);
-  --background-modifier-border-focus: hsl(0, 0%, 34.9%);
-  --background-modifier-border-hover: hsl(0, 0%, 30.7%);
-  --background-modifier-form-field: hsl(0, 0%, 16.3%);
-  --background-modifier-form-field-hover: hsl(0, 0%, 16.3%);
-  --background-modifier-hover: hsl(258, 88%, 44.1%, 25%);
-  --background-primary: hsl(0, 0%, 10.0%);
-  --background-primary-alt: hsl(0, 0%, 13.6%);
-  --background-secondary: hsl(0, 0%, 26.7%);
-  --background-secondary-alt: hsl(0, 0%, 26.7%);
-  --background-semitransp: hsla(0, 0%, 10.0%, 85%);
-  --background-semitransp-alt: hsla(0, 0%, 13.6%, 85%);
-  --bases-cards-background: hsl(0, 0%, 10.0%);
-  --bases-cards-cover-background: hsl(0, 0%, 13.6%);
-  --bases-cards-shadow: 0 0 0 1px hsl(0, 0%, 26.7%);
-  --bases-cards-shadow-hover: 0 0 0 1px hsl(0, 0%, 30.7%);
-  --bases-embed-border-color: hsl(0, 0%, 26.7%);
-  --bases-group-heading-property-color: hsl(0, 0%, 64.6%);
-  --bases-table-border-color: hsl(0, 0%, 26.7%);
-  --bases-table-cell-background-active: hsl(0, 0%, 10.0%);
-  --bases-table-cell-background-disabled: hsl(0, 0%, 13.6%);
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(0, 0%, 34.9%);
-  --bases-table-group-background: hsl(0, 0%, 13.6%);
-  --bases-table-header-background: hsl(0, 0%, 10.0%);
-  --bases-table-header-background-hover: hsl(258, 88%, 44.1%, 25%);
-  --bases-table-header-color: hsl(0, 0%, 64.6%);
-  --bases-table-summary-background: hsl(0, 0%, 10.0%);
-  --bases-table-summary-background-hover: hsl(258, 88%, 44.1%, 25%);
+  --accent-i-h: calc(var(--accent-h) + 180);
+  --accent-l-alt: max(var(--accent-l), 75%);
+  --accent-s-alt: max(calc(var(--accent-s)*0.75), 75%);
+  --background-blurred: var(--background-primary, hsl(0, 0%, 10.0%));
+  --background-blurred-alt: var(--background-primary-alt, hsl(0, 0%, 13.6%));
+  --background-modifier-border: var(--color-base-30, hsl(0, 0%, 26.7%));
+  --background-modifier-border-focus: var(--color-base-40, hsl(0, 0%, 34.9%));
+  --background-modifier-border-hover: var(--color-base-35, hsl(0, 0%, 30.7%));
+  --background-modifier-form-field: var(--color-base-15, hsl(0, 0%, 16.3%));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, hsl(0, 0%, 16.3%));
+  --background-modifier-hover: hsl(var(--button-h), var(--accent-s), var(--color-50-l), 25%);
+  --background-primary: var(--color-base-00, hsl(0, 0%, 10.0%));
+  --background-primary-alt: var(--color-base-10, hsl(0, 0%, 13.6%));
+  --background-secondary: var(--color-base-30, hsl(0, 0%, 26.7%));
+  --background-secondary-alt: var(--color-base-50, hsl(0, 0%, 26.7%));
+  --background-semitransp: hsla(0, 0%, var(--color-00-l), 85%);
+  --background-semitransp-alt: hsla(0, 0%, var(--color-10-l), 85%);
+  --bases-cards-background: var(--background-primary, hsl(0, 0%, 10.0%));
+  --bases-cards-cover-background: var(--background-primary-alt, hsl(0, 0%, 13.6%));
+  --bases-embed-border-color: var(--background-modifier-border, hsl(0, 0%, 26.7%));
+  --bases-group-heading-property-color: var(--text-muted, hsl(0, 0%, 64.6%));
+  --bases-table-border-color: var(--table-border-color, hsl(0, 0%, 26.7%));
+  --bases-table-cell-background-active: var(--background-primary, hsl(0, 0%, 10.0%));
+  --bases-table-cell-background-disabled: var(--background-primary-alt, hsl(0, 0%, 13.6%));
+  --bases-table-group-background: var(--background-primary-alt, hsl(0, 0%, 13.6%));
+  --bases-table-header-background: var(--background-primary, hsl(0, 0%, 10.0%));
+  --bases-table-header-background-hover: var(--background-modifier-hover, hsl(258, 88%, 44.1%, 25%));
+  --bases-table-header-color: var(--text-muted, hsl(0, 0%, 64.6%));
+  --bases-table-summary-background: var(--background-primary, hsl(0, 0%, 10.0%));
+  --bases-table-summary-background-hover: var(--background-modifier-hover, hsl(258, 88%, 44.1%, 25%));
   --blockquote-border-thickness: 0;
-  --blur-background: color-mix(in srgb, hsl(0, 0%, 26.7%) 65%, transparent) linear-gradient(hsl(0, 0%, 26.7%), color-mix(in srgb, hsl(0, 0%, 26.7%) 65%, transparent));
   --blur-size: 4;
-  --bold-color: hsl(438,  88%, 75.9%);
-  --bold-h: 438;
-  --button-alt-h: 258;
-  --button-h: 258;
-  --callout-background-hsla: 258, 88%, 66%, 20%;
-  --callout-h: 258;
-  --canvas-background: hsl(0, 0%, 10.0%);
-  --canvas-card-label-color: hsl(0, 0%, 44.1%);
-  --canvas-dot-pattern: hsl(0, 0%, 26.7%);
-  --caret-color: hsl(0, 0%, 100%);
-  --checkbox-border-color: hsl(0, 0%, 44.1%);
-  --checkbox-border-color-hover: hsl(0, 0%, 64.6%);
-  --checkbox-color: hsl(258,  70.4%, 64.6%);
-  --checkbox-color-hover: hsl(258,  88%, 75.9%);
-  --checkbox-marker-color: hsl(0, 0%, 10.0%);
-  --checklist-done-color: hsl(0, 0%, 64.6%);
-  --code-background: hsl(0, 0%, 13.6%);
-  --code-border-color: hsl(0, 0%, 26.7%);
-  --code-bracket-background: hsl(258, 88%, 44.1%, 25%);
-  --code-comment: hsl(0, 0%, 44.1%);
-  --code-normal: hsl(0, 0%, 100%);
-  --code-punctuation: hsl(0, 0%, 64.6%);
-  --collapse-icon-color: hsl(0, 0%, 44.1%);
+  --bold-color: hsl(var(--bold-h),  var(--accent-s), var(--color-80-l));
+  --bold-h: var(--accent-i-h, 438);
+  --button-alt-h: var(--accent-h, 258);
+  --button-h: var(--accent-h, 258);
+  --callout-background-hsla: var(--callout-h), var(--accent-s), var(--accent-l), 20%;
+  --callout-h: var(--accent-h, 258);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3, 12px 12px 12px 24px) 24px;
+  --canvas-background: var(--background-primary, hsl(0, 0%, 10.0%));
+  --canvas-card-label-color: var(--text-faint, hsl(0, 0%, 44.1%));
+  --canvas-dot-pattern: var(--color-base-30, hsl(0, 0%, 26.7%));
+  --caret-color: var(--text-normal, hsl(0, 0%, 100%));
+  --checkbox-border-color: var(--text-faint, hsl(0, 0%, 44.1%));
+  --checkbox-border-color-hover: var(--text-muted, hsl(0, 0%, 64.6%));
+  --checkbox-color: hsl(var(--button-alt-h),  calc(var(--accent-s)*0.8), var(--color-70-l));
+  --checkbox-color-hover: hsl(var(--button-alt-h),  var(--accent-s), var(--color-80-l));
+  --checkbox-marker-color: var(--background-primary, hsl(0, 0%, 10.0%));
+  --checklist-done-color: var(--text-muted, hsl(0, 0%, 64.6%));
+  --code-background: var(--background-primary-alt, hsl(0, 0%, 13.6%));
+  --code-border-color: var(--background-modifier-border, hsl(0, 0%, 26.7%));
+  --code-bracket-background: var(--background-modifier-hover, hsl(258, 88%, 44.1%, 25%));
+  --code-comment: var(--text-faint, hsl(0, 0%, 44.1%));
+  --code-normal: var(--text-normal, hsl(0, 0%, 100%));
+  --code-punctuation: var(--text-muted, hsl(0, 0%, 64.6%));
+  --collapse-icon-color: var(--text-faint, hsl(0, 0%, 44.1%));
   --color-00-l: 10.0%;
   --color-05-l: 11.4%;
   --color-10-l: 13.6%;
@@ -84,164 +81,155 @@ export const theme: ThemeData = {
   --color-70-l: 64.6%;
   --color-80-l: 75.9%;
   --color-90-l: 87.7%;
-  --color-base-00: hsl(0, 0%, 10.0%);
+  --color-base-00: hsl(0, 0%, var(--color-00-l));
   --color-base-00-transp: #1e1e1e80;
-  --color-base-05: hsl(0, 0%, 11.4%);
-  --color-base-10: hsl(0, 0%, 13.6%);
+  --color-base-05: hsl(0, 0%, var(--color-05-l));
+  --color-base-10: hsl(0, 0%, var(--color-10-l));
   --color-base-10-transp: #24242480;
-  --color-base-100: hsl(0, 0%, 100%);
-  --color-base-15: hsl(0, 0%, 16.3%);
-  --color-base-20: hsl(0, 0%, 19.5%);
+  --color-base-100: hsl(0, 0%, var(--color-100-l));
+  --color-base-15: hsl(0, 0%, var(--color-15-l));
+  --color-base-20: hsl(0, 0%, var(--color-20-l));
   --color-base-20-transp: #26262680;
-  --color-base-25: hsl(0, 0%, 22.9%);
-  --color-base-30: hsl(0, 0%, 26.7%);
+  --color-base-25: hsl(0, 0%, var(--color-25-l));
+  --color-base-30: hsl(0, 0%, var(--color-30-l));
   --color-base-30-transp: #36363680;
-  --color-base-35: hsl(0, 0%, 30.7%);
-  --color-base-40: hsl(0, 0%, 34.9%);
-  --color-base-50: hsl(0, 0%, 44.1%);
-  --color-base-60: hsl(0, 0%, 54.0%);
-  --color-base-70: hsl(0, 0%, 64.6%);
-  --color-base-80: hsl(0, 0%, 75.9%);
-  --color-base-90: hsl(0, 0%, 87.7%);
-  --dark: var(--text-normal, hsl(0, 0%, 100%));
-  --darkgray: var(--text-normal, hsl(0, 0%, 100%));
-  --divider-color: hsl(0, 0%, 26.7%);
-  --dropdown-background: hsl(0, 0%, 26.7%);
-  --dropdown-background-hover: hsl(0, 0%, 30.7%);
-  --embed-block-shadow-hover: 0 0 0 1px hsl(0, 0%, 26.7%), inset 0 0 0 1px hsl(0, 0%, 26.7%);
-  --embed-border-left: 1px solid hsl(258, 88%, 66%);
+  --color-base-35: hsl(0, 0%, var(--color-35-l));
+  --color-base-40: hsl(0, 0%, var(--color-40-l));
+  --color-base-50: hsl(0, 0%, var(--color-50-l));
+  --color-base-60: hsl(0, 0%, var(--color-60-l));
+  --color-base-70: hsl(0, 0%, var(--color-70-l));
+  --color-base-80: hsl(0, 0%, var(--color-80-l));
+  --color-base-90: hsl(0, 0%, var(--color-90-l));
+  --dark: var(--text-normal, var(--color-base-100, hsl(0, 0%, 100%)));
+  --darkgray: var(--text-normal, var(--color-base-100, hsl(0, 0%, 100%)));
+  --divider-color: var(--background-modifier-border, hsl(0, 0%, 26.7%));
+  --dropdown-background: var(--interactive-normal, hsl(0, 0%, 26.7%));
+  --dropdown-background-hover: var(--interactive-hover, hsl(0, 0%, 30.7%));
+  --embed-border-left: 1px solid var(--interactive-accent);
   --embed-border-right: dashed white 1px;
   --embed-max-height: 80vh;
-  --file-header-background: hsl(0, 0%, 10.0%);
-  --file-header-background-focused: hsl(0, 0%, 10.0%);
+  --file-header-background: var(--background-primary, hsl(0, 0%, 10.0%));
+  --file-header-background-focused: var(--background-primary, hsl(0, 0%, 10.0%));
   --file-header-font-weight: 600;
-  --flair-background: hsl(0, 0%, 26.7%);
-  --flair-color: hsl(0, 0%, 100%);
-  --footnote-divider-color: hsl(0, 0%, 26.7%);
-  --footnote-id-color: hsl(0, 0%, 64.6%);
-  --footnote-id-color-no-occurrences: hsl(0, 0%, 44.1%);
-  --footnote-input-background-active: hsl(258, 88%, 44.1%, 25%);
-  --graph-line: hsl(0, 0%, 30.7%);
-  --graph-node: hsl(0, 0%, 64.6%);
-  --graph-node-unresolved: hsl(0, 0%, 44.1%);
-  --graph-text: hsl(0, 0%, 100%);
-  --gray: var(--text-muted, hsl(0, 0%, 64.6%));
-  --heading-formatting: hsl(0, 0%, 44.1%);
-  --highlight: var(--text-highlight-bg, hsla( 438, 88%, 66%, 50%));
-  --hr-color: hsl(0, 0%, 26.7%);
-  --icon-color: hsl(0, 0%, 64.6%);
-  --icon-color-focused: hsl(0, 0%, 100%);
-  --icon-color-hover: hsl(258,  88%, 87.7%);
-  --input-date-separator: hsl(0, 0%, 44.1%);
-  --input-placeholder-color: hsl(0, 0%, 44.1%);
-  --interactive-hover: hsl(0, 0%, 30.7%);
-  --interactive-normal: hsl(0, 0%, 26.7%);
-  --italic-color: hsl(258, 88%, 75.9%);
-  --italic-h: 258;
-  --light: var(--background-primary, hsl(0, 0%, 10.0%));
-  --lightgray: var(--background-secondary, hsl(0, 0%, 26.7%));
-  --list-marker-color: hsl(0, 0%, 44.1%);
-  --list-marker-color-hover: hsl(0, 0%, 64.6%);
+  --flair-background: var(--interactive-normal, hsl(0, 0%, 26.7%));
+  --flair-color: var(--text-normal, hsl(0, 0%, 100%));
+  --footnote-divider-color: var(--metadata-divider-color, hsl(0, 0%, 26.7%));
+  --footnote-id-color: var(--text-muted, hsl(0, 0%, 64.6%));
+  --footnote-id-color-no-occurrences: var(--text-faint, hsl(0, 0%, 44.1%));
+  --footnote-input-background-active: var(--metadata-input-background-active, hsl(258, 88%, 44.1%, 25%));
+  --graph-node: var(--text-muted, hsl(0, 0%, 64.6%));
+  --graph-node-unresolved: var(--text-faint, hsl(0, 0%, 44.1%));
+  --graph-text: var(--text-normal, hsl(0, 0%, 100%));
+  --gray: var(--text-muted, var(--color-base-70, hsl(0, 0%, 64.6%)));
+  --heading-formatting: var(--text-faint, hsl(0, 0%, 44.1%));
+  --highlight: var(--text-highlight-bg, hsla( var(--text-highlight-h), var(--accent-s), var(--accent-l), 50%));
+  --hr-color: var(--background-modifier-border, hsl(0, 0%, 26.7%));
+  --icon-color: var(--text-muted, hsl(0, 0%, 64.6%));
+  --icon-color-focused: var(--text-normal, hsl(0, 0%, 100%));
+  --icon-color-hover: hsl(var(--button-h),  var(--accent-s), var(--color-90-l));
+  --input-date-separator: var(--text-faint, hsl(0, 0%, 44.1%));
+  --input-placeholder-color: var(--text-faint, hsl(0, 0%, 44.1%));
+  --interactive-hover: var(--color-base-35, hsl(0, 0%, 30.7%));
+  --interactive-normal: var(--color-base-30, hsl(0, 0%, 26.7%));
+  --italic-color: hsl(var(--italic-h), var(--accent-s), var(--color-80-l));
+  --italic-h: var(--accent-h, 258);
+  --light: var(--background-primary, var(--color-base-00, hsl(0, 0%, 10.0%)));
+  --lightgray: var(--background-secondary, var(--color-base-30, hsl(0, 0%, 26.7%)));
+  --list-marker-color: var(--text-faint, hsl(0, 0%, 44.1%));
+  --list-marker-color-hover: var(--text-muted, hsl(0, 0%, 64.6%));
   --max-highlight: 45%;
-  --menu-background: hsl(0, 0%, 26.7%);
-  --menu-border-color: hsl(0, 0%, 30.7%);
-  --metadata-border-color: hsl(0, 0%, 26.7%);
-  --metadata-divider-color: hsl(0, 0%, 26.7%);
-  --metadata-input-background-active: hsl(258, 88%, 44.1%, 25%);
-  --metadata-input-text-color: hsl(0, 0%, 100%);
-  --metadata-label-background-active: hsl(258, 88%, 44.1%, 25%);
-  --metadata-label-text-color: hsl(0, 0%, 64.6%);
-  --metadata-label-text-color-hover: hsl(0, 0%, 64.6%);
-  --metadata-property-background-active: hsl(258, 88%, 44.1%, 25%);
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(0, 0%, 34.9%);
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(0, 0%, 30.7%);
+  --menu-background: var(--background-secondary, hsl(0, 0%, 26.7%));
+  --menu-border-color: var(--background-modifier-border-hover, hsl(0, 0%, 30.7%));
+  --metadata-border-color: var(--background-modifier-border, hsl(0, 0%, 26.7%));
+  --metadata-divider-color: var(--background-modifier-border, hsl(0, 0%, 26.7%));
+  --metadata-input-background-active: var(--background-modifier-hover, hsl(258, 88%, 44.1%, 25%));
+  --metadata-input-text-color: var(--text-normal, hsl(0, 0%, 100%));
+  --metadata-label-background-active: var(--background-modifier-hover, hsl(258, 88%, 44.1%, 25%));
+  --metadata-label-text-color: var(--text-muted, hsl(0, 0%, 64.6%));
+  --metadata-label-text-color-hover: var(--text-muted, hsl(0, 0%, 64.6%));
+  --metadata-property-background-active: var(--background-modifier-hover, hsl(258, 88%, 44.1%, 25%));
   --min-highlight: 35%;
-  --modal-background: hsl(0, 0%, 10.0%);
-  --modal-border-color: hsl(0, 0%, 34.9%);
-  --modal-border-width: 0;
-  --nav-collapse-icon-color: hsl(0, 0%, 44.1%);
-  --nav-collapse-icon-color-collapsed: hsl(0, 0%, 44.1%);
-  --nav-heading-color: hsl(0, 0%, 100%);
-  --nav-heading-color-collapsed: hsl(0, 0%, 44.1%);
-  --nav-heading-color-collapsed-hover: hsl(0, 0%, 64.6%);
-  --nav-heading-color-hover: hsl(0, 0%, 100%);
-  --nav-item-background-active: hsl(258, 88%, 66%);
-  --nav-item-background-hover: hsla(258, 88%, 34.9%, 33%);
-  --nav-item-color: hsl(0, 0%, 64.6%);
-  --nav-item-color-active: white;
-  --nav-item-color-hover: hsl(258,  88%, 87.7%);
-  --nav-item-color-selected: hsl(0, 0%, 100%);
-  --nav-tag-color: hsl(0, 0%, 44.1%);
-  --nav-tag-color-active: hsl(0, 0%, 64.6%);
-  --nav-tag-color-hover: hsl(0, 0%, 64.6%);
-  --pdf-background: hsl(0, 0%, 10.0%);
-  --pdf-page-background: hsl(0, 0%, 10.0%);
-  --pdf-shadow: 0 0 0 1px hsl(0, 0%, 26.7%);
-  --pdf-sidebar-background: hsl(0, 0%, 10.0%);
-  --pdf-thumbnail-shadow: 0 0 0 1px hsl(0, 0%, 26.7%);
-  --pill-border-color: hsl(0, 0%, 26.7%);
-  --pill-border-color-hover: hsl(0, 0%, 30.7%);
-  --pill-color: hsl(0, 0%, 64.6%);
-  --pill-color-hover: hsl(0, 0%, 100%);
-  --pill-color-remove: hsl(0, 0%, 44.1%);
-  --prompt-background: hsl(0, 0%, 10.0%);
-  --prompt-border-color: hsl(0, 0%, 34.9%);
-  --prompt-border-width: 0;
-  --raised-background: color-mix(in srgb, hsl(0, 0%, 26.7%) 65%, transparent) linear-gradient(hsl(0, 0%, 26.7%), color-mix(in srgb, hsl(0, 0%, 26.7%) 65%, transparent));
-  --ribbon-background: hsl(0, 0%, 26.7%);
-  --ribbon-background-collapsed: hsl(0, 0%, 10.0%);
-  --search-clear-button-color: hsl(0, 0%, 64.6%);
-  --search-icon-color: hsl(0, 0%, 64.6%);
-  --search-result-background: hsl(0, 0%, 10.0%);
-  --setting-group-heading-color: hsl(0, 0%, 100%);
-  --setting-items-background: hsl(0, 0%, 13.6%);
-  --setting-items-border-color: hsl(0, 0%, 26.7%);
-  --shiki-active-tab-border-color: hsl(0, 0%, 64.6%);
-  --shiki-code-background: hsl(0, 0%, 13.6%);
-  --shiki-code-comment: hsl(0, 0%, 44.1%);
-  --shiki-code-normal: hsl(0, 0%, 64.6%);
-  --shiki-code-punctuation: hsl(0, 0%, 64.6%);
-  --shiki-gutter-border-color: hsl(0, 0%, 26.7%);
-  --shiki-gutter-text-color: hsl(0, 0%, 44.1%);
-  --shiki-gutter-text-color-highlight: hsl(0, 0%, 64.6%);
-  --shiki-highlight-neutral: hsl(0, 0%, 64.6%);
-  --shiki-terminal-dots-color: hsl(0, 0%, 44.1%);
-  --slider-thumb-border-color: hsl(0, 0%, 30.7%);
-  --slider-track-background: hsl(0, 0%, 26.7%);
-  --status-bar-background: hsl(0, 0%, 26.7%);
-  --status-bar-border-color: hsl(0, 0%, 26.7%);
-  --status-bar-text-color: hsl(0, 0%, 64.6%);
-  --suggestion-background: hsl(0, 0%, 10.0%);
-  --tab-background-active: hsl(0, 0%, 10.0%);
-  --tab-container-background: hsl(0, 0%, 19.5%);
-  --tab-divider-color: hsl(0, 0%, 30.7%);
-  --tab-outline-color: hsl(0, 0%, 26.7%);
+  --modal-background: var(--background-primary, hsl(0, 0%, 10.0%));
+  --modal-border-width: var(--border-width, 0);
+  --nav-collapse-icon-color: var(--collapse-icon-color, hsl(0, 0%, 44.1%));
+  --nav-collapse-icon-color-collapsed: var(--text-faint, hsl(0, 0%, 44.1%));
+  --nav-heading-color: var(--text-normal, hsl(0, 0%, 100%));
+  --nav-heading-color-collapsed: var(--text-faint, hsl(0, 0%, 44.1%));
+  --nav-heading-color-collapsed-hover: var(--text-muted, hsl(0, 0%, 64.6%));
+  --nav-heading-color-hover: var(--text-normal, hsl(0, 0%, 100%));
+  --nav-item-background-active: var(--interactive-accent, hsl(258, 88%, 66%));
+  --nav-item-background-hover: hsla(var(--button-h), var(--accent-s), var(--color-40-l), 33%);
+  --nav-item-color: var(--text-muted, hsl(0, 0%, 64.6%));
+  --nav-item-color-active: var(--text-on-accent, white);
+  --nav-item-color-hover: var(--icon-color-hover, hsl(258,  88%, 87.7%));
+  --nav-item-color-selected: var(--text-normal, hsl(0, 0%, 100%));
+  --nav-tag-color: var(--text-faint, hsl(0, 0%, 44.1%));
+  --nav-tag-color-active: var(--text-muted, hsl(0, 0%, 64.6%));
+  --nav-tag-color-hover: var(--text-muted, hsl(0, 0%, 64.6%));
+  --pdf-background: var(--background-primary, hsl(0, 0%, 10.0%));
+  --pdf-page-background: var(--background-primary, hsl(0, 0%, 10.0%));
+  --pdf-sidebar-background: var(--background-primary, hsl(0, 0%, 10.0%));
+  --pill-border-color: var(--background-modifier-border, hsl(0, 0%, 26.7%));
+  --pill-border-color-hover: var(--background-modifier-border-hover, hsl(0, 0%, 30.7%));
+  --pill-color: var(--text-muted, hsl(0, 0%, 64.6%));
+  --pill-color-hover: var(--text-normal, hsl(0, 0%, 100%));
+  --pill-color-remove: var(--text-faint, hsl(0, 0%, 44.1%));
+  --prompt-background: var(--background-primary, hsl(0, 0%, 10.0%));
+  --prompt-border-width: var(--border-width, 0);
+  --raised-background: var(--blur-background, color-mix(in srgb, hsl(0, 0%, 26.7%) 65%, transparent) linear-gradient(hsl(0, 0%, 26.7%), color-mix(in srgb, hsl(0, 0%, 26.7%) 65%, transparent)));
+  --ribbon-background: var(--background-secondary, hsl(0, 0%, 26.7%));
+  --ribbon-background-collapsed: var(--background-primary, hsl(0, 0%, 10.0%));
+  --search-clear-button-color: var(--text-muted, hsl(0, 0%, 64.6%));
+  --search-icon-color: var(--text-muted, hsl(0, 0%, 64.6%));
+  --search-result-background: var(--background-primary, hsl(0, 0%, 10.0%));
+  --setting-group-heading-color: var(--text-normal, hsl(0, 0%, 100%));
+  --setting-items-background: var(--background-primary-alt, hsl(0, 0%, 13.6%));
+  --setting-items-border-color: var(--background-modifier-border, hsl(0, 0%, 26.7%));
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, hsl(0, 0%, 64.6%));
+  --shiki-code-background: var(--code-background, hsl(0, 0%, 13.6%));
+  --shiki-code-comment: var(--text-faint, hsl(0, 0%, 44.1%));
+  --shiki-code-normal: var(--text-muted, hsl(0, 0%, 64.6%));
+  --shiki-code-punctuation: var(--text-muted, hsl(0, 0%, 64.6%));
+  --shiki-gutter-border-color: var(--background-modifier-border, hsl(0, 0%, 26.7%));
+  --shiki-gutter-text-color: var(--text-faint, hsl(0, 0%, 44.1%));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, hsl(0, 0%, 64.6%));
+  --shiki-highlight-neutral: var(--shiki-code-normal, hsl(0, 0%, 64.6%));
+  --shiki-terminal-dots-color: var(--text-faint, hsl(0, 0%, 44.1%));
+  --slider-thumb-border-color: var(--background-modifier-border-hover, hsl(0, 0%, 30.7%));
+  --slider-track-background: var(--background-modifier-border, hsl(0, 0%, 26.7%));
+  --status-bar-background: var(--background-secondary, hsl(0, 0%, 26.7%));
+  --status-bar-border-color: var(--divider-color, hsl(0, 0%, 26.7%));
+  --status-bar-text-color: var(--text-muted, hsl(0, 0%, 64.6%));
+  --suggestion-background: var(--background-primary, hsl(0, 0%, 10.0%));
+  --tab-background-active: var(--background-primary, hsl(0, 0%, 10.0%));
+  --tab-container-background: var(--color-base-20, hsl(0, 0%, 19.5%));
+  --tab-divider-color: var(--background-modifier-border-hover, hsl(0, 0%, 30.7%));
+  --tab-outline-color: var(--divider-color, hsl(0, 0%, 26.7%));
   --tab-outline-width: 0;
-  --tab-switcher-background: hsl(0, 0%, 26.7%);
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 26.7%), transparent);
-  --tab-text-color: hsl(0, 0%, 44.1%);
-  --tab-text-color-active: hsl(0, 0%, 64.6%);
-  --tab-text-color-focused: hsl(0, 0%, 64.6%);
-  --tab-text-color-focused-active: hsl(0, 0%, 64.6%);
-  --tab-text-color-focused-active-current: hsl(0, 0%, 100%);
-  --table-add-button-border-color: hsl(0, 0%, 26.7%);
-  --table-border-color: hsl(0, 0%, 26.7%);
-  --table-drag-handle-color: hsl(0, 0%, 44.1%);
-  --table-header-border-color: hsl(0, 0%, 26.7%);
-  --table-header-color: hsl(0, 0%, 100%);
-  --text-faint: hsl(0, 0%, 44.1%);
-  --text-highlight-bg: hsla( 438, 88%, 66%, 50%);
-  --text-highlight-h: 438;
-  --text-muted: hsl(0, 0%, 64.6%);
-  --text-normal: hsl(0, 0%, 100%);
-  --textHighlight: var(--text-highlight-bg, hsla( 438, 88%, 66%, 50%));
-  --titlebar-background: hsl(0, 0%, 19.5%);
-  --titlebar-background-focused: #36363680;
-  --titlebar-border-color: hsl(0, 0%, 26.7%);
-  --titlebar-text-color: hsl(0, 0%, 64.6%);
-  --titlebar-text-color-focused: hsl(0, 0%, 100%);
-  --vault-profile-color: hsl(0, 0%, 100%);
-  --vault-profile-color-hover: hsl(0, 0%, 100%);
+  --tab-switcher-background: var(--background-secondary, hsl(0, 0%, 26.7%));
+  --tab-text-color: var(--text-faint, hsl(0, 0%, 44.1%));
+  --tab-text-color-active: var(--text-muted, hsl(0, 0%, 64.6%));
+  --tab-text-color-focused: var(--text-muted, hsl(0, 0%, 64.6%));
+  --tab-text-color-focused-active: var(--text-muted, hsl(0, 0%, 64.6%));
+  --tab-text-color-focused-active-current: var(--text-normal, hsl(0, 0%, 100%));
+  --table-add-button-border-color: var(--background-modifier-border, hsl(0, 0%, 26.7%));
+  --table-border-color: var(--background-modifier-border, hsl(0, 0%, 26.7%));
+  --table-drag-handle-color: var(--text-faint, hsl(0, 0%, 44.1%));
+  --table-header-border-color: var(--table-border-color, hsl(0, 0%, 26.7%));
+  --table-header-color: var(--text-normal, hsl(0, 0%, 100%));
+  --text-faint: var(--color-base-50, hsl(0, 0%, 44.1%));
+  --text-highlight-bg: hsla( var(--text-highlight-h), var(--accent-s), var(--accent-l), 50%);
+  --text-highlight-h: var(--accent-i-h, 438);
+  --text-muted: var(--color-base-70, hsl(0, 0%, 64.6%));
+  --text-normal: var(--color-base-100, hsl(0, 0%, 100%));
+  --textHighlight: var(--text-highlight-bg, hsla( var(--text-highlight-h), var(--accent-s), var(--accent-l), 50%));
+  --titlebar-background: var(--color-base-20, hsl(0, 0%, 19.5%));
+  --titlebar-background-focused: var(--color-base-30-transp, #36363680);
+  --titlebar-border-color: var(--background-modifier-border, hsl(0, 0%, 26.7%));
+  --titlebar-text-color: var(--text-muted, hsl(0, 0%, 64.6%));
+  --titlebar-text-color-focused: var(--text-normal, hsl(0, 0%, 100%));
+  --vault-profile-color: var(--text-normal, hsl(0, 0%, 100%));
+  --vault-profile-color-hover: var(--vault-profile-color, hsl(0, 0%, 100%));
   --quartz-icon-color: currentColor;
 }
 
@@ -251,17 +239,17 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(68, 68, 68);
+  background-color: var(--background-secondary, rgb(68, 68, 68));
   color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: rgb(26, 26, 26);
+  background-color: var(--background-primary, rgb(26, 26, 26));
   color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(35, 35, 35);
+  background-color: var(--background-primary-alt, rgb(35, 35, 35));
   color: rgb(255, 255, 255);
 }
 
@@ -270,37 +258,37 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(68, 68, 68);
+  background-color: var(--background-secondary, rgb(68, 68, 68));
   border-left-color: rgb(68, 68, 68);
   color: rgb(255, 255, 255);
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
-  color: rgb(215, 248, 139);
+  color: var(--bold-color, rgb(215, 248, 139));
   outline: rgb(215, 248, 139) none 0px;
   text-decoration-color: rgb(215, 248, 139);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
-  color: rgb(172, 139, 248);
+  color: var(--italic-color, rgb(172, 139, 248));
   outline: rgb(172, 139, 248) none 0px;
   text-decoration-color: rgb(172, 139, 248);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
-  color: rgb(172, 139, 248);
+  color: var(--italic-color, rgb(172, 139, 248));
   outline: rgb(172, 139, 248) none 0px;
   text-decoration-color: rgb(172, 139, 248);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
-  color: rgb(215, 248, 139);
+  color: var(--bold-color, rgb(215, 248, 139));
   outline: rgb(215, 248, 139) none 0px;
   text-decoration-color: rgb(215, 248, 139);
 }
 
 html[saved-theme="dark"] body .text-highlight {
-  background-color: rgba(199, 245, 92, 0.5);
-  color: rgb(255, 255, 255);
+  background-color: var(--text-highlight-bg, rgba(199, 245, 92, 0.5));
+  color: var(--text-normal, rgb(255, 255, 255));
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
@@ -312,7 +300,7 @@ html[saved-theme="dark"] body del {
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
   font-weight: 600;
 }
 
@@ -321,12 +309,12 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(139, 101, 228);
+  background-color: var(--checkbox-color, rgb(139, 101, 228));
   border-color: rgb(139, 101, 228);
 }
 
 html[saved-theme="dark"] body p {
-  color: rgb(165, 165, 165);
+  color: var(--text-muted, rgb(165, 165, 165));
   outline: rgb(165, 165, 165) none 0px;
   text-decoration-color: rgb(165, 165, 165);
 }`,
@@ -353,11 +341,11 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-color: rgb(255, 255, 255);
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
-  color: rgb(138, 92, 245);
+  color: var(--interactive-accent, rgb(138, 92, 245));
 }
 
 html[saved-theme="dark"] body blockquote {
-  background-color: rgba(35, 35, 35, 0.85);
+  background-color: var(--background-semitransp-alt, rgba(35, 35, 35, 0.85));
   padding-bottom: 8px;
   padding-top: 8px;
 }`,
@@ -377,7 +365,7 @@ html[saved-theme="dark"] body td {
   border-left-color: rgb(68, 68, 68);
   border-right-color: rgb(68, 68, 68);
   border-top-color: rgb(68, 68, 68);
-  color: rgb(255, 255, 255);
+  color: var(--table-text-color, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body th {
@@ -387,19 +375,19 @@ html[saved-theme="dark"] body th {
   border-left-color: rgb(68, 68, 68);
   border-right-color: rgb(68, 68, 68);
   border-top-color: rgb(68, 68, 68);
-  color: rgb(255, 255, 255);
+  color: var(--table-header-color, rgb(255, 255, 255));
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: rgb(35, 35, 35);
+  background-color: var(--code-background, rgb(35, 35, 35));
   border-bottom-color: rgb(68, 68, 68);
   border-left-color: rgb(68, 68, 68);
   border-right-color: rgb(68, 68, 68);
   border-top-color: rgb(68, 68, 68);
-  color: rgb(255, 255, 255);
+  color: var(--code-normal, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: rgb(35, 35, 35);
+  background-color: var(--code-background, rgb(35, 35, 35));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
@@ -441,7 +429,7 @@ html[saved-theme="dark"] body video {
   border-top-color: rgb(255, 255, 255);
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: rgb(35, 35, 35);
+  background-color: var(--background-primary-alt, rgb(35, 35, 35));
   border-bottom-color: rgb(165, 165, 165);
   border-left-color: rgb(165, 165, 165);
   border-right-color: rgb(165, 165, 165);
@@ -454,7 +442,7 @@ html[saved-theme="dark"] body .footnotes {
 }
 
 html[saved-theme="dark"] body .transclude {
-  background-color: rgba(35, 35, 35, 0.85);
+  background-color: var(--background-semitransp-alt, rgba(35, 35, 35, 0.85));
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -467,7 +455,7 @@ html[saved-theme="dark"] body .transclude {
 }
 
 html[saved-theme="dark"] body .transclude-inner {
-  background-color: rgba(35, 35, 35, 0.85);
+  background-color: var(--background-semitransp-alt, rgba(35, 35, 35, 0.85));
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -1046,7 +1034,7 @@ html[saved-theme="dark"] body .callout > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   color: rgb(255, 255, 255);
 }
 
@@ -1065,7 +1053,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   color: rgb(255, 255, 255);
 }
 
@@ -1084,7 +1072,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   color: rgb(255, 255, 255);
 }
 
@@ -1103,7 +1091,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   color: rgb(255, 255, 255);
 }
 
@@ -1122,7 +1110,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   color: rgb(255, 255, 255);
 }
 
@@ -1141,7 +1129,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   color: rgb(255, 255, 255);
 }
 
@@ -1160,7 +1148,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   color: rgb(255, 255, 255);
 }
 
@@ -1179,7 +1167,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   color: rgb(255, 255, 255);
 }
 
@@ -1198,7 +1186,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   color: rgb(255, 255, 255);
 }
 
@@ -1217,7 +1205,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   color: rgb(255, 255, 255);
 }
 
@@ -1236,7 +1224,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   color: rgb(255, 255, 255);
 }
 
@@ -1255,7 +1243,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   color: rgb(255, 255, 255);
 }
 
@@ -1274,7 +1262,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   color: rgb(255, 255, 255);
 }
 
@@ -1352,11 +1340,11 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-left-color: rgb(68, 68, 68);
   border-right-color: rgb(68, 68, 68);
   border-top-color: rgb(68, 68, 68);
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: rgb(26, 26, 26);
+  background-color: var(--background-blurred, rgb(26, 26, 26));
   border-bottom-color: rgb(89, 89, 89);
   border-bottom-width: 0px;
   border-left-color: rgb(89, 89, 89);
@@ -1389,7 +1377,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: rgba(73, 13, 211, 0.25);
+  background-color: var(--background-modifier-hover, rgba(73, 13, 211, 0.25));
   color: rgb(255, 255, 255);
 }
 
@@ -1412,7 +1400,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
-  background-color: rgba(73, 13, 211, 0.25);
+  background-color: var(--background-modifier-hover, rgba(73, 13, 211, 0.25));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
@@ -1421,40 +1409,40 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: rgba(73, 13, 211, 0.25);
+  background-color: var(--background-modifier-hover, rgba(73, 13, 211, 0.25));
   color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body h1 {
-  color: rgb(255, 255, 255);
+  color: var(--h1-color, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(255, 255, 255);
+  color: var(--inline-title-color, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body h2 {
-  color: rgb(255, 255, 255);
+  color: var(--h2-color, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  color: rgb(255, 255, 255);
+  color: var(--inline-title-color, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body h3 {
-  color: rgb(255, 255, 255);
+  color: var(--h3-color, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body h4 {
-  color: rgb(255, 255, 255);
+  color: var(--h4-color, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body h5 {
-  color: rgb(255, 255, 255);
+  color: var(--h5-color, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body h6 {
-  color: rgb(255, 255, 255);
+  color: var(--h6-color, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body hr {
@@ -1463,42 +1451,42 @@ html[saved-theme="dark"] body hr {
   border-right-color: rgb(68, 68, 68);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
-  --callout-color: 2, 122, 255;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  --callout-color: var(--callout-default, 2, 122, 255);
+  padding-bottom: var(--size-4-2, 8px);
+  padding-top: var(--size-4-2, 8px);
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(165, 165, 165);
-  cursor: pointer;
-  font-weight: 600;
+  color: var(--nav-item-color, rgb(165, 165, 165));
+  cursor: var(--cursor, pointer);
+  font-weight: var(--nav-item-weight, 600);
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(165, 165, 165);
-  cursor: pointer;
-  font-weight: 600;
+  color: var(--nav-item-color, rgb(165, 165, 165));
+  cursor: var(--cursor, pointer);
+  font-weight: var(--nav-item-weight, 600);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.depth-0 {
-  font-weight: 600;
+  font-weight: var(--nav-item-weight, 600);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(165, 165, 165);
   border-left-color: rgb(165, 165, 165);
   border-right-color: rgb(165, 165, 165);
   border-top-color: rgb(165, 165, 165);
-  color: rgb(165, 165, 165);
+  color: var(--icon-color, rgb(165, 165, 165));
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: rgb(68, 68, 68);
+  background-color: var(--status-bar-background, rgb(68, 68, 68));
   border-bottom-color: rgb(68, 68, 68);
   border-left-color: rgb(68, 68, 68);
   border-right-color: rgb(68, 68, 68);
   border-top-color: rgb(68, 68, 68);
-  color: rgb(165, 165, 165);
+  color: var(--status-bar-text-color, rgb(165, 165, 165));
 }
 
 html[saved-theme="dark"] body footer ul li a {
@@ -1517,7 +1505,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(165, 165, 165);
+  color: var(--nav-item-color, rgb(165, 165, 165));
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1535,7 +1523,7 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(165, 165, 165);
+  color: var(--nav-item-color, rgb(165, 165, 165));
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -1549,7 +1537,7 @@ html[saved-theme="dark"] body ul.section-ul {
   border-left-color: rgb(165, 165, 165);
   border-right-color: rgb(165, 165, 165);
   border-top-color: rgb(165, 165, 165);
-  color: rgb(165, 165, 165);
+  color: var(--icon-color, rgb(165, 165, 165));
 }
 
 html[saved-theme="dark"] body .darkmode svg {
@@ -1565,7 +1553,7 @@ html[saved-theme="dark"] body .darkmode svg {
 }
 
 html[saved-theme="dark"] body .breadcrumb-element p {
-  color: rgb(112, 112, 112);
+  color: var(--text-faint, rgb(112, 112, 112));
 }`,
     canvas: `html[saved-theme="dark"] body .canvas-node {
   border-color: rgb(255, 255, 255);
@@ -1576,7 +1564,7 @@ html[saved-theme="dark"] body .canvas-node-content {
 }
 
 html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body .canvas-node-group {
@@ -1584,19 +1572,19 @@ html[saved-theme="dark"] body .canvas-node-group {
 }
 
 html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(68, 68, 68);
+  background-color: var(--background-secondary, rgb(68, 68, 68));
   border-color: rgb(255, 255, 255);
 }`,
     bases: `html[saved-theme="dark"] body .bases-table thead th {
   border-color: rgb(68, 68, 68);
-  color: rgb(255, 255, 255);
+  color: var(--table-header-color, rgb(255, 255, 255));
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(68, 68, 68);
   border-left-color: rgb(68, 68, 68);
   border-right-color: rgb(68, 68, 68);
   border-top-color: rgb(68, 68, 68);
-  color: rgb(165, 165, 165);
+  color: var(--text-muted, rgb(165, 165, 165));
 }
 
 html[saved-theme="dark"] body .metadata-properties {
@@ -1624,8 +1612,8 @@ html[saved-theme="dark"] body .note-properties-value {
 }
 
 html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(26, 26, 26);
-  color: rgb(255, 255, 255);
+  background-color: var(--background-primary, rgb(26, 26, 26));
+  color: var(--text-normal, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body ol.overflow {
@@ -1635,12 +1623,12 @@ html[saved-theme="dark"] body ol.overflow {
   border-top-color: rgb(255, 255, 255);
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
-  background-color: rgb(35, 35, 35);
+  background-color: var(--background-primary-alt, rgb(35, 35, 35));
   border-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
-  background-color: rgba(54, 54, 54, 0.5);
+  background-color: var(--tab-container-background, rgba(54, 54, 54, 0.5));
 }
 
 html[saved-theme="dark"] body .stacked-page.active {
@@ -1655,11 +1643,11 @@ html[saved-theme="dark"] body .stacked-page.active {
 }
 
 html[saved-theme="dark"] body .navigation-progress {
-  background-color: rgb(68, 68, 68);
+  background-color: var(--status-bar-background, rgb(68, 68, 68));
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body abbr {
@@ -1678,16 +1666,16 @@ html[saved-theme="dark"] body input[type=text] {
   border-left-color: rgb(165, 165, 165);
   border-right-color: rgb(165, 165, 165);
   border-top-color: rgb(165, 165, 165);
-  color: rgb(165, 165, 165);
+  color: var(--text-normal, rgb(165, 165, 165));
 }
 
 html[saved-theme="dark"] body kbd {
-  background-color: rgb(35, 35, 35);
+  background-color: var(--code-background, rgb(35, 35, 35));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
+  color: var(--code-normal, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body progress {
@@ -1711,65 +1699,62 @@ html[saved-theme="dark"] body sup {
   },
   light: {
     base: `:root:root {
-  --accent-i-h: 438;
-  --accent-l-alt: min(66%, 40%);
-  --accent-s-alt: min(110%, 75%);
-  --background-blurred: hsl(0, 0%, 100%);
-  --background-blurred-alt: hsl(0, 0%, 95.5%);
-  --background-modifier-border: hsl(0, 0%, 81.2%);
-  --background-modifier-border-focus: hsl(0, 0%, 72.7%);
-  --background-modifier-border-hover: hsl(0, 0%, 77.0%);
-  --background-modifier-form-field: hsl(0, 0%, 92.4%);
-  --background-modifier-form-field-hover: hsl(0, 0%, 92.4%);
-  --background-modifier-hover: hsl(258, 88%, 63.4%, 25%);
-  --background-primary: hsl(0, 0%, 100%);
-  --background-primary-alt: hsl(0, 0%, 95.5%);
-  --background-secondary: hsl(0, 0%, 81.2%);
-  --background-secondary-alt: hsl(0, 0%, 98.2%);
-  --background-semitransp: hsla(0, 0%, 100%, 85%);
-  --background-semitransp-alt: hsla(0, 0%, 95.5%, 85%);
-  --bases-cards-background: hsl(0, 0%, 100%);
-  --bases-cards-cover-background: hsl(0, 0%, 95.5%);
-  --bases-cards-shadow: 0 0 0 1px hsl(0, 0%, 81.2%);
-  --bases-cards-shadow-hover: 0 0 0 1px hsl(0, 0%, 77.0%);
-  --bases-embed-border-color: hsl(0, 0%, 81.2%);
-  --bases-group-heading-property-color: hsl(0, 0%, 43.4%);
-  --bases-table-border-color: hsl(0, 0%, 81.2%);
-  --bases-table-cell-background-active: hsl(0, 0%, 100%);
-  --bases-table-cell-background-disabled: hsl(0, 0%, 95.5%);
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(0, 0%, 72.7%);
-  --bases-table-group-background: hsl(0, 0%, 95.5%);
-  --bases-table-header-background: hsl(0, 0%, 100%);
-  --bases-table-header-background-hover: hsl(258, 88%, 63.4%, 25%);
-  --bases-table-header-color: hsl(0, 0%, 43.4%);
-  --bases-table-summary-background: hsl(0, 0%, 100%);
-  --bases-table-summary-background-hover: hsl(258, 88%, 63.4%, 25%);
+  --accent-i-h: calc(var(--accent-h) + 180);
+  --accent-l-alt: min(var(--accent-l), 40%);
+  --accent-s-alt: min(calc(var(--accent-s)*1.25), 75%);
+  --background-blurred: var(--background-primary, hsl(0, 0%, 100%));
+  --background-blurred-alt: var(--background-primary-alt, hsl(0, 0%, 95.5%));
+  --background-modifier-border: var(--color-base-30, hsl(0, 0%, 81.2%));
+  --background-modifier-border-focus: var(--color-base-40, hsl(0, 0%, 72.7%));
+  --background-modifier-border-hover: var(--color-base-35, hsl(0, 0%, 77.0%));
+  --background-modifier-form-field: var(--color-base-15, hsl(0, 0%, 92.4%));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, hsl(0, 0%, 92.4%));
+  --background-modifier-hover: hsl(var(--button-h), var(--accent-s), var(--color-50-l), 25%);
+  --background-primary: var(--color-base-00, hsl(0, 0%, 100%));
+  --background-primary-alt: var(--color-base-10, hsl(0, 0%, 95.5%));
+  --background-secondary: var(--color-base-30, hsl(0, 0%, 81.2%));
+  --background-secondary-alt: var(--color-base-50, hsl(0, 0%, 98.2%));
+  --background-semitransp: hsla(0, 0%, var(--color-00-l), 85%);
+  --background-semitransp-alt: hsla(0, 0%, var(--color-10-l), 85%);
+  --bases-cards-background: var(--background-primary, hsl(0, 0%, 100%));
+  --bases-cards-cover-background: var(--background-primary-alt, hsl(0, 0%, 95.5%));
+  --bases-embed-border-color: var(--background-modifier-border, hsl(0, 0%, 81.2%));
+  --bases-group-heading-property-color: var(--text-muted, hsl(0, 0%, 43.4%));
+  --bases-table-border-color: var(--table-border-color, hsl(0, 0%, 81.2%));
+  --bases-table-cell-background-active: var(--background-primary, hsl(0, 0%, 100%));
+  --bases-table-cell-background-disabled: var(--background-primary-alt, hsl(0, 0%, 95.5%));
+  --bases-table-group-background: var(--background-primary-alt, hsl(0, 0%, 95.5%));
+  --bases-table-header-background: var(--background-primary, hsl(0, 0%, 100%));
+  --bases-table-header-background-hover: var(--background-modifier-hover, hsl(258, 88%, 63.4%, 25%));
+  --bases-table-header-color: var(--text-muted, hsl(0, 0%, 43.4%));
+  --bases-table-summary-background: var(--background-primary, hsl(0, 0%, 100%));
+  --bases-table-summary-background-hover: var(--background-modifier-hover, hsl(258, 88%, 63.4%, 25%));
   --blockquote-border-thickness: 0;
-  --blur-background: color-mix(in srgb, hsl(0, 0%, 100%) 65%, transparent) linear-gradient(hsl(0, 0%, 100%), color-mix(in srgb, hsl(0, 0%, 100%) 65%, transparent));
   --blur-size: 4;
-  --bold-color: hsl(438,  88%, 32.7%);
-  --bold-h: 438;
-  --button-alt-h: 258;
-  --button-h: 258;
-  --callout-background-hsla: 258, 88%, 66%, 20%;
-  --callout-h: 258;
-  --canvas-background: hsl(0, 0%, 100%);
-  --canvas-card-label-color: hsl(0, 0%, 63.4%);
-  --canvas-dot-pattern: hsl(0, 0%, 81.2%);
-  --caret-color: hsl(0, 0%, 10%);
-  --checkbox-border-color: hsl(0, 0%, 63.4%);
-  --checkbox-border-color-hover: hsl(0, 0%, 43.4%);
-  --checkbox-color: hsl(258,  70.4%, 43.4%);
-  --checkbox-color-hover: hsl(258,  88%, 32.7%);
-  --checkbox-marker-color: hsl(0, 0%, 100%);
-  --checklist-done-color: hsl(0, 0%, 43.4%);
-  --code-background: hsl(0, 0%, 95.5%);
-  --code-border-color: hsl(0, 0%, 81.2%);
-  --code-bracket-background: hsl(258, 88%, 63.4%, 25%);
-  --code-comment: hsl(0, 0%, 63.4%);
-  --code-normal: hsl(0, 0%, 10%);
-  --code-punctuation: hsl(0, 0%, 43.4%);
-  --collapse-icon-color: hsl(0, 0%, 63.4%);
+  --bold-color: hsl(var(--bold-h),  var(--accent-s), var(--color-80-l));
+  --bold-h: var(--accent-i-h, 438);
+  --button-alt-h: var(--accent-h, 258);
+  --button-h: var(--accent-h, 258);
+  --callout-background-hsla: var(--callout-h), var(--accent-s), var(--accent-l), 20%;
+  --callout-h: var(--accent-h, 258);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3, 12px 12px 12px 24px) 24px;
+  --canvas-background: var(--background-primary, hsl(0, 0%, 100%));
+  --canvas-card-label-color: var(--text-faint, hsl(0, 0%, 63.4%));
+  --canvas-dot-pattern: var(--color-base-30, hsl(0, 0%, 81.2%));
+  --caret-color: var(--text-normal, hsl(0, 0%, 10%));
+  --checkbox-border-color: var(--text-faint, hsl(0, 0%, 63.4%));
+  --checkbox-border-color-hover: var(--text-muted, hsl(0, 0%, 43.4%));
+  --checkbox-color: hsl(var(--button-alt-h),  calc(var(--accent-s)*0.8), var(--color-70-l));
+  --checkbox-color-hover: hsl(var(--button-alt-h),  var(--accent-s), var(--color-80-l));
+  --checkbox-marker-color: var(--background-primary, hsl(0, 0%, 100%));
+  --checklist-done-color: var(--text-muted, hsl(0, 0%, 43.4%));
+  --code-background: var(--background-primary-alt, hsl(0, 0%, 95.5%));
+  --code-border-color: var(--background-modifier-border, hsl(0, 0%, 81.2%));
+  --code-bracket-background: var(--background-modifier-hover, hsl(258, 88%, 63.4%, 25%));
+  --code-comment: var(--text-faint, hsl(0, 0%, 63.4%));
+  --code-normal: var(--text-normal, hsl(0, 0%, 10%));
+  --code-punctuation: var(--text-muted, hsl(0, 0%, 43.4%));
+  --collapse-icon-color: var(--text-faint, hsl(0, 0%, 63.4%));
   --color-00-l: 100%;
   --color-05-l: 98.2%;
   --color-10-l: 95.5%;
@@ -1785,162 +1770,155 @@ html[saved-theme="dark"] body sup {
   --color-70-l: 43.4%;
   --color-80-l: 32.7%;
   --color-90-l: 21.5%;
-  --color-base-00: hsl(0, 0%, 100%);
+  --color-base-00: hsl(0, 0%, var(--color-00-l));
   --color-base-00-transp: #ffffff80;
-  --color-base-05: hsl(0, 0%, 98.2%);
-  --color-base-10: hsl(0, 0%, 95.5%);
+  --color-base-05: hsl(0, 0%, var(--color-05-l));
+  --color-base-10: hsl(0, 0%, var(--color-10-l));
   --color-base-10-transp: #fafafa80;
-  --color-base-100: hsl(0, 0%, 10%);
-  --color-base-15: hsl(0, 0%, 92.4%);
-  --color-base-20: hsl(0, 0%, 88.9%);
+  --color-base-100: hsl(0, 0%, var(--color-100-l));
+  --color-base-15: hsl(0, 0%, var(--color-15-l));
+  --color-base-20: hsl(0, 0%, var(--color-20-l));
   --color-base-20-transp: #f6f6f680;
-  --color-base-25: hsl(0, 0%, 85.2%);
-  --color-base-30: hsl(0, 0%, 81.2%);
+  --color-base-25: hsl(0, 0%, var(--color-25-l));
+  --color-base-30: hsl(0, 0%, var(--color-30-l));
   --color-base-30-transp: #e0e0e080;
-  --color-base-35: hsl(0, 0%, 77.0%);
-  --color-base-40: hsl(0, 0%, 72.7%);
-  --color-base-50: hsl(0, 0%, 63.4%);
-  --color-base-60: hsl(0, 0%, 53.7%);
-  --color-base-70: hsl(0, 0%, 43.4%);
-  --color-base-80: hsl(0, 0%, 32.7%);
-  --color-base-90: hsl(0, 0%, 21.5%);
-  --dark: var(--text-normal, hsl(0, 0%, 10%));
-  --darkgray: var(--text-normal, hsl(0, 0%, 10%));
-  --divider-color: hsl(0, 0%, 81.2%);
-  --dropdown-background: hsl(0, 0%, 100%);
-  --dropdown-background-hover: hsl(0, 0%, 95.5%);
-  --embed-block-shadow-hover: 0 0 0 1px hsl(0, 0%, 81.2%), inset 0 0 0 1px hsl(0, 0%, 81.2%);
-  --embed-border-left: 1px solid hsl(257, 88.88%, 70.95%);
+  --color-base-35: hsl(0, 0%, var(--color-35-l));
+  --color-base-40: hsl(0, 0%, var(--color-40-l));
+  --color-base-50: hsl(0, 0%, var(--color-50-l));
+  --color-base-60: hsl(0, 0%, var(--color-60-l));
+  --color-base-70: hsl(0, 0%, var(--color-70-l));
+  --color-base-80: hsl(0, 0%, var(--color-80-l));
+  --color-base-90: hsl(0, 0%, var(--color-90-l));
+  --dark: var(--text-normal, var(--color-base-100, hsl(0, 0%, 10%)));
+  --darkgray: var(--text-normal, var(--color-base-100, hsl(0, 0%, 10%)));
+  --divider-color: var(--background-modifier-border, hsl(0, 0%, 81.2%));
+  --dropdown-background: var(--interactive-normal, hsl(0, 0%, 100%));
+  --dropdown-background-hover: var(--interactive-hover, hsl(0, 0%, 95.5%));
+  --embed-border-left: 1px solid var(--interactive-accent);
   --embed-border-right: dashed white 1px;
   --embed-max-height: 80vh;
-  --file-header-background: hsl(0, 0%, 100%);
-  --file-header-background-focused: hsl(0, 0%, 100%);
+  --file-header-background: var(--background-primary, hsl(0, 0%, 100%));
+  --file-header-background-focused: var(--background-primary, hsl(0, 0%, 100%));
   --file-header-font-weight: 600;
-  --flair-background: hsl(0, 0%, 100%);
-  --flair-color: hsl(0, 0%, 10%);
-  --footnote-divider-color: hsl(0, 0%, 81.2%);
-  --footnote-id-color: hsl(0, 0%, 43.4%);
-  --footnote-id-color-no-occurrences: hsl(0, 0%, 63.4%);
-  --footnote-input-background-active: hsl(258, 88%, 63.4%, 25%);
-  --graph-line: hsl(0, 0%, 77.0%);
-  --graph-node: hsl(0, 0%, 43.4%);
-  --graph-node-unresolved: hsl(0, 0%, 63.4%);
-  --graph-text: hsl(0, 0%, 10%);
-  --gray: var(--text-muted, hsl(0, 0%, 43.4%));
-  --heading-formatting: hsl(0, 0%, 63.4%);
-  --highlight: var(--text-highlight-bg, hsla( 438, 88%, 66%, 50%));
-  --hr-color: hsl(0, 0%, 81.2%);
-  --icon-color: hsl(0, 0%, 43.4%);
-  --icon-color-focused: hsl(0, 0%, 10%);
-  --icon-color-hover: hsl(258,  88%, 21.5%);
-  --input-date-separator: hsl(0, 0%, 63.4%);
-  --input-placeholder-color: hsl(0, 0%, 63.4%);
-  --interactive-hover: hsl(0, 0%, 95.5%);
-  --interactive-normal: hsl(0, 0%, 100%);
-  --italic-color: hsl(258, 88%, 32.7%);
-  --italic-h: 258;
-  --light: var(--background-primary, hsl(0, 0%, 100%));
-  --lightgray: var(--background-secondary, hsl(0, 0%, 81.2%));
-  --list-marker-color: hsl(0, 0%, 63.4%);
-  --list-marker-color-hover: hsl(0, 0%, 43.4%);
+  --flair-background: var(--interactive-normal, hsl(0, 0%, 100%));
+  --flair-color: var(--text-normal, hsl(0, 0%, 10%));
+  --footnote-divider-color: var(--metadata-divider-color, hsl(0, 0%, 81.2%));
+  --footnote-id-color: var(--text-muted, hsl(0, 0%, 43.4%));
+  --footnote-id-color-no-occurrences: var(--text-faint, hsl(0, 0%, 63.4%));
+  --footnote-input-background-active: var(--metadata-input-background-active, hsl(258, 88%, 63.4%, 25%));
+  --graph-node: var(--text-muted, hsl(0, 0%, 43.4%));
+  --graph-node-unresolved: var(--text-faint, hsl(0, 0%, 63.4%));
+  --graph-text: var(--text-normal, hsl(0, 0%, 10%));
+  --gray: var(--text-muted, var(--color-base-70, hsl(0, 0%, 43.4%)));
+  --heading-formatting: var(--text-faint, hsl(0, 0%, 63.4%));
+  --highlight: var(--text-highlight-bg, hsla( var(--text-highlight-h), var(--accent-s), var(--accent-l), 50%));
+  --hr-color: var(--background-modifier-border, hsl(0, 0%, 81.2%));
+  --icon-color: var(--text-muted, hsl(0, 0%, 43.4%));
+  --icon-color-focused: var(--text-normal, hsl(0, 0%, 10%));
+  --icon-color-hover: hsl(var(--button-h),  var(--accent-s), var(--color-90-l));
+  --input-date-separator: var(--text-faint, hsl(0, 0%, 63.4%));
+  --input-placeholder-color: var(--text-faint, hsl(0, 0%, 63.4%));
+  --interactive-hover: var(--color-base-10, hsl(0, 0%, 95.5%));
+  --interactive-normal: var(--color-base-00, hsl(0, 0%, 100%));
+  --italic-color: hsl(var(--italic-h), var(--accent-s), var(--color-80-l));
+  --italic-h: var(--accent-h, 258);
+  --light: var(--background-primary, var(--color-base-00, hsl(0, 0%, 100%)));
+  --lightgray: var(--background-secondary, var(--color-base-30, hsl(0, 0%, 81.2%)));
+  --list-marker-color: var(--text-faint, hsl(0, 0%, 63.4%));
+  --list-marker-color-hover: var(--text-muted, hsl(0, 0%, 43.4%));
   --max-highlight: 65%;
-  --menu-background: hsl(0, 0%, 81.2%);
-  --menu-border-color: hsl(0, 0%, 77.0%);
-  --metadata-border-color: hsl(0, 0%, 81.2%);
-  --metadata-divider-color: hsl(0, 0%, 81.2%);
-  --metadata-input-background-active: hsl(258, 88%, 63.4%, 25%);
-  --metadata-input-text-color: hsl(0, 0%, 10%);
-  --metadata-label-background-active: hsl(258, 88%, 63.4%, 25%);
-  --metadata-label-text-color: hsl(0, 0%, 43.4%);
-  --metadata-label-text-color-hover: hsl(0, 0%, 43.4%);
-  --metadata-property-background-active: hsl(258, 88%, 63.4%, 25%);
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(0, 0%, 72.7%);
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(0, 0%, 77.0%);
+  --menu-background: var(--background-secondary, hsl(0, 0%, 81.2%));
+  --menu-border-color: var(--background-modifier-border-hover, hsl(0, 0%, 77.0%));
+  --metadata-border-color: var(--background-modifier-border, hsl(0, 0%, 81.2%));
+  --metadata-divider-color: var(--background-modifier-border, hsl(0, 0%, 81.2%));
+  --metadata-input-background-active: var(--background-modifier-hover, hsl(258, 88%, 63.4%, 25%));
+  --metadata-input-text-color: var(--text-normal, hsl(0, 0%, 10%));
+  --metadata-label-background-active: var(--background-modifier-hover, hsl(258, 88%, 63.4%, 25%));
+  --metadata-label-text-color: var(--text-muted, hsl(0, 0%, 43.4%));
+  --metadata-label-text-color-hover: var(--text-muted, hsl(0, 0%, 43.4%));
+  --metadata-property-background-active: var(--background-modifier-hover, hsl(258, 88%, 63.4%, 25%));
   --min-highlight: 45%;
-  --modal-background: hsl(0, 0%, 100%);
-  --modal-border-color: hsl(0, 0%, 72.7%);
-  --modal-border-width: 0;
-  --nav-collapse-icon-color: hsl(0, 0%, 63.4%);
-  --nav-collapse-icon-color-collapsed: hsl(0, 0%, 63.4%);
-  --nav-heading-color: hsl(0, 0%, 10%);
-  --nav-heading-color-collapsed: hsl(0, 0%, 63.4%);
-  --nav-heading-color-collapsed-hover: hsl(0, 0%, 43.4%);
-  --nav-heading-color-hover: hsl(0, 0%, 10%);
-  --nav-item-background-active: hsl(257, 88.88%, 70.95%);
-  --nav-item-background-hover: hsla(258, 88%, 72.7%, 33%);
-  --nav-item-color: hsl(0, 0%, 43.4%);
-  --nav-item-color-active: white;
-  --nav-item-color-hover: hsl(258,  88%, 21.5%);
-  --nav-item-color-selected: hsl(0, 0%, 10%);
-  --nav-tag-color: hsl(0, 0%, 63.4%);
-  --nav-tag-color-active: hsl(0, 0%, 43.4%);
-  --nav-tag-color-hover: hsl(0, 0%, 43.4%);
-  --pdf-background: hsl(0, 0%, 100%);
-  --pdf-page-background: hsl(0, 0%, 100%);
-  --pdf-sidebar-background: hsl(0, 0%, 100%);
-  --pill-border-color: hsl(0, 0%, 81.2%);
-  --pill-border-color-hover: hsl(0, 0%, 77.0%);
-  --pill-color: hsl(0, 0%, 43.4%);
-  --pill-color-hover: hsl(0, 0%, 10%);
-  --pill-color-remove: hsl(0, 0%, 63.4%);
-  --prompt-background: hsl(0, 0%, 100%);
-  --prompt-border-color: hsl(0, 0%, 72.7%);
-  --prompt-border-width: 0;
-  --raised-background: color-mix(in srgb, hsl(0, 0%, 100%) 65%, transparent) linear-gradient(hsl(0, 0%, 100%), color-mix(in srgb, hsl(0, 0%, 100%) 65%, transparent));
-  --ribbon-background: hsl(0, 0%, 81.2%);
-  --ribbon-background-collapsed: hsl(0, 0%, 100%);
-  --search-clear-button-color: hsl(0, 0%, 43.4%);
-  --search-icon-color: hsl(0, 0%, 43.4%);
-  --search-result-background: hsl(0, 0%, 100%);
-  --setting-group-heading-color: hsl(0, 0%, 10%);
-  --setting-items-background: hsl(0, 0%, 95.5%);
-  --setting-items-border-color: hsl(0, 0%, 81.2%);
-  --shiki-active-tab-border-color: hsl(0, 0%, 43.4%);
-  --shiki-code-background: hsl(0, 0%, 95.5%);
-  --shiki-code-comment: hsl(0, 0%, 63.4%);
-  --shiki-code-normal: hsl(0, 0%, 43.4%);
-  --shiki-code-punctuation: hsl(0, 0%, 43.4%);
-  --shiki-gutter-border-color: hsl(0, 0%, 81.2%);
-  --shiki-gutter-text-color: hsl(0, 0%, 63.4%);
-  --shiki-gutter-text-color-highlight: hsl(0, 0%, 43.4%);
-  --shiki-highlight-neutral: hsl(0, 0%, 43.4%);
-  --shiki-terminal-dots-color: hsl(0, 0%, 63.4%);
-  --slider-thumb-border-color: hsl(0, 0%, 77.0%);
-  --slider-track-background: hsl(0, 0%, 81.2%);
-  --status-bar-background: hsl(0, 0%, 81.2%);
-  --status-bar-border-color: hsl(0, 0%, 81.2%);
-  --status-bar-text-color: hsl(0, 0%, 43.4%);
-  --suggestion-background: hsl(0, 0%, 100%);
-  --tab-background-active: hsl(0, 0%, 100%);
-  --tab-container-background: hsl(0, 0%, 88.9%);
-  --tab-divider-color: hsl(0, 0%, 77.0%);
-  --tab-outline-color: hsl(0, 0%, 81.2%);
+  --modal-background: var(--background-primary, hsl(0, 0%, 100%));
+  --modal-border-width: var(--border-width, 0);
+  --nav-collapse-icon-color: var(--collapse-icon-color, hsl(0, 0%, 63.4%));
+  --nav-collapse-icon-color-collapsed: var(--text-faint, hsl(0, 0%, 63.4%));
+  --nav-heading-color: var(--text-normal, hsl(0, 0%, 10%));
+  --nav-heading-color-collapsed: var(--text-faint, hsl(0, 0%, 63.4%));
+  --nav-heading-color-collapsed-hover: var(--text-muted, hsl(0, 0%, 43.4%));
+  --nav-heading-color-hover: var(--text-normal, hsl(0, 0%, 10%));
+  --nav-item-background-active: var(--interactive-accent, hsl(257, 88.88%, 70.95%));
+  --nav-item-background-hover: hsla(var(--button-h), var(--accent-s), var(--color-40-l), 33%);
+  --nav-item-color: var(--text-muted, hsl(0, 0%, 43.4%));
+  --nav-item-color-active: var(--text-on-accent, white);
+  --nav-item-color-hover: var(--icon-color-hover, hsl(258,  88%, 21.5%));
+  --nav-item-color-selected: var(--text-normal, hsl(0, 0%, 10%));
+  --nav-tag-color: var(--text-faint, hsl(0, 0%, 63.4%));
+  --nav-tag-color-active: var(--text-muted, hsl(0, 0%, 43.4%));
+  --nav-tag-color-hover: var(--text-muted, hsl(0, 0%, 43.4%));
+  --pdf-background: var(--background-primary, hsl(0, 0%, 100%));
+  --pdf-page-background: var(--background-primary, hsl(0, 0%, 100%));
+  --pdf-sidebar-background: var(--background-primary, hsl(0, 0%, 100%));
+  --pill-border-color: var(--background-modifier-border, hsl(0, 0%, 81.2%));
+  --pill-border-color-hover: var(--background-modifier-border-hover, hsl(0, 0%, 77.0%));
+  --pill-color: var(--text-muted, hsl(0, 0%, 43.4%));
+  --pill-color-hover: var(--text-normal, hsl(0, 0%, 10%));
+  --pill-color-remove: var(--text-faint, hsl(0, 0%, 63.4%));
+  --prompt-background: var(--background-primary, hsl(0, 0%, 100%));
+  --prompt-border-width: var(--border-width, 0);
+  --raised-background: var(--blur-background, color-mix(in srgb, hsl(0, 0%, 100%) 65%, transparent) linear-gradient(hsl(0, 0%, 100%), color-mix(in srgb, hsl(0, 0%, 100%) 65%, transparent)));
+  --ribbon-background: var(--background-secondary, hsl(0, 0%, 81.2%));
+  --ribbon-background-collapsed: var(--background-primary, hsl(0, 0%, 100%));
+  --search-clear-button-color: var(--text-muted, hsl(0, 0%, 43.4%));
+  --search-icon-color: var(--text-muted, hsl(0, 0%, 43.4%));
+  --search-result-background: var(--background-primary, hsl(0, 0%, 100%));
+  --setting-group-heading-color: var(--text-normal, hsl(0, 0%, 10%));
+  --setting-items-background: var(--background-primary-alt, hsl(0, 0%, 95.5%));
+  --setting-items-border-color: var(--background-modifier-border, hsl(0, 0%, 81.2%));
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, hsl(0, 0%, 43.4%));
+  --shiki-code-background: var(--code-background, hsl(0, 0%, 95.5%));
+  --shiki-code-comment: var(--text-faint, hsl(0, 0%, 63.4%));
+  --shiki-code-normal: var(--text-muted, hsl(0, 0%, 43.4%));
+  --shiki-code-punctuation: var(--text-muted, hsl(0, 0%, 43.4%));
+  --shiki-gutter-border-color: var(--background-modifier-border, hsl(0, 0%, 81.2%));
+  --shiki-gutter-text-color: var(--text-faint, hsl(0, 0%, 63.4%));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, hsl(0, 0%, 43.4%));
+  --shiki-highlight-neutral: var(--shiki-code-normal, hsl(0, 0%, 43.4%));
+  --shiki-terminal-dots-color: var(--text-faint, hsl(0, 0%, 63.4%));
+  --slider-thumb-border-color: var(--background-modifier-border-hover, hsl(0, 0%, 77.0%));
+  --slider-track-background: var(--background-modifier-border, hsl(0, 0%, 81.2%));
+  --status-bar-background: var(--background-secondary, hsl(0, 0%, 81.2%));
+  --status-bar-border-color: var(--divider-color, hsl(0, 0%, 81.2%));
+  --status-bar-text-color: var(--text-muted, hsl(0, 0%, 43.4%));
+  --suggestion-background: var(--background-primary, hsl(0, 0%, 100%));
+  --tab-background-active: var(--background-primary, hsl(0, 0%, 100%));
+  --tab-container-background: var(--color-base-20, hsl(0, 0%, 88.9%));
+  --tab-divider-color: var(--background-modifier-border-hover, hsl(0, 0%, 77.0%));
+  --tab-outline-color: var(--divider-color, hsl(0, 0%, 81.2%));
   --tab-outline-width: 0;
-  --tab-switcher-background: hsl(0, 0%, 81.2%);
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 81.2%), transparent);
-  --tab-text-color: hsl(0, 0%, 63.4%);
-  --tab-text-color-active: hsl(0, 0%, 43.4%);
-  --tab-text-color-focused: hsl(0, 0%, 43.4%);
-  --tab-text-color-focused-active: hsl(0, 0%, 43.4%);
-  --tab-text-color-focused-active-current: hsl(0, 0%, 10%);
-  --table-add-button-border-color: hsl(0, 0%, 81.2%);
-  --table-border-color: hsl(0, 0%, 81.2%);
-  --table-drag-handle-color: hsl(0, 0%, 63.4%);
-  --table-header-border-color: hsl(0, 0%, 81.2%);
-  --table-header-color: hsl(0, 0%, 10%);
-  --text-faint: hsl(0, 0%, 63.4%);
-  --text-highlight-bg: hsla( 438, 88%, 66%, 50%);
-  --text-highlight-h: 438;
-  --text-muted: hsl(0, 0%, 43.4%);
-  --text-normal: hsl(0, 0%, 10%);
-  --textHighlight: var(--text-highlight-bg, hsla( 438, 88%, 66%, 50%));
-  --titlebar-background: hsl(0, 0%, 88.9%);
-  --titlebar-background-focused: #e0e0e080;
-  --titlebar-border-color: hsl(0, 0%, 81.2%);
-  --titlebar-text-color: hsl(0, 0%, 43.4%);
-  --titlebar-text-color-focused: hsl(0, 0%, 10%);
-  --vault-profile-color: hsl(0, 0%, 10%);
-  --vault-profile-color-hover: hsl(0, 0%, 10%);
+  --tab-switcher-background: var(--background-secondary, hsl(0, 0%, 81.2%));
+  --tab-text-color: var(--text-faint, hsl(0, 0%, 63.4%));
+  --tab-text-color-active: var(--text-muted, hsl(0, 0%, 43.4%));
+  --tab-text-color-focused: var(--text-muted, hsl(0, 0%, 43.4%));
+  --tab-text-color-focused-active: var(--text-muted, hsl(0, 0%, 43.4%));
+  --tab-text-color-focused-active-current: var(--text-normal, hsl(0, 0%, 10%));
+  --table-add-button-border-color: var(--background-modifier-border, hsl(0, 0%, 81.2%));
+  --table-border-color: var(--background-modifier-border, hsl(0, 0%, 81.2%));
+  --table-drag-handle-color: var(--text-faint, hsl(0, 0%, 63.4%));
+  --table-header-border-color: var(--table-border-color, hsl(0, 0%, 81.2%));
+  --table-header-color: var(--text-normal, hsl(0, 0%, 10%));
+  --text-faint: var(--color-base-50, hsl(0, 0%, 63.4%));
+  --text-highlight-bg: hsla( var(--text-highlight-h), var(--accent-s), var(--accent-l), 50%);
+  --text-highlight-h: var(--accent-i-h, 438);
+  --text-muted: var(--color-base-70, hsl(0, 0%, 43.4%));
+  --text-normal: var(--color-base-100, hsl(0, 0%, 10%));
+  --textHighlight: var(--text-highlight-bg, hsla( var(--text-highlight-h), var(--accent-s), var(--accent-l), 50%));
+  --titlebar-background: var(--color-base-20, hsl(0, 0%, 88.9%));
+  --titlebar-background-focused: var(--color-base-30-transp, #e0e0e080);
+  --titlebar-border-color: var(--background-modifier-border, hsl(0, 0%, 81.2%));
+  --titlebar-text-color: var(--text-muted, hsl(0, 0%, 43.4%));
+  --titlebar-text-color-focused: var(--text-normal, hsl(0, 0%, 10%));
+  --vault-profile-color: var(--text-normal, hsl(0, 0%, 10%));
+  --vault-profile-color-hover: var(--vault-profile-color, hsl(0, 0%, 10%));
   --quartz-icon-color: currentColor;
 }
 
@@ -1950,7 +1928,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(207, 207, 207);
+  background-color: var(--background-secondary, rgb(207, 207, 207));
   color: rgb(26, 26, 26);
 }
 
@@ -1959,7 +1937,7 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(244, 244, 244);
+  background-color: var(--background-primary-alt, rgb(244, 244, 244));
   color: rgb(26, 26, 26);
 }
 
@@ -1968,37 +1946,37 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(207, 207, 207);
+  background-color: var(--background-secondary, rgb(207, 207, 207));
   border-left-color: rgb(207, 207, 207);
   color: rgb(26, 26, 26);
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
-  color: rgb(113, 157, 10);
+  color: var(--bold-color, rgb(113, 157, 10));
   outline: rgb(113, 157, 10) none 0px;
   text-decoration-color: rgb(113, 157, 10);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
-  color: rgb(54, 10, 157);
+  color: var(--italic-color, rgb(54, 10, 157));
   outline: rgb(54, 10, 157) none 0px;
   text-decoration-color: rgb(54, 10, 157);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
-  color: rgb(54, 10, 157);
+  color: var(--italic-color, rgb(54, 10, 157));
   outline: rgb(54, 10, 157) none 0px;
   text-decoration-color: rgb(54, 10, 157);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
-  color: rgb(113, 157, 10);
+  color: var(--bold-color, rgb(113, 157, 10));
   outline: rgb(113, 157, 10) none 0px;
   text-decoration-color: rgb(113, 157, 10);
 }
 
 html[saved-theme="light"] body .text-highlight {
-  background-color: rgba(199, 245, 92, 0.5);
-  color: rgb(26, 26, 26);
+  background-color: var(--text-highlight-bg, rgba(199, 245, 92, 0.5));
+  color: var(--text-normal, rgb(26, 26, 26));
   outline: rgb(26, 26, 26) none 0px;
   text-decoration-color: rgb(26, 26, 26);
 }
@@ -2010,7 +1988,7 @@ html[saved-theme="light"] body del {
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(26, 26, 26);
+  color: var(--text-normal, rgb(26, 26, 26));
   font-weight: 600;
 }
 
@@ -2019,12 +1997,12 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(80, 33, 189);
+  background-color: var(--checkbox-color, rgb(80, 33, 189));
   border-color: rgb(80, 33, 189);
 }
 
 html[saved-theme="light"] body p {
-  color: rgb(111, 111, 111);
+  color: var(--text-muted, rgb(111, 111, 111));
   outline: rgb(111, 111, 111) none 0px;
   text-decoration-color: rgb(111, 111, 111);
 }`,
@@ -2051,11 +2029,11 @@ html[saved-theme="light"] body ul.overflow {
   border-top-color: rgb(26, 26, 26);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
-  color: rgb(152, 115, 247);
+  color: var(--interactive-accent, rgb(152, 115, 247));
 }
 
 html[saved-theme="light"] body blockquote {
-  background-color: rgba(244, 244, 244, 0.85);
+  background-color: var(--background-semitransp-alt, rgba(244, 244, 244, 0.85));
   padding-bottom: 8px;
   padding-top: 8px;
 }`,
@@ -2075,7 +2053,7 @@ html[saved-theme="light"] body td {
   border-left-color: rgb(207, 207, 207);
   border-right-color: rgb(207, 207, 207);
   border-top-color: rgb(207, 207, 207);
-  color: rgb(26, 26, 26);
+  color: var(--table-text-color, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body th {
@@ -2085,19 +2063,19 @@ html[saved-theme="light"] body th {
   border-left-color: rgb(207, 207, 207);
   border-right-color: rgb(207, 207, 207);
   border-top-color: rgb(207, 207, 207);
-  color: rgb(26, 26, 26);
+  color: var(--table-header-color, rgb(26, 26, 26));
 }`,
     code: `html[saved-theme="light"] body code {
-  background-color: rgb(244, 244, 244);
+  background-color: var(--code-background, rgb(244, 244, 244));
   border-bottom-color: rgb(207, 207, 207);
   border-left-color: rgb(207, 207, 207);
   border-right-color: rgb(207, 207, 207);
   border-top-color: rgb(207, 207, 207);
-  color: rgb(26, 26, 26);
+  color: var(--code-normal, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body pre:has(> code) {
-  background-color: rgb(244, 244, 244);
+  background-color: var(--code-background, rgb(244, 244, 244));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
@@ -2139,7 +2117,7 @@ html[saved-theme="light"] body video {
   border-top-color: rgb(26, 26, 26);
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
-  background-color: rgb(244, 244, 244);
+  background-color: var(--background-primary-alt, rgb(244, 244, 244));
   border-bottom-color: rgb(111, 111, 111);
   border-left-color: rgb(111, 111, 111);
   border-right-color: rgb(111, 111, 111);
@@ -2152,7 +2130,7 @@ html[saved-theme="light"] body .footnotes {
 }
 
 html[saved-theme="light"] body .transclude {
-  background-color: rgba(244, 244, 244, 0.85);
+  background-color: var(--background-semitransp-alt, rgba(244, 244, 244, 0.85));
   border-bottom-color: rgb(26, 26, 26);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -2165,7 +2143,7 @@ html[saved-theme="light"] body .transclude {
 }
 
 html[saved-theme="light"] body .transclude-inner {
-  background-color: rgba(244, 244, 244, 0.85);
+  background-color: var(--background-semitransp-alt, rgba(244, 244, 244, 0.85));
   border-bottom-color: rgb(26, 26, 26);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -2742,7 +2720,7 @@ html[saved-theme="light"] body .callout > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-summary, 0, 191, 188);
   color: rgb(26, 26, 26);
 }
 
@@ -2761,7 +2739,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-bug, 233, 49, 71);
   color: rgb(26, 26, 26);
 }
 
@@ -2780,7 +2758,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-error, 233, 49, 71);
   color: rgb(26, 26, 26);
 }
 
@@ -2799,7 +2777,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
-  --callout-color: 120, 82, 238;
+  --callout-color: var(--callout-example, 120, 82, 238);
   color: rgb(26, 26, 26);
 }
 
@@ -2818,7 +2796,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-fail, 233, 49, 71);
   color: rgb(26, 26, 26);
 }
 
@@ -2837,7 +2815,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-info, 8, 109, 221);
   color: rgb(26, 26, 26);
 }
 
@@ -2856,7 +2834,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   color: rgb(26, 26, 26);
 }
 
@@ -2875,7 +2853,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-question, 236, 117, 0);
   color: rgb(26, 26, 26);
 }
 
@@ -2894,7 +2872,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   color: rgb(26, 26, 26);
 }
 
@@ -2913,7 +2891,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
-  --callout-color: 8, 185, 78;
+  --callout-color: var(--callout-success, 8, 185, 78);
   color: rgb(26, 26, 26);
 }
 
@@ -2932,7 +2910,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-tip, 0, 191, 188);
   color: rgb(26, 26, 26);
 }
 
@@ -2951,7 +2929,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-todo, 8, 109, 221);
   color: rgb(26, 26, 26);
 }
 
@@ -2970,7 +2948,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-warning, 236, 117, 0);
   color: rgb(26, 26, 26);
 }
 
@@ -3049,10 +3027,11 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-left-color: rgb(207, 207, 207);
   border-right-color: rgb(207, 207, 207);
   border-top-color: rgb(207, 207, 207);
-  color: rgb(26, 26, 26);
+  color: var(--text-normal, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
+  background-color: var(--background-blurred, rgb(255, 255, 255));
   border-bottom-color: rgb(185, 185, 185);
   border-bottom-width: 0px;
   border-left-color: rgb(185, 185, 185);
@@ -3085,7 +3064,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: rgba(129, 80, 244, 0.25);
+  background-color: var(--background-modifier-hover, rgba(129, 80, 244, 0.25));
   color: rgb(26, 26, 26);
 }
 
@@ -3108,7 +3087,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
-  background-color: rgba(129, 80, 244, 0.25);
+  background-color: var(--background-modifier-hover, rgba(129, 80, 244, 0.25));
   border-bottom-color: rgb(26, 26, 26);
   border-left-color: rgb(26, 26, 26);
   border-right-color: rgb(26, 26, 26);
@@ -3117,40 +3096,40 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: rgba(129, 80, 244, 0.25);
+  background-color: var(--background-modifier-hover, rgba(129, 80, 244, 0.25));
   color: rgb(26, 26, 26);
 }
 
 html[saved-theme="light"] body h1 {
-  color: rgb(26, 26, 26);
+  color: var(--h1-color, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(26, 26, 26);
+  color: var(--inline-title-color, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body h2 {
-  color: rgb(26, 26, 26);
+  color: var(--h2-color, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  color: rgb(26, 26, 26);
+  color: var(--inline-title-color, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body h3 {
-  color: rgb(26, 26, 26);
+  color: var(--h3-color, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body h4 {
-  color: rgb(26, 26, 26);
+  color: var(--h4-color, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body h5 {
-  color: rgb(26, 26, 26);
+  color: var(--h5-color, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body h6 {
-  color: rgb(26, 26, 26);
+  color: var(--h6-color, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body hr {
@@ -3159,42 +3138,42 @@ html[saved-theme="light"] body hr {
   border-right-color: rgb(207, 207, 207);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
-  --callout-color: 8, 109, 221;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  --callout-color: var(--callout-default, 8, 109, 221);
+  padding-bottom: var(--size-4-2, 8px);
+  padding-top: var(--size-4-2, 8px);
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(111, 111, 111);
-  cursor: pointer;
-  font-weight: 600;
+  color: var(--nav-item-color, rgb(111, 111, 111));
+  cursor: var(--cursor, pointer);
+  font-weight: var(--nav-item-weight, 600);
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(111, 111, 111);
-  cursor: pointer;
-  font-weight: 600;
+  color: var(--nav-item-color, rgb(111, 111, 111));
+  cursor: var(--cursor, pointer);
+  font-weight: var(--nav-item-weight, 600);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(26, 26, 26);
 }
 
 html[saved-theme="light"] body li.depth-0 {
-  font-weight: 600;
+  font-weight: var(--nav-item-weight, 600);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(111, 111, 111);
   border-left-color: rgb(111, 111, 111);
   border-right-color: rgb(111, 111, 111);
   border-top-color: rgb(111, 111, 111);
-  color: rgb(111, 111, 111);
+  color: var(--icon-color, rgb(111, 111, 111));
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: rgb(207, 207, 207);
+  background-color: var(--status-bar-background, rgb(207, 207, 207));
   border-bottom-color: rgb(207, 207, 207);
   border-left-color: rgb(207, 207, 207);
   border-right-color: rgb(207, 207, 207);
   border-top-color: rgb(207, 207, 207);
-  color: rgb(111, 111, 111);
+  color: var(--status-bar-text-color, rgb(111, 111, 111));
 }
 
 html[saved-theme="light"] body footer ul li a {
@@ -3213,7 +3192,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(111, 111, 111);
+  color: var(--nav-item-color, rgb(111, 111, 111));
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3231,7 +3210,7 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(111, 111, 111);
+  color: var(--nav-item-color, rgb(111, 111, 111));
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -3245,7 +3224,7 @@ html[saved-theme="light"] body ul.section-ul {
   border-left-color: rgb(111, 111, 111);
   border-right-color: rgb(111, 111, 111);
   border-top-color: rgb(111, 111, 111);
-  color: rgb(111, 111, 111);
+  color: var(--icon-color, rgb(111, 111, 111));
 }
 
 html[saved-theme="light"] body .darkmode svg {
@@ -3261,7 +3240,7 @@ html[saved-theme="light"] body .darkmode svg {
 }
 
 html[saved-theme="light"] body .breadcrumb-element p {
-  color: rgb(162, 162, 162);
+  color: var(--text-faint, rgb(162, 162, 162));
 }`,
     canvas: `html[saved-theme="light"] body .canvas-node {
   border-color: rgb(26, 26, 26);
@@ -3272,7 +3251,7 @@ html[saved-theme="light"] body .canvas-node-content {
 }
 
 html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(26, 26, 26);
+  color: var(--text-normal, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body .canvas-node-group {
@@ -3284,14 +3263,14 @@ html[saved-theme="light"] body .canvas-sidebar {
 }`,
     bases: `html[saved-theme="light"] body .bases-table thead th {
   border-color: rgb(207, 207, 207);
-  color: rgb(26, 26, 26);
+  color: var(--table-header-color, rgb(26, 26, 26));
 }`,
     properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgb(207, 207, 207);
   border-left-color: rgb(207, 207, 207);
   border-right-color: rgb(207, 207, 207);
   border-top-color: rgb(207, 207, 207);
-  color: rgb(111, 111, 111);
+  color: var(--text-muted, rgb(111, 111, 111));
 }
 
 html[saved-theme="light"] body .metadata-properties {
@@ -3319,7 +3298,7 @@ html[saved-theme="light"] body .note-properties-value {
 }
 
 html[saved-theme="light"] body div#quartz-root {
-  color: rgb(26, 26, 26);
+  color: var(--text-normal, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body ol.overflow {
@@ -3329,12 +3308,12 @@ html[saved-theme="light"] body ol.overflow {
   border-top-color: rgb(26, 26, 26);
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
-  background-color: rgb(244, 244, 244);
+  background-color: var(--background-primary-alt, rgb(244, 244, 244));
   border-color: rgb(26, 26, 26);
 }
 
 html[saved-theme="light"] body .stacked-page-header {
-  background-color: rgba(224, 224, 224, 0.5);
+  background-color: var(--tab-container-background, rgba(224, 224, 224, 0.5));
 }
 
 html[saved-theme="light"] body .stacked-page.active {
@@ -3349,11 +3328,11 @@ html[saved-theme="light"] body .stacked-page.active {
 }
 
 html[saved-theme="light"] body .navigation-progress {
-  background-color: rgb(207, 207, 207);
+  background-color: var(--status-bar-background, rgb(207, 207, 207));
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
-  color: rgb(26, 26, 26);
+  color: var(--text-normal, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body abbr {
@@ -3372,16 +3351,16 @@ html[saved-theme="light"] body input[type=text] {
   border-left-color: rgb(111, 111, 111);
   border-right-color: rgb(111, 111, 111);
   border-top-color: rgb(111, 111, 111);
-  color: rgb(111, 111, 111);
+  color: var(--text-normal, rgb(111, 111, 111));
 }
 
 html[saved-theme="light"] body kbd {
-  background-color: rgb(244, 244, 244);
+  background-color: var(--code-background, rgb(244, 244, 244));
   border-bottom-color: rgb(26, 26, 26);
   border-left-color: rgb(26, 26, 26);
   border-right-color: rgb(26, 26, 26);
   border-top-color: rgb(26, 26, 26);
-  color: rgb(26, 26, 26);
+  color: var(--code-normal, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body progress {

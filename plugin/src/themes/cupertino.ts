@@ -10,133 +10,125 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --anim-duration-fast: 160ms;
-  --anim-duration-moderate: 320ms;
-  --anim-duration-slow: 480ms;
-  --anim-duration-superfast: 80ms;
+  --anim-duration-fast: calc(160ms*var(--anim-speed-modifier));
+  --anim-duration-moderate: calc(320ms*var(--anim-speed-modifier));
+  --anim-duration-slow: calc(480ms*var(--anim-speed-modifier));
+  --anim-duration-superfast: calc(80ms*var(--anim-speed-modifier));
   --anim-motion-baseline: cubic-bezier(0.32, 0.72, 0, 1);
   --anim-speed-modifier: 1;
-  --background-modifier-border: color-mix(in srgb, #2e2e32, #fff 15%);
-  --background-modifier-border-focus: #77767b;
-  --background-modifier-border-hover: #6b6970;
+  --background-modifier-border: color-mix(in srgb, var(--background-secondary), var(--text-normal) 15%);
+  --background-modifier-border-focus: var(--color-base-40, #77767b);
+  --background-modifier-border-hover: var(--color-base-35, #6b6970);
   --background-modifier-cover: rgba(0, 0, 0, 0.35);
-  --background-modifier-error: rgb(224, 27, 36);
-  --background-modifier-error-hover: rgb(224, 27, 36);
-  --background-modifier-error-rgb: 224, 27, 36;
-  --background-modifier-form-field: color-mix(in srgb, #2e2e32, #fff 10%);
-  --background-modifier-form-field-hover: color-mix(in srgb, #2e2e32, #fff 10%);
-  --background-modifier-success: rgb(38, 162, 105);
-  --background-modifier-success-rgb: 38, 162, 105;
-  --background-primary: #1d1d20;
-  --background-primary-alt: #2e2e32;
-  --background-secondary: #2e2e32;
-  --background-secondary-alt: #28282c;
+  --background-modifier-error: var(--color-red, rgb(224, 27, 36));
+  --background-modifier-error-hover: var(--color-red, rgb(224, 27, 36));
+  --background-modifier-error-rgb: var(--color-red-rgb, 224, 27, 36);
+  --background-modifier-form-field: var(--interactive-normal, color-mix(in srgb, #2e2e32, #fff 10%));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, color-mix(in srgb, #2e2e32, #fff 10%));
+  --background-modifier-success: var(--color-green, rgb(38, 162, 105));
+  --background-modifier-success-rgb: var(--color-green-rgb, 38, 162, 105);
+  --background-primary: var(--color-base-00, #1d1d20);
+  --background-primary-alt: var(--color-base-10, #2e2e32);
+  --background-secondary: var(--color-base-20, #2e2e32);
+  --background-secondary-alt: var(--color-base-30, #28282c);
   --banner-fade-height: 80px;
   --banner-icon-size: 3rem;
   --banner-image-height: 320px;
   --banner-image-height-s: 240px;
   --banner-image-inset: 8px;
   --banner-image-object-fit: cover;
-  --banner-image-radius: 9px;
+  --banner-image-radius: var(--radius-s, 9px);
   --banner-mobile-offset: 0px;
-  --bases-cards-background: #1d1d20;
-  --bases-cards-corner-shape: superellipse(1.1);
-  --bases-cards-cover-background: #2e2e32;
-  --bases-cards-radius: 12px;
-  --bases-cards-shadow: 0 0 0 1px color-mix(in srgb, #2e2e32, #fff 15%);
-  --bases-cards-shadow-hover: 0 0 0 1px #6b6970;
-  --bases-embed-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
-  --bases-embed-border-radius: 9px;
-  --bases-group-heading-property-color: #d2d2d2;
-  --bases-group-heading-property-size: 9.02px;
-  --bases-header-border-width: 0;
-  --bases-table-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
-  --bases-table-cell-background-active: #1d1d20;
-  --bases-table-cell-background-disabled: #2e2e32;
-  --bases-table-cell-shadow-active: 0 0 0 2px #77767b;
-  --bases-table-container-border-radius: 9px;
-  --bases-table-group-background: #2e2e32;
-  --bases-table-header-background: #1d1d20;
-  --bases-table-header-color: #99999b;
-  --bases-table-summary-background: #1d1d20;
-  --block-width-max: calc(100cqw - 64px);
-  --block-width-offset: -32px;
-  --block-width-wide: min(100cqw, 50rem);
-  --blockquote-background-color: #2e2e32;
-  --blockquote-border-color: #9a9996;
-  --blockquote-size: 16px;
-  --blur-background: color-mix(in srgb, color-mix(in srgb, #2e2e32, #fff 10%) 65%, transparent) linear-gradient(color-mix(in srgb, #2e2e32, #fff 10%), color-mix(in srgb, color-mix(in srgb, #2e2e32, #fff 10%) 65%, transparent));
-  --bodyFont: var(--font-text, "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --bases-cards-background: var(--background-primary, #1d1d20);
+  --bases-cards-corner-shape: var(--corner-shape, superellipse(1.1));
+  --bases-cards-cover-background: var(--background-primary-alt, #2e2e32);
+  --bases-cards-radius: var(--radius-m, 12px);
+  --bases-embed-border-color: var(--background-modifier-border, color-mix(in srgb, #2e2e32, #fff 15%));
+  --bases-embed-border-radius: var(--radius-s, 9px);
+  --bases-group-heading-property-color: var(--text-muted, #d2d2d2);
+  --bases-group-heading-property-size: var(--font-ui-smaller, 9.02px);
+  --bases-table-border-color: var(--table-border-color, color-mix(in srgb, #2e2e32, #fff 15%));
+  --bases-table-cell-background-active: var(--background-primary, #1d1d20);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #2e2e32);
+  --bases-table-container-border-radius: var(--radius-s, 9px);
+  --bases-table-group-background: var(--background-primary-alt, #2e2e32);
+  --bases-table-header-background: var(--background-primary, #1d1d20);
+  --bases-table-header-color: var(--text-faint, #99999b);
+  --bases-table-summary-background: var(--background-primary, #1d1d20);
+  --block-width-max: calc(100cqw - var(--file-margins-x)*2);
+  --block-width-offset: calc(var(--file-margins-x)*-1);
+  --block-width-wide: min(100cqw, var(--line-width-wide));
+  --blockquote-background-color: var(--background-primary-alt, #2e2e32);
+  --blockquote-border-color: var(--color-base-50, #9a9996);
+  --blockquote-size: var(--font-text-size, 16px);
+  --bodyFont: var(--font-text-theme, "Adwaita Sans", "Adwaita Sans Text");
   --bold-modifier: 300;
-  --bold-weight: 700;
-  --button-corner-shape: superellipse(1.1);
-  --button-radius: 9px;
-  --callout-blend-mode: normal;
-  --callout-border-width: 1px;
-  --callout-bug: 224, 27, 36;
-  --callout-default: 53, 132, 228;
-  --callout-error: 224, 27, 36;
-  --callout-example: 145, 65, 172;
-  --callout-fail: 224, 27, 36;
-  --callout-important: 33, 144, 164;
-  --callout-info: 53, 132, 228;
-  --callout-padding: 16px;
-  --callout-question: 230, 97, 0;
-  --callout-radius: 9px;
-  --callout-size: 16px;
-  --callout-success: 38, 162, 105;
-  --callout-summary: 33, 144, 164;
-  --callout-tip: 33, 144, 164;
-  --callout-title-weight: 700;
-  --callout-todo: 53, 132, 228;
-  --callout-warning: 230, 97, 0;
-  --canvas-background: #1d1d20;
-  --canvas-card-label-color: #99999b;
-  --canvas-color-1: 224, 27, 36;
-  --canvas-color-2: 230, 97, 0;
-  --canvas-color-3: 245, 194, 17;
-  --canvas-color-4: 38, 162, 105;
-  --canvas-color-5: 33, 144, 164;
-  --canvas-color-6: 145, 65, 172;
-  --canvas-controls-icon-size: 16px;
-  --canvas-controls-icon-stroke: 2px;
-  --canvas-controls-radius: 9px;
-  --canvas-dot-pattern: #5e5c64;
+  --button-corner-shape: var(--corner-shape, superellipse(1.1));
+  --button-radius: var(--radius-s, 9px);
+  --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
+  --callout-border-width: var(--divider-width, 1px);
+  --callout-bug: var(--color-red-rgb, 224, 27, 36);
+  --callout-default: var(--color-blue-rgb, 53, 132, 228);
+  --callout-error: var(--color-red-rgb, 224, 27, 36);
+  --callout-example: var(--color-purple-rgb, 145, 65, 172);
+  --callout-fail: var(--color-red-rgb, 224, 27, 36);
+  --callout-important: var(--color-cyan-rgb, 33, 144, 164);
+  --callout-info: var(--color-blue-rgb, 53, 132, 228);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 16px);
+  --callout-question: var(--color-orange-rgb, 230, 97, 0);
+  --callout-radius: var(--radius-s, 9px);
+  --callout-size: var(--font-text-size, 16px);
+  --callout-success: var(--color-green-rgb, 38, 162, 105);
+  --callout-summary: var(--color-cyan-rgb, 33, 144, 164);
+  --callout-tip: var(--color-cyan-rgb, 33, 144, 164);
+  --callout-todo: var(--color-blue-rgb, 53, 132, 228);
+  --callout-warning: var(--color-orange-rgb, 230, 97, 0);
+  --canvas-background: var(--background-primary, #1d1d20);
+  --canvas-card-label-color: var(--text-faint, #99999b);
+  --canvas-color-1: var(--color-red-rgb, 224, 27, 36);
+  --canvas-color-2: var(--color-orange-rgb, 230, 97, 0);
+  --canvas-color-3: var(--color-yellow-rgb, 245, 194, 17);
+  --canvas-color-4: var(--color-green-rgb, 38, 162, 105);
+  --canvas-color-5: var(--color-cyan-rgb, 33, 144, 164);
+  --canvas-color-6: var(--color-purple-rgb, 145, 65, 172);
+  --canvas-controls-icon-size: var(--icon-s, 16px);
+  --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px);
+  --canvas-controls-radius: var(--radius-s, 9px);
+  --canvas-dot-pattern: var(--color-base-30, #5e5c64);
   --cards-aspect-ratio: auto;
   --cards-background: transparent;
   --cards-background-hover: transparent;
-  --cards-columns: repeat(auto-fit, minmax(160px, 1fr));
+  --cards-columns: repeat(auto-fit, minmax(var(--cards-min-width), var(--cards-max-width)));
   --cards-image-fit: contain;
   --cards-image-height: 400px;
   --cards-max-width: 1fr;
   --cards-min-width: 160px;
   --cards-mobile-width: 120px;
   --cards-padding: 4px;
-  --caret-color: #fff;
-  --checkbox-border-color: #99999b;
-  --checkbox-border-color-hover: #d2d2d2;
-  --checkbox-marker-color: #1d1d20;
-  --checkbox-radius: 100px;
-  --checklist-done-color: #d2d2d2;
-  --clickable-icon-radius: 9px;
-  --code-background: #2e2e32;
-  --code-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --caret-color: var(--text-normal, #fff);
+  --checkbox-border-color: var(--text-faint, #99999b);
+  --checkbox-border-color-hover: var(--text-muted, #d2d2d2);
+  --checkbox-marker-color: var(--background-primary, #1d1d20);
+  --checkbox-radius: var(--radius-s, 100px);
+  --checklist-done-color: var(--text-muted, #d2d2d2);
+  --clickable-icon-radius: var(--radius-s, 9px);
+  --code-background: var(--background-primary-alt, #2e2e32);
+  --code-border-color: var(--background-modifier-border, color-mix(in srgb, #2e2e32, #fff 15%));
   --code-border-width: 1px;
-  --code-comment: #5c6370;
-  --code-function: #d19a66;
-  --code-important: #d19a66;
-  --code-keyword: #e16d76;
-  --code-normal: #abb2bf;
-  --code-operator: rgb(224, 27, 36);
-  --code-property: #62afef;
-  --code-punctuation: #abb2bf;
-  --code-radius: 9px;
-  --code-size: 0.8em;
-  --code-string: #58b6c2;
-  --code-tag: #e16d76;
-  --code-value: #c678de;
-  --codeFont: var(--font-text, "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --collapse-icon-color: #99999b;
+  --code-comment: var(--text-faint, #5c6370);
+  --code-function: var(--color-yellow, #d19a66);
+  --code-important: var(--color-orange, #d19a66);
+  --code-keyword: var(--color-pink, #e16d76);
+  --code-normal: var(--text-normal, #abb2bf);
+  --code-operator: var(--color-red, rgb(224, 27, 36));
+  --code-property: var(--color-cyan, #62afef);
+  --code-punctuation: var(--text-muted, #abb2bf);
+  --code-radius: var(--radius-s, 9px);
+  --code-size: var(--font-smallest, 0.8em);
+  --code-string: var(--color-green, #58b6c2);
+  --code-tag: var(--color-red, #e16d76);
+  --code-value: var(--color-purple, #c678de);
+  --collapse-icon-color: var(--text-faint, #99999b);
   --color-base-00: #000000;
   --color-base-05: #121019;
   --color-base-10: #241f31;
@@ -149,334 +141,318 @@ export const theme: ThemeData = {
   --color-base-50: #9a9996;
   --color-base-60: #c0bfbc;
   --color-base-70: #e6e5e3;
-  --color-blue: rgb(53, 132, 228);
+  --color-blue: rgb(var(--color-blue-rgb));
   --color-blue-rgb: 53, 132, 228;
-  --color-cyan: rgb(33, 144, 164);
+  --color-cyan: rgb(var(--color-cyan-rgb));
   --color-cyan-rgb: 33, 144, 164;
-  --color-green: rgb(38, 162, 105);
+  --color-green: rgb(var(--color-green-rgb));
   --color-green-rgb: 38, 162, 105;
-  --color-orange: rgb(230, 97, 0);
+  --color-orange: rgb(var(--color-orange-rgb));
   --color-orange-rgb: 230, 97, 0;
-  --color-pink: rgb(213, 97, 170);
+  --color-pink: rgb(var(--color-pink-rgb));
   --color-pink-rgb: 213, 97, 170;
-  --color-purple: rgb(145, 65, 172);
+  --color-purple: rgb(var(--color-purple-rgb));
   --color-purple-rgb: 145, 65, 172;
-  --color-red: rgb(224, 27, 36);
+  --color-red: rgb(var(--color-red-rgb));
   --color-red-rgb: 224, 27, 36;
-  --color-yellow: rgb(245, 194, 17);
+  --color-yellow: rgb(var(--color-yellow-rgb));
   --color-yellow-rgb: 245, 194, 17;
   --corner-shape: superellipse(1.1);
-  --dark: var(--text-normal, #fff);
-  --darkgray: var(--text-normal, #fff);
+  --dark: var(--text-normal, var(--color-base-100, #fff));
+  --darkgray: var(--text-normal, var(--color-base-100, #fff));
   --density-modifier: 1;
-  --divider-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --divider-color: var(--background-modifier-border, color-mix(in srgb, #2e2e32, #fff 15%));
   --divider-color-alt: rgba(0, 0, 6, 0.36);
-  --divider-color-hover: #9a9996;
-  --dropdown-background: color-mix(in srgb, #2e2e32, #fff 10%);
-  --dropdown-background-hover: color-mix(in srgb, #2e2e32, #fff 15%);
-  --dropdown-padding: 0 2.4em 0 0.8em;
+  --divider-color-hover: var(--color-base-50, #9a9996);
+  --dropdown-background: var(--interactive-normal, color-mix(in srgb, #2e2e32, #fff 10%));
+  --dropdown-background-hover: var(--interactive-hover, color-mix(in srgb, #2e2e32, #fff 15%));
   --dropdown-padding-end: 2.4em;
-  --embed-background: #2e2e32;
-  --embed-block-shadow-hover: none;
-  --embed-border-start: 2px solid #9a9996;
+  --embed-background: var(--background-primary-alt, #2e2e32);
+  --embed-border-start: var(--embed-border-thickness, 2px) solid var(--embed-border-color, var(--color-base-50));
   --embed-max-height: none;
-  --embed-padding: 16px;
-  --file-header-background: #1d1d20;
-  --file-header-background-focused: #1d1d20;
-  --file-header-border: none;
-  --file-header-font: "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --file-header-font-size: 11px;
-  --flair-background: color-mix(in srgb, #2e2e32, #fff 10%);
-  --flair-color: #fff;
-  --font-interface: "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --file-header-background: var(--background-primary, #1d1d20);
+  --file-header-background-focused: var(--background-primary, #1d1d20);
+  --file-header-border: var(--border-width, none) solid transparent;
+  --file-header-font: var(--font-interface, "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --file-header-font-size: var(--font-ui-small, 11px);
+  --file-line-width: var(--line-width, 700px);
+  --flair-background: var(--interactive-normal, color-mix(in srgb, #2e2e32, #fff 10%));
+  --flair-color: var(--text-normal, #fff);
   --font-interface-theme: "Adwaita Sans", "Adwaita Sans Text";
-  --font-mermaid: "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-print: "Adwaita Sans", "Adwaita Sans Text", Arial';
-  --font-text: "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-mermaid: var(--font-text, "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   --font-text-theme: "Adwaita Sans", "Adwaita Sans Text";
-  --font-ui-large: 14.96px;
-  --font-ui-medium: 11px;
+  --font-ui-large: calc(var(--font-ui-medium)*1.36 + var(--font-ui-modifier));
+  --font-ui-medium: calc(11px + var(--font-ui-modifier));
   --font-ui-modifier: 0px;
-  --font-ui-small: 11px;
-  --font-ui-smaller: 9.02px;
-  --footnote-divider-color: color-mix(in srgb, #2e2e32, #fff 15%);
-  --footnote-id-color: #d2d2d2;
-  --footnote-id-color-no-occurrences: #99999b;
-  --footnote-line-height: 1.6;
-  --footnote-radius: 9px;
+  --font-ui-small: calc(11px + var(--font-ui-modifier));
+  --font-ui-smaller: calc(var(--font-ui-medium)*0.82 + var(--font-ui-modifier));
+  --footnote-divider-color: var(--metadata-divider-color, color-mix(in srgb, #2e2e32, #fff 15%));
+  --footnote-id-color: var(--text-muted, #d2d2d2);
+  --footnote-id-color-no-occurrences: var(--text-faint, #99999b);
+  --footnote-line-height: var(--line-height-normal, 1.6);
+  --footnote-radius: var(--radius-s, 9px);
   --frame-right-space: 124px;
-  --graph-line: #6b6970;
-  --graph-node: #d2d2d2;
-  --graph-node-attachment: rgb(245, 194, 17);
-  --graph-node-tag: rgb(38, 162, 105);
-  --graph-node-unresolved: #99999b;
-  --graph-text: #fff;
-  --gray: var(--text-muted, #d2d2d2);
+  --graph-node: var(--text-muted, #d2d2d2);
+  --graph-node-attachment: var(--color-yellow, rgb(245, 194, 17));
+  --graph-node-tag: var(--color-green, rgb(38, 162, 105));
+  --graph-node-unresolved: var(--text-faint, #99999b);
+  --graph-text: var(--text-normal, #fff);
+  --gray: var(--text-muted, var(--color-base-70, #d2d2d2));
   --h1-size: 1.5em;
   --h2-size: 1.25em;
   --h3-size: 1.125em;
   --h4-size: 1em;
-  --h5-line-height: 1.6;
+  --h5-line-height: var(--line-height-normal, 1.6);
   --h5-size: 1em;
-  --h6-line-height: 1.6;
+  --h6-line-height: var(--line-height-normal, 1.6);
   --h6-size: 0.875em;
   --header-height: 48px;
-  --headerFont: var(--font-text, "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --heading-formatting: #99999b;
-  --heading-spacing: 2em;
+  --headerFont: var(--font-text-theme, "Adwaita Sans", "Adwaita Sans Text");
+  --heading-formatting: var(--text-faint, #99999b);
   --hover-sidedock-delay: 160ms;
   --hover-sidedock-trigger-area: 4px;
   --hover-sidedock-width: 320px;
-  --hr-color: color-mix(in srgb, #2e2e32, #fff 15%);
-  --icon-color: #d2d2d2;
-  --icon-color-focused: #fff;
-  --icon-color-hover: #d2d2d2;
-  --icon-l: 18px;
-  --icon-l-stroke-width: 2px;
-  --icon-m: 18px;
-  --icon-m-stroke-width: 2px;
+  --hr-color: var(--background-modifier-border, color-mix(in srgb, #2e2e32, #fff 15%));
+  --icon-color: var(--text-muted, #d2d2d2);
+  --icon-color-focused: var(--text-normal, #fff);
+  --icon-color-hover: var(--text-muted, #d2d2d2);
+  --icon-l: calc(18px*var(--radius-modifier));
+  --icon-l-stroke-width: calc(2px*var(--icon-stroke-modifier));
+  --icon-m: calc(18px*var(--radius-modifier));
+  --icon-m-stroke-width: calc(2px*var(--icon-stroke-modifier));
   --icon-opacity: 1;
-  --icon-s: 16px;
-  --icon-s-stroke-width: 2px;
-  --icon-size: 18px;
+  --icon-s: calc(16px + var(--icon-size-modifier));
+  --icon-s-stroke-width: calc(2px*var(--icon-stroke-modifier));
+  --icon-size: var(--icon-m, 18px);
   --icon-size-modifier: 0px;
-  --icon-stroke: 2px;
+  --icon-stroke: var(--icon-m-stroke-width, 2px);
   --icon-stroke-modifier: 1;
-  --icon-xl: 32px;
-  --icon-xl-stroke-width: 1.25px;
-  --icon-xs: 14px;
-  --icon-xs-stroke-width: 2.25px;
-  --indentation-guide-width: 0px;
-  --inline-title-margin-bottom: 0.5em;
-  --inline-title-size: 1.5em;
-  --input-border-width: 0;
-  --input-corner-shape: superellipse(1.1);
-  --input-date-separator: #99999b;
-  --input-font-weight: 700;
+  --icon-xl: calc(32px + var(--icon-size-modifier));
+  --icon-xl-stroke-width: calc(1.25px*var(--icon-stroke-modifier));
+  --icon-xs: calc(14px + var(--icon-size-modifier));
+  --icon-xs-stroke-width: calc(2.25px*var(--icon-stroke-modifier));
+  --indentation-guide-width: var(--border-width, 0px);
+  --inline-title-margin-bottom: calc(0.5em*var(--readable-spacing-modifier, 1));
+  --inline-title-size: var(--h1-size, 1.5em);
+  --input-border-width: var(--border-width, 0);
+  --input-corner-shape: var(--corner-shape, superellipse(1.1));
+  --input-date-separator: var(--text-faint, #99999b);
+  --input-font-weight: calc(var(--font-weight) + var(--bold-modifier));
   --input-height: 32px;
-  --input-placeholder-color: #99999b;
-  --input-radius: 9px;
-  --input-shadow: none;
-  --input-shadow-hover: none;
-  --interactive-hover: color-mix(in srgb, #2e2e32, #fff 15%);
-  --interactive-normal: color-mix(in srgb, #2e2e32, #fff 10%);
-  --light: var(--background-primary, #1d1d20);
-  --lightgray: var(--background-secondary, #2e2e32);
+  --input-placeholder-color: var(--text-faint, #99999b);
+  --input-radius: var(--radius-s, 9px);
+  --input-shadow: inset 0 0 0 var(--input-border-width) var(--background-modifier-border);
+  --input-shadow-hover: inset 0 0 0 var(--input-border-width) var(--background-modifier-border-hover);
+  --interactive-hover: color-mix(in srgb, var(--background-secondary), var(--text-normal) 15%);
+  --interactive-normal: color-mix(in srgb, var(--background-secondary), var(--text-normal) 10%);
+  --light: var(--background-primary, var(--color-base-00, #1d1d20));
+  --lightgray: var(--background-secondary, var(--color-base-20, #2e2e32));
   --line-height-normal: 1.6;
   --line-width: 700px;
   --line-width-wide: 50rem;
   --link-decoration: none;
   --link-external-decoration: none;
-  --list-marker-color: #99999b;
-  --list-marker-color-hover: #d2d2d2;
+  --list-marker-color: var(--text-faint, #99999b);
+  --list-marker-color-hover: var(--text-muted, #d2d2d2);
   --list-spacing: 0.175em;
-  --media-radius: 9px;
-  --menu-background: #36363a;
-  --menu-border-color: color-mix(in srgb, #2e2e32, #fff 10%);
-  --menu-corner-shape: superellipse(1.1);
-  --menu-radius: 12px;
-  --menu-shadow: 0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07), 0 2px 6px 2px rgba(0, 0, 6, 0.03);
-  --metadata-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
-  --metadata-divider-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --media-radius: var(--radius-s, 9px);
+  --menu-background: var(--background-secondary, #36363a);
+  --menu-border-color: color-mix(in srgb, var(--background-secondary), var(--text-normal) 10%);
+  --menu-corner-shape: var(--corner-shape, superellipse(1.1));
+  --menu-radius: var(--radius-m, 12px);
+  --menu-shadow: var(--shadow-s, 0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07), 0 2px 6px 2px rgba(0, 0, 6, 0.03));
+  --metadata-border-color: var(--background-modifier-border, color-mix(in srgb, #2e2e32, #fff 15%));
+  --metadata-divider-color: var(--background-modifier-border, color-mix(in srgb, #2e2e32, #fff 15%));
   --metadata-gap: 8px;
-  --metadata-input-font: "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-input-text-color: #fff;
-  --metadata-label-font: "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-label-text-color: #d2d2d2;
-  --metadata-label-text-color-hover: #d2d2d2;
-  --metadata-label-width: 9em;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #77767b;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #6b6970;
-  --metadata-property-corner-shape: superellipse(1.1);
-  --metadata-property-corner-shape-focus: superellipse(1.1);
-  --metadata-property-corner-shape-hover: superellipse(1.1);
-  --metadata-sidebar-input-font-size: 11px;
-  --metadata-sidebar-label-font-size: 11px;
-  --modal-background: #222226;
-  --modal-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
-  --modal-radius: 15px;
+  --metadata-input-font: var(--font-interface, "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-input-text-color: var(--text-normal, #fff);
+  --metadata-label-font: var(--font-interface, "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-label-text-color: var(--text-muted, #d2d2d2);
+  --metadata-label-text-color-hover: var(--text-muted, #d2d2d2);
+  --metadata-label-width: calc(9em*var(--metadata-label-width-modifier, 1));
+  --metadata-property-corner-shape: var(--corner-shape, superellipse(1.1));
+  --metadata-property-corner-shape-focus: var(--corner-shape, superellipse(1.1));
+  --metadata-property-corner-shape-hover: var(--corner-shape, superellipse(1.1));
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 11px);
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 11px);
+  --modal-background: var(--background-primary, #222226);
+  --modal-border-color: var(--background-modifier-border, color-mix(in srgb, #2e2e32, #fff 15%));
+  --modal-radius: var(--radius-l, 15px);
   --mono-rgb-adwaita: 255, 255, 255;
-  --nav-collapse-icon-color: #99999b;
-  --nav-collapse-icon-color-collapsed: #99999b;
-  --nav-heading-color: #fff;
-  --nav-heading-color-collapsed: #99999b;
-  --nav-heading-color-collapsed-hover: #d2d2d2;
-  --nav-heading-color-hover: #fff;
-  --nav-indentation-guide-width: 0px;
-  --nav-item-children-margin-start: 20px;
-  --nav-item-color: #d2d2d2;
-  --nav-item-color-active: #fff;
-  --nav-item-color-hover: #fff;
-  --nav-item-color-selected: #fff;
-  --nav-item-padding: 8px 16px 8px 32px;
-  --nav-item-parent-padding: 8px 16px 8px 32px;
-  --nav-item-radius: 9px;
-  --nav-item-size: 11px;
-  --nav-tag-color: #99999b;
-  --nav-tag-color-active: #d2d2d2;
-  --nav-tag-color-hover: #d2d2d2;
-  --nav-tag-radius: 9px;
-  --nn-theme-file-border-radius: 12px;
-  --nn-theme-file-tag-bg: hsla(258, 88%, 66%, 0.1);
-  --nn-theme-file-tag-color: hsl(255, 89.76%, 75.9%);
+  --nav-collapse-icon-color: var(--collapse-icon-color, #99999b);
+  --nav-collapse-icon-color-collapsed: var(--text-faint, #99999b);
+  --nav-heading-color: var(--text-normal, #fff);
+  --nav-heading-color-collapsed: var(--text-faint, #99999b);
+  --nav-heading-color-collapsed-hover: var(--text-muted, #d2d2d2);
+  --nav-heading-color-hover: var(--text-normal, #fff);
+  --nav-indentation-guide-width: var(--indentation-guide-width, 0px);
+  --nav-item-children-margin-start: calc(20px - var(--nav-indentation-guide-width)/2);
+  --nav-item-color: var(--text-muted, #d2d2d2);
+  --nav-item-color-active: var(--text-normal, #fff);
+  --nav-item-color-hover: var(--text-normal, #fff);
+  --nav-item-color-selected: var(--text-normal, #fff);
+  --nav-item-padding: calc(8px*var(--density-modifier)) 16px calc(8px*var(--density-modifier)) 32px;
+  --nav-item-parent-padding: var(--nav-item-padding, 8px 16px 8px 32px);
+  --nav-item-radius: var(--radius-s, 9px);
+  --nav-item-size: var(--font-ui-small, 11px);
+  --nav-tag-color: var(--text-faint, #99999b);
+  --nav-tag-color-active: var(--text-muted, #d2d2d2);
+  --nav-tag-color-hover: var(--text-muted, #d2d2d2);
+  --nav-tag-radius: var(--radius-s, 9px);
+  --nn-theme-file-border-radius: var(--radius-m, 12px);
+  --nn-theme-file-tag-bg: var(--tag-background, hsla(258, 88%, 66%, 0.1));
+  --nn-theme-file-tag-color: var(--tag-color, hsl(255, 89.76%, 75.9%));
   --nn-theme-list-bg: transparent;
   --nn-theme-list-header-bg: transparent;
-  --nn-theme-mobile-list-header-link-color: #fff;
+  --nn-theme-mobile-list-header-link-color: var(--text-normal, #fff);
   --nn-theme-mobile-nav-bg: transparent;
-  --nn-theme-mobile-toolbar-button-active-bg: hsl(258, 88%, 66%);
-  --nn-theme-mobile-toolbar-button-active-icon-color: white;
-  --nn-theme-mobile-toolbar-button-icon-color: #fff;
+  --nn-theme-mobile-toolbar-button-active-bg: var(--interactive-accent, hsl(258, 88%, 66%));
+  --nn-theme-mobile-toolbar-button-active-icon-color: var(--text-on-accent, white);
+  --nn-theme-mobile-toolbar-button-icon-color: var(--text-normal, #fff);
   --nn-theme-nav-bg: transparent;
   --nn-theme-nav-header-bg: transparent;
-  --nn-theme-navitem-border-radius: 12px;
-  --nn-theme-navitem-selected-bg: rgba(255, 255, 255, 0.067);
-  --nn-theme-navitem-selected-inactive-bg: rgba(255, 255, 255, 0.067);
+  --nn-theme-navitem-border-radius: var(--radius-m, 12px);
+  --nn-theme-navitem-selected-bg: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+  --nn-theme-navitem-selected-inactive-bg: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
   --p-spacing: 1.75rem;
-  --pdf-background: #1d1d20;
-  --pdf-page-background: #1d1d20;
-  --pdf-shadow: 0 0 0 1px color-mix(in srgb, #2e2e32, #fff 15%);
-  --pdf-sidebar-background: #1d1d20;
-  --pdf-thumbnail-shadow: 0 0 0 1px color-mix(in srgb, #2e2e32, #fff 15%);
-  --pill-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
-  --pill-border-color-hover: #6b6970;
-  --pill-color: #d2d2d2;
-  --pill-color-hover: #fff;
-  --pill-color-remove: #99999b;
-  --prompt-background: #1d1d20;
-  --prompt-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --pdf-background: var(--background-primary, #1d1d20);
+  --pdf-page-background: var(--background-primary, #1d1d20);
+  --pdf-sidebar-background: var(--background-primary, #1d1d20);
+  --pill-border-color: var(--background-modifier-border, color-mix(in srgb, #2e2e32, #fff 15%));
+  --pill-border-color-hover: var(--background-modifier-border-hover, #6b6970);
+  --pill-color: var(--text-muted, #d2d2d2);
+  --pill-color-hover: var(--text-normal, #fff);
+  --pill-color-remove: var(--text-faint, #99999b);
+  --prompt-background: var(--background-primary, #1d1d20);
+  --prompt-border-color: var(--background-modifier-border, color-mix(in srgb, #2e2e32, #fff 15%));
   --prompt-input-height: 64px;
-  --radius-l: 15px;
-  --radius-m: 12px;
+  --radius-l: calc(15px*var(--radius-modifier));
+  --radius-m: calc(12px*var(--radius-modifier));
   --radius-modifier: 1;
-  --radius-s: 9px;
-  --radius-xl: 18px;
-  --raised-background: color-mix(in srgb, color-mix(in srgb, #2e2e32, #fff 10%) 65%, transparent) linear-gradient(color-mix(in srgb, #2e2e32, #fff 10%), color-mix(in srgb, color-mix(in srgb, #2e2e32, #fff 10%) 65%, transparent));
-  --ribbon-background: transparent;
-  --ribbon-background-collapsed: transparent;
-  --scrollbar-radius: 15px;
-  --search-clear-button-color: #d2d2d2;
-  --search-icon-color: #d2d2d2;
-  --search-result-background: #1d1d20;
-  --setting-group-heading-color: #fff;
-  --setting-group-heading-size: 11px;
-  --setting-group-heading-weight: 700;
-  --setting-items-background: #2e2e32;
-  --setting-items-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
-  --setting-items-padding: 0px;
-  --setting-items-radius: 12px;
+  --radius-s: calc(9px*var(--radius-modifier));
+  --radius-xl: calc(18px*var(--radius-modifier));
+  --raised-background: var(--blur-background, color-mix(in srgb, color-mix(in srgb, #2e2e32, #fff 10%) 65%, transparent) linear-gradient(color-mix(in srgb, #2e2e32, #fff 10%), color-mix(in srgb, color-mix(in srgb, #2e2e32, #fff 10%) 65%, transparent)));
+  --ribbon-background: var(--background-secondary, transparent);
+  --ribbon-background-collapsed: var(--ribbon-background, transparent);
+  --scrollbar-radius: var(--radius-l, 15px);
+  --search-clear-button-color: var(--text-muted, #d2d2d2);
+  --search-icon-color: var(--text-muted, #d2d2d2);
+  --search-result-background: var(--background-primary, #1d1d20);
+  --setting-group-heading-color: var(--text-normal, #fff);
+  --setting-group-heading-size: var(--font-ui-medium, 11px);
+  --setting-group-heading-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --setting-items-background: var(--background-primary-alt, #2e2e32);
+  --setting-items-border-color: var(--background-modifier-border, color-mix(in srgb, #2e2e32, #fff 15%));
+  --setting-items-padding: calc(16px*var(--density-modifier)) 16px;
+  --setting-items-radius: var(--radius-m, 12px);
   --setting-items-shadow: 0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07), 0 2px 6px 2px rgba(0, 0, 6, 0.03);
   --shadow-l: 0 0 14px 5px rgba(0, 0, 0, 0.15), 0 0 5px 2px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
   --shadow-s: 0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07), 0 2px 6px 2px rgba(0, 0, 6, 0.03);
-  --shadow-tactile: rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(255, 255, 255, 0.04) 0px 2px 4px -2px;
-  --shiki-active-tab-border-color: #d2d2d2;
-  --shiki-code-background: #2e2e32;
-  --shiki-code-block-border-radius: 9px;
-  --shiki-code-block-spacing: 1.75rem;
-  --shiki-code-comment: #99999b;
-  --shiki-code-function: rgb(38, 162, 105);
-  --shiki-code-important: rgb(230, 97, 0);
-  --shiki-code-keyword: rgb(213, 97, 170);
-  --shiki-code-normal: #d2d2d2;
-  --shiki-code-property: rgb(33, 144, 164);
-  --shiki-code-punctuation: #d2d2d2;
-  --shiki-code-string: rgb(245, 194, 17);
-  --shiki-code-value: rgb(145, 65, 172);
-  --shiki-gutter-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
-  --shiki-gutter-text-color: #99999b;
-  --shiki-gutter-text-color-highlight: #d2d2d2;
-  --shiki-highlight-green: rgba(38, 162, 105, 0.5);
-  --shiki-highlight-green-background: rgba(38, 162, 105, 0.1);
-  --shiki-highlight-neutral: #d2d2d2;
-  --shiki-highlight-red: rgba(224, 27, 36, 0.5);
-  --shiki-highlight-red-background: rgba(224, 27, 36, 0.1);
-  --shiki-terminal-dots-color: #99999b;
-  --slider-thumb-border-color: #6b6970;
-  --slider-thumb-border-width: 0;
-  --slider-thumb-height: 20px;
-  --slider-thumb-width: 20px;
+  --shadow-tactile: rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(var(--mono-rgb-100), 0.04) 0px 2px 4px -2px;
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, #d2d2d2);
+  --shiki-code-background: var(--code-background, #2e2e32);
+  --shiki-code-block-border-radius: var(--code-radius, 9px);
+  --shiki-code-block-spacing: var(--p-spacing, 1.75rem);
+  --shiki-code-comment: var(--text-faint, #99999b);
+  --shiki-code-function: var(--color-green, rgb(38, 162, 105));
+  --shiki-code-important: var(--color-orange, rgb(230, 97, 0));
+  --shiki-code-keyword: var(--color-pink, rgb(213, 97, 170));
+  --shiki-code-normal: var(--text-muted, #d2d2d2);
+  --shiki-code-property: var(--color-cyan, rgb(33, 144, 164));
+  --shiki-code-punctuation: var(--text-muted, #d2d2d2);
+  --shiki-code-string: var(--color-yellow, rgb(245, 194, 17));
+  --shiki-code-value: var(--color-purple, rgb(145, 65, 172));
+  --shiki-gutter-border-color: var(--background-modifier-border, color-mix(in srgb, #2e2e32, #fff 15%));
+  --shiki-gutter-text-color: var(--text-faint, #99999b);
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, #d2d2d2);
+  --shiki-highlight-neutral: var(--shiki-code-normal, #d2d2d2);
+  --shiki-terminal-dots-color: var(--text-faint, #99999b);
+  --slider-thumb-border-color: var(--background-modifier-border-hover, #6b6970);
+  --slider-thumb-border-width: var(--border-width, 0);
+  --slider-thumb-height: var(--toggle-thumb-height, 20px);
+  --slider-thumb-radius: var(--toggle-thumb-radius, 18px);
+  --slider-thumb-width: var(--toggle-thumb-width, 20px);
   --slider-thumb-y: -8px;
-  --slider-track-background: rgb(from #fff r g b / 15%);
-  --slider-track-background-active: rgb(from #fff r g b / 25%);
-  --slider-track-background-hover: rgb(from #fff r g b / 20%);
+  --slider-track-background: rgb(from var(--text-normal) r g b / 15%);
+  --slider-track-background-active: rgb(from var(--text-normal) r g b / 25%);
+  --slider-track-background-hover: rgb(from var(--text-normal) r g b / 20%);
   --slider-track-height: 4px;
-  --status-bar-background: #2e2e32;
-  --status-bar-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
-  --status-bar-font-size: 9.02px;
-  --status-bar-radius: 12px 0 0 0;
-  --status-bar-text-color: #d2d2d2;
-  --suggestion-background: #1d1d20;
-  --sync-avatar-color-1: rgb(224, 27, 36);
-  --sync-avatar-color-2: rgb(230, 97, 0);
-  --sync-avatar-color-3: rgb(245, 194, 17);
-  --sync-avatar-color-4: rgb(38, 162, 105);
-  --sync-avatar-color-5: rgb(33, 144, 164);
-  --sync-avatar-color-6: rgb(53, 132, 228);
-  --sync-avatar-color-7: rgb(145, 65, 172);
-  --sync-avatar-color-8: rgb(213, 97, 170);
+  --status-bar-background: var(--background-secondary, #2e2e32);
+  --status-bar-border-color: var(--divider-color, color-mix(in srgb, #2e2e32, #fff 15%));
+  --status-bar-font-size: var(--font-ui-smaller, 9.02px);
+  --status-bar-radius: var(--radius-m, 12px 0 0 0) 0 0 0;
+  --status-bar-text-color: var(--text-muted, #d2d2d2);
+  --suggestion-background: var(--background-primary, #1d1d20);
+  --sync-avatar-color-1: var(--color-red, rgb(224, 27, 36));
+  --sync-avatar-color-2: var(--color-orange, rgb(230, 97, 0));
+  --sync-avatar-color-3: var(--color-yellow, rgb(245, 194, 17));
+  --sync-avatar-color-4: var(--color-green, rgb(38, 162, 105));
+  --sync-avatar-color-5: var(--color-cyan, rgb(33, 144, 164));
+  --sync-avatar-color-6: var(--color-blue, rgb(53, 132, 228));
+  --sync-avatar-color-7: var(--color-purple, rgb(145, 65, 172));
+  --sync-avatar-color-8: var(--color-pink, rgb(213, 97, 170));
   --tab-action-width: 32px;
-  --tab-background-active: #1d1d20;
-  --tab-container-background: #2e2e32;
-  --tab-curve: 13px;
-  --tab-divider-color: color-mix(in srgb, #2e2e32, #fff 15%);
-  --tab-font-size: 11px;
-  --tab-max-width: 200px;
-  --tab-outline-color: color-mix(in srgb, #2e2e32, #fff 15%);
-  --tab-radius: 9px;
-  --tab-radius-active: 9px 9px 0 0;
-  --tab-stacked-font-size: 11px;
-  --tab-stacked-header-width: 48px;
-  --tab-switcher-background: #2e2e32;
-  --tab-switcher-menubar-background: linear-gradient(to top, #2e2e32, transparent);
-  --tab-switcher-preview-radius: 18px;
+  --tab-background-active: var(--background-primary, #1d1d20);
+  --tab-container-background: var(--background-secondary, #2e2e32);
+  --tab-curve: calc(var(--tab-radius) + 4px);
+  --tab-divider-color: var(--background-modifier-border, color-mix(in srgb, #2e2e32, #fff 15%));
+  --tab-font-size: var(--font-ui-small, 11px);
+  --tab-max-width: var(--tab-width, 200px);
+  --tab-outline-color: var(--divider-color, color-mix(in srgb, #2e2e32, #fff 15%));
+  --tab-radius: var(--radius-s, 9px);
+  --tab-radius-active: var(--tab-radius) var(--tab-radius, 9px 9px 0 0) 0 0;
+  --tab-stacked-font-size: var(--font-ui-small, 11px);
+  --tab-stacked-header-width: var(--header-height, 48px);
+  --tab-switcher-background: var(--background-secondary, #2e2e32);
+  --tab-switcher-preview-radius: var(--radius-xl, 18px);
   --tab-text-align: left;
-  --tab-text-color: #99999b;
-  --tab-text-color-active: #d2d2d2;
-  --tab-text-color-focused: #d2d2d2;
-  --tab-text-color-focused-active: #fff;
-  --table-add-button-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
-  --table-add-button-border-width: 0;
-  --table-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
-  --table-drag-handle-color: #99999b;
-  --table-header-border-color: transparent;
-  --table-header-color: #fff;
-  --table-header-size: 0.933em;
-  --table-header-weight: 700;
-  --table-text-size: 0.933em;
+  --tab-text-color: var(--text-faint, #99999b);
+  --tab-text-color-active: var(--text-muted, #d2d2d2);
+  --tab-text-color-focused: var(--text-muted, #d2d2d2);
+  --tab-text-color-focused-active: var(--text-normal, #fff);
+  --table-add-button-border-color: var(--background-modifier-border, color-mix(in srgb, #2e2e32, #fff 15%));
+  --table-add-button-border-width: var(--table-border-width, 0);
+  --table-border-color: var(--background-modifier-border, color-mix(in srgb, #2e2e32, #fff 15%));
+  --table-drag-handle-color: var(--text-faint, #99999b);
+  --table-header-border-color: var(--table-border-color, transparent);
+  --table-header-color: var(--text-normal, #fff);
+  --table-header-size: var(--table-text-size, 0.933em);
+  --table-text-size: var(--font-small, 0.933em);
   --tag-padding-x: 8px;
   --tag-padding-y: 4px;
   --tag-radius: 8px;
-  --tag-weight: 500;
-  --text-error: rgb(224, 27, 36);
-  --text-faint: #99999b;
-  --text-muted: #d2d2d2;
-  --text-normal: #fff;
-  --text-success: rgb(38, 162, 105);
-  --text-warning: rgb(230, 97, 0);
-  --titleFont: var(--font-text, "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --titlebar-background: transparent;
-  --titlebar-background-focused: transparent;
-  --titlebar-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --tag-weight: var(--font-medium, 500);
+  --text-error: var(--color-red, rgb(224, 27, 36));
+  --text-faint: var(--color-base-50, #99999b);
+  --text-muted: var(--color-base-70, #d2d2d2);
+  --text-normal: var(--color-base-100, #fff);
+  --text-success: var(--color-green, rgb(38, 162, 105));
+  --text-warning: var(--color-orange, rgb(230, 97, 0));
+  --titleFont: var(--font-text-theme, "Adwaita Sans", "Adwaita Sans Text");
+  --titlebar-background: var(--background-secondary, transparent);
+  --titlebar-background-focused: var(--background-secondary-alt, transparent);
+  --titlebar-border-color: var(--background-modifier-border, color-mix(in srgb, #2e2e32, #fff 15%));
   --titlebar-border-width: 1px;
-  --titlebar-text-color: #d2d2d2;
-  --titlebar-text-color-focused: #fff;
+  --titlebar-text-color: var(--text-muted, #d2d2d2);
+  --titlebar-text-color-focused: var(--text-normal, #fff);
   --toggle-border-width: 3px;
-  --toggle-s-border-width: 3px;
-  --toggle-s-thumb-height: 20px;
-  --toggle-s-thumb-width: 20px;
-  --toggle-s-width: 46px;
-  --toggle-thumb-color: color-mix(in srgb, white 80%, #1d1d20);
+  --toggle-s-border-width: var(--toggle-border-width, 3px);
+  --toggle-s-thumb-height: var(--toggle-thumb-height, 20px);
+  --toggle-s-thumb-width: var(--toggle-thumb-width, 20px);
+  --toggle-s-width: var(--toggle-width, 46px);
+  --toggle-thumb-color: color-mix(in srgb, white 80%, var(--background-primary));
   --toggle-thumb-height: 20px;
   --toggle-thumb-width: 20px;
   --toggle-width: 46px;
-  --traffic-lights-offset-x: 48px;
-  --traffic-lights-offset-y: 48px;
+  --traffic-lights-offset-x: var(--header-height, 48px);
+  --traffic-lights-offset-y: var(--header-height, 48px);
   --translucent-dark-opacity: 0%;
   --translucent-light-opacity: 0%;
-  --vault-profile-color: #fff;
-  --vault-profile-color-hover: #fff;
-  --vault-profile-font-size: 11px;
+  --vault-profile-color: var(--text-normal, #fff);
+  --vault-profile-color-hover: var(--vault-profile-color, #fff);
+  --vault-profile-font-size: var(--font-ui-small, 11px);
   --view-top-spacing-markdown: 0px;
-  --workspace-background-translucent: rgb(from #2e2e32 r g b / 0%);
+  --workspace-background-translucent: rgb(from var(--background-secondary) r g b / var(--translucent-dark-opacity));
   --quartz-icon-color: currentColor;
 }
 
@@ -486,17 +462,17 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(46, 46, 50);
+  background-color: var(--background-secondary, rgb(46, 46, 50));
   color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: rgb(29, 29, 32);
+  background-color: var(--background-primary, rgb(29, 29, 32));
   color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   color: rgb(255, 255, 255);
 }
 
@@ -505,44 +481,42 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgba(0, 0, 6, 0.36);
   color: rgb(255, 255, 255);
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
-  color: rgb(255, 255, 255);
+  color: var(--bold-color, rgb(255, 255, 255));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 700;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
-  color: rgb(255, 255, 255);
+  color: var(--italic-color, rgb(255, 255, 255));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
-  color: rgb(255, 255, 255);
+  color: var(--italic-color, rgb(255, 255, 255));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
-  color: rgb(255, 255, 255);
+  color: var(--bold-color, rgb(255, 255, 255));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 700;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .text-highlight {
-  color: rgb(255, 255, 255);
+  color: var(--text-highlight, var(--text-normal));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 500;
+  font-weight: var(--font-medium, 500);
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
@@ -555,9 +529,9 @@ html[saved-theme="dark"] body del {
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
   font-size: 11px;
-  font-weight: 500;
+  font-weight: max(var(--file-header-font-weight),var(--font-medium));
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
@@ -570,7 +544,7 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
 }
 
 html[saved-theme="dark"] body p {
-  color: rgb(210, 210, 210);
+  color: var(--text-muted, rgb(210, 210, 210));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(210, 210, 210) none 0px;
   text-decoration-color: rgb(210, 210, 210);
@@ -613,11 +587,11 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-color: rgb(255, 255, 255);
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
-  color: rgb(153, 153, 155);
+  color: var(--text-faint, rgb(153, 153, 155));
 }
 
 html[saved-theme="dark"] body blockquote {
-  background-color: rgb(46, 46, 50);
+  background-color: var(--blockquote-background-color, rgb(46, 46, 50));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-bottom: 16px;
   padding-top: 16px;
@@ -632,7 +606,7 @@ html[saved-theme="dark"] body blockquote {
 html[saved-theme="dark"] body table {
   color: rgb(255, 255, 255);
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  margin-top: 28px;
+  margin-top: var(--heading-spacing, 28px);
   width: 654px;
 }
 
@@ -648,9 +622,10 @@ html[saved-theme="dark"] body td {
   border-right-width: 0px;
   border-top-color: color(srgb 0.303333 0.303333 0.316667);
   border-top-left-radius: 9px;
-  color: rgb(255, 255, 255);
+  color: var(--table-text-color, rgb(255, 255, 255));
   padding-bottom: 8px;
   padding-top: 8px;
+  text-align: var(--table-text-align-body, start);
 }
 
 html[saved-theme="dark"] body th {
@@ -663,13 +638,14 @@ html[saved-theme="dark"] body th {
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-  color: rgb(255, 255, 255);
-  font-weight: 700;
+  color: var(--table-header-color, rgb(255, 255, 255));
+  font-weight: var(--table-header-weight, 700);
   padding-bottom: 8px;
   padding-top: 8px;
+  text-align: var(--table-text-align-header, start);
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: rgb(46, 46, 50);
+  background-color: var(--code-background, rgb(46, 46, 50));
   border-bottom-color: color(srgb 0.303333 0.303333 0.316667);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -682,7 +658,7 @@ html[saved-theme="dark"] body th {
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   border-top-width: 1px;
-  color: rgb(171, 178, 191);
+  color: var(--code-normal, rgb(171, 178, 191));
   padding-bottom: 2px;
   padding-left: 4px;
   padding-right: 4px;
@@ -690,7 +666,7 @@ html[saved-theme="dark"] body th {
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: rgb(46, 46, 50);
+  background-color: var(--code-background, rgb(46, 46, 50));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -751,7 +727,7 @@ html[saved-theme="dark"] body video {
   border-top-right-radius: 9px;
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: rgb(46, 46, 50);
+  background-color: var(--background-primary-alt, rgb(46, 46, 50));
   border-bottom-color: rgb(210, 210, 210);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -768,7 +744,7 @@ html[saved-theme="dark"] body .footnotes {
 }
 
 html[saved-theme="dark"] body .transclude {
-  background-color: rgb(46, 46, 50);
+  background-color: var(--embed-background, rgb(46, 46, 50));
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-right-radius: 9px;
   border-left-color: rgb(154, 153, 150);
@@ -778,7 +754,7 @@ html[saved-theme="dark"] body .transclude {
 }
 
 html[saved-theme="dark"] body .transclude-inner {
-  background-color: rgb(46, 46, 50);
+  background-color: var(--embed-background, rgb(46, 46, 50));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
@@ -2026,13 +2002,12 @@ html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="check
   border-left-color: rgb(53, 132, 228);
   border-right-color: rgb(53, 132, 228);
   border-top-color: rgb(53, 132, 228);
-  color: rgb(53, 132, 228);
   gap: 8px;
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.326667 0.59 0.91);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {
@@ -2040,9 +2015,8 @@ html[saved-theme="dark"] body .callout > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
-  --callout-color: 33, 144, 164;
+  --callout-color: var(--callout-summary, 33, 144, 164);
   background: rgba(33, 144, 164, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(33, 144, 164, 0.1);
   border-bottom-color: rgba(33, 144, 164, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -2064,13 +2038,12 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   border-left-color: rgb(53, 132, 228);
   border-right-color: rgb(53, 132, 228);
   border-top-color: rgb(53, 132, 228);
-  color: rgb(53, 132, 228);
   gap: 8px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.326667 0.59 0.91);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-content {
@@ -2078,14 +2051,305 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="banner-icon"] {
+  --anim-duration-fast: 160ms;
+  --anim-duration-moderate: 320ms;
+  --anim-duration-slow: 480ms;
+  --anim-duration-superfast: 80ms;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+  --background-modifier-border: color-mix(in srgb, #2e2e32, #fff 15%);
+  --background-modifier-border-focus: #77767b;
+  --background-modifier-border-hover: #6b6970;
+  --background-modifier-error: rgb(224, 27, 36);
+  --background-modifier-error-hover: rgb(224, 27, 36);
+  --background-modifier-error-rgb: 224, 27, 36;
+  --background-modifier-form-field: color-mix(in srgb, #2e2e32, #fff 10%);
+  --background-modifier-form-field-hover: color-mix(in srgb, #2e2e32, #fff 10%);
+  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-success: rgb(38, 162, 105);
+  --background-modifier-success-rgb: 38, 162, 105;
+  --background-primary: #1d1d20;
+  --background-primary-alt: #2e2e32;
+  --background-secondary: #2e2e32;
+  --background-secondary-alt: #28282c;
   --banner-fade-height: 0px;
   --banner-icon-size: 0px;
   --banner-image-height: 0px;
-  --callout-color: 53, 132, 228;
+  --banner-image-radius: 9px;
+  --block-width-max: calc(100cqw - 64px);
+  --block-width-offset: -32px;
+  --block-width-wide: min(100cqw, 50rem);
+  --blockquote-background-color: #2e2e32;
+  --blockquote-border-color: #9a9996;
+  --blockquote-size: 16px;
+  --blur-background: color-mix(in srgb, color-mix(in srgb, #2e2e32, #fff 10%) 65%, transparent) linear-gradient(color-mix(in srgb, #2e2e32, #fff 10%), color-mix(in srgb, color-mix(in srgb, #2e2e32, #fff 10%) 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 700;
+  --button-corner-shape: superellipse(1.1);
+  --button-radius: 9px;
+  --callout-blend-mode: normal;
+  --callout-border-width: 1px;
+  --callout-bug: 224, 27, 36;
+  --callout-color: var(--callout-default, 53, 132, 228);
+  --callout-default: 53, 132, 228;
+  --callout-error: 224, 27, 36;
+  --callout-example: 145, 65, 172;
+  --callout-fail: 224, 27, 36;
+  --callout-important: 33, 144, 164;
+  --callout-info: 53, 132, 228;
+  --callout-padding: 16px;
+  --callout-question: 230, 97, 0;
+  --callout-radius: 9px;
+  --callout-size: 16px;
+  --callout-success: 38, 162, 105;
+  --callout-summary: 33, 144, 164;
+  --callout-tip: 33, 144, 164;
+  --callout-title-weight: 700;
+  --callout-todo: 53, 132, 228;
+  --callout-warning: 230, 97, 0;
+  --canvas-background: #1d1d20;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 9px;
+  --canvas-dot-pattern: #5e5c64;
+  --cards-columns: repeat(auto-fit, minmax(160px, 1fr));
+  --caret-color: #fff;
+  --checkbox-border-color: #99999b;
+  --checkbox-border-color-hover: #d2d2d2;
+  --checkbox-color: hsl(258, 88%, 66%);
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+  --checkbox-marker-color: #1d1d20;
+  --checkbox-radius: 100px;
+  --checkbox-size: 16px;
+  --checklist-done-color: #d2d2d2;
+  --clickable-icon-radius: 9px;
+  --code-background: #2e2e32;
+  --code-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --code-bracket-background: rgba(255, 255, 255, 0.067);
+  --code-comment: #5c6370;
+  --code-function: #d19a66;
+  --code-important: #d19a66;
+  --code-keyword: #e16d76;
+  --code-normal: #abb2bf;
+  --code-operator: rgb(224, 27, 36);
+  --code-property: #62afef;
+  --code-punctuation: #abb2bf;
+  --code-radius: 9px;
+  --code-size: 0.8em;
+  --code-string: #58b6c2;
+  --code-tag: #e16d76;
+  --code-value: #c678de;
+  --collapse-icon-color: #99999b;
+  --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+  --color-accent: hsl(258, 88%, 66%);
+  --color-accent-1: hsl(255, 89.76%, 75.9%);
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
+  --color-accent-hsl: 258, 88%, 66%;
+  --color-blue: rgb(53, 132, 228);
+  --color-cyan: rgb(33, 144, 164);
+  --color-green: rgb(38, 162, 105);
+  --color-orange: rgb(230, 97, 0);
+  --color-pink: rgb(213, 97, 170);
+  --color-purple: rgb(145, 65, 172);
+  --color-red: rgb(224, 27, 36);
+  --color-yellow: rgb(245, 194, 17);
+  --divider-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --divider-color-hover: #9a9996;
+  --divider-vertical-height: 100%;
+  --dropdown-background: color-mix(in srgb, #2e2e32, #fff 10%);
+  --dropdown-background-hover: color-mix(in srgb, #2e2e32, #fff 15%);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 2.4em 0 0.8em;
+  --flair-background: color-mix(in srgb, #2e2e32, #fff 10%);
+  --flair-color: #fff;
+  --font-interface: '??', "Adwaita Sans", "Adwaita Sans Text", '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-mermaid: '??', "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-print: '??', '??', "Adwaita Sans", "Adwaita Sans Text", 'Arial';
+  --font-text: '??', "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-ui-large: 14.96px;
+  --font-ui-medium: 11px;
+  --font-ui-small: 11px;
+  --font-ui-smaller: 9.02px;
+  --font-weight: 400;
+  --graph-line: #6b6970;
+  --graph-node: #d2d2d2;
+  --graph-node-attachment: rgb(245, 194, 17);
+  --graph-node-focused: hsl(255, 89.76%, 75.9%);
+  --graph-node-tag: rgb(38, 162, 105);
+  --graph-node-unresolved: #99999b;
+  --graph-text: #fff;
+  --h5-line-height: 1.6;
+  --h6-line-height: 1.6;
+  --heading-formatting: #99999b;
+  --heading-spacing: 2em;
+  --hr-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --interactive-accent: hsl(258, 88%, 66%);
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
+  --interactive-accent-hsl: 258, 88%, 66%;
+  --interactive-hover: color-mix(in srgb, #2e2e32, #fff 15%);
+  --interactive-normal: color-mix(in srgb, #2e2e32, #fff 10%);
+  --link-color: hsl(255, 89.76%, 75.9%);
+  --link-color-hover: hsl(253, 92.4%, 85.14%);
+  --link-external-color: hsl(255, 89.76%, 75.9%);
+  --link-external-color-hover: hsl(253, 92.4%, 85.14%);
+  --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --media-radius: 9px;
+  --menu-background: #36363a;
+  --menu-border-color: color-mix(in srgb, #2e2e32, #fff 10%);
+  --menu-border-width: 1px;
+  --menu-corner-shape: superellipse(1.1);
+  --menu-padding: 6px;
+  --menu-radius: 12px;
+  --menu-shadow: 0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07), 0 2px 6px 2px rgba(0, 0, 6, 0.03);
+  --nn-theme-file-border-radius: 12px;
+  --nn-theme-file-tag-bg: hsla(258, 88%, 66%, 0.1);
+  --nn-theme-file-tag-color: hsl(255, 89.76%, 75.9%);
+  --nn-theme-mobile-list-header-link-color: #fff;
+  --nn-theme-mobile-toolbar-button-active-bg: hsl(258, 88%, 66%);
+  --nn-theme-mobile-toolbar-button-active-icon-color: white;
+  --nn-theme-mobile-toolbar-button-icon-color: #fff;
+  --nn-theme-navitem-border-radius: 12px;
+  --nn-theme-navitem-selected-bg: rgba(255, 255, 255, 0.067);
+  --nn-theme-navitem-selected-inactive-bg: rgba(255, 255, 255, 0.067);
+  --pdf-background: #1d1d20;
+  --pdf-page-background: #1d1d20;
+  --pdf-shadow: 0 0 0 1px color-mix(in srgb, #2e2e32, #fff 15%);
+  --pdf-sidebar-background: #1d1d20;
+  --pdf-thumbnail-shadow: 0 0 0 1px color-mix(in srgb, #2e2e32, #fff 15%);
+  --popover-font-size: 16px;
+  --radius-l: 15px;
+  --radius-m: 12px;
+  --radius-s: 9px;
+  --radius-xl: 18px;
+  --raised-background: color-mix(in srgb, color-mix(in srgb, #2e2e32, #fff 10%) 65%, transparent) linear-gradient(color-mix(in srgb, #2e2e32, #fff 10%), color-mix(in srgb, color-mix(in srgb, #2e2e32, #fff 10%) 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 15px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: #d2d2d2;
+  --search-icon-color: #d2d2d2;
+  --search-result-background: #1d1d20;
+  --setting-group-heading-color: #fff;
+  --setting-group-heading-size: 11px;
+  --setting-group-heading-weight: 700;
+  --setting-items-background: #2e2e32;
+  --setting-items-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --setting-items-padding: 0px;
+  --setting-items-radius: 12px;
+  --shadow-tactile: rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(255, 255, 255, 0.04) 0px 2px 4px -2px;
+  --shiki-active-tab-border-color: #d2d2d2;
+  --shiki-code-background: #2e2e32;
+  --shiki-code-block-border-radius: 9px;
+  --shiki-code-block-spacing: 1.75rem;
+  --shiki-code-comment: #99999b;
+  --shiki-code-function: rgb(38, 162, 105);
+  --shiki-code-important: rgb(230, 97, 0);
+  --shiki-code-keyword: rgb(213, 97, 170);
+  --shiki-code-normal: #d2d2d2;
+  --shiki-code-property: rgb(33, 144, 164);
+  --shiki-code-punctuation: #d2d2d2;
+  --shiki-code-string: rgb(245, 194, 17);
+  --shiki-code-value: rgb(145, 65, 172);
+  --shiki-gutter-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #99999b;
+  --shiki-gutter-text-color-highlight: #d2d2d2;
+  --shiki-highlight-green: rgba(38, 162, 105, 0.5);
+  --shiki-highlight-green-background: rgba(38, 162, 105, 0.1);
+  --shiki-highlight-neutral: #d2d2d2;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
+  --shiki-highlight-red: rgba(224, 27, 36, 0.5);
+  --shiki-highlight-red-background: rgba(224, 27, 36, 0.1);
+  --shiki-terminal-dots-color: #99999b;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #1d1d20;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --sync-avatar-color-1: rgb(224, 27, 36);
+  --sync-avatar-color-2: rgb(230, 97, 0);
+  --sync-avatar-color-3: rgb(245, 194, 17);
+  --sync-avatar-color-4: rgb(38, 162, 105);
+  --sync-avatar-color-5: rgb(33, 144, 164);
+  --sync-avatar-color-6: rgb(53, 132, 228);
+  --sync-avatar-color-7: rgb(145, 65, 172);
+  --sync-avatar-color-8: rgb(213, 97, 170);
+  --tab-background-active: #1d1d20;
   --tab-curve: 0;
+  --tab-divider-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --tab-font-size: 11px;
+  --tab-max-width: 200px;
+  --tab-outline-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --tab-radius: 9px;
   --tab-radius-active: 9px;
-  --table-border-color: color-mix(in srgb, rgb(53, 132, 228) 25%, #1d1d20 50%);
-  background-color: rgba(53, 132, 228, 0.1);
+  --tab-stacked-font-size: 11px;
+  --tab-stacked-header-width: 48px;
+  --tab-switcher-background: #2e2e32;
+  --tab-switcher-menubar-background: linear-gradient(to top, #2e2e32, transparent);
+  --tab-switcher-preview-radius: 18px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
+  --tab-text-color: #99999b;
+  --tab-text-color-active: #d2d2d2;
+  --tab-text-color-focused: #d2d2d2;
+  --tab-text-color-focused-active: #fff;
+  --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+  --table-add-button-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --table-add-button-border-width: 0;
+  --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(258, 88%, 66%);
+  --table-drag-handle-color: #99999b;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: transparent;
+  --table-header-border-width: 1px;
+  --table-header-color: #fff;
+  --table-header-size: 0.933em;
+  --table-header-weight: 700;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(258, 88%, 66%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(258, 88%, 66%);
+  --table-text-size: 0.933em;
+  --tag-background: hsla(258, 88%, 66%, 0.1);
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2);
+  --tag-border-color: hsla(258, 88%, 66%, 0.15);
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
+  --tag-color: hsl(255, 89.76%, 75.9%);
+  --tag-color-hover: hsl(255, 89.76%, 75.9%);
+  --tag-size: 0.875em;
+  --tag-weight: 500;
+  --text-accent: hsl(255, 89.76%, 75.9%);
+  --text-accent-hover: hsl(253, 92.4%, 85.14%);
+  --text-error: rgb(224, 27, 36);
+  --text-faint: #99999b;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #d2d2d2;
+  --text-normal: #fff;
+  --text-selection: hsla(258, 88%, 66%, 0.33);
+  --text-success: rgb(38, 162, 105);
+  --text-warning: rgb(230, 97, 0);
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 48px;
+  --traffic-lights-offset-y: 48px;
+  background-color: rgba(var(--callout-color), 0.1);
   border-bottom-color: rgba(53, 132, 228, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -2104,6 +2368,7 @@ html[saved-theme="dark"] body .callout[data-callout="banner-icon"] {
   border-top-width: 1px;
   color: rgb(255, 255, 255);
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: var(--callout-size, 16px);
   line-height: 25.6px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -2116,9 +2381,8 @@ html[saved-theme="dark"] body .callout[data-callout="banner-icon"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
-  --callout-color: 224, 27, 36;
+  --callout-color: var(--callout-bug, 224, 27, 36);
   background: rgba(224, 27, 36, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(224, 27, 36, 0.1);
   border-bottom-color: rgba(224, 27, 36, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -2140,13 +2404,12 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   border-left-color: rgb(53, 132, 228);
   border-right-color: rgb(53, 132, 228);
   border-top-color: rgb(53, 132, 228);
-  color: rgb(53, 132, 228);
   gap: 8px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.326667 0.59 0.91);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
@@ -2154,9 +2417,8 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
-  --callout-color: 224, 27, 36;
+  --callout-color: var(--callout-error, 224, 27, 36);
   background: rgba(224, 27, 36, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(224, 27, 36, 0.1);
   border-bottom-color: rgba(224, 27, 36, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -2178,13 +2440,12 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   border-left-color: rgb(53, 132, 228);
   border-right-color: rgb(53, 132, 228);
   border-top-color: rgb(53, 132, 228);
-  color: rgb(53, 132, 228);
   gap: 8px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.326667 0.59 0.91);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content {
@@ -2192,9 +2453,8 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
-  --callout-color: 145, 65, 172;
+  --callout-color: var(--callout-example, 145, 65, 172);
   background: rgba(145, 65, 172, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(145, 65, 172, 0.1);
   border-bottom-color: rgba(145, 65, 172, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -2216,13 +2476,12 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   border-left-color: rgb(53, 132, 228);
   border-right-color: rgb(53, 132, 228);
   border-top-color: rgb(53, 132, 228);
-  color: rgb(53, 132, 228);
   gap: 8px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.326667 0.59 0.91);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-content {
@@ -2230,9 +2489,8 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
-  --callout-color: 224, 27, 36;
+  --callout-color: var(--callout-fail, 224, 27, 36);
   background: rgba(224, 27, 36, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(224, 27, 36, 0.1);
   border-bottom-color: rgba(224, 27, 36, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -2254,13 +2512,12 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   border-left-color: rgb(53, 132, 228);
   border-right-color: rgb(53, 132, 228);
   border-top-color: rgb(53, 132, 228);
-  color: rgb(53, 132, 228);
   gap: 8px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.326667 0.59 0.91);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-content {
@@ -2268,9 +2525,8 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
-  --callout-color: 53, 132, 228;
+  --callout-color: var(--callout-info, 53, 132, 228);
   background: rgba(53, 132, 228, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(53, 132, 228, 0.1);
   border-bottom-color: rgba(53, 132, 228, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -2292,13 +2548,12 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   border-left-color: rgb(53, 132, 228);
   border-right-color: rgb(53, 132, 228);
   border-top-color: rgb(53, 132, 228);
-  color: rgb(53, 132, 228);
   gap: 8px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.326667 0.59 0.91);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
@@ -2306,9 +2561,8 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
-  --callout-color: 53, 132, 228;
+  --callout-color: var(--callout-default, 53, 132, 228);
   background: rgba(53, 132, 228, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(53, 132, 228, 0.1);
   border-bottom-color: rgba(53, 132, 228, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -2330,13 +2584,12 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   border-left-color: rgb(53, 132, 228);
   border-right-color: rgb(53, 132, 228);
   border-top-color: rgb(53, 132, 228);
-  color: rgb(53, 132, 228);
   gap: 8px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.326667 0.59 0.91);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
@@ -2344,14 +2597,305 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
+  --anim-duration-fast: 160ms;
+  --anim-duration-moderate: 320ms;
+  --anim-duration-slow: 480ms;
+  --anim-duration-superfast: 80ms;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+  --background-modifier-border: color-mix(in srgb, #2e2e32, #fff 15%);
+  --background-modifier-border-focus: #77767b;
+  --background-modifier-border-hover: #6b6970;
+  --background-modifier-error: rgb(224, 27, 36);
+  --background-modifier-error-hover: rgb(224, 27, 36);
+  --background-modifier-error-rgb: 224, 27, 36;
+  --background-modifier-form-field: color-mix(in srgb, #2e2e32, #fff 10%);
+  --background-modifier-form-field-hover: color-mix(in srgb, #2e2e32, #fff 10%);
+  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-success: rgb(38, 162, 105);
+  --background-modifier-success-rgb: 38, 162, 105;
+  --background-primary: #1d1d20;
+  --background-primary-alt: #2e2e32;
+  --background-secondary: #2e2e32;
+  --background-secondary-alt: #28282c;
   --banner-fade-height: 0px;
   --banner-icon-size: 0px;
   --banner-image-height: 0px;
-  --callout-color: 53, 132, 228;
+  --banner-image-radius: 9px;
+  --block-width-max: calc(100cqw - 64px);
+  --block-width-offset: -32px;
+  --block-width-wide: min(100cqw, 50rem);
+  --blockquote-background-color: #2e2e32;
+  --blockquote-border-color: #9a9996;
+  --blockquote-size: 16px;
+  --blur-background: color-mix(in srgb, color-mix(in srgb, #2e2e32, #fff 10%) 65%, transparent) linear-gradient(color-mix(in srgb, #2e2e32, #fff 10%), color-mix(in srgb, color-mix(in srgb, #2e2e32, #fff 10%) 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 700;
+  --button-corner-shape: superellipse(1.1);
+  --button-radius: 9px;
+  --callout-blend-mode: normal;
+  --callout-border-width: 1px;
+  --callout-bug: 224, 27, 36;
+  --callout-color: var(--callout-default, 53, 132, 228);
+  --callout-default: 53, 132, 228;
+  --callout-error: 224, 27, 36;
+  --callout-example: 145, 65, 172;
+  --callout-fail: 224, 27, 36;
+  --callout-important: 33, 144, 164;
+  --callout-info: 53, 132, 228;
+  --callout-padding: 16px;
+  --callout-question: 230, 97, 0;
+  --callout-radius: 9px;
+  --callout-size: 16px;
+  --callout-success: 38, 162, 105;
+  --callout-summary: 33, 144, 164;
+  --callout-tip: 33, 144, 164;
+  --callout-title-weight: 700;
+  --callout-todo: 53, 132, 228;
+  --callout-warning: 230, 97, 0;
+  --canvas-background: #1d1d20;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 9px;
+  --canvas-dot-pattern: #5e5c64;
+  --cards-columns: repeat(auto-fit, minmax(160px, 1fr));
+  --caret-color: #fff;
+  --checkbox-border-color: #99999b;
+  --checkbox-border-color-hover: #d2d2d2;
+  --checkbox-color: hsl(258, 88%, 66%);
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+  --checkbox-marker-color: #1d1d20;
+  --checkbox-radius: 100px;
+  --checkbox-size: 16px;
+  --checklist-done-color: #d2d2d2;
+  --clickable-icon-radius: 9px;
+  --code-background: #2e2e32;
+  --code-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --code-bracket-background: rgba(255, 255, 255, 0.067);
+  --code-comment: #5c6370;
+  --code-function: #d19a66;
+  --code-important: #d19a66;
+  --code-keyword: #e16d76;
+  --code-normal: #abb2bf;
+  --code-operator: rgb(224, 27, 36);
+  --code-property: #62afef;
+  --code-punctuation: #abb2bf;
+  --code-radius: 9px;
+  --code-size: 0.8em;
+  --code-string: #58b6c2;
+  --code-tag: #e16d76;
+  --code-value: #c678de;
+  --collapse-icon-color: #99999b;
+  --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+  --color-accent: hsl(258, 88%, 66%);
+  --color-accent-1: hsl(255, 89.76%, 75.9%);
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
+  --color-accent-hsl: 258, 88%, 66%;
+  --color-blue: rgb(53, 132, 228);
+  --color-cyan: rgb(33, 144, 164);
+  --color-green: rgb(38, 162, 105);
+  --color-orange: rgb(230, 97, 0);
+  --color-pink: rgb(213, 97, 170);
+  --color-purple: rgb(145, 65, 172);
+  --color-red: rgb(224, 27, 36);
+  --color-yellow: rgb(245, 194, 17);
+  --divider-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --divider-color-hover: #9a9996;
+  --divider-vertical-height: 100%;
+  --dropdown-background: color-mix(in srgb, #2e2e32, #fff 10%);
+  --dropdown-background-hover: color-mix(in srgb, #2e2e32, #fff 15%);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 2.4em 0 0.8em;
+  --flair-background: color-mix(in srgb, #2e2e32, #fff 10%);
+  --flair-color: #fff;
+  --font-interface: '??', "Adwaita Sans", "Adwaita Sans Text", '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-mermaid: '??', "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-print: '??', '??', "Adwaita Sans", "Adwaita Sans Text", 'Arial';
+  --font-text: '??', "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-ui-large: 14.96px;
+  --font-ui-medium: 11px;
+  --font-ui-small: 11px;
+  --font-ui-smaller: 9.02px;
+  --font-weight: 400;
+  --graph-line: #6b6970;
+  --graph-node: #d2d2d2;
+  --graph-node-attachment: rgb(245, 194, 17);
+  --graph-node-focused: hsl(255, 89.76%, 75.9%);
+  --graph-node-tag: rgb(38, 162, 105);
+  --graph-node-unresolved: #99999b;
+  --graph-text: #fff;
+  --h5-line-height: 1.6;
+  --h6-line-height: 1.6;
+  --heading-formatting: #99999b;
+  --heading-spacing: 2em;
+  --hr-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --interactive-accent: hsl(258, 88%, 66%);
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
+  --interactive-accent-hsl: 258, 88%, 66%;
+  --interactive-hover: color-mix(in srgb, #2e2e32, #fff 15%);
+  --interactive-normal: color-mix(in srgb, #2e2e32, #fff 10%);
+  --link-color: hsl(255, 89.76%, 75.9%);
+  --link-color-hover: hsl(253, 92.4%, 85.14%);
+  --link-external-color: hsl(255, 89.76%, 75.9%);
+  --link-external-color-hover: hsl(253, 92.4%, 85.14%);
+  --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --media-radius: 9px;
+  --menu-background: #36363a;
+  --menu-border-color: color-mix(in srgb, #2e2e32, #fff 10%);
+  --menu-border-width: 1px;
+  --menu-corner-shape: superellipse(1.1);
+  --menu-padding: 6px;
+  --menu-radius: 12px;
+  --menu-shadow: 0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07), 0 2px 6px 2px rgba(0, 0, 6, 0.03);
+  --nn-theme-file-border-radius: 12px;
+  --nn-theme-file-tag-bg: hsla(258, 88%, 66%, 0.1);
+  --nn-theme-file-tag-color: hsl(255, 89.76%, 75.9%);
+  --nn-theme-mobile-list-header-link-color: #fff;
+  --nn-theme-mobile-toolbar-button-active-bg: hsl(258, 88%, 66%);
+  --nn-theme-mobile-toolbar-button-active-icon-color: white;
+  --nn-theme-mobile-toolbar-button-icon-color: #fff;
+  --nn-theme-navitem-border-radius: 12px;
+  --nn-theme-navitem-selected-bg: rgba(255, 255, 255, 0.067);
+  --nn-theme-navitem-selected-inactive-bg: rgba(255, 255, 255, 0.067);
+  --pdf-background: #1d1d20;
+  --pdf-page-background: #1d1d20;
+  --pdf-shadow: 0 0 0 1px color-mix(in srgb, #2e2e32, #fff 15%);
+  --pdf-sidebar-background: #1d1d20;
+  --pdf-thumbnail-shadow: 0 0 0 1px color-mix(in srgb, #2e2e32, #fff 15%);
+  --popover-font-size: 16px;
+  --radius-l: 15px;
+  --radius-m: 12px;
+  --radius-s: 9px;
+  --radius-xl: 18px;
+  --raised-background: color-mix(in srgb, color-mix(in srgb, #2e2e32, #fff 10%) 65%, transparent) linear-gradient(color-mix(in srgb, #2e2e32, #fff 10%), color-mix(in srgb, color-mix(in srgb, #2e2e32, #fff 10%) 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 15px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: #d2d2d2;
+  --search-icon-color: #d2d2d2;
+  --search-result-background: #1d1d20;
+  --setting-group-heading-color: #fff;
+  --setting-group-heading-size: 11px;
+  --setting-group-heading-weight: 700;
+  --setting-items-background: #2e2e32;
+  --setting-items-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --setting-items-padding: 0px;
+  --setting-items-radius: 12px;
+  --shadow-tactile: rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(255, 255, 255, 0.04) 0px 2px 4px -2px;
+  --shiki-active-tab-border-color: #d2d2d2;
+  --shiki-code-background: #2e2e32;
+  --shiki-code-block-border-radius: 9px;
+  --shiki-code-block-spacing: 1.75rem;
+  --shiki-code-comment: #99999b;
+  --shiki-code-function: rgb(38, 162, 105);
+  --shiki-code-important: rgb(230, 97, 0);
+  --shiki-code-keyword: rgb(213, 97, 170);
+  --shiki-code-normal: #d2d2d2;
+  --shiki-code-property: rgb(33, 144, 164);
+  --shiki-code-punctuation: #d2d2d2;
+  --shiki-code-string: rgb(245, 194, 17);
+  --shiki-code-value: rgb(145, 65, 172);
+  --shiki-gutter-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #99999b;
+  --shiki-gutter-text-color-highlight: #d2d2d2;
+  --shiki-highlight-green: rgba(38, 162, 105, 0.5);
+  --shiki-highlight-green-background: rgba(38, 162, 105, 0.1);
+  --shiki-highlight-neutral: #d2d2d2;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
+  --shiki-highlight-red: rgba(224, 27, 36, 0.5);
+  --shiki-highlight-red-background: rgba(224, 27, 36, 0.1);
+  --shiki-terminal-dots-color: #99999b;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #1d1d20;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --sync-avatar-color-1: rgb(224, 27, 36);
+  --sync-avatar-color-2: rgb(230, 97, 0);
+  --sync-avatar-color-3: rgb(245, 194, 17);
+  --sync-avatar-color-4: rgb(38, 162, 105);
+  --sync-avatar-color-5: rgb(33, 144, 164);
+  --sync-avatar-color-6: rgb(53, 132, 228);
+  --sync-avatar-color-7: rgb(145, 65, 172);
+  --sync-avatar-color-8: rgb(213, 97, 170);
+  --tab-background-active: #1d1d20;
   --tab-curve: 0;
+  --tab-divider-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --tab-font-size: 11px;
+  --tab-max-width: 200px;
+  --tab-outline-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --tab-radius: 9px;
   --tab-radius-active: 9px;
-  --table-border-color: color-mix(in srgb, rgb(53, 132, 228) 25%, #1d1d20 50%);
-  background-color: rgba(53, 132, 228, 0.1);
+  --tab-stacked-font-size: 11px;
+  --tab-stacked-header-width: 48px;
+  --tab-switcher-background: #2e2e32;
+  --tab-switcher-menubar-background: linear-gradient(to top, #2e2e32, transparent);
+  --tab-switcher-preview-radius: 18px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
+  --tab-text-color: #99999b;
+  --tab-text-color-active: #d2d2d2;
+  --tab-text-color-focused: #d2d2d2;
+  --tab-text-color-focused-active: #fff;
+  --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+  --table-add-button-border-color: color-mix(in srgb, #2e2e32, #fff 15%);
+  --table-add-button-border-width: 0;
+  --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(258, 88%, 66%);
+  --table-drag-handle-color: #99999b;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: transparent;
+  --table-header-border-width: 1px;
+  --table-header-color: #fff;
+  --table-header-size: 0.933em;
+  --table-header-weight: 700;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(258, 88%, 66%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(258, 88%, 66%);
+  --table-text-size: 0.933em;
+  --tag-background: hsla(258, 88%, 66%, 0.1);
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2);
+  --tag-border-color: hsla(258, 88%, 66%, 0.15);
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
+  --tag-color: hsl(255, 89.76%, 75.9%);
+  --tag-color-hover: hsl(255, 89.76%, 75.9%);
+  --tag-size: 0.875em;
+  --tag-weight: 500;
+  --text-accent: hsl(255, 89.76%, 75.9%);
+  --text-accent-hover: hsl(253, 92.4%, 85.14%);
+  --text-error: rgb(224, 27, 36);
+  --text-faint: #99999b;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #d2d2d2;
+  --text-normal: #fff;
+  --text-selection: hsla(258, 88%, 66%, 0.33);
+  --text-success: rgb(38, 162, 105);
+  --text-warning: rgb(230, 97, 0);
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 48px;
+  --traffic-lights-offset-y: 48px;
+  background-color: rgba(var(--callout-color), 0.1);
   border-bottom-color: rgba(53, 132, 228, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -2370,6 +2914,7 @@ html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
   border-top-width: 1px;
   color: rgb(255, 255, 255);
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 16px;
   line-height: 25.6px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -2382,9 +2927,8 @@ html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
-  --callout-color: 230, 97, 0;
+  --callout-color: var(--callout-question, 230, 97, 0);
   background: rgba(230, 97, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(230, 97, 0, 0.1);
   border-bottom-color: rgba(230, 97, 0, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -2406,13 +2950,12 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   border-left-color: rgb(53, 132, 228);
   border-right-color: rgb(53, 132, 228);
   border-top-color: rgb(53, 132, 228);
-  color: rgb(53, 132, 228);
   gap: 8px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.326667 0.59 0.91);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-content {
@@ -2420,7 +2963,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
   border-bottom-width: 1px;
@@ -2438,13 +2981,12 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   border-left-color: rgb(53, 132, 228);
   border-right-color: rgb(53, 132, 228);
   border-top-color: rgb(53, 132, 228);
-  color: rgb(53, 132, 228);
   gap: 8px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.326667 0.59 0.91);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content {
@@ -2452,9 +2994,8 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
-  --callout-color: 38, 162, 105;
+  --callout-color: var(--callout-success, 38, 162, 105);
   background: rgba(38, 162, 105, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(38, 162, 105, 0.1);
   border-bottom-color: rgba(38, 162, 105, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -2476,13 +3017,12 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   border-left-color: rgb(53, 132, 228);
   border-right-color: rgb(53, 132, 228);
   border-top-color: rgb(53, 132, 228);
-  color: rgb(53, 132, 228);
   gap: 8px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.326667 0.59 0.91);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-content {
@@ -2490,9 +3030,8 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
-  --callout-color: 33, 144, 164;
+  --callout-color: var(--callout-tip, 33, 144, 164);
   background: rgba(33, 144, 164, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(33, 144, 164, 0.1);
   border-bottom-color: rgba(33, 144, 164, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -2514,13 +3053,12 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   border-left-color: rgb(53, 132, 228);
   border-right-color: rgb(53, 132, 228);
   border-top-color: rgb(53, 132, 228);
-  color: rgb(53, 132, 228);
   gap: 8px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.326667 0.59 0.91);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
@@ -2528,9 +3066,8 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
-  --callout-color: 53, 132, 228;
+  --callout-color: var(--callout-todo, 53, 132, 228);
   background: rgba(53, 132, 228, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(53, 132, 228, 0.1);
   border-bottom-color: rgba(53, 132, 228, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -2552,13 +3089,12 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   border-left-color: rgb(53, 132, 228);
   border-right-color: rgb(53, 132, 228);
   border-top-color: rgb(53, 132, 228);
-  color: rgb(53, 132, 228);
   gap: 8px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.326667 0.59 0.91);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
@@ -2566,9 +3102,8 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
-  --callout-color: 230, 97, 0;
+  --callout-color: var(--callout-warning, 230, 97, 0);
   background: rgba(230, 97, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(230, 97, 0, 0.1);
   border-bottom-color: rgba(230, 97, 0, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -2590,13 +3125,12 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   border-left-color: rgb(53, 132, 228);
   border-right-color: rgb(53, 132, 228);
   border-top-color: rgb(53, 132, 228);
-  color: rgb(53, 132, 228);
   gap: 8px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.326667 0.59 0.91);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] > .callout-content {
@@ -2680,12 +3214,12 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   border-top-width: 0px;
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: rgb(46, 46, 50);
+  background-color: var(--background-secondary, rgb(46, 46, 50));
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
@@ -2698,7 +3232,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space {
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
   border-top-width: 0px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 14px 5px, rgba(0, 0, 0, 0.1) 0px 0px 5px 2px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.15) 0px 0px 14px 5px, rgba(0, 0, 0, 0.1) 0px 0px 5px 2px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px);
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > * {
@@ -2748,7 +3282,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
-  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-color: var(--divider-color, rgb(255, 255, 255));
   border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
@@ -2781,47 +3315,47 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 500;
+  font-weight: var(--pill-weight, 500);
 }
 
 html[saved-theme="dark"] body h1 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h1-color, rgb(255, 255, 255));
+  font-family: var(--h1-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(255, 255, 255);
-  font-size: 24px;
+  color: var(--inline-title-color, rgb(255, 255, 255));
+  font-size: var(--inline-title-size, 24px);
 }
 
 html[saved-theme="dark"] body h2 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h2-color, rgb(255, 255, 255));
+  font-family: var(--h2-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  color: rgb(255, 255, 255);
-  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--inline-title-color, rgb(255, 255, 255));
+  font-family: var(--inline-title-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h3 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h3-color, rgb(255, 255, 255));
+  font-family: var(--h3-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h4-color, rgb(255, 255, 255));
+  font-family: var(--h4-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h5-color, rgb(255, 255, 255));
+  font-family: var(--h5-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h6-color, rgb(255, 255, 255));
+  font-family: var(--h6-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body hr {
@@ -2831,7 +3365,7 @@ html[saved-theme="dark"] body hr {
   border-top-color: rgba(0, 0, 6, 0.36);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
-  --callout-color: 53, 132, 228;
+  --callout-color: var(--callout-default, 53, 132, 228);
   border-bottom-color: rgba(53, 132, 228, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -2854,12 +3388,12 @@ html[saved-theme="dark"] body hr {
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(210, 210, 210);
+  color: var(--nav-item-color, rgb(210, 210, 210));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(210, 210, 210);
+  color: var(--nav-item-color, rgb(210, 210, 210));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
@@ -2874,10 +3408,10 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-color: rgb(210, 210, 210);
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-  color: rgb(210, 210, 210);
+  color: var(--icon-color, rgb(210, 210, 210));
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(var(--mono-rgb-100), 0.2);
   border-bottom-color: rgb(210, 210, 210);
   border-bottom-left-radius: 1380px;
   border-bottom-right-radius: 1380px;
@@ -2888,7 +3422,7 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-left-radius: 1380px;
   border-top-right-radius: 1380px;
   border-top-width: 0px;
-  color: rgb(210, 210, 210);
+  color: var(--status-bar-text-color, rgb(210, 210, 210));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -2909,7 +3443,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(210, 210, 210);
+  color: var(--nav-item-color, rgb(210, 210, 210));
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -2929,7 +3463,7 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(210, 210, 210);
+  color: var(--nav-item-color, rgb(210, 210, 210));
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -2947,7 +3481,7 @@ html[saved-theme="dark"] body ul.section-ul {
   border-top-color: rgb(210, 210, 210);
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-  color: rgb(210, 210, 210);
+  color: var(--icon-color, rgb(210, 210, 210));
 }
 
 html[saved-theme="dark"] body .darkmode svg {
@@ -2967,7 +3501,7 @@ html[saved-theme="dark"] body .darkmode svg {
 }
 
 html[saved-theme="dark"] body .breadcrumb-element p {
-  color: rgb(153, 153, 155);
+  color: var(--text-faint, rgb(153, 153, 155));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     canvas: `html[saved-theme="dark"] body .canvas-node {
@@ -2979,7 +3513,8 @@ html[saved-theme="dark"] body .canvas-node-content {
 }
 
 html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(255, 255, 255);
+  background-color: var(--background-primary-alt, rgba(0, 0, 0, 0));
+  color: var(--text-normal-editor, var(--text-normal));
 }
 
 html[saved-theme="dark"] body .canvas-node-group {
@@ -2987,27 +3522,27 @@ html[saved-theme="dark"] body .canvas-node-group {
 }
 
 html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(46, 46, 50);
+  background-color: var(--background-secondary, rgb(46, 46, 50));
   border-color: rgb(255, 255, 255);
 }`,
     bases: `html[saved-theme="dark"] body .bases-table thead th {
   border-color: rgba(0, 0, 0, 0) rgb(255, 255, 255) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
-  font-weight: 700;
+  color: var(--table-header-color, rgb(255, 255, 255));
+  font-weight: var(--table-header-weight, 700);
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: color(srgb 0.303333 0.303333 0.316667);
   border-left-color: color(srgb 0.303333 0.303333 0.316667);
   border-right-color: color(srgb 0.303333 0.303333 0.316667);
   border-top-color: color(srgb 0.303333 0.303333 0.316667);
-  color: rgb(210, 210, 210);
+  color: var(--text-muted, rgb(210, 210, 210));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-bottom: 0px;
   padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .metadata-properties {
-  background-color: rgb(46, 46, 50);
+  background-color: var(--background-primary-alt, rgb(46, 46, 50));
   border-bottom-color: rgb(210, 210, 210);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -3041,8 +3576,8 @@ html[saved-theme="dark"] body .note-properties-value {
 }
 
 html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(29, 29, 32);
-  color: rgb(255, 255, 255);
+  background-color: var(--background-secondary, rgb(29, 29, 32));
+  color: var(--text-normal, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body ol.overflow {
@@ -3052,12 +3587,12 @@ html[saved-theme="dark"] body ol.overflow {
   border-top-color: rgb(255, 255, 255);
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
 html[saved-theme="dark"] body .stacked-page.active {
@@ -3072,11 +3607,11 @@ html[saved-theme="dark"] body .stacked-page.active {
 }
 
 html[saved-theme="dark"] body .navigation-progress {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(var(--mono-rgb-100), 0.2);
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -3096,12 +3631,12 @@ html[saved-theme="dark"] body input[type=text] {
   border-left-color: rgb(210, 210, 210);
   border-right-color: rgb(210, 210, 210);
   border-top-color: rgb(210, 210, 210);
-  color: rgb(210, 210, 210);
+  color: var(--text-normal, rgb(210, 210, 210));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body kbd {
-  background-color: rgb(46, 46, 50);
+  background-color: var(--background-secondary, rgb(46, 46, 50));
   border-bottom-color: color(srgb 0.303333 0.303333 0.316667);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -3118,10 +3653,10 @@ html[saved-theme="dark"] body kbd {
   border-top-right-radius: 9px;
   border-top-style: solid;
   border-top-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(255, 255, 255, 0.04) 0px 2px 4px -2px;
-  color: rgb(210, 210, 210);
-  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-size: 12.8px;
+  box-shadow: var(--shadow-tactile, rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(255, 255, 255, 0.04) 0px 2px 4px -2px);
+  color: var(--text-muted, rgb(210, 210, 210));
+  font-family: var(--font-text, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--code-size, 12.8px);
   padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
@@ -3156,133 +3691,125 @@ html[saved-theme="dark"] body ul.tags > li {
   },
   light: {
     base: `:root:root {
-  --anim-duration-fast: 160ms;
-  --anim-duration-moderate: 320ms;
-  --anim-duration-slow: 480ms;
-  --anim-duration-superfast: 80ms;
+  --anim-duration-fast: calc(160ms*var(--anim-speed-modifier));
+  --anim-duration-moderate: calc(320ms*var(--anim-speed-modifier));
+  --anim-duration-slow: calc(480ms*var(--anim-speed-modifier));
+  --anim-duration-superfast: calc(80ms*var(--anim-speed-modifier));
   --anim-motion-baseline: cubic-bezier(0.32, 0.72, 0, 1);
   --anim-speed-modifier: 1;
-  --background-modifier-border: color-mix(in srgb, #ebebed, #333338 15%);
-  --background-modifier-border-focus: #c0bfbc;
-  --background-modifier-border-hover: #deddda;
+  --background-modifier-border: color-mix(in srgb, var(--background-secondary), var(--text-normal) 15%);
+  --background-modifier-border-focus: var(--color-base-40, #c0bfbc);
+  --background-modifier-border-hover: var(--color-base-35, #deddda);
   --background-modifier-cover: rgba(0, 0, 0, 0.35);
-  --background-modifier-error: rgb(237, 51, 59);
-  --background-modifier-error-hover: rgb(237, 51, 59);
-  --background-modifier-error-rgb: 237, 51, 59;
-  --background-modifier-form-field: color-mix(in srgb, #ebebed, #333338 10%);
-  --background-modifier-form-field-hover: color-mix(in srgb, #ebebed, #333338 10%);
-  --background-modifier-success: rgb(46, 194, 126);
-  --background-modifier-success-rgb: 46, 194, 126;
-  --background-primary: #fff;
-  --background-primary-alt: #fff;
-  --background-secondary: #ebebed;
-  --background-secondary-alt: #f3f3f5;
+  --background-modifier-error: var(--color-red, rgb(237, 51, 59));
+  --background-modifier-error-hover: var(--color-red, rgb(237, 51, 59));
+  --background-modifier-error-rgb: var(--color-red-rgb, 237, 51, 59);
+  --background-modifier-form-field: var(--interactive-normal, color-mix(in srgb, #ebebed, #333338 10%));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, color-mix(in srgb, #ebebed, #333338 10%));
+  --background-modifier-success: var(--color-green, rgb(46, 194, 126));
+  --background-modifier-success-rgb: var(--color-green-rgb, 46, 194, 126);
+  --background-primary: var(--color-base-00, #fff);
+  --background-primary-alt: var(--color-base-10, #fff);
+  --background-secondary: var(--color-base-20, #ebebed);
+  --background-secondary-alt: var(--color-base-05, #f3f3f5);
   --banner-fade-height: 80px;
   --banner-icon-size: 3rem;
   --banner-image-height: 320px;
   --banner-image-height-s: 240px;
   --banner-image-inset: 8px;
   --banner-image-object-fit: cover;
-  --banner-image-radius: 9px;
+  --banner-image-radius: var(--radius-s, 9px);
   --banner-mobile-offset: 0px;
-  --bases-cards-background: #fff;
-  --bases-cards-corner-shape: superellipse(1.1);
-  --bases-cards-cover-background: #fff;
-  --bases-cards-radius: 12px;
-  --bases-cards-shadow: 0 0 0 1px color-mix(in srgb, #ebebed, #333338 15%);
-  --bases-cards-shadow-hover: 0 0 0 1px #deddda;
-  --bases-embed-border-color: color-mix(in srgb, #ebebed, #333338 15%);
-  --bases-embed-border-radius: 9px;
-  --bases-group-heading-property-color: #5c5c60;
-  --bases-group-heading-property-size: 9.02px;
-  --bases-header-border-width: 0;
-  --bases-table-border-color: color-mix(in srgb, #ebebed, #333338 15%);
-  --bases-table-cell-background-active: #fff;
-  --bases-table-cell-background-disabled: #fff;
-  --bases-table-cell-shadow-active: 0 0 0 2px #c0bfbc;
-  --bases-table-container-border-radius: 9px;
-  --bases-table-group-background: #fff;
-  --bases-table-header-background: #fff;
-  --bases-table-header-color: #858587;
-  --bases-table-summary-background: #fff;
-  --block-width-max: calc(100cqw - 64px);
-  --block-width-offset: -32px;
-  --block-width-wide: min(100cqw, 50rem);
-  --blockquote-background-color: #f3f3f5;
-  --blockquote-border-color: #9a9996;
-  --blockquote-size: 16px;
-  --blur-background: color-mix(in srgb, #fff 65%, transparent) linear-gradient(#fff, color-mix(in srgb, #fff 65%, transparent));
-  --bodyFont: var(--font-text, "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --bases-cards-background: var(--background-primary, #fff);
+  --bases-cards-corner-shape: var(--corner-shape, superellipse(1.1));
+  --bases-cards-cover-background: var(--background-primary-alt, #fff);
+  --bases-cards-radius: var(--radius-m, 12px);
+  --bases-embed-border-color: var(--background-modifier-border, color-mix(in srgb, #ebebed, #333338 15%));
+  --bases-embed-border-radius: var(--radius-s, 9px);
+  --bases-group-heading-property-color: var(--text-muted, #5c5c60);
+  --bases-group-heading-property-size: var(--font-ui-smaller, 9.02px);
+  --bases-table-border-color: var(--table-border-color, color-mix(in srgb, #ebebed, #333338 15%));
+  --bases-table-cell-background-active: var(--background-primary, #fff);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #fff);
+  --bases-table-container-border-radius: var(--radius-s, 9px);
+  --bases-table-group-background: var(--background-primary-alt, #fff);
+  --bases-table-header-background: var(--background-primary, #fff);
+  --bases-table-header-color: var(--text-faint, #858587);
+  --bases-table-summary-background: var(--background-primary, #fff);
+  --block-width-max: calc(100cqw - var(--file-margins-x)*2);
+  --block-width-offset: calc(var(--file-margins-x)*-1);
+  --block-width-wide: min(100cqw, var(--line-width-wide));
+  --blockquote-background-color: var(--background-secondary-alt, #f3f3f5);
+  --blockquote-border-color: var(--color-base-50, #9a9996);
+  --blockquote-size: var(--font-text-size, 16px);
+  --bodyFont: var(--font-text-theme, "Adwaita Sans", "Adwaita Sans Text");
   --bold-modifier: 300;
-  --bold-weight: 700;
-  --button-corner-shape: superellipse(1.1);
-  --button-radius: 9px;
-  --callout-blend-mode: normal;
-  --callout-border-width: 1px;
-  --callout-bug: 237, 51, 59;
-  --callout-default: 98, 160, 234;
-  --callout-error: 237, 51, 59;
-  --callout-example: 192, 97, 203;
-  --callout-fail: 237, 51, 59;
-  --callout-important: 35, 164, 173;
-  --callout-info: 98, 160, 234;
-  --callout-padding: 16px;
-  --callout-question: 255, 120, 0;
-  --callout-radius: 9px;
-  --callout-size: 16px;
-  --callout-success: 46, 194, 126;
-  --callout-summary: 35, 164, 173;
-  --callout-tip: 35, 164, 173;
-  --callout-title-weight: 700;
-  --callout-todo: 98, 160, 234;
-  --callout-warning: 255, 120, 0;
-  --canvas-background: #fff;
-  --canvas-card-label-color: #858587;
-  --canvas-color-1: 237, 51, 59;
-  --canvas-color-2: 255, 120, 0;
-  --canvas-color-3: 246, 211, 45;
-  --canvas-color-4: 46, 194, 126;
-  --canvas-color-5: 35, 164, 173;
-  --canvas-color-6: 192, 97, 203;
-  --canvas-controls-icon-size: 16px;
-  --canvas-controls-icon-stroke: 2px;
-  --canvas-controls-radius: 9px;
-  --canvas-dot-pattern: #e6e5e3;
+  --button-corner-shape: var(--corner-shape, superellipse(1.1));
+  --button-radius: var(--radius-s, 9px);
+  --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
+  --callout-border-width: var(--divider-width, 1px);
+  --callout-bug: var(--color-red-rgb, 237, 51, 59);
+  --callout-default: var(--color-blue-rgb, 98, 160, 234);
+  --callout-error: var(--color-red-rgb, 237, 51, 59);
+  --callout-example: var(--color-purple-rgb, 192, 97, 203);
+  --callout-fail: var(--color-red-rgb, 237, 51, 59);
+  --callout-important: var(--color-cyan-rgb, 35, 164, 173);
+  --callout-info: var(--color-blue-rgb, 98, 160, 234);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 16px);
+  --callout-question: var(--color-orange-rgb, 255, 120, 0);
+  --callout-radius: var(--radius-s, 9px);
+  --callout-size: var(--font-text-size, 16px);
+  --callout-success: var(--color-green-rgb, 46, 194, 126);
+  --callout-summary: var(--color-cyan-rgb, 35, 164, 173);
+  --callout-tip: var(--color-cyan-rgb, 35, 164, 173);
+  --callout-todo: var(--color-blue-rgb, 98, 160, 234);
+  --callout-warning: var(--color-orange-rgb, 255, 120, 0);
+  --canvas-background: var(--background-primary, #fff);
+  --canvas-card-label-color: var(--text-faint, #858587);
+  --canvas-color-1: var(--color-red-rgb, 237, 51, 59);
+  --canvas-color-2: var(--color-orange-rgb, 255, 120, 0);
+  --canvas-color-3: var(--color-yellow-rgb, 246, 211, 45);
+  --canvas-color-4: var(--color-green-rgb, 46, 194, 126);
+  --canvas-color-5: var(--color-cyan-rgb, 35, 164, 173);
+  --canvas-color-6: var(--color-purple-rgb, 192, 97, 203);
+  --canvas-controls-icon-size: var(--icon-s, 16px);
+  --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px);
+  --canvas-controls-radius: var(--radius-s, 9px);
+  --canvas-dot-pattern: var(--color-base-30, #e6e5e3);
   --cards-aspect-ratio: auto;
   --cards-background: transparent;
   --cards-background-hover: transparent;
-  --cards-columns: repeat(auto-fit, minmax(160px, 1fr));
+  --cards-columns: repeat(auto-fit, minmax(var(--cards-min-width), var(--cards-max-width)));
   --cards-image-fit: contain;
   --cards-image-height: 400px;
   --cards-max-width: 1fr;
   --cards-min-width: 160px;
   --cards-mobile-width: 120px;
   --cards-padding: 4px;
-  --caret-color: #333338;
-  --checkbox-border-color: #858587;
-  --checkbox-border-color-hover: #5c5c60;
-  --checkbox-marker-color: #fff;
-  --checkbox-radius: 100px;
-  --checklist-done-color: #5c5c60;
-  --clickable-icon-radius: 9px;
-  --code-background: #f3f3f5;
-  --code-border-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --caret-color: var(--text-normal, #333338);
+  --checkbox-border-color: var(--text-faint, #858587);
+  --checkbox-border-color-hover: var(--text-muted, #5c5c60);
+  --checkbox-marker-color: var(--background-primary, #fff);
+  --checkbox-radius: var(--radius-s, 100px);
+  --checklist-done-color: var(--text-muted, #5c5c60);
+  --clickable-icon-radius: var(--radius-s, 9px);
+  --code-background: var(--background-secondary-alt, #f3f3f5);
+  --code-border-color: var(--background-modifier-border, color-mix(in srgb, #ebebed, #333338 15%));
   --code-border-width: 1px;
-  --code-comment: #b6b9c5;
-  --code-function: #b76b02;
-  --code-important: #b76b02;
-  --code-keyword: #e45749;
-  --code-normal: #383a42;
-  --code-operator: rgb(237, 51, 59);
-  --code-property: #62afef;
-  --code-punctuation: #383a42;
-  --code-radius: 9px;
-  --code-size: 0.8em;
-  --code-string: #0d97b3;
-  --code-tag: #e45749;
-  --code-value: #a626a4;
-  --codeFont: var(--font-text, "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --collapse-icon-color: #858587;
+  --code-comment: var(--text-faint, #b6b9c5);
+  --code-function: var(--color-yellow, #b76b02);
+  --code-important: var(--color-orange, #b76b02);
+  --code-keyword: var(--color-pink, #e45749);
+  --code-normal: var(--text-normal, #383a42);
+  --code-operator: var(--color-red, rgb(237, 51, 59));
+  --code-property: var(--color-cyan, #62afef);
+  --code-punctuation: var(--text-muted, #383a42);
+  --code-radius: var(--radius-s, 9px);
+  --code-size: var(--font-smallest, 0.8em);
+  --code-string: var(--color-green, #0d97b3);
+  --code-tag: var(--color-red, #e45749);
+  --code-value: var(--color-purple, #a626a4);
+  --collapse-icon-color: var(--text-faint, #858587);
   --color-base-05: #fdfdfc;
   --color-base-10: #fbfafa;
   --color-base-100: #000000;
@@ -3294,333 +3821,319 @@ html[saved-theme="dark"] body ul.tags > li {
   --color-base-50: #9a9996;
   --color-base-60: #77767b;
   --color-base-70: #5e5c64;
-  --color-blue: rgb(98, 160, 234);
+  --color-blue: rgb(var(--color-blue-rgb));
   --color-blue-rgb: 98, 160, 234;
-  --color-cyan: rgb(35, 164, 173);
+  --color-cyan: rgb(var(--color-cyan-rgb));
   --color-cyan-rgb: 35, 164, 173;
-  --color-green: rgb(46, 194, 126);
+  --color-green: rgb(var(--color-green-rgb));
   --color-green-rgb: 46, 194, 126;
-  --color-orange: rgb(255, 120, 0);
+  --color-orange: rgb(var(--color-orange-rgb));
   --color-orange-rgb: 255, 120, 0;
-  --color-pink: rgb(224, 97, 178);
+  --color-pink: rgb(var(--color-pink-rgb));
   --color-pink-rgb: 224, 97, 178;
-  --color-purple: rgb(192, 97, 203);
+  --color-purple: rgb(var(--color-purple-rgb));
   --color-purple-rgb: 192, 97, 203;
-  --color-red: rgb(237, 51, 59);
+  --color-red: rgb(var(--color-red-rgb));
   --color-red-rgb: 237, 51, 59;
-  --color-yellow: rgb(246, 211, 45);
+  --color-yellow: rgb(var(--color-yellow-rgb));
   --color-yellow-rgb: 246, 211, 45;
   --corner-shape: superellipse(1.1);
-  --dark: var(--text-normal, #333338);
-  --darkgray: var(--text-normal, #333338);
+  --dark: var(--text-normal, var(--color-base-100, #333338));
+  --darkgray: var(--text-normal, var(--color-base-100, #333338));
   --density-modifier: 1;
-  --divider-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --divider-color: var(--background-modifier-border, color-mix(in srgb, #ebebed, #333338 15%));
   --divider-color-alt: rgba(0, 0, 6, 0.07);
-  --divider-color-hover: #9a9996;
-  --dropdown-background: color-mix(in srgb, #ebebed, #333338 10%);
-  --dropdown-background-hover: color-mix(in srgb, #ebebed, #333338 15%);
-  --dropdown-padding: 0 2.4em 0 0.8em;
+  --divider-color-hover: var(--color-base-50, #9a9996);
+  --dropdown-background: var(--interactive-normal, color-mix(in srgb, #ebebed, #333338 10%));
+  --dropdown-background-hover: var(--interactive-hover, color-mix(in srgb, #ebebed, #333338 15%));
   --dropdown-padding-end: 2.4em;
-  --embed-background: #fff;
-  --embed-background-color: #f3f3f5;
-  --embed-block-shadow-hover: none;
-  --embed-border-start: 2px solid #9a9996;
+  --embed-background: var(--background-primary-alt, #fff);
+  --embed-background-color: var(--background-secondary-alt, #f3f3f5);
+  --embed-border-start: var(--embed-border-thickness, 2px) solid var(--embed-border-color, var(--color-base-50));
   --embed-max-height: none;
-  --embed-padding: 16px;
-  --file-header-background: #fff;
-  --file-header-background-focused: #fff;
-  --file-header-border: none;
-  --file-header-font: "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --file-header-font-size: 11px;
-  --flair-background: color-mix(in srgb, #ebebed, #333338 10%);
-  --flair-color: #333338;
-  --font-interface: "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --file-header-background: var(--background-primary, #fff);
+  --file-header-background-focused: var(--background-primary, #fff);
+  --file-header-border: var(--border-width, none) solid transparent;
+  --file-header-font: var(--font-interface, "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --file-header-font-size: var(--font-ui-small, 11px);
+  --file-line-width: var(--line-width, 700px);
+  --flair-background: var(--interactive-normal, color-mix(in srgb, #ebebed, #333338 10%));
+  --flair-color: var(--text-normal, #333338);
   --font-interface-theme: "Adwaita Sans", "Adwaita Sans Text";
-  --font-mermaid: "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-print: "Adwaita Sans", "Adwaita Sans Text", Arial';
-  --font-text: "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-mermaid: var(--font-text, "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   --font-text-theme: "Adwaita Sans", "Adwaita Sans Text";
-  --font-ui-large: 14.96px;
-  --font-ui-medium: 11px;
+  --font-ui-large: calc(var(--font-ui-medium)*1.36 + var(--font-ui-modifier));
+  --font-ui-medium: calc(11px + var(--font-ui-modifier));
   --font-ui-modifier: 0px;
-  --font-ui-small: 11px;
-  --font-ui-smaller: 9.02px;
-  --footnote-divider-color: color-mix(in srgb, #ebebed, #333338 15%);
-  --footnote-id-color: #5c5c60;
-  --footnote-id-color-no-occurrences: #858587;
-  --footnote-line-height: 1.6;
-  --footnote-radius: 9px;
+  --font-ui-small: calc(11px + var(--font-ui-modifier));
+  --font-ui-smaller: calc(var(--font-ui-medium)*0.82 + var(--font-ui-modifier));
+  --footnote-divider-color: var(--metadata-divider-color, color-mix(in srgb, #ebebed, #333338 15%));
+  --footnote-id-color: var(--text-muted, #5c5c60);
+  --footnote-id-color-no-occurrences: var(--text-faint, #858587);
+  --footnote-line-height: var(--line-height-normal, 1.6);
+  --footnote-radius: var(--radius-s, 9px);
   --frame-right-space: 124px;
-  --graph-line: #deddda;
-  --graph-node: #5c5c60;
-  --graph-node-attachment: rgb(246, 211, 45);
-  --graph-node-tag: rgb(46, 194, 126);
-  --graph-node-unresolved: #858587;
-  --graph-text: #333338;
-  --gray: var(--text-muted, #5c5c60);
+  --graph-node: var(--text-muted, #5c5c60);
+  --graph-node-attachment: var(--color-yellow, rgb(246, 211, 45));
+  --graph-node-tag: var(--color-green, rgb(46, 194, 126));
+  --graph-node-unresolved: var(--text-faint, #858587);
+  --graph-text: var(--text-normal, #333338);
+  --gray: var(--text-muted, var(--color-base-70, #5c5c60));
   --h1-size: 1.5em;
   --h2-size: 1.25em;
   --h3-size: 1.125em;
   --h4-size: 1em;
-  --h5-line-height: 1.6;
+  --h5-line-height: var(--line-height-normal, 1.6);
   --h5-size: 1em;
-  --h6-line-height: 1.6;
+  --h6-line-height: var(--line-height-normal, 1.6);
   --h6-size: 0.875em;
   --header-height: 48px;
-  --headerFont: var(--font-text, "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --heading-formatting: #858587;
-  --heading-spacing: 2em;
+  --headerFont: var(--font-text-theme, "Adwaita Sans", "Adwaita Sans Text");
+  --heading-formatting: var(--text-faint, #858587);
   --hover-sidedock-delay: 160ms;
   --hover-sidedock-trigger-area: 4px;
   --hover-sidedock-width: 320px;
-  --hr-color: color-mix(in srgb, #ebebed, #333338 15%);
-  --icon-color: #5c5c60;
-  --icon-color-focused: #333338;
-  --icon-color-hover: #5c5c60;
-  --icon-l: 18px;
-  --icon-l-stroke-width: 2px;
-  --icon-m: 18px;
-  --icon-m-stroke-width: 2px;
+  --hr-color: var(--background-modifier-border, color-mix(in srgb, #ebebed, #333338 15%));
+  --icon-color: var(--text-muted, #5c5c60);
+  --icon-color-focused: var(--text-normal, #333338);
+  --icon-color-hover: var(--text-muted, #5c5c60);
+  --icon-l: calc(18px*var(--radius-modifier));
+  --icon-l-stroke-width: calc(2px*var(--icon-stroke-modifier));
+  --icon-m: calc(18px*var(--radius-modifier));
+  --icon-m-stroke-width: calc(2px*var(--icon-stroke-modifier));
   --icon-opacity: 1;
-  --icon-s: 16px;
-  --icon-s-stroke-width: 2px;
-  --icon-size: 18px;
+  --icon-s: calc(16px + var(--icon-size-modifier));
+  --icon-s-stroke-width: calc(2px*var(--icon-stroke-modifier));
+  --icon-size: var(--icon-m, 18px);
   --icon-size-modifier: 0px;
-  --icon-stroke: 2px;
+  --icon-stroke: var(--icon-m-stroke-width, 2px);
   --icon-stroke-modifier: 1;
-  --icon-xl: 32px;
-  --icon-xl-stroke-width: 1.25px;
-  --icon-xs: 14px;
-  --icon-xs-stroke-width: 2.25px;
-  --indentation-guide-width: 0px;
-  --inline-title-margin-bottom: 0.5em;
-  --inline-title-size: 1.5em;
-  --input-border-width: 0;
-  --input-corner-shape: superellipse(1.1);
-  --input-date-separator: #858587;
-  --input-font-weight: 700;
+  --icon-xl: calc(32px + var(--icon-size-modifier));
+  --icon-xl-stroke-width: calc(1.25px*var(--icon-stroke-modifier));
+  --icon-xs: calc(14px + var(--icon-size-modifier));
+  --icon-xs-stroke-width: calc(2.25px*var(--icon-stroke-modifier));
+  --indentation-guide-width: var(--border-width, 0px);
+  --inline-title-margin-bottom: calc(0.5em*var(--readable-spacing-modifier, 1));
+  --inline-title-size: var(--h1-size, 1.5em);
+  --input-border-width: var(--border-width, 0);
+  --input-corner-shape: var(--corner-shape, superellipse(1.1));
+  --input-date-separator: var(--text-faint, #858587);
+  --input-font-weight: calc(var(--font-weight) + var(--bold-modifier));
   --input-height: 32px;
-  --input-placeholder-color: #858587;
-  --input-radius: 9px;
-  --input-shadow: none;
-  --input-shadow-hover: none;
-  --interactive-hover: color-mix(in srgb, #ebebed, #333338 15%);
-  --interactive-normal: color-mix(in srgb, #ebebed, #333338 10%);
-  --light: var(--background-primary, #fff);
-  --lightgray: var(--background-secondary, #ebebed);
+  --input-placeholder-color: var(--text-faint, #858587);
+  --input-radius: var(--radius-s, 9px);
+  --input-shadow: inset 0 0 0 var(--input-border-width) var(--background-modifier-border);
+  --input-shadow-hover: inset 0 0 0 var(--input-border-width) var(--background-modifier-border-hover);
+  --interactive-hover: color-mix(in srgb, var(--background-secondary), var(--text-normal) 15%);
+  --interactive-normal: color-mix(in srgb, var(--background-secondary), var(--text-normal) 10%);
+  --light: var(--background-primary, var(--color-base-00, #fff));
+  --lightgray: var(--background-secondary, var(--color-base-20, #ebebed));
   --line-height-normal: 1.6;
   --line-width: 700px;
   --line-width-wide: 50rem;
   --link-decoration: none;
   --link-external-decoration: none;
-  --list-marker-color: #858587;
-  --list-marker-color-hover: #5c5c60;
+  --list-marker-color: var(--text-faint, #858587);
+  --list-marker-color-hover: var(--text-muted, #5c5c60);
   --list-spacing: 0.175em;
-  --media-radius: 9px;
-  --menu-background: #fff;
-  --menu-border-color: color-mix(in srgb, #ebebed, #333338 10%);
-  --menu-corner-shape: superellipse(1.1);
-  --menu-radius: 12px;
-  --menu-shadow: 0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07), 0 2px 6px 2px rgba(0, 0, 6, 0.03);
-  --metadata-border-color: color-mix(in srgb, #ebebed, #333338 15%);
-  --metadata-divider-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --media-radius: var(--radius-s, 9px);
+  --menu-background: var(--background-secondary, #fff);
+  --menu-border-color: color-mix(in srgb, var(--background-secondary), var(--text-normal) 10%);
+  --menu-corner-shape: var(--corner-shape, superellipse(1.1));
+  --menu-radius: var(--radius-m, 12px);
+  --menu-shadow: var(--shadow-s, 0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07), 0 2px 6px 2px rgba(0, 0, 6, 0.03));
+  --metadata-border-color: var(--background-modifier-border, color-mix(in srgb, #ebebed, #333338 15%));
+  --metadata-divider-color: var(--background-modifier-border, color-mix(in srgb, #ebebed, #333338 15%));
   --metadata-gap: 8px;
-  --metadata-input-font: "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-input-text-color: #333338;
-  --metadata-label-font: "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-label-text-color: #5c5c60;
-  --metadata-label-text-color-hover: #5c5c60;
-  --metadata-label-width: 9em;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #c0bfbc;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #deddda;
-  --metadata-property-corner-shape: superellipse(1.1);
-  --metadata-property-corner-shape-focus: superellipse(1.1);
-  --metadata-property-corner-shape-hover: superellipse(1.1);
-  --metadata-sidebar-input-font-size: 11px;
-  --metadata-sidebar-label-font-size: 11px;
-  --modal-background: #fafafb;
-  --modal-border-color: color-mix(in srgb, #ebebed, #333338 15%);
-  --modal-radius: 15px;
+  --metadata-input-font: var(--font-interface, "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-input-text-color: var(--text-normal, #333338);
+  --metadata-label-font: var(--font-interface, "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-label-text-color: var(--text-muted, #5c5c60);
+  --metadata-label-text-color-hover: var(--text-muted, #5c5c60);
+  --metadata-label-width: calc(9em*var(--metadata-label-width-modifier, 1));
+  --metadata-property-corner-shape: var(--corner-shape, superellipse(1.1));
+  --metadata-property-corner-shape-focus: var(--corner-shape, superellipse(1.1));
+  --metadata-property-corner-shape-hover: var(--corner-shape, superellipse(1.1));
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 11px);
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 11px);
+  --modal-background: var(--background-primary, #fafafb);
+  --modal-border-color: var(--background-modifier-border, color-mix(in srgb, #ebebed, #333338 15%));
+  --modal-radius: var(--radius-l, 15px);
   --mono-rgb-adwaita: 0, 0, 6;
-  --nav-collapse-icon-color: #858587;
-  --nav-collapse-icon-color-collapsed: #858587;
-  --nav-heading-color: #333338;
-  --nav-heading-color-collapsed: #858587;
-  --nav-heading-color-collapsed-hover: #5c5c60;
-  --nav-heading-color-hover: #333338;
-  --nav-indentation-guide-width: 0px;
-  --nav-item-children-margin-start: 20px;
-  --nav-item-color: #5c5c60;
-  --nav-item-color-active: #333338;
-  --nav-item-color-hover: #333338;
-  --nav-item-color-selected: #333338;
-  --nav-item-padding: 8px 16px 8px 32px;
-  --nav-item-parent-padding: 8px 16px 8px 32px;
-  --nav-item-radius: 9px;
-  --nav-item-size: 11px;
-  --nav-tag-color: #858587;
-  --nav-tag-color-active: #5c5c60;
-  --nav-tag-color-hover: #5c5c60;
-  --nav-tag-radius: 9px;
-  --nn-theme-file-border-radius: 12px;
-  --nn-theme-file-tag-bg: hsla(258, 88%, 66%, 0.1);
-  --nn-theme-file-tag-color: hsl(258, 88%, 66%);
+  --nav-collapse-icon-color: var(--collapse-icon-color, #858587);
+  --nav-collapse-icon-color-collapsed: var(--text-faint, #858587);
+  --nav-heading-color: var(--text-normal, #333338);
+  --nav-heading-color-collapsed: var(--text-faint, #858587);
+  --nav-heading-color-collapsed-hover: var(--text-muted, #5c5c60);
+  --nav-heading-color-hover: var(--text-normal, #333338);
+  --nav-indentation-guide-width: var(--indentation-guide-width, 0px);
+  --nav-item-children-margin-start: calc(20px - var(--nav-indentation-guide-width)/2);
+  --nav-item-color: var(--text-muted, #5c5c60);
+  --nav-item-color-active: var(--text-normal, #333338);
+  --nav-item-color-hover: var(--text-normal, #333338);
+  --nav-item-color-selected: var(--text-normal, #333338);
+  --nav-item-padding: calc(8px*var(--density-modifier)) 16px calc(8px*var(--density-modifier)) 32px;
+  --nav-item-parent-padding: var(--nav-item-padding, 8px 16px 8px 32px);
+  --nav-item-radius: var(--radius-s, 9px);
+  --nav-item-size: var(--font-ui-small, 11px);
+  --nav-tag-color: var(--text-faint, #858587);
+  --nav-tag-color-active: var(--text-muted, #5c5c60);
+  --nav-tag-color-hover: var(--text-muted, #5c5c60);
+  --nav-tag-radius: var(--radius-s, 9px);
+  --nn-theme-file-border-radius: var(--radius-m, 12px);
+  --nn-theme-file-tag-bg: var(--tag-background, hsla(258, 88%, 66%, 0.1));
+  --nn-theme-file-tag-color: var(--tag-color, hsl(258, 88%, 66%));
   --nn-theme-list-bg: transparent;
   --nn-theme-list-header-bg: transparent;
-  --nn-theme-mobile-list-header-link-color: #333338;
+  --nn-theme-mobile-list-header-link-color: var(--text-normal, #333338);
   --nn-theme-mobile-nav-bg: transparent;
-  --nn-theme-mobile-toolbar-button-active-bg: hsl(257, 88.88%, 70.95%);
-  --nn-theme-mobile-toolbar-button-active-icon-color: white;
-  --nn-theme-mobile-toolbar-button-icon-color: #333338;
+  --nn-theme-mobile-toolbar-button-active-bg: var(--interactive-accent, hsl(257, 88.88%, 70.95%));
+  --nn-theme-mobile-toolbar-button-active-icon-color: var(--text-on-accent, white);
+  --nn-theme-mobile-toolbar-button-icon-color: var(--text-normal, #333338);
   --nn-theme-nav-bg: transparent;
   --nn-theme-nav-header-bg: transparent;
-  --nn-theme-navitem-border-radius: 12px;
-  --nn-theme-navitem-selected-bg: rgba(0, 0, 0, 0.067);
-  --nn-theme-navitem-selected-inactive-bg: rgba(0, 0, 0, 0.067);
+  --nn-theme-navitem-border-radius: var(--radius-m, 12px);
+  --nn-theme-navitem-selected-bg: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+  --nn-theme-navitem-selected-inactive-bg: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
   --p-spacing: 1.75rem;
-  --pdf-background: #fff;
-  --pdf-page-background: #fff;
-  --pdf-sidebar-background: #fff;
-  --pill-border-color: color-mix(in srgb, #ebebed, #333338 15%);
-  --pill-border-color-hover: #deddda;
-  --pill-color: #5c5c60;
-  --pill-color-hover: #333338;
-  --pill-color-remove: #858587;
-  --prompt-background: #fff;
-  --prompt-border-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --pdf-background: var(--background-primary, #fff);
+  --pdf-page-background: var(--background-primary, #fff);
+  --pdf-sidebar-background: var(--background-primary, #fff);
+  --pill-border-color: var(--background-modifier-border, color-mix(in srgb, #ebebed, #333338 15%));
+  --pill-border-color-hover: var(--background-modifier-border-hover, #deddda);
+  --pill-color: var(--text-muted, #5c5c60);
+  --pill-color-hover: var(--text-normal, #333338);
+  --pill-color-remove: var(--text-faint, #858587);
+  --prompt-background: var(--background-primary, #fff);
+  --prompt-border-color: var(--background-modifier-border, color-mix(in srgb, #ebebed, #333338 15%));
   --prompt-input-height: 64px;
-  --radius-l: 15px;
-  --radius-m: 12px;
+  --radius-l: calc(15px*var(--radius-modifier));
+  --radius-m: calc(12px*var(--radius-modifier));
   --radius-modifier: 1;
-  --radius-s: 9px;
-  --radius-xl: 18px;
-  --raised-background: color-mix(in srgb, #fff 65%, transparent) linear-gradient(#fff, color-mix(in srgb, #fff 65%, transparent));
-  --ribbon-background: transparent;
-  --ribbon-background-collapsed: transparent;
-  --scrollbar-radius: 15px;
-  --search-clear-button-color: #5c5c60;
-  --search-icon-color: #5c5c60;
-  --search-result-background: #fff;
-  --setting-group-heading-color: #333338;
-  --setting-group-heading-size: 11px;
-  --setting-group-heading-weight: 700;
-  --setting-items-background: #fff;
-  --setting-items-border-color: color-mix(in srgb, #ebebed, #333338 15%);
-  --setting-items-padding: 0px;
-  --setting-items-radius: 12px;
+  --radius-s: calc(9px*var(--radius-modifier));
+  --radius-xl: calc(18px*var(--radius-modifier));
+  --raised-background: var(--blur-background, color-mix(in srgb, #fff 65%, transparent) linear-gradient(#fff, color-mix(in srgb, #fff 65%, transparent)));
+  --ribbon-background: var(--background-secondary, transparent);
+  --ribbon-background-collapsed: var(--ribbon-background, transparent);
+  --scrollbar-radius: var(--radius-l, 15px);
+  --search-clear-button-color: var(--text-muted, #5c5c60);
+  --search-icon-color: var(--text-muted, #5c5c60);
+  --search-result-background: var(--background-primary, #fff);
+  --setting-group-heading-color: var(--text-normal, #333338);
+  --setting-group-heading-size: var(--font-ui-medium, 11px);
+  --setting-group-heading-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --setting-items-background: var(--background-primary-alt, #fff);
+  --setting-items-border-color: var(--background-modifier-border, color-mix(in srgb, #ebebed, #333338 15%));
+  --setting-items-padding: calc(16px*var(--density-modifier)) 16px;
+  --setting-items-radius: var(--radius-m, 12px);
   --setting-items-shadow: 0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07), 0 2px 6px 2px rgba(0, 0, 6, 0.03);
   --shadow-l: 0 0 14px 5px rgba(0, 0, 0, 0.15), 0 0 5px 2px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
   --shadow-s: 0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07), 0 2px 6px 2px rgba(0, 0, 6, 0.03);
-  --shadow-tactile: rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(0, 0, 0, 0.04) 0px 2px 4px -2px;
-  --shiki-active-tab-border-color: #5c5c60;
-  --shiki-code-background: #f3f3f5;
-  --shiki-code-block-border-radius: 9px;
-  --shiki-code-block-spacing: 1.75rem;
-  --shiki-code-comment: #858587;
-  --shiki-code-function: rgb(46, 194, 126);
-  --shiki-code-important: rgb(255, 120, 0);
-  --shiki-code-keyword: rgb(224, 97, 178);
-  --shiki-code-normal: #5c5c60;
-  --shiki-code-property: rgb(35, 164, 173);
-  --shiki-code-punctuation: #5c5c60;
-  --shiki-code-string: rgb(246, 211, 45);
-  --shiki-code-value: rgb(192, 97, 203);
-  --shiki-gutter-border-color: color-mix(in srgb, #ebebed, #333338 15%);
-  --shiki-gutter-text-color: #858587;
-  --shiki-gutter-text-color-highlight: #5c5c60;
-  --shiki-highlight-green: rgba(46, 194, 126, 0.5);
-  --shiki-highlight-green-background: rgba(46, 194, 126, 0.1);
-  --shiki-highlight-neutral: #5c5c60;
-  --shiki-highlight-red: rgba(237, 51, 59, 0.5);
-  --shiki-highlight-red-background: rgba(237, 51, 59, 0.1);
-  --shiki-terminal-dots-color: #858587;
-  --slider-thumb-border-color: #deddda;
-  --slider-thumb-border-width: 0;
-  --slider-thumb-height: 20px;
-  --slider-thumb-width: 20px;
+  --shadow-tactile: rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(var(--mono-rgb-100), 0.04) 0px 2px 4px -2px;
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, #5c5c60);
+  --shiki-code-background: var(--code-background, #f3f3f5);
+  --shiki-code-block-border-radius: var(--code-radius, 9px);
+  --shiki-code-block-spacing: var(--p-spacing, 1.75rem);
+  --shiki-code-comment: var(--text-faint, #858587);
+  --shiki-code-function: var(--color-green, rgb(46, 194, 126));
+  --shiki-code-important: var(--color-orange, rgb(255, 120, 0));
+  --shiki-code-keyword: var(--color-pink, rgb(224, 97, 178));
+  --shiki-code-normal: var(--text-muted, #5c5c60);
+  --shiki-code-property: var(--color-cyan, rgb(35, 164, 173));
+  --shiki-code-punctuation: var(--text-muted, #5c5c60);
+  --shiki-code-string: var(--color-yellow, rgb(246, 211, 45));
+  --shiki-code-value: var(--color-purple, rgb(192, 97, 203));
+  --shiki-gutter-border-color: var(--background-modifier-border, color-mix(in srgb, #ebebed, #333338 15%));
+  --shiki-gutter-text-color: var(--text-faint, #858587);
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, #5c5c60);
+  --shiki-highlight-neutral: var(--shiki-code-normal, #5c5c60);
+  --shiki-terminal-dots-color: var(--text-faint, #858587);
+  --slider-thumb-border-color: var(--background-modifier-border-hover, #deddda);
+  --slider-thumb-border-width: var(--border-width, 0);
+  --slider-thumb-height: var(--toggle-thumb-height, 20px);
+  --slider-thumb-radius: var(--toggle-thumb-radius, 18px);
+  --slider-thumb-width: var(--toggle-thumb-width, 20px);
   --slider-thumb-y: -8px;
-  --slider-track-background: rgb(from #333338 r g b / 15%);
-  --slider-track-background-active: rgb(from #333338 r g b / 25%);
-  --slider-track-background-hover: rgb(from #333338 r g b / 20%);
+  --slider-track-background: rgb(from var(--text-normal) r g b / 15%);
+  --slider-track-background-active: rgb(from var(--text-normal) r g b / 25%);
+  --slider-track-background-hover: rgb(from var(--text-normal) r g b / 20%);
   --slider-track-height: 4px;
-  --status-bar-background: #ebebed;
-  --status-bar-border-color: color-mix(in srgb, #ebebed, #333338 15%);
-  --status-bar-font-size: 9.02px;
-  --status-bar-radius: 12px 0 0 0;
-  --status-bar-text-color: #5c5c60;
-  --suggestion-background: #fff;
-  --sync-avatar-color-1: rgb(237, 51, 59);
-  --sync-avatar-color-2: rgb(255, 120, 0);
-  --sync-avatar-color-3: rgb(246, 211, 45);
-  --sync-avatar-color-4: rgb(46, 194, 126);
-  --sync-avatar-color-5: rgb(35, 164, 173);
-  --sync-avatar-color-6: rgb(98, 160, 234);
-  --sync-avatar-color-7: rgb(192, 97, 203);
-  --sync-avatar-color-8: rgb(224, 97, 178);
+  --status-bar-background: var(--background-secondary, #ebebed);
+  --status-bar-border-color: var(--divider-color, color-mix(in srgb, #ebebed, #333338 15%));
+  --status-bar-font-size: var(--font-ui-smaller, 9.02px);
+  --status-bar-radius: var(--radius-m, 12px 0 0 0) 0 0 0;
+  --status-bar-text-color: var(--text-muted, #5c5c60);
+  --suggestion-background: var(--background-primary, #fff);
+  --sync-avatar-color-1: var(--color-red, rgb(237, 51, 59));
+  --sync-avatar-color-2: var(--color-orange, rgb(255, 120, 0));
+  --sync-avatar-color-3: var(--color-yellow, rgb(246, 211, 45));
+  --sync-avatar-color-4: var(--color-green, rgb(46, 194, 126));
+  --sync-avatar-color-5: var(--color-cyan, rgb(35, 164, 173));
+  --sync-avatar-color-6: var(--color-blue, rgb(98, 160, 234));
+  --sync-avatar-color-7: var(--color-purple, rgb(192, 97, 203));
+  --sync-avatar-color-8: var(--color-pink, rgb(224, 97, 178));
   --tab-action-width: 32px;
-  --tab-background-active: #fff;
-  --tab-container-background: #ebebed;
-  --tab-curve: 13px;
-  --tab-divider-color: color-mix(in srgb, #ebebed, #333338 15%);
-  --tab-font-size: 11px;
-  --tab-max-width: 200px;
-  --tab-outline-color: color-mix(in srgb, #ebebed, #333338 15%);
-  --tab-radius: 9px;
-  --tab-radius-active: 9px 9px 0 0;
-  --tab-stacked-font-size: 11px;
-  --tab-stacked-header-width: 48px;
-  --tab-switcher-background: #ebebed;
-  --tab-switcher-menubar-background: linear-gradient(to top, #ebebed, transparent);
-  --tab-switcher-preview-radius: 18px;
+  --tab-background-active: var(--background-primary, #fff);
+  --tab-container-background: var(--background-secondary, #ebebed);
+  --tab-curve: calc(var(--tab-radius) + 4px);
+  --tab-divider-color: var(--background-modifier-border, color-mix(in srgb, #ebebed, #333338 15%));
+  --tab-font-size: var(--font-ui-small, 11px);
+  --tab-max-width: var(--tab-width, 200px);
+  --tab-outline-color: var(--divider-color, color-mix(in srgb, #ebebed, #333338 15%));
+  --tab-radius: var(--radius-s, 9px);
+  --tab-radius-active: var(--tab-radius) var(--tab-radius, 9px 9px 0 0) 0 0;
+  --tab-stacked-font-size: var(--font-ui-small, 11px);
+  --tab-stacked-header-width: var(--header-height, 48px);
+  --tab-switcher-background: var(--background-secondary, #ebebed);
+  --tab-switcher-preview-radius: var(--radius-xl, 18px);
   --tab-text-align: left;
-  --tab-text-color: #858587;
-  --tab-text-color-active: #5c5c60;
-  --tab-text-color-focused: #5c5c60;
-  --tab-text-color-focused-active: #333338;
-  --table-add-button-border-color: color-mix(in srgb, #ebebed, #333338 15%);
-  --table-add-button-border-width: 0;
-  --table-border-color: color-mix(in srgb, #ebebed, #333338 15%);
-  --table-drag-handle-color: #858587;
-  --table-header-border-color: transparent;
-  --table-header-color: #333338;
-  --table-header-size: 0.933em;
-  --table-header-weight: 700;
-  --table-text-size: 0.933em;
+  --tab-text-color: var(--text-faint, #858587);
+  --tab-text-color-active: var(--text-muted, #5c5c60);
+  --tab-text-color-focused: var(--text-muted, #5c5c60);
+  --tab-text-color-focused-active: var(--text-normal, #333338);
+  --table-add-button-border-color: var(--background-modifier-border, color-mix(in srgb, #ebebed, #333338 15%));
+  --table-add-button-border-width: var(--table-border-width, 0);
+  --table-border-color: var(--background-modifier-border, color-mix(in srgb, #ebebed, #333338 15%));
+  --table-drag-handle-color: var(--text-faint, #858587);
+  --table-header-border-color: var(--table-border-color, transparent);
+  --table-header-color: var(--text-normal, #333338);
+  --table-header-size: var(--table-text-size, 0.933em);
+  --table-text-size: var(--font-small, 0.933em);
   --tag-padding-x: 8px;
   --tag-padding-y: 4px;
   --tag-radius: 8px;
-  --tag-weight: 500;
-  --text-error: rgb(237, 51, 59);
-  --text-faint: #858587;
-  --text-muted: #5c5c60;
-  --text-normal: #333338;
-  --text-success: rgb(46, 194, 126);
-  --text-warning: rgb(255, 120, 0);
-  --titleFont: var(--font-text, "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --titlebar-background: transparent;
-  --titlebar-background-focused: transparent;
-  --titlebar-border-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --tag-weight: var(--font-medium, 500);
+  --text-error: var(--color-red, rgb(237, 51, 59));
+  --text-faint: var(--color-base-50, #858587);
+  --text-muted: var(--color-base-70, #5c5c60);
+  --text-normal: var(--color-base-100, #333338);
+  --text-success: var(--color-green, rgb(46, 194, 126));
+  --text-warning: var(--color-orange, rgb(255, 120, 0));
+  --titleFont: var(--font-text-theme, "Adwaita Sans", "Adwaita Sans Text");
+  --titlebar-background: var(--background-secondary, transparent);
+  --titlebar-background-focused: var(--background-secondary-alt, transparent);
+  --titlebar-border-color: var(--background-modifier-border, color-mix(in srgb, #ebebed, #333338 15%));
   --titlebar-border-width: 1px;
-  --titlebar-text-color: #5c5c60;
-  --titlebar-text-color-focused: #333338;
+  --titlebar-text-color: var(--text-muted, #5c5c60);
+  --titlebar-text-color-focused: var(--text-normal, #333338);
   --toggle-border-width: 3px;
-  --toggle-s-border-width: 3px;
-  --toggle-s-thumb-height: 20px;
-  --toggle-s-thumb-width: 20px;
-  --toggle-s-width: 46px;
-  --toggle-thumb-color: color-mix(in srgb, white 80%, #fff);
+  --toggle-s-border-width: var(--toggle-border-width, 3px);
+  --toggle-s-thumb-height: var(--toggle-thumb-height, 20px);
+  --toggle-s-thumb-width: var(--toggle-thumb-width, 20px);
+  --toggle-s-width: var(--toggle-width, 46px);
+  --toggle-thumb-color: color-mix(in srgb, white 80%, var(--background-primary));
   --toggle-thumb-height: 20px;
   --toggle-thumb-width: 20px;
   --toggle-width: 46px;
-  --traffic-lights-offset-x: 48px;
-  --traffic-lights-offset-y: 48px;
+  --traffic-lights-offset-x: var(--header-height, 48px);
+  --traffic-lights-offset-y: var(--header-height, 48px);
   --translucent-dark-opacity: 0%;
   --translucent-light-opacity: 0%;
-  --vault-profile-color: #333338;
-  --vault-profile-color-hover: #333338;
-  --vault-profile-font-size: 11px;
+  --vault-profile-color: var(--text-normal, #333338);
+  --vault-profile-color-hover: var(--vault-profile-color, #333338);
+  --vault-profile-font-size: var(--font-ui-small, 11px);
   --view-top-spacing-markdown: 0px;
-  --workspace-background-translucent: #ebebed;
+  --workspace-background-translucent: var(--background-secondary, #ebebed);
   --quartz-icon-color: currentColor;
 }
 
@@ -3630,7 +4143,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(235, 235, 237);
+  background-color: var(--background-secondary, rgb(235, 235, 237));
   color: rgb(51, 51, 56);
 }
 
@@ -3639,7 +4152,7 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   color: rgb(51, 51, 56);
 }
 
@@ -3648,44 +4161,42 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgba(0, 0, 6, 0.07);
   color: rgb(51, 51, 56);
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
-  color: rgb(51, 51, 56);
+  color: var(--bold-color, rgb(51, 51, 56));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 700;
   outline: rgb(51, 51, 56) none 0px;
   text-decoration-color: rgb(51, 51, 56);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
-  color: rgb(51, 51, 56);
+  color: var(--italic-color, rgb(51, 51, 56));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(51, 51, 56) none 0px;
   text-decoration-color: rgb(51, 51, 56);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
-  color: rgb(51, 51, 56);
+  color: var(--italic-color, rgb(51, 51, 56));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(51, 51, 56) none 0px;
   text-decoration-color: rgb(51, 51, 56);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
-  color: rgb(51, 51, 56);
+  color: var(--bold-color, rgb(51, 51, 56));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 700;
   outline: rgb(51, 51, 56) none 0px;
   text-decoration-color: rgb(51, 51, 56);
 }
 
 html[saved-theme="light"] body .text-highlight {
-  color: rgb(51, 51, 56);
+  color: var(--text-highlight, var(--text-normal));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 500;
+  font-weight: var(--font-medium, 500);
   outline: rgb(51, 51, 56) none 0px;
   text-decoration-color: rgb(51, 51, 56);
 }
@@ -3698,9 +4209,9 @@ html[saved-theme="light"] body del {
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(51, 51, 56);
+  color: var(--text-normal, rgb(51, 51, 56));
   font-size: 11px;
-  font-weight: 500;
+  font-weight: max(var(--file-header-font-weight),var(--font-medium));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
@@ -3713,7 +4224,7 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked 
 }
 
 html[saved-theme="light"] body p {
-  color: rgb(92, 92, 96);
+  color: var(--text-muted, rgb(92, 92, 96));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(92, 92, 96) none 0px;
   text-decoration-color: rgb(92, 92, 96);
@@ -3756,11 +4267,11 @@ html[saved-theme="light"] body ul.overflow {
   border-top-color: rgb(51, 51, 56);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
-  color: rgb(133, 133, 135);
+  color: var(--text-faint, rgb(133, 133, 135));
 }
 
 html[saved-theme="light"] body blockquote {
-  background-color: rgb(243, 243, 245);
+  background-color: var(--blockquote-background-color, rgb(243, 243, 245));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-bottom: 16px;
   padding-top: 16px;
@@ -3775,7 +4286,7 @@ html[saved-theme="light"] body blockquote {
 html[saved-theme="light"] body table {
   color: rgb(51, 51, 56);
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  margin-top: 28px;
+  margin-top: var(--heading-spacing, 28px);
   width: 654px;
 }
 
@@ -3791,9 +4302,10 @@ html[saved-theme="light"] body td {
   border-right-width: 0px;
   border-top-color: color(srgb 0.813333 0.813333 0.822941);
   border-top-left-radius: 9px;
-  color: rgb(51, 51, 56);
+  color: var(--table-text-color, rgb(51, 51, 56));
   padding-bottom: 8px;
   padding-top: 8px;
+  text-align: var(--table-text-align-body, start);
 }
 
 html[saved-theme="light"] body th {
@@ -3806,13 +4318,14 @@ html[saved-theme="light"] body th {
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-  color: rgb(51, 51, 56);
-  font-weight: 700;
+  color: var(--table-header-color, rgb(51, 51, 56));
+  font-weight: var(--table-header-weight, 700);
   padding-bottom: 8px;
   padding-top: 8px;
+  text-align: var(--table-text-align-header, start);
 }`,
     code: `html[saved-theme="light"] body code {
-  background-color: rgb(243, 243, 245);
+  background-color: var(--code-background, rgb(243, 243, 245));
   border-bottom-color: color(srgb 0.813333 0.813333 0.822941);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -3825,7 +4338,7 @@ html[saved-theme="light"] body th {
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   border-top-width: 1px;
-  color: rgb(56, 58, 66);
+  color: var(--code-normal, rgb(56, 58, 66));
   padding-bottom: 2px;
   padding-left: 4px;
   padding-right: 4px;
@@ -3833,7 +4346,7 @@ html[saved-theme="light"] body th {
 }
 
 html[saved-theme="light"] body pre:has(> code) {
-  background-color: rgb(243, 243, 245);
+  background-color: var(--code-background, rgb(243, 243, 245));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -3894,7 +4407,7 @@ html[saved-theme="light"] body video {
   border-top-right-radius: 9px;
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background-primary-alt, rgb(255, 255, 255));
   border-bottom-color: rgb(92, 92, 96);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -3911,7 +4424,7 @@ html[saved-theme="light"] body .footnotes {
 }
 
 html[saved-theme="light"] body .transclude {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--embed-background, rgb(255, 255, 255));
   border-bottom-color: rgb(51, 51, 56);
   border-bottom-right-radius: 9px;
   border-left-color: rgb(154, 153, 150);
@@ -3921,7 +4434,7 @@ html[saved-theme="light"] body .transclude {
 }
 
 html[saved-theme="light"] body .transclude-inner {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--embed-background, rgb(255, 255, 255));
   border-bottom-color: rgb(51, 51, 56);
   border-left-color: rgb(51, 51, 56);
   border-right-color: rgb(51, 51, 56);
@@ -5108,13 +5621,12 @@ html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="chec
   border-left-color: rgb(98, 160, 234);
   border-right-color: rgb(98, 160, 234);
   border-top-color: rgb(98, 160, 234);
-  color: rgb(98, 160, 234);
   gap: 8px;
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.356667 0.563333 0.812941);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout > .callout-content {
@@ -5122,9 +5634,8 @@ html[saved-theme="light"] body .callout > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
-  --callout-color: 35, 164, 173;
+  --callout-color: var(--callout-summary, 35, 164, 173);
   background: rgba(35, 164, 173, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(35, 164, 173, 0.1);
   border-bottom-color: rgba(35, 164, 173, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -5146,13 +5657,12 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
   border-left-color: rgb(98, 160, 234);
   border-right-color: rgb(98, 160, 234);
   border-top-color: rgb(98, 160, 234);
-  color: rgb(98, 160, 234);
   gap: 8px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.356667 0.563333 0.812941);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-content {
@@ -5160,14 +5670,303 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="banner-icon"] {
+  --anim-duration-fast: 160ms;
+  --anim-duration-moderate: 320ms;
+  --anim-duration-slow: 480ms;
+  --anim-duration-superfast: 80ms;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+  --background-modifier-border: color-mix(in srgb, #ebebed, #333338 15%);
+  --background-modifier-border-focus: #c0bfbc;
+  --background-modifier-border-hover: #deddda;
+  --background-modifier-error: rgb(237, 51, 59);
+  --background-modifier-error-hover: rgb(237, 51, 59);
+  --background-modifier-error-rgb: 237, 51, 59;
+  --background-modifier-form-field: color-mix(in srgb, #ebebed, #333338 10%);
+  --background-modifier-form-field-hover: color-mix(in srgb, #ebebed, #333338 10%);
+  --background-modifier-hover: rgba(0, 0, 0, 0.067);
+  --background-modifier-success: rgb(46, 194, 126);
+  --background-modifier-success-rgb: 46, 194, 126;
+  --background-primary: #fff;
+  --background-primary-alt: #fff;
+  --background-secondary: #ebebed;
+  --background-secondary-alt: #f3f3f5;
   --banner-fade-height: 0px;
   --banner-icon-size: 0px;
   --banner-image-height: 0px;
-  --callout-color: 98, 160, 234;
+  --banner-image-radius: 9px;
+  --block-width-max: calc(100cqw - 64px);
+  --block-width-offset: -32px;
+  --block-width-wide: min(100cqw, 50rem);
+  --blockquote-background-color: #f3f3f5;
+  --blockquote-border-color: #9a9996;
+  --blockquote-size: 16px;
+  --blur-background: color-mix(in srgb, #fff 65%, transparent) linear-gradient(#fff, color-mix(in srgb, #fff 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 700;
+  --button-corner-shape: superellipse(1.1);
+  --button-radius: 9px;
+  --callout-blend-mode: normal;
+  --callout-border-width: 1px;
+  --callout-bug: 237, 51, 59;
+  --callout-color: var(--callout-default, 98, 160, 234);
+  --callout-default: 98, 160, 234;
+  --callout-error: 237, 51, 59;
+  --callout-example: 192, 97, 203;
+  --callout-fail: 237, 51, 59;
+  --callout-important: 35, 164, 173;
+  --callout-info: 98, 160, 234;
+  --callout-padding: 16px;
+  --callout-question: 255, 120, 0;
+  --callout-radius: 9px;
+  --callout-size: 16px;
+  --callout-success: 46, 194, 126;
+  --callout-summary: 35, 164, 173;
+  --callout-tip: 35, 164, 173;
+  --callout-title-weight: 700;
+  --callout-todo: 98, 160, 234;
+  --callout-warning: 255, 120, 0;
+  --canvas-background: #fff;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 9px;
+  --canvas-dot-pattern: #e6e5e3;
+  --cards-columns: repeat(auto-fit, minmax(160px, 1fr));
+  --caret-color: #333338;
+  --checkbox-border-color: #858587;
+  --checkbox-border-color-hover: #5c5c60;
+  --checkbox-color: hsl(257, 88.88%, 70.95%);
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+  --checkbox-marker-color: #fff;
+  --checkbox-radius: 100px;
+  --checkbox-size: 16px;
+  --checklist-done-color: #5c5c60;
+  --clickable-icon-radius: 9px;
+  --code-background: #f3f3f5;
+  --code-border-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --code-bracket-background: rgba(0, 0, 0, 0.067);
+  --code-comment: #b6b9c5;
+  --code-function: #b76b02;
+  --code-important: #b76b02;
+  --code-keyword: #e45749;
+  --code-normal: #383a42;
+  --code-operator: rgb(237, 51, 59);
+  --code-property: #62afef;
+  --code-punctuation: #383a42;
+  --code-radius: 9px;
+  --code-size: 0.8em;
+  --code-string: #0d97b3;
+  --code-tag: #e45749;
+  --code-value: #a626a4;
+  --collapse-icon-color: #858587;
+  --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
+  --color-accent: hsl(258, 88%, 66%);
+  --color-accent-1: hsl(257, 88.88%, 70.95%);
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
+  --color-accent-hsl: 258, 88%, 66%;
+  --color-blue: rgb(98, 160, 234);
+  --color-cyan: rgb(35, 164, 173);
+  --color-green: rgb(46, 194, 126);
+  --color-orange: rgb(255, 120, 0);
+  --color-pink: rgb(224, 97, 178);
+  --color-purple: rgb(192, 97, 203);
+  --color-red: rgb(237, 51, 59);
+  --color-yellow: rgb(246, 211, 45);
+  --divider-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --divider-color-hover: #9a9996;
+  --divider-vertical-height: 100%;
+  --dropdown-background: color-mix(in srgb, #ebebed, #333338 10%);
+  --dropdown-background-hover: color-mix(in srgb, #ebebed, #333338 15%);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 2.4em 0 0.8em;
+  --flair-background: color-mix(in srgb, #ebebed, #333338 10%);
+  --flair-color: #333338;
+  --font-interface: '??', "Adwaita Sans", "Adwaita Sans Text", '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-mermaid: '??', "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-print: '??', '??', "Adwaita Sans", "Adwaita Sans Text", 'Arial';
+  --font-text: '??', "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-ui-large: 14.96px;
+  --font-ui-medium: 11px;
+  --font-ui-small: 11px;
+  --font-ui-smaller: 9.02px;
+  --font-weight: 400;
+  --graph-line: #deddda;
+  --graph-node: #5c5c60;
+  --graph-node-attachment: rgb(246, 211, 45);
+  --graph-node-focused: hsl(258, 88%, 66%);
+  --graph-node-tag: rgb(46, 194, 126);
+  --graph-node-unresolved: #858587;
+  --graph-text: #333338;
+  --h5-line-height: 1.6;
+  --h6-line-height: 1.6;
+  --heading-formatting: #858587;
+  --heading-spacing: 2em;
+  --hr-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --interactive-accent: hsl(257, 88.88%, 70.95%);
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
+  --interactive-accent-hsl: 258, 88%, 66%;
+  --interactive-hover: color-mix(in srgb, #ebebed, #333338 15%);
+  --interactive-normal: color-mix(in srgb, #ebebed, #333338 10%);
+  --link-color: hsl(258, 88%, 66%);
+  --link-color-hover: hsl(255, 89.76%, 75.9%);
+  --link-external-color: hsl(258, 88%, 66%);
+  --link-external-color-hover: hsl(255, 89.76%, 75.9%);
+  --link-unresolved-color: hsl(258, 88%, 66%);
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --media-radius: 9px;
+  --menu-background: #fff;
+  --menu-border-color: color-mix(in srgb, #ebebed, #333338 10%);
+  --menu-border-width: 1px;
+  --menu-corner-shape: superellipse(1.1);
+  --menu-padding: 6px;
+  --menu-radius: 12px;
+  --menu-shadow: 0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07), 0 2px 6px 2px rgba(0, 0, 6, 0.03);
+  --nn-theme-file-border-radius: 12px;
+  --nn-theme-file-tag-bg: hsla(258, 88%, 66%, 0.1);
+  --nn-theme-file-tag-color: hsl(258, 88%, 66%);
+  --nn-theme-mobile-list-header-link-color: #333338;
+  --nn-theme-mobile-toolbar-button-active-bg: hsl(257, 88.88%, 70.95%);
+  --nn-theme-mobile-toolbar-button-active-icon-color: white;
+  --nn-theme-mobile-toolbar-button-icon-color: #333338;
+  --nn-theme-navitem-border-radius: 12px;
+  --nn-theme-navitem-selected-bg: rgba(0, 0, 0, 0.067);
+  --nn-theme-navitem-selected-inactive-bg: rgba(0, 0, 0, 0.067);
+  --pdf-background: #fff;
+  --pdf-page-background: #fff;
+  --pdf-sidebar-background: #fff;
+  --popover-font-size: 16px;
+  --radius-l: 15px;
+  --radius-m: 12px;
+  --radius-s: 9px;
+  --radius-xl: 18px;
+  --raised-background: color-mix(in srgb, #fff 65%, transparent) linear-gradient(#fff, color-mix(in srgb, #fff 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-radius: 15px;
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --search-clear-button-color: #5c5c60;
+  --search-icon-color: #5c5c60;
+  --search-result-background: #fff;
+  --setting-group-heading-color: #333338;
+  --setting-group-heading-size: 11px;
+  --setting-group-heading-weight: 700;
+  --setting-items-background: #fff;
+  --setting-items-border-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --setting-items-padding: 0px;
+  --setting-items-radius: 12px;
+  --shadow-tactile: rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(0, 0, 0, 0.04) 0px 2px 4px -2px;
+  --shiki-active-tab-border-color: #5c5c60;
+  --shiki-code-background: #f3f3f5;
+  --shiki-code-block-border-radius: 9px;
+  --shiki-code-block-spacing: 1.75rem;
+  --shiki-code-comment: #858587;
+  --shiki-code-function: rgb(46, 194, 126);
+  --shiki-code-important: rgb(255, 120, 0);
+  --shiki-code-keyword: rgb(224, 97, 178);
+  --shiki-code-normal: #5c5c60;
+  --shiki-code-property: rgb(35, 164, 173);
+  --shiki-code-punctuation: #5c5c60;
+  --shiki-code-string: rgb(246, 211, 45);
+  --shiki-code-value: rgb(192, 97, 203);
+  --shiki-gutter-border-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #858587;
+  --shiki-gutter-text-color-highlight: #5c5c60;
+  --shiki-highlight-green: rgba(46, 194, 126, 0.5);
+  --shiki-highlight-green-background: rgba(46, 194, 126, 0.1);
+  --shiki-highlight-neutral: #5c5c60;
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
+  --shiki-highlight-red: rgba(237, 51, 59, 0.5);
+  --shiki-highlight-red-background: rgba(237, 51, 59, 0.1);
+  --shiki-terminal-dots-color: #858587;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #fff;
+  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  --sync-avatar-color-1: rgb(237, 51, 59);
+  --sync-avatar-color-2: rgb(255, 120, 0);
+  --sync-avatar-color-3: rgb(246, 211, 45);
+  --sync-avatar-color-4: rgb(46, 194, 126);
+  --sync-avatar-color-5: rgb(35, 164, 173);
+  --sync-avatar-color-6: rgb(98, 160, 234);
+  --sync-avatar-color-7: rgb(192, 97, 203);
+  --sync-avatar-color-8: rgb(224, 97, 178);
+  --tab-background-active: #fff;
   --tab-curve: 0;
+  --tab-divider-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --tab-font-size: 11px;
+  --tab-max-width: 200px;
+  --tab-outline-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --tab-radius: 9px;
   --tab-radius-active: 9px;
-  --table-border-color: color-mix(in srgb, rgb(98, 160, 234) 25%, #fff 50%);
-  background-color: rgba(98, 160, 234, 0.1);
+  --tab-stacked-font-size: 11px;
+  --tab-stacked-header-width: 48px;
+  --tab-switcher-background: #ebebed;
+  --tab-switcher-menubar-background: linear-gradient(to top, #ebebed, transparent);
+  --tab-switcher-preview-radius: 18px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
+  --tab-text-color: #858587;
+  --tab-text-color-active: #5c5c60;
+  --tab-text-color-focused: #5c5c60;
+  --tab-text-color-focused-active: #333338;
+  --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+  --table-add-button-border-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --table-add-button-border-width: 0;
+  --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
+  --table-drag-handle-color: #858587;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: transparent;
+  --table-header-border-width: 1px;
+  --table-header-color: #333338;
+  --table-header-size: 0.933em;
+  --table-header-weight: 700;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(258, 88%, 66%, 0.1);
+  --table-selection-blend-mode: darken;
+  --table-selection-border-color: hsl(257, 88.88%, 70.95%);
+  --table-text-size: 0.933em;
+  --tag-background: hsla(258, 88%, 66%, 0.1);
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2);
+  --tag-border-color: hsla(258, 88%, 66%, 0.15);
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
+  --tag-color: hsl(258, 88%, 66%);
+  --tag-color-hover: hsl(258, 88%, 66%);
+  --tag-size: 0.875em;
+  --tag-weight: 500;
+  --text-accent: hsl(258, 88%, 66%);
+  --text-accent-hover: hsl(255, 89.76%, 75.9%);
+  --text-error: rgb(237, 51, 59);
+  --text-faint: #858587;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #5c5c60;
+  --text-normal: #333338;
+  --text-selection: hsla(258, 88%, 66%, 0.2);
+  --text-success: rgb(46, 194, 126);
+  --text-warning: rgb(255, 120, 0);
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 48px;
+  --traffic-lights-offset-y: 48px;
+  background-color: rgba(var(--callout-color), 0.1);
   border-bottom-color: rgba(98, 160, 234, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -5186,6 +5985,7 @@ html[saved-theme="light"] body .callout[data-callout="banner-icon"] {
   border-top-width: 1px;
   color: rgb(51, 51, 56);
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: var(--callout-size, 16px);
   line-height: 25.6px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -5198,9 +5998,8 @@ html[saved-theme="light"] body .callout[data-callout="banner-icon"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
-  --callout-color: 237, 51, 59;
+  --callout-color: var(--callout-bug, 237, 51, 59);
   background: rgba(237, 51, 59, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(237, 51, 59, 0.1);
   border-bottom-color: rgba(237, 51, 59, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -5222,13 +6021,12 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   border-left-color: rgb(98, 160, 234);
   border-right-color: rgb(98, 160, 234);
   border-top-color: rgb(98, 160, 234);
-  color: rgb(98, 160, 234);
   gap: 8px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.356667 0.563333 0.812941);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
@@ -5236,9 +6034,8 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
-  --callout-color: 237, 51, 59;
+  --callout-color: var(--callout-error, 237, 51, 59);
   background: rgba(237, 51, 59, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(237, 51, 59, 0.1);
   border-bottom-color: rgba(237, 51, 59, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -5260,13 +6057,12 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   border-left-color: rgb(98, 160, 234);
   border-right-color: rgb(98, 160, 234);
   border-top-color: rgb(98, 160, 234);
-  color: rgb(98, 160, 234);
   gap: 8px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.356667 0.563333 0.812941);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-content {
@@ -5274,9 +6070,8 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
-  --callout-color: 192, 97, 203;
+  --callout-color: var(--callout-example, 192, 97, 203);
   background: rgba(192, 97, 203, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(192, 97, 203, 0.1);
   border-bottom-color: rgba(192, 97, 203, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -5298,13 +6093,12 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   border-left-color: rgb(98, 160, 234);
   border-right-color: rgb(98, 160, 234);
   border-top-color: rgb(98, 160, 234);
-  color: rgb(98, 160, 234);
   gap: 8px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.356667 0.563333 0.812941);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] > .callout-content {
@@ -5312,9 +6106,8 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
-  --callout-color: 237, 51, 59;
+  --callout-color: var(--callout-fail, 237, 51, 59);
   background: rgba(237, 51, 59, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(237, 51, 59, 0.1);
   border-bottom-color: rgba(237, 51, 59, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -5336,13 +6129,12 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   border-left-color: rgb(98, 160, 234);
   border-right-color: rgb(98, 160, 234);
   border-top-color: rgb(98, 160, 234);
-  color: rgb(98, 160, 234);
   gap: 8px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.356667 0.563333 0.812941);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-content {
@@ -5350,9 +6142,8 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
-  --callout-color: 98, 160, 234;
+  --callout-color: var(--callout-info, 98, 160, 234);
   background: rgba(98, 160, 234, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(98, 160, 234, 0.1);
   border-bottom-color: rgba(98, 160, 234, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -5374,13 +6165,12 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   border-left-color: rgb(98, 160, 234);
   border-right-color: rgb(98, 160, 234);
   border-top-color: rgb(98, 160, 234);
-  color: rgb(98, 160, 234);
   gap: 8px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.356667 0.563333 0.812941);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content {
@@ -5388,9 +6178,8 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
-  --callout-color: 98, 160, 234;
+  --callout-color: var(--callout-default, 98, 160, 234);
   background: rgba(98, 160, 234, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(98, 160, 234, 0.1);
   border-bottom-color: rgba(98, 160, 234, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -5412,13 +6201,12 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   border-left-color: rgb(98, 160, 234);
   border-right-color: rgb(98, 160, 234);
   border-top-color: rgb(98, 160, 234);
-  color: rgb(98, 160, 234);
   gap: 8px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.356667 0.563333 0.812941);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content {
@@ -5426,14 +6214,303 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
+  --anim-duration-fast: 160ms;
+  --anim-duration-moderate: 320ms;
+  --anim-duration-slow: 480ms;
+  --anim-duration-superfast: 80ms;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+  --background-modifier-border: color-mix(in srgb, #ebebed, #333338 15%);
+  --background-modifier-border-focus: #c0bfbc;
+  --background-modifier-border-hover: #deddda;
+  --background-modifier-error: rgb(237, 51, 59);
+  --background-modifier-error-hover: rgb(237, 51, 59);
+  --background-modifier-error-rgb: 237, 51, 59;
+  --background-modifier-form-field: color-mix(in srgb, #ebebed, #333338 10%);
+  --background-modifier-form-field-hover: color-mix(in srgb, #ebebed, #333338 10%);
+  --background-modifier-hover: rgba(0, 0, 0, 0.067);
+  --background-modifier-success: rgb(46, 194, 126);
+  --background-modifier-success-rgb: 46, 194, 126;
+  --background-primary: #fff;
+  --background-primary-alt: #fff;
+  --background-secondary: #ebebed;
+  --background-secondary-alt: #f3f3f5;
   --banner-fade-height: 0px;
   --banner-icon-size: 0px;
   --banner-image-height: 0px;
-  --callout-color: 98, 160, 234;
+  --banner-image-radius: 9px;
+  --block-width-max: calc(100cqw - 64px);
+  --block-width-offset: -32px;
+  --block-width-wide: min(100cqw, 50rem);
+  --blockquote-background-color: #f3f3f5;
+  --blockquote-border-color: #9a9996;
+  --blockquote-size: 16px;
+  --blur-background: color-mix(in srgb, #fff 65%, transparent) linear-gradient(#fff, color-mix(in srgb, #fff 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 700;
+  --button-corner-shape: superellipse(1.1);
+  --button-radius: 9px;
+  --callout-blend-mode: normal;
+  --callout-border-width: 1px;
+  --callout-bug: 237, 51, 59;
+  --callout-color: var(--callout-default, 98, 160, 234);
+  --callout-default: 98, 160, 234;
+  --callout-error: 237, 51, 59;
+  --callout-example: 192, 97, 203;
+  --callout-fail: 237, 51, 59;
+  --callout-important: 35, 164, 173;
+  --callout-info: 98, 160, 234;
+  --callout-padding: 16px;
+  --callout-question: 255, 120, 0;
+  --callout-radius: 9px;
+  --callout-size: 16px;
+  --callout-success: 46, 194, 126;
+  --callout-summary: 35, 164, 173;
+  --callout-tip: 35, 164, 173;
+  --callout-title-weight: 700;
+  --callout-todo: 98, 160, 234;
+  --callout-warning: 255, 120, 0;
+  --canvas-background: #fff;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 9px;
+  --canvas-dot-pattern: #e6e5e3;
+  --cards-columns: repeat(auto-fit, minmax(160px, 1fr));
+  --caret-color: #333338;
+  --checkbox-border-color: #858587;
+  --checkbox-border-color-hover: #5c5c60;
+  --checkbox-color: hsl(257, 88.88%, 70.95%);
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+  --checkbox-marker-color: #fff;
+  --checkbox-radius: 100px;
+  --checkbox-size: 16px;
+  --checklist-done-color: #5c5c60;
+  --clickable-icon-radius: 9px;
+  --code-background: #f3f3f5;
+  --code-border-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --code-bracket-background: rgba(0, 0, 0, 0.067);
+  --code-comment: #b6b9c5;
+  --code-function: #b76b02;
+  --code-important: #b76b02;
+  --code-keyword: #e45749;
+  --code-normal: #383a42;
+  --code-operator: rgb(237, 51, 59);
+  --code-property: #62afef;
+  --code-punctuation: #383a42;
+  --code-radius: 9px;
+  --code-size: 0.8em;
+  --code-string: #0d97b3;
+  --code-tag: #e45749;
+  --code-value: #a626a4;
+  --collapse-icon-color: #858587;
+  --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
+  --color-accent: hsl(258, 88%, 66%);
+  --color-accent-1: hsl(257, 88.88%, 70.95%);
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
+  --color-accent-hsl: 258, 88%, 66%;
+  --color-blue: rgb(98, 160, 234);
+  --color-cyan: rgb(35, 164, 173);
+  --color-green: rgb(46, 194, 126);
+  --color-orange: rgb(255, 120, 0);
+  --color-pink: rgb(224, 97, 178);
+  --color-purple: rgb(192, 97, 203);
+  --color-red: rgb(237, 51, 59);
+  --color-yellow: rgb(246, 211, 45);
+  --divider-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --divider-color-hover: #9a9996;
+  --divider-vertical-height: 100%;
+  --dropdown-background: color-mix(in srgb, #ebebed, #333338 10%);
+  --dropdown-background-hover: color-mix(in srgb, #ebebed, #333338 15%);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 2.4em 0 0.8em;
+  --flair-background: color-mix(in srgb, #ebebed, #333338 10%);
+  --flair-color: #333338;
+  --font-interface: '??', "Adwaita Sans", "Adwaita Sans Text", '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-mermaid: '??', "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-print: '??', '??', "Adwaita Sans", "Adwaita Sans Text", 'Arial';
+  --font-text: '??', "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-ui-large: 14.96px;
+  --font-ui-medium: 11px;
+  --font-ui-small: 11px;
+  --font-ui-smaller: 9.02px;
+  --font-weight: 400;
+  --graph-line: #deddda;
+  --graph-node: #5c5c60;
+  --graph-node-attachment: rgb(246, 211, 45);
+  --graph-node-focused: hsl(258, 88%, 66%);
+  --graph-node-tag: rgb(46, 194, 126);
+  --graph-node-unresolved: #858587;
+  --graph-text: #333338;
+  --h5-line-height: 1.6;
+  --h6-line-height: 1.6;
+  --heading-formatting: #858587;
+  --heading-spacing: 2em;
+  --hr-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --interactive-accent: hsl(257, 88.88%, 70.95%);
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
+  --interactive-accent-hsl: 258, 88%, 66%;
+  --interactive-hover: color-mix(in srgb, #ebebed, #333338 15%);
+  --interactive-normal: color-mix(in srgb, #ebebed, #333338 10%);
+  --link-color: hsl(258, 88%, 66%);
+  --link-color-hover: hsl(255, 89.76%, 75.9%);
+  --link-external-color: hsl(258, 88%, 66%);
+  --link-external-color-hover: hsl(255, 89.76%, 75.9%);
+  --link-unresolved-color: hsl(258, 88%, 66%);
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --media-radius: 9px;
+  --menu-background: #fff;
+  --menu-border-color: color-mix(in srgb, #ebebed, #333338 10%);
+  --menu-border-width: 1px;
+  --menu-corner-shape: superellipse(1.1);
+  --menu-padding: 6px;
+  --menu-radius: 12px;
+  --menu-shadow: 0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07), 0 2px 6px 2px rgba(0, 0, 6, 0.03);
+  --nn-theme-file-border-radius: 12px;
+  --nn-theme-file-tag-bg: hsla(258, 88%, 66%, 0.1);
+  --nn-theme-file-tag-color: hsl(258, 88%, 66%);
+  --nn-theme-mobile-list-header-link-color: #333338;
+  --nn-theme-mobile-toolbar-button-active-bg: hsl(257, 88.88%, 70.95%);
+  --nn-theme-mobile-toolbar-button-active-icon-color: white;
+  --nn-theme-mobile-toolbar-button-icon-color: #333338;
+  --nn-theme-navitem-border-radius: 12px;
+  --nn-theme-navitem-selected-bg: rgba(0, 0, 0, 0.067);
+  --nn-theme-navitem-selected-inactive-bg: rgba(0, 0, 0, 0.067);
+  --pdf-background: #fff;
+  --pdf-page-background: #fff;
+  --pdf-sidebar-background: #fff;
+  --popover-font-size: 16px;
+  --radius-l: 15px;
+  --radius-m: 12px;
+  --radius-s: 9px;
+  --radius-xl: 18px;
+  --raised-background: color-mix(in srgb, #fff 65%, transparent) linear-gradient(#fff, color-mix(in srgb, #fff 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-radius: 15px;
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --search-clear-button-color: #5c5c60;
+  --search-icon-color: #5c5c60;
+  --search-result-background: #fff;
+  --setting-group-heading-color: #333338;
+  --setting-group-heading-size: 11px;
+  --setting-group-heading-weight: 700;
+  --setting-items-background: #fff;
+  --setting-items-border-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --setting-items-padding: 0px;
+  --setting-items-radius: 12px;
+  --shadow-tactile: rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(0, 0, 0, 0.04) 0px 2px 4px -2px;
+  --shiki-active-tab-border-color: #5c5c60;
+  --shiki-code-background: #f3f3f5;
+  --shiki-code-block-border-radius: 9px;
+  --shiki-code-block-spacing: 1.75rem;
+  --shiki-code-comment: #858587;
+  --shiki-code-function: rgb(46, 194, 126);
+  --shiki-code-important: rgb(255, 120, 0);
+  --shiki-code-keyword: rgb(224, 97, 178);
+  --shiki-code-normal: #5c5c60;
+  --shiki-code-property: rgb(35, 164, 173);
+  --shiki-code-punctuation: #5c5c60;
+  --shiki-code-string: rgb(246, 211, 45);
+  --shiki-code-value: rgb(192, 97, 203);
+  --shiki-gutter-border-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #858587;
+  --shiki-gutter-text-color-highlight: #5c5c60;
+  --shiki-highlight-green: rgba(46, 194, 126, 0.5);
+  --shiki-highlight-green-background: rgba(46, 194, 126, 0.1);
+  --shiki-highlight-neutral: #5c5c60;
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
+  --shiki-highlight-red: rgba(237, 51, 59, 0.5);
+  --shiki-highlight-red-background: rgba(237, 51, 59, 0.1);
+  --shiki-terminal-dots-color: #858587;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #fff;
+  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  --sync-avatar-color-1: rgb(237, 51, 59);
+  --sync-avatar-color-2: rgb(255, 120, 0);
+  --sync-avatar-color-3: rgb(246, 211, 45);
+  --sync-avatar-color-4: rgb(46, 194, 126);
+  --sync-avatar-color-5: rgb(35, 164, 173);
+  --sync-avatar-color-6: rgb(98, 160, 234);
+  --sync-avatar-color-7: rgb(192, 97, 203);
+  --sync-avatar-color-8: rgb(224, 97, 178);
+  --tab-background-active: #fff;
   --tab-curve: 0;
+  --tab-divider-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --tab-font-size: 11px;
+  --tab-max-width: 200px;
+  --tab-outline-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --tab-radius: 9px;
   --tab-radius-active: 9px;
-  --table-border-color: color-mix(in srgb, rgb(98, 160, 234) 25%, #fff 50%);
-  background-color: rgba(98, 160, 234, 0.1);
+  --tab-stacked-font-size: 11px;
+  --tab-stacked-header-width: 48px;
+  --tab-switcher-background: #ebebed;
+  --tab-switcher-menubar-background: linear-gradient(to top, #ebebed, transparent);
+  --tab-switcher-preview-radius: 18px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
+  --tab-text-color: #858587;
+  --tab-text-color-active: #5c5c60;
+  --tab-text-color-focused: #5c5c60;
+  --tab-text-color-focused-active: #333338;
+  --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+  --table-add-button-border-color: color-mix(in srgb, #ebebed, #333338 15%);
+  --table-add-button-border-width: 0;
+  --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
+  --table-drag-handle-color: #858587;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: transparent;
+  --table-header-border-width: 1px;
+  --table-header-color: #333338;
+  --table-header-size: 0.933em;
+  --table-header-weight: 700;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(258, 88%, 66%, 0.1);
+  --table-selection-blend-mode: darken;
+  --table-selection-border-color: hsl(257, 88.88%, 70.95%);
+  --table-text-size: 0.933em;
+  --tag-background: hsla(258, 88%, 66%, 0.1);
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2);
+  --tag-border-color: hsla(258, 88%, 66%, 0.15);
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
+  --tag-color: hsl(258, 88%, 66%);
+  --tag-color-hover: hsl(258, 88%, 66%);
+  --tag-size: 0.875em;
+  --tag-weight: 500;
+  --text-accent: hsl(258, 88%, 66%);
+  --text-accent-hover: hsl(255, 89.76%, 75.9%);
+  --text-error: rgb(237, 51, 59);
+  --text-faint: #858587;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #5c5c60;
+  --text-normal: #333338;
+  --text-selection: hsla(258, 88%, 66%, 0.2);
+  --text-success: rgb(46, 194, 126);
+  --text-warning: rgb(255, 120, 0);
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 48px;
+  --traffic-lights-offset-y: 48px;
+  background-color: rgba(var(--callout-color), 0.1);
   border-bottom-color: rgba(98, 160, 234, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -5452,6 +6529,7 @@ html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
   border-top-width: 1px;
   color: rgb(51, 51, 56);
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 16px;
   line-height: 25.6px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -5464,9 +6542,8 @@ html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
-  --callout-color: 255, 120, 0;
+  --callout-color: var(--callout-question, 255, 120, 0);
   background: rgba(255, 120, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(255, 120, 0, 0.1);
   border-bottom-color: rgba(255, 120, 0, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -5488,13 +6565,12 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
   border-left-color: rgb(98, 160, 234);
   border-right-color: rgb(98, 160, 234);
   border-top-color: rgb(98, 160, 234);
-  color: rgb(98, 160, 234);
   gap: 8px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.356667 0.563333 0.812941);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] > .callout-content {
@@ -5502,7 +6578,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
   border-bottom-width: 1px;
@@ -5520,13 +6596,12 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   border-left-color: rgb(98, 160, 234);
   border-right-color: rgb(98, 160, 234);
   border-top-color: rgb(98, 160, 234);
-  color: rgb(98, 160, 234);
   gap: 8px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.356667 0.563333 0.812941);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content {
@@ -5534,9 +6609,8 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
-  --callout-color: 46, 194, 126;
+  --callout-color: var(--callout-success, 46, 194, 126);
   background: rgba(46, 194, 126, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(46, 194, 126, 0.1);
   border-bottom-color: rgba(46, 194, 126, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -5558,13 +6632,12 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   border-left-color: rgb(98, 160, 234);
   border-right-color: rgb(98, 160, 234);
   border-top-color: rgb(98, 160, 234);
-  color: rgb(98, 160, 234);
   gap: 8px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.356667 0.563333 0.812941);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] > .callout-content {
@@ -5572,9 +6645,8 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
-  --callout-color: 35, 164, 173;
+  --callout-color: var(--callout-tip, 35, 164, 173);
   background: rgba(35, 164, 173, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(35, 164, 173, 0.1);
   border-bottom-color: rgba(35, 164, 173, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -5596,13 +6668,12 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   border-left-color: rgb(98, 160, 234);
   border-right-color: rgb(98, 160, 234);
   border-top-color: rgb(98, 160, 234);
-  color: rgb(98, 160, 234);
   gap: 8px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.356667 0.563333 0.812941);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
@@ -5610,9 +6681,8 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
-  --callout-color: 98, 160, 234;
+  --callout-color: var(--callout-todo, 98, 160, 234);
   background: rgba(98, 160, 234, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(98, 160, 234, 0.1);
   border-bottom-color: rgba(98, 160, 234, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -5634,13 +6704,12 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   border-left-color: rgb(98, 160, 234);
   border-right-color: rgb(98, 160, 234);
   border-top-color: rgb(98, 160, 234);
-  color: rgb(98, 160, 234);
   gap: 8px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.356667 0.563333 0.812941);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content {
@@ -5648,9 +6717,8 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
-  --callout-color: 255, 120, 0;
+  --callout-color: var(--callout-warning, 255, 120, 0);
   background: rgba(255, 120, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(255, 120, 0, 0.1);
   border-bottom-color: rgba(255, 120, 0, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -5672,13 +6740,12 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   border-left-color: rgb(98, 160, 234);
   border-right-color: rgb(98, 160, 234);
   border-top-color: rgb(98, 160, 234);
-  color: rgb(98, 160, 234);
   gap: 8px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: color(srgb 0.356667 0.563333 0.812941);
-  font-weight: 700;
+  color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] > .callout-content {
@@ -5762,12 +6829,12 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   border-top-width: 0px;
-  color: rgb(51, 51, 56);
+  color: var(--text-normal, rgb(51, 51, 56));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
-  background-color: rgb(235, 235, 237);
+  background-color: var(--background-secondary, rgb(235, 235, 237));
   border-bottom-color: rgb(51, 51, 56);
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
@@ -5780,7 +6847,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space {
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
   border-top-width: 0px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 14px 5px, rgba(0, 0, 0, 0.1) 0px 0px 5px 2px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.15) 0px 0px 14px 5px, rgba(0, 0, 0, 0.1) 0px 0px 5px 2px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px);
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > * {
@@ -5830,7 +6897,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
-  border-bottom-color: rgb(51, 51, 56);
+  border-bottom-color: var(--divider-color, rgb(51, 51, 56));
   border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 56);
   border-right-color: rgb(51, 51, 56);
@@ -5863,47 +6930,47 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 500;
+  font-weight: var(--pill-weight, 500);
 }
 
 html[saved-theme="light"] body h1 {
-  color: rgb(51, 51, 56);
-  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h1-color, rgb(51, 51, 56));
+  font-family: var(--h1-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(51, 51, 56);
-  font-size: 24px;
+  color: var(--inline-title-color, rgb(51, 51, 56));
+  font-size: var(--inline-title-size, 24px);
 }
 
 html[saved-theme="light"] body h2 {
-  color: rgb(51, 51, 56);
-  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h2-color, rgb(51, 51, 56));
+  font-family: var(--h2-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  color: rgb(51, 51, 56);
-  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--inline-title-color, rgb(51, 51, 56));
+  font-family: var(--inline-title-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h3 {
-  color: rgb(51, 51, 56);
-  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h3-color, rgb(51, 51, 56));
+  font-family: var(--h3-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
-  color: rgb(51, 51, 56);
-  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h4-color, rgb(51, 51, 56));
+  font-family: var(--h4-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
-  color: rgb(51, 51, 56);
-  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h5-color, rgb(51, 51, 56));
+  font-family: var(--h5-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
-  color: rgb(51, 51, 56);
-  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h6-color, rgb(51, 51, 56));
+  font-family: var(--h6-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body hr {
@@ -5913,7 +6980,7 @@ html[saved-theme="light"] body hr {
   border-top-color: rgba(0, 0, 6, 0.07);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
-  --callout-color: 98, 160, 234;
+  --callout-color: var(--callout-default, 98, 160, 234);
   border-bottom-color: rgba(98, 160, 234, 0.25);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -5936,12 +7003,12 @@ html[saved-theme="light"] body hr {
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(92, 92, 96);
+  color: var(--nav-item-color, rgb(92, 92, 96));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(92, 92, 96);
+  color: var(--nav-item-color, rgb(92, 92, 96));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
@@ -5956,10 +7023,10 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-color: rgb(92, 92, 96);
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-  color: rgb(92, 92, 96);
+  color: var(--icon-color, rgb(92, 92, 96));
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(var(--mono-rgb-100), 0.2);
   border-bottom-color: rgb(92, 92, 96);
   border-bottom-left-radius: 1380px;
   border-bottom-right-radius: 1380px;
@@ -5970,7 +7037,7 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-left-radius: 1380px;
   border-top-right-radius: 1380px;
   border-top-width: 0px;
-  color: rgb(92, 92, 96);
+  color: var(--status-bar-text-color, rgb(92, 92, 96));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -5991,7 +7058,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(92, 92, 96);
+  color: var(--nav-item-color, rgb(92, 92, 96));
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -6011,7 +7078,7 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(92, 92, 96);
+  color: var(--nav-item-color, rgb(92, 92, 96));
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -6029,7 +7096,7 @@ html[saved-theme="light"] body ul.section-ul {
   border-top-color: rgb(92, 92, 96);
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-  color: rgb(92, 92, 96);
+  color: var(--icon-color, rgb(92, 92, 96));
 }
 
 html[saved-theme="light"] body .darkmode svg {
@@ -6049,7 +7116,7 @@ html[saved-theme="light"] body .darkmode svg {
 }
 
 html[saved-theme="light"] body .breadcrumb-element p {
-  color: rgb(133, 133, 135);
+  color: var(--text-faint, rgb(133, 133, 135));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     canvas: `html[saved-theme="light"] body .canvas-node {
@@ -6061,7 +7128,8 @@ html[saved-theme="light"] body .canvas-node-content {
 }
 
 html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(51, 51, 56);
+  background-color: var(--background-primary-alt, rgba(0, 0, 0, 0));
+  color: var(--text-normal-editor, var(--text-normal));
 }
 
 html[saved-theme="light"] body .canvas-node-group {
@@ -6073,22 +7141,22 @@ html[saved-theme="light"] body .canvas-sidebar {
 }`,
     bases: `html[saved-theme="light"] body .bases-table thead th {
   border-color: rgba(0, 0, 0, 0) rgb(51, 51, 56) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
-  color: rgb(51, 51, 56);
-  font-weight: 700;
+  color: var(--table-header-color, rgb(51, 51, 56));
+  font-weight: var(--table-header-weight, 700);
 }`,
     properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: color(srgb 0.813333 0.813333 0.822941);
   border-left-color: color(srgb 0.813333 0.813333 0.822941);
   border-right-color: color(srgb 0.813333 0.813333 0.822941);
   border-top-color: color(srgb 0.813333 0.813333 0.822941);
-  color: rgb(92, 92, 96);
+  color: var(--text-muted, rgb(92, 92, 96));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-bottom: 0px;
   padding-top: 0px;
 }
 
 html[saved-theme="light"] body .metadata-properties {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background-primary-alt, rgb(255, 255, 255));
   border-bottom-color: rgb(92, 92, 96);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -6122,7 +7190,8 @@ html[saved-theme="light"] body .note-properties-value {
 }
 
 html[saved-theme="light"] body div#quartz-root {
-  color: rgb(51, 51, 56);
+  background-color: var(--background-secondary, rgb(255, 255, 255));
+  color: var(--text-normal, rgb(51, 51, 56));
 }
 
 html[saved-theme="light"] body ol.overflow {
@@ -6132,12 +7201,12 @@ html[saved-theme="light"] body ol.overflow {
   border-top-color: rgb(51, 51, 56);
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(51, 51, 56);
 }
 
 html[saved-theme="light"] body .stacked-page-header {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
 html[saved-theme="light"] body .stacked-page.active {
@@ -6152,11 +7221,11 @@ html[saved-theme="light"] body .stacked-page.active {
 }
 
 html[saved-theme="light"] body .navigation-progress {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(var(--mono-rgb-100), 0.2);
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
-  color: rgb(51, 51, 56);
+  color: var(--text-normal, rgb(51, 51, 56));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -6176,12 +7245,12 @@ html[saved-theme="light"] body input[type=text] {
   border-left-color: rgb(92, 92, 96);
   border-right-color: rgb(92, 92, 96);
   border-top-color: rgb(92, 92, 96);
-  color: rgb(92, 92, 96);
+  color: var(--text-normal, rgb(92, 92, 96));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body kbd {
-  background-color: rgb(235, 235, 237);
+  background-color: var(--background-secondary, rgb(235, 235, 237));
   border-bottom-color: color(srgb 0.813333 0.813333 0.822941);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -6198,10 +7267,10 @@ html[saved-theme="light"] body kbd {
   border-top-right-radius: 9px;
   border-top-style: solid;
   border-top-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(0, 0, 0, 0.04) 0px 2px 4px -2px;
-  color: rgb(92, 92, 96);
-  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-size: 12.8px;
+  box-shadow: var(--shadow-tactile, rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(0, 0, 0, 0.04) 0px 2px 4px -2px);
+  color: var(--text-muted, rgb(92, 92, 96));
+  font-family: var(--font-text, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--code-size, 12.8px);
   padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;

@@ -9,530 +9,515 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-h: 160;
-  --accent-l: 56%;
-  --accent-s: 36%;
-  --background-modifier-active-hover: hsla(160, 36%, 56%, 0.1);
+  --accent-h: var(--grotto-accent-h, 160);
+  --accent-l: var(--grotto-accent-l, 56%);
+  --accent-s: var(--grotto-accent-s, 36%);
   --background-modifier-box-shadow: none;
   --background-modifier-cover: hsla(0, 0%, 0%, 0.5);
-  --background-modifier-error: hsl(0, 50%, 50%);
-  --background-modifier-error-hover: hsl(0, 50%, 50%);
-  --background-modifier-success: hsl(100, 50%, 50%);
-  --background-primary: hsl(40, 6%, 16%);
-  --background-primary-alt: hsl(40, 6%, 16%);
-  --background-secondary: hsl(40, 6%, 12%);
-  --background-secondary-alt: hsl(40, 6%, 12%);
-  --bases-cards-background: hsl(40, 6%, 16%);
-  --bases-cards-cover-background: hsl(40, 6%, 16%);
-  --bases-cards-radius: 0px;
-  --bases-embed-border-radius: 0px;
-  --bases-group-heading-property-color: hsl(70, 30%, 80%);
-  --bases-table-border-color: hsl(70, 30%, 92%);
-  --bases-table-cell-background-active: hsl(40, 6%, 16%);
-  --bases-table-cell-background-disabled: hsl(40, 6%, 16%);
-  --bases-table-cell-background-selected: hsla(160, 36%, 56%, 0.1);
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(160, 36%, 56%);
-  --bases-table-container-border-radius: 0px;
-  --bases-table-group-background: hsl(40, 6%, 16%);
-  --bases-table-header-background: hsl(40, 6%, 16%);
-  --bases-table-header-color: hsl(70, 30%, 80%);
-  --bases-table-summary-background: hsl(40, 6%, 16%);
-  --blockquote-border-color: hsl(160, 36%, 56%);
-  --blur-background: none;
-  --bodyFont: var(--font-text, 'Quicksand');
-  --callout-default: hsl(70, 30%, 92%);
-  --callout-radius: 0px;
-  --canvas-background: hsl(40, 6%, 16%);
-  --canvas-card-label-color: hsl(70, 30%, 80%);
-  --canvas-controls-radius: 0px;
-  --caret-color: hsl(70, 30%, 92%);
-  --checkbox-border-color: hsl(70, 30%, 80%);
-  --checkbox-border-color-hover: hsl(70, 30%, 80%);
-  --checkbox-color: hsl(160, 36%, 56%);
-  --checkbox-color-hover: hsl(160, 36%, 56%);
-  --checkbox-marker-color: transparent;
-  --checkbox-radius: 0px;
-  --checklist-done-color: hsl(70, 30%, 80%);
-  --clickable-icon-radius: 0px;
-  --code-background: hsl(40, 6%, 16%);
-  --code-border-color: hsl(70, 30%, 92%);
-  --code-border-width: 1px;
-  --code-comment: hsl(70, 30%, 80%);
-  --code-function: hsl(50, 30%, 45%);
-  --code-important: hsl(30, 30%, 60%);
-  --code-keyword: hsl(330, 30%, 60%);
-  --code-normal: hsl(70, 30%, 92%);
-  --code-operator: hsl(0, 30%, 60%);
-  --code-property: hsl(170, 30%, 50%);
-  --code-punctuation: hsl(70, 30%, 80%);
-  --code-string: hsl(120, 30%, 50%);
-  --code-tag: hsl(0, 30%, 60%);
-  --code-value: hsl(270, 30%, 60%);
-  --codeFont: var(--font-monospace, 'Quicksand');
-  --collapse-icon-color: hsl(70, 30%, 80%);
-  --collapse-icon-color-collapsed: hsl(160, 36%, 56%);
-  --color-accent: hsl(160, 36%, 56%);
-  --color-accent-1: hsl(160, 36%, 56%);
-  --color-accent-2: hsl(160, 36%, 56%);
-  --color-accent-hsl: 160, 36%, 56%;
-  --dark: var(--text-normal, hsl(70, 30%, 92%));
-  --darkgray: var(--text-normal, hsl(70, 30%, 92%));
-  --divider-color-hover: hsl(160, 36%, 56%);
+  --background-modifier-error: var(--text-error, hsl(0, 50%, 50%));
+  --background-modifier-error-hover: var(--text-error, hsl(0, 50%, 50%));
+  --background-modifier-success: var(--text-success, hsl(100, 50%, 50%));
+  --background-primary: var(--grotto-dark-1, hsl(40, 6%, 16%));
+  --background-primary-alt: var(--background-primary, hsl(40, 6%, 16%));
+  --background-secondary: var(--grotto-dark-0, hsl(40, 6%, 12%));
+  --background-secondary-alt: var(--background-secondary, hsl(40, 6%, 12%));
+  --bases-cards-background: var(--background-primary, hsl(40, 6%, 16%));
+  --bases-cards-cover-background: var(--background-primary-alt, hsl(40, 6%, 16%));
+  --bases-cards-radius: var(--radius-m, 0px);
+  --bases-embed-border-radius: var(--radius-s, 0px);
+  --bases-group-heading-property-color: var(--text-muted, hsl(70, 30%, 80%));
+  --bases-table-border-color: var(--table-border-color, hsl(70, 30%, 92%));
+  --bases-table-cell-background-active: var(--background-primary, hsl(40, 6%, 16%));
+  --bases-table-cell-background-disabled: var(--background-primary-alt, hsl(40, 6%, 16%));
+  --bases-table-cell-background-selected: var(--table-selection, hsla(160, 36%, 56%, 0.1));
+  --bases-table-container-border-radius: var(--radius-s, 0px);
+  --bases-table-group-background: var(--background-primary-alt, hsl(40, 6%, 16%));
+  --bases-table-header-background: var(--background-primary, hsl(40, 6%, 16%));
+  --bases-table-header-color: var(--text-muted, hsl(70, 30%, 80%));
+  --bases-table-summary-background: var(--background-primary, hsl(40, 6%, 16%));
+  --blockquote-border-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --bodyFont: var(--font-text, var(--grotto-font-main, 'Quicksand'));
+  --callout-default: var(--grotto-callout-color, hsl(70, 30%, 92%));
+  --callout-radius: var(--radius-s, 0px);
+  --canvas-background: var(--background-primary, hsl(40, 6%, 16%));
+  --canvas-card-label-color: var(--text-faint, hsl(70, 30%, 80%));
+  --canvas-controls-radius: var(--radius-s, 0px);
+  --caret-color: var(--text-normal, hsl(70, 30%, 92%));
+  --checkbox-border-color: var(--text-faint, hsl(70, 30%, 80%));
+  --checkbox-border-color-hover: var(--text-muted, hsl(70, 30%, 80%));
+  --checkbox-color: var(--interactive-accent, hsl(160, 36%, 56%));
+  --checkbox-color-hover: var(--interactive-accent-hover, hsl(160, 36%, 56%));
+  --checkbox-marker-color: var(--background-primary, transparent);
+  --checkbox-radius: var(--radius-s, 0px);
+  --checklist-done-color: var(--text-muted, hsl(70, 30%, 80%));
+  --clickable-icon-radius: var(--radius-s, 0px);
+  --code-background: var(--background-primary-alt, hsl(40, 6%, 16%));
+  --code-border-color: var(--grotto-code-border-color, hsl(70, 30%, 92%));
+  --code-border-width: var(--grotto-global-border-width, 1px);
+  --code-comment: var(--text-faint, hsl(70, 30%, 80%));
+  --code-function: var(--color-yellow, hsl(50, 30%, 45%));
+  --code-important: var(--color-orange, hsl(30, 30%, 60%));
+  --code-keyword: var(--color-pink, hsl(330, 30%, 60%));
+  --code-normal: var(--text-normal, hsl(70, 30%, 92%));
+  --code-operator: var(--color-red, hsl(0, 30%, 60%));
+  --code-property: var(--color-cyan, hsl(170, 30%, 50%));
+  --code-punctuation: var(--text-muted, hsl(70, 30%, 80%));
+  --code-string: var(--color-green, hsl(120, 30%, 50%));
+  --code-tag: var(--color-red, hsl(0, 30%, 60%));
+  --code-value: var(--color-purple, hsl(270, 30%, 60%));
+  --codeFont: var(--font-monospace, var(--grotto-font-main, 'Quicksand'));
+  --collapse-icon-color: var(--text-faint, hsl(70, 30%, 80%));
+  --collapse-icon-color-collapsed: var(--text-accent, hsl(160, 36%, 56%));
+  --color-accent: hsl(var(--grotto-accent-h), var(--grotto-accent-s), var(--grotto-accent-l));
+  --color-accent-1: hsl(var(--grotto-accent-h), var(--grotto-accent-s), var(--grotto-accent-l));
+  --color-accent-2: hsl(var(--grotto-accent-h), var(--grotto-accent-s), var(--grotto-accent-l));
+  --color-accent-hsl: var(--grotto-accent-h), var(--grotto-accent-s), var(--grotto-accent-l);
+  --dark: var(--text-normal, var(--grotto-light-1, hsl(70, 30%, 92%)));
+  --darkgray: var(--text-normal, var(--grotto-light-1, hsl(70, 30%, 92%)));
+  --divider-color-hover: var(--interactive-accent, hsl(160, 36%, 56%));
   --divider-width: 0px;
   --divider-width-hover: 2px;
-  --embed-border-start: 2px solid hsl(160, 36%, 56%);
-  --file-header-background: hsl(40, 6%, 16%);
-  --file-header-background-focused: hsl(40, 6%, 16%);
-  --file-header-font: 'Quicksand';
-  --flair-color: hsl(70, 30%, 92%);
-  --font-interface: 'Quicksand';
-  --font-interface-override: 'Quicksand';
-  --font-mermaid: 'Quicksand';
-  --font-monospace: 'Quicksand';
-  --font-monospace-override: 'Quicksand';
-  --font-print: 'Quicksand';
-  --font-print-override: 'Quicksand';
-  --font-text: 'Quicksand';
-  --font-text-override: 'Quicksand';
-  --footnote-id-color: hsl(70, 30%, 80%);
-  --footnote-id-color-no-occurrences: hsl(70, 30%, 80%);
-  --footnote-radius: 0px;
-  --graph-node: hsl(70, 30%, 92%);
-  --graph-node-attachment: hsl(100, 50%, 50%);
-  --graph-node-focused: hsl(160, 36%, 56%);
-  --graph-node-tag: hsl(160, 36%, 56%);
-  --graph-node-unresolved: hsl(70, 30%, 80%);
-  --graph-text: hsl(70, 30%, 92%);
-  --gray: var(--text-muted, hsl(70, 30%, 80%));
+  --file-header-background: var(--background-primary, hsl(40, 6%, 16%));
+  --file-header-background-focused: var(--background-primary, hsl(40, 6%, 16%));
+  --file-header-font: var(--font-interface, 'Quicksand');
+  --flair-color: var(--text-normal, hsl(70, 30%, 92%));
+  --font-interface: var(--grotto-font-main, 'Quicksand');
+  --font-interface-override: var(--grotto-font-main, 'Quicksand');
+  --font-mermaid: var(--font-text, 'Quicksand');
+  --font-monospace: var(--grotto-font-main, 'Quicksand');
+  --font-monospace-override: var(--grotto-font-main, 'Quicksand');
+  --font-print: var(--grotto-font-main, 'Quicksand');
+  --font-print-override: var(--grotto-font-main, 'Quicksand');
+  --font-text: var(--grotto-font-main, 'Quicksand');
+  --font-text-override: var(--grotto-font-main, 'Quicksand');
+  --footnote-id-color: var(--text-muted, hsl(70, 30%, 80%));
+  --footnote-id-color-no-occurrences: var(--text-faint, hsl(70, 30%, 80%));
+  --footnote-radius: var(--radius-s, 0px);
+  --graph-node: var(--grotto-graph-node-color, hsl(70, 30%, 92%));
+  --graph-node-attachment: var(--text-success, hsl(100, 50%, 50%));
+  --graph-node-focused: var(--grotto-accent, hsl(160, 36%, 56%));
+  --graph-node-tag: var(--grotto-accent, hsl(160, 36%, 56%));
+  --graph-node-unresolved: var(--text-faint, hsl(70, 30%, 80%));
+  --graph-text: var(--text-normal, hsl(70, 30%, 92%));
+  --gray: var(--text-muted, var(--grotto-light-2, hsl(70, 30%, 80%)));
   --grotto-accent: hsl(160, 36%, 56%);
   --grotto-accent-h: 160;
   --grotto-accent-l: 56%;
   --grotto-accent-s: 36%;
-  --grotto-background-tertiary: hsl(40, 6%, 24%);
-  --grotto-backlink-border-color: hsl(70, 30%, 92%);
-  --grotto-bases-background-color: hsl(40, 6%, 16%);
-  --grotto-bases-border-color: hsl(70, 30%, 92%);
-  --grotto-bases-border-radius: 0rem;
-  --grotto-bases-color: hsl(70, 30%, 92%);
-  --grotto-bases-header-background-color: hsl(40, 6%, 24%);
+  --grotto-background-tertiary: var(--grotto-dark-2, hsl(40, 6%, 24%));
+  --grotto-backlink-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-bases-background-color: var(--background-primary, hsl(40, 6%, 16%));
+  --grotto-bases-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-bases-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-bases-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-bases-header-background-color: var(--grotto-background-tertiary, hsl(40, 6%, 24%));
   --grotto-blockquote-background-color: transparent;
-  --grotto-blockquote-color: hsl(70, 30%, 92%);
+  --grotto-blockquote-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-blur: 0px;
-  --grotto-bold-color: hsl(160, 36%, 56%);
+  --grotto-bold-color: var(--grotto-accent, hsl(160, 36%, 56%));
   --grotto-bold-weight: 800;
-  --grotto-button-background-color: hsl(160, 36%, 56%);
-  --grotto-button-border-color: hsl(70, 30%, 92%);
-  --grotto-button-border-radius: 0rem;
-  --grotto-button-border-width: 1px;
-  --grotto-button-color: hsl(70, 30%, 92%);
+  --grotto-button-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-button-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-button-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-button-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-button-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
   --grotto-button-outline-width: 1px;
   --grotto-calendar-background-color: transparent;
-  --grotto-calendar-border-color: hsl(70, 30%, 92%);
-  --grotto-calendar-border-radius: 0rem;
-  --grotto-calendar-border-width: 1px;
-  --grotto-calendar-color: hsl(70, 30%, 92%);
-  --grotto-calendar-day-active-color: hsl(70, 30%, 92%);
+  --grotto-calendar-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-calendar-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-calendar-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-calendar-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-calendar-day-active-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-calendar-day-border-color: transparent;
-  --grotto-calendar-day-border-radius: 0rem;
-  --grotto-calendar-day-color: hsl(70, 30%, 92%);
+  --grotto-calendar-day-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-calendar-day-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-calendar-dayofweek-background-color: transparent;
-  --grotto-calendar-dayofweek-border-color: hsl(70, 30%, 92%);
-  --grotto-calendar-dayofweek-border-radius: 0rem;
-  --grotto-calendar-dayofweek-color: hsl(70, 30%, 92%);
+  --grotto-calendar-dayofweek-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-calendar-dayofweek-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-calendar-dayofweek-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-calendar-dayofweek-outline-color: transparent;
-  --grotto-calendar-month-color: hsl(70, 30%, 92%);
+  --grotto-calendar-month-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-calendar-pointer-events: auto;
-  --grotto-calendar-today-background-color: hsl(160, 36%, 56%);
-  --grotto-calendar-today-border-color: hsl(70, 30%, 92%);
-  --grotto-calendar-today-color: hsl(70, 30%, 92%);
+  --grotto-calendar-today-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-calendar-today-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-calendar-today-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
   --grotto-calendar-view-height: 0vh;
-  --grotto-calendar-weekend-border-color: hsl(70, 30%, 92%);
+  --grotto-calendar-weekend-border-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-calendar-weekend-border-width: 1px;
-  --grotto-calendar-year-color: hsl(160, 36%, 56%);
-  --grotto-callout-background-color: hsl(40, 6%, 16%);
-  --grotto-callout-border-color: hsl(70, 30%, 92%);
-  --grotto-callout-color: hsl(70, 30%, 92%);
+  --grotto-calendar-year-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-callout-background-color: var(--background-primary, hsl(40, 6%, 16%));
+  --grotto-callout-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-callout-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-callout-icon: none;
   --grotto-callout-padding: 8px 16px;
-  --grotto-callout-radius: 0rem;
-  --grotto-callout-title-size: 1.5rem;
-  --grotto-canvas-background-color: hsl(40, 6%, 16%);
-  --grotto-canvas-border-color: hsl(70, 30%, 92%);
-  --grotto-canvas-border-radius: 0rem;
-  --grotto-canvas-color: hsl(70, 30%, 92%);
-  --grotto-canvas-controls-background-color: hsl(40, 6%, 24%);
-  --grotto-canvas-controls-color: hsl(70, 30%, 92%);
-  --grotto-canvas-path-color: hsl(70, 30%, 92%);
-  --grotto-canvas-path-node-color: hsl(160, 36%, 56%);
-  --grotto-checkbox-border-color: hsl(70, 30%, 92%);
-  --grotto-checkbox-border-radius: 0rem;
-  --grotto-code-background-color: hsl(40, 6%, 24%);
-  --grotto-code-border-color: hsl(70, 30%, 92%);
+  --grotto-callout-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-callout-title-size: var(--grotto-header-size, 1.5rem);
+  --grotto-canvas-background-color: var(--background-primary, hsl(40, 6%, 16%));
+  --grotto-canvas-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-canvas-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-canvas-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-canvas-controls-background-color: var(--grotto-background-tertiary, hsl(40, 6%, 24%));
+  --grotto-canvas-controls-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-canvas-path-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-canvas-path-node-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-checkbox-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-checkbox-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-code-background-color: var(--grotto-background-tertiary, hsl(40, 6%, 24%));
+  --grotto-code-border-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-code-border-radius: 0rem;
-  --grotto-code-color: hsl(70, 30%, 92%);
+  --grotto-code-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-code-weight: 500;
-  --grotto-comment-color: hsl(70, 30%, 92%);
+  --grotto-comment-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-comment-weight: 500;
   --grotto-dark-0: hsl(40, 6%, 12%);
   --grotto-dark-1: hsl(40, 6%, 16%);
   --grotto-dark-2: hsl(40, 6%, 24%);
-  --grotto-dragging-background-color: hsl(160, 36%, 56%);
-  --grotto-dragging-border-color: hsl(70, 30%, 92%);
-  --grotto-dragging-border-radius: 0rem;
-  --grotto-dragging-color: hsl(70, 30%, 92%);
-  --grotto-drawer-background-color: hsl(160, 36%, 56%);
-  --grotto-drawer-border-color: hsl(70, 30%, 92%);
-  --grotto-drawer-border-radius: 0rem;
-  --grotto-drawer-color: hsl(70, 30%, 92%);
-  --grotto-dropdown-background-color: hsl(160, 36%, 56%);
-  --grotto-dropdown-border-color: hsl(70, 30%, 92%);
-  --grotto-dropdown-border-radius: 0rem;
-  --grotto-dropdown-border-width: 1px;
-  --grotto-dropdown-color: hsl(70, 30%, 92%);
-  --grotto-dropdown-option-background-color: hsl(40, 6%, 16%);
-  --grotto-dropdown-option-color: hsl(70, 30%, 92%);
+  --grotto-dragging-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-dragging-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-dragging-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-dragging-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
+  --grotto-drawer-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-drawer-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-drawer-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-drawer-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
+  --grotto-dropdown-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-dropdown-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-dropdown-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-dropdown-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-dropdown-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
+  --grotto-dropdown-option-background-color: var(--background-primary, hsl(40, 6%, 16%));
+  --grotto-dropdown-option-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-dropdown-outline-width: 1px;
   --grotto-embed-background-color: transparent;
-  --grotto-embed-border-color: hsl(70, 30%, 92%);
-  --grotto-embed-border-radius: 0rem;
-  --grotto-embed-color: hsl(70, 30%, 92%);
-  --grotto-embed-title-color: hsl(70, 30%, 92%);
+  --grotto-embed-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-embed-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-embed-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-embed-title-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-embed-title-size: 1.5rem;
   --grotto-embed-title-visibility: block;
-  --grotto-filenav-active-background-color: hsl(160, 36%, 56%);
-  --grotto-filenav-active-color: hsl(70, 30%, 92%);
-  --grotto-filenav-background-color: hsl(40, 6%, 12%);
-  --grotto-filenav-border-color: hsl(70, 30%, 92%);
-  --grotto-filenav-border-radius: 0rem;
-  --grotto-filenav-button-background-color: hsl(40, 6%, 24%);
-  --grotto-filenav-color: hsl(70, 30%, 92%);
-  --grotto-filenav-tag-background-color: hsl(70, 30%, 92%);
-  --grotto-filenav-tag-color: hsl(40, 6%, 12%);
+  --grotto-filenav-active-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-filenav-active-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
+  --grotto-filenav-background-color: var(--background-secondary, hsl(40, 6%, 12%));
+  --grotto-filenav-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-filenav-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-filenav-button-background-color: var(--grotto-background-tertiary, hsl(40, 6%, 24%));
+  --grotto-filenav-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-filenav-tag-background-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-filenav-tag-color: var(--background-secondary, hsl(40, 6%, 12%));
   --grotto-font-main: 'Quicksand';
   --grotto-font-weight: 500;
   --grotto-global-border-radius: 0rem;
   --grotto-global-border-width: 1px;
-  --grotto-graph-controls-background-color: hsl(40, 6%, 24%);
-  --grotto-graph-controls-border-color: hsl(70, 30%, 92%);
-  --grotto-graph-controls-border-radius: 0rem;
-  --grotto-graph-controls-color: hsl(70, 30%, 92%);
-  --grotto-graph-line-color: hsl(70, 30%, 92%);
-  --grotto-graph-node-color: hsl(70, 30%, 92%);
-  --grotto-graph-sidebar-controls-background-color: hsl(40, 6%, 24%);
-  --grotto-graph-sidebar-controls-border-color: hsl(70, 30%, 92%);
-  --grotto-graph-sidebar-controls-color: hsl(70, 30%, 92%);
-  --grotto-header-1-background-color: hsl(160, 36%, 56%);
-  --grotto-header-1-border-color: hsl(70, 30%, 92%);
-  --grotto-header-1-border-radius: 0rem;
-  --grotto-header-1-color: hsl(70, 30%, 92%);
-  --grotto-header-1-size: 1.5rem;
-  --grotto-header-2-background-color: hsl(70, 30%, 92%);
-  --grotto-header-2-border-color: hsl(70, 30%, 92%);
-  --grotto-header-2-border-radius: 0rem;
-  --grotto-header-2-color: hsl(40, 6%, 16%);
-  --grotto-header-2-size: 1.5rem;
+  --grotto-graph-controls-background-color: var(--grotto-background-tertiary, hsl(40, 6%, 24%));
+  --grotto-graph-controls-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-graph-controls-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-graph-controls-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-graph-line-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-graph-node-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-graph-sidebar-controls-background-color: var(--grotto-background-tertiary, hsl(40, 6%, 24%));
+  --grotto-graph-sidebar-controls-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-graph-sidebar-controls-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-header-1-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-header-1-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-header-1-border-radius: var(--grotto-header-border-radius, 0rem);
+  --grotto-header-1-color: var(--grotto-light-1, hsl(70, 30%, 92%));
+  --grotto-header-1-size: var(--grotto-header-size, 1.5rem);
+  --grotto-header-2-background-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-header-2-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-header-2-border-radius: var(--grotto-header-border-radius, 0rem);
+  --grotto-header-2-color: var(--background-primary, hsl(40, 6%, 16%));
+  --grotto-header-2-size: var(--grotto-header-size, 1.5rem);
   --grotto-header-3-background-color: transparent;
-  --grotto-header-3-border-color: hsl(70, 30%, 92%);
-  --grotto-header-3-border-radius: 0rem;
-  --grotto-header-3-color: hsl(70, 30%, 92%);
-  --grotto-header-3-size: 1.5rem;
+  --grotto-header-3-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-header-3-border-radius: var(--grotto-header-border-radius, 0rem);
+  --grotto-header-3-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-header-3-size: var(--grotto-header-size, 1.5rem);
   --grotto-header-4-background-color: transparent;
-  --grotto-header-4-border-color: hsl(70, 30%, 92%);
-  --grotto-header-4-border-radius: 0rem;
-  --grotto-header-4-color: hsl(70, 30%, 92%);
-  --grotto-header-4-size: 1.5rem;
+  --grotto-header-4-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-header-4-border-radius: var(--grotto-header-border-radius, 0rem);
+  --grotto-header-4-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-header-4-size: var(--grotto-header-size, 1.5rem);
   --grotto-header-5-background-color: transparent;
-  --grotto-header-5-border-color: hsl(160, 36%, 56%);
-  --grotto-header-5-border-radius: 0rem;
-  --grotto-header-5-color: hsl(70, 30%, 92%);
-  --grotto-header-5-size: 1.5rem;
+  --grotto-header-5-border-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-header-5-border-radius: var(--grotto-header-border-radius, 0rem);
+  --grotto-header-5-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-header-5-size: var(--grotto-header-size, 1.5rem);
   --grotto-header-6-background-color: transparent;
   --grotto-header-6-border-color: transparent;
-  --grotto-header-6-border-radius: 0rem;
-  --grotto-header-6-color: hsl(70, 30%, 92%);
-  --grotto-header-6-size: 1.5rem;
+  --grotto-header-6-border-radius: var(--grotto-header-border-radius, 0rem);
+  --grotto-header-6-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-header-6-size: var(--grotto-header-size, 1.5rem);
   --grotto-header-border-radius: 0rem;
   --grotto-header-line-height: 2rem;
   --grotto-header-size: 1.5rem;
   --grotto-header-weight: 500;
-  --grotto-icon-color: hsl(70, 30%, 92%);
-  --grotto-input-radius: 0rem;
-  --grotto-italic-color: hsl(160, 36%, 56%);
+  --grotto-icon-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-input-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-italic-color: var(--grotto-accent, hsl(160, 36%, 56%));
   --grotto-italic-weight: 500;
   --grotto-light-0: hsl(70, 30%, 86%);
   --grotto-light-1: hsl(70, 30%, 92%);
   --grotto-light-2: hsl(70, 30%, 80%);
-  --grotto-link-color: hsl(160, 36%, 56%);
+  --grotto-link-color: var(--grotto-accent, hsl(160, 36%, 56%));
   --grotto-link-weight: 500;
-  --grotto-list-marker-color: hsl(70, 30%, 92%);
-  --grotto-menu-background-color: hsl(40, 6%, 12%);
-  --grotto-menu-border-color: hsl(70, 30%, 92%);
-  --grotto-menu-border-radius: 0rem;
-  --grotto-menu-color: hsl(70, 30%, 92%);
-  --grotto-mobile-toolbar-background-color: hsl(40, 6%, 24%);
-  --grotto-mobile-toolbar-border-color: hsl(70, 30%, 92%);
-  --grotto-mobile-toolbar-border-radius: 0rem;
-  --grotto-mobile-toolbar-color: hsl(70, 30%, 92%);
-  --grotto-modal-background-color: hsl(40, 6%, 16%);
-  --grotto-modal-border-color: hsl(70, 30%, 92%);
-  --grotto-modal-border-radius: 0rem;
-  --grotto-modal-color: hsl(70, 30%, 92%);
-  --grotto-navbar-background-color: hsl(40, 6%, 24%);
-  --grotto-navbar-border-color: hsl(70, 30%, 92%);
-  --grotto-navbar-border-radius: 0rem;
-  --grotto-navbar-color: hsl(70, 30%, 92%);
+  --grotto-list-marker-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-menu-background-color: var(--background-secondary, hsl(40, 6%, 12%));
+  --grotto-menu-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-menu-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-menu-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-mobile-toolbar-background-color: var(--grotto-background-tertiary, hsl(40, 6%, 24%));
+  --grotto-mobile-toolbar-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-mobile-toolbar-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-mobile-toolbar-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-modal-background-color: var(--background-primary, hsl(40, 6%, 16%));
+  --grotto-modal-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-modal-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-modal-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-navbar-background-color: var(--grotto-background-tertiary, hsl(40, 6%, 24%));
+  --grotto-navbar-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-navbar-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-navbar-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-navbar-new-tab-display: auto;
   --grotto-navbar-position-offset: 16px;
-  --grotto-notice-background-color: hsl(160, 36%, 56%);
-  --grotto-notice-border-color: hsl(70, 30%, 92%);
-  --grotto-notice-border-radius: 0rem;
-  --grotto-notice-border-width: 1px;
-  --grotto-notice-color: hsl(70, 30%, 92%);
-  --grotto-progress-background-color: hsl(70, 30%, 92%);
-  --grotto-progress-border-color: hsl(70, 30%, 92%);
-  --grotto-progress-color: hsl(160, 36%, 56%);
-  --grotto-progress-radius: 0rem;
-  --grotto-prompt-background-color: hsl(40, 6%, 16%);
-  --grotto-prompt-border-color: hsl(70, 30%, 92%);
-  --grotto-prompt-border-radius: 0rem;
-  --grotto-prompt-border-width: 1px;
-  --grotto-prompt-color: hsl(70, 30%, 92%);
-  --grotto-properties-background-color: hsl(40, 6%, 16%);
-  --grotto-properties-border-color: hsl(70, 30%, 92%);
-  --grotto-properties-border-radius: 0rem;
-  --grotto-properties-color: hsl(70, 30%, 92%);
-  --grotto-pull-background-color: hsl(160, 36%, 56%);
-  --grotto-pull-border-color: hsl(70, 30%, 92%);
-  --grotto-pull-border-radius: 0rem;
-  --grotto-pull-color: hsl(70, 30%, 92%);
+  --grotto-notice-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-notice-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-notice-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-notice-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-notice-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
+  --grotto-progress-background-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-progress-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-progress-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-progress-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-prompt-background-color: var(--background-primary, hsl(40, 6%, 16%));
+  --grotto-prompt-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-prompt-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-prompt-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-prompt-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-properties-background-color: var(--background-primary, hsl(40, 6%, 16%));
+  --grotto-properties-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-properties-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-properties-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-pull-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-pull-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-pull-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-pull-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
   --grotto-redacted: 'Flow Circular';
   --grotto-resize-handle-border-color: transparent;
-  --grotto-resize-handle-border-width: 1px;
-  --grotto-resize-handle-color: hsl(70, 30%, 92%);
+  --grotto-resize-handle-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-resize-handle-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-ribbon-border-color: transparent;
   --grotto-ribbon-border-radius: 0rem;
-  --grotto-ribbon-border-width: 1px;
-  --grotto-scrollbar-border-color: hsl(70, 30%, 92%);
-  --grotto-settings-background-color: hsl(40, 6%, 12%);
-  --grotto-settings-border-color: hsl(70, 30%, 92%);
-  --grotto-settings-border-radius: 0rem;
-  --grotto-settings-color: hsl(70, 30%, 92%);
-  --grotto-slider-background-color: hsl(70, 30%, 92%);
-  --grotto-slider-border-color: hsl(40, 6%, 16%);
-  --grotto-statusbar-background-color: hsl(40, 6%, 12%);
-  --grotto-statusbar-border-color: hsl(70, 30%, 92%);
-  --grotto-statusbar-border-radius: 0rem;
-  --grotto-statusbar-color: hsl(70, 30%, 92%);
-  --grotto-strikethrough-color: hsl(70, 30%, 92%);
+  --grotto-ribbon-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-scrollbar-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-settings-background-color: var(--background-secondary, hsl(40, 6%, 12%));
+  --grotto-settings-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-settings-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-settings-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-slider-background-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-slider-border-color: var(--background-primary, hsl(40, 6%, 16%));
+  --grotto-statusbar-background-color: var(--background-secondary, hsl(40, 6%, 12%));
+  --grotto-statusbar-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-statusbar-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-statusbar-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-strikethrough-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-strikethrough-opacity: 0.5;
   --grotto-strikethrough-weight: 500;
-  --grotto-suggestion-background-color: hsl(40, 6%, 24%);
-  --grotto-suggestion-border-color: hsl(70, 30%, 92%);
-  --grotto-suggestion-border-radius: 0rem;
-  --grotto-suggestion-color: hsl(70, 30%, 92%);
-  --grotto-suggestion-selected-background-color: hsl(160, 36%, 56%);
-  --grotto-suggestion-selected-color: hsl(70, 30%, 92%);
-  --grotto-tab-switcher-background-color: hsl(40, 6%, 16%);
-  --grotto-tab-switcher-border-color: hsl(70, 30%, 92%);
-  --grotto-tab-switcher-border-radius: 0rem;
-  --grotto-tab-switcher-color: hsl(70, 30%, 92%);
-  --grotto-tab-switcher-menu-background-color: hsl(40, 6%, 24%);
-  --grotto-tab-switcher-selected-tab-background-color: hsl(160, 36%, 56%);
+  --grotto-suggestion-background-color: var(--grotto-background-tertiary, hsl(40, 6%, 24%));
+  --grotto-suggestion-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-suggestion-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-suggestion-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-suggestion-selected-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-suggestion-selected-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
+  --grotto-tab-switcher-background-color: var(--background-primary, hsl(40, 6%, 16%));
+  --grotto-tab-switcher-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-tab-switcher-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-tab-switcher-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-tab-switcher-menu-background-color: var(--grotto-background-tertiary, hsl(40, 6%, 24%));
+  --grotto-tab-switcher-selected-tab-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
   --grotto-tab-switcher-tab-height: 200px;
   --grotto-table-background-color: transparent;
-  --grotto-table-border-color: hsl(70, 30%, 92%);
+  --grotto-table-border-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-table-border-radius: 0rem;
   --grotto-table-border-style: separate;
-  --grotto-table-border-width: 1px;
+  --grotto-table-border-width: var(--grotto-global-border-width, 1px);
   --grotto-table-cell-width: fit-content;
   --grotto-table-cell-width-reading: wrap;
-  --grotto-table-color: hsl(70, 30%, 92%);
-  --grotto-tag-background-color: hsl(70, 30%, 92%);
-  --grotto-tag-border-color: hsl(70, 30%, 92%);
+  --grotto-table-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-tag-background-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-tag-border-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-tag-border-radius: 0rem;
   --grotto-tag-border-width: 1.5px;
-  --grotto-tag-color: hsl(40, 6%, 16%);
+  --grotto-tag-color: var(--background-primary, hsl(40, 6%, 16%));
   --grotto-tag-padding-x: 0.4rem;
   --grotto-tag-padding-y: 0.1rem;
   --grotto-tag-pointer-events: none;
   --grotto-tag-size: 0.8rem;
   --grotto-tag-weight: 600;
-  --grotto-text-color-on-accent: hsl(70, 30%, 92%);
-  --grotto-titlebar-border-radius: 0rem;
-  --grotto-titlebar-color: hsl(70, 30%, 92%);
-  --grotto-toggle-background-color: hsl(40, 6%, 16%);
-  --grotto-toggle-border-color: hsl(70, 30%, 92%);
-  --grotto-toggle-border-width: 1px;
-  --grotto-toggle-enabled-background-color: hsl(160, 36%, 56%);
-  --grotto-tooltip-background-color: hsl(40, 6%, 24%);
-  --grotto-tooltip-border-color: hsl(70, 30%, 92%);
-  --grotto-tooltip-border-radius: 0rem;
-  --grotto-tooltip-border-width: 1px;
-  --grotto-tooltip-color: hsl(70, 30%, 92%);
-  --grotto-view-header-background-color: hsl(40, 6%, 24%);
-  --grotto-view-header-color: hsl(70, 30%, 92%);
+  --grotto-text-color-on-accent: var(--grotto-light-1, hsl(70, 30%, 92%));
+  --grotto-titlebar-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-titlebar-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-toggle-background-color: var(--background-primary, hsl(40, 6%, 16%));
+  --grotto-toggle-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-toggle-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-toggle-enabled-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-tooltip-background-color: var(--grotto-background-tertiary, hsl(40, 6%, 24%));
+  --grotto-tooltip-border-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-tooltip-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-tooltip-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-tooltip-color: var(--text-normal, hsl(70, 30%, 92%));
+  --grotto-view-header-background-color: var(--grotto-background-tertiary, hsl(40, 6%, 24%));
+  --grotto-view-header-color: var(--text-normal, hsl(70, 30%, 92%));
   --grotto-view-header-sidebar-toggle-display: none;
-  --headerFont: var(--font-text, 'Quicksand');
-  --heading-formatting: hsl(70, 30%, 80%);
-  --heading-spacing: 0rem;
-  --highlight: var(--text-highlight-bg, hsl(40, 6%, 24%));
-  --icon-color: hsl(70, 30%, 80%);
-  --icon-color-active: hsl(160, 36%, 56%);
-  --icon-color-focused: hsl(70, 30%, 92%);
-  --icon-color-hover: hsl(70, 30%, 80%);
-  --input-date-separator: hsl(70, 30%, 80%);
-  --input-placeholder-color: hsl(70, 30%, 80%);
+  --headerFont: var(--font-text, var(--grotto-font-main, 'Quicksand'));
+  --heading-formatting: var(--text-faint, hsl(70, 30%, 80%));
+  --highlight: var(--text-highlight-bg, var(--grotto-background-tertiary, hsl(40, 6%, 24%)));
+  --icon-color: var(--text-muted, hsl(70, 30%, 80%));
+  --icon-color-active: var(--text-accent, hsl(160, 36%, 56%));
+  --icon-color-focused: var(--text-normal, hsl(70, 30%, 92%));
+  --icon-color-hover: var(--text-muted, hsl(70, 30%, 80%));
+  --input-date-separator: var(--text-faint, hsl(70, 30%, 80%));
+  --input-placeholder-color: var(--text-faint, hsl(70, 30%, 80%));
   --input-shadow: none;
   --input-shadow-hover: none;
-  --interactive-accent: hsl(160, 36%, 56%);
-  --interactive-accent-hover: hsl(160, 36%, 56%);
-  --interactive-accent-hsl: 160, 36%, 56%;
-  --light: var(--background-primary, hsl(40, 6%, 16%));
-  --lightgray: var(--background-secondary, hsl(40, 6%, 12%));
-  --link-color: hsl(160, 36%, 56%);
-  --link-color-hover: hsl(160, 36%, 56%);
-  --link-external-color: hsl(160, 36%, 56%);
-  --link-external-color-hover: hsl(160, 36%, 56%);
-  --link-unresolved-color: hsl(160, 36%, 56%);
-  --link-unresolved-decoration-color: hsla(160, 36%, 56%, 0.3);
-  --list-bullet-radius: 0rem;
-  --list-marker-color: hsl(70, 30%, 92%);
-  --list-marker-color-collapsed: hsl(70, 30%, 92%);
-  --list-marker-color-hover: hsl(70, 30%, 92%);
-  --menu-background: hsl(40, 6%, 12%);
-  --menu-radius: 0px;
-  --menu-shadow: none;
-  --metadata-input-font: 'Quicksand';
-  --metadata-input-text-color: hsl(70, 30%, 92%);
-  --metadata-label-font: 'Quicksand';
-  --metadata-label-text-color: hsl(70, 30%, 80%);
-  --metadata-label-text-color-hover: hsl(70, 30%, 80%);
-  --modal-background: hsl(40, 6%, 16%);
-  --modal-radius: 0px;
-  --nav-collapse-icon-color: hsl(70, 30%, 80%);
-  --nav-collapse-icon-color-collapsed: hsl(70, 30%, 80%);
-  --nav-heading-color: hsl(70, 30%, 92%);
-  --nav-heading-color-collapsed: hsl(70, 30%, 80%);
-  --nav-heading-color-collapsed-hover: hsl(70, 30%, 80%);
-  --nav-heading-color-hover: hsl(70, 30%, 92%);
-  --nav-item-background-selected: hsla(160, 36%, 56%, 0.15);
-  --nav-item-color: hsl(70, 30%, 80%);
-  --nav-item-color-active: hsl(70, 30%, 92%);
-  --nav-item-color-highlighted: hsl(160, 36%, 56%);
-  --nav-item-color-hover: hsl(70, 30%, 92%);
-  --nav-item-color-selected: hsl(70, 30%, 92%);
-  --nav-item-radius: 0px;
-  --nav-tag-color: hsl(70, 30%, 80%);
-  --nav-tag-color-active: hsl(70, 30%, 80%);
-  --nav-tag-color-hover: hsl(70, 30%, 80%);
-  --nav-tag-radius: 0px;
+  --interactive-accent: var(--color-accent, hsl(160, 36%, 56%));
+  --interactive-accent-hover: var(--color-accent-1, hsl(160, 36%, 56%));
+  --interactive-accent-hsl: var(--color-accent-hsl, 160, 36%, 56%);
+  --light: var(--background-primary, var(--grotto-dark-1, hsl(40, 6%, 16%)));
+  --lightgray: var(--background-secondary, var(--grotto-dark-0, hsl(40, 6%, 12%)));
+  --link-color: var(--text-accent, hsl(160, 36%, 56%));
+  --link-color-hover: var(--text-accent-hover, hsl(160, 36%, 56%));
+  --link-external-color: var(--text-accent, hsl(160, 36%, 56%));
+  --link-external-color-hover: var(--text-accent-hover, hsl(160, 36%, 56%));
+  --link-unresolved-color: var(--text-accent, hsl(160, 36%, 56%));
+  --list-bullet-radius: var(--grotto-global-border-radius, 0rem);
+  --list-marker-color: var(--grotto-list-marker-color, hsl(70, 30%, 92%));
+  --list-marker-color-collapsed: var(--grotto-list-marker-color, hsl(70, 30%, 92%));
+  --list-marker-color-hover: var(--grotto-list-marker-color, hsl(70, 30%, 92%));
+  --menu-background: var(--background-secondary, hsl(40, 6%, 12%));
+  --menu-radius: var(--radius-m, 0px);
+  --menu-shadow: var(--shadow-s, none);
+  --metadata-input-font: var(--font-interface, 'Quicksand');
+  --metadata-input-text-color: var(--text-normal, hsl(70, 30%, 92%));
+  --metadata-label-font: var(--font-interface, 'Quicksand');
+  --metadata-label-text-color: var(--text-muted, hsl(70, 30%, 80%));
+  --metadata-label-text-color-hover: var(--text-muted, hsl(70, 30%, 80%));
+  --modal-background: var(--background-primary, hsl(40, 6%, 16%));
+  --modal-radius: var(--radius-l, 0px);
+  --nav-collapse-icon-color: var(--collapse-icon-color, hsl(70, 30%, 80%));
+  --nav-collapse-icon-color-collapsed: var(--text-faint, hsl(70, 30%, 80%));
+  --nav-heading-color: var(--text-normal, hsl(70, 30%, 92%));
+  --nav-heading-color-collapsed: var(--text-faint, hsl(70, 30%, 80%));
+  --nav-heading-color-collapsed-hover: var(--text-muted, hsl(70, 30%, 80%));
+  --nav-heading-color-hover: var(--text-normal, hsl(70, 30%, 92%));
+  --nav-item-color: var(--text-muted, hsl(70, 30%, 80%));
+  --nav-item-color-active: var(--text-normal, hsl(70, 30%, 92%));
+  --nav-item-color-highlighted: var(--text-accent, hsl(160, 36%, 56%));
+  --nav-item-color-hover: var(--text-normal, hsl(70, 30%, 92%));
+  --nav-item-color-selected: var(--text-normal, hsl(70, 30%, 92%));
+  --nav-item-radius: var(--radius-s, 0px);
+  --nav-tag-color: var(--text-faint, hsl(70, 30%, 80%));
+  --nav-tag-color-active: var(--text-muted, hsl(70, 30%, 80%));
+  --nav-tag-color-hover: var(--text-muted, hsl(70, 30%, 80%));
+  --nav-tag-radius: var(--radius-s, 0px);
   --p-spacing: 0rem;
-  --pdf-background: hsl(40, 6%, 16%);
-  --pdf-page-background: hsl(40, 6%, 16%);
-  --pdf-shadow: none;
-  --pdf-sidebar-background: hsl(40, 6%, 16%);
-  --pdf-thumbnail-shadow: none;
-  --pill-color: hsl(70, 30%, 80%);
-  --pill-color-hover: hsl(70, 30%, 92%);
-  --pill-color-remove: hsl(70, 30%, 80%);
-  --pill-color-remove-hover: hsl(160, 36%, 56%);
-  --prompt-background: hsl(40, 6%, 16%);
+  --pdf-background: var(--background-primary, hsl(40, 6%, 16%));
+  --pdf-page-background: var(--background-primary, hsl(40, 6%, 16%));
+  --pdf-sidebar-background: var(--background-primary, hsl(40, 6%, 16%));
+  --pill-color: var(--text-muted, hsl(70, 30%, 80%));
+  --pill-color-hover: var(--text-normal, hsl(70, 30%, 92%));
+  --pill-color-remove: var(--text-faint, hsl(70, 30%, 80%));
+  --pill-color-remove-hover: var(--text-accent, hsl(160, 36%, 56%));
+  --prompt-background: var(--background-primary, hsl(40, 6%, 16%));
   --radius-l: 0px;
   --radius-m: 0px;
   --radius-s: 0px;
   --radius-xl: 0px;
-  --raised-background: none;
-  --raised-shadow: none;
-  --ribbon-background: hsl(40, 6%, 12%);
-  --ribbon-background-collapsed: hsl(40, 6%, 16%);
-  --scrollbar-active-thumb-bg: hsl(160, 36%, 56%);
-  --scrollbar-bg: hsl(160, 36%, 56%);
+  --raised-background: var(--blur-background, none);
+  --raised-shadow: var(--shadow-xs, none);
+  --ribbon-background: var(--background-secondary, hsl(40, 6%, 12%));
+  --ribbon-background-collapsed: var(--background-primary, hsl(40, 6%, 16%));
+  --scrollbar-active-thumb-bg: var(--grotto-accent, hsl(160, 36%, 56%));
+  --scrollbar-bg: var(--grotto-accent, hsl(160, 36%, 56%));
   --scrollbar-border-width: 3px;
-  --scrollbar-radius: 0rem;
-  --scrollbar-thumb-bg: hsl(160, 36%, 56%);
-  --search-clear-button-color: hsl(70, 30%, 80%);
-  --search-icon-color: hsl(70, 30%, 80%);
-  --search-result-background: hsl(40, 6%, 16%);
-  --secondary: var(--text-accent, hsl(160, 36%, 56%));
-  --setting-group-heading-color: hsl(70, 30%, 92%);
-  --setting-items-background: hsl(40, 6%, 16%);
-  --setting-items-radius: 0px;
+  --scrollbar-radius: var(--grotto-global-border-radius, 0rem);
+  --scrollbar-thumb-bg: var(--grotto-accent, hsl(160, 36%, 56%));
+  --search-clear-button-color: var(--text-muted, hsl(70, 30%, 80%));
+  --search-icon-color: var(--text-muted, hsl(70, 30%, 80%));
+  --search-result-background: var(--background-primary, hsl(40, 6%, 16%));
+  --secondary: var(--text-accent, var(--color-accent-1, hsl(160, 36%, 56%)));
+  --setting-group-heading-color: var(--text-normal, hsl(70, 30%, 92%));
+  --setting-items-background: var(--background-primary-alt, hsl(40, 6%, 16%));
+  --setting-items-radius: var(--radius-l, 0px);
   --shadow-edges: none;
   --shadow-l: none;
   --shadow-s: none;
-  --shadow-xs: none;
-  --shiki-active-tab-border-color: hsl(70, 30%, 80%);
-  --shiki-code-background: hsl(40, 6%, 16%);
-  --shiki-code-block-spacing: 0rem;
-  --shiki-code-comment: hsl(70, 30%, 80%);
-  --shiki-code-normal: hsl(70, 30%, 80%);
-  --shiki-code-punctuation: hsl(70, 30%, 80%);
-  --shiki-gutter-text-color: hsl(70, 30%, 80%);
-  --shiki-gutter-text-color-highlight: hsl(70, 30%, 80%);
-  --shiki-highlight-neutral: hsl(70, 30%, 80%);
-  --shiki-terminal-dots-color: hsl(70, 30%, 80%);
+  --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.045), 0 4px 24px rgba(0, 0, 0, 0.195), var(--shadow-edges);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, hsl(70, 30%, 80%));
+  --shiki-code-background: var(--code-background, hsl(40, 6%, 16%));
+  --shiki-code-block-spacing: var(--p-spacing, 0rem);
+  --shiki-code-comment: var(--text-faint, hsl(70, 30%, 80%));
+  --shiki-code-normal: var(--text-muted, hsl(70, 30%, 80%));
+  --shiki-code-punctuation: var(--text-muted, hsl(70, 30%, 80%));
+  --shiki-gutter-text-color: var(--text-faint, hsl(70, 30%, 80%));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, hsl(70, 30%, 80%));
+  --shiki-highlight-neutral: var(--shiki-code-normal, hsl(70, 30%, 80%));
+  --shiki-terminal-dots-color: var(--text-faint, hsl(70, 30%, 80%));
   --slider-thumb-y: -7px;
-  --status-bar-background: hsl(40, 6%, 12%);
-  --status-bar-radius: 0px 0 0 0;
-  --status-bar-text-color: hsl(70, 30%, 80%);
-  --suggestion-background: hsl(40, 6%, 16%);
-  --tab-background-active: hsl(40, 6%, 16%);
-  --tab-container-background: hsl(40, 6%, 12%);
+  --status-bar-background: var(--background-secondary, hsl(40, 6%, 12%));
+  --status-bar-radius: var(--radius-m, 0px 0 0 0) 0 0 0;
+  --status-bar-text-color: var(--text-muted, hsl(70, 30%, 80%));
+  --suggestion-background: var(--background-primary, hsl(40, 6%, 16%));
+  --tab-background-active: var(--background-primary, hsl(40, 6%, 16%));
+  --tab-container-background: var(--background-secondary, hsl(40, 6%, 12%));
   --tab-curve: 0rem;
-  --tab-radius: 0px;
-  --tab-switcher-background: hsl(40, 6%, 12%);
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(40, 6%, 12%), transparent);
+  --tab-radius: var(--radius-s, 0px);
+  --tab-switcher-background: var(--background-secondary, hsl(40, 6%, 12%));
   --tab-switcher-preview-background-shadow: none;
-  --tab-switcher-preview-radius: 0px;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(160, 36%, 56%);
-  --tab-text-color: hsl(70, 30%, 80%);
-  --tab-text-color-active: hsl(70, 30%, 80%);
-  --tab-text-color-focused: hsl(70, 30%, 80%);
-  --tab-text-color-focused-active: hsl(70, 30%, 80%);
-  --tab-text-color-focused-active-current: hsl(70, 30%, 92%);
-  --tab-text-color-focused-highlighted: hsl(160, 36%, 56%);
-  --table-add-button-border-color: hsl(70, 30%, 92%);
-  --table-border-color: hsl(70, 30%, 92%);
-  --table-drag-handle-background-active: hsl(160, 36%, 56%);
-  --table-drag-handle-color: hsl(70, 30%, 80%);
-  --table-header-background-hover: transparent;
-  --table-header-border-color: hsl(70, 30%, 92%);
-  --table-header-color: hsl(70, 30%, 92%);
-  --table-selection: hsla(160, 36%, 56%, 0.1);
-  --table-selection-border-color: hsl(160, 36%, 56%);
-  --table-text-color: hsl(70, 30%, 92%);
-  --tag-background: hsla(160, 36%, 56%, 0.1);
-  --tag-background-hover: hsla(160, 36%, 56%, 0.2);
-  --tag-border-color: hsla(160, 36%, 56%, 0.15);
-  --tag-border-color-hover: hsla(160, 36%, 56%, 0.15);
-  --tag-color: hsl(160, 36%, 56%);
-  --tag-color-hover: hsl(160, 36%, 56%);
-  --tertiary: var(--text-accent-hover, hsl(160, 36%, 56%));
-  --text-accent: hsl(160, 36%, 56%);
-  --text-accent-hover: hsl(160, 36%, 56%);
-  --text-error: hsl(0, 50%, 50%);
-  --text-faint: hsl(70, 30%, 80%);
-  --text-highlight-bg: hsl(40, 6%, 24%);
-  --text-muted: hsl(70, 30%, 80%);
-  --text-normal: hsl(70, 30%, 92%);
-  --text-selection: hsla(160, 36%, 56%, 1);
-  --text-success: hsl(100, 50%, 50%);
-  --text-warning: hsl(30, 50%, 50%);
-  --textHighlight: var(--text-highlight-bg, hsl(40, 6%, 24%));
-  --titleFont: var(--font-text, 'Quicksand');
-  --titlebar-background: hsl(40, 6%, 12%);
-  --titlebar-background-focused: hsl(40, 6%, 12%);
-  --titlebar-text-color: hsl(70, 30%, 80%);
-  --titlebar-text-color-focused: hsl(70, 30%, 92%);
-  --touch-radius-l: 0px;
-  --touch-radius-m: 0px;
-  --touch-radius-s: 0px;
-  --touch-radius-xl: 0px;
-  --touch-radius-xs: 0px;
-  --touch-radius-xxs: 0px;
-  --vault-profile-color: hsl(70, 30%, 92%);
-  --vault-profile-color-hover: hsl(70, 30%, 92%);
-  --workspace-background-translucent: transparent;
+  --tab-switcher-preview-radius: var(--radius-xl, 0px);
+  --tab-text-color: var(--text-faint, hsl(70, 30%, 80%));
+  --tab-text-color-active: var(--text-muted, hsl(70, 30%, 80%));
+  --tab-text-color-focused: var(--text-muted, hsl(70, 30%, 80%));
+  --tab-text-color-focused-active: var(--text-muted, hsl(70, 30%, 80%));
+  --tab-text-color-focused-active-current: var(--text-normal, hsl(70, 30%, 92%));
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(160, 36%, 56%));
+  --table-add-button-border-color: var(--table-border-color, hsl(70, 30%, 92%));
+  --table-background: var(--grotto-table-background-color, transparent);
+  --table-border-color: var(--grotto-table-border-color, hsl(70, 30%, 92%));
+  --table-border-width: var(--grotto-table-border-width, 1px);
+  --table-drag-handle-background-active: var(--table-selection-border-color, hsl(160, 36%, 56%));
+  --table-drag-handle-color: var(--text-faint, hsl(70, 30%, 80%));
+  --table-header-background-hover: var(--table-background, transparent);
+  --table-header-border-color: var(--table-border-color, hsl(70, 30%, 92%));
+  --table-header-color: var(--text-normal, hsl(70, 30%, 92%));
+  --table-selection-border-color: var(--interactive-accent, hsl(160, 36%, 56%));
+  --table-text-color: var(--grotto-table-color, hsl(70, 30%, 92%));
+  --tag-color: var(--text-accent, hsl(160, 36%, 56%));
+  --tag-color-hover: var(--text-accent, hsl(160, 36%, 56%));
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, hsl(160, 36%, 56%)));
+  --text-accent: var(--color-accent-1, hsl(160, 36%, 56%));
+  --text-accent-hover: var(--color-accent-2, hsl(160, 36%, 56%));
+  --text-error: var(--color-red, hsl(0, 50%, 50%));
+  --text-faint: var(--grotto-light-2, hsl(70, 30%, 80%));
+  --text-highlight-bg: var(--grotto-background-tertiary, hsl(40, 6%, 24%));
+  --text-muted: var(--grotto-light-2, hsl(70, 30%, 80%));
+  --text-normal: var(--grotto-light-1, hsl(70, 30%, 92%));
+  --text-selection: hsla(var(--color-accent-hsl), 1);
+  --text-success: var(--color-green, hsl(100, 50%, 50%));
+  --text-warning: var(--color-orange, hsl(30, 50%, 50%));
+  --textHighlight: var(--text-highlight-bg, var(--grotto-background-tertiary, hsl(40, 6%, 24%)));
+  --titleFont: var(--font-text, var(--grotto-font-main, 'Quicksand'));
+  --titlebar-background: var(--background-secondary, hsl(40, 6%, 12%));
+  --titlebar-background-focused: var(--background-secondary-alt, hsl(40, 6%, 12%));
+  --titlebar-text-color: var(--text-muted, hsl(70, 30%, 80%));
+  --titlebar-text-color-focused: var(--text-normal, hsl(70, 30%, 92%));
+  --touch-radius-l: var(--touch-size-l, 0px);
+  --touch-radius-m: var(--touch-size-m, 0px);
+  --touch-radius-s: var(--touch-size-s, 0px);
+  --touch-radius-xl: var(--touch-size-xl, 0px);
+  --touch-radius-xs: var(--touch-size-xs, 0px);
+  --touch-radius-xxs: var(--touch-size-xxs, 0px);
+  --vault-profile-color: var(--text-normal, hsl(70, 30%, 92%));
+  --vault-profile-color-hover: var(--vault-profile-color, hsl(70, 30%, 92%));
   --quartz-icon-color: currentColor;
 }
 
@@ -542,17 +527,17 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(32, 31, 29);
+  background-color: var(--tab-container-background, rgb(32, 31, 29));
   color: rgb(239, 241, 228);
 }
 
 html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: rgb(43, 42, 38);
+  background-color: var(--background-primary, rgb(43, 42, 38));
   color: rgb(239, 241, 228);
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(32, 31, 29);
+  background-color: var(--background-secondary, rgb(32, 31, 29));
   color: rgb(239, 241, 228);
 }
 
@@ -561,45 +546,45 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(32, 31, 29);
+  background-color: var(--tab-container-background, rgb(32, 31, 29));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(239, 241, 228);
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
-  color: rgb(102, 183, 156);
+  color: var(--grotto-bold-color, rgb(102, 183, 156));
   font-family: Quicksand;
-  font-weight: 800;
+  font-weight: var(--grotto-bold-weight, 800);
   outline: rgb(102, 183, 156) none 0px;
   text-decoration-color: rgb(102, 183, 156);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
-  color: rgb(102, 183, 156);
+  color: var(--grotto-italic-color, rgb(102, 183, 156));
   font-family: Quicksand;
-  font-weight: 500;
+  font-weight: var(--grotto-italic-weight, 500);
   outline: rgb(102, 183, 156) none 0px;
   text-decoration-color: rgb(102, 183, 156);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
-  color: rgb(102, 183, 156);
+  color: var(--grotto-italic-color, rgb(102, 183, 156));
   font-family: Quicksand;
-  font-weight: 500;
+  font-weight: var(--grotto-italic-weight, 500);
   outline: rgb(102, 183, 156) none 0px;
   text-decoration-color: rgb(102, 183, 156);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
-  color: rgb(102, 183, 156);
+  color: var(--grotto-bold-color, rgb(102, 183, 156));
   font-family: Quicksand;
-  font-weight: 800;
+  font-weight: var(--grotto-bold-weight, 800);
   outline: rgb(102, 183, 156) none 0px;
   text-decoration-color: rgb(102, 183, 156);
 }
 
 html[saved-theme="dark"] body .text-highlight {
-  background-color: rgb(65, 62, 58);
-  color: rgb(239, 241, 228);
+  background-color: var(--text-highlight-bg, rgb(65, 62, 58));
+  color: var(--text-normal, rgb(239, 241, 228));
   font-family: Quicksand;
   font-weight: 500;
   outline: rgb(239, 241, 228) none 0px;
@@ -615,7 +600,7 @@ html[saved-theme="dark"] body del {
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(239, 241, 228);
+  color: var(--text-normal, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
@@ -624,40 +609,40 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(102, 183, 156);
+  background-color: var(--checkbox-color, rgb(102, 183, 156));
   border-color: rgb(239, 241, 228);
 }
 
 html[saved-theme="dark"] body p {
-  color: rgb(214, 219, 189);
+  color: var(--text-muted, rgb(214, 219, 189));
   font-family: Quicksand;
   font-weight: 500;
   outline: rgb(214, 219, 189) none 0px;
   text-decoration-color: rgb(214, 219, 189);
 }`,
     links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
-  color: rgb(102, 183, 156);
+  color: var(--grotto-link-color, rgb(102, 183, 156));
   font-family: Quicksand;
-  font-weight: 500;
+  font-weight: var(--grotto-link-weight, 500);
   outline: rgb(102, 183, 156) none 0px;
   text-decoration-color: rgb(102, 183, 156);
 }
 
 html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(102, 183, 156);
+  color: var(--grotto-link-color, rgb(102, 183, 156));
   font-family: Quicksand;
-  font-weight: 500;
+  font-weight: var(--grotto-link-weight, 500);
   outline: rgb(102, 183, 156) none 0px;
   text-decoration-color: rgb(102, 183, 156);
 }
 
 html[saved-theme="dark"] body a.internal-link.broken {
-  color: rgb(102, 183, 156);
+  color: var(--link-unresolved-color, rgb(102, 183, 156));
   font-family: Quicksand;
-  font-weight: 500;
+  font-weight: var(--grotto-link-weight, 500);
   outline: rgb(102, 183, 156) none 0px;
   text-decoration: underline rgba(102, 183, 156, 0.3);
-  text-decoration-color: rgba(102, 183, 156, 0.3);
+  text-decoration-color: var(--link-unresolved-decoration-color, rgba(102, 183, 156, 0.3));
 }`,
     lists: `html[saved-theme="dark"] body dd {
   color: rgb(239, 241, 228);
@@ -683,10 +668,11 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-color: rgb(239, 241, 228);
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
-  color: rgb(214, 219, 189);
+  color: var(--text-faint, rgb(214, 219, 189));
 }
 
 html[saved-theme="dark"] body blockquote {
+  background-color: var(--grotto-blockquote-background-color, rgba(0, 0, 0, 0));
   font-family: Quicksand;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
@@ -699,7 +685,7 @@ html[saved-theme="dark"] body blockquote {
 html[saved-theme="dark"] body table {
   color: rgb(239, 241, 228);
   font-family: Quicksand;
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
   width: 187.766px;
 }
 
@@ -708,7 +694,7 @@ html[saved-theme="dark"] body td {
   border-left-color: rgb(239, 241, 228);
   border-right-color: rgb(239, 241, 228);
   border-top-color: rgb(239, 241, 228);
-  color: rgb(239, 241, 228);
+  color: var(--table-text-color, rgb(239, 241, 228));
   font-weight: 500;
 }
 
@@ -717,10 +703,10 @@ html[saved-theme="dark"] body th {
   border-left-color: rgb(239, 241, 228);
   border-right-color: rgb(239, 241, 228);
   border-top-color: rgb(239, 241, 228);
-  color: rgb(239, 241, 228);
+  color: var(--table-header-color, rgb(239, 241, 228));
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: rgb(65, 62, 58);
+  background-color: var(--grotto-code-background-color, rgb(65, 62, 58));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -733,8 +719,8 @@ html[saved-theme="dark"] body th {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
-  font-family: Quicksand;
+  color: var(--grotto-code-color, rgb(239, 241, 228));
+  font-family: var(--font-monospace, Quicksand);
   padding-bottom: 1.6px;
   padding-left: 3.2px;
   padding-right: 3.2px;
@@ -742,7 +728,7 @@ html[saved-theme="dark"] body th {
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: rgb(65, 62, 58);
+  background-color: var(--grotto-code-background-color, rgb(65, 62, 58));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -797,7 +783,7 @@ html[saved-theme="dark"] body video {
   border-top-color: rgb(239, 241, 228);
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: rgb(43, 42, 38);
+  background-color: var(--background-primary-alt, rgb(43, 42, 38));
   border-bottom-color: rgb(214, 219, 189);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -814,6 +800,7 @@ html[saved-theme="dark"] body .footnotes {
 }
 
 html[saved-theme="dark"] body .transclude {
+  background-color: var(--grotto-embed-background-color, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -829,6 +816,7 @@ html[saved-theme="dark"] body .transclude {
 }
 
 html[saved-theme="dark"] body .transclude-inner {
+  background-color: var(--grotto-embed-background-color, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-style: solid;
   border-left-color: rgb(239, 241, 228);
@@ -1409,12 +1397,12 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
   border-left-color: rgb(239, 241, 228);
   border-right-color: rgb(239, 241, 228);
   border-top-color: rgb(239, 241, 228);
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
   gap: 2px;
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(239, 241, 228);
+  color: var(--callout-title-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {
@@ -1422,9 +1410,9 @@ html[saved-theme="dark"] body .callout > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   background: rgb(43, 42, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(43, 42, 38);
+  background-color: var(--grotto-callout-background-color, rgb(43, 42, 38));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1437,7 +1425,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
@@ -1448,12 +1436,12 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   border-left-color: rgb(239, 241, 228);
   border-right-color: rgb(239, 241, 228);
   border-top-color: rgb(239, 241, 228);
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
   gap: 2px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(239, 241, 228);
+  color: var(--callout-title-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-content {
@@ -1461,9 +1449,9 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   background: rgb(43, 42, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(43, 42, 38);
+  background-color: var(--grotto-callout-background-color, rgb(43, 42, 38));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1476,7 +1464,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
@@ -1487,12 +1475,12 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   border-left-color: rgb(239, 241, 228);
   border-right-color: rgb(239, 241, 228);
   border-top-color: rgb(239, 241, 228);
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
   gap: 2px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(239, 241, 228);
+  color: var(--callout-title-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
@@ -1500,9 +1488,9 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   background: rgb(43, 42, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(43, 42, 38);
+  background-color: var(--grotto-callout-background-color, rgb(43, 42, 38));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1515,7 +1503,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
@@ -1526,12 +1514,12 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   border-left-color: rgb(239, 241, 228);
   border-right-color: rgb(239, 241, 228);
   border-top-color: rgb(239, 241, 228);
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
   gap: 2px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(239, 241, 228);
+  color: var(--callout-title-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content {
@@ -1539,9 +1527,9 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   background: rgb(43, 42, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(43, 42, 38);
+  background-color: var(--grotto-callout-background-color, rgb(43, 42, 38));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1554,7 +1542,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
@@ -1565,12 +1553,12 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   border-left-color: rgb(239, 241, 228);
   border-right-color: rgb(239, 241, 228);
   border-top-color: rgb(239, 241, 228);
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
   gap: 2px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(239, 241, 228);
+  color: var(--callout-title-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-content {
@@ -1578,9 +1566,9 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   background: rgb(43, 42, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(43, 42, 38);
+  background-color: var(--grotto-callout-background-color, rgb(43, 42, 38));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1593,7 +1581,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
@@ -1604,12 +1592,12 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   border-left-color: rgb(239, 241, 228);
   border-right-color: rgb(239, 241, 228);
   border-top-color: rgb(239, 241, 228);
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
   gap: 2px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(239, 241, 228);
+  color: var(--callout-title-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-content {
@@ -1617,9 +1605,9 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   background: rgb(43, 42, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(43, 42, 38);
+  background-color: var(--grotto-callout-background-color, rgb(43, 42, 38));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1632,7 +1620,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
@@ -1643,12 +1631,12 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   border-left-color: rgb(239, 241, 228);
   border-right-color: rgb(239, 241, 228);
   border-top-color: rgb(239, 241, 228);
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
   gap: 2px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(239, 241, 228);
+  color: var(--callout-title-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
@@ -1656,9 +1644,9 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
-  --callout-color: hsl(70, 30%, 92%);
+  --callout-color: var(--callout-default, hsl(70, 30%, 92%));
   background: rgb(43, 42, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(43, 42, 38);
+  background-color: var(--grotto-callout-background-color, rgb(43, 42, 38));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1671,7 +1659,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
@@ -1682,12 +1670,12 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   border-left-color: rgb(239, 241, 228);
   border-right-color: rgb(239, 241, 228);
   border-top-color: rgb(239, 241, 228);
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
   gap: 2px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(239, 241, 228);
+  color: var(--callout-title-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
@@ -1695,9 +1683,9 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   background: rgb(43, 42, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(43, 42, 38);
+  background-color: var(--grotto-callout-background-color, rgb(43, 42, 38));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1710,7 +1698,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
@@ -1721,12 +1709,12 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   border-left-color: rgb(239, 241, 228);
   border-right-color: rgb(239, 241, 228);
   border-top-color: rgb(239, 241, 228);
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
   gap: 2px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(239, 241, 228);
+  color: var(--callout-title-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-content {
@@ -1734,9 +1722,9 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background: rgb(43, 42, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(43, 42, 38);
+  background-color: var(--grotto-callout-background-color, rgb(43, 42, 38));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1749,7 +1737,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
@@ -1760,12 +1748,12 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   border-left-color: rgb(239, 241, 228);
   border-right-color: rgb(239, 241, 228);
   border-top-color: rgb(239, 241, 228);
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
   gap: 2px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(239, 241, 228);
+  color: var(--callout-title-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content {
@@ -1773,9 +1761,9 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   background: rgb(43, 42, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(43, 42, 38);
+  background-color: var(--grotto-callout-background-color, rgb(43, 42, 38));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1788,7 +1776,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
@@ -1799,12 +1787,12 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   border-left-color: rgb(239, 241, 228);
   border-right-color: rgb(239, 241, 228);
   border-top-color: rgb(239, 241, 228);
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
   gap: 2px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(239, 241, 228);
+  color: var(--callout-title-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-content {
@@ -1812,9 +1800,9 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   background: rgb(43, 42, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(43, 42, 38);
+  background-color: var(--grotto-callout-background-color, rgb(43, 42, 38));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1827,7 +1815,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
@@ -1838,12 +1826,12 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   border-left-color: rgb(239, 241, 228);
   border-right-color: rgb(239, 241, 228);
   border-top-color: rgb(239, 241, 228);
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
   gap: 2px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(239, 241, 228);
+  color: var(--callout-title-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
@@ -1851,9 +1839,9 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   background: rgb(43, 42, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(43, 42, 38);
+  background-color: var(--grotto-callout-background-color, rgb(43, 42, 38));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1866,7 +1854,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
@@ -1877,12 +1865,12 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   border-left-color: rgb(239, 241, 228);
   border-right-color: rgb(239, 241, 228);
   border-top-color: rgb(239, 241, 228);
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
   gap: 2px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(239, 241, 228);
+  color: var(--callout-title-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
@@ -1890,9 +1878,9 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   background: rgb(43, 42, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(43, 42, 38);
+  background-color: var(--grotto-callout-background-color, rgb(43, 42, 38));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1905,7 +1893,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
@@ -1916,12 +1904,12 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   border-left-color: rgb(239, 241, 228);
   border-right-color: rgb(239, 241, 228);
   border-top-color: rgb(239, 241, 228);
-  color: rgb(239, 241, 228);
+  color: var(--grotto-callout-color, rgb(239, 241, 228));
   gap: 2px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(239, 241, 228);
+  color: var(--callout-title-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] > .callout-content {
@@ -1993,12 +1981,12 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-color: rgb(239, 241, 228);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(239, 241, 228);
+  color: var(--text-normal, rgb(239, 241, 228));
   font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: rgb(43, 42, 38);
+  background-color: var(--grotto-prompt-background-color, rgb(43, 42, 38));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -2018,7 +2006,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > * {
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container {
-  color: rgb(239, 241, 228);
+  color: var(--grotto-text-color-on-accent, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
@@ -2041,12 +2029,12 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
-  color: rgb(239, 241, 228);
+  color: var(--grotto-text-color-on-accent, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: rgb(102, 183, 156);
-  color: rgb(239, 241, 228);
+  background-color: var(--grotto-accent, rgb(102, 183, 156));
+  color: var(--grotto-text-color-on-accent, rgb(239, 241, 228));
   font-weight: 500;
 }
 
@@ -2062,7 +2050,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
-  background-color: rgb(239, 241, 228);
+  background-color: var(--text-normal, rgb(239, 241, 228));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-width: 0px;
   border-left-color: rgb(239, 241, 228);
@@ -2074,7 +2062,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
-  background-color: rgb(102, 183, 156);
+  background-color: var(--grotto-accent, rgb(102, 183, 156));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -2091,20 +2079,20 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   border-top-right-radius: 0px;
   border-top-style: solid;
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-text-color-on-accent, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: rgb(102, 183, 156);
+  background-color: var(--grotto-accent, rgb(102, 183, 156));
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-text-color-on-accent, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgb(239, 241, 228);
+  background-color: var(--grotto-properties-color, rgb(239, 241, 228));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -2118,7 +2106,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-top-right-radius: 0px;
   border-top-width: 1px;
   font-family: Quicksand;
-  font-weight: 500;
+  font-weight: var(--pill-weight, 500);
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -2126,42 +2114,42 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
-  color: rgb(239, 241, 228);
-  font-family: Quicksand;
+  color: var(--grotto-header-1-color, rgb(239, 241, 228));
+  font-family: var(--h1-font, Quicksand);
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(239, 241, 228);
+  color: var(--inline-title-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body h2 {
-  color: rgb(43, 42, 38);
-  font-family: Quicksand;
+  color: var(--grotto-header-2-color, rgb(43, 42, 38));
+  font-family: var(--h2-font, Quicksand);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  color: rgb(239, 241, 228);
-  font-family: Quicksand;
+  color: var(--inline-title-color, rgb(239, 241, 228));
+  font-family: var(--inline-title-font, Quicksand);
 }
 
 html[saved-theme="dark"] body h3 {
-  color: rgb(239, 241, 228);
-  font-family: Quicksand;
+  color: var(--grotto-header-3-color, rgb(239, 241, 228));
+  font-family: var(--h3-font, Quicksand);
 }
 
 html[saved-theme="dark"] body h4 {
-  color: rgb(239, 241, 228);
-  font-family: Quicksand;
+  color: var(--grotto-header-4-color, rgb(239, 241, 228));
+  font-family: var(--h4-font, Quicksand);
 }
 
 html[saved-theme="dark"] body h5 {
-  color: rgb(239, 241, 228);
-  font-family: Quicksand;
+  color: var(--grotto-header-5-color, rgb(239, 241, 228));
+  font-family: var(--h5-font, Quicksand);
 }
 
 html[saved-theme="dark"] body h6 {
-  color: rgb(239, 241, 228);
-  font-family: Quicksand;
+  color: var(--grotto-header-6-color, rgb(239, 241, 228));
+  font-family: var(--h6-font, Quicksand);
 }
 
 html[saved-theme="dark"] body hr {
@@ -2171,7 +2159,7 @@ html[saved-theme="dark"] body hr {
   border-top-color: rgba(0, 0, 0, 0);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
-  --callout-color: hsl(70, 30%, 92%);
+  --callout-color: var(--callout-default, hsl(70, 30%, 92%));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -2190,22 +2178,22 @@ html[saved-theme="dark"] body hr {
   padding-top: 8px;
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(239, 241, 228);
+  color: var(--grotto-filenav-color, rgb(239, 241, 228));
   font-family: Quicksand;
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(239, 241, 228);
+  color: var(--grotto-filenav-color, rgb(239, 241, 228));
   font-family: Quicksand;
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(239, 241, 228);
 }
 
 html[saved-theme="dark"] body li.depth-0 {
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(239, 241, 228);
@@ -2216,10 +2204,10 @@ html[saved-theme="dark"] body li.depth-0 {
   border-top-color: rgb(239, 241, 228);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-icon-color, rgb(239, 241, 228));
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: rgb(32, 31, 29);
+  background-color: var(--grotto-statusbar-background-color, rgb(32, 31, 29));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-width: 1px;
   border-left-color: rgb(239, 241, 228);
@@ -2227,12 +2215,12 @@ html[saved-theme="dark"] body li.depth-0 {
   border-right-width: 1px;
   border-top-color: rgb(239, 241, 228);
   border-top-left-radius: 0px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-statusbar-color, rgb(239, 241, 228));
   font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body footer ul li a {
-  color: rgb(239, 241, 228);
+  color: var(--grotto-statusbar-color, rgb(239, 241, 228));
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(239, 241, 228);
@@ -2249,7 +2237,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(239, 241, 228);
+  color: var(--grotto-filenav-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -2269,7 +2257,7 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(239, 241, 228);
+  color: var(--grotto-filenav-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -2287,7 +2275,7 @@ html[saved-theme="dark"] body ul.section-ul {
   border-top-color: rgb(239, 241, 228);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-icon-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .darkmode svg {
@@ -2307,7 +2295,7 @@ html[saved-theme="dark"] body .darkmode svg {
 }
 
 html[saved-theme="dark"] body .breadcrumb-element p {
-  color: rgb(214, 219, 189);
+  color: var(--text-faint, rgb(214, 219, 189));
   font-family: Quicksand;
 }`,
     canvas: `html[saved-theme="dark"] body .canvas-node {
@@ -2315,11 +2303,11 @@ html[saved-theme="dark"] body .breadcrumb-element p {
 }
 
 html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(239, 241, 228);
+  color: var(--grotto-embed-color, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(239, 241, 228);
+  color: var(--text-normal, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body .canvas-node-group {
@@ -2327,15 +2315,15 @@ html[saved-theme="dark"] body .canvas-node-group {
 }
 
 html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(32, 31, 29);
+  background-color: var(--background-secondary, rgb(32, 31, 29));
   border-color: rgb(239, 241, 228);
 }`,
     bases: `html[saved-theme="dark"] body .bases-table thead th {
   border-color: rgb(239, 241, 228);
-  color: rgb(239, 241, 228);
+  color: var(--table-header-color, rgb(239, 241, 228));
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
-  color: rgb(214, 219, 189);
+  color: var(--text-muted, rgb(214, 219, 189));
   font-family: Quicksand;
 }
 
@@ -2358,9 +2346,9 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgb(239, 241, 228);
+  background-color: var(--grotto-properties-color, rgb(239, 241, 228));
   border-radius: 0px;
-  color: rgb(43, 42, 38);
+  color: var(--background-primary, rgb(43, 42, 38));
 }
 
 html[saved-theme="dark"] body .note-properties-value {
@@ -2368,8 +2356,8 @@ html[saved-theme="dark"] body .note-properties-value {
 }
 
 html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(43, 42, 38);
-  color: rgb(239, 241, 228);
+  background-color: var(--background-primary, rgb(43, 42, 38));
+  color: var(--text-normal, rgb(239, 241, 228));
 }
 
 html[saved-theme="dark"] body ol.overflow {
@@ -2379,12 +2367,12 @@ html[saved-theme="dark"] body ol.overflow {
   border-top-color: rgb(239, 241, 228);
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
-  background-color: rgb(32, 31, 29);
+  background-color: var(--background-secondary, rgb(32, 31, 29));
   border-color: rgb(239, 241, 228);
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
-  background-color: rgb(32, 31, 29);
+  background-color: var(--tab-container-background, rgb(32, 31, 29));
 }
 
 html[saved-theme="dark"] body .stacked-page.active {
@@ -2399,11 +2387,11 @@ html[saved-theme="dark"] body .stacked-page.active {
 }
 
 html[saved-theme="dark"] body .navigation-progress {
-  background-color: rgb(32, 31, 29);
+  background-color: var(--grotto-statusbar-background-color, rgb(32, 31, 29));
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
-  color: rgb(239, 241, 228);
+  color: var(--text-normal, rgb(239, 241, 228));
   font-family: Quicksand;
 }
 
@@ -2427,12 +2415,12 @@ html[saved-theme="dark"] body input[type=text] {
   border-right-width: 1px;
   border-top-color: rgb(239, 241, 228);
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
+  color: var(--text-normal, rgb(239, 241, 228));
   font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body kbd {
-  background-color: rgb(43, 42, 38);
+  background-color: var(--code-background, rgb(43, 42, 38));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -2441,8 +2429,8 @@ html[saved-theme="dark"] body kbd {
   border-top-color: rgb(239, 241, 228);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(239, 241, 228);
-  font-family: Quicksand;
+  color: var(--code-normal, rgb(239, 241, 228));
+  font-family: var(--font-monospace, Quicksand);
 }
 
 html[saved-theme="dark"] body progress {
@@ -2466,7 +2454,7 @@ html[saved-theme="dark"] body sup {
 }
 
 html[saved-theme="dark"] body ul.tags > li {
-  background-color: rgb(239, 241, 228);
+  background-color: var(--grotto-tag-background-color, rgb(239, 241, 228));
   border-bottom-color: rgb(239, 241, 228);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -2479,535 +2467,521 @@ html[saved-theme="dark"] body ul.tags > li {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(43, 42, 38);
+  color: var(--grotto-tag-color, rgb(43, 42, 38));
 }`,
   },
   light: {
     base: `:root:root {
-  --accent-h: 160;
-  --accent-l: 56%;
-  --accent-s: 36%;
-  --background-modifier-active-hover: hsla(160, 36%, 56%, 0.1);
+  --accent-h: var(--grotto-accent-h, 160);
+  --accent-l: var(--grotto-accent-l, 56%);
+  --accent-s: var(--grotto-accent-s, 36%);
   --background-modifier-box-shadow: none;
   --background-modifier-cover: hsla(0, 0%, 0%, 0.5);
-  --background-modifier-error: hsl(0, 50%, 50%);
-  --background-modifier-error-hover: hsl(0, 50%, 50%);
-  --background-modifier-success: hsl(100, 50%, 50%);
-  --background-primary: hsl(70, 30%, 92%);
-  --background-primary-alt: hsl(70, 30%, 92%);
-  --background-secondary: hsl(70, 30%, 86%);
-  --background-secondary-alt: hsl(70, 30%, 86%);
-  --bases-cards-background: hsl(70, 30%, 92%);
-  --bases-cards-cover-background: hsl(70, 30%, 92%);
-  --bases-cards-radius: 0px;
-  --bases-embed-border-radius: 0px;
-  --bases-group-heading-property-color: hsl(40, 6%, 24%);
-  --bases-table-border-color: hsl(40, 6%, 16%);
-  --bases-table-cell-background-active: hsl(70, 30%, 92%);
-  --bases-table-cell-background-disabled: hsl(70, 30%, 92%);
-  --bases-table-cell-background-selected: hsla(160, 36%, 56%, 0.1);
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(160, 36%, 56%);
-  --bases-table-container-border-radius: 0px;
-  --bases-table-group-background: hsl(70, 30%, 92%);
-  --bases-table-header-background: hsl(70, 30%, 92%);
-  --bases-table-header-color: hsl(40, 6%, 24%);
-  --bases-table-summary-background: hsl(70, 30%, 92%);
-  --blockquote-border-color: hsl(160, 36%, 56%);
-  --blur-background: none;
-  --bodyFont: var(--font-text, 'Quicksand');
-  --callout-default: hsl(40, 6%, 16%);
-  --callout-radius: 0px;
-  --canvas-background: hsl(70, 30%, 92%);
-  --canvas-card-label-color: hsl(40, 6%, 24%);
-  --canvas-controls-radius: 0px;
-  --caret-color: hsl(40, 6%, 16%);
-  --checkbox-border-color: hsl(40, 6%, 24%);
-  --checkbox-border-color-hover: hsl(40, 6%, 24%);
-  --checkbox-color: hsl(160, 36%, 56%);
-  --checkbox-color-hover: hsl(160, 36%, 56%);
-  --checkbox-marker-color: transparent;
-  --checkbox-radius: 0px;
-  --checklist-done-color: hsl(40, 6%, 24%);
-  --clickable-icon-radius: 0px;
-  --code-background: hsl(70, 30%, 92%);
-  --code-border-color: hsl(40, 6%, 16%);
-  --code-border-width: 1px;
-  --code-comment: hsl(40, 6%, 24%);
-  --code-function: hsl(50, 30%, 45%);
-  --code-important: hsl(30, 30%, 60%);
-  --code-keyword: hsl(330, 30%, 60%);
-  --code-normal: hsl(40, 6%, 16%);
-  --code-operator: hsl(0, 30%, 60%);
-  --code-property: hsl(170, 30%, 50%);
-  --code-punctuation: hsl(40, 6%, 24%);
-  --code-string: hsl(120, 30%, 50%);
-  --code-tag: hsl(0, 30%, 60%);
-  --code-value: hsl(270, 30%, 60%);
-  --codeFont: var(--font-monospace, 'Quicksand');
-  --collapse-icon-color: hsl(40, 6%, 24%);
-  --collapse-icon-color-collapsed: hsl(160, 36%, 56%);
-  --color-accent: hsl(160, 36%, 56%);
-  --color-accent-1: hsl(160, 36%, 56%);
-  --color-accent-2: hsl(160, 36%, 56%);
-  --color-accent-hsl: 160, 36%, 56%;
-  --dark: var(--text-normal, hsl(40, 6%, 16%));
-  --darkgray: var(--text-normal, hsl(40, 6%, 16%));
-  --divider-color-hover: hsl(160, 36%, 56%);
+  --background-modifier-error: var(--text-error, hsl(0, 50%, 50%));
+  --background-modifier-error-hover: var(--text-error, hsl(0, 50%, 50%));
+  --background-modifier-success: var(--text-success, hsl(100, 50%, 50%));
+  --background-primary: var(--grotto-light-1, hsl(70, 30%, 92%));
+  --background-primary-alt: var(--background-primary, hsl(70, 30%, 92%));
+  --background-secondary: var(--grotto-light-0, hsl(70, 30%, 86%));
+  --background-secondary-alt: var(--background-secondary, hsl(70, 30%, 86%));
+  --bases-cards-background: var(--background-primary, hsl(70, 30%, 92%));
+  --bases-cards-cover-background: var(--background-primary-alt, hsl(70, 30%, 92%));
+  --bases-cards-radius: var(--radius-m, 0px);
+  --bases-embed-border-radius: var(--radius-s, 0px);
+  --bases-group-heading-property-color: var(--text-muted, hsl(40, 6%, 24%));
+  --bases-table-border-color: var(--table-border-color, hsl(40, 6%, 16%));
+  --bases-table-cell-background-active: var(--background-primary, hsl(70, 30%, 92%));
+  --bases-table-cell-background-disabled: var(--background-primary-alt, hsl(70, 30%, 92%));
+  --bases-table-cell-background-selected: var(--table-selection, hsla(160, 36%, 56%, 0.1));
+  --bases-table-container-border-radius: var(--radius-s, 0px);
+  --bases-table-group-background: var(--background-primary-alt, hsl(70, 30%, 92%));
+  --bases-table-header-background: var(--background-primary, hsl(70, 30%, 92%));
+  --bases-table-header-color: var(--text-muted, hsl(40, 6%, 24%));
+  --bases-table-summary-background: var(--background-primary, hsl(70, 30%, 92%));
+  --blockquote-border-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --bodyFont: var(--font-text, var(--grotto-font-main, 'Quicksand'));
+  --callout-default: var(--grotto-callout-color, hsl(40, 6%, 16%));
+  --callout-radius: var(--radius-s, 0px);
+  --canvas-background: var(--background-primary, hsl(70, 30%, 92%));
+  --canvas-card-label-color: var(--text-faint, hsl(40, 6%, 24%));
+  --canvas-controls-radius: var(--radius-s, 0px);
+  --caret-color: var(--text-normal, hsl(40, 6%, 16%));
+  --checkbox-border-color: var(--text-faint, hsl(40, 6%, 24%));
+  --checkbox-border-color-hover: var(--text-muted, hsl(40, 6%, 24%));
+  --checkbox-color: var(--interactive-accent, hsl(160, 36%, 56%));
+  --checkbox-color-hover: var(--interactive-accent-hover, hsl(160, 36%, 56%));
+  --checkbox-marker-color: var(--background-primary, transparent);
+  --checkbox-radius: var(--radius-s, 0px);
+  --checklist-done-color: var(--text-muted, hsl(40, 6%, 24%));
+  --clickable-icon-radius: var(--radius-s, 0px);
+  --code-background: var(--background-primary-alt, hsl(70, 30%, 92%));
+  --code-border-color: var(--grotto-code-border-color, hsl(40, 6%, 16%));
+  --code-border-width: var(--grotto-global-border-width, 1px);
+  --code-comment: var(--text-faint, hsl(40, 6%, 24%));
+  --code-function: var(--color-yellow, hsl(50, 30%, 45%));
+  --code-important: var(--color-orange, hsl(30, 30%, 60%));
+  --code-keyword: var(--color-pink, hsl(330, 30%, 60%));
+  --code-normal: var(--text-normal, hsl(40, 6%, 16%));
+  --code-operator: var(--color-red, hsl(0, 30%, 60%));
+  --code-property: var(--color-cyan, hsl(170, 30%, 50%));
+  --code-punctuation: var(--text-muted, hsl(40, 6%, 24%));
+  --code-string: var(--color-green, hsl(120, 30%, 50%));
+  --code-tag: var(--color-red, hsl(0, 30%, 60%));
+  --code-value: var(--color-purple, hsl(270, 30%, 60%));
+  --codeFont: var(--font-monospace, var(--grotto-font-main, 'Quicksand'));
+  --collapse-icon-color: var(--text-faint, hsl(40, 6%, 24%));
+  --collapse-icon-color-collapsed: var(--text-accent, hsl(160, 36%, 56%));
+  --color-accent: hsl(var(--grotto-accent-h), var(--grotto-accent-s), var(--grotto-accent-l));
+  --color-accent-1: hsl(var(--grotto-accent-h), var(--grotto-accent-s), var(--grotto-accent-l));
+  --color-accent-2: hsl(var(--grotto-accent-h), var(--grotto-accent-s), var(--grotto-accent-l));
+  --color-accent-hsl: var(--grotto-accent-h), var(--grotto-accent-s), var(--grotto-accent-l);
+  --dark: var(--text-normal, var(--grotto-dark-1, hsl(40, 6%, 16%)));
+  --darkgray: var(--text-normal, var(--grotto-dark-1, hsl(40, 6%, 16%)));
+  --divider-color-hover: var(--interactive-accent, hsl(160, 36%, 56%));
   --divider-width: 0px;
   --divider-width-hover: 2px;
-  --embed-border-start: 2px solid hsl(160, 36%, 56%);
-  --file-header-background: hsl(70, 30%, 92%);
-  --file-header-background-focused: hsl(70, 30%, 92%);
-  --file-header-font: 'Quicksand';
-  --flair-color: hsl(40, 6%, 16%);
-  --font-interface: 'Quicksand';
-  --font-interface-override: 'Quicksand';
-  --font-mermaid: 'Quicksand';
-  --font-monospace: 'Quicksand';
-  --font-monospace-override: 'Quicksand';
-  --font-print: 'Quicksand';
-  --font-print-override: 'Quicksand';
-  --font-text: 'Quicksand';
-  --font-text-override: 'Quicksand';
-  --footnote-id-color: hsl(40, 6%, 24%);
-  --footnote-id-color-no-occurrences: hsl(40, 6%, 24%);
-  --footnote-radius: 0px;
-  --graph-node: hsl(40, 6%, 16%);
-  --graph-node-attachment: hsl(100, 50%, 50%);
-  --graph-node-focused: hsl(160, 36%, 56%);
-  --graph-node-tag: hsl(160, 36%, 56%);
-  --graph-node-unresolved: hsl(40, 6%, 24%);
-  --graph-text: hsl(40, 6%, 16%);
-  --gray: var(--text-muted, hsl(40, 6%, 24%));
+  --file-header-background: var(--background-primary, hsl(70, 30%, 92%));
+  --file-header-background-focused: var(--background-primary, hsl(70, 30%, 92%));
+  --file-header-font: var(--font-interface, 'Quicksand');
+  --flair-color: var(--text-normal, hsl(40, 6%, 16%));
+  --font-interface: var(--grotto-font-main, 'Quicksand');
+  --font-interface-override: var(--grotto-font-main, 'Quicksand');
+  --font-mermaid: var(--font-text, 'Quicksand');
+  --font-monospace: var(--grotto-font-main, 'Quicksand');
+  --font-monospace-override: var(--grotto-font-main, 'Quicksand');
+  --font-print: var(--grotto-font-main, 'Quicksand');
+  --font-print-override: var(--grotto-font-main, 'Quicksand');
+  --font-text: var(--grotto-font-main, 'Quicksand');
+  --font-text-override: var(--grotto-font-main, 'Quicksand');
+  --footnote-id-color: var(--text-muted, hsl(40, 6%, 24%));
+  --footnote-id-color-no-occurrences: var(--text-faint, hsl(40, 6%, 24%));
+  --footnote-radius: var(--radius-s, 0px);
+  --graph-node: var(--grotto-graph-node-color, hsl(40, 6%, 16%));
+  --graph-node-attachment: var(--text-success, hsl(100, 50%, 50%));
+  --graph-node-focused: var(--grotto-accent, hsl(160, 36%, 56%));
+  --graph-node-tag: var(--grotto-accent, hsl(160, 36%, 56%));
+  --graph-node-unresolved: var(--text-faint, hsl(40, 6%, 24%));
+  --graph-text: var(--text-normal, hsl(40, 6%, 16%));
+  --gray: var(--text-muted, var(--grotto-dark-2, hsl(40, 6%, 24%)));
   --grotto-accent: hsl(160, 36%, 56%);
   --grotto-accent-h: 160;
   --grotto-accent-l: 56%;
   --grotto-accent-s: 36%;
-  --grotto-background-tertiary: hsl(70, 30%, 80%);
-  --grotto-backlink-border-color: hsl(40, 6%, 16%);
-  --grotto-bases-background-color: hsl(70, 30%, 92%);
-  --grotto-bases-border-color: hsl(40, 6%, 16%);
-  --grotto-bases-border-radius: 0rem;
-  --grotto-bases-color: hsl(40, 6%, 16%);
-  --grotto-bases-header-background-color: hsl(70, 30%, 80%);
+  --grotto-background-tertiary: var(--grotto-light-2, hsl(70, 30%, 80%));
+  --grotto-backlink-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-bases-background-color: var(--background-primary, hsl(70, 30%, 92%));
+  --grotto-bases-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-bases-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-bases-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-bases-header-background-color: var(--grotto-background-tertiary, hsl(70, 30%, 80%));
   --grotto-blockquote-background-color: transparent;
-  --grotto-blockquote-color: hsl(40, 6%, 16%);
+  --grotto-blockquote-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-blur: 0px;
-  --grotto-bold-color: hsl(160, 36%, 56%);
+  --grotto-bold-color: var(--grotto-accent, hsl(160, 36%, 56%));
   --grotto-bold-weight: 800;
-  --grotto-button-background-color: hsl(160, 36%, 56%);
-  --grotto-button-border-color: hsl(40, 6%, 16%);
-  --grotto-button-border-radius: 0rem;
-  --grotto-button-border-width: 1px;
-  --grotto-button-color: hsl(70, 30%, 92%);
+  --grotto-button-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-button-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-button-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-button-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-button-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
   --grotto-button-outline-width: 1px;
   --grotto-calendar-background-color: transparent;
-  --grotto-calendar-border-color: hsl(40, 6%, 16%);
-  --grotto-calendar-border-radius: 0rem;
-  --grotto-calendar-border-width: 1px;
-  --grotto-calendar-color: hsl(40, 6%, 16%);
-  --grotto-calendar-day-active-color: hsl(40, 6%, 16%);
+  --grotto-calendar-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-calendar-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-calendar-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-calendar-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-calendar-day-active-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-calendar-day-border-color: transparent;
-  --grotto-calendar-day-border-radius: 0rem;
-  --grotto-calendar-day-color: hsl(40, 6%, 16%);
+  --grotto-calendar-day-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-calendar-day-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-calendar-dayofweek-background-color: transparent;
-  --grotto-calendar-dayofweek-border-color: hsl(40, 6%, 16%);
-  --grotto-calendar-dayofweek-border-radius: 0rem;
-  --grotto-calendar-dayofweek-color: hsl(40, 6%, 16%);
+  --grotto-calendar-dayofweek-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-calendar-dayofweek-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-calendar-dayofweek-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-calendar-dayofweek-outline-color: transparent;
-  --grotto-calendar-month-color: hsl(40, 6%, 16%);
+  --grotto-calendar-month-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-calendar-pointer-events: auto;
-  --grotto-calendar-today-background-color: hsl(160, 36%, 56%);
-  --grotto-calendar-today-border-color: hsl(40, 6%, 16%);
-  --grotto-calendar-today-color: hsl(70, 30%, 92%);
+  --grotto-calendar-today-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-calendar-today-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-calendar-today-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
   --grotto-calendar-view-height: 0vh;
-  --grotto-calendar-weekend-border-color: hsl(40, 6%, 16%);
+  --grotto-calendar-weekend-border-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-calendar-weekend-border-width: 1px;
-  --grotto-calendar-year-color: hsl(160, 36%, 56%);
-  --grotto-callout-background-color: hsl(70, 30%, 92%);
-  --grotto-callout-border-color: hsl(40, 6%, 16%);
-  --grotto-callout-color: hsl(40, 6%, 16%);
+  --grotto-calendar-year-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-callout-background-color: var(--background-primary, hsl(70, 30%, 92%));
+  --grotto-callout-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-callout-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-callout-icon: none;
   --grotto-callout-padding: 8px 16px;
-  --grotto-callout-radius: 0rem;
-  --grotto-callout-title-size: 1.5rem;
-  --grotto-canvas-background-color: hsl(70, 30%, 92%);
-  --grotto-canvas-border-color: hsl(40, 6%, 16%);
-  --grotto-canvas-border-radius: 0rem;
-  --grotto-canvas-color: hsl(40, 6%, 16%);
-  --grotto-canvas-controls-background-color: hsl(70, 30%, 80%);
-  --grotto-canvas-controls-color: hsl(40, 6%, 16%);
-  --grotto-canvas-path-color: hsl(40, 6%, 16%);
-  --grotto-canvas-path-node-color: hsl(160, 36%, 56%);
-  --grotto-checkbox-border-color: hsl(40, 6%, 16%);
-  --grotto-checkbox-border-radius: 0rem;
-  --grotto-code-background-color: hsl(70, 30%, 80%);
-  --grotto-code-border-color: hsl(40, 6%, 16%);
+  --grotto-callout-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-callout-title-size: var(--grotto-header-size, 1.5rem);
+  --grotto-canvas-background-color: var(--background-primary, hsl(70, 30%, 92%));
+  --grotto-canvas-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-canvas-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-canvas-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-canvas-controls-background-color: var(--grotto-background-tertiary, hsl(70, 30%, 80%));
+  --grotto-canvas-controls-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-canvas-path-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-canvas-path-node-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-checkbox-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-checkbox-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-code-background-color: var(--grotto-background-tertiary, hsl(70, 30%, 80%));
+  --grotto-code-border-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-code-border-radius: 0rem;
-  --grotto-code-color: hsl(40, 6%, 16%);
+  --grotto-code-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-code-weight: 500;
-  --grotto-comment-color: hsl(40, 6%, 16%);
+  --grotto-comment-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-comment-weight: 500;
   --grotto-dark-0: hsl(40, 6%, 12%);
   --grotto-dark-1: hsl(40, 6%, 16%);
   --grotto-dark-2: hsl(40, 6%, 24%);
-  --grotto-dragging-background-color: hsl(160, 36%, 56%);
-  --grotto-dragging-border-color: hsl(40, 6%, 16%);
-  --grotto-dragging-border-radius: 0rem;
-  --grotto-dragging-color: hsl(70, 30%, 92%);
-  --grotto-drawer-background-color: hsl(160, 36%, 56%);
-  --grotto-drawer-border-color: hsl(40, 6%, 16%);
-  --grotto-drawer-border-radius: 0rem;
-  --grotto-drawer-color: hsl(70, 30%, 92%);
-  --grotto-dropdown-background-color: hsl(160, 36%, 56%);
-  --grotto-dropdown-border-color: hsl(40, 6%, 16%);
-  --grotto-dropdown-border-radius: 0rem;
-  --grotto-dropdown-border-width: 1px;
-  --grotto-dropdown-color: hsl(70, 30%, 92%);
-  --grotto-dropdown-option-background-color: hsl(70, 30%, 92%);
-  --grotto-dropdown-option-color: hsl(40, 6%, 16%);
+  --grotto-dragging-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-dragging-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-dragging-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-dragging-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
+  --grotto-drawer-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-drawer-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-drawer-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-drawer-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
+  --grotto-dropdown-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-dropdown-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-dropdown-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-dropdown-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-dropdown-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
+  --grotto-dropdown-option-background-color: var(--background-primary, hsl(70, 30%, 92%));
+  --grotto-dropdown-option-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-dropdown-outline-width: 1px;
   --grotto-embed-background-color: transparent;
-  --grotto-embed-border-color: hsl(40, 6%, 16%);
-  --grotto-embed-border-radius: 0rem;
-  --grotto-embed-color: hsl(40, 6%, 16%);
-  --grotto-embed-title-color: hsl(40, 6%, 16%);
+  --grotto-embed-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-embed-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-embed-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-embed-title-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-embed-title-size: 1.5rem;
   --grotto-embed-title-visibility: block;
-  --grotto-filenav-active-background-color: hsl(160, 36%, 56%);
-  --grotto-filenav-active-color: hsl(70, 30%, 92%);
-  --grotto-filenav-background-color: hsl(70, 30%, 86%);
-  --grotto-filenav-border-color: hsl(40, 6%, 16%);
-  --grotto-filenav-border-radius: 0rem;
-  --grotto-filenav-button-background-color: hsl(70, 30%, 80%);
-  --grotto-filenav-color: hsl(40, 6%, 16%);
-  --grotto-filenav-tag-background-color: hsl(40, 6%, 16%);
-  --grotto-filenav-tag-color: hsl(70, 30%, 86%);
+  --grotto-filenav-active-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-filenav-active-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
+  --grotto-filenav-background-color: var(--background-secondary, hsl(70, 30%, 86%));
+  --grotto-filenav-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-filenav-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-filenav-button-background-color: var(--grotto-background-tertiary, hsl(70, 30%, 80%));
+  --grotto-filenav-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-filenav-tag-background-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-filenav-tag-color: var(--background-secondary, hsl(70, 30%, 86%));
   --grotto-font-main: 'Quicksand';
   --grotto-font-weight: 500;
   --grotto-global-border-radius: 0rem;
   --grotto-global-border-width: 1px;
-  --grotto-graph-controls-background-color: hsl(70, 30%, 80%);
-  --grotto-graph-controls-border-color: hsl(40, 6%, 16%);
-  --grotto-graph-controls-border-radius: 0rem;
-  --grotto-graph-controls-color: hsl(40, 6%, 16%);
-  --grotto-graph-line-color: hsl(40, 6%, 16%);
-  --grotto-graph-node-color: hsl(40, 6%, 16%);
-  --grotto-graph-sidebar-controls-background-color: hsl(70, 30%, 80%);
-  --grotto-graph-sidebar-controls-border-color: hsl(40, 6%, 16%);
-  --grotto-graph-sidebar-controls-color: hsl(40, 6%, 16%);
-  --grotto-header-1-background-color: hsl(160, 36%, 56%);
-  --grotto-header-1-border-color: hsl(40, 6%, 16%);
-  --grotto-header-1-border-radius: 0rem;
-  --grotto-header-1-color: hsl(70, 30%, 92%);
-  --grotto-header-1-size: 1.5rem;
-  --grotto-header-2-background-color: hsl(40, 6%, 16%);
-  --grotto-header-2-border-color: hsl(40, 6%, 16%);
-  --grotto-header-2-border-radius: 0rem;
-  --grotto-header-2-color: hsl(70, 30%, 92%);
-  --grotto-header-2-size: 1.5rem;
+  --grotto-graph-controls-background-color: var(--grotto-background-tertiary, hsl(70, 30%, 80%));
+  --grotto-graph-controls-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-graph-controls-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-graph-controls-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-graph-line-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-graph-node-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-graph-sidebar-controls-background-color: var(--grotto-background-tertiary, hsl(70, 30%, 80%));
+  --grotto-graph-sidebar-controls-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-graph-sidebar-controls-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-header-1-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-header-1-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-header-1-border-radius: var(--grotto-header-border-radius, 0rem);
+  --grotto-header-1-color: var(--grotto-light-1, hsl(70, 30%, 92%));
+  --grotto-header-1-size: var(--grotto-header-size, 1.5rem);
+  --grotto-header-2-background-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-header-2-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-header-2-border-radius: var(--grotto-header-border-radius, 0rem);
+  --grotto-header-2-color: var(--background-primary, hsl(70, 30%, 92%));
+  --grotto-header-2-size: var(--grotto-header-size, 1.5rem);
   --grotto-header-3-background-color: transparent;
-  --grotto-header-3-border-color: hsl(40, 6%, 16%);
-  --grotto-header-3-border-radius: 0rem;
-  --grotto-header-3-color: hsl(40, 6%, 16%);
-  --grotto-header-3-size: 1.5rem;
+  --grotto-header-3-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-header-3-border-radius: var(--grotto-header-border-radius, 0rem);
+  --grotto-header-3-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-header-3-size: var(--grotto-header-size, 1.5rem);
   --grotto-header-4-background-color: transparent;
-  --grotto-header-4-border-color: hsl(40, 6%, 16%);
-  --grotto-header-4-border-radius: 0rem;
-  --grotto-header-4-color: hsl(40, 6%, 16%);
-  --grotto-header-4-size: 1.5rem;
+  --grotto-header-4-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-header-4-border-radius: var(--grotto-header-border-radius, 0rem);
+  --grotto-header-4-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-header-4-size: var(--grotto-header-size, 1.5rem);
   --grotto-header-5-background-color: transparent;
-  --grotto-header-5-border-color: hsl(160, 36%, 56%);
-  --grotto-header-5-border-radius: 0rem;
-  --grotto-header-5-color: hsl(40, 6%, 16%);
-  --grotto-header-5-size: 1.5rem;
+  --grotto-header-5-border-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-header-5-border-radius: var(--grotto-header-border-radius, 0rem);
+  --grotto-header-5-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-header-5-size: var(--grotto-header-size, 1.5rem);
   --grotto-header-6-background-color: transparent;
   --grotto-header-6-border-color: transparent;
-  --grotto-header-6-border-radius: 0rem;
-  --grotto-header-6-color: hsl(40, 6%, 16%);
-  --grotto-header-6-size: 1.5rem;
+  --grotto-header-6-border-radius: var(--grotto-header-border-radius, 0rem);
+  --grotto-header-6-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-header-6-size: var(--grotto-header-size, 1.5rem);
   --grotto-header-border-radius: 0rem;
   --grotto-header-line-height: 2rem;
   --grotto-header-size: 1.5rem;
   --grotto-header-weight: 500;
-  --grotto-icon-color: hsl(40, 6%, 16%);
-  --grotto-input-radius: 0rem;
-  --grotto-italic-color: hsl(160, 36%, 56%);
+  --grotto-icon-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-input-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-italic-color: var(--grotto-accent, hsl(160, 36%, 56%));
   --grotto-italic-weight: 500;
   --grotto-light-0: hsl(70, 30%, 86%);
   --grotto-light-1: hsl(70, 30%, 92%);
   --grotto-light-2: hsl(70, 30%, 80%);
-  --grotto-link-color: hsl(160, 36%, 56%);
+  --grotto-link-color: var(--grotto-accent, hsl(160, 36%, 56%));
   --grotto-link-weight: 500;
-  --grotto-list-marker-color: hsl(40, 6%, 16%);
-  --grotto-menu-background-color: hsl(70, 30%, 86%);
-  --grotto-menu-border-color: hsl(40, 6%, 16%);
-  --grotto-menu-border-radius: 0rem;
-  --grotto-menu-color: hsl(40, 6%, 16%);
-  --grotto-mobile-toolbar-background-color: hsl(70, 30%, 80%);
-  --grotto-mobile-toolbar-border-color: hsl(40, 6%, 16%);
-  --grotto-mobile-toolbar-border-radius: 0rem;
-  --grotto-mobile-toolbar-color: hsl(40, 6%, 16%);
-  --grotto-modal-background-color: hsl(70, 30%, 92%);
-  --grotto-modal-border-color: hsl(40, 6%, 16%);
-  --grotto-modal-border-radius: 0rem;
-  --grotto-modal-color: hsl(40, 6%, 16%);
-  --grotto-navbar-background-color: hsl(70, 30%, 80%);
-  --grotto-navbar-border-color: hsl(40, 6%, 16%);
-  --grotto-navbar-border-radius: 0rem;
-  --grotto-navbar-color: hsl(40, 6%, 16%);
+  --grotto-list-marker-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-menu-background-color: var(--background-secondary, hsl(70, 30%, 86%));
+  --grotto-menu-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-menu-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-menu-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-mobile-toolbar-background-color: var(--grotto-background-tertiary, hsl(70, 30%, 80%));
+  --grotto-mobile-toolbar-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-mobile-toolbar-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-mobile-toolbar-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-modal-background-color: var(--background-primary, hsl(70, 30%, 92%));
+  --grotto-modal-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-modal-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-modal-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-navbar-background-color: var(--grotto-background-tertiary, hsl(70, 30%, 80%));
+  --grotto-navbar-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-navbar-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-navbar-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-navbar-new-tab-display: auto;
   --grotto-navbar-position-offset: 16px;
-  --grotto-notice-background-color: hsl(160, 36%, 56%);
-  --grotto-notice-border-color: hsl(40, 6%, 16%);
-  --grotto-notice-border-radius: 0rem;
-  --grotto-notice-border-width: 1px;
-  --grotto-notice-color: hsl(70, 30%, 92%);
-  --grotto-progress-background-color: hsl(40, 6%, 16%);
-  --grotto-progress-border-color: hsl(40, 6%, 16%);
-  --grotto-progress-color: hsl(160, 36%, 56%);
-  --grotto-progress-radius: 0rem;
-  --grotto-prompt-background-color: hsl(70, 30%, 92%);
-  --grotto-prompt-border-color: hsl(40, 6%, 16%);
-  --grotto-prompt-border-radius: 0rem;
-  --grotto-prompt-border-width: 1px;
-  --grotto-prompt-color: hsl(40, 6%, 16%);
-  --grotto-properties-background-color: hsl(70, 30%, 92%);
-  --grotto-properties-border-color: hsl(40, 6%, 16%);
-  --grotto-properties-border-radius: 0rem;
-  --grotto-properties-color: hsl(40, 6%, 16%);
-  --grotto-pull-background-color: hsl(160, 36%, 56%);
-  --grotto-pull-border-color: hsl(40, 6%, 16%);
-  --grotto-pull-border-radius: 0rem;
-  --grotto-pull-color: hsl(70, 30%, 92%);
+  --grotto-notice-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-notice-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-notice-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-notice-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-notice-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
+  --grotto-progress-background-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-progress-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-progress-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-progress-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-prompt-background-color: var(--background-primary, hsl(70, 30%, 92%));
+  --grotto-prompt-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-prompt-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-prompt-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-prompt-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-properties-background-color: var(--background-primary, hsl(70, 30%, 92%));
+  --grotto-properties-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-properties-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-properties-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-pull-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-pull-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-pull-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-pull-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
   --grotto-redacted: 'Flow Circular';
   --grotto-resize-handle-border-color: transparent;
-  --grotto-resize-handle-border-width: 1px;
-  --grotto-resize-handle-color: hsl(40, 6%, 16%);
+  --grotto-resize-handle-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-resize-handle-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-ribbon-border-color: transparent;
   --grotto-ribbon-border-radius: 0rem;
-  --grotto-ribbon-border-width: 1px;
-  --grotto-scrollbar-border-color: hsl(40, 6%, 16%);
-  --grotto-settings-background-color: hsl(70, 30%, 86%);
-  --grotto-settings-border-color: hsl(40, 6%, 16%);
-  --grotto-settings-border-radius: 0rem;
-  --grotto-settings-color: hsl(40, 6%, 16%);
-  --grotto-slider-background-color: hsl(40, 6%, 16%);
-  --grotto-slider-border-color: hsl(70, 30%, 92%);
-  --grotto-statusbar-background-color: hsl(70, 30%, 86%);
-  --grotto-statusbar-border-color: hsl(40, 6%, 16%);
-  --grotto-statusbar-border-radius: 0rem;
-  --grotto-statusbar-color: hsl(40, 6%, 16%);
-  --grotto-strikethrough-color: hsl(40, 6%, 16%);
+  --grotto-ribbon-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-scrollbar-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-settings-background-color: var(--background-secondary, hsl(70, 30%, 86%));
+  --grotto-settings-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-settings-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-settings-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-slider-background-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-slider-border-color: var(--background-primary, hsl(70, 30%, 92%));
+  --grotto-statusbar-background-color: var(--background-secondary, hsl(70, 30%, 86%));
+  --grotto-statusbar-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-statusbar-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-statusbar-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-strikethrough-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-strikethrough-opacity: 0.5;
   --grotto-strikethrough-weight: 500;
-  --grotto-suggestion-background-color: hsl(70, 30%, 80%);
-  --grotto-suggestion-border-color: hsl(40, 6%, 16%);
-  --grotto-suggestion-border-radius: 0rem;
-  --grotto-suggestion-color: hsl(40, 6%, 16%);
-  --grotto-suggestion-selected-background-color: hsl(160, 36%, 56%);
-  --grotto-suggestion-selected-color: hsl(70, 30%, 92%);
-  --grotto-tab-switcher-background-color: hsl(70, 30%, 92%);
-  --grotto-tab-switcher-border-color: hsl(40, 6%, 16%);
-  --grotto-tab-switcher-border-radius: 0rem;
-  --grotto-tab-switcher-color: hsl(40, 6%, 16%);
-  --grotto-tab-switcher-menu-background-color: hsl(70, 30%, 80%);
-  --grotto-tab-switcher-selected-tab-background-color: hsl(160, 36%, 56%);
+  --grotto-suggestion-background-color: var(--grotto-background-tertiary, hsl(70, 30%, 80%));
+  --grotto-suggestion-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-suggestion-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-suggestion-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-suggestion-selected-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-suggestion-selected-color: var(--grotto-text-color-on-accent, hsl(70, 30%, 92%));
+  --grotto-tab-switcher-background-color: var(--background-primary, hsl(70, 30%, 92%));
+  --grotto-tab-switcher-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-tab-switcher-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-tab-switcher-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-tab-switcher-menu-background-color: var(--grotto-background-tertiary, hsl(70, 30%, 80%));
+  --grotto-tab-switcher-selected-tab-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
   --grotto-tab-switcher-tab-height: 200px;
   --grotto-table-background-color: transparent;
-  --grotto-table-border-color: hsl(40, 6%, 16%);
+  --grotto-table-border-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-table-border-radius: 0rem;
   --grotto-table-border-style: separate;
-  --grotto-table-border-width: 1px;
+  --grotto-table-border-width: var(--grotto-global-border-width, 1px);
   --grotto-table-cell-width: fit-content;
   --grotto-table-cell-width-reading: wrap;
-  --grotto-table-color: hsl(40, 6%, 16%);
-  --grotto-tag-background-color: hsl(40, 6%, 16%);
-  --grotto-tag-border-color: hsl(40, 6%, 16%);
+  --grotto-table-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-tag-background-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-tag-border-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-tag-border-radius: 0rem;
   --grotto-tag-border-width: 1.5px;
-  --grotto-tag-color: hsl(70, 30%, 92%);
+  --grotto-tag-color: var(--background-primary, hsl(70, 30%, 92%));
   --grotto-tag-padding-x: 0.4rem;
   --grotto-tag-padding-y: 0.1rem;
   --grotto-tag-pointer-events: none;
   --grotto-tag-size: 0.8rem;
   --grotto-tag-weight: 600;
-  --grotto-text-color-on-accent: hsl(70, 30%, 92%);
-  --grotto-titlebar-border-radius: 0rem;
-  --grotto-titlebar-color: hsl(40, 6%, 16%);
-  --grotto-toggle-background-color: hsl(70, 30%, 92%);
-  --grotto-toggle-border-color: hsl(40, 6%, 16%);
-  --grotto-toggle-border-width: 1px;
-  --grotto-toggle-enabled-background-color: hsl(160, 36%, 56%);
-  --grotto-tooltip-background-color: hsl(70, 30%, 80%);
-  --grotto-tooltip-border-color: hsl(40, 6%, 16%);
-  --grotto-tooltip-border-radius: 0rem;
-  --grotto-tooltip-border-width: 1px;
-  --grotto-tooltip-color: hsl(40, 6%, 16%);
-  --grotto-view-header-background-color: hsl(70, 30%, 80%);
-  --grotto-view-header-color: hsl(40, 6%, 16%);
+  --grotto-text-color-on-accent: var(--grotto-light-1, hsl(70, 30%, 92%));
+  --grotto-titlebar-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-titlebar-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-toggle-background-color: var(--background-primary, hsl(70, 30%, 92%));
+  --grotto-toggle-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-toggle-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-toggle-enabled-background-color: var(--grotto-accent, hsl(160, 36%, 56%));
+  --grotto-tooltip-background-color: var(--grotto-background-tertiary, hsl(70, 30%, 80%));
+  --grotto-tooltip-border-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-tooltip-border-radius: var(--grotto-global-border-radius, 0rem);
+  --grotto-tooltip-border-width: var(--grotto-global-border-width, 1px);
+  --grotto-tooltip-color: var(--text-normal, hsl(40, 6%, 16%));
+  --grotto-view-header-background-color: var(--grotto-background-tertiary, hsl(70, 30%, 80%));
+  --grotto-view-header-color: var(--text-normal, hsl(40, 6%, 16%));
   --grotto-view-header-sidebar-toggle-display: none;
-  --headerFont: var(--font-text, 'Quicksand');
-  --heading-formatting: hsl(40, 6%, 24%);
-  --heading-spacing: 0rem;
-  --highlight: var(--text-highlight-bg, hsl(70, 30%, 80%));
-  --icon-color: hsl(40, 6%, 24%);
-  --icon-color-active: hsl(160, 36%, 56%);
-  --icon-color-focused: hsl(40, 6%, 16%);
-  --icon-color-hover: hsl(40, 6%, 24%);
-  --input-date-separator: hsl(40, 6%, 24%);
-  --input-placeholder-color: hsl(40, 6%, 24%);
+  --headerFont: var(--font-text, var(--grotto-font-main, 'Quicksand'));
+  --heading-formatting: var(--text-faint, hsl(40, 6%, 24%));
+  --highlight: var(--text-highlight-bg, var(--grotto-background-tertiary, hsl(70, 30%, 80%)));
+  --icon-color: var(--text-muted, hsl(40, 6%, 24%));
+  --icon-color-active: var(--text-accent, hsl(160, 36%, 56%));
+  --icon-color-focused: var(--text-normal, hsl(40, 6%, 16%));
+  --icon-color-hover: var(--text-muted, hsl(40, 6%, 24%));
+  --input-date-separator: var(--text-faint, hsl(40, 6%, 24%));
+  --input-placeholder-color: var(--text-faint, hsl(40, 6%, 24%));
   --input-shadow: none;
   --input-shadow-hover: none;
-  --interactive-accent: hsl(160, 36%, 56%);
-  --interactive-accent-hover: hsl(160, 36%, 56%);
-  --interactive-accent-hsl: 160, 36%, 56%;
-  --light: var(--background-primary, hsl(70, 30%, 92%));
-  --lightgray: var(--background-secondary, hsl(70, 30%, 86%));
-  --link-color: hsl(160, 36%, 56%);
-  --link-color-hover: hsl(160, 36%, 56%);
-  --link-external-color: hsl(160, 36%, 56%);
-  --link-external-color-hover: hsl(160, 36%, 56%);
-  --link-unresolved-color: hsl(160, 36%, 56%);
-  --link-unresolved-decoration-color: hsla(160, 36%, 56%, 0.3);
-  --list-bullet-radius: 0rem;
-  --list-marker-color: hsl(40, 6%, 16%);
-  --list-marker-color-collapsed: hsl(40, 6%, 16%);
-  --list-marker-color-hover: hsl(40, 6%, 16%);
-  --menu-background: hsl(70, 30%, 86%);
-  --menu-radius: 0px;
-  --menu-shadow: none;
-  --metadata-input-font: 'Quicksand';
-  --metadata-input-text-color: hsl(40, 6%, 16%);
-  --metadata-label-font: 'Quicksand';
-  --metadata-label-text-color: hsl(40, 6%, 24%);
-  --metadata-label-text-color-hover: hsl(40, 6%, 24%);
-  --modal-background: hsl(70, 30%, 92%);
-  --modal-radius: 0px;
-  --nav-collapse-icon-color: hsl(40, 6%, 24%);
-  --nav-collapse-icon-color-collapsed: hsl(40, 6%, 24%);
-  --nav-heading-color: hsl(40, 6%, 16%);
-  --nav-heading-color-collapsed: hsl(40, 6%, 24%);
-  --nav-heading-color-collapsed-hover: hsl(40, 6%, 24%);
-  --nav-heading-color-hover: hsl(40, 6%, 16%);
-  --nav-item-background-selected: hsla(160, 36%, 56%, 0.15);
-  --nav-item-color: hsl(40, 6%, 24%);
-  --nav-item-color-active: hsl(40, 6%, 16%);
-  --nav-item-color-highlighted: hsl(160, 36%, 56%);
-  --nav-item-color-hover: hsl(40, 6%, 16%);
-  --nav-item-color-selected: hsl(40, 6%, 16%);
-  --nav-item-radius: 0px;
-  --nav-tag-color: hsl(40, 6%, 24%);
-  --nav-tag-color-active: hsl(40, 6%, 24%);
-  --nav-tag-color-hover: hsl(40, 6%, 24%);
-  --nav-tag-radius: 0px;
+  --interactive-accent: var(--color-accent-1, hsl(160, 36%, 56%));
+  --interactive-accent-hover: var(--color-accent-2, hsl(160, 36%, 56%));
+  --interactive-accent-hsl: var(--color-accent-hsl, 160, 36%, 56%);
+  --light: var(--background-primary, var(--grotto-light-1, hsl(70, 30%, 92%)));
+  --lightgray: var(--background-secondary, var(--grotto-light-0, hsl(70, 30%, 86%)));
+  --link-color: var(--text-accent, hsl(160, 36%, 56%));
+  --link-color-hover: var(--text-accent-hover, hsl(160, 36%, 56%));
+  --link-external-color: var(--text-accent, hsl(160, 36%, 56%));
+  --link-external-color-hover: var(--text-accent-hover, hsl(160, 36%, 56%));
+  --link-unresolved-color: var(--text-accent, hsl(160, 36%, 56%));
+  --list-bullet-radius: var(--grotto-global-border-radius, 0rem);
+  --list-marker-color: var(--grotto-list-marker-color, hsl(40, 6%, 16%));
+  --list-marker-color-collapsed: var(--grotto-list-marker-color, hsl(40, 6%, 16%));
+  --list-marker-color-hover: var(--grotto-list-marker-color, hsl(40, 6%, 16%));
+  --menu-background: var(--background-secondary, hsl(70, 30%, 86%));
+  --menu-radius: var(--radius-m, 0px);
+  --menu-shadow: var(--shadow-s, none);
+  --metadata-input-font: var(--font-interface, 'Quicksand');
+  --metadata-input-text-color: var(--text-normal, hsl(40, 6%, 16%));
+  --metadata-label-font: var(--font-interface, 'Quicksand');
+  --metadata-label-text-color: var(--text-muted, hsl(40, 6%, 24%));
+  --metadata-label-text-color-hover: var(--text-muted, hsl(40, 6%, 24%));
+  --modal-background: var(--background-primary, hsl(70, 30%, 92%));
+  --modal-radius: var(--radius-l, 0px);
+  --nav-collapse-icon-color: var(--collapse-icon-color, hsl(40, 6%, 24%));
+  --nav-collapse-icon-color-collapsed: var(--text-faint, hsl(40, 6%, 24%));
+  --nav-heading-color: var(--text-normal, hsl(40, 6%, 16%));
+  --nav-heading-color-collapsed: var(--text-faint, hsl(40, 6%, 24%));
+  --nav-heading-color-collapsed-hover: var(--text-muted, hsl(40, 6%, 24%));
+  --nav-heading-color-hover: var(--text-normal, hsl(40, 6%, 16%));
+  --nav-item-color: var(--text-muted, hsl(40, 6%, 24%));
+  --nav-item-color-active: var(--text-normal, hsl(40, 6%, 16%));
+  --nav-item-color-highlighted: var(--text-accent, hsl(160, 36%, 56%));
+  --nav-item-color-hover: var(--text-normal, hsl(40, 6%, 16%));
+  --nav-item-color-selected: var(--text-normal, hsl(40, 6%, 16%));
+  --nav-item-radius: var(--radius-s, 0px);
+  --nav-tag-color: var(--text-faint, hsl(40, 6%, 24%));
+  --nav-tag-color-active: var(--text-muted, hsl(40, 6%, 24%));
+  --nav-tag-color-hover: var(--text-muted, hsl(40, 6%, 24%));
+  --nav-tag-radius: var(--radius-s, 0px);
   --p-spacing: 0rem;
-  --pdf-background: hsl(70, 30%, 92%);
-  --pdf-page-background: hsl(70, 30%, 92%);
+  --pdf-background: var(--background-primary, hsl(70, 30%, 92%));
+  --pdf-page-background: var(--background-primary, hsl(70, 30%, 92%));
   --pdf-shadow: none;
-  --pdf-sidebar-background: hsl(70, 30%, 92%);
+  --pdf-sidebar-background: var(--background-primary, hsl(70, 30%, 92%));
   --pdf-thumbnail-shadow: none;
-  --pill-color: hsl(40, 6%, 24%);
-  --pill-color-hover: hsl(40, 6%, 16%);
-  --pill-color-remove: hsl(40, 6%, 24%);
-  --pill-color-remove-hover: hsl(160, 36%, 56%);
-  --prompt-background: hsl(70, 30%, 92%);
+  --pill-color: var(--text-muted, hsl(40, 6%, 24%));
+  --pill-color-hover: var(--text-normal, hsl(40, 6%, 16%));
+  --pill-color-remove: var(--text-faint, hsl(40, 6%, 24%));
+  --pill-color-remove-hover: var(--text-accent, hsl(160, 36%, 56%));
+  --prompt-background: var(--background-primary, hsl(70, 30%, 92%));
   --radius-l: 0px;
   --radius-m: 0px;
   --radius-s: 0px;
   --radius-xl: 0px;
-  --raised-background: none;
-  --raised-shadow: none;
-  --ribbon-background: hsl(70, 30%, 86%);
-  --ribbon-background-collapsed: hsl(70, 30%, 92%);
-  --scrollbar-active-thumb-bg: hsl(160, 36%, 56%);
-  --scrollbar-bg: hsl(160, 36%, 56%);
+  --raised-background: var(--blur-background, none);
+  --raised-shadow: var(--shadow-xs, none);
+  --ribbon-background: var(--background-secondary, hsl(70, 30%, 86%));
+  --ribbon-background-collapsed: var(--background-primary, hsl(70, 30%, 92%));
+  --scrollbar-active-thumb-bg: var(--grotto-accent, hsl(160, 36%, 56%));
+  --scrollbar-bg: var(--grotto-accent, hsl(160, 36%, 56%));
   --scrollbar-border-width: 3px;
-  --scrollbar-radius: 0rem;
-  --scrollbar-thumb-bg: hsl(160, 36%, 56%);
-  --search-clear-button-color: hsl(40, 6%, 24%);
-  --search-icon-color: hsl(40, 6%, 24%);
-  --search-result-background: hsl(70, 30%, 92%);
-  --secondary: var(--text-accent, hsl(160, 36%, 56%));
-  --setting-group-heading-color: hsl(40, 6%, 16%);
-  --setting-items-background: hsl(70, 30%, 92%);
-  --setting-items-radius: 0px;
+  --scrollbar-radius: var(--grotto-global-border-radius, 0rem);
+  --scrollbar-thumb-bg: var(--grotto-accent, hsl(160, 36%, 56%));
+  --search-clear-button-color: var(--text-muted, hsl(40, 6%, 24%));
+  --search-icon-color: var(--text-muted, hsl(40, 6%, 24%));
+  --search-result-background: var(--background-primary, hsl(70, 30%, 92%));
+  --secondary: var(--text-accent, var(--color-accent, hsl(160, 36%, 56%)));
+  --setting-group-heading-color: var(--text-normal, hsl(40, 6%, 16%));
+  --setting-items-background: var(--background-primary-alt, hsl(70, 30%, 92%));
+  --setting-items-radius: var(--radius-l, 0px);
   --shadow-edges: none;
   --shadow-l: none;
   --shadow-s: none;
-  --shadow-xs: none;
-  --shiki-active-tab-border-color: hsl(40, 6%, 24%);
-  --shiki-code-background: hsl(70, 30%, 92%);
-  --shiki-code-block-spacing: 0rem;
-  --shiki-code-comment: hsl(40, 6%, 24%);
-  --shiki-code-normal: hsl(40, 6%, 24%);
-  --shiki-code-punctuation: hsl(40, 6%, 24%);
-  --shiki-gutter-text-color: hsl(40, 6%, 24%);
-  --shiki-gutter-text-color-highlight: hsl(40, 6%, 24%);
-  --shiki-highlight-neutral: hsl(40, 6%, 24%);
-  --shiki-terminal-dots-color: hsl(40, 6%, 24%);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, hsl(40, 6%, 24%));
+  --shiki-code-background: var(--code-background, hsl(70, 30%, 92%));
+  --shiki-code-block-spacing: var(--p-spacing, 0rem);
+  --shiki-code-comment: var(--text-faint, hsl(40, 6%, 24%));
+  --shiki-code-normal: var(--text-muted, hsl(40, 6%, 24%));
+  --shiki-code-punctuation: var(--text-muted, hsl(40, 6%, 24%));
+  --shiki-gutter-text-color: var(--text-faint, hsl(40, 6%, 24%));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, hsl(40, 6%, 24%));
+  --shiki-highlight-neutral: var(--shiki-code-normal, hsl(40, 6%, 24%));
+  --shiki-terminal-dots-color: var(--text-faint, hsl(40, 6%, 24%));
   --slider-thumb-y: -7px;
-  --status-bar-background: hsl(70, 30%, 86%);
-  --status-bar-radius: 0px 0 0 0;
-  --status-bar-text-color: hsl(40, 6%, 24%);
-  --suggestion-background: hsl(70, 30%, 92%);
-  --tab-background-active: hsl(70, 30%, 92%);
-  --tab-container-background: hsl(70, 30%, 86%);
+  --status-bar-background: var(--background-secondary, hsl(70, 30%, 86%));
+  --status-bar-radius: var(--radius-m, 0px 0 0 0) 0 0 0;
+  --status-bar-text-color: var(--text-muted, hsl(40, 6%, 24%));
+  --suggestion-background: var(--background-primary, hsl(70, 30%, 92%));
+  --tab-background-active: var(--background-primary, hsl(70, 30%, 92%));
+  --tab-container-background: var(--background-secondary, hsl(70, 30%, 86%));
   --tab-curve: 0rem;
-  --tab-radius: 0px;
-  --tab-switcher-background: hsl(70, 30%, 86%);
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(70, 30%, 86%), transparent);
+  --tab-radius: var(--radius-s, 0px);
+  --tab-switcher-background: var(--background-secondary, hsl(70, 30%, 86%));
   --tab-switcher-preview-background-shadow: none;
-  --tab-switcher-preview-radius: 0px;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(160, 36%, 56%);
-  --tab-text-color: hsl(40, 6%, 24%);
-  --tab-text-color-active: hsl(40, 6%, 24%);
-  --tab-text-color-focused: hsl(40, 6%, 24%);
-  --tab-text-color-focused-active: hsl(40, 6%, 24%);
-  --tab-text-color-focused-active-current: hsl(40, 6%, 16%);
-  --tab-text-color-focused-highlighted: hsl(160, 36%, 56%);
-  --table-add-button-border-color: hsl(40, 6%, 16%);
-  --table-border-color: hsl(40, 6%, 16%);
-  --table-drag-handle-background-active: hsl(160, 36%, 56%);
-  --table-drag-handle-color: hsl(40, 6%, 24%);
-  --table-header-background-hover: transparent;
-  --table-header-border-color: hsl(40, 6%, 16%);
-  --table-header-color: hsl(40, 6%, 16%);
-  --table-selection: hsla(160, 36%, 56%, 0.1);
-  --table-selection-border-color: hsl(160, 36%, 56%);
-  --table-text-color: hsl(40, 6%, 16%);
-  --tag-background: hsla(160, 36%, 56%, 0.1);
-  --tag-background-hover: hsla(160, 36%, 56%, 0.2);
-  --tag-border-color: hsla(160, 36%, 56%, 0.15);
-  --tag-border-color-hover: hsla(160, 36%, 56%, 0.15);
-  --tag-color: hsl(160, 36%, 56%);
-  --tag-color-hover: hsl(160, 36%, 56%);
-  --tertiary: var(--text-accent-hover, hsl(160, 36%, 56%));
-  --text-accent: hsl(160, 36%, 56%);
-  --text-accent-hover: hsl(160, 36%, 56%);
-  --text-error: hsl(0, 50%, 50%);
-  --text-faint: hsl(40, 6%, 24%);
-  --text-highlight-bg: hsl(70, 30%, 80%);
-  --text-muted: hsl(40, 6%, 24%);
-  --text-normal: hsl(40, 6%, 16%);
-  --text-selection: hsla(160, 36%, 56%, 1);
-  --text-success: hsl(100, 50%, 50%);
-  --text-warning: hsl(30, 50%, 50%);
-  --textHighlight: var(--text-highlight-bg, hsl(70, 30%, 80%));
-  --titleFont: var(--font-text, 'Quicksand');
-  --titlebar-background: hsl(70, 30%, 86%);
-  --titlebar-background-focused: hsl(70, 30%, 86%);
-  --titlebar-text-color: hsl(40, 6%, 24%);
-  --titlebar-text-color-focused: hsl(40, 6%, 16%);
-  --touch-radius-l: 0px;
-  --touch-radius-m: 0px;
-  --touch-radius-s: 0px;
-  --touch-radius-xl: 0px;
-  --touch-radius-xs: 0px;
-  --touch-radius-xxs: 0px;
-  --vault-profile-color: hsl(40, 6%, 16%);
-  --vault-profile-color-hover: hsl(40, 6%, 16%);
-  --workspace-background-translucent: transparent;
+  --tab-switcher-preview-radius: var(--radius-xl, 0px);
+  --tab-text-color: var(--text-faint, hsl(40, 6%, 24%));
+  --tab-text-color-active: var(--text-muted, hsl(40, 6%, 24%));
+  --tab-text-color-focused: var(--text-muted, hsl(40, 6%, 24%));
+  --tab-text-color-focused-active: var(--text-muted, hsl(40, 6%, 24%));
+  --tab-text-color-focused-active-current: var(--text-normal, hsl(40, 6%, 16%));
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(160, 36%, 56%));
+  --table-add-button-border-color: var(--table-border-color, hsl(40, 6%, 16%));
+  --table-background: var(--grotto-table-background-color, transparent);
+  --table-border-color: var(--grotto-table-border-color, hsl(40, 6%, 16%));
+  --table-border-width: var(--grotto-table-border-width, 1px);
+  --table-drag-handle-background-active: var(--table-selection-border-color, hsl(160, 36%, 56%));
+  --table-drag-handle-color: var(--text-faint, hsl(40, 6%, 24%));
+  --table-header-background-hover: var(--table-background, transparent);
+  --table-header-border-color: var(--table-border-color, hsl(40, 6%, 16%));
+  --table-header-color: var(--text-normal, hsl(40, 6%, 16%));
+  --table-selection-border-color: var(--interactive-accent, hsl(160, 36%, 56%));
+  --table-text-color: var(--grotto-table-color, hsl(40, 6%, 16%));
+  --tag-color: var(--text-accent, hsl(160, 36%, 56%));
+  --tag-color-hover: var(--text-accent, hsl(160, 36%, 56%));
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, hsl(160, 36%, 56%)));
+  --text-accent: var(--color-accent, hsl(160, 36%, 56%));
+  --text-accent-hover: var(--color-accent-2, hsl(160, 36%, 56%));
+  --text-error: var(--color-red, hsl(0, 50%, 50%));
+  --text-faint: var(--grotto-dark-2, hsl(40, 6%, 24%));
+  --text-highlight-bg: var(--grotto-background-tertiary, hsl(70, 30%, 80%));
+  --text-muted: var(--grotto-dark-2, hsl(40, 6%, 24%));
+  --text-normal: var(--grotto-dark-1, hsl(40, 6%, 16%));
+  --text-selection: hsla(var(--color-accent-hsl), 1);
+  --text-success: var(--color-green, hsl(100, 50%, 50%));
+  --text-warning: var(--color-orange, hsl(30, 50%, 50%));
+  --textHighlight: var(--text-highlight-bg, var(--grotto-background-tertiary, hsl(70, 30%, 80%)));
+  --titleFont: var(--font-text, var(--grotto-font-main, 'Quicksand'));
+  --titlebar-background: var(--background-secondary, hsl(70, 30%, 86%));
+  --titlebar-background-focused: var(--background-secondary-alt, hsl(70, 30%, 86%));
+  --titlebar-text-color: var(--text-muted, hsl(40, 6%, 24%));
+  --titlebar-text-color-focused: var(--text-normal, hsl(40, 6%, 16%));
+  --touch-radius-l: var(--touch-size-l, 0px);
+  --touch-radius-m: var(--touch-size-m, 0px);
+  --touch-radius-s: var(--touch-size-s, 0px);
+  --touch-radius-xl: var(--touch-size-xl, 0px);
+  --touch-radius-xs: var(--touch-size-xs, 0px);
+  --touch-radius-xxs: var(--touch-size-xxs, 0px);
+  --vault-profile-color: var(--text-normal, hsl(40, 6%, 16%));
+  --vault-profile-color-hover: var(--vault-profile-color, hsl(40, 6%, 16%));
   --quartz-icon-color: currentColor;
 }
 
@@ -3017,17 +2991,17 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(226, 230, 209);
+  background-color: var(--tab-container-background, rgb(226, 230, 209));
   color: rgb(43, 42, 38);
 }
 
 html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
-  background-color: rgb(239, 241, 228);
+  background-color: var(--background-primary, rgb(239, 241, 228));
   color: rgb(43, 42, 38);
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(226, 230, 209);
+  background-color: var(--background-secondary, rgb(226, 230, 209));
   color: rgb(43, 42, 38);
 }
 
@@ -3036,45 +3010,45 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(226, 230, 209);
+  background-color: var(--tab-container-background, rgb(226, 230, 209));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(43, 42, 38);
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
-  color: rgb(102, 183, 156);
+  color: var(--grotto-bold-color, rgb(102, 183, 156));
   font-family: Quicksand;
-  font-weight: 800;
+  font-weight: var(--grotto-bold-weight, 800);
   outline: rgb(102, 183, 156) none 0px;
   text-decoration-color: rgb(102, 183, 156);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
-  color: rgb(102, 183, 156);
+  color: var(--grotto-italic-color, rgb(102, 183, 156));
   font-family: Quicksand;
-  font-weight: 500;
+  font-weight: var(--grotto-italic-weight, 500);
   outline: rgb(102, 183, 156) none 0px;
   text-decoration-color: rgb(102, 183, 156);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
-  color: rgb(102, 183, 156);
+  color: var(--grotto-italic-color, rgb(102, 183, 156));
   font-family: Quicksand;
-  font-weight: 500;
+  font-weight: var(--grotto-italic-weight, 500);
   outline: rgb(102, 183, 156) none 0px;
   text-decoration-color: rgb(102, 183, 156);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
-  color: rgb(102, 183, 156);
+  color: var(--grotto-bold-color, rgb(102, 183, 156));
   font-family: Quicksand;
-  font-weight: 800;
+  font-weight: var(--grotto-bold-weight, 800);
   outline: rgb(102, 183, 156) none 0px;
   text-decoration-color: rgb(102, 183, 156);
 }
 
 html[saved-theme="light"] body .text-highlight {
-  background-color: rgb(214, 219, 189);
-  color: rgb(43, 42, 38);
+  background-color: var(--text-highlight-bg, rgb(214, 219, 189));
+  color: var(--text-normal, rgb(43, 42, 38));
   font-family: Quicksand;
   font-weight: 500;
   outline: rgb(43, 42, 38) none 0px;
@@ -3090,7 +3064,7 @@ html[saved-theme="light"] body del {
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(43, 42, 38);
+  color: var(--text-normal, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
@@ -3099,40 +3073,40 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(102, 183, 156);
+  background-color: var(--checkbox-color, rgb(102, 183, 156));
   border-color: rgb(43, 42, 38);
 }
 
 html[saved-theme="light"] body p {
-  color: rgb(65, 62, 58);
+  color: var(--text-muted, rgb(65, 62, 58));
   font-family: Quicksand;
   font-weight: 500;
   outline: rgb(65, 62, 58) none 0px;
   text-decoration-color: rgb(65, 62, 58);
 }`,
     links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
-  color: rgb(102, 183, 156);
+  color: var(--grotto-link-color, rgb(102, 183, 156));
   font-family: Quicksand;
-  font-weight: 500;
+  font-weight: var(--grotto-link-weight, 500);
   outline: rgb(102, 183, 156) none 0px;
   text-decoration-color: rgb(102, 183, 156);
 }
 
 html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(102, 183, 156);
+  color: var(--grotto-link-color, rgb(102, 183, 156));
   font-family: Quicksand;
-  font-weight: 500;
+  font-weight: var(--grotto-link-weight, 500);
   outline: rgb(102, 183, 156) none 0px;
   text-decoration-color: rgb(102, 183, 156);
 }
 
 html[saved-theme="light"] body a.internal-link.broken {
-  color: rgb(102, 183, 156);
+  color: var(--link-unresolved-color, rgb(102, 183, 156));
   font-family: Quicksand;
-  font-weight: 500;
+  font-weight: var(--grotto-link-weight, 500);
   outline: rgb(102, 183, 156) none 0px;
   text-decoration: underline rgba(102, 183, 156, 0.3);
-  text-decoration-color: rgba(102, 183, 156, 0.3);
+  text-decoration-color: var(--link-unresolved-decoration-color, rgba(102, 183, 156, 0.3));
 }`,
     lists: `html[saved-theme="light"] body dd {
   color: rgb(43, 42, 38);
@@ -3158,10 +3132,11 @@ html[saved-theme="light"] body ul.overflow {
   border-top-color: rgb(43, 42, 38);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
-  color: rgb(65, 62, 58);
+  color: var(--text-faint, rgb(65, 62, 58));
 }
 
 html[saved-theme="light"] body blockquote {
+  background-color: var(--grotto-blockquote-background-color, rgba(0, 0, 0, 0));
   font-family: Quicksand;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
@@ -3174,7 +3149,7 @@ html[saved-theme="light"] body blockquote {
 html[saved-theme="light"] body table {
   color: rgb(43, 42, 38);
   font-family: Quicksand;
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
   width: 187.766px;
 }
 
@@ -3183,7 +3158,7 @@ html[saved-theme="light"] body td {
   border-left-color: rgb(43, 42, 38);
   border-right-color: rgb(43, 42, 38);
   border-top-color: rgb(43, 42, 38);
-  color: rgb(43, 42, 38);
+  color: var(--table-text-color, rgb(43, 42, 38));
   font-weight: 500;
 }
 
@@ -3192,10 +3167,10 @@ html[saved-theme="light"] body th {
   border-left-color: rgb(43, 42, 38);
   border-right-color: rgb(43, 42, 38);
   border-top-color: rgb(43, 42, 38);
-  color: rgb(43, 42, 38);
+  color: var(--table-header-color, rgb(43, 42, 38));
 }`,
     code: `html[saved-theme="light"] body code {
-  background-color: rgb(214, 219, 189);
+  background-color: var(--grotto-code-background-color, rgb(214, 219, 189));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3208,8 +3183,8 @@ html[saved-theme="light"] body th {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(43, 42, 38);
-  font-family: Quicksand;
+  color: var(--grotto-code-color, rgb(43, 42, 38));
+  font-family: var(--font-monospace, Quicksand);
   padding-bottom: 1.6px;
   padding-left: 3.2px;
   padding-right: 3.2px;
@@ -3217,7 +3192,7 @@ html[saved-theme="light"] body th {
 }
 
 html[saved-theme="light"] body pre:has(> code) {
-  background-color: rgb(214, 219, 189);
+  background-color: var(--grotto-code-background-color, rgb(214, 219, 189));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3272,7 +3247,7 @@ html[saved-theme="light"] body video {
   border-top-color: rgb(43, 42, 38);
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
-  background-color: rgb(239, 241, 228);
+  background-color: var(--background-primary-alt, rgb(239, 241, 228));
   border-bottom-color: rgb(65, 62, 58);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3289,6 +3264,7 @@ html[saved-theme="light"] body .footnotes {
 }
 
 html[saved-theme="light"] body .transclude {
+  background-color: var(--grotto-embed-background-color, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -3304,6 +3280,7 @@ html[saved-theme="light"] body .transclude {
 }
 
 html[saved-theme="light"] body .transclude-inner {
+  background-color: var(--grotto-embed-background-color, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-style: solid;
   border-left-color: rgb(43, 42, 38);
@@ -3884,12 +3861,12 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
   border-left-color: rgb(43, 42, 38);
   border-right-color: rgb(43, 42, 38);
   border-top-color: rgb(43, 42, 38);
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
   gap: 2px;
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(43, 42, 38);
+  color: var(--callout-title-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout > .callout-content {
@@ -3897,9 +3874,9 @@ html[saved-theme="light"] body .callout > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-summary, 0, 191, 188);
   background: rgb(239, 241, 228) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(239, 241, 228);
+  background-color: var(--grotto-callout-background-color, rgb(239, 241, 228));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3912,7 +3889,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title {
@@ -3923,12 +3900,12 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
   border-left-color: rgb(43, 42, 38);
   border-right-color: rgb(43, 42, 38);
   border-top-color: rgb(43, 42, 38);
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
   gap: 2px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(43, 42, 38);
+  color: var(--callout-title-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-content {
@@ -3936,9 +3913,9 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-bug, 233, 49, 71);
   background: rgb(239, 241, 228) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(239, 241, 228);
+  background-color: var(--grotto-callout-background-color, rgb(239, 241, 228));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3951,7 +3928,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
@@ -3962,12 +3939,12 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   border-left-color: rgb(43, 42, 38);
   border-right-color: rgb(43, 42, 38);
   border-top-color: rgb(43, 42, 38);
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
   gap: 2px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(43, 42, 38);
+  color: var(--callout-title-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
@@ -3975,9 +3952,9 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-error, 233, 49, 71);
   background: rgb(239, 241, 228) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(239, 241, 228);
+  background-color: var(--grotto-callout-background-color, rgb(239, 241, 228));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3990,7 +3967,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
@@ -4001,12 +3978,12 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   border-left-color: rgb(43, 42, 38);
   border-right-color: rgb(43, 42, 38);
   border-top-color: rgb(43, 42, 38);
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
   gap: 2px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(43, 42, 38);
+  color: var(--callout-title-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-content {
@@ -4014,9 +3991,9 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
-  --callout-color: 120, 82, 238;
+  --callout-color: var(--callout-example, 120, 82, 238);
   background: rgb(239, 241, 228) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(239, 241, 228);
+  background-color: var(--grotto-callout-background-color, rgb(239, 241, 228));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4029,7 +4006,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
@@ -4040,12 +4017,12 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   border-left-color: rgb(43, 42, 38);
   border-right-color: rgb(43, 42, 38);
   border-top-color: rgb(43, 42, 38);
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
   gap: 2px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(43, 42, 38);
+  color: var(--callout-title-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] > .callout-content {
@@ -4053,9 +4030,9 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-fail, 233, 49, 71);
   background: rgb(239, 241, 228) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(239, 241, 228);
+  background-color: var(--grotto-callout-background-color, rgb(239, 241, 228));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4068,7 +4045,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
@@ -4079,12 +4056,12 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   border-left-color: rgb(43, 42, 38);
   border-right-color: rgb(43, 42, 38);
   border-top-color: rgb(43, 42, 38);
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
   gap: 2px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(43, 42, 38);
+  color: var(--callout-title-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-content {
@@ -4092,9 +4069,9 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-info, 8, 109, 221);
   background: rgb(239, 241, 228) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(239, 241, 228);
+  background-color: var(--grotto-callout-background-color, rgb(239, 241, 228));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4107,7 +4084,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
@@ -4118,12 +4095,12 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   border-left-color: rgb(43, 42, 38);
   border-right-color: rgb(43, 42, 38);
   border-top-color: rgb(43, 42, 38);
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
   gap: 2px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(43, 42, 38);
+  color: var(--callout-title-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content {
@@ -4131,9 +4108,9 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
-  --callout-color: hsl(40, 6%, 16%);
+  --callout-color: var(--callout-default, hsl(40, 6%, 16%));
   background: rgb(239, 241, 228) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(239, 241, 228);
+  background-color: var(--grotto-callout-background-color, rgb(239, 241, 228));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4146,7 +4123,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
@@ -4157,12 +4134,12 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   border-left-color: rgb(43, 42, 38);
   border-right-color: rgb(43, 42, 38);
   border-top-color: rgb(43, 42, 38);
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
   gap: 2px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(43, 42, 38);
+  color: var(--callout-title-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content {
@@ -4170,9 +4147,9 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-question, 236, 117, 0);
   background: rgb(239, 241, 228) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(239, 241, 228);
+  background-color: var(--grotto-callout-background-color, rgb(239, 241, 228));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4185,7 +4162,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title {
@@ -4196,12 +4173,12 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
   border-left-color: rgb(43, 42, 38);
   border-right-color: rgb(43, 42, 38);
   border-top-color: rgb(43, 42, 38);
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
   gap: 2px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(43, 42, 38);
+  color: var(--callout-title-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] > .callout-content {
@@ -4209,9 +4186,9 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background: rgb(239, 241, 228) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(239, 241, 228);
+  background-color: var(--grotto-callout-background-color, rgb(239, 241, 228));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4224,7 +4201,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
@@ -4235,12 +4212,12 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   border-left-color: rgb(43, 42, 38);
   border-right-color: rgb(43, 42, 38);
   border-top-color: rgb(43, 42, 38);
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
   gap: 2px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(43, 42, 38);
+  color: var(--callout-title-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content {
@@ -4248,9 +4225,9 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
-  --callout-color: 8, 185, 78;
+  --callout-color: var(--callout-success, 8, 185, 78);
   background: rgb(239, 241, 228) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(239, 241, 228);
+  background-color: var(--grotto-callout-background-color, rgb(239, 241, 228));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4263,7 +4240,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
@@ -4274,12 +4251,12 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   border-left-color: rgb(43, 42, 38);
   border-right-color: rgb(43, 42, 38);
   border-top-color: rgb(43, 42, 38);
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
   gap: 2px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(43, 42, 38);
+  color: var(--callout-title-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] > .callout-content {
@@ -4287,9 +4264,9 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-tip, 0, 191, 188);
   background: rgb(239, 241, 228) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(239, 241, 228);
+  background-color: var(--grotto-callout-background-color, rgb(239, 241, 228));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4302,7 +4279,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
@@ -4313,12 +4290,12 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   border-left-color: rgb(43, 42, 38);
   border-right-color: rgb(43, 42, 38);
   border-top-color: rgb(43, 42, 38);
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
   gap: 2px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(43, 42, 38);
+  color: var(--callout-title-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
@@ -4326,9 +4303,9 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-todo, 8, 109, 221);
   background: rgb(239, 241, 228) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(239, 241, 228);
+  background-color: var(--grotto-callout-background-color, rgb(239, 241, 228));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4341,7 +4318,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
@@ -4352,12 +4329,12 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   border-left-color: rgb(43, 42, 38);
   border-right-color: rgb(43, 42, 38);
   border-top-color: rgb(43, 42, 38);
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
   gap: 2px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(43, 42, 38);
+  color: var(--callout-title-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content {
@@ -4365,9 +4342,9 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-warning, 236, 117, 0);
   background: rgb(239, 241, 228) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(239, 241, 228);
+  background-color: var(--grotto-callout-background-color, rgb(239, 241, 228));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4380,7 +4357,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
@@ -4391,12 +4368,12 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   border-left-color: rgb(43, 42, 38);
   border-right-color: rgb(43, 42, 38);
   border-top-color: rgb(43, 42, 38);
-  color: rgb(43, 42, 38);
+  color: var(--grotto-callout-color, rgb(43, 42, 38));
   gap: 2px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(43, 42, 38);
+  color: var(--callout-title-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] > .callout-content {
@@ -4468,12 +4445,12 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-color: rgb(43, 42, 38);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(43, 42, 38);
+  color: var(--text-normal, rgb(43, 42, 38));
   font-family: Quicksand;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
-  background-color: rgb(239, 241, 228);
+  background-color: var(--grotto-prompt-background-color, rgb(239, 241, 228));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4493,7 +4470,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > * {
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container {
-  color: rgb(239, 241, 228);
+  color: var(--grotto-text-color-on-accent, rgb(239, 241, 228));
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
@@ -4516,12 +4493,12 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-description {
-  color: rgb(239, 241, 228);
+  color: var(--grotto-text-color-on-accent, rgb(239, 241, 228));
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: rgb(102, 183, 156);
-  color: rgb(239, 241, 228);
+  background-color: var(--grotto-accent, rgb(102, 183, 156));
+  color: var(--grotto-text-color-on-accent, rgb(239, 241, 228));
   font-weight: 500;
 }
 
@@ -4537,7 +4514,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
-  background-color: rgb(43, 42, 38);
+  background-color: var(--text-normal, rgb(43, 42, 38));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-width: 0px;
   border-left-color: rgb(43, 42, 38);
@@ -4549,7 +4526,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
-  background-color: rgb(102, 183, 156);
+  background-color: var(--grotto-accent, rgb(102, 183, 156));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4566,20 +4543,20 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   border-top-right-radius: 0px;
   border-top-style: solid;
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-text-color-on-accent, rgb(239, 241, 228));
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: rgb(102, 183, 156);
+  background-color: var(--grotto-accent, rgb(102, 183, 156));
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-text-color-on-accent, rgb(239, 241, 228));
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgb(43, 42, 38);
+  background-color: var(--grotto-properties-color, rgb(43, 42, 38));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4593,7 +4570,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-top-right-radius: 0px;
   border-top-width: 1px;
   font-family: Quicksand;
-  font-weight: 500;
+  font-weight: var(--pill-weight, 500);
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -4601,42 +4578,42 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
-  color: rgb(239, 241, 228);
-  font-family: Quicksand;
+  color: var(--grotto-header-1-color, rgb(239, 241, 228));
+  font-family: var(--h1-font, Quicksand);
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(43, 42, 38);
+  color: var(--inline-title-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body h2 {
-  color: rgb(239, 241, 228);
-  font-family: Quicksand;
+  color: var(--grotto-header-2-color, rgb(239, 241, 228));
+  font-family: var(--h2-font, Quicksand);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  color: rgb(43, 42, 38);
-  font-family: Quicksand;
+  color: var(--inline-title-color, rgb(43, 42, 38));
+  font-family: var(--inline-title-font, Quicksand);
 }
 
 html[saved-theme="light"] body h3 {
-  color: rgb(43, 42, 38);
-  font-family: Quicksand;
+  color: var(--grotto-header-3-color, rgb(43, 42, 38));
+  font-family: var(--h3-font, Quicksand);
 }
 
 html[saved-theme="light"] body h4 {
-  color: rgb(43, 42, 38);
-  font-family: Quicksand;
+  color: var(--grotto-header-4-color, rgb(43, 42, 38));
+  font-family: var(--h4-font, Quicksand);
 }
 
 html[saved-theme="light"] body h5 {
-  color: rgb(43, 42, 38);
-  font-family: Quicksand;
+  color: var(--grotto-header-5-color, rgb(43, 42, 38));
+  font-family: var(--h5-font, Quicksand);
 }
 
 html[saved-theme="light"] body h6 {
-  color: rgb(43, 42, 38);
-  font-family: Quicksand;
+  color: var(--grotto-header-6-color, rgb(43, 42, 38));
+  font-family: var(--h6-font, Quicksand);
 }
 
 html[saved-theme="light"] body hr {
@@ -4646,7 +4623,7 @@ html[saved-theme="light"] body hr {
   border-top-color: rgba(0, 0, 0, 0);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
-  --callout-color: hsl(40, 6%, 16%);
+  --callout-color: var(--callout-default, hsl(40, 6%, 16%));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4665,22 +4642,22 @@ html[saved-theme="light"] body hr {
   padding-top: 8px;
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(43, 42, 38);
+  color: var(--grotto-filenav-color, rgb(43, 42, 38));
   font-family: Quicksand;
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(43, 42, 38);
+  color: var(--grotto-filenav-color, rgb(43, 42, 38));
   font-family: Quicksand;
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(43, 42, 38);
 }
 
 html[saved-theme="light"] body li.depth-0 {
-  font-weight: 500;
+  font-weight: var(--nav-item-weight, 500);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(43, 42, 38);
@@ -4691,10 +4668,10 @@ html[saved-theme="light"] body li.depth-0 {
   border-top-color: rgb(43, 42, 38);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(43, 42, 38);
+  color: var(--grotto-icon-color, rgb(43, 42, 38));
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: rgb(226, 230, 209);
+  background-color: var(--grotto-statusbar-background-color, rgb(226, 230, 209));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-width: 1px;
   border-left-color: rgb(43, 42, 38);
@@ -4702,12 +4679,12 @@ html[saved-theme="light"] body li.depth-0 {
   border-right-width: 1px;
   border-top-color: rgb(43, 42, 38);
   border-top-left-radius: 0px;
-  color: rgb(43, 42, 38);
+  color: var(--grotto-statusbar-color, rgb(43, 42, 38));
   font-family: Quicksand;
 }
 
 html[saved-theme="light"] body footer ul li a {
-  color: rgb(43, 42, 38);
+  color: var(--grotto-statusbar-color, rgb(43, 42, 38));
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(43, 42, 38);
@@ -4724,7 +4701,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(43, 42, 38);
+  color: var(--grotto-filenav-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -4744,7 +4721,7 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(43, 42, 38);
+  color: var(--grotto-filenav-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -4762,7 +4739,7 @@ html[saved-theme="light"] body ul.section-ul {
   border-top-color: rgb(43, 42, 38);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(43, 42, 38);
+  color: var(--grotto-icon-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .darkmode svg {
@@ -4782,7 +4759,7 @@ html[saved-theme="light"] body .darkmode svg {
 }
 
 html[saved-theme="light"] body .breadcrumb-element p {
-  color: rgb(65, 62, 58);
+  color: var(--text-faint, rgb(65, 62, 58));
   font-family: Quicksand;
 }`,
     canvas: `html[saved-theme="light"] body .canvas-node {
@@ -4790,11 +4767,11 @@ html[saved-theme="light"] body .breadcrumb-element p {
 }
 
 html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(43, 42, 38);
+  color: var(--grotto-embed-color, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(43, 42, 38);
+  color: var(--text-normal, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body .canvas-node-group {
@@ -4802,15 +4779,15 @@ html[saved-theme="light"] body .canvas-node-group {
 }
 
 html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(239, 241, 228);
+  background-color: var(--background-primary, rgb(239, 241, 228));
   border-color: rgb(43, 42, 38);
 }`,
     bases: `html[saved-theme="light"] body .bases-table thead th {
   border-color: rgb(43, 42, 38);
-  color: rgb(43, 42, 38);
+  color: var(--table-header-color, rgb(43, 42, 38));
 }`,
     properties: `html[saved-theme="light"] body .metadata {
-  color: rgb(65, 62, 58);
+  color: var(--text-muted, rgb(65, 62, 58));
   font-family: Quicksand;
 }
 
@@ -4833,9 +4810,9 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgb(43, 42, 38);
+  background-color: var(--grotto-properties-color, rgb(43, 42, 38));
   border-radius: 0px;
-  color: rgb(239, 241, 228);
+  color: var(--background-primary, rgb(239, 241, 228));
 }
 
 html[saved-theme="light"] body .note-properties-value {
@@ -4843,8 +4820,8 @@ html[saved-theme="light"] body .note-properties-value {
 }
 
 html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(239, 241, 228);
-  color: rgb(43, 42, 38);
+  background-color: var(--background-primary, rgb(239, 241, 228));
+  color: var(--text-normal, rgb(43, 42, 38));
 }
 
 html[saved-theme="light"] body ol.overflow {
@@ -4854,12 +4831,12 @@ html[saved-theme="light"] body ol.overflow {
   border-top-color: rgb(43, 42, 38);
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
-  background-color: rgb(226, 230, 209);
+  background-color: var(--background-secondary, rgb(226, 230, 209));
   border-color: rgb(43, 42, 38);
 }
 
 html[saved-theme="light"] body .stacked-page-header {
-  background-color: rgb(226, 230, 209);
+  background-color: var(--tab-container-background, rgb(226, 230, 209));
 }
 
 html[saved-theme="light"] body .stacked-page.active {
@@ -4874,11 +4851,11 @@ html[saved-theme="light"] body .stacked-page.active {
 }
 
 html[saved-theme="light"] body .navigation-progress {
-  background-color: rgb(226, 230, 209);
+  background-color: var(--grotto-statusbar-background-color, rgb(226, 230, 209));
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
-  color: rgb(43, 42, 38);
+  color: var(--text-normal, rgb(43, 42, 38));
   font-family: Quicksand;
 }
 
@@ -4902,12 +4879,12 @@ html[saved-theme="light"] body input[type=text] {
   border-right-width: 1px;
   border-top-color: rgb(43, 42, 38);
   border-top-width: 1px;
-  color: rgb(43, 42, 38);
+  color: var(--text-normal, rgb(43, 42, 38));
   font-family: Quicksand;
 }
 
 html[saved-theme="light"] body kbd {
-  background-color: rgb(239, 241, 228);
+  background-color: var(--code-background, rgb(239, 241, 228));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4916,8 +4893,8 @@ html[saved-theme="light"] body kbd {
   border-top-color: rgb(43, 42, 38);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(43, 42, 38);
-  font-family: Quicksand;
+  color: var(--code-normal, rgb(43, 42, 38));
+  font-family: var(--font-monospace, Quicksand);
 }
 
 html[saved-theme="light"] body progress {
@@ -4941,7 +4918,7 @@ html[saved-theme="light"] body sup {
 }
 
 html[saved-theme="light"] body ul.tags > li {
-  background-color: rgb(43, 42, 38);
+  background-color: var(--grotto-tag-background-color, rgb(43, 42, 38));
   border-bottom-color: rgb(43, 42, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4954,7 +4931,7 @@ html[saved-theme="light"] body ul.tags > li {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(239, 241, 228);
+  color: var(--grotto-tag-color, rgb(239, 241, 228));
 }`,
   },
 };

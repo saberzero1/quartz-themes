@@ -10,254 +10,227 @@ export const theme: ThemeData = {
   --accent-s: 56%;
   --aqua: #56b6c2;
   --background-accent: #000;
-  --background-modifier-active-hover: hsla(219, 56%, 58%, 0.1);
-  --background-modifier-border: #424958;
-  --background-modifier-error: #3d0000;
-  --background-modifier-error-hover: #470000;
-  --background-modifier-error-rgb: 61, 0, 0;
-  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+  --background-modifier-border: var(--color-base-30, #424958);
+  --background-modifier-error: var(--color-red, #3d0000);
+  --background-modifier-error-hover: var(--color-red, #470000);
+  --background-modifier-error-rgb: var(--color-red-rgb, 61, 0, 0);
+  --background-modifier-form-field: var(--color-base-25, rgba(0, 0, 0, 0.3));
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
-  --background-modifier-form-field-hover: rgba(0, 0, 0, 0.3);
-  --background-modifier-success: #539126;
-  --background-primary: #272b34;
-  --background-primary-alt: #20242b;
-  --background-secondary: #20242b;
-  --background-secondary-alt: #1a1e24;
-  --bases-cards-background: #272b34;
-  --bases-cards-cover-background: #20242b;
-  --bases-cards-shadow: 0 0 0 1px #424958;
-  --bases-embed-border-color: #424958;
-  --bases-group-heading-property-color: #888;
-  --bases-table-border-color: #5c6370;
-  --bases-table-cell-background-active: #272b34;
-  --bases-table-cell-background-disabled: #20242b;
-  --bases-table-cell-background-selected: hsla(219, 56%, 58%, 0.1);
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(219, 56%, 58%);
-  --bases-table-group-background: #20242b;
-  --bases-table-header-background: #272b34;
-  --bases-table-header-color: #888;
-  --bases-table-summary-background: #272b34;
-  --blockquote-border-color: hsl(219, 56%, 58%);
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, rgba(0, 0, 0, 0.3));
+  --background-modifier-success: var(--color-green, #539126);
+  --background-primary: var(--color-base-00, #272b34);
+  --background-primary-alt: var(--color-base-10, #20242b);
+  --background-secondary: var(--color-base-20, #20242b);
+  --background-secondary-alt: var(--color-base-30, #1a1e24);
+  --bases-cards-background: var(--background-primary, #272b34);
+  --bases-cards-cover-background: var(--background-primary-alt, #20242b);
+  --bases-embed-border-color: var(--background-modifier-border, #424958);
+  --bases-group-heading-property-color: var(--text-muted, #888);
+  --bases-table-border-color: var(--table-border-color, #5c6370);
+  --bases-table-cell-background-active: var(--background-primary, #272b34);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #20242b);
+  --bases-table-cell-background-selected: var(--table-selection, hsla(219, 56%, 58%, 0.1));
+  --bases-table-group-background: var(--background-primary-alt, #20242b);
+  --bases-table-header-background: var(--background-primary, #272b34);
+  --bases-table-header-color: var(--text-muted, #888);
+  --bases-table-summary-background: var(--background-primary, #272b34);
+  --blockquote-border-color: var(--interactive-accent, hsl(219, 56%, 58%));
   --blue: #61afef;
-  --blur-background: color-mix(in srgb, #20242b 65%, transparent) linear-gradient(#20242b, color-mix(in srgb, #20242b 65%, transparent));
-  --canvas-background: #272b34;
-  --canvas-card-label-color: rgb(81, 86, 99);
-  --caret-color: #dcddde;
-  --checkbox-border-color: rgb(81, 86, 99);
-  --checkbox-border-color-hover: #888;
-  --checkbox-color: hsl(219, 56%, 58%);
-  --checkbox-color-hover: hsl(216, 57.12%, 66.7%);
-  --checkbox-marker-color: #272b34;
-  --checklist-done-color: #888;
-  --code-background: #20242b;
-  --code-border-color: #424958;
-  --code-comment: rgb(81, 86, 99);
-  --code-normal: #dcddde;
-  --code-punctuation: #888;
-  --codeFont: var(--font-monospace, "Fira Code", "Source Code Pro", monospace);
-  --collapse-icon-color: rgb(81, 86, 99);
-  --collapse-icon-color-collapsed: hsl(216, 57.12%, 66.7%);
-  --color-accent: hsl(219, 56%, 58%);
-  --color-accent-1: hsl(216, 57.12%, 66.7%);
-  --color-accent-2: hsl(214, 58.8%, 74.82%);
-  --color-accent-hsl: 219, 56%, 58%;
+  --canvas-background: var(--background-primary, #272b34);
+  --canvas-card-label-color: var(--text-faint, rgb(81, 86, 99));
+  --caret-color: var(--text-normal, #dcddde);
+  --checkbox-border-color: var(--text-faint, rgb(81, 86, 99));
+  --checkbox-border-color-hover: var(--text-muted, #888);
+  --checkbox-color: var(--interactive-accent, hsl(219, 56%, 58%));
+  --checkbox-color-hover: var(--interactive-accent-hover, hsl(216, 57.12%, 66.7%));
+  --checkbox-marker-color: var(--background-primary, #272b34);
+  --checklist-done-color: var(--text-muted, #888);
+  --code-background: var(--background-primary-alt, #20242b);
+  --code-border-color: var(--background-modifier-border, #424958);
+  --code-comment: var(--text-faint, rgb(81, 86, 99));
+  --code-normal: var(--text-normal, #dcddde);
+  --code-punctuation: var(--text-muted, #888);
+  --collapse-icon-color: var(--text-faint, rgb(81, 86, 99));
+  --collapse-icon-color-collapsed: var(--text-accent, hsl(216, 57.12%, 66.7%));
   --comment: #6272a4;
   --cyan: #8be9fd;
-  --dark: var(--text-normal, #dcddde);
-  --darker-graph-line: hsl(219, 56%, 30%);
-  --darkgray: var(--text-normal, #dcddde);
-  --divider-color: #424958;
-  --divider-color-hover: hsl(219, 56%, 58%);
-  --dropdown-background: #20242b;
-  --dropdown-background-hover: #353b47;
-  --embed-block-shadow-hover: 0 0 0 1px #424958, inset 0 0 0 1px #424958;
-  --embed-border-start: 2px solid hsl(219, 56%, 58%);
-  --file-header-background: #272b34;
-  --file-header-background-focused: #272b34;
-  --flair-background: #20242b;
-  --flair-color: #dcddde;
-  --font-monospace: "Fira Code", "Source Code Pro", monospace;
-  --footnote-divider-color: #424958;
-  --footnote-id-color: #888;
-  --footnote-id-color-no-occurrences: rgb(81, 86, 99);
-  --graph-line: hsl(219, 56%, 30%);
-  --graph-node: #888;
-  --graph-node-focused: hsl(216, 57.12%, 66.7%);
-  --graph-node-unresolved: rgb(81, 86, 99);
-  --graph-text: #dcddde;
-  --gray: var(--text-muted, #888);
+  --dark: var(--text-normal, var(--color-base-100, #dcddde));
+  --darker-graph-line: hsl(var(--accent-h), var(--accent-s), 30%);
+  --darkgray: var(--text-normal, var(--color-base-100, #dcddde));
+  --divider-color: var(--background-modifier-border, #424958);
+  --divider-color-hover: var(--interactive-accent, hsl(219, 56%, 58%));
+  --dropdown-background: var(--interactive-normal, #20242b);
+  --dropdown-background-hover: var(--interactive-hover, #353b47);
+  --file-header-background: var(--background-primary, #272b34);
+  --file-header-background-focused: var(--background-primary, #272b34);
+  --flair-background: var(--interactive-normal, #20242b);
+  --flair-color: var(--text-normal, #dcddde);
+  --footnote-divider-color: var(--metadata-divider-color, #424958);
+  --footnote-id-color: var(--text-muted, #888);
+  --footnote-id-color-no-occurrences: var(--text-faint, rgb(81, 86, 99));
+  --graph-line: var(--darker-graph-line, hsl(219, 56%, 30%));
+  --graph-node: var(--text-muted, #888);
+  --graph-node-focused: var(--text-accent, hsl(216, 57.12%, 66.7%));
+  --graph-node-unresolved: var(--text-faint, rgb(81, 86, 99));
+  --graph-text: var(--text-normal, #dcddde);
+  --gray: var(--text-muted, var(--color-base-70, #888));
   --gray-1: #5c6370;
   --gray-2: #abb2bf;
   --green: #50fa7b;
-  --heading-formatting: rgb(81, 86, 99);
-  --highlight: var(--text-highlight-bg, rgba(189, 195, 199, 0.1));
-  --hr-color: #424958;
-  --icon-color: #888;
-  --icon-color-active: hsl(216, 57.12%, 66.7%);
-  --icon-color-focused: #dcddde;
-  --icon-color-hover: #888;
-  --input-date-separator: rgb(81, 86, 99);
-  --input-placeholder-color: rgb(81, 86, 99);
-  --interactive-accent: hsl(219, 56%, 58%);
-  --interactive-accent-hover: hsl(216, 57.12%, 66.7%);
-  --interactive-accent-hsl: 219, 56%, 58%;
-  --interactive-hover: #353b47;
-  --interactive-normal: #20242b;
-  --light: var(--background-primary, #272b34);
-  --lightgray: var(--background-secondary, #20242b);
-  --link-color: hsl(216, 57.12%, 66.7%);
-  --link-color-hover: hsl(
-    207,
-    97%,
-    70%
-  );
-  --link-external-color: hsl(216, 57.12%, 66.7%);
-  --link-external-color-hover: hsl(
-    207,
-    97%,
-    70%
-  );
-  --link-unresolved-color: hsl(216, 57.12%, 66.7%);
-  --link-unresolved-decoration-color: hsla(219, 56%, 58%, 0.3);
-  --list-marker-color: rgb(81, 86, 99);
-  --list-marker-color-collapsed: hsl(216, 57.12%, 66.7%);
-  --list-marker-color-hover: #888;
-  --menu-background: #20242b;
-  --metadata-border-color: #424958;
-  --metadata-divider-color: #424958;
-  --metadata-input-text-color: #dcddde;
-  --metadata-label-text-color: #888;
-  --metadata-label-text-color-hover: #888;
-  --modal-background: #272b34;
-  --nav-collapse-icon-color: rgb(81, 86, 99);
-  --nav-collapse-icon-color-collapsed: rgb(81, 86, 99);
-  --nav-heading-color: #dcddde;
-  --nav-heading-color-collapsed: rgb(81, 86, 99);
-  --nav-heading-color-collapsed-hover: #888;
-  --nav-heading-color-hover: #dcddde;
-  --nav-item-background-selected: hsla(219, 56%, 58%, 0.15);
-  --nav-item-color: #888;
-  --nav-item-color-active: #dcddde;
-  --nav-item-color-highlighted: hsl(216, 57.12%, 66.7%);
-  --nav-item-color-hover: #dcddde;
-  --nav-item-color-selected: #dcddde;
-  --nav-tag-color: rgb(81, 86, 99);
-  --nav-tag-color-active: #888;
-  --nav-tag-color-hover: #888;
-  --panel-border-color: #18191e;
-  --pdf-background: #272b34;
-  --pdf-page-background: #272b34;
-  --pdf-shadow: 0 0 0 1px #424958;
-  --pdf-sidebar-background: #272b34;
-  --pdf-thumbnail-shadow: 0 0 0 1px #424958;
-  --pill-border-color: #424958;
-  --pill-color: #888;
-  --pill-color-hover: #dcddde;
-  --pill-color-remove: rgb(81, 86, 99);
-  --pill-color-remove-hover: hsl(216, 57.12%, 66.7%);
-  --pink: #ff79c6;
-  --pink-two: #ff77cc;
-  --prompt-background: #272b34;
-  --purple: #c678dd;
-  --purple-code: #bd93f9;
-  --raised-background: color-mix(in srgb, #20242b 65%, transparent) linear-gradient(#20242b, color-mix(in srgb, #20242b 65%, transparent));
-  --red: #e06c75;
-  --ribbon-background: #20242b;
-  --ribbon-background-collapsed: #272b34;
-  --search-clear-button-color: #888;
-  --search-icon-color: #888;
-  --search-result-background: #272b34;
-  --secondary: var(--text-accent, hsl(216, 57.12%, 66.7%));
-  --setting-group-heading-color: #dcddde;
-  --setting-items-background: #20242b;
-  --setting-items-border-color: #424958;
-  --shiki-active-tab-border-color: #888;
-  --shiki-code-background: #20242b;
-  --shiki-code-comment: rgb(81, 86, 99);
-  --shiki-code-normal: #888;
-  --shiki-code-punctuation: #888;
-  --shiki-gutter-border-color: #424958;
-  --shiki-gutter-text-color: rgb(81, 86, 99);
-  --shiki-gutter-text-color-highlight: #888;
-  --shiki-highlight-neutral: #888;
-  --shiki-terminal-dots-color: rgb(81, 86, 99);
-  --slider-track-background: #424958;
-  --status-bar-background: #20242b;
-  --status-bar-border-color: #424958;
-  --status-bar-text-color: #888;
-  --suggestion-background: #272b34;
-  --tab-background-active: #272b34;
-  --tab-container-background: #20242b;
-  --tab-outline-color: #424958;
-  --tab-switcher-background: #20242b;
-  --tab-switcher-menubar-background: linear-gradient(to top, #20242b, transparent);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(219, 56%, 58%);
-  --tab-text-color: rgb(81, 86, 99);
-  --tab-text-color-active: #888;
-  --tab-text-color-focused: #888;
-  --tab-text-color-focused-active: #888;
-  --tab-text-color-focused-active-current: #dcddde;
-  --tab-text-color-focused-highlighted: hsl(216, 57.12%, 66.7%);
-  --table-add-button-border-color: #424958;
-  --table-border-color: #5c6370;
-  --table-drag-handle-background-active: hsl(219, 56%, 58%);
-  --table-drag-handle-color: rgb(81, 86, 99);
-  --table-drag-handle-color-active: #dcddde;
-  --table-header-background: #1a1e24;
-  --table-header-background-hover: #1a1e24;
-  --table-header-border-color: #5c6370;
-  --table-header-color: #dcddde;
-  --table-selection: hsla(219, 56%, 58%, 0.1);
-  --table-selection-border-color: hsl(219, 56%, 58%);
-  --tag-background: hsla(219, 56%, 58%, 0.1);
-  --tag-background-hover: hsla(219, 56%, 58%, 0.2);
-  --tag-border-color: hsla(219, 56%, 58%, 0.15);
-  --tag-border-color-hover: hsla(219, 56%, 58%, 0.15);
-  --tag-color: hsl(216, 57.12%, 66.7%);
-  --tag-color-hover: hsl(216, 57.12%, 66.7%);
-  --tertiary: var(--text-accent-hover, hsl(
+  --heading-formatting: var(--text-faint, rgb(81, 86, 99));
+  --hr-color: var(--background-modifier-border, #424958);
+  --icon-color: var(--text-muted, #888);
+  --icon-color-active: var(--text-accent, hsl(216, 57.12%, 66.7%));
+  --icon-color-focused: var(--text-normal, #dcddde);
+  --icon-color-hover: var(--text-muted, #888);
+  --input-date-separator: var(--text-faint, rgb(81, 86, 99));
+  --input-placeholder-color: var(--text-faint, rgb(81, 86, 99));
+  --interactive-accent: var(--color-accent, hsl(219, 56%, 58%));
+  --interactive-accent-hover: var(--color-accent-1, hsl(216, 57.12%, 66.7%));
+  --interactive-accent-hsl: var(--color-accent-hsl, 219, 56%, 58%);
+  --interactive-hover: var(--color-base-35, #353b47);
+  --interactive-normal: var(--color-base-30, #20242b);
+  --light: var(--background-primary, var(--color-base-00, #272b34));
+  --lightgray: var(--background-secondary, var(--color-base-20, #20242b));
+  --link-color: var(--text-accent, hsl(216, 57.12%, 66.7%));
+  --link-color-hover: var(--text-accent-hover, hsl(
     207,
     97%,
     70%
   ));
-  --text-accent: hsl(216, 57.12%, 66.7%);
+  --link-external-color: var(--text-accent, hsl(216, 57.12%, 66.7%));
+  --link-external-color-hover: var(--text-accent-hover, hsl(
+    207,
+    97%,
+    70%
+  ));
+  --link-unresolved-color: var(--text-accent, hsl(216, 57.12%, 66.7%));
+  --list-marker-color: var(--text-faint, rgb(81, 86, 99));
+  --list-marker-color-collapsed: var(--text-accent, hsl(216, 57.12%, 66.7%));
+  --list-marker-color-hover: var(--text-muted, #888);
+  --menu-background: var(--background-secondary, #20242b);
+  --metadata-border-color: var(--background-modifier-border, #424958);
+  --metadata-divider-color: var(--background-modifier-border, #424958);
+  --metadata-input-text-color: var(--text-normal, #dcddde);
+  --metadata-label-text-color: var(--text-muted, #888);
+  --metadata-label-text-color-hover: var(--text-muted, #888);
+  --modal-background: var(--background-primary, #272b34);
+  --nav-collapse-icon-color: var(--collapse-icon-color, rgb(81, 86, 99));
+  --nav-collapse-icon-color-collapsed: var(--text-faint, rgb(81, 86, 99));
+  --nav-heading-color: var(--text-normal, #dcddde);
+  --nav-heading-color-collapsed: var(--text-faint, rgb(81, 86, 99));
+  --nav-heading-color-collapsed-hover: var(--text-muted, #888);
+  --nav-heading-color-hover: var(--text-normal, #dcddde);
+  --nav-item-color: var(--text-muted, #888);
+  --nav-item-color-active: var(--text-normal, #dcddde);
+  --nav-item-color-highlighted: var(--text-accent, hsl(216, 57.12%, 66.7%));
+  --nav-item-color-hover: var(--text-normal, #dcddde);
+  --nav-item-color-selected: var(--text-normal, #dcddde);
+  --nav-tag-color: var(--text-faint, rgb(81, 86, 99));
+  --nav-tag-color-active: var(--text-muted, #888);
+  --nav-tag-color-hover: var(--text-muted, #888);
+  --panel-border-color: #18191e;
+  --pdf-background: var(--background-primary, #272b34);
+  --pdf-page-background: var(--background-primary, #272b34);
+  --pdf-sidebar-background: var(--background-primary, #272b34);
+  --pill-border-color: var(--background-modifier-border, #424958);
+  --pill-color: var(--text-muted, #888);
+  --pill-color-hover: var(--text-normal, #dcddde);
+  --pill-color-remove: var(--text-faint, rgb(81, 86, 99));
+  --pill-color-remove-hover: var(--text-accent, hsl(216, 57.12%, 66.7%));
+  --pink: #ff79c6;
+  --pink-two: #ff77cc;
+  --prompt-background: var(--background-primary, #272b34);
+  --purple: #c678dd;
+  --purple-code: #bd93f9;
+  --raised-background: var(--blur-background, color-mix(in srgb, #20242b 65%, transparent) linear-gradient(#20242b, color-mix(in srgb, #20242b 65%, transparent)));
+  --red: #e06c75;
+  --ribbon-background: var(--background-secondary, #20242b);
+  --ribbon-background-collapsed: var(--background-primary, #272b34);
+  --search-clear-button-color: var(--text-muted, #888);
+  --search-icon-color: var(--text-muted, #888);
+  --search-result-background: var(--background-primary, #272b34);
+  --secondary: var(--text-accent, var(--text-accent-color, hsl(216, 57.12%, 66.7%)));
+  --setting-group-heading-color: var(--text-normal, #dcddde);
+  --setting-items-background: var(--background-primary-alt, #20242b);
+  --setting-items-border-color: var(--background-modifier-border, #424958);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, #888);
+  --shiki-code-background: var(--code-background, #20242b);
+  --shiki-code-comment: var(--text-faint, rgb(81, 86, 99));
+  --shiki-code-normal: var(--text-muted, #888);
+  --shiki-code-punctuation: var(--text-muted, #888);
+  --shiki-gutter-border-color: var(--background-modifier-border, #424958);
+  --shiki-gutter-text-color: var(--text-faint, rgb(81, 86, 99));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, #888);
+  --shiki-highlight-neutral: var(--shiki-code-normal, #888);
+  --shiki-terminal-dots-color: var(--text-faint, rgb(81, 86, 99));
+  --slider-track-background: var(--background-modifier-border, #424958);
+  --status-bar-background: var(--background-secondary, #20242b);
+  --status-bar-border-color: var(--divider-color, #424958);
+  --status-bar-text-color: var(--text-muted, #888);
+  --suggestion-background: var(--background-primary, #272b34);
+  --tab-background-active: var(--background-primary, #272b34);
+  --tab-container-background: var(--background-secondary, #20242b);
+  --tab-outline-color: var(--divider-color, #424958);
+  --tab-switcher-background: var(--background-secondary, #20242b);
+  --tab-text-color: var(--text-faint, rgb(81, 86, 99));
+  --tab-text-color-active: var(--text-muted, #888);
+  --tab-text-color-focused: var(--text-muted, #888);
+  --tab-text-color-focused-active: var(--text-muted, #888);
+  --tab-text-color-focused-active-current: var(--text-normal, #dcddde);
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(216, 57.12%, 66.7%));
+  --table-add-button-border-color: var(--background-modifier-border, #424958);
+  --table-border-color: var(--gray-1, #5c6370);
+  --table-drag-handle-background-active: var(--table-selection-border-color, hsl(219, 56%, 58%));
+  --table-drag-handle-color: var(--text-faint, rgb(81, 86, 99));
+  --table-drag-handle-color-active: var(--text-on-accent, #dcddde);
+  --table-header-background: var(--background-secondary-alt, #1a1e24);
+  --table-header-background-hover: var(--background-secondary-alt, #1a1e24);
+  --table-header-border-color: var(--table-border-color, #5c6370);
+  --table-header-color: var(--text-normal, #dcddde);
+  --table-selection-border-color: var(--interactive-accent, hsl(219, 56%, 58%));
+  --tag-color: var(--text-accent, hsl(216, 57.12%, 66.7%));
+  --tag-color-hover: var(--text-accent, hsl(216, 57.12%, 66.7%));
+  --tertiary: var(--text-accent-hover, var(--text-accent-hover-color, hsl(
+    207,
+    97%,
+    70%
+  )));
+  --text-accent: var(--text-accent-color, hsl(216, 57.12%, 66.7%));
   --text-accent-color: hsl(
-    207,
-    82%,
-    66%
+    var(--text-accent-h),
+    var(--text-accent-s),
+    var(--text-accent-l)
   );
-  --text-accent-h: 207;
-  --text-accent-hover: hsl(
+  --text-accent-h: calc(var(--accent-h) - 12);
+  --text-accent-hover: var(--text-accent-hover-color, hsl(
     207,
     97%,
     70%
-  );
+  ));
   --text-accent-hover-color: hsl(
-    207,
-    97%,
-    70%
+    var(--text-accent-hover-h),
+    var(--text-accent-hover-s),
+    var(--text-accent-hover-l)
   );
-  --text-accent-hover-h: 207;
-  --text-accent-hover-l: 70%;
-  --text-accent-hover-s: 97%;
-  --text-accent-l: 66%;
-  --text-accent-s: 82%;
-  --text-error: #e16d76;
+  --text-accent-hover-h: calc(var(--accent-h) - 12);
+  --text-accent-hover-l: calc(var(--accent-l) + 12%);
+  --text-accent-hover-s: calc(var(--accent-s) + 41%);
+  --text-accent-l: calc(var(--accent-l) + 8%);
+  --text-accent-s: calc(var(--accent-s) + 26%);
+  --text-error: var(--color-red, #e16d76);
   --text-error-hover: #c9626a;
-  --text-faint: rgb(81, 86, 99);
-  --text-highlight-bg: rgba(189, 195, 199, 0.1);
-  --text-muted: #888;
-  --text-normal: #dcddde;
+  --text-faint: var(--color-base-50, rgb(81, 86, 99));
+  --text-muted: var(--color-base-70, #888);
+  --text-normal: var(--color-base-100, #dcddde);
   --text-on-accent: #dcddde;
-  --text-selection: rgba(0, 122, 255, 0.2);
-  --textHighlight: var(--text-highlight-bg, rgba(189, 195, 199, 0.1));
-  --titlebar-background: #20242b;
-  --titlebar-background-focused: #1a1e24;
-  --titlebar-border-color: #424958;
-  --titlebar-text-color: #888;
-  --titlebar-text-color-focused: #dcddde;
-  --vault-profile-color: #dcddde;
-  --vault-profile-color-hover: #dcddde;
+  --titlebar-background: var(--background-secondary, #20242b);
+  --titlebar-background-focused: var(--background-secondary-alt, #1a1e24);
+  --titlebar-border-color: var(--background-modifier-border, #424958);
+  --titlebar-text-color: var(--text-muted, #888);
+  --titlebar-text-color-focused: var(--text-normal, #dcddde);
+  --vault-profile-color: var(--text-normal, #dcddde);
+  --vault-profile-color-hover: var(--vault-profile-color, #dcddde);
   --yellow: #e5c07b;
   --yellow-code: #f1fa8c;
   --quartz-icon-color: currentColor;
@@ -269,17 +242,17 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(32, 36, 43);
+  background-color: var(--tab-container-background, rgb(32, 36, 43));
   color: rgb(220, 221, 222);
 }
 
 html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
-  background-color: rgb(39, 43, 52);
+  background-color: var(--background-primary, rgb(39, 43, 52));
   color: rgb(220, 221, 222);
 }
 
 html body .page > div#quartz-body div.sidebar {
-  background-color: rgb(32, 36, 43);
+  background-color: var(--background-secondary, rgb(32, 36, 43));
   color: rgb(220, 221, 222);
 }
 
@@ -288,37 +261,37 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(32, 36, 43);
+  background-color: var(--tab-container-background, rgb(32, 36, 43));
   border-left-color: rgb(66, 73, 88);
   color: rgb(220, 221, 222);
 }`,
     typography: `html body .markdown-rendered p > b, html b {
-  color: rgb(220, 221, 222);
+  color: var(--bold-color, rgb(220, 221, 222));
   outline: rgb(220, 221, 222) none 0px;
   text-decoration-color: rgb(220, 221, 222);
 }
 
 html body .markdown-rendered p > em, html em {
-  color: rgb(220, 221, 222);
+  color: var(--italic-color, rgb(220, 221, 222));
   outline: rgb(220, 221, 222) none 0px;
   text-decoration-color: rgb(220, 221, 222);
 }
 
 html body .markdown-rendered p > i, html i {
-  color: rgb(220, 221, 222);
+  color: var(--italic-color, rgb(220, 221, 222));
   outline: rgb(220, 221, 222) none 0px;
   text-decoration-color: rgb(220, 221, 222);
 }
 
 html body .markdown-rendered p > strong, html strong {
-  color: rgb(220, 221, 222);
+  color: var(--bold-color, rgb(220, 221, 222));
   outline: rgb(220, 221, 222) none 0px;
   text-decoration-color: rgb(220, 221, 222);
 }
 
 html body .text-highlight {
-  background-color: rgba(189, 195, 199, 0.1);
-  color: rgb(220, 221, 222);
+  background-color: var(--text-highlight-bg, rgba(189, 195, 199, 0.1));
+  color: var(--text-normal, rgb(220, 221, 222));
   outline: rgb(220, 221, 222) none 0px;
   text-decoration-color: rgb(220, 221, 222);
 }
@@ -330,7 +303,7 @@ html body del {
 }
 
 html body h1.article-title {
-  color: rgb(220, 221, 222);
+  color: var(--text-normal, rgb(220, 221, 222));
   font-weight: 600;
 }
 
@@ -339,32 +312,32 @@ html body li.task-list-item input[type="checkbox"] {
 }
 
 html body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(88, 130, 208);
+  background-color: var(--checkbox-color, rgb(88, 130, 208));
   border-color: rgb(88, 130, 208);
 }
 
 html body p {
-  color: rgb(136, 136, 136);
+  color: var(--text-muted, rgb(136, 136, 136));
   outline: rgb(136, 136, 136) none 0px;
   text-decoration-color: rgb(136, 136, 136);
 }`,
     links: `html body a.external-link, html footer a {
-  color: rgb(122, 160, 219);
+  color: var(--link-external-color, rgb(122, 160, 219));
   outline: rgb(122, 160, 219) none 0px;
   text-decoration-color: rgb(122, 160, 219);
 }
 
 html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(122, 160, 219);
+  color: var(--link-color, rgb(122, 160, 219));
   outline: rgb(122, 160, 219) none 0px;
   text-decoration-color: rgb(122, 160, 219);
 }
 
 html body a.internal-link.broken {
-  color: rgb(122, 160, 219);
+  color: var(--link-unresolved-color, rgb(122, 160, 219));
   outline: rgb(122, 160, 219) none 0px;
   text-decoration: rgba(88, 130, 208, 0.3);
-  text-decoration-color: rgba(88, 130, 208, 0.3);
+  text-decoration-color: var(--link-unresolved-decoration-color, rgba(88, 130, 208, 0.3));
 }`,
     lists: `html body dd {
   color: rgb(220, 221, 222);
@@ -389,7 +362,7 @@ html body ul.overflow {
   border-top-color: rgb(220, 221, 222);
 }`,
     blockquotes: `html body .data-footnote-backref {
-  color: rgb(81, 86, 99);
+  color: var(--text-faint, rgb(81, 86, 99));
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(220, 221, 222);
@@ -403,7 +376,7 @@ html body table {
 }
 
 html body tbody tr:nth-child(even) {
-  background-color: rgb(32, 36, 43);
+  background-color: var(--table-background, rgb(32, 36, 43));
 }
 
 html body td {
@@ -411,7 +384,7 @@ html body td {
   border-left-color: rgb(92, 99, 112);
   border-right-color: rgb(92, 99, 112);
   border-top-color: rgb(92, 99, 112);
-  color: rgb(220, 221, 222);
+  color: var(--table-text-color, rgb(220, 221, 222));
 }
 
 html body th {
@@ -419,14 +392,14 @@ html body th {
   border-left-color: rgb(92, 99, 112);
   border-right-color: rgb(92, 99, 112);
   border-top-color: rgb(92, 99, 112);
-  color: rgb(220, 221, 222);
+  color: var(--table-header-color, rgb(220, 221, 222));
 }
 
 html body tr {
-  background-color: rgb(26, 30, 36);
+  background-color: var(--table-header-background, rgb(26, 30, 36));
 }`,
     code: `html body code {
-  background-color: rgb(25, 26, 42);
+  background-color: var(--code-background, rgb(25, 26, 42));
   border-bottom-color: rgb(19, 20, 33);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -439,8 +412,8 @@ html body tr {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-top-width: 1px;
-  color: rgb(200, 211, 245);
-  font-family: "Fira Code", "Source Code Pro", monospace;
+  color: var(--code-normal, rgb(200, 211, 245));
+  font-family: var(--font-monospace, "Fira Code", "Source Code Pro", monospace);
   padding-bottom: 2.8px;
   padding-left: 5.6px;
   padding-right: 5.6px;
@@ -448,7 +421,7 @@ html body tr {
 }
 
 html body pre:has(> code) {
-  background-color: rgb(32, 36, 43);
+  background-color: var(--code-background, rgb(32, 36, 43));
   border-bottom-color: rgb(66, 73, 88);
   border-left-color: rgb(66, 73, 88);
   border-right-color: rgb(66, 73, 88);
@@ -486,7 +459,7 @@ html body video {
   border-top-color: rgb(220, 221, 222);
 }`,
     embeds: `html body .file-embed {
-  background-color: rgb(32, 36, 43);
+  background-color: var(--background-primary-alt, rgb(32, 36, 43));
   border-bottom-color: rgb(136, 136, 136);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -548,7 +521,7 @@ html body .transclude-inner {
   border-top-right-radius: 2px;
   margin-bottom: 2px;
   margin-right: 4px;
-  width: 17.3281px;
+  width: var(--checkbox-size, 17.3281px);
 }
 
 html body li.task-list-item[data-task="#"] {
@@ -1107,7 +1080,7 @@ html body .callout > .callout-content {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   color: rgb(220, 221, 222);
 }
 
@@ -1120,7 +1093,7 @@ html body .callout[data-callout="abstract"] > .callout-content {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   color: rgb(220, 221, 222);
 }
 
@@ -1133,7 +1106,7 @@ html body .callout[data-callout="bug"] > .callout-content {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   color: rgb(220, 221, 222);
 }
 
@@ -1146,7 +1119,7 @@ html body .callout[data-callout="danger"] > .callout-content {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   color: rgb(220, 221, 222);
 }
 
@@ -1159,7 +1132,7 @@ html body .callout[data-callout="example"] > .callout-content {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   color: rgb(220, 221, 222);
 }
 
@@ -1172,7 +1145,7 @@ html body .callout[data-callout="failure"] > .callout-content {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   color: rgb(220, 221, 222);
 }
 
@@ -1185,7 +1158,7 @@ html body .callout[data-callout="info"] > .callout-content {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   color: rgb(220, 221, 222);
 }
 
@@ -1198,7 +1171,7 @@ html body .callout[data-callout="note"] > .callout-content {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   color: rgb(220, 221, 222);
 }
 
@@ -1211,7 +1184,7 @@ html body .callout[data-callout="question"] > .callout-content {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   color: rgb(220, 221, 222);
 }
 
@@ -1224,7 +1197,7 @@ html body .callout[data-callout="quote"] > .callout-content {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   color: rgb(220, 221, 222);
 }
 
@@ -1237,7 +1210,7 @@ html body .callout[data-callout="success"] > .callout-content {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   color: rgb(220, 221, 222);
 }
 
@@ -1250,7 +1223,7 @@ html body .callout[data-callout="tip"] > .callout-content {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   color: rgb(220, 221, 222);
 }
 
@@ -1263,7 +1236,7 @@ html body .callout[data-callout="todo"] > .callout-content {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   color: rgb(220, 221, 222);
 }
 
@@ -1336,11 +1309,11 @@ html body .callout[data-callout="warning"] {
   border-left-color: rgb(66, 73, 88);
   border-right-color: rgb(66, 73, 88);
   border-top-color: rgb(66, 73, 88);
-  color: rgb(220, 221, 222);
+  color: var(--text-normal, rgb(220, 221, 222));
 }
 
 html body .search > .search-container > .search-space {
-  background-color: rgb(39, 43, 52);
+  background-color: var(--prompt-background, rgb(39, 43, 52));
 }
 
 html body .search > .search-container > .search-space > * {
@@ -1388,7 +1361,7 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(88, 130, 208, 0.1);
+  background-color: var(--pill-background, rgba(88, 130, 208, 0.1));
   border-bottom-color: rgba(88, 130, 208, 0.15);
   border-left-color: rgba(88, 130, 208, 0.15);
   border-right-color: rgba(88, 130, 208, 0.15);
@@ -1400,35 +1373,35 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
-  color: rgb(255, 119, 204);
+  color: var(--pink-two, rgb(255, 119, 204));
 }
 
 html body h1.article-title {
-  color: rgb(220, 221, 222);
+  color: var(--inline-title-color, rgb(220, 221, 222));
 }
 
 html body h2 {
-  color: rgb(189, 147, 249);
+  color: var(--purple-code, rgb(189, 147, 249));
 }
 
 html body h2.page-title, html h2.page-title a {
-  color: rgb(220, 221, 222);
+  color: var(--inline-title-color, rgb(220, 221, 222));
 }
 
 html body h3 {
-  color: rgb(80, 250, 123);
+  color: var(--green, rgb(80, 250, 123));
 }
 
 html body h4 {
-  color: rgb(241, 250, 140);
+  color: var(--yellow-code, rgb(241, 250, 140));
 }
 
 html body h5 {
-  color: rgb(139, 233, 253);
+  color: var(--cyan, rgb(139, 233, 253));
 }
 
 html body h6 {
-  color: rgb(229, 192, 123);
+  color: var(--yellow, rgb(229, 192, 123));
 }
 
 html body hr {
@@ -1437,14 +1410,14 @@ html body hr {
   border-right-color: rgb(66, 73, 88);
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }`,
     explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(136, 136, 136);
+  color: var(--nav-item-color, rgb(136, 136, 136));
 }
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(136, 136, 136);
+  color: var(--nav-item-color, rgb(136, 136, 136));
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(220, 221, 222);
@@ -1454,17 +1427,17 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-left-color: rgb(136, 136, 136);
   border-right-color: rgb(136, 136, 136);
   border-top-color: rgb(136, 136, 136);
-  color: rgb(136, 136, 136);
+  color: var(--icon-color, rgb(136, 136, 136));
 }`,
     footer: `html body footer {
-  background-color: rgb(32, 36, 43);
+  background-color: var(--status-bar-background, rgb(32, 36, 43));
   border-bottom-color: rgb(24, 25, 30);
   border-bottom-width: 1px;
   border-left-color: rgb(24, 25, 30);
   border-right-color: rgb(24, 25, 30);
   border-right-width: 1px;
   border-top-color: rgb(24, 25, 30);
-  color: rgb(81, 86, 99);
+  color: var(--text-faint, rgb(81, 86, 99));
 }
 
 html body footer ul li a {
@@ -1483,7 +1456,7 @@ html body .recent-notes > ul.recent-ul > li {
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(136, 136, 136);
+  color: var(--nav-item-color, rgb(136, 136, 136));
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1501,7 +1474,7 @@ html body li.section-li > .section .meta {
 }
 
 html body li.section-li > .section > .desc > h3 > a {
-  color: rgb(136, 136, 136);
+  color: var(--nav-item-color, rgb(136, 136, 136));
 }
 
 html body ul.section-ul {
@@ -1515,7 +1488,7 @@ html body ul.section-ul {
   border-left-color: rgb(136, 136, 136);
   border-right-color: rgb(136, 136, 136);
   border-top-color: rgb(136, 136, 136);
-  color: rgb(136, 136, 136);
+  color: var(--icon-color, rgb(136, 136, 136));
 }
 
 html body .darkmode svg {
@@ -1531,7 +1504,7 @@ html body .darkmode svg {
 }
 
 html body .breadcrumb-element p {
-  color: rgb(81, 86, 99);
+  color: var(--text-faint, rgb(81, 86, 99));
 }`,
     canvas: `html body .canvas-node {
   border-color: rgb(220, 221, 222);
@@ -1542,7 +1515,7 @@ html body .canvas-node-content {
 }
 
 html body .canvas-node-file {
-  color: rgb(220, 221, 222);
+  color: var(--text-normal, rgb(220, 221, 222));
 }
 
 html body .canvas-node-group {
@@ -1550,19 +1523,19 @@ html body .canvas-node-group {
 }
 
 html body .canvas-sidebar {
-  background-color: rgb(32, 36, 43);
+  background-color: var(--background-secondary, rgb(32, 36, 43));
   border-color: rgb(220, 221, 222);
 }`,
     bases: `html body .bases-table thead th {
   border-color: rgb(92, 99, 112);
-  color: rgb(220, 221, 222);
+  color: var(--table-header-color, rgb(220, 221, 222));
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgb(66, 73, 88);
   border-left-color: rgb(66, 73, 88);
   border-right-color: rgb(66, 73, 88);
   border-top-color: rgb(66, 73, 88);
-  color: rgb(136, 136, 136);
+  color: var(--text-muted, rgb(136, 136, 136));
 }
 
 html body .metadata-properties {
@@ -1586,8 +1559,8 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
-  background-color: rgba(88, 130, 208, 0.1);
-  color: rgb(122, 160, 219);
+  background-color: var(--pill-background, rgba(88, 130, 208, 0.1));
+  color: var(--pill-color, rgb(122, 160, 219));
 }
 
 html body .note-properties-value {
@@ -1595,8 +1568,8 @@ html body .note-properties-value {
 }
 
 html body div#quartz-root {
-  background-color: rgb(39, 43, 52);
-  color: rgb(220, 221, 222);
+  background-color: var(--background-primary, rgb(39, 43, 52));
+  color: var(--text-normal, rgb(220, 221, 222));
 }
 
 html body ol.overflow {
@@ -1606,12 +1579,12 @@ html body ol.overflow {
   border-top-color: rgb(220, 221, 222);
 }`,
     stacked: `html body .stacked-page {
-  background-color: rgb(32, 36, 43);
+  background-color: var(--background-secondary, rgb(32, 36, 43));
   border-color: rgb(220, 221, 222);
 }
 
 html body .stacked-page-header {
-  background-color: rgb(26, 30, 36);
+  background-color: var(--tab-container-background, rgb(26, 30, 36));
 }
 
 html body .stacked-page.active {
@@ -1626,11 +1599,11 @@ html body .stacked-page.active {
 }
 
 html body .navigation-progress {
-  background-color: rgb(32, 36, 43);
+  background-color: var(--status-bar-background, rgb(32, 36, 43));
 }
 
 html body .page-header h2.page-title {
-  color: rgb(220, 221, 222);
+  color: var(--text-normal, rgb(220, 221, 222));
 }
 
 html body abbr {
@@ -1649,17 +1622,17 @@ html body input[type=text] {
   border-left-color: rgb(136, 136, 136);
   border-right-color: rgb(136, 136, 136);
   border-top-color: rgb(136, 136, 136);
-  color: rgb(136, 136, 136);
+  color: var(--text-normal, rgb(136, 136, 136));
 }
 
 html body kbd {
-  background-color: rgb(32, 36, 43);
+  background-color: var(--code-background, rgb(32, 36, 43));
   border-bottom-color: rgb(220, 221, 222);
   border-left-color: rgb(220, 221, 222);
   border-right-color: rgb(220, 221, 222);
   border-top-color: rgb(220, 221, 222);
-  color: rgb(220, 221, 222);
-  font-family: "Fira Code", "Source Code Pro", monospace;
+  color: var(--code-normal, rgb(220, 221, 222));
+  font-family: var(--font-monospace, "Fira Code", "Source Code Pro", monospace);
 }
 
 html body progress {
@@ -1682,7 +1655,7 @@ html body sup {
 }
 
 html body ul.tags > li {
-  background-color: rgb(32, 36, 43);
+  background-color: var(--background-primary-alt, rgb(32, 36, 43));
   border-bottom-color: rgba(88, 130, 208, 0.15);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -1691,7 +1664,7 @@ html body ul.tags > li {
   border-top-color: rgba(88, 130, 208, 0.15);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  color: rgb(229, 192, 123);
+  color: var(--yellow, rgb(229, 192, 123));
 }`,
   },
   light: {},

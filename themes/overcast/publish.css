@@ -400,11 +400,14 @@ body.theme-dark {
     207,
     110
   ) !important;
-  --background-primary: semi-transparent !important;
+  --background-primary: var(--color-base-00, semi-transparent) !important;
   --background-primary-alt: var(--color-base-10, #242424) !important;
-  --background-secondary: semi-transparent !important;
+  --background-secondary: var(--color-base-20, semi-transparent) !important;
   --background-secondary-alt: var(--color-base-30, #363636) !important;
-  --bases-cards-background: semi-transparent !important;
+  --bases-cards-background: var(
+    --background-primary,
+    semi-transparent
+  ) !important;
   --bases-cards-border-width: var(--border-width, 1px) !important;
   --bases-cards-corner-shape: var(--corner-shape, round) !important;
   --bases-cards-cover-background: var(
@@ -427,7 +430,10 @@ body.theme-dark {
   --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
   --bases-table-border-color: var(--table-border-color, #363636) !important;
-  --bases-table-cell-background-active: semi-transparent !important;
+  --bases-table-cell-background-active: var(
+    --background-primary,
+    semi-transparent
+  ) !important;
   --bases-table-cell-background-disabled: var(
     --background-primary-alt,
     #242424
@@ -447,7 +453,10 @@ body.theme-dark {
     --background-primary-alt,
     #242424
   ) !important;
-  --bases-table-header-background: semi-transparent !important;
+  --bases-table-header-background: var(
+    --background-primary,
+    semi-transparent
+  ) !important;
   --bases-table-header-background-hover: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
@@ -464,7 +473,10 @@ body.theme-dark {
     transparent
   ) !important;
   --bases-table-row-border-width: var(--border-width, 1px) !important;
-  --bases-table-summary-background: semi-transparent !important;
+  --bases-table-summary-background: var(
+    --background-primary,
+    semi-transparent
+  ) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
@@ -513,7 +525,7 @@ body.theme-dark {
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb, 2, 122, 255);
   --callout-warning: var(--color-orange-rgb, 233, 151, 63);
-  --canvas-background: semi-transparent !important;
+  --canvas-background: var(--background-primary, semi-transparent) !important;
   --canvas-card-label-color: var(--text-faint, #666666) !important;
   --canvas-color-1: var(--color-red-rgb, 251, 70, 76) !important;
   --canvas-color-2: var(--color-orange-rgb, 233, 151, 63) !important;
@@ -533,7 +545,10 @@ body.theme-dark {
     --interactive-accent-hover,
     hsl(255, 89.76%, 75.9%)
   ) !important;
-  --checkbox-marker-color: semi-transparent !important;
+  --checkbox-marker-color: var(
+    --background-primary,
+    semi-transparent
+  ) !important;
   --checkbox-radius: var(--radius-s, 4px) !important;
   --checkbox-size: var(--font-text-size, 16px) !important;
   --checklist-done-color: var(--text-muted, #b3b3b3) !important;
@@ -597,8 +612,14 @@ body.theme-dark {
     inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: semi-transparent !important;
-  --file-header-background-focused: semi-transparent !important;
+  --file-header-background: var(
+    --background-primary,
+    semi-transparent
+  ) !important;
+  --file-header-background-focused: var(
+    --background-primary,
+    semi-transparent
+  ) !important;
   --file-header-border: var(--border-width, 1px solid transparent) solid
     transparent !important;
   --file-header-font: var(
@@ -751,7 +772,7 @@ body.theme-dark {
     hsl(255, 89.76%, 75.9%)
   ) !important;
   --list-marker-color-hover: var(--text-muted, #b3b3b3) !important;
-  --menu-background: semi-transparent !important;
+  --menu-background: var(--background-secondary, semi-transparent) !important;
   --menu-border-color: var(
     --background-modifier-border-hover,
     #3f3f3f
@@ -841,7 +862,7 @@ body.theme-dark {
   --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
-  --modal-background: semi-transparent !important;
+  --modal-background: var(--background-primary, semi-transparent) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -897,10 +918,13 @@ body.theme-dark {
   --nav-tag-color-hover: var(--text-muted, #b3b3b3) !important;
   --nav-tag-radius: var(--radius-s, 4px) !important;
   --nav-tag-weight: var(--font-semibold, 600) !important;
-  --pdf-background: semi-transparent !important;
-  --pdf-page-background: semi-transparent !important;
+  --pdf-background: var(--background-primary, semi-transparent) !important;
+  --pdf-page-background: var(--background-primary, semi-transparent) !important;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pdf-sidebar-background: semi-transparent !important;
+  --pdf-sidebar-background: var(
+    --background-primary,
+    semi-transparent
+  ) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --pill-border-color: var(--background-modifier-border, #363636) !important;
   --pill-border-color-hover: var(
@@ -916,7 +940,7 @@ body.theme-dark {
     hsl(255, 89.76%, 75.9%)
   ) !important;
   --popover-font-size: var(--font-text-size, 16px) !important;
-  --prompt-background: semi-transparent !important;
+  --prompt-background: var(--background-primary, semi-transparent) !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -931,8 +955,11 @@ body.theme-dark {
     --blur-s,
     blur(6px) saturate(1.5) brightness(1.15)
   ) !important;
-  --ribbon-background: semi-transparent !important;
-  --ribbon-background-collapsed: semi-transparent !important;
+  --ribbon-background: var(--background-secondary, semi-transparent) !important;
+  --ribbon-background-collapsed: var(
+    --background-primary,
+    semi-transparent
+  ) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1)
     var(--size-4-3, 8px 4px 12px) !important;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
@@ -941,7 +968,10 @@ body.theme-dark {
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
   --search-clear-button-color: var(--text-muted, #b3b3b3) !important;
   --search-icon-color: var(--text-muted, #b3b3b3) !important;
-  --search-result-background: semi-transparent !important;
+  --search-result-background: var(
+    --background-primary,
+    semi-transparent
+  ) !important;
   --setting-group-heading-color: var(--text-normal, #dadada) !important;
   --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
   --setting-group-heading-weight: var(--font-semibold, 600) !important;
@@ -1006,14 +1036,20 @@ body.theme-dark {
     --background-modifier-border,
     #363636
   ) !important;
-  --status-bar-background: semi-transparent !important;
+  --status-bar-background: var(
+    --background-secondary,
+    semi-transparent
+  ) !important;
   --status-bar-border-color: var(--divider-color, #363636) !important;
   --status-bar-border-width: var(--border-width) 0 0
     var(--border-width, 1px 0 0 1px) !important;
   --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
   --status-bar-radius: var(--radius-m, 8px 0 0 0) 0 0 0 !important;
   --status-bar-text-color: var(--text-muted, #b3b3b3) !important;
-  --suggestion-background: semi-transparent !important;
+  --suggestion-background: var(
+    --background-primary,
+    semi-transparent
+  ) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(--color-red, #fb464c) !important;
   --sync-avatar-color-2: var(--color-orange, #e9973f) !important;
@@ -1023,8 +1059,14 @@ body.theme-dark {
   --sync-avatar-color-6: var(--color-blue, #027aff) !important;
   --sync-avatar-color-7: var(--color-purple, #a882ff) !important;
   --sync-avatar-color-8: var(--color-pink, #fa99cd) !important;
-  --tab-background-active: semi-transparent !important;
-  --tab-container-background: semi-transparent !important;
+  --tab-background-active: var(
+    --background-primary,
+    semi-transparent
+  ) !important;
+  --tab-container-background: var(
+    --background-secondary,
+    semi-transparent
+  ) !important;
   --tab-divider-color: var(
     --background-modifier-border-hover,
     #3f3f3f
@@ -1034,10 +1076,13 @@ body.theme-dark {
   --tab-radius: var(--radius-s, 4px) !important;
   --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
   --tab-stacked-header-width: var(--header-height, 40px) !important;
-  --tab-switcher-background: semi-transparent !important;
+  --tab-switcher-background: var(
+    --background-secondary,
+    semi-transparent
+  ) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
-    semi-transparent,
+    var(--background-secondary),
     transparent
   ) !important;
   --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
@@ -1122,7 +1167,10 @@ body.theme-dark {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33) !important;
   --text-success: var(--color-green, #44cf6e) !important;
   --text-warning: var(--color-orange, #e9973f) !important;
-  --titlebar-background: semi-transparent !important;
+  --titlebar-background: var(
+    --background-secondary,
+    semi-transparent
+  ) !important;
   --titlebar-background-focused: var(
     --background-secondary-alt,
     #363636
@@ -1781,7 +1829,7 @@ body body.theme-dark .markdown-rendered p {
 }
 body body.theme-dark strong {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--bold-color, rgb(255, 255, 255));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -1820,7 +1868,7 @@ body body.theme-dark strong {
 }
 body body.theme-dark b {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--bold-color, rgb(255, 255, 255));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -1859,7 +1907,7 @@ body body.theme-dark b {
 }
 body body.theme-dark em {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--italic-color, rgb(255, 255, 255));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -1898,7 +1946,7 @@ body body.theme-dark em {
 }
 body body.theme-dark i {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--italic-color, rgb(255, 255, 255));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -2295,7 +2343,7 @@ body body.theme-dark .site-body-left-column input.search-bar {
     sans-serif;
 }
 body body.theme-dark .search-results {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--prompt-background, rgba(0, 0, 0, 0));
   border: 1px solid rgb(85, 85, 85);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -2388,7 +2436,7 @@ body body.theme-dark div.search-results .suggestion-item.is-selected {
   color: rgb(255, 255, 255);
 }
 body body.theme-dark .published-container .markdown-rendered h1 {
-  color: rgb(255, 255, 255);
+  color: var(--h1-color, rgb(255, 255, 255));
   font-family: var(
     --h1-font,
     ui-sans-serif,
@@ -2408,7 +2456,7 @@ body body.theme-dark .published-container .markdown-rendered h1 {
   text-shadow: rgb(255, 255, 255) 0px 0px 3px;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
-  color: rgb(255, 255, 255);
+  color: var(--h2-color, rgb(255, 255, 255));
   font-family: var(
     --h2-font,
     ui-sans-serif,
@@ -2428,7 +2476,7 @@ body body.theme-dark .published-container .markdown-rendered h2 {
   text-shadow: rgb(255, 255, 255) 0px 0px 3px;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
-  color: rgb(255, 255, 255);
+  color: var(--h3-color, rgb(255, 255, 255));
   font-family: var(
     --h3-font,
     ui-sans-serif,
@@ -2448,7 +2496,7 @@ body body.theme-dark .published-container .markdown-rendered h3 {
   text-shadow: rgb(255, 255, 255) 0px 0px 3px;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
-  color: rgb(255, 255, 255);
+  color: var(--h4-color, rgb(255, 255, 255));
   font-family: var(
     --h4-font,
     ui-sans-serif,
@@ -2468,7 +2516,7 @@ body body.theme-dark .published-container .markdown-rendered h4 {
   text-shadow: rgb(255, 255, 255) 0px 0px 3px;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
-  color: rgb(255, 255, 255);
+  color: var(--h5-color, rgb(255, 255, 255));
   font-family: var(
     --h5-font,
     ui-sans-serif,
@@ -2488,7 +2536,7 @@ body body.theme-dark .published-container .markdown-rendered h5 {
   text-shadow: rgb(255, 255, 255) 0px 0px 3px;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
-  color: rgb(255, 255, 255);
+  color: var(--h6-color, rgb(255, 255, 255));
   font-family: var(
     --h6-font,
     ui-sans-serif,
@@ -2565,7 +2613,7 @@ body body.theme-dark body {
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border: 0px solid rgba(2, 122, 255, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2615,7 +2663,7 @@ body body.theme-dark .callout > .callout-content {
   padding: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -2652,7 +2700,7 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2689,7 +2737,7 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2726,7 +2774,7 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -2763,7 +2811,7 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
@@ -2800,7 +2848,7 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -2837,7 +2885,7 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -2874,7 +2922,7 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2911,7 +2959,7 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2948,7 +2996,7 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2985,7 +3033,7 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
@@ -3022,7 +3070,7 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -3133,7 +3181,7 @@ body body.theme-dark .markdown-rendered th {
 }
 body body.theme-dark .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--table-text-color, rgb(255, 255, 255));
   font-weight: 400;
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
@@ -3758,7 +3806,7 @@ body body.theme-dark .clickable-icon {
   border-bottom-right-radius: 4px;
 }
 body body.theme-dark .site-footer {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
   color: var(--status-bar-text-color, rgb(179, 179, 179));
   font-family:
     ui-sans-serif,

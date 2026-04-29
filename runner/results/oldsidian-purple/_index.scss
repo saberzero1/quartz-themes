@@ -11,22 +11,22 @@
   --background-modifier-border: var(--color-base-30, #363636) !important;
   --background-modifier-border-focus: var(--color-base-40, #555555) !important;
   --background-modifier-border-hover: var(--color-base-35, #3f3f3f) !important;
-  --background-modifier-error: #5c0000 !important;
-  --background-modifier-error-hover: #990000 !important;
+  --background-modifier-error: var(--color-red, #5c0000) !important;
+  --background-modifier-error-hover: var(--color-red, #990000) !important;
   --background-modifier-error-rgb: var(--color-red-rgb, 251, 70, 76) !important;
   --background-modifier-form-field: var(--color-base-25, #2a2a2a) !important;
   --background-modifier-form-field-hover: var(--background-modifier-form-field, #2a2a2a) !important;
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067) !important;
   --background-modifier-success: var(--color-green, #44cf6e) !important;
   --background-modifier-success-rgb: var(--color-green-rgb, 68, 207, 110) !important;
-  --background-primary: #262626ff !important;
-  --background-primary-alt: #161616 !important;
+  --background-primary: var(--color-base-00, #262626ff) !important;
+  --background-primary-alt: var(--color-base-10, #161616) !important;
   --background-secondary: var(--color-base-20, #262626) !important;
   --background-secondary-alt: var(--color-base-30, #363636) !important;
-  --bases-cards-background: #161616 !important;
+  --bases-cards-background: var(--background-primary, #161616) !important;
   --bases-cards-border-width: var(--border-width, 1px) !important;
   --bases-cards-corner-shape: var(--corner-shape, round) !important;
-  --bases-cards-cover-background: #161616 !important;
+  --bases-cards-cover-background: var(--background-primary-alt, #161616) !important;
   --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
   --bases-cards-radius: var(--radius-m, 8px) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
@@ -40,26 +40,26 @@
   --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
   --bases-table-border-color: var(--table-border-color, #363636) !important;
-  --bases-table-cell-background-active: #262626ff !important;
-  --bases-table-cell-background-disabled: #161616 !important;
+  --bases-table-cell-background-active: var(--background-primary, #262626ff) !important;
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #161616) !important;
   --bases-table-cell-background-selected: var(--table-selection, hsla(258, 88%, 66%, 0.1)) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px var(--background-modifier-border-focus) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px #6c41d8 !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width, 1px) !important;
   --bases-table-container-border-radius: var(--radius-s, 4px) !important;
   --bases-table-container-border-width: var(--border-width, 1px) !important;
   --bases-table-font-size: var(--font-smaller, 0.875em) !important;
-  --bases-table-group-background: #161616 !important;
-  --bases-table-header-background: #262626ff !important;
+  --bases-table-group-background: var(--background-primary-alt, #161616) !important;
+  --bases-table-header-background: var(--background-primary, #262626ff) !important;
   --bases-table-header-background-hover: var(--background-modifier-hover, rgba(255, 255, 255, 0.067)) !important;
   --bases-table-header-color: var(--text-muted, #b3b3b3) !important;
   --bases-table-header-sort-mask: linear-gradient(to left, transparent var(--size-4-6), black var(--size-4-6)) !important;
   --bases-table-header-weight: var(--font-weight, 400) !important;
   --bases-table-row-background-hover: var(--table-row-background-hover, transparent) !important;
   --bases-table-row-border-width: var(--border-width, 1px) !important;
-  --bases-table-summary-background: #262626ff !important;
+  --bases-table-summary-background: var(--background-primary, #262626ff) !important;
   --bases-table-summary-background-hover: var(--background-modifier-hover, rgba(255, 255, 255, 0.067)) !important;
-  --blockquote-border-color: #6c41d8 !important;
+  --blockquote-border-color: var(--interactive-accent, #6c41d8) !important;
   --blur-background: color-mix(in srgb, var(--interactive-normal) var(--blur-opacity-s), transparent) linear-gradient(var(--interactive-normal), color-mix(in srgb, var(--interactive-normal) var(--blur-opacity-s), transparent)) !important;
   --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation)) brightness(var(--blur-brightness)) !important;
   --blur-m: blur(var(--blur-radius-m)) saturate(var(--blur-saturation)) brightness(var(--blur-brightness)) !important;
@@ -67,7 +67,7 @@
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
   --button-corner-shape: var(--corner-shape, round) !important;
   --button-radius: var(--input-radius, 5px) !important;
-  --callout-blend-mode: normal;
+  --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
   --callout-bug: var(--color-red-rgb, 251, 70, 76);
   --callout-default: var(--color-blue-rgb, 2, 122, 255);
   --callout-error: var(--color-red-rgb, 251, 70, 76);
@@ -75,16 +75,16 @@
   --callout-fail: var(--color-red-rgb, 251, 70, 76);
   --callout-important: var(--color-cyan-rgb, 83, 223, 221);
   --callout-info: var(--color-blue-rgb, 2, 122, 255);
-  --callout-padding: 0;
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 0);
   --callout-question: var(--color-orange-rgb, 233, 151, 63);
-  --callout-radius: 5px;
+  --callout-radius: var(--radius-s, 5px);
   --callout-success: var(--color-green-rgb, 68, 207, 110);
   --callout-summary: var(--color-cyan-rgb, 83, 223, 221);
   --callout-tip: var(--color-cyan-rgb, 83, 223, 221);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb, 2, 122, 255);
   --callout-warning: var(--color-orange-rgb, 233, 151, 63);
-  --canvas-background: #262626ff !important;
+  --canvas-background: var(--background-primary, #262626ff) !important;
   --canvas-card-label-color: var(--text-faint, #666666) !important;
   --canvas-color-1: var(--color-red-rgb, 251, 70, 76) !important;
   --canvas-color-2: var(--color-orange-rgb, 233, 151, 63) !important;
@@ -99,21 +99,21 @@
   --caret-color: var(--text-normal, #dadada) !important;
   --checkbox-border-color: var(--text-faint, #666666) !important;
   --checkbox-border-color-hover: var(--text-muted, #b3b3b3) !important;
-  --checkbox-color: #6c41d8 !important;
+  --checkbox-color: var(--interactive-accent, #6c41d8) !important;
   --checkbox-color-hover: var(--interactive-accent-hover, hsl(255, 89.76%, 75.9%)) !important;
-  --checkbox-marker-color: #262626ff !important;
+  --checkbox-marker-color: var(--background-primary, #262626ff) !important;
   --checkbox-radius: var(--radius-s, 4px) !important;
   --checkbox-size: var(--font-text-size, 16px) !important;
   --checklist-done-color: var(--text-muted, #b3b3b3) !important;
   --clickable-icon-radius: var(--radius-s, 4px) !important;
-  --code-background: #161616 !important;
+  --code-background: var(--background-primary-alt, #161616) !important;
   --code-border-color: var(--background-modifier-border, #363636) !important;
   --code-bracket-background: var(--background-modifier-hover, rgba(255, 255, 255, 0.067)) !important;
   --code-comment: var(--text-faint, #666666) !important;
   --code-function: var(--color-yellow, #e0de71) !important;
   --code-important: var(--color-orange, #e9973f) !important;
   --code-keyword: var(--color-pink, #fa99cd) !important;
-  --code-normal: #fb463b !important;
+  --code-normal: var(--text-normal, #fb463b) !important;
   --code-operator: var(--color-red, #fb464c) !important;
   --code-property: var(--color-cyan, #53dfdd) !important;
   --code-punctuation: var(--text-muted, #b3b3b3) !important;
@@ -123,13 +123,13 @@
   --code-tag: var(--color-red, #fb464c) !important;
   --code-value: var(--color-purple, #a882ff) !important;
   --collapse-icon-color: var(--text-faint, #666666) !important;
-  --collapse-icon-color-collapsed: #814cff !important;
+  --collapse-icon-color-collapsed: var(--text-accent, #814cff) !important;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
   --color-accent-1: hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15)) !important;
   --color-accent-2: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s) * 1.05), calc(var(--accent-l) * 1.29)) !important;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l) !important;
   --divider-color: var(--background-modifier-border, #363636) !important;
-  --divider-color-hover: #6c41d8 !important;
+  --divider-color-hover: var(--interactive-accent, #6c41d8) !important;
   --divider-vertical-height: calc(100% - var(--header-height)) !important;
   --dropdown-background: var(--interactive-normal, #363636) !important;
   --dropdown-background-hover: var(--interactive-hover, #3f3f3f) !important;
@@ -137,10 +137,10 @@
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
   --dropdown-padding: 0 var(--dropdown-padding-end) 0 var(--dropdown-padding-start) !important;
   --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border), inset 0 0 0 1px var(--background-modifier-border) !important;
-  --embed-border-start: 2px solid #6c41d8 !important;
+  --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: #262626ff !important;
-  --file-header-background-focused: #262626ff !important;
+  --file-header-background: var(--background-primary, #262626ff) !important;
+  --file-header-background-focused: var(--background-primary, #262626ff) !important;
   --file-header-border: var(--border-width, 1px solid transparent) solid transparent !important;
   --file-header-font: var(--font-interface, "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif) !important;
   --file-header-font-size: var(--font-ui-small, 13px) !important;
@@ -173,7 +173,7 @@
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted, #b3b3b3) !important;
   --graph-node-attachment: var(--color-yellow, #e0de71) !important;
-  --graph-node-focused: #814cff !important;
+  --graph-node-focused: var(--text-accent, #814cff) !important;
   --graph-node-tag: var(--color-green, #44cf6e) !important;
   --graph-node-unresolved: var(--text-faint, #666666) !important;
   --graph-text: var(--text-normal, #dadada) !important;
@@ -183,7 +183,7 @@
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --hr-color: var(--background-modifier-border, #363636) !important;
   --icon-color: var(--text-muted, #b3b3b3) !important;
-  --icon-color-active: #814cff !important;
+  --icon-color-active: var(--text-accent, #814cff) !important;
   --icon-color-focused: var(--text-normal, #dadada) !important;
   --icon-color-hover: var(--text-muted, #b3b3b3) !important;
   --icon-size: var(--icon-m, 18px) !important;
@@ -204,21 +204,21 @@
   --input-icon-inset: var(--size-4-1, 4px) !important;
   --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
   --input-placeholder-color: var(--text-faint, #666666) !important;
-  --interactive-accent: #6c41d8 !important;
+  --interactive-accent: var(--color-accent, #6c41d8) !important;
   --interactive-accent-hover: var(--color-accent-1, hsl(255, 89.76%, 75.9%)) !important;
   --interactive-accent-hsl: var(--color-accent-hsl, 258, 88%, 66%) !important;
   --interactive-hover: var(--color-base-35, #3f3f3f) !important;
   --interactive-normal: var(--color-base-30, #363636) !important;
-  --link-color: #814cff !important;
+  --link-color: var(--text-accent, #814cff) !important;
   --link-color-hover: var(--text-accent-hover, hsl(253, 92.4%, 85.14%)) !important;
-  --link-external-color: #814cff !important;
+  --link-external-color: var(--text-accent, #814cff) !important;
   --link-external-color-hover: var(--text-accent-hover, hsl(253, 92.4%, 85.14%)) !important;
-  --link-unresolved-color: #814cff !important;
+  --link-unresolved-color: var(--text-accent, #814cff) !important;
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3) !important;
   --link-weight: var(--font-weight, 400) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-marker-color: var(--text-faint, #666666) !important;
-  --list-marker-color-collapsed: #814cff !important;
+  --list-marker-color-collapsed: var(--text-accent, #814cff) !important;
   --list-marker-color-hover: var(--text-muted, #b3b3b3) !important;
   --menu-background: var(--background-secondary, #262626) !important;
   --menu-border-color: var(--background-modifier-border-hover, #3f3f3f) !important;
@@ -249,7 +249,7 @@
   --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
-  --modal-background: #262626ff !important;
+  --modal-background: var(--background-primary, #262626ff) !important;
   --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus)) !important;
   --modal-border-width: var(--border-width, 1px) !important;
   --modal-radius: var(--radius-l, 12px) !important;
@@ -263,14 +263,14 @@
   --nav-heading-weight-hover: var(--font-medium, 500) !important;
   --nav-indentation-guide-color: var(--indentation-guide-color, rgba(255, 255, 255, 0.12)) !important;
   --nav-indentation-guide-width: var(--indentation-guide-width, 1px) !important;
-  --nav-item-background-active: #6c41d8 !important;
+  --nav-item-background-active: var(--background-modifier-hover, #6c41d8) !important;
   --nav-item-background-hover: var(--background-modifier-hover, rgba(255, 255, 255, 0.067)) !important;
   --nav-item-background-selected: hsla(var(--color-accent-hsl), 0.15) !important;
   --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
   --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
   --nav-item-color: var(--text-muted, #b3b3b3) !important;
   --nav-item-color-active: var(--text-normal, #dadada) !important;
-  --nav-item-color-highlighted: #814cff !important;
+  --nav-item-color-highlighted: var(--text-accent, #814cff) !important;
   --nav-item-color-hover: var(--text-normal, #dadada) !important;
   --nav-item-color-selected: var(--text-normal, #dadada) !important;
   --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
@@ -283,10 +283,10 @@
   --nav-tag-color-hover: var(--text-muted, #b3b3b3) !important;
   --nav-tag-radius: var(--radius-s, 4px) !important;
   --nav-tag-weight: var(--font-semibold, 600) !important;
-  --pdf-background: #262626ff !important;
-  --pdf-page-background: #262626ff !important;
+  --pdf-background: var(--background-primary, #262626ff) !important;
+  --pdf-page-background: var(--background-primary, #262626ff) !important;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pdf-sidebar-background: #262626ff !important;
+  --pdf-sidebar-background: var(--background-primary, #262626ff) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --pill-border-color: var(--background-modifier-border, #363636) !important;
   --pill-border-color-hover: var(--background-modifier-border-hover, #3f3f3f) !important;
@@ -294,15 +294,15 @@
   --pill-color: var(--text-muted, #b3b3b3) !important;
   --pill-color-hover: var(--text-normal, #dadada) !important;
   --pill-color-remove: var(--text-faint, #666666) !important;
-  --pill-color-remove-hover: #814cff !important;
+  --pill-color-remove-hover: var(--text-accent, #814cff) !important;
   --popover-font-size: var(--font-text-size, 16px) !important;
-  --prompt-background: #262626ff !important;
+  --prompt-background: var(--background-primary, #262626ff) !important;
   --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus)) !important;
   --prompt-border-width: var(--border-width, 1px) !important;
   --raised-background: var(--blur-background, color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent))) !important;
   --raised-blur: var(--blur-s, blur(6px) saturate(1.5) brightness(1.15)) !important;
   --ribbon-background: var(--background-secondary, #262626) !important;
-  --ribbon-background-collapsed: #262626ff !important;
+  --ribbon-background-collapsed: var(--background-primary, #262626ff) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3, 8px 4px 12px) !important;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
@@ -310,16 +310,16 @@
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
   --search-clear-button-color: var(--text-muted, #b3b3b3) !important;
   --search-icon-color: var(--text-muted, #b3b3b3) !important;
-  --search-result-background: #262626ff !important;
+  --search-result-background: var(--background-primary, #262626ff) !important;
   --setting-group-heading-color: var(--text-normal, #dadada) !important;
   --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
   --setting-group-heading-weight: var(--font-semibold, 600) !important;
-  --setting-items-background: #161616 !important;
+  --setting-items-background: var(--background-primary-alt, #161616) !important;
   --setting-items-border-color: var(--background-modifier-border, #363636) !important;
   --setting-items-padding: var(--size-4-5, 20px) !important;
   --setting-items-radius: var(--radius-l, 12px) !important;
   --shiki-active-tab-border-color: var(--shiki-highlight-neutral, #b3b3b3) !important;
-  --shiki-code-background: #161616 !important;
+  --shiki-code-background: var(--code-background, #161616) !important;
   --shiki-code-block-border-radius: var(--code-radius, 4px) !important;
   --shiki-code-block-spacing: var(--p-spacing, 1rem) !important;
   --shiki-code-comment: var(--text-faint, #666666) !important;
@@ -354,7 +354,7 @@
   --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
   --status-bar-radius: var(--radius-m, 8px 0 0 0) 0 0 0 !important;
   --status-bar-text-color: var(--text-muted, #b3b3b3) !important;
-  --suggestion-background: #262626ff !important;
+  --suggestion-background: var(--background-primary, #262626ff) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(--color-red, #fb464c) !important;
   --sync-avatar-color-2: var(--color-orange, #e9973f) !important;
@@ -364,7 +364,7 @@
   --sync-avatar-color-6: var(--color-blue, #027aff) !important;
   --sync-avatar-color-7: var(--color-purple, #a882ff) !important;
   --sync-avatar-color-8: var(--color-pink, #fa99cd) !important;
-  --tab-background-active: #262626ff !important;
+  --tab-background-active: var(--background-primary, #262626ff) !important;
   --tab-container-background: var(--background-secondary, #262626) !important;
   --tab-divider-color: var(--background-modifier-border-hover, #3f3f3f) !important;
   --tab-font-size: var(--font-ui-small, 13px) !important;
@@ -382,14 +382,14 @@
   --tab-text-color-focused: var(--text-muted, #b3b3b3) !important;
   --tab-text-color-focused-active: var(--text-muted, #b3b3b3) !important;
   --tab-text-color-focused-active-current: var(--text-normal, #dadada) !important;
-  --tab-text-color-focused-highlighted: #814cff !important;
+  --tab-text-color-focused-highlighted: var(--text-accent, #814cff) !important;
   --table-add-button-border-color: var(--background-modifier-border, #363636) !important;
   --table-add-button-border-width: var(--table-border-width, 1px) !important;
   --table-border-color: var(--background-modifier-border, #363636) !important;
   --table-column-alt-background: var(--table-background, transparent) !important;
   --table-column-first-border-width: var(--table-border-width, 1px) !important;
   --table-column-last-border-width: var(--table-border-width, 1px) !important;
-  --table-drag-handle-background-active: #6c41d8 !important;
+  --table-drag-handle-background-active: var(--table-selection-border-color, #6c41d8) !important;
   --table-drag-handle-color: var(--text-faint, #666666) !important;
   --table-drag-handle-color-active: var(--text-on-accent, white) !important;
   --table-header-background: var(--table-background, transparent) !important;
@@ -405,20 +405,20 @@
   --table-row-last-border-width: var(--table-border-width, 1px) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
   --table-selection-blend-mode: var(--highlight-mix-blend-mode, lighten) !important;
-  --table-selection-border-color: #6c41d8 !important;
+  --table-selection-border-color: var(--interactive-accent, #6c41d8) !important;
   --table-text-size: var(--font-text-size, 16px) !important;
   --tag-background: hsla(var(--interactive-accent-hsl), 0.1) !important;
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2) !important;
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15) !important;
   --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15) !important;
-  --tag-color: #814cff !important;
-  --tag-color-hover: #814cff !important;
+  --tag-color: var(--text-accent, #814cff) !important;
+  --tag-color-hover: var(--text-accent, #814cff) !important;
   --tag-size: var(--font-smaller, 0.875em) !important;
-  --text-accent: #814cff !important;
+  --text-accent: var(--color-accent-1, #814cff) !important;
   --text-accent-hover: var(--color-accent-2, hsl(253, 92.4%, 85.14%)) !important;
   --text-error: var(--color-red, #fb464c) !important;
   --text-faint: var(--color-base-50, #666666) !important;
-  --text-highlight-bg: #6c41d8 !important;
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4) !important;
   --text-muted: var(--color-base-70, #b3b3b3) !important;
   --text-normal: var(--color-base-100, #dadada) !important;
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33) !important;
@@ -498,9 +498,9 @@
   --callout-border-opacity: 1;
   --callout-border-width: 0px;
   --callout-content-background: transparent;
-  --callout-content-padding: 8px 8px 8px 12px;
+  --callout-content-padding: var(--size-4-2) var(--size-4-2) var(--size-4-2) var(--size-4-3, 8px 8px 8px 12px);
   --callout-quote: 158, 158, 158;
-  --callout-title-padding: 8px 8px 8px 12px;
+  --callout-title-padding: var(--size-4-2) var(--size-4-2) var(--size-4-2) var(--size-4-3, 8px 8px 8px 12px);
   --canvas-color: 126, 126, 126 !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checklist-done-decoration: line-through !important;
@@ -1150,7 +1150,7 @@ html {
 
 body {
   div#quartz-root {
-    background-color: rgb(38, 38, 38);
+    background-color: var(--background-primary, rgb(38, 38, 38));
     color: var(--text-normal, rgb(218, 218, 218));
   }
 
@@ -1158,7 +1158,7 @@ body {
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: rgb(38, 38, 38);
+    background-color: var(--background-primary, rgb(38, 38, 38));
     color: rgb(218, 218, 218);
   }
 
@@ -1188,7 +1188,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(129, 76, 255);
+    color: var(--link-external-color, rgb(129, 76, 255));
     cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
@@ -1229,7 +1229,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(129, 76, 255);
+    color: var(--link-color, rgb(129, 76, 255));
     cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
@@ -1269,7 +1269,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(129, 76, 255);
+    color: var(--link-unresolved-color, rgb(129, 76, 255));
     cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
@@ -1291,7 +1291,7 @@ body {
     font-weight: var(--link-weight, 400);
     outline: rgb(129, 76, 255) none 0px;
     text-decoration: underline rgb(129, 76, 255);
-    text-decoration-color: rgb(129, 76, 255);
+    text-decoration-color: var(--link-unresolved-decoration-style, rgb(129, 76, 255));
     text-decoration-line: var(--link-decoration, underline);
     text-decoration-style: var(--link-unresolved-decoration-style, solid);
     transition: opacity 0.14s ease-in-out;
@@ -1745,7 +1745,7 @@ body {
   }
 
   code {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--code-background, rgb(22, 22, 22));
     border: 0px solid rgb(54, 54, 54);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1755,7 +1755,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: rgb(251, 70, 59);
+    color: var(--code-normal, rgb(251, 70, 59));
     font-family: var(--font-monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
     padding: 2.1px 4.2px;
   }
@@ -1779,7 +1779,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--code-background, rgb(22, 22, 22));
     border: 0px solid rgb(54, 54, 54);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1891,7 +1891,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: rgb(38, 38, 38);
+    background-color: var(--prompt-background, rgb(38, 38, 38));
     border: 1px solid rgb(85, 85, 85);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -2100,7 +2100,7 @@ body {
   }
 
   .callout {
-    --callout-color: 2, 122, 255;
+    --callout-color: var(--callout-default, 2, 122, 255);
     border: 0px solid rgb(2, 122, 255);
     border-left-width: 4px;
     border-top-left-radius: 5px;
@@ -2129,18 +2129,18 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 8px 8px 8px 12px;
-    background-color: rgba(2, 122, 255, 0.2);
+    background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(2, 122, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: rgb(220, 221, 222);
+    color: var(--callout-title-color, rgb(220, 221, 222));
     font-weight: var(--font-weight, 600);
   }
 
   .callout > .callout-content {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--background-primary-alt, rgb(22, 22, 22));
     background-image: none;
     background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(218, 218, 218);
@@ -2148,7 +2148,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: 2, 122, 255;
+    --callout-color: var(--callout-default, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2180,18 +2180,18 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 8px 8px 8px 12px;
-    background-color: rgba(2, 122, 255, 0.2);
+    background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(2, 122, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: rgb(220, 221, 222);
+    color: var(--callout-title-color, rgb(220, 221, 222));
     font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="note"] > .callout-content {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--background-primary-alt, rgb(22, 22, 22));
     background-image: none;
     background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(218, 218, 218);
@@ -2199,7 +2199,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: 83, 223, 221;
+    --callout-color: var(--callout-summary, 83, 223, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2231,18 +2231,18 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 8px 8px 8px 12px;
-    background-color: rgba(2, 122, 255, 0.2);
+    background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(2, 122, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: rgb(220, 221, 222);
+    color: var(--callout-title-color, rgb(220, 221, 222));
     font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="abstract"] > .callout-content {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--background-primary-alt, rgb(22, 22, 22));
     background-image: none;
     background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(218, 218, 218);
@@ -2250,7 +2250,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: 2, 122, 255;
+    --callout-color: var(--callout-info, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2282,18 +2282,18 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 8px 8px 8px 12px;
-    background-color: rgba(2, 122, 255, 0.2);
+    background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(2, 122, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: rgb(220, 221, 222);
+    color: var(--callout-title-color, rgb(220, 221, 222));
     font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="info"] > .callout-content {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--background-primary-alt, rgb(22, 22, 22));
     background-image: none;
     background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(218, 218, 218);
@@ -2301,7 +2301,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: 2, 122, 255;
+    --callout-color: var(--callout-todo, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2333,18 +2333,18 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 8px 8px 8px 12px;
-    background-color: rgba(2, 122, 255, 0.2);
+    background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(2, 122, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: rgb(220, 221, 222);
+    color: var(--callout-title-color, rgb(220, 221, 222));
     font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="todo"] > .callout-content {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--background-primary-alt, rgb(22, 22, 22));
     background-image: none;
     background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(218, 218, 218);
@@ -2352,7 +2352,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: 83, 223, 221;
+    --callout-color: var(--callout-tip, 83, 223, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2384,18 +2384,18 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 8px 8px 8px 12px;
-    background-color: rgba(2, 122, 255, 0.2);
+    background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(2, 122, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: rgb(220, 221, 222);
+    color: var(--callout-title-color, rgb(220, 221, 222));
     font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="tip"] > .callout-content {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--background-primary-alt, rgb(22, 22, 22));
     background-image: none;
     background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(218, 218, 218);
@@ -2403,7 +2403,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: 68, 207, 110;
+    --callout-color: var(--callout-success, 68, 207, 110);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2435,18 +2435,18 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 8px 8px 8px 12px;
-    background-color: rgba(2, 122, 255, 0.2);
+    background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(2, 122, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: rgb(220, 221, 222);
+    color: var(--callout-title-color, rgb(220, 221, 222));
     font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="success"] > .callout-content {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--background-primary-alt, rgb(22, 22, 22));
     background-image: none;
     background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(218, 218, 218);
@@ -2454,7 +2454,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: 233, 151, 63;
+    --callout-color: var(--callout-question, 233, 151, 63);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2486,18 +2486,18 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 8px 8px 8px 12px;
-    background-color: rgba(2, 122, 255, 0.2);
+    background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(2, 122, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: rgb(220, 221, 222);
+    color: var(--callout-title-color, rgb(220, 221, 222));
     font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="question"] > .callout-content {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--background-primary-alt, rgb(22, 22, 22));
     background-image: none;
     background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(218, 218, 218);
@@ -2505,7 +2505,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: 233, 151, 63;
+    --callout-color: var(--callout-warning, 233, 151, 63);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2537,18 +2537,18 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 8px 8px 8px 12px;
-    background-color: rgba(2, 122, 255, 0.2);
+    background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(2, 122, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: rgb(220, 221, 222);
+    color: var(--callout-title-color, rgb(220, 221, 222));
     font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--background-primary-alt, rgb(22, 22, 22));
     background-image: none;
     background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(218, 218, 218);
@@ -2556,7 +2556,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: 251, 70, 76;
+    --callout-color: var(--callout-error, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2588,18 +2588,18 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 8px 8px 8px 12px;
-    background-color: rgba(2, 122, 255, 0.2);
+    background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(2, 122, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: rgb(220, 221, 222);
+    color: var(--callout-title-color, rgb(220, 221, 222));
     font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="danger"] > .callout-content {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--background-primary-alt, rgb(22, 22, 22));
     background-image: none;
     background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(218, 218, 218);
@@ -2607,7 +2607,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: 251, 70, 76;
+    --callout-color: var(--callout-fail, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2639,18 +2639,18 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 8px 8px 8px 12px;
-    background-color: rgba(2, 122, 255, 0.2);
+    background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(2, 122, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: rgb(220, 221, 222);
+    color: var(--callout-title-color, rgb(220, 221, 222));
     font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="failure"] > .callout-content {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--background-primary-alt, rgb(22, 22, 22));
     background-image: none;
     background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(218, 218, 218);
@@ -2658,7 +2658,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: 251, 70, 76;
+    --callout-color: var(--callout-bug, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2690,18 +2690,18 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 8px 8px 8px 12px;
-    background-color: rgba(2, 122, 255, 0.2);
+    background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(2, 122, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: rgb(220, 221, 222);
+    color: var(--callout-title-color, rgb(220, 221, 222));
     font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="bug"] > .callout-content {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--background-primary-alt, rgb(22, 22, 22));
     background-image: none;
     background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(218, 218, 218);
@@ -2709,7 +2709,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: 168, 130, 255;
+    --callout-color: var(--callout-example, 168, 130, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2741,18 +2741,18 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 8px 8px 8px 12px;
-    background-color: rgba(2, 122, 255, 0.2);
+    background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(2, 122, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: rgb(220, 221, 222);
+    color: var(--callout-title-color, rgb(220, 221, 222));
     font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="example"] > .callout-content {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--background-primary-alt, rgb(22, 22, 22));
     background-image: none;
     background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(218, 218, 218);
@@ -2760,7 +2760,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: 158, 158, 158;
+    --callout-color: var(--callout-quote, 158, 158, 158);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2792,18 +2792,18 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 8px 8px 8px 12px;
-    background-color: rgba(2, 122, 255, 0.2);
+    background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(2, 122, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: rgb(220, 221, 222);
+    color: var(--callout-title-color, rgb(220, 221, 222));
     font-weight: var(--font-weight, 600);
   }
 
   .callout[data-callout="quote"] > .callout-content {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--background-primary-alt, rgb(22, 22, 22));
     background-image: none;
     background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(218, 218, 218);
@@ -3061,7 +3061,7 @@ body {
   }
 
   .file-embed {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--background-primary-alt, rgb(22, 22, 22));
     border-color: rgb(179, 179, 179);
     border-width: 0px;
     border-top-left-radius: 8px;
@@ -3230,9 +3230,9 @@ body {
   }
 
   kbd {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--code-background, rgb(22, 22, 22));
     box-shadow: none;
-    color: rgb(251, 70, 59);
+    color: var(--code-normal, rgb(251, 70, 59));
     font-family: var(--font-monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
     font-size: var(--code-size, 14px);
     border: 0px rgb(251, 70, 59);
@@ -3595,7 +3595,7 @@ body {
 
   .note-properties-tags {
     background-color: var(--pill-background, rgba(138, 92, 245, 0.1));
-    color: rgb(129, 76, 255);
+    color: var(--pill-color, rgb(129, 76, 255));
     border-radius: 28px;
   }
 
@@ -3841,7 +3841,7 @@ body {
   }
 
   .spacer {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--background-primary-alt, rgb(22, 22, 22));
   }
 
   ul.overflow {
@@ -3915,7 +3915,7 @@ body {
 
   ul.tags > li {
     background-color: var(--tag-background, rgba(138, 92, 245, 0.1));
-    color: rgb(129, 76, 255);
+    color: var(--tag-color, rgb(129, 76, 255));
     border: 0px solid rgba(138, 92, 245, 0.15);
     border-top-left-radius: 24.5px;
     border-top-right-radius: 24.5px;
@@ -3931,7 +3931,7 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: rgb(108, 65, 216);
+    background-color: var(--checkbox-color, rgb(108, 65, 216));
     border-color: rgb(108, 65, 216);
   }
 
@@ -3947,7 +3947,7 @@ body {
   }
 
   .stacked-page-header {
-    background-color: rgb(22, 22, 22);
+    background-color: var(--background-primary-alt, rgb(22, 22, 22));
   }
 
   .stacked-page.active {

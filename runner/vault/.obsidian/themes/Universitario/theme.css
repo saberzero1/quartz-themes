@@ -1617,7 +1617,7 @@ body {
     --vault-name-font-weight: var(--font-medium);
     --vault-name-color: var(--text-normal);
     --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
-    --accent-h: 150;
+    --accent-h: 187;
     --accent-s: 80%;
     --accent-l: 65%;
     --background-primary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 55%));
@@ -1866,7 +1866,7 @@ body {
     --vault-name-font-weight: var(--font-medium);
     --vault-name-color: var(--text-normal);
     --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
-    --accent-h: 128;
+    --accent-h: 28;
     --accent-s: 70%; 
     --accent-l: 70%;
     --background-primary: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 10%), calc(var(--accent-l) + 25%));

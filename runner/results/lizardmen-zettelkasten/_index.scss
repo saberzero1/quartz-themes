@@ -19,11 +19,11 @@
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067) !important;
   --background-modifier-success: var(--color-green, #44cf6e) !important;
   --background-modifier-success-rgb: var(--color-green-rgb, 68, 207, 110) !important;
-  --background-primary: #0f1419 !important;
+  --background-primary: var(--color-base-00, #0f1419) !important;
   --background-primary-alt: var(--color-base-10, #242424) !important;
   --background-secondary: var(--color-base-20, #262626) !important;
   --background-secondary-alt: var(--color-base-30, #363636) !important;
-  --bases-cards-background: #0f1419 !important;
+  --bases-cards-background: var(--background-primary, #0f1419) !important;
   --bases-cards-border-width: var(--border-width, 1px) !important;
   --bases-cards-corner-shape: var(--corner-shape, round) !important;
   --bases-cards-cover-background: var(--background-primary-alt, #242424) !important;
@@ -40,7 +40,7 @@
   --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
   --bases-table-border-color: var(--table-border-color, #363636) !important;
-  --bases-table-cell-background-active: #0f1419 !important;
+  --bases-table-cell-background-active: var(--background-primary, #0f1419) !important;
   --bases-table-cell-background-disabled: var(--background-primary-alt, #242424) !important;
   --bases-table-cell-background-selected: var(--table-selection, hsla(258, 88%, 66%, 0.1)) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px var(--background-modifier-border-focus) !important;
@@ -50,14 +50,14 @@
   --bases-table-container-border-width: var(--border-width, 1px) !important;
   --bases-table-font-size: var(--font-smaller, 0.875em) !important;
   --bases-table-group-background: var(--background-primary-alt, #242424) !important;
-  --bases-table-header-background: #0f1419 !important;
+  --bases-table-header-background: var(--background-primary, #0f1419) !important;
   --bases-table-header-background-hover: var(--background-modifier-hover, rgba(255, 255, 255, 0.067)) !important;
   --bases-table-header-color: var(--text-muted, #b3b3b3) !important;
   --bases-table-header-sort-mask: linear-gradient(to left, transparent var(--size-4-6), black var(--size-4-6)) !important;
   --bases-table-header-weight: var(--font-weight, 400) !important;
   --bases-table-row-background-hover: var(--table-row-background-hover, transparent) !important;
   --bases-table-row-border-width: var(--border-width, 1px) !important;
-  --bases-table-summary-background: #0f1419 !important;
+  --bases-table-summary-background: var(--background-primary, #0f1419) !important;
   --bases-table-summary-background-hover: var(--background-modifier-hover, rgba(255, 255, 255, 0.067)) !important;
   --blockquote-border-color: var(--interactive-accent, hsl(258, 88%, 66%)) !important;
   --blur-background: color-mix(in srgb, var(--interactive-normal) var(--blur-opacity-s), transparent) linear-gradient(var(--interactive-normal), color-mix(in srgb, var(--interactive-normal) var(--blur-opacity-s), transparent)) !important;
@@ -84,7 +84,7 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb, 2, 122, 255);
   --callout-warning: var(--color-orange-rgb, 233, 151, 63);
-  --canvas-background: #0f1419 !important;
+  --canvas-background: var(--background-primary, #0f1419) !important;
   --canvas-card-label-color: var(--text-faint, #666666) !important;
   --canvas-color-1: var(--color-red-rgb, 251, 70, 76) !important;
   --canvas-color-2: var(--color-orange-rgb, 233, 151, 63) !important;
@@ -96,12 +96,12 @@
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
   --canvas-controls-radius: var(--radius-s, 4px) !important;
   --canvas-dot-pattern: var(--color-base-30, #363636) !important;
-  --caret-color: #e1e8ed !important;
+  --caret-color: var(--text-normal, #e1e8ed) !important;
   --checkbox-border-color: var(--text-faint, #666666) !important;
   --checkbox-border-color-hover: var(--text-muted, #b3b3b3) !important;
   --checkbox-color: var(--interactive-accent, hsl(258, 88%, 66%)) !important;
   --checkbox-color-hover: var(--interactive-accent-hover, hsl(255, 89.76%, 75.9%)) !important;
-  --checkbox-marker-color: #0f1419 !important;
+  --checkbox-marker-color: var(--background-primary, #0f1419) !important;
   --checkbox-radius: var(--radius-s, 4px) !important;
   --checkbox-size: var(--font-text-size, 16px) !important;
   --checklist-done-color: var(--text-muted, #b3b3b3) !important;
@@ -113,7 +113,7 @@
   --code-function: var(--color-yellow, #e0de71) !important;
   --code-important: var(--color-orange, #e9973f) !important;
   --code-keyword: var(--color-pink, #fa99cd) !important;
-  --code-normal: #e1e8ed !important;
+  --code-normal: var(--text-normal, #e1e8ed) !important;
   --code-operator: var(--color-red, #fb464c) !important;
   --code-property: var(--color-cyan, #53dfdd) !important;
   --code-punctuation: var(--text-muted, #b3b3b3) !important;
@@ -123,7 +123,7 @@
   --code-tag: var(--color-red, #fb464c) !important;
   --code-value: var(--color-purple, #a882ff) !important;
   --collapse-icon-color: var(--text-faint, #666666) !important;
-  --collapse-icon-color-collapsed: #2d9de3 !important;
+  --collapse-icon-color-collapsed: var(--text-accent, #2d9de3) !important;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
   --color-accent-1: hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15)) !important;
   --color-accent-2: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s) * 1.05), calc(var(--accent-l) * 1.29)) !important;
@@ -139,8 +139,8 @@
   --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border), inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: #0f1419 !important;
-  --file-header-background-focused: #0f1419 !important;
+  --file-header-background: var(--background-primary, #0f1419) !important;
+  --file-header-background-focused: var(--background-primary, #0f1419) !important;
   --file-header-border: var(--border-width, 1px solid transparent) solid transparent !important;
   --file-header-font: var(--font-interface, "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif) !important;
   --file-header-font-size: var(--font-ui-small, 13px) !important;
@@ -148,7 +148,7 @@
   --file-margins-x: var(--size-4-8, 32px) !important;
   --file-margins-y: var(--size-4-8, 32px) !important;
   --flair-background: var(--interactive-normal, #363636) !important;
-  --flair-color: #e1e8ed !important;
+  --flair-color: var(--text-normal, #e1e8ed) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-interface: var(--font-interface-override), var(--font-interface-theme), var(--default-font, "??"), var(--font-default) !important;
@@ -173,18 +173,18 @@
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted, #b3b3b3) !important;
   --graph-node-attachment: var(--color-yellow, #e0de71) !important;
-  --graph-node-focused: #2d9de3 !important;
+  --graph-node-focused: var(--text-accent, #2d9de3) !important;
   --graph-node-tag: var(--color-green, #44cf6e) !important;
   --graph-node-unresolved: var(--text-faint, #666666) !important;
-  --graph-text: #e1e8ed !important;
+  --graph-text: var(--text-normal, #e1e8ed) !important;
   --h5-line-height: var(--line-height-normal, 1.5) !important;
   --h6-line-height: var(--line-height-normal, 1.5) !important;
   --heading-formatting: var(--text-faint, #666666) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --hr-color: var(--background-modifier-border, #363636) !important;
   --icon-color: var(--text-muted, #b3b3b3) !important;
-  --icon-color-active: #2d9de3 !important;
-  --icon-color-focused: #e1e8ed !important;
+  --icon-color-active: var(--text-accent, #2d9de3) !important;
+  --icon-color-focused: var(--text-normal, #e1e8ed) !important;
   --icon-color-hover: var(--text-muted, #b3b3b3) !important;
   --icon-size: var(--icon-m, 18px) !important;
   --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
@@ -209,16 +209,16 @@
   --interactive-accent-hsl: var(--color-accent-hsl, 258, 88%, 66%) !important;
   --interactive-hover: var(--color-base-35, #3f3f3f) !important;
   --interactive-normal: var(--color-base-30, #363636) !important;
-  --link-color: #2d9de3 !important;
+  --link-color: var(--text-accent, #2d9de3) !important;
   --link-color-hover: var(--text-accent-hover, hsl(253, 92.4%, 85.14%)) !important;
-  --link-external-color: #2d9de3 !important;
+  --link-external-color: var(--text-accent, #2d9de3) !important;
   --link-external-color-hover: var(--text-accent-hover, hsl(253, 92.4%, 85.14%)) !important;
-  --link-unresolved-color: #2d9de3 !important;
+  --link-unresolved-color: var(--text-accent, #2d9de3) !important;
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3) !important;
   --link-weight: var(--font-weight, 400) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-marker-color: var(--text-faint, #666666) !important;
-  --list-marker-color-collapsed: #2d9de3 !important;
+  --list-marker-color-collapsed: var(--text-accent, #2d9de3) !important;
   --list-marker-color-hover: var(--text-muted, #b3b3b3) !important;
   --menu-background: var(--background-secondary, #262626) !important;
   --menu-border-color: var(--background-modifier-border-hover, #3f3f3f) !important;
@@ -234,7 +234,7 @@
   --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
-  --metadata-input-text-color: #e1e8ed !important;
+  --metadata-input-text-color: var(--text-normal, #e1e8ed) !important;
   --metadata-label-background-active: var(--background-modifier-hover, rgba(255, 255, 255, 0.067)) !important;
   --metadata-label-font: var(--font-interface, "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif) !important;
   --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
@@ -249,16 +249,16 @@
   --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
-  --modal-background: #0f1419 !important;
+  --modal-background: var(--background-primary, #0f1419) !important;
   --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus)) !important;
   --modal-border-width: var(--border-width, 1px) !important;
   --modal-radius: var(--radius-l, 12px) !important;
   --nav-collapse-icon-color: var(--collapse-icon-color, #666666) !important;
   --nav-collapse-icon-color-collapsed: var(--text-faint, #666666) !important;
-  --nav-heading-color: #e1e8ed !important;
+  --nav-heading-color: var(--text-normal, #e1e8ed) !important;
   --nav-heading-color-collapsed: var(--text-faint, #666666) !important;
   --nav-heading-color-collapsed-hover: var(--text-muted, #b3b3b3) !important;
-  --nav-heading-color-hover: #e1e8ed !important;
+  --nav-heading-color-hover: var(--text-normal, #e1e8ed) !important;
   --nav-heading-weight: var(--font-medium, 500) !important;
   --nav-heading-weight-hover: var(--font-medium, 500) !important;
   --nav-indentation-guide-color: var(--indentation-guide-color, rgba(255, 255, 255, 0.12)) !important;
@@ -269,10 +269,10 @@
   --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
   --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
   --nav-item-color: var(--text-muted, #b3b3b3) !important;
-  --nav-item-color-active: #e1e8ed !important;
-  --nav-item-color-highlighted: #2d9de3 !important;
-  --nav-item-color-hover: #e1e8ed !important;
-  --nav-item-color-selected: #e1e8ed !important;
+  --nav-item-color-active: var(--text-normal, #e1e8ed) !important;
+  --nav-item-color-highlighted: var(--text-accent, #2d9de3) !important;
+  --nav-item-color-hover: var(--text-normal, #e1e8ed) !important;
+  --nav-item-color-selected: var(--text-normal, #e1e8ed) !important;
   --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6, 4px 8px 4px 24px) !important;
   --nav-item-parent-padding: var(--nav-item-padding, 4px 8px 4px 24px) !important;
@@ -283,35 +283,35 @@
   --nav-tag-color-hover: var(--text-muted, #b3b3b3) !important;
   --nav-tag-radius: var(--radius-s, 4px) !important;
   --nav-tag-weight: var(--font-semibold, 600) !important;
-  --pdf-background: #0f1419 !important;
-  --pdf-page-background: #0f1419 !important;
+  --pdf-background: var(--background-primary, #0f1419) !important;
+  --pdf-page-background: var(--background-primary, #0f1419) !important;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pdf-sidebar-background: #0f1419 !important;
+  --pdf-sidebar-background: var(--background-primary, #0f1419) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --pill-border-color: var(--background-modifier-border, #363636) !important;
   --pill-border-color-hover: var(--background-modifier-border-hover, #3f3f3f) !important;
   --pill-border-width: var(--border-width, 1px) !important;
   --pill-color: var(--text-muted, #b3b3b3) !important;
-  --pill-color-hover: #e1e8ed !important;
+  --pill-color-hover: var(--text-normal, #e1e8ed) !important;
   --pill-color-remove: var(--text-faint, #666666) !important;
-  --pill-color-remove-hover: #2d9de3 !important;
+  --pill-color-remove-hover: var(--text-accent, #2d9de3) !important;
   --popover-font-size: var(--font-text-size, 16px) !important;
-  --prompt-background: #0f1419 !important;
+  --prompt-background: var(--background-primary, #0f1419) !important;
   --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus)) !important;
   --prompt-border-width: var(--border-width, 1px) !important;
   --raised-background: var(--blur-background, color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent))) !important;
   --raised-blur: var(--blur-s, blur(6px) saturate(1.5) brightness(1.15)) !important;
   --ribbon-background: var(--background-secondary, #262626) !important;
-  --ribbon-background-collapsed: #0f1419 !important;
+  --ribbon-background-collapsed: var(--background-primary, #0f1419) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3, 8px 4px 12px) !important;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
-  --scrollbar-bg: #10161a !important;
+  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
   --scrollbar-radius: var(--radius-l, 12px) !important;
-  --scrollbar-thumb-bg: #686b6e !important;
+  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
   --search-clear-button-color: var(--text-muted, #b3b3b3) !important;
   --search-icon-color: var(--text-muted, #b3b3b3) !important;
-  --search-result-background: #0f1419 !important;
-  --setting-group-heading-color: #e1e8ed !important;
+  --search-result-background: var(--background-primary, #0f1419) !important;
+  --setting-group-heading-color: var(--text-normal, #e1e8ed) !important;
   --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
   --setting-group-heading-weight: var(--font-semibold, 600) !important;
   --setting-items-background: var(--background-primary-alt, #242424) !important;
@@ -354,7 +354,7 @@
   --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
   --status-bar-radius: var(--radius-m, 8px 0 0 0) 0 0 0 !important;
   --status-bar-text-color: var(--text-muted, #b3b3b3) !important;
-  --suggestion-background: #0f1419 !important;
+  --suggestion-background: var(--background-primary, #0f1419) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(--color-red, #fb464c) !important;
   --sync-avatar-color-2: var(--color-orange, #e9973f) !important;
@@ -364,7 +364,7 @@
   --sync-avatar-color-6: var(--color-blue, #027aff) !important;
   --sync-avatar-color-7: var(--color-purple, #a882ff) !important;
   --sync-avatar-color-8: var(--color-pink, #fa99cd) !important;
-  --tab-background-active: #0f1419 !important;
+  --tab-background-active: var(--background-primary, #0f1419) !important;
   --tab-container-background: var(--background-secondary, #262626) !important;
   --tab-divider-color: var(--background-modifier-border-hover, #3f3f3f) !important;
   --tab-font-size: var(--font-ui-small, 13px) !important;
@@ -381,8 +381,8 @@
   --tab-text-color-active: var(--text-muted, #b3b3b3) !important;
   --tab-text-color-focused: var(--text-muted, #b3b3b3) !important;
   --tab-text-color-focused-active: var(--text-muted, #b3b3b3) !important;
-  --tab-text-color-focused-active-current: #e1e8ed !important;
-  --tab-text-color-focused-highlighted: #2d9de3 !important;
+  --tab-text-color-focused-active-current: var(--text-normal, #e1e8ed) !important;
+  --tab-text-color-focused-highlighted: var(--text-accent, #2d9de3) !important;
   --table-add-button-border-color: var(--background-modifier-border, #363636) !important;
   --table-add-button-border-width: var(--table-border-width, 1px) !important;
   --table-border-color: var(--background-modifier-border, #363636) !important;
@@ -395,7 +395,7 @@
   --table-header-background: var(--table-background, transparent) !important;
   --table-header-border-color: var(--table-border-color, #363636) !important;
   --table-header-border-width: var(--table-border-width, 1px) !important;
-  --table-header-color: #e1e8ed !important;
+  --table-header-color: var(--text-normal, #e1e8ed) !important;
   --table-header-size: var(--table-text-size, 16px) !important;
   --table-header-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
   --table-line-height: var(--line-height-tight, 1.3) !important;
@@ -411,16 +411,16 @@
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2) !important;
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15) !important;
   --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15) !important;
-  --tag-color: #2d9de3 !important;
-  --tag-color-hover: #2d9de3 !important;
+  --tag-color: var(--text-accent, #2d9de3) !important;
+  --tag-color-hover: var(--text-accent, #2d9de3) !important;
   --tag-size: var(--font-smaller, 0.875em) !important;
-  --text-accent: #2d9de3 !important;
+  --text-accent: var(--color-accent-1, #2d9de3) !important;
   --text-accent-hover: var(--color-accent-2, hsl(253, 92.4%, 85.14%)) !important;
   --text-error: var(--color-red, #fb464c) !important;
   --text-faint: var(--color-base-50, #666666) !important;
-  --text-highlight-bg: rgba(255, 255, 255, 0.25) !important;
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4) !important;
   --text-muted: var(--color-base-70, #b3b3b3) !important;
-  --text-normal: #e1e8ed !important;
+  --text-normal: var(--color-base-100, #e1e8ed) !important;
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33) !important;
   --text-success: var(--color-green, #44cf6e) !important;
   --text-warning: var(--color-orange, #e9973f) !important;
@@ -428,7 +428,7 @@
   --titlebar-background-focused: var(--background-secondary-alt, #363636) !important;
   --titlebar-border-color: var(--background-modifier-border, #363636) !important;
   --titlebar-text-color: var(--text-muted, #b3b3b3) !important;
-  --titlebar-text-color-focused: #e1e8ed !important;
+  --titlebar-text-color-focused: var(--text-normal, #e1e8ed) !important;
   --titlebar-text-weight: var(--font-bold, 700) !important;
   --touch-radius-l: var(--touch-size-l, 52px) !important;
   --touch-radius-m: var(--touch-size-m, 44px) !important;
@@ -438,8 +438,8 @@
   --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
   --traffic-lights-offset-x: var(--header-height, 40px) !important;
   --traffic-lights-offset-y: var(--header-height, 40px) !important;
-  --vault-profile-color: #e1e8ed !important;
-  --vault-profile-color-hover: #e1e8ed !important;
+  --vault-profile-color: var(--text-normal, #e1e8ed) !important;
+  --vault-profile-color-hover: var(--vault-profile-color, #e1e8ed) !important;
   --vault-profile-font-size: var(--font-ui-small, 13px) !important;
   --vault-profile-font-weight: var(--font-medium, 500) !important;
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
@@ -1155,20 +1155,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: rgb(15, 20, 25);
-    color: rgb(225, 232, 237);
+    background-color: var(--background-primary, rgb(15, 20, 25));
+    color: var(--text-normal, rgb(225, 232, 237));
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: rgb(15, 20, 25);
+    background-color: var(--background-primary, rgb(15, 20, 25));
     color: rgb(225, 232, 237);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: rgb(24, 32, 38);
+    background-color: var(--background-secondary, rgb(24, 32, 38));
     color: rgb(225, 232, 237);
   }
 
@@ -1193,7 +1193,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(43, 149, 214);
+    color: var(--link-external-color, rgb(43, 149, 214));
     cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
@@ -1234,7 +1234,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(45, 157, 227);
+    color: var(--link-color, rgb(45, 157, 227));
     cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
@@ -1274,7 +1274,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(45, 157, 227);
+    color: var(--link-unresolved-color, rgb(45, 157, 227));
     cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
@@ -1372,7 +1372,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(225, 232, 237);
+    color: var(--bold-color, rgb(225, 232, 237));
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1413,7 +1413,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(225, 232, 237);
+    color: var(--bold-color, rgb(225, 232, 237));
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1454,7 +1454,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(225, 232, 237);
+    color: var(--italic-color, rgb(225, 232, 237));
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1495,7 +1495,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(225, 232, 237);
+    color: var(--italic-color, rgb(225, 232, 237));
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1690,7 +1690,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 500;
+    font-weight: var(--pill-weight, 500);
     margin-inline-start: 0px;
     border: 0px solid rgba(138, 92, 245, 0.15);
     border-top-left-radius: 28px;
@@ -1750,7 +1750,7 @@ body {
   }
 
   code {
-    background-color: rgb(24, 32, 38);
+    background-color: var(--code-background, rgb(24, 32, 38));
     border: 0px solid rgb(54, 54, 54);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1760,21 +1760,8 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: rgb(253, 215, 85);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: var(--code-normal, rgb(253, 215, 85));
+    font-family: var(--code-font-family, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
     padding: 5px 5px 1px;
   }
 
@@ -1852,7 +1839,7 @@ body {
   }
 
   blockquote {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--blockquote-background-color, rgb(255, 255, 255));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1876,7 +1863,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: rgb(43, 149, 214);
+    color: var(--text-faint, rgb(43, 149, 214));
     text-decoration: underline rgb(166, 138, 249);
   }
 
@@ -1891,7 +1878,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: rgb(225, 232, 237);
+    color: var(--text-normal, rgb(225, 232, 237));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1909,7 +1896,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: rgb(15, 20, 25);
+    background-color: var(--prompt-background, rgb(15, 20, 25));
     border: 1px solid rgb(85, 85, 85);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -2024,50 +2011,50 @@ body {
   }
 
   h1 {
-    color: rgb(163, 33, 33);
+    color: var(--h1-color, rgb(163, 33, 33));
     font-family: var(--h1-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
     text-shadow: none;
   }
 
   h2 {
-    color: rgb(163, 33, 33);
+    color: var(--h2-color, rgb(163, 33, 33));
     font-family: var(--h2-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
     text-shadow: none;
   }
 
   h3 {
-    color: rgb(163, 33, 33);
+    color: var(--h3-color, rgb(163, 33, 33));
     font-family: var(--h3-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
     text-shadow: none;
   }
 
   h4 {
-    color: rgb(163, 33, 33);
+    color: var(--h4-color, rgb(163, 33, 33));
     font-family: var(--h4-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
     text-shadow: none;
   }
 
   h5 {
-    color: rgb(163, 33, 33);
+    color: var(--h5-color, rgb(163, 33, 33));
     font-family: var(--h5-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
     text-shadow: none;
   }
 
   h6 {
-    color: rgb(225, 232, 237);
+    color: var(--h6-color, rgb(225, 232, 237));
     font-family: var(--h6-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
     text-shadow: none;
   }
 
   h2.page-title,
   h2.page-title a {
-    color: rgb(225, 232, 237);
+    color: var(--inline-title-color, rgb(225, 232, 237));
     font-family: var(--inline-title-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
     text-shadow: none;
   }
 
   li.depth-0 {
-    font-weight: 700;
+    font-weight: var(--nav-item-weight, 700);
   }
 
   ::-webkit-scrollbar {
@@ -2118,7 +2105,7 @@ body {
   }
 
   .callout {
-    --callout-color: 2, 122, 255;
+    --callout-color: var(--callout-default, 2, 122, 255);
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2165,7 +2152,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: 2, 122, 255;
+    --callout-color: var(--callout-default, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2215,7 +2202,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: 83, 223, 221;
+    --callout-color: var(--callout-summary, 83, 223, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2265,7 +2252,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: 2, 122, 255;
+    --callout-color: var(--callout-info, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2315,7 +2302,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: 2, 122, 255;
+    --callout-color: var(--callout-todo, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2365,7 +2352,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: 83, 223, 221;
+    --callout-color: var(--callout-tip, 83, 223, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2415,7 +2402,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: 68, 207, 110;
+    --callout-color: var(--callout-success, 68, 207, 110);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2465,7 +2452,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: 233, 151, 63;
+    --callout-color: var(--callout-question, 233, 151, 63);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2515,7 +2502,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: 233, 151, 63;
+    --callout-color: var(--callout-warning, 233, 151, 63);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2565,7 +2552,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: 251, 70, 76;
+    --callout-color: var(--callout-error, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2615,7 +2602,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: 251, 70, 76;
+    --callout-color: var(--callout-fail, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2665,7 +2652,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: 251, 70, 76;
+    --callout-color: var(--callout-bug, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2715,7 +2702,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: 168, 130, 255;
+    --callout-color: var(--callout-example, 168, 130, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2765,7 +2752,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: 158, 158, 158;
+    --callout-color: var(--callout-quote, 158, 158, 158);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2843,7 +2830,10 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 15px 0px 0px;
+    margin-top: var(--heading-spacing, 15px);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -2869,7 +2859,7 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(225, 232, 237);
+    color: var(--table-header-color, rgb(225, 232, 237));
     font-weight: var(--table-header-weight, 600);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment, top);
@@ -2890,7 +2880,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(225, 232, 237);
+    color: var(--table-text-color, rgb(225, 232, 237));
     font-weight: 500;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment, top);
@@ -3233,7 +3223,7 @@ body {
   kbd {
     background-color: var(--code-background, rgb(36, 36, 36));
     box-shadow: none;
-    color: rgb(225, 232, 237);
+    color: var(--code-normal, rgb(225, 232, 237));
     font-family: var(--font-monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
     font-size: var(--code-size, 14px);
     border: 0px rgb(225, 232, 237);
@@ -3487,7 +3477,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: rgb(92, 112, 128);
+    color: var(--nav-item-color, rgb(92, 112, 128));
     cursor: var(--cursor, default);
     font-family:
       ui-sans-serif,
@@ -3503,12 +3493,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 700;
+    font-weight: var(--nav-item-weight, 700);
     text-decoration: rgb(218, 218, 218);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: rgb(92, 112, 128);
+    color: var(--nav-item-color, rgb(92, 112, 128));
     cursor: var(--cursor, default);
     font-family:
       ui-sans-serif,
@@ -3524,7 +3514,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 700;
+    font-weight: var(--nav-item-weight, 700);
     text-decoration: rgb(218, 218, 218);
   }
 
@@ -3542,7 +3532,7 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(225, 232, 237);
+    color: var(--table-header-color, rgb(225, 232, 237));
     font-weight: var(--table-header-weight, 600);
     border-color: rgb(54, 54, 54);
   }
@@ -3563,7 +3553,7 @@ body {
   }
 
   .canvas-node-file {
-    color: rgb(225, 232, 237);
+    color: var(--text-normal, rgb(225, 232, 237));
     background-color: rgb(15, 20, 25);
   }
 
@@ -3596,7 +3586,7 @@ body {
 
   .note-properties-tags {
     background-color: var(--pill-background, rgba(138, 92, 245, 0.1));
-    color: rgb(45, 157, 227);
+    color: var(--pill-color, rgb(45, 157, 227));
     border-radius: 28px;
   }
 
@@ -3796,7 +3786,7 @@ body {
   }
 
   .page-header h2.page-title {
-    color: rgb(0, 0, 0);
+    color: var(--text-normal, rgb(0, 0, 0));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3916,7 +3906,7 @@ body {
 
   ul.tags > li {
     background-color: var(--tag-background, rgba(138, 92, 245, 0.1));
-    color: rgb(51, 151, 199);
+    color: var(--tag-color, rgb(51, 151, 199));
     border: 0px solid rgba(138, 92, 245, 0.15);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
@@ -3937,18 +3927,18 @@ body {
   }
 
   h1.article-title {
-    color: rgb(225, 232, 237);
+    color: var(--inline-title-color, rgb(225, 232, 237));
     font-size: var(--inline-title-size, 25.888px);
     font-weight: var(--inline-title-weight, 700);
   }
 
   .stacked-page {
     border-color: rgb(225, 232, 237);
-    background-color: rgb(24, 32, 38);
+    background-color: var(--background-secondary, rgb(24, 32, 38));
   }
 
   .stacked-page-header {
-    background-color: rgb(245, 246, 248);
+    background-color: var(--tab-container-background, rgb(245, 246, 248));
   }
 
   .stacked-page.active {
@@ -3956,390 +3946,2275 @@ body {
   }
 
   li.task-list-item[data-task="_"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task=","] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task=";"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task=":"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="."] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="'"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="@"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="&"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="#"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="%"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="`"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="+"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="<"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="="] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="|"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="~"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="$"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="0"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="1"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="2"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="3"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="4"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="5"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="6"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="7"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="8"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="9"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="a"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="A"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="B"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="C"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="D"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="e"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="E"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="F"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="g"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="G"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="h"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="H"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="j"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="J"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="K"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="L"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="m"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="M"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="n"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="N"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="o"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="O"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="P"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="q"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="Q"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="r"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="R"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="s"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="t"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="T"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="U"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="v"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="V"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="W"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="y"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="Y"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="z"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   li.task-list-item[data-task="Z"] {
+    color: rgb(225, 232, 237);
+    --background-primary: #1e1e1e;
+    --canvas-background: #1e1e1e;
+    --caret-color: #dadada;
+    --checkbox-marker-color: #1e1e1e;
+    --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+    --flair-color: #dadada;
+    --graph-node-focused: hsl(255, 89.76%, 75.9%);
+    --graph-text: #dadada;
+    --link-color: hsl(255, 89.76%, 75.9%);
+    --link-external-color: hsl(255, 89.76%, 75.9%);
+    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
+    --pdf-background: #1e1e1e;
+    --pdf-page-background: #1e1e1e;
+    --pdf-sidebar-background: #1e1e1e;
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --search-result-background: #1e1e1e;
+    --setting-group-heading-color: #dadada;
+    --suggestion-background: #1e1e1e;
+    --tab-background-active: #1e1e1e;
+    --tab-text-color-focused-active-current: #dadada;
+    --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+    --table-header-color: #dadada;
+    --tag-color: hsl(255, 89.76%, 75.9%);
+    --tag-color-hover: hsl(255, 89.76%, 75.9%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-normal: #dadada;
     font-weight: 400;
     margin-bottom: 0px;
     margin-top: 0px;

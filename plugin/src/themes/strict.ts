@@ -4,85 +4,80 @@ export const theme: ThemeData = {
   meta: { name: "strict", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
-  --background-modifier-border: #404040;
-  --bases-cards-radius: 0;
-  --bases-cards-shadow: 0 0 0 1px #404040;
-  --bases-embed-border-color: #404040;
-  --bases-embed-border-radius: 0;
-  --bases-table-border-color: #404040;
-  --bases-table-container-border-radius: 0;
-  --button-radius: 0;
-  --callout-radius: 0;
-  --canvas-controls-radius: 0;
-  --checkbox-radius: 0;
-  --clickable-icon-radius: 0;
-  --code-background: #000000;
-  --code-border-color: #404040;
-  --code-comment: #6a9955;
-  --code-function: #dcdcaa;
-  --code-keyword: #c586c0;
-  --code-normal: #d4d4d4;
-  --code-operator: #569cd6;
-  --code-property: #c586c0;
-  --code-punctuation: #efde62;
-  --code-radius: 0;
-  --code-size: 16px;
-  --code-string: #ce9178;
-  --code-tag: #d4d4d4;
-  --code-value: #b5cea8;
-  --divider-color: #404040;
-  --embed-block-shadow-hover: 0 0 0 1px #404040, inset 0 0 0 1px #404040;
-  --file-margins: 0;
-  --footnote-divider-color: #404040;
-  --footnote-radius: 0;
-  --h1-line-height: 1.5;
+  --background-modifier-border: var(--strict-color-separator, #404040);
+  --bases-cards-radius: var(--radius-m, 0);
+  --bases-embed-border-color: var(--background-modifier-border, #404040);
+  --bases-embed-border-radius: var(--radius-s, 0);
+  --bases-table-border-color: var(--table-border-color, #404040);
+  --bases-table-container-border-radius: var(--radius-s, 0);
+  --button-radius: var(--input-radius, 0);
+  --callout-radius: var(--radius-s, 0);
+  --canvas-controls-radius: var(--radius-s, 0);
+  --checkbox-radius: var(--radius-s, 0);
+  --clickable-icon-radius: var(--radius-s, 0);
+  --code-background: var(--strict-color-0, #000000);
+  --code-border-color: var(--background-modifier-border, #404040);
+  --code-comment: var(--text-faint, #6a9955);
+  --code-function: var(--color-yellow, #dcdcaa);
+  --code-keyword: var(--color-pink, #c586c0);
+  --code-normal: var(--text-normal, #d4d4d4);
+  --code-operator: var(--color-red, #569cd6);
+  --code-property: var(--code-keyword, #c586c0);
+  --code-punctuation: var(--text-muted, #efde62);
+  --code-radius: var(--radius-s, 0);
+  --code-size: var(--font-text-size, 16px);
+  --code-string: var(--color-green, #ce9178);
+  --code-tag: var(--code-normal, #d4d4d4);
+  --code-value: var(--color-purple, #b5cea8);
+  --divider-color: var(--strict-color-separator, #404040);
+  --file-margins: var(--file-margins-y) var(--file-margins-x, 0);
+  --footnote-divider-color: var(--metadata-divider-color, #404040);
+  --footnote-radius: var(--radius-s, 0);
+  --h1-line-height: var(--line-height-normal, 1.5);
   --h1-size: 1em;
   --h1-weight: 600;
-  --h2-line-height: 1.5;
+  --h2-line-height: var(--line-height-normal, 1.5);
   --h2-size: 1em;
   --h2-weight: 600;
-  --h3-line-height: 1.5;
+  --h3-line-height: var(--line-height-normal, 1.5);
   --h3-size: 1em;
   --h3-weight: 600;
-  --h4-line-height: 1.5;
+  --h4-line-height: var(--line-height-normal, 1.5);
   --h4-size: 1em;
   --h4-weight: 600;
   --h5-size: 1em;
   --h5-weight: 600;
   --header-height: 32px;
-  --heading-spacing: 16px;
-  --hr-color: #404040;
-  --inline-title-line-height: 1.5;
-  --inline-title-size: 1em;
-  --inline-title-weight: 600;
+  --hr-color: var(--background-modifier-border, #404040);
+  --inline-title-line-height: var(--h1-line-height, 1.5);
+  --inline-title-size: var(--h1-size, 1em);
+  --inline-title-weight: var(--h1-weight, 600);
   --input-radius: 0;
-  --menu-radius: 0;
-  --metadata-border-color: #404040;
-  --metadata-divider-color: #404040;
+  --menu-radius: var(--radius-m, 0);
+  --metadata-border-color: var(--background-modifier-border, #404040);
+  --metadata-divider-color: var(--background-modifier-border, #404040);
   --metadata-property-radius: 0;
-  --modal-radius: 0;
-  --nav-item-radius: 0;
-  --nav-tag-radius: 0;
-  --pdf-shadow: 0 0 0 1px #404040;
-  --pdf-thumbnail-shadow: 0 0 0 1px #404040;
-  --pill-border-color: #404040;
+  --modal-radius: var(--radius-l, 0);
+  --nav-item-radius: var(--radius-s, 0);
+  --nav-tag-radius: var(--radius-s, 0);
+  --pill-border-color: var(--background-modifier-border, #404040);
   --radius-l: 0;
   --radius-m: 0;
   --radius-s: 0;
-  --ribbon-padding: 0;
-  --scrollbar-active-thumb-bg: #606060;
-  --scrollbar-bg: #101010;
-  --scrollbar-radius: 0;
-  --scrollbar-thumb-bg: #404040;
+  --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3, 0);
+  --scrollbar-active-thumb-bg: var(--strict-color-6, #606060);
+  --scrollbar-bg: var(--strict-color-1, #101010);
+  --scrollbar-radius: var(--radius-l, 0);
+  --scrollbar-thumb-bg: var(--strict-color-4, #404040);
   --sctric-scroller-width: 12px;
-  --setting-items-border-color: #404040;
-  --setting-items-radius: 0;
-  --shiki-code-background: #000000;
-  --shiki-code-block-border-radius: 0;
-  --shiki-gutter-border-color: #404040;
-  --slider-track-background: #404040;
-  --status-bar-border-color: #404040;
-  --status-bar-radius: 0;
+  --setting-items-border-color: var(--background-modifier-border, #404040);
+  --setting-items-radius: var(--radius-l, 0);
+  --shiki-code-background: var(--code-background, #000000);
+  --shiki-code-block-border-radius: var(--code-radius, 0);
+  --shiki-gutter-border-color: var(--background-modifier-border, #404040);
+  --slider-track-background: var(--background-modifier-border, #404040);
+  --status-bar-border-color: var(--divider-color, #404040);
+  --status-bar-radius: var(--radius-m, 0) 0 0 0;
   --strict-color-0: #000000;
   --strict-color-1: #101010;
   --strict-color-2: #202020;
@@ -94,27 +89,26 @@ export const theme: ThemeData = {
   --strict-color-8: #808080;
   --strict-color-9: #909090;
   --strict-color-separator: #404040;
-  --strict-separator: 1px solid #404040;
-  --tab-background-active: #101010;
+  --strict-separator: 1px solid var(--strict-color-separator);
+  --tab-background-active: var(--strict-color-1, #101010);
   --tab-curve: 0;
-  --tab-outline-color: #404040;
-  --tab-radius: 0;
+  --tab-outline-color: var(--strict-color-separator, #404040);
+  --tab-radius: var(--radius-s, 0);
   --tab-radius-active: 0;
-  --tab-stacked-header-width: 32px;
-  --tab-text-color: #dadada;
-  --tab-text-color-focused: #dadada;
+  --tab-stacked-header-width: var(--header-height, 32px);
+  --tab-text-color: var(--text-normal, #dadada);
+  --tab-text-color-focused: var(--tab-text-color, #dadada);
   --tab-width: 128px;
-  --table-add-button-border-color: #404040;
-  --table-border-color: #404040;
-  --table-header-border-color: #404040;
-  --tag-background: none;
+  --table-add-button-border-color: var(--background-modifier-border, #404040);
+  --table-border-color: var(--background-modifier-border, #404040);
+  --table-header-border-color: var(--table-border-color, #404040);
   --tag-padding-x: 0;
   --tag-padding-y: 0;
-  --tag-size: #dadada;
-  --titlebar-background-focused: #262626;
-  --titlebar-border-color: #404040;
-  --traffic-lights-offset-x: 32px;
-  --traffic-lights-offset-y: 32px;
+  --tag-size: var(--text-normal, #dadada);
+  --titlebar-background-focused: var(--titlebar-background, #262626);
+  --titlebar-border-color: var(--background-modifier-border, #404040);
+  --traffic-lights-offset-x: var(--header-height, 32px);
+  --traffic-lights-offset-y: var(--header-height, 32px);
   --quartz-icon-color: currentColor;
 }
 
@@ -135,14 +129,14 @@ html body html {
   --text-highlight-bg: #006600;
 }`,
     typography: `html body .text-highlight {
-  background-color: rgb(0, 102, 0);
+  background-color: var(--text-highlight-bg, rgb(0, 102, 0));
 }
 
 html body li.task-list-item input[type="checkbox"] {
   border-radius: 0px;
 }`,
     tables: `html body table {
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html body td {
@@ -159,7 +153,7 @@ html body th {
   border-top-color: rgb(64, 64, 64);
 }`,
     code: `html body code {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--code-background, rgb(0, 0, 0));
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -168,7 +162,7 @@ html body th {
   border-top-color: rgb(64, 64, 64);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(212, 212, 212);
+  color: var(--code-normal, rgb(212, 212, 212));
   padding-bottom: 2.4px;
   padding-left: 4.8px;
   padding-right: 4.8px;
@@ -176,7 +170,7 @@ html body th {
 }
 
 html body pre:has(> code) {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--code-background, rgb(0, 0, 0));
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -409,7 +403,7 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -421,7 +415,7 @@ html body .callout[data-callout="abstract"] .callout-title {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -433,7 +427,7 @@ html body .callout[data-callout="bug"] .callout-title {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -445,7 +439,7 @@ html body .callout[data-callout="danger"] .callout-title {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -457,7 +451,7 @@ html body .callout[data-callout="example"] .callout-title {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -469,7 +463,7 @@ html body .callout[data-callout="failure"] .callout-title {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -481,7 +475,7 @@ html body .callout[data-callout="info"] .callout-title {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -493,7 +487,7 @@ html body .callout[data-callout="note"] .callout-title {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -505,7 +499,7 @@ html body .callout[data-callout="question"] .callout-title {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -517,7 +511,7 @@ html body .callout[data-callout="quote"] .callout-title {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -529,7 +523,7 @@ html body .callout[data-callout="success"] .callout-title {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -541,7 +535,7 @@ html body .callout[data-callout="tip"] .callout-title {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -553,7 +547,7 @@ html body .callout[data-callout="todo"] .callout-title {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -667,36 +661,36 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--pill-background, rgba(0, 0, 0, 0));
 }
 
 html body h1 {
-  color: rgb(0, 187, 0);
+  color: var(--h1-color, rgb(0, 187, 0));
 }
 
 html body h1.article-title {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: var(--inline-title-size, 16px);
+  font-weight: var(--inline-title-weight, 600);
 }
 
 html body h2 {
-  color: rgb(0, 187, 0);
+  color: var(--h2-color, rgb(0, 187, 0));
 }
 
 html body h3 {
-  color: rgb(0, 187, 0);
+  color: var(--h3-color, rgb(0, 187, 0));
 }
 
 html body h4 {
-  color: rgb(0, 187, 0);
+  color: var(--h4-color, rgb(0, 187, 0));
 }
 
 html body h5 {
-  color: rgb(0, 187, 0);
+  color: var(--h5-color, rgb(0, 187, 0));
 }
 
 html body h6 {
-  color: rgb(0, 187, 0);
+  color: var(--h6-color, rgb(0, 187, 0));
 }
 
 html body hr {
@@ -705,25 +699,25 @@ html body hr {
   border-right-color: rgb(64, 64, 64);
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }`,
     explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  cursor: pointer;
+  cursor: var(--cursor-link, pointer);
 }
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  cursor: pointer;
+  cursor: var(--cursor-link, pointer);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  cursor: pointer;
+  cursor: var(--cursor-link, pointer);
 }`,
     footer: `html body footer {
   border-bottom-color: rgb(64, 64, 64);
@@ -739,7 +733,7 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  cursor: pointer;
+  cursor: var(--cursor-link, pointer);
 }`,
     breadcrumbs: `html body .breadcrumb-container {
   border-bottom-left-radius: 0px;
@@ -759,7 +753,7 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-right-width: 1px;
   border-top-color: rgb(64, 64, 64);
   border-top-width: 1px;
-  margin-bottom: 24px;
+  margin-bottom: var(--file-folding-offset, 24px);
   padding-bottom: 0px;
   padding-top: 0px;
 }
@@ -769,13 +763,13 @@ html body .note-properties {
 }
 
 html body .note-properties-tags {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--pill-background, rgba(0, 0, 0, 0));
 }`,
     stacked: `html body .stacked-page-header {
-  background-color: rgb(38, 38, 38);
+  background-color: var(--tab-container-background, rgb(38, 38, 38));
 }`,
     misc: `html body kbd {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--code-background, rgb(0, 0, 0));
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -784,8 +778,8 @@ html body .note-properties-tags {
   border-top-color: rgb(212, 212, 212);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(212, 212, 212);
-  font-size: 16px;
+  color: var(--code-normal, rgb(212, 212, 212));
+  font-size: var(--code-size, 16px);
   padding-bottom: 1.6px;
   padding-left: 4px;
   padding-right: 4px;
@@ -793,7 +787,7 @@ html body .note-properties-tags {
 }
 
 html body ul.tags > li {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tag-background, rgba(0, 0, 0, 0));
   border-bottom-left-radius: 28px;
   border-bottom-right-radius: 28px;
   border-top-left-radius: 28px;

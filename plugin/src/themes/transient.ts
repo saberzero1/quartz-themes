@@ -4,75 +4,65 @@ export const theme: ThemeData = {
   meta: { name: "transient", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
-  --background-modifier-border: #191926;
-  --background-modifier-border-focus: #151520;
-  --background-primary: transparent;
-  --background-secondary: transparent;
-  --background-secondary-alt: #191926;
-  --bases-cards-background: transparent;
-  --bases-cards-shadow: 0 0 0 1px #191926;
-  --bases-embed-border-color: #191926;
-  --bases-table-border-color: #191926;
-  --bases-table-cell-background-active: transparent;
-  --bases-table-cell-shadow-active: 0 0 0 2px #151520;
-  --bases-table-header-background: transparent;
-  --bases-table-summary-background: transparent;
-  --blur-background: color-mix(in srgb, #191926 65%, transparent) linear-gradient(#191926, color-mix(in srgb, #191926 65%, transparent));
-  --canvas-background: transparent;
-  --canvas-dot-pattern: #191926;
-  --checkbox-marker-color: transparent;
-  --code-background: #22223333;
-  --code-border-color: #191926;
+  --background-modifier-border: var(--color-base-30, #191926);
+  --background-modifier-border-focus: var(--color-base-40, #151520);
+  --background-primary: var(--color-base-00, transparent);
+  --background-secondary: var(--color-base-20, transparent);
+  --background-secondary-alt: var(--color-base-30, #191926);
+  --bases-cards-background: var(--background-primary, transparent);
+  --bases-embed-border-color: var(--background-modifier-border, #191926);
+  --bases-table-border-color: var(--table-border-color, #191926);
+  --bases-table-cell-background-active: var(--background-primary, transparent);
+  --bases-table-header-background: var(--background-primary, transparent);
+  --bases-table-summary-background: var(--background-primary, transparent);
+  --canvas-background: var(--background-primary, transparent);
+  --canvas-dot-pattern: var(--color-base-30, #191926);
+  --checkbox-marker-color: var(--background-primary, transparent);
+  --code-background: var(--background-primary-alt, #22223333);
+  --code-border-color: var(--background-modifier-border, #191926);
   --color-base-00: #0c0c11ee;
   --color-base-30: #191926;
   --color-base-40: #151520;
-  --divider-color: #191926;
-  --dropdown-background: #191926;
-  --embed-block-shadow-hover: 0 0 0 1px #191926, inset 0 0 0 1px #191926;
-  --file-header-background: transparent;
-  --file-header-background-focused: transparent;
-  --flair-background: #191926;
-  --footnote-divider-color: #191926;
-  --hr-color: #191926;
-  --interactive-normal: #191926;
-  --light: var(--background-primary, transparent);
-  --lightgray: var(--background-secondary, transparent);
-  --menu-background: transparent;
-  --metadata-border-color: #191926;
-  --metadata-divider-color: #191926;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #151520;
-  --modal-background: #0c0c11ee;
-  --modal-border-color: #151520;
-  --pdf-background: transparent;
-  --pdf-page-background: transparent;
-  --pdf-shadow: 0 0 0 1px #191926;
-  --pdf-sidebar-background: transparent;
-  --pdf-thumbnail-shadow: 0 0 0 1px #191926;
-  --pill-border-color: #191926;
-  --prompt-background: transparent;
-  --prompt-border-color: #151520;
-  --raised-background: color-mix(in srgb, #191926 65%, transparent) linear-gradient(#191926, color-mix(in srgb, #191926 65%, transparent));
-  --ribbon-background: transparent;
-  --ribbon-background-collapsed: transparent;
-  --search-result-background: transparent;
-  --setting-items-border-color: #191926;
-  --shiki-code-background: #22223333;
-  --shiki-gutter-border-color: #191926;
-  --slider-track-background: #191926;
-  --status-bar-background: transparent;
-  --status-bar-border-color: #191926;
-  --suggestion-background: transparent;
-  --tab-background-active: transparent;
-  --tab-container-background: transparent;
-  --tab-outline-color: #191926;
-  --tab-switcher-background: transparent;
-  --tab-switcher-menubar-background: linear-gradient(to top, transparent, transparent);
-  --table-add-button-border-color: #191926;
-  --table-border-color: #191926;
-  --table-header-border-color: #191926;
-  --titlebar-background: transparent;
-  --titlebar-background-focused: #191926;
-  --titlebar-border-color: #191926;
+  --divider-color: var(--background-modifier-border, #191926);
+  --dropdown-background: var(--interactive-normal, #191926);
+  --file-header-background: var(--background-primary, transparent);
+  --file-header-background-focused: var(--background-primary, transparent);
+  --flair-background: var(--interactive-normal, #191926);
+  --footnote-divider-color: var(--metadata-divider-color, #191926);
+  --hr-color: var(--background-modifier-border, #191926);
+  --interactive-normal: var(--color-base-30, #191926);
+  --light: var(--background-primary, var(--color-base-00, transparent));
+  --lightgray: var(--background-secondary, var(--color-base-20, transparent));
+  --menu-background: var(--background-secondary, transparent);
+  --metadata-border-color: var(--background-modifier-border, #191926);
+  --metadata-divider-color: var(--background-modifier-border, #191926);
+  --modal-background: var(--color-base-00, #0c0c11ee);
+  --pdf-background: var(--background-primary, transparent);
+  --pdf-page-background: var(--background-primary, transparent);
+  --pdf-sidebar-background: var(--background-primary, transparent);
+  --pill-border-color: var(--background-modifier-border, #191926);
+  --prompt-background: var(--background-primary, transparent);
+  --raised-background: var(--blur-background, color-mix(in srgb, #191926 65%, transparent) linear-gradient(#191926, color-mix(in srgb, #191926 65%, transparent)));
+  --ribbon-background: var(--background-secondary, transparent);
+  --ribbon-background-collapsed: var(--background-primary, transparent);
+  --search-result-background: var(--background-primary, transparent);
+  --setting-items-border-color: var(--background-modifier-border, #191926);
+  --shiki-code-background: var(--code-background, #22223333);
+  --shiki-gutter-border-color: var(--background-modifier-border, #191926);
+  --slider-track-background: var(--background-modifier-border, #191926);
+  --status-bar-background: var(--background-secondary, transparent);
+  --status-bar-border-color: var(--divider-color, #191926);
+  --suggestion-background: var(--background-primary, transparent);
+  --tab-background-active: var(--background-primary, transparent);
+  --tab-container-background: var(--background-secondary, transparent);
+  --tab-outline-color: var(--divider-color, #191926);
+  --tab-switcher-background: var(--background-secondary, transparent);
+  --table-add-button-border-color: var(--background-modifier-border, #191926);
+  --table-border-color: var(--background-modifier-border, #191926);
+  --table-header-border-color: var(--table-border-color, #191926);
+  --titlebar-background: var(--background-secondary, transparent);
+  --titlebar-background-focused: var(--background-secondary-alt, #191926);
+  --titlebar-border-color: var(--background-modifier-border, #191926);
   --quartz-icon-color: currentColor;
 }
 
@@ -82,15 +72,15 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
 html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-primary, rgba(0, 0, 0, 0));
 }
 
 html body .page > div#quartz-body div.sidebar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
 }
 
 html body .page > div#quartz-body div.sidebar.left {
@@ -98,7 +88,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgb(25, 25, 38);
 }`,
     tables: `html body td {
@@ -115,7 +105,7 @@ html body th {
   border-top-color: rgb(25, 25, 38);
 }`,
     code: `html body code {
-  background-color: rgba(34, 34, 51, 0.2);
+  background-color: var(--code-background, rgba(34, 34, 51, 0.2));
   border-bottom-color: rgb(25, 25, 38);
   border-left-color: rgb(25, 25, 38);
   border-right-color: rgb(25, 25, 38);
@@ -123,7 +113,7 @@ html body th {
 }
 
 html body pre:has(> code) {
-  background-color: rgba(34, 34, 51, 0.2);
+  background-color: var(--code-background, rgba(34, 34, 51, 0.2));
   border-bottom-color: rgb(25, 25, 38);
   border-left-color: rgb(25, 25, 38);
   border-right-color: rgb(25, 25, 38);
@@ -323,7 +313,7 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
 }
 
 html body .callout[data-callout="abstract"] .callout-title {
@@ -331,7 +321,7 @@ html body .callout[data-callout="abstract"] .callout-title {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
 }
 
 html body .callout[data-callout="bug"] .callout-title {
@@ -339,7 +329,7 @@ html body .callout[data-callout="bug"] .callout-title {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
 }
 
 html body .callout[data-callout="danger"] .callout-title {
@@ -347,7 +337,7 @@ html body .callout[data-callout="danger"] .callout-title {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
 }
 
 html body .callout[data-callout="example"] .callout-title {
@@ -355,7 +345,7 @@ html body .callout[data-callout="example"] .callout-title {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
 }
 
 html body .callout[data-callout="failure"] .callout-title {
@@ -363,7 +353,7 @@ html body .callout[data-callout="failure"] .callout-title {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
 }
 
 html body .callout[data-callout="info"] .callout-title {
@@ -371,7 +361,7 @@ html body .callout[data-callout="info"] .callout-title {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }
 
 html body .callout[data-callout="note"] .callout-title {
@@ -379,7 +369,7 @@ html body .callout[data-callout="note"] .callout-title {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
 }
 
 html body .callout[data-callout="question"] .callout-title {
@@ -387,7 +377,7 @@ html body .callout[data-callout="question"] .callout-title {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
 }
 
 html body .callout[data-callout="quote"] .callout-title {
@@ -395,7 +385,7 @@ html body .callout[data-callout="quote"] .callout-title {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
 }
 
 html body .callout[data-callout="success"] .callout-title {
@@ -403,7 +393,7 @@ html body .callout[data-callout="success"] .callout-title {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
 }
 
 html body .callout[data-callout="tip"] .callout-title {
@@ -411,7 +401,7 @@ html body .callout[data-callout="tip"] .callout-title {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
 }
 
 html body .callout[data-callout="todo"] .callout-title {
@@ -419,7 +409,7 @@ html body .callout[data-callout="todo"] .callout-title {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
 }
 
 html body .callout[data-callout="warning"] .callout-title {
@@ -489,7 +479,7 @@ html body .callout[data-callout="warning"] {
 }
 
 html body .search > .search-container > .search-space {
-  background-color: rgba(12, 12, 17, 0.933);
+  background-color: var(--color-base-00, rgba(12, 12, 17, 0.933));
   border-bottom-color: rgb(21, 21, 32);
   border-left-color: rgb(21, 21, 32);
   border-right-color: rgb(21, 21, 32);
@@ -513,17 +503,17 @@ html body hr {
   border-right-color: rgb(25, 25, 38);
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }`,
     footer: `html body footer {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(25, 25, 38);
   border-left-color: rgb(25, 25, 38);
   border-right-color: rgb(25, 25, 38);
   border-top-color: rgb(25, 25, 38);
 }`,
     canvas: `html body .canvas-sidebar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
 }`,
     bases: `html body .bases-table thead th {
   border-color: rgb(25, 25, 38);
@@ -540,21 +530,21 @@ html body .note-properties {
 }
 
 html body div#quartz-root {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-primary, rgba(0, 0, 0, 0));
 }`,
     stacked: `html body .stacked-page {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
 }
 
 html body .stacked-page-header {
-  background-color: rgb(25, 25, 38);
+  background-color: var(--tab-container-background, rgb(25, 25, 38));
 }`,
     misc: `html body .navigation-progress {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
 }
 
 html body kbd {
-  background-color: rgba(34, 34, 51, 0.2);
+  background-color: var(--code-background, rgba(34, 34, 51, 0.2));
 }`,
   },
   light: {},

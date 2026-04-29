@@ -19,83 +19,77 @@ export const theme: ThemeData = {
   --avatar-pink: #EF44C0;
   --avatar-purple: #6366F1;
   --avatar-purple-light: #A78BFA;
-  --background-modifier-border: #4a5568;
+  --background-modifier-border: var(--color-base-30, #4a5568);
   --background-modifier-cover: rgba(0, 0, 0, 0.8);
-  --background-modifier-error: #dc2626;
-  --background-modifier-error-hover: #b91c1c;
-  --background-modifier-error-rgb: 220, 38, 38;
-  --background-modifier-form-field: #374151;
+  --background-modifier-error: var(--color-red, #dc2626);
+  --background-modifier-error-hover: var(--color-red, #b91c1c);
+  --background-modifier-error-rgb: var(--color-red-rgb, 220, 38, 38);
+  --background-modifier-form-field: var(--color-base-25, #374151);
   --background-modifier-form-field-highlighted: #4a5568;
-  --background-modifier-form-field-hover: #374151;
-  --background-modifier-success: #059669;
-  --background-primary: #1a2332;
-  --background-primary-alt: #2d3748;
-  --background-secondary: #374151;
-  --bases-cards-background: #1a2332;
-  --bases-cards-cover-background: #2d3748;
-  --bases-cards-shadow: 0 0 0 1px #4a5568;
-  --bases-embed-border-color: #4a5568;
-  --bases-group-heading-property-color: #a0aec0;
-  --bases-table-border-color: rgba(125, 211, 192, 0.3);
-  --bases-table-cell-background-active: #1a2332;
-  --bases-table-cell-background-disabled: #2d3748;
-  --bases-table-cell-shadow-focus: 0 0 0 2px #7dd3c0;
-  --bases-table-group-background: #2d3748;
-  --bases-table-header-background: #1a2332;
-  --bases-table-header-color: #a0aec0;
-  --bases-table-summary-background: #1a2332;
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, #374151);
+  --background-modifier-success: var(--color-green, #059669);
+  --background-primary: var(--color-base-00, #1a2332);
+  --background-primary-alt: var(--color-base-10, #2d3748);
+  --background-secondary: var(--color-base-20, #374151);
+  --bases-cards-background: var(--background-primary, #1a2332);
+  --bases-cards-cover-background: var(--background-primary-alt, #2d3748);
+  --bases-embed-border-color: var(--background-modifier-border, #4a5568);
+  --bases-group-heading-property-color: var(--text-muted, #a0aec0);
+  --bases-table-border-color: var(--table-border-color, rgba(125, 211, 192, 0.3));
+  --bases-table-cell-background-active: var(--background-primary, #1a2332);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #2d3748);
+  --bases-table-group-background: var(--background-primary-alt, #2d3748);
+  --bases-table-header-background: var(--background-primary, #1a2332);
+  --bases-table-header-color: var(--text-muted, #a0aec0);
+  --bases-table-summary-background: var(--background-primary, #1a2332);
   --blockquote-bg: #303E59;
-  --blockquote-border-color: #fbbf24;
+  --blockquote-border-color: var(--interactive-accent, #fbbf24);
   --blockquote-color: #E1DCF2;
   --blockquote-font-style: italic;
-  --blur-background: color-mix(in srgb, #374151 65%, transparent) linear-gradient(#374151, color-mix(in srgb, #374151 65%, transparent));
-  --bodyFont: var(--font-text, 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
-  --canvas-background: #1a2332;
-  --canvas-card-label-color: #718096;
-  --caret-color: #e2e8f0;
-  --checkbox-border-color: #718096;
-  --checkbox-border-color-hover: #a0aec0;
-  --checkbox-color: #7dd3c0;
-  --checkbox-color-hover: #5eead4;
-  --checkbox-marker-color: #1a2332;
-  --checklist-done-color: #a0aec0;
-  --code-background: #374151;
-  --code-border-color: #4a5568;
-  --code-comment: #718096;
-  --code-normal: #e2e8f0;
-  --code-punctuation: #a0aec0;
-  --codeFont: var(--font-monospace, 'JetBrains Mono', 'Source Code Pro', monospace);
-  --collapse-icon-color: #718096;
-  --collapse-icon-color-collapsed: #7dd3c0;
-  --dark: var(--text-normal, #e2e8f0);
-  --darkgray: var(--text-normal, #e2e8f0);
-  --divider-color: #4a5568;
-  --divider-color-hover: #7dd3c0;
-  --dropdown-background: #374151;
-  --dropdown-background-hover: #4a5568;
-  --embed-block-shadow-hover: 0 0 0 1px #4a5568, inset 0 0 0 1px #4a5568;
-  --embed-border-start: 2px solid #7dd3c0;
-  --file-header-background: #1a2332;
-  --file-header-background-focused: #1a2332;
-  --file-header-font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --flair-background: #374151;
-  --flair-color: #e2e8f0;
-  --font-interface: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --bodyFont: var(--font-text, var(--font-text-theme, 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif));
+  --canvas-background: var(--background-primary, #1a2332);
+  --canvas-card-label-color: var(--text-faint, #718096);
+  --caret-color: var(--text-normal, #e2e8f0);
+  --checkbox-border-color: var(--text-faint, #718096);
+  --checkbox-border-color-hover: var(--text-muted, #a0aec0);
+  --checkbox-color: var(--interactive-accent, #7dd3c0);
+  --checkbox-color-hover: var(--interactive-accent-hover, #5eead4);
+  --checkbox-marker-color: var(--background-primary, #1a2332);
+  --checklist-done-color: var(--text-muted, #a0aec0);
+  --code-background: var(--background-primary-alt, #374151);
+  --code-border-color: var(--background-modifier-border, #4a5568);
+  --code-comment: var(--text-faint, #718096);
+  --code-normal: var(--text-normal, #e2e8f0);
+  --code-punctuation: var(--text-muted, #a0aec0);
+  --codeFont: var(--font-monospace, var(--font-monospace-theme, 'JetBrains Mono', 'Source Code Pro', monospace));
+  --collapse-icon-color: var(--text-faint, #718096);
+  --collapse-icon-color-collapsed: var(--text-accent, #7dd3c0);
+  --dark: var(--text-normal, var(--color-base-100, #e2e8f0));
+  --darkgray: var(--text-normal, var(--color-base-100, #e2e8f0));
+  --divider-color: var(--background-modifier-border, #4a5568);
+  --divider-color-hover: var(--interactive-accent, #7dd3c0);
+  --dropdown-background: var(--interactive-normal, #374151);
+  --dropdown-background-hover: var(--interactive-hover, #4a5568);
+  --file-header-background: var(--background-primary, #1a2332);
+  --file-header-background-focused: var(--background-primary, #1a2332);
+  --file-header-font: var(--font-interface, 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  --flair-background: var(--interactive-normal, #374151);
+  --flair-color: var(--text-normal, #e2e8f0);
+  --font-interface: var(--font-interface-theme, 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
   --font-interface-theme: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-mermaid: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-monospace: 'JetBrains Mono', 'Source Code Pro', monospace;
+  --font-mermaid: var(--font-text, 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  --font-monospace: var(--font-monospace-theme, 'JetBrains Mono', 'Source Code Pro', monospace);
   --font-monospace-theme: 'JetBrains Mono', 'Source Code Pro', monospace;
-  --font-print: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, Arial';
-  --font-text: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-text: var(--font-text-theme, 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
   --font-text-theme: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --footnote-divider-color: #4a5568;
-  --footnote-id-color: #a0aec0;
-  --footnote-id-color-no-occurrences: #718096;
-  --graph-node: #a0aec0;
-  --graph-node-focused: #7dd3c0;
-  --graph-node-unresolved: #718096;
-  --graph-text: #e2e8f0;
-  --gray: var(--text-muted, #a0aec0);
+  --footnote-divider-color: var(--metadata-divider-color, #4a5568);
+  --footnote-id-color: var(--text-muted, #a0aec0);
+  --footnote-id-color-no-occurrences: var(--text-faint, #718096);
+  --graph-node: var(--text-muted, #a0aec0);
+  --graph-node-focused: var(--text-accent, #7dd3c0);
+  --graph-node-unresolved: var(--text-faint, #718096);
+  --graph-text: var(--text-normal, #e2e8f0);
+  --gray: var(--text-muted, var(--color-base-70, #a0aec0));
   --h1-color: #EF44C0;
   --h1-size: 2.5em;
   --h2-color: #a78bfa;
@@ -113,141 +107,131 @@ export const theme: ThemeData = {
   --h6-color: #6366f1;
   --h6-size: 1.0em;
   --h6-weight: 500;
-  --headerFont: var(--font-text, 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
-  --heading-formatting: #718096;
-  --highlight: var(--text-highlight-bg, rgba(125, 211, 192, 0.3));
-  --hr-color: #fbbf24;
-  --icon-color: #7dd3c0;
-  --icon-color-active: #f561ab;
-  --icon-color-focused: #fbbf24;
-  --icon-color-hover: #fde68a;
-  --indentation-guide-color: #59FFD5;
-  --indentation-guide-color-active: rgba(89, 255, 213, 0.66);
-  --inline-title-color: #EF44C0;
-  --inline-title-size: 2.5em;
-  --input-date-separator: #718096;
-  --input-placeholder-color: #718096;
-  --interactive-accent: #7dd3c0;
-  --interactive-accent-hover: #5eead4;
-  --interactive-hover: #4a5568;
-  --interactive-normal: #374151;
+  --headerFont: var(--font-text, var(--font-text-theme, 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif));
+  --heading-formatting: var(--text-faint, #718096);
+  --hr-color: var(--background-modifier-border, #fbbf24);
+  --icon-color: var(--text-muted, #7dd3c0);
+  --icon-color-active: var(--text-accent, #f561ab);
+  --icon-color-focused: var(--text-normal, #fbbf24);
+  --icon-color-hover: var(--text-muted, #fde68a);
+  --inline-title-color: var(--h1-color, #EF44C0);
+  --inline-title-size: var(--h1-size, 2.5em);
+  --input-date-separator: var(--text-faint, #718096);
+  --input-placeholder-color: var(--text-faint, #718096);
+  --interactive-accent: var(--color-accent, #7dd3c0);
+  --interactive-accent-hover: var(--color-accent-1, #5eead4);
+  --interactive-hover: var(--color-base-35, #4a5568);
+  --interactive-normal: var(--color-base-30, #374151);
   --interactive-success: #059669;
-  --light: var(--background-primary, #1a2332);
-  --lightgray: var(--background-secondary, #374151);
-  --link-color: #7dd3c0;
-  --link-color-hover: #5eead4;
-  --link-external-color: #fbbf24;
-  --link-external-color-hover: #5eead4;
-  --link-unresolved-color: #6cf58e;
-  --list-marker-color: #718096;
-  --list-marker-color-collapsed: #7dd3c0;
-  --list-marker-color-hover: #a0aec0;
-  --menu-background: #374151;
-  --metadata-border-color: #4a5568;
-  --metadata-divider-color: #4a5568;
-  --metadata-input-font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --metadata-input-text-color: #e2e8f0;
-  --metadata-label-font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --metadata-label-text-color: #a0aec0;
-  --metadata-label-text-color-hover: #a0aec0;
-  --modal-background: #1a2332;
-  --nav-collapse-icon-color: #718096;
-  --nav-collapse-icon-color-collapsed: #718096;
-  --nav-heading-color: #e2e8f0;
-  --nav-heading-color-collapsed: #718096;
-  --nav-heading-color-collapsed-hover: #a0aec0;
-  --nav-heading-color-hover: #e2e8f0;
-  --nav-indentation-guide-color: #59FFD5;
-  --nav-item-color: #a0aec0;
-  --nav-item-color-active: #e2e8f0;
-  --nav-item-color-highlighted: #7dd3c0;
-  --nav-item-color-hover: #e2e8f0;
-  --nav-item-color-selected: #e2e8f0;
-  --nav-tag-color: #718096;
-  --nav-tag-color-active: #a0aec0;
-  --nav-tag-color-hover: #a0aec0;
-  --pdf-background: #1a2332;
-  --pdf-page-background: #1a2332;
-  --pdf-shadow: 0 0 0 1px #4a5568;
-  --pdf-sidebar-background: #1a2332;
-  --pdf-thumbnail-shadow: 0 0 0 1px #4a5568;
-  --pill-border-color: #4a5568;
-  --pill-color: #a0aec0;
-  --pill-color-hover: #e2e8f0;
-  --pill-color-remove: #718096;
-  --pill-color-remove-hover: #7dd3c0;
-  --prompt-background: #1a2332;
-  --raised-background: color-mix(in srgb, #374151 65%, transparent) linear-gradient(#374151, color-mix(in srgb, #374151 65%, transparent));
-  --ribbon-background: #374151;
-  --ribbon-background-collapsed: #1a2332;
-  --search-clear-button-color: #a0aec0;
-  --search-icon-color: #a0aec0;
-  --search-result-background: #1a2332;
-  --secondary: var(--text-accent, #7dd3c0);
-  --setting-group-heading-color: #e2e8f0;
-  --setting-items-background: #2d3748;
-  --setting-items-border-color: #4a5568;
-  --shiki-active-tab-border-color: #a0aec0;
-  --shiki-code-background: #374151;
-  --shiki-code-comment: #718096;
-  --shiki-code-normal: #a0aec0;
-  --shiki-code-punctuation: #a0aec0;
-  --shiki-gutter-border-color: #4a5568;
-  --shiki-gutter-text-color: #718096;
-  --shiki-gutter-text-color-highlight: #a0aec0;
-  --shiki-highlight-neutral: #a0aec0;
-  --shiki-terminal-dots-color: #718096;
-  --slider-track-background: #4a5568;
-  --status-bar-background: #374151;
-  --status-bar-border-color: #4a5568;
-  --status-bar-text-color: #a0aec0;
-  --suggestion-background: #1a2332;
-  --tab-background-active: #1a2332;
-  --tab-container-background: #374151;
-  --tab-outline-color: #4a5568;
-  --tab-switcher-background: #374151;
-  --tab-switcher-menubar-background: linear-gradient(to top, #374151, transparent);
-  --tab-text-color: #718096;
-  --tab-text-color-active: #a0aec0;
-  --tab-text-color-focused: #a0aec0;
-  --tab-text-color-focused-active: #FBBF24;
-  --tab-text-color-focused-active-current: #e2e8f0;
-  --tab-text-color-focused-highlighted: #7dd3c0;
+  --light: var(--background-primary, var(--color-base-00, #1a2332));
+  --lightgray: var(--background-secondary, var(--color-base-20, #374151));
+  --link-color: var(--text-accent, #7dd3c0);
+  --link-color-hover: var(--text-accent-hover, #5eead4);
+  --link-external-color: var(--text-accent, #fbbf24);
+  --link-external-color-hover: var(--text-accent-hover, #5eead4);
+  --link-unresolved-color: var(--text-accent, #6cf58e);
+  --list-marker-color: var(--text-faint, #718096);
+  --list-marker-color-collapsed: var(--text-accent, #7dd3c0);
+  --list-marker-color-hover: var(--text-muted, #a0aec0);
+  --menu-background: var(--background-secondary, #374151);
+  --metadata-border-color: var(--background-modifier-border, #4a5568);
+  --metadata-divider-color: var(--background-modifier-border, #4a5568);
+  --metadata-input-font: var(--font-interface, 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  --metadata-input-text-color: var(--text-normal, #e2e8f0);
+  --metadata-label-font: var(--font-interface, 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  --metadata-label-text-color: var(--text-muted, #a0aec0);
+  --metadata-label-text-color-hover: var(--text-muted, #a0aec0);
+  --modal-background: var(--background-primary, #1a2332);
+  --nav-collapse-icon-color: var(--collapse-icon-color, #718096);
+  --nav-collapse-icon-color-collapsed: var(--text-faint, #718096);
+  --nav-heading-color: var(--text-normal, #e2e8f0);
+  --nav-heading-color-collapsed: var(--text-faint, #718096);
+  --nav-heading-color-collapsed-hover: var(--text-muted, #a0aec0);
+  --nav-heading-color-hover: var(--text-normal, #e2e8f0);
+  --nav-indentation-guide-color: var(--indentation-guide-color, #59FFD5);
+  --nav-item-color: var(--text-muted, #a0aec0);
+  --nav-item-color-active: var(--text-normal, #e2e8f0);
+  --nav-item-color-highlighted: var(--text-accent, #7dd3c0);
+  --nav-item-color-hover: var(--text-normal, #e2e8f0);
+  --nav-item-color-selected: var(--text-normal, #e2e8f0);
+  --nav-tag-color: var(--text-faint, #718096);
+  --nav-tag-color-active: var(--text-muted, #a0aec0);
+  --nav-tag-color-hover: var(--text-muted, #a0aec0);
+  --pdf-background: var(--background-primary, #1a2332);
+  --pdf-page-background: var(--background-primary, #1a2332);
+  --pdf-sidebar-background: var(--background-primary, #1a2332);
+  --pill-border-color: var(--background-modifier-border, #4a5568);
+  --pill-color: var(--text-muted, #a0aec0);
+  --pill-color-hover: var(--text-normal, #e2e8f0);
+  --pill-color-remove: var(--text-faint, #718096);
+  --pill-color-remove-hover: var(--text-accent, #7dd3c0);
+  --prompt-background: var(--background-primary, #1a2332);
+  --raised-background: var(--blur-background, color-mix(in srgb, #374151 65%, transparent) linear-gradient(#374151, color-mix(in srgb, #374151 65%, transparent)));
+  --ribbon-background: var(--background-secondary, #374151);
+  --ribbon-background-collapsed: var(--background-primary, #1a2332);
+  --search-clear-button-color: var(--text-muted, #a0aec0);
+  --search-icon-color: var(--text-muted, #a0aec0);
+  --search-result-background: var(--background-primary, #1a2332);
+  --secondary: var(--text-accent, var(--color-accent-1, #7dd3c0));
+  --setting-group-heading-color: var(--text-normal, #e2e8f0);
+  --setting-items-background: var(--background-primary-alt, #2d3748);
+  --setting-items-border-color: var(--background-modifier-border, #4a5568);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, #a0aec0);
+  --shiki-code-background: var(--code-background, #374151);
+  --shiki-code-comment: var(--text-faint, #718096);
+  --shiki-code-normal: var(--text-muted, #a0aec0);
+  --shiki-code-punctuation: var(--text-muted, #a0aec0);
+  --shiki-gutter-border-color: var(--background-modifier-border, #4a5568);
+  --shiki-gutter-text-color: var(--text-faint, #718096);
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, #a0aec0);
+  --shiki-highlight-neutral: var(--shiki-code-normal, #a0aec0);
+  --shiki-terminal-dots-color: var(--text-faint, #718096);
+  --slider-track-background: var(--background-modifier-border, #4a5568);
+  --status-bar-background: var(--background-secondary, #374151);
+  --status-bar-border-color: var(--divider-color, #4a5568);
+  --status-bar-text-color: var(--text-muted, #a0aec0);
+  --suggestion-background: var(--background-primary, #1a2332);
+  --tab-background-active: var(--background-primary, #1a2332);
+  --tab-container-background: var(--background-secondary, #374151);
+  --tab-outline-color: var(--divider-color, #4a5568);
+  --tab-switcher-background: var(--background-secondary, #374151);
+  --tab-text-color: var(--text-faint, #718096);
+  --tab-text-color-active: var(--text-muted, #a0aec0);
+  --tab-text-color-focused: var(--text-muted, #a0aec0);
+  --tab-text-color-focused-active: var(--text-muted, #FBBF24);
+  --tab-text-color-focused-active-current: var(--text-normal, #e2e8f0);
+  --tab-text-color-focused-highlighted: var(--text-accent, #7dd3c0);
   --tab-text-color-unfocused-active: #7dd3c0;
-  --table-add-button-border-color: #4a5568;
-  --table-border-color: rgba(125, 211, 192, 0.3);
-  --table-drag-handle-background-active: #7dd3c0;
-  --table-drag-handle-color: #718096;
-  --table-drag-handle-color-active: #1a202c;
-  --table-header-background: linear-gradient(135deg, rgba(125, 211, 192, 0.15) 0%, rgba(99, 102, 241, 0.15) 100%);
-  --table-header-border-color: rgba(125, 211, 192, 0.3);
-  --table-header-color: #e2e8f0;
+  --table-add-button-border-color: var(--background-modifier-border, #4a5568);
+  --table-border-color: var(--background-modifier-border, rgba(125, 211, 192, 0.3));
+  --table-drag-handle-background-active: var(--table-selection-border-color, #7dd3c0);
+  --table-drag-handle-color: var(--text-faint, #718096);
+  --table-drag-handle-color-active: var(--text-on-accent, #1a202c);
+  --table-header-background: var(--table-background, linear-gradient(135deg, rgba(125, 211, 192, 0.15) 0%, rgba(99, 102, 241, 0.15) 100%));
+  --table-header-border-color: var(--table-border-color, rgba(125, 211, 192, 0.3));
+  --table-header-color: var(--text-normal, #e2e8f0);
   --table-row-even-background: rgba(125, 211, 192, 0.03);
   --table-row-hover-background: rgba(251, 191, 36, 0.05);
-  --table-selection-border-color: #7dd3c0;
-  --tag-background: rgba(251, 191, 36, 0.2);
-  --tag-background-hover: rgba(251, 191, 36, 0.3);
-  --tag-color: #fbbf24;
-  --tag-color-hover: #7dd3c0;
-  --tertiary: var(--text-accent-hover, #5eead4);
-  --text-accent: #7dd3c0;
-  --text-accent-hover: #5eead4;
-  --text-faint: #718096;
-  --text-highlight-bg: rgba(125, 211, 192, 0.3);
+  --table-selection-border-color: var(--interactive-accent, #7dd3c0);
+  --tag-color: var(--text-accent, #fbbf24);
+  --tag-color-hover: var(--text-accent, #7dd3c0);
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, #5eead4));
+  --text-accent: var(--color-accent-1, #7dd3c0);
+  --text-accent-hover: var(--color-accent-2, #5eead4);
+  --text-faint: var(--color-base-50, #718096);
   --text-highlight-bg-active: rgba(251, 191, 36, 0.6);
-  --text-highlight-color: #EF44C0;
-  --text-muted: #a0aec0;
-  --text-normal: #e2e8f0;
+  --text-highlight-color: var(--avatar-pink, #EF44C0);
+  --text-muted: var(--color-base-70, #a0aec0);
+  --text-normal: var(--color-base-100, #e2e8f0);
   --text-on-accent: #1a202c;
-  --textHighlight: var(--text-highlight-bg, rgba(125, 211, 192, 0.3));
-  --titleFont: var(--font-text, 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
-  --titlebar-background: #374151;
-  --titlebar-border-color: #4a5568;
-  --titlebar-text-color: #a0aec0;
-  --titlebar-text-color-focused: #FBBF24;
+  --titleFont: var(--font-text, var(--font-text-theme, 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif));
+  --titlebar-background: var(--background-secondary, #374151);
+  --titlebar-border-color: var(--background-modifier-border, #4a5568);
+  --titlebar-text-color: var(--text-muted, #a0aec0);
+  --titlebar-text-color-focused: var(--text-normal, #FBBF24);
   --titlebar-text-color-unfocused: #a0aec0;
-  --vault-profile-color: #e2e8f0;
-  --vault-profile-color-hover: #e2e8f0;
+  --vault-profile-color: var(--text-normal, #e2e8f0);
+  --vault-profile-color-hover: var(--vault-profile-color, #e2e8f0);
   --quartz-icon-color: currentColor;
 }
 
@@ -257,17 +241,17 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(26, 35, 50);
+  background-color: var(--tab-container-background, rgb(26, 35, 50));
   color: rgb(226, 232, 240);
 }
 
 html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
-  background-color: rgb(26, 35, 50);
+  background-color: var(--background-primary, rgb(26, 35, 50));
   color: rgb(226, 232, 240);
 }
 
 html body .page > div#quartz-body div.sidebar {
-  background-color: rgb(55, 65, 81);
+  background-color: var(--background-secondary, rgb(55, 65, 81));
   color: rgb(226, 232, 240);
 }
 
@@ -277,7 +261,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(26, 35, 50);
+  background-color: var(--tab-container-background, rgb(26, 35, 50));
   border-left-color: rgb(128, 128, 128);
   color: rgb(226, 232, 240);
 }
@@ -287,38 +271,36 @@ html body html {
   --avatar-focus-color: #343e4f;
 }`,
     typography: `html body .markdown-rendered p > b, html b {
-  color: rgb(52, 211, 153);
+  color: var(--avatar-bold, rgb(52, 211, 153));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-weight: 700;
   outline: rgb(52, 211, 153) none 0px;
   text-decoration-color: rgb(52, 211, 153);
 }
 
 html body .markdown-rendered p > em, html em {
-  color: rgb(129, 140, 248);
+  color: var(--italic-color, rgb(129, 140, 248));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   outline: rgb(129, 140, 248) none 0px;
   text-decoration-color: rgb(129, 140, 248);
 }
 
 html body .markdown-rendered p > i, html i {
-  color: rgb(129, 140, 248);
+  color: var(--italic-color, rgb(129, 140, 248));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   outline: rgb(129, 140, 248) none 0px;
   text-decoration-color: rgb(129, 140, 248);
 }
 
 html body .markdown-rendered p > strong, html strong {
-  color: rgb(52, 211, 153);
+  color: var(--avatar-bold, rgb(52, 211, 153));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-weight: 700;
   outline: rgb(52, 211, 153) none 0px;
   text-decoration-color: rgb(52, 211, 153);
 }
 
 html body .text-highlight {
-  background-color: rgba(72, 43, 177, 0.48);
-  color: rgb(64, 199, 204);
+  background-color: var(--text-highlight-bg, rgba(72, 43, 177, 0.48));
+  color: var(--text-normal, rgb(64, 199, 204));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 500;
   outline: rgb(64, 199, 204) none 0px;
@@ -333,7 +315,7 @@ html body del {
 }
 
 html body h1.article-title {
-  color: rgb(226, 232, 240);
+  color: var(--avatar-gold, rgb(226, 232, 240));
   font-weight: 600;
 }
 
@@ -342,32 +324,32 @@ html body li.task-list-item input[type="checkbox"] {
 }
 
 html body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(125, 211, 192);
+  background-color: var(--checkbox-color, rgb(125, 211, 192));
   border-color: rgb(125, 211, 192);
 }
 
 html body p {
-  color: rgb(160, 174, 192);
+  color: var(--text-muted, rgb(160, 174, 192));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   outline: rgb(160, 174, 192) none 0px;
   text-decoration-color: rgb(160, 174, 192);
 }`,
     links: `html body a.external-link, html footer a {
-  color: rgb(251, 191, 36);
+  color: var(--link-external-color, rgb(251, 191, 36));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   outline: rgb(251, 191, 36) none 0px;
   text-decoration-color: rgb(251, 191, 36);
 }
 
 html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(125, 211, 192);
+  color: var(--link-color, rgb(125, 211, 192));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   outline: rgb(125, 211, 192) none 0px;
   text-decoration-color: rgb(125, 211, 192);
 }
 
 html body a.internal-link.broken {
-  color: rgb(108, 245, 142);
+  color: var(--link-unresolved-color, rgb(108, 245, 142));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   outline: rgb(108, 245, 142) none 0px;
 }`,
@@ -394,12 +376,12 @@ html body ul.overflow {
   border-top-color: rgb(226, 232, 240);
 }`,
     blockquotes: `html body .data-footnote-backref {
-  color: rgb(113, 128, 150);
+  color: var(--text-faint, rgb(113, 128, 150));
 }
 
 html body blockquote {
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-style: italic;
+  font-style: var(--blockquote-font-style, italic);
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(226, 232, 240);
@@ -431,16 +413,16 @@ html body table {
 }
 
 html body tbody tr:nth-child(even) {
-  background-color: rgba(125, 211, 192, 0.03);
+  background-color: var(--table-row-even-background, rgba(125, 211, 192, 0.03));
 }
 
 html body td {
   border-bottom-color: rgba(125, 211, 192, 0.2);
   border-left-color: rgb(226, 232, 240);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: rgba(125, 211, 192, 0.15);
   border-top-color: rgba(125, 211, 192, 0.3);
-  color: rgb(226, 232, 240);
+  color: var(--table-text-color, rgb(226, 232, 240));
   padding-bottom: 10px;
   padding-left: 16px;
   padding-right: 16px;
@@ -451,10 +433,10 @@ html body th {
   border-bottom-color: rgb(125, 211, 192);
   border-bottom-width: 2px;
   border-left-color: rgb(125, 211, 192);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: rgba(125, 211, 192, 0.15);
   border-top-color: rgba(125, 211, 192, 0.3);
-  color: rgb(125, 211, 192);
+  color: var(--avatar-aqua, rgb(125, 211, 192));
   padding-bottom: 12px;
   padding-left: 16px;
   padding-right: 16px;
@@ -476,17 +458,17 @@ html body tr {
   border-top-color: rgba(125, 211, 192, 0.3);
 }`,
     code: `html body code {
-  background-color: rgb(55, 65, 81);
+  background-color: var(--code-background, rgb(55, 65, 81));
   border-bottom-color: rgb(74, 85, 104);
   border-left-color: rgb(74, 85, 104);
   border-right-color: rgb(74, 85, 104);
   border-top-color: rgb(74, 85, 104);
-  color: rgb(226, 232, 240);
-  font-family: "JetBrains Mono", "Source Code Pro", monospace;
+  color: var(--code-normal, rgb(226, 232, 240));
+  font-family: var(--font-monospace, "JetBrains Mono", "Source Code Pro", monospace);
 }
 
 html body pre:has(> code) {
-  background-color: rgb(55, 65, 81);
+  background-color: var(--code-background, rgb(55, 65, 81));
   border-bottom-color: rgb(74, 85, 104);
   border-left-color: rgb(74, 85, 104);
   border-right-color: rgb(74, 85, 104);
@@ -525,7 +507,7 @@ html body video {
   border-top-color: rgb(226, 232, 240);
 }`,
     embeds: `html body .file-embed {
-  background-color: rgb(45, 55, 72);
+  background-color: var(--background-primary-alt, rgb(45, 55, 72));
   border-bottom-color: rgb(160, 174, 192);
   border-left-color: rgb(160, 174, 192);
   border-right-color: rgb(160, 174, 192);
@@ -1118,11 +1100,10 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
   border-left-color: rgb(5, 203, 209);
   border-right-color: rgb(5, 203, 209);
   border-top-color: rgb(5, 203, 209);
-  color: rgb(5, 203, 209);
 }
 
 html body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(5, 203, 209);
+  color: var(--callout-title-color, rgb(5, 203, 209));
 }
 
 html body .callout > .callout-content {
@@ -1130,9 +1111,8 @@ html body .callout > .callout-content {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   background: rgba(99, 102, 241, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(99, 102, 241, 0.08);
   border-bottom-color: rgb(99, 102, 241);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1151,11 +1131,10 @@ html body .callout[data-callout="abstract"] .callout-title {
   border-left-color: rgb(5, 203, 209);
   border-right-color: rgb(5, 203, 209);
   border-top-color: rgb(5, 203, 209);
-  color: rgb(5, 203, 209);
 }
 
 html body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(5, 203, 209);
+  color: var(--callout-title-color, rgb(5, 203, 209));
 }
 
 html body .callout[data-callout="abstract"] > .callout-content {
@@ -1163,9 +1142,8 @@ html body .callout[data-callout="abstract"] > .callout-content {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   background: rgba(235, 61, 102, 0.518) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(235, 61, 102, 0.518);
   border-bottom-color: rgba(237, 49, 93, 0.61);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1184,11 +1162,10 @@ html body .callout[data-callout="bug"] .callout-title {
   border-left-color: rgb(5, 203, 209);
   border-right-color: rgb(5, 203, 209);
   border-top-color: rgb(5, 203, 209);
-  color: rgb(5, 203, 209);
 }
 
 html body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(5, 203, 209);
+  color: var(--callout-title-color, rgb(5, 203, 209));
 }
 
 html body .callout[data-callout="bug"] > .callout-content {
@@ -1196,9 +1173,8 @@ html body .callout[data-callout="bug"] > .callout-content {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   background: rgba(235, 61, 102, 0.518) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(235, 61, 102, 0.518);
   border-bottom-color: rgba(237, 49, 93, 0.61);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1217,11 +1193,10 @@ html body .callout[data-callout="danger"] .callout-title {
   border-left-color: rgb(5, 203, 209);
   border-right-color: rgb(5, 203, 209);
   border-top-color: rgb(5, 203, 209);
-  color: rgb(5, 203, 209);
 }
 
 html body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(5, 203, 209);
+  color: var(--callout-title-color, rgb(5, 203, 209));
 }
 
 html body .callout[data-callout="danger"] > .callout-content {
@@ -1229,9 +1204,8 @@ html body .callout[data-callout="danger"] > .callout-content {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   background: rgba(99, 102, 241, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(99, 102, 241, 0.08);
   border-bottom-color: rgb(99, 102, 241);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1250,11 +1224,10 @@ html body .callout[data-callout="example"] .callout-title {
   border-left-color: rgb(5, 203, 209);
   border-right-color: rgb(5, 203, 209);
   border-top-color: rgb(5, 203, 209);
-  color: rgb(5, 203, 209);
 }
 
 html body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(5, 203, 209);
+  color: var(--callout-title-color, rgb(5, 203, 209));
 }
 
 html body .callout[data-callout="example"] > .callout-content {
@@ -1262,9 +1235,8 @@ html body .callout[data-callout="example"] > .callout-content {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   background: rgba(224, 235, 73, 0.545) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(224, 235, 73, 0.545);
   border-bottom-color: rgb(214, 47, 35);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1283,11 +1255,10 @@ html body .callout[data-callout="failure"] .callout-title {
   border-left-color: rgb(5, 203, 209);
   border-right-color: rgb(5, 203, 209);
   border-top-color: rgb(5, 203, 209);
-  color: rgb(5, 203, 209);
 }
 
 html body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(5, 203, 209);
+  color: var(--callout-title-color, rgb(5, 203, 209));
 }
 
 html body .callout[data-callout="failure"] > .callout-content {
@@ -1295,9 +1266,8 @@ html body .callout[data-callout="failure"] > .callout-content {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   background: rgba(68, 56, 202, 0.545) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(68, 56, 202, 0.545);
   border-bottom-color: rgb(248, 191, 40);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1316,11 +1286,10 @@ html body .callout[data-callout="info"] .callout-title {
   border-left-color: rgb(5, 203, 209);
   border-right-color: rgb(5, 203, 209);
   border-top-color: rgb(5, 203, 209);
-  color: rgb(5, 203, 209);
 }
 
 html body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(5, 203, 209);
+  color: var(--callout-title-color, rgb(5, 203, 209));
 }
 
 html body .callout[data-callout="info"] > .callout-content {
@@ -1328,9 +1297,8 @@ html body .callout[data-callout="info"] > .callout-content {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   background: rgba(99, 102, 241, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(99, 102, 241, 0.08);
   border-bottom-color: rgb(99, 102, 241);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1349,11 +1317,10 @@ html body .callout[data-callout="note"] .callout-title {
   border-left-color: rgb(5, 203, 209);
   border-right-color: rgb(5, 203, 209);
   border-top-color: rgb(5, 203, 209);
-  color: rgb(5, 203, 209);
 }
 
 html body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(5, 203, 209);
+  color: var(--callout-title-color, rgb(5, 203, 209));
 }
 
 html body .callout[data-callout="note"] > .callout-content {
@@ -1361,9 +1328,8 @@ html body .callout[data-callout="note"] > .callout-content {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   background: rgba(133, 36, 251, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(133, 36, 251, 0.08);
   border-bottom-color: rgb(251, 191, 36);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1382,11 +1348,10 @@ html body .callout[data-callout="question"] .callout-title {
   border-left-color: rgb(5, 203, 209);
   border-right-color: rgb(5, 203, 209);
   border-top-color: rgb(5, 203, 209);
-  color: rgb(5, 203, 209);
 }
 
 html body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(5, 203, 209);
+  color: var(--callout-title-color, rgb(5, 203, 209));
 }
 
 html body .callout[data-callout="question"] > .callout-content {
@@ -1394,9 +1359,8 @@ html body .callout[data-callout="question"] > .callout-content {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background: rgba(251, 191, 36, 0.05) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(251, 191, 36, 0.05);
   border-bottom-color: rgb(251, 191, 36);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1415,11 +1379,10 @@ html body .callout[data-callout="quote"] .callout-title {
   border-left-color: rgb(5, 203, 209);
   border-right-color: rgb(5, 203, 209);
   border-top-color: rgb(5, 203, 209);
-  color: rgb(5, 203, 209);
 }
 
 html body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(5, 203, 209);
+  color: var(--callout-title-color, rgb(5, 203, 209));
 }
 
 html body .callout[data-callout="quote"] > .callout-content {
@@ -1427,9 +1390,8 @@ html body .callout[data-callout="quote"] > .callout-content {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   background: rgba(125, 211, 192, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(125, 211, 192, 0.08);
   border-bottom-color: rgb(8, 250, 169);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1448,11 +1410,10 @@ html body .callout[data-callout="success"] .callout-title {
   border-left-color: rgb(5, 203, 209);
   border-right-color: rgb(5, 203, 209);
   border-top-color: rgb(5, 203, 209);
-  color: rgb(5, 203, 209);
 }
 
 html body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(5, 203, 209);
+  color: var(--callout-title-color, rgb(5, 203, 209));
 }
 
 html body .callout[data-callout="success"] > .callout-content {
@@ -1460,9 +1421,8 @@ html body .callout[data-callout="success"] > .callout-content {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   background: rgba(11, 112, 200, 0.48) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(11, 112, 200, 0.48);
   border-bottom-color: rgb(225, 63, 243);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1481,11 +1441,10 @@ html body .callout[data-callout="tip"] .callout-title {
   border-left-color: rgb(5, 203, 209);
   border-right-color: rgb(5, 203, 209);
   border-top-color: rgb(5, 203, 209);
-  color: rgb(5, 203, 209);
 }
 
 html body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(5, 203, 209);
+  color: var(--callout-title-color, rgb(5, 203, 209));
 }
 
 html body .callout[data-callout="tip"] > .callout-content {
@@ -1493,9 +1452,8 @@ html body .callout[data-callout="tip"] > .callout-content {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   background: rgba(68, 56, 202, 0.545) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(68, 56, 202, 0.545);
   border-bottom-color: rgb(248, 191, 40);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1514,11 +1472,10 @@ html body .callout[data-callout="todo"] .callout-title {
   border-left-color: rgb(5, 203, 209);
   border-right-color: rgb(5, 203, 209);
   border-top-color: rgb(5, 203, 209);
-  color: rgb(5, 203, 209);
 }
 
 html body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(5, 203, 209);
+  color: var(--callout-title-color, rgb(5, 203, 209));
 }
 
 html body .callout[data-callout="todo"] > .callout-content {
@@ -1526,9 +1483,8 @@ html body .callout[data-callout="todo"] > .callout-content {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   background: rgba(251, 191, 36, 0.08) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(251, 191, 36, 0.08);
   border-bottom-color: rgb(251, 191, 36);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1547,11 +1503,10 @@ html body .callout[data-callout="warning"] .callout-title {
   border-left-color: rgb(5, 203, 209);
   border-right-color: rgb(5, 203, 209);
   border-top-color: rgb(5, 203, 209);
-  color: rgb(5, 203, 209);
 }
 
 html body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(5, 203, 209);
+  color: var(--callout-title-color, rgb(5, 203, 209));
 }
 
 html body .callout[data-callout="warning"] > .callout-content {
@@ -1623,12 +1578,12 @@ html body .callout[data-callout="warning"] {
   border-top-color: rgb(74, 85, 104);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: rgb(226, 232, 240);
+  color: var(--text-normal, rgb(226, 232, 240));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 html body .search > .search-container > .search-space {
-  background-color: rgb(52, 62, 79);
+  background-color: var(--prompt-background, rgb(52, 62, 79));
   border-bottom-color: rgba(125, 211, 192, 0.2);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1707,7 +1662,7 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(251, 191, 36, 0.2);
+  background-color: var(--pill-background, rgba(251, 191, 36, 0.2));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -1716,43 +1671,43 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
-  color: rgb(239, 68, 192);
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--h1-color, rgb(239, 68, 192));
+  font-family: var(--h1-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
 }
 
 html body h1.article-title {
-  color: rgb(239, 68, 192);
-  font-size: 40px;
+  color: var(--inline-title-color, rgb(239, 68, 192));
+  font-size: var(--inline-title-size, 40px);
 }
 
 html body h2 {
-  color: rgb(167, 139, 250);
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--h2-color, rgb(167, 139, 250));
+  font-family: var(--h2-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
 }
 
 html body h2.page-title, html h2.page-title a {
-  color: rgb(239, 68, 192);
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--inline-title-color, rgb(239, 68, 192));
+  font-family: var(--inline-title-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
 }
 
 html body h3 {
-  color: rgb(251, 191, 36);
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--h3-color, rgb(251, 191, 36));
+  font-family: var(--h3-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
 }
 
 html body h4 {
-  color: rgb(94, 234, 212);
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--h4-color, rgb(94, 234, 212));
+  font-family: var(--h4-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
 }
 
 html body h5 {
-  color: rgb(125, 211, 192);
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--h5-color, rgb(125, 211, 192));
+  font-family: var(--h5-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
 }
 
 html body h6 {
-  color: rgb(99, 102, 241);
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--h6-color, rgb(99, 102, 241));
+  font-family: var(--h6-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
 }
 
 html body hr {
@@ -1765,7 +1720,7 @@ html body hr {
   border-top-width: 3px;
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border-bottom-color: rgb(99, 102, 241);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1785,12 +1740,12 @@ html body .nav-files-container .tree-item-children {
 }
 
 html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(160, 174, 192);
+  color: var(--nav-item-color, rgb(160, 174, 192));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(160, 174, 192);
+  color: var(--nav-item-color, rgb(160, 174, 192));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }`,
     toc: `html body details.toc summary::marker {
@@ -1805,10 +1760,10 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-top-color: rgb(125, 211, 192);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  color: rgb(125, 211, 192);
+  color: var(--icon-color, rgb(125, 211, 192));
 }`,
     footer: `html body footer {
-  background-color: rgb(52, 62, 79);
+  background-color: var(--status-bar-background, rgb(52, 62, 79));
   border-bottom-color: rgb(74, 85, 104);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1816,12 +1771,12 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-right-color: rgb(74, 85, 104);
   border-top-color: rgba(125, 211, 192, 0.2);
   border-top-left-radius: 0px;
-  color: rgb(160, 174, 192);
+  color: var(--text-muted, rgb(160, 174, 192));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 html body footer ul li a {
-  color: rgb(251, 191, 36);
+  color: var(--avatar-gold, rgb(251, 191, 36));
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgb(226, 232, 240);
@@ -1837,7 +1792,7 @@ html body .recent-notes > ul.recent-ul > li {
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(160, 174, 192);
+  color: var(--nav-item-color, rgb(160, 174, 192));
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1857,7 +1812,7 @@ html body li.section-li > .section .meta {
 }
 
 html body li.section-li > .section > .desc > h3 > a {
-  color: rgb(160, 174, 192);
+  color: var(--nav-item-color, rgb(160, 174, 192));
 }
 
 html body ul.section-ul {
@@ -1876,7 +1831,7 @@ html body ul.section-ul {
   border-top-color: rgb(125, 211, 192);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  color: rgb(125, 211, 192);
+  color: var(--icon-color, rgb(125, 211, 192));
 }
 
 html body .darkmode svg {
@@ -1888,11 +1843,11 @@ html body .darkmode svg {
   border-left-color: rgb(251, 191, 36);
   border-right-color: rgb(251, 191, 36);
   border-top-color: rgb(251, 191, 36);
-  color: rgb(251, 191, 36);
+  color: var(--avatar-gold, rgb(251, 191, 36));
 }
 
 html body .breadcrumb-element p {
-  color: rgb(251, 191, 36);
+  color: var(--avatar-gold, rgb(251, 191, 36));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }`,
     canvas: `html body .canvas-node {
@@ -1904,7 +1859,7 @@ html body .canvas-node-content {
 }
 
 html body .canvas-node-file {
-  color: rgb(226, 232, 240);
+  color: var(--text-normal, rgb(226, 232, 240));
 }
 
 html body .canvas-node-group {
@@ -1912,7 +1867,7 @@ html body .canvas-node-group {
 }
 
 html body .canvas-sidebar {
-  background-color: rgb(55, 65, 81);
+  background-color: var(--background-secondary, rgb(55, 65, 81));
   border-color: rgb(226, 232, 240);
 }`,
     bases: `html body .bases-table {
@@ -1921,14 +1876,14 @@ html body .canvas-sidebar {
 
 html body .bases-table thead th {
   border-color: rgba(125, 211, 192, 0.3) rgba(125, 211, 192, 0.15) rgb(125, 211, 192) rgb(125, 211, 192);
-  color: rgb(125, 211, 192);
+  color: var(--avatar-aqua, rgb(125, 211, 192));
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgb(74, 85, 104);
   border-left-color: rgb(74, 85, 104);
   border-right-color: rgb(74, 85, 104);
   border-top-color: rgb(74, 85, 104);
-  color: rgb(160, 174, 192);
+  color: var(--text-muted, rgb(160, 174, 192));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -1954,8 +1909,8 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
-  background-color: rgba(251, 191, 36, 0.2);
-  color: rgb(251, 191, 36);
+  background-color: var(--pill-background, rgba(251, 191, 36, 0.2));
+  color: var(--pill-color, rgb(251, 191, 36));
 }
 
 html body .note-properties-value {
@@ -1963,8 +1918,8 @@ html body .note-properties-value {
 }
 
 html body div#quartz-root {
-  background-color: rgb(26, 35, 50);
-  color: rgb(226, 232, 240);
+  background-color: var(--background-primary, rgb(26, 35, 50));
+  color: var(--text-normal, rgb(226, 232, 240));
 }
 
 html body ol.overflow {
@@ -1974,7 +1929,7 @@ html body ol.overflow {
   border-top-color: rgb(226, 232, 240);
 }`,
     stacked: `html body .stacked-page {
-  background-color: rgb(55, 65, 81);
+  background-color: var(--background-secondary, rgb(55, 65, 81));
   border-color: rgb(226, 232, 240);
 }
 
@@ -1990,11 +1945,11 @@ html body .stacked-page.active {
 }
 
 html body .navigation-progress {
-  background-color: rgb(52, 62, 79);
+  background-color: var(--status-bar-background, rgb(52, 62, 79));
 }
 
 html body .page-header h2.page-title {
-  color: rgb(226, 232, 240);
+  color: var(--avatar-gold, rgb(226, 232, 240));
   font-family: Kalam, cursive;
 }
 
@@ -2023,18 +1978,18 @@ html body input[type=text] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: rgb(160, 174, 192);
+  color: var(--text-normal, rgb(160, 174, 192));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 html body kbd {
-  background-color: rgb(55, 65, 81);
+  background-color: var(--code-background, rgb(55, 65, 81));
   border-bottom-color: rgb(226, 232, 240);
   border-left-color: rgb(226, 232, 240);
   border-right-color: rgb(226, 232, 240);
   border-top-color: rgb(226, 232, 240);
-  color: rgb(226, 232, 240);
-  font-family: "JetBrains Mono", "Source Code Pro", monospace;
+  color: var(--code-normal, rgb(226, 232, 240));
+  font-family: var(--font-monospace, "JetBrains Mono", "Source Code Pro", monospace);
 }
 
 html body progress {
@@ -2057,8 +2012,8 @@ html body sup {
 }
 
 html body ul.tags > li {
-  background-color: rgba(251, 191, 36, 0.2);
-  color: rgb(251, 191, 36);
+  background-color: var(--tag-background, rgba(251, 191, 36, 0.2));
+  color: var(--tag-color, rgb(251, 191, 36));
 }`,
   },
   light: {},

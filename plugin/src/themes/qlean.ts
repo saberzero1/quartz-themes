@@ -27,30 +27,25 @@ export const theme: ThemeData = {
   --accent-l: 90%;
   --accent-s: 0%;
   --background-color-glass: rgba(0, 0, 0, 0.8);
-  --background-modifier-active-hover: #404040;
-  --background-modifier-border-focus: #404040;
-  --background-modifier-error-rgb: #ef4444;
-  --background-primary: #0a0a0a;
-  --background-primary-alt: #262626;
-  --background-secondary: #171717;
-  --background-secondary-alt: #404040;
-  --bases-cards-background: #0a0a0a;
-  --bases-cards-cover-background: #262626;
-  --bases-embed-border-radius: 0.125em;
-  --bases-group-heading-property-color: #737373;
-  --bases-table-cell-background-active: #0a0a0a;
-  --bases-table-cell-background-disabled: #262626;
-  --bases-table-cell-background-selected: hsla(0, 0%, 90%, 0.1);
-  --bases-table-cell-shadow-active: 0 0 0 2px #404040;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(0, 0%, 80%);
-  --bases-table-container-border-radius: 0.125em;
-  --bases-table-group-background: #262626;
-  --bases-table-header-background: #0a0a0a;
-  --bases-table-header-color: #737373;
-  --bases-table-summary-background: #0a0a0a;
-  --blockquote-border-color: hsl(0, 0%, 80%);
-  --bodyFont: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif);
+  --background-modifier-border-focus: var(--color-base-40, #404040);
+  --background-modifier-error-rgb: var(--color-red-rgb, #ef4444);
+  --background-primary: var(--color-base-00, #0a0a0a);
+  --background-primary-alt: var(--color-base-10, #262626);
+  --background-secondary: var(--color-base-20, #171717);
+  --background-secondary-alt: var(--color-base-30, #404040);
+  --bases-cards-background: var(--background-primary, #0a0a0a);
+  --bases-cards-cover-background: var(--background-primary-alt, #262626);
+  --bases-embed-border-radius: var(--radius-s, 0.125em);
+  --bases-group-heading-property-color: var(--text-muted, #737373);
+  --bases-table-cell-background-active: var(--background-primary, #0a0a0a);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #262626);
+  --bases-table-cell-background-selected: var(--table-selection, hsla(0, 0%, 90%, 0.1));
+  --bases-table-container-border-radius: var(--radius-s, 0.125em);
+  --bases-table-group-background: var(--background-primary-alt, #262626);
+  --bases-table-header-background: var(--background-primary, #0a0a0a);
+  --bases-table-header-color: var(--text-muted, #737373);
+  --bases-table-summary-background: var(--background-primary, #0a0a0a);
+  --blockquote-border-color: var(--interactive-accent, hsl(0, 0%, 80%));
   --border-color: #404040;
   --callout-attention-bg-color: rgb(47, 36, 25);
   --callout-attention-text-color: #f97316;
@@ -93,7 +88,7 @@ export const theme: ThemeData = {
   --callout-question-text-color: #eab308;
   --callout-quote-bg-color: rgb(36, 36, 36);
   --callout-quote-text-color: #f5f5f5;
-  --callout-radius: 0.125em;
+  --callout-radius: var(--radius-s, 0.125em);
   --callout-success-bg-color: rgb(26, 43, 30);
   --callout-success-text-color: #22c55e;
   --callout-tip-bg-color: rgb(30, 44, 44);
@@ -102,43 +97,38 @@ export const theme: ThemeData = {
   --callout-todo-text-color: #0ea5e9;
   --callout-warning-bg-color: rgb(47, 36, 25);
   --callout-warning-text-color: #f97316;
-  --canvas-background: #0a0a0a;
-  --canvas-controls-radius: 0.125em;
-  --caret-color: #d4d4d4;
-  --checkbox-border-color: #b3b3b3;
-  --checkbox-border-color-hover: #737373;
+  --canvas-background: var(--background-primary, #0a0a0a);
+  --canvas-controls-radius: var(--radius-s, 0.125em);
+  --caret-color: var(--text-normal, #d4d4d4);
+  --checkbox-border-color: var(--text-faint, #b3b3b3);
+  --checkbox-border-color-hover: var(--text-muted, #737373);
   --checkbox-checked-color: hsla(0, 0%, 90%);
-  --checkbox-color: #22c55e;
-  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
-  --checkbox-marker-color: #0a0a0a;
-  --checkbox-radius: 0.125em;
+  --checkbox-color: var(--interactive-accent, #22c55e);
+  --checkbox-color-hover: var(--interactive-accent-hover, hsla(0, 0%, 73%, 0.5));
+  --checkbox-marker-color: var(--background-primary, #0a0a0a);
+  --checkbox-radius: var(--radius-s, 0.125em);
   --checkbox-unchecked-color-hover: hsla(0, 0%, 90%, 0.5);
   --checklist-decoration-color: #d4d4d4;
   --checklist-decoration-line: none;
   --checklist-delete-decoration-color: #fb464c;
   --checklist-delete-decoration-line: line-through;
-  --checklist-done-color: #737373;
+  --checklist-done-color: var(--text-muted, #737373);
   --checklist-done-decoration-color: #737373;
   --checklist-done-decoration-line: none;
-  --clickable-icon-radius: 0.125em;
+  --clickable-icon-radius: var(--radius-s, 0.125em);
   --close-button-hover-bg-color: rgba(255, 255, 255, 0.1);
-  --code-background: #262626;
+  --code-background: var(--background-primary-alt, #262626);
   --code-bg-color: #171717;
-  --code-normal: #d4d4d4;
-  --code-punctuation: #737373;
-  --code-radius: 0.125em;
-  --codeFont: var(--font-monospace, iawriter-mono, Nitti, Menlo, Courier, monospace);
-  --collapse-icon-color-collapsed: hsl(0, 0%, 90%);
-  --color-accent: hsl(0, 0%, 90%);
-  --color-accent-1: hsl(0, 0%, 90%);
-  --color-accent-2: hsl(-5, 0%, 116.1%);
+  --code-normal: var(--text-normal, #d4d4d4);
+  --code-punctuation: var(--text-muted, #737373);
+  --code-radius: var(--radius-s, 0.125em);
+  --collapse-icon-color-collapsed: var(--text-accent, hsl(0, 0%, 90%));
   --color-accent-h1: hsl(0, 0%, 90%);
   --color-accent-h2: hsl(0, 0%, 90%);
   --color-accent-h3: hsl(0, 0%, 90%);
   --color-accent-h4: hsl(0, 0%, 90%);
   --color-accent-h5: hsl(0, 0%, 90%);
   --color-accent-h6: hsl(0, 0%, 90%);
-  --color-accent-hsl: 0, 0%, 90%;
   --color-accent-ln10: hsl(0, 0%, 80%);
   --color-accent-ln15: hsl(0, 0%, 75%);
   --color-accent-ln20: hsl(0, 0%, 70%);
@@ -194,17 +184,16 @@ export const theme: ThemeData = {
   --color-sage-l: 69%;
   --color-sage-main: hsl(88, 23%, 69%);
   --color-sage-s: 23%;
-  --dark: var(--text-normal, #d4d4d4);
-  --darkgray: var(--text-normal, #d4d4d4);
-  --divider-color: #404040;
-  --divider-color-hover: hsl(0, 0%, 80%);
-  --dropdown-background-hover: rgb(163 163 163 / 0.2);
-  --embed-border-start: 2px solid hsl(0, 0%, 80%);
-  --file-header-background: #0a0a0a;
-  --file-header-background-focused: #0a0a0a;
-  --file-header-font: "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
-  --flair-color: #d4d4d4;
+  --dark: var(--text-normal, var(--color-base-100, #d4d4d4));
+  --darkgray: var(--text-normal, var(--color-base-100, #d4d4d4));
+  --divider-color: var(--background-modifier-border, #404040);
+  --divider-color-hover: var(--interactive-accent, hsl(0, 0%, 80%));
+  --dropdown-background-hover: var(--interactive-hover, rgb(163 163 163 / 0.2));
+  --file-header-background: var(--background-primary, #0a0a0a);
+  --file-header-background-focused: var(--background-primary, #0a0a0a);
+  --file-header-font: var(--font-interface, "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif);
+  --flair-color: var(--text-normal, #d4d4d4);
   --focus-transition-duration: 0.2s;
   --font-default: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif;
@@ -250,14 +239,11 @@ export const theme: ThemeData = {
     sans-serif;
   --font-inline-title-size: 2em;
   --font-inline-title-weight: 900;
-  --font-interface: "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
   --font-interface-override: "";
   --font-latex-size: 1em;
   --font-latex-weight: 400;
-  --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
-  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-mermaid: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif);
   --font-monospace-default: iawriter-mono, Nitti, Menlo, Courier, monospace;
   --font-monospace-size: 1em;
   --font-monospace-weight: 400;
@@ -284,8 +270,6 @@ export const theme: ThemeData = {
   --font-tag: iawriter-mono, Nitti, Menlo, Courier, monospace;
   --font-tag-size: 1em;
   --font-tag-weight: 400;
-  --font-text: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
   --font-text-weight: 400;
   --font-underlined-color: #d4d4d4;
   --font-underlined-decoration-color: #d4d4d4;
@@ -299,153 +283,136 @@ export const theme: ThemeData = {
     sans-serif;
   --font-vault-name-size: 1.25em;
   --font-vault-name-weight: 400;
-  --footnote-id-color: #737373;
-  --footnote-radius: 0.125em;
-  --graph-node: #737373;
-  --graph-node-focused: hsl(0, 0%, 90%);
-  --graph-text: #d4d4d4;
-  --gray: var(--text-muted, #737373);
+  --footnote-id-color: var(--text-muted, #737373);
+  --footnote-radius: var(--radius-s, 0.125em);
+  --graph-node: var(--text-muted, #737373);
+  --graph-node-focused: var(--text-accent, hsl(0, 0%, 90%));
+  --graph-text: var(--text-normal, #d4d4d4);
+  --gray: var(--text-muted, var(--color-base-70, #737373));
   --h1-color: #d4d4d4;
   --h2-color: #d4d4d4;
   --h3-color: #d4d4d4;
   --h4-color: #d4d4d4;
   --h5-color: #d4d4d4;
   --h6-color: #d4d4d4;
-  --headerFont: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif);
-  --highlight: var(--background-modifier-active-hover, #404040);
-  --icon-color: #737373;
-  --icon-color-active: hsl(0, 0%, 90%);
-  --icon-color-focused: hsla(0, 0%, 90%, 0.8);
-  --icon-color-hover: #737373;
+  --icon-color: var(--text-muted, #737373);
+  --icon-color-active: var(--text-accent, hsl(0, 0%, 90%));
+  --icon-color-focused: var(--text-normal, hsla(0, 0%, 90%, 0.8));
+  --icon-color-hover: var(--text-muted, #737373);
   --icon-color-hovering: #f5f5f5;
   --inactive-hover-opacity: 0.8;
   --inactive-opacity: 0.3;
   --inline-code-bg-color: rgba(38, 38, 38, 0.5);
   --inline-code-text-color: #a3a3a3;
-  --inline-title-color: #d4d4d4;
-  --interactive-accent: hsl(0, 0%, 80%);
-  --interactive-accent-hover: hsl(0, 0%, 85%);
-  --interactive-accent-hsl: 0, 0%, 90%;
-  --interactive-hover: rgb(163 163 163 / 0.2);
-  --light: var(--background-primary, #0a0a0a);
-  --lightgray: var(--background-secondary, #171717);
-  --link-color: hsl(0, 0%, 85%);
-  --link-color-hover: hsl(0, 0%, 85%);
+  --inline-title-color: var(--h1-color, #d4d4d4);
+  --interactive-accent: var(--color-accent, hsl(0, 0%, 80%));
+  --interactive-accent-hover: var(--color-accent-1, hsl(0, 0%, 85%));
+  --interactive-accent-hsl: var(--color-accent-hsl, 0, 0%, 90%);
+  --interactive-hover: var(--color-base-35, rgb(163 163 163 / 0.2));
+  --light: var(--background-primary, var(--color-base-00, #0a0a0a));
+  --lightgray: var(--background-secondary, var(--color-base-20, #171717));
+  --link-color: var(--text-accent, hsl(0, 0%, 85%));
+  --link-color-hover: var(--text-accent-hover, hsl(0, 0%, 85%));
   --link-decoration-color: hsl(0, 0%, 85%);
   --link-decoration-line: underline;
   --link-decoration-offset: 0.3em;
   --link-decoration-style: solid;
   --link-decoration-thickness: 1px;
-  --link-external-color: hsl(0, 0%, 85%);
-  --link-external-color-hover: hsl(0, 0%, 85%);
-  --link-unresolved-color: hsla(0, 0%, 90%, 0.9);
+  --link-external-color: var(--text-accent, hsl(0, 0%, 85%));
+  --link-external-color-hover: var(--text-accent-hover, hsl(0, 0%, 85%));
+  --link-unresolved-color: var(--text-accent, hsla(0, 0%, 90%, 0.9));
   --link-unresolved-color-hover: hsl(0, 0%, 90%);
-  --link-unresolved-decoration-color: hsla(hsla(0, 0%, 90%, 0.9), 0.3);
   --link-unresolved-decoration-color-hover: hsla(hsl(0, 0%, 90%), 0.3);
   --link-unresolved-decoration-line: underline;
   --link-unresolved-decoration-offset: 0.3em;
   --link-unresolved-decoration-style: dashed;
   --link-unresolved-decoration-width: 1px;
-  --list-marker-color-collapsed: hsl(0, 0%, 90%);
-  --list-marker-color-hover: #737373;
-  --menu-background: #171717;
-  --metadata-input-font: "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
-  --metadata-input-text-color: #d4d4d4;
-  --metadata-label-font: "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
-  --metadata-label-text-color: #737373;
-  --metadata-label-text-color-hover: #737373;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #404040;
-  --modal-background: #0a0a0a;
-  --nav-heading-color: #d4d4d4;
-  --nav-heading-color-collapsed-hover: #737373;
-  --nav-heading-color-hover: #d4d4d4;
-  --nav-item-background-selected: hsla(0, 0%, 90%, 0.15);
-  --nav-item-color: #737373;
-  --nav-item-color-active: #d4d4d4;
-  --nav-item-color-highlighted: hsl(0, 0%, 90%);
-  --nav-item-color-hover: #d4d4d4;
-  --nav-item-color-selected: #d4d4d4;
-  --nav-item-radius: 0.125em;
-  --nav-tag-color-active: #737373;
-  --nav-tag-color-hover: #737373;
-  --nav-tag-radius: 0.125em;
-  --pdf-background: #0a0a0a;
-  --pdf-page-background: #0a0a0a;
-  --pdf-sidebar-background: #0a0a0a;
-  --pill-color: #737373;
-  --pill-color-hover: #d4d4d4;
-  --pill-color-remove-hover: hsl(0, 0%, 90%);
-  --prompt-background: #0a0a0a;
+  --list-marker-color-collapsed: var(--text-accent, hsl(0, 0%, 90%));
+  --list-marker-color-hover: var(--text-muted, #737373);
+  --menu-background: var(--background-secondary, #171717);
+  --metadata-input-font: var(--font-interface, "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif);
+  --metadata-input-text-color: var(--text-normal, #d4d4d4);
+  --metadata-label-font: var(--font-interface, "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif);
+  --metadata-label-text-color: var(--text-muted, #737373);
+  --metadata-label-text-color-hover: var(--text-muted, #737373);
+  --modal-background: var(--background-primary, #0a0a0a);
+  --nav-heading-color: var(--text-normal, #d4d4d4);
+  --nav-heading-color-collapsed-hover: var(--text-muted, #737373);
+  --nav-heading-color-hover: var(--text-normal, #d4d4d4);
+  --nav-item-color: var(--text-muted, #737373);
+  --nav-item-color-active: var(--text-normal, #d4d4d4);
+  --nav-item-color-highlighted: var(--text-accent, hsl(0, 0%, 90%));
+  --nav-item-color-hover: var(--text-normal, #d4d4d4);
+  --nav-item-color-selected: var(--text-normal, #d4d4d4);
+  --nav-item-radius: var(--radius-s, 0.125em);
+  --nav-tag-color-active: var(--text-muted, #737373);
+  --nav-tag-color-hover: var(--text-muted, #737373);
+  --nav-tag-radius: var(--radius-s, 0.125em);
+  --pdf-background: var(--background-primary, #0a0a0a);
+  --pdf-page-background: var(--background-primary, #0a0a0a);
+  --pdf-sidebar-background: var(--background-primary, #0a0a0a);
+  --pill-color: var(--text-muted, #737373);
+  --pill-color-hover: var(--text-normal, #d4d4d4);
+  --pill-color-remove-hover: var(--text-accent, hsl(0, 0%, 90%));
+  --prompt-background: var(--background-primary, #0a0a0a);
   --quote-bg-color: rgba(250, 250, 250, 0.05);
   --radius-s: 0.125em;
-  --ribbon-background: #171717;
-  --ribbon-background-collapsed: #0a0a0a;
-  --search-clear-button-color: #737373;
-  --search-icon-color: #737373;
-  --search-result-background: #0a0a0a;
-  --secondary: var(--text-accent, hsl(0, 0%, 90%));
-  --setting-group-heading-color: #d4d4d4;
-  --setting-items-background: #262626;
-  --shiki-active-tab-border-color: #737373;
-  --shiki-code-background: #262626;
-  --shiki-code-block-border-radius: 0.125em;
-  --shiki-code-normal: #737373;
-  --shiki-code-punctuation: #737373;
-  --shiki-gutter-text-color-highlight: #737373;
-  --shiki-highlight-neutral: #737373;
-  --status-bar-background: #171717;
-  --status-bar-border-color: #404040;
-  --status-bar-text-color: #737373;
-  --suggestion-background: #0a0a0a;
+  --ribbon-background: var(--background-secondary, #171717);
+  --ribbon-background-collapsed: var(--background-primary, #0a0a0a);
+  --search-clear-button-color: var(--text-muted, #737373);
+  --search-icon-color: var(--text-muted, #737373);
+  --search-result-background: var(--background-primary, #0a0a0a);
+  --secondary: var(--text-accent, var(--color-accent-1, hsl(0, 0%, 90%)));
+  --setting-group-heading-color: var(--text-normal, #d4d4d4);
+  --setting-items-background: var(--background-primary-alt, #262626);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, #737373);
+  --shiki-code-background: var(--code-background, #262626);
+  --shiki-code-block-border-radius: var(--code-radius, 0.125em);
+  --shiki-code-normal: var(--text-muted, #737373);
+  --shiki-code-punctuation: var(--text-muted, #737373);
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, #737373);
+  --shiki-highlight-neutral: var(--shiki-code-normal, #737373);
+  --status-bar-background: var(--background-secondary, #171717);
+  --status-bar-border-color: var(--divider-color, #404040);
+  --status-bar-text-color: var(--text-muted, #737373);
+  --suggestion-background: var(--background-primary, #0a0a0a);
   --switch-inset-shadow-color: rgba(0, 0, 0, 0.2);
   --tab-active-bg-color: #262626;
-  --tab-background-active: #0a0a0a;
+  --tab-background-active: var(--background-primary, #0a0a0a);
   --tab-bg-color: #171717;
-  --tab-container-background: #171717;
+  --tab-container-background: var(--background-secondary, #171717);
   --tab-hover-bg-color: #404040;
-  --tab-outline-color: #404040;
-  --tab-radius: 0.125em;
-  --tab-switcher-background: #171717;
-  --tab-switcher-menubar-background: linear-gradient(to top, #171717, transparent);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 90%);
-  --tab-text-color-active: #737373;
-  --tab-text-color-focused: #737373;
-  --tab-text-color-focused-active: #737373;
-  --tab-text-color-focused-active-current: #d4d4d4;
-  --tab-text-color-focused-highlighted: hsl(0, 0%, 90%);
-  --table-drag-handle-background-active: hsl(0, 0%, 80%);
-  --table-header-color: #d4d4d4;
-  --table-selection: hsla(0, 0%, 90%, 0.1);
-  --table-selection-border-color: hsl(0, 0%, 80%);
-  --tag-background: hsla(0, 0%, 90%, 0.1);
-  --tag-background-hover: hsla(0, 0%, 90%, 0.2);
-  --tag-border-color: hsla(0, 0%, 90%, 0.15);
-  --tag-border-color-hover: hsla(0, 0%, 90%, 0.15);
-  --tag-color: hsl(0, 0%, 90%);
-  --tag-color-hover: hsl(0, 0%, 90%);
+  --tab-outline-color: var(--divider-color, #404040);
+  --tab-radius: var(--radius-s, 0.125em);
+  --tab-switcher-background: var(--background-secondary, #171717);
+  --tab-text-color-active: var(--text-muted, #737373);
+  --tab-text-color-focused: var(--text-muted, #737373);
+  --tab-text-color-focused-active: var(--text-muted, #737373);
+  --tab-text-color-focused-active-current: var(--text-normal, #d4d4d4);
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(0, 0%, 90%));
+  --table-drag-handle-background-active: var(--table-selection-border-color, hsl(0, 0%, 80%));
+  --table-header-color: var(--text-normal, #d4d4d4);
+  --table-selection-border-color: var(--interactive-accent, hsl(0, 0%, 80%));
+  --tag-color: var(--text-accent, hsl(0, 0%, 90%));
+  --tag-color-hover: var(--text-accent, hsl(0, 0%, 90%));
   --tag-radius: 0em;
-  --tertiary: var(--text-accent-hover, #f5f5f5);
-  --text-accent: hsl(0, 0%, 90%);
-  --text-accent-hover: #f5f5f5;
-  --text-muted: #737373;
-  --text-normal: #d4d4d4;
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, #f5f5f5));
+  --text-accent: var(--color-accent-1, hsl(0, 0%, 90%));
+  --text-accent-hover: var(--color-accent-2, #f5f5f5);
+  --text-muted: var(--color-base-70, #737373);
+  --text-normal: var(--color-base-100, #d4d4d4);
   --text-reversed: #0a0a0a;
-  --text-selection: rgb(163 163 163 / 0.2);
   --text-strong: #f5f5f5;
-  --textHighlight: var(--background-modifier-active-hover, #404040);
-  --titleFont: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif);
-  --titlebar-background: #171717;
-  --titlebar-background-focused: #404040;
+  --titlebar-background: var(--background-secondary, #171717);
+  --titlebar-background-focused: var(--background-secondary-alt, #404040);
   --titlebar-isfocused: #171514;
   --titlebar-not-focused: #4c4c4d;
-  --titlebar-text-color: #737373;
-  --titlebar-text-color-focused: #d4d4d4;
-  --vault-profile-color: #d4d4d4;
-  --vault-profile-color-hover: #d4d4d4;
+  --titlebar-text-color: var(--text-muted, #737373);
+  --titlebar-text-color-focused: var(--text-normal, #d4d4d4);
+  --vault-profile-color: var(--text-normal, #d4d4d4);
+  --vault-profile-color-hover: var(--vault-profile-color, #d4d4d4);
   --quartz-icon-color: currentColor;
 }
 
@@ -455,17 +422,17 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(23, 23, 23);
+  background-color: var(--tab-container-background, rgb(23, 23, 23));
   color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: rgb(10, 10, 10);
+  background-color: var(--background-primary, rgb(10, 10, 10));
   color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(23, 23, 23);
+  background-color: var(--background-secondary, rgb(23, 23, 23));
   color: rgb(212, 212, 212);
 }
 
@@ -474,13 +441,265 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(23, 23, 23);
+  background-color: var(--tab-container-background, rgb(23, 23, 23));
   border-left-color: rgb(64, 64, 64);
   color: rgb(212, 212, 212);
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered > h1 {
-  --font-weight: 700;
-  background-color: rgba(0, 0, 0, 0);
+  --background-modifier-active-hover: #404040;
+  --background-modifier-border: #363636;
+  --background-modifier-border-focus: #404040;
+  --background-modifier-border-hover: #3f3f3f;
+  --background-modifier-error: #fb464c;
+  --background-modifier-error-hover: #fb464c;
+  --background-modifier-error-rgb: #ef4444;
+  --background-modifier-form-field: #2a2a2a;
+  --background-modifier-form-field-hover: #2a2a2a;
+  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-success: #44cf6e;
+  --background-modifier-success-rgb: 68, 207, 110;
+  --background-primary: #0a0a0a;
+  --background-primary-alt: #262626;
+  --background-secondary: #171717;
+  --background-secondary-alt: #404040;
+  --blockquote-border-color: hsl(0, 0%, 80%);
+  --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-bug: 251, 70, 76;
+  --callout-default: 2, 122, 255;
+  --callout-error: 251, 70, 76;
+  --callout-example: 168, 130, 255;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-info: 2, 122, 255;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 233, 151, 63;
+  --callout-radius: 0.125em;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
+  --callout-title-weight: 600;
+  --callout-todo: 2, 122, 255;
+  --callout-warning: 233, 151, 63;
+  --canvas-background: #0a0a0a;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 0.125em;
+  --canvas-dot-pattern: #363636;
+  --caret-color: #d4d4d4;
+  --checkbox-border-color: #b3b3b3;
+  --checkbox-border-color-hover: #737373;
+  --checkbox-color: #22c55e;
+  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
+  --checkbox-marker-color: #0a0a0a;
+  --checkbox-radius: 0.125em;
+  --checkbox-size: 16px;
+  --checklist-done-color: #737373;
+  --clickable-icon-radius: 0.125em;
+  --code-background: #262626;
+  --code-border-color: #363636;
+  --code-bracket-background: rgba(255, 255, 255, 0.067);
+  --code-comment: #666666;
+  --code-function: #e0de71;
+  --code-important: #e9973f;
+  --code-keyword: #fa99cd;
+  --code-normal: #d4d4d4;
+  --code-operator: #fb464c;
+  --code-property: #53dfdd;
+  --code-punctuation: #737373;
+  --code-radius: 0.125em;
+  --code-size: 0.875em;
+  --code-string: #44cf6e;
+  --code-tag: #fb464c;
+  --code-value: #a882ff;
+  --collapse-icon-color: #666666;
+  --collapse-icon-color-collapsed: hsl(0, 0%, 90%);
+  --color-accent: hsl(0, 0%, 90%);
+  --color-accent-1: hsl(0, 0%, 90%);
+  --color-accent-2: hsl(-5, 0%, 116.1%);
+  --color-accent-hsl: 0, 0%, 90%;
+  --divider-color: #404040;
+  --divider-color-hover: hsl(0, 0%, 80%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #363636;
+  --dropdown-background-hover: rgb(163 163 163 / 0.2);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #363636;
+  --flair-color: #d4d4d4;
+  --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-weight: var(--h1-weight, 700);
+  --graph-line: #3f3f3f;
+  --graph-node: #737373;
+  --graph-node-attachment: #e0de71;
+  --graph-node-focused: hsl(0, 0%, 90%);
+  --graph-node-tag: #44cf6e;
+  --graph-node-unresolved: #666666;
+  --graph-text: #d4d4d4;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #666666;
+  --heading-spacing: 2.5rem;
+  --hr-color: #363636;
+  --interactive-accent: hsl(0, 0%, 80%);
+  --interactive-accent-hover: hsl(0, 0%, 85%);
+  --interactive-accent-hsl: 0, 0%, 90%;
+  --interactive-hover: rgb(163 163 163 / 0.2);
+  --interactive-normal: #363636;
+  --link-color: hsl(0, 0%, 85%);
+  --link-color-hover: hsl(0, 0%, 85%);
+  --link-external-color: hsl(0, 0%, 85%);
+  --link-external-color-hover: hsl(0, 0%, 85%);
+  --link-unresolved-color: hsla(0, 0%, 90%, 0.9);
+  --link-unresolved-decoration-color: hsla(hsla(0, 0%, 90%, 0.9), 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: #171717;
+  --menu-border-color: #3f3f3f;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --pdf-background: #0a0a0a;
+  --pdf-page-background: #0a0a0a;
+  --pdf-shadow: 0 0 0 1px #363636;
+  --pdf-sidebar-background: #0a0a0a;
+  --pdf-thumbnail-shadow: 0 0 0 1px #363636;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: #737373;
+  --search-icon-color: #737373;
+  --search-result-background: #0a0a0a;
+  --setting-group-heading-color: #d4d4d4;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #262626;
+  --setting-items-border-color: #363636;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: #737373;
+  --shiki-code-background: #262626;
+  --shiki-code-block-border-radius: 0.125em;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #666666;
+  --shiki-code-function: #44cf6e;
+  --shiki-code-important: #e9973f;
+  --shiki-code-keyword: #fa99cd;
+  --shiki-code-normal: #737373;
+  --shiki-code-property: #53dfdd;
+  --shiki-code-punctuation: #737373;
+  --shiki-code-string: #e0de71;
+  --shiki-code-value: #a882ff;
+  --shiki-gutter-border-color: #363636;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #666666;
+  --shiki-gutter-text-color-highlight: #737373;
+  --shiki-highlight-green: rgba(68, 207, 110, 0.5);
+  --shiki-highlight-green-background: rgba(68, 207, 110, 0.1);
+  --shiki-highlight-neutral: #737373;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
+  --shiki-highlight-red: rgba(251, 70, 76, 0.5);
+  --shiki-highlight-red-background: rgba(251, 70, 76, 0.1);
+  --shiki-terminal-dots-color: #666666;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #0a0a0a;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --sync-avatar-color-1: #fb464c;
+  --sync-avatar-color-2: #e9973f;
+  --sync-avatar-color-3: #e0de71;
+  --sync-avatar-color-4: #44cf6e;
+  --sync-avatar-color-5: #53dfdd;
+  --sync-avatar-color-6: #027aff;
+  --sync-avatar-color-7: #a882ff;
+  --sync-avatar-color-8: #fa99cd;
+  --tab-background-active: #0a0a0a;
+  --tab-divider-color: #3f3f3f;
+  --tab-font-size: 13px;
+  --tab-outline-color: #404040;
+  --tab-radius: 0.125em;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #171717;
+  --tab-switcher-menubar-background: linear-gradient(to top, #171717, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 90%);
+  --tab-text-color: #666666;
+  --tab-text-color-active: #737373;
+  --tab-text-color-focused: #737373;
+  --tab-text-color-focused-active: #737373;
+  --tab-text-color-focused-active-current: #d4d4d4;
+  --tab-text-color-focused-highlighted: hsl(0, 0%, 90%);
+  --table-add-button-border-color: #363636;
+  --table-add-button-border-width: 1px;
+  --table-border-color: #363636;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(0, 0%, 80%);
+  --table-drag-handle-color: #666666;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: #363636;
+  --table-header-border-width: 1px;
+  --table-header-color: #d4d4d4;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(0, 0%, 90%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(0, 0%, 80%);
+  --table-text-size: 16px;
+  --tag-background: hsla(0, 0%, 90%, 0.1);
+  --tag-background-hover: hsla(0, 0%, 90%, 0.2);
+  --tag-border-color: hsla(0, 0%, 90%, 0.15);
+  --tag-border-color-hover: hsla(0, 0%, 90%, 0.15);
+  --tag-color: hsl(0, 0%, 90%);
+  --tag-color-hover: hsl(0, 0%, 90%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(0, 0%, 90%);
+  --text-accent-hover: #f5f5f5;
+  --text-error: #fb464c;
+  --text-faint: #666666;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #737373;
+  --text-normal: #d4d4d4;
+  --text-selection: rgb(163 163 163 / 0.2);
+  --text-success: #44cf6e;
+  --text-warning: #e9973f;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -493,13 +712,13 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(115, 115, 115);
+  color: var(--text-strong, rgb(115, 115, 115));
   content: "#1";
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-size: 25.2px;
-  font-weight: 100;
-  letter-spacing: -0.54px;
-  line-height: 37.8px;
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h1-size, 25.2px);
+  font-weight: var(--font-h1-weight, 100);
+  letter-spacing: var(--h1-letter-spacing, -0.54px);
+  line-height: var(--h1-line-height, 37.8px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6.3px;
@@ -511,9 +730,9 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
-  color: rgb(245, 245, 245);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-weight: 900;
+  color: var(--font-strong-color, rgb(245, 245, 245));
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-strong-weight, 900);
   outline: rgb(245, 245, 245) none 0px;
   text-decoration: 1px rgb(245, 245, 245);
   text-decoration-color: rgb(245, 245, 245);
@@ -521,8 +740,9 @@ html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"]
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
-  color: rgb(212, 212, 212);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--font-em-color, rgb(212, 212, 212));
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-em-weight, 400);
   outline: rgb(212, 212, 212) none 0px;
   text-decoration: 1px rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
@@ -530,8 +750,9 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
-  color: rgb(212, 212, 212);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--font-em-color, rgb(212, 212, 212));
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-em-weight, 400);
   outline: rgb(212, 212, 212) none 0px;
   text-decoration: 1px rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
@@ -539,9 +760,9 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
-  color: rgb(245, 245, 245);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-weight: 900;
+  color: var(--font-strong-color, rgb(245, 245, 245));
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-strong-weight, 900);
   outline: rgb(245, 245, 245) none 0px;
   text-decoration: 1px rgb(245, 245, 245);
   text-decoration-color: rgb(245, 245, 245);
@@ -549,9 +770,10 @@ html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="d
 }
 
 html[saved-theme="dark"] body .text-highlight {
-  background-color: rgb(230, 230, 230);
-  color: rgb(10, 10, 10);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  background-color: var(--font-highlight-bg-color, rgb(230, 230, 230));
+  color: var(--font-highlight-color, rgb(10, 10, 10));
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-highlight-weight, 400);
   outline: rgb(10, 10, 10) none 0px;
   text-decoration: 2px rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
@@ -559,8 +781,9 @@ html[saved-theme="dark"] body .text-highlight {
 }
 
 html[saved-theme="dark"] body del {
-  color: rgb(115, 115, 115);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--font-strikethrough-color, rgb(115, 115, 115));
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-strikethrough-weight, 400);
   outline: rgb(115, 115, 115) none 0px;
   text-decoration: line-through 2px rgb(115, 115, 115);
   text-decoration-color: rgb(115, 115, 115);
@@ -568,13 +791,265 @@ html[saved-theme="dark"] body del {
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(245, 245, 245);
+  color: var(--text-strong, rgb(245, 245, 245));
   text-decoration: underline;
 }
 
 html[saved-theme="dark"] body h2 {
-  --font-weight: 680;
-  background-color: rgba(0, 0, 0, 0);
+  --background-modifier-active-hover: #404040;
+  --background-modifier-border: #363636;
+  --background-modifier-border-focus: #404040;
+  --background-modifier-border-hover: #3f3f3f;
+  --background-modifier-error: #fb464c;
+  --background-modifier-error-hover: #fb464c;
+  --background-modifier-error-rgb: #ef4444;
+  --background-modifier-form-field: #2a2a2a;
+  --background-modifier-form-field-hover: #2a2a2a;
+  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-success: #44cf6e;
+  --background-modifier-success-rgb: 68, 207, 110;
+  --background-primary: #0a0a0a;
+  --background-primary-alt: #262626;
+  --background-secondary: #171717;
+  --background-secondary-alt: #404040;
+  --blockquote-border-color: hsl(0, 0%, 80%);
+  --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-bug: 251, 70, 76;
+  --callout-default: 2, 122, 255;
+  --callout-error: 251, 70, 76;
+  --callout-example: 168, 130, 255;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-info: 2, 122, 255;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 233, 151, 63;
+  --callout-radius: 0.125em;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
+  --callout-title-weight: 600;
+  --callout-todo: 2, 122, 255;
+  --callout-warning: 233, 151, 63;
+  --canvas-background: #0a0a0a;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 0.125em;
+  --canvas-dot-pattern: #363636;
+  --caret-color: #d4d4d4;
+  --checkbox-border-color: #b3b3b3;
+  --checkbox-border-color-hover: #737373;
+  --checkbox-color: #22c55e;
+  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
+  --checkbox-marker-color: #0a0a0a;
+  --checkbox-radius: 0.125em;
+  --checkbox-size: 16px;
+  --checklist-done-color: #737373;
+  --clickable-icon-radius: 0.125em;
+  --code-background: #262626;
+  --code-border-color: #363636;
+  --code-bracket-background: rgba(255, 255, 255, 0.067);
+  --code-comment: #666666;
+  --code-function: #e0de71;
+  --code-important: #e9973f;
+  --code-keyword: #fa99cd;
+  --code-normal: #d4d4d4;
+  --code-operator: #fb464c;
+  --code-property: #53dfdd;
+  --code-punctuation: #737373;
+  --code-radius: 0.125em;
+  --code-size: 0.875em;
+  --code-string: #44cf6e;
+  --code-tag: #fb464c;
+  --code-value: #a882ff;
+  --collapse-icon-color: #666666;
+  --collapse-icon-color-collapsed: hsl(0, 0%, 90%);
+  --color-accent: hsl(0, 0%, 90%);
+  --color-accent-1: hsl(0, 0%, 90%);
+  --color-accent-2: hsl(-5, 0%, 116.1%);
+  --color-accent-hsl: 0, 0%, 90%;
+  --divider-color: #404040;
+  --divider-color-hover: hsl(0, 0%, 80%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #363636;
+  --dropdown-background-hover: rgb(163 163 163 / 0.2);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #363636;
+  --flair-color: #d4d4d4;
+  --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-weight: var(--h2-weight, 680);
+  --graph-line: #3f3f3f;
+  --graph-node: #737373;
+  --graph-node-attachment: #e0de71;
+  --graph-node-focused: hsl(0, 0%, 90%);
+  --graph-node-tag: #44cf6e;
+  --graph-node-unresolved: #666666;
+  --graph-text: #d4d4d4;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #666666;
+  --heading-spacing: 2.5rem;
+  --hr-color: #363636;
+  --interactive-accent: hsl(0, 0%, 80%);
+  --interactive-accent-hover: hsl(0, 0%, 85%);
+  --interactive-accent-hsl: 0, 0%, 90%;
+  --interactive-hover: rgb(163 163 163 / 0.2);
+  --interactive-normal: #363636;
+  --link-color: hsl(0, 0%, 85%);
+  --link-color-hover: hsl(0, 0%, 85%);
+  --link-external-color: hsl(0, 0%, 85%);
+  --link-external-color-hover: hsl(0, 0%, 85%);
+  --link-unresolved-color: hsla(0, 0%, 90%, 0.9);
+  --link-unresolved-decoration-color: hsla(hsla(0, 0%, 90%, 0.9), 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: #171717;
+  --menu-border-color: #3f3f3f;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --pdf-background: #0a0a0a;
+  --pdf-page-background: #0a0a0a;
+  --pdf-shadow: 0 0 0 1px #363636;
+  --pdf-sidebar-background: #0a0a0a;
+  --pdf-thumbnail-shadow: 0 0 0 1px #363636;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: #737373;
+  --search-icon-color: #737373;
+  --search-result-background: #0a0a0a;
+  --setting-group-heading-color: #d4d4d4;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #262626;
+  --setting-items-border-color: #363636;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: #737373;
+  --shiki-code-background: #262626;
+  --shiki-code-block-border-radius: 0.125em;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #666666;
+  --shiki-code-function: #44cf6e;
+  --shiki-code-important: #e9973f;
+  --shiki-code-keyword: #fa99cd;
+  --shiki-code-normal: #737373;
+  --shiki-code-property: #53dfdd;
+  --shiki-code-punctuation: #737373;
+  --shiki-code-string: #e0de71;
+  --shiki-code-value: #a882ff;
+  --shiki-gutter-border-color: #363636;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #666666;
+  --shiki-gutter-text-color-highlight: #737373;
+  --shiki-highlight-green: rgba(68, 207, 110, 0.5);
+  --shiki-highlight-green-background: rgba(68, 207, 110, 0.1);
+  --shiki-highlight-neutral: #737373;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
+  --shiki-highlight-red: rgba(251, 70, 76, 0.5);
+  --shiki-highlight-red-background: rgba(251, 70, 76, 0.1);
+  --shiki-terminal-dots-color: #666666;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #0a0a0a;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --sync-avatar-color-1: #fb464c;
+  --sync-avatar-color-2: #e9973f;
+  --sync-avatar-color-3: #e0de71;
+  --sync-avatar-color-4: #44cf6e;
+  --sync-avatar-color-5: #53dfdd;
+  --sync-avatar-color-6: #027aff;
+  --sync-avatar-color-7: #a882ff;
+  --sync-avatar-color-8: #fa99cd;
+  --tab-background-active: #0a0a0a;
+  --tab-divider-color: #3f3f3f;
+  --tab-font-size: 13px;
+  --tab-outline-color: #404040;
+  --tab-radius: 0.125em;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #171717;
+  --tab-switcher-menubar-background: linear-gradient(to top, #171717, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 90%);
+  --tab-text-color: #666666;
+  --tab-text-color-active: #737373;
+  --tab-text-color-focused: #737373;
+  --tab-text-color-focused-active: #737373;
+  --tab-text-color-focused-active-current: #d4d4d4;
+  --tab-text-color-focused-highlighted: hsl(0, 0%, 90%);
+  --table-add-button-border-color: #363636;
+  --table-add-button-border-width: 1px;
+  --table-border-color: #363636;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(0, 0%, 80%);
+  --table-drag-handle-color: #666666;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: #363636;
+  --table-header-border-width: 1px;
+  --table-header-color: #d4d4d4;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(0, 0%, 90%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(0, 0%, 80%);
+  --table-text-size: 16px;
+  --tag-background: hsla(0, 0%, 90%, 0.1);
+  --tag-background-hover: hsla(0, 0%, 90%, 0.2);
+  --tag-border-color: hsla(0, 0%, 90%, 0.15);
+  --tag-border-color-hover: hsla(0, 0%, 90%, 0.15);
+  --tag-color: hsl(0, 0%, 90%);
+  --tag-color-hover: hsl(0, 0%, 90%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(0, 0%, 90%);
+  --text-accent-hover: #f5f5f5;
+  --text-error: #fb464c;
+  --text-faint: #666666;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #737373;
+  --text-normal: #d4d4d4;
+  --text-selection: rgb(163 163 163 / 0.2);
+  --text-success: #44cf6e;
+  --text-warning: #e9973f;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -587,17 +1062,17 @@ html[saved-theme="dark"] body h2 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(115, 115, 115);
+  color: var(--h2-color, rgb(115, 115, 115));
   content: "#2";
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-size: 21px;
-  font-weight: 100;
-  letter-spacing: -0.33px;
-  line-height: 31.5px;
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h2-size, 21px);
+  font-weight: var(--font-h2-weight, 100);
+  letter-spacing: var(--h2-letter-spacing, -0.33px);
+  line-height: var(--h2-line-height, 31.5px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 5.25px;
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -605,8 +1080,260 @@ html[saved-theme="dark"] body h2 {
 }
 
 html[saved-theme="dark"] body h3 {
-  --font-weight: 660;
-  background-color: rgba(0, 0, 0, 0);
+  --background-modifier-active-hover: #404040;
+  --background-modifier-border: #363636;
+  --background-modifier-border-focus: #404040;
+  --background-modifier-border-hover: #3f3f3f;
+  --background-modifier-error: #fb464c;
+  --background-modifier-error-hover: #fb464c;
+  --background-modifier-error-rgb: #ef4444;
+  --background-modifier-form-field: #2a2a2a;
+  --background-modifier-form-field-hover: #2a2a2a;
+  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-success: #44cf6e;
+  --background-modifier-success-rgb: 68, 207, 110;
+  --background-primary: #0a0a0a;
+  --background-primary-alt: #262626;
+  --background-secondary: #171717;
+  --background-secondary-alt: #404040;
+  --blockquote-border-color: hsl(0, 0%, 80%);
+  --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-bug: 251, 70, 76;
+  --callout-default: 2, 122, 255;
+  --callout-error: 251, 70, 76;
+  --callout-example: 168, 130, 255;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-info: 2, 122, 255;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 233, 151, 63;
+  --callout-radius: 0.125em;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
+  --callout-title-weight: 600;
+  --callout-todo: 2, 122, 255;
+  --callout-warning: 233, 151, 63;
+  --canvas-background: #0a0a0a;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 0.125em;
+  --canvas-dot-pattern: #363636;
+  --caret-color: #d4d4d4;
+  --checkbox-border-color: #b3b3b3;
+  --checkbox-border-color-hover: #737373;
+  --checkbox-color: #22c55e;
+  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
+  --checkbox-marker-color: #0a0a0a;
+  --checkbox-radius: 0.125em;
+  --checkbox-size: 16px;
+  --checklist-done-color: #737373;
+  --clickable-icon-radius: 0.125em;
+  --code-background: #262626;
+  --code-border-color: #363636;
+  --code-bracket-background: rgba(255, 255, 255, 0.067);
+  --code-comment: #666666;
+  --code-function: #e0de71;
+  --code-important: #e9973f;
+  --code-keyword: #fa99cd;
+  --code-normal: #d4d4d4;
+  --code-operator: #fb464c;
+  --code-property: #53dfdd;
+  --code-punctuation: #737373;
+  --code-radius: 0.125em;
+  --code-size: 0.875em;
+  --code-string: #44cf6e;
+  --code-tag: #fb464c;
+  --code-value: #a882ff;
+  --collapse-icon-color: #666666;
+  --collapse-icon-color-collapsed: hsl(0, 0%, 90%);
+  --color-accent: hsl(0, 0%, 90%);
+  --color-accent-1: hsl(0, 0%, 90%);
+  --color-accent-2: hsl(-5, 0%, 116.1%);
+  --color-accent-hsl: 0, 0%, 90%;
+  --divider-color: #404040;
+  --divider-color-hover: hsl(0, 0%, 80%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #363636;
+  --dropdown-background-hover: rgb(163 163 163 / 0.2);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #363636;
+  --flair-color: #d4d4d4;
+  --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-weight: var(--h3-weight, 660);
+  --graph-line: #3f3f3f;
+  --graph-node: #737373;
+  --graph-node-attachment: #e0de71;
+  --graph-node-focused: hsl(0, 0%, 90%);
+  --graph-node-tag: #44cf6e;
+  --graph-node-unresolved: #666666;
+  --graph-text: #d4d4d4;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #666666;
+  --heading-spacing: 2.5rem;
+  --hr-color: #363636;
+  --interactive-accent: hsl(0, 0%, 80%);
+  --interactive-accent-hover: hsl(0, 0%, 85%);
+  --interactive-accent-hsl: 0, 0%, 90%;
+  --interactive-hover: rgb(163 163 163 / 0.2);
+  --interactive-normal: #363636;
+  --link-color: hsl(0, 0%, 85%);
+  --link-color-hover: hsl(0, 0%, 85%);
+  --link-external-color: hsl(0, 0%, 85%);
+  --link-external-color-hover: hsl(0, 0%, 85%);
+  --link-unresolved-color: hsla(0, 0%, 90%, 0.9);
+  --link-unresolved-decoration-color: hsla(hsla(0, 0%, 90%, 0.9), 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: #171717;
+  --menu-border-color: #3f3f3f;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --pdf-background: #0a0a0a;
+  --pdf-page-background: #0a0a0a;
+  --pdf-shadow: 0 0 0 1px #363636;
+  --pdf-sidebar-background: #0a0a0a;
+  --pdf-thumbnail-shadow: 0 0 0 1px #363636;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: #737373;
+  --search-icon-color: #737373;
+  --search-result-background: #0a0a0a;
+  --setting-group-heading-color: #d4d4d4;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #262626;
+  --setting-items-border-color: #363636;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: #737373;
+  --shiki-code-background: #262626;
+  --shiki-code-block-border-radius: 0.125em;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #666666;
+  --shiki-code-function: #44cf6e;
+  --shiki-code-important: #e9973f;
+  --shiki-code-keyword: #fa99cd;
+  --shiki-code-normal: #737373;
+  --shiki-code-property: #53dfdd;
+  --shiki-code-punctuation: #737373;
+  --shiki-code-string: #e0de71;
+  --shiki-code-value: #a882ff;
+  --shiki-gutter-border-color: #363636;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #666666;
+  --shiki-gutter-text-color-highlight: #737373;
+  --shiki-highlight-green: rgba(68, 207, 110, 0.5);
+  --shiki-highlight-green-background: rgba(68, 207, 110, 0.1);
+  --shiki-highlight-neutral: #737373;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
+  --shiki-highlight-red: rgba(251, 70, 76, 0.5);
+  --shiki-highlight-red-background: rgba(251, 70, 76, 0.1);
+  --shiki-terminal-dots-color: #666666;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #0a0a0a;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --sync-avatar-color-1: #fb464c;
+  --sync-avatar-color-2: #e9973f;
+  --sync-avatar-color-3: #e0de71;
+  --sync-avatar-color-4: #44cf6e;
+  --sync-avatar-color-5: #53dfdd;
+  --sync-avatar-color-6: #027aff;
+  --sync-avatar-color-7: #a882ff;
+  --sync-avatar-color-8: #fa99cd;
+  --tab-background-active: #0a0a0a;
+  --tab-divider-color: #3f3f3f;
+  --tab-font-size: 13px;
+  --tab-outline-color: #404040;
+  --tab-radius: 0.125em;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #171717;
+  --tab-switcher-menubar-background: linear-gradient(to top, #171717, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 90%);
+  --tab-text-color: #666666;
+  --tab-text-color-active: #737373;
+  --tab-text-color-focused: #737373;
+  --tab-text-color-focused-active: #737373;
+  --tab-text-color-focused-active-current: #d4d4d4;
+  --tab-text-color-focused-highlighted: hsl(0, 0%, 90%);
+  --table-add-button-border-color: #363636;
+  --table-add-button-border-width: 1px;
+  --table-border-color: #363636;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(0, 0%, 80%);
+  --table-drag-handle-color: #666666;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: #363636;
+  --table-header-border-width: 1px;
+  --table-header-color: #d4d4d4;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(0, 0%, 90%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(0, 0%, 80%);
+  --table-text-size: 16px;
+  --tag-background: hsla(0, 0%, 90%, 0.1);
+  --tag-background-hover: hsla(0, 0%, 90%, 0.2);
+  --tag-border-color: hsla(0, 0%, 90%, 0.15);
+  --tag-border-color-hover: hsla(0, 0%, 90%, 0.15);
+  --tag-color: hsl(0, 0%, 90%);
+  --tag-color-hover: hsl(0, 0%, 90%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(0, 0%, 90%);
+  --text-accent-hover: #f5f5f5;
+  --text-error: #fb464c;
+  --text-faint: #666666;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #737373;
+  --text-normal: #d4d4d4;
+  --text-selection: rgb(163 163 163 / 0.2);
+  --text-success: #44cf6e;
+  --text-warning: #e9973f;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -619,17 +1346,17 @@ html[saved-theme="dark"] body h3 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(115, 115, 115);
+  color: var(--h3-color, rgb(115, 115, 115));
   content: "#3";
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-size: 16.8px;
-  font-weight: 100;
-  letter-spacing: -0.192px;
-  line-height: 25.2px;
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h3-size, 16.8px);
+  font-weight: var(--font-h3-weight, 100);
+  letter-spacing: var(--h3-letter-spacing, -0.192px);
+  line-height: var(--h3-line-height, 25.2px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 4.2px;
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -637,8 +1364,260 @@ html[saved-theme="dark"] body h3 {
 }
 
 html[saved-theme="dark"] body h4 {
-  --font-weight: 640;
-  background-color: rgba(0, 0, 0, 0);
+  --background-modifier-active-hover: #404040;
+  --background-modifier-border: #363636;
+  --background-modifier-border-focus: #404040;
+  --background-modifier-border-hover: #3f3f3f;
+  --background-modifier-error: #fb464c;
+  --background-modifier-error-hover: #fb464c;
+  --background-modifier-error-rgb: #ef4444;
+  --background-modifier-form-field: #2a2a2a;
+  --background-modifier-form-field-hover: #2a2a2a;
+  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-success: #44cf6e;
+  --background-modifier-success-rgb: 68, 207, 110;
+  --background-primary: #0a0a0a;
+  --background-primary-alt: #262626;
+  --background-secondary: #171717;
+  --background-secondary-alt: #404040;
+  --blockquote-border-color: hsl(0, 0%, 80%);
+  --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-bug: 251, 70, 76;
+  --callout-default: 2, 122, 255;
+  --callout-error: 251, 70, 76;
+  --callout-example: 168, 130, 255;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-info: 2, 122, 255;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 233, 151, 63;
+  --callout-radius: 0.125em;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
+  --callout-title-weight: 600;
+  --callout-todo: 2, 122, 255;
+  --callout-warning: 233, 151, 63;
+  --canvas-background: #0a0a0a;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 0.125em;
+  --canvas-dot-pattern: #363636;
+  --caret-color: #d4d4d4;
+  --checkbox-border-color: #b3b3b3;
+  --checkbox-border-color-hover: #737373;
+  --checkbox-color: #22c55e;
+  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
+  --checkbox-marker-color: #0a0a0a;
+  --checkbox-radius: 0.125em;
+  --checkbox-size: 16px;
+  --checklist-done-color: #737373;
+  --clickable-icon-radius: 0.125em;
+  --code-background: #262626;
+  --code-border-color: #363636;
+  --code-bracket-background: rgba(255, 255, 255, 0.067);
+  --code-comment: #666666;
+  --code-function: #e0de71;
+  --code-important: #e9973f;
+  --code-keyword: #fa99cd;
+  --code-normal: #d4d4d4;
+  --code-operator: #fb464c;
+  --code-property: #53dfdd;
+  --code-punctuation: #737373;
+  --code-radius: 0.125em;
+  --code-size: 0.875em;
+  --code-string: #44cf6e;
+  --code-tag: #fb464c;
+  --code-value: #a882ff;
+  --collapse-icon-color: #666666;
+  --collapse-icon-color-collapsed: hsl(0, 0%, 90%);
+  --color-accent: hsl(0, 0%, 90%);
+  --color-accent-1: hsl(0, 0%, 90%);
+  --color-accent-2: hsl(-5, 0%, 116.1%);
+  --color-accent-hsl: 0, 0%, 90%;
+  --divider-color: #404040;
+  --divider-color-hover: hsl(0, 0%, 80%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #363636;
+  --dropdown-background-hover: rgb(163 163 163 / 0.2);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #363636;
+  --flair-color: #d4d4d4;
+  --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-weight: var(--h4-weight, 640);
+  --graph-line: #3f3f3f;
+  --graph-node: #737373;
+  --graph-node-attachment: #e0de71;
+  --graph-node-focused: hsl(0, 0%, 90%);
+  --graph-node-tag: #44cf6e;
+  --graph-node-unresolved: #666666;
+  --graph-text: #d4d4d4;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #666666;
+  --heading-spacing: 2.5rem;
+  --hr-color: #363636;
+  --interactive-accent: hsl(0, 0%, 80%);
+  --interactive-accent-hover: hsl(0, 0%, 85%);
+  --interactive-accent-hsl: 0, 0%, 90%;
+  --interactive-hover: rgb(163 163 163 / 0.2);
+  --interactive-normal: #363636;
+  --link-color: hsl(0, 0%, 85%);
+  --link-color-hover: hsl(0, 0%, 85%);
+  --link-external-color: hsl(0, 0%, 85%);
+  --link-external-color-hover: hsl(0, 0%, 85%);
+  --link-unresolved-color: hsla(0, 0%, 90%, 0.9);
+  --link-unresolved-decoration-color: hsla(hsla(0, 0%, 90%, 0.9), 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: #171717;
+  --menu-border-color: #3f3f3f;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --pdf-background: #0a0a0a;
+  --pdf-page-background: #0a0a0a;
+  --pdf-shadow: 0 0 0 1px #363636;
+  --pdf-sidebar-background: #0a0a0a;
+  --pdf-thumbnail-shadow: 0 0 0 1px #363636;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: #737373;
+  --search-icon-color: #737373;
+  --search-result-background: #0a0a0a;
+  --setting-group-heading-color: #d4d4d4;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #262626;
+  --setting-items-border-color: #363636;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: #737373;
+  --shiki-code-background: #262626;
+  --shiki-code-block-border-radius: 0.125em;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #666666;
+  --shiki-code-function: #44cf6e;
+  --shiki-code-important: #e9973f;
+  --shiki-code-keyword: #fa99cd;
+  --shiki-code-normal: #737373;
+  --shiki-code-property: #53dfdd;
+  --shiki-code-punctuation: #737373;
+  --shiki-code-string: #e0de71;
+  --shiki-code-value: #a882ff;
+  --shiki-gutter-border-color: #363636;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #666666;
+  --shiki-gutter-text-color-highlight: #737373;
+  --shiki-highlight-green: rgba(68, 207, 110, 0.5);
+  --shiki-highlight-green-background: rgba(68, 207, 110, 0.1);
+  --shiki-highlight-neutral: #737373;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
+  --shiki-highlight-red: rgba(251, 70, 76, 0.5);
+  --shiki-highlight-red-background: rgba(251, 70, 76, 0.1);
+  --shiki-terminal-dots-color: #666666;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #0a0a0a;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --sync-avatar-color-1: #fb464c;
+  --sync-avatar-color-2: #e9973f;
+  --sync-avatar-color-3: #e0de71;
+  --sync-avatar-color-4: #44cf6e;
+  --sync-avatar-color-5: #53dfdd;
+  --sync-avatar-color-6: #027aff;
+  --sync-avatar-color-7: #a882ff;
+  --sync-avatar-color-8: #fa99cd;
+  --tab-background-active: #0a0a0a;
+  --tab-divider-color: #3f3f3f;
+  --tab-font-size: 13px;
+  --tab-outline-color: #404040;
+  --tab-radius: 0.125em;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #171717;
+  --tab-switcher-menubar-background: linear-gradient(to top, #171717, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 90%);
+  --tab-text-color: #666666;
+  --tab-text-color-active: #737373;
+  --tab-text-color-focused: #737373;
+  --tab-text-color-focused-active: #737373;
+  --tab-text-color-focused-active-current: #d4d4d4;
+  --tab-text-color-focused-highlighted: hsl(0, 0%, 90%);
+  --table-add-button-border-color: #363636;
+  --table-add-button-border-width: 1px;
+  --table-border-color: #363636;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(0, 0%, 80%);
+  --table-drag-handle-color: #666666;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: #363636;
+  --table-header-border-width: 1px;
+  --table-header-color: #d4d4d4;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(0, 0%, 90%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(0, 0%, 80%);
+  --table-text-size: 16px;
+  --tag-background: hsla(0, 0%, 90%, 0.1);
+  --tag-background-hover: hsla(0, 0%, 90%, 0.2);
+  --tag-border-color: hsla(0, 0%, 90%, 0.15);
+  --tag-border-color-hover: hsla(0, 0%, 90%, 0.15);
+  --tag-color: hsl(0, 0%, 90%);
+  --tag-color-hover: hsl(0, 0%, 90%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(0, 0%, 90%);
+  --text-accent-hover: #f5f5f5;
+  --text-error: #fb464c;
+  --text-faint: #666666;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #737373;
+  --text-normal: #d4d4d4;
+  --text-selection: rgb(163 163 163 / 0.2);
+  --text-success: #44cf6e;
+  --text-warning: #e9973f;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -651,17 +1630,17 @@ html[saved-theme="dark"] body h4 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(115, 115, 115);
+  color: var(--h4-color, rgb(115, 115, 115));
   content: "#4";
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 100;
-  letter-spacing: -0.1px;
-  line-height: 21px;
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h4-size, 14px);
+  font-weight: var(--font-h4-weight, 100);
+  letter-spacing: var(--h4-letter-spacing, -0.1px);
+  line-height: var(--h4-line-height, 21px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 3.5px;
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -669,8 +1648,260 @@ html[saved-theme="dark"] body h4 {
 }
 
 html[saved-theme="dark"] body h5 {
-  --font-weight: 620;
-  background-color: rgba(0, 0, 0, 0);
+  --background-modifier-active-hover: #404040;
+  --background-modifier-border: #363636;
+  --background-modifier-border-focus: #404040;
+  --background-modifier-border-hover: #3f3f3f;
+  --background-modifier-error: #fb464c;
+  --background-modifier-error-hover: #fb464c;
+  --background-modifier-error-rgb: #ef4444;
+  --background-modifier-form-field: #2a2a2a;
+  --background-modifier-form-field-hover: #2a2a2a;
+  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-success: #44cf6e;
+  --background-modifier-success-rgb: 68, 207, 110;
+  --background-primary: #0a0a0a;
+  --background-primary-alt: #262626;
+  --background-secondary: #171717;
+  --background-secondary-alt: #404040;
+  --blockquote-border-color: hsl(0, 0%, 80%);
+  --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-bug: 251, 70, 76;
+  --callout-default: 2, 122, 255;
+  --callout-error: 251, 70, 76;
+  --callout-example: 168, 130, 255;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-info: 2, 122, 255;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 233, 151, 63;
+  --callout-radius: 0.125em;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
+  --callout-title-weight: 600;
+  --callout-todo: 2, 122, 255;
+  --callout-warning: 233, 151, 63;
+  --canvas-background: #0a0a0a;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 0.125em;
+  --canvas-dot-pattern: #363636;
+  --caret-color: #d4d4d4;
+  --checkbox-border-color: #b3b3b3;
+  --checkbox-border-color-hover: #737373;
+  --checkbox-color: #22c55e;
+  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
+  --checkbox-marker-color: #0a0a0a;
+  --checkbox-radius: 0.125em;
+  --checkbox-size: 16px;
+  --checklist-done-color: #737373;
+  --clickable-icon-radius: 0.125em;
+  --code-background: #262626;
+  --code-border-color: #363636;
+  --code-bracket-background: rgba(255, 255, 255, 0.067);
+  --code-comment: #666666;
+  --code-function: #e0de71;
+  --code-important: #e9973f;
+  --code-keyword: #fa99cd;
+  --code-normal: #d4d4d4;
+  --code-operator: #fb464c;
+  --code-property: #53dfdd;
+  --code-punctuation: #737373;
+  --code-radius: 0.125em;
+  --code-size: 0.875em;
+  --code-string: #44cf6e;
+  --code-tag: #fb464c;
+  --code-value: #a882ff;
+  --collapse-icon-color: #666666;
+  --collapse-icon-color-collapsed: hsl(0, 0%, 90%);
+  --color-accent: hsl(0, 0%, 90%);
+  --color-accent-1: hsl(0, 0%, 90%);
+  --color-accent-2: hsl(-5, 0%, 116.1%);
+  --color-accent-hsl: 0, 0%, 90%;
+  --divider-color: #404040;
+  --divider-color-hover: hsl(0, 0%, 80%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #363636;
+  --dropdown-background-hover: rgb(163 163 163 / 0.2);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #363636;
+  --flair-color: #d4d4d4;
+  --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-weight: var(--h5-weight, 620);
+  --graph-line: #3f3f3f;
+  --graph-node: #737373;
+  --graph-node-attachment: #e0de71;
+  --graph-node-focused: hsl(0, 0%, 90%);
+  --graph-node-tag: #44cf6e;
+  --graph-node-unresolved: #666666;
+  --graph-text: #d4d4d4;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #666666;
+  --heading-spacing: 2.5rem;
+  --hr-color: #363636;
+  --interactive-accent: hsl(0, 0%, 80%);
+  --interactive-accent-hover: hsl(0, 0%, 85%);
+  --interactive-accent-hsl: 0, 0%, 90%;
+  --interactive-hover: rgb(163 163 163 / 0.2);
+  --interactive-normal: #363636;
+  --link-color: hsl(0, 0%, 85%);
+  --link-color-hover: hsl(0, 0%, 85%);
+  --link-external-color: hsl(0, 0%, 85%);
+  --link-external-color-hover: hsl(0, 0%, 85%);
+  --link-unresolved-color: hsla(0, 0%, 90%, 0.9);
+  --link-unresolved-decoration-color: hsla(hsla(0, 0%, 90%, 0.9), 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: #171717;
+  --menu-border-color: #3f3f3f;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --pdf-background: #0a0a0a;
+  --pdf-page-background: #0a0a0a;
+  --pdf-shadow: 0 0 0 1px #363636;
+  --pdf-sidebar-background: #0a0a0a;
+  --pdf-thumbnail-shadow: 0 0 0 1px #363636;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: #737373;
+  --search-icon-color: #737373;
+  --search-result-background: #0a0a0a;
+  --setting-group-heading-color: #d4d4d4;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #262626;
+  --setting-items-border-color: #363636;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: #737373;
+  --shiki-code-background: #262626;
+  --shiki-code-block-border-radius: 0.125em;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #666666;
+  --shiki-code-function: #44cf6e;
+  --shiki-code-important: #e9973f;
+  --shiki-code-keyword: #fa99cd;
+  --shiki-code-normal: #737373;
+  --shiki-code-property: #53dfdd;
+  --shiki-code-punctuation: #737373;
+  --shiki-code-string: #e0de71;
+  --shiki-code-value: #a882ff;
+  --shiki-gutter-border-color: #363636;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #666666;
+  --shiki-gutter-text-color-highlight: #737373;
+  --shiki-highlight-green: rgba(68, 207, 110, 0.5);
+  --shiki-highlight-green-background: rgba(68, 207, 110, 0.1);
+  --shiki-highlight-neutral: #737373;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
+  --shiki-highlight-red: rgba(251, 70, 76, 0.5);
+  --shiki-highlight-red-background: rgba(251, 70, 76, 0.1);
+  --shiki-terminal-dots-color: #666666;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #0a0a0a;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --sync-avatar-color-1: #fb464c;
+  --sync-avatar-color-2: #e9973f;
+  --sync-avatar-color-3: #e0de71;
+  --sync-avatar-color-4: #44cf6e;
+  --sync-avatar-color-5: #53dfdd;
+  --sync-avatar-color-6: #027aff;
+  --sync-avatar-color-7: #a882ff;
+  --sync-avatar-color-8: #fa99cd;
+  --tab-background-active: #0a0a0a;
+  --tab-divider-color: #3f3f3f;
+  --tab-font-size: 13px;
+  --tab-outline-color: #404040;
+  --tab-radius: 0.125em;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #171717;
+  --tab-switcher-menubar-background: linear-gradient(to top, #171717, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 90%);
+  --tab-text-color: #666666;
+  --tab-text-color-active: #737373;
+  --tab-text-color-focused: #737373;
+  --tab-text-color-focused-active: #737373;
+  --tab-text-color-focused-active-current: #d4d4d4;
+  --tab-text-color-focused-highlighted: hsl(0, 0%, 90%);
+  --table-add-button-border-color: #363636;
+  --table-add-button-border-width: 1px;
+  --table-border-color: #363636;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(0, 0%, 80%);
+  --table-drag-handle-color: #666666;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: #363636;
+  --table-header-border-width: 1px;
+  --table-header-color: #d4d4d4;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(0, 0%, 90%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(0, 0%, 80%);
+  --table-text-size: 16px;
+  --tag-background: hsla(0, 0%, 90%, 0.1);
+  --tag-background-hover: hsla(0, 0%, 90%, 0.2);
+  --tag-border-color: hsla(0, 0%, 90%, 0.15);
+  --tag-border-color-hover: hsla(0, 0%, 90%, 0.15);
+  --tag-color: hsl(0, 0%, 90%);
+  --tag-color-hover: hsl(0, 0%, 90%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(0, 0%, 90%);
+  --text-accent-hover: #f5f5f5;
+  --text-error: #fb464c;
+  --text-faint: #666666;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #737373;
+  --text-normal: #d4d4d4;
+  --text-selection: rgb(163 163 163 / 0.2);
+  --text-success: #44cf6e;
+  --text-warning: #e9973f;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -683,17 +1914,17 @@ html[saved-theme="dark"] body h5 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(115, 115, 115);
+  color: var(--h5-color, rgb(115, 115, 115));
   content: "#5";
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-size: 12.6px;
-  font-weight: 100;
-  letter-spacing: -0.036px;
-  line-height: 18.9px;
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h5-size, 12.6px);
+  font-weight: var(--font-h5-weight, 100);
+  letter-spacing: var(--h5-letter-spacing, -0.036px);
+  line-height: var(--h5-line-height, 18.9px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 3.15px;
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -701,7 +1932,259 @@ html[saved-theme="dark"] body h5 {
 }
 
 html[saved-theme="dark"] body h6 {
-  --font-weight: 600;
+  --background-modifier-active-hover: #404040;
+  --background-modifier-border: #363636;
+  --background-modifier-border-focus: #404040;
+  --background-modifier-border-hover: #3f3f3f;
+  --background-modifier-error: #fb464c;
+  --background-modifier-error-hover: #fb464c;
+  --background-modifier-error-rgb: #ef4444;
+  --background-modifier-form-field: #2a2a2a;
+  --background-modifier-form-field-hover: #2a2a2a;
+  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-success: #44cf6e;
+  --background-modifier-success-rgb: 68, 207, 110;
+  --background-primary: #0a0a0a;
+  --background-primary-alt: #262626;
+  --background-secondary: #171717;
+  --background-secondary-alt: #404040;
+  --blockquote-border-color: hsl(0, 0%, 80%);
+  --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-bug: 251, 70, 76;
+  --callout-default: 2, 122, 255;
+  --callout-error: 251, 70, 76;
+  --callout-example: 168, 130, 255;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-info: 2, 122, 255;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 233, 151, 63;
+  --callout-radius: 0.125em;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
+  --callout-title-weight: 600;
+  --callout-todo: 2, 122, 255;
+  --callout-warning: 233, 151, 63;
+  --canvas-background: #0a0a0a;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 0.125em;
+  --canvas-dot-pattern: #363636;
+  --caret-color: #d4d4d4;
+  --checkbox-border-color: #b3b3b3;
+  --checkbox-border-color-hover: #737373;
+  --checkbox-color: #22c55e;
+  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
+  --checkbox-marker-color: #0a0a0a;
+  --checkbox-radius: 0.125em;
+  --checkbox-size: 16px;
+  --checklist-done-color: #737373;
+  --clickable-icon-radius: 0.125em;
+  --code-background: #262626;
+  --code-border-color: #363636;
+  --code-bracket-background: rgba(255, 255, 255, 0.067);
+  --code-comment: #666666;
+  --code-function: #e0de71;
+  --code-important: #e9973f;
+  --code-keyword: #fa99cd;
+  --code-normal: #d4d4d4;
+  --code-operator: #fb464c;
+  --code-property: #53dfdd;
+  --code-punctuation: #737373;
+  --code-radius: 0.125em;
+  --code-size: 0.875em;
+  --code-string: #44cf6e;
+  --code-tag: #fb464c;
+  --code-value: #a882ff;
+  --collapse-icon-color: #666666;
+  --collapse-icon-color-collapsed: hsl(0, 0%, 90%);
+  --color-accent: hsl(0, 0%, 90%);
+  --color-accent-1: hsl(0, 0%, 90%);
+  --color-accent-2: hsl(-5, 0%, 116.1%);
+  --color-accent-hsl: 0, 0%, 90%;
+  --divider-color: #404040;
+  --divider-color-hover: hsl(0, 0%, 80%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #363636;
+  --dropdown-background-hover: rgb(163 163 163 / 0.2);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #363636;
+  --flair-color: #d4d4d4;
+  --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-weight: var(--h6-weight, 600);
+  --graph-line: #3f3f3f;
+  --graph-node: #737373;
+  --graph-node-attachment: #e0de71;
+  --graph-node-focused: hsl(0, 0%, 90%);
+  --graph-node-tag: #44cf6e;
+  --graph-node-unresolved: #666666;
+  --graph-text: #d4d4d4;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #666666;
+  --heading-spacing: 2.5rem;
+  --hr-color: #363636;
+  --interactive-accent: hsl(0, 0%, 80%);
+  --interactive-accent-hover: hsl(0, 0%, 85%);
+  --interactive-accent-hsl: 0, 0%, 90%;
+  --interactive-hover: rgb(163 163 163 / 0.2);
+  --interactive-normal: #363636;
+  --link-color: hsl(0, 0%, 85%);
+  --link-color-hover: hsl(0, 0%, 85%);
+  --link-external-color: hsl(0, 0%, 85%);
+  --link-external-color-hover: hsl(0, 0%, 85%);
+  --link-unresolved-color: hsla(0, 0%, 90%, 0.9);
+  --link-unresolved-decoration-color: hsla(hsla(0, 0%, 90%, 0.9), 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: #171717;
+  --menu-border-color: #3f3f3f;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --pdf-background: #0a0a0a;
+  --pdf-page-background: #0a0a0a;
+  --pdf-shadow: 0 0 0 1px #363636;
+  --pdf-sidebar-background: #0a0a0a;
+  --pdf-thumbnail-shadow: 0 0 0 1px #363636;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: #737373;
+  --search-icon-color: #737373;
+  --search-result-background: #0a0a0a;
+  --setting-group-heading-color: #d4d4d4;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #262626;
+  --setting-items-border-color: #363636;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: #737373;
+  --shiki-code-background: #262626;
+  --shiki-code-block-border-radius: 0.125em;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #666666;
+  --shiki-code-function: #44cf6e;
+  --shiki-code-important: #e9973f;
+  --shiki-code-keyword: #fa99cd;
+  --shiki-code-normal: #737373;
+  --shiki-code-property: #53dfdd;
+  --shiki-code-punctuation: #737373;
+  --shiki-code-string: #e0de71;
+  --shiki-code-value: #a882ff;
+  --shiki-gutter-border-color: #363636;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #666666;
+  --shiki-gutter-text-color-highlight: #737373;
+  --shiki-highlight-green: rgba(68, 207, 110, 0.5);
+  --shiki-highlight-green-background: rgba(68, 207, 110, 0.1);
+  --shiki-highlight-neutral: #737373;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
+  --shiki-highlight-red: rgba(251, 70, 76, 0.5);
+  --shiki-highlight-red-background: rgba(251, 70, 76, 0.1);
+  --shiki-terminal-dots-color: #666666;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #0a0a0a;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --sync-avatar-color-1: #fb464c;
+  --sync-avatar-color-2: #e9973f;
+  --sync-avatar-color-3: #e0de71;
+  --sync-avatar-color-4: #44cf6e;
+  --sync-avatar-color-5: #53dfdd;
+  --sync-avatar-color-6: #027aff;
+  --sync-avatar-color-7: #a882ff;
+  --sync-avatar-color-8: #fa99cd;
+  --tab-background-active: #0a0a0a;
+  --tab-divider-color: #3f3f3f;
+  --tab-font-size: 13px;
+  --tab-outline-color: #404040;
+  --tab-radius: 0.125em;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #171717;
+  --tab-switcher-menubar-background: linear-gradient(to top, #171717, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 90%);
+  --tab-text-color: #666666;
+  --tab-text-color-active: #737373;
+  --tab-text-color-focused: #737373;
+  --tab-text-color-focused-active: #737373;
+  --tab-text-color-focused-active-current: #d4d4d4;
+  --tab-text-color-focused-highlighted: hsl(0, 0%, 90%);
+  --table-add-button-border-color: #363636;
+  --table-add-button-border-width: 1px;
+  --table-border-color: #363636;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(0, 0%, 80%);
+  --table-drag-handle-color: #666666;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: #363636;
+  --table-header-border-width: 1px;
+  --table-header-color: #d4d4d4;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(0, 0%, 90%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(0, 0%, 80%);
+  --table-text-size: 16px;
+  --tag-background: hsla(0, 0%, 90%, 0.1);
+  --tag-background-hover: hsla(0, 0%, 90%, 0.2);
+  --tag-border-color: hsla(0, 0%, 90%, 0.15);
+  --tag-border-color-hover: hsla(0, 0%, 90%, 0.15);
+  --tag-color: hsl(0, 0%, 90%);
+  --tag-color-hover: hsl(0, 0%, 90%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(0, 0%, 90%);
+  --text-accent-hover: #f5f5f5;
+  --text-error: #fb464c;
+  --text-faint: #666666;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #737373;
+  --text-normal: #d4d4d4;
+  --text-selection: rgb(163 163 163 / 0.2);
+  --text-success: #44cf6e;
+  --text-warning: #e9973f;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 0px;
@@ -715,12 +2198,12 @@ html[saved-theme="dark"] body h6 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(115, 115, 115);
+  color: var(--h6-color, rgb(115, 115, 115));
   content: "#6";
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-size: 11.2px;
-  font-weight: 100;
-  line-height: 16.8px;
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h6-size, 11.2px);
+  font-weight: var(--font-h6-weight, 100);
+  line-height: var(--h6-line-height, 16.8px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 2.8px;
@@ -738,42 +2221,45 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--checkbox-color, rgba(0, 0, 0, 0));
   border-color: rgba(0, 0, 0, 0);
 }
 
 html[saved-theme="dark"] body p {
-  color: rgb(115, 115, 115);
+  color: var(--text-muted, rgb(115, 115, 115));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(115, 115, 115) none 0px;
   text-decoration-color: rgb(115, 115, 115);
 }`,
     links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
-  color: rgb(217, 217, 217);
+  color: var(--link-color, rgb(217, 217, 217));
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  font-weight: var(--font-text-weight, 400);
   outline: rgb(217, 217, 217) none 0px;
   text-decoration: underline 1px rgb(217, 217, 217);
   text-decoration-color: rgb(217, 217, 217);
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: var(--link-decoration-thickness, 1px);
 }
 
 html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(217, 217, 217);
+  color: var(--link-color, rgb(217, 217, 217));
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  font-weight: var(--font-text-weight, 400);
   outline: rgb(217, 217, 217) none 0px;
   text-decoration: underline 1px rgb(217, 217, 217);
   text-decoration-color: rgb(217, 217, 217);
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: var(--link-decoration-thickness, 1px);
 }
 
 html[saved-theme="dark"] body a.internal-link.broken {
-  color: rgba(230, 230, 230, 0.9);
+  color: var(--link-color, rgba(230, 230, 230, 0.9));
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  font-weight: var(--font-text-weight, 400);
   outline: rgba(230, 230, 230, 0.9) none 0px;
   text-decoration: underline 1px dashed;
-  text-decoration-color: rgba(230, 230, 230, 0.9);
-  text-decoration-style: dashed;
-  text-decoration-thickness: 1px;
+  text-decoration-color: var(--link-unresolved-decoration-color, rgba(230, 230, 230, 0.9));
+  text-decoration-style: var(--link-unresolved-decoration-style, dashed);
+  text-decoration-thickness: var(--link-decoration-thickness, 1px);
 }`,
     lists: `html[saved-theme="dark"] body dd {
   color: rgb(212, 212, 212);
@@ -798,12 +2284,12 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-color: rgb(212, 212, 212);
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
-  color: rgb(217, 217, 217);
+  color: var(--link-color, rgb(217, 217, 217));
   text-decoration: underline 1px rgb(217, 217, 217);
 }
 
 html[saved-theme="dark"] body blockquote {
-  background-color: rgba(250, 250, 250, 0.05);
+  background-color: var(--quote-bg-color, rgba(250, 250, 250, 0.05));
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -824,16 +2310,17 @@ html[saved-theme="dark"] body table {
 }
 
 html[saved-theme="dark"] body td {
+  background-color: var(--color-accent-o10, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
   border-top-color: rgb(115, 115, 115);
-  color: rgb(212, 212, 212);
+  color: var(--table-text-color, rgb(212, 212, 212));
   padding-bottom: 8px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 8px;
-  vertical-align: middle;
+  vertical-align: var(--table-cell-vertical-alignment, middle);
 }
 
 html[saved-theme="dark"] body th {
@@ -841,14 +2328,14 @@ html[saved-theme="dark"] body th {
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
-  color: rgb(245, 245, 245);
-  font-weight: 400;
+  color: var(--text-strong, rgb(245, 245, 245));
+  font-weight: var(--table-header-weight, 400);
   padding-bottom: 8px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 8px;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: var(--table-cell-vertical-alignment, middle);
 }
 
 html[saved-theme="dark"] body thead {
@@ -861,7 +2348,7 @@ html[saved-theme="dark"] body tr {
   border-top-color: rgba(0, 0, 0, 0);
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--code-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -870,8 +2357,8 @@ html[saved-theme="dark"] body tr {
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(115, 115, 115);
-  font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  color: var(--ec-codeFg, rgb(115, 115, 115));
+  font-family: var(--ec-codeFontFml, iawriter-mono, Nitti, Menlo, Courier, monospace);
   padding-bottom: 12px;
   padding-left: 0px;
   padding-right: 0px;
@@ -879,7 +2366,7 @@ html[saved-theme="dark"] body tr {
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: rgb(38, 38, 38);
+  background-color: var(--code-bg-color, rgb(38, 38, 38));
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -934,7 +2421,7 @@ html[saved-theme="dark"] body video {
   border-top-color: rgb(212, 212, 212);
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: rgb(38, 38, 38);
+  background-color: var(--background-primary-alt, rgb(38, 38, 38));
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgb(115, 115, 115);
   border-right-color: rgb(115, 115, 115);
@@ -2204,11 +3691,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="check
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(212, 212, 212);
+  color: var(--callout-title-color, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {
@@ -2216,9 +3703,9 @@ html[saved-theme="dark"] body .callout > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: color-mix(in srgb, var(--callout-abstract-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -2236,11 +3723,11 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(212, 212, 212);
+  color: var(--callout-title-color, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-content {
@@ -2248,9 +3735,9 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   background: color(srgb 0.196078 0.101961 0.101961 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.196078 0.101961 0.101961 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-bug-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -2268,11 +3755,11 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(212, 212, 212);
+  color: var(--callout-title-color, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
@@ -2280,9 +3767,9 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   background: color(srgb 0.196078 0.101961 0.101961 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.196078 0.101961 0.101961 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-danger-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -2300,11 +3787,11 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(212, 212, 212);
+  color: var(--callout-title-color, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content {
@@ -2312,9 +3799,9 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   background: color(srgb 0.14902 0.12549 0.188235 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.14902 0.12549 0.188235 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-example-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -2332,11 +3819,11 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(212, 212, 212);
+  color: var(--callout-title-color, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-content {
@@ -2344,9 +3831,9 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   background: color(srgb 0.196078 0.101961 0.101961 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.196078 0.101961 0.101961 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-failure-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -2364,11 +3851,11 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(212, 212, 212);
+  color: var(--callout-title-color, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-content {
@@ -2376,9 +3863,9 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   background: color(srgb 0.0784314 0.12549 0.192157 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.0784314 0.12549 0.192157 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-info-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -2396,11 +3883,11 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(212, 212, 212);
+  color: var(--callout-title-color, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
@@ -2408,9 +3895,9 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   background: color(srgb 0.0784314 0.12549 0.192157 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.0784314 0.12549 0.192157 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-note-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -2428,11 +3915,11 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(212, 212, 212);
+  color: var(--callout-title-color, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
@@ -2440,9 +3927,9 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   background: color(srgb 0.184314 0.141176 0.0980392 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.184314 0.141176 0.0980392 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-question-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -2460,11 +3947,11 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(212, 212, 212);
+  color: var(--callout-title-color, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-content {
@@ -2472,9 +3959,9 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background: color(srgb 0.141176 0.141176 0.141176 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.141176 0.141176 0.141176 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-quote-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -2492,11 +3979,11 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(212, 212, 212);
+  color: var(--callout-title-color, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content {
@@ -2504,9 +3991,9 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   background: color(srgb 0.101961 0.168627 0.117647 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.101961 0.168627 0.117647 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-success-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -2524,11 +4011,11 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(212, 212, 212);
+  color: var(--callout-title-color, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-content {
@@ -2536,9 +4023,9 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   background: color(srgb 0.117647 0.172549 0.172549 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.117647 0.172549 0.172549 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-tip-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -2556,11 +4043,11 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(212, 212, 212);
+  color: var(--callout-title-color, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
@@ -2568,9 +4055,9 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   background: color(srgb 0.0784314 0.12549 0.192157 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.0784314 0.12549 0.192157 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-todo-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -2588,11 +4075,11 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(212, 212, 212);
+  color: var(--callout-title-color, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
@@ -2600,9 +4087,9 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   background: color(srgb 0.184314 0.141176 0.0980392 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.184314 0.141176 0.0980392 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-warning-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -2620,11 +4107,11 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(212, 212, 212);
+  color: var(--callout-title-color, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] > .callout-content {
@@ -2691,12 +4178,12 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-bottom-right-radius: 1.625px;
   border-top-left-radius: 1.625px;
   border-top-right-radius: 1.625px;
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--background-color-glass, rgba(0, 0, 0, 0.8));
   border-bottom-color: rgba(230, 230, 230, 0.6);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2776,7 +4263,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgba(230, 230, 230, 0.5);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -2789,7 +4276,8 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  font-family: var(--font-monospace, iawriter-mono, Nitti, Menlo, Courier, monospace);
+  font-weight: var(--font-tag-weight, 400);
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -2797,44 +4285,44 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
-  color: rgb(212, 212, 212);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--text-strong, rgb(212, 212, 212));
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(245, 245, 245);
-  font-size: 32px;
-  font-weight: 900;
+  color: var(--text-strong, rgb(245, 245, 245));
+  font-size: var(--inline-title-size, 32px);
+  font-weight: var(--inline-title-weight, 900);
 }
 
 html[saved-theme="dark"] body h2 {
-  color: rgb(212, 212, 212);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--h2-color, rgb(212, 212, 212));
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  color: rgb(245, 245, 245);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--text-strong, rgb(245, 245, 245));
+  font-family: var(--inline-title-font, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h3 {
-  color: rgb(212, 212, 212);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--h3-color, rgb(212, 212, 212));
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
-  color: rgb(212, 212, 212);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--h4-color, rgb(212, 212, 212));
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
-  color: rgb(212, 212, 212);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--h5-color, rgb(212, 212, 212));
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
-  color: rgb(212, 212, 212);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--h6-color, rgb(212, 212, 212));
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body hr {
@@ -2843,7 +4331,7 @@ html[saved-theme="dark"] body hr {
   border-right-color: rgb(64, 64, 64);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -2858,16 +4346,22 @@ html[saved-theme="dark"] body hr {
   padding-top: 8px;
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(212, 212, 212);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--text-normal, rgb(212, 212, 212));
+  font-family: var(--font-file-tree, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-file-tree-weight, 400);
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(212, 212, 212);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--text-normal, rgb(212, 212, 212));
+  font-family: var(--font-file-tree, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-file-tree-weight, 400);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(212, 212, 212);
+}
+
+html[saved-theme="dark"] body li.depth-0 {
+  font-weight: var(--font-file-tree-weight, 400);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(115, 115, 115);
@@ -2878,11 +4372,11 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 1.875px;
   border-top-right-radius: 1.875px;
-  color: rgb(115, 115, 115);
-  cursor: pointer;
+  color: var(--text-muted, rgb(115, 115, 115));
+  cursor: var(--cursor, pointer);
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: rgb(23, 23, 23);
+  background-color: var(--status-bar-background, rgb(23, 23, 23));
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 1.5px;
   border-bottom-right-radius: 1.5px;
@@ -2891,7 +4385,7 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-color: rgb(212, 212, 212);
   border-top-left-radius: 1.5px;
   border-top-right-radius: 1.5px;
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
@@ -2912,7 +4406,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -2932,7 +4426,7 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -2950,8 +4444,8 @@ html[saved-theme="dark"] body ul.section-ul {
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 1.875px;
   border-top-right-radius: 1.875px;
-  color: rgb(115, 115, 115);
-  cursor: pointer;
+  color: var(--text-muted, rgb(115, 115, 115));
+  cursor: var(--cursor, pointer);
 }
 
 html[saved-theme="dark"] body .darkmode svg {
@@ -2967,7 +4461,7 @@ html[saved-theme="dark"] body .darkmode svg {
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 1.625px;
   border-top-right-radius: 1.625px;
-  color: rgb(115, 115, 115);
+  color: var(--text-muted, rgb(115, 115, 115));
 }
 
 html[saved-theme="dark"] body .breadcrumb-element p {
@@ -2982,7 +4476,7 @@ html[saved-theme="dark"] body .canvas-node-content {
 }
 
 html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(212, 212, 212);
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body .canvas-node-group {
@@ -2990,7 +4484,7 @@ html[saved-theme="dark"] body .canvas-node-group {
 }
 
 html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(23, 23, 23);
+  background-color: var(--background-secondary, rgb(23, 23, 23));
   border-color: rgb(64, 64, 64);
 }`,
     bases: `html[saved-theme="dark"] body .bases-table {
@@ -2999,11 +4493,11 @@ html[saved-theme="dark"] body .canvas-sidebar {
 
 html[saved-theme="dark"] body .bases-table thead th {
   border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(212, 212, 212);
-  color: rgb(245, 245, 245);
-  font-weight: 400;
+  color: var(--text-strong, rgb(245, 245, 245));
+  font-weight: var(--table-header-weight, 400);
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
-  color: rgb(115, 115, 115);
+  color: var(--text-muted, rgb(115, 115, 115));
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
@@ -3025,9 +4519,9 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-radius: 0px;
-  color: rgb(245, 245, 245);
+  color: var(--text-strong, rgb(245, 245, 245));
 }
 
 html[saved-theme="dark"] body .note-properties-value {
@@ -3035,8 +4529,8 @@ html[saved-theme="dark"] body .note-properties-value {
 }
 
 html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(10, 10, 10);
-  color: rgb(212, 212, 212);
+  background-color: var(--background-primary, rgb(10, 10, 10));
+  color: var(--text-normal, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body ol.overflow {
@@ -3046,12 +4540,12 @@ html[saved-theme="dark"] body ol.overflow {
   border-top-color: rgb(212, 212, 212);
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
-  background-color: rgb(23, 23, 23);
+  background-color: var(--background-secondary, rgb(23, 23, 23));
   border-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
-  background-color: rgb(10, 10, 10);
+  background-color: var(--background-primary, rgb(10, 10, 10));
 }
 
 html[saved-theme="dark"] body .stacked-page.active {
@@ -3062,15 +4556,15 @@ html[saved-theme="dark"] body .stacked-page.active {
   border-left-color: rgb(245, 245, 245);
   border-right-color: rgb(245, 245, 245);
   border-top-color: rgb(245, 245, 245);
-  color: rgb(245, 245, 245);
+  color: var(--text-strong, rgb(245, 245, 245));
 }
 
 html[saved-theme="dark"] body .navigation-progress {
-  background-color: rgb(23, 23, 23);
+  background-color: var(--status-bar-background, rgb(23, 23, 23));
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
-  color: rgb(245, 245, 245);
+  color: var(--text-strong, rgb(245, 245, 245));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
@@ -3090,12 +4584,12 @@ html[saved-theme="dark"] body input[type=text] {
   border-left-color: rgb(115, 115, 115);
   border-right-color: rgb(115, 115, 115);
   border-top-color: rgb(115, 115, 115);
-  color: rgb(115, 115, 115);
+  color: var(--text-normal, rgb(115, 115, 115));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="dark"] body kbd {
-  background-color: rgb(38, 38, 38);
+  background-color: var(--code-background, rgb(38, 38, 38));
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 1.75px;
   border-bottom-right-radius: 1.75px;
@@ -3104,8 +4598,8 @@ html[saved-theme="dark"] body kbd {
   border-top-color: rgb(212, 212, 212);
   border-top-left-radius: 1.75px;
   border-top-right-radius: 1.75px;
-  color: rgb(212, 212, 212);
-  font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  color: var(--code-normal, rgb(212, 212, 212));
+  font-family: var(--font-monospace, iawriter-mono, Nitti, Menlo, Courier, monospace);
 }
 
 html[saved-theme="dark"] body progress {
@@ -3128,7 +4622,7 @@ html[saved-theme="dark"] body sup {
 }
 
 html[saved-theme="dark"] body ul.tags > li {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tag-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgba(230, 230, 230, 0.5);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3141,7 +4635,7 @@ html[saved-theme="dark"] body ul.tags > li {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(245, 245, 245);
+  color: var(--text-strong, rgb(245, 245, 245));
 }`,
   },
   light: {
@@ -3152,35 +4646,31 @@ html[saved-theme="dark"] body ul.tags > li {
   --accent-color-light-hue-default: 254;
   --accent-color-light-lightness-default: 68%;
   --accent-color-light-saturation-default: 80%;
-  --accent-h: 0;
-  --accent-l: 10%;
-  --accent-s: 0%;
+  --accent-h: var(--color-h, 0);
+  --accent-l: var(--color-l, 10%);
+  --accent-s: var(--color-s, 0%);
   --background-color-glass: rgba(255, 255, 255, 0.8);
-  --background-modifier-active-hover: #d4d4d4;
-  --background-modifier-border-focus: #d4d4d4;
-  --background-modifier-error-rgb: #ef4444;
-  --background-primary: #fafafa;
-  --background-primary-alt: #e5e5e5;
-  --background-secondary: #f5f5f5;
-  --background-secondary-alt: #d4d4d4;
-  --bases-cards-background: #fafafa;
-  --bases-cards-cover-background: #e5e5e5;
-  --bases-embed-border-radius: 0.125em;
-  --bases-group-heading-property-color: #737373;
-  --bases-table-cell-background-active: #fafafa;
-  --bases-table-cell-background-disabled: #e5e5e5;
-  --bases-table-cell-background-selected: hsla(0, 0%, 10%, 0.1);
-  --bases-table-cell-shadow-active: 0 0 0 2px #d4d4d4;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(0, 0%, 0%);
-  --bases-table-container-border-radius: 0.125em;
-  --bases-table-group-background: #e5e5e5;
-  --bases-table-header-background: #fafafa;
-  --bases-table-header-color: #737373;
-  --bases-table-summary-background: #fafafa;
-  --blockquote-border-color: hsl(0, 0%, 0%);
-  --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
-  --bodyFont: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif);
+  --background-modifier-border-focus: var(--color-base-40, #d4d4d4);
+  --background-modifier-error-rgb: var(--color-red-rgb, #ef4444);
+  --background-primary: var(--color-base-00, #fafafa);
+  --background-primary-alt: var(--color-base-10, #e5e5e5);
+  --background-secondary: var(--color-base-20, #f5f5f5);
+  --background-secondary-alt: var(--color-base-05, #d4d4d4);
+  --bases-cards-background: var(--background-primary, #fafafa);
+  --bases-cards-cover-background: var(--background-primary-alt, #e5e5e5);
+  --bases-embed-border-radius: var(--radius-s, 0.125em);
+  --bases-group-heading-property-color: var(--text-muted, #737373);
+  --bases-table-cell-background-active: var(--background-primary, #fafafa);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #e5e5e5);
+  --bases-table-cell-background-selected: var(--table-selection, hsla(0, 0%, 10%, 0.1));
+  --bases-table-container-border-radius: var(--radius-s, 0.125em);
+  --bases-table-group-background: var(--background-primary-alt, #e5e5e5);
+  --bases-table-header-background: var(--background-primary, #fafafa);
+  --bases-table-header-color: var(--text-muted, #737373);
+  --bases-table-summary-background: var(--background-primary, #fafafa);
+  --blockquote-border-color: var(--interactive-accent, hsl(0, 0%, 0%));
+  --bodyFont: var(--font-text, var(--font-default, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif));
   --border-color: #d4d4d4;
   --callout-attention-bg-color: rgb(255, 240, 229);
   --callout-attention-text-color: #f97316;
@@ -3191,7 +4681,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-check-bg-color: rgb(232, 248, 234);
   --callout-check-text-color: #22c55e;
   --callout-cite-bg-color: rgb(244, 244, 244);
-  --callout-cite-text-color: #171717;
+  --callout-cite-text-color: var(--text-strong, #171717);
   --callout-danger-bg-color: rgb(255, 232, 234);
   --callout-danger-text-color: #ef4444;
   --callout-dogs-ear-size: 2em;
@@ -3214,16 +4704,16 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-important-bg-color: rgb(232, 248, 248);
   --callout-important-text-color: #0ea5e9;
   --callout-info-bg-color: rgb(228, 238, 253);
-  --callout-info-text-color: #171717;
+  --callout-info-text-color: var(--text-strong, #171717);
   --callout-missing-bg-color: rgb(255, 232, 234);
   --callout-missing-text-color: #ef4444;
-  --callout-note--text-color: #171717;
+  --callout-note--text-color: var(--text-strong, #171717);
   --callout-note-bg-color: rgb(228, 238, 253);
   --callout-question-bg-color: rgb(255, 240, 229);
   --callout-question-text-color: #eab308;
   --callout-quote-bg-color: rgb(244, 244, 244);
-  --callout-quote-text-color: #171717;
-  --callout-radius: 0.125em;
+  --callout-quote-text-color: var(--text-strong, #171717);
+  --callout-radius: var(--radius-s, 0.125em);
   --callout-success-bg-color: rgb(232, 248, 234);
   --callout-success-text-color: #22c55e;
   --callout-tip-bg-color: rgb(232, 248, 248);
@@ -3232,114 +4722,111 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-todo-text-color: #0ea5e9;
   --callout-warning-bg-color: rgb(255, 240, 229);
   --callout-warning-text-color: #f97316;
-  --canvas-background: #fafafa;
-  --canvas-controls-radius: 0.125em;
-  --caret-color: #404040;
-  --checkbox-border-color: #5c5c5c;
-  --checkbox-border-color-hover: #737373;
-  --checkbox-checked-color: hsla(0, 0%, 10%);
-  --checkbox-color: #22c55e;
-  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
-  --checkbox-marker-color: #fafafa;
-  --checkbox-radius: 0.125em;
-  --checkbox-unchecked-color-hover: hsla(0, 0%, 10%, 0.5);
-  --checklist-decoration-color: #404040;
+  --canvas-background: var(--background-primary, #fafafa);
+  --canvas-controls-radius: var(--radius-s, 0.125em);
+  --caret-color: var(--text-normal, #404040);
+  --checkbox-border-color: var(--color-base-70, #5c5c5c);
+  --checkbox-border-color-hover: var(--text-muted, #737373);
+  --checkbox-checked-color: hsla(var(--color-h), var(--color-s), var(--color-l));
+  --checkbox-color: var(--interactive-accent, #22c55e);
+  --checkbox-color-hover: var(--interactive-accent-hover, hsla(0, 0%, 73%, 0.5));
+  --checkbox-marker-color: var(--background-primary, #fafafa);
+  --checkbox-radius: var(--radius-s, 0.125em);
+  --checkbox-unchecked-color-hover: hsla(var(--color-h), var(--color-s), calc(var(--color-l)), 0.5);
+  --checklist-decoration-color: var(--text-normal, #404040);
   --checklist-decoration-line: none;
-  --checklist-delete-decoration-color: #e93147;
+  --checklist-delete-decoration-color: var(--background-modifier-error, #e93147);
   --checklist-delete-decoration-line: line-through;
-  --checklist-done-color: #737373;
-  --checklist-done-decoration-color: #737373;
+  --checklist-done-color: var(--text-muted, #737373);
+  --checklist-done-decoration-color: var(--text-muted, #737373);
   --checklist-done-decoration-line: none;
-  --clickable-icon-radius: 0.125em;
+  --clickable-icon-radius: var(--radius-s, 0.125em);
   --close-button-hover-bg-color: rgba(0, 0, 0, 0.1);
-  --code-background: #e5e5e5;
+  --code-background: var(--background-primary-alt, #e5e5e5);
   --code-bg-color: #f5f5f5;
-  --code-normal: #404040;
-  --code-punctuation: #737373;
-  --code-radius: 0.125em;
-  --codeFont: var(--font-monospace, iawriter-mono, Nitti, Menlo, Courier, monospace);
-  --collapse-icon-color-collapsed: hsl(0, 0%, 10%);
-  --color-accent: hsl(0, 0%, 10%);
-  --color-accent-1: hsl(0, 0%, 10%);
-  --color-accent-2: hsl(-3, 0%, 11.5%);
-  --color-accent-h1: hsl(0, 0%, 10%);
-  --color-accent-h2: hsl(0, 0%, 10%);
-  --color-accent-h3: hsl(0, 0%, 10%);
-  --color-accent-h4: hsl(0, 0%, 10%);
-  --color-accent-h5: hsl(0, 0%, 10%);
-  --color-accent-h6: hsl(0, 0%, 10%);
-  --color-accent-hsl: 0, 0%, 10%;
-  --color-accent-ln10: hsl(0, 0%, 0%);
-  --color-accent-ln15: hsl(0, 0%, -5%);
-  --color-accent-ln20: hsl(0, 0%, -10%);
-  --color-accent-ln5: hsl(0, 0%, 5%);
-  --color-accent-o10: hsla(0, 0%, 10%, 0.1);
-  --color-accent-o20: hsla(0, 0%, 10%, 0.2);
-  --color-accent-o30: hsla(0, 0%, 10%, 0.3);
-  --color-accent-o40: hsla(0, 0%, 10%, 0.4);
-  --color-accent-o50: hsla(0, 0%, 10%, 0.5);
-  --color-accent-o60: hsla(0, 0%, 10%, 0.6);
-  --color-accent-o70: hsla(0, 0%, 10%, 0.7);
-  --color-accent-o80: hsla(0, 0%, 10%, 0.8);
-  --color-accent-o90: hsla(0, 0%, 10%, 0.9);
+  --code-normal: var(--text-normal, #404040);
+  --code-punctuation: var(--text-muted, #737373);
+  --code-radius: var(--radius-s, 0.125em);
+  --codeFont: var(--font-monospace, var(--font-monospace-default, iawriter-mono, Nitti, Menlo, Courier, monospace));
+  --collapse-icon-color-collapsed: var(--text-accent, hsl(0, 0%, 10%));
+  --color-accent: var(--color-main, hsl(0, 0%, 10%));
+  --color-accent-1: var(--color-main, hsl(0, 0%, 10%));
+  --color-accent-h1: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-accent-h2: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-accent-h3: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-accent-h4: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-accent-h5: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-accent-h6: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-accent-ln10: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 10%));
+  --color-accent-ln15: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 15%));
+  --color-accent-ln20: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 20%));
+  --color-accent-ln5: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 5%));
+  --color-accent-o10: hsla(var(--color-h), var(--color-s), var(--color-l), 0.1);
+  --color-accent-o20: hsla(var(--color-h), var(--color-s), var(--color-l), 0.2);
+  --color-accent-o30: hsla(var(--color-h), var(--color-s), var(--color-l), 0.3);
+  --color-accent-o40: hsla(var(--color-h), var(--color-s), var(--color-l), 0.4);
+  --color-accent-o50: hsla(var(--color-h), var(--color-s), var(--color-l), 0.5);
+  --color-accent-o60: hsla(var(--color-h), var(--color-s), var(--color-l), 0.6);
+  --color-accent-o70: hsla(var(--color-h), var(--color-s), var(--color-l), 0.7);
+  --color-accent-o80: hsla(var(--color-h), var(--color-s), var(--color-l), 0.8);
+  --color-accent-o90: hsla(var(--color-h), var(--color-s), var(--color-l), 0.9);
   --color-beige-h: 50;
   --color-beige-l: 91%;
-  --color-beige-main: hsl(50, 100%, 91%);
+  --color-beige-main: hsl(var(--color-beige-h), var(--color-beige-s), var(--color-beige-l));
   --color-beige-s: 100%;
   --color-blue-h: 207;
   --color-blue-l: 73%;
-  --color-blue-main: hsl(207, 47%, 73%);
+  --color-blue-main: hsl(var(--color-blue-h), var(--color-blue-s), var(--color-blue-l));
   --color-blue-s: 47%;
   --color-bw-h: 0;
   --color-bw-s: 0%;
-  --color-default-h1: #404040;
-  --color-default-h2: #404040;
-  --color-default-h3: #404040;
-  --color-default-h4: #404040;
-  --color-default-h5: #404040;
-  --color-default-h6: #404040;
-  --color-gradient-h1: hsla(0, 0%, 10%, 1);
-  --color-gradient-h2: hsla(0, 0%, 10%, 0.95);
-  --color-gradient-h3: hsla(0, 0%, 10%, 0.9);
-  --color-gradient-h4: hsla(0, 0%, 10%, 0.85);
-  --color-gradient-h5: hsla(0, 0%, 10%, 0.8);
-  --color-gradient-h6: hsla(0, 0%, 10%, 0.75);
-  --color-h: 0;
-  --color-l: 10%;
-  --color-main: hsl(0, 0%, 10%);
+  --color-default-h1: var(--text-normal, #404040);
+  --color-default-h2: var(--text-normal, #404040);
+  --color-default-h3: var(--text-normal, #404040);
+  --color-default-h4: var(--text-normal, #404040);
+  --color-default-h5: var(--text-normal, #404040);
+  --color-default-h6: var(--text-normal, #404040);
+  --color-gradient-h1: hsla(var(--color-h), var(--color-s), var(--color-l), 1);
+  --color-gradient-h2: hsla(var(--color-h), var(--color-s), var(--color-l), 0.95);
+  --color-gradient-h3: hsla(var(--color-h), var(--color-s), var(--color-l), 0.9);
+  --color-gradient-h4: hsla(var(--color-h), var(--color-s), var(--color-l), 0.85);
+  --color-gradient-h5: hsla(var(--color-h), var(--color-s), var(--color-l), 0.8);
+  --color-gradient-h6: hsla(var(--color-h), var(--color-s), var(--color-l), 0.75);
+  --color-h: var(--accent-color-dark-hue-default, 0);
+  --color-l: var(--accent-color-dark-lightness-default, 10%);
+  --color-main: hsl(var(--color-h), var(--color-s), var(--color-l));
   --color-peach-h: 0;
   --color-peach-l: 65%;
-  --color-peach-main: hsl(0, 37%, 65%);
+  --color-peach-main: hsl(var(--color-peach-h), var(--color-peach-s), var(--color-peach-l));
   --color-peach-s: 37%;
   --color-pink-h: 0;
   --color-pink-l: 91%;
-  --color-pink-main: hsl(0, 100%, 91%);
+  --color-pink-main: hsl(var(--color-pink-h), var(--color-pink-s), var(--color-pink-l));
   --color-pink-s: 100%;
   --color-purple-h: 269;
   --color-purple-l: 85%;
-  --color-purple-main: hsl(269, 59%, 85%);
+  --color-purple-main: hsl(var(--color-purple-h), var(--color-purple-s), var(--color-purple-l));
   --color-purple-s: 59%;
-  --color-s: 0%;
+  --color-s: var(--accent-color-dark-saturation-default, 0%);
   --color-sage-h: 88;
   --color-sage-l: 69%;
-  --color-sage-main: hsl(88, 23%, 69%);
+  --color-sage-main: hsl(var(--color-sage-h), var(--color-sage-s), var(--color-sage-l));
   --color-sage-s: 23%;
-  --dark: var(--text-normal, #404040);
-  --darkgray: var(--text-normal, #404040);
-  --divider-color: #d4d4d4;
-  --divider-color-hover: hsl(0, 0%, 0%);
-  --dropdown-background-hover: rgb(163 163 163 / 0.2);
-  --embed-border-start: 2px solid hsl(0, 0%, 0%);
-  --file-header-background: #fafafa;
-  --file-header-background-focused: #fafafa;
-  --file-header-font: "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
-  --flair-color: #404040;
+  --dark: var(--text-normal, var(--color-base-100, #404040));
+  --darkgray: var(--text-normal, var(--color-base-100, #404040));
+  --divider-color: var(--background-modifier-border, #d4d4d4);
+  --divider-color-hover: var(--interactive-accent, hsl(0, 0%, 0%));
+  --dropdown-background-hover: var(--interactive-hover, rgb(163 163 163 / 0.2));
+  --file-header-background: var(--background-primary, #fafafa);
+  --file-header-background-focused: var(--background-primary, #fafafa);
+  --file-header-font: var(--font-interface, "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif);
+  --flair-color: var(--text-normal, #404040);
   --focus-transition-duration: 0.2s;
   --font-default: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif;
-  --font-em-color: #404040;
-  --font-em-decoration-color: #404040;
+  --font-em-color: var(--text-normal, #404040);
+  --font-em-decoration-color: var(--font-em-color, #404040);
   --font-em-decoration-line: none;
   --font-em-decoration-offset: 2px;
   --font-em-decoration-style: solid;
@@ -3347,27 +4834,27 @@ html[saved-theme="dark"] body ul.tags > li {
   --font-em-size: 1em;
   --font-em-style: italic;
   --font-em-weight: normal;
-  --font-file-tree: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
+  --font-file-tree: var(--font-default, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif);
   --font-file-tree-size: 0.95em;
   --font-file-tree-weight: 400;
   --font-h1-size: 2.25em;
   --font-h1-weight: normal;
   --font-h2-size: 1.875em;
-  --font-h2-weight: normal;
+  --font-h2-weight: var(--font-h1-weight, normal);
   --font-h3-size: 1.5em;
-  --font-h3-weight: normal;
+  --font-h3-weight: var(--font-h1-weight, normal);
   --font-h4-size: 1.25em;
-  --font-h4-weight: normal;
+  --font-h4-weight: var(--font-h1-weight, normal);
   --font-h5-size: 1.125em;
-  --font-h5-weight: normal;
+  --font-h5-weight: var(--font-h1-weight, normal);
   --font-h6-size: 1em;
-  --font-h6-weight: normal;
-  --font-header: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
-  --font-highlight-bg-color: hsl(0, 0%, 10%);
-  --font-highlight-color: #fafafa;
-  --font-highlight-decoration-color: #404040;
+  --font-h6-weight: var(--font-h1-weight, normal);
+  --font-header: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif);
+  --font-highlight-bg-color: var(--color-accent, hsl(0, 0%, 10%));
+  --font-highlight-color: var(--text-reversed, #fafafa);
+  --font-highlight-decoration-color: var(--text-normal, #404040);
   --font-highlight-decoration-line: none;
   --font-highlight-decoration-offset: 3px;
   --font-highlight-decoration-style: solid;
@@ -3375,35 +4862,33 @@ html[saved-theme="dark"] body ul.tags > li {
   --font-highlight-size: 1em;
   --font-highlight-style: normal;
   --font-highlight-weight: normal;
-  --font-inline-tile-color: #404040;
-  --font-inline-title: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
+  --font-inline-tile-color: var(--text-normal, #404040);
+  --font-inline-title: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif);
   --font-inline-title-size: 2em;
   --font-inline-title-weight: 900;
-  --font-interface: "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
   --font-interface-override: "";
   --font-latex-size: 1em;
   --font-latex-weight: 400;
-  --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
-  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-mermaid: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif);
+  --font-monospace: var(--font-monospace-default, iawriter-mono, Nitti, Menlo, Courier, monospace);
   --font-monospace-default: iawriter-mono, Nitti, Menlo, Courier, monospace;
   --font-monospace-size: 1em;
   --font-monospace-weight: 400;
-  --font-source-view: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-source-view: var(--font-monospace, iawriter-mono, Nitti, Menlo, Courier, monospace);
   --font-source-view-size: 1em;
   --font-source-view-weight: 400;
-  --font-strikethrough-color: #737373;
-  --font-strikethrough-decoration-color: #737373;
+  --font-strikethrough-color: var(--text-muted, #737373);
+  --font-strikethrough-decoration-color: var(--font-strikethrough-color, #737373);
   --font-strikethrough-decoration-line: line-through;
   --font-strikethrough-decoration-style: solid;
   --font-strikethrough-decoration-width: 2px;
   --font-strikethrough-size: 1em;
   --font-strikethrough-style: normal;
   --font-strikethrough-weight: normal;
-  --font-strong-color: #171717;
-  --font-strong-decoration-color: #171717;
+  --font-strong-color: var(--text-strong, #171717);
+  --font-strong-decoration-color: var(--font-strong-color, #171717);
   --font-strong-decoration-line: none;
   --font-strong-decoration-offset: 2px;
   --font-strong-decoration-style: solid;
@@ -3411,172 +4896,160 @@ html[saved-theme="dark"] body ul.tags > li {
   --font-strong-size: 1em;
   --font-strong-style: normal;
   --font-strong-weight: 900;
-  --font-tag: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-tag: var(--font-monospace, iawriter-mono, Nitti, Menlo, Courier, monospace);
   --font-tag-size: 1em;
   --font-tag-weight: 400;
-  --font-text: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
+  --font-text: var(--font-default, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif);
   --font-text-weight: 400;
-  --font-underlined-color: #404040;
-  --font-underlined-decoration-color: #404040;
+  --font-underlined-color: var(--text-normal, #404040);
+  --font-underlined-decoration-color: var(--font-underlined-color, #404040);
   --font-underlined-decoration-line: underline;
   --font-underlined-decoration-offset: 6px;
   --font-underlined-decoration-style: wavy;
   --font-underlined-decoration-width: 2px;
   --font-underlined-size: 1em;
   --font-underlined-weight: normal;
-  --font-vault-name: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
+  --font-vault-name: var(--font-file-tree, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif);
   --font-vault-name-size: 1.25em;
   --font-vault-name-weight: 400;
-  --footnote-id-color: #737373;
-  --footnote-radius: 0.125em;
-  --graph-node: #737373;
-  --graph-node-focused: hsl(0, 0%, 10%);
-  --graph-text: #404040;
-  --gray: var(--text-muted, #737373);
-  --h1-color: #404040;
-  --h2-color: #404040;
-  --h3-color: #404040;
-  --h4-color: #404040;
-  --h5-color: #404040;
-  --h6-color: #404040;
-  --headerFont: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif);
-  --highlight: var(--background-modifier-active-hover, #d4d4d4);
-  --icon-color: #737373;
-  --icon-color-active: hsl(0, 0%, 10%);
-  --icon-color-focused: hsla(0, 0%, 10%, 0.8);
-  --icon-color-hover: #737373;
-  --icon-color-hovering: #171717;
+  --footnote-id-color: var(--text-muted, #737373);
+  --footnote-radius: var(--radius-s, 0.125em);
+  --graph-node: var(--text-muted, #737373);
+  --graph-node-focused: var(--text-accent, hsl(0, 0%, 10%));
+  --graph-text: var(--text-normal, #404040);
+  --gray: var(--text-muted, var(--color-base-70, #737373));
+  --h1-color: var(--color-gradient-h1, #404040);
+  --h2-color: var(--color-gradient-h2, #404040);
+  --h3-color: var(--color-gradient-h3, #404040);
+  --h4-color: var(--color-gradient-h4, #404040);
+  --h5-color: var(--color-gradient-h5, #404040);
+  --h6-color: var(--color-gradient-h6, #404040);
+  --headerFont: var(--font-text, var(--font-default, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif));
+  --icon-color: var(--text-muted, #737373);
+  --icon-color-active: var(--text-accent, hsl(0, 0%, 10%));
+  --icon-color-focused: var(--color-accent-o80, hsla(0, 0%, 10%, 0.8));
+  --icon-color-hover: var(--text-muted, #737373);
+  --icon-color-hovering: var(--text-strong, #171717);
   --inactive-hover-opacity: 0.8;
   --inactive-opacity: 0.3;
   --inline-code-bg-color: rgba(229, 229, 229, 0.5);
   --inline-code-text-color: #525252;
-  --inline-title-color: #404040;
-  --interactive-accent: hsl(0, 0%, 0%);
-  --interactive-accent-hover: hsl(0, 0%, 5%);
-  --interactive-accent-hsl: 0, 0%, 10%;
-  --interactive-hover: rgb(163 163 163 / 0.2);
-  --light: var(--background-primary, #fafafa);
-  --lightgray: var(--background-secondary, #f5f5f5);
-  --link-color: hsl(0, 0%, 5%);
-  --link-color-hover: hsl(0, 0%, 5%);
-  --link-decoration-color: hsl(0, 0%, 5%);
+  --inline-title-color: var(--h1-color, #404040);
+  --interactive-accent: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 10%));
+  --interactive-accent-hover: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 5%));
+  --interactive-accent-hsl: var(--color-accent-hsl, 0, 0%, 10%);
+  --interactive-hover: var(--color-base-10, rgb(163 163 163 / 0.2));
+  --light: var(--background-primary, var(--color-base-00, #fafafa));
+  --lightgray: var(--background-secondary, var(--color-base-20, #f5f5f5));
+  --link-color: var(--color-accent-ln5, hsl(0, 0%, 5%));
+  --link-color-hover: var(--color-accent-ln5, hsl(0, 0%, 5%));
+  --link-decoration-color: var(--link-color, hsl(0, 0%, 5%));
   --link-decoration-line: underline;
   --link-decoration-offset: 0.3em;
   --link-decoration-style: solid;
   --link-decoration-thickness: 1px;
-  --link-external-color: hsl(0, 0%, 5%);
-  --link-external-color-hover: hsl(0, 0%, 5%);
-  --link-unresolved-color: hsla(0, 0%, 10%, 0.9);
-  --link-unresolved-color-hover: hsl(0, 0%, 10%);
-  --link-unresolved-decoration-color: hsla(hsla(0, 0%, 10%, 0.9), 0.3);
-  --link-unresolved-decoration-color-hover: hsla(hsl(0, 0%, 10%), 0.3);
+  --link-external-color: var(--color-accent-ln5, hsl(0, 0%, 5%));
+  --link-external-color-hover: var(--color-accent-ln5, hsl(0, 0%, 5%));
+  --link-unresolved-color: var(--color-accent-o90, hsla(0, 0%, 10%, 0.9));
+  --link-unresolved-color-hover: var(--color-accent, hsl(0, 0%, 10%));
+  --link-unresolved-decoration-color: hsla(var(--link-unresolved-color), 0.3);
+  --link-unresolved-decoration-color-hover: hsla(var(--link-unresolved-color-hover), 0.3);
   --link-unresolved-decoration-line: underline;
   --link-unresolved-decoration-offset: 0.3em;
   --link-unresolved-decoration-style: dashed;
   --link-unresolved-decoration-width: 1px;
-  --list-marker-color-collapsed: hsl(0, 0%, 10%);
-  --list-marker-color-hover: #737373;
-  --menu-background: #f5f5f5;
-  --metadata-input-font: "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
-  --metadata-input-text-color: #404040;
-  --metadata-label-font: "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
-  --metadata-label-text-color: #737373;
-  --metadata-label-text-color-hover: #737373;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #d4d4d4;
-  --modal-background: #fafafa;
-  --nav-heading-color: #404040;
-  --nav-heading-color-collapsed-hover: #737373;
-  --nav-heading-color-hover: #404040;
-  --nav-item-background-selected: hsla(0, 0%, 10%, 0.15);
-  --nav-item-color: #737373;
-  --nav-item-color-active: #404040;
-  --nav-item-color-highlighted: hsl(0, 0%, 10%);
-  --nav-item-color-hover: #404040;
-  --nav-item-color-selected: #404040;
-  --nav-item-radius: 0.125em;
-  --nav-tag-color-active: #737373;
-  --nav-tag-color-hover: #737373;
-  --nav-tag-radius: 0.125em;
-  --pdf-background: #fafafa;
-  --pdf-page-background: #fafafa;
-  --pdf-sidebar-background: #fafafa;
-  --pill-color: #737373;
-  --pill-color-hover: #404040;
-  --pill-color-remove-hover: hsl(0, 0%, 10%);
-  --prompt-background: #fafafa;
+  --list-marker-color-collapsed: var(--text-accent, hsl(0, 0%, 10%));
+  --list-marker-color-hover: var(--text-muted, #737373);
+  --menu-background: var(--background-secondary, #f5f5f5);
+  --metadata-input-font: var(--font-interface, "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif);
+  --metadata-input-text-color: var(--text-normal, #404040);
+  --metadata-label-font: var(--font-interface, "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif);
+  --metadata-label-text-color: var(--text-muted, #737373);
+  --metadata-label-text-color-hover: var(--text-muted, #737373);
+  --modal-background: var(--background-primary, #fafafa);
+  --nav-heading-color: var(--text-normal, #404040);
+  --nav-heading-color-collapsed-hover: var(--text-muted, #737373);
+  --nav-heading-color-hover: var(--text-normal, #404040);
+  --nav-item-color: var(--text-muted, #737373);
+  --nav-item-color-active: var(--text-normal, #404040);
+  --nav-item-color-highlighted: var(--text-accent, hsl(0, 0%, 10%));
+  --nav-item-color-hover: var(--text-normal, #404040);
+  --nav-item-color-selected: var(--text-normal, #404040);
+  --nav-item-radius: var(--radius-s, 0.125em);
+  --nav-tag-color-active: var(--text-muted, #737373);
+  --nav-tag-color-hover: var(--text-muted, #737373);
+  --nav-tag-radius: var(--radius-s, 0.125em);
+  --pdf-background: var(--background-primary, #fafafa);
+  --pdf-page-background: var(--background-primary, #fafafa);
+  --pdf-sidebar-background: var(--background-primary, #fafafa);
+  --pill-color: var(--text-muted, #737373);
+  --pill-color-hover: var(--text-normal, #404040);
+  --pill-color-remove-hover: var(--text-accent, hsl(0, 0%, 10%));
+  --prompt-background: var(--background-primary, #fafafa);
   --quote-bg-color: rgba(10, 10, 10, 0.05);
   --radius-s: 0.125em;
-  --raised-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
-  --ribbon-background: #f5f5f5;
-  --ribbon-background-collapsed: #fafafa;
-  --search-clear-button-color: #737373;
-  --search-icon-color: #737373;
-  --search-result-background: #fafafa;
-  --secondary: var(--text-accent, hsl(0, 0%, 10%));
-  --setting-group-heading-color: #404040;
-  --setting-items-background: #e5e5e5;
-  --shiki-active-tab-border-color: #737373;
-  --shiki-code-background: #e5e5e5;
-  --shiki-code-block-border-radius: 0.125em;
-  --shiki-code-normal: #737373;
-  --shiki-code-punctuation: #737373;
-  --shiki-gutter-text-color-highlight: #737373;
-  --shiki-highlight-neutral: #737373;
-  --status-bar-background: #f5f5f5;
-  --status-bar-border-color: #d4d4d4;
-  --status-bar-text-color: #737373;
-  --suggestion-background: #fafafa;
+  --raised-background: var(--blur-background, color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent)));
+  --ribbon-background: var(--background-secondary, #f5f5f5);
+  --ribbon-background-collapsed: var(--background-primary, #fafafa);
+  --search-clear-button-color: var(--text-muted, #737373);
+  --search-icon-color: var(--text-muted, #737373);
+  --search-result-background: var(--background-primary, #fafafa);
+  --secondary: var(--text-accent, var(--color-accent, hsl(0, 0%, 10%)));
+  --setting-group-heading-color: var(--text-normal, #404040);
+  --setting-items-background: var(--background-primary-alt, #e5e5e5);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, #737373);
+  --shiki-code-background: var(--code-background, #e5e5e5);
+  --shiki-code-block-border-radius: var(--code-radius, 0.125em);
+  --shiki-code-normal: var(--text-muted, #737373);
+  --shiki-code-punctuation: var(--text-muted, #737373);
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, #737373);
+  --shiki-highlight-neutral: var(--shiki-code-normal, #737373);
+  --status-bar-background: var(--background-secondary, #f5f5f5);
+  --status-bar-border-color: var(--divider-color, #d4d4d4);
+  --status-bar-text-color: var(--text-muted, #737373);
+  --suggestion-background: var(--background-primary, #fafafa);
   --switch-inset-shadow-color: rgba(0, 0, 0, 0.2);
   --tab-active-bg-color: #e5e5e5;
-  --tab-background-active: #fafafa;
+  --tab-background-active: var(--background-primary, #fafafa);
   --tab-bg-color: #f5f5f5;
-  --tab-container-background: #f5f5f5;
-  --tab-hover-bg-color: #d4d4d4;
-  --tab-outline-color: #d4d4d4;
-  --tab-radius: 0.125em;
-  --tab-switcher-background: #f5f5f5;
-  --tab-switcher-menubar-background: linear-gradient(to top, #f5f5f5, transparent);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 10%);
-  --tab-text-color-active: #737373;
-  --tab-text-color-focused: #737373;
-  --tab-text-color-focused-active: #737373;
-  --tab-text-color-focused-active-current: #404040;
-  --tab-text-color-focused-highlighted: hsl(0, 0%, 10%);
-  --table-drag-handle-background-active: hsl(0, 0%, 0%);
-  --table-header-color: #404040;
-  --table-selection: hsla(0, 0%, 10%, 0.1);
-  --table-selection-border-color: hsl(0, 0%, 0%);
-  --tag-background: hsla(0, 0%, 10%, 0.1);
-  --tag-background-hover: hsla(0, 0%, 10%, 0.2);
-  --tag-border-color: hsla(0, 0%, 10%, 0.15);
-  --tag-border-color-hover: hsla(0, 0%, 10%, 0.15);
-  --tag-color: hsl(0, 0%, 10%);
-  --tag-color-hover: hsl(0, 0%, 10%);
+  --tab-container-background: var(--background-secondary, #f5f5f5);
+  --tab-hover-bg-color: var(--background-modifier-active-hover, #d4d4d4);
+  --tab-outline-color: var(--divider-color, #d4d4d4);
+  --tab-radius: var(--radius-s, 0.125em);
+  --tab-switcher-background: var(--background-secondary, #f5f5f5);
+  --tab-text-color-active: var(--text-muted, #737373);
+  --tab-text-color-focused: var(--text-muted, #737373);
+  --tab-text-color-focused-active: var(--text-muted, #737373);
+  --tab-text-color-focused-active-current: var(--text-normal, #404040);
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(0, 0%, 10%));
+  --table-drag-handle-background-active: var(--table-selection-border-color, hsl(0, 0%, 0%));
+  --table-header-color: var(--text-normal, #404040);
+  --table-selection-border-color: var(--interactive-accent, hsl(0, 0%, 0%));
+  --tag-color: var(--text-accent, hsl(0, 0%, 10%));
+  --tag-color-hover: var(--text-accent, hsl(0, 0%, 10%));
   --tag-radius: 0em;
-  --tertiary: var(--text-accent-hover, #171717);
-  --text-accent: hsl(0, 0%, 10%);
-  --text-accent-hover: #171717;
-  --text-muted: #737373;
-  --text-normal: #404040;
+  --tertiary: var(--text-accent-hover, var(--text-strong, #171717));
+  --text-accent: var(--color-accent, hsl(0, 0%, 10%));
+  --text-accent-hover: var(--text-strong, #171717);
+  --text-muted: var(--color-base-70, #737373);
+  --text-normal: var(--color-base-100, #404040);
   --text-reversed: #fafafa;
-  --text-selection: rgb(163 163 163 / 0.2);
   --text-strong: #171717;
-  --textHighlight: var(--background-modifier-active-hover, #d4d4d4);
-  --titleFont: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif);
-  --titlebar-background: #f5f5f5;
-  --titlebar-background-focused: #d4d4d4;
+  --titleFont: var(--font-text, var(--font-default, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif));
+  --titlebar-background: var(--background-secondary, #f5f5f5);
+  --titlebar-background-focused: var(--background-secondary-alt, #d4d4d4);
   --titlebar-isfocused: #ebebeb;
   --titlebar-not-focused: #b3b3b3;
-  --titlebar-text-color: #737373;
-  --titlebar-text-color-focused: #404040;
-  --vault-profile-color: #404040;
-  --vault-profile-color-hover: #404040;
+  --titlebar-text-color: var(--text-muted, #737373);
+  --titlebar-text-color-focused: var(--text-normal, #404040);
+  --vault-profile-color: var(--text-normal, #404040);
+  --vault-profile-color-hover: var(--vault-profile-color, #404040);
   --quartz-icon-color: currentColor;
 }
 
@@ -3586,17 +5059,17 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(245, 245, 245);
+  background-color: var(--tab-container-background, rgb(245, 245, 245));
   color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
-  background-color: rgb(250, 250, 250);
+  background-color: var(--background-primary, rgb(250, 250, 250));
   color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(245, 245, 245);
+  background-color: var(--background-secondary, rgb(245, 245, 245));
   color: rgb(64, 64, 64);
 }
 
@@ -3605,13 +5078,263 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(245, 245, 245);
+  background-color: var(--tab-container-background, rgb(245, 245, 245));
   border-left-color: rgb(212, 212, 212);
   color: rgb(64, 64, 64);
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered > h1 {
-  --font-weight: 700;
-  background-color: rgba(0, 0, 0, 0);
+  --background-modifier-active-hover: #d4d4d4;
+  --background-modifier-border: #e0e0e0;
+  --background-modifier-border-focus: #d4d4d4;
+  --background-modifier-border-hover: #d4d4d4;
+  --background-modifier-error: #e93147;
+  --background-modifier-error-hover: #e93147;
+  --background-modifier-error-rgb: #ef4444;
+  --background-modifier-form-field: #ffffff;
+  --background-modifier-form-field-hover: #ffffff;
+  --background-modifier-hover: rgba(0, 0, 0, 0.067);
+  --background-modifier-success: #08b94e;
+  --background-modifier-success-rgb: 8, 185, 78;
+  --background-primary: #fafafa;
+  --background-primary-alt: #e5e5e5;
+  --background-secondary: #f5f5f5;
+  --background-secondary-alt: #d4d4d4;
+  --blockquote-border-color: hsl(0, 0%, 0%);
+  --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: darken;
+  --callout-bug: 233, 49, 71;
+  --callout-default: 8, 109, 221;
+  --callout-error: 233, 49, 71;
+  --callout-example: 120, 82, 238;
+  --callout-fail: 233, 49, 71;
+  --callout-important: 0, 191, 188;
+  --callout-info: 8, 109, 221;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 236, 117, 0;
+  --callout-radius: 0.125em;
+  --callout-success: 8, 185, 78;
+  --callout-summary: 0, 191, 188;
+  --callout-tip: 0, 191, 188;
+  --callout-title-weight: 600;
+  --callout-todo: 8, 109, 221;
+  --callout-warning: 236, 117, 0;
+  --canvas-background: #fafafa;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 0.125em;
+  --canvas-dot-pattern: #e0e0e0;
+  --caret-color: #404040;
+  --checkbox-border-color: #5c5c5c;
+  --checkbox-border-color-hover: #737373;
+  --checkbox-color: #22c55e;
+  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
+  --checkbox-marker-color: #fafafa;
+  --checkbox-radius: 0.125em;
+  --checkbox-size: 16px;
+  --checklist-done-color: #737373;
+  --clickable-icon-radius: 0.125em;
+  --code-background: #e5e5e5;
+  --code-border-color: #e0e0e0;
+  --code-bracket-background: rgba(0, 0, 0, 0.067);
+  --code-comment: #ababab;
+  --code-function: #e0ac00;
+  --code-important: #ec7500;
+  --code-keyword: #d53984;
+  --code-normal: #404040;
+  --code-operator: #e93147;
+  --code-property: #00bfbc;
+  --code-punctuation: #737373;
+  --code-radius: 0.125em;
+  --code-size: 0.875em;
+  --code-string: #08b94e;
+  --code-tag: #e93147;
+  --code-value: #7852ee;
+  --collapse-icon-color: #ababab;
+  --collapse-icon-color-collapsed: hsl(0, 0%, 10%);
+  --color-accent: hsl(0, 0%, 10%);
+  --color-accent-1: hsl(0, 0%, 10%);
+  --color-accent-2: hsl(-3, 0%, 11.5%);
+  --color-accent-hsl: 0, 0%, 10%;
+  --divider-color: #d4d4d4;
+  --divider-color-hover: hsl(0, 0%, 0%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #ffffff;
+  --dropdown-background-hover: rgb(163 163 163 / 0.2);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #ffffff;
+  --flair-color: #404040;
+  --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-weight: var(--h1-weight, 700);
+  --graph-line: #d4d4d4;
+  --graph-node: #737373;
+  --graph-node-attachment: #e0ac00;
+  --graph-node-focused: hsl(0, 0%, 10%);
+  --graph-node-tag: #08b94e;
+  --graph-node-unresolved: #ababab;
+  --graph-text: #404040;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #ababab;
+  --heading-spacing: 2.5rem;
+  --hr-color: #e0e0e0;
+  --interactive-accent: hsl(0, 0%, 0%);
+  --interactive-accent-hover: hsl(0, 0%, 5%);
+  --interactive-accent-hsl: 0, 0%, 10%;
+  --interactive-hover: rgb(163 163 163 / 0.2);
+  --interactive-normal: #ffffff;
+  --link-color: hsl(0, 0%, 5%);
+  --link-color-hover: hsl(0, 0%, 5%);
+  --link-external-color: hsl(0, 0%, 5%);
+  --link-external-color-hover: hsl(0, 0%, 5%);
+  --link-unresolved-color: hsla(0, 0%, 10%, 0.9);
+  --link-unresolved-decoration-color: hsla(hsla(0, 0%, 10%, 0.9), 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: #f5f5f5;
+  --menu-border-color: #d4d4d4;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+  --pdf-background: #fafafa;
+  --pdf-page-background: #fafafa;
+  --pdf-sidebar-background: #fafafa;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --search-clear-button-color: #737373;
+  --search-icon-color: #737373;
+  --search-result-background: #fafafa;
+  --setting-group-heading-color: #404040;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #e5e5e5;
+  --setting-items-border-color: #e0e0e0;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: #737373;
+  --shiki-code-background: #e5e5e5;
+  --shiki-code-block-border-radius: 0.125em;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #ababab;
+  --shiki-code-function: #08b94e;
+  --shiki-code-important: #ec7500;
+  --shiki-code-keyword: #d53984;
+  --shiki-code-normal: #737373;
+  --shiki-code-property: #00bfbc;
+  --shiki-code-punctuation: #737373;
+  --shiki-code-string: #e0ac00;
+  --shiki-code-value: #7852ee;
+  --shiki-gutter-border-color: #e0e0e0;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #ababab;
+  --shiki-gutter-text-color-highlight: #737373;
+  --shiki-highlight-green: rgba(8, 185, 78, 0.5);
+  --shiki-highlight-green-background: rgba(8, 185, 78, 0.1);
+  --shiki-highlight-neutral: #737373;
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
+  --shiki-highlight-red: rgba(233, 49, 71, 0.5);
+  --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
+  --shiki-terminal-dots-color: #ababab;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #fafafa;
+  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  --sync-avatar-color-1: #e93147;
+  --sync-avatar-color-2: #ec7500;
+  --sync-avatar-color-3: #e0ac00;
+  --sync-avatar-color-4: #08b94e;
+  --sync-avatar-color-5: #00bfbc;
+  --sync-avatar-color-6: #086ddd;
+  --sync-avatar-color-7: #7852ee;
+  --sync-avatar-color-8: #d53984;
+  --tab-background-active: #fafafa;
+  --tab-divider-color: #d4d4d4;
+  --tab-font-size: 13px;
+  --tab-outline-color: #d4d4d4;
+  --tab-radius: 0.125em;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #f5f5f5;
+  --tab-switcher-menubar-background: linear-gradient(to top, #f5f5f5, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 10%);
+  --tab-text-color: #ababab;
+  --tab-text-color-active: #737373;
+  --tab-text-color-focused: #737373;
+  --tab-text-color-focused-active: #737373;
+  --tab-text-color-focused-active-current: #404040;
+  --tab-text-color-focused-highlighted: hsl(0, 0%, 10%);
+  --table-add-button-border-color: #e0e0e0;
+  --table-add-button-border-width: 1px;
+  --table-border-color: #e0e0e0;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(0, 0%, 0%);
+  --table-drag-handle-color: #ababab;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: #e0e0e0;
+  --table-header-border-width: 1px;
+  --table-header-color: #404040;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(0, 0%, 10%, 0.1);
+  --table-selection-blend-mode: darken;
+  --table-selection-border-color: hsl(0, 0%, 0%);
+  --table-text-size: 16px;
+  --tag-background: hsla(0, 0%, 10%, 0.1);
+  --tag-background-hover: hsla(0, 0%, 10%, 0.2);
+  --tag-border-color: hsla(0, 0%, 10%, 0.15);
+  --tag-border-color-hover: hsla(0, 0%, 10%, 0.15);
+  --tag-color: hsl(0, 0%, 10%);
+  --tag-color-hover: hsl(0, 0%, 10%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(0, 0%, 10%);
+  --text-accent-hover: #171717;
+  --text-error: #e93147;
+  --text-faint: #ababab;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #737373;
+  --text-normal: #404040;
+  --text-selection: rgb(163 163 163 / 0.2);
+  --text-success: #08b94e;
+  --text-warning: #ec7500;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3624,13 +5347,13 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(115, 115, 115);
+  color: var(--text-strong, rgb(115, 115, 115));
   content: "#1";
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-size: 25.2px;
-  font-weight: 100;
-  letter-spacing: -0.54px;
-  line-height: 37.8px;
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h1-size, 25.2px);
+  font-weight: var(--font-h1-weight, 100);
+  letter-spacing: var(--h1-letter-spacing, -0.54px);
+  line-height: var(--h1-line-height, 37.8px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6.3px;
@@ -3642,9 +5365,9 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 }
 
 html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
-  color: rgb(23, 23, 23);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-weight: 900;
+  color: var(--font-strong-color, rgb(23, 23, 23));
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-strong-weight, 900);
   outline: rgb(23, 23, 23) none 0px;
   text-decoration: 1px rgb(23, 23, 23);
   text-decoration-color: rgb(23, 23, 23);
@@ -3652,8 +5375,9 @@ html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light
 }
 
 html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
-  color: rgb(64, 64, 64);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--font-em-color, rgb(64, 64, 64));
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-em-weight, 400);
   outline: rgb(64, 64, 64) none 0px;
   text-decoration: 1px rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
@@ -3661,8 +5385,9 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
-  color: rgb(64, 64, 64);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--font-em-color, rgb(64, 64, 64));
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-em-weight, 400);
   outline: rgb(64, 64, 64) none 0px;
   text-decoration: 1px rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
@@ -3670,9 +5395,9 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
 }
 
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
-  color: rgb(23, 23, 23);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-weight: 900;
+  color: var(--font-strong-color, rgb(23, 23, 23));
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-strong-weight, 900);
   outline: rgb(23, 23, 23) none 0px;
   text-decoration: 1px rgb(23, 23, 23);
   text-decoration-color: rgb(23, 23, 23);
@@ -3680,9 +5405,10 @@ html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="
 }
 
 html[saved-theme="light"] body .text-highlight {
-  background-color: rgb(26, 26, 26);
-  color: rgb(250, 250, 250);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  background-color: var(--font-highlight-bg-color, rgb(26, 26, 26));
+  color: var(--font-highlight-color, rgb(250, 250, 250));
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-highlight-weight, 400);
   outline: rgb(250, 250, 250) none 0px;
   text-decoration: 2px rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
@@ -3690,8 +5416,9 @@ html[saved-theme="light"] body .text-highlight {
 }
 
 html[saved-theme="light"] body del {
-  color: rgb(115, 115, 115);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--font-strikethrough-color, rgb(115, 115, 115));
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-strikethrough-weight, 400);
   outline: rgb(115, 115, 115) none 0px;
   text-decoration: line-through 2px rgb(115, 115, 115);
   text-decoration-color: rgb(115, 115, 115);
@@ -3699,13 +5426,263 @@ html[saved-theme="light"] body del {
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(23, 23, 23);
+  color: var(--text-strong, rgb(23, 23, 23));
   text-decoration: underline;
 }
 
 html[saved-theme="light"] body h2 {
-  --font-weight: 680;
-  background-color: rgba(0, 0, 0, 0);
+  --background-modifier-active-hover: #d4d4d4;
+  --background-modifier-border: #e0e0e0;
+  --background-modifier-border-focus: #d4d4d4;
+  --background-modifier-border-hover: #d4d4d4;
+  --background-modifier-error: #e93147;
+  --background-modifier-error-hover: #e93147;
+  --background-modifier-error-rgb: #ef4444;
+  --background-modifier-form-field: #ffffff;
+  --background-modifier-form-field-hover: #ffffff;
+  --background-modifier-hover: rgba(0, 0, 0, 0.067);
+  --background-modifier-success: #08b94e;
+  --background-modifier-success-rgb: 8, 185, 78;
+  --background-primary: #fafafa;
+  --background-primary-alt: #e5e5e5;
+  --background-secondary: #f5f5f5;
+  --background-secondary-alt: #d4d4d4;
+  --blockquote-border-color: hsl(0, 0%, 0%);
+  --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: darken;
+  --callout-bug: 233, 49, 71;
+  --callout-default: 8, 109, 221;
+  --callout-error: 233, 49, 71;
+  --callout-example: 120, 82, 238;
+  --callout-fail: 233, 49, 71;
+  --callout-important: 0, 191, 188;
+  --callout-info: 8, 109, 221;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 236, 117, 0;
+  --callout-radius: 0.125em;
+  --callout-success: 8, 185, 78;
+  --callout-summary: 0, 191, 188;
+  --callout-tip: 0, 191, 188;
+  --callout-title-weight: 600;
+  --callout-todo: 8, 109, 221;
+  --callout-warning: 236, 117, 0;
+  --canvas-background: #fafafa;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 0.125em;
+  --canvas-dot-pattern: #e0e0e0;
+  --caret-color: #404040;
+  --checkbox-border-color: #5c5c5c;
+  --checkbox-border-color-hover: #737373;
+  --checkbox-color: #22c55e;
+  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
+  --checkbox-marker-color: #fafafa;
+  --checkbox-radius: 0.125em;
+  --checkbox-size: 16px;
+  --checklist-done-color: #737373;
+  --clickable-icon-radius: 0.125em;
+  --code-background: #e5e5e5;
+  --code-border-color: #e0e0e0;
+  --code-bracket-background: rgba(0, 0, 0, 0.067);
+  --code-comment: #ababab;
+  --code-function: #e0ac00;
+  --code-important: #ec7500;
+  --code-keyword: #d53984;
+  --code-normal: #404040;
+  --code-operator: #e93147;
+  --code-property: #00bfbc;
+  --code-punctuation: #737373;
+  --code-radius: 0.125em;
+  --code-size: 0.875em;
+  --code-string: #08b94e;
+  --code-tag: #e93147;
+  --code-value: #7852ee;
+  --collapse-icon-color: #ababab;
+  --collapse-icon-color-collapsed: hsl(0, 0%, 10%);
+  --color-accent: hsl(0, 0%, 10%);
+  --color-accent-1: hsl(0, 0%, 10%);
+  --color-accent-2: hsl(-3, 0%, 11.5%);
+  --color-accent-hsl: 0, 0%, 10%;
+  --divider-color: #d4d4d4;
+  --divider-color-hover: hsl(0, 0%, 0%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #ffffff;
+  --dropdown-background-hover: rgb(163 163 163 / 0.2);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #ffffff;
+  --flair-color: #404040;
+  --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-weight: var(--h2-weight, 680);
+  --graph-line: #d4d4d4;
+  --graph-node: #737373;
+  --graph-node-attachment: #e0ac00;
+  --graph-node-focused: hsl(0, 0%, 10%);
+  --graph-node-tag: #08b94e;
+  --graph-node-unresolved: #ababab;
+  --graph-text: #404040;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #ababab;
+  --heading-spacing: 2.5rem;
+  --hr-color: #e0e0e0;
+  --interactive-accent: hsl(0, 0%, 0%);
+  --interactive-accent-hover: hsl(0, 0%, 5%);
+  --interactive-accent-hsl: 0, 0%, 10%;
+  --interactive-hover: rgb(163 163 163 / 0.2);
+  --interactive-normal: #ffffff;
+  --link-color: hsl(0, 0%, 5%);
+  --link-color-hover: hsl(0, 0%, 5%);
+  --link-external-color: hsl(0, 0%, 5%);
+  --link-external-color-hover: hsl(0, 0%, 5%);
+  --link-unresolved-color: hsla(0, 0%, 10%, 0.9);
+  --link-unresolved-decoration-color: hsla(hsla(0, 0%, 10%, 0.9), 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: #f5f5f5;
+  --menu-border-color: #d4d4d4;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+  --pdf-background: #fafafa;
+  --pdf-page-background: #fafafa;
+  --pdf-sidebar-background: #fafafa;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --search-clear-button-color: #737373;
+  --search-icon-color: #737373;
+  --search-result-background: #fafafa;
+  --setting-group-heading-color: #404040;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #e5e5e5;
+  --setting-items-border-color: #e0e0e0;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: #737373;
+  --shiki-code-background: #e5e5e5;
+  --shiki-code-block-border-radius: 0.125em;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #ababab;
+  --shiki-code-function: #08b94e;
+  --shiki-code-important: #ec7500;
+  --shiki-code-keyword: #d53984;
+  --shiki-code-normal: #737373;
+  --shiki-code-property: #00bfbc;
+  --shiki-code-punctuation: #737373;
+  --shiki-code-string: #e0ac00;
+  --shiki-code-value: #7852ee;
+  --shiki-gutter-border-color: #e0e0e0;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #ababab;
+  --shiki-gutter-text-color-highlight: #737373;
+  --shiki-highlight-green: rgba(8, 185, 78, 0.5);
+  --shiki-highlight-green-background: rgba(8, 185, 78, 0.1);
+  --shiki-highlight-neutral: #737373;
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
+  --shiki-highlight-red: rgba(233, 49, 71, 0.5);
+  --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
+  --shiki-terminal-dots-color: #ababab;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #fafafa;
+  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  --sync-avatar-color-1: #e93147;
+  --sync-avatar-color-2: #ec7500;
+  --sync-avatar-color-3: #e0ac00;
+  --sync-avatar-color-4: #08b94e;
+  --sync-avatar-color-5: #00bfbc;
+  --sync-avatar-color-6: #086ddd;
+  --sync-avatar-color-7: #7852ee;
+  --sync-avatar-color-8: #d53984;
+  --tab-background-active: #fafafa;
+  --tab-divider-color: #d4d4d4;
+  --tab-font-size: 13px;
+  --tab-outline-color: #d4d4d4;
+  --tab-radius: 0.125em;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #f5f5f5;
+  --tab-switcher-menubar-background: linear-gradient(to top, #f5f5f5, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 10%);
+  --tab-text-color: #ababab;
+  --tab-text-color-active: #737373;
+  --tab-text-color-focused: #737373;
+  --tab-text-color-focused-active: #737373;
+  --tab-text-color-focused-active-current: #404040;
+  --tab-text-color-focused-highlighted: hsl(0, 0%, 10%);
+  --table-add-button-border-color: #e0e0e0;
+  --table-add-button-border-width: 1px;
+  --table-border-color: #e0e0e0;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(0, 0%, 0%);
+  --table-drag-handle-color: #ababab;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: #e0e0e0;
+  --table-header-border-width: 1px;
+  --table-header-color: #404040;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(0, 0%, 10%, 0.1);
+  --table-selection-blend-mode: darken;
+  --table-selection-border-color: hsl(0, 0%, 0%);
+  --table-text-size: 16px;
+  --tag-background: hsla(0, 0%, 10%, 0.1);
+  --tag-background-hover: hsla(0, 0%, 10%, 0.2);
+  --tag-border-color: hsla(0, 0%, 10%, 0.15);
+  --tag-border-color-hover: hsla(0, 0%, 10%, 0.15);
+  --tag-color: hsl(0, 0%, 10%);
+  --tag-color-hover: hsl(0, 0%, 10%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(0, 0%, 10%);
+  --text-accent-hover: #171717;
+  --text-error: #e93147;
+  --text-faint: #ababab;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #737373;
+  --text-normal: #404040;
+  --text-selection: rgb(163 163 163 / 0.2);
+  --text-success: #08b94e;
+  --text-warning: #ec7500;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3718,17 +5695,17 @@ html[saved-theme="light"] body h2 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(115, 115, 115);
+  color: var(--h2-color, rgb(115, 115, 115));
   content: "#2";
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-size: 21px;
-  font-weight: 100;
-  letter-spacing: -0.33px;
-  line-height: 31.5px;
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h2-size, 21px);
+  font-weight: var(--font-h2-weight, 100);
+  letter-spacing: var(--h2-letter-spacing, -0.33px);
+  line-height: var(--h2-line-height, 31.5px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 5.25px;
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -3736,8 +5713,258 @@ html[saved-theme="light"] body h2 {
 }
 
 html[saved-theme="light"] body h3 {
-  --font-weight: 660;
-  background-color: rgba(0, 0, 0, 0);
+  --background-modifier-active-hover: #d4d4d4;
+  --background-modifier-border: #e0e0e0;
+  --background-modifier-border-focus: #d4d4d4;
+  --background-modifier-border-hover: #d4d4d4;
+  --background-modifier-error: #e93147;
+  --background-modifier-error-hover: #e93147;
+  --background-modifier-error-rgb: #ef4444;
+  --background-modifier-form-field: #ffffff;
+  --background-modifier-form-field-hover: #ffffff;
+  --background-modifier-hover: rgba(0, 0, 0, 0.067);
+  --background-modifier-success: #08b94e;
+  --background-modifier-success-rgb: 8, 185, 78;
+  --background-primary: #fafafa;
+  --background-primary-alt: #e5e5e5;
+  --background-secondary: #f5f5f5;
+  --background-secondary-alt: #d4d4d4;
+  --blockquote-border-color: hsl(0, 0%, 0%);
+  --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: darken;
+  --callout-bug: 233, 49, 71;
+  --callout-default: 8, 109, 221;
+  --callout-error: 233, 49, 71;
+  --callout-example: 120, 82, 238;
+  --callout-fail: 233, 49, 71;
+  --callout-important: 0, 191, 188;
+  --callout-info: 8, 109, 221;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 236, 117, 0;
+  --callout-radius: 0.125em;
+  --callout-success: 8, 185, 78;
+  --callout-summary: 0, 191, 188;
+  --callout-tip: 0, 191, 188;
+  --callout-title-weight: 600;
+  --callout-todo: 8, 109, 221;
+  --callout-warning: 236, 117, 0;
+  --canvas-background: #fafafa;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 0.125em;
+  --canvas-dot-pattern: #e0e0e0;
+  --caret-color: #404040;
+  --checkbox-border-color: #5c5c5c;
+  --checkbox-border-color-hover: #737373;
+  --checkbox-color: #22c55e;
+  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
+  --checkbox-marker-color: #fafafa;
+  --checkbox-radius: 0.125em;
+  --checkbox-size: 16px;
+  --checklist-done-color: #737373;
+  --clickable-icon-radius: 0.125em;
+  --code-background: #e5e5e5;
+  --code-border-color: #e0e0e0;
+  --code-bracket-background: rgba(0, 0, 0, 0.067);
+  --code-comment: #ababab;
+  --code-function: #e0ac00;
+  --code-important: #ec7500;
+  --code-keyword: #d53984;
+  --code-normal: #404040;
+  --code-operator: #e93147;
+  --code-property: #00bfbc;
+  --code-punctuation: #737373;
+  --code-radius: 0.125em;
+  --code-size: 0.875em;
+  --code-string: #08b94e;
+  --code-tag: #e93147;
+  --code-value: #7852ee;
+  --collapse-icon-color: #ababab;
+  --collapse-icon-color-collapsed: hsl(0, 0%, 10%);
+  --color-accent: hsl(0, 0%, 10%);
+  --color-accent-1: hsl(0, 0%, 10%);
+  --color-accent-2: hsl(-3, 0%, 11.5%);
+  --color-accent-hsl: 0, 0%, 10%;
+  --divider-color: #d4d4d4;
+  --divider-color-hover: hsl(0, 0%, 0%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #ffffff;
+  --dropdown-background-hover: rgb(163 163 163 / 0.2);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #ffffff;
+  --flair-color: #404040;
+  --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-weight: var(--h3-weight, 660);
+  --graph-line: #d4d4d4;
+  --graph-node: #737373;
+  --graph-node-attachment: #e0ac00;
+  --graph-node-focused: hsl(0, 0%, 10%);
+  --graph-node-tag: #08b94e;
+  --graph-node-unresolved: #ababab;
+  --graph-text: #404040;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #ababab;
+  --heading-spacing: 2.5rem;
+  --hr-color: #e0e0e0;
+  --interactive-accent: hsl(0, 0%, 0%);
+  --interactive-accent-hover: hsl(0, 0%, 5%);
+  --interactive-accent-hsl: 0, 0%, 10%;
+  --interactive-hover: rgb(163 163 163 / 0.2);
+  --interactive-normal: #ffffff;
+  --link-color: hsl(0, 0%, 5%);
+  --link-color-hover: hsl(0, 0%, 5%);
+  --link-external-color: hsl(0, 0%, 5%);
+  --link-external-color-hover: hsl(0, 0%, 5%);
+  --link-unresolved-color: hsla(0, 0%, 10%, 0.9);
+  --link-unresolved-decoration-color: hsla(hsla(0, 0%, 10%, 0.9), 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: #f5f5f5;
+  --menu-border-color: #d4d4d4;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+  --pdf-background: #fafafa;
+  --pdf-page-background: #fafafa;
+  --pdf-sidebar-background: #fafafa;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --search-clear-button-color: #737373;
+  --search-icon-color: #737373;
+  --search-result-background: #fafafa;
+  --setting-group-heading-color: #404040;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #e5e5e5;
+  --setting-items-border-color: #e0e0e0;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: #737373;
+  --shiki-code-background: #e5e5e5;
+  --shiki-code-block-border-radius: 0.125em;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #ababab;
+  --shiki-code-function: #08b94e;
+  --shiki-code-important: #ec7500;
+  --shiki-code-keyword: #d53984;
+  --shiki-code-normal: #737373;
+  --shiki-code-property: #00bfbc;
+  --shiki-code-punctuation: #737373;
+  --shiki-code-string: #e0ac00;
+  --shiki-code-value: #7852ee;
+  --shiki-gutter-border-color: #e0e0e0;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #ababab;
+  --shiki-gutter-text-color-highlight: #737373;
+  --shiki-highlight-green: rgba(8, 185, 78, 0.5);
+  --shiki-highlight-green-background: rgba(8, 185, 78, 0.1);
+  --shiki-highlight-neutral: #737373;
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
+  --shiki-highlight-red: rgba(233, 49, 71, 0.5);
+  --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
+  --shiki-terminal-dots-color: #ababab;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #fafafa;
+  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  --sync-avatar-color-1: #e93147;
+  --sync-avatar-color-2: #ec7500;
+  --sync-avatar-color-3: #e0ac00;
+  --sync-avatar-color-4: #08b94e;
+  --sync-avatar-color-5: #00bfbc;
+  --sync-avatar-color-6: #086ddd;
+  --sync-avatar-color-7: #7852ee;
+  --sync-avatar-color-8: #d53984;
+  --tab-background-active: #fafafa;
+  --tab-divider-color: #d4d4d4;
+  --tab-font-size: 13px;
+  --tab-outline-color: #d4d4d4;
+  --tab-radius: 0.125em;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #f5f5f5;
+  --tab-switcher-menubar-background: linear-gradient(to top, #f5f5f5, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 10%);
+  --tab-text-color: #ababab;
+  --tab-text-color-active: #737373;
+  --tab-text-color-focused: #737373;
+  --tab-text-color-focused-active: #737373;
+  --tab-text-color-focused-active-current: #404040;
+  --tab-text-color-focused-highlighted: hsl(0, 0%, 10%);
+  --table-add-button-border-color: #e0e0e0;
+  --table-add-button-border-width: 1px;
+  --table-border-color: #e0e0e0;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(0, 0%, 0%);
+  --table-drag-handle-color: #ababab;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: #e0e0e0;
+  --table-header-border-width: 1px;
+  --table-header-color: #404040;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(0, 0%, 10%, 0.1);
+  --table-selection-blend-mode: darken;
+  --table-selection-border-color: hsl(0, 0%, 0%);
+  --table-text-size: 16px;
+  --tag-background: hsla(0, 0%, 10%, 0.1);
+  --tag-background-hover: hsla(0, 0%, 10%, 0.2);
+  --tag-border-color: hsla(0, 0%, 10%, 0.15);
+  --tag-border-color-hover: hsla(0, 0%, 10%, 0.15);
+  --tag-color: hsl(0, 0%, 10%);
+  --tag-color-hover: hsl(0, 0%, 10%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(0, 0%, 10%);
+  --text-accent-hover: #171717;
+  --text-error: #e93147;
+  --text-faint: #ababab;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #737373;
+  --text-normal: #404040;
+  --text-selection: rgb(163 163 163 / 0.2);
+  --text-success: #08b94e;
+  --text-warning: #ec7500;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3750,17 +5977,17 @@ html[saved-theme="light"] body h3 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(115, 115, 115);
+  color: var(--h3-color, rgb(115, 115, 115));
   content: "#3";
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-size: 16.8px;
-  font-weight: 100;
-  letter-spacing: -0.192px;
-  line-height: 25.2px;
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h3-size, 16.8px);
+  font-weight: var(--font-h3-weight, 100);
+  letter-spacing: var(--h3-letter-spacing, -0.192px);
+  line-height: var(--h3-line-height, 25.2px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 4.2px;
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -3768,8 +5995,258 @@ html[saved-theme="light"] body h3 {
 }
 
 html[saved-theme="light"] body h4 {
-  --font-weight: 640;
-  background-color: rgba(0, 0, 0, 0);
+  --background-modifier-active-hover: #d4d4d4;
+  --background-modifier-border: #e0e0e0;
+  --background-modifier-border-focus: #d4d4d4;
+  --background-modifier-border-hover: #d4d4d4;
+  --background-modifier-error: #e93147;
+  --background-modifier-error-hover: #e93147;
+  --background-modifier-error-rgb: #ef4444;
+  --background-modifier-form-field: #ffffff;
+  --background-modifier-form-field-hover: #ffffff;
+  --background-modifier-hover: rgba(0, 0, 0, 0.067);
+  --background-modifier-success: #08b94e;
+  --background-modifier-success-rgb: 8, 185, 78;
+  --background-primary: #fafafa;
+  --background-primary-alt: #e5e5e5;
+  --background-secondary: #f5f5f5;
+  --background-secondary-alt: #d4d4d4;
+  --blockquote-border-color: hsl(0, 0%, 0%);
+  --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: darken;
+  --callout-bug: 233, 49, 71;
+  --callout-default: 8, 109, 221;
+  --callout-error: 233, 49, 71;
+  --callout-example: 120, 82, 238;
+  --callout-fail: 233, 49, 71;
+  --callout-important: 0, 191, 188;
+  --callout-info: 8, 109, 221;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 236, 117, 0;
+  --callout-radius: 0.125em;
+  --callout-success: 8, 185, 78;
+  --callout-summary: 0, 191, 188;
+  --callout-tip: 0, 191, 188;
+  --callout-title-weight: 600;
+  --callout-todo: 8, 109, 221;
+  --callout-warning: 236, 117, 0;
+  --canvas-background: #fafafa;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 0.125em;
+  --canvas-dot-pattern: #e0e0e0;
+  --caret-color: #404040;
+  --checkbox-border-color: #5c5c5c;
+  --checkbox-border-color-hover: #737373;
+  --checkbox-color: #22c55e;
+  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
+  --checkbox-marker-color: #fafafa;
+  --checkbox-radius: 0.125em;
+  --checkbox-size: 16px;
+  --checklist-done-color: #737373;
+  --clickable-icon-radius: 0.125em;
+  --code-background: #e5e5e5;
+  --code-border-color: #e0e0e0;
+  --code-bracket-background: rgba(0, 0, 0, 0.067);
+  --code-comment: #ababab;
+  --code-function: #e0ac00;
+  --code-important: #ec7500;
+  --code-keyword: #d53984;
+  --code-normal: #404040;
+  --code-operator: #e93147;
+  --code-property: #00bfbc;
+  --code-punctuation: #737373;
+  --code-radius: 0.125em;
+  --code-size: 0.875em;
+  --code-string: #08b94e;
+  --code-tag: #e93147;
+  --code-value: #7852ee;
+  --collapse-icon-color: #ababab;
+  --collapse-icon-color-collapsed: hsl(0, 0%, 10%);
+  --color-accent: hsl(0, 0%, 10%);
+  --color-accent-1: hsl(0, 0%, 10%);
+  --color-accent-2: hsl(-3, 0%, 11.5%);
+  --color-accent-hsl: 0, 0%, 10%;
+  --divider-color: #d4d4d4;
+  --divider-color-hover: hsl(0, 0%, 0%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #ffffff;
+  --dropdown-background-hover: rgb(163 163 163 / 0.2);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #ffffff;
+  --flair-color: #404040;
+  --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-weight: var(--h4-weight, 640);
+  --graph-line: #d4d4d4;
+  --graph-node: #737373;
+  --graph-node-attachment: #e0ac00;
+  --graph-node-focused: hsl(0, 0%, 10%);
+  --graph-node-tag: #08b94e;
+  --graph-node-unresolved: #ababab;
+  --graph-text: #404040;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #ababab;
+  --heading-spacing: 2.5rem;
+  --hr-color: #e0e0e0;
+  --interactive-accent: hsl(0, 0%, 0%);
+  --interactive-accent-hover: hsl(0, 0%, 5%);
+  --interactive-accent-hsl: 0, 0%, 10%;
+  --interactive-hover: rgb(163 163 163 / 0.2);
+  --interactive-normal: #ffffff;
+  --link-color: hsl(0, 0%, 5%);
+  --link-color-hover: hsl(0, 0%, 5%);
+  --link-external-color: hsl(0, 0%, 5%);
+  --link-external-color-hover: hsl(0, 0%, 5%);
+  --link-unresolved-color: hsla(0, 0%, 10%, 0.9);
+  --link-unresolved-decoration-color: hsla(hsla(0, 0%, 10%, 0.9), 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: #f5f5f5;
+  --menu-border-color: #d4d4d4;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+  --pdf-background: #fafafa;
+  --pdf-page-background: #fafafa;
+  --pdf-sidebar-background: #fafafa;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --search-clear-button-color: #737373;
+  --search-icon-color: #737373;
+  --search-result-background: #fafafa;
+  --setting-group-heading-color: #404040;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #e5e5e5;
+  --setting-items-border-color: #e0e0e0;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: #737373;
+  --shiki-code-background: #e5e5e5;
+  --shiki-code-block-border-radius: 0.125em;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #ababab;
+  --shiki-code-function: #08b94e;
+  --shiki-code-important: #ec7500;
+  --shiki-code-keyword: #d53984;
+  --shiki-code-normal: #737373;
+  --shiki-code-property: #00bfbc;
+  --shiki-code-punctuation: #737373;
+  --shiki-code-string: #e0ac00;
+  --shiki-code-value: #7852ee;
+  --shiki-gutter-border-color: #e0e0e0;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #ababab;
+  --shiki-gutter-text-color-highlight: #737373;
+  --shiki-highlight-green: rgba(8, 185, 78, 0.5);
+  --shiki-highlight-green-background: rgba(8, 185, 78, 0.1);
+  --shiki-highlight-neutral: #737373;
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
+  --shiki-highlight-red: rgba(233, 49, 71, 0.5);
+  --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
+  --shiki-terminal-dots-color: #ababab;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #fafafa;
+  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  --sync-avatar-color-1: #e93147;
+  --sync-avatar-color-2: #ec7500;
+  --sync-avatar-color-3: #e0ac00;
+  --sync-avatar-color-4: #08b94e;
+  --sync-avatar-color-5: #00bfbc;
+  --sync-avatar-color-6: #086ddd;
+  --sync-avatar-color-7: #7852ee;
+  --sync-avatar-color-8: #d53984;
+  --tab-background-active: #fafafa;
+  --tab-divider-color: #d4d4d4;
+  --tab-font-size: 13px;
+  --tab-outline-color: #d4d4d4;
+  --tab-radius: 0.125em;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #f5f5f5;
+  --tab-switcher-menubar-background: linear-gradient(to top, #f5f5f5, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 10%);
+  --tab-text-color: #ababab;
+  --tab-text-color-active: #737373;
+  --tab-text-color-focused: #737373;
+  --tab-text-color-focused-active: #737373;
+  --tab-text-color-focused-active-current: #404040;
+  --tab-text-color-focused-highlighted: hsl(0, 0%, 10%);
+  --table-add-button-border-color: #e0e0e0;
+  --table-add-button-border-width: 1px;
+  --table-border-color: #e0e0e0;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(0, 0%, 0%);
+  --table-drag-handle-color: #ababab;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: #e0e0e0;
+  --table-header-border-width: 1px;
+  --table-header-color: #404040;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(0, 0%, 10%, 0.1);
+  --table-selection-blend-mode: darken;
+  --table-selection-border-color: hsl(0, 0%, 0%);
+  --table-text-size: 16px;
+  --tag-background: hsla(0, 0%, 10%, 0.1);
+  --tag-background-hover: hsla(0, 0%, 10%, 0.2);
+  --tag-border-color: hsla(0, 0%, 10%, 0.15);
+  --tag-border-color-hover: hsla(0, 0%, 10%, 0.15);
+  --tag-color: hsl(0, 0%, 10%);
+  --tag-color-hover: hsl(0, 0%, 10%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(0, 0%, 10%);
+  --text-accent-hover: #171717;
+  --text-error: #e93147;
+  --text-faint: #ababab;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #737373;
+  --text-normal: #404040;
+  --text-selection: rgb(163 163 163 / 0.2);
+  --text-success: #08b94e;
+  --text-warning: #ec7500;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3782,17 +6259,17 @@ html[saved-theme="light"] body h4 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(115, 115, 115);
+  color: var(--h4-color, rgb(115, 115, 115));
   content: "#4";
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 100;
-  letter-spacing: -0.1px;
-  line-height: 21px;
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h4-size, 14px);
+  font-weight: var(--font-h4-weight, 100);
+  letter-spacing: var(--h4-letter-spacing, -0.1px);
+  line-height: var(--h4-line-height, 21px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 3.5px;
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -3800,8 +6277,258 @@ html[saved-theme="light"] body h4 {
 }
 
 html[saved-theme="light"] body h5 {
-  --font-weight: 620;
-  background-color: rgba(0, 0, 0, 0);
+  --background-modifier-active-hover: #d4d4d4;
+  --background-modifier-border: #e0e0e0;
+  --background-modifier-border-focus: #d4d4d4;
+  --background-modifier-border-hover: #d4d4d4;
+  --background-modifier-error: #e93147;
+  --background-modifier-error-hover: #e93147;
+  --background-modifier-error-rgb: #ef4444;
+  --background-modifier-form-field: #ffffff;
+  --background-modifier-form-field-hover: #ffffff;
+  --background-modifier-hover: rgba(0, 0, 0, 0.067);
+  --background-modifier-success: #08b94e;
+  --background-modifier-success-rgb: 8, 185, 78;
+  --background-primary: #fafafa;
+  --background-primary-alt: #e5e5e5;
+  --background-secondary: #f5f5f5;
+  --background-secondary-alt: #d4d4d4;
+  --blockquote-border-color: hsl(0, 0%, 0%);
+  --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: darken;
+  --callout-bug: 233, 49, 71;
+  --callout-default: 8, 109, 221;
+  --callout-error: 233, 49, 71;
+  --callout-example: 120, 82, 238;
+  --callout-fail: 233, 49, 71;
+  --callout-important: 0, 191, 188;
+  --callout-info: 8, 109, 221;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 236, 117, 0;
+  --callout-radius: 0.125em;
+  --callout-success: 8, 185, 78;
+  --callout-summary: 0, 191, 188;
+  --callout-tip: 0, 191, 188;
+  --callout-title-weight: 600;
+  --callout-todo: 8, 109, 221;
+  --callout-warning: 236, 117, 0;
+  --canvas-background: #fafafa;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 0.125em;
+  --canvas-dot-pattern: #e0e0e0;
+  --caret-color: #404040;
+  --checkbox-border-color: #5c5c5c;
+  --checkbox-border-color-hover: #737373;
+  --checkbox-color: #22c55e;
+  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
+  --checkbox-marker-color: #fafafa;
+  --checkbox-radius: 0.125em;
+  --checkbox-size: 16px;
+  --checklist-done-color: #737373;
+  --clickable-icon-radius: 0.125em;
+  --code-background: #e5e5e5;
+  --code-border-color: #e0e0e0;
+  --code-bracket-background: rgba(0, 0, 0, 0.067);
+  --code-comment: #ababab;
+  --code-function: #e0ac00;
+  --code-important: #ec7500;
+  --code-keyword: #d53984;
+  --code-normal: #404040;
+  --code-operator: #e93147;
+  --code-property: #00bfbc;
+  --code-punctuation: #737373;
+  --code-radius: 0.125em;
+  --code-size: 0.875em;
+  --code-string: #08b94e;
+  --code-tag: #e93147;
+  --code-value: #7852ee;
+  --collapse-icon-color: #ababab;
+  --collapse-icon-color-collapsed: hsl(0, 0%, 10%);
+  --color-accent: hsl(0, 0%, 10%);
+  --color-accent-1: hsl(0, 0%, 10%);
+  --color-accent-2: hsl(-3, 0%, 11.5%);
+  --color-accent-hsl: 0, 0%, 10%;
+  --divider-color: #d4d4d4;
+  --divider-color-hover: hsl(0, 0%, 0%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #ffffff;
+  --dropdown-background-hover: rgb(163 163 163 / 0.2);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #ffffff;
+  --flair-color: #404040;
+  --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-weight: var(--h5-weight, 620);
+  --graph-line: #d4d4d4;
+  --graph-node: #737373;
+  --graph-node-attachment: #e0ac00;
+  --graph-node-focused: hsl(0, 0%, 10%);
+  --graph-node-tag: #08b94e;
+  --graph-node-unresolved: #ababab;
+  --graph-text: #404040;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #ababab;
+  --heading-spacing: 2.5rem;
+  --hr-color: #e0e0e0;
+  --interactive-accent: hsl(0, 0%, 0%);
+  --interactive-accent-hover: hsl(0, 0%, 5%);
+  --interactive-accent-hsl: 0, 0%, 10%;
+  --interactive-hover: rgb(163 163 163 / 0.2);
+  --interactive-normal: #ffffff;
+  --link-color: hsl(0, 0%, 5%);
+  --link-color-hover: hsl(0, 0%, 5%);
+  --link-external-color: hsl(0, 0%, 5%);
+  --link-external-color-hover: hsl(0, 0%, 5%);
+  --link-unresolved-color: hsla(0, 0%, 10%, 0.9);
+  --link-unresolved-decoration-color: hsla(hsla(0, 0%, 10%, 0.9), 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: #f5f5f5;
+  --menu-border-color: #d4d4d4;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+  --pdf-background: #fafafa;
+  --pdf-page-background: #fafafa;
+  --pdf-sidebar-background: #fafafa;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --search-clear-button-color: #737373;
+  --search-icon-color: #737373;
+  --search-result-background: #fafafa;
+  --setting-group-heading-color: #404040;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #e5e5e5;
+  --setting-items-border-color: #e0e0e0;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: #737373;
+  --shiki-code-background: #e5e5e5;
+  --shiki-code-block-border-radius: 0.125em;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #ababab;
+  --shiki-code-function: #08b94e;
+  --shiki-code-important: #ec7500;
+  --shiki-code-keyword: #d53984;
+  --shiki-code-normal: #737373;
+  --shiki-code-property: #00bfbc;
+  --shiki-code-punctuation: #737373;
+  --shiki-code-string: #e0ac00;
+  --shiki-code-value: #7852ee;
+  --shiki-gutter-border-color: #e0e0e0;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #ababab;
+  --shiki-gutter-text-color-highlight: #737373;
+  --shiki-highlight-green: rgba(8, 185, 78, 0.5);
+  --shiki-highlight-green-background: rgba(8, 185, 78, 0.1);
+  --shiki-highlight-neutral: #737373;
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
+  --shiki-highlight-red: rgba(233, 49, 71, 0.5);
+  --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
+  --shiki-terminal-dots-color: #ababab;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #fafafa;
+  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  --sync-avatar-color-1: #e93147;
+  --sync-avatar-color-2: #ec7500;
+  --sync-avatar-color-3: #e0ac00;
+  --sync-avatar-color-4: #08b94e;
+  --sync-avatar-color-5: #00bfbc;
+  --sync-avatar-color-6: #086ddd;
+  --sync-avatar-color-7: #7852ee;
+  --sync-avatar-color-8: #d53984;
+  --tab-background-active: #fafafa;
+  --tab-divider-color: #d4d4d4;
+  --tab-font-size: 13px;
+  --tab-outline-color: #d4d4d4;
+  --tab-radius: 0.125em;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #f5f5f5;
+  --tab-switcher-menubar-background: linear-gradient(to top, #f5f5f5, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 10%);
+  --tab-text-color: #ababab;
+  --tab-text-color-active: #737373;
+  --tab-text-color-focused: #737373;
+  --tab-text-color-focused-active: #737373;
+  --tab-text-color-focused-active-current: #404040;
+  --tab-text-color-focused-highlighted: hsl(0, 0%, 10%);
+  --table-add-button-border-color: #e0e0e0;
+  --table-add-button-border-width: 1px;
+  --table-border-color: #e0e0e0;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(0, 0%, 0%);
+  --table-drag-handle-color: #ababab;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: #e0e0e0;
+  --table-header-border-width: 1px;
+  --table-header-color: #404040;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(0, 0%, 10%, 0.1);
+  --table-selection-blend-mode: darken;
+  --table-selection-border-color: hsl(0, 0%, 0%);
+  --table-text-size: 16px;
+  --tag-background: hsla(0, 0%, 10%, 0.1);
+  --tag-background-hover: hsla(0, 0%, 10%, 0.2);
+  --tag-border-color: hsla(0, 0%, 10%, 0.15);
+  --tag-border-color-hover: hsla(0, 0%, 10%, 0.15);
+  --tag-color: hsl(0, 0%, 10%);
+  --tag-color-hover: hsl(0, 0%, 10%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(0, 0%, 10%);
+  --text-accent-hover: #171717;
+  --text-error: #e93147;
+  --text-faint: #ababab;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #737373;
+  --text-normal: #404040;
+  --text-selection: rgb(163 163 163 / 0.2);
+  --text-success: #08b94e;
+  --text-warning: #ec7500;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3814,17 +6541,17 @@ html[saved-theme="light"] body h5 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(115, 115, 115);
+  color: var(--h5-color, rgb(115, 115, 115));
   content: "#5";
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-size: 12.6px;
-  font-weight: 100;
-  letter-spacing: -0.036px;
-  line-height: 18.9px;
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h5-size, 12.6px);
+  font-weight: var(--font-h5-weight, 100);
+  letter-spacing: var(--h5-letter-spacing, -0.036px);
+  line-height: var(--h5-line-height, 18.9px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 3.15px;
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -3832,7 +6559,257 @@ html[saved-theme="light"] body h5 {
 }
 
 html[saved-theme="light"] body h6 {
-  --font-weight: 600;
+  --background-modifier-active-hover: #d4d4d4;
+  --background-modifier-border: #e0e0e0;
+  --background-modifier-border-focus: #d4d4d4;
+  --background-modifier-border-hover: #d4d4d4;
+  --background-modifier-error: #e93147;
+  --background-modifier-error-hover: #e93147;
+  --background-modifier-error-rgb: #ef4444;
+  --background-modifier-form-field: #ffffff;
+  --background-modifier-form-field-hover: #ffffff;
+  --background-modifier-hover: rgba(0, 0, 0, 0.067);
+  --background-modifier-success: #08b94e;
+  --background-modifier-success-rgb: 8, 185, 78;
+  --background-primary: #fafafa;
+  --background-primary-alt: #e5e5e5;
+  --background-secondary: #f5f5f5;
+  --background-secondary-alt: #d4d4d4;
+  --blockquote-border-color: hsl(0, 0%, 0%);
+  --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: darken;
+  --callout-bug: 233, 49, 71;
+  --callout-default: 8, 109, 221;
+  --callout-error: 233, 49, 71;
+  --callout-example: 120, 82, 238;
+  --callout-fail: 233, 49, 71;
+  --callout-important: 0, 191, 188;
+  --callout-info: 8, 109, 221;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 236, 117, 0;
+  --callout-radius: 0.125em;
+  --callout-success: 8, 185, 78;
+  --callout-summary: 0, 191, 188;
+  --callout-tip: 0, 191, 188;
+  --callout-title-weight: 600;
+  --callout-todo: 8, 109, 221;
+  --callout-warning: 236, 117, 0;
+  --canvas-background: #fafafa;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 0.125em;
+  --canvas-dot-pattern: #e0e0e0;
+  --caret-color: #404040;
+  --checkbox-border-color: #5c5c5c;
+  --checkbox-border-color-hover: #737373;
+  --checkbox-color: #22c55e;
+  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
+  --checkbox-marker-color: #fafafa;
+  --checkbox-radius: 0.125em;
+  --checkbox-size: 16px;
+  --checklist-done-color: #737373;
+  --clickable-icon-radius: 0.125em;
+  --code-background: #e5e5e5;
+  --code-border-color: #e0e0e0;
+  --code-bracket-background: rgba(0, 0, 0, 0.067);
+  --code-comment: #ababab;
+  --code-function: #e0ac00;
+  --code-important: #ec7500;
+  --code-keyword: #d53984;
+  --code-normal: #404040;
+  --code-operator: #e93147;
+  --code-property: #00bfbc;
+  --code-punctuation: #737373;
+  --code-radius: 0.125em;
+  --code-size: 0.875em;
+  --code-string: #08b94e;
+  --code-tag: #e93147;
+  --code-value: #7852ee;
+  --collapse-icon-color: #ababab;
+  --collapse-icon-color-collapsed: hsl(0, 0%, 10%);
+  --color-accent: hsl(0, 0%, 10%);
+  --color-accent-1: hsl(0, 0%, 10%);
+  --color-accent-2: hsl(-3, 0%, 11.5%);
+  --color-accent-hsl: 0, 0%, 10%;
+  --divider-color: #d4d4d4;
+  --divider-color-hover: hsl(0, 0%, 0%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #ffffff;
+  --dropdown-background-hover: rgb(163 163 163 / 0.2);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #ffffff;
+  --flair-color: #404040;
+  --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-print: '??', '??', '??', 'Arial';
+  --font-text: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
+  --font-weight: var(--h6-weight, 600);
+  --graph-line: #d4d4d4;
+  --graph-node: #737373;
+  --graph-node-attachment: #e0ac00;
+  --graph-node-focused: hsl(0, 0%, 10%);
+  --graph-node-tag: #08b94e;
+  --graph-node-unresolved: #ababab;
+  --graph-text: #404040;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #ababab;
+  --heading-spacing: 2.5rem;
+  --hr-color: #e0e0e0;
+  --interactive-accent: hsl(0, 0%, 0%);
+  --interactive-accent-hover: hsl(0, 0%, 5%);
+  --interactive-accent-hsl: 0, 0%, 10%;
+  --interactive-hover: rgb(163 163 163 / 0.2);
+  --interactive-normal: #ffffff;
+  --link-color: hsl(0, 0%, 5%);
+  --link-color-hover: hsl(0, 0%, 5%);
+  --link-external-color: hsl(0, 0%, 5%);
+  --link-external-color-hover: hsl(0, 0%, 5%);
+  --link-unresolved-color: hsla(0, 0%, 10%, 0.9);
+  --link-unresolved-decoration-color: hsla(hsla(0, 0%, 10%, 0.9), 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --menu-background: #f5f5f5;
+  --menu-border-color: #d4d4d4;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+  --pdf-background: #fafafa;
+  --pdf-page-background: #fafafa;
+  --pdf-sidebar-background: #fafafa;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --search-clear-button-color: #737373;
+  --search-icon-color: #737373;
+  --search-result-background: #fafafa;
+  --setting-group-heading-color: #404040;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #e5e5e5;
+  --setting-items-border-color: #e0e0e0;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: #737373;
+  --shiki-code-background: #e5e5e5;
+  --shiki-code-block-border-radius: 0.125em;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #ababab;
+  --shiki-code-function: #08b94e;
+  --shiki-code-important: #ec7500;
+  --shiki-code-keyword: #d53984;
+  --shiki-code-normal: #737373;
+  --shiki-code-property: #00bfbc;
+  --shiki-code-punctuation: #737373;
+  --shiki-code-string: #e0ac00;
+  --shiki-code-value: #7852ee;
+  --shiki-gutter-border-color: #e0e0e0;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #ababab;
+  --shiki-gutter-text-color-highlight: #737373;
+  --shiki-highlight-green: rgba(8, 185, 78, 0.5);
+  --shiki-highlight-green-background: rgba(8, 185, 78, 0.1);
+  --shiki-highlight-neutral: #737373;
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
+  --shiki-highlight-red: rgba(233, 49, 71, 0.5);
+  --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
+  --shiki-terminal-dots-color: #ababab;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #fafafa;
+  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  --sync-avatar-color-1: #e93147;
+  --sync-avatar-color-2: #ec7500;
+  --sync-avatar-color-3: #e0ac00;
+  --sync-avatar-color-4: #08b94e;
+  --sync-avatar-color-5: #00bfbc;
+  --sync-avatar-color-6: #086ddd;
+  --sync-avatar-color-7: #7852ee;
+  --sync-avatar-color-8: #d53984;
+  --tab-background-active: #fafafa;
+  --tab-divider-color: #d4d4d4;
+  --tab-font-size: 13px;
+  --tab-outline-color: #d4d4d4;
+  --tab-radius: 0.125em;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #f5f5f5;
+  --tab-switcher-menubar-background: linear-gradient(to top, #f5f5f5, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 10%);
+  --tab-text-color: #ababab;
+  --tab-text-color-active: #737373;
+  --tab-text-color-focused: #737373;
+  --tab-text-color-focused-active: #737373;
+  --tab-text-color-focused-active-current: #404040;
+  --tab-text-color-focused-highlighted: hsl(0, 0%, 10%);
+  --table-add-button-border-color: #e0e0e0;
+  --table-add-button-border-width: 1px;
+  --table-border-color: #e0e0e0;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(0, 0%, 0%);
+  --table-drag-handle-color: #ababab;
+  --table-drag-handle-color-active: white;
+  --table-header-background: transparent;
+  --table-header-border-color: #e0e0e0;
+  --table-header-border-width: 1px;
+  --table-header-color: #404040;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(0, 0%, 10%, 0.1);
+  --table-selection-blend-mode: darken;
+  --table-selection-border-color: hsl(0, 0%, 0%);
+  --table-text-size: 16px;
+  --tag-background: hsla(0, 0%, 10%, 0.1);
+  --tag-background-hover: hsla(0, 0%, 10%, 0.2);
+  --tag-border-color: hsla(0, 0%, 10%, 0.15);
+  --tag-border-color-hover: hsla(0, 0%, 10%, 0.15);
+  --tag-color: hsl(0, 0%, 10%);
+  --tag-color-hover: hsl(0, 0%, 10%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(0, 0%, 10%);
+  --text-accent-hover: #171717;
+  --text-error: #e93147;
+  --text-faint: #ababab;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #737373;
+  --text-normal: #404040;
+  --text-selection: rgb(163 163 163 / 0.2);
+  --text-success: #08b94e;
+  --text-warning: #ec7500;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 0px;
@@ -3846,12 +6823,12 @@ html[saved-theme="light"] body h6 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(115, 115, 115);
+  color: var(--h6-color, rgb(115, 115, 115));
   content: "#6";
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-size: 11.2px;
-  font-weight: 100;
-  line-height: 16.8px;
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h6-size, 11.2px);
+  font-weight: var(--font-h6-weight, 100);
+  line-height: var(--h6-line-height, 16.8px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 2.8px;
@@ -3869,42 +6846,45 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--checkbox-color, rgba(0, 0, 0, 0));
   border-color: rgba(0, 0, 0, 0);
 }
 
 html[saved-theme="light"] body p {
-  color: rgb(115, 115, 115);
+  color: var(--text-muted, rgb(115, 115, 115));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(115, 115, 115) none 0px;
   text-decoration-color: rgb(115, 115, 115);
 }`,
     links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
-  color: rgb(13, 13, 13);
+  color: var(--link-color, rgb(13, 13, 13));
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  font-weight: var(--font-text-weight, 400);
   outline: rgb(13, 13, 13) none 0px;
   text-decoration: underline 1px rgb(13, 13, 13);
   text-decoration-color: rgb(13, 13, 13);
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: var(--link-decoration-thickness, 1px);
 }
 
 html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(13, 13, 13);
+  color: var(--link-color, rgb(13, 13, 13));
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  font-weight: var(--font-text-weight, 400);
   outline: rgb(13, 13, 13) none 0px;
   text-decoration: underline 1px rgb(13, 13, 13);
   text-decoration-color: rgb(13, 13, 13);
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: var(--link-decoration-thickness, 1px);
 }
 
 html[saved-theme="light"] body a.internal-link.broken {
-  color: rgba(26, 26, 26, 0.9);
+  color: var(--link-color, rgba(26, 26, 26, 0.9));
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  font-weight: var(--font-text-weight, 400);
   outline: rgba(26, 26, 26, 0.9) none 0px;
   text-decoration: underline 1px dashed;
-  text-decoration-color: rgba(26, 26, 26, 0.9);
-  text-decoration-style: dashed;
-  text-decoration-thickness: 1px;
+  text-decoration-color: var(--link-unresolved-decoration-color, rgba(26, 26, 26, 0.9));
+  text-decoration-style: var(--link-unresolved-decoration-style, dashed);
+  text-decoration-thickness: var(--link-decoration-thickness, 1px);
 }`,
     lists: `html[saved-theme="light"] body dd {
   color: rgb(64, 64, 64);
@@ -3929,12 +6909,12 @@ html[saved-theme="light"] body ul.overflow {
   border-top-color: rgb(64, 64, 64);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
-  color: rgb(13, 13, 13);
+  color: var(--link-color, rgb(13, 13, 13));
   text-decoration: underline 1px rgb(13, 13, 13);
 }
 
 html[saved-theme="light"] body blockquote {
-  background-color: rgba(10, 10, 10, 0.05);
+  background-color: var(--quote-bg-color, rgba(10, 10, 10, 0.05));
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -3955,16 +6935,17 @@ html[saved-theme="light"] body table {
 }
 
 html[saved-theme="light"] body td {
+  background-color: var(--color-accent-o10, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
   border-top-color: rgb(115, 115, 115);
-  color: rgb(64, 64, 64);
+  color: var(--table-text-color, rgb(64, 64, 64));
   padding-bottom: 8px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 8px;
-  vertical-align: middle;
+  vertical-align: var(--table-cell-vertical-alignment, middle);
 }
 
 html[saved-theme="light"] body th {
@@ -3972,14 +6953,14 @@ html[saved-theme="light"] body th {
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
-  color: rgb(23, 23, 23);
-  font-weight: 400;
+  color: var(--text-strong, rgb(23, 23, 23));
+  font-weight: var(--table-header-weight, 400);
   padding-bottom: 8px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 8px;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: var(--table-cell-vertical-alignment, middle);
 }
 
 html[saved-theme="light"] body thead {
@@ -3992,7 +6973,7 @@ html[saved-theme="light"] body tr {
   border-top-color: rgba(0, 0, 0, 0);
 }`,
     code: `html[saved-theme="light"] body code {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--code-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4001,8 +6982,8 @@ html[saved-theme="light"] body tr {
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(115, 115, 115);
-  font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  color: var(--ec-codeFg, rgb(115, 115, 115));
+  font-family: var(--ec-codeFontFml, iawriter-mono, Nitti, Menlo, Courier, monospace);
   padding-bottom: 12px;
   padding-left: 0px;
   padding-right: 0px;
@@ -4010,7 +6991,7 @@ html[saved-theme="light"] body tr {
 }
 
 html[saved-theme="light"] body pre:has(> code) {
-  background-color: rgb(229, 229, 229);
+  background-color: var(--code-bg-color, rgb(229, 229, 229));
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -4065,7 +7046,7 @@ html[saved-theme="light"] body video {
   border-top-color: rgb(64, 64, 64);
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
-  background-color: rgb(229, 229, 229);
+  background-color: var(--background-primary-alt, rgb(229, 229, 229));
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgb(115, 115, 115);
   border-right-color: rgb(115, 115, 115);
@@ -5335,11 +8316,11 @@ html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="chec
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(64, 64, 64);
+  color: var(--callout-title-color, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout > .callout-content {
@@ -5347,9 +8328,9 @@ html[saved-theme="light"] body .callout > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-summary, 0, 191, 188);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: color-mix(in srgb, var(--callout-abstract-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -5367,11 +8348,11 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(64, 64, 64);
+  color: var(--callout-title-color, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-content {
@@ -5379,9 +8360,9 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-bug, 233, 49, 71);
   background: color(srgb 1 0.909804 0.917647 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 1 0.909804 0.917647 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-bug-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -5399,11 +8380,11 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(64, 64, 64);
+  color: var(--callout-title-color, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
@@ -5411,9 +8392,9 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-error, 233, 49, 71);
   background: color(srgb 1 0.909804 0.917647 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 1 0.909804 0.917647 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-danger-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -5431,11 +8412,11 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(64, 64, 64);
+  color: var(--callout-title-color, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-content {
@@ -5443,9 +8424,9 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
-  --callout-color: 120, 82, 238;
+  --callout-color: var(--callout-example, 120, 82, 238);
   background: color(srgb 0.937255 0.921569 0.996078 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.937255 0.921569 0.996078 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-example-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -5463,11 +8444,11 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(64, 64, 64);
+  color: var(--callout-title-color, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] > .callout-content {
@@ -5475,9 +8456,9 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-fail, 233, 49, 71);
   background: color(srgb 1 0.909804 0.917647 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 1 0.909804 0.917647 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-failure-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -5495,11 +8476,11 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(64, 64, 64);
+  color: var(--callout-title-color, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-content {
@@ -5507,9 +8488,9 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-info, 8, 109, 221);
   background: color(srgb 0.894118 0.933333 0.992157 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.894118 0.933333 0.992157 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-info-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -5527,11 +8508,11 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(64, 64, 64);
+  color: var(--callout-title-color, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content {
@@ -5539,9 +8520,9 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   background: color(srgb 0.894118 0.933333 0.992157 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.894118 0.933333 0.992157 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-note-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -5559,11 +8540,11 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(64, 64, 64);
+  color: var(--callout-title-color, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content {
@@ -5571,9 +8552,9 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-question, 236, 117, 0);
   background: color(srgb 1 0.941176 0.898039 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 1 0.941176 0.898039 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-question-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -5591,11 +8572,11 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(64, 64, 64);
+  color: var(--callout-title-color, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] > .callout-content {
@@ -5603,9 +8584,9 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background: color(srgb 0.956863 0.956863 0.956863 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.956863 0.956863 0.956863 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-quote-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -5623,11 +8604,11 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(64, 64, 64);
+  color: var(--callout-title-color, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content {
@@ -5635,9 +8616,9 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
-  --callout-color: 8, 185, 78;
+  --callout-color: var(--callout-success, 8, 185, 78);
   background: color(srgb 0.909804 0.972549 0.917647 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.909804 0.972549 0.917647 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-success-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -5655,11 +8636,11 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(64, 64, 64);
+  color: var(--callout-title-color, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] > .callout-content {
@@ -5667,9 +8648,9 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-tip, 0, 191, 188);
   background: color(srgb 0.909804 0.972549 0.972549 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.909804 0.972549 0.972549 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-tip-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -5687,11 +8668,11 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(64, 64, 64);
+  color: var(--callout-title-color, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
@@ -5699,9 +8680,9 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-todo, 8, 109, 221);
   background: color(srgb 0.894118 0.933333 0.992157 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.894118 0.933333 0.992157 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-todo-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -5719,11 +8700,11 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(64, 64, 64);
+  color: var(--callout-title-color, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content {
@@ -5731,9 +8712,9 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-warning, 236, 117, 0);
   background: color(srgb 1 0.941176 0.898039 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 1 0.941176 0.898039 / 0.8);
+  background-color: color-mix(in srgb, var(--callout-warning-bg-color), transparent 20%);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -5751,11 +8732,11 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(64, 64, 64);
+  color: var(--callout-title-color, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] > .callout-content {
@@ -5822,12 +8803,12 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-bottom-right-radius: 1.625px;
   border-top-left-radius: 1.625px;
   border-top-right-radius: 1.625px;
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--background-color-glass, rgba(255, 255, 255, 0.8));
   border-bottom-color: rgba(26, 26, 26, 0.6);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -5907,7 +8888,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgba(26, 26, 26, 0.5);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -5920,7 +8901,8 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  font-family: var(--font-monospace, iawriter-mono, Nitti, Menlo, Courier, monospace);
+  font-weight: var(--font-tag-weight, 400);
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -5928,44 +8910,44 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
-  color: rgb(64, 64, 64);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--text-strong, rgb(64, 64, 64));
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(23, 23, 23);
-  font-size: 32px;
-  font-weight: 900;
+  color: var(--text-strong, rgb(23, 23, 23));
+  font-size: var(--inline-title-size, 32px);
+  font-weight: var(--inline-title-weight, 900);
 }
 
 html[saved-theme="light"] body h2 {
-  color: rgb(64, 64, 64);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--h2-color, rgb(64, 64, 64));
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  color: rgb(23, 23, 23);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--text-strong, rgb(23, 23, 23));
+  font-family: var(--inline-title-font, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h3 {
-  color: rgb(64, 64, 64);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--h3-color, rgb(64, 64, 64));
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
-  color: rgb(64, 64, 64);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--h4-color, rgb(64, 64, 64));
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
-  color: rgb(64, 64, 64);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--h5-color, rgb(64, 64, 64));
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
-  color: rgb(64, 64, 64);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--h6-color, rgb(64, 64, 64));
+  font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body hr {
@@ -5974,7 +8956,7 @@ html[saved-theme="light"] body hr {
   border-right-color: rgb(212, 212, 212);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -5989,16 +8971,22 @@ html[saved-theme="light"] body hr {
   padding-top: 8px;
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(64, 64, 64);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--text-normal, rgb(64, 64, 64));
+  font-family: var(--font-file-tree, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-file-tree-weight, 400);
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(64, 64, 64);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  color: var(--text-normal, rgb(64, 64, 64));
+  font-family: var(--font-file-tree, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-file-tree-weight, 400);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.depth-0 {
+  font-weight: var(--font-file-tree-weight, 400);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(115, 115, 115);
@@ -6009,11 +8997,11 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 1.875px;
   border-top-right-radius: 1.875px;
-  color: rgb(115, 115, 115);
-  cursor: pointer;
+  color: var(--text-muted, rgb(115, 115, 115));
+  cursor: var(--cursor, pointer);
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: rgb(245, 245, 245);
+  background-color: var(--status-bar-background, rgb(245, 245, 245));
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 1.5px;
   border-bottom-right-radius: 1.5px;
@@ -6022,7 +9010,7 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-color: rgb(64, 64, 64);
   border-top-left-radius: 1.5px;
   border-top-right-radius: 1.5px;
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
@@ -6043,7 +9031,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -6063,7 +9051,7 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -6081,8 +9069,8 @@ html[saved-theme="light"] body ul.section-ul {
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 1.875px;
   border-top-right-radius: 1.875px;
-  color: rgb(115, 115, 115);
-  cursor: pointer;
+  color: var(--text-muted, rgb(115, 115, 115));
+  cursor: var(--cursor, pointer);
 }
 
 html[saved-theme="light"] body .darkmode svg {
@@ -6098,7 +9086,7 @@ html[saved-theme="light"] body .darkmode svg {
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 1.625px;
   border-top-right-radius: 1.625px;
-  color: rgb(115, 115, 115);
+  color: var(--text-muted, rgb(115, 115, 115));
 }
 
 html[saved-theme="light"] body .breadcrumb-element p {
@@ -6113,7 +9101,7 @@ html[saved-theme="light"] body .canvas-node-content {
 }
 
 html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(64, 64, 64);
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body .canvas-node-group {
@@ -6121,7 +9109,7 @@ html[saved-theme="light"] body .canvas-node-group {
 }
 
 html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(245, 245, 245);
+  background-color: var(--background-secondary, rgb(245, 245, 245));
   border-color: rgb(212, 212, 212);
 }`,
     bases: `html[saved-theme="light"] body .bases-table {
@@ -6130,11 +9118,11 @@ html[saved-theme="light"] body .canvas-sidebar {
 
 html[saved-theme="light"] body .bases-table thead th {
   border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(64, 64, 64);
-  color: rgb(23, 23, 23);
-  font-weight: 400;
+  color: var(--text-strong, rgb(23, 23, 23));
+  font-weight: var(--table-header-weight, 400);
 }`,
     properties: `html[saved-theme="light"] body .metadata {
-  color: rgb(115, 115, 115);
+  color: var(--text-muted, rgb(115, 115, 115));
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
@@ -6156,9 +9144,9 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-radius: 0px;
-  color: rgb(23, 23, 23);
+  color: var(--text-strong, rgb(23, 23, 23));
 }
 
 html[saved-theme="light"] body .note-properties-value {
@@ -6166,8 +9154,8 @@ html[saved-theme="light"] body .note-properties-value {
 }
 
 html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(250, 250, 250);
-  color: rgb(64, 64, 64);
+  background-color: var(--background-primary, rgb(250, 250, 250));
+  color: var(--text-normal, rgb(64, 64, 64));
 }
 
 html[saved-theme="light"] body ol.overflow {
@@ -6177,12 +9165,12 @@ html[saved-theme="light"] body ol.overflow {
   border-top-color: rgb(64, 64, 64);
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
-  background-color: rgb(245, 245, 245);
+  background-color: var(--background-secondary, rgb(245, 245, 245));
   border-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body .stacked-page-header {
-  background-color: rgb(250, 250, 250);
+  background-color: var(--background-primary, rgb(250, 250, 250));
 }
 
 html[saved-theme="light"] body .stacked-page.active {
@@ -6193,15 +9181,15 @@ html[saved-theme="light"] body .stacked-page.active {
   border-left-color: rgb(23, 23, 23);
   border-right-color: rgb(23, 23, 23);
   border-top-color: rgb(23, 23, 23);
-  color: rgb(23, 23, 23);
+  color: var(--text-strong, rgb(23, 23, 23));
 }
 
 html[saved-theme="light"] body .navigation-progress {
-  background-color: rgb(245, 245, 245);
+  background-color: var(--status-bar-background, rgb(245, 245, 245));
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
-  color: rgb(23, 23, 23);
+  color: var(--text-strong, rgb(23, 23, 23));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
@@ -6221,12 +9209,12 @@ html[saved-theme="light"] body input[type=text] {
   border-left-color: rgb(115, 115, 115);
   border-right-color: rgb(115, 115, 115);
   border-top-color: rgb(115, 115, 115);
-  color: rgb(115, 115, 115);
+  color: var(--text-normal, rgb(115, 115, 115));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="light"] body kbd {
-  background-color: rgb(229, 229, 229);
+  background-color: var(--code-background, rgb(229, 229, 229));
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 1.75px;
   border-bottom-right-radius: 1.75px;
@@ -6235,8 +9223,8 @@ html[saved-theme="light"] body kbd {
   border-top-color: rgb(64, 64, 64);
   border-top-left-radius: 1.75px;
   border-top-right-radius: 1.75px;
-  color: rgb(64, 64, 64);
-  font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  color: var(--code-normal, rgb(64, 64, 64));
+  font-family: var(--font-monospace, iawriter-mono, Nitti, Menlo, Courier, monospace);
 }
 
 html[saved-theme="light"] body progress {
@@ -6259,7 +9247,7 @@ html[saved-theme="light"] body sup {
 }
 
 html[saved-theme="light"] body ul.tags > li {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tag-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgba(26, 26, 26, 0.5);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -6272,7 +9260,7 @@ html[saved-theme="light"] body ul.tags > li {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  color: rgb(23, 23, 23);
+  color: var(--text-strong, rgb(23, 23, 23));
 }`,
   },
   classSettings: {

@@ -12,114 +12,104 @@ export const theme: ThemeData = {
     base: `:root:root[saved-theme="dark"] {
   --accent-h: 189;
   --accent-l: 49%;
-  --accent-on-selection: hsla(189, 100%, 49%, 0.4);
+  --accent-on-selection: hsla(var(--color-accent-hsl), 0.4);
   --accent-s: 100%;
-  --accent-soft-dark: hsla(221, 16.65%, 85%, 0.1);
-  --accent-soft-hsl: 221, 16.65%, 85%;
-  --accent-soft-light: hsla(221, 16.65%, 85%, 0.05);
-  --background-contrast: 3.504%;
+  --accent-soft-dark: hsla(var(--accent-soft-hsl), 0.1);
+  --accent-soft-hsl: var(--background-h), calc(var(--background-s)*0.5), 85%;
+  --accent-soft-light: hsla(var(--accent-soft-hsl), 0.05);
+  --background-contrast: calc(var(--ss-dark-contrast)*4.8);
   --background-dark: rgb(10, 18, 30);
   --background-extra-dark: #000;
-  --background-h: 221;
-  --background-l: 12.9%;
-  --background-modifier-active-hover: hsla(221, 16.65%, 85%, 0.05);
-  --background-modifier-border: hsla(221, 16.65%, 85%, 0.1);
-  --background-modifier-border-focus: hsl(221, 33.3%, 8.9%);
-  --background-modifier-border-hover: hsla(221, 16.65%, 85%, 0.1);
-  --background-modifier-error: rgb(250, 30, 0);
-  --background-modifier-error-hover: rgb(250, 30, 0);
-  --background-modifier-form-field: rgb(10, 18, 30);
-  --background-modifier-form-field-hover: rgb(10, 18, 30);
-  --background-modifier-hover: hsla(221, 16.65%, 85%, 0.05);
-  --background-modifier-success: rgb(30, 169, 67);
-  --background-primary: hsl(221, 33.3%, 12.9%);
-  --background-primary-alt: rgb(10, 18, 30);
-  --background-s: 33.3%;
-  --background-secondary: hsl(221, 29.1375%, 18.404%);
-  --background-secondary-alt: hsl(221, 29.1375%, 18.404%);
-  --background-secondary-l: 18.404%;
-  --background-secondary-s: 29.1375%;
-  --bases-cards-background: hsl(221, 33.3%, 12.9%);
-  --bases-cards-cover-background: rgb(10, 18, 30);
-  --bases-cards-radius: 4px;
-  --bases-cards-shadow: 0 0 0 1px hsla(221, 16.65%, 85%, 0.1);
-  --bases-cards-shadow-hover: 0 0 0 1px hsla(221, 16.65%, 85%, 0.1);
-  --bases-embed-border-color: hsla(221, 16.65%, 85%, 0.1);
-  --bases-embed-border-radius: 2px;
-  --bases-group-heading-property-color: rgb(250, 247, 245);
-  --bases-group-heading-property-size: 13px;
-  --bases-table-border-color: rgb(250, 247, 245);
-  --bases-table-cell-background-active: hsl(221, 33.3%, 12.9%);
-  --bases-table-cell-background-disabled: rgb(10, 18, 30);
-  --bases-table-cell-background-selected: hsla(189, 100%, 49%, 0.1);
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(221, 33.3%, 8.9%);
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(189, 100%, 49%);
-  --bases-table-container-border-radius: 2px;
-  --bases-table-group-background: rgb(10, 18, 30);
-  --bases-table-header-background: hsl(221, 33.3%, 12.9%);
-  --bases-table-header-background-hover: hsla(221, 16.65%, 85%, 0.05);
-  --bases-table-header-color: rgb(250, 247, 245);
-  --bases-table-summary-background: hsl(221, 33.3%, 12.9%);
-  --bases-table-summary-background-hover: hsla(221, 16.65%, 85%, 0.05);
-  --blockquote-border-color: hsl(189, 100%, 49%);
-  --blur-background: color-mix(in srgb, rgb(10, 18, 30) 65%, transparent) linear-gradient(rgb(10, 18, 30), color-mix(in srgb, rgb(10, 18, 30) 65%, transparent));
-  --bodyFont: var(--font-text, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
-  --button-radius: 2px;
-  --button-shadow: hsl(221, 16.65%, 85%, 0.6);
+  --background-h: var(--ss-dark-h, 221);
+  --background-l: calc(var(--ss-dark-l)*5);
+  --background-modifier-active-hover: var(--accent-soft-light, hsla(221, 16.65%, 85%, 0.05));
+  --background-modifier-border: var(--accent-soft-dark, hsla(221, 16.65%, 85%, 0.1));
+  --background-modifier-border-focus: hsl(var(--background-h), var(--background-s), calc(var(--background-l) - 4%));
+  --background-modifier-border-hover: var(--accent-soft-dark, hsla(221, 16.65%, 85%, 0.1));
+  --background-modifier-error: var(--text-error, rgb(250, 30, 0));
+  --background-modifier-error-hover: var(--text-error, rgb(250, 30, 0));
+  --background-modifier-form-field: var(--background-dark, rgb(10, 18, 30));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, rgb(10, 18, 30));
+  --background-modifier-hover: var(--accent-soft-light, hsla(221, 16.65%, 85%, 0.05));
+  --background-modifier-success: var(--color-green, rgb(30, 169, 67));
+  --background-primary: hsl(var(--background-h), var(--background-s), var(--background-l));
+  --background-primary-alt: var(--background-dark, rgb(10, 18, 30));
+  --background-s: calc(var(--ss-dark-s)*10);
+  --background-secondary: hsl(var(--background-h), var(--background-secondary-s), var(--background-secondary-l));
+  --background-secondary-alt: var(--background-secondary, hsl(221, 29.1375%, 18.404%));
+  --background-secondary-l: calc(var(--background-l) + 2% + var(--background-contrast));
+  --background-secondary-s: calc(var(--background-s)*0.875);
+  --bases-cards-background: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --bases-cards-cover-background: var(--background-primary-alt, rgb(10, 18, 30));
+  --bases-cards-radius: var(--radius-m, 4px);
+  --bases-embed-border-color: var(--background-modifier-border, hsla(221, 16.65%, 85%, 0.1));
+  --bases-embed-border-radius: var(--radius-s, 2px);
+  --bases-group-heading-property-color: var(--text-muted, rgb(250, 247, 245));
+  --bases-group-heading-property-size: var(--font-ui-smaller, 13px);
+  --bases-table-border-color: var(--table-border-color, rgb(250, 247, 245));
+  --bases-table-cell-background-active: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --bases-table-cell-background-disabled: var(--background-primary-alt, rgb(10, 18, 30));
+  --bases-table-cell-background-selected: var(--table-selection, hsla(189, 100%, 49%, 0.1));
+  --bases-table-container-border-radius: var(--radius-s, 2px);
+  --bases-table-group-background: var(--background-primary-alt, rgb(10, 18, 30));
+  --bases-table-header-background: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --bases-table-header-background-hover: var(--background-modifier-hover, hsla(221, 16.65%, 85%, 0.05));
+  --bases-table-header-color: var(--text-muted, rgb(250, 247, 245));
+  --bases-table-summary-background: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --bases-table-summary-background-hover: var(--background-modifier-hover, hsla(221, 16.65%, 85%, 0.05));
+  --blockquote-border-color: var(--interactive-accent, hsl(189, 100%, 49%));
+  --button-radius: var(--radius-s, 2px);
+  --button-shadow: hsl(var(--accent-soft-hsl), 0.6);
   --button-shadow-hover: rgba(255, 255, 255, 0.67);
-  --callout-bug: rgb(245, 0, 170);
-  --callout-default: rgb(250, 247, 245);
-  --callout-error: rgb(250, 30, 0);
-  --callout-example: rgb(250, 247, 245);
-  --callout-fail: rgb(250, 30, 0);
-  --callout-important: hsl(189, 100%, 49%);
-  --callout-info: rgb(250, 247, 245);
-  --callout-question: rgb(250, 247, 245);
-  --callout-quote: rgb(250, 247, 245);
-  --callout-radius: 2px;
-  --callout-success: rgb(0, 190, 0);
-  --callout-summary: rgb(250, 247, 245);
-  --callout-tip: rgb(255, 220, 120);
-  --callout-todo: rgb(0, 130, 255);
-  --callout-warning: rgb(220, 210, 0);
-  --canvas-background: hsl(221, 33.3%, 12.9%);
-  --canvas-card-label-color: rgb(250, 247, 245);
-  --canvas-controls-radius: 2px;
-  --caret-color: rgb(250, 247, 245);
-  --checkbox-border-color: rgb(250, 247, 245);
-  --checkbox-border-color-hover: rgb(250, 247, 245);
-  --checkbox-color: hsl(189, 100%, 49%);
-  --checkbox-color-hover: hsl(189, 100%, 49%);
-  --checkbox-marker-color: hsl(221, 33.3%, 12.9%);
-  --checkbox-radius: 2px;
-  --checklist-done-color: rgb(250, 247, 245);
-  --clickable-icon-radius: 2px;
-  --code-background: rgb(10, 18, 30);
-  --code-border-color: hsla(221, 16.65%, 85%, 0.1);
-  --code-bracket-background: hsla(221, 16.65%, 85%, 0.05);
-  --code-comment: rgba(175, 191, 255, 0.7);
-  --code-function: rgb(230, 205, 90);
-  --code-important: rgb(220, 95, 0);
-  --code-indentation-guide-color: rgba(175, 191, 255, 0.23);
-  --code-keyword: rgb(220, 100, 210);
-  --code-normal: hsl(0, 0%, 89%);
-  --code-operator: rgb(220, 65, 65);
+  --callout-bug: var(--color-red-rgb, rgb(245, 0, 170));
+  --callout-default: var(--text-normal, rgb(250, 247, 245));
+  --callout-error: var(--color-red-rgb, rgb(250, 30, 0));
+  --callout-example: var(--text-normal, rgb(250, 247, 245));
+  --callout-fail: var(--color-red-rgb, rgb(250, 30, 0));
+  --callout-important: var(--color-accent, hsl(189, 100%, 49%));
+  --callout-info: var(--text-normal, rgb(250, 247, 245));
+  --callout-question: var(--text-normal, rgb(250, 247, 245));
+  --callout-quote: var(--text-normal, rgb(250, 247, 245));
+  --callout-radius: var(--radius-s, 2px);
+  --callout-success: var(--color-green-rgb, rgb(0, 190, 0));
+  --callout-summary: var(--text-normal, rgb(250, 247, 245));
+  --callout-tip: var(--color-cyan-rgb, rgb(255, 220, 120));
+  --callout-todo: var(--color-blue-rgb, rgb(0, 130, 255));
+  --callout-warning: var(--color-orange-rgb, rgb(220, 210, 0));
+  --canvas-background: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --canvas-card-label-color: var(--text-faint, rgb(250, 247, 245));
+  --canvas-controls-radius: var(--radius-s, 2px);
+  --caret-color: var(--text-normal, rgb(250, 247, 245));
+  --checkbox-border-color: var(--list-elements, rgb(250, 247, 245));
+  --checkbox-border-color-hover: var(--text-muted, rgb(250, 247, 245));
+  --checkbox-color: var(--interactive-accent, hsl(189, 100%, 49%));
+  --checkbox-color-hover: var(--interactive-accent-hover, hsl(189, 100%, 49%));
+  --checkbox-marker-color: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --checkbox-radius: var(--radius-s, 2px);
+  --checklist-done-color: var(--text-muted, rgb(250, 247, 245));
+  --clickable-icon-radius: var(--radius-s, 2px);
+  --code-background: var(--background-dark, rgb(10, 18, 30));
+  --code-border-color: var(--background-modifier-border, hsla(221, 16.65%, 85%, 0.1));
+  --code-bracket-background: var(--background-modifier-hover, hsla(221, 16.65%, 85%, 0.05));
+  --code-comment: rgba(var(--code-peripheral), 0.7);
+  --code-function: var(--color-yellow, rgb(230, 205, 90));
+  --code-important: var(--color-orange, rgb(220, 95, 0));
+  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.23);
+  --code-keyword: var(--color-pink, rgb(220, 100, 210));
+  --code-normal: var(--text-normal, hsl(0, 0%, 89%));
+  --code-operator: var(--color-red, rgb(220, 65, 65));
   --code-peripheral: 175, 191, 255;
-  --code-property: rgb(0, 202, 235);
-  --code-punctuation: hsl(0, 0%, 89%);
-  --code-radius: 2px;
-  --code-string: rgb(30, 169, 67);
-  --code-tag: rgb(220, 65, 65);
-  --code-value: rgb(140, 110, 240);
-  --codeFont: var(--font-monospace, iA Writer Mono S, IBM Plex Mono, Roboto Mono, Menlo, SFMono-Regular, Consolas, Source Code Pro, monospace);
-  --collapse-icon-color: hsl(189, 100%, 49%);
-  --collapse-icon-color-collapsed: hsl(189, 100%, 49%);
-  --color-accent: hsl(189, 100%, 49%);
-  --color-accent-1: hsl(189, 100%, 49%);
-  --color-accent-2: hsl(184, 105%, 63.21%);
-  --color-accent-background: hsla(189, 100%, 49%, 0.1);
-  --color-accent-background-hover: hsla(189, 100%, 49%, 0.2);
-  --color-accent-hsl: 189, 100%, 49%;
+  --code-property: var(--color-cyan, rgb(0, 202, 235));
+  --code-punctuation: var(--code-normal, hsl(0, 0%, 89%));
+  --code-radius: var(--radius-s, 2px);
+  --code-string: var(--color-green, rgb(30, 169, 67));
+  --code-tag: var(--color-red, rgb(220, 65, 65));
+  --code-value: var(--color-purple, rgb(140, 110, 240));
+  --collapse-icon-color: var(--color-accent, hsl(189, 100%, 49%));
+  --collapse-icon-color-collapsed: var(--text-accent, hsl(189, 100%, 49%));
+  --color-accent-1: var(--color-accent, hsl(189, 100%, 49%));
+  --color-accent-background: hsla(var(--color-accent-hsl), 0.1);
+  --color-accent-background-hover: hsla(var(--color-accent-hsl), 0.2);
   --color-cyan: rgb(0, 202, 235);
   --color-green: rgb(30, 169, 67);
   --color-orange: rgb(220, 95, 0);
@@ -127,277 +117,258 @@ export const theme: ThemeData = {
   --color-purple: rgb(140, 110, 240);
   --color-red: rgb(220, 65, 65);
   --color-yellow: rgb(230, 205, 90);
-  --dark: var(--text-normal, rgb(250, 247, 245));
-  --darkgray: var(--text-normal, rgb(250, 247, 245));
-  --dictionary-background-primary: hsl(221, 29.1375%, 18.404%);
-  --dictionary-background-secondary: hsl(221, 33.3%, 12.9%);
-  --divider-color: transparent;
-  --divider-color-hover: hsl(189, 100%, 49%);
-  --dropdown-background: rgb(10, 18, 30);
-  --dropdown-background-hover: rgb(10, 18, 30);
-  --embed-block-shadow-hover: 0 0 0 1px hsla(221, 16.65%, 85%, 0.1), inset 0 0 0 1px hsla(221, 16.65%, 85%, 0.1);
-  --embed-border-left: 2px dashed rgb(250, 247, 245);
-  --embed-border-start: 2px solid hsl(189, 100%, 49%);
-  --file-header-background: hsl(221, 33.3%, 12.9%);
-  --file-header-background-focused: hsl(221, 33.3%, 12.9%);
-  --file-header-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
-  --file-header-font-size: 14px;
-  --flair-background: rgb(10, 18, 30);
-  --flair-color: rgb(250, 247, 245);
+  --dark: var(--text-normal, rgb(var(--ss-dark-text-main)));
+  --darkgray: var(--text-normal, rgb(var(--ss-dark-text-main)));
+  --dictionary-background-primary: var(--background-secondary, hsl(221, 29.1375%, 18.404%));
+  --dictionary-background-secondary: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --divider-color: var(--background-modifier-border, transparent);
+  --divider-color-hover: var(--interactive-accent, hsl(189, 100%, 49%));
+  --dropdown-background: var(--interactive-normal, rgb(10, 18, 30));
+  --dropdown-background-hover: var(--interactive-hover, rgb(10, 18, 30));
+  --embed-border-left: var(--ss-embed-border-style, 2px dashed rgb(250, 247, 245));
+  --file-header-background: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --file-header-background-focused: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --file-header-font: var(--font-interface, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
+  --file-header-font-size: var(--font-ui-small, 14px);
+  --flair-background: var(--interactive-normal, rgb(10, 18, 30));
+  --flair-color: var(--text-normal, rgb(250, 247, 245));
   --font-default: 'Franklin Gothic Book', 'Rubik', 'Helvetica Neue', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-interface: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
-  --font-interface-theme: 'Franklin Gothic Book', 'Rubik', 'Helvetica Neue', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-mermaid: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
-  --font-monospace: iA Writer Mono S, IBM Plex Mono, Roboto Mono, Menlo, SFMono-Regular, Consolas, Source Code Pro, monospace;
+  --font-interface-theme: var(--font-default, 'Franklin Gothic Book', 'Rubik', 'Helvetica Neue', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif);
+  --font-mermaid: var(--font-text, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
   --font-monospace-default: 'iA Writer Mono S', 'IBM Plex Mono', 'Roboto Mono', Menlo, SFMono-Regular, Consolas, 'Source Code Pro', monospace;
-  --font-text: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
   --font-ui-small: 14px;
   --font-ui-smaller: 13px;
   --font-ui-smallest: 12px;
-  --footnote-divider-color: hsla(221, 16.65%, 85%, 0.1);
-  --footnote-id-color: rgb(250, 247, 245);
-  --footnote-id-color-no-occurrences: rgb(250, 247, 245);
-  --footnote-input-background-active: hsla(221, 16.65%, 85%, 0.05);
-  --footnote-line-height: 1.25em;
-  --footnote-radius: 2px;
-  --graph-node: rgb(250, 247, 245);
-  --graph-node-attachment: rgb(230, 205, 90);
-  --graph-node-focused: hsl(189, 100%, 49%);
-  --graph-node-tag: rgb(30, 169, 67);
-  --graph-node-unresolved: rgb(250, 247, 245);
-  --graph-text: rgb(250, 247, 245);
-  --gray: var(--text-muted, rgb(250, 247, 245));
-  --h1-color: rgb(250, 247, 245);
+  --footnote-divider-color: var(--metadata-divider-color, hsla(221, 16.65%, 85%, 0.1));
+  --footnote-id-color: var(--text-muted, rgb(250, 247, 245));
+  --footnote-id-color-no-occurrences: var(--text-faint, rgb(250, 247, 245));
+  --footnote-input-background-active: var(--metadata-input-background-active, hsla(221, 16.65%, 85%, 0.05));
+  --footnote-line-height: var(--line-height-normal, 1.25em);
+  --footnote-radius: var(--radius-s, 2px);
+  --graph-node: var(--text-muted, rgb(250, 247, 245));
+  --graph-node-attachment: var(--color-yellow, rgb(230, 205, 90));
+  --graph-node-focused: var(--text-accent, hsl(189, 100%, 49%));
+  --graph-node-tag: var(--color-green, rgb(30, 169, 67));
+  --graph-node-unresolved: var(--text-faint, rgb(250, 247, 245));
+  --graph-text: var(--text-normal, rgb(250, 247, 245));
+  --gray: var(--text-muted, var(--text-normal, rgb(250, 247, 245)));
+  --h1-color: var(--text-normal, rgb(250, 247, 245));
   --h1-size: 1.5em;
-  --h2-color: rgb(250, 247, 245);
+  --h2-color: var(--text-normal, rgb(250, 247, 245));
   --h2-size: 1.375em;
-  --h3-color: rgb(250, 247, 245);
+  --h3-color: var(--text-normal, rgb(250, 247, 245));
   --h3-size: 1.25em;
-  --h4-color: rgb(250, 247, 245);
+  --h4-color: var(--text-normal, rgb(250, 247, 245));
   --h4-size: 1.125em;
-  --h5-color: rgb(250, 247, 245);
-  --h5-line-height: 1.25em;
+  --h5-color: var(--text-normal, rgb(250, 247, 245));
+  --h5-line-height: var(--line-height-normal, 1.25em);
   --h5-size: 1em;
-  --h6-color: rgb(250, 247, 245);
-  --h6-line-height: 1.25em;
-  --headerFont: var(--font-text, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
-  --heading-formatting: rgb(250, 247, 245);
-  --highlight: var(--text-highlight-bg, hsl(189, 110%, 63.9%));
-  --hr-color: rgba(250, 247, 245, 0.1);
+  --h6-color: var(--text-normal, rgb(250, 247, 245));
+  --h6-line-height: var(--line-height-normal, 1.25em);
+  --heading-formatting: var(--text-normal, rgb(250, 247, 245));
+  --highlight: var(--text-highlight-bg, var(--ss-dark-highlight-bg, hsl(189, 110%, 63.9%)));
+  --hr-color: rgba(var(--ss-dark-text-main), 0.1);
   --hr-thickness: 1px;
-  --icon-color: rgb(250, 247, 245);
-  --icon-color-active: rgb(250, 247, 245);
-  --icon-color-focused: rgb(250, 247, 245);
-  --icon-color-hover: rgb(250, 247, 245);
+  --icon-color: var(--text-normal, rgb(250, 247, 245));
+  --icon-color-active: var(--text-normal, rgb(250, 247, 245));
+  --icon-color-focused: var(--text-normal, rgb(250, 247, 245));
+  --icon-color-hover: var(--text-normal, rgb(250, 247, 245));
   --icon-opacity: 1;
-  --indentation-guide-color: rgba(250, 247, 245, 0.1);
-  --inline-title-color: rgb(250, 247, 245);
-  --inline-title-size: 1.625em;
-  --input-date-separator: rgb(250, 247, 245);
-  --input-placeholder-color: rgb(250, 247, 245);
-  --input-radius: 4px;
-  --interactive-accent: hsl(189, 100%, 49%);
-  --interactive-accent-hover: hsl(189, 100%, 49%);
-  --interactive-accent-hsl: 189, 100%, 49%;
-  --interactive-hover: rgb(10, 18, 30);
-  --interactive-normal: rgb(10, 18, 30);
-  --kanban-button-text: rgb(250, 247, 245);
-  --kanban-button-text-hover: #000;
-  --kanban-checkbox-border: hsl(221, 33.3%, 12.9%);
-  --light: var(--background-primary, hsl(221, 33.3%, 12.9%));
-  --lightgray: var(--background-secondary, hsl(221, 29.1375%, 18.404%));
+  --indentation-guide-color: var(--hr-color, rgba(250, 247, 245, 0.1));
+  --inline-title-color: var(--h1-color, rgb(250, 247, 245));
+  --inline-title-size: var(--h1-size, 1.625em);
+  --input-date-separator: var(--text-faint, rgb(250, 247, 245));
+  --input-placeholder-color: var(--text-faint, rgb(250, 247, 245));
+  --input-radius: var(--radius-m, 4px);
+  --interactive-accent: var(--color-accent, hsl(189, 100%, 49%));
+  --interactive-accent-hover: var(--color-accent, hsl(189, 100%, 49%));
+  --interactive-accent-hsl: var(--color-accent-hsl, 189, 100%, 49%);
+  --interactive-hover: var(--background-dark, rgb(10, 18, 30));
+  --interactive-normal: var(--background-dark, rgb(10, 18, 30));
+  --kanban-button-text: var(--text-normal, rgb(250, 247, 245));
+  --kanban-button-text-hover: var(--text-on-accent, #000);
+  --kanban-checkbox-border: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --light: var(--background-primary, hsl(var(--background-h), var(--background-s), var(--background-l)));
+  --lightgray: var(--background-secondary, hsl(var(--background-h), var(--background-secondary-s), var(--background-secondary-l)));
   --line-height-normal: 1.25em;
-  --link-color: hsl(189, 100%, 49%);
-  --link-color-hover: rgb(250, 247, 245);
-  --link-external-color: hsl(189, 100%, 49%);
-  --link-external-color-hover: rgb(250, 247, 245);
-  --link-unresolved-color: hsl(189, 100%, 49%);
-  --link-unresolved-decoration-color: hsla(189, 100%, 49%, 0.3);
-  --list-elements: rgb(250, 247, 245);
-  --list-indent: 1.25em;
-  --list-marker-color: rgb(250, 247, 245);
-  --list-marker-color-collapsed: hsl(189, 100%, 49%);
-  --list-marker-color-hover: rgb(250, 247, 245);
-  --list-spacing: 0.25em;
-  --menu-background: hsl(221, 29.1375%, 18.404%);
-  --menu-border-color: hsla(221, 16.65%, 85%, 0.1);
-  --menu-radius: 4px;
-  --metadata-border-color: hsla(221, 16.65%, 85%, 0.1);
-  --metadata-divider-color: hsla(221, 16.65%, 85%, 0.1);
-  --metadata-input-background-active: hsla(221, 16.65%, 85%, 0.05);
-  --metadata-input-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
-  --metadata-input-text-color: rgb(250, 247, 245);
-  --metadata-label-background-active: hsla(221, 16.65%, 85%, 0.05);
-  --metadata-label-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
-  --metadata-label-text-color: rgb(250, 247, 245);
-  --metadata-label-text-color-hover: rgb(250, 247, 245);
-  --metadata-property-background-active: hsla(221, 16.65%, 85%, 0.05);
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(221, 33.3%, 8.9%);
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsla(221, 16.65%, 85%, 0.1);
-  --metadata-sidebar-input-font-size: 14px;
-  --metadata-sidebar-label-font-size: 14px;
-  --modal-background: hsl(221, 33.3%, 12.9%);
-  --modal-border-color: hsla(221, 16.65%, 85%, 0.1);
-  --modal-radius: 6px;
-  --nav-collapse-icon-color: hsl(189, 100%, 49%);
-  --nav-collapse-icon-color-collapsed: hsl(189, 100%, 49%);
-  --nav-heading-color: rgb(250, 247, 245);
-  --nav-heading-color-collapsed: rgb(250, 247, 245);
-  --nav-heading-color-collapsed-hover: rgb(250, 247, 245);
-  --nav-heading-color-hover: rgb(250, 247, 245);
-  --nav-indentation-guide-color: hsl(189, 100%, 49%);
-  --nav-item-background-active: hsla(221, 16.65%, 85%, 0.05);
-  --nav-item-background-hover: hsla(221, 16.65%, 85%, 0.05);
-  --nav-item-background-selected: hsla(189, 100%, 49%, 0.15);
-  --nav-item-color: rgb(250, 247, 245);
-  --nav-item-color-active: rgb(250, 247, 245);
-  --nav-item-color-highlighted: hsl(189, 100%, 49%);
-  --nav-item-color-hover: rgb(250, 247, 245);
-  --nav-item-color-selected: rgb(250, 247, 245);
-  --nav-item-radius: 2px;
-  --nav-item-size: 14px;
-  --nav-tag-color: rgb(250, 247, 245);
-  --nav-tag-color-active: rgb(250, 247, 245);
-  --nav-tag-color-hover: rgb(250, 247, 245);
-  --nav-tag-radius: 2px;
-  --oz-fta-file-font-size: 14px;
-  --oz-fta-folder-font-size: 14px;
-  --pdf-background: hsl(221, 33.3%, 12.9%);
-  --pdf-page-background: hsl(221, 33.3%, 12.9%);
-  --pdf-shadow: 0 0 0 1px hsla(221, 16.65%, 85%, 0.1);
-  --pdf-sidebar-background: hsl(221, 33.3%, 12.9%);
-  --pdf-thumbnail-shadow: 0 0 0 1px hsla(221, 16.65%, 85%, 0.1);
-  --pill-border-color: hsla(221, 16.65%, 85%, 0.1);
-  --pill-border-color-hover: hsla(221, 16.65%, 85%, 0.1);
-  --pill-color: rgb(250, 247, 245);
-  --pill-color-hover: rgb(250, 247, 245);
-  --pill-color-remove: rgb(250, 247, 245);
-  --pill-color-remove-hover: hsl(189, 100%, 49%);
-  --polka-dots: radial-gradient(hsl(189, 100%, 49%) 15%, transparent 25%),
-  radial-gradient(hsl(189, 100%, 49%) 17.5%, transparent 25%);
-  --prompt-background: hsl(221, 33.3%, 12.9%);
-  --prompt-border-color: hsla(221, 16.65%, 85%, 0.1);
-  --radius-l: 6px;
-  --radius-m: 4px;
-  --radius-s: 2px;
-  --radius-xl: 8px;
-  --raised-background: color-mix(in srgb, rgb(10, 18, 30) 65%, transparent) linear-gradient(rgb(10, 18, 30), color-mix(in srgb, rgb(10, 18, 30) 65%, transparent));
-  --ribbon-background: hsl(221, 29.1375%, 18.404%);
-  --ribbon-background-collapsed: hsl(221, 33.3%, 12.9%);
+  --link-color: var(--text-accent, hsl(189, 100%, 49%));
+  --link-color-hover: var(--text-accent-hover, rgb(250, 247, 245));
+  --link-external-color: var(--text-accent, hsl(189, 100%, 49%));
+  --link-external-color-hover: var(--text-accent-hover, rgb(250, 247, 245));
+  --link-unresolved-color: var(--text-accent, hsl(189, 100%, 49%));
+  --list-elements: var(--text-normal, rgb(250, 247, 245));
+  --list-marker-color: var(--list-elements, rgb(250, 247, 245));
+  --list-marker-color-collapsed: var(--text-accent, hsl(189, 100%, 49%));
+  --list-marker-color-hover: var(--text-muted, rgb(250, 247, 245));
+  --list-spacing: calc(var(--line-height-normal)/5);
+  --menu-background: var(--background-secondary, hsl(221, 29.1375%, 18.404%));
+  --menu-border-color: var(--background-modifier-border-hover, hsla(221, 16.65%, 85%, 0.1));
+  --menu-radius: var(--radius-m, 4px);
+  --metadata-border-color: var(--background-modifier-border, hsla(221, 16.65%, 85%, 0.1));
+  --metadata-divider-color: var(--background-modifier-border, hsla(221, 16.65%, 85%, 0.1));
+  --metadata-input-background-active: var(--background-modifier-hover, hsla(221, 16.65%, 85%, 0.05));
+  --metadata-input-font: var(--font-interface, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
+  --metadata-input-text-color: var(--text-normal, rgb(250, 247, 245));
+  --metadata-label-background-active: var(--background-modifier-hover, hsla(221, 16.65%, 85%, 0.05));
+  --metadata-label-font: var(--font-interface, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
+  --metadata-label-text-color: var(--text-muted, rgb(250, 247, 245));
+  --metadata-label-text-color-hover: var(--text-muted, rgb(250, 247, 245));
+  --metadata-property-background-active: var(--background-modifier-hover, hsla(221, 16.65%, 85%, 0.05));
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 14px);
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 14px);
+  --modal-background: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --modal-border-color: var(--accent-soft-dark, hsla(221, 16.65%, 85%, 0.1));
+  --modal-radius: var(--radius-l, 6px);
+  --nav-collapse-icon-color: var(--color-accent, hsl(189, 100%, 49%));
+  --nav-collapse-icon-color-collapsed: var(--color-accent, hsl(189, 100%, 49%));
+  --nav-heading-color: var(--text-normal, rgb(250, 247, 245));
+  --nav-heading-color-collapsed: var(--text-faint, rgb(250, 247, 245));
+  --nav-heading-color-collapsed-hover: var(--text-muted, rgb(250, 247, 245));
+  --nav-heading-color-hover: var(--text-normal, rgb(250, 247, 245));
+  --nav-indentation-guide-color: var(--color-accent, hsl(189, 100%, 49%));
+  --nav-item-background-active: var(--accent-soft-light, hsla(221, 16.65%, 85%, 0.05));
+  --nav-item-background-hover: var(--accent-soft-light, hsla(221, 16.65%, 85%, 0.05));
+  --nav-item-color: var(--text-normal, rgb(250, 247, 245));
+  --nav-item-color-active: var(--text-normal, rgb(250, 247, 245));
+  --nav-item-color-highlighted: var(--text-accent, hsl(189, 100%, 49%));
+  --nav-item-color-hover: var(--text-normal, rgb(250, 247, 245));
+  --nav-item-color-selected: var(--text-normal, rgb(250, 247, 245));
+  --nav-item-radius: var(--radius-s, 2px);
+  --nav-item-size: var(--font-ui-small, 14px);
+  --nav-tag-color: var(--text-faint, rgb(250, 247, 245));
+  --nav-tag-color-active: var(--text-muted, rgb(250, 247, 245));
+  --nav-tag-color-hover: var(--text-muted, rgb(250, 247, 245));
+  --nav-tag-radius: var(--radius-s, 2px);
+  --oz-fta-file-font-size: var(--nav-item-size, 14px);
+  --oz-fta-folder-font-size: var(--nav-item-size, 14px);
+  --pdf-background: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --pdf-page-background: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --pdf-sidebar-background: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --pill-border-color: var(--background-modifier-border, hsla(221, 16.65%, 85%, 0.1));
+  --pill-border-color-hover: var(--background-modifier-border-hover, hsla(221, 16.65%, 85%, 0.1));
+  --pill-color: var(--text-muted, rgb(250, 247, 245));
+  --pill-color-hover: var(--text-normal, rgb(250, 247, 245));
+  --pill-color-remove: var(--text-faint, rgb(250, 247, 245));
+  --pill-color-remove-hover: var(--text-accent, hsl(189, 100%, 49%));
+  --polka-dots: radial-gradient(var(--color-accent) 15%, transparent 25%),
+  radial-gradient(var(--color-accent) 17.5%, transparent 25%);
+  --prompt-background: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --prompt-border-color: var(--accent-soft-dark, hsla(221, 16.65%, 85%, 0.1));
+  --radius-l: calc(var(--radius-s)*3);
+  --radius-m: calc(var(--radius-s)*2);
+  --radius-s: calc(var(--ss-border-radius)*20);
+  --radius-xl: calc(var(--radius-s)*4);
+  --raised-background: var(--blur-background, color-mix(in srgb, rgb(10, 18, 30) 65%, transparent) linear-gradient(rgb(10, 18, 30), color-mix(in srgb, rgb(10, 18, 30) 65%, transparent)));
+  --ribbon-background: var(--background-secondary, hsl(221, 29.1375%, 18.404%));
+  --ribbon-background-collapsed: var(--background-primary, hsl(221, 33.3%, 12.9%));
   --ribbon-border: none;
-  --scrollbar-active-thumb-bg: hsla(221, 16.65%, 85%, 0.1);
-  --scrollbar-radius: 6px;
-  --scrollbar-thumb-bg: hsla(221, 16.65%, 85%, 0.05);
-  --search-clear-button-color: rgb(250, 247, 245);
-  --search-icon-color: rgb(250, 247, 245);
-  --search-result-background: hsl(221, 33.3%, 12.9%);
-  --search-result-bg-hover: rgb(10, 18, 30);
-  --secondary: var(--text-accent, hsl(189, 100%, 49%));
-  --setting-group-heading-color: rgb(250, 247, 245);
-  --setting-items-background: rgb(10, 18, 30);
-  --setting-items-border-color: hsla(221, 16.65%, 85%, 0.1);
-  --setting-items-radius: 6px;
-  --shiki-active-tab-border-color: rgb(250, 247, 245);
-  --shiki-code-background: rgb(10, 18, 30);
-  --shiki-code-block-border-radius: 2px;
-  --shiki-code-comment: rgb(250, 247, 245);
-  --shiki-code-function: rgb(30, 169, 67);
-  --shiki-code-important: rgb(220, 95, 0);
-  --shiki-code-keyword: rgb(220, 100, 210);
-  --shiki-code-normal: rgb(250, 247, 245);
-  --shiki-code-property: rgb(0, 202, 235);
-  --shiki-code-punctuation: rgb(250, 247, 245);
-  --shiki-code-string: rgb(230, 205, 90);
-  --shiki-code-value: rgb(140, 110, 240);
-  --shiki-gutter-border-color: hsla(221, 16.65%, 85%, 0.1);
-  --shiki-gutter-text-color: rgb(250, 247, 245);
-  --shiki-gutter-text-color-highlight: rgb(250, 247, 245);
-  --shiki-highlight-neutral: rgb(250, 247, 245);
-  --shiki-terminal-dots-color: rgb(250, 247, 245);
-  --slider-thumb-border-color: hsla(221, 16.65%, 85%, 0.1);
-  --slider-track-background: hsla(221, 16.65%, 85%, 0.1);
+  --scrollbar-active-thumb-bg: var(--accent-soft-dark, hsla(221, 16.65%, 85%, 0.1));
+  --scrollbar-radius: var(--radius-l, 6px);
+  --scrollbar-thumb-bg: var(--accent-soft-light, hsla(221, 16.65%, 85%, 0.05));
+  --search-clear-button-color: var(--text-muted, rgb(250, 247, 245));
+  --search-icon-color: var(--text-muted, rgb(250, 247, 245));
+  --search-result-background: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --search-result-bg-hover: var(--background-modifier-form-field, rgb(10, 18, 30));
+  --secondary: var(--text-accent, var(--color-accent-1, hsl(189, 100%, 49%)));
+  --setting-group-heading-color: var(--text-normal, rgb(250, 247, 245));
+  --setting-items-background: var(--background-primary-alt, rgb(10, 18, 30));
+  --setting-items-border-color: var(--background-modifier-border, hsla(221, 16.65%, 85%, 0.1));
+  --setting-items-radius: var(--radius-l, 6px);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, rgb(250, 247, 245));
+  --shiki-code-background: var(--code-background, rgb(10, 18, 30));
+  --shiki-code-block-border-radius: var(--code-radius, 2px);
+  --shiki-code-comment: var(--text-faint, rgb(250, 247, 245));
+  --shiki-code-function: var(--color-green, rgb(30, 169, 67));
+  --shiki-code-important: var(--color-orange, rgb(220, 95, 0));
+  --shiki-code-keyword: var(--color-pink, rgb(220, 100, 210));
+  --shiki-code-normal: var(--text-muted, rgb(250, 247, 245));
+  --shiki-code-property: var(--color-cyan, rgb(0, 202, 235));
+  --shiki-code-punctuation: var(--text-muted, rgb(250, 247, 245));
+  --shiki-code-string: var(--color-yellow, rgb(230, 205, 90));
+  --shiki-code-value: var(--color-purple, rgb(140, 110, 240));
+  --shiki-gutter-border-color: var(--background-modifier-border, hsla(221, 16.65%, 85%, 0.1));
+  --shiki-gutter-text-color: var(--text-faint, rgb(250, 247, 245));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, rgb(250, 247, 245));
+  --shiki-highlight-neutral: var(--shiki-code-normal, rgb(250, 247, 245));
+  --shiki-terminal-dots-color: var(--text-faint, rgb(250, 247, 245));
+  --slider-thumb-border-color: var(--background-modifier-border-hover, hsla(221, 16.65%, 85%, 0.1));
+  --slider-track-background: var(--background-modifier-border, hsla(221, 16.65%, 85%, 0.1));
   --ss-border-radius: 0.1px;
   --ss-dark-contrast: 0.73%;
   --ss-dark-h: 221;
-  --ss-dark-highlight-bg: hsl(189, 110%, 63.9%);
+  --ss-dark-highlight-bg: hsl(var(--accent-h), calc(var(--accent-s)*1.1), calc(var(--accent-l)*1.1 + 10%));
   --ss-dark-l: 2.58%;
   --ss-dark-s: 3.33%;
   --ss-dark-text-main: 250, 247, 245;
-  --ss-embed-border-style: 2px dashed rgb(250, 247, 245);
-  --status-bar-background: hsl(221, 29.1375%, 18.404%);
-  --status-bar-border-color: transparent;
-  --status-bar-font-size: 13px;
-  --status-bar-radius: 4px 0 0 0;
-  --status-bar-text-color: rgb(250, 247, 245);
-  --suggestion-background: hsl(221, 33.3%, 12.9%);
-  --sync-avatar-color-1: rgb(220, 65, 65);
-  --sync-avatar-color-2: rgb(220, 95, 0);
-  --sync-avatar-color-3: rgb(230, 205, 90);
-  --sync-avatar-color-4: rgb(30, 169, 67);
-  --sync-avatar-color-5: rgb(0, 202, 235);
-  --sync-avatar-color-7: rgb(140, 110, 240);
-  --sync-avatar-color-8: rgb(220, 100, 210);
-  --tab-background-active: hsl(221, 33.3%, 12.9%);
-  --tab-container-background: hsl(221, 29.1375%, 18.404%);
-  --tab-divider-color: hsla(221, 16.65%, 85%, 0.1);
-  --tab-font-size: 14px;
-  --tab-outline-color: hsl(189, 100%, 49%);
-  --tab-radius: 2px;
-  --tab-stacked-font-size: 14px;
-  --tab-switcher-background: hsl(221, 29.1375%, 18.404%);
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(221, 29.1375%, 18.404%), transparent);
-  --tab-switcher-preview-radius: 8px;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(189, 100%, 49%);
-  --tab-text-color: rgb(250, 247, 245);
-  --tab-text-color-active: rgb(250, 247, 245);
-  --tab-text-color-focused: rgb(250, 247, 245);
-  --tab-text-color-focused-active: rgb(250, 247, 245);
-  --tab-text-color-focused-active-current: rgb(250, 247, 245);
-  --tab-text-color-focused-highlighted: hsl(189, 100%, 49%);
-  --table-add-button-border-color: hsla(221, 16.65%, 85%, 0.1);
-  --table-body-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  --ss-embed-border-style: 2px dashed var(--text-normal);
+  --status-bar-background: var(--background-secondary, hsl(221, 29.1375%, 18.404%));
+  --status-bar-border-color: var(--divider-color, transparent);
+  --status-bar-font-size: var(--font-ui-smaller, 13px);
+  --status-bar-radius: var(--radius-m, 4px 0 0 0) 0 0 0;
+  --status-bar-text-color: var(--text-normal, rgb(250, 247, 245));
+  --suggestion-background: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --sync-avatar-color-1: var(--color-red, rgb(220, 65, 65));
+  --sync-avatar-color-2: var(--color-orange, rgb(220, 95, 0));
+  --sync-avatar-color-3: var(--color-yellow, rgb(230, 205, 90));
+  --sync-avatar-color-4: var(--color-green, rgb(30, 169, 67));
+  --sync-avatar-color-5: var(--color-cyan, rgb(0, 202, 235));
+  --sync-avatar-color-7: var(--color-purple, rgb(140, 110, 240));
+  --sync-avatar-color-8: var(--color-pink, rgb(220, 100, 210));
+  --tab-background-active: var(--background-primary, hsl(221, 33.3%, 12.9%));
+  --tab-container-background: var(--background-secondary, hsl(221, 29.1375%, 18.404%));
+  --tab-divider-color: var(--background-modifier-border-hover, hsla(221, 16.65%, 85%, 0.1));
+  --tab-font-size: var(--font-ui-small, 14px);
+  --tab-outline-color: var(--color-accent, hsl(189, 100%, 49%));
+  --tab-radius: var(--radius-s, 2px);
+  --tab-stacked-font-size: var(--font-ui-small, 14px);
+  --tab-switcher-background: var(--background-secondary, hsl(221, 29.1375%, 18.404%));
+  --tab-switcher-preview-radius: var(--radius-xl, 8px);
+  --tab-text-color: var(--text-faint, rgb(250, 247, 245));
+  --tab-text-color-active: var(--text-muted, rgb(250, 247, 245));
+  --tab-text-color-focused: var(--text-muted, rgb(250, 247, 245));
+  --tab-text-color-focused-active: var(--text-muted, rgb(250, 247, 245));
+  --tab-text-color-focused-active-current: var(--text-normal, rgb(250, 247, 245));
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(189, 100%, 49%));
+  --table-add-button-border-color: var(--background-modifier-border, hsla(221, 16.65%, 85%, 0.1));
+  --table-body-font: var(--font-text, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
   --table-body-font-size: 1em;
-  --table-border-color: rgb(250, 247, 245);
-  --table-drag-handle-background-active: hsl(189, 100%, 49%);
-  --table-drag-handle-color: rgb(250, 247, 245);
-  --table-drag-handle-color-active: #000;
-  --table-header-border-color: rgb(250, 247, 245);
-  --table-header-color: rgb(250, 247, 245);
-  --table-header-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
-  --table-selection: hsla(189, 100%, 49%, 0.1);
-  --table-selection-border-color: hsl(189, 100%, 49%);
-  --tag-background: hsla(189, 100%, 49%, 0.1);
-  --tag-background-hover: hsla(189, 100%, 49%, 0.2);
-  --tag-border-color: hsla(189, 100%, 49%, 0.15);
-  --tag-border-color-hover: hsla(189, 100%, 49%, 0.15);
-  --tag-color: hsl(189, 100%, 49%);
-  --tag-color-hover: hsl(189, 100%, 49%);
-  --tag-radius: 4px;
-  --tertiary: var(--text-accent-hover, rgb(250, 247, 245));
-  --text-accent: hsl(189, 100%, 49%);
-  --text-accent-hover: rgb(250, 247, 245);
-  --text-error: rgb(250, 30, 0);
-  --text-faint: rgb(250, 247, 245);
-  --text-highlight-bg: hsl(189, 110%, 63.9%);
+  --table-border-color: var(--list-elements, rgb(250, 247, 245));
+  --table-drag-handle-background-active: var(--table-selection-border-color, hsl(189, 100%, 49%));
+  --table-drag-handle-color: var(--text-faint, rgb(250, 247, 245));
+  --table-drag-handle-color-active: var(--text-on-accent, #000);
+  --table-header-border-color: var(--list-elements, rgb(250, 247, 245));
+  --table-header-color: var(--text-normal, rgb(250, 247, 245));
+  --table-header-font: var(--font-text, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
+  --table-selection-border-color: var(--interactive-accent, hsl(189, 100%, 49%));
+  --tag-background: var(--color-accent-background, hsla(189, 100%, 49%, 0.1));
+  --tag-background-hover: var(--color-accent-background-hover, hsla(189, 100%, 49%, 0.2));
+  --tag-color: var(--text-accent, hsl(189, 100%, 49%));
+  --tag-color-hover: var(--text-accent, hsl(189, 100%, 49%));
+  --tag-radius: var(--radius-m, 4px);
+  --tertiary: var(--text-accent-hover, var(--text-white, rgb(250, 247, 245)));
+  --text-accent: var(--color-accent-1, hsl(189, 100%, 49%));
+  --text-accent-hover: var(--text-white, rgb(250, 247, 245));
+  --text-error: var(--color-red, rgb(250, 30, 0));
+  --text-faint: var(--text-normal, rgb(250, 247, 245));
+  --text-highlight-bg: var(--ss-dark-highlight-bg, hsl(189, 110%, 63.9%));
   --text-highlight-fg: #000;
-  --text-muted: rgb(250, 247, 245);
-  --text-normal: rgb(250, 247, 245);
+  --text-muted: var(--text-normal, rgb(250, 247, 245));
+  --text-normal: rgb(var(--ss-dark-text-main));
   --text-on-accent: #000;
-  --text-selection: hsla(189, 100%, 49%, 0.4);
-  --text-success: rgb(30, 169, 67);
-  --text-warning: rgb(220, 95, 0);
+  --text-selection: var(--accent-on-selection, hsla(189, 100%, 49%, 0.4));
+  --text-success: var(--color-green, rgb(30, 169, 67));
+  --text-warning: var(--color-orange, rgb(220, 95, 0));
   --text-white: rgb(250, 247, 245);
-  --textHighlight: var(--text-highlight-bg, hsl(189, 110%, 63.9%));
-  --titleFont: var(--font-text, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
-  --titlebar-background: hsl(221, 29.1375%, 18.404%);
-  --titlebar-background-focused: hsl(221, 29.1375%, 18.404%);
-  --titlebar-border-color: hsla(221, 16.65%, 85%, 0.1);
-  --titlebar-text-color: rgb(250, 247, 245);
-  --titlebar-text-color-focused: rgb(250, 247, 245);
+  --textHighlight: var(--text-highlight-bg, var(--ss-dark-highlight-bg, hsl(189, 110%, 63.9%)));
+  --titlebar-background: var(--background-secondary, hsl(221, 29.1375%, 18.404%));
+  --titlebar-background-focused: var(--background-secondary, hsl(221, 29.1375%, 18.404%));
+  --titlebar-border-color: var(--background-modifier-border, hsla(221, 16.65%, 85%, 0.1));
+  --titlebar-text-color: var(--text-muted, rgb(250, 247, 245));
+  --titlebar-text-color-focused: var(--text-normal, rgb(250, 247, 245));
   --vault-name-font-weight: bold;
-  --vault-profile-color: rgb(250, 247, 245);
-  --vault-profile-color-hover: rgb(250, 247, 245);
-  --vault-profile-font-size: 14px;
+  --vault-profile-color: var(--text-normal, rgb(250, 247, 245));
+  --vault-profile-color-hover: var(--vault-profile-color, rgb(250, 247, 245));
+  --vault-profile-font-size: var(--font-ui-small, 14px);
   --quartz-icon-color: currentColor;
 }
 
@@ -407,17 +378,17 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(33, 42, 61);
+  background-color: var(--tab-container-background, rgb(33, 42, 61));
   color: rgb(250, 247, 245);
 }
 
 html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: rgb(22, 29, 44);
+  background-color: var(--background-primary, rgb(22, 29, 44));
   color: rgb(250, 247, 245);
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(33, 42, 61);
+  background-color: var(--background-secondary, rgb(33, 42, 61));
   color: rgb(250, 247, 245);
 }
 
@@ -426,41 +397,41 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(33, 42, 61);
+  background-color: var(--tab-container-background, rgb(33, 42, 61));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(250, 247, 245);
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
-  color: rgb(250, 247, 245);
+  color: var(--bold-color, rgb(250, 247, 245));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(250, 247, 245) none 0px;
   text-decoration-color: rgb(250, 247, 245);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
-  color: rgb(250, 247, 245);
+  color: var(--italic-color, rgb(250, 247, 245));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(250, 247, 245) none 0px;
   text-decoration-color: rgb(250, 247, 245);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
-  color: rgb(250, 247, 245);
+  color: var(--italic-color, rgb(250, 247, 245));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(250, 247, 245) none 0px;
   text-decoration-color: rgb(250, 247, 245);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
-  color: rgb(250, 247, 245);
+  color: var(--bold-color, rgb(250, 247, 245));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(250, 247, 245) none 0px;
   text-decoration-color: rgb(250, 247, 245);
 }
 
 html[saved-theme="dark"] body .text-highlight {
-  background-color: rgb(71, 227, 255);
-  color: rgb(0, 0, 0);
+  background-color: var(--text-highlight-bg, rgb(71, 227, 255));
+  color: var(--text-highlight-fg, rgb(0, 0, 0));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
@@ -474,7 +445,7 @@ html[saved-theme="dark"] body del {
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   font-size: 14px;
 }
 
@@ -484,36 +455,36 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(0, 212, 250);
+  background-color: var(--checkbox-color, rgb(0, 212, 250));
   border-color: rgb(0, 212, 250);
 }
 
 html[saved-theme="dark"] body p {
-  color: rgb(250, 247, 245);
+  color: var(--text-muted, rgb(250, 247, 245));
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(250, 247, 245) none 0px;
   text-decoration-color: rgb(250, 247, 245);
 }`,
     links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
-  color: rgb(0, 212, 250);
+  color: var(--link-external-color, rgb(0, 212, 250));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 212, 250) none 0px;
   text-decoration-color: rgb(0, 212, 250);
 }
 
 html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(0, 212, 250);
+  color: var(--link-color, rgb(0, 212, 250));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 212, 250) none 0px;
   text-decoration-color: rgb(0, 212, 250);
 }
 
 html[saved-theme="dark"] body a.internal-link.broken {
-  color: rgb(0, 212, 250);
+  color: var(--link-unresolved-color, rgb(0, 212, 250));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 212, 250) none 0px;
   text-decoration: underline rgba(0, 212, 250, 0.3);
-  text-decoration-color: rgba(0, 212, 250, 0.3);
+  text-decoration-color: var(--link-unresolved-decoration-color, rgba(0, 212, 250, 0.3));
 }`,
     lists: `html[saved-theme="dark"] body dd {
   color: rgb(250, 247, 245);
@@ -538,7 +509,7 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-color: rgb(250, 247, 245);
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
-  color: rgb(250, 247, 245);
+  color: var(--text-faint, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body blockquote {
@@ -553,7 +524,7 @@ html[saved-theme="dark"] body blockquote {
 
 html[saved-theme="dark"] body table {
   color: rgb(250, 247, 245);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--table-body-font, "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
   width: 195.062px;
 }
 
@@ -562,7 +533,7 @@ html[saved-theme="dark"] body td {
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--table-text-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body th {
@@ -570,10 +541,10 @@ html[saved-theme="dark"] body th {
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--table-header-color, rgb(250, 247, 245));
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: rgb(10, 18, 30);
+  background-color: var(--code-background, rgb(10, 18, 30));
   border-bottom-color: rgba(210, 214, 223, 0.1);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -582,12 +553,12 @@ html[saved-theme="dark"] body th {
   border-top-color: rgba(210, 214, 223, 0.1);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  color: rgb(227, 227, 227);
-  font-family: "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular, Consolas, "Source Code Pro", monospace;
+  color: var(--code-normal, rgb(227, 227, 227));
+  font-family: var(--font-monospace, "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular, Consolas, "Source Code Pro", monospace);
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: rgb(10, 18, 30);
+  background-color: var(--code-background, rgb(10, 18, 30));
   border-bottom-color: rgba(210, 214, 223, 0.1);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -634,7 +605,7 @@ html[saved-theme="dark"] body video {
   border-top-color: rgb(250, 247, 245);
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: rgb(10, 18, 30);
+  background-color: var(--background-primary-alt, rgb(10, 18, 30));
   border-bottom-color: rgb(250, 247, 245);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -680,6 +651,274 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-top-color: rgb(250, 247, 245);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: rgb(250, 247, 245);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -967,11 +1206,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(250, 247, 245);
+  color: var(--callout-title-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {
@@ -979,9 +1218,8 @@ html[saved-theme="dark"] body .callout > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
-  --callout-color: rgb(250, 247, 245);
+  --callout-color: var(--callout-summary, rgb(250, 247, 245));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(250, 247, 245);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1007,11 +1245,11 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(250, 247, 245);
+  color: var(--callout-title-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-content {
@@ -1019,9 +1257,8 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
-  --callout-color: rgb(245, 0, 170);
+  --callout-color: var(--callout-bug, rgb(245, 0, 170));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(245, 0, 170);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1047,11 +1284,11 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(250, 247, 245);
+  color: var(--callout-title-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
@@ -1059,9 +1296,8 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
-  --callout-color: rgb(250, 30, 0);
+  --callout-color: var(--callout-error, rgb(250, 30, 0));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(250, 30, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1087,11 +1323,11 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(250, 247, 245);
+  color: var(--callout-title-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content {
@@ -1099,9 +1335,8 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
-  --callout-color: rgb(250, 247, 245);
+  --callout-color: var(--callout-example, rgb(250, 247, 245));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(250, 247, 245);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1127,11 +1362,11 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(250, 247, 245);
+  color: var(--callout-title-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-content {
@@ -1139,9 +1374,8 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
-  --callout-color: rgb(250, 30, 0);
+  --callout-color: var(--callout-fail, rgb(250, 30, 0));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(250, 30, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1167,11 +1401,11 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(250, 247, 245);
+  color: var(--callout-title-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-content {
@@ -1179,9 +1413,8 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
-  --callout-color: rgb(250, 247, 245);
+  --callout-color: var(--callout-info, rgb(250, 247, 245));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(250, 247, 245);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1207,11 +1440,11 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(250, 247, 245);
+  color: var(--callout-title-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
@@ -1219,9 +1452,8 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
-  --callout-color: rgb(250, 247, 245);
+  --callout-color: var(--callout-default, rgb(250, 247, 245));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(250, 247, 245);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1247,11 +1479,11 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(250, 247, 245);
+  color: var(--callout-title-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
@@ -1259,9 +1491,8 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
-  --callout-color: rgb(250, 247, 245);
+  --callout-color: var(--callout-question, rgb(250, 247, 245));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(250, 247, 245);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1287,11 +1518,11 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(250, 247, 245);
+  color: var(--callout-title-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-content {
@@ -1299,9 +1530,8 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
-  --callout-color: rgb(250, 247, 245);
+  --callout-color: var(--callout-quote, rgb(250, 247, 245));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(250, 247, 245);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1327,11 +1557,11 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(250, 247, 245);
+  color: var(--callout-title-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content {
@@ -1339,9 +1569,8 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
-  --callout-color: rgb(0, 190, 0);
+  --callout-color: var(--callout-success, rgb(0, 190, 0));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(0, 190, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1367,11 +1596,11 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(250, 247, 245);
+  color: var(--callout-title-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-content {
@@ -1379,9 +1608,8 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
-  --callout-color: rgb(255, 220, 120);
+  --callout-color: var(--callout-tip, rgb(255, 220, 120));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(255, 220, 120);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1407,11 +1635,11 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(250, 247, 245);
+  color: var(--callout-title-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
@@ -1419,9 +1647,8 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
-  --callout-color: rgb(0, 130, 255);
+  --callout-color: var(--callout-todo, rgb(0, 130, 255));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(0, 130, 255);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1447,11 +1674,11 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(250, 247, 245);
+  color: var(--callout-title-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
@@ -1459,9 +1686,8 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
-  --callout-color: rgb(220, 210, 0);
+  --callout-color: var(--callout-warning, rgb(220, 210, 0));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(220, 210, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1487,11 +1713,11 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(250, 247, 245);
+  color: var(--callout-title-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] > .callout-content {
@@ -1563,12 +1789,12 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-color: rgba(210, 214, 223, 0.1);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: rgb(22, 29, 44);
+  background-color: var(--prompt-background, rgb(22, 29, 44));
   border-bottom-color: rgba(210, 214, 223, 0.1);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -1606,7 +1832,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: rgba(210, 214, 223, 0.05);
+  background-color: var(--background-modifier-hover, rgba(210, 214, 223, 0.05));
   color: rgb(250, 247, 245);
 }
 
@@ -1629,7 +1855,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
-  background-color: rgba(210, 214, 223, 0.05);
+  background-color: var(--background-modifier-hover, rgba(210, 214, 223, 0.05));
   border-bottom-color: rgb(250, 247, 245);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1642,7 +1868,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: rgba(210, 214, 223, 0.05);
+  background-color: var(--background-modifier-hover, rgba(210, 214, 223, 0.05));
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-top-left-radius: 2px;
@@ -1651,7 +1877,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(0, 212, 250, 0.1);
+  background-color: var(--pill-background, rgba(0, 212, 250, 0.1));
   border-bottom-color: rgba(0, 212, 250, 0.15);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -1668,43 +1894,43 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
-  color: rgb(250, 247, 245);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--h1-color, rgb(250, 247, 245));
+  font-family: var(--h1-font, "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(250, 247, 245);
-  font-size: 26px;
+  color: var(--inline-title-color, rgb(250, 247, 245));
+  font-size: var(--inline-title-size, 26px);
 }
 
 html[saved-theme="dark"] body h2 {
-  color: rgb(250, 247, 245);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--h2-color, rgb(250, 247, 245));
+  font-family: var(--h2-font, "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  color: rgb(250, 247, 245);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--inline-title-color, rgb(250, 247, 245));
+  font-family: var(--inline-title-font, "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
 }
 
 html[saved-theme="dark"] body h3 {
-  color: rgb(250, 247, 245);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--h3-color, rgb(250, 247, 245));
+  font-family: var(--h3-font, "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
-  color: rgb(250, 247, 245);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--h4-color, rgb(250, 247, 245));
+  font-family: var(--h4-font, "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
-  color: rgb(250, 247, 245);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--h5-color, rgb(250, 247, 245));
+  font-family: var(--h5-font, "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
-  color: rgb(250, 247, 245);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--h6-color, rgb(250, 247, 245));
+  font-family: var(--h6-font, "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
 }
 
 html[saved-theme="dark"] body hr {
@@ -1713,7 +1939,7 @@ html[saved-theme="dark"] body hr {
   border-right-color: rgba(0, 0, 0, 0);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
-  --callout-color: rgb(250, 247, 245);
+  --callout-color: var(--callout-default, rgb(250, 247, 245));
   border-bottom-color: rgb(250, 247, 245);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1737,12 +1963,12 @@ html[saved-theme="dark"] body hr {
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(250, 247, 245);
+  color: var(--nav-item-color, rgb(250, 247, 245));
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(250, 247, 245);
+  color: var(--nav-item-color, rgb(250, 247, 245));
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
@@ -1757,16 +1983,16 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-color: rgb(250, 247, 245);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  color: rgb(250, 247, 245);
+  color: var(--icon-color, rgb(250, 247, 245));
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: rgb(33, 42, 61);
+  background-color: var(--background-secondary, rgb(33, 42, 61));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 4px;
-  color: rgb(250, 247, 245);
+  color: var(--status-bar-text-color, rgb(250, 247, 245));
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -1787,7 +2013,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(250, 247, 245);
+  color: var(--nav-item-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1807,7 +2033,7 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(250, 247, 245);
+  color: var(--nav-item-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -1825,7 +2051,7 @@ html[saved-theme="dark"] body ul.section-ul {
   border-top-color: rgb(250, 247, 245);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  color: rgb(250, 247, 245);
+  color: var(--icon-color, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .darkmode svg {
@@ -1845,7 +2071,7 @@ html[saved-theme="dark"] body .darkmode svg {
 }
 
 html[saved-theme="dark"] body .breadcrumb-element p {
-  color: rgb(250, 247, 245);
+  color: var(--text-faint, rgb(250, 247, 245));
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }`,
     canvas: `html[saved-theme="dark"] body .canvas-node {
@@ -1857,7 +2083,7 @@ html[saved-theme="dark"] body .canvas-node-content {
 }
 
 html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body .canvas-node-group {
@@ -1865,19 +2091,19 @@ html[saved-theme="dark"] body .canvas-node-group {
 }
 
 html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(33, 42, 61);
+  background-color: var(--background-secondary, rgb(33, 42, 61));
   border-color: rgb(250, 247, 245);
 }`,
     bases: `html[saved-theme="dark"] body .bases-table thead th {
   border-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--table-header-color, rgb(250, 247, 245));
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgba(210, 214, 223, 0.1);
   border-left-color: rgba(210, 214, 223, 0.1);
   border-right-color: rgba(210, 214, 223, 0.1);
   border-top-color: rgba(210, 214, 223, 0.1);
-  color: rgb(250, 247, 245);
+  color: var(--text-muted, rgb(250, 247, 245));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -1903,9 +2129,9 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(0, 212, 250, 0.1);
+  background-color: var(--pill-background, rgba(0, 212, 250, 0.1));
   border-radius: 4px;
-  color: rgb(0, 212, 250);
+  color: var(--pill-color, rgb(0, 212, 250));
 }
 
 html[saved-theme="dark"] body .note-properties-value {
@@ -1913,8 +2139,8 @@ html[saved-theme="dark"] body .note-properties-value {
 }
 
 html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(22, 29, 44);
-  color: rgb(250, 247, 245);
+  background-color: var(--background-primary, rgb(22, 29, 44));
+  color: var(--text-normal, rgb(250, 247, 245));
 }
 
 html[saved-theme="dark"] body ol.overflow {
@@ -1924,12 +2150,12 @@ html[saved-theme="dark"] body ol.overflow {
   border-top-color: rgb(250, 247, 245);
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
-  background-color: rgb(33, 42, 61);
+  background-color: var(--background-secondary, rgb(33, 42, 61));
   border-color: rgb(250, 247, 245);
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
-  background-color: rgb(33, 42, 61);
+  background-color: var(--tab-container-background, rgb(33, 42, 61));
 }
 
 html[saved-theme="dark"] body .stacked-page.active {
@@ -1944,11 +2170,11 @@ html[saved-theme="dark"] body .stacked-page.active {
 }
 
 html[saved-theme="dark"] body .navigation-progress {
-  background-color: rgb(33, 42, 61);
+  background-color: var(--background-secondary, rgb(33, 42, 61));
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -1968,12 +2194,12 @@ html[saved-theme="dark"] body input[type=text] {
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
+  color: var(--text-normal, rgb(250, 247, 245));
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 html[saved-theme="dark"] body kbd {
-  background-color: rgb(10, 18, 30);
+  background-color: var(--code-background, rgb(10, 18, 30));
   border-bottom-color: rgb(227, 227, 227);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1982,8 +2208,8 @@ html[saved-theme="dark"] body kbd {
   border-top-color: rgb(227, 227, 227);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  color: rgb(227, 227, 227);
-  font-family: "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular, Consolas, "Source Code Pro", monospace;
+  color: var(--code-normal, rgb(227, 227, 227));
+  font-family: var(--font-monospace, "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular, Consolas, "Source Code Pro", monospace);
 }
 
 html[saved-theme="dark"] body progress {
@@ -2006,7 +2232,7 @@ html[saved-theme="dark"] body sup {
 }
 
 html[saved-theme="dark"] body ul.tags > li {
-  background-color: rgba(0, 212, 250, 0.1);
+  background-color: var(--tag-background, rgba(0, 212, 250, 0.1));
   border-bottom-color: rgba(0, 212, 250, 0.15);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -2015,121 +2241,111 @@ html[saved-theme="dark"] body ul.tags > li {
   border-top-color: rgba(0, 212, 250, 0.15);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  color: rgb(0, 212, 250);
+  color: var(--tag-color, rgb(0, 212, 250));
 }`,
   },
   light: {
     base: `:root:root {
   --accent-h: 0;
   --accent-l: 52%;
-  --accent-on-selection: hsla(0, 75%, 52%, 0.4);
+  --accent-on-selection: hsla(var(--color-accent-hsl), 0.4);
   --accent-s: 75%;
-  --accent-soft-dark: hsla(0, 19.6%, 15%, 0.1);
-  --accent-soft-hsl: 0, 19.6%, 15%;
-  --accent-soft-light: hsla(0, 19.6%, 15%, 0.05);
-  --background-contrast: 0%;
+  --accent-soft-dark: hsla(var(--accent-soft-hsl), 0.1);
+  --accent-soft-hsl: var(--background-h), calc(var(--background-s)*0.5), 15%;
+  --accent-soft-light: hsla(var(--accent-soft-hsl), 0.05);
+  --background-contrast: calc(var(--ss-light-contrast)*4.8);
   --background-dark: rgb(23, 35, 62);
   --background-extra-dark: #000;
-  --background-h: 0;
-  --background-l: 99.3%;
-  --background-modifier-active-hover: hsla(0, 19.6%, 15%, 0.05);
-  --background-modifier-border: hsla(0, 19.6%, 15%, 0.1);
-  --background-modifier-border-focus: hsla(0, 19.6%, 15%, 0.1);
-  --background-modifier-border-hover: hsla(0, 19.6%, 15%, 0.1);
-  --background-modifier-error: rgb(250, 30, 0);
-  --background-modifier-error-hover: rgb(250, 30, 0);
-  --background-modifier-form-field: hsla(0, 19.6%, 15%, 0.05);
-  --background-modifier-form-field-hover: hsla(0, 19.6%, 15%, 0.05);
-  --background-modifier-hover: hsla(0, 19.6%, 15%, 0.05);
-  --background-modifier-success: rgb(30, 169, 67);
-  --background-primary: hsl(0, 39.2%, 99.3%);
-  --background-primary-alt: hsl(0, 34.3%, 97.3%);
-  --background-s: 39.2%;
-  --background-secondary: hsl(0, 34.3%, 97.3%);
-  --background-secondary-alt: hsl(0, 34.3%, 97.3%);
-  --background-secondary-l: 97.3%;
-  --background-secondary-s: 34.3%;
-  --bases-cards-background: hsl(0, 39.2%, 99.3%);
-  --bases-cards-cover-background: hsl(0, 34.3%, 97.3%);
-  --bases-cards-radius: 4px;
-  --bases-cards-shadow: 0 0 0 1px hsla(0, 19.6%, 15%, 0.1);
-  --bases-cards-shadow-hover: 0 0 0 1px hsla(0, 19.6%, 15%, 0.1);
-  --bases-embed-border-color: hsla(0, 19.6%, 15%, 0.1);
-  --bases-embed-border-radius: 2px;
-  --bases-group-heading-property-color: rgb(0, 0, 0);
-  --bases-group-heading-property-size: 13px;
-  --bases-table-border-color: rgb(0, 0, 0);
-  --bases-table-cell-background-active: hsl(0, 39.2%, 99.3%);
-  --bases-table-cell-background-disabled: hsl(0, 34.3%, 97.3%);
-  --bases-table-cell-background-selected: hsla(0, 75%, 52%, 0.1);
-  --bases-table-cell-shadow-active: 0 0 0 2px hsla(0, 19.6%, 15%, 0.1);
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(0, 75%, 52%);
-  --bases-table-container-border-radius: 2px;
-  --bases-table-group-background: hsl(0, 34.3%, 97.3%);
-  --bases-table-header-background: hsl(0, 39.2%, 99.3%);
-  --bases-table-header-background-hover: hsla(0, 19.6%, 15%, 0.05);
-  --bases-table-header-color: rgb(0, 0, 0);
-  --bases-table-summary-background: hsl(0, 39.2%, 99.3%);
-  --bases-table-summary-background-hover: hsla(0, 19.6%, 15%, 0.05);
-  --blockquote-border-color: hsl(0, 75%, 52%);
-  --blur-background: color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent) linear-gradient(hsl(0, 39.2%, 99.3%), color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent));
-  --bodyFont: var(--font-text, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
-  --button-radius: 2px;
-  --button-shadow: hsl(0, 19.6%, 15%, 0.6);
+  --background-h: var(--ss-light-h, 0);
+  --background-l: calc(var(--ss-light-l)*5 + 50%);
+  --background-modifier-active-hover: var(--accent-soft-light, hsla(0, 19.6%, 15%, 0.05));
+  --background-modifier-border: var(--accent-soft-dark, hsla(0, 19.6%, 15%, 0.1));
+  --background-modifier-border-focus: var(--accent-soft-dark, hsla(0, 19.6%, 15%, 0.1));
+  --background-modifier-border-hover: var(--accent-soft-dark, hsla(0, 19.6%, 15%, 0.1));
+  --background-modifier-error: var(--text-error, rgb(250, 30, 0));
+  --background-modifier-error-hover: var(--text-error, rgb(250, 30, 0));
+  --background-modifier-form-field: var(--accent-soft-light, hsla(0, 19.6%, 15%, 0.05));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, hsla(0, 19.6%, 15%, 0.05));
+  --background-modifier-hover: var(--accent-soft-light, hsla(0, 19.6%, 15%, 0.05));
+  --background-modifier-success: var(--color-green, rgb(30, 169, 67));
+  --background-primary: hsl(var(--background-h), var(--background-s), var(--background-l));
+  --background-primary-alt: var(--background-secondary, hsl(0, 34.3%, 97.3%));
+  --background-s: calc(var(--ss-light-s)*10);
+  --background-secondary: hsl(var(--background-h), var(--background-secondary-s), var(--background-secondary-l));
+  --background-secondary-alt: var(--background-secondary, hsl(0, 34.3%, 97.3%));
+  --background-secondary-l: calc(var(--background-l) - 2% - var(--background-contrast));
+  --background-secondary-s: calc(var(--background-s)*0.875);
+  --bases-cards-background: var(--background-primary, hsl(0, 39.2%, 99.3%));
+  --bases-cards-cover-background: var(--background-primary-alt, hsl(0, 34.3%, 97.3%));
+  --bases-cards-radius: var(--radius-m, 4px);
+  --bases-embed-border-color: var(--background-modifier-border, hsla(0, 19.6%, 15%, 0.1));
+  --bases-embed-border-radius: var(--radius-s, 2px);
+  --bases-group-heading-property-color: var(--text-muted, rgb(0, 0, 0));
+  --bases-group-heading-property-size: var(--font-ui-smaller, 13px);
+  --bases-table-border-color: var(--table-border-color, rgb(0, 0, 0));
+  --bases-table-cell-background-active: var(--background-primary, hsl(0, 39.2%, 99.3%));
+  --bases-table-cell-background-disabled: var(--background-primary-alt, hsl(0, 34.3%, 97.3%));
+  --bases-table-cell-background-selected: var(--table-selection, hsla(0, 75%, 52%, 0.1));
+  --bases-table-container-border-radius: var(--radius-s, 2px);
+  --bases-table-group-background: var(--background-primary-alt, hsl(0, 34.3%, 97.3%));
+  --bases-table-header-background: var(--background-primary, hsl(0, 39.2%, 99.3%));
+  --bases-table-header-background-hover: var(--background-modifier-hover, hsla(0, 19.6%, 15%, 0.05));
+  --bases-table-header-color: var(--text-muted, rgb(0, 0, 0));
+  --bases-table-summary-background: var(--background-primary, hsl(0, 39.2%, 99.3%));
+  --bases-table-summary-background-hover: var(--background-modifier-hover, hsla(0, 19.6%, 15%, 0.05));
+  --blockquote-border-color: var(--interactive-accent, hsl(0, 75%, 52%));
+  --button-radius: var(--radius-s, 2px);
+  --button-shadow: hsl(var(--accent-soft-hsl), 0.6);
   --button-shadow-hover: rgba(0, 0, 0, 0.67);
-  --callout-bug: rgb(245, 0, 165);
-  --callout-default: rgb(0, 0, 0);
-  --callout-error: rgb(235, 0, 0);
-  --callout-example: rgb(0, 0, 0);
-  --callout-fail: rgb(235, 0, 0);
-  --callout-important: hsl(0, 75%, 52%);
-  --callout-info: rgb(0, 0, 0);
-  --callout-question: rgb(0, 0, 0);
-  --callout-quote: rgb(0, 0, 0);
-  --callout-radius: 2px;
-  --callout-success: rgb(0, 180, 0);
-  --callout-summary: rgb(0, 0, 0);
-  --callout-tip: rgb(240, 195, 0);
-  --callout-todo: rgb(0, 130, 235);
-  --callout-warning: rgb(240, 150, 0);
-  --canvas-background: hsl(0, 39.2%, 99.3%);
-  --canvas-card-label-color: rgb(0, 0, 0);
-  --canvas-controls-radius: 2px;
-  --caret-color: rgb(0, 0, 0);
-  --checkbox-border-color: rgb(0, 0, 0);
-  --checkbox-border-color-hover: rgb(0, 0, 0);
-  --checkbox-color: hsl(0, 75%, 52%);
-  --checkbox-color-hover: hsl(0, 75%, 52%);
-  --checkbox-marker-color: hsl(0, 39.2%, 99.3%);
-  --checkbox-radius: 2px;
-  --checklist-done-color: rgb(0, 0, 0);
-  --clickable-icon-radius: 2px;
-  --code-background: rgb(23, 35, 62);
-  --code-border-color: hsla(0, 19.6%, 15%, 0.1);
-  --code-bracket-background: hsla(0, 19.6%, 15%, 0.05);
-  --code-comment: rgba(159, 157, 190);
-  --code-function: rgb(230, 205, 90);
-  --code-important: rgb(220, 95, 0);
-  --code-indentation-guide-color: rgba(159, 157, 190, 0.33);
-  --code-keyword: rgb(220, 100, 210);
-  --code-normal: hsl(0, 0%, 89%);
-  --code-operator: rgb(220, 65, 65);
+  --callout-bug: var(--color-red-rgb, rgb(245, 0, 165));
+  --callout-default: var(--text-normal, rgb(0, 0, 0));
+  --callout-error: var(--color-red-rgb, rgb(235, 0, 0));
+  --callout-example: var(--text-normal, rgb(0, 0, 0));
+  --callout-fail: var(--color-red-rgb, rgb(235, 0, 0));
+  --callout-important: var(--color-accent, hsl(0, 75%, 52%));
+  --callout-info: var(--text-normal, rgb(0, 0, 0));
+  --callout-question: var(--text-normal, rgb(0, 0, 0));
+  --callout-quote: var(--text-normal, rgb(0, 0, 0));
+  --callout-radius: var(--radius-s, 2px);
+  --callout-success: var(--color-green-rgb, rgb(0, 180, 0));
+  --callout-summary: var(--text-normal, rgb(0, 0, 0));
+  --callout-tip: var(--color-cyan-rgb, rgb(240, 195, 0));
+  --callout-todo: var(--color-blue-rgb, rgb(0, 130, 235));
+  --callout-warning: var(--color-orange-rgb, rgb(240, 150, 0));
+  --canvas-background: var(--background-primary, hsl(0, 39.2%, 99.3%));
+  --canvas-card-label-color: var(--text-faint, rgb(0, 0, 0));
+  --canvas-controls-radius: var(--radius-s, 2px);
+  --caret-color: var(--text-normal, rgb(0, 0, 0));
+  --checkbox-border-color: var(--list-elements, rgb(0, 0, 0));
+  --checkbox-border-color-hover: var(--text-muted, rgb(0, 0, 0));
+  --checkbox-color: var(--interactive-accent, hsl(0, 75%, 52%));
+  --checkbox-color-hover: var(--interactive-accent-hover, hsl(0, 75%, 52%));
+  --checkbox-marker-color: var(--background-primary, hsl(0, 39.2%, 99.3%));
+  --checkbox-radius: var(--radius-s, 2px);
+  --checklist-done-color: var(--text-muted, rgb(0, 0, 0));
+  --clickable-icon-radius: var(--radius-s, 2px);
+  --code-background: var(--background-dark, rgb(23, 35, 62));
+  --code-border-color: var(--background-modifier-border, hsla(0, 19.6%, 15%, 0.1));
+  --code-bracket-background: var(--background-modifier-hover, hsla(0, 19.6%, 15%, 0.05));
+  --code-comment: rgba(var(--code-peripheral));
+  --code-function: var(--color-yellow, rgb(230, 205, 90));
+  --code-important: var(--color-orange, rgb(220, 95, 0));
+  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.33);
+  --code-keyword: var(--color-pink, rgb(220, 100, 210));
+  --code-normal: var(--text-normal, hsl(0, 0%, 89%));
+  --code-operator: var(--color-red, rgb(220, 65, 65));
   --code-peripheral: 159, 157, 190;
-  --code-property: rgb(0, 202, 235);
-  --code-punctuation: hsl(0, 0%, 89%);
-  --code-radius: 2px;
-  --code-string: rgb(30, 169, 67);
-  --code-tag: rgb(220, 65, 65);
-  --code-value: rgb(140, 110, 240);
-  --codeFont: var(--font-monospace, iA Writer Mono S, IBM Plex Mono, Roboto Mono, Menlo, SFMono-Regular, Consolas, Source Code Pro, monospace);
-  --collapse-icon-color: hsl(0, 75%, 52%);
-  --collapse-icon-color-collapsed: hsl(0, 75%, 52%);
-  --color-accent: hsl(0, 75%, 52%);
-  --color-accent-1: hsl(0, 75%, 52%);
-  --color-accent-2: hsl(-3, 76.5%, 59.8%);
-  --color-accent-background: hsla(0, 75%, 52%, 0.1);
-  --color-accent-background-hover: hsla(0, 75%, 52%, 0.2);
-  --color-accent-hsl: 0, 75%, 52%;
+  --code-property: var(--color-cyan, rgb(0, 202, 235));
+  --code-punctuation: var(--code-normal, hsl(0, 0%, 89%));
+  --code-radius: var(--radius-s, 2px);
+  --code-string: var(--color-green, rgb(30, 169, 67));
+  --code-tag: var(--color-red, rgb(220, 65, 65));
+  --code-value: var(--color-purple, rgb(140, 110, 240));
+  --collapse-icon-color: var(--color-accent, hsl(0, 75%, 52%));
+  --collapse-icon-color-collapsed: var(--text-accent, hsl(0, 75%, 52%));
+  --color-accent-1: var(--color-accent, hsl(0, 75%, 52%));
+  --color-accent-background: hsla(var(--color-accent-hsl), 0.1);
+  --color-accent-background-hover: hsla(var(--color-accent-hsl), 0.2);
   --color-cyan: rgb(0, 202, 235);
   --color-green: rgb(30, 169, 67);
   --color-orange: rgb(220, 95, 0);
@@ -2137,275 +2353,258 @@ html[saved-theme="dark"] body ul.tags > li {
   --color-purple: rgb(140, 110, 240);
   --color-red: rgb(220, 65, 65);
   --color-yellow: rgb(230, 205, 90);
-  --dark: var(--text-normal, rgb(0, 0, 0));
-  --darkgray: var(--text-normal, rgb(0, 0, 0));
-  --dictionary-background-primary: hsla(0, 19.6%, 15%, 0.05);
-  --dictionary-background-secondary: hsl(0, 34.3%, 97.3%);
-  --divider-color: transparent;
-  --divider-color-hover: hsl(0, 75%, 52%);
-  --dropdown-background: hsla(0, 19.6%, 15%, 0.05);
-  --dropdown-background-hover: hsla(0, 19.6%, 15%, 0.1);
-  --embed-block-shadow-hover: 0 0 0 1px hsla(0, 19.6%, 15%, 0.1), inset 0 0 0 1px hsla(0, 19.6%, 15%, 0.1);
-  --embed-border-left: 2px dashed rgb(0, 0, 0);
-  --embed-border-start: 2px solid hsl(0, 75%, 52%);
-  --file-header-background: hsl(0, 39.2%, 99.3%);
-  --file-header-background-focused: hsl(0, 39.2%, 99.3%);
-  --file-header-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
-  --file-header-font-size: 14px;
-  --flair-background: hsla(0, 19.6%, 15%, 0.05);
-  --flair-color: rgb(0, 0, 0);
+  --dark: var(--text-normal, rgb(var(--ss-light-text-main)));
+  --darkgray: var(--text-normal, rgb(var(--ss-light-text-main)));
+  --dictionary-background-primary: var(--accent-soft-light, hsla(0, 19.6%, 15%, 0.05));
+  --dictionary-background-secondary: var(--background-secondary, hsl(0, 34.3%, 97.3%));
+  --divider-color: var(--background-modifier-border, transparent);
+  --divider-color-hover: var(--interactive-accent, hsl(0, 75%, 52%));
+  --dropdown-background: var(--interactive-normal, hsla(0, 19.6%, 15%, 0.05));
+  --dropdown-background-hover: var(--interactive-hover, hsla(0, 19.6%, 15%, 0.1));
+  --embed-border-left: var(--ss-embed-border-style, 2px dashed rgb(0, 0, 0));
+  --file-header-background: var(--background-primary, hsl(0, 39.2%, 99.3%));
+  --file-header-background-focused: var(--background-primary, hsl(0, 39.2%, 99.3%));
+  --file-header-font: var(--font-interface, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
+  --file-header-font-size: var(--font-ui-small, 14px);
+  --flair-background: var(--interactive-normal, hsla(0, 19.6%, 15%, 0.05));
+  --flair-color: var(--text-normal, rgb(0, 0, 0));
   --font-default: 'Franklin Gothic Book', 'Rubik', 'Helvetica Neue', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-interface: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
-  --font-interface-theme: 'Franklin Gothic Book', 'Rubik', 'Helvetica Neue', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-mermaid: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
-  --font-monospace: iA Writer Mono S, IBM Plex Mono, Roboto Mono, Menlo, SFMono-Regular, Consolas, Source Code Pro, monospace;
+  --font-interface-theme: var(--font-default, 'Franklin Gothic Book', 'Rubik', 'Helvetica Neue', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif);
+  --font-mermaid: var(--font-text, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
   --font-monospace-default: 'iA Writer Mono S', 'IBM Plex Mono', 'Roboto Mono', Menlo, SFMono-Regular, Consolas, 'Source Code Pro', monospace;
-  --font-text: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
   --font-ui-small: 14px;
   --font-ui-smaller: 13px;
   --font-ui-smallest: 12px;
-  --footnote-divider-color: hsla(0, 19.6%, 15%, 0.1);
-  --footnote-id-color: rgb(0, 0, 0);
-  --footnote-id-color-no-occurrences: rgb(0, 0, 0);
-  --footnote-input-background-active: hsla(0, 19.6%, 15%, 0.05);
-  --footnote-line-height: 1.25em;
-  --footnote-radius: 2px;
-  --graph-node: rgb(0, 0, 0);
-  --graph-node-attachment: rgb(230, 205, 90);
-  --graph-node-focused: hsl(0, 75%, 52%);
-  --graph-node-tag: rgb(30, 169, 67);
-  --graph-node-unresolved: rgb(0, 0, 0);
-  --graph-text: rgb(0, 0, 0);
-  --gray: var(--text-muted, rgb(0, 0, 0));
-  --h1-color: rgb(0, 0, 0);
+  --footnote-divider-color: var(--metadata-divider-color, hsla(0, 19.6%, 15%, 0.1));
+  --footnote-id-color: var(--text-muted, rgb(0, 0, 0));
+  --footnote-id-color-no-occurrences: var(--text-faint, rgb(0, 0, 0));
+  --footnote-input-background-active: var(--metadata-input-background-active, hsla(0, 19.6%, 15%, 0.05));
+  --footnote-line-height: var(--line-height-normal, 1.25em);
+  --footnote-radius: var(--radius-s, 2px);
+  --graph-node: var(--text-muted, rgb(0, 0, 0));
+  --graph-node-attachment: var(--color-yellow, rgb(230, 205, 90));
+  --graph-node-focused: var(--text-accent, hsl(0, 75%, 52%));
+  --graph-node-tag: var(--color-green, rgb(30, 169, 67));
+  --graph-node-unresolved: var(--text-faint, rgb(0, 0, 0));
+  --graph-text: var(--text-normal, rgb(0, 0, 0));
+  --gray: var(--text-muted, var(--text-normal, rgb(0, 0, 0)));
+  --h1-color: var(--text-normal, rgb(0, 0, 0));
   --h1-size: 1.5em;
-  --h2-color: rgb(0, 0, 0);
+  --h2-color: var(--text-normal, rgb(0, 0, 0));
   --h2-size: 1.375em;
-  --h3-color: rgb(0, 0, 0);
+  --h3-color: var(--text-normal, rgb(0, 0, 0));
   --h3-size: 1.25em;
-  --h4-color: rgb(0, 0, 0);
+  --h4-color: var(--text-normal, rgb(0, 0, 0));
   --h4-size: 1.125em;
-  --h5-color: rgb(0, 0, 0);
-  --h5-line-height: 1.25em;
+  --h5-color: var(--text-normal, rgb(0, 0, 0));
+  --h5-line-height: var(--line-height-normal, 1.25em);
   --h5-size: 1em;
-  --h6-color: rgb(0, 0, 0);
-  --h6-line-height: 1.25em;
-  --headerFont: var(--font-text, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
-  --heading-formatting: rgb(0, 0, 0);
-  --highlight: var(--text-highlight-bg, hsl(0, 82.5%, 67.2%));
-  --hr-color: rgba(0, 0, 0, 0.4);
+  --h6-color: var(--text-normal, rgb(0, 0, 0));
+  --h6-line-height: var(--line-height-normal, 1.25em);
+  --heading-formatting: var(--text-normal, rgb(0, 0, 0));
+  --highlight: var(--text-highlight-bg, var(--ss-light-highlight-bg, hsl(0, 82.5%, 67.2%)));
+  --hr-color: rgba(var(--ss-light-text-main), 0.4);
   --hr-thickness: 1px;
-  --icon-color: rgb(0, 0, 0);
-  --icon-color-active: rgb(0, 0, 0);
-  --icon-color-focused: rgb(0, 0, 0);
-  --icon-color-hover: rgb(0, 0, 0);
+  --icon-color: var(--text-normal, rgb(0, 0, 0));
+  --icon-color-active: var(--text-normal, rgb(0, 0, 0));
+  --icon-color-focused: var(--text-normal, rgb(0, 0, 0));
+  --icon-color-hover: var(--text-normal, rgb(0, 0, 0));
   --icon-opacity: 1;
-  --indentation-guide-color: rgba(0, 0, 0, 0.4);
-  --inline-title-color: rgb(0, 0, 0);
-  --inline-title-size: 1.625em;
-  --input-date-separator: rgb(0, 0, 0);
-  --input-placeholder-color: rgb(0, 0, 0);
-  --input-radius: 4px;
-  --interactive-accent: hsl(0, 75%, 52%);
-  --interactive-accent-hover: hsl(0, 75%, 52%);
-  --interactive-accent-hsl: 0, 75%, 52%;
-  --interactive-hover: hsla(0, 19.6%, 15%, 0.1);
-  --interactive-normal: hsla(0, 19.6%, 15%, 0.05);
-  --kanban-button-text: rgb(0, 0, 0);
-  --kanban-button-text-hover: rgb(254, 252, 252);
-  --kanban-checkbox-border: hsla(0, 19.6%, 15%, 0.1);
-  --light: var(--background-primary, hsl(0, 39.2%, 99.3%));
-  --lightgray: var(--background-secondary, hsl(0, 34.3%, 97.3%));
+  --indentation-guide-color: var(--hr-color, rgba(0, 0, 0, 0.4));
+  --inline-title-color: var(--h1-color, rgb(0, 0, 0));
+  --inline-title-size: var(--h1-size, 1.625em);
+  --input-date-separator: var(--text-faint, rgb(0, 0, 0));
+  --input-placeholder-color: var(--text-faint, rgb(0, 0, 0));
+  --input-radius: var(--radius-m, 4px);
+  --interactive-accent: var(--color-accent-1, hsl(0, 75%, 52%));
+  --interactive-accent-hover: var(--color-accent, hsl(0, 75%, 52%));
+  --interactive-accent-hsl: var(--color-accent-hsl, 0, 75%, 52%);
+  --interactive-hover: var(--accent-soft-dark, hsla(0, 19.6%, 15%, 0.1));
+  --interactive-normal: var(--accent-soft-light, hsla(0, 19.6%, 15%, 0.05));
+  --kanban-button-text: var(--text-normal, rgb(0, 0, 0));
+  --kanban-button-text-hover: var(--text-white, rgb(254, 252, 252));
+  --kanban-checkbox-border: var(--accent-soft-dark, hsla(0, 19.6%, 15%, 0.1));
+  --light: var(--background-primary, hsl(var(--background-h), var(--background-s), var(--background-l)));
+  --lightgray: var(--background-secondary, hsl(var(--background-h), var(--background-secondary-s), var(--background-secondary-l)));
   --line-height-normal: 1.25em;
-  --link-color: hsl(0, 75%, 52%);
-  --link-color-hover: #000;
-  --link-external-color: hsl(0, 75%, 52%);
-  --link-external-color-hover: #000;
-  --link-unresolved-color: hsl(0, 75%, 52%);
-  --link-unresolved-decoration-color: hsla(0, 75%, 52%, 0.3);
-  --list-elements: rgb(0, 0, 0);
-  --list-indent: 1.25em;
-  --list-marker-color: rgb(0, 0, 0);
-  --list-marker-color-collapsed: hsl(0, 75%, 52%);
-  --list-marker-color-hover: rgb(0, 0, 0);
-  --list-spacing: 0.25em;
-  --menu-background: hsl(0, 34.3%, 97.3%);
-  --menu-border-color: hsla(0, 19.6%, 15%, 0.1);
-  --menu-radius: 4px;
-  --metadata-border-color: hsla(0, 19.6%, 15%, 0.1);
-  --metadata-divider-color: hsla(0, 19.6%, 15%, 0.1);
-  --metadata-input-background-active: hsla(0, 19.6%, 15%, 0.05);
-  --metadata-input-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
-  --metadata-input-text-color: rgb(0, 0, 0);
-  --metadata-label-background-active: hsla(0, 19.6%, 15%, 0.05);
-  --metadata-label-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
-  --metadata-label-text-color: rgb(0, 0, 0);
-  --metadata-label-text-color-hover: rgb(0, 0, 0);
-  --metadata-property-background-active: hsla(0, 19.6%, 15%, 0.05);
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsla(0, 19.6%, 15%, 0.1);
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsla(0, 19.6%, 15%, 0.1);
-  --metadata-sidebar-input-font-size: 14px;
-  --metadata-sidebar-label-font-size: 14px;
-  --modal-background: hsl(0, 39.2%, 99.3%);
-  --modal-border-color: hsla(0, 19.6%, 15%, 0.1);
-  --modal-radius: 6px;
-  --nav-collapse-icon-color: hsl(0, 75%, 52%);
-  --nav-collapse-icon-color-collapsed: hsl(0, 75%, 52%);
-  --nav-heading-color: rgb(0, 0, 0);
-  --nav-heading-color-collapsed: rgb(0, 0, 0);
-  --nav-heading-color-collapsed-hover: rgb(0, 0, 0);
-  --nav-heading-color-hover: rgb(0, 0, 0);
-  --nav-indentation-guide-color: hsl(0, 75%, 52%);
-  --nav-item-background-active: hsla(0, 19.6%, 15%, 0.05);
-  --nav-item-background-hover: hsla(0, 19.6%, 15%, 0.05);
-  --nav-item-background-selected: hsla(0, 75%, 52%, 0.15);
-  --nav-item-color: rgb(0, 0, 0);
-  --nav-item-color-active: rgb(0, 0, 0);
-  --nav-item-color-highlighted: hsl(0, 75%, 52%);
-  --nav-item-color-hover: rgb(0, 0, 0);
-  --nav-item-color-selected: rgb(0, 0, 0);
-  --nav-item-radius: 2px;
-  --nav-item-size: 14px;
-  --nav-tag-color: rgb(0, 0, 0);
-  --nav-tag-color-active: rgb(0, 0, 0);
-  --nav-tag-color-hover: rgb(0, 0, 0);
-  --nav-tag-radius: 2px;
-  --oz-fta-file-font-size: 14px;
-  --oz-fta-folder-font-size: 14px;
-  --pdf-background: hsl(0, 39.2%, 99.3%);
-  --pdf-page-background: hsl(0, 39.2%, 99.3%);
-  --pdf-sidebar-background: hsl(0, 39.2%, 99.3%);
-  --pill-border-color: hsla(0, 19.6%, 15%, 0.1);
-  --pill-border-color-hover: hsla(0, 19.6%, 15%, 0.1);
-  --pill-color: rgb(0, 0, 0);
-  --pill-color-hover: rgb(0, 0, 0);
-  --pill-color-remove: rgb(0, 0, 0);
-  --pill-color-remove-hover: hsl(0, 75%, 52%);
-  --polka-dots: radial-gradient(hsl(0, 75%, 52%) 15%, transparent 25%),
-  radial-gradient(hsl(0, 75%, 52%) 17.5%, transparent 25%);
-  --prompt-background: hsl(0, 39.2%, 99.3%);
-  --prompt-border-color: hsla(0, 19.6%, 15%, 0.1);
-  --radius-l: 6px;
-  --radius-m: 4px;
-  --radius-s: 2px;
-  --radius-xl: 8px;
-  --raised-background: color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent) linear-gradient(hsl(0, 39.2%, 99.3%), color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent));
-  --ribbon-background: hsl(0, 34.3%, 97.3%);
-  --ribbon-background-collapsed: hsl(0, 39.2%, 99.3%);
+  --link-color: var(--text-accent, hsl(0, 75%, 52%));
+  --link-color-hover: var(--text-accent-hover, #000);
+  --link-external-color: var(--text-accent, hsl(0, 75%, 52%));
+  --link-external-color-hover: var(--text-accent-hover, #000);
+  --link-unresolved-color: var(--text-accent, hsl(0, 75%, 52%));
+  --list-elements: var(--text-normal, rgb(0, 0, 0));
+  --list-marker-color: var(--list-elements, rgb(0, 0, 0));
+  --list-marker-color-collapsed: var(--text-accent, hsl(0, 75%, 52%));
+  --list-marker-color-hover: var(--text-muted, rgb(0, 0, 0));
+  --list-spacing: calc(var(--line-height-normal)/5);
+  --menu-background: var(--background-secondary, hsl(0, 34.3%, 97.3%));
+  --menu-border-color: var(--background-modifier-border-hover, hsla(0, 19.6%, 15%, 0.1));
+  --menu-radius: var(--radius-m, 4px);
+  --metadata-border-color: var(--background-modifier-border, hsla(0, 19.6%, 15%, 0.1));
+  --metadata-divider-color: var(--background-modifier-border, hsla(0, 19.6%, 15%, 0.1));
+  --metadata-input-background-active: var(--background-modifier-hover, hsla(0, 19.6%, 15%, 0.05));
+  --metadata-input-font: var(--font-interface, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
+  --metadata-input-text-color: var(--text-normal, rgb(0, 0, 0));
+  --metadata-label-background-active: var(--background-modifier-hover, hsla(0, 19.6%, 15%, 0.05));
+  --metadata-label-font: var(--font-interface, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
+  --metadata-label-text-color: var(--text-muted, rgb(0, 0, 0));
+  --metadata-label-text-color-hover: var(--text-muted, rgb(0, 0, 0));
+  --metadata-property-background-active: var(--background-modifier-hover, hsla(0, 19.6%, 15%, 0.05));
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 14px);
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 14px);
+  --modal-background: var(--background-primary, hsl(0, 39.2%, 99.3%));
+  --modal-border-color: var(--accent-soft-dark, hsla(0, 19.6%, 15%, 0.1));
+  --modal-radius: var(--radius-l, 6px);
+  --nav-collapse-icon-color: var(--color-accent, hsl(0, 75%, 52%));
+  --nav-collapse-icon-color-collapsed: var(--color-accent, hsl(0, 75%, 52%));
+  --nav-heading-color: var(--text-normal, rgb(0, 0, 0));
+  --nav-heading-color-collapsed: var(--text-faint, rgb(0, 0, 0));
+  --nav-heading-color-collapsed-hover: var(--text-muted, rgb(0, 0, 0));
+  --nav-heading-color-hover: var(--text-normal, rgb(0, 0, 0));
+  --nav-indentation-guide-color: var(--color-accent, hsl(0, 75%, 52%));
+  --nav-item-background-active: var(--accent-soft-light, hsla(0, 19.6%, 15%, 0.05));
+  --nav-item-background-hover: var(--accent-soft-light, hsla(0, 19.6%, 15%, 0.05));
+  --nav-item-color: var(--text-normal, rgb(0, 0, 0));
+  --nav-item-color-active: var(--text-normal, rgb(0, 0, 0));
+  --nav-item-color-highlighted: var(--text-accent, hsl(0, 75%, 52%));
+  --nav-item-color-hover: var(--text-normal, rgb(0, 0, 0));
+  --nav-item-color-selected: var(--text-normal, rgb(0, 0, 0));
+  --nav-item-radius: var(--radius-s, 2px);
+  --nav-item-size: var(--font-ui-small, 14px);
+  --nav-tag-color: var(--text-faint, rgb(0, 0, 0));
+  --nav-tag-color-active: var(--text-muted, rgb(0, 0, 0));
+  --nav-tag-color-hover: var(--text-muted, rgb(0, 0, 0));
+  --nav-tag-radius: var(--radius-s, 2px);
+  --oz-fta-file-font-size: var(--nav-item-size, 14px);
+  --oz-fta-folder-font-size: var(--nav-item-size, 14px);
+  --pdf-background: var(--background-primary, hsl(0, 39.2%, 99.3%));
+  --pdf-page-background: var(--background-primary, hsl(0, 39.2%, 99.3%));
+  --pdf-sidebar-background: var(--background-primary, hsl(0, 39.2%, 99.3%));
+  --pill-border-color: var(--background-modifier-border, hsla(0, 19.6%, 15%, 0.1));
+  --pill-border-color-hover: var(--background-modifier-border-hover, hsla(0, 19.6%, 15%, 0.1));
+  --pill-color: var(--text-muted, rgb(0, 0, 0));
+  --pill-color-hover: var(--text-normal, rgb(0, 0, 0));
+  --pill-color-remove: var(--text-faint, rgb(0, 0, 0));
+  --pill-color-remove-hover: var(--text-accent, hsl(0, 75%, 52%));
+  --polka-dots: radial-gradient(var(--color-accent) 15%, transparent 25%),
+  radial-gradient(var(--color-accent) 17.5%, transparent 25%);
+  --prompt-background: var(--background-primary, hsl(0, 39.2%, 99.3%));
+  --prompt-border-color: var(--accent-soft-dark, hsla(0, 19.6%, 15%, 0.1));
+  --radius-l: calc(var(--radius-s)*3);
+  --radius-m: calc(var(--radius-s)*2);
+  --radius-s: calc(var(--ss-border-radius)*20);
+  --radius-xl: calc(var(--radius-s)*4);
+  --raised-background: var(--blur-background, color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent) linear-gradient(hsl(0, 39.2%, 99.3%), color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent)));
+  --ribbon-background: var(--background-secondary, hsl(0, 34.3%, 97.3%));
+  --ribbon-background-collapsed: var(--background-primary, hsl(0, 39.2%, 99.3%));
   --ribbon-border: none;
-  --scrollbar-active-thumb-bg: hsla(0, 19.6%, 15%, 0.1);
-  --scrollbar-radius: 6px;
-  --scrollbar-thumb-bg: hsla(0, 19.6%, 15%, 0.05);
-  --search-clear-button-color: rgb(0, 0, 0);
-  --search-icon-color: rgb(0, 0, 0);
-  --search-result-background: hsl(0, 39.2%, 99.3%);
-  --search-result-bg-hover: hsla(0, 19.6%, 15%, 0.1);
-  --secondary: var(--text-accent, hsl(0, 75%, 52%));
-  --setting-group-heading-color: rgb(0, 0, 0);
-  --setting-items-background: hsl(0, 34.3%, 97.3%);
-  --setting-items-border-color: hsla(0, 19.6%, 15%, 0.1);
-  --setting-items-radius: 6px;
-  --shiki-active-tab-border-color: rgb(0, 0, 0);
-  --shiki-code-background: rgb(23, 35, 62);
-  --shiki-code-block-border-radius: 2px;
-  --shiki-code-comment: rgb(0, 0, 0);
-  --shiki-code-function: rgb(30, 169, 67);
-  --shiki-code-important: rgb(220, 95, 0);
-  --shiki-code-keyword: rgb(220, 100, 210);
-  --shiki-code-normal: rgb(0, 0, 0);
-  --shiki-code-property: rgb(0, 202, 235);
-  --shiki-code-punctuation: rgb(0, 0, 0);
-  --shiki-code-string: rgb(230, 205, 90);
-  --shiki-code-value: rgb(140, 110, 240);
-  --shiki-gutter-border-color: hsla(0, 19.6%, 15%, 0.1);
-  --shiki-gutter-text-color: rgb(0, 0, 0);
-  --shiki-gutter-text-color-highlight: rgb(0, 0, 0);
-  --shiki-highlight-neutral: rgb(0, 0, 0);
-  --shiki-terminal-dots-color: rgb(0, 0, 0);
-  --slider-thumb-border-color: hsla(0, 19.6%, 15%, 0.1);
-  --slider-track-background: hsla(0, 19.6%, 15%, 0.1);
+  --scrollbar-active-thumb-bg: var(--accent-soft-dark, hsla(0, 19.6%, 15%, 0.1));
+  --scrollbar-radius: var(--radius-l, 6px);
+  --scrollbar-thumb-bg: var(--accent-soft-light, hsla(0, 19.6%, 15%, 0.05));
+  --search-clear-button-color: var(--text-muted, rgb(0, 0, 0));
+  --search-icon-color: var(--text-muted, rgb(0, 0, 0));
+  --search-result-background: var(--background-primary, hsl(0, 39.2%, 99.3%));
+  --search-result-bg-hover: var(--accent-soft-dark, hsla(0, 19.6%, 15%, 0.1));
+  --secondary: var(--text-accent, var(--color-accent, hsl(0, 75%, 52%)));
+  --setting-group-heading-color: var(--text-normal, rgb(0, 0, 0));
+  --setting-items-background: var(--background-primary-alt, hsl(0, 34.3%, 97.3%));
+  --setting-items-border-color: var(--background-modifier-border, hsla(0, 19.6%, 15%, 0.1));
+  --setting-items-radius: var(--radius-l, 6px);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, rgb(0, 0, 0));
+  --shiki-code-background: var(--code-background, rgb(23, 35, 62));
+  --shiki-code-block-border-radius: var(--code-radius, 2px);
+  --shiki-code-comment: var(--text-faint, rgb(0, 0, 0));
+  --shiki-code-function: var(--color-green, rgb(30, 169, 67));
+  --shiki-code-important: var(--color-orange, rgb(220, 95, 0));
+  --shiki-code-keyword: var(--color-pink, rgb(220, 100, 210));
+  --shiki-code-normal: var(--text-muted, rgb(0, 0, 0));
+  --shiki-code-property: var(--color-cyan, rgb(0, 202, 235));
+  --shiki-code-punctuation: var(--text-muted, rgb(0, 0, 0));
+  --shiki-code-string: var(--color-yellow, rgb(230, 205, 90));
+  --shiki-code-value: var(--color-purple, rgb(140, 110, 240));
+  --shiki-gutter-border-color: var(--background-modifier-border, hsla(0, 19.6%, 15%, 0.1));
+  --shiki-gutter-text-color: var(--text-faint, rgb(0, 0, 0));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, rgb(0, 0, 0));
+  --shiki-highlight-neutral: var(--shiki-code-normal, rgb(0, 0, 0));
+  --shiki-terminal-dots-color: var(--text-faint, rgb(0, 0, 0));
+  --slider-thumb-border-color: var(--background-modifier-border-hover, hsla(0, 19.6%, 15%, 0.1));
+  --slider-track-background: var(--background-modifier-border, hsla(0, 19.6%, 15%, 0.1));
   --ss-border-radius: 0.1px;
-  --ss-embed-border-style: 2px dashed rgb(0, 0, 0);
+  --ss-embed-border-style: 2px dashed var(--text-normal);
   --ss-light-contrast: 0%;
   --ss-light-h: 0;
-  --ss-light-highlight-bg: hsl(0, 82.5%, 67.2%);
+  --ss-light-highlight-bg: hsl(var(--accent-h), calc(var(--accent-s)*1.1), calc(var(--accent-l)*1.1 + 10%));
   --ss-light-l: 9.86%;
   --ss-light-s: 3.92%;
   --ss-light-text-main: 0, 0, 0;
-  --status-bar-background: hsl(0, 34.3%, 97.3%);
-  --status-bar-border-color: transparent;
-  --status-bar-font-size: 13px;
-  --status-bar-radius: 4px 0 0 0;
-  --status-bar-text-color: rgb(0, 0, 0);
-  --suggestion-background: hsl(0, 39.2%, 99.3%);
-  --sync-avatar-color-1: rgb(220, 65, 65);
-  --sync-avatar-color-2: rgb(220, 95, 0);
-  --sync-avatar-color-3: rgb(230, 205, 90);
-  --sync-avatar-color-4: rgb(30, 169, 67);
-  --sync-avatar-color-5: rgb(0, 202, 235);
-  --sync-avatar-color-7: rgb(140, 110, 240);
-  --sync-avatar-color-8: rgb(220, 100, 210);
-  --tab-background-active: hsl(0, 39.2%, 99.3%);
-  --tab-container-background: hsl(0, 34.3%, 97.3%);
-  --tab-divider-color: hsla(0, 19.6%, 15%, 0.1);
-  --tab-font-size: 14px;
-  --tab-outline-color: hsl(0, 75%, 52%);
-  --tab-radius: 2px;
-  --tab-stacked-font-size: 14px;
-  --tab-switcher-background: hsl(0, 34.3%, 97.3%);
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 34.3%, 97.3%), transparent);
-  --tab-switcher-preview-radius: 8px;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 75%, 52%);
-  --tab-text-color: rgb(0, 0, 0);
-  --tab-text-color-active: rgb(0, 0, 0);
-  --tab-text-color-focused: rgb(0, 0, 0);
-  --tab-text-color-focused-active: rgb(0, 0, 0);
-  --tab-text-color-focused-active-current: rgb(0, 0, 0);
-  --tab-text-color-focused-highlighted: hsl(0, 75%, 52%);
-  --table-add-button-border-color: hsla(0, 19.6%, 15%, 0.1);
-  --table-body-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  --status-bar-background: var(--background-secondary, hsl(0, 34.3%, 97.3%));
+  --status-bar-border-color: var(--divider-color, transparent);
+  --status-bar-font-size: var(--font-ui-smaller, 13px);
+  --status-bar-radius: var(--radius-m, 4px 0 0 0) 0 0 0;
+  --status-bar-text-color: var(--text-normal, rgb(0, 0, 0));
+  --suggestion-background: var(--background-primary, hsl(0, 39.2%, 99.3%));
+  --sync-avatar-color-1: var(--color-red, rgb(220, 65, 65));
+  --sync-avatar-color-2: var(--color-orange, rgb(220, 95, 0));
+  --sync-avatar-color-3: var(--color-yellow, rgb(230, 205, 90));
+  --sync-avatar-color-4: var(--color-green, rgb(30, 169, 67));
+  --sync-avatar-color-5: var(--color-cyan, rgb(0, 202, 235));
+  --sync-avatar-color-7: var(--color-purple, rgb(140, 110, 240));
+  --sync-avatar-color-8: var(--color-pink, rgb(220, 100, 210));
+  --tab-background-active: var(--background-primary, hsl(0, 39.2%, 99.3%));
+  --tab-container-background: var(--background-secondary, hsl(0, 34.3%, 97.3%));
+  --tab-divider-color: var(--background-modifier-border-hover, hsla(0, 19.6%, 15%, 0.1));
+  --tab-font-size: var(--font-ui-small, 14px);
+  --tab-outline-color: var(--color-accent, hsl(0, 75%, 52%));
+  --tab-radius: var(--radius-s, 2px);
+  --tab-stacked-font-size: var(--font-ui-small, 14px);
+  --tab-switcher-background: var(--background-secondary, hsl(0, 34.3%, 97.3%));
+  --tab-switcher-preview-radius: var(--radius-xl, 8px);
+  --tab-text-color: var(--text-faint, rgb(0, 0, 0));
+  --tab-text-color-active: var(--text-muted, rgb(0, 0, 0));
+  --tab-text-color-focused: var(--text-muted, rgb(0, 0, 0));
+  --tab-text-color-focused-active: var(--text-muted, rgb(0, 0, 0));
+  --tab-text-color-focused-active-current: var(--text-normal, rgb(0, 0, 0));
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(0, 75%, 52%));
+  --table-add-button-border-color: var(--background-modifier-border, hsla(0, 19.6%, 15%, 0.1));
+  --table-body-font: var(--font-text, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
   --table-body-font-size: 1em;
-  --table-border-color: rgb(0, 0, 0);
-  --table-drag-handle-background-active: hsl(0, 75%, 52%);
-  --table-drag-handle-color: rgb(0, 0, 0);
-  --table-drag-handle-color-active: rgb(254, 252, 252);
-  --table-header-border-color: rgb(0, 0, 0);
-  --table-header-color: rgb(0, 0, 0);
-  --table-header-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
-  --table-selection: hsla(0, 75%, 52%, 0.1);
-  --table-selection-border-color: hsl(0, 75%, 52%);
-  --tag-background: hsla(0, 75%, 52%, 0.1);
-  --tag-background-hover: hsla(0, 75%, 52%, 0.2);
-  --tag-border-color: hsla(0, 75%, 52%, 0.15);
-  --tag-border-color-hover: hsla(0, 75%, 52%, 0.15);
-  --tag-color: hsl(0, 75%, 52%);
-  --tag-color-hover: hsl(0, 75%, 52%);
-  --tag-radius: 4px;
-  --tertiary: var(--text-accent-hover, #000);
-  --text-accent: hsl(0, 75%, 52%);
-  --text-accent-hover: #000;
-  --text-error: rgb(250, 30, 0);
-  --text-faint: rgb(0, 0, 0);
-  --text-highlight-bg: hsl(0, 82.5%, 67.2%);
+  --table-border-color: var(--list-elements, rgb(0, 0, 0));
+  --table-drag-handle-background-active: var(--table-selection-border-color, hsl(0, 75%, 52%));
+  --table-drag-handle-color: var(--text-faint, rgb(0, 0, 0));
+  --table-drag-handle-color-active: var(--text-on-accent, rgb(254, 252, 252));
+  --table-header-border-color: var(--list-elements, rgb(0, 0, 0));
+  --table-header-color: var(--text-normal, rgb(0, 0, 0));
+  --table-header-font: var(--font-text, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
+  --table-selection-border-color: var(--interactive-accent, hsl(0, 75%, 52%));
+  --tag-background: var(--color-accent-background, hsla(0, 75%, 52%, 0.1));
+  --tag-background-hover: var(--color-accent-background-hover, hsla(0, 75%, 52%, 0.2));
+  --tag-color: var(--text-accent, hsl(0, 75%, 52%));
+  --tag-color-hover: var(--text-accent, hsl(0, 75%, 52%));
+  --tag-radius: var(--radius-m, 4px);
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, #000));
+  --text-accent: var(--color-accent, hsl(0, 75%, 52%));
+  --text-accent-hover: var(--color-accent-2, #000);
+  --text-error: var(--color-red, rgb(250, 30, 0));
+  --text-faint: var(--text-normal, rgb(0, 0, 0));
+  --text-highlight-bg: var(--ss-light-highlight-bg, hsl(0, 82.5%, 67.2%));
   --text-highlight-fg: #000;
-  --text-muted: rgb(0, 0, 0);
-  --text-normal: rgb(0, 0, 0);
-  --text-on-accent: rgb(254, 252, 252);
-  --text-selection: hsla(0, 75%, 52%, 0.4);
-  --text-success: rgb(30, 169, 67);
-  --text-warning: rgb(220, 95, 0);
+  --text-muted: var(--text-normal, rgb(0, 0, 0));
+  --text-normal: rgb(var(--ss-light-text-main));
+  --text-on-accent: var(--text-white, rgb(254, 252, 252));
+  --text-selection: var(--accent-on-selection, hsla(0, 75%, 52%, 0.4));
+  --text-success: var(--color-green, rgb(30, 169, 67));
+  --text-warning: var(--color-orange, rgb(220, 95, 0));
   --text-white: rgb(254, 252, 252);
-  --textHighlight: var(--text-highlight-bg, hsl(0, 82.5%, 67.2%));
-  --titleFont: var(--font-text, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif);
-  --titlebar-background: hsl(0, 34.3%, 97.3%);
-  --titlebar-background-focused: hsl(0, 34.3%, 97.3%);
-  --titlebar-border-color: hsla(0, 19.6%, 15%, 0.1);
-  --titlebar-text-color: rgb(0, 0, 0);
-  --titlebar-text-color-focused: rgb(0, 0, 0);
+  --textHighlight: var(--text-highlight-bg, var(--ss-light-highlight-bg, hsl(0, 82.5%, 67.2%)));
+  --titlebar-background: var(--background-secondary, hsl(0, 34.3%, 97.3%));
+  --titlebar-background-focused: var(--background-secondary, hsl(0, 34.3%, 97.3%));
+  --titlebar-border-color: var(--background-modifier-border, hsla(0, 19.6%, 15%, 0.1));
+  --titlebar-text-color: var(--text-muted, rgb(0, 0, 0));
+  --titlebar-text-color-focused: var(--text-normal, rgb(0, 0, 0));
   --vault-name-font-weight: bold;
-  --vault-profile-color: rgb(0, 0, 0);
-  --vault-profile-color-hover: rgb(0, 0, 0);
-  --vault-profile-font-size: 14px;
+  --vault-profile-color: var(--text-normal, rgb(0, 0, 0));
+  --vault-profile-color-hover: var(--vault-profile-color, rgb(0, 0, 0));
+  --vault-profile-font-size: var(--font-ui-small, 14px);
   --quartz-icon-color: currentColor;
 }
 
@@ -2415,17 +2614,17 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(250, 246, 246);
+  background-color: var(--tab-container-background, rgb(250, 246, 246));
   color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
-  background-color: rgb(254, 253, 253);
+  background-color: var(--background-primary, rgb(254, 253, 253));
   color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(250, 246, 246);
+  background-color: var(--background-secondary, rgb(250, 246, 246));
   color: rgb(0, 0, 0);
 }
 
@@ -2434,41 +2633,41 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(250, 246, 246);
+  background-color: var(--tab-container-background, rgb(250, 246, 246));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(0, 0, 0);
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
-  color: rgb(0, 0, 0);
+  color: var(--bold-color, rgb(0, 0, 0));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
-  color: rgb(0, 0, 0);
+  color: var(--italic-color, rgb(0, 0, 0));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
-  color: rgb(0, 0, 0);
+  color: var(--italic-color, rgb(0, 0, 0));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
-  color: rgb(0, 0, 0);
+  color: var(--bold-color, rgb(0, 0, 0));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .text-highlight {
-  background-color: rgb(240, 102, 102);
-  color: rgb(0, 0, 0);
+  background-color: var(--text-highlight-bg, rgb(240, 102, 102));
+  color: var(--text-highlight-fg, rgb(0, 0, 0));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
@@ -2482,7 +2681,7 @@ html[saved-theme="light"] body del {
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   font-size: 14px;
 }
 
@@ -2492,36 +2691,36 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(224, 41, 41);
+  background-color: var(--checkbox-color, rgb(224, 41, 41));
   border-color: rgb(224, 41, 41);
 }
 
 html[saved-theme="light"] body p {
-  color: rgb(0, 0, 0);
+  color: var(--text-muted, rgb(0, 0, 0));
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
 }`,
     links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
-  color: rgb(224, 41, 41);
+  color: var(--link-external-color, rgb(224, 41, 41));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(224, 41, 41) none 0px;
   text-decoration-color: rgb(224, 41, 41);
 }
 
 html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(224, 41, 41);
+  color: var(--link-color, rgb(224, 41, 41));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(224, 41, 41) none 0px;
   text-decoration-color: rgb(224, 41, 41);
 }
 
 html[saved-theme="light"] body a.internal-link.broken {
-  color: rgb(224, 41, 41);
+  color: var(--link-unresolved-color, rgb(224, 41, 41));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(224, 41, 41) none 0px;
   text-decoration: underline rgba(224, 41, 41, 0.3);
-  text-decoration-color: rgba(224, 41, 41, 0.3);
+  text-decoration-color: var(--link-unresolved-decoration-color, rgba(224, 41, 41, 0.3));
 }`,
     lists: `html[saved-theme="light"] body dd {
   color: rgb(0, 0, 0);
@@ -2546,7 +2745,7 @@ html[saved-theme="light"] body ul.overflow {
   border-top-color: rgb(0, 0, 0);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
-  color: rgb(0, 0, 0);
+  color: var(--text-faint, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body blockquote {
@@ -2561,7 +2760,7 @@ html[saved-theme="light"] body blockquote {
 
 html[saved-theme="light"] body table {
   color: rgb(0, 0, 0);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--table-body-font, "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
   width: 195.062px;
 }
 
@@ -2570,7 +2769,7 @@ html[saved-theme="light"] body td {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--table-text-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body th {
@@ -2578,10 +2777,10 @@ html[saved-theme="light"] body th {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--table-header-color, rgb(0, 0, 0));
 }`,
     code: `html[saved-theme="light"] body code {
-  background-color: rgb(23, 35, 62);
+  background-color: var(--code-background, rgb(23, 35, 62));
   border-bottom-color: rgba(46, 31, 31, 0.1);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2590,12 +2789,12 @@ html[saved-theme="light"] body th {
   border-top-color: rgba(46, 31, 31, 0.1);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  color: rgb(227, 227, 227);
-  font-family: "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular, Consolas, "Source Code Pro", monospace;
+  color: var(--code-normal, rgb(227, 227, 227));
+  font-family: var(--font-monospace, "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular, Consolas, "Source Code Pro", monospace);
 }
 
 html[saved-theme="light"] body pre:has(> code) {
-  background-color: rgb(23, 35, 62);
+  background-color: var(--code-background, rgb(23, 35, 62));
   border-bottom-color: rgba(46, 31, 31, 0.1);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2642,7 +2841,7 @@ html[saved-theme="light"] body video {
   border-top-color: rgb(0, 0, 0);
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
-  background-color: rgb(250, 246, 246);
+  background-color: var(--background-primary-alt, rgb(250, 246, 246));
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -2688,6 +2887,274 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] li.task-list-item[data-task="body"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] {
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
@@ -2975,11 +3442,11 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--callout-title-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout > .callout-content {
@@ -2987,9 +3454,8 @@ html[saved-theme="light"] body .callout > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
-  --callout-color: rgb(0, 0, 0);
+  --callout-color: var(--callout-summary, rgb(0, 0, 0));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -3015,11 +3481,11 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--callout-title-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-content {
@@ -3027,9 +3493,8 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
-  --callout-color: rgb(245, 0, 165);
+  --callout-color: var(--callout-bug, rgb(245, 0, 165));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(245, 0, 165);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -3055,11 +3520,11 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--callout-title-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
@@ -3067,9 +3532,8 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
-  --callout-color: rgb(235, 0, 0);
+  --callout-color: var(--callout-error, rgb(235, 0, 0));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(235, 0, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -3095,11 +3559,11 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--callout-title-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-content {
@@ -3107,9 +3571,8 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
-  --callout-color: rgb(0, 0, 0);
+  --callout-color: var(--callout-example, rgb(0, 0, 0));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -3135,11 +3598,11 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--callout-title-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] > .callout-content {
@@ -3147,9 +3610,8 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
-  --callout-color: rgb(235, 0, 0);
+  --callout-color: var(--callout-fail, rgb(235, 0, 0));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(235, 0, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -3175,11 +3637,11 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--callout-title-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-content {
@@ -3187,9 +3649,8 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
-  --callout-color: rgb(0, 0, 0);
+  --callout-color: var(--callout-info, rgb(0, 0, 0));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -3215,11 +3676,11 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--callout-title-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content {
@@ -3227,9 +3688,8 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
-  --callout-color: rgb(0, 0, 0);
+  --callout-color: var(--callout-default, rgb(0, 0, 0));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -3255,11 +3715,11 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--callout-title-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content {
@@ -3267,9 +3727,8 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
-  --callout-color: rgb(0, 0, 0);
+  --callout-color: var(--callout-question, rgb(0, 0, 0));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -3295,11 +3754,11 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--callout-title-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] > .callout-content {
@@ -3307,9 +3766,8 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
-  --callout-color: rgb(0, 0, 0);
+  --callout-color: var(--callout-quote, rgb(0, 0, 0));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -3335,11 +3793,11 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--callout-title-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content {
@@ -3347,9 +3805,8 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
-  --callout-color: rgb(0, 180, 0);
+  --callout-color: var(--callout-success, rgb(0, 180, 0));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(0, 180, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -3375,11 +3832,11 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--callout-title-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] > .callout-content {
@@ -3387,9 +3844,8 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
-  --callout-color: rgb(240, 195, 0);
+  --callout-color: var(--callout-tip, rgb(240, 195, 0));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(240, 195, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -3415,11 +3871,11 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--callout-title-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
@@ -3427,9 +3883,8 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
-  --callout-color: rgb(0, 130, 235);
+  --callout-color: var(--callout-todo, rgb(0, 130, 235));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(0, 130, 235);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -3455,11 +3910,11 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--callout-title-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content {
@@ -3467,9 +3922,8 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
-  --callout-color: rgb(240, 150, 0);
+  --callout-color: var(--callout-warning, rgb(240, 150, 0));
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(240, 150, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -3495,11 +3949,11 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(0, 0, 0);
+  color: var(--callout-title-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] > .callout-content {
@@ -3571,12 +4025,12 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-color: rgba(46, 31, 31, 0.1);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
-  background-color: rgb(254, 253, 253);
+  background-color: var(--prompt-background, rgb(254, 253, 253));
   border-bottom-color: rgba(46, 31, 31, 0.1);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -3614,7 +4068,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: rgba(46, 31, 31, 0.05);
+  background-color: var(--background-modifier-hover, rgba(46, 31, 31, 0.05));
   color: rgb(0, 0, 0);
 }
 
@@ -3637,7 +4091,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
-  background-color: rgba(46, 31, 31, 0.05);
+  background-color: var(--background-modifier-hover, rgba(46, 31, 31, 0.05));
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -3650,7 +4104,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: rgba(46, 31, 31, 0.05);
+  background-color: var(--background-modifier-hover, rgba(46, 31, 31, 0.05));
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-top-left-radius: 2px;
@@ -3659,7 +4113,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(224, 41, 41, 0.1);
+  background-color: var(--pill-background, rgba(224, 41, 41, 0.1));
   border-bottom-color: rgba(224, 41, 41, 0.15);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -3676,43 +4130,43 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
-  color: rgb(0, 0, 0);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--h1-color, rgb(0, 0, 0));
+  font-family: var(--h1-font, "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(0, 0, 0);
-  font-size: 26px;
+  color: var(--inline-title-color, rgb(0, 0, 0));
+  font-size: var(--inline-title-size, 26px);
 }
 
 html[saved-theme="light"] body h2 {
-  color: rgb(0, 0, 0);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--h2-color, rgb(0, 0, 0));
+  font-family: var(--h2-font, "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  color: rgb(0, 0, 0);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--inline-title-color, rgb(0, 0, 0));
+  font-family: var(--inline-title-font, "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
 }
 
 html[saved-theme="light"] body h3 {
-  color: rgb(0, 0, 0);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--h3-color, rgb(0, 0, 0));
+  font-family: var(--h3-font, "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
-  color: rgb(0, 0, 0);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--h4-color, rgb(0, 0, 0));
+  font-family: var(--h4-font, "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
-  color: rgb(0, 0, 0);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--h5-color, rgb(0, 0, 0));
+  font-family: var(--h5-font, "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
-  color: rgb(0, 0, 0);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--h6-color, rgb(0, 0, 0));
+  font-family: var(--h6-font, "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
 }
 
 html[saved-theme="light"] body hr {
@@ -3721,7 +4175,7 @@ html[saved-theme="light"] body hr {
   border-right-color: rgba(0, 0, 0, 0);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
-  --callout-color: rgb(0, 0, 0);
+  --callout-color: var(--callout-default, rgb(0, 0, 0));
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -3745,12 +4199,12 @@ html[saved-theme="light"] body hr {
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(0, 0, 0);
+  color: var(--nav-item-color, rgb(0, 0, 0));
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(0, 0, 0);
+  color: var(--nav-item-color, rgb(0, 0, 0));
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
@@ -3765,16 +4219,16 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  color: rgb(0, 0, 0);
+  color: var(--icon-color, rgb(0, 0, 0));
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: rgb(250, 246, 246);
+  background-color: var(--background-secondary, rgb(250, 246, 246));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 4px;
-  color: rgb(0, 0, 0);
+  color: var(--status-bar-text-color, rgb(0, 0, 0));
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -3795,7 +4249,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(0, 0, 0);
+  color: var(--nav-item-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3815,7 +4269,7 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(0, 0, 0);
+  color: var(--nav-item-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -3833,7 +4287,7 @@ html[saved-theme="light"] body ul.section-ul {
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  color: rgb(0, 0, 0);
+  color: var(--icon-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .darkmode svg {
@@ -3853,7 +4307,7 @@ html[saved-theme="light"] body .darkmode svg {
 }
 
 html[saved-theme="light"] body .breadcrumb-element p {
-  color: rgb(0, 0, 0);
+  color: var(--text-faint, rgb(0, 0, 0));
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }`,
     canvas: `html[saved-theme="light"] body .canvas-node {
@@ -3865,7 +4319,7 @@ html[saved-theme="light"] body .canvas-node-content {
 }
 
 html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .canvas-node-group {
@@ -3873,19 +4327,19 @@ html[saved-theme="light"] body .canvas-node-group {
 }
 
 html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(254, 253, 253);
+  background-color: var(--background-primary, rgb(254, 253, 253));
   border-color: rgb(0, 0, 0);
 }`,
     bases: `html[saved-theme="light"] body .bases-table thead th {
   border-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--table-header-color, rgb(0, 0, 0));
 }`,
     properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgba(46, 31, 31, 0.1);
   border-left-color: rgba(46, 31, 31, 0.1);
   border-right-color: rgba(46, 31, 31, 0.1);
   border-top-color: rgba(46, 31, 31, 0.1);
-  color: rgb(0, 0, 0);
+  color: var(--text-muted, rgb(0, 0, 0));
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -3911,9 +4365,9 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(224, 41, 41, 0.1);
+  background-color: var(--pill-background, rgba(224, 41, 41, 0.1));
   border-radius: 4px;
-  color: rgb(224, 41, 41);
+  color: var(--pill-color, rgb(224, 41, 41));
 }
 
 html[saved-theme="light"] body .note-properties-value {
@@ -3921,8 +4375,8 @@ html[saved-theme="light"] body .note-properties-value {
 }
 
 html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(254, 253, 253);
-  color: rgb(0, 0, 0);
+  background-color: var(--background-primary, rgb(254, 253, 253));
+  color: var(--text-normal, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body ol.overflow {
@@ -3932,12 +4386,12 @@ html[saved-theme="light"] body ol.overflow {
   border-top-color: rgb(0, 0, 0);
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
-  background-color: rgb(250, 246, 246);
+  background-color: var(--background-secondary, rgb(250, 246, 246));
   border-color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .stacked-page-header {
-  background-color: rgb(250, 246, 246);
+  background-color: var(--tab-container-background, rgb(250, 246, 246));
 }
 
 html[saved-theme="light"] body .stacked-page.active {
@@ -3952,11 +4406,11 @@ html[saved-theme="light"] body .stacked-page.active {
 }
 
 html[saved-theme="light"] body .navigation-progress {
-  background-color: rgb(250, 246, 246);
+  background-color: var(--background-secondary, rgb(250, 246, 246));
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -3976,12 +4430,12 @@ html[saved-theme="light"] body input[type=text] {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: var(--text-normal, rgb(0, 0, 0));
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 html[saved-theme="light"] body kbd {
-  background-color: rgb(23, 35, 62);
+  background-color: var(--code-background, rgb(23, 35, 62));
   border-bottom-color: rgb(227, 227, 227);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -3990,8 +4444,8 @@ html[saved-theme="light"] body kbd {
   border-top-color: rgb(227, 227, 227);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  color: rgb(227, 227, 227);
-  font-family: "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular, Consolas, "Source Code Pro", monospace;
+  color: var(--code-normal, rgb(227, 227, 227));
+  font-family: var(--font-monospace, "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular, Consolas, "Source Code Pro", monospace);
 }
 
 html[saved-theme="light"] body progress {
@@ -4014,7 +4468,7 @@ html[saved-theme="light"] body sup {
 }
 
 html[saved-theme="light"] body ul.tags > li {
-  background-color: rgba(224, 41, 41, 0.1);
+  background-color: var(--tag-background, rgba(224, 41, 41, 0.1));
   border-bottom-color: rgba(224, 41, 41, 0.15);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -4023,7 +4477,7 @@ html[saved-theme="light"] body ul.tags > li {
   border-top-color: rgba(224, 41, 41, 0.15);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  color: rgb(224, 41, 41);
+  color: var(--tag-color, rgb(224, 41, 41));
 }`,
   },
   classSettings: {

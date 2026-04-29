@@ -10,33 +10,37 @@ export const theme: ThemeData = {
 html body {
   background-color: var(--background-primary);
   color: var(--text-normal);
+}
+
+html body html {
+  font-family: var(--font-family, "Times New Roman");
 }`,
     typography: `html body p {
   font-family: "Times New Roman";
 }`,
     links: `html body a.external-link, html footer a {
-  color: rgb(197, 182, 252);
+  color: var(--text-accent-hover, rgb(197, 182, 252));
   outline: rgb(197, 182, 252) none 0px;
   text-decoration-color: rgb(197, 182, 252);
   transition: color 0.4s;
 }
 
 html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(197, 182, 252);
+  color: var(--text-accent-hover, rgb(197, 182, 252));
   outline: rgb(197, 182, 252) none 0px;
   text-decoration-color: rgb(197, 182, 252);
 }
 
 html body a.internal-link.broken {
-  color: rgb(197, 182, 252);
+  color: var(--text-accent-hover, rgb(197, 182, 252));
   outline: rgb(197, 182, 252) none 0px;
 }`,
     blockquotes: `html body .data-footnote-backref {
-  color: rgb(197, 182, 252);
+  color: var(--text-accent-hover, rgb(197, 182, 252));
 }
 
 html body blockquote {
-  background-color: rgb(54, 54, 54);
+  background-color: var(--blockquote-background-color, rgb(54, 54, 54));
   padding-bottom: 16px;
   padding-top: 16px;
 }`,
@@ -44,7 +48,7 @@ html body blockquote {
   background-color: rgb(54, 54, 54);
   margin-left: 33.0469px;
   margin-right: 33.0625px;
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
   width: 594.891px;
 }
 
@@ -65,7 +69,7 @@ html body th {
   border-left-color: rgb(179, 179, 179);
   border-right-color: rgb(179, 179, 179);
   border-top-color: rgb(179, 179, 179);
-  color: rgb(38, 38, 38);
+  color: var(--background-secondary, rgb(38, 38, 38));
   padding-bottom: 12.8px;
   padding-left: 12.8px;
   padding-right: 12.8px;
@@ -95,7 +99,7 @@ html body tr {
   border-top-color: rgb(179, 179, 179);
 }`,
     code: `html body code {
-  background-color: rgb(38, 38, 38);
+  background-color: var(--code-background, rgb(38, 38, 38));
   border-bottom-left-radius: 6.4px;
   border-bottom-right-radius: 6.4px;
   border-top-left-radius: 6.4px;
@@ -308,7 +312,7 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
 }
 
 html body .callout[data-callout="abstract"] .callout-title {
@@ -316,7 +320,7 @@ html body .callout[data-callout="abstract"] .callout-title {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
 }
 
 html body .callout[data-callout="bug"] .callout-title {
@@ -324,7 +328,7 @@ html body .callout[data-callout="bug"] .callout-title {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
 }
 
 html body .callout[data-callout="danger"] .callout-title {
@@ -332,7 +336,7 @@ html body .callout[data-callout="danger"] .callout-title {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
 }
 
 html body .callout[data-callout="example"] .callout-title {
@@ -340,7 +344,7 @@ html body .callout[data-callout="example"] .callout-title {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
 }
 
 html body .callout[data-callout="failure"] .callout-title {
@@ -348,7 +352,7 @@ html body .callout[data-callout="failure"] .callout-title {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
 }
 
 html body .callout[data-callout="info"] .callout-title {
@@ -356,7 +360,7 @@ html body .callout[data-callout="info"] .callout-title {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }
 
 html body .callout[data-callout="note"] .callout-title {
@@ -364,7 +368,7 @@ html body .callout[data-callout="note"] .callout-title {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
 }
 
 html body .callout[data-callout="question"] .callout-title {
@@ -372,7 +376,7 @@ html body .callout[data-callout="question"] .callout-title {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
 }
 
 html body .callout[data-callout="quote"] .callout-title {
@@ -380,7 +384,7 @@ html body .callout[data-callout="quote"] .callout-title {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
 }
 
 html body .callout[data-callout="success"] .callout-title {
@@ -388,7 +392,7 @@ html body .callout[data-callout="success"] .callout-title {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
 }
 
 html body .callout[data-callout="tip"] .callout-title {
@@ -396,7 +400,7 @@ html body .callout[data-callout="tip"] .callout-title {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
 }
 
 html body .callout[data-callout="todo"] .callout-title {
@@ -404,7 +408,7 @@ html body .callout[data-callout="todo"] .callout-title {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
 }
 
 html body .callout[data-callout="warning"] .callout-title {
@@ -470,7 +474,7 @@ html body .callout[data-callout="warning"] {
   font-family: "Times New Roman";
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }`,
     explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: "Times New Roman";
@@ -495,15 +499,15 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
     bases: `html body .bases-table thead th {
   background-color: rgb(102, 102, 102);
   border-color: rgb(179, 179, 179);
-  color: rgb(38, 38, 38);
+  color: var(--background-secondary, rgb(38, 38, 38));
 }`,
     misc: `html body ul.tags > li {
-  background-color: rgb(38, 38, 38);
+  background-color: var(--tag-background, rgb(38, 38, 38));
   border-bottom-left-radius: 6.4px;
   border-bottom-right-radius: 6.4px;
   border-top-left-radius: 6.4px;
   border-top-right-radius: 6.4px;
-  color: rgb(218, 218, 218);
+  color: var(--text-accent-hover, rgb(218, 218, 218));
 }`,
   },
   light: {},

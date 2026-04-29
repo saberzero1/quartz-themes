@@ -293,68 +293,6 @@
 }
 
 @font-face {
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV37NuzlojwUKaJO.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-@font-face {
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVT7NuzlojwUKaJO.woff2)
-    format("woff2");
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVz7NuzlojwUKaJO.woff2)
-    format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-@font-face {
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVP7NuzlojwUKaJO.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-
-@font-face {
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV77NuzlojwUKaJO.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7NuzlojwUKQ.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
   font-family: "Cascadia Mono";
   font-style: normal;
   font-display: swap;
@@ -439,64 +377,91 @@
     url("https://fonts.cdnfonts.com/s/14106/Monaco.woff") format("woff");
 }
 body.theme-dark {
-  --background-modifier-active-hover: hsl(224deg 23% 45% / 15%) !important;
-  --background-modifier-border: #fff !important;
+  --background-modifier-active-hover: hsla(
+    var(--interactive-accent-hsl),
+    0.1
+  ) !important;
+  --background-modifier-border: var(--venom_white, #fff) !important;
   --background-modifier-border-focus: var(--color-base-40, #555555) !important;
   --background-modifier-border-hover: var(--color-base-35, #3f3f3f) !important;
-  --background-modifier-error: #3d0000 !important;
-  --background-modifier-error-hover: #ff0f44 !important;
-  --background-modifier-error-rgb: 61, 0, 0 !important;
-  --background-modifier-form-field: rgba(0, 0, 0, 0.3) !important;
-  --background-modifier-form-field-hover: rgba(0, 0, 0, 0.3) !important;
+  --background-modifier-error: var(--color-red, #3d0000) !important;
+  --background-modifier-error-hover: var(--color-red, #ff0f44) !important;
+  --background-modifier-error-rgb: var(--color-red-rgb, 61, 0, 0) !important;
+  --background-modifier-form-field: var(
+    --color-base-25,
+    rgba(0, 0, 0, 0.3)
+  ) !important;
+  --background-modifier-form-field-hover: var(
+    --background-modifier-form-field,
+    rgba(0, 0, 0, 0.3)
+  ) !important;
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067) !important;
-  --background-modifier-success: #15df6b !important;
+  --background-modifier-success: var(--color-green, #15df6b) !important;
   --background-modifier-success-rgb: var(
     --color-green-rgb,
     68,
     207,
     110
   ) !important;
-  --background-primary: #1e303a !important;
-  --background-primary-alt: #0c1520 !important;
-  --background-secondary: #0c1520 !important;
-  --background-secondary-alt: #0c1520 !important;
-  --bases-cards-background: #1e303a !important;
+  --background-primary: var(--venom_navy, #1e303a) !important;
+  --background-primary-alt: var(--venom_dark_navy, #0c1520) !important;
+  --background-secondary: var(--venom_dark_navy, #0c1520) !important;
+  --background-secondary-alt: var(--venom_dark_navy, #0c1520) !important;
+  --bases-cards-background: var(--background-primary, #1e303a) !important;
   --bases-cards-border-width: var(--border-width, 1px) !important;
   --bases-cards-corner-shape: var(--corner-shape, round) !important;
-  --bases-cards-cover-background: #0c1520 !important;
+  --bases-cards-cover-background: var(
+    --background-primary-alt,
+    #0c1520
+  ) !important;
   --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
   --bases-cards-radius: var(--radius-m, 8px) !important;
-  --bases-cards-shadow: 0 0 0 1px #fff !important;
+  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
-  --bases-embed-border-color: #fff !important;
+  --bases-embed-border-color: var(
+    --background-modifier-border,
+    #fff
+  ) !important;
   --bases-embed-border-radius: var(--radius-s, 4px) !important;
-  --bases-group-heading-property-color: #bbb !important;
+  --bases-group-heading-property-color: var(--text-muted, #bbb) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller, 12px) !important;
   --bases-group-heading-property-weight: var(--font-normal, 400) !important;
   --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
   --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: #fff !important;
-  --bases-table-cell-background-active: #1e303a !important;
-  --bases-table-cell-background-disabled: #0c1520 !important;
+  --bases-table-border-color: var(--table-border-color, #fff) !important;
+  --bases-table-cell-background-active: var(
+    --background-primary,
+    #1e303a
+  ) !important;
+  --bases-table-cell-background-disabled: var(
+    --background-primary-alt,
+    #0c1520
+  ) !important;
   --bases-table-cell-background-selected: var(
     --table-selection,
     hsla(258, 88%, 66%, 0.1)
   ) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px #7f01fe !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width, 1px) !important;
   --bases-table-container-border-radius: var(--radius-s, 4px) !important;
   --bases-table-container-border-width: var(--border-width, 1px) !important;
   --bases-table-font-size: var(--font-smaller, 0.875em) !important;
-  --bases-table-group-background: #0c1520 !important;
-  --bases-table-header-background: #1e303a !important;
+  --bases-table-group-background: var(
+    --background-primary-alt,
+    #0c1520
+  ) !important;
+  --bases-table-header-background: var(
+    --background-primary,
+    #1e303a
+  ) !important;
   --bases-table-header-background-hover: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
   ) !important;
-  --bases-table-header-color: #bbb !important;
+  --bases-table-header-color: var(--text-muted, #bbb) !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent var(--size-4-6),
@@ -508,14 +473,28 @@ body.theme-dark {
     transparent
   ) !important;
   --bases-table-row-border-width: var(--border-width, 1px) !important;
-  --bases-table-summary-background: #1e303a !important;
+  --bases-table-summary-background: var(
+    --background-primary,
+    #1e303a
+  ) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
   ) !important;
-  --blockquote-border-color: #7f01fe !important;
-  --blur-background: color-mix(in srgb, #20242b 65%, transparent)
-    linear-gradient(#20242b, color-mix(in srgb, #20242b 65%, transparent)) !important;
+  --blockquote-border-color: var(--interactive-accent, #7f01fe) !important;
+  --blur-background: color-mix(
+      in srgb,
+      var(--interactive-normal) var(--blur-opacity-s),
+      transparent
+    )
+    linear-gradient(
+      var(--interactive-normal),
+      color-mix(
+        in srgb,
+        var(--interactive-normal) var(--blur-opacity-s),
+        transparent
+      )
+    ) !important;
   --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
   --blur-m: blur(var(--blur-radius-m)) saturate(var(--blur-saturation))
@@ -543,7 +522,7 @@ body.theme-dark {
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb, 2, 122, 255);
   --callout-warning: var(--color-orange-rgb, 233, 151, 63);
-  --canvas-background: #1e303a !important;
+  --canvas-background: var(--background-primary, #1e303a) !important;
   --canvas-card-label-color: var(--text-faint, #666666) !important;
   --canvas-color-1: var(--color-red-rgb, 251, 70, 76) !important;
   --canvas-color-2: var(--color-orange-rgb, 233, 151, 63) !important;
@@ -555,18 +534,18 @@ body.theme-dark {
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
   --canvas-controls-radius: var(--radius-s, 4px) !important;
   --canvas-dot-pattern: var(--color-base-30, #363636) !important;
-  --caret-color: #fff !important;
+  --caret-color: var(--text-normal, #fff) !important;
   --checkbox-border-color: var(--text-faint, #666666) !important;
-  --checkbox-border-color-hover: #bbb !important;
-  --checkbox-color: #7f01fe !important;
-  --checkbox-color-hover: #5082df !important;
-  --checkbox-marker-color: #1e303a !important;
+  --checkbox-border-color-hover: var(--text-muted, #bbb) !important;
+  --checkbox-color: var(--interactive-accent, #7f01fe) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover, #5082df) !important;
+  --checkbox-marker-color: var(--background-primary, #1e303a) !important;
   --checkbox-radius: var(--radius-s, 4px) !important;
   --checkbox-size: var(--font-text-size, 16px) !important;
-  --checklist-done-color: #bbb !important;
+  --checklist-done-color: var(--text-muted, #bbb) !important;
   --clickable-icon-radius: var(--radius-s, 4px) !important;
-  --code-background: #0c1520 !important;
-  --code-border-color: #fff !important;
+  --code-background: var(--background-primary-alt, #0c1520) !important;
+  --code-border-color: var(--background-modifier-border, #fff) !important;
   --code-bracket-background: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
@@ -575,17 +554,17 @@ body.theme-dark {
   --code-function: var(--color-yellow, #e0de71) !important;
   --code-important: var(--color-orange, #e9973f) !important;
   --code-keyword: var(--color-pink, #fa99cd) !important;
-  --code-normal: #fff !important;
+  --code-normal: var(--text-normal, #fff) !important;
   --code-operator: var(--color-red, #fb464c) !important;
   --code-property: var(--color-cyan, #53dfdd) !important;
-  --code-punctuation: #bbb !important;
+  --code-punctuation: var(--text-muted, #bbb) !important;
   --code-radius: var(--radius-s, 4px) !important;
   --code-size: var(--font-smaller, 0.875em) !important;
   --code-string: var(--color-green, #44cf6e) !important;
   --code-tag: var(--color-red, #fb464c) !important;
   --code-value: var(--color-purple, #a882ff) !important;
   --collapse-icon-color: var(--text-faint, #666666) !important;
-  --collapse-icon-color-collapsed: #fff !important;
+  --collapse-icon-color-collapsed: var(--text-accent, #fff) !important;
   --color-accent: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -603,41 +582,62 @@ body.theme-dark {
   ) !important;
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
-  --divider-color: #fff !important;
-  --divider-color-hover: #7f01fe !important;
+  --divider-color: var(--background-modifier-border, #fff) !important;
+  --divider-color-hover: var(--interactive-accent, #7f01fe) !important;
   --divider-vertical-height: calc(100% - var(--header-height)) !important;
-  --dropdown-background: #20242b !important;
-  --dropdown-background-hover: #353b47 !important;
+  --dropdown-background: var(--interactive-normal, #20242b) !important;
+  --dropdown-background-hover: var(--interactive-hover, #353b47) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
   --dropdown-padding: 0 var(--dropdown-padding-end) 0
     var(--dropdown-padding-start) !important;
-  --embed-block-shadow-hover: 0 0 0 1px #fff, inset 0 0 0 1px #fff !important;
-  --embed-border-start: 2px solid #7f01fe !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border) !important;
+  --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: #1e303a !important;
-  --file-header-background-focused: #1e303a !important;
+  --file-header-background: var(--background-primary, #1e303a) !important;
+  --file-header-background-focused: var(
+    --background-primary,
+    #1e303a
+  ) !important;
   --file-header-border: var(--border-width, 1px solid transparent) solid
     transparent !important;
-  --file-header-font:
-    "??", "??", "Segoe UI", "Arial", "Tahoma", "Helvetica", sans-serif,
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "Segoe UI",
+    "Arial",
+    "Tahoma",
+    "Helvetica",
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  ) !important;
   --file-header-font-size: var(--font-ui-small, 13px) !important;
   --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
   --file-margins-x: var(--size-4-8, 32px) !important;
   --file-margins-y: var(--size-4-8, 32px) !important;
-  --flair-background: #20242b !important;
-  --flair-color: #fff !important;
+  --flair-background: var(--interactive-normal, #20242b) !important;
+  --flair-color: var(--text-normal, #fff) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-interface:
-    "??", "??", "Segoe UI", "Arial", "Tahoma", "Helvetica", sans-serif,
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    var(--font-interface-override), var(--font-interface-theme),
+    var(--default-font, "??"), var(--font-default) !important;
   --font-mermaid: var(
     --font-text,
     "??",
@@ -657,22 +657,22 @@ body.theme-dark {
     sans-serif
   ) !important;
   --font-monospace:
-    "Consolas", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid",
-    "Arial", sans-serif !important;
+    var(--font-monospace-override), var(--font-monospace-theme),
+    var(--font-monospace-default) !important;
   --font-print:
     var(--font-print-override), var(--font-text-override),
     var(--font-text-theme), "Arial" !important;
   --font-text:
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-weight: var(--font-normal, 400) !important;
-  --footnote-divider-color: #fff !important;
+  --footnote-divider-color: var(--metadata-divider-color, #fff) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus,
     transparent
   ) !important;
   --footnote-divider-width: var(--border-width, 1px) !important;
   --footnote-gap: var(--size-4-1, 4px) !important;
-  --footnote-id-color: #bbb !important;
+  --footnote-id-color: var(--text-muted, #bbb) !important;
   --footnote-id-color-no-occurrences: var(--text-faint, #666666) !important;
   --footnote-input-background: var(
     --metadata-input-background,
@@ -691,21 +691,21 @@ body.theme-dark {
     --color-base-35,
     var(--background-modifier-border-focus)
   ) !important;
-  --graph-node: #bbb !important;
+  --graph-node: var(--text-muted, #bbb) !important;
   --graph-node-attachment: var(--color-yellow, #e0de71) !important;
-  --graph-node-focused: #fff !important;
+  --graph-node-focused: var(--text-accent, #fff) !important;
   --graph-node-tag: var(--color-green, #44cf6e) !important;
   --graph-node-unresolved: var(--text-faint, #666666) !important;
-  --graph-text: #fff !important;
+  --graph-text: var(--text-normal, #fff) !important;
   --h5-line-height: var(--line-height-normal, 1.5) !important;
   --h6-line-height: var(--line-height-normal, 1.5) !important;
   --heading-formatting: var(--text-faint, #666666) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
-  --hr-color: #fff !important;
-  --icon-color: #bbb !important;
-  --icon-color-active: #fff !important;
-  --icon-color-focused: #fff !important;
-  --icon-color-hover: #bbb !important;
+  --hr-color: var(--background-modifier-border, #fff) !important;
+  --icon-color: var(--text-muted, #bbb) !important;
+  --icon-color-active: var(--text-accent, #fff) !important;
+  --icon-color-focused: var(--text-normal, #fff) !important;
+  --icon-color-hover: var(--text-muted, #bbb) !important;
   --icon-size: var(--icon-m, 18px) !important;
   --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12) !important;
@@ -724,16 +724,16 @@ body.theme-dark {
   --input-icon-inset: var(--size-4-1, 4px) !important;
   --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
   --input-placeholder-color: var(--text-faint, #666666) !important;
-  --interactive-accent: #7f01fe !important;
-  --interactive-accent-hover: #5082df !important;
+  --interactive-accent: var(--venom_purple, #7f01fe) !important;
+  --interactive-accent-hover: var(--color-accent-1, #5082df) !important;
   --interactive-accent-hsl: var(--color-accent-hsl, 258, 88%, 66%) !important;
-  --interactive-hover: #353b47 !important;
-  --interactive-normal: #20242b !important;
-  --link-color: #fff !important;
-  --link-color-hover: #b13d4c !important;
-  --link-external-color: #fff !important;
-  --link-external-color-hover: #b13d4c !important;
-  --link-unresolved-color: #fff !important;
+  --interactive-hover: var(--color-base-35, #353b47) !important;
+  --interactive-normal: var(--color-base-30, #20242b) !important;
+  --link-color: var(--text-accent, #fff) !important;
+  --link-color-hover: var(--text-accent-hover, #b13d4c) !important;
+  --link-external-color: var(--text-accent, #fff) !important;
+  --link-external-color-hover: var(--text-accent-hover, #b13d4c) !important;
+  --link-unresolved-color: var(--text-accent, #fff) !important;
   --link-unresolved-decoration-color: hsla(
     var(--interactive-accent-hsl),
     0.3
@@ -741,9 +741,9 @@ body.theme-dark {
   --link-weight: var(--font-weight, 400) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-marker-color: var(--text-faint, #666666) !important;
-  --list-marker-color-collapsed: #fff !important;
-  --list-marker-color-hover: #bbb !important;
-  --menu-background: #0c1520 !important;
+  --list-marker-color-collapsed: var(--text-accent, #fff) !important;
+  --list-marker-color-hover: var(--text-muted, #bbb) !important;
+  --menu-background: var(--background-secondary, #0c1520) !important;
   --menu-border-color: var(
     --background-modifier-border-hover,
     #3f3f3f
@@ -758,33 +758,69 @@ body.theme-dark {
     0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3)
   ) !important;
-  --metadata-border-color: #fff !important;
-  --metadata-divider-color: #fff !important;
+  --metadata-border-color: var(--background-modifier-border, #fff) !important;
+  --metadata-divider-color: var(--background-modifier-border, #fff) !important;
   --metadata-input-background-active: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
   ) !important;
-  --metadata-input-font:
-    "??", "??", "Segoe UI", "Arial", "Tahoma", "Helvetica", sans-serif,
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "Segoe UI",
+    "Arial",
+    "Tahoma",
+    "Helvetica",
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  ) !important;
   --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
-  --metadata-input-text-color: #fff !important;
+  --metadata-input-text-color: var(--text-normal, #fff) !important;
   --metadata-label-background-active: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
   ) !important;
-  --metadata-label-font:
-    "??", "??", "Segoe UI", "Arial", "Tahoma", "Helvetica", sans-serif,
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "Segoe UI",
+    "Arial",
+    "Tahoma",
+    "Helvetica",
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  ) !important;
   --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
-  --metadata-label-text-color: #bbb !important;
-  --metadata-label-text-color-hover: #bbb !important;
+  --metadata-label-text-color: var(--text-muted, #bbb) !important;
+  --metadata-label-text-color-hover: var(--text-muted, #bbb) !important;
   --metadata-padding: var(--size-4-2, 8px 0) 0 !important;
   --metadata-property-background-active: var(
     --background-modifier-hover,
@@ -799,7 +835,7 @@ body.theme-dark {
   --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
-  --modal-background: #1e303a !important;
+  --modal-background: var(--background-primary, #1e303a) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -808,10 +844,10 @@ body.theme-dark {
   --modal-radius: var(--radius-l, 12px) !important;
   --nav-collapse-icon-color: var(--collapse-icon-color, #666666) !important;
   --nav-collapse-icon-color-collapsed: var(--text-faint, #666666) !important;
-  --nav-heading-color: #fff !important;
+  --nav-heading-color: var(--text-normal, #fff) !important;
   --nav-heading-color-collapsed: var(--text-faint, #666666) !important;
-  --nav-heading-color-collapsed-hover: #bbb !important;
-  --nav-heading-color-hover: #fff !important;
+  --nav-heading-color-collapsed-hover: var(--text-muted, #bbb) !important;
+  --nav-heading-color-hover: var(--text-normal, #fff) !important;
   --nav-heading-weight: var(--font-medium, 500) !important;
   --nav-heading-weight-hover: var(--font-medium, 500) !important;
   --nav-indentation-guide-color: var(
@@ -833,11 +869,11 @@ body.theme-dark {
   ) !important;
   --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
   --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
-  --nav-item-color: #bbb !important;
-  --nav-item-color-active: #fff !important;
-  --nav-item-color-highlighted: #fff !important;
-  --nav-item-color-hover: #fff !important;
-  --nav-item-color-selected: #fff !important;
+  --nav-item-color: var(--text-muted, #bbb) !important;
+  --nav-item-color-active: var(--text-normal, #fff) !important;
+  --nav-item-color-highlighted: var(--text-accent, #fff) !important;
+  --nav-item-color-hover: var(--text-normal, #fff) !important;
+  --nav-item-color-selected: var(--text-normal, #fff) !important;
   --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6, 4px 8px 4px 24px) !important;
@@ -848,79 +884,94 @@ body.theme-dark {
   --nav-item-radius: var(--radius-s, 4px) !important;
   --nav-item-size: var(--font-ui-small, 13px) !important;
   --nav-tag-color: var(--text-faint, #666666) !important;
-  --nav-tag-color-active: #bbb !important;
-  --nav-tag-color-hover: #bbb !important;
+  --nav-tag-color-active: var(--text-muted, #bbb) !important;
+  --nav-tag-color-hover: var(--text-muted, #bbb) !important;
   --nav-tag-radius: var(--radius-s, 4px) !important;
   --nav-tag-weight: var(--font-semibold, 600) !important;
-  --pdf-background: #1e303a !important;
-  --pdf-page-background: #1e303a !important;
-  --pdf-shadow: 0 0 0 1px #fff !important;
-  --pdf-sidebar-background: #1e303a !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px #fff !important;
-  --pill-border-color: #fff !important;
+  --pdf-background: var(--background-primary, #1e303a) !important;
+  --pdf-page-background: var(--background-primary, #1e303a) !important;
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
+  --pdf-sidebar-background: var(--background-primary, #1e303a) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
+  --pill-border-color: var(--background-modifier-border, #fff) !important;
   --pill-border-color-hover: var(
     --background-modifier-border-hover,
     #3f3f3f
   ) !important;
   --pill-border-width: var(--border-width, 1px) !important;
-  --pill-color: #bbb !important;
-  --pill-color-hover: #fff !important;
+  --pill-color: var(--text-muted, #bbb) !important;
+  --pill-color-hover: var(--text-normal, #fff) !important;
   --pill-color-remove: var(--text-faint, #666666) !important;
-  --pill-color-remove-hover: #fff !important;
+  --pill-color-remove-hover: var(--text-accent, #fff) !important;
   --popover-font-size: var(--font-text-size, 16px) !important;
-  --prompt-background: #1e303a !important;
+  --prompt-background: var(--background-primary, #1e303a) !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
   --prompt-border-width: var(--border-width, 1px) !important;
-  --raised-background: color-mix(in srgb, #20242b 65%, transparent)
-    linear-gradient(#20242b, color-mix(in srgb, #20242b 65%, transparent)) !important;
+  --raised-background: var(
+    --blur-background,
+    color-mix(in srgb, #20242b 65%, transparent)
+      linear-gradient(#20242b, color-mix(in srgb, #20242b 65%, transparent))
+  ) !important;
   --raised-blur: var(
     --blur-s,
     blur(6px) saturate(1.5) brightness(1.15)
   ) !important;
-  --ribbon-background: #0c1520 !important;
-  --ribbon-background-collapsed: #1e303a !important;
+  --ribbon-background: var(--background-secondary, #0c1520) !important;
+  --ribbon-background-collapsed: var(--background-primary, #1e303a) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1)
     var(--size-4-3, 8px 4px 12px) !important;
-  --scrollbar-active-thumb-bg: #7f01fe !important;
+  --scrollbar-active-thumb-bg: var(--venom_purple, #7f01fe) !important;
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
   --scrollbar-radius: var(--radius-l, 12px) !important;
-  --scrollbar-thumb-bg: #8e9599 !important;
-  --search-clear-button-color: #bbb !important;
-  --search-icon-color: #bbb !important;
-  --search-result-background: #1e303a !important;
-  --setting-group-heading-color: #fff !important;
+  --scrollbar-thumb-bg: var(--venom_gray, #8e9599) !important;
+  --search-clear-button-color: var(--text-muted, #bbb) !important;
+  --search-icon-color: var(--text-muted, #bbb) !important;
+  --search-result-background: var(--background-primary, #1e303a) !important;
+  --setting-group-heading-color: var(--text-normal, #fff) !important;
   --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
   --setting-group-heading-weight: var(--font-semibold, 600) !important;
-  --setting-items-background: #0c1520 !important;
-  --setting-items-border-color: #fff !important;
+  --setting-items-background: var(--background-primary-alt, #0c1520) !important;
+  --setting-items-border-color: var(
+    --background-modifier-border,
+    #fff
+  ) !important;
   --setting-items-padding: var(--size-4-5, 20px) !important;
   --setting-items-radius: var(--radius-l, 12px) !important;
-  --shiki-active-tab-border-color: #bbb !important;
-  --shiki-code-background: #0c1520 !important;
+  --shiki-active-tab-border-color: var(
+    --shiki-highlight-neutral,
+    #bbb
+  ) !important;
+  --shiki-code-background: var(--code-background, #0c1520) !important;
   --shiki-code-block-border-radius: var(--code-radius, 4px) !important;
   --shiki-code-block-spacing: var(--p-spacing, 1rem) !important;
   --shiki-code-comment: var(--text-faint, #666666) !important;
   --shiki-code-function: var(--color-green, #44cf6e) !important;
   --shiki-code-important: var(--color-orange, #e9973f) !important;
   --shiki-code-keyword: var(--color-pink, #fa99cd) !important;
-  --shiki-code-normal: #bbb !important;
+  --shiki-code-normal: var(--text-muted, #bbb) !important;
   --shiki-code-property: var(--color-cyan, #53dfdd) !important;
-  --shiki-code-punctuation: #bbb !important;
+  --shiki-code-punctuation: var(--text-muted, #bbb) !important;
   --shiki-code-string: var(--color-yellow, #e0de71) !important;
   --shiki-code-value: var(--color-purple, #a882ff) !important;
-  --shiki-gutter-border-color: #fff !important;
+  --shiki-gutter-border-color: var(
+    --background-modifier-border,
+    #fff
+  ) !important;
   --shiki-gutter-border-width: var(--border-width, 1px) !important;
   --shiki-gutter-text-color: var(--text-faint, #666666) !important;
-  --shiki-gutter-text-color-highlight: #bbb !important;
+  --shiki-gutter-text-color-highlight: var(
+    --shiki-code-normal,
+    #bbb
+  ) !important;
   --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
   --shiki-highlight-green-background: rgba(
     var(--color-green-rgb),
     0.1
   ) !important;
-  --shiki-highlight-neutral: #bbb !important;
+  --shiki-highlight-neutral: var(--shiki-code-normal, #bbb) !important;
   --shiki-highlight-neutral-background: rgba(
     var(--mono-rgb-100),
     0.05
@@ -939,15 +990,15 @@ body.theme-dark {
   ) !important;
   --slider-thumb-border-width: var(--border-width, 1px) !important;
   --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
-  --slider-track-background: #fff !important;
-  --status-bar-background: #0c1520 !important;
-  --status-bar-border-color: #fff !important;
+  --slider-track-background: var(--background-modifier-border, #fff) !important;
+  --status-bar-background: var(--background-secondary, #0c1520) !important;
+  --status-bar-border-color: var(--divider-color, #fff) !important;
   --status-bar-border-width: var(--border-width) 0 0
     var(--border-width, 1px 0 0 1px) !important;
   --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
   --status-bar-radius: var(--radius-m, 8px 0 0 0) 0 0 0 !important;
-  --status-bar-text-color: #bbb !important;
-  --suggestion-background: #1e303a !important;
+  --status-bar-text-color: var(--text-muted, #bbb) !important;
+  --suggestion-background: var(--background-primary, #1e303a) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(--color-red, #fb464c) !important;
   --sync-avatar-color-2: var(--color-orange, #e9973f) !important;
@@ -957,48 +1008,54 @@ body.theme-dark {
   --sync-avatar-color-6: var(--color-blue, #027aff) !important;
   --sync-avatar-color-7: var(--color-purple, #a882ff) !important;
   --sync-avatar-color-8: var(--color-pink, #fa99cd) !important;
-  --tab-background-active: #1e303a !important;
-  --tab-container-background: #0c1520 !important;
+  --tab-background-active: var(--background-primary, #1e303a) !important;
+  --tab-container-background: var(--background-secondary, #0c1520) !important;
   --tab-divider-color: var(
     --background-modifier-border-hover,
     #3f3f3f
   ) !important;
   --tab-font-size: var(--font-ui-small, 13px) !important;
-  --tab-outline-color: #fff !important;
+  --tab-outline-color: var(--divider-color, #fff) !important;
   --tab-radius: var(--radius-s, 4px) !important;
   --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
   --tab-stacked-header-width: var(--header-height, 40px) !important;
-  --tab-switcher-background: #0c1520 !important;
+  --tab-switcher-background: var(--background-secondary, #0c1520) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
-    #0c1520,
+    var(--background-secondary),
     transparent
   ) !important;
   --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
   --tab-text-color: var(--text-faint, #666666) !important;
-  --tab-text-color-active: #bbb !important;
-  --tab-text-color-focused: #bbb !important;
-  --tab-text-color-focused-active: #bbb !important;
-  --tab-text-color-focused-active-current: #fff !important;
-  --tab-text-color-focused-highlighted: #fff !important;
-  --table-add-button-border-color: #fff !important;
+  --tab-text-color-active: var(--text-muted, #bbb) !important;
+  --tab-text-color-focused: var(--text-muted, #bbb) !important;
+  --tab-text-color-focused-active: var(--text-muted, #bbb) !important;
+  --tab-text-color-focused-active-current: var(--text-normal, #fff) !important;
+  --tab-text-color-focused-highlighted: var(--text-accent, #fff) !important;
+  --table-add-button-border-color: var(
+    --background-modifier-border,
+    #fff
+  ) !important;
   --table-add-button-border-width: var(--table-border-width, 1px) !important;
-  --table-border-color: #fff !important;
+  --table-border-color: var(--background-modifier-border, #fff) !important;
   --table-column-alt-background: var(
     --table-background,
     transparent
   ) !important;
   --table-column-first-border-width: var(--table-border-width, 1px) !important;
   --table-column-last-border-width: var(--table-border-width, 1px) !important;
-  --table-drag-handle-background-active: #7f01fe !important;
+  --table-drag-handle-background-active: var(
+    --table-selection-border-color,
+    #7f01fe
+  ) !important;
   --table-drag-handle-color: var(--text-faint, #666666) !important;
-  --table-drag-handle-color-active: #dcddde !important;
+  --table-drag-handle-color-active: var(--text-on-accent, #dcddde) !important;
   --table-header-background: var(--table-background, transparent) !important;
-  --table-header-border-color: #fff !important;
+  --table-header-border-color: var(--table-border-color, #fff) !important;
   --table-header-border-width: var(--table-border-width, 1px) !important;
-  --table-header-color: #fff !important;
+  --table-header-color: var(--text-normal, #fff) !important;
   --table-header-size: var(--table-text-size, 16px) !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
@@ -1016,7 +1073,7 @@ body.theme-dark {
     --highlight-mix-blend-mode,
     lighten
   ) !important;
-  --table-selection-border-color: #7f01fe !important;
+  --table-selection-border-color: var(--interactive-accent, #7f01fe) !important;
   --table-text-size: var(--font-text-size, 16px) !important;
   --tag-background: hsla(var(--interactive-accent-hsl), 0.1) !important;
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2) !important;
@@ -1025,24 +1082,27 @@ body.theme-dark {
     var(--interactive-accent-hsl),
     0.15
   ) !important;
-  --tag-color: #fff !important;
-  --tag-color-hover: #fff !important;
+  --tag-color: var(--text-accent, #fff) !important;
+  --tag-color-hover: var(--text-accent, #fff) !important;
   --tag-size: var(--font-smaller, 0.875em) !important;
-  --text-accent: #fff !important;
-  --text-accent-hover: #b13d4c !important;
-  --text-error: #e16d76 !important;
+  --text-accent: var(--venom_white, #fff) !important;
+  --text-accent-hover: var(--venom_pink, #b13d4c) !important;
+  --text-error: var(--color-red, #e16d76) !important;
   --text-faint: var(--color-base-50, #666666) !important;
-  --text-highlight-bg: #0c1520 !important;
-  --text-muted: #bbb !important;
-  --text-normal: #fff !important;
-  --text-selection: #7f01fe !important;
+  --text-highlight-bg: var(--venom_dark_navy, #0c1520) !important;
+  --text-muted: var(--color-base-70, #bbb) !important;
+  --text-normal: var(--venom_white, #fff) !important;
+  --text-selection: var(--venom_purple, #7f01fe) !important;
   --text-success: var(--color-green, #44cf6e) !important;
   --text-warning: var(--color-orange, #e9973f) !important;
-  --titlebar-background: #0c1520 !important;
-  --titlebar-background-focused: #0c1520 !important;
-  --titlebar-border-color: #fff !important;
-  --titlebar-text-color: #bbb !important;
-  --titlebar-text-color-focused: #fff !important;
+  --titlebar-background: var(--background-secondary, #0c1520) !important;
+  --titlebar-background-focused: var(
+    --background-secondary-alt,
+    #0c1520
+  ) !important;
+  --titlebar-border-color: var(--background-modifier-border, #fff) !important;
+  --titlebar-text-color: var(--text-muted, #bbb) !important;
+  --titlebar-text-color-focused: var(--text-normal, #fff) !important;
   --titlebar-text-weight: var(--font-bold, 700) !important;
   --touch-radius-l: var(--touch-size-l, 52px) !important;
   --touch-radius-m: var(--touch-size-m, 44px) !important;
@@ -1052,8 +1112,8 @@ body.theme-dark {
   --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
   --traffic-lights-offset-x: var(--header-height, 40px) !important;
   --traffic-lights-offset-y: var(--header-height, 40px) !important;
-  --vault-profile-color: #fff !important;
-  --vault-profile-color-hover: #fff !important;
+  --vault-profile-color: var(--text-normal, #fff) !important;
+  --vault-profile-color-hover: var(--vault-profile-color, #fff) !important;
   --vault-profile-font-size: var(--font-ui-small, 13px) !important;
   --vault-profile-font-weight: var(--font-medium, 500) !important;
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
@@ -1499,14 +1559,14 @@ body.theme-dark {
     "Segoe UI", "Arial", "Tahoma", "Helvetica", sans-serif !important;
   --text-error-hover: #c9626a !important;
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22) !important;
-  --light-orange: #ff693f !important;
-  --text-title-h1: #ff0f44 !important;
+  --text-title-h1: var(--red, #ff0f44) !important;
   --text-title-h2: #ff8126 !important;
-  --text-title-h3: #fccd11 !important;
+  --text-title-h3: var(--yellow, #fccd11) !important;
   --text-title-h4: lightgreen !important;
   --text-title-h5: skyblue !important;
-  --text-title-h6: #8c44aa !important;
-  --panel-border-color: #752126 !important;
+  --text-title-h6: var(--purple, #8c44aa) !important;
+  --light-orange: #ff693f !important;
+  --panel-border-color: var(--venom_dark_red, #752126) !important;
   --green: #15df6b !important;
   --orange: #ffc83f !important;
   --purple: #8c44aa !important;
@@ -1563,7 +1623,7 @@ body {
 }
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--link-external-color, rgb(255, 255, 255));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -1602,7 +1662,7 @@ body body.theme-dark .markdown-rendered a.external-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--link-color, rgb(255, 255, 255));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -1641,7 +1701,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--link-unresolved-color, rgb(255, 255, 255));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -1696,7 +1756,7 @@ body body.theme-dark .markdown-rendered a.internal-link:hover {
 }
 body body.theme-dark .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(187, 187, 187);
+  color: var(--text-muted, rgb(187, 187, 187));
   cursor: auto;
   filter: none;
   backdrop-filter: none;
@@ -1740,7 +1800,7 @@ body body.theme-dark .markdown-rendered p {
 }
 body body.theme-dark strong {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--bold-color, rgb(255, 255, 255));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -1779,7 +1839,7 @@ body body.theme-dark strong {
 }
 body body.theme-dark b {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--bold-color, rgb(255, 255, 255));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -1818,7 +1878,7 @@ body body.theme-dark b {
 }
 body body.theme-dark em {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--italic-color, rgb(255, 255, 255));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -1857,7 +1917,7 @@ body body.theme-dark em {
 }
 body body.theme-dark i {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--italic-color, rgb(255, 255, 255));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -1895,8 +1955,8 @@ body body.theme-dark i {
   animation-play-state: running;
 }
 body body.theme-dark .markdown-rendered mark {
-  background-color: rgb(127, 1, 254);
-  color: rgb(255, 255, 255);
+  background-color: var(--venom_purple, rgb(127, 1, 254));
+  color: var(--text-normal, rgb(255, 255, 255));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -2024,7 +2084,7 @@ body body.theme-dark .markdown-rendered hr {
 }
 body body.theme-dark div.multi-select-pill {
   align-items: normal;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--venom_white, rgb(255, 255, 255));
   display: flex;
   font-family:
     "Segoe UI",
@@ -2099,7 +2159,7 @@ body body.theme-dark .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-dark .markdown-rendered code {
-  background-color: rgb(30, 48, 58);
+  background-color: var(--venom_navy, rgb(30, 48, 58));
   border: 0px solid rgb(255, 255, 255);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2109,10 +2169,17 @@ body body.theme-dark .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(177, 61, 76);
-  font-family:
-    Consolas, "Fira Code", "Source Code Pro", "Droid Sans Mono", Monoid, Arial,
-    sans-serif;
+  color: var(--venom_pink, rgb(177, 61, 76));
+  font-family: var(
+    --font-monospace,
+    Consolas,
+    "Fira Code",
+    "Source Code Pro",
+    "Droid Sans Mono",
+    Monoid,
+    Arial,
+    sans-serif
+  );
   padding: 2.25px 4.5px;
 }
 body body.theme-dark .markdown-rendered pre > code {
@@ -2133,7 +2200,7 @@ body body.theme-dark .markdown-rendered pre > code {
 }
 body body.theme-dark :not(pre) > code[class*="language-"],
 body body.theme-dark pre[class*="language-"] {
-  background-color: rgb(12, 21, 32);
+  background-color: var(--code-background, rgb(12, 21, 32));
   border: 0px solid rgb(255, 255, 255);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2207,7 +2274,7 @@ body body.theme-dark .markdown-rendered blockquote {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-style: italic;
+  font-style: var(--blockquote-font-style, italic);
   padding-bottom: 0px;
   padding-top: 0px;
   padding-inline-start: 0px;
@@ -2229,7 +2296,7 @@ body body.theme-dark .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
   font-family:
     "Segoe UI",
     Arial,
@@ -2251,7 +2318,7 @@ body body.theme-dark .site-body-left-column input.search-bar {
     sans-serif;
 }
 body body.theme-dark .search-results {
-  background-color: rgb(30, 48, 58);
+  background-color: var(--prompt-background, rgb(30, 48, 58));
   border: 1px solid rgb(85, 85, 85);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -2344,9 +2411,9 @@ body body.theme-dark div.search-results .suggestion-item.is-selected {
   color: rgb(255, 255, 255);
 }
 body body.theme-dark .published-container .markdown-rendered h1 {
-  color: rgb(255, 15, 68);
+  color: var(--text-title-h1, rgb(255, 15, 68));
   font-family: var(
-    --h1-font,
+    --font-family-preview,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2364,9 +2431,9 @@ body body.theme-dark .published-container .markdown-rendered h1 {
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
-  color: rgb(255, 129, 38);
+  color: var(--text-title-h2, rgb(255, 129, 38));
   font-family: var(
-    --h2-font,
+    --font-family-preview,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2384,9 +2451,9 @@ body body.theme-dark .published-container .markdown-rendered h2 {
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
-  color: rgb(252, 205, 17);
+  color: var(--text-title-h3, rgb(252, 205, 17));
   font-family: var(
-    --h3-font,
+    --font-family-preview,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2404,9 +2471,9 @@ body body.theme-dark .published-container .markdown-rendered h3 {
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
-  color: rgb(144, 238, 144);
+  color: var(--text-title-h4, rgb(144, 238, 144));
   font-family: var(
-    --h4-font,
+    --font-family-preview,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2424,9 +2491,9 @@ body body.theme-dark .published-container .markdown-rendered h4 {
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
-  color: rgb(135, 206, 235);
+  color: var(--text-title-h5, rgb(135, 206, 235));
   font-family: var(
-    --h5-font,
+    --font-family-preview,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2444,9 +2511,9 @@ body body.theme-dark .published-container .markdown-rendered h5 {
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
-  color: rgb(140, 68, 170);
+  color: var(--text-title-h6, rgb(140, 68, 170));
   font-family: var(
-    --h6-font,
+    --font-family-preview,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2521,7 +2588,7 @@ body body.theme-dark body {
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border: 0px solid rgba(2, 122, 255, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2571,7 +2638,7 @@ body body.theme-dark .callout > .callout-content {
   padding: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -2608,7 +2675,7 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2645,7 +2712,7 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2682,7 +2749,7 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -2719,7 +2786,7 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
@@ -2756,7 +2823,7 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -2793,7 +2860,7 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -2830,7 +2897,7 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2867,7 +2934,7 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2904,7 +2971,7 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2941,7 +3008,7 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
@@ -2978,7 +3045,7 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -3069,7 +3136,7 @@ body body.theme-dark .markdown-rendered tbody {
 }
 body body.theme-dark .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--table-header-color, rgb(255, 255, 255));
   font-weight: var(--table-header-weight, 600);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
@@ -3090,7 +3157,7 @@ body body.theme-dark .markdown-rendered th {
 }
 body body.theme-dark .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--table-text-color, rgb(255, 255, 255));
   font-weight: 400;
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
@@ -3257,7 +3324,7 @@ body body.theme-dark .markdown-embed {
   padding: 0px;
 }
 body body.theme-dark .file-embed {
-  background-color: rgb(12, 21, 32);
+  background-color: var(--background-primary-alt, rgb(12, 21, 32));
   border-color: rgb(187, 187, 187);
   border-width: 0px;
   border-top-left-radius: 8px;
@@ -3269,7 +3336,7 @@ body body.theme-dark .file-embed {
 }
 body body.theme-dark .metadata-container {
   background-color: var(--metadata-background, rgba(0, 0, 0, 0));
-  color: rgb(187, 187, 187);
+  color: var(--text-muted, rgb(187, 187, 187));
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3347,7 +3414,7 @@ body body.theme-dark input[type="range"] {
 }
 body body.theme-dark input[type="text"] {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(187, 187, 187);
+  color: var(--text-normal, rgb(187, 187, 187));
   font-family:
     "Segoe UI",
     Arial,
@@ -3422,12 +3489,19 @@ body body.theme-dark details[open] {
   padding: 0px;
 }
 body body.theme-dark kbd {
-  background-color: rgb(12, 21, 32);
+  background-color: var(--code-background, rgb(12, 21, 32));
   box-shadow: none;
-  color: rgb(255, 255, 255);
-  font-family:
-    Consolas, "Fira Code", "Source Code Pro", "Droid Sans Mono", Monoid, Arial,
-    sans-serif;
+  color: var(--code-normal, rgb(255, 255, 255));
+  font-family: var(
+    --font-monospace,
+    Consolas,
+    "Fira Code",
+    "Source Code Pro",
+    "Droid Sans Mono",
+    Monoid,
+    Arial,
+    sans-serif
+  );
   font-size: var(--code-size, 14px);
   border: 0px rgb(255, 255, 255);
   border-top-left-radius: 4px;
@@ -3657,7 +3731,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(117, 126, 138);
+  color: var(--nav-item-color, rgb(117, 126, 138));
   cursor: var(--cursor, default);
   font-family:
     "Segoe UI",
@@ -3689,7 +3763,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(117, 126, 138);
+  color: var(--nav-item-color, rgb(117, 126, 138));
   cursor: var(--cursor, default);
   font-family:
     "Segoe UI",
@@ -3715,7 +3789,7 @@ body
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(187, 187, 187);
+  color: var(--icon-color, rgb(187, 187, 187));
   cursor: var(--cursor, default);
   border-color: rgb(187, 187, 187);
   border-width: 0px;
@@ -3725,8 +3799,8 @@ body body.theme-dark .clickable-icon {
   border-bottom-right-radius: 4px;
 }
 body body.theme-dark .site-footer {
-  background-color: rgb(12, 21, 32);
-  color: rgb(177, 61, 76);
+  background-color: var(--status-bar-background, rgb(12, 21, 32));
+  color: var(--venom_pink, rgb(177, 61, 76));
   font-family:
     "Segoe UI",
     Arial,
@@ -3789,7 +3863,7 @@ body body.theme-dark .nav-files-container .tree-item {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .nav-file-title {
-  color: rgb(117, 126, 138);
+  color: var(--nav-item-color, rgb(117, 126, 138));
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(117, 126, 138);
@@ -3824,7 +3898,7 @@ body body.theme-dark .nav-files-container {
 }
 body body.theme-dark .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(187, 187, 187);
+  color: var(--icon-color, rgb(187, 187, 187));
   cursor: var(--cursor, default);
   border-color: rgb(187, 187, 187);
   border-width: 0px;
@@ -3870,7 +3944,7 @@ body body.theme-dark .view-header-breadcrumb-separator {
     sans-serif;
 }
 body body.theme-dark .page-header .page-title {
-  color: rgb(61, 68, 77);
+  color: var(--text-normal, rgb(197, 199, 202));
   font-family:
     "Segoe UI",
     Arial,
@@ -3891,13 +3965,13 @@ body body.theme-dark .page-header .page-title {
     "Segoe UI Symbol",
     sans-serif;
   text-shadow:
-    rgb(153, 52, 254) 0px 0px 2px,
-    rgb(153, 52, 254) 0px 0px 2px,
-    rgb(229, 204, 255) 0px 0px 3px,
-    rgb(229, 204, 255) 0px 0px 3px,
-    rgb(229, 204, 255) 0px 0px 3px,
-    rgb(229, 204, 255) 0px 0px 3px,
-    rgb(229, 204, 255) 0px 0px 3px;
+    rgb(224, 194, 255) 0px 0px 2px,
+    rgb(224, 194, 255) 0px 0px 2px,
+    rgb(158, 62, 254) 0px 0px 3px,
+    rgb(158, 62, 254) 0px 0px 3px,
+    rgb(158, 62, 254) 0px 0px 3px,
+    rgb(158, 62, 254) 0px 0px 3px,
+    rgb(158, 62, 254) 0px 0px 3px;
 }
 body body.theme-dark .math-block {
   background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
@@ -3983,7 +4057,7 @@ body body.theme-dark pre > code [data-highlighted-chars] {
 }
 body body.theme-dark .tag {
   background-color: var(--tag-background, rgba(138, 92, 245, 0.1));
-  color: rgb(177, 61, 76);
+  color: var(--venom_pink, rgb(177, 61, 76));
   border: 0px solid rgba(138, 92, 245, 0.15);
   border-top-left-radius: 24.5px;
   border-top-right-radius: 24.5px;

@@ -51,7 +51,7 @@ html body {
 }
 
 html body .page > div#quartz-body div.sidebar {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background-secondary, rgb(255, 255, 255));
 }
 
 html body html {
@@ -63,7 +63,7 @@ html body html {
   --tooltip: rgb(255, 255, 225);
   --window: #d4d0c8;
   background-color: rgb(212, 208, 200);
-  box-shadow: rgb(64, 64, 64) -1px -1px 0px 0px inset, rgb(255, 255, 255) 1px 1px 0px 0px inset, rgb(212, 208, 200) -2px -2px 0px 0px inset, rgb(255, 255, 255) 2px 2px 0px 0px inset;
+  box-shadow: inset -1px -1px var(--border), inset 1px 1px #fff, inset -2px -2px var(--window), inset 2px 2px #fff;
   padding-bottom: 3px;
   padding-left: 3px;
   padding-right: 3px;
@@ -269,7 +269,7 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
 }
 
 html body .callout[data-callout="abstract"] .callout-title {
@@ -277,7 +277,7 @@ html body .callout[data-callout="abstract"] .callout-title {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
 }
 
 html body .callout[data-callout="bug"] .callout-title {
@@ -285,7 +285,7 @@ html body .callout[data-callout="bug"] .callout-title {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
 }
 
 html body .callout[data-callout="danger"] .callout-title {
@@ -293,7 +293,7 @@ html body .callout[data-callout="danger"] .callout-title {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
 }
 
 html body .callout[data-callout="example"] .callout-title {
@@ -301,7 +301,7 @@ html body .callout[data-callout="example"] .callout-title {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
 }
 
 html body .callout[data-callout="failure"] .callout-title {
@@ -309,7 +309,7 @@ html body .callout[data-callout="failure"] .callout-title {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
 }
 
 html body .callout[data-callout="info"] .callout-title {
@@ -317,7 +317,7 @@ html body .callout[data-callout="info"] .callout-title {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }
 
 html body .callout[data-callout="note"] .callout-title {
@@ -325,7 +325,7 @@ html body .callout[data-callout="note"] .callout-title {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
 }
 
 html body .callout[data-callout="question"] .callout-title {
@@ -333,7 +333,7 @@ html body .callout[data-callout="question"] .callout-title {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
 }
 
 html body .callout[data-callout="quote"] .callout-title {
@@ -341,7 +341,7 @@ html body .callout[data-callout="quote"] .callout-title {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
 }
 
 html body .callout[data-callout="success"] .callout-title {
@@ -349,7 +349,7 @@ html body .callout[data-callout="success"] .callout-title {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
 }
 
 html body .callout[data-callout="tip"] .callout-title {
@@ -357,7 +357,7 @@ html body .callout[data-callout="tip"] .callout-title {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
 }
 
 html body .callout[data-callout="todo"] .callout-title {
@@ -365,7 +365,7 @@ html body .callout[data-callout="todo"] .callout-title {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
 }
 
 html body .callout[data-callout="warning"] .callout-title {
@@ -432,6 +432,7 @@ html body .callout[data-callout="warning"] {
 }
 
 html body .search > .search-container > .search-space {
+  background-color: var(--background-primary, rgb(30, 30, 30));
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -470,7 +471,7 @@ html body .search > .search-container > .search-space > .search-layout > .result
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
-  background-color: rgb(10, 36, 106);
+  background-color: var(--titlebar_active_1, rgb(10, 36, 106));
   color: rgb(255, 255, 255);
 }
 
@@ -493,11 +494,11 @@ html body .search > .search-container > .search-space > input {
   background-color: rgb(255, 255, 255);
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-width: 0px;
-  box-shadow: rgb(255, 255, 255) -1px -1px 0px 0px inset, rgb(128, 128, 128) 1px 1px 0px 0px inset, rgb(223, 223, 223) -2px -2px 0px 0px inset, rgb(64, 64, 64) 2px 2px 0px 0px inset;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px var(--titlebar_inactive_1), inset -2px -2px #dfdfdf, inset 2px 2px var(--border);
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
-  background-color: rgb(10, 36, 106);
+  background-color: var(--titlebar_active_1, rgb(10, 36, 106));
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-style: dotted;
   border-bottom-width: 1px;
@@ -514,33 +515,33 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
-  background-color: rgb(10, 36, 106);
+  background-color: var(--titlebar_active_1, rgb(10, 36, 106));
   color: rgb(255, 255, 255);
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }`,
     explorer: `html body .nav-files-container {
   background-color: rgb(255, 255, 255);
 }
 
 html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(0, 0, 0);
+  color: var(--nav-item-color, rgb(0, 0, 0));
   font-family: "Pixelated MS Sans Serif";
 }
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(0, 0, 0);
+  color: var(--nav-item-color, rgb(0, 0, 0));
   font-family: "Pixelated MS Sans Serif";
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   background-color: rgb(212, 208, 200);
 }`,
     footer: `html body footer {
-  background-color: rgb(212, 208, 200);
+  background-color: var(--window, rgb(212, 208, 200));
   border-top-color: rgb(0, 0, 0);
   border-top-width: 0px;
-  color: rgb(0, 0, 0);
+  color: var(--status-bar-text-color, rgb(0, 0, 0));
   font-family: "Pixelated MS Sans Serif";
 }
 
@@ -548,7 +549,7 @@ html body footer ul li a {
   color: rgb(0, 0, 0);
 }`,
     recentNotes: `html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(0, 0, 0);
+  color: var(--nav-item-color, rgb(0, 0, 0));
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -561,7 +562,7 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 }
 
 html body li.section-li > .section > .desc > h3 > a {
-  color: rgb(0, 0, 0);
+  color: var(--nav-item-color, rgb(0, 0, 0));
 }
 
 html body ul.section-ul {
@@ -576,14 +577,14 @@ html body .darkmode svg {
   stroke: rgb(0, 0, 0);
 }`,
     stacked: `html body .stacked-page {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background-secondary, rgb(255, 255, 255));
 }
 
 html body .stacked-page-header {
-  background-color: rgb(212, 208, 200);
+  background-color: var(--window, rgb(212, 208, 200));
 }`,
     misc: `html body .navigation-progress {
-  background-color: rgb(212, 208, 200);
+  background-color: var(--window, rgb(212, 208, 200));
 }
 
 html body .page-header h2.page-title {

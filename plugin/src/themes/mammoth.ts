@@ -4,198 +4,186 @@ export const theme: ThemeData = {
   meta: { name: "mammoth", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
-  --background-modifier-border: #333;
+  --background-modifier-border: var(--color-base-30, #333);
   --background-modifier-cover: rgba(0, 0, 0, 0.8);
-  --background-modifier-error: #dd99bb;
-  --background-modifier-error-hover: #f1a6cc;
-  --background-modifier-error-rgb: 221, 153, 187;
-  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+  --background-modifier-error: var( --kobi, #dd99bb);
+  --background-modifier-error-hover: var(--color-red, #f1a6cc);
+  --background-modifier-error-rgb: var(--color-red-rgb, 221, 153, 187);
+  --background-modifier-form-field: var(--color-base-25, rgba(0, 0, 0, 0.3));
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
-  --background-modifier-form-field-hover: rgba(0, 0, 0, 0.3);
-  --background-modifier-success: #bfffbc;
-  --background-primary: #171b1f;
-  --background-primary-alt: #20252a;
-  --background-secondary: #171e24;
-  --background-secondary-alt: #242f38;
-  --bases-cards-background: #171b1f;
-  --bases-cards-cover-background: #20252a;
-  --bases-cards-shadow: 0 0 0 1px #333;
-  --bases-embed-border-color: #333;
-  --bases-group-heading-property-color: #999;
-  --bases-table-border-color: #333;
-  --bases-table-cell-background-active: #171b1f;
-  --bases-table-cell-background-disabled: #20252a;
-  --bases-table-cell-shadow-focus: 0 0 0 2px #0ad1ed;
-  --bases-table-group-background: #20252a;
-  --bases-table-header-background: #171b1f;
-  --bases-table-header-color: #999;
-  --bases-table-summary-background: #171b1f;
-  --blockquote-border-color: #0ad1ed;
-  --blur-background: color-mix(in srgb, #2a2a2a 65%, transparent) linear-gradient(#2a2a2a, color-mix(in srgb, #2a2a2a 65%, transparent));
-  --canvas-background: #171b1f;
-  --canvas-card-label-color: #666;
-  --caret-color: #dcddde;
-  --checkbox-border-color: #666;
-  --checkbox-border-color-hover: #999;
-  --checkbox-color: #0ad1ed;
-  --checkbox-color-hover: #64d9e9;
-  --checkbox-marker-color: #171b1f;
-  --checklist-done-color: #999;
-  --code-background: #20252a;
-  --code-border-color: #333;
-  --code-comment: #666;
-  --code-normal: #dcddde;
-  --code-punctuation: #999;
-  --collapse-icon-color: #666;
-  --collapse-icon-color-collapsed: #0ad1ed;
-  --dark: var(--text-normal, #dcddde);
-  --darkgray: var(--text-normal, #dcddde);
-  --divider-color: #333;
-  --divider-color-hover: #0ad1ed;
-  --dropdown-background: #2a2a2a;
-  --dropdown-background-hover: #303030;
-  --embed-block-shadow-hover: 0 0 0 1px #333, inset 0 0 0 1px #333;
-  --embed-border-start: 2px solid #0ad1ed;
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, rgba(0, 0, 0, 0.3));
+  --background-modifier-success: var(--granny-smith-apple, #bfffbc);
+  --background-primary: var(--color-base-00, #171b1f);
+  --background-primary-alt: var(--color-base-10, #20252a);
+  --background-secondary: var(--color-base-20, #171e24);
+  --background-secondary-alt: var(--color-base-30, #242f38);
+  --bases-cards-background: var(--background-primary, #171b1f);
+  --bases-cards-cover-background: var(--background-primary-alt, #20252a);
+  --bases-embed-border-color: var(--background-modifier-border, #333);
+  --bases-group-heading-property-color: var(--text-muted, #999);
+  --bases-table-border-color: var(--table-border-color, #333);
+  --bases-table-cell-background-active: var(--background-primary, #171b1f);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #20252a);
+  --bases-table-group-background: var(--background-primary-alt, #20252a);
+  --bases-table-header-background: var(--background-primary, #171b1f);
+  --bases-table-header-color: var(--text-muted, #999);
+  --bases-table-summary-background: var(--background-primary, #171b1f);
+  --blockquote-border-color: var(--interactive-accent, #0ad1ed);
+  --canvas-background: var(--background-primary, #171b1f);
+  --canvas-card-label-color: var(--text-faint, #666);
+  --caret-color: var(--text-normal, #dcddde);
+  --checkbox-border-color: var(--text-faint, #666);
+  --checkbox-border-color-hover: var(--text-muted, #999);
+  --checkbox-color: var(--interactive-accent, #0ad1ed);
+  --checkbox-color-hover: var(--interactive-accent-hover, #64d9e9);
+  --checkbox-marker-color: var(--background-primary, #171b1f);
+  --checklist-done-color: var(--text-muted, #999);
+  --code-background: var(--background-primary-alt, #20252a);
+  --code-border-color: var(--background-modifier-border, #333);
+  --code-comment: var(--text-faint, #666);
+  --code-normal: var(--text-normal, #dcddde);
+  --code-punctuation: var(--text-muted, #999);
+  --collapse-icon-color: var(--text-faint, #666);
+  --collapse-icon-color-collapsed: var(--text-accent, #0ad1ed);
+  --dark: var(--text-normal, var(--color-base-100, #dcddde));
+  --darkgray: var(--text-normal, var(--color-base-100, #dcddde));
+  --divider-color: var(--background-modifier-border, #333);
+  --divider-color-hover: var(--interactive-accent, #0ad1ed);
+  --dropdown-background: var(--interactive-normal, #2a2a2a);
+  --dropdown-background-hover: var(--interactive-hover, #303030);
   --english-violet: #544261;
-  --file-header-background: #171b1f;
-  --file-header-background-focused: #171b1f;
-  --flair-background: #2a2a2a;
-  --flair-color: #dcddde;
-  --footnote-divider-color: #333;
-  --footnote-id-color: #999;
-  --footnote-id-color-no-occurrences: #666;
+  --file-header-background: var(--background-primary, #171b1f);
+  --file-header-background-focused: var(--background-primary, #171b1f);
+  --flair-background: var(--interactive-normal, #2a2a2a);
+  --flair-color: var(--text-normal, #dcddde);
+  --footnote-divider-color: var(--metadata-divider-color, #333);
+  --footnote-id-color: var(--text-muted, #999);
+  --footnote-id-color-no-occurrences: var(--text-faint, #666);
   --granny-smith-apple: #bfffbc;
-  --graph-node: #999;
-  --graph-node-focused: #0ad1ed;
-  --graph-node-unresolved: #666;
-  --graph-text: #dcddde;
-  --gray: var(--text-muted, #999);
-  --heading-formatting: #666;
-  --highlight: var(--text-highlight-bg, rgba(245, 184, 0, 0.397));
-  --hr-color: #333;
-  --icon-color: #999;
-  --icon-color-active: #0ad1ed;
-  --icon-color-focused: #dcddde;
-  --icon-color-hover: #999;
-  --input-date-separator: #666;
-  --input-placeholder-color: #666;
-  --interactive-accent: #0ad1ed;
-  --interactive-accent-hover: #64d9e9;
+  --graph-node: var(--text-muted, #999);
+  --graph-node-focused: var(--text-accent, #0ad1ed);
+  --graph-node-unresolved: var(--text-faint, #666);
+  --graph-text: var(--text-normal, #dcddde);
+  --gray: var(--text-muted, var(--color-base-70, #999));
+  --heading-formatting: var(--text-faint, #666);
+  --hr-color: var(--background-modifier-border, #333);
+  --icon-color: var(--text-muted, #999);
+  --icon-color-active: var(--text-accent, #0ad1ed);
+  --icon-color-focused: var(--text-normal, #dcddde);
+  --icon-color-hover: var(--text-muted, #999);
+  --input-date-separator: var(--text-faint, #666);
+  --input-placeholder-color: var(--text-faint, #666);
+  --interactive-accent: var(--sky-blue-crayola, #0ad1ed);
+  --interactive-accent-hover: var(--color-accent-1, #64d9e9);
   --interactive-accent-rgb: 10, 209, 237;
-  --interactive-hover: #303030;
-  --interactive-normal: #2a2a2a;
+  --interactive-hover: var(--color-base-35, #303030);
+  --interactive-normal: var(--color-base-30, #2a2a2a);
   --kobi: #dd99bb;
   --kobi-dark: #DC3B8C;
-  --light: var(--background-primary, #171b1f);
-  --lightgray: var(--background-secondary, #171e24);
-  --link-color: #0ad1ed;
-  --link-color-hover: #48e5fa;
-  --link-external-color: #0ad1ed;
-  --link-external-color-hover: #48e5fa;
-  --link-unresolved-color: #0ad1ed;
-  --list-marker-color: #666;
-  --list-marker-color-collapsed: #0ad1ed;
-  --list-marker-color-hover: #999;
-  --menu-background: #171e24;
-  --metadata-border-color: #333;
-  --metadata-divider-color: #333;
-  --metadata-input-text-color: #dcddde;
-  --metadata-label-text-color: #999;
-  --metadata-label-text-color-hover: #999;
-  --modal-background: #171b1f;
-  --nav-collapse-icon-color: #666;
-  --nav-collapse-icon-color-collapsed: #666;
-  --nav-heading-color: #dcddde;
-  --nav-heading-color-collapsed: #666;
-  --nav-heading-color-collapsed-hover: #999;
-  --nav-heading-color-hover: #dcddde;
-  --nav-item-color: #999;
-  --nav-item-color-active: #dcddde;
-  --nav-item-color-highlighted: #0ad1ed;
-  --nav-item-color-hover: #dcddde;
-  --nav-item-color-selected: #dcddde;
-  --nav-tag-color: #666;
-  --nav-tag-color-active: #999;
-  --nav-tag-color-hover: #999;
+  --light: var(--background-primary, var(--color-base-00, #171b1f));
+  --lightgray: var(--background-secondary, var(--color-base-20, #171e24));
+  --link-color: var(--text-accent, #0ad1ed);
+  --link-color-hover: var(--text-accent-hover, #48e5fa);
+  --link-external-color: var(--text-accent, #0ad1ed);
+  --link-external-color-hover: var(--text-accent-hover, #48e5fa);
+  --link-unresolved-color: var(--text-accent, #0ad1ed);
+  --list-marker-color: var(--text-faint, #666);
+  --list-marker-color-collapsed: var(--text-accent, #0ad1ed);
+  --list-marker-color-hover: var(--text-muted, #999);
+  --menu-background: var(--background-secondary, #171e24);
+  --metadata-border-color: var(--background-modifier-border, #333);
+  --metadata-divider-color: var(--background-modifier-border, #333);
+  --metadata-input-text-color: var(--text-normal, #dcddde);
+  --metadata-label-text-color: var(--text-muted, #999);
+  --metadata-label-text-color-hover: var(--text-muted, #999);
+  --modal-background: var(--background-primary, #171b1f);
+  --nav-collapse-icon-color: var(--collapse-icon-color, #666);
+  --nav-collapse-icon-color-collapsed: var(--text-faint, #666);
+  --nav-heading-color: var(--text-normal, #dcddde);
+  --nav-heading-color-collapsed: var(--text-faint, #666);
+  --nav-heading-color-collapsed-hover: var(--text-muted, #999);
+  --nav-heading-color-hover: var(--text-normal, #dcddde);
+  --nav-item-color: var(--text-muted, #999);
+  --nav-item-color-active: var(--text-normal, #dcddde);
+  --nav-item-color-highlighted: var(--text-accent, #0ad1ed);
+  --nav-item-color-hover: var(--text-normal, #dcddde);
+  --nav-item-color-selected: var(--text-normal, #dcddde);
+  --nav-tag-color: var(--text-faint, #666);
+  --nav-tag-color-active: var(--text-muted, #999);
+  --nav-tag-color-hover: var(--text-muted, #999);
   --orange-yellow: #f5b700;
-  --pdf-background: #171b1f;
-  --pdf-page-background: #171b1f;
-  --pdf-shadow: 0 0 0 1px #333;
-  --pdf-sidebar-background: #171b1f;
-  --pdf-thumbnail-shadow: 0 0 0 1px #333;
-  --pill-border-color: #333;
-  --pill-color: #999;
-  --pill-color-hover: #dcddde;
-  --pill-color-remove: #666;
-  --pill-color-remove-hover: #0ad1ed;
-  --prompt-background: #171b1f;
-  --raised-background: color-mix(in srgb, #2a2a2a 65%, transparent) linear-gradient(#2a2a2a, color-mix(in srgb, #2a2a2a 65%, transparent));
-  --ribbon-background: #171e24;
-  --ribbon-background-collapsed: #171b1f;
-  --search-clear-button-color: #999;
-  --search-icon-color: #999;
-  --search-result-background: #171b1f;
-  --secondary: var(--text-accent, #0ad1ed);
-  --setting-group-heading-color: #dcddde;
-  --setting-items-background: #20252a;
-  --setting-items-border-color: #333;
-  --shiki-active-tab-border-color: #999;
-  --shiki-code-background: #20252a;
-  --shiki-code-comment: #666;
-  --shiki-code-normal: #999;
-  --shiki-code-punctuation: #999;
-  --shiki-gutter-border-color: #333;
-  --shiki-gutter-text-color: #666;
-  --shiki-gutter-text-color-highlight: #999;
-  --shiki-highlight-neutral: #999;
-  --shiki-terminal-dots-color: #666;
+  --pdf-background: var(--background-primary, #171b1f);
+  --pdf-page-background: var(--background-primary, #171b1f);
+  --pdf-sidebar-background: var(--background-primary, #171b1f);
+  --pill-border-color: var(--background-modifier-border, #333);
+  --pill-color: var(--text-muted, #999);
+  --pill-color-hover: var(--text-normal, #dcddde);
+  --pill-color-remove: var(--text-faint, #666);
+  --pill-color-remove-hover: var(--text-accent, #0ad1ed);
+  --prompt-background: var(--background-primary, #171b1f);
+  --raised-background: var(--blur-background, color-mix(in srgb, #2a2a2a 65%, transparent) linear-gradient(#2a2a2a, color-mix(in srgb, #2a2a2a 65%, transparent)));
+  --ribbon-background: var(--background-secondary, #171e24);
+  --ribbon-background-collapsed: var(--background-primary, #171b1f);
+  --search-clear-button-color: var(--text-muted, #999);
+  --search-icon-color: var(--text-muted, #999);
+  --search-result-background: var(--background-primary, #171b1f);
+  --secondary: var(--text-accent, var(--color-accent-1, #0ad1ed));
+  --setting-group-heading-color: var(--text-normal, #dcddde);
+  --setting-items-background: var(--background-primary-alt, #20252a);
+  --setting-items-border-color: var(--background-modifier-border, #333);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, #999);
+  --shiki-code-background: var(--code-background, #20252a);
+  --shiki-code-comment: var(--text-faint, #666);
+  --shiki-code-normal: var(--text-muted, #999);
+  --shiki-code-punctuation: var(--text-muted, #999);
+  --shiki-gutter-border-color: var(--background-modifier-border, #333);
+  --shiki-gutter-text-color: var(--text-faint, #666);
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, #999);
+  --shiki-highlight-neutral: var(--shiki-code-normal, #999);
+  --shiki-terminal-dots-color: var(--text-faint, #666);
   --sky-blue-crayola: #0ad1ed;
   --slate-gray: #647d90;
-  --slider-track-background: #333;
-  --status-bar-background: #171e24;
-  --status-bar-border-color: #333;
-  --status-bar-text-color: #999;
-  --suggestion-background: #171b1f;
-  --tab-background-active: #171b1f;
-  --tab-container-background: #171e24;
-  --tab-outline-color: #333;
-  --tab-switcher-background: #171e24;
-  --tab-switcher-menubar-background: linear-gradient(to top, #171e24, transparent);
-  --tab-text-color: #666;
-  --tab-text-color-active: #999;
-  --tab-text-color-focused: #999;
-  --tab-text-color-focused-active: #999;
-  --tab-text-color-focused-active-current: #dcddde;
-  --tab-text-color-focused-highlighted: #0ad1ed;
-  --table-add-button-border-color: #333;
-  --table-border-color: #333;
-  --table-drag-handle-background-active: #0ad1ed;
-  --table-drag-handle-color: #666;
-  --table-drag-handle-color-active: #dcddde;
-  --table-header-border-color: #333;
-  --table-header-color: #dcddde;
-  --table-selection-border-color: #0ad1ed;
-  --tag-color: #0ad1ed;
-  --tag-color-hover: #0ad1ed;
-  --tertiary: var(--text-accent-hover, #48e5fa);
-  --text-accent: #0ad1ed;
-  --text-accent-hover: #48e5fa;
-  --text-error: #dd99bb;
+  --slider-track-background: var(--background-modifier-border, #333);
+  --status-bar-background: var(--background-secondary, #171e24);
+  --status-bar-border-color: var(--divider-color, #333);
+  --status-bar-text-color: var(--text-muted, #999);
+  --suggestion-background: var(--background-primary, #171b1f);
+  --tab-background-active: var(--background-primary, #171b1f);
+  --tab-container-background: var(--background-secondary, #171e24);
+  --tab-outline-color: var(--divider-color, #333);
+  --tab-switcher-background: var(--background-secondary, #171e24);
+  --tab-text-color: var(--text-faint, #666);
+  --tab-text-color-active: var(--text-muted, #999);
+  --tab-text-color-focused: var(--text-muted, #999);
+  --tab-text-color-focused-active: var(--text-muted, #999);
+  --tab-text-color-focused-active-current: var(--text-normal, #dcddde);
+  --tab-text-color-focused-highlighted: var(--text-accent, #0ad1ed);
+  --table-add-button-border-color: var(--background-modifier-border, #333);
+  --table-border-color: var(--background-modifier-border, #333);
+  --table-drag-handle-background-active: var(--table-selection-border-color, #0ad1ed);
+  --table-drag-handle-color: var(--text-faint, #666);
+  --table-drag-handle-color-active: var(--text-on-accent, #dcddde);
+  --table-header-border-color: var(--table-border-color, #333);
+  --table-header-color: var(--text-normal, #dcddde);
+  --table-selection-border-color: var(--interactive-accent, #0ad1ed);
+  --tag-color: var(--text-accent, #0ad1ed);
+  --tag-color-hover: var(--text-accent, #0ad1ed);
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, #48e5fa));
+  --text-accent: var(--color-accent-1, #0ad1ed);
+  --text-accent-hover: var(--color-accent-2, #48e5fa);
+  --text-error: var( --kobi, #dd99bb);
   --text-error-hover: #c55d91;
-  --text-faint: #666;
-  --text-highlight-bg: rgba(245, 184, 0, 0.397);
+  --text-faint: var(--color-base-50, #666);
   --text-highlight-bg-active: rgba(243, 195, 49, 0.459);
-  --text-muted: #999;
+  --text-muted: var(--color-base-70, #999);
   --text-muted-rgb: 153, 153, 153;
-  --text-normal: #dcddde;
+  --text-normal: var(--color-base-100, #dcddde);
   --text-on-accent: #dcddde;
-  --text-selection: rgba(100, 125, 144, 0.99);
-  --textHighlight: var(--text-highlight-bg, rgba(245, 184, 0, 0.397));
-  --titlebar-background: #171e24;
-  --titlebar-background-focused: #242f38;
-  --titlebar-border-color: #333;
-  --titlebar-text-color: #999;
-  --titlebar-text-color-focused: #dcddde;
+  --titlebar-background: var(--background-secondary, #171e24);
+  --titlebar-background-focused: var(--background-secondary-alt, #242f38);
+  --titlebar-border-color: var(--background-modifier-border, #333);
+  --titlebar-text-color: var(--text-muted, #999);
+  --titlebar-text-color-focused: var(--text-normal, #dcddde);
   --todoist-blue: #5297ff;
   --todoist-blue-background: rgba(82, 151, 255, 0.1);
   --todoist-green: #25b84c;
@@ -203,8 +191,8 @@ export const theme: ThemeData = {
   --todoist-orange-background: rgba(255, 154, 20, 0.1);
   --todoist-red: #ff7066;
   --todoist-red-background: rgba(255, 112, 102, 0.1);
-  --vault-profile-color: #dcddde;
-  --vault-profile-color-hover: #dcddde;
+  --vault-profile-color: var(--text-normal, #dcddde);
+  --vault-profile-color-hover: var(--vault-profile-color, #dcddde);
   --quartz-icon-color: currentColor;
 }
 
@@ -214,17 +202,17 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(23, 30, 36);
+  background-color: var(--tab-container-background, rgb(23, 30, 36));
   color: rgb(220, 221, 222);
 }
 
 html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
-  background-color: rgb(23, 27, 31);
+  background-color: var(--background-primary, rgb(23, 27, 31));
   color: rgb(220, 221, 222);
 }
 
 html body .page > div#quartz-body div.sidebar {
-  background-color: rgb(23, 30, 36);
+  background-color: var(--background-secondary, rgb(23, 30, 36));
   color: rgb(220, 221, 222);
 }
 
@@ -233,37 +221,37 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(23, 30, 36);
+  background-color: var(--tab-container-background, rgb(23, 30, 36));
   border-left-color: rgb(51, 51, 51);
   color: rgb(220, 221, 222);
 }`,
     typography: `html body .markdown-rendered p > b, html b {
-  color: rgb(220, 221, 222);
+  color: var(--bold-color, rgb(220, 221, 222));
   outline: rgb(220, 221, 222) none 0px;
   text-decoration-color: rgb(220, 221, 222);
 }
 
 html body .markdown-rendered p > em, html em {
-  color: rgb(220, 221, 222);
+  color: var(--italic-color, rgb(220, 221, 222));
   outline: rgb(220, 221, 222) none 0px;
   text-decoration-color: rgb(220, 221, 222);
 }
 
 html body .markdown-rendered p > i, html i {
-  color: rgb(220, 221, 222);
+  color: var(--italic-color, rgb(220, 221, 222));
   outline: rgb(220, 221, 222) none 0px;
   text-decoration-color: rgb(220, 221, 222);
 }
 
 html body .markdown-rendered p > strong, html strong {
-  color: rgb(220, 221, 222);
+  color: var(--bold-color, rgb(220, 221, 222));
   outline: rgb(220, 221, 222) none 0px;
   text-decoration-color: rgb(220, 221, 222);
 }
 
 html body .text-highlight {
-  background-color: rgb(221, 153, 187);
-  color: rgb(23, 27, 31);
+  background-color: var(--kobi, rgb(221, 153, 187));
+  color: var(--background-primary, rgb(23, 27, 31));
   font-weight: 600;
   outline: rgb(23, 27, 31) none 0px;
   text-decoration-color: rgb(23, 27, 31);
@@ -276,33 +264,33 @@ html body del {
 }
 
 html body h1.article-title {
-  color: rgb(220, 221, 222);
+  color: var(--text-normal, rgb(220, 221, 222));
 }
 
 html body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(10, 209, 237);
+  background-color: var(--checkbox-color, rgb(10, 209, 237));
   border-color: rgb(10, 209, 237);
 }
 
 html body p {
-  color: rgb(153, 153, 153);
+  color: var(--text-muted, rgb(153, 153, 153));
   outline: rgb(153, 153, 153) none 0px;
   text-decoration-color: rgb(153, 153, 153);
 }`,
     links: `html body a.external-link, html footer a {
-  color: rgb(10, 209, 237);
+  color: var(--link-external-color, rgb(10, 209, 237));
   outline: rgb(10, 209, 237) none 0px;
   text-decoration-color: rgb(10, 209, 237);
 }
 
 html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(10, 209, 237);
+  color: var(--link-color, rgb(10, 209, 237));
   outline: rgb(10, 209, 237) none 0px;
   text-decoration-color: rgb(10, 209, 237);
 }
 
 html body a.internal-link.broken {
-  color: rgb(10, 209, 237);
+  color: var(--link-unresolved-color, rgb(10, 209, 237));
   outline: rgb(10, 209, 237) none 0px;
 }`,
     lists: `html body dd {
@@ -343,7 +331,7 @@ html body td {
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
   border-top-color: rgb(51, 51, 51);
-  color: rgb(220, 221, 222);
+  color: var(--table-text-color, rgb(220, 221, 222));
 }
 
 html body th {
@@ -351,19 +339,19 @@ html body th {
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
   border-top-color: rgb(51, 51, 51);
-  color: rgb(220, 221, 222);
+  color: var(--table-header-color, rgb(220, 221, 222));
 }`,
     code: `html body code {
-  background-color: rgb(32, 37, 42);
+  background-color: var(--code-background, rgb(32, 37, 42));
   border-bottom-color: rgb(51, 51, 51);
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
   border-top-color: rgb(51, 51, 51);
-  color: rgb(220, 221, 222);
+  color: var(--code-normal, rgb(220, 221, 222));
 }
 
 html body pre:has(> code) {
-  background-color: rgb(32, 37, 42);
+  background-color: var(--code-background, rgb(32, 37, 42));
   border-bottom-color: rgb(51, 51, 51);
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
@@ -401,7 +389,7 @@ html body video {
   border-top-color: rgb(220, 221, 222);
 }`,
     embeds: `html body .file-embed {
-  background-color: rgb(32, 37, 42);
+  background-color: var(--background-primary-alt, rgb(32, 37, 42));
   border-bottom-color: rgb(153, 153, 153);
   border-left-color: rgb(153, 153, 153);
   border-right-color: rgb(153, 153, 153);
@@ -442,7 +430,7 @@ html body .transclude-inner {
   margin-left: -6px;
   margin-right: 5px;
   padding-bottom: 5px;
-  width: 18px;
+  width: var(--checkbox-size, 18px);
 }
 
 html body li.task-list-item[data-task="#"] {
@@ -1084,7 +1072,7 @@ html body .callout > .callout-content {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   color: rgb(220, 221, 222);
 }
 
@@ -1097,7 +1085,7 @@ html body .callout[data-callout="abstract"] > .callout-content {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   color: rgb(220, 221, 222);
 }
 
@@ -1110,7 +1098,7 @@ html body .callout[data-callout="bug"] > .callout-content {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   color: rgb(220, 221, 222);
 }
 
@@ -1123,7 +1111,7 @@ html body .callout[data-callout="danger"] > .callout-content {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   color: rgb(220, 221, 222);
 }
 
@@ -1136,7 +1124,7 @@ html body .callout[data-callout="example"] > .callout-content {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   color: rgb(220, 221, 222);
 }
 
@@ -1149,7 +1137,7 @@ html body .callout[data-callout="failure"] > .callout-content {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   color: rgb(220, 221, 222);
 }
 
@@ -1162,7 +1150,7 @@ html body .callout[data-callout="info"] > .callout-content {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   color: rgb(220, 221, 222);
 }
 
@@ -1175,7 +1163,7 @@ html body .callout[data-callout="note"] > .callout-content {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   color: rgb(220, 221, 222);
 }
 
@@ -1188,7 +1176,7 @@ html body .callout[data-callout="question"] > .callout-content {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   color: rgb(220, 221, 222);
 }
 
@@ -1201,7 +1189,7 @@ html body .callout[data-callout="quote"] > .callout-content {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   color: rgb(220, 221, 222);
 }
 
@@ -1214,7 +1202,7 @@ html body .callout[data-callout="success"] > .callout-content {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   color: rgb(220, 221, 222);
 }
 
@@ -1227,7 +1215,7 @@ html body .callout[data-callout="tip"] > .callout-content {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   color: rgb(220, 221, 222);
 }
 
@@ -1240,7 +1228,7 @@ html body .callout[data-callout="todo"] > .callout-content {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   color: rgb(220, 221, 222);
 }
 
@@ -1313,11 +1301,11 @@ html body .callout[data-callout="warning"] {
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
   border-top-color: rgb(51, 51, 51);
-  color: rgb(220, 221, 222);
+  color: var(--text-normal, rgb(220, 221, 222));
 }
 
 html body .search > .search-container > .search-space {
-  background-color: rgb(23, 27, 31);
+  background-color: var(--prompt-background, rgb(23, 27, 31));
 }
 
 html body .search > .search-container > .search-space > * {
@@ -1327,7 +1315,7 @@ html body .search > .search-container > .search-space > * {
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container {
-  color: rgb(23, 27, 31);
+  color: var(--background-primary, rgb(23, 27, 31));
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
@@ -1338,12 +1326,12 @@ html body .search > .search-container > .search-space > .search-layout > .result
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-description {
-  color: rgb(23, 27, 31);
+  color: var(--background-primary, rgb(23, 27, 31));
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
-  background-color: rgb(245, 183, 0);
-  color: rgb(23, 27, 31);
+  background-color: var(--orange-yellow, rgb(245, 183, 0));
+  color: var(--background-primary, rgb(23, 27, 31));
 }
 
 html body .search > .search-container > .search-space > input {
@@ -1354,17 +1342,17 @@ html body .search > .search-container > .search-space > input {
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
-  background-color: rgb(245, 183, 0);
+  background-color: var(--orange-yellow, rgb(245, 183, 0));
   border-bottom-color: rgb(23, 27, 31);
   border-left-color: rgb(23, 27, 31);
   border-right-color: rgb(23, 27, 31);
   border-top-color: rgb(23, 27, 31);
-  color: rgb(23, 27, 31);
+  color: var(--background-primary, rgb(23, 27, 31));
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
-  background-color: rgb(245, 183, 0);
-  color: rgb(23, 27, 31);
+  background-color: var(--orange-yellow, rgb(245, 183, 0));
+  color: var(--background-primary, rgb(23, 27, 31));
 }
 
 html body a.internal-link.tag-link::before {
@@ -1372,35 +1360,35 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
-  color: rgb(220, 221, 222);
+  color: var(--h1-color, rgb(220, 221, 222));
 }
 
 html body h1.article-title {
-  color: rgb(220, 221, 222);
+  color: var(--inline-title-color, rgb(220, 221, 222));
 }
 
 html body h2 {
-  color: rgb(191, 255, 188);
+  color: var(--granny-smith-apple, rgb(191, 255, 188));
 }
 
 html body h2.page-title, html h2.page-title a {
-  color: rgb(220, 221, 222);
+  color: var(--inline-title-color, rgb(220, 221, 222));
 }
 
 html body h3 {
-  color: rgb(245, 183, 0);
+  color: var(--orange-yellow, rgb(245, 183, 0));
 }
 
 html body h4 {
-  color: rgb(221, 153, 187);
+  color: var(--kobi, rgb(221, 153, 187));
 }
 
 html body h5 {
-  color: rgb(100, 125, 144);
+  color: var(--slate-gray, rgb(100, 125, 144));
 }
 
 html body h6 {
-  color: rgb(153, 153, 153);
+  color: var(--text-muted, rgb(153, 153, 153));
 }
 
 html body hr {
@@ -1409,14 +1397,14 @@ html body hr {
   border-right-color: rgb(51, 51, 51);
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }`,
     explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(153, 153, 153);
+  color: var(--nav-item-color, rgb(153, 153, 153));
 }
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(153, 153, 153);
+  color: var(--nav-item-color, rgb(153, 153, 153));
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(220, 221, 222);
@@ -1426,15 +1414,15 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-left-color: rgb(153, 153, 153);
   border-right-color: rgb(153, 153, 153);
   border-top-color: rgb(153, 153, 153);
-  color: rgb(153, 153, 153);
+  color: var(--icon-color, rgb(153, 153, 153));
 }`,
     footer: `html body footer {
-  background-color: rgb(23, 30, 36);
+  background-color: var(--status-bar-background, rgb(23, 30, 36));
   border-bottom-color: rgb(51, 51, 51);
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
   border-top-color: rgb(51, 51, 51);
-  color: rgb(153, 153, 153);
+  color: var(--status-bar-text-color, rgb(153, 153, 153));
 }
 
 html body footer ul li a {
@@ -1453,7 +1441,7 @@ html body .recent-notes > ul.recent-ul > li {
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(153, 153, 153);
+  color: var(--nav-item-color, rgb(153, 153, 153));
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1471,7 +1459,7 @@ html body li.section-li > .section .meta {
 }
 
 html body li.section-li > .section > .desc > h3 > a {
-  color: rgb(153, 153, 153);
+  color: var(--nav-item-color, rgb(153, 153, 153));
 }
 
 html body ul.section-ul {
@@ -1485,7 +1473,7 @@ html body ul.section-ul {
   border-left-color: rgb(153, 153, 153);
   border-right-color: rgb(153, 153, 153);
   border-top-color: rgb(153, 153, 153);
-  color: rgb(153, 153, 153);
+  color: var(--icon-color, rgb(153, 153, 153));
 }
 
 html body .darkmode svg {
@@ -1508,7 +1496,7 @@ html body .canvas-node-content {
 }
 
 html body .canvas-node-file {
-  color: rgb(220, 221, 222);
+  color: var(--text-normal, rgb(220, 221, 222));
 }
 
 html body .canvas-node-group {
@@ -1516,19 +1504,19 @@ html body .canvas-node-group {
 }
 
 html body .canvas-sidebar {
-  background-color: rgb(23, 30, 36);
+  background-color: var(--background-secondary, rgb(23, 30, 36));
   border-color: rgb(220, 221, 222);
 }`,
     bases: `html body .bases-table thead th {
   border-color: rgb(51, 51, 51);
-  color: rgb(220, 221, 222);
+  color: var(--table-header-color, rgb(220, 221, 222));
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgb(51, 51, 51);
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
   border-top-color: rgb(51, 51, 51);
-  color: rgb(153, 153, 153);
+  color: var(--text-muted, rgb(153, 153, 153));
 }
 
 html body .metadata-properties {
@@ -1552,7 +1540,7 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
-  color: rgb(10, 209, 237);
+  color: var(--pill-color, rgb(10, 209, 237));
 }
 
 html body .note-properties-value {
@@ -1560,8 +1548,8 @@ html body .note-properties-value {
 }
 
 html body div#quartz-root {
-  background-color: rgb(23, 27, 31);
-  color: rgb(220, 221, 222);
+  background-color: var(--background-primary, rgb(23, 27, 31));
+  color: var(--text-normal, rgb(220, 221, 222));
 }
 
 html body ol.overflow {
@@ -1571,12 +1559,12 @@ html body ol.overflow {
   border-top-color: rgb(220, 221, 222);
 }`,
     stacked: `html body .stacked-page {
-  background-color: rgb(23, 30, 36);
+  background-color: var(--background-secondary, rgb(23, 30, 36));
   border-color: rgb(220, 221, 222);
 }
 
 html body .stacked-page-header {
-  background-color: rgb(36, 47, 56);
+  background-color: var(--tab-container-background, rgb(36, 47, 56));
 }
 
 html body .stacked-page.active {
@@ -1591,11 +1579,11 @@ html body .stacked-page.active {
 }
 
 html body .navigation-progress {
-  background-color: rgb(23, 30, 36);
+  background-color: var(--status-bar-background, rgb(23, 30, 36));
 }
 
 html body .page-header h2.page-title {
-  color: rgb(220, 221, 222);
+  color: var(--text-normal, rgb(220, 221, 222));
 }
 
 html body abbr {
@@ -1614,16 +1602,16 @@ html body input[type=text] {
   border-left-color: rgb(153, 153, 153);
   border-right-color: rgb(153, 153, 153);
   border-top-color: rgb(153, 153, 153);
-  color: rgb(153, 153, 153);
+  color: var(--text-normal, rgb(153, 153, 153));
 }
 
 html body kbd {
-  background-color: rgb(32, 37, 42);
+  background-color: var(--code-background, rgb(32, 37, 42));
   border-bottom-color: rgb(220, 221, 222);
   border-left-color: rgb(220, 221, 222);
   border-right-color: rgb(220, 221, 222);
   border-top-color: rgb(220, 221, 222);
-  color: rgb(220, 221, 222);
+  color: var(--code-normal, rgb(220, 221, 222));
 }
 
 html body progress {
@@ -1646,7 +1634,7 @@ html body sup {
 }
 
 html body ul.tags > li {
-  color: rgb(10, 209, 237);
+  color: var(--tag-color, rgb(10, 209, 237));
 }`,
   },
   light: {},

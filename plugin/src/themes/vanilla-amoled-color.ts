@@ -9,37 +9,33 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root {
-  --background-modifier-border: #333;
-  --background-modifier-border-focus: #4a4a4a;
-  --background-modifier-border-hover: #363636;
-  --background-modifier-form-field: #222;
-  --background-modifier-form-field-hover: #222;
-  --background-primary: #000;
-  --background-primary-alt: #111;
-  --background-secondary: #080808;
-  --background-secondary-alt: #333;
-  --bases-cards-background: #000;
-  --bases-cards-cover-background: #111;
-  --bases-cards-shadow: 0 0 0 1px #333;
-  --bases-cards-shadow-hover: 0 0 0 1px #363636;
-  --bases-embed-border-color: #333;
-  --bases-table-border-color: #333;
-  --bases-table-cell-background-active: #000;
-  --bases-table-cell-background-disabled: #111;
-  --bases-table-cell-shadow-active: 0 0 0 2px #4a4a4a;
-  --bases-table-group-background: #111;
-  --bases-table-header-background: #000;
-  --bases-table-summary-background: #000;
-  --blur-background: color-mix(in srgb, #333 65%, transparent) linear-gradient(#333, color-mix(in srgb, #333 65%, transparent));
-  --canvas-background: #000;
-  --canvas-card-label-color: #666;
-  --canvas-dot-pattern: #333;
-  --checkbox-border-color: #666;
-  --checkbox-marker-color: #000;
-  --code-background: #111;
-  --code-border-color: #333;
-  --code-comment: #666;
-  --collapse-icon-color: #666;
+  --background-modifier-border: var(--color-base-30, #333);
+  --background-modifier-border-focus: var(--color-base-40, #4a4a4a);
+  --background-modifier-border-hover: var(--color-base-35, #363636);
+  --background-modifier-form-field: var(--color-base-25, #222);
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, #222);
+  --background-primary: var(--color-base-00, #000);
+  --background-primary-alt: var(--color-base-10, #111);
+  --background-secondary: var(--color-base-05, #080808);
+  --background-secondary-alt: var(--color-base-30, #333);
+  --bases-cards-background: var(--background-primary, #000);
+  --bases-cards-cover-background: var(--background-primary-alt, #111);
+  --bases-embed-border-color: var(--background-modifier-border, #333);
+  --bases-table-border-color: var(--table-border-color, #333);
+  --bases-table-cell-background-active: var(--background-primary, #000);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #111);
+  --bases-table-group-background: var(--background-primary-alt, #111);
+  --bases-table-header-background: var(--background-primary, #000);
+  --bases-table-summary-background: var(--background-primary, #000);
+  --canvas-background: var(--background-primary, #000);
+  --canvas-card-label-color: var(--text-faint, #666);
+  --canvas-dot-pattern: var(--color-base-30, #333);
+  --checkbox-border-color: var(--text-faint, #666);
+  --checkbox-marker-color: var(--background-primary, #000);
+  --code-background: var(--background-primary-alt, #111);
+  --code-border-color: var(--background-modifier-border, #333);
+  --code-comment: var(--text-faint, #666);
+  --collapse-icon-color: var(--text-faint, #666);
   --color-base-00: #000;
   --color-base-05: #080808;
   --color-base-10: #111;
@@ -52,100 +48,91 @@ export const theme: ThemeData = {
   --color-base-60: #999
 	--color-base-70: #bbb
 	--color-base-100: #fff;
-  --divider-color: #333;
-  --dropdown-background: #333;
-  --dropdown-background-hover: #363636;
-  --embed-block-shadow-hover: 0 0 0 1px #333, inset 0 0 0 1px #333;
-  --file-header-background: #000;
-  --file-header-background-focused: #000;
-  --flair-background: #333;
-  --footnote-divider-color: #333;
-  --footnote-id-color-no-occurrences: #666;
-  --frost0: rgb(143, 188, 187);
+  --divider-color: var(--background-modifier-border, #333);
+  --dropdown-background: var(--interactive-normal, #333);
+  --dropdown-background-hover: var(--interactive-hover, #363636);
+  --file-header-background: var(--background-primary, #000);
+  --file-header-background-focused: var(--background-primary, #000);
+  --flair-background: var(--interactive-normal, #333);
+  --footnote-divider-color: var(--metadata-divider-color, #333);
+  --footnote-id-color-no-occurrences: var(--text-faint, #666);
+  --frost0: rgb(var(--frost0_x));
   --frost0_x: 143,188,187;
-  --frost2: rgb(129, 161, 193);
+  --frost2: rgb(var(--frost2_x));
   --frost2_x: 129,161,193;
-  --graph-line: #363636;
-  --graph-node-unresolved: #666;
-  --gray: var(--text-faint, #666);
-  --green: rgb(163, 190, 140);
+  --graph-node-unresolved: var(--text-faint, #666);
+  --gray: var(--text-faint, var(--color-base-50, #666));
+  --green: rgb(var(--green_x));
   --green_x: 163,190,140;
-  --h1-color: rgb(191, 97, 106);
-  --h2-color: rgb(235, 203, 139);
-  --h3-color: rgb(163, 190, 140);
-  --h4-color: rgb(180, 142, 173);
-  --h5-color: rgb(143, 188, 187);
-  --h6-color: rgb(129, 161, 193);
-  --heading-formatting: #666;
-  --hr-color: #333;
-  --inline-title-color: rgb(191, 97, 106);
-  --input-date-separator: #666;
-  --input-placeholder-color: #666;
-  --interactive-hover: #363636;
-  --interactive-normal: #333;
-  --light: var(--background-primary, #000);
-  --lightgray: var(--background-secondary, #080808);
-  --list-marker-color: #666;
-  --menu-background: #080808;
-  --menu-border-color: #363636;
-  --metadata-border-color: #333;
-  --metadata-divider-color: #333;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #4a4a4a;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #363636;
-  --modal-background: #000;
-  --modal-border-color: #4a4a4a;
-  --nav-collapse-icon-color: #666;
-  --nav-collapse-icon-color-collapsed: #666;
-  --nav-heading-color-collapsed: #666;
-  --nav-tag-color: #666;
-  --orange: rgb(208, 135, 112);
+  --h1-color: var(--red, rgb(191, 97, 106));
+  --h2-color: var(--yellow, rgb(235, 203, 139));
+  --h3-color: var(--green, rgb(163, 190, 140));
+  --h4-color: var(--purple, rgb(180, 142, 173));
+  --h5-color: var(--frost0, rgb(143, 188, 187));
+  --h6-color: var(--frost2, rgb(129, 161, 193));
+  --heading-formatting: var(--text-faint, #666);
+  --hr-color: var(--background-modifier-border, #333);
+  --inline-title-color: var(--h1-color, rgb(191, 97, 106));
+  --input-date-separator: var(--text-faint, #666);
+  --input-placeholder-color: var(--text-faint, #666);
+  --interactive-hover: var(--color-base-35, #363636);
+  --interactive-normal: var(--color-base-30, #333);
+  --light: var(--background-primary, var(--color-base-00, #000));
+  --lightgray: var(--background-secondary, var(--color-base-05, #080808));
+  --list-marker-color: var(--text-faint, #666);
+  --menu-background: var(--background-secondary, #080808);
+  --menu-border-color: var(--background-modifier-border-hover, #363636);
+  --metadata-border-color: var(--background-modifier-border, #333);
+  --metadata-divider-color: var(--background-modifier-border, #333);
+  --modal-background: var(--background-primary, #000);
+  --nav-collapse-icon-color: var(--collapse-icon-color, #666);
+  --nav-collapse-icon-color-collapsed: var(--text-faint, #666);
+  --nav-heading-color-collapsed: var(--text-faint, #666);
+  --nav-tag-color: var(--text-faint, #666);
+  --orange: rgb(var(--orange_x));
   --orange_x: 208,135,112;
-  --pdf-background: #000;
-  --pdf-page-background: #000;
-  --pdf-shadow: 0 0 0 1px #333;
-  --pdf-sidebar-background: #000;
-  --pdf-thumbnail-shadow: 0 0 0 1px #333;
-  --pill-border-color: #333;
-  --pill-border-color-hover: #363636;
-  --pill-color-remove: #666;
-  --prompt-background: #000;
-  --prompt-border-color: #4a4a4a;
-  --purple: rgb(180, 142, 173);
+  --pdf-background: var(--background-primary, #000);
+  --pdf-page-background: var(--background-primary, #000);
+  --pdf-sidebar-background: var(--background-primary, #000);
+  --pill-border-color: var(--background-modifier-border, #333);
+  --pill-border-color-hover: var(--background-modifier-border-hover, #363636);
+  --pill-color-remove: var(--text-faint, #666);
+  --prompt-background: var(--background-primary, #000);
+  --purple: rgb(var(--purple_x));
   --purple_x: 180,142,173;
-  --raised-background: color-mix(in srgb, #333 65%, transparent) linear-gradient(#333, color-mix(in srgb, #333 65%, transparent));
-  --red: rgb(191, 97, 106);
+  --raised-background: var(--blur-background, color-mix(in srgb, #333 65%, transparent) linear-gradient(#333, color-mix(in srgb, #333 65%, transparent)));
+  --red: rgb(var(--red_x));
   --red_x: 191,97,106;
-  --ribbon-background: #080808;
-  --ribbon-background-collapsed: #000;
-  --search-result-background: #000;
-  --setting-items-background: #111;
-  --setting-items-border-color: #333;
-  --shiki-code-background: #111;
-  --shiki-code-comment: #666;
-  --shiki-gutter-border-color: #333;
-  --shiki-gutter-text-color: #666;
-  --shiki-terminal-dots-color: #666;
-  --slider-thumb-border-color: #363636;
-  --slider-track-background: #333;
-  --status-bar-background: #080808;
-  --status-bar-border-color: #333;
-  --suggestion-background: #000;
-  --tab-background-active: #000;
-  --tab-container-background: #080808;
-  --tab-divider-color: #363636;
-  --tab-outline-color: #333;
-  --tab-switcher-background: #080808;
-  --tab-switcher-menubar-background: linear-gradient(to top, #080808, transparent);
-  --tab-text-color: #666;
-  --table-add-button-border-color: #333;
-  --table-border-color: #333;
-  --table-drag-handle-color: #666;
-  --table-header-border-color: #333;
-  --text-faint: #666;
-  --titlebar-background: #000;
-  --titlebar-background-focused: #111;
-  --titlebar-border-color: #333;
-  --yellow: rgb(235, 203, 139);
+  --ribbon-background: var(--background-secondary, #080808);
+  --ribbon-background-collapsed: var(--background-primary, #000);
+  --search-result-background: var(--background-primary, #000);
+  --setting-items-background: var(--background-primary-alt, #111);
+  --setting-items-border-color: var(--background-modifier-border, #333);
+  --shiki-code-background: var(--code-background, #111);
+  --shiki-code-comment: var(--text-faint, #666);
+  --shiki-gutter-border-color: var(--background-modifier-border, #333);
+  --shiki-gutter-text-color: var(--text-faint, #666);
+  --shiki-terminal-dots-color: var(--text-faint, #666);
+  --slider-thumb-border-color: var(--background-modifier-border-hover, #363636);
+  --slider-track-background: var(--background-modifier-border, #333);
+  --status-bar-background: var(--background-secondary, #080808);
+  --status-bar-border-color: var(--divider-color, #333);
+  --suggestion-background: var(--background-primary, #000);
+  --tab-background-active: var(--background-primary, #000);
+  --tab-container-background: var(--background-secondary, #080808);
+  --tab-divider-color: var(--background-modifier-border-hover, #363636);
+  --tab-outline-color: var(--divider-color, #333);
+  --tab-switcher-background: var(--background-secondary, #080808);
+  --tab-text-color: var(--text-faint, #666);
+  --table-add-button-border-color: var(--background-modifier-border, #333);
+  --table-border-color: var(--background-modifier-border, #333);
+  --table-drag-handle-color: var(--text-faint, #666);
+  --table-header-border-color: var(--table-border-color, #333);
+  --text-faint: var(--color-base-50, #666);
+  --titlebar-background: var(--color-base-00, #000);
+  --titlebar-background-focused: var(--color-base-10, #111);
+  --titlebar-border-color: var(--background-modifier-border, #333);
+  --yellow: rgb(var(--yellow_x));
   --yellow_x: 235,203,139;
   --quartz-icon-color: currentColor;
 }
@@ -156,15 +143,15 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(8, 8, 8);
+  background-color: var(--tab-container-background, rgb(8, 8, 8));
 }
 
 html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--background-primary, rgb(0, 0, 0));
 }
 
 html body .page > div#quartz-body div.sidebar {
-  background-color: rgb(8, 8, 8);
+  background-color: var(--background-secondary, rgb(8, 8, 8));
 }
 
 html body .page > div#quartz-body div.sidebar.left {
@@ -172,7 +159,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(8, 8, 8);
+  background-color: var(--tab-container-background, rgb(8, 8, 8));
   border-left-color: rgb(51, 51, 51);
 }`,
     tables: `html body td {
@@ -189,7 +176,7 @@ html body th {
   border-top-color: rgb(51, 51, 51);
 }`,
     code: `html body code {
-  background-color: rgb(17, 17, 17);
+  background-color: var(--code-background, rgb(17, 17, 17));
   border-bottom-color: rgb(51, 51, 51);
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
@@ -197,7 +184,7 @@ html body th {
 }
 
 html body pre:has(> code) {
-  background-color: rgb(17, 17, 17);
+  background-color: var(--code-background, rgb(17, 17, 17));
   border-bottom-color: rgb(51, 51, 51);
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
@@ -210,7 +197,7 @@ html body pre:has(> code) {
   border-top-color: rgb(191, 97, 106);
 }`,
     embeds: `html body .file-embed {
-  background-color: rgb(17, 17, 17);
+  background-color: var(--background-primary-alt, rgb(17, 17, 17));
 }`,
     checkboxes: `html body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
@@ -406,7 +393,7 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
 }
 
 html body .callout[data-callout="abstract"] .callout-title {
@@ -414,7 +401,7 @@ html body .callout[data-callout="abstract"] .callout-title {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
 }
 
 html body .callout[data-callout="bug"] .callout-title {
@@ -422,7 +409,7 @@ html body .callout[data-callout="bug"] .callout-title {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
 }
 
 html body .callout[data-callout="danger"] .callout-title {
@@ -430,7 +417,7 @@ html body .callout[data-callout="danger"] .callout-title {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
 }
 
 html body .callout[data-callout="example"] .callout-title {
@@ -438,7 +425,7 @@ html body .callout[data-callout="example"] .callout-title {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
 }
 
 html body .callout[data-callout="failure"] .callout-title {
@@ -446,7 +433,7 @@ html body .callout[data-callout="failure"] .callout-title {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
 }
 
 html body .callout[data-callout="info"] .callout-title {
@@ -454,7 +441,7 @@ html body .callout[data-callout="info"] .callout-title {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }
 
 html body .callout[data-callout="note"] .callout-title {
@@ -462,7 +449,7 @@ html body .callout[data-callout="note"] .callout-title {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
 }
 
 html body .callout[data-callout="question"] .callout-title {
@@ -470,7 +457,7 @@ html body .callout[data-callout="question"] .callout-title {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
 }
 
 html body .callout[data-callout="quote"] .callout-title {
@@ -478,7 +465,7 @@ html body .callout[data-callout="quote"] .callout-title {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
 }
 
 html body .callout[data-callout="success"] .callout-title {
@@ -486,7 +473,7 @@ html body .callout[data-callout="success"] .callout-title {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
 }
 
 html body .callout[data-callout="tip"] .callout-title {
@@ -494,7 +481,7 @@ html body .callout[data-callout="tip"] .callout-title {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
 }
 
 html body .callout[data-callout="todo"] .callout-title {
@@ -502,7 +489,7 @@ html body .callout[data-callout="todo"] .callout-title {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
 }
 
 html body .callout[data-callout="warning"] .callout-title {
@@ -573,7 +560,7 @@ html body .callout[data-callout="warning"] {
 }
 
 html body .search > .search-container > .search-space {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--prompt-background, rgb(0, 0, 0));
   border-bottom-color: rgb(74, 74, 74);
   border-left-color: rgb(74, 74, 74);
   border-right-color: rgb(74, 74, 74);
@@ -592,35 +579,35 @@ html body .search > .search-container > .search-space > input {
 }
 
 html body h1 {
-  color: rgb(191, 97, 106);
+  color: var(--h1-color, rgb(191, 97, 106));
 }
 
 html body h1.article-title {
-  color: rgb(191, 97, 106);
+  color: var(--inline-title-color, rgb(191, 97, 106));
 }
 
 html body h2 {
-  color: rgb(235, 203, 139);
+  color: var(--h2-color, rgb(235, 203, 139));
 }
 
 html body h2.page-title, html h2.page-title a {
-  color: rgb(191, 97, 106);
+  color: var(--inline-title-color, rgb(191, 97, 106));
 }
 
 html body h3 {
-  color: rgb(163, 190, 140);
+  color: var(--h3-color, rgb(163, 190, 140));
 }
 
 html body h4 {
-  color: rgb(180, 142, 173);
+  color: var(--h4-color, rgb(180, 142, 173));
 }
 
 html body h5 {
-  color: rgb(143, 188, 187);
+  color: var(--h5-color, rgb(143, 188, 187));
 }
 
 html body h6 {
-  color: rgb(129, 161, 193);
+  color: var(--h6-color, rgb(129, 161, 193));
 }
 
 html body hr {
@@ -629,17 +616,17 @@ html body hr {
   border-right-color: rgb(51, 51, 51);
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }`,
     footer: `html body footer {
-  background-color: rgb(8, 8, 8);
+  background-color: var(--status-bar-background, rgb(8, 8, 8));
   border-bottom-color: rgb(51, 51, 51);
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
   border-top-color: rgb(51, 51, 51);
 }`,
     canvas: `html body .canvas-sidebar {
-  background-color: rgb(8, 8, 8);
+  background-color: var(--background-secondary, rgb(8, 8, 8));
 }`,
     bases: `html body .bases-table thead th {
   border-color: rgb(51, 51, 51);
@@ -656,21 +643,21 @@ html body .note-properties {
 }
 
 html body div#quartz-root {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--background-primary, rgb(0, 0, 0));
 }`,
     stacked: `html body .stacked-page {
-  background-color: rgb(8, 8, 8);
+  background-color: var(--background-secondary, rgb(8, 8, 8));
 }
 
 html body .stacked-page-header {
-  background-color: rgb(17, 17, 17);
+  background-color: var(--tab-container-background, rgb(17, 17, 17));
 }`,
     misc: `html body .navigation-progress {
-  background-color: rgb(8, 8, 8);
+  background-color: var(--status-bar-background, rgb(8, 8, 8));
 }
 
 html body kbd {
-  background-color: rgb(17, 17, 17);
+  background-color: var(--code-background, rgb(17, 17, 17));
 }`,
   },
   light: {},

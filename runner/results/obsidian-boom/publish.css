@@ -785,7 +785,7 @@ body.theme-light {
   --interactive-accent-hsl: var(--color-accent-hsl, 258, 88%, 66%) !important;
   --interactive-hover: var(--color-base-10, #fafafa) !important;
   --interactive-normal: var(--color-base-00, #ffffff) !important;
-  --link-color: #106ba3 !important;
+  --link-color: var(--text-accent, #106ba3) !important;
   --link-color-hover: var(
     --text-accent-hover,
     hsl(255, 89.76%, 75.9%)
@@ -1687,7 +1687,7 @@ body {
 }
 body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(16, 107, 163);
+  color: var(--link-color, rgb(16, 107, 163));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -1726,7 +1726,7 @@ body body.theme-light .markdown-rendered a.external-link {
 }
 body body.theme-light .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(16, 107, 163);
+  color: var(--link-color, rgb(16, 107, 163));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -1765,7 +1765,7 @@ body body.theme-light .markdown-rendered a.internal-link {
 }
 body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(16, 107, 163);
+  color: var(--link-color, rgb(16, 107, 163));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -1859,7 +1859,7 @@ body body.theme-light .markdown-rendered p {
 }
 body body.theme-light strong {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(32, 43, 51);
+  color: var(--bold-color, rgb(32, 43, 51));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -1898,7 +1898,7 @@ body body.theme-light strong {
 }
 body body.theme-light b {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(32, 43, 51);
+  color: var(--bold-color, rgb(32, 43, 51));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -1937,7 +1937,7 @@ body body.theme-light b {
 }
 body body.theme-light em {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(32, 43, 51);
+  color: var(--italic-color, rgb(32, 43, 51));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -1976,7 +1976,7 @@ body body.theme-light em {
 }
 body body.theme-light i {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(32, 43, 51);
+  color: var(--italic-color, rgb(32, 43, 51));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -2014,7 +2014,7 @@ body body.theme-light i {
   animation-play-state: running;
 }
 body body.theme-light .markdown-rendered mark {
-  background-color: rgba(0, 231, 255, 0.29);
+  background-color: var(--text-highlight-bg, rgba(0, 231, 255, 0.29));
   color: var(--text-normal, rgb(34, 34, 34));
   cursor: grab;
   filter: none;
@@ -2153,7 +2153,7 @@ body body.theme-light div.multi-select-pill {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 500;
+  font-weight: var(--pill-weight, 500);
   margin-inline-start: 0px;
   border: 0px solid rgba(138, 92, 245, 0.15);
   border-top-left-radius: 28px;
@@ -2218,7 +2218,7 @@ body body.theme-light .markdown-rendered code {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   color: var(--code-normal, rgb(34, 34, 34));
-  font-family: Hack;
+  font-family: var(--code-font-family, Hack);
   padding: 2.4px 4.8px;
 }
 body body.theme-light .markdown-rendered pre > code {
@@ -2321,7 +2321,7 @@ body body.theme-light .markdown-rendered blockquote {
   margin-inline-end: 40px;
 }
 body body.theme-light .footnote-backref {
-  color: rgb(16, 107, 163);
+  color: var(--link-color, rgb(16, 107, 163));
   text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
@@ -2442,7 +2442,7 @@ body body.theme-light div.search-results .suggestion-item.is-selected {
   color: rgb(32, 43, 51);
 }
 body body.theme-light .published-container .markdown-rendered h1 {
-  color: rgb(32, 43, 51);
+  color: var(--h1-color, rgb(32, 43, 51));
   font-family: var(
     --h1-font,
     ui-sans-serif,
@@ -2462,7 +2462,7 @@ body body.theme-light .published-container .markdown-rendered h1 {
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h2 {
-  color: rgb(32, 43, 51);
+  color: var(--h2-color, rgb(32, 43, 51));
   font-family: var(
     --h2-font,
     ui-sans-serif,
@@ -2482,7 +2482,7 @@ body body.theme-light .published-container .markdown-rendered h2 {
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h3 {
-  color: rgb(32, 43, 51);
+  color: var(--h3-color, rgb(32, 43, 51));
   font-family: var(
     --h3-font,
     ui-sans-serif,
@@ -2502,7 +2502,7 @@ body body.theme-light .published-container .markdown-rendered h3 {
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h4 {
-  color: rgb(32, 43, 51);
+  color: var(--h4-color, rgb(32, 43, 51));
   font-family: var(
     --h4-font,
     ui-sans-serif,
@@ -2522,7 +2522,7 @@ body body.theme-light .published-container .markdown-rendered h4 {
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h5 {
-  color: rgb(32, 43, 51);
+  color: var(--h5-color, rgb(32, 43, 51));
   font-family: var(
     --h5-font,
     ui-sans-serif,
@@ -2542,7 +2542,7 @@ body body.theme-light .published-container .markdown-rendered h5 {
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h6 {
-  color: rgb(32, 43, 51);
+  color: var(--h6-color, rgb(32, 43, 51));
   font-family: var(
     --h6-font,
     ui-sans-serif,
@@ -2567,7 +2567,7 @@ body
   .outline-view
   .tree-item
   > .tree-item-self {
-  font-weight: 700;
+  font-weight: var(--nav-item-weight, 700);
 }
 body
   body.theme-light
@@ -2619,7 +2619,7 @@ body body.theme-light body {
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   border: 0px solid rgba(8, 109, 221, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2669,7 +2669,7 @@ body body.theme-light .callout > .callout-content {
   padding: 0px;
 }
 body body.theme-light .callout[data-callout="abstract"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-summary, 0, 191, 188);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2706,7 +2706,7 @@ body body.theme-light .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="info"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-info, 8, 109, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2743,7 +2743,7 @@ body body.theme-light .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="todo"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-todo, 8, 109, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2780,7 +2780,7 @@ body body.theme-light .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="tip"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-tip, 0, 191, 188);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2817,7 +2817,7 @@ body body.theme-light .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="success"] {
-  --callout-color: 8, 185, 78;
+  --callout-color: var(--callout-success, 8, 185, 78);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2854,7 +2854,7 @@ body body.theme-light .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="question"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-question, 236, 117, 0);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2891,7 +2891,7 @@ body body.theme-light .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="warning"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-warning, 236, 117, 0);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2928,7 +2928,7 @@ body body.theme-light .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="danger"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-error, 233, 49, 71);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -2965,7 +2965,7 @@ body body.theme-light .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="failure"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-fail, 233, 49, 71);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3002,7 +3002,7 @@ body body.theme-light .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="bug"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-bug, 233, 49, 71);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3039,7 +3039,7 @@ body body.theme-light .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="example"] {
-  --callout-color: 120, 82, 238;
+  --callout-color: var(--callout-example, 120, 82, 238);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto
@@ -3076,7 +3076,7 @@ body body.theme-light .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -3141,7 +3141,10 @@ body body.theme-light .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 14px 0px 0px;
+  margin-top: var(--heading-spacing, 14px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -3185,7 +3188,7 @@ body body.theme-light .markdown-rendered th {
 }
 body body.theme-light .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(32, 43, 51);
+  color: var(--table-text-color, rgb(32, 43, 51));
   font-weight: 500;
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
@@ -3753,7 +3756,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(92, 112, 128);
+  color: var(--nav-item-color, rgb(92, 112, 128));
   cursor: var(--cursor, default);
   font-family:
     ui-sans-serif,
@@ -3769,7 +3772,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 700;
+  font-weight: var(--nav-item-weight, 700);
   text-decoration: rgb(34, 34, 34);
 }
 body
@@ -3780,7 +3783,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(92, 112, 128);
+  color: var(--nav-item-color, rgb(92, 112, 128));
   cursor: var(--cursor, default);
   font-family:
     ui-sans-serif,
@@ -3796,7 +3799,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 700;
+  font-weight: var(--nav-item-weight, 700);
   text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
@@ -3867,7 +3870,7 @@ body body.theme-light .nav-files-container .tree-item {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light .nav-file-title {
-  color: rgb(92, 112, 128);
+  color: var(--nav-item-color, rgb(92, 112, 128));
 }
 body body.theme-light .nav-file-title-content {
   color: rgb(92, 112, 128);
@@ -4038,7 +4041,7 @@ body body.theme-light pre > code [data-highlighted-chars] {
 }
 body body.theme-light .tag {
   background-color: var(--tag-background, rgba(138, 92, 245, 0.1));
-  color: rgb(16, 107, 163);
+  color: var(--link-color, rgb(16, 107, 163));
   border: 0px solid rgba(138, 92, 245, 0.15);
   border-top-left-radius: 24.5px;
   border-top-right-radius: 24.5px;

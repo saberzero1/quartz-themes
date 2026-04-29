@@ -7,164 +7,141 @@ export const theme: ThemeData = {
   --accent-h: 46deg;
   --accent-l: 65%;
   --accent-s: 95%;
-  --background-modifier-active-hover: hsla(46deg,
-    95%,
-    65%, 0.15);
-  --background-modifier-border: #404040;
-  --background-modifier-border-focus: #707070;
-  --background-modifier-border-hover: #707070;
-  --background-modifier-error: #ff6b81;
-  --background-modifier-error-hover: #ff6b81;
-  --background-modifier-error-rgb: 255,
+  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
+  --background-modifier-border: var(--color-base-30, #404040);
+  --background-modifier-border-focus: var(--color-base-50, #707070);
+  --background-modifier-border-hover: var(--color-base-50, #707070);
+  --background-modifier-error: var(--color-red, #ff6b81);
+  --background-modifier-error-hover: var(--color-red, #ff6b81);
+  --background-modifier-error-rgb: var(--color-red-rgb, 255,
     107,
-    129;
-  --background-modifier-form-field: #383838;
-  --background-modifier-form-field-hover: #383838;
-  --background-modifier-hover: rgba(255, 255, 255, 0.075);
-  --background-modifier-success: #7bed9f;
-  --background-modifier-success-rgb: 123,
+    129);
+  --background-modifier-form-field: var(--color-base-25, #383838);
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, #383838);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
+  --background-modifier-success: var(--color-green, #7bed9f);
+  --background-modifier-success-rgb: var(--color-green-rgb, 123,
     237,
-    159;
-  --background-primary: #202020;
-  --background-primary-alt: #282828;
-  --background-secondary: #303030;
-  --background-secondary-alt: #383838;
-  --bases-cards-background: #202020;
-  --bases-cards-cover-background: #282828;
-  --bases-cards-shadow: 0 0 0 1px #404040;
-  --bases-cards-shadow-hover: 0 0 0 1px #707070;
-  --bases-embed-border-color: #404040;
-  --bases-group-heading-property-color: #a0a0a0;
-  --bases-table-border-color: #404040;
-  --bases-table-cell-background-active: #202020;
-  --bases-table-cell-background-disabled: #282828;
-  --bases-table-cell-background-selected: hsla(46deg,
+    159);
+  --background-primary: var(--color-base-00, #202020);
+  --background-primary-alt: var(--color-base-10, #282828);
+  --background-secondary: var(--color-base-20, #303030);
+  --background-secondary-alt: var(--color-base-25, #383838);
+  --bases-cards-background: var(--background-primary, #202020);
+  --bases-cards-cover-background: var(--background-primary-alt, #282828);
+  --bases-embed-border-color: var(--background-modifier-border, #404040);
+  --bases-group-heading-property-color: var(--text-muted, #a0a0a0);
+  --bases-table-border-color: var(--table-border-color, #404040);
+  --bases-table-cell-background-active: var(--background-primary, #202020);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #282828);
+  --bases-table-cell-background-selected: var(--table-selection, hsla(46deg,
     95%,
-    65%, 0.1);
-  --bases-table-cell-shadow-active: 0 0 0 2px #707070;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(46deg, 95%, 65%);
-  --bases-table-group-background: #282828;
-  --bases-table-header-background: #202020;
-  --bases-table-header-background-hover: rgba(255, 255, 255, 0.075);
-  --bases-table-header-color: #a0a0a0;
-  --bases-table-summary-background: #202020;
-  --bases-table-summary-background-hover: rgba(255, 255, 255, 0.075);
-  --blockquote-background-color: rgb(158, 158, 158, 0.10);
-  --blockquote-border-color: hsl(46deg, 95%, 65%);
+    65%, 0.1));
+  --bases-table-group-background: var(--background-primary-alt, #282828);
+  --bases-table-header-background: var(--background-primary, #202020);
+  --bases-table-header-background-hover: var(--background-modifier-hover, rgba(255, 255, 255, 0.075));
+  --bases-table-header-color: var(--text-muted, #a0a0a0);
+  --bases-table-summary-background: var(--background-primary, #202020);
+  --bases-table-summary-background-hover: var(--background-modifier-hover, rgba(255, 255, 255, 0.075));
+  --blockquote-background-color: rgb(var(--callout-quote), 0.10);
+  --blockquote-border-color: var(--interactive-accent, hsl(46deg, 95%, 65%));
   --blockquote-border-thickness: 0px;
-  --blur-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent));
-  --bodyFont: var(--font-text, "??",
-    "??",
-    "??",
-    "??",
-    "??",
-    "??",
-    "??",
-    Menlo,
-    SFMono-Regular,
-    Consolas,
-    "Roboto Mono",
-    "Source Code Pro",
-    monospace);
-  --callout-bug: 255,
+  --bodyFont: var(--font-text, var(--font-text-override),
+    var(--font-text-theme),
+    var(--font-interface));
+  --callout-bug: var(--color-red-rgb, 255,
     107,
-    129;
-  --callout-default: 83,
+    129);
+  --callout-default: var(--color-blue-rgb, 83,
     82,
-    237;
-  --callout-error: 255,
+    237);
+  --callout-error: var(--color-red-rgb, 255,
     107,
-    129;
-  --callout-example: 168,
+    129);
+  --callout-example: var(--color-purple-rgb, 168,
     130,
-    255;
-  --callout-fail: 255,
+    255);
+  --callout-fail: var(--color-red-rgb, 255,
     107,
-    129;
-  --callout-important: 112,
+    129);
+  --callout-important: var(--color-cyan-rgb, 112,
     161,
-    255;
-  --callout-info: 83,
+    255);
+  --callout-info: var(--color-blue-rgb, 83,
     82,
-    237;
-  --callout-question: 255,
+    237);
+  --callout-question: var(--color-orange-rgb, 255,
     127,
-    80;
-  --callout-radius: 8px;
-  --callout-success: 123,
+    80);
+  --callout-radius: var(--radius-m, 8px);
+  --callout-success: var(--color-green-rgb, 123,
     237,
-    159;
-  --callout-summary: 112,
+    159);
+  --callout-summary: var(--color-cyan-rgb, 112,
     161,
-    255;
-  --callout-tip: 112,
+    255);
+  --callout-tip: var(--color-cyan-rgb, 112,
     161,
-    255;
-  --callout-todo: 83,
+    255);
+  --callout-todo: var(--color-blue-rgb, 83,
     82,
-    237;
-  --callout-warning: 255,
+    237);
+  --callout-warning: var(--color-orange-rgb, 255,
     127,
-    80;
-  --canvas-background: #202020;
-  --canvas-card-label-color: #707070;
+    80);
+  --canvas-background: var(--background-primary, #202020);
+  --canvas-card-label-color: var(--text-faint, #707070);
   --canvas-color: 80,
     80,
     80;
-  --canvas-color-1: 255,
+  --canvas-color-1: var(--color-red-rgb, 255,
     107,
-    129;
-  --canvas-color-2: 255,
+    129);
+  --canvas-color-2: var(--color-orange-rgb, 255,
     127,
-    80;
-  --canvas-color-3: 251,
+    80);
+  --canvas-color-3: var(--color-yellow-rgb, 251,
     211,
-    81;
-  --canvas-color-4: 123,
+    81);
+  --canvas-color-4: var(--color-green-rgb, 123,
     237,
-    159;
-  --canvas-color-5: 112,
+    159);
+  --canvas-color-5: var(--color-cyan-rgb, 112,
     161,
-    255;
-  --canvas-color-6: 168,
+    255);
+  --canvas-color-6: var(--color-purple-rgb, 168,
     130,
-    255;
-  --canvas-dot-pattern: #404040;
-  --caret-color: #ffffff;
-  --checkbox-border-color: #707070;
-  --checkbox-border-color-hover: #a0a0a0;
-  --checkbox-color: hsl(46deg, 95%, 65%);
-  --checkbox-color-hover: hsl(46deg, 95%, 61.2%);
-  --checkbox-marker-color: #202020;
-  --checklist-done-color: #a0a0a0;
-  --code-background: #282828;
-  --code-border-color: #404040;
-  --code-bracket-background: rgba(255, 255, 255, 0.075);
-  --code-comment: #707070;
-  --code-function: hsl(46deg, 95%, 65%);
-  --code-important: #ff7f50;
-  --code-normal: #ffffff;
-  --code-operator: #ff6b81;
-  --code-property: #70a1ff;
-  --code-punctuation: #a0a0a0;
-  --code-string: #7bed9f;
-  --code-tag: #ff6b81;
-  --codeFont: var(--font-monospace, "??",
-    "??",
-    Menlo,
-    SFMono-Regular,
-    Consolas,
-    "Roboto Mono",
-    "Source Code Pro",
-    monospace);
-  --collapse-icon-color: #707070;
-  --collapse-icon-color-collapsed: hsl(46deg, 95%, 61.2%);
-  --color-accent: hsl(46deg, 95%, 65%);
-  --color-accent-1: hsl(46deg, 95%, 61.2%);
-  --color-accent-2: hsl(46deg, 95%, 68.8%);
-  --color-accent-hsl: 46deg,
-    95%,
-    65%;
+    255);
+  --canvas-dot-pattern: var(--color-base-30, #404040);
+  --caret-color: var(--text-normal, #ffffff);
+  --checkbox-border-color: var(--text-faint, #707070);
+  --checkbox-border-color-hover: var(--text-muted, #a0a0a0);
+  --checkbox-color: var(--interactive-accent, hsl(46deg, 95%, 65%));
+  --checkbox-color-hover: var(--interactive-accent-hover, hsl(46deg, 95%, 61.2%));
+  --checkbox-marker-color: var(--background-primary, #202020);
+  --checklist-done-color: var(--text-muted, #a0a0a0);
+  --code-background: var(--background-primary-alt, #282828);
+  --code-border-color: var(--background-modifier-border, #404040);
+  --code-bracket-background: var(--background-modifier-hover, rgba(255, 255, 255, 0.075));
+  --code-comment: var(--text-faint, #707070);
+  --code-function: var(--color-yellow, hsl(46deg, 95%, 65%));
+  --code-important: var(--color-orange, #ff7f50);
+  --code-normal: var(--text-normal, #ffffff);
+  --code-operator: var(--color-red, #ff6b81);
+  --code-property: var(--color-cyan, #70a1ff);
+  --code-punctuation: var(--text-muted, #a0a0a0);
+  --code-string: var(--color-green, #7bed9f);
+  --code-tag: var(--color-red, #ff6b81);
+  --codeFont: var(--font-monospace, var(--font-monospace-override),
+    var(--font-monospace-theme),
+    var(--font-monospace-default));
+  --collapse-icon-color: var(--text-faint, #707070);
+  --collapse-icon-color-collapsed: var(--text-accent, hsl(46deg, 95%, 61.2%));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
+  --color-accent-hsl: var(--accent-h),
+    var(--accent-s),
+    var(--accent-l);
   --color-base-00: #202020;
   --color-base-05: #242424;
   --color-base-10: #282828;
@@ -210,18 +187,17 @@ export const theme: ThemeData = {
   --color-yellow-rgb: 251,
     211,
     81;
-  --dark: var(--text-normal, #ffffff);
-  --darkgray: var(--text-normal, #ffffff);
-  --divider-color: #404040;
-  --divider-color-hover: hsl(46deg, 95%, 65%);
+  --dark: var(--text-normal, var(--color-base-100, #ffffff));
+  --darkgray: var(--text-normal, var(--color-base-100, #ffffff));
+  --divider-color: var(--background-modifier-border, #404040);
+  --divider-color-hover: var(--interactive-accent, hsl(46deg, 95%, 65%));
   --divider-width: 0px;
-  --dropdown-background: #404040;
-  --dropdown-background-hover: #484848;
-  --embed-block-shadow-hover: 0 0 0 1px hsl(46deg, 95%, 65%);
-  --embed-border-start: 2px solid hsl(46deg, 95%, 65%);
-  --file-header-background: #202020;
-  --file-header-background-focused: #202020;
-  --file-header-font: "??",
+  --dropdown-background: var(--interactive-normal, #404040);
+  --dropdown-background-hover: var(--interactive-hover, #484848);
+  --embed-block-shadow-hover: 0 0 0 1px var(--color-accent);
+  --file-header-background: var(--background-primary, #202020);
+  --file-header-background-focused: var(--background-primary, #202020);
+  --file-header-font: var(--font-interface, "??",
     "??",
     "??",
     "??",
@@ -231,7 +207,424 @@ export const theme: ThemeData = {
     Consolas,
     "Roboto Mono",
     "Source Code Pro",
+    monospace);
+  --flair-background: var(--interactive-normal, #404040);
+  --flair-color: var(--text-normal, #ffffff);
+  --font-default: var(--font-monospace, "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace);
+  --font-interface: var(--font-interface-override),
+    var(--font-interface-theme),
+    var(--default-font, "??"),
+    var(--font-default);
+  --font-interface-override: "??";
+  --font-interface-theme: "??";
+  --font-mermaid: var(--font-text, "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace);
+  --font-monospace: var(--font-monospace-override),
+    var(--font-monospace-theme),
+    var(--font-monospace-default);
+  --font-monospace-default: Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
     monospace;
+  --font-monospace-override: "??";
+  --font-monospace-theme: "??";
+  --font-text: var(--font-text-override),
+    var(--font-text-theme),
+    var(--font-interface);
+  --font-text-override: "??";
+  --font-text-theme: "??";
+  --footnote-divider-color: var(--metadata-divider-color, #404040);
+  --footnote-id-color: var(--text-muted, #a0a0a0);
+  --footnote-id-color-no-occurrences: var(--text-faint, #707070);
+  --footnote-input-background-active: var(--metadata-input-background-active, rgba(255, 255, 255, 0.075));
+  --graph-node: var(--text-muted, #a0a0a0);
+  --graph-node-attachment: var(--color-yellow, hsl(46deg, 95%, 65%));
+  --graph-node-focused: var(--text-accent, hsl(46deg, 95%, 61.2%));
+  --graph-node-tag: var(--color-green, #7bed9f);
+  --graph-node-unresolved: var(--text-faint, #707070);
+  --graph-text: var(--text-normal, #ffffff);
+  --gray: var(--text-muted, var(--color-base-70, #a0a0a0));
+  --headerFont: var(--font-text, var(--font-text-override),
+    var(--font-text-theme),
+    var(--font-interface));
+  --heading-formatting: var(--text-faint, #707070);
+  --highlight: var(--background-modifier-hover, rgba(var(--mono-rgb-100), 0.075));
+  --hr-color: var(--background-modifier-border, #404040);
+  --icon-color: var(--text-muted, #a0a0a0);
+  --icon-color-active: var(--text-accent, hsl(46deg, 95%, 61.2%));
+  --icon-color-focused: var(--text-accent, hsl(46deg, 95%, 61.2%));
+  --icon-color-hover: var(--text-accent, hsl(46deg, 95%, 61.2%));
+  --indentation-guide-color-active: var(--text-accent, hsl(46deg, 95%, 61.2%));
+  --input-date-separator: var(--text-faint, #707070);
+  --input-placeholder-color: var(--text-faint, #707070);
+  --input-shadow: 0 0 0 0 transparent;
+  --input-shadow-hover: 0 0 0 0 transparent;
+  --interactive-accent: var(--color-accent-1, hsl(46deg, 95%, 65%));
+  --interactive-accent-hover: var(--color-accent-2, hsl(46deg, 95%, 61.2%));
+  --interactive-accent-hsl: var(--color-accent-hsl, 46deg,
+    95%,
+    65%);
+  --interactive-hover: var(--color-base-35, #484848);
+  --interactive-normal: var(--color-base-30, #404040);
+  --light: var(--background-primary, var(--color-base-00, #202020));
+  --lightgray: var(--background-secondary, var(--color-base-20, #303030));
+  --link-color: var(--text-accent, hsl(46deg, 95%, 61.2%));
+  --link-color-hover: var(--text-accent-hover, hsl(46deg, 95%, 68.8%));
+  --link-external-color: var(--text-accent, hsl(46deg, 95%, 61.2%));
+  --link-external-color-hover: var(--text-accent-hover, hsl(46deg, 95%, 68.8%));
+  --link-unresolved-color: var(--text-accent, hsl(46deg, 95%, 61.2%));
+  --list-bullet-border: 0px;
+  --list-bullet-radius: 1px;
+  --list-marker-color: var(--text-faint, #707070);
+  --list-marker-color-collapsed: var(--text-accent, hsl(46deg, 95%, 61.2%));
+  --list-marker-color-hover: var(--text-muted, #a0a0a0);
+  --lt-canvas-hover-color: 112,
+    112,
+    112;
+  --lt-file-icon-color: var(--text-faint, #707070);
+  --lt-gradient-gay: linear-gradient(to right, rgb(7, 141, 111), rgb(152, 202, 153), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(205, 208, 234), rgb(123, 173, 226) 70%, rgb(69, 76, 189), rgb(63, 26, 121));
+  --lt-gradient-lesbian: linear-gradient(to right, rgb(213, 44, 0), rgb(226, 150, 136), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(210, 127, 164), rgb(162, 2, 98));
+  --lt-gradient-non-bin: linear-gradient(to right, rgb(253, 219, 0), rgb(238, 212, 143), rgb(255, 255, 255) 30%, rgb(255, 255, 255), rgb(255, 255, 255) 36%, rgb(212, 181, 222), rgb(156, 92, 212), rgb(88, 50, 96), rgb(0, 0, 0));
+  --lt-gradient-pride: linear-gradient(to right, rgb(237, 34, 36), rgb(243, 91, 34), rgb(249, 150, 33), rgb(245, 193, 30), rgb(241, 235, 27) 27%, rgb(241, 235, 27), rgb(241, 235, 27) 33%, rgb(99, 199, 32), rgb(12, 155, 73), rgb(33, 135, 141), rgb(57, 84, 165), rgb(97, 55, 155), rgb(147, 40, 142));
+  --lt-gradient-trans: linear-gradient(to right, rgb(85, 205, 252), rgb(179, 157, 233), rgb(247, 168, 184), rgb(246, 216, 221), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(246, 216, 221), rgb(247, 168, 184), rgb(179, 157, 233), rgb(85, 205, 252));
+  --lt-list-bullet-height: 2px;
+  --lt-list-bullet-width: 6px;
+  --menu-background: var(--background-secondary, #303030);
+  --menu-border-color: var(--background-modifier-border-hover, #707070);
+  --menu-shadow: var(--shadow-s, 0px 1px 2px rgba(0, 0, 0, 0.05),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
+    0px 15px 30px rgba(0, 0, 0, 0.15));
+  --metadata-border-color: var(--background-modifier-border, #404040);
+  --metadata-divider-color: var(--background-modifier-border, #404040);
+  --metadata-input-background-active: var(--background-modifier-hover, rgba(255, 255, 255, 0.075));
+  --metadata-input-font: var(--font-interface, "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace);
+  --metadata-input-text-color: var(--text-normal, #ffffff);
+  --metadata-label-background-active: var(--background-modifier-hover, rgba(255, 255, 255, 0.075));
+  --metadata-label-font: var(--font-interface, "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace);
+  --metadata-label-text-color: var(--text-muted, #a0a0a0);
+  --metadata-label-text-color-hover: var(--text-muted, #a0a0a0);
+  --metadata-property-background-active: var(--background-modifier-hover, rgba(255, 255, 255, 0.075));
+  --modal-background: var(--background-primary, #202020);
+  --modal-border-width: var(--border-width, 0px);
+  --mono-rgb-0: 0,
+    0,
+    0;
+  --mono-rgb-100: 255,
+    255,
+    255;
+  --nav-collapse-icon-color: var(--collapse-icon-color, #707070);
+  --nav-collapse-icon-color-collapsed: var(--text-faint, #707070);
+  --nav-heading-color: var(--text-normal, #ffffff);
+  --nav-heading-color-collapsed: var(--text-faint, #707070);
+  --nav-heading-color-collapsed-hover: var(--text-muted, #a0a0a0);
+  --nav-heading-color-hover: var(--text-normal, #ffffff);
+  --nav-indentation-guide-color: var(--indentation-guide-color, rgba(255, 255, 255, 0.12));
+  --nav-item-background-active: var(--color-accent, hsl(46deg, 95%, 65%));
+  --nav-item-background-hover: var(--background-modifier-hover, rgba(255, 255, 255, 0.075));
+  --nav-item-children-padding-left: var(--size-4-2, 8px);
+  --nav-item-color: var(--text-muted, #a0a0a0);
+  --nav-item-color-active: var(--text-on-accent, #202020);
+  --nav-item-color-highlighted: var(--text-accent, hsl(46deg, 95%, 61.2%));
+  --nav-item-color-hover: var(--text-accent, hsl(46deg, 95%, 61.2%));
+  --nav-item-color-selected: var(--text-normal, #ffffff);
+  --nav-tag-color: var(--text-faint, #707070);
+  --nav-tag-color-active: var(--text-muted, #a0a0a0);
+  --nav-tag-color-hover: var(--text-muted, #a0a0a0);
+  --pdf-background: var(--background-primary, #202020);
+  --pdf-page-background: var(--background-primary, #202020);
+  --pdf-sidebar-background: var(--background-primary, #202020);
+  --pill-border-color: var(--background-modifier-border, #404040);
+  --pill-border-color-hover: var(--background-modifier-border-hover, #707070);
+  --pill-color: var(--text-muted, #a0a0a0);
+  --pill-color-hover: var(--text-normal, #ffffff);
+  --pill-color-remove: var(--text-faint, #707070);
+  --pill-color-remove-hover: var(--text-accent, hsl(46deg, 95%, 61.2%));
+  --prompt-background: var(--background-primary, #202020);
+  --prompt-border-width: var(--border-width, 0px);
+  --raised-background: var(--blur-background, color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent)));
+  --ribbon-background: var(--background-secondary, #303030);
+  --ribbon-background-collapsed: var(--background-primary, #202020);
+  --search-clear-button-color: var(--text-muted, #a0a0a0);
+  --search-icon-color: var(--text-muted, #a0a0a0);
+  --search-result-background: var(--background-primary, #202020);
+  --secondary: var(--text-accent, var(--color-accent, hsl(46deg, 95%, 61.2%)));
+  --setting-group-heading-color: var(--text-normal, #ffffff);
+  --setting-items-background: var(--background-primary-alt, #282828);
+  --setting-items-border-color: var(--background-modifier-border, #404040);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.05),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.1),
+    0px 30px 90px rgba(0, 0, 0, 0.15);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.05),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
+    0px 15px 30px rgba(0, 0, 0, 0.15);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, #a0a0a0);
+  --shiki-code-background: var(--code-background, #282828);
+  --shiki-code-comment: var(--text-faint, #707070);
+  --shiki-code-function: var(--color-green, #7bed9f);
+  --shiki-code-important: var(--color-orange, #ff7f50);
+  --shiki-code-normal: var(--text-muted, #a0a0a0);
+  --shiki-code-property: var(--color-cyan, #70a1ff);
+  --shiki-code-punctuation: var(--text-muted, #a0a0a0);
+  --shiki-code-string: var(--color-yellow, hsl(46deg, 95%, 65%));
+  --shiki-gutter-border-color: var(--background-modifier-border, #404040);
+  --shiki-gutter-text-color: var(--text-faint, #707070);
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, #a0a0a0);
+  --shiki-highlight-neutral: var(--shiki-code-normal, #a0a0a0);
+  --shiki-terminal-dots-color: var(--text-faint, #707070);
+  --slider-thumb-border-color: var(--background-modifier-border-hover, #707070);
+  --slider-track-background: var(--background-modifier-border, #404040);
+  --status-bar-background: var(--background-secondary-alt, #383838);
+  --status-bar-border-color: var(--divider-color, #404040);
+  --status-bar-border-width: var(--border-width) 0 0 var(--border-width, 0px);
+  --status-bar-radius: var(--radius-m, 0px) 0 0 0;
+  --status-bar-text-color: var(--text-muted, #a0a0a0);
+  --suggestion-background: var(--background-primary, #202020);
+  --sync-avatar-color-1: var(--color-red, #ff6b81);
+  --sync-avatar-color-2: var(--color-orange, #ff7f50);
+  --sync-avatar-color-3: var(--color-yellow, hsl(46deg, 95%, 65%));
+  --sync-avatar-color-4: var(--color-green, #7bed9f);
+  --sync-avatar-color-5: var(--color-cyan, #70a1ff);
+  --sync-avatar-color-6: var(--color-blue, #5352ed);
+  --tab-background-active: var(--background-primary, #202020);
+  --tab-container-background: var(--background-secondary, #303030);
+  --tab-divider-color: var(--background-modifier-border-hover, transparent);
+  --tab-outline-color: var(--divider-color, #404040);
+  --tab-outline-width: 0px;
+  --tab-switcher-background: var(--background-secondary, #303030);
+  --tab-text-color: var(--text-faint, #707070);
+  --tab-text-color-active: var(--text-muted, #a0a0a0);
+  --tab-text-color-focused: var(--text-muted, #a0a0a0);
+  --tab-text-color-focused-active: var(--text-muted, #a0a0a0);
+  --tab-text-color-focused-active-current: var(--text-accent, hsl(46deg, 95%, 61.2%));
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(46deg, 95%, 61.2%));
+  --table-add-button-border-color: var(--background-modifier-border, #404040);
+  --table-border-color: var(--background-modifier-border, #404040);
+  --table-drag-handle-background-active: var(--table-selection-border-color, hsl(46deg, 95%, 65%));
+  --table-drag-handle-color: var(--text-faint, #707070);
+  --table-drag-handle-color-active: var(--text-on-accent, #202020);
+  --table-header-border-color: var(--table-border-color, #404040);
+  --table-header-color: var(--text-normal, #ffffff);
+  --table-selection-border-color: var(--interactive-accent, hsl(46deg, 95%, 65%));
+  --table-selection-border-radius: var(--radius-m, 8px);
+  --tag-color: var(--text-accent, hsl(46deg, 95%, 61.2%));
+  --tag-color-hover: var(--text-accent, hsl(46deg, 95%, 61.2%));
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, hsl(46deg, 95%, 68.8%)));
+  --text-accent: var(--color-accent, hsl(46deg, 95%, 61.2%));
+  --text-accent-hover: var(--color-accent-2, hsl(46deg, 95%, 68.8%));
+  --text-error: var(--color-red, #ff6b81);
+  --text-faint: var(--color-base-50, #707070);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-muted: var(--color-base-70, #a0a0a0);
+  --text-normal: var(--color-base-100, #ffffff);
+  --text-on-accent: var(--color-base-00, #202020);
+  --text-success: var(--color-green, #7bed9f);
+  --text-warning: var(--color-orange, #ff7f50);
+  --textHighlight: var(--background-modifier-hover, rgba(var(--mono-rgb-100), 0.075));
+  --titleFont: var(--font-text, var(--font-text-override),
+    var(--font-text-theme),
+    var(--font-interface));
+  --titlebar-background: var(--background-secondary-alt, #383838);
+  --titlebar-background-focused: var(--background-secondary-alt, #383838);
+  --titlebar-border-color: var(--background-modifier-border, #404040);
+  --titlebar-text-color: var(--text-muted, #a0a0a0);
+  --titlebar-text-color-focused: var(--text-normal, #ffffff);
+  --vault-profile-color: var(--text-normal, #ffffff);
+  --vault-profile-color-hover: var(--vault-profile-color, #ffffff);
+  --quartz-icon-color: currentColor;
+}
+
+html body {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  background-color: var(--tab-container-background, rgb(48, 48, 48));
+  color: rgb(255, 255, 255);
+}
+
+html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
+  background-color: var(--background-primary, rgb(32, 32, 32));
+  color: rgb(255, 255, 255);
+}
+
+html body .page > div#quartz-body div.sidebar {
+  background-color: var(--background-secondary, rgb(48, 48, 48));
+  color: rgb(255, 255, 255);
+}
+
+html body .page > div#quartz-body div.sidebar.left {
+  border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
+}
+
+html body .page > div#quartz-body div.sidebar.right {
+  background-color: var(--tab-container-background, rgb(48, 48, 48));
+  border-left-color: rgb(64, 64, 64);
+  color: rgb(255, 255, 255);
+}`,
+    typography: `html body .markdown-rendered > h1 {
+  --background-modifier-active-hover: hsla(46deg,
+    95%,
+    65%, 0.15);
+  --background-modifier-border: #404040;
+  --background-modifier-border-focus: #707070;
+  --background-modifier-border-hover: #707070;
+  --background-modifier-error: #ff6b81;
+  --background-modifier-error-hover: #ff6b81;
+  --background-modifier-error-rgb: 255,
+    107,
+    129;
+  --background-modifier-form-field: #383838;
+  --background-modifier-form-field-hover: #383838;
+  --background-modifier-hover: rgba(255, 255, 255, 0.075);
+  --background-modifier-success: #7bed9f;
+  --background-modifier-success-rgb: 123,
+    237,
+    159;
+  --background-primary: #202020;
+  --background-primary-alt: #282828;
+  --background-secondary: #303030;
+  --background-secondary-alt: #383838;
+  --blockquote-background-color: rgb(158, 158, 158, 0.10);
+  --blockquote-border-color: hsl(46deg, 95%, 65%);
+  --blur-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-bug: 255,
+    107,
+    129;
+  --callout-default: 83,
+    82,
+    237;
+  --callout-error: 255,
+    107,
+    129;
+  --callout-example: 168,
+    130,
+    255;
+  --callout-fail: 255,
+    107,
+    129;
+  --callout-important: 112,
+    161,
+    255;
+  --callout-info: 83,
+    82,
+    237;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 255,
+    127,
+    80;
+  --callout-radius: 8px;
+  --callout-success: 123,
+    237,
+    159;
+  --callout-summary: 112,
+    161,
+    255;
+  --callout-tip: 112,
+    161,
+    255;
+  --callout-title-weight: 600;
+  --callout-todo: 83,
+    82,
+    237;
+  --callout-warning: 255,
+    127,
+    80;
+  --canvas-background: #202020;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 4px;
+  --canvas-dot-pattern: #404040;
+  --caret-color: #ffffff;
+  --checkbox-border-color: #707070;
+  --checkbox-border-color-hover: #a0a0a0;
+  --checkbox-color: hsl(46deg, 95%, 65%);
+  --checkbox-color-hover: hsl(46deg, 95%, 61.2%);
+  --checkbox-marker-color: #202020;
+  --checkbox-radius: 4px;
+  --checkbox-size: 16px;
+  --checklist-done-color: #a0a0a0;
+  --clickable-icon-radius: 4px;
+  --code-background: #282828;
+  --code-border-color: #404040;
+  --code-bracket-background: rgba(255, 255, 255, 0.075);
+  --code-comment: #707070;
+  --code-function: hsl(46deg, 95%, 65%);
+  --code-important: #ff7f50;
+  --code-keyword: #fa99cd;
+  --code-normal: #ffffff;
+  --code-operator: #ff6b81;
+  --code-property: #70a1ff;
+  --code-punctuation: #a0a0a0;
+  --code-radius: 4px;
+  --code-size: 0.875em;
+  --code-string: #7bed9f;
+  --code-tag: #ff6b81;
+  --code-value: #a882ff;
+  --collapse-icon-color: #707070;
+  --collapse-icon-color-collapsed: hsl(46deg, 95%, 61.2%);
+  --color-accent: hsl(46deg, 95%, 65%);
+  --color-accent-1: hsl(46deg, 95%, 61.2%);
+  --color-accent-2: hsl(46deg, 95%, 68.8%);
+  --color-accent-hsl: 46deg,
+    95%,
+    65%;
+  --divider-color: #404040;
+  --divider-color-hover: hsl(46deg, 95%, 65%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #404040;
+  --dropdown-background-hover: #484848;
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #404040;
   --flair-color: #ffffff;
   --font-default: "??",
@@ -253,8 +646,6 @@ export const theme: ThemeData = {
     "Roboto Mono",
     "Source Code Pro",
     monospace;
-  --font-interface-override: "??";
-  --font-interface-theme: "??";
   --font-mermaid: "??",
     "??",
     "??",
@@ -276,15 +667,7 @@ export const theme: ThemeData = {
     "Roboto Mono",
     "Source Code Pro",
     monospace;
-  --font-monospace-default: Menlo,
-    SFMono-Regular,
-    Consolas,
-    "Roboto Mono",
-    "Source Code Pro",
-    monospace;
-  --font-monospace-override: "??";
-  --font-monospace-theme: "??";
-  --font-print: "??", "??", Arial';
+  --font-print: '??', "??", "??", 'Arial';
   --font-text: "??",
     "??",
     "??",
@@ -298,12 +681,7 @@ export const theme: ThemeData = {
     "Roboto Mono",
     "Source Code Pro",
     monospace;
-  --font-text-override: "??";
-  --font-text-theme: "??";
-  --footnote-divider-color: #404040;
-  --footnote-id-color: #a0a0a0;
-  --footnote-id-color-no-occurrences: #707070;
-  --footnote-input-background-active: rgba(255, 255, 255, 0.075);
+  --font-weight: var(--h1-weight, 700);
   --graph-line: #484848;
   --graph-node: #a0a0a0;
   --graph-node-attachment: hsl(46deg, 95%, 65%);
@@ -311,33 +689,11 @@ export const theme: ThemeData = {
   --graph-node-tag: #7bed9f;
   --graph-node-unresolved: #707070;
   --graph-text: #ffffff;
-  --gray: var(--text-muted, #a0a0a0);
-  --headerFont: var(--font-text, "??",
-    "??",
-    "??",
-    "??",
-    "??",
-    "??",
-    "??",
-    Menlo,
-    SFMono-Regular,
-    Consolas,
-    "Roboto Mono",
-    "Source Code Pro",
-    monospace);
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
   --heading-formatting: #707070;
-  --highlight: var(--background-modifier-hover, rgba(255, 255, 255, 0.075));
+  --heading-spacing: 2.5rem;
   --hr-color: #404040;
-  --icon-color: #a0a0a0;
-  --icon-color-active: hsl(46deg, 95%, 61.2%);
-  --icon-color-focused: hsl(46deg, 95%, 61.2%);
-  --icon-color-hover: hsl(46deg, 95%, 61.2%);
-  --indentation-guide-color: rgba(255, 255, 255, 0.12);
-  --indentation-guide-color-active: hsl(46deg, 95%, 61.2%);
-  --input-date-separator: #707070;
-  --input-placeholder-color: #707070;
-  --input-shadow: 0 0 0 0 transparent;
-  --input-shadow-hover: 0 0 0 0 transparent;
   --interactive-accent: hsl(46deg, 95%, 65%);
   --interactive-accent-hover: hsl(46deg, 95%, 61.2%);
   --interactive-accent-hsl: 46deg,
@@ -345,8 +701,6 @@ export const theme: ThemeData = {
     65%;
   --interactive-hover: #484848;
   --interactive-normal: #404040;
-  --light: var(--background-primary, #202020);
-  --lightgray: var(--background-secondary, #303030);
   --link-color: hsl(46deg, 95%, 61.2%);
   --link-color-hover: hsl(46deg, 95%, 68.8%);
   --link-external-color: hsl(46deg, 95%, 61.2%);
@@ -355,132 +709,55 @@ export const theme: ThemeData = {
   --link-unresolved-decoration-color: hsla(46deg,
     95%,
     65%, 0.3);
-  --list-bullet-border: 0px;
-  --list-bullet-radius: 1px;
-  --list-marker-color: #707070;
-  --list-marker-color-collapsed: hsl(46deg, 95%, 61.2%);
-  --list-marker-color-hover: #a0a0a0;
-  --lt-canvas-hover-color: 112,
-    112,
-    112;
+  --link-weight: 400;
+  --list-indent: 2.25em;
   --lt-file-icon-color: #707070;
-  --lt-gradient-gay: linear-gradient(to right, rgb(7, 141, 111), rgb(152, 202, 153), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(205, 208, 234), rgb(123, 173, 226) 70%, rgb(69, 76, 189), rgb(63, 26, 121));
-  --lt-gradient-lesbian: linear-gradient(to right, rgb(213, 44, 0), rgb(226, 150, 136), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(210, 127, 164), rgb(162, 2, 98));
-  --lt-gradient-non-bin: linear-gradient(to right, rgb(253, 219, 0), rgb(238, 212, 143), rgb(255, 255, 255) 30%, rgb(255, 255, 255), rgb(255, 255, 255) 36%, rgb(212, 181, 222), rgb(156, 92, 212), rgb(88, 50, 96), rgb(0, 0, 0));
-  --lt-gradient-pride: linear-gradient(to right, rgb(237, 34, 36), rgb(243, 91, 34), rgb(249, 150, 33), rgb(245, 193, 30), rgb(241, 235, 27) 27%, rgb(241, 235, 27), rgb(241, 235, 27) 33%, rgb(99, 199, 32), rgb(12, 155, 73), rgb(33, 135, 141), rgb(57, 84, 165), rgb(97, 55, 155), rgb(147, 40, 142));
-  --lt-gradient-trans: linear-gradient(to right, rgb(85, 205, 252), rgb(179, 157, 233), rgb(247, 168, 184), rgb(246, 216, 221), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(246, 216, 221), rgb(247, 168, 184), rgb(179, 157, 233), rgb(85, 205, 252));
-  --lt-list-bullet-height: 2px;
-  --lt-list-bullet-width: 6px;
   --menu-background: #303030;
   --menu-border-color: #707070;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
   --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05),
     0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
     0px 15px 30px rgba(0, 0, 0, 0.15);
-  --metadata-border-color: #404040;
-  --metadata-divider-color: #404040;
-  --metadata-input-background-active: rgba(255, 255, 255, 0.075);
-  --metadata-input-font: "??",
-    "??",
-    "??",
-    "??",
-    "??",
-    Menlo,
-    SFMono-Regular,
-    Consolas,
-    "Roboto Mono",
-    "Source Code Pro",
-    monospace;
-  --metadata-input-text-color: #ffffff;
-  --metadata-label-background-active: rgba(255, 255, 255, 0.075);
-  --metadata-label-font: "??",
-    "??",
-    "??",
-    "??",
-    "??",
-    Menlo,
-    SFMono-Regular,
-    Consolas,
-    "Roboto Mono",
-    "Source Code Pro",
-    monospace;
-  --metadata-label-text-color: #a0a0a0;
-  --metadata-label-text-color-hover: #a0a0a0;
-  --metadata-property-background-active: rgba(255, 255, 255, 0.075);
-  --metadata-property-box-shadow-focus: 0 0 0 2px #707070;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #707070;
-  --modal-background: #202020;
-  --modal-border-color: #505050;
-  --modal-border-width: 0px;
-  --mono-rgb-0: 0,
-    0,
-    0;
-  --mono-rgb-100: 255,
-    255,
-    255;
-  --nav-collapse-icon-color: #707070;
-  --nav-collapse-icon-color-collapsed: #707070;
-  --nav-heading-color: #ffffff;
-  --nav-heading-color-collapsed: #707070;
-  --nav-heading-color-collapsed-hover: #a0a0a0;
-  --nav-heading-color-hover: #ffffff;
-  --nav-indentation-guide-color: rgba(255, 255, 255, 0.12);
-  --nav-item-background-active: hsl(46deg, 95%, 65%);
-  --nav-item-background-hover: rgba(255, 255, 255, 0.075);
-  --nav-item-background-selected: hsla(46deg,
-    95%,
-    65%, 0.15);
-  --nav-item-children-padding-left: 8px;
-  --nav-item-color: #a0a0a0;
-  --nav-item-color-active: #202020;
-  --nav-item-color-highlighted: hsl(46deg, 95%, 61.2%);
-  --nav-item-color-hover: hsl(46deg, 95%, 61.2%);
-  --nav-item-color-selected: #ffffff;
-  --nav-tag-color: #707070;
-  --nav-tag-color-active: #a0a0a0;
-  --nav-tag-color-hover: #a0a0a0;
   --pdf-background: #202020;
   --pdf-page-background: #202020;
   --pdf-shadow: 0 0 0 1px #404040;
   --pdf-sidebar-background: #202020;
   --pdf-thumbnail-shadow: 0 0 0 1px #404040;
-  --pill-border-color: #404040;
-  --pill-border-color-hover: #707070;
-  --pill-color: #a0a0a0;
-  --pill-color-hover: #ffffff;
-  --pill-color-remove: #707070;
-  --pill-color-remove-hover: hsl(46deg, 95%, 61.2%);
-  --prompt-background: #202020;
-  --prompt-border-color: #505050;
-  --prompt-border-width: 0px;
+  --popover-font-size: 16px;
   --raised-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent));
-  --ribbon-background: #303030;
-  --ribbon-background-collapsed: #202020;
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
   --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
   --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 12px;
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --search-clear-button-color: #a0a0a0;
   --search-icon-color: #a0a0a0;
   --search-result-background: #202020;
-  --secondary: var(--text-accent, hsl(46deg, 95%, 61.2%));
   --setting-group-heading-color: #ffffff;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
   --setting-items-background: #282828;
   --setting-items-border-color: #404040;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.05),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.1),
-    0px 30px 90px rgba(0, 0, 0, 0.15);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.05),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
-    0px 15px 30px rgba(0, 0, 0, 0.15);
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
   --shiki-active-tab-border-color: #a0a0a0;
   --shiki-code-background: #282828;
+  --shiki-code-block-border-radius: 4px;
+  --shiki-code-block-spacing: 1rem;
   --shiki-code-comment: #707070;
   --shiki-code-function: #7bed9f;
   --shiki-code-important: #ff7f50;
+  --shiki-code-keyword: #fa99cd;
   --shiki-code-normal: #a0a0a0;
   --shiki-code-property: #70a1ff;
   --shiki-code-punctuation: #a0a0a0;
   --shiki-code-string: hsl(46deg, 95%, 65%);
+  --shiki-code-value: #a882ff;
   --shiki-gutter-border-color: #404040;
+  --shiki-gutter-border-width: 1px;
   --shiki-gutter-text-color: #707070;
   --shiki-gutter-text-color-highlight: #a0a0a0;
   --shiki-highlight-green: rgba(123, 237, 159, 0.5);
@@ -490,13 +767,7 @@ export const theme: ThemeData = {
   --shiki-highlight-red: rgba(255, 107, 129, 0.5);
   --shiki-highlight-red-background: rgba(255, 107, 129, 0.1);
   --shiki-terminal-dots-color: #707070;
-  --slider-thumb-border-color: #707070;
-  --slider-track-background: #404040;
-  --status-bar-background: #383838;
-  --status-bar-border-color: #404040;
-  --status-bar-border-width: 0px;
-  --status-bar-radius: 0px;
-  --status-bar-text-color: #a0a0a0;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
   --suggestion-background: #202020;
   --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
   --sync-avatar-color-1: #ff6b81;
@@ -505,13 +776,18 @@ export const theme: ThemeData = {
   --sync-avatar-color-4: #7bed9f;
   --sync-avatar-color-5: #70a1ff;
   --sync-avatar-color-6: #5352ed;
+  --sync-avatar-color-7: #a882ff;
+  --sync-avatar-color-8: #fa99cd;
   --tab-background-active: #202020;
-  --tab-container-background: #303030;
   --tab-divider-color: transparent;
+  --tab-font-size: 13px;
   --tab-outline-color: #404040;
-  --tab-outline-width: 0px;
+  --tab-radius: 4px;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
   --tab-switcher-background: #303030;
   --tab-switcher-menubar-background: linear-gradient(to top, #303030, transparent);
+  --tab-switcher-preview-radius: 16px;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(46deg, 95%, 65%);
   --tab-text-color: #707070;
@@ -521,17 +797,32 @@ export const theme: ThemeData = {
   --tab-text-color-focused-active-current: hsl(46deg, 95%, 61.2%);
   --tab-text-color-focused-highlighted: hsl(46deg, 95%, 61.2%);
   --table-add-button-border-color: #404040;
+  --table-add-button-border-width: 1px;
   --table-border-color: #404040;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
   --table-drag-handle-background-active: hsl(46deg, 95%, 65%);
   --table-drag-handle-color: #707070;
   --table-drag-handle-color-active: #202020;
+  --table-header-background: transparent;
   --table-header-border-color: #404040;
+  --table-header-border-width: 1px;
   --table-header-color: #ffffff;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
   --table-selection: hsla(46deg,
     95%,
     65%, 0.1);
+  --table-selection-blend-mode: lighten;
   --table-selection-border-color: hsl(46deg, 95%, 65%);
   --table-selection-border-radius: 8px;
+  --table-text-size: 16px;
   --tag-background: hsla(46deg,
     95%,
     65%, 0.1);
@@ -546,75 +837,26 @@ export const theme: ThemeData = {
     65%, 0.15);
   --tag-color: hsl(46deg, 95%, 61.2%);
   --tag-color-hover: hsl(46deg, 95%, 61.2%);
-  --tertiary: var(--text-accent-hover, hsl(46deg, 95%, 68.8%));
+  --tag-size: 0.875em;
   --text-accent: hsl(46deg, 95%, 61.2%);
   --text-accent-hover: hsl(46deg, 95%, 68.8%);
   --text-error: #ff6b81;
   --text-faint: #707070;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-muted: #a0a0a0;
   --text-normal: #ffffff;
   --text-on-accent: #202020;
   --text-selection: rgba(255, 255, 255, 0.2);
   --text-success: #7bed9f;
   --text-warning: #ff7f50;
-  --textHighlight: var(--background-modifier-hover, rgba(255, 255, 255, 0.075));
-  --titleFont: var(--font-text, "??",
-    "??",
-    "??",
-    "??",
-    "??",
-    "??",
-    "??",
-    Menlo,
-    SFMono-Regular,
-    Consolas,
-    "Roboto Mono",
-    "Source Code Pro",
-    monospace);
-  --titlebar-background: #383838;
-  --titlebar-background-focused: #383838;
-  --titlebar-border-color: #404040;
-  --titlebar-text-color: #a0a0a0;
-  --titlebar-text-color-focused: #ffffff;
-  --vault-profile-color: #ffffff;
-  --vault-profile-color-hover: #ffffff;
-  --workspace-background-translucent: rgba(0, 0, 0, 0.6);
-  --quartz-icon-color: currentColor;
-}
-
-html body {
-  background-color: var(--background-primary);
-  color: var(--text-normal);
-}
-
-html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(48, 48, 48);
-  color: rgb(255, 255, 255);
-}
-
-html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
-  background-color: rgb(32, 32, 32);
-  color: rgb(255, 255, 255);
-}
-
-html body .page > div#quartz-body div.sidebar {
-  background-color: rgb(48, 48, 48);
-  color: rgb(255, 255, 255);
-}
-
-html body .page > div#quartz-body div.sidebar.left {
-  border-right-color: rgb(64, 64, 64);
-  border-right-width: 0px;
-}
-
-html body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(48, 48, 48);
-  border-left-color: rgb(64, 64, 64);
-  color: rgb(255, 255, 255);
-}`,
-    typography: `html body .markdown-rendered > h1 {
-  --font-weight: 700;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(112, 112, 112);
   border-bottom-left-radius: 0px;
@@ -628,13 +870,13 @@ html body .page > div#quartz-body div.sidebar.right {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(112, 112, 112);
+  color: var(--h1-color, rgb(112, 112, 112));
   content: "# ";
-  font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
-  font-size: 25.888px;
-  font-weight: 700;
-  letter-spacing: -0.38832px;
-  line-height: 31.0656px;
+  font-family: var(--h1-font, "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
+  font-size: var(--h1-size, 25.888px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h1-letter-spacing, -0.38832px);
+  line-height: var(--h1-line-height, 31.0656px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -646,35 +888,35 @@ html body .page > div#quartz-body div.sidebar.right {
 }
 
 html body .markdown-rendered p > b, html b {
-  color: rgb(255, 255, 255);
+  color: var(--bold-color, rgb(255, 255, 255));
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body .markdown-rendered p > em, html em {
-  color: rgb(255, 255, 255);
+  color: var(--italic-color, rgb(255, 255, 255));
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body .markdown-rendered p > i, html i {
-  color: rgb(255, 255, 255);
+  color: var(--italic-color, rgb(255, 255, 255));
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body .markdown-rendered p > strong, html strong {
-  color: rgb(255, 255, 255);
+  color: var(--bold-color, rgb(255, 255, 255));
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body .text-highlight {
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
@@ -688,11 +930,363 @@ html body del {
 }
 
 html body h1.article-title {
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
 }
 
 html body h2 {
-  --font-weight: 680;
+  --background-modifier-active-hover: hsla(46deg,
+    95%,
+    65%, 0.15);
+  --background-modifier-border: #404040;
+  --background-modifier-border-focus: #707070;
+  --background-modifier-border-hover: #707070;
+  --background-modifier-error: #ff6b81;
+  --background-modifier-error-hover: #ff6b81;
+  --background-modifier-error-rgb: 255,
+    107,
+    129;
+  --background-modifier-form-field: #383838;
+  --background-modifier-form-field-hover: #383838;
+  --background-modifier-hover: rgba(255, 255, 255, 0.075);
+  --background-modifier-success: #7bed9f;
+  --background-modifier-success-rgb: 123,
+    237,
+    159;
+  --background-primary: #202020;
+  --background-primary-alt: #282828;
+  --background-secondary: #303030;
+  --background-secondary-alt: #383838;
+  --blockquote-background-color: rgb(158, 158, 158, 0.10);
+  --blockquote-border-color: hsl(46deg, 95%, 65%);
+  --blur-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-bug: 255,
+    107,
+    129;
+  --callout-default: 83,
+    82,
+    237;
+  --callout-error: 255,
+    107,
+    129;
+  --callout-example: 168,
+    130,
+    255;
+  --callout-fail: 255,
+    107,
+    129;
+  --callout-important: 112,
+    161,
+    255;
+  --callout-info: 83,
+    82,
+    237;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 255,
+    127,
+    80;
+  --callout-radius: 8px;
+  --callout-success: 123,
+    237,
+    159;
+  --callout-summary: 112,
+    161,
+    255;
+  --callout-tip: 112,
+    161,
+    255;
+  --callout-title-weight: 600;
+  --callout-todo: 83,
+    82,
+    237;
+  --callout-warning: 255,
+    127,
+    80;
+  --canvas-background: #202020;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 4px;
+  --canvas-dot-pattern: #404040;
+  --caret-color: #ffffff;
+  --checkbox-border-color: #707070;
+  --checkbox-border-color-hover: #a0a0a0;
+  --checkbox-color: hsl(46deg, 95%, 65%);
+  --checkbox-color-hover: hsl(46deg, 95%, 61.2%);
+  --checkbox-marker-color: #202020;
+  --checkbox-radius: 4px;
+  --checkbox-size: 16px;
+  --checklist-done-color: #a0a0a0;
+  --clickable-icon-radius: 4px;
+  --code-background: #282828;
+  --code-border-color: #404040;
+  --code-bracket-background: rgba(255, 255, 255, 0.075);
+  --code-comment: #707070;
+  --code-function: hsl(46deg, 95%, 65%);
+  --code-important: #ff7f50;
+  --code-keyword: #fa99cd;
+  --code-normal: #ffffff;
+  --code-operator: #ff6b81;
+  --code-property: #70a1ff;
+  --code-punctuation: #a0a0a0;
+  --code-radius: 4px;
+  --code-size: 0.875em;
+  --code-string: #7bed9f;
+  --code-tag: #ff6b81;
+  --code-value: #a882ff;
+  --collapse-icon-color: #707070;
+  --collapse-icon-color-collapsed: hsl(46deg, 95%, 61.2%);
+  --color-accent: hsl(46deg, 95%, 65%);
+  --color-accent-1: hsl(46deg, 95%, 61.2%);
+  --color-accent-2: hsl(46deg, 95%, 68.8%);
+  --color-accent-hsl: 46deg,
+    95%,
+    65%;
+  --divider-color: #404040;
+  --divider-color-hover: hsl(46deg, 95%, 65%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #404040;
+  --dropdown-background-hover: #484848;
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #404040;
+  --flair-color: #ffffff;
+  --font-default: "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-interface: "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-mermaid: "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-monospace: "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-print: '??', "??", "??", 'Arial';
+  --font-text: "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-weight: var(--h2-weight, 680);
+  --graph-line: #484848;
+  --graph-node: #a0a0a0;
+  --graph-node-attachment: hsl(46deg, 95%, 65%);
+  --graph-node-focused: hsl(46deg, 95%, 61.2%);
+  --graph-node-tag: #7bed9f;
+  --graph-node-unresolved: #707070;
+  --graph-text: #ffffff;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #707070;
+  --heading-spacing: 2.5rem;
+  --hr-color: #404040;
+  --interactive-accent: hsl(46deg, 95%, 65%);
+  --interactive-accent-hover: hsl(46deg, 95%, 61.2%);
+  --interactive-accent-hsl: 46deg,
+    95%,
+    65%;
+  --interactive-hover: #484848;
+  --interactive-normal: #404040;
+  --link-color: hsl(46deg, 95%, 61.2%);
+  --link-color-hover: hsl(46deg, 95%, 68.8%);
+  --link-external-color: hsl(46deg, 95%, 61.2%);
+  --link-external-color-hover: hsl(46deg, 95%, 68.8%);
+  --link-unresolved-color: hsl(46deg, 95%, 61.2%);
+  --link-unresolved-decoration-color: hsla(46deg,
+    95%,
+    65%, 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --lt-file-icon-color: #707070;
+  --menu-background: #303030;
+  --menu-border-color: #707070;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
+    0px 15px 30px rgba(0, 0, 0, 0.15);
+  --pdf-background: #202020;
+  --pdf-page-background: #202020;
+  --pdf-shadow: 0 0 0 1px #404040;
+  --pdf-sidebar-background: #202020;
+  --pdf-thumbnail-shadow: 0 0 0 1px #404040;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: #a0a0a0;
+  --search-icon-color: #a0a0a0;
+  --search-result-background: #202020;
+  --setting-group-heading-color: #ffffff;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #282828;
+  --setting-items-border-color: #404040;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: #a0a0a0;
+  --shiki-code-background: #282828;
+  --shiki-code-block-border-radius: 4px;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #707070;
+  --shiki-code-function: #7bed9f;
+  --shiki-code-important: #ff7f50;
+  --shiki-code-keyword: #fa99cd;
+  --shiki-code-normal: #a0a0a0;
+  --shiki-code-property: #70a1ff;
+  --shiki-code-punctuation: #a0a0a0;
+  --shiki-code-string: hsl(46deg, 95%, 65%);
+  --shiki-code-value: #a882ff;
+  --shiki-gutter-border-color: #404040;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #707070;
+  --shiki-gutter-text-color-highlight: #a0a0a0;
+  --shiki-highlight-green: rgba(123, 237, 159, 0.5);
+  --shiki-highlight-green-background: rgba(123, 237, 159, 0.1);
+  --shiki-highlight-neutral: #a0a0a0;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
+  --shiki-highlight-red: rgba(255, 107, 129, 0.5);
+  --shiki-highlight-red-background: rgba(255, 107, 129, 0.1);
+  --shiki-terminal-dots-color: #707070;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #202020;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --sync-avatar-color-1: #ff6b81;
+  --sync-avatar-color-2: #ff7f50;
+  --sync-avatar-color-3: hsl(46deg, 95%, 65%);
+  --sync-avatar-color-4: #7bed9f;
+  --sync-avatar-color-5: #70a1ff;
+  --sync-avatar-color-6: #5352ed;
+  --sync-avatar-color-7: #a882ff;
+  --sync-avatar-color-8: #fa99cd;
+  --tab-background-active: #202020;
+  --tab-divider-color: transparent;
+  --tab-font-size: 13px;
+  --tab-outline-color: #404040;
+  --tab-radius: 4px;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #303030;
+  --tab-switcher-menubar-background: linear-gradient(to top, #303030, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(46deg, 95%, 65%);
+  --tab-text-color: #707070;
+  --tab-text-color-active: #a0a0a0;
+  --tab-text-color-focused: #a0a0a0;
+  --tab-text-color-focused-active: #a0a0a0;
+  --tab-text-color-focused-active-current: hsl(46deg, 95%, 61.2%);
+  --tab-text-color-focused-highlighted: hsl(46deg, 95%, 61.2%);
+  --table-add-button-border-color: #404040;
+  --table-add-button-border-width: 1px;
+  --table-border-color: #404040;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(46deg, 95%, 65%);
+  --table-drag-handle-color: #707070;
+  --table-drag-handle-color-active: #202020;
+  --table-header-background: transparent;
+  --table-header-border-color: #404040;
+  --table-header-border-width: 1px;
+  --table-header-color: #ffffff;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(46deg,
+    95%,
+    65%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(46deg, 95%, 65%);
+  --table-selection-border-radius: 8px;
+  --table-text-size: 16px;
+  --tag-background: hsla(46deg,
+    95%,
+    65%, 0.1);
+  --tag-background-hover: hsla(46deg,
+    95%,
+    65%, 0.2);
+  --tag-border-color: hsla(46deg,
+    95%,
+    65%, 0.15);
+  --tag-border-color-hover: hsla(46deg,
+    95%,
+    65%, 0.15);
+  --tag-color: hsl(46deg, 95%, 61.2%);
+  --tag-color-hover: hsl(46deg, 95%, 61.2%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(46deg, 95%, 61.2%);
+  --text-accent-hover: hsl(46deg, 95%, 68.8%);
+  --text-error: #ff6b81;
+  --text-faint: #707070;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #a0a0a0;
+  --text-normal: #ffffff;
+  --text-on-accent: #202020;
+  --text-selection: rgba(255, 255, 255, 0.2);
+  --text-success: #7bed9f;
+  --text-warning: #ff7f50;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(112, 112, 112);
   border-bottom-left-radius: 0px;
@@ -706,17 +1300,17 @@ html body h2 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(112, 112, 112);
+  color: var(--h2-color, rgb(112, 112, 112));
   content: "# ";
-  font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
-  font-size: 23.392px;
-  font-weight: 680;
-  letter-spacing: -0.257312px;
-  line-height: 28.0704px;
+  font-family: var(--h2-font, "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
+  font-size: var(--h2-size, 23.392px);
+  font-weight: var(--font-weight, 680);
+  letter-spacing: var(--h2-letter-spacing, -0.257312px);
+  line-height: var(--h2-line-height, 28.0704px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -724,7 +1318,359 @@ html body h2 {
 }
 
 html body h3 {
-  --font-weight: 660;
+  --background-modifier-active-hover: hsla(46deg,
+    95%,
+    65%, 0.15);
+  --background-modifier-border: #404040;
+  --background-modifier-border-focus: #707070;
+  --background-modifier-border-hover: #707070;
+  --background-modifier-error: #ff6b81;
+  --background-modifier-error-hover: #ff6b81;
+  --background-modifier-error-rgb: 255,
+    107,
+    129;
+  --background-modifier-form-field: #383838;
+  --background-modifier-form-field-hover: #383838;
+  --background-modifier-hover: rgba(255, 255, 255, 0.075);
+  --background-modifier-success: #7bed9f;
+  --background-modifier-success-rgb: 123,
+    237,
+    159;
+  --background-primary: #202020;
+  --background-primary-alt: #282828;
+  --background-secondary: #303030;
+  --background-secondary-alt: #383838;
+  --blockquote-background-color: rgb(158, 158, 158, 0.10);
+  --blockquote-border-color: hsl(46deg, 95%, 65%);
+  --blur-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-bug: 255,
+    107,
+    129;
+  --callout-default: 83,
+    82,
+    237;
+  --callout-error: 255,
+    107,
+    129;
+  --callout-example: 168,
+    130,
+    255;
+  --callout-fail: 255,
+    107,
+    129;
+  --callout-important: 112,
+    161,
+    255;
+  --callout-info: 83,
+    82,
+    237;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 255,
+    127,
+    80;
+  --callout-radius: 8px;
+  --callout-success: 123,
+    237,
+    159;
+  --callout-summary: 112,
+    161,
+    255;
+  --callout-tip: 112,
+    161,
+    255;
+  --callout-title-weight: 600;
+  --callout-todo: 83,
+    82,
+    237;
+  --callout-warning: 255,
+    127,
+    80;
+  --canvas-background: #202020;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 4px;
+  --canvas-dot-pattern: #404040;
+  --caret-color: #ffffff;
+  --checkbox-border-color: #707070;
+  --checkbox-border-color-hover: #a0a0a0;
+  --checkbox-color: hsl(46deg, 95%, 65%);
+  --checkbox-color-hover: hsl(46deg, 95%, 61.2%);
+  --checkbox-marker-color: #202020;
+  --checkbox-radius: 4px;
+  --checkbox-size: 16px;
+  --checklist-done-color: #a0a0a0;
+  --clickable-icon-radius: 4px;
+  --code-background: #282828;
+  --code-border-color: #404040;
+  --code-bracket-background: rgba(255, 255, 255, 0.075);
+  --code-comment: #707070;
+  --code-function: hsl(46deg, 95%, 65%);
+  --code-important: #ff7f50;
+  --code-keyword: #fa99cd;
+  --code-normal: #ffffff;
+  --code-operator: #ff6b81;
+  --code-property: #70a1ff;
+  --code-punctuation: #a0a0a0;
+  --code-radius: 4px;
+  --code-size: 0.875em;
+  --code-string: #7bed9f;
+  --code-tag: #ff6b81;
+  --code-value: #a882ff;
+  --collapse-icon-color: #707070;
+  --collapse-icon-color-collapsed: hsl(46deg, 95%, 61.2%);
+  --color-accent: hsl(46deg, 95%, 65%);
+  --color-accent-1: hsl(46deg, 95%, 61.2%);
+  --color-accent-2: hsl(46deg, 95%, 68.8%);
+  --color-accent-hsl: 46deg,
+    95%,
+    65%;
+  --divider-color: #404040;
+  --divider-color-hover: hsl(46deg, 95%, 65%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #404040;
+  --dropdown-background-hover: #484848;
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #404040;
+  --flair-color: #ffffff;
+  --font-default: "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-interface: "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-mermaid: "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-monospace: "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-print: '??', "??", "??", 'Arial';
+  --font-text: "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-weight: var(--h3-weight, 660);
+  --graph-line: #484848;
+  --graph-node: #a0a0a0;
+  --graph-node-attachment: hsl(46deg, 95%, 65%);
+  --graph-node-focused: hsl(46deg, 95%, 61.2%);
+  --graph-node-tag: #7bed9f;
+  --graph-node-unresolved: #707070;
+  --graph-text: #ffffff;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #707070;
+  --heading-spacing: 2.5rem;
+  --hr-color: #404040;
+  --interactive-accent: hsl(46deg, 95%, 65%);
+  --interactive-accent-hover: hsl(46deg, 95%, 61.2%);
+  --interactive-accent-hsl: 46deg,
+    95%,
+    65%;
+  --interactive-hover: #484848;
+  --interactive-normal: #404040;
+  --link-color: hsl(46deg, 95%, 61.2%);
+  --link-color-hover: hsl(46deg, 95%, 68.8%);
+  --link-external-color: hsl(46deg, 95%, 61.2%);
+  --link-external-color-hover: hsl(46deg, 95%, 68.8%);
+  --link-unresolved-color: hsl(46deg, 95%, 61.2%);
+  --link-unresolved-decoration-color: hsla(46deg,
+    95%,
+    65%, 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --lt-file-icon-color: #707070;
+  --menu-background: #303030;
+  --menu-border-color: #707070;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
+    0px 15px 30px rgba(0, 0, 0, 0.15);
+  --pdf-background: #202020;
+  --pdf-page-background: #202020;
+  --pdf-shadow: 0 0 0 1px #404040;
+  --pdf-sidebar-background: #202020;
+  --pdf-thumbnail-shadow: 0 0 0 1px #404040;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: #a0a0a0;
+  --search-icon-color: #a0a0a0;
+  --search-result-background: #202020;
+  --setting-group-heading-color: #ffffff;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #282828;
+  --setting-items-border-color: #404040;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: #a0a0a0;
+  --shiki-code-background: #282828;
+  --shiki-code-block-border-radius: 4px;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #707070;
+  --shiki-code-function: #7bed9f;
+  --shiki-code-important: #ff7f50;
+  --shiki-code-keyword: #fa99cd;
+  --shiki-code-normal: #a0a0a0;
+  --shiki-code-property: #70a1ff;
+  --shiki-code-punctuation: #a0a0a0;
+  --shiki-code-string: hsl(46deg, 95%, 65%);
+  --shiki-code-value: #a882ff;
+  --shiki-gutter-border-color: #404040;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #707070;
+  --shiki-gutter-text-color-highlight: #a0a0a0;
+  --shiki-highlight-green: rgba(123, 237, 159, 0.5);
+  --shiki-highlight-green-background: rgba(123, 237, 159, 0.1);
+  --shiki-highlight-neutral: #a0a0a0;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
+  --shiki-highlight-red: rgba(255, 107, 129, 0.5);
+  --shiki-highlight-red-background: rgba(255, 107, 129, 0.1);
+  --shiki-terminal-dots-color: #707070;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #202020;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --sync-avatar-color-1: #ff6b81;
+  --sync-avatar-color-2: #ff7f50;
+  --sync-avatar-color-3: hsl(46deg, 95%, 65%);
+  --sync-avatar-color-4: #7bed9f;
+  --sync-avatar-color-5: #70a1ff;
+  --sync-avatar-color-6: #5352ed;
+  --sync-avatar-color-7: #a882ff;
+  --sync-avatar-color-8: #fa99cd;
+  --tab-background-active: #202020;
+  --tab-divider-color: transparent;
+  --tab-font-size: 13px;
+  --tab-outline-color: #404040;
+  --tab-radius: 4px;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #303030;
+  --tab-switcher-menubar-background: linear-gradient(to top, #303030, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(46deg, 95%, 65%);
+  --tab-text-color: #707070;
+  --tab-text-color-active: #a0a0a0;
+  --tab-text-color-focused: #a0a0a0;
+  --tab-text-color-focused-active: #a0a0a0;
+  --tab-text-color-focused-active-current: hsl(46deg, 95%, 61.2%);
+  --tab-text-color-focused-highlighted: hsl(46deg, 95%, 61.2%);
+  --table-add-button-border-color: #404040;
+  --table-add-button-border-width: 1px;
+  --table-border-color: #404040;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(46deg, 95%, 65%);
+  --table-drag-handle-color: #707070;
+  --table-drag-handle-color-active: #202020;
+  --table-header-background: transparent;
+  --table-header-border-color: #404040;
+  --table-header-border-width: 1px;
+  --table-header-color: #ffffff;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(46deg,
+    95%,
+    65%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(46deg, 95%, 65%);
+  --table-selection-border-radius: 8px;
+  --table-text-size: 16px;
+  --tag-background: hsla(46deg,
+    95%,
+    65%, 0.1);
+  --tag-background-hover: hsla(46deg,
+    95%,
+    65%, 0.2);
+  --tag-border-color: hsla(46deg,
+    95%,
+    65%, 0.15);
+  --tag-border-color-hover: hsla(46deg,
+    95%,
+    65%, 0.15);
+  --tag-color: hsl(46deg, 95%, 61.2%);
+  --tag-color-hover: hsl(46deg, 95%, 61.2%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(46deg, 95%, 61.2%);
+  --text-accent-hover: hsl(46deg, 95%, 68.8%);
+  --text-error: #ff6b81;
+  --text-faint: #707070;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #a0a0a0;
+  --text-normal: #ffffff;
+  --text-on-accent: #202020;
+  --text-selection: rgba(255, 255, 255, 0.2);
+  --text-success: #7bed9f;
+  --text-warning: #ff7f50;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(112, 112, 112);
   border-bottom-left-radius: 0px;
@@ -738,17 +1684,17 @@ html body h3 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(112, 112, 112);
+  color: var(--h3-color, rgb(112, 112, 112));
   content: "# ";
-  font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
-  font-size: 21.088px;
-  font-weight: 660;
-  letter-spacing: -0.168704px;
-  line-height: 27.4144px;
+  font-family: var(--h3-font, "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
+  font-size: var(--h3-size, 21.088px);
+  font-weight: var(--font-weight, 660);
+  letter-spacing: var(--h3-letter-spacing, -0.168704px);
+  line-height: var(--h3-line-height, 27.4144px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -756,7 +1702,359 @@ html body h3 {
 }
 
 html body h4 {
-  --font-weight: 640;
+  --background-modifier-active-hover: hsla(46deg,
+    95%,
+    65%, 0.15);
+  --background-modifier-border: #404040;
+  --background-modifier-border-focus: #707070;
+  --background-modifier-border-hover: #707070;
+  --background-modifier-error: #ff6b81;
+  --background-modifier-error-hover: #ff6b81;
+  --background-modifier-error-rgb: 255,
+    107,
+    129;
+  --background-modifier-form-field: #383838;
+  --background-modifier-form-field-hover: #383838;
+  --background-modifier-hover: rgba(255, 255, 255, 0.075);
+  --background-modifier-success: #7bed9f;
+  --background-modifier-success-rgb: 123,
+    237,
+    159;
+  --background-primary: #202020;
+  --background-primary-alt: #282828;
+  --background-secondary: #303030;
+  --background-secondary-alt: #383838;
+  --blockquote-background-color: rgb(158, 158, 158, 0.10);
+  --blockquote-border-color: hsl(46deg, 95%, 65%);
+  --blur-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-bug: 255,
+    107,
+    129;
+  --callout-default: 83,
+    82,
+    237;
+  --callout-error: 255,
+    107,
+    129;
+  --callout-example: 168,
+    130,
+    255;
+  --callout-fail: 255,
+    107,
+    129;
+  --callout-important: 112,
+    161,
+    255;
+  --callout-info: 83,
+    82,
+    237;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 255,
+    127,
+    80;
+  --callout-radius: 8px;
+  --callout-success: 123,
+    237,
+    159;
+  --callout-summary: 112,
+    161,
+    255;
+  --callout-tip: 112,
+    161,
+    255;
+  --callout-title-weight: 600;
+  --callout-todo: 83,
+    82,
+    237;
+  --callout-warning: 255,
+    127,
+    80;
+  --canvas-background: #202020;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 4px;
+  --canvas-dot-pattern: #404040;
+  --caret-color: #ffffff;
+  --checkbox-border-color: #707070;
+  --checkbox-border-color-hover: #a0a0a0;
+  --checkbox-color: hsl(46deg, 95%, 65%);
+  --checkbox-color-hover: hsl(46deg, 95%, 61.2%);
+  --checkbox-marker-color: #202020;
+  --checkbox-radius: 4px;
+  --checkbox-size: 16px;
+  --checklist-done-color: #a0a0a0;
+  --clickable-icon-radius: 4px;
+  --code-background: #282828;
+  --code-border-color: #404040;
+  --code-bracket-background: rgba(255, 255, 255, 0.075);
+  --code-comment: #707070;
+  --code-function: hsl(46deg, 95%, 65%);
+  --code-important: #ff7f50;
+  --code-keyword: #fa99cd;
+  --code-normal: #ffffff;
+  --code-operator: #ff6b81;
+  --code-property: #70a1ff;
+  --code-punctuation: #a0a0a0;
+  --code-radius: 4px;
+  --code-size: 0.875em;
+  --code-string: #7bed9f;
+  --code-tag: #ff6b81;
+  --code-value: #a882ff;
+  --collapse-icon-color: #707070;
+  --collapse-icon-color-collapsed: hsl(46deg, 95%, 61.2%);
+  --color-accent: hsl(46deg, 95%, 65%);
+  --color-accent-1: hsl(46deg, 95%, 61.2%);
+  --color-accent-2: hsl(46deg, 95%, 68.8%);
+  --color-accent-hsl: 46deg,
+    95%,
+    65%;
+  --divider-color: #404040;
+  --divider-color-hover: hsl(46deg, 95%, 65%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #404040;
+  --dropdown-background-hover: #484848;
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #404040;
+  --flair-color: #ffffff;
+  --font-default: "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-interface: "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-mermaid: "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-monospace: "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-print: '??', "??", "??", 'Arial';
+  --font-text: "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-weight: var(--h4-weight, 640);
+  --graph-line: #484848;
+  --graph-node: #a0a0a0;
+  --graph-node-attachment: hsl(46deg, 95%, 65%);
+  --graph-node-focused: hsl(46deg, 95%, 61.2%);
+  --graph-node-tag: #7bed9f;
+  --graph-node-unresolved: #707070;
+  --graph-text: #ffffff;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #707070;
+  --heading-spacing: 2.5rem;
+  --hr-color: #404040;
+  --interactive-accent: hsl(46deg, 95%, 65%);
+  --interactive-accent-hover: hsl(46deg, 95%, 61.2%);
+  --interactive-accent-hsl: 46deg,
+    95%,
+    65%;
+  --interactive-hover: #484848;
+  --interactive-normal: #404040;
+  --link-color: hsl(46deg, 95%, 61.2%);
+  --link-color-hover: hsl(46deg, 95%, 68.8%);
+  --link-external-color: hsl(46deg, 95%, 61.2%);
+  --link-external-color-hover: hsl(46deg, 95%, 68.8%);
+  --link-unresolved-color: hsl(46deg, 95%, 61.2%);
+  --link-unresolved-decoration-color: hsla(46deg,
+    95%,
+    65%, 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --lt-file-icon-color: #707070;
+  --menu-background: #303030;
+  --menu-border-color: #707070;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
+    0px 15px 30px rgba(0, 0, 0, 0.15);
+  --pdf-background: #202020;
+  --pdf-page-background: #202020;
+  --pdf-shadow: 0 0 0 1px #404040;
+  --pdf-sidebar-background: #202020;
+  --pdf-thumbnail-shadow: 0 0 0 1px #404040;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: #a0a0a0;
+  --search-icon-color: #a0a0a0;
+  --search-result-background: #202020;
+  --setting-group-heading-color: #ffffff;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #282828;
+  --setting-items-border-color: #404040;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: #a0a0a0;
+  --shiki-code-background: #282828;
+  --shiki-code-block-border-radius: 4px;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #707070;
+  --shiki-code-function: #7bed9f;
+  --shiki-code-important: #ff7f50;
+  --shiki-code-keyword: #fa99cd;
+  --shiki-code-normal: #a0a0a0;
+  --shiki-code-property: #70a1ff;
+  --shiki-code-punctuation: #a0a0a0;
+  --shiki-code-string: hsl(46deg, 95%, 65%);
+  --shiki-code-value: #a882ff;
+  --shiki-gutter-border-color: #404040;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #707070;
+  --shiki-gutter-text-color-highlight: #a0a0a0;
+  --shiki-highlight-green: rgba(123, 237, 159, 0.5);
+  --shiki-highlight-green-background: rgba(123, 237, 159, 0.1);
+  --shiki-highlight-neutral: #a0a0a0;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
+  --shiki-highlight-red: rgba(255, 107, 129, 0.5);
+  --shiki-highlight-red-background: rgba(255, 107, 129, 0.1);
+  --shiki-terminal-dots-color: #707070;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #202020;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --sync-avatar-color-1: #ff6b81;
+  --sync-avatar-color-2: #ff7f50;
+  --sync-avatar-color-3: hsl(46deg, 95%, 65%);
+  --sync-avatar-color-4: #7bed9f;
+  --sync-avatar-color-5: #70a1ff;
+  --sync-avatar-color-6: #5352ed;
+  --sync-avatar-color-7: #a882ff;
+  --sync-avatar-color-8: #fa99cd;
+  --tab-background-active: #202020;
+  --tab-divider-color: transparent;
+  --tab-font-size: 13px;
+  --tab-outline-color: #404040;
+  --tab-radius: 4px;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #303030;
+  --tab-switcher-menubar-background: linear-gradient(to top, #303030, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(46deg, 95%, 65%);
+  --tab-text-color: #707070;
+  --tab-text-color-active: #a0a0a0;
+  --tab-text-color-focused: #a0a0a0;
+  --tab-text-color-focused-active: #a0a0a0;
+  --tab-text-color-focused-active-current: hsl(46deg, 95%, 61.2%);
+  --tab-text-color-focused-highlighted: hsl(46deg, 95%, 61.2%);
+  --table-add-button-border-color: #404040;
+  --table-add-button-border-width: 1px;
+  --table-border-color: #404040;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(46deg, 95%, 65%);
+  --table-drag-handle-color: #707070;
+  --table-drag-handle-color-active: #202020;
+  --table-header-background: transparent;
+  --table-header-border-color: #404040;
+  --table-header-border-width: 1px;
+  --table-header-color: #ffffff;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(46deg,
+    95%,
+    65%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(46deg, 95%, 65%);
+  --table-selection-border-radius: 8px;
+  --table-text-size: 16px;
+  --tag-background: hsla(46deg,
+    95%,
+    65%, 0.1);
+  --tag-background-hover: hsla(46deg,
+    95%,
+    65%, 0.2);
+  --tag-border-color: hsla(46deg,
+    95%,
+    65%, 0.15);
+  --tag-border-color-hover: hsla(46deg,
+    95%,
+    65%, 0.15);
+  --tag-color: hsl(46deg, 95%, 61.2%);
+  --tag-color-hover: hsl(46deg, 95%, 61.2%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(46deg, 95%, 61.2%);
+  --text-accent-hover: hsl(46deg, 95%, 68.8%);
+  --text-error: #ff6b81;
+  --text-faint: #707070;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #a0a0a0;
+  --text-normal: #ffffff;
+  --text-on-accent: #202020;
+  --text-selection: rgba(255, 255, 255, 0.2);
+  --text-success: #7bed9f;
+  --text-warning: #ff7f50;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(112, 112, 112);
   border-bottom-left-radius: 0px;
@@ -770,17 +2068,17 @@ html body h4 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(112, 112, 112);
+  color: var(--h4-color, rgb(112, 112, 112));
   content: "# ";
-  font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
-  font-size: 19.008px;
-  font-weight: 640;
-  letter-spacing: -0.09504px;
-  line-height: 26.6112px;
+  font-family: var(--h4-font, "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
+  font-size: var(--h4-size, 19.008px);
+  font-weight: var(--font-weight, 640);
+  letter-spacing: var(--h4-letter-spacing, -0.09504px);
+  line-height: var(--h4-line-height, 26.6112px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -788,7 +2086,359 @@ html body h4 {
 }
 
 html body h5 {
-  --font-weight: 620;
+  --background-modifier-active-hover: hsla(46deg,
+    95%,
+    65%, 0.15);
+  --background-modifier-border: #404040;
+  --background-modifier-border-focus: #707070;
+  --background-modifier-border-hover: #707070;
+  --background-modifier-error: #ff6b81;
+  --background-modifier-error-hover: #ff6b81;
+  --background-modifier-error-rgb: 255,
+    107,
+    129;
+  --background-modifier-form-field: #383838;
+  --background-modifier-form-field-hover: #383838;
+  --background-modifier-hover: rgba(255, 255, 255, 0.075);
+  --background-modifier-success: #7bed9f;
+  --background-modifier-success-rgb: 123,
+    237,
+    159;
+  --background-primary: #202020;
+  --background-primary-alt: #282828;
+  --background-secondary: #303030;
+  --background-secondary-alt: #383838;
+  --blockquote-background-color: rgb(158, 158, 158, 0.10);
+  --blockquote-border-color: hsl(46deg, 95%, 65%);
+  --blur-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-bug: 255,
+    107,
+    129;
+  --callout-default: 83,
+    82,
+    237;
+  --callout-error: 255,
+    107,
+    129;
+  --callout-example: 168,
+    130,
+    255;
+  --callout-fail: 255,
+    107,
+    129;
+  --callout-important: 112,
+    161,
+    255;
+  --callout-info: 83,
+    82,
+    237;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 255,
+    127,
+    80;
+  --callout-radius: 8px;
+  --callout-success: 123,
+    237,
+    159;
+  --callout-summary: 112,
+    161,
+    255;
+  --callout-tip: 112,
+    161,
+    255;
+  --callout-title-weight: 600;
+  --callout-todo: 83,
+    82,
+    237;
+  --callout-warning: 255,
+    127,
+    80;
+  --canvas-background: #202020;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 4px;
+  --canvas-dot-pattern: #404040;
+  --caret-color: #ffffff;
+  --checkbox-border-color: #707070;
+  --checkbox-border-color-hover: #a0a0a0;
+  --checkbox-color: hsl(46deg, 95%, 65%);
+  --checkbox-color-hover: hsl(46deg, 95%, 61.2%);
+  --checkbox-marker-color: #202020;
+  --checkbox-radius: 4px;
+  --checkbox-size: 16px;
+  --checklist-done-color: #a0a0a0;
+  --clickable-icon-radius: 4px;
+  --code-background: #282828;
+  --code-border-color: #404040;
+  --code-bracket-background: rgba(255, 255, 255, 0.075);
+  --code-comment: #707070;
+  --code-function: hsl(46deg, 95%, 65%);
+  --code-important: #ff7f50;
+  --code-keyword: #fa99cd;
+  --code-normal: #ffffff;
+  --code-operator: #ff6b81;
+  --code-property: #70a1ff;
+  --code-punctuation: #a0a0a0;
+  --code-radius: 4px;
+  --code-size: 0.875em;
+  --code-string: #7bed9f;
+  --code-tag: #ff6b81;
+  --code-value: #a882ff;
+  --collapse-icon-color: #707070;
+  --collapse-icon-color-collapsed: hsl(46deg, 95%, 61.2%);
+  --color-accent: hsl(46deg, 95%, 65%);
+  --color-accent-1: hsl(46deg, 95%, 61.2%);
+  --color-accent-2: hsl(46deg, 95%, 68.8%);
+  --color-accent-hsl: 46deg,
+    95%,
+    65%;
+  --divider-color: #404040;
+  --divider-color-hover: hsl(46deg, 95%, 65%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #404040;
+  --dropdown-background-hover: #484848;
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #404040;
+  --flair-color: #ffffff;
+  --font-default: "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-interface: "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-mermaid: "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-monospace: "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-print: '??', "??", "??", 'Arial';
+  --font-text: "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-weight: var(--h5-weight, 620);
+  --graph-line: #484848;
+  --graph-node: #a0a0a0;
+  --graph-node-attachment: hsl(46deg, 95%, 65%);
+  --graph-node-focused: hsl(46deg, 95%, 61.2%);
+  --graph-node-tag: #7bed9f;
+  --graph-node-unresolved: #707070;
+  --graph-text: #ffffff;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #707070;
+  --heading-spacing: 2.5rem;
+  --hr-color: #404040;
+  --interactive-accent: hsl(46deg, 95%, 65%);
+  --interactive-accent-hover: hsl(46deg, 95%, 61.2%);
+  --interactive-accent-hsl: 46deg,
+    95%,
+    65%;
+  --interactive-hover: #484848;
+  --interactive-normal: #404040;
+  --link-color: hsl(46deg, 95%, 61.2%);
+  --link-color-hover: hsl(46deg, 95%, 68.8%);
+  --link-external-color: hsl(46deg, 95%, 61.2%);
+  --link-external-color-hover: hsl(46deg, 95%, 68.8%);
+  --link-unresolved-color: hsl(46deg, 95%, 61.2%);
+  --link-unresolved-decoration-color: hsla(46deg,
+    95%,
+    65%, 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --lt-file-icon-color: #707070;
+  --menu-background: #303030;
+  --menu-border-color: #707070;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
+    0px 15px 30px rgba(0, 0, 0, 0.15);
+  --pdf-background: #202020;
+  --pdf-page-background: #202020;
+  --pdf-shadow: 0 0 0 1px #404040;
+  --pdf-sidebar-background: #202020;
+  --pdf-thumbnail-shadow: 0 0 0 1px #404040;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: #a0a0a0;
+  --search-icon-color: #a0a0a0;
+  --search-result-background: #202020;
+  --setting-group-heading-color: #ffffff;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #282828;
+  --setting-items-border-color: #404040;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: #a0a0a0;
+  --shiki-code-background: #282828;
+  --shiki-code-block-border-radius: 4px;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #707070;
+  --shiki-code-function: #7bed9f;
+  --shiki-code-important: #ff7f50;
+  --shiki-code-keyword: #fa99cd;
+  --shiki-code-normal: #a0a0a0;
+  --shiki-code-property: #70a1ff;
+  --shiki-code-punctuation: #a0a0a0;
+  --shiki-code-string: hsl(46deg, 95%, 65%);
+  --shiki-code-value: #a882ff;
+  --shiki-gutter-border-color: #404040;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #707070;
+  --shiki-gutter-text-color-highlight: #a0a0a0;
+  --shiki-highlight-green: rgba(123, 237, 159, 0.5);
+  --shiki-highlight-green-background: rgba(123, 237, 159, 0.1);
+  --shiki-highlight-neutral: #a0a0a0;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
+  --shiki-highlight-red: rgba(255, 107, 129, 0.5);
+  --shiki-highlight-red-background: rgba(255, 107, 129, 0.1);
+  --shiki-terminal-dots-color: #707070;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #202020;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --sync-avatar-color-1: #ff6b81;
+  --sync-avatar-color-2: #ff7f50;
+  --sync-avatar-color-3: hsl(46deg, 95%, 65%);
+  --sync-avatar-color-4: #7bed9f;
+  --sync-avatar-color-5: #70a1ff;
+  --sync-avatar-color-6: #5352ed;
+  --sync-avatar-color-7: #a882ff;
+  --sync-avatar-color-8: #fa99cd;
+  --tab-background-active: #202020;
+  --tab-divider-color: transparent;
+  --tab-font-size: 13px;
+  --tab-outline-color: #404040;
+  --tab-radius: 4px;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #303030;
+  --tab-switcher-menubar-background: linear-gradient(to top, #303030, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(46deg, 95%, 65%);
+  --tab-text-color: #707070;
+  --tab-text-color-active: #a0a0a0;
+  --tab-text-color-focused: #a0a0a0;
+  --tab-text-color-focused-active: #a0a0a0;
+  --tab-text-color-focused-active-current: hsl(46deg, 95%, 61.2%);
+  --tab-text-color-focused-highlighted: hsl(46deg, 95%, 61.2%);
+  --table-add-button-border-color: #404040;
+  --table-add-button-border-width: 1px;
+  --table-border-color: #404040;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(46deg, 95%, 65%);
+  --table-drag-handle-color: #707070;
+  --table-drag-handle-color-active: #202020;
+  --table-header-background: transparent;
+  --table-header-border-color: #404040;
+  --table-header-border-width: 1px;
+  --table-header-color: #ffffff;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(46deg,
+    95%,
+    65%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(46deg, 95%, 65%);
+  --table-selection-border-radius: 8px;
+  --table-text-size: 16px;
+  --tag-background: hsla(46deg,
+    95%,
+    65%, 0.1);
+  --tag-background-hover: hsla(46deg,
+    95%,
+    65%, 0.2);
+  --tag-border-color: hsla(46deg,
+    95%,
+    65%, 0.15);
+  --tag-border-color-hover: hsla(46deg,
+    95%,
+    65%, 0.15);
+  --tag-color: hsl(46deg, 95%, 61.2%);
+  --tag-color-hover: hsl(46deg, 95%, 61.2%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(46deg, 95%, 61.2%);
+  --text-accent-hover: hsl(46deg, 95%, 68.8%);
+  --text-error: #ff6b81;
+  --text-faint: #707070;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #a0a0a0;
+  --text-normal: #ffffff;
+  --text-on-accent: #202020;
+  --text-selection: rgba(255, 255, 255, 0.2);
+  --text-success: #7bed9f;
+  --text-warning: #ff7f50;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(112, 112, 112);
   border-bottom-left-radius: 0px;
@@ -802,17 +2452,17 @@ html body h5 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(112, 112, 112);
+  color: var(--h5-color, rgb(112, 112, 112));
   content: "# ";
-  font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
-  font-size: 17.216px;
-  font-weight: 620;
-  letter-spacing: -0.034432px;
-  line-height: 25.824px;
+  font-family: var(--h5-font, "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
+  font-size: var(--h5-size, 17.216px);
+  font-weight: var(--font-weight, 620);
+  letter-spacing: var(--h5-letter-spacing, -0.034432px);
+  line-height: var(--h5-line-height, 25.824px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-top: 0px;
+  margin-top: var(--heading-spacing, 0px);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -820,7 +2470,359 @@ html body h5 {
 }
 
 html body h6 {
-  --font-weight: 600;
+  --background-modifier-active-hover: hsla(46deg,
+    95%,
+    65%, 0.15);
+  --background-modifier-border: #404040;
+  --background-modifier-border-focus: #707070;
+  --background-modifier-border-hover: #707070;
+  --background-modifier-error: #ff6b81;
+  --background-modifier-error-hover: #ff6b81;
+  --background-modifier-error-rgb: 255,
+    107,
+    129;
+  --background-modifier-form-field: #383838;
+  --background-modifier-form-field-hover: #383838;
+  --background-modifier-hover: rgba(255, 255, 255, 0.075);
+  --background-modifier-success: #7bed9f;
+  --background-modifier-success-rgb: 123,
+    237,
+    159;
+  --background-primary: #202020;
+  --background-primary-alt: #282828;
+  --background-secondary: #303030;
+  --background-secondary-alt: #383838;
+  --blockquote-background-color: rgb(158, 158, 158, 0.10);
+  --blockquote-border-color: hsl(46deg, 95%, 65%);
+  --blur-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent));
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
+  --bold-weight: 600;
+  --button-corner-shape: round;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-bug: 255,
+    107,
+    129;
+  --callout-default: 83,
+    82,
+    237;
+  --callout-error: 255,
+    107,
+    129;
+  --callout-example: 168,
+    130,
+    255;
+  --callout-fail: 255,
+    107,
+    129;
+  --callout-important: 112,
+    161,
+    255;
+  --callout-info: 83,
+    82,
+    237;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 255,
+    127,
+    80;
+  --callout-radius: 8px;
+  --callout-success: 123,
+    237,
+    159;
+  --callout-summary: 112,
+    161,
+    255;
+  --callout-tip: 112,
+    161,
+    255;
+  --callout-title-weight: 600;
+  --callout-todo: 83,
+    82,
+    237;
+  --callout-warning: 255,
+    127,
+    80;
+  --canvas-background: #202020;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
+  --canvas-controls-radius: 4px;
+  --canvas-dot-pattern: #404040;
+  --caret-color: #ffffff;
+  --checkbox-border-color: #707070;
+  --checkbox-border-color-hover: #a0a0a0;
+  --checkbox-color: hsl(46deg, 95%, 65%);
+  --checkbox-color-hover: hsl(46deg, 95%, 61.2%);
+  --checkbox-marker-color: #202020;
+  --checkbox-radius: 4px;
+  --checkbox-size: 16px;
+  --checklist-done-color: #a0a0a0;
+  --clickable-icon-radius: 4px;
+  --code-background: #282828;
+  --code-border-color: #404040;
+  --code-bracket-background: rgba(255, 255, 255, 0.075);
+  --code-comment: #707070;
+  --code-function: hsl(46deg, 95%, 65%);
+  --code-important: #ff7f50;
+  --code-keyword: #fa99cd;
+  --code-normal: #ffffff;
+  --code-operator: #ff6b81;
+  --code-property: #70a1ff;
+  --code-punctuation: #a0a0a0;
+  --code-radius: 4px;
+  --code-size: 0.875em;
+  --code-string: #7bed9f;
+  --code-tag: #ff6b81;
+  --code-value: #a882ff;
+  --collapse-icon-color: #707070;
+  --collapse-icon-color-collapsed: hsl(46deg, 95%, 61.2%);
+  --color-accent: hsl(46deg, 95%, 65%);
+  --color-accent-1: hsl(46deg, 95%, 61.2%);
+  --color-accent-2: hsl(46deg, 95%, 68.8%);
+  --color-accent-hsl: 46deg,
+    95%,
+    65%;
+  --divider-color: #404040;
+  --divider-color-hover: hsl(46deg, 95%, 65%);
+  --divider-vertical-height: 100%;
+  --dropdown-background: #404040;
+  --dropdown-background-hover: #484848;
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --flair-background: #404040;
+  --flair-color: #ffffff;
+  --font-default: "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-interface: "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-mermaid: "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-monospace: "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-print: '??', "??", "??", 'Arial';
+  --font-text: "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    "??",
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
+  --font-weight: var(--h6-weight, 600);
+  --graph-line: #484848;
+  --graph-node: #a0a0a0;
+  --graph-node-attachment: hsl(46deg, 95%, 65%);
+  --graph-node-focused: hsl(46deg, 95%, 61.2%);
+  --graph-node-tag: #7bed9f;
+  --graph-node-unresolved: #707070;
+  --graph-text: #ffffff;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: #707070;
+  --heading-spacing: 2.5rem;
+  --hr-color: #404040;
+  --interactive-accent: hsl(46deg, 95%, 65%);
+  --interactive-accent-hover: hsl(46deg, 95%, 61.2%);
+  --interactive-accent-hsl: 46deg,
+    95%,
+    65%;
+  --interactive-hover: #484848;
+  --interactive-normal: #404040;
+  --link-color: hsl(46deg, 95%, 61.2%);
+  --link-color-hover: hsl(46deg, 95%, 68.8%);
+  --link-external-color: hsl(46deg, 95%, 61.2%);
+  --link-external-color-hover: hsl(46deg, 95%, 68.8%);
+  --link-unresolved-color: hsl(46deg, 95%, 61.2%);
+  --link-unresolved-decoration-color: hsla(46deg,
+    95%,
+    65%, 0.3);
+  --link-weight: 400;
+  --list-indent: 2.25em;
+  --lt-file-icon-color: #707070;
+  --menu-background: #303030;
+  --menu-border-color: #707070;
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
+    0px 15px 30px rgba(0, 0, 0, 0.15);
+  --pdf-background: #202020;
+  --pdf-page-background: #202020;
+  --pdf-shadow: 0 0 0 1px #404040;
+  --pdf-sidebar-background: #202020;
+  --pdf-thumbnail-shadow: 0 0 0 1px #404040;
+  --popover-font-size: 16px;
+  --raised-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent));
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: #a0a0a0;
+  --search-icon-color: #a0a0a0;
+  --search-result-background: #202020;
+  --setting-group-heading-color: #ffffff;
+  --setting-group-heading-size: 15px;
+  --setting-group-heading-weight: 600;
+  --setting-items-background: #282828;
+  --setting-items-border-color: #404040;
+  --setting-items-padding: 20px;
+  --setting-items-radius: 12px;
+  --shiki-active-tab-border-color: #a0a0a0;
+  --shiki-code-background: #282828;
+  --shiki-code-block-border-radius: 4px;
+  --shiki-code-block-spacing: 1rem;
+  --shiki-code-comment: #707070;
+  --shiki-code-function: #7bed9f;
+  --shiki-code-important: #ff7f50;
+  --shiki-code-keyword: #fa99cd;
+  --shiki-code-normal: #a0a0a0;
+  --shiki-code-property: #70a1ff;
+  --shiki-code-punctuation: #a0a0a0;
+  --shiki-code-string: hsl(46deg, 95%, 65%);
+  --shiki-code-value: #a882ff;
+  --shiki-gutter-border-color: #404040;
+  --shiki-gutter-border-width: 1px;
+  --shiki-gutter-text-color: #707070;
+  --shiki-gutter-text-color-highlight: #a0a0a0;
+  --shiki-highlight-green: rgba(123, 237, 159, 0.5);
+  --shiki-highlight-green-background: rgba(123, 237, 159, 0.1);
+  --shiki-highlight-neutral: #a0a0a0;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
+  --shiki-highlight-red: rgba(255, 107, 129, 0.5);
+  --shiki-highlight-red-background: rgba(255, 107, 129, 0.1);
+  --shiki-terminal-dots-color: #707070;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
+  --suggestion-background: #202020;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --sync-avatar-color-1: #ff6b81;
+  --sync-avatar-color-2: #ff7f50;
+  --sync-avatar-color-3: hsl(46deg, 95%, 65%);
+  --sync-avatar-color-4: #7bed9f;
+  --sync-avatar-color-5: #70a1ff;
+  --sync-avatar-color-6: #5352ed;
+  --sync-avatar-color-7: #a882ff;
+  --sync-avatar-color-8: #fa99cd;
+  --tab-background-active: #202020;
+  --tab-divider-color: transparent;
+  --tab-font-size: 13px;
+  --tab-outline-color: #404040;
+  --tab-radius: 4px;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-header-width: 40px;
+  --tab-switcher-background: #303030;
+  --tab-switcher-menubar-background: linear-gradient(to top, #303030, transparent);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(46deg, 95%, 65%);
+  --tab-text-color: #707070;
+  --tab-text-color-active: #a0a0a0;
+  --tab-text-color-focused: #a0a0a0;
+  --tab-text-color-focused-active: #a0a0a0;
+  --tab-text-color-focused-active-current: hsl(46deg, 95%, 61.2%);
+  --tab-text-color-focused-highlighted: hsl(46deg, 95%, 61.2%);
+  --table-add-button-border-color: #404040;
+  --table-add-button-border-width: 1px;
+  --table-border-color: #404040;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-drag-handle-background-active: hsl(46deg, 95%, 65%);
+  --table-drag-handle-color: #707070;
+  --table-drag-handle-color-active: #202020;
+  --table-header-background: transparent;
+  --table-header-border-color: #404040;
+  --table-header-border-width: 1px;
+  --table-header-color: #ffffff;
+  --table-header-size: 16px;
+  --table-header-weight: 600;
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(46deg,
+    95%,
+    65%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(46deg, 95%, 65%);
+  --table-selection-border-radius: 8px;
+  --table-text-size: 16px;
+  --tag-background: hsla(46deg,
+    95%,
+    65%, 0.1);
+  --tag-background-hover: hsla(46deg,
+    95%,
+    65%, 0.2);
+  --tag-border-color: hsla(46deg,
+    95%,
+    65%, 0.15);
+  --tag-border-color-hover: hsla(46deg,
+    95%,
+    65%, 0.15);
+  --tag-color: hsl(46deg, 95%, 61.2%);
+  --tag-color-hover: hsl(46deg, 95%, 61.2%);
+  --tag-size: 0.875em;
+  --text-accent: hsl(46deg, 95%, 61.2%);
+  --text-accent-hover: hsl(46deg, 95%, 68.8%);
+  --text-error: #ff6b81;
+  --text-faint: #707070;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #a0a0a0;
+  --text-normal: #ffffff;
+  --text-on-accent: #202020;
+  --text-selection: rgba(255, 255, 255, 0.2);
+  --text-success: #7bed9f;
+  --text-warning: #ff7f50;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
+  --traffic-lights-offset-x: 40px;
+  --traffic-lights-offset-y: 40px;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(112, 112, 112);
   border-bottom-left-radius: 0px;
@@ -834,11 +2836,12 @@ html body h6 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  color: rgb(112, 112, 112);
+  color: var(--h6-color, rgb(112, 112, 112));
   content: "# ";
-  font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
-  font-weight: 600;
-  line-height: 24px;
+  font-family: var(--h6-font, "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
+  font-size: var(--h6-size, 16px);
+  font-weight: var(--font-weight, 600);
+  line-height: var(--h6-line-height, 24px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -854,36 +2857,36 @@ html body li.task-list-item input[type="checkbox"] {
 }
 
 html body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(251, 211, 81);
+  background-color: var(--checkbox-color, rgb(251, 211, 81));
   border-color: rgb(251, 211, 81);
 }
 
 html body p {
-  color: rgb(160, 160, 160);
+  color: var(--text-muted, rgb(160, 160, 160));
   font-family: "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   outline: rgb(160, 160, 160) none 0px;
   text-decoration-color: rgb(160, 160, 160);
 }`,
     links: `html body a.external-link, html footer a {
-  color: rgb(250, 206, 62);
+  color: var(--link-external-color, rgb(250, 206, 62));
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   outline: rgb(250, 206, 62) none 0px;
   text-decoration-color: rgb(250, 206, 62);
 }
 
 html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(250, 206, 62);
+  color: var(--link-color, rgb(250, 206, 62));
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   outline: rgb(250, 206, 62) none 0px;
   text-decoration-color: rgb(250, 206, 62);
 }
 
 html body a.internal-link.broken {
-  color: rgb(250, 206, 62);
+  color: var(--link-unresolved-color, rgb(250, 206, 62));
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   outline: rgb(250, 206, 62) none 0px;
   text-decoration: underline rgba(251, 211, 81, 0.3);
-  text-decoration-color: rgba(251, 211, 81, 0.3);
+  text-decoration-color: var(--link-unresolved-decoration-color, rgba(251, 211, 81, 0.3));
 }`,
     lists: `html body dd {
   color: rgb(255, 255, 255);
@@ -908,11 +2911,11 @@ html body ul.overflow {
   border-top-color: rgb(255, 255, 255);
 }`,
     blockquotes: `html body .data-footnote-backref {
-  color: rgb(112, 112, 112);
+  color: var(--text-faint, rgb(112, 112, 112));
 }
 
 html body blockquote {
-  background-color: rgba(158, 158, 158, 0.1);
+  background-color: var(--blockquote-background-color, rgba(158, 158, 158, 0.1));
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   padding-bottom: 12px;
   padding-top: 12px;
@@ -935,15 +2938,16 @@ html body table {
 }
 
 html body td {
+  background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: rgb(255, 255, 255);
   border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
   border-top-width: 0px;
-  color: rgb(255, 255, 255);
+  color: var(--table-text-color, rgb(255, 255, 255));
   padding-bottom: 8px;
   padding-left: 16px;
   padding-right: 16px;
@@ -954,13 +2958,13 @@ html body th {
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: rgb(255, 255, 255);
   border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
   border-top-left-radius: 8px;
-  border-top-width: 0px;
-  color: rgb(255, 255, 255);
+  border-top-width: var(--table-header-border-width, 0px);
+  color: var(--table-header-color, rgb(255, 255, 255));
   padding-bottom: 8px;
   padding-left: 16px;
   padding-right: 16px;
@@ -973,17 +2977,17 @@ html body tr {
   border-bottom-width: 1px;
 }`,
     code: `html body code {
-  background-color: rgb(40, 40, 40);
+  background-color: var(--code-background, rgb(40, 40, 40));
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
-  color: rgb(255, 255, 255);
-  font-family: "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
+  color: var(--code-normal, rgb(255, 255, 255));
+  font-family: var(--font-monospace, "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
 }
 
 html body pre:has(> code) {
-  background-color: rgb(40, 40, 40);
+  background-color: var(--code-background, rgb(40, 40, 40));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
@@ -1026,7 +3030,7 @@ html body video {
   border-top-color: rgb(255, 255, 255);
 }`,
     embeds: `html body .file-embed {
-  background-color: rgb(40, 40, 40);
+  background-color: var(--background-primary-alt, rgb(40, 40, 40));
   border-bottom-color: rgb(160, 160, 160);
   border-left-color: rgb(160, 160, 160);
   border-right-color: rgb(160, 160, 160);
@@ -1627,7 +3631,6 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
   border-top-color: rgb(83, 82, 237);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: rgb(83, 82, 237);
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 12px;
@@ -1635,7 +3638,7 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
 }
 
 html body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(83, 82, 237);
+  color: var(--callout-title-color, rgb(83, 82, 237));
 }
 
 html body .callout > .callout-content {
@@ -1647,11 +3650,10 @@ html body .callout > .callout-content {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 112,
+  --callout-color: var(--callout-summary, 112,
     161,
-    255;
+    255);
   background: rgba(112, 161, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(112, 161, 255, 0.1);
   border-bottom-color: rgba(112, 161, 255, 0.25);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1677,7 +3679,6 @@ html body .callout[data-callout="abstract"] .callout-title {
   border-top-color: rgb(83, 82, 237);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: rgb(83, 82, 237);
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 12px;
@@ -1685,7 +3686,7 @@ html body .callout[data-callout="abstract"] .callout-title {
 }
 
 html body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(83, 82, 237);
+  color: var(--callout-title-color, rgb(83, 82, 237));
 }
 
 html body .callout[data-callout="abstract"] > .callout-content {
@@ -1697,11 +3698,10 @@ html body .callout[data-callout="abstract"] > .callout-content {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 255,
+  --callout-color: var(--callout-bug, 255,
     107,
-    129;
+    129);
   background: rgba(255, 107, 129, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(255, 107, 129, 0.1);
   border-bottom-color: rgba(255, 107, 129, 0.25);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1727,7 +3727,6 @@ html body .callout[data-callout="bug"] .callout-title {
   border-top-color: rgb(83, 82, 237);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: rgb(83, 82, 237);
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 12px;
@@ -1735,7 +3734,7 @@ html body .callout[data-callout="bug"] .callout-title {
 }
 
 html body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(83, 82, 237);
+  color: var(--callout-title-color, rgb(83, 82, 237));
 }
 
 html body .callout[data-callout="bug"] > .callout-content {
@@ -1747,11 +3746,10 @@ html body .callout[data-callout="bug"] > .callout-content {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 255,
+  --callout-color: var(--callout-error, 255,
     107,
-    129;
+    129);
   background: rgba(255, 107, 129, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(255, 107, 129, 0.1);
   border-bottom-color: rgba(255, 107, 129, 0.25);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1777,7 +3775,6 @@ html body .callout[data-callout="danger"] .callout-title {
   border-top-color: rgb(83, 82, 237);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: rgb(83, 82, 237);
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 12px;
@@ -1785,7 +3782,7 @@ html body .callout[data-callout="danger"] .callout-title {
 }
 
 html body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(83, 82, 237);
+  color: var(--callout-title-color, rgb(83, 82, 237));
 }
 
 html body .callout[data-callout="danger"] > .callout-content {
@@ -1797,9 +3794,9 @@ html body .callout[data-callout="danger"] > .callout-content {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168,
+  --callout-color: var(--callout-example, 168,
     130,
-    255;
+    255);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -1821,7 +3818,6 @@ html body .callout[data-callout="example"] .callout-title {
   border-top-color: rgb(83, 82, 237);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: rgb(83, 82, 237);
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 12px;
@@ -1829,7 +3825,7 @@ html body .callout[data-callout="example"] .callout-title {
 }
 
 html body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(83, 82, 237);
+  color: var(--callout-title-color, rgb(83, 82, 237));
 }
 
 html body .callout[data-callout="example"] > .callout-content {
@@ -1841,11 +3837,10 @@ html body .callout[data-callout="example"] > .callout-content {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 255,
+  --callout-color: var(--callout-fail, 255,
     107,
-    129;
+    129);
   background: rgba(255, 107, 129, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(255, 107, 129, 0.1);
   border-bottom-color: rgba(255, 107, 129, 0.25);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1871,7 +3866,6 @@ html body .callout[data-callout="failure"] .callout-title {
   border-top-color: rgb(83, 82, 237);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: rgb(83, 82, 237);
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 12px;
@@ -1879,7 +3873,7 @@ html body .callout[data-callout="failure"] .callout-title {
 }
 
 html body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(83, 82, 237);
+  color: var(--callout-title-color, rgb(83, 82, 237));
 }
 
 html body .callout[data-callout="failure"] > .callout-content {
@@ -1891,11 +3885,10 @@ html body .callout[data-callout="failure"] > .callout-content {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 83,
+  --callout-color: var(--callout-info, 83,
     82,
-    237;
+    237);
   background: rgba(83, 82, 237, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(83, 82, 237, 0.1);
   border-bottom-color: rgba(83, 82, 237, 0.25);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1921,7 +3914,6 @@ html body .callout[data-callout="info"] .callout-title {
   border-top-color: rgb(83, 82, 237);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: rgb(83, 82, 237);
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 12px;
@@ -1929,7 +3921,7 @@ html body .callout[data-callout="info"] .callout-title {
 }
 
 html body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(83, 82, 237);
+  color: var(--callout-title-color, rgb(83, 82, 237));
 }
 
 html body .callout[data-callout="info"] > .callout-content {
@@ -1941,11 +3933,10 @@ html body .callout[data-callout="info"] > .callout-content {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 83,
+  --callout-color: var(--callout-default, 83,
     82,
-    237;
+    237);
   background: rgba(83, 82, 237, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(83, 82, 237, 0.1);
   border-bottom-color: rgba(83, 82, 237, 0.25);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1971,7 +3962,6 @@ html body .callout[data-callout="note"] .callout-title {
   border-top-color: rgb(83, 82, 237);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: rgb(83, 82, 237);
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 12px;
@@ -1979,7 +3969,7 @@ html body .callout[data-callout="note"] .callout-title {
 }
 
 html body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(83, 82, 237);
+  color: var(--callout-title-color, rgb(83, 82, 237));
 }
 
 html body .callout[data-callout="note"] > .callout-content {
@@ -1991,11 +3981,10 @@ html body .callout[data-callout="note"] > .callout-content {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 255,
+  --callout-color: var(--callout-question, 255,
     127,
-    80;
+    80);
   background: rgba(255, 127, 80, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(255, 127, 80, 0.1);
   border-bottom-color: rgba(255, 127, 80, 0.25);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -2021,7 +4010,6 @@ html body .callout[data-callout="question"] .callout-title {
   border-top-color: rgb(83, 82, 237);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: rgb(83, 82, 237);
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 12px;
@@ -2029,7 +4017,7 @@ html body .callout[data-callout="question"] .callout-title {
 }
 
 html body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(83, 82, 237);
+  color: var(--callout-title-color, rgb(83, 82, 237));
 }
 
 html body .callout[data-callout="question"] > .callout-content {
@@ -2041,7 +4029,7 @@ html body .callout[data-callout="question"] > .callout-content {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -2063,7 +4051,6 @@ html body .callout[data-callout="quote"] .callout-title {
   border-top-color: rgb(83, 82, 237);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: rgb(83, 82, 237);
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 12px;
@@ -2071,7 +4058,7 @@ html body .callout[data-callout="quote"] .callout-title {
 }
 
 html body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(83, 82, 237);
+  color: var(--callout-title-color, rgb(83, 82, 237));
 }
 
 html body .callout[data-callout="quote"] > .callout-content {
@@ -2083,11 +4070,10 @@ html body .callout[data-callout="quote"] > .callout-content {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 123,
+  --callout-color: var(--callout-success, 123,
     237,
-    159;
+    159);
   background: rgba(123, 237, 159, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(123, 237, 159, 0.1);
   border-bottom-color: rgba(123, 237, 159, 0.25);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -2113,7 +4099,6 @@ html body .callout[data-callout="success"] .callout-title {
   border-top-color: rgb(83, 82, 237);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: rgb(83, 82, 237);
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 12px;
@@ -2121,7 +4106,7 @@ html body .callout[data-callout="success"] .callout-title {
 }
 
 html body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(83, 82, 237);
+  color: var(--callout-title-color, rgb(83, 82, 237));
 }
 
 html body .callout[data-callout="success"] > .callout-content {
@@ -2133,11 +4118,10 @@ html body .callout[data-callout="success"] > .callout-content {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 112,
+  --callout-color: var(--callout-tip, 112,
     161,
-    255;
+    255);
   background: rgba(112, 161, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(112, 161, 255, 0.1);
   border-bottom-color: rgba(112, 161, 255, 0.25);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -2163,7 +4147,6 @@ html body .callout[data-callout="tip"] .callout-title {
   border-top-color: rgb(83, 82, 237);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: rgb(83, 82, 237);
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 12px;
@@ -2171,7 +4154,7 @@ html body .callout[data-callout="tip"] .callout-title {
 }
 
 html body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(83, 82, 237);
+  color: var(--callout-title-color, rgb(83, 82, 237));
 }
 
 html body .callout[data-callout="tip"] > .callout-content {
@@ -2183,11 +4166,10 @@ html body .callout[data-callout="tip"] > .callout-content {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 83,
+  --callout-color: var(--callout-todo, 83,
     82,
-    237;
+    237);
   background: rgba(83, 82, 237, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(83, 82, 237, 0.1);
   border-bottom-color: rgba(83, 82, 237, 0.25);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -2213,7 +4195,6 @@ html body .callout[data-callout="todo"] .callout-title {
   border-top-color: rgb(83, 82, 237);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: rgb(83, 82, 237);
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 12px;
@@ -2221,7 +4202,7 @@ html body .callout[data-callout="todo"] .callout-title {
 }
 
 html body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(83, 82, 237);
+  color: var(--callout-title-color, rgb(83, 82, 237));
 }
 
 html body .callout[data-callout="todo"] > .callout-content {
@@ -2233,11 +4214,10 @@ html body .callout[data-callout="todo"] > .callout-content {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 255,
+  --callout-color: var(--callout-warning, 255,
     127,
-    80;
+    80);
   background: rgba(255, 127, 80, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(255, 127, 80, 0.1);
   border-bottom-color: rgba(255, 127, 80, 0.25);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -2263,7 +4243,6 @@ html body .callout[data-callout="warning"] .callout-title {
   border-top-color: rgb(83, 82, 237);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: rgb(83, 82, 237);
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 12px;
@@ -2271,7 +4250,7 @@ html body .callout[data-callout="warning"] .callout-title {
 }
 
 html body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(83, 82, 237);
+  color: var(--callout-title-color, rgb(83, 82, 237));
 }
 
 html body .callout[data-callout="warning"] > .callout-content {
@@ -2347,12 +4326,12 @@ html body .callout[data-callout="warning"] {
   border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
   border-top-width: 0px;
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
   font-family: "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
 }
 
 html body .search > .search-container > .search-space {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--prompt-background, rgb(32, 32, 32));
   border-bottom-color: rgb(80, 80, 80);
   border-bottom-width: 0px;
   border-left-color: rgb(80, 80, 80);
@@ -2361,7 +4340,7 @@ html body .search > .search-container > .search-space {
   border-right-width: 0px;
   border-top-color: rgb(80, 80, 80);
   border-top-width: 0px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.1) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.15) 0px 30px 90px 0px;
+  box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.05) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.1) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.15) 0px 30px 90px 0px);
 }
 
 html body .search > .search-container > .search-space > * {
@@ -2372,7 +4351,7 @@ html body .search > .search-container > .search-space > * {
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container {
-  color: rgb(250, 206, 62);
+  color: var(--text-accent, rgb(250, 206, 62));
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
@@ -2383,12 +4362,12 @@ html body .search > .search-container > .search-space > .search-layout > .result
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-description {
-  color: rgb(250, 206, 62);
+  color: var(--text-accent, rgb(250, 206, 62));
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
-  background-color: rgba(255, 255, 255, 0.075);
-  color: rgb(250, 206, 62);
+  background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.075));
+  color: var(--text-accent, rgb(250, 206, 62));
 }
 
 html body .search > .search-container > .search-space > .search-layout, html .search > .search-container > .search-space > .search-layout.display-results {
@@ -2403,7 +4382,7 @@ html body .search > .search-container > .search-space > .search-layout, html .se
 }
 
 html body .search > .search-container > .search-space > input {
-  background-color: rgb(48, 48, 48);
+  background-color: var(--background-secondary, rgb(48, 48, 48));
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -2416,21 +4395,21 @@ html body .search > .search-container > .search-space > input {
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
-  background-color: rgba(255, 255, 255, 0.075);
+  background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.075));
   border-bottom-color: rgb(250, 206, 62);
   border-left-color: rgb(250, 206, 62);
   border-right-color: rgb(250, 206, 62);
   border-top-color: rgb(250, 206, 62);
-  color: rgb(250, 206, 62);
+  color: var(--text-accent, rgb(250, 206, 62));
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
-  background-color: rgba(255, 255, 255, 0.075);
-  color: rgb(250, 206, 62);
+  background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.075));
+  color: var(--text-accent, rgb(250, 206, 62));
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(251, 211, 81, 0.1);
+  background-color: var(--pill-background, rgba(251, 211, 81, 0.1));
   border-bottom-color: rgba(251, 211, 81, 0.15);
   border-left-color: rgba(251, 211, 81, 0.15);
   border-right-color: rgba(251, 211, 81, 0.15);
@@ -2443,42 +4422,42 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
+  color: var(--h1-color, rgb(255, 255, 255));
+  font-family: var(--h1-font, "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
 }
 
 html body h1.article-title {
-  color: rgb(255, 255, 255);
+  color: var(--inline-title-color, rgb(255, 255, 255));
 }
 
 html body h2 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
+  color: var(--h2-color, rgb(255, 255, 255));
+  font-family: var(--h2-font, "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
 }
 
 html body h2.page-title, html h2.page-title a {
-  color: rgb(255, 255, 255);
-  font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
+  color: var(--inline-title-color, rgb(255, 255, 255));
+  font-family: var(--inline-title-font, "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
 }
 
 html body h3 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
+  color: var(--h3-color, rgb(255, 255, 255));
+  font-family: var(--h3-font, "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
 }
 
 html body h4 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
+  color: var(--h4-color, rgb(255, 255, 255));
+  font-family: var(--h4-font, "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
 }
 
 html body h5 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
+  color: var(--h5-color, rgb(255, 255, 255));
+  font-family: var(--h5-font, "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
 }
 
 html body h6 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
+  color: var(--h6-color, rgb(255, 255, 255));
+  font-family: var(--h6-font, "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
 }
 
 html body hr {
@@ -2488,9 +4467,9 @@ html body hr {
   border-right-width: 0px;
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 83,
+  --callout-color: var(--callout-default, 83,
     82,
-    237;
+    237);
   border-bottom-color: rgba(83, 82, 237, 0.25);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -2505,12 +4484,12 @@ html body hr {
   padding-top: 0px;
 }`,
     explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(160, 160, 160);
+  color: var(--nav-item-color, rgb(160, 160, 160));
   font-family: "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
 }
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(160, 160, 160);
+  color: var(--nav-item-color, rgb(160, 160, 160));
   font-family: "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
 }`,
     toc: `html body details.toc summary::marker {
@@ -2521,10 +4500,10 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-left-color: rgb(160, 160, 160);
   border-right-color: rgb(160, 160, 160);
   border-top-color: rgb(160, 160, 160);
-  color: rgb(160, 160, 160);
+  color: var(--icon-color, rgb(160, 160, 160));
 }`,
     footer: `html body footer {
-  background-color: rgb(56, 56, 56);
+  background-color: var(--status-bar-background, rgb(56, 56, 56));
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
   border-left-width: 0px;
@@ -2532,7 +4511,7 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-top-color: rgb(64, 64, 64);
   border-top-left-radius: 0px;
   border-top-width: 0px;
-  color: rgb(160, 160, 160);
+  color: var(--status-bar-text-color, rgb(160, 160, 160));
   font-family: "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
 }
 
@@ -2553,11 +4532,11 @@ html body .recent-notes > ul.recent-ul > li {
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(160, 160, 160);
+  color: var(--nav-item-color, rgb(160, 160, 160));
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
-  color: rgb(160, 160, 160);
+  color: var(--nav-item-color, rgb(160, 160, 160));
   font-family: "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
 }`,
     listPage: `html body li.section-li {
@@ -2568,12 +4547,12 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 }
 
 html body li.section-li > .section .meta {
-  color: rgb(160, 160, 160);
+  color: var(--nav-item-color, rgb(160, 160, 160));
   font-family: "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
 }
 
 html body li.section-li > .section > .desc > h3 > a {
-  color: rgb(160, 160, 160);
+  color: var(--nav-item-color, rgb(160, 160, 160));
 }
 
 html body ul.section-ul {
@@ -2587,7 +4566,7 @@ html body ul.section-ul {
   border-left-color: rgb(160, 160, 160);
   border-right-color: rgb(160, 160, 160);
   border-top-color: rgb(160, 160, 160);
-  color: rgb(160, 160, 160);
+  color: var(--icon-color, rgb(160, 160, 160));
 }
 
 html body .darkmode svg {
@@ -2603,7 +4582,7 @@ html body .darkmode svg {
 }
 
 html body .breadcrumb-element p {
-  color: rgb(112, 112, 112);
+  color: var(--text-faint, rgb(112, 112, 112));
   font-family: "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
 }`,
     canvas: `html body .canvas-node {
@@ -2615,7 +4594,7 @@ html body .canvas-node-content {
 }
 
 html body .canvas-node-file {
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
 }
 
 html body .canvas-node-group {
@@ -2623,20 +4602,20 @@ html body .canvas-node-group {
 }
 
 html body .canvas-sidebar {
-  background-color: rgb(48, 48, 48);
+  background-color: var(--background-secondary, rgb(48, 48, 48));
   border-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  box-shadow: var(--input-shadow, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
 }`,
     bases: `html body .bases-table thead th {
   border-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
+  color: var(--table-header-color, rgb(255, 255, 255));
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
-  color: rgb(160, 160, 160);
+  color: var(--text-muted, rgb(160, 160, 160));
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
 }
 
@@ -2662,8 +4641,8 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
-  background-color: rgba(251, 211, 81, 0.1);
-  color: rgb(250, 206, 62);
+  background-color: var(--pill-background, rgba(251, 211, 81, 0.1));
+  color: var(--pill-color, rgb(250, 206, 62));
 }
 
 html body .note-properties-value {
@@ -2671,8 +4650,8 @@ html body .note-properties-value {
 }
 
 html body div#quartz-root {
-  background-color: rgb(32, 32, 32);
-  color: rgb(255, 255, 255);
+  background-color: var(--background-primary, rgb(32, 32, 32));
+  color: var(--text-normal, rgb(255, 255, 255));
 }
 
 html body ol.overflow {
@@ -2682,12 +4661,12 @@ html body ol.overflow {
   border-top-color: rgb(255, 255, 255);
 }`,
     stacked: `html body .stacked-page {
-  background-color: rgb(48, 48, 48);
+  background-color: var(--background-secondary, rgb(48, 48, 48));
   border-color: rgb(255, 255, 255);
 }
 
 html body .stacked-page-header {
-  background-color: rgb(56, 56, 56);
+  background-color: var(--tab-container-background, rgb(56, 56, 56));
 }
 
 html body .stacked-page.active {
@@ -2702,11 +4681,11 @@ html body .stacked-page.active {
 }
 
 html body .navigation-progress {
-  background-color: rgb(56, 56, 56);
+  background-color: var(--status-bar-background, rgb(56, 56, 56));
 }
 
 html body .page-header h2.page-title {
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
   font-family: "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
 }
 
@@ -2726,18 +4705,18 @@ html body input[type=text] {
   border-left-color: rgb(160, 160, 160);
   border-right-color: rgb(160, 160, 160);
   border-top-color: rgb(160, 160, 160);
-  color: rgb(160, 160, 160);
+  color: var(--text-normal, rgb(160, 160, 160));
   font-family: "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
 }
 
 html body kbd {
-  background-color: rgb(40, 40, 40);
+  background-color: var(--code-background, rgb(40, 40, 40));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
-  font-family: "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
+  color: var(--code-normal, rgb(255, 255, 255));
+  font-family: var(--font-monospace, "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
 }
 
 html body progress {
@@ -2760,12 +4739,12 @@ html body sup {
 }
 
 html body ul.tags > li {
-  background-color: rgba(251, 211, 81, 0.1);
+  background-color: var(--tag-background, rgba(251, 211, 81, 0.1));
   border-bottom-color: rgba(251, 211, 81, 0.15);
   border-left-color: rgba(251, 211, 81, 0.15);
   border-right-color: rgba(251, 211, 81, 0.15);
   border-top-color: rgba(251, 211, 81, 0.15);
-  color: rgb(250, 206, 62);
+  color: var(--tag-color, rgb(250, 206, 62));
 }`,
   },
   light: {},

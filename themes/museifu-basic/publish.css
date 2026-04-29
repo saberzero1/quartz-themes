@@ -29,25 +29,27 @@ body.theme-light {
     185,
     78
   ) !important;
-  --background-primary: rgb(228, 228, 228) !important;
+  --background-primary: var(--color-base-00, rgb(228, 228, 228)) !important;
   --background-primary-alt: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 10%
+    var(--color-accent) 50%,
+    var(--dark-or-white-var) 10%
   ) !important;
-  --background-secondary: rgb(197, 197, 197) !important;
+  --background-secondary: var(--color-base-20, rgb(197, 197, 197)) !important;
   --background-secondary-alt: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 30%,
+    var(--color-accent) 30%,
     transparent 0%
   ) !important;
-  --bases-cards-background: rgb(228, 228, 228) !important;
+  --bases-cards-background: var(
+    --background-primary,
+    rgb(228, 228, 228)
+  ) !important;
   --bases-cards-border-width: var(--border-width, 1px) !important;
   --bases-cards-corner-shape: var(--corner-shape, round) !important;
-  --bases-cards-cover-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 10%
+  --bases-cards-cover-background: var(
+    --background-primary-alt,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%)
   ) !important;
   --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
   --bases-cards-radius: var(--radius-m, 8px) !important;
@@ -58,26 +60,26 @@ body.theme-light {
     #e0e0e0
   ) !important;
   --bases-embed-border-radius: var(--radius-s, 4px) !important;
-  --bases-group-heading-property-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --bases-group-heading-property-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller, 12px) !important;
   --bases-group-heading-property-weight: var(--font-normal, 400) !important;
   --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
   --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 80%,
-    transparent 0%
+  --bases-table-border-color: var(
+    --table-border-color,
+    color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%)
   ) !important;
-  --bases-table-cell-background-active: rgb(228, 228, 228) !important;
-  --bases-table-cell-background-disabled: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 10%
+  --bases-table-cell-background-active: var(
+    --background-primary,
+    rgb(228, 228, 228)
+  ) !important;
+  --bases-table-cell-background-disabled: var(
+    --background-primary-alt,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%)
   ) !important;
   --bases-table-cell-background-selected: var(
     --table-selection,
@@ -90,20 +92,21 @@ body.theme-light {
   --bases-table-container-border-radius: var(--radius-s, 4px) !important;
   --bases-table-container-border-width: var(--border-width, 1px) !important;
   --bases-table-font-size: var(--font-smaller, 0.875em) !important;
-  --bases-table-group-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 10%
+  --bases-table-group-background: var(
+    --background-primary-alt,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%)
   ) !important;
-  --bases-table-header-background: rgb(228, 228, 228) !important;
+  --bases-table-header-background: var(
+    --background-primary,
+    rgb(228, 228, 228)
+  ) !important;
   --bases-table-header-background-hover: var(
     --background-modifier-hover,
     rgba(0, 0, 0, 0.067)
   ) !important;
-  --bases-table-header-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --bases-table-header-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -111,13 +114,15 @@ body.theme-light {
     black var(--size-4-6)
   ) !important;
   --bases-table-header-weight: var(--font-weight, 400) !important;
-  --bases-table-row-background-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 20%,
-    transparent 90%
+  --bases-table-row-background-hover: var(
+    --table-row-background-hover,
+    color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%)
   ) !important;
   --bases-table-row-border-width: var(--border-width, 1px) !important;
-  --bases-table-summary-background: rgb(228, 228, 228) !important;
+  --bases-table-summary-background: var(
+    --background-primary,
+    rgb(228, 228, 228)
+  ) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover,
     rgba(0, 0, 0, 0.067)
@@ -126,10 +131,18 @@ body.theme-light {
     --interactive-accent,
     hsl(257, 88.88%, 70.95%)
   ) !important;
-  --blur-background: color-mix(in srgb, rgb(228, 228, 228) 65%, transparent)
+  --blur-background: color-mix(
+      in srgb,
+      var(--background-primary) var(--blur-opacity-s),
+      transparent
+    )
     linear-gradient(
-      rgb(228, 228, 228),
-      color-mix(in srgb, rgb(228, 228, 228) 65%, transparent)
+      var(--background-primary),
+      color-mix(
+        in srgb,
+        var(--background-primary) var(--blur-opacity-s),
+        transparent
+      )
     ) !important;
   --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
@@ -148,21 +161,21 @@ body.theme-light {
   --callout-fail: var(--color-red-rgb, 233, 49, 71);
   --callout-important: var(--color-cyan-rgb, 0, 191, 188);
   --callout-info: var(--color-blue-rgb, 8, 109, 221);
-  --callout-padding: 0;
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6, 0);
   --callout-question: var(--color-orange-rgb, 236, 117, 0);
-  --callout-radius: 12px;
+  --callout-radius: var(--radius-l, 12px);
   --callout-success: var(--color-green-rgb, 8, 185, 78);
   --callout-summary: var(--color-cyan-rgb, 0, 191, 188);
   --callout-tip: var(--color-cyan-rgb, 0, 191, 188);
-  --callout-title-weight: bold;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb, 8, 109, 221);
   --callout-warning: var(--color-orange-rgb, 236, 117, 0);
-  --canvas-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 15%,
-    transparent 0%
+  --canvas-background: var(
+    --color-accent-trans,
+    color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%)
   ) !important;
-  --canvas-card-label-color: hsl(258, 88%, 66%) !important;
+  --canvas-card-label-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --canvas-color-1: var(--color-red-rgb, 233, 49, 71) !important;
   --canvas-color-2: var(--color-orange-rgb, 236, 117, 0) !important;
   --canvas-color-3: var(--color-yellow-rgb, 224, 172, 0) !important;
@@ -172,64 +185,61 @@ body.theme-light {
   --canvas-controls-icon-size: var(--icon-s, 16px) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
   --canvas-controls-radius: var(--radius-s, 4px) !important;
-  --canvas-dot-pattern: rgb(102, 102, 102) !important;
-  --caret-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --canvas-dot-pattern: var(--color-base-30, rgb(102, 102, 102)) !important;
+  --caret-color: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --checkbox-border-color: hsl(258, 88%, 66%) !important;
-  --checkbox-border-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --checkbox-border-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
+  --checkbox-border-color-hover: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --checkbox-color: hsl(258, 88%, 66%) !important;
+  --checkbox-color: var(--color-accent, hsl(258, 88%, 66%)) !important;
   --checkbox-color-hover: var(
     --interactive-accent-hover,
     hsl(255, 89.76%, 75.9%)
   ) !important;
-  --checkbox-marker-color: rgb(228, 228, 228) !important;
-  --checkbox-radius: 15px !important;
+  --checkbox-marker-color: var(
+    --background-primary,
+    rgb(228, 228, 228)
+  ) !important;
+  --checkbox-radius: var(--radius-s, 15px) !important;
   --checkbox-size: var(--font-text-size, 16px) !important;
-  --checklist-done-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --checklist-done-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --clickable-icon-radius: var(--radius-s, 4px) !important;
-  --code-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 15%,
-    transparent 0%
+  --code-background: var(
+    --color-accent-trans,
+    color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%)
   ) !important;
   --code-border-color: var(--background-modifier-border, #e0e0e0) !important;
   --code-bracket-background: var(
     --background-modifier-hover,
     rgba(0, 0, 0, 0.067)
   ) !important;
-  --code-comment: hsl(258, 88%, 66%) !important;
+  --code-comment: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --code-function: var(--color-yellow, #e0ac00) !important;
   --code-important: var(--color-orange, #ec7500) !important;
   --code-keyword: var(--color-pink, #d53984) !important;
-  --code-normal: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --code-normal: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --code-operator: var(--color-red, #e93147) !important;
   --code-property: var(--color-cyan, #00bfbc) !important;
-  --code-punctuation: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --code-punctuation: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --code-radius: var(--radius-s, 4px) !important;
   --code-size: var(--font-smaller, 0.875em) !important;
   --code-string: var(--color-green, #08b94e) !important;
   --code-tag: var(--color-red, #e93147) !important;
   --code-value: var(--color-purple, #7852ee) !important;
-  --collapse-icon-color: hsl(258, 88%, 66%) !important;
+  --collapse-icon-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --collapse-icon-color-collapsed: var(
     --text-accent,
     hsl(258, 88%, 66%)
@@ -269,32 +279,50 @@ body.theme-light {
     inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: rgb(228, 228, 228) !important;
-  --file-header-background-focused: rgb(228, 228, 228) !important;
+  --file-header-background: var(
+    --background-primary,
+    rgb(228, 228, 228)
+  ) !important;
+  --file-header-background-focused: var(
+    --background-primary,
+    rgb(228, 228, 228)
+  ) !important;
   --file-header-border: var(--border-width, 1px solid transparent) solid
     transparent !important;
-  --file-header-font:
-    "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --file-header-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "JetBrains Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  ) !important;
   --file-header-font-size: var(--font-ui-small, 13px) !important;
   --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
   --file-margins-x: var(--size-4-8, 32px) !important;
   --file-margins-y: var(--size-4-8, 32px) !important;
   --flair-background: var(--interactive-normal, #ffffff) !important;
-  --flair-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --flair-color: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-interface:
-    "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+    var(--font-interface-override), var(--font-interface-theme),
+    var(--default-font, "??"), var(--font-default) !important;
   --font-mermaid: var(
     --font-text,
     "??",
@@ -329,12 +357,14 @@ body.theme-light {
   ) !important;
   --footnote-divider-width: var(--border-width, 1px) !important;
   --footnote-gap: var(--size-4-1, 4px) !important;
-  --footnote-id-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --footnote-id-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --footnote-id-color-no-occurrences: hsl(258, 88%, 66%) !important;
+  --footnote-id-color-no-occurrences: var(
+    --text-faint,
+    hsl(258, 88%, 66%)
+  ) !important;
   --footnote-input-background: var(
     --metadata-input-background,
     transparent
@@ -352,40 +382,35 @@ body.theme-light {
     --color-base-35,
     var(--background-modifier-border-focus)
   ) !important;
-  --graph-node: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --graph-node: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --graph-node-attachment: var(--color-yellow, #e0ac00) !important;
   --graph-node-focused: var(--text-accent, hsl(258, 88%, 66%)) !important;
   --graph-node-tag: var(--color-green, #08b94e) !important;
-  --graph-node-unresolved: hsl(258, 88%, 66%) !important;
-  --graph-text: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --graph-node-unresolved: var(--text-faint, hsl(258, 88%, 66%)) !important;
+  --graph-text: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --h5-line-height: var(--line-height-normal, 1.5) !important;
   --h6-line-height: var(--line-height-normal, 1.5) !important;
-  --heading-formatting: hsl(258, 88%, 66%) !important;
+  --heading-formatting: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --hr-color: var(--background-modifier-border, #e0e0e0) !important;
-  --icon-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --icon-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --icon-color-active: var(--text-accent, hsl(258, 88%, 66%)) !important;
-  --icon-color-focused: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --icon-color-focused: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --icon-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --icon-color-hover: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --icon-size: var(--icon-m, 18px) !important;
   --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
@@ -400,11 +425,11 @@ body.theme-light {
   --inline-title-weight: var(--h1-weight, 700) !important;
   --input-border-width: var(--border-width, 1px) !important;
   --input-corner-shape: var(--corner-shape, round) !important;
-  --input-date-separator: hsl(258, 88%, 66%) !important;
+  --input-date-separator: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --input-font-weight: var(--font-normal, 400) !important;
   --input-icon-inset: var(--size-4-1, 4px) !important;
   --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
-  --input-placeholder-color: hsl(258, 88%, 66%) !important;
+  --input-placeholder-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --interactive-accent: var(
     --color-accent-1,
     hsl(257, 88.88%, 70.95%)
@@ -433,17 +458,16 @@ body.theme-light {
   ) !important;
   --link-weight: var(--font-weight, 400) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
-  --list-marker-color: hsl(258, 88%, 66%) !important;
+  --list-marker-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --list-marker-color-collapsed: var(
     --text-accent,
     hsl(258, 88%, 66%)
   ) !important;
-  --list-marker-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --list-marker-color-hover: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --menu-background: rgb(197, 197, 197) !important;
+  --menu-background: var(--background-secondary, rgb(197, 197, 197)) !important;
   --menu-border-color: var(
     --background-modifier-border-hover,
     #d4d4d4
@@ -470,38 +494,65 @@ body.theme-light {
     --background-modifier-hover,
     rgba(0, 0, 0, 0.067)
   ) !important;
-  --metadata-input-font:
-    "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "JetBrains Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  ) !important;
   --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
-  --metadata-input-text-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --metadata-input-text-color: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --metadata-label-background-active: var(
     --background-modifier-hover,
     rgba(0, 0, 0, 0.067)
   ) !important;
-  --metadata-label-font:
-    "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
-  --metadata-label-text-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --metadata-label-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "JetBrains Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
   ) !important;
-  --metadata-label-text-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-label-text-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
+  ) !important;
+  --metadata-label-text-color-hover: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --metadata-padding: var(--size-4-2, 8px 0) 0 !important;
   --metadata-property-background-active: var(
@@ -517,30 +568,36 @@ body.theme-light {
   --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
-  --modal-background: rgb(228, 228, 228) !important;
+  --modal-background: var(--background-primary, rgb(228, 228, 228)) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
   --modal-border-width: var(--border-width, 1px) !important;
   --modal-radius: var(--radius-l, 12px) !important;
-  --nav-collapse-icon-color: hsl(258, 88%, 66%) !important;
-  --nav-collapse-icon-color-collapsed: hsl(258, 88%, 66%) !important;
-  --nav-heading-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --nav-collapse-icon-color: var(
+    --collapse-icon-color,
+    hsl(258, 88%, 66%)
   ) !important;
-  --nav-heading-color-collapsed: hsl(258, 88%, 66%) !important;
-  --nav-heading-color-collapsed-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --nav-collapse-icon-color-collapsed: var(
+    --text-faint,
+    hsl(258, 88%, 66%)
   ) !important;
-  --nav-heading-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --nav-heading-color: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
+  ) !important;
+  --nav-heading-color-collapsed: var(
+    --text-faint,
+    hsl(258, 88%, 66%)
+  ) !important;
+  --nav-heading-color-collapsed-hover: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
+  ) !important;
+  --nav-heading-color-hover: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --nav-heading-weight: var(--font-medium, 500) !important;
   --nav-heading-weight-hover: var(--font-medium, 500) !important;
@@ -563,29 +620,25 @@ body.theme-light {
   ) !important;
   --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
   --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
-  --nav-item-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --nav-item-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --nav-item-color-active: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --nav-item-color-active: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --nav-item-color-highlighted: var(
     --text-accent,
     hsl(258, 88%, 66%)
   ) !important;
-  --nav-item-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --nav-item-color-hover: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --nav-item-color-selected: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --nav-item-color-selected: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
@@ -596,24 +649,28 @@ body.theme-light {
   ) !important;
   --nav-item-radius: var(--radius-s, 4px) !important;
   --nav-item-size: var(--font-ui-small, 13px) !important;
-  --nav-tag-color: hsl(258, 88%, 66%) !important;
-  --nav-tag-color-active: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --nav-tag-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
+  --nav-tag-color-active: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --nav-tag-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --nav-tag-color-hover: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --nav-tag-radius: var(--radius-s, 4px) !important;
   --nav-tag-weight: var(--font-semibold, 600) !important;
-  --pdf-background: rgb(228, 228, 228) !important;
-  --pdf-page-background: rgb(228, 228, 228) !important;
+  --pdf-background: var(--background-primary, rgb(228, 228, 228)) !important;
+  --pdf-page-background: var(
+    --background-primary,
+    rgb(228, 228, 228)
+  ) !important;
   --pdf-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: rgb(228, 228, 228) !important;
+  --pdf-sidebar-background: var(
+    --background-primary,
+    rgb(228, 228, 228)
+  ) !important;
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pill-border-color: var(--background-modifier-border, #e0e0e0) !important;
@@ -622,64 +679,70 @@ body.theme-light {
     #d4d4d4
   ) !important;
   --pill-border-width: var(--border-width, 1px) !important;
-  --pill-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --pill-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --pill-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --pill-color-hover: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --pill-color-remove: hsl(258, 88%, 66%) !important;
+  --pill-color-remove: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --pill-color-remove-hover: var(--text-accent, hsl(258, 88%, 66%)) !important;
   --popover-font-size: var(--font-text-size, 16px) !important;
-  --prompt-background: rgb(228, 228, 228) !important;
+  --prompt-background: var(--background-primary, rgb(228, 228, 228)) !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
   --prompt-border-width: var(--border-width, 1px) !important;
-  --raised-background: color-mix(in srgb, rgb(228, 228, 228) 65%, transparent)
-    linear-gradient(
-      rgb(228, 228, 228),
-      color-mix(in srgb, rgb(228, 228, 228) 65%, transparent)
-    ) !important;
+  --raised-background: var(
+    --blur-background,
+    color-mix(in srgb, rgb(228, 228, 228) 65%, transparent)
+      linear-gradient(
+        rgb(228, 228, 228),
+        color-mix(in srgb, rgb(228, 228, 228) 65%, transparent)
+      )
+  ) !important;
   --raised-blur: var(
     --blur-s,
     blur(6px) saturate(1.5) brightness(1.15)
   ) !important;
-  --ribbon-background: rgb(197, 197, 197) !important;
-  --ribbon-background-collapsed: rgb(228, 228, 228) !important;
+  --ribbon-background: var(
+    --background-secondary,
+    rgb(197, 197, 197)
+  ) !important;
+  --ribbon-background-collapsed: var(
+    --background-primary,
+    rgb(228, 228, 228)
+  ) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1)
     var(--size-4-3, 8px 4px 12px) !important;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
   --scrollbar-radius: var(--radius-l, 12px) !important;
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
-  --search-clear-button-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --search-clear-button-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --search-icon-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --search-icon-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --search-result-background: rgb(228, 228, 228) !important;
-  --setting-group-heading-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --search-result-background: var(
+    --background-primary,
+    rgb(228, 228, 228)
+  ) !important;
+  --setting-group-heading-color: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
   --setting-group-heading-weight: var(--font-semibold, 600) !important;
-  --setting-items-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 10%
+  --setting-items-background: var(
+    --background-primary-alt,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%)
   ) !important;
   --setting-items-border-color: var(
     --background-modifier-border,
@@ -687,32 +750,28 @@ body.theme-light {
   ) !important;
   --setting-items-padding: var(--size-4-5, 20px) !important;
   --setting-items-radius: var(--radius-l, 12px) !important;
-  --shiki-active-tab-border-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --shiki-active-tab-border-color: var(
+    --shiki-highlight-neutral,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --shiki-code-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 15%,
-    transparent 0%
+  --shiki-code-background: var(
+    --code-background,
+    color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%)
   ) !important;
   --shiki-code-block-border-radius: var(--code-radius, 4px) !important;
   --shiki-code-block-spacing: var(--p-spacing, 1rem) !important;
-  --shiki-code-comment: hsl(258, 88%, 66%) !important;
+  --shiki-code-comment: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --shiki-code-function: var(--color-green, #08b94e) !important;
   --shiki-code-important: var(--color-orange, #ec7500) !important;
   --shiki-code-keyword: var(--color-pink, #d53984) !important;
-  --shiki-code-normal: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --shiki-code-normal: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --shiki-code-property: var(--color-cyan, #00bfbc) !important;
-  --shiki-code-punctuation: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --shiki-code-punctuation: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --shiki-code-string: var(--color-yellow, #e0ac00) !important;
   --shiki-code-value: var(--color-purple, #7852ee) !important;
@@ -721,21 +780,19 @@ body.theme-light {
     #e0e0e0
   ) !important;
   --shiki-gutter-border-width: var(--border-width, 1px) !important;
-  --shiki-gutter-text-color: hsl(258, 88%, 66%) !important;
-  --shiki-gutter-text-color-highlight: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --shiki-gutter-text-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
+  --shiki-gutter-text-color-highlight: var(
+    --shiki-code-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
   --shiki-highlight-green-background: rgba(
     var(--color-green-rgb),
     0.1
   ) !important;
-  --shiki-highlight-neutral: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --shiki-highlight-neutral: var(
+    --shiki-code-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --shiki-highlight-neutral-background: rgba(
     var(--mono-rgb-100),
@@ -743,7 +800,7 @@ body.theme-light {
   ) !important;
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
-  --shiki-terminal-dots-color: hsl(258, 88%, 66%) !important;
+  --shiki-terminal-dots-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --shiki-tooltip-background: var(
     --background-modifier-message,
     rgba(0, 0, 0, 0.9)
@@ -759,18 +816,23 @@ body.theme-light {
     --background-modifier-border,
     #e0e0e0
   ) !important;
-  --status-bar-background: rgb(197, 197, 197) !important;
+  --status-bar-background: var(
+    --background-secondary,
+    rgb(197, 197, 197)
+  ) !important;
   --status-bar-border-color: var(--divider-color, #e0e0e0) !important;
   --status-bar-border-width: var(--border-width) 0 0
     var(--border-width, 1px 0 0 1px) !important;
   --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
   --status-bar-radius: var(--radius-m, 8px 0 0 0) 0 0 0 !important;
-  --status-bar-text-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --status-bar-text-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --suggestion-background: rgb(228, 228, 228) !important;
+  --suggestion-background: var(
+    --background-primary,
+    rgb(228, 228, 228)
+  ) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(--color-red, #e93147) !important;
   --sync-avatar-color-2: var(--color-orange, #ec7500) !important;
@@ -780,8 +842,14 @@ body.theme-light {
   --sync-avatar-color-6: var(--color-blue, #086ddd) !important;
   --sync-avatar-color-7: var(--color-purple, #7852ee) !important;
   --sync-avatar-color-8: var(--color-pink, #d53984) !important;
-  --tab-background-active: rgb(228, 228, 228) !important;
-  --tab-container-background: rgb(197, 197, 197) !important;
+  --tab-background-active: var(
+    --background-primary,
+    rgb(228, 228, 228)
+  ) !important;
+  --tab-container-background: var(
+    --background-secondary,
+    rgb(197, 197, 197)
+  ) !important;
   --tab-divider-color: var(
     --background-modifier-border-hover,
     #d4d4d4
@@ -791,35 +859,34 @@ body.theme-light {
   --tab-radius: var(--radius-s, 4px) !important;
   --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
   --tab-stacked-header-width: var(--header-height, 40px) !important;
-  --tab-switcher-background: rgb(197, 197, 197) !important;
+  --tab-switcher-background: var(
+    --background-secondary,
+    rgb(197, 197, 197)
+  ) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
-    rgb(197, 197, 197),
+    var(--background-secondary),
     transparent
   ) !important;
   --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
-  --tab-text-color: hsl(258, 88%, 66%) !important;
-  --tab-text-color-active: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --tab-text-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
+  --tab-text-color-active: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --tab-text-color-focused: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --tab-text-color-focused: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --tab-text-color-focused-active: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --tab-text-color-focused-active: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --tab-text-color-focused-active-current: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --tab-text-color-focused-active-current: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --tab-text-color-focused-highlighted: var(
     --text-accent,
@@ -832,13 +899,12 @@ body.theme-light {
   --table-add-button-border-width: var(--table-border-width, 1px) !important;
   --table-border-color: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 80%,
+    var(--color-accent) 80%,
     transparent 0%
   ) !important;
-  --table-column-alt-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 20%,
-    transparent 90%
+  --table-column-alt-background: var(
+    --table-background,
+    color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%)
   ) !important;
   --table-column-first-border-width: var(--table-border-width, 1px) !important;
   --table-column-last-border-width: var(--table-border-width, 1px) !important;
@@ -846,43 +912,38 @@ body.theme-light {
     --table-selection-border-color,
     hsl(257, 88.88%, 70.95%)
   ) !important;
-  --table-drag-handle-color: hsl(258, 88%, 66%) !important;
-  --table-drag-handle-color-active: #ffffff !important;
-  --table-header-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 20%,
-    transparent 90%
+  --table-drag-handle-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
+  --table-drag-handle-color-active: var(--text-on-accent, #ffffff) !important;
+  --table-header-background: var(
+    --table-background,
+    color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%)
   ) !important;
-  --table-header-border-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 80%,
-    transparent 0%
+  --table-header-border-color: var(
+    --table-border-color,
+    color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%)
   ) !important;
   --table-header-border-width: var(--table-border-width, 1px) !important;
   --table-header-color: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 80%,
-    #000000 20%
+    var(--color-accent) 80%,
+    var(--dark-or-white-var) 20%
   ) !important;
   --table-header-size: var(--table-text-size, 16px) !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
   ) !important;
   --table-line-height: var(--line-height-tight, 1.3) !important;
-  --table-row-alt-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 20%,
-    transparent 90%
+  --table-row-alt-background: var(
+    --table-background,
+    color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%)
   ) !important;
-  --table-row-alt-background-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 20%,
-    transparent 90%
+  --table-row-alt-background-hover: var(
+    --table-background,
+    color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%)
   ) !important;
-  --table-row-background-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 20%,
-    transparent 90%
+  --table-row-background-hover: var(
+    --table-background,
+    color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%)
   ) !important;
   --table-row-last-border-width: var(--table-border-width, 1px) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
@@ -911,44 +972,43 @@ body.theme-light {
     hsl(255, 89.76%, 75.9%)
   ) !important;
   --text-error: var(--color-red, #e93147) !important;
-  --text-faint: hsl(258, 88%, 66%) !important;
+  --text-faint: var(--color-accent, hsl(258, 88%, 66%)) !important;
   --text-highlight-bg: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 30%,
+    var(--color-accent) 30%,
     transparent 0%
   ) !important;
-  --text-muted: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --text-muted: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --text-normal: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+    var(--color-accent) 50%,
+    var(--dark-or-white-var) 40%
   ) !important;
   --text-selection: hsla(var(--color-accent-hsl), 0.2) !important;
   --text-success: var(--color-green, #08b94e) !important;
   --text-warning: var(--color-orange, #ec7500) !important;
-  --titlebar-background: rgb(197, 197, 197) !important;
-  --titlebar-background-focused: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    transparent 0%
+  --titlebar-background: var(
+    --background-secondary,
+    rgb(197, 197, 197)
+  ) !important;
+  --titlebar-background-focused: var(
+    --background-secondary-alt,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%)
   ) !important;
   --titlebar-border-color: var(
     --background-modifier-border,
     #e0e0e0
   ) !important;
-  --titlebar-text-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --titlebar-text-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --titlebar-text-color-focused: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --titlebar-text-color-focused: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --titlebar-text-weight: var(--font-bold, 700) !important;
   --touch-radius-l: var(--touch-size-l, 52px) !important;
@@ -959,15 +1019,13 @@ body.theme-light {
   --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
   --traffic-lights-offset-x: var(--header-height, 40px) !important;
   --traffic-lights-offset-y: var(--header-height, 40px) !important;
-  --vault-profile-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --vault-profile-color: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
-  --vault-profile-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #000000 40%
+  --vault-profile-color-hover: var(
+    --vault-profile-color,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)
   ) !important;
   --vault-profile-font-size: var(--font-ui-small, 13px) !important;
   --vault-profile-font-weight: var(--font-medium, 500) !important;
@@ -1370,7 +1428,7 @@ body.theme-light {
   --table-add-button-background: transparent !important;
   --table-background: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 20%,
+    var(--color-accent) 20%,
     transparent 90%
   ) !important;
   --table-border-width: 1px !important;
@@ -1431,22 +1489,23 @@ body.theme-light {
   --default-font: "JetBrains Mono", monospace !important;
   --bold-color: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 80%,
-    #000000 20%
+    var(--color-accent) 80%,
+    var(--dark-or-white-var) 20%
   ) !important;
   --italic-color: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 60%,
-    #000000 20%
+    var(--color-accent) 60%,
+    var(--dark-or-white-var) 20%
   ) !important;
   --color-accent-trans: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 15%,
+    var(--color-accent) 15%,
     transparent 0%
   ) !important;
+  --interactive-color: var(--color-accent, hsl(258, 88%, 66%)) !important;
+  --pen-museifu-simple: #edf1fc !important;
   --dark-or-white-var: #000000 !important;
   --grid-size: 64px !important;
-  --interactive-color: hsl(258, 88%, 66%) !important;
   --large-kanban-width: 400px !important;
   --pen-black: #26241f !important;
   --pen-blue: #3f76ed !important;
@@ -1457,7 +1516,6 @@ body.theme-light {
   --pen-museifu-dark: #838383 !important;
   --pen-museifu-paperdark: #beb7b7 !important;
   --pen-museifu-paperlike: #32302c !important;
-  --pen-museifu-simple: #edf1fc !important;
   --pen-purple: #9b4ff0 !important;
   --pen-red: #e14a49 !important;
   --pen-white: #edf1fc !important;
@@ -1487,25 +1545,27 @@ body.theme-dark {
     207,
     110
   ) !important;
-  --background-primary: rgb(22, 22, 22) !important;
+  --background-primary: var(--color-base-00, rgb(22, 22, 22)) !important;
   --background-primary-alt: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #ffffff 10%
+    var(--color-accent) 50%,
+    var(--dark-or-white-var) 10%
   ) !important;
-  --background-secondary: rgb(24, 24, 24) !important;
+  --background-secondary: var(--color-base-20, rgb(24, 24, 24)) !important;
   --background-secondary-alt: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 50%,
+    var(--color-accent) 50%,
     transparent 0%
   ) !important;
-  --bases-cards-background: rgb(22, 22, 22) !important;
+  --bases-cards-background: var(
+    --background-primary,
+    rgb(22, 22, 22)
+  ) !important;
   --bases-cards-border-width: var(--border-width, 1px) !important;
   --bases-cards-corner-shape: var(--corner-shape, round) !important;
-  --bases-cards-cover-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #ffffff 10%
+  --bases-cards-cover-background: var(
+    --background-primary-alt,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%)
   ) !important;
   --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
   --bases-cards-radius: var(--radius-m, 8px) !important;
@@ -1516,26 +1576,26 @@ body.theme-dark {
     #363636
   ) !important;
   --bases-embed-border-radius: var(--radius-s, 4px) !important;
-  --bases-group-heading-property-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --bases-group-heading-property-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller, 12px) !important;
   --bases-group-heading-property-weight: var(--font-normal, 400) !important;
   --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
   --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 80%,
-    transparent 0%
+  --bases-table-border-color: var(
+    --table-border-color,
+    color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%)
   ) !important;
-  --bases-table-cell-background-active: rgb(22, 22, 22) !important;
-  --bases-table-cell-background-disabled: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #ffffff 10%
+  --bases-table-cell-background-active: var(
+    --background-primary,
+    rgb(22, 22, 22)
+  ) !important;
+  --bases-table-cell-background-disabled: var(
+    --background-primary-alt,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%)
   ) !important;
   --bases-table-cell-background-selected: var(
     --table-selection,
@@ -1548,20 +1608,21 @@ body.theme-dark {
   --bases-table-container-border-radius: var(--radius-s, 4px) !important;
   --bases-table-container-border-width: var(--border-width, 1px) !important;
   --bases-table-font-size: var(--font-smaller, 0.875em) !important;
-  --bases-table-group-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #ffffff 10%
+  --bases-table-group-background: var(
+    --background-primary-alt,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%)
   ) !important;
-  --bases-table-header-background: rgb(22, 22, 22) !important;
+  --bases-table-header-background: var(
+    --background-primary,
+    rgb(22, 22, 22)
+  ) !important;
   --bases-table-header-background-hover: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
   ) !important;
-  --bases-table-header-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --bases-table-header-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -1569,13 +1630,15 @@ body.theme-dark {
     black var(--size-4-6)
   ) !important;
   --bases-table-header-weight: var(--font-weight, 400) !important;
-  --bases-table-row-background-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 20%,
-    transparent 90%
+  --bases-table-row-background-hover: var(
+    --table-row-background-hover,
+    color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%)
   ) !important;
   --bases-table-row-border-width: var(--border-width, 1px) !important;
-  --bases-table-summary-background: rgb(22, 22, 22) !important;
+  --bases-table-summary-background: var(
+    --background-primary,
+    rgb(22, 22, 22)
+  ) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
@@ -1614,21 +1677,21 @@ body.theme-dark {
   --callout-fail: var(--color-red-rgb, 251, 70, 76);
   --callout-important: var(--color-cyan-rgb, 83, 223, 221);
   --callout-info: var(--color-blue-rgb, 2, 122, 255);
-  --callout-padding: 0;
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6, 0);
   --callout-question: var(--color-orange-rgb, 233, 151, 63);
-  --callout-radius: 12px;
+  --callout-radius: var(--radius-l, 12px);
   --callout-success: var(--color-green-rgb, 68, 207, 110);
   --callout-summary: var(--color-cyan-rgb, 83, 223, 221);
   --callout-tip: var(--color-cyan-rgb, 83, 223, 221);
-  --callout-title-weight: bold;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb, 2, 122, 255);
   --callout-warning: var(--color-orange-rgb, 233, 151, 63);
-  --canvas-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 15%,
-    transparent 0%
+  --canvas-background: var(
+    --color-accent-trans,
+    color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%)
   ) !important;
-  --canvas-card-label-color: hsl(258, 88%, 66%) !important;
+  --canvas-card-label-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --canvas-color-1: var(--color-red-rgb, 251, 70, 76) !important;
   --canvas-color-2: var(--color-orange-rgb, 233, 151, 63) !important;
   --canvas-color-3: var(--color-yellow-rgb, 224, 222, 113) !important;
@@ -1638,60 +1701,58 @@ body.theme-dark {
   --canvas-controls-icon-size: var(--icon-s, 16px) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
   --canvas-controls-radius: var(--radius-s, 4px) !important;
-  --canvas-dot-pattern: rgb(102, 102, 102) !important;
-  --caret-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --canvas-dot-pattern: var(--color-base-30, rgb(102, 102, 102)) !important;
+  --caret-color: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --checkbox-border-color: hsl(258, 88%, 66%) !important;
-  --checkbox-border-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --checkbox-border-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
+  --checkbox-border-color-hover: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --checkbox-color: var(--interactive-accent, hsl(258, 88%, 66%)) !important;
+  --checkbox-color: var(--color-accent, hsl(258, 88%, 66%)) !important;
   --checkbox-color-hover: var(
     --interactive-accent-hover,
     hsl(255, 89.76%, 75.9%)
   ) !important;
-  --checkbox-marker-color: rgb(22, 22, 22) !important;
-  --checkbox-radius: 15px !important;
+  --checkbox-marker-color: var(
+    --background-primary,
+    rgb(22, 22, 22)
+  ) !important;
+  --checkbox-radius: var(--radius-s, 15px) !important;
   --checkbox-size: var(--font-text-size, 16px) !important;
-  --checklist-done-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --checklist-done-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --clickable-icon-radius: var(--radius-s, 4px) !important;
-  --code-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 15%,
-    transparent 0%
+  --code-background: var(
+    --color-accent-trans,
+    color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%)
   ) !important;
   --code-border-color: var(--background-modifier-border, #363636) !important;
   --code-bracket-background: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
   ) !important;
-  --code-comment: hsl(258, 88%, 66%) !important;
+  --code-comment: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --code-function: var(--color-yellow, #e0de71) !important;
   --code-important: var(--color-orange, #e9973f) !important;
   --code-keyword: var(--color-pink, #fa99cd) !important;
   --code-normal: var(--text-normal, #dadada) !important;
   --code-operator: var(--color-red, #fb464c) !important;
   --code-property: var(--color-cyan, #53dfdd) !important;
-  --code-punctuation: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --code-punctuation: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --code-radius: var(--radius-s, 4px) !important;
   --code-size: var(--font-smaller, 0.875em) !important;
   --code-string: var(--color-green, #44cf6e) !important;
   --code-tag: var(--color-red, #fb464c) !important;
   --code-value: var(--color-purple, #a882ff) !important;
-  --collapse-icon-color: hsl(258, 88%, 66%) !important;
+  --collapse-icon-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --collapse-icon-color-collapsed: var(
     --text-accent,
     hsl(255, 89.76%, 75.9%)
@@ -1731,32 +1792,50 @@ body.theme-dark {
     inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: rgb(22, 22, 22) !important;
-  --file-header-background-focused: rgb(22, 22, 22) !important;
+  --file-header-background: var(
+    --background-primary,
+    rgb(22, 22, 22)
+  ) !important;
+  --file-header-background-focused: var(
+    --background-primary,
+    rgb(22, 22, 22)
+  ) !important;
   --file-header-border: var(--border-width, 1px solid transparent) solid
     transparent !important;
-  --file-header-font:
-    "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --file-header-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "JetBrains Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  ) !important;
   --file-header-font-size: var(--font-ui-small, 13px) !important;
   --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
   --file-margins-x: var(--size-4-8, 32px) !important;
   --file-margins-y: var(--size-4-8, 32px) !important;
   --flair-background: var(--interactive-normal, #363636) !important;
-  --flair-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --flair-color: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-interface:
-    "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+    var(--font-interface-override), var(--font-interface-theme),
+    var(--default-font, "??"), var(--font-default) !important;
   --font-mermaid: var(
     --font-text,
     "??",
@@ -1791,12 +1870,14 @@ body.theme-dark {
   ) !important;
   --footnote-divider-width: var(--border-width, 1px) !important;
   --footnote-gap: var(--size-4-1, 4px) !important;
-  --footnote-id-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --footnote-id-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --footnote-id-color-no-occurrences: hsl(258, 88%, 66%) !important;
+  --footnote-id-color-no-occurrences: var(
+    --text-faint,
+    hsl(258, 88%, 66%)
+  ) !important;
   --footnote-input-background: var(
     --metadata-input-background,
     transparent
@@ -1814,40 +1895,35 @@ body.theme-dark {
     --color-base-35,
     var(--background-modifier-border-focus)
   ) !important;
-  --graph-node: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --graph-node: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --graph-node-attachment: var(--color-yellow, #e0de71) !important;
   --graph-node-focused: var(--text-accent, hsl(255, 89.76%, 75.9%)) !important;
   --graph-node-tag: var(--color-green, #44cf6e) !important;
-  --graph-node-unresolved: hsl(258, 88%, 66%) !important;
-  --graph-text: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --graph-node-unresolved: var(--text-faint, hsl(258, 88%, 66%)) !important;
+  --graph-text: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --h5-line-height: var(--line-height-normal, 1.5) !important;
   --h6-line-height: var(--line-height-normal, 1.5) !important;
-  --heading-formatting: hsl(258, 88%, 66%) !important;
+  --heading-formatting: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --hr-color: var(--background-modifier-border, #363636) !important;
-  --icon-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --icon-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --icon-color-active: var(--text-accent, hsl(255, 89.76%, 75.9%)) !important;
-  --icon-color-focused: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --icon-color-focused: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --icon-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --icon-color-hover: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --icon-size: var(--icon-m, 18px) !important;
   --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
@@ -1862,11 +1938,11 @@ body.theme-dark {
   --inline-title-weight: var(--h1-weight, 700) !important;
   --input-border-width: var(--border-width, 1px) !important;
   --input-corner-shape: var(--corner-shape, round) !important;
-  --input-date-separator: hsl(258, 88%, 66%) !important;
+  --input-date-separator: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --input-font-weight: var(--font-normal, 400) !important;
   --input-icon-inset: var(--size-4-1, 4px) !important;
   --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
-  --input-placeholder-color: hsl(258, 88%, 66%) !important;
+  --input-placeholder-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --interactive-accent: var(--color-accent, hsl(258, 88%, 66%)) !important;
   --interactive-accent-hover: var(
     --color-accent-1,
@@ -1895,17 +1971,16 @@ body.theme-dark {
   ) !important;
   --link-weight: var(--font-weight, 400) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
-  --list-marker-color: hsl(258, 88%, 66%) !important;
+  --list-marker-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --list-marker-color-collapsed: var(
     --text-accent,
     hsl(255, 89.76%, 75.9%)
   ) !important;
-  --list-marker-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --list-marker-color-hover: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --menu-background: rgb(24, 24, 24) !important;
+  --menu-background: var(--background-secondary, rgb(24, 24, 24)) !important;
   --menu-border-color: var(
     --background-modifier-border-hover,
     #3f3f3f
@@ -1932,38 +2007,65 @@ body.theme-dark {
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
   ) !important;
-  --metadata-input-font:
-    "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "JetBrains Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  ) !important;
   --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
-  --metadata-input-text-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --metadata-input-text-color: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --metadata-label-background-active: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
   ) !important;
-  --metadata-label-font:
-    "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
-  --metadata-label-text-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --metadata-label-font: var(
+    --font-interface,
+    "??",
+    "??",
+    "JetBrains Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
   ) !important;
-  --metadata-label-text-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-label-text-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
+  ) !important;
+  --metadata-label-text-color-hover: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --metadata-padding: var(--size-4-2, 8px 0) 0 !important;
   --metadata-property-background-active: var(
@@ -1979,30 +2081,36 @@ body.theme-dark {
   --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
-  --modal-background: rgb(22, 22, 22) !important;
+  --modal-background: var(--background-primary, rgb(22, 22, 22)) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
   --modal-border-width: var(--border-width, 1px) !important;
   --modal-radius: var(--radius-l, 12px) !important;
-  --nav-collapse-icon-color: hsl(258, 88%, 66%) !important;
-  --nav-collapse-icon-color-collapsed: hsl(258, 88%, 66%) !important;
-  --nav-heading-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --nav-collapse-icon-color: var(
+    --collapse-icon-color,
+    hsl(258, 88%, 66%)
   ) !important;
-  --nav-heading-color-collapsed: hsl(258, 88%, 66%) !important;
-  --nav-heading-color-collapsed-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --nav-collapse-icon-color-collapsed: var(
+    --text-faint,
+    hsl(258, 88%, 66%)
   ) !important;
-  --nav-heading-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --nav-heading-color: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
+  ) !important;
+  --nav-heading-color-collapsed: var(
+    --text-faint,
+    hsl(258, 88%, 66%)
+  ) !important;
+  --nav-heading-color-collapsed-hover: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
+  ) !important;
+  --nav-heading-color-hover: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --nav-heading-weight: var(--font-medium, 500) !important;
   --nav-heading-weight-hover: var(--font-medium, 500) !important;
@@ -2025,29 +2133,25 @@ body.theme-dark {
   ) !important;
   --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
   --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
-  --nav-item-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --nav-item-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --nav-item-color-active: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --nav-item-color-active: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --nav-item-color-highlighted: var(
     --text-accent,
     hsl(255, 89.76%, 75.9%)
   ) !important;
-  --nav-item-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --nav-item-color-hover: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --nav-item-color-selected: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --nav-item-color-selected: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
@@ -2058,23 +2162,24 @@ body.theme-dark {
   ) !important;
   --nav-item-radius: var(--radius-s, 4px) !important;
   --nav-item-size: var(--font-ui-small, 13px) !important;
-  --nav-tag-color: hsl(258, 88%, 66%) !important;
-  --nav-tag-color-active: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --nav-tag-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
+  --nav-tag-color-active: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --nav-tag-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --nav-tag-color-hover: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --nav-tag-radius: var(--radius-s, 4px) !important;
   --nav-tag-weight: var(--font-semibold, 600) !important;
-  --pdf-background: rgb(22, 22, 22) !important;
-  --pdf-page-background: rgb(22, 22, 22) !important;
+  --pdf-background: var(--background-primary, rgb(22, 22, 22)) !important;
+  --pdf-page-background: var(--background-primary, rgb(22, 22, 22)) !important;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pdf-sidebar-background: rgb(22, 22, 22) !important;
+  --pdf-sidebar-background: var(
+    --background-primary,
+    rgb(22, 22, 22)
+  ) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --pill-border-color: var(--background-modifier-border, #363636) !important;
   --pill-border-color-hover: var(
@@ -2082,23 +2187,21 @@ body.theme-dark {
     #3f3f3f
   ) !important;
   --pill-border-width: var(--border-width, 1px) !important;
-  --pill-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --pill-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --pill-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --pill-color-hover: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --pill-color-remove: hsl(258, 88%, 66%) !important;
+  --pill-color-remove: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --pill-color-remove-hover: var(
     --text-accent,
     hsl(255, 89.76%, 75.9%)
   ) !important;
   --popover-font-size: var(--font-text-size, 16px) !important;
-  --prompt-background: rgb(22, 22, 22) !important;
+  --prompt-background: var(--background-primary, rgb(22, 22, 22)) !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -2113,36 +2216,38 @@ body.theme-dark {
     --blur-s,
     blur(6px) saturate(1.5) brightness(1.15)
   ) !important;
-  --ribbon-background: rgb(24, 24, 24) !important;
-  --ribbon-background-collapsed: rgb(22, 22, 22) !important;
+  --ribbon-background: var(--background-secondary, rgb(24, 24, 24)) !important;
+  --ribbon-background-collapsed: var(
+    --background-primary,
+    rgb(22, 22, 22)
+  ) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1)
     var(--size-4-3, 8px 4px 12px) !important;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
   --scrollbar-radius: var(--radius-l, 12px) !important;
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
-  --search-clear-button-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --search-clear-button-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --search-icon-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --search-icon-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --search-result-background: rgb(22, 22, 22) !important;
-  --setting-group-heading-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --search-result-background: var(
+    --background-primary,
+    rgb(22, 22, 22)
+  ) !important;
+  --setting-group-heading-color: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
   --setting-group-heading-weight: var(--font-semibold, 600) !important;
-  --setting-items-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    #ffffff 10%
+  --setting-items-background: var(
+    --background-primary-alt,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%)
   ) !important;
   --setting-items-border-color: var(
     --background-modifier-border,
@@ -2150,32 +2255,28 @@ body.theme-dark {
   ) !important;
   --setting-items-padding: var(--size-4-5, 20px) !important;
   --setting-items-radius: var(--radius-l, 12px) !important;
-  --shiki-active-tab-border-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --shiki-active-tab-border-color: var(
+    --shiki-highlight-neutral,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --shiki-code-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 15%,
-    transparent 0%
+  --shiki-code-background: var(
+    --code-background,
+    color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%)
   ) !important;
   --shiki-code-block-border-radius: var(--code-radius, 4px) !important;
   --shiki-code-block-spacing: var(--p-spacing, 1rem) !important;
-  --shiki-code-comment: hsl(258, 88%, 66%) !important;
+  --shiki-code-comment: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --shiki-code-function: var(--color-green, #44cf6e) !important;
   --shiki-code-important: var(--color-orange, #e9973f) !important;
   --shiki-code-keyword: var(--color-pink, #fa99cd) !important;
-  --shiki-code-normal: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --shiki-code-normal: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --shiki-code-property: var(--color-cyan, #53dfdd) !important;
-  --shiki-code-punctuation: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --shiki-code-punctuation: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --shiki-code-string: var(--color-yellow, #e0de71) !important;
   --shiki-code-value: var(--color-purple, #a882ff) !important;
@@ -2184,21 +2285,19 @@ body.theme-dark {
     #363636
   ) !important;
   --shiki-gutter-border-width: var(--border-width, 1px) !important;
-  --shiki-gutter-text-color: hsl(258, 88%, 66%) !important;
-  --shiki-gutter-text-color-highlight: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --shiki-gutter-text-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
+  --shiki-gutter-text-color-highlight: var(
+    --shiki-code-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
   --shiki-highlight-green-background: rgba(
     var(--color-green-rgb),
     0.1
   ) !important;
-  --shiki-highlight-neutral: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --shiki-highlight-neutral: var(
+    --shiki-code-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --shiki-highlight-neutral-background: rgba(
     var(--mono-rgb-100),
@@ -2206,7 +2305,7 @@ body.theme-dark {
   ) !important;
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
-  --shiki-terminal-dots-color: hsl(258, 88%, 66%) !important;
+  --shiki-terminal-dots-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --shiki-tooltip-background: var(
     --background-modifier-message,
     rgba(0, 0, 0, 0.9)
@@ -2222,18 +2321,23 @@ body.theme-dark {
     --background-modifier-border,
     #363636
   ) !important;
-  --status-bar-background: rgb(24, 24, 24) !important;
+  --status-bar-background: var(
+    --background-secondary,
+    rgb(24, 24, 24)
+  ) !important;
   --status-bar-border-color: var(--divider-color, #363636) !important;
   --status-bar-border-width: var(--border-width) 0 0
     var(--border-width, 1px 0 0 1px) !important;
   --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
   --status-bar-radius: var(--radius-m, 8px 0 0 0) 0 0 0 !important;
-  --status-bar-text-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --status-bar-text-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --suggestion-background: rgb(22, 22, 22) !important;
+  --suggestion-background: var(
+    --background-primary,
+    rgb(22, 22, 22)
+  ) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(--color-red, #fb464c) !important;
   --sync-avatar-color-2: var(--color-orange, #e9973f) !important;
@@ -2243,8 +2347,14 @@ body.theme-dark {
   --sync-avatar-color-6: var(--color-blue, #027aff) !important;
   --sync-avatar-color-7: var(--color-purple, #a882ff) !important;
   --sync-avatar-color-8: var(--color-pink, #fa99cd) !important;
-  --tab-background-active: rgb(22, 22, 22) !important;
-  --tab-container-background: rgb(24, 24, 24) !important;
+  --tab-background-active: var(
+    --background-primary,
+    rgb(22, 22, 22)
+  ) !important;
+  --tab-container-background: var(
+    --background-secondary,
+    rgb(24, 24, 24)
+  ) !important;
   --tab-divider-color: var(
     --background-modifier-border-hover,
     #3f3f3f
@@ -2254,35 +2364,34 @@ body.theme-dark {
   --tab-radius: var(--radius-s, 4px) !important;
   --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
   --tab-stacked-header-width: var(--header-height, 40px) !important;
-  --tab-switcher-background: rgb(24, 24, 24) !important;
+  --tab-switcher-background: var(
+    --background-secondary,
+    rgb(24, 24, 24)
+  ) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
-    rgb(24, 24, 24),
+    var(--background-secondary),
     transparent
   ) !important;
   --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
-  --tab-text-color: hsl(258, 88%, 66%) !important;
-  --tab-text-color-active: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --tab-text-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
+  --tab-text-color-active: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --tab-text-color-focused: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --tab-text-color-focused: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --tab-text-color-focused-active: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --tab-text-color-focused-active: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --tab-text-color-focused-active-current: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --tab-text-color-focused-active-current: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --tab-text-color-focused-highlighted: var(
     --text-accent,
@@ -2295,13 +2404,12 @@ body.theme-dark {
   --table-add-button-border-width: var(--table-border-width, 1px) !important;
   --table-border-color: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 80%,
+    var(--color-accent) 80%,
     transparent 0%
   ) !important;
-  --table-column-alt-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 20%,
-    transparent 90%
+  --table-column-alt-background: var(
+    --table-background,
+    color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%)
   ) !important;
   --table-column-first-border-width: var(--table-border-width, 1px) !important;
   --table-column-last-border-width: var(--table-border-width, 1px) !important;
@@ -2309,43 +2417,38 @@ body.theme-dark {
     --table-selection-border-color,
     hsl(258, 88%, 66%)
   ) !important;
-  --table-drag-handle-color: hsl(258, 88%, 66%) !important;
+  --table-drag-handle-color: var(--text-faint, hsl(258, 88%, 66%)) !important;
   --table-drag-handle-color-active: var(--text-on-accent, white) !important;
-  --table-header-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 20%,
-    transparent 90%
+  --table-header-background: var(
+    --table-background,
+    color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%)
   ) !important;
-  --table-header-border-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 80%,
-    transparent 0%
+  --table-header-border-color: var(
+    --table-border-color,
+    color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%)
   ) !important;
   --table-header-border-width: var(--table-border-width, 1px) !important;
   --table-header-color: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 80%,
-    #ffffff 20%
+    var(--color-accent) 80%,
+    var(--dark-or-white-var) 20%
   ) !important;
   --table-header-size: var(--table-text-size, 16px) !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
   ) !important;
   --table-line-height: var(--line-height-tight, 1.3) !important;
-  --table-row-alt-background: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 20%,
-    transparent 90%
+  --table-row-alt-background: var(
+    --table-background,
+    color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%)
   ) !important;
-  --table-row-alt-background-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 20%,
-    transparent 90%
+  --table-row-alt-background-hover: var(
+    --table-background,
+    color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%)
   ) !important;
-  --table-row-background-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 20%,
-    transparent 90%
+  --table-row-background-hover: var(
+    --table-background,
+    color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%)
   ) !important;
   --table-row-last-border-width: var(--table-border-width, 1px) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
@@ -2374,44 +2477,43 @@ body.theme-dark {
     hsl(253, 92.4%, 85.14%)
   ) !important;
   --text-error: var(--color-red, #fb464c) !important;
-  --text-faint: hsl(258, 88%, 66%) !important;
+  --text-faint: var(--color-accent, hsl(258, 88%, 66%)) !important;
   --text-highlight-bg: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 30%,
+    var(--color-accent) 30%,
     transparent 0%
   ) !important;
-  --text-muted: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --text-muted: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --text-normal: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+    var(--color-accent) 30%,
+    var(--dark-or-white-var) 70%
   ) !important;
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33) !important;
   --text-success: var(--color-green, #44cf6e) !important;
   --text-warning: var(--color-orange, #e9973f) !important;
-  --titlebar-background: rgb(24, 24, 24) !important;
-  --titlebar-background-focused: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 50%,
-    transparent 0%
+  --titlebar-background: var(
+    --background-secondary,
+    rgb(24, 24, 24)
+  ) !important;
+  --titlebar-background-focused: var(
+    --background-secondary-alt,
+    color-mix(in srgb, hsl(258, 88%, 66%) 50%, transparent 0%)
   ) !important;
   --titlebar-border-color: var(
     --background-modifier-border,
     #363636
   ) !important;
-  --titlebar-text-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --titlebar-text-color: var(
+    --text-muted,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --titlebar-text-color-focused: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --titlebar-text-color-focused: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --titlebar-text-weight: var(--font-bold, 700) !important;
   --touch-radius-l: var(--touch-size-l, 52px) !important;
@@ -2422,15 +2524,13 @@ body.theme-dark {
   --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
   --traffic-lights-offset-x: var(--header-height, 40px) !important;
   --traffic-lights-offset-y: var(--header-height, 40px) !important;
-  --vault-profile-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --vault-profile-color: var(
+    --text-normal,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
-  --vault-profile-color-hover: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 30%,
-    #ffffff 70%
+  --vault-profile-color-hover: var(
+    --vault-profile-color,
+    color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)
   ) !important;
   --vault-profile-font-size: var(--font-ui-small, 13px) !important;
   --vault-profile-font-weight: var(--font-medium, 500) !important;
@@ -2827,7 +2927,7 @@ body.theme-dark {
   --table-add-button-background: transparent !important;
   --table-background: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 20%,
+    var(--color-accent) 20%,
     transparent 90%
   ) !important;
   --table-border-width: 1px !important;
@@ -2878,22 +2978,23 @@ body.theme-dark {
   --default-font: "JetBrains Mono", monospace !important;
   --bold-color: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 80%,
-    #ffffff 20%
+    var(--color-accent) 80%,
+    var(--dark-or-white-var) 20%
   ) !important;
   --italic-color: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 60%,
-    #ffffff 20%
+    var(--color-accent) 60%,
+    var(--dark-or-white-var) 20%
   ) !important;
   --color-accent-trans: color-mix(
     in srgb,
-    hsl(258, 88%, 66%) 15%,
+    var(--color-accent) 15%,
     transparent 0%
   ) !important;
+  --interactive-color: var(--color-accent, hsl(258, 88%, 66%)) !important;
+  --pen-museifu-simple: #edf1fc !important;
   --dark-or-white-var: #ffffff !important;
   --grid-size: 64px !important;
-  --interactive-color: hsl(258, 88%, 66%) !important;
   --large-kanban-width: 400px !important;
   --pen-black: #26241f !important;
   --pen-blue: #3f76ed !important;
@@ -2904,7 +3005,6 @@ body.theme-dark {
   --pen-museifu-dark: #838383 !important;
   --pen-museifu-paperdark: #beb7b7 !important;
   --pen-museifu-paperlike: #32302c !important;
-  --pen-museifu-simple: #edf1fc !important;
   --pen-purple: #9b4ff0 !important;
   --pen-red: #e14a49 !important;
   --pen-white: #edf1fc !important;
@@ -3025,7 +3125,7 @@ body body.theme-light .markdown-rendered a.internal-link:hover {
 }
 body body.theme-light .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--text-muted, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   cursor: auto;
   filter: none;
   backdrop-filter: none;
@@ -3051,7 +3151,7 @@ body body.theme-light .markdown-rendered p {
 }
 body body.theme-light strong {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.432256 0.28864 0.76736);
+  color: var(--bold-color, color(srgb 0.432256 0.28864 0.76736));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3077,7 +3177,7 @@ body body.theme-light strong {
 }
 body body.theme-light b {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.432256 0.28864 0.76736);
+  color: var(--bold-color, color(srgb 0.432256 0.28864 0.76736));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3103,7 +3203,7 @@ body body.theme-light b {
 }
 body body.theme-light em {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
+  color: var(--italic-color, color(srgb 0.40524 0.2706 0.7194 / 0.8));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3129,7 +3229,7 @@ body body.theme-light em {
 }
 body body.theme-light i {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
+  color: var(--italic-color, color(srgb 0.40524 0.2706 0.7194 / 0.8));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3154,8 +3254,11 @@ body body.theme-light i {
   animation-play-state: running;
 }
 body body.theme-light .markdown-rendered mark {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.3);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  background-color: var(
+    --text-highlight-bg,
+    color(srgb 0.54032 0.3608 0.9592 / 0.3)
+  );
+  color: var(--accent-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3308,7 +3411,10 @@ body body.theme-light .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-light .markdown-rendered code {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
+  background-color: var(
+    --code-background,
+    color(srgb 0.54032 0.3608 0.9592 / 0.15)
+  );
   border: 0px solid rgb(224, 224, 224);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -3318,7 +3424,7 @@ body body.theme-light .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--code-normal, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   font-family: var(
     --font-monospace,
     ui-monospace,
@@ -3353,7 +3459,10 @@ body body.theme-light .markdown-rendered pre > code {
 }
 body body.theme-light :not(pre) > code[class*="language-"],
 body body.theme-light pre[class*="language-"] {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
+  background-color: var(
+    --code-background,
+    color(srgb 0.54032 0.3608 0.9592 / 0.15)
+  );
   border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -3422,7 +3531,7 @@ body body.theme-light .markdown-rendered blockquote {
   margin-inline-end: 40px;
 }
 body body.theme-light .footnote-backref {
-  color: rgb(138, 92, 245);
+  color: var(--text-faint, rgb(138, 92, 245));
   text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
@@ -3436,11 +3545,11 @@ body body.theme-light .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--text-normal, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   font-family: "JetBrains Mono", monospace;
 }
 body body.theme-light .search-results {
-  background-color: rgb(228, 228, 228);
+  background-color: var(--prompt-background, rgb(228, 228, 228));
   border: 1px solid rgb(189, 189, 189);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -3517,33 +3626,33 @@ body body.theme-light div.search-results .suggestion-item.is-selected {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 body body.theme-light .published-container .markdown-rendered h1 {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h1-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
+  font-family: var(--h1-font, "JetBrains Mono", monospace);
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h2 {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h2-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
+  font-family: var(--h2-font, "JetBrains Mono", monospace);
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h3 {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h3-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
+  font-family: var(--h3-font, "JetBrains Mono", monospace);
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h4 {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h4-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
+  font-family: var(--h4-font, "JetBrains Mono", monospace);
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h5 {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h5-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
+  font-family: var(--h5-font, "JetBrains Mono", monospace);
   text-shadow: none;
 }
 body body.theme-light .published-container .markdown-rendered h6 {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h6-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
+  font-family: var(--h6-font, "JetBrains Mono", monospace);
   text-shadow: none;
 }
 body
@@ -3604,7 +3713,7 @@ body body.theme-light body {
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   border: 5px dashed rgba(8, 109, 221, 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -3643,7 +3752,7 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
 }
 body body.theme-light .callout > .callout-title > .callout-title-inner {
   color: var(--callout-title-color, rgb(8, 109, 221));
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 body body.theme-light .callout > .callout-content {
   background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
@@ -3654,7 +3763,7 @@ body body.theme-light .callout > .callout-content {
   padding: 8px;
 }
 body body.theme-light .callout[data-callout="abstract"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-summary, 0, 191, 188);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3691,7 +3800,7 @@ body body.theme-light .callout[data-callout="abstract"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-light .callout[data-callout="info"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-info, 8, 109, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3728,7 +3837,7 @@ body body.theme-light .callout[data-callout="info"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-light .callout[data-callout="todo"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-todo, 8, 109, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3765,7 +3874,7 @@ body body.theme-light .callout[data-callout="todo"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-light .callout[data-callout="tip"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-tip, 0, 191, 188);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3802,7 +3911,7 @@ body body.theme-light .callout[data-callout="tip"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-light .callout[data-callout="success"] {
-  --callout-color: 8, 185, 78;
+  --callout-color: var(--callout-success, 8, 185, 78);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3839,7 +3948,7 @@ body body.theme-light .callout[data-callout="success"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-light .callout[data-callout="question"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-question, 236, 117, 0);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3876,7 +3985,7 @@ body body.theme-light .callout[data-callout="question"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-light .callout[data-callout="warning"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-warning, 236, 117, 0);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3913,7 +4022,7 @@ body body.theme-light .callout[data-callout="warning"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-light .callout[data-callout="danger"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-error, 233, 49, 71);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3950,7 +4059,7 @@ body body.theme-light .callout[data-callout="danger"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-light .callout[data-callout="failure"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-fail, 233, 49, 71);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3987,7 +4096,7 @@ body body.theme-light .callout[data-callout="failure"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-light .callout[data-callout="bug"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-bug, 233, 49, 71);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4024,7 +4133,7 @@ body body.theme-light .callout[data-callout="bug"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-light .callout[data-callout="example"] {
-  --callout-color: 120, 82, 238;
+  --callout-color: var(--callout-example, 120, 82, 238);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto
@@ -4061,7 +4170,7 @@ body body.theme-light .callout[data-callout="example"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-light .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -4139,7 +4248,7 @@ body body.theme-light .markdown-rendered tbody {
 }
 body body.theme-light .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.432256 0.28864 0.76736);
+  color: var(--table-header-color, color(srgb 0.432256 0.28864 0.76736));
   font-weight: var(--table-header-weight, 600);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
@@ -4161,7 +4270,7 @@ body body.theme-light .markdown-rendered th {
 }
 body body.theme-light .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--table-text-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   font-weight: 400;
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
@@ -4179,7 +4288,10 @@ body body.theme-light .markdown-rendered td {
   padding: 4px 8px;
 }
 body body.theme-light .markdown-rendered tr {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
+  background-color: var(
+    --table-header-background,
+    color(srgb 0.54032 0.3608 0.9592 / 0.181818)
+  );
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -4191,10 +4303,16 @@ body body.theme-light .markdown-rendered tr {
   border-end-end-radius: 0px;
 }
 body body.theme-light .markdown-rendered tbody tr:nth-child(even) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
+  background-color: var(
+    --table-background,
+    color(srgb 0.54032 0.3608 0.9592 / 0.181818)
+  );
 }
 body body.theme-light .markdown-rendered tbody tr:nth-child(odd) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
+  background-color: var(
+    --table-row-alt-background,
+    color(srgb 0.54032 0.3608 0.9592 / 0.181818)
+  );
 }
 body body.theme-light .markdown-rendered img {
   border-radius: 0px;
@@ -4325,7 +4443,10 @@ body body.theme-light .markdown-embed {
   padding: 0px;
 }
 body body.theme-light .file-embed {
-  background-color: color(srgb 0.450267 0.300667 0.799333 / 0.6);
+  background-color: var(
+    --background-primary-alt,
+    color(srgb 0.450267 0.300667 0.799333 / 0.6)
+  );
   border-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-width: 0px;
   border-top-left-radius: 8px;
@@ -4337,7 +4458,7 @@ body body.theme-light .file-embed {
 }
 body body.theme-light .metadata-container {
   background-color: var(--metadata-background, rgba(0, 0, 0, 0));
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--text-muted, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   font-family: "JetBrains Mono", monospace;
   border: 0px solid rgb(224, 224, 224);
   border-top-left-radius: 0px;
@@ -4389,7 +4510,7 @@ body body.theme-light input[type="range"] {
 }
 body body.theme-light input[type="text"] {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--text-normal, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   font-family:
     "JetBrains Mono",
     monospace,
@@ -4461,9 +4582,12 @@ body body.theme-light details[open] {
   padding: 0px;
 }
 body body.theme-light kbd {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
+  background-color: var(
+    --code-background,
+    color(srgb 0.54032 0.3608 0.9592 / 0.15)
+  );
   box-shadow: none;
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--code-normal, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   font-family: var(
     --font-monospace,
     ui-monospace,
@@ -4681,7 +4805,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--nav-item-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   cursor: var(--cursor, default);
   font-family: "JetBrains Mono", monospace;
   font-weight: var(--nav-item-weight, 400);
@@ -4695,7 +4819,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--nav-item-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   cursor: var(--cursor, default);
   font-family: "JetBrains Mono", monospace;
   font-weight: var(--nav-item-weight, 400);
@@ -4703,7 +4827,7 @@ body
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--icon-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   cursor: var(--cursor, default);
   border-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-width: 0px;
@@ -4713,8 +4837,11 @@ body body.theme-light .clickable-icon {
   border-bottom-right-radius: 4px;
 }
 body body.theme-light .site-footer {
-  background-color: rgb(197, 197, 197);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  background-color: var(--status-bar-background, rgb(197, 197, 197));
+  color: var(
+    --status-bar-text-color,
+    color(srgb 0.300178 0.200444 0.532889 / 0.9)
+  );
   font-family: "JetBrains Mono", monospace;
   border-color: rgb(224, 224, 224);
   border-style: solid;
@@ -4743,7 +4870,7 @@ body body.theme-light .nav-files-container .tree-item {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light .nav-file-title {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--nav-item-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
 }
 body body.theme-light .nav-file-title-content {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
@@ -4760,7 +4887,7 @@ body body.theme-light .nav-files-container {
 }
 body body.theme-light .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--icon-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   cursor: var(--cursor, default);
   border-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-width: 0px;
@@ -4784,11 +4911,11 @@ body body.theme-light .view-header-breadcrumb {
   border-bottom-right-radius: 4px;
 }
 body body.theme-light .view-header-breadcrumb-separator {
-  color: rgb(138, 92, 245);
+  color: var(--text-faint, rgb(138, 92, 245));
   font-family: "JetBrains Mono", monospace;
 }
 body body.theme-light .page-header .page-title {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--text-normal, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   font-family: "JetBrains Mono", monospace;
 }
 body body.theme-light .math-block {
@@ -4991,7 +5118,7 @@ body body.theme-dark .markdown-rendered a.internal-link:hover {
 }
 body body.theme-dark .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--text-muted, color(srgb 0.862096 0.80824 0.98776));
   cursor: auto;
   filter: none;
   backdrop-filter: none;
@@ -5017,7 +5144,7 @@ body body.theme-dark .markdown-rendered p {
 }
 body body.theme-dark strong {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.632256 0.48864 0.96736);
+  color: var(--bold-color, color(srgb 0.632256 0.48864 0.96736));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -5043,7 +5170,7 @@ body body.theme-dark strong {
 }
 body body.theme-dark b {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.632256 0.48864 0.96736);
+  color: var(--bold-color, color(srgb 0.632256 0.48864 0.96736));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -5069,7 +5196,7 @@ body body.theme-dark b {
 }
 body body.theme-dark em {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
+  color: var(--italic-color, color(srgb 0.65524 0.5206 0.9694 / 0.8));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -5095,7 +5222,7 @@ body body.theme-dark em {
 }
 body body.theme-dark i {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
+  color: var(--italic-color, color(srgb 0.65524 0.5206 0.9694 / 0.8));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -5120,8 +5247,11 @@ body body.theme-dark i {
   animation-play-state: running;
 }
 body body.theme-dark .markdown-rendered mark {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.3);
-  color: color(srgb 0.862096 0.80824 0.98776);
+  background-color: var(
+    --text-highlight-bg,
+    color(srgb 0.54032 0.3608 0.9592 / 0.3)
+  );
+  color: var(--accent-color, color(srgb 0.862096 0.80824 0.98776));
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -5280,7 +5410,10 @@ body body.theme-dark .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-dark .markdown-rendered code {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
+  background-color: var(
+    --code-background,
+    color(srgb 0.54032 0.3608 0.9592 / 0.15)
+  );
   border: 0px solid rgb(54, 54, 54);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -5290,7 +5423,7 @@ body body.theme-dark .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--code-normal, color(srgb 0.862096 0.80824 0.98776));
   font-family: var(
     --font-monospace,
     ui-monospace,
@@ -5325,7 +5458,10 @@ body body.theme-dark .markdown-rendered pre > code {
 }
 body body.theme-dark :not(pre) > code[class*="language-"],
 body body.theme-dark pre[class*="language-"] {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
+  background-color: var(
+    --code-background,
+    color(srgb 0.54032 0.3608 0.9592 / 0.15)
+  );
   border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -5394,7 +5530,7 @@ body body.theme-dark .markdown-rendered blockquote {
   margin-inline-end: 40px;
 }
 body body.theme-dark .footnote-backref {
-  color: rgb(138, 92, 245);
+  color: var(--text-faint, rgb(138, 92, 245));
   text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
@@ -5408,11 +5544,11 @@ body body.theme-dark .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--text-normal, color(srgb 0.862096 0.80824 0.98776));
   font-family: "JetBrains Mono", monospace;
 }
 body body.theme-dark .search-results {
-  background-color: rgb(22, 22, 22);
+  background-color: var(--prompt-background, rgb(22, 22, 22));
   border: 1px solid rgb(85, 85, 85);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -5492,33 +5628,33 @@ body body.theme-dark div.search-results .suggestion-item.is-selected {
   color: color(srgb 0.862096 0.80824 0.98776);
 }
 body body.theme-dark .published-container .markdown-rendered h1 {
-  color: color(srgb 0.862096 0.80824 0.98776);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h1-color, color(srgb 0.862096 0.80824 0.98776));
+  font-family: var(--h1-font, "JetBrains Mono", monospace);
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
-  color: color(srgb 0.862096 0.80824 0.98776);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h2-color, color(srgb 0.862096 0.80824 0.98776));
+  font-family: var(--h2-font, "JetBrains Mono", monospace);
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
-  color: color(srgb 0.862096 0.80824 0.98776);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h3-color, color(srgb 0.862096 0.80824 0.98776));
+  font-family: var(--h3-font, "JetBrains Mono", monospace);
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
-  color: color(srgb 0.862096 0.80824 0.98776);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h4-color, color(srgb 0.862096 0.80824 0.98776));
+  font-family: var(--h4-font, "JetBrains Mono", monospace);
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
-  color: color(srgb 0.862096 0.80824 0.98776);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h5-color, color(srgb 0.862096 0.80824 0.98776));
+  font-family: var(--h5-font, "JetBrains Mono", monospace);
   text-shadow: none;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
-  color: color(srgb 0.862096 0.80824 0.98776);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h6-color, color(srgb 0.862096 0.80824 0.98776));
+  font-family: var(--h6-font, "JetBrains Mono", monospace);
   text-shadow: none;
 }
 body
@@ -5579,7 +5715,7 @@ body body.theme-dark body {
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border: 5px dashed rgba(2, 122, 255, 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -5618,7 +5754,7 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
   color: var(--callout-title-color, rgb(2, 122, 255));
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 body body.theme-dark .callout > .callout-content {
   background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
@@ -5629,7 +5765,7 @@ body body.theme-dark .callout > .callout-content {
   padding: 8px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -5666,7 +5802,7 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-dark .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5703,7 +5839,7 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-dark .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5740,7 +5876,7 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-dark .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -5777,7 +5913,7 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-dark .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
@@ -5814,7 +5950,7 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-dark .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -5851,7 +5987,7 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-dark .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -5888,7 +6024,7 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-dark .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5925,7 +6061,7 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-dark .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5962,7 +6098,7 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-dark .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5999,7 +6135,7 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-dark .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
@@ -6036,7 +6172,7 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
     padding-box border-box;
 }
 body body.theme-dark .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -6114,7 +6250,7 @@ body body.theme-dark .markdown-rendered tbody {
 }
 body body.theme-dark .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.632256 0.48864 0.96736);
+  color: var(--table-header-color, color(srgb 0.632256 0.48864 0.96736));
   font-weight: var(--table-header-weight, 600);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
@@ -6136,7 +6272,7 @@ body body.theme-dark .markdown-rendered th {
 }
 body body.theme-dark .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--table-text-color, color(srgb 0.862096 0.80824 0.98776));
   font-weight: 400;
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
@@ -6154,7 +6290,10 @@ body body.theme-dark .markdown-rendered td {
   padding: 4px 8px;
 }
 body body.theme-dark .markdown-rendered tr {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
+  background-color: var(
+    --table-header-background,
+    color(srgb 0.54032 0.3608 0.9592 / 0.181818)
+  );
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6166,10 +6305,16 @@ body body.theme-dark .markdown-rendered tr {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(even) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
+  background-color: var(
+    --table-background,
+    color(srgb 0.54032 0.3608 0.9592 / 0.181818)
+  );
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(odd) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
+  background-color: var(
+    --table-row-alt-background,
+    color(srgb 0.54032 0.3608 0.9592 / 0.181818)
+  );
 }
 body body.theme-dark .markdown-rendered img {
   border-radius: 0px;
@@ -6300,7 +6445,10 @@ body body.theme-dark .markdown-embed {
   padding: 0px;
 }
 body body.theme-dark .file-embed {
-  background-color: color(srgb 0.616933 0.467333 0.966 / 0.6);
+  background-color: var(
+    --background-primary-alt,
+    color(srgb 0.616933 0.467333 0.966 / 0.6)
+  );
   border-color: color(srgb 0.862096 0.80824 0.98776);
   border-width: 0px;
   border-top-left-radius: 8px;
@@ -6312,7 +6460,7 @@ body body.theme-dark .file-embed {
 }
 body body.theme-dark .metadata-container {
   background-color: var(--metadata-background, rgba(0, 0, 0, 0));
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--text-muted, color(srgb 0.862096 0.80824 0.98776));
   font-family: "JetBrains Mono", monospace;
   border: 0px solid rgb(54, 54, 54);
   border-top-left-radius: 0px;
@@ -6364,7 +6512,7 @@ body body.theme-dark input[type="range"] {
 }
 body body.theme-dark input[type="text"] {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--text-normal, color(srgb 0.862096 0.80824 0.98776));
   font-family:
     "JetBrains Mono",
     monospace,
@@ -6436,9 +6584,12 @@ body body.theme-dark details[open] {
   padding: 0px;
 }
 body body.theme-dark kbd {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
+  background-color: var(
+    --code-background,
+    color(srgb 0.54032 0.3608 0.9592 / 0.15)
+  );
   box-shadow: none;
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--code-normal, color(srgb 0.862096 0.80824 0.98776));
   font-family: var(
     --font-monospace,
     ui-monospace,
@@ -6656,7 +6807,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--nav-item-color, color(srgb 0.862096 0.80824 0.98776));
   cursor: var(--cursor, default);
   font-family: "JetBrains Mono", monospace;
   font-weight: var(--nav-item-weight, 400);
@@ -6670,7 +6821,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--nav-item-color, color(srgb 0.862096 0.80824 0.98776));
   cursor: var(--cursor, default);
   font-family: "JetBrains Mono", monospace;
   font-weight: var(--nav-item-weight, 400);
@@ -6678,7 +6829,7 @@ body
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--icon-color, color(srgb 0.862096 0.80824 0.98776));
   cursor: var(--cursor, default);
   border-color: color(srgb 0.862096 0.80824 0.98776);
   border-width: 0px;
@@ -6688,8 +6839,8 @@ body body.theme-dark .clickable-icon {
   border-bottom-right-radius: 4px;
 }
 body body.theme-dark .site-footer {
-  background-color: rgb(24, 24, 24);
-  color: color(srgb 0.862096 0.80824 0.98776);
+  background-color: var(--status-bar-background, rgb(24, 24, 24));
+  color: var(--status-bar-text-color, color(srgb 0.862096 0.80824 0.98776));
   font-family: "JetBrains Mono", monospace;
   border-color: rgb(54, 54, 54);
   border-style: solid;
@@ -6718,7 +6869,7 @@ body body.theme-dark .nav-files-container .tree-item {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .nav-file-title {
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--nav-item-color, color(srgb 0.862096 0.80824 0.98776));
 }
 body body.theme-dark .nav-file-title-content {
   color: color(srgb 0.862096 0.80824 0.98776);
@@ -6735,7 +6886,7 @@ body body.theme-dark .nav-files-container {
 }
 body body.theme-dark .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--icon-color, color(srgb 0.862096 0.80824 0.98776));
   cursor: var(--cursor, default);
   border-color: color(srgb 0.862096 0.80824 0.98776);
   border-width: 0px;
@@ -6759,11 +6910,11 @@ body body.theme-dark .view-header-breadcrumb {
   border-bottom-right-radius: 4px;
 }
 body body.theme-dark .view-header-breadcrumb-separator {
-  color: rgb(138, 92, 245);
+  color: var(--text-faint, rgb(138, 92, 245));
   font-family: "JetBrains Mono", monospace;
 }
 body body.theme-dark .page-header .page-title {
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--text-normal, color(srgb 0.862096 0.80824 0.98776));
   font-family: "JetBrains Mono", monospace;
 }
 body body.theme-dark .math-block {

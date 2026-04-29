@@ -19,29 +19,26 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root {
-  --background-modifier-border: oklch(25.5% 0.021 279.29);
-  --background-modifier-border-focus: oklch(61.5% 0.028 279.29);
-  --background-modifier-border-hover: oklch(35.5% 0.029 279.29);
-  --background-modifier-form-field: oklch(12% 0.009 279.29);
-  --background-modifier-form-field-hover: oklch(12% 0.009 279.29);
-  --background-primary: oklch(13.5% 0.01 279.29);
-  --background-primary-alt: oklch(25.5% 0.021 279.29);
-  --background-secondary: oklch(18% 0.014 279.29);
-  --background-secondary-alt: oklch(35.5% 0.029 279.29);
-  --bases-cards-background: oklch(13.5% 0.01 279.29);
-  --bases-cards-cover-background: oklch(25.5% 0.021 279.29);
-  --bases-cards-shadow: 0 0 0 1px oklch(25.5% 0.021 279.29);
-  --bases-cards-shadow-hover: 0 0 0 1px oklch(35.5% 0.029 279.29);
-  --bases-embed-border-color: oklch(25.5% 0.021 279.29);
-  --bases-group-heading-property-color: oklch(84.5% 0.01 279.29);
-  --bases-table-border-color: oklch(25.5% 0.021 279.29);
-  --bases-table-cell-background-active: oklch(13.5% 0.01 279.29);
-  --bases-table-cell-background-disabled: oklch(25.5% 0.021 279.29);
-  --bases-table-cell-shadow-active: 0 0 0 2px oklch(61.5% 0.028 279.29);
-  --bases-table-group-background: oklch(25.5% 0.021 279.29);
-  --bases-table-header-background: oklch(13.5% 0.01 279.29);
-  --bases-table-header-color: oklch(84.5% 0.01 279.29);
-  --bases-table-summary-background: oklch(13.5% 0.01 279.29);
+  --background-modifier-border: var(--gray-100, oklch(25.5% 0.021 279.29));
+  --background-modifier-border-focus: var(--gray-400, oklch(61.5% 0.028 279.29));
+  --background-modifier-border-hover: var(--gray-200, oklch(35.5% 0.029 279.29));
+  --background-modifier-form-field: var(--gray-25, oklch(12% 0.009 279.29));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, oklch(12% 0.009 279.29));
+  --background-primary: var(--gray-50, oklch(13.5% 0.01 279.29));
+  --background-primary-alt: var(--gray-100, oklch(25.5% 0.021 279.29));
+  --background-secondary: var(--gray-75, oklch(18% 0.014 279.29));
+  --background-secondary-alt: var(--gray-200, oklch(35.5% 0.029 279.29));
+  --bases-cards-background: var(--background-primary, oklch(13.5% 0.01 279.29));
+  --bases-cards-cover-background: var(--background-primary-alt, oklch(25.5% 0.021 279.29));
+  --bases-embed-border-color: var(--background-modifier-border, oklch(25.5% 0.021 279.29));
+  --bases-group-heading-property-color: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --bases-table-border-color: var(--table-border-color, oklch(25.5% 0.021 279.29));
+  --bases-table-cell-background-active: var(--background-primary, oklch(13.5% 0.01 279.29));
+  --bases-table-cell-background-disabled: var(--background-primary-alt, oklch(25.5% 0.021 279.29));
+  --bases-table-group-background: var(--background-primary-alt, oklch(25.5% 0.021 279.29));
+  --bases-table-header-background: var(--background-primary, oklch(13.5% 0.01 279.29));
+  --bases-table-header-color: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --bases-table-summary-background: var(--background-primary, oklch(13.5% 0.01 279.29));
   --blue: rgb(42, 113, 235);
   --blue-100: oklch(25.5% 0.091 260.58);
   --blue-200: oklch(35.5% 0.127 260.58);
@@ -56,82 +53,77 @@ export const theme: ThemeData = {
   --blue-800: oklch(96.5% 0.01 260.58);
   --blue-900: oklch(98% 0.005 260.58);
   --blue-rgb: 42, 113, 235;
-  --blur-background: color-mix(in srgb, oklch(25.5% 0.021 279.29) 65%, transparent) linear-gradient(oklch(25.5% 0.021 279.29), color-mix(in srgb, oklch(25.5% 0.021 279.29) 65%, transparent));
-  --bodyFont: var(--font-text, "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --bodyFont: var(--font-text-theme, "Inter");
   --bold-modifier: 300;
-  --bold-weight: 700;
-  --callout-bug: oklch(48.5% 0.193 13.65);
-  --callout-content: oklch(84.5% 0.06 260.58);
-  --callout-default: oklch(48.5% 0.173 260.58);
-  --callout-error: oklch(48.5% 0.193 13.65);
-  --callout-example: oklch(48.5% 0.1 97.11);
-  --callout-fail: oklch(48.5% 0.193 13.65);
-  --callout-important: oklch(48.5% 0.134 46.85);
-  --callout-info: oklch(61.5% 0.028 279.29);
-  --callout-padding: 12px 12px;
-  --callout-question: oklch(48.5% 0.134 46.85);
-  --callout-quote: oklch(48.5% 0.039 279.29);
-  --callout-radius: 8px;
-  --callout-success: oklch(48.5% 0.145 140.09);
-  --callout-summary: oklch(48.5% 0.039 279.29);
-  --callout-tip: oklch(48.5% 0.106 161.65);
-  --callout-title-color: oklch(61.5% 0.176 260.58);
-  --callout-todo: oklch(48.5% 0.173 260.58);
-  --callout-warning: oklch(48.5% 0.134 46.85);
-  --canvas-background: oklch(13.5% 0.01 279.29);
-  --canvas-card-label-color: oklch(74.5% 0.018 279.29);
-  --canvas-color: 90, 93, 117;
-  --canvas-color-1: 218, 1, 77;
-  --canvas-color-2: 255, 116, 23;
-  --canvas-color-3: 242, 208, 3;
-  --canvas-color-4: 78, 205, 43;
-  --canvas-color-5: 33, 255, 177;
-  --canvas-color-6: 42, 113, 235;
-  --caret-color: oklch(92% 0.004 279.29);
-  --checkbox-border-color: oklch(48.5% 0.039 279.29);
-  --checkbox-border-color-hover: oklch(84.5% 0.01 279.29);
-  --checkbox-color: oklch(74.5% 0.164 161.65);
-  --checkbox-color-hover: hsl(258, 88%, 66%);
+  --callout-bug: var(--red-300, oklch(48.5% 0.193 13.65));
+  --callout-content: var(--blue-600, oklch(84.5% 0.06 260.58));
+  --callout-default: var(--blue-300, oklch(48.5% 0.173 260.58));
+  --callout-error: var(--red-300, oklch(48.5% 0.193 13.65));
+  --callout-example: var(--yellow-300, oklch(48.5% 0.1 97.11));
+  --callout-fail: var(--red-300, oklch(48.5% 0.193 13.65));
+  --callout-important: var(--orange-300, oklch(48.5% 0.134 46.85));
+  --callout-info: var(--gray-400, oklch(61.5% 0.028 279.29));
+  --callout-padding: var(--size-4-3) var(--size-4-3, 12px 12px);
+  --callout-question: var(--orange-300, oklch(48.5% 0.134 46.85));
+  --callout-quote: var(--gray-300, oklch(48.5% 0.039 279.29));
+  --callout-radius: var(--radius-m, 8px);
+  --callout-success: var(--green-300, oklch(48.5% 0.145 140.09));
+  --callout-summary: var(--gray-300, oklch(48.5% 0.039 279.29));
+  --callout-tip: var(--sea-green-300, oklch(48.5% 0.106 161.65));
+  --callout-title-color: var(--blue-400, oklch(61.5% 0.176 260.58));
+  --callout-title-weight: calc(var(--font-weight) + var(--semibold-modifier));
+  --callout-todo: var(--blue-300, oklch(48.5% 0.173 260.58));
+  --callout-warning: var(--orange-300, oklch(48.5% 0.134 46.85));
+  --canvas-background: var(--background-primary, oklch(13.5% 0.01 279.29));
+  --canvas-card-label-color: var(--text-faint, oklch(74.5% 0.018 279.29));
+  --canvas-color: var(--gray-rgb, 90, 93, 117);
+  --canvas-color-1: var(--red-rgb, 218, 1, 77);
+  --canvas-color-2: var(--orange-rgb, 255, 116, 23);
+  --canvas-color-3: var(--yellow-rgb, 242, 208, 3);
+  --canvas-color-4: var(--green-rgb, 78, 205, 43);
+  --canvas-color-5: var(--sea-green-rgb, 33, 255, 177);
+  --canvas-color-6: var(--blue-rgb, 42, 113, 235);
+  --caret-color: var(--text-normal, oklch(92% 0.004 279.29));
+  --checkbox-border-color: var(--gray-300, oklch(48.5% 0.039 279.29));
+  --checkbox-border-color-hover: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --checkbox-color: var(--sea-green-500, oklch(74.5% 0.164 161.65));
+  --checkbox-color-hover: var(--color-accent, hsl(258, 88%, 66%));
   --checkbox-margin-inline-start: 0.4em;
-  --checkbox-marker-color: oklch(13.5% 0.01 279.29);
-  --checkbox-quote-color: oklch(61.5% 0.028 279.29);
-  --checkbox-radius: 100%;
-  --checklist-done-color: oklch(74.5% 0.164 161.65);
-  --checklist-green-color: oklch(61.5% 0.183 140.09);
-  --checklist-orange-color: oklch(61.5% 0.17 46.85);
-  --checklist-red-color: oklch(61.5% 0.245 13.65);
-  --checklist-yellow-color: oklch(74.5% 0.153 97.11);
-  --code-background: oklch(25.5% 0.021 279.29);
-  --code-border-color: oklch(25.5% 0.021 279.29);
-  --code-comment: oklch(74.5% 0.018 279.29);
-  --code-normal: oklch(92% 0.004 279.29);
-  --code-punctuation: oklch(84.5% 0.01 279.29);
-  --code-radius: 8px;
-  --codeFont: var(--font-text, "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --collapse-icon-color: oklch(74.5% 0.018 279.29);
-  --dark: var(--text-normal, oklch(92% 0.004 279.29));
-  --darkgray: var(--text-normal, oklch(92% 0.004 279.29));
-  --divider-color: oklch(25.5% 0.021 279.29);
-  --dropdown-background: oklch(25.5% 0.021 279.29);
-  --dropdown-background-hover: oklch(35.5% 0.029 279.29);
+  --checkbox-marker-color: var(--background-primary, oklch(13.5% 0.01 279.29));
+  --checkbox-quote-color: var(--gray-400, oklch(61.5% 0.028 279.29));
+  --checkbox-radius: var(--radius-s, 100%);
+  --checklist-done-color: var(--sea-green-500, oklch(74.5% 0.164 161.65));
+  --checklist-green-color: var(--green-400, oklch(61.5% 0.183 140.09));
+  --checklist-orange-color: var(--orange-400, oklch(61.5% 0.17 46.85));
+  --checklist-red-color: var(--red-400, oklch(61.5% 0.245 13.65));
+  --checklist-yellow-color: var(--yellow-500, oklch(74.5% 0.153 97.11));
+  --code-background: var(--background-primary-alt, oklch(25.5% 0.021 279.29));
+  --code-border-color: var(--background-modifier-border, oklch(25.5% 0.021 279.29));
+  --code-comment: var(--text-faint, oklch(74.5% 0.018 279.29));
+  --code-normal: var(--text-normal, oklch(92% 0.004 279.29));
+  --code-punctuation: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --code-radius: var(--radius-m, 8px);
+  --collapse-icon-color: var(--text-faint, oklch(74.5% 0.018 279.29));
+  --dark: var(--text-normal, var(--gray-700, oklch(92% 0.004 279.29)));
+  --darkgray: var(--text-normal, var(--gray-700, oklch(92% 0.004 279.29)));
+  --divider-color: var(--background-modifier-border, oklch(25.5% 0.021 279.29));
+  --dropdown-background: var(--interactive-normal, oklch(25.5% 0.021 279.29));
+  --dropdown-background-hover: var(--interactive-hover, oklch(35.5% 0.029 279.29));
   --ease-out: cubic-bezier(0.33, 1, 0.68, 1);
-  --embed-block-shadow-hover: 0;
-  --file-header-background: oklch(13.5% 0.01 279.29);
-  --file-header-background-focused: oklch(13.5% 0.01 279.29);
-  --file-header-font: "Inter";
-  --file-margins: 40px 32px;
-  --flair-background: oklch(25.5% 0.021 279.29);
-  --flair-color: oklch(92% 0.004 279.29);
-  --font-mermaid: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-print: "Inter", Arial';
-  --font-text: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --file-header-background: var(--background-primary, oklch(13.5% 0.01 279.29));
+  --file-header-background-focused: var(--background-primary, oklch(13.5% 0.01 279.29));
+  --file-header-font: var(--font-interface, "Inter");
+  --file-margins: var(--size-4-10) var(--size-4-8, 40px 32px);
+  --flair-background: var(--interactive-normal, oklch(25.5% 0.021 279.29));
+  --flair-color: var(--text-normal, oklch(92% 0.004 279.29));
+  --font-mermaid: var(--font-text, "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   --font-text-theme: "Inter";
-  --footnote-divider-color: oklch(25.5% 0.021 279.29);
-  --footnote-id-color: oklch(84.5% 0.01 279.29);
-  --footnote-id-color-no-occurrences: oklch(74.5% 0.018 279.29);
-  --graph-node: oklch(84.5% 0.01 279.29);
-  --graph-node-unresolved: oklch(74.5% 0.018 279.29);
-  --graph-text: oklch(92% 0.004 279.29);
+  --footnote-divider-color: var(--metadata-divider-color, oklch(25.5% 0.021 279.29));
+  --footnote-id-color: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --footnote-id-color-no-occurrences: var(--text-faint, oklch(74.5% 0.018 279.29));
+  --graph-node: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --graph-node-unresolved: var(--text-faint, oklch(74.5% 0.018 279.29));
+  --graph-text: var(--text-normal, oklch(92% 0.004 279.29));
   --gray: rgb(90, 93, 117);
   --gray-100: oklch(25.5% 0.021 279.29);
   --gray-200: oklch(35.5% 0.029 279.29);
@@ -160,74 +152,73 @@ export const theme: ThemeData = {
   --green-800: oklch(96.5% 0.043 140.09);
   --green-900: oklch(98% 0.022 140.09);
   --green-rgb: 78, 205, 43;
-  --h1-color: oklch(61.5% 0.17 288);
+  --h1-color: var(--purple-400, oklch(61.5% 0.17 288));
   --h1-font: "Bricolage Grotesque";
   --h1-weight: 550;
-  --h2-color: rgb(242, 66, 255);
+  --h2-color: var(--pink, rgb(242, 66, 255));
   --h2-font: "Bricolage Grotesque";
   --h2-weight: 500;
-  --h3-color: rgb(255, 116, 23);
+  --h3-color: var(--orange, rgb(255, 116, 23));
   --h3-font: "Bricolage Grotesque";
   --h3-weight: 550;
-  --h4-color: rgb(218, 1, 77);
+  --h4-color: var(--red, rgb(218, 1, 77));
   --h4-font: "Bricolage Grotesque";
   --h4-weight: 650;
-  --h5-color: oklch(84.5% 0.01 279.29);
+  --h5-color: var(--gray-600, oklch(84.5% 0.01 279.29));
   --h5-font: "Bricolage Grotesque";
   --h5-weight: 600;
-  --h6-color: oklch(84.5% 0.01 279.29);
+  --h6-color: var(--gray-600, oklch(84.5% 0.01 279.29));
   --h6-font: "Bricolage Grotesque";
   --h6-weight: 650;
-  --headerFont: var(--font-text, "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --heading-formatting: oklch(74.5% 0.018 279.29);
-  --highlight: var(--text-highlight-bg, oklch(84.5% 0.174 97.11));
-  --highlight-text-color: oklch(12% 0.009 279.29);
-  --hr-color: oklch(25.5% 0.021 279.29);
-  --icon-color: oklch(61.5% 0.028 279.29);
-  --icon-color-focused: oklch(92% 0.004 279.29);
-  --icon-color-hover: oklch(84.5% 0.01 279.29);
-  --inline-title-color: oklch(61.5% 0.17 288);
-  --inline-title-font: "Bricolage Grotesque";
-  --inline-title-line-height: 105%;
-  --inline-title-weight: 550;
-  --input-date-separator: oklch(74.5% 0.018 279.29);
-  --input-font-weight: 600;
-  --input-placeholder-color: oklch(74.5% 0.018 279.29);
-  --interactive-hover: oklch(35.5% 0.029 279.29);
-  --interactive-normal: oklch(25.5% 0.021 279.29);
-  --light: var(--background-primary, oklch(13.5% 0.01 279.29));
-  --lightgray: var(--background-secondary, oklch(18% 0.014 279.29));
+  --header-height: var(--size-4-10, 40px);
+  --headerFont: var(--font-text-theme, "Inter");
+  --heading-formatting: var(--text-faint, oklch(74.5% 0.018 279.29));
+  --highlight: var(--text-highlight-bg, var(--yellow-600, oklch(84.5% 0.174 97.11)));
+  --highlight-text-color: var(--text-inverse, oklch(12% 0.009 279.29));
+  --hr-color: var(--background-modifier-border, oklch(25.5% 0.021 279.29));
+  --icon-color: var(--gray-400, oklch(61.5% 0.028 279.29));
+  --icon-color-focused: var(--text-normal, oklch(92% 0.004 279.29));
+  --icon-color-hover: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --inline-title-color: var(--h1-color, oklch(61.5% 0.17 288));
+  --inline-title-font: var(--h1-font, "Bricolage Grotesque");
+  --inline-title-line-height: var(--h1-line-height, 105%);
+  --inline-title-weight: var(--h1-weight, 550);
+  --input-date-separator: var(--text-faint, oklch(74.5% 0.018 279.29));
+  --input-font-weight: var(--font-normal, 600);
+  --input-placeholder-color: var(--text-faint, oklch(74.5% 0.018 279.29));
+  --interactive-hover: var(--gray-200, oklch(35.5% 0.029 279.29));
+  --interactive-normal: var(--gray-100, oklch(25.5% 0.021 279.29));
+  --light: var(--background-primary, var(--gray-50, oklch(13.5% 0.01 279.29)));
+  --lightgray: var(--background-secondary, var(--gray-75, oklch(18% 0.014 279.29)));
   --link-decoration: none;
   --list-indent-source: 0px;
-  --list-marker-color: oklch(74.5% 0.018 279.29);
-  --list-marker-color-hover: oklch(84.5% 0.01 279.29);
+  --list-marker-color: var(--text-faint, oklch(74.5% 0.018 279.29));
+  --list-marker-color-hover: var(--text-muted, oklch(84.5% 0.01 279.29));
   --list-padding-inline-start: 0px;
-  --menu-background: oklch(18% 0.014 279.29);
-  --menu-border-color: oklch(35.5% 0.029 279.29);
-  --metadata-border-color: oklch(25.5% 0.021 279.29);
-  --metadata-divider-color: oklch(25.5% 0.021 279.29);
-  --metadata-input-text-color: oklch(92% 0.004 279.29);
-  --metadata-label-text-color: oklch(84.5% 0.01 279.29);
-  --metadata-label-text-color-hover: oklch(84.5% 0.01 279.29);
-  --metadata-property-box-shadow-focus: 0 0 0 2px oklch(61.5% 0.028 279.29);
-  --metadata-property-box-shadow-hover: 0 0 0 1px oklch(35.5% 0.029 279.29);
-  --modal-background: oklch(13.5% 0.01 279.29);
-  --modal-border-color: oklch(35.5% 0.029 279.29);
-  --nav-collapse-icon-color: oklch(74.5% 0.018 279.29);
-  --nav-collapse-icon-color-collapsed: oklch(74.5% 0.018 279.29);
-  --nav-heading-color: oklch(92% 0.004 279.29);
-  --nav-heading-color-collapsed: oklch(74.5% 0.018 279.29);
-  --nav-heading-color-collapsed-hover: oklch(84.5% 0.01 279.29);
-  --nav-heading-color-hover: oklch(92% 0.004 279.29);
-  --nav-item-background-active: oklch(25.5% 0.021 279.29);
-  --nav-item-background-hover: oklch(25.5% 0.021 279.29);
-  --nav-item-color: oklch(84.5% 0.01 279.29);
-  --nav-item-color-active: oklch(92% 0.004 279.29);
-  --nav-item-color-hover: oklch(92% 0.004 279.29);
-  --nav-item-color-selected: oklch(92% 0.004 279.29);
-  --nav-tag-color: oklch(74.5% 0.018 279.29);
-  --nav-tag-color-active: oklch(84.5% 0.01 279.29);
-  --nav-tag-color-hover: oklch(84.5% 0.01 279.29);
+  --menu-background: var(--background-secondary, oklch(18% 0.014 279.29));
+  --menu-border-color: var(--background-modifier-border-hover, oklch(35.5% 0.029 279.29));
+  --metadata-border-color: var(--background-modifier-border, oklch(25.5% 0.021 279.29));
+  --metadata-divider-color: var(--background-modifier-border, oklch(25.5% 0.021 279.29));
+  --metadata-input-text-color: var(--text-normal, oklch(92% 0.004 279.29));
+  --metadata-label-text-color: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --metadata-label-text-color-hover: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --modal-background: var(--background-primary, oklch(13.5% 0.01 279.29));
+  --modal-border-color: var(--gray-200, oklch(35.5% 0.029 279.29));
+  --nav-collapse-icon-color: var(--collapse-icon-color, oklch(74.5% 0.018 279.29));
+  --nav-collapse-icon-color-collapsed: var(--text-faint, oklch(74.5% 0.018 279.29));
+  --nav-heading-color: var(--text-normal, oklch(92% 0.004 279.29));
+  --nav-heading-color-collapsed: var(--text-faint, oklch(74.5% 0.018 279.29));
+  --nav-heading-color-collapsed-hover: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --nav-heading-color-hover: var(--text-normal, oklch(92% 0.004 279.29));
+  --nav-item-background-active: var(--gray-100, oklch(25.5% 0.021 279.29));
+  --nav-item-background-hover: var(--gray-100, oklch(25.5% 0.021 279.29));
+  --nav-item-color: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --nav-item-color-active: var(--gray-700, oklch(92% 0.004 279.29));
+  --nav-item-color-hover: var(--text-normal, oklch(92% 0.004 279.29));
+  --nav-item-color-selected: var(--text-normal, oklch(92% 0.004 279.29));
+  --nav-tag-color: var(--text-faint, oklch(74.5% 0.018 279.29));
+  --nav-tag-color-active: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --nav-tag-color-hover: var(--text-muted, oklch(84.5% 0.01 279.29));
   --orange: rgb(255, 116, 23);
   --orange-100: oklch(25.5% 0.07 46.85);
   --orange-200: oklch(35.5% 0.098 46.85);
@@ -243,16 +234,14 @@ export const theme: ThemeData = {
   --orange-900: oklch(98% 0.007 46.85);
   --orange-rgb: 255, 116, 23;
   --padding-inline-start: 0px;
-  --pdf-background: oklch(13.5% 0.01 279.29);
-  --pdf-page-background: oklch(13.5% 0.01 279.29);
-  --pdf-shadow: 0 0 0 1px oklch(25.5% 0.021 279.29);
-  --pdf-sidebar-background: oklch(13.5% 0.01 279.29);
-  --pdf-thumbnail-shadow: 0 0 0 1px oklch(25.5% 0.021 279.29);
-  --pill-border-color: oklch(25.5% 0.021 279.29);
-  --pill-border-color-hover: oklch(35.5% 0.029 279.29);
-  --pill-color: oklch(84.5% 0.01 279.29);
-  --pill-color-hover: oklch(92% 0.004 279.29);
-  --pill-color-remove: oklch(74.5% 0.018 279.29);
+  --pdf-background: var(--background-primary, oklch(13.5% 0.01 279.29));
+  --pdf-page-background: var(--background-primary, oklch(13.5% 0.01 279.29));
+  --pdf-sidebar-background: var(--background-primary, oklch(13.5% 0.01 279.29));
+  --pill-border-color: var(--background-modifier-border, oklch(25.5% 0.021 279.29));
+  --pill-border-color-hover: var(--background-modifier-border-hover, oklch(35.5% 0.029 279.29));
+  --pill-color: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --pill-color-hover: var(--text-normal, oklch(92% 0.004 279.29));
+  --pill-color-remove: var(--text-faint, oklch(74.5% 0.018 279.29));
   --pink: rgb(242, 66, 255);
   --pink-100: oklch(25.5% 0.119 324.98);
   --pink-200: oklch(35.5% 0.165 324.98);
@@ -267,7 +256,7 @@ export const theme: ThemeData = {
   --pink-800: oklch(96.5% 0.021 324.98);
   --pink-900: oklch(98% 0.011 324.98);
   --pink-rgb: 242, 66, 255;
-  --prompt-background: oklch(13.5% 0.01 279.29);
+  --prompt-background: var(--background-primary, oklch(13.5% 0.01 279.29));
   --purple: rgb(45, 36, 141);
   --purple-100: oklch(25.5% 0.112 288);
   --purple-200: oklch(35.5% 0.156 288);
@@ -282,7 +271,7 @@ export const theme: ThemeData = {
   --purple-800: oklch(96.5% 0.009 288);
   --purple-900: oklch(98% 0.005 288);
   --purple-rgb: 45, 36, 141;
-  --raised-background: color-mix(in srgb, oklch(25.5% 0.021 279.29) 65%, transparent) linear-gradient(oklch(25.5% 0.021 279.29), color-mix(in srgb, oklch(25.5% 0.021 279.29) 65%, transparent));
+  --raised-background: var(--blur-background, color-mix(in srgb, oklch(25.5% 0.021 279.29) 65%, transparent) linear-gradient(oklch(25.5% 0.021 279.29), color-mix(in srgb, oklch(25.5% 0.021 279.29) 65%, transparent)));
   --red: rgb(218, 1, 77);
   --red-100: oklch(25.5% 0.102 13.65);
   --red-200: oklch(35.5% 0.142 13.65);
@@ -297,10 +286,10 @@ export const theme: ThemeData = {
   --red-800: oklch(96.5% 0.012 13.65);
   --red-900: oklch(98% 0.007 13.65);
   --red-rgb: 218, 1, 77;
-  --ribbon-background: oklch(18% 0.014 279.29);
-  --ribbon-background-collapsed: oklch(13.5% 0.01 279.29);
-  --scrollbar-active-thumb-bg: oklch(35.5% 0.029 279.29);
-  --scrollbar-thumb-bg: oklch(25.5% 0.021 279.29);
+  --ribbon-background: var(--background-secondary, oklch(18% 0.014 279.29));
+  --ribbon-background-collapsed: var(--background-primary, oklch(13.5% 0.01 279.29));
+  --scrollbar-active-thumb-bg: var(--gray-200, oklch(35.5% 0.029 279.29));
+  --scrollbar-thumb-bg: var(--gray-100, oklch(25.5% 0.021 279.29));
   --sea-green: rgb(33, 255, 177);
   --sea-green-100: oklch(25.5% 0.056 161.65);
   --sea-green-200: oklch(35.5% 0.078 161.65);
@@ -315,70 +304,69 @@ export const theme: ThemeData = {
   --sea-green-800: oklch(96.5% 0.041 161.65);
   --sea-green-900: oklch(98% 0.021 161.65);
   --sea-green-rgb: 33, 255, 177;
-  --search-clear-button-color: oklch(84.5% 0.01 279.29);
-  --search-icon-color: oklch(84.5% 0.01 279.29);
-  --search-result-background: oklch(13.5% 0.01 279.29);
+  --search-clear-button-color: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --search-icon-color: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --search-result-background: var(--background-primary, oklch(13.5% 0.01 279.29));
   --semibold-modifier: 200;
-  --setting-group-heading-color: oklch(92% 0.004 279.29);
-  --setting-items-background: oklch(25.5% 0.021 279.29);
-  --setting-items-border-color: oklch(25.5% 0.021 279.29);
-  --shiki-active-tab-border-color: oklch(84.5% 0.01 279.29);
-  --shiki-code-background: oklch(25.5% 0.021 279.29);
-  --shiki-code-block-border-radius: 8px;
-  --shiki-code-comment: oklch(74.5% 0.018 279.29);
-  --shiki-code-normal: oklch(84.5% 0.01 279.29);
-  --shiki-code-punctuation: oklch(84.5% 0.01 279.29);
-  --shiki-gutter-border-color: oklch(25.5% 0.021 279.29);
-  --shiki-gutter-text-color: oklch(74.5% 0.018 279.29);
-  --shiki-gutter-text-color-highlight: oklch(84.5% 0.01 279.29);
-  --shiki-highlight-neutral: oklch(84.5% 0.01 279.29);
-  --shiki-terminal-dots-color: oklch(74.5% 0.018 279.29);
-  --slider-thumb-border-color: oklch(35.5% 0.029 279.29);
-  --slider-track-background: oklch(25.5% 0.021 279.29);
-  --status-bar-background: oklch(18% 0.014 279.29);
-  --status-bar-border-color: oklch(25.5% 0.021 279.29);
-  --status-bar-text-color: oklch(84.5% 0.01 279.29);
-  --suggestion-background: oklch(13.5% 0.01 279.29);
-  --tab-background-active: oklch(13.5% 0.01 279.29);
-  --tab-container-background: oklch(18% 0.014 279.29);
-  --tab-divider-color: oklch(35.5% 0.029 279.29);
-  --tab-outline-color: oklch(25.5% 0.021 279.29);
-  --tab-radius: 0;
+  --setting-group-heading-color: var(--text-normal, oklch(92% 0.004 279.29));
+  --setting-items-background: var(--background-primary-alt, oklch(25.5% 0.021 279.29));
+  --setting-items-border-color: var(--background-modifier-border, oklch(25.5% 0.021 279.29));
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, oklch(84.5% 0.01 279.29));
+  --shiki-code-background: var(--code-background, oklch(25.5% 0.021 279.29));
+  --shiki-code-block-border-radius: var(--code-radius, 8px);
+  --shiki-code-comment: var(--text-faint, oklch(74.5% 0.018 279.29));
+  --shiki-code-normal: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --shiki-code-punctuation: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --shiki-gutter-border-color: var(--background-modifier-border, oklch(25.5% 0.021 279.29));
+  --shiki-gutter-text-color: var(--text-faint, oklch(74.5% 0.018 279.29));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, oklch(84.5% 0.01 279.29));
+  --shiki-highlight-neutral: var(--shiki-code-normal, oklch(84.5% 0.01 279.29));
+  --shiki-terminal-dots-color: var(--text-faint, oklch(74.5% 0.018 279.29));
+  --slider-thumb-border-color: var(--background-modifier-border-hover, oklch(35.5% 0.029 279.29));
+  --slider-track-background: var(--background-modifier-border, oklch(25.5% 0.021 279.29));
+  --status-bar-background: var(--background-secondary, oklch(18% 0.014 279.29));
+  --status-bar-border-color: var(--divider-color, oklch(25.5% 0.021 279.29));
+  --status-bar-text-color: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --suggestion-background: var(--background-primary, oklch(13.5% 0.01 279.29));
+  --tab-background-active: var(--background-primary, oklch(13.5% 0.01 279.29));
+  --tab-container-background: var(--background-secondary, oklch(18% 0.014 279.29));
+  --tab-divider-color: var(--background-modifier-border-hover, oklch(35.5% 0.029 279.29));
+  --tab-outline-color: var(--divider-color, oklch(25.5% 0.021 279.29));
+  --tab-radius: var(--radius-s, 0);
   --tab-radius-active: 0;
-  --tab-switcher-background: oklch(18% 0.014 279.29);
-  --tab-switcher-menubar-background: linear-gradient(to top, oklch(18% 0.014 279.29), transparent);
-  --tab-text-color: oklch(74.5% 0.018 279.29);
-  --tab-text-color-active: oklch(84.5% 0.01 279.29);
-  --tab-text-color-focused: oklch(84.5% 0.01 279.29);
-  --tab-text-color-focused-active: oklch(84.5% 0.01 279.29);
-  --tab-text-color-focused-active-current: oklch(92% 0.004 279.29);
-  --table-add-button-border-color: oklch(25.5% 0.021 279.29);
-  --table-border-color: oklch(25.5% 0.021 279.29);
-  --table-drag-handle-color: oklch(74.5% 0.018 279.29);
-  --table-header-background: oklch(25.5% 0.021 279.29);
-  --table-header-border-color: oklch(25.5% 0.021 279.29);
-  --table-header-color: oklch(92% 0.004 279.29);
-  --table-header-weight: 700;
-  --tag-background: oklch(35.5% 0.127 260.58);
-  --tag-color: oklch(84.5% 0.06 260.58);
-  --text-error: oklch(61.5% 0.245 13.65);
-  --text-faint: oklch(74.5% 0.018 279.29);
-  --text-highlight-bg: oklch(84.5% 0.174 97.11);
-  --text-inverse: oklch(12% 0.009 279.29);
-  --text-muted: oklch(84.5% 0.01 279.29);
-  --text-normal: oklch(92% 0.004 279.29);
-  --text-success: oklch(61.5% 0.183 140.09);
-  --text-warning: oklch(61.5% 0.17 46.85);
-  --textHighlight: var(--text-highlight-bg, oklch(84.5% 0.174 97.11));
-  --titleFont: var(--font-text, "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --titlebar-background: oklch(13.5% 0.01 279.29);
-  --titlebar-background-focused: oklch(18% 0.014 279.29);
-  --titlebar-border-color: oklch(25.5% 0.021 279.29);
-  --titlebar-height: 36px;
-  --titlebar-text-color: oklch(84.5% 0.01 279.29);
-  --titlebar-text-color-focused: oklch(92% 0.004 279.29);
-  --vault-profile-color: oklch(92% 0.004 279.29);
-  --vault-profile-color-hover: oklch(92% 0.004 279.29);
+  --tab-switcher-background: var(--background-secondary, oklch(18% 0.014 279.29));
+  --tab-text-color: var(--text-faint, oklch(74.5% 0.018 279.29));
+  --tab-text-color-active: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --tab-text-color-focused: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --tab-text-color-focused-active: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --tab-text-color-focused-active-current: var(--text-normal, oklch(92% 0.004 279.29));
+  --table-add-button-border-color: var(--background-modifier-border, oklch(25.5% 0.021 279.29));
+  --table-border-color: var(--background-modifier-border, oklch(25.5% 0.021 279.29));
+  --table-drag-handle-color: var(--text-faint, oklch(74.5% 0.018 279.29));
+  --table-header-background: var(--gray-100, oklch(25.5% 0.021 279.29));
+  --table-header-border-color: var(--table-border-color, oklch(25.5% 0.021 279.29));
+  --table-header-color: var(--text-normal, oklch(92% 0.004 279.29));
+  --tag-background: var(--blue-200, oklch(35.5% 0.127 260.58));
+  --tag-color: var(--blue-600, oklch(84.5% 0.06 260.58));
+  --text-error: var(--red-400, oklch(61.5% 0.245 13.65));
+  --text-faint: var(--gray-500, oklch(74.5% 0.018 279.29));
+  --text-highlight-bg: var(--yellow-600, oklch(84.5% 0.174 97.11));
+  --text-inverse: var(--gray-25, oklch(12% 0.009 279.29));
+  --text-muted: var(--gray-600, oklch(84.5% 0.01 279.29));
+  --text-normal: var(--gray-700, oklch(92% 0.004 279.29));
+  --text-selection: hsla(var(--color-accent-hsl), 0.2);
+  --text-success: var(--green-400, oklch(61.5% 0.183 140.09));
+  --text-warning: var(--orange-400, oklch(61.5% 0.17 46.85));
+  --textHighlight: var(--text-highlight-bg, var(--yellow-600, oklch(84.5% 0.174 97.11)));
+  --titleFont: var(--font-text-theme, "Inter");
+  --titlebar-background: var(--gray-50, oklch(13.5% 0.01 279.29));
+  --titlebar-background-focused: var(--gray-75, oklch(18% 0.014 279.29));
+  --titlebar-border-color: var(--background-modifier-border, oklch(25.5% 0.021 279.29));
+  --titlebar-height: var(--size-4-9, 36px);
+  --titlebar-text-color: var(--text-muted, oklch(84.5% 0.01 279.29));
+  --titlebar-text-color-focused: var(--text-normal, oklch(92% 0.004 279.29));
+  --vault-profile-color: var(--text-normal, oklch(92% 0.004 279.29));
+  --vault-profile-color-hover: var(--vault-profile-color, oklch(92% 0.004 279.29));
   --yellow: rgb(242, 208, 3);
   --yellow-100: oklch(25.5% 0.052 97.11);
   --yellow-200: oklch(35.5% 0.072 97.11);
@@ -402,17 +390,17 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: oklch(0.18 0.014 279.29);
+  background-color: var(--tab-container-background, oklch(0.18 0.014 279.29));
   color: oklch(0.92 0.004 279.29);
 }
 
 html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
-  background-color: oklch(0.135 0.01 279.29);
+  background-color: var(--background-primary, oklch(0.135 0.01 279.29));
   color: oklch(0.92 0.004 279.29);
 }
 
 html body .page > div#quartz-body div.sidebar {
-  background-color: oklch(0.18 0.014 279.29);
+  background-color: var(--background-secondary, oklch(0.18 0.014 279.29));
   color: oklch(0.92 0.004 279.29);
 }
 
@@ -421,7 +409,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
-  background-color: oklch(0.18 0.014 279.29);
+  background-color: var(--tab-container-background, oklch(0.18 0.014 279.29));
   border-left-color: oklch(0.255 0.021 279.29);
   color: oklch(0.92 0.004 279.29);
 }
@@ -430,38 +418,36 @@ html body html {
   --ease-out: cubic-bezier(0.33, 1, 0.68, 1);
 }`,
     typography: `html body .markdown-rendered p > b, html b {
-  color: oklch(0.92 0.004 279.29);
+  color: var(--bold-color, oklch(0.92 0.004 279.29));
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 700;
   outline: oklch(0.92 0.004 279.29) none 0px;
   text-decoration-color: oklch(0.92 0.004 279.29);
 }
 
 html body .markdown-rendered p > em, html em {
-  color: oklch(0.92 0.004 279.29);
+  color: var(--italic-color, oklch(0.92 0.004 279.29));
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: oklch(0.92 0.004 279.29) none 0px;
   text-decoration-color: oklch(0.92 0.004 279.29);
 }
 
 html body .markdown-rendered p > i, html i {
-  color: oklch(0.92 0.004 279.29);
+  color: var(--italic-color, oklch(0.92 0.004 279.29));
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: oklch(0.92 0.004 279.29) none 0px;
   text-decoration-color: oklch(0.92 0.004 279.29);
 }
 
 html body .markdown-rendered p > strong, html strong {
-  color: oklch(0.92 0.004 279.29);
+  color: var(--bold-color, oklch(0.92 0.004 279.29));
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 700;
   outline: oklch(0.92 0.004 279.29) none 0px;
   text-decoration-color: oklch(0.92 0.004 279.29);
 }
 
 html body .text-highlight {
-  background-color: oklch(0.845 0.174 97.11);
-  color: oklch(0.12 0.009 279.29);
+  background-color: var(--text-highlight-bg, oklch(0.845 0.174 97.11));
+  color: var(--text-normal, oklch(0.12 0.009 279.29));
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: oklch(0.12 0.009 279.29) none 0px;
   text-decoration-color: oklch(0.12 0.009 279.29);
@@ -475,7 +461,7 @@ html body del {
 }
 
 html body h1.article-title {
-  color: oklch(0.92 0.004 279.29);
+  color: var(--text-normal, oklch(0.92 0.004 279.29));
 }
 
 html body li.task-list-item input[type="checkbox"] {
@@ -484,12 +470,12 @@ html body li.task-list-item input[type="checkbox"] {
 }
 
 html body li.task-list-item input[type="checkbox"]:checked {
-  background-color: oklch(0.745 0.164 161.65);
+  background-color: var(--checkbox-color, oklch(0.745 0.164 161.65));
   border-color: oklch(0.745 0.164 161.65);
 }
 
 html body p {
-  color: oklch(0.845 0.01 279.29);
+  color: var(--text-muted, oklch(0.845 0.01 279.29));
   outline: oklch(0.845 0.01 279.29) none 0px;
   text-decoration-color: oklch(0.845 0.01 279.29);
 }`,
@@ -528,7 +514,7 @@ html body ul.overflow {
   border-top-color: oklch(0.92 0.004 279.29);
 }`,
     blockquotes: `html body .data-footnote-backref {
-  color: oklch(0.745 0.018 279.29);
+  color: var(--text-faint, oklch(0.745 0.018 279.29));
 }
 
 html body blockquote {
@@ -552,7 +538,7 @@ html body td {
   border-left-color: oklch(0.255 0.021 279.29);
   border-right-color: oklch(0.255 0.021 279.29);
   border-top-color: oklch(0.255 0.021 279.29);
-  color: oklch(0.92 0.004 279.29);
+  color: var(--table-text-color, oklch(0.92 0.004 279.29));
 }
 
 html body th {
@@ -560,15 +546,15 @@ html body th {
   border-left-color: oklch(0.255 0.021 279.29);
   border-right-color: oklch(0.255 0.021 279.29);
   border-top-color: oklch(0.255 0.021 279.29);
-  color: oklch(0.92 0.004 279.29);
-  font-weight: 700;
+  color: var(--table-header-color, oklch(0.92 0.004 279.29));
+  font-weight: var(--table-header-weight, 700);
 }
 
 html body tr {
-  background-color: oklch(0.255 0.021 279.29);
+  background-color: var(--table-header-background, oklch(0.255 0.021 279.29));
 }`,
     code: `html body code {
-  background-color: oklch(0.255 0.021 279.29);
+  background-color: var(--code-background, oklch(0.255 0.021 279.29));
   border-bottom-color: oklch(0.255 0.021 279.29);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -577,11 +563,11 @@ html body tr {
   border-top-color: oklch(0.255 0.021 279.29);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: oklch(0.92 0.004 279.29);
+  color: var(--code-normal, oklch(0.92 0.004 279.29));
 }
 
 html body pre:has(> code) {
-  background-color: oklch(0.255 0.021 279.29);
+  background-color: var(--code-background, oklch(0.255 0.021 279.29));
   border-bottom-color: oklch(0.255 0.021 279.29);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -627,7 +613,7 @@ html body video {
   border-top-color: oklch(0.92 0.004 279.29);
 }`,
     embeds: `html body .file-embed {
-  background-color: oklch(0.255 0.021 279.29);
+  background-color: var(--background-primary-alt, oklch(0.255 0.021 279.29));
   border-bottom-color: oklch(0.845 0.01 279.29);
   border-left-color: oklch(0.845 0.01 279.29);
   border-right-color: oklch(0.845 0.01 279.29);
@@ -1432,12 +1418,12 @@ html body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
   border-left-color: oklch(0.615 0.176 260.58);
   border-right-color: oklch(0.615 0.176 260.58);
   border-top-color: oklch(0.615 0.176 260.58);
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
   gap: 6px;
 }
 
 html body .callout .callout-title > .callout-title-inner > p {
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
 }
 
 html body .callout > .callout-content {
@@ -1445,9 +1431,9 @@ html body .callout > .callout-content {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: oklch(48.5% 0.039 279.29);
+  --callout-color: var(--callout-summary, oklch(48.5% 0.039 279.29));
   background: color(srgb 0.352846 0.364726 0.459747 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.352846 0.364726 0.459747 / 0.2);
+  background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.352845 0.364726 0.459747 / 0.6);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1460,7 +1446,7 @@ html body .callout[data-callout="abstract"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: oklch(0.485 0.039 279.29);
+  color: var(--callout-color, oklch(0.485 0.039 279.29));
 }
 
 html body .callout[data-callout="abstract"] .callout-title {
@@ -1469,12 +1455,12 @@ html body .callout[data-callout="abstract"] .callout-title {
   border-left-color: oklch(0.615 0.176 260.58);
   border-right-color: oklch(0.615 0.176 260.58);
   border-top-color: oklch(0.615 0.176 260.58);
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
   gap: 6px;
 }
 
 html body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
 }
 
 html body .callout[data-callout="abstract"] > .callout-content {
@@ -1482,9 +1468,9 @@ html body .callout[data-callout="abstract"] > .callout-content {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: oklch(48.5% 0.193 13.65);
+  --callout-color: var(--callout-bug, oklch(48.5% 0.193 13.65));
   background: color(srgb 0.694829 0.0072342 0.239863 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.694829 0.0072342 0.239863 / 0.2);
+  background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.694829 0.0072342 0.239863 / 0.6);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1497,7 +1483,7 @@ html body .callout[data-callout="bug"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: oklch(0.485 0.193 13.65);
+  color: var(--callout-color, oklch(0.485 0.193 13.65));
 }
 
 html body .callout[data-callout="bug"] .callout-title {
@@ -1506,12 +1492,12 @@ html body .callout[data-callout="bug"] .callout-title {
   border-left-color: oklch(0.615 0.176 260.58);
   border-right-color: oklch(0.615 0.176 260.58);
   border-top-color: oklch(0.615 0.176 260.58);
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
   gap: 6px;
 }
 
 html body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
 }
 
 html body .callout[data-callout="bug"] > .callout-content {
@@ -1519,9 +1505,9 @@ html body .callout[data-callout="bug"] > .callout-content {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: oklch(48.5% 0.193 13.65);
+  --callout-color: var(--callout-error, oklch(48.5% 0.193 13.65));
   background: color(srgb 0.694829 0.0072342 0.239863 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.694829 0.0072342 0.239863 / 0.2);
+  background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.694829 0.0072342 0.239863 / 0.6);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1534,7 +1520,7 @@ html body .callout[data-callout="danger"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: oklch(0.485 0.193 13.65);
+  color: var(--callout-color, oklch(0.485 0.193 13.65));
 }
 
 html body .callout[data-callout="danger"] .callout-title {
@@ -1543,12 +1529,12 @@ html body .callout[data-callout="danger"] .callout-title {
   border-left-color: oklch(0.615 0.176 260.58);
   border-right-color: oklch(0.615 0.176 260.58);
   border-top-color: oklch(0.615 0.176 260.58);
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
   gap: 6px;
 }
 
 html body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
 }
 
 html body .callout[data-callout="danger"] > .callout-content {
@@ -1556,9 +1542,9 @@ html body .callout[data-callout="danger"] > .callout-content {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: oklch(48.5% 0.1 97.11);
+  --callout-color: var(--callout-example, oklch(48.5% 0.1 97.11));
   background: color(srgb 0.43539 0.370195 0.000193895 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.43539 0.370195 0.000193895 / 0.2);
+  background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.43539 0.370195 0.000193895 / 0.6);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1571,7 +1557,7 @@ html body .callout[data-callout="example"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: oklch(0.485 0.1 97.11);
+  color: var(--callout-color, oklch(0.485 0.1 97.11));
 }
 
 html body .callout[data-callout="example"] .callout-title {
@@ -1580,12 +1566,12 @@ html body .callout[data-callout="example"] .callout-title {
   border-left-color: oklch(0.615 0.176 260.58);
   border-right-color: oklch(0.615 0.176 260.58);
   border-top-color: oklch(0.615 0.176 260.58);
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
   gap: 6px;
 }
 
 html body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
 }
 
 html body .callout[data-callout="example"] > .callout-content {
@@ -1593,9 +1579,9 @@ html body .callout[data-callout="example"] > .callout-content {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: oklch(48.5% 0.193 13.65);
+  --callout-color: var(--callout-fail, oklch(48.5% 0.193 13.65));
   background: color(srgb 0.694829 0.0072342 0.239863 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.694829 0.0072342 0.239863 / 0.2);
+  background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.694829 0.0072342 0.239863 / 0.6);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1608,7 +1594,7 @@ html body .callout[data-callout="failure"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: oklch(0.485 0.193 13.65);
+  color: var(--callout-color, oklch(0.485 0.193 13.65));
 }
 
 html body .callout[data-callout="failure"] .callout-title {
@@ -1617,12 +1603,12 @@ html body .callout[data-callout="failure"] .callout-title {
   border-left-color: oklch(0.615 0.176 260.58);
   border-right-color: oklch(0.615 0.176 260.58);
   border-top-color: oklch(0.615 0.176 260.58);
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
   gap: 6px;
 }
 
 html body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
 }
 
 html body .callout[data-callout="failure"] > .callout-content {
@@ -1630,9 +1616,9 @@ html body .callout[data-callout="failure"] > .callout-content {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: oklch(61.5% 0.028 279.29);
+  --callout-color: var(--callout-info, oklch(61.5% 0.028 279.29));
   background: color(srgb 0.504597 0.514759 0.587372 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.504597 0.514759 0.587372 / 0.2);
+  background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.504597 0.514759 0.587372 / 0.6);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1645,7 +1631,7 @@ html body .callout[data-callout="info"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: oklch(0.615 0.028 279.29);
+  color: var(--callout-color, oklch(0.615 0.028 279.29));
 }
 
 html body .callout[data-callout="info"] .callout-title {
@@ -1654,12 +1640,12 @@ html body .callout[data-callout="info"] .callout-title {
   border-left-color: oklch(0.615 0.176 260.58);
   border-right-color: oklch(0.615 0.176 260.58);
   border-top-color: oklch(0.615 0.176 260.58);
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
   gap: 6px;
 }
 
 html body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
 }
 
 html body .callout[data-callout="info"] > .callout-content {
@@ -1667,9 +1653,9 @@ html body .callout[data-callout="info"] > .callout-content {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: oklch(48.5% 0.173 260.58);
+  --callout-color: var(--callout-default, oklch(48.5% 0.173 260.58));
   background: color(srgb 0.108066 0.344328 0.747263 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.108066 0.344328 0.747263 / 0.2);
+  background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.108066 0.344328 0.747263 / 0.6);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1682,7 +1668,7 @@ html body .callout[data-callout="note"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: oklch(0.485 0.173 260.58);
+  color: var(--callout-color, oklch(0.485 0.173 260.58));
 }
 
 html body .callout[data-callout="note"] .callout-title {
@@ -1691,12 +1677,12 @@ html body .callout[data-callout="note"] .callout-title {
   border-left-color: oklch(0.615 0.176 260.58);
   border-right-color: oklch(0.615 0.176 260.58);
   border-top-color: oklch(0.615 0.176 260.58);
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
   gap: 6px;
 }
 
 html body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
 }
 
 html body .callout[data-callout="note"] > .callout-content {
@@ -1704,9 +1690,9 @@ html body .callout[data-callout="note"] > .callout-content {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: oklch(48.5% 0.134 46.85);
+  --callout-color: var(--callout-question, oklch(48.5% 0.134 46.85));
   background: color(srgb 0.600474 0.253404 0.00368491 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.600474 0.253404 0.00368491 / 0.2);
+  background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.600474 0.253404 0.00368491 / 0.6);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1719,7 +1705,7 @@ html body .callout[data-callout="question"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: oklch(0.485 0.134 46.85);
+  color: var(--callout-color, oklch(0.485 0.134 46.85));
 }
 
 html body .callout[data-callout="question"] .callout-title {
@@ -1728,12 +1714,12 @@ html body .callout[data-callout="question"] .callout-title {
   border-left-color: oklch(0.615 0.176 260.58);
   border-right-color: oklch(0.615 0.176 260.58);
   border-top-color: oklch(0.615 0.176 260.58);
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
   gap: 6px;
 }
 
 html body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
 }
 
 html body .callout[data-callout="question"] > .callout-content {
@@ -1741,9 +1727,9 @@ html body .callout[data-callout="question"] > .callout-content {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: oklch(48.5% 0.039 279.29);
+  --callout-color: var(--callout-quote, oklch(48.5% 0.039 279.29));
   background: color(srgb 0.352846 0.364726 0.459747 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.352846 0.364726 0.459747 / 0.2);
+  background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.352845 0.364726 0.459747 / 0.6);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1756,7 +1742,7 @@ html body .callout[data-callout="quote"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: oklch(0.485 0.039 279.29);
+  color: var(--callout-color, oklch(0.485 0.039 279.29));
 }
 
 html body .callout[data-callout="quote"] .callout-title {
@@ -1765,12 +1751,12 @@ html body .callout[data-callout="quote"] .callout-title {
   border-left-color: oklch(0.615 0.176 260.58);
   border-right-color: oklch(0.615 0.176 260.58);
   border-top-color: oklch(0.615 0.176 260.58);
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
   gap: 6px;
 }
 
 html body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
 }
 
 html body .callout[data-callout="quote"] > .callout-content {
@@ -1778,9 +1764,9 @@ html body .callout[data-callout="quote"] > .callout-content {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: oklch(48.5% 0.145 140.09);
+  --callout-color: var(--callout-success, oklch(48.5% 0.145 140.09));
   background: color(srgb 0.153674 0.444627 0.0730724 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.153674 0.444627 0.0730724 / 0.2);
+  background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.153674 0.444627 0.0730724 / 0.6);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1793,7 +1779,7 @@ html body .callout[data-callout="success"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: oklch(0.485 0.145 140.09);
+  color: var(--callout-color, oklch(0.485 0.145 140.09));
 }
 
 html body .callout[data-callout="success"] .callout-title {
@@ -1802,12 +1788,12 @@ html body .callout[data-callout="success"] .callout-title {
   border-left-color: oklch(0.615 0.176 260.58);
   border-right-color: oklch(0.615 0.176 260.58);
   border-top-color: oklch(0.615 0.176 260.58);
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
   gap: 6px;
 }
 
 html body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
 }
 
 html body .callout[data-callout="success"] > .callout-content {
@@ -1815,9 +1801,9 @@ html body .callout[data-callout="success"] > .callout-content {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: oklch(48.5% 0.106 161.65);
+  --callout-color: var(--callout-tip, oklch(48.5% 0.106 161.65));
   background: color(srgb 0.0116796 0.442945 0.296735 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.0116796 0.442945 0.296735 / 0.2);
+  background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.0116796 0.442945 0.296735 / 0.6);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1830,7 +1816,7 @@ html body .callout[data-callout="tip"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: oklch(0.485 0.106 161.65);
+  color: var(--callout-color, oklch(0.485 0.106 161.65));
 }
 
 html body .callout[data-callout="tip"] .callout-title {
@@ -1839,12 +1825,12 @@ html body .callout[data-callout="tip"] .callout-title {
   border-left-color: oklch(0.615 0.176 260.58);
   border-right-color: oklch(0.615 0.176 260.58);
   border-top-color: oklch(0.615 0.176 260.58);
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
   gap: 6px;
 }
 
 html body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
 }
 
 html body .callout[data-callout="tip"] > .callout-content {
@@ -1852,9 +1838,9 @@ html body .callout[data-callout="tip"] > .callout-content {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: oklch(48.5% 0.173 260.58);
+  --callout-color: var(--callout-todo, oklch(48.5% 0.173 260.58));
   background: color(srgb 0.108066 0.344328 0.747263 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.108066 0.344328 0.747263 / 0.2);
+  background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.108066 0.344328 0.747263 / 0.6);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1867,7 +1853,7 @@ html body .callout[data-callout="todo"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: oklch(0.485 0.173 260.58);
+  color: var(--callout-color, oklch(0.485 0.173 260.58));
 }
 
 html body .callout[data-callout="todo"] .callout-title {
@@ -1876,12 +1862,12 @@ html body .callout[data-callout="todo"] .callout-title {
   border-left-color: oklch(0.615 0.176 260.58);
   border-right-color: oklch(0.615 0.176 260.58);
   border-top-color: oklch(0.615 0.176 260.58);
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
   gap: 6px;
 }
 
 html body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
 }
 
 html body .callout[data-callout="todo"] > .callout-content {
@@ -1889,9 +1875,9 @@ html body .callout[data-callout="todo"] > .callout-content {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: oklch(48.5% 0.134 46.85);
+  --callout-color: var(--callout-warning, oklch(48.5% 0.134 46.85));
   background: color(srgb 0.600474 0.253404 0.00368491 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.600474 0.253404 0.00368491 / 0.2);
+  background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.600474 0.253404 0.00368491 / 0.6);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1904,7 +1890,7 @@ html body .callout[data-callout="warning"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
-  color: oklch(0.485 0.134 46.85);
+  color: var(--callout-color, oklch(0.485 0.134 46.85));
 }
 
 html body .callout[data-callout="warning"] .callout-title {
@@ -1913,12 +1899,12 @@ html body .callout[data-callout="warning"] .callout-title {
   border-left-color: oklch(0.615 0.176 260.58);
   border-right-color: oklch(0.615 0.176 260.58);
   border-top-color: oklch(0.615 0.176 260.58);
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
   gap: 6px;
 }
 
 html body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: oklch(0.615 0.176 260.58);
+  color: var(--callout-title-color, oklch(0.615 0.176 260.58));
 }
 
 html body .callout[data-callout="warning"] > .callout-content {
@@ -1990,11 +1976,11 @@ html body .callout[data-callout="warning"] {
   border-top-color: oklch(0.255 0.021 279.29);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  color: oklch(0.92 0.004 279.29);
+  color: var(--text-normal, oklch(0.92 0.004 279.29));
 }
 
 html body .search > .search-container > .search-space {
-  background-color: oklch(0.135 0.01 279.29);
+  background-color: var(--prompt-background, oklch(0.135 0.01 279.29));
 }
 
 html body .search > .search-container > .search-space > * {
@@ -2043,7 +2029,7 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: oklch(0.255 0.021 279.29);
+  background-color: var(--gray-100, oklch(0.255 0.021 279.29));
 }
 
 html body a.internal-link.tag-link::before {
@@ -2051,43 +2037,43 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
-  color: oklch(0.615 0.17 288);
-  font-family: "Bricolage Grotesque";
+  color: var(--h1-color, oklch(0.615 0.17 288));
+  font-family: var(--h1-font, "Bricolage Grotesque");
 }
 
 html body h1.article-title {
-  color: oklch(0.615 0.17 288);
-  font-weight: 550;
+  color: var(--inline-title-color, oklch(0.615 0.17 288));
+  font-weight: var(--inline-title-weight, 550);
 }
 
 html body h2 {
-  color: rgb(242, 66, 255);
-  font-family: "Bricolage Grotesque";
+  color: var(--h2-color, rgb(242, 66, 255));
+  font-family: var(--h2-font, "Bricolage Grotesque");
 }
 
 html body h2.page-title, html h2.page-title a {
-  color: oklch(0.615 0.17 288);
-  font-family: "Bricolage Grotesque";
+  color: var(--inline-title-color, oklch(0.615 0.17 288));
+  font-family: var(--inline-title-font, "Bricolage Grotesque");
 }
 
 html body h3 {
-  color: rgb(255, 116, 23);
-  font-family: "Bricolage Grotesque";
+  color: var(--h3-color, rgb(255, 116, 23));
+  font-family: var(--h3-font, "Bricolage Grotesque");
 }
 
 html body h4 {
-  color: rgb(218, 1, 77);
-  font-family: "Bricolage Grotesque";
+  color: var(--h4-color, rgb(218, 1, 77));
+  font-family: var(--h4-font, "Bricolage Grotesque");
 }
 
 html body h5 {
-  color: oklch(0.845 0.01 279.29);
-  font-family: "Bricolage Grotesque";
+  color: var(--h5-color, oklch(0.845 0.01 279.29));
+  font-family: var(--h5-font, "Bricolage Grotesque");
 }
 
 html body h6 {
-  color: oklch(0.845 0.01 279.29);
-  font-family: "Bricolage Grotesque";
+  color: var(--h6-color, oklch(0.845 0.01 279.29));
+  font-family: var(--h6-font, "Bricolage Grotesque");
 }
 
 html body hr {
@@ -2096,7 +2082,7 @@ html body hr {
   border-right-color: oklch(0.255 0.021 279.29);
 }`,
     scrollbars: `html body .callout {
-  --callout-color: oklch(48.5% 0.173 260.58);
+  --callout-color: var(--callout-default, oklch(48.5% 0.173 260.58));
   border-bottom-color: color(srgb 0.108066 0.344328 0.747263 / 0.6);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -2112,11 +2098,11 @@ html body hr {
   padding-left: 12px;
 }`,
     explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: oklch(0.845 0.01 279.29);
+  color: var(--nav-item-color, oklch(0.845 0.01 279.29));
 }
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: oklch(0.845 0.01 279.29);
+  color: var(--nav-item-color, oklch(0.845 0.01 279.29));
 }`,
     toc: `html body details.toc summary::marker {
   color: oklch(0.92 0.004 279.29);
@@ -2126,15 +2112,15 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-left-color: oklch(0.615 0.028 279.29);
   border-right-color: oklch(0.615 0.028 279.29);
   border-top-color: oklch(0.615 0.028 279.29);
-  color: oklch(0.615 0.028 279.29);
+  color: var(--icon-color, oklch(0.615 0.028 279.29));
 }`,
     footer: `html body footer {
-  background-color: oklch(0.18 0.014 279.29);
+  background-color: var(--status-bar-background, oklch(0.18 0.014 279.29));
   border-bottom-color: oklch(0.255 0.021 279.29);
   border-left-color: oklch(0.255 0.021 279.29);
   border-right-color: oklch(0.255 0.021 279.29);
   border-top-color: oklch(0.255 0.021 279.29);
-  color: oklch(0.845 0.01 279.29);
+  color: var(--status-bar-text-color, oklch(0.845 0.01 279.29));
 }
 
 html body footer ul li a {
@@ -2153,7 +2139,7 @@ html body .recent-notes > ul.recent-ul > li {
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: oklch(0.845 0.01 279.29);
+  color: var(--nav-item-color, oklch(0.845 0.01 279.29));
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -2171,7 +2157,7 @@ html body li.section-li > .section .meta {
 }
 
 html body li.section-li > .section > .desc > h3 > a {
-  color: oklch(0.845 0.01 279.29);
+  color: var(--nav-item-color, oklch(0.845 0.01 279.29));
 }
 
 html body ul.section-ul {
@@ -2185,7 +2171,7 @@ html body ul.section-ul {
   border-left-color: oklch(0.615 0.028 279.29);
   border-right-color: oklch(0.615 0.028 279.29);
   border-top-color: oklch(0.615 0.028 279.29);
-  color: oklch(0.615 0.028 279.29);
+  color: var(--icon-color, oklch(0.615 0.028 279.29));
 }
 
 html body .darkmode svg {
@@ -2201,7 +2187,7 @@ html body .darkmode svg {
 }
 
 html body .breadcrumb-element p {
-  color: oklch(0.745 0.018 279.29);
+  color: var(--text-faint, oklch(0.745 0.018 279.29));
   font-family: Inter;
 }`,
     canvas: `html body .canvas-node {
@@ -2213,7 +2199,7 @@ html body .canvas-node-content {
 }
 
 html body .canvas-node-file {
-  color: oklch(0.92 0.004 279.29);
+  color: var(--text-normal, oklch(0.92 0.004 279.29));
 }
 
 html body .canvas-node-group {
@@ -2221,20 +2207,20 @@ html body .canvas-node-group {
 }
 
 html body .canvas-sidebar {
-  background-color: oklch(0.18 0.014 279.29);
+  background-color: var(--background-secondary, oklch(0.18 0.014 279.29));
   border-color: oklch(0.92 0.004 279.29);
 }`,
     bases: `html body .bases-table thead th {
   border-color: oklch(0.255 0.021 279.29) oklch(0.255 0.021 279.29) oklch(0.355 0.029 279.29);
-  color: oklch(0.92 0.004 279.29);
-  font-weight: 700;
+  color: var(--table-header-color, oklch(0.92 0.004 279.29));
+  font-weight: var(--table-header-weight, 700);
 }`,
     properties: `html body .metadata {
   border-bottom-color: oklch(0.255 0.021 279.29);
   border-left-color: oklch(0.255 0.021 279.29);
   border-right-color: oklch(0.255 0.021 279.29);
   border-top-color: oklch(0.255 0.021 279.29);
-  color: oklch(0.845 0.01 279.29);
+  color: var(--text-muted, oklch(0.845 0.01 279.29));
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -2260,8 +2246,8 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
-  background-color: oklch(0.255 0.021 279.29);
-  color: oklch(0.845 0.06 260.58);
+  background-color: var(--gray-100, oklch(0.255 0.021 279.29));
+  color: var(--pill-color, oklch(0.845 0.06 260.58));
 }
 
 html body .note-properties-value {
@@ -2269,8 +2255,8 @@ html body .note-properties-value {
 }
 
 html body div#quartz-root {
-  background-color: oklch(0.135 0.01 279.29);
-  color: oklch(0.92 0.004 279.29);
+  background-color: var(--background-primary, oklch(0.135 0.01 279.29));
+  color: var(--text-normal, oklch(0.92 0.004 279.29));
 }
 
 html body ol.overflow {
@@ -2280,12 +2266,12 @@ html body ol.overflow {
   border-top-color: oklch(0.92 0.004 279.29);
 }`,
     stacked: `html body .stacked-page {
-  background-color: oklch(0.18 0.014 279.29);
+  background-color: var(--background-secondary, oklch(0.18 0.014 279.29));
   border-color: oklch(0.92 0.004 279.29);
 }
 
 html body .stacked-page-header {
-  background-color: oklch(0.18 0.014 279.29);
+  background-color: var(--tab-container-background, oklch(0.18 0.014 279.29));
 }
 
 html body .stacked-page.active {
@@ -2300,11 +2286,11 @@ html body .stacked-page.active {
 }
 
 html body .navigation-progress {
-  background-color: oklch(0.18 0.014 279.29);
+  background-color: var(--status-bar-background, oklch(0.18 0.014 279.29));
 }
 
 html body .page-header h2.page-title {
-  color: oklch(0.92 0.004 279.29);
+  color: var(--text-normal, oklch(0.92 0.004 279.29));
   font-family: Inter;
 }
 
@@ -2324,7 +2310,7 @@ html body input[type=text] {
   border-left-color: oklch(0.845 0.01 279.29);
   border-right-color: oklch(0.845 0.01 279.29);
   border-top-color: oklch(0.845 0.01 279.29);
-  color: oklch(0.845 0.01 279.29);
+  color: var(--text-normal, oklch(0.845 0.01 279.29));
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -2332,12 +2318,12 @@ html body input[type=text] {
 }
 
 html body kbd {
-  background-color: oklch(0.255 0.021 279.29);
+  background-color: var(--code-background, oklch(0.255 0.021 279.29));
   border-bottom-color: oklch(0.92 0.004 279.29);
   border-left-color: oklch(0.92 0.004 279.29);
   border-right-color: oklch(0.92 0.004 279.29);
   border-top-color: oklch(0.92 0.004 279.29);
-  color: oklch(0.92 0.004 279.29);
+  color: var(--code-normal, oklch(0.92 0.004 279.29));
 }
 
 html body progress {
@@ -2360,8 +2346,8 @@ html body sup {
 }
 
 html body ul.tags > li {
-  background-color: oklch(0.355 0.127 260.58);
-  color: oklch(0.845 0.06 260.58);
+  background-color: var(--tag-background, oklch(0.355 0.127 260.58));
+  color: var(--tag-color, oklch(0.845 0.06 260.58));
 }`,
   },
   light: {},

@@ -19,96 +19,92 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --background-primary: rgb(22, 22, 22);
-  --background-primary-alt: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%);
-  --background-secondary: rgb(24, 24, 24);
-  --background-secondary-alt: color-mix(in srgb, hsl(258, 88%, 66%) 50%, transparent 0%);
-  --bases-cards-background: rgb(22, 22, 22);
-  --bases-cards-cover-background: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%);
-  --bases-group-heading-property-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --bases-table-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%);
-  --bases-table-cell-background-active: rgb(22, 22, 22);
-  --bases-table-cell-background-disabled: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%);
-  --bases-table-group-background: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%);
-  --bases-table-header-background: rgb(22, 22, 22);
-  --bases-table-header-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --bases-table-row-background-hover: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%);
-  --bases-table-summary-background: rgb(22, 22, 22);
-  --bodyFont: var(--font-interface, JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --bold-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, #ffffff 20%);
+  --background-primary: var(--color-base-00, rgb(22, 22, 22));
+  --background-primary-alt: color-mix(in srgb, var(--color-accent) 50%, var(--dark-or-white-var) 10%);
+  --background-secondary: var(--color-base-20, rgb(24, 24, 24));
+  --background-secondary-alt: color-mix(in srgb, var(--color-accent) 50%, transparent 0%);
+  --bases-cards-background: var(--background-primary, rgb(22, 22, 22));
+  --bases-cards-cover-background: var(--background-primary-alt, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%));
+  --bases-group-heading-property-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --bases-table-border-color: var(--table-border-color, color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%));
+  --bases-table-cell-background-active: var(--background-primary, rgb(22, 22, 22));
+  --bases-table-cell-background-disabled: var(--background-primary-alt, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%));
+  --bases-table-group-background: var(--background-primary-alt, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%));
+  --bases-table-header-background: var(--background-primary, rgb(22, 22, 22));
+  --bases-table-header-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --bases-table-row-background-hover: var(--table-row-background-hover, color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%));
+  --bases-table-summary-background: var(--background-primary, rgb(22, 22, 22));
+  --bold-color: color-mix(in srgb, var(--color-accent) 80%, var(--dark-or-white-var) 20%);
   --callout-border-width: 5px;
-  --callout-padding: 0;
-  --callout-radius: 12px;
-  --callout-title-weight: bold;
-  --canvas-background: color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%);
-  --canvas-card-label-color: hsl(258, 88%, 66%);
-  --canvas-dot-pattern: rgb(102, 102, 102);
-  --caret-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --checkbox-border-color: hsl(258, 88%, 66%);
-  --checkbox-border-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --checkbox-marker-color: rgb(22, 22, 22);
-  --checkbox-radius: 15px;
-  --checklist-done-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --code-background: color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%);
-  --code-comment: hsl(258, 88%, 66%);
-  --code-punctuation: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --codeFont: var(--font-interface, JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --collapse-icon-color: hsl(258, 88%, 66%);
-  --color-accent-trans: color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%);
-  --dark: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 0);
+  --callout-radius: var(--radius-l, 12px);
+  --canvas-background: var(--color-accent-trans, color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%));
+  --canvas-card-label-color: var(--text-faint, hsl(258, 88%, 66%));
+  --canvas-dot-pattern: var(--color-base-30, rgb(102, 102, 102));
+  --caret-color: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --checkbox-border-color: var(--text-faint, hsl(258, 88%, 66%));
+  --checkbox-border-color-hover: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --checkbox-color: var(--color-accent, hsl(258, 88%, 66%));
+  --checkbox-marker-color: var(--background-primary, rgb(22, 22, 22));
+  --checkbox-radius: var(--radius-s, 15px);
+  --checklist-done-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --code-background: var(--color-accent-trans, color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%));
+  --code-comment: var(--text-faint, hsl(258, 88%, 66%));
+  --code-punctuation: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --collapse-icon-color: var(--text-faint, hsl(258, 88%, 66%));
+  --color-accent-trans: color-mix(in srgb, var(--color-accent) 15%, transparent 0%);
+  --dark: var(--text-normal, color-mix(in srgb, var(--color-accent) 30%, var(--dark-or-white-var) 70%));
   --dark-or-white-var: #ffffff;
-  --darkgray: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --darkgray: var(--text-normal, color-mix(in srgb, var(--color-accent) 30%, var(--dark-or-white-var) 70%));
   --default-font: 'JetBrains Mono', monospace;
-  --file-header-background: rgb(22, 22, 22);
-  --file-header-background-focused: rgb(22, 22, 22);
-  --file-header-font: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --flair-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --font-interface: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --footnote-id-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --footnote-id-color-no-occurrences: hsl(258, 88%, 66%);
-  --graph-node: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --graph-node-unresolved: hsl(258, 88%, 66%);
-  --graph-text: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --gray: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --file-header-background: var(--background-primary, rgb(22, 22, 22));
+  --file-header-background-focused: var(--background-primary, rgb(22, 22, 22));
+  --file-header-font: var(--font-interface, JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --flair-color: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --footnote-id-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --footnote-id-color-no-occurrences: var(--text-faint, hsl(258, 88%, 66%));
+  --graph-node: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --graph-node-unresolved: var(--text-faint, hsl(258, 88%, 66%));
+  --graph-text: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --gray: var(--text-muted, var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%)));
   --grid-size: 64px;
-  --headerFont: var(--font-interface, JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --heading-formatting: hsl(258, 88%, 66%);
-  --highlight: var(--text-highlight-bg, color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%));
-  --icon-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --icon-color-focused: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --icon-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --input-date-separator: hsl(258, 88%, 66%);
-  --input-placeholder-color: hsl(258, 88%, 66%);
-  --interactive-color: hsl(258, 88%, 66%);
-  --italic-color: color-mix(in srgb, hsl(258, 88%, 66%) 60%, #ffffff 20%);
+  --heading-formatting: var(--text-faint, hsl(258, 88%, 66%));
+  --highlight: var(--text-highlight-bg, color-mix(in srgb, var(--color-accent) 30%, transparent 0%));
+  --icon-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --icon-color-focused: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --icon-color-hover: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --input-date-separator: var(--text-faint, hsl(258, 88%, 66%));
+  --input-placeholder-color: var(--text-faint, hsl(258, 88%, 66%));
+  --interactive-color: var(--color-accent, hsl(258, 88%, 66%));
+  --italic-color: color-mix(in srgb, var(--color-accent) 60%, var(--dark-or-white-var) 20%);
   --large-kanban-width: 400px;
-  --light: var(--background-primary, rgb(22, 22, 22));
-  --lightgray: var(--background-secondary, rgb(24, 24, 24));
-  --list-marker-color: hsl(258, 88%, 66%);
-  --list-marker-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --menu-background: rgb(24, 24, 24);
-  --metadata-input-font: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-input-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --metadata-label-font: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-label-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --metadata-label-text-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --modal-background: rgb(22, 22, 22);
-  --nav-collapse-icon-color: hsl(258, 88%, 66%);
-  --nav-collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-  --nav-heading-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --nav-heading-color-collapsed: hsl(258, 88%, 66%);
-  --nav-heading-color-collapsed-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --nav-heading-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --nav-item-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --nav-item-color-active: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --nav-item-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --nav-item-color-selected: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --nav-tag-color: hsl(258, 88%, 66%);
-  --nav-tag-color-active: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --nav-tag-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --pdf-background: rgb(22, 22, 22);
-  --pdf-page-background: rgb(22, 22, 22);
-  --pdf-sidebar-background: rgb(22, 22, 22);
+  --light: var(--background-primary, var(--color-base-00, rgb(22, 22, 22)));
+  --lightgray: var(--background-secondary, var(--color-base-20, rgb(24, 24, 24)));
+  --list-marker-color: var(--text-faint, hsl(258, 88%, 66%));
+  --list-marker-color-hover: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --menu-background: var(--background-secondary, rgb(24, 24, 24));
+  --metadata-input-font: var(--font-interface, JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-input-text-color: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --metadata-label-font: var(--font-interface, JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-label-text-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --metadata-label-text-color-hover: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --modal-background: var(--background-primary, rgb(22, 22, 22));
+  --nav-collapse-icon-color: var(--collapse-icon-color, hsl(258, 88%, 66%));
+  --nav-collapse-icon-color-collapsed: var(--text-faint, hsl(258, 88%, 66%));
+  --nav-heading-color: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --nav-heading-color-collapsed: var(--text-faint, hsl(258, 88%, 66%));
+  --nav-heading-color-collapsed-hover: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --nav-heading-color-hover: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --nav-item-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --nav-item-color-active: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --nav-item-color-hover: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --nav-item-color-selected: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --nav-tag-color: var(--text-faint, hsl(258, 88%, 66%));
+  --nav-tag-color-active: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --nav-tag-color-hover: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --pdf-background: var(--background-primary, rgb(22, 22, 22));
+  --pdf-page-background: var(--background-primary, rgb(22, 22, 22));
+  --pdf-sidebar-background: var(--background-primary, rgb(22, 22, 22));
   --pen-black: #26241f;
   --pen-blue: #3f76ed;
   --pen-gray: #5f5d58;
@@ -122,60 +118,58 @@ export const theme: ThemeData = {
   --pen-purple: #9b4ff0;
   --pen-red: #e14a49;
   --pen-white: #edf1fc;
-  --pill-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --pill-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --pill-color-remove: hsl(258, 88%, 66%);
-  --prompt-background: rgb(22, 22, 22);
-  --ribbon-background: rgb(24, 24, 24);
-  --ribbon-background-collapsed: rgb(22, 22, 22);
-  --search-clear-button-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --search-icon-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --search-result-background: rgb(22, 22, 22);
-  --setting-group-heading-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --setting-items-background: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%);
-  --shiki-active-tab-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --shiki-code-background: color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%);
-  --shiki-code-comment: hsl(258, 88%, 66%);
-  --shiki-code-normal: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --shiki-code-punctuation: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --shiki-gutter-text-color: hsl(258, 88%, 66%);
-  --shiki-gutter-text-color-highlight: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --shiki-highlight-neutral: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --shiki-terminal-dots-color: hsl(258, 88%, 66%);
-  --status-bar-background: rgb(24, 24, 24);
-  --status-bar-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --suggestion-background: rgb(22, 22, 22);
-  --tab-background-active: rgb(22, 22, 22);
-  --tab-container-background: rgb(24, 24, 24);
-  --tab-switcher-background: rgb(24, 24, 24);
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(24, 24, 24), transparent);
-  --tab-text-color: hsl(258, 88%, 66%);
-  --tab-text-color-active: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --tab-text-color-focused: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --tab-text-color-focused-active: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --tab-text-color-focused-active-current: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --table-background: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%);
-  --table-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%);
-  --table-column-alt-background: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%);
-  --table-drag-handle-color: hsl(258, 88%, 66%);
-  --table-header-background: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%);
-  --table-header-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%);
-  --table-header-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, #ffffff 20%);
-  --table-row-alt-background: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%);
-  --table-row-alt-background-hover: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%);
-  --table-row-background-hover: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%);
-  --text-faint: hsl(258, 88%, 66%);
-  --text-highlight-bg: color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%);
-  --text-muted: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --text-normal: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --textHighlight: var(--text-highlight-bg, color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%));
-  --titleFont: var(--font-interface, JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --titlebar-background: rgb(24, 24, 24);
-  --titlebar-background-focused: color-mix(in srgb, hsl(258, 88%, 66%) 50%, transparent 0%);
-  --titlebar-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --titlebar-text-color-focused: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --vault-profile-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
-  --vault-profile-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%);
+  --pill-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --pill-color-hover: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --pill-color-remove: var(--text-faint, hsl(258, 88%, 66%));
+  --prompt-background: var(--background-primary, rgb(22, 22, 22));
+  --ribbon-background: var(--background-secondary, rgb(24, 24, 24));
+  --ribbon-background-collapsed: var(--background-primary, rgb(22, 22, 22));
+  --search-clear-button-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --search-icon-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --search-result-background: var(--background-primary, rgb(22, 22, 22));
+  --setting-group-heading-color: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --setting-items-background: var(--background-primary-alt, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%));
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --shiki-code-background: var(--code-background, color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%));
+  --shiki-code-comment: var(--text-faint, hsl(258, 88%, 66%));
+  --shiki-code-normal: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --shiki-code-punctuation: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --shiki-gutter-text-color: var(--text-faint, hsl(258, 88%, 66%));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --shiki-highlight-neutral: var(--shiki-code-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --shiki-terminal-dots-color: var(--text-faint, hsl(258, 88%, 66%));
+  --status-bar-background: var(--background-secondary, rgb(24, 24, 24));
+  --status-bar-text-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --suggestion-background: var(--background-primary, rgb(22, 22, 22));
+  --tab-background-active: var(--background-primary, rgb(22, 22, 22));
+  --tab-container-background: var(--background-secondary, rgb(24, 24, 24));
+  --tab-switcher-background: var(--background-secondary, rgb(24, 24, 24));
+  --tab-text-color: var(--text-faint, hsl(258, 88%, 66%));
+  --tab-text-color-active: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --tab-text-color-focused: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --tab-text-color-focused-active: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --tab-text-color-focused-active-current: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --table-background: color-mix(in srgb, var(--color-accent) 20%, transparent 90%);
+  --table-border-color: color-mix(in srgb, var(--color-accent) 80%, transparent 0%);
+  --table-column-alt-background: var(--table-background, color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%));
+  --table-drag-handle-color: var(--text-faint, hsl(258, 88%, 66%));
+  --table-header-background: var(--table-background, color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%));
+  --table-header-border-color: var(--table-border-color, color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%));
+  --table-header-color: color-mix(in srgb, var(--color-accent) 80%, var(--dark-or-white-var) 20%);
+  --table-row-alt-background: var(--table-background, color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%));
+  --table-row-alt-background-hover: var(--table-background, color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%));
+  --table-row-background-hover: var(--table-background, color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%));
+  --text-faint: var(--color-accent, hsl(258, 88%, 66%));
+  --text-highlight-bg: color-mix(in srgb, var(--color-accent) 30%, transparent 0%);
+  --text-muted: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --text-normal: color-mix(in srgb, var(--color-accent) 30%, var(--dark-or-white-var) 70%);
+  --textHighlight: var(--text-highlight-bg, color-mix(in srgb, var(--color-accent) 30%, transparent 0%));
+  --titlebar-background: var(--background-secondary, rgb(24, 24, 24));
+  --titlebar-background-focused: var(--background-secondary-alt, color-mix(in srgb, hsl(258, 88%, 66%) 50%, transparent 0%));
+  --titlebar-text-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --titlebar-text-color-focused: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --vault-profile-color: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
+  --vault-profile-color-hover: var(--vault-profile-color, color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%));
   --quartz-icon-color: currentColor;
 }
 
@@ -185,17 +179,17 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(24, 24, 24);
+  background-color: var(--tab-container-background, rgb(24, 24, 24));
   color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: rgb(22, 22, 22);
+  background-color: var(--background-primary, rgb(22, 22, 22));
   color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(24, 24, 24);
+  background-color: var(--background-secondary, rgb(24, 24, 24));
   color: color(srgb 0.862096 0.80824 0.98776);
 }
 
@@ -205,7 +199,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(24, 24, 24);
+  background-color: var(--tab-container-background, rgb(24, 24, 24));
   border-left-color: rgba(0, 0, 0, 0);
   color: color(srgb 0.862096 0.80824 0.98776);
 }
@@ -213,7 +207,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body html {
   --default-font: 'JetBrains Mono', monospace;
   --font-interface-theme: 'JetBrains Mono', monospace;
-  --font-text-theme: 'JetBrains Mono', monospace;
+  --font-text-theme: var(--font-interface-theme, 'JetBrains Mono', monospace);
   --large-kanban-width: 400px;
   --pen-black: #26241f;
   --pen-blue: #3f76ed;
@@ -224,7 +218,7 @@ html[saved-theme="dark"] body html {
   --pen-museifu-dark: #838383;
   --pen-museifu-paperdark: #beb7b7;
   --pen-museifu-paperlike: #32302c;
-  --pen-museifu-simple: #edf1fc;
+  --pen-museifu-simple: var(--pen-white, #edf1fc);
   --pen-purple: #9b4ff0;
   --pen-red: #e14a49;
   --pen-white: #edf1fc;
@@ -234,36 +228,36 @@ html[saved-theme="dark"] body html {
   --radius-xl: 20px;
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
-  color: color(srgb 0.632256 0.48864 0.96736);
+  color: var(--bold-color, color(srgb 0.632256 0.48864 0.96736));
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.632256 0.48864 0.96736) none 0px;
   text-decoration-color: color(srgb 0.632256 0.48864 0.96736);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
-  color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
+  color: var(--italic-color, color(srgb 0.65524 0.5206 0.9694 / 0.8));
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.65524 0.5206 0.9694 / 0.8) none 0px;
   text-decoration-color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
-  color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
+  color: var(--italic-color, color(srgb 0.65524 0.5206 0.9694 / 0.8));
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.65524 0.5206 0.9694 / 0.8) none 0px;
   text-decoration-color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
-  color: color(srgb 0.632256 0.48864 0.96736);
+  color: var(--bold-color, color(srgb 0.632256 0.48864 0.96736));
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.632256 0.48864 0.96736) none 0px;
   text-decoration-color: color(srgb 0.632256 0.48864 0.96736);
 }
 
 html[saved-theme="dark"] body .text-highlight {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.3);
-  color: color(srgb 0.862096 0.80824 0.98776);
+  background-color: var(--text-highlight-bg, color(srgb 0.54032 0.3608 0.9592 / 0.3));
+  color: var(--accent-color, color(srgb 0.862096 0.80824 0.98776));
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.862096 0.80824 0.98776) none 0px;
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
@@ -281,7 +275,7 @@ html[saved-theme="dark"] body footer {
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--text-normal, color(srgb 0.862096 0.80824 0.98776));
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
@@ -290,7 +284,7 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="dark"] body p {
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--text-muted, color(srgb 0.862096 0.80824 0.98776));
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.862096 0.80824 0.98776) none 0px;
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
@@ -333,7 +327,7 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-right-radius: 12px;
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
-  color: rgb(138, 92, 245);
+  color: var(--text-faint, rgb(138, 92, 245));
 }
 
 html[saved-theme="dark"] body blockquote {
@@ -353,11 +347,11 @@ html[saved-theme="dark"] body table {
 }
 
 html[saved-theme="dark"] body tbody tr:nth-child(even) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
+  background-color: var(--table-background, color(srgb 0.54032 0.3608 0.9592 / 0.181818));
 }
 
 html[saved-theme="dark"] body tbody tr:nth-child(odd) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
+  background-color: var(--table-row-alt-background, color(srgb 0.54032 0.3608 0.9592 / 0.181818));
 }
 
 html[saved-theme="dark"] body td {
@@ -365,7 +359,7 @@ html[saved-theme="dark"] body td {
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
   border-top-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--table-text-color, color(srgb 0.862096 0.80824 0.98776));
 }
 
 html[saved-theme="dark"] body th {
@@ -373,19 +367,19 @@ html[saved-theme="dark"] body th {
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
   border-top-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
-  color: color(srgb 0.632256 0.48864 0.96736);
+  color: var(--table-header-color, color(srgb 0.632256 0.48864 0.96736));
 }
 
 html[saved-theme="dark"] body tr {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
+  background-color: var(--table-header-background, color(srgb 0.54032 0.3608 0.9592 / 0.181818));
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
-  color: color(srgb 0.862096 0.80824 0.98776);
+  background-color: var(--code-background, color(srgb 0.54032 0.3608 0.9592 / 0.15));
+  color: var(--code-normal, color(srgb 0.862096 0.80824 0.98776));
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
+  background-color: var(--code-background, color(srgb 0.54032 0.3608 0.9592 / 0.15));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
@@ -428,7 +422,7 @@ html[saved-theme="dark"] body video {
   border-top-color: color(srgb 0.862096 0.80824 0.98776);
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: color(srgb 0.616933 0.467333 0.966 / 0.6);
+  background-color: var(--background-primary-alt, color(srgb 0.616933 0.467333 0.966 / 0.6));
   border-bottom-color: color(srgb 0.862096 0.80824 0.98776);
   border-left-color: color(srgb 0.862096 0.80824 0.98776);
   border-right-color: color(srgb 0.862096 0.80824 0.98776);
@@ -469,6 +463,274 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-top-color: rgb(138, 92, 245);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -761,7 +1023,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {
@@ -773,7 +1035,7 @@ html[saved-theme="dark"] body .callout > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -800,7 +1062,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-content {
@@ -812,7 +1074,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -839,7 +1101,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
@@ -851,7 +1113,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -878,7 +1140,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content {
@@ -890,7 +1152,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -917,7 +1179,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-content {
@@ -929,7 +1191,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -956,7 +1218,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-content {
@@ -968,7 +1230,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -995,7 +1257,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
@@ -1007,7 +1269,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -1034,7 +1296,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
@@ -1046,7 +1308,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -1073,7 +1335,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-content {
@@ -1085,7 +1347,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -1112,7 +1374,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content {
@@ -1124,7 +1386,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -1151,7 +1413,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-content {
@@ -1163,7 +1425,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -1190,7 +1452,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
@@ -1202,7 +1464,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -1229,7 +1491,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
@@ -1241,7 +1503,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -1268,7 +1530,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] > .callout-content {
@@ -1335,12 +1597,12 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--text-normal, color(srgb 0.862096 0.80824 0.98776));
   font-family: "JetBrains Mono", monospace;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: rgb(22, 22, 22);
+  background-color: var(--prompt-background, rgb(22, 22, 22));
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > * {
@@ -1393,42 +1655,42 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
 }
 
 html[saved-theme="dark"] body h1 {
-  color: color(srgb 0.862096 0.80824 0.98776);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h1-color, color(srgb 0.862096 0.80824 0.98776));
+  font-family: var(--h1-font, "JetBrains Mono", monospace);
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--inline-title-color, color(srgb 0.862096 0.80824 0.98776));
 }
 
 html[saved-theme="dark"] body h2 {
-  color: color(srgb 0.862096 0.80824 0.98776);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h2-color, color(srgb 0.862096 0.80824 0.98776));
+  font-family: var(--h2-font, "JetBrains Mono", monospace);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  color: color(srgb 0.862096 0.80824 0.98776);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--inline-title-color, color(srgb 0.862096 0.80824 0.98776));
+  font-family: var(--inline-title-font, "JetBrains Mono", monospace);
 }
 
 html[saved-theme="dark"] body h3 {
-  color: color(srgb 0.862096 0.80824 0.98776);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h3-color, color(srgb 0.862096 0.80824 0.98776));
+  font-family: var(--h3-font, "JetBrains Mono", monospace);
 }
 
 html[saved-theme="dark"] body h4 {
-  color: color(srgb 0.862096 0.80824 0.98776);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h4-color, color(srgb 0.862096 0.80824 0.98776));
+  font-family: var(--h4-font, "JetBrains Mono", monospace);
 }
 
 html[saved-theme="dark"] body h5 {
-  color: color(srgb 0.862096 0.80824 0.98776);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h5-color, color(srgb 0.862096 0.80824 0.98776));
+  font-family: var(--h5-font, "JetBrains Mono", monospace);
 }
 
 html[saved-theme="dark"] body h6 {
-  color: color(srgb 0.862096 0.80824 0.98776);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h6-color, color(srgb 0.862096 0.80824 0.98776));
+  font-family: var(--h6-font, "JetBrains Mono", monospace);
 }
 
 html[saved-theme="dark"] body hr {
@@ -1439,7 +1701,7 @@ html[saved-theme="dark"] body hr {
   border-top-color: rgba(0, 0, 0, 0);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -1458,12 +1720,12 @@ html[saved-theme="dark"] body hr {
   padding-top: 0px;
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--nav-item-color, color(srgb 0.862096 0.80824 0.98776));
   font-family: "JetBrains Mono", monospace;
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--nav-item-color, color(srgb 0.862096 0.80824 0.98776));
   font-family: "JetBrains Mono", monospace;
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
@@ -1474,11 +1736,11 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-left-color: color(srgb 0.862096 0.80824 0.98776);
   border-right-color: color(srgb 0.862096 0.80824 0.98776);
   border-top-color: color(srgb 0.862096 0.80824 0.98776);
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--icon-color, color(srgb 0.862096 0.80824 0.98776));
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: rgb(24, 24, 24);
-  color: color(srgb 0.862096 0.80824 0.98776);
+  background-color: var(--status-bar-background, rgb(24, 24, 24));
+  color: var(--status-bar-text-color, color(srgb 0.862096 0.80824 0.98776));
   font-family: "JetBrains Mono", monospace;
 }
 
@@ -1499,7 +1761,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--nav-item-color, color(srgb 0.862096 0.80824 0.98776));
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1519,7 +1781,7 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--nav-item-color, color(srgb 0.862096 0.80824 0.98776));
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -1533,7 +1795,7 @@ html[saved-theme="dark"] body ul.section-ul {
   border-left-color: color(srgb 0.862096 0.80824 0.98776);
   border-right-color: color(srgb 0.862096 0.80824 0.98776);
   border-top-color: color(srgb 0.862096 0.80824 0.98776);
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--icon-color, color(srgb 0.862096 0.80824 0.98776));
 }
 
 html[saved-theme="dark"] body .darkmode svg {
@@ -1549,7 +1811,7 @@ html[saved-theme="dark"] body .darkmode svg {
 }
 
 html[saved-theme="dark"] body .breadcrumb-element p {
-  color: rgb(138, 92, 245);
+  color: var(--text-faint, rgb(138, 92, 245));
   font-family: "JetBrains Mono", monospace;
 }`,
     canvas: `html[saved-theme="dark"] body .canvas-node {
@@ -1561,7 +1823,7 @@ html[saved-theme="dark"] body .canvas-node-content {
 }
 
 html[saved-theme="dark"] body .canvas-node-file {
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--text-normal, color(srgb 0.862096 0.80824 0.98776));
 }
 
 html[saved-theme="dark"] body .canvas-node-group {
@@ -1569,19 +1831,19 @@ html[saved-theme="dark"] body .canvas-node-group {
 }
 
 html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(24, 24, 24);
+  background-color: var(--background-secondary, rgb(24, 24, 24));
   border-color: color(srgb 0.862096 0.80824 0.98776);
 }`,
     bases: `html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
+  background-color: var(--table-row-alt-background, color(srgb 0.54032 0.3608 0.9592 / 0.181818));
 }
 
 html[saved-theme="dark"] body .bases-table thead th {
   border-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
-  color: color(srgb 0.632256 0.48864 0.96736);
+  color: var(--table-header-color, color(srgb 0.632256 0.48864 0.96736));
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--text-muted, color(srgb 0.862096 0.80824 0.98776));
   font-family: "JetBrains Mono", monospace;
 }
 
@@ -1607,8 +1869,8 @@ html[saved-theme="dark"] body .note-properties-value {
 }
 
 html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(22, 22, 22);
-  color: color(srgb 0.862096 0.80824 0.98776);
+  background-color: var(--background-primary, rgb(22, 22, 22));
+  color: var(--text-normal, color(srgb 0.862096 0.80824 0.98776));
 }
 
 html[saved-theme="dark"] body ol.overflow {
@@ -1622,12 +1884,12 @@ html[saved-theme="dark"] body ol.overflow {
   border-top-right-radius: 12px;
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
-  background-color: rgb(24, 24, 24);
+  background-color: var(--background-secondary, rgb(24, 24, 24));
   border-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.5);
+  background-color: var(--tab-container-background, color(srgb 0.54032 0.3608 0.9592 / 0.5));
 }
 
 html[saved-theme="dark"] body .stacked-page.active {
@@ -1642,11 +1904,11 @@ html[saved-theme="dark"] body .stacked-page.active {
 }
 
 html[saved-theme="dark"] body .navigation-progress {
-  background-color: rgb(24, 24, 24);
+  background-color: var(--status-bar-background, rgb(24, 24, 24));
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--text-normal, color(srgb 0.862096 0.80824 0.98776));
   font-family: "JetBrains Mono", monospace;
 }
 
@@ -1666,17 +1928,17 @@ html[saved-theme="dark"] body input[type=text] {
   border-left-color: color(srgb 0.862096 0.80824 0.98776);
   border-right-color: color(srgb 0.862096 0.80824 0.98776);
   border-top-color: color(srgb 0.862096 0.80824 0.98776);
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--text-normal, color(srgb 0.862096 0.80824 0.98776));
   font-family: "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body kbd {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
+  background-color: var(--code-background, color(srgb 0.54032 0.3608 0.9592 / 0.15));
   border-bottom-color: color(srgb 0.862096 0.80824 0.98776);
   border-left-color: color(srgb 0.862096 0.80824 0.98776);
   border-right-color: color(srgb 0.862096 0.80824 0.98776);
   border-top-color: color(srgb 0.862096 0.80824 0.98776);
-  color: color(srgb 0.862096 0.80824 0.98776);
+  color: var(--code-normal, color(srgb 0.862096 0.80824 0.98776));
 }
 
 html[saved-theme="dark"] body progress {
@@ -1700,99 +1962,93 @@ html[saved-theme="dark"] body sup {
   },
   light: {
     base: `:root:root {
-  --background-primary: rgb(228, 228, 228);
-  --background-primary-alt: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%);
-  --background-secondary: rgb(197, 197, 197);
-  --background-secondary-alt: color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%);
-  --bases-cards-background: rgb(228, 228, 228);
-  --bases-cards-cover-background: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%);
-  --bases-group-heading-property-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --bases-table-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%);
-  --bases-table-cell-background-active: rgb(228, 228, 228);
-  --bases-table-cell-background-disabled: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%);
-  --bases-table-group-background: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%);
-  --bases-table-header-background: rgb(228, 228, 228);
-  --bases-table-header-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --bases-table-row-background-hover: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%);
-  --bases-table-summary-background: rgb(228, 228, 228);
-  --blur-background: color-mix(in srgb, rgb(228, 228, 228) 65%, transparent) linear-gradient(rgb(228, 228, 228), color-mix(in srgb, rgb(228, 228, 228) 65%, transparent));
-  --bodyFont: var(--font-interface, JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --bold-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, #000000 20%);
+  --background-primary: var(--color-base-00, rgb(228, 228, 228));
+  --background-primary-alt: color-mix(in srgb, var(--color-accent) 50%, var(--dark-or-white-var) 10%);
+  --background-secondary: var(--color-base-20, rgb(197, 197, 197));
+  --background-secondary-alt: color-mix(in srgb, var(--color-accent) 30%, transparent 0%);
+  --bases-cards-background: var(--background-primary, rgb(228, 228, 228));
+  --bases-cards-cover-background: var(--background-primary-alt, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%));
+  --bases-group-heading-property-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --bases-table-border-color: var(--table-border-color, color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%));
+  --bases-table-cell-background-active: var(--background-primary, rgb(228, 228, 228));
+  --bases-table-cell-background-disabled: var(--background-primary-alt, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%));
+  --bases-table-group-background: var(--background-primary-alt, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%));
+  --bases-table-header-background: var(--background-primary, rgb(228, 228, 228));
+  --bases-table-header-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --bases-table-row-background-hover: var(--table-row-background-hover, color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%));
+  --bases-table-summary-background: var(--background-primary, rgb(228, 228, 228));
+  --bold-color: color-mix(in srgb, var(--color-accent) 80%, var(--dark-or-white-var) 20%);
   --callout-border-width: 5px;
-  --callout-padding: 0;
-  --callout-radius: 12px;
-  --callout-title-weight: bold;
-  --canvas-background: color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%);
-  --canvas-card-label-color: hsl(258, 88%, 66%);
-  --canvas-dot-pattern: rgb(102, 102, 102);
-  --caret-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --checkbox-border-color: hsl(258, 88%, 66%);
-  --checkbox-border-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --checkbox-color: hsl(258, 88%, 66%);
-  --checkbox-marker-color: rgb(228, 228, 228);
-  --checkbox-radius: 15px;
-  --checklist-done-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --code-background: color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%);
-  --code-comment: hsl(258, 88%, 66%);
-  --code-normal: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --code-punctuation: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --codeFont: var(--font-interface, JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --collapse-icon-color: hsl(258, 88%, 66%);
-  --color-accent-trans: color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%);
-  --dark: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 0);
+  --callout-radius: var(--radius-l, 12px);
+  --canvas-background: var(--color-accent-trans, color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%));
+  --canvas-card-label-color: var(--text-faint, hsl(258, 88%, 66%));
+  --canvas-dot-pattern: var(--color-base-30, rgb(102, 102, 102));
+  --caret-color: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --checkbox-border-color: var(--text-faint, hsl(258, 88%, 66%));
+  --checkbox-border-color-hover: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --checkbox-color: var(--color-accent, hsl(258, 88%, 66%));
+  --checkbox-marker-color: var(--background-primary, rgb(228, 228, 228));
+  --checkbox-radius: var(--radius-s, 15px);
+  --checklist-done-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --code-background: var(--color-accent-trans, color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%));
+  --code-comment: var(--text-faint, hsl(258, 88%, 66%));
+  --code-normal: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --code-punctuation: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --collapse-icon-color: var(--text-faint, hsl(258, 88%, 66%));
+  --color-accent-trans: color-mix(in srgb, var(--color-accent) 15%, transparent 0%);
+  --dark: var(--text-normal, color-mix(in srgb, var(--color-accent) 50%, var(--dark-or-white-var) 40%));
   --dark-or-white-var: #000000;
-  --darkgray: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --darkgray: var(--text-normal, color-mix(in srgb, var(--color-accent) 50%, var(--dark-or-white-var) 40%));
   --default-font: 'JetBrains Mono', monospace;
-  --file-header-background: rgb(228, 228, 228);
-  --file-header-background-focused: rgb(228, 228, 228);
-  --file-header-font: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --flair-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --font-interface: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --footnote-id-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --footnote-id-color-no-occurrences: hsl(258, 88%, 66%);
-  --graph-node: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --graph-node-unresolved: hsl(258, 88%, 66%);
-  --graph-text: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --gray: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --file-header-background: var(--background-primary, rgb(228, 228, 228));
+  --file-header-background-focused: var(--background-primary, rgb(228, 228, 228));
+  --file-header-font: var(--font-interface, JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --flair-color: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --footnote-id-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --footnote-id-color-no-occurrences: var(--text-faint, hsl(258, 88%, 66%));
+  --graph-node: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --graph-node-unresolved: var(--text-faint, hsl(258, 88%, 66%));
+  --graph-text: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --gray: var(--text-muted, var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%)));
   --grid-size: 64px;
-  --headerFont: var(--font-interface, JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --heading-formatting: hsl(258, 88%, 66%);
-  --highlight: var(--text-highlight-bg, color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%));
-  --icon-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --icon-color-focused: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --icon-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --input-date-separator: hsl(258, 88%, 66%);
-  --input-placeholder-color: hsl(258, 88%, 66%);
-  --interactive-color: hsl(258, 88%, 66%);
-  --italic-color: color-mix(in srgb, hsl(258, 88%, 66%) 60%, #000000 20%);
+  --heading-formatting: var(--text-faint, hsl(258, 88%, 66%));
+  --highlight: var(--text-highlight-bg, color-mix(in srgb, var(--color-accent) 30%, transparent 0%));
+  --icon-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --icon-color-focused: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --icon-color-hover: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --input-date-separator: var(--text-faint, hsl(258, 88%, 66%));
+  --input-placeholder-color: var(--text-faint, hsl(258, 88%, 66%));
+  --interactive-color: var(--color-accent, hsl(258, 88%, 66%));
+  --italic-color: color-mix(in srgb, var(--color-accent) 60%, var(--dark-or-white-var) 20%);
   --large-kanban-width: 400px;
-  --light: var(--background-primary, rgb(228, 228, 228));
-  --lightgray: var(--background-secondary, rgb(197, 197, 197));
-  --list-marker-color: hsl(258, 88%, 66%);
-  --list-marker-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --menu-background: rgb(197, 197, 197);
-  --metadata-input-font: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-input-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --metadata-label-font: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-label-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --metadata-label-text-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --modal-background: rgb(228, 228, 228);
-  --nav-collapse-icon-color: hsl(258, 88%, 66%);
-  --nav-collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-  --nav-heading-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --nav-heading-color-collapsed: hsl(258, 88%, 66%);
-  --nav-heading-color-collapsed-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --nav-heading-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --nav-item-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --nav-item-color-active: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --nav-item-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --nav-item-color-selected: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --nav-tag-color: hsl(258, 88%, 66%);
-  --nav-tag-color-active: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --nav-tag-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --pdf-background: rgb(228, 228, 228);
-  --pdf-page-background: rgb(228, 228, 228);
-  --pdf-sidebar-background: rgb(228, 228, 228);
+  --light: var(--background-primary, var(--color-base-00, rgb(228, 228, 228)));
+  --lightgray: var(--background-secondary, var(--color-base-20, rgb(197, 197, 197)));
+  --list-marker-color: var(--text-faint, hsl(258, 88%, 66%));
+  --list-marker-color-hover: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --menu-background: var(--background-secondary, rgb(197, 197, 197));
+  --metadata-input-font: var(--font-interface, JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-input-text-color: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --metadata-label-font: var(--font-interface, JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-label-text-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --metadata-label-text-color-hover: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --modal-background: var(--background-primary, rgb(228, 228, 228));
+  --nav-collapse-icon-color: var(--collapse-icon-color, hsl(258, 88%, 66%));
+  --nav-collapse-icon-color-collapsed: var(--text-faint, hsl(258, 88%, 66%));
+  --nav-heading-color: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --nav-heading-color-collapsed: var(--text-faint, hsl(258, 88%, 66%));
+  --nav-heading-color-collapsed-hover: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --nav-heading-color-hover: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --nav-item-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --nav-item-color-active: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --nav-item-color-hover: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --nav-item-color-selected: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --nav-tag-color: var(--text-faint, hsl(258, 88%, 66%));
+  --nav-tag-color-active: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --nav-tag-color-hover: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --pdf-background: var(--background-primary, rgb(228, 228, 228));
+  --pdf-page-background: var(--background-primary, rgb(228, 228, 228));
+  --pdf-sidebar-background: var(--background-primary, rgb(228, 228, 228));
   --pen-black: #26241f;
   --pen-blue: #3f76ed;
   --pen-gray: #5f5d58;
@@ -1806,63 +2062,61 @@ html[saved-theme="dark"] body sup {
   --pen-purple: #9b4ff0;
   --pen-red: #e14a49;
   --pen-white: #edf1fc;
-  --pill-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --pill-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --pill-color-remove: hsl(258, 88%, 66%);
-  --prompt-background: rgb(228, 228, 228);
-  --raised-background: color-mix(in srgb, rgb(228, 228, 228) 65%, transparent) linear-gradient(rgb(228, 228, 228), color-mix(in srgb, rgb(228, 228, 228) 65%, transparent));
-  --ribbon-background: rgb(197, 197, 197);
-  --ribbon-background-collapsed: rgb(228, 228, 228);
-  --search-clear-button-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --search-icon-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --search-result-background: rgb(228, 228, 228);
-  --setting-group-heading-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --setting-items-background: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%);
-  --shiki-active-tab-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --shiki-code-background: color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%);
-  --shiki-code-comment: hsl(258, 88%, 66%);
-  --shiki-code-normal: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --shiki-code-punctuation: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --shiki-gutter-text-color: hsl(258, 88%, 66%);
-  --shiki-gutter-text-color-highlight: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --shiki-highlight-neutral: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --shiki-terminal-dots-color: hsl(258, 88%, 66%);
-  --status-bar-background: rgb(197, 197, 197);
-  --status-bar-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --suggestion-background: rgb(228, 228, 228);
-  --tab-background-active: rgb(228, 228, 228);
-  --tab-container-background: rgb(197, 197, 197);
-  --tab-switcher-background: rgb(197, 197, 197);
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(197, 197, 197), transparent);
-  --tab-text-color: hsl(258, 88%, 66%);
-  --tab-text-color-active: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --tab-text-color-focused: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --tab-text-color-focused-active: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --tab-text-color-focused-active-current: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --table-background: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%);
-  --table-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%);
-  --table-column-alt-background: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%);
-  --table-drag-handle-color: hsl(258, 88%, 66%);
-  --table-drag-handle-color-active: #ffffff;
-  --table-header-background: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%);
-  --table-header-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%);
-  --table-header-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, #000000 20%);
-  --table-row-alt-background: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%);
-  --table-row-alt-background-hover: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%);
-  --table-row-background-hover: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%);
-  --text-faint: hsl(258, 88%, 66%);
-  --text-highlight-bg: color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%);
-  --text-muted: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --text-normal: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
+  --pill-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --pill-color-hover: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --pill-color-remove: var(--text-faint, hsl(258, 88%, 66%));
+  --prompt-background: var(--background-primary, rgb(228, 228, 228));
+  --raised-background: var(--blur-background, color-mix(in srgb, rgb(228, 228, 228) 65%, transparent) linear-gradient(rgb(228, 228, 228), color-mix(in srgb, rgb(228, 228, 228) 65%, transparent)));
+  --ribbon-background: var(--background-secondary, rgb(197, 197, 197));
+  --ribbon-background-collapsed: var(--background-primary, rgb(228, 228, 228));
+  --search-clear-button-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --search-icon-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --search-result-background: var(--background-primary, rgb(228, 228, 228));
+  --setting-group-heading-color: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --setting-items-background: var(--background-primary-alt, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%));
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --shiki-code-background: var(--code-background, color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%));
+  --shiki-code-comment: var(--text-faint, hsl(258, 88%, 66%));
+  --shiki-code-normal: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --shiki-code-punctuation: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --shiki-gutter-text-color: var(--text-faint, hsl(258, 88%, 66%));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --shiki-highlight-neutral: var(--shiki-code-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --shiki-terminal-dots-color: var(--text-faint, hsl(258, 88%, 66%));
+  --status-bar-background: var(--background-secondary, rgb(197, 197, 197));
+  --status-bar-text-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --suggestion-background: var(--background-primary, rgb(228, 228, 228));
+  --tab-background-active: var(--background-primary, rgb(228, 228, 228));
+  --tab-container-background: var(--background-secondary, rgb(197, 197, 197));
+  --tab-switcher-background: var(--background-secondary, rgb(197, 197, 197));
+  --tab-text-color: var(--text-faint, hsl(258, 88%, 66%));
+  --tab-text-color-active: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --tab-text-color-focused: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --tab-text-color-focused-active: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --tab-text-color-focused-active-current: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --table-background: color-mix(in srgb, var(--color-accent) 20%, transparent 90%);
+  --table-border-color: color-mix(in srgb, var(--color-accent) 80%, transparent 0%);
+  --table-column-alt-background: var(--table-background, color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%));
+  --table-drag-handle-color: var(--text-faint, hsl(258, 88%, 66%));
+  --table-drag-handle-color-active: var(--text-on-accent, #ffffff);
+  --table-header-background: var(--table-background, color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%));
+  --table-header-border-color: var(--table-border-color, color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%));
+  --table-header-color: color-mix(in srgb, var(--color-accent) 80%, var(--dark-or-white-var) 20%);
+  --table-row-alt-background: var(--table-background, color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%));
+  --table-row-alt-background-hover: var(--table-background, color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%));
+  --table-row-background-hover: var(--table-background, color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%));
+  --text-faint: var(--color-accent, hsl(258, 88%, 66%));
+  --text-highlight-bg: color-mix(in srgb, var(--color-accent) 30%, transparent 0%);
+  --text-muted: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --text-normal: color-mix(in srgb, var(--color-accent) 50%, var(--dark-or-white-var) 40%);
   --text-on-accent: #ffffff;
-  --textHighlight: var(--text-highlight-bg, color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%));
-  --titleFont: var(--font-interface, JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --titlebar-background: rgb(197, 197, 197);
-  --titlebar-background-focused: color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%);
-  --titlebar-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --titlebar-text-color-focused: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --vault-profile-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
-  --vault-profile-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%);
+  --textHighlight: var(--text-highlight-bg, color-mix(in srgb, var(--color-accent) 30%, transparent 0%));
+  --titlebar-background: var(--background-secondary, rgb(197, 197, 197));
+  --titlebar-background-focused: var(--background-secondary-alt, color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%));
+  --titlebar-text-color: var(--text-muted, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --titlebar-text-color-focused: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --vault-profile-color: var(--text-normal, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
+  --vault-profile-color-hover: var(--vault-profile-color, color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%));
   --quartz-icon-color: currentColor;
 }
 
@@ -1872,17 +2126,17 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(197, 197, 197);
+  background-color: var(--tab-container-background, rgb(197, 197, 197));
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
-  background-color: rgb(228, 228, 228);
+  background-color: var(--background-primary, rgb(228, 228, 228));
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(197, 197, 197);
+  background-color: var(--background-secondary, rgb(197, 197, 197));
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
@@ -1892,7 +2146,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(197, 197, 197);
+  background-color: var(--tab-container-background, rgb(197, 197, 197));
   border-left-color: rgba(0, 0, 0, 0);
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
@@ -1900,7 +2154,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body html {
   --default-font: 'JetBrains Mono', monospace;
   --font-interface-theme: 'JetBrains Mono', monospace;
-  --font-text-theme: 'JetBrains Mono', monospace;
+  --font-text-theme: var(--font-interface-theme, 'JetBrains Mono', monospace);
   --large-kanban-width: 400px;
   --pen-black: #26241f;
   --pen-blue: #3f76ed;
@@ -1911,7 +2165,7 @@ html[saved-theme="light"] body html {
   --pen-museifu-dark: #838383;
   --pen-museifu-paperdark: #beb7b7;
   --pen-museifu-paperlike: #32302c;
-  --pen-museifu-simple: #edf1fc;
+  --pen-museifu-simple: var(--pen-white, #edf1fc);
   --pen-purple: #9b4ff0;
   --pen-red: #e14a49;
   --pen-white: #edf1fc;
@@ -1921,36 +2175,36 @@ html[saved-theme="light"] body html {
   --radius-xl: 20px;
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
-  color: color(srgb 0.432256 0.28864 0.76736);
+  color: var(--bold-color, color(srgb 0.432256 0.28864 0.76736));
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.432256 0.28864 0.76736) none 0px;
   text-decoration-color: color(srgb 0.432256 0.28864 0.76736);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
-  color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
+  color: var(--italic-color, color(srgb 0.40524 0.2706 0.7194 / 0.8));
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.40524 0.2706 0.7194 / 0.8) none 0px;
   text-decoration-color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
-  color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
+  color: var(--italic-color, color(srgb 0.40524 0.2706 0.7194 / 0.8));
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.40524 0.2706 0.7194 / 0.8) none 0px;
   text-decoration-color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
-  color: color(srgb 0.432256 0.28864 0.76736);
+  color: var(--bold-color, color(srgb 0.432256 0.28864 0.76736));
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.432256 0.28864 0.76736) none 0px;
   text-decoration-color: color(srgb 0.432256 0.28864 0.76736);
 }
 
 html[saved-theme="light"] body .text-highlight {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.3);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  background-color: var(--text-highlight-bg, color(srgb 0.54032 0.3608 0.9592 / 0.3));
+  color: var(--accent-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.300178 0.200444 0.532889 / 0.9) none 0px;
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
@@ -1968,7 +2222,7 @@ html[saved-theme="light"] body footer {
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--text-normal, color(srgb 0.300178 0.200444 0.532889 / 0.9));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
@@ -1977,12 +2231,12 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(138, 92, 245);
+  background-color: var(--checkbox-color, rgb(138, 92, 245));
   border-color: rgb(138, 92, 245);
 }
 
 html[saved-theme="light"] body p {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--text-muted, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.300178 0.200444 0.532889 / 0.9) none 0px;
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
@@ -2025,7 +2279,7 @@ html[saved-theme="light"] body ul.overflow {
   border-top-right-radius: 12px;
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
-  color: rgb(138, 92, 245);
+  color: var(--text-faint, rgb(138, 92, 245));
 }
 
 html[saved-theme="light"] body blockquote {
@@ -2045,11 +2299,11 @@ html[saved-theme="light"] body table {
 }
 
 html[saved-theme="light"] body tbody tr:nth-child(even) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
+  background-color: var(--table-background, color(srgb 0.54032 0.3608 0.9592 / 0.181818));
 }
 
 html[saved-theme="light"] body tbody tr:nth-child(odd) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
+  background-color: var(--table-row-alt-background, color(srgb 0.54032 0.3608 0.9592 / 0.181818));
 }
 
 html[saved-theme="light"] body td {
@@ -2057,7 +2311,7 @@ html[saved-theme="light"] body td {
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
   border-top-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--table-text-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
 }
 
 html[saved-theme="light"] body th {
@@ -2065,19 +2319,19 @@ html[saved-theme="light"] body th {
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
   border-top-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
-  color: color(srgb 0.432256 0.28864 0.76736);
+  color: var(--table-header-color, color(srgb 0.432256 0.28864 0.76736));
 }
 
 html[saved-theme="light"] body tr {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
+  background-color: var(--table-header-background, color(srgb 0.54032 0.3608 0.9592 / 0.181818));
 }`,
     code: `html[saved-theme="light"] body code {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  background-color: var(--code-background, color(srgb 0.54032 0.3608 0.9592 / 0.15));
+  color: var(--code-normal, color(srgb 0.300178 0.200444 0.532889 / 0.9));
 }
 
 html[saved-theme="light"] body pre:has(> code) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
+  background-color: var(--code-background, color(srgb 0.54032 0.3608 0.9592 / 0.15));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
@@ -2120,7 +2374,7 @@ html[saved-theme="light"] body video {
   border-top-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
-  background-color: color(srgb 0.450267 0.300667 0.799333 / 0.6);
+  background-color: var(--background-primary-alt, color(srgb 0.450267 0.300667 0.799333 / 0.6));
   border-bottom-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-left-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-right-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
@@ -2161,6 +2415,274 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-top-color: rgb(138, 92, 245);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] li.task-list-item[data-task="body"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
@@ -2453,7 +2975,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout > .callout-content {
@@ -2465,7 +2987,7 @@ html[saved-theme="light"] body .callout > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-summary, 0, 191, 188);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -2492,7 +3014,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-content {
@@ -2504,7 +3026,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-bug, 233, 49, 71);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -2531,7 +3053,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
@@ -2543,7 +3065,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-error, 233, 49, 71);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -2570,7 +3092,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-content {
@@ -2582,7 +3104,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
-  --callout-color: 120, 82, 238;
+  --callout-color: var(--callout-example, 120, 82, 238);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -2609,7 +3131,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] > .callout-content {
@@ -2621,7 +3143,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-fail, 233, 49, 71);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -2648,7 +3170,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-content {
@@ -2660,7 +3182,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-info, 8, 109, 221);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -2687,7 +3209,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content {
@@ -2699,7 +3221,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -2726,7 +3248,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content {
@@ -2738,7 +3260,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-question, 236, 117, 0);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -2765,7 +3287,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] > .callout-content {
@@ -2777,7 +3299,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -2804,7 +3326,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content {
@@ -2816,7 +3338,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
-  --callout-color: 8, 185, 78;
+  --callout-color: var(--callout-success, 8, 185, 78);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -2843,7 +3365,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] > .callout-content {
@@ -2855,7 +3377,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-tip, 0, 191, 188);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -2882,7 +3404,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
@@ -2894,7 +3416,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-todo, 8, 109, 221);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -2921,7 +3443,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content {
@@ -2933,7 +3455,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-warning, 236, 117, 0);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -2960,7 +3482,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  font-weight: 700;
+  font-weight: var(--font-weight, 700);
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] > .callout-content {
@@ -3027,12 +3549,12 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--text-normal, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   font-family: "JetBrains Mono", monospace;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
-  background-color: rgb(228, 228, 228);
+  background-color: var(--prompt-background, rgb(228, 228, 228));
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > * {
@@ -3085,42 +3607,42 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
 }
 
 html[saved-theme="light"] body h1 {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h1-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
+  font-family: var(--h1-font, "JetBrains Mono", monospace);
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--inline-title-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
 }
 
 html[saved-theme="light"] body h2 {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h2-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
+  font-family: var(--h2-font, "JetBrains Mono", monospace);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--inline-title-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
+  font-family: var(--inline-title-font, "JetBrains Mono", monospace);
 }
 
 html[saved-theme="light"] body h3 {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h3-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
+  font-family: var(--h3-font, "JetBrains Mono", monospace);
 }
 
 html[saved-theme="light"] body h4 {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h4-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
+  font-family: var(--h4-font, "JetBrains Mono", monospace);
 }
 
 html[saved-theme="light"] body h5 {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h5-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
+  font-family: var(--h5-font, "JetBrains Mono", monospace);
 }
 
 html[saved-theme="light"] body h6 {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--h6-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
+  font-family: var(--h6-font, "JetBrains Mono", monospace);
 }
 
 html[saved-theme="light"] body hr {
@@ -3131,7 +3653,7 @@ html[saved-theme="light"] body hr {
   border-top-color: rgba(0, 0, 0, 0);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: dashed;
@@ -3150,12 +3672,12 @@ html[saved-theme="light"] body hr {
   padding-top: 0px;
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--nav-item-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   font-family: "JetBrains Mono", monospace;
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--nav-item-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   font-family: "JetBrains Mono", monospace;
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
@@ -3166,11 +3688,11 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-left-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-right-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-top-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--icon-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: rgb(197, 197, 197);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  background-color: var(--status-bar-background, rgb(197, 197, 197));
+  color: var(--status-bar-text-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   font-family: "JetBrains Mono", monospace;
 }
 
@@ -3191,7 +3713,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--nav-item-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3211,7 +3733,7 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--nav-item-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -3225,7 +3747,7 @@ html[saved-theme="light"] body ul.section-ul {
   border-left-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-right-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-top-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--icon-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
 }
 
 html[saved-theme="light"] body .darkmode svg {
@@ -3241,7 +3763,7 @@ html[saved-theme="light"] body .darkmode svg {
 }
 
 html[saved-theme="light"] body .breadcrumb-element p {
-  color: rgb(138, 92, 245);
+  color: var(--text-faint, rgb(138, 92, 245));
   font-family: "JetBrains Mono", monospace;
 }`,
     canvas: `html[saved-theme="light"] body .canvas-node {
@@ -3253,7 +3775,7 @@ html[saved-theme="light"] body .canvas-node-content {
 }
 
 html[saved-theme="light"] body .canvas-node-file {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--text-normal, color(srgb 0.300178 0.200444 0.532889 / 0.9));
 }
 
 html[saved-theme="light"] body .canvas-node-group {
@@ -3261,19 +3783,19 @@ html[saved-theme="light"] body .canvas-node-group {
 }
 
 html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(228, 228, 228);
+  background-color: var(--background-primary, rgb(228, 228, 228));
   border-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }`,
     bases: `html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
+  background-color: var(--table-row-alt-background, color(srgb 0.54032 0.3608 0.9592 / 0.181818));
 }
 
 html[saved-theme="light"] body .bases-table thead th {
   border-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
-  color: color(srgb 0.432256 0.28864 0.76736);
+  color: var(--table-header-color, color(srgb 0.432256 0.28864 0.76736));
 }`,
     properties: `html[saved-theme="light"] body .metadata {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--text-muted, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   font-family: "JetBrains Mono", monospace;
 }
 
@@ -3299,8 +3821,8 @@ html[saved-theme="light"] body .note-properties-value {
 }
 
 html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(228, 228, 228);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  background-color: var(--background-primary, rgb(228, 228, 228));
+  color: var(--text-normal, color(srgb 0.300178 0.200444 0.532889 / 0.9));
 }
 
 html[saved-theme="light"] body ol.overflow {
@@ -3314,12 +3836,12 @@ html[saved-theme="light"] body ol.overflow {
   border-top-right-radius: 12px;
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
-  background-color: rgb(197, 197, 197);
+  background-color: var(--background-secondary, rgb(197, 197, 197));
   border-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body .stacked-page-header {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.3);
+  background-color: var(--tab-container-background, color(srgb 0.54032 0.3608 0.9592 / 0.3));
 }
 
 html[saved-theme="light"] body .stacked-page.active {
@@ -3334,11 +3856,11 @@ html[saved-theme="light"] body .stacked-page.active {
 }
 
 html[saved-theme="light"] body .navigation-progress {
-  background-color: rgb(197, 197, 197);
+  background-color: var(--status-bar-background, rgb(197, 197, 197));
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--text-normal, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   font-family: "JetBrains Mono", monospace;
 }
 
@@ -3358,17 +3880,17 @@ html[saved-theme="light"] body input[type=text] {
   border-left-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-right-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-top-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--text-normal, color(srgb 0.300178 0.200444 0.532889 / 0.9));
   font-family: "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body kbd {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
+  background-color: var(--code-background, color(srgb 0.54032 0.3608 0.9592 / 0.15));
   border-bottom-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-left-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-right-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-top-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: var(--code-normal, color(srgb 0.300178 0.200444 0.532889 / 0.9));
 }
 
 html[saved-theme="light"] body progress {

@@ -36,49 +36,45 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root {
-  --background-modifier-border: #333333;
-  --background-modifier-border-focus: #4a4a4a;
-  --background-modifier-border-hover: #363636;
-  --background-modifier-form-field: #262626;
-  --background-modifier-form-field-hover: #262626;
-  --background-primary: #0e0e0e;
-  --background-secondary: #0e0e0e;
-  --background-secondary-alt: #333333;
-  --bases-cards-background: #0e0e0e;
-  --bases-cards-shadow: 0 0 0 1px #333333;
-  --bases-cards-shadow-hover: 0 0 0 1px #363636;
-  --bases-embed-border-color: #333333;
-  --bases-group-heading-property-color: #bbbbbb;
-  --bases-table-border-color: #333333;
-  --bases-table-cell-background-active: #0e0e0e;
-  --bases-table-cell-shadow-active: 0 0 0 2px #4a4a4a;
-  --bases-table-header-background: #0e0e0e;
-  --bases-table-header-color: #bbbbbb;
-  --bases-table-summary-background: #0e0e0e;
-  --blur-background: color-mix(in srgb, #333333 65%, transparent) linear-gradient(#333333, color-mix(in srgb, #333333 65%, transparent));
+  --background-modifier-border: var(--color-base-30, #333333);
+  --background-modifier-border-focus: var(--color-base-40, #4a4a4a);
+  --background-modifier-border-hover: var(--color-base-35, #363636);
+  --background-modifier-form-field: var(--color-base-25, #262626);
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, #262626);
+  --background-primary: var(--color-base-00, #0e0e0e);
+  --background-secondary: var(--color-base-00, #0e0e0e);
+  --background-secondary-alt: var(--color-base-30, #333333);
+  --bases-cards-background: var(--background-primary, #0e0e0e);
+  --bases-embed-border-color: var(--background-modifier-border, #333333);
+  --bases-group-heading-property-color: var(--text-muted, #bbbbbb);
+  --bases-table-border-color: var(--table-border-color, #333333);
+  --bases-table-cell-background-active: var(--background-primary, #0e0e0e);
+  --bases-table-header-background: var(--background-primary, #0e0e0e);
+  --bases-table-header-color: var(--text-muted, #bbbbbb);
+  --bases-table-summary-background: var(--background-primary, #0e0e0e);
   --body-font: "Inter";
-  --bodyFont: var(--font-text, "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --button-background: #0e0e0e;
-  --button-border: #0e0e0e;
-  --button-text: #dddddd;
-  --canvas-background: #0e0e0e;
-  --canvas-dot-pattern: #333333;
-  --caret-color: #ffffff;
-  --checkbox-border-color-hover: #bbbbbb;
-  --checkbox-marker-color: #0e0e0e;
-  --checklist-done-color: #bbbbbb;
-  --code-background: #0e0e0e;
-  --code-border-color: #333333;
-  --code-function: rgb(235, 203, 139);
-  --code-important: rgb(208, 135, 112);
-  --code-keyword: rgb(180, 142, 173);
-  --code-normal: #dddddd;
-  --code-property: rgb(143, 188, 187);
-  --code-punctuation: #999999;
-  --code-string: rgb(163, 190, 140);
-  --code-tag: rgb(191, 97, 106);
-  --code-value: rgb(180, 142, 173);
-  --codeFont: var(--font-text, "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --bodyFont: var(--font-text-theme, var(--body-font, "Inter"));
+  --button-background: var(--background-primary, #0e0e0e);
+  --button-border: var(--background-primary, #0e0e0e);
+  --button-text: var(--color-base-80, #dddddd);
+  --canvas-background: var(--background-primary, #0e0e0e);
+  --canvas-dot-pattern: var(--color-base-30, #333333);
+  --caret-color: var(--text-normal, #ffffff);
+  --checkbox-border-color-hover: var(--text-muted, #bbbbbb);
+  --checkbox-marker-color: var(--background-primary, #0e0e0e);
+  --checklist-done-color: var(--text-muted, #bbbbbb);
+  --code-background: var(--background-primary, #0e0e0e);
+  --code-border-color: var(--background-modifier-border, #333333);
+  --code-comment: var(--color-base-50, #666666);
+  --code-function: var(--yellow, rgb(235, 203, 139));
+  --code-important: var(--orange, rgb(208, 135, 112));
+  --code-keyword: var(--purple, rgb(180, 142, 173));
+  --code-normal: var(--color-base-80, #dddddd);
+  --code-property: var(--frost0, rgb(143, 188, 187));
+  --code-punctuation: var(--color-base-60, #999999);
+  --code-string: var(--green, rgb(163, 190, 140));
+  --code-tag: var(--red, rgb(191, 97, 106));
+  --code-value: var(--purple, rgb(180, 142, 173));
   --color-base-00: #0e0e0e;
   --color-base-05: #343434;
   --color-base-100: #ffffff;
@@ -90,118 +86,108 @@ export const theme: ThemeData = {
   --color-base-70: #bbbbbb;
   --color-base-80: #dddddd;
   --color-base-90: #eeeeee;
-  --dark: var(--text-normal, #ffffff);
-  --darkgray: var(--text-normal, #ffffff);
-  --divider-color: #333333;
-  --dropdown-background: #333333;
-  --dropdown-background-hover: #363636;
-  --embed-block-shadow-hover: 0 0 0 1px #333333, inset 0 0 0 1px #333333;
-  --file-header-background: #0e0e0e;
-  --file-header-background-focused: #0e0e0e;
-  --file-header-font: "Inter";
-  --flair-background: #333333;
-  --flair-color: #ffffff;
-  --focus-border: rgb(180, 142, 173);
-  --font-mermaid: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-print: "Inter", Arial';
-  --font-text: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-text-theme: "Inter";
-  --footnote-divider-color: #333333;
-  --footnote-id-color: #bbbbbb;
-  --frost0: rgb(143, 188, 187);
+  --dark: var(--text-normal, var(--color-base-100, #ffffff));
+  --darkgray: var(--text-normal, var(--color-base-100, #ffffff));
+  --divider-color: var(--background-modifier-border, #333333);
+  --dropdown-background: var(--interactive-normal, #333333);
+  --dropdown-background-hover: var(--interactive-hover, #363636);
+  --file-header-background: var(--background-primary, #0e0e0e);
+  --file-header-background-focused: var(--background-primary, #0e0e0e);
+  --file-header-font: var(--body-font, "Inter");
+  --flair-background: var(--interactive-normal, #333333);
+  --flair-color: var(--text-normal, #ffffff);
+  --focus-border: var(--purple, rgb(180, 142, 173));
+  --font-mermaid: var(--font-text, "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --font-text-theme: var(--body-font, "Inter");
+  --footnote-divider-color: var(--metadata-divider-color, #333333);
+  --footnote-id-color: var(--text-muted, #bbbbbb);
+  --frost0: rgb(var(--frost0_x));
   --frost0_x: 143, 188, 187;
-  --frost2: rgb(129, 161, 193);
+  --frost2: rgb(var(--frost2_x));
   --frost2_x: 129, 161, 193;
-  --graph-line: #363636;
-  --graph-node: #bbbbbb;
-  --graph-text: #ffffff;
-  --gray: var(--text-muted, #bbbbbb);
-  --green: rgb(163, 190, 140);
+  --graph-node: var(--text-muted, #bbbbbb);
+  --graph-text: var(--text-normal, #ffffff);
+  --gray: var(--text-muted, var(--color-base-70, #bbbbbb));
+  --green: rgb(var(--green_x));
   --green_x: 163, 190, 140;
-  --h1-color: rgb(191, 97, 106);
-  --h1-font: "Inter";
-  --h2-color: rgb(235, 203, 139);
-  --h2-font: "Inter";
-  --h3-color: rgb(163, 190, 140);
-  --h3-font: "Inter";
-  --h4-color: rgb(180, 142, 173);
-  --h4-font: "Inter";
-  --h5-color: rgb(143, 188, 187);
-  --h5-font: "Inter";
-  --h6-color: rgb(129, 161, 193);
-  --h6-font: "Inter";
+  --h1-color: var(--red, rgb(191, 97, 106));
+  --h1-font: var(--header-font, "Inter");
+  --h2-color: var(--yellow, rgb(235, 203, 139));
+  --h2-font: var(--header-font, "Inter");
+  --h3-color: var(--green, rgb(163, 190, 140));
+  --h3-font: var(--header-font, "Inter");
+  --h4-color: var(--purple, rgb(180, 142, 173));
+  --h4-font: var(--header-font, "Inter");
+  --h5-color: var(--frost0, rgb(143, 188, 187));
+  --h5-font: var(--header-font, "Inter");
+  --h6-color: var(--frost2, rgb(129, 161, 193));
+  --h6-font: var(--header-font, "Inter");
   --header-font: "Inter";
-  --headerFont: var(--font-text, "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --hr-color: #333333;
-  --icon-color: #bbbbbb;
-  --icon-color-focused: #ffffff;
-  --icon-color-hover: #bbbbbb;
-  --inline-title-color: rgb(191, 97, 106);
-  --inline-title-font: "Inter";
-  --interactive-hover: #363636;
-  --interactive-normal: #333333;
-  --light: var(--background-primary, #0e0e0e);
-  --lightgray: var(--background-secondary, #0e0e0e);
-  --list-marker-color-hover: #bbbbbb;
-  --menu-background: #0e0e0e;
-  --menu-border-color: #363636;
-  --metadata-border-color: #333333;
-  --metadata-divider-color: #333333;
-  --metadata-input-text-color: #ffffff;
-  --metadata-label-text-color: #bbbbbb;
-  --metadata-label-text-color-hover: #bbbbbb;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #4a4a4a;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #363636;
-  --modal-background: #0e0e0e;
-  --modal-border-color: #4a4a4a;
-  --nav-heading-color: #ffffff;
-  --nav-heading-color-collapsed-hover: #bbbbbb;
-  --nav-heading-color-hover: #ffffff;
-  --nav-item-color: #bbbbbb;
-  --nav-item-color-active: #ffffff;
-  --nav-item-color-hover: #ffffff;
-  --nav-item-color-selected: #ffffff;
-  --nav-tag-color-active: #bbbbbb;
-  --nav-tag-color-hover: #bbbbbb;
-  --orange: rgb(208, 135, 112);
+  --headerFont: var(--font-text-theme, var(--body-font, "Inter"));
+  --hr-color: var(--background-modifier-border, #333333);
+  --icon-color: var(--text-muted, #bbbbbb);
+  --icon-color-focused: var(--text-normal, #ffffff);
+  --icon-color-hover: var(--text-muted, #bbbbbb);
+  --inline-title-color: var(--h1-color, rgb(191, 97, 106));
+  --inline-title-font: var(--h1-font, "Inter");
+  --interactive-hover: var(--color-base-35, #363636);
+  --interactive-normal: var(--color-base-30, #333333);
+  --light: var(--background-primary, var(--color-base-00, #0e0e0e));
+  --lightgray: var(--background-secondary, var(--color-base-00, #0e0e0e));
+  --list-marker-color-hover: var(--text-muted, #bbbbbb);
+  --menu-background: var(--background-secondary, #0e0e0e);
+  --menu-border-color: var(--background-modifier-border-hover, #363636);
+  --metadata-border-color: var(--background-modifier-border, #333333);
+  --metadata-divider-color: var(--background-modifier-border, #333333);
+  --metadata-input-text-color: var(--text-normal, #ffffff);
+  --metadata-label-text-color: var(--text-muted, #bbbbbb);
+  --metadata-label-text-color-hover: var(--text-muted, #bbbbbb);
+  --modal-background: var(--background-primary, #0e0e0e);
+  --nav-heading-color: var(--text-normal, #ffffff);
+  --nav-heading-color-collapsed-hover: var(--text-muted, #bbbbbb);
+  --nav-heading-color-hover: var(--text-normal, #ffffff);
+  --nav-item-color: var(--text-muted, #bbbbbb);
+  --nav-item-color-active: var(--text-normal, #ffffff);
+  --nav-item-color-hover: var(--text-normal, #ffffff);
+  --nav-item-color-selected: var(--text-normal, #ffffff);
+  --nav-tag-color-active: var(--text-muted, #bbbbbb);
+  --nav-tag-color-hover: var(--text-muted, #bbbbbb);
+  --orange: rgb(var(--orange_x));
   --orange_x: 208, 135, 112;
-  --pdf-background: #0e0e0e;
-  --pdf-page-background: #0e0e0e;
-  --pdf-shadow: 0 0 0 1px #333333;
-  --pdf-sidebar-background: #0e0e0e;
-  --pdf-thumbnail-shadow: 0 0 0 1px #333333;
-  --pill-border-color: #333333;
-  --pill-border-color-hover: #363636;
-  --pill-color: #bbbbbb;
-  --pill-color-hover: #ffffff;
-  --prompt-background: #0e0e0e;
-  --prompt-border-color: #4a4a4a;
-  --purple: rgb(180, 142, 173);
+  --pdf-background: var(--background-primary, #0e0e0e);
+  --pdf-page-background: var(--background-primary, #0e0e0e);
+  --pdf-sidebar-background: var(--background-primary, #0e0e0e);
+  --pill-border-color: var(--background-modifier-border, #333333);
+  --pill-border-color-hover: var(--background-modifier-border-hover, #363636);
+  --pill-color: var(--text-muted, #bbbbbb);
+  --pill-color-hover: var(--text-normal, #ffffff);
+  --prompt-background: var(--background-primary, #0e0e0e);
+  --purple: rgb(var(--purple_x));
   --purple_x: 180, 142, 173;
-  --raised-background: color-mix(in srgb, #333333 65%, transparent) linear-gradient(#333333, color-mix(in srgb, #333333 65%, transparent));
-  --red: rgb(191, 97, 106);
+  --raised-background: var(--blur-background, color-mix(in srgb, #333333 65%, transparent) linear-gradient(#333333, color-mix(in srgb, #333333 65%, transparent)));
+  --red: rgb(var(--red_x));
   --red_x: 191, 97, 106;
-  --ribbon-background: #0e0e0e;
-  --ribbon-background-collapsed: #0e0e0e;
-  --search-clear-button-color: #bbbbbb;
-  --search-icon-color: #bbbbbb;
-  --search-result-background: #0e0e0e;
-  --selection-background: rgba(163, 190, 140, 0.35);
-  --setting-group-heading-color: #ffffff;
-  --setting-items-border-color: #333333;
-  --shiki-active-tab-border-color: #bbbbbb;
-  --shiki-code-background: #0e0e0e;
-  --shiki-code-normal: #bbbbbb;
-  --shiki-code-punctuation: #bbbbbb;
-  --shiki-gutter-border-color: #333333;
-  --shiki-gutter-text-color-highlight: #bbbbbb;
-  --shiki-highlight-neutral: #bbbbbb;
-  --slider-thumb-border-color: #363636;
-  --slider-track-background: #333333;
-  --status-bar-background: #343434;
-  --status-bar-border-color: #333333;
-  --status-bar-foreground: #ffffff;
-  --status-bar-text-color: #bbbbbb;
+  --ribbon-background: var(--background-secondary, #0e0e0e);
+  --ribbon-background-collapsed: var(--background-primary, #0e0e0e);
+  --search-clear-button-color: var(--text-muted, #bbbbbb);
+  --search-icon-color: var(--text-muted, #bbbbbb);
+  --search-result-background: var(--background-primary, #0e0e0e);
+  --selection-background: rgba(var(--green_x), 0.35);
+  --setting-group-heading-color: var(--text-normal, #ffffff);
+  --setting-items-border-color: var(--background-modifier-border, #333333);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, #bbbbbb);
+  --shiki-code-background: var(--code-background, #0e0e0e);
+  --shiki-code-normal: var(--text-muted, #bbbbbb);
+  --shiki-code-punctuation: var(--text-muted, #bbbbbb);
+  --shiki-gutter-border-color: var(--background-modifier-border, #333333);
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, #bbbbbb);
+  --shiki-highlight-neutral: var(--shiki-code-normal, #bbbbbb);
+  --slider-thumb-border-color: var(--background-modifier-border-hover, #363636);
+  --slider-track-background: var(--background-modifier-border, #333333);
+  --status-bar-background: var(--color-base-05, #343434);
+  --status-bar-border-color: var(--divider-color, #333333);
+  --status-bar-foreground: var(--color-base-100, #ffffff);
+  --status-bar-text-color: var(--text-muted, #bbbbbb);
   --style-settings-section-accent-colors: "Accent Colors";
   --style-settings-section-buttons: "Buttons";
   --style-settings-section-colors: "Base Colors";
@@ -209,9 +195,9 @@ export const theme: ThemeData = {
   --style-settings-section-selection-focus: "Selections and Focus";
   --style-settings-section-status-bar: "Status Bar";
   --style-settings-section-text-colors: "Text Colors";
-  --style-settings-var-button-background: [color, Button Background Color, #0e0e0e];
-  --style-settings-var-button-border: [color, Button Border Color, #0e0e0e];
-  --style-settings-var-button-text: [color, Button Text Color, #dddddd];
+  --style-settings-var-button-background: [color, Button Background Color, var(--background-primary)];
+  --style-settings-var-button-border: [color, Button Border Color, var(--background-primary)];
+  --style-settings-var-button-text: [color, Button Text Color, var(--color-base-80)];
   --style-settings-var-color-base-00: [color, Base Dark, #0e0e0e];
   --style-settings-var-color-base-05: [color, Darker Secondary, #343434];
   --style-settings-var-color-base-10: [color, Slightly Lighter Dark, #242424];
@@ -226,57 +212,56 @@ export const theme: ThemeData = {
   --style-settings-var-color-base-70: [color, Almost White Gray, #bbbbbb];
   --style-settings-var-color-base-80: [color, Very Light Gray, #dddddd];
   --style-settings-var-color-base-90: [color, Almost White, #eeeeee];
-  --style-settings-var-focus-border: [color, Focus Border Color, rgb(180, 142, 173)];
+  --style-settings-var-focus-border: [color, Focus Border Color, var(--purple)];
   --style-settings-var-frost0_x: [color, Cyan Frost, #8fbcbb];
   --style-settings-var-frost2_x: [color, Blue Frost, #81a1c1];
   --style-settings-var-green_x: [color, Green Base, #a3be8c];
-  --style-settings-var-h1-color: [color, Heading 1 Color, rgb(191, 97, 106)];
-  --style-settings-var-h2-color: [color, Heading 2 Color, rgb(235, 203, 139)];
-  --style-settings-var-h3-color: [color, Heading 3 Color, rgb(163, 190, 140)];
-  --style-settings-var-h4-color: [color, Heading 4 Color, rgb(180, 142, 173)];
-  --style-settings-var-h5-color: [color, Heading 5 Color, rgb(143, 188, 187)];
-  --style-settings-var-h6-color: [color, Heading 6 Color, rgb(129, 161, 193)];
+  --style-settings-var-h1-color: [color, Heading 1 Color, var(--red)];
+  --style-settings-var-h2-color: [color, Heading 2 Color, var(--yellow)];
+  --style-settings-var-h3-color: [color, Heading 3 Color, var(--green)];
+  --style-settings-var-h4-color: [color, Heading 4 Color, var(--purple)];
+  --style-settings-var-h5-color: [color, Heading 5 Color, var(--frost0)];
+  --style-settings-var-h6-color: [color, Heading 6 Color, var(--frost2)];
   --style-settings-var-orange_x: [color, Orange Base, #d08770];
   --style-settings-var-purple_x: [color, Purple Base, #b48ead];
   --style-settings-var-red_x: [color, Red Base, #bf616a];
-  --style-settings-var-selection-background: [color, Selection Background Color, rgba(163, 190, 140, 0.25)];
-  --style-settings-var-status-bar-background: [color, Status Bar Background, #343434];
-  --style-settings-var-status-bar-foreground: [color, Status Bar Foreground, #ffffff];
-  --style-settings-var-text-error: [color, Error Text Color, rgb(191, 97, 106)];
-  --style-settings-var-text-primary: [color, Primary Text Color, #dddddd];
-  --style-settings-var-text-secondary: [color, Secondary Text Color, #666666];
-  --style-settings-var-text-warning: [color, Warning Text Color, rgb(235, 203, 139)];
+  --style-settings-var-selection-background: [color, Selection Background Color, rgba(var(--green_x), 0.25)];
+  --style-settings-var-status-bar-background: [color, Status Bar Background, var(--color-base-05)];
+  --style-settings-var-status-bar-foreground: [color, Status Bar Foreground, var(--color-base-100)];
+  --style-settings-var-text-error: [color, Error Text Color, var(--red)];
+  --style-settings-var-text-primary: [color, Primary Text Color, var(--color-base-80)];
+  --style-settings-var-text-secondary: [color, Secondary Text Color, var(--color-base-50)];
+  --style-settings-var-text-warning: [color, Warning Text Color, var(--yellow)];
   --style-settings-var-yellow_x: [color, Yellow Base, #ebcb8b];
-  --suggestion-background: #0e0e0e;
-  --tab-background-active: #0e0e0e;
-  --tab-container-background: #0e0e0e;
-  --tab-divider-color: #363636;
-  --tab-outline-color: #333333;
-  --tab-switcher-background: #0e0e0e;
-  --tab-switcher-menubar-background: linear-gradient(to top, #0e0e0e, transparent);
-  --tab-text-color-active: #bbbbbb;
-  --tab-text-color-focused: #bbbbbb;
-  --tab-text-color-focused-active: #bbbbbb;
-  --tab-text-color-focused-active-current: #ffffff;
-  --table-add-button-border-color: #333333;
-  --table-border-color: #333333;
-  --table-header-border-color: #333333;
-  --table-header-color: #ffffff;
-  --text-error: rgb(191, 97, 106);
-  --text-muted: #bbbbbb;
-  --text-normal: #ffffff;
-  --text-primary: #dddddd;
-  --text-secondary: #666666;
-  --text-warning: rgb(235, 203, 139);
-  --titleFont: var(--font-text, "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --titlebar-background: #0e0e0e;
-  --titlebar-background-focused: #242424;
-  --titlebar-border-color: #333333;
-  --titlebar-text-color: #bbbbbb;
-  --titlebar-text-color-focused: #ffffff;
-  --vault-profile-color: #ffffff;
-  --vault-profile-color-hover: #ffffff;
-  --yellow: rgb(235, 203, 139);
+  --suggestion-background: var(--background-primary, #0e0e0e);
+  --tab-background-active: var(--background-primary, #0e0e0e);
+  --tab-container-background: var(--background-secondary, #0e0e0e);
+  --tab-divider-color: var(--background-modifier-border-hover, #363636);
+  --tab-outline-color: var(--divider-color, #333333);
+  --tab-switcher-background: var(--background-secondary, #0e0e0e);
+  --tab-text-color-active: var(--text-muted, #bbbbbb);
+  --tab-text-color-focused: var(--text-muted, #bbbbbb);
+  --tab-text-color-focused-active: var(--text-muted, #bbbbbb);
+  --tab-text-color-focused-active-current: var(--text-normal, #ffffff);
+  --table-add-button-border-color: var(--background-modifier-border, #333333);
+  --table-border-color: var(--background-modifier-border, #333333);
+  --table-header-border-color: var(--table-border-color, #333333);
+  --table-header-color: var(--text-normal, #ffffff);
+  --text-error: var(--red, rgb(191, 97, 106));
+  --text-muted: var(--color-base-70, #bbbbbb);
+  --text-normal: var(--color-base-100, #ffffff);
+  --text-primary: var(--color-base-80, #dddddd);
+  --text-secondary: var(--color-base-50, #666666);
+  --text-warning: var(--yellow, rgb(235, 203, 139));
+  --titleFont: var(--font-text-theme, var(--body-font, "Inter"));
+  --titlebar-background: var(--color-base-00, #0e0e0e);
+  --titlebar-background-focused: var(--color-base-10, #242424);
+  --titlebar-border-color: var(--background-modifier-border, #333333);
+  --titlebar-text-color: var(--text-muted, #bbbbbb);
+  --titlebar-text-color-focused: var(--text-normal, #ffffff);
+  --vault-profile-color: var(--text-normal, #ffffff);
+  --vault-profile-color-hover: var(--vault-profile-color, #ffffff);
+  --yellow: rgb(var(--yellow_x));
   --yellow_x: 235, 203, 139;
   --quartz-icon-color: currentColor;
 }
@@ -287,17 +272,17 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(14, 14, 14);
+  background-color: var(--tab-container-background, rgb(14, 14, 14));
   color: rgb(221, 221, 221);
 }
 
 html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
-  background-color: rgb(14, 14, 14);
+  background-color: var(--background-primary, rgb(14, 14, 14));
   color: rgb(221, 221, 221);
 }
 
 html body .page > div#quartz-body div.sidebar {
-  background-color: rgb(14, 14, 14);
+  background-color: var(--background-secondary, rgb(14, 14, 14));
   color: rgb(221, 221, 221);
 }
 
@@ -306,40 +291,40 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(14, 14, 14);
+  background-color: var(--tab-container-background, rgb(14, 14, 14));
   border-left-color: rgb(51, 51, 51);
   color: rgb(221, 221, 221);
 }`,
     typography: `html body .markdown-rendered p > b, html b {
-  color: rgb(255, 255, 255);
+  color: var(--bold-color, rgb(255, 255, 255));
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body .markdown-rendered p > em, html em {
-  color: rgb(255, 255, 255);
+  color: var(--italic-color, rgb(255, 255, 255));
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body .markdown-rendered p > i, html i {
-  color: rgb(255, 255, 255);
+  color: var(--italic-color, rgb(255, 255, 255));
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body .markdown-rendered p > strong, html strong {
-  color: rgb(255, 255, 255);
+  color: var(--bold-color, rgb(255, 255, 255));
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body .text-highlight {
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
@@ -353,11 +338,11 @@ html body del {
 }
 
 html body h1.article-title {
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
 }
 
 html body p {
-  color: rgb(187, 187, 187);
+  color: var(--text-muted, rgb(187, 187, 187));
   outline: rgb(187, 187, 187) none 0px;
   text-decoration-color: rgb(187, 187, 187);
 }`,
@@ -415,7 +400,7 @@ html body td {
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
   border-top-color: rgb(51, 51, 51);
-  color: rgb(255, 255, 255);
+  color: var(--table-text-color, rgb(255, 255, 255));
 }
 
 html body th {
@@ -423,19 +408,19 @@ html body th {
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
   border-top-color: rgb(51, 51, 51);
-  color: rgb(255, 255, 255);
+  color: var(--table-header-color, rgb(255, 255, 255));
 }`,
     code: `html body code {
-  background-color: rgb(14, 14, 14);
+  background-color: var(--code-background, rgb(14, 14, 14));
   border-bottom-color: rgb(51, 51, 51);
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
   border-top-color: rgb(51, 51, 51);
-  color: rgb(221, 221, 221);
+  color: var(--code-normal, rgb(221, 221, 221));
 }
 
 html body pre:has(> code) {
-  background-color: rgb(14, 14, 14);
+  background-color: var(--code-background, rgb(14, 14, 14));
   border-bottom-color: rgb(51, 51, 51);
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
@@ -1060,7 +1045,7 @@ html body .callout > .callout-content {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   color: rgb(221, 221, 221);
 }
 
@@ -1073,7 +1058,7 @@ html body .callout[data-callout="abstract"] > .callout-content {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   color: rgb(221, 221, 221);
 }
 
@@ -1086,7 +1071,7 @@ html body .callout[data-callout="bug"] > .callout-content {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   color: rgb(221, 221, 221);
 }
 
@@ -1099,7 +1084,7 @@ html body .callout[data-callout="danger"] > .callout-content {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   color: rgb(221, 221, 221);
 }
 
@@ -1112,7 +1097,7 @@ html body .callout[data-callout="example"] > .callout-content {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   color: rgb(221, 221, 221);
 }
 
@@ -1125,7 +1110,7 @@ html body .callout[data-callout="failure"] > .callout-content {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   color: rgb(221, 221, 221);
 }
 
@@ -1138,7 +1123,7 @@ html body .callout[data-callout="info"] > .callout-content {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   color: rgb(221, 221, 221);
 }
 
@@ -1151,7 +1136,7 @@ html body .callout[data-callout="note"] > .callout-content {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   color: rgb(221, 221, 221);
 }
 
@@ -1164,7 +1149,7 @@ html body .callout[data-callout="question"] > .callout-content {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   color: rgb(255, 255, 255);
 }
 
@@ -1177,7 +1162,7 @@ html body .callout[data-callout="quote"] > .callout-content {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   color: rgb(221, 221, 221);
 }
 
@@ -1190,7 +1175,7 @@ html body .callout[data-callout="success"] > .callout-content {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   color: rgb(221, 221, 221);
 }
 
@@ -1203,7 +1188,7 @@ html body .callout[data-callout="tip"] > .callout-content {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   color: rgb(221, 221, 221);
 }
 
@@ -1216,7 +1201,7 @@ html body .callout[data-callout="todo"] > .callout-content {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   color: rgb(221, 221, 221);
 }
 
@@ -1289,11 +1274,11 @@ html body .callout[data-callout="warning"] {
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
   border-top-color: rgb(51, 51, 51);
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
 }
 
 html body .search > .search-container > .search-space {
-  background-color: rgb(14, 14, 14);
+  background-color: var(--prompt-background, rgb(14, 14, 14));
   border-bottom-color: rgb(74, 74, 74);
   border-left-color: rgb(74, 74, 74);
   border-right-color: rgb(74, 74, 74);
@@ -1353,42 +1338,42 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body h1 {
-  color: rgb(191, 97, 106);
-  font-family: Inter;
+  color: var(--h1-color, rgb(191, 97, 106));
+  font-family: var(--h1-font, Inter);
 }
 
 html body h1.article-title {
-  color: rgb(191, 97, 106);
+  color: var(--inline-title-color, rgb(191, 97, 106));
 }
 
 html body h2 {
-  color: rgb(235, 203, 139);
-  font-family: Inter;
+  color: var(--h2-color, rgb(235, 203, 139));
+  font-family: var(--h2-font, Inter);
 }
 
 html body h2.page-title, html h2.page-title a {
-  color: rgb(191, 97, 106);
-  font-family: Inter;
+  color: var(--inline-title-color, rgb(191, 97, 106));
+  font-family: var(--inline-title-font, Inter);
 }
 
 html body h3 {
-  color: rgb(163, 190, 140);
-  font-family: Inter;
+  color: var(--h3-color, rgb(163, 190, 140));
+  font-family: var(--h3-font, Inter);
 }
 
 html body h4 {
-  color: rgb(180, 142, 173);
-  font-family: Inter;
+  color: var(--h4-color, rgb(180, 142, 173));
+  font-family: var(--h4-font, Inter);
 }
 
 html body h5 {
-  color: rgb(143, 188, 187);
-  font-family: Inter;
+  color: var(--h5-color, rgb(143, 188, 187));
+  font-family: var(--h5-font, Inter);
 }
 
 html body h6 {
-  color: rgb(129, 161, 193);
-  font-family: Inter;
+  color: var(--h6-color, rgb(129, 161, 193));
+  font-family: var(--h6-font, Inter);
 }
 
 html body hr {
@@ -1397,14 +1382,14 @@ html body hr {
   border-right-color: rgb(51, 51, 51);
 }`,
     scrollbars: `html body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
 }`,
     explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(187, 187, 187);
+  color: var(--nav-item-color, rgb(187, 187, 187));
 }
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(187, 187, 187);
+  color: var(--nav-item-color, rgb(187, 187, 187));
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(255, 255, 255);
@@ -1414,10 +1399,10 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-left-color: rgb(187, 187, 187);
   border-right-color: rgb(187, 187, 187);
   border-top-color: rgb(187, 187, 187);
-  color: rgb(187, 187, 187);
+  color: var(--icon-color, rgb(187, 187, 187));
 }`,
     footer: `html body footer {
-  background-color: rgb(52, 52, 52);
+  background-color: var(--status-bar-background, rgb(52, 52, 52));
   border-bottom-color: rgb(51, 51, 51);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -1426,7 +1411,7 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-top-color: rgb(51, 51, 51);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  color: rgb(255, 255, 255);
+  color: var(--status-bar-foreground, rgb(255, 255, 255));
 }
 
 html body footer ul li a {
@@ -1445,7 +1430,7 @@ html body .recent-notes > ul.recent-ul > li {
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(187, 187, 187);
+  color: var(--nav-item-color, rgb(187, 187, 187));
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1463,7 +1448,7 @@ html body li.section-li > .section .meta {
 }
 
 html body li.section-li > .section > .desc > h3 > a {
-  color: rgb(187, 187, 187);
+  color: var(--nav-item-color, rgb(187, 187, 187));
 }
 
 html body ul.section-ul {
@@ -1477,7 +1462,7 @@ html body ul.section-ul {
   border-left-color: rgb(187, 187, 187);
   border-right-color: rgb(187, 187, 187);
   border-top-color: rgb(187, 187, 187);
-  color: rgb(187, 187, 187);
+  color: var(--icon-color, rgb(187, 187, 187));
 }
 
 html body .darkmode svg {
@@ -1504,7 +1489,7 @@ html body .canvas-node-content {
 }
 
 html body .canvas-node-file {
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
 }
 
 html body .canvas-node-group {
@@ -1512,19 +1497,19 @@ html body .canvas-node-group {
 }
 
 html body .canvas-sidebar {
-  background-color: rgb(14, 14, 14);
+  background-color: var(--background-secondary, rgb(14, 14, 14));
   border-color: rgb(221, 221, 221);
 }`,
     bases: `html body .bases-table thead th {
   border-color: rgb(51, 51, 51);
-  color: rgb(255, 255, 255);
+  color: var(--table-header-color, rgb(255, 255, 255));
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgb(51, 51, 51);
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
   border-top-color: rgb(51, 51, 51);
-  color: rgb(187, 187, 187);
+  color: var(--text-muted, rgb(187, 187, 187));
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -1554,8 +1539,8 @@ html body .note-properties-value {
 }
 
 html body div#quartz-root {
-  background-color: rgb(14, 14, 14);
-  color: rgb(221, 221, 221);
+  background-color: var(--background-primary, rgb(14, 14, 14));
+  color: var(--text-primary, rgb(221, 221, 221));
 }
 
 html body ol.overflow {
@@ -1565,12 +1550,12 @@ html body ol.overflow {
   border-top-color: rgb(221, 221, 221);
 }`,
     stacked: `html body .stacked-page {
-  background-color: rgb(14, 14, 14);
+  background-color: var(--background-secondary, rgb(14, 14, 14));
   border-color: rgb(221, 221, 221);
 }
 
 html body .stacked-page-header {
-  background-color: rgb(36, 36, 36);
+  background-color: var(--tab-container-background, rgb(36, 36, 36));
 }
 
 html body .stacked-page.active {
@@ -1585,11 +1570,11 @@ html body .stacked-page.active {
 }
 
 html body .navigation-progress {
-  background-color: rgb(52, 52, 52);
+  background-color: var(--status-bar-background, rgb(52, 52, 52));
 }
 
 html body .page-header h2.page-title {
-  color: rgb(255, 255, 255);
+  color: var(--text-normal, rgb(255, 255, 255));
   font-family: Inter;
 }
 
@@ -1609,16 +1594,16 @@ html body input[type=text] {
   border-left-color: rgb(187, 187, 187);
   border-right-color: rgb(187, 187, 187);
   border-top-color: rgb(187, 187, 187);
-  color: rgb(187, 187, 187);
+  color: var(--text-normal, rgb(187, 187, 187));
 }
 
 html body kbd {
-  background-color: rgb(14, 14, 14);
+  background-color: var(--code-background, rgb(14, 14, 14));
   border-bottom-color: rgb(221, 221, 221);
   border-left-color: rgb(221, 221, 221);
   border-right-color: rgb(221, 221, 221);
   border-top-color: rgb(221, 221, 221);
-  color: rgb(221, 221, 221);
+  color: var(--code-normal, rgb(221, 221, 221));
 }
 
 html body progress {

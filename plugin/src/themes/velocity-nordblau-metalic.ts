@@ -24,70 +24,65 @@ export const theme: ThemeData = {
   --accent-s: 76%;
   --anim-duration-fast: 150ms;
   --anim-duration-superfast: 75ms;
-  --anim-fast-delay: 150ms cubic-bezier(0.65, 0.05, 0.36, 1);
-  --anim-fast-smooth: 150ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  --anim-fast-swing: 150ms cubic-bezier(0, 0.55, 0.45, 1);
-  --anim-super-delay: 75ms cubic-bezier(0.65, 0.05, 0.36, 1);
-  --anim-super-smooth: 75ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  --anim-super-swing: 75ms cubic-bezier(0, 0.55, 0.45, 1);
+  --anim-fast-delay: var(--anim-duration-fast) var(--anim-motion-delay, 150ms cubic-bezier(0.65, 0.05, 0.36, 1));
+  --anim-fast-smooth: var(--anim-duration-fast) var(--anim-motion-smooth, 150ms cubic-bezier(0.45, 0.05, 0.55, 0.95));
+  --anim-fast-swing: var(--anim-duration-fast) var(--anim-motion-swing, 150ms cubic-bezier(0, 0.55, 0.45, 1));
+  --anim-super-delay: var(--anim-duration-superfast) var(--anim-motion-delay, 75ms cubic-bezier(0.65, 0.05, 0.36, 1));
+  --anim-super-smooth: var(--anim-duration-superfast) var(--anim-motion-smooth, 75ms cubic-bezier(0.45, 0.05, 0.55, 0.95));
+  --anim-super-swing: var(--anim-duration-superfast) var(--anim-motion-swing, 75ms cubic-bezier(0, 0.55, 0.45, 1));
   --autofit-close-button-left-padding: 20px;
   --autofit-close-button-right-padding: 0px;
   --autofit-left-padding: 4px;
-  --background-modifier-active-hover: hsla(192, 76%, 38%, 0.1);
-  --background-modifier-border: oklch(100% 0.05 265 / 0.0625);
-  --background-modifier-border-focus: transparent;
-  --background-modifier-border-hover: oklch(36.25% 0.01125 265);
+  --background-modifier-border: var(--trans-faint-20, oklch(100% 0.05 265 / 0.0625));
+  --background-modifier-border-focus: var(--color-base-40, transparent);
+  --background-modifier-border-hover: var(--color-base-35, oklch(36.25% 0.01125 265));
   --background-modifier-cover: oklch(10% 0 0 / 0.5);
-  --background-modifier-error: #ee6167;
-  --background-modifier-error-hover: #ee6167;
-  --background-modifier-error-rgb: 242, 100, 106;
-  --background-modifier-form-field: oklch(31.25% 0.01125 265);
-  --background-modifier-form-field-hover: transparent;
-  --background-modifier-hover: oklch(100% 0.05 265 / 0.05);
-  --background-modifier-success: #90c764;
-  --background-modifier-success-rgb: 142, 197, 98;
-  --background-primary: oklch(23.00% 0.00875 265);
-  --background-primary-alt: color-mix(in oklab, oklch(23.00% 0.00875 265), oklch(27.50% 0.01125 265));
-  --background-secondary: oklch(27.50% 0.01125 265);
-  --background-secondary-alt: oklch(34.50% 0.01125 265);
-  --bases-cards-background: oklch(100% 0.06 265 / 0.025);
-  --bases-cards-cover-background: color-mix(in oklab, oklch(23.00% 0.00875 265), oklch(27.50% 0.01125 265));
-  --bases-cards-label-color: oklch(63.75% 0.01750 265);
+  --background-modifier-error: var(--color-red, #ee6167);
+  --background-modifier-error-hover: var(--color-red, #ee6167);
+  --background-modifier-error-rgb: var(--color-red-rgb, 242, 100, 106);
+  --background-modifier-form-field: var(--color-base-25, oklch(31.25% 0.01125 265));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, transparent);
+  --background-modifier-hover: var(--trans-faint-10, oklch(100% 0.05 265 / 0.05));
+  --background-modifier-success: var(--color-green, #90c764);
+  --background-modifier-success-rgb: var(--color-green-rgb, 142, 197, 98);
+  --background-primary: var(--color-base-00, oklch(23.00% 0.00875 265));
+  --background-primary-alt: color-mix(in oklab, var(--background-primary), var(--background-secondary));
+  --background-secondary: var(--color-base-20, oklch(27.50% 0.01125 265));
+  --background-secondary-alt: var(--color-base-30, oklch(34.50% 0.01125 265));
+  --bases-cards-background: var(--trans-faint-05, oklch(100% 0.06 265 / 0.025));
+  --bases-cards-cover-background: var(--background-primary-alt, color-mix(in oklab, oklch(23.00% 0.00875 265), oklch(27.50% 0.01125 265)));
+  --bases-cards-label-color: var(--icon-color, oklch(63.75% 0.01750 265));
   --bases-cards-line-height: 26px;
-  --bases-cards-radius: 12px;
-  --bases-cards-shadow: none;
-  --bases-cards-shadow-hover: none;
-  --bases-embed-border-color: oklch(100% 0.05 265 / 0.0625);
-  --bases-embed-border-radius: 0;
-  --bases-group-heading-property-color: oklch(71.25% 0.01125 265);
-  --bases-group-heading-property-weight: 420;
-  --bases-group-heading-value-weight: 620;
-  --bases-header-border-width: 0;
+  --bases-cards-radius: var(--radius-m, 12px);
+  --bases-embed-border-color: var(--background-modifier-border, oklch(100% 0.05 265 / 0.0625));
+  --bases-embed-border-radius: var(--radius-s, 0);
+  --bases-group-heading-property-color: var(--text-muted, oklch(71.25% 0.01125 265));
+  --bases-group-heading-property-weight: var(--font-normal, 420);
+  --bases-group-heading-value-weight: var(--font-semibold, 620);
   --bases-header-padding-end: 0;
   --bases-header-padding-start: 0;
-  --bases-table-border-color: oklch(100% 0.075 265 / 0.1);
-  --bases-table-cell-background-active: transparent;
-  --bases-table-cell-background-disabled: color-mix(in oklab, oklch(23.00% 0.00875 265), oklch(27.50% 0.01125 265));
-  --bases-table-cell-background-selected: hsla(192, 76%, 38%, 0.1);
-  --bases-table-cell-shadow-active: 0 0 0 2.5px color-mix(in oklab, hsl(192, 76%, 38%) 50%, transparent 75%);
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(192, 76%, 38%);
-  --bases-table-container-border-radius: 0;
-  --bases-table-group-background: transparent;
-  --bases-table-header-background: oklch(23.00% 0.00875 265);
-  --bases-table-header-background-hover: transparent;
-  --bases-table-header-color: oklch(57.50% 0.01750 265);
-  --bases-table-header-color-hover: oklch(77.50% 0.01125 265);
-  --bases-table-header-weight: 490;
-  --bases-table-row-border-width: 0;
+  --bases-table-border-color: var(--table-border-color, oklch(100% 0.075 265 / 0.1));
+  --bases-table-cell-background-active: var(--background-primary, transparent);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, color-mix(in oklab, oklch(23.00% 0.00875 265), oklch(27.50% 0.01125 265)));
+  --bases-table-cell-background-selected: var(--table-selection, hsla(192, 76%, 38%, 0.1));
+  --bases-table-cell-shadow-active: var(--shadow-input-active, 0 0 0 2.5px color-mix(in oklab, hsl(192, 76%, 38%) 50%, transparent 75%));
+  --bases-table-container-border-radius: var(--radius-s, 0);
+  --bases-table-group-background: var(--background-primary-alt, transparent);
+  --bases-table-header-background: var(--background-primary, oklch(23.00% 0.00875 265));
+  --bases-table-header-background-hover: var(--background-modifier-hover, transparent);
+  --bases-table-header-color: var(--color-base-55, oklch(57.50% 0.01750 265));
+  --bases-table-header-color-hover: var(--color-base-80, oklch(77.50% 0.01125 265));
+  --bases-table-header-weight: var(--font-semi-medium, 490);
+  --bases-table-row-border-width: var(--border-width, 0);
   --bases-table-row-height: 32px;
-  --bases-table-summary-background: oklch(23.00% 0.00875 265);
-  --bases-table-summary-background-hover: oklch(100% 0.05 265 / 0.05);
-  --bases-table-text-size: 0.90625em;
-  --bg-checkbox: radial-gradient(transparent 50%, oklch(43.75% 0.01750 265) 55% 60%, transparent 65%);
+  --bases-table-summary-background: var(--background-primary, oklch(23.00% 0.00875 265));
+  --bases-table-summary-background-hover: var(--background-modifier-hover, oklch(100% 0.05 265 / 0.05));
+  --bases-table-text-size: var(--table-text-size, 0.90625em);
+  --bg-checkbox: radial-gradient(transparent 50%, var(--checkbox-border-color) 55% 60%, transparent 65%);
   --bg-checkbox-active: radial-gradient(#0000000f 52%, #ffffff20 64%);
-  --bg-main-inner: oklch(28.25% 0.00875 265);
-  --bg-main-outer: oklch(25.50% 0.01375 265);
-  --bg-main-workspace: radial-gradient(at 50% 50%, oklch(28.25% 0.00875 265) 0%, oklch(25.50% 0.01375 265) 200%);
+  --bg-main-inner: oklch(28.25% calc(var(--bsat-str) - 0.0025) var(--bhue));
+  --bg-main-outer: oklch(25.50% calc(var(--bsat-str) + 0.0025) var(--bhue));
+  --bg-main-workspace: radial-gradient(at 50% 50%, var(--bg-main-inner) 0%, var(--bg-main-outer) 200%);
   --bhue: 265;
   --bl-00: 23.00%;
   --bl-05: 23.75%;
@@ -104,30 +99,627 @@ export const theme: ThemeData = {
   --bl-70: 71.25%;
   --bl-80: 77.50%;
   --bl-90: 85.00%;
-  --blockquote-border-color: oklch(52.50% 0.01750 265);
+  --blockquote-border-color: var(--text-faint, oklch(52.50% 0.01750 265));
   --blockquote-border-thickness: 0.1875rem;
-  --blockquote-color: oklch(71.25% 0.01125 265);
-  --blur-background: color-mix(in srgb, oklch(34.50% 0.01125 265) 65%, transparent) linear-gradient(oklch(34.50% 0.01125 265), color-mix(in srgb, oklch(34.50% 0.01125 265) 65%, transparent));
+  --blockquote-color: var(--text-muted, oklch(71.25% 0.01125 265));
   --blur-brightness: 1;
-  --blur-l: blur(16px) saturate(1.125) brightness(1);
-  --blur-m: blur(12px) saturate(1.125) brightness(1);
   --blur-radius-m: 12px;
   --blur-radius-s: 8px;
-  --blur-s: blur(8px) saturate(1.125) brightness(1);
   --blur-saturation: 1.125;
-  --bodyFont: var(--font-text, "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --bold-color: oklch(93.25% 0.00250 265);
+  --bodyFont: var(--font-text-theme, "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --bold-color: var(--color-base-100, oklch(93.25% 0.00250 265));
   --bold-modifier: 250;
-  --bold-weight: 670;
   --bsat-low: 0.00250;
   --bsat-med: 0.00750;
   --bsat-modal: 0.0125;
   --bsat-str: 0.01125;
   --bsat-trans: 1;
   --bsat-xtr: 0.01750;
+  --button-radius: var(--input-radius, 8px);
+  --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
+  --callout-border-opacity: 0.2375;
+  --callout-bug: var(--color-pink-rgb, 255, 152, 193);
+  --callout-default: var(--color-blue-rgb, 89, 177, 228);
+  --callout-error: var(--color-red-rgb, 242, 100, 106);
+  --callout-example: var(--color-purple-rgb, 189, 136, 215);
+  --callout-fail: var(--color-red-rgb, 242, 100, 106);
+  --callout-important: var(--color-cyan-rgb, 100, 208, 202);
+  --callout-info: var(--color-blue-rgb, 89, 177, 228);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 1rem);
+  --callout-question: var(--color-orange-rgb, 252, 146, 99);
+  --callout-quote: 150, 150, 160;
+  --callout-radius: var(--radius-sm, 10px);
+  --callout-success: var(--color-green-rgb, 142, 197, 98);
+  --callout-summary: var(--color-cyan-rgb, 100, 208, 202);
+  --callout-tip: var(--color-cyan-rgb, 100, 208, 202);
+  --callout-todo: var(--color-blue-rgb, 89, 177, 228);
+  --callout-warning: var(--color-yellow-rgb, 234, 203, 115);
+  --canvas-background: var(--background-primary, oklch(23.00% 0.00875 265));
+  --canvas-card-label-color: var(--text-faint, oklch(52.50% 0.01750 265));
+  --canvas-color-1: var(--color-red-rgb, 242, 100, 106);
+  --canvas-color-2: var(--color-orange-rgb, 252, 146, 99);
+  --canvas-color-3: var(--color-yellow-rgb, 234, 203, 115);
+  --canvas-color-4: var(--color-green-rgb, 142, 197, 98);
+  --canvas-color-5: var(--color-blue-rgb, 89, 177, 228);
+  --canvas-color-6: var(--color-purple-rgb, 189, 136, 215);
+  --canvas-controls-radius: var(--radius-s, 8px);
+  --canvas-dot-pattern: var(--color-base-30, oklch(34.50% 0.01125 265));
+  --caret-color: var(--text-normal, oklch(85.00% 0.01125 265));
+  --checkbox-border-color: var(--color-base-40, oklch(43.75% 0.01750 265));
+  --checkbox-border-color-hover: var(--text-muted, oklch(71.25% 0.01125 265));
+  --checkbox-color: var(--interactive-accent, hsl(192, 76%, 38%));
+  --checkbox-color-hover: var(--interactive-accent-hover, color-mix(in oklab, hsl(192, 76%, 38%) 62.5%, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%)));
+  --checkbox-marker-color: var(--text-on-accent, white);
+  --checkbox-radius: var(--radius-s, 50%);
+  --checkbox-size: var(--font-text-size, 1.125rem);
+  --checklist-done-color: var(--strikethrough-color, oklch(52.50% 0.01750 265));
+  --clickable-icon-radius: var(--radius-s, 8px);
+  --code-background: var(--trans-faint-10, oklch(100% 0.05 265 / 0.05));
+  --code-background-alt: var(--trans-strong-10, oklch(from oklch(23.75% 0.00250 265) l 0.01125 h / 0.375));
+  --code-border-color: var(--trans-faint-20, oklch(100% 0.05 265 / 0.0625));
+  --code-border-width: 0;
+  --code-bracket-background: var(--background-modifier-hover, oklch(100% 0.05 265 / 0.05));
+  --code-comment: var(--text-faint, oklch(52.50% 0.01750 265));
+  --code-function: var(--color-yellow, #eacb73);
+  --code-important: var(--color-orange, #fc9263);
+  --code-keyword: var(--color-pink, #ff98c1);
+  --code-normal: var(--text-normal, oklch(85.00% 0.01125 265));
+  --code-operator: var(--color-red, #ee6167);
+  --code-property: var(--color-cyan, #66d2cc);
+  --code-punctuation: var(--text-muted, oklch(71.25% 0.01125 265));
+  --code-radius: var(--radius-xs, 6px);
+  --code-special: var(--color-red, #ee6167);
+  --code-string: var(--color-green, #90c764);
+  --code-tag: var(--color-red, #ee6167);
+  --code-value: var(--color-purple, #c187d3);
+  --collapse-icon-color: var(--text-faint, oklch(52.50% 0.01750 265));
+  --collapse-icon-color-collapsed: var(--text-accent, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%));
+  --color-accent-1: color-mix(in oklab, var(--color-accent) 64%, #fff 36%);
+  --color-accent-2: color-mix(in oklab, var(--color-accent-1), transparent 8%);
+  --color-accent-3: color-mix(in oklab, var(--color-accent) 50%, transparent 75%);
+  --color-accent-4: color-mix(in oklab, var(--text-selection) 30%, transparent 70%);
+  --color-base-00: oklch(var(--bl-00) calc(var(--bsat-str) - 0.0025) var(--bhue));
+  --color-base-05: oklch(var(--bl-05) var(--bsat-low) var(--bhue));
+  --color-base-10: oklch(var(--bl-10) var(--bsat-str) var(--bhue));
+  --color-base-100: oklch(var(--bl-100) var(--bsat-low) var(--bhue));
+  --color-base-20: oklch(var(--bl-20) var(--bsat-str) var(--bhue));
+  --color-base-25: oklch(var(--bl-25) var(--bsat-str) var(--bhue));
+  --color-base-30: oklch(var(--bl-30) var(--bsat-str) var(--bhue));
+  --color-base-35: oklch(var(--bl-35) var(--bsat-str) var(--bhue));
+  --color-base-40: oklch(var(--bl-40) var(--bsat-xtr) var(--bhue));
+  --color-base-50: oklch(var(--bl-50) var(--bsat-xtr) var(--bhue));
+  --color-base-55: oklch(var(--bl-55) var(--bsat-xtr) var(--bhue));
+  --color-base-60: oklch(var(--bl-60) var(--bsat-xtr) var(--bhue));
+  --color-base-70: oklch(var(--bl-70) var(--bsat-str) var(--bhue));
+  --color-base-80: oklch(var(--bl-80) var(--bsat-str) var(--bhue));
+  --color-base-90: oklch(var(--bl-90) var(--bsat-str) var(--bhue));
+  --color-blue: #59b1e4;
+  --color-blue-rgb: 89, 177, 228;
+  --color-cyan: #66d2cc;
+  --color-cyan-rgb: 100, 208, 202;
+  --color-green: #90c764;
+  --color-green-rgb: 142, 197, 98;
+  --color-highlight: rgb(var(--color-highlight-rgb));
+  --color-highlight-rgb: var(--highlight-yellow-rgb, 234, 203, 115);
+  --color-orange: #fc9263;
+  --color-orange-rgb: 252, 146, 99;
+  --color-pink: #ff98c1;
+  --color-pink-rgb: 255, 152, 193;
+  --color-purple: #c187d3;
+  --color-purple-rgb: 189, 136, 215;
+  --color-red: #ee6167;
+  --color-red-rgb: 242, 100, 106;
+  --color-yellow: #eacb73;
+  --color-yellow-rgb: 234, 203, 115;
+  --control-icon-background: var(--trans-faint-20, oklch(100% 0.05 265 / 0.0625));
+  --control-icon-color: var(--color-base-80, oklch(77.50% 0.01125 265));
+  --control-icon-shadow: var(--glass-base), 0px 0px 12px 0px var(--trans-strong-10);
+  --corner-smoothing: 60%;
+  --dark: var(--text-normal, var(--color-base-90, oklch(85.00% 0.01125 265)));
+  --darkgray: var(--text-normal, var(--color-base-90, oklch(85.00% 0.01125 265)));
+  --dialog-width: 500px;
+  --divider-color: var(--background-modifier-border, oklch(100% 0.05 265 / 0.0625));
+  --divider-color-hover: var(--color-accent-3, color-mix(in oklab, hsl(192, 76%, 38%) 50%, transparent 75%));
+  --divider-width: 0;
+  --drag-ghost-background: var(--color-base-00, oklch(23.00% 0.00875 265));
+  --drag-ghost-text-color: var(--color-base-90, oklch(85.00% 0.01125 265));
+  --dropdown-background: var(--interactive-normal, oklch(34.50% 0.01125 265));
+  --dropdown-background-hover: var(--interactive-hover, oklch(36.25% 0.01125 265));
+  --fab-bg: var(--background-primary, oklch(23.00% 0.00875 265));
+  --fab-color: var(--icon-color, oklch(63.75% 0.01750 265));
+  --fab-color-active: var(--text-normal, oklch(85.00% 0.01125 265));
+  --fab-easing-curve: cubic-bezier(0.55, 2, 0.5, 0.97);
+  --file-header-background: var(--background-primary, oklch(23.00% 0.00875 265));
+  --file-header-background-focused: var(--background-primary, oklch(23.00% 0.00875 265));
+  --file-header-font: var(--font-interface, "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --file-header-font-weight: var(--font-semi-medium, 490);
+  --file-line-width: 43.75rem;
+  --file-margins: var(--file-margins-y) var(--file-margins-x, 28px 5%);
+  --file-margins-x: var(--size-4-8, 5%);
+  --file-margins-y: var(--size-4-8, 28px);
+  --flair-background: var(--interactive-normal, oklch(34.50% 0.01125 265));
+  --flair-color: var(--text-normal, oklch(85.00% 0.01125 265));
+  --flair-padding: 3px 1px;
+  --font-bold: 720;
+  --font-extrabold: 820;
+  --font-extralight: 305;
+  --font-interface-override: "Raveo";
+  --font-interface-theme: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-label: var(--font-interface-theme, "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --font-light: 320;
+  --font-medium: 520;
+  --font-mermaid: var(--font-text, "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --font-normal: 420;
+  --font-normal-linux: var(--font-semi-medium, 490);
+  --font-semi-medium: calc(var(--font-normal) + 70);
+  --font-semibold: 620;
+  --font-small: 0.90625em;
+  --font-text-override: "Raveo";
+  --font-text-theme: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-thin: 270;
+  --font-ui-larger: 24px;
+  --font-weight: var(--font-normal, 420);
+  --footnote-divider-color: var(--metadata-divider-color, oklch(100% 0.05 265 / 0.0625));
+  --footnote-id-color: var(--text-muted, oklch(71.25% 0.01125 265));
+  --footnote-id-color-no-occurrences: var(--text-faint, oklch(52.50% 0.01750 265));
+  --footnote-input-background-active: var(--metadata-input-background-active, oklch(100% 0.05 265 / 0.05));
+  --footnote-line-height: var(--line-height-normal, 1.6);
+  --footnote-radius: var(--radius-s, 8px);
+  --frame-right-space: 160px;
+  --frame-right-space-override: 164px;
+  --glass-base: inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263), inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188), inset 0 8px 16px rgba(255, 255, 255, 0.025);
+  --glass-base-l: inset 1.125px 1.875px 2.5px -1.25px rgba(255, 255, 255, 0.188), inset -1.125px -1.875px 2.5px -1.25px rgba(255, 255, 255, 0.138), inset 0 8px 16px rgba(255, 255, 255, 0.015);
+  --glass-base-m: inset 1px 1.75px 2.25px -1.125px rgba(255, 255, 255, 0.15), inset -1px -1.75px 2.25px -1.125px rgba(255, 255, 255, 0.1), inset 0 8px 16px rgba(255, 255, 255, 0.015);
+  --glass-button: inset 3px 3px 1.5px -1.25px oklab(from var(--interactive-accent) calc(l + 0.075) a b / 0.75), inset -3px -3px 1.5px -1.25px oklab(from var(--interactive-accent) calc(l + 0.075) a b / 0.5);
+  --glass-button-error: inset 3.25px 3.25px 1.25px -1.25px oklab(from var(--text-error) calc(l + 0.075) a b / 0.75), inset -3.25px -3.25px 1.25px -1.25px oklab(from var(--text-error) calc(l + 0.075) a b / 0.5);
+  --glass-button-l: inset 3.75px 3.75px 1.5px -1.25px oklab(from var(--interactive-accent) calc(l + 0.075) a b / 0.75), inset -3.75px -3.75px 1.5px -1.25px oklab(from var(--interactive-accent) calc(l + 0.075) a b / 0.5);
+  --graph-controls-width: 232px;
+  --graph-node: var(--text-muted, oklch(71.25% 0.01125 265));
+  --graph-node-attachment: var(--color-yellow, #eacb73);
+  --graph-node-focused: var(--text-accent, transparent);
+  --graph-node-tag: var(--color-green, #90c764);
+  --graph-node-unresolved: var(--text-faint, oklch(52.50% 0.01750 265));
+  --graph-text: var(--text-normal, oklch(85.00% 0.01125 265));
+  --gray: var(--text-muted, var(--color-base-70, oklch(71.25% 0.01125 265)));
+  --h1-color: oklch(calc(var(--bl-100) - 3.75%) var(--bsat-low) var(--bhue));
+  --h1-size: 2em;
+  --h1-size-alt: 1.625em;
+  --h1-weight: 330;
+  --h1-weight-alt: 570;
+  --h2-color: oklch(calc(var(--bl-100) - 5%) var(--bsat-low) var(--bhue));
+  --h2-size: 1.5em;
+  --h2-weight: 570;
+  --h3-color: var(--color-base-90, oklch(85.00% 0.01125 265));
+  --h3-size: 1.375em;
+  --h3-weight: 570;
+  --h4-color: var(--color-base-90, oklch(85.00% 0.01125 265));
+  --h4-size: 1.25em;
+  --h4-weight: 570;
+  --h5-color: var(--color-base-90, oklch(85.00% 0.01125 265));
+  --h5-line-height: var(--line-height-normal, 1.6);
+  --h5-size: 1.125em;
+  --h6-color: var(--color-base-80, oklch(77.50% 0.01125 265));
+  --h6-line-height: var(--line-height-normal, 1.6);
+  --h6-weight: 670;
+  --header-height: 56px;
+  --headerFont: var(--font-text-theme, "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --heading-formatting: var(--text-faint, oklch(52.50% 0.01750 265));
+  --highlight: var(--text-highlight-bg, oklch(from var(--color-highlight) 0.8 calc(c * 1.375) h / 0.33));
+  --highlight-blue-rgb: var(--color-blue-rgb, 89, 177, 228);
+  --highlight-cyan-rgb: var(--color-cyan-rgb, 100, 208, 202);
+  --highlight-green-rgb: var(--color-green-rgb, 142, 197, 98);
+  --highlight-orange-rgb: var(--color-orange-rgb, 252, 146, 99);
+  --highlight-pink-rgb: var(--color-pink-rgb, 255, 152, 193);
+  --highlight-purple-rgb: var(--color-purple-rgb, 189, 136, 215);
+  --highlight-red-rgb: var(--color-red-rgb, 242, 100, 106);
+  --highlight-yellow-rgb: var(--color-yellow-rgb, 234, 203, 115);
+  --hotkey-gradient: linear-gradient(to top, var(--color-accent) -10%, var(--color-accent-4) 210%);
+  --hr-color: var(--trans-faint-30, oklch(100% 0.075 265 / 0.1));
+  --icon-color: var(--color-base-60, oklch(63.75% 0.01750 265));
+  --icon-color-active: var(--text-accent, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%));
+  --icon-color-focused: var(--icon-color-hover, oklch(85.00% 0.01125 265));
+  --icon-color-hover: var(--text-normal, oklch(85.00% 0.01125 265));
+  --icon-m-stroke-width: 1.875px;
+  --icon-stroke: var(--icon-m-stroke-width, 1.875px);
+  --icon-stroke-thick: 2.25px;
+  --icon-xl: 28px;
+  --icon-xs-stroke-width: 2.125px;
+  --indent-unit: 0.375em;
+  --indentation-guide-color: var(--trans-faint-30, oklch(100% 0.075 265 / 0.1));
+  --indentation-guide-width: var(--border-width, 0);
+  --indentation-guide-width-active: var(--border-width, 0);
+  --inline-title-color: var(--h1-color, oklch(89.5% 0.00250 265));
+  --inline-title-margin-bottom: round(nearest, clamp(0px, 0.5em, 1.5rem), 2px);
+  --inline-title-size: var(--h1-size, 2em);
+  --inline-title-weight: var(--h1-weight, 330);
+  --input-border-width: var(--border-width, 0);
+  --input-date-separator: var(--text-faint, oklch(52.50% 0.01750 265));
+  --input-font-weight: var(--font-normal, 420);
+  --input-height: 28px;
+  --input-placeholder-color: var(--text-faint, oklch(52.50% 0.01750 265));
+  --input-radius: var(--radius-s, 8px);
+  --input-shadow: none;
+  --input-shadow-hover: none;
+  --interactive-accent: var(--color-accent, hsl(192, 76%, 38%));
+  --interactive-accent-hover: color-mix(in oklab, var(--color-accent) 62.5%, var(--color-accent-1));
+  --interactive-accent-hsl: var(--color-accent-hsl, 192, 76%, 38%);
+  --interactive-hover: var(--trans-faint-30, oklch(36.25% 0.01125 265));
+  --interactive-normal: var(--color-base-30, oklch(34.50% 0.01125 265));
+  --light: var(--background-primary, var(--color-base-00, oklch(23.00% 0.00875 265)));
+  --lightgray: var(--background-secondary, var(--color-base-20, oklch(27.50% 0.01125 265)));
+  --line-height-normal: 1.6;
+  --link-color: var(--text-accent, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%));
+  --link-color-hover: var(--text-accent-hover, color-mix(in oklab, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%), transparent 8%));
+  --link-color-sidebar: var(--color-accent-2, color-mix(in oklab, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%), transparent 8%));
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-color: var(--text-accent, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%));
+  --link-external-color-hover: var(--text-accent-hover, color-mix(in oklab, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%), transparent 8%));
+  --link-unresolved-color: oklch(from var(--color-accent-1) l c h / var(--link-unresolved-lch));
+  --link-unresolved-lch: 0.75;
+  --link-unresolved-opacity: 1;
+  --link-weight: var(--font-weight, 420);
+  --list-bullet-color: var(--color-base-80, oklch(77.50% 0.01125 265));
+  --list-dash-color: var(--trans-faint-60, oklch(100% 0.02 265 / 0.35));
+  --list-marker-color: var(--color-base-50, oklch(52.50% 0.01750 265));
+  --list-marker-color-collapsed: var(--text-accent, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%));
+  --list-marker-color-hover: var(--text-muted, oklch(71.25% 0.01125 265));
+  --list-spacing: 0.125em;
+  --math-color: var(--color-base-100, oklch(93.25% 0.00250 265));
+  --menu-background: var(--background-primary-alt, color-mix(in oklab, oklch(23.00% 0.00875 265), oklch(27.50% 0.01125 265)));
+  --menu-border-color: var(--trans-faint-40, oklch(100% 0.04 265 / 0.125));
+  --menu-radius: var(--radius-ml, 14px);
+  --menu-shadow: var(--shadow-normal, 0px 3px 18px 0px oklch(0 0 0 / 0.1875));
+  --metadata-border-color: var(--background-modifier-border, oklch(100% 0.05 265 / 0.0625));
+  --metadata-border-radius: var(--radius-m, 12px);
+  --metadata-divider-color: var(--background-modifier-border, oklch(100% 0.05 265 / 0.0625));
+  --metadata-gap: 2px;
+  --metadata-input-background-active: var(--background-modifier-hover, oklch(100% 0.05 265 / 0.05));
+  --metadata-input-font: var(--font-interface, "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-input-longtext-lines: 5;
+  --metadata-input-padding: var(--size-4-1) var(--size-4-2, 6px 8px);
+  --metadata-input-text-color: var(--text-normal, oklch(85.00% 0.01125 265));
+  --metadata-label-background-active: var(--background-modifier-hover, oklch(100% 0.05 265 / 0.05));
+  --metadata-label-font: var(--font-interface, "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-label-font-weight: var(--font-semi-medium, 490);
+  --metadata-label-text-color: var(--icon-color, oklch(63.75% 0.01750 265));
+  --metadata-label-text-color-hover: var(--icon-color, oklch(63.75% 0.01750 265));
+  --metadata-label-width: 10em;
+  --metadata-property-background-active: var(--background-modifier-hover, oklch(100% 0.05 265 / 0.05));
+  --metadata-property-box-shadow-focus: var(--shadow-input-active, 0 0 0 2.5px color-mix(in oklab, hsl(192, 76%, 38%) 50%, transparent 75%));
+  --metadata-property-box-shadow-hover: 0 0 0 2.5px var(--background-modifier-hover);
+  --mobile-nav-fade-bg: linear-gradient(oklch(from var(--background-secondary) l c h), transparent calc(var(--touch-size-l)*1.5));
+  --modal-background: oklch(27.75% var(--bsat-modal) var(--bhue) / 0.625);
+  --modal-border-width: var(--border-width, 0);
+  --modal-community-header-bg: var(--trans-strong-20, oklch(from oklch(27.50% 0.01125 265) l 0.01125 h / 0.5));
+  --modal-community-item-bg: var(--trans-strong-40, oklch(from oklch(34.50% 0.01125 265) l 0.01125 h / 0.5));
+  --modal-radius: var(--radius-xxl, 22px);
+  --modal-small-background: oklch(27.75% var(--bsat-modal) var(--bhue) / 0.625);
+  --nav-collapse-icon-color: var(--trans-faint-60, oklch(100% 0.02 265 / 0.35));
+  --nav-collapse-icon-color-collapsed: var(--text-faint, oklch(52.50% 0.01750 265));
+  --nav-folder-color: var(--color-base-80, oklch(77.50% 0.01125 265));
+  --nav-header-bg: var(--divider-color, oklch(100% 0.05 265 / 0.0625));
+  --nav-header-timing: var(--vl-ease-out, cubic-bezier(0.3, 0.75, 0, 1));
+  --nav-heading-color: var(--color-base-80, oklch(77.50% 0.01125 265));
+  --nav-heading-color-collapsed: var(--text-faint, oklch(52.50% 0.01750 265));
+  --nav-heading-color-collapsed-hover: var(--text-muted, oklch(71.25% 0.01125 265));
+  --nav-heading-color-hover: var(--text-normal, oklch(85.00% 0.01125 265));
+  --nav-heading-weight: var(--font-medium, 520);
+  --nav-heading-weight-hover: var(--font-medium, 520);
+  --nav-indentation-guide-color: var(--trans-faint-30, oklch(100% 0.075 265 / 0.1));
+  --nav-indentation-guide-width: var(--indentation-guide-width, 0);
+  --nav-item-background-active: var(--background-modifier-hover, oklch(100% 0.05 265 / 0.05));
+  --nav-item-background-hover: var(--background-modifier-hover, oklch(100% 0.05 265 / 0.05));
+  --nav-item-color: var(--text-muted, oklch(71.25% 0.01125 265));
+  --nav-item-color-active: var(--text-normal, oklch(85.00% 0.01125 265));
+  --nav-item-color-highlighted: var(--text-accent, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%));
+  --nav-item-color-hover: var(--text-normal, oklch(85.00% 0.01125 265));
+  --nav-item-color-selected: var(--text-normal, oklch(85.00% 0.01125 265));
+  --nav-item-radius: var(--radius-s, 8px);
+  --nav-tag-color: var(--text-faint, oklch(52.50% 0.01750 265));
+  --nav-tag-color-active: var(--text-muted, oklch(71.25% 0.01125 265));
+  --nav-tag-color-hover: var(--text-muted, oklch(71.25% 0.01125 265));
+  --nav-tag-radius: var(--radius-s, 8px);
+  --nav-tag-weight: var(--font-semibold, 620);
+  --nav-text-color: var(--text-normal, oklch(85.00% 0.01125 265));
+  --paint-description: "A deeper blue take on the Nord color palette, with additional inspiration from real-world automotive paints. Calm, elegant and futuristic.";
+  --paint-image: url(data:image/webpbase64,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);
+  --pdf-background: var(--background-primary, oklch(23.00% 0.00875 265));
+  --pdf-page-background: var(--background-primary, oklch(23.00% 0.00875 265));
+  --pdf-sidebar-background: var(--background-primary, oklch(23.00% 0.00875 265));
+  --pdf-spread-shadow: none;
+  --pdf-thumbnail-shadow: var(--shadow-input, 0 0 0 1px oklch(100% 0.05 265 / 0.0625));
+  --pill-background: var(--code-background, oklch(100% 0.05 265 / 0.05));
+  --pill-background-hover: var(--code-background, oklch(100% 0.05 265 / 0.05));
+  --pill-border-color: var(--background-modifier-border, oklch(100% 0.05 265 / 0.0625));
+  --pill-border-color-hover: var(--background-modifier-border-hover, oklch(36.25% 0.01125 265));
+  --pill-color: var(--text-muted, oklch(71.25% 0.01125 265));
+  --pill-color-hover: var(--text-muted, oklch(71.25% 0.01125 265));
+  --pill-color-remove: var(--text-faint, oklch(52.50% 0.01750 265));
+  --pill-color-remove-hover: var(--text-on-accent, white);
+  --pill-radius: var(--radius-l, 18px);
+  --pill-weight: var(--font-semi-medium, 490);
+  --prompt-backdrop-filter: var(--blur-m, blur(12px) saturate(1.125) brightness(1));
+  --prompt-background: var(--modal-background, oklch(27.75% 0.0125 265 / 0.625));
+  --prompt-border-color: var(--menu-border-color, oklch(100% 0.04 265 / 0.125));
+  --prompt-input-height: 48px;
+  --radius-l: 18px;
+  --radius-m: 12px;
+  --radius-ml: 14px;
+  --radius-prompt: 24px;
+  --radius-s: 8px;
+  --radius-settings: 28px;
+  --radius-sm: 10px;
+  --radius-xl: 20px;
+  --radius-xs: 6px;
+  --radius-xxl: 22px;
+  --raised-background: var(--blur-background, color-mix(in srgb, oklch(34.50% 0.01125 265) 65%, transparent) linear-gradient(oklch(34.50% 0.01125 265), color-mix(in srgb, oklch(34.50% 0.01125 265) 65%, transparent)));
+  --raised-blur: var(--blur-s, blur(8px) saturate(1.125) brightness(1));
+  --ribbon-background: var(--background-secondary, transparent);
+  --ribbon-background-collapsed: var(--background-primary, transparent);
+  --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3, 8px 0px 12px 8px);
+  --ribbon-width: 56px;
+  --scrollbar-active-thumb-bg: var(--color-base-35, oklch(36.25% 0.01125 265));
+  --scrollbar-radius: var(--radius-l, 18px);
+  --scrollbar-thumb-bg: var(--color-base-25, oklch(31.25% 0.01125 265));
+  --search-clear-button-color: var(--color-base-50, oklch(52.50% 0.01750 265));
+  --search-icon-color: var(--color-base-50, oklch(52.50% 0.01750 265));
+  --search-icon-size: 17px;
+  --search-result-background: var(--trans-strong-10, oklch(from oklch(23.75% 0.00250 265) l 0.01125 h / 0.375));
+  --secondary: var(--text-accent, var(--color-accent-1, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%)));
+  --setting-group-heading-color: var(--icon-color, oklch(63.75% 0.01750 265));
+  --setting-group-heading-size: var(--font-ui-medium, 18px);
+  --setting-group-heading-weight: var(--font-medium, 520);
+  --setting-item-background: color-mix(in oklab, var(--background-primary) 87.5%, var(--background-secondary));
+  --setting-items-background: var(--background-primary, oklch(23.00% 0.00875 265));
+  --setting-items-border-color: var(--background-modifier-border, oklch(100% 0.05 265 / 0.0625));
+  --setting-items-padding: calc(var(--vl-layout-padding) + 8px);
+  --setting-items-radius: calc(var(--radius-ml) + 2px);
+  --settings-background: color-mix(in oklab, var(--color-base-10) 70%, var(--color-base-20));
+  --shadow-button: var(--glass-button), var(--shadow-faint);
+  --shadow-button-error: var(--glass-button-error), var(--shadow-faint);
+  --shadow-canvas-node: 0px 0px 16px 0px var(--trans-black-10);
+  --shadow-fab: var(--shadow-input), 0px 2px 12px 0px var(--trans-black-10);
+  --shadow-faint: 0px 3px 15px 0px var(--trans-strong-00);
+  --shadow-input: 0 0 0 0.5px var(--trans-faint-40);
+  --shadow-input-active: 0 0 0 2.5px var(--color-accent-3);
+  --shadow-l: var(--glass-base-l), var(--shadow-strong);
+  --shadow-muted: 0px 3px 18px 0px var(--trans-black-10);
+  --shadow-normal: 0px 3px 18px 0px var(--trans-black-10);
+  --shadow-s: var(--glass-base), var(--shadow-normal);
+  --shadow-setting-items: 0 4px 12px 0 var(--trans-strong-10);
+  --shadow-setting-items-top: inset 1px 2px 2px 0 var(--trans-strong-10), 0px 1px 9px var(--trans-faint-05);
+  --shadow-sidebar: 0px 0px 12px 0px var(--trans-strong-20);
+  --shadow-strong: 0px 0px 24px 0px var(--trans-black-00);
+  --shadow-suggestion-item: var(--glass-button-l), var(--shadow-muted);
+  --shadow-tab: var(--glass-base, inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263), inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188), inset 0 8px 16px rgba(255, 255, 255, 0.025));
+  --shadow-toggle: inset 1.5px 1.5px 1.5px 0px oklab(from var(--interactive-accent) calc(l + 0.075) a b / 0.75), inset -1.5px -1.5px 1.5px 0px oklab(from var(--interactive-accent) calc(l + 0.075) a b / 0.5);
+  --shadow-workspace: 0 0 0 0.5px var(--trans-faint-30), 0 0 20px var(--trans-strong-00);
+  --shadow-workspace-multi: 0 0 0 0.5px var(--trans-faint-30);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, oklch(71.25% 0.01125 265));
+  --shiki-code-background: var(--code-background, oklch(100% 0.05 265 / 0.05));
+  --shiki-code-block-border-radius: var(--code-radius, 6px);
+  --shiki-code-comment: var(--text-faint, oklch(52.50% 0.01750 265));
+  --shiki-code-function: var(--color-green, #90c764);
+  --shiki-code-important: var(--color-orange, #fc9263);
+  --shiki-code-keyword: var(--color-pink, #ff98c1);
+  --shiki-code-normal: var(--text-muted, oklch(71.25% 0.01125 265));
+  --shiki-code-property: var(--color-cyan, #66d2cc);
+  --shiki-code-punctuation: var(--text-muted, oklch(71.25% 0.01125 265));
+  --shiki-code-string: var(--color-yellow, #eacb73);
+  --shiki-code-value: var(--color-purple, #c187d3);
+  --shiki-gutter-border-color: var(--background-modifier-border, oklch(100% 0.05 265 / 0.0625));
+  --shiki-gutter-text-color: var(--text-faint, oklch(52.50% 0.01750 265));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, oklch(71.25% 0.01125 265));
+  --shiki-highlight-neutral: var(--shiki-code-normal, oklch(71.25% 0.01125 265));
+  --shiki-terminal-dots-color: var(--text-faint, oklch(52.50% 0.01750 265));
+  --sidebar-left-toggle-inner-width: 12%;
+  --sidebar-right-toggle-inner-width: 12%;
+  --slider-thumb-border-color: var(--background-modifier-border-hover, oklch(36.25% 0.01125 265));
+  --slider-thumb-border-width: var(--border-width, 0);
+  --slider-thumb-height: 12px;
+  --slider-thumb-radius: var(--slider-thumb-height, 12px);
+  --slider-thumb-width: 12px;
+  --slider-thumb-y: -3px;
+  --slider-track-background: var(--trans-faint-40, oklch(100% 0.04 265 / 0.125));
+  --slider-track-height: 20px;
+  --stacked-shadow-color: var(--trans-black-10, oklch(0 0 0 / 0.1875));
+  --status-bar-background: var(--background-secondary, transparent);
+  --status-bar-border-color: var(--divider-color, oklch(100% 0.05 265 / 0.0625));
+  --status-bar-border-width: var(--border-width) 0 0 var(--border-width, 0);
+  --status-bar-radius: var(--radius-l) 0 0 var(--radius-l, 18px 0 0 18px);
+  --status-bar-text-color: var(--text-muted, oklch(71.25% 0.01125 265));
+  --strikethrough-color: var(--text-faint, oklch(52.50% 0.01750 265));
+  --suggestion-background: var(--background-primary, oklch(23.00% 0.00875 265));
+  --sync-avatar-color-1: var(--color-red, #ee6167);
+  --sync-avatar-color-2: var(--color-orange, #fc9263);
+  --sync-avatar-color-3: var(--color-yellow, #eacb73);
+  --sync-avatar-color-4: var(--color-green, #90c764);
+  --sync-avatar-color-5: var(--color-cyan, #66d2cc);
+  --sync-avatar-color-6: var(--color-blue, #59b1e4);
+  --sync-avatar-color-7: var(--color-purple, #c187d3);
+  --sync-avatar-color-8: var(--color-pink, #ff98c1);
+  --tab-background-active: var(--background-primary, oklch(23.00% 0.00875 265));
+  --tab-close-bg: oklch(calc(var(--bl-35) + 2%) var(--bsat-str) var(--bhue) / 0.875);
+  --tab-container-background: var(--background-secondary, transparent);
+  --tab-divider-color: var(--background-modifier-border-hover, oklch(36.25% 0.01125 265));
+  --tab-font-weight: var(--font-normal, 420);
+  --tab-max-width: 240px;
+  --tab-outline-color: var(--divider-color, oklch(100% 0.05 265 / 0.0625));
+  --tab-outline-width: 0;
+  --tab-radius: var(--radius-s, 8px);
+  --tab-right-fade: linear-gradient(to left, oklch(var(--bl-25) calc(var(--bsat-str)*1.25) var(--bhue)) 80%, transparent);
+  --tab-right-fade-alt: linear-gradient(to left, oklch(calc(var(--bl-20) + 1%) var(--bsat-str) var(--bhue)) 80%, transparent);
+  --tab-sidebar-bg: var(--trans-faint-20, oklch(100% 0.05 265 / 0.0625));
+  --tab-sidebar-container-bg: var(--trans-faint-05, oklch(100% 0.06 265 / 0.025));
+  --tab-stacked-font-weight: var(--font-medium, 520);
+  --tab-stacked-header-width: var(--header-height, 56px);
+  --tab-stacked-pane-width: var(--file-line-width, 43.75rem);
+  --tab-stacked-shadow: -8px 0 8px 0 var(--stacked-shadow-color);
+  --tab-switcher-background: var(--background-secondary, oklch(27.50% 0.01125 265));
+  --tab-switcher-preview-radius: var(--radius-xl, 20px);
+  --tab-text-color: var(--icon-color, oklch(63.75% 0.01750 265));
+  --tab-text-color-active: var(--color-base-100, oklch(93.25% 0.00250 265));
+  --tab-text-color-focused: var(--icon-color, oklch(63.75% 0.01750 265));
+  --tab-text-color-focused-active: var(--color-base-100, oklch(93.25% 0.00250 265));
+  --tab-text-color-focused-active-current: var(--color-base-100, oklch(93.25% 0.00250 265));
+  --tab-text-color-focused-highlighted: var(--text-accent, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%));
+  --tab-width: 240px;
+  --table-add-button-border-color: var(--background-modifier-border, oklch(100% 0.05 265 / 0.0625));
+  --table-border-color: var(--trans-faint-30, oklch(100% 0.075 265 / 0.1));
+  --table-drag-handle-background-active: var(--table-selection-border-color, hsl(192, 76%, 38%));
+  --table-drag-handle-color: var(--text-faint, oklch(52.50% 0.01750 265));
+  --table-header-border-color: var(--table-border-color, oklch(100% 0.075 265 / 0.1));
+  --table-header-color: var(--icon-color, oklch(63.75% 0.01750 265));
+  --table-header-size: var(--table-text-size, 0.90625em);
+  --table-header-weight: var(--font-medium, 520);
+  --table-line-height: var(--line-height-normal, 1.6);
+  --table-row-alt-background: var(--table-row-bg, oklch(100% 0.075 265 / 0.015));
+  --table-row-alt-background-hover: var(--table-row-bg, oklch(100% 0.075 265 / 0.015));
+  --table-row-bg: var(--trans-faint-00, oklch(100% 0.075 265 / 0.015));
+  --table-selection-border-color: var(--interactive-accent, hsl(192, 76%, 38%));
+  --table-text-size: var(--font-small, 0.90625em);
+  --table-text-weight: var(--font-normal, 420);
+  --tag-border-color: oklch(from var(--interactive-accent) l c h / 0.025);
+  --tag-color: var(--text-accent, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%));
+  --tag-color-hover: var(--text-accent, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%));
+  --tag-padding-x: 0.6875em;
+  --tag-padding-y: 0.3125em;
+  --tag-size: var(--font-smallest, 0.8em);
+  --tag-weight: var(--font-semi-medium, 490);
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, color-mix(in oklab, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%), transparent 8%)));
+  --text-accent: var(--color-accent-1, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%));
+  --text-accent-hover: var(--color-accent-2, color-mix(in oklab, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%), transparent 8%));
+  --text-error: var(--color-red, #ee6167);
+  --text-faint: var(--color-base-50, oklch(52.50% 0.01750 265));
+  --text-highlight-bg: oklch(from var(--color-highlight) 0.8 calc(c * 1.375) h / 0.33);
+  --text-highlight-bg-rgb: var(--color-highlight-rgb, 234, 203, 115);
+  --text-highlight-bg-search: oklch(from var(--color-highlight) 0.875 calc(c * 1.375) h / 0.625);
+  --text-muted: var(--color-base-70, oklch(71.25% 0.01125 265));
+  --text-normal: var(--color-base-90, oklch(85.00% 0.01125 265));
+  --text-selection: oklab(from var(--color-accent) l a b / 0.25);
+  --text-success: var(--color-green, #90c764);
+  --text-warning: var(--color-orange, #fc9263);
+  --textHighlight: var(--text-highlight-bg, oklch(from var(--color-highlight) 0.8 calc(c * 1.375) h / 0.33));
+  --titleFont: var(--font-text-theme, "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --titlebar-background: var(--background-secondary, transparent);
+  --titlebar-background-focused: var(--background-secondary-alt, transparent);
+  --titlebar-border-color: var(--background-modifier-border, oklch(100% 0.05 265 / 0.0625));
+  --titlebar-height: 36px;
+  --titlebar-text-color: var(--trans-faint-60, oklch(100% 0.02 265 / 0.35));
+  --titlebar-text-color-focused: var(--text-muted, oklch(71.25% 0.01125 265));
+  --titlebar-text-weight: var(--font-semibold, 620);
+  --toggle-border-width: 4px;
+  --toggle-gradient: linear-gradient(to bottom, var(--color-accent) -30%, var(--color-accent-4) 180%);
+  --toggle-s-border-width: 4px;
+  --toggle-s-thumb-height: 12px;
+  --toggle-s-thumb-width: 12px;
+  --toggle-s-width: 36px;
+  --toggle-thumb-height: 12px;
+  --toggle-thumb-width: 12px;
+  --toggle-track-bg: var(--trans-faint-50, oklch(100% 0.02 265 / 0.2));
+  --toggle-width: 44px;
+  --traffic-lights-offset-x: var(--header-height, 56px);
+  --traffic-lights-offset-y: var(--header-height, 56px);
+  --trans-black-00: oklch(0 0 0 / 0.375);
+  --trans-black-10: oklch(0 0 0 / 0.1875);
+  --trans-faint-00: oklch(100% calc(var(--bsat-trans)*0.075) var(--bhue) / 0.015);
+  --trans-faint-05: oklch(100% calc(var(--bsat-trans)*0.06) var(--bhue) / 0.025);
+  --trans-faint-10: oklch(100% calc(var(--bsat-trans)*0.05) var(--bhue) / 0.05);
+  --trans-faint-20: oklch(100% calc(var(--bsat-trans)*0.05) var(--bhue) / 0.0625);
+  --trans-faint-25: oklch(100% calc(var(--bsat-trans)*0.05) var(--bhue) / 0.08125);
+  --trans-faint-30: oklch(100% calc(var(--bsat-trans)*0.075) var(--bhue) / 0.1);
+  --trans-faint-40: oklch(100% calc(var(--bsat-trans)*0.04) var(--bhue) / 0.125);
+  --trans-faint-50: oklch(100% calc(var(--bsat-trans)*0.02) var(--bhue) / 0.2);
+  --trans-faint-60: oklch(100% calc(var(--bsat-trans)*0.02) var(--bhue) / 0.35);
+  --trans-strong-00: oklch(from var(--color-base-00) l var(--bsat-str) h / 0.75);
+  --trans-strong-05: oklch(from var(--color-base-00) l var(--bsat-str) h / 0.625);
+  --trans-strong-10: oklch(from var(--color-base-05) l var(--bsat-str) h / 0.375);
+  --trans-strong-20: oklch(from var(--color-base-20) l var(--bsat-str) h / 0.5);
+  --trans-strong-30: oklch(from var(--color-base-30) l var(--bsat-str) h / 0.5);
+  --trans-strong-40: oklch(from var(--color-base-30) l var(--bsat-str) h / 0.5);
+  --trans-white-00: oklch(var(--bl-100) 0 0 / 0.75);
+  --trans-white-10: oklch(var(--bl-100) 0 0 / 0.625);
+  --vault-profile-color: var(--icon-color, oklch(63.75% 0.01750 265));
+  --vault-profile-color-hover: var(--text-muted, oklch(71.25% 0.01125 265));
+  --vault-profile-font-size: var(--font-ui-small, 18px);
+  --vault-profile-font-weight: var(--font-normal, 420);
+  --vl-ease-out: cubic-bezier(0.3, 0.75, 0, 1);
+  --vl-layout-padding: 8px;
+  --warning-gradient: linear-gradient(to top, var(--color-red) -30%, var(--trans-strong-20) 180%);
+  --workspace-border-color: var(--trans-faint-25, oklch(100% 0.05 265 / 0.08125));
+  --quartz-icon-color: currentColor;
+}
+
+html[saved-theme="dark"] body {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
+  color: oklch(0.85 0.01125 265);
+}
+
+html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
+  background-color: var(--background-primary, rgba(0, 0, 0, 0));
+  color: oklch(0.85 0.01125 265);
+}
+
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: oklch(0.85 0.01125 265);
+}
+
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
+  border-right-color: oklch(1 0.05 265 / 0.0625);
+  border-right-width: 0px;
+}
+
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
+  border-left-color: oklch(1 0.05 265 / 0.0625);
+  color: oklch(0.85 0.01125 265);
+}`,
+    typography: `html[saved-theme="dark"] body .markdown-rendered > h1 {
+  --anim-fast-delay: 150ms cubic-bezier(0.65, 0.05, 0.36, 1);
+  --anim-fast-smooth: 150ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  --anim-fast-swing: 150ms cubic-bezier(0, 0.55, 0.45, 1);
+  --anim-super-delay: 75ms cubic-bezier(0.65, 0.05, 0.36, 1);
+  --anim-super-smooth: 75ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  --anim-super-swing: 75ms cubic-bezier(0, 0.55, 0.45, 1);
+  --background-modifier-active-hover: hsla(192, 76%, 38%, 0.1);
+  --background-modifier-border: oklch(100% 0.05 265 / 0.0625);
+  --background-modifier-border-focus: transparent;
+  --background-modifier-border-hover: oklch(36.25% 0.01125 265);
+  --background-modifier-error: #ee6167;
+  --background-modifier-error-hover: #ee6167;
+  --background-modifier-error-rgb: 242, 100, 106;
+  --background-modifier-form-field: oklch(31.25% 0.01125 265);
+  --background-modifier-form-field-hover: transparent;
+  --background-modifier-hover: oklch(100% 0.05 265 / 0.05);
+  --background-modifier-success: #90c764;
+  --background-modifier-success-rgb: 142, 197, 98;
+  --background-primary: oklch(23.00% 0.00875 265);
+  --background-primary-alt: color-mix(in oklab, oklch(23.00% 0.00875 265), oklch(27.50% 0.01125 265));
+  --background-secondary: oklch(27.50% 0.01125 265);
+  --background-secondary-alt: oklch(34.50% 0.01125 265);
+  --bg-checkbox: radial-gradient(transparent 50%, oklch(43.75% 0.01750 265) 55% 60%, transparent 65%);
+  --bg-main-inner: oklch(28.25% 0.00875 265);
+  --bg-main-outer: oklch(25.50% 0.01375 265);
+  --bg-main-workspace: radial-gradient(at 50% 50%, oklch(28.25% 0.00875 265) 0%, oklch(25.50% 0.01375 265) 200%);
+  --blockquote-border-color: oklch(52.50% 0.01750 265);
+  --blockquote-color: oklch(71.25% 0.01125 265);
+  --blur-background: color-mix(in srgb, oklch(34.50% 0.01125 265) 65%, transparent) linear-gradient(oklch(34.50% 0.01125 265), color-mix(in srgb, oklch(34.50% 0.01125 265) 65%, transparent));
+  --blur-l: blur(16px) saturate(1.125) brightness(1);
+  --blur-m: blur(12px) saturate(1.125) brightness(1);
+  --blur-s: blur(8px) saturate(1.125) brightness(1);
+  --bold-color: oklch(93.25% 0.00250 265);
+  --bold-modifier: 200;
+  --bold-weight: 670;
+  --button-corner-shape: round;
   --button-radius: 8px;
   --callout-blend-mode: normal;
-  --callout-border-opacity: 0.2375;
   --callout-bug: 255, 152, 193;
   --callout-default: 89, 177, 228;
   --callout-error: 242, 100, 106;
@@ -137,7 +729,6 @@ export const theme: ThemeData = {
   --callout-info: 89, 177, 228;
   --callout-padding: 1rem;
   --callout-question: 252, 146, 99;
-  --callout-quote: 150, 150, 160;
   --callout-radius: 10px;
   --callout-success: 142, 197, 98;
   --callout-summary: 100, 208, 202;
@@ -146,13 +737,8 @@ export const theme: ThemeData = {
   --callout-todo: 89, 177, 228;
   --callout-warning: 234, 203, 115;
   --canvas-background: oklch(23.00% 0.00875 265);
-  --canvas-card-label-color: oklch(52.50% 0.01750 265);
-  --canvas-color-1: 242, 100, 106;
-  --canvas-color-2: 252, 146, 99;
-  --canvas-color-3: 234, 203, 115;
-  --canvas-color-4: 142, 197, 98;
-  --canvas-color-5: 89, 177, 228;
-  --canvas-color-6: 189, 136, 215;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
   --canvas-controls-radius: 8px;
   --canvas-dot-pattern: oklch(34.50% 0.01125 265);
   --caret-color: oklch(85.00% 0.01125 265);
@@ -168,7 +754,6 @@ export const theme: ThemeData = {
   --code-background: oklch(100% 0.05 265 / 0.05);
   --code-background-alt: oklch(from oklch(23.75% 0.00250 265) l 0.01125 h / 0.375);
   --code-border-color: oklch(100% 0.05 265 / 0.0625);
-  --code-border-width: 0;
   --code-bracket-background: oklch(100% 0.05 265 / 0.05);
   --code-comment: oklch(52.50% 0.01750 265);
   --code-function: #eacb73;
@@ -179,11 +764,11 @@ export const theme: ThemeData = {
   --code-property: #66d2cc;
   --code-punctuation: oklch(71.25% 0.01125 265);
   --code-radius: 6px;
+  --code-size: 0.875em;
   --code-special: #ee6167;
   --code-string: #90c764;
   --code-tag: #ee6167;
   --code-value: #c187d3;
-  --codeFont: var(--font-text, "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   --collapse-icon-color: oklch(52.50% 0.01750 265);
   --collapse-icon-color-collapsed: color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%);
   --color-accent: hsl(192, 76%, 38%);
@@ -207,93 +792,36 @@ export const theme: ThemeData = {
   --color-base-70: oklch(71.25% 0.01125 265);
   --color-base-80: oklch(77.50% 0.01125 265);
   --color-base-90: oklch(85.00% 0.01125 265);
-  --color-blue: #59b1e4;
-  --color-blue-rgb: 89, 177, 228;
-  --color-cyan: #66d2cc;
-  --color-cyan-rgb: 100, 208, 202;
-  --color-green: #90c764;
-  --color-green-rgb: 142, 197, 98;
   --color-highlight: rgb(234, 203, 115);
   --color-highlight-rgb: 234, 203, 115;
-  --color-orange: #fc9263;
-  --color-orange-rgb: 252, 146, 99;
-  --color-pink: #ff98c1;
-  --color-pink-rgb: 255, 152, 193;
-  --color-purple: #c187d3;
-  --color-purple-rgb: 189, 136, 215;
-  --color-red: #ee6167;
-  --color-red-rgb: 242, 100, 106;
-  --color-yellow: #eacb73;
-  --color-yellow-rgb: 234, 203, 115;
   --control-icon-background: oklch(100% 0.05 265 / 0.0625);
   --control-icon-color: oklch(77.50% 0.01125 265);
   --control-icon-shadow: inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263), inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188), inset 0 8px 16px rgba(255, 255, 255, 0.025), 0px 0px 12px 0px oklch(from oklch(23.75% 0.00250 265) l 0.01125 h / 0.375);
-  --corner-smoothing: 60%;
-  --dark: var(--text-normal, oklch(85.00% 0.01125 265));
-  --darkgray: var(--text-normal, oklch(85.00% 0.01125 265));
-  --dialog-width: 500px;
   --divider-color: oklch(100% 0.05 265 / 0.0625);
   --divider-color-hover: color-mix(in oklab, hsl(192, 76%, 38%) 50%, transparent 75%);
-  --divider-width: 0;
-  --drag-ghost-background: oklch(23.00% 0.00875 265);
-  --drag-ghost-text-color: oklch(85.00% 0.01125 265);
+  --divider-vertical-height: 100%;
   --dropdown-background: oklch(34.50% 0.01125 265);
   --dropdown-background-hover: oklch(36.25% 0.01125 265);
-  --embed-block-shadow-hover: none;
-  --embed-border-start: none;
-  --embed-padding: 0 1.25em 0 0;
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
   --fab-bg: oklch(23.00% 0.00875 265);
   --fab-color: oklch(63.75% 0.01750 265);
   --fab-color-active: oklch(85.00% 0.01125 265);
-  --fab-easing-curve: cubic-bezier(0.55, 2, 0.5, 0.97);
-  --file-header-background: oklch(23.00% 0.00875 265);
-  --file-header-background-focused: oklch(23.00% 0.00875 265);
-  --file-header-font: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --file-header-font-weight: 490;
-  --file-line-width: 43.75rem;
-  --file-margins: 28px 5%;
-  --file-margins-x: 5%;
-  --file-margins-y: 28px;
   --flair-background: oklch(34.50% 0.01125 265);
   --flair-color: oklch(85.00% 0.01125 265);
-  --flair-padding: 3px 1px;
-  --font-bold: 720;
-  --font-extrabold: 820;
-  --font-extralight: 305;
-  --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-interface-override: "Raveo";
-  --font-interface-theme: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-light: 320;
-  --font-medium: 520;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-normal: 420;
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-normal-linux: 490;
-  --font-print: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, Arial';
+  --font-print: '??', "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, 'Arial';
   --font-semi-medium: 490;
-  --font-semibold: 620;
-  --font-small: 0.90625em;
   --font-text: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-text-override: "Raveo";
-  --font-text-theme: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-thin: 270;
-  --font-ui-larger: 24px;
-  --font-weight: 420;
-  --footnote-divider-color: oklch(100% 0.05 265 / 0.0625);
-  --footnote-id-color: oklch(71.25% 0.01125 265);
-  --footnote-id-color-no-occurrences: oklch(52.50% 0.01750 265);
-  --footnote-input-background-active: oklch(100% 0.05 265 / 0.05);
-  --footnote-line-height: 1.6;
-  --footnote-radius: 8px;
-  --frame-right-space: 160px;
-  --frame-right-space-override: 164px;
-  --glass-base: inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263), inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188), inset 0 8px 16px rgba(255, 255, 255, 0.025);
-  --glass-base-l: inset 1.125px 1.875px 2.5px -1.25px rgba(255, 255, 255, 0.188), inset -1.125px -1.875px 2.5px -1.25px rgba(255, 255, 255, 0.138), inset 0 8px 16px rgba(255, 255, 255, 0.015);
-  --glass-base-m: inset 1px 1.75px 2.25px -1.125px rgba(255, 255, 255, 0.15), inset -1px -1.75px 2.25px -1.125px rgba(255, 255, 255, 0.1), inset 0 8px 16px rgba(255, 255, 255, 0.015);
+  --font-weight: var(--h1-weight, 330);
   --glass-button: inset 3px 3px 1.5px -1.25px oklab(from hsl(192, 76%, 38%) calc(l + 0.075) a b / 0.75), inset -3px -3px 1.5px -1.25px oklab(from hsl(192, 76%, 38%) calc(l + 0.075) a b / 0.5);
   --glass-button-error: inset 3.25px 3.25px 1.25px -1.25px oklab(from #ee6167 calc(l + 0.075) a b / 0.75), inset -3.25px -3.25px 1.25px -1.25px oklab(from #ee6167 calc(l + 0.075) a b / 0.5);
   --glass-button-l: inset 3.75px 3.75px 1.5px -1.25px oklab(from hsl(192, 76%, 38%) calc(l + 0.075) a b / 0.75), inset -3.75px -3.75px 1.5px -1.25px oklab(from hsl(192, 76%, 38%) calc(l + 0.075) a b / 0.5);
-  --graph-controls-width: 232px;
   --graph-line: oklch(36.25% 0.01125 265);
   --graph-node: oklch(71.25% 0.01125 265);
   --graph-node-attachment: #eacb73;
@@ -301,31 +829,17 @@ export const theme: ThemeData = {
   --graph-node-tag: #90c764;
   --graph-node-unresolved: oklch(52.50% 0.01750 265);
   --graph-text: oklch(85.00% 0.01125 265);
-  --gray: var(--text-muted, oklch(71.25% 0.01125 265));
   --h1-color: oklch(89.5% 0.00250 265);
-  --h1-size: 2em;
-  --h1-size-alt: 1.625em;
-  --h1-weight: 330;
-  --h1-weight-alt: 570;
   --h2-color: oklch(88.25% 0.00250 265);
-  --h2-size: 1.5em;
-  --h2-weight: 570;
   --h3-color: oklch(85.00% 0.01125 265);
-  --h3-size: 1.375em;
-  --h3-weight: 570;
   --h4-color: oklch(85.00% 0.01125 265);
-  --h4-size: 1.25em;
-  --h4-weight: 570;
   --h5-color: oklch(85.00% 0.01125 265);
   --h5-line-height: 1.6;
-  --h5-size: 1.125em;
   --h6-color: oklch(77.50% 0.01125 265);
   --h6-line-height: 1.6;
-  --h6-weight: 670;
-  --header-height: 56px;
-  --headerFont: var(--font-text, "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   --heading-formatting: oklch(52.50% 0.01750 265);
-  --highlight: var(--text-highlight-bg, oklch(from rgb(234, 203, 115) 0.8 calc(c * 1.375) h / 0.33));
+  --heading-margin-start: 1.375em;
+  --heading-spacing: round(nearest, 2.375em, 2px);
   --highlight-blue-rgb: 89, 177, 228;
   --highlight-cyan-rgb: 100, 208, 202;
   --highlight-green-rgb: 142, 197, 98;
@@ -336,164 +850,49 @@ export const theme: ThemeData = {
   --highlight-yellow-rgb: 234, 203, 115;
   --hotkey-gradient: linear-gradient(to top, hsl(192, 76%, 38%) -10%, color-mix(in oklab, oklab(from hsl(192, 76%, 38%) l a b / 0.25) 30%, transparent 70%) 210%);
   --hr-color: oklch(100% 0.075 265 / 0.1);
-  --icon-color: oklch(63.75% 0.01750 265);
-  --icon-color-active: color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%);
-  --icon-color-focused: oklch(85.00% 0.01125 265);
-  --icon-color-hover: oklch(85.00% 0.01125 265);
-  --icon-m-stroke-width: 1.875px;
-  --icon-stroke: 1.875px;
-  --icon-stroke-thick: 2.25px;
-  --icon-xl: 28px;
-  --icon-xs-stroke-width: 2.125px;
-  --indent-unit: 0.375em;
-  --indentation-guide-color: oklch(100% 0.075 265 / 0.1);
-  --indentation-guide-width: 0;
-  --indentation-guide-width-active: 0;
-  --inline-title-color: oklch(89.5% 0.00250 265);
-  --inline-title-margin-bottom: round(nearest, clamp(0px, 0.5em, 1.5rem), 2px);
-  --inline-title-size: 2em;
-  --inline-title-weight: 330;
-  --input-border-width: 0;
-  --input-date-separator: oklch(52.50% 0.01750 265);
-  --input-font-weight: 420;
-  --input-height: 28px;
-  --input-placeholder-color: oklch(52.50% 0.01750 265);
-  --input-radius: 8px;
-  --input-shadow: none;
-  --input-shadow-hover: none;
+  --hr-spacing: 2.25rem;
   --interactive-accent: hsl(192, 76%, 38%);
   --interactive-accent-hover: color-mix(in oklab, hsl(192, 76%, 38%) 62.5%, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%));
   --interactive-accent-hsl: 192, 76%, 38%;
   --interactive-hover: oklch(36.25% 0.01125 265);
   --interactive-normal: oklch(34.50% 0.01125 265);
-  --light: var(--background-primary, oklch(23.00% 0.00875 265));
-  --lightgray: var(--background-secondary, oklch(27.50% 0.01125 265));
-  --line-height-normal: 1.6;
+  --left-margin-delay: 150ms;
   --link-color: color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%);
   --link-color-hover: color-mix(in oklab, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%), transparent 8%);
   --link-color-sidebar: color-mix(in oklab, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%), transparent 8%);
-  --link-decoration: none;
-  --link-decoration-hover: none;
   --link-external-color: color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%);
   --link-external-color-hover: color-mix(in oklab, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%), transparent 8%);
   --link-unresolved-color: oklch(from color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%) l c h / 0.75);
   --link-unresolved-decoration-color: hsla(192, 76%, 38%, 0.3);
-  --link-unresolved-lch: 0.75;
-  --link-unresolved-opacity: 1;
   --link-weight: 420;
   --list-bullet-color: oklch(77.50% 0.01125 265);
   --list-dash-color: oklch(100% 0.02 265 / 0.35);
   --list-indent: 1.5em;
-  --list-marker-color: oklch(52.50% 0.01750 265);
-  --list-marker-color-collapsed: color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%);
-  --list-marker-color-hover: oklch(71.25% 0.01125 265);
-  --list-spacing: 0.125em;
   --math-color: oklch(93.25% 0.00250 265);
   --menu-background: color-mix(in oklab, oklch(23.00% 0.00875 265), oklch(27.50% 0.01125 265));
   --menu-border-color: oklch(100% 0.04 265 / 0.125);
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
   --menu-radius: 14px;
   --menu-shadow: 0px 3px 18px 0px oklch(0 0 0 / 0.1875);
-  --metadata-border-color: oklch(100% 0.05 265 / 0.0625);
-  --metadata-border-radius: 12px;
-  --metadata-divider-color: oklch(100% 0.05 265 / 0.0625);
-  --metadata-gap: 2px;
-  --metadata-input-background-active: oklch(100% 0.05 265 / 0.05);
-  --metadata-input-font: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-input-height: 2.125rem;
-  --metadata-input-longtext-lines: 5;
-  --metadata-input-padding: 6px 8px;
-  --metadata-input-text-color: oklch(85.00% 0.01125 265);
-  --metadata-label-background-active: oklch(100% 0.05 265 / 0.05);
-  --metadata-label-font: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-label-font-weight: 490;
-  --metadata-label-text-color: oklch(63.75% 0.01750 265);
-  --metadata-label-text-color-hover: oklch(63.75% 0.01750 265);
-  --metadata-label-width: 10em;
-  --metadata-property-background-active: oklch(100% 0.05 265 / 0.05);
-  --metadata-property-box-shadow-focus: 0 0 0 2.5px color-mix(in oklab, hsl(192, 76%, 38%) 50%, transparent 75%);
-  --metadata-property-box-shadow-hover: 0 0 0 2.5px oklch(100% 0.05 265 / 0.05);
-  --mobile-nav-fade-bg: linear-gradient(oklch(from oklch(27.50% 0.01125 265) l c h), transparent 78px);
-  --modal-background: oklch(27.75% 0.0125 265 / 0.625);
-  --modal-border-color: oklch(43.75% 0.01750 265);
-  --modal-border-width: 0;
-  --modal-community-header-bg: oklch(from oklch(27.50% 0.01125 265) l 0.01125 h / 0.5);
-  --modal-community-item-bg: oklch(from oklch(34.50% 0.01125 265) l 0.01125 h / 0.5);
-  --modal-radius: 22px;
-  --modal-small-background: oklch(27.75% 0.0125 265 / 0.625);
-  --nav-collapse-icon-color: oklch(100% 0.02 265 / 0.35);
-  --nav-collapse-icon-color-collapsed: oklch(52.50% 0.01750 265);
-  --nav-folder-color: oklch(77.50% 0.01125 265);
-  --nav-header-bg: oklch(100% 0.05 265 / 0.0625);
-  --nav-header-timing: cubic-bezier(0.3, 0.75, 0, 1);
-  --nav-heading-color: oklch(77.50% 0.01125 265);
-  --nav-heading-color-collapsed: oklch(52.50% 0.01750 265);
-  --nav-heading-color-collapsed-hover: oklch(71.25% 0.01125 265);
-  --nav-heading-color-hover: oklch(85.00% 0.01125 265);
-  --nav-heading-weight: 520;
-  --nav-heading-weight-hover: 520;
-  --nav-indentation-guide-color: oklch(100% 0.075 265 / 0.1);
-  --nav-indentation-guide-width: 0;
-  --nav-item-background-active: oklch(100% 0.05 265 / 0.05);
-  --nav-item-background-hover: oklch(100% 0.05 265 / 0.05);
-  --nav-item-background-selected: hsla(192, 76%, 38%, 0.15);
-  --nav-item-color: oklch(71.25% 0.01125 265);
-  --nav-item-color-active: oklch(85.00% 0.01125 265);
-  --nav-item-color-highlighted: color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%);
-  --nav-item-color-hover: oklch(85.00% 0.01125 265);
-  --nav-item-color-selected: oklch(85.00% 0.01125 265);
-  --nav-item-radius: 8px;
-  --nav-tag-color: oklch(52.50% 0.01750 265);
-  --nav-tag-color-active: oklch(71.25% 0.01125 265);
-  --nav-tag-color-hover: oklch(71.25% 0.01125 265);
-  --nav-tag-radius: 8px;
-  --nav-tag-weight: 620;
-  --nav-text-color: oklch(85.00% 0.01125 265);
-  --paint-description: "A deeper blue take on the Nord color palette, with additional inspiration from real-world automotive paints. Calm, elegant and futuristic.";
-  --paint-image: url(data:image/webpbase64,UklGRhJDAABXRUJQVlA4TAZDAAAv34FAAE1AbNtIkgS5d+c57eUfcFfXPBFE9H8CBP9Vv0OltATwoJ3khOMAGANUHGMMldmKUi7qoWNMDLpj8XS+3wUQwCkm5BZdZZwJzX1jreH59D68T124SBo+BZrirJJYKMBYfO7J3PiahKIr4D1MWVEkAQWLm4tzSjgJJ7h6vKCqIS+jF+Ca1XkPj91oofDXSifob1b8/X4/BEUxxZ499wHSFKReqMAD1/WKhecDrgSkTgTYMdEHbl6QduPxe9Kz8Ep6mgQXaT06jcW+VySv+ae5InPHhdcUrbKEK/dHmi4Cb6FUIM1XyWxne4s0bxFB8C47upiLh+OxSuRtSZUk/4DT5yVSCuBU7x/eOKp6IbmRJEeSDInCghP9pSsR+rl89y6zsokEshvJdm2lhPdMBKi/iYL8o3gRoI3fwkl2JNuu1TRO+iUF8k9IXoMJ4ODd5ez+T4AX2wsBoGABeHwEgJZSwC0AYE0BMNjPACAQCwAYAUAAYGOmUBsRxKOJxoZgsRoKgIgRRpAFGkBvelNKpVd/tvMDpFRxptEnANwCAESI8TAi8X8DiEfcZ7+fp2CwHmAwGI8mGI8ETPwnPUylmg2IEVEA3Dv3P+H6uhSdCAC4N+41LrnRYcaTN8mmsIov5ByIrDCeSEbDZUKOIQrAAcADTI6xgdWAwgYAWJYiAC4X4DcA2HDgYAukFhiMR7Rio2N8+IK1cO/eXL25gnubjjeAqCIIUCrLsshKAPy+PUUBgFJpaWUiXLGAUgcZgLkAOlbrzFtHAuBI6hgptTRGRAQQgYjDGIFIMgY/JFr1RYzDiAOlZED05lgBAQHQoQ6CcUAEIg6HASAREYE04gUE0CCPYZKiDsQgC2qHA9kAjgUwHwAKCChRsak6fTDsqRt76ufzJoV1MVUYmJUDcIflPvnNuMOb+8Ri8eY3k4gFUO4QmsYLPj29/v5+n9u+yatvPkLpALwAcGA5FSYIAwmTgrALEDXOJt/HfQRoKjWJAEpeEIgkgTkGABTsEIUvZAEitSk5eIMD2QHHIc4XIAIwAARNUpQAASAoxewjHQQQCABuaVyWGZ7cR/fRfXQfeUx9AsA+w5EI4s3AOyJijOnVtxq61XZ+PAput4L7Y1ctIoAICIDqUOHeubm3bn5es9zcV5bbQW1SilaXJ0VK0WLTJdSKiAjxaACGCt5OEwB2iLaNMWIDBkuy0iNEJylAWchEyAyHbdsGErX/2M21vfsfICImwFplTZVKo7ZtRuaHCg/CpcrcjL6oVTM8sWF7A0Wz+eGDaPNzq40G1eCTO00M0aeeNb3dPrHM6CU8aLZR+qzpT3r9A626K7xzfckbfaC41guhrIML3hgJt9anaqNH43LRq8OrUzeajYOzhv0O0X2vR9Z8oUP7Zx11Ub9rvuTNraxnvbGbVke2u6z/yNdsxQOvkeeEdr11Uxu2bYtktdp9P29Vy9hyX9gCFhE8WSFoPCGu+3N3d//+ubu7u4UdxWIQD5AEdoItdDHLbayl6n3uY3e/VS0zSz754bu2bdW2Nkmqbe5zfmbm38xeWQBTgFRgMwUY5LFiIqAKbPbEzB8z3bPP6p4kyVZt27YttdI3M+Y/a1tOlEK4oFcPWLRtRW1ehpqJnIeI3vfQpPn0I9u2I0m2bfWhnrACuwCbS4kq7KrjvblNbg5jjFEAczMdIuFmqkvnmmv51E1BjCRJUpPFD/5bC9I2w7Ztw1DZ/yevDlew7TRRKPsUjIUiCaDu70G/BiNOCJjmScCMDGG2/MCLyOwc7YyMNFVGzFTmzCQtyYihcwwAgTkYZmqZjIxZO2wMCnDGdIIJG6rWzPCpyXSvSciMCMXQAICQxLABAhmo9e5ExjLEFIpBADSOYcuYU5OmMpGC0lRgvU4B09TXMkY0lgWpLA2RhDZIYZBjDDaTIMPCqoNoMEcusdNtUq6NNYEAgASsUFjQeFxttkgqFIdqqI3TR1mn9XxGA85YMxb76G8QWtQZRHpoPZVs6TCUpNhfM5N7BMuorcp5LUxZ5Qh3+W5WDVBg40wMzbBCYQAGQmp6CwDBhhSYPFtcMQVCEiiqVW4FSBBSGTl55ZWp7i/XRljbpxbGcAnAAOvLd6MmFoAAgzAY6IJ8iOTVIK+MukeHF55oTjLPZmfLdOTKTRWJSI1ltg5FYjQepiF+ZcKCwszXJvXqrAlHSZEWmBc2707TdwhA5qecfjW5wXdX69QxAdKg37yC7mE5t+o23XF5B/fpaomKcabbDo7KD5O3gelial4ODJNVAwBB0PiAWNZNM27THfN2d+fct2pmDAoCqBZ7xOOULZsAwNiuuPq6ut3Ut5gDTaWiWK6pX8EytudrfD6bJ45pWAnI6CuddxQLgPlaSaZGAee4ped9l5X02Kwu5wAgTFABt5t913hlva0HjosK+BG3mDIhrPbpTZy2x+08d6/KqgyatDFYEAIUAuZlyTDrsYOiMxEMUEBYwmI8RCWMMJg3FJDpnL1cSb9S9/IDIyCMyvaPmK8G37MfeptnX+3FqqZ+VW2uVklMW4u9s6GpmmxavbXNu6kHXl3BthgArMjkC/DTBcFERF1Fkk26lq/4OpuNbrF/FgBLOtJIWuKQo0vXDNMeGSAxT4eu9Q0AFMjYtEo1trv6Pr7ruhd2+3owhYQ1rVUNJ+OA5lTQMw+ZCqLXDXufPd8GBuIzMAvGzeSIR32+fZXQIl0qBhh0MPscYJNYUqmnrZU3dUtsKmN+7P2uKZNiYwtX6yD5PN8OU4ICgQbrtqkyw1vWS1zNS3YunATCpqDA2MN8VTUSE0RIkZUc9Zzd6gMAsOXL245ezhqv19H5oJ8bxtniGprUxCxXd4HIK9sqBCipaXaxUyvZUddXrWHyvHuBb7RikPo1NsepcHHj1px5mUobWLbNOw1yp3dsLeq6dhIFhtBAlBGRWF4CguqW6EnsGu/+XmYBVBwGo4SBRQKxsHVnsscgADTHqv1r2BnACJYU9TzNXFNLVpYY86veH3OYkFngWjX5OUvmGWN1k7MmuZK36kV7IZia+g5TEleVgTIAwAiXW7LSlTm08+prrW7xzuj6A9FsdhMbQIVBsGJLXFES28MCS9lcm1XboMX+tWA1V9LA3HaqCIexJUs5Qu1QN3NzvA3Mtjln45nnre1Qj1kgHzfbok2r0NKiPWEl+1koN0/9nGhXxQgAUNwkBGBoKmwoDAwQgJls/jjMobKpDhCgIiqQ3BIuONgIJRjDBsbZodwWMcCFcmqlS7Wi+pll/xIvsZASr5SDsAEAC7TjlkcAwCnjzeboblG7vELdwQjNZmVMYQMaAE4dAqbFPqysKfVcja3mbkSRAegUjTAAFHhAAnLCYsppWdJhtqYljSBGZBOqQEy/pqR5yXI9Y1tk2Z2oZzdRmVLABXdCw5rKdgO6Py4IwC6c2IlSbQNkmZdsB+BknNfRqnIQEGvVNhco6BsNgEhpmcDz7sqtbBHgCTOnaStgFTdJAWRkpBfUBJFiZaAiHavtbHsgSFcJk20zyqRRAXCeLCFnzLdpeYjttUq6O1LTNSjpLOqvsYIwIlNCs5mRNZuY14IBCBYhoOaJ2E4dAADaEKlrs2LjvFocAIGmhn+jwaTr6hAUatRGM03FLVHRM5e8AMawyM553UzPQdtGeFtaDKlZOjuTrIgbbUXQspBnJZszwoTK3axKcEip9HSkZpMqsmZtZbsMTgZLRgEANtaEp0ww1qgAllLp0jlZNbYwSJ+ulWBbL0+jdY3hgCUAu9OV9U06mQI3IwFpNtqksdhcH73s96vjfV8JFQQQBQAgHAuLrdpjl7ZiefIxOt5K1iusRyabbWXRUJwJNDwMgPW6YIAHlACgFOUdArAG2zgIDPXNqavy8sPCriAMQIADq6RNIwyo67TXNgDW8A2slxGybsDQh+SA7WUF207xFSZ5ZzWZQc9jXHsbBRyHgYT1l9UlJ/V0glnbGgZqYhBgWhAprRUTZkSWIiKuXD0DhTEfPOejHXHcgTBZADaX5taePSiNuXHxUOhRUsieZBlPRAHhZBoFJAcAA1eD4piV1USgzEpaBGM26Zb3ZsIhxUBnwQlWcdSSY5HzRASAAcxmoDwWHFZcQBDZUUPcCI5FAA+g1ZkQwkEBAKBA1gIAAKdIRCPHBgXhhlk7rWa3cUb/ESu3iFCM0vc8THaDAjAYkXzxxPJh16BHBIDLhZUDiWUIgHCqE9LDMslPlIgCm9dMFZxtkfWyUFEYdRwQZQCb7AK21vXpz47TGRbVS3bVe6yWq0VGjbXpE8ldPiRAYHJ1xkh1QICM7CvFKF7JGTUWgGRM6IAVEAIKyjFErbw3LzYnIKiqcUh00qxmdTpzWDsZAJg8FEgiUpXXgYKV45RznV7BZXQADkBniwtEgKqnQipgF9viuY0KsE1TdegtWiyRjrbPZkE0jCAKRx3svE53e/aa7hi03WNIRAUBQFQ9LXabtBUUUXFUrmNpzVad1Sp7yNCOqAMcBDPgkk6kx16fLESBaCoYR12pozU/m9wim/MOZWMgPhQMsLA5hkv24xy2dBYGhMwRQhYtIoJIzdmkVjORZIJb6nRTq3XWt1k7dLQJ0Kwb+7QWmiCCC8EoNEEABDvi/Yrj5WEnV+5OVsbc7sVaLWwAcICqpf0cT8jmygAQBDZCGiqoM2OzlklH1227dxgUTFCCJkc73r2St8zsPBfq4BiCkmgYdYzUqV/S3rUPdcyAQvPcMa/9u8V2Wm+eTAMEDgoAQUmww7WcG32yYgQbBJOIFOdnxw63+/LMcXX7lbuwLJwIgwGGcAwP9CVP5PsVotKSHJABql4JDADuYF5A0jhdZ+a05C0gFhsAIdsUIANDOAomKVVZNjhMxjVaYyuksV7JaaEDQOcAWc1rdKqlooqkdWXuacVy6m7MyWct6YgyaBAsyXpivFwG5QATrZIDxZJiMVZsAINg1EXRTC4RIFgIACChlHOkEJLiQdjURVGGAzWNECAgGCBAwwhRYGQjURlW3mDLygAOMcZrA7WmEtjWPaaFLRmeCoYGgGSQTp1hlrIa3lkrapw9I6DjZDW7lllQU8Y563ZmAJsfOqlmbKbrZU6qDKAowDzGjixbpMYCkYvaRvWI8OEGXIbDJHNxTtfss9kJAQJjmOcr3aQIARhmiICAyHfsqJHOLste18iCW2tRpNJaJZMB1gDAsl67vajjqMMAQsJJBvwUD3KSZwAZUQCUD6nq9eXlgQAnBgAEkNU2O9EIcIxxFtsLBxVhMIrNwDwcEPOUndzW23Ku6tOCWbKSKjvMFZQRWP/uWQgAKx6LNxABUUBVPoi3JT1OMczA3AQHJkUAEDb1IYt7EeOnVjvKZ3hrA5xOt7Jo6auHZwcKQLD13BMBAJUkIAB09B/1Pybe2KhTygfxAACIajgRBpSs2GZM27VjZQIAYU2SU90w0agNOuNRGBTAYioDESysGA4yIqDJjFa2RhEZAER2YeS9N+IleZ2SVAqKzWMVgzATcYAgw7IIx6nveAkAmiMYZxeEgtiKAisDS4MdAFanjWYHkEpVqNJ90S9PDCg2AUkGSIBEYBABJJ8gAFDVC0JzA0i1HtrVOMjAfHUvvcVcnpwFMQhHiZSBQTQAGlpwczsGwEaO92sBU0Eg6PazG+/yOy0YRg63nXm6J90rzy5TJpO4howDEQiAgGHhjFU2wpIClcmAYCDNZqAwAACXQmzBQOVQGVgwD2YKU0Dcerzvw9d7c+V12DDNz7vlV9v5Ex3+Q/fu+6DPsUWqAgCAaGSs1D+mEXdH5qRhI4BQ1ZnrAL/e3TOMY3CAomGcMA4B4HAezEeuuyYOIJqERihH5vO9bsRxMj41e195/TsA/OrAz3bn72YPlv6/B36uvduTAnUxw3vBWHHRN0IYmB/YH0yBFECVsfe6Blfv01SdeV25vUfZGI4ZF1A8ho/FjQCsIzzWe9fajwuNuCyONS7gwRxrj1if9rAaM33K2/36KxcA/lzzc+wGln9K/pmswGXXiVxYhsggUWajvJ0q5yqfFs8oezUWgkFqjjAGMLUYHKBgAAEBpO4O37e9Jd4HgObwn3r+D9vxw575g47/SyduQZdNzWlDr/xT+6qXcLA2VJEi3RyFNnfdHXixbMOoW3nlHv69ml+48+/0xFrcyOWSMdtaC9jGi6TlIggGwTLtsFYBAIBsuTuDO9hl1tWuegUlacFnwxAAAKZSJRVACE0FymYmjKQNTwBWMRQGXDaZJni23chhyUhA0E4SN3N11YMDLgdPCBo1aePGALDMbnt04wzjZupw25n7PXm7V+ay0CAVS8XgQDAIBiCYR3AMkBSsaADDQTAISN8XhXHGPZ4dgnunuvXB++5vGDdrfs4tv9TOH+/wn7j3/n3w8XNMk04KIsjlyRY8GjSFpboP8Fw7H3ONYRxDAI5yzD5v97q3AjjCAE7kq72OPqHGMBpGABsQY2hYmO/m2zaGoc1f06cetve1N4ybHfip7vyt7GbppR745fZee/J2AECYdmoxw3m26LQJQdHGXlTEJbjVwRppggFA6lrZoKZ0xXpAghLbdOV6DxkmH2tagHhO28Mc4rqFxuUtLBCb8xg9e69SGkPxsfgY4Md5wgACxv8LsMAnW23cDDbh9JzeN0FH7XuNvGfdJGEEMDFOhogTQkpshRKAcqgSI1DAWeWB8z3BJfesdfN6h4sQEO1B71WY1hZ8NFA15rpd072ZL3DXpjcD6eH0OUDBoEEYhKNwlCEER+GoMGTS40S+w6YYNxPbuXI93QoCv2N333IAgUmApkq8JUDFkYgEiKAtZUHiklsgea3tlhsF8/WaLYMkYRnY7nKBEL35I0B71M5dT5ti3EwIA4BZbd1QNI4Km4oAQYMEB5UScYiH022nMC6ppgAAkOMkS5INsmE0mgD/qlXdEcC+zdlebQPqAJCt5LTEdOLeYoLOgZBLsPYmk0dZUHis8KRDG+3r/m9d3AxwGAy43Dyh9FoWNKxR1vzMK5iqtslWSvPN4azPU5nxnmgFA+1To2iXY3EzaForwtwQwRpdNGpyGbc9blTc7FTEchY0lQ8aSwYVOIAQZLgq4CgYFMA4gLGlSg/tIzSAALUKe299dO999XGzchEBquncgRpAmN5sQ0MWBjhq35rDZ59bC8twCBDGMGIGvptn+aw248ODCGFxVvhfe6Y5C8OCrrX+W4rnZKpq3GxDzwBooqMHTYAGgy56b5U2EARKtNs9vdmWhowTA/shr9v9u5kWVgyBScEkH4sL/MQ7XPdfzSdioTyyoNg6PHSNtKcrG+7zawAAzHTHfSkYQIOmbVky2QYmMKmswgQAOeOhqVoTuLiZqlHNLam4rpWJ/wEmQi8KFnavN+MANS6gYEBy5AAAkoiZCga4BFERABSiwCip/ZSjjkgPNzAeSdzs5M2UbEbt2SRw3k4XkKaqHMnEraOkF9GYhsYksjFd3Ex2c73dAUGDoj1or1qS3eZ13XXDuGgoF6zqiydazJ/unv/MHfholbjZE+6NRaZjbiVdQJFBcW1x1MEgTFiYAAMQjAgiDTikFRWMYWU8AIjxW+Gci/s2tJJoXZxW2YyBRvJpddFmBdwiFzOjXsuuIQKQyGu2TJ/ddtSLTqy2R1F1+NZDw7gZTd0wbkZECJmyaoHKB4g3rdt3WqM/oDQ5/eD0dMhIc3oA0eZQ1540UF4DmcTryYv2ojcz+3dnc6qBvsW0l2jzDrUlEAyo8b2TH+512b3PLKWtmqcb2EXMmBMjpnf0aNQCu+lFSXznmoClnkusoOOcnXa3eYFzdiqwzW6zwzYm1umMc0yZMC2BWb1fs4y3IjHaSA2dDTAcEas9o9Foqzzi9dm6c3Jd7I7jp4S/ZjgAiA6abgwOt8GIRNI2G1Y+A0E5oLA+E8S/CRkHpTVBYOyUhzBWEjGEVywxFppDiGMCZcRFU05bOWA23E0fKqbPamoSZgKmCHC8+jjjo7mVFHaxGlGwIYD0hhkIhVJmsTvINtQEdatEnPHRsDkxAlykrgQkgf37mLHwMFImXSeWp5AyvQlFFm1TwSH0AD1g5xEiKBJHOmVS6W+XS+Fwvq3EYnZTPh80ACD2M4WG7BwrdQCJncOwQdCTmexq12vm3g9Mwgb1PubYV/Q+hnPJez7aSLHPH30GwoBiMIrtfgeXLyMARDgkTLNeFJAWBgRgfZW0SKOHjy+tivTIK6+6pMCVC+5y7Y3ccXO3hRe0TTQZ+fntHj36umROA89NGsZFiSQzXGT4BuBHnonQsaADtX1e111a683uC20naa59k4ujjnMuZ7t9K5dw7jXcRB0BoJPF7OgWfGAKSTHQW34PhtrX9FhUzeY2hXfX+8iE7e6G+9vFqzIugQ9WhtokcVEG41h8DAEIEMdzn6SaXq2GwHblAmWnLs9FiAQiUbmIYgQBoxhGIijJVVSmLACDDDEYgm5au1bcrRrJKjwrngBN5RNUKaCAStobgLkrAjypghp1Cd2zjevEiHGCSl2hCvMvVsWOGKkkRbPJ2kJCbfquxmdCMADBFmtJyEKFDQUANhS2l3sfAIP13mnlJRKgXUpLJ+OvccVx2BwoOvVlJLMwYDd3/1pX/eT8BAAABV9VOH1wy5Ieh+Ihgjjxd33l13Xe7PJgOEmsi6ootgkCMABt6EiZLk/9vpmvpAAAUM6ZYu3eeMKM8Kj7lv572NguE4YMxcNJ9TcyEAYuF8119G8TqX8sIEYqNHR2wxNvlXU5cuk9rxHBQgbCZFUv1k0fPNNEXGzhscXHO7kugSO4SYoVGEK7r7Wenp/HtaGid4Zv6brZjGUSc/fOfsI/kZVoESEsLKuS2DAQCYoD8Eo7p3Z9vxCVGLabpUs5D2b6q/UTgzI51Mn13YpAQY1IsVOyu9DRnBNHgrGI6E+ttkEBFTcJzRaCiBpWBonFvQCMQYmNSZULMbQLJ6YMiFlDL7X03bc6OyHM8sU8KQyzrTlDK0huRQg5AYvkUAvh/JmZcqzhEH0Sz/F8BZPCZ5LsgxY6hIuaKs7IeOFnzkNTkaAEMQARaRIsyYPVUCRvwCQowiEAiAAAAIxmq0epoYiMgTkxsRAXeOB7gGAybkYX18yH3cIgGREHgGxQcTI5MQAYgRIBQD6OJyOOB4AMpGRgkR/a4xZp8P51o8jAMkSkypYhnIQ4QEoAIBkRkBJ7Is5T9o1WkvGedauMKqZNSIkYieCTETMktimSEDsFb58L/GoA2ZsZuBb7PbuPLWcacJYj/Nm+x3Jw/tw+mxHTq5kT9mfPXrer9Beu28FUF0fjj+xmuXAnaVtV91CjwMYJF5/b/eqVIaZwg3na/lrvPHv0p3dXj5jaDXKCjp1mO39qd3CJad4gN+hikEEnA01TH4qbmOFNmh8QiCgAmDiRgPAAwAmUBQMgSJtIaAIgBgBScphjRsAVXLUMBYAwKVskQfDKtuEb2JCYBGXInxBHXspZANirayZQizkGQjYxAgAbVrSUuM8vpQQAAC5pd4y7KJwp9dsi+MNqzKj477BZEBN2Iq0O4P8IRlYsYpIP8MvZY2UV68UPYjeLoeq/TPcG6MRJSp2ZCCJOLuqSlQFFt1yJ/B4tRbMx2T/QnkY4Jd3qg63u64F5nDndo03UJW3tTJcuewLCyCYbCchjNdGezTJKOdzU9Ww1PrXfZ3OkjUVFm4A0CwqAeai9G7VVhQo0CmRmU2QlmsrnqXEAUDkz0uCZOhGLA4hmiQZu8RAMWaBY/ZJtam/2TriXFyCd1gUAYGxSk4JzVha3hZHKbkE9SkKsfAUWFAQ7l84AkNfMKlBmuKN3WlcxEy+R+1AAIDsdtJrAJrcagFRTetZumaoXjQaIE+ligDgAKA1lipnlJt+2zXDWenBTgkxAac0sx9PYljKLpx/QlkmnhgY7/oy9u4zLhKcbBhYBgBMqk29XtFYt1yaWJQEMhQCQqc2qbVlrNUNBP4mSHQ3nicYc2Kcxl/xJlwtYjJFjghkAAFZDqB47gxEfclcLEKABXM6sy+mkRVtngwFgBqkhRMKzgmr4RK1vYgRBPdAEn5cgauHGRB3Tgekx0aDa2hiBAJNqcNdrLjEMRiKFnQ8B5QzZMxnFHN0drePuAV42VVD0HABAJ7O0FXS6lUZgzSvQtMpoUMkt9ikBRhMCwYDTQ4CGcgAGAQAGIJjo4oCcKhyEQapAGATWpyBBBQOEgoIKNQQ4aqKHk/gjDRk5agDChoIBInqUAKPFkI2jDIFoAkCVkmBS3yJpDVT9o6UEkR4CNAkMEbjK9AAVBChaD0BaMupwOQqg1VQLzNWzafWIa1ygBfqTFIQAWQ6RQJnXFCcb1hpJ+13Nqq20KA6wrYLpmwYf3eeK0pi8ARuHec2+7Nvnrt3tThhCifNw32dt57pfM5LUbBSOi6Bpkad6P/LafHifbRJEARzBsDkMEIZCXAyaMKCz/KLvcm529zgOC2gMsGhf6Nvh7e6OHWAwwgDAIU/0vu1l3L/PgdIYQBEEAC1C8yIYQchRe6jX5671VueYSYIBQBCAJQhxGA7kRohDnrav9zLu3x3otBlCsfFwiEMI8AAbh5AeX2kv2R59YjcDGJJ0+GLvdbtSH3VNJVAr+YLvUa7V/fvk4dThKpwKp8MAjefrvs9YEHmtxoBqXAXxqHKsEJLRqJCllFS6BkKAcgvb/AWtTHdppzAhERCIg5wZByyx2ERAOE4H0m9n5MbNywYAjw3wcOaZk3OGfuMwuiCMwxDHFvBmAOAxgMdQcmLAqh01EBaIyUY61RywMkdNCWBisgUDZcjyAHHWFg0TghmCQ94IELYBLxtZk80yllgJIEDYwAZAHB0OsSkTFkGLw9iURc7bkFRkRDAhcZBAiWELLSnJppcepOC4NUE3ROjSh/TnLpdDTGXCkDUKSG+OtYBhU6aKiwFIylkmgBUbZo2pzamVW8KqI4xTxswwSNc7Y/29us0nj4/n1Ri/WAniCwIIEECQyngSIFKMPtW1Lklv1RAkqKMRKuQA4YAK4xiY9UBA4dRve1T8q7oJgxIcwaRl1DgJgwAZC1dU6i3MliEEcFTcVAAAF/4dAYzZbBcIcakcm0w2sEdjzDhxoVUUwmgQEAMivhVRe3VRCkEhGABAXW7jfBo0fVBnyvHF2J2eGIcBkJR0fNCJdPPYqFPAHw9sck6y4ULIBLUjr5vJUka9pKaJqq6tCGrUUFCDQEO0lK2kz8BygrgxLhoHKJKZBGguGiRgfZwaHC8aRNMgw5K4CcA4fZyUOhXhsKQkooBEMYOcHAiDVHFoAhQqLPERgoEEFAa4UkEtAZDwjaoE4vRwUikORG3dwUQPJ5lHWrLavmWs9s6MmLLcnWhg4JBU1x4H3ObucdzYJYL6C70Ogffvc4OTGUIYHs5ZHmjnDWzXe9csGQ11LJ+8MF1DWsIApbM1inQ38MOzZ6yKE6q711QQbK0y8q1Do7IBHbNqsLp96+ywZXxgl1IDKSlJGToDHOZZ7xEv0ubjPnsXGArlFIfj4Zxsv+i7gnGfu2mJIYcXsA0McTiQN2ADFOLwABoLWLQvtA6BihseYBPzmPdjD+zSJ3YzqBLCOt2tPL73VC+bFxjRjsyNsYcQd5O7E80aFg0VJ9W1j7czgIO62YEwQ0F9Kg5NnM2VEtlyEyERzAqPtRXAzrldpgaB7tYsE7dOC2oAgE+3tRTp4/a0vZEqjtT3Wo6G6bSGSG9rFQEdcgLL9mQ7hXHIpdQYEZONx8nAKJFsAChDziFozunZLlqZsEBsA5xUOZ+fCBDnWYzINi8nIwICmCEONBTgWGqkJAjEliGdzLe9vlEDN7JxE4k8/4m94IGtumc1QQUwFQ7DZugGWGXj3a3azolottx3RGqg4qT7UdQK6gpcrTyulc6gXulWVXl9SVUiFbd6HCAAqCeVSM2IRBhUcQuAegEtxqgEUOcUGHBMU3efCiFMjEAQUwwU/H9kp0NSsagQTDeDTINqecg4DGRcXAKANLb3MGmkG+PWQRUsXu5GJAlwgDpuIAl+cwiQVGOYaR1GZm3o3Tz6yd1SndZVJdK1on81vUSMpswEIEDU8pXqWzUFnCSWazR7pIdokJHwYdSBaD1AiyAO46JxeUCPkowmhguU1oO0h0UjQAMYICQzjWLmohEgeipI0tcJPFTNayc6nLRkpE5JsIIC0qYCURckALV10KdkSB8td2PmuoUdAIISMEpGgHCdJWorGRDNO9skGAUAzMtGwFiyMme2MiRaG0c4KjQduTuRrl7AZliSCmjIE/m2vUeJ/jUpP/W+4d2zbnfEkxJVS+Is5QHftj7mmuJGHIJoGMBxCHHSknp8uZ3lU27LqLPNIWSwLHb4Qutt97tZMrVYI59MawY7nG+2u9Zb1VqdFlniK97Oum+FaZJ3oGugBehT2szqBtPSWsumEdC3V3ioe+vc0zgM0DJAqsOVoQ9goMM/77tTH95nmF5muAEAFu2B3lXrAy6Ek3hYFyQAXtyW8oBvpk/uZgDEYQ7bV7yb+YZPEy53S9dc3YoEtFgCY+YQSOY8flrmvtVaCEcMOYAKI2MJLGue1XmoH1Zt2ot2g2tXa974vhSTlvrJ3RjHM9S6WB4nWwqIkOfsae92d0Ai27zTlhHr8N6T7WbdsKyG2jfVtliOt4wIZq0e27eZu3dJChiJBABX2QwSCXCQEsNWL9+1ZbvPzQ26QNyIdUBw6/J4+nbvPrMEcvW3IKv+pnqlPWG3zsFdXn1zluyxtnXesQK5MpA+oDGgqGhNFYbJq79Z8gWKdsS+0x2wm0nS1wAq21CHK5wyYchQhzs9kvRyWAQBmlMRnRwzJvUwDRIgcRgDRLCt1WO+QfeuJkighCza97xr9QeDcLmbvHx6tOqvzlacb1VmEPGyEcmVyxheRXoz9U4g6kzlMtQcpki3d/Ym0hUGpWpZBimclEjFDdQI7fFldp3ITlbCNYcFcAAwEqU85je7EEIQMNoHUO9eQgGDRsGpOPVwIOEJlrsxAC1zJCPubvt4cFtTHwoa61gACDLy6szdyBvGATEp1QbLWxEDsICx0eYZBQNyFvqd12uZPFGqG7SOZmaqdhUTKlkgxhPB1VFd42r10XDjyvYxQEb5N4EOn1D5i47ehbyhbUz2fmcioJqUcDI+uk8JyAkCZhpVtALSgKJBggZxA0pBCWmORWCS3HKaaw404PIMqYBkmwoIWEHEaAARmGQ2gKtLSAdyAdsUyawmFT3kjukjcjIgQWADYMlMgkmib2LgaQIHSisZ4Fd8GZB6pansUUiK5BQmcmUAkcABiYAB39CRK8/08zDIBT1hZZa7P7q7UsBhVXK/aUngRftqb573rXkFtaZj4mgeadfPoWVpivT2Wh0hoNgO5xu9W3TrVVudZtOoYW656ZTepnzXXmnvW1coWx1r1CADGadobXFiuhvtqeNpu29dJdJWH7f26hppFgbRdKypFG6XbNrqNtBaHQtVTUV3tgZW57aHzpPef9naif7WVtHitNUNaAlTWJ/I14/l7f0aehoqn44HPd++2w6tNy9aq4tbkYEvXWuPSalJZdcj9afMGg+21rzHbd1F6yeBc/q0i5tXx1pL6W9t3exX+WaeifawVAPjoDDKOI2OWx0LgiDkYj3yOtNd2i1SEqaS+1UiAeFkaI7ke94mDq2gnJwOsEX7aQ7OASfaRAraAEC6vGI/azetq5SrYzlJbrm9ihRE+7Et5Y61VaA3rUQK2uqb0waU04vsNKTHZqg2XeM0uo7lWy4ERHqWwt2xm92sWtNpQTkdq6aiw3StJc8Zftib5W27OQpKZqYb0JpOghqAHiV9+1God0xQzhCuCzhhoOREQOpLv7UFyepS2V3Ai14VqYNsiR+2Les2zao/sRK4gkh7VNH61l5FSmbmQ/06P7KVaDm2scsBAET1LFcOADU/vgRDJBpGVViR1gQSASiIaE7uEGfdtyAxbFi5W7QNp4YtAZZURLAgtYgSDNRxCEBADWXFA1ADB0jWdmJEACISJCBAwlSfNU58qRX1I5EEAHVwj5wsTMR/UzOGbJ35GViPxdpe84DhtzIjaRUTdTQAzrmz2psmsooRcCanvFqPLNND741Gk7sxBqvBxtKpCgAAXEUyQo2BVFYkl6WOorTIRbYsccnPL/8FUQNbUgVQjdOfqqtd9KApxuKmcT1/37umCn++4WLwagCrwI8HmfqUmUImLNnjES+SrUXUl6zRA0zRvAvAHSxPjhMFRtbgW5teh0cAECMgxoSpZxgHYOIsBwCAGSGAJhr1xwAAUzdyaVGl36Nq3JZBAABivZes16WxFmhDCACCCxEESyEClHQAmdobQiQYJQOUz1oco02QrAJTiVppBjAzmAZUMohEW0MMwTGK08ExZoapULUxOAgkA0RwUEJ0iJC2giVxMUgG0YCo8hqtK4YAhQFApCUBAaK6gExto2SgSwForyxpqxADhubKBjCCIAkfpk+/QKNyACMgtiFKyssIkAAQRFh46lUP0KQBqNRaBVqLn1rv3SlhU3GLZQM5FoxXGAcs80/Ojtiv3x0arzAuZcBgKvO/vUfbvetXuHyrwoRNBXzMgJf4vPdoe5/79CXgACMWsa3Hf2g/ah9dH3bABubl2389e9ze7z61iG1DqkfaL6MatqG4xeI2ACMO59H2v3OTftOlCYr4mKE4MQOwCu9/mB/xnld798sAA1wGDHLMkpKADKzyn3LsU379dYfEiWXbT+1fH9v1u6/bUhhDBTgA/Fj/5tqWj/ya/2zTUzDDAzGegc8G7dX6z2T5tbUbYTiQWawBrxkY8hoOMFQwaACm06bvrvk5r/OPW1m/a3fNeKW19vW2MKmP+Bxr5b162xL5AFAkQEoyRCQnjqfD59tJu3+9aXlyIk5OCcgo+Jb9qN0y73UNamAEVFo2sLLAL8McWvcqoTICve3B9mzuWu9cyoBYPNp+aofmXgdSqlvWe0UCNkg5JKQgQErIE/bNXKuPrAwjTJFsY3H6MQKgwvvgPKvb33Tbm4kgWCQrGCgnBESyAAhEqbrzcM583P3rzQrTL5vD+WJtmU+5+YVkAEGA84K+fL35Jx98qZnraEGlWUylBUBMVuIYD1fIh9hSIFSJbVblFgJFCycaBHzzyq0EBAGFlBaA4s3C18o/teP5X4n69NoNJquk1p5sInPptiapNgPCGOO/XRFGNVngCCIIVQsDAEggiCEAESkDRavCkFoAqFqxTgUIJKAcpcLLqAhBAQwCknU4KpmtKgCEQQTw4gBAEnII5jBDBgSDVPgEqOWQ2KqxrjTNVJMrqdbavJqM2ETUJdKl8+MmGIC0WzPMzEb3tZ5/aN9/QKZs3MrzWXn4nXcX3+ZkNb+gSGiaRuoookdeJQDMrDSeLXvTNsfUSb32vv/DkU//9mKbz6hIvfmaB2KTWAAAAdEkSoKxBFjWSjbTZqgyaC4jWb8BYRjrH3pfIi7pIW7EnYUBADOt10MQqa05CFADlBo3gIIADANcGheABggAMCydAGdwS+EAhQNQAMAwOge4KSC7tunFTzRpTF/ISOU+Ptm4anwyXkA2wupAuoZbAlAangDg5iKQMLzD8NAwz+vJ7l3sWVKynwwLAI5DAZmxdut8l99eCjyjvK67as2lfqb3G2nTnY0UnMpmKpHRtKH8TlU4lOjWKGBnrY8NMECwsIFY/YCGAoAYgYCBqwpIQwYCKQQICgNDYUBZBaSBGYRSCPALDSS6F4ZRiASr+kNAX10jbQIDAs7Qsx49arR5AoJRDRgjHUR7siSYQNSUBGDCWUNUhHS0Dk5zmiQ1k8juKndJB5GgZDEv61FBjEiuOMjgCjACLNcK9VcaAgTz0VPi5C5MYLty3eYK3JnR5W7hFbahHOaYJfIbcGLZoDiJbv3aAW7/zi9v+uZHsghhUUDHPfwQt/e7NkBaJQQY9K/jobZl3tUvchDiYbCEIZMMGXS+HuqzZe9dyRtEvNi4W3n+/ten/3M28bv2y/1LGCpsXmFzKYk/hPiYkVP5R735+e0+MxtkFss2yLFwe51/eN6N61e6Om3uY8C8C5sLtsY/O1bt91xtKWxGrBpxDhxVGCC8yvn3Z4ft9+wX+zdhOMAo+C/tp+137w6MysdsAEysxTJD0YbctpEV/vnZC5ZBibwcaaxVvKSs790YFQBBOvWYWLnk7hwnUpHRQ6GcAUhBwACJbn2igZUXO/EOEW6TOeHGTdXPD4Pu0GpAlrrNgkTWk+vt8QObq9sqyKCi7MD4hDiyUH5R1uwHmqvbWoAyi7KQtesbh6vkDTvcQAbGE6mK94HozgY5x//qtfXJ1aDq2TH+V++A3rdqtXmGGDL2eaB19Jk1P0hGQY04B3FEFuBEfL56vDGfcdvBZBkw9nmkvchnZt8iRbKhoQosIQUhRspts8ovnnfEIIFhjKlCuguUuQkwM5C7K3J4xDYJDBBHQGo/f/mnUBUKFajTwmABGBdSz6gCsMq/JMU5+YlfM6v8h74EcJSK1K4SCJDK73oICDaiBgQBQ+BKLaS+S7AKDxEAkiUEoAYYglWB86kuL5Ds1RQYruqA7yamThrrxCd/I136UqLuZPNQmDH9qcgLfXKmX1Bx7jIn6xnIsPpPSAn8YeBkGyaW4QlaCwyBs2tISHCVWYR4iUAERdHUDa9hPTEGZ8NU01ZztVVeK3XSd98HvbcMr4yCvMo6gpQ4gAllWErILFkvWZ31oDLv7My8G9qxiOaUFgCxHAcIwQJbKsSp7fKIMe73tSCGSOgMMBqLECHGAJmAygDOeLApy7DNtTdCgHHyE6kuOsGQHLDJZnEAsjKrx9VsBRYWEI4FBvmA4zrCruzfAjEcI2Kg+TKAE1DjAo4SJjbo/LykJnvUmBjQ4agZe9VCaLNykhF1vrE4jnLCzrONbQNZsCHAAQYQGittp+u0LbBTHEPRWGGAq0KlTTXE9CFMj0Ur2TNzAJfsWFbYPlsKY8EGHEOlzSqhCtPPUetwYRoNAmQ645ynXOIsZG4xx97FYFCnNubv9r0ex0j32BbG9/Vnd3+0fdgDDqBkpLo7N3GA4ZDX+P373Lh+s8vGAWf5y30X6o/uZsejCeaCmdwgsyiG4xhf6f2n9nt375SPBYPGcQFDTWgFg560v9v7le7DyzFgrmASqFAFS8aCGjEco2t/9+wN/uzVLgmH/O/eA+0P725dnrANwYBToSr5172He6YL0urX86oN0j3frUFh2rNeGzCxkmSTD7T9YFQgTSsgz/OtdchuMRUAgJsCOMmt5MRBjq2vaqtunkaVm1jLD2nw9mmX41tOKZFbIZJZgZVtJeCwvZAbdcWIrLAhnBKQoTg+OVGL3k9yna4dkOHlkyNAhWqYxiqKW0aBYdXdnsyqHVqbilsJeM5eyS3aMyJHgKLyTUQSKk6W/vbTLNqFeRNFENSG/f0V5mEiI9bvzri9YEA4tSWNJB0DZAIqg8RgAABmlCMuDt+QhgEbA5DhacOZCy0NtTGMhhWUzQUrIpLTBF0rEZPdnuBfTl5xe8I5B+otjJex7vHQ9v8FrmggAbTAqh4hFSAKQNLOYeQvgYbCVvd0BNuojT6ChpX+45NmhxkHOADont+Ccho++bxRc0RK5ss2ALxWrTHNwrZFsVatqeZUW0z/SfcDM5UNrN4KOswkGwDEKsaXH2LzzoFtFePLPtBceBu2YxQMAcAqXzeh5+Dc0z1jz9pH14wcszW+7B3sblrJ6CdIEEFgS/ny3m26obBgYAhiHObb3v1uuxANUTgwKCEBr3mP2YfcjvIxK/hK2zT3ikDCDEhDUppXnIe8Oe4TBA7bo56TFDz8tGMAKrsrCWMEtSDCqCGgaOO4JRBMhVSSpbs2jdrRaQKOsVwg497vK905DADyUr647zKr9ZCXl49R2Nl62r7QbFNgXGqUhs1lOOUst6dsTmxYAChE2CxnLdtWE8NhBhMEKERhNGucy7Zp4xhlTm0ZW8RwhAEUx3AMjuOcSmDbIt7W5mySVosdyNFMDvk7RB20aa52DOAczWn7yDogEcAojgWQGANxxOPtx/ahdYNEwBGByPft+3nfulEiIJLoRxiPCPgoAeCIHl9s57ZPabsGVMSIkKfta+0O3bGAIVJMcpQH2l7u3+UQ4hgYzxDEeSKP2X26/aKkwAmmDQ2VlIQ4hqh49r02LGlg2ACULtycNXs9HNRiMAgGCVvv/oNSA4alFOdQ5xB16lyGGSXXaQJTs0OACgBuyVHnuRHgAYBDLhpH/Qg0xQ2g+mT8zsu1TpYhiUjWAFQSDBUhD3oPtd+2e4ucjAi2DOdreSC/cXebnGxgoFQARDIcT76VhckMxHLK7V/3jtbvv9pamMxKiFWJcaWMT+3evTzZ5pVglpBj/L3jhvm1zjBsKxWCLVaGbyLD9Z32X/Kr1zudk80QOMUMG0UrIYGiwoaKk1mK6uwVGJZ6bYVVnJqFmwOwcQAHUPMv/vu6t/5V20u++Y3/fPaLf+ufXxBmneOhDCSFIjoLEtBUw4AJJsksADgsmgfTSUmTBsDQqExuXQoaNAEGAMmOIUKYHJgJyISrY05bmUGGGyEO6BHJaTG8SjBBSQdjBkKIY6MaYg65B1QV4CEmRYPcCOVGcfMkqMqA7MI1p2t9S+YoBICqwcyW9AQlK7SzE24qwFGSgCGtc/ts1tL5dDOFqQnbEUnr9XgE+vR3NhL1jJPsv0Sm0ImRC/oNq/8fgezg3CMiKRxw0r7o3Xz7/aeff8SggCAyCsgozOnjs+eXT9n3DFlnA4A8sGUsGKkUo5fyxWYIYeP06NfPn//vkXf+ZWMIGaMxKdoYzdrt8+D188nzQVu/qQsjx1ko4qzZ64YBCAaByMnzi+9//E/cqjAKpzz3SuI5aL2NLRzWdDQnIwCkzQYUYEJqXgzFYHEO3spjljyxtqyDAhakFYB80OrSBEyH6Iw1WscATjX8MjKvMx4nwxljBNBEQ4cuInd4PeVTAbDS6SAxAJRhCliWcUEr20p2aAvENxYHccASx63NHuVggGMoGos2VZ9Fc/aoDTAccI6TRnZqAVAZ2ePDEI6CQXxY3Iaje7azdVgDZDdDJSJHt24qcEAjLA7osGiBvWrAjeVblW8AzBk6ZOUAI3KcZbuImAOi61NdmHZ6+ITOfBAsEz8u6JR17Y/t3rJAxAC0WDYv2V86753uN19liMpgHdDhb5y3zJ+52ixgxNj83P7aeVv1J3Y7B5g5EONjAMdA41LDGrJ5NP+y94T9SZ9rRzhDFgHr83fasfypXQJnptLATA553f7C2S36bSvfUJwaPjVfBnCsacEMFzBi/qP3xWZMJBABOEdXWLFtaAxhMJsnX2bcqt1jFAQIKUCdsSds19ykBgIUyScZrNOvJ7yCQ6sNySggJ/KUzerQNDCsCrINVZJvLrcchQMUTSSnLG0FT7VV7lgLiLJyfHNySkSHJxo5tBI4ilZAZVaAOm4/sf16y4AMUeXbhBPJKaPJKcIZjg7qzk9ywshcnmUnmvMQhrC+IlJOCGA6tBkdMe6gXIMWNc5Y3dGDfMZaz9fAjskHAAAGuVh9Mp4E0jzV5MRf7M4rl3HGltUNEhjCkhHTMJIEK+f8GoimAKKisWr+2WMYBJMUyAxAw9tegGKr/KRjyWPenbC5xZhN1So352Tb//7nvWZ4ZRTJxWBALLdM/erY17Uvt5SRqV+NFHL7QZ3n3TTONSiUYQCvMnkV5BW1xCP8zxIqnHchfIQHWaJy2ZyruoyXrdt2fXjvHDOvTAMDICpWRqGefa92c0MZoQo1rJDXMyzVHcm6BgUZVsCrJK9+5XFb7r67zQBjxcIIAFa0GAhWtzM4BoVRx4apOZCLOloVYUiASjunsbCzXBFAFGh6C+rF4hVYsWiS1ejYEjwvbNktVkMPolW7fQCm28TIwZXoFHQ5J82D4QkbijZifqnbIN3vwgIVLoEHsiS1+jX55mxQh67ctExir1JxJALKQFMYj6bUGWuKmYfVbKLTbltY9rvtBFCXLrNF1gVKFACw0eFP6or3/33+6f9UdeOGlh9/9/pn/qnU/bBBUzyDSX9Lsw4TM+MTuHTZc961wAURgWg2QHgZnDrzYN341r9tffpvqc5Of+IPMBKoEtlsEaA4HIaTUGgMUmsuWYoheTDr+rZtLHt55BK2gWAi01GJiBvW22Uc5mfee9wsSvKtDlBEYnt6e377rfv/a3w1kMINAAim4mKe6zLd4m5AAgxhRPM7fujd57ZKlPYN25bbhKlQbEWCQQjAAAgG0V61H9t73AISDQjxXXvZyEZLrZVO9FYimB1cI+MYR3NQLQxf1hxDw7A8miM5OR/96L+uuP/AjkQIDDIcYWh75eHXbsfteRhghFFW/jG/4noWFFvJC9ssV5QtmmB8nbVX7bqaW4Zj0IALARjiOmVv2EG1ZeFAMb7Os/Hi4C8sUdW+iUaJQEIAbsRTOx8ZY/97/z53/79avpXH3zqvmVJ5jRAeDAAMJumYEor6fpg4tcPaTsGozdSqJUCwES+D6npfidi64KLxDDSwRFuQgWIZjpFsK3hsahb3MTkcxkZxMCPp45mGWg5hUDE2WJrr9XYhGIRzvH13u1s7pHAUjgBkuIXHOrl9x7uz2zUOChuSAVgYwqiz9i3vkNtHybfba5sYB7blYFQyAuSsvWiUN8NZmpfaAS0QBoJBDjBkgnHCnLOX7JrasmJsPGIZANtay6wEluyFdvXaptJetLPRDLan/QgVezoEFkBO5Hs9CAAYFxFqI9YWRCgjjlRqIwRgLqxL40qsXOEIAMQ0UfZx/GRkGKZ03RpA2DACtkETgMQQGzQHiTH9KMjEDQEAo86JpMHfAMUNGWCIiJTU0xCjzl91sCgnMVMA4oYAUEskosTF9KyWMbX5pHCU6e7/lk8msbE28vprDwmAGmRDKjKzTB8YAIHGqnaXkR4CAKq5jY6SS/2UDCyjscbZknX6RF1ETcvZCPPf2i/rhAEvN3HBjyNoMm+GC+HICCSjQJdlQEZzhKj4kU9mJYA0V8CFSQwVlE8/ADQmRza6+hqrWw4wtV6geYcZaShTvus1aZ4P37p7IB6WcXQGlvEakeBHKBu/r73foyI0I2JAbmGQN/Tn1+v/d20Ls/fzrv1KFhBXOHz5euklR18XBoBAc818zFu/aebjRVkEsJx+t2f/e0FEIq1lHPia/V+GTuYKiVjRAFB8QuKKz579H2ffLVAIBPKnFnjLaiqalYxhhBOIhDiEkXytfOBn/6X/nBE1T8UZ05oDGMJMpwgQIMGT7civ9O41CUm6MAQb66j+yZx8vdYK29u+6+4fylC5LBrY43/fk/8CAiCocdnx2T754+Y/Ia6B2fHGa77wFwAAoLUC7/0RN353GJXLys0gQAVzTNorr/vqX3nppUEAQPnTrtDHLk3FMgQ62xTH5GYIhADNmXf7/J+5qApEwsxyaNULbUVgYj6yIKN2Te2AXI2x5A8IUBE5bMVzjAcAqjWB7KHQVEQdoJVX5XOOBKTmZIQju0VgKpLuw6kQSat4hs4BwGm+YOSYFKKCaEAhg2uIBiS/FM9Jrou8FiczE21JxxnwpDlBVYRIaSM22FxFAQBMzTHG+dpsAEQa9/K7sbZziojLiO83ZPJWc1gHmxEmtZgSKZFp2ZD0UibpBYxsjTpLMaWSUF12LTwb/UKprMhlxDOsUo/KHVTLKEw+WLf5i+ksy4fNhL1iqV3JA4tKjyQZR8oWQNQQCANQfQuQ1YpHliDgXBpr1FudxBjHs9J5jGCBdUDBci7tmE+1Th/PoxknzSrXibFCGHMmeZ+BfYiENuhsTZ31oyRd3ChUay+zzfyeDqbi9/vh/mdD5W36CMY8TPZAosxxgzKHIKgxebTFuy3aKlEdx1khUlEI5wKJcZAda5U1UABgar/XHMIA0ON8cSILy8Q7dBP3aEEimcJcRZrVxln3x2QxhG2Hm1O5DnflDrE0xEggzOOSo7nbgWLAXOKKIuNtnLAjtg+gQi6L9lEVigQDGAhteFaqGk2p02uq1DhjfwtuoMKMaKCYESOzOCSnNOFVY5C0aDNZUyFpj+6qEBdZ5v6bY9YwCiPudrDEOG/tu/63FnWtFviAdmrVmjTrkv/rgpBMNFESMEZ3qaUJADKZgQIqs8rvqtkIDEVQmBIBLIEE1ymTiWdVi/hkYhKLo8oWUmdYaCwAcuPFZZup1pzr1PnplAHAZoacyFowNcCwWV3pCr2kciftyh1Y1IHGAW2u++3udyBziSsQZVzXcr1as1nbaA+25PKKB7S4wmX0eN3bpXnVjs5EAKC016wHCFyhtpzXvbZ2KlnKYaELAAYAZ9FWA7bNdiV4qxy3fdVM1U5zzvarSbKkHo/WbsbYQP4Hf44AsJPNqrlHwDO/s22aT3Vy1RbxAg1m6NKyCi4GIABaihjebYRKexjCgMwCeNgBYQC7igpqw4tNdrVW6iSrLFnikUp5vcloyszp0iADwUDDxwSAEUYIV9cEAC0CoovRBKJJMEY0HQuhEEz6AwEgAAsNU6ZPM4HkwGoIwPRV0kwYFAaFpfQHNIoLwaAwSOVH10SE5VwHXAAaW1acpMliyFGMtw9klYMNgoEhRZxeADDmpoWkqX6uEgIQzPkkL8OaYKhtnFwnFlub580BAOJGwZNedWUYDQJizBCoAKRCxGoVBqBIiqNUyJSaOY9wVCkCArAADBp1QIE7EQsDA/UodRgQAoBtgVBxEveQyjYBs3F0+MvbMzkjkqg555P6hNrEZJqiUIRBkfXYVhcuEdDKTjv8uo4hREoOa6wJIQCAQgAAJCMnI0OAJSuHpluADZZLy6V+6mOrh2r6AZFMfS2CggGAkUig5gmyUnRkCPOwkdUlrIfLtwbAJSgAAYBgJGxBV0PbKzVjwTSn3HYy57cA);
+  --p-spacing: 1.125rem;
   --pdf-background: oklch(23.00% 0.00875 265);
   --pdf-page-background: oklch(23.00% 0.00875 265);
   --pdf-shadow: none;
   --pdf-sidebar-background: oklch(23.00% 0.00875 265);
-  --pdf-spread-shadow: none;
   --pdf-thumbnail-shadow: 0 0 0 1px oklch(100% 0.05 265 / 0.0625);
-  --pill-background: oklch(100% 0.05 265 / 0.05);
-  --pill-background-hover: oklch(100% 0.05 265 / 0.05);
-  --pill-border-color: oklch(100% 0.05 265 / 0.0625);
-  --pill-border-color-hover: oklch(36.25% 0.01125 265);
-  --pill-color: oklch(71.25% 0.01125 265);
-  --pill-color-hover: oklch(71.25% 0.01125 265);
-  --pill-color-remove: oklch(52.50% 0.01750 265);
-  --pill-color-remove-hover: white;
-  --pill-radius: 18px;
-  --pill-weight: 490;
-  --prompt-backdrop-filter: blur(12px) saturate(1.125) brightness(1);
-  --prompt-background: oklch(27.75% 0.0125 265 / 0.625);
-  --prompt-border-color: oklch(100% 0.04 265 / 0.125);
-  --prompt-input-height: 48px;
-  --radius-l: 18px;
-  --radius-m: 12px;
-  --radius-ml: 14px;
-  --radius-prompt: 24px;
-  --radius-s: 8px;
-  --radius-settings: 28px;
-  --radius-sm: 10px;
-  --radius-xl: 20px;
-  --radius-xs: 6px;
-  --radius-xxl: 22px;
+  --popover-font-size: 16px;
   --raised-background: color-mix(in srgb, oklch(34.50% 0.01125 265) 65%, transparent) linear-gradient(oklch(34.50% 0.01125 265), color-mix(in srgb, oklch(34.50% 0.01125 265) 65%, transparent));
   --raised-blur: blur(8px) saturate(1.125) brightness(1);
-  --ribbon-background: transparent;
-  --ribbon-background-collapsed: transparent;
-  --ribbon-padding: 8px 0px 12px 8px;
-  --ribbon-width: 56px;
+  --right-margin-delay: 150ms;
   --scrollbar-active-thumb-bg: oklch(36.25% 0.01125 265);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
   --scrollbar-radius: 18px;
   --scrollbar-thumb-bg: oklch(31.25% 0.01125 265);
   --search-clear-button-color: oklch(52.50% 0.01750 265);
   --search-icon-color: oklch(52.50% 0.01750 265);
-  --search-icon-size: 17px;
   --search-result-background: oklch(from oklch(23.75% 0.00250 265) l 0.01125 h / 0.375);
-  --secondary: var(--text-accent, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%));
   --setting-group-heading-color: oklch(63.75% 0.01750 265);
   --setting-group-heading-size: 18px;
   --setting-group-heading-weight: 520;
@@ -526,6 +925,7 @@ export const theme: ThemeData = {
   --shiki-active-tab-border-color: oklch(71.25% 0.01125 265);
   --shiki-code-background: oklch(100% 0.05 265 / 0.05);
   --shiki-code-block-border-radius: 6px;
+  --shiki-code-block-spacing: 1rem;
   --shiki-code-comment: oklch(52.50% 0.01750 265);
   --shiki-code-function: #90c764;
   --shiki-code-important: #fc9263;
@@ -536,32 +936,21 @@ export const theme: ThemeData = {
   --shiki-code-string: #eacb73;
   --shiki-code-value: #c187d3;
   --shiki-gutter-border-color: oklch(100% 0.05 265 / 0.0625);
+  --shiki-gutter-border-width: 1px;
   --shiki-gutter-text-color: oklch(52.50% 0.01750 265);
   --shiki-gutter-text-color-highlight: oklch(71.25% 0.01125 265);
   --shiki-highlight-green: rgba(142, 197, 98, 0.5);
   --shiki-highlight-green-background: rgba(142, 197, 98, 0.1);
   --shiki-highlight-neutral: oklch(71.25% 0.01125 265);
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
   --shiki-highlight-red: rgba(242, 100, 106, 0.5);
   --shiki-highlight-red-background: rgba(242, 100, 106, 0.1);
   --shiki-terminal-dots-color: oklch(52.50% 0.01750 265);
-  --sidebar-left-toggle-inner-width: 12%;
-  --sidebar-right-toggle-inner-width: 12%;
-  --slider-thumb-border-color: oklch(36.25% 0.01125 265);
-  --slider-thumb-border-width: 0;
-  --slider-thumb-height: 12px;
-  --slider-thumb-radius: 12px;
-  --slider-thumb-width: 12px;
-  --slider-thumb-y: -3px;
-  --slider-track-background: oklch(100% 0.04 265 / 0.125);
-  --slider-track-height: 20px;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
   --stacked-shadow-color: oklch(0 0 0 / 0.1875);
-  --status-bar-background: transparent;
-  --status-bar-border-color: oklch(100% 0.05 265 / 0.0625);
-  --status-bar-border-width: 0;
-  --status-bar-radius: 18px 0 0 18px;
-  --status-bar-text-color: oklch(71.25% 0.01125 265);
   --strikethrough-color: oklch(52.50% 0.01750 265);
   --suggestion-background: oklch(23.00% 0.00875 265);
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
   --sync-avatar-color-1: #ee6167;
   --sync-avatar-color-2: #fc9263;
   --sync-avatar-color-3: #eacb73;
@@ -572,17 +961,16 @@ export const theme: ThemeData = {
   --sync-avatar-color-8: #ff98c1;
   --tab-background-active: oklch(23.00% 0.00875 265);
   --tab-close-bg: oklch(38.25% 0.01125 265 / 0.875);
-  --tab-container-background: transparent;
   --tab-divider-color: oklch(36.25% 0.01125 265);
+  --tab-font-size: 13px;
   --tab-font-weight: 420;
-  --tab-max-width: 240px;
   --tab-outline-color: oklch(100% 0.05 265 / 0.0625);
-  --tab-outline-width: 0;
   --tab-radius: 8px;
   --tab-right-fade: linear-gradient(to left, oklch(31.25% 0.01406 265) 80%, transparent);
   --tab-right-fade-alt: linear-gradient(to left, oklch(28.5% 0.01125 265) 80%, transparent);
   --tab-sidebar-bg: oklch(100% 0.05 265 / 0.0625);
   --tab-sidebar-container-bg: oklch(100% 0.06 265 / 0.025);
+  --tab-stacked-font-size: 13px;
   --tab-stacked-font-weight: 520;
   --tab-stacked-header-width: 56px;
   --tab-stacked-pane-width: 43.75rem;
@@ -590,6 +978,7 @@ export const theme: ThemeData = {
   --tab-switcher-background: oklch(27.50% 0.01125 265);
   --tab-switcher-menubar-background: linear-gradient(to top, oklch(27.50% 0.01125 265), transparent);
   --tab-switcher-preview-radius: 20px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(192, 76%, 38%);
   --tab-text-color: oklch(63.75% 0.01750 265);
   --tab-text-color-active: oklch(93.25% 0.00250 265);
@@ -597,12 +986,16 @@ export const theme: ThemeData = {
   --tab-text-color-focused-active: oklch(93.25% 0.00250 265);
   --tab-text-color-focused-active-current: oklch(93.25% 0.00250 265);
   --tab-text-color-focused-highlighted: color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%);
-  --tab-width: 240px;
   --table-add-button-border-color: oklch(100% 0.05 265 / 0.0625);
+  --table-add-button-border-width: 1px;
   --table-border-color: oklch(100% 0.075 265 / 0.1);
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
   --table-drag-handle-background-active: hsl(192, 76%, 38%);
   --table-drag-handle-color: oklch(52.50% 0.01750 265);
+  --table-drag-handle-color-active: white;
   --table-header-border-color: oklch(100% 0.075 265 / 0.1);
+  --table-header-border-width: 1px;
   --table-header-color: oklch(63.75% 0.01750 265);
   --table-header-size: 0.90625em;
   --table-header-weight: 520;
@@ -610,7 +1003,9 @@ export const theme: ThemeData = {
   --table-row-alt-background: oklch(100% 0.075 265 / 0.015);
   --table-row-alt-background-hover: oklch(100% 0.075 265 / 0.015);
   --table-row-bg: oklch(100% 0.075 265 / 0.015);
+  --table-row-last-border-width: 1px;
   --table-selection: hsla(192, 76%, 38%, 0.1);
+  --table-selection-blend-mode: lighten;
   --table-selection-border-color: hsl(192, 76%, 38%);
   --table-text-size: 0.90625em;
   --table-text-weight: 420;
@@ -620,11 +1015,8 @@ export const theme: ThemeData = {
   --tag-border-color-hover: hsla(192, 76%, 38%, 0.15);
   --tag-color: color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%);
   --tag-color-hover: color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%);
-  --tag-padding-x: 0.6875em;
-  --tag-padding-y: 0.3125em;
   --tag-size: 0.8em;
   --tag-weight: 490;
-  --tertiary: var(--text-accent-hover, color-mix(in oklab, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%), transparent 8%));
   --text-accent: color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%);
   --text-accent-hover: color-mix(in oklab, color-mix(in oklab, hsl(192, 76%, 38%) 64%, #fff 36%), transparent 8%);
   --text-error: #ee6167;
@@ -637,29 +1029,14 @@ export const theme: ThemeData = {
   --text-selection: oklab(from hsl(192, 76%, 38%) l a b / 0.25);
   --text-success: #90c764;
   --text-warning: #fc9263;
-  --textHighlight: var(--text-highlight-bg, oklch(from rgb(234, 203, 115) 0.8 calc(c * 1.375) h / 0.33));
-  --titleFont: var(--font-text, "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --titlebar-background: transparent;
-  --titlebar-background-focused: transparent;
-  --titlebar-border-color: oklch(100% 0.05 265 / 0.0625);
-  --titlebar-height: 36px;
-  --titlebar-text-color: oklch(100% 0.02 265 / 0.35);
-  --titlebar-text-color-focused: oklch(71.25% 0.01125 265);
-  --titlebar-text-weight: 620;
-  --toggle-border-width: 4px;
-  --toggle-gradient: linear-gradient(to bottom, hsl(192, 76%, 38%) -30%, color-mix(in oklab, oklab(from hsl(192, 76%, 38%) l a b / 0.25) 30%, transparent 70%) 180%);
-  --toggle-s-border-width: 4px;
-  --toggle-s-thumb-height: 12px;
-  --toggle-s-thumb-width: 12px;
-  --toggle-s-width: 36px;
-  --toggle-thumb-height: 12px;
-  --toggle-thumb-width: 12px;
-  --toggle-track-bg: oklch(100% 0.02 265 / 0.2);
-  --toggle-width: 44px;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
   --traffic-lights-offset-x: 56px;
   --traffic-lights-offset-y: 56px;
-  --trans-black-00: oklch(0 0 0 / 0.375);
-  --trans-black-10: oklch(0 0 0 / 0.1875);
   --trans-faint-00: oklch(100% 0.075 265 / 0.015);
   --trans-faint-05: oklch(100% 0.06 265 / 0.025);
   --trans-faint-10: oklch(100% 0.05 265 / 0.05);
@@ -677,56 +1054,7 @@ export const theme: ThemeData = {
   --trans-strong-40: oklch(from oklch(34.50% 0.01125 265) l 0.01125 h / 0.5);
   --trans-white-00: oklch(93.25% 0 0 / 0.75);
   --trans-white-10: oklch(93.25% 0 0 / 0.625);
-  --vault-profile-color: oklch(63.75% 0.01750 265);
-  --vault-profile-color-hover: oklch(71.25% 0.01125 265);
-  --vault-profile-font-size: 18px;
-  --vault-profile-font-weight: 420;
-  --vl-ease-out: cubic-bezier(0.3, 0.75, 0, 1);
-  --vl-layout-padding: 8px;
   --warning-gradient: linear-gradient(to top, #ee6167 -30%, oklch(from oklch(27.50% 0.01125 265) l 0.01125 h / 0.5) 180%);
-  --workspace-border-color: oklch(100% 0.05 265 / 0.08125);
-  --quartz-icon-color: currentColor;
-}
-
-html[saved-theme="dark"] body {
-  background-color: var(--background-primary);
-  color: var(--text-normal);
-}
-
-html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgba(0, 0, 0, 0);
-  color: oklch(0.85 0.01125 265);
-}
-
-html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: rgba(0, 0, 0, 0);
-  color: oklch(0.85 0.01125 265);
-}
-
-html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
-  background-color: rgba(0, 0, 0, 0);
-  color: oklch(0.85 0.01125 265);
-}
-
-html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
-  border-right-color: oklch(1 0.05 265 / 0.0625);
-  border-right-width: 0px;
-}
-
-html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgba(0, 0, 0, 0);
-  border-left-color: oklch(1 0.05 265 / 0.0625);
-  color: oklch(0.85 0.01125 265);
-}`,
-    typography: `html[saved-theme="dark"] body .markdown-rendered > h1 {
-  --bold-modifier: 200;
-  --font-weight: 330;
-  --heading-margin-start: 1.375em;
-  --heading-spacing: round(nearest, 2.375em, 2px);
-  --hr-spacing: 2.25rem;
-  --left-margin-delay: 150ms;
-  --p-spacing: 1.125rem;
-  --right-margin-delay: 150ms;
   background-color: oklch(1 0.075 265 / 0.1);
   border-bottom-color: oklch(0.895 0.0025 265);
   border-bottom-left-radius: 22px;
@@ -740,13 +1068,13 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   border-top-left-radius: 22px;
   border-top-right-radius: 22px;
   border-top-width: 0px;
-  color: oklch(0.895 0.0025 265);
+  color: var(--h1-color, oklch(0.895 0.0025 265));
   content: "";
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-size: 32px;
-  font-weight: 330;
-  letter-spacing: -0.32px;
-  line-height: 38.4px;
+  font-family: var(--h1-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h1-size, 32px);
+  font-weight: var(--font-weight, 330);
+  letter-spacing: var(--h1-letter-spacing, -0.32px);
+  line-height: var(--h1-line-height, 38.4px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -758,15 +1086,14 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
-  color: oklch(0.9325 0.0025 265);
+  color: var(--bold-color, oklch(0.9325 0.0025 265));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 670;
   outline: oklch(0.9325 0.0025 265) none 0px;
   text-decoration-color: oklch(0.9325 0.0025 265);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
-  color: oklch(0.85 0.01125 265);
+  color: var(--italic-color, oklch(0.85 0.01125 265));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 420;
   outline: oklch(0.85 0.01125 265) none 0px;
@@ -774,7 +1101,7 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
-  color: oklch(0.85 0.01125 265);
+  color: var(--italic-color, oklch(0.85 0.01125 265));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 420;
   outline: oklch(0.85 0.01125 265) none 0px;
@@ -782,16 +1109,15 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
-  color: oklch(0.9325 0.0025 265);
+  color: var(--bold-color, oklch(0.9325 0.0025 265));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 670;
   outline: oklch(0.9325 0.0025 265) none 0px;
   text-decoration-color: oklch(0.9325 0.0025 265);
 }
 
 html[saved-theme="dark"] body .text-highlight {
-  background-color: oklch(0.8 0.155806 90.474 / 0.33);
-  color: oklch(0.9325 0.0025 265);
+  background-color: var(--text-highlight-bg, oklch(0.8 0.155806 90.474 / 0.33));
+  color: var(--text-normal, oklch(0.9325 0.0025 265));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 420;
   outline: oklch(0.9325 0.0025 265) none 0px;
@@ -799,7 +1125,7 @@ html[saved-theme="dark"] body .text-highlight {
 }
 
 html[saved-theme="dark"] body del {
-  color: oklch(0.525 0.0175 265);
+  color: var(--strikethrough-color, oklch(0.525 0.0175 265));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 420;
   outline: oklch(0.525 0.0175 265) none 0px;
@@ -807,7 +1133,7 @@ html[saved-theme="dark"] body del {
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
   font-weight: 490;
 }
 
@@ -818,42 +1144,42 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(23, 141, 171);
+  background-color: var(--checkbox-color, rgb(23, 141, 171));
   border-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body p {
-  color: oklch(0.7125 0.01125 265);
+  color: var(--text-muted, oklch(0.7125 0.01125 265));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 420;
   outline: oklch(0.7125 0.01125 265) none 0px;
   text-decoration-color: oklch(0.7125 0.01125 265);
 }`,
     links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
-  color: oklab(0.74221 -0.0506973 -0.0432923);
+  color: var(--link-external-color, oklab(0.74221 -0.0506973 -0.0432923));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 420;
+  font-weight: var(--link-weight, 420);
   outline: oklab(0.74221 -0.0506973 -0.0432923) none 0px;
   text-decoration-color: oklab(0.74221 -0.0506973 -0.0432923);
   transition: opacity 0.15s ease-in-out;
 }
 
 html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
-  color: oklab(0.74221 -0.0506973 -0.0432923);
+  color: var(--link-color, oklab(0.74221 -0.0506973 -0.0432923));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 420;
+  font-weight: var(--link-weight, 420);
   outline: oklab(0.74221 -0.0506973 -0.0432923) none 0px;
   text-decoration-color: oklab(0.74221 -0.0506973 -0.0432923);
   transition: opacity 0.15s ease-in-out;
 }
 
 html[saved-theme="dark"] body a.internal-link.broken {
-  color: oklch(0.74221 0.0666667 220.495 / 0.75);
+  color: var(--link-unresolved-color, oklch(0.74221 0.0666667 220.495 / 0.75));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 420;
+  font-weight: var(--link-weight, 420);
   outline: oklch(0.74221 0.0666667 220.495 / 0.75) none 0px;
   text-decoration: rgba(23, 141, 171, 0.3);
-  text-decoration-color: rgba(23, 141, 171, 0.3);
+  text-decoration-color: var(--link-unresolved-decoration-color, rgba(23, 141, 171, 0.3));
   transition: opacity 0.15s ease-in-out;
 }`,
     lists: `html[saved-theme="dark"] body dd {
@@ -880,7 +1206,7 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-color: oklch(0.85 0.01125 265);
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
-  color: oklch(0.525 0.0175 265);
+  color: var(--text-faint, oklch(0.525 0.0175 265));
 }
 
 html[saved-theme="dark"] body blockquote {
@@ -896,25 +1222,25 @@ html[saved-theme="dark"] body blockquote {
 html[saved-theme="dark"] body table {
   color: oklch(0.85 0.01125 265);
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  margin-top: 18px;
+  margin-top: var(--heading-spacing, 18px);
   width: 700px;
 }
 
 html[saved-theme="dark"] body tbody tr:nth-child(odd) {
-  background-color: oklch(1 0.075 265 / 0.015);
+  background-color: var(--table-row-alt-background, oklch(1 0.075 265 / 0.015));
 }
 
 html[saved-theme="dark"] body td {
   border-bottom-color: oklch(0.85 0.01125 265);
   border-bottom-width: 0px;
   border-left-color: oklch(0.85 0.01125 265);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: oklch(0.85 0.01125 265);
   border-right-width: 0px;
   border-top-color: oklch(0.85 0.01125 265);
   border-top-width: 0px;
-  color: oklch(0.85 0.01125 265);
-  font-weight: 420;
+  color: var(--table-text-color, oklch(0.85 0.01125 265));
+  font-weight: var(--font-normal, 420);
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -923,18 +1249,18 @@ html[saved-theme="dark"] body th {
   border-bottom-color: oklch(1 0.075 265 / 0.1);
   border-bottom-width: 2px;
   border-left-color: oklch(0.6375 0.0175 265);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: oklch(0.6375 0.0175 265);
   border-right-width: 0px;
   border-top-color: oklch(0.6375 0.0175 265);
-  border-top-width: 0px;
-  color: oklch(0.6375 0.0175 265);
-  font-weight: 520;
+  border-top-width: var(--table-header-border-width, 0px);
+  color: var(--table-header-color, oklch(0.6375 0.0175 265));
+  font-weight: var(--table-header-weight, 520);
   padding-left: 12px;
   padding-right: 12px;
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: oklch(1 0.05 265 / 0.05);
+  background-color: var(--code-background, oklch(1 0.05 265 / 0.05));
   border-bottom-color: oklch(0.85 0.01125 265);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -943,13 +1269,13 @@ html[saved-theme="dark"] body th {
   border-top-color: oklch(0.85 0.01125 265);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  color: oklch(0.85 0.01125 265);
+  color: var(--code-normal, oklch(0.85 0.01125 265));
   padding-left: 6px;
   padding-right: 6px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: oklch(1 0.05 265 / 0.05);
+  background-color: var(--code-background, oklch(1 0.05 265 / 0.05));
   border-bottom-color: oklch(0.85 0.01125 265);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -992,13 +1318,13 @@ html[saved-theme="dark"] body figure {
 
 html[saved-theme="dark"] body img {
   border-bottom-color: oklch(0.895 0.0025 265);
-  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: var(--radius-xs, 10px);
   border-bottom-right-radius: 10px;
   border-left-color: oklch(0.895 0.0025 265);
   border-radius: 10px;
   border-right-color: oklch(0.895 0.0025 265);
   border-top-color: oklch(0.895 0.0025 265);
-  border-top-left-radius: 10px;
+  border-top-left-radius: var(--radius-xs, 10px);
   border-top-right-radius: 10px;
 }
 
@@ -1014,7 +1340,7 @@ html[saved-theme="dark"] body video {
   border-top-right-radius: 10px;
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: oklab(0.2525 -0.000871557 -0.00996195);
+  background-color: var(--background-primary-alt, oklab(0.2525 -0.000871557 -0.00996195));
   border-bottom-color: oklch(0.7125 0.01125 265);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1067,7 +1393,7 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-top-width: 0px;
   margin-left: -27px;
   transition: 0.21s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  width: 18px;
+  width: var(--checkbox-size, 18px);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
@@ -1635,12 +1961,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
   border-left-color: rgb(89, 177, 228);
   border-right-color: rgb(89, 177, 228);
   border-top-color: rgb(89, 177, 228);
-  color: rgb(89, 177, 228);
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(89, 177, 228);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(89, 177, 228));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {
@@ -1649,9 +1974,8 @@ html[saved-theme="dark"] body .callout > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
-  --callout-color: 100, 208, 202;
+  --callout-color: var(--callout-summary, 100, 208, 202);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(100, 208, 202, 0.063), rgba(100, 208, 202, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(100, 208, 202, 0.063), rgba(100, 208, 202, 0.114));
   border-bottom-color: rgba(100, 208, 202, 0.24);
   border-bottom-left-radius: 10px;
@@ -1661,7 +1985,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   border-top-color: rgba(100, 208, 202, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
@@ -1670,12 +1994,11 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   border-left-color: rgb(89, 177, 228);
   border-right-color: rgb(89, 177, 228);
   border-top-color: rgb(89, 177, 228);
-  color: rgb(89, 177, 228);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(89, 177, 228);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(89, 177, 228));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-content {
@@ -1684,9 +2007,8 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
-  --callout-color: 255, 152, 193;
+  --callout-color: var(--callout-bug, 255, 152, 193);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(255, 152, 193, 0.063), rgba(255, 152, 193, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(255, 152, 193, 0.063), rgba(255, 152, 193, 0.114));
   border-bottom-color: rgba(255, 152, 193, 0.24);
   border-bottom-left-radius: 10px;
@@ -1696,7 +2018,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
   border-top-color: rgba(255, 152, 193, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
@@ -1705,12 +2027,11 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   border-left-color: rgb(89, 177, 228);
   border-right-color: rgb(89, 177, 228);
   border-top-color: rgb(89, 177, 228);
-  color: rgb(89, 177, 228);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(89, 177, 228);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(89, 177, 228));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
@@ -1719,9 +2040,8 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
-  --callout-color: 242, 100, 106;
+  --callout-color: var(--callout-error, 242, 100, 106);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(242, 100, 106, 0.063), rgba(242, 100, 106, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(242, 100, 106, 0.063), rgba(242, 100, 106, 0.114));
   border-bottom-color: rgba(242, 100, 106, 0.24);
   border-bottom-left-radius: 10px;
@@ -1731,7 +2051,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
   border-top-color: rgba(242, 100, 106, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
@@ -1740,12 +2060,11 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   border-left-color: rgb(89, 177, 228);
   border-right-color: rgb(89, 177, 228);
   border-top-color: rgb(89, 177, 228);
-  color: rgb(89, 177, 228);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(89, 177, 228);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(89, 177, 228));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content {
@@ -1754,9 +2073,8 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
-  --callout-color: 189, 136, 215;
+  --callout-color: var(--callout-example, 189, 136, 215);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(189, 136, 215, 0.063), rgba(189, 136, 215, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(189, 136, 215, 0.063), rgba(189, 136, 215, 0.114));
   border-bottom-color: rgba(189, 136, 215, 0.24);
   border-bottom-left-radius: 10px;
@@ -1766,7 +2084,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
   border-top-color: rgba(189, 136, 215, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
@@ -1775,12 +2093,11 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   border-left-color: rgb(89, 177, 228);
   border-right-color: rgb(89, 177, 228);
   border-top-color: rgb(89, 177, 228);
-  color: rgb(89, 177, 228);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(89, 177, 228);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(89, 177, 228));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-content {
@@ -1789,9 +2106,8 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
-  --callout-color: 242, 100, 106;
+  --callout-color: var(--callout-fail, 242, 100, 106);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(242, 100, 106, 0.063), rgba(242, 100, 106, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(242, 100, 106, 0.063), rgba(242, 100, 106, 0.114));
   border-bottom-color: rgba(242, 100, 106, 0.24);
   border-bottom-left-radius: 10px;
@@ -1801,7 +2117,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
   border-top-color: rgba(242, 100, 106, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
@@ -1810,12 +2126,11 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   border-left-color: rgb(89, 177, 228);
   border-right-color: rgb(89, 177, 228);
   border-top-color: rgb(89, 177, 228);
-  color: rgb(89, 177, 228);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(89, 177, 228);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(89, 177, 228));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-content {
@@ -1824,9 +2139,8 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
-  --callout-color: 89, 177, 228;
+  --callout-color: var(--callout-info, 89, 177, 228);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(89, 177, 228, 0.063), rgba(89, 177, 228, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(89, 177, 228, 0.063), rgba(89, 177, 228, 0.114));
   border-bottom-color: rgba(89, 177, 228, 0.24);
   border-bottom-left-radius: 10px;
@@ -1836,7 +2150,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
   border-top-color: rgba(89, 177, 228, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
@@ -1845,12 +2159,11 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   border-left-color: rgb(89, 177, 228);
   border-right-color: rgb(89, 177, 228);
   border-top-color: rgb(89, 177, 228);
-  color: rgb(89, 177, 228);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(89, 177, 228);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(89, 177, 228));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
@@ -1859,9 +2172,8 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
-  --callout-color: 89, 177, 228;
+  --callout-color: var(--callout-default, 89, 177, 228);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(89, 177, 228, 0.063), rgba(89, 177, 228, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(89, 177, 228, 0.063), rgba(89, 177, 228, 0.114));
   border-bottom-color: rgba(89, 177, 228, 0.24);
   border-bottom-left-radius: 10px;
@@ -1871,7 +2183,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
   border-top-color: rgba(89, 177, 228, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
@@ -1880,12 +2192,11 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   border-left-color: rgb(89, 177, 228);
   border-right-color: rgb(89, 177, 228);
   border-top-color: rgb(89, 177, 228);
-  color: rgb(89, 177, 228);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(89, 177, 228);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(89, 177, 228));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
@@ -1894,9 +2205,8 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
-  --callout-color: 252, 146, 99;
+  --callout-color: var(--callout-question, 252, 146, 99);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(252, 146, 99, 0.063), rgba(252, 146, 99, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(252, 146, 99, 0.063), rgba(252, 146, 99, 0.114));
   border-bottom-color: rgba(252, 146, 99, 0.24);
   border-bottom-left-radius: 10px;
@@ -1906,7 +2216,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
   border-top-color: rgba(252, 146, 99, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
@@ -1915,12 +2225,11 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   border-left-color: rgb(89, 177, 228);
   border-right-color: rgb(89, 177, 228);
   border-top-color: rgb(89, 177, 228);
-  color: rgb(89, 177, 228);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(89, 177, 228);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(89, 177, 228));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-content {
@@ -1929,9 +2238,8 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
-  --callout-color: 150, 150, 160;
+  --callout-color: var(--callout-quote, 150, 150, 160);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(150, 150, 160, 0.063), rgba(150, 150, 160, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(150, 150, 160, 0.063), rgba(150, 150, 160, 0.114));
   border-bottom-color: rgba(150, 150, 160, 0.24);
   border-bottom-left-radius: 10px;
@@ -1941,7 +2249,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
   border-top-color: rgba(150, 150, 160, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.7125 0.01125 265);
+  color: var(--text-normal, oklch(0.7125 0.01125 265));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
@@ -1950,12 +2258,11 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   border-left-color: rgb(89, 177, 228);
   border-right-color: rgb(89, 177, 228);
   border-top-color: rgb(89, 177, 228);
-  color: rgb(89, 177, 228);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(89, 177, 228);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(89, 177, 228));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content {
@@ -1964,9 +2271,8 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
-  --callout-color: 142, 197, 98;
+  --callout-color: var(--callout-success, 142, 197, 98);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(142, 197, 98, 0.063), rgba(142, 197, 98, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(142, 197, 98, 0.063), rgba(142, 197, 98, 0.114));
   border-bottom-color: rgba(142, 197, 98, 0.24);
   border-bottom-left-radius: 10px;
@@ -1976,7 +2282,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
   border-top-color: rgba(142, 197, 98, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
@@ -1985,12 +2291,11 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   border-left-color: rgb(89, 177, 228);
   border-right-color: rgb(89, 177, 228);
   border-top-color: rgb(89, 177, 228);
-  color: rgb(89, 177, 228);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(89, 177, 228);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(89, 177, 228));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-content {
@@ -1999,9 +2304,8 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
-  --callout-color: 100, 208, 202;
+  --callout-color: var(--callout-tip, 100, 208, 202);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(100, 208, 202, 0.063), rgba(100, 208, 202, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(100, 208, 202, 0.063), rgba(100, 208, 202, 0.114));
   border-bottom-color: rgba(100, 208, 202, 0.24);
   border-bottom-left-radius: 10px;
@@ -2011,7 +2315,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
   border-top-color: rgba(100, 208, 202, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
@@ -2020,12 +2324,11 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   border-left-color: rgb(89, 177, 228);
   border-right-color: rgb(89, 177, 228);
   border-top-color: rgb(89, 177, 228);
-  color: rgb(89, 177, 228);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(89, 177, 228);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(89, 177, 228));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
@@ -2034,9 +2337,8 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
-  --callout-color: 89, 177, 228;
+  --callout-color: var(--callout-todo, 89, 177, 228);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(89, 177, 228, 0.063), rgba(89, 177, 228, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(89, 177, 228, 0.063), rgba(89, 177, 228, 0.114));
   border-bottom-color: rgba(89, 177, 228, 0.24);
   border-bottom-left-radius: 10px;
@@ -2046,7 +2348,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
   border-top-color: rgba(89, 177, 228, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
@@ -2055,12 +2357,11 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   border-left-color: rgb(89, 177, 228);
   border-right-color: rgb(89, 177, 228);
   border-top-color: rgb(89, 177, 228);
-  color: rgb(89, 177, 228);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(89, 177, 228);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(89, 177, 228));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
@@ -2069,9 +2370,8 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
-  --callout-color: 234, 203, 115;
+  --callout-color: var(--callout-warning, 234, 203, 115);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(234, 203, 115, 0.063), rgba(234, 203, 115, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(234, 203, 115, 0.063), rgba(234, 203, 115, 0.114));
   border-bottom-color: rgba(234, 203, 115, 0.24);
   border-bottom-left-radius: 10px;
@@ -2081,7 +2381,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-color: rgba(234, 203, 115, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
@@ -2090,12 +2390,11 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   border-left-color: rgb(89, 177, 228);
   border-right-color: rgb(89, 177, 228);
   border-top-color: rgb(89, 177, 228);
-  color: rgb(89, 177, 228);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(89, 177, 228);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(89, 177, 228));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] > .callout-content {
@@ -2172,12 +2471,12 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-top-width: 0px;
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: oklch(0.2775 0.0125 265 / 0.625);
+  background-color: var(--prompt-background, oklch(0.2775 0.0125 265 / 0.625));
   border-bottom-color: oklch(1 0.04 265 / 0.125);
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
@@ -2190,7 +2489,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space {
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   border-top-width: 0px;
-  box-shadow: rgba(255, 255, 255, 0.19) 1.125px 1.875px 2.5px -1.25px inset, rgba(255, 255, 255, 0.137) -1.125px -1.875px 2.5px -1.25px inset, rgba(255, 255, 255, 0.016) 0px 8px 16px 0px inset, oklch(0 0 0 / 0.375) 0px 0px 24px 0px;
+  box-shadow: var(--glass-base-l),var(--shadow-strong);
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > * {
@@ -2202,7 +2501,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > * {
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container {
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
@@ -2217,13 +2516,13 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: oklch(1 0.05 265 / 0.05);
-  color: oklch(0.85 0.01125 265);
-  font-weight: 420;
+  background-color: var(--background-modifier-hover, oklch(1 0.05 265 / 0.05));
+  color: var(--text-normal, oklch(0.85 0.01125 265));
+  font-weight: var(--font-normal, 420);
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout.display-results {
@@ -2250,7 +2549,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
-  background-color: oklch(1 0.05 265 / 0.05);
+  background-color: var(--background-modifier-hover, oklch(1 0.05 265 / 0.05));
   border-bottom-color: oklch(0.85 0.01125 265);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -2259,26 +2558,26 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   border-top-color: oklch(0.85 0.01125 265);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: oklch(1 0.05 265 / 0.05);
+  background-color: var(--background-modifier-hover, oklch(1 0.05 265 / 0.05));
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(23, 141, 171, 0.1);
+  background-color: var(--pill-background, rgba(23, 141, 171, 0.1));
   border-bottom-color: oklch(0.597207 0.104194 220.491 / 0.025);
   border-left-color: oklch(0.597207 0.104194 220.491 / 0.025);
   border-right-color: oklch(0.597207 0.104194 220.491 / 0.025);
   border-top-color: oklch(0.597207 0.104194 220.491 / 0.025);
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 490;
+  font-weight: var(--pill-weight, 490);
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -2286,44 +2585,44 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
-  color: oklch(0.895 0.0025 265);
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h1-color, oklch(0.895 0.0025 265));
+  font-family: var(--h1-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: oklch(0.895 0.0025 265);
-  font-size: 32px;
-  font-weight: 330;
+  color: var(--inline-title-color, oklch(0.895 0.0025 265));
+  font-size: var(--inline-title-size, 32px);
+  font-weight: var(--inline-title-weight, 330);
 }
 
 html[saved-theme="dark"] body h2 {
-  color: oklch(0.8825 0.0025 265);
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h2-color, oklch(0.8825 0.0025 265));
+  font-family: var(--h2-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  color: oklch(0.895 0.0025 265);
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--inline-title-color, oklch(0.895 0.0025 265));
+  font-family: var(--inline-title-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h3 {
-  color: oklch(0.85 0.01125 265);
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h3-color, oklch(0.85 0.01125 265));
+  font-family: var(--h3-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
-  color: oklch(0.85 0.01125 265);
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h4-color, oklch(0.85 0.01125 265));
+  font-family: var(--h4-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
-  color: oklch(0.85 0.01125 265);
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h5-color, oklch(0.85 0.01125 265));
+  font-family: var(--h5-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
-  color: oklch(0.775 0.01125 265);
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h6-color, oklch(0.775 0.01125 265));
+  font-family: var(--h6-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body hr {
@@ -2333,7 +2632,7 @@ html[saved-theme="dark"] body hr {
   border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
-  --callout-color: 89, 177, 228;
+  --callout-color: var(--callout-default, 89, 177, 228);
   border-bottom-color: rgba(89, 177, 228, 0.24);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -2353,22 +2652,22 @@ html[saved-theme="dark"] body hr {
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: oklab(0.74221 -0.0506973 -0.0432923);
+  color: var(--nav-item-color, oklab(0.74221 -0.0506973 -0.0432923));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 490;
+  font-weight: var(--nav-item-weight, 490);
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: oklab(0.74221 -0.0506973 -0.0432923);
+  color: var(--nav-item-color, oklab(0.74221 -0.0506973 -0.0432923));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 490;
+  font-weight: var(--nav-item-weight, 490);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: oklch(0.85 0.01125 265);
 }
 
 html[saved-theme="dark"] body li.depth-0 {
-  font-weight: 490;
+  font-weight: var(--nav-item-weight, 490);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: oklch(0.6375 0.0175 265);
@@ -2379,10 +2678,10 @@ html[saved-theme="dark"] body li.depth-0 {
   border-top-color: oklch(0.6375 0.0175 265);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: oklch(0.6375 0.0175 265);
+  color: var(--icon-color, oklch(0.6375 0.0175 265));
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
   border-bottom-color: oklch(1 0.05 265 / 0.0625);
   border-bottom-left-radius: 18px;
   border-left-color: oklch(1 0.05 265 / 0.0625);
@@ -2391,7 +2690,7 @@ html[saved-theme="dark"] body li.depth-0 {
   border-top-color: oklch(1 0.05 265 / 0.0625);
   border-top-left-radius: 18px;
   border-top-width: 0px;
-  color: oklch(0.7125 0.01125 265);
+  color: var(--status-bar-text-color, oklch(0.7125 0.01125 265));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -2413,7 +2712,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: oklch(0.7125 0.01125 265);
+  color: var(--nav-item-color, oklch(0.7125 0.01125 265));
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -2433,7 +2732,7 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
-  color: oklch(0.7125 0.01125 265);
+  color: var(--nav-item-color, oklch(0.7125 0.01125 265));
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -2451,7 +2750,7 @@ html[saved-theme="dark"] body ul.section-ul {
   border-top-color: oklch(0.775 0.01125 265);
   border-top-left-radius: 22px;
   border-top-right-radius: 22px;
-  color: oklch(0.775 0.01125 265);
+  color: var(--icon-color, oklch(0.775 0.01125 265));
 }
 
 html[saved-theme="dark"] body .darkmode svg {
@@ -2471,7 +2770,7 @@ html[saved-theme="dark"] body .darkmode svg {
 }
 
 html[saved-theme="dark"] body .breadcrumb-element p {
-  color: oklch(0.525 0.0175 265);
+  color: var(--text-faint, oklch(0.525 0.0175 265));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     canvas: `html[saved-theme="dark"] body .canvas-node {
@@ -2483,7 +2782,7 @@ html[saved-theme="dark"] body .canvas-node-content {
 }
 
 html[saved-theme="dark"] body .canvas-node-file {
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body .canvas-node-group {
@@ -2491,17 +2790,17 @@ html[saved-theme="dark"] body .canvas-node-group {
 }
 
 html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: oklch(0.275 0.01125 265 / 0.5);
+  background-color: var(--trans-strong-20, oklch(0.275 0.01125 265 / 0.5));
   border-color: oklch(0.85 0.01125 265);
 }`,
     bases: `html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
-  background-color: oklch(1 0.075 265 / 0.015);
+  background-color: var(--table-row-alt-background, oklch(1 0.075 265 / 0.015));
 }
 
 html[saved-theme="dark"] body .bases-table thead th {
   border-color: oklch(0.6375 0.0175 265) oklch(0.6375 0.0175 265) oklch(1 0.075 265 / 0.1);
-  color: oklch(0.6375 0.0175 265);
-  font-weight: 520;
+  color: var(--table-header-color, oklch(0.6375 0.0175 265));
+  font-weight: var(--table-header-weight, 520);
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: oklch(1 0.05 265 / 0.0625);
@@ -2512,7 +2811,7 @@ html[saved-theme="dark"] body .bases-table thead th {
   border-top-color: oklch(1 0.05 265 / 0.0625);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  color: oklch(0.7125 0.01125 265);
+  color: var(--text-muted, oklch(0.7125 0.01125 265));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -2540,8 +2839,8 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(23, 141, 171, 0.1);
-  color: oklab(0.74221 -0.0506973 -0.0432923);
+  background-color: var(--pill-background, rgba(23, 141, 171, 0.1));
+  color: var(--pill-color, oklab(0.74221 -0.0506973 -0.0432923));
 }
 
 html[saved-theme="dark"] body .note-properties-value {
@@ -2549,8 +2848,8 @@ html[saved-theme="dark"] body .note-properties-value {
 }
 
 html[saved-theme="dark"] body div#quartz-root {
-  background-color: oklch(0.23 0.00875 265);
-  color: oklch(0.85 0.01125 265);
+  background-color: var(--background-modifier-cover, oklch(0.23 0.00875 265));
+  color: var(--text-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body ol.overflow {
@@ -2560,12 +2859,12 @@ html[saved-theme="dark"] body ol.overflow {
   border-top-color: oklch(0.85 0.01125 265);
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: oklch(0.85 0.01125 265);
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
 html[saved-theme="dark"] body .stacked-page.active {
@@ -2580,11 +2879,11 @@ html[saved-theme="dark"] body .stacked-page.active {
 }
 
 html[saved-theme="dark"] body .navigation-progress {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
-  color: oklch(0.85 0.01125 265);
+  color: var(--text-normal, oklch(0.85 0.01125 265));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -2604,14 +2903,14 @@ html[saved-theme="dark"] body input[type=text] {
   border-left-color: oklch(0.6375 0.0175 265);
   border-right-color: oklch(0.6375 0.0175 265);
   border-top-color: oklch(0.6375 0.0175 265);
-  color: oklch(0.6375 0.0175 265);
+  color: var(--text-normal, oklch(0.6375 0.0175 265));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-bottom: 0px;
   padding-top: 0px;
 }
 
 html[saved-theme="dark"] body kbd {
-  background-color: oklch(1 0.05 265 / 0.05);
+  background-color: var(--code-background, oklch(1 0.05 265 / 0.05));
   border-bottom-color: oklch(0.85 0.01125 265);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -2620,7 +2919,7 @@ html[saved-theme="dark"] body kbd {
   border-top-color: oklch(0.85 0.01125 265);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: oklch(0.85 0.01125 265);
+  color: var(--code-normal, oklch(0.85 0.01125 265));
 }
 
 html[saved-theme="dark"] body progress {
@@ -2644,12 +2943,12 @@ html[saved-theme="dark"] body sup {
 }
 
 html[saved-theme="dark"] body ul.tags > li {
-  background-color: rgba(23, 141, 171, 0.1);
+  background-color: var(--tag-background, rgba(23, 141, 171, 0.1));
   border-bottom-color: oklch(0.597207 0.104194 220.491 / 0.025);
   border-left-color: oklch(0.597207 0.104194 220.491 / 0.025);
   border-right-color: oklch(0.597207 0.104194 220.491 / 0.025);
   border-top-color: oklch(0.597207 0.104194 220.491 / 0.025);
-  color: oklab(0.74221 -0.0506973 -0.0432923);
+  color: var(--tag-color, oklab(0.74221 -0.0506973 -0.0432923));
 }`,
   },
   light: {
@@ -2659,70 +2958,65 @@ html[saved-theme="dark"] body ul.tags > li {
   --accent-s: 100%;
   --anim-duration-fast: 150ms;
   --anim-duration-superfast: 75ms;
-  --anim-fast-delay: 150ms cubic-bezier(0.65, 0.05, 0.36, 1);
-  --anim-fast-smooth: 150ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  --anim-fast-swing: 150ms cubic-bezier(0, 0.55, 0.45, 1);
-  --anim-super-delay: 75ms cubic-bezier(0.65, 0.05, 0.36, 1);
-  --anim-super-smooth: 75ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  --anim-super-swing: 75ms cubic-bezier(0, 0.55, 0.45, 1);
+  --anim-fast-delay: var(--anim-duration-fast) var(--anim-motion-delay, 150ms cubic-bezier(0.65, 0.05, 0.36, 1));
+  --anim-fast-smooth: var(--anim-duration-fast) var(--anim-motion-smooth, 150ms cubic-bezier(0.45, 0.05, 0.55, 0.95));
+  --anim-fast-swing: var(--anim-duration-fast) var(--anim-motion-swing, 150ms cubic-bezier(0, 0.55, 0.45, 1));
+  --anim-super-delay: var(--anim-duration-superfast) var(--anim-motion-delay, 75ms cubic-bezier(0.65, 0.05, 0.36, 1));
+  --anim-super-smooth: var(--anim-duration-superfast) var(--anim-motion-smooth, 75ms cubic-bezier(0.45, 0.05, 0.55, 0.95));
+  --anim-super-swing: var(--anim-duration-superfast) var(--anim-motion-swing, 75ms cubic-bezier(0, 0.55, 0.45, 1));
   --autofit-close-button-left-padding: 20px;
   --autofit-close-button-right-padding: 0px;
   --autofit-left-padding: 4px;
-  --background-modifier-active-hover: hsla(212, 100%, 52%, 0.1);
-  --background-modifier-border: oklch(0% 0 0 / 0.0625);
-  --background-modifier-border-focus: transparent;
-  --background-modifier-border-hover: oklch(82.50% 0.0025 281);
-  --background-modifier-cover: color-mix(in oklab, oklch(40% 0.0025 281) 45%, transparent 100%);
-  --background-modifier-error: rgb(233, 49, 58);
-  --background-modifier-error-hover: rgb(233, 49, 58);
-  --background-modifier-error-rgb: 233, 49, 58;
-  --background-modifier-form-field: transparent;
-  --background-modifier-form-field-hover: transparent;
-  --background-modifier-hover: oklch(0% 0 0 / 0.0625);
-  --background-modifier-success: rgb(0, 187, 93);
-  --background-modifier-success-rgb: 0, 187, 93;
-  --background-primary: oklch(99% 0.0005 281);
-  --background-primary-alt: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281));
-  --background-secondary: oklch(96.2% 0.0025 281);
-  --background-secondary-alt: oklch(99% 0.0005 281);
-  --bases-cards-background: oklch(from oklch(71.5% 0.0105 281) l c h / 0.1);
-  --bases-cards-cover-background: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281));
-  --bases-cards-label-color: oklch(55.75% 0.0105 281);
+  --background-modifier-border: var(--trans-faint-20, oklch(0% 0 0 / 0.0625));
+  --background-modifier-border-focus: var(--color-base-40, transparent);
+  --background-modifier-border-hover: var(--color-base-35, oklch(82.50% 0.0025 281));
+  --background-modifier-cover: color-mix(in oklab, var(--color-base-80) 45%, transparent 100%);
+  --background-modifier-error: var(--color-red, rgb(233, 49, 58));
+  --background-modifier-error-hover: var(--color-red, rgb(233, 49, 58));
+  --background-modifier-error-rgb: var(--color-red-rgb, 233, 49, 58);
+  --background-modifier-form-field: var(--color-base-00, transparent);
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, transparent);
+  --background-modifier-hover: var(--trans-faint-20, oklch(0% 0 0 / 0.0625));
+  --background-modifier-success: var(--color-green, rgb(0, 187, 93));
+  --background-modifier-success-rgb: var(--color-green-rgb, 0, 187, 93);
+  --background-primary: var(--color-base-05, oklch(99% 0.0005 281));
+  --background-primary-alt: color-mix(in oklab, var(--background-primary), var(--background-secondary));
+  --background-secondary: var(--color-base-10, oklch(96.2% 0.0025 281));
+  --background-secondary-alt: var(--color-base-05, oklch(99% 0.0005 281));
+  --bases-cards-background: var(--trans-strong-40, oklch(from oklch(71.5% 0.0105 281) l c h / 0.1));
+  --bases-cards-cover-background: var(--background-primary-alt, color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281)));
+  --bases-cards-label-color: var(--icon-color, oklch(55.75% 0.0105 281));
   --bases-cards-line-height: 26px;
-  --bases-cards-radius: 12px;
-  --bases-cards-shadow: none;
-  --bases-cards-shadow-hover: none;
-  --bases-embed-border-color: oklch(0% 0 0 / 0.0625);
-  --bases-embed-border-radius: 0;
-  --bases-group-heading-property-color: oklch(46.5% 0.0105 281);
-  --bases-group-heading-property-weight: 420;
-  --bases-group-heading-value-weight: 620;
-  --bases-header-border-width: 0;
+  --bases-cards-radius: var(--radius-m, 12px);
+  --bases-embed-border-color: var(--background-modifier-border, oklch(0% 0 0 / 0.0625));
+  --bases-embed-border-radius: var(--radius-s, 0);
+  --bases-group-heading-property-color: var(--text-muted, oklch(46.5% 0.0105 281));
+  --bases-group-heading-property-weight: var(--font-normal, 420);
+  --bases-group-heading-value-weight: var(--font-semibold, 620);
   --bases-header-padding-end: 0;
   --bases-header-padding-start: 0;
-  --bases-table-border-color: oklch(0% 0 0 / 0.092);
-  --bases-table-cell-background-active: transparent;
-  --bases-table-cell-background-disabled: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281));
-  --bases-table-cell-background-selected: hsla(212, 100%, 52%, 0.1);
-  --bases-table-cell-shadow-active: 0 0 0 2.5px color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%);
-  --bases-table-cell-shadow-focus: 0 0 0 2px color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%);
-  --bases-table-container-border-radius: 0;
-  --bases-table-group-background: transparent;
-  --bases-table-header-background: oklch(99% 0.0005 281);
-  --bases-table-header-background-hover: transparent;
-  --bases-table-header-color: oklch(65% 0.0105 281);
-  --bases-table-header-color-hover: oklch(40% 0.0025 281);
-  --bases-table-header-weight: 490;
-  --bases-table-row-border-width: 0;
+  --bases-table-border-color: var(--table-border-color, oklch(0% 0 0 / 0.092));
+  --bases-table-cell-background-active: var(--background-primary, transparent);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281)));
+  --bases-table-cell-background-selected: var(--table-selection, hsla(212, 100%, 52%, 0.1));
+  --bases-table-cell-shadow-active: var(--shadow-input-active, 0 0 0 2.5px color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%));
+  --bases-table-container-border-radius: var(--radius-s, 0);
+  --bases-table-group-background: var(--background-primary-alt, transparent);
+  --bases-table-header-background: var(--background-primary, oklch(99% 0.0005 281));
+  --bases-table-header-background-hover: var(--background-modifier-hover, transparent);
+  --bases-table-header-color: var(--color-base-55, oklch(65% 0.0105 281));
+  --bases-table-header-color-hover: var(--color-base-80, oklch(40% 0.0025 281));
+  --bases-table-header-weight: var(--font-semi-medium, 490);
+  --bases-table-row-border-width: var(--border-width, 0);
   --bases-table-row-height: 32px;
-  --bases-table-summary-background: oklch(99% 0.0005 281);
-  --bases-table-summary-background-hover: oklch(0% 0 0 / 0.0625);
-  --bases-table-text-size: 0.90625em;
-  --bg-checkbox: radial-gradient(transparent 50%, oklch(82.50% 0.0025 281) 55% 60%, transparent 65%);
+  --bases-table-summary-background: var(--background-primary, oklch(99% 0.0005 281));
+  --bases-table-summary-background-hover: var(--background-modifier-hover, oklch(0% 0 0 / 0.0625));
+  --bases-table-text-size: var(--table-text-size, 0.90625em);
+  --bg-checkbox: radial-gradient(transparent 50%, var(--checkbox-border-color) 55% 60%, transparent 65%);
   --bg-checkbox-active: radial-gradient(transparent 56%, #ffffffdd 76%);
-  --bg-main-inner: oklch(97.5% 0.00125 281);
-  --bg-main-outer: oklch(94.5% 0.00625 281);
-  --bg-main-workspace: radial-gradient(at 50% 50%, oklch(97.5% 0.00125 281) 20%, oklch(94.5% 0.00625 281) 100%);
+  --bg-main-inner: oklch(97.5% 0.00125 var(--bhue));
+  --bg-main-outer: oklch(94.5% 0.00625 var(--bhue));
+  --bg-main-workspace: radial-gradient(at 50% 50%, var(--bg-main-inner) 20%, var(--bg-main-outer) 100%);
   --bhue: 281;
   --bl-00: 100%;
   --bl-05: 99%;
@@ -2739,29 +3033,615 @@ html[saved-theme="dark"] body ul.tags > li {
   --bl-70: 46.5%;
   --bl-80: 40%;
   --bl-90: 30%;
-  --blockquote-border-color: oklch(71.5% 0.0105 281);
+  --blockquote-border-color: var(--text-faint, oklch(71.5% 0.0105 281));
   --blockquote-border-thickness: 0.1875rem;
-  --blockquote-color: oklch(46.5% 0.0105 281);
-  --blur-background: color-mix(in srgb, oklch(99% 0.0005 281) 65%, transparent) linear-gradient(oklch(99% 0.0005 281), color-mix(in srgb, oklch(99% 0.0005 281) 65%, transparent));
+  --blockquote-color: var(--text-muted, oklch(46.5% 0.0105 281));
   --blur-brightness: 1;
-  --blur-l: blur(16px) saturate(1.125) brightness(1);
-  --blur-m: blur(12px) saturate(1.125) brightness(1);
   --blur-radius-m: 12px;
   --blur-radius-s: 8px;
-  --blur-s: blur(8px) saturate(1.125) brightness(1);
   --blur-saturation: 1.125;
-  --bodyFont: var(--font-text, "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --bold-color: oklch(24% 0.0005 281);
+  --bodyFont: var(--font-text-theme, "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --bold-color: var(--color-base-100, oklch(24% 0.0005 281));
   --bold-modifier: 250;
-  --bold-weight: 670;
   --bsat-low: 0.0005;
   --bsat-med: 0.0015;
   --bsat-modal: 0.00125;
   --bsat-str: 0.0025;
   --bsat-xtr: 0.0105;
+  --button-radius: var(--input-radius, 8px);
+  --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
+  --callout-border-opacity: 0.2375;
+  --callout-bug: var(--color-pink-rgb, 214, 50, 202);
+  --callout-default: var(--color-blue-rgb, 31, 132, 255);
+  --callout-error: var(--color-red-rgb, 233, 49, 58);
+  --callout-example: var(--color-purple-rgb, 124, 80, 237);
+  --callout-fail: var(--color-red-rgb, 233, 49, 58);
+  --callout-important: var(--color-cyan-rgb, 9, 186, 221);
+  --callout-info: var(--color-blue-rgb, 31, 132, 255);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 1rem);
+  --callout-question: var(--color-orange-rgb, 241, 110, 53);
+  --callout-radius: var(--radius-sm, 10px);
+  --callout-success: var(--color-green-rgb, 0, 187, 93);
+  --callout-summary: var(--color-cyan-rgb, 9, 186, 221);
+  --callout-tip: var(--color-cyan-rgb, 9, 186, 221);
+  --callout-todo: var(--color-blue-rgb, 31, 132, 255);
+  --callout-warning: var(--color-yellow-rgb, 229, 169, 37);
+  --canvas-background: var(--background-primary, oklch(99% 0.0005 281));
+  --canvas-card-label-color: var(--text-faint, oklch(71.5% 0.0105 281));
+  --canvas-color-1: var(--color-red-rgb, 233, 49, 58);
+  --canvas-color-2: var(--color-orange-rgb, 241, 110, 53);
+  --canvas-color-3: var(--color-yellow-rgb, 229, 169, 37);
+  --canvas-color-4: var(--color-green-rgb, 0, 187, 93);
+  --canvas-color-5: var(--color-blue-rgb, 31, 132, 255);
+  --canvas-color-6: var(--color-purple-rgb, 124, 80, 237);
+  --canvas-controls-radius: var(--radius-s, 8px);
+  --canvas-dot-pattern: var(--color-base-30, oklch(85.75% 0.0025 281));
+  --caret-color: var(--text-normal, oklch(30% 0.0005 281));
+  --checkbox-border-color: var(--color-base-35, oklch(82.50% 0.0025 281));
+  --checkbox-border-color-hover: var(--text-muted, oklch(46.5% 0.0105 281));
+  --checkbox-color: var(--interactive-accent, color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%));
+  --checkbox-color-hover: var(--interactive-accent-hover, color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%));
+  --checkbox-marker-color: var(--text-on-accent, white);
+  --checkbox-radius: var(--radius-s, 50%);
+  --checkbox-size: var(--font-text-size, 1.125rem);
+  --checklist-done-color: var(--strikethrough-color, oklch(71.5% 0.0105 281));
+  --clickable-icon-radius: var(--radius-s, 8px);
+  --code-background: var(--trans-faint-20, oklch(0% 0 0 / 0.0625));
+  --code-background-alt: var(--trans-strong-10, oklch(100% 0 0 / 0.75));
+  --code-border-color: var(--trans-faint-20, oklch(0% 0 0 / 0.0625));
+  --code-border-width: 0;
+  --code-bracket-background: var(--background-modifier-hover, oklch(0% 0 0 / 0.0625));
+  --code-comment: var(--text-faint, oklch(71.5% 0.0105 281));
+  --code-function: var(--color-yellow, rgb(229, 169, 37));
+  --code-important: var(--color-orange, rgb(241, 110, 53));
+  --code-keyword: var(--color-pink, rgb(214, 50, 202));
+  --code-normal: var(--text-normal, oklch(30% 0.0005 281));
+  --code-operator: var(--color-red, rgb(233, 49, 58));
+  --code-property: var(--color-cyan, rgb(9, 186, 221));
+  --code-punctuation: var(--text-muted, oklch(46.5% 0.0105 281));
+  --code-radius: var(--radius-xs, 6px);
+  --code-special: var(--color-red, rgb(233, 49, 58));
+  --code-string: var(--color-green, rgb(0, 187, 93));
+  --code-tag: var(--color-red, rgb(233, 49, 58));
+  --code-value: var(--color-purple, rgb(124, 80, 237));
+  --collapse-icon-color: var(--text-faint, oklch(71.5% 0.0105 281));
+  --collapse-icon-color-collapsed: var(--text-accent, hsl(212, 100%, 52%));
+  --color-accent-1: color-mix(in oklab, var(--color-accent), white 7.5%);
+  --color-accent-2: color-mix(in oklch, var(--color-accent) 80%, transparent 40%);
+  --color-accent-3: color-mix(in oklch, var(--color-accent) 50%, transparent 75%);
+  --color-accent-4: color-mix(in oklch, var(--text-selection) 40%, transparent 60%);
+  --color-base-00: oklch(var(--bl-00) var(--bsat-low) var(--bhue));
+  --color-base-05: oklch(var(--bl-05) var(--bsat-low) var(--bhue));
+  --color-base-10: oklch(var(--bl-10) var(--bsat-str) var(--bhue));
+  --color-base-100: oklch(var(--bl-100) var(--bsat-low) var(--bhue));
+  --color-base-20: oklch(var(--bl-20) var(--bsat-str) var(--bhue));
+  --color-base-25: oklch(var(--bl-25) var(--bsat-str) var(--bhue));
+  --color-base-30: oklch(var(--bl-30) var(--bsat-str) var(--bhue));
+  --color-base-35: oklch(var(--bl-35) var(--bsat-str) var(--bhue));
+  --color-base-40: oklch(var(--bl-40) var(--bsat-str) var(--bhue));
+  --color-base-50: oklch(var(--bl-50) var(--bsat-xtr) var(--bhue));
+  --color-base-55: oklch(var(--bl-55) var(--bsat-xtr) var(--bhue));
+  --color-base-60: oklch(var(--bl-60) var(--bsat-xtr) var(--bhue));
+  --color-base-70: oklch(var(--bl-70) var(--bsat-xtr) var(--bhue));
+  --color-base-80: oklch(var(--bl-80) var(--bsat-str) var(--bhue));
+  --color-base-90: oklch(var(--bl-90) var(--bsat-low) var(--bhue));
+  --color-blue: rgb(31, 132, 255);
+  --color-blue-rgb: 31, 132, 255;
+  --color-cyan: rgb(9, 186, 221);
+  --color-cyan-rgb: 9, 186, 221;
+  --color-green: rgb(0, 187, 93);
+  --color-green-rgb: 0, 187, 93;
+  --color-highlight: rgb(var(--color-highlight-rgb));
+  --color-highlight-rgb: var(--highlight-yellow-rgb, 229, 169, 37);
+  --color-orange: rgb(241, 110, 53);
+  --color-orange-rgb: 241, 110, 53;
+  --color-pink: rgb(214, 50, 202);
+  --color-pink-rgb: 214, 50, 202;
+  --color-purple: rgb(124, 80, 237);
+  --color-purple-rgb: 124, 80, 237;
+  --color-red: rgb(233, 49, 58);
+  --color-red-rgb: 233, 49, 58;
+  --color-yellow: rgb(229, 169, 37);
+  --color-yellow-rgb: 229, 169, 37;
+  --control-icon-background: var(--background-primary, oklch(99% 0.0005 281));
+  --control-icon-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --control-icon-shadow: var(--shadow-faint, 0px 0 12px 0px oklch(05% 0 0 / 0.055));
+  --corner-smoothing: 60%;
+  --dark: var(--text-normal, var(--color-base-90, oklch(30% 0.0005 281)));
+  --darkgray: var(--text-normal, var(--color-base-90, oklch(30% 0.0005 281)));
+  --dialog-width: 500px;
+  --divider-color: var(--background-modifier-border, oklch(0% 0 0 / 0.0625));
+  --divider-color-hover: var(--color-accent-3, color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%));
+  --divider-width: 0;
+  --drag-ghost-background: var(--color-base-00, oklch(100% 0.0005 281));
+  --drag-ghost-text-color: var(--color-base-90, oklch(30% 0.0005 281));
+  --dropdown-background: var(--interactive-normal, oklch(0% 0 0 / 0.07));
+  --dropdown-background-hover: var(--interactive-hover, oklch(0% 0 0 / 0.092));
+  --fab-bg: var(--background-primary, oklch(99% 0.0005 281));
+  --fab-color: var(--icon-color, oklch(55.75% 0.0105 281));
+  --fab-color-active: var(--text-normal, oklch(30% 0.0005 281));
+  --fab-easing-curve: cubic-bezier(0.55, 2, 0.5, 0.97);
+  --file-header-background: var(--background-primary, oklch(99% 0.0005 281));
+  --file-header-background-focused: var(--background-primary, oklch(99% 0.0005 281));
+  --file-header-font: var(--font-interface, "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --file-header-font-weight: var(--font-semi-medium, 490);
+  --file-line-width: 43.75rem;
+  --file-margins: var(--file-margins-y) var(--file-margins-x, 28px 5%);
+  --file-margins-x: var(--size-4-8, 5%);
+  --file-margins-y: var(--size-4-8, 28px);
+  --flair-background: var(--interactive-normal, oklch(0% 0 0 / 0.07));
+  --flair-color: var(--text-normal, oklch(30% 0.0005 281));
+  --flair-padding: 3px 1px;
+  --font-bold: 720;
+  --font-extrabold: 820;
+  --font-extralight: 305;
+  --font-interface-override: "Raveo";
+  --font-interface-theme: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-label: var(--font-interface-theme, "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --font-light: 320;
+  --font-medium: 520;
+  --font-mermaid: var(--font-text, "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --font-normal: 420;
+  --font-normal-linux: var(--font-semi-medium, 490);
+  --font-semi-medium: calc(var(--font-normal) + 70);
+  --font-semibold: 620;
+  --font-small: 0.90625em;
+  --font-text-override: "Raveo";
+  --font-text-theme: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-thin: 270;
+  --font-ui-larger: 24px;
+  --font-weight: var(--font-normal, 420);
+  --footnote-divider-color: var(--metadata-divider-color, oklch(0% 0 0 / 0.0625));
+  --footnote-id-color: var(--text-muted, oklch(46.5% 0.0105 281));
+  --footnote-id-color-no-occurrences: var(--text-faint, oklch(71.5% 0.0105 281));
+  --footnote-input-background-active: var(--metadata-input-background-active, oklch(0% 0 0 / 0.0625));
+  --footnote-line-height: var(--line-height-normal, 1.6);
+  --footnote-radius: var(--radius-s, 8px);
+  --frame-right-space: 160px;
+  --frame-right-space-override: 164px;
+  --glass-base: inset 1px 1px 2px 0 var(--trans-strong-30), inset -1px -1px 2px 0 var(--trans-strong-30);
+  --glass-base-l: inset 1.5px 1.5px 4px 0 var(--trans-strong-20), inset -1.5px -1.5px 4px 0 var(--trans-strong-20);
+  --glass-base-m: inset 0 0 1px 0 var(--trans-strong-20), inset 1.5px 1.5px 3px 0 var(--trans-strong-30), inset -1.5px -1.5px 3px 0 var(--trans-strong-30);
+  --graph-controls-width: 232px;
+  --graph-node: var(--text-muted, oklch(46.5% 0.0105 281));
+  --graph-node-attachment: var(--color-yellow, rgb(229, 169, 37));
+  --graph-node-focused: var(--text-accent, transparent);
+  --graph-node-tag: var(--color-green, rgb(0, 187, 93));
+  --graph-node-unresolved: var(--text-faint, oklch(71.5% 0.0105 281));
+  --graph-text: var(--text-normal, oklch(30% 0.0005 281));
+  --gray: var(--text-muted, var(--color-base-70, oklch(46.5% 0.0105 281)));
+  --h1-color: var(--color-base-100, oklch(24% 0.0005 281));
+  --h1-size: 2em;
+  --h1-size-alt: 1.625em;
+  --h1-weight: 330;
+  --h1-weight-alt: 570;
+  --h2-color: var(--color-base-90, oklch(30% 0.0005 281));
+  --h2-size: 1.5em;
+  --h2-weight: 570;
+  --h3-color: var(--color-base-90, oklch(30% 0.0005 281));
+  --h3-size: 1.375em;
+  --h3-weight: 570;
+  --h4-color: var(--color-base-90, oklch(30% 0.0005 281));
+  --h4-size: 1.25em;
+  --h4-weight: 570;
+  --h5-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --h5-line-height: var(--line-height-normal, 1.6);
+  --h5-size: 1.125em;
+  --h6-color: var(--color-base-70, oklch(46.5% 0.0105 281));
+  --h6-line-height: var(--line-height-normal, 1.6);
+  --h6-weight: 670;
+  --header-height: 56px;
+  --headerFont: var(--font-text-theme, "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --heading-formatting: var(--text-faint, oklch(71.5% 0.0105 281));
+  --highlight: var(--text-highlight-bg, oklch(from var(--color-highlight) 0.9 c h / 0.33));
+  --highlight-blue-rgb: var(--color-blue-rgb, 31, 132, 255);
+  --highlight-cyan-rgb: var(--color-cyan-rgb, 9, 186, 221);
+  --highlight-green-rgb: var(--color-green-rgb, 0, 187, 93);
+  --highlight-orange-rgb: var(--color-orange-rgb, 241, 110, 53);
+  --highlight-pink-rgb: var(--color-pink-rgb, 214, 50, 202);
+  --highlight-purple-rgb: var(--color-purple-rgb, 124, 80, 237);
+  --highlight-red-rgb: var(--color-red-rgb, 233, 49, 58);
+  --highlight-yellow-rgb: var(--color-yellow-rgb, 229, 169, 37);
+  --hr-color: var(--trans-faint-30, oklch(0% 0 0 / 0.092));
+  --icon-color: var(--color-base-60, oklch(55.75% 0.0105 281));
+  --icon-color-active: var(--text-accent, hsl(212, 100%, 52%));
+  --icon-color-focused: var(--icon-color-hover, oklch(30% 0.0005 281));
+  --icon-color-hover: var(--text-normal, oklch(30% 0.0005 281));
+  --icon-m-stroke-width: 1.875px;
+  --icon-stroke: var(--icon-m-stroke-width, 1.875px);
+  --icon-stroke-thick: 2.25px;
+  --icon-xl: 28px;
+  --icon-xs-stroke-width: 2.125px;
+  --indent-unit: 0.375em;
+  --indentation-guide-color: var(--trans-faint-30, oklch(0% 0 0 / 0.092));
+  --indentation-guide-width: var(--border-width, 0);
+  --indentation-guide-width-active: var(--border-width, 0);
+  --inline-title-color: var(--h1-color, oklch(24% 0.0005 281));
+  --inline-title-margin-bottom: round(nearest, clamp(0px, 0.5em, 1.5rem), 2px);
+  --inline-title-size: var(--h1-size, 2em);
+  --inline-title-weight: var(--h1-weight, 330);
+  --input-border-width: var(--border-width, 0);
+  --input-date-separator: var(--text-faint, oklch(71.5% 0.0105 281));
+  --input-font-weight: var(--font-normal, 420);
+  --input-height: 28px;
+  --input-placeholder-color: var(--text-faint, oklch(71.5% 0.0105 281));
+  --input-radius: var(--radius-s, 8px);
+  --input-shadow: none;
+  --input-shadow-hover: none;
+  --interactive-accent: var(--color-accent-1, color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%));
+  --interactive-accent-hover: var(--color-accent-2, color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%));
+  --interactive-accent-hsl: var(--color-accent-hsl, 212, 100%, 52%);
+  --interactive-hover: var(--trans-faint-30, oklch(0% 0 0 / 0.092));
+  --interactive-normal: var(--trans-faint-25, oklch(0% 0 0 / 0.07));
+  --light: var(--background-primary, var(--color-base-05, oklch(99% 0.0005 281)));
+  --lightgray: var(--background-secondary, var(--color-base-10, oklch(96.2% 0.0025 281)));
+  --line-height-normal: 1.6;
+  --link-color: var(--text-accent, hsl(212, 100%, 52%));
+  --link-color-hover: var(--text-accent-hover, color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%));
+  --link-color-sidebar: var(--color-accent-1, color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%));
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-color: var(--text-accent, hsl(212, 100%, 52%));
+  --link-external-color-hover: var(--text-accent-hover, color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%));
+  --link-unresolved-color: oklch(from var(--color-accent-1) l c h / var(--link-unresolved-lch));
+  --link-unresolved-lch: 0.7;
+  --link-unresolved-opacity: 1;
+  --link-weight: var(--font-weight, 420);
+  --list-bullet-color: var(--icon-color, oklch(55.75% 0.0105 281));
+  --list-dash-color: oklch(0% 0 0 / 0.25);
+  --list-marker-color: var(--color-base-50, oklch(71.5% 0.0105 281));
+  --list-marker-color-collapsed: var(--text-accent, hsl(212, 100%, 52%));
+  --list-marker-color-hover: var(--text-muted, oklch(46.5% 0.0105 281));
+  --list-spacing: 0.125em;
+  --math-color: var(--color-base-100, oklch(24% 0.0005 281));
+  --menu-background: var(--background-primary-alt, color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281)));
+  --menu-border-color: var(--trans-faint-40, oklch(0% 0 0 / 0.1125));
+  --menu-radius: var(--radius-ml, 14px);
+  --menu-shadow: inset 1px 1px 2px 0 var(--trans-strong-10), inset -1px -1px 2px 0 var(--trans-strong-10), var(--shadow-normal);
+  --metadata-border-color: var(--background-modifier-border, oklch(0% 0 0 / 0.0625));
+  --metadata-border-radius: var(--radius-m, 12px);
+  --metadata-divider-color: var(--background-modifier-border, oklch(0% 0 0 / 0.0625));
+  --metadata-gap: 2px;
+  --metadata-input-background-active: var(--background-modifier-hover, oklch(0% 0 0 / 0.0625));
+  --metadata-input-font: var(--font-interface, "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-input-longtext-lines: 5;
+  --metadata-input-padding: var(--size-4-1) var(--size-4-2, 6px 8px);
+  --metadata-input-text-color: var(--text-normal, oklch(30% 0.0005 281));
+  --metadata-label-background-active: var(--background-modifier-hover, oklch(0% 0 0 / 0.0625));
+  --metadata-label-font: var(--font-interface, "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --metadata-label-font-weight: var(--font-semi-medium, 490);
+  --metadata-label-text-color: var(--icon-color, oklch(55.75% 0.0105 281));
+  --metadata-label-text-color-hover: var(--icon-color, oklch(55.75% 0.0105 281));
+  --metadata-label-width: 10em;
+  --metadata-property-background-active: var(--background-modifier-hover, oklch(0% 0 0 / 0.0625));
+  --metadata-property-box-shadow-focus: var(--shadow-input-active, 0 0 0 2.5px color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%));
+  --metadata-property-box-shadow-hover: 0 0 0 2.5px var(--background-modifier-hover);
+  --mobile-nav-fade-bg: linear-gradient(var(--background-secondary), transparent calc(var(--touch-size-l)*1.5));
+  --modal-background: oklch(99.5% var(--bsat-modal) var(--bhue) / 0.675);
+  --modal-border-width: var(--border-width, 0);
+  --modal-community-header-bg: var(--trans-strong-10, oklch(100% 0 0 / 0.75));
+  --modal-community-item-bg: color-mix(in oklab, var(--color-base-05), var(--color-base-10));
+  --modal-radius: var(--radius-xxl, 22px);
+  --modal-small-background: oklch(99.5% var(--bsat-modal) var(--bhue) / 0.7);
+  --nav-collapse-icon-color: var(--trans-faint-60, oklch(0% 0 0 / 0.32));
+  --nav-collapse-icon-color-collapsed: var(--text-faint, oklch(71.5% 0.0105 281));
+  --nav-folder-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --nav-header-bg: var(--trans-strong-40, oklch(from oklch(71.5% 0.0105 281) l c h / 0.1));
+  --nav-header-timing: var(--vl-ease-out, cubic-bezier(0.3, 0.75, 0, 1));
+  --nav-heading-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --nav-heading-color-collapsed: var(--text-faint, oklch(71.5% 0.0105 281));
+  --nav-heading-color-collapsed-hover: var(--text-muted, oklch(46.5% 0.0105 281));
+  --nav-heading-color-hover: var(--text-normal, oklch(30% 0.0005 281));
+  --nav-heading-weight: var(--font-medium, 520);
+  --nav-heading-weight-hover: var(--font-medium, 520);
+  --nav-indentation-guide-color: var(--trans-faint-30, oklch(0% 0 0 / 0.092));
+  --nav-indentation-guide-width: var(--indentation-guide-width, 0);
+  --nav-item-background-active: var(--background-modifier-hover, oklch(0% 0 0 / 0.0625));
+  --nav-item-background-hover: var(--background-modifier-hover, oklch(0% 0 0 / 0.0625));
+  --nav-item-color: var(--text-muted, oklch(46.5% 0.0105 281));
+  --nav-item-color-active: var(--text-normal, oklch(30% 0.0005 281));
+  --nav-item-color-highlighted: var(--text-accent, hsl(212, 100%, 52%));
+  --nav-item-color-hover: var(--text-normal, oklch(30% 0.0005 281));
+  --nav-item-color-selected: var(--text-normal, oklch(30% 0.0005 281));
+  --nav-item-radius: var(--radius-s, 8px);
+  --nav-tag-color: var(--text-faint, oklch(71.5% 0.0105 281));
+  --nav-tag-color-active: var(--text-muted, oklch(46.5% 0.0105 281));
+  --nav-tag-color-hover: var(--text-muted, oklch(46.5% 0.0105 281));
+  --nav-tag-radius: var(--radius-s, 8px);
+  --nav-tag-weight: var(--font-semibold, 620);
+  --nav-text-color: var(--text-normal, oklch(30% 0.0005 281));
+  --paint-description: "The default light color scheme for Velocity. A timeless classic with a mild futuristic touch.";
+  --paint-image: url(data:image/webpbase64,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);
+  --pdf-background: var(--background-primary, oklch(99% 0.0005 281));
+  --pdf-page-background: var(--background-primary, oklch(99% 0.0005 281));
+  --pdf-shadow: none;
+  --pdf-sidebar-background: var(--background-primary, oklch(99% 0.0005 281));
+  --pdf-spread-shadow: none;
+  --pdf-thumbnail-shadow: var(--shadow-input, 0 0 0 0.5px oklch(0% 0 0 / 0.1125));
+  --pill-background: var(--code-background, oklch(0% 0 0 / 0.0625));
+  --pill-background-hover: var(--code-background, oklch(0% 0 0 / 0.0625));
+  --pill-border-color: var(--background-modifier-border, oklch(0% 0 0 / 0.0625));
+  --pill-border-color-hover: var(--background-modifier-border-hover, oklch(82.50% 0.0025 281));
+  --pill-color: var(--text-muted, oklch(46.5% 0.0105 281));
+  --pill-color-hover: var(--text-muted, oklch(46.5% 0.0105 281));
+  --pill-color-remove: var(--text-faint, oklch(71.5% 0.0105 281));
+  --pill-color-remove-hover: var(--text-on-accent, white);
+  --pill-radius: var(--radius-l, 18px);
+  --pill-weight: var(--font-semi-medium, 490);
+  --prompt-backdrop-filter: var(--blur-m, blur(12px) saturate(1.125) brightness(1));
+  --prompt-background: var(--modal-background, oklch(99.5% 0.00125 281 / 0.675));
+  --prompt-border-color: var(--menu-border-color, oklch(0% 0 0 / 0.1125));
+  --prompt-input-height: 48px;
+  --radius-l: 18px;
+  --radius-m: 12px;
+  --radius-ml: 14px;
+  --radius-prompt: 24px;
+  --radius-s: 8px;
+  --radius-settings: 28px;
+  --radius-sm: 10px;
+  --radius-xl: 20px;
+  --radius-xs: 6px;
+  --radius-xxl: 22px;
+  --raised-background: var(--blur-background, color-mix(in srgb, oklch(99% 0.0005 281) 65%, transparent) linear-gradient(oklch(99% 0.0005 281), color-mix(in srgb, oklch(99% 0.0005 281) 65%, transparent)));
+  --raised-blur: var(--blur-s, blur(8px) saturate(1.125) brightness(1));
+  --ribbon-background: var(--background-secondary, transparent);
+  --ribbon-background-collapsed: var(--background-primary, transparent);
+  --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3, 8px 0px 12px 8px);
+  --ribbon-width: 56px;
+  --scrollbar-active-thumb-bg: var(--trans-faint-50, oklch(0% 0 0 / 0.145));
+  --scrollbar-radius: var(--radius-l, 18px);
+  --scrollbar-thumb-bg: var(--trans-faint-30, oklch(0% 0 0 / 0.092));
+  --search-clear-button-color: var(--color-base-50, oklch(71.5% 0.0105 281));
+  --search-icon-color: var(--color-base-50, oklch(71.5% 0.0105 281));
+  --search-icon-size: 17px;
+  --search-result-background: var(--trans-strong-20, oklch(100% 0 0 / 0.625));
+  --secondary: var(--text-accent, var(--color-accent, hsl(212, 100%, 52%)));
+  --setting-group-heading-color: var(--icon-color, oklch(55.75% 0.0105 281));
+  --setting-group-heading-size: var(--font-ui-medium, 18px);
+  --setting-group-heading-weight: var(--font-medium, 520);
+  --setting-item-background: var(--trans-strong-10, oklch(100% 0 0 / 0.75));
+  --setting-items-background: var(--background-primary, oklch(99% 0.0005 281));
+  --setting-items-border-color: var(--background-modifier-border, oklch(0% 0 0 / 0.0625));
+  --setting-items-padding: calc(var(--vl-layout-padding) + 8px);
+  --setting-items-radius: calc(var(--radius-ml) + 2px);
+  --settings-background: color-mix(in oklab, var(--background-secondary) 70%, var(--color-base-20));
+  --shadow-button: var(--glass-base), var(--shadow-muted);
+  --shadow-button-error: var(--shadow-button, inset 1px 1px 2px 0 oklch(100% 0 0 / 0.4), inset -1px -1px 2px 0 oklch(100% 0 0 / 0.4), 0px 3px 18px 0px oklch(0% 0 0 / 0.07));
+  --shadow-canvas-node: 0px 0px 16px 0px var(--trans-faint-20);
+  --shadow-fab: var(--shadow-input), 0px 3px 15px 0px var(--trans-faint-20);
+  --shadow-faint: 0px 0 12px 0px var(--trans-faint-10);
+  --shadow-input: 0 0 0 0.5px var(--trans-faint-40);
+  --shadow-input-active: 0 0 0 2.5px var(--color-accent-3);
+  --shadow-l: var(--glass-base-l), var(--shadow-strong);
+  --shadow-muted: 0px 3px 18px 0px var(--trans-faint-25);
+  --shadow-normal: 0px 0px 5px 0px var(--trans-faint-05), 0px 10px 20px 0px var(--trans-faint-25);
+  --shadow-s: var(--glass-base), var(--shadow-normal);
+  --shadow-setting-items: inset 1px 1px 2px 0 var(--trans-strong-10), inset -1px -1px 2px 0 var(--trans-strong-10), 0px 1px 9px var(--trans-faint-05);
+  --shadow-setting-items-top: inset 1px 2px 2px 0 var(--trans-strong-10), 0px 1px 9px var(--trans-faint-05);
+  --shadow-sidebar: 0px 0px 8px 0px var(--trans-faint-00);
+  --shadow-strong: 0px 1.25px 6.25px rgba(0, 0, 0, 0.08), 0px 3px 12px rgba(0, 0, 0, 0.06), 0px 16px 32px rgba(0, 0, 0, 0.12);
+  --shadow-suggestion-item: var(--glass-base-m), var(--shadow-muted);
+  --shadow-tab: 0px 0px 4px 0px var(--trans-faint-30);
+  --shadow-toggle: inset 0.75px 0.75px 1.75px 0 var(--trans-strong-30), inset -0.75px -0.75px 1.75px 0 var(--trans-strong-30);
+  --shadow-workspace: 0 0.25px 1.25px 0px oklch(0% 0 0 / 0.25), 0px 0px 24px var(--trans-faint-10);
+  --shadow-workspace-multi: 0px 2.5px 10px var(--trans-faint-10);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, oklch(46.5% 0.0105 281));
+  --shiki-code-background: var(--code-background, oklch(0% 0 0 / 0.0625));
+  --shiki-code-block-border-radius: var(--code-radius, 6px);
+  --shiki-code-comment: var(--text-faint, oklch(71.5% 0.0105 281));
+  --shiki-code-function: var(--color-green, rgb(0, 187, 93));
+  --shiki-code-important: var(--color-orange, rgb(241, 110, 53));
+  --shiki-code-keyword: var(--color-pink, rgb(214, 50, 202));
+  --shiki-code-normal: var(--text-muted, oklch(46.5% 0.0105 281));
+  --shiki-code-property: var(--color-cyan, rgb(9, 186, 221));
+  --shiki-code-punctuation: var(--text-muted, oklch(46.5% 0.0105 281));
+  --shiki-code-string: var(--color-yellow, rgb(229, 169, 37));
+  --shiki-code-value: var(--color-purple, rgb(124, 80, 237));
+  --shiki-gutter-border-color: var(--background-modifier-border, oklch(0% 0 0 / 0.0625));
+  --shiki-gutter-text-color: var(--text-faint, oklch(71.5% 0.0105 281));
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, oklch(46.5% 0.0105 281));
+  --shiki-highlight-neutral: var(--shiki-code-normal, oklch(46.5% 0.0105 281));
+  --shiki-terminal-dots-color: var(--text-faint, oklch(71.5% 0.0105 281));
+  --sidebar-left-toggle-inner-width: 12%;
+  --sidebar-right-toggle-inner-width: 12%;
+  --slider-thumb-border-color: var(--background-modifier-border-hover, oklch(82.50% 0.0025 281));
+  --slider-thumb-border-width: var(--border-width, 0);
+  --slider-thumb-height: 12px;
+  --slider-thumb-radius: var(--slider-thumb-height, 12px);
+  --slider-thumb-width: 12px;
+  --slider-thumb-y: -3px;
+  --slider-track-background: var(--trans-faint-50, oklch(0% 0 0 / 0.145));
+  --slider-track-height: 20px;
+  --stacked-shadow-color: var(--trans-faint-10, oklch(05% 0 0 / 0.055));
+  --status-bar-background: var(--background-secondary, transparent);
+  --status-bar-border-color: var(--divider-color, oklch(0% 0 0 / 0.0625));
+  --status-bar-border-width: var(--border-width) 0 0 var(--border-width, 0);
+  --status-bar-radius: var(--radius-l) 0 0 var(--radius-l, 18px 0 0 18px);
+  --status-bar-text-color: var(--text-muted, oklch(46.5% 0.0105 281));
+  --strikethrough-color: var(--text-faint, oklch(71.5% 0.0105 281));
+  --suggestion-background: var(--background-primary, oklch(99% 0.0005 281));
+  --sync-avatar-color-1: var(--color-red, rgb(233, 49, 58));
+  --sync-avatar-color-2: var(--color-orange, rgb(241, 110, 53));
+  --sync-avatar-color-3: var(--color-yellow, rgb(229, 169, 37));
+  --sync-avatar-color-4: var(--color-green, rgb(0, 187, 93));
+  --sync-avatar-color-5: var(--color-cyan, rgb(9, 186, 221));
+  --sync-avatar-color-6: var(--color-blue, rgb(31, 132, 255));
+  --sync-avatar-color-7: var(--color-purple, rgb(124, 80, 237));
+  --sync-avatar-color-8: var(--color-pink, rgb(214, 50, 202));
+  --tab-background-active: var(--trans-strong-20, oklch(100% 0 0 / 0.625));
+  --tab-close-bg: oklch(from var(--color-base-30) l c h / 0.8);
+  --tab-container-background: var(--background-secondary, transparent);
+  --tab-divider-color: var(--background-modifier-border-hover, oklch(82.50% 0.0025 281));
+  --tab-font-weight: var(--font-normal, 420);
+  --tab-max-width: 240px;
+  --tab-outline-color: var(--divider-color, oklch(0% 0 0 / 0.0625));
+  --tab-outline-width: 0;
+  --tab-radius: var(--radius-s, 8px);
+  --tab-right-fade: linear-gradient(to left, oklch(91.5% calc(var(--bsat-xtr)/3) var(--bhue)) 80%, transparent);
+  --tab-right-fade-alt: linear-gradient(to left, oklch(calc(var(--bl-20) + 1.5%) 0 0) 80%, transparent);
+  --tab-sidebar-bg: var(--trans-strong-00, oklch(100% 0 0 / 0.95));
+  --tab-sidebar-container-bg: oklch(00% 0 0 / 0.03125);
+  --tab-stacked-font-weight: var(--font-medium, 520);
+  --tab-stacked-header-width: var(--header-height, 56px);
+  --tab-stacked-pane-width: var(--file-line-width, 43.75rem);
+  --tab-stacked-shadow: -8px 0 8px 0 var(--stacked-shadow-color);
+  --tab-switcher-background: var(--background-secondary, oklch(96.2% 0.0025 281));
+  --tab-switcher-preview-radius: var(--radius-xl, 20px);
+  --tab-text-color: var(--icon-color, oklch(55.75% 0.0105 281));
+  --tab-text-color-active: var(--color-base-100, oklch(24% 0.0005 281));
+  --tab-text-color-focused: var(--icon-color, oklch(55.75% 0.0105 281));
+  --tab-text-color-focused-active: var(--color-base-100, oklch(24% 0.0005 281));
+  --tab-text-color-focused-active-current: var(--color-base-100, oklch(24% 0.0005 281));
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(212, 100%, 52%));
+  --tab-width: 240px;
+  --table-add-button-border-color: var(--background-modifier-border, oklch(0% 0 0 / 0.0625));
+  --table-border-color: var(--trans-faint-30, oklch(0% 0 0 / 0.092));
+  --table-drag-handle-background-active: var(--table-selection-border-color, color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%));
+  --table-drag-handle-color: var(--text-faint, oklch(71.5% 0.0105 281));
+  --table-header-border-color: var(--table-border-color, oklch(0% 0 0 / 0.092));
+  --table-header-color: var(--icon-color, oklch(55.75% 0.0105 281));
+  --table-header-size: var(--table-text-size, 0.90625em);
+  --table-header-weight: var(--font-medium, 520);
+  --table-line-height: var(--line-height-normal, 1.6);
+  --table-row-alt-background: var(--table-row-bg, oklch(20% 0 0 / 0.0275));
+  --table-row-alt-background-hover: var(--table-row-bg, oklch(20% 0 0 / 0.0275));
+  --table-row-bg: var(--trans-faint-05, oklch(20% 0 0 / 0.0275));
+  --table-selection-border-color: var(--interactive-accent, color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%));
+  --table-text-size: var(--font-small, 0.90625em);
+  --table-text-weight: var(--font-normal, 420);
+  --tag-color: var(--text-accent, hsl(212, 100%, 52%));
+  --tag-color-hover: var(--text-accent, hsl(212, 100%, 52%));
+  --tag-padding-x: 0.6875em;
+  --tag-padding-y: 0.3125em;
+  --tag-size: var(--font-smallest, 0.8em);
+  --tag-weight: var(--font-semi-medium, 490);
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%)));
+  --text-accent: var(--color-accent, hsl(212, 100%, 52%));
+  --text-accent-hover: var(--color-accent-2, color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%));
+  --text-error: var(--color-red, rgb(233, 49, 58));
+  --text-faint: var(--color-base-50, oklch(71.5% 0.0105 281));
+  --text-highlight-bg: oklch(from var(--color-highlight) 0.9 c h / 0.33);
+  --text-highlight-bg-rgb: var(--color-highlight-rgb, 229, 169, 37);
+  --text-highlight-bg-search: oklch(from var(--color-highlight) 0.9 c h / 0.625);
+  --text-muted: var(--color-base-70, oklch(46.5% 0.0105 281));
+  --text-normal: var(--color-base-90, oklch(30% 0.0005 281));
+  --text-selection: oklab(from var(--color-accent) l a b / 0.15);
+  --text-success: var(--color-green, rgb(0, 187, 93));
+  --text-warning: var(--color-orange, rgb(241, 110, 53));
+  --textHighlight: var(--text-highlight-bg, oklch(from var(--color-highlight) 0.9 c h / 0.33));
+  --titleFont: var(--font-text-theme, "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  --titlebar-background: var(--background-secondary, transparent);
+  --titlebar-background-focused: var(--background-secondary-alt, transparent);
+  --titlebar-border-color: var(--background-modifier-border, oklch(0% 0 0 / 0.0625));
+  --titlebar-height: 36px;
+  --titlebar-text-color: var(--trans-faint-60, oklch(0% 0 0 / 0.32));
+  --titlebar-text-color-focused: var(--text-muted, oklch(46.5% 0.0105 281));
+  --titlebar-text-weight: var(--font-semibold, 620);
+  --toggle-border-width: 4px;
+  --toggle-s-border-width: 4px;
+  --toggle-s-thumb-height: 12px;
+  --toggle-s-thumb-width: 12px;
+  --toggle-s-width: 36px;
+  --toggle-thumb-height: 12px;
+  --toggle-thumb-width: 12px;
+  --toggle-width: 44px;
+  --traffic-lights-offset-x: var(--header-height, 56px);
+  --traffic-lights-offset-y: var(--header-height, 56px);
+  --trans-faint-00: oklch(62.5% 0 0 / 0.03);
+  --trans-faint-05: oklch(20% 0 0 / 0.0275);
+  --trans-faint-10: oklch(05% 0 0 / 0.055);
+  --trans-faint-20: oklch(0% 0 0 / 0.0625);
+  --trans-faint-25: oklch(0% 0 0 / 0.07);
+  --trans-faint-30: oklch(0% 0 0 / 0.092);
+  --trans-faint-40: oklch(0% 0 0 / 0.1125);
+  --trans-faint-50: oklch(0% 0 0 / 0.145);
+  --trans-faint-60: oklch(0% 0 0 / 0.32);
+  --trans-strong-00: oklch(var(--bl-00) 0 0 / 0.95);
+  --trans-strong-10: oklch(var(--bl-00) 0 0 / 0.75);
+  --trans-strong-20: oklch(var(--bl-00) 0 0 / 0.625);
+  --trans-strong-30: oklch(var(--bl-00) 0 0 / 0.4);
+  --trans-strong-40: oklch(from var(--color-base-50) l c h / 0.1);
+  --trans-white-00: oklch(var(--bl-00) 0 0 / 0.75);
+  --trans-white-10: oklch(var(--bl-00) 0 0 / 0.625);
+  --vault-profile-color: var(--icon-color, oklch(55.75% 0.0105 281));
+  --vault-profile-color-hover: var(--text-muted, oklch(46.5% 0.0105 281));
+  --vault-profile-font-size: var(--font-ui-small, 18px);
+  --vault-profile-font-weight: var(--font-normal, 420);
+  --vl-ease-out: cubic-bezier(0.3, 0.75, 0, 1);
+  --vl-layout-padding: 8px;
+  --workspace-border-color: var(--trans-faint-00, oklch(62.5% 0 0 / 0.03));
+  --quartz-icon-color: currentColor;
+}
+
+html[saved-theme="light"] body {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
+  background-color: var(--background-primary, rgba(0, 0, 0, 0));
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
+  border-right-color: oklch(0 0 0 / 0.0625);
+  border-right-width: 0px;
+}
+
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
+  border-left-color: oklch(0 0 0 / 0.0625);
+  color: oklch(0.3 0.0005 281);
+}`,
+    typography: `html[saved-theme="light"] body .markdown-rendered > h1 {
+  --anim-fast-delay: 150ms cubic-bezier(0.65, 0.05, 0.36, 1);
+  --anim-fast-smooth: 150ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  --anim-fast-swing: 150ms cubic-bezier(0, 0.55, 0.45, 1);
+  --anim-super-delay: 75ms cubic-bezier(0.65, 0.05, 0.36, 1);
+  --anim-super-smooth: 75ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  --anim-super-swing: 75ms cubic-bezier(0, 0.55, 0.45, 1);
+  --background-modifier-active-hover: hsla(212, 100%, 52%, 0.1);
+  --background-modifier-border: oklch(0% 0 0 / 0.0625);
+  --background-modifier-border-focus: transparent;
+  --background-modifier-border-hover: oklch(82.50% 0.0025 281);
+  --background-modifier-error: rgb(233, 49, 58);
+  --background-modifier-error-hover: rgb(233, 49, 58);
+  --background-modifier-error-rgb: 233, 49, 58;
+  --background-modifier-form-field: transparent;
+  --background-modifier-form-field-hover: transparent;
+  --background-modifier-hover: oklch(0% 0 0 / 0.0625);
+  --background-modifier-success: rgb(0, 187, 93);
+  --background-modifier-success-rgb: 0, 187, 93;
+  --background-primary: oklch(99% 0.0005 281);
+  --background-primary-alt: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281));
+  --background-secondary: oklch(96.2% 0.0025 281);
+  --background-secondary-alt: oklch(99% 0.0005 281);
+  --bg-checkbox: radial-gradient(transparent 50%, oklch(82.50% 0.0025 281) 55% 60%, transparent 65%);
+  --bg-main-inner: oklch(97.5% 0.00125 281);
+  --bg-main-outer: oklch(94.5% 0.00625 281);
+  --bg-main-workspace: radial-gradient(at 50% 50%, oklch(97.5% 0.00125 281) 20%, oklch(94.5% 0.00625 281) 100%);
+  --blockquote-border-color: oklch(71.5% 0.0105 281);
+  --blockquote-color: oklch(46.5% 0.0105 281);
+  --blur-background: color-mix(in srgb, oklch(99% 0.0005 281) 65%, transparent) linear-gradient(oklch(99% 0.0005 281), color-mix(in srgb, oklch(99% 0.0005 281) 65%, transparent));
+  --blur-l: blur(16px) saturate(1.125) brightness(1);
+  --blur-m: blur(12px) saturate(1.125) brightness(1);
+  --blur-s: blur(8px) saturate(1.125) brightness(1);
+  --bold-color: oklch(24% 0.0005 281);
+  --bold-modifier: 200;
+  --bold-weight: 670;
+  --button-corner-shape: round;
   --button-radius: 8px;
   --callout-blend-mode: normal;
-  --callout-border-opacity: 0.2375;
   --callout-bug: 214, 50, 202;
   --callout-default: 31, 132, 255;
   --callout-error: 233, 49, 58;
@@ -2779,13 +3659,8 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-todo: 31, 132, 255;
   --callout-warning: 229, 169, 37;
   --canvas-background: oklch(99% 0.0005 281);
-  --canvas-card-label-color: oklch(71.5% 0.0105 281);
-  --canvas-color-1: 233, 49, 58;
-  --canvas-color-2: 241, 110, 53;
-  --canvas-color-3: 229, 169, 37;
-  --canvas-color-4: 0, 187, 93;
-  --canvas-color-5: 31, 132, 255;
-  --canvas-color-6: 124, 80, 237;
+  --canvas-controls-icon-size: 16px;
+  --canvas-controls-icon-stroke: 2px;
   --canvas-controls-radius: 8px;
   --canvas-dot-pattern: oklch(85.75% 0.0025 281);
   --caret-color: oklch(30% 0.0005 281);
@@ -2801,7 +3676,6 @@ html[saved-theme="dark"] body ul.tags > li {
   --code-background: oklch(0% 0 0 / 0.0625);
   --code-background-alt: oklch(100% 0 0 / 0.75);
   --code-border-color: oklch(0% 0 0 / 0.0625);
-  --code-border-width: 0;
   --code-bracket-background: oklch(0% 0 0 / 0.0625);
   --code-comment: oklch(71.5% 0.0105 281);
   --code-function: rgb(229, 169, 37);
@@ -2812,11 +3686,11 @@ html[saved-theme="dark"] body ul.tags > li {
   --code-property: rgb(9, 186, 221);
   --code-punctuation: oklch(46.5% 0.0105 281);
   --code-radius: 6px;
+  --code-size: 0.875em;
   --code-special: rgb(233, 49, 58);
   --code-string: rgb(0, 187, 93);
   --code-tag: rgb(233, 49, 58);
   --code-value: rgb(124, 80, 237);
-  --codeFont: var(--font-text, "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   --collapse-icon-color: oklch(71.5% 0.0105 281);
   --collapse-icon-color-collapsed: hsl(212, 100%, 52%);
   --color-accent: hsl(212, 100%, 52%);
@@ -2840,90 +3714,33 @@ html[saved-theme="dark"] body ul.tags > li {
   --color-base-70: oklch(46.5% 0.0105 281);
   --color-base-80: oklch(40% 0.0025 281);
   --color-base-90: oklch(30% 0.0005 281);
-  --color-blue: rgb(31, 132, 255);
-  --color-blue-rgb: 31, 132, 255;
-  --color-cyan: rgb(9, 186, 221);
-  --color-cyan-rgb: 9, 186, 221;
-  --color-green: rgb(0, 187, 93);
-  --color-green-rgb: 0, 187, 93;
   --color-highlight: rgb(229, 169, 37);
   --color-highlight-rgb: 229, 169, 37;
-  --color-orange: rgb(241, 110, 53);
-  --color-orange-rgb: 241, 110, 53;
-  --color-pink: rgb(214, 50, 202);
-  --color-pink-rgb: 214, 50, 202;
-  --color-purple: rgb(124, 80, 237);
-  --color-purple-rgb: 124, 80, 237;
-  --color-red: rgb(233, 49, 58);
-  --color-red-rgb: 233, 49, 58;
-  --color-yellow: rgb(229, 169, 37);
-  --color-yellow-rgb: 229, 169, 37;
   --control-icon-background: oklch(99% 0.0005 281);
   --control-icon-color: oklch(40% 0.0025 281);
   --control-icon-shadow: 0px 0 12px 0px oklch(05% 0 0 / 0.055);
-  --corner-smoothing: 60%;
-  --dark: var(--text-normal, oklch(30% 0.0005 281));
-  --darkgray: var(--text-normal, oklch(30% 0.0005 281));
-  --dialog-width: 500px;
   --divider-color: oklch(0% 0 0 / 0.0625);
   --divider-color-hover: color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%);
-  --divider-width: 0;
-  --drag-ghost-background: oklch(100% 0.0005 281);
-  --drag-ghost-text-color: oklch(30% 0.0005 281);
+  --divider-vertical-height: 100%;
   --dropdown-background: oklch(0% 0 0 / 0.07);
   --dropdown-background-hover: oklch(0% 0 0 / 0.092);
-  --embed-block-shadow-hover: none;
-  --embed-border-start: none;
-  --embed-padding: 0 1.25em 0 0;
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
   --fab-bg: oklch(99% 0.0005 281);
   --fab-color: oklch(55.75% 0.0105 281);
   --fab-color-active: oklch(30% 0.0005 281);
-  --fab-easing-curve: cubic-bezier(0.55, 2, 0.5, 0.97);
-  --file-header-background: oklch(99% 0.0005 281);
-  --file-header-background-focused: oklch(99% 0.0005 281);
-  --file-header-font: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --file-header-font-weight: 490;
-  --file-line-width: 43.75rem;
-  --file-margins: 28px 5%;
-  --file-margins-x: 5%;
-  --file-margins-y: 28px;
   --flair-background: oklch(0% 0 0 / 0.07);
   --flair-color: oklch(30% 0.0005 281);
-  --flair-padding: 3px 1px;
-  --font-bold: 720;
-  --font-extrabold: 820;
-  --font-extralight: 305;
-  --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-interface-override: "Raveo";
-  --font-interface-theme: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-light: 320;
-  --font-medium: 520;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-normal: 420;
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-normal-linux: 490;
-  --font-print: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, Arial';
+  --font-print: '??', "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, 'Arial';
   --font-semi-medium: 490;
-  --font-semibold: 620;
-  --font-small: 0.90625em;
   --font-text: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-text-override: "Raveo";
-  --font-text-theme: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-thin: 270;
-  --font-ui-larger: 24px;
-  --font-weight: 420;
-  --footnote-divider-color: oklch(0% 0 0 / 0.0625);
-  --footnote-id-color: oklch(46.5% 0.0105 281);
-  --footnote-id-color-no-occurrences: oklch(71.5% 0.0105 281);
-  --footnote-input-background-active: oklch(0% 0 0 / 0.0625);
-  --footnote-line-height: 1.6;
-  --footnote-radius: 8px;
-  --frame-right-space: 160px;
-  --frame-right-space-override: 164px;
-  --glass-base: inset 1px 1px 2px 0 oklch(100% 0 0 / 0.4), inset -1px -1px 2px 0 oklch(100% 0 0 / 0.4);
-  --glass-base-l: inset 1.5px 1.5px 4px 0 oklch(100% 0 0 / 0.625), inset -1.5px -1.5px 4px 0 oklch(100% 0 0 / 0.625);
-  --glass-base-m: inset 0 0 1px 0 oklch(100% 0 0 / 0.625), inset 1.5px 1.5px 3px 0 oklch(100% 0 0 / 0.4), inset -1.5px -1.5px 3px 0 oklch(100% 0 0 / 0.4);
-  --graph-controls-width: 232px;
+  --font-weight: var(--h1-weight, 330);
   --graph-line: oklch(82.50% 0.0025 281);
   --graph-node: oklch(46.5% 0.0105 281);
   --graph-node-attachment: rgb(229, 169, 37);
@@ -2931,31 +3748,17 @@ html[saved-theme="dark"] body ul.tags > li {
   --graph-node-tag: rgb(0, 187, 93);
   --graph-node-unresolved: oklch(71.5% 0.0105 281);
   --graph-text: oklch(30% 0.0005 281);
-  --gray: var(--text-muted, oklch(46.5% 0.0105 281));
   --h1-color: oklch(24% 0.0005 281);
-  --h1-size: 2em;
-  --h1-size-alt: 1.625em;
-  --h1-weight: 330;
-  --h1-weight-alt: 570;
   --h2-color: oklch(30% 0.0005 281);
-  --h2-size: 1.5em;
-  --h2-weight: 570;
   --h3-color: oklch(30% 0.0005 281);
-  --h3-size: 1.375em;
-  --h3-weight: 570;
   --h4-color: oklch(30% 0.0005 281);
-  --h4-size: 1.25em;
-  --h4-weight: 570;
   --h5-color: oklch(40% 0.0025 281);
   --h5-line-height: 1.6;
-  --h5-size: 1.125em;
   --h6-color: oklch(46.5% 0.0105 281);
   --h6-line-height: 1.6;
-  --h6-weight: 670;
-  --header-height: 56px;
-  --headerFont: var(--font-text, "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   --heading-formatting: oklch(71.5% 0.0105 281);
-  --highlight: var(--text-highlight-bg, oklch(from rgb(229, 169, 37) 0.9 c h / 0.33));
+  --heading-margin-start: 1.375em;
+  --heading-spacing: round(nearest, 2.375em, 2px);
   --highlight-blue-rgb: 31, 132, 255;
   --highlight-cyan-rgb: 9, 186, 221;
   --highlight-green-rgb: 0, 187, 93;
@@ -2965,164 +3768,47 @@ html[saved-theme="dark"] body ul.tags > li {
   --highlight-red-rgb: 233, 49, 58;
   --highlight-yellow-rgb: 229, 169, 37;
   --hr-color: oklch(0% 0 0 / 0.092);
-  --icon-color: oklch(55.75% 0.0105 281);
-  --icon-color-active: hsl(212, 100%, 52%);
-  --icon-color-focused: oklch(30% 0.0005 281);
-  --icon-color-hover: oklch(30% 0.0005 281);
-  --icon-m-stroke-width: 1.875px;
-  --icon-stroke: 1.875px;
-  --icon-stroke-thick: 2.25px;
-  --icon-xl: 28px;
-  --icon-xs-stroke-width: 2.125px;
-  --indent-unit: 0.375em;
-  --indentation-guide-color: oklch(0% 0 0 / 0.092);
-  --indentation-guide-width: 0;
-  --indentation-guide-width-active: 0;
-  --inline-title-color: oklch(24% 0.0005 281);
-  --inline-title-margin-bottom: round(nearest, clamp(0px, 0.5em, 1.5rem), 2px);
-  --inline-title-size: 2em;
-  --inline-title-weight: 330;
-  --input-border-width: 0;
-  --input-date-separator: oklch(71.5% 0.0105 281);
-  --input-font-weight: 420;
-  --input-height: 28px;
-  --input-placeholder-color: oklch(71.5% 0.0105 281);
-  --input-radius: 8px;
-  --input-shadow: none;
-  --input-shadow-hover: none;
+  --hr-spacing: 2.25rem;
   --interactive-accent: color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%);
   --interactive-accent-hover: color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%);
   --interactive-accent-hsl: 212, 100%, 52%;
   --interactive-hover: oklch(0% 0 0 / 0.092);
   --interactive-normal: oklch(0% 0 0 / 0.07);
-  --light: var(--background-primary, oklch(99% 0.0005 281));
-  --lightgray: var(--background-secondary, oklch(96.2% 0.0025 281));
-  --line-height-normal: 1.6;
+  --left-margin-delay: 150ms;
   --link-color: hsl(212, 100%, 52%);
   --link-color-hover: color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%);
   --link-color-sidebar: color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%);
-  --link-decoration: none;
-  --link-decoration-hover: none;
   --link-external-color: hsl(212, 100%, 52%);
   --link-external-color-hover: color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%);
   --link-unresolved-color: oklch(from color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) l c h / 0.7);
   --link-unresolved-decoration-color: hsla(212, 100%, 52%, 0.3);
-  --link-unresolved-lch: 0.7;
-  --link-unresolved-opacity: 1;
   --link-weight: 420;
   --list-bullet-color: oklch(55.75% 0.0105 281);
-  --list-dash-color: oklch(0% 0 0 / 0.25);
   --list-indent: 1.5em;
-  --list-marker-color: oklch(71.5% 0.0105 281);
-  --list-marker-color-collapsed: hsl(212, 100%, 52%);
-  --list-marker-color-hover: oklch(46.5% 0.0105 281);
-  --list-spacing: 0.125em;
   --math-color: oklch(24% 0.0005 281);
   --menu-background: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281));
   --menu-border-color: oklch(0% 0 0 / 0.1125);
+  --menu-border-width: 1px;
+  --menu-corner-shape: round;
+  --menu-padding: 6px;
   --menu-radius: 14px;
   --menu-shadow: inset 1px 1px 2px 0 oklch(100% 0 0 / 0.75), inset -1px -1px 2px 0 oklch(100% 0 0 / 0.75), 0px 0px 5px 0px oklch(20% 0 0 / 0.0275), 0px 10px 20px 0px oklch(0% 0 0 / 0.07);
-  --metadata-border-color: oklch(0% 0 0 / 0.0625);
-  --metadata-border-radius: 12px;
-  --metadata-divider-color: oklch(0% 0 0 / 0.0625);
-  --metadata-gap: 2px;
-  --metadata-input-background-active: oklch(0% 0 0 / 0.0625);
-  --metadata-input-font: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-input-height: 2.125rem;
-  --metadata-input-longtext-lines: 5;
-  --metadata-input-padding: 6px 8px;
-  --metadata-input-text-color: oklch(30% 0.0005 281);
-  --metadata-label-background-active: oklch(0% 0 0 / 0.0625);
-  --metadata-label-font: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-label-font-weight: 490;
-  --metadata-label-text-color: oklch(55.75% 0.0105 281);
-  --metadata-label-text-color-hover: oklch(55.75% 0.0105 281);
-  --metadata-label-width: 10em;
-  --metadata-property-background-active: oklch(0% 0 0 / 0.0625);
-  --metadata-property-box-shadow-focus: 0 0 0 2.5px color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%);
-  --metadata-property-box-shadow-hover: 0 0 0 2.5px oklch(0% 0 0 / 0.0625);
-  --mobile-nav-fade-bg: linear-gradient(oklch(96.2% 0.0025 281), transparent 78px);
-  --modal-background: oklch(99.5% 0.00125 281 / 0.675);
-  --modal-border-color: oklch(75.25% 0.0025 281);
-  --modal-border-width: 0;
-  --modal-community-header-bg: oklch(100% 0 0 / 0.75);
-  --modal-community-item-bg: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281));
-  --modal-radius: 22px;
-  --modal-small-background: oklch(99.5% 0.00125 281 / 0.7);
-  --nav-collapse-icon-color: oklch(0% 0 0 / 0.32);
-  --nav-collapse-icon-color-collapsed: oklch(71.5% 0.0105 281);
-  --nav-folder-color: oklch(40% 0.0025 281);
-  --nav-header-bg: oklch(from oklch(71.5% 0.0105 281) l c h / 0.1);
-  --nav-header-timing: cubic-bezier(0.3, 0.75, 0, 1);
-  --nav-heading-color: oklch(40% 0.0025 281);
-  --nav-heading-color-collapsed: oklch(71.5% 0.0105 281);
-  --nav-heading-color-collapsed-hover: oklch(46.5% 0.0105 281);
-  --nav-heading-color-hover: oklch(30% 0.0005 281);
-  --nav-heading-weight: 520;
-  --nav-heading-weight-hover: 520;
-  --nav-indentation-guide-color: oklch(0% 0 0 / 0.092);
-  --nav-indentation-guide-width: 0;
-  --nav-item-background-active: oklch(0% 0 0 / 0.0625);
-  --nav-item-background-hover: oklch(0% 0 0 / 0.0625);
-  --nav-item-background-selected: hsla(212, 100%, 52%, 0.15);
-  --nav-item-color: oklch(46.5% 0.0105 281);
-  --nav-item-color-active: oklch(30% 0.0005 281);
-  --nav-item-color-highlighted: hsl(212, 100%, 52%);
-  --nav-item-color-hover: oklch(30% 0.0005 281);
-  --nav-item-color-selected: oklch(30% 0.0005 281);
-  --nav-item-radius: 8px;
-  --nav-tag-color: oklch(71.5% 0.0105 281);
-  --nav-tag-color-active: oklch(46.5% 0.0105 281);
-  --nav-tag-color-hover: oklch(46.5% 0.0105 281);
-  --nav-tag-radius: 8px;
-  --nav-tag-weight: 620;
-  --nav-text-color: oklch(30% 0.0005 281);
-  --paint-description: "The default light color scheme for Velocity. A timeless classic with a mild futuristic touch.";
-  --paint-image: url(data:image/webpbase64,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);
+  --p-spacing: 1.125rem;
   --pdf-background: oklch(99% 0.0005 281);
   --pdf-page-background: oklch(99% 0.0005 281);
-  --pdf-shadow: none;
   --pdf-sidebar-background: oklch(99% 0.0005 281);
-  --pdf-spread-shadow: none;
   --pdf-thumbnail-shadow: 0 0 0 0.5px oklch(0% 0 0 / 0.1125);
-  --pill-background: oklch(0% 0 0 / 0.0625);
-  --pill-background-hover: oklch(0% 0 0 / 0.0625);
-  --pill-border-color: oklch(0% 0 0 / 0.0625);
-  --pill-border-color-hover: oklch(82.50% 0.0025 281);
-  --pill-color: oklch(46.5% 0.0105 281);
-  --pill-color-hover: oklch(46.5% 0.0105 281);
-  --pill-color-remove: oklch(71.5% 0.0105 281);
-  --pill-color-remove-hover: white;
-  --pill-radius: 18px;
-  --pill-weight: 490;
-  --prompt-backdrop-filter: blur(12px) saturate(1.125) brightness(1);
-  --prompt-background: oklch(99.5% 0.00125 281 / 0.675);
-  --prompt-border-color: oklch(0% 0 0 / 0.1125);
-  --prompt-input-height: 48px;
-  --radius-l: 18px;
-  --radius-m: 12px;
-  --radius-ml: 14px;
-  --radius-prompt: 24px;
-  --radius-s: 8px;
-  --radius-settings: 28px;
-  --radius-sm: 10px;
-  --radius-xl: 20px;
-  --radius-xs: 6px;
-  --radius-xxl: 22px;
+  --popover-font-size: 16px;
   --raised-background: color-mix(in srgb, oklch(99% 0.0005 281) 65%, transparent) linear-gradient(oklch(99% 0.0005 281), color-mix(in srgb, oklch(99% 0.0005 281) 65%, transparent));
   --raised-blur: blur(8px) saturate(1.125) brightness(1);
-  --ribbon-background: transparent;
-  --ribbon-background-collapsed: transparent;
-  --ribbon-padding: 8px 0px 12px 8px;
-  --ribbon-width: 56px;
+  --right-margin-delay: 150ms;
   --scrollbar-active-thumb-bg: oklch(0% 0 0 / 0.145);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
   --scrollbar-radius: 18px;
   --scrollbar-thumb-bg: oklch(0% 0 0 / 0.092);
   --search-clear-button-color: oklch(71.5% 0.0105 281);
   --search-icon-color: oklch(71.5% 0.0105 281);
-  --search-icon-size: 17px;
   --search-result-background: oklch(100% 0 0 / 0.625);
-  --secondary: var(--text-accent, hsl(212, 100%, 52%));
   --setting-group-heading-color: oklch(55.75% 0.0105 281);
   --setting-group-heading-size: 18px;
   --setting-group-heading-weight: 520;
@@ -3146,7 +3832,6 @@ html[saved-theme="dark"] body ul.tags > li {
   --shadow-setting-items: inset 1px 1px 2px 0 oklch(100% 0 0 / 0.75), inset -1px -1px 2px 0 oklch(100% 0 0 / 0.75), 0px 1px 9px oklch(20% 0 0 / 0.0275);
   --shadow-setting-items-top: inset 1px 2px 2px 0 oklch(100% 0 0 / 0.75), 0px 1px 9px oklch(20% 0 0 / 0.0275);
   --shadow-sidebar: 0px 0px 8px 0px oklch(62.5% 0 0 / 0.03);
-  --shadow-strong: 0px 1.25px 6.25px rgba(0, 0, 0, 0.08), 0px 3px 12px rgba(0, 0, 0, 0.06), 0px 16px 32px rgba(0, 0, 0, 0.12);
   --shadow-suggestion-item: inset 0 0 1px 0 oklch(100% 0 0 / 0.625), inset 1.5px 1.5px 3px 0 oklch(100% 0 0 / 0.4), inset -1.5px -1.5px 3px 0 oklch(100% 0 0 / 0.4), 0px 3px 18px 0px oklch(0% 0 0 / 0.07);
   --shadow-tab: 0px 0px 4px 0px oklch(0% 0 0 / 0.092);
   --shadow-toggle: inset 0.75px 0.75px 1.75px 0 oklch(100% 0 0 / 0.4), inset -0.75px -0.75px 1.75px 0 oklch(100% 0 0 / 0.4);
@@ -3155,6 +3840,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --shiki-active-tab-border-color: oklch(46.5% 0.0105 281);
   --shiki-code-background: oklch(0% 0 0 / 0.0625);
   --shiki-code-block-border-radius: 6px;
+  --shiki-code-block-spacing: 1rem;
   --shiki-code-comment: oklch(71.5% 0.0105 281);
   --shiki-code-function: rgb(0, 187, 93);
   --shiki-code-important: rgb(241, 110, 53);
@@ -3165,32 +3851,21 @@ html[saved-theme="dark"] body ul.tags > li {
   --shiki-code-string: rgb(229, 169, 37);
   --shiki-code-value: rgb(124, 80, 237);
   --shiki-gutter-border-color: oklch(0% 0 0 / 0.0625);
+  --shiki-gutter-border-width: 1px;
   --shiki-gutter-text-color: oklch(71.5% 0.0105 281);
   --shiki-gutter-text-color-highlight: oklch(46.5% 0.0105 281);
   --shiki-highlight-green: rgba(0, 187, 93, 0.5);
   --shiki-highlight-green-background: rgba(0, 187, 93, 0.1);
   --shiki-highlight-neutral: oklch(46.5% 0.0105 281);
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
   --shiki-highlight-red: rgba(233, 49, 58, 0.5);
   --shiki-highlight-red-background: rgba(233, 49, 58, 0.1);
   --shiki-terminal-dots-color: oklch(71.5% 0.0105 281);
-  --sidebar-left-toggle-inner-width: 12%;
-  --sidebar-right-toggle-inner-width: 12%;
-  --slider-thumb-border-color: oklch(82.50% 0.0025 281);
-  --slider-thumb-border-width: 0;
-  --slider-thumb-height: 12px;
-  --slider-thumb-radius: 12px;
-  --slider-thumb-width: 12px;
-  --slider-thumb-y: -3px;
-  --slider-track-background: oklch(0% 0 0 / 0.145);
-  --slider-track-height: 20px;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
   --stacked-shadow-color: oklch(05% 0 0 / 0.055);
-  --status-bar-background: transparent;
-  --status-bar-border-color: oklch(0% 0 0 / 0.0625);
-  --status-bar-border-width: 0;
-  --status-bar-radius: 18px 0 0 18px;
-  --status-bar-text-color: oklch(46.5% 0.0105 281);
   --strikethrough-color: oklch(71.5% 0.0105 281);
   --suggestion-background: oklch(99% 0.0005 281);
+  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
   --sync-avatar-color-1: rgb(233, 49, 58);
   --sync-avatar-color-2: rgb(241, 110, 53);
   --sync-avatar-color-3: rgb(229, 169, 37);
@@ -3201,17 +3876,15 @@ html[saved-theme="dark"] body ul.tags > li {
   --sync-avatar-color-8: rgb(214, 50, 202);
   --tab-background-active: oklch(100% 0 0 / 0.625);
   --tab-close-bg: oklch(from oklch(85.75% 0.0025 281) l c h / 0.8);
-  --tab-container-background: transparent;
   --tab-divider-color: oklch(82.50% 0.0025 281);
+  --tab-font-size: 13px;
   --tab-font-weight: 420;
-  --tab-max-width: 240px;
   --tab-outline-color: oklch(0% 0 0 / 0.0625);
-  --tab-outline-width: 0;
   --tab-radius: 8px;
   --tab-right-fade: linear-gradient(to left, oklch(91.5% 0.0035 281) 80%, transparent);
   --tab-right-fade-alt: linear-gradient(to left, oklch(93.5% 0 0) 80%, transparent);
   --tab-sidebar-bg: oklch(100% 0 0 / 0.95);
-  --tab-sidebar-container-bg: oklch(00% 0 0 / 0.03125);
+  --tab-stacked-font-size: 13px;
   --tab-stacked-font-weight: 520;
   --tab-stacked-header-width: 56px;
   --tab-stacked-pane-width: 43.75rem;
@@ -3219,6 +3892,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --tab-switcher-background: oklch(96.2% 0.0025 281);
   --tab-switcher-menubar-background: linear-gradient(to top, oklch(96.2% 0.0025 281), transparent);
   --tab-switcher-preview-radius: 20px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(212, 100%, 52%);
   --tab-text-color: oklch(55.75% 0.0105 281);
   --tab-text-color-active: oklch(24% 0.0005 281);
@@ -3226,12 +3900,16 @@ html[saved-theme="dark"] body ul.tags > li {
   --tab-text-color-focused-active: oklch(24% 0.0005 281);
   --tab-text-color-focused-active-current: oklch(24% 0.0005 281);
   --tab-text-color-focused-highlighted: hsl(212, 100%, 52%);
-  --tab-width: 240px;
   --table-add-button-border-color: oklch(0% 0 0 / 0.0625);
+  --table-add-button-border-width: 1px;
   --table-border-color: oklch(0% 0 0 / 0.092);
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
   --table-drag-handle-background-active: color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%);
   --table-drag-handle-color: oklch(71.5% 0.0105 281);
+  --table-drag-handle-color-active: white;
   --table-header-border-color: oklch(0% 0 0 / 0.092);
+  --table-header-border-width: 1px;
   --table-header-color: oklch(55.75% 0.0105 281);
   --table-header-size: 0.90625em;
   --table-header-weight: 520;
@@ -3239,7 +3917,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --table-row-alt-background: oklch(20% 0 0 / 0.0275);
   --table-row-alt-background-hover: oklch(20% 0 0 / 0.0275);
   --table-row-bg: oklch(20% 0 0 / 0.0275);
+  --table-row-last-border-width: 1px;
   --table-selection: hsla(212, 100%, 52%, 0.1);
+  --table-selection-blend-mode: darken;
   --table-selection-border-color: color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%);
   --table-text-size: 0.90625em;
   --table-text-weight: 420;
@@ -3249,11 +3929,8 @@ html[saved-theme="dark"] body ul.tags > li {
   --tag-border-color-hover: hsla(212, 100%, 52%, 0.15);
   --tag-color: hsl(212, 100%, 52%);
   --tag-color-hover: hsl(212, 100%, 52%);
-  --tag-padding-x: 0.6875em;
-  --tag-padding-y: 0.3125em;
   --tag-size: 0.8em;
   --tag-weight: 490;
-  --tertiary: var(--text-accent-hover, color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%));
   --text-accent: hsl(212, 100%, 52%);
   --text-accent-hover: color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%);
   --text-error: rgb(233, 49, 58);
@@ -3266,34 +3943,14 @@ html[saved-theme="dark"] body ul.tags > li {
   --text-selection: oklab(from hsl(212, 100%, 52%) l a b / 0.15);
   --text-success: rgb(0, 187, 93);
   --text-warning: rgb(241, 110, 53);
-  --textHighlight: var(--text-highlight-bg, oklch(from rgb(229, 169, 37) 0.9 c h / 0.33));
-  --titleFont: var(--font-text, "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  --titlebar-background: transparent;
-  --titlebar-background-focused: transparent;
-  --titlebar-border-color: oklch(0% 0 0 / 0.0625);
-  --titlebar-height: 36px;
-  --titlebar-text-color: oklch(0% 0 0 / 0.32);
-  --titlebar-text-color-focused: oklch(46.5% 0.0105 281);
-  --titlebar-text-weight: 620;
-  --toggle-border-width: 4px;
-  --toggle-s-border-width: 4px;
-  --toggle-s-thumb-height: 12px;
-  --toggle-s-thumb-width: 12px;
-  --toggle-s-width: 36px;
-  --toggle-thumb-height: 12px;
-  --toggle-thumb-width: 12px;
-  --toggle-width: 44px;
+  --touch-radius-l: 52px;
+  --touch-radius-m: 44px;
+  --touch-radius-s: 40px;
+  --touch-radius-xl: 60px;
+  --touch-radius-xs: 30px;
+  --touch-radius-xxs: 24px;
   --traffic-lights-offset-x: 56px;
   --traffic-lights-offset-y: 56px;
-  --trans-faint-00: oklch(62.5% 0 0 / 0.03);
-  --trans-faint-05: oklch(20% 0 0 / 0.0275);
-  --trans-faint-10: oklch(05% 0 0 / 0.055);
-  --trans-faint-20: oklch(0% 0 0 / 0.0625);
-  --trans-faint-25: oklch(0% 0 0 / 0.07);
-  --trans-faint-30: oklch(0% 0 0 / 0.092);
-  --trans-faint-40: oklch(0% 0 0 / 0.1125);
-  --trans-faint-50: oklch(0% 0 0 / 0.145);
-  --trans-faint-60: oklch(0% 0 0 / 0.32);
   --trans-strong-00: oklch(100% 0 0 / 0.95);
   --trans-strong-10: oklch(100% 0 0 / 0.75);
   --trans-strong-20: oklch(100% 0 0 / 0.625);
@@ -3301,55 +3958,6 @@ html[saved-theme="dark"] body ul.tags > li {
   --trans-strong-40: oklch(from oklch(71.5% 0.0105 281) l c h / 0.1);
   --trans-white-00: oklch(100% 0 0 / 0.75);
   --trans-white-10: oklch(100% 0 0 / 0.625);
-  --vault-profile-color: oklch(55.75% 0.0105 281);
-  --vault-profile-color-hover: oklch(46.5% 0.0105 281);
-  --vault-profile-font-size: 18px;
-  --vault-profile-font-weight: 420;
-  --vl-ease-out: cubic-bezier(0.3, 0.75, 0, 1);
-  --vl-layout-padding: 8px;
-  --workspace-border-color: oklch(62.5% 0 0 / 0.03);
-  --quartz-icon-color: currentColor;
-}
-
-html[saved-theme="light"] body {
-  background-color: var(--background-primary);
-  color: var(--text-normal);
-}
-
-html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgba(0, 0, 0, 0);
-  color: oklch(0.3 0.0005 281);
-}
-
-html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
-  background-color: rgba(0, 0, 0, 0);
-  color: oklch(0.3 0.0005 281);
-}
-
-html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: rgba(0, 0, 0, 0);
-  color: oklch(0.3 0.0005 281);
-}
-
-html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
-  border-right-color: oklch(0 0 0 / 0.0625);
-  border-right-width: 0px;
-}
-
-html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgba(0, 0, 0, 0);
-  border-left-color: oklch(0 0 0 / 0.0625);
-  color: oklch(0.3 0.0005 281);
-}`,
-    typography: `html[saved-theme="light"] body .markdown-rendered > h1 {
-  --bold-modifier: 200;
-  --font-weight: 330;
-  --heading-margin-start: 1.375em;
-  --heading-spacing: round(nearest, 2.375em, 2px);
-  --hr-spacing: 2.25rem;
-  --left-margin-delay: 150ms;
-  --p-spacing: 1.125rem;
-  --right-margin-delay: 150ms;
   background-color: oklch(0 0 0 / 0.092);
   border-bottom-color: oklch(0.24 0.0005 281);
   border-bottom-left-radius: 22px;
@@ -3363,13 +3971,13 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   border-top-left-radius: 22px;
   border-top-right-radius: 22px;
   border-top-width: 0px;
-  color: oklch(0.24 0.0005 281);
+  color: var(--h1-color, oklch(0.24 0.0005 281));
   content: "";
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-size: 32px;
-  font-weight: 330;
-  letter-spacing: -0.32px;
-  line-height: 38.4px;
+  font-family: var(--h1-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h1-size, 32px);
+  font-weight: var(--font-weight, 330);
+  letter-spacing: var(--h1-letter-spacing, -0.32px);
+  line-height: var(--h1-line-height, 38.4px);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -3381,15 +3989,14 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 }
 
 html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
-  color: oklch(0.24 0.0005 281);
+  color: var(--bold-color, oklch(0.24 0.0005 281));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 670;
   outline: oklch(0.24 0.0005 281) none 0px;
   text-decoration-color: oklch(0.24 0.0005 281);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
-  color: oklch(0.3 0.0005 281);
+  color: var(--italic-color, oklch(0.3 0.0005 281));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 420;
   outline: oklch(0.3 0.0005 281) none 0px;
@@ -3397,7 +4004,7 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
-  color: oklch(0.3 0.0005 281);
+  color: var(--italic-color, oklch(0.3 0.0005 281));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 420;
   outline: oklch(0.3 0.0005 281) none 0px;
@@ -3405,16 +4012,15 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
 }
 
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
-  color: oklch(0.24 0.0005 281);
+  color: var(--bold-color, oklch(0.24 0.0005 281));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 670;
   outline: oklch(0.24 0.0005 281) none 0px;
   text-decoration-color: oklch(0.24 0.0005 281);
 }
 
 html[saved-theme="light"] body .text-highlight {
-  background-color: oklch(0.9 0.150353 81.1033 / 0.33);
-  color: oklch(0.24 0.0005 281);
+  background-color: var(--text-highlight-bg, oklch(0.9 0.150353 81.1033 / 0.33));
+  color: var(--text-normal, oklch(0.24 0.0005 281));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 420;
   outline: oklch(0.24 0.0005 281) none 0px;
@@ -3422,7 +4028,7 @@ html[saved-theme="light"] body .text-highlight {
 }
 
 html[saved-theme="light"] body del {
-  color: oklch(0.715 0.0105 281);
+  color: var(--strikethrough-color, oklch(0.715 0.0105 281));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 420;
   outline: oklch(0.715 0.0105 281) none 0px;
@@ -3430,7 +4036,7 @@ html[saved-theme="light"] body del {
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
   font-weight: 490;
 }
 
@@ -3441,42 +4047,42 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: oklab(0.637864 -0.0435936 -0.193248);
+  background-color: var(--checkbox-color, oklab(0.637864 -0.0435936 -0.193248));
   border-color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body p {
-  color: oklch(0.465 0.0105 281);
+  color: var(--text-muted, oklch(0.465 0.0105 281));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 420;
   outline: oklch(0.465 0.0105 281) none 0px;
   text-decoration-color: oklch(0.465 0.0105 281);
 }`,
     links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
-  color: rgb(10, 124, 255);
+  color: var(--link-external-color, rgb(10, 124, 255));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 420;
+  font-weight: var(--link-weight, 420);
   outline: rgb(10, 124, 255) none 0px;
   text-decoration-color: rgb(10, 124, 255);
   transition: opacity 0.15s ease-in-out;
 }
 
 html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(10, 124, 255);
+  color: var(--link-color, rgb(10, 124, 255));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 420;
+  font-weight: var(--link-weight, 420);
   outline: rgb(10, 124, 255) none 0px;
   text-decoration-color: rgb(10, 124, 255);
   transition: opacity 0.15s ease-in-out;
 }
 
 html[saved-theme="light"] body a.internal-link.broken {
-  color: oklch(0.637864 0.198104 257.288 / 0.7);
+  color: var(--link-unresolved-color, oklch(0.637864 0.198104 257.288 / 0.7));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 420;
+  font-weight: var(--link-weight, 420);
   outline: oklch(0.637864 0.198104 257.288 / 0.7) none 0px;
   text-decoration: rgba(10, 124, 255, 0.3);
-  text-decoration-color: rgba(10, 124, 255, 0.3);
+  text-decoration-color: var(--link-unresolved-decoration-color, rgba(10, 124, 255, 0.3));
   transition: opacity 0.15s ease-in-out;
 }`,
     lists: `html[saved-theme="light"] body dd {
@@ -3503,7 +4109,7 @@ html[saved-theme="light"] body ul.overflow {
   border-top-color: oklch(0.3 0.0005 281);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
-  color: oklch(0.715 0.0105 281);
+  color: var(--text-faint, oklch(0.715 0.0105 281));
 }
 
 html[saved-theme="light"] body blockquote {
@@ -3519,25 +4125,25 @@ html[saved-theme="light"] body blockquote {
 html[saved-theme="light"] body table {
   color: oklch(0.3 0.0005 281);
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  margin-top: 18px;
+  margin-top: var(--heading-spacing, 18px);
   width: 700px;
 }
 
 html[saved-theme="light"] body tbody tr:nth-child(odd) {
-  background-color: oklch(0.2 0 0 / 0.0275);
+  background-color: var(--table-row-alt-background, oklch(0.2 0 0 / 0.0275));
 }
 
 html[saved-theme="light"] body td {
   border-bottom-color: oklch(0.3 0.0005 281);
   border-bottom-width: 0px;
   border-left-color: oklch(0.3 0.0005 281);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: oklch(0.3 0.0005 281);
   border-right-width: 0px;
   border-top-color: oklch(0.3 0.0005 281);
   border-top-width: 0px;
-  color: oklch(0.3 0.0005 281);
-  font-weight: 420;
+  color: var(--table-text-color, oklch(0.3 0.0005 281));
+  font-weight: var(--font-normal, 420);
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -3546,18 +4152,18 @@ html[saved-theme="light"] body th {
   border-bottom-color: oklch(0 0 0 / 0.092);
   border-bottom-width: 2px;
   border-left-color: oklch(0.5575 0.0105 281);
-  border-left-width: 0px;
+  border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: oklch(0.5575 0.0105 281);
   border-right-width: 0px;
   border-top-color: oklch(0.5575 0.0105 281);
-  border-top-width: 0px;
-  color: oklch(0.5575 0.0105 281);
-  font-weight: 520;
+  border-top-width: var(--table-header-border-width, 0px);
+  color: var(--table-header-color, oklch(0.5575 0.0105 281));
+  font-weight: var(--table-header-weight, 520);
   padding-left: 12px;
   padding-right: 12px;
 }`,
     code: `html[saved-theme="light"] body code {
-  background-color: oklch(0 0 0 / 0.0625);
+  background-color: var(--code-background, oklch(0 0 0 / 0.0625));
   border-bottom-color: oklch(0.3 0.0005 281);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -3566,13 +4172,13 @@ html[saved-theme="light"] body th {
   border-top-color: oklch(0.3 0.0005 281);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  color: oklch(0.3 0.0005 281);
+  color: var(--code-normal, oklch(0.3 0.0005 281));
   padding-left: 6px;
   padding-right: 6px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
-  background-color: oklch(0 0 0 / 0.0625);
+  background-color: var(--code-background, oklch(0 0 0 / 0.0625));
   border-bottom-color: oklch(0.3 0.0005 281);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -3615,13 +4221,13 @@ html[saved-theme="light"] body figure {
 
 html[saved-theme="light"] body img {
   border-bottom-color: oklch(0.24 0.0005 281);
-  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: var(--radius-xs, 10px);
   border-bottom-right-radius: 10px;
   border-left-color: oklch(0.24 0.0005 281);
   border-radius: 10px;
   border-right-color: oklch(0.24 0.0005 281);
   border-top-color: oklch(0.24 0.0005 281);
-  border-top-left-radius: 10px;
+  border-top-left-radius: var(--radius-xs, 10px);
   border-top-right-radius: 10px;
 }
 
@@ -3637,7 +4243,7 @@ html[saved-theme="light"] body video {
   border-top-right-radius: 10px;
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
-  background-color: oklab(0.976 0.000286213 -0.00147244);
+  background-color: var(--background-primary-alt, oklab(0.976 0.000286213 -0.00147244));
   border-bottom-color: oklch(0.465 0.0105 281);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -3690,7 +4296,7 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-top-width: 0px;
   margin-left: -27px;
   transition: 0.21s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  width: 18px;
+  width: var(--checkbox-size, 18px);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="#"] {
@@ -4255,12 +4861,11 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
   border-left-color: rgb(31, 132, 255);
   border-right-color: rgb(31, 132, 255);
   border-top-color: rgb(31, 132, 255);
-  color: rgb(31, 132, 255);
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(31, 132, 255);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(31, 132, 255));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="light"] body .callout > .callout-content {
@@ -4269,9 +4874,8 @@ html[saved-theme="light"] body .callout > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
-  --callout-color: 9, 186, 221;
+  --callout-color: var(--callout-summary, 9, 186, 221);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(9, 186, 221, 0.063), rgba(9, 186, 221, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(9, 186, 221, 0.063), rgba(9, 186, 221, 0.114));
   border-bottom-color: rgba(9, 186, 221, 0.24);
   border-bottom-left-radius: 10px;
@@ -4281,7 +4885,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
   border-top-color: rgba(9, 186, 221, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title {
@@ -4290,12 +4894,11 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
   border-left-color: rgb(31, 132, 255);
   border-right-color: rgb(31, 132, 255);
   border-top-color: rgb(31, 132, 255);
-  color: rgb(31, 132, 255);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(31, 132, 255);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(31, 132, 255));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-content {
@@ -4304,9 +4907,8 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
-  --callout-color: 214, 50, 202;
+  --callout-color: var(--callout-bug, 214, 50, 202);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(214, 50, 202, 0.063), rgba(214, 50, 202, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(214, 50, 202, 0.063), rgba(214, 50, 202, 0.114));
   border-bottom-color: rgba(214, 50, 202, 0.24);
   border-bottom-left-radius: 10px;
@@ -4316,7 +4918,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
   border-top-color: rgba(214, 50, 202, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
@@ -4325,12 +4927,11 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   border-left-color: rgb(31, 132, 255);
   border-right-color: rgb(31, 132, 255);
   border-top-color: rgb(31, 132, 255);
-  color: rgb(31, 132, 255);
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(31, 132, 255);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(31, 132, 255));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
@@ -4339,9 +4940,8 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
-  --callout-color: 233, 49, 58;
+  --callout-color: var(--callout-error, 233, 49, 58);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(233, 49, 58, 0.063), rgba(233, 49, 58, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(233, 49, 58, 0.063), rgba(233, 49, 58, 0.114));
   border-bottom-color: rgba(233, 49, 58, 0.24);
   border-bottom-left-radius: 10px;
@@ -4351,7 +4951,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
   border-top-color: rgba(233, 49, 58, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
@@ -4360,12 +4960,11 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   border-left-color: rgb(31, 132, 255);
   border-right-color: rgb(31, 132, 255);
   border-top-color: rgb(31, 132, 255);
-  color: rgb(31, 132, 255);
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(31, 132, 255);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(31, 132, 255));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-content {
@@ -4374,9 +4973,8 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
-  --callout-color: 124, 80, 237;
+  --callout-color: var(--callout-example, 124, 80, 237);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(124, 80, 237, 0.063), rgba(124, 80, 237, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(124, 80, 237, 0.063), rgba(124, 80, 237, 0.114));
   border-bottom-color: rgba(124, 80, 237, 0.24);
   border-bottom-left-radius: 10px;
@@ -4386,7 +4984,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
   border-top-color: rgba(124, 80, 237, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
@@ -4395,12 +4993,11 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   border-left-color: rgb(31, 132, 255);
   border-right-color: rgb(31, 132, 255);
   border-top-color: rgb(31, 132, 255);
-  color: rgb(31, 132, 255);
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(31, 132, 255);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(31, 132, 255));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] > .callout-content {
@@ -4409,9 +5006,8 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
-  --callout-color: 233, 49, 58;
+  --callout-color: var(--callout-fail, 233, 49, 58);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(233, 49, 58, 0.063), rgba(233, 49, 58, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(233, 49, 58, 0.063), rgba(233, 49, 58, 0.114));
   border-bottom-color: rgba(233, 49, 58, 0.24);
   border-bottom-left-radius: 10px;
@@ -4421,7 +5017,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
   border-top-color: rgba(233, 49, 58, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
@@ -4430,12 +5026,11 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   border-left-color: rgb(31, 132, 255);
   border-right-color: rgb(31, 132, 255);
   border-top-color: rgb(31, 132, 255);
-  color: rgb(31, 132, 255);
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(31, 132, 255);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(31, 132, 255));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-content {
@@ -4444,9 +5039,8 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
-  --callout-color: 31, 132, 255;
+  --callout-color: var(--callout-info, 31, 132, 255);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(31, 132, 255, 0.063), rgba(31, 132, 255, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(31, 132, 255, 0.063), rgba(31, 132, 255, 0.114));
   border-bottom-color: rgba(31, 132, 255, 0.24);
   border-bottom-left-radius: 10px;
@@ -4456,7 +5050,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
   border-top-color: rgba(31, 132, 255, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
@@ -4465,12 +5059,11 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   border-left-color: rgb(31, 132, 255);
   border-right-color: rgb(31, 132, 255);
   border-top-color: rgb(31, 132, 255);
-  color: rgb(31, 132, 255);
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(31, 132, 255);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(31, 132, 255));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content {
@@ -4479,9 +5072,8 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
-  --callout-color: 31, 132, 255;
+  --callout-color: var(--callout-default, 31, 132, 255);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(31, 132, 255, 0.063), rgba(31, 132, 255, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(31, 132, 255, 0.063), rgba(31, 132, 255, 0.114));
   border-bottom-color: rgba(31, 132, 255, 0.24);
   border-bottom-left-radius: 10px;
@@ -4491,7 +5083,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
   border-top-color: rgba(31, 132, 255, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
@@ -4500,12 +5092,11 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   border-left-color: rgb(31, 132, 255);
   border-right-color: rgb(31, 132, 255);
   border-top-color: rgb(31, 132, 255);
-  color: rgb(31, 132, 255);
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(31, 132, 255);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(31, 132, 255));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content {
@@ -4514,9 +5105,8 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
-  --callout-color: 241, 110, 53;
+  --callout-color: var(--callout-question, 241, 110, 53);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(241, 110, 53, 0.063), rgba(241, 110, 53, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(241, 110, 53, 0.063), rgba(241, 110, 53, 0.114));
   border-bottom-color: rgba(241, 110, 53, 0.24);
   border-bottom-left-radius: 10px;
@@ -4526,7 +5116,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
   border-top-color: rgba(241, 110, 53, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title {
@@ -4535,12 +5125,11 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
   border-left-color: rgb(31, 132, 255);
   border-right-color: rgb(31, 132, 255);
   border-top-color: rgb(31, 132, 255);
-  color: rgb(31, 132, 255);
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(31, 132, 255);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(31, 132, 255));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] > .callout-content {
@@ -4549,9 +5138,8 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(158, 158, 158, 0.063), rgba(158, 158, 158, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(158, 158, 158, 0.063), rgba(158, 158, 158, 0.114));
   border-bottom-color: rgba(158, 158, 158, 0.24);
   border-bottom-left-radius: 10px;
@@ -4561,7 +5149,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
   border-top-color: rgba(158, 158, 158, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.465 0.0105 281);
+  color: var(--text-normal, oklch(0.465 0.0105 281));
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
@@ -4570,12 +5158,11 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   border-left-color: rgb(31, 132, 255);
   border-right-color: rgb(31, 132, 255);
   border-top-color: rgb(31, 132, 255);
-  color: rgb(31, 132, 255);
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(31, 132, 255);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(31, 132, 255));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content {
@@ -4584,9 +5171,8 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
-  --callout-color: 0, 187, 93;
+  --callout-color: var(--callout-success, 0, 187, 93);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(0, 187, 93, 0.063), rgba(0, 187, 93, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(0, 187, 93, 0.063), rgba(0, 187, 93, 0.114));
   border-bottom-color: rgba(0, 187, 93, 0.24);
   border-bottom-left-radius: 10px;
@@ -4596,7 +5182,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
   border-top-color: rgba(0, 187, 93, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
@@ -4605,12 +5191,11 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   border-left-color: rgb(31, 132, 255);
   border-right-color: rgb(31, 132, 255);
   border-top-color: rgb(31, 132, 255);
-  color: rgb(31, 132, 255);
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(31, 132, 255);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(31, 132, 255));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] > .callout-content {
@@ -4619,9 +5204,8 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
-  --callout-color: 9, 186, 221;
+  --callout-color: var(--callout-tip, 9, 186, 221);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(9, 186, 221, 0.063), rgba(9, 186, 221, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(9, 186, 221, 0.063), rgba(9, 186, 221, 0.114));
   border-bottom-color: rgba(9, 186, 221, 0.24);
   border-bottom-left-radius: 10px;
@@ -4631,7 +5215,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
   border-top-color: rgba(9, 186, 221, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
@@ -4640,12 +5224,11 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   border-left-color: rgb(31, 132, 255);
   border-right-color: rgb(31, 132, 255);
   border-top-color: rgb(31, 132, 255);
-  color: rgb(31, 132, 255);
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(31, 132, 255);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(31, 132, 255));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
@@ -4654,9 +5237,8 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
-  --callout-color: 31, 132, 255;
+  --callout-color: var(--callout-todo, 31, 132, 255);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(31, 132, 255, 0.063), rgba(31, 132, 255, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(31, 132, 255, 0.063), rgba(31, 132, 255, 0.114));
   border-bottom-color: rgba(31, 132, 255, 0.24);
   border-bottom-left-radius: 10px;
@@ -4666,7 +5248,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
   border-top-color: rgba(31, 132, 255, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
@@ -4675,12 +5257,11 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   border-left-color: rgb(31, 132, 255);
   border-right-color: rgb(31, 132, 255);
   border-top-color: rgb(31, 132, 255);
-  color: rgb(31, 132, 255);
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(31, 132, 255);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(31, 132, 255));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content {
@@ -4689,9 +5270,8 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
-  --callout-color: 229, 169, 37;
+  --callout-color: var(--callout-warning, 229, 169, 37);
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(229, 169, 37, 0.063), rgba(229, 169, 37, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(229, 169, 37, 0.063), rgba(229, 169, 37, 0.114));
   border-bottom-color: rgba(229, 169, 37, 0.24);
   border-bottom-left-radius: 10px;
@@ -4701,7 +5281,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-color: rgba(229, 169, 37, 0.24);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
@@ -4710,12 +5290,11 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   border-left-color: rgb(31, 132, 255);
   border-right-color: rgb(31, 132, 255);
   border-top-color: rgb(31, 132, 255);
-  color: rgb(31, 132, 255);
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(31, 132, 255);
-  font-weight: 620;
+  color: var(--callout-title-color, rgb(31, 132, 255));
+  font-weight: var(--font-semibold, 620);
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] > .callout-content {
@@ -4792,12 +5371,12 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-top-width: 0px;
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
-  background-color: oklch(0.995 0.00125 281 / 0.675);
+  background-color: var(--prompt-background, oklch(0.995 0.00125 281 / 0.675));
   border-bottom-color: oklch(0 0 0 / 0.1125);
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
@@ -4810,7 +5389,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space {
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   border-top-width: 0px;
-  box-shadow: oklch(1 0 0 / 0.625) 1.5px 1.5px 4px 0px inset, oklch(1 0 0 / 0.625) -1.5px -1.5px 4px 0px inset, rgba(0, 0, 0, 0.08) 0px 1.25px 6.25px 0px, rgba(0, 0, 0, 0.06) 0px 3px 12px 0px, rgba(0, 0, 0, 0.12) 0px 16px 32px 0px;
+  box-shadow: var(--glass-base-l),var(--shadow-strong);
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > * {
@@ -4822,7 +5401,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > * {
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container {
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
@@ -4837,13 +5416,13 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-description {
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: oklch(0 0 0 / 0.0625);
-  color: oklch(0.3 0.0005 281);
-  font-weight: 420;
+  background-color: var(--background-modifier-hover, oklch(0 0 0 / 0.0625));
+  color: var(--text-normal, oklch(0.3 0.0005 281));
+  font-weight: var(--font-normal, 420);
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout.display-results {
@@ -4870,7 +5449,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
-  background-color: oklch(0 0 0 / 0.0625);
+  background-color: var(--background-modifier-hover, oklch(0 0 0 / 0.0625));
   border-bottom-color: oklch(0.3 0.0005 281);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -4879,26 +5458,26 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   border-top-color: oklch(0.3 0.0005 281);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: oklch(0 0 0 / 0.0625);
+  background-color: var(--background-modifier-hover, oklch(0 0 0 / 0.0625));
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: rgba(10, 124, 255, 0.1);
+  background-color: var(--pill-background, rgba(10, 124, 255, 0.1));
   border-bottom-color: rgba(10, 124, 255, 0.15);
   border-left-color: rgba(10, 124, 255, 0.15);
   border-right-color: rgba(10, 124, 255, 0.15);
   border-top-color: rgba(10, 124, 255, 0.15);
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 490;
+  font-weight: var(--pill-weight, 490);
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -4906,44 +5485,44 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
-  color: oklch(0.24 0.0005 281);
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h1-color, oklch(0.24 0.0005 281));
+  font-family: var(--h1-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: oklch(0.24 0.0005 281);
-  font-size: 32px;
-  font-weight: 330;
+  color: var(--inline-title-color, oklch(0.24 0.0005 281));
+  font-size: var(--inline-title-size, 32px);
+  font-weight: var(--inline-title-weight, 330);
 }
 
 html[saved-theme="light"] body h2 {
-  color: oklch(0.3 0.0005 281);
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h2-color, oklch(0.3 0.0005 281));
+  font-family: var(--h2-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  color: oklch(0.24 0.0005 281);
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--inline-title-color, oklch(0.24 0.0005 281));
+  font-family: var(--inline-title-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h3 {
-  color: oklch(0.3 0.0005 281);
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h3-color, oklch(0.3 0.0005 281));
+  font-family: var(--h3-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
-  color: oklch(0.3 0.0005 281);
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h4-color, oklch(0.3 0.0005 281));
+  font-family: var(--h4-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
-  color: oklch(0.4 0.0025 281);
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h5-color, oklch(0.4 0.0025 281));
+  font-family: var(--h5-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
-  color: oklch(0.465 0.0105 281);
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--h6-color, oklch(0.465 0.0105 281));
+  font-family: var(--h6-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body hr {
@@ -4953,7 +5532,7 @@ html[saved-theme="light"] body hr {
   border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
-  --callout-color: 31, 132, 255;
+  --callout-color: var(--callout-default, 31, 132, 255);
   border-bottom-color: rgba(31, 132, 255, 0.24);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -4973,22 +5552,22 @@ html[saved-theme="light"] body hr {
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(10, 124, 255);
+  color: var(--nav-item-color, rgb(10, 124, 255));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 490;
+  font-weight: var(--nav-item-weight, 490);
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(10, 124, 255);
+  color: var(--nav-item-color, rgb(10, 124, 255));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 490;
+  font-weight: var(--nav-item-weight, 490);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body li.depth-0 {
-  font-weight: 490;
+  font-weight: var(--nav-item-weight, 490);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: oklch(0.5575 0.0105 281);
@@ -4999,10 +5578,10 @@ html[saved-theme="light"] body li.depth-0 {
   border-top-color: oklch(0.5575 0.0105 281);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: oklch(0.5575 0.0105 281);
+  color: var(--icon-color, oklch(0.5575 0.0105 281));
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
   border-bottom-color: oklch(0 0 0 / 0.0625);
   border-bottom-left-radius: 18px;
   border-left-color: oklch(0 0 0 / 0.0625);
@@ -5011,7 +5590,7 @@ html[saved-theme="light"] body li.depth-0 {
   border-top-color: oklch(0 0 0 / 0.0625);
   border-top-left-radius: 18px;
   border-top-width: 0px;
-  color: oklch(0.465 0.0105 281);
+  color: var(--status-bar-text-color, oklch(0.465 0.0105 281));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -5033,7 +5612,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: oklch(0.465 0.0105 281);
+  color: var(--nav-item-color, oklch(0.465 0.0105 281));
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -5053,7 +5632,7 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
-  color: oklch(0.465 0.0105 281);
+  color: var(--nav-item-color, oklch(0.465 0.0105 281));
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -5071,7 +5650,7 @@ html[saved-theme="light"] body ul.section-ul {
   border-top-color: oklch(0.4 0.0025 281);
   border-top-left-radius: 22px;
   border-top-right-radius: 22px;
-  color: oklch(0.4 0.0025 281);
+  color: var(--icon-color, oklch(0.4 0.0025 281));
 }
 
 html[saved-theme="light"] body .darkmode svg {
@@ -5091,7 +5670,7 @@ html[saved-theme="light"] body .darkmode svg {
 }
 
 html[saved-theme="light"] body .breadcrumb-element p {
-  color: oklch(0.715 0.0105 281);
+  color: var(--text-faint, oklch(0.715 0.0105 281));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     canvas: `html[saved-theme="light"] body .canvas-node {
@@ -5103,7 +5682,7 @@ html[saved-theme="light"] body .canvas-node-content {
 }
 
 html[saved-theme="light"] body .canvas-node-file {
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body .canvas-node-group {
@@ -5111,17 +5690,17 @@ html[saved-theme="light"] body .canvas-node-group {
 }
 
 html[saved-theme="light"] body .canvas-sidebar {
-  background-color: oklch(1 0 0 / 0.625);
+  background-color: var(--trans-strong-20, oklch(1 0 0 / 0.625));
   border-color: oklch(0.3 0.0005 281);
 }`,
     bases: `html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
-  background-color: oklch(0.2 0 0 / 0.0275);
+  background-color: var(--table-row-alt-background, oklch(0.2 0 0 / 0.0275));
 }
 
 html[saved-theme="light"] body .bases-table thead th {
   border-color: oklch(0.5575 0.0105 281) oklch(0.5575 0.0105 281) oklch(0 0 0 / 0.092);
-  color: oklch(0.5575 0.0105 281);
-  font-weight: 520;
+  color: var(--table-header-color, oklch(0.5575 0.0105 281));
+  font-weight: var(--table-header-weight, 520);
 }`,
     properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: oklch(0 0 0 / 0.0625);
@@ -5132,7 +5711,7 @@ html[saved-theme="light"] body .bases-table thead th {
   border-top-color: oklch(0 0 0 / 0.0625);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  color: oklch(0.465 0.0105 281);
+  color: var(--text-muted, oklch(0.465 0.0105 281));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -5160,8 +5739,8 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(10, 124, 255, 0.1);
-  color: rgb(10, 124, 255);
+  background-color: var(--pill-background, rgba(10, 124, 255, 0.1));
+  color: var(--pill-color, rgb(10, 124, 255));
 }
 
 html[saved-theme="light"] body .note-properties-value {
@@ -5169,8 +5748,8 @@ html[saved-theme="light"] body .note-properties-value {
 }
 
 html[saved-theme="light"] body div#quartz-root {
-  background-color: oklch(0.99 0.0005 281);
-  color: oklch(0.3 0.0005 281);
+  background-color: var(--background-modifier-cover, oklch(0.99 0.0005 281));
+  color: var(--text-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body ol.overflow {
@@ -5180,12 +5759,12 @@ html[saved-theme="light"] body ol.overflow {
   border-top-color: oklch(0.3 0.0005 281);
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body .stacked-page-header {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
 html[saved-theme="light"] body .stacked-page.active {
@@ -5200,11 +5779,11 @@ html[saved-theme="light"] body .stacked-page.active {
 }
 
 html[saved-theme="light"] body .navigation-progress {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
-  color: oklch(0.3 0.0005 281);
+  color: var(--text-normal, oklch(0.3 0.0005 281));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -5224,14 +5803,14 @@ html[saved-theme="light"] body input[type=text] {
   border-left-color: oklch(0.5575 0.0105 281);
   border-right-color: oklch(0.5575 0.0105 281);
   border-top-color: oklch(0.5575 0.0105 281);
-  color: oklch(0.5575 0.0105 281);
+  color: var(--text-normal, oklch(0.5575 0.0105 281));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-bottom: 0px;
   padding-top: 0px;
 }
 
 html[saved-theme="light"] body kbd {
-  background-color: oklch(0 0 0 / 0.0625);
+  background-color: var(--code-background, oklch(0 0 0 / 0.0625));
   border-bottom-color: oklch(0.3 0.0005 281);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -5240,7 +5819,7 @@ html[saved-theme="light"] body kbd {
   border-top-color: oklch(0.3 0.0005 281);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: oklch(0.3 0.0005 281);
+  color: var(--code-normal, oklch(0.3 0.0005 281));
 }
 
 html[saved-theme="light"] body progress {
@@ -5264,12 +5843,12 @@ html[saved-theme="light"] body sup {
 }
 
 html[saved-theme="light"] body ul.tags > li {
-  background-color: rgba(10, 124, 255, 0.1);
+  background-color: var(--tag-background, rgba(10, 124, 255, 0.1));
   border-bottom-color: rgba(10, 124, 255, 0.15);
   border-left-color: rgba(10, 124, 255, 0.15);
   border-right-color: rgba(10, 124, 255, 0.15);
   border-top-color: rgba(10, 124, 255, 0.15);
-  color: rgb(10, 124, 255);
+  color: var(--tag-color, rgb(10, 124, 255));
 }`,
   },
 };

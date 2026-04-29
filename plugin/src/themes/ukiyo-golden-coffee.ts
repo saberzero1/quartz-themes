@@ -28,57 +28,48 @@ export const theme: ThemeData = {
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --activeline: #5b3d2895;
-  --background-modifier-border: #5f4630;
-  --background-modifier-border-focus: #644a33;
-  --background-modifier-border-hover: #5f4630;
-  --background-modifier-form-field: #583f2e;
-  --background-modifier-form-field-hover: #583f2e;
+  --background-modifier-border: var(--color-base-30, #5f4630);
+  --background-modifier-border-focus: var(--color-base-40, #644a33);
+  --background-modifier-border-hover: var(--color-base-35, #5f4630);
+  --background-modifier-form-field: var(--color-base-25, #583f2e);
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, #583f2e);
   --background-modifier-message: #2c1e14;
-  --background-primary: #402e22;
-  --background-primary-alt: #4f3626;
-  --background-secondary: #473224;
-  --background-secondary-alt: #5f4630;
-  --bases-cards-background: #402e22;
-  --bases-cards-cover-background: #4f3626;
-  --bases-cards-shadow: 0 0 0 1px #5f4630;
-  --bases-cards-shadow-hover: 0 0 0 1px #5f4630;
-  --bases-embed-border-color: #5f4630;
-  --bases-group-heading-property-color: #b9987c;
-  --bases-group-heading-property-size: 13px;
-  --bases-table-border-color: #5f4630;
-  --bases-table-cell-background-active: #402e22;
-  --bases-table-cell-background-disabled: #4f3626;
-  --bases-table-cell-shadow-active: 0 0 0 2px #644a33;
-  --bases-table-cell-shadow-focus: 0 0 0 2px #e6bb57;
-  --bases-table-group-background: #4f3626;
-  --bases-table-header-background: #402e22;
-  --bases-table-header-color: #b9987c;
-  --bases-table-summary-background: #402e22;
-  --blockquote-border-color: #e6bb57;
-  --blur-background: color-mix(in srgb, #5f4630 65%, transparent) linear-gradient(#5f4630, color-mix(in srgb, #5f4630 65%, transparent));
-  --bodyFont: var(--font-text, "CMU Typewriter Text");
-  --canvas-background: #402e22;
-  --canvas-card-label-color: #ac8b6e;
-  --canvas-dot-pattern: #5f4630;
-  --caret-color: #dfc2a0;
-  --checkbox-border-color: #ac8b6e;
-  --checkbox-border-color-hover: #b9987c;
-  --checkbox-color: #e6bb57;
-  --checkbox-color-hover: #e6bb57;
-  --checkbox-marker-color: #402e22;
-  --checklist-done-color: #b9987c;
-  --clickable-icon-radius: 0px;
-  --code-background: #4f3626;
-  --code-border-color: #5f4630;
-  --code-comment: #ac8b6e;
-  --code-normal: #dfc2a0;
-  --code-punctuation: #b9987c;
-  --codeFont: var(--font-monospace, "JetBrains Mono");
-  --collapse-icon-color: #ac8b6e;
-  --collapse-icon-color-collapsed: #e6bb57;
-  --color-accent: #e6bb57;
-  --color-accent-1: #e6bb57;
-  --color-accent-2: #f5ca6c;
+  --background-primary: var(--color-base-00, #402e22);
+  --background-primary-alt: var(--color-base-10, #4f3626);
+  --background-secondary: var(--color-base-20, #473224);
+  --background-secondary-alt: var(--color-base-30, #5f4630);
+  --bases-cards-background: var(--background-primary, #402e22);
+  --bases-cards-cover-background: var(--background-primary-alt, #4f3626);
+  --bases-embed-border-color: var(--background-modifier-border, #5f4630);
+  --bases-group-heading-property-color: var(--text-muted, #b9987c);
+  --bases-group-heading-property-size: var(--font-ui-smaller, 13px);
+  --bases-table-border-color: var(--table-border-color, #5f4630);
+  --bases-table-cell-background-active: var(--background-primary, #402e22);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #4f3626);
+  --bases-table-group-background: var(--background-primary-alt, #4f3626);
+  --bases-table-header-background: var(--background-primary, #402e22);
+  --bases-table-header-color: var(--text-muted, #b9987c);
+  --bases-table-summary-background: var(--background-primary, #402e22);
+  --blockquote-border-color: var(--interactive-accent, #e6bb57);
+  --canvas-background: var(--background-primary, #402e22);
+  --canvas-card-label-color: var(--text-faint, #ac8b6e);
+  --canvas-dot-pattern: var(--color-base-30, #5f4630);
+  --caret-color: var(--text-normal, #dfc2a0);
+  --checkbox-border-color: var(--text-faint, #ac8b6e);
+  --checkbox-border-color-hover: var(--text-muted, #b9987c);
+  --checkbox-color: var(--interactive-accent, #e6bb57);
+  --checkbox-color-hover: var(--interactive-accent-hover, #e6bb57);
+  --checkbox-marker-color: var(--background-primary, #402e22);
+  --checklist-done-color: var(--text-muted, #b9987c);
+  --clickable-icon-radius: var(--radius-s, 0px);
+  --code-background: var(--background-primary-alt, #4f3626);
+  --code-border-color: var(--background-modifier-border, #5f4630);
+  --code-comment: var(--text-faint, #ac8b6e);
+  --code-normal: var(--text-normal, #dfc2a0);
+  --code-punctuation: var(--text-muted, #b9987c);
+  --collapse-icon-color: var(--text-faint, #ac8b6e);
+  --collapse-icon-color-collapsed: var(--text-accent, #e6bb57);
+  --color-accent-1: var(--color-accent, #e6bb57);
   --color-base-00: #402e22;
   --color-base-05: #5f4c45;
   --color-base-10: #4f3626;
@@ -86,201 +77,180 @@ export const theme: ThemeData = {
   --color-base-20: #473224;
   --color-base-25: #583f2e;
   --color-base-30: #5f4630;
-  --color-base-35: #5f4630;
+  --color-base-35: var(--color-base-30, #5f4630);
   --color-base-40: #644a33;
   --color-base-50: #ac8b6e;
   --color-base-70: #b9987c;
-  --color-bold: #ce631c;
+  --color-bold: var(--color-accent, #ce631c);
   --color-italic: #da9517;
   --cubic-animation: cubic-bezier(0.175, 0.9, 0.3, 1.1);
-  --dark: var(--text-normal, #dfc2a0);
-  --darkgray: var(--text-normal, #dfc2a0);
+  --dark: var(--text-normal, var(--color-base-100, #dfc2a0));
+  --darkgray: var(--text-normal, var(--color-base-100, #dfc2a0));
   --default-animation-duration: 150ms;
   --default-border-radius: 4px;
-  --divider-color: #5f4630;
-  --divider-color-hover: #e6bb57;
-  --dropdown-background: #5f4630;
-  --dropdown-background-hover: #5f4630;
-  --embed-block-shadow-hover: 0 0 0 1px #5f4630, inset 0 0 0 1px #5f4630;
-  --embed-border-start: 2px solid #e6bb57;
-  --file-header-background: #402e22;
-  --file-header-background-focused: #402e22;
-  --file-header-font: "CMU Typewriter Text";
-  --file-header-font-size: 14px;
+  --divider-color: var(--background-modifier-border, #5f4630);
+  --divider-color-hover: var(--interactive-accent, #e6bb57);
+  --dropdown-background: var(--interactive-normal, #5f4630);
+  --dropdown-background-hover: var(--interactive-hover, #5f4630);
+  --file-header-background: var(--background-primary, #402e22);
+  --file-header-background-focused: var(--background-primary, #402e22);
+  --file-header-font: var(--font-interface, "CMU Typewriter Text");
+  --file-header-font-size: var(--font-ui-small, 14px);
   --file-line-width: 900px;
-  --flair-background: #5f4630;
-  --flair-color: #dfc2a0;
+  --flair-background: var(--interactive-normal, #5f4630);
+  --flair-color: var(--text-normal, #dfc2a0);
   --font-default: "CMU Typewriter Text";
-  --font-interface: "CMU Typewriter Text";
-  --font-mermaid: "CMU Typewriter Text";
-  --font-monospace: "JetBrains Mono";
+  --font-mermaid: var(--font-text, "CMU Typewriter Text");
   --font-monospace-default: "JetBrains Mono";
-  --font-text: "CMU Typewriter Text";
   --font-ui-medium: 16px;
   --font-ui-small: 14px;
   --font-ui-smaller: 13px;
-  --footnote-divider-color: #5f4630;
-  --footnote-id-color: #b9987c;
-  --footnote-id-color-no-occurrences: #ac8b6e;
-  --graph-line: #5f4630;
-  --graph-node: #b9987c;
-  --graph-node-focused: #e6bb57;
-  --graph-node-unresolved: #ac8b6e;
-  --graph-text: #dfc2a0;
-  --gray: var(--text-muted, #b9987c);
+  --footnote-divider-color: var(--metadata-divider-color, #5f4630);
+  --footnote-id-color: var(--text-muted, #b9987c);
+  --footnote-id-color-no-occurrences: var(--text-faint, #ac8b6e);
+  --graph-node: var(--text-muted, #b9987c);
+  --graph-node-focused: var(--text-accent, #e6bb57);
+  --graph-node-unresolved: var(--text-faint, #ac8b6e);
+  --graph-text: var(--text-normal, #dfc2a0);
+  --gray: var(--text-muted, var(--color-base-70, #b9987c));
   --header-height: 30px;
-  --headerFont: var(--font-text, "CMU Typewriter Text");
-  --heading-formatting: #ac8b6e;
+  --heading-formatting: var(--text-faint, #ac8b6e);
   --heading-formatting-color: #e04242;
-  --highlight: var(--text-highlight-bg, #a0632666);
   --hover-animation-duration: 100ms;
   --hover-faster-animation-duration: 75ms;
-  --hr-color: #5f4630;
-  --icon-color: #b9987c;
-  --icon-color-active: #e6bb57;
-  --icon-color-focused: #dfc2a0;
-  --icon-color-hover: #b9987c;
+  --hr-color: var(--background-modifier-border, #5f4630);
+  --icon-color: var(--text-muted, #b9987c);
+  --icon-color-active: var(--text-accent, #e6bb57);
+  --icon-color-focused: var(--text-normal, #dfc2a0);
+  --icon-color-hover: var(--text-muted, #b9987c);
   --in-between-background: #36261b;
-  --input-date-separator: #ac8b6e;
-  --input-placeholder-color: #ac8b6e;
-  --interactive-accent: #e6bb57;
-  --interactive-accent-hover: #e6bb57;
-  --interactive-hover: #5f4630;
-  --interactive-normal: #5f4630;
-  --light: var(--background-primary, #402e22);
-  --lightgray: var(--background-secondary, #473224);
-  --link-color: #e6bb57;
-  --link-color-hover: #f5ca6c;
-  --link-external-color: #e6bb57;
-  --link-external-color-hover: #f5ca6c;
-  --link-unresolved-color: #e6bb57;
-  --list-indent: 1.4em;
-  --list-marker-color: #ac8b6e;
-  --list-marker-color-collapsed: #e6bb57;
-  --list-marker-color-hover: #b9987c;
-  --menu-background: #473224;
-  --menu-border-color: #5f4630;
-  --metadata-border-color: #5f4630;
-  --metadata-divider-color: #5f4630;
-  --metadata-input-font: "CMU Typewriter Text";
-  --metadata-input-text-color: #dfc2a0;
-  --metadata-label-font: "CMU Typewriter Text";
-  --metadata-label-text-color: #b9987c;
-  --metadata-label-text-color-hover: #b9987c;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #644a33;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #5f4630;
-  --metadata-sidebar-input-font-size: 14px;
-  --metadata-sidebar-label-font-size: 14px;
-  --modal-background: #402e22;
-  --modal-border-color: #644a33;
-  --nav-collapse-icon-color: #ac8b6e;
-  --nav-collapse-icon-color-collapsed: #ac8b6e;
-  --nav-heading-color: #dfc2a0;
-  --nav-heading-color-collapsed: #ac8b6e;
-  --nav-heading-color-collapsed-hover: #b9987c;
-  --nav-heading-color-hover: #dfc2a0;
-  --nav-item-color: #b9987c;
-  --nav-item-color-active: #dfc2a0;
-  --nav-item-color-highlighted: #e6bb57;
-  --nav-item-color-hover: #dfc2a0;
-  --nav-item-color-selected: #dfc2a0;
-  --nav-item-size: 14px;
-  --nav-tag-color: #ac8b6e;
-  --nav-tag-color-active: #b9987c;
-  --nav-tag-color-hover: #b9987c;
-  --pdf-background: #402e22;
-  --pdf-page-background: #402e22;
-  --pdf-shadow: 0 0 0 1px #5f4630;
-  --pdf-sidebar-background: #402e22;
-  --pdf-thumbnail-shadow: 0 0 0 1px #5f4630;
-  --pill-border-color: #5f4630;
-  --pill-border-color-hover: #5f4630;
-  --pill-color: #b9987c;
-  --pill-color-hover: #dfc2a0;
-  --pill-color-remove: #ac8b6e;
-  --pill-color-remove-hover: #e6bb57;
+  --input-date-separator: var(--text-faint, #ac8b6e);
+  --input-placeholder-color: var(--text-faint, #ac8b6e);
+  --interactive-accent: var(--color-accent, #e6bb57);
+  --interactive-accent-hover: var(--color-accent-1, #e6bb57);
+  --interactive-hover: var(--color-base-35, #5f4630);
+  --interactive-normal: var(--color-base-30, #5f4630);
+  --light: var(--background-primary, var(--color-base-00, #402e22));
+  --lightgray: var(--background-secondary, var(--color-base-20, #473224));
+  --link-color: var(--text-accent, #e6bb57);
+  --link-color-hover: var(--text-accent-hover, #f5ca6c);
+  --link-external-color: var(--text-accent, #e6bb57);
+  --link-external-color-hover: var(--text-accent-hover, #f5ca6c);
+  --link-unresolved-color: var(--text-accent, #e6bb57);
+  --list-marker-color: var(--text-faint, #ac8b6e);
+  --list-marker-color-collapsed: var(--text-accent, #e6bb57);
+  --list-marker-color-hover: var(--text-muted, #b9987c);
+  --menu-background: var(--background-secondary, #473224);
+  --menu-border-color: var(--background-modifier-border-hover, #5f4630);
+  --metadata-border-color: var(--background-modifier-border, #5f4630);
+  --metadata-divider-color: var(--background-modifier-border, #5f4630);
+  --metadata-input-font: var(--font-interface, "CMU Typewriter Text");
+  --metadata-input-text-color: var(--text-normal, #dfc2a0);
+  --metadata-label-font: var(--font-interface, "CMU Typewriter Text");
+  --metadata-label-text-color: var(--text-muted, #b9987c);
+  --metadata-label-text-color-hover: var(--text-muted, #b9987c);
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 14px);
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 14px);
+  --modal-background: var(--background-primary, #402e22);
+  --nav-collapse-icon-color: var(--collapse-icon-color, #ac8b6e);
+  --nav-collapse-icon-color-collapsed: var(--text-faint, #ac8b6e);
+  --nav-heading-color: var(--text-normal, #dfc2a0);
+  --nav-heading-color-collapsed: var(--text-faint, #ac8b6e);
+  --nav-heading-color-collapsed-hover: var(--text-muted, #b9987c);
+  --nav-heading-color-hover: var(--text-normal, #dfc2a0);
+  --nav-item-color: var(--text-muted, #b9987c);
+  --nav-item-color-active: var(--text-normal, #dfc2a0);
+  --nav-item-color-highlighted: var(--text-accent, #e6bb57);
+  --nav-item-color-hover: var(--text-normal, #dfc2a0);
+  --nav-item-color-selected: var(--text-normal, #dfc2a0);
+  --nav-item-size: var(--font-ui-small, 14px);
+  --nav-tag-color: var(--text-faint, #ac8b6e);
+  --nav-tag-color-active: var(--text-muted, #b9987c);
+  --nav-tag-color-hover: var(--text-muted, #b9987c);
+  --pdf-background: var(--background-primary, #402e22);
+  --pdf-page-background: var(--background-primary, #402e22);
+  --pdf-sidebar-background: var(--background-primary, #402e22);
+  --pill-border-color: var(--background-modifier-border, #5f4630);
+  --pill-border-color-hover: var(--background-modifier-border-hover, #5f4630);
+  --pill-color: var(--text-muted, #b9987c);
+  --pill-color-hover: var(--text-normal, #dfc2a0);
+  --pill-color-remove: var(--text-faint, #ac8b6e);
+  --pill-color-remove-hover: var(--text-accent, #e6bb57);
   --pop-callout-slide-out-duration: 0ms;
   --pop-callout-width: 20px;
-  --prompt-background: #402e22;
-  --prompt-border-color: #644a33;
-  --raised-background: color-mix(in srgb, #5f4630 65%, transparent) linear-gradient(#5f4630, color-mix(in srgb, #5f4630 65%, transparent));
-  --ribbon-background: #473224;
-  --ribbon-background-collapsed: #402e22;
-  --ribbon-padding: 0px;
+  --prompt-background: var(--background-primary, #402e22);
+  --raised-background: var(--blur-background, color-mix(in srgb, #5f4630 65%, transparent) linear-gradient(#5f4630, color-mix(in srgb, #5f4630 65%, transparent)));
+  --ribbon-background: var(--background-secondary, #473224);
+  --ribbon-background-collapsed: var(--background-primary, #402e22);
+  --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3, 0px);
   --ribbon-width: 40px;
-  --search-clear-button-color: #b9987c;
-  --search-icon-color: #b9987c;
-  --search-result-background: #402e22;
-  --secondary: var(--text-accent, #e6bb57);
-  --setting-group-heading-color: #dfc2a0;
-  --setting-group-heading-size: 16px;
-  --setting-items-background: #4f3626;
-  --setting-items-border-color: #5f4630;
-  --shiki-active-tab-border-color: #b9987c;
-  --shiki-code-background: #4f3626;
-  --shiki-code-comment: #ac8b6e;
-  --shiki-code-normal: #b9987c;
-  --shiki-code-punctuation: #b9987c;
-  --shiki-gutter-border-color: #5f4630;
-  --shiki-gutter-text-color: #ac8b6e;
-  --shiki-gutter-text-color-highlight: #b9987c;
-  --shiki-highlight-neutral: #b9987c;
-  --shiki-terminal-dots-color: #ac8b6e;
-  --shiki-tooltip-background: #2c1e14;
-  --slider-thumb-border-color: #5f4630;
-  --slider-track-background: #5f4630;
-  --status-bar-background: #473224;
-  --status-bar-border-color: #5f4630;
-  --status-bar-font-size: 13px;
-  --status-bar-text-color: #b9987c;
-  --suggestion-background: #402e22;
-  --tab-background-active: #402e22;
-  --tab-container-background: #473224;
-  --tab-divider-color: #5f4630;
-  --tab-font-size: 14px;
-  --tab-outline-color: #5f4630;
-  --tab-stacked-font-size: 14px;
-  --tab-stacked-header-width: 30px;
-  --tab-switcher-background: #473224;
-  --tab-switcher-menubar-background: linear-gradient(to top, #473224, transparent);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px #e6bb57;
-  --tab-text-color: #ac8b6e;
-  --tab-text-color-active: #b9987c;
-  --tab-text-color-focused: #b9987c;
-  --tab-text-color-focused-active: #b9987c;
-  --tab-text-color-focused-active-current: #dfc2a0;
-  --tab-text-color-focused-highlighted: #e6bb57;
-  --table-add-button-border-color: #5f4630;
-  --table-border-color: #5f4630;
-  --table-drag-handle-background-active: #e6bb57;
-  --table-drag-handle-color: #ac8b6e;
-  --table-header-border-color: #5f4630;
-  --table-header-color: #dfc2a0;
-  --table-selection-border-color: #e6bb57;
-  --tag-color: #e6bb57;
-  --tag-color-hover: #e6bb57;
+  --search-clear-button-color: var(--text-muted, #b9987c);
+  --search-icon-color: var(--text-muted, #b9987c);
+  --search-result-background: var(--background-primary, #402e22);
+  --secondary: var(--text-accent, var(--color-accent-1, #e6bb57));
+  --setting-group-heading-color: var(--text-normal, #dfc2a0);
+  --setting-group-heading-size: var(--font-ui-medium, 16px);
+  --setting-items-background: var(--background-primary-alt, #4f3626);
+  --setting-items-border-color: var(--background-modifier-border, #5f4630);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, #b9987c);
+  --shiki-code-background: var(--code-background, #4f3626);
+  --shiki-code-comment: var(--text-faint, #ac8b6e);
+  --shiki-code-normal: var(--text-muted, #b9987c);
+  --shiki-code-punctuation: var(--text-muted, #b9987c);
+  --shiki-gutter-border-color: var(--background-modifier-border, #5f4630);
+  --shiki-gutter-text-color: var(--text-faint, #ac8b6e);
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, #b9987c);
+  --shiki-highlight-neutral: var(--shiki-code-normal, #b9987c);
+  --shiki-terminal-dots-color: var(--text-faint, #ac8b6e);
+  --shiki-tooltip-background: var(--background-modifier-message, #2c1e14);
+  --slider-thumb-border-color: var(--background-modifier-border-hover, #5f4630);
+  --slider-track-background: var(--background-modifier-border, #5f4630);
+  --status-bar-background: var(--background-secondary, #473224);
+  --status-bar-border-color: var(--divider-color, #5f4630);
+  --status-bar-font-size: var(--font-ui-smaller, 13px);
+  --status-bar-text-color: var(--text-muted, #b9987c);
+  --suggestion-background: var(--background-primary, #402e22);
+  --tab-background-active: var(--background-primary, #402e22);
+  --tab-container-background: var(--background-secondary, #473224);
+  --tab-divider-color: var(--background-modifier-border-hover, #5f4630);
+  --tab-font-size: var(--font-ui-small, 14px);
+  --tab-outline-color: var(--divider-color, #5f4630);
+  --tab-stacked-font-size: var(--font-ui-small, 14px);
+  --tab-stacked-header-width: var(--header-height, 30px);
+  --tab-switcher-background: var(--background-secondary, #473224);
+  --tab-text-color: var(--text-faint, #ac8b6e);
+  --tab-text-color-active: var(--text-muted, #b9987c);
+  --tab-text-color-focused: var(--text-muted, #b9987c);
+  --tab-text-color-focused-active: var(--text-muted, #b9987c);
+  --tab-text-color-focused-active-current: var(--text-normal, #dfc2a0);
+  --tab-text-color-focused-highlighted: var(--text-accent, #e6bb57);
+  --table-add-button-border-color: var(--background-modifier-border, #5f4630);
+  --table-border-color: var(--background-modifier-border, #5f4630);
+  --table-drag-handle-background-active: var(--table-selection-border-color, #e6bb57);
+  --table-drag-handle-color: var(--text-faint, #ac8b6e);
+  --table-header-border-color: var(--table-border-color, #5f4630);
+  --table-header-color: var(--text-normal, #dfc2a0);
+  --table-selection-border-color: var(--interactive-accent, #e6bb57);
+  --tag-color: var(--text-accent, #e6bb57);
+  --tag-color-hover: var(--text-accent, #e6bb57);
   --tag-radius: 4px;
-  --tertiary: var(--text-accent-hover, #f5ca6c);
-  --text-accent: #e6bb57;
-  --text-accent-hover: #f5ca6c;
-  --text-faint: #ac8b6e;
-  --text-highlight-bg: #a0632666;
-  --text-highlight-bg-active: #a0632666;
-  --text-muted: #b9987c;
-  --text-normal: #dfc2a0;
-  --text-selection: #825f4795;
-  --textHighlight: var(--text-highlight-bg, #a0632666);
-  --titleFont: var(--font-text, "CMU Typewriter Text");
-  --titlebar-background: #473224;
-  --titlebar-background-focused: #473224;
-  --titlebar-border-color: #5f4630;
-  --titlebar-text-color: #b9987c;
-  --titlebar-text-color-focused: #dfc2a0;
-  --traffic-lights-offset-x: 30px;
-  --traffic-lights-offset-y: 30px;
-  --vault-profile-color: #dfc2a0;
-  --vault-profile-color-hover: #dfc2a0;
-  --vault-profile-font-size: 14px;
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, #f5ca6c));
+  --text-accent: var(--color-accent-1, #e6bb57);
+  --text-accent-hover: var(--color-accent-2, #f5ca6c);
+  --text-faint: var(--color-base-50, #ac8b6e);
+  --text-highlight-bg-active: var(--text-highlight-bg, #a0632666);
+  --text-muted: var(--color-base-70, #b9987c);
+  --text-normal: var(--color-base-100, #dfc2a0);
+  --titlebar-background: var(--background-secondary, #473224);
+  --titlebar-background-focused: var(--color-base-20, #473224);
+  --titlebar-border-color: var(--background-modifier-border, #5f4630);
+  --titlebar-text-color: var(--text-muted, #b9987c);
+  --titlebar-text-color-focused: var(--text-normal, #dfc2a0);
+  --traffic-lights-offset-x: var(--header-height, 30px);
+  --traffic-lights-offset-y: var(--header-height, 30px);
+  --vault-profile-color: var(--text-normal, #dfc2a0);
+  --vault-profile-color-hover: var(--vault-profile-color, #dfc2a0);
+  --vault-profile-font-size: var(--font-ui-small, 14px);
   --quartz-icon-color: currentColor;
 }
 
@@ -290,17 +260,17 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: rgb(64, 46, 34);
+  background-color: var(--background-primary, rgb(64, 46, 34));
   color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   color: rgb(223, 194, 160);
 }
 
@@ -309,7 +279,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   border-left-color: rgb(95, 70, 48);
   color: rgb(223, 194, 160);
 }
@@ -322,9 +292,13 @@ html[saved-theme="dark"] body html {
   --hover-faster-animation-duration: 75ms;
   --pop-callout-slide-out-duration: 700ms;
   --pop-callout-width: 20px;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
-  color: rgb(206, 99, 28);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--color-bold, rgb(206, 99, 28));
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(206, 99, 28) none 0px;
   text-decoration-color: rgb(206, 99, 28);
@@ -332,7 +306,8 @@ html[saved-theme="dark"] body html {
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
-  color: rgb(218, 149, 23);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--color-italic, rgb(218, 149, 23));
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(218, 149, 23) none 0px;
   text-decoration-color: rgb(218, 149, 23);
@@ -340,7 +315,8 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
-  color: rgb(218, 149, 23);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--color-italic, rgb(218, 149, 23));
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(218, 149, 23) none 0px;
   text-decoration-color: rgb(218, 149, 23);
@@ -348,7 +324,8 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
-  color: rgb(206, 99, 28);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--color-bold, rgb(206, 99, 28));
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(206, 99, 28) none 0px;
   text-decoration-color: rgb(206, 99, 28);
@@ -356,8 +333,8 @@ html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="d
 }
 
 html[saved-theme="dark"] body .text-highlight {
-  background-color: rgba(160, 99, 38, 0.4);
-  color: rgb(223, 194, 160);
+  background-color: var(--text-highlight-bg, rgba(160, 99, 38, 0.4));
+  color: var(--text-normal, rgb(223, 194, 160));
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(223, 194, 160) none 0px;
   text-decoration-color: rgb(223, 194, 160);
@@ -365,6 +342,7 @@ html[saved-theme="dark"] body .text-highlight {
 }
 
 html[saved-theme="dark"] body del {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   color: rgb(223, 194, 160);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(223, 194, 160) none 0px;
@@ -377,27 +355,30 @@ html[saved-theme="dark"] body footer {
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(223, 194, 160);
+  color: var(--text-normal, rgb(223, 194, 160));
   font-size: 14px;
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(172, 139, 110);
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(230, 187, 87);
+  background-color: var(--checkbox-color, rgb(230, 187, 87));
   border-color: rgb(230, 187, 87);
 }
 
 html[saved-theme="dark"] body p {
-  color: rgb(185, 152, 124);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--text-muted, rgb(185, 152, 124));
   font-family: "??", "??", "??", "CMU Typewriter Text";
   outline: rgb(185, 152, 124) none 0px;
   text-decoration-color: rgb(185, 152, 124);
 }`,
     links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
-  color: rgb(230, 187, 87);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--link-external-color, rgb(230, 187, 87));
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(230, 187, 87) none 0px;
   text-decoration-color: rgb(230, 187, 87);
@@ -405,7 +386,8 @@ html[saved-theme="dark"] body p {
 }
 
 html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(230, 187, 87);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--link-color, rgb(230, 187, 87));
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(230, 187, 87) none 0px;
   text-decoration-color: rgb(230, 187, 87);
@@ -413,17 +395,27 @@ html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcr
 }
 
 html[saved-theme="dark"] body a.internal-link.broken {
-  color: rgb(230, 187, 87);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--link-unresolved-color, rgb(230, 187, 87));
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(230, 187, 87) none 0px;
   transition: color 0.1s ease-in-out;
 }`,
     lists: `html[saved-theme="dark"] body dd {
   color: rgb(223, 194, 160);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
+}
+
+html[saved-theme="dark"] body dl {
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body dt {
   color: rgb(223, 194, 160);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body ol > li {
@@ -441,14 +433,19 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-color: rgb(223, 194, 160);
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
-  color: rgb(172, 139, 110);
+  color: var(--text-faint, rgb(172, 139, 110));
 }
 
 html[saved-theme="dark"] body blockquote {
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   font-family: "??", "??", "CMU Typewriter Text";
 }`,
-    tables: `html[saved-theme="dark"] body .table-container {
+    tables: `html[saved-theme="dark"] body .spacer {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+}
+
+html[saved-theme="dark"] body .table-container {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(223, 194, 160);
   border-left-color: rgb(223, 194, 160);
   border-right-color: rgb(223, 194, 160);
@@ -456,31 +453,39 @@ html[saved-theme="dark"] body blockquote {
 }
 
 html[saved-theme="dark"] body table {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   color: rgb(223, 194, 160);
   font-family: "??", "??", "CMU Typewriter Text";
-  margin-left: 334.703px;
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
   margin-right: 334.719px;
+  margin-top: calc(var(--header-height)*-1 + 10px);
   width: 194.578px;
 }
 
+html[saved-theme="dark"] body tbody {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+}
+
 html[saved-theme="dark"] body td {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(95, 70, 48);
   border-left-color: rgb(95, 70, 48);
   border-right-color: rgb(95, 70, 48);
   border-top-color: rgb(95, 70, 48);
-  color: rgb(223, 194, 160);
+  color: var(--table-text-color, rgb(223, 194, 160));
 }
 
 html[saved-theme="dark"] body th {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(95, 70, 48);
   border-left-color: rgb(95, 70, 48);
   border-right-color: rgb(95, 70, 48);
   border-top-color: rgb(95, 70, 48);
-  color: rgb(223, 194, 160);
+  color: var(--table-header-color, rgb(223, 194, 160));
 }
 
 html[saved-theme="dark"] body thead {
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   border-bottom-color: rgb(100, 74, 51);
   border-bottom-style: solid;
   border-bottom-width: 2px;
@@ -490,23 +495,24 @@ html[saved-theme="dark"] body tr {
   border-bottom-color: rgb(100, 74, 51);
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: rgb(79, 54, 38);
+  background-color: var(--code-background, rgb(79, 54, 38));
   border-bottom-color: rgb(95, 70, 48);
   border-left-color: rgb(95, 70, 48);
   border-right-color: rgb(95, 70, 48);
   border-top-color: rgb(95, 70, 48);
-  color: rgb(223, 194, 160);
-  font-family: "??", "??", "JetBrains Mono";
+  color: var(--code-normal, rgb(223, 194, 160));
+  font-family: var(--font-monospace, "??", "??", "JetBrains Mono");
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: rgb(79, 54, 38);
+  background-color: var(--code-background, rgb(79, 54, 38));
   border-bottom-color: rgb(95, 70, 48);
   border-left-color: rgb(95, 70, 48);
   border-right-color: rgb(95, 70, 48);
   border-top-color: rgb(95, 70, 48);
 }`,
     images: `html[saved-theme="dark"] body audio {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(223, 194, 160);
   border-left-color: rgb(223, 194, 160);
   border-right-color: rgb(223, 194, 160);
@@ -516,13 +522,18 @@ html[saved-theme="dark"] body pre:has(> code) {
 html[saved-theme="dark"] body figcaption {
   color: rgb(223, 194, 160);
   font-family: "??", "??", "??", "CMU Typewriter Text";
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body figure {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(223, 194, 160);
   border-left-color: rgb(223, 194, 160);
   border-right-color: rgb(223, 194, 160);
   border-top-color: rgb(223, 194, 160);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body img {
@@ -530,6 +541,8 @@ html[saved-theme="dark"] body img {
   border-left-color: rgb(223, 194, 160);
   border-right-color: rgb(223, 194, 160);
   border-top-color: rgb(223, 194, 160);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body video {
@@ -537,33 +550,44 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(223, 194, 160);
   border-right-color: rgb(223, 194, 160);
   border-top-color: rgb(223, 194, 160);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: rgb(79, 54, 38);
+  background-color: var(--background-secondary, rgb(79, 54, 38));
   border-bottom-color: rgb(185, 152, 124);
   border-left-color: rgb(185, 152, 124);
   border-right-color: rgb(185, 152, 124);
   border-top-color: rgb(185, 152, 124);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body .footnotes {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-top-color: rgb(223, 194, 160);
   color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .transclude {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(223, 194, 160);
   border-left-color: rgb(223, 194, 160);
   border-left-width: 0px;
   border-right-color: rgb(223, 194, 160);
   border-top-color: rgb(223, 194, 160);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(223, 194, 160);
   border-left-color: rgb(223, 194, 160);
   border-right-color: rgb(223, 194, 160);
   border-top-color: rgb(223, 194, 160);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "??", "??", "CMU Typewriter Text";
@@ -578,6 +602,8 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-left-color: rgb(172, 139, 110);
   border-right-color: rgb(172, 139, 110);
   border-top-color: rgb(172, 139, 110);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
@@ -1129,6 +1155,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   --callout-color: 2, 122, 255;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1137,7 +1164,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
 
 html[saved-theme="dark"] body .callout > .callout-content {
   background: rgb(71, 50, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   color: rgb(223, 194, 160);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -1146,16 +1173,20 @@ html[saved-theme="dark"] body .callout > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
+  background-color: var(--background-secondary, rgba(83, 223, 221, 0.1));
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(83, 223, 221);
   border-left-width: 3px;
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 2, 122, 255;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1164,7 +1195,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-content {
   background: rgb(71, 50, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   color: rgb(223, 194, 160);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -1173,16 +1204,20 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
+  background-color: var(--background-secondary, rgba(251, 70, 76, 0.1));
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(251, 70, 76);
   border-left-width: 3px;
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 2, 122, 255;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1191,7 +1226,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
   background: rgb(71, 50, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   color: rgb(223, 194, 160);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -1200,16 +1235,20 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
+  background-color: var(--background-secondary, rgba(251, 70, 76, 0.1));
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(251, 70, 76);
   border-left-width: 3px;
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 2, 122, 255;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1218,7 +1257,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content {
   background: rgb(71, 50, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   color: rgb(223, 194, 160);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -1227,16 +1266,20 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
+  background-color: var(--background-secondary, rgba(168, 130, 255, 0.1));
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(168, 130, 255);
   border-left-width: 3px;
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 2, 122, 255;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1245,7 +1288,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
 
 html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-content {
   background: rgb(71, 50, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   color: rgb(223, 194, 160);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -1254,16 +1297,20 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
+  background-color: var(--background-secondary, rgba(251, 70, 76, 0.1));
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(251, 70, 76);
   border-left-width: 3px;
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 2, 122, 255;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1272,7 +1319,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-content {
   background: rgb(71, 50, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   color: rgb(223, 194, 160);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -1281,16 +1328,20 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
+  background-color: var(--background-secondary, rgba(2, 122, 255, 0.1));
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(2, 122, 255);
   border-left-width: 3px;
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 2, 122, 255;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1299,7 +1350,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
 
 html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
   background: rgb(71, 50, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   color: rgb(223, 194, 160);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -1308,16 +1359,20 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
+  background-color: var(--background-secondary, rgba(2, 122, 255, 0.1));
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(2, 122, 255);
   border-left-width: 3px;
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 2, 122, 255;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1326,7 +1381,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
 
 html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
   background: rgb(71, 50, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   color: rgb(223, 194, 160);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -1335,16 +1390,20 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
+  background-color: var(--background-secondary, rgba(233, 151, 63, 0.1));
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(233, 151, 63);
   border-left-width: 3px;
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 2, 122, 255;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1353,7 +1412,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
 
 html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-content {
   background: rgb(71, 50, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   color: rgb(223, 194, 160);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -1362,16 +1421,20 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
+  background-color: var(--background-secondary, rgba(158, 158, 158, 0.1));
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(158, 158, 158);
   border-left-width: 3px;
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 2, 122, 255;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1380,7 +1443,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content {
   background: rgb(71, 50, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   color: rgb(223, 194, 160);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -1389,16 +1452,20 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
+  background-color: var(--background-secondary, rgba(68, 207, 110, 0.1));
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(68, 207, 110);
   border-left-width: 3px;
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 2, 122, 255;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1407,7 +1474,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
 
 html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-content {
   background: rgb(71, 50, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   color: rgb(223, 194, 160);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -1416,16 +1483,20 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
+  background-color: var(--background-secondary, rgba(83, 223, 221, 0.1));
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(83, 223, 221);
   border-left-width: 3px;
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 2, 122, 255;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1434,7 +1505,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
   background: rgb(71, 50, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   color: rgb(223, 194, 160);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -1443,16 +1514,20 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
+  background-color: var(--background-secondary, rgba(2, 122, 255, 0.1));
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(2, 122, 255);
   border-left-width: 3px;
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 2, 122, 255;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1461,7 +1536,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
   background: rgb(71, 50, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   color: rgb(223, 194, 160);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -1470,16 +1545,20 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
+  background-color: var(--background-secondary, rgba(233, 151, 63, 0.1));
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(233, 151, 63);
   border-left-width: 3px;
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 2, 122, 255;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1488,7 +1567,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] > .callout-content {
   background: rgb(71, 50, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   color: rgb(223, 194, 160);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -1552,7 +1631,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
-  background-color: rgb(88, 63, 46);
+  background-color: var(--background-secondary, rgb(88, 63, 46));
   border-bottom-color: rgb(95, 70, 48);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -1561,12 +1640,12 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-color: rgb(95, 70, 48);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  color: rgb(223, 194, 160);
+  color: var(--text-normal, rgb(223, 194, 160));
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: rgb(64, 46, 34);
+  background-color: var(--background-secondary, rgb(64, 46, 34));
   border-bottom-color: rgb(100, 74, 51);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -1578,6 +1657,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space {
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > * {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   color: rgb(223, 194, 160);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(223, 194, 160) none 0px;
@@ -1616,6 +1696,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(71, 50, 36);
   border-left-color: rgb(223, 194, 160);
   border-right-color: rgb(223, 194, 160);
@@ -1635,6 +1716,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  background-color: var(--background-secondary, rgba(138, 92, 245, 0.1));
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-top-left-radius: 4px;
@@ -1647,73 +1729,82 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
-  color: rgb(223, 194, 160);
-  font-family: "??", "??", "CMU Typewriter Text";
+  color: var(--h1-color, rgb(223, 194, 160));
+  font-family: var(--h1-font, "??", "??", "CMU Typewriter Text");
 }
 
 html[saved-theme="dark"] body h1.article-title {
-  color: rgb(223, 194, 160);
+  color: var(--inline-title-color, rgb(223, 194, 160));
 }
 
 html[saved-theme="dark"] body h2 {
-  color: rgb(223, 194, 160);
-  font-family: "??", "??", "CMU Typewriter Text";
+  color: var(--h2-color, rgb(223, 194, 160));
+  font-family: var(--h2-font, "??", "??", "CMU Typewriter Text");
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  color: rgb(223, 194, 160);
-  font-family: "??", "??", "CMU Typewriter Text";
+  color: var(--inline-title-color, rgb(223, 194, 160));
+  font-family: var(--inline-title-font, "??", "??", "CMU Typewriter Text");
 }
 
 html[saved-theme="dark"] body h3 {
-  color: rgb(223, 194, 160);
-  font-family: "??", "??", "CMU Typewriter Text";
+  color: var(--h3-color, rgb(223, 194, 160));
+  font-family: var(--h3-font, "??", "??", "CMU Typewriter Text");
 }
 
 html[saved-theme="dark"] body h4 {
-  color: rgb(223, 194, 160);
-  font-family: "??", "??", "CMU Typewriter Text";
+  color: var(--h4-color, rgb(223, 194, 160));
+  font-family: var(--h4-font, "??", "??", "CMU Typewriter Text");
 }
 
 html[saved-theme="dark"] body h5 {
-  color: rgb(223, 194, 160);
-  font-family: "??", "??", "CMU Typewriter Text";
+  color: var(--h5-color, rgb(223, 194, 160));
+  font-family: var(--h5-font, "??", "??", "CMU Typewriter Text");
 }
 
 html[saved-theme="dark"] body h6 {
-  color: rgb(223, 194, 160);
-  font-family: "??", "??", "CMU Typewriter Text";
+  color: var(--h6-color, rgb(223, 194, 160));
+  font-family: var(--h6-font, "??", "??", "CMU Typewriter Text");
 }
 
 html[saved-theme="dark"] body hr {
   border-bottom-color: rgb(95, 70, 48);
   border-left-color: rgb(95, 70, 48);
   border-right-color: rgb(95, 70, 48);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(2, 122, 255);
   border-left-width: 3px;
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(185, 152, 124);
+    explorer: `html[saved-theme="dark"] body .nav-files-container {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: var(--nav-item-color, rgb(185, 152, 124));
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(185, 152, 124);
+  color: var(--nav-item-color, rgb(185, 152, 124));
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(223, 194, 160);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(185, 152, 124);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1722,10 +1813,10 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-color: rgb(185, 152, 124);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(185, 152, 124);
+  color: var(--icon-color, rgb(185, 152, 124));
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   border-bottom-color: rgb(95, 70, 48);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -1734,7 +1825,7 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-color: rgb(95, 70, 48);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  color: rgb(185, 152, 124);
+  color: var(--status-bar-text-color, rgb(185, 152, 124));
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }
 
@@ -1747,6 +1838,7 @@ html[saved-theme="dark"] body footer ul li a {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(223, 194, 160);
   border-left-color: rgb(223, 194, 160);
   border-right-color: rgb(223, 194, 160);
@@ -1755,7 +1847,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(185, 152, 124);
+  color: var(--nav-item-color, rgb(185, 152, 124));
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1763,6 +1855,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(223, 194, 160);
   border-left-color: rgb(223, 194, 160);
   border-right-color: rgb(223, 194, 160);
@@ -1775,16 +1868,18 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(185, 152, 124);
+  color: var(--nav-item-color, rgb(185, 152, 124));
 }
 
 html[saved-theme="dark"] body ul.section-ul {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(223, 194, 160);
   border-left-color: rgb(223, 194, 160);
   border-right-color: rgb(223, 194, 160);
   border-top-color: rgb(223, 194, 160);
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(185, 152, 124);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1793,7 +1888,7 @@ html[saved-theme="dark"] body ul.section-ul {
   border-top-color: rgb(185, 152, 124);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(185, 152, 124);
+  color: var(--icon-color, rgb(185, 152, 124));
 }
 
 html[saved-theme="dark"] body .darkmode svg {
@@ -1801,6 +1896,7 @@ html[saved-theme="dark"] body .darkmode svg {
   stroke: rgb(185, 152, 124);
 }`,
     breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-container {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(185, 152, 124);
   border-left-color: rgb(185, 152, 124);
   border-right-color: rgb(185, 152, 124);
@@ -1809,10 +1905,11 @@ html[saved-theme="dark"] body .darkmode svg {
 }
 
 html[saved-theme="dark"] body .breadcrumb-element p {
-  color: rgb(172, 139, 110);
+  color: var(--text-faint, rgb(172, 139, 110));
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }`,
     canvas: `html[saved-theme="dark"] body .canvas-node {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(223, 194, 160);
 }
 
@@ -1821,43 +1918,53 @@ html[saved-theme="dark"] body .canvas-node-content {
 }
 
 html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(223, 194, 160);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--text-normal, rgb(223, 194, 160));
 }
 
 html[saved-theme="dark"] body .canvas-node-group {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   border-color: rgb(223, 194, 160);
 }`,
     bases: `html[saved-theme="dark"] body .bases-table thead th {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(95, 70, 48);
-  color: rgb(223, 194, 160);
+  color: var(--table-header-color, rgb(223, 194, 160));
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(95, 70, 48);
   border-left-color: rgb(95, 70, 48);
   border-right-color: rgb(95, 70, 48);
   border-top-color: rgb(95, 70, 48);
-  color: rgb(185, 152, 124);
+  color: var(--text-muted, rgb(185, 152, 124));
   font-family: "??", "??", "CMU Typewriter Text";
   margin-bottom: 0px;
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
   padding-bottom: 0px;
   padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .metadata-properties {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(185, 152, 124);
   border-left-color: rgb(185, 152, 124);
   border-right-color: rgb(185, 152, 124);
   border-top-color: rgb(185, 152, 124);
   color: rgb(185, 152, 124);
   font-family: "??", "??", "CMU Typewriter Text";
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body .note-properties {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(95, 70, 48);
 }
 
@@ -1870,8 +1977,9 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  background-color: var(--background-secondary, rgba(138, 92, 245, 0.1));
   border-radius: 4px;
-  color: rgb(230, 187, 87);
+  color: var(--pill-color, rgb(230, 187, 87));
 }
 
 html[saved-theme="dark"] body .note-properties-value {
@@ -1879,8 +1987,8 @@ html[saved-theme="dark"] body .note-properties-value {
 }
 
 html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(64, 46, 34);
-  color: rgb(223, 194, 160);
+  background-color: var(--background-secondary, rgb(64, 46, 34));
+  color: var(--text-normal, rgb(223, 194, 160));
 }
 
 html[saved-theme="dark"] body ol.overflow {
@@ -1890,12 +1998,12 @@ html[saved-theme="dark"] body ol.overflow {
   border-top-color: rgb(223, 194, 160);
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
   border-color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
 }
 
 html[saved-theme="dark"] body .stacked-page.active {
@@ -1910,11 +2018,11 @@ html[saved-theme="dark"] body .stacked-page.active {
 }
 
 html[saved-theme="dark"] body .navigation-progress {
-  background-color: rgb(71, 50, 36);
+  background-color: var(--background-secondary, rgb(71, 50, 36));
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
-  color: rgb(223, 194, 160);
+  color: var(--text-normal, rgb(223, 194, 160));
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }
 
@@ -1923,34 +2031,39 @@ html[saved-theme="dark"] body abbr {
 }
 
 html[saved-theme="dark"] body details {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(223, 194, 160);
   border-left-color: rgb(223, 194, 160);
   border-right-color: rgb(223, 194, 160);
   border-top-color: rgb(223, 194, 160);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body input[type=text] {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(185, 152, 124);
   border-left-color: rgb(185, 152, 124);
   border-right-color: rgb(185, 152, 124);
   border-top-color: rgb(185, 152, 124);
-  color: rgb(185, 152, 124);
+  color: var(--text-normal, rgb(185, 152, 124));
   font-family: "??", "??", "??", "CMU Typewriter Text";
   padding-bottom: 0px;
   padding-top: 0px;
 }
 
 html[saved-theme="dark"] body kbd {
-  background-color: rgb(79, 54, 38);
+  background-color: var(--background-secondary, rgb(79, 54, 38));
   border-bottom-color: rgb(223, 194, 160);
   border-left-color: rgb(223, 194, 160);
   border-right-color: rgb(223, 194, 160);
   border-top-color: rgb(223, 194, 160);
-  color: rgb(223, 194, 160);
-  font-family: "??", "??", "JetBrains Mono";
+  color: var(--code-normal, rgb(223, 194, 160));
+  font-family: var(--font-monospace, "??", "??", "JetBrains Mono");
 }
 
 html[saved-theme="dark"] body progress {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(223, 194, 160);
   border-left-color: rgb(223, 194, 160);
   border-right-color: rgb(223, 194, 160);
@@ -1962,6 +2075,7 @@ html[saved-theme="dark"] body sub {
 }
 
 html[saved-theme="dark"] body summary {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   color: rgb(223, 194, 160);
 }
 
@@ -1971,99 +2085,91 @@ html[saved-theme="dark"] body sup {
 }
 
 html[saved-theme="dark"] body ul.tags > li {
+  background-color: var(--background-secondary, rgba(138, 92, 245, 0.1));
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  color: rgb(230, 187, 87);
+  color: var(--tag-color, rgb(230, 187, 87));
 }`,
   },
   light: {
     base: `:root:root {
   --activeline: #ffe2c4d1;
-  --background-modifier-border: #e0c1a0;
-  --background-modifier-border-focus: #d6b086;
-  --background-modifier-border-hover: #e0c1a0;
-  --background-modifier-error: #cf1e33;
-  --background-modifier-error-hover: #cf1e33;
-  --background-modifier-error-rgb: 207, 30, 51;
-  --background-modifier-form-field: #f3dbc1;
-  --background-modifier-form-field-hover: #f3dbc1;
+  --background-modifier-border: var(--color-base-30, #e0c1a0);
+  --background-modifier-border-focus: var(--color-base-40, #d6b086);
+  --background-modifier-border-hover: var(--color-base-35, #e0c1a0);
+  --background-modifier-error: var(--color-red, #cf1e33);
+  --background-modifier-error-hover: var(--color-red, #cf1e33);
+  --background-modifier-error-rgb: var(--color-red-rgb, 207, 30, 51);
+  --background-modifier-form-field: var(--color-base-25, #f3dbc1);
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, #f3dbc1);
   --background-modifier-message: #2c1e14;
-  --background-modifier-success: #01903b;
-  --background-modifier-success-rgb: 1, 144, 59;
-  --background-primary: #fff3e7;
-  --background-primary-alt: #fcebd9;
-  --background-secondary: #fae7d2;
-  --background-secondary-alt: #f5dcc3;
-  --bases-cards-background: #fff3e7;
-  --bases-cards-cover-background: #fcebd9;
-  --bases-cards-shadow: 0 0 0 1px #e0c1a0;
-  --bases-cards-shadow-hover: 0 0 0 1px #e0c1a0;
-  --bases-embed-border-color: #e0c1a0;
-  --bases-group-heading-property-color: #cf8a3a;
-  --bases-group-heading-property-size: 13px;
-  --bases-table-border-color: #e0c1a0;
-  --bases-table-cell-background-active: #fff3e7;
-  --bases-table-cell-background-disabled: #fcebd9;
-  --bases-table-cell-shadow-active: 0 0 0 2px #d6b086;
-  --bases-table-cell-shadow-focus: 0 0 0 2px #d83939;
-  --bases-table-group-background: #fcebd9;
-  --bases-table-header-background: #fff3e7;
-  --bases-table-header-color: #cf8a3a;
-  --bases-table-summary-background: #fff3e7;
-  --blockquote-border-color: #d83939;
-  --blur-background: color-mix(in srgb, #fff3e7 65%, transparent) linear-gradient(#fff3e7, color-mix(in srgb, #fff3e7 65%, transparent));
-  --bodyFont: var(--font-text, "CMU Typewriter Text");
-  --callout-bug: 207, 30, 51;
-  --callout-default: 2, 95, 200;
-  --callout-error: 207, 30, 51;
-  --callout-example: 95, 56, 214;
-  --callout-fail: 207, 30, 51;
-  --callout-important: 0, 158, 155;
-  --callout-info: 2, 95, 200;
-  --callout-question: 193, 109, 24;
-  --callout-success: 1, 144, 59;
-  --callout-summary: 0, 158, 155;
-  --callout-tip: 0, 158, 155;
-  --callout-todo: 2, 95, 200;
-  --callout-warning: 193, 109, 24;
-  --canvas-background: #fff3e7;
-  --canvas-card-label-color: #c37e30;
-  --canvas-color-1: 207, 30, 51;
-  --canvas-color-2: 193, 109, 24;
-  --canvas-color-3: 151, 116, 0;
-  --canvas-color-4: 1, 144, 59;
-  --canvas-color-5: 0, 158, 155;
-  --canvas-color-6: 95, 56, 214;
-  --canvas-dot-pattern: #e0c1a0;
-  --caret-color: #97653c;
-  --checkbox-border-color: #c37e30;
-  --checkbox-border-color-hover: #cf8a3a;
-  --checkbox-color: #d83939;
-  --checkbox-color-hover: #ec5555;
-  --checkbox-marker-color: #fff3e7;
-  --checklist-done-color: #cf8a3a;
-  --clickable-icon-radius: 0px;
-  --code-background: #f5dcc3;
-  --code-border-color: #e0c1a0;
-  --code-comment: #c37e30;
-  --code-function: #977400;
-  --code-important: #c16d18;
-  --code-keyword: #bf206d;
-  --code-normal: #97653c;
-  --code-operator: #cf1e33;
-  --code-property: #009e9b;
-  --code-punctuation: #cf8a3a;
-  --code-string: #01903b;
-  --code-tag: #cf1e33;
-  --code-value: #5f38d6;
-  --codeFont: var(--font-monospace, "JetBrains Mono");
-  --collapse-icon-color: #c37e30;
-  --collapse-icon-color-collapsed: #d83939;
-  --color-accent: #d83939;
-  --color-accent-1: #d83939;
-  --color-accent-2: #ec5555;
+  --background-modifier-success: var(--color-green, #01903b);
+  --background-modifier-success-rgb: var(--color-green-rgb, 1, 144, 59);
+  --background-primary: var(--color-base-00, #fff3e7);
+  --background-primary-alt: var(--color-base-10, #fcebd9);
+  --background-secondary: var(--color-base-20, #fae7d2);
+  --background-secondary-alt: var(--color-base-05, #f5dcc3);
+  --bases-cards-background: var(--background-primary, #fff3e7);
+  --bases-cards-cover-background: var(--background-primary-alt, #fcebd9);
+  --bases-embed-border-color: var(--background-modifier-border, #e0c1a0);
+  --bases-group-heading-property-color: var(--text-muted, #cf8a3a);
+  --bases-group-heading-property-size: var(--font-ui-smaller, 13px);
+  --bases-table-border-color: var(--table-border-color, #e0c1a0);
+  --bases-table-cell-background-active: var(--background-primary, #fff3e7);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #fcebd9);
+  --bases-table-group-background: var(--background-primary-alt, #fcebd9);
+  --bases-table-header-background: var(--background-primary, #fff3e7);
+  --bases-table-header-color: var(--text-muted, #cf8a3a);
+  --bases-table-summary-background: var(--background-primary, #fff3e7);
+  --blockquote-border-color: var(--interactive-accent, #d83939);
+  --callout-bug: var(--color-red-rgb, 207, 30, 51);
+  --callout-default: var(--color-blue-rgb, 2, 95, 200);
+  --callout-error: var(--color-red-rgb, 207, 30, 51);
+  --callout-example: var(--color-purple-rgb, 95, 56, 214);
+  --callout-fail: var(--color-red-rgb, 207, 30, 51);
+  --callout-important: var(--color-cyan-rgb, 0, 158, 155);
+  --callout-info: var(--color-blue-rgb, 2, 95, 200);
+  --callout-question: var(--color-orange-rgb, 193, 109, 24);
+  --callout-success: var(--color-green-rgb, 1, 144, 59);
+  --callout-summary: var(--color-cyan-rgb, 0, 158, 155);
+  --callout-tip: var(--color-cyan-rgb, 0, 158, 155);
+  --callout-todo: var(--color-blue-rgb, 2, 95, 200);
+  --callout-warning: var(--color-orange-rgb, 193, 109, 24);
+  --canvas-background: var(--background-primary, #fff3e7);
+  --canvas-card-label-color: var(--text-faint, #c37e30);
+  --canvas-color-1: var(--color-red-rgb, 207, 30, 51);
+  --canvas-color-2: var(--color-orange-rgb, 193, 109, 24);
+  --canvas-color-3: var(--color-yellow-rgb, 151, 116, 0);
+  --canvas-color-4: var(--color-green-rgb, 1, 144, 59);
+  --canvas-color-5: var(--color-cyan-rgb, 0, 158, 155);
+  --canvas-color-6: var(--color-purple-rgb, 95, 56, 214);
+  --canvas-dot-pattern: var(--color-base-30, #e0c1a0);
+  --caret-color: var(--text-normal, #97653c);
+  --checkbox-border-color: var(--text-faint, #c37e30);
+  --checkbox-border-color-hover: var(--text-muted, #cf8a3a);
+  --checkbox-color: var(--interactive-accent, #d83939);
+  --checkbox-color-hover: var(--interactive-accent-hover, #ec5555);
+  --checkbox-marker-color: var(--background-primary, #fff3e7);
+  --checklist-done-color: var(--text-muted, #cf8a3a);
+  --clickable-icon-radius: var(--radius-s, 0px);
+  --code-background: var(--color-base-05, #f5dcc3);
+  --code-border-color: var(--background-modifier-border, #e0c1a0);
+  --code-comment: var(--text-faint, #c37e30);
+  --code-function: var(--color-yellow, #977400);
+  --code-important: var(--color-orange, #c16d18);
+  --code-keyword: var(--color-pink, #bf206d);
+  --code-normal: var(--text-normal, #97653c);
+  --code-operator: var(--color-red, #cf1e33);
+  --code-property: var(--color-cyan, #009e9b);
+  --code-punctuation: var(--text-muted, #cf8a3a);
+  --code-string: var(--color-green, #01903b);
+  --code-tag: var(--color-red, #cf1e33);
+  --code-value: var(--color-purple, #5f38d6);
+  --collapse-icon-color: var(--text-faint, #c37e30);
+  --collapse-icon-color-collapsed: var(--text-accent, #d83939);
+  --color-accent-1: var(--color-accent, #d83939);
   --color-base-00: #fff3e7;
   --color-base-05: #f5dcc3;
   --color-base-10: #fcebd9;
@@ -2071,7 +2177,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --color-base-20: #fae7d2;
   --color-base-25: #f3dbc1;
   --color-base-30: #e0c1a0;
-  --color-base-35: #e0c1a0;
+  --color-base-35: var(--color-base-30, #e0c1a0);
   --color-base-40: #d6b086;
   --color-base-50: #c37e30;
   --color-base-70: #cf8a3a;
@@ -2094,215 +2200,192 @@ html[saved-theme="dark"] body ul.tags > li {
   --color-yellow: #977400;
   --color-yellow-rgb: 151, 116, 0;
   --cubic-animation: cubic-bezier(0.175, 0.9, 0.3, 1.1);
-  --dark: var(--text-normal, #97653c);
-  --darkgray: var(--text-normal, #97653c);
+  --dark: var(--text-normal, var(--color-base-100, #97653c));
+  --darkgray: var(--text-normal, var(--color-base-100, #97653c));
   --default-animation-duration: 150ms;
   --default-border-radius: 4px;
-  --divider-color: #e0c1a0;
-  --divider-color-hover: #d83939;
-  --dropdown-background: #e0c1a0;
-  --dropdown-background-hover: #e0c1a0;
-  --embed-block-shadow-hover: 0 0 0 1px #e0c1a0, inset 0 0 0 1px #e0c1a0;
-  --embed-border-start: 2px solid #d83939;
-  --file-header-background: #fff3e7;
-  --file-header-background-focused: #fff3e7;
-  --file-header-font: "CMU Typewriter Text";
-  --file-header-font-size: 14px;
+  --divider-color: var(--background-modifier-border, #e0c1a0);
+  --divider-color-hover: var(--interactive-accent, #d83939);
+  --dropdown-background: var(--interactive-normal, #e0c1a0);
+  --dropdown-background-hover: var(--interactive-hover, #e0c1a0);
+  --file-header-background: var(--background-primary, #fff3e7);
+  --file-header-background-focused: var(--background-primary, #fff3e7);
+  --file-header-font: var(--font-interface, "CMU Typewriter Text");
+  --file-header-font-size: var(--font-ui-small, 14px);
   --file-line-width: 900px;
-  --flair-background: #e0c1a0;
-  --flair-color: #97653c;
+  --flair-background: var(--interactive-normal, #e0c1a0);
+  --flair-color: var(--text-normal, #97653c);
   --font-default: "CMU Typewriter Text";
-  --font-interface: "CMU Typewriter Text";
-  --font-mermaid: "CMU Typewriter Text";
-  --font-monospace: "JetBrains Mono";
+  --font-mermaid: var(--font-text, "CMU Typewriter Text");
   --font-monospace-default: "JetBrains Mono";
-  --font-text: "CMU Typewriter Text";
   --font-ui-medium: 16px;
   --font-ui-small: 14px;
   --font-ui-smaller: 13px;
-  --footnote-divider-color: #e0c1a0;
-  --footnote-id-color: #cf8a3a;
-  --footnote-id-color-no-occurrences: #c37e30;
-  --graph-line: #e0c1a0;
-  --graph-node: #cf8a3a;
-  --graph-node-attachment: #977400;
-  --graph-node-focused: #d83939;
-  --graph-node-tag: #01903b;
-  --graph-node-unresolved: #c37e30;
-  --graph-text: #97653c;
-  --gray: var(--text-muted, #cf8a3a);
+  --footnote-divider-color: var(--metadata-divider-color, #e0c1a0);
+  --footnote-id-color: var(--text-muted, #cf8a3a);
+  --footnote-id-color-no-occurrences: var(--text-faint, #c37e30);
+  --graph-node: var(--text-muted, #cf8a3a);
+  --graph-node-attachment: var(--color-yellow, #977400);
+  --graph-node-focused: var(--text-accent, #d83939);
+  --graph-node-tag: var(--color-green, #01903b);
+  --graph-node-unresolved: var(--text-faint, #c37e30);
+  --graph-text: var(--text-normal, #97653c);
+  --gray: var(--text-muted, var(--color-base-70, #cf8a3a));
   --header-height: 30px;
-  --headerFont: var(--font-text, "CMU Typewriter Text");
-  --heading-formatting: #c37e30;
+  --heading-formatting: var(--text-faint, #c37e30);
   --heading-formatting-color: #da7b64;
-  --highlight: var(--text-highlight-bg, #ffd3a4cb);
   --hover-animation-duration: 100ms;
   --hover-faster-animation-duration: 75ms;
-  --hr-color: #e0c1a0;
-  --icon-color: #cf8a3a;
-  --icon-color-active: #d83939;
-  --icon-color-focused: #97653c;
-  --icon-color-hover: #cf8a3a;
+  --hr-color: var(--background-modifier-border, #e0c1a0);
+  --icon-color: var(--text-muted, #cf8a3a);
+  --icon-color-active: var(--text-accent, #d83939);
+  --icon-color-focused: var(--text-normal, #97653c);
+  --icon-color-hover: var(--text-muted, #cf8a3a);
   --in-between-background: #efdac3;
-  --input-date-separator: #c37e30;
-  --input-placeholder-color: #c37e30;
-  --interactive-accent: #d83939;
-  --interactive-accent-hover: #ec5555;
-  --interactive-hover: #e0c1a0;
-  --interactive-normal: #e0c1a0;
-  --light: var(--background-primary, #fff3e7);
-  --lightgray: var(--background-secondary, #fae7d2);
-  --link-color: #d83939;
-  --link-color-hover: #ec5555;
-  --link-external-color: #d83939;
-  --link-external-color-hover: #ec5555;
-  --link-unresolved-color: #d83939;
-  --list-indent: 1.4em;
-  --list-marker-color: #c37e30;
-  --list-marker-color-collapsed: #d83939;
-  --list-marker-color-hover: #cf8a3a;
-  --menu-background: #fae7d2;
-  --menu-border-color: #e0c1a0;
-  --metadata-border-color: #e0c1a0;
-  --metadata-divider-color: #e0c1a0;
-  --metadata-input-font: "CMU Typewriter Text";
-  --metadata-input-text-color: #97653c;
-  --metadata-label-font: "CMU Typewriter Text";
-  --metadata-label-text-color: #cf8a3a;
-  --metadata-label-text-color-hover: #cf8a3a;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #d6b086;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #e0c1a0;
-  --metadata-sidebar-input-font-size: 14px;
-  --metadata-sidebar-label-font-size: 14px;
-  --modal-background: #fff3e7;
-  --modal-border-color: #d6b086;
-  --nav-collapse-icon-color: #c37e30;
-  --nav-collapse-icon-color-collapsed: #c37e30;
-  --nav-heading-color: #97653c;
-  --nav-heading-color-collapsed: #c37e30;
-  --nav-heading-color-collapsed-hover: #cf8a3a;
-  --nav-heading-color-hover: #97653c;
-  --nav-item-color: #cf8a3a;
-  --nav-item-color-active: #97653c;
-  --nav-item-color-highlighted: #d83939;
-  --nav-item-color-hover: #97653c;
-  --nav-item-color-selected: #97653c;
-  --nav-item-size: 14px;
-  --nav-tag-color: #c37e30;
-  --nav-tag-color-active: #cf8a3a;
-  --nav-tag-color-hover: #cf8a3a;
-  --pdf-background: #fff3e7;
-  --pdf-page-background: #fff3e7;
-  --pdf-sidebar-background: #fff3e7;
-  --pill-border-color: #e0c1a0;
-  --pill-border-color-hover: #e0c1a0;
-  --pill-color: #cf8a3a;
-  --pill-color-hover: #97653c;
-  --pill-color-remove: #c37e30;
-  --pill-color-remove-hover: #d83939;
+  --input-date-separator: var(--text-faint, #c37e30);
+  --input-placeholder-color: var(--text-faint, #c37e30);
+  --interactive-accent: var(--color-accent-1, #d83939);
+  --interactive-accent-hover: var(--color-accent-2, #ec5555);
+  --interactive-hover: var(--color-base-35, #e0c1a0);
+  --interactive-normal: var(--color-base-30, #e0c1a0);
+  --light: var(--background-primary, var(--color-base-00, #fff3e7));
+  --lightgray: var(--background-secondary, var(--color-base-20, #fae7d2));
+  --link-color: var(--text-accent, #d83939);
+  --link-color-hover: var(--text-accent-hover, #ec5555);
+  --link-external-color: var(--text-accent, #d83939);
+  --link-external-color-hover: var(--text-accent-hover, #ec5555);
+  --link-unresolved-color: var(--text-accent, #d83939);
+  --list-marker-color: var(--text-faint, #c37e30);
+  --list-marker-color-collapsed: var(--text-accent, #d83939);
+  --list-marker-color-hover: var(--text-muted, #cf8a3a);
+  --menu-background: var(--background-secondary, #fae7d2);
+  --menu-border-color: var(--background-modifier-border-hover, #e0c1a0);
+  --metadata-border-color: var(--background-modifier-border, #e0c1a0);
+  --metadata-divider-color: var(--background-modifier-border, #e0c1a0);
+  --metadata-input-font: var(--font-interface, "CMU Typewriter Text");
+  --metadata-input-text-color: var(--text-normal, #97653c);
+  --metadata-label-font: var(--font-interface, "CMU Typewriter Text");
+  --metadata-label-text-color: var(--text-muted, #cf8a3a);
+  --metadata-label-text-color-hover: var(--text-muted, #cf8a3a);
+  --metadata-sidebar-input-font-size: var(--font-ui-small, 14px);
+  --metadata-sidebar-label-font-size: var(--font-ui-small, 14px);
+  --modal-background: var(--background-primary, #fff3e7);
+  --nav-collapse-icon-color: var(--collapse-icon-color, #c37e30);
+  --nav-collapse-icon-color-collapsed: var(--text-faint, #c37e30);
+  --nav-heading-color: var(--text-normal, #97653c);
+  --nav-heading-color-collapsed: var(--text-faint, #c37e30);
+  --nav-heading-color-collapsed-hover: var(--text-muted, #cf8a3a);
+  --nav-heading-color-hover: var(--text-normal, #97653c);
+  --nav-item-color: var(--text-muted, #cf8a3a);
+  --nav-item-color-active: var(--text-normal, #97653c);
+  --nav-item-color-highlighted: var(--text-accent, #d83939);
+  --nav-item-color-hover: var(--text-normal, #97653c);
+  --nav-item-color-selected: var(--text-normal, #97653c);
+  --nav-item-size: var(--font-ui-small, 14px);
+  --nav-tag-color: var(--text-faint, #c37e30);
+  --nav-tag-color-active: var(--text-muted, #cf8a3a);
+  --nav-tag-color-hover: var(--text-muted, #cf8a3a);
+  --pdf-background: var(--background-primary, #fff3e7);
+  --pdf-page-background: var(--background-primary, #fff3e7);
+  --pdf-sidebar-background: var(--background-primary, #fff3e7);
+  --pill-border-color: var(--background-modifier-border, #e0c1a0);
+  --pill-border-color-hover: var(--background-modifier-border-hover, #e0c1a0);
+  --pill-color: var(--text-muted, #cf8a3a);
+  --pill-color-hover: var(--text-normal, #97653c);
+  --pill-color-remove: var(--text-faint, #c37e30);
+  --pill-color-remove-hover: var(--text-accent, #d83939);
   --pop-callout-slide-out-duration: 0ms;
   --pop-callout-width: 20px;
-  --prompt-background: #fff3e7;
-  --prompt-border-color: #d6b086;
-  --raised-background: color-mix(in srgb, #fff3e7 65%, transparent) linear-gradient(#fff3e7, color-mix(in srgb, #fff3e7 65%, transparent));
-  --ribbon-background: #fae7d2;
-  --ribbon-background-collapsed: #fff3e7;
-  --ribbon-padding: 0px;
+  --prompt-background: var(--background-primary, #fff3e7);
+  --raised-background: var(--blur-background, color-mix(in srgb, #fff3e7 65%, transparent) linear-gradient(#fff3e7, color-mix(in srgb, #fff3e7 65%, transparent)));
+  --ribbon-background: var(--background-secondary, #fae7d2);
+  --ribbon-background-collapsed: var(--background-primary, #fff3e7);
+  --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3, 0px);
   --ribbon-width: 40px;
-  --search-clear-button-color: #cf8a3a;
-  --search-icon-color: #cf8a3a;
-  --search-result-background: #fff3e7;
-  --secondary: var(--text-accent, #d83939);
-  --setting-group-heading-color: #97653c;
-  --setting-group-heading-size: 16px;
-  --setting-items-background: #fcebd9;
-  --setting-items-border-color: #e0c1a0;
-  --shiki-active-tab-border-color: #cf8a3a;
-  --shiki-code-background: #f5dcc3;
-  --shiki-code-comment: #c37e30;
-  --shiki-code-function: #01903b;
-  --shiki-code-important: #c16d18;
-  --shiki-code-keyword: #bf206d;
-  --shiki-code-normal: #cf8a3a;
-  --shiki-code-property: #009e9b;
-  --shiki-code-punctuation: #cf8a3a;
-  --shiki-code-string: #977400;
-  --shiki-code-value: #5f38d6;
-  --shiki-gutter-border-color: #e0c1a0;
-  --shiki-gutter-text-color: #c37e30;
-  --shiki-gutter-text-color-highlight: #cf8a3a;
-  --shiki-highlight-green: rgba(1, 144, 59, 0.5);
-  --shiki-highlight-green-background: rgba(1, 144, 59, 0.1);
-  --shiki-highlight-neutral: #cf8a3a;
-  --shiki-highlight-red: rgba(207, 30, 51, 0.5);
-  --shiki-highlight-red-background: rgba(207, 30, 51, 0.1);
-  --shiki-terminal-dots-color: #c37e30;
-  --shiki-tooltip-background: #2c1e14;
-  --slider-thumb-border-color: #e0c1a0;
-  --slider-track-background: #e0c1a0;
-  --status-bar-background: #fae7d2;
-  --status-bar-border-color: #e0c1a0;
-  --status-bar-font-size: 13px;
-  --status-bar-text-color: #cf8a3a;
-  --suggestion-background: #fff3e7;
-  --sync-avatar-color-1: #cf1e33;
-  --sync-avatar-color-2: #c16d18;
-  --sync-avatar-color-3: #977400;
-  --sync-avatar-color-4: #01903b;
-  --sync-avatar-color-5: #009e9b;
-  --sync-avatar-color-6: #025fc8;
-  --sync-avatar-color-7: #5f38d6;
-  --sync-avatar-color-8: #bf206d;
-  --tab-background-active: #fff3e7;
-  --tab-container-background: #fae7d2;
-  --tab-divider-color: #e0c1a0;
-  --tab-font-size: 14px;
-  --tab-outline-color: #e0c1a0;
-  --tab-stacked-font-size: 14px;
-  --tab-stacked-header-width: 30px;
-  --tab-switcher-background: #fae7d2;
-  --tab-switcher-menubar-background: linear-gradient(to top, #fae7d2, transparent);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px #d83939;
-  --tab-text-color: #c37e30;
-  --tab-text-color-active: #cf8a3a;
-  --tab-text-color-focused: #cf8a3a;
-  --tab-text-color-focused-active: #cf8a3a;
-  --tab-text-color-focused-active-current: #97653c;
-  --tab-text-color-focused-highlighted: #d83939;
-  --table-add-button-border-color: #e0c1a0;
-  --table-border-color: #e0c1a0;
-  --table-drag-handle-background-active: #d83939;
-  --table-drag-handle-color: #c37e30;
-  --table-header-border-color: #e0c1a0;
-  --table-header-color: #97653c;
-  --table-selection-border-color: #d83939;
-  --tag-color: #d83939;
-  --tag-color-hover: #d83939;
+  --search-clear-button-color: var(--text-muted, #cf8a3a);
+  --search-icon-color: var(--text-muted, #cf8a3a);
+  --search-result-background: var(--background-primary, #fff3e7);
+  --secondary: var(--text-accent, var(--color-accent, #d83939));
+  --setting-group-heading-color: var(--text-normal, #97653c);
+  --setting-group-heading-size: var(--font-ui-medium, 16px);
+  --setting-items-background: var(--background-primary-alt, #fcebd9);
+  --setting-items-border-color: var(--background-modifier-border, #e0c1a0);
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral, #cf8a3a);
+  --shiki-code-background: var(--code-background, #f5dcc3);
+  --shiki-code-comment: var(--text-faint, #c37e30);
+  --shiki-code-function: var(--color-green, #01903b);
+  --shiki-code-important: var(--color-orange, #c16d18);
+  --shiki-code-keyword: var(--color-pink, #bf206d);
+  --shiki-code-normal: var(--text-muted, #cf8a3a);
+  --shiki-code-property: var(--color-cyan, #009e9b);
+  --shiki-code-punctuation: var(--text-muted, #cf8a3a);
+  --shiki-code-string: var(--color-yellow, #977400);
+  --shiki-code-value: var(--color-purple, #5f38d6);
+  --shiki-gutter-border-color: var(--background-modifier-border, #e0c1a0);
+  --shiki-gutter-text-color: var(--text-faint, #c37e30);
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal, #cf8a3a);
+  --shiki-highlight-neutral: var(--shiki-code-normal, #cf8a3a);
+  --shiki-terminal-dots-color: var(--text-faint, #c37e30);
+  --shiki-tooltip-background: var(--background-modifier-message, #2c1e14);
+  --slider-thumb-border-color: var(--background-modifier-border-hover, #e0c1a0);
+  --slider-track-background: var(--background-modifier-border, #e0c1a0);
+  --status-bar-background: var(--background-secondary, #fae7d2);
+  --status-bar-border-color: var(--divider-color, #e0c1a0);
+  --status-bar-font-size: var(--font-ui-smaller, 13px);
+  --status-bar-text-color: var(--text-muted, #cf8a3a);
+  --suggestion-background: var(--background-primary, #fff3e7);
+  --sync-avatar-color-1: var(--color-red, #cf1e33);
+  --sync-avatar-color-2: var(--color-orange, #c16d18);
+  --sync-avatar-color-3: var(--color-yellow, #977400);
+  --sync-avatar-color-4: var(--color-green, #01903b);
+  --sync-avatar-color-5: var(--color-cyan, #009e9b);
+  --sync-avatar-color-6: var(--color-blue, #025fc8);
+  --sync-avatar-color-7: var(--color-purple, #5f38d6);
+  --sync-avatar-color-8: var(--color-pink, #bf206d);
+  --tab-background-active: var(--background-primary, #fff3e7);
+  --tab-container-background: var(--background-secondary, #fae7d2);
+  --tab-divider-color: var(--background-modifier-border-hover, #e0c1a0);
+  --tab-font-size: var(--font-ui-small, 14px);
+  --tab-outline-color: var(--divider-color, #e0c1a0);
+  --tab-stacked-font-size: var(--font-ui-small, 14px);
+  --tab-stacked-header-width: var(--header-height, 30px);
+  --tab-switcher-background: var(--background-secondary, #fae7d2);
+  --tab-text-color: var(--text-faint, #c37e30);
+  --tab-text-color-active: var(--text-muted, #cf8a3a);
+  --tab-text-color-focused: var(--text-muted, #cf8a3a);
+  --tab-text-color-focused-active: var(--text-muted, #cf8a3a);
+  --tab-text-color-focused-active-current: var(--text-normal, #97653c);
+  --tab-text-color-focused-highlighted: var(--text-accent, #d83939);
+  --table-add-button-border-color: var(--background-modifier-border, #e0c1a0);
+  --table-border-color: var(--background-modifier-border, #e0c1a0);
+  --table-drag-handle-background-active: var(--table-selection-border-color, #d83939);
+  --table-drag-handle-color: var(--text-faint, #c37e30);
+  --table-header-border-color: var(--table-border-color, #e0c1a0);
+  --table-header-color: var(--text-normal, #97653c);
+  --table-selection-border-color: var(--interactive-accent, #d83939);
+  --tag-color: var(--text-accent, #d83939);
+  --tag-color-hover: var(--text-accent, #d83939);
   --tag-radius: 4px;
-  --tertiary: var(--text-accent-hover, #ec5555);
-  --text-accent: #d83939;
-  --text-accent-hover: #ec5555;
-  --text-error: #cf1e33;
-  --text-faint: #c37e30;
-  --text-highlight-bg: #ffd3a4cb;
-  --text-highlight-bg-active: #ffd3a4cb;
-  --text-muted: #cf8a3a;
-  --text-normal: #97653c;
-  --text-selection: #efddcacb;
-  --text-success: #01903b;
-  --text-warning: #c16d18;
-  --textHighlight: var(--text-highlight-bg, #ffd3a4cb);
-  --titleFont: var(--font-text, "CMU Typewriter Text");
-  --titlebar-background: #fae7d2;
-  --titlebar-background-focused: #fae7d2;
-  --titlebar-border-color: #e0c1a0;
-  --titlebar-text-color: #cf8a3a;
-  --titlebar-text-color-focused: #97653c;
-  --traffic-lights-offset-x: 30px;
-  --traffic-lights-offset-y: 30px;
-  --vault-profile-color: #97653c;
-  --vault-profile-color-hover: #97653c;
-  --vault-profile-font-size: 14px;
+  --tertiary: var(--text-accent-hover, var(--color-accent-2, #ec5555));
+  --text-accent: var(--color-accent, #d83939);
+  --text-accent-hover: var(--color-accent-2, #ec5555);
+  --text-error: var(--color-red, #cf1e33);
+  --text-faint: var(--color-base-50, #c37e30);
+  --text-highlight-bg-active: var(--text-highlight-bg, #ffd3a4cb);
+  --text-muted: var(--color-base-70, #cf8a3a);
+  --text-normal: var(--color-base-100, #97653c);
+  --text-success: var(--color-green, #01903b);
+  --text-warning: var(--color-orange, #c16d18);
+  --titlebar-background: var(--background-secondary, #fae7d2);
+  --titlebar-background-focused: var(--color-base-20, #fae7d2);
+  --titlebar-border-color: var(--background-modifier-border, #e0c1a0);
+  --titlebar-text-color: var(--text-muted, #cf8a3a);
+  --titlebar-text-color-focused: var(--text-normal, #97653c);
+  --traffic-lights-offset-x: var(--header-height, 30px);
+  --traffic-lights-offset-y: var(--header-height, 30px);
+  --vault-profile-color: var(--text-normal, #97653c);
+  --vault-profile-color-hover: var(--vault-profile-color, #97653c);
+  --vault-profile-font-size: var(--font-ui-small, 14px);
   --quartz-icon-color: currentColor;
 }
 
@@ -2312,17 +2395,17 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
-  background-color: rgb(255, 243, 231);
+  background-color: var(--background-primary, rgb(255, 243, 231));
   color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   color: rgb(151, 101, 60);
 }
 
@@ -2331,7 +2414,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   border-left-color: rgb(224, 193, 160);
   color: rgb(151, 101, 60);
 }
@@ -2344,9 +2427,13 @@ html[saved-theme="light"] body html {
   --hover-faster-animation-duration: 75ms;
   --pop-callout-slide-out-duration: 700ms;
   --pop-callout-width: 20px;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
-  color: rgb(179, 107, 41);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--color-bold, rgb(179, 107, 41));
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(179, 107, 41) none 0px;
   text-decoration-color: rgb(179, 107, 41);
@@ -2354,7 +2441,8 @@ html[saved-theme="light"] body html {
 }
 
 html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
-  color: rgb(216, 132, 5);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--color-italic, rgb(216, 132, 5));
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(216, 132, 5) none 0px;
   text-decoration-color: rgb(216, 132, 5);
@@ -2362,7 +2450,8 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
-  color: rgb(216, 132, 5);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--color-italic, rgb(216, 132, 5));
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(216, 132, 5) none 0px;
   text-decoration-color: rgb(216, 132, 5);
@@ -2370,7 +2459,8 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
 }
 
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
-  color: rgb(179, 107, 41);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--color-bold, rgb(179, 107, 41));
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(179, 107, 41) none 0px;
   text-decoration-color: rgb(179, 107, 41);
@@ -2378,8 +2468,8 @@ html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="
 }
 
 html[saved-theme="light"] body .text-highlight {
-  background-color: rgba(255, 211, 164, 0.796);
-  color: rgb(151, 101, 60);
+  background-color: var(--text-highlight-bg, rgba(255, 211, 164, 0.796));
+  color: var(--text-normal, rgb(151, 101, 60));
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(151, 101, 60) none 0px;
   text-decoration-color: rgb(151, 101, 60);
@@ -2387,6 +2477,7 @@ html[saved-theme="light"] body .text-highlight {
 }
 
 html[saved-theme="light"] body del {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   color: rgb(151, 101, 60);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(151, 101, 60) none 0px;
@@ -2399,27 +2490,30 @@ html[saved-theme="light"] body footer {
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(151, 101, 60);
+  color: var(--text-normal, rgb(151, 101, 60));
   font-size: 14px;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(195, 126, 48);
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(216, 57, 57);
+  background-color: var(--checkbox-color, rgb(216, 57, 57));
   border-color: rgb(216, 57, 57);
 }
 
 html[saved-theme="light"] body p {
-  color: rgb(207, 138, 58);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--text-muted, rgb(207, 138, 58));
   font-family: "??", "??", "??", "CMU Typewriter Text";
   outline: rgb(207, 138, 58) none 0px;
   text-decoration-color: rgb(207, 138, 58);
 }`,
     links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
-  color: rgb(216, 57, 57);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--link-external-color, rgb(216, 57, 57));
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(216, 57, 57) none 0px;
   text-decoration-color: rgb(216, 57, 57);
@@ -2427,23 +2521,34 @@ html[saved-theme="light"] body p {
 }
 
 html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(216, 57, 57);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--link-color, rgb(216, 57, 57));
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(216, 57, 57) none 0px;
   text-decoration-color: rgb(216, 57, 57);
 }
 
 html[saved-theme="light"] body a.internal-link.broken {
-  color: rgb(216, 57, 57);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--link-unresolved-color, rgb(216, 57, 57));
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(216, 57, 57) none 0px;
 }`,
     lists: `html[saved-theme="light"] body dd {
   color: rgb(151, 101, 60);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
+}
+
+html[saved-theme="light"] body dl {
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body dt {
   color: rgb(151, 101, 60);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body ol > li {
@@ -2461,14 +2566,19 @@ html[saved-theme="light"] body ul.overflow {
   border-top-color: rgb(151, 101, 60);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
-  color: rgb(195, 126, 48);
+  color: var(--text-faint, rgb(195, 126, 48));
 }
 
 html[saved-theme="light"] body blockquote {
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   font-family: "??", "??", "CMU Typewriter Text";
 }`,
-    tables: `html[saved-theme="light"] body .table-container {
+    tables: `html[saved-theme="light"] body .spacer {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+}
+
+html[saved-theme="light"] body .table-container {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(151, 101, 60);
   border-left-color: rgb(151, 101, 60);
   border-right-color: rgb(151, 101, 60);
@@ -2476,31 +2586,39 @@ html[saved-theme="light"] body blockquote {
 }
 
 html[saved-theme="light"] body table {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   color: rgb(151, 101, 60);
   font-family: "??", "??", "CMU Typewriter Text";
-  margin-left: 334.703px;
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
   margin-right: 334.719px;
+  margin-top: calc(var(--header-height)*-1 + 10px);
   width: 194.578px;
 }
 
+html[saved-theme="light"] body tbody {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+}
+
 html[saved-theme="light"] body td {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(224, 193, 160);
   border-left-color: rgb(224, 193, 160);
   border-right-color: rgb(224, 193, 160);
   border-top-color: rgb(224, 193, 160);
-  color: rgb(151, 101, 60);
+  color: var(--table-text-color, rgb(151, 101, 60));
 }
 
 html[saved-theme="light"] body th {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(224, 193, 160);
   border-left-color: rgb(224, 193, 160);
   border-right-color: rgb(224, 193, 160);
   border-top-color: rgb(224, 193, 160);
-  color: rgb(151, 101, 60);
+  color: var(--table-header-color, rgb(151, 101, 60));
 }
 
 html[saved-theme="light"] body thead {
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   border-bottom-color: rgb(214, 176, 134);
   border-bottom-style: solid;
   border-bottom-width: 2px;
@@ -2510,23 +2628,24 @@ html[saved-theme="light"] body tr {
   border-bottom-color: rgb(214, 176, 134);
 }`,
     code: `html[saved-theme="light"] body code {
-  background-color: rgb(245, 220, 195);
+  background-color: var(--code-background, rgb(245, 220, 195));
   border-bottom-color: rgb(224, 193, 160);
   border-left-color: rgb(224, 193, 160);
   border-right-color: rgb(224, 193, 160);
   border-top-color: rgb(224, 193, 160);
-  color: rgb(151, 101, 60);
-  font-family: "??", "??", "JetBrains Mono";
+  color: var(--code-normal, rgb(151, 101, 60));
+  font-family: var(--font-monospace, "??", "??", "JetBrains Mono");
 }
 
 html[saved-theme="light"] body pre:has(> code) {
-  background-color: rgb(245, 220, 195);
+  background-color: var(--code-background, rgb(245, 220, 195));
   border-bottom-color: rgb(224, 193, 160);
   border-left-color: rgb(224, 193, 160);
   border-right-color: rgb(224, 193, 160);
   border-top-color: rgb(224, 193, 160);
 }`,
     images: `html[saved-theme="light"] body audio {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(151, 101, 60);
   border-left-color: rgb(151, 101, 60);
   border-right-color: rgb(151, 101, 60);
@@ -2536,13 +2655,18 @@ html[saved-theme="light"] body pre:has(> code) {
 html[saved-theme="light"] body figcaption {
   color: rgb(151, 101, 60);
   font-family: "??", "??", "??", "CMU Typewriter Text";
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body figure {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(151, 101, 60);
   border-left-color: rgb(151, 101, 60);
   border-right-color: rgb(151, 101, 60);
   border-top-color: rgb(151, 101, 60);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body img {
@@ -2550,6 +2674,8 @@ html[saved-theme="light"] body img {
   border-left-color: rgb(151, 101, 60);
   border-right-color: rgb(151, 101, 60);
   border-top-color: rgb(151, 101, 60);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body video {
@@ -2557,33 +2683,44 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(151, 101, 60);
   border-right-color: rgb(151, 101, 60);
   border-top-color: rgb(151, 101, 60);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
-  background-color: rgb(252, 235, 217);
+  background-color: var(--background-secondary, rgb(252, 235, 217));
   border-bottom-color: rgb(207, 138, 58);
   border-left-color: rgb(207, 138, 58);
   border-right-color: rgb(207, 138, 58);
   border-top-color: rgb(207, 138, 58);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body .footnotes {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-top-color: rgb(151, 101, 60);
   color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .transclude {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(151, 101, 60);
   border-left-color: rgb(151, 101, 60);
   border-left-width: 0px;
   border-right-color: rgb(151, 101, 60);
   border-top-color: rgb(151, 101, 60);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body .transclude-inner {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(151, 101, 60);
   border-left-color: rgb(151, 101, 60);
   border-right-color: rgb(151, 101, 60);
   border-top-color: rgb(151, 101, 60);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", "??", "CMU Typewriter Text";
@@ -2598,6 +2735,8 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-left-color: rgb(195, 126, 48);
   border-right-color: rgb(195, 126, 48);
   border-top-color: rgb(195, 126, 48);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="#"] {
@@ -3149,11 +3288,11 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   --callout-color: 2, 95, 200;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(2, 95, 200);
   border-left-color: rgb(2, 95, 200);
   border-right-color: rgb(2, 95, 200);
   border-top-color: rgb(2, 95, 200);
-  color: rgb(2, 95, 200);
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -3161,12 +3300,12 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
-  color: rgb(2, 95, 200);
+  color: var(--callout-title-color, rgb(2, 95, 200));
 }
 
 html[saved-theme="light"] body .callout > .callout-content {
   background: rgb(250, 231, 210) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   color: rgb(151, 101, 60);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -3175,26 +3314,28 @@ html[saved-theme="light"] body .callout > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
-  --callout-color: 0, 158, 155;
+  --callout-color: var(--callout-summary, 0, 158, 155);
   background: rgba(0, 158, 155, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 158, 155, 0.1);
+  background-color: var(--background-secondary, rgba(0, 158, 155, 0.1));
   border-bottom-color: rgba(0, 158, 155, 0.25);
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(0, 158, 155);
   border-left-width: 3px;
   border-right-color: rgba(0, 158, 155, 0.25);
   border-top-color: rgba(0, 158, 155, 0.25);
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 2, 95, 200;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(2, 95, 200);
   border-left-color: rgb(2, 95, 200);
   border-right-color: rgb(2, 95, 200);
   border-top-color: rgb(2, 95, 200);
-  color: rgb(2, 95, 200);
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -3202,12 +3343,12 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-  color: rgb(2, 95, 200);
+  color: var(--callout-title-color, rgb(2, 95, 200));
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-content {
   background: rgb(250, 231, 210) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   color: rgb(151, 101, 60);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -3216,26 +3357,28 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
-  --callout-color: 207, 30, 51;
+  --callout-color: var(--callout-bug, 207, 30, 51);
   background: rgba(207, 30, 51, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(207, 30, 51, 0.1);
+  background-color: var(--background-secondary, rgba(207, 30, 51, 0.1));
   border-bottom-color: rgba(207, 30, 51, 0.25);
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(207, 30, 51);
   border-left-width: 3px;
   border-right-color: rgba(207, 30, 51, 0.25);
   border-top-color: rgba(207, 30, 51, 0.25);
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 2, 95, 200;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(2, 95, 200);
   border-left-color: rgb(2, 95, 200);
   border-right-color: rgb(2, 95, 200);
   border-top-color: rgb(2, 95, 200);
-  color: rgb(2, 95, 200);
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -3243,12 +3386,12 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-  color: rgb(2, 95, 200);
+  color: var(--callout-title-color, rgb(2, 95, 200));
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
   background: rgb(250, 231, 210) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   color: rgb(151, 101, 60);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -3257,26 +3400,28 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
-  --callout-color: 207, 30, 51;
+  --callout-color: var(--callout-error, 207, 30, 51);
   background: rgba(207, 30, 51, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(207, 30, 51, 0.1);
+  background-color: var(--background-secondary, rgba(207, 30, 51, 0.1));
   border-bottom-color: rgba(207, 30, 51, 0.25);
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(207, 30, 51);
   border-left-width: 3px;
   border-right-color: rgba(207, 30, 51, 0.25);
   border-top-color: rgba(207, 30, 51, 0.25);
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 2, 95, 200;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(2, 95, 200);
   border-left-color: rgb(2, 95, 200);
   border-right-color: rgb(2, 95, 200);
   border-top-color: rgb(2, 95, 200);
-  color: rgb(2, 95, 200);
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -3284,12 +3429,12 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-  color: rgb(2, 95, 200);
+  color: var(--callout-title-color, rgb(2, 95, 200));
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-content {
   background: rgb(250, 231, 210) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   color: rgb(151, 101, 60);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -3298,26 +3443,28 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
-  --callout-color: 95, 56, 214;
+  --callout-color: var(--callout-example, 95, 56, 214);
   background: rgba(95, 56, 214, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(95, 56, 214, 0.1);
+  background-color: var(--background-secondary, rgba(95, 56, 214, 0.1));
   border-bottom-color: rgba(95, 56, 214, 0.25);
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(95, 56, 214);
   border-left-width: 3px;
   border-right-color: rgba(95, 56, 214, 0.25);
   border-top-color: rgba(95, 56, 214, 0.25);
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 2, 95, 200;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(2, 95, 200);
   border-left-color: rgb(2, 95, 200);
   border-right-color: rgb(2, 95, 200);
   border-top-color: rgb(2, 95, 200);
-  color: rgb(2, 95, 200);
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -3325,12 +3472,12 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-  color: rgb(2, 95, 200);
+  color: var(--callout-title-color, rgb(2, 95, 200));
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] > .callout-content {
   background: rgb(250, 231, 210) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   color: rgb(151, 101, 60);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -3339,26 +3486,28 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
-  --callout-color: 207, 30, 51;
+  --callout-color: var(--callout-fail, 207, 30, 51);
   background: rgba(207, 30, 51, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(207, 30, 51, 0.1);
+  background-color: var(--background-secondary, rgba(207, 30, 51, 0.1));
   border-bottom-color: rgba(207, 30, 51, 0.25);
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(207, 30, 51);
   border-left-width: 3px;
   border-right-color: rgba(207, 30, 51, 0.25);
   border-top-color: rgba(207, 30, 51, 0.25);
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 2, 95, 200;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(2, 95, 200);
   border-left-color: rgb(2, 95, 200);
   border-right-color: rgb(2, 95, 200);
   border-top-color: rgb(2, 95, 200);
-  color: rgb(2, 95, 200);
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -3366,12 +3515,12 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-  color: rgb(2, 95, 200);
+  color: var(--callout-title-color, rgb(2, 95, 200));
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-content {
   background: rgb(250, 231, 210) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   color: rgb(151, 101, 60);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -3380,26 +3529,28 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
-  --callout-color: 2, 95, 200;
+  --callout-color: var(--callout-info, 2, 95, 200);
   background: rgba(2, 95, 200, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(2, 95, 200, 0.1);
+  background-color: var(--background-secondary, rgba(2, 95, 200, 0.1));
   border-bottom-color: rgba(2, 95, 200, 0.25);
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(2, 95, 200);
   border-left-width: 3px;
   border-right-color: rgba(2, 95, 200, 0.25);
   border-top-color: rgba(2, 95, 200, 0.25);
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 2, 95, 200;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(2, 95, 200);
   border-left-color: rgb(2, 95, 200);
   border-right-color: rgb(2, 95, 200);
   border-top-color: rgb(2, 95, 200);
-  color: rgb(2, 95, 200);
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -3407,12 +3558,12 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-  color: rgb(2, 95, 200);
+  color: var(--callout-title-color, rgb(2, 95, 200));
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content {
   background: rgb(250, 231, 210) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   color: rgb(151, 101, 60);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -3421,26 +3572,28 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
-  --callout-color: 2, 95, 200;
+  --callout-color: var(--callout-default, 2, 95, 200);
   background: rgba(2, 95, 200, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(2, 95, 200, 0.1);
+  background-color: var(--background-secondary, rgba(2, 95, 200, 0.1));
   border-bottom-color: rgba(2, 95, 200, 0.25);
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(2, 95, 200);
   border-left-width: 3px;
   border-right-color: rgba(2, 95, 200, 0.25);
   border-top-color: rgba(2, 95, 200, 0.25);
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 2, 95, 200;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(2, 95, 200);
   border-left-color: rgb(2, 95, 200);
   border-right-color: rgb(2, 95, 200);
   border-top-color: rgb(2, 95, 200);
-  color: rgb(2, 95, 200);
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -3448,12 +3601,12 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-  color: rgb(2, 95, 200);
+  color: var(--callout-title-color, rgb(2, 95, 200));
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content {
   background: rgb(250, 231, 210) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   color: rgb(151, 101, 60);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -3462,26 +3615,28 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
-  --callout-color: 193, 109, 24;
+  --callout-color: var(--callout-question, 193, 109, 24);
   background: rgba(193, 109, 24, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(193, 109, 24, 0.1);
+  background-color: var(--background-secondary, rgba(193, 109, 24, 0.1));
   border-bottom-color: rgba(193, 109, 24, 0.25);
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(193, 109, 24);
   border-left-width: 3px;
   border-right-color: rgba(193, 109, 24, 0.25);
   border-top-color: rgba(193, 109, 24, 0.25);
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 2, 95, 200;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(2, 95, 200);
   border-left-color: rgb(2, 95, 200);
   border-right-color: rgb(2, 95, 200);
   border-top-color: rgb(2, 95, 200);
-  color: rgb(2, 95, 200);
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -3489,12 +3644,12 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-  color: rgb(2, 95, 200);
+  color: var(--callout-title-color, rgb(2, 95, 200));
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] > .callout-content {
   background: rgb(250, 231, 210) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   color: rgb(151, 101, 60);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -3503,21 +3658,24 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
+  background-color: var(--background-secondary, rgba(158, 158, 158, 0.1));
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(158, 158, 158);
   border-left-width: 3px;
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 2, 95, 200;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(2, 95, 200);
   border-left-color: rgb(2, 95, 200);
   border-right-color: rgb(2, 95, 200);
   border-top-color: rgb(2, 95, 200);
-  color: rgb(2, 95, 200);
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -3525,12 +3683,12 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-  color: rgb(2, 95, 200);
+  color: var(--callout-title-color, rgb(2, 95, 200));
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content {
   background: rgb(250, 231, 210) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   color: rgb(151, 101, 60);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -3539,26 +3697,28 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
-  --callout-color: 1, 144, 59;
+  --callout-color: var(--callout-success, 1, 144, 59);
   background: rgba(1, 144, 59, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(1, 144, 59, 0.1);
+  background-color: var(--background-secondary, rgba(1, 144, 59, 0.1));
   border-bottom-color: rgba(1, 144, 59, 0.25);
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(1, 144, 59);
   border-left-width: 3px;
   border-right-color: rgba(1, 144, 59, 0.25);
   border-top-color: rgba(1, 144, 59, 0.25);
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 2, 95, 200;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(2, 95, 200);
   border-left-color: rgb(2, 95, 200);
   border-right-color: rgb(2, 95, 200);
   border-top-color: rgb(2, 95, 200);
-  color: rgb(2, 95, 200);
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -3566,12 +3726,12 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-  color: rgb(2, 95, 200);
+  color: var(--callout-title-color, rgb(2, 95, 200));
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] > .callout-content {
   background: rgb(250, 231, 210) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   color: rgb(151, 101, 60);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -3580,26 +3740,28 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
-  --callout-color: 0, 158, 155;
+  --callout-color: var(--callout-tip, 0, 158, 155);
   background: rgba(0, 158, 155, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 158, 155, 0.1);
+  background-color: var(--background-secondary, rgba(0, 158, 155, 0.1));
   border-bottom-color: rgba(0, 158, 155, 0.25);
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(0, 158, 155);
   border-left-width: 3px;
   border-right-color: rgba(0, 158, 155, 0.25);
   border-top-color: rgba(0, 158, 155, 0.25);
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 2, 95, 200;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(2, 95, 200);
   border-left-color: rgb(2, 95, 200);
   border-right-color: rgb(2, 95, 200);
   border-top-color: rgb(2, 95, 200);
-  color: rgb(2, 95, 200);
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -3607,12 +3769,12 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-  color: rgb(2, 95, 200);
+  color: var(--callout-title-color, rgb(2, 95, 200));
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
   background: rgb(250, 231, 210) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   color: rgb(151, 101, 60);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -3621,26 +3783,28 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
-  --callout-color: 2, 95, 200;
+  --callout-color: var(--callout-todo, 2, 95, 200);
   background: rgba(2, 95, 200, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(2, 95, 200, 0.1);
+  background-color: var(--background-secondary, rgba(2, 95, 200, 0.1));
   border-bottom-color: rgba(2, 95, 200, 0.25);
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(2, 95, 200);
   border-left-width: 3px;
   border-right-color: rgba(2, 95, 200, 0.25);
   border-top-color: rgba(2, 95, 200, 0.25);
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 2, 95, 200;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(2, 95, 200);
   border-left-color: rgb(2, 95, 200);
   border-right-color: rgb(2, 95, 200);
   border-top-color: rgb(2, 95, 200);
-  color: rgb(2, 95, 200);
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -3648,12 +3812,12 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-  color: rgb(2, 95, 200);
+  color: var(--callout-title-color, rgb(2, 95, 200));
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content {
   background: rgb(250, 231, 210) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   color: rgb(151, 101, 60);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -3662,26 +3826,28 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
-  --callout-color: 193, 109, 24;
+  --callout-color: var(--callout-warning, 193, 109, 24);
   background: rgba(193, 109, 24, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(193, 109, 24, 0.1);
+  background-color: var(--background-secondary, rgba(193, 109, 24, 0.1));
   border-bottom-color: rgba(193, 109, 24, 0.25);
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(193, 109, 24);
   border-left-width: 3px;
   border-right-color: rgba(193, 109, 24, 0.25);
   border-top-color: rgba(193, 109, 24, 0.25);
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 2, 95, 200;
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(2, 95, 200);
   border-left-color: rgb(2, 95, 200);
   border-right-color: rgb(2, 95, 200);
   border-top-color: rgb(2, 95, 200);
-  color: rgb(2, 95, 200);
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -3689,12 +3855,12 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-  color: rgb(2, 95, 200);
+  color: var(--callout-title-color, rgb(2, 95, 200));
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] > .callout-content {
   background: rgb(250, 231, 210) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   color: rgb(151, 101, 60);
   padding-bottom: 4px;
   padding-left: 10px;
@@ -3758,7 +3924,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
-  background-color: rgb(243, 219, 193);
+  background-color: var(--background-secondary, rgb(243, 219, 193));
   border-bottom-color: rgb(224, 193, 160);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -3767,12 +3933,12 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-color: rgb(224, 193, 160);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  color: rgb(151, 101, 60);
+  color: var(--text-normal, rgb(151, 101, 60));
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
-  background-color: rgb(255, 243, 231);
+  background-color: var(--background-secondary, rgb(255, 243, 231));
   border-bottom-color: rgb(214, 176, 134);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -3784,6 +3950,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space {
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > * {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   color: rgb(151, 101, 60);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(151, 101, 60) none 0px;
@@ -3822,6 +3989,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(250, 231, 210);
   border-left-color: rgb(151, 101, 60);
   border-right-color: rgb(151, 101, 60);
@@ -3841,6 +4009,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  background-color: var(--background-secondary, rgba(138, 92, 245, 0.1));
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-top-left-radius: 4px;
@@ -3853,76 +4022,85 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
-  color: rgb(151, 101, 60);
-  font-family: "??", "??", "CMU Typewriter Text";
+  color: var(--h1-color, rgb(151, 101, 60));
+  font-family: var(--h1-font, "??", "??", "CMU Typewriter Text");
 }
 
 html[saved-theme="light"] body h1.article-title {
-  color: rgb(151, 101, 60);
+  color: var(--inline-title-color, rgb(151, 101, 60));
 }
 
 html[saved-theme="light"] body h2 {
-  color: rgb(151, 101, 60);
-  font-family: "??", "??", "CMU Typewriter Text";
+  color: var(--h2-color, rgb(151, 101, 60));
+  font-family: var(--h2-font, "??", "??", "CMU Typewriter Text");
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  color: rgb(151, 101, 60);
-  font-family: "??", "??", "CMU Typewriter Text";
+  color: var(--inline-title-color, rgb(151, 101, 60));
+  font-family: var(--inline-title-font, "??", "??", "CMU Typewriter Text");
 }
 
 html[saved-theme="light"] body h3 {
-  color: rgb(151, 101, 60);
-  font-family: "??", "??", "CMU Typewriter Text";
+  color: var(--h3-color, rgb(151, 101, 60));
+  font-family: var(--h3-font, "??", "??", "CMU Typewriter Text");
 }
 
 html[saved-theme="light"] body h4 {
-  color: rgb(151, 101, 60);
-  font-family: "??", "??", "CMU Typewriter Text";
+  color: var(--h4-color, rgb(151, 101, 60));
+  font-family: var(--h4-font, "??", "??", "CMU Typewriter Text");
 }
 
 html[saved-theme="light"] body h5 {
-  color: rgb(151, 101, 60);
-  font-family: "??", "??", "CMU Typewriter Text";
+  color: var(--h5-color, rgb(151, 101, 60));
+  font-family: var(--h5-font, "??", "??", "CMU Typewriter Text");
 }
 
 html[saved-theme="light"] body h6 {
-  color: rgb(151, 101, 60);
-  font-family: "??", "??", "CMU Typewriter Text";
+  color: var(--h6-color, rgb(151, 101, 60));
+  font-family: var(--h6-font, "??", "??", "CMU Typewriter Text");
 }
 
 html[saved-theme="light"] body hr {
   border-bottom-color: rgb(224, 193, 160);
   border-left-color: rgb(224, 193, 160);
   border-right-color: rgb(224, 193, 160);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
-  --callout-color: 2, 95, 200;
+  --callout-color: var(--callout-default, 2, 95, 200);
   border-bottom-color: rgba(2, 95, 200, 0.25);
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: var(--default-border-radius, 4px);
   border-left-color: rgb(2, 95, 200);
   border-left-width: 3px;
   border-right-color: rgba(2, 95, 200, 0.25);
   border-top-color: rgba(2, 95, 200, 0.25);
   border-top-left-radius: 0px;
+  border-top-right-radius: var(--default-border-radius, 4px);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: rgb(207, 138, 58);
+    explorer: `html[saved-theme="light"] body .nav-files-container {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: var(--nav-item-color, rgb(207, 138, 58));
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: rgb(207, 138, 58);
+  color: var(--nav-item-color, rgb(207, 138, 58));
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(151, 101, 60);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(207, 138, 58);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3931,10 +4109,10 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-color: rgb(207, 138, 58);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(207, 138, 58);
+  color: var(--icon-color, rgb(207, 138, 58));
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   border-bottom-color: rgb(224, 193, 160);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -3943,7 +4121,7 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-color: rgb(224, 193, 160);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  color: rgb(207, 138, 58);
+  color: var(--status-bar-text-color, rgb(207, 138, 58));
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }
 
@@ -3956,6 +4134,7 @@ html[saved-theme="light"] body footer ul li a {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(151, 101, 60);
   border-left-color: rgb(151, 101, 60);
   border-right-color: rgb(151, 101, 60);
@@ -3964,7 +4143,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: rgb(207, 138, 58);
+  color: var(--nav-item-color, rgb(207, 138, 58));
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3972,6 +4151,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(151, 101, 60);
   border-left-color: rgb(151, 101, 60);
   border-right-color: rgb(151, 101, 60);
@@ -3984,16 +4164,18 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
-  color: rgb(207, 138, 58);
+  color: var(--nav-item-color, rgb(207, 138, 58));
 }
 
 html[saved-theme="light"] body ul.section-ul {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(151, 101, 60);
   border-left-color: rgb(151, 101, 60);
   border-right-color: rgb(151, 101, 60);
   border-top-color: rgb(151, 101, 60);
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(207, 138, 58);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4002,7 +4184,7 @@ html[saved-theme="light"] body ul.section-ul {
   border-top-color: rgb(207, 138, 58);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(207, 138, 58);
+  color: var(--icon-color, rgb(207, 138, 58));
 }
 
 html[saved-theme="light"] body .darkmode svg {
@@ -4010,6 +4192,7 @@ html[saved-theme="light"] body .darkmode svg {
   stroke: rgb(207, 138, 58);
 }`,
     breadcrumbs: `html[saved-theme="light"] body .breadcrumb-container {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(207, 138, 58);
   border-left-color: rgb(207, 138, 58);
   border-right-color: rgb(207, 138, 58);
@@ -4018,10 +4201,11 @@ html[saved-theme="light"] body .darkmode svg {
 }
 
 html[saved-theme="light"] body .breadcrumb-element p {
-  color: rgb(195, 126, 48);
+  color: var(--text-faint, rgb(195, 126, 48));
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }`,
     canvas: `html[saved-theme="light"] body .canvas-node {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(151, 101, 60);
 }
 
@@ -4030,43 +4214,53 @@ html[saved-theme="light"] body .canvas-node-content {
 }
 
 html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(151, 101, 60);
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--text-normal, rgb(151, 101, 60));
 }
 
 html[saved-theme="light"] body .canvas-node-group {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(255, 243, 231);
+  background-color: var(--background-secondary, rgb(255, 243, 231));
   border-color: rgb(151, 101, 60);
 }`,
     bases: `html[saved-theme="light"] body .bases-table thead th {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(224, 193, 160);
-  color: rgb(151, 101, 60);
+  color: var(--table-header-color, rgb(151, 101, 60));
 }`,
     properties: `html[saved-theme="light"] body .metadata {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(224, 193, 160);
   border-left-color: rgb(224, 193, 160);
   border-right-color: rgb(224, 193, 160);
   border-top-color: rgb(224, 193, 160);
-  color: rgb(207, 138, 58);
+  color: var(--text-muted, rgb(207, 138, 58));
   font-family: "??", "??", "CMU Typewriter Text";
   margin-bottom: 0px;
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
   padding-bottom: 0px;
   padding-top: 0px;
 }
 
 html[saved-theme="light"] body .metadata-properties {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(207, 138, 58);
   border-left-color: rgb(207, 138, 58);
   border-right-color: rgb(207, 138, 58);
   border-top-color: rgb(207, 138, 58);
   color: rgb(207, 138, 58);
   font-family: "??", "??", "CMU Typewriter Text";
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body .note-properties {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(224, 193, 160);
 }
 
@@ -4079,8 +4273,9 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  background-color: var(--background-secondary, rgba(138, 92, 245, 0.1));
   border-radius: 4px;
-  color: rgb(216, 57, 57);
+  color: var(--pill-color, rgb(216, 57, 57));
 }
 
 html[saved-theme="light"] body .note-properties-value {
@@ -4088,8 +4283,8 @@ html[saved-theme="light"] body .note-properties-value {
 }
 
 html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(255, 243, 231);
-  color: rgb(151, 101, 60);
+  background-color: var(--background-secondary, rgb(255, 243, 231));
+  color: var(--text-normal, rgb(151, 101, 60));
 }
 
 html[saved-theme="light"] body ol.overflow {
@@ -4099,12 +4294,12 @@ html[saved-theme="light"] body ol.overflow {
   border-top-color: rgb(151, 101, 60);
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
   border-color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .stacked-page-header {
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
 }
 
 html[saved-theme="light"] body .stacked-page.active {
@@ -4119,11 +4314,11 @@ html[saved-theme="light"] body .stacked-page.active {
 }
 
 html[saved-theme="light"] body .navigation-progress {
-  background-color: rgb(250, 231, 210);
+  background-color: var(--background-secondary, rgb(250, 231, 210));
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
-  color: rgb(151, 101, 60);
+  color: var(--text-normal, rgb(151, 101, 60));
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }
 
@@ -4132,34 +4327,39 @@ html[saved-theme="light"] body abbr {
 }
 
 html[saved-theme="light"] body details {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(151, 101, 60);
   border-left-color: rgb(151, 101, 60);
   border-right-color: rgb(151, 101, 60);
   border-top-color: rgb(151, 101, 60);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body input[type=text] {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(207, 138, 58);
   border-left-color: rgb(207, 138, 58);
   border-right-color: rgb(207, 138, 58);
   border-top-color: rgb(207, 138, 58);
-  color: rgb(207, 138, 58);
+  color: var(--text-normal, rgb(207, 138, 58));
   font-family: "??", "??", "??", "CMU Typewriter Text";
   padding-bottom: 0px;
   padding-top: 0px;
 }
 
 html[saved-theme="light"] body kbd {
-  background-color: rgb(245, 220, 195);
+  background-color: var(--background-secondary, rgb(245, 220, 195));
   border-bottom-color: rgb(151, 101, 60);
   border-left-color: rgb(151, 101, 60);
   border-right-color: rgb(151, 101, 60);
   border-top-color: rgb(151, 101, 60);
-  color: rgb(151, 101, 60);
-  font-family: "??", "??", "JetBrains Mono";
+  color: var(--code-normal, rgb(151, 101, 60));
+  font-family: var(--font-monospace, "??", "??", "JetBrains Mono");
 }
 
 html[saved-theme="light"] body progress {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(151, 101, 60);
   border-left-color: rgb(151, 101, 60);
   border-right-color: rgb(151, 101, 60);
@@ -4171,6 +4371,7 @@ html[saved-theme="light"] body sub {
 }
 
 html[saved-theme="light"] body summary {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   color: rgb(151, 101, 60);
 }
 
@@ -4180,11 +4381,12 @@ html[saved-theme="light"] body sup {
 }
 
 html[saved-theme="light"] body ul.tags > li {
+  background-color: var(--background-secondary, rgba(138, 92, 245, 0.1));
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  color: rgb(216, 57, 57);
+  color: var(--tag-color, rgb(216, 57, 57));
 }`,
   },
 };

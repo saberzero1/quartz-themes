@@ -381,7 +381,7 @@ body.theme-light {
     var(--interactive-accent-hsl),
     0.1
   ) !important;
-  --background-modifier-border: transparent !important;
+  --background-modifier-border: var(--color-base-30, transparent) !important;
   --background-modifier-border-focus: var(--color-base-40, #bdbdbd) !important;
   --background-modifier-border-hover: var(--color-base-35, #d4d4d4) !important;
   --background-modifier-error: var(--color-red, #e93147) !important;
@@ -400,11 +400,20 @@ body.theme-light {
     185,
     78
   ) !important;
-  --background-primary: hsl(258, 100%, 97%) !important;
+  --background-primary: var(
+    --colorBackgroundPrimary,
+    hsl(258, 100%, 97%)
+  ) !important;
   --background-primary-alt: var(--color-base-10, #fafafa) !important;
-  --background-secondary: hsla(258, 88%, 66%, 2%) !important;
+  --background-secondary: var(
+    --colorBackgroundSecondary,
+    hsla(258, 88%, 66%, 2%)
+  ) !important;
   --background-secondary-alt: var(--color-base-05, #fcfcfc) !important;
-  --bases-cards-background: hsl(258, 100%, 97%) !important;
+  --bases-cards-background: var(
+    --background-primary,
+    hsl(258, 100%, 97%)
+  ) !important;
   --bases-cards-border-width: var(--border-width, 1px) !important;
   --bases-cards-corner-shape: var(--corner-shape, round) !important;
   --bases-cards-cover-background: var(
@@ -413,18 +422,24 @@ body.theme-light {
   ) !important;
   --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
   --bases-cards-radius: var(--radius-m, 8px) !important;
-  --bases-cards-shadow: 0 0 0 1px transparent !important;
+  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
-  --bases-embed-border-color: transparent !important;
-  --bases-embed-border-radius: 100px !important;
+  --bases-embed-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
+  --bases-embed-border-radius: var(--radius-s, 100px) !important;
   --bases-group-heading-property-color: var(--text-muted, #5c5c5c) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller, 12px) !important;
   --bases-group-heading-property-weight: var(--font-normal, 400) !important;
   --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
   --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: transparent !important;
-  --bases-table-cell-background-active: hsl(258, 100%, 97%) !important;
+  --bases-table-border-color: var(--table-border-color, transparent) !important;
+  --bases-table-cell-background-active: var(
+    --background-primary,
+    hsl(258, 100%, 97%)
+  ) !important;
   --bases-table-cell-background-disabled: var(
     --background-primary-alt,
     #fafafa
@@ -435,16 +450,19 @@ body.theme-light {
   ) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(258, 100%, 31%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width, 1px) !important;
-  --bases-table-container-border-radius: 100px !important;
+  --bases-table-container-border-radius: var(--radius-s, 100px) !important;
   --bases-table-container-border-width: var(--border-width, 1px) !important;
   --bases-table-font-size: var(--font-smaller, 0.875em) !important;
   --bases-table-group-background: var(
     --background-primary-alt,
     #fafafa
   ) !important;
-  --bases-table-header-background: hsl(258, 100%, 97%) !important;
+  --bases-table-header-background: var(
+    --background-primary,
+    hsl(258, 100%, 97%)
+  ) !important;
   --bases-table-header-background-hover: var(
     --background-modifier-hover,
     rgba(0, 0, 0, 0.067)
@@ -461,16 +479,30 @@ body.theme-light {
     transparent
   ) !important;
   --bases-table-row-border-width: var(--border-width, 1px) !important;
-  --bases-table-summary-background: hsl(258, 100%, 97%) !important;
+  --bases-table-summary-background: var(
+    --background-primary,
+    hsl(258, 100%, 97%)
+  ) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover,
     rgba(0, 0, 0, 0.067)
   ) !important;
-  --blockquote-border-color: hsl(258, 100%, 31%) !important;
-  --blur-background: color-mix(in srgb, hsl(258, 100%, 97%) 65%, transparent)
+  --blockquote-border-color: var(
+    --interactive-accent,
+    hsl(258, 100%, 31%)
+  ) !important;
+  --blur-background: color-mix(
+      in srgb,
+      var(--background-primary) var(--blur-opacity-s),
+      transparent
+    )
     linear-gradient(
-      hsl(258, 100%, 97%),
-      color-mix(in srgb, hsl(258, 100%, 97%) 65%, transparent)
+      var(--background-primary),
+      color-mix(
+        in srgb,
+        var(--background-primary) var(--blur-opacity-s),
+        transparent
+      )
     ) !important;
   --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
@@ -480,7 +512,7 @@ body.theme-light {
     brightness(var(--blur-brightness)) !important;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
   --button-corner-shape: var(--corner-shape, round) !important;
-  --button-radius: 100px !important;
+  --button-radius: var(--input-radius, 100px) !important;
   --callout-blend-mode: var(--highlight-mix-blend-mode, darken);
   --callout-bug: var(--color-red-rgb, 233, 49, 71);
   --callout-default: var(--color-blue-rgb, 8, 109, 221);
@@ -492,14 +524,17 @@ body.theme-light {
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
     var(--size-4-6, 12px 12px 12px 24px);
   --callout-question: var(--color-orange-rgb, 236, 117, 0);
-  --callout-radius: 100px;
+  --callout-radius: var(--radius-s, 100px);
   --callout-success: var(--color-green-rgb, 8, 185, 78);
   --callout-summary: var(--color-cyan-rgb, 0, 191, 188);
   --callout-tip: var(--color-cyan-rgb, 0, 191, 188);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb, 8, 109, 221);
   --callout-warning: var(--color-orange-rgb, 236, 117, 0);
-  --canvas-background: hsl(258, 100%, 97%) !important;
+  --canvas-background: var(
+    --background-primary,
+    hsl(258, 100%, 97%)
+  ) !important;
   --canvas-card-label-color: var(--text-faint, #ababab) !important;
   --canvas-color-1: var(--color-red-rgb, 233, 49, 71) !important;
   --canvas-color-2: var(--color-orange-rgb, 236, 117, 0) !important;
@@ -509,20 +544,32 @@ body.theme-light {
   --canvas-color-6: var(--color-purple-rgb, 120, 82, 238) !important;
   --canvas-controls-icon-size: var(--icon-s, 16px) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
-  --canvas-controls-radius: 100px !important;
+  --canvas-controls-radius: var(--radius-s, 100px) !important;
   --canvas-dot-pattern: var(--color-base-30, #e0e0e0) !important;
   --caret-color: var(--text-normal, #222222) !important;
   --checkbox-border-color: var(--text-faint, #ababab) !important;
   --checkbox-border-color-hover: var(--text-muted, #5c5c5c) !important;
-  --checkbox-color: hsl(258, 100%, 31%) !important;
-  --checkbox-color-hover: hsl(258, 100%, 31%) !important;
-  --checkbox-marker-color: hsl(258, 100%, 97%) !important;
-  --checkbox-radius: 100px !important;
+  --checkbox-color: var(--interactive-accent, hsl(258, 100%, 31%)) !important;
+  --checkbox-color-hover: var(
+    --interactive-accent-hover,
+    hsl(258, 100%, 31%)
+  ) !important;
+  --checkbox-marker-color: var(
+    --background-primary,
+    hsl(258, 100%, 97%)
+  ) !important;
+  --checkbox-radius: var(--radius-s, 100px) !important;
   --checkbox-size: var(--font-text-size, 16px) !important;
   --checklist-done-color: var(--text-muted, #5c5c5c) !important;
-  --clickable-icon-radius: 100px !important;
-  --code-background: hsl(258, 100%, 93%) !important;
-  --code-border-color: transparent !important;
+  --clickable-icon-radius: var(--radius-s, 100px) !important;
+  --code-background: var(
+    --colorPrimaryContainer,
+    hsl(258, 100%, 93%)
+  ) !important;
+  --code-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
   --code-bracket-background: var(
     --background-modifier-hover,
     rgba(0, 0, 0, 0.067)
@@ -531,11 +578,11 @@ body.theme-light {
   --code-function: var(--color-yellow, #e0ac00) !important;
   --code-important: var(--color-orange, #ec7500) !important;
   --code-keyword: var(--color-pink, #d53984) !important;
-  --code-normal: hsl(258, 100%, 31%) !important;
+  --code-normal: var(--colorPrimary, hsl(258, 100%, 31%)) !important;
   --code-operator: var(--color-red, #e93147) !important;
   --code-property: var(--color-cyan, #00bfbc) !important;
   --code-punctuation: var(--text-muted, #5c5c5c) !important;
-  --code-radius: 100px !important;
+  --code-radius: var(--radius-s, 100px) !important;
   --code-size: var(--font-smaller, 0.875em) !important;
   --code-string: var(--color-green, #08b94e) !important;
   --code-tag: var(--color-red, #e93147) !important;
@@ -562,10 +609,16 @@ body.theme-light {
   ) !important;
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
-  --divider-color: transparent !important;
-  --divider-color-hover: hsl(258, 100%, 31%) !important;
+  --divider-color: var(--background-modifier-border, transparent) !important;
+  --divider-color-hover: var(
+    --interactive-accent,
+    hsl(258, 100%, 31%)
+  ) !important;
   --divider-vertical-height: calc(100% - var(--header-height)) !important;
-  --dropdown-background: hsl(258, 100%, 90%) !important;
+  --dropdown-background: var(
+    --interactive-normal,
+    hsl(258, 100%, 90%)
+  ) !important;
   --dropdown-background-hover: var(--interactive-hover, #fafafa) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
@@ -573,11 +626,18 @@ body.theme-light {
   --dropdown-padding: 0 var(--dropdown-padding-end) 0
     var(--dropdown-padding-start) !important;
   --embed-block-shadow-hover:
-    0 0 0 1px transparent, inset 0 0 0 1px transparent !important;
-  --embed-border-start: 2px solid hsl(258, 100%, 31%) !important;
+    0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border) !important;
+  --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: hsl(258, 100%, 97%) !important;
-  --file-header-background-focused: hsl(258, 100%, 97%) !important;
+  --file-header-background: var(
+    --background-primary,
+    hsl(258, 100%, 97%)
+  ) !important;
+  --file-header-background-focused: var(
+    --background-primary,
+    hsl(258, 100%, 97%)
+  ) !important;
   --file-header-border: var(--border-width, 1px solid transparent) solid
     transparent !important;
   --file-header-font: var(
@@ -603,7 +663,7 @@ body.theme-light {
   --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
   --file-margins-x: var(--size-4-8, 32px) !important;
   --file-margins-y: var(--size-4-8, 32px) !important;
-  --flair-background: hsl(258, 100%, 90%) !important;
+  --flair-background: var(--interactive-normal, hsl(258, 100%, 90%)) !important;
   --flair-color: var(--text-normal, #222222) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
@@ -637,7 +697,10 @@ body.theme-light {
   --font-text:
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-weight: var(--font-normal, 400) !important;
-  --footnote-divider-color: transparent !important;
+  --footnote-divider-color: var(
+    --metadata-divider-color,
+    transparent
+  ) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus,
     transparent
@@ -657,7 +720,7 @@ body.theme-light {
   --footnote-line-height: var(--line-height-normal, 1.5) !important;
   --footnote-padding-block: var(--size-2-3, 6px) !important;
   --footnote-padding-inline: var(--size-2-3, 6px) !important;
-  --footnote-radius: 100px !important;
+  --footnote-radius: var(--radius-s, 100px) !important;
   --footnote-size: var(--font-smaller, 0.875em) !important;
   --graph-line: var(
     --color-base-35,
@@ -673,7 +736,7 @@ body.theme-light {
   --h6-line-height: var(--line-height-normal, 1.5) !important;
   --heading-formatting: var(--text-faint, #ababab) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
-  --hr-color: transparent !important;
+  --hr-color: var(--background-modifier-border, transparent) !important;
   --icon-color: var(--text-muted, #5c5c5c) !important;
   --icon-color-active: var(--text-accent, hsl(258, 88%, 66%)) !important;
   --icon-color-focused: var(--text-normal, #222222) !important;
@@ -696,18 +759,24 @@ body.theme-light {
   --input-icon-inset: var(--size-4-1, 4px) !important;
   --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
   --input-placeholder-color: var(--text-faint, #ababab) !important;
-  --interactive-accent: hsl(258, 100%, 31%) !important;
-  --interactive-accent-hover: hsl(258, 100%, 31%) !important;
+  --interactive-accent: var(--colorPrimary, hsl(258, 100%, 31%)) !important;
+  --interactive-accent-hover: var(
+    --colorPrimary,
+    hsl(258, 100%, 31%)
+  ) !important;
   --interactive-accent-hsl: var(--color-accent-hsl, 258, 88%, 66%) !important;
   --interactive-hover: var(--color-base-10, #fafafa) !important;
-  --interactive-normal: hsl(258, 100%, 90%) !important;
+  --interactive-normal: hsl(var(--accent-h), 100%, 90%) !important;
   --link-color: var(--text-accent, hsl(258, 88%, 66%)) !important;
   --link-color-hover: var(
     --text-accent-hover,
     hsl(255, 89.76%, 75.9%)
   ) !important;
-  --link-external-color: hsl(258, 100%, 31%) !important;
-  --link-external-color-hover: hsl(258, 100%, 31%) !important;
+  --link-external-color: var(--colorPrimary, hsl(258, 100%, 31%)) !important;
+  --link-external-color-hover: var(
+    --colorPrimary,
+    hsl(258, 100%, 31%)
+  ) !important;
   --link-unresolved-color: var(--text-accent, hsl(258, 88%, 66%)) !important;
   --link-unresolved-decoration-color: hsla(
     var(--interactive-accent-hsl),
@@ -721,7 +790,10 @@ body.theme-light {
     hsl(258, 88%, 66%)
   ) !important;
   --list-marker-color-hover: var(--text-muted, #5c5c5c) !important;
-  --menu-background: hsla(258, 88%, 66%, 2%) !important;
+  --menu-background: var(
+    --background-secondary,
+    hsla(258, 88%, 66%, 2%)
+  ) !important;
   --menu-border-color: var(
     --background-modifier-border-hover,
     #d4d4d4
@@ -736,8 +808,14 @@ body.theme-light {
     0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07)
   ) !important;
-  --metadata-border-color: transparent !important;
-  --metadata-divider-color: transparent !important;
+  --metadata-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
+  --metadata-divider-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
   --metadata-input-background-active: var(
     --background-modifier-hover,
     rgba(0, 0, 0, 0.067)
@@ -805,7 +883,7 @@ body.theme-light {
   --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
-  --modal-background: hsl(258, 100%, 97%) !important;
+  --modal-background: var(--background-primary, hsl(258, 100%, 97%)) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -825,15 +903,21 @@ body.theme-light {
     rgba(0, 0, 0, 0.12)
   ) !important;
   --nav-indentation-guide-width: var(--indentation-guide-width, 1px) !important;
-  --nav-item-background-active: hsl(258, 100%, 85%) !important;
-  --nav-item-background-hover: hsl(258, 100%, 91%) !important;
+  --nav-item-background-active: var(
+    --colorPrimaryContainerVariant,
+    hsl(258, 100%, 85%)
+  ) !important;
+  --nav-item-background-hover: var(
+    --colorPrimaryContainerVariantHover,
+    hsl(258, 100%, 91%)
+  ) !important;
   --nav-item-background-selected: hsla(
     var(--color-accent-hsl),
     0.15
   ) !important;
   --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
   --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
-  --nav-item-color: black !important;
+  --nav-item-color: var(--text-muted, black) !important;
   --nav-item-color-active: var(--text-normal, #222222) !important;
   --nav-item-color-highlighted: var(
     --text-accent,
@@ -848,21 +932,30 @@ body.theme-light {
     --nav-item-padding,
     4px 8px 4px 24px
   ) !important;
-  --nav-item-radius: 100px !important;
+  --nav-item-radius: var(--radius-s, 100px) !important;
   --nav-item-size: var(--font-ui-small, 13px) !important;
   --nav-tag-color: var(--text-faint, #ababab) !important;
   --nav-tag-color-active: var(--text-muted, #5c5c5c) !important;
   --nav-tag-color-hover: var(--text-muted, #5c5c5c) !important;
-  --nav-tag-radius: 100px !important;
+  --nav-tag-radius: var(--radius-s, 100px) !important;
   --nav-tag-weight: var(--font-semibold, 600) !important;
-  --pdf-background: hsl(258, 100%, 97%) !important;
-  --pdf-page-background: hsl(258, 100%, 97%) !important;
+  --pdf-background: var(--background-primary, hsl(258, 100%, 97%)) !important;
+  --pdf-page-background: var(
+    --background-primary,
+    hsl(258, 100%, 97%)
+  ) !important;
   --pdf-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: hsl(258, 100%, 97%) !important;
+  --pdf-sidebar-background: var(
+    --background-primary,
+    hsl(258, 100%, 97%)
+  ) !important;
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
-  --pill-border-color: transparent !important;
+  --pill-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
   --pill-border-color-hover: var(
     --background-modifier-border-hover,
     #d4d4d4
@@ -873,23 +966,35 @@ body.theme-light {
   --pill-color-remove: var(--text-faint, #ababab) !important;
   --pill-color-remove-hover: var(--text-accent, hsl(258, 88%, 66%)) !important;
   --popover-font-size: var(--font-text-size, 16px) !important;
-  --prompt-background: hsl(258, 100%, 97%) !important;
+  --prompt-background: var(
+    --background-primary,
+    hsl(258, 100%, 97%)
+  ) !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
   --prompt-border-width: var(--border-width, 1px) !important;
-  --raised-background: color-mix(in srgb, hsl(258, 100%, 97%) 65%, transparent)
-    linear-gradient(
-      hsl(258, 100%, 97%),
-      color-mix(in srgb, hsl(258, 100%, 97%) 65%, transparent)
-    ) !important;
+  --raised-background: var(
+    --blur-background,
+    color-mix(in srgb, hsl(258, 100%, 97%) 65%, transparent)
+      linear-gradient(
+        hsl(258, 100%, 97%),
+        color-mix(in srgb, hsl(258, 100%, 97%) 65%, transparent)
+      )
+  ) !important;
   --raised-blur: var(
     --blur-s,
     blur(6px) saturate(1.5) brightness(1.15)
   ) !important;
-  --ribbon-background: hsla(258, 88%, 66%, 2%) !important;
-  --ribbon-background-collapsed: hsl(258, 100%, 97%) !important;
+  --ribbon-background: var(
+    --background-secondary,
+    hsla(258, 88%, 66%, 2%)
+  ) !important;
+  --ribbon-background-collapsed: var(
+    --background-primary,
+    hsl(258, 100%, 97%)
+  ) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1)
     var(--size-4-3, 8px 4px 12px) !important;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
@@ -898,20 +1003,29 @@ body.theme-light {
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
   --search-clear-button-color: var(--text-muted, #5c5c5c) !important;
   --search-icon-color: var(--text-muted, #5c5c5c) !important;
-  --search-result-background: hsl(258, 100%, 97%) !important;
+  --search-result-background: var(
+    --background-primary,
+    hsl(258, 100%, 97%)
+  ) !important;
   --setting-group-heading-color: var(--text-normal, #222222) !important;
   --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
   --setting-group-heading-weight: var(--font-semibold, 600) !important;
   --setting-items-background: var(--background-primary-alt, #fafafa) !important;
-  --setting-items-border-color: transparent !important;
+  --setting-items-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
   --setting-items-padding: var(--size-4-5, 20px) !important;
   --setting-items-radius: var(--radius-l, 12px) !important;
   --shiki-active-tab-border-color: var(
     --shiki-highlight-neutral,
     #5c5c5c
   ) !important;
-  --shiki-code-background: hsl(258, 100%, 93%) !important;
-  --shiki-code-block-border-radius: 100px !important;
+  --shiki-code-background: var(
+    --code-background,
+    hsl(258, 100%, 93%)
+  ) !important;
+  --shiki-code-block-border-radius: var(--code-radius, 100px) !important;
   --shiki-code-block-spacing: var(--p-spacing, 1rem) !important;
   --shiki-code-comment: var(--text-faint, #ababab) !important;
   --shiki-code-function: var(--color-green, #08b94e) !important;
@@ -922,7 +1036,10 @@ body.theme-light {
   --shiki-code-punctuation: var(--text-muted, #5c5c5c) !important;
   --shiki-code-string: var(--color-yellow, #e0ac00) !important;
   --shiki-code-value: var(--color-purple, #7852ee) !important;
-  --shiki-gutter-border-color: transparent !important;
+  --shiki-gutter-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
   --shiki-gutter-border-width: var(--border-width, 1px) !important;
   --shiki-gutter-text-color: var(--text-faint, #ababab) !important;
   --shiki-gutter-text-color-highlight: var(
@@ -953,15 +1070,24 @@ body.theme-light {
   ) !important;
   --slider-thumb-border-width: var(--border-width, 1px) !important;
   --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
-  --slider-track-background: transparent !important;
-  --status-bar-background: hsla(258, 88%, 66%, 2%) !important;
-  --status-bar-border-color: transparent !important;
+  --slider-track-background: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
+  --status-bar-background: var(
+    --background-secondary,
+    hsla(258, 88%, 66%, 2%)
+  ) !important;
+  --status-bar-border-color: var(--divider-color, transparent) !important;
   --status-bar-border-width: var(--border-width) 0 0
     var(--border-width, 1px 0 0 1px) !important;
   --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
   --status-bar-radius: var(--radius-m, 8px 0 0 0) 0 0 0 !important;
   --status-bar-text-color: var(--text-muted, #5c5c5c) !important;
-  --suggestion-background: hsl(258, 100%, 97%) !important;
+  --suggestion-background: var(
+    --background-primary,
+    hsl(258, 100%, 97%)
+  ) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(--color-red, #e93147) !important;
   --sync-avatar-color-2: var(--color-orange, #ec7500) !important;
@@ -971,21 +1097,30 @@ body.theme-light {
   --sync-avatar-color-6: var(--color-blue, #086ddd) !important;
   --sync-avatar-color-7: var(--color-purple, #7852ee) !important;
   --sync-avatar-color-8: var(--color-pink, #d53984) !important;
-  --tab-background-active: hsl(258, 100%, 85%) !important;
-  --tab-container-background: hsla(258, 88%, 66%, 2%) !important;
+  --tab-background-active: var(
+    --colorPrimaryContainerVariant,
+    hsl(258, 100%, 85%)
+  ) !important;
+  --tab-container-background: var(
+    --background-secondary,
+    hsla(258, 88%, 66%, 2%)
+  ) !important;
   --tab-divider-color: var(
     --background-modifier-border-hover,
     #d4d4d4
   ) !important;
   --tab-font-size: var(--font-ui-small, 13px) !important;
-  --tab-outline-color: transparent !important;
-  --tab-radius: 100px !important;
+  --tab-outline-color: var(--divider-color, transparent) !important;
+  --tab-radius: var(--radius-s, 100px) !important;
   --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
   --tab-stacked-header-width: var(--header-height, 40px) !important;
-  --tab-switcher-background: hsla(258, 88%, 66%, 2%) !important;
+  --tab-switcher-background: var(
+    --background-secondary,
+    hsla(258, 88%, 66%, 2%)
+  ) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
-    hsla(258, 88%, 66%, 2%),
+    var(--background-secondary),
     transparent
   ) !important;
   --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
@@ -1003,20 +1138,32 @@ body.theme-light {
     --text-accent,
     hsl(258, 88%, 66%)
   ) !important;
-  --table-add-button-border-color: transparent !important;
+  --table-add-button-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
   --table-add-button-border-width: var(--table-border-width, 1px) !important;
-  --table-border-color: transparent !important;
+  --table-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
   --table-column-alt-background: var(
     --table-background,
     transparent
   ) !important;
   --table-column-first-border-width: var(--table-border-width, 1px) !important;
   --table-column-last-border-width: var(--table-border-width, 1px) !important;
-  --table-drag-handle-background-active: hsl(258, 100%, 31%) !important;
+  --table-drag-handle-background-active: var(
+    --table-selection-border-color,
+    hsl(258, 100%, 31%)
+  ) !important;
   --table-drag-handle-color: var(--text-faint, #ababab) !important;
   --table-drag-handle-color-active: var(--text-on-accent, white) !important;
   --table-header-background: var(--table-background, transparent) !important;
-  --table-header-border-color: transparent !important;
+  --table-header-border-color: var(
+    --table-border-color,
+    transparent
+  ) !important;
   --table-header-border-width: var(--table-border-width, 1px) !important;
   --table-header-color: var(--text-normal, #222222) !important;
   --table-header-size: var(--table-text-size, 16px) !important;
@@ -1036,16 +1183,25 @@ body.theme-light {
     --highlight-mix-blend-mode,
     darken
   ) !important;
-  --table-selection-border-color: hsl(258, 100%, 31%) !important;
+  --table-selection-border-color: var(
+    --interactive-accent,
+    hsl(258, 100%, 31%)
+  ) !important;
   --table-text-size: var(--font-text-size, 16px) !important;
-  --tag-background: hsl(258, 100%, 85%) !important;
-  --tag-background-hover: hsl(258, 100%, 85%) !important;
+  --tag-background: var(
+    --colorPrimaryContainerVariant,
+    hsl(258, 100%, 85%)
+  ) !important;
+  --tag-background-hover: var(
+    --colorPrimaryContainerVariant,
+    hsl(258, 100%, 85%)
+  ) !important;
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15) !important;
   --tag-border-color-hover: hsla(
     var(--interactive-accent-hsl),
     0.15
   ) !important;
-  --tag-color: hsl(258, 100%, 31%) !important;
+  --tag-color: var(--colorPrimary, hsl(258, 100%, 31%)) !important;
   --tag-color-hover: var(--text-accent, hsl(258, 88%, 66%)) !important;
   --tag-size: var(--font-smaller, 0.875em) !important;
   --text-accent: var(--color-accent, hsl(258, 88%, 66%)) !important;
@@ -1055,15 +1211,27 @@ body.theme-light {
   ) !important;
   --text-error: var(--color-red, #e93147) !important;
   --text-faint: var(--color-base-50, #ababab) !important;
-  --text-highlight-bg: hsl(258, 100%, 85%) !important;
+  --text-highlight-bg: var(
+    --colorPrimaryContainerVariant,
+    hsl(258, 100%, 85%)
+  ) !important;
   --text-muted: var(--color-base-70, #5c5c5c) !important;
   --text-normal: var(--color-base-100, #222222) !important;
   --text-selection: hsla(var(--color-accent-hsl), 0.2) !important;
   --text-success: var(--color-green, #08b94e) !important;
   --text-warning: var(--color-orange, #ec7500) !important;
-  --titlebar-background: hsla(258, 88%, 66%, 2%) !important;
-  --titlebar-background-focused: hsla(258, 88%, 66%, 2%) !important;
-  --titlebar-border-color: transparent !important;
+  --titlebar-background: var(
+    --background-secondary,
+    hsla(258, 88%, 66%, 2%)
+  ) !important;
+  --titlebar-background-focused: var(
+    --colorBackgroundSecondary,
+    hsla(258, 88%, 66%, 2%)
+  ) !important;
+  --titlebar-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
   --titlebar-text-color: var(--text-muted, #5c5c5c) !important;
   --titlebar-text-color-focused: var(--text-normal, #222222) !important;
   --titlebar-text-weight: var(--font-bold, 700) !important;
@@ -1494,8 +1662,8 @@ body.theme-light {
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-on-accent: white !important;
-  --text-on-accent-inverted: white !important;
+  --text-on-accent: var(--colorOnPrimary, white) !important;
+  --text-on-accent-inverted: var(--colorOnPrimary, white) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
   --toggle-border-width: 2px !important;
@@ -1504,7 +1672,7 @@ body.theme-light {
   --toggle-s-thumb-height: 15px !important;
   --toggle-s-thumb-width: 15px !important;
   --toggle-s-width: 34px !important;
-  --toggle-thumb-color: white !important;
+  --toggle-thumb-color: var(--colorOnPrimary, white) !important;
   --toggle-thumb-height: 18px !important;
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
@@ -1532,13 +1700,22 @@ body.theme-light {
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
-  --colorBackgroundPrimary: hsl(258, 100%, 97%) !important;
-  --colorBackgroundSecondary: hsla(258, 88%, 66%, 2%) !important;
+  --colorBackgroundPrimary: hsl(var(--accent-h), 100%, 97%) !important;
+  --colorBackgroundSecondary: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    2%
+  ) !important;
   --colorOnPrimary: white !important;
-  --colorPrimary: hsl(258, 100%, 31%) !important;
-  --colorPrimaryContainer: hsl(258, 100%, 93%) !important;
-  --colorPrimaryContainerVariant: hsl(258, 100%, 85%) !important;
-  --colorPrimaryContainerVariantHover: hsl(258, 100%, 91%) !important;
+  --colorPrimary: hsl(var(--accent-h), 100%, 31%) !important;
+  --colorPrimaryContainer: hsl(var(--accent-h), 100%, 93%) !important;
+  --colorPrimaryContainerVariant: hsl(var(--accent-h), 100%, 85%) !important;
+  --colorPrimaryContainerVariantHover: hsl(
+    var(--accent-h),
+    100%,
+    91%
+  ) !important;
 }
 
 body.theme-dark {
@@ -1546,7 +1723,7 @@ body.theme-dark {
     var(--interactive-accent-hsl),
     0.1
   ) !important;
-  --background-modifier-border: transparent !important;
+  --background-modifier-border: var(--color-base-30, transparent) !important;
   --background-modifier-border-focus: var(--color-base-40, #555555) !important;
   --background-modifier-border-hover: var(--color-base-35, #3f3f3f) !important;
   --background-modifier-error: var(--color-red, #fb464c) !important;
@@ -1565,11 +1742,20 @@ body.theme-dark {
     207,
     110
   ) !important;
-  --background-primary: hsl(258, 20%, 7%) !important;
+  --background-primary: var(
+    --colorBackgroundPrimary,
+    hsl(258, 20%, 7%)
+  ) !important;
   --background-primary-alt: var(--color-base-10, #242424) !important;
-  --background-secondary: hsl(258, 30%, 12%) !important;
+  --background-secondary: var(
+    --colorBackgroundSecondary,
+    hsl(258, 30%, 12%)
+  ) !important;
   --background-secondary-alt: var(--color-base-30, #363636) !important;
-  --bases-cards-background: hsl(258, 20%, 7%) !important;
+  --bases-cards-background: var(
+    --background-primary,
+    hsl(258, 20%, 7%)
+  ) !important;
   --bases-cards-border-width: var(--border-width, 1px) !important;
   --bases-cards-corner-shape: var(--corner-shape, round) !important;
   --bases-cards-cover-background: var(
@@ -1578,18 +1764,24 @@ body.theme-dark {
   ) !important;
   --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
   --bases-cards-radius: var(--radius-m, 8px) !important;
-  --bases-cards-shadow: 0 0 0 1px transparent !important;
+  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
-  --bases-embed-border-color: transparent !important;
-  --bases-embed-border-radius: 100px !important;
+  --bases-embed-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
+  --bases-embed-border-radius: var(--radius-s, 100px) !important;
   --bases-group-heading-property-color: var(--text-muted, #b3b3b3) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller, 12px) !important;
   --bases-group-heading-property-weight: var(--font-normal, 400) !important;
   --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
   --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: transparent !important;
-  --bases-table-cell-background-active: hsl(258, 20%, 7%) !important;
+  --bases-table-border-color: var(--table-border-color, transparent) !important;
+  --bases-table-cell-background-active: var(
+    --background-primary,
+    hsl(258, 20%, 7%)
+  ) !important;
   --bases-table-cell-background-disabled: var(
     --background-primary-alt,
     #242424
@@ -1602,14 +1794,17 @@ body.theme-dark {
     var(--background-modifier-border-focus) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width, 1px) !important;
-  --bases-table-container-border-radius: 100px !important;
+  --bases-table-container-border-radius: var(--radius-s, 100px) !important;
   --bases-table-container-border-width: var(--border-width, 1px) !important;
   --bases-table-font-size: var(--font-smaller, 0.875em) !important;
   --bases-table-group-background: var(
     --background-primary-alt,
     #242424
   ) !important;
-  --bases-table-header-background: hsl(258, 20%, 7%) !important;
+  --bases-table-header-background: var(
+    --background-primary,
+    hsl(258, 20%, 7%)
+  ) !important;
   --bases-table-header-background-hover: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
@@ -1626,7 +1821,10 @@ body.theme-dark {
     transparent
   ) !important;
   --bases-table-row-border-width: var(--border-width, 1px) !important;
-  --bases-table-summary-background: hsl(258, 20%, 7%) !important;
+  --bases-table-summary-background: var(
+    --background-primary,
+    hsl(258, 20%, 7%)
+  ) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
@@ -1656,7 +1854,7 @@ body.theme-dark {
     brightness(var(--blur-brightness)) !important;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
   --button-corner-shape: var(--corner-shape, round) !important;
-  --button-radius: 100px !important;
+  --button-radius: var(--input-radius, 100px) !important;
   --callout-blend-mode: var(--highlight-mix-blend-mode, lighten);
   --callout-bug: var(--color-red-rgb, 251, 70, 76);
   --callout-default: var(--color-blue-rgb, 2, 122, 255);
@@ -1668,14 +1866,14 @@ body.theme-dark {
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
     var(--size-4-6, 12px 12px 12px 24px);
   --callout-question: var(--color-orange-rgb, 233, 151, 63);
-  --callout-radius: 100px;
+  --callout-radius: var(--radius-s, 100px);
   --callout-success: var(--color-green-rgb, 68, 207, 110);
   --callout-summary: var(--color-cyan-rgb, 83, 223, 221);
   --callout-tip: var(--color-cyan-rgb, 83, 223, 221);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb, 2, 122, 255);
   --callout-warning: var(--color-orange-rgb, 233, 151, 63);
-  --canvas-background: hsl(258, 20%, 7%) !important;
+  --canvas-background: var(--background-primary, hsl(258, 20%, 7%)) !important;
   --canvas-card-label-color: var(--text-faint, #666666) !important;
   --canvas-color-1: var(--color-red-rgb, 251, 70, 76) !important;
   --canvas-color-2: var(--color-orange-rgb, 233, 151, 63) !important;
@@ -1685,7 +1883,7 @@ body.theme-dark {
   --canvas-color-6: var(--color-purple-rgb, 168, 130, 255) !important;
   --canvas-controls-icon-size: var(--icon-s, 16px) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
-  --canvas-controls-radius: 100px !important;
+  --canvas-controls-radius: var(--radius-s, 100px) !important;
   --canvas-dot-pattern: var(--color-base-30, #363636) !important;
   --caret-color: var(--text-normal, #dadada) !important;
   --checkbox-border-color: var(--text-faint, #666666) !important;
@@ -1695,13 +1893,22 @@ body.theme-dark {
     --interactive-accent-hover,
     hsl(255, 89.76%, 75.9%)
   ) !important;
-  --checkbox-marker-color: hsl(258, 20%, 7%) !important;
-  --checkbox-radius: 100px !important;
+  --checkbox-marker-color: var(
+    --background-primary,
+    hsl(258, 20%, 7%)
+  ) !important;
+  --checkbox-radius: var(--radius-s, 100px) !important;
   --checkbox-size: var(--font-text-size, 16px) !important;
   --checklist-done-color: var(--text-muted, #b3b3b3) !important;
-  --clickable-icon-radius: 100px !important;
-  --code-background: hsl(258, 100%, 10%) !important;
-  --code-border-color: transparent !important;
+  --clickable-icon-radius: var(--radius-s, 100px) !important;
+  --code-background: var(
+    --colorPrimaryContainer,
+    hsl(258, 100%, 10%)
+  ) !important;
+  --code-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
   --code-bracket-background: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
@@ -1710,11 +1917,11 @@ body.theme-dark {
   --code-function: var(--color-yellow, #e0de71) !important;
   --code-important: var(--color-orange, #e9973f) !important;
   --code-keyword: var(--color-pink, #fa99cd) !important;
-  --code-normal: hsl(258, 100%, 80%) !important;
+  --code-normal: var(--colorPrimary, hsl(258, 100%, 80%)) !important;
   --code-operator: var(--color-red, #fb464c) !important;
   --code-property: var(--color-cyan, #53dfdd) !important;
   --code-punctuation: var(--text-muted, #b3b3b3) !important;
-  --code-radius: 100px !important;
+  --code-radius: var(--radius-s, 100px) !important;
   --code-size: var(--font-smaller, 0.875em) !important;
   --code-string: var(--color-green, #44cf6e) !important;
   --code-tag: var(--color-red, #fb464c) !important;
@@ -1741,7 +1948,7 @@ body.theme-dark {
   ) !important;
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
-  --divider-color: transparent !important;
+  --divider-color: var(--background-modifier-border, transparent) !important;
   --divider-color-hover: var(
     --interactive-accent,
     hsl(258, 88%, 66%)
@@ -1755,11 +1962,18 @@ body.theme-dark {
   --dropdown-padding: 0 var(--dropdown-padding-end) 0
     var(--dropdown-padding-start) !important;
   --embed-block-shadow-hover:
-    0 0 0 1px transparent, inset 0 0 0 1px transparent !important;
+    0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: hsl(258, 20%, 7%) !important;
-  --file-header-background-focused: hsl(258, 20%, 7%) !important;
+  --file-header-background: var(
+    --background-primary,
+    hsl(258, 20%, 7%)
+  ) !important;
+  --file-header-background-focused: var(
+    --background-primary,
+    hsl(258, 20%, 7%)
+  ) !important;
   --file-header-border: var(--border-width, 1px solid transparent) solid
     transparent !important;
   --file-header-font: var(
@@ -1819,7 +2033,10 @@ body.theme-dark {
   --font-text:
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-weight: var(--font-normal, 400) !important;
-  --footnote-divider-color: transparent !important;
+  --footnote-divider-color: var(
+    --metadata-divider-color,
+    transparent
+  ) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus,
     transparent
@@ -1839,7 +2056,7 @@ body.theme-dark {
   --footnote-line-height: var(--line-height-normal, 1.5) !important;
   --footnote-padding-block: var(--size-2-3, 6px) !important;
   --footnote-padding-inline: var(--size-2-3, 6px) !important;
-  --footnote-radius: 100px !important;
+  --footnote-radius: var(--radius-s, 100px) !important;
   --footnote-size: var(--font-smaller, 0.875em) !important;
   --graph-line: var(
     --color-base-35,
@@ -1855,7 +2072,7 @@ body.theme-dark {
   --h6-line-height: var(--line-height-normal, 1.5) !important;
   --heading-formatting: var(--text-faint, #666666) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
-  --hr-color: transparent !important;
+  --hr-color: var(--background-modifier-border, transparent) !important;
   --icon-color: var(--text-muted, #b3b3b3) !important;
   --icon-color-active: var(--text-accent, hsl(255, 89.76%, 75.9%)) !important;
   --icon-color-focused: var(--text-normal, #dadada) !important;
@@ -1878,21 +2095,24 @@ body.theme-dark {
   --input-icon-inset: var(--size-4-1, 4px) !important;
   --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
   --input-placeholder-color: var(--text-faint, #666666) !important;
-  --interactive-accent: var(--color-accent, hsl(258, 88%, 66%)) !important;
+  --interactive-accent: var(--colorPrimary, hsl(258, 88%, 66%)) !important;
   --interactive-accent-hover: var(
-    --color-accent-1,
+    --colorPrimary,
     hsl(255, 89.76%, 75.9%)
   ) !important;
   --interactive-accent-hsl: var(--color-accent-hsl, 258, 88%, 66%) !important;
   --interactive-hover: var(--color-base-35, #3f3f3f) !important;
-  --interactive-normal: var(--color-base-30, #363636) !important;
+  --interactive-normal: hsl(var(--accent-h), 100%, 90%) !important;
   --link-color: var(--text-accent, hsl(255, 89.76%, 75.9%)) !important;
   --link-color-hover: var(
     --text-accent-hover,
     hsl(253, 92.4%, 85.14%)
   ) !important;
-  --link-external-color: hsl(258, 100%, 80%) !important;
-  --link-external-color-hover: hsl(258, 100%, 80%) !important;
+  --link-external-color: var(--colorPrimary, hsl(258, 100%, 80%)) !important;
+  --link-external-color-hover: var(
+    --colorPrimary,
+    hsl(258, 100%, 80%)
+  ) !important;
   --link-unresolved-color: var(
     --text-accent,
     hsl(255, 89.76%, 75.9%)
@@ -1909,7 +2129,7 @@ body.theme-dark {
     hsl(255, 89.76%, 75.9%)
   ) !important;
   --list-marker-color-hover: var(--text-muted, #b3b3b3) !important;
-  --menu-background: hsl(258, 30%, 12%) !important;
+  --menu-background: var(--background-secondary, hsl(258, 30%, 12%)) !important;
   --menu-border-color: var(
     --background-modifier-border-hover,
     #3f3f3f
@@ -1924,8 +2144,14 @@ body.theme-dark {
     0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3)
   ) !important;
-  --metadata-border-color: transparent !important;
-  --metadata-divider-color: transparent !important;
+  --metadata-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
+  --metadata-divider-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
   --metadata-input-background-active: var(
     --background-modifier-hover,
     rgba(255, 255, 255, 0.067)
@@ -1993,7 +2219,7 @@ body.theme-dark {
   --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
-  --modal-background: hsl(258, 20%, 7%) !important;
+  --modal-background: var(--background-primary, hsl(258, 20%, 7%)) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -2013,15 +2239,21 @@ body.theme-dark {
     rgba(255, 255, 255, 0.12)
   ) !important;
   --nav-indentation-guide-width: var(--indentation-guide-width, 1px) !important;
-  --nav-item-background-active: hsl(258, 100%, 20%) !important;
-  --nav-item-background-hover: hsl(258, 100%, 10%) !important;
+  --nav-item-background-active: var(
+    --colorPrimaryContainerVariant,
+    hsl(258, 100%, 20%)
+  ) !important;
+  --nav-item-background-hover: var(
+    --colorPrimaryContainerVariantHover,
+    hsl(258, 100%, 10%)
+  ) !important;
   --nav-item-background-selected: hsla(
     var(--color-accent-hsl),
     0.15
   ) !important;
   --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
   --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
-  --nav-item-color: white !important;
+  --nav-item-color: var(--text-muted, white) !important;
   --nav-item-color-active: var(--text-normal, #dadada) !important;
   --nav-item-color-highlighted: var(
     --text-accent,
@@ -2036,19 +2268,28 @@ body.theme-dark {
     --nav-item-padding,
     4px 8px 4px 24px
   ) !important;
-  --nav-item-radius: 100px !important;
+  --nav-item-radius: var(--radius-s, 100px) !important;
   --nav-item-size: var(--font-ui-small, 13px) !important;
   --nav-tag-color: var(--text-faint, #666666) !important;
   --nav-tag-color-active: var(--text-muted, #b3b3b3) !important;
   --nav-tag-color-hover: var(--text-muted, #b3b3b3) !important;
-  --nav-tag-radius: 100px !important;
+  --nav-tag-radius: var(--radius-s, 100px) !important;
   --nav-tag-weight: var(--font-semibold, 600) !important;
-  --pdf-background: hsl(258, 20%, 7%) !important;
-  --pdf-page-background: hsl(258, 20%, 7%) !important;
-  --pdf-shadow: 0 0 0 1px transparent !important;
-  --pdf-sidebar-background: hsl(258, 20%, 7%) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px transparent !important;
-  --pill-border-color: transparent !important;
+  --pdf-background: var(--background-primary, hsl(258, 20%, 7%)) !important;
+  --pdf-page-background: var(
+    --background-primary,
+    hsl(258, 20%, 7%)
+  ) !important;
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
+  --pdf-sidebar-background: var(
+    --background-primary,
+    hsl(258, 20%, 7%)
+  ) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
+  --pill-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
   --pill-border-color-hover: var(
     --background-modifier-border-hover,
     #3f3f3f
@@ -2062,7 +2303,7 @@ body.theme-dark {
     hsl(255, 89.76%, 75.9%)
   ) !important;
   --popover-font-size: var(--font-text-size, 16px) !important;
-  --prompt-background: hsl(258, 20%, 7%) !important;
+  --prompt-background: var(--background-primary, hsl(258, 20%, 7%)) !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -2077,8 +2318,14 @@ body.theme-dark {
     --blur-s,
     blur(6px) saturate(1.5) brightness(1.15)
   ) !important;
-  --ribbon-background: hsl(258, 30%, 12%) !important;
-  --ribbon-background-collapsed: hsl(258, 20%, 7%) !important;
+  --ribbon-background: var(
+    --background-secondary,
+    hsl(258, 30%, 12%)
+  ) !important;
+  --ribbon-background-collapsed: var(
+    --background-primary,
+    hsl(258, 20%, 7%)
+  ) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1)
     var(--size-4-3, 8px 4px 12px) !important;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
@@ -2087,20 +2334,29 @@ body.theme-dark {
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
   --search-clear-button-color: var(--text-muted, #b3b3b3) !important;
   --search-icon-color: var(--text-muted, #b3b3b3) !important;
-  --search-result-background: hsl(258, 20%, 7%) !important;
+  --search-result-background: var(
+    --background-primary,
+    hsl(258, 20%, 7%)
+  ) !important;
   --setting-group-heading-color: var(--text-normal, #dadada) !important;
   --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
   --setting-group-heading-weight: var(--font-semibold, 600) !important;
   --setting-items-background: var(--background-primary-alt, #242424) !important;
-  --setting-items-border-color: transparent !important;
+  --setting-items-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
   --setting-items-padding: var(--size-4-5, 20px) !important;
   --setting-items-radius: var(--radius-l, 12px) !important;
   --shiki-active-tab-border-color: var(
     --shiki-highlight-neutral,
     #b3b3b3
   ) !important;
-  --shiki-code-background: hsl(258, 100%, 10%) !important;
-  --shiki-code-block-border-radius: 100px !important;
+  --shiki-code-background: var(
+    --code-background,
+    hsl(258, 100%, 10%)
+  ) !important;
+  --shiki-code-block-border-radius: var(--code-radius, 100px) !important;
   --shiki-code-block-spacing: var(--p-spacing, 1rem) !important;
   --shiki-code-comment: var(--text-faint, #666666) !important;
   --shiki-code-function: var(--color-green, #44cf6e) !important;
@@ -2111,7 +2367,10 @@ body.theme-dark {
   --shiki-code-punctuation: var(--text-muted, #b3b3b3) !important;
   --shiki-code-string: var(--color-yellow, #e0de71) !important;
   --shiki-code-value: var(--color-purple, #a882ff) !important;
-  --shiki-gutter-border-color: transparent !important;
+  --shiki-gutter-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
   --shiki-gutter-border-width: var(--border-width, 1px) !important;
   --shiki-gutter-text-color: var(--text-faint, #666666) !important;
   --shiki-gutter-text-color-highlight: var(
@@ -2142,15 +2401,24 @@ body.theme-dark {
   ) !important;
   --slider-thumb-border-width: var(--border-width, 1px) !important;
   --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
-  --slider-track-background: transparent !important;
-  --status-bar-background: hsl(258, 30%, 12%) !important;
-  --status-bar-border-color: transparent !important;
+  --slider-track-background: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
+  --status-bar-background: var(
+    --background-secondary,
+    hsl(258, 30%, 12%)
+  ) !important;
+  --status-bar-border-color: var(--divider-color, transparent) !important;
   --status-bar-border-width: var(--border-width) 0 0
     var(--border-width, 1px 0 0 1px) !important;
   --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
   --status-bar-radius: var(--radius-m, 8px 0 0 0) 0 0 0 !important;
   --status-bar-text-color: var(--text-muted, #b3b3b3) !important;
-  --suggestion-background: hsl(258, 20%, 7%) !important;
+  --suggestion-background: var(
+    --background-primary,
+    hsl(258, 20%, 7%)
+  ) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(--color-red, #fb464c) !important;
   --sync-avatar-color-2: var(--color-orange, #e9973f) !important;
@@ -2160,21 +2428,30 @@ body.theme-dark {
   --sync-avatar-color-6: var(--color-blue, #027aff) !important;
   --sync-avatar-color-7: var(--color-purple, #a882ff) !important;
   --sync-avatar-color-8: var(--color-pink, #fa99cd) !important;
-  --tab-background-active: hsl(258, 100%, 20%) !important;
-  --tab-container-background: hsl(258, 30%, 12%) !important;
+  --tab-background-active: var(
+    --colorPrimaryContainerVariant,
+    hsl(258, 100%, 20%)
+  ) !important;
+  --tab-container-background: var(
+    --background-secondary,
+    hsl(258, 30%, 12%)
+  ) !important;
   --tab-divider-color: var(
     --background-modifier-border-hover,
     #3f3f3f
   ) !important;
   --tab-font-size: var(--font-ui-small, 13px) !important;
-  --tab-outline-color: transparent !important;
-  --tab-radius: 100px !important;
+  --tab-outline-color: var(--divider-color, transparent) !important;
+  --tab-radius: var(--radius-s, 100px) !important;
   --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
   --tab-stacked-header-width: var(--header-height, 40px) !important;
-  --tab-switcher-background: hsl(258, 30%, 12%) !important;
+  --tab-switcher-background: var(
+    --background-secondary,
+    hsl(258, 30%, 12%)
+  ) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
-    hsl(258, 30%, 12%),
+    var(--background-secondary),
     transparent
   ) !important;
   --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
@@ -2192,9 +2469,15 @@ body.theme-dark {
     --text-accent,
     hsl(255, 89.76%, 75.9%)
   ) !important;
-  --table-add-button-border-color: transparent !important;
+  --table-add-button-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
   --table-add-button-border-width: var(--table-border-width, 1px) !important;
-  --table-border-color: transparent !important;
+  --table-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
   --table-column-alt-background: var(
     --table-background,
     transparent
@@ -2206,9 +2489,15 @@ body.theme-dark {
     hsl(258, 88%, 66%)
   ) !important;
   --table-drag-handle-color: var(--text-faint, #666666) !important;
-  --table-drag-handle-color-active: hsl(258, 30%, 12%) !important;
+  --table-drag-handle-color-active: var(
+    --text-on-accent,
+    hsl(258, 30%, 12%)
+  ) !important;
   --table-header-background: var(--table-background, transparent) !important;
-  --table-header-border-color: transparent !important;
+  --table-header-border-color: var(
+    --table-border-color,
+    transparent
+  ) !important;
   --table-header-border-width: var(--table-border-width, 1px) !important;
   --table-header-color: var(--text-normal, #dadada) !important;
   --table-header-size: var(--table-text-size, 16px) !important;
@@ -2233,14 +2522,20 @@ body.theme-dark {
     hsl(258, 88%, 66%)
   ) !important;
   --table-text-size: var(--font-text-size, 16px) !important;
-  --tag-background: hsl(258, 100%, 20%) !important;
-  --tag-background-hover: hsl(258, 100%, 20%) !important;
+  --tag-background: var(
+    --colorPrimaryContainerVariant,
+    hsl(258, 100%, 20%)
+  ) !important;
+  --tag-background-hover: var(
+    --colorPrimaryContainerVariant,
+    hsl(258, 100%, 20%)
+  ) !important;
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15) !important;
   --tag-border-color-hover: hsla(
     var(--interactive-accent-hsl),
     0.15
   ) !important;
-  --tag-color: hsl(258, 100%, 80%) !important;
+  --tag-color: var(--colorPrimary, hsl(258, 100%, 80%)) !important;
   --tag-color-hover: var(--text-accent, hsl(255, 89.76%, 75.9%)) !important;
   --tag-size: var(--font-smaller, 0.875em) !important;
   --text-accent: var(--color-accent-1, hsl(255, 89.76%, 75.9%)) !important;
@@ -2250,15 +2545,27 @@ body.theme-dark {
   ) !important;
   --text-error: var(--color-red, #fb464c) !important;
   --text-faint: var(--color-base-50, #666666) !important;
-  --text-highlight-bg: hsl(258, 100%, 20%) !important;
+  --text-highlight-bg: var(
+    --colorPrimaryContainerVariant,
+    hsl(258, 100%, 20%)
+  ) !important;
   --text-muted: var(--color-base-70, #b3b3b3) !important;
   --text-normal: var(--color-base-100, #dadada) !important;
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33) !important;
   --text-success: var(--color-green, #44cf6e) !important;
   --text-warning: var(--color-orange, #e9973f) !important;
-  --titlebar-background: hsl(258, 30%, 12%) !important;
-  --titlebar-background-focused: hsl(258, 30%, 12%) !important;
-  --titlebar-border-color: transparent !important;
+  --titlebar-background: var(
+    --background-secondary,
+    hsl(258, 30%, 12%)
+  ) !important;
+  --titlebar-background-focused: var(
+    --colorBackgroundSecondary,
+    hsl(258, 30%, 12%)
+  ) !important;
+  --titlebar-border-color: var(
+    --background-modifier-border,
+    transparent
+  ) !important;
   --titlebar-text-color: var(--text-muted, #b3b3b3) !important;
   --titlebar-text-color-focused: var(--text-normal, #dadada) !important;
   --titlebar-text-weight: var(--font-bold, 700) !important;
@@ -2683,8 +2990,11 @@ body.theme-dark {
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-on-accent: hsl(258, 30%, 12%) !important;
-  --text-on-accent-inverted: hsl(258, 30%, 12%) !important;
+  --text-on-accent: var(--colorOnPrimary, hsl(258, 30%, 12%)) !important;
+  --text-on-accent-inverted: var(
+    --colorOnPrimary,
+    hsl(258, 30%, 12%)
+  ) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
   --toggle-border-width: 2px !important;
@@ -2693,7 +3003,7 @@ body.theme-dark {
   --toggle-s-thumb-height: 15px !important;
   --toggle-s-thumb-width: 15px !important;
   --toggle-s-width: 34px !important;
-  --toggle-thumb-color: hsl(258, 30%, 12%) !important;
+  --toggle-thumb-color: var(--colorOnPrimary, hsl(258, 30%, 12%)) !important;
   --toggle-thumb-height: 18px !important;
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
@@ -2711,13 +3021,20 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --colorBackgroundPrimary: hsl(258, 20%, 7%) !important;
-  --colorBackgroundSecondary: hsl(258, 30%, 12%) !important;
-  --colorOnPrimary: hsl(258, 30%, 12%) !important;
-  --colorPrimary: hsl(258, 100%, 80%) !important;
-  --colorPrimaryContainer: hsl(258, 100%, 10%) !important;
-  --colorPrimaryContainerVariant: hsl(258, 100%, 20%) !important;
-  --colorPrimaryContainerVariantHover: hsl(258, 100%, 10%) !important;
+  --colorBackgroundPrimary: hsl(var(--accent-h), 20%, 7%) !important;
+  --colorBackgroundSecondary: hsl(var(--accent-h), 30%, 12%) !important;
+  --colorOnPrimary: var(
+    --colorBackgroundSecondary,
+    hsl(258, 30%, 12%)
+  ) !important;
+  --colorPrimary: hsl(var(--accent-h), 100%, 80%) !important;
+  --colorPrimaryContainer: hsl(var(--accent-h), 100%, 10%) !important;
+  --colorPrimaryContainerVariant: hsl(var(--accent-h), 100%, 20%) !important;
+  --colorPrimaryContainerVariantHover: hsl(
+    var(--accent-h),
+    100%,
+    10%
+  ) !important;
 }
 
 body {
@@ -2741,7 +3058,7 @@ body {
 }
 body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(47, 0, 158);
+  color: var(--link-external-color, rgb(47, 0, 158));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -3068,7 +3385,7 @@ body body.theme-light i {
   animation-play-state: running;
 }
 body body.theme-light .markdown-rendered mark {
-  background-color: rgb(201, 179, 255);
+  background-color: var(--text-highlight-bg, rgb(201, 179, 255));
   color: var(--text-normal, rgb(34, 34, 34));
   cursor: grab;
   filter: none;
@@ -3191,7 +3508,7 @@ body body.theme-light .markdown-rendered hr {
 }
 body body.theme-light div.multi-select-pill {
   align-items: normal;
-  background-color: rgb(201, 179, 255);
+  background-color: var(--pill-background, rgb(201, 179, 255));
   display: flex;
   font-family:
     ui-sans-serif,
@@ -3261,7 +3578,7 @@ body body.theme-light .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-light .markdown-rendered code {
-  background-color: rgb(230, 219, 255);
+  background-color: var(--code-background, rgb(230, 219, 255));
   border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
@@ -3271,7 +3588,7 @@ body body.theme-light .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(47, 0, 158);
+  color: var(--code-normal, rgb(47, 0, 158));
   font-family: var(
     --font-monospace,
     ui-monospace,
@@ -3306,7 +3623,7 @@ body body.theme-light .markdown-rendered pre > code {
 }
 body body.theme-light :not(pre) > code[class*="language-"],
 body body.theme-light pre[class*="language-"] {
-  background-color: rgb(230, 219, 255);
+  background-color: var(--code-background, rgb(230, 219, 255));
   border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
@@ -3419,7 +3736,7 @@ body body.theme-light .site-body-left-column input.search-bar {
     sans-serif;
 }
 body body.theme-light .search-results {
-  background-color: rgb(244, 240, 255);
+  background-color: var(--prompt-background, rgb(244, 240, 255));
   border: 1px solid rgb(189, 189, 189);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -3686,7 +4003,7 @@ body body.theme-light body {
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-default, 8, 109, 221);
   border: 0px solid rgba(8, 109, 221, 0.25);
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
@@ -3736,7 +4053,7 @@ body body.theme-light .callout > .callout-content {
   padding: 0px;
 }
 body body.theme-light .callout[data-callout="abstract"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-summary, 0, 191, 188);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3773,7 +4090,7 @@ body body.theme-light .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="info"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-info, 8, 109, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3810,7 +4127,7 @@ body body.theme-light .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="todo"] {
-  --callout-color: 8, 109, 221;
+  --callout-color: var(--callout-todo, 8, 109, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3847,7 +4164,7 @@ body body.theme-light .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="tip"] {
-  --callout-color: 0, 191, 188;
+  --callout-color: var(--callout-tip, 0, 191, 188);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3884,7 +4201,7 @@ body body.theme-light .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="success"] {
-  --callout-color: 8, 185, 78;
+  --callout-color: var(--callout-success, 8, 185, 78);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3921,7 +4238,7 @@ body body.theme-light .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="question"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-question, 236, 117, 0);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3958,7 +4275,7 @@ body body.theme-light .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="warning"] {
-  --callout-color: 236, 117, 0;
+  --callout-color: var(--callout-warning, 236, 117, 0);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3995,7 +4312,7 @@ body body.theme-light .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="danger"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-error, 233, 49, 71);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4032,7 +4349,7 @@ body body.theme-light .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="failure"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-fail, 233, 49, 71);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4069,7 +4386,7 @@ body body.theme-light .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="bug"] {
-  --callout-color: 233, 49, 71;
+  --callout-color: var(--callout-bug, 233, 49, 71);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4106,7 +4423,7 @@ body body.theme-light .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="example"] {
-  --callout-color: 120, 82, 238;
+  --callout-color: var(--callout-example, 120, 82, 238);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto
@@ -4143,7 +4460,7 @@ body body.theme-light .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -4577,9 +4894,9 @@ body body.theme-light details[open] {
   padding: 0px;
 }
 body body.theme-light kbd {
-  background-color: rgb(230, 219, 255);
+  background-color: var(--code-background, rgb(230, 219, 255));
   box-shadow: none;
-  color: rgb(47, 0, 158);
+  color: var(--code-normal, rgb(47, 0, 158));
   font-family: var(
     --font-monospace,
     ui-monospace,
@@ -4823,7 +5140,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(0, 0, 0);
+  color: var(--nav-item-color, rgb(0, 0, 0));
   cursor: var(--cursor, default);
   font-family:
     ui-sans-serif,
@@ -4850,7 +5167,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(0, 0, 0);
+  color: var(--nav-item-color, rgb(0, 0, 0));
   cursor: var(--cursor, default);
   font-family:
     ui-sans-serif,
@@ -4881,7 +5198,7 @@ body body.theme-light .clickable-icon {
   border-bottom-right-radius: 100px;
 }
 body body.theme-light .site-footer {
-  background-color: rgba(138, 92, 245, 0.02);
+  background-color: var(--status-bar-background, rgba(138, 92, 245, 0.02));
   color: var(--status-bar-text-color, rgb(92, 92, 92));
   font-family:
     ui-sans-serif,
@@ -4937,7 +5254,7 @@ body body.theme-light .nav-files-container .tree-item {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light .nav-file-title {
-  color: rgb(0, 0, 0);
+  color: var(--nav-item-color, rgb(0, 0, 0));
 }
 body body.theme-light .nav-file-title-content {
   color: rgb(0, 0, 0);
@@ -5107,8 +5424,8 @@ body body.theme-light pre > code [data-highlighted-chars] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .tag {
-  background-color: rgb(201, 179, 255);
-  color: rgb(47, 0, 158);
+  background-color: var(--tag-background, rgb(201, 179, 255));
+  color: var(--tag-color, rgb(47, 0, 158));
   border: 0px solid rgba(138, 92, 245, 0.15);
   border-top-left-radius: 24.5px;
   border-top-right-radius: 24.5px;
@@ -5130,7 +5447,7 @@ body body.theme-light .search-highlight {
 }
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(184, 153, 255);
+  color: var(--link-external-color, rgb(184, 153, 255));
   cursor: var(--cursor-link, pointer);
   filter: none;
   backdrop-filter: none;
@@ -5457,7 +5774,7 @@ body body.theme-dark i {
   animation-play-state: running;
 }
 body body.theme-dark .markdown-rendered mark {
-  background-color: rgb(31, 0, 102);
+  background-color: var(--text-highlight-bg, rgb(31, 0, 102));
   color: var(--text-normal, rgb(218, 218, 218));
   cursor: grab;
   filter: none;
@@ -5586,7 +5903,7 @@ body body.theme-dark .markdown-rendered hr {
 }
 body body.theme-dark div.multi-select-pill {
   align-items: normal;
-  background-color: rgb(31, 0, 102);
+  background-color: var(--pill-background, rgb(31, 0, 102));
   display: flex;
   font-family:
     ui-sans-serif,
@@ -5656,7 +5973,7 @@ body body.theme-dark .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-dark .markdown-rendered code {
-  background-color: rgb(15, 0, 51);
+  background-color: var(--code-background, rgb(15, 0, 51));
   border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
@@ -5666,7 +5983,7 @@ body body.theme-dark .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(184, 153, 255);
+  color: var(--code-normal, rgb(184, 153, 255));
   font-family: var(
     --font-monospace,
     ui-monospace,
@@ -5701,7 +6018,7 @@ body body.theme-dark .markdown-rendered pre > code {
 }
 body body.theme-dark :not(pre) > code[class*="language-"],
 body body.theme-dark pre[class*="language-"] {
-  background-color: rgb(15, 0, 51);
+  background-color: var(--code-background, rgb(15, 0, 51));
   border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
@@ -5814,7 +6131,7 @@ body body.theme-dark .site-body-left-column input.search-bar {
     sans-serif;
 }
 body body.theme-dark .search-results {
-  background-color: rgb(16, 14, 21);
+  background-color: var(--prompt-background, rgb(16, 14, 21));
   border: 1px solid rgb(85, 85, 85);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -6084,7 +6401,7 @@ body body.theme-dark body {
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-default, 2, 122, 255);
   border: 0px solid rgba(2, 122, 255, 0.25);
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
@@ -6134,7 +6451,7 @@ body body.theme-dark .callout > .callout-content {
   padding: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-summary, 83, 223, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -6171,7 +6488,7 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-info, 2, 122, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -6208,7 +6525,7 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: var(--callout-todo, 2, 122, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -6245,7 +6562,7 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: var(--callout-tip, 83, 223, 221);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -6282,7 +6599,7 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: var(--callout-success, 68, 207, 110);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
@@ -6319,7 +6636,7 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-question, 233, 151, 63);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -6356,7 +6673,7 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: var(--callout-warning, 233, 151, 63);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -6393,7 +6710,7 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-error, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -6430,7 +6747,7 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-fail, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -6467,7 +6784,7 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: var(--callout-bug, 251, 70, 76);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -6504,7 +6821,7 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: var(--callout-example, 168, 130, 255);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
@@ -6541,7 +6858,7 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
+  --callout-color: var(--callout-quote, 158, 158, 158);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -6975,9 +7292,9 @@ body body.theme-dark details[open] {
   padding: 0px;
 }
 body body.theme-dark kbd {
-  background-color: rgb(15, 0, 51);
+  background-color: var(--code-background, rgb(15, 0, 51));
   box-shadow: none;
-  color: rgb(184, 153, 255);
+  color: var(--code-normal, rgb(184, 153, 255));
   font-family: var(
     --font-monospace,
     ui-monospace,
@@ -7221,7 +7538,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(255, 255, 255);
+  color: var(--nav-item-color, rgb(255, 255, 255));
   cursor: var(--cursor, default);
   font-family:
     ui-sans-serif,
@@ -7248,7 +7565,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(255, 255, 255);
+  color: var(--nav-item-color, rgb(255, 255, 255));
   cursor: var(--cursor, default);
   font-family:
     ui-sans-serif,
@@ -7279,7 +7596,7 @@ body body.theme-dark .clickable-icon {
   border-bottom-right-radius: 100px;
 }
 body body.theme-dark .site-footer {
-  background-color: rgb(27, 21, 40);
+  background-color: var(--status-bar-background, rgb(27, 21, 40));
   color: var(--status-bar-text-color, rgb(179, 179, 179));
   font-family:
     ui-sans-serif,
@@ -7335,7 +7652,7 @@ body body.theme-dark .nav-files-container .tree-item {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .nav-file-title {
-  color: rgb(255, 255, 255);
+  color: var(--nav-item-color, rgb(255, 255, 255));
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(255, 255, 255);
@@ -7505,8 +7822,8 @@ body body.theme-dark pre > code [data-highlighted-chars] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .tag {
-  background-color: rgb(31, 0, 102);
-  color: rgb(184, 153, 255);
+  background-color: var(--tag-background, rgb(31, 0, 102));
+  color: var(--tag-color, rgb(184, 153, 255));
   border: 0px solid rgba(138, 92, 245, 0.15);
   border-top-left-radius: 24.5px;
   border-top-right-radius: 24.5px;

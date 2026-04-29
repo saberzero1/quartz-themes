@@ -21,7 +21,7 @@
   --background-modifier-success-rgb: var(--color-green-rgb, 8, 185, 78) !important;
   --background-primary: var(--color-base-00, #ffffff) !important;
   --background-primary-alt: var(--color-base-10, #fafafa) !important;
-  --background-secondary: #fafafa !important;
+  --background-secondary: var(--color-base-20, #fafafa) !important;
   --background-secondary-alt: var(--color-base-05, #fcfcfc) !important;
   --bases-cards-background: var(--background-primary, #ffffff) !important;
   --bases-cards-border-width: var(--border-width, 1px) !important;
@@ -39,7 +39,7 @@
   --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
   --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: #222222 !important;
+  --bases-table-border-color: var(--table-border-color, #222222) !important;
   --bases-table-cell-background-active: var(--background-primary, #ffffff) !important;
   --bases-table-cell-background-disabled: var(--background-primary-alt, #fafafa) !important;
   --bases-table-cell-background-selected: var(--table-selection, hsla(258, 88%, 66%, 0.1)) !important;
@@ -55,7 +55,7 @@
   --bases-table-header-color: var(--text-muted, #5c5c5c) !important;
   --bases-table-header-sort-mask: linear-gradient(to left, transparent var(--size-4-6), black var(--size-4-6)) !important;
   --bases-table-header-weight: var(--font-weight, 400) !important;
-  --bases-table-row-background-hover: #ffffff !important;
+  --bases-table-row-background-hover: var(--table-row-background-hover, #ffffff) !important;
   --bases-table-row-border-width: var(--border-width, 1px) !important;
   --bases-table-summary-background: var(--background-primary, #ffffff) !important;
   --bases-table-summary-background-hover: var(--background-modifier-hover, rgba(0, 0, 0, 0.067)) !important;
@@ -209,18 +209,18 @@
   --interactive-accent-hsl: var(--color-accent-hsl, 258, 88%, 66%) !important;
   --interactive-hover: var(--color-base-10, #fafafa) !important;
   --interactive-normal: var(--color-base-00, #ffffff) !important;
-  --link-color: #2c54f2 !important;
-  --link-color-hover: #5c7bf5 !important;
-  --link-external-color: #2c54f2 !important;
-  --link-external-color-hover: #5c7bf5 !important;
-  --link-unresolved-color: #2c54f2 !important;
+  --link-color: var(--text-accent, #2c54f2) !important;
+  --link-color-hover: var(--text-accent-hover, #5c7bf5) !important;
+  --link-external-color: var(--text-accent, #2c54f2) !important;
+  --link-external-color-hover: var(--text-accent-hover, #5c7bf5) !important;
+  --link-unresolved-color: var(--text-accent, #2c54f2) !important;
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3) !important;
   --link-weight: var(--font-weight, 400) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-marker-color: var(--text-faint, #ababab) !important;
   --list-marker-color-collapsed: var(--text-accent, hsl(258, 88%, 66%)) !important;
   --list-marker-color-hover: var(--text-muted, #5c5c5c) !important;
-  --menu-background: #fafafa !important;
+  --menu-background: var(--background-secondary, #fafafa) !important;
   --menu-border-color: var(--background-modifier-border-hover, #d4d4d4) !important;
   --menu-border-width: var(--border-width, 1px) !important;
   --menu-corner-shape: var(--corner-shape, round) !important;
@@ -301,7 +301,7 @@
   --prompt-border-width: var(--border-width, 1px) !important;
   --raised-background: var(--blur-background, color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent))) !important;
   --raised-blur: var(--blur-s, blur(6px) saturate(1.5) brightness(1.15)) !important;
-  --ribbon-background: #fafafa !important;
+  --ribbon-background: var(--background-secondary, #fafafa) !important;
   --ribbon-background-collapsed: var(--background-primary, #ffffff) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3, 8px 4px 12px) !important;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
@@ -348,7 +348,7 @@
   --slider-thumb-border-width: var(--border-width, 1px) !important;
   --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
   --slider-track-background: var(--background-modifier-border, #e0e0e0) !important;
-  --status-bar-background: #fafafa !important;
+  --status-bar-background: var(--background-secondary, #fafafa) !important;
   --status-bar-border-color: var(--divider-color, #e0e0e0) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width, 1px 0 0 1px) !important;
   --status-bar-font-size: var(--font-ui-smaller, 12px) !important;
@@ -365,15 +365,15 @@
   --sync-avatar-color-7: var(--color-purple, #7852ee) !important;
   --sync-avatar-color-8: var(--color-pink, #d53984) !important;
   --tab-background-active: var(--background-primary, #ffffff) !important;
-  --tab-container-background: #fafafa !important;
+  --tab-container-background: var(--background-secondary, #fafafa) !important;
   --tab-divider-color: var(--background-modifier-border-hover, #d4d4d4) !important;
   --tab-font-size: var(--font-ui-small, 13px) !important;
   --tab-outline-color: var(--divider-color, #e0e0e0) !important;
   --tab-radius: var(--radius-s, 4px) !important;
   --tab-stacked-font-size: var(--font-ui-small, 13px) !important;
   --tab-stacked-header-width: var(--header-height, 40px) !important;
-  --tab-switcher-background: #fafafa !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, #fafafa, transparent) !important;
+  --tab-switcher-background: var(--background-secondary, #fafafa) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, var(--background-secondary), transparent) !important;
   --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
@@ -385,23 +385,23 @@
   --tab-text-color-focused-highlighted: var(--text-accent, hsl(258, 88%, 66%)) !important;
   --table-add-button-border-color: var(--background-modifier-border, #e0e0e0) !important;
   --table-add-button-border-width: var(--table-border-width, 1px) !important;
-  --table-border-color: #222222 !important;
-  --table-column-alt-background: #ffffff !important;
+  --table-border-color: var(--background-modifier-border, #222222) !important;
+  --table-column-alt-background: var(--table-background, #ffffff) !important;
   --table-column-first-border-width: var(--table-border-width, 1px) !important;
   --table-column-last-border-width: var(--table-border-width, 1px) !important;
   --table-drag-handle-background-active: var(--table-selection-border-color, hsl(257, 88.88%, 70.95%)) !important;
   --table-drag-handle-color: var(--text-faint, #ababab) !important;
   --table-drag-handle-color-active: var(--text-on-accent, white) !important;
-  --table-header-background: #ffffff !important;
-  --table-header-border-color: #222222 !important;
+  --table-header-background: var(--table-background, #ffffff) !important;
+  --table-header-border-color: var(--table-border-color, #222222) !important;
   --table-header-border-width: var(--table-border-width, 1px) !important;
   --table-header-color: var(--text-normal, #222222) !important;
   --table-header-size: var(--table-text-size, 16px) !important;
   --table-header-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
   --table-line-height: var(--line-height-tight, 1.3) !important;
-  --table-row-alt-background: #ffffff !important;
-  --table-row-alt-background-hover: #ffffff !important;
-  --table-row-background-hover: #ffffff !important;
+  --table-row-alt-background: var(--table-background, #ffffff) !important;
+  --table-row-alt-background-hover: var(--table-background, #ffffff) !important;
+  --table-row-background-hover: var(--table-background, #ffffff) !important;
   --table-row-last-border-width: var(--table-border-width, 1px) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
   --table-selection-blend-mode: var(--highlight-mix-blend-mode, darken) !important;
@@ -424,7 +424,7 @@
   --text-selection: hsla(var(--color-accent-hsl), 0.2) !important;
   --text-success: var(--color-green, #08b94e) !important;
   --text-warning: var(--color-orange, #ec7500) !important;
-  --titlebar-background: #fafafa !important;
+  --titlebar-background: var(--background-secondary, #fafafa) !important;
   --titlebar-background-focused: var(--background-secondary-alt, #fcfcfc) !important;
   --titlebar-border-color: var(--background-modifier-border, #e0e0e0) !important;
   --titlebar-text-color: var(--text-muted, #5c5c5c) !important;
@@ -898,7 +898,7 @@
   --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
   --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: #dadada !important;
+  --bases-table-border-color: var(--table-border-color, #dadada) !important;
   --bases-table-cell-background-active: var(--background-primary, #1e1e1e) !important;
   --bases-table-cell-background-disabled: var(--background-primary-alt, #242424) !important;
   --bases-table-cell-background-selected: var(--table-selection, hsla(258, 88%, 66%, 0.1)) !important;
@@ -914,7 +914,7 @@
   --bases-table-header-color: var(--text-muted, #b3b3b3) !important;
   --bases-table-header-sort-mask: linear-gradient(to left, transparent var(--size-4-6), black var(--size-4-6)) !important;
   --bases-table-header-weight: var(--font-weight, 400) !important;
-  --bases-table-row-background-hover: #1e1e1e !important;
+  --bases-table-row-background-hover: var(--table-row-background-hover, #1e1e1e) !important;
   --bases-table-row-border-width: var(--border-width, 1px) !important;
   --bases-table-summary-background: var(--background-primary, #1e1e1e) !important;
   --bases-table-summary-background-hover: var(--background-modifier-hover, rgba(255, 255, 255, 0.067)) !important;
@@ -1068,11 +1068,11 @@
   --interactive-accent-hsl: var(--color-accent-hsl, 258, 88%, 66%) !important;
   --interactive-hover: var(--color-base-35, #3f3f3f) !important;
   --interactive-normal: var(--color-base-30, #363636) !important;
-  --link-color: #5980f7 !important;
-  --link-color-hover: #8aa5f9 !important;
-  --link-external-color: #5980f7 !important;
-  --link-external-color-hover: #8aa5f9 !important;
-  --link-unresolved-color: #5980f7 !important;
+  --link-color: var(--text-accent, #5980f7) !important;
+  --link-color-hover: var(--text-accent-hover, #8aa5f9) !important;
+  --link-external-color: var(--text-accent, #5980f7) !important;
+  --link-external-color-hover: var(--text-accent-hover, #8aa5f9) !important;
+  --link-unresolved-color: var(--text-accent, #5980f7) !important;
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3) !important;
   --link-weight: var(--font-weight, 400) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
@@ -1244,23 +1244,23 @@
   --tab-text-color-focused-highlighted: var(--text-accent, hsl(255, 89.76%, 75.9%)) !important;
   --table-add-button-border-color: var(--background-modifier-border, #363636) !important;
   --table-add-button-border-width: var(--table-border-width, 1px) !important;
-  --table-border-color: #dadada !important;
-  --table-column-alt-background: #1e1e1e !important;
+  --table-border-color: var(--background-modifier-border, #dadada) !important;
+  --table-column-alt-background: var(--table-background, #1e1e1e) !important;
   --table-column-first-border-width: var(--table-border-width, 1px) !important;
   --table-column-last-border-width: var(--table-border-width, 1px) !important;
   --table-drag-handle-background-active: var(--table-selection-border-color, hsl(258, 88%, 66%)) !important;
   --table-drag-handle-color: var(--text-faint, #666666) !important;
   --table-drag-handle-color-active: var(--text-on-accent, white) !important;
-  --table-header-background: #1e1e1e !important;
-  --table-header-border-color: #dadada !important;
+  --table-header-background: var(--table-background, #1e1e1e) !important;
+  --table-header-border-color: var(--table-border-color, #dadada) !important;
   --table-header-border-width: var(--table-border-width, 1px) !important;
   --table-header-color: var(--text-normal, #dadada) !important;
   --table-header-size: var(--table-text-size, 16px) !important;
   --table-header-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
   --table-line-height: var(--line-height-tight, 1.3) !important;
-  --table-row-alt-background: #1e1e1e !important;
-  --table-row-alt-background-hover: #1e1e1e !important;
-  --table-row-background-hover: #1e1e1e !important;
+  --table-row-alt-background: var(--table-background, #1e1e1e) !important;
+  --table-row-alt-background-hover: var(--table-background, #1e1e1e) !important;
+  --table-row-background-hover: var(--table-background, #1e1e1e) !important;
   --table-row-last-border-width: var(--table-border-width, 1px) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
   --table-selection-blend-mode: var(--highlight-mix-blend-mode, lighten) !important;
@@ -2033,7 +2033,7 @@ body {
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: rgb(250, 250, 250);
+    background-color: var(--background-secondary, rgb(250, 250, 250));
     color: rgb(34, 34, 34);
   }
 
@@ -2041,12 +2041,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: rgb(250, 250, 250);
+    background-color: var(--tab-container-background, rgb(250, 250, 250));
     color: rgb(34, 34, 34);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: rgb(250, 250, 250);
+    background-color: var(--tab-container-background, rgb(250, 250, 250));
     color: rgb(34, 34, 34);
     border-left: 0px rgb(224, 224, 224);
   }
@@ -2058,7 +2058,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(44, 84, 242);
+    color: var(--link-external-color, rgb(44, 84, 242));
     cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
@@ -2099,7 +2099,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(44, 84, 242);
+    color: var(--link-color, rgb(44, 84, 242));
     cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
@@ -2139,7 +2139,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(44, 84, 242);
+    color: var(--link-unresolved-color, rgb(44, 84, 242));
     cursor: var(--cursor-link, pointer);
     filter: none;
     backdrop-filter: none;
@@ -2237,7 +2237,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(138, 92, 245);
+    color: var(--bold-color, rgb(138, 92, 245));
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -2278,7 +2278,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(138, 92, 245);
+    color: var(--bold-color, rgb(138, 92, 245));
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -2894,7 +2894,7 @@ body {
   }
 
   h4 {
-    color: rgb(138, 92, 245);
+    color: var(--h4-color, rgb(138, 92, 245));
     font-family: var(--h4-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
     text-shadow: none;
   }
@@ -2970,7 +2970,7 @@ body {
   }
 
   .callout {
-    --callout-color: 8, 109, 221;
+    --callout-color: var(--callout-default, 8, 109, 221);
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3017,7 +3017,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: 8, 109, 221;
+    --callout-color: var(--callout-default, 8, 109, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3067,7 +3067,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: 0, 191, 188;
+    --callout-color: var(--callout-summary, 0, 191, 188);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3117,7 +3117,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: 8, 109, 221;
+    --callout-color: var(--callout-info, 8, 109, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3167,7 +3167,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: 8, 109, 221;
+    --callout-color: var(--callout-todo, 8, 109, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3217,7 +3217,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: 0, 191, 188;
+    --callout-color: var(--callout-tip, 0, 191, 188);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3267,7 +3267,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: 8, 185, 78;
+    --callout-color: var(--callout-success, 8, 185, 78);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3317,7 +3317,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: 236, 117, 0;
+    --callout-color: var(--callout-question, 236, 117, 0);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3367,7 +3367,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: 236, 117, 0;
+    --callout-color: var(--callout-warning, 236, 117, 0);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3417,7 +3417,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: 233, 49, 71;
+    --callout-color: var(--callout-error, 233, 49, 71);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3467,7 +3467,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: 233, 49, 71;
+    --callout-color: var(--callout-fail, 233, 49, 71);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3517,7 +3517,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: 233, 49, 71;
+    --callout-color: var(--callout-bug, 233, 49, 71);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3567,7 +3567,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: 120, 82, 238;
+    --callout-color: var(--callout-example, 120, 82, 238);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3617,7 +3617,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: 158, 158, 158;
+    --callout-color: var(--callout-quote, 158, 158, 158);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3763,7 +3763,7 @@ body {
   }
 
   tr {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--table-header-background, rgb(255, 255, 255));
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3776,11 +3776,11 @@ body {
   }
 
   tbody tr:nth-child(even) {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--table-background, rgb(255, 255, 255));
   }
 
   tbody tr:nth-child(odd) {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--table-row-alt-background, rgb(255, 255, 255));
   }
 
   img {
@@ -4403,7 +4403,7 @@ body {
   }
 
   .bases-table tbody tr:nth-child(even) {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--table-row-alt-background, rgb(255, 255, 255));
   }
 
   .canvas-node {
@@ -4476,7 +4476,7 @@ body {
   }
 
   footer {
-    background-color: rgb(250, 250, 250);
+    background-color: var(--status-bar-background, rgb(250, 250, 250));
     color: var(--status-bar-text-color, rgb(92, 92, 92));
     font-family:
       ui-sans-serif,
@@ -4647,7 +4647,7 @@ body {
   }
 
   .navigation-progress {
-    background-color: rgb(250, 250, 250);
+    background-color: var(--status-bar-background, rgb(250, 250, 250));
   }
 
   .page-header h2.page-title {
@@ -4799,7 +4799,7 @@ body {
 
   .stacked-page {
     border-color: rgb(34, 34, 34);
-    background-color: rgb(250, 250, 250);
+    background-color: var(--background-secondary, rgb(250, 250, 250));
   }
 
   .stacked-page-header {
@@ -5496,7 +5496,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: rgb(89, 128, 247);
+      color: var(--link-external-color, rgb(89, 128, 247));
       cursor: var(--cursor-link, pointer);
       filter: none;
       backdrop-filter: none;
@@ -5537,7 +5537,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: rgb(89, 128, 247);
+      color: var(--link-color, rgb(89, 128, 247));
       cursor: var(--cursor-link, pointer);
       filter: none;
       backdrop-filter: none;
@@ -5577,7 +5577,7 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: rgb(89, 128, 247);
+      color: var(--link-unresolved-color, rgb(89, 128, 247));
       cursor: var(--cursor-link, pointer);
       filter: none;
       backdrop-filter: none;
@@ -5675,7 +5675,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: rgb(166, 138, 249);
+      color: var(--bold-color, rgb(166, 138, 249));
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -5716,7 +5716,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: rgb(166, 138, 249);
+      color: var(--bold-color, rgb(166, 138, 249));
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -6332,7 +6332,7 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: rgb(166, 138, 249);
+      color: var(--h4-color, rgb(166, 138, 249));
       font-family: var(--h4-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
       text-shadow: none;
     }
@@ -6408,7 +6408,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: 2, 122, 255;
+      --callout-color: var(--callout-default, 2, 122, 255);
       border: 0px solid rgba(2, 122, 255, 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -6455,7 +6455,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: 2, 122, 255;
+      --callout-color: var(--callout-default, 2, 122, 255);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6505,7 +6505,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: var(--callout-summary, 83, 223, 221);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6555,7 +6555,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: 2, 122, 255;
+      --callout-color: var(--callout-info, 2, 122, 255);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6605,7 +6605,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: 2, 122, 255;
+      --callout-color: var(--callout-todo, 2, 122, 255);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6655,7 +6655,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: var(--callout-tip, 83, 223, 221);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6705,7 +6705,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: 68, 207, 110;
+      --callout-color: var(--callout-success, 68, 207, 110);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6755,7 +6755,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: var(--callout-question, 233, 151, 63);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6805,7 +6805,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: var(--callout-warning, 233, 151, 63);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6855,7 +6855,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: var(--callout-error, 251, 70, 76);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6905,7 +6905,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: var(--callout-fail, 251, 70, 76);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6955,7 +6955,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: var(--callout-bug, 251, 70, 76);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7005,7 +7005,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: 168, 130, 255;
+      --callout-color: var(--callout-example, 168, 130, 255);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7055,7 +7055,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: 158, 158, 158;
+      --callout-color: var(--callout-quote, 158, 158, 158);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7201,7 +7201,7 @@ html[saved-theme="dark"] {
     }
 
     tr {
-      background-color: rgb(30, 30, 30);
+      background-color: var(--table-header-background, rgb(30, 30, 30));
       border: 0px rgb(128, 128, 128);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -7214,11 +7214,11 @@ html[saved-theme="dark"] {
     }
 
     tbody tr:nth-child(even) {
-      background-color: rgb(30, 30, 30);
+      background-color: var(--table-background, rgb(30, 30, 30));
     }
 
     tbody tr:nth-child(odd) {
-      background-color: rgb(30, 30, 30);
+      background-color: var(--table-row-alt-background, rgb(30, 30, 30));
     }
 
     img {
@@ -7841,7 +7841,7 @@ html[saved-theme="dark"] {
     }
 
     .bases-table tbody tr:nth-child(even) {
-      background-color: rgb(30, 30, 30);
+      background-color: var(--table-row-alt-background, rgb(30, 30, 30));
     }
 
     .canvas-node {
