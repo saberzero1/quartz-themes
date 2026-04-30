@@ -1805,8 +1805,10 @@ html body ul.tags > li {
   },
   light: {},
   classSettings: {
-    "workspace-ribbon-hide": `.workspace-ribbon-hide .workspace-ribbon {
+    "workspace-ribbon-hide": {
+      general: `.workspace-ribbon-hide .workspace-ribbon {
 display: none;
 }`,
+    },
   },
 };

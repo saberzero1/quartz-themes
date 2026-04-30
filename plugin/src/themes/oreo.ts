@@ -2870,7 +2870,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "enable-alternative-checkboxes": `body.enable-alternative-checkboxes input[data-task='!']:checked, body.enable-alternative-checkboxes input[data-task='*']:checked, body.enable-alternative-checkboxes input[data-task='-']:checked, body.enable-alternative-checkboxes input[data-task='<']:checked, body.enable-alternative-checkboxes input[data-task='>']:checked, body.enable-alternative-checkboxes input[data-task='I']:checked, body.enable-alternative-checkboxes input[data-task='b']:checked, body.enable-alternative-checkboxes input[data-task='c']:checked, body.enable-alternative-checkboxes input[data-task='d']:checked, body.enable-alternative-checkboxes input[data-task='f']:checked, body.enable-alternative-checkboxes input[data-task='k']:checked, body.enable-alternative-checkboxes input[data-task='l']:checked, body.enable-alternative-checkboxes input[data-task='p']:checked, body.enable-alternative-checkboxes input[data-task='u']:checked, body.enable-alternative-checkboxes input[data-task='w']:checked, body.enable-alternative-checkboxes input[data-task='P']:checked, body.enable-alternative-checkboxes input[data-task='M']:checked, body.enable-alternative-checkboxes input[data-task='D']:checked, body.enable-alternative-checkboxes li[data-task='!'] > input:checked, body.enable-alternative-checkboxes li[data-task='!'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='*'] > input:checked, body.enable-alternative-checkboxes li[data-task='*'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='-'] > input:checked, body.enable-alternative-checkboxes li[data-task='-'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='<'] > input:checked, body.enable-alternative-checkboxes li[data-task='<'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='>'] > input:checked, body.enable-alternative-checkboxes li[data-task='>'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='I'] > input:checked, body.enable-alternative-checkboxes li[data-task='I'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='b'] > input:checked, body.enable-alternative-checkboxes li[data-task='b'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='c'] > input:checked, body.enable-alternative-checkboxes li[data-task='c'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='d'] > input:checked, body.enable-alternative-checkboxes li[data-task='d'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='f'] > input:checked, body.enable-alternative-checkboxes li[data-task='f'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='k'] > input:checked, body.enable-alternative-checkboxes li[data-task='k'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='l'] > input:checked, body.enable-alternative-checkboxes li[data-task='l'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='p'] > input:checked, body.enable-alternative-checkboxes li[data-task='p'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='u'] > input:checked, body.enable-alternative-checkboxes li[data-task='u'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='w'] > input:checked, body.enable-alternative-checkboxes li[data-task='w'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='P'] > input:checked, body.enable-alternative-checkboxes li[data-task='P'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='M'] > input:checked, body.enable-alternative-checkboxes li[data-task='M'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='D'] > input:checked, body.enable-alternative-checkboxes li[data-task='D'] > p > input:checked {
+    "enable-alternative-checkboxes": {
+      general: `body.enable-alternative-checkboxes input[data-task='!']:checked, body.enable-alternative-checkboxes input[data-task='*']:checked, body.enable-alternative-checkboxes input[data-task='-']:checked, body.enable-alternative-checkboxes input[data-task='<']:checked, body.enable-alternative-checkboxes input[data-task='>']:checked, body.enable-alternative-checkboxes input[data-task='I']:checked, body.enable-alternative-checkboxes input[data-task='b']:checked, body.enable-alternative-checkboxes input[data-task='c']:checked, body.enable-alternative-checkboxes input[data-task='d']:checked, body.enable-alternative-checkboxes input[data-task='f']:checked, body.enable-alternative-checkboxes input[data-task='k']:checked, body.enable-alternative-checkboxes input[data-task='l']:checked, body.enable-alternative-checkboxes input[data-task='p']:checked, body.enable-alternative-checkboxes input[data-task='u']:checked, body.enable-alternative-checkboxes input[data-task='w']:checked, body.enable-alternative-checkboxes input[data-task='P']:checked, body.enable-alternative-checkboxes input[data-task='M']:checked, body.enable-alternative-checkboxes input[data-task='D']:checked, body.enable-alternative-checkboxes li[data-task='!'] > input:checked, body.enable-alternative-checkboxes li[data-task='!'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='*'] > input:checked, body.enable-alternative-checkboxes li[data-task='*'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='-'] > input:checked, body.enable-alternative-checkboxes li[data-task='-'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='<'] > input:checked, body.enable-alternative-checkboxes li[data-task='<'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='>'] > input:checked, body.enable-alternative-checkboxes li[data-task='>'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='I'] > input:checked, body.enable-alternative-checkboxes li[data-task='I'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='b'] > input:checked, body.enable-alternative-checkboxes li[data-task='b'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='c'] > input:checked, body.enable-alternative-checkboxes li[data-task='c'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='d'] > input:checked, body.enable-alternative-checkboxes li[data-task='d'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='f'] > input:checked, body.enable-alternative-checkboxes li[data-task='f'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='k'] > input:checked, body.enable-alternative-checkboxes li[data-task='k'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='l'] > input:checked, body.enable-alternative-checkboxes li[data-task='l'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='p'] > input:checked, body.enable-alternative-checkboxes li[data-task='p'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='u'] > input:checked, body.enable-alternative-checkboxes li[data-task='u'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='w'] > input:checked, body.enable-alternative-checkboxes li[data-task='w'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='P'] > input:checked, body.enable-alternative-checkboxes li[data-task='P'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='M'] > input:checked, body.enable-alternative-checkboxes li[data-task='M'] > p > input:checked, body.enable-alternative-checkboxes li[data-task='D'] > input:checked, body.enable-alternative-checkboxes li[data-task='D'] > p > input:checked {
 --checkbox-marker-color: transparent;
 border: none;
 border-radius: 0;
@@ -3034,8 +3035,8 @@ color: var(--color-base-50);
 
 body.enable-alternative-checkboxes:not(.tasks) li[data-task='>'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='<'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='b'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='i'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='*'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='!'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='S'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='?'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='/'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='"'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='l'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='I'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='p'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='c'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='f'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='k'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='w'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='u'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='d'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='P'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='D'].task-list-item.is-checked {
 color: var(--text-normal);
-}
-body.theme-dark input[data-task='?']:checked, body.theme-dark li[data-task='?'] > input:checked, body.theme-dark li[data-task='?'] > p > input:checked {
+}`,
+      dark: `body.theme-dark input[data-task='?']:checked, body.theme-dark li[data-task='?'] > input:checked, body.theme-dark li[data-task='?'] > p > input:checked {
 background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"%3E%3Cpath fill="black" fill-opacity="0.8" fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"%2F%3E%3C%2Fsvg%3E');
 }
 
@@ -3050,11 +3051,15 @@ background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%
 body.theme-dark input[data-task='S']:checked, body.theme-dark li[data-task='S'] > input:checked, body.theme-dark li[data-task='S'] > p > input:checked {
 background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"%3E%3Cpath fill-opacity="0.8" fill="black" fill-rule="evenodd" d="M26 8a2 2 0 1 0-4 0v2a8 8 0 1 0 0 16v8a4.002 4.002 0 0 1-3.773-2.666a2 2 0 0 0-3.771 1.332A8.003 8.003 0 0 0 22 38v2a2 2 0 1 0 4 0v-2a8 8 0 1 0 0-16v-8a4.002 4.002 0 0 1 3.773 2.666a2 2 0 0 0 3.771-1.332A8.003 8.003 0 0 0 26 10V8Zm-4 6a4 4 0 0 0 0 8v-8Zm4 12v8a4 4 0 0 0 0-8Z" clip-rule="evenodd"%3E%3C/path%3E%3C/svg%3E');
 }`,
-    "oreo-default-tab": `.oreo-default-tab {
+    },
+    "oreo-default-tab": {
+      general: `.oreo-default-tab {
 --header-height: 40px;
 --tab-stacked-header-width: 40px;
 }`,
-    "oreo-depth-tab-toggle": `.oreo-depth-tab-toggle .workspace .mod-root .workspace-tab-header {
+    },
+    "oreo-depth-tab-toggle": {
+      general: `.oreo-depth-tab-toggle .workspace .mod-root .workspace-tab-header {
 --tab-text-color-focused-active-current: #000000;
 /* Oreo depth tab text */
 --tab-text-color-focused: #000000;
@@ -3106,7 +3111,9 @@ background-color: #E8E8E8;
 --oreo-depth-tab-text: #000000;
 /* Oreo crust color */
 }`,
-    "oreo-mini-tab-toggle": `.oreo-mini-tab-toggle {
+    },
+    "oreo-mini-tab-toggle": {
+      general: `.oreo-mini-tab-toggle {
 --header-height: 40px;
 --tab-stacked-header-width: 40px;
 }
@@ -3141,7 +3148,9 @@ display: none;
 background-color: var(--tab-background-active);
 /* Oreo hover background */
 }`,
-    "oreo-alternate-tab-toggle": `.oreo-alternate-tab-toggle {
+    },
+    "oreo-alternate-tab-toggle": {
+      general: `.oreo-alternate-tab-toggle {
 --header-height: 40px;
 --tab-stacked-header-width: 40px;
 }
@@ -3254,7 +3263,9 @@ align-items: center;
 .oreo-alternate-tab-toggle .sidebar-toggle-button.mod-left .clickable-icon, .oreo-alternate-tab-toggle .sidebar-toggle-button.mod-right .clickable-icon {
 height: 28px;
 }`,
-    "oreo-safari-tab-toggle": `.oreo-safari-tab-toggle .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner {
+    },
+    "oreo-safari-tab-toggle": {
+      general: `.oreo-safari-tab-toggle .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner {
 margin: 5px 0 !important;
 gap: 10px;
 }
@@ -3315,8 +3326,8 @@ max-width: 320px;
 --tab-height: 28px;
 --tab-max-width: 200px;
 --tab-max-width-active: 300px;
-}
-.theme-dark .oreo-safari-tab-toggle .workspace-split.mod-vertical.mod-root {
+}`,
+      dark: `.theme-dark .oreo-safari-tab-toggle .workspace-split.mod-vertical.mod-root {
 --tab-background-inactive: #333333;
 /* --oreo-background-secondary-alt-dark */
 --tab-background-active: #1a1a1a;
@@ -3337,8 +3348,8 @@ max-width: 320px;
 /* --oreo-text-accent-dark */
 --tab-divider-color: #666666;
 /* --oreo-background-modifier-border-hover-dark */
-}
-.theme-light .oreo-safari-tab-toggle .workspace-split.mod-vertical.mod-root {
+}`,
+      light: `.theme-light .oreo-safari-tab-toggle .workspace-split.mod-vertical.mod-root {
 --tab-background-inactive: #f2f2f2;
 /* --oreo-background-secondary-alt-light */
 --tab-background-active: #ffffff;
@@ -3360,5 +3371,6 @@ max-width: 320px;
 --tab-divider-color: #cccccc;
 /* --oreo-background-modifier-border-hover-light */
 }`,
+    },
   },
 };

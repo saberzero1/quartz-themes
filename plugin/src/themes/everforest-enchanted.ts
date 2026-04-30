@@ -6350,52 +6350,71 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "highlighted-folders": `body.highlighted-folders .nav-folder:not(.is-collapsed, .mod-root) {
+    "highlighted-folders": {
+      general: `body.highlighted-folders .nav-folder:not(.is-collapsed, .mod-root) {
 border-radius: var(--radius-s);
 background-color: rgba(var(--mono-rgb-100), 0.05);
 }`,
-    "enable-menu-blur": `body:not(.is-translucent).enable-menu-blur .modal-bg {
+    },
+    "enable-menu-blur": {
+      general: `body:not(.is-translucent).enable-menu-blur .modal-bg {
 backdrop-filter: blur(var(--menu-blur-radius, 5px));
 opacity: 1 !important;
 }`,
-    "vim-curor-animate": `body.vim-curor-animate .cm-fat-cursor {
+    },
+    "vim-curor-animate": {
+      general: `body.vim-curor-animate .cm-fat-cursor {
 transition:
         left var(--vim-cursor-speed, var(--anim-duration-superfast))
             cubic-bezier(0.39, 0.575, 0.565, 1),
         top var(--vim-cursor-speed, var(--anim-duration-superfast))
             cubic-bezier(0.39, 0.575, 0.565, 1);
 }`,
-    "h1-underline": `body.h1-underline h1, body.h1-underline .HyperMD-header-1.cm-line {
+    },
+    "h1-underline": {
+      general: `body.h1-underline h1, body.h1-underline .HyperMD-header-1.cm-line {
 border-bottom: 2px var(--h1-underline-style, solid)
         var(--background-modifier-border);
 padding-bottom: 2px;
 }`,
-    "h2-underline": `body.h2-underline h2, body.h2-underline .HyperMD-header-2.cm-line {
+    },
+    "h2-underline": {
+      general: `body.h2-underline h2, body.h2-underline .HyperMD-header-2.cm-line {
 border-bottom: 2px var(--h2-underline-style, solid)
         var(--background-modifier-border);
 padding-bottom: 2px;
 }`,
-    "h3-underline": `body.h3-underline h3, body.h3-underline .HyperMD-header-3.cm-line {
+    },
+    "h3-underline": {
+      general: `body.h3-underline h3, body.h3-underline .HyperMD-header-3.cm-line {
 border-bottom: 2px var(--h3-underline-style, solid)
         var(--background-modifier-border);
 padding-bottom: 2px;
 }`,
-    "h4-underline": `body.h4-underline h4, body.h4-underline .HyperMD-header-4.cm-line {
+    },
+    "h4-underline": {
+      general: `body.h4-underline h4, body.h4-underline .HyperMD-header-4.cm-line {
 border-bottom: 2px var(--h4-underline-style, solid)
         var(--background-modifier-border);
 padding-bottom: 2px;
 }`,
-    "h5-underline": `body.h5-underline h5, body.h5-underline .HyperMD-header-5.cm-line {
+    },
+    "h5-underline": {
+      general: `body.h5-underline h5, body.h5-underline .HyperMD-header-5.cm-line {
 border-bottom: 2px var(--h5-underline-style, solid)
         var(--background-modifier-border);
 padding-bottom: 2px;
 }`,
-    "h6-underline": `body.h6-underline h6, body.h6-underline .HyperMD-header-6.cm-line {
+    },
+    "h6-underline": {
+      general: `body.h6-underline h6, body.h6-underline .HyperMD-header-6.cm-line {
 border-bottom: 2px var(--h6-underline-style, solid)
         var(--background-modifier-border);
 padding-bottom: 2px;
 }`,
-    "image-embed-enable-zoom": `body.image-embed-enable-zoom {
+    },
+    "image-embed-enable-zoom": {
+      general: `body.image-embed-enable-zoom {
 & .image-embed {
         & img {
             cursor: zoom-out;
@@ -6452,13 +6471,19 @@ padding-bottom: 2px;
         contain: none !important;
     };
 }`,
-    "image-embed-no-drag": `&.image-embed-no-drag .image-embed:active img {
+    },
+    "image-embed-no-drag": {
+      general: `&.image-embed-no-drag .image-embed:active img {
 pointer-events: none;
 }`,
-    "image-embed-stretch": `.image-embed-stretch {
+    },
+    "image-embed-stretch": {
+      general: `.image-embed-stretch {
 --img-width: 100;
 }`,
-    "external-link-remove-icon": `body.external-link-remove-icon {
+    },
+    "external-link-remove-icon": {
+      general: `body.external-link-remove-icon {
 & .cm-formatting.external-link {
         display: none;
     };
@@ -6467,13 +6492,19 @@ pointer-events: none;
         padding-right: unset;
     };
 }`,
-    "centered-tables": `body.centered-tables table {
+    },
+    "centered-tables": {
+      general: `body.centered-tables table {
 margin-inline: auto;
 }`,
-    "full-width-tables": `body.full-width-tables table {
+    },
+    "full-width-tables": {
+      general: `body.full-width-tables table {
 width: 100%;
 }`,
-    "rounded-tables": `body.rounded-tables :where(table:not(:has([rowspan]))) {
+    },
+    "rounded-tables": {
+      general: `body.rounded-tables :where(table:not(:has([rowspan]))) {
 border-collapse: separate;
 border-spacing: 0;
 & :is(td, th) {
@@ -6492,7 +6523,9 @@ border-spacing: 0;
         border-bottom-right-radius: var(--rounded-tables-radius, 8px);
     };
 }`,
-    "background-image-enabled": `body.background-image-enabled {
+    },
+    "background-image-enabled": {
+      general: `body.background-image-enabled {
 /* This breaks canvas screenshots! */
 --canvas-background: transparent;
 --background-transparent: rgba(
@@ -6543,7 +6576,9 @@ display: none;
 .background-image-enabled .empty-state {
 position: static;
 }`,
-    "background-image-pane-view": `.background-image-pane-view .view-content:has(.markdown-reading-view) {
+    },
+    "background-image-pane-view": {
+      general: `.background-image-pane-view .view-content:has(.markdown-reading-view) {
 background-color: transparent !important;
 }
 
@@ -6570,13 +6605,17 @@ margin: auto;
 padding: clamp(2rem, 5vw, 4rem);
 border-radius: 1rem;
 }`,
-    "custom-stacked-panes-enabled": `.custom-stacked-panes-enabled .mod-vertical .mod-stacked .workspace-leaf {
+    },
+    "custom-stacked-panes-enabled": {
+      general: `.custom-stacked-panes-enabled .mod-vertical .mod-stacked .workspace-leaf {
 max-width: calc(
         (100% / var(--custom-stacked-panes-count, 2)) - 2.5rem
     ) !important;
 width: 100% !important;
 }`,
-    "visual-parity-enabled": `body.visual-parity-enabled {
+    },
+    "visual-parity-enabled": {
+      general: `body.visual-parity-enabled {
 --p-spacing: calc(1.5 * var(--font-text-size));
 --heading-spacing: calc(var(--p-spacing) * 1);
 /* Fix hr elements */
@@ -6611,5 +6650,6 @@ width: 100% !important;
         padding-bottom: 0.25em !important;
     };
 }`,
+    },
   },
 };

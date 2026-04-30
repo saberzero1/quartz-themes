@@ -5012,28 +5012,41 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    tw1: `.tw1 .view-content > .markdown-reading-view > .markdown-preview-view > .markdown-preview-section > div > table:not(.dataview) {
+    tw1: {
+      general: `.tw1 .view-content > .markdown-reading-view > .markdown-preview-view > .markdown-preview-section > div > table:not(.dataview) {
 max-width: 100%;
 width: 100%;
 }`,
-    tw2: `.tw2 .view-content > .markdown-reading-view > .markdown-preview-view > .markdown-preview-section > div > table:not(.dataview) {
+    },
+    tw2: {
+      general: `.tw2 .view-content > .markdown-reading-view > .markdown-preview-view > .markdown-preview-section > div > table:not(.dataview) {
 max-width: 80%;
 width: 80%;
 }`,
-    tw3: `.tw3 .view-content > .markdown-reading-view > .markdown-preview-view > .markdown-preview-section > div > table:not(.dataview) {
+    },
+    tw3: {
+      general: `.tw3 .view-content > .markdown-reading-view > .markdown-preview-view > .markdown-preview-section > div > table:not(.dataview) {
 max-width: 60%;
 width: 60%;
 }`,
-    th1: `.th1 .view-content > .markdown-reading-view > .markdown-preview-view > .markdown-preview-section > div > table:not(.dataview) > tbody > tr > td {
+    },
+    th1: {
+      general: `.th1 .view-content > .markdown-reading-view > .markdown-preview-view > .markdown-preview-section > div > table:not(.dataview) > tbody > tr > td {
 padding: 16px 16px;
 }`,
-    th2: `.th2 .view-content > .markdown-reading-view > .markdown-preview-view > .markdown-preview-section > div > table:not(.dataview) > tbody > tr > td {
+    },
+    th2: {
+      general: `.th2 .view-content > .markdown-reading-view > .markdown-preview-view > .markdown-preview-section > div > table:not(.dataview) > tbody > tr > td {
 padding: 16px 16px;
 }`,
-    th3: `.th3 .view-content > .markdown-reading-view > .markdown-preview-view > .markdown-preview-section > div > table:not(.dataview) > tbody > tr > td {
+    },
+    th3: {
+      general: `.th3 .view-content > .markdown-reading-view > .markdown-preview-view > .markdown-preview-section > div > table:not(.dataview) > tbody > tr > td {
 padding: 4px 4px;
 }`,
-    t1: `.t1 table:not(.dataview) {
+    },
+    t1: {
+      general: `.t1 table:not(.dataview) {
 --table-header-background: var(--background-primary-alt);
 --table-header-background-hover: var(--background-primary-alt);
 --table-header-color: var(--text-normal);
@@ -5072,7 +5085,9 @@ color: var(--interactive-accent);
 .t1 table:not(.dataview) > tbody > tr:hover > td > .internal-link {
 color: var(--interactive-accent-hover);
 }`,
-    t2: `.t2 table:not(.dataview) {
+    },
+    t2: {
+      general: `.t2 table:not(.dataview) {
 --table-header-background: var(--background-primary-alt);
 --table-header-background-hover: var(--background-primary-alt);
 --table-header-color: var(--text-normal);
@@ -5112,7 +5127,9 @@ color: var(--interactive-secondary-accent);
 color: var(--interactive-secondary-accent-hover);
 text-decoration: underline;
 }`,
-    t3: `.t3 table:not(.dataview) {
+    },
+    t3: {
+      general: `.t3 table:not(.dataview) {
 --table-header-background: rgba(var(--rgb-primary), 0.06);
 --table-header-background-hover: rgba(var(--rgb-primary), 0.08);
 --table-header-color: var(--text-normal);
@@ -5151,7 +5168,9 @@ color: var(--interactive-accent);
 .t3 table:not(.dataview) > tbody > tr:hover > td > .internal-link {
 color: var(--interactive-accent-hover);
 }`,
-    t4: `.t4 table:not(.dataview) {
+    },
+    t4: {
+      general: `.t4 table:not(.dataview) {
 --table-header-background: rgba(var(--rgb-secondary), 0.06);
 --table-header-background-hover: rgba(var(--rgb-secondary), 0.08);
 --table-header-color: var(--text-normal);
@@ -5191,7 +5210,9 @@ color: var(--interactive-secondary-accent);
 color: var(--interactive-secondary-accent-hover);
 text-decoration: underline;
 }`,
-    "enable-alternative-checkboxes": `body.enable-alternative-checkboxes {
+    },
+    "enable-alternative-checkboxes": {
+      general: `body.enable-alternative-checkboxes {
 --checkbox-radius: 50%;
 --checkbox-color: var(--color-primary);
 --checkbox-color-hover: var(--color-primary);
@@ -5266,7 +5287,9 @@ text-decoration: underline;
     -webkit-mask-size: var(--checkbox-icon-mask-size, 100%);
   };
 }`,
-    sh1: `.sh1 {
+    },
+    sh1: {
+      general: `.sh1 {
 --code-background: #141414;
 --code-white-space: pre-wrap;
 --code-size: 13px;
@@ -5286,7 +5309,9 @@ text-decoration: underline;
 .sh1 .markdown-preview-view .token.string {
 font-weight: 300;
 }`,
-    sh2: `.sh2 {
+    },
+    sh2: {
+      general: `.sh2 {
 --code-background: #0d1117;
 --code-white-space: nowrap;
 --code-size: 13px;
@@ -5318,7 +5343,9 @@ color: #ffa657;
 .sh2 .markdown-preview-view .token.console {
 color: #c9d1d9;
 }`,
-    sh3: `.sh3 {
+    },
+    sh3: {
+      general: `.sh3 {
 --code-background: #2b2b2b;
 --code-white-space: pre-wrap;
 --code-size: 13px;
@@ -5342,7 +5369,9 @@ color: #00e0e0;
 .sh3 .markdown-preview-view .token.console {
 color: #ffa07a;
 }`,
-    sh4: `.sh4 {
+    },
+    sh4: {
+      general: `.sh4 {
 --code-background: #282c34;
 --code-white-space: pre;
 --code-size: 13px;
@@ -5358,7 +5387,9 @@ color: #ffa07a;
 --code-tag: #c678dd;
 --code-value: #d19a66;
 }`,
-    sh5: `.sh5 {
+    },
+    sh5: {
+      general: `.sh5 {
 --code-background: #23241f;
 --code-white-space: pre-wrap;
 --code-size: 13px;
@@ -5394,7 +5425,9 @@ color: #e6db74;
 .sh5 .markdown-preview-view .token.variable, .sh5 .cm-s-obsidian span.cm-variable {
 color: #e6db74;
 }`,
-    sh6: `.sh6 {
+    },
+    sh6: {
+      general: `.sh6 {
 --code-background: #1a1b26;
 --code-white-space: pre-wrap;
 --code-size: 13px;
@@ -5418,7 +5451,9 @@ color: #7dcfff;
 .sh6 .markdown-preview-view .token.console {
 color: #f7768e;
 }`,
-    sh7: `.sh7 {
+    },
+    sh7: {
+      general: `.sh7 {
 --code-background: #000000;
 --code-white-space: pre;
 --code-size: 13px;
@@ -5442,5 +5477,6 @@ color: #7aa6da;
 .sh7 .markdown-preview-view .token.console {
 color: #d54e53;
 }`,
+    },
   },
 };

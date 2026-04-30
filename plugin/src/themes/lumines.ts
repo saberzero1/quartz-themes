@@ -18580,209 +18580,345 @@ html[saved-theme="light"] body ul.tags > li {
 }
 `,
   classSettings: {
-    "obsidian-font-jetbrains-mono": `.obsidian-font-jetbrains-mono {
+    "obsidian-font-jetbrains-mono": {
+      general: `.obsidian-font-jetbrains-mono {
 --font-default: "JetBrains Mono", monospace;
 }`,
-    "obsidian-font-excalifont": `.obsidian-font-excalifont {
+    },
+    "obsidian-font-excalifont": {
+      general: `.obsidian-font-excalifont {
 --font-default: "Excalifont", sans-serif;
 }`,
-    "obsidian-font-cascadia-code": `.obsidian-font-cascadia-code {
+    },
+    "obsidian-font-cascadia-code": {
+      general: `.obsidian-font-cascadia-code {
 --font-default: "Cascadia Code", monospace;
 }`,
-    "folder-titles-accent": `.folder-titles-accent .nav-folder .nav-folder-title {
+    },
+    "folder-titles-accent": {
+      general: `.folder-titles-accent .nav-folder .nav-folder-title {
 color: var(--color-accent);
 }`,
-    "folder-titles-red": `.folder-titles-red .nav-folder .nav-folder-title {
+    },
+    "folder-titles-red": {
+      general: `.folder-titles-red .nav-folder .nav-folder-title {
 color: hsl(var(--primary-red));
 }`,
-    "folder-titles-orange": `.folder-titles-orange .nav-folder .nav-folder-title {
+    },
+    "folder-titles-orange": {
+      general: `.folder-titles-orange .nav-folder .nav-folder-title {
 color: hsl(var(--primary-orange));
 }`,
-    "folder-titles-yellow": `.folder-titles-yellow .nav-folder .nav-folder-title {
+    },
+    "folder-titles-yellow": {
+      general: `.folder-titles-yellow .nav-folder .nav-folder-title {
 color: hsl(var(--primary-yellow));
 }`,
-    "folder-titles-lime": `.folder-titles-lime .nav-folder .nav-folder-title {
+    },
+    "folder-titles-lime": {
+      general: `.folder-titles-lime .nav-folder .nav-folder-title {
 color: hsl(var(--primary-lime));
 }`,
-    "folder-titles-green": `.folder-titles-green .nav-folder .nav-folder-title {
+    },
+    "folder-titles-green": {
+      general: `.folder-titles-green .nav-folder .nav-folder-title {
 color: hsl(var(--primary-green));
 }`,
-    "folder-titles-cyan": `.folder-titles-cyan .nav-folder .nav-folder-title {
+    },
+    "folder-titles-cyan": {
+      general: `.folder-titles-cyan .nav-folder .nav-folder-title {
 color: hsl(var(--primary-cyan));
 }`,
-    "folder-titles-sky": `.folder-titles-sky .nav-folder .nav-folder-title {
+    },
+    "folder-titles-sky": {
+      general: `.folder-titles-sky .nav-folder .nav-folder-title {
 color: hsl(var(--primary-sky));
 }`,
-    "folder-titles-blue": `.folder-titles-blue .nav-folder .nav-folder-title {
+    },
+    "folder-titles-blue": {
+      general: `.folder-titles-blue .nav-folder .nav-folder-title {
 color: hsl(var(--primary-blue));
 }`,
-    "folder-titles-indigo": `.folder-titles-indigo .nav-folder .nav-folder-title {
+    },
+    "folder-titles-indigo": {
+      general: `.folder-titles-indigo .nav-folder .nav-folder-title {
 color: hsl(var(--primary-indigo));
 }`,
-    "folder-titles-violet": `.folder-titles-violet .nav-folder .nav-folder-title {
+    },
+    "folder-titles-violet": {
+      general: `.folder-titles-violet .nav-folder .nav-folder-title {
 color: hsl(var(--primary-violet));
 }`,
-    "folder-titles-pink": `.folder-titles-pink .nav-folder .nav-folder-title {
+    },
+    "folder-titles-pink": {
+      general: `.folder-titles-pink .nav-folder .nav-folder-title {
 color: hsl(var(--primary-pink));
 }`,
-    "folder-titles-gray": `.folder-titles-gray .nav-folder .nav-folder-title {
+    },
+    "folder-titles-gray": {
+      general: `.folder-titles-gray .nav-folder .nav-folder-title {
 color: hsl(var(--primary-gray));
 }`,
-    "folder-titles-none": `.folder-titles-none .nav-folder .nav-folder-title {
+    },
+    "folder-titles-none": {
+      general: `.folder-titles-none .nav-folder .nav-folder-title {
 color: var(--nav-item-color-active);
 }`,
-    "hide-button-new-note": `.hide-button-new-note .clickable-icon.nav-action-button:has(.svg-icon.lucide-edit) {
+    },
+    "hide-button-new-note": {
+      general: `.hide-button-new-note .clickable-icon.nav-action-button:has(.svg-icon.lucide-edit) {
 display: none;
 }`,
-    "hide-button-new-folder": `.hide-button-new-folder .clickable-icon.nav-action-button:has(.svg-icon.lucide-folder-plus) {
+    },
+    "hide-button-new-folder": {
+      general: `.hide-button-new-folder .clickable-icon.nav-action-button:has(.svg-icon.lucide-folder-plus) {
 display: none;
 }`,
-    "hide-button-sort-order": `.hide-button-sort-order .clickable-icon.nav-action-button:has(.svg-icon.lucide-sort-asc) {
+    },
+    "hide-button-sort-order": {
+      general: `.hide-button-sort-order .clickable-icon.nav-action-button:has(.svg-icon.lucide-sort-asc) {
 display: none;
 }`,
-    "hide-button-auto-reveal": `.hide-button-auto-reveal .clickable-icon.nav-action-button:has(.svg-icon.lucide-gallery-vertical) {
+    },
+    "hide-button-auto-reveal": {
+      general: `.hide-button-auto-reveal .clickable-icon.nav-action-button:has(.svg-icon.lucide-gallery-vertical) {
 display: none;
 }`,
-    "hide-button-collapse-all": `.hide-button-collapse-all .clickable-icon.nav-action-button:has(.svg-icon.lucide-chevrons-up-down), .hide-button-collapse-all .clickable-icon.nav-action-button:has(.svg-icon.lucide-chevrons-down-up) {
+    },
+    "hide-button-collapse-all": {
+      general: `.hide-button-collapse-all .clickable-icon.nav-action-button:has(.svg-icon.lucide-chevrons-up-down), .hide-button-collapse-all .clickable-icon.nav-action-button:has(.svg-icon.lucide-chevrons-down-up) {
 display: none;
 }`,
-    "hide-button-reading-mode": `.hide-button-reading-mode .view-header .clickable-icon.view-action:has(.svg-icon.lucide-book-open), .hide-button-reading-mode .view-header .clickable-icon.view-action:has(.svg-icon.lucide-edit-3) {
+    },
+    "hide-button-reading-mode": {
+      general: `.hide-button-reading-mode .view-header .clickable-icon.view-action:has(.svg-icon.lucide-book-open), .hide-button-reading-mode .view-header .clickable-icon.view-action:has(.svg-icon.lucide-edit-3) {
 display: none;
 }`,
-    "hide-button-search-settings": `.hide-button-search-settings .search-row .clickable-icon:has(.svg-icon.lucide-sliders-horizontal) {
+    },
+    "hide-button-search-settings": {
+      general: `.hide-button-search-settings .search-row .clickable-icon:has(.svg-icon.lucide-sliders-horizontal) {
 display: none;
 }`,
-    "hide-icon-mobile-chevrons": `.hide-icon-mobile-chevrons .mobile-navbar .navbar-action-flair:has(.svg-icon.lucide-chevrons-up-down) {
+    },
+    "hide-icon-mobile-chevrons": {
+      general: `.hide-icon-mobile-chevrons .mobile-navbar .navbar-action-flair:has(.svg-icon.lucide-chevrons-up-down) {
 display: none;
 }`,
-    "hide-button-mobile-navbar-action-back": `.hide-button-mobile-navbar-action-back .mobile-navbar-action.mobile-navbar-action-back {
+    },
+    "hide-button-mobile-navbar-action-back": {
+      general: `.hide-button-mobile-navbar-action-back .mobile-navbar-action.mobile-navbar-action-back {
 display: none;
 }`,
-    "hide-button-mobile-navbar-action-forward": `.hide-button-mobile-navbar-action-forward .mobile-navbar-action.mobile-navbar-action-forward {
+    },
+    "hide-button-mobile-navbar-action-forward": {
+      general: `.hide-button-mobile-navbar-action-forward .mobile-navbar-action.mobile-navbar-action-forward {
 display: none;
 }`,
-    "hide-button-mobile-navbar-action-quick-switcher": `.hide-button-mobile-navbar-action-quick-switcher .mobile-navbar-action.mobile-navbar-action-quick-switcher {
+    },
+    "hide-button-mobile-navbar-action-quick-switcher": {
+      general: `.hide-button-mobile-navbar-action-quick-switcher .mobile-navbar-action.mobile-navbar-action-quick-switcher {
 display: none;
 }`,
-    "hide-button-mobile-navbar-action-new-tab": `.hide-button-mobile-navbar-action-new-tab .mobile-navbar-action.mobile-navbar-action-new-tab {
+    },
+    "hide-button-mobile-navbar-action-new-tab": {
+      general: `.hide-button-mobile-navbar-action-new-tab .mobile-navbar-action.mobile-navbar-action-new-tab {
 display: none;
 }`,
-    "hide-button-mobile-navbar-action-tabs": `.hide-button-mobile-navbar-action-tabs .mobile-navbar-action.mobile-navbar-action-tabs {
+    },
+    "hide-button-mobile-navbar-action-tabs": {
+      general: `.hide-button-mobile-navbar-action-tabs .mobile-navbar-action.mobile-navbar-action-tabs {
 display: none;
 }`,
-    "hide-button-mobile-navbar-action-menu": `.hide-button-mobile-navbar-action-menu .mobile-navbar-action.mobile-navbar-action-menu {
+    },
+    "hide-button-mobile-navbar-action-menu": {
+      general: `.hide-button-mobile-navbar-action-menu .mobile-navbar-action.mobile-navbar-action-menu {
 display: none;
 }`,
-    "hide-button-help": `.hide-button-help .workspace-drawer-vault-actions .clickable-icon:has(.svg-icon.help) {
+    },
+    "hide-button-help": {
+      general: `.hide-button-help .workspace-drawer-vault-actions .clickable-icon:has(.svg-icon.help) {
 display: none;
 }`,
-    "order-navbar-button-nth-child-1-1": `.order-navbar-button-nth-child-1-1 .mobile-navbar-action:nth-child(1) {
+    },
+    "order-navbar-button-nth-child-1-1": {
+      general: `.order-navbar-button-nth-child-1-1 .mobile-navbar-action:nth-child(1) {
 order: 1;
 }`,
-    "order-navbar-button-nth-child-1-2": `.order-navbar-button-nth-child-1-2 .mobile-navbar-action:nth-child(1) {
+    },
+    "order-navbar-button-nth-child-1-2": {
+      general: `.order-navbar-button-nth-child-1-2 .mobile-navbar-action:nth-child(1) {
 order: 2;
 }`,
-    "order-navbar-button-nth-child-1-3": `.order-navbar-button-nth-child-1-3 .mobile-navbar-action:nth-child(1) {
+    },
+    "order-navbar-button-nth-child-1-3": {
+      general: `.order-navbar-button-nth-child-1-3 .mobile-navbar-action:nth-child(1) {
 order: 3;
 }`,
-    "order-navbar-button-nth-child-1-4": `.order-navbar-button-nth-child-1-4 .mobile-navbar-action:nth-child(1) {
+    },
+    "order-navbar-button-nth-child-1-4": {
+      general: `.order-navbar-button-nth-child-1-4 .mobile-navbar-action:nth-child(1) {
 order: 4;
 }`,
-    "order-navbar-button-nth-child-1-5": `.order-navbar-button-nth-child-1-5 .mobile-navbar-action:nth-child(1) {
+    },
+    "order-navbar-button-nth-child-1-5": {
+      general: `.order-navbar-button-nth-child-1-5 .mobile-navbar-action:nth-child(1) {
 order: 5;
 }`,
-    "order-navbar-button-nth-child-1-6": `.order-navbar-button-nth-child-1-6 .mobile-navbar-action:nth-child(1) {
+    },
+    "order-navbar-button-nth-child-1-6": {
+      general: `.order-navbar-button-nth-child-1-6 .mobile-navbar-action:nth-child(1) {
 order: 6;
 }`,
-    "order-navbar-button-nth-child-2-1": `.order-navbar-button-nth-child-2-1 .mobile-navbar-action:nth-child(2) {
+    },
+    "order-navbar-button-nth-child-2-1": {
+      general: `.order-navbar-button-nth-child-2-1 .mobile-navbar-action:nth-child(2) {
 order: 1;
 }`,
-    "order-navbar-button-nth-child-2-2": `.order-navbar-button-nth-child-2-2 .mobile-navbar-action:nth-child(2) {
+    },
+    "order-navbar-button-nth-child-2-2": {
+      general: `.order-navbar-button-nth-child-2-2 .mobile-navbar-action:nth-child(2) {
 order: 2;
 }`,
-    "order-navbar-button-nth-child-2-3": `.order-navbar-button-nth-child-2-3 .mobile-navbar-action:nth-child(2) {
+    },
+    "order-navbar-button-nth-child-2-3": {
+      general: `.order-navbar-button-nth-child-2-3 .mobile-navbar-action:nth-child(2) {
 order: 3;
 }`,
-    "order-navbar-button-nth-child-2-4": `.order-navbar-button-nth-child-2-4 .mobile-navbar-action:nth-child(2) {
+    },
+    "order-navbar-button-nth-child-2-4": {
+      general: `.order-navbar-button-nth-child-2-4 .mobile-navbar-action:nth-child(2) {
 order: 4;
 }`,
-    "order-navbar-button-nth-child-2-5": `.order-navbar-button-nth-child-2-5 .mobile-navbar-action:nth-child(2) {
+    },
+    "order-navbar-button-nth-child-2-5": {
+      general: `.order-navbar-button-nth-child-2-5 .mobile-navbar-action:nth-child(2) {
 order: 5;
 }`,
-    "order-navbar-button-nth-child-2-6": `.order-navbar-button-nth-child-2-6 .mobile-navbar-action:nth-child(2) {
+    },
+    "order-navbar-button-nth-child-2-6": {
+      general: `.order-navbar-button-nth-child-2-6 .mobile-navbar-action:nth-child(2) {
 order: 6;
 }`,
-    "order-navbar-button-nth-child-3-1": `.order-navbar-button-nth-child-3-1 .mobile-navbar-action:nth-child(3) {
+    },
+    "order-navbar-button-nth-child-3-1": {
+      general: `.order-navbar-button-nth-child-3-1 .mobile-navbar-action:nth-child(3) {
 order: 1;
 }`,
-    "order-navbar-button-nth-child-3-2": `.order-navbar-button-nth-child-3-2 .mobile-navbar-action:nth-child(3) {
+    },
+    "order-navbar-button-nth-child-3-2": {
+      general: `.order-navbar-button-nth-child-3-2 .mobile-navbar-action:nth-child(3) {
 order: 2;
 }`,
-    "order-navbar-button-nth-child-3-3": `.order-navbar-button-nth-child-3-3 .mobile-navbar-action:nth-child(3) {
+    },
+    "order-navbar-button-nth-child-3-3": {
+      general: `.order-navbar-button-nth-child-3-3 .mobile-navbar-action:nth-child(3) {
 order: 3;
 }`,
-    "order-navbar-button-nth-child-3-4": `.order-navbar-button-nth-child-3-4 .mobile-navbar-action:nth-child(3) {
+    },
+    "order-navbar-button-nth-child-3-4": {
+      general: `.order-navbar-button-nth-child-3-4 .mobile-navbar-action:nth-child(3) {
 order: 4;
 }`,
-    "order-navbar-button-nth-child-3-5": `.order-navbar-button-nth-child-3-5 .mobile-navbar-action:nth-child(3) {
+    },
+    "order-navbar-button-nth-child-3-5": {
+      general: `.order-navbar-button-nth-child-3-5 .mobile-navbar-action:nth-child(3) {
 order: 5;
 }`,
-    "order-navbar-button-nth-child-3-6": `.order-navbar-button-nth-child-3-6 .mobile-navbar-action:nth-child(3) {
+    },
+    "order-navbar-button-nth-child-3-6": {
+      general: `.order-navbar-button-nth-child-3-6 .mobile-navbar-action:nth-child(3) {
 order: 6;
 }`,
-    "order-navbar-button-nth-child-4-1": `.order-navbar-button-nth-child-4-1 .mobile-navbar-action:nth-child(4) {
+    },
+    "order-navbar-button-nth-child-4-1": {
+      general: `.order-navbar-button-nth-child-4-1 .mobile-navbar-action:nth-child(4) {
 order: 1;
 }`,
-    "order-navbar-button-nth-child-4-2": `.order-navbar-button-nth-child-4-2 .mobile-navbar-action:nth-child(4) {
+    },
+    "order-navbar-button-nth-child-4-2": {
+      general: `.order-navbar-button-nth-child-4-2 .mobile-navbar-action:nth-child(4) {
 order: 2;
 }`,
-    "order-navbar-button-nth-child-4-3": `.order-navbar-button-nth-child-4-3 .mobile-navbar-action:nth-child(4) {
+    },
+    "order-navbar-button-nth-child-4-3": {
+      general: `.order-navbar-button-nth-child-4-3 .mobile-navbar-action:nth-child(4) {
 order: 3;
 }`,
-    "order-navbar-button-nth-child-4-4": `.order-navbar-button-nth-child-4-4 .mobile-navbar-action:nth-child(4) {
+    },
+    "order-navbar-button-nth-child-4-4": {
+      general: `.order-navbar-button-nth-child-4-4 .mobile-navbar-action:nth-child(4) {
 order: 4;
 }`,
-    "order-navbar-button-nth-child-4-5": `.order-navbar-button-nth-child-4-5 .mobile-navbar-action:nth-child(4) {
+    },
+    "order-navbar-button-nth-child-4-5": {
+      general: `.order-navbar-button-nth-child-4-5 .mobile-navbar-action:nth-child(4) {
 order: 5;
 }`,
-    "order-navbar-button-nth-child-4-6": `.order-navbar-button-nth-child-4-6 .mobile-navbar-action:nth-child(4) {
+    },
+    "order-navbar-button-nth-child-4-6": {
+      general: `.order-navbar-button-nth-child-4-6 .mobile-navbar-action:nth-child(4) {
 order: 6;
 }`,
-    "order-navbar-button-nth-child-5-1": `.order-navbar-button-nth-child-5-1 .mobile-navbar-action:nth-child(5) {
+    },
+    "order-navbar-button-nth-child-5-1": {
+      general: `.order-navbar-button-nth-child-5-1 .mobile-navbar-action:nth-child(5) {
 order: 1;
 }`,
-    "order-navbar-button-nth-child-5-2": `.order-navbar-button-nth-child-5-2 .mobile-navbar-action:nth-child(5) {
+    },
+    "order-navbar-button-nth-child-5-2": {
+      general: `.order-navbar-button-nth-child-5-2 .mobile-navbar-action:nth-child(5) {
 order: 2;
 }`,
-    "order-navbar-button-nth-child-5-3": `.order-navbar-button-nth-child-5-3 .mobile-navbar-action:nth-child(5) {
+    },
+    "order-navbar-button-nth-child-5-3": {
+      general: `.order-navbar-button-nth-child-5-3 .mobile-navbar-action:nth-child(5) {
 order: 3;
 }`,
-    "order-navbar-button-nth-child-5-4": `.order-navbar-button-nth-child-5-4 .mobile-navbar-action:nth-child(5) {
+    },
+    "order-navbar-button-nth-child-5-4": {
+      general: `.order-navbar-button-nth-child-5-4 .mobile-navbar-action:nth-child(5) {
 order: 4;
 }`,
-    "order-navbar-button-nth-child-5-5": `.order-navbar-button-nth-child-5-5 .mobile-navbar-action:nth-child(5) {
+    },
+    "order-navbar-button-nth-child-5-5": {
+      general: `.order-navbar-button-nth-child-5-5 .mobile-navbar-action:nth-child(5) {
 order: 5;
 }`,
-    "order-navbar-button-nth-child-5-6": `.order-navbar-button-nth-child-5-6 .mobile-navbar-action:nth-child(5) {
+    },
+    "order-navbar-button-nth-child-5-6": {
+      general: `.order-navbar-button-nth-child-5-6 .mobile-navbar-action:nth-child(5) {
 order: 6;
 }`,
-    "order-navbar-button-nth-child-6-1": `.order-navbar-button-nth-child-6-1 .mobile-navbar-action:nth-child(6) {
+    },
+    "order-navbar-button-nth-child-6-1": {
+      general: `.order-navbar-button-nth-child-6-1 .mobile-navbar-action:nth-child(6) {
 order: 1;
 }`,
-    "order-navbar-button-nth-child-6-2": `.order-navbar-button-nth-child-6-2 .mobile-navbar-action:nth-child(6) {
+    },
+    "order-navbar-button-nth-child-6-2": {
+      general: `.order-navbar-button-nth-child-6-2 .mobile-navbar-action:nth-child(6) {
 order: 2;
 }`,
-    "order-navbar-button-nth-child-6-3": `.order-navbar-button-nth-child-6-3 .mobile-navbar-action:nth-child(6) {
+    },
+    "order-navbar-button-nth-child-6-3": {
+      general: `.order-navbar-button-nth-child-6-3 .mobile-navbar-action:nth-child(6) {
 order: 3;
 }`,
-    "order-navbar-button-nth-child-6-4": `.order-navbar-button-nth-child-6-4 .mobile-navbar-action:nth-child(6) {
+    },
+    "order-navbar-button-nth-child-6-4": {
+      general: `.order-navbar-button-nth-child-6-4 .mobile-navbar-action:nth-child(6) {
 order: 4;
 }`,
-    "order-navbar-button-nth-child-6-5": `.order-navbar-button-nth-child-6-5 .mobile-navbar-action:nth-child(6) {
+    },
+    "order-navbar-button-nth-child-6-5": {
+      general: `.order-navbar-button-nth-child-6-5 .mobile-navbar-action:nth-child(6) {
 order: 5;
 }`,
-    "order-navbar-button-nth-child-6-6": `.order-navbar-button-nth-child-6-6 .mobile-navbar-action:nth-child(6) {
+    },
+    "order-navbar-button-nth-child-6-6": {
+      general: `.order-navbar-button-nth-child-6-6 .mobile-navbar-action:nth-child(6) {
 order: 6;
 }`,
+    },
   },
 };

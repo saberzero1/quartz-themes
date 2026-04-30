@@ -6339,8 +6339,10 @@ html[saved-theme="light"] body sup {
 }
 `,
   classSettings: {
-    "text-justify": `body.text-justify .mod-cm6 .cm-editor .cm-line, body.text-justify p:not([align="right"]):not([align="left"]), body.text-justify li, body.text-justify ol {
+    "text-justify": {
+      general: `body.text-justify .mod-cm6 .cm-editor .cm-line, body.text-justify p:not([align="right"]):not([align="left"]), body.text-justify li, body.text-justify ol {
 text-align: justify;
 }`,
+    },
   },
 };

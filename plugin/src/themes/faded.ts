@@ -11177,19 +11177,28 @@ html body ul.tags > li {
   },
   light: {},
   classSettings: {
-    "font-Cuprum": `body.font-Cuprum {
+    "font-Cuprum": {
+      general: `body.font-Cuprum {
 --font: "Cuprum";
 }`,
-    "font-Kreon": `body.font-Kreon {
+    },
+    "font-Kreon": {
+      general: `body.font-Kreon {
 --font: "Kreon";
 }`,
-    "font-Roboto-Condensed": `body.font-Roboto-Condensed {
+    },
+    "font-Roboto-Condensed": {
+      general: `body.font-Roboto-Condensed {
 --font: "Roboto Condensed";
 }`,
-    "font-Gemunu-Libre": `body.font-Gemunu-Libre {
+    },
+    "font-Gemunu-Libre": {
+      general: `body.font-Gemunu-Libre {
 --font: "Gemunu Libre";
 }`,
-    gradientBulletPointLines: `.gradientBulletPointLines li {
+    },
+    gradientBulletPointLines: {
+      general: `.gradientBulletPointLines li {
 border-image:linear-gradient(-180deg, var(--custom-red-900) 0%, var(--custom-red-900) 5%, var(--custom-red-700) 50%, var(--custom-red-700) 100%) 1;
 }
 
@@ -11200,7 +11209,9 @@ border-image:linear-gradient(-180deg, var(--custom-red-700) 0%, var(--custom-red
 .gradientBulletPointLines li:nth-child(even):last-child {
 border-image:linear-gradient(-180deg, var(--custom-red-700) 0%, var(--custom-red-700) 5%, var(--custom-grey-250) 25%, var(--custom-grey-250) 75%, var(--custom-grey-250) 95%, var(--custom-grey-250) 100%) 1;
 }`,
-    headerIcons: `.headerIcons .markdown-preview-view h1:before, .headerIcons .cm-header.cm-header-1:not(.cm-formatting-header):not(.cm-formatting):before {
+    },
+    headerIcons: {
+      general: `.headerIcons .markdown-preview-view h1:before, .headerIcons .cm-header.cm-header-1:not(.cm-formatting-header):not(.cm-formatting):before {
 font-family: var(--FA6Solid);
 content: "\\f2c7\\ ";
 }
@@ -11229,7 +11240,9 @@ content: "\\f2ca\\ ";
 font-family: var(--FA6Solid);
 content: "\\f2cb\\ ";
 }`,
-    folderIcons: `.folderIcons .nav-folder-children .nav-folder .nav-folder-title-content::before {
+    },
+    folderIcons: {
+      general: `.folderIcons .nav-folder-children .nav-folder .nav-folder-title-content::before {
 content: '\\e801';
 color: var(--custom-folder-icon-open);
 }
@@ -11250,7 +11263,9 @@ color: var(--custom-folder-icon-open);
 .folderIcons .file-tree-plugin-view .oz-folder-element:hover .oz-icon-div::before {
 color: var(--custom-folder-icon-hover);
 }`,
-    fileIcons: `.fileIcons .nav-file-icon::before {
+    },
+    fileIcons: {
+      general: `.fileIcons .nav-file-icon::before {
 content: '\\e800';
 text-align: center;
 color: var(--custom-file-icon);
@@ -11280,7 +11295,9 @@ color: var(--custom-file-icon);
 .fileIcons .file-tree-plugin-view .oz-nav-file-title:hover .oz-nav-file-title-content::before {
 color: var(--custom-file-icon-hover);
 }`,
-    vaultTitle: `.vaultTitle .nav-folder.mod-root > .nav-folder-title {
+    },
+    vaultTitle: {
+      general: `.vaultTitle .nav-folder.mod-root > .nav-folder-title {
 border-left: 5px solid var(--custom-background-tertiary);
 border-top: 5px solid var(--interactive-accent);
 border-right: 5px solid var(--interactive-accent);
@@ -11300,7 +11317,9 @@ position: relative;
 margin-left: -12px;
 margin-right: -12px;
 }`,
-    stackedPanes: `.stackedPanes .mod-root.workspace-split.mod-vertical .mod-stacked > .workspace-tab-container {
+    },
+    stackedPanes: {
+      general: `.stackedPanes .mod-root.workspace-split.mod-vertical .mod-stacked > .workspace-tab-container {
 --unstacked-tabs-header-width: 6px;
 /* <- 36px is the header height in the default theme */
 }
@@ -11474,5 +11493,6 @@ left: calc(var(--unstacked-tabs-header-width) * 9);
 /* width: calc((700px + var(--unstacked-tabs-header-width)) * 20); */
 /* right: 0!important; */
 }`,
+    },
   },
 };

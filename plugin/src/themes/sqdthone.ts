@@ -4398,7 +4398,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "style-default": `.style-default {
+    "style-default": {
+      dark: `.style-default {
 /* Colors for dark Theme */
 --color-white: var(--day3);
 --color-pink: var(--pink5);
@@ -4501,8 +4502,8 @@ html[saved-theme="light"] body ul.tags > li {
 --color-text-h4: var(--color-blue);
 --color-text-h5: var(--color-purple);
 --color-text-h6: var(--color-yellow);
-}
-.style-default {
+}`,
+      light: `.style-default {
 /* Colors for light Theme */
 --color-white: var(--day2);
 --color-pink: var(--pink2);
@@ -4606,7 +4607,9 @@ html[saved-theme="light"] body ul.tags > li {
 --color-text-h5: var(--color-purple);
 --color-text-h6: var(--color-orange);
 }`,
-    "style-solar": `.style-solar .prompt {
+    },
+    "style-solar": {
+      general: `.style-solar .prompt {
 background-color: hsl(var(--color-base-0));
 }
 
@@ -4661,8 +4664,8 @@ background-color: hsl(var(--color-base-2));
 
 .style-solar #calendar-container .week-num {
 background-color: hsl(var(--color-base-2));
-}
-.style-solar {
+}`,
+      dark: `.style-solar {
 /* Colors for solar dark */
 --color-white: 60, 20%, 95%;
 --color-pink: 331, 64%, 52%;
@@ -4765,8 +4768,8 @@ background-color: hsl(var(--color-base-2));
 --color-text-h4: var(--color-green);
 --color-text-h5: var(--color-purple);
 --color-text-h6: var(--color-pink);
-}
-.style-solar {
+}`,
+      light: `.style-solar {
 /* Colors for solar light */
 --color-white: 60, 20%, 95%;
 --color-pink: 331, 64%, 52%;
@@ -4870,7 +4873,9 @@ background-color: hsl(var(--color-base-2));
 --color-text-h5: var(--color-purple);
 --color-text-h6: var(--color-orange);
 }`,
-    "style-colorless": `.style-colorless {
+    },
+    "style-colorless": {
+      dark: `.style-colorless {
 /* Colors for colorless dark */
 --color-white: 0, 0%, 94.9%;
 --color-pink: 0, 0%, 83.14%;
@@ -4973,8 +4978,8 @@ background-color: hsl(var(--color-base-2));
 --color-text-h4: var(--color-cyan);
 --color-text-h5: 0, 0%, 47.06%;
 --color-text-h6: var(--color-purple);
-}
-.style-colorless {
+}`,
+      light: `.style-colorless {
 /* Colors for colorless light */
 --color-white: 0, 0%, 94.9%;
 --color-pink: 0, 0%, 83.14%;
@@ -5106,7 +5111,9 @@ color: hsl(var(--color-alternate));
 text-decoration: underline;
 text-decoration-color: hsl(var(--color-alternate));
 }`,
-    "headers-low": `.style-default.headers-low {
+    },
+    "headers-low": {
+      dark: `.style-default.headers-low {
 --color-text-title: var(--color-orange);
 --color-text-h1: var(--color-orange);
 --color-text-h2: var(--color-orange);
@@ -5144,8 +5151,8 @@ text-decoration-color: hsl(var(--color-alternate));
 --color-text-h4: var(--color-base-5);
 --color-text-h5: var(--color-base-5);
 --color-text-h6: var(--color-base-5);
-}
-.style-default.headers-low {
+}`,
+      light: `.style-default.headers-low {
 --color-text-title: var(--color-purple);
 --color-text-h1: var(--color-cyan);
 --color-text-h2: var(--color-cyan);
@@ -5184,7 +5191,9 @@ text-decoration-color: hsl(var(--color-alternate));
 --color-text-h5: var(--color-base-5);
 --color-text-h6: var(--color-base-5);
 }`,
-    "headers-default": `.style-default.headers-default {
+    },
+    "headers-default": {
+      dark: `.style-default.headers-default {
 --color-text-title: var(--color-pink);
 --color-text-h1: var(--color-orange);
 --color-text-h2: var(--color-orange);
@@ -5222,8 +5231,8 @@ text-decoration-color: hsl(var(--color-alternate));
 --color-text-h4: var(--color-green);
 --color-text-h5: var(--color-green);
 --color-text-h6: var(--color-green);
-}
-.style-default.headers-default {
+}`,
+      light: `.style-default.headers-default {
 --color-text-title: var(--color-purple);
 --color-text-h1: var(--color-cyan);
 --color-text-h2: var(--color-cyan);
@@ -5262,7 +5271,9 @@ text-decoration-color: hsl(var(--color-alternate));
 --color-text-h5: var(--color-blue);
 --color-text-h6: var(--color-blue);
 }`,
-    "headers-high": `.style-default.headers-high {
+    },
+    "headers-high": {
+      dark: `.style-default.headers-high {
 --color-text-title: var(--color-pink);
 --color-text-h1: var(--color-red);
 --color-text-h2: var(--color-orange);
@@ -5300,8 +5311,8 @@ text-decoration-color: hsl(var(--color-alternate));
 --color-text-h4: var(--color-green);
 --color-text-h5: var(--color-purple);
 --color-text-h6: var(--color-pink);
-}
-.style-default.headers-high {
+}`,
+      light: `.style-default.headers-high {
 --color-text-title: var(--color-pink);
 --color-text-h1: var(--color-green);
 --color-text-h2: var(--color-teal);
@@ -5340,10 +5351,14 @@ text-decoration-color: hsl(var(--color-alternate));
 --color-text-h5: var(--color-purple);
 --color-text-h6: var(--color-orange);
 }`,
-    "sQdthOne-left-hand-close-tab": `.sQdthOne-left-hand-close-tab .workspace-tab-header-inner-close-button {
+    },
+    "sQdthOne-left-hand-close-tab": {
+      general: `.sQdthOne-left-hand-close-tab .workspace-tab-header-inner-close-button {
 order: -1;
 }`,
-    "sQdthOne-center-headers": `h1 .sQdthOne-center-headers, .markdown-rendered h1 .sQdthOne-center-headers, .HyperMD-header-1 .sQdthOne-center-headers, .HyperMD-list-line .cm-header-1 .sQdthOne-center-headers, .cm-header-1.cm-header-1 .sQdthOne-center-headers, .markdown-preview-section h1 .sQdthOne-center-headers {
+    },
+    "sQdthOne-center-headers": {
+      general: `h1 .sQdthOne-center-headers, .markdown-rendered h1 .sQdthOne-center-headers, .HyperMD-header-1 .sQdthOne-center-headers, .HyperMD-list-line .cm-header-1 .sQdthOne-center-headers, .cm-header-1.cm-header-1 .sQdthOne-center-headers, .markdown-preview-section h1 .sQdthOne-center-headers {
 align-content: center;
 }
 
@@ -5366,7 +5381,9 @@ align-content: center;
 h6 .sQdthOne-center-headers, .markdown-rendered h6 .sQdthOne-center-headers, .HyperMD-header-6 .sQdthOne-center-headers, .HyperMD-list-line .cm-header-6 .sQdthOne-center-headers, .cm-header-6 .sQdthOne-center-headers, .markdown-preview-section h6 .sQdthOne-center-headers {
 align-content: center;
 }`,
-    "sQdthOne-hide-view-header-title": `.sQdthOne-hide-view-header-title .view-header-title {
+    },
+    "sQdthOne-hide-view-header-title": {
+      general: `.sQdthOne-hide-view-header-title .view-header-title {
 font-size: 0px;
 }
 
@@ -5377,7 +5394,9 @@ font-size: 0px;
 .sQdthOne-hide-view-header-title .view-header-breadcrumb-separator {
 font-size: 0px;
 }`,
-    "sQdthOne-hide-folder-icons": `.sQdthOne-hide-folder-icons .nav-folder-title-content {
+    },
+    "sQdthOne-hide-folder-icons": {
+      general: `.sQdthOne-hide-folder-icons .nav-folder-title-content {
 margin-left: -15px !important;
 padding-left: 0px !important;
 }
@@ -5393,5 +5412,6 @@ margin: 0 0 0 0;
 padding: 0 0 0 0;
 margin: 0 0 0 0;
 }`,
+    },
   },
 };

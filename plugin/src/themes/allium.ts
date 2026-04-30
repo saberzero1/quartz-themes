@@ -3673,7 +3673,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "check-color": `.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=X] [class^=cm-list]:not(.cm-formatting-task), .check-color ul > li[data-task=X].task-list-item.is-checked {
+    "check-color": {
+      general: `.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=X] [class^=cm-list]:not(.cm-formatting-task), .check-color ul > li[data-task=X].task-list-item.is-checked {
 color: var(--text-faint);
 }
 
@@ -3820,7 +3821,9 @@ color: rgb(var(--chbx-B));
 .check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=s] [class^=cm-list]:not(.cm-formatting-task), .check-color ul > li[data-task=s].task-list-item.is-checked {
 color: rgb(var(--chbx-d));
 }`,
-    "check-bg": `.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task=X], .check-bg :is(ul, ol) > li[data-task=X].task-list-item.is-checked {
+    },
+    "check-bg": {
+      general: `.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task=X], .check-bg :is(ul, ol) > li[data-task=X].task-list-item.is-checked {
 background: rgba(var(--chbx-R), 20%);
 }
 
@@ -3967,74 +3970,115 @@ background: rgba(var(--txt), 20%);
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task=s], .check-bg :is(ul, ol) > li[data-task=s].task-list-item.is-checked {
 background: rgba(var(--chbx-d), 20%);
 }`,
-    "check-strike": `.check-strike .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:not([data-task=" "]), .check-strike .markdown-preview-view ul > li.task-list-item.is-checked, .check-strike .markdown-preview-view ol > li.task-list-item.is-checked {
+    },
+    "check-strike": {
+      general: `.check-strike .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:not([data-task=" "]), .check-strike .markdown-preview-view ul > li.task-list-item.is-checked, .check-strike .markdown-preview-view ol > li.task-list-item.is-checked {
 --checklist-done-decoration: line-through 2px;
 text-decoration: var(--checklist-done-decoration);
 }`,
-    "checkbox-strike-regular": `.checkbox-strike-regular .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=x], .checkbox-strike-regular ul li[data-task=x].task-list-item.is-checked {
+    },
+    "checkbox-strike-regular": {
+      general: `.checkbox-strike-regular .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=x], .checkbox-strike-regular ul li[data-task=x].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-checked": `.checkbox-strike-checked .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=X], .checkbox-strike-checked ul li[data-task=X].task-list-item.is-checked {
+    },
+    "checkbox-strike-checked": {
+      general: `.checkbox-strike-checked .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=X], .checkbox-strike-checked ul li[data-task=X].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-dropped": `.checkbox-strike-dropped .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"], .checkbox-strike-dropped ul li[data-task="-"].task-list-item.is-checked {
+    },
+    "checkbox-strike-dropped": {
+      general: `.checkbox-strike-dropped .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"], .checkbox-strike-dropped ul li[data-task="-"].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-frwd": `.checkbox-strike-frwd .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=">"], .checkbox-strike-frwd ul li[data-task=">"].task-list-item.is-checked {
+    },
+    "checkbox-strike-frwd": {
+      general: `.checkbox-strike-frwd .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=">"], .checkbox-strike-frwd ul li[data-task=">"].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-bkwd": `.checkbox-strike-bkwd .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="<"], .checkbox-strike-bkwd ul li[data-task="<"].task-list-item.is-checked {
+    },
+    "checkbox-strike-bkwd": {
+      general: `.checkbox-strike-bkwd .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="<"], .checkbox-strike-bkwd ul li[data-task="<"].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-date": `.checkbox-strike-date .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=D], .checkbox-strike-date ul li[data-task=D].task-list-item.is-checked {
+    },
+    "checkbox-strike-date": {
+      general: `.checkbox-strike-date .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=D], .checkbox-strike-date ul li[data-task=D].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-q": `.checkbox-strike-q .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="?"], .checkbox-strike-q ul li[data-task="?"].task-list-item.is-checked {
+    },
+    "checkbox-strike-q": {
+      general: `.checkbox-strike-q .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="?"], .checkbox-strike-q ul li[data-task="?"].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }
 
 .checkbox-strike-quot .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=Q], .checkbox-strike-quot ul li[data-task=Q].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-half": `.checkbox-strike-half .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="/"], .checkbox-strike-half ul li[data-task="/"].task-list-item.is-checked {
+    },
+    "checkbox-strike-half": {
+      general: `.checkbox-strike-half .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="/"], .checkbox-strike-half ul li[data-task="/"].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-add": `.checkbox-strike-add .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="+"], .checkbox-strike-add ul li[data-task="+"].task-list-item.is-checked {
+    },
+    "checkbox-strike-add": {
+      general: `.checkbox-strike-add .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="+"], .checkbox-strike-add ul li[data-task="+"].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-rsrch": `.checkbox-strike-rsrch .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=R], .checkbox-strike-rsrch ul li[data-task=R].task-list-item.is-checked {
+    },
+    "checkbox-strike-rsrch": {
+      general: `.checkbox-strike-rsrch .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=R], .checkbox-strike-rsrch ul li[data-task=R].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-imp": `.checkbox-strike-imp .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="!"], .checkbox-strike-imp ul li[data-task="!"].task-list-item.is-checked {
+    },
+    "checkbox-strike-imp": {
+      general: `.checkbox-strike-imp .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="!"], .checkbox-strike-imp ul li[data-task="!"].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-idea": `.checkbox-strike-idea .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=i], .checkbox-strike-idea ul li[data-task=i].task-list-item.is-checked {
+    },
+    "checkbox-strike-idea": {
+      general: `.checkbox-strike-idea .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=i], .checkbox-strike-idea ul li[data-task=i].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-brn": `.checkbox-strike-brn .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=B], .checkbox-strike-brn ul li[data-task=B].task-list-item.is-checked {
+    },
+    "checkbox-strike-brn": {
+      general: `.checkbox-strike-brn .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=B], .checkbox-strike-brn ul li[data-task=B].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-pro": `.checkbox-strike-pro .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=P], .checkbox-strike-pro ul li[data-task=P].task-list-item.is-checked {
+    },
+    "checkbox-strike-pro": {
+      general: `.checkbox-strike-pro .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=P], .checkbox-strike-pro ul li[data-task=P].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-con": `.checkbox-strike-con .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=C], .checkbox-strike-con ul li[data-task=C].task-list-item.is-checked {
+    },
+    "checkbox-strike-con": {
+      general: `.checkbox-strike-con .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=C], .checkbox-strike-con ul li[data-task=C].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }
 
 .checkbox-strike-conf .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="~"], .checkbox-strike-conf ul li[data-task="~"].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-quot": `.checkbox-strike-quot .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=Q], .checkbox-strike-quot ul li[data-task=Q].task-list-item.is-checked {
+    },
+    "checkbox-strike-quot": {
+      general: `.checkbox-strike-quot .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=Q], .checkbox-strike-quot ul li[data-task=Q].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-book": `.checkbox-strike-book .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=b], .checkbox-strike-book ul li[data-task=b].task-list-item.is-checked {
+    },
+    "checkbox-strike-book": {
+      general: `.checkbox-strike-book .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=b], .checkbox-strike-book ul li[data-task=b].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-info": `.checkbox-strike-info .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=I], .checkbox-strike-info ul li[data-task=I].task-list-item.is-checked {
+    },
+    "checkbox-strike-info": {
+      general: `.checkbox-strike-info .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=I], .checkbox-strike-info ul li[data-task=I].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
-    "checkbox-strike-para": `.checkbox-strike-para .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=p], .checkbox-strike-para ul li[data-task=p].task-list-item.is-checked {
+    },
+    "checkbox-strike-para": {
+      general: `.checkbox-strike-para .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=p], .checkbox-strike-para ul li[data-task=p].task-list-item.is-checked {
 text-decoration: line-through 2px;
 }`,
+    },
   },
 };

@@ -1906,7 +1906,8 @@ html body ul.tags > li {
   },
   light: {},
   classSettings: {
-    "a-theme-apatheia": `.a-theme-apatheia {
+    "a-theme-apatheia": {
+      dark: `.a-theme-apatheia {
 color-scheme: dark;
 --highlight-mix-blend-mode: lighten;
 --mono-rgb-0: 0, 0, 0;
@@ -2010,7 +2011,9 @@ color-scheme: dark;
 --graph-node-tag: var(--ap-secondary);
 --graph-node-attachment: var(--color-yellow);
 }`,
-    "a-theme-purple": `.a-theme-purple {
+    },
+    "a-theme-purple": {
+      dark: `.a-theme-purple {
 --ap-primary-h: 15;
 --ap-primary-s: 64%;
 --ap-primary-l: 88%;
@@ -2173,7 +2176,9 @@ color-scheme: dark;
 --graph-node-tag: var(--ap-secondary);
 --graph-node-attachment: var(--color-yellow);
 }`,
-    "a-catpuccin-mocha": `.a-catpuccin-mocha {
+    },
+    "a-catpuccin-mocha": {
+      dark: `.a-catpuccin-mocha {
 --ap-primary-h: 15.3846153846deg;
 --ap-primary-s: 63.9344262295%;
 --ap-primary-l: 88.0392156863%;
@@ -2337,7 +2342,9 @@ color-scheme: dark;
 --graph-node-tag: var(--ap-secondary);
 --graph-node-attachment: var(--color-yellow);
 }`,
-    "a-catpuccin-espresso": `.a-catpuccin-espresso {
+    },
+    "a-catpuccin-espresso": {
+      dark: `.a-catpuccin-espresso {
 --ap-primary-h: 15.3846153846deg;
 --ap-primary-s: 63.9344262295%;
 --ap-primary-l: 88.0392156863%;
@@ -2501,7 +2508,9 @@ color-scheme: dark;
 --graph-node-tag: var(--ap-secondary);
 --graph-node-attachment: var(--color-yellow);
 }`,
-    "a-winter": `.a-winter {
+    },
+    "a-winter": {
+      dark: `.a-winter {
 --ap-primary-h: 211.3636363636deg;
 --ap-primary-s: 100%;
 --ap-primary-l: 91.3725490196%;
@@ -2665,7 +2674,9 @@ color-scheme: dark;
 --graph-node-tag: var(--ap-secondary);
 --graph-node-attachment: var(--color-yellow);
 }`,
-    glassMorphism: `.glassMorphism #calendar-container, .glassMorphism .view-header, .glassMorphism .nav-folder.mod-root, .glassMorphism .nav-header .nav-buttons-container, .glassMorphism .workspace-split.mod-root .view-content {
+    },
+    glassMorphism: {
+      general: `.glassMorphism #calendar-container, .glassMorphism .view-header, .glassMorphism .nav-folder.mod-root, .glassMorphism .nav-header .nav-buttons-container, .glassMorphism .workspace-split.mod-root .view-content {
 background: linear-gradient(120deg, var(--ap-color-dp1), var(--ap-color-dp2), 70%, var(--ap-color-dp1));
 border: 1px solid rgba(255, 255, 255, 0.25);
 box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
@@ -2676,7 +2687,9 @@ backdrop-filter: blur(15px);
 background: transparent;
 backdrop-filter: blur(15px);
 }`,
-    smoothIndent: `.smoothIndent .is-live-preview .cm-widgetBuffer + .cm-header {
+    },
+    smoothIndent: {
+      general: `.smoothIndent .is-live-preview .cm-widgetBuffer + .cm-header {
 animation: outdent 275ms ease-out;
 display: inline-block;
 }
@@ -2689,11 +2702,16 @@ animation: opac 275ms ease-in;
 animation: indent 275ms ease-out;
 display: inline-block;
 }`,
-    Fade: `.modal, .snw-ref-title-popover, .menu, .popover, .prompt, .workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) .view-content {
+    },
+    Fade: {
+      general: `.modal, .snw-ref-title-popover, .menu, .popover, .prompt, .workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) .view-content {
 animation: 0.2s fade cubic-bezier(0.645, 0.045, 0.355, 1);
 }`,
-    Hover: `.Hover * {
+    },
+    Hover: {
+      general: `.Hover * {
 transition: background-color 0.1s ease-in;
 }`,
+    },
   },
 };

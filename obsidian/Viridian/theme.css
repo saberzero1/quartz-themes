@@ -497,13 +497,9 @@
   --vr-sidebar-border-width: 1px;
   --vr-workspace-tab-padding: 2px;
   --vr-header-hori-padding: 8px;
-  --vr-callout-padding: 0;
+  --vr-callout-padding: 5px;
   --vr-statusbar-item-padding: 6px;
   --vr-scrollbar-thickness: 6px;
-  --callout-border-width: 0px;
-  --callout-border-opacity: 0;
-  --callout-padding: 0;
-  --callout-radius: var(--size-4-2);
   /* Animation */
   --vr-duration-normal: 200ms;
   --vr-animation-smooth: cubic-bezier(0.45,0.05,0.55,0.95);
@@ -665,7 +661,6 @@
   --background-modifier-error-rgb: #000000;
   --background-modifier-error-hover: #000000;
   --background-modifier-cover: #9e989280;
-  --blockquote-background-color: var(--background-secondary-alt);
   /* Scrollbars */
   --scrollbar-active-thumb-bg: rgba(var(--vr-accent-hover-r), var(--vr-accent-hover-g), var(--vr-accent-hover-b), 0.5);
   --vr-scrollbar-hover-thumb-bg: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), 0.5);
@@ -841,7 +836,6 @@ button,
 .view-header-title,
 .mod-settings .vertical-tab-content-container {
   font-family: var(--vr-font-ui);
-  font-weight: var(--font-medium);
 }
 
 /* Main Body - Reading Mode */
@@ -850,13 +844,11 @@ button,
 .vertical-tab-content-container,
 .workspace-leaf-content[data-type=markdown] {
   font-family: var(--vr-font-body);
-  font-weight: var(--font-medium);
 }
 
 /* Main Body - Edit Mode */
 .markdown-source-view .cm-line {
   font-family: var(--vr-font-editor);
-  font-weight: var(--font-medium);
 }
 
 /* Headers - Reading Mode */
@@ -948,16 +940,15 @@ code[class*=language-],
 }
 
 /* --- CODEBLOCKS --- */
-/*
-pre[class*="language-"] {
-    padding: 0px;
-    background: none;
+pre[class*=language-] {
+  padding: 0px;
+  background: none !important;
 }
 
-code[class*="language-"] {
-    background-color: var(--background-secondary);
+code[class*=language-] {
+  background-color: var(--background-secondary) !important;
 }
-*/
+
 /* --- SIDEBAR --- */
 /* Sidebar Buttons */
 .side-dock-ribbon-action {
@@ -1108,14 +1099,14 @@ in the future. */
 /* --- CALLOUTS --- */
 .callout {
   /* General Styling */
+  border: 0px;
   /* Roundness */
   /* Colouring & Icons */
 }
 .callout .callout-title {
-  flex-direction: row;
-  justify-content: space-between;
-  border-top-left-radius: var(--callout-radius);
-  border-top-right-radius: var(--callout-radius);
+  padding: var(--vr-callout-padding) 10px;
+  border-top-left-radius: var(--vr-border-radius-normal);
+  border-top-right-radius: var(--vr-border-radius-normal);
   transition: border-radius var(--vr-duration-normal) var(--vr-animation-smooth);
   gap: 5px;
   /* Layout */
@@ -1254,7 +1245,7 @@ you actually know it, please let me know.
 
 /* --- HORIZONTAL RULES --- */
 .markdown-preview-view hr::after {
-  content: var("--vr-hr-sym");
+  content: var(--vr-hr-sym);
   display: inline-block;
   position: absolute;
   left: 50%;
@@ -1408,12 +1399,10 @@ body:not(.native-scrollbars) .workspace-leaf ::-webkit-scrollbar-thumb:hover {
 
 /* --- BLOCKQUOTES --- */
 .el-blockquote blockquote {
-  background: var(--blockquote-background-color);
+  background: var(--background-secondary);
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
 }
 
 /* --- SEARCH AND REPLACE --- */

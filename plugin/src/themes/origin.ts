@@ -3389,18 +3389,24 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "hide-tabs": `.hide-tabs .workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
+    "hide-tabs": {
+      general: `.hide-tabs .workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
 display: none;
 }`,
-    "show-tabs": `.show-tabs .workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
+    },
+    "show-tabs": {
+      general: `.show-tabs .workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
 height: var(--header-height);
 }
 
 .show-tabs .workspace-tab-header-container:not(:has([data-type="file-explorer"])) >* {
 opacity: 1;
 }`,
-    "frontmatter-properties": `.frontmatter-properties .frontmatter.language-yaml {
+    },
+    "frontmatter-properties": {
+      general: `.frontmatter-properties .frontmatter.language-yaml {
 display: none !important;
 }`,
+    },
   },
 };

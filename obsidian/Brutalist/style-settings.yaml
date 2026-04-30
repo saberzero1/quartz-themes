@@ -111,6 +111,11 @@ settings:
     type: variable-color
     format: hex
     default: '#000000'
+  - id: footnote-color-light-custom
+    title: Footnote Link Colour (Light Mode)
+    type: variable-color
+    format: hex
+    default: '#ff7700'
   - id: section-typography-dark
     title: Dark Mode Font Colours
     type: heading
@@ -161,3 +166,8 @@ settings:
     type: variable-color
     format: hex
     default: '#a0a0a0'
+  - id: footnote-color-dark-custom
+    title: Footnote Link Colour (Dark Mode)
+    type: variable-color
+    format: hex
+    default: '#448494'

@@ -1728,6 +1728,8 @@ body.theme-light.plugin-sliding-panes .workspace > .mod-root > .workspace-leaf .
     font-family: "JetBrains Mono";
 }
 
+
+
 body.styled-scrollbars ::-webkit-scrollbar {
     background: var(--scrollbar-bg);
     background-color: var(--scrollbar-bg);

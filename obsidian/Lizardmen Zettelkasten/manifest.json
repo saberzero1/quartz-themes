@@ -1,5 +1,6 @@
 {
-  "name": "Lizardmen Zettelkasten",
-  "version": "1.0.0",
-  "minAppVersion": "0.11.0"
+    "name": "Lizardmen Zettelkasten",
+    "version": "0.0.0",
+    "minAppVersion": "0.16.0",
+    "author": "lizardmenfromspace"
 }

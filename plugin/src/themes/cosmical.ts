@@ -3802,37 +3802,48 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "subtheme-ocean": `.subtheme-ocean {
+    "subtheme-ocean": {
+      general: `.subtheme-ocean {
 --theme-color-1-chroma:0.15;
 --theme-color-1-hue:262;
 --theme-color-2-chroma:0.15;
 --theme-color-2-hue:70;
 }`,
-    "subtheme-forest": `.subtheme-forest {
+    },
+    "subtheme-forest": {
+      general: `.subtheme-forest {
 --theme-color-1-chroma:0.14;
 --theme-color-1-hue:155;
 --theme-color-2-chroma:0.14;
 --theme-color-2-hue:40;
 }`,
-    "subtheme-twilight": `.subtheme-twilight {
+    },
+    "subtheme-twilight": {
+      general: `.subtheme-twilight {
 --theme-color-1-chroma:0.16;
 --theme-color-1-hue:285;
 --theme-color-2-chroma:0.13;
 --theme-color-2-hue:260;
 }`,
-    "subtheme-sunset": `.subtheme-sunset {
+    },
+    "subtheme-sunset": {
+      general: `.subtheme-sunset {
 --theme-color-1-chroma:0.18;
 --theme-color-1-hue:0;
 --theme-color-2-chroma:0.16;
 --theme-color-2-hue:25;
 }`,
-    "subtheme-night": `.subtheme-night {
+    },
+    "subtheme-night": {
+      general: `.subtheme-night {
 --theme-color-1-chroma:0.06;
 --theme-color-1-hue:205;
 --theme-color-2-chroma:0.18;
 --theme-color-2-hue:145;
 }`,
-    "colored-headings": `.colored-headings .HyperMD-header-1, .colored-headings .HyperMD-header-2, .colored-headings .HyperMD-header-3, .colored-headings .HyperMD-header-4, .colored-headings .HyperMD-header-5, .colored-headings .HyperMD-header-6, .colored-headings h1, .colored-headings h2, .colored-headings h3, .colored-headings h4, .colored-headings h5, .colored-headings h6 {
+    },
+    "colored-headings": {
+      general: `.colored-headings .HyperMD-header-1, .colored-headings .HyperMD-header-2, .colored-headings .HyperMD-header-3, .colored-headings .HyperMD-header-4, .colored-headings .HyperMD-header-5, .colored-headings .HyperMD-header-6, .colored-headings h1, .colored-headings h2, .colored-headings h3, .colored-headings h4, .colored-headings h5, .colored-headings h6 {
 color:var(--theme-color-1-high);
 }
 
@@ -3844,7 +3855,9 @@ color:var(--theme-color-1-high);
 body.colored-headings {
 --nn-theme-file-selected-name-color:var(--theme-color-1-high);
 }`,
-    "wider-callouts": `.wider-callouts {
+    },
+    "wider-callouts": {
+      general: `.wider-callouts {
 --callout-padding:0.75em;
 }
 
@@ -3853,10 +3866,14 @@ padding-left:-.75em!important;
 translate:-.75em;
 width:calc(var(--file-line-width) + 1.5em);
 }`,
-    "custom-caret": `body.custom-caret {
+    },
+    "custom-caret": {
+      general: `body.custom-caret {
 --caret-color:var(--theme-color-1-normal);
 }`,
-    "headings-underline": `.headings-underline .HyperMD-header-1, .headings-underline .HyperMD-header-2, .headings-underline .HyperMD-header-3, .headings-underline .HyperMD-header-4, .headings-underline h1, .headings-underline h2, .headings-underline h3, .headings-underline h4 {
+    },
+    "headings-underline": {
+      general: `.headings-underline .HyperMD-header-1, .headings-underline .HyperMD-header-2, .headings-underline .HyperMD-header-3, .headings-underline .HyperMD-header-4, .headings-underline h1, .headings-underline h2, .headings-underline h3, .headings-underline h4 {
 text-decoration-color:var(--heading-underline-color);
 text-decoration-line:underline;
 }
@@ -3864,34 +3881,48 @@ text-decoration-line:underline;
 .headings-underline .HyperMD-header+* {
 padding-top:var(--size-2-2)!important;
 }`,
-    "centered-file-title": `body.centered-file-title {
+    },
+    "centered-file-title": {
+      general: `body.centered-file-title {
 --file-header-justify:center;
 }`,
-    "hide-file-title": `.hide-file-title-path .view-header-title-container .view-header-title-parent {
+    },
+    "hide-file-title": {
+      general: `.hide-file-title-path .view-header-title-container .view-header-title-parent {
 display:none;
 }
 
 .hide-file-title .view-header-title-container .view-header-title, .hide-file-title .view-header-title-container .view-header-title-parent {
 display:none;
 }`,
-    "hide-file-title-path": `.hide-file-title-path .view-header-title-container .view-header-title-parent {
+    },
+    "hide-file-title-path": {
+      general: `.hide-file-title-path .view-header-title-container .view-header-title-parent {
 display:none;
 }`,
-    "metadata-container-alt-separator": `.metadata-container-alt-separator .metadata-container {
+    },
+    "metadata-container-alt-separator": {
+      general: `.metadata-container-alt-separator .metadata-container {
 border-bottom:2px dashed var(--theme-color-1-transparent);
 margin-bottom:var(--size-4-2);
 padding-bottom:var(--size-4-4);
 }`,
-    "metadata-container-alt-outline": `.metadata-container-alt-outline .metadata-container {
+    },
+    "metadata-container-alt-outline": {
+      general: `.metadata-container-alt-outline .metadata-container {
 border:2px solid var(--background-modifier-border);
 border-radius:var(--radius-l);
 margin-bottom:var(--size-4-2);
 padding:var(--size-4-3) var(--size-4-4);
 }`,
-    "show-properties-label": `.show-properties-label .metadata-properties-heading {
+    },
+    "show-properties-label": {
+      general: `.show-properties-label .metadata-properties-heading {
 display:inline-block;
 }`,
-    "improve-multilist-ux": `.improve-multilist-ux .multi-select-pill .multi-select-pill-remove-button {
+    },
+    "improve-multilist-ux": {
+      general: `.improve-multilist-ux .multi-select-pill .multi-select-pill-remove-button {
 visibility:hidden;
 width:0;
 }
@@ -3900,5 +3931,6 @@ width:0;
 visibility:visible;
 width:auto;
 }`,
+    },
   },
 };

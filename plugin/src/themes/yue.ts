@@ -3037,4 +3037,11 @@ html[saved-theme="light"] body ul.tags > li {
   color: var(--tag-color, rgb(0, 74, 148));
 }`,
   },
+  classSettings: {
+    "mobile-black-background": {
+      dark: `body.is-mobile.mobile-black-background {
+--color-base-00: black;
+}`,
+    },
+  },
 };

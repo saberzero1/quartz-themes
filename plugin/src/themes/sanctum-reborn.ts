@@ -22257,4 +22257,2339 @@ html[saved-theme="light"] body ul.tags > li {
   color: var(--tag-color, rgb(246, 141, 69));
 }`,
   },
+  classSettings: {
+    "sanctum-default-light": {
+      light: `.sanctum-default-light {
+--color-accent-rgb: var(--custom-accent-color);
+--background: rgb(var(--gray-10));
+--background-hover: rgba(var(--gray-50), 0.12);
+--background-active: rgba(var(--gray-50), 0.32);
+--background-selected: rgba(var(--gray-50), 0.2);
+--background-selected-hover: rgba(var(--gray-50), 0.32);
+--background-inverse: rgb(var(--gray-80));
+--background-inverse-hover: rgba(var(--gray-70), 0.5);
+--layer-1: rgb(var(--white));
+--layer-2: rgb(var(--gray-10));
+--layer-hover-1: rgb(var(--gray-10));
+--layer-hover-2: rgba(var(--gray-20), 0.5);
+--layer-active-1: rgb(var(--gray-30));
+--layer-active-2: rgb(var(--gray-30));
+--layer-selected-1: rgb(var(--gray-20));
+--layer-selected-2: rgb(var(--gray-20));
+--layer-selected-hover-1: rgba(var(--gray-30), 0.5);
+--layer-selected-hover-2: rgba(var(--gray-30), 0.5);
+--field-1: rgb(var(--white));
+--field-hover-1: rgb(var(--gray-20));
+--border-subtle-0: rgb(var(--gray-20));
+--border-subtle-1: rgb(var(--gray-20));
+--border-subtle-2: rgb(var(--gray-20));
+--border-subtle-selected-1: rgb(var(--gray-30));
+--border-subtle-selected-2: rgb(var(--gray-30));
+--border-strong-1: rgb(var(--gray-50));
+--border-strong-2: rgb(var(--gray-50));
+--border-inverse: rgb(var(--gray-100));
+--text-code: var(--pink-60);
+--text-primary: rgb(var(--gray-100));
+--text-secondary: rgb(var(--gray-70));
+--text-placeholder: rgb(var(--gray-40));
+--icon-primary: rgb(var(--gray-100));
+--icon-secondary: rgb(var(--gray-70));
+--icon-on-color: rgb(var(--white));
+--icon-inverse: rgb(var(--white));
+--focus: var(--cyan-60);
+--focus-inset: rgb(var(--white));
+--focus-inverse: rgb(var(--white));
+--interactive: rgb(var(--color-accent-rgb));
+--highlight: rgba(var(--color-accent-rgb), 0.7);
+--overlay: rgba(var(--gray-100), 0.5);
+}
+
+.sanctum-default-light:not(.use-custom-accent) {
+--color-accent-rgb: var(--color-accent-rgb-l);
+}`,
+    },
+    "sanctum-contrast-light": {
+      light: `.sanctum-contrast-light {
+--color-accent-rgb: var(--custom-accent-color);
+--background: rgb(var(--gray-10));
+--background-hover: rgba(var(--gray-50), 0.12);
+--background-active: rgba(var(--gray-50), 0.32);
+--background-selected: rgba(var(--gray-50), 0.2);
+--background-selected-hover: rgba(var(--gray-50), 0.32);
+--background-inverse: rgb(var(--gray-80));
+--background-inverse-hover: rgba(var(--gray-70), 0.5);
+--layer-1: rgb(var(--white));
+--layer-2: rgb(var(--gray-10));
+--layer-hover-1: rgb(var(--gray-10));
+--layer-hover-2: rgba(var(--gray-20), 0.5);
+--layer-active-1: rgb(var(--gray-30));
+--layer-active-2: rgb(var(--gray-30));
+--layer-selected-1: rgb(var(--gray-20));
+--layer-selected-2: rgb(var(--gray-20));
+--layer-selected-hover-1: rgba(var(--gray-30), 0.5);
+--layer-selected-hover-2: rgba(var(--gray-30), 0.5);
+--field-1: rgb(var(--white));
+--field-hover-1: rgb(var(--gray-20));
+--border-subtle-0: rgb(var(--gray-20));
+--border-subtle-1: rgb(var(--gray-20));
+--border-subtle-2: rgb(var(--gray-20));
+--border-subtle-selected-1: rgb(var(--gray-30));
+--border-subtle-selected-2: rgb(var(--gray-30));
+--border-strong-1: rgb(var(--gray-50));
+--border-strong-2: rgb(var(--gray-50));
+--border-inverse: rgb(var(--gray-100));
+--text-code: var(--pink-60);
+--text-primary: rgb(var(--gray-100));
+--text-secondary: rgb(var(--gray-70));
+--text-placeholder: rgb(var(--gray-40));
+--icon-primary: rgb(var(--gray-100));
+--icon-secondary: rgb(var(--gray-70));
+--icon-on-color: rgb(var(--white));
+--icon-inverse: rgb(var(--white));
+--focus: var(--cyan-60);
+--focus-inset: rgb(var(--white));
+--focus-inverse: rgb(var(--white));
+--interactive: rgb(var(--color-accent-rgb));
+--highlight: rgba(var(--color-accent-rgb), 0.7);
+--overlay: rgba(var(--gray-100), 0.5);
+}
+
+.sanctum-contrast-light:not(.use-custom-accent) {
+--color-accent-rgb: var(--color-accent-rgb-l);
+}
+
+.sanctum-contrast-light {
+--background-primary: rgb(var(--white));
+}`,
+    },
+    "sanctum-white": {
+      light: `.sanctum-white {
+--color-accent-rgb: var(--custom-accent-color);
+--background: rgb(var(--gray-10));
+--background-hover: rgba(var(--gray-50), 0.12);
+--background-active: rgba(var(--gray-50), 0.32);
+--background-selected: rgba(var(--gray-50), 0.2);
+--background-selected-hover: rgba(var(--gray-50), 0.32);
+--background-inverse: rgb(var(--gray-80));
+--background-inverse-hover: rgba(var(--gray-70), 0.5);
+--layer-1: rgb(var(--white));
+--layer-2: rgb(var(--gray-10));
+--layer-hover-1: rgb(var(--gray-10));
+--layer-hover-2: rgba(var(--gray-20), 0.5);
+--layer-active-1: rgb(var(--gray-30));
+--layer-active-2: rgb(var(--gray-30));
+--layer-selected-1: rgb(var(--gray-20));
+--layer-selected-2: rgb(var(--gray-20));
+--layer-selected-hover-1: rgba(var(--gray-30), 0.5);
+--layer-selected-hover-2: rgba(var(--gray-30), 0.5);
+--field-1: rgb(var(--white));
+--field-hover-1: rgb(var(--gray-20));
+--border-subtle-0: rgb(var(--gray-20));
+--border-subtle-1: rgb(var(--gray-20));
+--border-subtle-2: rgb(var(--gray-20));
+--border-subtle-selected-1: rgb(var(--gray-30));
+--border-subtle-selected-2: rgb(var(--gray-30));
+--border-strong-1: rgb(var(--gray-50));
+--border-strong-2: rgb(var(--gray-50));
+--border-inverse: rgb(var(--gray-100));
+--text-code: var(--pink-60);
+--text-primary: rgb(var(--gray-100));
+--text-secondary: rgb(var(--gray-70));
+--text-placeholder: rgb(var(--gray-40));
+--icon-primary: rgb(var(--gray-100));
+--icon-secondary: rgb(var(--gray-70));
+--icon-on-color: rgb(var(--white));
+--icon-inverse: rgb(var(--white));
+--focus: var(--cyan-60);
+--focus-inset: rgb(var(--white));
+--focus-inverse: rgb(var(--white));
+--interactive: rgb(var(--color-accent-rgb));
+--highlight: rgba(var(--color-accent-rgb), 0.7);
+--overlay: rgba(var(--gray-100), 0.5);
+}
+
+.sanctum-white:not(.use-custom-accent) {
+--color-accent-rgb: var(--color-accent-rgb-l);
+}
+
+.sanctum-white {
+--background: rgb(var(--white));
+--layer-1: rgb(var(--gray-10));
+--layer-2: rgb(var(--white));
+--layer-hover-1: rgba(var(--gray-20), 0.5);
+--highlight: rgba(var(--color-accent-rgb), 0.7);
+--field-1: rgb(var(--gray-10));
+--field-hover-1: rgb(var(--white));
+}`,
+    },
+    "sanctum-default-dark": {
+      dark: `.sanctum-default-dark {
+--color-accent-rgb: var(--custom-accent-color);
+--background: rgb(var(--gray-100));
+--background-hover: rgba(var(--gray-50), 0.16);
+--background-active: rgba(var(--gray-50), 0.4);
+--background-selected: rgba(var(--gray-50), 0.24);
+--background-selected-hover: rgba(var(--gray-50), 0.32);
+--background-inverse: rgb(var(--gray-10));
+--background-inverse-hover: rgba(var(--gray-20), 0.5);
+--layer-1: rgb(var(--gray-90));
+--layer-2: rgb(var(--gray-80));
+--layer-hover-1: rgba(var(--gray-80), 0.5);
+--layer-hover-2: rgba(var(--gray-70), 0.5);
+--layer-active-1: rgb(var(--gray-70));
+--layer-active-2: rgb(var(--gray-60));
+--layer-selected-1: rgb(var(--gray-80));
+--layer-selected-2: rgb(var(--gray-70));
+--layer-selected-hover-1: rgba(var(--gray-70), 0.5);
+--layer-selected-hover-2: rgba(var(--gray-60), 0.5);
+--field-1: rgb(var(--gray-90));
+--field-hover-1: rgb(var(--gray-80));
+--border-subtle-0: rgb(var(--gray-80));
+--border-subtle-1: rgb(var(--gray-80));
+--border-subtle-2: rgb(var(--gray-70));
+--border-subtle-selected-1: rgb(var(--gray-70));
+--border-subtle-selected-2: rgb(var(--gray-60));
+--border-strong-1: rgb(var(--gray-60));
+--border-strong-2: rgb(var(--gray-50));
+--border-inverse: rgb(var(--gray-10));
+--text-code: var(--pink-50);
+--text-primary: rgb(var(--gray-10));
+--text-secondary: rgb(var(--gray-30));
+--text-placeholder: rgb(var(--gray-60));
+--icon-primary: rgb(var(--gray-10));
+--icon-secondary: rgb(var(--gray-30));
+--icon-on-color: rgb(var(--white));
+--icon-inverse: rgb(var(--gray-100));
+--focus: var(--cyan-60);
+--focus-inset: rgb(var(--gray-100));
+--focus-inverse: rgb(var(--white));
+--interactive: rgb(var(--color-accent-rgb));
+--highlight: rgba(var(--color-accent-rgb), 0.7);
+--overlay: rgba(var(--gray-100), 0.7);
+}
+
+.sanctum-default-dark:not(.use-custom-accent) {
+--color-accent-rgb: var(--color-accent-rgb-d);
+}`,
+    },
+    "sanctum-contrast-dark": {
+      dark: `.sanctum-contrast-dark {
+--color-accent-rgb: var(--custom-accent-color);
+--background: rgb(var(--gray-100));
+--background-hover: rgba(var(--gray-50), 0.16);
+--background-active: rgba(var(--gray-50), 0.4);
+--background-selected: rgba(var(--gray-50), 0.24);
+--background-selected-hover: rgba(var(--gray-50), 0.32);
+--background-inverse: rgb(var(--gray-10));
+--background-inverse-hover: rgba(var(--gray-20), 0.5);
+--layer-1: rgb(var(--gray-90));
+--layer-2: rgb(var(--gray-80));
+--layer-hover-1: rgba(var(--gray-80), 0.5);
+--layer-hover-2: rgba(var(--gray-70), 0.5);
+--layer-active-1: rgb(var(--gray-70));
+--layer-active-2: rgb(var(--gray-60));
+--layer-selected-1: rgb(var(--gray-80));
+--layer-selected-2: rgb(var(--gray-70));
+--layer-selected-hover-1: rgba(var(--gray-70), 0.5);
+--layer-selected-hover-2: rgba(var(--gray-60), 0.5);
+--field-1: rgb(var(--gray-90));
+--field-hover-1: rgb(var(--gray-80));
+--border-subtle-0: rgb(var(--gray-80));
+--border-subtle-1: rgb(var(--gray-80));
+--border-subtle-2: rgb(var(--gray-70));
+--border-subtle-selected-1: rgb(var(--gray-70));
+--border-subtle-selected-2: rgb(var(--gray-60));
+--border-strong-1: rgb(var(--gray-60));
+--border-strong-2: rgb(var(--gray-50));
+--border-inverse: rgb(var(--gray-10));
+--text-code: var(--pink-50);
+--text-primary: rgb(var(--gray-10));
+--text-secondary: rgb(var(--gray-30));
+--text-placeholder: rgb(var(--gray-60));
+--icon-primary: rgb(var(--gray-10));
+--icon-secondary: rgb(var(--gray-30));
+--icon-on-color: rgb(var(--white));
+--icon-inverse: rgb(var(--gray-100));
+--focus: var(--cyan-60);
+--focus-inset: rgb(var(--gray-100));
+--focus-inverse: rgb(var(--white));
+--interactive: rgb(var(--color-accent-rgb));
+--highlight: rgba(var(--color-accent-rgb), 0.7);
+--overlay: rgba(var(--gray-100), 0.7);
+}
+
+.sanctum-contrast-dark:not(.use-custom-accent) {
+--color-accent-rgb: var(--color-accent-rgb-d);
+}
+
+.sanctum-contrast-dark {
+--background: rgb(var(--gray-100));
+--background-secondary: rgb(var(--gray-90));
+--background-secondary-alt: rgb(var(--gray-90));
+}`,
+    },
+    "sanctum-black": {
+      dark: `.sanctum-black {
+--color-accent-rgb: var(--custom-accent-color);
+--background: rgb(var(--gray-100));
+--background-hover: rgba(var(--gray-50), 0.16);
+--background-active: rgba(var(--gray-50), 0.4);
+--background-selected: rgba(var(--gray-50), 0.24);
+--background-selected-hover: rgba(var(--gray-50), 0.32);
+--background-inverse: rgb(var(--gray-10));
+--background-inverse-hover: rgba(var(--gray-20), 0.5);
+--layer-1: rgb(var(--gray-90));
+--layer-2: rgb(var(--gray-80));
+--layer-hover-1: rgba(var(--gray-80), 0.5);
+--layer-hover-2: rgba(var(--gray-70), 0.5);
+--layer-active-1: rgb(var(--gray-70));
+--layer-active-2: rgb(var(--gray-60));
+--layer-selected-1: rgb(var(--gray-80));
+--layer-selected-2: rgb(var(--gray-70));
+--layer-selected-hover-1: rgba(var(--gray-70), 0.5);
+--layer-selected-hover-2: rgba(var(--gray-60), 0.5);
+--field-1: rgb(var(--gray-90));
+--field-hover-1: rgb(var(--gray-80));
+--border-subtle-0: rgb(var(--gray-80));
+--border-subtle-1: rgb(var(--gray-80));
+--border-subtle-2: rgb(var(--gray-70));
+--border-subtle-selected-1: rgb(var(--gray-70));
+--border-subtle-selected-2: rgb(var(--gray-60));
+--border-strong-1: rgb(var(--gray-60));
+--border-strong-2: rgb(var(--gray-50));
+--border-inverse: rgb(var(--gray-10));
+--text-code: var(--pink-50);
+--text-primary: rgb(var(--gray-10));
+--text-secondary: rgb(var(--gray-30));
+--text-placeholder: rgb(var(--gray-60));
+--icon-primary: rgb(var(--gray-10));
+--icon-secondary: rgb(var(--gray-30));
+--icon-on-color: rgb(var(--white));
+--icon-inverse: rgb(var(--gray-100));
+--focus: var(--cyan-60);
+--focus-inset: rgb(var(--gray-100));
+--focus-inverse: rgb(var(--white));
+--interactive: rgb(var(--color-accent-rgb));
+--highlight: rgba(var(--color-accent-rgb), 0.7);
+--overlay: rgba(var(--gray-100), 0.7);
+}
+
+.sanctum-black:not(.use-custom-accent) {
+--color-accent-rgb: var(--color-accent-rgb-d);
+}
+
+.sanctum-black {
+--background: rgb(var(--black));
+--layer-1: rgb(var(--gray-100));
+--layer-2: rgb(var(--gray-80));
+--layer-hover-1: rgba(var(--gray-90), 0.5);
+--layer-hover-2: rgba(var(--gray-80), 0.5);
+--layer-active-1: rgb(var(--gray-80));
+--layer-active-2: rgb(var(--gray-70));
+--layer-selected-1: rgb(var(--gray-90));
+--layer-selected-2: rgb(var(--gray-80));
+--layer-selected-hover-1: rgba(var(--gray-80), 0.5);
+--layer-selected-hover-2: rgba(var(--gray-70), 0.5);
+--field-1: rgb(var(--gray-100));
+--field-hover-1: rgb(var(--gray-90));
+--border-subtle-0: rgb(var(--gray-90));
+--border-subtle-1: rgb(var(--gray-90));
+--border-subtle-2: rgb(var(--gray-80));
+--border-subtle-selected-1: rgb(var(--gray-80));
+--border-subtle-selected-2: rgb(var(--gray-70));
+--border-strong-1: rgb(var(--gray-70));
+--border-strong-2: rgb(var(--gray-60));
+--text-code: var(--pink-60);
+--text-primary: rgb(var(--gray-30));
+--text-secondary: rgb(var(--gray-50));
+--text-placeholder: rgb(var(--gray-80));
+--highlight: rgba(var(--color-accent-rgb), 0.7);
+}`,
+    },
+    "aside-counter": {
+      general: `.aside-counter .callout[data-callout~=aside] .callout-content::before {
+content:counter(sidenote-counter) ".";
+position:relative;
+float:left;
+padding-right:4px;
+vertical-align:baseline;
+font-size:100%;
+font-weight:bold;
+}
+
+.aside-counter .el-div[data-callout~=aside]::after {
+content:counter(sidenote-counter);
+vertical-align:super;
+font-size:80%;
+font-weight:bold;
+}`,
+    },
+    "aside-border": {
+      general: `.aside-border .callout[data-callout-metadata~=right] {
+border-left:1px solid var(--aside-border-color);
+}
+
+.aside-border .callout[data-callout-metadata~=left] {
+border-right:1px solid var(--aside-border-color);
+}`,
+    },
+    "blockquote-marker": {
+      general: `.blockquote-marker .markdown-rendered blockquote {
+border-left:none;
+}
+
+.blockquote-marker .markdown-rendered blockquote::before {
+content:"";
+display:block;
+margin-bottom:4px;
+height:var(--blockquote-border-thickness);
+width:32px;
+background:var(--blockquote-border-color);
+background-size:16px 2px;
+}
+
+.blockquote-marker .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+border-left:none;
+}
+
+.blockquote-marker .markdown-source-view.mod-cm6 .cm-blockquote-border {
+border-left:none;
+}`,
+    },
+    "blockquote-border": {
+      general: `.blockquote-border .markdown-rendered blockquote {
+padding-top:16px;
+padding-bottom:16px;
+border-top:var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+border-bottom:var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+border-left:none;
+}
+
+.blockquote-border .markdown-rendered blockquote::before {
+content:none;
+width:0;
+background:none;
+}`,
+    },
+    "enable-alternative-checkboxes": {
+      general: `body.enable-alternative-checkboxes li.is-checked:where(li[data-task="*"],li[data-task=a],li[data-task=f],li[data-task=S],li[data-task="-"],li[data-task=">"],li[data-task="<"],li[data-task=l],li[data-task=B],li[data-task=X],li[data-task=n],li[data-task=p],li[data-task=c],li[data-task=w],li[data-task=b],li[data-task=I],li[data-task="!"],li[data-task="?"],li[data-task=i],li[data-task="/"],li[data-task=u],li[data-task=d],li[data-task=F],li[data-task=r],li[data-task=m],li[data-task=M],li[data-task=L],li[data-task=t],li[data-task=T],li[data-task=P],li[data-task=s]) input[type=checkbox], body.enable-alternative-checkboxes .markdown-source-view input[type=checkbox]:where([data-task="*"],[data-task=a],[data-task=f],[data-task=S],[data-task="-"],[data-task=">"],[data-task="<"],[data-task=l],[data-task=B],[data-task=X],[data-task=n],[data-task=p],[data-task=c],[data-task=w],[data-task=b],[data-task=I],[data-task="!"],[data-task="?"],[data-task=i],[data-task="/"],[data-task=u],[data-task=d],[data-task=F],[data-task=r],[data-task=m],[data-task=M],[data-task=L],[data-task=t],[data-task=T],[data-task=P],[data-task=s]):checked {
+background-color:rgba(0,0,0,0);
+border-width:0;
+pointer-events:none;
+}
+
+body.enable-alternative-checkboxes li.is-checked:where(li[data-task="*"],li[data-task=a],li[data-task=f],li[data-task=S],li[data-task="-"],li[data-task=">"],li[data-task="<"],li[data-task=l],li[data-task=B],li[data-task=X],li[data-task=n],li[data-task=p],li[data-task=c],li[data-task=w],li[data-task=b],li[data-task=I],li[data-task="!"],li[data-task="?"],li[data-task=i],li[data-task="/"],li[data-task=u],li[data-task=d],li[data-task=F],li[data-task=r],li[data-task=m],li[data-task=M],li[data-task=L],li[data-task=t],li[data-task=T],li[data-task=P],li[data-task=s]) input[type=checkbox]:hover, body.enable-alternative-checkboxes .markdown-source-view input[type=checkbox]:where([data-task="*"],[data-task=a],[data-task=f],[data-task=S],[data-task="-"],[data-task=">"],[data-task="<"],[data-task=l],[data-task=B],[data-task=X],[data-task=n],[data-task=p],[data-task=c],[data-task=w],[data-task=b],[data-task=I],[data-task="!"],[data-task="?"],[data-task=i],[data-task="/"],[data-task=u],[data-task=d],[data-task=F],[data-task=r],[data-task=m],[data-task=M],[data-task=L],[data-task=t],[data-task=T],[data-task=P],[data-task=s]):checked:hover {
+box-shadow:none;
+border-color:rgba(0,0,0,0);
+pointer-events:none;
+}
+
+body.enable-alternative-checkboxes li.is-checked:where(li[data-task="*"],li[data-task=a],li[data-task=f],li[data-task=S],li[data-task="-"],li[data-task=">"],li[data-task="<"],li[data-task=l],li[data-task=B],li[data-task=X],li[data-task=n],li[data-task=p],li[data-task=c],li[data-task=w],li[data-task=b],li[data-task=I],li[data-task="!"],li[data-task="?"],li[data-task=i],li[data-task="/"],li[data-task=u],li[data-task=d],li[data-task=F],li[data-task=r],li[data-task=m],li[data-task=M],li[data-task=L],li[data-task=t],li[data-task=T],li[data-task=P],li[data-task=s]) input[type=checkbox]::after, body.enable-alternative-checkboxes .markdown-source-view input[type=checkbox]:where([data-task="*"],[data-task=a],[data-task=f],[data-task=S],[data-task="-"],[data-task=">"],[data-task="<"],[data-task=l],[data-task=B],[data-task=X],[data-task=n],[data-task=p],[data-task=c],[data-task=w],[data-task=b],[data-task=I],[data-task="!"],[data-task="?"],[data-task=i],[data-task="/"],[data-task=u],[data-task=d],[data-task=F],[data-task=r],[data-task=m],[data-task=M],[data-task=L],[data-task=t],[data-task=T],[data-task=P],[data-task=s]):checked::after {
+mask-size:110%;
+pointer-events:none;
+left:0;
+}
+
+body.enable-alternative-checkboxes .markdown-source-view.mod-cm6 input[type=checkbox][data-task] {
+top:-3px;
+}
+
+body.enable-alternative-checkboxes li[data-task="*"] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task="*"]::after {
+background-color:var(--yellow);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='m16 2-4.55 9.22-10.17 1.47 7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13 7.36-7.17-10.17-1.48Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=a] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=a]::after {
+background-color:var(--yellow);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cpath d='M28.707 19.293 26 16.586V13a10.014 10.014 0 0 0-9-9.95V1h-2v2.05A10.014 10.014 0 0 0 6 13v3.586l-2.707 2.707A1 1 0 0 0 3 20v3a1 1 0 0 0 1 1h7v1a5 5 0 0 0 10 0v-1h7a1 1 0 0 0 1-1v-3a1 1 0 0 0-.293-.707ZM19 25a3 3 0 0 1-6 0v-1h6Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=f] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=f]::after {
+background-color:var(--red);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='32' height='32' enable-background='new 0 0 32 32'%3E%3Cpath d='M22.5 4c-2 0-3.9.8-5.3 2.2L16 7.4l-1.1-1.1c-2.9-3-7.7-3-10.6-.1l-.1.1c-3 3-3 7.8 0 10.8L16 29l11.8-11.9c3-3 3-7.8 0-10.8C26.4 4.8 24.5 4 22.5 4z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=S] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=S]::after {
+background-color:var(--yellow);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' xml:space='preserve'%3E%3Cpath fill='none' d='M0 0h32v32H0V0z'/%3E%3Cpath d='M29 13h-2c-.1-1.6-.8-3.1-2-4.1V5c0-.6-.4-1-1-1-.2 0-.4.1-.6.2L19.7 7H15c-5.5 0-9.5 3.2-9.9 8H5c-.6 0-1-.4-1-1v-2H2v2c0 1.7 1.3 3 3 3h.1c.3 2.7 1.7 5 3.9 6.6V27c0 .6.4 1 1 1h4c.6 0 1-.4 1-1v-2h3v2c0 .6.4 1 1 1h4c.6 0 1-.4 1-1v-3.4c1.5-.7 2.5-2 2.8-3.6H29c.6 0 1-.4 1-1v-5c0-.6-.4-1-1-1zm-9 0h-7v-2h7v2z'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task="-"] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task="-"]::after {
+background-color:var(--red);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='icon' fill='rgb(8, 8, 8)' viewBox='0 0 32 32' xml:space='preserve'%3E%3Cstyle%3E.st0%7Bfill:none;%7D%3C/style%3E%3Cpath id='inner-path' d='M9,10.6L10.6,9L23,21.4L21.4,23L9,10.6z' class='st0'/%3E%3Cpath d='M6.1,6.1C0.6,11.5,0.6,20.3,6,25.8c0,0,0.1,0.1,0.1,0.1c5.4,5.5,14.2,5.5,19.7,0.1c0,0,0.1-0.1,0.1-0.1	c5.5-5.4,5.5-14.2,0.1-19.7c0,0-0.1-0.1-0.1-0.1C20.5,0.6,11.7,0.6,6.2,6C6.2,6,6.1,6.1,6.1,6.1z M24.8,17.1l-17.6,0v-2.2l17.6,0	V17.1z'/%3E%3Cpath id='_Transparent_Rectangle_' d='M0,0h32v32H0V0z' class='st0'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=">"] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=">"]::after {
+background-color:var(--cyan);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='m27.45 15.11-22-11a1 1 0 0 0-1.08.12 1 1 0 0 0-.33 1L6.69 15H18v2H6.69L4 26.74A1 1 0 0 0 5 28a1 1 0 0 0 .45-.11l22-11a1 1 0 0 0 0-1.78Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task="<"] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task="<"]::after {
+background-color:var(--lavender-60);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M26 4h-4V2h-2v2h-8V2h-2v2H6a2.002 2.002 0 0 0-2 2v20a2.002 2.002 0 0 0 2 2h20a2.002 2.002 0 0 0 2-2V6a2.002 2.002 0 0 0-2-2ZM6 6h4v2h2V6h8v2h2V6h4v4H6Zm0 6h5v6H6Zm13 14h-6v-6h6Zm0-8h-6v-6h6Zm2 8v-6h5l.001 6Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=l] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=l]::after {
+background-color:var(--red);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='icon' width='32' height='32'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none%7D%3C/style%3E%3C/defs%3E%3Cpath d='M16 2A11.013 11.013 0 0 0 5 13a10.889 10.889 0 0 0 2.216 6.6s.3.395.349.452L16 30l8.439-9.953c.044-.053.345-.447.345-.447l.001-.003A10.885 10.885 0 0 0 27 13 11.013 11.013 0 0 0 16 2Zm0 15a4 4 0 1 1 4-4 4.005 4.005 0 0 1-4 4Z'/%3E%3Ccircle id='_Inner-Path_' cx='16' cy='13' r='4' class='cls-1' data-name='&lt;Inner-Path&gt;'/%3E%3Cpath id='_Transparent_Rectangle_' d='M0 0h32v32H0z' class='cls-1' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=B] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=B]::after {
+background-color:var(--pink);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' xml:space='preserve'%3E%3Cpath fill='none' d='M0 0h32v32H0z'/%3E%3Cpath d='m16 11 8-2.1c-.9-1.7-2.3-3-4-3.9V2h-2v2.2c-1.3-.3-2.7-.3-4 0V2h-2v3c-1.7.9-3.1 2.2-4 3.9l8 2.1z'/%3E%3Cpath d='m29.8 20 .3-2-5.1-.8v-4.4l5.1-1.4-.5-1.9-4.8 1.3-7.8 2V17h-2v-4.2l-7.7-2.1-4.8-1.2-.5 1.9 5 1.4v4.4l-5.2.8.3 2 4.9-.8c0 1.2.3 2.4.8 3.6l-4.5 4.5 1.4 1.4 4.2-4.2c3.1 3.9 8.7 4.6 12.6 1.6.6-.5 1.1-1 1.6-1.6l4.2 4.2 1.4-1.4-4.5-4.5c.5-1.1.8-2.3.8-3.6l4.8.8z'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=X] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=X]::after {
+background-color:var(--red);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' xml:space='preserve'%3E%3Cpath fill='none' d='M0 0h32v32H0z'/%3E%3Cpath d='M16 2C8.3 2 2 8.3 2 16s6.3 14 14 14 14-6.3 14-14S23.7 2 16 2zm5.4 21L16 17.6 10.6 23 9 21.4l5.4-5.4L9 10.6 10.6 9l5.4 5.4L21.4 9l1.6 1.6-5.4 5.4 5.4 5.4-1.6 1.6z'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=n] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=n]::after {
+background-color:var(--cyan);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M28.586 13.314 30 11.9 20 2l-1.314 1.415 1.186 1.186L8.38 14.322l-1.716-1.715L5.25 14l5.657 5.677L2 28.583 3.41 30l8.911-8.909L18 26.748l1.393-1.414-1.716-1.716 9.724-11.49Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=p] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=p]::after {
+background-color:var(--green);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M2 16h5v14H2zM23 30H9V15.197l3.042-4.563.845-5.917A2.01 2.01 0 0 1 14.867 3H15a3.003 3.003 0 0 1 3 3v6h8a4.005 4.005 0 0 1 4 4v7a7.008 7.008 0 0 1-7 7Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=c] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=c]::after {
+background-color:var(--red);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M2 2h5v14H2zM23 2H9v14.803l3.042 4.563.845 5.917A2.01 2.01 0 0 0 14.867 29H15a3.003 3.003 0 0 0 3-3v-6h8a4.005 4.005 0 0 0 4-4V9a7.008 7.008 0 0 0-7-7Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=w] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=w]::after {
+background-color:var(--yellow);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M26 7h-2V6a2.002 2.002 0 0 0-2-2H10a2.002 2.002 0 0 0-2 2v1H6a2.002 2.002 0 0 0-2 2v3a4.005 4.005 0 0 0 4 4h.322A8.169 8.169 0 0 0 15 21.934V26h-5v2h12v-2h-5v-4.069A7.966 7.966 0 0 0 23.74 16H24a4.005 4.005 0 0 0 4-4V9a2.002 2.002 0 0 0-2-2ZM8 14a2.002 2.002 0 0 1-2-2V9h2Zm18-2a2.002 2.002 0 0 1-2 2V9h2Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=b] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=b]::after {
+background-color:var(--red);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M24 2H8a2 2 0 0 0-2 2v26l10-5.054L26 30V4a2 2 0 0 0-2-2Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=I] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=I]::after {
+background-color:var(--yellow);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' xml:space='preserve'%3E%3Cpath d='M11 22h10v4H11v-4zm2 4h6v4h-6v-4zm8-4c0-.9.5-1.5 1.5-2.4 2.3-1.8 3.6-4.7 3.5-7.6 0-5.5-4.5-10-10-10S6 6.5 6 12c-.1 2.9 1.1 5.8 3.5 7.6 1 .9 1.5 1.5 1.5 2.4'/%3E%3Cpath fill='none' d='M0 0h32v32H0V0z'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task="!"] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task="!"]::after {
+background-color:var(--red);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' xml:space='preserve'%3E%3Cstyle%3E.st0%7Bfill:none%7D%3C/style%3E%3Cpath id='inner-path' d='M16 26c-.8 0-1.5-.7-1.5-1.5S15.2 23 16 23s1.5.7 1.5 1.5S16.8 26 16 26zm-1.1-5h2.2v-9h-2.2v9z' class='st0'/%3E%3Cpath d='M16 6.2 4.6 28h22.7L16 6.2zM14.9 12h2.2v9h-2.2v-9zM16 26c-.8 0-1.5-.7-1.5-1.5S15.2 23 16 23s1.5.7 1.5 1.5S16.8 26 16 26z'/%3E%3Cpath d='M29 30H3c-.6 0-1-.4-1-1 0-.2 0-.3.1-.5l13-25c.3-.5.9-.6 1.4-.4.2.1.3.2.4.4l13 25c.3.5.1 1.1-.4 1.3-.2.2-.3.2-.5.2zM4.7 28h22.7L16 6.2 4.7 28z'/%3E%3Cpath id='_Transparent_Rectangle_' d='M0 0h32v32H0z' class='st0'/%3E%3Cpath d='M-2.9 15.3h26.4v2.9H-2.9z' transform='rotate(-62.979 10.321 16.712)'/%3E%3Cpath d='M8.3 15.6h26.4v2.9H8.3z' transform='rotate(-117.021 21.471 17.086)'/%3E%3Cpath d='M3.9 26.2h24.4v2.9H3.9z' transform='matrix(-.9999 -.01155 .01155 -.9999 31.881 55.41)'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task="?"] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task="?"]::after {
+background-color:var(--orange);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none%7D%3C/style%3E%3C/defs%3E%3Cpath d='M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2Zm0 23a1.5 1.5 0 1 1 1.5-1.5A1.5 1.5 0 0 1 16 25Zm1.142-7.754v2.501h-2.25V15h2.125a2.376 2.376 0 0 0 0-4.753h-1.5a2.378 2.378 0 0 0-2.375 2.375v.638h-2.25v-.638A4.628 4.628 0 0 1 15.517 8h1.5a4.624 4.624 0 0 1 .125 9.246Z'/%3E%3Cpath id='inner-path' d='M16 25a1.5 1.5 0 1 1 1.5-1.5A1.5 1.5 0 0 1 16 25Zm1.142-7.754v2.501h-2.25V15h2.125a2.376 2.376 0 0 0 0-4.753h-1.5a2.378 2.378 0 0 0-2.375 2.375v.638h-2.25v-.638A4.628 4.628 0 0 1 15.517 8h1.5a4.624 4.624 0 0 1 .125 9.246Z' class='cls-1'/%3E%3Cpath id='_Transparent_Rectangle_' d='M0 0h32v32H0z' class='cls-1' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=i] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=i]::after {
+background-color:var(--cyan);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none%7D%3C/style%3E%3C/defs%3E%3Cpath id='inner-path' d='M16 8a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 16 8Zm4 13.875h-2.875v-8H13v2.25h1.875v5.75H12v2.25h8Z' class='cls-1'/%3E%3Cpath d='M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2Zm0 6a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 16 8Zm4 16.125h-8v-2.25h2.875v-5.75H13v-2.25h4.125v8H20Z'/%3E%3Cpath id='_Transparent_Rectangle_' d='M0 0h32v32H0z' class='cls-1' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task="/"] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task="/"]::after {
+background-color:var(--checkbox-color);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2a14 14 0 1 0 14 14A14.016 14.016 0 0 0 16 2Zm0 26a12 12 0 0 1 0-24v12l8.481 8.481A11.963 11.963 0 0 1 16 28Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=u] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=u]::after {
+background-color:var(--green);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M20 8v2h6.586L18 18.586l-4.293-4.293a1 1 0 0 0-1.414 0L2 24.586 3.414 26 13 16.414l4.293 4.293a1 1 0 0 0 1.414 0L28 11.414V18h2V8Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=d] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=d]::after {
+background-color:var(--red);
+transform:scaleY(-1);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M20 8v2h6.586L18 18.586l-4.293-4.293a1 1 0 0 0-1.414 0L2 24.586 3.414 26 13 16.414l4.293 4.293a1 1 0 0 0 1.414 0L28 11.414V18h2V8Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=F] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=F]::after {
+background-color:var(--orange);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M11.61 29.92a1 1 0 0 1-.6-1.07L12.83 17H8a1 1 0 0 1-1-1.23l3-13A1 1 0 0 1 11 2h10a1 1 0 0 1 .78.37 1 1 0 0 1 .2.85L20.25 11H25a1 1 0 0 1 .9.56 1 1 0 0 1-.11 1l-13 17A1 1 0 0 1 12 30a1.09 1.09 0 0 1-.39-.08Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;' transform='rotate(-180 16 16)'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=r] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=r]::after {
+background-color:var(--cyan);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' data-name='Layer 1'%3E%3Cpath d='M20 16a5 5 0 0 0 10 0 1 1 0 0 0-.105-.447l-3.999-7.997a.891.891 0 0 0-.045-.081A1 1 0 0 0 25 7h-6.178A3.015 3.015 0 0 0 17 5.184V2h-2v3.184A3.015 3.015 0 0 0 13.178 7H7a1 1 0 0 0-.894.553l-4 8A1 1 0 0 0 2 16a5 5 0 0 0 10 0 1 1 0 0 0-.105-.447L8.617 9h4.56A3.015 3.015 0 0 0 15 10.815V28H6v2h20v-2h-9V10.816A3.015 3.015 0 0 0 18.822 9h4.56l-3.277 6.553A1 1 0 0 0 20 16ZM7 19a2.996 2.996 0 0 1-2.815-2h5.63A2.996 2.996 0 0 1 7 19Zm2.382-4H4.618L7 10.236ZM16 9a1 1 0 1 1 1-1 1 1 0 0 1-1 1Zm9 10a2.996 2.996 0 0 1-2.815-2h5.63A2.996 2.996 0 0 1 25 19Zm0-8.764L27.382 15h-4.764Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=m] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=m]::after {
+top:0;
+background-color:var(--orange);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M29 10H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1V11a1 1 0 0 0-1-1Zm-1 10H4v-8h4v4h2v-4h5v4h2v-4h5v4h2v-4h4Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=M] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=M]::after {
+background-color:var(--cyan);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cpath d='M24 2v2h2v6a4 4 0 0 1-8 0V4h2V2h-4v8a6.005 6.005 0 0 0 5 5.91V22a6 6 0 0 1-12 0v-6.142a4 4 0 1 0-2 0V22a8 8 0 0 0 16 0v-6.09A6.005 6.005 0 0 0 28 10V2ZM6 12a2 2 0 1 1 2 2 2.002 2.002 0 0 1-2-2Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=L] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=L]::after {
+background-color:var(--green);
+mask-size:100%;
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M27.85 29H30l-6-15h-2.35l-6 15h2.15l1.6-4h6.85Zm-7.65-6 2.62-6.56L25.45 23ZM18 7V5h-7V2H9v3H2v2h10.74a14.71 14.71 0 0 1-3.19 6.18A13.5 13.5 0 0 1 7.26 9h-2.1a16.47 16.47 0 0 0 3 5.58A16.84 16.84 0 0 1 3 18l.75 1.86A18.47 18.47 0 0 0 9.53 16a16.92 16.92 0 0 0 5.76 3.84L16 18a14.48 14.48 0 0 1-5.12-3.37A17.64 17.64 0 0 0 14.8 7Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=t] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=t]::after {
+background-color:var(--orange);
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 30a14 14 0 1 1 14-14 14 14 0 0 1-14 14Zm0-26a12 12 0 1 0 12 12A12 12 0 0 0 16 4Z'/%3E%3Cpath d='M20.59 22 15 16.41V7h2v8.58l5 5.01L20.59 22z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=T] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=T]::after {
+background-color:var(--green);
+mask-image:url("data:image/svg+xml,%3Csvg id='icon' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Ephone--filled%3C/title%3E%3Cpath d='M20.33,21.48l2.24-2.24a2.19,2.19,0,0,1,2.34-.48l2.73,1.09a2.18,2.18,0,0,1,1.36,2v5A2.17,2.17,0,0,1,26.72,29C7.59,27.81,3.73,11.61,3,5.41A2.17,2.17,0,0,1,5.17,3H10a2.16,2.16,0,0,1,2,1.36l1.09,2.73a2.16,2.16,0,0,1-.47,2.34l-2.24,2.24S11.67,20.4,20.33,21.48Z'/%3E%3Crect id='_Transparent_Rectangle_' data-name='&lt;Transparent Rectangle&gt;' class='cls-1' width='32' height='32'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=P] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes li[data-task=P] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=P]::after {
+background-color:var(--cyan);
+mask-image:url("data:image/svg+xml,%3Csvg id='icon' xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Euser--filled%3C/title%3E%3Cpath d='M6,30H26V25a7.0082,7.0082,0,0,0-7-7H13a7.0082,7.0082,0,0,0-7,7Z' transform='translate(0 0)'/%3E%3Cpath d='M9,9a7,7,0,1,0,7-7A7,7,0,0,0,9,9Z' transform='translate(0 0)'/%3E%3Crect id='_Transparent_Rectangle_' data-name='&lt;Transparent Rectangle&gt;' class='cls-1' width='32' height='32'/%3E%3C/svg%3E");
+}
+
+body.enable-alternative-checkboxes li[data-task=s] input[type=checkbox]:checked::after, body.enable-alternative-checkboxes input[type=checkbox][data-task=s]::after {
+background-color:var(--yellow);
+mask-image:url("data:image/svg+xml,%3Csvg id='icon' xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cpath d='M21,12V10H17V7H15v3H13a2.002,2.002,0,0,0-2,2v3a2.002,2.002,0,0,0,2,2h6v3H11v2h4v3h2V22h2a2.0023,2.0023,0,0,0,2-2V17a2.002,2.002,0,0,0-2-2H13V12Z'/%3E%3Cpath d='M16,4A12,12,0,1,1,4,16,12.0353,12.0353,0,0,1,16,4m0-2A14,14,0,1,0,30,16,14.0412,14.0412,0,0,0,16,2Z'/%3E%3Crect id='_Transparent_Rectangle_' data-name='&lt;Transparent Rectangle&gt;' class='cls-1' width='32' height='32'/%3E%3C/svg%3E");
+}`,
+      dark: `.theme-dark body.enable-alternative-checkboxes li[data-task="<"] input[type=checkbox]:checked::after, .theme-dark body.enable-alternative-checkboxes input[type=checkbox][data-task="<"]::after {
+background-color:var(--lavender);
+}`,
+    },
+    "code-lines": {
+      general: `.code-lines .markdown-rendered pre:not(pre.frontmatter) code[class*=language-] {
+padding-left:24px;
+}
+
+.code-lines .markdown-rendered pre:not(pre.frontmatter) code[class*=language-]::before {
+box-sizing:inherit;
+overflow:hidden;
+position:absolute;
+height:100%;
+width:3.1ch;
+content:"1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365 366 367 368 369 370 371 372 373 374 375 376 377 378 379 380 381 382 383 384 385 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 416 417 418 419 420 421 422 423 424 425 426 427 428 429 430 431 432 433 434 435 436 437 438 439 440 441 442 443 444 445 446 447 448 449 450 451 452 453 454 455 456 457 458 459 460 461 462 463 464 465 466 467 468 469 470 471 472 473 474 475 476 477 478 479 480 481 482 483 484 485 486 487 488 489 490 491 492 493 494 495 496 497 498 499 500 501 502 503 504 505 506 507 508 509 510 511 512 513 514 515 516 517 518 519 520 521 522 523 524 525 526 527 528 529 530 531 532 533 534 535 536 537 538 539 540 541 542 543 544 545 546 547 548 549 550 551 552 553 554 555 556 557 558 559 560 561 562 563 564 565 566 567 568 569 570 571 572 573 574 575 576 577 578 579 580 581 582 583 584 585 586 587 588 589 590 591 592 593 594 595 596 597 598 599 600 601 602 603 604 605 606 607 608 609 610 611 612 613 614 615 616 617 618 619 620 621 622 623 624 625 626 627 628 629 630 631 632 633 634 635 636 637 638 639 640 641 642 643 644 645 646 647 648 649 650 651 652 653 654 655 656 657 658 659 660 661 662 663 664 665 666 667 668 669 670 671 672 673 674 675 676 677 678 679 680 681 682 683 684 685 686 687 688 689 690 691 692 693 694 695 696 697 698 699 700 701 702 703 704 705 706 707 708 709 710 711 712 713 714 715 716 717 718 719 720 721 722 723 724 725 726 727 728 729 730 731 732 733 734 735 736 737 738 739 740 741 742 743 744 745 746 747 748 749 750 751 752 753 754 755 756 757 758 759 760 761 762 763 764 765 766 767 768 769 770 771 772 773 774 775 776 777 778 779 780 781 782 783 784 785 786 787 788 789 790 791 792 793 794 795 796 797 798 799 800 801 802 803 804 805 806 807 808 809 810 811 812 813 814 815 816 817 818 819 820 821 822 823 824 825 826 827 828 829 830 831 832 833 834 835 836 837 838 839 840 841 842 843 844 845 846 847 848 849 850 851 852 853 854 855 856 857 858 859 860 861 862 863 864 865 866 867 868 869 870 871 872 873 874 875 876 877 878 879 880 881 882 883 884 885 886 887 888 889 890 891 892 893 894 895 896 897 898 899 900 901 902 903 904 905 906 907 908 909 910 911 912 913 914 915 916 917 918 919 920 921 922 923 924 925 926 927 928 929 930 931 932 933 934 935 936 937 938 939 940 941 942 943 944 945 946 947 948 949 950 951 952 953 954 955 956 957 958 959 960 961 962 963 964 965 966 967 968 969 970 971 972 973 974 975 976 977 978 979 980 981 982 983 984 985 986 987 988 989 990 991 992 993 994 995 996 997 998 999";
+color:var(--text-faint);
+direction:rtl;
+font-size:.75rem;
+line-height:1.75em;
+padding-top:0;
+left:6px;
+clip-path:polygon(0 0, 4ch 0, 4ch calc(100% - 20px), 0 calc(100% - 20px));
+}
+
+.code-label .markdown-rendered :not(pre.frontmatter) code[class*=language-]::before {
+clip-path:polygon(0 0, 4ch 0, 4ch calc(100% - 40px), 0 calc(100% - 40px));
+}`,
+    },
+    "code-label": {
+      general: `.code-label .markdown-rendered pre[class*=language-]:not(pre.frontmatter) button.copy-code-button {
+top:24px;
+}
+
+.code-label .markdown-rendered pre[class*=language-]:not(pre.frontmatter) {
+padding-top:32px;
+}
+
+.code-label .markdown-rendered pre[class*=language-]:not(pre.frontmatter)::before {
+content:attr(class);
+font-size:.75em;
+color:var(--text-muted);
+position:absolute;
+top:4px;
+right:8px;
+clip-path:polygon(9ch 0, 100% 0, 100% 100%, 9ch 100%);
+}
+
+.code-lines.code-label .markdown-rendered :not(pre.frontmatter) code[class*=language-]::before {
+clip-path:polygon(0 0, 4ch 0, 4ch calc(100% - 40px), 0 calc(100% - 40px));
+}`,
+    },
+    "code-border": {
+      general: `.code-border .markdown-rendered pre, .code-border .markdown-rendered p>code {
+outline:1px solid var(--border-subtle-0);
+}`,
+    },
+    nord: {
+      dark: `.theme-light p>code, .theme-dark p>code, .theme-light pre:not(pre.frontmatter), .theme-dark pre:not(pre.frontmatter), .theme-dark .HyperMD-codeblock, .theme-light .HyperMD-codeblock {
+--code-background: #2e3440;
+--code-normal: #e5e9f0;
+--text-muted: #81a1c1;
+--text-faint: #81a1c1;
+}
+
+.theme-light p>code .cm-comment, .theme-light p>code .cm-meta, .theme-light p>code .token.comment, .theme-light p>code .token.prolog, .theme-light p>code .token.doctype, .theme-light p>code .token.cdata, .theme-dark p>code .cm-comment, .theme-dark p>code .cm-meta, .theme-dark p>code .token.comment, .theme-dark p>code .token.prolog, .theme-dark p>code .token.doctype, .theme-dark p>code .token.cdata, .theme-light pre:not(pre.frontmatter) .cm-comment, .theme-light pre:not(pre.frontmatter) .cm-meta, .theme-light pre:not(pre.frontmatter) .token.comment, .theme-light pre:not(pre.frontmatter) .token.prolog, .theme-light pre:not(pre.frontmatter) .token.doctype, .theme-light pre:not(pre.frontmatter) .token.cdata, .theme-dark pre:not(pre.frontmatter) .cm-comment, .theme-dark pre:not(pre.frontmatter) .cm-meta, .theme-dark pre:not(pre.frontmatter) .token.comment, .theme-dark pre:not(pre.frontmatter) .token.prolog, .theme-dark pre:not(pre.frontmatter) .token.doctype, .theme-dark pre:not(pre.frontmatter) .token.cdata, .theme-dark .HyperMD-codeblock .cm-comment, .theme-dark .HyperMD-codeblock .cm-meta, .theme-dark .HyperMD-codeblock .token.comment, .theme-dark .HyperMD-codeblock .token.prolog, .theme-dark .HyperMD-codeblock .token.doctype, .theme-dark .HyperMD-codeblock .token.cdata, .theme-light .HyperMD-codeblock .cm-comment, .theme-light .HyperMD-codeblock .cm-meta, .theme-light .HyperMD-codeblock .token.comment, .theme-light .HyperMD-codeblock .token.prolog, .theme-light .HyperMD-codeblock .token.doctype, .theme-light .HyperMD-codeblock .token.cdata {
+color:#636f88;
+}
+
+.theme-light p>code .cm-punctuation, .theme-light p>code .token.punctuation, .theme-dark p>code .cm-punctuation, .theme-dark p>code .token.punctuation, .theme-light pre:not(pre.frontmatter) .cm-punctuation, .theme-light pre:not(pre.frontmatter) .token.punctuation, .theme-dark pre:not(pre.frontmatter) .cm-punctuation, .theme-dark pre:not(pre.frontmatter) .token.punctuation, .theme-dark .HyperMD-codeblock .cm-punctuation, .theme-dark .HyperMD-codeblock .token.punctuation, .theme-light .HyperMD-codeblock .cm-punctuation, .theme-light .HyperMD-codeblock .token.punctuation {
+color:#81a1c1;
+}
+
+.theme-light p>code .namespace, .theme-dark p>code .namespace, .theme-light pre:not(pre.frontmatter) .namespace, .theme-dark pre:not(pre.frontmatter) .namespace, .theme-dark .HyperMD-codeblock .namespace, .theme-light .HyperMD-codeblock .namespace {
+opacity:var(--text-muted);
+}
+
+.theme-light p>code .cm-bracket.cm-tag, .theme-light p>code .cm-hr, .theme-light p>code .cm-tag, .theme-light p>code .cm-property, .theme-light p>code .token.property, .theme-light p>code .token.tag, .theme-light p>code .token.constant, .theme-light p>code .token.symbol, .theme-light p>code .token.deleted, .theme-dark p>code .cm-bracket.cm-tag, .theme-dark p>code .cm-hr, .theme-dark p>code .cm-tag, .theme-dark p>code .cm-property, .theme-dark p>code .token.property, .theme-dark p>code .token.tag, .theme-dark p>code .token.constant, .theme-dark p>code .token.symbol, .theme-dark p>code .token.deleted, .theme-light pre:not(pre.frontmatter) .cm-bracket.cm-tag, .theme-light pre:not(pre.frontmatter) .cm-hr, .theme-light pre:not(pre.frontmatter) .cm-tag, .theme-light pre:not(pre.frontmatter) .cm-property, .theme-light pre:not(pre.frontmatter) .token.property, .theme-light pre:not(pre.frontmatter) .token.tag, .theme-light pre:not(pre.frontmatter) .token.constant, .theme-light pre:not(pre.frontmatter) .token.symbol, .theme-light pre:not(pre.frontmatter) .token.deleted, .theme-dark pre:not(pre.frontmatter) .cm-bracket.cm-tag, .theme-dark pre:not(pre.frontmatter) .cm-hr, .theme-dark pre:not(pre.frontmatter) .cm-tag, .theme-dark pre:not(pre.frontmatter) .cm-property, .theme-dark pre:not(pre.frontmatter) .token.property, .theme-dark pre:not(pre.frontmatter) .token.tag, .theme-dark pre:not(pre.frontmatter) .token.constant, .theme-dark pre:not(pre.frontmatter) .token.symbol, .theme-dark pre:not(pre.frontmatter) .token.deleted, .theme-dark .HyperMD-codeblock .cm-bracket.cm-tag, .theme-dark .HyperMD-codeblock .cm-hr, .theme-dark .HyperMD-codeblock .cm-tag, .theme-dark .HyperMD-codeblock .cm-property, .theme-dark .HyperMD-codeblock .token.property, .theme-dark .HyperMD-codeblock .token.tag, .theme-dark .HyperMD-codeblock .token.constant, .theme-dark .HyperMD-codeblock .token.symbol, .theme-dark .HyperMD-codeblock .token.deleted, .theme-light .HyperMD-codeblock .cm-bracket.cm-tag, .theme-light .HyperMD-codeblock .cm-hr, .theme-light .HyperMD-codeblock .cm-tag, .theme-light .HyperMD-codeblock .cm-property, .theme-light .HyperMD-codeblock .token.property, .theme-light .HyperMD-codeblock .token.tag, .theme-light .HyperMD-codeblock .token.constant, .theme-light .HyperMD-codeblock .token.symbol, .theme-light .HyperMD-codeblock .token.deleted {
+color:#81a1c1;
+}
+
+.theme-light p>code .cm-number, .theme-light p>code .token.number, .theme-dark p>code .cm-number, .theme-dark p>code .token.number, .theme-light pre:not(pre.frontmatter) .cm-number, .theme-light pre:not(pre.frontmatter) .token.number, .theme-dark pre:not(pre.frontmatter) .cm-number, .theme-dark pre:not(pre.frontmatter) .token.number, .theme-dark .HyperMD-codeblock .cm-number, .theme-dark .HyperMD-codeblock .token.number, .theme-light .HyperMD-codeblock .cm-number, .theme-light .HyperMD-codeblock .token.number {
+color:#b48ead;
+}
+
+.theme-light p>code .token.boolean, .theme-dark p>code .token.boolean, .theme-light pre:not(pre.frontmatter) .token.boolean, .theme-dark pre:not(pre.frontmatter) .token.boolean, .theme-dark .HyperMD-codeblock .token.boolean, .theme-light .HyperMD-codeblock .token.boolean {
+color:#81a1c1;
+}
+
+.theme-light p>code .cm-builtin, .theme-light p>code .cm-string-2, .theme-light p>code .cm-qualifier, .theme-light p>code .token.selector, .theme-light p>code .token.attr-name, .theme-light p>code .token.string, .theme-light p>code .token.char, .theme-light p>code .token.builtin, .theme-light p>code .token.inserted, .theme-dark p>code .cm-builtin, .theme-dark p>code .cm-string-2, .theme-dark p>code .cm-qualifier, .theme-dark p>code .token.selector, .theme-dark p>code .token.attr-name, .theme-dark p>code .token.string, .theme-dark p>code .token.char, .theme-dark p>code .token.builtin, .theme-dark p>code .token.inserted, .theme-light pre:not(pre.frontmatter) .cm-builtin, .theme-light pre:not(pre.frontmatter) .cm-string-2, .theme-light pre:not(pre.frontmatter) .cm-qualifier, .theme-light pre:not(pre.frontmatter) .token.selector, .theme-light pre:not(pre.frontmatter) .token.attr-name, .theme-light pre:not(pre.frontmatter) .token.string, .theme-light pre:not(pre.frontmatter) .token.char, .theme-light pre:not(pre.frontmatter) .token.builtin, .theme-light pre:not(pre.frontmatter) .token.inserted, .theme-dark pre:not(pre.frontmatter) .cm-builtin, .theme-dark pre:not(pre.frontmatter) .cm-string-2, .theme-dark pre:not(pre.frontmatter) .cm-qualifier, .theme-dark pre:not(pre.frontmatter) .token.selector, .theme-dark pre:not(pre.frontmatter) .token.attr-name, .theme-dark pre:not(pre.frontmatter) .token.string, .theme-dark pre:not(pre.frontmatter) .token.char, .theme-dark pre:not(pre.frontmatter) .token.builtin, .theme-dark pre:not(pre.frontmatter) .token.inserted, .theme-dark .HyperMD-codeblock .cm-builtin, .theme-dark .HyperMD-codeblock .cm-string-2, .theme-dark .HyperMD-codeblock .cm-qualifier, .theme-dark .HyperMD-codeblock .token.selector, .theme-dark .HyperMD-codeblock .token.attr-name, .theme-dark .HyperMD-codeblock .token.string, .theme-dark .HyperMD-codeblock .token.char, .theme-dark .HyperMD-codeblock .token.builtin, .theme-dark .HyperMD-codeblock .token.inserted, .theme-light .HyperMD-codeblock .cm-builtin, .theme-light .HyperMD-codeblock .cm-string-2, .theme-light .HyperMD-codeblock .cm-qualifier, .theme-light .HyperMD-codeblock .token.selector, .theme-light .HyperMD-codeblock .token.attr-name, .theme-light .HyperMD-codeblock .token.string, .theme-light .HyperMD-codeblock .token.char, .theme-light .HyperMD-codeblock .token.builtin, .theme-light .HyperMD-codeblock .token.inserted {
+color:#a3be8c;
+}
+
+.theme-light p>code .cm-variable, .theme-light p>code .cm-variable-2, .theme-light p>code .cm-variable-3, .theme-light p>code .cm-operator, .theme-light p>code .cm-link, .theme-light p>code .token.operator, .theme-light p>code .token.entity, .theme-light p>code .token.url, .theme-light p>code .language-css .token.string, .theme-light p>code .style .token.string, .theme-light p>code .token.variable, .theme-dark p>code .cm-variable, .theme-dark p>code .cm-variable-2, .theme-dark p>code .cm-variable-3, .theme-dark p>code .cm-operator, .theme-dark p>code .cm-link, .theme-dark p>code .token.operator, .theme-dark p>code .token.entity, .theme-dark p>code .token.url, .theme-dark p>code .language-css .token.string, .theme-dark p>code .style .token.string, .theme-dark p>code .token.variable, .theme-light pre:not(pre.frontmatter) .cm-variable, .theme-light pre:not(pre.frontmatter) .cm-variable-2, .theme-light pre:not(pre.frontmatter) .cm-variable-3, .theme-light pre:not(pre.frontmatter) .cm-operator, .theme-light pre:not(pre.frontmatter) .cm-link, .theme-light pre:not(pre.frontmatter) .token.operator, .theme-light pre:not(pre.frontmatter) .token.entity, .theme-light pre:not(pre.frontmatter) .token.url, .theme-light pre:not(pre.frontmatter) .language-css .token.string, .theme-light pre:not(pre.frontmatter) .style .token.string, .theme-light pre:not(pre.frontmatter) .token.variable, .theme-dark pre:not(pre.frontmatter) .cm-variable, .theme-dark pre:not(pre.frontmatter) .cm-variable-2, .theme-dark pre:not(pre.frontmatter) .cm-variable-3, .theme-dark pre:not(pre.frontmatter) .cm-operator, .theme-dark pre:not(pre.frontmatter) .cm-link, .theme-dark pre:not(pre.frontmatter) .token.operator, .theme-dark pre:not(pre.frontmatter) .token.entity, .theme-dark pre:not(pre.frontmatter) .token.url, .theme-dark pre:not(pre.frontmatter) .language-css .token.string, .theme-dark pre:not(pre.frontmatter) .style .token.string, .theme-dark pre:not(pre.frontmatter) .token.variable, .theme-dark .HyperMD-codeblock .cm-variable, .theme-dark .HyperMD-codeblock .cm-variable-2, .theme-dark .HyperMD-codeblock .cm-variable-3, .theme-dark .HyperMD-codeblock .cm-operator, .theme-dark .HyperMD-codeblock .cm-link, .theme-dark .HyperMD-codeblock .token.operator, .theme-dark .HyperMD-codeblock .token.entity, .theme-dark .HyperMD-codeblock .token.url, .theme-dark .HyperMD-codeblock .language-css .token.string, .theme-dark .HyperMD-codeblock .style .token.string, .theme-dark .HyperMD-codeblock .token.variable, .theme-light .HyperMD-codeblock .cm-variable, .theme-light .HyperMD-codeblock .cm-variable-2, .theme-light .HyperMD-codeblock .cm-variable-3, .theme-light .HyperMD-codeblock .cm-operator, .theme-light .HyperMD-codeblock .cm-link, .theme-light .HyperMD-codeblock .token.operator, .theme-light .HyperMD-codeblock .token.entity, .theme-light .HyperMD-codeblock .token.url, .theme-light .HyperMD-codeblock .language-css .token.string, .theme-light .HyperMD-codeblock .style .token.string, .theme-light .HyperMD-codeblock .token.variable {
+color:#81a1c1;
+}
+
+.theme-light p>code .cm-string, .theme-light p>code .cm-attribute, .theme-light p>code .token.atrule, .theme-light p>code .token.attr-value, .theme-light p>code .token.function, .theme-light p>code .token.class-name, .theme-dark p>code .cm-string, .theme-dark p>code .cm-attribute, .theme-dark p>code .token.atrule, .theme-dark p>code .token.attr-value, .theme-dark p>code .token.function, .theme-dark p>code .token.class-name, .theme-light pre:not(pre.frontmatter) .cm-string, .theme-light pre:not(pre.frontmatter) .cm-attribute, .theme-light pre:not(pre.frontmatter) .token.atrule, .theme-light pre:not(pre.frontmatter) .token.attr-value, .theme-light pre:not(pre.frontmatter) .token.function, .theme-light pre:not(pre.frontmatter) .token.class-name, .theme-dark pre:not(pre.frontmatter) .cm-string, .theme-dark pre:not(pre.frontmatter) .cm-attribute, .theme-dark pre:not(pre.frontmatter) .token.atrule, .theme-dark pre:not(pre.frontmatter) .token.attr-value, .theme-dark pre:not(pre.frontmatter) .token.function, .theme-dark pre:not(pre.frontmatter) .token.class-name, .theme-dark .HyperMD-codeblock .cm-string, .theme-dark .HyperMD-codeblock .cm-attribute, .theme-dark .HyperMD-codeblock .token.atrule, .theme-dark .HyperMD-codeblock .token.attr-value, .theme-dark .HyperMD-codeblock .token.function, .theme-dark .HyperMD-codeblock .token.class-name, .theme-light .HyperMD-codeblock .cm-string, .theme-light .HyperMD-codeblock .cm-attribute, .theme-light .HyperMD-codeblock .token.atrule, .theme-light .HyperMD-codeblock .token.attr-value, .theme-light .HyperMD-codeblock .token.function, .theme-light .HyperMD-codeblock .token.class-name {
+color:#88c0d0;
+}
+
+.theme-light p>code .cm-keyword, .theme-light p>code .token.keyword, .theme-dark p>code .cm-keyword, .theme-dark p>code .token.keyword, .theme-light pre:not(pre.frontmatter) .cm-keyword, .theme-light pre:not(pre.frontmatter) .token.keyword, .theme-dark pre:not(pre.frontmatter) .cm-keyword, .theme-dark pre:not(pre.frontmatter) .token.keyword, .theme-dark .HyperMD-codeblock .cm-keyword, .theme-dark .HyperMD-codeblock .token.keyword, .theme-light .HyperMD-codeblock .cm-keyword, .theme-light .HyperMD-codeblock .token.keyword {
+color:#81a1c1;
+}
+
+.theme-light p>code .token.regex, .theme-light p>code .token.important, .theme-dark p>code .token.regex, .theme-dark p>code .token.important, .theme-light pre:not(pre.frontmatter) .token.regex, .theme-light pre:not(pre.frontmatter) .token.important, .theme-dark pre:not(pre.frontmatter) .token.regex, .theme-dark pre:not(pre.frontmatter) .token.important, .theme-dark .HyperMD-codeblock .token.regex, .theme-dark .HyperMD-codeblock .token.important, .theme-light .HyperMD-codeblock .token.regex, .theme-light .HyperMD-codeblock .token.important {
+color:#ebcb8b;
+}
+
+.theme-light p>code .token.important, .theme-light p>code .token.bold, .theme-dark p>code .token.important, .theme-dark p>code .token.bold, .theme-light pre:not(pre.frontmatter) .token.important, .theme-light pre:not(pre.frontmatter) .token.bold, .theme-dark pre:not(pre.frontmatter) .token.important, .theme-dark pre:not(pre.frontmatter) .token.bold, .theme-dark .HyperMD-codeblock .token.important, .theme-dark .HyperMD-codeblock .token.bold, .theme-light .HyperMD-codeblock .token.important, .theme-light .HyperMD-codeblock .token.bold {
+font-weight:bold;
+}
+
+.theme-light p>code .token.italic, .theme-dark p>code .token.italic, .theme-light pre:not(pre.frontmatter) .token.italic, .theme-dark pre:not(pre.frontmatter) .token.italic, .theme-dark .HyperMD-codeblock .token.italic, .theme-light .HyperMD-codeblock .token.italic {
+font-style:italic;
+}`,
+      light: `.theme-light p>code, .theme-dark p>code, .theme-light pre:not(pre.frontmatter), .theme-dark pre:not(pre.frontmatter), .theme-dark .HyperMD-codeblock, .theme-light .HyperMD-codeblock {
+--code-background: #2e3440;
+--code-normal: #e5e9f0;
+--text-muted: #81a1c1;
+--text-faint: #81a1c1;
+}
+
+.theme-light p>code .cm-comment, .theme-light p>code .cm-meta, .theme-light p>code .token.comment, .theme-light p>code .token.prolog, .theme-light p>code .token.doctype, .theme-light p>code .token.cdata, .theme-dark p>code .cm-comment, .theme-dark p>code .cm-meta, .theme-dark p>code .token.comment, .theme-dark p>code .token.prolog, .theme-dark p>code .token.doctype, .theme-dark p>code .token.cdata, .theme-light pre:not(pre.frontmatter) .cm-comment, .theme-light pre:not(pre.frontmatter) .cm-meta, .theme-light pre:not(pre.frontmatter) .token.comment, .theme-light pre:not(pre.frontmatter) .token.prolog, .theme-light pre:not(pre.frontmatter) .token.doctype, .theme-light pre:not(pre.frontmatter) .token.cdata, .theme-dark pre:not(pre.frontmatter) .cm-comment, .theme-dark pre:not(pre.frontmatter) .cm-meta, .theme-dark pre:not(pre.frontmatter) .token.comment, .theme-dark pre:not(pre.frontmatter) .token.prolog, .theme-dark pre:not(pre.frontmatter) .token.doctype, .theme-dark pre:not(pre.frontmatter) .token.cdata, .theme-dark .HyperMD-codeblock .cm-comment, .theme-dark .HyperMD-codeblock .cm-meta, .theme-dark .HyperMD-codeblock .token.comment, .theme-dark .HyperMD-codeblock .token.prolog, .theme-dark .HyperMD-codeblock .token.doctype, .theme-dark .HyperMD-codeblock .token.cdata, .theme-light .HyperMD-codeblock .cm-comment, .theme-light .HyperMD-codeblock .cm-meta, .theme-light .HyperMD-codeblock .token.comment, .theme-light .HyperMD-codeblock .token.prolog, .theme-light .HyperMD-codeblock .token.doctype, .theme-light .HyperMD-codeblock .token.cdata {
+color:#636f88;
+}
+
+.theme-light p>code .cm-punctuation, .theme-light p>code .token.punctuation, .theme-dark p>code .cm-punctuation, .theme-dark p>code .token.punctuation, .theme-light pre:not(pre.frontmatter) .cm-punctuation, .theme-light pre:not(pre.frontmatter) .token.punctuation, .theme-dark pre:not(pre.frontmatter) .cm-punctuation, .theme-dark pre:not(pre.frontmatter) .token.punctuation, .theme-dark .HyperMD-codeblock .cm-punctuation, .theme-dark .HyperMD-codeblock .token.punctuation, .theme-light .HyperMD-codeblock .cm-punctuation, .theme-light .HyperMD-codeblock .token.punctuation {
+color:#81a1c1;
+}
+
+.theme-light p>code .namespace, .theme-dark p>code .namespace, .theme-light pre:not(pre.frontmatter) .namespace, .theme-dark pre:not(pre.frontmatter) .namespace, .theme-dark .HyperMD-codeblock .namespace, .theme-light .HyperMD-codeblock .namespace {
+opacity:var(--text-muted);
+}
+
+.theme-light p>code .cm-bracket.cm-tag, .theme-light p>code .cm-hr, .theme-light p>code .cm-tag, .theme-light p>code .cm-property, .theme-light p>code .token.property, .theme-light p>code .token.tag, .theme-light p>code .token.constant, .theme-light p>code .token.symbol, .theme-light p>code .token.deleted, .theme-dark p>code .cm-bracket.cm-tag, .theme-dark p>code .cm-hr, .theme-dark p>code .cm-tag, .theme-dark p>code .cm-property, .theme-dark p>code .token.property, .theme-dark p>code .token.tag, .theme-dark p>code .token.constant, .theme-dark p>code .token.symbol, .theme-dark p>code .token.deleted, .theme-light pre:not(pre.frontmatter) .cm-bracket.cm-tag, .theme-light pre:not(pre.frontmatter) .cm-hr, .theme-light pre:not(pre.frontmatter) .cm-tag, .theme-light pre:not(pre.frontmatter) .cm-property, .theme-light pre:not(pre.frontmatter) .token.property, .theme-light pre:not(pre.frontmatter) .token.tag, .theme-light pre:not(pre.frontmatter) .token.constant, .theme-light pre:not(pre.frontmatter) .token.symbol, .theme-light pre:not(pre.frontmatter) .token.deleted, .theme-dark pre:not(pre.frontmatter) .cm-bracket.cm-tag, .theme-dark pre:not(pre.frontmatter) .cm-hr, .theme-dark pre:not(pre.frontmatter) .cm-tag, .theme-dark pre:not(pre.frontmatter) .cm-property, .theme-dark pre:not(pre.frontmatter) .token.property, .theme-dark pre:not(pre.frontmatter) .token.tag, .theme-dark pre:not(pre.frontmatter) .token.constant, .theme-dark pre:not(pre.frontmatter) .token.symbol, .theme-dark pre:not(pre.frontmatter) .token.deleted, .theme-dark .HyperMD-codeblock .cm-bracket.cm-tag, .theme-dark .HyperMD-codeblock .cm-hr, .theme-dark .HyperMD-codeblock .cm-tag, .theme-dark .HyperMD-codeblock .cm-property, .theme-dark .HyperMD-codeblock .token.property, .theme-dark .HyperMD-codeblock .token.tag, .theme-dark .HyperMD-codeblock .token.constant, .theme-dark .HyperMD-codeblock .token.symbol, .theme-dark .HyperMD-codeblock .token.deleted, .theme-light .HyperMD-codeblock .cm-bracket.cm-tag, .theme-light .HyperMD-codeblock .cm-hr, .theme-light .HyperMD-codeblock .cm-tag, .theme-light .HyperMD-codeblock .cm-property, .theme-light .HyperMD-codeblock .token.property, .theme-light .HyperMD-codeblock .token.tag, .theme-light .HyperMD-codeblock .token.constant, .theme-light .HyperMD-codeblock .token.symbol, .theme-light .HyperMD-codeblock .token.deleted {
+color:#81a1c1;
+}
+
+.theme-light p>code .cm-number, .theme-light p>code .token.number, .theme-dark p>code .cm-number, .theme-dark p>code .token.number, .theme-light pre:not(pre.frontmatter) .cm-number, .theme-light pre:not(pre.frontmatter) .token.number, .theme-dark pre:not(pre.frontmatter) .cm-number, .theme-dark pre:not(pre.frontmatter) .token.number, .theme-dark .HyperMD-codeblock .cm-number, .theme-dark .HyperMD-codeblock .token.number, .theme-light .HyperMD-codeblock .cm-number, .theme-light .HyperMD-codeblock .token.number {
+color:#b48ead;
+}
+
+.theme-light p>code .token.boolean, .theme-dark p>code .token.boolean, .theme-light pre:not(pre.frontmatter) .token.boolean, .theme-dark pre:not(pre.frontmatter) .token.boolean, .theme-dark .HyperMD-codeblock .token.boolean, .theme-light .HyperMD-codeblock .token.boolean {
+color:#81a1c1;
+}
+
+.theme-light p>code .cm-builtin, .theme-light p>code .cm-string-2, .theme-light p>code .cm-qualifier, .theme-light p>code .token.selector, .theme-light p>code .token.attr-name, .theme-light p>code .token.string, .theme-light p>code .token.char, .theme-light p>code .token.builtin, .theme-light p>code .token.inserted, .theme-dark p>code .cm-builtin, .theme-dark p>code .cm-string-2, .theme-dark p>code .cm-qualifier, .theme-dark p>code .token.selector, .theme-dark p>code .token.attr-name, .theme-dark p>code .token.string, .theme-dark p>code .token.char, .theme-dark p>code .token.builtin, .theme-dark p>code .token.inserted, .theme-light pre:not(pre.frontmatter) .cm-builtin, .theme-light pre:not(pre.frontmatter) .cm-string-2, .theme-light pre:not(pre.frontmatter) .cm-qualifier, .theme-light pre:not(pre.frontmatter) .token.selector, .theme-light pre:not(pre.frontmatter) .token.attr-name, .theme-light pre:not(pre.frontmatter) .token.string, .theme-light pre:not(pre.frontmatter) .token.char, .theme-light pre:not(pre.frontmatter) .token.builtin, .theme-light pre:not(pre.frontmatter) .token.inserted, .theme-dark pre:not(pre.frontmatter) .cm-builtin, .theme-dark pre:not(pre.frontmatter) .cm-string-2, .theme-dark pre:not(pre.frontmatter) .cm-qualifier, .theme-dark pre:not(pre.frontmatter) .token.selector, .theme-dark pre:not(pre.frontmatter) .token.attr-name, .theme-dark pre:not(pre.frontmatter) .token.string, .theme-dark pre:not(pre.frontmatter) .token.char, .theme-dark pre:not(pre.frontmatter) .token.builtin, .theme-dark pre:not(pre.frontmatter) .token.inserted, .theme-dark .HyperMD-codeblock .cm-builtin, .theme-dark .HyperMD-codeblock .cm-string-2, .theme-dark .HyperMD-codeblock .cm-qualifier, .theme-dark .HyperMD-codeblock .token.selector, .theme-dark .HyperMD-codeblock .token.attr-name, .theme-dark .HyperMD-codeblock .token.string, .theme-dark .HyperMD-codeblock .token.char, .theme-dark .HyperMD-codeblock .token.builtin, .theme-dark .HyperMD-codeblock .token.inserted, .theme-light .HyperMD-codeblock .cm-builtin, .theme-light .HyperMD-codeblock .cm-string-2, .theme-light .HyperMD-codeblock .cm-qualifier, .theme-light .HyperMD-codeblock .token.selector, .theme-light .HyperMD-codeblock .token.attr-name, .theme-light .HyperMD-codeblock .token.string, .theme-light .HyperMD-codeblock .token.char, .theme-light .HyperMD-codeblock .token.builtin, .theme-light .HyperMD-codeblock .token.inserted {
+color:#a3be8c;
+}
+
+.theme-light p>code .cm-variable, .theme-light p>code .cm-variable-2, .theme-light p>code .cm-variable-3, .theme-light p>code .cm-operator, .theme-light p>code .cm-link, .theme-light p>code .token.operator, .theme-light p>code .token.entity, .theme-light p>code .token.url, .theme-light p>code .language-css .token.string, .theme-light p>code .style .token.string, .theme-light p>code .token.variable, .theme-dark p>code .cm-variable, .theme-dark p>code .cm-variable-2, .theme-dark p>code .cm-variable-3, .theme-dark p>code .cm-operator, .theme-dark p>code .cm-link, .theme-dark p>code .token.operator, .theme-dark p>code .token.entity, .theme-dark p>code .token.url, .theme-dark p>code .language-css .token.string, .theme-dark p>code .style .token.string, .theme-dark p>code .token.variable, .theme-light pre:not(pre.frontmatter) .cm-variable, .theme-light pre:not(pre.frontmatter) .cm-variable-2, .theme-light pre:not(pre.frontmatter) .cm-variable-3, .theme-light pre:not(pre.frontmatter) .cm-operator, .theme-light pre:not(pre.frontmatter) .cm-link, .theme-light pre:not(pre.frontmatter) .token.operator, .theme-light pre:not(pre.frontmatter) .token.entity, .theme-light pre:not(pre.frontmatter) .token.url, .theme-light pre:not(pre.frontmatter) .language-css .token.string, .theme-light pre:not(pre.frontmatter) .style .token.string, .theme-light pre:not(pre.frontmatter) .token.variable, .theme-dark pre:not(pre.frontmatter) .cm-variable, .theme-dark pre:not(pre.frontmatter) .cm-variable-2, .theme-dark pre:not(pre.frontmatter) .cm-variable-3, .theme-dark pre:not(pre.frontmatter) .cm-operator, .theme-dark pre:not(pre.frontmatter) .cm-link, .theme-dark pre:not(pre.frontmatter) .token.operator, .theme-dark pre:not(pre.frontmatter) .token.entity, .theme-dark pre:not(pre.frontmatter) .token.url, .theme-dark pre:not(pre.frontmatter) .language-css .token.string, .theme-dark pre:not(pre.frontmatter) .style .token.string, .theme-dark pre:not(pre.frontmatter) .token.variable, .theme-dark .HyperMD-codeblock .cm-variable, .theme-dark .HyperMD-codeblock .cm-variable-2, .theme-dark .HyperMD-codeblock .cm-variable-3, .theme-dark .HyperMD-codeblock .cm-operator, .theme-dark .HyperMD-codeblock .cm-link, .theme-dark .HyperMD-codeblock .token.operator, .theme-dark .HyperMD-codeblock .token.entity, .theme-dark .HyperMD-codeblock .token.url, .theme-dark .HyperMD-codeblock .language-css .token.string, .theme-dark .HyperMD-codeblock .style .token.string, .theme-dark .HyperMD-codeblock .token.variable, .theme-light .HyperMD-codeblock .cm-variable, .theme-light .HyperMD-codeblock .cm-variable-2, .theme-light .HyperMD-codeblock .cm-variable-3, .theme-light .HyperMD-codeblock .cm-operator, .theme-light .HyperMD-codeblock .cm-link, .theme-light .HyperMD-codeblock .token.operator, .theme-light .HyperMD-codeblock .token.entity, .theme-light .HyperMD-codeblock .token.url, .theme-light .HyperMD-codeblock .language-css .token.string, .theme-light .HyperMD-codeblock .style .token.string, .theme-light .HyperMD-codeblock .token.variable {
+color:#81a1c1;
+}
+
+.theme-light p>code .cm-string, .theme-light p>code .cm-attribute, .theme-light p>code .token.atrule, .theme-light p>code .token.attr-value, .theme-light p>code .token.function, .theme-light p>code .token.class-name, .theme-dark p>code .cm-string, .theme-dark p>code .cm-attribute, .theme-dark p>code .token.atrule, .theme-dark p>code .token.attr-value, .theme-dark p>code .token.function, .theme-dark p>code .token.class-name, .theme-light pre:not(pre.frontmatter) .cm-string, .theme-light pre:not(pre.frontmatter) .cm-attribute, .theme-light pre:not(pre.frontmatter) .token.atrule, .theme-light pre:not(pre.frontmatter) .token.attr-value, .theme-light pre:not(pre.frontmatter) .token.function, .theme-light pre:not(pre.frontmatter) .token.class-name, .theme-dark pre:not(pre.frontmatter) .cm-string, .theme-dark pre:not(pre.frontmatter) .cm-attribute, .theme-dark pre:not(pre.frontmatter) .token.atrule, .theme-dark pre:not(pre.frontmatter) .token.attr-value, .theme-dark pre:not(pre.frontmatter) .token.function, .theme-dark pre:not(pre.frontmatter) .token.class-name, .theme-dark .HyperMD-codeblock .cm-string, .theme-dark .HyperMD-codeblock .cm-attribute, .theme-dark .HyperMD-codeblock .token.atrule, .theme-dark .HyperMD-codeblock .token.attr-value, .theme-dark .HyperMD-codeblock .token.function, .theme-dark .HyperMD-codeblock .token.class-name, .theme-light .HyperMD-codeblock .cm-string, .theme-light .HyperMD-codeblock .cm-attribute, .theme-light .HyperMD-codeblock .token.atrule, .theme-light .HyperMD-codeblock .token.attr-value, .theme-light .HyperMD-codeblock .token.function, .theme-light .HyperMD-codeblock .token.class-name {
+color:#88c0d0;
+}
+
+.theme-light p>code .cm-keyword, .theme-light p>code .token.keyword, .theme-dark p>code .cm-keyword, .theme-dark p>code .token.keyword, .theme-light pre:not(pre.frontmatter) .cm-keyword, .theme-light pre:not(pre.frontmatter) .token.keyword, .theme-dark pre:not(pre.frontmatter) .cm-keyword, .theme-dark pre:not(pre.frontmatter) .token.keyword, .theme-dark .HyperMD-codeblock .cm-keyword, .theme-dark .HyperMD-codeblock .token.keyword, .theme-light .HyperMD-codeblock .cm-keyword, .theme-light .HyperMD-codeblock .token.keyword {
+color:#81a1c1;
+}
+
+.theme-light p>code .token.regex, .theme-light p>code .token.important, .theme-dark p>code .token.regex, .theme-dark p>code .token.important, .theme-light pre:not(pre.frontmatter) .token.regex, .theme-light pre:not(pre.frontmatter) .token.important, .theme-dark pre:not(pre.frontmatter) .token.regex, .theme-dark pre:not(pre.frontmatter) .token.important, .theme-dark .HyperMD-codeblock .token.regex, .theme-dark .HyperMD-codeblock .token.important, .theme-light .HyperMD-codeblock .token.regex, .theme-light .HyperMD-codeblock .token.important {
+color:#ebcb8b;
+}
+
+.theme-light p>code .token.important, .theme-light p>code .token.bold, .theme-dark p>code .token.important, .theme-dark p>code .token.bold, .theme-light pre:not(pre.frontmatter) .token.important, .theme-light pre:not(pre.frontmatter) .token.bold, .theme-dark pre:not(pre.frontmatter) .token.important, .theme-dark pre:not(pre.frontmatter) .token.bold, .theme-dark .HyperMD-codeblock .token.important, .theme-dark .HyperMD-codeblock .token.bold, .theme-light .HyperMD-codeblock .token.important, .theme-light .HyperMD-codeblock .token.bold {
+font-weight:bold;
+}
+
+.theme-light p>code .token.italic, .theme-dark p>code .token.italic, .theme-light pre:not(pre.frontmatter) .token.italic, .theme-dark pre:not(pre.frontmatter) .token.italic, .theme-dark .HyperMD-codeblock .token.italic, .theme-light .HyperMD-codeblock .token.italic {
+font-style:italic;
+}
+
+.theme-light p>code, .theme-light pre:not(pre.frontmatter), .theme-light .HyperMD-codeblock {
+--code-background: #e5e9f0;
+--code-normal: #3b4252;
+}`,
+    },
+    dracula: {
+      dark: `.theme-light p>code, .theme-dark p>code, .theme-light pre:not(.frontmatter), .theme-dark pre:not(.frontmatter), .theme-light .HyperMD-codeblock, .theme-dark .HyperMD-codeblock {
+--code-background: #282a36;
+--code-normal: #f8f8f2;
+--text-muted: #f8f8f2;
+--text-faint: #6272a4;
+}
+
+.theme-light p>code .cm-string-2, .theme-light p>code .cm-atom, .theme-light p>code .cm-comment, .theme-light p>code .cm-meta, .theme-light p>code .token.comment, .theme-light p>code .token.prolog, .theme-light p>code .token.doctype, .theme-light p>code .token.cdata, .theme-dark p>code .cm-string-2, .theme-dark p>code .cm-atom, .theme-dark p>code .cm-comment, .theme-dark p>code .cm-meta, .theme-dark p>code .token.comment, .theme-dark p>code .token.prolog, .theme-dark p>code .token.doctype, .theme-dark p>code .token.cdata, .theme-light pre:not(.frontmatter) .cm-string-2, .theme-light pre:not(.frontmatter) .cm-atom, .theme-light pre:not(.frontmatter) .cm-comment, .theme-light pre:not(.frontmatter) .cm-meta, .theme-light pre:not(.frontmatter) .token.comment, .theme-light pre:not(.frontmatter) .token.prolog, .theme-light pre:not(.frontmatter) .token.doctype, .theme-light pre:not(.frontmatter) .token.cdata, .theme-dark pre:not(.frontmatter) .cm-string-2, .theme-dark pre:not(.frontmatter) .cm-atom, .theme-dark pre:not(.frontmatter) .cm-comment, .theme-dark pre:not(.frontmatter) .cm-meta, .theme-dark pre:not(.frontmatter) .token.comment, .theme-dark pre:not(.frontmatter) .token.prolog, .theme-dark pre:not(.frontmatter) .token.doctype, .theme-dark pre:not(.frontmatter) .token.cdata, .theme-light .HyperMD-codeblock .cm-string-2, .theme-light .HyperMD-codeblock .cm-atom, .theme-light .HyperMD-codeblock .cm-comment, .theme-light .HyperMD-codeblock .cm-meta, .theme-light .HyperMD-codeblock .token.comment, .theme-light .HyperMD-codeblock .token.prolog, .theme-light .HyperMD-codeblock .token.doctype, .theme-light .HyperMD-codeblock .token.cdata, .theme-dark .HyperMD-codeblock .cm-string-2, .theme-dark .HyperMD-codeblock .cm-atom, .theme-dark .HyperMD-codeblock .cm-comment, .theme-dark .HyperMD-codeblock .cm-meta, .theme-dark .HyperMD-codeblock .token.comment, .theme-dark .HyperMD-codeblock .token.prolog, .theme-dark .HyperMD-codeblock .token.doctype, .theme-dark .HyperMD-codeblock .token.cdata {
+color:#6272a4;
+}
+
+.theme-light p>code .cm-bracket.cm-tag, .theme-light p>code .cm-hr, .theme-light p>code .cm-punctuation, .theme-light p>code .token.punctuation, .theme-dark p>code .cm-bracket.cm-tag, .theme-dark p>code .cm-hr, .theme-dark p>code .cm-punctuation, .theme-dark p>code .token.punctuation, .theme-light pre:not(.frontmatter) .cm-bracket.cm-tag, .theme-light pre:not(.frontmatter) .cm-hr, .theme-light pre:not(.frontmatter) .cm-punctuation, .theme-light pre:not(.frontmatter) .token.punctuation, .theme-dark pre:not(.frontmatter) .cm-bracket.cm-tag, .theme-dark pre:not(.frontmatter) .cm-hr, .theme-dark pre:not(.frontmatter) .cm-punctuation, .theme-dark pre:not(.frontmatter) .token.punctuation, .theme-light .HyperMD-codeblock .cm-bracket.cm-tag, .theme-light .HyperMD-codeblock .cm-hr, .theme-light .HyperMD-codeblock .cm-punctuation, .theme-light .HyperMD-codeblock .token.punctuation, .theme-dark .HyperMD-codeblock .cm-bracket.cm-tag, .theme-dark .HyperMD-codeblock .cm-hr, .theme-dark .HyperMD-codeblock .cm-punctuation, .theme-dark .HyperMD-codeblock .token.punctuation {
+color:#f8f8f2;
+}
+
+.theme-light p>code .cm-type, .theme-light p>code .namespace, .theme-dark p>code .cm-type, .theme-dark p>code .namespace, .theme-light pre:not(.frontmatter) .cm-type, .theme-light pre:not(.frontmatter) .namespace, .theme-dark pre:not(.frontmatter) .cm-type, .theme-dark pre:not(.frontmatter) .namespace, .theme-light .HyperMD-codeblock .cm-type, .theme-light .HyperMD-codeblock .namespace, .theme-dark .HyperMD-codeblock .cm-type, .theme-dark .HyperMD-codeblock .namespace {
+opacity:.7;
+}
+
+.theme-light p>code .cm-def, .theme-light p>code .cm-tag, .theme-light p>code .cm-property-access, .theme-light p>code .cm-property, .theme-light p>code .token.property, .theme-light p>code .token.tag, .theme-light p>code .token.constant, .theme-light p>code .token.symbol, .theme-light p>code .token.deleted, .theme-dark p>code .cm-def, .theme-dark p>code .cm-tag, .theme-dark p>code .cm-property-access, .theme-dark p>code .cm-property, .theme-dark p>code .token.property, .theme-dark p>code .token.tag, .theme-dark p>code .token.constant, .theme-dark p>code .token.symbol, .theme-dark p>code .token.deleted, .theme-light pre:not(.frontmatter) .cm-def, .theme-light pre:not(.frontmatter) .cm-tag, .theme-light pre:not(.frontmatter) .cm-property-access, .theme-light pre:not(.frontmatter) .cm-property, .theme-light pre:not(.frontmatter) .token.property, .theme-light pre:not(.frontmatter) .token.tag, .theme-light pre:not(.frontmatter) .token.constant, .theme-light pre:not(.frontmatter) .token.symbol, .theme-light pre:not(.frontmatter) .token.deleted, .theme-dark pre:not(.frontmatter) .cm-def, .theme-dark pre:not(.frontmatter) .cm-tag, .theme-dark pre:not(.frontmatter) .cm-property-access, .theme-dark pre:not(.frontmatter) .cm-property, .theme-dark pre:not(.frontmatter) .token.property, .theme-dark pre:not(.frontmatter) .token.tag, .theme-dark pre:not(.frontmatter) .token.constant, .theme-dark pre:not(.frontmatter) .token.symbol, .theme-dark pre:not(.frontmatter) .token.deleted, .theme-light .HyperMD-codeblock .cm-def, .theme-light .HyperMD-codeblock .cm-tag, .theme-light .HyperMD-codeblock .cm-property-access, .theme-light .HyperMD-codeblock .cm-property, .theme-light .HyperMD-codeblock .token.property, .theme-light .HyperMD-codeblock .token.tag, .theme-light .HyperMD-codeblock .token.constant, .theme-light .HyperMD-codeblock .token.symbol, .theme-light .HyperMD-codeblock .token.deleted, .theme-dark .HyperMD-codeblock .cm-def, .theme-dark .HyperMD-codeblock .cm-tag, .theme-dark .HyperMD-codeblock .cm-property-access, .theme-dark .HyperMD-codeblock .cm-property, .theme-dark .HyperMD-codeblock .token.property, .theme-dark .HyperMD-codeblock .token.tag, .theme-dark .HyperMD-codeblock .token.constant, .theme-dark .HyperMD-codeblock .token.symbol, .theme-dark .HyperMD-codeblock .token.deleted {
+color:#ff79c6;
+}
+
+.theme-light p>code .cm-atom, .theme-light p>code .cm-number, .theme-light p>code .token.boolean, .theme-light p>code .token.number, .theme-dark p>code .cm-atom, .theme-dark p>code .cm-number, .theme-dark p>code .token.boolean, .theme-dark p>code .token.number, .theme-light pre:not(.frontmatter) .cm-atom, .theme-light pre:not(.frontmatter) .cm-number, .theme-light pre:not(.frontmatter) .token.boolean, .theme-light pre:not(.frontmatter) .token.number, .theme-dark pre:not(.frontmatter) .cm-atom, .theme-dark pre:not(.frontmatter) .cm-number, .theme-dark pre:not(.frontmatter) .token.boolean, .theme-dark pre:not(.frontmatter) .token.number, .theme-light .HyperMD-codeblock .cm-atom, .theme-light .HyperMD-codeblock .cm-number, .theme-light .HyperMD-codeblock .token.boolean, .theme-light .HyperMD-codeblock .token.number, .theme-dark .HyperMD-codeblock .cm-atom, .theme-dark .HyperMD-codeblock .cm-number, .theme-dark .HyperMD-codeblock .token.boolean, .theme-dark .HyperMD-codeblock .token.number {
+color:#bd93f9;
+}
+
+.theme-light p>code .cm-attribute, .theme-light p>code .cm-variable-2, .theme-light p>code .cm-variable-3, .theme-light p>code .token.selector, .theme-light p>code .token.attr-name, .theme-light p>code .token.string, .theme-light p>code .token.char, .theme-light p>code .token.builtin, .theme-light p>code .token.inserted, .theme-dark p>code .cm-attribute, .theme-dark p>code .cm-variable-2, .theme-dark p>code .cm-variable-3, .theme-dark p>code .token.selector, .theme-dark p>code .token.attr-name, .theme-dark p>code .token.string, .theme-dark p>code .token.char, .theme-dark p>code .token.builtin, .theme-dark p>code .token.inserted, .theme-light pre:not(.frontmatter) .cm-attribute, .theme-light pre:not(.frontmatter) .cm-variable-2, .theme-light pre:not(.frontmatter) .cm-variable-3, .theme-light pre:not(.frontmatter) .token.selector, .theme-light pre:not(.frontmatter) .token.attr-name, .theme-light pre:not(.frontmatter) .token.string, .theme-light pre:not(.frontmatter) .token.char, .theme-light pre:not(.frontmatter) .token.builtin, .theme-light pre:not(.frontmatter) .token.inserted, .theme-dark pre:not(.frontmatter) .cm-attribute, .theme-dark pre:not(.frontmatter) .cm-variable-2, .theme-dark pre:not(.frontmatter) .cm-variable-3, .theme-dark pre:not(.frontmatter) .token.selector, .theme-dark pre:not(.frontmatter) .token.attr-name, .theme-dark pre:not(.frontmatter) .token.string, .theme-dark pre:not(.frontmatter) .token.char, .theme-dark pre:not(.frontmatter) .token.builtin, .theme-dark pre:not(.frontmatter) .token.inserted, .theme-light .HyperMD-codeblock .cm-attribute, .theme-light .HyperMD-codeblock .cm-variable-2, .theme-light .HyperMD-codeblock .cm-variable-3, .theme-light .HyperMD-codeblock .token.selector, .theme-light .HyperMD-codeblock .token.attr-name, .theme-light .HyperMD-codeblock .token.string, .theme-light .HyperMD-codeblock .token.char, .theme-light .HyperMD-codeblock .token.builtin, .theme-light .HyperMD-codeblock .token.inserted, .theme-dark .HyperMD-codeblock .cm-attribute, .theme-dark .HyperMD-codeblock .cm-variable-2, .theme-dark .HyperMD-codeblock .cm-variable-3, .theme-dark .HyperMD-codeblock .token.selector, .theme-dark .HyperMD-codeblock .token.attr-name, .theme-dark .HyperMD-codeblock .token.string, .theme-dark .HyperMD-codeblock .token.char, .theme-dark .HyperMD-codeblock .token.builtin, .theme-dark .HyperMD-codeblock .token.inserted {
+color:#50fa7b;
+}
+
+.theme-light p>code .cm-operator, .theme-light p>code .token.operator, .theme-light p>code .token.entity, .theme-light p>code .token.url, .theme-light p>code .language-css .token.string, .theme-light p>code .style .token.string, .theme-light p>code .token.variable, .theme-dark p>code .cm-operator, .theme-dark p>code .token.operator, .theme-dark p>code .token.entity, .theme-dark p>code .token.url, .theme-dark p>code .language-css .token.string, .theme-dark p>code .style .token.string, .theme-dark p>code .token.variable, .theme-light pre:not(.frontmatter) .cm-operator, .theme-light pre:not(.frontmatter) .token.operator, .theme-light pre:not(.frontmatter) .token.entity, .theme-light pre:not(.frontmatter) .token.url, .theme-light pre:not(.frontmatter) .language-css .token.string, .theme-light pre:not(.frontmatter) .style .token.string, .theme-light pre:not(.frontmatter) .token.variable, .theme-dark pre:not(.frontmatter) .cm-operator, .theme-dark pre:not(.frontmatter) .token.operator, .theme-dark pre:not(.frontmatter) .token.entity, .theme-dark pre:not(.frontmatter) .token.url, .theme-dark pre:not(.frontmatter) .language-css .token.string, .theme-dark pre:not(.frontmatter) .style .token.string, .theme-dark pre:not(.frontmatter) .token.variable, .theme-light .HyperMD-codeblock .cm-operator, .theme-light .HyperMD-codeblock .token.operator, .theme-light .HyperMD-codeblock .token.entity, .theme-light .HyperMD-codeblock .token.url, .theme-light .HyperMD-codeblock .language-css .token.string, .theme-light .HyperMD-codeblock .style .token.string, .theme-light .HyperMD-codeblock .token.variable, .theme-dark .HyperMD-codeblock .cm-operator, .theme-dark .HyperMD-codeblock .token.operator, .theme-dark .HyperMD-codeblock .token.entity, .theme-dark .HyperMD-codeblock .token.url, .theme-dark .HyperMD-codeblock .language-css .token.string, .theme-dark .HyperMD-codeblock .style .token.string, .theme-dark .HyperMD-codeblock .token.variable {
+color:#f8f8f2;
+}
+
+.theme-light p>code .cm-string, .theme-light p>code .token.atrule, .theme-light p>code .token.attr-value, .theme-light p>code .token.function, .theme-light p>code .token.class-name, .theme-dark p>code .cm-string, .theme-dark p>code .token.atrule, .theme-dark p>code .token.attr-value, .theme-dark p>code .token.function, .theme-dark p>code .token.class-name, .theme-light pre:not(.frontmatter) .cm-string, .theme-light pre:not(.frontmatter) .token.atrule, .theme-light pre:not(.frontmatter) .token.attr-value, .theme-light pre:not(.frontmatter) .token.function, .theme-light pre:not(.frontmatter) .token.class-name, .theme-dark pre:not(.frontmatter) .cm-string, .theme-dark pre:not(.frontmatter) .token.atrule, .theme-dark pre:not(.frontmatter) .token.attr-value, .theme-dark pre:not(.frontmatter) .token.function, .theme-dark pre:not(.frontmatter) .token.class-name, .theme-light .HyperMD-codeblock .cm-string, .theme-light .HyperMD-codeblock .token.atrule, .theme-light .HyperMD-codeblock .token.attr-value, .theme-light .HyperMD-codeblock .token.function, .theme-light .HyperMD-codeblock .token.class-name, .theme-dark .HyperMD-codeblock .cm-string, .theme-dark .HyperMD-codeblock .token.atrule, .theme-dark .HyperMD-codeblock .token.attr-value, .theme-dark .HyperMD-codeblock .token.function, .theme-dark .HyperMD-codeblock .token.class-name {
+color:#f1fa8c;
+}
+
+.theme-light p>code .cm-keyword, .theme-light p>code .token.keyword, .theme-dark p>code .cm-keyword, .theme-dark p>code .token.keyword, .theme-light pre:not(.frontmatter) .cm-keyword, .theme-light pre:not(.frontmatter) .token.keyword, .theme-dark pre:not(.frontmatter) .cm-keyword, .theme-dark pre:not(.frontmatter) .token.keyword, .theme-light .HyperMD-codeblock .cm-keyword, .theme-light .HyperMD-codeblock .token.keyword, .theme-dark .HyperMD-codeblock .cm-keyword, .theme-dark .HyperMD-codeblock .token.keyword {
+color:#8be9fd;
+}
+
+.theme-light p>code .cm-builtin, .theme-light p>code .token.regex, .theme-light p>code .token.important, .theme-dark p>code .cm-builtin, .theme-dark p>code .token.regex, .theme-dark p>code .token.important, .theme-light pre:not(.frontmatter) .cm-builtin, .theme-light pre:not(.frontmatter) .token.regex, .theme-light pre:not(.frontmatter) .token.important, .theme-dark pre:not(.frontmatter) .cm-builtin, .theme-dark pre:not(.frontmatter) .token.regex, .theme-dark pre:not(.frontmatter) .token.important, .theme-light .HyperMD-codeblock .cm-builtin, .theme-light .HyperMD-codeblock .token.regex, .theme-light .HyperMD-codeblock .token.important, .theme-dark .HyperMD-codeblock .cm-builtin, .theme-dark .HyperMD-codeblock .token.regex, .theme-dark .HyperMD-codeblock .token.important {
+color:#ffb86c;
+}
+
+.theme-light p>code .token.important, .theme-light p>code .token.bold, .theme-dark p>code .token.important, .theme-dark p>code .token.bold, .theme-light pre:not(.frontmatter) .token.important, .theme-light pre:not(.frontmatter) .token.bold, .theme-dark pre:not(.frontmatter) .token.important, .theme-dark pre:not(.frontmatter) .token.bold, .theme-light .HyperMD-codeblock .token.important, .theme-light .HyperMD-codeblock .token.bold, .theme-dark .HyperMD-codeblock .token.important, .theme-dark .HyperMD-codeblock .token.bold {
+font-weight:bold;
+}
+
+.theme-light p>code .token.italic, .theme-dark p>code .token.italic, .theme-light pre:not(.frontmatter) .token.italic, .theme-dark pre:not(.frontmatter) .token.italic, .theme-light .HyperMD-codeblock .token.italic, .theme-dark .HyperMD-codeblock .token.italic {
+font-style:italic;
+}
+
+.theme-light p>code .token.entity, .theme-dark p>code .token.entity, .theme-light pre:not(.frontmatter) .token.entity, .theme-dark pre:not(.frontmatter) .token.entity, .theme-light .HyperMD-codeblock .token.entity, .theme-dark .HyperMD-codeblock .token.entity {
+cursor:help;
+}`,
+      light: `.theme-light p>code, .theme-dark p>code, .theme-light pre:not(.frontmatter), .theme-dark pre:not(.frontmatter), .theme-light .HyperMD-codeblock, .theme-dark .HyperMD-codeblock {
+--code-background: #282a36;
+--code-normal: #f8f8f2;
+--text-muted: #f8f8f2;
+--text-faint: #6272a4;
+}
+
+.theme-light p>code .cm-string-2, .theme-light p>code .cm-atom, .theme-light p>code .cm-comment, .theme-light p>code .cm-meta, .theme-light p>code .token.comment, .theme-light p>code .token.prolog, .theme-light p>code .token.doctype, .theme-light p>code .token.cdata, .theme-dark p>code .cm-string-2, .theme-dark p>code .cm-atom, .theme-dark p>code .cm-comment, .theme-dark p>code .cm-meta, .theme-dark p>code .token.comment, .theme-dark p>code .token.prolog, .theme-dark p>code .token.doctype, .theme-dark p>code .token.cdata, .theme-light pre:not(.frontmatter) .cm-string-2, .theme-light pre:not(.frontmatter) .cm-atom, .theme-light pre:not(.frontmatter) .cm-comment, .theme-light pre:not(.frontmatter) .cm-meta, .theme-light pre:not(.frontmatter) .token.comment, .theme-light pre:not(.frontmatter) .token.prolog, .theme-light pre:not(.frontmatter) .token.doctype, .theme-light pre:not(.frontmatter) .token.cdata, .theme-dark pre:not(.frontmatter) .cm-string-2, .theme-dark pre:not(.frontmatter) .cm-atom, .theme-dark pre:not(.frontmatter) .cm-comment, .theme-dark pre:not(.frontmatter) .cm-meta, .theme-dark pre:not(.frontmatter) .token.comment, .theme-dark pre:not(.frontmatter) .token.prolog, .theme-dark pre:not(.frontmatter) .token.doctype, .theme-dark pre:not(.frontmatter) .token.cdata, .theme-light .HyperMD-codeblock .cm-string-2, .theme-light .HyperMD-codeblock .cm-atom, .theme-light .HyperMD-codeblock .cm-comment, .theme-light .HyperMD-codeblock .cm-meta, .theme-light .HyperMD-codeblock .token.comment, .theme-light .HyperMD-codeblock .token.prolog, .theme-light .HyperMD-codeblock .token.doctype, .theme-light .HyperMD-codeblock .token.cdata, .theme-dark .HyperMD-codeblock .cm-string-2, .theme-dark .HyperMD-codeblock .cm-atom, .theme-dark .HyperMD-codeblock .cm-comment, .theme-dark .HyperMD-codeblock .cm-meta, .theme-dark .HyperMD-codeblock .token.comment, .theme-dark .HyperMD-codeblock .token.prolog, .theme-dark .HyperMD-codeblock .token.doctype, .theme-dark .HyperMD-codeblock .token.cdata {
+color:#6272a4;
+}
+
+.theme-light p>code .cm-bracket.cm-tag, .theme-light p>code .cm-hr, .theme-light p>code .cm-punctuation, .theme-light p>code .token.punctuation, .theme-dark p>code .cm-bracket.cm-tag, .theme-dark p>code .cm-hr, .theme-dark p>code .cm-punctuation, .theme-dark p>code .token.punctuation, .theme-light pre:not(.frontmatter) .cm-bracket.cm-tag, .theme-light pre:not(.frontmatter) .cm-hr, .theme-light pre:not(.frontmatter) .cm-punctuation, .theme-light pre:not(.frontmatter) .token.punctuation, .theme-dark pre:not(.frontmatter) .cm-bracket.cm-tag, .theme-dark pre:not(.frontmatter) .cm-hr, .theme-dark pre:not(.frontmatter) .cm-punctuation, .theme-dark pre:not(.frontmatter) .token.punctuation, .theme-light .HyperMD-codeblock .cm-bracket.cm-tag, .theme-light .HyperMD-codeblock .cm-hr, .theme-light .HyperMD-codeblock .cm-punctuation, .theme-light .HyperMD-codeblock .token.punctuation, .theme-dark .HyperMD-codeblock .cm-bracket.cm-tag, .theme-dark .HyperMD-codeblock .cm-hr, .theme-dark .HyperMD-codeblock .cm-punctuation, .theme-dark .HyperMD-codeblock .token.punctuation {
+color:#f8f8f2;
+}
+
+.theme-light p>code .cm-type, .theme-light p>code .namespace, .theme-dark p>code .cm-type, .theme-dark p>code .namespace, .theme-light pre:not(.frontmatter) .cm-type, .theme-light pre:not(.frontmatter) .namespace, .theme-dark pre:not(.frontmatter) .cm-type, .theme-dark pre:not(.frontmatter) .namespace, .theme-light .HyperMD-codeblock .cm-type, .theme-light .HyperMD-codeblock .namespace, .theme-dark .HyperMD-codeblock .cm-type, .theme-dark .HyperMD-codeblock .namespace {
+opacity:.7;
+}
+
+.theme-light p>code .cm-def, .theme-light p>code .cm-tag, .theme-light p>code .cm-property-access, .theme-light p>code .cm-property, .theme-light p>code .token.property, .theme-light p>code .token.tag, .theme-light p>code .token.constant, .theme-light p>code .token.symbol, .theme-light p>code .token.deleted, .theme-dark p>code .cm-def, .theme-dark p>code .cm-tag, .theme-dark p>code .cm-property-access, .theme-dark p>code .cm-property, .theme-dark p>code .token.property, .theme-dark p>code .token.tag, .theme-dark p>code .token.constant, .theme-dark p>code .token.symbol, .theme-dark p>code .token.deleted, .theme-light pre:not(.frontmatter) .cm-def, .theme-light pre:not(.frontmatter) .cm-tag, .theme-light pre:not(.frontmatter) .cm-property-access, .theme-light pre:not(.frontmatter) .cm-property, .theme-light pre:not(.frontmatter) .token.property, .theme-light pre:not(.frontmatter) .token.tag, .theme-light pre:not(.frontmatter) .token.constant, .theme-light pre:not(.frontmatter) .token.symbol, .theme-light pre:not(.frontmatter) .token.deleted, .theme-dark pre:not(.frontmatter) .cm-def, .theme-dark pre:not(.frontmatter) .cm-tag, .theme-dark pre:not(.frontmatter) .cm-property-access, .theme-dark pre:not(.frontmatter) .cm-property, .theme-dark pre:not(.frontmatter) .token.property, .theme-dark pre:not(.frontmatter) .token.tag, .theme-dark pre:not(.frontmatter) .token.constant, .theme-dark pre:not(.frontmatter) .token.symbol, .theme-dark pre:not(.frontmatter) .token.deleted, .theme-light .HyperMD-codeblock .cm-def, .theme-light .HyperMD-codeblock .cm-tag, .theme-light .HyperMD-codeblock .cm-property-access, .theme-light .HyperMD-codeblock .cm-property, .theme-light .HyperMD-codeblock .token.property, .theme-light .HyperMD-codeblock .token.tag, .theme-light .HyperMD-codeblock .token.constant, .theme-light .HyperMD-codeblock .token.symbol, .theme-light .HyperMD-codeblock .token.deleted, .theme-dark .HyperMD-codeblock .cm-def, .theme-dark .HyperMD-codeblock .cm-tag, .theme-dark .HyperMD-codeblock .cm-property-access, .theme-dark .HyperMD-codeblock .cm-property, .theme-dark .HyperMD-codeblock .token.property, .theme-dark .HyperMD-codeblock .token.tag, .theme-dark .HyperMD-codeblock .token.constant, .theme-dark .HyperMD-codeblock .token.symbol, .theme-dark .HyperMD-codeblock .token.deleted {
+color:#ff79c6;
+}
+
+.theme-light p>code .cm-atom, .theme-light p>code .cm-number, .theme-light p>code .token.boolean, .theme-light p>code .token.number, .theme-dark p>code .cm-atom, .theme-dark p>code .cm-number, .theme-dark p>code .token.boolean, .theme-dark p>code .token.number, .theme-light pre:not(.frontmatter) .cm-atom, .theme-light pre:not(.frontmatter) .cm-number, .theme-light pre:not(.frontmatter) .token.boolean, .theme-light pre:not(.frontmatter) .token.number, .theme-dark pre:not(.frontmatter) .cm-atom, .theme-dark pre:not(.frontmatter) .cm-number, .theme-dark pre:not(.frontmatter) .token.boolean, .theme-dark pre:not(.frontmatter) .token.number, .theme-light .HyperMD-codeblock .cm-atom, .theme-light .HyperMD-codeblock .cm-number, .theme-light .HyperMD-codeblock .token.boolean, .theme-light .HyperMD-codeblock .token.number, .theme-dark .HyperMD-codeblock .cm-atom, .theme-dark .HyperMD-codeblock .cm-number, .theme-dark .HyperMD-codeblock .token.boolean, .theme-dark .HyperMD-codeblock .token.number {
+color:#bd93f9;
+}
+
+.theme-light p>code .cm-attribute, .theme-light p>code .cm-variable-2, .theme-light p>code .cm-variable-3, .theme-light p>code .token.selector, .theme-light p>code .token.attr-name, .theme-light p>code .token.string, .theme-light p>code .token.char, .theme-light p>code .token.builtin, .theme-light p>code .token.inserted, .theme-dark p>code .cm-attribute, .theme-dark p>code .cm-variable-2, .theme-dark p>code .cm-variable-3, .theme-dark p>code .token.selector, .theme-dark p>code .token.attr-name, .theme-dark p>code .token.string, .theme-dark p>code .token.char, .theme-dark p>code .token.builtin, .theme-dark p>code .token.inserted, .theme-light pre:not(.frontmatter) .cm-attribute, .theme-light pre:not(.frontmatter) .cm-variable-2, .theme-light pre:not(.frontmatter) .cm-variable-3, .theme-light pre:not(.frontmatter) .token.selector, .theme-light pre:not(.frontmatter) .token.attr-name, .theme-light pre:not(.frontmatter) .token.string, .theme-light pre:not(.frontmatter) .token.char, .theme-light pre:not(.frontmatter) .token.builtin, .theme-light pre:not(.frontmatter) .token.inserted, .theme-dark pre:not(.frontmatter) .cm-attribute, .theme-dark pre:not(.frontmatter) .cm-variable-2, .theme-dark pre:not(.frontmatter) .cm-variable-3, .theme-dark pre:not(.frontmatter) .token.selector, .theme-dark pre:not(.frontmatter) .token.attr-name, .theme-dark pre:not(.frontmatter) .token.string, .theme-dark pre:not(.frontmatter) .token.char, .theme-dark pre:not(.frontmatter) .token.builtin, .theme-dark pre:not(.frontmatter) .token.inserted, .theme-light .HyperMD-codeblock .cm-attribute, .theme-light .HyperMD-codeblock .cm-variable-2, .theme-light .HyperMD-codeblock .cm-variable-3, .theme-light .HyperMD-codeblock .token.selector, .theme-light .HyperMD-codeblock .token.attr-name, .theme-light .HyperMD-codeblock .token.string, .theme-light .HyperMD-codeblock .token.char, .theme-light .HyperMD-codeblock .token.builtin, .theme-light .HyperMD-codeblock .token.inserted, .theme-dark .HyperMD-codeblock .cm-attribute, .theme-dark .HyperMD-codeblock .cm-variable-2, .theme-dark .HyperMD-codeblock .cm-variable-3, .theme-dark .HyperMD-codeblock .token.selector, .theme-dark .HyperMD-codeblock .token.attr-name, .theme-dark .HyperMD-codeblock .token.string, .theme-dark .HyperMD-codeblock .token.char, .theme-dark .HyperMD-codeblock .token.builtin, .theme-dark .HyperMD-codeblock .token.inserted {
+color:#50fa7b;
+}
+
+.theme-light p>code .cm-operator, .theme-light p>code .token.operator, .theme-light p>code .token.entity, .theme-light p>code .token.url, .theme-light p>code .language-css .token.string, .theme-light p>code .style .token.string, .theme-light p>code .token.variable, .theme-dark p>code .cm-operator, .theme-dark p>code .token.operator, .theme-dark p>code .token.entity, .theme-dark p>code .token.url, .theme-dark p>code .language-css .token.string, .theme-dark p>code .style .token.string, .theme-dark p>code .token.variable, .theme-light pre:not(.frontmatter) .cm-operator, .theme-light pre:not(.frontmatter) .token.operator, .theme-light pre:not(.frontmatter) .token.entity, .theme-light pre:not(.frontmatter) .token.url, .theme-light pre:not(.frontmatter) .language-css .token.string, .theme-light pre:not(.frontmatter) .style .token.string, .theme-light pre:not(.frontmatter) .token.variable, .theme-dark pre:not(.frontmatter) .cm-operator, .theme-dark pre:not(.frontmatter) .token.operator, .theme-dark pre:not(.frontmatter) .token.entity, .theme-dark pre:not(.frontmatter) .token.url, .theme-dark pre:not(.frontmatter) .language-css .token.string, .theme-dark pre:not(.frontmatter) .style .token.string, .theme-dark pre:not(.frontmatter) .token.variable, .theme-light .HyperMD-codeblock .cm-operator, .theme-light .HyperMD-codeblock .token.operator, .theme-light .HyperMD-codeblock .token.entity, .theme-light .HyperMD-codeblock .token.url, .theme-light .HyperMD-codeblock .language-css .token.string, .theme-light .HyperMD-codeblock .style .token.string, .theme-light .HyperMD-codeblock .token.variable, .theme-dark .HyperMD-codeblock .cm-operator, .theme-dark .HyperMD-codeblock .token.operator, .theme-dark .HyperMD-codeblock .token.entity, .theme-dark .HyperMD-codeblock .token.url, .theme-dark .HyperMD-codeblock .language-css .token.string, .theme-dark .HyperMD-codeblock .style .token.string, .theme-dark .HyperMD-codeblock .token.variable {
+color:#f8f8f2;
+}
+
+.theme-light p>code .cm-string, .theme-light p>code .token.atrule, .theme-light p>code .token.attr-value, .theme-light p>code .token.function, .theme-light p>code .token.class-name, .theme-dark p>code .cm-string, .theme-dark p>code .token.atrule, .theme-dark p>code .token.attr-value, .theme-dark p>code .token.function, .theme-dark p>code .token.class-name, .theme-light pre:not(.frontmatter) .cm-string, .theme-light pre:not(.frontmatter) .token.atrule, .theme-light pre:not(.frontmatter) .token.attr-value, .theme-light pre:not(.frontmatter) .token.function, .theme-light pre:not(.frontmatter) .token.class-name, .theme-dark pre:not(.frontmatter) .cm-string, .theme-dark pre:not(.frontmatter) .token.atrule, .theme-dark pre:not(.frontmatter) .token.attr-value, .theme-dark pre:not(.frontmatter) .token.function, .theme-dark pre:not(.frontmatter) .token.class-name, .theme-light .HyperMD-codeblock .cm-string, .theme-light .HyperMD-codeblock .token.atrule, .theme-light .HyperMD-codeblock .token.attr-value, .theme-light .HyperMD-codeblock .token.function, .theme-light .HyperMD-codeblock .token.class-name, .theme-dark .HyperMD-codeblock .cm-string, .theme-dark .HyperMD-codeblock .token.atrule, .theme-dark .HyperMD-codeblock .token.attr-value, .theme-dark .HyperMD-codeblock .token.function, .theme-dark .HyperMD-codeblock .token.class-name {
+color:#f1fa8c;
+}
+
+.theme-light p>code .cm-keyword, .theme-light p>code .token.keyword, .theme-dark p>code .cm-keyword, .theme-dark p>code .token.keyword, .theme-light pre:not(.frontmatter) .cm-keyword, .theme-light pre:not(.frontmatter) .token.keyword, .theme-dark pre:not(.frontmatter) .cm-keyword, .theme-dark pre:not(.frontmatter) .token.keyword, .theme-light .HyperMD-codeblock .cm-keyword, .theme-light .HyperMD-codeblock .token.keyword, .theme-dark .HyperMD-codeblock .cm-keyword, .theme-dark .HyperMD-codeblock .token.keyword {
+color:#8be9fd;
+}
+
+.theme-light p>code .cm-builtin, .theme-light p>code .token.regex, .theme-light p>code .token.important, .theme-dark p>code .cm-builtin, .theme-dark p>code .token.regex, .theme-dark p>code .token.important, .theme-light pre:not(.frontmatter) .cm-builtin, .theme-light pre:not(.frontmatter) .token.regex, .theme-light pre:not(.frontmatter) .token.important, .theme-dark pre:not(.frontmatter) .cm-builtin, .theme-dark pre:not(.frontmatter) .token.regex, .theme-dark pre:not(.frontmatter) .token.important, .theme-light .HyperMD-codeblock .cm-builtin, .theme-light .HyperMD-codeblock .token.regex, .theme-light .HyperMD-codeblock .token.important, .theme-dark .HyperMD-codeblock .cm-builtin, .theme-dark .HyperMD-codeblock .token.regex, .theme-dark .HyperMD-codeblock .token.important {
+color:#ffb86c;
+}
+
+.theme-light p>code .token.important, .theme-light p>code .token.bold, .theme-dark p>code .token.important, .theme-dark p>code .token.bold, .theme-light pre:not(.frontmatter) .token.important, .theme-light pre:not(.frontmatter) .token.bold, .theme-dark pre:not(.frontmatter) .token.important, .theme-dark pre:not(.frontmatter) .token.bold, .theme-light .HyperMD-codeblock .token.important, .theme-light .HyperMD-codeblock .token.bold, .theme-dark .HyperMD-codeblock .token.important, .theme-dark .HyperMD-codeblock .token.bold {
+font-weight:bold;
+}
+
+.theme-light p>code .token.italic, .theme-dark p>code .token.italic, .theme-light pre:not(.frontmatter) .token.italic, .theme-dark pre:not(.frontmatter) .token.italic, .theme-light .HyperMD-codeblock .token.italic, .theme-dark .HyperMD-codeblock .token.italic {
+font-style:italic;
+}
+
+.theme-light p>code .token.entity, .theme-dark p>code .token.entity, .theme-light pre:not(.frontmatter) .token.entity, .theme-dark pre:not(.frontmatter) .token.entity, .theme-light .HyperMD-codeblock .token.entity, .theme-dark .HyperMD-codeblock .token.entity {
+cursor:help;
+}`,
+    },
+    "one-dark": {
+      dark: `.theme-dark p>code, .theme-dark pre:not(.frontmatter), .theme-dark .HyperMD-codeblock {
+--code-background: hsl(220deg, 13%, 18%);
+--code-normal: hsl(220deg, 14%, 71%);
+--text-muted: hsl(220deg, 14%, 71%);
+--text-faint: hsl(220deg, 10%, 40%);
+}
+
+.theme-dark p>code .cm-hr, .theme-dark p>code .cm-comment, .theme-dark p>code .cm-meta, .theme-dark p>code .token.comment, .theme-dark p>code .token.prolog, .theme-dark p>code .token.cdata, .theme-dark pre:not(.frontmatter) .cm-hr, .theme-dark pre:not(.frontmatter) .cm-comment, .theme-dark pre:not(.frontmatter) .cm-meta, .theme-dark pre:not(.frontmatter) .token.comment, .theme-dark pre:not(.frontmatter) .token.prolog, .theme-dark pre:not(.frontmatter) .token.cdata, .theme-dark .HyperMD-codeblock .cm-hr, .theme-dark .HyperMD-codeblock .cm-comment, .theme-dark .HyperMD-codeblock .cm-meta, .theme-dark .HyperMD-codeblock .token.comment, .theme-dark .HyperMD-codeblock .token.prolog, .theme-dark .HyperMD-codeblock .token.cdata {
+color:#5c6370;
+}
+
+.theme-dark p>code .cm-bracket.cm-tag, .theme-dark p>code .cm-punctuation, .theme-dark p>code .cm-type, .theme-dark p>code .token.doctype, .theme-dark p>code .token.punctuation, .theme-dark p>code .token.entity, .theme-dark pre:not(.frontmatter) .cm-bracket.cm-tag, .theme-dark pre:not(.frontmatter) .cm-punctuation, .theme-dark pre:not(.frontmatter) .cm-type, .theme-dark pre:not(.frontmatter) .token.doctype, .theme-dark pre:not(.frontmatter) .token.punctuation, .theme-dark pre:not(.frontmatter) .token.entity, .theme-dark .HyperMD-codeblock .cm-bracket.cm-tag, .theme-dark .HyperMD-codeblock .cm-punctuation, .theme-dark .HyperMD-codeblock .cm-type, .theme-dark .HyperMD-codeblock .token.doctype, .theme-dark .HyperMD-codeblock .token.punctuation, .theme-dark .HyperMD-codeblock .token.entity {
+color:#abb2bf;
+}
+
+.theme-dark p>code .cm-number, .theme-dark p>code .cm-attribute, .theme-dark p>code .token.attr-name, .theme-dark p>code .token.class-name, .theme-dark p>code .token.boolean, .theme-dark p>code .token.constant, .theme-dark p>code .token.number, .theme-dark p>code .token.atrule, .theme-dark pre:not(.frontmatter) .cm-number, .theme-dark pre:not(.frontmatter) .cm-attribute, .theme-dark pre:not(.frontmatter) .token.attr-name, .theme-dark pre:not(.frontmatter) .token.class-name, .theme-dark pre:not(.frontmatter) .token.boolean, .theme-dark pre:not(.frontmatter) .token.constant, .theme-dark pre:not(.frontmatter) .token.number, .theme-dark pre:not(.frontmatter) .token.atrule, .theme-dark .HyperMD-codeblock .cm-number, .theme-dark .HyperMD-codeblock .cm-attribute, .theme-dark .HyperMD-codeblock .token.attr-name, .theme-dark .HyperMD-codeblock .token.class-name, .theme-dark .HyperMD-codeblock .token.boolean, .theme-dark .HyperMD-codeblock .token.constant, .theme-dark .HyperMD-codeblock .token.number, .theme-dark .HyperMD-codeblock .token.atrule {
+color:#d19a66;
+}
+
+.theme-dark p>code .cm-keyword, .theme-dark p>code .token.keyword, .theme-dark pre:not(.frontmatter) .cm-keyword, .theme-dark pre:not(.frontmatter) .token.keyword, .theme-dark .HyperMD-codeblock .cm-keyword, .theme-dark .HyperMD-codeblock .token.keyword {
+color:#c678dd;
+}
+
+.theme-dark p>code .cm-qualifier, .theme-dark p>code .cm-tag, .theme-dark p>code .cm-property, .theme-dark p>code .token.property, .theme-dark p>code .token.tag, .theme-dark p>code .token.symbol, .theme-dark p>code .token.deleted, .theme-dark p>code .token.important, .theme-dark pre:not(.frontmatter) .cm-qualifier, .theme-dark pre:not(.frontmatter) .cm-tag, .theme-dark pre:not(.frontmatter) .cm-property, .theme-dark pre:not(.frontmatter) .token.property, .theme-dark pre:not(.frontmatter) .token.tag, .theme-dark pre:not(.frontmatter) .token.symbol, .theme-dark pre:not(.frontmatter) .token.deleted, .theme-dark pre:not(.frontmatter) .token.important, .theme-dark .HyperMD-codeblock .cm-qualifier, .theme-dark .HyperMD-codeblock .cm-tag, .theme-dark .HyperMD-codeblock .cm-property, .theme-dark .HyperMD-codeblock .token.property, .theme-dark .HyperMD-codeblock .token.tag, .theme-dark .HyperMD-codeblock .token.symbol, .theme-dark .HyperMD-codeblock .token.deleted, .theme-dark .HyperMD-codeblock .token.important {
+color:#e06c75;
+}
+
+.theme-dark p>code .cm-string, .theme-dark p>code .cm-string-2, .theme-dark p>code .cm-builtin, .theme-dark p>code .token.selector, .theme-dark p>code .token.string, .theme-dark p>code .token.char, .theme-dark p>code .token.builtin, .theme-dark p>code .token.inserted, .theme-dark p>code .token.regex, .theme-dark p>code .token.attr-value, .theme-dark p>code .token.attr-value>.token.punctuation, .theme-dark pre:not(.frontmatter) .cm-string, .theme-dark pre:not(.frontmatter) .cm-string-2, .theme-dark pre:not(.frontmatter) .cm-builtin, .theme-dark pre:not(.frontmatter) .token.selector, .theme-dark pre:not(.frontmatter) .token.string, .theme-dark pre:not(.frontmatter) .token.char, .theme-dark pre:not(.frontmatter) .token.builtin, .theme-dark pre:not(.frontmatter) .token.inserted, .theme-dark pre:not(.frontmatter) .token.regex, .theme-dark pre:not(.frontmatter) .token.attr-value, .theme-dark pre:not(.frontmatter) .token.attr-value>.token.punctuation, .theme-dark .HyperMD-codeblock .cm-string, .theme-dark .HyperMD-codeblock .cm-string-2, .theme-dark .HyperMD-codeblock .cm-builtin, .theme-dark .HyperMD-codeblock .token.selector, .theme-dark .HyperMD-codeblock .token.string, .theme-dark .HyperMD-codeblock .token.char, .theme-dark .HyperMD-codeblock .token.builtin, .theme-dark .HyperMD-codeblock .token.inserted, .theme-dark .HyperMD-codeblock .token.regex, .theme-dark .HyperMD-codeblock .token.attr-value, .theme-dark .HyperMD-codeblock .token.attr-value>.token.punctuation {
+color:#98c379;
+}
+
+.theme-dark p>code .cm-variable, .theme-dark p>code .cm-variable-2, .theme-dark p>code .cm-variable-3, .theme-dark p>code .cm-operator, .theme-dark p>code .token.variable, .theme-dark p>code .token.operator, .theme-dark p>code .token.function, .theme-dark pre:not(.frontmatter) .cm-variable, .theme-dark pre:not(.frontmatter) .cm-variable-2, .theme-dark pre:not(.frontmatter) .cm-variable-3, .theme-dark pre:not(.frontmatter) .cm-operator, .theme-dark pre:not(.frontmatter) .token.variable, .theme-dark pre:not(.frontmatter) .token.operator, .theme-dark pre:not(.frontmatter) .token.function, .theme-dark .HyperMD-codeblock .cm-variable, .theme-dark .HyperMD-codeblock .cm-variable-2, .theme-dark .HyperMD-codeblock .cm-variable-3, .theme-dark .HyperMD-codeblock .cm-operator, .theme-dark .HyperMD-codeblock .token.variable, .theme-dark .HyperMD-codeblock .token.operator, .theme-dark .HyperMD-codeblock .token.function {
+color:#61afef;
+}
+
+.theme-dark p>code .cm-link, .theme-dark p>code .token.url, .theme-dark pre:not(.frontmatter) .cm-link, .theme-dark pre:not(.frontmatter) .token.url, .theme-dark .HyperMD-codeblock .cm-link, .theme-dark .HyperMD-codeblock .token.url {
+color:#56b6c2;
+}
+
+.theme-dark p>code .token.attr-value>.token.punctuation.attr-equals, .theme-dark p>code .token.special-attr>.token.attr-value>.token.value.css, .theme-dark pre:not(.frontmatter) .token.attr-value>.token.punctuation.attr-equals, .theme-dark pre:not(.frontmatter) .token.special-attr>.token.attr-value>.token.value.css, .theme-dark .HyperMD-codeblock .token.attr-value>.token.punctuation.attr-equals, .theme-dark .HyperMD-codeblock .token.special-attr>.token.attr-value>.token.value.css {
+color:#abb2bf;
+}
+
+.theme-dark p>code .language-css .token.selector, .theme-dark pre:not(.frontmatter) .language-css .token.selector, .theme-dark .HyperMD-codeblock .language-css .token.selector {
+color:#e06c75;
+}
+
+.theme-dark p>code .language-css .token.property, .theme-dark pre:not(.frontmatter) .language-css .token.property, .theme-dark .HyperMD-codeblock .language-css .token.property {
+color:#abb2bf;
+}
+
+.theme-dark p>code .language-css .token.function, .theme-dark p>code .language-css .token.url>.token.function, .theme-dark pre:not(.frontmatter) .language-css .token.function, .theme-dark pre:not(.frontmatter) .language-css .token.url>.token.function, .theme-dark .HyperMD-codeblock .language-css .token.function, .theme-dark .HyperMD-codeblock .language-css .token.url>.token.function {
+color:#56b6c2;
+}
+
+.theme-dark p>code .language-css .token.url>.token.string.url, .theme-dark pre:not(.frontmatter) .language-css .token.url>.token.string.url, .theme-dark .HyperMD-codeblock .language-css .token.url>.token.string.url {
+color:#98c379;
+}
+
+.theme-dark p>code .language-css .token.important, .theme-dark p>code .language-css .token.atrule .token.rule, .theme-dark pre:not(.frontmatter) .language-css .token.important, .theme-dark pre:not(.frontmatter) .language-css .token.atrule .token.rule, .theme-dark .HyperMD-codeblock .language-css .token.important, .theme-dark .HyperMD-codeblock .language-css .token.atrule .token.rule {
+color:#c678dd;
+}
+
+.theme-dark p>code .language-javascript .token.operator, .theme-dark pre:not(.frontmatter) .language-javascript .token.operator, .theme-dark .HyperMD-codeblock .language-javascript .token.operator {
+color:#c678dd;
+}
+
+.theme-dark p>code .language-javascript .token.template-string>.token.interpolation>.token.interpolation-punctuation.punctuation, .theme-dark pre:not(.frontmatter) .language-javascript .token.template-string>.token.interpolation>.token.interpolation-punctuation.punctuation, .theme-dark .HyperMD-codeblock .language-javascript .token.template-string>.token.interpolation>.token.interpolation-punctuation.punctuation {
+color:#be5046;
+}
+
+.theme-dark p>code .language-json .token.operator, .theme-dark pre:not(.frontmatter) .language-json .token.operator, .theme-dark .HyperMD-codeblock .language-json .token.operator {
+color:#abb2bf;
+}
+
+.theme-dark p>code .language-json .token.null.keyword, .theme-dark pre:not(.frontmatter) .language-json .token.null.keyword, .theme-dark .HyperMD-codeblock .language-json .token.null.keyword {
+color:#d19a66;
+}
+
+.theme-dark p>code .language-markdown .token.url, .theme-dark p>code .language-markdown .token.url>.token.operator, .theme-dark p>code .language-markdown .token.url-reference.url>.token.string, .theme-dark pre:not(.frontmatter) .language-markdown .token.url, .theme-dark pre:not(.frontmatter) .language-markdown .token.url>.token.operator, .theme-dark pre:not(.frontmatter) .language-markdown .token.url-reference.url>.token.string, .theme-dark .HyperMD-codeblock .language-markdown .token.url, .theme-dark .HyperMD-codeblock .language-markdown .token.url>.token.operator, .theme-dark .HyperMD-codeblock .language-markdown .token.url-reference.url>.token.string {
+color:#abb2bf;
+}
+
+.theme-dark p>code .language-markdown .token.url>.token.content, .theme-dark pre:not(.frontmatter) .language-markdown .token.url>.token.content, .theme-dark .HyperMD-codeblock .language-markdown .token.url>.token.content {
+color:#61afef;
+}
+
+.theme-dark p>code .language-markdown .token.url>.token.url, .theme-dark p>code .language-markdown .token.url-reference.url, .theme-dark pre:not(.frontmatter) .language-markdown .token.url>.token.url, .theme-dark pre:not(.frontmatter) .language-markdown .token.url-reference.url, .theme-dark .HyperMD-codeblock .language-markdown .token.url>.token.url, .theme-dark .HyperMD-codeblock .language-markdown .token.url-reference.url {
+color:#56b6c2;
+}
+
+.theme-dark p>code .language-markdown .token.blockquote.punctuation, .theme-dark p>code .language-markdown .token.hr.punctuation, .theme-dark pre:not(.frontmatter) .language-markdown .token.blockquote.punctuation, .theme-dark pre:not(.frontmatter) .language-markdown .token.hr.punctuation, .theme-dark .HyperMD-codeblock .language-markdown .token.blockquote.punctuation, .theme-dark .HyperMD-codeblock .language-markdown .token.hr.punctuation {
+color:#5c6370;
+font-style:italic;
+}
+
+.theme-dark p>code .language-markdown .token.code-snippet, .theme-dark pre:not(.frontmatter) .language-markdown .token.code-snippet, .theme-dark .HyperMD-codeblock .language-markdown .token.code-snippet {
+color:#98c379;
+}
+
+.theme-dark p>code .language-markdown .token.bold .token.content, .theme-dark pre:not(.frontmatter) .language-markdown .token.bold .token.content, .theme-dark .HyperMD-codeblock .language-markdown .token.bold .token.content {
+color:#d19a66;
+}
+
+.theme-dark p>code .language-markdown .token.italic .token.content, .theme-dark pre:not(.frontmatter) .language-markdown .token.italic .token.content, .theme-dark .HyperMD-codeblock .language-markdown .token.italic .token.content {
+color:#c678dd;
+}
+
+.theme-dark p>code .language-markdown .token.strike .token.content, .theme-dark p>code .language-markdown .token.strike .token.punctuation, .theme-dark p>code .language-markdown .token.list.punctuation, .theme-dark p>code .language-markdown .token.title.important>.token.punctuation, .theme-dark pre:not(.frontmatter) .language-markdown .token.strike .token.content, .theme-dark pre:not(.frontmatter) .language-markdown .token.strike .token.punctuation, .theme-dark pre:not(.frontmatter) .language-markdown .token.list.punctuation, .theme-dark pre:not(.frontmatter) .language-markdown .token.title.important>.token.punctuation, .theme-dark .HyperMD-codeblock .language-markdown .token.strike .token.content, .theme-dark .HyperMD-codeblock .language-markdown .token.strike .token.punctuation, .theme-dark .HyperMD-codeblock .language-markdown .token.list.punctuation, .theme-dark .HyperMD-codeblock .language-markdown .token.title.important>.token.punctuation {
+color:#e06c75;
+}
+
+.theme-dark p>code .token.bold, .theme-dark pre:not(.frontmatter) .token.bold, .theme-dark .HyperMD-codeblock .token.bold {
+font-weight:bold;
+}
+
+.theme-dark p>code .token.comment, .theme-dark p>code .token.italic, .theme-dark pre:not(.frontmatter) .token.comment, .theme-dark pre:not(.frontmatter) .token.italic, .theme-dark .HyperMD-codeblock .token.comment, .theme-dark .HyperMD-codeblock .token.italic {
+font-style:italic;
+}
+
+.theme-dark p>code .token.entity, .theme-dark pre:not(.frontmatter) .token.entity, .theme-dark .HyperMD-codeblock .token.entity {
+cursor:help;
+}
+
+.theme-dark p>code .token.namespace, .theme-dark pre:not(.frontmatter) .token.namespace, .theme-dark .HyperMD-codeblock .token.namespace {
+opacity:.8;
+}`,
+      light: `.theme-light p>code, .theme-light pre:not(.frontmatter), .theme-light .HyperMD-codeblock {
+--code-background: hsl(230deg, 1%, 98%);
+--code-normal: hsl(230deg, 8%, 24%);
+--text-muted: hsl(230deg, 8%, 24%);
+--text-faint: hsl(230deg, 4%, 64%);
+}
+
+.theme-light p>code .cm-comment, .theme-light p>code .cm-meta, .theme-light p>code .cm-hr, .theme-light p>code .token.comment, .theme-light p>code .token.prolog, .theme-light p>code .token.cdata, .theme-light pre:not(.frontmatter) .cm-comment, .theme-light pre:not(.frontmatter) .cm-meta, .theme-light pre:not(.frontmatter) .cm-hr, .theme-light pre:not(.frontmatter) .token.comment, .theme-light pre:not(.frontmatter) .token.prolog, .theme-light pre:not(.frontmatter) .token.cdata, .theme-light .HyperMD-codeblock .cm-comment, .theme-light .HyperMD-codeblock .cm-meta, .theme-light .HyperMD-codeblock .cm-hr, .theme-light .HyperMD-codeblock .token.comment, .theme-light .HyperMD-codeblock .token.prolog, .theme-light .HyperMD-codeblock .token.cdata {
+color:#a0a1a7;
+}
+
+.theme-light p>code .cm-punctuation, .theme-light p>code .cm-bracket.cm-tag, .theme-light p>code .cm-type, .theme-light p>code .token.doctype, .theme-light p>code .token.punctuation, .theme-light p>code .token.entity, .theme-light pre:not(.frontmatter) .cm-punctuation, .theme-light pre:not(.frontmatter) .cm-bracket.cm-tag, .theme-light pre:not(.frontmatter) .cm-type, .theme-light pre:not(.frontmatter) .token.doctype, .theme-light pre:not(.frontmatter) .token.punctuation, .theme-light pre:not(.frontmatter) .token.entity, .theme-light .HyperMD-codeblock .cm-punctuation, .theme-light .HyperMD-codeblock .cm-bracket.cm-tag, .theme-light .HyperMD-codeblock .cm-type, .theme-light .HyperMD-codeblock .token.doctype, .theme-light .HyperMD-codeblock .token.punctuation, .theme-light .HyperMD-codeblock .token.entity {
+color:#383a42;
+}
+
+.theme-light p>code .cm-number, .theme-light p>code .cm-attribute, .theme-light p>code .token.attr-name, .theme-light p>code .token.class-name, .theme-light p>code .token.boolean, .theme-light p>code .token.constant, .theme-light p>code .token.number, .theme-light p>code .token.atrule, .theme-light pre:not(.frontmatter) .cm-number, .theme-light pre:not(.frontmatter) .cm-attribute, .theme-light pre:not(.frontmatter) .token.attr-name, .theme-light pre:not(.frontmatter) .token.class-name, .theme-light pre:not(.frontmatter) .token.boolean, .theme-light pre:not(.frontmatter) .token.constant, .theme-light pre:not(.frontmatter) .token.number, .theme-light pre:not(.frontmatter) .token.atrule, .theme-light .HyperMD-codeblock .cm-number, .theme-light .HyperMD-codeblock .cm-attribute, .theme-light .HyperMD-codeblock .token.attr-name, .theme-light .HyperMD-codeblock .token.class-name, .theme-light .HyperMD-codeblock .token.boolean, .theme-light .HyperMD-codeblock .token.constant, .theme-light .HyperMD-codeblock .token.number, .theme-light .HyperMD-codeblock .token.atrule {
+color:#b76b01;
+}
+
+.theme-light p>code .cm-qualifier, .theme-light p>code .cm-keyword, .theme-light p>code .token.keyword, .theme-light pre:not(.frontmatter) .cm-qualifier, .theme-light pre:not(.frontmatter) .cm-keyword, .theme-light pre:not(.frontmatter) .token.keyword, .theme-light .HyperMD-codeblock .cm-qualifier, .theme-light .HyperMD-codeblock .cm-keyword, .theme-light .HyperMD-codeblock .token.keyword {
+color:#a626a4;
+}
+
+.theme-light p>code .cm-tag, .theme-light p>code .cm-property, .theme-light p>code .token.property, .theme-light p>code .token.tag, .theme-light p>code .token.symbol, .theme-light p>code .token.deleted, .theme-light p>code .token.important, .theme-light pre:not(.frontmatter) .cm-tag, .theme-light pre:not(.frontmatter) .cm-property, .theme-light pre:not(.frontmatter) .token.property, .theme-light pre:not(.frontmatter) .token.tag, .theme-light pre:not(.frontmatter) .token.symbol, .theme-light pre:not(.frontmatter) .token.deleted, .theme-light pre:not(.frontmatter) .token.important, .theme-light .HyperMD-codeblock .cm-tag, .theme-light .HyperMD-codeblock .cm-property, .theme-light .HyperMD-codeblock .token.property, .theme-light .HyperMD-codeblock .token.tag, .theme-light .HyperMD-codeblock .token.symbol, .theme-light .HyperMD-codeblock .token.deleted, .theme-light .HyperMD-codeblock .token.important {
+color:#e45649;
+}
+
+.theme-light p>code .cm-builtin, .theme-light p>code .cm-string, .theme-light p>code .cm-string-2, .theme-light p>code .token.selector, .theme-light p>code .token.string, .theme-light p>code .token.char, .theme-light p>code .token.builtin, .theme-light p>code .token.inserted, .theme-light p>code .token.regex, .theme-light p>code .token.attr-value, .theme-light p>code .token.attr-value>.token.punctuation, .theme-light pre:not(.frontmatter) .cm-builtin, .theme-light pre:not(.frontmatter) .cm-string, .theme-light pre:not(.frontmatter) .cm-string-2, .theme-light pre:not(.frontmatter) .token.selector, .theme-light pre:not(.frontmatter) .token.string, .theme-light pre:not(.frontmatter) .token.char, .theme-light pre:not(.frontmatter) .token.builtin, .theme-light pre:not(.frontmatter) .token.inserted, .theme-light pre:not(.frontmatter) .token.regex, .theme-light pre:not(.frontmatter) .token.attr-value, .theme-light pre:not(.frontmatter) .token.attr-value>.token.punctuation, .theme-light .HyperMD-codeblock .cm-builtin, .theme-light .HyperMD-codeblock .cm-string, .theme-light .HyperMD-codeblock .cm-string-2, .theme-light .HyperMD-codeblock .token.selector, .theme-light .HyperMD-codeblock .token.string, .theme-light .HyperMD-codeblock .token.char, .theme-light .HyperMD-codeblock .token.builtin, .theme-light .HyperMD-codeblock .token.inserted, .theme-light .HyperMD-codeblock .token.regex, .theme-light .HyperMD-codeblock .token.attr-value, .theme-light .HyperMD-codeblock .token.attr-value>.token.punctuation {
+color:#50a14f;
+}
+
+.theme-light p>code .cm-operator, .theme-light p>code .cm-variable, .theme-light p>code .cm-variable-2, .theme-light p>code .cm-variable-3, .theme-light p>code .token.variable, .theme-light p>code .token.operator, .theme-light p>code .token.function, .theme-light pre:not(.frontmatter) .cm-operator, .theme-light pre:not(.frontmatter) .cm-variable, .theme-light pre:not(.frontmatter) .cm-variable-2, .theme-light pre:not(.frontmatter) .cm-variable-3, .theme-light pre:not(.frontmatter) .token.variable, .theme-light pre:not(.frontmatter) .token.operator, .theme-light pre:not(.frontmatter) .token.function, .theme-light .HyperMD-codeblock .cm-operator, .theme-light .HyperMD-codeblock .cm-variable, .theme-light .HyperMD-codeblock .cm-variable-2, .theme-light .HyperMD-codeblock .cm-variable-3, .theme-light .HyperMD-codeblock .token.variable, .theme-light .HyperMD-codeblock .token.operator, .theme-light .HyperMD-codeblock .token.function {
+color:#4078f2;
+}
+
+.theme-light p>code .cm-link, .theme-light p>code .token.url, .theme-light pre:not(.frontmatter) .cm-link, .theme-light pre:not(.frontmatter) .token.url, .theme-light .HyperMD-codeblock .cm-link, .theme-light .HyperMD-codeblock .token.url {
+color:#0184bc;
+}
+
+.theme-light p>code .token.attr-value>.token.punctuation.attr-equals, .theme-light p>code .token.special-attr>.token.attr-value>.token.value.css, .theme-light pre:not(.frontmatter) .token.attr-value>.token.punctuation.attr-equals, .theme-light pre:not(.frontmatter) .token.special-attr>.token.attr-value>.token.value.css, .theme-light .HyperMD-codeblock .token.attr-value>.token.punctuation.attr-equals, .theme-light .HyperMD-codeblock .token.special-attr>.token.attr-value>.token.value.css {
+color:#383a42;
+}
+
+.theme-light p>code .language-css .token.selector, .theme-light pre:not(.frontmatter) .language-css .token.selector, .theme-light .HyperMD-codeblock .language-css .token.selector {
+color:#e45649;
+}
+
+.theme-light p>code .language-css .token.property, .theme-light pre:not(.frontmatter) .language-css .token.property, .theme-light .HyperMD-codeblock .language-css .token.property {
+color:#383a42;
+}
+
+.theme-light p>code .language-css .token.function, .theme-light p>code .language-css .token.url>.token.function, .theme-light pre:not(.frontmatter) .language-css .token.function, .theme-light pre:not(.frontmatter) .language-css .token.url>.token.function, .theme-light .HyperMD-codeblock .language-css .token.function, .theme-light .HyperMD-codeblock .language-css .token.url>.token.function {
+color:#0184bc;
+}
+
+.theme-light p>code .language-css .token.url>.token.string.url, .theme-light pre:not(.frontmatter) .language-css .token.url>.token.string.url, .theme-light .HyperMD-codeblock .language-css .token.url>.token.string.url {
+color:#50a14f;
+}
+
+.theme-light p>code .language-css .token.important, .theme-light p>code .language-css .token.atrule .token.rule, .theme-light pre:not(.frontmatter) .language-css .token.important, .theme-light pre:not(.frontmatter) .language-css .token.atrule .token.rule, .theme-light .HyperMD-codeblock .language-css .token.important, .theme-light .HyperMD-codeblock .language-css .token.atrule .token.rule {
+color:#a626a4;
+}
+
+.theme-light p>code .language-javascript .token.operator, .theme-light pre:not(.frontmatter) .language-javascript .token.operator, .theme-light .HyperMD-codeblock .language-javascript .token.operator {
+color:#a626a4;
+}
+
+.theme-light p>code .language-javascript .token.template-string>.token.interpolation>.token.interpolation-punctuation.punctuation, .theme-light pre:not(.frontmatter) .language-javascript .token.template-string>.token.interpolation>.token.interpolation-punctuation.punctuation, .theme-light .HyperMD-codeblock .language-javascript .token.template-string>.token.interpolation>.token.interpolation-punctuation.punctuation {
+color:#ca1243;
+}
+
+.theme-light p>code .language-json .token.operator, .theme-light pre:not(.frontmatter) .language-json .token.operator, .theme-light .HyperMD-codeblock .language-json .token.operator {
+color:#383a42;
+}
+
+.theme-light p>code .language-json .token.null.keyword, .theme-light pre:not(.frontmatter) .language-json .token.null.keyword, .theme-light .HyperMD-codeblock .language-json .token.null.keyword {
+color:#b76b01;
+}
+
+.theme-light p>code .language-markdown .token.url, .theme-light p>code .language-markdown .token.url>.token.operator, .theme-light p>code .language-markdown .token.url-reference.url>.token.string, .theme-light pre:not(.frontmatter) .language-markdown .token.url, .theme-light pre:not(.frontmatter) .language-markdown .token.url>.token.operator, .theme-light pre:not(.frontmatter) .language-markdown .token.url-reference.url>.token.string, .theme-light .HyperMD-codeblock .language-markdown .token.url, .theme-light .HyperMD-codeblock .language-markdown .token.url>.token.operator, .theme-light .HyperMD-codeblock .language-markdown .token.url-reference.url>.token.string {
+color:#383a42;
+}
+
+.theme-light p>code .language-markdown .token.url>.token.content, .theme-light pre:not(.frontmatter) .language-markdown .token.url>.token.content, .theme-light .HyperMD-codeblock .language-markdown .token.url>.token.content {
+color:#4078f2;
+}
+
+.theme-light p>code .language-markdown .token.url>.token.url, .theme-light p>code .language-markdown .token.url-reference.url, .theme-light pre:not(.frontmatter) .language-markdown .token.url>.token.url, .theme-light pre:not(.frontmatter) .language-markdown .token.url-reference.url, .theme-light .HyperMD-codeblock .language-markdown .token.url>.token.url, .theme-light .HyperMD-codeblock .language-markdown .token.url-reference.url {
+color:#0184bc;
+}
+
+.theme-light p>code .language-markdown .token.blockquote.punctuation, .theme-light p>code .language-markdown .token.hr.punctuation, .theme-light pre:not(.frontmatter) .language-markdown .token.blockquote.punctuation, .theme-light pre:not(.frontmatter) .language-markdown .token.hr.punctuation, .theme-light .HyperMD-codeblock .language-markdown .token.blockquote.punctuation, .theme-light .HyperMD-codeblock .language-markdown .token.hr.punctuation {
+color:#a0a1a7;
+font-style:italic;
+}
+
+.theme-light p>code .language-markdown .token.code-snippet, .theme-light pre:not(.frontmatter) .language-markdown .token.code-snippet, .theme-light .HyperMD-codeblock .language-markdown .token.code-snippet {
+color:#50a14f;
+}
+
+.theme-light p>code .language-markdown .token.bold .token.content, .theme-light pre:not(.frontmatter) .language-markdown .token.bold .token.content, .theme-light .HyperMD-codeblock .language-markdown .token.bold .token.content {
+color:#b76b01;
+}
+
+.theme-light p>code .language-markdown .token.italic .token.content, .theme-light pre:not(.frontmatter) .language-markdown .token.italic .token.content, .theme-light .HyperMD-codeblock .language-markdown .token.italic .token.content {
+color:#a626a4;
+}
+
+.theme-light p>code .language-markdown .token.strike .token.content, .theme-light p>code .language-markdown .token.strike .token.punctuation, .theme-light p>code .language-markdown .token.list.punctuation, .theme-light p>code .language-markdown .token.title.important>.token.punctuation, .theme-light pre:not(.frontmatter) .language-markdown .token.strike .token.content, .theme-light pre:not(.frontmatter) .language-markdown .token.strike .token.punctuation, .theme-light pre:not(.frontmatter) .language-markdown .token.list.punctuation, .theme-light pre:not(.frontmatter) .language-markdown .token.title.important>.token.punctuation, .theme-light .HyperMD-codeblock .language-markdown .token.strike .token.content, .theme-light .HyperMD-codeblock .language-markdown .token.strike .token.punctuation, .theme-light .HyperMD-codeblock .language-markdown .token.list.punctuation, .theme-light .HyperMD-codeblock .language-markdown .token.title.important>.token.punctuation {
+color:#e45649;
+}
+
+.theme-light p>code .token.bold, .theme-light pre:not(.frontmatter) .token.bold, .theme-light .HyperMD-codeblock .token.bold {
+font-weight:bold;
+}
+
+.theme-light p>code .token.comment, .theme-light p>code .token.italic, .theme-light pre:not(.frontmatter) .token.comment, .theme-light pre:not(.frontmatter) .token.italic, .theme-light .HyperMD-codeblock .token.comment, .theme-light .HyperMD-codeblock .token.italic {
+font-style:italic;
+}
+
+.theme-light p>code .token.entity, .theme-light pre:not(.frontmatter) .token.entity, .theme-light .HyperMD-codeblock .token.entity {
+cursor:help;
+}
+
+.theme-light p>code .token.namespace, .theme-light pre:not(.frontmatter) .token.namespace, .theme-light .HyperMD-codeblock .token.namespace {
+opacity:.8;
+}`,
+    },
+    solarized: {
+      dark: `.theme-dark p>code, .theme-dark pre:not(.frontmatter), .theme-dark .HyperMD-codeblock {
+--code-background: #002b36;
+--code-normal: #839496;
+--text-muted: #93a1a1;
+--text-faint: #586e75;
+}
+
+.theme-dark p>code .cm-hr, .theme-dark p>code .cm-comment, .theme-dark p>code .cm-meta, .theme-dark p>code .cm-type, .theme-dark p>code .token.comment, .theme-dark p>code .token.prolog, .theme-dark p>code .token.doctype, .theme-dark p>code .token.cdata, .theme-dark pre:not(.frontmatter) .cm-hr, .theme-dark pre:not(.frontmatter) .cm-comment, .theme-dark pre:not(.frontmatter) .cm-meta, .theme-dark pre:not(.frontmatter) .cm-type, .theme-dark pre:not(.frontmatter) .token.comment, .theme-dark pre:not(.frontmatter) .token.prolog, .theme-dark pre:not(.frontmatter) .token.doctype, .theme-dark pre:not(.frontmatter) .token.cdata, .theme-dark .HyperMD-codeblock .cm-hr, .theme-dark .HyperMD-codeblock .cm-comment, .theme-dark .HyperMD-codeblock .cm-meta, .theme-dark .HyperMD-codeblock .cm-type, .theme-dark .HyperMD-codeblock .token.comment, .theme-dark .HyperMD-codeblock .token.prolog, .theme-dark .HyperMD-codeblock .token.doctype, .theme-dark .HyperMD-codeblock .token.cdata {
+color:#586e75;
+}
+
+.theme-dark p>code .cm-operator, .theme-dark p>code .cm-punctuation, .theme-dark p>code .cm-bracket.cm-tag, .theme-dark p>code .token.punctuation, .theme-dark pre:not(.frontmatter) .cm-operator, .theme-dark pre:not(.frontmatter) .cm-punctuation, .theme-dark pre:not(.frontmatter) .cm-bracket.cm-tag, .theme-dark pre:not(.frontmatter) .token.punctuation, .theme-dark .HyperMD-codeblock .cm-operator, .theme-dark .HyperMD-codeblock .cm-punctuation, .theme-dark .HyperMD-codeblock .cm-bracket.cm-tag, .theme-dark .HyperMD-codeblock .token.punctuation {
+color:#93a1a1;
+}
+
+.theme-dark p>code .namespace, .theme-dark pre:not(.frontmatter) .namespace, .theme-dark .HyperMD-codeblock .namespace {
+opacity:.7;
+}
+
+.theme-dark p>code .cm-keyword, .theme-dark p>code .cm-tag, .theme-dark p>code .cm-property, .theme-dark p>code .token.property, .theme-dark p>code .token.keyword, .theme-dark p>code .token.tag, .theme-dark pre:not(.frontmatter) .cm-keyword, .theme-dark pre:not(.frontmatter) .cm-tag, .theme-dark pre:not(.frontmatter) .cm-property, .theme-dark pre:not(.frontmatter) .token.property, .theme-dark pre:not(.frontmatter) .token.keyword, .theme-dark pre:not(.frontmatter) .token.tag, .theme-dark .HyperMD-codeblock .cm-keyword, .theme-dark .HyperMD-codeblock .cm-tag, .theme-dark .HyperMD-codeblock .cm-property, .theme-dark .HyperMD-codeblock .token.property, .theme-dark .HyperMD-codeblock .token.keyword, .theme-dark .HyperMD-codeblock .token.tag {
+color:#268bd2;
+}
+
+.theme-dark p>code .token.class-name, .theme-dark pre:not(.frontmatter) .token.class-name, .theme-dark .HyperMD-codeblock .token.class-name {
+color:#ffffb6;
+text-decoration:underline;
+}
+
+.theme-dark p>code .token.boolean, .theme-dark p>code .token.constant, .theme-dark pre:not(.frontmatter) .token.boolean, .theme-dark pre:not(.frontmatter) .token.constant, .theme-dark .HyperMD-codeblock .token.boolean, .theme-dark .HyperMD-codeblock .token.constant {
+color:#b58900;
+}
+
+.theme-dark p>code .token.symbol, .theme-dark p>code .token.deleted, .theme-dark pre:not(.frontmatter) .token.symbol, .theme-dark pre:not(.frontmatter) .token.deleted, .theme-dark .HyperMD-codeblock .token.symbol, .theme-dark .HyperMD-codeblock .token.deleted {
+color:#dc322f;
+}
+
+.theme-dark p>code .cm-number, .theme-dark p>code .token.number, .theme-dark pre:not(.frontmatter) .cm-number, .theme-dark pre:not(.frontmatter) .token.number, .theme-dark .HyperMD-codeblock .cm-number, .theme-dark .HyperMD-codeblock .token.number {
+color:#859900;
+}
+
+.theme-dark p>code .cm-string-2, .theme-dark p>code .cm-link, .theme-dark p>code .cm-builtin, .theme-dark p>code .cm-attribute, .theme-dark p>code .token.selector, .theme-dark p>code .token.attr-name, .theme-dark p>code .token.string, .theme-dark p>code .token.char, .theme-dark p>code .token.builtin, .theme-dark p>code .token.inserted, .theme-dark pre:not(.frontmatter) .cm-string-2, .theme-dark pre:not(.frontmatter) .cm-link, .theme-dark pre:not(.frontmatter) .cm-builtin, .theme-dark pre:not(.frontmatter) .cm-attribute, .theme-dark pre:not(.frontmatter) .token.selector, .theme-dark pre:not(.frontmatter) .token.attr-name, .theme-dark pre:not(.frontmatter) .token.string, .theme-dark pre:not(.frontmatter) .token.char, .theme-dark pre:not(.frontmatter) .token.builtin, .theme-dark pre:not(.frontmatter) .token.inserted, .theme-dark .HyperMD-codeblock .cm-string-2, .theme-dark .HyperMD-codeblock .cm-link, .theme-dark .HyperMD-codeblock .cm-builtin, .theme-dark .HyperMD-codeblock .cm-attribute, .theme-dark .HyperMD-codeblock .token.selector, .theme-dark .HyperMD-codeblock .token.attr-name, .theme-dark .HyperMD-codeblock .token.string, .theme-dark .HyperMD-codeblock .token.char, .theme-dark .HyperMD-codeblock .token.builtin, .theme-dark .HyperMD-codeblock .token.inserted {
+color:#859900;
+}
+
+.theme-dark p>code .cm-variable, .theme-dark p>code .cm-variable-2, .theme-dark p>code .cm-variable-3, .theme-dark p>code .token.variable, .theme-dark pre:not(.frontmatter) .cm-variable, .theme-dark pre:not(.frontmatter) .cm-variable-2, .theme-dark pre:not(.frontmatter) .cm-variable-3, .theme-dark pre:not(.frontmatter) .token.variable, .theme-dark .HyperMD-codeblock .cm-variable, .theme-dark .HyperMD-codeblock .cm-variable-2, .theme-dark .HyperMD-codeblock .cm-variable-3, .theme-dark .HyperMD-codeblock .token.variable {
+color:#268bd2;
+}
+
+.theme-dark p>code .cm-operator, .theme-dark p>code .token.operator, .theme-dark pre:not(.frontmatter) .cm-operator, .theme-dark pre:not(.frontmatter) .token.operator, .theme-dark .HyperMD-codeblock .cm-operator, .theme-dark .HyperMD-codeblock .token.operator {
+color:#ededed;
+}
+
+.theme-dark p>code .cm-qualifier, .theme-dark p>code .token.function, .theme-dark pre:not(.frontmatter) .cm-qualifier, .theme-dark pre:not(.frontmatter) .token.function, .theme-dark .HyperMD-codeblock .cm-qualifier, .theme-dark .HyperMD-codeblock .token.function {
+color:#268bd2;
+}
+
+.theme-dark p>code .token.regex, .theme-dark pre:not(.frontmatter) .token.regex, .theme-dark .HyperMD-codeblock .token.regex {
+color:#e9c062;
+}
+
+.theme-dark p>code .token.important, .theme-dark pre:not(.frontmatter) .token.important, .theme-dark .HyperMD-codeblock .token.important {
+color:#fd971f;
+}
+
+.theme-dark p>code .token.entity, .theme-dark pre:not(.frontmatter) .token.entity, .theme-dark .HyperMD-codeblock .token.entity {
+color:#ffffb6;
+cursor:help;
+}
+
+.theme-dark p>code .token.url, .theme-dark pre:not(.frontmatter) .token.url, .theme-dark .HyperMD-codeblock .token.url {
+color:#96cbfe;
+}
+
+.theme-dark p>code .language-css .token.string, .theme-dark p>code .style .token.string, .theme-dark pre:not(.frontmatter) .language-css .token.string, .theme-dark pre:not(.frontmatter) .style .token.string, .theme-dark .HyperMD-codeblock .language-css .token.string, .theme-dark .HyperMD-codeblock .style .token.string {
+color:#87c38a;
+}
+
+.theme-dark p>code .token.important, .theme-dark p>code .token.bold, .theme-dark pre:not(.frontmatter) .token.important, .theme-dark pre:not(.frontmatter) .token.bold, .theme-dark .HyperMD-codeblock .token.important, .theme-dark .HyperMD-codeblock .token.bold {
+font-weight:bold;
+}
+
+.theme-dark p>code .token.italic, .theme-dark pre:not(.frontmatter) .token.italic, .theme-dark .HyperMD-codeblock .token.italic {
+font-style:italic;
+}
+
+.theme-dark p>code .cm-string, .theme-dark p>code .token.atrule, .theme-dark p>code .token.attr-value, .theme-dark pre:not(.frontmatter) .cm-string, .theme-dark pre:not(.frontmatter) .token.atrule, .theme-dark pre:not(.frontmatter) .token.attr-value, .theme-dark .HyperMD-codeblock .cm-string, .theme-dark .HyperMD-codeblock .token.atrule, .theme-dark .HyperMD-codeblock .token.attr-value {
+color:#f9ee98;
+}`,
+      light: `.theme-light p>code, .theme-light pre:not(.frontmatter), .theme-light .HyperMD-codeblock {
+--code-background: #eee8d5;
+--code-normal: #657b83;
+--text-muted: #586e75;
+--text-faint: #93a1a1;
+}
+
+.theme-light p>code .cm-hr, .theme-light p>code .cm-comment, .theme-light p>code .cm-meta, .theme-light p>code .cm-type, .theme-light p>code .token.comment, .theme-light p>code .token.prolog, .theme-light p>code .token.doctype, .theme-light p>code .token.cdata, .theme-light pre:not(.frontmatter) .cm-hr, .theme-light pre:not(.frontmatter) .cm-comment, .theme-light pre:not(.frontmatter) .cm-meta, .theme-light pre:not(.frontmatter) .cm-type, .theme-light pre:not(.frontmatter) .token.comment, .theme-light pre:not(.frontmatter) .token.prolog, .theme-light pre:not(.frontmatter) .token.doctype, .theme-light pre:not(.frontmatter) .token.cdata, .theme-light .HyperMD-codeblock .cm-hr, .theme-light .HyperMD-codeblock .cm-comment, .theme-light .HyperMD-codeblock .cm-meta, .theme-light .HyperMD-codeblock .cm-type, .theme-light .HyperMD-codeblock .token.comment, .theme-light .HyperMD-codeblock .token.prolog, .theme-light .HyperMD-codeblock .token.doctype, .theme-light .HyperMD-codeblock .token.cdata {
+color:#93a1a1;
+}
+
+.theme-light p>code .cm-operator, .theme-light p>code .cm-punctuation, .theme-light p>code .cm-bracket.cm-tag, .theme-light p>code .token.punctuation, .theme-light pre:not(.frontmatter) .cm-operator, .theme-light pre:not(.frontmatter) .cm-punctuation, .theme-light pre:not(.frontmatter) .cm-bracket.cm-tag, .theme-light pre:not(.frontmatter) .token.punctuation, .theme-light .HyperMD-codeblock .cm-operator, .theme-light .HyperMD-codeblock .cm-punctuation, .theme-light .HyperMD-codeblock .cm-bracket.cm-tag, .theme-light .HyperMD-codeblock .token.punctuation {
+color:#586e75;
+}
+
+.theme-light p>code .token.namespace, .theme-light pre:not(.frontmatter) .token.namespace, .theme-light .HyperMD-codeblock .token.namespace {
+opacity:.7;
+}
+
+.theme-light p>code .cm-number, .theme-light p>code .cm-tag, .theme-light p>code .cm-property, .theme-light p>code .token.property, .theme-light p>code .token.tag, .theme-light p>code .token.boolean, .theme-light p>code .token.number, .theme-light p>code .token.constant, .theme-light p>code .token.symbol, .theme-light p>code .token.deleted, .theme-light pre:not(.frontmatter) .cm-number, .theme-light pre:not(.frontmatter) .cm-tag, .theme-light pre:not(.frontmatter) .cm-property, .theme-light pre:not(.frontmatter) .token.property, .theme-light pre:not(.frontmatter) .token.tag, .theme-light pre:not(.frontmatter) .token.boolean, .theme-light pre:not(.frontmatter) .token.number, .theme-light pre:not(.frontmatter) .token.constant, .theme-light pre:not(.frontmatter) .token.symbol, .theme-light pre:not(.frontmatter) .token.deleted, .theme-light .HyperMD-codeblock .cm-number, .theme-light .HyperMD-codeblock .cm-tag, .theme-light .HyperMD-codeblock .cm-property, .theme-light .HyperMD-codeblock .token.property, .theme-light .HyperMD-codeblock .token.tag, .theme-light .HyperMD-codeblock .token.boolean, .theme-light .HyperMD-codeblock .token.number, .theme-light .HyperMD-codeblock .token.constant, .theme-light .HyperMD-codeblock .token.symbol, .theme-light .HyperMD-codeblock .token.deleted {
+color:#268bd2;
+}
+
+.theme-light p>code .cm-string-2, .theme-light p>code .cm-link, .theme-light p>code .cm-builtin, .theme-light p>code .cm-attribute, .theme-light p>code .token.selector, .theme-light p>code .token.attr-name, .theme-light p>code .token.string, .theme-light p>code .token.char, .theme-light p>code .token.builtin, .theme-light p>code .token.url, .theme-light p>code .token.inserted, .theme-light pre:not(.frontmatter) .cm-string-2, .theme-light pre:not(.frontmatter) .cm-link, .theme-light pre:not(.frontmatter) .cm-builtin, .theme-light pre:not(.frontmatter) .cm-attribute, .theme-light pre:not(.frontmatter) .token.selector, .theme-light pre:not(.frontmatter) .token.attr-name, .theme-light pre:not(.frontmatter) .token.string, .theme-light pre:not(.frontmatter) .token.char, .theme-light pre:not(.frontmatter) .token.builtin, .theme-light pre:not(.frontmatter) .token.url, .theme-light pre:not(.frontmatter) .token.inserted, .theme-light .HyperMD-codeblock .cm-string-2, .theme-light .HyperMD-codeblock .cm-link, .theme-light .HyperMD-codeblock .cm-builtin, .theme-light .HyperMD-codeblock .cm-attribute, .theme-light .HyperMD-codeblock .token.selector, .theme-light .HyperMD-codeblock .token.attr-name, .theme-light .HyperMD-codeblock .token.string, .theme-light .HyperMD-codeblock .token.char, .theme-light .HyperMD-codeblock .token.builtin, .theme-light .HyperMD-codeblock .token.url, .theme-light .HyperMD-codeblock .token.inserted {
+color:#2aa198;
+}
+
+.theme-light p>code .token.entity, .theme-light pre:not(.frontmatter) .token.entity, .theme-light .HyperMD-codeblock .token.entity {
+color:#657b83;
+background:#eee8d5;
+}
+
+.theme-light p>code .cm-string, .theme-light p>code .cm-keyword, .theme-light p>code .token.atrule, .theme-light p>code .token.attr-value, .theme-light p>code .token.keyword, .theme-light pre:not(.frontmatter) .cm-string, .theme-light pre:not(.frontmatter) .cm-keyword, .theme-light pre:not(.frontmatter) .token.atrule, .theme-light pre:not(.frontmatter) .token.attr-value, .theme-light pre:not(.frontmatter) .token.keyword, .theme-light .HyperMD-codeblock .cm-string, .theme-light .HyperMD-codeblock .cm-keyword, .theme-light .HyperMD-codeblock .token.atrule, .theme-light .HyperMD-codeblock .token.attr-value, .theme-light .HyperMD-codeblock .token.keyword {
+color:#859900;
+}
+
+.theme-light p>code .cm-qualifier, .theme-light p>code .token.function, .theme-light p>code .token.class-name, .theme-light pre:not(.frontmatter) .cm-qualifier, .theme-light pre:not(.frontmatter) .token.function, .theme-light pre:not(.frontmatter) .token.class-name, .theme-light .HyperMD-codeblock .cm-qualifier, .theme-light .HyperMD-codeblock .token.function, .theme-light .HyperMD-codeblock .token.class-name {
+color:#b58900;
+}
+
+.theme-light p>code .cm-variable, .theme-light p>code .cm-variable-2, .theme-light p>code .cm-variable-3, .theme-light p>code .token.regex, .theme-light p>code .token.important, .theme-light p>code .token.variable, .theme-light pre:not(.frontmatter) .cm-variable, .theme-light pre:not(.frontmatter) .cm-variable-2, .theme-light pre:not(.frontmatter) .cm-variable-3, .theme-light pre:not(.frontmatter) .token.regex, .theme-light pre:not(.frontmatter) .token.important, .theme-light pre:not(.frontmatter) .token.variable, .theme-light .HyperMD-codeblock .cm-variable, .theme-light .HyperMD-codeblock .cm-variable-2, .theme-light .HyperMD-codeblock .cm-variable-3, .theme-light .HyperMD-codeblock .token.regex, .theme-light .HyperMD-codeblock .token.important, .theme-light .HyperMD-codeblock .token.variable {
+color:#cb4b16;
+}
+
+.theme-light p>code .token.important, .theme-light p>code .token.bold, .theme-light pre:not(.frontmatter) .token.important, .theme-light pre:not(.frontmatter) .token.bold, .theme-light .HyperMD-codeblock .token.important, .theme-light .HyperMD-codeblock .token.bold {
+font-weight:bold;
+}
+
+.theme-light p>code .token.italic, .theme-light pre:not(.frontmatter) .token.italic, .theme-light .HyperMD-codeblock .token.italic {
+font-style:italic;
+}`,
+    },
+    gruvbox: {
+      dark: `.theme-dark p>code, .theme-dark pre:not(.frontmatter), .theme-dark .HyperMD-codeblock {
+--code-background: #282828;
+--code-normal: #fbf1c7;
+--text-muted: #a89984;
+--text-faint: #a89984;
+}
+
+.theme-dark p>code .cm-hr, .theme-dark p>code .cm-comment, .theme-dark p>code .cm-meta, .theme-dark p>code .token.comment, .theme-dark p>code .token.prolog, .theme-dark p>code .token.cdata, .theme-dark pre:not(.frontmatter) .cm-hr, .theme-dark pre:not(.frontmatter) .cm-comment, .theme-dark pre:not(.frontmatter) .cm-meta, .theme-dark pre:not(.frontmatter) .token.comment, .theme-dark pre:not(.frontmatter) .token.prolog, .theme-dark pre:not(.frontmatter) .token.cdata, .theme-dark .HyperMD-codeblock .cm-hr, .theme-dark .HyperMD-codeblock .cm-comment, .theme-dark .HyperMD-codeblock .cm-meta, .theme-dark .HyperMD-codeblock .token.comment, .theme-dark .HyperMD-codeblock .token.prolog, .theme-dark .HyperMD-codeblock .token.cdata {
+color:#a89984;
+}
+
+.theme-dark p>code .cm-keyword, .theme-dark p>code .token.delimiter, .theme-dark p>code .token.boolean, .theme-dark p>code .token.keyword, .theme-dark p>code .token.selector, .theme-dark p>code .token.important, .theme-dark p>code .token.atrule, .theme-dark pre:not(.frontmatter) .cm-keyword, .theme-dark pre:not(.frontmatter) .token.delimiter, .theme-dark pre:not(.frontmatter) .token.boolean, .theme-dark pre:not(.frontmatter) .token.keyword, .theme-dark pre:not(.frontmatter) .token.selector, .theme-dark pre:not(.frontmatter) .token.important, .theme-dark pre:not(.frontmatter) .token.atrule, .theme-dark .HyperMD-codeblock .cm-keyword, .theme-dark .HyperMD-codeblock .token.delimiter, .theme-dark .HyperMD-codeblock .token.boolean, .theme-dark .HyperMD-codeblock .token.keyword, .theme-dark .HyperMD-codeblock .token.selector, .theme-dark .HyperMD-codeblock .token.important, .theme-dark .HyperMD-codeblock .token.atrule {
+color:#fb4934;
+}
+
+.theme-dark p>code .cm-attribute, .theme-dark p>code .cm-operator, .theme-dark p>code .cm-punctuation, .theme-dark p>code .cm-bracket.cm-tag, .theme-dark p>code .token.operator, .theme-dark p>code .token.punctuation, .theme-dark p>code .token.attr-name, .theme-dark pre:not(.frontmatter) .cm-attribute, .theme-dark pre:not(.frontmatter) .cm-operator, .theme-dark pre:not(.frontmatter) .cm-punctuation, .theme-dark pre:not(.frontmatter) .cm-bracket.cm-tag, .theme-dark pre:not(.frontmatter) .token.operator, .theme-dark pre:not(.frontmatter) .token.punctuation, .theme-dark pre:not(.frontmatter) .token.attr-name, .theme-dark .HyperMD-codeblock .cm-attribute, .theme-dark .HyperMD-codeblock .cm-operator, .theme-dark .HyperMD-codeblock .cm-punctuation, .theme-dark .HyperMD-codeblock .cm-bracket.cm-tag, .theme-dark .HyperMD-codeblock .token.operator, .theme-dark .HyperMD-codeblock .token.punctuation, .theme-dark .HyperMD-codeblock .token.attr-name {
+color:#a89984;
+}
+
+.theme-dark p>code .cm-builtin, .theme-dark p>code .cm-type, .theme-dark p>code .cm-tag, .theme-dark p>code .token.tag, .theme-dark p>code .token.tag .punctuation, .theme-dark p>code .token.doctype, .theme-dark p>code .token.builtin, .theme-dark pre:not(.frontmatter) .cm-builtin, .theme-dark pre:not(.frontmatter) .cm-type, .theme-dark pre:not(.frontmatter) .cm-tag, .theme-dark pre:not(.frontmatter) .token.tag, .theme-dark pre:not(.frontmatter) .token.tag .punctuation, .theme-dark pre:not(.frontmatter) .token.doctype, .theme-dark pre:not(.frontmatter) .token.builtin, .theme-dark .HyperMD-codeblock .cm-builtin, .theme-dark .HyperMD-codeblock .cm-type, .theme-dark .HyperMD-codeblock .cm-tag, .theme-dark .HyperMD-codeblock .token.tag, .theme-dark .HyperMD-codeblock .token.tag .punctuation, .theme-dark .HyperMD-codeblock .token.doctype, .theme-dark .HyperMD-codeblock .token.builtin {
+color:#fabd2f;
+}
+
+.theme-dark p>code .cm-number, .theme-dark p>code .token.entity, .theme-dark p>code .token.number, .theme-dark p>code .token.symbol, .theme-dark pre:not(.frontmatter) .cm-number, .theme-dark pre:not(.frontmatter) .token.entity, .theme-dark pre:not(.frontmatter) .token.number, .theme-dark pre:not(.frontmatter) .token.symbol, .theme-dark .HyperMD-codeblock .cm-number, .theme-dark .HyperMD-codeblock .token.entity, .theme-dark .HyperMD-codeblock .token.number, .theme-dark .HyperMD-codeblock .token.symbol {
+color:#d3869b;
+}
+
+.theme-dark p>code .cm-variable, .theme-dark p>code .cm-variable-2, .theme-dark p>code .cm-variable-3, .theme-dark p>code .cm-property, .theme-dark p>code .token.property, .theme-dark p>code .token.constant, .theme-dark p>code .token.variable, .theme-dark pre:not(.frontmatter) .cm-variable, .theme-dark pre:not(.frontmatter) .cm-variable-2, .theme-dark pre:not(.frontmatter) .cm-variable-3, .theme-dark pre:not(.frontmatter) .cm-property, .theme-dark pre:not(.frontmatter) .token.property, .theme-dark pre:not(.frontmatter) .token.constant, .theme-dark pre:not(.frontmatter) .token.variable, .theme-dark .HyperMD-codeblock .cm-variable, .theme-dark .HyperMD-codeblock .cm-variable-2, .theme-dark .HyperMD-codeblock .cm-variable-3, .theme-dark .HyperMD-codeblock .cm-property, .theme-dark .HyperMD-codeblock .token.property, .theme-dark .HyperMD-codeblock .token.constant, .theme-dark .HyperMD-codeblock .token.variable {
+color:#fb4934;
+}
+
+.theme-dark p>code .cm-string-2, .theme-dark p>code .token.string, .theme-dark p>code .token.char, .theme-dark pre:not(.frontmatter) .cm-string-2, .theme-dark pre:not(.frontmatter) .token.string, .theme-dark pre:not(.frontmatter) .token.char, .theme-dark .HyperMD-codeblock .cm-string-2, .theme-dark .HyperMD-codeblock .token.string, .theme-dark .HyperMD-codeblock .token.char {
+color:#b8bb26;
+}
+
+.theme-dark p>code .cm-string, .theme-dark p>code .token.attr-value, .theme-dark p>code .token.attr-value .punctuation, .theme-dark pre:not(.frontmatter) .cm-string, .theme-dark pre:not(.frontmatter) .token.attr-value, .theme-dark pre:not(.frontmatter) .token.attr-value .punctuation, .theme-dark .HyperMD-codeblock .cm-string, .theme-dark .HyperMD-codeblock .token.attr-value, .theme-dark .HyperMD-codeblock .token.attr-value .punctuation {
+color:#a89984;
+}
+
+.theme-dark p>code .cm-link, .theme-dark p>code .token.url, .theme-dark pre:not(.frontmatter) .cm-link, .theme-dark pre:not(.frontmatter) .token.url, .theme-dark .HyperMD-codeblock .cm-link, .theme-dark .HyperMD-codeblock .token.url {
+color:#b8bb26;
+text-decoration:underline;
+}
+
+.theme-dark p>code .cm-qualifier, .theme-dark p>code .token.function, .theme-dark pre:not(.frontmatter) .cm-qualifier, .theme-dark pre:not(.frontmatter) .token.function, .theme-dark .HyperMD-codeblock .cm-qualifier, .theme-dark .HyperMD-codeblock .token.function {
+color:#fabd2f;
+}
+
+.theme-dark p>code .token.regex, .theme-dark pre:not(.frontmatter) .token.regex, .theme-dark .HyperMD-codeblock .token.regex {
+background:#b8bb26;
+}
+
+.theme-dark p>code .token.bold, .theme-dark pre:not(.frontmatter) .token.bold, .theme-dark .HyperMD-codeblock .token.bold {
+font-weight:bold;
+}
+
+.theme-dark p>code .token.italic, .theme-dark pre:not(.frontmatter) .token.italic, .theme-dark .HyperMD-codeblock .token.italic {
+font-style:italic;
+}
+
+.theme-dark p>code .token.inserted, .theme-dark pre:not(.frontmatter) .token.inserted, .theme-dark .HyperMD-codeblock .token.inserted {
+background:#a89984;
+}
+
+.theme-dark p>code .token.deleted, .theme-dark pre:not(.frontmatter) .token.deleted, .theme-dark .HyperMD-codeblock .token.deleted {
+background:#fb4934;
+}`,
+      light: `.theme-light p>code, .theme-light pre:not(.frontmatter), .theme-light .HyperMD-codeblock {
+--code-background: #fbf1c7;
+--code-normal: #3c3836;
+--text-muted: #7c6f64;
+--text-faint: #7c6f64;
+}
+
+.theme-light p>code .cm-hr, .theme-light p>code .cm-comment, .theme-light p>code .cm-meta, .theme-light p>code .token.comment, .theme-light p>code .token.prolog, .theme-light p>code .token.cdata, .theme-light pre:not(.frontmatter) .cm-hr, .theme-light pre:not(.frontmatter) .cm-comment, .theme-light pre:not(.frontmatter) .cm-meta, .theme-light pre:not(.frontmatter) .token.comment, .theme-light pre:not(.frontmatter) .token.prolog, .theme-light pre:not(.frontmatter) .token.cdata, .theme-light .HyperMD-codeblock .cm-hr, .theme-light .HyperMD-codeblock .cm-comment, .theme-light .HyperMD-codeblock .cm-meta, .theme-light .HyperMD-codeblock .token.comment, .theme-light .HyperMD-codeblock .token.prolog, .theme-light .HyperMD-codeblock .token.cdata {
+color:#7c6f64;
+}
+
+.theme-light p>code .cm-keyword, .theme-light p>code .token.delimiter, .theme-light p>code .token.boolean, .theme-light p>code .token.keyword, .theme-light p>code .token.selector, .theme-light p>code .token.important, .theme-light p>code .token.atrule, .theme-light pre:not(.frontmatter) .cm-keyword, .theme-light pre:not(.frontmatter) .token.delimiter, .theme-light pre:not(.frontmatter) .token.boolean, .theme-light pre:not(.frontmatter) .token.keyword, .theme-light pre:not(.frontmatter) .token.selector, .theme-light pre:not(.frontmatter) .token.important, .theme-light pre:not(.frontmatter) .token.atrule, .theme-light .HyperMD-codeblock .cm-keyword, .theme-light .HyperMD-codeblock .token.delimiter, .theme-light .HyperMD-codeblock .token.boolean, .theme-light .HyperMD-codeblock .token.keyword, .theme-light .HyperMD-codeblock .token.selector, .theme-light .HyperMD-codeblock .token.important, .theme-light .HyperMD-codeblock .token.atrule {
+color:#9d0006;
+}
+
+.theme-light p>code .cm-attribute, .theme-light p>code .cm-operator, .theme-light p>code .cm-punctuation, .theme-light p>code .cm-bracket.cm-tag, .theme-light p>code .token.operator, .theme-light p>code .token.punctuation, .theme-light p>code .token.attr-name, .theme-light pre:not(.frontmatter) .cm-attribute, .theme-light pre:not(.frontmatter) .cm-operator, .theme-light pre:not(.frontmatter) .cm-punctuation, .theme-light pre:not(.frontmatter) .cm-bracket.cm-tag, .theme-light pre:not(.frontmatter) .token.operator, .theme-light pre:not(.frontmatter) .token.punctuation, .theme-light pre:not(.frontmatter) .token.attr-name, .theme-light .HyperMD-codeblock .cm-attribute, .theme-light .HyperMD-codeblock .cm-operator, .theme-light .HyperMD-codeblock .cm-punctuation, .theme-light .HyperMD-codeblock .cm-bracket.cm-tag, .theme-light .HyperMD-codeblock .token.operator, .theme-light .HyperMD-codeblock .token.punctuation, .theme-light .HyperMD-codeblock .token.attr-name {
+color:#7c6f64;
+}
+
+.theme-light p>code .cm-builtin, .theme-light p>code .cm-type, .theme-light p>code .cm-tag, .theme-light p>code .token.tag, .theme-light p>code .token.tag .punctuation, .theme-light p>code .token.doctype, .theme-light p>code .token.builtin, .theme-light pre:not(.frontmatter) .cm-builtin, .theme-light pre:not(.frontmatter) .cm-type, .theme-light pre:not(.frontmatter) .cm-tag, .theme-light pre:not(.frontmatter) .token.tag, .theme-light pre:not(.frontmatter) .token.tag .punctuation, .theme-light pre:not(.frontmatter) .token.doctype, .theme-light pre:not(.frontmatter) .token.builtin, .theme-light .HyperMD-codeblock .cm-builtin, .theme-light .HyperMD-codeblock .cm-type, .theme-light .HyperMD-codeblock .cm-tag, .theme-light .HyperMD-codeblock .token.tag, .theme-light .HyperMD-codeblock .token.tag .punctuation, .theme-light .HyperMD-codeblock .token.doctype, .theme-light .HyperMD-codeblock .token.builtin {
+color:#b57614;
+}
+
+.theme-light p>code .cm-number, .theme-light p>code .token.entity, .theme-light p>code .token.number, .theme-light p>code .token.symbol, .theme-light pre:not(.frontmatter) .cm-number, .theme-light pre:not(.frontmatter) .token.entity, .theme-light pre:not(.frontmatter) .token.number, .theme-light pre:not(.frontmatter) .token.symbol, .theme-light .HyperMD-codeblock .cm-number, .theme-light .HyperMD-codeblock .token.entity, .theme-light .HyperMD-codeblock .token.number, .theme-light .HyperMD-codeblock .token.symbol {
+color:#8f3f71;
+}
+
+.theme-light p>code .cm-variable, .theme-light p>code .cm-variable-2, .theme-light p>code .cm-variable-3, .theme-light p>code .cm-property, .theme-light p>code .token.property, .theme-light p>code .token.constant, .theme-light p>code .token.variable, .theme-light pre:not(.frontmatter) .cm-variable, .theme-light pre:not(.frontmatter) .cm-variable-2, .theme-light pre:not(.frontmatter) .cm-variable-3, .theme-light pre:not(.frontmatter) .cm-property, .theme-light pre:not(.frontmatter) .token.property, .theme-light pre:not(.frontmatter) .token.constant, .theme-light pre:not(.frontmatter) .token.variable, .theme-light .HyperMD-codeblock .cm-variable, .theme-light .HyperMD-codeblock .cm-variable-2, .theme-light .HyperMD-codeblock .cm-variable-3, .theme-light .HyperMD-codeblock .cm-property, .theme-light .HyperMD-codeblock .token.property, .theme-light .HyperMD-codeblock .token.constant, .theme-light .HyperMD-codeblock .token.variable {
+color:#9d0006;
+}
+
+.theme-light p>code .cm-string-2, .theme-light p>code .token.string, .theme-light p>code .token.char, .theme-light pre:not(.frontmatter) .cm-string-2, .theme-light pre:not(.frontmatter) .token.string, .theme-light pre:not(.frontmatter) .token.char, .theme-light .HyperMD-codeblock .cm-string-2, .theme-light .HyperMD-codeblock .token.string, .theme-light .HyperMD-codeblock .token.char {
+color:#797403;
+}
+
+.theme-light p>code .cm-string, .theme-light p>code .token.attr-value, .theme-light p>code .token.attr-value .punctuation, .theme-light pre:not(.frontmatter) .cm-string, .theme-light pre:not(.frontmatter) .token.attr-value, .theme-light pre:not(.frontmatter) .token.attr-value .punctuation, .theme-light .HyperMD-codeblock .cm-string, .theme-light .HyperMD-codeblock .token.attr-value, .theme-light .HyperMD-codeblock .token.attr-value .punctuation {
+color:#7c6f64;
+}
+
+.theme-light p>code .cm-link, .theme-light p>code .token.url, .theme-light pre:not(.frontmatter) .cm-link, .theme-light pre:not(.frontmatter) .token.url, .theme-light .HyperMD-codeblock .cm-link, .theme-light .HyperMD-codeblock .token.url {
+color:#797403;
+text-decoration:underline;
+}
+
+.theme-light p>code .cm-qualifier, .theme-light p>code .token.function, .theme-light pre:not(.frontmatter) .cm-qualifier, .theme-light pre:not(.frontmatter) .token.function, .theme-light .HyperMD-codeblock .cm-qualifier, .theme-light .HyperMD-codeblock .token.function {
+color:#b57614;
+}
+
+.theme-light p>code .token.regex, .theme-light pre:not(.frontmatter) .token.regex, .theme-light .HyperMD-codeblock .token.regex {
+background:#797403;
+}
+
+.theme-light p>code .token.bold, .theme-light pre:not(.frontmatter) .token.bold, .theme-light .HyperMD-codeblock .token.bold {
+font-weight:bold;
+}
+
+.theme-light p>code .token.italic, .theme-light pre:not(.frontmatter) .token.italic, .theme-light .HyperMD-codeblock .token.italic {
+font-style:italic;
+}
+
+.theme-light p>code .token.inserted, .theme-light pre:not(.frontmatter) .token.inserted, .theme-light .HyperMD-codeblock .token.inserted {
+background:#7c6f64;
+}
+
+.theme-light p>code .token.deleted, .theme-light pre:not(.frontmatter) .token.deleted, .theme-light .HyperMD-codeblock .token.deleted {
+background:#9d0006;
+}`,
+    },
+    material: {
+      dark: `.theme-dark p>code, .theme-dark pre:not(.frontmatter), .theme-dark .HyperMD-codeblock {
+--code-background: #2f2f2f;
+--code-normal: #eee;
+--text-muted: #616161;
+--text-faint: #616161;
+}
+
+.theme-dark p>code .language-css>code, .theme-dark p>code .language-sass>code, .theme-dark p>code .language-scss>code, .theme-dark pre:not(.frontmatter) .language-css>code, .theme-dark pre:not(.frontmatter) .language-sass>code, .theme-dark pre:not(.frontmatter) .language-scss>code, .theme-dark .HyperMD-codeblock .language-css>code, .theme-dark .HyperMD-codeblock .language-sass>code, .theme-dark .HyperMD-codeblock .language-scss>code {
+color:#fd9170;
+}
+
+.theme-dark p>code [class*=language-] .namespace, .theme-dark pre:not(.frontmatter) [class*=language-] .namespace, .theme-dark .HyperMD-codeblock [class*=language-] .namespace {
+opacity:.7;
+}
+
+.theme-dark p>code .token.atrule, .theme-dark pre:not(.frontmatter) .token.atrule, .theme-dark .HyperMD-codeblock .token.atrule {
+color:#c792ea;
+}
+
+.theme-dark p>code .token.attr-name, .theme-dark pre:not(.frontmatter) .token.attr-name, .theme-dark .HyperMD-codeblock .token.attr-name {
+color:#ffcb6b;
+}
+
+.theme-dark p>code .cm-string, .theme-dark p>code .token.attr-value, .theme-dark pre:not(.frontmatter) .cm-string, .theme-dark pre:not(.frontmatter) .token.attr-value, .theme-dark .HyperMD-codeblock .cm-string, .theme-dark .HyperMD-codeblock .token.attr-value {
+color:#a5e844;
+}
+
+.theme-dark p>code .cm-attribute, .theme-dark p>code .token.attribute, .theme-dark pre:not(.frontmatter) .cm-attribute, .theme-dark pre:not(.frontmatter) .token.attribute, .theme-dark .HyperMD-codeblock .cm-attribute, .theme-dark .HyperMD-codeblock .token.attribute {
+color:#a5e844;
+}
+
+.theme-dark p>code .token.boolean, .theme-dark pre:not(.frontmatter) .token.boolean, .theme-dark .HyperMD-codeblock .token.boolean {
+color:#c792ea;
+}
+
+.theme-dark p>code .cm-builtin, .theme-dark p>code .token.builtin, .theme-dark pre:not(.frontmatter) .cm-builtin, .theme-dark pre:not(.frontmatter) .token.builtin, .theme-dark .HyperMD-codeblock .cm-builtin, .theme-dark .HyperMD-codeblock .token.builtin {
+color:#ffcb6b;
+}
+
+.theme-dark p>code .token.cdata, .theme-dark pre:not(.frontmatter) .token.cdata, .theme-dark .HyperMD-codeblock .token.cdata {
+color:#80cbc4;
+}
+
+.theme-dark p>code .token.char, .theme-dark pre:not(.frontmatter) .token.char, .theme-dark .HyperMD-codeblock .token.char {
+color:#80cbc4;
+}
+
+.theme-dark p>code .token.class, .theme-dark pre:not(.frontmatter) .token.class, .theme-dark .HyperMD-codeblock .token.class {
+color:#ffcb6b;
+}
+
+.theme-dark p>code .token.class-name, .theme-dark pre:not(.frontmatter) .token.class-name, .theme-dark .HyperMD-codeblock .token.class-name {
+color:#f2ff00;
+}
+
+.theme-dark p>code .cm-comment, .theme-dark p>code .cm-meta, .theme-dark p>code .cm-hr, .theme-dark p>code .token.comment, .theme-dark pre:not(.frontmatter) .cm-comment, .theme-dark pre:not(.frontmatter) .cm-meta, .theme-dark pre:not(.frontmatter) .cm-hr, .theme-dark pre:not(.frontmatter) .token.comment, .theme-dark .HyperMD-codeblock .cm-comment, .theme-dark .HyperMD-codeblock .cm-meta, .theme-dark .HyperMD-codeblock .cm-hr, .theme-dark .HyperMD-codeblock .token.comment {
+color:#616161;
+}
+
+.theme-dark p>code .token.constant, .theme-dark pre:not(.frontmatter) .token.constant, .theme-dark .HyperMD-codeblock .token.constant {
+color:#c792ea;
+}
+
+.theme-dark p>code .token.deleted, .theme-dark pre:not(.frontmatter) .token.deleted, .theme-dark .HyperMD-codeblock .token.deleted {
+color:#f66;
+}
+
+.theme-dark p>code .cm-type, .theme-dark p>code .token.doctype, .theme-dark pre:not(.frontmatter) .cm-type, .theme-dark pre:not(.frontmatter) .token.doctype, .theme-dark .HyperMD-codeblock .cm-type, .theme-dark .HyperMD-codeblock .token.doctype {
+color:#616161;
+}
+
+.theme-dark p>code .token.entity, .theme-dark pre:not(.frontmatter) .token.entity, .theme-dark .HyperMD-codeblock .token.entity {
+color:#f66;
+}
+
+.theme-dark p>code .cm-qualifier, .theme-dark p>code .token.function, .theme-dark pre:not(.frontmatter) .cm-qualifier, .theme-dark pre:not(.frontmatter) .token.function, .theme-dark .HyperMD-codeblock .cm-qualifier, .theme-dark .HyperMD-codeblock .token.function {
+color:#c792ea;
+}
+
+.theme-dark p>code .token.hexcode, .theme-dark pre:not(.frontmatter) .token.hexcode, .theme-dark .HyperMD-codeblock .token.hexcode {
+color:#f2ff00;
+}
+
+.theme-dark p>code .token.id, .theme-dark pre:not(.frontmatter) .token.id, .theme-dark .HyperMD-codeblock .token.id {
+color:#c792ea;
+font-weight:bold;
+}
+
+.theme-dark p>code .token.important, .theme-dark pre:not(.frontmatter) .token.important, .theme-dark .HyperMD-codeblock .token.important {
+color:#c792ea;
+font-weight:bold;
+}
+
+.theme-dark p>code .token.inserted, .theme-dark pre:not(.frontmatter) .token.inserted, .theme-dark .HyperMD-codeblock .token.inserted {
+color:#80cbc4;
+}
+
+.theme-dark p>code .cm-keyword, .theme-dark p>code .token.keyword, .theme-dark pre:not(.frontmatter) .cm-keyword, .theme-dark pre:not(.frontmatter) .token.keyword, .theme-dark .HyperMD-codeblock .cm-keyword, .theme-dark .HyperMD-codeblock .token.keyword {
+color:#c792ea;
+}
+
+.theme-dark p>code .cm-number, .theme-dark p>code .token.number, .theme-dark pre:not(.frontmatter) .cm-number, .theme-dark pre:not(.frontmatter) .token.number, .theme-dark .HyperMD-codeblock .cm-number, .theme-dark .HyperMD-codeblock .token.number {
+color:#fd9170;
+}
+
+.theme-dark p>code .cm-operator, .theme-dark p>code .token.operator, .theme-dark pre:not(.frontmatter) .cm-operator, .theme-dark pre:not(.frontmatter) .token.operator, .theme-dark .HyperMD-codeblock .cm-operator, .theme-dark .HyperMD-codeblock .token.operator {
+color:#89ddff;
+}
+
+.theme-dark p>code .token.prolog, .theme-dark pre:not(.frontmatter) .token.prolog, .theme-dark .HyperMD-codeblock .token.prolog {
+color:#616161;
+}
+
+.theme-dark p>code .cm-property, .theme-dark p>code .token.property, .theme-dark pre:not(.frontmatter) .cm-property, .theme-dark pre:not(.frontmatter) .token.property, .theme-dark .HyperMD-codeblock .cm-property, .theme-dark .HyperMD-codeblock .token.property {
+color:#80cbc4;
+}
+
+.theme-dark p>code .token.pseudo-class, .theme-dark pre:not(.frontmatter) .token.pseudo-class, .theme-dark .HyperMD-codeblock .token.pseudo-class {
+color:#a5e844;
+}
+
+.theme-dark p>code .token.pseudo-element, .theme-dark pre:not(.frontmatter) .token.pseudo-element, .theme-dark .HyperMD-codeblock .token.pseudo-element {
+color:#a5e844;
+}
+
+.theme-dark p>code .cm-punctuation, .theme-dark p>code .cm-bracket.cm-tag, .theme-dark p>code .token.punctuation, .theme-dark pre:not(.frontmatter) .cm-punctuation, .theme-dark pre:not(.frontmatter) .cm-bracket.cm-tag, .theme-dark pre:not(.frontmatter) .token.punctuation, .theme-dark .HyperMD-codeblock .cm-punctuation, .theme-dark .HyperMD-codeblock .cm-bracket.cm-tag, .theme-dark .HyperMD-codeblock .token.punctuation {
+color:#89ddff;
+}
+
+.theme-dark p>code .token.regex, .theme-dark pre:not(.frontmatter) .token.regex, .theme-dark .HyperMD-codeblock .token.regex {
+color:#f2ff00;
+}
+
+.theme-dark p>code .token.selector, .theme-dark pre:not(.frontmatter) .token.selector, .theme-dark .HyperMD-codeblock .token.selector {
+color:#f66;
+}
+
+.theme-dark p>code .cm-string-2, .theme-dark p>code .token.string, .theme-dark pre:not(.frontmatter) .cm-string-2, .theme-dark pre:not(.frontmatter) .token.string, .theme-dark .HyperMD-codeblock .cm-string-2, .theme-dark .HyperMD-codeblock .token.string {
+color:#a5e844;
+}
+
+.theme-dark p>code .token.symbol, .theme-dark pre:not(.frontmatter) .token.symbol, .theme-dark .HyperMD-codeblock .token.symbol {
+color:#c792ea;
+}
+
+.theme-dark p>code .cm-tag, .theme-dark p>code .token.tag, .theme-dark pre:not(.frontmatter) .cm-tag, .theme-dark pre:not(.frontmatter) .token.tag, .theme-dark .HyperMD-codeblock .cm-tag, .theme-dark .HyperMD-codeblock .token.tag {
+color:#f66;
+}
+
+.theme-dark p>code .token.unit, .theme-dark pre:not(.frontmatter) .token.unit, .theme-dark .HyperMD-codeblock .token.unit {
+color:#fd9170;
+}
+
+.theme-dark p>code .cm-link, .theme-dark p>code .token.url, .theme-dark pre:not(.frontmatter) .cm-link, .theme-dark pre:not(.frontmatter) .token.url, .theme-dark .HyperMD-codeblock .cm-link, .theme-dark .HyperMD-codeblock .token.url {
+color:#f66;
+}
+
+.theme-dark p>code .cm-variable, .theme-dark p>code .cm-variable-2, .theme-dark p>code .cm-variable-3, .theme-dark p>code .token.variable, .theme-dark pre:not(.frontmatter) .cm-variable, .theme-dark pre:not(.frontmatter) .cm-variable-2, .theme-dark pre:not(.frontmatter) .cm-variable-3, .theme-dark pre:not(.frontmatter) .token.variable, .theme-dark .HyperMD-codeblock .cm-variable, .theme-dark .HyperMD-codeblock .cm-variable-2, .theme-dark .HyperMD-codeblock .cm-variable-3, .theme-dark .HyperMD-codeblock .token.variable {
+color:#f66;
+}`,
+      light: `.theme-light p>code, .theme-light pre:not(.frontmatter), .theme-light .HyperMD-codeblock {
+--code-background: #fafafa;
+--code-normal: #90a4ae;
+--text-muted: #aabfc9;
+--text-faint: #aabfc9;
+}
+
+.theme-light p>code .language-css>code, .theme-light p>code .language-sass>code, .theme-light p>code .language-scss>code, .theme-light pre:not(.frontmatter) .language-css>code, .theme-light pre:not(.frontmatter) .language-sass>code, .theme-light pre:not(.frontmatter) .language-scss>code, .theme-light .HyperMD-codeblock .language-css>code, .theme-light .HyperMD-codeblock .language-sass>code, .theme-light .HyperMD-codeblock .language-scss>code {
+color:#f76d47;
+}
+
+.theme-light p>code [class*=language-] .namespace, .theme-light pre:not(.frontmatter) [class*=language-] .namespace, .theme-light .HyperMD-codeblock [class*=language-] .namespace {
+opacity:.7;
+}
+
+.theme-light p>code .token.atrule, .theme-light pre:not(.frontmatter) .token.atrule, .theme-light .HyperMD-codeblock .token.atrule {
+color:#7c4dff;
+}
+
+.theme-light p>code .token.attr-name, .theme-light pre:not(.frontmatter) .token.attr-name, .theme-light .HyperMD-codeblock .token.attr-name {
+color:#39adb5;
+}
+
+.theme-light p>code .cm-string, .theme-light p>code .token.attr-value, .theme-light pre:not(.frontmatter) .cm-string, .theme-light pre:not(.frontmatter) .token.attr-value, .theme-light .HyperMD-codeblock .cm-string, .theme-light .HyperMD-codeblock .token.attr-value {
+color:#f6a434;
+}
+
+.theme-light p>code .cm-attribute, .theme-light p>code .token.attribute, .theme-light pre:not(.frontmatter) .cm-attribute, .theme-light pre:not(.frontmatter) .token.attribute, .theme-light .HyperMD-codeblock .cm-attribute, .theme-light .HyperMD-codeblock .token.attribute {
+color:#f6a434;
+}
+
+.theme-light p>code .token.boolean, .theme-light pre:not(.frontmatter) .token.boolean, .theme-light .HyperMD-codeblock .token.boolean {
+color:#7c4dff;
+}
+
+.theme-light p>code .cm-builtin, .theme-light p>code .token.builtin, .theme-light pre:not(.frontmatter) .cm-builtin, .theme-light pre:not(.frontmatter) .token.builtin, .theme-light .HyperMD-codeblock .cm-builtin, .theme-light .HyperMD-codeblock .token.builtin {
+color:#39adb5;
+}
+
+.theme-light p>code .token.cdata, .theme-light pre:not(.frontmatter) .token.cdata, .theme-light .HyperMD-codeblock .token.cdata {
+color:#39adb5;
+}
+
+.theme-light p>code .token.char, .theme-light pre:not(.frontmatter) .token.char, .theme-light .HyperMD-codeblock .token.char {
+color:#39adb5;
+}
+
+.theme-light p>code .token.class, .theme-light pre:not(.frontmatter) .token.class, .theme-light .HyperMD-codeblock .token.class {
+color:#39adb5;
+}
+
+.theme-light p>code .token.class-name, .theme-light pre:not(.frontmatter) .token.class-name, .theme-light .HyperMD-codeblock .token.class-name {
+color:#6182b8;
+}
+
+.theme-light p>code .cm-comment, .theme-light p>code .cm-meta, .theme-light p>code .cm-hr, .theme-light p>code .token.comment, .theme-light pre:not(.frontmatter) .cm-comment, .theme-light pre:not(.frontmatter) .cm-meta, .theme-light pre:not(.frontmatter) .cm-hr, .theme-light pre:not(.frontmatter) .token.comment, .theme-light .HyperMD-codeblock .cm-comment, .theme-light .HyperMD-codeblock .cm-meta, .theme-light .HyperMD-codeblock .cm-hr, .theme-light .HyperMD-codeblock .token.comment {
+color:#aabfc9;
+}
+
+.theme-light p>code .token.constant, .theme-light pre:not(.frontmatter) .token.constant, .theme-light .HyperMD-codeblock .token.constant {
+color:#7c4dff;
+}
+
+.theme-light p>code .token.deleted, .theme-light pre:not(.frontmatter) .token.deleted, .theme-light .HyperMD-codeblock .token.deleted {
+color:#e53935;
+}
+
+.theme-light p>code .cm-type, .theme-light p>code .token.doctype, .theme-light pre:not(.frontmatter) .cm-type, .theme-light pre:not(.frontmatter) .token.doctype, .theme-light .HyperMD-codeblock .cm-type, .theme-light .HyperMD-codeblock .token.doctype {
+color:#aabfc9;
+}
+
+.theme-light p>code .token.entity, .theme-light pre:not(.frontmatter) .token.entity, .theme-light .HyperMD-codeblock .token.entity {
+color:#e53935;
+}
+
+.theme-light p>code .cm-qualifier, .theme-light p>code .token.function, .theme-light pre:not(.frontmatter) .cm-qualifier, .theme-light pre:not(.frontmatter) .token.function, .theme-light .HyperMD-codeblock .cm-qualifier, .theme-light .HyperMD-codeblock .token.function {
+color:#7c4dff;
+}
+
+.theme-light p>code .token.hexcode, .theme-light pre:not(.frontmatter) .token.hexcode, .theme-light .HyperMD-codeblock .token.hexcode {
+color:#f76d47;
+}
+
+.theme-light p>code .token.id, .theme-light pre:not(.frontmatter) .token.id, .theme-light .HyperMD-codeblock .token.id {
+color:#7c4dff;
+font-weight:bold;
+}
+
+.theme-light p>code .token.important, .theme-light pre:not(.frontmatter) .token.important, .theme-light .HyperMD-codeblock .token.important {
+color:#7c4dff;
+font-weight:bold;
+}
+
+.theme-light p>code .token.inserted, .theme-light pre:not(.frontmatter) .token.inserted, .theme-light .HyperMD-codeblock .token.inserted {
+color:#39adb5;
+}
+
+.theme-light p>code .cm-keyword, .theme-light p>code .token.keyword, .theme-light pre:not(.frontmatter) .cm-keyword, .theme-light pre:not(.frontmatter) .token.keyword, .theme-light .HyperMD-codeblock .cm-keyword, .theme-light .HyperMD-codeblock .token.keyword {
+color:#7c4dff;
+}
+
+.theme-light p>code .cm-number, .theme-light p>code .token.number, .theme-light pre:not(.frontmatter) .cm-number, .theme-light pre:not(.frontmatter) .token.number, .theme-light .HyperMD-codeblock .cm-number, .theme-light .HyperMD-codeblock .token.number {
+color:#f76d47;
+}
+
+.theme-light p>code .cm-operator, .theme-light p>code .token.operator, .theme-light pre:not(.frontmatter) .cm-operator, .theme-light pre:not(.frontmatter) .token.operator, .theme-light .HyperMD-codeblock .cm-operator, .theme-light .HyperMD-codeblock .token.operator {
+color:#39adb5;
+}
+
+.theme-light p>code .token.prolog, .theme-light pre:not(.frontmatter) .token.prolog, .theme-light .HyperMD-codeblock .token.prolog {
+color:#aabfc9;
+}
+
+.theme-light p>code .cm-property, .theme-light p>code .token.property, .theme-light pre:not(.frontmatter) .cm-property, .theme-light pre:not(.frontmatter) .token.property, .theme-light .HyperMD-codeblock .cm-property, .theme-light .HyperMD-codeblock .token.property {
+color:#39adb5;
+}
+
+.theme-light p>code .token.pseudo-class, .theme-light pre:not(.frontmatter) .token.pseudo-class, .theme-light .HyperMD-codeblock .token.pseudo-class {
+color:#f6a434;
+}
+
+.theme-light p>code .token.pseudo-element, .theme-light pre:not(.frontmatter) .token.pseudo-element, .theme-light .HyperMD-codeblock .token.pseudo-element {
+color:#f6a434;
+}
+
+.theme-light p>code .cm-punctuation, .theme-light p>code .cm-bracket.cm-tag, .theme-light p>code .token.punctuation, .theme-light pre:not(.frontmatter) .cm-punctuation, .theme-light pre:not(.frontmatter) .cm-bracket.cm-tag, .theme-light pre:not(.frontmatter) .token.punctuation, .theme-light .HyperMD-codeblock .cm-punctuation, .theme-light .HyperMD-codeblock .cm-bracket.cm-tag, .theme-light .HyperMD-codeblock .token.punctuation {
+color:#39adb5;
+}
+
+.theme-light p>code .token.regex, .theme-light pre:not(.frontmatter) .token.regex, .theme-light .HyperMD-codeblock .token.regex {
+color:#6182b8;
+}
+
+.theme-light p>code .token.selector, .theme-light pre:not(.frontmatter) .token.selector, .theme-light .HyperMD-codeblock .token.selector {
+color:#e53935;
+}
+
+.theme-light p>code .cm-string-2, .theme-light p>code .token.string, .theme-light pre:not(.frontmatter) .cm-string-2, .theme-light pre:not(.frontmatter) .token.string, .theme-light .HyperMD-codeblock .cm-string-2, .theme-light .HyperMD-codeblock .token.string {
+color:#f6a434;
+}
+
+.theme-light p>code .token.symbol, .theme-light pre:not(.frontmatter) .token.symbol, .theme-light .HyperMD-codeblock .token.symbol {
+color:#7c4dff;
+}
+
+.theme-light p>code .cm-tag, .theme-light p>code .token.tag, .theme-light pre:not(.frontmatter) .cm-tag, .theme-light pre:not(.frontmatter) .token.tag, .theme-light .HyperMD-codeblock .cm-tag, .theme-light .HyperMD-codeblock .token.tag {
+color:#e53935;
+}
+
+.theme-light p>code .token.unit, .theme-light pre:not(.frontmatter) .token.unit, .theme-light .HyperMD-codeblock .token.unit {
+color:#f76d47;
+}
+
+.theme-light p>code .cm-link, .theme-light p>code .token.url, .theme-light pre:not(.frontmatter) .cm-link, .theme-light pre:not(.frontmatter) .token.url, .theme-light .HyperMD-codeblock .cm-link, .theme-light .HyperMD-codeblock .token.url {
+color:#e53935;
+}
+
+.theme-light p>code .cm-variable, .theme-light p>code .cm-variable-2, .theme-light p>code .cm-variable-3, .theme-light p>code .token.variable, .theme-light pre:not(.frontmatter) .cm-variable, .theme-light pre:not(.frontmatter) .cm-variable-2, .theme-light pre:not(.frontmatter) .cm-variable-3, .theme-light pre:not(.frontmatter) .token.variable, .theme-light .HyperMD-codeblock .cm-variable, .theme-light .HyperMD-codeblock .cm-variable-2, .theme-light .HyperMD-codeblock .cm-variable-3, .theme-light .HyperMD-codeblock .token.variable {
+color:#e53935;
+}`,
+    },
+    "clean-embeds": {
+      general: `body.clean-embeds {
+--embed-background: inherit;
+--embed-border-left: 0px solid var(--interactive-accent);
+--embed-border-right: none;
+--embed-border-top: none;
+--embed-border-bottom: none;
+--embed-padding: 0 0 0 0;
+--embed-font-style: inherit;
+}
+
+body.clean-embeds .markdown-rendered .markdown-embed {
+max-width:100%;
+}
+
+body.clean-embeds .markdown-rendered .markdown-embed .markdown-rendered {
+padding-left:0;
+}`,
+    },
+    "hide-vault-title": {
+      general: `.hide-vault-title .nav-folder.mod-root>.nav-folder-title {
+display:none;
+}`,
+    },
+    "wrap-nav-titles": {
+      general: `.wrap-nav-titles {
+--nav-item-white-space: wrap;
+}`,
+    },
+    "heading-counter-0": {
+      general: `.heading-counter-0 .el-h1 {
+counter-increment:h1-counter;
+counter-reset:h1-counter;
+counter-set:h1-counter;
+}
+
+.heading-counter-0 .el-h1 h1::before {
+content:var(--heading-counter) counter(h1-counter) "";
+padding-right:.5em;
+}
+
+.heading-counter-0 .el-h2 {
+counter-increment:h2-counter;
+counter-reset:h3-counter;
+counter-set:h1-counter;
+}
+
+.heading-counter-0 .el-h2 h2::before {
+content:var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "";
+padding-right:.5em;
+}
+
+.heading-counter-0 .el-h3 {
+counter-increment:h3-counter;
+counter-reset:h4-counter;
+counter-set:h1-counter;
+}
+
+.heading-counter-0 .el-h3 h3::before {
+content:var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "." counter(h3-counter) "";
+padding-right:.5em;
+}
+
+.heading-counter-0 .el-h4 {
+counter-increment:h4-counter;
+counter-reset:h5-counter;
+counter-set:h1-counter;
+}
+
+.heading-counter-0 .el-h4 h4::before {
+content:var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "";
+padding-right:.5em;
+}
+
+.heading-counter-0 .el-h5 {
+counter-increment:h5-counter;
+counter-reset:h6-counter;
+counter-set:h1-counter;
+}
+
+.heading-counter-0 .el-h5 h5::before {
+content:var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "";
+padding-right:.5em;
+}
+
+.heading-counter-0 .el-h6 {
+counter-increment:h6-counter;
+counter-set:h1-counter;
+}
+
+.heading-counter-0 .el-h6 h6::before {
+content:var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "." counter(h6-counter) "";
+padding-right:.5em;
+}`,
+    },
+    "heading-counter-1": {
+      general: `.heading-counter-1 .el-h1 {
+counter-increment:h1-counter;
+counter-reset:h1-counter;
+}
+
+.heading-counter-1 .el-h1 h1::before {
+content:var(--heading-counter) counter(h1-counter) "";
+padding-right:.5em;
+}
+
+.heading-counter-1 .el-h2 {
+counter-increment:h2-counter;
+counter-reset:h3-counter;
+}
+
+.heading-counter-1 .el-h2 h2::before {
+content:var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "";
+padding-right:.5em;
+}
+
+.heading-counter-1 .el-h3 {
+counter-increment:h3-counter;
+counter-reset:h4-counter;
+}
+
+.heading-counter-1 .el-h3 h3::before {
+content:var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "." counter(h3-counter) "";
+padding-right:.5em;
+}
+
+.heading-counter-1 .el-h4 {
+counter-increment:h4-counter;
+counter-reset:h5-counter;
+}
+
+.heading-counter-1 .el-h4 h4::before {
+content:var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "";
+padding-right:.5em;
+}
+
+.heading-counter-1 .el-h5 {
+counter-increment:h5-counter;
+counter-reset:h6-counter;
+}
+
+.heading-counter-1 .el-h5 h5::before {
+content:var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "";
+padding-right:.5em;
+}
+
+.heading-counter-1 .el-h6 {
+counter-increment:h6-counter;
+}
+
+.heading-counter-1 .el-h6 h6::before {
+content:var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "." counter(h6-counter) "";
+padding-right:.5em;
+}`,
+    },
+    "h1-line": {
+      general: `.h1-line h1, .h1-line .markdown-rendered h1 {
+border-bottom:1px solid var(--background-modifier-border);
+}`,
+    },
+    "h2-line": {
+      general: `.h2-line h2, .h2-line .markdown-rendered h2 {
+border-bottom:1px solid var(--background-modifier-border);
+}`,
+    },
+    "h3-line": {
+      general: `.h3-line h3, .h3-line .markdown-rendered h3 {
+border-bottom:1px solid var(--background-modifier-border);
+}`,
+    },
+    "h4-line": {
+      general: `.h4-line h4, .h4-line .markdown-rendered h4 {
+border-bottom:1px solid var(--background-modifier-border);
+}`,
+    },
+    "h5-line": {
+      general: `.h5-line h5, .h5-line .markdown-rendered h5 {
+border-bottom:1px solid var(--background-modifier-border);
+}`,
+    },
+    "h6-line": {
+      general: `.h6-line h6, .h6-line .markdown-rendered h6 {
+border-bottom:1px solid var(--background-modifier-border);
+}`,
+    },
+    "alternate-marker-odd-1": {
+      general: `.alternate-marker-odd-1 ul>li .list-bullet::after, .alternate-marker-odd-1 ol>li>ul>li .list-bullet::after, .alternate-marker-odd-1 ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-1 ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-1 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-1 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after {
+--list-bullet-radius: 0;
+width:var(--list-bullet-width-hyphen);
+height:var(--list-bullet-height-hyphen);
+}`,
+    },
+    "alternate-marker-odd-2": {
+      general: `.alternate-marker-odd-2 ul>li .list-bullet::after, .alternate-marker-odd-2 ol>li>ul>li .list-bullet::after, .alternate-marker-odd-2 ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-2 ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-2 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-2 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after {
+--list-bullet-radius: 0;
+--list-bullet-width: 2px;
+--list-bullet-height: 2px;
+width:var(--list-bullet-width);
+height:var(--list-bullet-height);
+}`,
+    },
+    "alternate-marker-odd-3": {
+      general: `.alternate-marker-odd-3 ul>li .list-bullet::after, .alternate-marker-odd-3 ol>li>ul>li .list-bullet::after, .alternate-marker-odd-3 ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-3 ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-3 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-3 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after {
+width:var(--list-bullet-size);
+height:var(--list-bullet-size);
+}`,
+    },
+    "alternate-marker-odd-4": {
+      general: `.alternate-marker-odd-4 ul>li .list-bullet::after, .alternate-marker-odd-4 ol>li>ul>li .list-bullet::after, .alternate-marker-odd-4 ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-4 ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-4 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-4 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after {
+--list-bullet-radius: 50%;
+width:var(--list-bullet-size);
+height:var(--list-bullet-size);
+}`,
+    },
+    "alternate-marker-odd-5": {
+      general: `.alternate-marker-odd-5 ul>li .list-bullet::after, .alternate-marker-odd-5 ol>li>ul>li .list-bullet::after, .alternate-marker-odd-5 ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-5 ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-5 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-5 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after {
+--list-bullet-radius: 50%;
+width:var(--list-bullet-size-ring);
+height:var(--list-bullet-size-ring);
+border:1.5px solid var(--list-marker-color);
+background-color:rgba(0,0,0,0);
+}`,
+    },
+    "alternate-marker-odd-6": {
+      general: `.alternate-marker-odd-6 ul>li .list-bullet::after, .alternate-marker-odd-6 ol>li>ul>li .list-bullet::after, .alternate-marker-odd-6 ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-6 ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-6 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-odd-6 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after {
+--list-bullet-radius: 0;
+width:var(--list-bullet-width-triangle);
+height:var(--list-bullet-height-triangle);
+border-top:var(--list-bullet-border-triangle) solid rgba(0,0,0,0);
+border-left:var(--list-bullet-width-triangle) solid var(--list-marker-color);
+border-bottom:var(--list-bullet-border-triangle) solid rgba(0,0,0,0);
+background-color:rgba(0,0,0,0);
+transform:translateX(2px);
+}`,
+    },
+    "alternate-marker-even-1": {
+      general: `.alternate-marker-even-1 ul>li>ul>li .list-bullet::after, .alternate-marker-even-1 ol>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-1 ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-1 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-1 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-1 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after {
+--list-bullet-radius: 0;
+background-color:var(--list-marker-color);
+width:var(--list-bullet-width-em-dash);
+height:var(--list-bullet-height-em-dash);
+}`,
+    },
+    "alternate-marker-even-2": {
+      general: `.alternate-marker-even-2 ul>li>ul>li .list-bullet::after, .alternate-marker-even-2 ol>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-2 ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-2 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-2 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-2 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after {
+--list-bullet-radius: 0;
+width:var(--list-bullet-width-hyphen);
+height:var(--list-bullet-height-hyphen);
+}`,
+    },
+    "alternate-marker-even-3": {
+      general: `.alternate-marker-even-3 ul>li>ul>li .list-bullet::after, .alternate-marker-even-3 ol>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-3 ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-3 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-3 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-3 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after {
+--list-bullet-radius: 0;
+--list-bullet-width: 2px;
+--list-bullet-height: 2px;
+width:var(--list-bullet-width);
+height:var(--list-bullet-height);
+}`,
+    },
+    "alternate-marker-even-4": {
+      general: `.alternate-marker-even-4 ul>li>ul>li .list-bullet::after, .alternate-marker-even-4 ol>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-4 ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-4 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-4 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-4 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after {
+--list-bullet-radius: 50%;
+width:var(--list-bullet-size);
+height:var(--list-bullet-size);
+}`,
+    },
+    "alternate-marker-even-5": {
+      general: `.alternate-marker-even-5 ul>li>ul>li .list-bullet::after, .alternate-marker-even-5 ol>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-5 ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-5 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-5 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-5 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after {
+--list-bullet-radius: 50%;
+width:var(--list-bullet-size-ring);
+height:var(--list-bullet-size-ring);
+border:1.5px solid var(--list-marker-color);
+background-color:rgba(0,0,0,0);
+}`,
+    },
+    "alternate-marker-even-6": {
+      general: `.alternate-marker-even-6 ul>li>ul>li .list-bullet::after, .alternate-marker-even-6 ol>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-6 ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-6 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-6 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after, .alternate-marker-even-6 ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li .list-bullet::after {
+--list-bullet-radius: 0;
+width:var(--list-bullet-width-triangle);
+height:var(--list-bullet-height-triangle);
+border-top:var(--list-bullet-border-triangle) solid rgba(0,0,0,0);
+border-left:var(--list-bullet-width-triangle) solid var(--list-marker-color);
+border-bottom:var(--list-bullet-border-triangle) solid rgba(0,0,0,0);
+background-color:rgba(0,0,0,0);
+transform:translateX(2px);
+}`,
+    },
+    "step-list-0": {
+      general: `.step-list-0 ol {
+list-style-type:none;
+}
+
+.step-list-0 ol {
+counter-reset:decimal;
+}
+
+.step-list-0 ol>li::before {
+content:"Step " counters(decimal, ".") ": ";
+counter-increment:decimal;
+color:var(--text-faint);
+margin-left:-1.1em;
+}`,
+    },
+    "step-list-1": {
+      general: `.step-list-1 ol {
+list-style-type:none;
+}
+
+.step-list-1 ol {
+counter-reset:decimal;
+}
+
+.step-list-1 ol>li::before {
+content:counters(decimal, ".") ". ";
+counter-increment:decimal;
+color:var(--text-faint);
+margin-left:-1.1em;
+}`,
+    },
+    "table-cell-border": {
+      general: `.table-cell-border .cm-embed-block.markdown-rendered .block-language-dataview th, .table-cell-border .markdown-rendered table th, .table-cell-border .markdown-rendered .table-view-table th {
+border:1px solid var(--border-subtle-1);
+border-bottom:1px solid var(--border-strong-1);
+}
+
+.table-cell-border .cm-embed-block.markdown-rendered .block-language-dataview td, .table-cell-border .markdown-rendered table td, .table-cell-border .markdown-rendered .table-view-table td {
+border:1px solid var(--border-subtle-1);
+}`,
+    },
+    "table-row-border": {
+      general: `.table-row-border:not(.table-sticky-headers) .cm-embed-block.markdown-rendered .block-language-dataview tbody tr td, .table-row-border:not(.table-sticky-headers) .markdown-rendered table tbody tr td, .table-row-border:not(.table-sticky-headers) .markdown-rendered .table-view-table tbody tr td {
+border-top:1px solid var(--border-subtle-1);
+border-bottom:1px solid var(--border-subtle-1);
+}
+
+.table-sticky-headers.table-row-border .cm-embed-block.markdown-rendered .block-language-dataview tbody tr td, .table-sticky-headers.table-row-border .markdown-rendered table tbody tr td, .table-sticky-headers.table-row-border .markdown-rendered .table-view-table tbody tr td {
+border-bottom:1px solid var(--border-subtle-1);
+}`,
+    },
+    "table-column-border": {
+      general: `.table-column-border .cm-embed-block.markdown-rendered .block-language-dataview td:not(:last-child), .table-column-border .markdown-rendered table td:not(:last-child), .table-column-border .markdown-rendered .table-view-table td:not(:last-child) {
+border-right:1px solid var(--border-subtle-1);
+}`,
+    },
+    "table-alternate-row": {
+      general: `.table-alternate-row .cm-embed-block.markdown-rendered .block-language-dataview tbody tr:nth-child(odd), .table-alternate-row .markdown-rendered table tbody tr:nth-child(odd), .table-alternate-row .markdown-rendered .table-view-table tbody tr:nth-child(odd) {
+background-color:var(--background-hover);
+}`,
+    },
+    "table-alternate-column": {
+      general: `.table-alternate-column .cm-embed-block.markdown-rendered .block-language-dataview tbody tr td:nth-child(odd), .table-alternate-column .markdown-rendered table tbody tr td:nth-child(odd), .table-alternate-column .markdown-rendered .table-view-table tbody tr td:nth-child(odd) {
+background-color:var(--background-hover);
+border-top:1px solid var(--background-hover);
+border-bottom:1px solid var(--background-hover);
+}`,
+    },
+    "table-hover-row": {
+      general: `.table-hover-row .cm-embed-block.markdown-rendered .block-language-dataview tbody tr:hover, .table-hover-row .markdown-rendered table tbody tr:hover, .table-hover-row .markdown-rendered .table-view-table tbody tr:hover {
+background-color:rgba(0,0,0,0);
+}`,
+    },
+    "table-single-rows": {
+      general: `.table-single-rows .cm-embed-block.markdown-rendered .block-language-dataview th, .table-single-rows .cm-embed-block.markdown-rendered .block-language-dataview td, .table-single-rows .markdown-rendered table th, .table-single-rows .markdown-rendered table td, .table-single-rows .markdown-rendered .table-view-table th, .table-single-rows .markdown-rendered .table-view-table td {
+overflow:hidden;
+white-space:nowrap;
+text-overflow:ellipsis;
+}`,
+    },
+    "table-sticky-headers": {
+      general: `.table-sticky-headers .cm-embed-block.markdown-rendered .block-language-dataview thead, .table-sticky-headers .cm-embed-block.markdown-rendered .block-language-dataview tbody tr, .table-sticky-headers .markdown-rendered table thead, .table-sticky-headers .markdown-rendered table tbody tr, .table-sticky-headers .markdown-rendered .table-view-table thead, .table-sticky-headers .markdown-rendered .table-view-table tbody tr {
+border-collapse:collapse;
+display:table;
+width:100%;
+table-layout:fixed;
+}
+
+.table-sticky-headers .cm-embed-block.markdown-rendered .block-language-dataview tbody, .table-sticky-headers .markdown-rendered table tbody, .table-sticky-headers .markdown-rendered .table-view-table tbody {
+display:block;
+max-height:var(--table-sticky-height);
+overflow:auto;
+}
+
+.table-row-border .cm-embed-block.markdown-rendered .block-language-dataview tbody tr td, .table-row-border .markdown-rendered table tbody tr td, .table-row-border .markdown-rendered .table-view-table tbody tr td {
+border-bottom:1px solid var(--border-subtle-1);
+}`,
+    },
+    "table-tabular-figures": {
+      general: `.table-tabular-figures table {
+font-variant-numeric:tabular-nums;
+}`,
+    },
+    "table-nums": {
+      general: `.table-nums table {
+counter-reset:section;
+}
+
+.table-nums table thead>tr>th:first-child::before {
+display:inline-block;
+content:" ";
+padding-right:8px;
+min-width:3ch;
+}
+
+.table-nums table tbody>tr>td:first-child::before {
+display:inline-block;
+counter-increment:section;
+content:counter(section) " ";
+text-align:center;
+padding-right:8px;
+color:var(--text-faint);
+font-size:.875em;
+font-variant-numeric:tabular-nums;
+min-width:3ch;
+}`,
+    },
+    "sticky-view-actions": {
+      general: `.sticky-view-actions .view-header {
+height:unset;
+border-width:1px;
+}
+
+.sticky-view-actions .view-header .view-actions {
+position:unset;
+margin-top:unset;
+}`,
+    },
+    "colorful-active-nav": {
+      general: `.colorful-active-nav .horizontal-tab-nav-item.is-active, .colorful-active-nav .vertical-tab-nav-item.is-active {
+background-color:var(--background-selected);
+color:var(--text-normal);
+}
+
+.colorful-active-nav .horizontal-tab-nav-item.is-active:hover, .colorful-active-nav .vertical-tab-nav-item.is-active:hover {
+background-color:var(--background-selected-hover);
+}`,
+    },
+    stendig: {
+      general: `.calendar-flip #calendar-container .title {
+justify-content:flex-end;
+}
+
+.calendar-flip #calendar-container .right-nav {
+justify-content:flex-end;
+}
+
+.stendig #calendar-container {
+padding:0;
+font-feature-settings:normal;
+}
+
+.stendig #calendar-container .nav {
+flex-direction:column;
+margin-bottom:2em;
+}
+
+.stendig #calendar-container .title {
+font-size:1rem;
+padding-right:8px;
+display:flex;
+flex-direction:row-reverse;
+width:100%;
+justify-content:flex-start;
+gap:2px;
+border-bottom:1px solid var(--background-modifier-border);
+}
+
+.stendig #calendar-container .right-nav {
+flex-direction:row;
+justify-content:flex-start;
+margin:0;
+width:100%;
+gap:0;
+align-items:flex-end;
+padding-top:4px;
+}
+
+.stendig #calendar-container .right-nav .reset-button {
+margin:0;
+padding:0;
+font-size:.75em;
+opacity:.25;
+}
+
+.stendig #calendar-container .right-nav .reset-button:hover {
+opacity:1;
+}
+
+.stendig #calendar-container .right-nav .arrow svg {
+background-color:currentcolor;
+mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' xml:space='preserve'%3E%3Cpath d='M10 16 20 6l1.4 1.4-8.6 8.6 8.6 8.6L20 26z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z'/%3E%3C/svg%3E");
+opacity:.25;
+}
+
+.stendig #calendar-container .right-nav .arrow svg:hover {
+opacity:1;
+}
+
+.stendig #calendar-container .right-nav .arrow svg>path {
+display:none;
+}
+
+.stendig #calendar-container table.calendar th {
+padding:0;
+font-size:1rem;
+font-weight:normal;
+text-align:left;
+color:rgba(0,0,0,0);
+border:none;
+}
+
+.stendig #calendar-container table.calendar th:not(:first-of-type) {
+border-left:1px solid var(--background-modifier-border);
+border-radius:0;
+}
+
+.stendig #calendar-container table.calendar th::first-letter {
+color:var(--text-normal);
+}
+
+.stendig #calendar-container table.calendar td:not(:first-of-type) {
+border-left:1px solid var(--background-modifier-border);
+border-radius:0;
+}
+
+.stendig #calendar-container table.calendar td .day, .stendig #calendar-container table.calendar td .week-num {
+text-align:left;
+font-size:1rem;
+padding:0;
+display:flex;
+flex-direction:row;
+}
+
+.stendig #calendar-container table.calendar td .day:hover, .stendig #calendar-container table.calendar td .week-num:hover {
+background-color:var(--background-hover);
+}
+
+.stendig #calendar-container table.calendar td .week-num {
+opacity:.25;
+}
+
+.stendig #calendar-container .dot-container {
+padding-top:0;
+}
+
+.stendig #calendar-container .day:hover .dot-container svg {
+--color-dot: var(--calendar-dot-hover);
+}
+
+.stendig #calendar-container th, .stendig #calendar-container td {
+padding-left:2px;
+}`,
+    },
+    "calendar-flip": {
+      general: `.calendar-flip #calendar-container .nav {
+flex-direction:row-reverse;
+justify-content:space-between;
+}
+
+.calendar-flip #calendar-container .title {
+flex-grow:unset;
+padding-right:8px;
+}
+
+.stendig.calendar-flip #calendar-container .title {
+justify-content:flex-end;
+}
+
+.stendig.calendar-flip #calendar-container .right-nav {
+justify-content:flex-end;
+}`,
+    },
+    "wrap-kanban-lanes": {
+      general: `.wrap-kanban-lanes .kanban-plugin__board>div {
+flex-wrap:wrap;
+overflow-y:scroll;
+}`,
+    },
+    "desaturate-images": {
+      general: `body.desaturate-images .image-embed {
+opacity:.7;
+transition:opacity var(--duration-slow-2) var(--motion-entrance-expressive);
+}
+
+body.desaturate-images .image-embed:hover {
+opacity:1;
+}`,
+    },
+  },
 };

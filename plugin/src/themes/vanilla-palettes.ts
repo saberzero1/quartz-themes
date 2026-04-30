@@ -3334,7 +3334,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "color-scheme-catppuccin-latte": `.color-scheme-catppuccin-latte {
+    "color-scheme-catppuccin-latte": {
+      light: `.color-scheme-catppuccin-latte {
 --rosewater: #dc8a78;
 --flamingo: #dd7878;
 --pink: #ea76cb;
@@ -3398,7 +3399,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--peach);
 --code-variable: var(--text-color);
 }`,
-    "color-scheme-gruvbox-soft": `.color-scheme-gruvbox-soft {
+    },
+    "color-scheme-gruvbox-soft": {
+      dark: `.color-scheme-gruvbox-soft {
 --dark0-hard: #1d2021;
 --dark0: #282828;
 --dark0-soft: #32302f;
@@ -3492,8 +3495,8 @@ html[saved-theme="light"] body ul.tags > li {
 --border-color-secondary: var(--dark4);
 --text-color-muted-dark: var(--dark3);
 --text-color-muted-light: var(--dark4);
-}
-.color-scheme-gruvbox-soft {
+}`,
+      light: `.color-scheme-gruvbox-soft {
 --dark0-hard: #1d2021;
 --dark0: #282828;
 --dark0-soft: #32302f;
@@ -3588,7 +3591,9 @@ html[saved-theme="light"] body ul.tags > li {
 --text-color-muted-dark: var(--light3);
 --text-color-muted-light: var(--light4);
 }`,
-    "color-scheme-gruvbox-medium": `.color-scheme-gruvbox-medium {
+    },
+    "color-scheme-gruvbox-medium": {
+      dark: `.color-scheme-gruvbox-medium {
 --dark0-hard: #1d2021;
 --dark0: #282828;
 --dark0-soft: #32302f;
@@ -3682,8 +3687,8 @@ html[saved-theme="light"] body ul.tags > li {
 --border-color-secondary: var(--dark3);
 --text-color-muted-dark: var(--dark2);
 --text-color-muted-light: var(--dark3);
-}
-.color-scheme-gruvbox-medium {
+}`,
+      light: `.color-scheme-gruvbox-medium {
 --dark0-hard: #1d2021;
 --dark0: #282828;
 --dark0-soft: #32302f;
@@ -3778,7 +3783,9 @@ html[saved-theme="light"] body ul.tags > li {
 --text-color-muted-dark: var(--light2);
 --text-color-muted-light: var(--light3);
 }`,
-    "color-scheme-gruvbox-hard": `.color-scheme-gruvbox-hard {
+    },
+    "color-scheme-gruvbox-hard": {
+      dark: `.color-scheme-gruvbox-hard {
 --dark0-hard: #1d2021;
 --dark0: #282828;
 --dark0-soft: #32302f;
@@ -3872,8 +3879,8 @@ html[saved-theme="light"] body ul.tags > li {
 --border-color-secondary: var(--dark2);
 --text-color-muted-dark: var(--dark1);
 --text-color-muted-light: var(--dark2);
-}
-.color-scheme-gruvbox-hard {
+}`,
+      light: `.color-scheme-gruvbox-hard {
 --dark0-hard: #1d2021;
 --dark0: #282828;
 --dark0-soft: #32302f;
@@ -3968,7 +3975,9 @@ html[saved-theme="light"] body ul.tags > li {
 --text-color-muted-dark: var(--light1);
 --text-color-muted-light: var(--light2);
 }`,
-    "color-scheme-horizon-bright": `.color-scheme-horizon-bright {
+    },
+    "color-scheme-horizon-bright": {
+      light: `.color-scheme-horizon-bright {
 --blue: #26bbd9;
 --cyan: #59e1e3;
 --green: #29d398;
@@ -4025,7 +4034,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--crimson);
 --code-variable: var(--thunderbird);
 }`,
-    "color-scheme-kanagawa-lotus": `.color-scheme-kanagawa-lotus {
+    },
+    "color-scheme-kanagawa-lotus": {
+      light: `.color-scheme-kanagawa-lotus {
 --lotusInk1: #545464;
 --lotusInk2: #43436c;
 --lotusGray: #dcd7ba;
@@ -4103,7 +4114,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--lotusPink);
 --code-variable: var(--lotusOrange);
 }`,
-    "color-scheme-tokyo-night-day": `.color-scheme-tokyo-night-day {
+    },
+    "color-scheme-tokyo-night-day": {
+      light: `.color-scheme-tokyo-night-day {
 --bg: #d5d6db;
 --bg-dark: #cbccd1;
 --bg-highlight: #b5b9c9;
@@ -4170,7 +4183,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--color-orange);
 --code-variable: var(--fg);
 }`,
-    "color-scheme-rose-pine-dawn": `.color-scheme-rose-pine-dawn {
+    },
+    "color-scheme-rose-pine-dawn": {
+      light: `.color-scheme-rose-pine-dawn {
 --nc: #f8f0e7;
 --base: #faf4ed;
 --surface: #fffaf3;
@@ -4224,7 +4239,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--rose);
 --code-variable: var(--text);
 }`,
-    "color-scheme-atom-one-dark": `.color-scheme-atom-one-dark {
+    },
+    "color-scheme-atom-one-dark": {
+      dark: `.color-scheme-atom-one-dark {
 --black: #181a1f;
 --darkest-gray: #21252b;
 --bg0: #282c34;
@@ -4273,7 +4290,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--color-orange);
 --code-variable: var(--text-color);
 }`,
-    "color-scheme-catppuccin-frappe": `.color-scheme-catppuccin-frappe {
+    },
+    "color-scheme-catppuccin-frappe": {
+      dark: `.color-scheme-catppuccin-frappe {
 --rosewater: #f2d5cf;
 --flamingo: #eebebe;
 --pink: #f4b8e4;
@@ -4337,7 +4356,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--peach);
 --code-variable: var(--text-color);
 }`,
-    "color-scheme-catppuccin-macchiato": `.color-scheme-catppuccin-macchiato {
+    },
+    "color-scheme-catppuccin-macchiato": {
+      dark: `.color-scheme-catppuccin-macchiato {
 --rosewater: #f4dbd6;
 --flamingo: #f0c6c6;
 --pink: #f5bde6;
@@ -4401,7 +4422,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--peach);
 --code-variable: var(--text-color);
 }`,
-    "color-scheme-catppuccin-mocha": `.color-scheme-catppuccin-mocha {
+    },
+    "color-scheme-catppuccin-mocha": {
+      dark: `.color-scheme-catppuccin-mocha {
 --rosewater: #f5e0dc;
 --flamingo: #f2cdcd;
 --pink: #f5c2e7;
@@ -4465,7 +4488,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--peach);
 --code-variable: var(--text-color);
 }`,
-    "color-scheme-dracula": `.color-scheme-dracula {
+    },
+    "color-scheme-dracula": {
+      dark: `.color-scheme-dracula {
 --bg: #282a36;
 --fg: #f8f8f2;
 --selection: #44475a;
@@ -4592,7 +4617,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--purple);
 --code-variable: var(--purple);
 }`,
-    "color-scheme-dracula-soft": `.color-scheme-dracula-soft {
+    },
+    "color-scheme-dracula-soft": {
+      dark: `.color-scheme-dracula-soft {
 --bg: #292a35;
 --fg: #f6f6f5;
 --selection: #7c7f8a;
@@ -4655,7 +4682,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--purple);
 --code-variable: var(--purple);
 }`,
-    "color-scheme-horizon": `.color-scheme-horizon {
+    },
+    "color-scheme-horizon": {
+      dark: `.color-scheme-horizon {
 --blue: #26bbd9;
 --cyan: #59e1e3;
 --green: #29d398;
@@ -4711,8 +4740,8 @@ html[saved-theme="light"] body ul.tags > li {
 --code-string: var(--rosebud);
 --code-value: var(--apricot);
 --code-variable: var(--cranberry);
-}
-.color-scheme-horizon-bright {
+}`,
+      light: `.color-scheme-horizon-bright {
 --blue: #26bbd9;
 --cyan: #59e1e3;
 --green: #29d398;
@@ -4769,7 +4798,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--crimson);
 --code-variable: var(--thunderbird);
 }`,
-    "color-scheme-kanagawa-dragon": `.color-scheme-kanagawa-dragon {
+    },
+    "color-scheme-kanagawa-dragon": {
+      dark: `.color-scheme-kanagawa-dragon {
 --dragonBlack0: #0d0c0c;
 --dragonBlack1: #12120f;
 --dragonBlack2: #1d1c19;
@@ -4831,7 +4862,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--dragonPink);
 --code-variable: var(--dragonYellow);
 }`,
-    "color-scheme-kanagawa-wave": `.color-scheme-kanagawa-wave {
+    },
+    "color-scheme-kanagawa-wave": {
+      dark: `.color-scheme-kanagawa-wave {
 --background: #1f1f28;
 --background-alt: #2a2a37;
 --sumiInk5: #363646;
@@ -4885,7 +4918,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--sakuraPink);
 --code-variable: var(--purple);
 }`,
-    "color-scheme-nord": `.color-scheme-nord {
+    },
+    "color-scheme-nord": {
+      dark: `.color-scheme-nord {
 --black: #2e3440;
 --dark-gray: #3b4252;
 --gray: #434c5e;
@@ -4934,7 +4969,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--color-purple);
 --code-variable: var(--text-color);
 }`,
-    "color-scheme-rose-pine": `.color-scheme-rose-pine {
+    },
+    "color-scheme-rose-pine": {
+      dark: `.color-scheme-rose-pine {
 --nc: #16141f;
 --base: #191724;
 --surface: #1f1d2e;
@@ -5042,8 +5079,8 @@ html[saved-theme="light"] body ul.tags > li {
 --code-string: var(--gold);
 --code-value: var(--rose);
 --code-variable: var(--text);
-}
-.color-scheme-rose-pine-dawn {
+}`,
+      light: `.color-scheme-rose-pine-dawn {
 --nc: #f8f0e7;
 --base: #faf4ed;
 --surface: #fffaf3;
@@ -5097,7 +5134,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--rose);
 --code-variable: var(--text);
 }`,
-    "color-scheme-rose-pine-moon": `.color-scheme-rose-pine-moon {
+    },
+    "color-scheme-rose-pine-moon": {
+      dark: `.color-scheme-rose-pine-moon {
 --nc: #1f1d30;
 --base: #232136;
 --surface: #2a273f;
@@ -5151,7 +5190,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--rose);
 --code-variable: var(--text);
 }`,
-    "color-scheme-tokyo-night": `.color-scheme-tokyo-night {
+    },
+    "color-scheme-tokyo-night": {
+      dark: `.color-scheme-tokyo-night {
 --bg: #1a1b26;
 --bg-dark: #16161e;
 --bg-highlight: #363a4a;
@@ -5353,8 +5394,8 @@ html[saved-theme="light"] body ul.tags > li {
 --code-string: var(--color-green);
 --code-value: var(--color-orange);
 --code-variable: var(--fg);
-}
-.color-scheme-tokyo-night-day {
+}`,
+      light: `.color-scheme-tokyo-night-day {
 --bg: #d5d6db;
 --bg-dark: #cbccd1;
 --bg-highlight: #b5b9c9;
@@ -5421,7 +5462,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--color-orange);
 --code-variable: var(--fg);
 }`,
-    "color-scheme-tokyo-night-moon": `.color-scheme-tokyo-night-moon {
+    },
+    "color-scheme-tokyo-night-moon": {
+      dark: `.color-scheme-tokyo-night-moon {
 --bg: #222436;
 --bg-dark: #1e2030;
 --bg-highlight: #2f334d;
@@ -5488,7 +5531,9 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--color-orange);
 --code-variable: var(--fg);
 }`,
-    "color-scheme-tokyo-night-storm": `.color-scheme-tokyo-night-storm {
+    },
+    "color-scheme-tokyo-night-storm": {
+      dark: `.color-scheme-tokyo-night-storm {
 --bg: #24283b;
 --bg-dark: #1f2335;
 --bg-highlight: #363a4a;
@@ -5555,5 +5600,6 @@ html[saved-theme="light"] body ul.tags > li {
 --code-value: var(--color-orange);
 --code-variable: var(--fg);
 }`,
+    },
   },
 };

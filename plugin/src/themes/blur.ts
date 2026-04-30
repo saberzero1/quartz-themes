@@ -3204,7 +3204,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "white-glow": `body.white-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.white-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.white-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.white-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.white-glow-general .tabs-nav-item, body.white-glow-general .tabs-nav-item:hover, body.white-glow-general .markdown-preview-view.homepage .callout-title {
+    "white-glow": {
+      general: `body.white-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.white-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.white-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.white-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.white-glow-general .tabs-nav-item, body.white-glow-general .tabs-nav-item:hover, body.white-glow-general .markdown-preview-view.homepage .callout-title {
 color: #ffffff !important;
 text-shadow: 0 0 1px #ffffff, 0 0 4px #ffffff;
 }
@@ -3218,7 +3219,9 @@ body.white-glow-general .embed {
 border-color: rgba(255, 255, 255, 0.4);
 box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
 }`,
-    "rainbow-glow": `body.rainbow-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.rainbow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.rainbow-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.rainbow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.rainbow-glow-general .tabs-nav-item, body.rainbow-glow-general .tabs-nav-item:hover, body.rainbow-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "rainbow-glow": {
+      general: `body.rainbow-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.rainbow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.rainbow-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.rainbow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.rainbow-glow-general .tabs-nav-item, body.rainbow-glow-general .tabs-nav-item:hover, body.rainbow-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #ff4da6, 0 0 6px #7f00ff, 0 0 10px #00bfff;
 animation: rainbowGlow 6s linear infinite;
@@ -3237,7 +3240,9 @@ box-shadow: 0 0 20px rgba(255, 140, 207, 0.25),
                 0 0 35px rgba(113, 186, 255, 0.25),
                 0 0 40px rgba(192, 132, 252, 0.25);
 }`,
-    "blue-glow": `body.blue-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.blue-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.blue-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.blue-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.blue-glow-general .tabs-nav-item, body.blue-glow-general .tabs-nav-item:hover, body.blue-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "blue-glow": {
+      general: `body.blue-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.blue-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.blue-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.blue-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.blue-glow-general .tabs-nav-item, body.blue-glow-general .tabs-nav-item:hover, body.blue-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #33ccff, 0 0 6px #66d9ff, 0 0 10px #66d9ff;
 }
@@ -3252,7 +3257,9 @@ body.blue-glow-general .embed {
 border-color: rgba(113, 186, 255, 0.4);
 box-shadow: 0 0 20px rgba(113, 186, 255, 0.25);
 }`,
-    "pink-glow": `body.pink-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.pink-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.pink-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.pink-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.pink-glow-general .tabs-nav-item, body.pink-glow-general .tabs-nav-item:hover, body.pink-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "pink-glow": {
+      general: `body.pink-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.pink-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.pink-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.pink-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.pink-glow-general .tabs-nav-item, body.pink-glow-general .tabs-nav-item:hover, body.pink-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #ff66cc, 0 0 6px #ff99dd, 0 0 10px #ff99dd;
 }
@@ -3266,7 +3273,9 @@ body.pink-glow-general .embed {
 border-color: rgba(255, 140, 207, 0.4);
 box-shadow: 0 0 7px rgba(255, 140, 207, 0.25);
 }`,
-    "purple-glow": `body.purple-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.purple-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.purple-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.purple-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.purple-glow-general .tabs-nav-item, body.purple-glow-general .tabs-nav-item:hover, body.purple-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "purple-glow": {
+      general: `body.purple-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.purple-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.purple-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.purple-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.purple-glow-general .tabs-nav-item, body.purple-glow-general .tabs-nav-item:hover, body.purple-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #b266ff, 0 0 6px #cc99ff, 0 0 10px #cc99ff;
 }
@@ -3280,7 +3289,9 @@ body.purple-glow-general .embed {
 border-color: rgba(192, 132, 252, 0.4);
 box-shadow: 0 0 20px rgba(192, 132, 252, 0.25);
 }`,
-    "yellow-glow": `body.yellow-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.yellow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.yellow-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.yellow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.yellow-glow-general .tabs-nav-item, body.yellow-glow-general .tabs-nav-item:hover, body.yellow-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "yellow-glow": {
+      general: `body.yellow-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.yellow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.yellow-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.yellow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.yellow-glow-general .tabs-nav-item, body.yellow-glow-general .tabs-nav-item:hover, body.yellow-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #ffe600, 0 0 6px #fff700, 0 0 10px #fff700;
 }
@@ -3294,7 +3305,9 @@ body.yellow-glow-general .embed {
 border-color: rgba(250, 204, 21, 0.4);
 box-shadow: 0 0 20px rgba(250, 204, 21, 0.25);
 }`,
-    "green-glow": `body.green-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.green-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.green-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.green-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.green-glow-general .nav-folder-title:hover, body.green-glow-general .tabs-nav-item, body.green-glow-general .tabs-nav-item:hover, body.green-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "green-glow": {
+      general: `body.green-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.green-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.green-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.green-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.green-glow-general .nav-folder-title:hover, body.green-glow-general .tabs-nav-item, body.green-glow-general .tabs-nav-item:hover, body.green-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #0dff00, 0 0 6px #00ff15, 0 0 10px #00ff15;
 }
@@ -3308,7 +3321,9 @@ body.green-glow-general .embed {
 border-color: rgba(74, 222, 128, 0.4);
 box-shadow: 0 0 20px rgba(74, 222, 128, 0.25);
 }`,
-    "aqua-glow": `body.aqua-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.aqua-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.aqua-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.aqua-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.aqua-glow-general .tabs-nav-item, body.aqua-glow-general .tabs-nav-item:hover, body.aqua-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "aqua-glow": {
+      general: `body.aqua-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.aqua-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.aqua-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.aqua-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.aqua-glow-general .tabs-nav-item, body.aqua-glow-general .tabs-nav-item:hover, body.aqua-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #00ffc3, 0 0 6px #33ffd6, 0 0 10px #66ffe6;
 }
@@ -3322,7 +3337,9 @@ body.aqua-glow-general .embed {
 border-color: rgba(0, 255, 255, 0.4);
 box-shadow: 0 0 20px rgba(0, 255, 255, 0.25);
 }`,
-    "red-glow": `body.red-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.red-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.red-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.red-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.red-glow-general .tabs-nav-item, body.red-glow-general .tabs-nav-item:hover, body.red-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "red-glow": {
+      general: `body.red-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.red-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.red-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.red-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.red-glow-general .tabs-nav-item, body.red-glow-general .tabs-nav-item:hover, body.red-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #ff4d4d, 0 0 6px #ff6666, 0 0 10px #ff9999;
 }
@@ -3336,7 +3353,9 @@ body.red-glow-general .embed {
 border-color: rgba(255, 90, 90, 0.4);
 box-shadow: 0 0 20px rgba(255, 90, 90, 0.25);
 }`,
-    "orange-glow": `body.orange-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.orange-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.orange-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.orange-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.orange-glow-general .tabs-nav-item, body.orange-glow-general .tabs-nav-item:hover, body.orange-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "orange-glow": {
+      general: `body.orange-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.orange-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.orange-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.orange-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.orange-glow-general .tabs-nav-item, body.orange-glow-general .tabs-nav-item:hover, body.orange-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #ffaa33, 0 0 6px #ff9933, 0 0 10px #ffcc66;
 }
@@ -3350,7 +3369,9 @@ body.orange-glow-general .embed {
 border-color: rgba(255, 165, 0, 0.4);
 box-shadow: 0 0 20px rgba(255, 165, 0, 0.25);
 }`,
-    "brown-glow": `body.brown-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.brown-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.brown-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.brown-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.brown-glow-general .tabs-nav-item, body.brown-glow-general .tabs-nav-item:hover, body.brown-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "brown-glow": {
+      general: `body.brown-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.brown-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.brown-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.brown-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.brown-glow-general .tabs-nav-item, body.brown-glow-general .tabs-nav-item:hover, body.brown-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #8b4513, 0 0 6px #a0522d, 0 0 10px #cd853f;
 }
@@ -3364,7 +3385,9 @@ body.brown-glow-general .embed {
 border-color: rgba(139, 69, 19, 0.4);
 box-shadow: 0 0 20px rgba(139, 69, 19, 0.25);
 }`,
-    "white-glow-general": `body.white-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.white-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.white-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.white-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.white-glow-general .tabs-nav-item, body.white-glow-general .tabs-nav-item:hover, body.white-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "white-glow-general": {
+      general: `body.white-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.white-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.white-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.white-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.white-glow-general .tabs-nav-item, body.white-glow-general .tabs-nav-item:hover, body.white-glow-general .markdown-preview-view.homepage .callout-title {
 color: #ffffff !important;
 text-shadow: 0 0 1px #ffffff, 0 0 4px #ffffff;
 }
@@ -3378,7 +3401,9 @@ body.white-glow-general .embed {
 border-color: rgba(255, 255, 255, 0.4);
 box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
 }`,
-    "rainbow-glow-general": `body.rainbow-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.rainbow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.rainbow-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.rainbow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.rainbow-glow-general .tabs-nav-item, body.rainbow-glow-general .tabs-nav-item:hover, body.rainbow-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "rainbow-glow-general": {
+      general: `body.rainbow-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.rainbow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.rainbow-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.rainbow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.rainbow-glow-general .tabs-nav-item, body.rainbow-glow-general .tabs-nav-item:hover, body.rainbow-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #ff4da6, 0 0 6px #7f00ff, 0 0 10px #00bfff;
 animation: rainbowGlow 6s linear infinite;
@@ -3397,7 +3422,9 @@ box-shadow: 0 0 20px rgba(255, 140, 207, 0.25),
                 0 0 35px rgba(113, 186, 255, 0.25),
                 0 0 40px rgba(192, 132, 252, 0.25);
 }`,
-    "blue-glow-general": `body.blue-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.blue-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.blue-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.blue-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.blue-glow-general .tabs-nav-item, body.blue-glow-general .tabs-nav-item:hover, body.blue-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "blue-glow-general": {
+      general: `body.blue-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.blue-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.blue-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.blue-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.blue-glow-general .tabs-nav-item, body.blue-glow-general .tabs-nav-item:hover, body.blue-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #33ccff, 0 0 6px #66d9ff, 0 0 10px #66d9ff;
 }
@@ -3412,7 +3439,9 @@ body.blue-glow-general .embed {
 border-color: rgba(113, 186, 255, 0.4);
 box-shadow: 0 0 20px rgba(113, 186, 255, 0.25);
 }`,
-    "pink-glow-general": `body.pink-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.pink-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.pink-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.pink-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.pink-glow-general .tabs-nav-item, body.pink-glow-general .tabs-nav-item:hover, body.pink-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "pink-glow-general": {
+      general: `body.pink-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.pink-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.pink-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.pink-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.pink-glow-general .tabs-nav-item, body.pink-glow-general .tabs-nav-item:hover, body.pink-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #ff66cc, 0 0 6px #ff99dd, 0 0 10px #ff99dd;
 }
@@ -3426,7 +3455,9 @@ body.pink-glow-general .embed {
 border-color: rgba(255, 140, 207, 0.4);
 box-shadow: 0 0 7px rgba(255, 140, 207, 0.25);
 }`,
-    "purple-glow-general": `body.purple-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.purple-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.purple-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.purple-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.purple-glow-general .tabs-nav-item, body.purple-glow-general .tabs-nav-item:hover, body.purple-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "purple-glow-general": {
+      general: `body.purple-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.purple-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.purple-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.purple-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.purple-glow-general .tabs-nav-item, body.purple-glow-general .tabs-nav-item:hover, body.purple-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #b266ff, 0 0 6px #cc99ff, 0 0 10px #cc99ff;
 }
@@ -3440,7 +3471,9 @@ body.purple-glow-general .embed {
 border-color: rgba(192, 132, 252, 0.4);
 box-shadow: 0 0 20px rgba(192, 132, 252, 0.25);
 }`,
-    "yellow-glow-general": `body.yellow-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.yellow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.yellow-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.yellow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.yellow-glow-general .tabs-nav-item, body.yellow-glow-general .tabs-nav-item:hover, body.yellow-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "yellow-glow-general": {
+      general: `body.yellow-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.yellow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.yellow-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.yellow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.yellow-glow-general .tabs-nav-item, body.yellow-glow-general .tabs-nav-item:hover, body.yellow-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #ffe600, 0 0 6px #fff700, 0 0 10px #fff700;
 }
@@ -3454,7 +3487,9 @@ body.yellow-glow-general .embed {
 border-color: rgba(250, 204, 21, 0.4);
 box-shadow: 0 0 20px rgba(250, 204, 21, 0.25);
 }`,
-    "green-glow-general": `body.green-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.green-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.green-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.green-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.green-glow-general .nav-folder-title:hover, body.green-glow-general .tabs-nav-item, body.green-glow-general .tabs-nav-item:hover, body.green-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "green-glow-general": {
+      general: `body.green-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.green-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.green-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.green-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.green-glow-general .nav-folder-title:hover, body.green-glow-general .tabs-nav-item, body.green-glow-general .tabs-nav-item:hover, body.green-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #0dff00, 0 0 6px #00ff15, 0 0 10px #00ff15;
 }
@@ -3468,7 +3503,9 @@ body.green-glow-general .embed {
 border-color: rgba(74, 222, 128, 0.4);
 box-shadow: 0 0 20px rgba(74, 222, 128, 0.25);
 }`,
-    "aqua-glow-general": `body.aqua-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.aqua-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.aqua-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.aqua-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.aqua-glow-general .tabs-nav-item, body.aqua-glow-general .tabs-nav-item:hover, body.aqua-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "aqua-glow-general": {
+      general: `body.aqua-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.aqua-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.aqua-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.aqua-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.aqua-glow-general .tabs-nav-item, body.aqua-glow-general .tabs-nav-item:hover, body.aqua-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #00ffc3, 0 0 6px #33ffd6, 0 0 10px #66ffe6;
 }
@@ -3482,7 +3519,9 @@ body.aqua-glow-general .embed {
 border-color: rgba(0, 255, 255, 0.4);
 box-shadow: 0 0 20px rgba(0, 255, 255, 0.25);
 }`,
-    "red-glow-general": `body.red-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.red-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.red-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.red-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.red-glow-general .tabs-nav-item, body.red-glow-general .tabs-nav-item:hover, body.red-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "red-glow-general": {
+      general: `body.red-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.red-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.red-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.red-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.red-glow-general .tabs-nav-item, body.red-glow-general .tabs-nav-item:hover, body.red-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #ff4d4d, 0 0 6px #ff6666, 0 0 10px #ff9999;
 }
@@ -3496,7 +3535,9 @@ body.red-glow-general .embed {
 border-color: rgba(255, 90, 90, 0.4);
 box-shadow: 0 0 20px rgba(255, 90, 90, 0.25);
 }`,
-    "orange-glow-general": `body.orange-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.orange-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.orange-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.orange-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.orange-glow-general .tabs-nav-item, body.orange-glow-general .tabs-nav-item:hover, body.orange-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "orange-glow-general": {
+      general: `body.orange-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.orange-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.orange-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.orange-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.orange-glow-general .tabs-nav-item, body.orange-glow-general .tabs-nav-item:hover, body.orange-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #ffaa33, 0 0 6px #ff9933, 0 0 10px #ffcc66;
 }
@@ -3510,7 +3551,9 @@ body.orange-glow-general .embed {
 border-color: rgba(255, 165, 0, 0.4);
 box-shadow: 0 0 20px rgba(255, 165, 0, 0.25);
 }`,
-    "brown-glow-general": `body.brown-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.brown-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.brown-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.brown-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.brown-glow-general .tabs-nav-item, body.brown-glow-general .tabs-nav-item:hover, body.brown-glow-general .markdown-preview-view.homepage .callout-title {
+    },
+    "brown-glow-general": {
+      general: `body.brown-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), body.brown-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link), body.brown-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.brown-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6), body.brown-glow-general .tabs-nav-item, body.brown-glow-general .tabs-nav-item:hover, body.brown-glow-general .markdown-preview-view.homepage .callout-title {
 color: white !important;
 text-shadow: 0 0 2px #8b4513, 0 0 6px #a0522d, 0 0 10px #cd853f;
 }
@@ -3524,5 +3567,6 @@ body.brown-glow-general .embed {
 border-color: rgba(139, 69, 19, 0.4);
 box-shadow: 0 0 20px rgba(139, 69, 19, 0.25);
 }`,
+    },
   },
 };

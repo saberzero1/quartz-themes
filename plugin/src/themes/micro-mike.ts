@@ -2780,4 +2780,995 @@ html body ul.tags > li {
 }`,
   },
   light: {},
+  classSettings: {
+    settingsHoverPreview: {
+      general: `:not(.is-mobile).settingsHoverPreview .modal-container.mod-dim .modal.mod-settings {
+background-color: transparent;
+box-shadow: var(--bevelStyleButton);
+}
+
+:not(.is-mobile).settingsHoverPreview .modal.mod-settings:hover {
+opacity: 1;
+}
+
+:not(.is-mobile).settingsHoverPreview .modal.mod-settings .modal-content {
+opacity: 0;
+}
+
+:not(.is-mobile).settingsHoverPreview .modal.mod-settings .modal-content:hover {
+background-color: var(--background);
+opacity: 1;
+}`,
+    },
+    enableNewIcons: {
+      general: `.enableNewIcons .mod-root .workspace-tab-header-container-inner .workspace-tab-header {
+background-image: none;
+}
+
+.enableNewIcons .clickable-icon[aria-label], .enableNewIcons .sidebar-toggle-button, .enableNewIcons .workspace-tab-header, .enableNewIcons .nav-action-button, .enableNewIcons .workspace-tab-header-tab-list .clickable-icon, .enableNewIcons .sidebar-toggle-button .clickable-icon {
+background-position: center;
+/* Center the image */
+background-repeat: no-repeat;
+/* Do not repeat the image */
+background-size: 80% auto;
+/* Resize the background image to cover the entire container */
+}
+
+.enableNewIcons .workspace-leaf-content :is(.view-header-nav-buttons, .view-actions) .clickable-icon {
+background-size: calc(var(--editorDashboardHeight) * 0.8);
+}
+
+.enableNewIcons .nav-action-button.clickable-icon {
+background-size: calc(var(--sidebarDashboardHeight) * 0.8);
+}
+
+.enableNewIcons .workspace-tab-header, .enableNewIcons .workspace-tab-header-tab-list .clickable-icon, .enableNewIcons .workspace-tab-header-new-tab .clickable-icon {
+background-size: calc(var(--sidebarTabHeight) * 0.8);
+}
+
+.stackTabs .workspace-tab-header-new-tab .clickable-icon {
+background-size: calc(var(--editorTabHeightStack) * 0.8);
+}
+
+.enableNewIcons .clickable-icon[aria-label=Settings] {
+color: green;
+background-image: var(--iconSettings);
+}
+
+.enableNewIcons .clickable-icon[aria-label=Help] {
+color: green;
+background-image: var(--iconHelp);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Open another vault"] {
+color: green;
+background-image: var(--iconAnotherVault);
+}
+
+.enableNewIcons .sidebar-toggle-button .clickable-icon {
+color: green;
+background-image: var(--iconSidebarToggle);
+}
+
+.enableNewIcons .clickable-icon[aria-label*="Toggle Focus Mode"] {
+color: green;
+background-image: var(--iconFocus);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Open homepage"] {
+color: green;
+background-image: var(--iconHome);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Open graph view"] {
+color: green;
+background-image: var(--iconGraph);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Insert template"] {
+color: green;
+background-image: var(--iconTemplate);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Open command palette"] {
+color: green;
+background-image: var(--iconCommandPalette);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Open today"] {
+color: green;
+background-image: var(--iconToday);
+}
+
+.enableNewIcons .workspace-tab-header[aria-label=Files] {
+color: green;
+background-image: var(--iconFileExplorer);
+}
+
+.enableNewIcons .workspace-tab-header[aria-label="Recent Files"] {
+color: green;
+background-image: var(--iconRecentFiles);
+}
+
+.enableNewIcons .workspace-tab-header[aria-label=Bookmarks] {
+color: green;
+background-image: var(--iconStarred);
+}
+
+.enableNewIcons .workspace-tab-header[aria-label=Tags] {
+color: green;
+background-image: var(--iconTags);
+}
+
+.enableNewIcons .workspace-tab-header[aria-label=Search] {
+color: green;
+background-image: var(--iconSearch);
+}
+
+.enableNewIcons .clickable-icon[aria-label="New note"] {
+color: green;
+background-image: var(--iconNote);
+}
+
+.enableNewIcons .clickable-icon[aria-label="New folder"] {
+color: green;
+background-image: var(--iconNewFolder);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Change sort order"] {
+color: green;
+background-image: var(--iconSortOrder);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Collapse all"] {
+color: green;
+background-image: var(--iconExpand);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Expand all"] {
+color: green;
+background-image: var(--iconCollapse);
+}
+
+.enableNewIcons .nav-action-button.reveal-active-file-button {
+background-size: 24px;
+background-image: var(--iconActiveFile);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Match case"] {
+color: green;
+background-image: var(--iconCase);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Explain search term"] {
+color: green;
+background-image: var(--iconHelp);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Collapse results"] {
+color: green;
+background-image: var(--iconExpand);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Show more context"] {
+color: green;
+background-image: var(--iconPlus);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Copy search results"] {
+color: green;
+background-image: var(--iconCopy);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Change sort order"] {
+color: green;
+background-image: var(--iconSortOrder);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Show nested tags"] {
+color: green;
+background-image: var(--iconNested);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Navigate back"] {
+color: green;
+background-image: var(--iconBack);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Navigate forward"] {
+color: green;
+background-image: var(--iconForward);
+}
+
+.enableNewIcons .clickable-icon[aria-label*="Current view: reading"] {
+color: green;
+background-image: var(--iconPreview);
+}
+
+.enableNewIcons .clickable-icon[aria-label*="Current view: editing"] {
+color: green;
+background-image: var(--iconEditor);
+}
+
+.enableNewIcons .clickable-icon[aria-label="More options"] {
+color: green;
+background-image: var(--iconSettings);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Star/unstar current file"] {
+color: green;
+background-image: var(--iconNote);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Star/unstar current search"] {
+color: green;
+background-image: var(--iconFocus);
+}
+
+.enableNewIcons .clickable-icon[aria-label="New tab"] {
+color: green;
+background-image: var(--iconPlus);
+}
+
+.enableNewIcons .workspace-tab-header-tab-list .clickable-icon {
+color: green;
+background-image: var(--iconStack);
+}
+
+.enableNewIcons .workspace-tab-header[aria-label=Outline], .enableNewIcons .workspace-tab-header[aria-label*=Outline] {
+color: green;
+background-image: var(--iconOutline);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Manage workspace layouts"] {
+color: green;
+background-image: var(--iconLayout);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Create new unique note"] {
+color: green;
+background-image: var(--iconUniqueNote);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Open random note"] {
+color: green;
+background-image: var(--iconRandomNote);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Publish changes"] {
+color: green;
+background-image: var(--iconPublish);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Open format converter"] {
+color: green;
+background-image: var(--iconConvert);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Open today's daily note"] {
+color: green;
+background-image: var(--iconToday);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Start/stop recording"] {
+color: green;
+background-image: var(--iconRecord);
+}
+
+.enableNewIcons .workspace-tab-header[aria-label*=Backlinks] {
+color: green;
+background-image: var(--iconBacklinks);
+}
+
+.enableNewIcons .workspace-tab-header[aria-label*=Outgoing] {
+color: green;
+background-image: var(--iconOutgoing);
+}
+
+.enableNewIcons .workspace-tab-header[aria-label="Graph view"] {
+color: green;
+background-image: var(--iconGraph);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Show search filter"] {
+color: green;
+background-image: var(--iconSearch);
+}
+
+.enableNewIcons .workspace-tab-header[data-type=markdown]:not(.mod-root .workspace-tab-header[data-type=markdown]) {
+color: green;
+background-image: var(--iconNote);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Open quick switcher"] {
+color: green;
+background-image: var(--iconQuickSwitcher);
+}
+
+.enableNewIcons .clickable-icon[aria-label="New group"] {
+background-image: var(--iconNewFolder);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Bookmark the active tab..."] {
+background-image: var(--iconPlus);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Create new canvas"] {
+background-image: var(--iconPreview);
+}
+
+.enableNewIcons .clickable-icon[aria-label="Publish changes..."] {
+background-image: var(--iconGlobe);
+}
+
+.enableNewIcons .clickable-icon[aria-label="All properties"] {
+background-image: var(--iconDrawCanvas);
+}
+
+All properties .enableNewIcons .clickable-icon[aria-label=Settings] svg, .enableNewIcons .clickable-icon[aria-label=Help] svg, .enableNewIcons .clickable-icon[aria-label="Open another vault"] svg, .enableNewIcons .sidebar-toggle-button .clickable-icon svg, .enableNewIcons .clickable-icon[aria-label*="Toggle Focus Mode"] svg, .enableNewIcons .clickable-icon[aria-label="Open homepage"] svg, .enableNewIcons .clickable-icon[aria-label="Open graph view"] svg, .enableNewIcons .clickable-icon[aria-label="Insert template"] svg, .enableNewIcons .clickable-icon[aria-label="Open command palette"] svg, .enableNewIcons .clickable-icon[aria-label="Open today"] svg, .enableNewIcons .workspace-tab-header[aria-label=Files] svg, .enableNewIcons .workspace-tab-header[aria-label="Recent Files"] svg, .enableNewIcons .workspace-tab-header[aria-label=Bookmarks] svg, .enableNewIcons .workspace-tab-header[aria-label=Tags] svg, .enableNewIcons .workspace-tab-header[aria-label=Search] svg, .enableNewIcons .clickable-icon[aria-label="New note"] svg, .enableNewIcons .clickable-icon[aria-label="New folder"] svg, .enableNewIcons .clickable-icon[aria-label="Change sort order"] svg, .enableNewIcons .clickable-icon[aria-label="Collapse all"] svg, .enableNewIcons .clickable-icon[aria-label="Expand all"] svg, .enableNewIcons .nav-action-button.reveal-active-file-button svg, .enableNewIcons .clickable-icon[aria-label="Match case"] svg, .enableNewIcons .clickable-icon[aria-label="Explain search term"] svg, .enableNewIcons .clickable-icon[aria-label="Collapse results"] svg, .enableNewIcons .clickable-icon[aria-label="Show more context"] svg, .enableNewIcons .clickable-icon[aria-label="Copy search results"] svg, .enableNewIcons .clickable-icon[aria-label="Change sort order"] svg, .enableNewIcons .clickable-icon[aria-label="Show nested tags"] svg, .enableNewIcons .clickable-icon[aria-label="Navigate back"] svg, .enableNewIcons .clickable-icon[aria-label="Navigate forward"] svg, .enableNewIcons .clickable-icon[aria-label*="Current view: reading"] svg, .enableNewIcons .clickable-icon[aria-label*="Current view: editing"] svg, .enableNewIcons .clickable-icon[aria-label="More options"] svg, .enableNewIcons .clickable-icon[aria-label="Star/unstar current file"] svg, .enableNewIcons .clickable-icon[aria-label="Star/unstar current search"] svg, .enableNewIcons .clickable-icon[aria-label="New tab"] svg, .enableNewIcons .workspace-tab-header-tab-list .clickable-icon svg, .enableNewIcons .workspace-tab-header[aria-label=Outline] svg, .enableNewIcons .workspace-tab-header[aria-label*=Outline] svg, .enableNewIcons .clickable-icon[aria-label="Manage workspace layouts"] svg, .enableNewIcons .clickable-icon[aria-label="Create new unique note"] svg, .enableNewIcons .clickable-icon[aria-label="Open random note"] svg, .enableNewIcons .clickable-icon[aria-label="Publish changes"] svg, .enableNewIcons .clickable-icon[aria-label="Open format converter"] svg, .enableNewIcons .clickable-icon[aria-label="Open today's daily note"] svg, .enableNewIcons .clickable-icon[aria-label="Start/stop recording"] svg, .enableNewIcons .workspace-tab-header[aria-label*=Backlinks] svg, .enableNewIcons .workspace-tab-header[aria-label*=Outgoing] svg, .enableNewIcons .workspace-tab-header[aria-label="Graph view"] svg, .enableNewIcons .clickable-icon[aria-label="Show search filter"] svg, .enableNewIcons .workspace-tab-header[data-type=markdown]:not(.mod-root .workspace-tab-header[data-type=markdown]) svg, .enableNewIcons .clickable-icon[aria-label="Open quick switcher"] svg, .enableNewIcons .clickable-icon[aria-label="New group"] svg, .enableNewIcons .clickable-icon[aria-label="Bookmark the active tab..."] svg, .enableNewIcons .clickable-icon[aria-label="Create new canvas"] svg, .enableNewIcons .clickable-icon[aria-label="Publish changes..."] svg, .enableNewIcons .clickable-icon[aria-label="All properties"] svg {
+display: none;
+}
+
+.enableNewIcons .clickable-icon[aria-label=Settings] svg {
+display: none;
+}`,
+    },
+    blendDropdown: {
+      general: `.blendDropdown .menu {
+word-wrap: none;
+white-space: nowrap;
+text-overflow: clip;
+background-color: #111111;
+padding: 1px;
+border: none;
+}
+
+.blendDropdown .menu .menu-item {
+height: 20px;
+line-height: 1em;
+font-size: 12px;
+padding-left: 2px;
+}
+
+.blendDropdown .menu .menu-item.selected:not(.is-disabled):not(.is-label), .blendDropdown .menu .menu-item:hover:not(.is-disabled):not(.is-label) {
+background: linear-gradient(180deg, #7AA3E5 0%, #5680C1 100%);
+color: #000;
+}
+
+.blendDropdown .menu .menu-item.selected:not(.is-disabled):not(.is-label) svg, .blendDropdown .menu .menu-item:hover:not(.is-disabled):not(.is-label) svg {
+color: #000;
+}
+
+.blendDropdown .menu .menu-item .menu-item-icon.mod-checked {
+bottom: 0px;
+}
+
+.blendDropdown .menu .menu-separator {
+position: relative;
+width: 200%;
+left: -1px;
+margin: 2px auto;
+}`,
+    },
+    win7bar: {
+      general: `body.is-frameless:not(.is-hidden-frameless) {
+padding-top: 27px;
+}
+
+body.is-frameless:not(.is-hidden-frameless) .titlebar {
+--titlebar-height:27px;
+}
+
+body.is-frameless.is-hidden-frameless {
+padding-top: 27px !important;
+}
+
+body.is-frameless.is-hidden-frameless .titlebar {
+-webkit-app-region: drag;
+background: var(--window-background);
+height: 27px;
+}
+
+.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
+background: rgba(255, 255, 255, 0.2);
+}
+
+html:has(> .win7bar)::before {
+content: "";
+position: absolute;
+background-color: #f0f0f0;
+height: 1px;
+width: calc(100% - 12px);
+top: 27px;
+left: 6px;
+z-index: 30;
+}
+
+html:has(> .win7bar) {
+box-shadow: 2px 2px 10px 1px var(--window-border-color), inset 0 0 0 1px rgba(255, 255, 255, 0.6666666667);
+border: var(--window-border) var(--window-border-color);
+border-radius: var(--window-border-radius);
+position: relative;
+z-index: 0;
+background-color: #000;
+border: 0px;
+}
+
+html:has(> .win7bar) body.obsidian-app {
+margin: var(--window-spacing);
+margin-top: 0;
+border: var(--window-border) var(--window-border-color);
+background: var(--surface);
+box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.6);
+border: var(--window-border) var(--window-border-color);
+box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.6);
+height: calc(100% - var(--window-spacing));
+width: calc(100% - var(--window-spacing) * 2);
+}
+
+html:has(> .win7bar) body.obsidian-app .titlebar {
+font: var(--font);
+box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+border: var(--window-border) var(--window-border-color);
+border-radius: var(--window-border-radius) var(--window-border-radius) 0 0;
+padding: var(--window-spacing);
+padding-top: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: var(--window-background);
+background-color: var(--window-background-color);
+border: 0;
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8666666667), inset 1px 0 0 rgba(255, 255, 255, 0.8666666667), inset -1px 0 0 rgba(255, 255, 255, 0.8666666667);
+height: 27px;
+}
+
+html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-text {
+color: #000;
+letter-spacing: 0;
+padding: 0px;
+padding-top: var(--window-spacing);
+text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff;
+position: fixed;
+font-weight: 400;
+right: 50%;
+}
+
+html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right {
+box-sizing: content-box;
+display: flex;
+background: rgba(255, 255, 255, 0.2);
+border: var(--window-border) var(--control-border-color);
+border-top: 0;
+border-radius: 0 0 var(--control-border-radius) var(--control-border-radius);
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6666666667), 1px 0 0 rgba(255, 255, 255, 0.6666666667), -1px 0 0 rgba(255, 255, 255, 0.6666666667);
+margin-right: var(--window-spacing);
+height: 19px;
+}
+
+html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right .titlebar-button {
+position: relative;
+min-width: 29px;
+min-height: 19px;
+padding: 0;
+border: 0;
+border-right: var(--window-border) var(--control-border-color);
+border-radius: 0;
+box-shadow: none;
+box-sizing: border-box;
+background: none;
+height: 0px;
+width: 0px;
+}
+
+html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-minimize::before {
+background: var(--icon-minimize) no-repeat center 10px;
+}
+
+html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-maximize::before {
+background: var(--icon-maximize) no-repeat center;
+}
+
+html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-close {
+min-width: 48px;
+}
+
+html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-close::before {
+background: var(--icon-close) no-repeat center;
+}
+
+html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right .titlebar-button::after {
+content: none;
+}
+
+html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right .titlebar-button:hover, html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right .titlebar-button:active {
+/* resolve the conflict with button styles */
+background: none;
+}
+
+html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right .titlebar-button:disabled svg {
+opacity: 0.4;
+}
+
+html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right .titlebar-button svg {
+color: transparent;
+}
+
+html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right .titlebar-button::before {
+content: "";
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+border-radius: 0;
+box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3333333333);
+opacity: 1;
+}
+
+html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right .titlebar-button:not(:hover)::before {
+transition: none;
+opacity: 1;
+}
+
+html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right .titlebar-button:first-child, html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right .titlebar-button:first-child::before {
+border-bottom-left-radius: var(--control-border-radius);
+}
+
+html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right .titlebar-button:last-child, html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right .titlebar-button:last-child::before {
+border: 0;
+border-bottom-right-radius: var(--control-border-radius);
+}
+
+html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right .titlebar-button:focus {
+outline: none;
+animation: none;
+}
+
+html:has(> .win7bar) body.obsidian-app::before {
+content: "";
+position: absolute;
+z-index: -100;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: var(--window-border-radius);
+background: linear-gradient(transparent 20%, rgba(255, 255, 255, 0.7019607843) 40%, transparent 41%), var(--window-background);
+background-color: var(--window-background-color);
+box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8666666667);
+}
+
+body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right {
+border-color: var(--window-border-color);
+}
+
+body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button {
+border-color: var(--window-border-color);
+box-shadow: var(--control-inset-shadow);
+}
+
+body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button::after {
+content: none;
+}
+
+body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Minimize], body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-minimize {
+background: var(--icon-minimize) no-repeat center 10px, var(--control-background);
+}
+
+body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Minimize]::before, body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-minimize::before {
+content: "";
+box-shadow: 0 0 7px 3px #5dc4f0, var(--control-inset-shadow);
+background: var(--icon-minimize) no-repeat center 10px, var(--control-background-hovered);
+border-bottom-left-radius: var(--control-border-radius);
+opacity: 0;
+transition: opacity 0.3s linear;
+}
+
+body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Minimize]:hover::before, body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Minimize]:focus-visible::before, body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-minimize:hover::before, body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-minimize:focus-visible::before {
+opacity: 1;
+transition: opacity 0.1s linear;
+}
+
+body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Minimize]:active::before, body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-minimize:active::before {
+background: var(--icon-minimize) no-repeat center 10px, var(--control-background-active);
+}
+
+body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Maximize], body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-maximize {
+background: var(--icon-maximize) no-repeat center, var(--control-background);
+}
+
+body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Maximize]::before, body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-maximize::before {
+content: "";
+box-shadow: 0 0 7px 3px #5dc4f0, var(--control-inset-shadow);
+background: var(--icon-maximize) no-repeat center, var(--control-background-hovered);
+opacity: 0;
+transition: opacity 0.3s linear;
+}
+
+body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Maximize]:hover::before, body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Maximize]:focus-visible::before, body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-maximize:hover::before, body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-maximize:focus-visible::before {
+opacity: 1;
+transition: opacity 0.1s linear;
+}
+
+body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Maximize]:active::before, body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-maximize:active::before {
+background: var(--icon-maximize) no-repeat center, var(--control-background-active);
+}
+
+body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Close], body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-close {
+background: var(--icon-close) no-repeat center, var(--control-background), var(--control-background-close);
+box-shadow: var(--control-inset-shadow);
+}
+
+body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Close]::before, body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-close::before {
+content: "";
+background: var(--icon-close) no-repeat center, var(--control-background), var(--control-background-close-hovered);
+box-shadow: 0 0 7px 3px #e68e75, var(--control-inset-shadow);
+border-bottom-right-radius: var(--control-border-radius);
+opacity: 0;
+transition: opacity 0.3s linear;
+}
+
+body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Close]:hover::before, body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Close]:focus-visible::before, body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-close:hover::before, body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-close:focus-visible::before {
+opacity: 1;
+transition: opacity 0.1s linear;
+}
+
+body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Close]:active::before, body.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-close:active::before {
+background: var(--icon-close) no-repeat center, var(--control-background), var(--control-background-close-active);
+}
+
+body.obsidian-app.is-maximized .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-maximize::before {
+background: var(--icon-maximized) no-repeat center;
+}
+
+body.obsidian-app.is-focused.is-maximized .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Maximize], body.obsidian-app.is-focused.is-maximized .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-maximize {
+background: var(--icon-maximized) no-repeat center, var(--control-background);
+}
+
+body.obsidian-app.is-focused.is-maximized .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Maximize]::before, body.obsidian-app.is-focused.is-maximized .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-maximize::before {
+content: "";
+box-shadow: 0 0 7px 3px #5dc4f0, var(--control-inset-shadow);
+background: var(--icon-maximized) no-repeat center, var(--control-background-hovered);
+opacity: 0;
+transition: opacity 0.3s linear;
+}
+
+body.obsidian-app.is-focused.is-maximized .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Maximize]:hover::before, body.obsidian-app.is-focused.is-maximized .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Maximize]:focus-visible::before, body.obsidian-app.is-focused.is-maximized .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-maximize:hover::before, body.obsidian-app.is-focused.is-maximized .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-maximize:focus-visible::before {
+opacity: 1;
+transition: opacity 0.1s linear;
+}
+
+body.obsidian-app.is-focused.is-maximized .titlebar .titlebar-button-container.mod-right .titlebar-button[aria-label=Maximize]:active::before, body.obsidian-app.is-focused.is-maximized .titlebar .titlebar-button-container.mod-right .titlebar-button.mod-maximize:active::before {
+background: var(--icon-maximized) no-repeat center, var(--control-background-active);
+}
+
+.is-hidden-frameless:is(.mod-windows, .mod-linux).win7bar :is(.titlebar-button.mod-back, .titlebar-button.mod-forward, .titlebar-text) {
+display: block;
+}
+
+body.win7bar:not(.qe-title-center):not(.qe-title-hide) .titlebar-text.qe-replacement {
+text-align: center;
+}
+
+body.win7bar {
+--rightFrameSetTo: var(--titlebarButtonWidth);
+--frame-right-space:var(--titlebarButtonWidth);
+}
+
+body.win7bar:not(.outsideSidebar_RBA):not(.insideSidebar_RBA) .workspace-tab-header-container .sidebar-toggle-button.mod-right {
+right: 7px;
+margin-top: var(--dragSpaceHeight);
+}
+
+body.win7bar:not(.outsideSidebar_RBA):not(.insideSidebar_RBA) .workspace-tab-header-container .sidebar-toggle-button.mod-right {
+right: 7px;
+margin-top: var(--dragSpaceHeight);
+}
+
+body.win7bar:not(.outsideSidebar_RBA):not(.insideSidebar_RBA) .workspace:not(.is-right-sidedock-open) .sidebar-toggle-button.mod-right {
+margin-top: 0px;
+}`,
+    },
+    dtm08GradientEditorMode: {
+      general: `.dtm08.dtm08GradientEditorMode .workspace-leaf-content[data-mode=source] .view-content {
+background: transparent;
+}`,
+    },
+    centerAlignReadableLength: {
+      general: `.centerAlignReadableLength .cm-sizer, .centerAlignReadableLength .markdown-preview-sizer {
+margin-left: auto;
+margin-right: auto;
+}`,
+    },
+    propertiesDisable: {
+      general: `.propertiesDisable .markdown-preview-view.show-properties .metadata-container {
+display: none;
+}`,
+    },
+    stackTabs: {
+      general: `body.stackTabs:not(.disableMiniMode) .workspace .mod-root .workspace-tabs.mod-top .workspace-tab-header-container {
+margin-right: 0px;
+}
+
+:is(.mod-windows, .mod-linux).stackTabs {
+--frame-right-space: 0px;
+}
+
+html .mod-windows.stackTabs .mod-root, html .mod-linux.stackTabs .mod-root {
+--frame-right-space: 0px;
+}
+
+.stackTabs .workspace:has(.mod-right-split.is-sidedock-collapsed) .workspace-tab-container .workspace-leaf .view-header {
+--frame-right-space: var(--rightFrameSetTo);
+margin-right: var(--frame-right-space);
+}
+
+.stackTabs .workspace .mod-root .workspace-tabs {
+flex-direction: row;
+}
+
+.stackTabs .workspace .mod-root .workspace-tabs .workspace-tab-header-spacer {
+flex-grow: 0;
+}
+
+.stackTabs .workspace .mod-root .workspace-tabs .workspace-tab-header-container:nth-of-type(1) {
+height: 100%;
+flex-direction: column;
+background-color: var(--background-secondary);
+padding-right: 0px;
+}
+
+.stackTabs .workspace .mod-root .workspace-tabs .workspace-tab-header-container:nth-of-type(1) .workspace-tab-header-new-tab {
+margin-left: 0px;
+}
+
+.stackTabs .workspace .mod-root .workspace-tabs .workspace-tab-header-container:nth-of-type(1) .workspace-tab-header-new-tab .clickable-icon {
+width: 100%;
+height: var(--editorTabHeightStack);
+}
+
+.stackTabs .workspace .mod-root .workspace-tabs .workspace-tab-header-container:nth-of-type(1) .workspace-tab-header-container-inner {
+--animation-dur: 0ms !important;
+flex-direction: column;
+flex-grow: 1;
+justify-content: left;
+align-items: flex-start;
+margin-top: 0px;
+}
+
+.stackTabs .workspace .mod-root .workspace-tabs .workspace-tab-header-container:nth-of-type(1) .workspace-tab-header-container-inner .workspace-tab-header {
+flex-basis: 0px;
+height: 0px;
+max-height: var(--editorTabHeightStack);
+max-width: var(--editorStackWidth);
+flex-grow: 1;
+min-width: 0px;
+}
+
+.stackTabs .workspace .mod-root .workspace-tabs .workspace-tab-header-container:nth-of-type(1) .workspace-tab-header-container-inner .workspace-tab-header .workspace-tab-header-inner {
+flex-grow: 1;
+height: 100%;
+}
+
+.stackTabs .workspace .mod-root .workspace-tabs .workspace-tab-header-container:nth-of-type(1) .workspace-tab-header-container-inner .workspace-tab-header .workspace-tab-header-inner .workspace-tab-header-inner-title {
+margin-left: 5%;
+display: flex;
+flex-grow: 1;
+flex-basis: 40px;
+flex-shrink: 1;
+}
+
+.disableXButtons.stackTabs .workspace .mod-root .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header .workspace-tab-header-inner .workspace-tab-header-inner-close-button {
+display: none !important;
+}
+
+.enableNewIcons.stackTabs .workspace-tab-header-new-tab .clickable-icon {
+background-size: calc(var(--editorTabHeightStack) * 0.8);
+}
+
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio):not(.prismic) .stackTabs .mod-root .workspace-tab-header-container-inner {
+background-color: var(--bottom);
+}
+
+body:not(.disableBevels):not(.dtm08):not(.factorio):not(.prismic) .stackTabs .mod-root .workspace-tab-header-inner-close-button {
+box-shadow: var(--bevelStyleButton);
+}
+
+.dtm08.stackTabs .mod-root .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header {
+border: solid 1px #000;
+background: linear-gradient(var(--d8d7), var(--d8d9) 50%, var(--d8dA) 50%, var(--d8d9));
+box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333), 0 1px rgba(255, 255, 255, 0.0666666667);
+}
+
+.dtm08.stackTabs .mod-root .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header:hover {
+background: linear-gradient(var(--d8d6), var(--d8d8) 50%, var(--d8d9) 50%, var(--d8d8));
+box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333), 0 1px rgba(255, 255, 255, 0.0666666667);
+}
+
+.dtm08.stackTabs .mod-root .workspace-tab-header-container .workspace-tab-header-container-inner .is-active.workspace-tab-header {
+background: linear-gradient(var(--d8d5), var(--d8d7) 50%, var(--d8d8) 50%, var(--d8d7));
+box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333), 0 1px rgba(255, 255, 255, 0.0666666667);
+}
+
+.dtm08.stackTabs .mod-root .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header:not(:last-of-type) {
+border-bottom: 0px;
+}`,
+    },
+    disableXButtons: {
+      general: `.disableXButtons .workspace .mod-root .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header .workspace-tab-header-inner {
+padding-right: 3px;
+}
+
+.disableXButtons .workspace .mod-root .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header .workspace-tab-header-inner .workspace-tab-header-inner-close-button {
+display: none !important;
+}
+
+.stackTabs .workspace .mod-root .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header .workspace-tab-header-inner .workspace-tab-header-inner-close-button {
+display: none !important;
+}`,
+    },
+    tabTitleWordWrap: {
+      general: `.tabTitleWordWrap .workspace .mod-root .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header .workspace-tab-header-inner .workspace-tab-header-inner-title {
+overflow-wrap: break-word;
+word-break: break-word;
+white-space: normal;
+}`,
+    },
+    tabTitleCentered: {
+      general: `.tabTitleCentered .workspace .mod-root .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header .workspace-tab-header-inner .workspace-tab-header-inner-title {
+margin-left: 0px;
+text-align: center;
+}`,
+    },
+    cornerDragLocation: {
+      general: `body:not(.leftAlignedLeftSidebarButtonDisable).cornerDragLocation .mod-left-split .workspace-tab-header-container-inner {
+margin-left: 0px;
+}
+
+body:not(.leftAlignedLeftSidebarButtonDisable).cornerDragLocation .sidebar-toggle-button.mod-left {
+order: -1;
+margin-left: 40px;
+}
+
+.cornerDragLocation .mod-left-split .workspace-tab-header-container-inner {
+margin-left: 40px;
+}`,
+    },
+    editorDragSpace: {
+      general: `body:not(.stackTabs).editorDragSpace .mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-new-tab {
+margin-right: 40px;
+}`,
+    },
+    leftAlignedLeftSidebarButtonDisable: {
+      general: `.dtm08.leftAlignedLeftSidebarButtonDisable .sidebar-toggle-button.mod-left {
+border-left: 0px;
+}`,
+    },
+    disableRightTitlebarOffset: {
+      general: `html .mod-windows.disableRightTitlebarOffset .mod-right-split, html .mod-linux.disableRightTitlebarOffset .mod-right-split {
+--frame-right-space: 0px;
+}`,
+    },
+    treeWordWrap: {
+      general: `.treeWordWrap:not(.oldTreeViewImplementation) .workspace-leaf-content[data-type=file-explorer] .tree-item-inner {
+overflow-wrap: break-word;
+word-break: break-word;
+white-space: normal;
+}`,
+    },
+    boldFolders: {
+      general: `.boldFolders .nav-folder-title .tree-item-inner.nav-folder-title-content {
+font-weight: 700;
+}`,
+    },
+    fileBrowserLayeredBackground: {
+      general: `.fileBrowserLayeredBackground .tree-item.nav-folder:not(.mod-root) {
+background-color: var(--levelLayer);
+}`,
+    },
+    modalNAlign: {
+      general: `:not(.is-mobile).modalNAlign .modal-container .prompt {
+top: 0%;
+}`,
+    },
+    modalNEAlign: {
+      general: `:not(.is-mobile).modalNEAlign .modal-container .prompt {
+top: 0%;
+right: 0%;
+}`,
+    },
+    modalEAlign: {
+      general: `:not(.is-mobile).modalEAlign .modal-container .prompt {
+right: 0%;
+}`,
+    },
+    modalSEAlign: {
+      general: `:not(.is-mobile).modalSEAlign .modal-container .prompt {
+bottom: 0%;
+right: 0%;
+}`,
+    },
+    modalSAlign: {
+      general: `:not(.is-mobile).modalSAlign .modal-container .prompt {
+bottom: 0%;
+}`,
+    },
+    modalSWAlign: {
+      general: `:not(.is-mobile).modalSWAlign .modal-container .prompt {
+bottom: 0%;
+left: 0%;
+}`,
+    },
+    modalWAlign: {
+      general: `:not(.is-mobile).modalWAlign .modal-container .prompt {
+left: 0%;
+}`,
+    },
+    modalNWAlign: {
+      general: `:not(.is-mobile).modalNWAlign .modal-container .prompt {
+top: 0%;
+left: 0%;
+}`,
+    },
+    largeSettingsButtons: {
+      general: `body:not(.is-mobile).largeSettingsButtons {
+--toggle-thumb-radius: 4px;
+--toggle-thumb-height: 36px;
+--toggle-thumb-width: 36px;
+--toggle-width: 80px;
+--toggle-radius: 4px;
+}
+
+body:not(.is-mobile).largeSettingsButtons .modal.mod-settings .clickable-icon {
+background-color: var(--level1_a);
+min-height: 40px;
+width: 40px;
+}`,
+    },
+    settingsNAlign: {
+      general: `:not(.is-mobile).settingsNAlign .modal.mod-settings {
+top: 0%;
+}`,
+    },
+    settingsNEAlign: {
+      general: `:not(.is-mobile).settingsNEAlign .modal.mod-settings {
+top: 0%;
+right: 0%;
+}`,
+    },
+    settingsEAlign: {
+      general: `:not(.is-mobile).settingsEAlign .modal.mod-settings {
+right: 0%;
+}`,
+    },
+    settingsSEAlign: {
+      general: `:not(.is-mobile).settingsSEAlign .modal.mod-settings {
+bottom: 0%;
+right: 0%;
+}`,
+    },
+    settingsSAlign: {
+      general: `:not(.is-mobile).settingsSAlign .modal.mod-settings {
+bottom: 0%;
+}`,
+    },
+    settingsSWAlign: {
+      general: `:not(.is-mobile).settingsSWAlign .modal.mod-settings {
+bottom: 0%;
+left: 0%;
+}`,
+    },
+    settingsWAlign: {
+      general: `:not(.is-mobile).settingsWAlign .modal.mod-settings {
+left: 0%;
+}`,
+    },
+    settingsNWAlign: {
+      general: `:not(.is-mobile).settingsNWAlign .modal.mod-settings {
+top: 0%;
+left: 0%;
+}`,
+    },
+  },
 };

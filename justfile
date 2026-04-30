@@ -36,7 +36,7 @@ extract-baseline: build
 
 [group('extract')]
 compile:
-  node --max-old-space-size=16384 ./runner/scripts/compile.js "" --auto
+  node --max-old-space-size=24576 ./runner/scripts/compile.js "" --auto
 
 [group('cli-extract'), doc('Compile a single theme')]
 cli-compile-theme themeName:
@@ -63,7 +63,7 @@ cli-extract-fonts:
 
 [group('plugin')]
 generate-plugin:
-  node --max-old-space-size=16384 ./plugin/scripts/generate.js --auto
+  node --max-old-space-size=24576 ./plugin/scripts/generate.js --auto
   npm --prefix ./plugin run build
 
 [group('cli-extract'), doc('Extract a single theme using CLI (requires running Obsidian)')]
@@ -95,7 +95,7 @@ cli-clear-baseline:
   rm -rf ./runner/results/_baseline
 
 style-settings:
-  bun ./scripts/populate-style-settings.mjs
+  bun ./scripts/populate-style-settings.mjs --extract
 
 [group('database')]
 ingest:

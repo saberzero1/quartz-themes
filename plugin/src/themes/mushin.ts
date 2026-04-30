@@ -10991,8 +10991,10 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "hide-status-bar": `.hide-status-bar .status-bar {
+    "hide-status-bar": {
+      general: `.hide-status-bar .status-bar {
 display: none !important;
 }`,
+    },
   },
 };

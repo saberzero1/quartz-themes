@@ -4204,7 +4204,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "retro-lm-parchments": `.retro-lm-parchments {
+    "retro-lm-parchments": {
+      light: `.retro-lm-parchments {
 --color-base-00: #f9f6ee;
 --color-base-00-rgb: 249,246,238;
 --color-base-05: #f4eee0;
@@ -4257,7 +4258,9 @@ html[saved-theme="light"] body ul.tags > li {
 --leather-color-alt: #762a3f;
 --leather-color-rgb: 99, 35, 53;
 }`,
-    "retro-lm-ivory-pages": `.retro-lm-ivory-pages {
+    },
+    "retro-lm-ivory-pages": {
+      light: `.retro-lm-ivory-pages {
 --color-base-00: #faf9f6;
 --color-base-00-rgb: 250,249,246;
 --color-base-05: #ece8dd;
@@ -4294,7 +4297,9 @@ html[saved-theme="light"] body ul.tags > li {
 --leather-color-alt: #4a3d6e;
 --leather-color-rgb: 99, 35, 53;
 }`,
-    "retro-lm-sunny-memos": `.retro-lm-sunny-memos {
+    },
+    "retro-lm-sunny-memos": {
+      light: `.retro-lm-sunny-memos {
 --color-base-00: #ffeed9;
 --color-base-00-rgb: 255,238,217;
 --color-base-05: #ffe6c5;
@@ -4331,7 +4336,9 @@ html[saved-theme="light"] body ul.tags > li {
 --leather-color-alt: #5f3323;
 --leather-color-rgb: 76, 41, 28;
 }`,
-    "retro-lm-vintage-papers": `.retro-lm-vintage-papers {
+    },
+    "retro-lm-vintage-papers": {
+      light: `.retro-lm-vintage-papers {
 --color-base-00: #f8f8ff;
 --color-base-00-rgb: 248,248,255;
 --color-base-05: #e4e4ff;
@@ -4368,7 +4375,9 @@ html[saved-theme="light"] body ul.tags > li {
 --leather-color-alt: #1d335a;
 --leather-color-rgb: 23, 40, 71;
 }`,
-    "retro-lm-mint-leafs": `.retro-lm-mint-leafs {
+    },
+    "retro-lm-mint-leafs": {
+      light: `.retro-lm-mint-leafs {
 --color-base-00: #f1f9ee;
 --color-base-00-rgb: 241,249,238;
 --color-base-05: #e5f4e0;
@@ -4405,7 +4414,9 @@ html[saved-theme="light"] body ul.tags > li {
 --leather-color-alt: #203d14;
 --leather-color-rgb: 22, 42, 14;
 }`,
-    "retro-dm-midnight-journal": `.retro-dm-midnight-journal {
+    },
+    "retro-dm-midnight-journal": {
+      dark: `.retro-dm-midnight-journal {
 --color-base-00: #0c0c0c;
 --color-base-00-rgb: 12, 12, 12;
 --color-base-05: #161616;
@@ -4459,7 +4470,9 @@ html[saved-theme="light"] body ul.tags > li {
 --leather-color-alt: #440000;
 --leather-color-rgb: 75, 0, 0;
 }`,
-    "retro-dm-carbon-ink": `.retro-dm-carbon-ink {
+    },
+    "retro-dm-carbon-ink": {
+      dark: `.retro-dm-carbon-ink {
 --color-base-00: #1a1c21;
 --color-base-00-rgb: 26, 28, 33;
 --color-base-05: #23252c;
@@ -4496,7 +4509,9 @@ html[saved-theme="light"] body ul.tags > li {
 --leather-color-alt: #384234;
 --leather-color-rgb: 44, 52, 41;
 }`,
-    "retro-dm-forest-green": `.retro-dm-forest-green {
+    },
+    "retro-dm-forest-green": {
+      dark: `.retro-dm-forest-green {
 --color-base-00: #1b231b;
 --color-base-00-rgb: 27, 35, 27
   --color-base-05: #242e24;
@@ -4533,7 +4548,9 @@ html[saved-theme="light"] body ul.tags > li {
 --leather-color-alt: #2c392c;
 --leather-color-rgb: 249, 246, 238;
 }`,
-    "retro-dm-blueprint": `.retro-dm-blueprint {
+    },
+    "retro-dm-blueprint": {
+      dark: `.retro-dm-blueprint {
 --color-base-00: #0d3365;
 --color-base-00-rgb: 13,51,101;
 --color-base-05: #103c77;
@@ -4570,7 +4587,9 @@ html[saved-theme="light"] body ul.tags > li {
 --leather-color-alt: #2117a9;
 --leather-color-rgb: 20, 14, 102;
 }`,
-    "retro-dm-pinot-noir": `.retro-dm-pinot-noir {
+    },
+    "retro-dm-pinot-noir": {
+      dark: `.retro-dm-pinot-noir {
 --color-base-00: #3c191d;
 --color-base-00-rgb: 60,25,29;
 --color-base-05: #4a1f24;
@@ -4607,7 +4626,9 @@ html[saved-theme="light"] body ul.tags > li {
 --leather-color-alt: #60282e;
 --leather-color-rgb: 60, 25, 29;
 }`,
-    "retro-dm-misty-mirage": `.retro-dm-misty-mirage .modal.mod-settings .vertical-tab-header .vertical-tab-nav-item {
+    },
+    "retro-dm-misty-mirage": {
+      general: `.retro-dm-misty-mirage .modal.mod-settings .vertical-tab-header .vertical-tab-nav-item {
 color: var(--main-ink);
 }
 
@@ -4618,8 +4639,8 @@ color: var(--color-base-20);
 .retro-dm-misty-mirage .modal.mod-settings .vertical-tab-header .vertical-tab-nav-item.is-active .vertical-tab-nav-item-icon, .retro-dm-misty-mirage .modal.mod-settings .vertical-tab-header .vertical-tab-nav-item.is-active {
 color: var(--color-base-20);
 font-weight: 600;
-}
-.retro-dm-misty-mirage {
+}`,
+      dark: `.retro-dm-misty-mirage {
 --color-base-00: #3b3149;
 --color-base-00-rgb: 59, 49, 73;
 --color-base-05: #443955;
@@ -4656,5 +4677,6 @@ font-weight: 600;
 --leather-color-alt: #bcbcf2;
 --leather-color-rgb: 44, 52, 41;
 }`,
+    },
   },
 };

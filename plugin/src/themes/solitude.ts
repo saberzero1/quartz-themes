@@ -2528,7 +2528,8 @@ html body ul.tags > li {
   },
   light: {},
   classSettings: {
-    "enable-alternative-checkboxes": `body.enable-alternative-checkboxes .HyperMD-task-line .task-list-item-checkbox::after {
+    "enable-alternative-checkboxes": {
+      general: `body.enable-alternative-checkboxes .HyperMD-task-line .task-list-item-checkbox::after {
 color: var(--checkbox-marker-color);
 }
 
@@ -2618,5 +2619,6 @@ content: "?";
 body.enable-alternative-checkboxes .HyperMD-task-line[data-task="/"] .task-list-item-checkbox::after {
 content: "/";
 }`,
+    },
   },
 };

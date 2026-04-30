@@ -3401,7 +3401,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "retroma-font-w95font": `.retroma-font-w95font {
+    "retroma-font-w95font": {
+      general: `.retroma-font-w95font {
 --font-interface-override: "W95font" !important;
 --font-interface: "W95font" !important;
 --font-interface-theme: "W95font" !important;
@@ -3413,7 +3414,9 @@ html[saved-theme="light"] body ul.tags > li {
 --font-monospace: "W95font" !important;
 --font-text-theme: "W95font" !important;
 }`,
-    "retroma-font-cascadia-code": `.retroma-font-cascadia-code {
+    },
+    "retroma-font-cascadia-code": {
+      general: `.retroma-font-cascadia-code {
 --font-interface-override: "Cascadia Code" !important;
 --font-interface: "Cascadia Code" !important;
 --font-interface-theme: "Cascadia Code" !important;
@@ -3424,7 +3427,9 @@ html[saved-theme="light"] body ul.tags > li {
 --font-monospace: "Cascadia Code" !important;
 --font-text-theme: "Cascadia Code" !important;
 }`,
-    "retroma-font-ia-writer-mono": `.retroma-font-ia-writer-mono {
+    },
+    "retroma-font-ia-writer-mono": {
+      general: `.retroma-font-ia-writer-mono {
 --font-interface-override: "iA Writer Mono S" !important;
 --font-interface: "iA Writer Mono S" !important;
 --font-interface-theme: "iA Writer Mono S" !important;
@@ -3436,7 +3441,9 @@ html[saved-theme="light"] body ul.tags > li {
 --font-monospace: "iA Writer Mono S" !important;
 --font-text-theme: "iA Writer Mono S" !important;
 }`,
-    "retroma-font-excalifont": `.retroma-font-excalifont {
+    },
+    "retroma-font-excalifont": {
+      general: `.retroma-font-excalifont {
 --font-interface-override: "Excalifont" !important;
 --font-interface: "Excalifont" !important;
 --font-interface-theme: "Excalifont" !important;
@@ -3448,11 +3455,15 @@ html[saved-theme="light"] body ul.tags > li {
 --font-monospace: "Excalifont" !important;
 --font-text-theme: "Excalifont" !important;
 }`,
-    "cs-analogous-colors-reversed": `.cs-analogous-colors-reversed {
+    },
+    "cs-analogous-colors-reversed": {
+      general: `.cs-analogous-colors-reversed {
 --rotation-1: 60;
 --rotation-2: 30;
 }`,
-    "cs-split-complementary-colors": `.cs-split-complementary-colors {
+    },
+    "cs-split-complementary-colors": {
+      general: `.cs-split-complementary-colors {
 --rotation-1: 150;
 --rotation-2: 210;
 }
@@ -3461,11 +3472,15 @@ html[saved-theme="light"] body ul.tags > li {
 --rotation-1: 210;
 --rotation-2: 150;
 }`,
-    "cs-split-complementary-colors-reversed": `.cs-split-complementary-colors-reversed {
+    },
+    "cs-split-complementary-colors-reversed": {
+      general: `.cs-split-complementary-colors-reversed {
 --rotation-1: 210;
 --rotation-2: 150;
 }`,
-    "cs-triadic-colors": `.cs-triadic-colors {
+    },
+    "cs-triadic-colors": {
+      general: `.cs-triadic-colors {
 --rotation-1: 120;
 --rotation-2: 240;
 }
@@ -3474,11 +3489,15 @@ html[saved-theme="light"] body ul.tags > li {
 --rotation-1: 240;
 --rotation-2: 120;
 }`,
-    "cs-triadic-colors-reversed": `.cs-triadic-colors-reversed {
+    },
+    "cs-triadic-colors-reversed": {
+      general: `.cs-triadic-colors-reversed {
 --rotation-1: 240;
 --rotation-2: 120;
 }`,
-    "cs-monochromatic-colors": `.cs-monochromatic-colors {
+    },
+    "cs-monochromatic-colors": {
+      general: `.cs-monochromatic-colors {
 --rotation-1: 5;
 --rotation-2: 355;
 }
@@ -3487,32 +3506,46 @@ html[saved-theme="light"] body ul.tags > li {
 --rotation-1: 355;
 --rotation-2: 5;
 }`,
-    "cs-monochromatic-colors-reversed": `.cs-monochromatic-colors-reversed {
+    },
+    "cs-monochromatic-colors-reversed": {
+      general: `.cs-monochromatic-colors-reversed {
 --rotation-1: 355;
 --rotation-2: 5;
 }`,
-    "theme-variant-1": `.theme-variant-1 {
+    },
+    "theme-variant-1": {
+      general: `.theme-variant-1 {
 --border-groove: 2px solid oklch(from var(--text-muted) l c h / 20%);
 --border-ridge: 1px solid oklch(from var(--text-muted) l c h / 20%);
 }`,
-    "theme-variant-2": `.theme-variant-2 {
+    },
+    "theme-variant-2": {
+      general: `.theme-variant-2 {
 --border-groove: unset;
 --border-ridge: unset;
 --border-width: unset;
 }`,
-    "retroma-folder-border-style-1": `.retroma-folder-border-style-1 {
+    },
+    "retroma-folder-border-style-1": {
+      general: `.retroma-folder-border-style-1 {
 --retroma-folder-box-shadow: unset !important;
 }`,
-    "retroma-folder-border-style-2": `.retroma-folder-border-style-2 {
+    },
+    "retroma-folder-border-style-2": {
+      general: `.retroma-folder-border-style-2 {
 --retroma-folder-border: 1px solid
     oklch(from var(--accent-2) 55% var(--chroma-folder) h / 50%);
 --retroma-folder-box-shadow: var(--box-shadow);
 }`,
-    "retroma-folder-border-hide": `.retroma-folder-border-hide {
+    },
+    "retroma-folder-border-hide": {
+      general: `.retroma-folder-border-hide {
 --retroma-folder-border: unset !important;
 --retroma-folder-box-shadow: unset !important;
 }`,
-    "retroma-folder-colors-accent": `.retroma-folder-colors-accent {
+    },
+    "retroma-folder-colors-accent": {
+      general: `.retroma-folder-colors-accent {
 --folder-color-1: var(--folder-accent) !important;
 --folder-color-2: var(--folder-accent) !important;
 --folder-color-3: var(--folder-accent) !important;
@@ -3529,7 +3562,9 @@ html[saved-theme="light"] body ul.tags > li {
 --folder-color-14: var(--folder-accent) !important;
 --folder-color-15: var(--folder-accent) !important;
 }`,
-    "retroma-folder-colors-disable": `.retroma-folder-colors-disable {
+    },
+    "retroma-folder-colors-disable": {
+      general: `.retroma-folder-colors-disable {
 --chroma-folder: 0 !important;
 --folder-color-1: var(--text-muted) !important;
 --folder-color-2: var(--text-muted) !important;
@@ -3547,14 +3582,18 @@ html[saved-theme="light"] body ul.tags > li {
 --folder-color-14: var(--text-muted) !important;
 --folder-color-15: var(--text-muted) !important;
 }`,
-    "img-center": `.img-center {
+    },
+    "img-center": {
+      general: `.img-center {
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
   };
 }`,
-    "disable-table-border": `.disable-table-border {
+    },
+    "disable-table-border": {
+      general: `.disable-table-border {
 .cm-html-embed td,
   .markdown-rendered td,
   .cm-html-embed th,
@@ -3562,7 +3601,9 @@ img {
     border: unset !important;
   };
 }`,
-    "enable-alternative-checkboxes": `.enable-alternative-checkboxes {
+    },
+    "enable-alternative-checkboxes": {
+      general: `.enable-alternative-checkboxes {
 /* - [/] Incomplete */
 div.HyperMD-task-line[data-task="/"],
   ul > li[data-task="/"] {
@@ -3788,10 +3829,14 @@ div.is-live-preview
     }
   };
 }`,
-    "disable-checklist-done-decoration": `.disable-checklist-done-decoration {
+    },
+    "disable-checklist-done-decoration": {
+      general: `.disable-checklist-done-decoration {
 --checklist-done-decoration: none !important;
 }`,
-    "heading-divider-hide": `.heading-divider-hide {
+    },
+    "heading-divider-hide": {
+      general: `.heading-divider-hide {
 .markdown-preview-view h1,
   .markdown-preview-view h2,
   .markdown-preview-view h3,
@@ -3804,7 +3849,9 @@ div.is-live-preview
     padding-top: unset;
   };
 }`,
-    "heading-divider-show": `.heading-divider-show {
+    },
+    "heading-divider-show": {
+      general: `.heading-divider-show {
 .markdown-preview-view h1,
   .markdown-preview-view h2,
   .markdown-preview-view h3,
@@ -3817,31 +3864,41 @@ div.is-live-preview
     padding-top: 4px;
   };
 }`,
-    "footnote-divider": `.footnote-divider {
+    },
+    "footnote-divider": {
+      general: `.footnote-divider {
 .footnotes hr {
     display: none;
   };
 }`,
-    "text-justify": `.text-justify {
+    },
+    "text-justify": {
+      general: `.text-justify {
 .markdown-rendered,
   .cm-scroller {
     text-align: justify;
     text-justify: inter-word;
   };
 }`,
-    "text-center": `.text-center {
+    },
+    "text-center": {
+      general: `.text-center {
 .markdown-rendered,
   .cm-scroller {
     text-align: center;
   };
 }`,
-    "text-right": `.text-right {
+    },
+    "text-right": {
+      general: `.text-right {
 .markdown-rendered,
   .cm-scroller {
     text-align: right;
   };
 }`,
-    "retroma-with-tasknotes-plugin": `.retroma-with-tasknotes-plugin {
+    },
+    "retroma-with-tasknotes-plugin": {
+      general: `.retroma-with-tasknotes-plugin {
 .tasknotes-plugin {
     --tn-radius-xs: var(--window-border-radius);
     --tn-radius-s: var(--window-border-radius);
@@ -3933,7 +3990,9 @@ div.is-live-preview
     border: 2px solid oklch(from var(--background-secondary) 60% c h) !important;
   };
 }`,
-    "retroma-with-kanban-plugin": `.retroma-with-kanban-plugin {
+    },
+    "retroma-with-kanban-plugin": {
+      general: `.retroma-with-kanban-plugin {
 .kanban-plugin__lane {
     border: var(--border-groove);
     border-radius: var(--window-border-radius);
@@ -4025,7 +4084,9 @@ div.is-live-preview
     color: var(--text-muted);
   };
 }`,
-    "retroma-with-calendar-plugin": `.retroma-with-calendar-plugin {
+    },
+    "retroma-with-calendar-plugin": {
+      general: `.retroma-with-calendar-plugin {
 #calendar-container {
     margin: 8px;
     border-radius: var(--window-border-radius);
@@ -4080,5 +4141,6 @@ div.is-live-preview
     border-radius: unset;
   };
 }`,
+    },
   },
 };

@@ -5759,7 +5759,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "theme-green": `.theme-green {
+    "theme-green": {
+      dark: `.theme-green {
 --accent-h: 97 !important;
 --accent-s: 61% !important;
 --accent-l: 62% !important;
@@ -5782,8 +5783,8 @@ html[saved-theme="light"] body ul.tags > li {
 --outline: #74796d;
 --surface-variant: #43483e;
 --on-surface-variant: #e3e3dc;
-}
-.theme-green {
+}`,
+      light: `.theme-green {
 --accent-h: 94 !important;
 --accent-s: 100% !important;
 --accent-l: 21% !important;
@@ -5807,7 +5808,9 @@ html[saved-theme="light"] body ul.tags > li {
 --surface-variant: #e0e4d6;
 --on-surface-variant: #43483e;
 }`,
-    "theme-classic": `.theme-classic {
+    },
+    "theme-classic": {
+      dark: `.theme-classic {
 --accent-h: 258 !important;
 --accent-s: 100% !important;
 --accent-l: 87% !important;
@@ -5830,8 +5833,8 @@ html[saved-theme="light"] body ul.tags > li {
 --outline: #938F99;
 --surface-variant: #49454F;
 --on-surface-variant: #CAC4D0;
-}
-.theme-classic {
+}`,
+      light: `.theme-classic {
 --accent-h: 256 !important;
 --accent-s: 34% !important;
 --accent-l: 48% !important;
@@ -5855,7 +5858,9 @@ html[saved-theme="light"] body ul.tags > li {
 --surface-variant: #E7E0EC;
 --on-surface-variant: #49454F;
 }`,
-    "theme-lumen": `.theme-lumen {
+    },
+    "theme-lumen": {
+      dark: `.theme-lumen {
 --accent-h: 233 !important;
 --accent-s: 100% !important;
 --accent-l: 87% !important;
@@ -5878,8 +5883,8 @@ html[saved-theme="light"] body ul.tags > li {
 --outline: #90909a;
 --surface-variant: #46464f;
 --on-surface-variant: #c7c5d0;
-}
-.theme-lumen {
+}`,
+      light: `.theme-lumen {
 --accent-h: 231 !important;
 --accent-s: 49% !important;
 --accent-l: 50% !important;
@@ -5903,7 +5908,9 @@ html[saved-theme="light"] body ul.tags > li {
 --surface-variant: #e3e1ec;
 --on-surface-variant: #46464f;
 }`,
-    "restore-ribbon": `.restore-ribbon .workspace-ribbon {
+    },
+    "restore-ribbon": {
+      general: `.restore-ribbon .workspace-ribbon {
 background-color: var(--lower-accent) !important;
 }
 
@@ -5914,5 +5921,6 @@ background-color: var(--upper-accent) !important;
 .restore-ribbon .workspace-ribbon * {
 color: var(--on-upper-accent) !important;
 }`,
+    },
   },
 };

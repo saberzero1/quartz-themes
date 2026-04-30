@@ -2094,7 +2094,8 @@ h3 {
 }
 `,
   classSettings: {
-    "matrix-rain-on": `.matrix-rain-on .workspace::before {
+    "matrix-rain-on": {
+      general: `.matrix-rain-on .workspace::before {
 content: "";
 position: fixed;
 inset: -100% -10% -100% -10%;
@@ -2108,5 +2109,6 @@ z-index: 1;
 .matrix-rain-on .workspace::before {
 display: none;
 }`,
+    },
   },
 };

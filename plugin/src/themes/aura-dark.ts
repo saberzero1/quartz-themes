@@ -545,7 +545,8 @@ html body kbd {
   },
   light: {},
   classSettings: {
-    "aura-dark": `.aura-dark {
+    "aura-dark": {
+      dark: `.aura-dark {
 --background-primary: #15141b;
 --background-secondary: #110f18;
 --ribbon-background: #15141b;
@@ -555,7 +556,9 @@ html body kbd {
 --indentation-guide-color: #edecee;
 --color-base-30: #61ffca;
 }`,
-    "aura-soft": `.clickable-icon.aura-soft:hover, .clickable-icon.aura-soft:hover svg, .is-focused.aura-soft .titlebar-inner.aura-soft {
+    },
+    "aura-soft": {
+      general: `.clickable-icon.aura-soft:hover, .clickable-icon.aura-soft:hover svg, .is-focused.aura-soft .titlebar-inner.aura-soft {
 color: #61ffca;
 }
 
@@ -569,8 +572,8 @@ background-color: #3d375e7f;
 
 .dropdown.aura-soft:hover {
 background-color: #af8aff7f;
-}
-.aura-soft {
+}`,
+      dark: `.aura-soft {
 --background-primary: #21202e;
 --background-secondary: #1c1b22;
 --ribbon-background: #21202e;
@@ -580,5 +583,6 @@ background-color: #af8aff7f;
 --indentation-guide-color: #edecee;
 --color-base-30: #61ffca;
 }`,
+    },
   },
 };

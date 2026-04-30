@@ -12,6 +12,16 @@ settings:
       [View Repository on GitHub](https://github.com/Oczko24/Obsidian-transparent)
     type: info-text
     markdown: true
+  - id: preset-mode
+    title: 🎨 Theme Presets
+    type: class-select
+    allowEmpty: false
+    default: preset-default
+    options:
+      - label: Base settings
+        value: preset-default
+      - label: Orange Autumn
+        value: preset-orange
   - id: main-section
     title: Adjust Obsidian Theme
     type: heading

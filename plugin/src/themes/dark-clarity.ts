@@ -2890,7 +2890,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "theme-genshin-sangonomiya-kokomi1": `body.theme-dark {
+    "theme-genshin-sangonomiya-kokomi1": {
+      dark: `body.theme-dark {
 --theme-color: hsl(245 75% 63%);
 --text-highlight-bg: hsl(245,75%,63%,0.5);
 --text-title-h1: hsl(246 87% 69%);
@@ -2905,8 +2906,8 @@ html[saved-theme="light"] body ul.tags > li {
 --folder-color4: hsl( 13 84% 89%  / var(--folder-alpha));
 --folder-color5: hsl( 17 51% 66%  / var(--folder-alpha));
 --folder-color6: hsl( 11 59% 54%  / var(--folder-alpha));
-}
-body.theme-light {
+}`,
+      light: `body.theme-light {
 --theme-color: hsl(245 75% 63%);
 --text-highlight-bg: hsl(245,100%,78%,0.52);
 --text-title-h1: hsl(246 87% 69%);
@@ -2922,23 +2923,9 @@ body.theme-light {
 --folder-color5: hsl( 17  91% 77%  / var(--folder-alpha));
 --folder-color6: hsl( 11  89% 63%  / var(--folder-alpha));
 }`,
-    "theme-genshin-sangonomiya-kokomi2": `body.theme-dark, body.theme-light {
---theme-color: hsl(245 75% 63%);
---text-highlight-bg: hsl(245,75%,63%,0.5);
---text-title-h1: hsl(246 99% 63%);
---text-title-h2: hsl(245 75% 63%);
---text-title-h3: hsl(240 44% 65%);
---text-title-h4: hsl(14  91% 79%);
---text-title-h5: hsl(17  55% 60%);
---text-title-h6: hsl(11  59% 54%);
---folder-color1: hsl( 246 99% 63%  / var(--folder-alpha));
---folder-color2: hsl( 245 75% 63%  / var(--folder-alpha));
---folder-color3: hsl( 240 44% 65%  / var(--folder-alpha));
---folder-color4: hsl( 14  91% 79%  / var(--folder-alpha));
---folder-color5: hsl( 17  55% 60%  / var(--folder-alpha));
---folder-color6: hsl( 11  59% 54%  / var(--folder-alpha));
-}
-body.theme-dark, body.theme-light {
+    },
+    "theme-genshin-sangonomiya-kokomi2": {
+      dark: `body.theme-dark, body.theme-light {
 --theme-color: hsl(245 75% 63%);
 --text-highlight-bg: hsl(245,75%,63%,0.5);
 --text-title-h1: hsl(246 99% 63%);
@@ -2954,7 +2941,25 @@ body.theme-dark, body.theme-light {
 --folder-color5: hsl( 17  55% 60%  / var(--folder-alpha));
 --folder-color6: hsl( 11  59% 54%  / var(--folder-alpha));
 }`,
-    "theme-genshin-nilou": `body.theme-dark {
+      light: `body.theme-dark, body.theme-light {
+--theme-color: hsl(245 75% 63%);
+--text-highlight-bg: hsl(245,75%,63%,0.5);
+--text-title-h1: hsl(246 99% 63%);
+--text-title-h2: hsl(245 75% 63%);
+--text-title-h3: hsl(240 44% 65%);
+--text-title-h4: hsl(14  91% 79%);
+--text-title-h5: hsl(17  55% 60%);
+--text-title-h6: hsl(11  59% 54%);
+--folder-color1: hsl( 246 99% 63%  / var(--folder-alpha));
+--folder-color2: hsl( 245 75% 63%  / var(--folder-alpha));
+--folder-color3: hsl( 240 44% 65%  / var(--folder-alpha));
+--folder-color4: hsl( 14  91% 79%  / var(--folder-alpha));
+--folder-color5: hsl( 17  55% 60%  / var(--folder-alpha));
+--folder-color6: hsl( 11  59% 54%  / var(--folder-alpha));
+}`,
+    },
+    "theme-genshin-nilou": {
+      dark: `body.theme-dark {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg:hsl(9 66% 53%);
 --text-title-h1: hsl(213 62% 50%);
@@ -2969,8 +2974,8 @@ body.theme-dark, body.theme-light {
 --folder-color4: hsl( 30 46%  95%  / var(--folder-alpha));
 --folder-color5: hsl( 9  51%  65%  / var(--folder-alpha));
 --folder-color6: hsl( 9  66%  53%  / var(--folder-alpha));
-}
-body.theme-light {
+}`,
+      light: `body.theme-light {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg:hsla(9,91%,64%,0.686);
 --text-title-h1: hsl(213 74%  55%);
@@ -2986,7 +2991,9 @@ body.theme-light {
 --folder-color5: hsl( 14  100% 76%  / var(--folder-alpha));
 --folder-color6: hsl( 9   90%  61%  / var(--folder-alpha));
 }`,
-    "theme-genshin-甘雨": `body.theme-dark, body.theme-light {
+    },
+    "theme-genshin-甘雨": {
+      dark: `body.theme-dark, body.theme-light {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg:hsl(245, 75%, 63%, 0.5);
 --text-title-h1: hsl(231 30%  52%);
@@ -3001,8 +3008,8 @@ body.theme-light {
 --folder-color4: hsl( 19  20%  82%  / var(--folder-alpha));
 --folder-color5: hsl( 357 34%  54%  / var(--folder-alpha));
 --folder-color6: hsl( 358 20%  48%  / var(--folder-alpha));
-}
-body.theme-dark, body.theme-light {
+}`,
+      light: `body.theme-dark, body.theme-light {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg:hsl(245, 75%, 63%, 0.5);
 --text-title-h1: hsl(231 30%  52%);
@@ -3018,23 +3025,9 @@ body.theme-dark, body.theme-light {
 --folder-color5: hsl( 357 34%  54%  / var(--folder-alpha));
 --folder-color6: hsl( 358 20%  48%  / var(--folder-alpha));
 }`,
-    "theme-genshin-神里绫华": `body.theme-dark, body.theme-light {
---theme-color: hsl(245, 75%, 63%);
---text-highlight-bg:hsla(245, 75%, 63%, 0.5);
---text-title-h1: hsl(228 43% 55%);
---text-title-h2: hsl(221 36% 57%);
---text-title-h3: hsl(217 37% 81%);
---text-title-h4: hsl(36  5%  82%);
---text-title-h5: hsl(340 29% 55%);
---text-title-h6: hsl(340 49% 34%);
---folder-color1: hsl( 228 43% 55%  / var(--folder-alpha));
---folder-color2: hsl( 221 36% 57%  / var(--folder-alpha));
---folder-color3: hsl( 217 37% 81%  / var(--folder-alpha));
---folder-color4: hsl( 36  5%  82%  / var(--folder-alpha));
---folder-color5: hsl( 340 29% 55%  / var(--folder-alpha));
---folder-color6: hsl( 340 49% 34%  / var(--folder-alpha));
-}
-body.theme-dark, body.theme-light {
+    },
+    "theme-genshin-神里绫华": {
+      dark: `body.theme-dark, body.theme-light {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg:hsla(245, 75%, 63%, 0.5);
 --text-title-h1: hsl(228 43% 55%);
@@ -3050,23 +3043,25 @@ body.theme-dark, body.theme-light {
 --folder-color5: hsl( 340 29% 55%  / var(--folder-alpha));
 --folder-color6: hsl( 340 49% 34%  / var(--folder-alpha));
 }`,
-    "theme-genshin-可莉": `body.theme-dark, body.theme-light {
+      light: `body.theme-dark, body.theme-light {
 --theme-color: hsl(245, 75%, 63%);
---text-highlight-bg:hsl(9, 64%, 50%);
---text-title-h1: hsl(9  64% 50%);
---text-title-h2: hsl(9  54% 48%);
---text-title-h3: hsl(8  38% 49%);
---text-title-h4: hsl(16 50% 69%);
---text-title-h5: hsl(34 42% 79%);
---text-title-h6: hsl(14 35% 83%);
---folder-color1: hsl( 9  64% 50%  / var(--folder-alpha));
---folder-color2: hsl( 9  54% 48%  / var(--folder-alpha));
---folder-color3: hsl( 8  38% 49%  / var(--folder-alpha));
---folder-color4: hsl( 16 50% 69%  / var(--folder-alpha));
---folder-color5: hsl( 34 42% 79%  / var(--folder-alpha));
---folder-color6: hsl( 14 35% 83%  / var(--folder-alpha));
-}
-body.theme-dark, body.theme-light {
+--text-highlight-bg:hsla(245, 75%, 63%, 0.5);
+--text-title-h1: hsl(228 43% 55%);
+--text-title-h2: hsl(221 36% 57%);
+--text-title-h3: hsl(217 37% 81%);
+--text-title-h4: hsl(36  5%  82%);
+--text-title-h5: hsl(340 29% 55%);
+--text-title-h6: hsl(340 49% 34%);
+--folder-color1: hsl( 228 43% 55%  / var(--folder-alpha));
+--folder-color2: hsl( 221 36% 57%  / var(--folder-alpha));
+--folder-color3: hsl( 217 37% 81%  / var(--folder-alpha));
+--folder-color4: hsl( 36  5%  82%  / var(--folder-alpha));
+--folder-color5: hsl( 340 29% 55%  / var(--folder-alpha));
+--folder-color6: hsl( 340 49% 34%  / var(--folder-alpha));
+}`,
+    },
+    "theme-genshin-可莉": {
+      dark: `body.theme-dark, body.theme-light {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg:hsl(9, 64%, 50%);
 --text-title-h1: hsl(9  64% 50%);
@@ -3082,7 +3077,25 @@ body.theme-dark, body.theme-light {
 --folder-color5: hsl( 34 42% 79%  / var(--folder-alpha));
 --folder-color6: hsl( 14 35% 83%  / var(--folder-alpha));
 }`,
-    "theme-genshin-希格雯": `body.theme-dark {
+      light: `body.theme-dark, body.theme-light {
+--theme-color: hsl(245, 75%, 63%);
+--text-highlight-bg:hsl(9, 64%, 50%);
+--text-title-h1: hsl(9  64% 50%);
+--text-title-h2: hsl(9  54% 48%);
+--text-title-h3: hsl(8  38% 49%);
+--text-title-h4: hsl(16 50% 69%);
+--text-title-h5: hsl(34 42% 79%);
+--text-title-h6: hsl(14 35% 83%);
+--folder-color1: hsl( 9  64% 50%  / var(--folder-alpha));
+--folder-color2: hsl( 9  54% 48%  / var(--folder-alpha));
+--folder-color3: hsl( 8  38% 49%  / var(--folder-alpha));
+--folder-color4: hsl( 16 50% 69%  / var(--folder-alpha));
+--folder-color5: hsl( 34 42% 79%  / var(--folder-alpha));
+--folder-color6: hsl( 14 35% 83%  / var(--folder-alpha));
+}`,
+    },
+    "theme-genshin-希格雯": {
+      dark: `body.theme-dark {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg:hsl(229, 70%, 59%);
 --text-title-h1: hsl(208 66% 69%);
@@ -3097,8 +3110,8 @@ body.theme-dark, body.theme-light {
 --folder-color4: hsl(  347 71% 80% / var(--folder-alpha));
 --folder-color5: hsl(  342 80% 76% / var(--folder-alpha));
 --folder-color6: hsl(  344 61% 58% / var(--folder-alpha));
-}
-body.theme-light {
+}`,
+      light: `body.theme-light {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg:hsl(229, 70%, 59%);
 --text-title-h1: hsl(208 89% 75%);
@@ -3114,7 +3127,9 @@ body.theme-light {
 --folder-color5: hsl( 342 80% 76% / var(--folder-alpha));
 --folder-color6: hsl( 344 83% 68% / var(--folder-alpha));
 }`,
-    "theme-genshin-砂糖": `body.theme-dark, body.theme-light {
+    },
+    "theme-genshin-砂糖": {
+      dark: `body.theme-dark, body.theme-light {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg:hsl(229, 70%, 59%);
 --text-title-h1: hsl(229 70% 59%);
@@ -3129,8 +3144,8 @@ body.theme-light {
 --folder-color4: hsl( 91  48% 87% / var(--folder-alpha));
 --folder-color5: hsl( 146 17% 56% / var(--folder-alpha));
 --folder-color6: hsl( 161 27% 39% / var(--folder-alpha));
-}
-body.theme-dark, body.theme-light {
+}`,
+      light: `body.theme-dark, body.theme-light {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg:hsl(229, 70%, 59%);
 --text-title-h1: hsl(229 70% 59%);
@@ -3163,23 +3178,9 @@ body.theme-light {
 --folder-color5: hsl( 146 47%  76% / var(--folder-alpha));
 --folder-color6: hsl( 161 38%  58% / var(--folder-alpha));
 }`,
-    "theme-suzume-no-tojimari": `body.theme-dark, body.theme-light {
---theme-color: hsl(245, 75%, 63%);
---text-highlight-bg: hsl(214, 86%, 57%);
---text-title-h1: hsl(214 86% 57%);
---text-title-h2: hsl(220 67% 63%);
---text-title-h3: hsl(250 43% 71%);
---text-title-h4: hsl(309 39% 71%);
---text-title-h5: hsl(24  87% 71%);
---text-title-h6: hsl(46  96% 72%);
---folder-color1: hsl( 214 86% 57% / var(--folder-alpha));
---folder-color2: hsl( 220 67% 63% / var(--folder-alpha));
---folder-color3: hsl( 250 43% 71% / var(--folder-alpha));
---folder-color4: hsl( 309 39% 71% / var(--folder-alpha));
---folder-color5: hsl( 24  87% 71% / var(--folder-alpha));
---folder-color6: hsl( 46  96% 72% / var(--folder-alpha));
-}
-body.theme-dark, body.theme-light {
+    },
+    "theme-suzume-no-tojimari": {
+      dark: `body.theme-dark, body.theme-light {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg: hsl(214, 86%, 57%);
 --text-title-h1: hsl(214 86% 57%);
@@ -3195,7 +3196,25 @@ body.theme-dark, body.theme-light {
 --folder-color5: hsl( 24  87% 71% / var(--folder-alpha));
 --folder-color6: hsl( 46  96% 72% / var(--folder-alpha));
 }`,
-    "theme-jay": `body.theme-dark, body.theme-light {
+      light: `body.theme-dark, body.theme-light {
+--theme-color: hsl(245, 75%, 63%);
+--text-highlight-bg: hsl(214, 86%, 57%);
+--text-title-h1: hsl(214 86% 57%);
+--text-title-h2: hsl(220 67% 63%);
+--text-title-h3: hsl(250 43% 71%);
+--text-title-h4: hsl(309 39% 71%);
+--text-title-h5: hsl(24  87% 71%);
+--text-title-h6: hsl(46  96% 72%);
+--folder-color1: hsl( 214 86% 57% / var(--folder-alpha));
+--folder-color2: hsl( 220 67% 63% / var(--folder-alpha));
+--folder-color3: hsl( 250 43% 71% / var(--folder-alpha));
+--folder-color4: hsl( 309 39% 71% / var(--folder-alpha));
+--folder-color5: hsl( 24  87% 71% / var(--folder-alpha));
+--folder-color6: hsl( 46  96% 72% / var(--folder-alpha));
+}`,
+    },
+    "theme-jay": {
+      dark: `body.theme-dark, body.theme-light {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg: hsl(23, 54%, 45%);
 --text-title-h1: hsl(180 42% 40%);
@@ -3210,8 +3229,8 @@ body.theme-dark, body.theme-light {
 --folder-color4: hsl( 35  74% 65% / var(--folder-alpha));
 --folder-color5: hsl( 23  56% 49% / var(--folder-alpha));
 --folder-color6: hsl( 23  54% 45% / var(--folder-alpha));
-}
-body.theme-dark, body.theme-light {
+}`,
+      light: `body.theme-dark, body.theme-light {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg: hsl(23, 54%, 45%);
 --text-title-h1: hsl(180 42% 40%);
@@ -3232,7 +3251,9 @@ body.theme-light {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg:#6a83f58c;
 }`,
-    "theme-Nord-Aurora": `body.theme-dark, body.theme-light {
+    },
+    "theme-Nord-Aurora": {
+      dark: `body.theme-dark, body.theme-light {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg: hsla(210, 40%, 59%, 0.816);
 --text-title-h1: hsl(354 42% 56%);
@@ -3247,8 +3268,8 @@ body.theme-light {
 --folder-color4: hsl( 92  28% 65% / var(--folder-alpha));
 --folder-color5: hsl( 311 20% 63% / var(--folder-alpha));
 --folder-color6: hsl( 222 10% 75% / var(--folder-alpha));
-}
-body.theme-dark, body.theme-light {
+}`,
+      light: `body.theme-dark, body.theme-light {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg: hsla(210, 40%, 59%, 0.816);
 --text-title-h1: hsl(354 42% 56%);
@@ -3268,7 +3289,9 @@ body.theme-dark, body.theme-light {
 body.theme-light {
 --text-title-h6: #989ba1;
 }`,
-    "theme-rainbow": `body.theme-dark, body.theme-light {
+    },
+    "theme-rainbow": {
+      dark: `body.theme-dark, body.theme-light {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg: hsla(258, 100%, 51%, 0.781);
 --text-title-h1: hsl(0   100% 50%);
@@ -3284,8 +3307,8 @@ body.theme-light {
 --folder-color4: hsl( 120 100% 50% / var(--folder-alpha));
 --folder-color5: hsl( 170 100% 50% / var(--folder-alpha));
 --folder-color6: hsl( 200 100% 50% / var(--folder-alpha));
-}
-body.theme-dark, body.theme-light {
+}`,
+      light: `body.theme-dark, body.theme-light {
 --theme-color: hsl(245, 75%, 63%);
 --text-highlight-bg: hsla(258, 100%, 51%, 0.781);
 --text-title-h1: hsl(0   100% 50%);
@@ -3302,13 +3325,17 @@ body.theme-dark, body.theme-light {
 --folder-color5: hsl( 170 100% 50% / var(--folder-alpha));
 --folder-color6: hsl( 200 100% 50% / var(--folder-alpha));
 }`,
-    "theme-testing": `body.theme-dark, body.theme-light {
-
-}
-body.theme-dark, body.theme-light {
+    },
+    "theme-testing": {
+      dark: `body.theme-dark, body.theme-light {
 
 }`,
-    "secondary-theme-green-blue": `body.theme-dark, body.theme-light {
+      light: `body.theme-dark, body.theme-light {
+
+}`,
+    },
+    "secondary-theme-green-blue": {
+      dark: `body.theme-dark, body.theme-light {
 /* 超链颜色，包含元标签，如果不设置默认为主题色 */
 --text-accent: #51b385;
 --text-accent1: #61d29d;
@@ -3319,8 +3346,8 @@ body.theme-dark, body.theme-light {
 --tag-color-hover:#449bff ;
 /* 引用颜色 */
 --quote-color:  rgb(61, 154, 216);
-}
-body.theme-dark, body.theme-light {
+}`,
+      light: `body.theme-dark, body.theme-light {
 /* 超链颜色，包含元标签，如果不设置默认为主题色 */
 --text-accent: #51b385;
 --text-accent1: #61d29d;
@@ -3332,19 +3359,9 @@ body.theme-dark, body.theme-light {
 /* 引用颜色 */
 --quote-color:  rgb(61, 154, 216);
 }`,
-    "secondary-theme-Nord": `body.theme-dark, body.theme-light {
-/* 超链颜色，包含元标签，如果不设置默认为主题色 */
---text-accent: #81A1C1;
---text-accent1: #81A1C1;
---text-accent2: #88C0D0;
---text-accent-hover: #81A1C1;
-/* tag 颜色 */
---tag-color:#88C0D0;
---tag-color-hover:#88C0D0;
-/* 引用颜色 */
---quote-color:  #5E81AC;
-}
-body.theme-dark, body.theme-light {
+    },
+    "secondary-theme-Nord": {
+      dark: `body.theme-dark, body.theme-light {
 /* 超链颜色，包含元标签，如果不设置默认为主题色 */
 --text-accent: #81A1C1;
 --text-accent1: #81A1C1;
@@ -3356,13 +3373,29 @@ body.theme-dark, body.theme-light {
 /* 引用颜色 */
 --quote-color:  #5E81AC;
 }`,
-    "secondary-theme-testing": `body.theme-dark, body.theme-light {
-
-}
-body.theme-dark, body.theme-light {
+      light: `body.theme-dark, body.theme-light {
+/* 超链颜色，包含元标签，如果不设置默认为主题色 */
+--text-accent: #81A1C1;
+--text-accent1: #81A1C1;
+--text-accent2: #88C0D0;
+--text-accent-hover: #81A1C1;
+/* tag 颜色 */
+--tag-color:#88C0D0;
+--tag-color-hover:#88C0D0;
+/* 引用颜色 */
+--quote-color:  #5E81AC;
+}`,
+    },
+    "secondary-theme-testing": {
+      dark: `body.theme-dark, body.theme-light {
 
 }`,
-    "code-theme-jetbrains": `body.theme-dark {
+      light: `body.theme-dark, body.theme-light {
+
+}`,
+    },
+    "code-theme-jetbrains": {
+      dark: `body.theme-dark {
 --code-function: #BCBEC4;
 --code-punctuation: var(--text-muted);
 --code-keyword: #CF8E6D;
@@ -3370,8 +3403,8 @@ body.theme-dark, body.theme-light {
 --code-string: #72b67b;
 --code-tag: #c5bf6a;
 --code-value: #4a88cf;
-}
-body.theme-light {
+}`,
+      light: `body.theme-light {
 --code-function: #000000;
 --code-punctuation: var(--text-muted);
 --code-keyword: #0033b3;
@@ -3381,7 +3414,9 @@ body.theme-light {
 --code-value: #1750eb;
 --code-normal: #080808;
 }`,
-    "code-theme-BlueTopaz-default": `body.theme-dark {
+    },
+    "code-theme-BlueTopaz-default": {
+      dark: `body.theme-dark {
 --background-code: #1111118c;
 --code-variable: #db7c84;
 --code-normal: #ebdbb2;
@@ -3399,8 +3434,8 @@ body.theme-light {
 --code-active-line-background-color: #111111eb;
 --background-code-2: #4c4c4cb0;
 --text-color-code: #d58000;
-}
-body.theme-light {
+}`,
+      light: `body.theme-light {
 --code-keyword: #3bd4da;
 --code-tag: #c74df7;
 --code-function: #bf616a;
@@ -3413,41 +3448,9 @@ body.theme-light {
 --background-code-2: #cccccc62;
 --text-color-code: #e95d00;
 }`,
-    "code-theme-BlueTopaz-material-palenight": `body.theme-dark, body.theme-light {
-/* material: palenight theme */
---code-keyword: #c792ea;
---code-atom: #f78c6c;
---code-number: #ff5370;
---code-type: #decb6b;
---code-def: #82aaff;
---code-property: #c792ea;
---code-variable: #f07178;
---code-variable-2: #eeffff;
---code-variable-3: #f07178;
---code-definition: #82aaff;
---code-callee: #89ddff;
---code-qualifier: #decb6b;
---code-operator: #89ddff;
---code-hr: #98e342;
---code-link: #696d70;
---code-error-bg: #ff5370;
---code-header: #da7dae;
---code-builtin: #ffcb6b;
---code-meta: #ffcb6b;
---code-matching-bracket: #ffffff;
---code-tag: #ff5370;
---code-tag-in-comment: #ff5370;
---code-string-2: #f07178;
---code-bracket: #ff5370;
---code-comment: #676e95;
---code-string: #c3e88d;
---code-attribute: #c792ea;
---code-attribute-in-comment: #c792ea;
---background-code: #292d3eba;
---code-active-line-background-color: #353a50;
---code-normal: #d4d4d4;
-}
-body.theme-dark, body.theme-light {
+    },
+    "code-theme-BlueTopaz-material-palenight": {
+      dark: `body.theme-dark, body.theme-light {
 /* material: palenight theme */
 --code-keyword: #c792ea;
 --code-atom: #f78c6c;
@@ -3481,7 +3484,43 @@ body.theme-dark, body.theme-light {
 --code-active-line-background-color: #353a50;
 --code-normal: #d4d4d4;
 }`,
-    "code-theme-BlueTopaz-solarized": `body.theme-dark, body.theme-light {
+      light: `body.theme-dark, body.theme-light {
+/* material: palenight theme */
+--code-keyword: #c792ea;
+--code-atom: #f78c6c;
+--code-number: #ff5370;
+--code-type: #decb6b;
+--code-def: #82aaff;
+--code-property: #c792ea;
+--code-variable: #f07178;
+--code-variable-2: #eeffff;
+--code-variable-3: #f07178;
+--code-definition: #82aaff;
+--code-callee: #89ddff;
+--code-qualifier: #decb6b;
+--code-operator: #89ddff;
+--code-hr: #98e342;
+--code-link: #696d70;
+--code-error-bg: #ff5370;
+--code-header: #da7dae;
+--code-builtin: #ffcb6b;
+--code-meta: #ffcb6b;
+--code-matching-bracket: #ffffff;
+--code-tag: #ff5370;
+--code-tag-in-comment: #ff5370;
+--code-string-2: #f07178;
+--code-bracket: #ff5370;
+--code-comment: #676e95;
+--code-string: #c3e88d;
+--code-attribute: #c792ea;
+--code-attribute-in-comment: #c792ea;
+--background-code: #292d3eba;
+--code-active-line-background-color: #353a50;
+--code-normal: #d4d4d4;
+}`,
+    },
+    "code-theme-BlueTopaz-solarized": {
+      dark: `body.theme-dark, body.theme-light {
 /* solarized */
 --code-keyword: #cb4b16;
 --code-atom: #d33682;
@@ -3515,8 +3554,8 @@ body.theme-dark, body.theme-light {
 --background-code: #fdf6e3e1;
 --code-active-line-background-color: #fffcf4;
 --code-normal: #657b83;
-}
-body.theme-dark, body.theme-light {
+}`,
+      light: `body.theme-dark, body.theme-light {
 /* solarized */
 --code-keyword: #cb4b16;
 --code-atom: #d33682;
@@ -3551,26 +3590,9 @@ body.theme-dark, body.theme-light {
 --code-active-line-background-color: #fffcf4;
 --code-normal: #657b83;
 }`,
-    "code-theme-BlueTopaz-Gruvbox-dark": `body.theme-dark, body.theme-light {
---code-selection-color: #fbf1c7;
---code-selection-background: #7c6f6456;
---code-active-line-background-color: #533c3cee;
---background-code: #1d2021c6;
---code-variable: #a0c7e9;
---code-normal: #ebdbb2;
---code-comment: #a89984;
---code-function: #fabd2f;
---code-important: #fb4934;
---code-keyword: #fb4934;
---code-operator: #a89984;
---code-property: #fb4934;
---code-punctuation: #a89984;
---code-string: #b8bb26;
---code-tag: #fabd2f;
---code-value: #d3869b;
---code-meta: #568060;
-}
-body.theme-dark, body.theme-light {
+    },
+    "code-theme-BlueTopaz-Gruvbox-dark": {
+      dark: `body.theme-dark, body.theme-light {
 --code-selection-color: #fbf1c7;
 --code-selection-background: #7c6f6456;
 --code-active-line-background-color: #533c3cee;
@@ -3589,7 +3611,28 @@ body.theme-dark, body.theme-light {
 --code-value: #d3869b;
 --code-meta: #568060;
 }`,
-    "code-theme-BlueTopaz-dracula": `body.theme-dark {
+      light: `body.theme-dark, body.theme-light {
+--code-selection-color: #fbf1c7;
+--code-selection-background: #7c6f6456;
+--code-active-line-background-color: #533c3cee;
+--background-code: #1d2021c6;
+--code-variable: #a0c7e9;
+--code-normal: #ebdbb2;
+--code-comment: #a89984;
+--code-function: #fabd2f;
+--code-important: #fb4934;
+--code-keyword: #fb4934;
+--code-operator: #a89984;
+--code-property: #fb4934;
+--code-punctuation: #a89984;
+--code-string: #b8bb26;
+--code-tag: #fabd2f;
+--code-value: #d3869b;
+--code-meta: #568060;
+}`,
+    },
+    "code-theme-BlueTopaz-dracula": {
+      dark: `body.theme-dark {
 --background-code: #282a36c0;
 --code-normal: #f8f8f2;
 --code-comment: #6272a4;
@@ -3612,8 +3655,8 @@ body.theme-dark, body.theme-light {
 --code-type: #ffb86c;
 --code-active-line-background-color: #414458;
 --code-matchingbracket: #ffffff;
-}
-body.theme-light {
+}`,
+      light: `body.theme-light {
 --background-code: #e6e6e671;
 --code-normal: var(--tex-normal);
 --code-string: #d1945b;
@@ -3637,7 +3680,9 @@ body.theme-light {
 --code-type: #ffb86c;
 --code-matchingbracket: #ffffff;
 }`,
-    "code-theme-BlueTopaz-monokai": `body.theme-dark {
+    },
+    "code-theme-BlueTopaz-monokai": {
+      dark: `body.theme-dark {
 --background-code: #272822d9;
 --code-normal: #F8F8F2;
 --code-keyword:#F92772;
@@ -3645,8 +3690,8 @@ body.theme-light {
 --code-string-2:#E6DB74;
 --code-comment: #75715E;
 --code-active-line-background-color: #17013f9f;
-}
-body.theme-light {
+}`,
+      light: `body.theme-light {
 --background-code: #F8F8F2;
 --code-normal: #272822d9;
 --code-keyword:#F92772;
@@ -3655,17 +3700,9 @@ body.theme-light {
 --code-comment: #aca47a;
 --code-active-line-background-color: #17013f9f;
 }`,
-    "code-theme-BlueTopaz-sublime": `body.theme-dark, body.theme-light {
---code-operator: #9a6e3a;
---code-variable: #5180de;
---code-keyword: #EA5E66;
---code-string: #40bf31;
---code-function: #F9AE58;
---code-string-2: #F9AE58;
---code-type: #F9AE58;
---code-def: #F9AE58;
-}
-body.theme-dark, body.theme-light {
+    },
+    "code-theme-BlueTopaz-sublime": {
+      dark: `body.theme-dark, body.theme-light {
 --code-operator: #9a6e3a;
 --code-variable: #5180de;
 --code-keyword: #EA5E66;
@@ -3675,13 +3712,27 @@ body.theme-dark, body.theme-light {
 --code-type: #F9AE58;
 --code-def: #F9AE58;
 }`,
-    "code-theme-testing": `body.theme-dark, body.theme-light {
-
-}
-body.theme-dark, body.theme-light {
+      light: `body.theme-dark, body.theme-light {
+--code-operator: #9a6e3a;
+--code-variable: #5180de;
+--code-keyword: #EA5E66;
+--code-string: #40bf31;
+--code-function: #F9AE58;
+--code-string-2: #F9AE58;
+--code-type: #F9AE58;
+--code-def: #F9AE58;
+}`,
+    },
+    "code-theme-testing": {
+      dark: `body.theme-dark, body.theme-light {
 
 }`,
-    "left-highlight": `body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item > .tree-item-self:not(.mod-collapsible).is-active) .tree-item-inner, body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item.is-collapsed > .tree-item-self.mod-collapsible.is-active) .tree-item-inner {
+      light: `body.theme-dark, body.theme-light {
+
+}`,
+    },
+    "left-highlight": {
+      general: `body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item > .tree-item-self:not(.mod-collapsible).is-active) .tree-item-inner, body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item.is-collapsed > .tree-item-self.mod-collapsible.is-active) .tree-item-inner {
 color: var(--theme-color);
 }
 
@@ -3705,7 +3756,9 @@ color: var(--theme-color);
 body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self.is-active::before {
 color: var(--theme-color);
 }`,
-    "left-roll": `body.left-roll .nav-files-container {
+    },
+    "left-roll": {
+      general: `body.left-roll .nav-files-container {
 display: flex;
 overflow-x: auto;
 white-space: nowrap;
@@ -3714,5 +3767,6 @@ white-space: nowrap;
 body.left-roll .nav-files-container > * {
 min-width: var(--left-roll-min-width);
 }`,
+    },
   },
 };

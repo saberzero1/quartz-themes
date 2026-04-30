@@ -1589,18 +1589,25 @@ html body ul.tags > li {
 }`,
   },
   classSettings: {
-    "fusion-black": `:root body.fusion-black {
+    "fusion-black": {
+      general: `:root body.fusion-black {
 --accent-s: 60%;
 --accent-l: 60%;
 --color-base-00: rgb(var(--mono-rgb-0));
 }`,
-    "high-contrast-text": `:root:root body.high-contrast-text {
+    },
+    "high-contrast-text": {
+      general: `:root:root body.high-contrast-text {
 --color-base-100: rgb(var(--mono-rgb-100));
 }`,
-    "no-note-padding": `body.no-note-padding :is(.cm-content, .markdown-preview-sizer) {
+    },
+    "no-note-padding": {
+      general: `body.no-note-padding :is(.cm-content, .markdown-preview-sizer) {
 padding-bottom: 0 !important;
 }`,
-    "show-view-header-title": `body.show-view-header-title .view-header-title-container:not(:hover) > *:not(:focus) {
+    },
+    "show-view-header-title": {
+      general: `body.show-view-header-title .view-header-title-container:not(:hover) > *:not(:focus) {
 opacity: 0 !important;
 }
 
@@ -1610,5 +1617,6 @@ opacity: .8;
 box-shadow: 0 2px 4px #0004;
 transition: opacity 0.15s ease-in-out;
 }`,
+    },
   },
 };

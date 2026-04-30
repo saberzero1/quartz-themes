@@ -1627,8 +1627,10 @@ html body sup {
   },
   light: {},
   classSettings: {
-    "pure-amoled-background": `.pure-amoled-background .theme-dark {
+    "pure-amoled-background": {
+      dark: `.pure-amoled-background .theme-dark {
 background-color: #000000 !important;
 }`,
+    },
   },
 };

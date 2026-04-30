@@ -251,6 +251,7 @@ settings:
  */
 
 body {
+	/* Shared spacing and typography tokens */
 	--list-indent: 1.5em;
 	--tx1: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 75%));
 	--tx2: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 50%));
@@ -269,6 +270,8 @@ body {
 	--list-bullet-end-padding: 1.4rem;
 	--file-line-width: calc(var(--editor-width) * 1px);
 	--nav-item-children-padding-start: 1px;
+
+	/* Theme setting defaults */
 	--window-font-size: 15;
 	--mac-window-opacity: 0;
 	--win-bg-image-url: url('');
@@ -278,6 +281,20 @@ body {
 	--text-line-height: 36px;
 	--window-brightness: 0.96;
 	--editor-brightness: 1;
+	--editor-list-guide-offset: 5px;
+	--editor-list-guide-content-offset: 13px;
+	--editor-list-ol-width: 40px;
+	--editor-list-ol-font-size: 20px;
+	--editor-list-ol-padding-right: 8.4px;
+	--editor-list-formatting-margin-right: -7.5px;
+	--editor-list-ol-margin-left: -10px;
+	--editor-list-ul-width: 26px;
+	--editor-list-ul-font-size: 14px;
+	--editor-list-ul-margin-left: -10.5px;
+	--editor-list-ul-margin-right: 8px;
+	--editor-list-ul-translate-y: -3px;
+	--editor-task-label-margin-left: -9.5px;
+	--editor-task-label-nested-margin-left: -12px;
 	--bases-table-header-background: var(--table-header-background);
 	--bases-table-row-height: 40px;
 	--italic-color: var(--text-accent);
@@ -286,13 +303,11 @@ body {
 
 .theme-dark {
 	--base-d: 0%;
-	/* 顶部导航栏背景色 */
+
+	/* Core surfaces */
 	--titlebar-background: rgb(42, 42, 42);
-	/* 中间编辑器的背景色 */
 	--background-secondary: rgb(42, 42, 42);
-	--background-secondary-alt: rgb(42, 42, 42);
-	/* --ribbon-background: rgba(36, 36, 36, 1); */
-	--background-modifier-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 10%));
+	--background-secondary-alt: rgba(18, 18, 18, 0.1);
 	--nav-item-background-active: rgba(245, 245, 245, 0.1);
 	--nav-item-color-active: var(--text-accent);
 	--nav-indentation-guide-color: rgba(245, 245, 245, 0.1);
@@ -321,7 +336,6 @@ body {
 	--win-window-brightness: 0.9;
 	--win-editor-bg-color: #121212a6;
 	--win-window-opacity: 0.2;
-	--background-secondary-alt: rgba(18, 18, 18, 0.1);
 	--background-setting-item: #242424;
 	--background-setting: rgba(18, 18, 18);
 	--text-highlight-bg: var(--blockquote-border-color);
@@ -331,16 +345,15 @@ body {
 	--divider-color: rgba(255, 255, 255, 0.01);
 	--shadow-color: rgba(245, 245, 245, 0.08);
 	--side-split-bg-color: rgba(28, 28, 28, 0.3);
-
 }
 
 .theme-light {
 	--base-d: 0%;
+
+	/* Core surfaces */
 	--titlebar-background: rgb(248, 248, 248);
 	--background-secondary: rgb(249, 249, 249);
-	--background-secondary-alt: rgb(230, 230, 230);
-	/* --ribbon-background: rgb(245, 245, 245); */
-	--background-modifier-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 10%));
+	--background-secondary-alt: rgba(240, 240, 240, 0.1);
 	--nav-item-background-active: rgba(0, 0, 0, 0.1);
 	--nav-item-color-active: var(--text-accent);
 	--background-modifier-hover: rgba(28, 28, 28, 0.1);
@@ -368,7 +381,6 @@ body {
 	--win-window-brightness: 0.9;
 	--win-editor-bg-color: #f0f0f0a6;
 	--win-window-opacity: 0.15;
-	--background-secondary-alt: rgba(240, 240, 240, 0.1);
 	--background-setting-item: rgba(255, 255, 255, 0.6);
 	--background-setting: rgba(255, 255, 255);
 	--text-highlight-bg: var(--blockquote-border-color);
@@ -383,17 +395,29 @@ body:not(.mod-macos).theme-dark {
 	--indentation-guide-color: rgba(245, 245, 245, 0.1);
 	--nav-indentation-guide-color: rgba(245, 245, 245, 0.1);
 	--list-marker-color: rgba(245, 245, 245, 0.25);
-	/* --nav-collapse-icon-color: rgba(241, 12, 12, 0.5); */
 }
 
 .is-mobile {
 	--window-font-size: calc(var(--window-font-size) * 0.9);
 	--input-radius: 20px;
-	/* --safe-area-inset-bottom: env(safe-area-inset-bottom); */
 	--mobile-sidebar-radius: 34px;
 	--mobile-sidebar-max-width: 90%;
 	--setting-items-radius: 20px;
 	--input-height: 40px;
+	--editor-list-guide-offset: 4px;
+	--editor-list-guide-content-offset: 10px;
+	--editor-list-ol-width: 34px;
+	--editor-list-ol-font-size: 17px;
+	--editor-list-ol-padding-right: 6px;
+	--editor-list-formatting-margin-right: -5px;
+	--editor-list-ol-margin-left: -10.5px;
+	--editor-list-ul-width: 22px;
+	--editor-list-ul-font-size: 12px;
+	--editor-list-ul-margin-left: -9.5px;
+	--editor-list-ul-margin-right: 6px;
+	--editor-list-ul-translate-y: -2px;
+	--editor-task-label-margin-left: -7px;
+	--editor-task-label-nested-margin-left: -9px;
 }
 
 .is-tablet {
@@ -401,20 +425,36 @@ body:not(.mod-macos).theme-dark {
 	--mobile-sidebar-min-width: 260px;
 	--mobile-sidebar-max-width: 480px;
 	--ribbon-width: 48px;
+	--editor-list-guide-offset: 4px;
+	--editor-list-guide-content-offset: 11px;
+	--editor-list-ol-width: 36px;
+	--editor-list-ol-font-size: 18px;
+	--editor-list-ol-padding-right: 7px;
+	--editor-list-formatting-margin-right: -6px;
+	--editor-list-ol-margin-left: -7px;
+	--editor-list-ul-width: 24px;
+	--editor-list-ul-font-size: 13px;
+	--editor-list-ul-margin-left: -10px;
+	--editor-list-ul-margin-right: 6px;
+	--editor-list-ul-translate-y: -2px;
+	--editor-task-label-margin-left: -8px;
+	--editor-task-label-nested-margin-left: -10px;
 }
 
-.is-mobile.theme-light {
+body.is-mobile.theme-light {
 	--card-border-color: rgba(28, 28, 28, 0.05);
 	--editor-bg-color: rgb(250, 250, 250);
+	--indentation-guide-color: rgba(18, 18, 18, 0.2);
+
 }
 
-.is-mobile.theme-light .menu {
+body.is-mobile.theme-light .menu {
 	--interactive-normal: rgba(255, 255, 255, 0.5);
 }
 
-.is-mobile.theme-dark {
+body.is-mobile.theme-dark {
 	--interactive-normal: rgba(68, 68, 68, 0.6);
-	--indentation-guide-color: rgba(245, 245, 245, 0.1);
+	--indentation-guide-color: rgba(250, 250, 250, 0.25);
 	--card-border-color: rgba(80, 80, 80, 0.1);
 	--editor-bg-color: rgb(28, 28, 28);
 }
@@ -427,11 +467,11 @@ body:not(.mod-macos).theme-dark {
 	--icon-size: 22px;
 }
 
-body:not(.is-mobile) .theme-dark {
+body:not(.is-mobile).theme-dark {
 	--background-primary: rgb(28, 28, 28);
 }
 
-body:not(.is-mobile) .theme-light {
+body:not(.is-mobile).theme-light {
 	--background-primary: rgb(248, 248, 248);
 }
 
@@ -441,12 +481,11 @@ body:not(.is-mobile) .theme-light {
 	background-color: rgb(from var(--workspace-background-translucent) r g b / calc(var(--mac-window-opacity))) !important;
 }
 
-/* 当有弹窗弹出时，模糊背景 */
-body:has(.modal-container):not(.is-phone) .app-container {
+/* 当弹窗实际进入 dim 状态时，再模糊背景，避免常驻容器误触发 */
+body:has(.modal-container.mod-dim):not(.is-phone) .app-container {
 	filter: blur(3px) saturate(1.5);
 }
 
-/* body:not(.is-mobile) .workspace-tab-container, */
 body:not(.is-phone) .modal-container.mod-dim .modal,
 body:not(.is-phone) .status-bar {
 	border-radius: var(--radius-xl);
@@ -474,13 +513,10 @@ body:not(.is-phone) .status-bar {
 	background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgb(from var(--text-accent) r g b / 0.1));
 	backdrop-filter: blur(15px) saturate(180%);
 	-webkit-backdrop-filter: blur(15px) saturate(180%);
-	/* border: 1px solid rgba(255, 255, 255, 0.1); */
 	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
 }
 
 body:not(.is-mobile) .workspace-tab-header-container {
-	/* border: none; */
-	/* border-top: none !important; */
 	align-items: center;
 	display: flex;
 	justify-content: center;
@@ -513,12 +549,9 @@ body:not(.is-mobile) hr.workspace-leaf-resize-handle {
 * --------------------------------调整全局样式------------------------------------
 */
 
+/* Window brightness affects the full shell; editor brightness is scoped below. */
 body {
 	filter: brightness(var(--window-brightness));
-}
-
-.app-container {
-	/* background-color: var(--background-primary); */
 }
 
 .workspace-split.mod-root {
@@ -548,10 +581,6 @@ button:not(.clickable-icon) {
 	padding: 5px 8px;
 }
 
-button.mod-cta {
-	--text-color: var(--text-color);
-}
-
 .is-phone .setting-item-control select {
 	background-color: var(--background-modifier-border);
 	box-shadow: 0px 0px 2px var(--background-secondary);
@@ -566,6 +595,29 @@ button.mod-cta {
 	background: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(15px) saturate(180%);
 	-webkit-backdrop-filter: blur(15px) saturate(180%);
+
+	/* Webkit浏览器的滚动条自定义 */
+	&::-webkit-scrollbar {
+		height: 4px;
+		/* 设置滚动条的高度 */
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: transparent;
+		/* 设置滚动条轨道的颜色 */
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--scrollbar-thumb-color);
+		/* 设置滚动条滑块的颜色 */
+		border-radius: 6px;
+		/* 设置滚动条滑块的圆角 */
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background-color: var(--scrollbar-thumb-color);
+		/* 设置鼠标悬停时滚动条滑块的颜色 */
+	}
 }
 
 .mod-root .mod-top .workspace-tab-header-container {
@@ -627,32 +679,6 @@ body:not(.is-grabbing):not(.is-fullscreen).is-hidden-frameless .mod-top .workspa
 	border: none;
 }
 
-.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container {
-
-	/* Webkit浏览器的滚动条自定义 */
-	&::-webkit-scrollbar {
-		height: 4px;
-		/* 设置滚动条的高度 */
-	}
-
-	&::-webkit-scrollbar-track {
-		background-color: transparent;
-		/* 设置滚动条轨道的颜色 */
-	}
-
-	&::-webkit-scrollbar-thumb {
-		background-color: var(--scrollbar-thumb-color);
-		/* 设置滚动条滑块的颜色 */
-		border-radius: 6px;
-		/* 设置滚动条滑块的圆角 */
-	}
-
-	&::-webkit-scrollbar-thumb:hover {
-		background-color: var(--scrollbar-thumb-color);
-		/* 设置鼠标悬停时滚动条滑块的颜色 */
-	}
-}
-
 /* 侧边栏按钮区样式 */
 .side-dock-settings .side-dock-ribbon-action,
 .side-dock-actions .side-dock-ribbon-action {
@@ -678,6 +704,11 @@ body:not(.is-grabbing):not(.is-fullscreen).is-hidden-frameless .mod-top .workspa
 body.is-mobile .nav-file-title {
 	padding-top: 3px;
 	padding-bottom: 3px;
+}
+
+body.is-tablet .nav-file-title {
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 /* 调整目录字体 
@@ -734,7 +765,6 @@ body.is-mobile .nav-file-title {
 	content: "•";
 	padding-right: 5px;
 	color: var(--nav-collapse-icon-color);
-	/* margin-left: -0.5px; */
 	font-family: 'number-font' !important;
 	font-size: 10px;
 }
@@ -759,7 +789,7 @@ body.is-mobile .nav-file-title {
 
 
 .tree-item-inner.nav-folder-title-content {
-	margin-left: -2px;
+	margin-left: -4px;
 }
 
 .is-mobile .tree-item-inner.nav-folder-title-content {
@@ -803,9 +833,9 @@ body.is-mobile .nav-file-title {
 
 
 /* 目录折叠按钮填充为实体按钮 */
+.nn-navitem-chevron svg.svg-icon,
 .collapse-icon svg.svg-icon {
-	width: 12px;
-	height: 14px;
+	/* Keep plugin-provided icon sizing intact. */
 	stroke: var(--nav-collapse-icon-color);
 	fill: var(--nav-collapse-icon-color);
 	stroke-width: 1px;
@@ -841,30 +871,10 @@ body.is-mobile .nav-file-title {
 	display: none;
 }
 
-/* 隐藏预览按钮 */
-.view-actions button:nth-child(2) {
-	/* display: none; */
-}
-
-/* 暗色主题时的字体颜色 */
-.theme-dark .workspace-tabs .workspace-leaf .view-content {
+/* Use theme variables instead of duplicating light/dark text rules. */
+.workspace-tabs .workspace-leaf .view-content,
+.markdown-preview-view {
 	color: var(--text-color);
-}
-
-.theme-dark .markdown-preview-view {
-	color: var(--text-color);
-	/* padding-bottom: 10px !important; */
-}
-
-/* 亮色主题时的字体颜色 */
-.theme-light .workspace-tabs .workspace-leaf .view-content {
-	color: var(--text-color);
-	color: var(--text-color);
-}
-
-.theme-light .markdown-preview-view {
-	color: var(--text-color);
-	/* padding-bottom: 10px !important; */
 }
 
 .cm-s-obsidian,
@@ -898,7 +908,6 @@ span.is-flashing,
 .markdown-rendered mark,
 .cm-s-obsidian span.cm-highlight {
 	padding: 3px 6px;
-	border-radius: 13px;
 	color: var(--text-normal);
 	background-color: rgb(from var(--text-accent) r g b / 0.4) !important;
 }
@@ -924,7 +933,6 @@ body:not(.heading-bottom-line-off) .inline-title:not(:empty):not(:has(h1)):not(:
 /* 分割线样式 */
 hr {
 	border-width: 0.8px !important;
-	/* border-color: var(--indentation-guide-color); */
 }
 
 .cm-line hr {
@@ -934,10 +942,8 @@ hr {
 
 /* 调整内部嵌入块的对齐 */
 .markdown-source-view.mod-cm6 .internal-embed:not(.image-embed),
-/* .markdown-source-view.mod-cm6 .cm-content>[contenteditable=false], */
 .markdown-preview-view .markdown-embed:not(.image-embed) {
 	margin-left: 3px !important;
-	/* padding-left: 14px; */
 	border-left: solid 0.5px var(--blockquote-border-color);
 }
 
@@ -945,10 +951,6 @@ hr {
 	border-bottom: solid 0.5px var(--blockquote-border-color);
 	color: var(--text-accent);
 	font-weight: bold;
-}
-
-.markdown-source-view.mod-cm6 .internal-embed {
-	/* border-left: solid 0.5px var(--blockquote-border-color); */
 }
 
 /* 
@@ -1213,22 +1215,22 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 
 /* 调整源码模式下，列表缩进线的对齐 */
 .markdown-source-view.mod-cm6 .cm-indent::before {
-	margin-inline-start: 5px !important;
+	margin-inline-start: var(--editor-list-guide-offset) !important;
 }
 
 .markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-list-line):not(.HyperMD-header):not(:has(.cm-hashtag.cm-meta)):not(:has(.image-embed)) .cm-indent::before {
-	margin-inline-start: 13px !important;
+	margin-inline-start: var(--editor-list-guide-content-offset) !important;
 }
 
-/* 调整有序列表的缩进线 */
+/* 用统一的 marker 尺寸控制数字、缩进线和正文的相对位置。 */
 span.cm-formatting.cm-formatting-list.cm-formatting-list-ol {
 	padding: 0;
 	display: inline-block;
-	width: 40px;
+	width: var(--editor-list-ol-width);
 	text-align: right;
-	font-size: 20px;
+	font-size: var(--editor-list-ol-font-size);
 	font-family: 'number-font' !important;
-	padding-right: 8.4px;
+	padding-right: var(--editor-list-ol-padding-right);
 }
 
 .list-number {
@@ -1256,22 +1258,22 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol {
 
 /* 有序列表后面的文字左移 */
 .cm-s-obsidian .cm-formatting-list {
-	margin-right: -7.5px;
+	margin-right: var(--editor-list-formatting-margin-right);
 }
 
 .markdown-source-view.mod-cm6 .cm-formatting-list-ol {
-	margin-left: -10px;
+	margin-left: var(--editor-list-ol-margin-left);
 }
 
 .markdown-source-view.mod-cm6 .cm-formatting-list-ul {
-	margin-left: -10.5px;
-	margin-right: 8px;
-	font-size: 14px;
+	margin-left: var(--editor-list-ul-margin-left);
+	margin-right: var(--editor-list-ul-margin-right);
+	font-size: var(--editor-list-ul-font-size);
 	display: inline-block;
-	width: 26px;
+	width: var(--editor-list-ul-width);
 	text-align: center;
 	font-family: 'number-font' !important;
-	transform: translateY(-3px);
+	transform: translateY(var(--editor-list-ul-translate-y));
 }
 
 .markdown-source-view.mod-cm6 .table-cell-wrapper .cm-formatting-list-ul {
@@ -1280,11 +1282,11 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol {
 }
 
 .markdown-source-view.mod-cm6 .task-list-label {
-	margin-left: -9.5px;
+	margin-left: var(--editor-task-label-margin-left);
 }
 
 .HyperMD-list-line.HyperMD-list-line-2.HyperMD-task-line.cm-line .task-list-label {
-	margin-left: -12px;
+	margin-left: var(--editor-task-label-nested-margin-left);
 }
 
 u {
@@ -1365,6 +1367,11 @@ ul>li::marker {
 .mod-windows .markdown-rendered.show-indentation-guide ol::before {
 	margin-left: 12px;
 }
+
+.is-tablet .markdown-rendered.show-indentation-guide ol::before {
+	margin-left: 4px;
+}
+
 
 .markdown-rendered.show-indentation-guide ul::before {
 	margin-left: 5px;
@@ -1879,10 +1886,6 @@ body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide) .mod-sidedock .wor
 	background-color: transparent !important;
 }
 
-.is-translucent.theme-light .search-result-file-matches {
-	background-color: transparent !important;
-}
-
 .is-translucent.theme-light .search-result-file-match-destination-file {
 	background-color: #ffffff7b;
 }
@@ -1901,8 +1904,7 @@ body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide) .mod-sidedock .wor
 }
 
 /* 适配半透明背景 */
-/* .is-focused .workspace-leaf.mod-active .view-header, */
-:not(.is-mobile) .is-translucent .view-header {
+body:not(.is-mobile).is-translucent .view-header {
 	background-color: var(--editor-bg-color) !important;
 }
 
@@ -1963,7 +1965,6 @@ body:not(.is-mobile) .suggestion-container.mod-search-suggestion,
 body:not(.is-mobile) .modal.float-search-modal,
 body:not(.is-mobile) .modal-container.mod-dim .prompt {
 	backdrop-filter: blur(12px);
-	/* background-color: rgba(255, 255, 255, 0.15); */
 	border: 1px solid rgba(255, 255, 255, 0.25);
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.6);
 }
@@ -2028,8 +2029,7 @@ body:not(.is-mobile) .prompt-input-container {
 
 #editingToolbarModalBar.editingToolbarDefaultAesthetic,
 #editingToolbarModalBar.editingToolbarDefaultAesthetic~#editingToolbarPopoverBar {
-	backdrop-filter: blur(10px);
-	background-color: #171717de;
+	backdrop-filter: blur(15px);
 }
 
 :is(#editingToolbarModalBar, #editingToolbarPopoverBar) button[class^=editingToolbarCommandsubItem]>.subitem button.menu-item {
@@ -2060,19 +2060,16 @@ body:not(.is-mobile) .prompt-input-container {
 
 #editingToolbarModalBar.editingToolbarDefaultAesthetic {
 	border-radius: 20px;
-	backdrop-filter: blur(15px);
 	background-color: var(--app-model-bg-color);
-	/* box-shadow: var(--input-shadow); */
+}
+
+#editingToolbarModalBar.editingToolbarDefaultAesthetic~#editingToolbarPopoverBar {
+	background-color: #171717de;
 }
 
 #editingToolbarModalBar .editingToolbarCommandItem {
 	backdrop-filter: unset;
 	padding: 7px;
-}
-
-#editingToolbarModalBar.editingToolbarDefaultAesthetic,
-#editingToolbarModalBar.editingToolbarDefaultAesthetic~#editingToolbarPopoverBar {
-	backdrop-filter: blur(15px);
 }
 
 :is(#editingToolbarModalBar, #editingToolbarPopoverBar) button.editingToolbar-Divider-Line {
@@ -2462,9 +2459,9 @@ body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-sp
 	flex-direction: column;
 	gap: 15px;
 	z-index: 999;
-	transform: translate(-44px, -10px);
+	/* transform: translate(0, -10px); */
 	position: absolute;
-	left: -1px;
+	left: calc(var(--ribbon-width) * -1);
 	bottom: 0;
 }
 
@@ -2497,10 +2494,11 @@ body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-sp
 }
 
 body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon {
-	/* gap: 15px; */
 	border-radius: var(--radius-l);
 	padding: 7px;
 }
+
+
 
 
 /* comander 优化 */
@@ -2748,7 +2746,8 @@ main.git-view .tree-item-inner.nav-file-title-content {
 }
 
 .is-tablet .workspace .workspace-drawer .side-dock-settings {
-	display: none;
+	/* display: none; */
+	/* background-color: red; */
 }
 
 .is-tablet .workspace-drawer-ribbon .side-dock-actions {
@@ -2762,7 +2761,7 @@ main.git-view .tree-item-inner.nav-file-title-content {
 }
 
 .is-tablet .workspace-drawer.mod-left .workspace-drawer-inner .workspace-drawer-tab-container {
-	border-left: solid 1px var(--indentation-guide-color);
+	/* border-left: solid 1px var(--indentation-guide-color); */
 	/* box-shadow: 1px 0px 1px var(--card-border-color); */
 }
 
@@ -2804,24 +2803,11 @@ main.git-view .tree-item-inner.nav-file-title-content {
 	--icon-size: var(--icon-s);
 }
 
-.is-tablet .markdown-source-view.mod-cm6 .cm-indent::before {
-	margin-inline-start: 4px !important;
-}
-
 .is-tablet .list-bullet {
 	font-size: 10px;
 	margin-left: 0px;
 	/* padding-right: 1px; */
 	transform: translateY(-2px);
-}
-
-.is-tablet .markdown-source-view.mod-cm6 .cm-formatting-list-ul {
-	margin-right: 6px;
-}
-
-.is-tablet span.cm-formatting.cm-formatting-list.cm-formatting-list-ol {
-	font-size: 18px;
-	padding-right: 13px;
 }
 
 .is-tablet .workspace-drawer-header {
@@ -2847,8 +2833,9 @@ main.git-view .tree-item-inner.nav-file-title-content {
 }
 
 .is-tablet .clickable-icon.workspace-drawer-header-icon.mod-settings {
+	width: var(--ribbon-width) !important;
 	position: fixed;
-	left: -7px;
+	left: 0px;
 	bottom: 25px;
 	padding: 0;
 	background: transparent !important;
@@ -2936,4 +2923,61 @@ main.git-view .tree-item-inner.nav-file-title-content {
 	margin-top: 1px;
 }
 
-.bases-tbody {}
+/* Notebook Navigator plugin */
+.notebook-navigator .nn-split-container {
+	--nn-theme-list-bg: transparent !important;
+	--nn-theme-nav-bg: transparent !important;
+	--nn-theme-navitem-border-radius: 20px !important;
+}
+
+.view-content.notebook-navigator {
+	background-color: transparent;
+}
+
+.nn-list-pane {
+	filter: brightness(1.2);
+}
+
+.nn-file-content {
+	padding-left: 0;
+}
+
+.nn-virtual-file-item:not(.nn-last-file)::after {
+	margin-left: -12px;
+}
+
+.nn-date-group-header {
+	font-size: var(--nn-file-normal-size);
+}
+
+/* Daily Note Calendar plugin */
+.workspace-leaf-content[data-type="daily-note-calendar"] .dnc th,
+.workspace-leaf-content[data-type="daily-note-calendar"] .dnc td {
+	font-size: 0.8em;
+}
+
+.workspace-leaf-content[data-type="daily-note-calendar"] .dnc .selected-day.has-note:after {
+	border-bottom: 5px solid var(--text-accent);
+}
+
+.workspace-leaf-content[data-type="daily-note-calendar"] .dnc .has-note:after {
+	border-bottom: 5px solid var(--text-faint);
+}
+
+.workspace-leaf-content[data-type="daily-note-calendar"] .dnc ul li {
+	display: flex;
+	line-height: 10px;
+}
+
+.workspace-leaf-content[data-type="daily-note-calendar"] .dnc ul li .note-title {
+	flex: 1;
+}
+
+.workspace-leaf-content[data-type="daily-note-calendar"] .dnc ul li .note-date {
+	display: none;
+}
+
+.workspace-leaf-content[data-type="daily-note-calendar"] .dnc .has-note:after {
+	width: 5px;
+	border-radius: 5px;
+}

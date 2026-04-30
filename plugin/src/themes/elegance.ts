@@ -5407,11 +5407,15 @@ html[saved-theme="light"] body ul.tags > li {
 }
 `,
   classSettings: {
-    "embed-show-shadow": `body.embed-show-shadow .markdown-embed:hover {
+    "embed-show-shadow": {
+      general: `body.embed-show-shadow .markdown-embed:hover {
 box-shadow: 0 10px 15px rgba(0,0,0,.25), 0 5px 5px rgba(0,0,0,.22) !important;
 }`,
-    "embed-smooth-scroll": `body.embed-smooth-scroll .internal-embed {
+    },
+    "embed-smooth-scroll": {
+      general: `body.embed-smooth-scroll .internal-embed {
 scroll-behavior: smooth;
 }`,
+    },
   },
 };

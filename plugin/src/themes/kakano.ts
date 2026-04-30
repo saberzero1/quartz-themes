@@ -14481,57 +14481,76 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "theme-setting-baseColorPreset-accent": `body.css-settings-manager.theme-setting-baseColorPreset-accent {
+    "theme-setting-baseColorPreset-accent": {
+      general: `body.css-settings-manager.theme-setting-baseColorPreset-accent {
 --base-h: var(--accent-h);
 --base-s: var(--accent-s);
 --base-l: var(--accent-l);
 }`,
-    "theme-setting-baseColorPreset-whero": `body.css-settings-manager.theme-setting-baseColorPreset-whero {
+    },
+    "theme-setting-baseColorPreset-whero": {
+      general: `body.css-settings-manager.theme-setting-baseColorPreset-whero {
 --base-h: 0;
 --base-s: 65%;
 --base-l: 50%;
 }`,
-    "theme-setting-baseColorPreset-karaka": `body.css-settings-manager.theme-setting-baseColorPreset-karaka {
+    },
+    "theme-setting-baseColorPreset-karaka": {
+      general: `body.css-settings-manager.theme-setting-baseColorPreset-karaka {
 --base-h: 30;
 --base-s: 80%;
 --base-l: 50%;
 }`,
-    "theme-setting-baseColorPreset-koowhai": `body.css-settings-manager.theme-setting-baseColorPreset-koowhai {
+    },
+    "theme-setting-baseColorPreset-koowhai": {
+      general: `body.css-settings-manager.theme-setting-baseColorPreset-koowhai {
 --base-h: 52;
 --base-s: 70%;
 --base-l: 45%;
 }`,
-    "theme-setting-baseColorPreset-kaakaariki": `body.css-settings-manager.theme-setting-baseColorPreset-kaakaariki {
+    },
+    "theme-setting-baseColorPreset-kaakaariki": {
+      general: `body.css-settings-manager.theme-setting-baseColorPreset-kaakaariki {
 --base-h: 90;
 --base-s: 65%;
 --base-l: 39%;
 }`,
-    "theme-setting-baseColorPreset-kaarikioorangi": `body.css-settings-manager.theme-setting-baseColorPreset-kaarikioorangi {
+    },
+    "theme-setting-baseColorPreset-kaarikioorangi": {
+      general: `body.css-settings-manager.theme-setting-baseColorPreset-kaarikioorangi {
 --base-h: 175;
 --base-s: 57%;
 --base-l: 40%;
 }`,
-    "theme-setting-baseColorPreset-kahurangi": `body.css-settings-manager.theme-setting-baseColorPreset-kahurangi {
+    },
+    "theme-setting-baseColorPreset-kahurangi": {
+      general: `body.css-settings-manager.theme-setting-baseColorPreset-kahurangi {
 --base-h: 215;
 --base-s: 67%;
 --base-l: 45%;
 }`,
-    "theme-setting-baseColorPreset-waiporoporo": `body.css-settings-manager.theme-setting-baseColorPreset-waiporoporo {
+    },
+    "theme-setting-baseColorPreset-waiporoporo": {
+      general: `body.css-settings-manager.theme-setting-baseColorPreset-waiporoporo {
 --base-h: 275;
 --base-s: 50%;
 --base-l: 40%;
 }`,
-    "theme-setting-baseColorPreset-maawhero": `body.css-settings-manager.theme-setting-baseColorPreset-maawhero {
+    },
+    "theme-setting-baseColorPreset-maawhero": {
+      general: `body.css-settings-manager.theme-setting-baseColorPreset-maawhero {
 --base-h: 335;
 --base-s: 60%;
 --base-l: 60%;
 }`,
-    "theme-setting-baseColorPreset-mangu": `body.css-settings-manager.theme-setting-baseColorPreset-mangu {
+    },
+    "theme-setting-baseColorPreset-mangu": {
+      general: `body.css-settings-manager.theme-setting-baseColorPreset-mangu {
 --base-h: 240;
 --base-s: 5%;
 --base-l: 20%;
-}
-body.css-settings-manager.theme-setting-baseColorPreset-mangu {
+}`,
+      dark: `body.css-settings-manager.theme-setting-baseColorPreset-mangu {
 --text-on-accent: white;
 --nav-item-color-active: white;
 --icon-color: white;
@@ -14543,7 +14562,9 @@ body.css-settings-manager.theme-setting-baseColorPreset-mangu {
 --nav-item-color-hover: white;
 --interactive-accent: var(--theme-color-baseLightened25);
 }`,
-    "theme-setting-baseColorPreset-maa": `body.css-settings-manager.theme-setting-baseColorPreset-maa {
+    },
+    "theme-setting-baseColorPreset-maa": {
+      general: `body.css-settings-manager.theme-setting-baseColorPreset-maa {
 --text-on-accent: black;
 --nav-item-color-active: black;
 --icon-color: black;
@@ -14568,28 +14589,36 @@ body.css-settings-manager.theme-setting-baseColorPreset-maa {
 --base-h: 50;
 --base-s: 0%;
 --base-l: 95%;
-}
-body.css-settings-manager.theme-setting-baseColorPreset-maa {
+}`,
+      dark: `body.css-settings-manager.theme-setting-baseColorPreset-maa {
 --icon-color: white;
 }`,
-    "theme-setting-baseColorPreset-kiwikiwi": `body.css-settings-manager.theme-setting-baseColorPreset-kiwikiwi {
+    },
+    "theme-setting-baseColorPreset-kiwikiwi": {
+      general: `body.css-settings-manager.theme-setting-baseColorPreset-kiwikiwi {
 --base-h: 40;
 --base-s: 5%;
 --base-l: 50%;
 }`,
-    "theme-setting-lightModeNoteBgNearWhite": `.theme-setting-lightModeNoteBgNearWhite {
+    },
+    "theme-setting-lightModeNoteBgNearWhite": {
+      light: `.theme-setting-lightModeNoteBgNearWhite {
 --background-primary: color-mix(
     in srgb,
     var(--theme-color-base),
     white calc(100% * 0.97)
   );
 }`,
-    "theme-value-darkModeNoteBgFullBlack": `.theme-value-darkModeNoteBgFullBlack {
+    },
+    "theme-value-darkModeNoteBgFullBlack": {
+      dark: `.theme-value-darkModeNoteBgFullBlack {
 /* Override note background when specified by style settings. */
 /* There's no equivalent of this for light mode. */
 --background-primary: black;
 }`,
-    "theme-setting-distinguishNonContentTabs": `body.theme-setting-distinguishNonContentTabs {
+    },
+    "theme-setting-distinguishNonContentTabs": {
+      general: `body.theme-setting-distinguishNonContentTabs {
 .workspace-split.mod-root {
     & .workspace-tab-header-container {
       .workspace-tab-header[data-type="bases"],
@@ -14643,7 +14672,9 @@ body.css-settings-manager.theme-setting-baseColorPreset-maa {
     }
   };
 }`,
-    "theme-setting-wrapTabs": `body.theme-setting-wrapTabs {
+    },
+    "theme-setting-wrapTabs": {
+      general: `body.theme-setting-wrapTabs {
 .workspace-tab-header-container {
     height: auto;
   };
@@ -14669,10 +14700,14 @@ body.css-settings-manager.theme-setting-baseColorPreset-maa {
     container-type: normal;
   };
 }`,
-    "setting-properties-position-above": `.setting-properties-position-above .mod-root .is-live-preview .metadata-container {
+    },
+    "setting-properties-position-above": {
+      general: `.setting-properties-position-above .mod-root .is-live-preview .metadata-container {
 order: 1;
 }`,
-    "setting-properties-position-below": `.setting-properties-position-below .mod-root .is-live-preview .metadata-container {
+    },
+    "setting-properties-position-below": {
+      general: `.setting-properties-position-below .mod-root .is-live-preview .metadata-container {
 margin-top: 1em;
 order: 3;
 }
@@ -14698,10 +14733,14 @@ position: sticky;
 bottom: 0;
 overflow-y: visible;
 }`,
-    "theme-setting-embeddedNoteTitleVisibilityHide": `body.theme-setting-embeddedNoteTitleVisibilityHide .embed-title {
+    },
+    "theme-setting-embeddedNoteTitleVisibilityHide": {
+      general: `body.theme-setting-embeddedNoteTitleVisibilityHide .embed-title {
 display: none;
 }`,
-    "theme-setting-embeddedNoteTitleVisibilityHover": `body.theme-setting-embeddedNoteTitleVisibilityHover .internal-embed:has(.embed-title:not(:empty)) {
+    },
+    "theme-setting-embeddedNoteTitleVisibilityHover": {
+      general: `body.theme-setting-embeddedNoteTitleVisibilityHover .internal-embed:has(.embed-title:not(:empty)) {
 padding-top: 1.5rem;
 }
 
@@ -14711,14 +14750,18 @@ position: absolute;
 top: 0.5rem;
 left: 1rem;
 }`,
-    "theme-setting-embeddedNoteTitleVisibilityShow": `body.theme-setting-embeddedNoteTitleVisibilityShow .internal-embed:has(.embed-title:not(:empty)) {
+    },
+    "theme-setting-embeddedNoteTitleVisibilityShow": {
+      general: `body.theme-setting-embeddedNoteTitleVisibilityShow .internal-embed:has(.embed-title:not(:empty)) {
 padding-top: 0.5rem;
 }
 
 body.theme-setting-embeddedNoteTitleVisibilityShow .embed-title {
 display: flex;
 }`,
-    "theme-setting-stickyEmbeddedLinks-on": `body.theme-setting-stickyEmbeddedLinks-on .cm-sizer > .embedded-backlinks, body.theme-setting-stickyEmbeddedLinks-on .mod-footer:has(> .embedded-backlinks) {
+    },
+    "theme-setting-stickyEmbeddedLinks-on": {
+      general: `body.theme-setting-stickyEmbeddedLinks-on .cm-sizer > .embedded-backlinks, body.theme-setting-stickyEmbeddedLinks-on .mod-footer:has(> .embedded-backlinks) {
 position: sticky;
 bottom: 0;
 width: 100%;
@@ -14745,7 +14788,9 @@ position: sticky;
 bottom: 0;
 overflow-y: visible;
 }`,
-    "theme-setting-differentiateBulletLevels": `body.theme-setting-differentiateBulletLevels {
+    },
+    "theme-setting-differentiateBulletLevels": {
+      general: `body.theme-setting-differentiateBulletLevels {
 .markdown-source-view.mod-cm6 .HyperMD-list-line-1 .list-bullet:after,
       .markdown-preview-view .el-ul > ul > li > .list-bullet:after {
         background-color: var(--list-marker-color);
@@ -14783,63 +14828,97 @@ overflow-y: visible;
         background-color: transparent;
       };
 }`,
-    "theme-setting-headingScaleFactor1point067": `body.theme-setting-headingScaleFactor1point067 {
+    },
+    "theme-setting-headingScaleFactor1point067": {
+      general: `body.theme-setting-headingScaleFactor1point067 {
 --theme-value-headingScaleFactor: 1.067;
 }`,
-    "theme-setting-headingScaleFactor1point125": `body.theme-setting-headingScaleFactor1point125 {
+    },
+    "theme-setting-headingScaleFactor1point125": {
+      general: `body.theme-setting-headingScaleFactor1point125 {
 --theme-value-headingScaleFactor: 1.125;
 }`,
-    "theme-setting-headingScaleFactor1point2": `body.theme-setting-headingScaleFactor1point2 {
+    },
+    "theme-setting-headingScaleFactor1point2": {
+      general: `body.theme-setting-headingScaleFactor1point2 {
 --theme-value-headingScaleFactor: 1.2;
 }
 
 body.theme-setting-headingScaleFactor1point25 {
 --theme-value-headingScaleFactor: 1.25;
 }`,
-    "theme-setting-headingScaleFactor1point25": `body.theme-setting-headingScaleFactor1point25 {
+    },
+    "theme-setting-headingScaleFactor1point25": {
+      general: `body.theme-setting-headingScaleFactor1point25 {
 --theme-value-headingScaleFactor: 1.25;
 }`,
-    "theme-setting-headingScaleFactor1point333": `body.theme-setting-headingScaleFactor1point333 {
+    },
+    "theme-setting-headingScaleFactor1point333": {
+      general: `body.theme-setting-headingScaleFactor1point333 {
 --theme-value-headingScaleFactor: 1.333;
 }`,
-    "theme-setting-headingScaleFactor1point414": `body.theme-setting-headingScaleFactor1point414 {
+    },
+    "theme-setting-headingScaleFactor1point414": {
+      general: `body.theme-setting-headingScaleFactor1point414 {
 --theme-value-headingScaleFactor: 1.414;
 }`,
-    "theme-setting-headingScaleFactor1point5": `body.theme-setting-headingScaleFactor1point5 {
+    },
+    "theme-setting-headingScaleFactor1point5": {
+      general: `body.theme-setting-headingScaleFactor1point5 {
 --theme-value-headingScaleFactor: 1.5;
 }`,
-    "theme-setting-headingScaleFactor1point618": `body.theme-setting-headingScaleFactor1point618 {
+    },
+    "theme-setting-headingScaleFactor1point618": {
+      general: `body.theme-setting-headingScaleFactor1point618 {
 --theme-value-headingScaleFactor: 1.618;
 }`,
-    "theme-setting-headingScaleFactorPhone1point067": `body.is-phone.theme-setting-headingScaleFactorPhone1point067 {
+    },
+    "theme-setting-headingScaleFactorPhone1point067": {
+      general: `body.is-phone.theme-setting-headingScaleFactorPhone1point067 {
 --theme-value-headingScaleFactorPhone: 1.067;
 }`,
-    "theme-setting-headingScaleFactorPhone1point125": `body.is-phone.theme-setting-headingScaleFactorPhone1point125 {
+    },
+    "theme-setting-headingScaleFactorPhone1point125": {
+      general: `body.is-phone.theme-setting-headingScaleFactorPhone1point125 {
 --theme-value-headingScaleFactorPhone: 1.125;
 }`,
-    "theme-setting-headingScaleFactorPhone1point2": `body.is-phone.theme-setting-headingScaleFactorPhone1point2 {
+    },
+    "theme-setting-headingScaleFactorPhone1point2": {
+      general: `body.is-phone.theme-setting-headingScaleFactorPhone1point2 {
 --theme-value-headingScaleFactorPhone: 1.2;
 }
 
 body.is-phone.theme-setting-headingScaleFactorPhone1point25 {
 --theme-value-headingScaleFactorPhone: 1.25;
 }`,
-    "theme-setting-headingScaleFactorPhone1point25": `body.is-phone.theme-setting-headingScaleFactorPhone1point25 {
+    },
+    "theme-setting-headingScaleFactorPhone1point25": {
+      general: `body.is-phone.theme-setting-headingScaleFactorPhone1point25 {
 --theme-value-headingScaleFactorPhone: 1.25;
 }`,
-    "theme-setting-headingScaleFactorPhone1point333": `body.is-phone.theme-setting-headingScaleFactorPhone1point333 {
+    },
+    "theme-setting-headingScaleFactorPhone1point333": {
+      general: `body.is-phone.theme-setting-headingScaleFactorPhone1point333 {
 --theme-value-headingScaleFactorPhone: 1.333;
 }`,
-    "theme-setting-headingScaleFactorPhone1point414": `body.is-phone.theme-setting-headingScaleFactorPhone1point414 {
+    },
+    "theme-setting-headingScaleFactorPhone1point414": {
+      general: `body.is-phone.theme-setting-headingScaleFactorPhone1point414 {
 --theme-value-headingScaleFactorPhone: 1.414;
 }`,
-    "theme-setting-headingScaleFactorPhone1point5": `body.is-phone.theme-setting-headingScaleFactorPhone1point5 {
+    },
+    "theme-setting-headingScaleFactorPhone1point5": {
+      general: `body.is-phone.theme-setting-headingScaleFactorPhone1point5 {
 --theme-value-headingScaleFactorPhone: 1.5;
 }`,
-    "theme-setting-headingScaleFactorPhone1point618": `body.is-phone.theme-setting-headingScaleFactorPhone1point618 {
+    },
+    "theme-setting-headingScaleFactorPhone1point618": {
+      general: `body.is-phone.theme-setting-headingScaleFactorPhone1point618 {
 --theme-value-headingScaleFactorPhone: 1.618;
 }`,
-    "theme-setting-highlightActiveLine": `body.theme-setting-highlightActiveLine {
+    },
+    "theme-setting-highlightActiveLine": {
+      general: `body.theme-setting-highlightActiveLine {
 .markdown-source-view.mod-cm6 {
       .cm-active:not(.HyperMD-codeblock) {
         background-color: var(--theme-color-activeLineHighlight);
@@ -14847,7 +14926,9 @@ body.is-phone.theme-setting-headingScaleFactorPhone1point25 {
       }
     };
 }`,
-    "theme-setting-codeBlockLineNumbers": `body.theme-setting-codeBlockLineNumbers {
+    },
+    "theme-setting-codeBlockLineNumbers": {
+      general: `body.theme-setting-codeBlockLineNumbers {
 .markdown-source-view.mod-cm6 {
           .cm-line.HyperMD-codeblock-begin
             + .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-end) {
@@ -14874,7 +14955,9 @@ body.is-phone.theme-setting-headingScaleFactorPhone1point25 {
           }
         };
 }`,
-    "theme-setting-centerImages": `body.theme-setting-centerImages {
+    },
+    "theme-setting-centerImages": {
+      general: `body.theme-setting-centerImages {
 .markdown-source-view.mod-cm6 .cm-content > img,
       .markdown-source-view.mod-cm6 .cm-content .image-embed img,
       .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img {
@@ -14886,7 +14969,9 @@ body.is-phone.theme-setting-headingScaleFactorPhone1point25 {
         margin: 0 auto;
       };
 }`,
-    "theme-setting-customGradient": `body.theme-setting-customGradient {
+    },
+    "theme-setting-customGradient": {
+      dark: `body.theme-setting-customGradient {
 --theme-color-gradientTop: color-mix(
     in srgb,
     var(--theme-color-customGradientBaseTop),
@@ -14897,8 +14982,8 @@ body.is-phone.theme-setting-headingScaleFactorPhone1point25 {
     var(--theme-color-customGradientBaseBottom),
     black calc(100% * (0.7 + 0.5 * var(--theme-value-gradientContrast)))
   );
-}
-body.theme-setting-customGradient {
+}`,
+      light: `body.theme-setting-customGradient {
 --theme-color-gradientTop: color-mix(
     in srgb,
     var(--theme-color-customGradientBaseTop),
@@ -14910,14 +14995,18 @@ body.theme-setting-customGradient {
     white calc(100% * (0.5 - 0.5 * var(--theme-value-gradientContrast)))
   );
 }`,
-    "theme-setting-fullWidthStatusBar": `body.theme-setting-fullWidthStatusBar .horizontal-main-container {
+    },
+    "theme-setting-fullWidthStatusBar": {
+      general: `body.theme-setting-fullWidthStatusBar .horizontal-main-container {
 margin-bottom: var(--theme-length-statusBarHeight);
 }
 
 body.theme-setting-fullWidthStatusBar .status-bar {
 width: 100%;
 }`,
-    "theme-setting-enableIconsInSettings": `body.theme-setting-enableIconsInSettings {
+    },
+    "theme-setting-enableIconsInSettings": {
+      general: `body.theme-setting-enableIconsInSettings {
 .vertical-tab-nav-item-icon {
     display: flex;
   };
@@ -14944,8 +15033,8 @@ width: 100%;
         opacity: 100%;
       }
     };
-}
-body.theme-setting-overrideStyleSettings.theme-dark {
+}`,
+      dark: `body.theme-setting-overrideStyleSettings.theme-dark {
 .setting-item.setting-item-heading.style-settings-heading
     .style-settings-collapse-indicator:after {
     filter: hue-rotate(calc(var(--base-h) * 1deg));
@@ -14974,8 +15063,8 @@ body.theme-setting-overrideStyleSettings.theme-dark {
       content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;'><path d='M13,10L13,20C13,21.104 12.104,22 11,22L5,22C3.896,22 3,21.104 3,20L3,10C3,8.896 3.896,8 5,8L11,8C12.104,8 13,8.896 13,10Z' style='fill:none;stroke:hsl(0deg,86%,81%);stroke-width:2px;'/><path d='M5,4C5,2.903 5.903,2 7,2L19,2C20.097,2 21,2.903 21,4L21,20C21,21.097 20.097,22 19,22L16.6,22' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,86%,81%);stroke-width:2px;'/><path d='M8,18L8.01,18' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,86%,81%);stroke-width:2px;'/></svg>");
     }
   };
-}
-body.theme-setting-overrideStyleSettings.theme-light {
+}`,
+      light: `body.theme-setting-overrideStyleSettings.theme-light {
 .setting-item.setting-item-heading.style-settings-heading
     .style-settings-collapse-indicator:after {
     filter: hue-rotate(calc(var(--base-h) * 1deg));
@@ -15008,12 +15097,16 @@ body.theme-setting-overrideStyleSettings.theme-light {
     }
   };
 }`,
-    "theme-setting-enableIconsInMenus": `body.theme-setting-enableIconsInMenus {
+    },
+    "theme-setting-enableIconsInMenus": {
+      general: `body.theme-setting-enableIconsInMenus {
 .menu-item-icon {
     display: flex;
   };
 }`,
-    "theme-setting-mobileCardsUI": `body.is-phone.theme-setting-mobileCardsUI .modal.mod-sidebar-layout .modal-title {
+    },
+    "theme-setting-mobileCardsUI": {
+      general: `body.is-phone.theme-setting-mobileCardsUI .modal.mod-sidebar-layout .modal-title {
 padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
@@ -15072,7 +15165,9 @@ margin-inline-start: max(calc(var(--theme-spacing-mobileHorizontalSpacing)), 0.5
 margin-top: calc(var(--safe-area-inset-top) + var(--header-height) + 1em);
 border-radius: var(--radius-l) var(--radius-l) 0 0;
 }`,
-    "theme-setting-enableBuiltInAlternativeCheckboxes": `body.theme-setting-enableBuiltInAlternativeCheckboxes {
+    },
+    "theme-setting-enableBuiltInAlternativeCheckboxes": {
+      general: `body.theme-setting-enableBuiltInAlternativeCheckboxes {
 /* Alternate incomplete states */
 & input.task-list-item-checkbox[data-task="/"]:checked,
   & input.task-list-item-checkbox[data-task="<"]:checked,
@@ -15210,7 +15305,9 @@ border-radius: var(--radius-l) var(--radius-l) 0 0;
     -webkit-mask-image: url('data:image/svg+xml; utf8, <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="%23000000"><polyline points="9,4.5 18,12 9,19.5 7.25,17.5 14,12 7.25,6.5"></polyline></g></g></svg>');
   };
 }`,
-    "theme-setting-enableImageAdjustmentWithAltText": `body.theme-setting-enableImageAdjustmentWithAltText {
+    },
+    "theme-setting-enableImageAdjustmentWithAltText": {
+      general: `body.theme-setting-enableImageAdjustmentWithAltText {
 /* Center images */
 .markdown-source-view.mod-cm6 .cm-content > img[alt~=center],
       .markdown-source-view.mod-cm6 .cm-content .image-embed[alt~=center] img,
@@ -15248,7 +15345,9 @@ border-radius: var(--radius-l) var(--radius-l) 0 0;
         border-radius: var(--theme-length-fullBorderRadius);
       };
 }`,
-    "theme-setting-overrideAdvancedTables": `body.theme-setting-overrideAdvancedTables {
+    },
+    "theme-setting-overrideAdvancedTables": {
+      general: `body.theme-setting-overrideAdvancedTables {
 .workspace-leaf-content[data-type="advanced-tables-toolbar"] .view-content {
     display: flex;
     justify-content: center;
@@ -15281,7 +15380,9 @@ border-radius: var(--radius-l) var(--radius-l) 0 0;
     margin-inline-end: 0.25em;
   };
 }`,
-    "theme-setting-overrideCalendar": `body.theme-setting-overrideCalendar {
+    },
+    "theme-setting-overrideCalendar": {
+      general: `body.theme-setting-overrideCalendar {
 .workspace-leaf-content[data-type="calendar"] {
     .view-content {
       background-color: var(--theme-color-tabNavActiveBg);
@@ -15421,12 +15522,16 @@ border-radius: var(--radius-l) var(--radius-l) 0 0;
 
   };
 }`,
-    "theme-setting-overrideClearUnusedImages": `body.theme-setting-overrideClearUnusedImages {
+    },
+    "theme-setting-overrideClearUnusedImages": {
+      general: `body.theme-setting-overrideClearUnusedImages {
 .modal:has(.unused-images-logs) {
     padding-bottom: 1em;
   };
 }`,
-    "theme-setting-overrideColumns": `body.theme-setting-overrideColumns {
+    },
+    "theme-setting-overrideColumns": {
+      general: `body.theme-setting-overrideColumns {
 /* Callout format – this also works without the plugin */
 --obsidian-columns-gap: 1em;
 --obsidian-columns-padding: 0 0;
@@ -15543,7 +15648,9 @@ div[data-callout|="col"].callout {
     );
   };
 }`,
-    "theme-setting-overrideDataview": `body.theme-setting-overrideDataview {
+    },
+    "theme-setting-overrideDataview": {
+      general: `body.theme-setting-overrideDataview {
 /* Styled to match embeds */
 .block-language-dataview {
     background-color: var(--embed-background);
@@ -15762,7 +15869,9 @@ div[data-callout|="col"].callout {
     margin: 0 -1.5em;
   };
 }`,
-    "theme-setting-overrideExcalidraw": `body.theme-setting-overrideExcalidraw {
+    },
+    "theme-setting-overrideExcalidraw": {
+      general: `body.theme-setting-overrideExcalidraw {
 .workspace-leaf-content[data-type="excalidraw"] {
     & .view-header {
       padding-bottom: 0;
@@ -16062,7 +16171,9 @@ body:not(.is-mobile) .mobile-misc-tools-container .ToolIcon.is-mobile {
     border: none;
   };
 }`,
-    "theme-setting-overrideFolderNote": `body.theme-setting-overrideFolderNote {
+    },
+    "theme-setting-overrideFolderNote": {
+      general: `body.theme-setting-overrideFolderNote {
 .block-language-ccard {
     /* Styled as embed, but with gradient background to give more contrast for cards */
     border-bottom: var(--embed-border-bottom);
@@ -16132,7 +16243,9 @@ body:not(.is-mobile) .mobile-misc-tools-container .ToolIcon.is-mobile {
     }
   };
 }`,
-    "theme-setting-overrideJiraIssue": `body.theme-setting-overrideJiraIssue {
+    },
+    "theme-setting-overrideJiraIssue": {
+      general: `body.theme-setting-overrideJiraIssue {
 .jira-issue-container {
     margin: 0 0 0.5em 0;
   };
@@ -16340,7 +16453,9 @@ body:not(.is-mobile) .mobile-misc-tools-container .ToolIcon.is-mobile {
     }
   };
 }`,
-    "theme-setting-overrideKanban": `body.theme-setting-overrideKanban {
+    },
+    "theme-setting-overrideKanban": {
+      general: `body.theme-setting-overrideKanban {
 .kanban-plugin {
     gap: 0.5rem;
     background: var(--theme-gradient-cardSetGenerated);
@@ -16509,7 +16624,9 @@ body:not(.is-mobile) .mobile-misc-tools-container .ToolIcon.is-mobile {
     padding: 1em 0 0 0;
   };
 }`,
-    "theme-setting-overrideMapView": `body.theme-setting-overrideMapView .map-view-graph-controls .graph-control-div .collapsible label {
+    },
+    "theme-setting-overrideMapView": {
+      general: `body.theme-setting-overrideMapView .map-view-graph-controls .graph-control-div .collapsible label {
 border-radius: var(--radius-s);
 color: var(--text-faint);
 font-size: var(--nav-item-size);
@@ -16879,7 +16996,9 @@ body.theme-setting-overrideMapView {
     text-decoration-line: none;
   };
 }`,
-    "theme-setting-overridePluginUpdateTracker": `body.theme-setting-overridePluginUpdateTracker {
+    },
+    "theme-setting-overridePluginUpdateTracker": {
+      general: `body.theme-setting-overridePluginUpdateTracker {
 .plugin-update-tracker-icon {
     background-color: var(--theme-color-baseTransparent25);
     border-radius: 9999px;
@@ -16905,13 +17024,17 @@ body.theme-setting-overrideMapView {
     }
   };
 }`,
-    "theme-setting-overrideRecentFiles": `body.theme-setting-overrideRecentFiles {
+    },
+    "theme-setting-overrideRecentFiles": {
+      general: `body.theme-setting-overrideRecentFiles {
 .recent-files-title {
     align-items: center;
     padding-inline-end: 0.375em;
   };
 }`,
-    "theme-setting-overrideTasks": `body.theme-setting-overrideTasks {
+    },
+    "theme-setting-overrideTasks": {
+      general: `body.theme-setting-overrideTasks {
 .block-language-tasks {
     background-color: var(--embed-background);
     border-bottom: var(--embed-border-bottom);
@@ -16947,7 +17070,9 @@ body.theme-setting-overrideMapView {
     padding: 0 0.25em;
   };
 }`,
-    "theme-setting-overrideStyleSettings": `body.theme-setting-overrideStyleSettings {
+    },
+    "theme-setting-overrideStyleSettings": {
+      general: `body.theme-setting-overrideStyleSettings {
 /* Settings modal */
 .style-settings-heading {
     border-bottom: none;
@@ -17031,8 +17156,8 @@ body.theme-setting-overrideMapView {
       }
     }
   };
-}
-body.theme-setting-enableIconsInSettings.theme-dark {
+}`,
+      dark: `body.theme-setting-enableIconsInSettings.theme-dark {
 .setting-item.setting-item-heading.style-settings-heading
     .style-settings-collapse-indicator:after {
     filter: hue-rotate(calc(var(--base-h) * 1deg));
@@ -17061,8 +17186,8 @@ body.theme-setting-enableIconsInSettings.theme-dark {
       content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;'><path d='M13,10L13,20C13,21.104 12.104,22 11,22L5,22C3.896,22 3,21.104 3,20L3,10C3,8.896 3.896,8 5,8L11,8C12.104,8 13,8.896 13,10Z' style='fill:none;stroke:hsl(0deg,86%,81%);stroke-width:2px;'/><path d='M5,4C5,2.903 5.903,2 7,2L19,2C20.097,2 21,2.903 21,4L21,20C21,21.097 20.097,22 19,22L16.6,22' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,86%,81%);stroke-width:2px;'/><path d='M8,18L8.01,18' style='fill:none;fill-rule:nonzero;stroke:hsl(0deg,86%,81%);stroke-width:2px;'/></svg>");
     }
   };
-}
-body.theme-setting-enableIconsInSettings.theme-light {
+}`,
+      light: `body.theme-setting-enableIconsInSettings.theme-light {
 .setting-item.setting-item-heading.style-settings-heading
     .style-settings-collapse-indicator:after {
     filter: hue-rotate(calc(var(--base-h) * 1deg));
@@ -17095,5 +17220,6 @@ body.theme-setting-enableIconsInSettings.theme-light {
     }
   };
 }`,
+    },
   },
 };

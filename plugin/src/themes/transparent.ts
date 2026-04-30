@@ -1426,36 +1426,49 @@ html[saved-theme="light"] body input[type=text] {
 }
 `,
   classSettings: {
-    "show-scrollbars": `body.show-scrollbars ::-webkit-scrollbar {
+    "show-scrollbars": {
+      general: `body.show-scrollbars ::-webkit-scrollbar {
 visibility: initial;
 }
 
 body.show-scrollbars ::-webkit-scrollbar-thumb {
 visibility: initial;
 }`,
-    "bg-type-custom": `body.bg-type-custom .app-container::before {
+    },
+    "bg-type-custom": {
+      general: `body.bg-type-custom .app-container::before {
 /* This stacks the custom image on top of the base64 green image. 
      If the custom URL is invalid/empty, it becomes transparent, leaving the green background visible. */
 background-image: var(--bg-custom-url), var(--background-image-base64);
 }`,
-    "animate-modal-open": `body.animate-modal-open .modal {
+    },
+    "animate-modal-open": {
+      general: `body.animate-modal-open .modal {
 animation: modal-open calc(var(--animationspeed) * 0.7) cubic-bezier(0.2, 0, 0, 1) forwards;
 }
 
 body.animate-modal-open .modal-bg {
 animation: modal-bg-fade calc(var(--animationspeed) * 0.7) cubic-bezier(0.2, 0, 0, 1) forwards;
 }`,
-    "animate-note-open": `body.animate-note-open .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view, body.animate-note-open .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view, body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view, body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view {
+    },
+    "animate-note-open": {
+      general: `body.animate-note-open .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view, body.animate-note-open .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view, body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view, body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view {
 animation: tr-note-fade-in var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
 }`,
-    "no-animation": `body.no-animation *, body.no-animation *::before, body.no-animation *::after {
+    },
+    "no-animation": {
+      general: `body.no-animation *, body.no-animation *::before, body.no-animation *::after {
 transition-duration: 0s;
 animation-duration: 0s;
 }`,
-    "hide-canvas-dots": `body.hide-canvas-dots svg.canvas-background {
+    },
+    "hide-canvas-dots": {
+      general: `body.hide-canvas-dots svg.canvas-background {
 display: none;
 }`,
-    "accent-everywhere": `body.accent-everywhere .clickable-icon, body.accent-everywhere .workspace-tab-header-inner .workspace-tab-header-inner-icon, body.accent-everywhere .vertical-tab-header-group-title {
+    },
+    "accent-everywhere": {
+      general: `body.accent-everywhere .clickable-icon, body.accent-everywhere .workspace-tab-header-inner .workspace-tab-header-inner-icon, body.accent-everywhere .vertical-tab-header-group-title {
 color: var(--color-accent);
 }
 
@@ -1465,31 +1478,8 @@ background-color: var(--color-accent-tr-20);
 
 body.accent-everywhere hr {
 border-color: var(--hr-color);
-}
-body.theme-dark, body.theme-light {
---text-muted: var(--color-accent-2);
---titlebar-text-color: var(--color-accent);
---titlebar-text-color-focused: var(--color-accent);
---color-accent-tr-20: hsla(var(--color-accent-hsl), 0.2);
---color-accent-tr-50: hsla(var(--color-accent-hsl), 0.5);
---color-accent-tr-85: hsla(var(--color-accent-hsl), 0.85);
---text-faint: var(--color-accent-tr-85);
---slider-track-background: var(--color-accent-tr-50);
---hr-color: var(--color-accent);
---h1-color: var(--color-accent);
---h2-color: var(--color-accent);
---h3-color: var(--text-muted);
---h4-color: var(--text-muted);
---h5-color: var(--text-faint);
---h6-color: var(--text-faint);
---h1-weight: 800;
---h2-weight: 700;
---h3-weight: 600;
---h4-weight: 500;
---h5-weight: 400;
---h6-weight: 400;
-}
-body.theme-dark, body.theme-light {
+}`,
+      dark: `body.theme-dark, body.theme-light {
 --text-muted: var(--color-accent-2);
 --titlebar-text-color: var(--color-accent);
 --titlebar-text-color-focused: var(--color-accent);
@@ -1512,5 +1502,29 @@ body.theme-dark, body.theme-light {
 --h5-weight: 400;
 --h6-weight: 400;
 }`,
+      light: `body.theme-dark, body.theme-light {
+--text-muted: var(--color-accent-2);
+--titlebar-text-color: var(--color-accent);
+--titlebar-text-color-focused: var(--color-accent);
+--color-accent-tr-20: hsla(var(--color-accent-hsl), 0.2);
+--color-accent-tr-50: hsla(var(--color-accent-hsl), 0.5);
+--color-accent-tr-85: hsla(var(--color-accent-hsl), 0.85);
+--text-faint: var(--color-accent-tr-85);
+--slider-track-background: var(--color-accent-tr-50);
+--hr-color: var(--color-accent);
+--h1-color: var(--color-accent);
+--h2-color: var(--color-accent);
+--h3-color: var(--text-muted);
+--h4-color: var(--text-muted);
+--h5-color: var(--text-faint);
+--h6-color: var(--text-faint);
+--h1-weight: 800;
+--h2-weight: 700;
+--h3-weight: 600;
+--h4-weight: 500;
+--h5-weight: 400;
+--h6-weight: 400;
+}`,
+    },
   },
 };

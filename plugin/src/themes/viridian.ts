@@ -12383,7 +12383,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "vr-zenburn": `.theme-dark {
+    "vr-zenburn": {
+      dark: `.theme-dark {
 /* Accent Colours */
 --vr-accent-r: 220;
 --vr-accent-g: 163;
@@ -12475,5 +12476,6 @@ html[saved-theme="light"] body ul.tags > li {
 --vr-header-bg-colour-5: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha));
 --vr-header-bg-colour-6: rgba(var(--vr-purple-r), var(--vr-purple-g), var(--vr-purple-b), var(--vr-header-bg-alpha));
 }`,
+    },
   },
 };

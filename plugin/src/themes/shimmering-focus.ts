@@ -4556,55 +4556,82 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "hide-inline-title-when-more-than-one-tab": `body:not(.is-mobile).hide-inline-title-when-more-than-one-tab .mod-root .workspace-tab-header-container:has(.workspace-tab-header+.workspace-tab-header)+.workspace-tab-container .inline-title {
+    "hide-inline-title-when-more-than-one-tab": {
+      general: `body:not(.is-mobile).hide-inline-title-when-more-than-one-tab .mod-root .workspace-tab-header-container:has(.workspace-tab-header+.workspace-tab-header)+.workspace-tab-container .inline-title {
 display:none;
 }`,
-    "hide-vault-switcher-and-settings": `body.hide-vault-switcher-and-settings:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+    },
+    "hide-vault-switcher-and-settings": {
+      general: `body.hide-vault-switcher-and-settings:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
 display:none;
 }`,
-    "hide-properties-in-statusbar": `.hide-properties-in-statusbar .status-bar-item.plugin-properties {
+    },
+    "hide-properties-in-statusbar": {
+      general: `.hide-properties-in-statusbar .status-bar-item.plugin-properties {
 display:none;
 }`,
-    "hide-backlinks-status-bar": `.hide-backlinks-status-bar .status-bar-item.plugin-backlink {
+    },
+    "hide-backlinks-status-bar": {
+      general: `.hide-backlinks-status-bar .status-bar-item.plugin-backlink {
 display:none;
 }`,
-    "hide-pane-relief-focus-lock-status-bar": `.hide-pane-relief-focus-lock-status-bar .status-bar-item.plugin-pane-relief {
+    },
+    "hide-pane-relief-focus-lock-status-bar": {
+      general: `.hide-pane-relief-focus-lock-status-bar .status-bar-item.plugin-pane-relief {
 display:none;
 }`,
-    "hide-languagetool-status-bar": `.hide-languagetool-status-bar .status-bar-item.plugin-obsidian-languagetool-plugin {
+    },
+    "hide-languagetool-status-bar": {
+      general: `.hide-languagetool-status-bar .status-bar-item.plugin-obsidian-languagetool-plugin {
 display:none;
 }`,
-    "hide-pandoc-reference-list-status-bar": `.hide-pandoc-reference-list-status-bar .status-bar-item.plugin-obsidian-pandoc-reference-list {
+    },
+    "hide-pandoc-reference-list-status-bar": {
+      general: `.hide-pandoc-reference-list-status-bar .status-bar-item.plugin-obsidian-pandoc-reference-list {
 display:none;
 }`,
-    "hide-harper-status-bar": `.hide-harper-status-bar .status-bar-item.plugin-harper {
+    },
+    "hide-harper-status-bar": {
+      general: `.hide-harper-status-bar .status-bar-item.plugin-harper {
 display:none;
 }`,
-    "normal-header-bar": `.normal-header-bar .view-header {
+    },
+    "normal-header-bar": {
+      general: `.normal-header-bar .view-header {
 background:var(--bg3);
 }`,
-    "overlaying-right-sidebar": `.overlaying-right-sidebar .mod-right-split {
+    },
+    "overlaying-right-sidebar": {
+      general: `.overlaying-right-sidebar .mod-right-split {
 position:absolute;
 right:0;
 }`,
-    "hidden-sidebars-hidden-statusbar": `.hidden-sidebars-hidden-statusbar:not(.is-mobile) .horizontal-main-container:has(.mod-left-split.is-sidedock-collapsed):has(.mod-right-split.is-sidedock-collapsed)+.status-bar {
+    },
+    "hidden-sidebars-hidden-statusbar": {
+      general: `.hidden-sidebars-hidden-statusbar:not(.is-mobile) .horizontal-main-container:has(.mod-left-split.is-sidedock-collapsed):has(.mod-right-split.is-sidedock-collapsed)+.status-bar {
 display:none;
 }`,
-    "notices-at-bottom-right": `.notices-at-bottom-right .notice-container {
+    },
+    "notices-at-bottom-right": {
+      general: `.notices-at-bottom-right .notice-container {
 bottom:calc(var(--status-bar-font-size) + var(--notice-spacing));
 top:unset;
 flex-direction:column-reverse;
 display:flex;
 }`,
-    "colorscheme-macos-native": `.theme-light, .theme-dark {
---bg-hue:0;
---bg-sat:0%;
-}
-.theme-light, .theme-dark {
+    },
+    "colorscheme-macos-native": {
+      dark: `.theme-light, .theme-dark {
 --bg-hue:0;
 --bg-sat:0%;
 }`,
-    "colorscheme-coffee": `.theme-dark {
+      light: `.theme-light, .theme-dark {
+--bg-hue:0;
+--bg-sat:0%;
+}`,
+    },
+    "colorscheme-coffee": {
+      dark: `.theme-dark {
 --bg-hue:29;
 --bg-sat:15%;
 --color-accent-hsl:50,70%,60%;
@@ -4614,8 +4641,8 @@ display:flex;
 --secondary-accent:#0a7046;
 --hover-accent:#4ba6ce;
 --link-unresolved-color:#bc94cc;
-}
-.theme-light {
+}`,
+      light: `.theme-light {
 --bg-hue:36;
 --bg-sat:35%;
 --color-accent-hsl:43,100%,42%;
@@ -4626,7 +4653,9 @@ display:flex;
 --hover-accent:#2c7da0;
 --link-unresolved-color:#b183c3;
 }`,
-    "colorscheme-everforest": `.theme-dark {
+    },
+    "colorscheme-everforest": {
+      dark: `.theme-dark {
 --bg-hue:204;
 --bg-sat:14%;
 --bg-val:21%;
@@ -4642,8 +4671,8 @@ display:flex;
 .theme-dark ::selection {
 color:#fff;
 background-color:#a8c181;
-}
-.theme-light {
+}`,
+      light: `.theme-light {
 --bg-hue:43;
 --bg-sat:57%;
 --bg-val:89%;
@@ -4660,7 +4689,9 @@ background-color:#a8c181;
 color:#fff;
 background-color:#8da201;
 }`,
-    "colorscheme-grubox": `.theme-dark {
+    },
+    "colorscheme-grubox": {
+      dark: `.theme-dark {
 --color-red:#f84935;
 --color-green:#b8ba26;
 --color-yellow:#fabd2e;
@@ -4738,8 +4769,8 @@ color:var(--color-base-100);
 
 .theme-dark :is(.nav-file-title,.nav-folder-title) {
 color:var(--color-base-85);
-}
-.theme-light {
+}`,
+      light: `.theme-light {
 --color-red:#9e0005;
 --color-green:#77710e;
 --color-yellow:#b37614;
@@ -4791,7 +4822,9 @@ color:var(--color-base-85);
 background-color:var(--color-base-40);
 color:var(--color-base-100);
 }`,
-    "angular-shapes": `.angular-shapes {
+    },
+    "angular-shapes": {
+      general: `.angular-shapes {
 --radius-xs:0;
 --radius-s:0;
 --radius-m:0;
@@ -4806,29 +4839,41 @@ border-radius:0;
 width:20px;
 height:20px;
 }`,
-    "uncolored-bold": `.uncolored-bold :is(strong,.cm-strong) {
+    },
+    "uncolored-bold": {
+      general: `.uncolored-bold :is(strong,.cm-strong) {
 --bold-color:var(--text-normal);
 }`,
-    "uncolored-italic": `.uncolored-italic :is(em,.cm-em) {
+    },
+    "uncolored-italic": {
+      general: `.uncolored-italic :is(em,.cm-em) {
 --italic-color:var(--text-normal);
 }`,
-    "active-line-background": `.active-line-background .cm-active.cm-line:not(.HyperMD-quote,.HyperMD-codeblock) {
+    },
+    "active-line-background": {
+      general: `.active-line-background .cm-active.cm-line:not(.HyperMD-quote,.HyperMD-codeblock) {
 border-radius:var(--radius-s);
 padding-left:4px;
-}
-.active-line-background .cm-active.cm-line:not(.HyperMD-quote,.HyperMD-codeblock) {
+}`,
+      dark: `.active-line-background .cm-active.cm-line:not(.HyperMD-quote,.HyperMD-codeblock) {
 background-color:var(--bg4);
-}
-.active-line-background .cm-active.cm-line:not(.HyperMD-quote,.HyperMD-codeblock) {
+}`,
+      light: `.active-line-background .cm-active.cm-line:not(.HyperMD-quote,.HyperMD-codeblock) {
 background-color:var(--bg3);
 }`,
-    "readable-line-length-toggle": `.readable-line-length-toggle {
+    },
+    "readable-line-length-toggle": {
+      general: `.readable-line-length-toggle {
 --file-line-width:100%;
 }`,
-    "unrestricted-line-length-tables": `.unrestricted-line-length-tables:not(.is-mobile) :is(.markdown-source-view,.markdown-preview-view):has(table,.HyperMD-table-2) {
+    },
+    "unrestricted-line-length-tables": {
+      general: `.unrestricted-line-length-tables:not(.is-mobile) :is(.markdown-source-view,.markdown-preview-view):has(table,.HyperMD-table-2) {
 --file-line-width:100%;
 }`,
-    "use-relative-line-numbers": `.use-relative-line-numbers:not(.is-mobile) .cm-lineNumbers .cm-gutterElement:not(.cm-active) {
+    },
+    "use-relative-line-numbers": {
+      general: `.use-relative-line-numbers:not(.is-mobile) .cm-lineNumbers .cm-gutterElement:not(.cm-active) {
 font-size:0;
 }
 
@@ -4907,7 +4952,9 @@ content:"8";
 .use-relative-line-numbers:not(.is-mobile) .cm-lineNumbers .cm-active+*+*+*+*+*+*+*+*+:before {
 content:"9";
 }`,
-    "vim-active-visual-line": `.vim-active-visual-line .cm-sizer:not(:has(.cm-table-widget.has-focus))+.cm-vimCursorLayer .cm-fat-cursor.cm-cursor-primary {
+    },
+    "vim-active-visual-line": {
+      general: `.vim-active-visual-line .cm-sizer:not(:has(.cm-table-widget.has-focus))+.cm-vimCursorLayer .cm-fat-cursor.cm-cursor-primary {
 --cursorline-bg:hsl(var(--color-accent-hsl),12.5%);
 border-image:conic-gradient(var(--cursorline-bg)0 0)fill 0/0/0 100vw;
 mix-blend-mode:hard-light;
@@ -4916,7 +4963,9 @@ mix-blend-mode:hard-light;
 .vim-active-visual-line .cm-sizer:not(:has(.cm-table-widget.has-focus))+.cm-vimCursorLayer {
 animation:none!important;
 }`,
-    "no-mouse-hovers": `.no-mouse-hovers .is-live-preview .cm-embed-block:not(.cm-table-widget):hover {
+    },
+    "no-mouse-hovers": {
+      general: `.no-mouse-hovers .is-live-preview .cm-embed-block:not(.cm-table-widget):hover {
 box-shadow:none;
 }
 
@@ -4927,16 +4976,24 @@ display:none;
 .no-mouse-hovers .modal-container+.tooltip, .no-mouse-hovers .app-container:has(.mod-active .workspace-leaf-content[data-type=".no-mouse-hovers "])~.tooltip {
 display:unset;
 }`,
-    "wordcount-only-when-writing": `.wordcount-only-when-writing:not(.is-mobile) .horizontal-main-container:not(:has(:is(.writing,.longform-leaf)))+.status-bar :is(.plugin-word-count,.plugin-better-word-count) {
+    },
+    "wordcount-only-when-writing": {
+      general: `.wordcount-only-when-writing:not(.is-mobile) .horizontal-main-container:not(:has(:is(.writing,.longform-leaf)))+.status-bar :is(.plugin-word-count,.plugin-better-word-count) {
 display:none;
 }`,
-    "hide-longform-status-bar": `.hide-longform-status-bar .status-bar-item.plugin-longform {
+    },
+    "hide-longform-status-bar": {
+      general: `.hide-longform-status-bar .status-bar-item.plugin-longform {
 display:none;
 }`,
-    "longform-tasks-different": `body.longform-tasks-different :is(.writing,.longform-leaf) :is(.HyperMD-task-line,.HyperMD-task-line>*,ul.contains-task-list) {
+    },
+    "longform-tasks-different": {
+      general: `body.longform-tasks-different :is(.writing,.longform-leaf) :is(.HyperMD-task-line,.HyperMD-task-line>*,ul.contains-task-list) {
 color:var(--text-faint);
 }`,
-    "longform-text-indent": `.longform-text-indent div:has(>p)+div>p {
+    },
+    "longform-text-indent": {
+      general: `.longform-text-indent div:has(>p)+div>p {
 text-indent:1.5em;
 margin-top:0;
 }
@@ -4944,10 +5001,14 @@ margin-top:0;
 .longform-text-indent div:has(+div>p)>p {
 margin-bottom:0;
 }`,
-    "hide-attachment-folders": `.hide-attachment-folders .nav-folder-title:is([data-path$=\\/attachments i],[data-path=attachments i]) {
+    },
+    "hide-attachment-folders": {
+      general: `.hide-attachment-folders .nav-folder-title:is([data-path$=\\/attachments i],[data-path=attachments i]) {
 display:none;
 }`,
-    "show-outline-buttons": `.show-outline-buttons .workspace-leaf-content[data-type=outline] .nav-header {
+    },
+    "show-outline-buttons": {
+      general: `.show-outline-buttons .workspace-leaf-content[data-type=outline] .nav-header {
 flex-direction:row-reverse;
 justify-content:space-between;
 display:flex;
@@ -4962,15 +5023,20 @@ flex-grow:1;
 margin:4px 0;
 display:block!important;
 }`,
-    "bases-hide-column-header-icons": `body.bases-hide-column-header-icons .bases-table-header-icon {
+    },
+    "bases-hide-column-header-icons": {
+      general: `body.bases-hide-column-header-icons .bases-table-header-icon {
 display:none;
 }`,
-    "show-various-complements-icon": `.show-various-complements-icon .various-complements__suggestion-item {
+    },
+    "show-various-complements-icon": {
+      general: `.show-various-complements-icon .various-complements__suggestion-item {
 padding-left:25px!important;
 }
 
 .show-various-complements-icon .various-complements__suggestion-item:before {
 margin-top:0;
 }`,
+    },
   },
 };

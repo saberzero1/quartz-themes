@@ -4727,7 +4727,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "dark-theme-midnight": `.dark-theme-midnight {
+    "dark-theme-midnight": {
+      dark: `.dark-theme-midnight {
 --base-05: hsl(var(--base-hue), var(--base-sat, 16%), 90%);
 --base-10: hsl(var(--base-hue), var(--base-sat, 14%), 79%);
 --base-15: hsl(var(--base-hue), var(--base-sat, 12%), 70%);
@@ -4743,7 +4744,9 @@ html[saved-theme="light"] body ul.tags > li {
 --text-accent: hsl(var(--accent-h), 82%, 78%);
 --text-accent-hover: hsl(var(--accent-h), 90%, 84%);
 }`,
-    "headings-color-white": `body.headings-color-white {
+    },
+    "headings-color-white": {
+      general: `body.headings-color-white {
 --h1-color: initial;
 --h2-color: initial;
 --h3-color: initial;
@@ -4751,7 +4754,9 @@ html[saved-theme="light"] body ul.tags > li {
 --h5-color: initial;
 --h6-color: initial;
 }`,
-    "headings-color-colorful": `body.headings-color-colorful {
+    },
+    "headings-color-colorful": {
+      general: `body.headings-color-colorful {
 --h1-color: hsl(
     mod(var(--accent-h, 0), 360),
     min(var(--accent-s), 72%),
@@ -4783,11 +4788,16 @@ html[saved-theme="light"] body ul.tags > li {
     min(var(--accent-l), 62%)
   );
 }`,
-    "accent-affect-bg": `.accent-affect-bg {
+    },
+    "accent-affect-bg": {
+      general: `.accent-affect-bg {
 --base-hue: var(--accent-h);
 }`,
-    "neutral-bg": `.neutral-bg {
+    },
+    "neutral-bg": {
+      general: `.neutral-bg {
 --base-sat: 0%;
 }`,
+    },
   },
 };

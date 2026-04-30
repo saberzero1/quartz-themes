@@ -4943,7 +4943,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "preset-absol": `.preset-absol {
+    "preset-absol": {
+      general: `.preset-absol {
 --grotto-accent-h: 200;
 --grotto-accent-s: 16%;
 --grotto-accent-l: 60%;
@@ -4955,7 +4956,9 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-2: hsl(0, 0%, 80%);
 --grotto-accent: hsl(200, 16%, 60%);
 }`,
-    "preset-aegislash": `.preset-aegislash {
+    },
+    "preset-aegislash": {
+      general: `.preset-aegislash {
 --grotto-accent-h: 260;
 --grotto-accent-s: 20%;
 --grotto-accent-l: 60%;
@@ -4967,7 +4970,9 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-2: hsl(40, 30%, 80%);
 --grotto-accent: hsl(260, 20%, 60%);
 }`,
-    "preset-aggron": `.preset-aggron {
+    },
+    "preset-aggron": {
+      general: `.preset-aggron {
 --grotto-accent-h: 0;
 --grotto-accent-s: 0%;
 --grotto-accent-l: 58%;
@@ -4979,7 +4984,9 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-2: hsl(0, 0%, 78%);
 --grotto-accent: hsl(0, 0%, 58%);
 }`,
-    "preset-aromatisse": `.preset-aromatisse {
+    },
+    "preset-aromatisse": {
+      general: `.preset-aromatisse {
 --grotto-accent-h: 0;
 --grotto-accent-s: 50%;
 --grotto-accent-l: 60%;
@@ -4990,13 +4997,15 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-1: hsl(40, 0%, 86%);
 --grotto-light-2: hsl(40, 0%, 76%);
 --grotto-accent: hsl(0, 50%, 60%);
-}
-.preset-aromatisse {
+}`,
+      light: `.preset-aromatisse {
 --grotto-dark-0: hsl(300, 20%, 12%);
 --grotto-dark-1: hsl(300, 20%, 20%);
 --grotto-dark-2: hsl(300, 20%, 32%);
 }`,
-    "preset-calyrex": `.preset-calyrex {
+    },
+    "preset-calyrex": {
+      general: `.preset-calyrex {
 --grotto-accent-h: 160;
 --grotto-accent-s: 24%;
 --grotto-accent-l: 50%;
@@ -5008,7 +5017,9 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-2: hsl(50, 12%, 76%);
 --grotto-accent: hsl(160, 24%, 50%);
 }`,
-    "preset-clobbopus": `.preset-clobbopus {
+    },
+    "preset-clobbopus": {
+      general: `.preset-clobbopus {
 --grotto-accent-h: 16;
 --grotto-accent-s: 80%;
 --grotto-accent-l: 60%;
@@ -5020,7 +5031,9 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-2: hsl(33, 33%, 86%);
 --grotto-accent: hsl(16, 80%, 60%);
 }`,
-    "preset-cryogonal": `.preset-cryogonal {
+    },
+    "preset-cryogonal": {
+      general: `.preset-cryogonal {
 --grotto-accent-h: 210;
 --grotto-accent-s: 50%;
 --grotto-accent-l: 60%;
@@ -5031,13 +5044,15 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-1: hsl(40, 0%, 86%);
 --grotto-light-2: hsl(40, 0%, 76%);
 --grotto-accent: hsl(210, 50%, 60%);
-}
-.preset-cryogonal {
+}`,
+      light: `.preset-cryogonal {
 --grotto-dark-0: hsl(210, 10%, 12%);
 --grotto-dark-1: hsl(220, 30%, 28%);
 --grotto-dark-2: hsl(220, 30%, 36%);
 }`,
-    "preset-darkrai": `.preset-darkrai {
+    },
+    "preset-darkrai": {
+      general: `.preset-darkrai {
 --grotto-accent-h: 5;
 --grotto-accent-s: 50%;
 --grotto-accent-l: 50%;
@@ -5049,7 +5064,9 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-2: hsl(212, 0%, 80%);
 --grotto-accent: hsl(5, 50%, 50%);
 }`,
-    "preset-diancie": `.preset-diancie {
+    },
+    "preset-diancie": {
+      general: `.preset-diancie {
 --grotto-accent-h: 320;
 --grotto-accent-s: 20%;
 --grotto-accent-l: 60%;
@@ -5061,7 +5078,9 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-2: hsl(40, 0%, 72%);
 --grotto-accent: hsl(320, 20%, 60%);
 }`,
-    "preset-hisuian-typhlosion": `.preset-hisuian-typhlosion {
+    },
+    "preset-hisuian-typhlosion": {
+      general: `.preset-hisuian-typhlosion {
 --grotto-accent-h: 310;
 --grotto-accent-s: 16%;
 --grotto-accent-l: 50%;
@@ -5073,7 +5092,9 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-2: hsl(40, 16%, 76%);
 --grotto-accent: hsl(310, 16%, 50%);
 }`,
-    "preset-manectric": `.preset-manectric {
+    },
+    "preset-manectric": {
+      general: `.preset-manectric {
 --grotto-accent-h: 48;
 --grotto-accent-s: 52%;
 --grotto-accent-l: 52%;
@@ -5084,8 +5105,8 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-1: hsl(48, 20%, 96%);
 --grotto-light-2: hsl(48, 40%, 84%);
 --grotto-accent: hsl(48, 52%, 52%);
-}
-.preset-manectric {
+}`,
+      light: `.preset-manectric {
 --grotto-accent-h: 200;
 --grotto-accent-s: 34%;
 --grotto-accent-l: 34%;
@@ -5094,7 +5115,9 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-2: hsl(48, 30%, 80%);
 --grotto-accent: hsl(200, 34%, 34%);
 }`,
-    "preset-mareep": `.preset-mareep {
+    },
+    "preset-mareep": {
+      general: `.preset-mareep {
 --grotto-accent-h: 216;
 --grotto-accent-s: 30%;
 --grotto-accent-l: 48%;
@@ -5106,7 +5129,9 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-2: hsl(40, 36%, 82%);
 --grotto-accent: hsl(216, 30%, 48%);
 }`,
-    "preset-mega-lucario": `.preset-mega-lucario {
+    },
+    "preset-mega-lucario": {
+      general: `.preset-mega-lucario {
 --grotto-accent-h: 0;
 --grotto-accent-s: 40%;
 --grotto-accent-l: 56%;
@@ -5118,7 +5143,9 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-2: hsl(40, 20%, 80%);
 --grotto-accent: hsl(0, 40%, 56%);
 }`,
-    "preset-meloetta": `.preset-meloetta {
+    },
+    "preset-meloetta": {
+      general: `.preset-meloetta {
 --grotto-accent-h: 160;
 --grotto-accent-s: 36%;
 --grotto-accent-l: 56%;
@@ -5130,7 +5157,9 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-2: hsl(70, 30%, 80%);
 --grotto-accent: hsl(160, 36%, 56%);
 }`,
-    "preset-necrozma": `.preset-necrozma {
+    },
+    "preset-necrozma": {
+      general: `.preset-necrozma {
 --grotto-accent-h: 0;
 --grotto-accent-s: 0%;
 --grotto-accent-l: 32%;
@@ -5141,20 +5170,22 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-1: hsl(0, 0%, 96%);
 --grotto-light-2: hsl(0, 0%, 84%);
 --grotto-accent: hsl(0, 0%, 32%);
-}
-.preset-necrozma {
+}`,
+      dark: `.preset-necrozma {
 --grotto-accent-h: 0;
 --grotto-accent-s: 0%;
 --grotto-accent-l: 32%;
 --grotto-accent: hsl(0, 0%, 32%);
-}
-.preset-necrozma {
+}`,
+      light: `.preset-necrozma {
 --grotto-accent-h: 0;
 --grotto-accent-s: 0%;
 --grotto-accent-l: 20%;
 --grotto-accent: hsl(0, 0%, 20%);
 }`,
-    "preset-pirouette-meloetta": `.preset-pirouette-meloetta {
+    },
+    "preset-pirouette-meloetta": {
+      general: `.preset-pirouette-meloetta {
 --grotto-accent-h: 10;
 --grotto-accent-s: 50%;
 --grotto-accent-l: 54%;
@@ -5166,7 +5197,9 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-2: hsl(40, 40%, 80%);
 --grotto-accent: hsl(10, 50%, 54%);
 }`,
-    "preset-poltchageist": `.preset-poltchageist {
+    },
+    "preset-poltchageist": {
+      general: `.preset-poltchageist {
 --grotto-accent-h: 114;
 --grotto-accent-s: 24%;
 --grotto-accent-l: 50%;
@@ -5178,7 +5211,9 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-2: hsl(30, 20%, 76%);
 --grotto-accent: hsl(114, 24%, 50%);
 }`,
-    "preset-scolipede": `.preset-scolipede {
+    },
+    "preset-scolipede": {
+      general: `.preset-scolipede {
 --grotto-accent-h: 340;
 --grotto-accent-s: 40%;
 --grotto-accent-l: 50%;
@@ -5190,7 +5225,9 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-2: hsl(240, 10%, 72%);
 --grotto-accent: hsl(340, 40%, 56%);
 }`,
-    "preset-swampert": `.preset-swampert {
+    },
+    "preset-swampert": {
+      general: `.preset-swampert {
 --grotto-accent-h: 24;
 --grotto-accent-s: 64%;
 --grotto-accent-l: 56%;
@@ -5202,7 +5239,9 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-2: hsl(40, 14%, 76%);
 --grotto-accent: hsl(24, 64%, 56%);
 }`,
-    "preset-ursaluna": `.preset-ursaluna {
+    },
+    "preset-ursaluna": {
+      general: `.preset-ursaluna {
 --grotto-accent-h: 40;
 --grotto-accent-s: 40%;
 --grotto-accent-l: 50%;
@@ -5214,19 +5253,28 @@ html[saved-theme="light"] body ul.tags > li {
 --grotto-light-2: hsl(20, 10%, 70%);
 --grotto-accent: hsl(40, 40%, 50%);
 }`,
-    "grotto-tag-rounded": `.grotto-tag-rounded {
+    },
+    "grotto-tag-rounded": {
+      general: `.grotto-tag-rounded {
 --grotto-tag-border-radius: 2rem;
 }`,
-    "grotto-tag-accented": `.grotto-tag-accented {
+    },
+    "grotto-tag-accented": {
+      general: `.grotto-tag-accented {
 --grotto-tag-color: var(--grotto-text-color-on-accent);
 --grotto-tag-background-color: var(--grotto-accent);
 --grotto-tag-border-color: var(--text-normal);
 }`,
-    "grotto-rounded-ui": `.grotto-rounded-ui {
+    },
+    "grotto-rounded-ui": {
+      general: `.grotto-rounded-ui {
 --grotto-global-border-radius: 1rem;
 }`,
-    "grotto-blur": `.grotto-blur {
+    },
+    "grotto-blur": {
+      general: `.grotto-blur {
 --grotto-blur: 4px;
 }`,
+    },
   },
 };

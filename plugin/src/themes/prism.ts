@@ -5305,7 +5305,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "pt-color-scheme-latte-lt": `.pt-color-scheme-latte-lt {
+    "pt-color-scheme-latte-lt": {
+      light: `.pt-color-scheme-latte-lt {
 --color-grey-base-hsl: 0, 0%, 90%;
 --color-red-base-hsl: 11, 100%, 92%;
 --color-orange-base-hsl: 30, 90%, 88%;
@@ -5349,7 +5350,9 @@ html[saved-theme="light"] body ul.tags > li {
 --shadow-l: hsla(var(--shadow-color-hsl), 4%) 0 1px 2px, hsla(var(--shadow-color-hsl), 4%) 0 2px 4px,
   	hsla(var(--shadow-color-hsl), 4%) 0 4px 8px, hsla(var(--shadow-color-hsl), 4%) 0 6px 12px;
 }`,
-    "pt-color-scheme-periwinkle-lt": `.pt-color-scheme-periwinkle-lt {
+    },
+    "pt-color-scheme-periwinkle-lt": {
+      light: `.pt-color-scheme-periwinkle-lt {
 --color-grey-base-hsl: 0, 0%, 92%;
 --color-red-base-hsl: 6, 100%, 94%;
 --color-orange-base-hsl: 30, 100%, 91%;
@@ -5393,7 +5396,9 @@ html[saved-theme="light"] body ul.tags > li {
 --shadow-l: hsla(var(--shadow-color-hsl), 4%) 0 1px 2px, hsla(var(--shadow-color-hsl), 4%) 0 2px 4px,
   	hsla(var(--shadow-color-hsl), 4%) 0 4px 8px, hsla(var(--shadow-color-hsl), 4%) 0 6px 12px;
 }`,
-    "pt-color-scheme-pistachio-lt": `.pt-color-scheme-pistachio-lt {
+    },
+    "pt-color-scheme-pistachio-lt": {
+      light: `.pt-color-scheme-pistachio-lt {
 --color-grey-base-hsl: 0, 0%, 90%;
 --color-red-base-hsl: 8, 100%, 93%;
 --color-orange-base-hsl: 26, 89%, 89%;
@@ -5437,7 +5442,9 @@ html[saved-theme="light"] body ul.tags > li {
 --shadow-l: hsla(var(--shadow-color-hsl), 4%) 0 1px 2px, hsla(var(--shadow-color-hsl), 4%) 0 2px 4px,
   	hsla(var(--shadow-color-hsl), 4%) 0 4px 8px, hsla(var(--shadow-color-hsl), 4%) 0 6px 12px;
 }`,
-    "pt-color-scheme-peach-lt": `.pt-color-scheme-peach-lt {
+    },
+    "pt-color-scheme-peach-lt": {
+      light: `.pt-color-scheme-peach-lt {
 --color-grey-base-hsl: 0, 0%, 90%;
 --color-red-base-hsl: 9, 90%, 92%;
 --color-orange-base-hsl: 25, 96%, 89%;
@@ -5481,7 +5488,9 @@ html[saved-theme="light"] body ul.tags > li {
 --shadow-l: hsla(var(--shadow-color-hsl), 4%) 0 1px 2px, hsla(var(--shadow-color-hsl), 4%) 0 2px 4px,
   	hsla(var(--shadow-color-hsl), 4%) 0 4px 8px, hsla(var(--shadow-color-hsl), 4%) 0 6px 12px;
 }`,
-    "pt-color-scheme-custom-lt": `.pt-color-scheme-custom-lt {
+    },
+    "pt-color-scheme-custom-lt": {
+      light: `.pt-color-scheme-custom-lt {
 --color-grey-base-hsl: 0, 0%, 90%;
 --color-red-base-hsl: 7, 90%, 92%;
 --color-orange-base-hsl: 26, 85%, 89%;
@@ -5525,10 +5534,12 @@ html[saved-theme="light"] body ul.tags > li {
 --shadow-l: hsla(var(--shadow-color-hsl), 3%) 0 1px 2px, hsla(var(--shadow-color-hsl), 3%) 0 2px 4px,
   	hsla(var(--shadow-color-hsl), 3%) 0 4px 8px, hsla(var(--shadow-color-hsl), 3%) 0 6px 12px;
 }`,
-    "pt-color-scheme-style-minimal-lt": `.pt-color-scheme-style-minimal-lt .workspace-leaf div.workspace-leaf-content[data-type=file-tree-view] #file-tree-divider {
+    },
+    "pt-color-scheme-style-minimal-lt": {
+      general: `.pt-color-scheme-style-minimal-lt .workspace-leaf div.workspace-leaf-content[data-type=file-tree-view] #file-tree-divider {
 background-color: transparent;
-}
-body.pt-color-scheme-style-minimal-lt {
+}`,
+      light: `body.pt-color-scheme-style-minimal-lt {
 --background-secondary: var(--background-primary);
 --background-secondary-blur: var(--background-primary-blur);
 --window-border: 1px solid transparent;
@@ -5537,7 +5548,9 @@ body.pt-color-scheme-style-minimal-lt {
 body.pt-disable-blur {
 --background-secondary-blur: var(--background-primary);
 }`,
-    "pt-color-scheme-style-border-lt": `body.pt-color-scheme-style-border-lt {
+    },
+    "pt-color-scheme-style-border-lt": {
+      light: `body.pt-color-scheme-style-border-lt {
 --background-secondary: var(--background-primary);
 --background-secondary-blur: var(--background-primary-blur);
 }
@@ -5545,7 +5558,9 @@ body.pt-disable-blur {
 body.pt-disable-blur {
 --background-secondary-blur: var(--background-primary);
 }`,
-    "pt-accent-color-custom-lt": `body.pt-accent-color-custom-lt {
+    },
+    "pt-accent-color-custom-lt": {
+      light: `body.pt-accent-color-custom-lt {
 --interactive-accent-base-hsl: var(--color-accent-base-lt);
 --interactive-accent-tint-hsl: var(--color-accent-tint-lt);
 --interactive-accent-text-hsl: var(--color-accent-text-lt);
@@ -5554,7 +5569,9 @@ body.pt-disable-blur {
 --interactive-accent-text: hsl(var(--color-accent-text-lt));
 --interactive-accent-hover: hsl(var(--color-accent-tint-lt));
 }`,
-    "pt-accent-color-red-lt": `body.pt-accent-color-red-lt {
+    },
+    "pt-accent-color-red-lt": {
+      light: `body.pt-accent-color-red-lt {
 --interactive-accent-base-hsl: var(--color-red-base-hsl);
 --interactive-accent-tint-hsl: var(--color-red-tint-hsl);
 --interactive-accent-text-hsl: var(--color-red-text-hsl);
@@ -5563,7 +5580,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-red-text);
 --interactive-accent-hover: var(--color-red-tint);
 }`,
-    "pt-accent-color-orange-lt": `body.pt-accent-color-orange-lt {
+    },
+    "pt-accent-color-orange-lt": {
+      light: `body.pt-accent-color-orange-lt {
 --interactive-accent-base-hsl: var(--color-orange-base-hsl);
 --interactive-accent-tint-hsl: var(--color-orange-tint-hsl);
 --interactive-accent-text-hsl: var(--color-orange-text-hsl);
@@ -5572,7 +5591,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-orange-text);
 --interactive-accent-hover: var(--color-orange-tint);
 }`,
-    "pt-accent-color-yellow-lt": `body.pt-accent-color-yellow-lt {
+    },
+    "pt-accent-color-yellow-lt": {
+      light: `body.pt-accent-color-yellow-lt {
 --interactive-accent-base-hsl: var(--color-yellow-base-hsl);
 --interactive-accent-tint-hsl: var(--color-yellow-tint-hsl);
 --interactive-accent-text-hsl: var(--color-yellow-text-hsl);
@@ -5581,7 +5602,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-yellow-text);
 --interactive-accent-hover: var(--color-yellow-tint);
 }`,
-    "pt-accent-color-green-lt": `body.pt-accent-color-green-lt {
+    },
+    "pt-accent-color-green-lt": {
+      light: `body.pt-accent-color-green-lt {
 --interactive-accent-base-hsl: var(--color-green-base-hsl);
 --interactive-accent-tint-hsl: var(--color-green-tint-hsl);
 --interactive-accent-text-hsl: var(--color-green-text-hsl);
@@ -5590,7 +5613,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-green-text);
 --interactive-accent-hover: var(--color-green-tint);
 }`,
-    "pt-accent-color-mint-lt": `body.pt-accent-color-mint-lt {
+    },
+    "pt-accent-color-mint-lt": {
+      light: `body.pt-accent-color-mint-lt {
 --interactive-accent-base-hsl: var(--color-mint-base-hsl);
 --interactive-accent-tint-hsl: var(--color-mint-tint-hsl);
 --interactive-accent-text-hsl: var(--color-mint-text-hsl);
@@ -5599,7 +5624,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-mint-text);
 --interactive-accent-hover: var(--color-mint-tint);
 }`,
-    "pt-accent-color-cyan-lt": `body.pt-accent-color-cyan-lt {
+    },
+    "pt-accent-color-cyan-lt": {
+      light: `body.pt-accent-color-cyan-lt {
 --interactive-accent-base-hsl: var(--color-cyan-base-hsl);
 --interactive-accent-tint-hsl: var(--color-cyan-tint-hsl);
 --interactive-accent-text-hsl: var(--color-cyan-text-hsl);
@@ -5608,7 +5635,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-cyan-text);
 --interactive-accent-hover: var(--color-cyan-tint);
 }`,
-    "pt-accent-color-blue-lt": `body.pt-accent-color-blue-lt {
+    },
+    "pt-accent-color-blue-lt": {
+      light: `body.pt-accent-color-blue-lt {
 --interactive-accent-base-hsl: var(--color-blue-base-hsl);
 --interactive-accent-tint-hsl: var(--color-blue-tint-hsl);
 --interactive-accent-text-hsl: var(--color-blue-text-hsl);
@@ -5617,7 +5646,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-blue-text);
 --interactive-accent-hover: var(--color-blue-tint);
 }`,
-    "pt-accent-color-purple-lt": `body.pt-accent-color-purple-lt {
+    },
+    "pt-accent-color-purple-lt": {
+      light: `body.pt-accent-color-purple-lt {
 --interactive-accent-base-hsl: var(--color-purple-base-hsl);
 --interactive-accent-tint-hsl: var(--color-purple-tint-hsl);
 --interactive-accent-text-hsl: var(--color-purple-text-hsl);
@@ -5626,7 +5657,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-purple-text);
 --interactive-accent-hover: var(--color-purple-tint);
 }`,
-    "pt-accent-color-pink-lt": `body.pt-accent-color-pink-lt {
+    },
+    "pt-accent-color-pink-lt": {
+      light: `body.pt-accent-color-pink-lt {
 --interactive-accent-base-hsl: var(--color-pink-base-hsl);
 --interactive-accent-tint-hsl: var(--color-pink-tint-hsl);
 --interactive-accent-text-hsl: var(--color-pink-text-hsl);
@@ -5635,7 +5668,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-pink-text);
 --interactive-accent-hover: var(--color-pink-tint);
 }`,
-    "pt-accent-color-grey-lt": `body.pt-accent-color-grey-lt {
+    },
+    "pt-accent-color-grey-lt": {
+      light: `body.pt-accent-color-grey-lt {
 --interactive-accent-base-hsl: var(--color-grey-base-hsl);
 --interactive-accent-tint-hsl: var(--color-grey-tint-hsl);
 --interactive-accent-text-hsl: var(--color-grey-text-hsl);
@@ -5644,19 +5679,29 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-grey-text);
 --interactive-accent-hover: var(--color-grey-tint);
 }`,
-    "pt-highlight-text-custom-lt": `body.pt-highlight-text-custom-lt {
+    },
+    "pt-highlight-text-custom-lt": {
+      light: `body.pt-highlight-text-custom-lt {
 --highlight-text-normal: var(--highlight-text-accent-custom-lt);
 }`,
-    "pt-highlight-text-dark-lt": `body.pt-highlight-text-dark-lt {
+    },
+    "pt-highlight-text-dark-lt": {
+      light: `body.pt-highlight-text-dark-lt {
 --highlight-text-normal: var(--text-normal);
 }`,
-    "pt-highlight-text-light-lt": `body.pt-highlight-text-light-lt {
+    },
+    "pt-highlight-text-light-lt": {
+      light: `body.pt-highlight-text-light-lt {
 --highlight-text-normal: var(--background-primary);
 }`,
-    "pt-highlight-text-accent-lt": `body.pt-highlight-text-accent-lt {
+    },
+    "pt-highlight-text-accent-lt": {
+      light: `body.pt-highlight-text-accent-lt {
 --highlight-text-normal: var(--interactive-accent-text);
 }`,
-    "pt-color-scheme-mocha-dt": `.pt-color-scheme-mocha-dt {
+    },
+    "pt-color-scheme-mocha-dt": {
+      dark: `.pt-color-scheme-mocha-dt {
 --color-grey-base-hsl: 0, 0%, 17%;
 --color-red-base-hsl: 2, 50%, 20%;
 --color-orange-base-hsl: 26, 58%, 16%;
@@ -5700,7 +5745,9 @@ body.pt-disable-blur {
 --shadow-l: hsla(var(--shadow-color-hsl), 50%) 0 1px 2px, hsla(var(--shadow-color-hsl), 50%) 0 2px 4px,
   	hsla(var(--shadow-color-hsl), 50%) 0 4px 8px, hsla(var(--shadow-color-hsl), 50%) 0 6px 12px;
 }`,
-    "pt-color-scheme-indigo-dt": `.pt-color-scheme-indigo-dt {
+    },
+    "pt-color-scheme-indigo-dt": {
+      dark: `.pt-color-scheme-indigo-dt {
 --color-grey-base-hsl: 0, 0%, 17%;
 --color-red-base-hsl: 2, 50%, 20%;
 --color-orange-base-hsl: 26, 58%, 16%;
@@ -5744,7 +5791,9 @@ body.pt-disable-blur {
 --shadow-l: hsla(var(--shadow-color-hsl), 10%) 0 1px 2px, hsla(var(--shadow-color-hsl), 10%) 0 2px 4px,
   	hsla(var(--shadow-color-hsl), 10%) 0 4px 8px, hsla(var(--shadow-color-hsl), 10%) 0 6px 12px;
 }`,
-    "pt-color-scheme-pine-dt": `.pt-color-scheme-pine-dt {
+    },
+    "pt-color-scheme-pine-dt": {
+      dark: `.pt-color-scheme-pine-dt {
 --color-grey-base-hsl: 0, 0%, 17%;
 --color-red-base-hsl: 2, 50%, 20%;
 --color-orange-base-hsl: 26, 59%, 15%;
@@ -5788,7 +5837,9 @@ body.pt-disable-blur {
 --shadow-l: hsla(var(--shadow-color-hsl), 10%) 0 1px 2px, hsla(var(--shadow-color-hsl), 10%) 0 2px 4px,
   	hsla(var(--shadow-color-hsl), 10%) 0 4px 8px, hsla(var(--shadow-color-hsl), 10%) 0 6px 12px;
 }`,
-    "pt-color-scheme-cherry-dt": `.pt-color-scheme-cherry-dt {
+    },
+    "pt-color-scheme-cherry-dt": {
+      dark: `.pt-color-scheme-cherry-dt {
 --color-grey-base-hsl: 0, 0%, 17%;
 --color-red-base-hsl: 2, 50%, 20%;
 --color-orange-base-hsl: 26, 59%, 16%;
@@ -5832,7 +5883,9 @@ body.pt-disable-blur {
 --shadow-l: hsla(var(--shadow-color-hsl), 10%) 0 1px 2px, hsla(var(--shadow-color-hsl), 10%) 0 2px 4px,
   	hsla(var(--shadow-color-hsl), 10%) 0 4px 8px, hsla(var(--shadow-color-hsl), 10%) 0 6px 12px;
 }`,
-    "pt-color-scheme-custom-dt": `.pt-color-scheme-custom-dt {
+    },
+    "pt-color-scheme-custom-dt": {
+      dark: `.pt-color-scheme-custom-dt {
 --color-grey-base-hsl: 0, 0%, 16%;
 --color-red-base-hsl: 2, 55%, 19%;
 --color-orange-base-hsl: 26, 65%, 15%;
@@ -5876,14 +5929,16 @@ body.pt-disable-blur {
 --shadow-l: hsla(var(--shadow-color-hsl), 5%) 0 1px 2px, hsla(var(--shadow-color-hsl), 5%) 0 2px 4px,
   	hsla(var(--shadow-color-hsl), 5%) 0 4px 8px, hsla(var(--shadow-color-hsl), 5%) 0 6px 12px;
 }`,
-    "pt-color-scheme-style-minimal-dt": `.pt-color-scheme-style-minimal-dt .workspace-ribbon.mod-left.is-collapsed {
+    },
+    "pt-color-scheme-style-minimal-dt": {
+      general: `.pt-color-scheme-style-minimal-dt .workspace-ribbon.mod-left.is-collapsed {
 border-right-color: transparent;
 }
 
 .pt-color-scheme-style-minimal-dt .workspace-leaf div.workspace-leaf-content[data-type=file-tree-view] #file-tree-divider {
 background-color: transparent;
-}
-body.pt-color-scheme-style-minimal-dt {
+}`,
+      dark: `body.pt-color-scheme-style-minimal-dt {
 --background-secondary: var(--background-secondary-alt);
 --background-secondary-blur: var(--background-secondary-alt-blur);
 --window-border: 1px solid transparent;
@@ -5892,7 +5947,9 @@ body.pt-color-scheme-style-minimal-dt {
 body.pt-disable-blur {
 --background-secondary-blur: var(--background-secondary-alt);
 }`,
-    "pt-color-scheme-style-border-dt": `body.pt-color-scheme-style-border-dt {
+    },
+    "pt-color-scheme-style-border-dt": {
+      dark: `body.pt-color-scheme-style-border-dt {
 --background-secondary: var(--background-secondary-alt);
 --background-secondary-blur: var(--background-secondary-alt-blur);
 }
@@ -5900,7 +5957,9 @@ body.pt-disable-blur {
 body.pt-disable-blur {
 --background-secondary-blur: var(--background-secondary-alt);
 }`,
-    "pt-accent-color-custom-dt": `body.pt-accent-color-custom-dt {
+    },
+    "pt-accent-color-custom-dt": {
+      dark: `body.pt-accent-color-custom-dt {
 --interactive-accent-base-hsl: var(--color-accent-base-dt);
 --interactive-accent-tint-hsl: var(--color-accent-tint-dt);
 --interactive-accent-text-hsl: var(--color-accent-text-dt);
@@ -5909,7 +5968,9 @@ body.pt-disable-blur {
 --interactive-accent-text: hsl(var(--color-accent-text-dt));
 --interactive-accent-hover: hsl(var(--color-accent-tint-dt));
 }`,
-    "pt-accent-color-red-dt": `body.pt-accent-color-red-dt {
+    },
+    "pt-accent-color-red-dt": {
+      dark: `body.pt-accent-color-red-dt {
 --interactive-accent-base-hsl: var(--color-red-base-hsl);
 --interactive-accent-tint-hsl: var(--color-red-tint-hsl);
 --interactive-accent-text-hsl: var(--color-red-text-hsl);
@@ -5918,7 +5979,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-red-text);
 --interactive-accent-hover: var(--color-red-tint);
 }`,
-    "pt-accent-color-orange-dt": `body.pt-accent-color-orange-dt {
+    },
+    "pt-accent-color-orange-dt": {
+      dark: `body.pt-accent-color-orange-dt {
 --interactive-accent-base-hsl: var(--color-orange-base-hsl);
 --interactive-accent-tint-hsl: var(--color-orange-tint-hsl);
 --interactive-accent-text-hsl: var(--color-orange-text-hsl);
@@ -5927,7 +5990,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-orange-text);
 --interactive-accent-hover: var(--color-orange-tint);
 }`,
-    "pt-accent-color-yellow-dt": `body.pt-accent-color-yellow-dt {
+    },
+    "pt-accent-color-yellow-dt": {
+      dark: `body.pt-accent-color-yellow-dt {
 --interactive-accent-base-hsl: var(--color-yellow-base-hsl);
 --interactive-accent-tint-hsl: var(--color-yellow-tint-hsl);
 --interactive-accent-text-hsl: var(--color-yellow-text-hsl);
@@ -5936,7 +6001,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-yellow-text);
 --interactive-accent-hover: var(--color-yellow-tint);
 }`,
-    "pt-accent-color-green-dt": `body.pt-accent-color-green-dt {
+    },
+    "pt-accent-color-green-dt": {
+      dark: `body.pt-accent-color-green-dt {
 --interactive-accent-base-hsl: var(--color-green-base-hsl);
 --interactive-accent-tint-hsl: var(--color-green-tint-hsl);
 --interactive-accent-text-hsl: var(--color-green-text-hsl);
@@ -5945,7 +6012,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-green-text);
 --interactive-accent-hover: var(--color-green-tint);
 }`,
-    "pt-accent-color-mint-dt": `body.pt-accent-color-mint-dt {
+    },
+    "pt-accent-color-mint-dt": {
+      dark: `body.pt-accent-color-mint-dt {
 --interactive-accent-base-hsl: var(--color-mint-base-hsl);
 --interactive-accent-tint-hsl: var(--color-mint-tint-hsl);
 --interactive-accent-text-hsl: var(--color-mint-text-hsl);
@@ -5954,7 +6023,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-mint-text);
 --interactive-accent-hover: var(--color-mint-tint);
 }`,
-    "pt-accent-color-cyan-dt": `body.pt-accent-color-cyan-dt {
+    },
+    "pt-accent-color-cyan-dt": {
+      dark: `body.pt-accent-color-cyan-dt {
 --interactive-accent-base-hsl: var(--color-cyan-base-hsl);
 --interactive-accent-tint-hsl: var(--color-cyan-tint-hsl);
 --interactive-accent-text-hsl: var(--color-cyan-text-hsl);
@@ -5963,7 +6034,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-cyan-text);
 --interactive-accent-hover: var(--color-cyan-tint);
 }`,
-    "pt-accent-color-blue-dt": `body.pt-accent-color-blue-dt {
+    },
+    "pt-accent-color-blue-dt": {
+      dark: `body.pt-accent-color-blue-dt {
 --interactive-accent-base-hsl: var(--color-blue-base-hsl);
 --interactive-accent-tint-hsl: var(--color-blue-tint-hsl);
 --interactive-accent-text-hsl: var(--color-blue-text-hsl);
@@ -5972,7 +6045,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-blue-text);
 --interactive-accent-hover: var(--color-blue-tint);
 }`,
-    "pt-accent-color-purple-dt": `body.pt-accent-color-purple-dt {
+    },
+    "pt-accent-color-purple-dt": {
+      dark: `body.pt-accent-color-purple-dt {
 --interactive-accent-base-hsl: var(--color-purple-base-hsl);
 --interactive-accent-tint-hsl: var(--color-purple-tint-hsl);
 --interactive-accent-text-hsl: var(--color-purple-text-hsl);
@@ -5981,7 +6056,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-purple-text);
 --interactive-accent-hover: var(--color-purple-tint);
 }`,
-    "pt-accent-color-pink-dt": `body.pt-accent-color-pink-dt {
+    },
+    "pt-accent-color-pink-dt": {
+      dark: `body.pt-accent-color-pink-dt {
 --interactive-accent-base-hsl: var(--color-pink-base-hsl);
 --interactive-accent-tint-hsl: var(--color-pink-tint-hsl);
 --interactive-accent-text-hsl: var(--color-pink-text-hsl);
@@ -5990,7 +6067,9 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-pink-text);
 --interactive-accent-hover: var(--color-pink-tint);
 }`,
-    "pt-accent-color-grey-dt": `body.pt-accent-color-grey-dt {
+    },
+    "pt-accent-color-grey-dt": {
+      dark: `body.pt-accent-color-grey-dt {
 --interactive-accent-base-hsl: var(--color-grey-base-hsl);
 --interactive-accent-tint-hsl: var(--color-grey-tint-hsl);
 --interactive-accent-text-hsl: var(--color-grey-text-hsl);
@@ -5999,19 +6078,29 @@ body.pt-disable-blur {
 --interactive-accent-text: var(--color-grey-text);
 --interactive-accent-hover: var(--color-grey-tint);
 }`,
-    "pt-highlight-text-custom-dt": `body.pt-highlight-text-custom-dt {
+    },
+    "pt-highlight-text-custom-dt": {
+      dark: `body.pt-highlight-text-custom-dt {
 --highlight-text-normal: var(--highlight-text-accent-custom-dt);
 }`,
-    "pt-highlight-text-dark-dt": `body.pt-highlight-text-dark-dt {
+    },
+    "pt-highlight-text-dark-dt": {
+      dark: `body.pt-highlight-text-dark-dt {
 --highlight-text-normal: var(--background-primary);
 }`,
-    "pt-highlight-text-light-dt": `body.pt-highlight-text-light-dt {
+    },
+    "pt-highlight-text-light-dt": {
+      dark: `body.pt-highlight-text-light-dt {
 --highlight-text-normal: var(--text-normal);
 }`,
-    "pt-highlight-text-accent-dt": `body.pt-highlight-text-accent-dt {
+    },
+    "pt-highlight-text-accent-dt": {
+      dark: `body.pt-highlight-text-accent-dt {
 --highlight-text-normal: var(--interactive-accent-text);
 }`,
-    "pt-custom-vault-banner": `.pt-custom-vault-banner .workspace-drawer-vault-name {
+    },
+    "pt-custom-vault-banner": {
+      general: `.pt-custom-vault-banner .workspace-drawer-vault-name {
 display: flex;
 align-items: center;
 }
@@ -6040,7 +6129,9 @@ background-position: center;
 background-size: contain;
 border-radius: unset;
 }`,
-    "pt-focused-mode": `body.pt-focused-style-main-only:not(.is-popout-window) .status-bar, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon, body.pt-focused-style-main-only:not(.is-popout-window) .view-header, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-style-main-only:not(.is-popout-window) .mobile-navbar, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .status-bar, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .view-header, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .mobile-navbar, body.is-popout-window.pt-focused-style-popout-only .status-bar, body.is-popout-window.pt-focused-style-popout-only .workspace-ribbon, body.is-popout-window.pt-focused-style-popout-only .view-header, body.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-root .workspace-tab-header-container, body.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-horizontal.mod-left-split, body.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-horizontal.mod-right-split, body.is-popout-window.pt-focused-style-popout-only .workspace-ribbon.mod-left.is-collapsed, body.is-popout-window.pt-focused-style-popout-only .workspace-ribbon.mod-right.is-collapsed, body.is-popout-window.pt-focused-style-popout-only .mobile-navbar, body.is-popout-window.pt-focused-style-main-and-popout-only .status-bar, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon, body.is-popout-window.pt-focused-style-main-and-popout-only .view-header, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-root .workspace-tab-header-container, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-horizontal.mod-left-split, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-horizontal.mod-right-split, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon.mod-left.is-collapsed, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon.mod-right.is-collapsed, body.is-popout-window.pt-focused-style-main-and-popout-only .mobile-navbar {
+    },
+    "pt-focused-mode": {
+      general: `body.pt-focused-style-main-only:not(.is-popout-window) .status-bar, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon, body.pt-focused-style-main-only:not(.is-popout-window) .view-header, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-style-main-only:not(.is-popout-window) .mobile-navbar, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .status-bar, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .view-header, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-style-main-and-popout-only:not(.is-popout-window) .mobile-navbar, body.is-popout-window.pt-focused-style-popout-only .status-bar, body.is-popout-window.pt-focused-style-popout-only .workspace-ribbon, body.is-popout-window.pt-focused-style-popout-only .view-header, body.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-root .workspace-tab-header-container, body.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-horizontal.mod-left-split, body.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-horizontal.mod-right-split, body.is-popout-window.pt-focused-style-popout-only .workspace-ribbon.mod-left.is-collapsed, body.is-popout-window.pt-focused-style-popout-only .workspace-ribbon.mod-right.is-collapsed, body.is-popout-window.pt-focused-style-popout-only .mobile-navbar, body.is-popout-window.pt-focused-style-main-and-popout-only .status-bar, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon, body.is-popout-window.pt-focused-style-main-and-popout-only .view-header, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-root .workspace-tab-header-container, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-horizontal.mod-left-split, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-horizontal.mod-right-split, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon.mod-left.is-collapsed, body.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon.mod-right.is-collapsed, body.is-popout-window.pt-focused-style-main-and-popout-only .mobile-navbar {
 opacity: var(--fade-away-opacity);
 transition: opacity 250ms;
 transition-delay: var(--fade-away-delay);
@@ -6050,7 +6141,9 @@ body.pt-focused-style-main-only:not(.is-popout-window) .status-bar:hover, body.p
 opacity: unset;
 transition: opacity 50ms;
 }`,
-    "pt-focused-style-main-only": `body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .status-bar, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .view-header, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .mobile-navbar {
+    },
+    "pt-focused-style-main-only": {
+      general: `body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .status-bar, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .view-header, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .mobile-navbar {
 opacity: var(--fade-away-opacity);
 transition: opacity 250ms;
 transition-delay: var(--fade-away-delay);
@@ -6060,7 +6153,9 @@ body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window) .status-b
 opacity: unset;
 transition: opacity 50ms;
 }`,
-    "pt-focused-style-popout-only": `body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .status-bar, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-ribbon, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .view-header, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .mobile-navbar {
+    },
+    "pt-focused-style-popout-only": {
+      general: `body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .status-bar, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-ribbon, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .view-header, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .mobile-navbar {
 opacity: var(--fade-away-opacity);
 transition: opacity 250ms;
 transition-delay: var(--fade-away-delay);
@@ -6070,7 +6165,9 @@ body.pt-focused-mode.is-popout-window.pt-focused-style-popout-only .status-bar:h
 opacity: unset;
 transition: opacity 50ms;
 }`,
-    "pt-focused-style-main-and-popout-only": `body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .status-bar, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .view-header, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .mobile-navbar, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .status-bar, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .view-header, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .mobile-navbar {
+    },
+    "pt-focused-style-main-and-popout-only": {
+      general: `body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .status-bar, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .view-header, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window) .mobile-navbar, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .status-bar, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .view-header, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-root .workspace-tab-header-container, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-horizontal.mod-left-split, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-split.mod-horizontal.mod-right-split, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon.mod-left.is-collapsed, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .workspace-ribbon.mod-right.is-collapsed, body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .mobile-navbar {
 opacity: var(--fade-away-opacity);
 transition: opacity 250ms;
 transition-delay: var(--fade-away-delay);
@@ -6080,27 +6177,37 @@ body.pt-focused-mode.pt-focused-style-main-and-popout-only:not(.is-popout-window
 opacity: unset;
 transition: opacity 50ms;
 }`,
-    "pt-font-alt-a": `.pt-font-alt-a * {
+    },
+    "pt-font-alt-a": {
+      general: `.pt-font-alt-a * {
 font-feature-settings: "ss03";
 }
 
 .pt-font-alt-g * {
 font-feature-settings: "ss03", "ss04";
 }`,
-    "pt-font-alt-g": `.pt-font-alt-g * {
+    },
+    "pt-font-alt-g": {
+      general: `.pt-font-alt-g * {
 font-feature-settings: "ss04";
 }
 
 .pt-font-alt-a.pt-font-alt-g * {
 font-feature-settings: "ss03", "ss04";
 }`,
-    "pt-font-slashed-zero": `.pt-font-slashed-zero * {
+    },
+    "pt-font-slashed-zero": {
+      general: `.pt-font-slashed-zero * {
 font-variant: slashed-zero;
 }`,
-    "pt-font-disable-ligatures": `.pt-font-disable-ligatures * {
+    },
+    "pt-font-disable-ligatures": {
+      general: `.pt-font-disable-ligatures * {
 font-variant-ligatures: none;
 }`,
-    "pt-highlight-style-default-lt": `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+    },
+    "pt-highlight-style-default-lt": {
+      dark: `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
 padding: 0;
 font-size: 1em;
 background-color: unset;
@@ -6127,8 +6234,8 @@ padding: 0 3px;
 font-size: var(--font-smallest);
 background-color: var(--mark-highlight-base);
 border: var(--accent-border-width) solid var(--mark-highlight-tint);
-}
-:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+}`,
+      light: `:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
 padding: 0;
 font-size: 1em;
 background-color: unset;
@@ -6156,7 +6263,9 @@ font-size: var(--font-smallest);
 background-color: var(--mark-highlight-base);
 border: var(--accent-border-width) solid var(--mark-highlight-tint);
 }`,
-    "pt-highlight-style-border-lt": `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+    },
+    "pt-highlight-style-border-lt": {
+      dark: `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
 padding: 0;
 font-size: 1em;
 background-color: unset;
@@ -6183,8 +6292,8 @@ padding: 0 3px;
 font-size: var(--font-smallest);
 background-color: var(--mark-highlight-base);
 border: var(--accent-border-width) solid var(--mark-highlight-tint);
-}
-:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+}`,
+      light: `:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
 padding: 0;
 font-size: 1em;
 background-color: unset;
@@ -6212,7 +6321,9 @@ font-size: var(--font-smallest);
 background-color: var(--mark-highlight-base);
 border: var(--accent-border-width) solid var(--mark-highlight-tint);
 }`,
-    "pt-highlight-style-filled-lt": `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+    },
+    "pt-highlight-style-filled-lt": {
+      dark: `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
 padding: 0;
 font-size: 1em;
 background-color: unset;
@@ -6239,8 +6350,8 @@ padding: 0 3px;
 font-size: var(--font-smallest);
 background-color: var(--mark-highlight-base);
 border: var(--accent-border-width) solid var(--mark-highlight-tint);
-}
-:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+}`,
+      light: `:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
 padding: 0;
 font-size: 1em;
 background-color: unset;
@@ -6268,7 +6379,9 @@ font-size: var(--font-smallest);
 background-color: var(--mark-highlight-base);
 border: var(--accent-border-width) solid var(--mark-highlight-tint);
 }`,
-    "pt-highlight-style-borderandfilled-lt": `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+    },
+    "pt-highlight-style-borderandfilled-lt": {
+      dark: `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
 padding: 0;
 font-size: 1em;
 background-color: unset;
@@ -6295,8 +6408,8 @@ padding: 0 3px;
 font-size: var(--font-smallest);
 background-color: var(--mark-highlight-base);
 border: var(--accent-border-width) solid var(--mark-highlight-tint);
-}
-:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+}`,
+      light: `:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
 padding: 0;
 font-size: 1em;
 background-color: unset;
@@ -6324,31 +6437,37 @@ font-size: var(--font-smallest);
 background-color: var(--mark-highlight-base);
 border: var(--accent-border-width) solid var(--mark-highlight-tint);
 }`,
-    "pt-highlight-text-default-lt": `:is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-default-lt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-default-lt mark[class].mark-text-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt mark[class]).mark-text-default {
+    },
+    "pt-highlight-text-default-lt": {
+      dark: `:is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-default-lt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-default-lt mark[class].mark-text-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt mark[class]).mark-text-default {
 color: var(--text-normal);
 }
 
 :is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-default-lt mark[class].mark-text-color, body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt mark[class]).mark-text-color {
 color: var(--mark-highlight-text);
-}
-:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-lt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-default-dt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-lt mark[class].mark-text-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-default-dt mark[class]).mark-text-default {
+}`,
+      light: `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-lt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-default-dt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-lt mark[class].mark-text-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-default-dt mark[class]).mark-text-default {
 color: var(--text-normal);
 }
 
 :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-lt mark[class].mark-text-color, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-default-dt mark[class]).mark-text-color {
 color: var(--mark-highlight-text);
 }`,
-    "pt-highlight-text-color-lt": `:is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-color-lt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-dt mark[class]), body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-color-lt mark[class].mark-text-color {
+    },
+    "pt-highlight-text-color-lt": {
+      dark: `:is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-color-lt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-dt mark[class]), body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-color-lt mark[class].mark-text-color {
 color: var(--mark-highlight-text);
-}
-body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-lt mark[class].mark-text-default {
+}`,
+      light: `body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-lt mark[class].mark-text-default {
 color: var(--text-normal);
 }
 
 :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-lt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-color-dt mark[class]), body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-lt mark[class].mark-text-color {
 color: var(--mark-highlight-text);
 }`,
-    "pt-highlight-style-default-dt": `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+    },
+    "pt-highlight-style-default-dt": {
+      dark: `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
 padding: 0;
 font-size: 1em;
 background-color: unset;
@@ -6375,8 +6494,8 @@ padding: 0 3px;
 font-size: var(--font-smallest);
 background-color: var(--mark-highlight-base);
 border: var(--accent-border-width) solid var(--mark-highlight-tint);
-}
-:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+}`,
+      light: `:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
 padding: 0;
 font-size: 1em;
 background-color: unset;
@@ -6404,7 +6523,9 @@ font-size: var(--font-smallest);
 background-color: var(--mark-highlight-base);
 border: var(--accent-border-width) solid var(--mark-highlight-tint);
 }`,
-    "pt-highlight-style-border-dt": `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+    },
+    "pt-highlight-style-border-dt": {
+      dark: `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
 padding: 0;
 font-size: 1em;
 background-color: unset;
@@ -6431,8 +6552,8 @@ padding: 0 3px;
 font-size: var(--font-smallest);
 background-color: var(--mark-highlight-base);
 border: var(--accent-border-width) solid var(--mark-highlight-tint);
-}
-:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+}`,
+      light: `:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
 padding: 0;
 font-size: 1em;
 background-color: unset;
@@ -6460,7 +6581,9 @@ font-size: var(--font-smallest);
 background-color: var(--mark-highlight-base);
 border: var(--accent-border-width) solid var(--mark-highlight-tint);
 }`,
-    "pt-highlight-style-filled-dt": `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+    },
+    "pt-highlight-style-filled-dt": {
+      dark: `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
 padding: 0;
 font-size: 1em;
 background-color: unset;
@@ -6487,8 +6610,8 @@ padding: 0 3px;
 font-size: var(--font-smallest);
 background-color: var(--mark-highlight-base);
 border: var(--accent-border-width) solid var(--mark-highlight-tint);
-}
-:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+}`,
+      light: `:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
 padding: 0;
 font-size: 1em;
 background-color: unset;
@@ -6516,7 +6639,9 @@ font-size: var(--font-smallest);
 background-color: var(--mark-highlight-base);
 border: var(--accent-border-width) solid var(--mark-highlight-tint);
 }`,
-    "pt-highlight-style-borderandfilled-dt": `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+    },
+    "pt-highlight-style-borderandfilled-dt": {
+      dark: `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
 padding: 0;
 font-size: 1em;
 background-color: unset;
@@ -6543,8 +6668,8 @@ padding: 0 3px;
 font-size: var(--font-smallest);
 background-color: var(--mark-highlight-base);
 border: var(--accent-border-width) solid var(--mark-highlight-tint);
-}
-:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
+}`,
+      light: `:is(body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-default-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-border-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-filled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-style-borderandfilled-dt mark[class].mark-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-borderandfilled-lt mark[class].mark-default) {
 padding: 0;
 font-size: 1em;
 background-color: unset;
@@ -6572,34 +6697,42 @@ font-size: var(--font-smallest);
 background-color: var(--mark-highlight-base);
 border: var(--accent-border-width) solid var(--mark-highlight-tint);
 }`,
-    "pt-highlight-text-default-dt": `:is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-default-lt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-default-lt mark[class].mark-text-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt mark[class]).mark-text-default {
+    },
+    "pt-highlight-text-default-dt": {
+      dark: `:is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-default-lt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-default-lt mark[class].mark-text-default, body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt mark[class]).mark-text-default {
 color: var(--text-normal);
 }
 
 :is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-default-lt mark[class].mark-text-color, body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt mark[class]).mark-text-color {
 color: var(--mark-highlight-text);
-}
-:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-lt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-default-dt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-lt mark[class].mark-text-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-default-dt mark[class]).mark-text-default {
+}`,
+      light: `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-lt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-default-dt mark[class]), :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-lt mark[class].mark-text-default, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-default-dt mark[class]).mark-text-default {
 color: var(--text-normal);
 }
 
 :is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-lt mark[class].mark-text-color, body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-default-dt mark[class]).mark-text-color {
 color: var(--mark-highlight-text);
 }`,
-    "pt-highlight-text-color-dt": `body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-dt mark[class].mark-text-default {
+    },
+    "pt-highlight-text-color-dt": {
+      dark: `body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-dt mark[class].mark-text-default {
 color: var(--text-normal);
 }
 
 :is(body:not(.pt-disable-mark-highlight-styling).theme-light.pt-highlight-text-color-lt mark[class], body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-dt mark[class]), body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-dt mark[class].mark-text-color {
 color: var(--mark-highlight-text);
-}
-:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-lt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-color-dt mark[class]), body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-color-dt mark[class].mark-text-color {
+}`,
+      light: `:is(body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-lt mark[class], body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-color-dt mark[class]), body:not(.pt-disable-mark-highlight-styling).theme-dark.pt-highlight-text-color-dt mark[class].mark-text-color {
 color: var(--mark-highlight-text);
 }`,
-    "pt-tab-label-left-sidebar-left": `.pt-tab-label-left-sidebar-left .workspace-split.mod-left-split .workspace-tab-header-container {
+    },
+    "pt-tab-label-left-sidebar-left": {
+      general: `.pt-tab-label-left-sidebar-left .workspace-split.mod-left-split .workspace-tab-header-container {
 justify-content: flex-start;
 }`,
-    "pt-tab-label-left-sidebar-center": `.pt-tab-label-left-sidebar-center .workspace-split.mod-left-split .workspace-tab-header-container {
+    },
+    "pt-tab-label-left-sidebar-center": {
+      general: `.pt-tab-label-left-sidebar-center .workspace-split.mod-left-split .workspace-tab-header-container {
 justify-content: center;
 }
 
@@ -6611,17 +6744,23 @@ display: none;
 margin-left: auto;
 margin-right: auto;
 }`,
-    "pt-tab-label-left-sidebar-right": `.pt-tab-label-left-sidebar-right .workspace-split.mod-left-split .workspace-tab-header-container {
+    },
+    "pt-tab-label-left-sidebar-right": {
+      general: `.pt-tab-label-left-sidebar-right .workspace-split.mod-left-split .workspace-tab-header-container {
 justify-content: flex-end;
 }
 
 .pt-tab-label-left-sidebar-right .workspace-split.mod-left-split .workspace-tab-header-container .workspace-tab-header-spacer {
 display: none;
 }`,
-    "pt-tab-label-right-sidebar-left": `.pt-tab-label-right-sidebar-left .workspace-split.mod-right-split .workspace-tab-header-container {
+    },
+    "pt-tab-label-right-sidebar-left": {
+      general: `.pt-tab-label-right-sidebar-left .workspace-split.mod-right-split .workspace-tab-header-container {
 justify-content: flex-start;
 }`,
-    "pt-tab-label-right-sidebar-center": `.pt-tab-label-right-sidebar-center .workspace-split.mod-right-split .workspace-tab-header-container {
+    },
+    "pt-tab-label-right-sidebar-center": {
+      general: `.pt-tab-label-right-sidebar-center .workspace-split.mod-right-split .workspace-tab-header-container {
 justify-content: center;
 }
 
@@ -6633,17 +6772,23 @@ display: none;
 margin-left: auto;
 margin-right: auto;
 }`,
-    "pt-tab-label-right-sidebar-right": `.pt-tab-label-right-sidebar-right .workspace-split.mod-right-split .workspace-tab-header-container {
+    },
+    "pt-tab-label-right-sidebar-right": {
+      general: `.pt-tab-label-right-sidebar-right .workspace-split.mod-right-split .workspace-tab-header-container {
 justify-content: flex-end;
 }
 
 .pt-tab-label-right-sidebar-right .workspace-split.mod-right-split .workspace-tab-header-container .workspace-tab-header-spacer {
 display: none;
 }`,
-    "pt-nav-header-left-sidebar-position-top": `.pt-nav-header-left-sidebar-position-top .workspace-leaf-content[data-type=dictionary-view] .search-input-container {
+    },
+    "pt-nav-header-left-sidebar-position-top": {
+      general: `.pt-nav-header-left-sidebar-position-top .workspace-leaf-content[data-type=dictionary-view] .search-input-container {
 border-top: var(--window-border);
 }`,
-    "pt-nav-header-left-sidebar-position-bottom": `.pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left .nav-header, .pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split .nav-header {
+    },
+    "pt-nav-header-left-sidebar-position-bottom": {
+      general: `.pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left .nav-header, .pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split .nav-header {
 position: absolute;
 bottom: calc(var(--size-2-2) + var(--scroll-bar-size));
 z-index: var(--layer-popover);
@@ -6686,25 +6831,35 @@ padding-bottom: calc(var(--nav-header-padding-bottom) + 2 * var(--scroll-bar-siz
 .is-mobile .workspace-drawer.mod-left .nav-buttons-container, .is-mobile .workspace-drawer.mod-left .workspace-leaf-content[data-type=dangling-links] .nav-header {
 padding: var(--size-4-1);
 }`,
-    "pt-nav-header-left-sidebar-align-left": `.pt-nav-header-left-sidebar-align-left .workspace-split.mod-left-split .embedded-backlinks .nav-header {
+    },
+    "pt-nav-header-left-sidebar-align-left": {
+      general: `.pt-nav-header-left-sidebar-align-left .workspace-split.mod-left-split .embedded-backlinks .nav-header {
 position: sticky;
 top: 0;
 padding: 0 var(--size-2-2);
 }`,
-    "pt-nav-header-left-sidebar-align-center": `.pt-nav-header-left-sidebar-align-center .workspace-split.mod-left-split .embedded-backlinks .nav-header {
+    },
+    "pt-nav-header-left-sidebar-align-center": {
+      general: `.pt-nav-header-left-sidebar-align-center .workspace-split.mod-left-split .embedded-backlinks .nav-header {
 position: sticky;
 top: 0;
 padding: 0 var(--size-2-2);
 }`,
-    "pt-nav-header-left-sidebar-align-right": `.pt-nav-header-left-sidebar-align-right .workspace-split.mod-left-split .embedded-backlinks .nav-header {
+    },
+    "pt-nav-header-left-sidebar-align-right": {
+      general: `.pt-nav-header-left-sidebar-align-right .workspace-split.mod-left-split .embedded-backlinks .nav-header {
 position: sticky;
 top: 0;
 padding: 0 var(--size-2-2);
 }`,
-    "pt-nav-header-right-sidebar-position-top": `.pt-nav-header-right-sidebar-position-top .workspace-leaf-content[data-type=dictionary-view] .search-input-container {
+    },
+    "pt-nav-header-right-sidebar-position-top": {
+      general: `.pt-nav-header-right-sidebar-position-top .workspace-leaf-content[data-type=dictionary-view] .search-input-container {
 border-top: var(--window-border);
 }`,
-    "pt-nav-header-right-sidebar-position-bottom": `.pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right .nav-header, .pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split .nav-header {
+    },
+    "pt-nav-header-right-sidebar-position-bottom": {
+      general: `.pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right .nav-header, .pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split .nav-header {
 position: absolute;
 bottom: calc(var(--size-2-2) + var(--scroll-bar-size));
 z-index: var(--layer-popover);
@@ -6747,36 +6902,48 @@ padding-bottom: calc(var(--nav-header-padding-bottom) + 2 * var(--scroll-bar-siz
 .is-mobile .workspace-drawer.mod-right .nav-buttons-container, .is-mobile .workspace-drawer.mod-right .workspace-leaf-content[data-type=dangling-links] .nav-header {
 padding: var(--size-4-1);
 }`,
-    "pt-nav-header-right-sidebar-align-left": `.pt-nav-header-right-sidebar-align-left .workspace-split.mod-right-split .embedded-backlinks .nav-header {
+    },
+    "pt-nav-header-right-sidebar-align-left": {
+      general: `.pt-nav-header-right-sidebar-align-left .workspace-split.mod-right-split .embedded-backlinks .nav-header {
 position: sticky;
 top: 0;
 padding: 0 var(--size-2-2);
 }`,
-    "pt-nav-header-right-sidebar-align-center": `.pt-nav-header-right-sidebar-align-center .workspace-split.mod-right-split .embedded-backlinks .nav-header {
+    },
+    "pt-nav-header-right-sidebar-align-center": {
+      general: `.pt-nav-header-right-sidebar-align-center .workspace-split.mod-right-split .embedded-backlinks .nav-header {
 position: sticky;
 top: 0;
 padding: 0 var(--size-2-2);
 }`,
-    "pt-nav-header-right-sidebar-align-right": `.pt-nav-header-right-sidebar-align-right .workspace-split.mod-right-split .embedded-backlinks .nav-header {
+    },
+    "pt-nav-header-right-sidebar-align-right": {
+      general: `.pt-nav-header-right-sidebar-align-right .workspace-split.mod-right-split .embedded-backlinks .nav-header {
 position: sticky;
 top: 0;
 padding: 0 var(--size-2-2);
 }`,
-    "pt-tab-header-center": `.pt-tab-header-center .mod-root .workspace-tab-header-container-inner {
+    },
+    "pt-tab-header-center": {
+      general: `.pt-tab-header-center .mod-root .workspace-tab-header-container-inner {
 margin-left: auto;
 }
 
 .pt-tab-header-center .mod-root .workspace-tab-header-new-tab {
 margin-right: auto;
 }`,
-    "pt-tab-header-right": `.pt-tab-header-right .mod-root .workspace-tab-header-container-inner {
+    },
+    "pt-tab-header-right": {
+      general: `.pt-tab-header-right .mod-root .workspace-tab-header-container-inner {
 margin-left: auto;
 }
 
 .pt-tab-header-right .mod-root .workspace-tab-header-new-tab {
 margin-right: var(--size-4-1);
 }`,
-    "pt-file-explorer-folder-icon": `.pt-file-explorer-folder-icon .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon {
+    },
+    "pt-file-explorer-folder-icon": {
+      general: `.pt-file-explorer-folder-icon .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon {
 display: inline-flex;
 width: 17px;
 height: -webkit-fill-available;
@@ -6830,7 +6997,9 @@ background-color: var(--interactive-accent-text);
 .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
 background-color: var(--rainbow-text-color);
 }`,
-    "pt-file-explorer-folder-icon-default": `.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon {
+    },
+    "pt-file-explorer-folder-icon-default": {
+      general: `.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon {
 background-color: var(--text-muted);
 }
 
@@ -6849,7 +7018,9 @@ background-color: var(--interactive-accent-text);
 .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
 background-color: var(--rainbow-text-color);
 }`,
-    "pt-file-explorer-folder-icon-accent": `.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon {
+    },
+    "pt-file-explorer-folder-icon-accent": {
+      general: `.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon {
 background-color: var(--interactive-accent-text);
 }
 
@@ -6864,7 +7035,9 @@ background-color: var(--interactive-accent-text);
 .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
 background-color: var(--rainbow-text-color);
 }`,
-    "pt-file-explorer-folder-icon-active": `.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon {
+    },
+    "pt-file-explorer-folder-icon-active": {
+      general: `.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon {
 background-color: var(--interactive-accent-text);
 }
 
@@ -6883,7 +7056,9 @@ background-color: var(--interactive-accent-text);
 .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
 background-color: var(--rainbow-text-color);
 }`,
-    "pt-colored-folders": `.pt-colored-folders-style-accent.pt-colored-folders-files-match .workspace-leaf-content[data-type=file-explorer] .nav-folder .nav-file-title:not(.is-active, :hover) {
+    },
+    "pt-colored-folders": {
+      general: `.pt-colored-folders-style-accent.pt-colored-folders-files-match .workspace-leaf-content[data-type=file-explorer] .nav-folder .nav-file-title:not(.is-active, :hover) {
 color: var(--interactive-accent-text);
 }
 
@@ -6992,7 +7167,9 @@ color: var(--rainbow-text-color);
 .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
 background-color: var(--rainbow-text-color);
 }`,
-    "pt-colored-folders-style-accent": `.pt-colored-folders.pt-colored-folders-files-match .workspace-leaf-content[data-type=file-explorer] .nav-folder .nav-file-title:not(.is-active, :hover) {
+    },
+    "pt-colored-folders-style-accent": {
+      general: `.pt-colored-folders.pt-colored-folders-files-match .workspace-leaf-content[data-type=file-explorer] .nav-folder .nav-file-title:not(.is-active, :hover) {
 color: var(--interactive-accent-text);
 }
 
@@ -7016,7 +7193,9 @@ color: var(--interactive-accent-text);
 .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
 background-color: var(--interactive-accent-text);
 }`,
-    "pt-colored-folders-style-rainbow": `.pt-colored-folders.pt-colored-folders-files-match .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-file-title:not(.is-active, :hover) {
+    },
+    "pt-colored-folders-style-rainbow": {
+      general: `.pt-colored-folders.pt-colored-folders-files-match .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-file-title:not(.is-active, :hover) {
 color: var(--rainbow-text-color);
 }
 
@@ -7100,20 +7279,28 @@ color: var(--rainbow-text-color);
 .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon, .pt-colored-folders.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
 background-color: var(--rainbow-text-color);
 }`,
-    "pt-colored-folders-files-match": `.pt-colored-folders.pt-colored-folders-style-accent.pt-colored-folders-files-match .workspace-leaf-content[data-type=file-explorer] .nav-folder .nav-file-title:not(.is-active, :hover) {
+    },
+    "pt-colored-folders-files-match": {
+      general: `.pt-colored-folders.pt-colored-folders-style-accent.pt-colored-folders-files-match .workspace-leaf-content[data-type=file-explorer] .nav-folder .nav-file-title:not(.is-active, :hover) {
 color: var(--interactive-accent-text);
 }
 
 .pt-colored-folders.pt-colored-folders-style-rainbow.pt-colored-folders-files-match .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-file-title:not(.is-active, :hover) {
 color: var(--rainbow-text-color);
 }`,
-    "pt-titlebar-hide-text": `body.pt-titlebar-hide-text .titlebar .titlebar-text {
+    },
+    "pt-titlebar-hide-text": {
+      general: `body.pt-titlebar-hide-text .titlebar .titlebar-text {
 display: none;
 }`,
-    "pt-status-bar-position-hidden": `.pt-status-bar-position-hidden .status-bar {
+    },
+    "pt-status-bar-position-hidden": {
+      general: `.pt-status-bar-position-hidden .status-bar {
 display: none;
 }`,
-    "pt-status-bar-position-floating": `.pt-status-bar-position-floating .status-bar {
+    },
+    "pt-status-bar-position-floating": {
+      general: `.pt-status-bar-position-floating .status-bar {
 --status-bar-position: absolute;
 right: 0;
 left: 0;
@@ -7130,7 +7317,9 @@ box-shadow: var(--shadow-l);
 .pt-status-bar-position-floating div#cMenuModalBar {
 bottom: calc(var(--size-4-3) + 33px + var(--scroll-bar-size)) !important;
 }`,
-    "pt-status-bar-position-fixed": `.pt-status-bar-position-fixed .status-bar {
+    },
+    "pt-status-bar-position-fixed": {
+      general: `.pt-status-bar-position-fixed .status-bar {
 --status-bar-position: relative;
 padding: 1px var(--size-4-2);
 border: unset;
@@ -7141,25 +7330,39 @@ border-radius: unset;
 .pt-status-bar-position-fixed div#cMenuModalBar {
 bottom: calc(var(--size-2-3) + 26px + var(--scroll-bar-size)) !important;
 }`,
-    "pt-fixed-status-bar-align-left": `.pt-fixed-status-bar-align-left .status-bar {
+    },
+    "pt-fixed-status-bar-align-left": {
+      general: `.pt-fixed-status-bar-align-left .status-bar {
 justify-content: flex-start;
 }`,
-    "pt-fixed-status-bar-align-center": `.pt-fixed-status-bar-align-center .status-bar {
+    },
+    "pt-fixed-status-bar-align-center": {
+      general: `.pt-fixed-status-bar-align-center .status-bar {
 justify-content: center;
 }`,
-    "pt-fixed-status-bar-align-right": `.pt-fixed-status-bar-align-right .status-bar {
+    },
+    "pt-fixed-status-bar-align-right": {
+      general: `.pt-fixed-status-bar-align-right .status-bar {
 justify-content: flex-end;
 }`,
-    "pt-status-bar-custom-lt": `.pt-status-bar-custom-lt .status-bar {
+    },
+    "pt-status-bar-custom-lt": {
+      light: `.pt-status-bar-custom-lt .status-bar {
 background: var(--status-bar-background-color-lt);
 }`,
-    "pt-status-bar-custom-dt": `.pt-status-bar-custom-dt .status-bar {
+    },
+    "pt-status-bar-custom-dt": {
+      dark: `.pt-status-bar-custom-dt .status-bar {
 background: var(--status-bar-background-color-dt);
 }`,
-    "pt-disable-kanban-title-count": `.pt-disable-kanban-title-count div.kanban-plugin__lane-title-count {
+    },
+    "pt-disable-kanban-title-count": {
+      general: `.pt-disable-kanban-title-count div.kanban-plugin__lane-title-count {
 display: none;
 }`,
-    "pt-center-kanban-title-text": `.pt-center-kanban-title-text .kanban-plugin__lane-title {
+    },
+    "pt-center-kanban-title-text": {
+      general: `.pt-center-kanban-title-text .kanban-plugin__lane-title {
 align-items: center;
 }
 
@@ -7167,36 +7370,52 @@ align-items: center;
 width: -webkit-fill-available;
 width: fill-available;
 }`,
-    "pt-kanban-background-dots-lt": `.pt-kanban-background-dots-lt .kanban-plugin__board {
+    },
+    "pt-kanban-background-dots-lt": {
+      light: `.pt-kanban-background-dots-lt .kanban-plugin__board {
 background-image: radial-gradient(circle, hsla(var(--background-secondary-hsl), 90%) 1px, rgba(0, 0, 0, 0) 1px);
 background-attachment: local;
 background-size: 8px 8px;
 }`,
-    "pt-kanban-background-grid-lt": `.pt-kanban-background-grid-lt .kanban-plugin__board {
+    },
+    "pt-kanban-background-grid-lt": {
+      light: `.pt-kanban-background-grid-lt .kanban-plugin__board {
 background-image: linear-gradient(to right, hsla(var(--background-secondary-hsl), 90%) 1px, transparent 1px), linear-gradient(to bottom, hsla(var(--background-secondary-hsl), 90%) 1px, transparent 1px);
 background-attachment: local;
 background-size: 8px 8px;
 }`,
-    "pt-kanban-background-dots-dt": `.pt-kanban-background-dots-dt .kanban-plugin__board {
+    },
+    "pt-kanban-background-dots-dt": {
+      dark: `.pt-kanban-background-dots-dt .kanban-plugin__board {
 background-image: radial-gradient(circle, hsla(var(--background-secondary-hsl), 90%) 1px, rgba(0, 0, 0, 0) 1px);
 background-attachment: local;
 background-size: 8px 8px;
 }`,
-    "pt-kanban-background-grid-dt": `.pt-kanban-background-grid-dt .kanban-plugin__board {
+    },
+    "pt-kanban-background-grid-dt": {
+      dark: `.pt-kanban-background-grid-dt .kanban-plugin__board {
 background-image: linear-gradient(to right, hsla(var(--background-secondary-hsl), 90%) 1px, transparent 1px), linear-gradient(to bottom, hsla(var(--background-secondary-hsl), 90%) 1px, transparent 1px);
 background-attachment: local;
 background-size: 8px 8px;
 }`,
-    "pt-icon-folder-accent": `.pt-icon-folder-accent .obsidian-icon-folder-icon {
+    },
+    "pt-icon-folder-accent": {
+      general: `.pt-icon-folder-accent .obsidian-icon-folder-icon {
 color: var(--interactive-accent-text);
 }`,
-    "pt-icons-accent": `.pt-icons-accent .obsidian-icon {
+    },
+    "pt-icons-accent": {
+      general: `.pt-icons-accent .obsidian-icon {
 color: var(--interactive-accent-text);
 }`,
-    "pt-fade-inactive-tabs": `.pt-fade-inactive-tabs :not(.mod-active) .workspace-tab-header.is-active:not(.mod-active) {
+    },
+    "pt-fade-inactive-tabs": {
+      general: `.pt-fade-inactive-tabs :not(.mod-active) .workspace-tab-header.is-active:not(.mod-active) {
 opacity: 0.55;
 }`,
-    "pt-disable-blur": `body:is(.theme-light, .theme-dark).pt-disable-blur {
+    },
+    "pt-disable-blur": {
+      dark: `body:is(.theme-light, .theme-dark).pt-disable-blur {
 --background-secondary-blur: var(--background-secondary);
 }
 
@@ -7206,8 +7425,8 @@ body.pt-color-scheme-style-border-dt.pt-disable-blur {
 
 body.pt-color-scheme-style-minimal-dt.pt-disable-blur {
 --background-secondary-blur: var(--background-secondary-alt);
-}
-body:is(.theme-light, .theme-dark).pt-disable-blur {
+}`,
+      light: `body:is(.theme-light, .theme-dark).pt-disable-blur {
 --background-secondary-blur: var(--background-secondary);
 }
 
@@ -7218,7 +7437,9 @@ body.pt-color-scheme-style-border-lt.pt-disable-blur {
 body.pt-color-scheme-style-minimal-lt.pt-disable-blur {
 --background-secondary-blur: var(--background-primary);
 }`,
-    "pt-collapsed-pinned-tab": `.pt-collapsed-pinned-tab .workspace .mod-root .workspace-tab-header[data-type=markdown]:has(.mod-pinned) .workspace-tab-header-inner-icon, .pt-collapsed-pinned-tab .workspace .mod-root .workspace-tab-header[data-type=empty]:has(.mod-pinned) .workspace-tab-header-inner-icon {
+    },
+    "pt-collapsed-pinned-tab": {
+      general: `.pt-collapsed-pinned-tab .workspace .mod-root .workspace-tab-header[data-type=markdown]:has(.mod-pinned) .workspace-tab-header-inner-icon, .pt-collapsed-pinned-tab .workspace .mod-root .workspace-tab-header[data-type=empty]:has(.mod-pinned) .workspace-tab-header-inner-icon {
 display: flex;
 }
 
@@ -7231,11 +7452,15 @@ flex: unset;
 width: fit-content;
 min-width: unset;
 }`,
-    "pt-pdf-dark-theme": `.theme-dark .pdfViewer .canvasWrapper, .theme-dark .pdf-sidebar-container img.thumbnailImage {
+    },
+    "pt-pdf-dark-theme": {
+      dark: `.theme-dark .pdfViewer .canvasWrapper, .theme-dark .pdf-sidebar-container img.thumbnailImage {
 filter: invert(1) hue-rotate(180deg) saturate(100%);
 mix-blend-mode: screen;
 }`,
-    "enable-alternative-checkboxes": `body.enable-alternative-checkboxes {
+    },
+    "enable-alternative-checkboxes": {
+      general: `body.enable-alternative-checkboxes {
 /* - [/] Incomplete */
 }
 
@@ -7733,7 +7958,9 @@ height: -webkit-fill-available;
 height: fill-available;
 /* Fallback for Safari */
 }`,
-    "pt-alternative-checkboxes-color-icon": `body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task="/"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task="/"] {
+    },
+    "pt-alternative-checkboxes-color-icon": {
+      general: `body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task="/"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task="/"] {
 --icon-mask-color: var(--color-grey-text);
 }
 
@@ -7812,7 +8039,9 @@ body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.Hype
 body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon div.HyperMD-task-line[data-task=d], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-icon ul > li[data-task=d] {
 --icon-mask-color: var(--color-red-text);
 }`,
-    "pt-alternative-checkboxes-color-text": `body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task="/"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task="/"] {
+    },
+    "pt-alternative-checkboxes-color-text": {
+      general: `body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task="/"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task="/"] {
 --line-text-color: var(--color-grey-text);
 }
 
@@ -7891,7 +8120,9 @@ body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.Hype
 body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text div.HyperMD-task-line[data-task=d], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-text ul > li[data-task=d] {
 --line-text-color: var(--color-red-text);
 }`,
-    "pt-alternative-checkboxes-color-background": `body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task="/"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task="/"] {
+    },
+    "pt-alternative-checkboxes-color-background": {
+      general: `body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task="/"], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task="/"] {
 --line-background: var(--color-grey-base);
 }
 
@@ -7970,5 +8201,6 @@ body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background di
 body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background div.HyperMD-task-line[data-task=d], body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=d] {
 --line-background: var(--color-red-base);
 }`,
+    },
   },
 };

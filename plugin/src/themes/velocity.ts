@@ -13022,18 +13022,23 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "disable-custom-icons": `body.disable-custom-icons svg.svg-icon, body.disable-custom-icons .clickable-icon>svg.svg-icon {
+    "disable-custom-icons": {
+      general: `body.disable-custom-icons svg.svg-icon, body.disable-custom-icons .clickable-icon>svg.svg-icon {
 -webkit-mask-image:unset;
 -webkit-mask-position:unset;
 -webkit-mask-size:unset;
 padding:initial;
 }`,
-    "restore-indent-guide": `body.restore-indent-guide {
+    },
+    "restore-indent-guide": {
+      general: `body.restore-indent-guide {
 --indentation-guide-width: 2px;
 --indentation-guide-width-active: 2px;
 --nav-indentation-guide-width: 2px;
 }`,
-    "disable-hover-header": `body.disable-hover-header .nav-buttons-container {
+    },
+    "disable-hover-header": {
+      general: `body.disable-hover-header .nav-buttons-container {
 height:fit-content;
 width:fit-content;
 }
@@ -13045,13 +13050,17 @@ filter:unset;
 body.disable-hover-header .nav-buttons-container {
 --trans-faint-20: var(--trans-strong-40);
 }`,
-    "disable-status-fade": `body.disable-status-fade .status-bar {
+    },
+    "disable-status-fade": {
+      general: `body.disable-status-fade .status-bar {
 outline-width:1px;
 filter:opacity(1);
 backdrop-filter:brightness(1.125) var(--blur-m);
 box-shadow:var(--menu-shadow);
 }`,
-    "disable-title-h1": `.disable-title-h1 .cm-line.HyperMD-header-1, .disable-title-h1 .markdown-rendered h1 {
+    },
+    "disable-title-h1": {
+      general: `.disable-title-h1 .cm-line.HyperMD-header-1, .disable-title-h1 .markdown-rendered h1 {
 color:var(--text-normal);
 font-size:var(--h1-size-alt);
 font-weight:var(--h1-weight-alt);
@@ -13061,10 +13070,14 @@ font-weight:var(--h1-weight-alt);
 .disable-title-h1 .cm-line.HyperMD-header-1::after, .disable-title-h1 .markdown-rendered h1::after {
 display:none;
 }`,
-    "prevent-exit": `body.prevent-exit .workspace-tabs:not(.mod-stacked) .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-close-button {
+    },
+    "prevent-exit": {
+      general: `body.prevent-exit .workspace-tabs:not(.mod-stacked) .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-close-button {
 display:none;
 }`,
-    "active-line-highlight": `.active-line-highlight .cm-active.HyperMD-header-1::before, .active-line-highlight .cm-active:not(.HyperMD-header-1,.HyperMD-codeblock,.HyperMD-quote,.cm-gutterElement)::after {
+    },
+    "active-line-highlight": {
+      general: `.active-line-highlight .cm-active.HyperMD-header-1::before, .active-line-highlight .cm-active:not(.HyperMD-header-1,.HyperMD-codeblock,.HyperMD-quote,.cm-gutterElement)::after {
 content:"";
 z-index:-2;
 inset:-2px -6px;
@@ -13085,14 +13098,18 @@ background-color:oklch(from var(--color-base-100) l c h/0.05);
 .active-line-highlight .table-cell-wrapper .cm-active::after {
 display:none;
 }`,
-    "hide-bases-header": `body.hide-bases-header .mod-root .markdown-preview-view .bases-view {
+    },
+    "hide-bases-header": {
+      general: `body.hide-bases-header .mod-root .markdown-preview-view .bases-view {
 margin-top:1.5rem;
 }
 
 body.hide-bases-header .mod-root .markdown-preview-view .bases-header {
 display:none;
 }`,
-    "enable-dim-img": `body.theme-dark :is(.markdown-preview-view,.markdown-source-view) :is(.image-embed img,.markdown-rendered img) {
+    },
+    "enable-dim-img": {
+      dark: `body.theme-dark :is(.markdown-preview-view,.markdown-source-view) :is(.image-embed img,.markdown-rendered img) {
 filter:opacity(0.7);
 transition:filter var(--anim-duration-moderate) var(--anim-motion-smooth);
 }
@@ -13100,7 +13117,9 @@ transition:filter var(--anim-duration-moderate) var(--anim-motion-smooth);
 body.theme-dark :is(.markdown-preview-view,.markdown-source-view) :is(.image-embed img,.markdown-rendered img):hover {
 filter:unset;
 }`,
-    "improve-pinned-tabs": `body.improve-pinned-tabs .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:has(.mod-pinned,.mod-linked) {
+    },
+    "improve-pinned-tabs": {
+      general: `body.improve-pinned-tabs .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:has(.mod-pinned,.mod-linked) {
 max-width:64px;
 }
 
@@ -13120,8 +13139,11 @@ body.improve-pinned-tabs .mod-root .workspace-tabs:not(.mod-stacked) .workspace-
 margin-inline:unset;
 --background-modifier-active-hover: var(--color-accent-4);
 }`,
-    "disable-corner-smoothing": `body.disable-corner-smoothing {
+    },
+    "disable-corner-smoothing": {
+      general: `body.disable-corner-smoothing {
 --corner-smoothing: unset !important;
 }`,
+    },
   },
 };

@@ -4064,12 +4064,15 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "ribbon-default": `.ribbon-default .workspace-ribbon.mod-left.is-collapsed:not(:hover) {
+    "ribbon-default": {
+      general: `.ribbon-default .workspace-ribbon.mod-left.is-collapsed:not(:hover) {
 opacity: 1;
 max-width: unset;
 min-width: unset;
 }`,
-    "ribbon-hover": `.ribbon-hover .workspace-ribbon.mod-left.is-collapsed:not(:hover) {
+    },
+    "ribbon-hover": {
+      general: `.ribbon-hover .workspace-ribbon.mod-left.is-collapsed:not(:hover) {
 opacity: 0;
 max-width: 0.1px;
 min-width: 0px;
@@ -4079,13 +4082,19 @@ padding: 0px;
 .ribbon-hover .workspace-ribbon.mod-left {
 transition: 0.25s;
 }`,
-    "ribbon-hide": `.ribbon-hide .workspace-ribbon.mod-left.is-collapsed {
+    },
+    "ribbon-hide": {
+      general: `.ribbon-hide .workspace-ribbon.mod-left.is-collapsed {
 display: none;
 }`,
-    "hide-frontmatter": `.hide-frontmatter .frontmatter-container {
+    },
+    "hide-frontmatter": {
+      general: `.hide-frontmatter .frontmatter-container {
 display: none;
 }`,
-    "frontmatter-blockquote": `.frontmatter-blockquote .frontmatter-container.is-collapsed .frontmatter-container-header {
+    },
+    "frontmatter-blockquote": {
+      general: `.frontmatter-blockquote .frontmatter-container.is-collapsed .frontmatter-container-header {
 width: fit-content;
 color: var(--text-faint);
 }
@@ -4109,16 +4118,22 @@ font-size: var(--font-ui-medium) !important;
 color: var(--text-normal);
 font-style: italic;
 }`,
-    "special-h6": `.special-h6 h6, .special-h6 .HyperMD-header-6 {
+    },
+    "special-h6": {
+      general: `.special-h6 h6, .special-h6 .HyperMD-header-6 {
 background-color: var(--h6-background);
 text-align: center;
 margin-bottom: 0.2;
 padding:0.2em;
 }`,
-    "hide-callout-icons": `.hide-callout-icons .callout-icon .svg-icon {
+    },
+    "hide-callout-icons": {
+      general: `.hide-callout-icons .callout-icon .svg-icon {
 display: none;
 }`,
-    "hide-callout-title": `.hide-callout-title .callout[data-callout="info"] .callout-content p:first-of-type {
+    },
+    "hide-callout-title": {
+      general: `.hide-callout-title .callout[data-callout="info"] .callout-content p:first-of-type {
 margin: 0px;
 /* close gaps in infobox when info callout title is hidden */
 }
@@ -4126,17 +4141,23 @@ margin: 0px;
 .hide-callout-title .callout[data-callout="info"] .callout-title {
 display: none;
 }`,
-    "info-normal": `.info-normal .callout[data-callout="info"] {
+    },
+    "info-normal": {
+      general: `.info-normal .callout[data-callout="info"] {
 --h6-background: rgba(var(--callout-color), 20%);
 /* make header 6 match callout color */
 }`,
-    "no-float": `.no-float .markdown-rendered img, .no-float img ~ img {
+    },
+    "no-float": {
+      general: `.no-float .markdown-rendered img, .no-float img ~ img {
 float: none;
 clear: none;
 width: revert;
 margin: 1em 0px;
 }`,
-    "float-left": `.float-left .markdown-rendered img {
+    },
+    "float-left": {
+      general: `.float-left .markdown-rendered img {
 float: left;
 clear: left;
 margin: var(--infobox-margin-left);
@@ -4147,12 +4168,15 @@ float: right;
 clear: right;
 margin: var(--infobox-margin);
 }`,
-    "float-center": `.float-center .markdown-rendered img, .float-center .markdown-rendered img ~ img {
+    },
+    "float-center": {
+      general: `.float-center .markdown-rendered img, .float-center .markdown-rendered img ~ img {
 float: none;
 clear: none;
 display: block;
 width: revert;
 margin: 1em auto;
 }`,
+    },
   },
 };

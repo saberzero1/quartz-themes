@@ -3398,7 +3398,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "vercel-dark": `.vercel-dark {
+    "vercel-dark": {
+      general: `.vercel-dark {
 /* Explicitly set dark theme variables */
 --background-1: var(--vercel-gray-900);
 --background-2: var(--vercel-gray-900);
@@ -3406,7 +3407,9 @@ html[saved-theme="light"] body ul.tags > li {
 --text-1: var(--vercel-gray-100);
 --text-2: var(--vercel-gray-400);
 }`,
-    "vercel-light": `.vercel-light {
+    },
+    "vercel-light": {
+      general: `.vercel-light {
 /* Explicitly set light theme variables */
 --background-1: var(--vercel-gray-100);
 --background-2: var(--vercel-gray-200);
@@ -3414,26 +3417,33 @@ html[saved-theme="light"] body ul.tags > li {
 --text-1: var(--vercel-gray-900);
 --text-2: var(--vercel-gray-600);
 }`,
-    "accent-blue": `.accent-blue {
+    },
+    "accent-blue": {
+      general: `.accent-blue {
 --accent-blue: var(--vercel-blue-500);
 --text-accent: var(--vercel-blue-500);
 --text-accent-hover: var(--vercel-blue-600);
 --interactive-accent: var(--vercel-blue-500);
 --interactive-accent-hover: var(--vercel-blue-600);
 }`,
-    "accent-purple": `.accent-purple {
+    },
+    "accent-purple": {
+      general: `.accent-purple {
 --accent-blue: #8a63d2;
 --text-accent: #8a63d2;
 --text-accent-hover: #7a50c7;
 --interactive-accent: #8a63d2;
 --interactive-accent-hover: #7a50c7;
 }`,
-    "accent-cyan": `.accent-cyan {
+    },
+    "accent-cyan": {
+      general: `.accent-cyan {
 --accent-blue: #00b8d9;
 --text-accent: #00b8d9;
 --text-accent-hover: #00a3c4;
 --interactive-accent: #00b8d9;
 --interactive-accent-hover: #00a3c4;
 }`,
+    },
   },
 };

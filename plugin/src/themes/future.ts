@@ -2315,10 +2315,13 @@ html body ul.tags > li {
 }`,
   },
   classSettings: {
-    "oled-style": `.oled-style {
+    "oled-style": {
+      dark: `.oled-style {
 --color-base-00: rgb(0, 0, 0);
 }`,
-    "accent-red": `.accent-red {
+    },
+    "accent-red": {
+      general: `.accent-red {
 --accent-h: 10 !important;
 --accent-s: 80% !important;
 --accent-l: 58% !important;
@@ -2342,7 +2345,9 @@ html body ul.tags > li {
 --h5-color: var(--color-cyan);
 --h6-color: var(--color-blue);
 }`,
-    "accent-orange": `.accent-orange {
+    },
+    "accent-orange": {
+      general: `.accent-orange {
 --accent-h: 32 !important;
 --accent-s: 100% !important;
 --accent-l: 58% !important;
@@ -2366,7 +2371,9 @@ html body ul.tags > li {
 --h5-color: var(--color-blue);
 --h6-color: var(--color-purple);
 }`,
-    "accent-yellow": `.accent-yellow {
+    },
+    "accent-yellow": {
+      general: `.accent-yellow {
 --accent-h: 45 !important;
 --accent-s: 100% !important;
 --accent-l: 50% !important;
@@ -2391,7 +2398,9 @@ html body ul.tags > li {
 --h3-color: var(--color-cyan);
 --h4-color: var(--color-blue);
 }`,
-    "accent-green": `.accent-green {
+    },
+    "accent-green": {
+      general: `.accent-green {
 --accent-h: 86 !important;
 --accent-s: 63% !important;
 --accent-l: 50% !important;
@@ -2415,7 +2424,9 @@ html body ul.tags > li {
 --h5-color: var(--color-pink);
 --h6-color: var(--color-red);
 }`,
-    "accent-cyan": `.accent-cyan {
+    },
+    "accent-cyan": {
+      general: `.accent-cyan {
 --accent-h: 171 !important;
 --accent-s: 46% !important;
 --accent-l: 60% !important;
@@ -2439,7 +2450,9 @@ html body ul.tags > li {
 --h1-color: var(--color-cyan);
 --h6-color: var(--color-pink);
 }`,
-    "accent-blue": `.accent-blue {
+    },
+    "accent-blue": {
+      general: `.accent-blue {
 --accent-h: 206 !important;
 --accent-s: 80% !important;
 --accent-l: 62% !important;
@@ -2463,7 +2476,9 @@ html body ul.tags > li {
 --h2-color: var(--color-cyan);
 --h1-color: var(--color-blue);
 }`,
-    "accent-purple": `.accent-purple {
+    },
+    "accent-purple": {
+      general: `.accent-purple {
 --accent-h: 226 !important;
 --accent-s: 78% !important;
 --accent-l: 57% !important;
@@ -2490,7 +2505,9 @@ html body ul.tags > li {
 --h1-color: var(--color-purple);
 --h2-color: var(--color-pink);
 }`,
-    "accent-pink": `.accent-pink {
+    },
+    "accent-pink": {
+      general: `.accent-pink {
 --accent-h: 274 !important;
 --accent-s: 60% !important;
 --accent-l: 62% !important;
@@ -2514,7 +2531,9 @@ html body ul.tags > li {
 --h4-color: var(--color-cyan);
 --h3-color: var(--color-blue);
 }`,
-    "gradient-bg": `.gradient-bg .workspace, .gradient-bg .workspace-split.mod-horizontal.mod-sidedock.mod-left-split, .gradient-bg .workspace-split.mod-root {
+    },
+    "gradient-bg": {
+      general: `.gradient-bg .workspace, .gradient-bg .workspace-split.mod-horizontal.mod-sidedock.mod-left-split, .gradient-bg .workspace-split.mod-root {
 background: var(--workspace-background);
 }
 
@@ -2568,16 +2587,16 @@ background-color: var(--background-primary);
 
 .gradient-bg .workspace-ribbon.mod-left::before {
 background-color: transparent;
-}
-.custom-transparency {
+}`,
+      dark: `.custom-transparency {
 /* make borders more visible against a transparent background */
 --background-modifier-border: rgba(255,255,255,0.17) !important;
 }
 
 .custom-transparency .workspace-leaf-content, .custom-transparency .view-content, .custom-transparency .view-header {
 background-color: rgba(1, 1, 1,var(--page-transparency-custom)) !important;
-}
-.gradient-bg {
+}`,
+      light: `.gradient-bg {
 /* make borders more visible against a transparent background */
 --background-modifier-border: rgba(1,1,1,0.2) !important;
 }
@@ -2585,21 +2604,25 @@ background-color: rgba(1, 1, 1,var(--page-transparency-custom)) !important;
 .custom-transparency .workspace-leaf-content, .custom-transparency .view-content, .custom-transparency .view-header {
 background-color: rgba(255, 255, 255,var(--page-transparency-custom)) !important;
 }`,
-    "custom-transparency": `.gradient-bg.custom-transparency .nav-header, .gradient-bg.custom-transparency .nav-files-container, .gradient-bg.custom-transparency .workspace-leaf {
+    },
+    "custom-transparency": {
+      general: `.gradient-bg.custom-transparency .nav-header, .gradient-bg.custom-transparency .nav-files-container, .gradient-bg.custom-transparency .workspace-leaf {
 background-color: transparent !important;
-}
-.gradient-bg.custom-transparency {
+}`,
+      dark: `.gradient-bg.custom-transparency {
 /* make borders more visible against a transparent background */
 --background-modifier-border: rgba(255,255,255,0.17) !important;
 }
 
 .gradient-bg.custom-transparency .workspace-leaf-content, .gradient-bg.custom-transparency .view-content, .gradient-bg.custom-transparency .view-header {
 background-color: rgba(1, 1, 1,var(--page-transparency-custom)) !important;
-}
-.gradient-bg.custom-transparency .workspace-leaf-content, .gradient-bg.custom-transparency .view-content, .gradient-bg.custom-transparency .view-header {
+}`,
+      light: `.gradient-bg.custom-transparency .workspace-leaf-content, .gradient-bg.custom-transparency .view-content, .gradient-bg.custom-transparency .view-header {
 background-color: rgba(255, 255, 255,var(--page-transparency-custom)) !important;
 }`,
-    "headings-colored": `.headings-colored, .accent-purple.headings-colored {
+    },
+    "headings-colored": {
+      general: `.headings-colored, .accent-purple.headings-colored {
 --h3-color: var(--color-red);
 --h4-color: var(--color-orange);
 --h5-color: var(--color-yellow);
@@ -2670,7 +2693,9 @@ background-color: rgba(255, 255, 255,var(--page-transparency-custom)) !important
 --h4-color: var(--color-cyan);
 --h3-color: var(--color-blue);
 }`,
-    "headings-bland": `.headings-blander {
+    },
+    "headings-bland": {
+      general: `.headings-blander {
 --h1-bg: inherit;
 --h2-bg: inherit;
 --h3-bg: inherit;
@@ -2714,7 +2739,9 @@ color: rgba(var(--h5-bg), 100%);
 background-color: transparent;
 color: rgba(var(--h6-bg), 100%);
 }`,
-    "headings-blander": `.headings-blander {
+    },
+    "headings-blander": {
+      general: `.headings-blander {
 --h1-bg: inherit;
 --h2-bg: inherit;
 --h3-bg: inherit;
@@ -2728,7 +2755,9 @@ color: rgba(var(--h6-bg), 100%);
 --h2-color: inherit;
 --h1-color: inherit;
 }`,
-    "checkbox-modern": `.checkbox-modern {
+    },
+    "checkbox-modern": {
+      general: `.checkbox-modern {
 --checkbox-color: var(--color-blue);
 --checkbox-color-hover: var(--color-blue);
 --checkbox-size: calc(var(--font-text-size) + 0.1em)
@@ -2740,7 +2769,9 @@ background-color: white;
 transform: scale(0.8);
 -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 36'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3.5' d='m6.5 17l6 6l13-13'/%3E%3C/svg%3E");
 }`,
-    "hide-settings-descriptions": `.hide-settings-descriptions .setting-item-description {
+    },
+    "hide-settings-descriptions": {
+      general: `.hide-settings-descriptions .setting-item-description {
 opacity: 0;
 }
 
@@ -2754,5 +2785,6 @@ width: 0px;
 height: 0px;
 overflow: hidden;
 }`,
+    },
   },
 };

@@ -2639,15 +2639,20 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "hide-window-buttons": `.hide-window-buttons {
+    "hide-window-buttons": {
+      general: `.hide-window-buttons {
 --window-buttons: none;
 --frame-right-space: 48px
 ;
 }`,
-    "hide-only-tab_full": `.hide-only-tab_full {
+    },
+    "hide-only-tab_full": {
+      general: `.hide-only-tab_full {
 --only-tab-display: none;
 }`,
-    "hide-only-tab_interactive": `.hide-only-tab_interactive {
+    },
+    "hide-only-tab_interactive": {
+      general: `.hide-only-tab_interactive {
 --only-tab-background: transparent;
 --only-tab-background-hover: transparent;
 --only-tab-background-active: var(--background-hover);
@@ -2655,5 +2660,6 @@ html[saved-theme="light"] body ul.tags > li {
 --only-tab-text-hover: var(--text-faint);
 --only-tab-close-button: var(--background-active);
 }`,
+    },
   },
 };

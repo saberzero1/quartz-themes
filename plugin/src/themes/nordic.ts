@@ -2280,15 +2280,8 @@ html body ul.tags > li {
 }`,
   },
   classSettings: {
-    "nordic-colored-headers": `.nordic-colored-headers, .theme-light.nordic-colored-headers {
---h1-color: var(--color-red);
---h2-color: var(--color-orange);
---h3-color: var(--color-yellow);
---h4-color: var(--color-green);
---h5-color: var(--color-cyan);
---h6-color: var(--color-blue);
-}
-.theme-dark.nordic-colored-headers, .nordic-colored-headers {
+    "nordic-colored-headers": {
+      dark: `.nordic-colored-headers, .theme-light.nordic-colored-headers {
 --h1-color: var(--color-red);
 --h2-color: var(--color-orange);
 --h3-color: var(--color-yellow);
@@ -2296,5 +2289,14 @@ html body ul.tags > li {
 --h5-color: var(--color-cyan);
 --h6-color: var(--color-blue);
 }`,
+      light: `.theme-dark.nordic-colored-headers, .nordic-colored-headers {
+--h1-color: var(--color-red);
+--h2-color: var(--color-orange);
+--h3-color: var(--color-yellow);
+--h4-color: var(--color-green);
+--h5-color: var(--color-cyan);
+--h6-color: var(--color-blue);
+}`,
+    },
   },
 };

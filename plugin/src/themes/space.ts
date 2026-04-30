@@ -1761,8 +1761,10 @@ html body ul.tags > li {
   },
   light: {},
   classSettings: {
-    "background-image-toggle": `body.background-image-toggle .workspace-tabs .workspace-leaf .view-content, body.background-image-toggle .workspace-tab-header-inner, body.background-image-toggle .view-header {
+    "background-image-toggle": {
+      general: `body.background-image-toggle .workspace-tabs .workspace-leaf .view-content, body.background-image-toggle .workspace-tab-header-inner, body.background-image-toggle .view-header {
 background-image: none;
 }`,
+    },
   },
 };

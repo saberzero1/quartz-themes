@@ -8855,7 +8855,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "ebullientworks-reverse-view-header-actions": `.ebullientworks-reverse-view-header-actions .popover.hover-editor .popover-content .workspace-leaf-content .view-header > .view-header-icon, .ebullientworks-reverse-view-header-actions .workspace-tabs .view-header > .view-header-icon {
+    "ebullientworks-reverse-view-header-actions": {
+      general: `.ebullientworks-reverse-view-header-actions .popover.hover-editor .popover-content .workspace-leaf-content .view-header > .view-header-icon, .ebullientworks-reverse-view-header-actions .workspace-tabs .view-header > .view-header-icon {
 order: 0;
 }
 
@@ -8873,7 +8874,9 @@ order: 1;
 order: 1;
 justify-content: flex-start;
 }`,
-    "ebullientworks-floating-frontmatter": `.ebullientworks-floating-frontmatter .markdown-rendered pre.frontmatter, .is-mobile .markdown-rendered pre.frontmatter {
+    },
+    "ebullientworks-floating-frontmatter": {
+      general: `.ebullientworks-floating-frontmatter .markdown-rendered pre.frontmatter, .is-mobile .markdown-rendered pre.frontmatter {
 float: right;
 position: absolute;
 right: 0.15em;
@@ -8989,12 +8992,15 @@ z-index: 3;
 .ebullientworks-floating-frontmatter .markdown-rendered .metadata-container:hover .metadata-property, .ebullientworks-floating-frontmatter .markdown-rendered .metadata-container:hover .metadata-property[data-property-key=tags], .is-mobile .markdown-rendered .metadata-container:hover .metadata-property, .is-mobile .markdown-rendered .metadata-container:hover .metadata-property[data-property-key=tags] {
 --pill-background: var(--background-primary);
 }`,
-    "ebullientworks-hide-embedded-heading": `.ebullientworks-hide-embedded-heading .markdown-embed .markdown-embed-title, .ebullientworks-hide-embedded-heading .markdown-embed .mod-header {
+    },
+    "ebullientworks-hide-embedded-heading": {
+      general: `.ebullientworks-hide-embedded-heading .markdown-embed .markdown-embed-title, .ebullientworks-hide-embedded-heading .markdown-embed .mod-header {
 display: none;
 }
 
 .ebullientworks-hide-embedded-heading .markdown-embed div.markdown-preview-section div.mod-header + div > h1[data-heading], .ebullientworks-hide-embedded-heading .markdown-embed div.markdown-preview-section div.mod-header + div > h2[data-heading], .ebullientworks-hide-embedded-heading .markdown-embed div.markdown-preview-section div.mod-header + div > h3[data-heading], .ebullientworks-hide-embedded-heading .markdown-embed div.markdown-preview-section div.mod-header + div > h4[data-heading], .ebullientworks-hide-embedded-heading .markdown-embed div.markdown-preview-section div.mod-header + div > h5[data-heading], .ebullientworks-hide-embedded-heading .markdown-embed div.markdown-preview-section div.mod-header + div > h6[data-heading] {
 display: none;
 }`,
+    },
   },
 };

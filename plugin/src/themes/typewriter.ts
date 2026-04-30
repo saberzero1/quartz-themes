@@ -4115,13 +4115,17 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "shrink-formatting": `.shrink-formatting .CodeMirror-line span.cm-formatting:not(.cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link, .cm-s-obsidian span.cm-url, .cm-s-obsidian span.cm-attribute, .cm-s-obsidian span.cm-quote, span.cm-hashtag.cm-hashtag-begin, .cm-s-obsidian span.cm-formatting-list), .shrink-formatting .markdown-source-view.mod-cm6 .cm-line span.cm-formatting:not(.cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link, .cm-s-obsidian span.cm-url, .cm-s-obsidian span.cm-attribute, .cm-s-obsidian span.cm-quote, span.cm-hashtag.cm-hashtag-begin, .cm-s-obsidian span.cm-formatting-list) {
+    "shrink-formatting": {
+      general: `.shrink-formatting .CodeMirror-line span.cm-formatting:not(.cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link, .cm-s-obsidian span.cm-url, .cm-s-obsidian span.cm-attribute, .cm-s-obsidian span.cm-quote, span.cm-hashtag.cm-hashtag-begin, .cm-s-obsidian span.cm-formatting-list), .shrink-formatting .markdown-source-view.mod-cm6 .cm-line span.cm-formatting:not(.cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link, .cm-s-obsidian span.cm-url, .cm-s-obsidian span.cm-attribute, .cm-s-obsidian span.cm-quote, span.cm-hashtag.cm-hashtag-begin, .cm-s-obsidian span.cm-formatting-list) {
 color: var(--text-faint);
 font-size: var(--font-smaller) !important;
 }`,
-    "active-line-highlight": `.active-line-highlight .markdown-source-view .CodeMirror-activeline, .active-line-highlight .markdown-source-view.mod-cm6 .cm-active.cm-line {
+    },
+    "active-line-highlight": {
+      general: `.active-line-highlight .markdown-source-view .CodeMirror-activeline, .active-line-highlight .markdown-source-view.mod-cm6 .cm-active.cm-line {
 background: var(--background-secondary);
 border-radius: 8px;
 }`,
+    },
   },
 };

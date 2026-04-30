@@ -2804,7 +2804,8 @@ html[saved-theme="light"] body sup {
 }`,
   },
   classSettings: {
-    "minimal-image-captions": `.minimal-image-captions .image-captions-figure {
+    "minimal-image-captions": {
+      general: `.minimal-image-captions .image-captions-figure {
 background-color: transparent !important;
 }
 
@@ -2813,10 +2814,14 @@ background-color: transparent !important;
 font-size: 0.8em !important;
 text-align: left !important;
 }`,
-    "show-header-levels-always": `.show-header-levels-always .HyperMD-header .cm-fold-indicator .collapse-indicator {
+    },
+    "show-header-levels-always": {
+      general: `.show-header-levels-always .HyperMD-header .cm-fold-indicator .collapse-indicator {
 opacity: 1 !important;
 }`,
-    "show-header-hashtags": `.show-header-hashtags .HyperMD-header-1:not(.cm-active) .cm-header::before {
+    },
+    "show-header-hashtags": {
+      general: `.show-header-hashtags .HyperMD-header-1:not(.cm-active) .cm-header::before {
 content: "# ";
 color: var(--text-faint);
 }
@@ -2845,10 +2850,14 @@ color: var(--text-faint);
 content: "###### ";
 color: var(--text-faint);
 }`,
-    "hide-header-link-underline": `.hide-header-link-underline .HyperMD-header .cm-hmd-internal-link a {
+    },
+    "hide-header-link-underline": {
+      general: `.hide-header-link-underline .HyperMD-header .cm-hmd-internal-link a {
 text-decoration: none !important;
 }`,
-    "hide-tab-bar-dynamic": `.hide-tab-bar-dynamic .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container {
+    },
+    "hide-tab-bar-dynamic": {
+      general: `.hide-tab-bar-dynamic .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container {
 max-height: 3em;
 opacity: 1;
 overflow: hidden;
@@ -2861,10 +2870,14 @@ transition:
 max-height: 0;
 opacity: 0;
 }`,
-    "hide-tab-bar-always": `.hide-tab-bar-always .mod-root .workspace-tabs .workspace-tab-header-container {
+    },
+    "hide-tab-bar-always": {
+      general: `.hide-tab-bar-always .mod-root .workspace-tabs .workspace-tab-header-container {
 display: none;
 }`,
-    "hide-file-explorer-nav-header-dynamic": `.hide-file-explorer-nav-header-dynamic .workspace-leaf-content[data-type="file-explorer"] .nav-header {
+    },
+    "hide-file-explorer-nav-header-dynamic": {
+      general: `.hide-file-explorer-nav-header-dynamic .workspace-leaf-content[data-type="file-explorer"] .nav-header {
 max-height: 0;
 opacity: 0;
 transition:
@@ -2876,13 +2889,19 @@ transition:
 max-height: 2.5em;
 opacity: 1;
 }`,
-    "hide-file-explorer-nav-header-always": `.hide-file-explorer-nav-header-always .workspace-leaf-content[data-type="file-explorer"] .nav-header {
+    },
+    "hide-file-explorer-nav-header-always": {
+      general: `.hide-file-explorer-nav-header-always .workspace-leaf-content[data-type="file-explorer"] .nav-header {
 display: none;
 }`,
-    "hide-sidebar-buttons-always": `.hide-sidebar-buttons-always .sidebar-toggle-button.mod-right, .hide-sidebar-buttons-always .sidebar-toggle-button.mod-left {
+    },
+    "hide-sidebar-buttons-always": {
+      general: `.hide-sidebar-buttons-always .sidebar-toggle-button.mod-right, .hide-sidebar-buttons-always .sidebar-toggle-button.mod-left {
 display: none;
 }`,
-    "deemphasize-status-bar": `.deemphasize-status-bar .status-bar {
+    },
+    "deemphasize-status-bar": {
+      general: `.deemphasize-status-bar .status-bar {
 filter: saturate(0);
 opacity: 0.5;
 border: none;
@@ -2895,7 +2914,9 @@ transition:
 filter: saturate(1);
 opacity: 1;
 }`,
-    "deemphasize-file-properties": `.deemphasize-file-properties .metadata-container {
+    },
+    "deemphasize-file-properties": {
+      general: `.deemphasize-file-properties .metadata-container {
 filter: grayscale(1);
 opacity: 0.3;
 transition:
@@ -2907,7 +2928,9 @@ transition:
 filter: grayscale(0);
 opacity: 1;
 }`,
-    "deemphasize-embedded-backlinks": `.deemphasize-embedded-backlinks .embedded-backlinks {
+    },
+    "deemphasize-embedded-backlinks": {
+      general: `.deemphasize-embedded-backlinks .embedded-backlinks {
 filter: grayscale(1);
 opacity: 0.3;
 transition:
@@ -2919,5 +2942,6 @@ transition:
 filter: grayscale(0);
 opacity: 1;
 }`,
+    },
   },
 };

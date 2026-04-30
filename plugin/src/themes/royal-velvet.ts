@@ -3587,14 +3587,17 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "doc-title-accent": `body.doc-title-accent .inline-title {
+    "doc-title-accent": {
+      general: `body.doc-title-accent .inline-title {
 background-image: linear-gradient(
     var(--gradientDegree),
     hsl(calc(var(--accent-h) + 30), var(--primary-sat), var(--primary-lit)) 0,
     hsl(calc(var(--accent-h) - 30), var(--primary-sat), var(--primary-lit)) 100%
   );
 }`,
-    "doc-title-rainbow": `body.doc-title-rainbow .inline-title {
+    },
+    "doc-title-rainbow": {
+      general: `body.doc-title-rainbow .inline-title {
 background-image: linear-gradient(
     var(--gradientDegree),
     var(--pink) 0,
@@ -3612,7 +3615,9 @@ background-image: linear-gradient(
     var(--pink) 100%
   );
 }`,
-    "doc-title-h1": `body.doc-title-h1 .inline-title {
+    },
+    "doc-title-h1": {
+      general: `body.doc-title-h1 .inline-title {
 -webkit-text-fill-color: transparent;
 background-clip: text;
 -webkit-background-clip: text;
@@ -3622,7 +3627,9 @@ background-image: linear-gradient(
     var(--orange) 100%
   );
 }`,
-    "doc-title-h2": `body.doc-title-h2 .inline-title {
+    },
+    "doc-title-h2": {
+      general: `body.doc-title-h2 .inline-title {
 -webkit-text-fill-color: transparent;
 background-clip: text;
 -webkit-background-clip: text;
@@ -3632,7 +3639,9 @@ background-image: linear-gradient(
     var(--yellow) 100%
   );
 }`,
-    "doc-title-h3": `body.doc-title-h3 .inline-title {
+    },
+    "doc-title-h3": {
+      general: `body.doc-title-h3 .inline-title {
 -webkit-text-fill-color: transparent;
 background-clip: text;
 -webkit-background-clip: text;
@@ -3642,7 +3651,9 @@ background-image: linear-gradient(
     var(--green) 100%
   );
 }`,
-    "doc-title-h4": `body.doc-title-h4 .inline-title {
+    },
+    "doc-title-h4": {
+      general: `body.doc-title-h4 .inline-title {
 -webkit-text-fill-color: transparent;
 background-clip: text;
 -webkit-background-clip: text;
@@ -3652,7 +3663,9 @@ background-image: linear-gradient(
     var(--blue) 100%
   );
 }`,
-    "doc-title-h5": `body.doc-title-h5 .inline-title {
+    },
+    "doc-title-h5": {
+      general: `body.doc-title-h5 .inline-title {
 -webkit-text-fill-color: transparent;
 background-clip: text;
 -webkit-background-clip: text;
@@ -3662,7 +3675,9 @@ background-image: linear-gradient(
     var(--purple) 100%
   );
 }`,
-    "doc-title-h6": `body.doc-title-h6 .inline-title {
+    },
+    "doc-title-h6": {
+      general: `body.doc-title-h6 .inline-title {
 -webkit-text-fill-color: transparent;
 background-clip: text;
 -webkit-background-clip: text;
@@ -3672,5 +3687,6 @@ background-image: linear-gradient(
     var(--pink) 100%
   );
 }`,
+    },
   },
 };

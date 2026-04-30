@@ -2729,7 +2729,8 @@ html[saved-theme="light"] body sup {
 }`,
   },
   classSettings: {
-    "adwaita-mod-always": `body.adwaita-mod-always {
+    "adwaita-mod-always": {
+      general: `body.adwaita-mod-always {
 --frame-right-space: calc(var(--adwaita-mod-scale) * 120px);
 --adwaita-mod-foreground-focus: var(--adwaita-headerbar-fg-color);
 }
@@ -2846,22 +2847,24 @@ transform: translateY(-50%);
 -webkit-mask-image: var(--adwaita-icon-window-close-symbolic);
 mask-image: var(--adwaita-icon-window-close-symbolic);
 background-color: currentColor;
-}
-body.theme-dark {
+}`,
+      dark: `body.theme-dark {
 --adwaita-mod-background: #2e2e2e;
 --adwaita-mod-background-focus: #444444;
 --adwaita-mod-background-hover: #4f4f4f;
 --adwaita-mod-background-active: #6e6e6e;
 --adwaita-mod-foreground: #929292;
-}
-body.theme-light {
+}`,
+      light: `body.theme-light {
 --adwaita-mod-background: #efefef;
 --adwaita-mod-background-focus: #d8d8d8;
 --adwaita-mod-background-hover: #cfcfcf;
 --adwaita-mod-background-active: #b3b3b3;
 --adwaita-mod-foreground: #949494;
 }`,
-    "adwaita-mod-linux-only": `body.mod-linux {
+    },
+    "adwaita-mod-linux-only": {
+      general: `body.mod-linux {
 --frame-right-space: calc(var(--adwaita-mod-scale) * 120px);
 --adwaita-mod-foreground-focus: var(--adwaita-headerbar-fg-color);
 }
@@ -2978,22 +2981,24 @@ transform: translateY(-50%);
 -webkit-mask-image: var(--adwaita-icon-window-close-symbolic);
 mask-image: var(--adwaita-icon-window-close-symbolic);
 background-color: currentColor;
-}
-body.mod-linux.theme-dark {
+}`,
+      dark: `body.mod-linux.theme-dark {
 --adwaita-mod-background: #2e2e2e;
 --adwaita-mod-background-focus: #444444;
 --adwaita-mod-background-hover: #4f4f4f;
 --adwaita-mod-background-active: #6e6e6e;
 --adwaita-mod-foreground: #929292;
-}
-body.mod-linux.theme-light {
+}`,
+      light: `body.mod-linux.theme-light {
 --adwaita-mod-background: #efefef;
 --adwaita-mod-background-focus: #d8d8d8;
 --adwaita-mod-background-hover: #cfcfcf;
 --adwaita-mod-background-active: #b3b3b3;
 --adwaita-mod-foreground: #949494;
 }`,
-    "adwaita-window-button-minimize-hide": `body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-minimize-hide .titlebar-button-container.mod-right .titlebar-button.mod-minimize, body.adwaita-mod-always.adwaita-window-button-minimize-hide .titlebar-button-container.mod-right .titlebar-button.mod-minimize, body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-minimize-hide .titlebar-button-container.mod-right .titlebar-button.mod-minimize {
+    },
+    "adwaita-window-button-minimize-hide": {
+      general: `body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-minimize-hide .titlebar-button-container.mod-right .titlebar-button.mod-minimize, body.adwaita-mod-always.adwaita-window-button-minimize-hide .titlebar-button-container.mod-right .titlebar-button.mod-minimize, body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-minimize-hide .titlebar-button-container.mod-right .titlebar-button.mod-minimize {
 display: none;
 }
 
@@ -3008,7 +3013,9 @@ body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-l
 body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide, body.adwaita-mod-always.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide, body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide {
 --frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px - 38px - 38px));
 }`,
-    "adwaita-window-button-maximize-hide": `body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-maximize-hide .titlebar-button-container.mod-right .titlebar-button.mod-maximize, body.adwaita-mod-always.adwaita-window-button-maximize-hide .titlebar-button-container.mod-right .titlebar-button.mod-maximize, body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-maximize-hide .titlebar-button-container.mod-right .titlebar-button.mod-maximize {
+    },
+    "adwaita-window-button-maximize-hide": {
+      general: `body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-maximize-hide .titlebar-button-container.mod-right .titlebar-button.mod-maximize, body.adwaita-mod-always.adwaita-window-button-maximize-hide .titlebar-button-container.mod-right .titlebar-button.mod-maximize, body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-maximize-hide .titlebar-button-container.mod-right .titlebar-button.mod-maximize {
 display: none;
 }
 
@@ -3023,7 +3030,9 @@ body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-l
 body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-close-hide, body.adwaita-mod-always.adwaita-window-button-minimize-hide.adwaita-window-button-close-hide, body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-close-hide {
 --frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px - 38px - 38px));
 }`,
-    "adwaita-window-button-close-hide": `body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-close-hide .titlebar-button-container.mod-right .titlebar-button.mod-close, body.adwaita-mod-always.adwaita-window-button-close-hide .titlebar-button-container.mod-right .titlebar-button.mod-close, body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-close-hide .titlebar-button-container.mod-right .titlebar-button.mod-close {
+    },
+    "adwaita-window-button-close-hide": {
+      general: `body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-close-hide .titlebar-button-container.mod-right .titlebar-button.mod-close, body.adwaita-mod-always.adwaita-window-button-close-hide .titlebar-button-container.mod-right .titlebar-button.mod-close, body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-close-hide .titlebar-button-container.mod-right .titlebar-button.mod-close {
 display: none;
 }
 
@@ -3038,7 +3047,9 @@ body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-l
 body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide, body.adwaita-mod-always.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide, body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide {
 --frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px - 38px - 38px));
 }`,
-    "adwaita-tabs-always": `body.adwaita-tabs-always {
+    },
+    "adwaita-tabs-always": {
+      general: `body.adwaita-tabs-always {
 --tab-radius-active: 4px;
 }
 
@@ -3097,22 +3108,24 @@ display: flex;
 
 body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner-close-button, body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header :hover .workspace-tab-header-inner-close-button {
 opacity: 1;
-}
-body.theme-dark {
+}`,
+      dark: `body.theme-dark {
 --tab-background-active: #323232;
 }
 
 body.is-focused {
 --tab-background-active: #464646;
-}
-body.theme-light {
+}`,
+      light: `body.theme-light {
 --tab-background-active: #f0f0f0;
 }
 
 body.is-focused {
 --tab-background-active: #d8d8d8;
 }`,
-    "adwaita-tabs-linux-only": `body.mod-linux {
+    },
+    "adwaita-tabs-linux-only": {
+      general: `body.mod-linux {
 --tab-radius-active: 4px;
 }
 
@@ -3171,22 +3184,24 @@ display: flex;
 
 body.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner-close-button, body.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header :hover .workspace-tab-header-inner-close-button {
 opacity: 1;
-}
-body.mod-linux.theme-dark {
+}`,
+      dark: `body.mod-linux.theme-dark {
 --tab-background-active: #323232;
 }
 
 body.mod-linux.is-focused {
 --tab-background-active: #464646;
-}
-body.mod-linux.theme-light {
+}`,
+      light: `body.mod-linux.theme-light {
 --tab-background-active: #f0f0f0;
 }
 
 body.mod-linux.is-focused {
 --tab-background-active: #d8d8d8;
 }`,
-    "adwaita-colors-always": `body.adwaita-colors-always {
+    },
+    "adwaita-colors-always": {
+      general: `body.adwaita-colors-always {
 --titlebar-background: var(--adwaita-headerbar-backdrop-color);
 --titlebar-background-focused: var(--adwaita-headerbar-bg-color);
 --titlebar-text-color-focused: var(--adwaita-headerbar-fg-color);
@@ -3203,8 +3218,8 @@ body.is-focused .workspace-tabs.mod-top .workspace-tab-header-container, body.is
 
 body.adwaita-colors-always .titlebar-button.mod-logo:hover {
 background-color: inherit;
-}
-body.theme-dark {
+}`,
+      dark: `body.theme-dark {
 --titlebar-text-color: #919191;
 --icon-color: #929292;
 --icon-color-hover: #929292;
@@ -3217,8 +3232,8 @@ body.theme-dark {
 
 body.is-focused .workspace-tabs.mod-top .workspace-tab-header-container, body.is-focused .sidebar-toggle-button {
 --background-modifier-hover: #464646;
-}
-body.theme-light {
+}`,
+      light: `body.theme-light {
 --titlebar-text-color: #8c8c8c;
 --icon-color: #939393;
 --icon-color-hover: #939393;
@@ -3232,7 +3247,9 @@ body.theme-light {
 body.is-focused .workspace-tabs.mod-top .workspace-tab-header-container, body.is-focused .sidebar-toggle-button {
 --background-modifier-hover: #d8d8d8;
 }`,
-    "adwaita-colors-linux-only": `body.mod-linux {
+    },
+    "adwaita-colors-linux-only": {
+      general: `body.mod-linux {
 --titlebar-background: var(--adwaita-headerbar-backdrop-color);
 --titlebar-background-focused: var(--adwaita-headerbar-bg-color);
 --titlebar-text-color-focused: var(--adwaita-headerbar-fg-color);
@@ -3249,8 +3266,8 @@ body.mod-linux.is-focused .workspace-tabs.mod-top .workspace-tab-header-containe
 
 body.mod-linux .titlebar-button.mod-logo:hover {
 background-color: inherit;
-}
-body.mod-linux.theme-dark {
+}`,
+      dark: `body.mod-linux.theme-dark {
 --titlebar-text-color: #919191;
 --icon-color: #929292;
 --icon-color-hover: #929292;
@@ -3263,8 +3280,8 @@ body.mod-linux.theme-dark {
 
 body.mod-linux.is-focused .workspace-tabs.mod-top .workspace-tab-header-container, body.mod-linux.is-focused .sidebar-toggle-button {
 --background-modifier-hover: #464646;
-}
-body.mod-linux.theme-light {
+}`,
+      light: `body.mod-linux.theme-light {
 --titlebar-text-color: #8c8c8c;
 --icon-color: #939393;
 --icon-color-hover: #939393;
@@ -3278,7 +3295,9 @@ body.mod-linux.theme-light {
 body.mod-linux.is-focused .workspace-tabs.mod-top .workspace-tab-header-container, body.mod-linux.is-focused .sidebar-toggle-button {
 --background-modifier-hover: #d8d8d8;
 }`,
-    "adwaita-font-always": `body.adwaita-font-always {
+    },
+    "adwaita-font-always": {
+      general: `body.adwaita-font-always {
 --titlebar-height: 45px;
 --font-interface-theme: Cantarell;
 --font-ui-small: 15px;
@@ -3289,7 +3308,9 @@ body.adwaita-font-always .titlebar-text {
 top: 10px;
 height: auto;
 }`,
-    "adwaita-font-linux-only": `body.mod-linux {
+    },
+    "adwaita-font-linux-only": {
+      general: `body.mod-linux {
 --titlebar-height: 45px;
 --font-interface-theme: Cantarell;
 --font-ui-small: 15px;
@@ -3300,7 +3321,9 @@ body.mod-linux .titlebar-text {
 top: 10px;
 height: auto;
 }`,
-    "adwaita-icons-always": `body.adwaita-icons-always {
+    },
+    "adwaita-icons-always": {
+      general: `body.adwaita-icons-always {
 --titlebar-height: 45px;
 --header-height: 46px;
 }
@@ -3424,7 +3447,9 @@ width: 16px;
 height: 16px;
 margin: auto;
 }`,
-    "adwaita-icons-linux-only": `body.mod-linux {
+    },
+    "adwaita-icons-linux-only": {
+      general: `body.mod-linux {
 --titlebar-height: 45px;
 --header-height: 46px;
 }
@@ -3548,5 +3573,6 @@ width: 16px;
 height: 16px;
 margin: auto;
 }`,
+    },
   },
 };

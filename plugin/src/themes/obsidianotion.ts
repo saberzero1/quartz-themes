@@ -1870,18 +1870,23 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "eis-small-pinned-tabs": `.eis-small-pinned-tabs .workspace-tab-header:has(.mod-pinned) {
+    "eis-small-pinned-tabs": {
+      general: `.eis-small-pinned-tabs .workspace-tab-header:has(.mod-pinned) {
 max-width: 70px !important;
 order: 1;
 }`,
-    "eis-hide-ribbon": `body.eis-hide-ribbon {
+    },
+    "eis-hide-ribbon": {
+      general: `body.eis-hide-ribbon {
 --frame-left-space: 70px !important;
 }
 
 .eis-hide-ribbon .workspace-ribbon.mod-left {
 display: none;
 }`,
-    "eis-small-font": `body.eis-small-font {
+    },
+    "eis-small-font": {
+      general: `body.eis-small-font {
 --size-h1: 1.5rem !important;
 --size-h2: 1.275rem !important;
 --size-h3: 1.25rem !important;
@@ -1892,7 +1897,9 @@ display: none;
 --frontmatter-font-size: .5rem !important;
 --width-body-content: 700px;
 }`,
-    "eis-showing-scrollbar": `.eis-showing-scrollbar ::-webkit-scrollbar {
+    },
+    "eis-showing-scrollbar": {
+      general: `.eis-showing-scrollbar ::-webkit-scrollbar {
 width: 9px;
 }
 
@@ -1905,7 +1912,9 @@ background-color: var(--scrollbar-color);
 border-radius: 0;
 border: 0px;
 }`,
-    "eis-with-icons": `.eis-with-icons .nav-file-title:before {
+    },
+    "eis-with-icons": {
+      general: `.eis-with-icons .nav-file-title:before {
 background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMCAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTguMTc1MTMgMTEuMjQ5NEgyLjAyNTg2QzEuNzU0MDQgMTEuMjQ5NCAxLjQ5MzM2IDExLjE0MTQgMS4zMDExNiAxMC45NDkyQzEuMTA4OTUgMTAuNzU3IDEuMDAwOTggMTAuNDk2NCAxLjAwMDk4IDEwLjIyNDVWMi4wMjU1MkMxLjAwMDk4IDEuNzUzNyAxLjEwODk1IDEuNDkzMDIgMS4zMDExNiAxLjMwMDgyQzEuNDkzMzYgMS4xMDg2MSAxLjc1NDA0IDEuMDAwNjQgMi4wMjU4NiAxLjAwMDY0SDUuNjY0MThDNS44MDY2NCAwLjk5NTYxMiA1Ljk0ODU4IDEuMDIwMzYgNi4wODA5MyAxLjA3MzNDNi4yMTMyOCAxLjEyNjI0IDYuMzMzMTQgMS4yMDYyMSA2LjQzMjgzIDEuMzA4MUw4Ljk0Mzc5IDMuOTcyNzlDOS4xMTgyIDQuMTcwMTIgOS4yMDk5NSA0LjQyNzAyIDkuMjAwMDEgNC42OTAyVjEwLjIyNDVDOS4yMDAwMSAxMC40OTY0IDkuMDkyMDMgMTAuNzU3IDguODk5ODMgMTAuOTQ5MkM4LjcwNzYzIDExLjE0MTQgOC40NDY5NCAxMS4yNDk0IDguMTc1MTMgMTEuMjQ5NFoiIHN0cm9rZT0iIzVBNUE1QSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0zIDguOTQzNkg3LjIwMiIgc3Ryb2tlPSIjNUE1QTVBIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTMgNi44OTM4SDcuMjAyIiBzdHJva2U9IiM1QTVBNUEiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMy4wNTA3OCA0Ljg0Mzk5SDUuNjEyOTgiIHN0cm9rZT0iIzVBNUE1QSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=");
 }
 
@@ -1926,7 +1935,9 @@ opacity: .6;
 margin-right: 5px;
 /* margin-top: -1px; */
 }`,
-    "eis-empty-bg": `.eis-empty-bg .empty-state:before {
+    },
+    "eis-empty-bg": {
+      general: `.eis-empty-bg .empty-state:before {
 content:"";
 position: absolute;
 top: 0;
@@ -1945,7 +1956,9 @@ width: 100%;
 height: 25vmin;
 background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 }`,
-    "new-note-button-position-bottom": `.new-note-button-position-bottom .nav-files-container {
+    },
+    "new-note-button-position-bottom": {
+      general: `.new-note-button-position-bottom .nav-files-container {
 margin-bottom: 40px;
 }
 
@@ -1981,7 +1994,9 @@ background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' wi
 background-size: 1.2rem;
 padding-left: 25px;
 }`,
-    "enable-alternative-checkboxes": `body.enable-alternative-checkboxes input[data-task='s']:checked:before, body.enable-alternative-checkboxes li[data-task='s'] > input:checked:before, body.enable-alternative-checkboxes li[data-task='s'] > p > input:checked:before {
+    },
+    "enable-alternative-checkboxes": {
+      general: `body.enable-alternative-checkboxes input[data-task='s']:checked:before, body.enable-alternative-checkboxes li[data-task='s'] > input:checked:before, body.enable-alternative-checkboxes li[data-task='s'] > p > input:checked:before {
 content: "🧵";
 font-size: 0.9rem;
 }
@@ -2138,8 +2153,8 @@ color: var(--color-orange);
 body.enable-alternative-checkboxes input[data-task='b']:checked, body.enable-alternative-checkboxes li[data-task='b'] > input:checked, body.enable-alternative-checkboxes li[data-task='b'] > p > input:checked {
 color: var(--color-orange);
 -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z' /%3E%3C/svg%3E");
-}
-body.theme-dark input[data-task='?']:checked, body.theme-dark li[data-task='?'] > input:checked, body.theme-dark li[data-task='?'] > p > input:checked {
+}`,
+      dark: `body.theme-dark input[data-task='?']:checked, body.theme-dark li[data-task='?'] > input:checked, body.theme-dark li[data-task='?'] > p > input:checked {
 background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"%3E%3Cpath fill="black" fill-opacity="0.8" fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"%2F%3E%3C%2Fsvg%3E');
 }
 
@@ -2154,5 +2169,6 @@ background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%
 body.theme-dark input[data-task='S']:checked, body.theme-dark li[data-task='S'] > input:checked, body.theme-dark li[data-task='S'] > p > input:checked {
 background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"%3E%3Cpath fill-opacity="0.8" fill="black" fill-rule="evenodd" d="M26 8a2 2 0 1 0-4 0v2a8 8 0 1 0 0 16v8a4.002 4.002 0 0 1-3.773-2.666a2 2 0 0 0-3.771 1.332A8.003 8.003 0 0 0 22 38v2a2 2 0 1 0 4 0v-2a8 8 0 1 0 0-16v-8a4.002 4.002 0 0 1 3.773 2.666a2 2 0 0 0 3.771-1.332A8.003 8.003 0 0 0 26 10V8Zm-4 6a4 4 0 0 0 0 8v-8Zm4 12v8a4 4 0 0 0 0-8Z" clip-rule="evenodd"%2F%3E%3C%2Fsvg%3E');
 }`,
+    },
   },
 };

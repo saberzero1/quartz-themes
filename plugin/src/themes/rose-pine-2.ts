@@ -3446,7 +3446,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "rose-norm": `.rose-norm {
+    "rose-norm": {
+      dark: `.rose-norm {
 --rp-base: #191724;
 --rp-surface: #1f1d2e;
 --rp-overlay: #26233a;
@@ -3463,7 +3464,9 @@ html[saved-theme="light"] body ul.tags > li {
 --rp-highlightMed: #403d52;
 --rp-highlightHigh: #524f67;
 }`,
-    "rose-moon": `.rose-moon {
+    },
+    "rose-moon": {
+      dark: `.rose-moon {
 --rp-base: #232136;
 --rp-surface: #2a273f;
 --rp-overlay: #393552;
@@ -3480,26 +3483,41 @@ html[saved-theme="light"] body ul.tags > li {
 --rp-highlightMed: #44415a;
 --rp-highlightHigh: #56526e;
 }`,
-    "rp-accent-full": `.rp-accent-full {
+    },
+    "rp-accent-full": {
+      general: `.rp-accent-full {
 --rp-accent: var(--rp-rose);
 }`,
-    "rp-accent-love": `.rp-accent-love {
+    },
+    "rp-accent-love": {
+      general: `.rp-accent-love {
 --rp-accent: var(--rp-love);
 }`,
-    "rp-accent-rose": `.rp-accent-rose {
+    },
+    "rp-accent-rose": {
+      general: `.rp-accent-rose {
 --rp-accent: var(--rp-rose);
 }`,
-    "rp-accent-gold": `.rp-accent-gold {
+    },
+    "rp-accent-gold": {
+      general: `.rp-accent-gold {
 --rp-accent: var(--rp-gold);
 }`,
-    "rp-accent-iris": `.rp-accent-iris {
+    },
+    "rp-accent-iris": {
+      general: `.rp-accent-iris {
 --rp-accent: var(--rp-iris);
 }`,
-    "rp-accent-pine": `.rp-accent-pine {
+    },
+    "rp-accent-pine": {
+      general: `.rp-accent-pine {
 --rp-accent: var(--rp-pine);
 }`,
-    "rp-accent-foam": `.rp-accent-foam {
+    },
+    "rp-accent-foam": {
+      general: `.rp-accent-foam {
 --rp-accent: var(--rp-foam);
 }`,
+    },
   },
 };

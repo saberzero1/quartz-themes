@@ -6591,7 +6591,8 @@ html[saved-theme="light"] body sup {
 }`,
   },
   classSettings: {
-    tv1: `body.tv1 .callout {
+    tv1: {
+      general: `body.tv1 .callout {
 color: inherit;
 border-radius: 10px;
 box-shadow: 0px 0px 0px 1px var(--c-tv1), 0px 0px 3px 1px var(--s-tv1);
@@ -6665,24 +6666,30 @@ body.tv1 .workspace-leaf-content {
 
 body.tv1 {
 --cbr: 20px !important;
-}
-.tv1 {
+}`,
+      dark: `.tv1 {
 --c-tv1: rgb(58, 58, 58);
 --s-tv1: rgba(0, 0, 0, 0.47);
 --background-1-tv1: hsl(var(--background-2_h), calc(calc(var(--accent-s) *.1) + calc(.1% * var(--bgt_s, 1))), calc(var(--background-2_l) + calc(var(--bgt_l, 0) * .1% - 3%)));
-}
-.tv1 {
+}`,
+      light: `.tv1 {
 --c-tv1: rgb(209, 209, 209);
 --s-tv1: rgba(0, 0, 0, 0.089);
 --background-1-tv1: hsl(var(--background-2_h), calc(calc(var(--accent-s) * 1) + calc(.5% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 2%) + calc(var(--bgt_l, 0) * 1%)));
 }`,
-    "custom-accent-bold": `body.custom-accent-bold {
+    },
+    "custom-accent-bold": {
+      general: `body.custom-accent-bold {
 --bold-color: var(--colored-accent-1);
 }`,
-    "custom-accent-italic": `body.custom-accent-italic {
+    },
+    "custom-accent-italic": {
+      general: `body.custom-accent-italic {
 --italic-color: var(--colored-accent-1);
 }`,
-    "heading-highlighting": `body.heading-highlighting .cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1), body.heading-highlighting .cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2), body.heading-highlighting .cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3), body.heading-highlighting .cm-header.cm-header-4:not(.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4), body.heading-highlighting .cm-header.cm-header-5:not(.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5), body.heading-highlighting .cm-header.cm-header-6:not(.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6), body.heading-highlighting .markdown-rendered h1, body.heading-highlighting .markdown-rendered h2, body.heading-highlighting .markdown-rendered h3, body.heading-highlighting .markdown-rendered h4, body.heading-highlighting .markdown-rendered h5, body.heading-highlighting .markdown-rendered h6 {
+    },
+    "heading-highlighting": {
+      general: `body.heading-highlighting .cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1), body.heading-highlighting .cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2), body.heading-highlighting .cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3), body.heading-highlighting .cm-header.cm-header-4:not(.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4), body.heading-highlighting .cm-header.cm-header-5:not(.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5), body.heading-highlighting .cm-header.cm-header-6:not(.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6), body.heading-highlighting .markdown-rendered h1, body.heading-highlighting .markdown-rendered h2, body.heading-highlighting .markdown-rendered h3, body.heading-highlighting .markdown-rendered h4, body.heading-highlighting .markdown-rendered h5, body.heading-highlighting .markdown-rendered h6 {
 color: var(--colored-accent-i1);
 border-bottom: 2px solid var(--shadow-1);
 padding-left: 5px !important;
@@ -6731,18 +6738,24 @@ background-color: var(--custom-h5-color, var(--general-heading-color, var(--colo
 body.heading-highlighting .cm-header.cm-header-6:not(.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6), body.heading-highlighting .markdown-rendered h6 {
 background-color: var(--custom-h6-color, var(--general-heading-color, var(--colored-accent-1)));
 }`,
-    "status-bar-hover": `body.status-bar-hover .status-bar {
+    },
+    "status-bar-hover": {
+      general: `body.status-bar-hover .status-bar {
 opacity: 0;
 transition: all .5s;
 &:hover {        
         opacity: 1;
     };
 }`,
-    "enhanced-buttons-disable": `body.enhanced-buttons-disable {
+    },
+    "enhanced-buttons-disable": {
+      general: `body.enhanced-buttons-disable {
 --highlight-1: transparent !important;
 --highlight-2: transparent !important;
 }`,
-    "enhanced-cursor": `body.is-focused .x-cursor {
+    },
+    "enhanced-cursor": {
+      general: `body.is-focused .x-cursor {
 position:flex;
 opacity: 1;
 background: transparent;
@@ -6768,19 +6781,22 @@ animation: blink1 1s 0s both infinite;
 body.enhanced-cursor:has(.x-cursor) .cm-editor * {
 caret-color: transparent;
 }`,
-    "blend-images": `.blend-images .internal-embed.media-embed.image-embed.is-loaded {
+    },
+    "blend-images": {
+      dark: `.blend-images .internal-embed.media-embed.image-embed.is-loaded {
 mix-blend-mode: color-dodge;
 }
 
 .blend-images img {
 filter: invert(1) saturate(0);
-}
-.blend-images .internal-embed.media-embed.image-embed.is-loaded {
+}`,
+      light: `.blend-images .internal-embed.media-embed.image-embed.is-loaded {
 mix-blend-mode: multiply;
 }
 
 .blend-images img {
 filter: invert(0) saturate(0);
 }`,
+    },
   },
 };

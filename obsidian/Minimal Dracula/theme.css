@@ -1,21 +1,22 @@
 /* ==
 @name             Minimal Dracula
 @namespace        github.com/druxorey/minimal-dracula-for-obsidian
-@version          1.8.2
+@version          1.8.3
 @description      Are you tired of the same boring colors on Obsidian? Then try this modern color style based on the Dracula theme
 @author           Druxorey
 @license          GNU General Public License v3.0
 == */
 
-:root:not(.is-phone,.is-mobile) {
-	--drx-border-radius-outer: 16px;
-	--drx-border-radius-inner: 10px;
-	background-color: #1E1F29;
-}
-
 /* ========================== OBSIDIAN VALUES ======================== */
 
-body:not(.is-phone,.is-mobile) {
+:root {
+	background-color: #1E1F29;
+
+	--drx-border-radius-outer: 16px;
+	--drx-border-radius-inner: 10px;
+}
+
+body {
 	--h1-weight: 700;
 	--h2-weight: 700;
 	--h3-weight: 600;
@@ -23,34 +24,34 @@ body:not(.is-phone,.is-mobile) {
 	--h5-weight: 500;
 	--h6-weight: 500;
 
-	--h1-size: 1.50em;
-	--h2-size: 1.35em;
-	--h3-size: 1.20em;
+	--h1-size: 1.60em;
+	--h2-size: 1.40em;
+	--h3-size: 1.25em;
 	--h4-size: 1.15em;
 	--h5-size: 1.10em;
 	--h6-size: 1.05em;
 
-	--h1-line-height: 1.00em;
-	--h2-line-height: 1.00em;
-	--h3-line-height: 1.00em;
-	--h4-line-height: 1.00em;
-	--h5-line-height: 1.00em;
-	--h6-line-height: 1.00em;
+	--h1-line-height: 1.25em;
+	--h2-line-height: 1.25em;
+	--h3-line-height: 1.30em;
+	--h4-line-height: 1.30em;
+	--h5-line-height: 1.30em;
+	--h6-line-height: 1.30em;
 
 	--checklist-done-decoration: none;
 
 	--link-unresolved-opacity: 0.5;
 	--table-width: 88cqw;
 
-	--drx-color-callout-comment: 98, 114, 164;
-	--drx-color-callout-red: 255, 85, 85;
-	--drx-color-callout-orange: 255, 184, 108;
-	--drx-color-callout-yellow: 241, 250, 140;
-	--drx-color-callout-green: 55, 235, 98;
-	--drx-color-callout-blue: 84, 179, 255;
-	--drx-color-callout-cyan: 114, 208, 228;
-	--drx-color-callout-purple: 189, 147, 249;
-	--drx-color-callout-pink: 255, 121, 198;
+	--drx-color-callout-comment:  98, 114, 164;
+	--drx-color-callout-red:     255,  85,  85;
+	--drx-color-callout-orange:  255, 184, 108;
+	--drx-color-callout-yellow:  241, 250, 140;
+	--drx-color-callout-green:    55, 235,  98;
+	--drx-color-callout-blue:     84, 179, 255;
+	--drx-color-callout-cyan:    114, 208, 228;
+	--drx-color-callout-purple:  189, 147, 249;
+	--drx-color-callout-pink:    255, 121, 198;
 
 	--callout-default: var(--drx-color-callout-comment);
 	--callout-info: var(--drx-color-callout-comment);
@@ -70,7 +71,10 @@ body:not(.is-phone,.is-mobile) {
 
 /* ============================ DARK THEME =========================== */
 
-body.theme-dark:not(.is-phone,.is-mobile) {
+body.theme-dark {
+	color: var(--drx-color-text);
+	background-color: var(--drx-color-base);
+
 	--drx-color-base: #191A21;
 	--drx-color-surface: #21222C;
 	--drx-color-overlay: #282A36;
@@ -109,8 +113,6 @@ body.theme-dark:not(.is-phone,.is-mobile) {
 	--drx-color-pink-2: #FF79C6;
 	--drx-color-pink-3: #E660AD;
 
-	color: var(--drx-color-text);
-	
 	--bold-color: var(--drx-color-accent);
 	--text-selection: color-mix(in srgb, var(--drx-color-accent), transparent 70%);
 	--mono-rgb-100: 127, 140, 187 !important;
@@ -153,86 +155,150 @@ body.theme-dark:not(.is-phone,.is-mobile) {
 	--code-string: var(--drx-color-yellow-2);
 	--code-tag: var(--drx-color-red-2);
 	--code-value: var(--drx-color-purple-2);
-}
 
-/* General application background */
-body.theme-dark {
-	background-color: var(--drx-color-base);
-}
+	/* Vault selection panel */
+	.workspace-sidedock-vault-profile {
+		background-color: var(--drx-color-surface) !important;
+	}
 
-/* Vault selection panel */
-.theme-dark .workspace-sidedock-vault-profile {
-	background-color: var(--drx-color-surface) !important;
-}
+	/* Workspace panels */
+	.workspace-leaf-content {
+		background-color: var(--drx-color-surface);
+	}
 
-/* Workspace panels */
-.theme-dark .workspace-leaf-content {
-	background-color: var(--drx-color-surface);
-}
+	/* Styling for the status bar */
+	.status-bar {
+		background-color: var(--drx-color-surface);
+	}
 
-/* Styling for the status bar */
-.theme-dark .status-bar {
-	background-color: var(--drx-color-surface);
-}
+	/* Navigation headers */
+	.nav-header {
+		background-color: var(--drx-color-base);
+	}
 
-/* Navigation headers */
-.theme-dark .nav-header {
-	background-color: var(--drx-color-base);
-}
+	/* Main text editing panel */
+	.workspace-split.mod-root .view-content {
+		background-color: var(--drx-color-surface);
+	}
 
-/* Main text editing panel */
-.theme-dark .workspace-split.mod-root .view-content {
-	background-color: var(--drx-color-surface);
-}
+	/* Markdown table body */
+	.markdown-rendered tbody tr {
+		background: var(--drx-color-base);
+	}
 
-/* Markdown table body */
-.theme-dark .markdown-rendered tbody tr {
-	background: var(--drx-color-base);
-}
+	/* Fixes the title bar color issue in dark mode */
+	.titlebar-button {
+		background-color: var(--drx-color-base);
+	}
 
-/* Fixes the title bar color issue in dark mode */
-.theme-dark .titlebar-button {
-	background-color: var(--drx-color-base);
-}
+	/* Sets markdown links to cyan color */
+	.markdown-source-view .cm-string.cm-url {
+		color: var(--drx-color-cyan-2);
+	}
 
-/* Sets markdown links to cyan color */
-.theme-dark .markdown-source-view .cm-string.cm-url {
-	color: var(--drx-color-cyan-2);
-}
+	/* Adds custom styling for input fields */
+	textarea,
+	input.metadata-input-text,
+	input[type='date'],
+	input[type='datetime-local'],
+	input[type='text'],
+	input[type='search'],
+	input[type='email'],
+	input[type='password'],
+	input[type='number'] {
+		background-color: var(--drx-color-base);
+	}
 
-/* Adds custom styling for input fields */
-.theme-dark textarea,
-.theme-dark input.metadata-input-text,
-.theme-dark input[type='date'],
-.theme-dark input[type='datetime-local'],
-.theme-dark input[type='text'],
-.theme-dark input[type='search'],
-.theme-dark input[type='email'],
-.theme-dark input[type='password'],
-.theme-dark input[type='number'] {
-	background-color: var(--drx-color-base);
-}
+	/* Kanban Plugin Styling */
+	.kanban-plugin__item {
+		border: 1px solid var(--drx-color-highlight);
+	}
 
-.theme-dark .kanban-plugin__item {
-	border: 1px solid var(--drx-color-highlight) ;
-}
+	.kanban-plugin__lane {
+		background-color: var(--drx-color-overlay);
+	}
 
-.theme-dark .kanban-plugin__lane {
-	background-color: var(--drx-color-overlay);
-}
+	/* Settings inputs and buttons styling */
+	button:not(.clickable-icon),
+	.setting-item-control select {
+		background-color: var(--drx-color-highlight);
+	}
 
-.theme-dark button:not(.clickable-icon),
-.theme-dark .setting-item-control select {
-	background-color: var(--drx-color-highlight);
-}
+	.setting-item-control select:hover {
+		background-color: var(--drx-color-accent);
+	}
 
-.theme-dark .setting-item-control select:hover {
-	background-color: var(--drx-color-accent);
+	/* Tab content styling */
+	.horizontal-tab-content,
+	.vertical-tab-content {
+		background-color: var(--drx-color-surface);
+	}
+
+	.workspace-tab-header-container .workspace-tab-header.is-active {
+		background-color: var(--drx-color-surface) !important;
+	}
+
+	/* Callouts styling */
+	.cm-callout, .markdown-rendered .callout {
+		border-radius: var(--drx-border-radius-inner) !important;
+	}
+
+	.callout-title {
+		font-weight: 500;
+	}
+
+	.callout a {
+		font-weight: 500;
+	}
+
+	.callout[data-callout="todo"] {
+		--bold-color: var(--drx-color-text);
+		background: var(--drx-color-red-2) !important;
+		a { color: var(--drx-color-text) !important; }
+	}
+
+	.callout[data-callout="important"] {
+		--bold-color: var(--drx-color-purple-2);
+		a { color: var(--drx-color-purple-2) !important; }
+	}
+
+	.callout[data-callout="example"] {
+		--bold-color: var(--drx-color-pink-2);
+		a { color: var(--drx-color-pink-2) !important; }
+	}
+
+	.callout[data-callout="tldr"], .callout[data-callout="summary"], .callout[data-callout="tip"] {
+		--bold-color: var(--drx-color-cyan-2);
+		a { color: var(--drx-color-cyan-2) !important; }
+	}
+
+	.callout[data-callout="bug"], .callout[data-callout="error"], .callout[data-callout="fail"] {
+		--bold-color: var(--drx-color-red-2);
+		a { color: var(--drx-color-red-2) !important; }
+	}
+
+	.callout[data-callout="quote"] {
+		--bold-color: var(--drx-color-purple-2);
+		a { color: var(--drx-color-purple-2) !important; }
+	}
+
+	.callout[data-callout="success"] {
+		--bold-color: var(--drx-color-green-2);
+		a { color: var(--drx-color-green-2) !important; }
+	}
+
+	.callout[data-callout="question"], .callout[data-callout="warning"] {
+		--bold-color: var(--drx-color-orange-2);
+		a { color: var(--drx-color-orange-2) !important; }
+	}
 }
 
 /* ============================ LIGHT THEME ========================== */
 
-body.theme-light:not(.is-phone,.is-mobile) {
+body.theme-light {
+	color: var(--drx-color-text);
+	background-color: var(--drx-color-base);
+
 	--drx-color-base: #EDE9DA;
 	--drx-color-surface: #FFFBEB;
 	--drx-color-overlay: #DEDBCC;
@@ -271,8 +337,6 @@ body.theme-light:not(.is-phone,.is-mobile) {
 	--drx-color-pink-2: #A3144D;
 	--drx-color-pink-3: #82103E;
 
-	color: var(--drx-color-text);
-	
 	--bold-color: var(--drx-color-accent);
 	--text-selection: color-mix(in srgb, var(--drx-color-accent), transparent 70%);
 
@@ -314,92 +378,180 @@ body.theme-light:not(.is-phone,.is-mobile) {
 	--code-string: var(--drx-color-yellow-2);
 	--code-tag: var(--drx-color-red-2);
 	--code-value: var(--drx-color-purple-2);
-}
 
-/* General application background */
-body.theme-light {
-	background-color: var(--drx-color-base);
-}
+	/* Vault selection panel */
+	.workspace-sidedock-vault-profile {
+		background-color: var(--drx-color-surface) !important;
+	}
 
-/* Vault selection panel */
-.theme-light .workspace-sidedock-vault-profile {
-	background-color: var(--drx-color-surface) !important;
-}
+	/* Workspace panels */
+	.workspace-leaf-content {
+		background-color: var(--drx-color-surface);
+	}
 
-/* Workspace panels */
-.theme-light .workspace-leaf-content {
-	background-color: var(--drx-color-surface);
-}
+	/* Styling for the status bar */
+	.status-bar {
+		background-color: var(--drx-color-surface);
+	}
 
-/* Styling for the status bar */
-.theme-light .status-bar {
-	background-color: var(--drx-color-surface);
-}
+	/* Navigation headers */
+	.nav-header {
+		background-color: var(--drx-color-base);
+	}
 
-/* Navigation headers */
-.theme-light .nav-header {
-	background-color: var(--drx-color-base);
-}
+	/* Main text editing panel */
+	.workspace-split.mod-root .view-content {
+		background-color: var(--drx-color-surface);
+	}
 
-/* Main text editing panel */
-.theme-light .workspace-split.mod-root .view-content {
-	background-color: var(--drx-color-surface);
-}
+	/* Markdown table body */
+	.markdown-rendered thead tr {
+		background-color: var(--drx-color-surface);
+	}
 
-/* Markdown table body */
-.theme-light .markdown-rendered thead tr {
-	background-color: var(--drx-color-surface);
-}
+	/* Fixes the title bar color issue in light mode */
+	.workspace-tab-header-container, 
+	.titlebar-button {
+		background-color: var(--drx-color-base);
+	}
 
-/* Fixes the title bar color issue in light mode */
-.theme-light .workspace-tab-header-container, .titlebar-button {
-	background-color: var(--drx-color-base);
-}
+	/* Sets markdown links to blue color */
+	.markdown-source-view .cm-string.cm-url {
+		color: var(--drx-color-blue-2);
+		background-color: var(--drx-color-highlight);
+	}
 
-/* Sets markdown links to blue color */
-.theme-light .markdown-source-view .cm-string.cm-url {
-	color: var(--drx-color-blue-2);
-	background-color: var(--drx-color-highlight);
-}
+	/* Adds custom styling for input fields */
+	textarea,
+	input.metadata-input-text,
+	input[type='date'],
+	input[type='datetime-local'],
+	input[type='text'],
+	input[type='search'],
+	input[type='email'],
+	input[type='password'],
+	input[type='number'] {
+		background-color: var(--drx-color-overlay);
+	}
 
-/* Adds custom styling for input fields */
-.theme-light textarea,
-.theme-light input.metadata-input-text,
-.theme-light input[type='date'],
-.theme-light input[type='datetime-local'],
-.theme-light input[type='text'],
-.theme-light input[type='search'],
-.theme-light input[type='email'],
-.theme-light input[type='password'],
-.theme-light input[type='number'] {
-	background-color: var(--drx-color-overlay);
-}
+	/* Kanban Plugin Styling */
+	.kanban-plugin__item {
+		border: 1px solid var(--drx-color-overlay);
+	}
 
-.theme-light .kanban-plugin__item {
-	border: 1px solid var(--drx-color-overlay) ;
-}
+	.kanban-plugin__lane {
+		background-color: var(--drx-color-base);
+	}
 
-.theme-light .kanban-plugin__lane {
-	background-color: var(--drx-color-base);
-}
+	/* Settings inputs and buttons styling */
+	button:not(.clickable-icon),
+	.setting-item-control select {
+		background-color: var(--drx-color-overlay);
+	}
 
-.theme-light button:not(.clickable-icon),
-.theme-light .setting-item-control select {
-	background-color: var(--drx-color-overlay);
+	/* Tab content styling */
+	.horizontal-tab-content,
+	.vertical-tab-content {
+		background-color: var(--drx-color-surface);
+	}
+
+	.workspace-tab-header-container .workspace-tab-header.is-active {
+		background-color: var(--drx-color-surface) !important;
+	}
+
+	/* Callouts styling */
+	.cm-callout, .markdown-rendered .callout {
+		border-radius: var(--drx-border-radius-inner) !important;
+		border: solid 1px var(--drx-color-highlight);
+		box-shadow: 0 0.25rem 0.5rem #CECCC0B6;
+	}
+
+	.cm-callout:hover, .markdown-rendered .callout:hover {
+		border-radius: var(--drx-border-radius-inner) !important;
+		box-shadow: 0 0.25rem 0.5rem var(--drx-color-base) !important;
+	}
+
+	.callout {
+		padding: 0px;
+		background: #6272A43F !important;
+	}
+
+	.callout-title {
+		gap: 10px;
+		padding: 1rem;
+		font-weight: 500;
+	}
+
+	.callout-content {
+		background: var(--drx-color-base) !important;
+		padding: 1rem;
+		box-shadow: inset 0 -0.25rem 0.25rem #CECCC066;
+	}
+
+	.callout a {
+		font-weight: 500;
+	}
+
+	.callout[data-callout="todo"] {
+		background: var(--drx-color-red-2) !important;
+		color: white !important;
+		.callout-content { color: var(--drx-color-text) !important; }
+		--bold-color: var(--drx-color-text);
+		a { color: white !important; }
+	}
+
+	.callout[data-callout="important"], .callout[data-callout="example"] {
+		background: #A3144D4F !important;
+		.callout-title, .callout-icon .svg-icon { color: var(--drx-color-pink-2); }
+		--bold-color: var(--drx-color-pink-2);
+		a { color: var(--drx-color-pink-2) !important; }
+	}
+
+	.callout[data-callout="summary"], .callout[data-callout="tldr"], .callout[data-callout="tip"] {
+		background: #036A964F !important;
+		.callout-title, .callout-icon .svg-icon { color: var(--drx-color-blue-2); }
+		--bold-color: var(--drx-color-blue-2);
+		a { color: var(--drx-color-blue-2) !important; }
+	}
+
+	.callout[data-callout="bug"], .callout[data-callout="error"], .callout[data-callout="fail"] {
+		background: #A3144D4F !important;
+		.callout-title, .callout-icon .svg-icon { color: var(--drx-color-red-2); }
+		--bold-color: var(--drx-color-red-2);
+		a { color: var(--drx-color-red-2) !important; }
+	}
+
+	.callout[data-callout="quote"] {
+		background: #644AC94F !important;
+		.callout-title, .callout-icon .svg-icon { color: var(--drx-color-purple-2); }
+		--bold-color: var(--drx-color-purple-2);
+		a { color: var(--drx-color-purple-2) !important; }
+	}
+
+	.callout[data-callout="success"] {
+		background: #14710A4F !important;
+		.callout-title, .callout-icon .svg-icon { color: var(--drx-color-green-2); }
+		--bold-color: var(--drx-color-green-2);
+		a { color: var(--drx-color-green-2) !important; }
+	}
+
+	.callout[data-callout="question"], .callout[data-callout="warning"] {
+		background: #AF3A034F !important;
+		.callout-title, .callout-icon .svg-icon { color: var(--drx-color-orange-2); }
+		--bold-color: var(--drx-color-orange-2);
+		a { color: var(--drx-color-orange-2) !important; }
+	}
 }
 
 /* ========================== GENERAL STYLING ======================== */
 
-a {
-	color: var(--drx-color-accent) !important;
-}
+/* General link styling */
+a { color: var(--drx-color-accent) !important; }
 
-a:hover {
-	color: var(--drx-color-important) !important;
-}
+a:hover { color: var(--drx-color-important) !important; }
 
 /* Explicit H1 font size */
-h1 {
+.markdown-rendered h1[align="center"], h1 {
 	font-size: 2em;
 }
 
@@ -409,24 +561,33 @@ h1 {
 	border-radius: var(--drx-border-radius-outer);
 }
 
-/* Styles header 1 in markdown with a underline */
-.HyperMD-header-1 {
-	border-bottom: 3px solid;
-	border-color: var(--drx-color-accent);
-	padding-bottom: 0.75rem !important;
+/* Margins to visually group headers with their content */
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3 {
+    margin-top: 2em !important;
+    margin-bottom: 0.5em !important;
 }
 
-/* Styles inline code blocks in markdown (text between ``) */
+/* Styles header 1 in markdown with an underline (Live Preview & Reading Mode) */
+.HyperMD-header-1,
+.markdown-rendered h1:not([align="center"]) {
+	border-bottom: 3px solid;
+	border-color: var(--drx-color-accent);
+	padding-bottom: 0.3em !important;
+}
+
+/* Styles inline code blocks in markdown (text between ```) */
 .cm-s-obsidian span.cm-inline-code  {
 	color: var(--drx-color-subtext);
 }
 
-/* Styles the vault selection area at the bottom-right */
+/* Styles the vault selection area at the bottom-left */
 .workspace-sidedock-vault-profile {
 	width: 94% !important;
 	margin: 10px;
-	border-radius: var(--drx-border-radius-outer);
 	border: none;
+	border-radius: var(--drx-border-radius-outer);
 }
 
 /* Styles the status bar at the bottom-right */
@@ -455,19 +616,16 @@ h1 {
 	box-shadow: none;
 }
 
-/* Background color for the settings modal */
-.modal-bg {
-	background-color: var(--drx-color-surface);
-}
-
-/* Justifies text in reading mode */
+/* Justifies text in reading mode with hyphenation support */
 .markdown-preview-view p {
 	text-align: justify;
 	text-justify: inter-word;
+	hyphens: auto;
+	-webkit-hyphens: auto;
 }
 
 /* Adds a border to the entire application */
-body:not(.is-mobile) .workspace {
+body .workspace {
 	position: relative;
 	overflow: visible;
 	padding: 8px;
@@ -493,6 +651,7 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 	margin-left: (calc(200rem - 100%) / -2) !important;
 }
 
+/* Dropdowns and comboboxes styling */
 button:not(.clickable-icon),
 select, .combobox-button, .dropdown {
 	box-shadow: none;
@@ -508,6 +667,7 @@ button.mod-cta {
 	color: var(--drx-color-text) !important; 
 }
 
+/* Kanban plugin global fixes */
 .kanban-plugin__lane-header-wrapper, 
 .kanban-plugin__scroll-container.kanban-plugin__vertical, 
 .kanban-plugin__item-button-wrapper {
@@ -528,171 +688,19 @@ button.mod-cta {
 	margin-top: 0.25rem;
 }
 
+/* Active tab view header transparency */
 .workspace-leaf.mod-active .view-header,
 .is-focused .workspace-leaf.mod-active .view-header{
 	background: transparent;
 }
 
-/* ============================= CALLOUTS ============================ */
-
-.theme-dark .callout[data-callout="todo"] {
-	background: var(--drx-color-red-2) !important;
-
-	a {
-		color: var(--drx-color-text) !important;
-	}
-	--bold-color: var(--drx-color-text);
+/* Workspace tab header container global fixes */
+.workspace-tab-header-container .workspace-tab-header.is-active {
+	border-radius: var(--drx-border-radius-inner);
 }
 
-.theme-light .cm-callout {
-	border-radius: var(--drx-border-radius-outer);
-	border: solid 1px var(--drx-color-highlight);
-	box-shadow: 0 0.25rem 0.5rem #CECCC0B6;
-}
-
-.theme-light .callout-title {
-	gap: 10px;
-	padding: 1rem;
-}
-
-.theme-light .callout {
-	padding: 0px;
-}
-
-.theme-light .callout-content {
-	background: var(--drx-color-base) !important;
-	padding: 1rem;
-	box-shadow: inset 0 -0.25rem 0.25rem #CECCC066;
-}
-
-.theme-light .cm-callout:hover {
-	border-radius: var(--drx-border-radius-outer) !important;
-	box-shadow: 0 0.25rem 0.5rem var(--drx-color-base) !important;
-}
-
-.theme-light .callout {
-	background: #6272A43F !important;
-}
-
-.theme-light .callout[data-callout="todo"] {
-	background: var(--drx-color-red-2) !important;
-	color: white !important;
-
-	.callout-content {
-		color: var(--drx-color-text) !important;
-	}
-
-	a {
-		color: white !important;
-	}
-}
-
-.theme-light .callout[data-callout="important"] {
-	background: #A3144D4F !important;
-	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-pink-2); }
-}
-
-.theme-light .callout[data-callout="example"] {
-	background: #A3144D4F !important;
-	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-pink-2); }
-}
-
-.theme-light .callout[data-callout="summary"] {
-	background: #036A964F !important;
-	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-blue-2); }
-}
-
-.theme-light .callout[data-callout="tldr"] {
-	background: #036A964F !important;
-	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-blue-2); }
-}
-
-.theme-light .callout[data-callout="tip"] {
-	background: #036A964F !important;
-	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-blue-2); }
-}
-
-.theme-light .callout[data-callout="bug"] {
-	background: #A3144D4F !important;
-	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-red-2); }
-}
-
-.theme-light .callout[data-callout="error"] {
-	background: #A3144D4F !important;
-	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-red-2); }
-}
-
-.theme-light .callout[data-callout="fail"] {
-	background: #A3144D4F !important;
-	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-red-2); }
-}
-
-.theme-light .callout[data-callout="quote"] {
-	background: #644AC94F !important;
-	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-purple-2); }
-}
-
-.theme-light .callout[data-callout="success"] {
-	background: #14710A4F !important;
-	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-green-2); }
-}
-
-.theme-light .callout[data-callout="question"] {
-	background: #AF3A034F !important;
-	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-orange-2); }
-}
-
-.theme-light .callout[data-callout="warning"] {
-	background: #AF3A034F !important;
-	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-orange-2); }
-}
-
-.callout[data-callout="important"] {
-	--bold-color: var(--drx-color-pink-2);
-}
-
-.callout[data-callout="example"] {
-	--bold-color: var(--drx-color-pink-2);
-}
-
-.callout[data-callout="tldr"] {
-	--bold-color: var(--drx-color-cyan-2);
-}
-
-.callout[data-callout="summary"] {
-	--bold-color: var(--drx-color-cyan-2);
-}
-
-.callout[data-callout="tip"] {
-	--bold-color: var(--drx-color-cyan-2);
-}
-
-.callout[data-callout="bug"] {
-	--bold-color: var(--drx-color-red-2);
-}
-
-.callout[data-callout="error"] {
-	--bold-color: var(--drx-color-red-2);
-}
-
-.callout[data-callout="fail"] {
-	--bold-color: var(--drx-color-red-2);
-}
-
-.callout[data-callout="quote"] {
-	--bold-color: var(--drx-color-purple-2);
-}
-
-.callout[data-callout="success"] {
-	--bold-color: var(--drx-color-green-2);
-}
-
-.callout[data-callout="question"] {
-	--bold-color: var(--drx-color-orange-2);
-}
-
-.callout[data-callout="warning"] {
-	--bold-color: var(--drx-color-orange-2);
+.workspace-tab-header-container .workspace-tab-header {
+	position: unset;
 }
 
 /* ============================ PRINTING ============================= */
@@ -711,6 +719,7 @@ button.mod-cta {
 		page-break-inside: avoid;
 	}
 
+	/* Light mode callouts enforcement on print */
 	.theme-light .callout {
 		page-break-inside: avoid;
 		border-radius: 10px !important;

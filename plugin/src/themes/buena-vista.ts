@@ -3383,7 +3383,8 @@ html[saved-theme="light"] body sup {
 }`,
   },
   classSettings: {
-    "color-scheme-monochrome": `.color-scheme-monochrome {
+    "color-scheme-monochrome": {
+      general: `.color-scheme-monochrome {
 --text-highlight-h: var(--accent-h);
 --italic-h: var(--accent-h);
 --bold-h: var(--accent-h);
@@ -3423,7 +3424,9 @@ html[saved-theme="light"] body sup {
 --color-base-90:   hsl(0, 0%, var(--color-90-l));
 --color-base-100:  hsl(0, 0%, var(--color-100-l));
 }`,
-    "color-scheme-complementary": `.color-scheme-complementary {
+    },
+    "color-scheme-complementary": {
+      general: `.color-scheme-complementary {
 --accent-i-h: calc(var(--accent-h) + 180);
 --text-highlight-h: var(--accent-i-h);
 --italic-h: var(--accent-h);
@@ -3464,7 +3467,9 @@ html[saved-theme="light"] body sup {
 --color-base-90:   hsl(0, 0%, var(--color-90-l));
 --color-base-100:  hsl(0, 0%, var(--color-100-l));
 }`,
-    "color-scheme-even-triad": `.color-scheme-even-triad {
+    },
+    "color-scheme-even-triad": {
+      general: `.color-scheme-even-triad {
 --accent-even-2-h: calc(var(--accent-h) - 120);
 --accent-even-3-h: calc(var(--accent-h) + 120);
 --text-highlight-h: var(--accent-even-3-h);
@@ -3506,7 +3511,9 @@ html[saved-theme="light"] body sup {
 --color-base-90:   hsl(0, 0%, var(--color-90-l));
 --color-base-100:  hsl(0, 0%, var(--color-100-l));
 }`,
-    "color-scheme-comp-triad": `.color-scheme-comp-triad {
+    },
+    "color-scheme-comp-triad": {
+      general: `.color-scheme-comp-triad {
 --accent-comp-2-h: calc(var(--accent-h) - 165);
 --accent-comp-3-h: calc(var(--accent-h) + 165);
 --text-highlight-h: var(--accent-comp-3-h);
@@ -3548,7 +3555,9 @@ html[saved-theme="light"] body sup {
 --color-base-90:   hsl(0, 0%, var(--color-90-l));
 --color-base-100:  hsl(0, 0%, var(--color-100-l));
 }`,
-    "color-scheme-analogous": `.color-scheme-analogous {
+    },
+    "color-scheme-analogous": {
+      general: `.color-scheme-analogous {
 --accent-ana-2-h: calc(var(--accent-h) - 30);
 --accent-ana-3-h: calc(var(--accent-h) + 30);
 --text-highlight-h: var(--accent-ana-3-h);
@@ -3590,7 +3599,9 @@ html[saved-theme="light"] body sup {
 --color-base-90:   hsl(0, 0%, var(--color-90-l));
 --color-base-100:  hsl(0, 0%, var(--color-100-l));
 }`,
-    "color-scheme-tetradic": `.color-scheme-tetradic {
+    },
+    "color-scheme-tetradic": {
+      general: `.color-scheme-tetradic {
 --accent-tetra-2-h: calc(var(--accent-h) - 90);
 --accent-tetra-3-h: calc(var(--accent-h) + 180);
 --accent-tetra-4-h: calc(var(--accent-h) + 90);
@@ -3633,10 +3644,13 @@ html[saved-theme="light"] body sup {
 --color-base-90:   hsl(0, 0%, var(--color-90-l));
 --color-base-100:  hsl(0, 0%, var(--color-100-l));
 }`,
-    "blur-enabled": `.blur-enabled {
+    },
+    "blur-enabled": {
+      general: `.blur-enabled {
 --blur-effect: blur(calc(var(--blur-size) * var(--blur-size) * 1px));
 --background-blurred: var(--background-semitransp);
 --background-blurred-alt: var(--background-semitransp-alt);
 }`,
+    },
   },
 };

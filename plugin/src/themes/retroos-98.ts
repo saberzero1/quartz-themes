@@ -3651,7 +3651,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    ROS98: `.ROS98-DC {
+    ROS98: {
+      dark: `.ROS98-DC {
 --background-primary: #3c3c3c;
 --background-secondary: #707070;
 }
@@ -3694,8 +3695,8 @@ html[saved-theme="light"] body ul.tags > li {
 .ROS98-Ancient {
 --background-primary: #2b221a;
 --background-secondary: #7a614a;
-}
-.ROS98-Tropical {
+}`,
+      light: `.ROS98-Tropical {
 --background-primary: #dacea6;
 --background-secondary: #8e866c;
 }
@@ -3847,163 +3848,244 @@ html[saved-theme="light"] body ul.tags > li {
 --background-primary: #f5ffb6;
 --background-secondary: #e0e0a0;
 }`,
-    "ROS98-Ancient": `.ROS98-Ancient {
+    },
+    "ROS98-Ancient": {
+      dark: `.ROS98-Ancient {
 --background-primary: #2b221a;
 --background-secondary: #7a614a;
 }`,
-    "ROS98-DC": `.ROS98-DC {
+    },
+    "ROS98-DC": {
+      dark: `.ROS98-DC {
 --background-primary: #3c3c3c;
 --background-secondary: #707070;
 }`,
-    "ROS98-Jungle": `.ROS98-Jungle {
+    },
+    "ROS98-Jungle": {
+      dark: `.ROS98-Jungle {
 --background-primary: #625437;
 --background-secondary: #958054;
 }`,
-    "ROS98-mystery": `.ROS98-mystery {
+    },
+    "ROS98-mystery": {
+      dark: `.ROS98-mystery {
 --background-primary: #343c34;
 --background-secondary: #607060;
 }`,
-    "ROS98-Travel": `.ROS98-Travel {
+    },
+    "ROS98-Travel": {
+      dark: `.ROS98-Travel {
 --background-primary: #3f3731;
 --background-secondary: #726559;
 }`,
-    "ROS98-Snow": `.ROS98-Snow {
+    },
+    "ROS98-Snow": {
+      dark: `.ROS98-Snow {
 --background-primary: #1a1c0e;
 --background-secondary: #4b4f2a;
 }`,
-    "ROS98-Space": `.ROS98-Space {
+    },
+    "ROS98-Space": {
+      dark: `.ROS98-Space {
 --background-primary: #3b4247;
 --background-secondary: #66737a;
 }`,
-    "ROS98-steam": `.ROS98-steam {
+    },
+    "ROS98-steam": {
+      dark: `.ROS98-steam {
 --background-primary: #3e4637;
 --background-secondary: #4c5844;
 }`,
-    "ROS98-Water": `.ROS98-Water {
+    },
+    "ROS98-Water": {
+      dark: `.ROS98-Water {
 --background-primary: #15294e;
 --background-secondary: #2a509a;
 }`,
-    "ROS98-baseball": `.ROS98-baseball {
+    },
+    "ROS98-baseball": {
+      light: `.ROS98-baseball {
 --background-primary: #ffcc87;
 --background-secondary: #d1a86f;
 }`,
-    "ROS98-brick": `.ROS98-brick {
+    },
+    "ROS98-brick": {
+      light: `.ROS98-brick {
 --background-primary: #fffbd8;
 --background-secondary: #c2bfa5;
 }`,
-    "ROS98-Bugs": `.ROS98-Bugs {
+    },
+    "ROS98-Bugs": {
+      light: `.ROS98-Bugs {
 --background-primary: #bfd2a0;
 --background-secondary: #7a8666;
 }`,
-    "ROS98-desert": `.ROS98-desert {
+    },
+    "ROS98-desert": {
+      light: `.ROS98-desert {
 --background-primary: #fff4df;
 --background-secondary: #d5ccbb;
 }`,
-    "ROS98-eggplant": `.ROS98-eggplant {
+    },
+    "ROS98-eggplant": {
+      light: `.ROS98-eggplant {
 --background-primary: #cefcf1;
 --background-secondary: #90b0a8;
 }`,
-    "ROS98-Foxtrot": `.ROS98-Foxtrot {
+    },
+    "ROS98-Foxtrot": {
+      light: `.ROS98-Foxtrot {
 --background-primary: #b8c0cd;
 --background-secondary: #747981;
 }`,
-    "ROS98-Horses": `.ROS98-Horses {
+    },
+    "ROS98-Horses": {
+      light: `.ROS98-Horses {
 --background-primary: #f2d6e0;
 --background-secondary: #a6939a;
 }`,
-    "ROS98-Horror": `.ROS98-Horror {
+    },
+    "ROS98-Horror": {
+      light: `.ROS98-Horror {
 --background-primary: #dfefa3;
 --background-secondary: #98a36f;
 }`,
-    "ROS98-lilac": `.ROS98-lilac {
+    },
+    "ROS98-lilac": {
+      light: `.ROS98-lilac {
 --background-primary: #d6c4ff;
 --background-secondary: #afa0d0;
 }`,
-    "ROS98-maple": `.ROS98-maple {
+    },
+    "ROS98-maple": {
+      light: `.ROS98-maple {
 --background-primary: #fff3ad;
 --background-secondary: #e0cc98;
 }`,
-    "ROS98-marine": `.ROS98-marine {
+    },
+    "ROS98-marine": {
+      light: `.ROS98-marine {
 --background-primary: #c8e0d8;
 --background-secondary: #88c0b8;
 }`,
-    "ROS98-Messy": `.ROS98-Messy {
+    },
+    "ROS98-Messy": {
+      light: `.ROS98-Messy {
 --background-secondary: #8284bc;
 }`,
-    "ROS98-MW": `.ROS98-MW {
+    },
+    "ROS98-MW": {
+      light: `.ROS98-MW {
 --background-secondary: #7c828a;
 --background-primary: #cad3e1;
 }`,
-    "ROS98-nature": `.ROS98-nature {
+    },
+    "ROS98-nature": {
+      light: `.ROS98-nature {
 --background-secondary: #b09d82;
 --background-primary: #ebe3d4;
 }`,
-    "ROS98-Peanuts": `.ROS98-Peanuts {
+    },
+    "ROS98-Peanuts": {
+      light: `.ROS98-Peanuts {
 --background-primary: #b9d8ba;
 --background-secondary: #9d9d9d;
 }`,
-    "ROS98-Photo": `.ROS98-Photo {
+    },
+    "ROS98-Photo": {
+      light: `.ROS98-Photo {
 --background-primary: #dac9ad;
 --background-secondary: #8e8371;
 }`,
-    "ROS98-plum": `.ROS98-plum {
+    },
+    "ROS98-plum": {
+      light: `.ROS98-plum {
 --background-primary: #d8d0c8;
 --background-secondary: #a89890;
 }`,
-    "ROS98-pumpkin": `.ROS98-pumpkin {
+    },
+    "ROS98-pumpkin": {
+      light: `.ROS98-pumpkin {
 --background-primary: #ffecaa;
 --background-secondary: #f0d4a0;
 }`,
-    "ROS98-rainyday": `.ROS98-rainyday {
+    },
+    "ROS98-rainyday": {
+      light: `.ROS98-rainyday {
 --background-secondary: #8098b0;
 --background-primary: #b7dafc;
 }`,
-    "ROS98-reman": `.ROS98-reman {
+    },
+    "ROS98-reman": {
+      light: `.ROS98-reman {
 --background-primary: #d4d5b5;
 --background-secondary: #c1a600;
 }`,
-    "ROS98-rose": `.ROS98-rose {
+    },
+    "ROS98-rose": {
+      light: `.ROS98-rose {
 --background-secondary: #d0b0b8;
 --background-primary: #ffd7e1;
 }`,
-    "ROS98-Science": `.ROS98-Science {
+    },
+    "ROS98-Science": {
+      light: `.ROS98-Science {
 --background-secondary: #8398b1;
 --background-primary: #bbd9fd;
 }`,
-    "ROS98-slate": `.ROS98-slate {
+    },
+    "ROS98-slate": {
+      light: `.ROS98-slate {
 --background-secondary: #9db9c8;
 --background-primary: #c8ebff;
 }`,
-    "ROS98-sports": `.ROS98-sports {
+    },
+    "ROS98-sports": {
+      light: `.ROS98-sports {
 --background-secondary: #afe1a0;
 --background-primary: #bcffb5;
 }`,
-    "ROS98-spruce": `.ROS98-spruce {
+    },
+    "ROS98-spruce": {
+      light: `.ROS98-spruce {
 --background-primary: #ceffd7;
 --background-secondary: #a2c8a9;
 }`,
-    "ROS98-USA": `.ROS98-USA {
+    },
+    "ROS98-USA": {
+      light: `.ROS98-USA {
 --background-secondary: #d168d8;
 }`,
-    "ROS98-GoldenEra": `.ROS98-GoldenEra {
+    },
+    "ROS98-GoldenEra": {
+      light: `.ROS98-GoldenEra {
 --background-secondary: #b8c8b9;
 --background-primary: #f8f1da;
 }`,
-    "ROS98-Tree": `.ROS98-Tree {
+    },
+    "ROS98-Tree": {
+      light: `.ROS98-Tree {
 --background-primary: #bcbfe7;
 --background-secondary: #7e809b;
 }`,
-    "ROS98-Tropical": `.ROS98-Tropical {
+    },
+    "ROS98-Tropical": {
+      light: `.ROS98-Tropical {
 --background-primary: #dacea6;
 --background-secondary: #8e866c;
 }`,
-    "ROS98-Vinci": `.ROS98-Vinci {
+    },
+    "ROS98-Vinci": {
+      light: `.ROS98-Vinci {
 --background-primary: #ffdcd5;
 --background-secondary: #bfa5a0;
 }`,
-    "ROS98-wheat": `.ROS98-wheat {
+    },
+    "ROS98-wheat": {
+      light: `.ROS98-wheat {
 --background-primary: #f5ffb6;
 --background-secondary: #e0e0a0;
 }`,
+    },
   },
 };

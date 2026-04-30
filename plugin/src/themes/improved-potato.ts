@@ -17615,4 +17615,156 @@ html[saved-theme="light"] body ul.tags > li {
   color: var(--tag-color, rgb(59, 166, 247));
 }`,
   },
+  classSettings: {
+    "fancy-code": {
+      general: `body.fancy-code .cm-s-obsidian .HyperMD-codeblock {
+line-height: 1.4em;
+}
+
+body.fancy-code .HyperMD-codeblock-begin {
+counter-reset: codeblock-line-numbers;
+}
+
+body.fancy-code .HyperMD-codeblock:not(.HyperMD-codeblock-begin, .HyperMD-codeblock-end)::before {
+counter-increment: codeblock-line-numbers;
+content: counter(codeblock-line-numbers);
+font-size: 0.75em;
+line-height: 2;
+text-align: right;
+height: 100%;
+width: 1.7em;
+color: var(--text-muted);
+/* background-color: #1e2029; */
+background-color: var(--code-background);
+position: absolute;
+left: 0;
+padding-right: 1.4em;
+}
+
+body.fancy-code .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin, .HyperMD-codeblock-end) {
+padding-left: 2.8em;
+}
+
+body.fancy-code .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+background-color: var(--code-block-alt-bg);
+border: var(--codeblock-border);
+border-bottom: none;
+border-top-right-radius: var(--codeblock-roundness);
+border-top-left-radius: var(--codeblock-roundness);
+}
+
+body.fancy-code div.HyperMD-codeblock-bg:not(.HyperMD-codeblock-begin-bg) {
+border-right: var(--codeblock-border);
+border-left: var(--codeblock-border);
+}
+
+body.fancy-code .cm-line.HyperMD-codeblock .code-block-flair {
+font-size: calc(var(--code-size) * 0.9);
+color: var(--text-muted);
+padding: 0 1px;
+top: 0;
+}
+
+body.fancy-code .markdown-reading-view pre[class*='language-']::before {
+display: block;
+content: ' ';
+line-height: 1.5em;
+background-color: var(--code-block-alt-bg);
+border-top-right-radius: calc(var(--codeblock-roundness) * 0.8);
+border-top-left-radius: calc(var(--codeblock-roundness) * 0.8);
+}
+
+body.fancy-code pre[class*='language-']::after {
+content: attr(class);
+font-size: 0.9rem;
+text-shadow: none;
+color: var(--text-muted);
+position: absolute;
+top: 2px;
+right: 5px;
+}
+
+body.fancy-code .markdown-preview-view pre code {
+padding: var(--size-4-1) var(--size-4-2);
+}
+
+body.fancy-code .copy-code-button.copy-code-button.copy-code-button {
+background-color: var(--interactive-normal);
+top: unset;
+bottom: 0;
+padding: 0 var(--size-2-2);
+}
+
+body.fancy-code .markdown-preview-view.markdown-preview-view pre {
+padding: 0;
+margin-top: var(--size-4-2);
+border: var(--codeblock-border);
+border-radius: var(--codeblock-roundness);
+}
+
+body.fancy-code .markdown-reading-view .markdown-preview-view pre code {
+display: block;
+}
+
+body.fancy-code .markdown-preview-view pre code {
+padding: var(--size-4-1) var(--size-4-5);
+}`,
+    },
+    "fancy-mermaid": {
+      general: `body.fancy-mermaid .edgeLabel:not(:empty) {
+background-color: var(--background-primary);
+color: var(--text-normal);
+border: 1px solid var(--divider-color);
+border-radius: var(--radius-m);
+padding: 2px;
+}`,
+    },
+    "fancy-mark-current-line": {
+      general: `body.fancy-mark-current-line div.cm-gutter.cm-lineNumbers .cm-active {
+color: var(--current-line-number-color);
+}`,
+    },
+    "h1-underline": {
+      general: `body.h1-underline h1, body.h1-underline .HyperMD-header.HyperMD-header-1.cm-line {
+border-bottom: 2px solid var(--background-modifier-border);
+width: 100%;
+padding-bottom: 2px;
+}`,
+    },
+    "h2-underline": {
+      general: `body.h2-underline h2, body.h2-underline .HyperMD-header.HyperMD-header-2.cm-line {
+border-bottom: 2px solid var(--background-modifier-border);
+width: 100%;
+padding-bottom: 2px;
+}`,
+    },
+    "h3-underline": {
+      general: `body.h3-underline h3, body.h3-underline .HyperMD-header.HyperMD-header-3.cm-line {
+border-bottom: 2px solid var(--background-modifier-border);
+width: 100%;
+padding-bottom: 2px;
+}`,
+    },
+    "h4-underline": {
+      general: `body.h4-underline h4, body.h4-underline .HyperMD-header.HyperMD-header-4.cm-line {
+border-bottom: 2px solid var(--background-modifier-border);
+width: 100%;
+padding-bottom: 2px;
+}`,
+    },
+    "h5-underline": {
+      general: `body.h5-underline h5, body.h5-underline .HyperMD-header.HyperMD-header-5.cm-line {
+border-bottom: 2px solid var(--background-modifier-border);
+width: 100%;
+padding-bottom: 2px;
+}`,
+    },
+    "h6-underline": {
+      general: `body.h6-underline h6, body.h6-underline .HyperMD-header.HyperMD-header-6.cm-line {
+border-bottom: 2px solid var(--background-modifier-border);
+width: 100%;
+padding-bottom: 2px;
+}`,
+    },
+  },
 };

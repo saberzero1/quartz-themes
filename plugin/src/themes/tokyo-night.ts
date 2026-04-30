@@ -5015,7 +5015,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "h1-divider-on": `body.h1-divider-on :is(.markdown-preview-sizer>div>h1, .markdown-rendered>h1, .HyperMD-header-1)::after {
+    "h1-divider-on": {
+      general: `body.h1-divider-on :is(.markdown-preview-sizer>div>h1, .markdown-rendered>h1, .HyperMD-header-1)::after {
 content: "";
 position: absolute;
 height: 2px;
@@ -5025,7 +5026,9 @@ opacity: 0.5;
 bottom: 0;
 background-image: linear-gradient(to left, var(--h1-color) 30%, transparent 70%);
 }`,
-    "h2-divider-on": `body.h2-divider-on :is(.markdown-preview-sizer>div>h2, .markdown-rendered>h2, .HyperMD-header-2)::after {
+    },
+    "h2-divider-on": {
+      general: `body.h2-divider-on :is(.markdown-preview-sizer>div>h2, .markdown-rendered>h2, .HyperMD-header-2)::after {
 content: "";
 position: absolute;
 height: 2px;
@@ -5035,7 +5038,9 @@ opacity: 0.5;
 bottom: 0;
 background-image: linear-gradient(to left, var(--h2-color) 30%, transparent 70%);
 }`,
-    "h3-divider-on": `body.h3-divider-on :is(.markdown-preview-sizer>div>h3, .markdown-rendered>h3, .HyperMD-header-3)::after {
+    },
+    "h3-divider-on": {
+      general: `body.h3-divider-on :is(.markdown-preview-sizer>div>h3, .markdown-rendered>h3, .HyperMD-header-3)::after {
 content: "";
 position: absolute;
 height: 2px;
@@ -5045,7 +5050,9 @@ opacity: 0.5;
 bottom: 0;
 background-image: linear-gradient(to left, var(--h3-color) 30%, transparent 70%);
 }`,
-    "h4-divider-on": `body.h4-divider-on :is(.markdown-preview-sizer>div>h4, .markdown-rendered>h4, .HyperMD-header-4)::after {
+    },
+    "h4-divider-on": {
+      general: `body.h4-divider-on :is(.markdown-preview-sizer>div>h4, .markdown-rendered>h4, .HyperMD-header-4)::after {
 content: "";
 position: absolute;
 height: 2px;
@@ -5055,7 +5062,9 @@ opacity: 0.5;
 bottom: 0;
 background-image: linear-gradient(to left, var(--h4-color) 30%, transparent 70%);
 }`,
-    "h5-divider-on": `body.h5-divider-on :is(.markdown-preview-sizer>div>h5, .markdown-rendered>h5, .HyperMD-header-5)::after {
+    },
+    "h5-divider-on": {
+      general: `body.h5-divider-on :is(.markdown-preview-sizer>div>h5, .markdown-rendered>h5, .HyperMD-header-5)::after {
 content: "";
 position: absolute;
 height: 2px;
@@ -5065,7 +5074,9 @@ opacity: 0.5;
 bottom: 0;
 background-image: linear-gradient(to left, var(--h5-color) 30%, transparent 70%);
 }`,
-    "h6-divider-on": `body.h6-divider-on :is(.markdown-preview-sizer>div>h6, .markdown-rendered>h6, .HyperMD-header-6)::after {
+    },
+    "h6-divider-on": {
+      general: `body.h6-divider-on :is(.markdown-preview-sizer>div>h6, .markdown-rendered>h6, .HyperMD-header-6)::after {
 content: "";
 position: absolute;
 height: 2px;
@@ -5075,7 +5086,9 @@ opacity: 0.5;
 bottom: 0;
 background-image: linear-gradient(to left, var(--h6-color) 30%, transparent 70%);
 }`,
-    "callout-style-1": `.theme-dark {
+    },
+    "callout-style-1": {
+      dark: `.theme-dark {
 --callout-border-width: 1px;
 --callout-border-opacity: 0.25;
 --callout-padding: 0;
@@ -5086,8 +5099,8 @@ background-image: linear-gradient(to left, var(--h6-color) 30%, transparent 70%)
 --callout-content-padding: 0px 16px;
 --callout-content-background: #00000040;
 --callout-content-radius: 0px;
-}
-.theme-light {
+}`,
+      light: `.theme-light {
 --callout-border-width: 1px;
 --callout-border-opacity: 0.25;
 --callout-padding: 0;
@@ -5099,7 +5112,9 @@ background-image: linear-gradient(to left, var(--h6-color) 30%, transparent 70%)
 --callout-content-background: #FFFFFFBF;
 --callout-content-radius: 0px;
 }`,
-    "callout-style-2": `.theme-dark {
+    },
+    "callout-style-2": {
+      dark: `.theme-dark {
 --callout-border-width: 1px;
 --callout-border-opacity: 0.25;
 --callout-padding: 0 6px 6px;
@@ -5110,8 +5125,8 @@ background-image: linear-gradient(to left, var(--h6-color) 30%, transparent 70%)
 --callout-content-padding: 0px 16px;
 --callout-content-background: #00000040;
 --callout-content-radius: 4px;
-}
-.theme-light {
+}`,
+      light: `.theme-light {
 --callout-border-width: 1px;
 --callout-border-opacity: 0.25;
 --callout-padding: 0 6px 6px;
@@ -5123,19 +5138,9 @@ background-image: linear-gradient(to left, var(--h6-color) 30%, transparent 70%)
 --callout-content-background: #FFFFFFBF;
 --callout-content-radius: 4px;
 }`,
-    "callout-style-3": `.callout-style-3:is(.theme-light, .theme-dark) {
---callout-border-width: 0 0 0 4px;
---callout-border-opacity: 1;
---callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
---callout-radius: var(--radius-s);
---callout-title-color: inherit;
---callout-title-padding: 0;
---callout-title-size: inherit;
---callout-content-padding: 0;
---callout-content-background: transparent;
---callout-content-radius: 0px;
-}
-.callout-style-3:is(.theme-light, .theme-dark) {
+    },
+    "callout-style-3": {
+      dark: `.callout-style-3:is(.theme-light, .theme-dark) {
 --callout-border-width: 0 0 0 4px;
 --callout-border-opacity: 1;
 --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
@@ -5147,7 +5152,21 @@ background-image: linear-gradient(to left, var(--h6-color) 30%, transparent 70%)
 --callout-content-background: transparent;
 --callout-content-radius: 0px;
 }`,
-    "callout-style-4": `.theme-dark {
+      light: `.callout-style-3:is(.theme-light, .theme-dark) {
+--callout-border-width: 0 0 0 4px;
+--callout-border-opacity: 1;
+--callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+--callout-radius: var(--radius-s);
+--callout-title-color: inherit;
+--callout-title-padding: 0;
+--callout-title-size: inherit;
+--callout-content-padding: 0;
+--callout-content-background: transparent;
+--callout-content-radius: 0px;
+}`,
+    },
+    "callout-style-4": {
+      dark: `.theme-dark {
 --callout-border-width: 0 0 0 4px;
 --callout-border-opacity: 1;
 --callout-padding: 0;
@@ -5158,8 +5177,8 @@ background-image: linear-gradient(to left, var(--h6-color) 30%, transparent 70%)
 --callout-content-padding: 0px 16px;
 --callout-content-background: #00000040;
 --callout-content-radius: 0px;
-}
-.theme-light {
+}`,
+      light: `.theme-light {
 --callout-border-width: 0 0 0 4px;
 --callout-border-opacity: 1;
 --callout-padding: 0;
@@ -5171,5 +5190,6 @@ background-image: linear-gradient(to left, var(--h6-color) 30%, transparent 70%)
 --callout-content-background: #FFFFFFBF;
 --callout-content-radius: 0px;
 }`,
+    },
   },
 };

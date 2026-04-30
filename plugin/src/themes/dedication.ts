@@ -6989,7 +6989,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "theme-preset-dark-modern": `body.theme-preset-dark-modern {
+    "theme-preset-dark-modern": {
+      general: `body.theme-preset-dark-modern {
 --dark-bg-primary: #0f0f23;
 --dark-bg-secondary: #1a1a2e;
 --dark-text: #e6e6e6;
@@ -6999,7 +7000,9 @@ html[saved-theme="light"] body ul.tags > li {
 --color-accent: #6bffb8;
 --color-border: #6bcaff;
 }`,
-    "theme-preset-dracula": `body.theme-preset-dracula {
+    },
+    "theme-preset-dracula": {
+      general: `body.theme-preset-dracula {
 --dark-bg-primary: #282a36;
 --dark-bg-secondary: #44475a;
 --dark-text: #f8f8f2;
@@ -7012,7 +7015,9 @@ html[saved-theme="light"] body ul.tags > li {
 --color-accent: #bd93f9;
 --color-border: #ff79c6;
 }`,
-    "theme-preset-nord": `body.theme-preset-nord {
+    },
+    "theme-preset-nord": {
+      general: `body.theme-preset-nord {
 --dark-bg-primary: #2e3440;
 --dark-bg-secondary: #3b4252;
 --dark-text: #d8dee9;
@@ -7025,7 +7030,9 @@ html[saved-theme="light"] body ul.tags > li {
 --color-accent: #88c0d0;
 --color-border: #81a1c1;
 }`,
-    "theme-preset-gruvbox": `body.theme-preset-gruvbox {
+    },
+    "theme-preset-gruvbox": {
+      general: `body.theme-preset-gruvbox {
 --dark-bg-primary: #282828;
 --dark-bg-secondary: #3c3836;
 --dark-text: #ebdbb2;
@@ -7038,7 +7045,9 @@ html[saved-theme="light"] body ul.tags > li {
 --color-accent: #fb4934;
 --color-border: #b8bb26;
 }`,
-    "theme-preset-monokai": `body.theme-preset-monokai {
+    },
+    "theme-preset-monokai": {
+      general: `body.theme-preset-monokai {
 --dark-bg-primary: #272822;
 --dark-bg-secondary: #3e3d32;
 --dark-text: #f8f8f2;
@@ -7051,15 +7060,19 @@ html[saved-theme="light"] body ul.tags > li {
 --color-accent: #a6e22e;
 --color-border: #f92672;
 }`,
-    "adaptive-accent": `body.theme-dark {
+    },
+    "adaptive-accent": {
+      dark: `body.theme-dark {
 --color-accent: hsl(210, 100%, 70%);
 --color-accent-hover: hsl(210, 100%, 60%);
-}
-body.theme-light {
+}`,
+      light: `body.theme-light {
 --color-accent: hsl(210, 100%, 30%);
 --color-accent-hover: hsl(210, 100%, 20%);
 }`,
-    "rainbow-folders": `body.rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 2) {
+    },
+    "rainbow-folders": {
+      general: `body.rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 2) {
 --folder-color: rgb(220, 38, 38);
 }
 
@@ -7102,5 +7115,6 @@ body.rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 11
 body.rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 12) {
 --folder-color: hsl(330, 100%, 45%);
 }`,
+    },
   },
 };

@@ -6434,7 +6434,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "color-preset-original-dark": `.color-preset-original-dark {
+    "color-preset-original-dark": {
+      general: `.color-preset-original-dark {
 --background-primary:         #0d1117;
 --background-primary-alt:     #242424;
 --background-secondary:       #161b22;
@@ -6466,7 +6467,9 @@ html[saved-theme="light"] body ul.tags > li {
 --background-modifier-border: #00ffff;
 --text-selection:             #0066cc;
 }`,
-    "color-preset-matrix-green": `.color-preset-matrix-green, .color-preset-matrix-green {
+    },
+    "color-preset-matrix-green": {
+      dark: `.color-preset-matrix-green, .color-preset-matrix-green {
 --background-primary: #000f00;
 --background-primary-alt: #001a00;
 --background-secondary: #001400;
@@ -6485,8 +6488,8 @@ html[saved-theme="light"] body ul.tags > li {
 --interactive-accent: #00ff41;
 --text-accent: #00cc33;
 --background-modifier-border: #00ff41;
-}
-.color-preset-matrix-green {
+}`,
+      light: `.color-preset-matrix-green {
 --background-primary: #f0fff0;
 --background-primary-alt: #e0ffe0;
 --background-secondary: #d0ffd0;
@@ -6506,7 +6509,9 @@ html[saved-theme="light"] body ul.tags > li {
 --text-accent: #006400;
 --background-modifier-border: #008000;
 }`,
-    "color-preset-blade-runner": `.color-preset-blade-runner, .color-preset-blade-runner {
+    },
+    "color-preset-blade-runner": {
+      dark: `.color-preset-blade-runner, .color-preset-blade-runner {
 --background-primary: #1a1a2e;
 --background-primary-alt: #2d2d44;
 --background-secondary: #22223a;
@@ -6525,8 +6530,8 @@ html[saved-theme="light"] body ul.tags > li {
 --interactive-accent: #ff5555;
 --text-accent: #55ffff;
 --background-modifier-border: #ff5555;
-}
-.color-preset-blade-runner {
+}`,
+      light: `.color-preset-blade-runner {
 --background-primary: #f0f0ff;
 --background-primary-alt: #e0e0ff;
 --background-secondary: #d0d0ff;
@@ -6546,7 +6551,9 @@ html[saved-theme="light"] body ul.tags > li {
 --text-accent: #33cccc;
 --background-modifier-border: #cc3333;
 }`,
-    "color-preset-dark-knight": `.color-preset-dark-knight, .color-preset-dark-knight {
+    },
+    "color-preset-dark-knight": {
+      dark: `.color-preset-dark-knight, .color-preset-dark-knight {
 --background-primary: #0a0a0a;
 --background-primary-alt: #1a1a1a;
 --background-secondary: #121212;
@@ -6565,8 +6572,8 @@ html[saved-theme="light"] body ul.tags > li {
 --interactive-accent: #8b0000;
 --text-accent: #b8860b;
 --background-modifier-border: #8b0000;
-}
-.color-preset-dark-knight {
+}`,
+      light: `.color-preset-dark-knight {
 --background-primary: #f5f5f5;
 --background-primary-alt: #e8e8e8;
 --background-secondary: #dcdcdc;
@@ -6586,7 +6593,9 @@ html[saved-theme="light"] body ul.tags > li {
 --text-accent: #8b6508;
 --background-modifier-border: #a52a2a;
 }`,
-    "color-preset-gotham-noir": `.color-preset-gotham-noir, .color-preset-gotham-noir {
+    },
+    "color-preset-gotham-noir": {
+      dark: `.color-preset-gotham-noir, .color-preset-gotham-noir {
 --background-primary: #0d0d0d;
 --background-primary-alt: #1c1c1c;
 --background-secondary: #141414;
@@ -6605,8 +6614,8 @@ html[saved-theme="light"] body ul.tags > li {
 --interactive-accent: #8b0000;
 --text-accent: #d4af37;
 --background-modifier-border: #d4af37;
-}
-.color-preset-gotham-noir {
+}`,
+      light: `.color-preset-gotham-noir {
 --background-primary: #f8f8f8;
 --background-primary-alt: #e8e8e8;
 --background-secondary: #d8d8d8;
@@ -6626,7 +6635,9 @@ html[saved-theme="light"] body ul.tags > li {
 --text-accent: #8b7500;
 --background-modifier-border: #8b7500;
 }`,
-    "color-preset-cosmic-blue": `.color-preset-cosmic-blue, .color-preset-cosmic-blue {
+    },
+    "color-preset-cosmic-blue": {
+      dark: `.color-preset-cosmic-blue, .color-preset-cosmic-blue {
 --background-primary: #000033;
 --background-primary-alt: #001a4d;
 --background-secondary: #001133;
@@ -6645,8 +6656,8 @@ html[saved-theme="light"] body ul.tags > li {
 --interactive-accent: #00ccff;
 --text-accent: #0099ff;
 --background-modifier-border: #00ccff;
-}
-.color-preset-cosmic-blue {
+}`,
+      light: `.color-preset-cosmic-blue {
 --background-primary: #f0f8ff;
 --background-primary-alt: #e0f0ff;
 --background-secondary: #d0e8ff;
@@ -6666,7 +6677,9 @@ html[saved-theme="light"] body ul.tags > li {
 --text-accent: #004499;
 --background-modifier-border: #0066cc;
 }`,
-    "color-preset-star-trek": `.color-preset-star-trek, .color-preset-star-trek {
+    },
+    "color-preset-star-trek": {
+      dark: `.color-preset-star-trek, .color-preset-star-trek {
 --background-primary: #000033;
 --background-primary-alt: #001144;
 --background-secondary: #000a2a;
@@ -6685,8 +6698,8 @@ html[saved-theme="light"] body ul.tags > li {
 --interactive-accent: #ff6666;
 --text-accent: #66ccff;
 --background-modifier-border: #ffcc00;
-}
-.color-preset-star-trek {
+}`,
+      light: `.color-preset-star-trek {
 --background-primary: #f5faff;
 --background-primary-alt: #e6f2ff;
 --background-secondary: #d6eaff;
@@ -6706,23 +6719,36 @@ html[saved-theme="light"] body ul.tags > li {
 --text-accent: #3399cc;
 --background-modifier-border: #cc9900;
 }`,
-    "font-family-inter": `.font-family-inter {
+    },
+    "font-family-inter": {
+      general: `.font-family-inter {
 --default-font: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 }`,
-    "font-family-system": `.font-family-system {
+    },
+    "font-family-system": {
+      general: `.font-family-system {
 --default-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }`,
-    "font-family-georgia": `.font-family-georgia {
+    },
+    "font-family-georgia": {
+      general: `.font-family-georgia {
 --default-font: Georgia, "Times New Roman", Times, serif;
 }`,
-    "font-family-helvetica": `.font-family-helvetica {
+    },
+    "font-family-helvetica": {
+      general: `.font-family-helvetica {
 --default-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    "font-family-source-sans": `.font-family-source-sans {
+    },
+    "font-family-source-sans": {
+      general: `.font-family-source-sans {
 --default-font: "Source Sans Pro", -apple-system, BlinkMacSystemFont, sans-serif;
 }`,
-    "font-family-roboto-mono": `.font-family-roboto-mono {
+    },
+    "font-family-roboto-mono": {
+      general: `.font-family-roboto-mono {
 --default-font: "Roboto Mono", "SF Mono", "Cascadia Code", monospace;
 }`,
+    },
   },
 };

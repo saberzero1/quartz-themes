@@ -4037,7 +4037,8 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "arzaba-ivy": `.theme-dark, .theme-light {
+    "arzaba-ivy": {
+      dark: `.theme-dark, .theme-light {
 /*Typography*/
 --font-text-theme: "Open Sans Light Obsidian", sans-serif;
 --font-interface-theme: "Open Sans Light Obsidian", sans-serif;
@@ -4533,8 +4534,8 @@ height: unset;
 width: unset;
 background: transparent;
 color: var(--text-accent);
-}
-.theme-dark, .theme-light {
+}`,
+      light: `.theme-dark, .theme-light {
 /*Typography*/
 --font-text-theme: "Open Sans Light Obsidian", sans-serif;
 --font-interface-theme: "Open Sans Light Obsidian", sans-serif;
@@ -5032,7 +5033,9 @@ width: unset;
 background: transparent;
 color: var(--text-accent);
 }`,
-    "arzaba-wiki": `.theme-dark, .theme-light {
+    },
+    "arzaba-wiki": {
+      dark: `.theme-dark, .theme-light {
 /*Typography*/
 --font-text-theme: "Open Sans Light Obsidian", sans-serif;
 --font-interface-theme: "Open Sans Light Obsidian", sans-serif;
@@ -5505,8 +5508,8 @@ background-color: #1b2026;
 padding-bottom: 0.4rem;
 border-bottom: 1px solid grey;
 margin-bottom: 0.6rem;
-}
-.theme-dark, .theme-light {
+}`,
+      light: `.theme-dark, .theme-light {
 /*Typography*/
 --font-text-theme: "Open Sans Light Obsidian", sans-serif;
 --font-interface-theme: "Open Sans Light Obsidian", sans-serif;
@@ -5980,7 +5983,9 @@ padding-bottom: 0.4rem;
 border-bottom: 1px solid grey;
 margin-bottom: 0.6rem;
 }`,
-    "arzaba-black-and-white": `.theme-dark, .theme-light {
+    },
+    "arzaba-black-and-white": {
+      dark: `.theme-dark, .theme-light {
 /*Typography*/
 --font-text-theme: "Open Sans Light Obsidian", sans-serif;
 --font-interface-theme: "Open Sans Light Obsidian", sans-serif;
@@ -6478,8 +6483,8 @@ background-color: #111111;
 
 .theme-light.arzaba-font-override, .arzaba-font-override {
 --font-text-size: 26px !important;
-}
-.theme-dark, .theme-light {
+}`,
+      light: `.theme-dark, .theme-light {
 /*Typography*/
 --font-text-theme: "Open Sans Light Obsidian", sans-serif;
 --font-interface-theme: "Open Sans Light Obsidian", sans-serif;
@@ -6979,7 +6984,9 @@ background-color: #f0f0f0;
 .arzaba-font-override, .theme-dark.arzaba-font-override {
 --font-text-size: 26px !important;
 }`,
-    "arzaba-future": `.theme-dark, .theme-light {
+    },
+    "arzaba-future": {
+      dark: `.theme-dark, .theme-light {
 /*Typography*/
 --font-text-theme: "Open Sans Light Obsidian", sans-serif;
 --font-interface-theme: "Open Sans Light Obsidian", sans-serif;
@@ -7444,8 +7451,8 @@ background-color: #1a002b;
 
 .theme-light.arzaba-font-override, .arzaba-font-override {
 --font-text-size: 20px !important;
-}
-.theme-dark, .theme-light {
+}`,
+      light: `.theme-dark, .theme-light {
 /*Typography*/
 --font-text-theme: "Open Sans Light Obsidian", sans-serif;
 --font-interface-theme: "Open Sans Light Obsidian", sans-serif;
@@ -7911,7 +7918,9 @@ background-color: #f2f2f9;
 .arzaba-font-override, .theme-dark.arzaba-font-override {
 --font-text-size: 20px !important;
 }`,
-    "arzaba-retro": `.theme-dark, .theme-light {
+    },
+    "arzaba-retro": {
+      dark: `.theme-dark, .theme-light {
 /*Typography*/
 --font-text-theme: "Open Sans Light Obsidian", sans-serif;
 --font-interface-theme: "Open Sans Light Obsidian", sans-serif;
@@ -8400,8 +8409,8 @@ background-color: #000000;
 .theme-light.arzaba-font-override, .arzaba-font-override {
 --font-text-size: 34px !important
 ;
-}
-.theme-dark, .theme-light {
+}`,
+      light: `.theme-dark, .theme-light {
 /*Typography*/
 --font-text-theme: "Open Sans Light Obsidian", sans-serif;
 --font-interface-theme: "Open Sans Light Obsidian", sans-serif;
@@ -8891,7 +8900,9 @@ background-color: #000000;
 --font-text-size: 34px !important
 ;
 }`,
-    "arzaba-past": `.theme-dark, .theme-light {
+    },
+    "arzaba-past": {
+      dark: `.theme-dark, .theme-light {
 /*Typography*/
 --font-text-theme: "Open Sans Light Obsidian", sans-serif;
 --font-interface-theme: "Open Sans Light Obsidian", sans-serif;
@@ -9363,8 +9374,8 @@ background-color: #2a211c;
 .theme-light.arzaba-font-override, .arzaba-font-override {
 --font-text-size: 24px !important
 ;
-}
-.theme-dark, .theme-light {
+}`,
+      light: `.theme-dark, .theme-light {
 /*Typography*/
 --font-text-theme: "Open Sans Light Obsidian", sans-serif;
 --font-interface-theme: "Open Sans Light Obsidian", sans-serif;
@@ -9837,7 +9848,9 @@ background-color: #e6dccb;
 --font-text-size: 24px !important
 ;
 }`,
-    "arzaba-font-override": `.theme-light.arzaba-font-override, .arzaba-font-override {
+    },
+    "arzaba-font-override": {
+      dark: `.theme-light.arzaba-font-override, .arzaba-font-override {
 --font-text-size: 22px !important;
 }
 
@@ -9865,8 +9878,8 @@ background-color: #e6dccb;
 .arzaba-past.theme-light.arzaba-font-override, .arzaba-past.arzaba-font-override {
 --font-text-size: 24px !important
 ;
-}
-.arzaba-font-override, .theme-dark.arzaba-font-override {
+}`,
+      light: `.arzaba-font-override, .theme-dark.arzaba-font-override {
 --font-text-size: 22px !important;
 }
 
@@ -9895,5 +9908,6 @@ background-color: #e6dccb;
 --font-text-size: 24px !important
 ;
 }`,
+    },
   },
 };

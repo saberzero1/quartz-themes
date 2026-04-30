@@ -1909,7 +1909,8 @@ html body ul.tags > li {
   },
   light: {},
   classSettings: {
-    "enable-alternative-checkboxes": `body.enable-alternative-checkboxes .markdown-preview-view ul>li.task-list-item.is-checked, body.enable-alternative-checkboxes .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"], body.enable-alternative-checkboxes .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"], body.enable-alternative-checkboxes .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="M"] {
+    "enable-alternative-checkboxes": {
+      general: `body.enable-alternative-checkboxes .markdown-preview-view ul>li.task-list-item.is-checked, body.enable-alternative-checkboxes .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"], body.enable-alternative-checkboxes .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"], body.enable-alternative-checkboxes .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="M"] {
 text-decoration: none;
 color: var(--text-faint);
 }
@@ -2094,5 +2095,6 @@ padding: 12px;
 body.enable-alternative-checkboxes:not(.tasks) li[data-task=">"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="<"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="b"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="i"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="*"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="!"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="S"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="?"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="/"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task='"'].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="l"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="I"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="p"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="c"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="f"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="k"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="w"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="u"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="d"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="P"].task-list-item.is-checked, body.enable-alternative-checkboxes:not(.tasks) li[data-task="D"].task-list-item.is-checked {
 color: var(--text-normal);
 }`,
+    },
   },
 };

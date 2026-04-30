@@ -5343,7 +5343,8 @@ html[saved-theme="light"]
 }
 `,
   classSettings: {
-    "ctp-frappe": `.ctp-frappe {
+    "ctp-frappe": {
+      dark: `.ctp-frappe {
 --ctp-rosewater: 242, 213, 207;
 --ctp-flamingo: 238, 190, 190;
 --ctp-pink: 244, 184, 228;
@@ -5382,7 +5383,9 @@ html[saved-theme="light"]
 --hex-blue: #8caaee;
 --hex-lavender: #babbf1;
 }`,
-    "ctp-macchiato": `.ctp-macchiato {
+    },
+    "ctp-macchiato": {
+      dark: `.ctp-macchiato {
 --ctp-rosewater: 244, 219, 214;
 --ctp-flamingo: 240, 198, 198;
 --ctp-pink: 245, 189, 230;
@@ -5421,7 +5424,9 @@ html[saved-theme="light"]
 --hex-blue: #8aadf4;
 --hex-lavender: #b7bdf8;
 }`,
-    "ctp-mocha": `.ctp-mocha {
+    },
+    "ctp-mocha": {
+      dark: `.ctp-mocha {
 --ctp-rosewater: 245, 224, 220;
 --ctp-flamingo: 242, 205, 205;
 --ctp-pink: 245, 194, 231;
@@ -5460,7 +5465,9 @@ html[saved-theme="light"]
 --hex-blue: #89b4fa;
 --hex-lavender: #b4befe;
 }`,
-    "ctp-full-palette": `.ctp-full-palette {
+    },
+    "ctp-full-palette": {
+      general: `.ctp-full-palette {
 --ctp-accent: var(--ctp-lavender);
 }
 
@@ -5743,76 +5750,116 @@ body.ctp-full-palette:not(.disable-folder-highlight) .tree-item-self.fn-is-activ
 --nav-item-color-active: var(--text-on-accent);
 --nav-item-color-selected: var(--text-on-accent);
 }`,
-    "ctp-accent-rosewater": `.ctp-accent-rosewater {
+    },
+    "ctp-accent-rosewater": {
+      general: `.ctp-accent-rosewater {
 --ctp-accent: var(--ctp-rosewater);
 }`,
-    "ctp-accent-flamingo": `.ctp-accent-flamingo {
+    },
+    "ctp-accent-flamingo": {
+      general: `.ctp-accent-flamingo {
 --ctp-accent: var(--ctp-flamingo);
 }`,
-    "ctp-accent-pink": `.ctp-accent-pink {
+    },
+    "ctp-accent-pink": {
+      general: `.ctp-accent-pink {
 --ctp-accent: var(--ctp-pink);
 }`,
-    "ctp-accent-mauve": `.ctp-accent-mauve {
+    },
+    "ctp-accent-mauve": {
+      general: `.ctp-accent-mauve {
 --ctp-accent: var(--ctp-mauve);
 }`,
-    "ctp-accent-red": `.ctp-accent-red {
+    },
+    "ctp-accent-red": {
+      general: `.ctp-accent-red {
 --ctp-accent: var(--ctp-red);
 }`,
-    "ctp-accent-maroon": `.ctp-accent-maroon {
+    },
+    "ctp-accent-maroon": {
+      general: `.ctp-accent-maroon {
 --ctp-accent: var(--ctp-maroon);
 }`,
-    "ctp-accent-peach": `.ctp-accent-peach {
+    },
+    "ctp-accent-peach": {
+      general: `.ctp-accent-peach {
 --ctp-accent: var(--ctp-peach);
 }`,
-    "ctp-accent-yellow": `.ctp-accent-yellow {
+    },
+    "ctp-accent-yellow": {
+      general: `.ctp-accent-yellow {
 --ctp-accent: var(--ctp-yellow);
 }`,
-    "ctp-accent-green": `.ctp-accent-green {
+    },
+    "ctp-accent-green": {
+      general: `.ctp-accent-green {
 --ctp-accent: var(--ctp-green);
 }`,
-    "ctp-accent-teal": `.ctp-accent-teal {
+    },
+    "ctp-accent-teal": {
+      general: `.ctp-accent-teal {
 --ctp-accent: var(--ctp-teal);
 }`,
-    "ctp-accent-sky": `.ctp-accent-sky {
+    },
+    "ctp-accent-sky": {
+      general: `.ctp-accent-sky {
 --ctp-accent: var(--ctp-sky);
 }`,
-    "ctp-accent-sapphire": `.ctp-accent-sapphire {
+    },
+    "ctp-accent-sapphire": {
+      general: `.ctp-accent-sapphire {
 --ctp-accent: var(--ctp-sapphire);
 }`,
-    "ctp-accent-blue": `.ctp-accent-blue {
+    },
+    "ctp-accent-blue": {
+      general: `.ctp-accent-blue {
 --ctp-accent: var(--ctp-blue);
 }`,
-    "ctp-accent-lavender": `.ctp-accent-lavender {
+    },
+    "ctp-accent-lavender": {
+      general: `.ctp-accent-lavender {
 --ctp-accent: var(--ctp-lavender);
 }`,
-    "ctp-icon-hide": `.ctp-icon-hide .nav-folder .nav-folder-title .nav-folder-title-content::before, .ctp-icon-hide .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before, .ctp-icon-hide .nav-folder .nav-folder-title .nav-folder-title-content::before, .ctp-icon-hide .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
+    },
+    "ctp-icon-hide": {
+      general: `.ctp-icon-hide .nav-folder .nav-folder-title .nav-folder-title-content::before, .ctp-icon-hide .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before, .ctp-icon-hide .nav-folder .nav-folder-title .nav-folder-title-content::before, .ctp-icon-hide .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
 display: none;
 }`,
-    "ctp-bold-folder-title": `.ctp-bold-folder-title .nav-folder-title-content {
+    },
+    "ctp-bold-folder-title": {
+      general: `.ctp-bold-folder-title .nav-folder-title-content {
 font-weight: var(--font-bold);
 }`,
-    "ctp-seamless-pdf": `.theme-light.ctp-seamless-pdf, .ctp-seamless-pdf {
+    },
+    "ctp-seamless-pdf": {
+      dark: `.theme-light.ctp-seamless-pdf, .ctp-seamless-pdf {
 --pdf-shadow: none;
 }
 
 .theme-light.ctp-seamless-pdf .pdfViewer .page, .ctp-seamless-pdf .pdfViewer .page {
 border: 0;
-}
-.ctp-seamless-pdf, .theme-dark.ctp-seamless-pdf {
+}`,
+      light: `.ctp-seamless-pdf, .theme-dark.ctp-seamless-pdf {
 --pdf-shadow: none;
 }
 
 .ctp-seamless-pdf .pdfViewer .page, .theme-dark.ctp-seamless-pdf .pdfViewer .page {
 border: 0;
 }`,
-    "ctp-pdf-darken": `.ctp-pdf-darken .pdfViewer .canvasWrapper, .ctp-pdf-darken .pdf-thumbnail-view .thumbnailImage {
+    },
+    "ctp-pdf-darken": {
+      dark: `.ctp-pdf-darken .pdfViewer .canvasWrapper, .ctp-pdf-darken .pdf-thumbnail-view .thumbnailImage {
 filter: invert(1) hue-rotate(180deg);
 mix-blend-mode: screen;
 }`,
-    "ctp-pdf-blend": `.ctp-pdf-blend .pdfViewer .canvasWrapper, .ctp-pdf-blend .pdf-thumbnail-view .thumbnailImage {
+    },
+    "ctp-pdf-blend": {
+      light: `.ctp-pdf-blend .pdfViewer .canvasWrapper, .ctp-pdf-blend .pdf-thumbnail-view .thumbnailImage {
 mix-blend-mode: multiply;
 }`,
-    "ctp-tag-pill": `.ctp-tag-pill {
+    },
+    "ctp-tag-pill": {
+      general: `.ctp-tag-pill {
 --tag-size: var(--font-smaller);
 --tag-decoration: none;
 --tag-decoration-hover: none;
@@ -5826,5 +5873,6 @@ mix-blend-mode: multiply;
 --tag-radius: 2em;
 --tag-weight: inherit;
 }`,
+    },
   },
 };
