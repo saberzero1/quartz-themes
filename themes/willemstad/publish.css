@@ -1538,6 +1538,10 @@ body.theme-light {
   --header-padding: var(--size-2-3, 6px) !important;
   --theme-alternative-checkboxes: disable !important;
   --l: clamp(0.3, (l / var(--l-threshold) - 1) * -infinity, 0.975) !important;
+  --color-selection: var(
+    --color-set-l-selection,
+    oklch(80.92% 0.170357 75.4802deg)
+  ) !important;
   --account-scrollbar-border: var(
     --border-scrollbar-non-native,
     2px
@@ -1736,10 +1740,6 @@ body.theme-light {
   --color-bloemfontein: var(
     --text-accent,
     oklch(40.14% 0.0638 202.51deg)
-  ) !important;
-  --color-selection: var(
-    --color-set-l-selection,
-    oklch(80.92% 0.170357 75.4802deg)
   ) !important;
   --color-table-even: var(--background-primary-alt, oklch(0.98 0 0)) !important;
   --color-table-head: var(--background-secondary, oklch(0.95 0 0)) !important;
@@ -3482,6 +3482,10 @@ body.theme-dark {
   --header-padding: var(--size-2-3, 6px) !important;
   --theme-alternative-checkboxes: disable !important;
   --l: clamp(0.3, (l / var(--l-threshold) - 1) * -infinity, 0.975) !important;
+  --color-selection: var(
+    --color-set-d-selection,
+    oklch(80.92% 0.170357 75.4802deg)
+  ) !important;
   --account-scrollbar-border: var(
     --border-scrollbar-non-native,
     2px
@@ -3680,10 +3684,6 @@ body.theme-dark {
   --color-bloemfontein: var(
     --text-accent,
     oklch(70.7% 0.1737 155.3deg)
-  ) !important;
-  --color-selection: var(
-    --color-set-d-selection,
-    oklch(80.92% 0.170357 75.4802deg)
   ) !important;
   --color-table-even: var(--background-primary-alt, oklch(0.17 0 0)) !important;
   --color-table-head: var(--background-secondary, oklch(0.19 0 0)) !important;

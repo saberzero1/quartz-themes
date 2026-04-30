@@ -1,49 +1,49 @@
-name: Dedication 2 Theme Settings
-id: dedication-2-theme
-settings:
-  - id: color-presets
-    title: Color Presets
-    type: heading
-    level: 1
-    collapsed: false
-  - id: color-preset
-    title: Color Scheme
-    type: class-select
-    default: color-preset-original-dark
-    options:
-      - label: Original Dark (Default)
-        value: color-preset-original-dark
-      - label: Matrix Green
-        value: color-preset-matrix-green
-      - label: Blade Runner
-        value: color-preset-blade-runner
-      - label: Dark Knight
-        value: color-preset-dark-knight
-      - label: Gotham Noir
-        value: color-preset-gotham-noir
-      - label: Cosmic Blue
-        value: color-preset-cosmic-blue
-      - label: Star Trek
-        value: color-preset-star-trek
-  - id: typography-settings
-    title: Typography
-    type: heading
-    level: 1
-    collapsed: true
-  - id: font-family
-    title: Font Family
-    type: class-select
-    default: font-family-inter
-    options:
-      - label: Inter (Default)
-        value: font-family-inter
-      - label: System Fonts
-        value: font-family-system
-      - label: Georgia Serif
-        value: font-family-georgia
-      - label: Helvetica Neue
-        value: font-family-helvetica
-      - label: Source Sans Pro
-        value: font-family-source-sans
-      - label: Roboto Mono
-        value: font-family-roboto-mono
+- name: Dedication 2 Theme Settings
+  id: dedication-2-theme
+  settings:
+    - id: color-presets
+      title: Color Presets
+      type: heading
+      level: 1
+      collapsed: false
+    - id: color-preset
+      title: Color Scheme
+      type: class-select
+      default: color-preset-original-dark
+      options:
+        - label: Original Dark (Default)
+          value: color-preset-original-dark
+        - label: Matrix Green
+          value: color-preset-matrix-green
+        - label: Blade Runner
+          value: color-preset-blade-runner
+        - label: Dark Knight
+          value: color-preset-dark-knight
+        - label: Gotham Noir
+          value: color-preset-gotham-noir
+        - label: Cosmic Blue
+          value: color-preset-cosmic-blue
+        - label: Star Trek
+          value: color-preset-star-trek
+    - id: typography-settings
+      title: Typography
+      type: heading
+      level: 1
+      collapsed: true
+    - id: font-family
+      title: Font Family
+      type: class-select
+      default: font-family-inter
+      options:
+        - label: Inter (Default)
+          value: font-family-inter
+        - label: System Fonts
+          value: font-family-system
+        - label: Georgia Serif
+          value: font-family-georgia
+        - label: Helvetica Neue
+          value: font-family-helvetica
+        - label: Source Sans Pro
+          value: font-family-source-sans
+        - label: Roboto Mono
+          value: font-family-roboto-mono

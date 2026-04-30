@@ -13987,10 +13987,6 @@ body.app-layout-card:not(.is-mobile):not(.color-highlight-only).app-layout-card-
 border-color: var(--background-modifier-border);
 }
 
-body.app-layout-card:not(.is-mobile):not(.color-highlight-only) .mod-root .workspace-tab-header-container {
-padding-left: var(--app-layout-spacing);
-}
-
 body.app-layout-card:not(.is-mobile):not(.color-highlight-only) .mod-root .workspace-tab-container {
 padding: var(--app-layout-spacing);
 padding-top: 0;
@@ -14670,7 +14666,7 @@ container-type: inline-size;
 }
 
 body.modal-setting-header:not(.is-mobile) .modal-container .mod-settings::before {
-content: var(--setting-modal-header-title, "Maple 1.4.11");
+content: var(--setting-modal-header-title, "Maple 1.4.14");
 position: absolute;
 left: var(--size-4-4);
 top: calc(var(--modal-header-height) / 2);
@@ -15223,7 +15219,7 @@ box-shadow: var(--tab-active-shadow);
 }
 
 body:is(:not(.css-settings-manager), .tab-float) .mod-root .workspace-tab-header-container {
-padding-left: var(--size-4-1);
+translate: calc(-1 * var(--size-4-1));
 }
 
 body:is(:not(.css-settings-manager), .tab-float) .mod-root .workspace-tab-header-container-inner {
@@ -15625,9 +15621,27 @@ border-radius: var(--radius-s);
 -webkit-box-decoration-break: clone;
 }`,
     },
+    "font-maple-interface": {
+      general: `.font-maple-interface {
+--font-interface-theme: "maplemono";
+}`,
+    },
+    "font-maple-text": {
+      general: `.font-maple-text {
+--font-text-theme: "maplemono";
+}`,
+    },
     "font-maple": {
-      general: `body:is(:not(.css-settings-manager), :not(.is-mobile).font-maple) {
+      general: `body:is(:not(.css-settings-manager), .font-maple) {
 --font-monospace-theme: "maplemono";
+}
+
+.font-maple-text {
+--font-text-theme: "maplemono";
+}
+
+.font-maple-interface {
+--font-interface-theme: "maplemono";
 }`,
     },
     "font-latex-text": {
@@ -18191,6 +18205,10 @@ body:is(:not(.css-settings-manager), .code-language) pre.language-basic {
 
 body:is(:not(.css-settings-manager), .code-language) pre.language-batch {
 --code-lang: "batch";
+}
+
+body:is(:not(.css-settings-manager), .code-language) pre.language-bibtex {
+--code-lang: "bibtex";
 }
 
 body:is(:not(.css-settings-manager), .code-language) pre.language-bison {

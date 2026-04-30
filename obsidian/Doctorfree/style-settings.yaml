@@ -1,645 +1,645 @@
-name: Doctorfree Theme
-id: doctorfree-theme
-settings:
-  - id: doctorfree-typography
-    title: Colors
-    type: heading
-    level: 2
-    collapsed: true
-  - id: text-bold-color
-    title: Bold Color
-    type: variable-color
-    format: hex
-    default: '#50fa7b'
-  - id: text-italic-color
-    title: Italic Color
-    type: variable-color
-    format: hex
-    default: '#ffeb95'
-  - id: text-italic-bold-color
-    title: Italic Bold Color
-    type: variable-color
-    format: hex
-    default: '#b380fb'
-  - id: text-accent
-    title: Accent Color
-    type: variable-color
-    format: hex
-    default: '#ffeb95'
-  - id: text-accent-hover
-    title: Hover Accent Color
-    type: variable-color
-    format: hex
-    default: '#8be9fd'
-  - id: text-sub-accent
-    title: Sub Accent Color
-    type: variable-color
-    format: hex
-    default: '#f4569d'
-  - id: background-primary
-    title: Background Color
-    type: variable-color
-    format: hsl
-    opacity: false
-    default: hsl(207deg, 95%, 5%)
-  - id: background-primary-alt
-    title: Alternate Background Color
-    type: variable-color
-    format: hsl
-    opacity: false
-    default: hsl(210deg, 95%, 6%)
-  - id: background-secondary
-    title: Secondary Background Color
-    type: variable-color
-    format: hsl
-    opacity: false
-    default: hsl(200deg, 95%, 5%)
-  - id: background-secondary-alt
-    title: Alternate Secondary Background Color
-    type: variable-color
-    format: hsl
-    opacity: false
-    default: hsl(203deg, 95%, 6%)
-  - id: background-accent
-    title: Accent Background Color
-    type: variable-color
-    format: rgb
-    opacity: true
-    default: rgba(14, 210, 247, 0.25)
-  - id: text-highlight-bg
-    title: Highlight Color
-    type: variable-color
-    format: rgb
-    opacity: true
-    default: hsla(61deg, 100%, 32%, 0.8)
-  - id: text-normal
-    title: Text Normal Color
-    type: variable-color
-    format: hex
-    default: '#f8f8f2'
-  - id: text-selection
-    title: Text Selection Background Color
-    type: variable-color
-    format: hex
-    default: '#6272a4'
-  - id: text-muted
-    title: Text Muted Color
-    type: variable-color
-    format: hex
-    default: '#f8f8f2'
-  - id: text-faint
-    title: Text Faint Color
-    type: variable-color
-    format: hex
-    default: '#7fdbca'
-  - id: interactive-accent
-    title: Interactive Accent Background Color
-    type: variable-color
-    format: rgb
-    opacity: true
-    default: rgba(14, 210, 247, 0.5)
-  - id: interactive-accent-hover
-    title: Interactive Accent Hover Color
-    type: variable-color
-    format: rgb
-    opacity: true
-    default: rgba(14, 210, 247, 0.8)
-  - id: table-border-color
-    title: Table Border Color
-    type: variable-color
-    format: hex
-    default: '#f8f8f2'
-  - id: text-title-h1
-    title: Heading 1 Color
-    type: variable-color
-    format: hex
-    default: '#ff79c6'
-  - id: text-title-h2
-    title: Heading 2 Color
-    type: variable-color
-    format: hex
-    default: '#82aaff'
-  - id: text-title-h3
-    title: Heading 3 Color
-    type: variable-color
-    format: hex
-    default: '#c5e478'
-  - id: text-title-h4
-    title: Heading 4 Color
-    type: variable-color
-    format: hex
-    default: '#ffb86c'
-  - id: text-title-h5
-    title: Heading 5 Color
-    type: variable-color
-    format: hex
-    default: '#50fa7b'
-  - id: text-title-h6
-    title: Heading 6 Color
-    type: variable-color
-    format: hex
-    default: '#8be9fd'
-  - id: inline-code
-    title: Inline Code Color
-    type: variable-color
-    format: hex
-    default: '#bd93f9'
-  - id: code-block
-    title: Code Block Color
-    type: variable-color
-    format: hex
-    default: '#8be9fd'
-  - id: pre-code
-    title: Inline Code Color
-    type: variable-color
-    format: hex
-    default: '#44475a'
-  - id: vim-cursor
-    title: Vim Cursor Color
-    type: variable-color
-    format: hex
-    default: '#ff5555'
-  - id: border-color
-    title: Border Color
-    type: variable-color
-    format: hex
-    default: '#2b2727'
-  - id: border-color-alt
-    title: Alternate Border Color
-    type: variable-color
-    format: hex
-    default: '#101014'
-  - id: white
-    title: White Color
-    type: variable-color
-    format: hex
-    default: '#F8F8F3'
-  - id: gray-1
-    title: Gray 1 Color
-    type: variable-color
-    format: hex
-    default: '#586e75'
-  - id: gray-2
-    title: Gray 2 Color
-    type: variable-color
-    format: hex
-    default: '#D5D4DE'
-  - id: red
-    title: Red Color
-    type: variable-color
-    format: hex
-    default: '#FF5555'
-  - id: orange
-    title: Orange Color
-    type: variable-color
-    format: hex
-    default: '#FE9580'
-  - id: green
-    title: Green Color
-    type: variable-color
-    format: hex
-    default: '#8AFF7F'
-  - id: cyan
-    title: Cyan Color
-    type: variable-color
-    format: hex
-    default: '#81FFEA'
-  - id: cyan-transparent
-    title: Cyan Transparent Color
-    type: variable-color
-    format: rgb
-    opacity: true
-    default: rgba(129, 255, 234, 0.3)
-  - id: purple
-    title: Purple Color
-    type: variable-color
-    format: hex
-    default: '#9580FF'
-  - id: purple-transparent
-    title: Purple Transparent Color
-    type: variable-color
-    format: rgb
-    opacity: true
-    default: rgba(149, 128, 255, 0.5)
-  - id: pink
-    title: Pink Color
-    type: variable-color
-    format: hex
-    default: '#FE7FBF'
-  - id: blue
-    title: Blue Color
-    type: variable-color
-    format: hex
-    default: '#00588E'
-  - id: lavender
-    title: Lavender Color
-    type: variable-color
-    format: hex
-    default: '#b380fb'
-  - id: yellow
-    title: Yellow Color
-    type: variable-color
-    format: hex
-    default: '#FEFF7F'
-  - id: custom-fonts
-    title: Fonts
-    type: heading
-    level: 2
-    collapsed: true
-  - id: font-text-size
-    title: Font Size
-    description: The font size in pixels
-    type: variable-number
-    format: px
-    default: 18
-  - id: font-size-normal
-    title: Normal Font Size
-    description: The normal font size in pixels
-    type: variable-number
-    format: px
-    default: 18
-  - id: code-size
-    title: Code Font Size
-    description: The code font size in pixels
-    type: variable-number
-    format: px
-    default: 16
-  - id: nav-item-size
-    title: Nav Item Font Size
-    description: The navigation item font size in pixels
-    type: variable-number
-    format: px
-    default: 18
-  - id: font-size-side-dock
-    title: Side Dock Font Size
-    description: The side dock font size in pixels
-    type: variable-number
-    format: px
-    default: 18
-  - id: font-size-side-dock-title
-    title: Side Dock Title Font Size
-    description: The side dock title font size in pixels
-    type: variable-number
-    format: px
-    default: 18
-  - id: popover-font-size
-    title: Pop Over Font Size
-    description: The popup window font size in pixels
-    type: variable-number
-    format: px
-    default: 14
-  - id: vault-name-font-size
-    title: Vault Name Font Size
-    description: The vault name font size in pixels
-    type: variable-number
-    format: px
-    default: 18
-  - id: font-size-status-bar
-    title: Status Bar Font Size
-    description: The status bar font size in pixels
-    type: variable-number
-    format: px
-    default: 18
-  - id: table-header-size
-    title: Table Header Font Size
-    description: The table header font size in pixels
-    type: variable-number
-    format: px
-    default: 18
-  - id: font-size-h1
-    title: Heading 1 Font Size
-    description: The Heading 1 font size in pixels
-    type: variable-number
-    format: px
-    default: 30
-  - id: font-size-h2
-    title: Heading 2 Font Size
-    description: The Heading 2 font size in pixels
-    type: variable-number
-    format: px
-    default: 25
-  - id: font-size-h3
-    title: Heading 3 Font Size
-    description: The Heading 3 font size in pixels
-    type: variable-number
-    format: px
-    default: 21
-  - id: font-size-h4
-    title: Heading 4 Font Size
-    description: The Heading 4 font size in pixels
-    type: variable-number
-    format: px
-    default: 20
-  - id: font-size-h5
-    title: Heading 5 Font Size
-    description: The Heading 5 font size in pixels
-    type: variable-number
-    format: px
-    default: 19
-  - id: font-size-h6
-    title: Heading 6 Font Size
-    description: The Heading 6 font size in pixels
-    type: variable-number
-    format: px
-    default: 18
-  - id: font-ui-smaller
-    title: Smaller UI Font Size
-    description: The smaller UI font size in pixels
-    type: variable-number
-    format: px
-    default: 14
-  - id: font-ui-small
-    title: Small UI Font Size
-    description: The small UI font size in pixels
-    type: variable-number
-    format: px
-    default: 16
-  - id: font-ui-medium
-    title: Medium UI Font Size
-    description: The medium UI font size in pixels
-    type: variable-number
-    format: px
-    default: 18
-  - id: font-ui-large
-    title: Large UI Font Size
-    description: The large UI font size in pixels
-    type: variable-number
-    format: px
-    default: 20
-  - id: font-family-editor
-    title: Editor Font Family
-    description: Font used for editing
-    type: variable-text
-    default: IBM Plex Mono, Menlo, Monaco, "Courier New", monospace
-  - id: font-text
-    title: Text Font
-    description: Font used for text
-    type: variable-text
-    default: Karla, "Avenir Next", Helvetica, Arial, sans-serif;
-  - id: font-family-preview
-    title: Preview Font Family
-    description: Font used for preview
-    type: variable-text
-    default: Karla, "Avenir Next", Helvetica, Arial, sans-serif;
-  - id: font-family-preview-heading
-    title: Preview Heading Font Family
-    description: Font used for preview heading
-    type: variable-text
-    default: Rubik, "Avenir Next", Helvetica, Arial, sans-serif;
-  - id: line-width
-    title: Line width
-    description: The maximum line width in pixels
-    type: variable-number
-    format: px
-    default: 900
-  - id: level-1-headings
-    title: Level 1 Headings
-    type: heading
-    level: 3
-    collapsed: true
-  - id: h1-size
-    title: H1 font size
-    description: Accepts any CSS font-size value
-    type: variable-text
-    default: 1.602em
-  - id: h1-line-height
-    title: H1 line height
-    description: Accepts decimal values
-    type: variable-number
-    default: 1.4
-  - id: h1-margin-top
-    title: H1 top margin
-    description: Accepts decimal values representing the number of lines to add before the heading
-    type: variable-number
-    default: 3
-  - id: h1-margin-bottom
-    title: H1 bottom margin
-    description: Accepts decimal values representing the number of lines to add below the heading
-    type: variable-number
-    default: 1
-  - id: h1-weight
-    title: H1 font weight
-    description: Accepts numbers represeting the CSS font-weight
-    type: variable-number
-    default: 500
-  - id: h1-style
-    title: H1 font style
-    description: Accepts any CSS font-style value
-    type: variable-text
-    default: normal
-  - id: level-2-headings
-    title: Level 2 Headings
-    type: heading
-    level: 3
-    collapsed: true
-  - id: h2-size
-    title: H2 font size
-    description: Accepts any CSS font-size value
-    type: variable-text
-    default: 1.424em
-  - id: h2-line-height
-    title: H2 line height
-    description: Accepts decimal values
-    type: variable-number
-    default: 1.4
-  - id: h2-margin-top
-    title: H2 top margin
-    description: Accepts decimal values representing the number of lines to add before the heading
-    type: variable-number
-    default: 2.25
-  - id: h2-margin-bottom
-    title: H2 bottom margin
-    description: Accepts decimal values representing the number of lines to add below the heading
-    type: variable-number
-    default: 0.5
-  - id: h2-weight
-    title: H2 font weight
-    description: Accepts numbers represeting the CSS font-weight
-    type: variable-number
-    default: 500
-  - id: h2-style
-    title: H2 font style
-    description: Accepts any CSS font-style value
-    type: variable-text
-    default: normal
-  - id: level-3-headings
-    title: Level 3 Headings
-    type: heading
-    level: 3
-    collapsed: true
-  - id: h3-size
-    title: H3 font size
-    description: Accepts any CSS font-size value
-    type: variable-text
-    default: 1.266em
-  - id: h3-line-height
-    title: H3 line height
-    description: Accepts decimal values
-    type: variable-number
-    default: 1.4
-  - id: h3-margin-top
-    title: H3 top margin
-    description: Accepts decimal values representing the number of lines to add before the heading
-    type: variable-number
-    default: 1.75
-  - id: h3-margin-bottom
-    title: H3 bottom margin
-    description: Accepts decimal values representing the number of lines to add below the heading
-    type: variable-number
-    default: 0.5
-  - id: h3-weight
-    title: H3 font weight
-    description: Accepts numbers represeting the CSS font-weight
-    type: variable-number
-    default: 500
-  - id: h3-style
-    title: H3 font style
-    description: Accepts any CSS font-style value
-    type: variable-text
-    default: normal
-  - id: level-4-headings
-    title: Level 4 Headings
-    type: heading
-    level: 3
-    collapsed: true
-  - id: h4-size
-    title: H4 font size
-    description: Accepts any CSS font-size value
-    type: variable-text
-    default: 1.125em
-  - id: h4-line-height
-    title: H4 line height
-    description: Accepts decimal values
-    type: variable-number
-    default: 1.5
-  - id: h4-margin-top
-    title: H4 top margin
-    description: Accepts decimal values representing the number of lines to add before the heading
-    type: variable-number
-    default: 1.5
-  - id: h4-margin-bottom
-    title: H4 bottom margin
-    description: Accepts decimal values representing the number of lines to add below the heading
-    type: variable-number
-    default: 0.5
-  - id: h4-weight
-    title: H4 font weight
-    description: Accepts numbers represeting the CSS font-weight
-    type: variable-number
-    default: 500
-  - id: h4-style
-    title: H4 font style
-    description: Accepts any CSS font-style value
-    type: variable-text
-    default: normal
-  - id: level-5-headings
-    title: Level 5 Headings
-    type: heading
-    level: 3
-    collapsed: true
-  - id: h5-size
-    title: H5 font size
-    description: Accepts any CSS font-size value
-    type: variable-text
-    default: 1em
-  - id: h5-line-height
-    title: H5 line height
-    description: Accepts decimal values
-    type: variable-number
-    default: 1.5
-  - id: h5-margin-top
-    title: H5 top margin
-    description: Accepts decimal values representing the number of lines to add before the heading
-    type: variable-number
-    default: 1.5
-  - id: h5-margin-bottom
-    title: H5 bottom margin
-    description: Accepts decimal values representing the number of lines to add below the heading
-    type: variable-number
-    default: 0.5
-  - id: h5-weight
-    title: H5 font weight
-    description: Accepts numbers represeting the CSS font-weight
-    type: variable-number
-    default: 500
-  - id: h5-style
-    title: H5 font style
-    description: Accepts any CSS font-style value
-    type: variable-text
-    default: normal
-  - id: level-6-headings
-    title: Level 6 Headings
-    type: heading
-    level: 3
-    collapsed: true
-  - id: h6-size
-    title: H6 font size
-    description: Accepts any CSS font-size value
-    type: variable-text
-    default: 1em
-  - id: h6-line-height
-    title: H6 line height
-    description: Accepts decimal values
-    type: variable-number
-    default: 1.5
-  - id: h6-margin-top
-    title: H6 top margin
-    description: Accepts decimal values representing the number of lines to add before the heading
-    type: variable-number
-    default: 1.5
-  - id: h6-margin-bottom
-    title: H6 bottom margin
-    description: Accepts decimal values representing the number of lines to add below the heading
-    type: variable-number
-    default: 0.5
-  - id: h6-weight
-    title: H6 font weight
-    description: Accepts numbers represeting the CSS font-weight
-    type: variable-number
-    default: 500
-  - id: h6-style
-    title: H6 font style
-    description: Accepts any CSS font-style value
-    type: variable-text
-    default: italic
-  - id: icons
-    title: Icons
-    type: heading
-    level: 2
-    collapsed: true
-  - id: cc-no-custom-icons
-    title: Use Obsidian's default icons
-    type: class-toggle
-    default: false
-  - id: cc-no-file-icons
-    title: Hide file icons
-    type: class-toggle
-    default: false
-  - id: cc-no-folder-icons
-    title: Hide folder icons
-    type: class-toggle
-    default: false
-  - id: folder-h
-    title: Folder icon color
-    type: variable-number-slider
-    default: 0
-    format: deg
-    min: 0
-    max: 359
-    step: 1
-  - id: folder-s
-    title: Folder icon saturation
-    type: variable-number-slider
-    default: 100
-    format: '%'
-    min: 0
-    max: 200
-    step: 1
-  - id: folder-b
-    title: Folder icon brightness
-    type: variable-number-slider
-    default: 100
-    format: '%'
-    min: 50
-    max: 150
-    step: 1
+- name: Doctorfree Theme
+  id: doctorfree-theme
+  settings:
+    - id: doctorfree-typography
+      title: Colors
+      type: heading
+      level: 2
+      collapsed: true
+    - id: text-bold-color
+      title: Bold Color
+      type: variable-color
+      format: hex
+      default: '#50fa7b'
+    - id: text-italic-color
+      title: Italic Color
+      type: variable-color
+      format: hex
+      default: '#ffeb95'
+    - id: text-italic-bold-color
+      title: Italic Bold Color
+      type: variable-color
+      format: hex
+      default: '#b380fb'
+    - id: text-accent
+      title: Accent Color
+      type: variable-color
+      format: hex
+      default: '#ffeb95'
+    - id: text-accent-hover
+      title: Hover Accent Color
+      type: variable-color
+      format: hex
+      default: '#8be9fd'
+    - id: text-sub-accent
+      title: Sub Accent Color
+      type: variable-color
+      format: hex
+      default: '#f4569d'
+    - id: background-primary
+      title: Background Color
+      type: variable-color
+      format: hsl
+      opacity: false
+      default: hsl(207deg, 95%, 5%)
+    - id: background-primary-alt
+      title: Alternate Background Color
+      type: variable-color
+      format: hsl
+      opacity: false
+      default: hsl(210deg, 95%, 6%)
+    - id: background-secondary
+      title: Secondary Background Color
+      type: variable-color
+      format: hsl
+      opacity: false
+      default: hsl(200deg, 95%, 5%)
+    - id: background-secondary-alt
+      title: Alternate Secondary Background Color
+      type: variable-color
+      format: hsl
+      opacity: false
+      default: hsl(203deg, 95%, 6%)
+    - id: background-accent
+      title: Accent Background Color
+      type: variable-color
+      format: rgb
+      opacity: true
+      default: rgba(14, 210, 247, 0.25)
+    - id: text-highlight-bg
+      title: Highlight Color
+      type: variable-color
+      format: rgb
+      opacity: true
+      default: hsla(61deg, 100%, 32%, 0.8)
+    - id: text-normal
+      title: Text Normal Color
+      type: variable-color
+      format: hex
+      default: '#f8f8f2'
+    - id: text-selection
+      title: Text Selection Background Color
+      type: variable-color
+      format: hex
+      default: '#6272a4'
+    - id: text-muted
+      title: Text Muted Color
+      type: variable-color
+      format: hex
+      default: '#f8f8f2'
+    - id: text-faint
+      title: Text Faint Color
+      type: variable-color
+      format: hex
+      default: '#7fdbca'
+    - id: interactive-accent
+      title: Interactive Accent Background Color
+      type: variable-color
+      format: rgb
+      opacity: true
+      default: rgba(14, 210, 247, 0.5)
+    - id: interactive-accent-hover
+      title: Interactive Accent Hover Color
+      type: variable-color
+      format: rgb
+      opacity: true
+      default: rgba(14, 210, 247, 0.8)
+    - id: table-border-color
+      title: Table Border Color
+      type: variable-color
+      format: hex
+      default: '#f8f8f2'
+    - id: text-title-h1
+      title: Heading 1 Color
+      type: variable-color
+      format: hex
+      default: '#ff79c6'
+    - id: text-title-h2
+      title: Heading 2 Color
+      type: variable-color
+      format: hex
+      default: '#82aaff'
+    - id: text-title-h3
+      title: Heading 3 Color
+      type: variable-color
+      format: hex
+      default: '#c5e478'
+    - id: text-title-h4
+      title: Heading 4 Color
+      type: variable-color
+      format: hex
+      default: '#ffb86c'
+    - id: text-title-h5
+      title: Heading 5 Color
+      type: variable-color
+      format: hex
+      default: '#50fa7b'
+    - id: text-title-h6
+      title: Heading 6 Color
+      type: variable-color
+      format: hex
+      default: '#8be9fd'
+    - id: inline-code
+      title: Inline Code Color
+      type: variable-color
+      format: hex
+      default: '#bd93f9'
+    - id: code-block
+      title: Code Block Color
+      type: variable-color
+      format: hex
+      default: '#8be9fd'
+    - id: pre-code
+      title: Inline Code Color
+      type: variable-color
+      format: hex
+      default: '#44475a'
+    - id: vim-cursor
+      title: Vim Cursor Color
+      type: variable-color
+      format: hex
+      default: '#ff5555'
+    - id: border-color
+      title: Border Color
+      type: variable-color
+      format: hex
+      default: '#2b2727'
+    - id: border-color-alt
+      title: Alternate Border Color
+      type: variable-color
+      format: hex
+      default: '#101014'
+    - id: white
+      title: White Color
+      type: variable-color
+      format: hex
+      default: '#F8F8F3'
+    - id: gray-1
+      title: Gray 1 Color
+      type: variable-color
+      format: hex
+      default: '#586e75'
+    - id: gray-2
+      title: Gray 2 Color
+      type: variable-color
+      format: hex
+      default: '#D5D4DE'
+    - id: red
+      title: Red Color
+      type: variable-color
+      format: hex
+      default: '#FF5555'
+    - id: orange
+      title: Orange Color
+      type: variable-color
+      format: hex
+      default: '#FE9580'
+    - id: green
+      title: Green Color
+      type: variable-color
+      format: hex
+      default: '#8AFF7F'
+    - id: cyan
+      title: Cyan Color
+      type: variable-color
+      format: hex
+      default: '#81FFEA'
+    - id: cyan-transparent
+      title: Cyan Transparent Color
+      type: variable-color
+      format: rgb
+      opacity: true
+      default: rgba(129, 255, 234, 0.3)
+    - id: purple
+      title: Purple Color
+      type: variable-color
+      format: hex
+      default: '#9580FF'
+    - id: purple-transparent
+      title: Purple Transparent Color
+      type: variable-color
+      format: rgb
+      opacity: true
+      default: rgba(149, 128, 255, 0.5)
+    - id: pink
+      title: Pink Color
+      type: variable-color
+      format: hex
+      default: '#FE7FBF'
+    - id: blue
+      title: Blue Color
+      type: variable-color
+      format: hex
+      default: '#00588E'
+    - id: lavender
+      title: Lavender Color
+      type: variable-color
+      format: hex
+      default: '#b380fb'
+    - id: yellow
+      title: Yellow Color
+      type: variable-color
+      format: hex
+      default: '#FEFF7F'
+    - id: custom-fonts
+      title: Fonts
+      type: heading
+      level: 2
+      collapsed: true
+    - id: font-text-size
+      title: Font Size
+      description: The font size in pixels
+      type: variable-number
+      format: px
+      default: 18
+    - id: font-size-normal
+      title: Normal Font Size
+      description: The normal font size in pixels
+      type: variable-number
+      format: px
+      default: 18
+    - id: code-size
+      title: Code Font Size
+      description: The code font size in pixels
+      type: variable-number
+      format: px
+      default: 16
+    - id: nav-item-size
+      title: Nav Item Font Size
+      description: The navigation item font size in pixels
+      type: variable-number
+      format: px
+      default: 18
+    - id: font-size-side-dock
+      title: Side Dock Font Size
+      description: The side dock font size in pixels
+      type: variable-number
+      format: px
+      default: 18
+    - id: font-size-side-dock-title
+      title: Side Dock Title Font Size
+      description: The side dock title font size in pixels
+      type: variable-number
+      format: px
+      default: 18
+    - id: popover-font-size
+      title: Pop Over Font Size
+      description: The popup window font size in pixels
+      type: variable-number
+      format: px
+      default: 14
+    - id: vault-name-font-size
+      title: Vault Name Font Size
+      description: The vault name font size in pixels
+      type: variable-number
+      format: px
+      default: 18
+    - id: font-size-status-bar
+      title: Status Bar Font Size
+      description: The status bar font size in pixels
+      type: variable-number
+      format: px
+      default: 18
+    - id: table-header-size
+      title: Table Header Font Size
+      description: The table header font size in pixels
+      type: variable-number
+      format: px
+      default: 18
+    - id: font-size-h1
+      title: Heading 1 Font Size
+      description: The Heading 1 font size in pixels
+      type: variable-number
+      format: px
+      default: 30
+    - id: font-size-h2
+      title: Heading 2 Font Size
+      description: The Heading 2 font size in pixels
+      type: variable-number
+      format: px
+      default: 25
+    - id: font-size-h3
+      title: Heading 3 Font Size
+      description: The Heading 3 font size in pixels
+      type: variable-number
+      format: px
+      default: 21
+    - id: font-size-h4
+      title: Heading 4 Font Size
+      description: The Heading 4 font size in pixels
+      type: variable-number
+      format: px
+      default: 20
+    - id: font-size-h5
+      title: Heading 5 Font Size
+      description: The Heading 5 font size in pixels
+      type: variable-number
+      format: px
+      default: 19
+    - id: font-size-h6
+      title: Heading 6 Font Size
+      description: The Heading 6 font size in pixels
+      type: variable-number
+      format: px
+      default: 18
+    - id: font-ui-smaller
+      title: Smaller UI Font Size
+      description: The smaller UI font size in pixels
+      type: variable-number
+      format: px
+      default: 14
+    - id: font-ui-small
+      title: Small UI Font Size
+      description: The small UI font size in pixels
+      type: variable-number
+      format: px
+      default: 16
+    - id: font-ui-medium
+      title: Medium UI Font Size
+      description: The medium UI font size in pixels
+      type: variable-number
+      format: px
+      default: 18
+    - id: font-ui-large
+      title: Large UI Font Size
+      description: The large UI font size in pixels
+      type: variable-number
+      format: px
+      default: 20
+    - id: font-family-editor
+      title: Editor Font Family
+      description: Font used for editing
+      type: variable-text
+      default: IBM Plex Mono, Menlo, Monaco, "Courier New", monospace
+    - id: font-text
+      title: Text Font
+      description: Font used for text
+      type: variable-text
+      default: Karla, "Avenir Next", Helvetica, Arial, sans-serif;
+    - id: font-family-preview
+      title: Preview Font Family
+      description: Font used for preview
+      type: variable-text
+      default: Karla, "Avenir Next", Helvetica, Arial, sans-serif;
+    - id: font-family-preview-heading
+      title: Preview Heading Font Family
+      description: Font used for preview heading
+      type: variable-text
+      default: Rubik, "Avenir Next", Helvetica, Arial, sans-serif;
+    - id: line-width
+      title: Line width
+      description: The maximum line width in pixels
+      type: variable-number
+      format: px
+      default: 900
+    - id: level-1-headings
+      title: Level 1 Headings
+      type: heading
+      level: 3
+      collapsed: true
+    - id: h1-size
+      title: H1 font size
+      description: Accepts any CSS font-size value
+      type: variable-text
+      default: 1.602em
+    - id: h1-line-height
+      title: H1 line height
+      description: Accepts decimal values
+      type: variable-number
+      default: 1.4
+    - id: h1-margin-top
+      title: H1 top margin
+      description: Accepts decimal values representing the number of lines to add before the heading
+      type: variable-number
+      default: 3
+    - id: h1-margin-bottom
+      title: H1 bottom margin
+      description: Accepts decimal values representing the number of lines to add below the heading
+      type: variable-number
+      default: 1
+    - id: h1-weight
+      title: H1 font weight
+      description: Accepts numbers represeting the CSS font-weight
+      type: variable-number
+      default: 500
+    - id: h1-style
+      title: H1 font style
+      description: Accepts any CSS font-style value
+      type: variable-text
+      default: normal
+    - id: level-2-headings
+      title: Level 2 Headings
+      type: heading
+      level: 3
+      collapsed: true
+    - id: h2-size
+      title: H2 font size
+      description: Accepts any CSS font-size value
+      type: variable-text
+      default: 1.424em
+    - id: h2-line-height
+      title: H2 line height
+      description: Accepts decimal values
+      type: variable-number
+      default: 1.4
+    - id: h2-margin-top
+      title: H2 top margin
+      description: Accepts decimal values representing the number of lines to add before the heading
+      type: variable-number
+      default: 2.25
+    - id: h2-margin-bottom
+      title: H2 bottom margin
+      description: Accepts decimal values representing the number of lines to add below the heading
+      type: variable-number
+      default: 0.5
+    - id: h2-weight
+      title: H2 font weight
+      description: Accepts numbers represeting the CSS font-weight
+      type: variable-number
+      default: 500
+    - id: h2-style
+      title: H2 font style
+      description: Accepts any CSS font-style value
+      type: variable-text
+      default: normal
+    - id: level-3-headings
+      title: Level 3 Headings
+      type: heading
+      level: 3
+      collapsed: true
+    - id: h3-size
+      title: H3 font size
+      description: Accepts any CSS font-size value
+      type: variable-text
+      default: 1.266em
+    - id: h3-line-height
+      title: H3 line height
+      description: Accepts decimal values
+      type: variable-number
+      default: 1.4
+    - id: h3-margin-top
+      title: H3 top margin
+      description: Accepts decimal values representing the number of lines to add before the heading
+      type: variable-number
+      default: 1.75
+    - id: h3-margin-bottom
+      title: H3 bottom margin
+      description: Accepts decimal values representing the number of lines to add below the heading
+      type: variable-number
+      default: 0.5
+    - id: h3-weight
+      title: H3 font weight
+      description: Accepts numbers represeting the CSS font-weight
+      type: variable-number
+      default: 500
+    - id: h3-style
+      title: H3 font style
+      description: Accepts any CSS font-style value
+      type: variable-text
+      default: normal
+    - id: level-4-headings
+      title: Level 4 Headings
+      type: heading
+      level: 3
+      collapsed: true
+    - id: h4-size
+      title: H4 font size
+      description: Accepts any CSS font-size value
+      type: variable-text
+      default: 1.125em
+    - id: h4-line-height
+      title: H4 line height
+      description: Accepts decimal values
+      type: variable-number
+      default: 1.5
+    - id: h4-margin-top
+      title: H4 top margin
+      description: Accepts decimal values representing the number of lines to add before the heading
+      type: variable-number
+      default: 1.5
+    - id: h4-margin-bottom
+      title: H4 bottom margin
+      description: Accepts decimal values representing the number of lines to add below the heading
+      type: variable-number
+      default: 0.5
+    - id: h4-weight
+      title: H4 font weight
+      description: Accepts numbers represeting the CSS font-weight
+      type: variable-number
+      default: 500
+    - id: h4-style
+      title: H4 font style
+      description: Accepts any CSS font-style value
+      type: variable-text
+      default: normal
+    - id: level-5-headings
+      title: Level 5 Headings
+      type: heading
+      level: 3
+      collapsed: true
+    - id: h5-size
+      title: H5 font size
+      description: Accepts any CSS font-size value
+      type: variable-text
+      default: 1em
+    - id: h5-line-height
+      title: H5 line height
+      description: Accepts decimal values
+      type: variable-number
+      default: 1.5
+    - id: h5-margin-top
+      title: H5 top margin
+      description: Accepts decimal values representing the number of lines to add before the heading
+      type: variable-number
+      default: 1.5
+    - id: h5-margin-bottom
+      title: H5 bottom margin
+      description: Accepts decimal values representing the number of lines to add below the heading
+      type: variable-number
+      default: 0.5
+    - id: h5-weight
+      title: H5 font weight
+      description: Accepts numbers represeting the CSS font-weight
+      type: variable-number
+      default: 500
+    - id: h5-style
+      title: H5 font style
+      description: Accepts any CSS font-style value
+      type: variable-text
+      default: normal
+    - id: level-6-headings
+      title: Level 6 Headings
+      type: heading
+      level: 3
+      collapsed: true
+    - id: h6-size
+      title: H6 font size
+      description: Accepts any CSS font-size value
+      type: variable-text
+      default: 1em
+    - id: h6-line-height
+      title: H6 line height
+      description: Accepts decimal values
+      type: variable-number
+      default: 1.5
+    - id: h6-margin-top
+      title: H6 top margin
+      description: Accepts decimal values representing the number of lines to add before the heading
+      type: variable-number
+      default: 1.5
+    - id: h6-margin-bottom
+      title: H6 bottom margin
+      description: Accepts decimal values representing the number of lines to add below the heading
+      type: variable-number
+      default: 0.5
+    - id: h6-weight
+      title: H6 font weight
+      description: Accepts numbers represeting the CSS font-weight
+      type: variable-number
+      default: 500
+    - id: h6-style
+      title: H6 font style
+      description: Accepts any CSS font-style value
+      type: variable-text
+      default: italic
+    - id: icons
+      title: Icons
+      type: heading
+      level: 2
+      collapsed: true
+    - id: cc-no-custom-icons
+      title: Use Obsidian's default icons
+      type: class-toggle
+      default: false
+    - id: cc-no-file-icons
+      title: Hide file icons
+      type: class-toggle
+      default: false
+    - id: cc-no-folder-icons
+      title: Hide folder icons
+      type: class-toggle
+      default: false
+    - id: folder-h
+      title: Folder icon color
+      type: variable-number-slider
+      default: 0
+      format: deg
+      min: 0
+      max: 359
+      step: 1
+    - id: folder-s
+      title: Folder icon saturation
+      type: variable-number-slider
+      default: 100
+      format: '%'
+      min: 0
+      max: 200
+      step: 1
+    - id: folder-b
+      title: Folder icon brightness
+      type: variable-number-slider
+      default: 100
+      format: '%'
+      min: 50
+      max: 150
+      step: 1

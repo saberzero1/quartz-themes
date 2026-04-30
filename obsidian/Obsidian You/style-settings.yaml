@@ -1,46 +1,46 @@
-name: Obsidian You
-id: title
-settings:
-  - id: font-header
-    title: Fonts
-    type: heading
-    level: 2
-    collapsed: true
-  - id: font-preview
-    title: Preview Font
-    description: Used in preview mode
-    type: variable-text
-    default: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  - id: font-editor
-    title: Editor Font
-    description: Used in editor mode
-    type: variable-text
-    default: Roboto,"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Microsoft YaHei Light",sans-serif;
-  - id: font-monospace
-    title: Monospace Font
-    description: Used in code
-    type: variable-text
-    default: Menlo,"Roboto Mono",monospace,SFMono-Regular,Consolas;
-  - id: plugin-header
-    title: Plugin settings
-    type: heading
-    level: 2
-    collapsed: true
-  - id: custom-page-header
-    title: Customizable Page Header
-    description: Uses the first Customizable Page Header icon for the FAB
-    type: class-toggle
-  - id: advanced-toolbar-mode
-    title: Advanced toolbar mode
-    description: Adapts automatically to avanced mobile toolbar
-    type: class-toggle
-  - id: other-header
-    title: Misc settings
-    type: heading
-    level: 2
-    collapsed: true
-  - id: branding
-    title: Obsidian You branding
-    description: Toggles contrasting branding in the sidebars
-    type: class-toggle
-    default: true
+- name: Obsidian You
+  id: title
+  settings:
+    - id: font-header
+      title: Fonts
+      type: heading
+      level: 2
+      collapsed: true
+    - id: font-preview
+      title: Preview Font
+      description: Used in preview mode
+      type: variable-text
+      default: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+    - id: font-editor
+      title: Editor Font
+      description: Used in editor mode
+      type: variable-text
+      default: Roboto,"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Microsoft YaHei Light",sans-serif;
+    - id: font-monospace
+      title: Monospace Font
+      description: Used in code
+      type: variable-text
+      default: Menlo,"Roboto Mono",monospace,SFMono-Regular,Consolas;
+    - id: plugin-header
+      title: Plugin settings
+      type: heading
+      level: 2
+      collapsed: true
+    - id: custom-page-header
+      title: Customizable Page Header
+      description: Uses the first Customizable Page Header icon for the FAB
+      type: class-toggle
+    - id: advanced-toolbar-mode
+      title: Advanced toolbar mode
+      description: Adapts automatically to avanced mobile toolbar
+      type: class-toggle
+    - id: other-header
+      title: Misc settings
+      type: heading
+      level: 2
+      collapsed: true
+    - id: branding
+      title: Obsidian You branding
+      description: Toggles contrasting branding in the sidebars
+      type: class-toggle
+      default: true

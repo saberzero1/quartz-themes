@@ -1,0 +1,4 @@
+.block-title-read-mode .workspace-leaf-content[data-mode="preview"] .markdown-preview-view .mod-header .inline-title {
+  height: auto !important;
+  min-height: auto !important;
+}

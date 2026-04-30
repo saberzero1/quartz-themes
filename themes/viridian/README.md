@@ -1,7 +1,7 @@
 # Viridian
 
 - Theme: Viridian
-- Author: No author provided
+- Author: mulfok
 
 ## Preview
 

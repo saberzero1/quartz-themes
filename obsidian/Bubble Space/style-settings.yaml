@@ -1,902 +1,902 @@
-name: Bubble Space Settings
-id: bubble-space-theme
-settings:
-  - id: bs-presets
-    title: I. Presets
-    type: heading
-    level: 2
-    collapsed: true
-  - id: bs-presets
-    title: A. Quick Color Change
-    type: heading
-    level: 3
-    collapsed: true
-  - id: info-colchange
-    title: 💡
-    description: The values in quick change's default use the default Bubble and Space variables, but can still be used alongside Color and Style Presets. You can check out the presets' values [here]()
-    type: info-text
-    markdown: true
-  - id: rainbow-space
-    title: Rainbow Workspace
-    description: Replace color preset-based gradient w/ rainbow colors
-    type: class-toggle
-    default: false
-  - id: rainbowMD
-    title: Rainbow Markdown
-    description: adds color to markdown syntax; can customize more in Basic Markdown
-    type: class-toggle
-    default: true
-  - id: cch-bgcol
-    title: Background Colors
-    description: There are 4 background colors that range from light to dark in **Bubble** and dark to light in **Space**.
-    type: heading
-    level: 5
-    collapsed: true
-  - id: bubspace-bg1
-    title: Background 1
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(238, 251, 253)
-    default-dark: rgb(238, 251, 253)
-  - id: bubspace-bg2
-    title: Background 2
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(197, 233, 247)
-    default-dark: rgb(197, 233, 247)
-  - id: bubspace-bg3
-    title: Background 3
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(174, 224, 245)
-    default-dark: rgb(174, 224, 245)
-  - id: bubspace-bg4
-    title: Background 4
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(90, 176, 225)
-    default-dark: rgb(90, 176, 225)
-  - id: cch-textcol
-    title: Text Colors
-    description: There are 4 text colors that range from dark to light in **Bubble** and light to dark in **Space**.
-    type: heading
-    level: 5
-    collapsed: true
-  - id: bubspace-col1
-    title: Text Color 1
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(86, 162, 194)
-    default-dark: rgb(86, 162, 194)
-  - id: bubspace-col2
-    title: Text Color 2
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(44, 174, 221)
-    default-dark: rgb(44, 174, 221)
-  - id: bubspace-col3
-    title: Text Color 3
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(77, 182, 235)
-    default-dark: rgb(77, 182, 235)
-  - id: bubspace-col4
-    title: Text Color 4
-    type: variable-themed-color
-    description: text on dark background (Bubble) or light background (Space)
-    format: rgb
-    default-light: rgb(187, 249, 255)
-    default-dark: rgb(187, 249, 255)
-  - id: bubspace-maingrad
-    title: Main Gradient Backgrounds
-    description: There are 8 background colors that create a sort of gradient.
-    type: heading
-    level: 5
-    collapsed: true
-  - id: bubspace-mgrad1
-    title: Color 1
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(86, 162, 194)
-    default-dark: rgb(86, 162, 194)
-  - id: bubspace-mgrad2
-    title: Color 2
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(86, 162, 194)
-    default-dark: rgb(86, 162, 194)
-  - id: bubspace-mgrad3
-    title: Color 3
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(86, 162, 194)
-    default-dark: rgb(86, 162, 194)
-  - id: bubspace-mgrad4
-    title: Color 4
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(86, 162, 194)
-    default-dark: rgb(86, 162, 194)
-  - id: bubspace-mgrad5
-    title: Color 5
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(86, 162, 194)
-    default-dark: rgb(86, 162, 194)
-  - id: bubspace-mgrad6
-    title: Color 6
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(86, 162, 194)
-    default-dark: rgb(86, 162, 194)
-  - id: bubspace-mgrad7
-    title: Color 7
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(86, 162, 194)
-    default-dark: rgb(86, 162, 194)
-  - id: bubspace-mgrad8
-    title: Color 8
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(86, 162, 194)
-    default-dark: rgb(86, 162, 194)
-  - id: bs-presets
-    title: B. Color Presets
-    type: heading
-    level: 3
-    collapsed: true
-  - id: bubble-cpresets
-    title: Bubble Color Presets
-    type: class-select
-    allowEmpty: true
-    default: none
-    options:
-      - label: Vanilla
-        value: vanilla
-      - label: Red Velvet
-        value: rvelvet
-      - label: Cotton Candy Pink
-        value: ccpink
-      - label: Boba Milk Tea
-        value: milktea
-      - label: Kiat Kiat
-        value: kiat2
-      - label: Cheese Bites
-        value: cbites
-      - label: Mint Green
-        value: mint
-      - label: Cookie Monster
-        value: cookiemon
-      - label: Ube Mochi
-        value: umochi
-      - label: Lilypad
-        value: lilypad
-      - label: Unicornucopia
-        value: unicorn
-  - id: space-cpresets
-    title: Space Color Presets
-    type: class-select
-    allowEmpty: true
-    default: none
-    description: Neoniverse is best partnered with Style Presets > Glow
-    options:
-      - label: Void
-        value: void
-      - label: Blood Moon
-        value: bmoon
-      - label: Gliese 504b
-        value: gliese
-      - label: Eclipse
-        value: eclipse
-      - label: Solar Flare
-        value: flare
-      - label: Hazard
-        value: hazard
-      - label: Green Nebula
-        value: nebula
-      - label: Son of Neptune
-        value: neptune
-      - label: Darth Obsidius
-        value: darth
-      - label: Heatmap
-        value: webb
-      - label: Neoniverse
-        value: neoni
-  - id: bs-presets
-    title: C. Style Presets
-    type: heading
-    level: 3
-    collapsed: true
-  - id: bubble-spresets
-    title: Bubble Style Presets
-    type: class-select
-    allowEmpty: true
-    default: none
-    options:
-      - label: Doodle
-        value: doodle
-  - id: space-spresets
-    title: Space Style Presets
-    type: class-select
-    allowEmpty: true
-    default: none
-    options:
-      - label: Afterglow
-        value: aglow
-  - id: bs-markdown1
-    title: II. Basic Markdown
-    type: heading
-    level: 2
-    collapsed: true
-  - id: bs-mdtext
-    title: A. Regular Text
-    type: heading
-    level: 3
-    collapsed: true
-  - id: info-text
-    title: 💡
-    description: You can change the text font and size in **Settings > Appearance**
-    type: info-text
-    markdown: true
-  - id: grayMD
-    title: Gray Out Markdown Formatting
-    type: class-toggle
-    default: true
-  - id: p-spacing
-    title: Paragraph Spacing
-    description: Reading Mode Only
-    type: variable-number-slider
-    default: 1
-    format: rem
-    min: 0
-    max: 4
-    step: 0
-  - id: bs-mdtext
-    title: B. Bold, Italics, Comments, Math & Strikethrough
-    type: heading
-    level: 3
-    collapsed: true
-  - id: bold-color
-    title: Bold Color
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(203, 120, 255)
-    default-dark: rgb(203, 120, 255)
-  - id: italic-color
-    title: Italic Color
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(7, 224, 210)
-    default-dark: rgb(7, 224, 210)
-  - id: comment-color
-    title: Comment Color
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(198, 112, 46)
-    default-dark: rgb(198, 112, 46)
-  - id: math-color
-    title: Math Color
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(155, 8, 184)
-    default-dark: rgb(155, 8, 184)
-  - id: strike-color
-    title: Strikethrough Color
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(125, 122, 122)
-    default-dark: rgb(125, 122, 122)
-  - id: bs-mdtext
-    title: C. Headings
-    type: heading
-    level: 3
-    collapsed: true
-  - id: bs-hsizes
-    title: Heading Fonts
-    type: heading
-    level: 4
-    collapsed: true
-  - id: quick-hfont
-    title: Same H1-H6 Fonts
-    type: class-toggle
-    default: true
-  - id: same-hfont
-    title: Same H1-H6 Fonts
-    type: heading
-    level: 6
-    collapsed: true
-  - id: bub-head
-    title: Bubble Heading Font
-    type: variable-text
-    default: Fredoka
-  - id: space-head
-    title: Space Heading Font
-    type: variable-text
-    default: ADLam Display
-  - id: diff-bhfont
-    title: Different Bubble H1-H6 Fonts
-    type: heading
-    level: 6
-    collapsed: true
-  - id: bh1-font
-    title: H1 Font
-    type: variable-text
-    default: Fredoka
-  - id: bh2-font
-    title: H2 Font
-    type: variable-text
-    default: Fredoka
-  - id: bh3-font
-    title: H3 Font
-    type: variable-text
-    default: Fredoka
-  - id: bh4-font
-    title: H4 Font
-    type: variable-text
-    default: Fredoka
-  - id: bh5-font
-    title: H5 Font
-    type: variable-text
-    default: Fredoka
-  - id: bh6-font
-    title: H6 Font
-    type: variable-text
-    default: Fredoka
-  - id: diff-shfont
-    title: Different Space H1-H6 Fonts
-    type: heading
-    level: 6
-    collapsed: true
-  - id: sh1-font
-    title: H1 Font
-    type: variable-text
-    default: Fredoka
-  - id: sh2-font
-    title: H2 Font
-    type: variable-text
-    default: Fredoka
-  - id: sh3-font
-    title: H3 Font
-    type: variable-text
-    default: Fredoka
-  - id: sh4-font
-    title: H4 Font
-    type: variable-text
-    default: Fredoka
-  - id: sh5-font
-    title: H5 Font
-    type: variable-text
-    default: Fredoka
-  - id: sh6-font
-    title: H6 Font
-    type: variable-text
-    default: Fredoka
-  - id: bs-hsizes
-    title: Heading Sizes
-    type: heading
-    level: 4
-    collapsed: true
-  - id: h1-size
-    title: H1 Size
-    type: variable-number-slider
-    default: 1.8
-    format: em
-    min: 0.8
-    max: 4
-    step: 0.1
-  - id: h2-size
-    title: H2 Size
-    type: variable-number-slider
-    default: 1.65
-    format: em
-    min: 0.8
-    max: 4
-    step: 0.1
-  - id: h3-size
-    title: H3 Size
-    type: variable-number-slider
-    default: 1.5
-    format: em
-    min: 0.8
-    max: 4
-    step: 0.1
-  - id: h4-size
-    title: H4 Size
-    type: variable-number-slider
-    default: 1.35
-    format: em
-    min: 0.8
-    max: 4
-    step: 0.1
-  - id: h5-size
-    title: H5 Size
-    type: variable-number-slider
-    default: 1.25
-    format: em
-    min: 0.8
-    max: 4
-    step: 0.1
-  - id: h6-size
-    title: H6 Size
-    type: variable-number-slider
-    default: 1.1
-    format: em
-    min: 0.8
-    max: 4
-    step: 0.1
-  - id: bs-hposition
-    title: Heading Positions
-    type: heading
-    level: 4
-    collapsed: true
-  - id: h1-align
-    title: H1 Align
-    type: variable-select
-    default: left
-    options:
-      - left
-      - center
-      - right
-  - id: h2-align
-    title: H2 Align
-    type: variable-select
-    default: left
-    options:
-      - left
-      - center
-      - right
-  - id: h3-align
-    title: H3 Align
-    type: variable-select
-    default: left
-    options:
-      - left
-      - center
-      - right
-  - id: h4-align
-    title: H4 Align
-    type: variable-select
-    default: left
-    options:
-      - left
-      - center
-      - right
-  - id: h5-align
-    title: H5 Align
-    type: variable-select
-    default: left
-    options:
-      - left
-      - center
-      - right
-  - id: h6-align
-    title: H6 Align
-    type: variable-select
-    default: left
-    options:
-      - left
-      - center
-      - right
-  - id: bs-hdeco
-    title: Heading Deco
-    type: heading
-    level: 4
-    collapsed: true
-  - id: hmarker
-    title: Add Marker
-    type: class-toggle
-    toggle: false
-  - id: bs-h1deco
-    title: H1 Deco
-    type: heading
-    level: 5
-    collapsed: true
-  - id: h1-deco
-    title: Deco Type
-    type: class-select
-    allowEmpty: true
-    default: none
-    options:
-      - label: Underline
-        value: h1-under
-      - label: Overline
-        value: h1-over
-      - label: Bordered
-        value: h1-border
-      - label: Colored Background
-        value: h1-colbg
-      - label: Image Background
-        value: h1-imgbg
-  - id: h1-decocol
-    title: Deco Color Type
-    type: class-select
-    allowEmpty: false
-    default: none
-    options:
-      - label: Solid
-        value: none
-      - label: Gradient
-        value: h1-decograd
-  - id: h1-col1
-    title: Main Color
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(220, 83, 185)
-    default-dark: rgb(175, 38, 141)
-  - id: h1-col2
-    title: Partner Color
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(242,160,114)
-    default-dark: rgb(82, 90, 209)
-  - id: h1-bor
-    title: Border Radius
-    type: variable-number-slider
-    default: 10
-    format: px
-    min: 0
-    max: 20
-    step: 1
-  - id: bh1img
-    title: Bubble H1 Background Image
-    type: variable-text
-    default: url("")
-    description: format- url("image link")
-  - id: sh1img
-    title: Space H1 Background Image
-    type: variable-text
-    default: url("")
-    description: format- url("image link")
-  - id: bs-h2deco
-    title: H2 Deco
-    type: heading
-    level: 5
-    collapsed: true
-  - id: h2-deco
-    title: Deco Type
-    type: class-select
-    allowEmpty: true
-    default: none
-    options:
-      - label: Underline
-        value: h2-under
-      - label: Overline
-        value: h2-over
-      - label: Bordered
-        value: h2-border
-      - label: Colored Background
-        value: h2-colbg
-      - label: Image Background
-        value: h2-imgbg
-  - id: h2-decocol
-    title: Deco Color Type
-    type: class-select
-    allowEmpty: false
-    default: none
-    options:
-      - label: Solid
-        value: none
-      - label: Gradient
-        value: h2-decograd
-  - id: h2-col1
-    title: Main Color
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(141, 119, 236)
-    default-dark: rgb(175, 38, 141)
-  - id: h2-col2
-    title: Partner Color
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(111, 231, 157)
-    default-dark: rgb(82, 90, 209)
-  - id: h2-bor
-    title: Border Radius
-    type: variable-number-slider
-    default: 10
-    format: px
-    min: 0
-    max: 20
-    step: 1
-  - id: bh2img
-    title: Bubble H2 Background Image
-    type: variable-text
-    default: url("")
-    description: format- url("image link")
-  - id: sh2img
-    title: Space H2 Background Image
-    type: variable-text
-    default: url("")
-    description: format- url("image link")
-  - id: bs-h3deco
-    title: H3 Deco
-    type: heading
-    level: 5
-    collapsed: true
-  - id: h3-deco
-    title: Deco Type
-    type: class-select
-    allowEmpty: true
-    default: none
-    options:
-      - label: Underline
-        value: h3-under
-      - label: Overline
-        value: h3-over
-      - label: Bordered
-        value: h3-border
-      - label: Colored Background
-        value: h3-colbg
-      - label: Image Background
-        value: h3-imgbg
-  - id: h3-decocol
-    title: Deco Color Type
-    type: class-select
-    allowEmpty: false
-    default: none
-    options:
-      - label: Solid
-        value: none
-      - label: Gradient
-        value: h3-decograd
-  - id: h3-col1
-    title: Main Color
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(67, 189, 211)
-    default-dark: rgb(175, 38, 141)
-  - id: h3-col2
-    title: Partner Color
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(214, 202, 33)
-    default-dark: rgb(82, 90, 209)
-  - id: h3-bor
-    title: Border Radius
-    type: variable-number-slider
-    default: 10
-    format: px
-    min: 0
-    max: 20
-    step: 1
-  - id: bh3img
-    title: Bubble H3 Background Image
-    type: variable-text
-    default: url("")
-    description: format- url("image link")
-  - id: sh3img
-    title: Space H3 Background Image
-    type: variable-text
-    default: url("")
-    description: format- url("image link")
-  - id: bs-h4deco
-    title: H4 Deco
-    type: heading
-    level: 5
-    collapsed: true
-  - id: h4-deco
-    title: Deco Type
-    type: class-select
-    allowEmpty: true
-    default: none
-    options:
-      - label: Underline
-        value: h4-under
-      - label: Overline
-        value: h4-over
-      - label: Bordered
-        value: h4-border
-      - label: Colored Background
-        value: h4-colbg
-      - label: Image Background
-        value: h4-imgbg
-  - id: h4-decocol
-    title: Deco Color Type
-    type: class-select
-    allowEmpty: false
-    default: none
-    options:
-      - label: Solid
-        value: none
-      - label: Gradient
-        value: h4-decograd
-  - id: h4-col1
-    title: Main Color
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(93, 156, 228)
-    default-dark: rgb(175, 38, 141)
-  - id: h4-col2
-    title: Partner Color
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(177, 99, 201)
-    default-dark: rgb(82, 90, 209)
-  - id: h4-bor
-    title: Border Radius
-    type: variable-number-slider
-    default: 10
-    format: px
-    min: 0
-    max: 20
-    step: 1
-  - id: bh4img
-    title: Bubble H4 Background Image
-    type: variable-text
-    default: url("")
-    description: format- url("image link")
-  - id: sh4img
-    title: Space H4 Background Image
-    type: variable-text
-    default: url("")
-    description: format- url("image link")
-  - id: bs-h5deco
-    title: H5 Deco
-    type: heading
-    level: 5
-    collapsed: true
-  - id: h5-deco
-    title: Deco Type
-    type: class-select
-    allowEmpty: true
-    default: none
-    options:
-      - label: Underline
-        value: h5-under
-      - label: Overline
-        value: h5-over
-      - label: Bordered
-        value: h5-border
-      - label: Colored Background
-        value: h5-colbg
-      - label: Image Background
-        value: h5-imgbg
-  - id: h5-decocol
-    title: Deco Color Type
-    type: class-select
-    allowEmpty: false
-    default: none
-    options:
-      - label: Solid
-        value: none
-      - label: Gradient
-        value: h5-decograd
-  - id: h5-col1
-    title: Main Color
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(174, 107, 218)
-    default-dark: rgb(175, 38, 141)
-  - id: h5-col2
-    title: Partner Color
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(167, 167, 167)
-    default-dark: rgb(82, 90, 209)
-  - id: h5-bor
-    title: Border Radius
-    type: variable-number-slider
-    default: 10
-    format: px
-    min: 0
-    max: 20
-    step: 1
-  - id: bh5img
-    title: Bubble H5 Background Image
-    type: variable-text
-    default: url("")
-    description: format- url("image link")
-  - id: sh5img
-    title: Space H5 Background Image
-    type: variable-text
-    default: url("")
-    description: format- url("image link")
-  - id: bs-h6deco
-    title: H6 Deco
-    type: heading
-    level: 5
-    collapsed: true
-  - id: h6-deco
-    title: Deco Type
-    type: class-select
-    allowEmpty: true
-    default: none
-    options:
-      - label: Underline
-        value: h6-under
-      - label: Overline
-        value: h6-over
-      - label: Bordered
-        value: h6-border
-      - label: Colored Background
-        value: h6-colbg
-      - label: Image Background
-        value: h6-imgbg
-  - id: h6-decocol
-    title: Deco Color Type
-    type: class-select
-    allowEmpty: false
-    default: none
-    options:
-      - label: Solid
-        value: none
-      - label: Gradient
-        value: h6-decograd
-  - id: h6-col1
-    title: Main Color
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(218, 168, 74)
-    default-dark: rgb(175, 38, 141)
-  - id: h6-col2
-    title: Partner Color
-    type: variable-themed-color
-    format: rgb
-    default-light: rgb(10, 62, 75)
-    default-dark: rgb(82, 90, 209)
-  - id: h6-bor
-    title: Border Radius
-    type: variable-number-slider
-    default: 10
-    format: px
-    min: 0
-    max: 20
-    step: 1
-  - id: bh6img
-    title: Bubble H6 Background Image
-    type: variable-text
-    default: url("")
-    description: format- url("image link")
-  - id: sh6img
-    title: Space H6 Background Image
-    type: variable-text
-    default: url("")
-    description: format- url("image link")
-  - id: bs-hsyntax
-    title: Syntax in Headings
-    type: heading
-    level: 4
-    collapsed: true
-  - id: h-liblend
-    title: Blend Links in Headings
-    type: class-toggle
-    description: match link color to Heading colors
-  - id: h-bblend
-    title: Blend Bold in Headings
-    type: class-toggle
-    description: match bolded text color to Heading colors
-  - id: h-iblend
-    title: Blend Italics in Headings
-    type: class-toggle
-    description: match italic text color to Heading colors
-  - id: bs-markdown1
-    title: III. Other Markdown/HTML
-    type: heading
-    level: 2
-    collapsed: true
-  - id: bs-markdown1
-    title: IV. Workspace/UI
-    type: heading
-    level: 2
-    collapsed: true
-  - id: bs-markdown1
-    title: V. Core Plugins
-    type: heading
-    level: 2
-    collapsed: true
-  - id: bs-markdown1
-    title: VI. Community Plugins
-    type: heading
-    level: 2
-    collapsed: true
-  - id: bs-markdown1
-    title: VII. Additional Snippets
-    type: heading
-    level: 2
-    collapsed: true
-  - id: bs-markdown1
-    title: VIII. About Theme
-    type: heading
-    level: 2
-    collapsed: true
+- name: Bubble Space Settings
+  id: bubble-space-theme
+  settings:
+    - id: bs-presets
+      title: I. Presets
+      type: heading
+      level: 2
+      collapsed: true
+    - id: bs-presets
+      title: A. Quick Color Change
+      type: heading
+      level: 3
+      collapsed: true
+    - id: info-colchange
+      title: 💡
+      description: The values in quick change's default use the default Bubble and Space variables, but can still be used alongside Color and Style Presets. You can check out the presets' values [here]()
+      type: info-text
+      markdown: true
+    - id: rainbow-space
+      title: Rainbow Workspace
+      description: Replace color preset-based gradient w/ rainbow colors
+      type: class-toggle
+      default: false
+    - id: rainbowMD
+      title: Rainbow Markdown
+      description: adds color to markdown syntax; can customize more in Basic Markdown
+      type: class-toggle
+      default: true
+    - id: cch-bgcol
+      title: Background Colors
+      description: There are 4 background colors that range from light to dark in **Bubble** and dark to light in **Space**.
+      type: heading
+      level: 5
+      collapsed: true
+    - id: bubspace-bg1
+      title: Background 1
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(238, 251, 253)
+      default-dark: rgb(238, 251, 253)
+    - id: bubspace-bg2
+      title: Background 2
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(197, 233, 247)
+      default-dark: rgb(197, 233, 247)
+    - id: bubspace-bg3
+      title: Background 3
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(174, 224, 245)
+      default-dark: rgb(174, 224, 245)
+    - id: bubspace-bg4
+      title: Background 4
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(90, 176, 225)
+      default-dark: rgb(90, 176, 225)
+    - id: cch-textcol
+      title: Text Colors
+      description: There are 4 text colors that range from dark to light in **Bubble** and light to dark in **Space**.
+      type: heading
+      level: 5
+      collapsed: true
+    - id: bubspace-col1
+      title: Text Color 1
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(86, 162, 194)
+      default-dark: rgb(86, 162, 194)
+    - id: bubspace-col2
+      title: Text Color 2
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(44, 174, 221)
+      default-dark: rgb(44, 174, 221)
+    - id: bubspace-col3
+      title: Text Color 3
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(77, 182, 235)
+      default-dark: rgb(77, 182, 235)
+    - id: bubspace-col4
+      title: Text Color 4
+      type: variable-themed-color
+      description: text on dark background (Bubble) or light background (Space)
+      format: rgb
+      default-light: rgb(187, 249, 255)
+      default-dark: rgb(187, 249, 255)
+    - id: bubspace-maingrad
+      title: Main Gradient Backgrounds
+      description: There are 8 background colors that create a sort of gradient.
+      type: heading
+      level: 5
+      collapsed: true
+    - id: bubspace-mgrad1
+      title: Color 1
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(86, 162, 194)
+      default-dark: rgb(86, 162, 194)
+    - id: bubspace-mgrad2
+      title: Color 2
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(86, 162, 194)
+      default-dark: rgb(86, 162, 194)
+    - id: bubspace-mgrad3
+      title: Color 3
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(86, 162, 194)
+      default-dark: rgb(86, 162, 194)
+    - id: bubspace-mgrad4
+      title: Color 4
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(86, 162, 194)
+      default-dark: rgb(86, 162, 194)
+    - id: bubspace-mgrad5
+      title: Color 5
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(86, 162, 194)
+      default-dark: rgb(86, 162, 194)
+    - id: bubspace-mgrad6
+      title: Color 6
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(86, 162, 194)
+      default-dark: rgb(86, 162, 194)
+    - id: bubspace-mgrad7
+      title: Color 7
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(86, 162, 194)
+      default-dark: rgb(86, 162, 194)
+    - id: bubspace-mgrad8
+      title: Color 8
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(86, 162, 194)
+      default-dark: rgb(86, 162, 194)
+    - id: bs-presets
+      title: B. Color Presets
+      type: heading
+      level: 3
+      collapsed: true
+    - id: bubble-cpresets
+      title: Bubble Color Presets
+      type: class-select
+      allowEmpty: true
+      default: none
+      options:
+        - label: Vanilla
+          value: vanilla
+        - label: Red Velvet
+          value: rvelvet
+        - label: Cotton Candy Pink
+          value: ccpink
+        - label: Boba Milk Tea
+          value: milktea
+        - label: Kiat Kiat
+          value: kiat2
+        - label: Cheese Bites
+          value: cbites
+        - label: Mint Green
+          value: mint
+        - label: Cookie Monster
+          value: cookiemon
+        - label: Ube Mochi
+          value: umochi
+        - label: Lilypad
+          value: lilypad
+        - label: Unicornucopia
+          value: unicorn
+    - id: space-cpresets
+      title: Space Color Presets
+      type: class-select
+      allowEmpty: true
+      default: none
+      description: Neoniverse is best partnered with Style Presets > Glow
+      options:
+        - label: Void
+          value: void
+        - label: Blood Moon
+          value: bmoon
+        - label: Gliese 504b
+          value: gliese
+        - label: Eclipse
+          value: eclipse
+        - label: Solar Flare
+          value: flare
+        - label: Hazard
+          value: hazard
+        - label: Green Nebula
+          value: nebula
+        - label: Son of Neptune
+          value: neptune
+        - label: Darth Obsidius
+          value: darth
+        - label: Heatmap
+          value: webb
+        - label: Neoniverse
+          value: neoni
+    - id: bs-presets
+      title: C. Style Presets
+      type: heading
+      level: 3
+      collapsed: true
+    - id: bubble-spresets
+      title: Bubble Style Presets
+      type: class-select
+      allowEmpty: true
+      default: none
+      options:
+        - label: Doodle
+          value: doodle
+    - id: space-spresets
+      title: Space Style Presets
+      type: class-select
+      allowEmpty: true
+      default: none
+      options:
+        - label: Afterglow
+          value: aglow
+    - id: bs-markdown1
+      title: II. Basic Markdown
+      type: heading
+      level: 2
+      collapsed: true
+    - id: bs-mdtext
+      title: A. Regular Text
+      type: heading
+      level: 3
+      collapsed: true
+    - id: info-text
+      title: 💡
+      description: You can change the text font and size in **Settings > Appearance**
+      type: info-text
+      markdown: true
+    - id: grayMD
+      title: Gray Out Markdown Formatting
+      type: class-toggle
+      default: true
+    - id: p-spacing
+      title: Paragraph Spacing
+      description: Reading Mode Only
+      type: variable-number-slider
+      default: 1
+      format: rem
+      min: 0
+      max: 4
+      step: 0
+    - id: bs-mdtext
+      title: B. Bold, Italics, Comments, Math & Strikethrough
+      type: heading
+      level: 3
+      collapsed: true
+    - id: bold-color
+      title: Bold Color
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(203, 120, 255)
+      default-dark: rgb(203, 120, 255)
+    - id: italic-color
+      title: Italic Color
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(7, 224, 210)
+      default-dark: rgb(7, 224, 210)
+    - id: comment-color
+      title: Comment Color
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(198, 112, 46)
+      default-dark: rgb(198, 112, 46)
+    - id: math-color
+      title: Math Color
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(155, 8, 184)
+      default-dark: rgb(155, 8, 184)
+    - id: strike-color
+      title: Strikethrough Color
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(125, 122, 122)
+      default-dark: rgb(125, 122, 122)
+    - id: bs-mdtext
+      title: C. Headings
+      type: heading
+      level: 3
+      collapsed: true
+    - id: bs-hsizes
+      title: Heading Fonts
+      type: heading
+      level: 4
+      collapsed: true
+    - id: quick-hfont
+      title: Same H1-H6 Fonts
+      type: class-toggle
+      default: true
+    - id: same-hfont
+      title: Same H1-H6 Fonts
+      type: heading
+      level: 6
+      collapsed: true
+    - id: bub-head
+      title: Bubble Heading Font
+      type: variable-text
+      default: Fredoka
+    - id: space-head
+      title: Space Heading Font
+      type: variable-text
+      default: ADLam Display
+    - id: diff-bhfont
+      title: Different Bubble H1-H6 Fonts
+      type: heading
+      level: 6
+      collapsed: true
+    - id: bh1-font
+      title: H1 Font
+      type: variable-text
+      default: Fredoka
+    - id: bh2-font
+      title: H2 Font
+      type: variable-text
+      default: Fredoka
+    - id: bh3-font
+      title: H3 Font
+      type: variable-text
+      default: Fredoka
+    - id: bh4-font
+      title: H4 Font
+      type: variable-text
+      default: Fredoka
+    - id: bh5-font
+      title: H5 Font
+      type: variable-text
+      default: Fredoka
+    - id: bh6-font
+      title: H6 Font
+      type: variable-text
+      default: Fredoka
+    - id: diff-shfont
+      title: Different Space H1-H6 Fonts
+      type: heading
+      level: 6
+      collapsed: true
+    - id: sh1-font
+      title: H1 Font
+      type: variable-text
+      default: Fredoka
+    - id: sh2-font
+      title: H2 Font
+      type: variable-text
+      default: Fredoka
+    - id: sh3-font
+      title: H3 Font
+      type: variable-text
+      default: Fredoka
+    - id: sh4-font
+      title: H4 Font
+      type: variable-text
+      default: Fredoka
+    - id: sh5-font
+      title: H5 Font
+      type: variable-text
+      default: Fredoka
+    - id: sh6-font
+      title: H6 Font
+      type: variable-text
+      default: Fredoka
+    - id: bs-hsizes
+      title: Heading Sizes
+      type: heading
+      level: 4
+      collapsed: true
+    - id: h1-size
+      title: H1 Size
+      type: variable-number-slider
+      default: 1.8
+      format: em
+      min: 0.8
+      max: 4
+      step: 0.1
+    - id: h2-size
+      title: H2 Size
+      type: variable-number-slider
+      default: 1.65
+      format: em
+      min: 0.8
+      max: 4
+      step: 0.1
+    - id: h3-size
+      title: H3 Size
+      type: variable-number-slider
+      default: 1.5
+      format: em
+      min: 0.8
+      max: 4
+      step: 0.1
+    - id: h4-size
+      title: H4 Size
+      type: variable-number-slider
+      default: 1.35
+      format: em
+      min: 0.8
+      max: 4
+      step: 0.1
+    - id: h5-size
+      title: H5 Size
+      type: variable-number-slider
+      default: 1.25
+      format: em
+      min: 0.8
+      max: 4
+      step: 0.1
+    - id: h6-size
+      title: H6 Size
+      type: variable-number-slider
+      default: 1.1
+      format: em
+      min: 0.8
+      max: 4
+      step: 0.1
+    - id: bs-hposition
+      title: Heading Positions
+      type: heading
+      level: 4
+      collapsed: true
+    - id: h1-align
+      title: H1 Align
+      type: variable-select
+      default: left
+      options:
+        - left
+        - center
+        - right
+    - id: h2-align
+      title: H2 Align
+      type: variable-select
+      default: left
+      options:
+        - left
+        - center
+        - right
+    - id: h3-align
+      title: H3 Align
+      type: variable-select
+      default: left
+      options:
+        - left
+        - center
+        - right
+    - id: h4-align
+      title: H4 Align
+      type: variable-select
+      default: left
+      options:
+        - left
+        - center
+        - right
+    - id: h5-align
+      title: H5 Align
+      type: variable-select
+      default: left
+      options:
+        - left
+        - center
+        - right
+    - id: h6-align
+      title: H6 Align
+      type: variable-select
+      default: left
+      options:
+        - left
+        - center
+        - right
+    - id: bs-hdeco
+      title: Heading Deco
+      type: heading
+      level: 4
+      collapsed: true
+    - id: hmarker
+      title: Add Marker
+      type: class-toggle
+      toggle: false
+    - id: bs-h1deco
+      title: H1 Deco
+      type: heading
+      level: 5
+      collapsed: true
+    - id: h1-deco
+      title: Deco Type
+      type: class-select
+      allowEmpty: true
+      default: none
+      options:
+        - label: Underline
+          value: h1-under
+        - label: Overline
+          value: h1-over
+        - label: Bordered
+          value: h1-border
+        - label: Colored Background
+          value: h1-colbg
+        - label: Image Background
+          value: h1-imgbg
+    - id: h1-decocol
+      title: Deco Color Type
+      type: class-select
+      allowEmpty: false
+      default: none
+      options:
+        - label: Solid
+          value: none
+        - label: Gradient
+          value: h1-decograd
+    - id: h1-col1
+      title: Main Color
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(220, 83, 185)
+      default-dark: rgb(175, 38, 141)
+    - id: h1-col2
+      title: Partner Color
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(242,160,114)
+      default-dark: rgb(82, 90, 209)
+    - id: h1-bor
+      title: Border Radius
+      type: variable-number-slider
+      default: 10
+      format: px
+      min: 0
+      max: 20
+      step: 1
+    - id: bh1img
+      title: Bubble H1 Background Image
+      type: variable-text
+      default: url("")
+      description: format- url("image link")
+    - id: sh1img
+      title: Space H1 Background Image
+      type: variable-text
+      default: url("")
+      description: format- url("image link")
+    - id: bs-h2deco
+      title: H2 Deco
+      type: heading
+      level: 5
+      collapsed: true
+    - id: h2-deco
+      title: Deco Type
+      type: class-select
+      allowEmpty: true
+      default: none
+      options:
+        - label: Underline
+          value: h2-under
+        - label: Overline
+          value: h2-over
+        - label: Bordered
+          value: h2-border
+        - label: Colored Background
+          value: h2-colbg
+        - label: Image Background
+          value: h2-imgbg
+    - id: h2-decocol
+      title: Deco Color Type
+      type: class-select
+      allowEmpty: false
+      default: none
+      options:
+        - label: Solid
+          value: none
+        - label: Gradient
+          value: h2-decograd
+    - id: h2-col1
+      title: Main Color
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(141, 119, 236)
+      default-dark: rgb(175, 38, 141)
+    - id: h2-col2
+      title: Partner Color
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(111, 231, 157)
+      default-dark: rgb(82, 90, 209)
+    - id: h2-bor
+      title: Border Radius
+      type: variable-number-slider
+      default: 10
+      format: px
+      min: 0
+      max: 20
+      step: 1
+    - id: bh2img
+      title: Bubble H2 Background Image
+      type: variable-text
+      default: url("")
+      description: format- url("image link")
+    - id: sh2img
+      title: Space H2 Background Image
+      type: variable-text
+      default: url("")
+      description: format- url("image link")
+    - id: bs-h3deco
+      title: H3 Deco
+      type: heading
+      level: 5
+      collapsed: true
+    - id: h3-deco
+      title: Deco Type
+      type: class-select
+      allowEmpty: true
+      default: none
+      options:
+        - label: Underline
+          value: h3-under
+        - label: Overline
+          value: h3-over
+        - label: Bordered
+          value: h3-border
+        - label: Colored Background
+          value: h3-colbg
+        - label: Image Background
+          value: h3-imgbg
+    - id: h3-decocol
+      title: Deco Color Type
+      type: class-select
+      allowEmpty: false
+      default: none
+      options:
+        - label: Solid
+          value: none
+        - label: Gradient
+          value: h3-decograd
+    - id: h3-col1
+      title: Main Color
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(67, 189, 211)
+      default-dark: rgb(175, 38, 141)
+    - id: h3-col2
+      title: Partner Color
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(214, 202, 33)
+      default-dark: rgb(82, 90, 209)
+    - id: h3-bor
+      title: Border Radius
+      type: variable-number-slider
+      default: 10
+      format: px
+      min: 0
+      max: 20
+      step: 1
+    - id: bh3img
+      title: Bubble H3 Background Image
+      type: variable-text
+      default: url("")
+      description: format- url("image link")
+    - id: sh3img
+      title: Space H3 Background Image
+      type: variable-text
+      default: url("")
+      description: format- url("image link")
+    - id: bs-h4deco
+      title: H4 Deco
+      type: heading
+      level: 5
+      collapsed: true
+    - id: h4-deco
+      title: Deco Type
+      type: class-select
+      allowEmpty: true
+      default: none
+      options:
+        - label: Underline
+          value: h4-under
+        - label: Overline
+          value: h4-over
+        - label: Bordered
+          value: h4-border
+        - label: Colored Background
+          value: h4-colbg
+        - label: Image Background
+          value: h4-imgbg
+    - id: h4-decocol
+      title: Deco Color Type
+      type: class-select
+      allowEmpty: false
+      default: none
+      options:
+        - label: Solid
+          value: none
+        - label: Gradient
+          value: h4-decograd
+    - id: h4-col1
+      title: Main Color
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(93, 156, 228)
+      default-dark: rgb(175, 38, 141)
+    - id: h4-col2
+      title: Partner Color
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(177, 99, 201)
+      default-dark: rgb(82, 90, 209)
+    - id: h4-bor
+      title: Border Radius
+      type: variable-number-slider
+      default: 10
+      format: px
+      min: 0
+      max: 20
+      step: 1
+    - id: bh4img
+      title: Bubble H4 Background Image
+      type: variable-text
+      default: url("")
+      description: format- url("image link")
+    - id: sh4img
+      title: Space H4 Background Image
+      type: variable-text
+      default: url("")
+      description: format- url("image link")
+    - id: bs-h5deco
+      title: H5 Deco
+      type: heading
+      level: 5
+      collapsed: true
+    - id: h5-deco
+      title: Deco Type
+      type: class-select
+      allowEmpty: true
+      default: none
+      options:
+        - label: Underline
+          value: h5-under
+        - label: Overline
+          value: h5-over
+        - label: Bordered
+          value: h5-border
+        - label: Colored Background
+          value: h5-colbg
+        - label: Image Background
+          value: h5-imgbg
+    - id: h5-decocol
+      title: Deco Color Type
+      type: class-select
+      allowEmpty: false
+      default: none
+      options:
+        - label: Solid
+          value: none
+        - label: Gradient
+          value: h5-decograd
+    - id: h5-col1
+      title: Main Color
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(174, 107, 218)
+      default-dark: rgb(175, 38, 141)
+    - id: h5-col2
+      title: Partner Color
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(167, 167, 167)
+      default-dark: rgb(82, 90, 209)
+    - id: h5-bor
+      title: Border Radius
+      type: variable-number-slider
+      default: 10
+      format: px
+      min: 0
+      max: 20
+      step: 1
+    - id: bh5img
+      title: Bubble H5 Background Image
+      type: variable-text
+      default: url("")
+      description: format- url("image link")
+    - id: sh5img
+      title: Space H5 Background Image
+      type: variable-text
+      default: url("")
+      description: format- url("image link")
+    - id: bs-h6deco
+      title: H6 Deco
+      type: heading
+      level: 5
+      collapsed: true
+    - id: h6-deco
+      title: Deco Type
+      type: class-select
+      allowEmpty: true
+      default: none
+      options:
+        - label: Underline
+          value: h6-under
+        - label: Overline
+          value: h6-over
+        - label: Bordered
+          value: h6-border
+        - label: Colored Background
+          value: h6-colbg
+        - label: Image Background
+          value: h6-imgbg
+    - id: h6-decocol
+      title: Deco Color Type
+      type: class-select
+      allowEmpty: false
+      default: none
+      options:
+        - label: Solid
+          value: none
+        - label: Gradient
+          value: h6-decograd
+    - id: h6-col1
+      title: Main Color
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(218, 168, 74)
+      default-dark: rgb(175, 38, 141)
+    - id: h6-col2
+      title: Partner Color
+      type: variable-themed-color
+      format: rgb
+      default-light: rgb(10, 62, 75)
+      default-dark: rgb(82, 90, 209)
+    - id: h6-bor
+      title: Border Radius
+      type: variable-number-slider
+      default: 10
+      format: px
+      min: 0
+      max: 20
+      step: 1
+    - id: bh6img
+      title: Bubble H6 Background Image
+      type: variable-text
+      default: url("")
+      description: format- url("image link")
+    - id: sh6img
+      title: Space H6 Background Image
+      type: variable-text
+      default: url("")
+      description: format- url("image link")
+    - id: bs-hsyntax
+      title: Syntax in Headings
+      type: heading
+      level: 4
+      collapsed: true
+    - id: h-liblend
+      title: Blend Links in Headings
+      type: class-toggle
+      description: match link color to Heading colors
+    - id: h-bblend
+      title: Blend Bold in Headings
+      type: class-toggle
+      description: match bolded text color to Heading colors
+    - id: h-iblend
+      title: Blend Italics in Headings
+      type: class-toggle
+      description: match italic text color to Heading colors
+    - id: bs-markdown1
+      title: III. Other Markdown/HTML
+      type: heading
+      level: 2
+      collapsed: true
+    - id: bs-markdown1
+      title: IV. Workspace/UI
+      type: heading
+      level: 2
+      collapsed: true
+    - id: bs-markdown1
+      title: V. Core Plugins
+      type: heading
+      level: 2
+      collapsed: true
+    - id: bs-markdown1
+      title: VI. Community Plugins
+      type: heading
+      level: 2
+      collapsed: true
+    - id: bs-markdown1
+      title: VII. Additional Snippets
+      type: heading
+      level: 2
+      collapsed: true
+    - id: bs-markdown1
+      title: VIII. About Theme
+      type: heading
+      level: 2
+      collapsed: true

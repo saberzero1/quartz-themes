@@ -1,658 +1,658 @@
-name: 🎨 Retroma Theme
-id: retroma-obsidian-theme
-settings:
-  - id: theme-font-selection
-    title: Theme Font Selection
-    description: Fonts that complement the theme.
-    type: class-select
-    default: default
-    options:
-      - label: Default
-        value: default
-      - label: W95font
-        value: retroma-font-w95font
-      - label: Cascadia Code
-        value: retroma-font-cascadia-code
-      - label: iA Writer Mono
-        value: retroma-font-ia-writer-mono
-      - label: Excalifont
-        value: retroma-font-excalifont
-  - id: theme-color-scheme-selection
-    title: Theme Color Scheme Selection
-    type: class-select
-    description: For this to work correctly, you must first reset any modifications previously applied to the Main and Minor Accents within the Color Scheme Tuner (advance).
-    allowEmpty: false
-    default: Analogous
-    options:
-      - label: Analogous (Default)
-        value: Analogous
-      - label: Analogous (Reversed)
-        value: cs-analogous-colors-reversed
-      - label: Split Complementary
-        value: cs-split-complementary-colors
-      - label: Split Complementary (Reversed)
-        value: cs-split-complementary-colors-reversed
-      - label: Triadic
-        value: cs-triadic-colors
-      - label: Triadic (Reversed)
-        value: cs-triadic-colors-reversed
-      - label: Monochromatic
-        value: cs-monochromatic-colors
-      - label: Monochromatic (Reversed)
-        value: cs-monochromatic-colors-reversed
-  - id: theme-variant
-    title: Theme Variant Selection
-    type: class-select
-    allowEmpty: false
-    default: Groovy
-    options:
-      - label: Groovy (Default)
-        value: Groovy
-      - label: Simple
-        value: theme-variant-1
-      - label: Minimalist
-        value: theme-variant-2
-  - id: window-border-radius
-    title: Theme Border Radius
-    type: variable-select
-    format: px
-    default: 12px
-    options:
-      - label: Extra Large
-        value: 18px
-      - label: Large (Default)
-        value: 12px
-      - label: Medium
-        value: 6px
-      - label: Sharp
-        value: 0px
-  - id: button-border-radius
-    title: Button Border Radius
-    type: variable-select
-    format: px
-    default: 8px
-    options:
-      - label: Extra Large
-        value: 24px
-      - label: Large (Default)
-        value: 8px
-      - label: Medium
-        value: 6px
-      - label: Sharp
-        value: 0px
-  - id: lightness-accent
-    title: Dark Mode Lightness
-    type: variable-number-slider
-    default: 0.24
-    min: 0
-    max: 0.32
-    step: 0.02
-  - id: color-scheme
-    title: 🎨 Color Scheme Tuner (advance)
-    type: heading
-    level: 2
-    collapsed: true
-  - id: interactive-accent
-    title: Accent Color
-    description: Your preferred accent color in light and dark mode. Click reset buttons if you want to use Obsidian's default accent color found in the Appearance category in Settings.
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: rotation-2
-    title: Main Accents
-    type: variable-number-slider
-    description: To use the Theme Color Scheme Selection, SPAM CLICK reset button 3 times.
-    default: 330
-    min: 0
-    max: 360
-    step: 1
-  - id: rotation-1
-    title: Minor Accents
-    description: To use the Theme Color Scheme Selection, SPAM CLICK reset button 3 times.
-    type: variable-number-slider
-    default: 30
-    min: 0
-    max: 360
-    step: 1
-  - id: typography
-    title: 🔤 Typography Tuner (advance)
-    type: heading
-    level: 2
-    collapsed: true
-  - id: chroma
-    title: Typography Chroma/Saturation
-    description: This setting may be ignored if you have applied any manual customizations below.
-    type: variable-number-slider
-    default: 0.1
-    min: 0
-    max: 0.2
-    step: 0.001
-  - id: heading-colors
-    title: Heading Colors
-    type: heading
-    level: 3
-    collapsed: true
-  - id: h1-color
-    title: H1
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: h2-color
-    title: H2
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: h3-color
-    title: H3
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: h4-color
-    title: H4
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: h5-color
-    title: H5
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: h6-color
-    title: H6
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: main-text-colors
-    title: Main Text Colors
-    type: heading
-    level: 3
-    collapsed: true
-  - id: text-normal
-    title: Main Text
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: text-muted
-    title: Muted Text
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: text-faint
-    title: Faint Text
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: text-emphasis-colors
-    title: Text Emphasis Colors
-    type: heading
-    level: 3
-    collapsed: true
-  - id: bold-color
-    title: Bold Text
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: italic-color
-    title: Italic Text
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: strong-emphasis
-    title: Bold + Italic
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: link-colors
-    title: Link  Colors
-    type: heading
-    level: 3
-    collapsed: true
-  - id: link-color
-    title: Internal Link
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: link-external-color
-    title: External Link
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: text-highlighter-colors
-    title: Text Highlighter Colors
-    type: heading
-    level: 3
-    collapsed: true
-  - id: text-highlight-bg
-    title: Highlighter (marker)
-    description: ''
-    format: hex
-    type: variable-themed-color
-    opacity: true
-    default-light: '#FFFFFF00'
-    default-dark: '#FFFFFF00'
-  - id: text-selection
-    title: Text Selection
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: folder-settings
-    title: 📂 Folder Settings
-    type: heading
-    level: 2
-    collapsed: true
-  - id: folder-border-stlye
-    title: Folder Border Stlye
-    type: class-select
-    default: default
-    options:
-      - label: Default
-        value: default
-      - label: Style 1
-        value: retroma-folder-border-style-1
-      - label: Style 2
-        value: retroma-folder-border-style-2
-      - label: Hide
-        value: retroma-folder-border-hide
-  - id: retroma-folder-scrollbar
-    title: Folder Scrollbar
-    type: variable-select
-    format: text
-    default: unset
-    options:
-      - label: Show
-        value: unset
-      - label: Hide
-        value: none
-  - id: folder-colors
-    title: Folder Colors
-    type: heading
-    level: 3
-    collapsed: true
-  - id: chroma-folder
-    title: Folder Chroma/Saturation
-    description: This setting may be ignored if you have applied any manual customizations below.
-    type: variable-number-slider
-    default: 0.1
-    min: 0
-    max: 0.2
-    step: 0.001
-  - id: folder-color-toggle
-    title: Folder Color Toggle
-    type: class-select
-    default: default
-    options:
-      - label: Rainbow (Default)
-        value: default
-      - label: Folder Custom Accent Color
-        value: retroma-folder-colors-accent
-      - label: Per Folder Color
-        value: default
-      - label: Disable
-        value: retroma-folder-colors-disable
-  - id: folder-accent
-    title: Folder Custom Accent Color
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: folder-color-1
-    title: Folder 1
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: folder-color-2
-    title: Folder 2
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: folder-color-3
-    title: Folder 3
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: folder-color-4
-    title: Folder 4
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: folder-color-5
-    title: Folder 5
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: folder-color-6
-    title: Folder 6
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: folder-color-7
-    title: Folder 7
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: folder-color-8
-    title: Folder 8
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: folder-color-9
-    title: Folder 9
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: folder-color-10
-    title: Folder 10
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: folder-color-11
-    title: Folder 11
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: folder-color-12
-    title: Folder 12
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: folder-color-13
-    title: Folder 13
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: folder-color-14
-    title: Folder 14
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: folder-color-15
-    title: Folder 15
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: image-tuner
-    title: 🖼️ Image Settings
-    type: heading
-    level: 2
-    collapsed: true
-  - id: img-alignment
-    title: Image Alignment
-    type: class-select
-    allowEmpty: false
-    default: Left
-    options:
-      - label: Left (Default)
-        value: Left
-      - label: Center
-        value: img-center
-  - id: img-border-width
-    title: Image Border Width
-    type: variable-number-slider
-    format: px
-    default: 0
-    min: 0
-    max: 12
-    step: 1
-  - id: img-border-radius
-    title: Image Border Radius
-    type: variable-number-slider
-    format: px
-    default: 0
-    min: 0
-    max: 12
-    step: 1
-  - id: img-border-color
-    title: Image Border Color
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: table-tuner
-    title: 📊  Table Settings
-    type: heading
-    level: 2
-    collapsed: true
-  - id: table-border-spacing
-    title: Table Border Spacing
-    type: variable-number-slider
-    format: px
-    default: 2
-    min: 0
-    max: 12
-    step: 1
-  - id: table-header-background
-    title: Table Header Color
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: table-data-background
-    title: Table Background Color
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: table-border-color
-    title: Table Border Color
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: disable-table-border
-    title: Disable Table Border.
-    default: false
-    type: class-toggle
-  - id: canvas-settings
-    title: ✏️ Canvas Settings
-    type: heading
-    level: 2
-    collapsed: true
-  - id: retroma-canvas-custom-font
-    title: Canvas Custom Font
-    type: variable-select
-    format: text
-    default: default
-    options:
-      - label: Theme font (default)
-        value: default
-      - Excalifont
-      - Caveat
-  - id: canvas-background
-    title: Canvas Background Color
-    type: variable-themed-color
-    format: hex
-    opacity: false
-    default-light: '#'
-    default-dark: '#'
-  - id: retroma-canvas-node-content-bg-opacity
-    title: Canvas Card Background Opacity
-    type: variable-number-slider
-    default: 0.07
-    min: 0
-    max: 0.25
-    step: 0.01
-  - id: retroma-canvas-dot-opacity
-    title: Canvas Dot Pattern Opacity
-    type: variable-number-slider
-    default: 0.3
-    min: 0
-    max: 1
-    step: 0.1
-  - id: retroma-canvas-card-border-width
-    title: Canvas Card Border Width
-    type: variable-number-slider
-    format: px
-    default: 3
-    min: null
-    max: 5
-    step: 0.5
-  - id: retroma-canvas-card-embed-border-width
-    title: Canvas Card Embed Border Width
-    type: variable-number-slider
-    format: px
-    default: 3
-    min: null
-    max: 5
-    step: 0.5
-  - id: misc
-    title: ⚙️ Miscellaneous
-    type: heading
-    level: 2
-    collapsed: true
-  - id: enable-alternative-checkboxes
-    title: Enable Alternative Checkboxes
-    description: Disable this if you are using your own implementation via a CSS Snippet.
-    default: true
-    type: class-toggle
-  - id: disable-checklist-done-decoration
-    title: Disable strikethrough on completed checklists.
-    default: false
-    type: class-toggle
-  - id: heading-divider
-    title: Heading Divider
-    type: class-select
-    allowEmpty: false
-    default: heading-divider-hide
-    options:
-      - label: Hide (Default)
-        value: heading-divider-hide
-      - label: Show
-        value: heading-divider-show
-  - id: footnote-divider
-    title: Footnote Divider
-    type: class-select
-    allowEmpty: false
-    default: footnote-divider
-    options:
-      - label: Hide (Default)
-        value: footnote-divider
-      - label: Show
-        value: null
-  - id: text-alignment
-    title: Text Alignment
-    type: class-select
-    allowEmpty: false
-    default: Left
-    options:
-      - label: Left (Default)
-        value: Left
-      - label: Justify
-        value: text-justify
-      - label: Center
-        value: text-center
-      - label: Right
-        value: text-right
-  - id: plugin-integration-toggle
-    title: 🧪 Plugin Integrations Toggle
-    type: heading
-    level: 2
-    collapsed: true
-  - id: retroma-with-tasknotes-plugin
-    title: TaskNotes by Callum Alpass
-    type: class-select
-    description: https://github.com/callumalpass/tasknotes
-    allowEmpty: false
-    default: retroma-with-tasknotes-plugin
-    options:
-      - label: Enable
-        value: retroma-with-tasknotes-plugin
-      - label: Disable
-        value: null
-  - id: retroma-with-kanban-plugin
-    title: Kanban by mgmeyers
-    type: class-select
-    description: https://github.com/mgmeyers/obsidian-kanban
-    allowEmpty: false
-    default: retroma-with-kanban-plugin
-    options:
-      - label: Enable
-        value: retroma-with-kanban-plugin
-      - label: Disable
-        value: null
-  - id: retroma-with-calendar-plugin
-    title: Calendar by Liam Cain
-    type: class-select
-    description: https://github.com/liamcain/obsidian-calendar-plugin
-    allowEmpty: false
-    default: retroma-with-calendar-plugin
-    options:
-      - label: Enable
-        value: retroma-with-calendar-plugin
-      - label: Disable
-        value: null
-  - id: author
-    title: 🌱  SUPPORT THE DEVELOPMENT
-    type: heading
-    level: 2
-  - id: description
-    title: null
-    description: 'Retroma GitHub Repo: https://github.com/emarpiee/Retroma<br>Retroma Developer: https://github.com/emarpiee<br><br>☕️ **BUY ME A COFEE**: https://buymeacoffee.com/emarpiee<br>Ko-Fi: https://ko-fi.com/emarpiee <br>PayPal: https://paypal.me/emarpiee'
-    type: info-text
-    markdown: true
+- name: 🎨 Retroma Theme
+  id: retroma-obsidian-theme
+  settings:
+    - id: theme-font-selection
+      title: Theme Font Selection
+      description: Fonts that complement the theme.
+      type: class-select
+      default: default
+      options:
+        - label: Default
+          value: default
+        - label: W95font
+          value: retroma-font-w95font
+        - label: Cascadia Code
+          value: retroma-font-cascadia-code
+        - label: iA Writer Mono
+          value: retroma-font-ia-writer-mono
+        - label: Excalifont
+          value: retroma-font-excalifont
+    - id: theme-color-scheme-selection
+      title: Theme Color Scheme Selection
+      type: class-select
+      description: For this to work correctly, you must first reset any modifications previously applied to the Main and Minor Accents within the Color Scheme Tuner (advance).
+      allowEmpty: false
+      default: Analogous
+      options:
+        - label: Analogous (Default)
+          value: Analogous
+        - label: Analogous (Reversed)
+          value: cs-analogous-colors-reversed
+        - label: Split Complementary
+          value: cs-split-complementary-colors
+        - label: Split Complementary (Reversed)
+          value: cs-split-complementary-colors-reversed
+        - label: Triadic
+          value: cs-triadic-colors
+        - label: Triadic (Reversed)
+          value: cs-triadic-colors-reversed
+        - label: Monochromatic
+          value: cs-monochromatic-colors
+        - label: Monochromatic (Reversed)
+          value: cs-monochromatic-colors-reversed
+    - id: theme-variant
+      title: Theme Variant Selection
+      type: class-select
+      allowEmpty: false
+      default: Groovy
+      options:
+        - label: Groovy (Default)
+          value: Groovy
+        - label: Simple
+          value: theme-variant-1
+        - label: Minimalist
+          value: theme-variant-2
+    - id: window-border-radius
+      title: Theme Border Radius
+      type: variable-select
+      format: px
+      default: 12px
+      options:
+        - label: Extra Large
+          value: 18px
+        - label: Large (Default)
+          value: 12px
+        - label: Medium
+          value: 6px
+        - label: Sharp
+          value: 0px
+    - id: button-border-radius
+      title: Button Border Radius
+      type: variable-select
+      format: px
+      default: 8px
+      options:
+        - label: Extra Large
+          value: 24px
+        - label: Large (Default)
+          value: 8px
+        - label: Medium
+          value: 6px
+        - label: Sharp
+          value: 0px
+    - id: lightness-accent
+      title: Dark Mode Lightness
+      type: variable-number-slider
+      default: 0.24
+      min: 0
+      max: 0.32
+      step: 0.02
+    - id: color-scheme
+      title: 🎨 Color Scheme Tuner (advance)
+      type: heading
+      level: 2
+      collapsed: true
+    - id: interactive-accent
+      title: Accent Color
+      description: Your preferred accent color in light and dark mode. Click reset buttons if you want to use Obsidian's default accent color found in the Appearance category in Settings.
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: rotation-2
+      title: Main Accents
+      type: variable-number-slider
+      description: To use the Theme Color Scheme Selection, SPAM CLICK reset button 3 times.
+      default: 330
+      min: 0
+      max: 360
+      step: 1
+    - id: rotation-1
+      title: Minor Accents
+      description: To use the Theme Color Scheme Selection, SPAM CLICK reset button 3 times.
+      type: variable-number-slider
+      default: 30
+      min: 0
+      max: 360
+      step: 1
+    - id: typography
+      title: 🔤 Typography Tuner (advance)
+      type: heading
+      level: 2
+      collapsed: true
+    - id: chroma
+      title: Typography Chroma/Saturation
+      description: This setting may be ignored if you have applied any manual customizations below.
+      type: variable-number-slider
+      default: 0.1
+      min: 0
+      max: 0.2
+      step: 0.001
+    - id: heading-colors
+      title: Heading Colors
+      type: heading
+      level: 3
+      collapsed: true
+    - id: h1-color
+      title: H1
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: h2-color
+      title: H2
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: h3-color
+      title: H3
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: h4-color
+      title: H4
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: h5-color
+      title: H5
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: h6-color
+      title: H6
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: main-text-colors
+      title: Main Text Colors
+      type: heading
+      level: 3
+      collapsed: true
+    - id: text-normal
+      title: Main Text
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: text-muted
+      title: Muted Text
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: text-faint
+      title: Faint Text
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: text-emphasis-colors
+      title: Text Emphasis Colors
+      type: heading
+      level: 3
+      collapsed: true
+    - id: bold-color
+      title: Bold Text
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: italic-color
+      title: Italic Text
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: strong-emphasis
+      title: Bold + Italic
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: link-colors
+      title: Link  Colors
+      type: heading
+      level: 3
+      collapsed: true
+    - id: link-color
+      title: Internal Link
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: link-external-color
+      title: External Link
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: text-highlighter-colors
+      title: Text Highlighter Colors
+      type: heading
+      level: 3
+      collapsed: true
+    - id: text-highlight-bg
+      title: Highlighter (marker)
+      description: ''
+      format: hex
+      type: variable-themed-color
+      opacity: true
+      default-light: '#FFFFFF00'
+      default-dark: '#FFFFFF00'
+    - id: text-selection
+      title: Text Selection
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: folder-settings
+      title: 📂 Folder Settings
+      type: heading
+      level: 2
+      collapsed: true
+    - id: folder-border-stlye
+      title: Folder Border Stlye
+      type: class-select
+      default: default
+      options:
+        - label: Default
+          value: default
+        - label: Style 1
+          value: retroma-folder-border-style-1
+        - label: Style 2
+          value: retroma-folder-border-style-2
+        - label: Hide
+          value: retroma-folder-border-hide
+    - id: retroma-folder-scrollbar
+      title: Folder Scrollbar
+      type: variable-select
+      format: text
+      default: unset
+      options:
+        - label: Show
+          value: unset
+        - label: Hide
+          value: none
+    - id: folder-colors
+      title: Folder Colors
+      type: heading
+      level: 3
+      collapsed: true
+    - id: chroma-folder
+      title: Folder Chroma/Saturation
+      description: This setting may be ignored if you have applied any manual customizations below.
+      type: variable-number-slider
+      default: 0.1
+      min: 0
+      max: 0.2
+      step: 0.001
+    - id: folder-color-toggle
+      title: Folder Color Toggle
+      type: class-select
+      default: default
+      options:
+        - label: Rainbow (Default)
+          value: default
+        - label: Folder Custom Accent Color
+          value: retroma-folder-colors-accent
+        - label: Per Folder Color
+          value: default
+        - label: Disable
+          value: retroma-folder-colors-disable
+    - id: folder-accent
+      title: Folder Custom Accent Color
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: folder-color-1
+      title: Folder 1
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: folder-color-2
+      title: Folder 2
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: folder-color-3
+      title: Folder 3
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: folder-color-4
+      title: Folder 4
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: folder-color-5
+      title: Folder 5
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: folder-color-6
+      title: Folder 6
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: folder-color-7
+      title: Folder 7
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: folder-color-8
+      title: Folder 8
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: folder-color-9
+      title: Folder 9
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: folder-color-10
+      title: Folder 10
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: folder-color-11
+      title: Folder 11
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: folder-color-12
+      title: Folder 12
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: folder-color-13
+      title: Folder 13
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: folder-color-14
+      title: Folder 14
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: folder-color-15
+      title: Folder 15
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: image-tuner
+      title: 🖼️ Image Settings
+      type: heading
+      level: 2
+      collapsed: true
+    - id: img-alignment
+      title: Image Alignment
+      type: class-select
+      allowEmpty: false
+      default: Left
+      options:
+        - label: Left (Default)
+          value: Left
+        - label: Center
+          value: img-center
+    - id: img-border-width
+      title: Image Border Width
+      type: variable-number-slider
+      format: px
+      default: 0
+      min: 0
+      max: 12
+      step: 1
+    - id: img-border-radius
+      title: Image Border Radius
+      type: variable-number-slider
+      format: px
+      default: 0
+      min: 0
+      max: 12
+      step: 1
+    - id: img-border-color
+      title: Image Border Color
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: table-tuner
+      title: 📊  Table Settings
+      type: heading
+      level: 2
+      collapsed: true
+    - id: table-border-spacing
+      title: Table Border Spacing
+      type: variable-number-slider
+      format: px
+      default: 2
+      min: 0
+      max: 12
+      step: 1
+    - id: table-header-background
+      title: Table Header Color
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: table-data-background
+      title: Table Background Color
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: table-border-color
+      title: Table Border Color
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: disable-table-border
+      title: Disable Table Border.
+      default: false
+      type: class-toggle
+    - id: canvas-settings
+      title: ✏️ Canvas Settings
+      type: heading
+      level: 2
+      collapsed: true
+    - id: retroma-canvas-custom-font
+      title: Canvas Custom Font
+      type: variable-select
+      format: text
+      default: default
+      options:
+        - label: Theme font (default)
+          value: default
+        - Excalifont
+        - Caveat
+    - id: canvas-background
+      title: Canvas Background Color
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#'
+      default-dark: '#'
+    - id: retroma-canvas-node-content-bg-opacity
+      title: Canvas Card Background Opacity
+      type: variable-number-slider
+      default: 0.07
+      min: 0
+      max: 0.25
+      step: 0.01
+    - id: retroma-canvas-dot-opacity
+      title: Canvas Dot Pattern Opacity
+      type: variable-number-slider
+      default: 0.3
+      min: 0
+      max: 1
+      step: 0.1
+    - id: retroma-canvas-card-border-width
+      title: Canvas Card Border Width
+      type: variable-number-slider
+      format: px
+      default: 3
+      min: null
+      max: 5
+      step: 0.5
+    - id: retroma-canvas-card-embed-border-width
+      title: Canvas Card Embed Border Width
+      type: variable-number-slider
+      format: px
+      default: 3
+      min: null
+      max: 5
+      step: 0.5
+    - id: misc
+      title: ⚙️ Miscellaneous
+      type: heading
+      level: 2
+      collapsed: true
+    - id: enable-alternative-checkboxes
+      title: Enable Alternative Checkboxes
+      description: Disable this if you are using your own implementation via a CSS Snippet.
+      default: true
+      type: class-toggle
+    - id: disable-checklist-done-decoration
+      title: Disable strikethrough on completed checklists.
+      default: false
+      type: class-toggle
+    - id: heading-divider
+      title: Heading Divider
+      type: class-select
+      allowEmpty: false
+      default: heading-divider-hide
+      options:
+        - label: Hide (Default)
+          value: heading-divider-hide
+        - label: Show
+          value: heading-divider-show
+    - id: footnote-divider
+      title: Footnote Divider
+      type: class-select
+      allowEmpty: false
+      default: footnote-divider
+      options:
+        - label: Hide (Default)
+          value: footnote-divider
+        - label: Show
+          value: null
+    - id: text-alignment
+      title: Text Alignment
+      type: class-select
+      allowEmpty: false
+      default: Left
+      options:
+        - label: Left (Default)
+          value: Left
+        - label: Justify
+          value: text-justify
+        - label: Center
+          value: text-center
+        - label: Right
+          value: text-right
+    - id: plugin-integration-toggle
+      title: 🧪 Plugin Integrations Toggle
+      type: heading
+      level: 2
+      collapsed: true
+    - id: retroma-with-tasknotes-plugin
+      title: TaskNotes by Callum Alpass
+      type: class-select
+      description: https://github.com/callumalpass/tasknotes
+      allowEmpty: false
+      default: retroma-with-tasknotes-plugin
+      options:
+        - label: Enable
+          value: retroma-with-tasknotes-plugin
+        - label: Disable
+          value: null
+    - id: retroma-with-kanban-plugin
+      title: Kanban by mgmeyers
+      type: class-select
+      description: https://github.com/mgmeyers/obsidian-kanban
+      allowEmpty: false
+      default: retroma-with-kanban-plugin
+      options:
+        - label: Enable
+          value: retroma-with-kanban-plugin
+        - label: Disable
+          value: null
+    - id: retroma-with-calendar-plugin
+      title: Calendar by Liam Cain
+      type: class-select
+      description: https://github.com/liamcain/obsidian-calendar-plugin
+      allowEmpty: false
+      default: retroma-with-calendar-plugin
+      options:
+        - label: Enable
+          value: retroma-with-calendar-plugin
+        - label: Disable
+          value: null
+    - id: author
+      title: 🌱  SUPPORT THE DEVELOPMENT
+      type: heading
+      level: 2
+    - id: description
+      title: null
+      description: 'Retroma GitHub Repo: https://github.com/emarpiee/Retroma<br>Retroma Developer: https://github.com/emarpiee<br><br>☕️ **BUY ME A COFEE**: https://buymeacoffee.com/emarpiee<br>Ko-Fi: https://ko-fi.com/emarpiee <br>PayPal: https://paypal.me/emarpiee'
+      type: info-text
+      markdown: true

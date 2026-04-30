@@ -1426,6 +1426,32 @@ html[saved-theme="light"] body input[type=text] {
 }
 `,
   classSettings: {
+    "preset-orange": {
+      general: `body.preset-orange {
+--bg-tint-color-h: 21;
+--bg-tint-color-s: 100%;
+--bg-tint-color-l: 35%;
+--bg-tint-opacity: 0.3;
+--border-opacity: 0.063;
+--file-line-width: 700px;
+}
+
+body.preset-orange svg.canvas-background {
+display: none;
+}
+
+body.preset-orange .modal {
+animation: modal-open calc(var(--animationspeed) * 0.7) cubic-bezier(0.2, 0, 0, 1) forwards;
+}
+
+body.preset-orange .modal-bg {
+animation: modal-bg-fade calc(var(--animationspeed) * 0.7) cubic-bezier(0.2, 0, 0, 1) forwards;
+}
+
+body.preset-orange .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view, body.preset-orange .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view, body.preset-orange .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view, body.preset-orange .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view {
+animation: tr-note-fade-in var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
+}`,
+    },
     "show-scrollbars": {
       general: `body.show-scrollbars ::-webkit-scrollbar {
 visibility: initial;

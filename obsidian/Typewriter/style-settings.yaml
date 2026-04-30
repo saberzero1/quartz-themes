@@ -1,25 +1,25 @@
-name: Typewriter
-id: obsidian-typewriter
-settings:
-  - id: typewriter-editor
-    title: Editor
-    type: heading
-    level: 2
-  - id: shrink-formatting
-    title: Shrink & fade Markdown formatting symbols
-    type: class-toggle
-    default: 'on'
-  - id: active-line-highlight
-    title: Highlight the active line
-    type: class-toggle
-    default: 'on'
-  - id: theme-accent-sel
-    title: Theme accent
-    type: variable-themed-color
-    opacity: false
-    format: hex
-    alt-format:
-      - id: theme-accent-sel
-        format: hsl-split
-    default-light: '#519D5C'
-    default-dark: '#519D5C'
+- name: Typewriter
+  id: obsidian-typewriter
+  settings:
+    - id: typewriter-editor
+      title: Editor
+      type: heading
+      level: 2
+    - id: shrink-formatting
+      title: Shrink & fade Markdown formatting symbols
+      type: class-toggle
+      default: 'on'
+    - id: active-line-highlight
+      title: Highlight the active line
+      type: class-toggle
+      default: 'on'
+    - id: theme-accent-sel
+      title: Theme accent
+      type: variable-themed-color
+      opacity: false
+      format: hex
+      alt-format:
+        - id: theme-accent-sel
+          format: hsl-split
+      default-light: '#519D5C'
+      default-dark: '#519D5C'

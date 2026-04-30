@@ -6,7 +6,7 @@ cssclasses:
 
 > This page is to quickly check how all features are rendered.
 
-- Theme author: No author provided
+- Theme author: mulfok
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/viridian/README.md">Install instructions</a>
 

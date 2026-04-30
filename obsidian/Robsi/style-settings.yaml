@@ -1,148 +1,148 @@
-name: Robsi Appearance
-id: Appearance
-settings:
-  - id: colors
-    title: Colors
-    type: heading
-    level: 1
-    collapsed: true
-  - id: accent
-    title: Accent Color
-    type: variable-themed-color
-    format: hsl-split
-    opacity: false
-    default-light: '#0078B4'
-    default-dark: '#80D0FF'
-  - id: Extended-colors
-    title: Extended Colors
-    type: heading
-    level: 2
-    collapsed: true
-  - id: red
-    title: Red
-    type: variable-themed-color
-    format: rgb
-    opacity: false
-    default-light: rgb(180, 30, 50)
-    default-dark: rgb(219, 75, 75)
-  - id: red1
-    title: Red1
-    type: variable-themed-color
-    format: rgb
-    opacity: false
-    default-light: rgb(200, 50, 70)
-    default-dark: rgb(255, 117, 127)
-  - id: green
-    title: Green
-    type: variable-themed-color
-    format: rgb
-    opacity: false
-    default-light: rgb(20, 140, 80)
-    default-dark: rgb(158, 206, 106)
-  - id: cyan
-    title: Cyan
-    type: variable-themed-color
-    format: rgb
-    opacity: false
-    default-light: rgb(0, 120, 180)
-    default-dark: rgb(125, 207, 255)
-  - id: blue
-    title: Blue
-    type: variable-themed-color
-    format: rgb
-    opacity: false
-    default-light: rgb(30, 70, 160)
-    default-dark: rgb(122, 162, 247)
-  - id: yellow
-    title: Yellow
-    type: variable-themed-color
-    format: rgb
-    opacity: false
-    default-light: rgb(180, 120, 0)
-    default-dark: rgb(224, 175, 104)
-  - id: orange
-    title: Orange
-    type: variable-themed-color
-    format: rgb
-    opacity: false
-    default-light: rgb(220, 100, 20)
-    default-dark: rgb(255, 158, 100)
-  - id: magenta
-    title: Magenta
-    type: variable-themed-color
-    format: rgb
-    opacity: false
-    default-light: rgb(160, 30, 140)
-    default-dark: rgb(187, 154, 247)
-  - id: pink
-    title: Pink
-    type: variable-themed-color
-    format: rgb
-    opacity: false
-    default-light: rgb(200, 30, 140)
-    default-dark: rgb(217, 0, 105)
-  - id: lists-heading
-    title: Lists
-    type: heading
-    level: 2
-    collapsed: true
-  - id: list-indent
-    title: List Indent
-    description: Indentation for nested list items
-    type: variable-text
-    default: 2em
-  - id: list-spacing
-    title: List Spacing
-    description: Vertical spacing between list items
-    type: variable-text
-    default: 0
-  - id: unordered-lists-heading
-    title: Unordered Lists (Bullets)
-    type: heading
-    level: 3
-    collapsed: true
-  - id: list-marker-color
-    title: Bullet Color
-    description: Color for list bullet markers
-    type: variable-themed-color
-    format: rgb
-    opacity: false
-    default-light: rgb(160, 30, 140)
-    default-dark: rgb(187, 154, 247)
-  - id: list-marker-color-hover
-    title: Bullet Hover Color
-    description: Color when hovering over list bullets
-    type: variable-themed-color
-    format: rgb
-    opacity: false
-    default-light: rgb(0, 120, 180)
-    default-dark: rgb(125, 207, 255)
-  - id: list-marker-color-collapsed
-    title: Bullet Collapsed Color
-    description: Color for collapsed list bullets
-    type: variable-themed-color
-    format: rgb
-    opacity: false
-    default-light: rgb(120, 125, 135)
-    default-dark: rgb(86, 95, 137)
-  - id: ordered-lists-heading
-    title: Ordered Lists (Numbers)
-    type: heading
-    level: 3
-    collapsed: true
-  - id: list-number-color
-    title: Number Color
-    description: Color for ordered list numbers
-    type: variable-themed-color
-    format: rgb
-    opacity: false
-    default-light: rgb(160, 30, 140)
-    default-dark: rgb(187, 154, 247)
-  - id: list-number-color-hover
-    title: Number Hover Color
-    description: Color when hovering over list numbers
-    type: variable-themed-color
-    format: rgb
-    opacity: false
-    default-light: rgb(0, 120, 180)
-    default-dark: rgb(125, 207, 255)
+- name: Robsi Appearance
+  id: Appearance
+  settings:
+    - id: colors
+      title: Colors
+      type: heading
+      level: 1
+      collapsed: true
+    - id: accent
+      title: Accent Color
+      type: variable-themed-color
+      format: hsl-split
+      opacity: false
+      default-light: '#0078B4'
+      default-dark: '#80D0FF'
+    - id: Extended-colors
+      title: Extended Colors
+      type: heading
+      level: 2
+      collapsed: true
+    - id: red
+      title: Red
+      type: variable-themed-color
+      format: rgb
+      opacity: false
+      default-light: rgb(180, 30, 50)
+      default-dark: rgb(219, 75, 75)
+    - id: red1
+      title: Red1
+      type: variable-themed-color
+      format: rgb
+      opacity: false
+      default-light: rgb(200, 50, 70)
+      default-dark: rgb(255, 117, 127)
+    - id: green
+      title: Green
+      type: variable-themed-color
+      format: rgb
+      opacity: false
+      default-light: rgb(20, 140, 80)
+      default-dark: rgb(158, 206, 106)
+    - id: cyan
+      title: Cyan
+      type: variable-themed-color
+      format: rgb
+      opacity: false
+      default-light: rgb(0, 120, 180)
+      default-dark: rgb(125, 207, 255)
+    - id: blue
+      title: Blue
+      type: variable-themed-color
+      format: rgb
+      opacity: false
+      default-light: rgb(30, 70, 160)
+      default-dark: rgb(122, 162, 247)
+    - id: yellow
+      title: Yellow
+      type: variable-themed-color
+      format: rgb
+      opacity: false
+      default-light: rgb(180, 120, 0)
+      default-dark: rgb(224, 175, 104)
+    - id: orange
+      title: Orange
+      type: variable-themed-color
+      format: rgb
+      opacity: false
+      default-light: rgb(220, 100, 20)
+      default-dark: rgb(255, 158, 100)
+    - id: magenta
+      title: Magenta
+      type: variable-themed-color
+      format: rgb
+      opacity: false
+      default-light: rgb(160, 30, 140)
+      default-dark: rgb(187, 154, 247)
+    - id: pink
+      title: Pink
+      type: variable-themed-color
+      format: rgb
+      opacity: false
+      default-light: rgb(200, 30, 140)
+      default-dark: rgb(217, 0, 105)
+    - id: lists-heading
+      title: Lists
+      type: heading
+      level: 2
+      collapsed: true
+    - id: list-indent
+      title: List Indent
+      description: Indentation for nested list items
+      type: variable-text
+      default: 2em
+    - id: list-spacing
+      title: List Spacing
+      description: Vertical spacing between list items
+      type: variable-text
+      default: 0
+    - id: unordered-lists-heading
+      title: Unordered Lists (Bullets)
+      type: heading
+      level: 3
+      collapsed: true
+    - id: list-marker-color
+      title: Bullet Color
+      description: Color for list bullet markers
+      type: variable-themed-color
+      format: rgb
+      opacity: false
+      default-light: rgb(160, 30, 140)
+      default-dark: rgb(187, 154, 247)
+    - id: list-marker-color-hover
+      title: Bullet Hover Color
+      description: Color when hovering over list bullets
+      type: variable-themed-color
+      format: rgb
+      opacity: false
+      default-light: rgb(0, 120, 180)
+      default-dark: rgb(125, 207, 255)
+    - id: list-marker-color-collapsed
+      title: Bullet Collapsed Color
+      description: Color for collapsed list bullets
+      type: variable-themed-color
+      format: rgb
+      opacity: false
+      default-light: rgb(120, 125, 135)
+      default-dark: rgb(86, 95, 137)
+    - id: ordered-lists-heading
+      title: Ordered Lists (Numbers)
+      type: heading
+      level: 3
+      collapsed: true
+    - id: list-number-color
+      title: Number Color
+      description: Color for ordered list numbers
+      type: variable-themed-color
+      format: rgb
+      opacity: false
+      default-light: rgb(160, 30, 140)
+      default-dark: rgb(187, 154, 247)
+    - id: list-number-color-hover
+      title: Number Hover Color
+      description: Color when hovering over list numbers
+      type: variable-themed-color
+      format: rgb
+      opacity: false
+      default-light: rgb(0, 120, 180)
+      default-dark: rgb(125, 207, 255)

@@ -3412,7 +3412,7 @@ html[saved-theme="light"] body ul.tags > li {
     },
     "active-line": {
       general: `body.active-line .cm-active:not(.HyperMD-header, .HyperMD-codeblock)::before, body.active-line .cm-active.HyperMD-quote::before {
-content: '';
+content: "";
 height: 100%;
 position: absolute;
 left: -1.125em;
@@ -3446,7 +3446,7 @@ left: 0;
 padding-right: 1.4em;
 }
 
-body.fancy-code .HyperMD-codeblock.cm-line:not( .HyperMD-codeblock-begin, .HyperMD-codeblock-end ) {
+body.fancy-code .HyperMD-codeblock.HyperMD-codeblock-bg.cm-line:not( .HyperMD-codeblock-begin, .HyperMD-codeblock-end ) {
 padding-left: 2.8em;
 }
 
@@ -3470,16 +3470,16 @@ padding: 0 1px;
 top: 0;
 }
 
-body.fancy-code .markdown-reading-view pre[class*='language-']::before {
+body.fancy-code .markdown-reading-view pre[class*="language-"]::before {
 display: block;
-content: ' ';
+content: " ";
 line-height: 1.5em;
 background-color: var(--code-block-alt-bg);
 border-top-right-radius: calc(var(--codeblock-roundness) * 0.8);
 border-top-left-radius: calc(var(--codeblock-roundness) * 0.8);
 }
 
-body.fancy-code pre[class*='language-']::after {
+body.fancy-code pre[class*="language-"]::after {
 content: attr(class);
 font-size: 0.9rem;
 text-shadow: none;
@@ -3516,7 +3516,7 @@ padding: var(--size-4-1) var(--size-4-5);
 }`,
     },
     "fancy-highlight": {
-      general: `body.fancy-highlight span.cm-highlight, body.fancy-highlight .markdown-preview-view mark, body.fancy-highlight span.search-result-file-matched-text {
+      general: `body.fancy-highlight span.cm-highlight, body.fancy-highlight .markdown-preview-view mark, body.fancy-highlight .markdown-rendered mark, body.fancy-highlight span.search-result-file-matched-text {
 background-image: linear-gradient(
     0deg,
     var(--highlight-background-color-underline) 0%,
@@ -3532,47 +3532,40 @@ background-color: var(--highlight-text-color--active) !important;
 .markdown-rendered progress,
   .markdown-source-view.is-live-preview progress,
   .markdown-preview-view progress {
-    &[value^='1']::-webkit-progress-value,
-    &[value^='2']::-webkit-progress-value,
-    &[value^='3']::-webkit-progress-value {
+    &[value^="1"]::-webkit-progress-value,
+    &[value^="2"]::-webkit-progress-value,
+    &[value^="3"]::-webkit-progress-value {
       background-color: var(--progress-color-1);
     }
-    &[value^='4']::-webkit-progress-value,
-    &[value^='5']::-webkit-progress-value {
+    &[value^="4"]::-webkit-progress-value,
+    &[value^="5"]::-webkit-progress-value {
       background-color: var(--progress-color-2);
     }
-    &[value^='6']::-webkit-progress-value,
-    &[value^='7']::-webkit-progress-value {
+    &[value^="6"]::-webkit-progress-value,
+    &[value^="7"]::-webkit-progress-value {
       background-color: var(--progress-color-3);
     }
-    &[value^='8']::-webkit-progress-value,
-    &[value^='9']::-webkit-progress-value {
+    &[value^="8"]::-webkit-progress-value,
+    &[value^="9"]::-webkit-progress-value {
       background-color: var(--progress-color-4);
     }
-    &[value='1']::-webkit-progress-value,
-    &[value='100']::-webkit-progress-value {
+    &[value="1"]::-webkit-progress-value,
+    &[value="100"]::-webkit-progress-value {
       background-color: var(--progress-color-5);
     }
 
-    &[value='0']::-webkit-progress-value,
-    &[value='2']::-webkit-progress-value,
-    &[value='3']::-webkit-progress-value,
-    &[value='4']::-webkit-progress-value,
-    &[value='5']::-webkit-progress-value,
-    &[value='6']::-webkit-progress-value,
-    &[value='7']::-webkit-progress-value,
-    &[value='8']::-webkit-progress-value,
-    &[value='9']::-webkit-progress-value {
+    &[value="0"]::-webkit-progress-value,
+    &[value="2"]::-webkit-progress-value,
+    &[value="3"]::-webkit-progress-value,
+    &[value="4"]::-webkit-progress-value,
+    &[value="5"]::-webkit-progress-value,
+    &[value="6"]::-webkit-progress-value,
+    &[value="7"]::-webkit-progress-value,
+    &[value="8"]::-webkit-progress-value,
+    &[value="9"]::-webkit-progress-value {
       background-color: var(--progress-color-1);
     }
   };
-}`,
-    },
-    "h2-underline": {
-      general: `body.h2-underline h2, body.h2-underline .HyperMD-header.HyperMD-header-2.cm-line {
-border-bottom: 2px solid var(--background-modifier-border);
-width: 100%;
-padding-bottom: 2px;
 }`,
     },
   },

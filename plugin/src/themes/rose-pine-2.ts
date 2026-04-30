@@ -3486,37 +3486,44 @@ html[saved-theme="light"] body ul.tags > li {
     },
     "rp-accent-full": {
       general: `.rp-accent-full {
---rp-accent: var(--rp-rose);
+--rp-accent: var(--rp-rose)
+;
 }`,
     },
     "rp-accent-love": {
       general: `.rp-accent-love {
---rp-accent: var(--rp-love);
+--rp-accent: var(--rp-love)
+;
 }`,
     },
     "rp-accent-rose": {
       general: `.rp-accent-rose {
---rp-accent: var(--rp-rose);
+--rp-accent: var(--rp-rose)
+;
 }`,
     },
     "rp-accent-gold": {
       general: `.rp-accent-gold {
---rp-accent: var(--rp-gold);
+--rp-accent: var(--rp-gold)
+;
 }`,
     },
     "rp-accent-iris": {
       general: `.rp-accent-iris {
---rp-accent: var(--rp-iris);
+--rp-accent: var(--rp-iris)
+;
 }`,
     },
     "rp-accent-pine": {
       general: `.rp-accent-pine {
---rp-accent: var(--rp-pine);
+--rp-accent: var(--rp-pine)
+;
 }`,
     },
     "rp-accent-foam": {
       general: `.rp-accent-foam {
---rp-accent: var(--rp-foam);
+--rp-accent: var(--rp-foam)
+;
 }`,
     },
   },

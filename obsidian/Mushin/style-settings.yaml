@@ -1,8 +1,8 @@
-name: Mushin Theme
-id: mushin-theme
-settings:
-  - title: Hide status bar
-    id: hide-status-bar
-    type: class-toggle
-    default: false
-    description: Completely hide the status bar
+- name: Mushin Theme
+  id: mushin-theme
+  settings:
+    - title: Hide status bar
+      id: hide-status-bar
+      type: class-toggle
+      default: false
+      description: Completely hide the status bar

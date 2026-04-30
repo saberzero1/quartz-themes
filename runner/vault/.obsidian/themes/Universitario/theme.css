@@ -1,4 +1,4 @@
-/* ---------------------------------------------------------------------------
+ /* ---------------------------------------------------------------------------
 
 '##::::'##:'##::: ##:'####:'##::::'##:'########:'########:::'######::'####:'########::::'###::::'########::'####::'#######::
  ##:::: ##: ###:: ##:. ##:: ##:::: ##: ##.....:: ##.... ##:'##... ##:. ##::... ##..::::'## ##::: ##.... ##:. ##::'##.... ##:
@@ -1617,7 +1617,7 @@ body {
     --vault-name-font-weight: var(--font-medium);
     --vault-name-color: var(--text-normal);
     --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
-    --accent-h: 187;
+    --accent-h: 220;
     --accent-s: 80%;
     --accent-l: 65%;
     --background-primary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 55%));
@@ -1627,7 +1627,7 @@ body {
     --background-tertiary: hsl(calc(var(--accent-h) - 20), calc(var(--accent-s) - 70%), calc(var(--accent-l) - 45%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-    --background-search: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 55%), calc(var(--accent-l) - 35%));
+    --background-search: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
     --background-modifier-border: var(--color-base-30);
     --background-modifier-border-hover: var(--color-base-35);
     --background-modifier-border-focus: var(--color-base-40);
@@ -1876,7 +1876,7 @@ body {
     --background-tertiary: hsl(calc(var(--accent-h) - 20), calc(var(--accent-s) - 30%), calc(var(--accent-l) + 10%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-    --background-search: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 15%));
+    --background-search: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 7%));
     --background-modifier-border: var(--color-base-30);
     --background-modifier-border-hover: var(--color-base-35);
     --background-modifier-border-focus: var(--color-base-40);
@@ -1887,9 +1887,9 @@ body {
     --background-modifier-success: var(--color-green);
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-form-field: var(--color-base-00);
-    --background-highlight: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 60%), calc(var(--accent-l) + 21%));
+    --background-highlight: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 10%), calc(var(--accent-l) + 10%));
     --text-normal: var(--color-base-100);
-    --text-important: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 10%), calc(var(--accent-l) - 40%));
+    --text-important: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 10%), calc(var(--accent-l) - 55%));
     --text-title: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 35%));
     --text-muted: black;
     --text-faint: hsl(calc(var(--accent-h) + 80), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 40%));
@@ -1972,6 +1972,14 @@ body .workspace-tab-header .workspace-tab-header-inner-title {
 
 .menu {
     background-color: var(--background-tertiary);
+}
+
+.menu-separator {
+    border-bottom: var(--border-width) solid hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 30%));
+}
+
+.theme-dark .menu-separator {
+    border-bottom: var(--border-width) solid hsl(var(--accent-h), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 0%));
 }
 
 .workspace-tabs .workspace-leaf {
@@ -2109,6 +2117,16 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 
 .is-phone .modal.mod-sidebar-layout .modal-content .vertical-tab-header {
     background-color: var(--background-primary) !important;
+}
+
+body:not(.is-phone) .vertical-tab-header-group-title {
+    font-size: 1em !important;
+    color: var(--text-muted);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    padding-left: 8px;
+    margin-bottom: 10px;
 }
 
 .is-mobile .setting-item-name {
@@ -2752,7 +2770,7 @@ body {
 
 .workspace-split.mod-left-split>.workspace-leaf-resize-handle,
 .workspace-split.mod-right-split>.workspace-leaf-resize-handle {
-    background: var(--background-table);
+    background: var(--background-tertiary);
     width: 2px;
 }
 

@@ -1,8 +1,71 @@
-name: Theme Info
-id: Info
-settings:
-  - id: Extras-info
-    description: '🎨 Appearance presets: [get presets here](https://github.com/Akifyss/obsidian-border/blob/main/presets.md), click on “Import” in the top right corner and restart obsidian. <br> <br> 📭 If you have problems, please submit [issues](https://github.com/Akifyss/obsidian-border/issues) or [discuss](https://github.com/Akifyss/obsidian-border/discussions) on Github<br> <br> 🔼 View recent updates: [Github Commit History](https://github.com/Akifyss/obsidian-border/commits/main)'
-    description.zh: 🎨 外观预设：[在此获取预设](https://github.com/Akifyss/obsidian-border/blob/main/presets.md)，点击右上角“Import”导入预设，重启obsidian来生效. <br> <br> 📭 如果遇到问题，可以在Github上 [提交issues](https://github.com/Akifyss/obsidian-border/issues) 或[讨论](https://github.com/Akifyss/obsidian-border/discussions)<br> <br> 🔼 查看最近更新：[Github Commit History](https://github.com/Akifyss/obsidian-border/commits/main)
-    type: info-text
-    markdown: true
+- name: Theme Info
+  id: Info
+  settings:
+    - id: Extras-info
+      description: '🎨 Appearance presets: [get presets here](https://github.com/Akifyss/obsidian-border/blob/main/presets.md), click on “Import” in the top right corner and restart obsidian. <br> <br> 📭 If you have problems, please submit [issues](https://github.com/Akifyss/obsidian-border/issues) or [discuss](https://github.com/Akifyss/obsidian-border/discussions) on Github<br> <br> 🔼 View recent updates: [Github Commit History](https://github.com/Akifyss/obsidian-border/commits/main)'
+      description.zh: 🎨 外观预设：[在此获取预设](https://github.com/Akifyss/obsidian-border/blob/main/presets.md)，点击右上角“Import”导入预设，重启obsidian来生效. <br> <br> 📭 如果遇到问题，可以在Github上 [提交issues](https://github.com/Akifyss/obsidian-border/issues) 或[讨论](https://github.com/Akifyss/obsidian-border/discussions)<br> <br> 🔼 查看最近更新：[Github Commit History](https://github.com/Akifyss/obsidian-border/commits/main)
+      type: info-text
+      markdown: true
+- name: Mobile
+  id: Mobile
+  settings:
+    - id: card-layout-pad-open
+      title: Enable card layout (pad only)
+      title.zh: 开启卡片式布局（平板端）
+      type: class-toggle
+    - id: drawer-phone-full-width
+      title: Side drawer full screen (phone only)
+      title.zh: 侧边抽屉全屏（手机端）
+      type: class-toggle
+- name: Plugin
+  id: Plugin
+  settings:
+    - id: DB Folder
+      title: DB Folder
+      type: heading
+      collapsed: true
+      level: 3
+    - id: DB-table-full-width-off
+      title: Disable full width table
+      title.zh: 关闭 全宽表格
+      type: class-toggle
+    - id: DB-table-bg-color
+      title: background color
+      title.zh: 背景颜色
+      type: class-select
+      allowEmpty: false
+      default: DB-table-bg-color-default
+      options:
+        - label: Default
+          value: DB-table-bg-color-default
+        - label: Adapt to lower background
+          value: DB-table-bg-color-adapt
+        - label: Unify background color
+          value: DB-table-bg-color-unify
+    - id: Projects
+      title: Projects
+      type: heading
+      collapsed: true
+      level: 3
+    - id: Projects-bg-color
+      title: background color
+      title.zh: 背景颜色
+      type: class-select
+      allowEmpty: false
+      default: Projects-bg-color-default
+      options:
+        - label: Default
+          value: Projects-bg-color-default
+        - label: Adapt to lower background
+          value: Projects-bg-color-adapt
+        - label: Unify background color
+          value: Projects-bg-color-unify
+    - id: Checklist
+      title: Checklist
+      type: heading
+      collapsed: true
+      level: 3
+    - id: colorful-checkbox
+      title: colorful checkbox
+      title.zh: 多彩选框
+      type: class-toggle

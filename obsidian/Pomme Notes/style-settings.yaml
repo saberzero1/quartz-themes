@@ -1,7 +1,7 @@
-name: Pomme Notes Settings
-id: pomme-notes-settings
-settings:
-  - id: tinted
-    title: Use accent-tinted interface
-    type: class-toggle
-    default: false
+- name: Pomme Notes Settings
+  id: pomme-notes-settings
+  settings:
+    - id: tinted
+      title: Use accent-tinted interface
+      type: class-toggle
+      default: false

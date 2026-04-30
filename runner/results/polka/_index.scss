@@ -88,6 +88,17 @@
   --code-indentation-guide-color: rgba(var(--code-peripheral), 0.33) !important;
   --code-peripheral: 159, 157, 190 !important;
 
+  --ss-light-h: 0;
+  --ss-light-s: 3.92%;
+  --ss-light-l: 9.86%;
+  --ss-light-contrast: 0%;
+  --ss-light-text-main: #000000;
+  --ss-dark-h: 221;
+  --ss-dark-s: 3.33%;
+  --ss-dark-l: 2.58%;
+  --ss-dark-contrast: 0.73%;
+  --ss-dark-text-main: #faf7f5;
+  --ss-border-radius: 0.1px;
   --font-interface-override: var(--font-default, "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
   --font-text-override: "??";
   --font-monospace-override: "??";
@@ -176,6 +187,17 @@
   --code-indentation-guide-color: rgba(var(--code-peripheral), 0.23) !important;
   --code-peripheral: 175, 191, 255 !important;
 
+  --ss-light-h: 0;
+  --ss-light-s: 3.92%;
+  --ss-light-l: 9.86%;
+  --ss-light-contrast: 0%;
+  --ss-light-text-main: #000000;
+  --ss-dark-h: 221;
+  --ss-dark-s: 3.33%;
+  --ss-dark-l: 2.58%;
+  --ss-dark-contrast: 0.73%;
+  --ss-dark-text-main: #faf7f5;
+  --ss-border-radius: 0.1px;
   --font-interface-override: var(--font-default, "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
   --font-text-override: "??";
   --font-monospace-override: "??";

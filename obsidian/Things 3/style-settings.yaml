@@ -1,23 +1,23 @@
-name: Things 3 Settings
-id: things-3-settings
-settings:
-  - id: mobile-full-black
-    title: Use fully black background on Phones
-    type: class-toggle
-    default: true
-  - id: tablet-full-black
-    title: Use fully black background on Tablets
-    type: class-toggle
-    default: true
-  - id: dataview-no-wrap
-    title: Dataview rows in no-wrap format
-    type: class-toggle
-    default: true
-  - id: dataview-style
-    title: Enable Tables & Dataview styling
-    type: class-toggle
-    default: true
-  - id: button-close-left
-    title: Tab close button on the left
-    type: class-toggle
-    default: true
+- name: Things 3 Settings
+  id: things-3-settings
+  settings:
+    - id: mobile-full-black
+      title: Use fully black background on Phones
+      type: class-toggle
+      default: true
+    - id: tablet-full-black
+      title: Use fully black background on Tablets
+      type: class-toggle
+      default: true
+    - id: dataview-no-wrap
+      title: Dataview rows in no-wrap format
+      type: class-toggle
+      default: true
+    - id: dataview-style
+      title: Enable Tables & Dataview styling
+      type: class-toggle
+      default: true
+    - id: button-close-left
+      title: Tab close button on the left
+      type: class-toggle
+      default: true

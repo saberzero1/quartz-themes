@@ -1,173 +1,433 @@
-name: Typography & Typeface
-id: brutalist-typography
-settings:
-  - id: font-text-override
-    title: Body Font
-    description: Main font for reading notes.
-    type: variable-select
-    default: '''Lora'', serif'
-    options:
-      - label: iA Writer Quattro S (Sans)
-        value: '''iA Writer Quattro S'', sans-serif'
-      - label: Montserrat (Sans)
-        value: '''Montserrat'', sans-serif'
-      - label: Sen (Sans)
-        value: '''Sen'', sans-serif'
-      - label: iA Writer Duo S (Sans)
-        value: '''iA Writer Duo S'', sans-serif'
-      - label: IBM Plex Serif (Serif)
-        value: '''IBM Plex Serif'', serif'
-      - label: Ibarra Real Nova (Serif)
-        value: '''Ibarra Real Nova'', serif'
-      - label: Lora (Serif)
-        value: '''Lora'', serif'
-      - label: iA Writer Mono S (Mono Sans)
-        value: '''iA Writer Mono S'', monospace'
-      - label: Space Mono (Mono Sans)
-        value: '''Space Mono'', monospace'
-  - id: font-interface-override
-    title: Interface Font
-    description: Font for sidebar, tabs, and headers.
-    type: variable-select
-    default: '''Marcellus'', serif'
-    options:
-      - label: Sen (Sans)
-        value: '''Sen'', sans-serif'
-      - label: Montserrat (Sans)
-        value: '''Montserrat'', sans-serif'
-      - label: iA Writer Quattro S (Sans)
-        value: '''iA Writer Quattro S'', sans-serif'
-      - label: iA Writer Duo S (Sans)
-        value: '''iA Writer Duo S'', sans-serif'
-      - label: IBM Plex Serif (Serif)
-        value: '''IBM Plex Serif'', serif'
-      - label: Ibarra Real Nova (Serif)
-        value: '''Ibarra Real Nova'', serif'
-      - label: Lora (Serif)
-        value: '''Lora'', serif'
-      - label: Marcellus (Default Serif)
-        value: '''Marcellus'', serif'
-      - label: iA Writer Mono S (Mono Sans)
-        value: '''iA Writer Mono S'', monospace'
-      - label: Space Mono (Mono Sans)
-        value: '''Space Mono'', monospace'
-  - id: font-monospace-override
-    title: Monospace Font
-    description: Font for code blocks and inline code.
-    type: variable-select
-    default: '''iA Writer Mono S'', monospace'
-    options:
-      - label: iA Writer Mono S (Default)
-        value: '''iA Writer Mono S'', monospace'
-      - label: Space Mono (Mono Sans)
-        value: '''Space Mono'', monospace'
-  - id: section-typography-light
-    title: Light Mode Font Colours
-    type: heading
-    level: 2
-  - id: ui-font-color-light
-    title: UI Font Colour (Light Mode)
-    type: variable-select
-    default: '#222222'
-    options:
-      - label: '#505050 (Soft Grey)'
-        value: '#505050'
-      - label: '#404040 (Charcoal)'
-        value: '#404040'
-      - label: '#303030 (Deep Charcoal)'
-        value: '#303030'
-      - label: '#222222 (Default)'
-        value: '#222222'
-      - label: '#202020 (Near Black)'
-        value: '#202020'
-      - label: '#101010 (Pitch Black)'
-        value: '#101010'
-      - label: '#000000 (Pure Black)'
-        value: '#000000'
-  - id: body-font-color-light
-    title: Body Font Color (Light Mode)
-    type: variable-select
-    default: '#000000'
-    options:
-      - label: '#505050 (Soft Grey)'
-        value: '#505050'
-      - label: '#404040 (Charcoal)'
-        value: '#404040'
-      - label: '#303030 (Deep Charcoal)'
-        value: '#303030'
-      - label: '#202020 (Near Black)'
-        value: '#202020'
-      - label: '#101010 (Pitch Black)'
-        value: '#101010'
-      - label: '#000000 (Pure Black - Default)'
-        value: '#000000'
-  - id: link-color-light-custom
-    title: Internal Link Colour (Light Mode)
-    type: variable-color
-    format: hex
-    default: '#000000'
-  - id: link-ext-color-light-custom
-    title: External Link Colour (Light Mode)
-    type: variable-color
-    format: hex
-    default: '#000000'
-  - id: footnote-color-light-custom
-    title: Footnote Link Colour (Light Mode)
-    type: variable-color
-    format: hex
-    default: '#ff7700'
-  - id: section-typography-dark
-    title: Dark Mode Font Colours
-    type: heading
-    level: 2
-  - id: ui-font-color-dark
-    title: UI Font Colour (Dark Mode)
-    type: variable-select
-    default: '#b3b3b3'
-    options:
-      - label: '#a0a0a0 (Dark Grey)'
-        value: '#a0a0a0'
-      - label: '#a9a9a9 (Silver Grey)'
-        value: '#a9a9a9'
-      - label: '#b3b3b3 (Light Grey - Default)'
-        value: '#b3b3b3'
-      - label: '#ffffff (Pure White)'
-        value: '#ffffff'
-      - label: '#c8bc9f (Everforest)'
-        value: '#c8bc9f'
-      - label: '#bcb094 (Deep Everforest)'
-        value: '#bcb094'
-      - label: '#b0a589 (Dark Everforest)'
-        value: '#b0a589'
-  - id: body-font-color-dark
-    title: Body Font Color (Dark Mode)
-    type: variable-select
-    default: '#a0a0a0'
-    options:
-      - label: '#a0a0a0 (Dark Grey - Default)'
-        value: '#a0a0a0'
-      - label: '#b3b3b3 (Light Grey)'
-        value: '#b3b3b3'
-      - label: '#ffffff (Pure White)'
-        value: '#ffffff'
-      - label: '#c8bc9f (Everforest)'
-        value: '#c8bc9f'
-      - label: '#bcb094 (Deep Everforest)'
-        value: '#bcb094'
-      - label: '#b0a589 (Dark Everforest)'
-        value: '#b0a589'
-  - id: link-color-dark-custom
-    title: Internal Link Colour (Dark Mode)
-    type: variable-color
-    format: hex
-    default: '#a0a0a0'
-  - id: link-ext-color-dark-custom
-    title: External Link Colour (Dark Mode)
-    type: variable-color
-    format: hex
-    default: '#a0a0a0'
-  - id: footnote-color-dark-custom
-    title: Footnote Link Colour (Dark Mode)
-    type: variable-color
-    format: hex
-    default: '#448494'
+- name: Typography & Typeface
+  id: brutalist-typography
+  settings:
+    - id: font-text-override
+      title: Body Font
+      description: Main font for reading notes.
+      type: variable-select
+      default: '''Lora'', serif'
+      options:
+        - label: iA Writer Quattro S (Sans)
+          value: '''iA Writer Quattro S'', sans-serif'
+        - label: Montserrat (Sans)
+          value: '''Montserrat'', sans-serif'
+        - label: Sen (Sans)
+          value: '''Sen'', sans-serif'
+        - label: iA Writer Duo S (Sans)
+          value: '''iA Writer Duo S'', sans-serif'
+        - label: IBM Plex Serif (Serif)
+          value: '''IBM Plex Serif'', serif'
+        - label: Ibarra Real Nova (Serif)
+          value: '''Ibarra Real Nova'', serif'
+        - label: Lora (Serif)
+          value: '''Lora'', serif'
+        - label: iA Writer Mono S (Mono Sans)
+          value: '''iA Writer Mono S'', monospace'
+        - label: Space Mono (Mono Sans)
+          value: '''Space Mono'', monospace'
+    - id: font-interface-override
+      title: Interface Font
+      description: Font for sidebar, tabs, and headers.
+      type: variable-select
+      default: '''Marcellus'', serif'
+      options:
+        - label: Sen (Sans)
+          value: '''Sen'', sans-serif'
+        - label: Montserrat (Sans)
+          value: '''Montserrat'', sans-serif'
+        - label: iA Writer Quattro S (Sans)
+          value: '''iA Writer Quattro S'', sans-serif'
+        - label: iA Writer Duo S (Sans)
+          value: '''iA Writer Duo S'', sans-serif'
+        - label: IBM Plex Serif (Serif)
+          value: '''IBM Plex Serif'', serif'
+        - label: Ibarra Real Nova (Serif)
+          value: '''Ibarra Real Nova'', serif'
+        - label: Lora (Serif)
+          value: '''Lora'', serif'
+        - label: Marcellus (Default Serif)
+          value: '''Marcellus'', serif'
+        - label: iA Writer Mono S (Mono Sans)
+          value: '''iA Writer Mono S'', monospace'
+        - label: Space Mono (Mono Sans)
+          value: '''Space Mono'', monospace'
+    - id: font-monospace-override
+      title: Monospace Font
+      description: Font for code blocks and inline code.
+      type: variable-select
+      default: '''iA Writer Mono S'', monospace'
+      options:
+        - label: iA Writer Mono S (Default)
+          value: '''iA Writer Mono S'', monospace'
+        - label: Space Mono (Mono Sans)
+          value: '''Space Mono'', monospace'
+    - id: section-typography-light
+      title: Light Mode Font Colours
+      type: heading
+      level: 2
+    - id: ui-font-color-light
+      title: UI Font Colour (Light Mode)
+      type: variable-select
+      default: '#222222'
+      options:
+        - label: '#505050 (Soft Grey)'
+          value: '#505050'
+        - label: '#404040 (Charcoal)'
+          value: '#404040'
+        - label: '#303030 (Deep Charcoal)'
+          value: '#303030'
+        - label: '#222222 (Default)'
+          value: '#222222'
+        - label: '#202020 (Near Black)'
+          value: '#202020'
+        - label: '#101010 (Pitch Black)'
+          value: '#101010'
+        - label: '#000000 (Pure Black)'
+          value: '#000000'
+    - id: body-font-color-light
+      title: Body Font Color (Light Mode)
+      type: variable-select
+      default: '#000000'
+      options:
+        - label: '#505050 (Soft Grey)'
+          value: '#505050'
+        - label: '#404040 (Charcoal)'
+          value: '#404040'
+        - label: '#303030 (Deep Charcoal)'
+          value: '#303030'
+        - label: '#202020 (Near Black)'
+          value: '#202020'
+        - label: '#101010 (Pitch Black)'
+          value: '#101010'
+        - label: '#000000 (Pure Black - Default)'
+          value: '#000000'
+    - id: link-color-light-custom
+      title: Internal Link Colour (Light Mode)
+      type: variable-color
+      format: hex
+      default: '#000000'
+    - id: link-ext-color-light-custom
+      title: External Link Colour (Light Mode)
+      type: variable-color
+      format: hex
+      default: '#000000'
+    - id: footnote-color-light-custom
+      title: Footnote Link Colour (Light Mode)
+      type: variable-color
+      format: hex
+      default: '#ff7700'
+    - id: section-typography-dark
+      title: Dark Mode Font Colours
+      type: heading
+      level: 2
+    - id: ui-font-color-dark
+      title: UI Font Colour (Dark Mode)
+      type: variable-select
+      default: '#b3b3b3'
+      options:
+        - label: '#a0a0a0 (Dark Grey)'
+          value: '#a0a0a0'
+        - label: '#a9a9a9 (Silver Grey)'
+          value: '#a9a9a9'
+        - label: '#b3b3b3 (Light Grey - Default)'
+          value: '#b3b3b3'
+        - label: '#ffffff (Pure White)'
+          value: '#ffffff'
+        - label: '#c8bc9f (Everforest)'
+          value: '#c8bc9f'
+        - label: '#bcb094 (Deep Everforest)'
+          value: '#bcb094'
+        - label: '#b0a589 (Dark Everforest)'
+          value: '#b0a589'
+    - id: body-font-color-dark
+      title: Body Font Color (Dark Mode)
+      type: variable-select
+      default: '#a0a0a0'
+      options:
+        - label: '#a0a0a0 (Dark Grey - Default)'
+          value: '#a0a0a0'
+        - label: '#b3b3b3 (Light Grey)'
+          value: '#b3b3b3'
+        - label: '#ffffff (Pure White)'
+          value: '#ffffff'
+        - label: '#c8bc9f (Everforest)'
+          value: '#c8bc9f'
+        - label: '#bcb094 (Deep Everforest)'
+          value: '#bcb094'
+        - label: '#b0a589 (Dark Everforest)'
+          value: '#b0a589'
+    - id: link-color-dark-custom
+      title: Internal Link Colour (Dark Mode)
+      type: variable-color
+      format: hex
+      default: '#a0a0a0'
+    - id: link-ext-color-dark-custom
+      title: External Link Colour (Dark Mode)
+      type: variable-color
+      format: hex
+      default: '#a0a0a0'
+    - id: footnote-color-dark-custom
+      title: Footnote Link Colour (Dark Mode)
+      type: variable-color
+      format: hex
+      default: '#448494'
+- name: Page Layout & Geometry
+  id: brutalist-layout
+  settings:
+    - id: enable-book-style
+      title: Book Style Paragraphs
+      description: Removes paragraph spacing and adds indentation. (Disable for block style).
+      type: class-toggle
+      default: false
+    - id: editor-width
+      title: Note Width
+      description: Maximum width of the text block.
+      type: variable-select
+      default: 600px
+      options:
+        - label: Narrow (500px)
+          value: 500px
+        - label: Standard (600px)
+          value: 600px
+        - label: Medium (700px)
+          value: 700px
+        - label: Large (800px)
+          value: 800px
+        - label: Extra Large (900px)
+          value: 900px
+        - label: Wide (1000px)
+          value: 1000px
+        - label: Extra Wide (1200px)
+          value: 1200px
+        - label: Full Width (100%)
+          value: 100%
+    - id: text-align-mode
+      title: Text Alignment
+      description: Reading alignment preference.
+      type: variable-select
+      default: left
+      options:
+        - label: Left Aligned
+          value: left
+        - label: Justified
+          value: justify
+        - label: Center Aligned
+          value: center
+        - label: Right Aligned
+          value: right
+    - id: inline-title-align
+      title: Note Title Alignment
+      description: Alignment of the inline title.
+      type: variable-select
+      default: center
+      options:
+        - label: Left
+          value: left
+        - label: Center
+          value: center
+        - label: Right
+          value: right
+    - id: inline-title-size
+      title: Inline Title Size
+      description: Adjust the size of the inline title.
+      type: variable-number-slider
+      default: 3
+      min: 1
+      max: 5
+      step: 0.1
+      format: em
+    - id: hide-ribbon
+      title: Auto-hide Side Ribbon
+      description: Hides the left ribbon and only shows it on hover.
+      type: class-toggle
+      default: true
+    - id: line-height-custom
+      title: Line Height
+      description: Vertical breathing room between lines.
+      type: variable-number-slider
+      default: 1.7
+      min: 1
+      max: 3
+      step: 0.1
+    - id: toggle-expand-longtext
+      title: Auto-expand Long Text Properties
+      description: Forces the Long Text property fields to expand fully without needing to click them.
+      type: class-toggle
+      default: false
+- name: Dashboard Layout Settings
+  id: brutalist-dashboard
+  settings:
+    - id: dashboard-col-width
+      title: Minimum Card Width
+      description: The grid will fit as many columns as possible based on this width.
+      type: variable-number-slider
+      default: 300
+      min: 200
+      max: 500
+      step: 10
+      format: px
+    - id: dashboard-gap
+      title: Card Spacing (Gap)
+      description: Exact space between cards horizontally and vertically.
+      type: variable-number-slider
+      default: 4
+      min: 0
+      max: 60
+      step: 4
+      format: px
+    - id: section-banner-settings
+      title: Banner & Transparency
+      type: heading
+      level: 2
+    - id: dashboard-banner-opacity
+      title: Banner Image Opacity
+      description: Controls how faded the banner image is (0.0 = Invisible, 1.0 = Solid).
+      type: variable-number-slider
+      default: 1
+      min: 0
+      max: 1
+      step: 0.05
+    - id: dashboard-banner-height
+      title: Banner Height
+      description: How tall the banner image is.
+      type: variable-number-slider
+      default: 600
+      min: 100
+      max: 600
+      step: 10
+      format: px
+    - id: dashboard-banner-offset
+      title: Banner Content Offset
+      description: Controls how far down the cards start. Lower value = Higher up (More overlap with banner).
+      type: variable-number-slider
+      default: 150
+      min: 0
+      max: 400
+      step: 10
+      format: px
+    - id: dashboard-card-transparency
+      title: Card Transparency
+      description: Adjusts how see-through the cards are. Higher % = More transparent.
+      type: variable-number-slider
+      default: 20
+      min: 0
+      max: 100
+      step: 5
+      format: '%'
+- name: Mobile Settings
+  id: brutalist-mobile
+  settings:
+    - id: mobile-drawer-light-header
+      title: Light Mode (Drawer)
+      type: heading
+      level: 2
+    - id: mobile-drawer-color-light
+      title: Drawer Color
+      type: variable-color
+      format: hex
+      default: '#B0B0B0'
+    - id: mobile-navbar-light-header
+      title: Light Mode (Navigation Bar)
+      type: heading
+      level: 2
+    - id: mobile-navbar-border-width-light
+      title: Nav Bar Border Thickness
+      type: variable-number-slider
+      default: 0
+      min: 0
+      max: 10
+      step: 1
+      format: px
+    - id: mobile-navbar-opacity-light
+      title: Nav Bar Opacity
+      type: variable-number-slider
+      default: 0.7
+      min: 0
+      max: 1
+      step: 0.1
+    - id: mobile-navbar-border-style-light
+      title: Nav Bar Border Style
+      type: variable-select
+      default: solid
+      options:
+        - label: Solid
+          value: solid
+        - label: None (Transparent)
+          value: none
+        - label: Dashed
+          value: dashed
+        - label: Dotted
+          value: dotted
+    - id: mobile-navbar-border-color-light
+      title: Nav Bar Border Color
+      type: variable-color
+      format: hex
+      default: '#B0B0B0'
+    - id: mobile-navbar-color-light
+      title: Nav Bar Color
+      type: variable-color
+      format: hex
+      default: '#B0B0B0'
+    - id: mobile-drawer-dark-header
+      title: Dark Mode (Drawer)
+      type: heading
+      level: 2
+    - id: mobile-drawer-color-dark
+      title: Drawer Color
+      type: variable-color
+      format: hex
+      default: '#3c3c3c'
+    - id: mobile-navbar-dark-header
+      title: Dark Mode (Navigation Bar)
+      type: heading
+      level: 2
+    - id: mobile-navbar-border-width-dark
+      title: Nav Bar Border Thickness
+      type: variable-number-slider
+      default: 0
+      min: 0
+      max: 10
+      step: 1
+      format: px
+    - id: mobile-navbar-opacity-dark
+      title: Nav Bar Opacity
+      type: variable-number-slider
+      default: 0.7
+      min: 0
+      max: 1
+      step: 0.1
+    - id: mobile-navbar-border-style-dark
+      title: Nav Bar Border Style
+      type: variable-select
+      default: solid
+      options:
+        - label: Solid
+          value: solid
+        - label: None (Transparent)
+          value: none
+        - label: Dashed
+          value: dashed
+        - label: Dotted
+          value: dotted
+    - id: mobile-navbar-border-color-dark
+      title: Nav Bar Border Color
+      type: variable-color
+      format: hex
+      default: '#323232'
+    - id: mobile-navbar-color-dark
+      title: Nav Bar Color
+      type: variable-color
+      format: hex
+      default: '#323232'
+    - id: mobile-navbar-radius-header
+      title: Navigation Bar Universal Radius
+      type: heading
+      level: 2
+    - id: mobile-navbar-radius
+      title: Nav Bar Radius
+      type: variable-number-slider
+      default: 20
+      min: 0
+      max: 30
+      step: 1
+      format: px

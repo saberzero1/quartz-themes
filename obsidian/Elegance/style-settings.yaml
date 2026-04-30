@@ -1,162 +1,162 @@
-name: 🎨 Elegance Theme
-id: elegance-theme
-settings:
-  - id: elegance-typography-heading
-    title: 📝 Tipografía
-    type: heading
-    level: 1
-    collapsed: false
-  - id: font-size-normal
-    title: Tamaño de fuente base
-    description: Tamaño del texto principal (el zoom con Ctrl+Scroll funciona de forma nativa)
-    type: variable-number-slider
-    default: 16
-    min: 12
-    max: 24
-    step: 0.5
-    format: px
-  - id: font-size-code
-    title: Tamaño de código
-    type: variable-number-slider
-    default: 15
-    min: 10
-    max: 20
-    step: 0.5
-    format: px
-  - id: line-height-normal
-    title: Altura de línea
-    description: Espaciado entre líneas (1.5 = 150%)
-    type: variable-number-slider
-    default: 1.5
-    min: 1.2
-    max: 2.5
-    step: 0.1
-  - id: elegance-headers-heading
-    title: 📌 Encabezados
-    type: heading
-    level: 2
-    collapsed: true
-  - id: font-size-h1
-    title: H1
-    type: variable-number-slider
-    default: 23
-    min: 18
-    max: 36
-    step: 0.5
-    format: px
-  - id: font-size-h2
-    title: H2
-    type: variable-number-slider
-    default: 22
-    min: 17
-    max: 32
-    step: 0.5
-    format: px
-  - id: font-size-h3
-    title: H3
-    type: variable-number-slider
-    default: 21
-    min: 16
-    max: 28
-    step: 0.5
-    format: px
-  - id: font-size-h4
-    title: H4
-    type: variable-number-slider
-    default: 20
-    min: 15
-    max: 26
-    step: 0.5
-    format: px
-  - id: font-size-h5
-    title: H5
-    type: variable-number-slider
-    default: 19
-    min: 14
-    max: 24
-    step: 0.5
-    format: px
-  - id: font-size-h6
-    title: H6
-    type: variable-number-slider
-    default: 18
-    min: 13
-    max: 22
-    step: 0.5
-    format: px
-  - id: elegance-embeds-heading
-    title: 📎 Notas Empotradas
-    type: heading
-    level: 1
-    collapsed: false
-    description: Controla la apariencia y comportamiento de las notas empotradas
-  - id: embed-max-height
-    title: Altura máxima
-    description: Altura máxima en píxeles (0 = sin límite)
-    type: variable-number-slider
-    default: 500
-    min: 0
-    max: 1500
-    step: 50
-    format: px
-  - id: embed-border-radius
-    title: Radio de bordes
-    type: variable-number-slider
-    default: 10
-    min: 0
-    max: 20
-    step: 1
-    format: px
-  - id: embed-padding
-    title: Padding interno
-    type: variable-number-slider
-    default: 16
-    min: 0
-    max: 40
-    step: 2
-    format: px
-  - id: embed-show-shadow
-    title: Mostrar sombra al hacer hover
-    type: class-toggle
-    default: true
-  - id: embed-smooth-scroll
-    title: Scroll suave
-    type: class-toggle
-    default: true
-  - id: elegance-ui-heading
-    title: ⚙️ Interfaz
-    type: heading
-    level: 1
-    collapsed: true
-  - id: font-size-side-dock
-    title: Tamaño fuente paneles
-    type: variable-number-slider
-    default: 15
-    min: 12
-    max: 20
-    step: 0.5
-    format: px
-  - id: font-size-side-dock-title
-    title: Tamaño títulos paneles
-    type: variable-number-slider
-    default: 16
-    min: 13
-    max: 22
-    step: 0.5
-    format: px
-  - id: font-size-status-bar
-    title: Tamaño barra de estado
-    type: variable-number-slider
-    default: 13.75
-    min: 10
-    max: 18
-    step: 0.25
-    format: px
-  - id: scrollbar-width
-    title: Ancho de scrollbar
-    type: variable-number-slider
-    default: 8
-    min: 4
-    max: 16
-    step: 1
-    format: px
+- name: 🎨 Elegance Theme
+  id: elegance-theme
+  settings:
+    - id: elegance-typography-heading
+      title: 📝 Tipografía
+      type: heading
+      level: 1
+      collapsed: false
+    - id: font-size-normal
+      title: Tamaño de fuente base
+      description: Tamaño del texto principal (el zoom con Ctrl+Scroll funciona de forma nativa)
+      type: variable-number-slider
+      default: 16
+      min: 12
+      max: 24
+      step: 0.5
+      format: px
+    - id: font-size-code
+      title: Tamaño de código
+      type: variable-number-slider
+      default: 15
+      min: 10
+      max: 20
+      step: 0.5
+      format: px
+    - id: line-height-normal
+      title: Altura de línea
+      description: Espaciado entre líneas (1.5 = 150%)
+      type: variable-number-slider
+      default: 1.5
+      min: 1.2
+      max: 2.5
+      step: 0.1
+    - id: elegance-headers-heading
+      title: 📌 Encabezados
+      type: heading
+      level: 2
+      collapsed: true
+    - id: font-size-h1
+      title: H1
+      type: variable-number-slider
+      default: 23
+      min: 18
+      max: 36
+      step: 0.5
+      format: px
+    - id: font-size-h2
+      title: H2
+      type: variable-number-slider
+      default: 22
+      min: 17
+      max: 32
+      step: 0.5
+      format: px
+    - id: font-size-h3
+      title: H3
+      type: variable-number-slider
+      default: 21
+      min: 16
+      max: 28
+      step: 0.5
+      format: px
+    - id: font-size-h4
+      title: H4
+      type: variable-number-slider
+      default: 20
+      min: 15
+      max: 26
+      step: 0.5
+      format: px
+    - id: font-size-h5
+      title: H5
+      type: variable-number-slider
+      default: 19
+      min: 14
+      max: 24
+      step: 0.5
+      format: px
+    - id: font-size-h6
+      title: H6
+      type: variable-number-slider
+      default: 18
+      min: 13
+      max: 22
+      step: 0.5
+      format: px
+    - id: elegance-embeds-heading
+      title: 📎 Notas Empotradas
+      type: heading
+      level: 1
+      collapsed: false
+      description: Controla la apariencia y comportamiento de las notas empotradas
+    - id: embed-max-height
+      title: Altura máxima
+      description: Altura máxima en píxeles (0 = sin límite)
+      type: variable-number-slider
+      default: 500
+      min: 0
+      max: 1500
+      step: 50
+      format: px
+    - id: embed-border-radius
+      title: Radio de bordes
+      type: variable-number-slider
+      default: 10
+      min: 0
+      max: 20
+      step: 1
+      format: px
+    - id: embed-padding
+      title: Padding interno
+      type: variable-number-slider
+      default: 16
+      min: 0
+      max: 40
+      step: 2
+      format: px
+    - id: embed-show-shadow
+      title: Mostrar sombra al hacer hover
+      type: class-toggle
+      default: true
+    - id: embed-smooth-scroll
+      title: Scroll suave
+      type: class-toggle
+      default: true
+    - id: elegance-ui-heading
+      title: ⚙️ Interfaz
+      type: heading
+      level: 1
+      collapsed: true
+    - id: font-size-side-dock
+      title: Tamaño fuente paneles
+      type: variable-number-slider
+      default: 15
+      min: 12
+      max: 20
+      step: 0.5
+      format: px
+    - id: font-size-side-dock-title
+      title: Tamaño títulos paneles
+      type: variable-number-slider
+      default: 16
+      min: 13
+      max: 22
+      step: 0.5
+      format: px
+    - id: font-size-status-bar
+      title: Tamaño barra de estado
+      type: variable-number-slider
+      default: 13.75
+      min: 10
+      max: 18
+      step: 0.25
+      format: px
+    - id: scrollbar-width
+      title: Ancho de scrollbar
+      type: variable-number-slider
+      default: 8
+      min: 4
+      max: 16
+      step: 1
+      format: px
