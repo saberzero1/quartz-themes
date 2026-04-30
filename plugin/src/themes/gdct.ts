@@ -265,6 +265,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, rgb(254, 254, 254));
   background-color: var(--tab-container-background, rgb(254, 254, 254));
   color: rgb(39, 56, 75);
 }
@@ -284,6 +285,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, rgb(254, 254, 254));
   background-color: var(--tab-container-background, rgb(254, 254, 254));
   border-left-color: rgb(130, 130, 130);
   color: rgb(39, 56, 75);
@@ -398,6 +400,7 @@ html body html {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: rgb(254, 254, 254);
   --flair-color: #27384B;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-medium: 500;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -757,6 +760,7 @@ html body h2 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: rgb(254, 254, 254);
   --flair-color: #27384B;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-medium: 500;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -1068,6 +1072,7 @@ html body h3 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: rgb(254, 254, 254);
   --flair-color: #27384B;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-medium: 500;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -1379,6 +1384,7 @@ html body h4 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: rgb(254, 254, 254);
   --flair-color: #27384B;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-medium: 500;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -1690,6 +1696,7 @@ html body h5 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: rgb(254, 254, 254);
   --flair-color: #27384B;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-medium: 500;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2001,6 +2008,7 @@ html body h6 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: rgb(254, 254, 254);
   --flair-color: #27384B;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-medium: 500;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2375,6 +2383,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, rgba(0, 0, 0, 0.04));
   border-bottom-color: rgb(39, 56, 75);
   border-left-color: rgb(39, 56, 75);
   border-right-color: rgb(39, 56, 75);
@@ -3273,6 +3282,10 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #C15E50);
+  --pill-color-hover: var(--tag-color-hover, #C15E50);
+  --pill-color-remove: var(--tag-color, #C15E50);
+  --pill-color-remove-hover: var(--tag-color-hover, #C15E50);
   border-bottom-left-radius: 42px;
   border-bottom-right-radius: 42px;
   border-top-left-radius: 42px;
@@ -3488,6 +3501,10 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, #C15E50);
+  --pill-color-hover: var(--tag-color-hover, #C15E50);
+  --pill-color-remove: var(--tag-color, #C15E50);
+  --pill-color-remove-hover: var(--tag-color-hover, #C15E50);
   border-radius: 42px;
   color: var(--pill-color, rgb(193, 94, 80));
 }

@@ -8,6 +8,7 @@
 import type {
   AspectCSS,
   AspectKey,
+  ClassSettingCSS,
   FontFileEntry,
   ThemeData,
   ThemeOptions,
@@ -72,7 +73,7 @@ export interface ComposedTheme {
   effectiveMode: "dark" | "light" | "both";
   /** The Style Settings YAML root id(s) from the base theme, if available. */
   styleSettingsId?: string | string[];
-  classSettings?: Record<string, string>;
+  classSettings?: Record<string, ClassSettingCSS>;
 }
 
 export function composeCSS(options: ThemeOptions): ComposedTheme {

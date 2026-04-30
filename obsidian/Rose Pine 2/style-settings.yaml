@@ -81,7 +81,7 @@
       allowEmpty: false
       default: var(--rp-rose)
       options:
-        - label: Lovesans-serif
+        - label: Love
           value: var(--rp-love)
         - label: Rose
           value: var(--rp-rose)

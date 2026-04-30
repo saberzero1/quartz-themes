@@ -143,6 +143,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #080808);
   background-color: var(--tab-container-background, rgb(8, 8, 8));
 }
 
@@ -159,6 +160,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #080808);
   background-color: var(--tab-container-background, rgb(8, 8, 8));
   border-left-color: rgb(51, 51, 51);
 }`,
@@ -190,7 +192,11 @@ html body pre:has(> code) {
   border-right-color: rgb(51, 51, 51);
   border-top-color: rgb(51, 51, 51);
 }`,
-    images: `html body img {
+    images: `html body figure {
+  --code-background: var(--ec-frm-edBg, #111);
+}
+
+html body img {
   border-bottom-color: rgb(191, 97, 106);
   border-left-color: rgb(191, 97, 106);
   border-right-color: rgb(191, 97, 106);

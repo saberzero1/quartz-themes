@@ -229,6 +229,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #11161d);
   background-color: var(--tab-container-background, rgb(17, 22, 29));
   color: rgb(222, 222, 222);
 }
@@ -248,6 +249,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #11161d);
   background-color: var(--tab-container-background, rgb(17, 22, 29));
   border-left-color: rgb(66, 73, 88);
   color: rgb(222, 222, 222);
@@ -322,6 +324,10 @@ html[saved-theme="dark"] body del {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   outline: rgb(222, 222, 222) none 0px;
   text-decoration-color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body footer {
+  --bar-height: calc(22px + var(--bar-vertical-padding)*2);
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -443,6 +449,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #13161b);
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
@@ -1139,6 +1146,9 @@ html[saved-theme="dark"] body .callout[data-callout="folder"] {
   --background-primary-alt: #13161b;
   --background-secondary: #11161d;
   --background-secondary-alt: #0d1117;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #4c78cc;
   --blur-background: color-mix(in srgb, #20242b 65%, transparent) linear-gradient(#20242b, color-mix(in srgb, #20242b 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -1212,6 +1222,7 @@ html[saved-theme="dark"] body .callout[data-callout="folder"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #20242b;
   --flair-color: #dedede;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-color1: hsl( 246 87% 69% / 0.2);
   --folder-color2: hsl( 245 75% 70% / 0.2);
   --folder-color3: hsl( 240 35% 73% / 0.2);
@@ -1632,6 +1643,10 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #58a6ff);
+  --pill-color-hover: var(--tag-color-hover, #449bff);
+  --pill-color-remove: var(--tag-color, #58a6ff);
+  --pill-color-remove-hover: var(--tag-color-hover, #449bff);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
@@ -1706,6 +1721,7 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   color: var(--icon-color, rgb(187, 187, 187));
 }`,
     footer: `html[saved-theme="dark"] body footer {
+  --bar-height: calc(22px + var(--bar-vertical-padding)*2);
   background-color: var(--status-bar-background, rgb(17, 22, 29));
   border-bottom-color: rgb(24, 25, 30);
   border-bottom-width: 1px;
@@ -1841,6 +1857,10 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #58a6ff);
+  --pill-color-hover: var(--tag-color-hover, #449bff);
+  --pill-color-remove: var(--tag-color, #58a6ff);
+  --pill-color-remove-hover: var(--tag-color-hover, #449bff);
   color: var(--pill-color, rgb(88, 166, 255));
 }
 
@@ -1880,6 +1900,7 @@ html[saved-theme="dark"] body .stacked-page.active {
 }
 
 html[saved-theme="dark"] body .navigation-progress {
+  --bar-height: calc(22px + var(--bar-vertical-padding)*2);
   background-color: var(--status-bar-background, rgb(17, 22, 29));
 }
 
@@ -2072,6 +2093,10 @@ html[saved-theme="light"] body .text-highlight {
 
 html[saved-theme="light"] body del {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
+}
+
+html[saved-theme="light"] body footer {
+  --bar-height: calc(22px + var(--bar-vertical-padding)*2);
 }
 
 html[saved-theme="light"] body p {
@@ -2377,6 +2402,9 @@ html[saved-theme="light"] body .callout[data-callout="folder"] {
   --background-primary-alt: #fafafa;
   --background-secondary: #f6f6f6;
   --background-secondary-alt: #fcfcfc;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -2450,6 +2478,7 @@ html[saved-theme="light"] body .callout[data-callout="folder"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #222222;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-color1: hsl( 246 87% 69%  / 0.2);
   --folder-color2: hsl( 245 89% 75%  / 0.2);
   --folder-color3: hsl( 240 99% 84%  / 0.2);
@@ -2777,6 +2806,10 @@ html[saved-theme="light"] body .search > .search-container > .search-space > * {
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #58a6ff);
+  --pill-color-hover: var(--tag-color-hover, #449bff);
+  --pill-color-remove: var(--tag-color, #58a6ff);
+  --pill-color-remove-hover: var(--tag-color-hover, #449bff);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
@@ -2830,6 +2863,7 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }`,
     footer: `html[saved-theme="light"] body footer {
+  --bar-height: calc(22px + var(--bar-vertical-padding)*2);
   border-bottom-color: rgb(92, 92, 92);
   border-bottom-width: 1px;
   border-left-color: rgb(92, 92, 92);
@@ -2870,9 +2904,17 @@ html[saved-theme="light"] body .metadata-properties {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #58a6ff);
+  --pill-color-hover: var(--tag-color-hover, #449bff);
+  --pill-color-remove: var(--tag-color, #58a6ff);
+  --pill-color-remove-hover: var(--tag-color-hover, #449bff);
   color: var(--pill-color, rgb(88, 166, 255));
 }`,
-    misc: `html[saved-theme="light"] body .page-header h2.page-title {
+    misc: `html[saved-theme="light"] body .navigation-progress {
+  --bar-height: calc(22px + var(--bar-vertical-padding)*2);
+}
+
+html[saved-theme="light"] body .page-header h2.page-title {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 

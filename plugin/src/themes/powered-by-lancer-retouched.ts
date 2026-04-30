@@ -187,6 +187,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #000000);
   background-color: var(--tab-container-background, rgb(0, 0, 0));
   color: rgb(231, 231, 231);
 }
@@ -202,6 +203,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #000000);
   background-color: var(--tab-container-background, rgb(0, 0, 0));
   color: rgb(231, 231, 231);
 }
@@ -300,6 +302,7 @@ html[saved-theme="dark"] body html {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #e7e7e7;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-headers: "Helvetica";
   --font-interface: "Arimo", sans-serif;
   --font-mermaid: "Arimo", sans-serif;
@@ -631,6 +634,7 @@ html[saved-theme="dark"] body h2 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #e7e7e7;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-headers: "Helvetica";
   --font-interface: "Arimo", sans-serif;
   --font-mermaid: "Arimo", sans-serif;
@@ -914,6 +918,7 @@ html[saved-theme="dark"] body h3 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #e7e7e7;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-headers: "Helvetica";
   --font-interface: "Arimo", sans-serif;
   --font-mermaid: "Arimo", sans-serif;
@@ -1197,6 +1202,7 @@ html[saved-theme="dark"] body h4 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #e7e7e7;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-headers: "Helvetica";
   --font-interface: "Arimo", sans-serif;
   --font-mermaid: "Arimo", sans-serif;
@@ -1480,6 +1486,7 @@ html[saved-theme="dark"] body h5 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #e7e7e7;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-headers: "Helvetica";
   --font-interface: "Arimo", sans-serif;
   --font-mermaid: "Arimo", sans-serif;
@@ -1788,6 +1795,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #333333);
   border-bottom-color: rgb(231, 231, 231);
   border-left-color: rgb(231, 231, 231);
   border-right-color: rgb(231, 231, 231);
@@ -2670,6 +2678,10 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #9748c9);
+  --pill-color-hover: var(--tag-color-hover, #9748c9);
+  --pill-color-remove: var(--tag-color, #9748c9);
+  --pill-color-remove-hover: var(--tag-color-hover, #9748c9);
   font-family: Arimo, sans-serif;
 }
 
@@ -2844,6 +2856,10 @@ html[saved-theme="dark"] body .metadata-properties {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #9748c9);
+  --pill-color-hover: var(--tag-color-hover, #9748c9);
+  --pill-color-remove: var(--tag-color, #9748c9);
+  --pill-color-remove-hover: var(--tag-color-hover, #9748c9);
   color: var(--pill-color, rgb(151, 72, 201));
 }
 
@@ -3125,6 +3141,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #991e2a);
   background-color: var(--tab-container-background, rgb(153, 30, 42));
   color: rgb(0, 0, 0);
 }
@@ -3144,6 +3161,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #991e2a);
   background-color: var(--tab-container-background, rgb(153, 30, 42));
   border-left-color: rgb(175, 48, 61);
   color: rgb(0, 0, 0);
@@ -3243,6 +3261,7 @@ html[saved-theme="light"] body html {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #000000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-headers: "Helvetica";
   --font-interface: "Arimo", sans-serif;
   --font-mermaid: "Arimo", sans-serif;
@@ -3572,6 +3591,7 @@ html[saved-theme="light"] body h2 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #000000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-headers: "Helvetica";
   --font-interface: "Arimo", sans-serif;
   --font-mermaid: "Arimo", sans-serif;
@@ -3853,6 +3873,7 @@ html[saved-theme="light"] body h3 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #000000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-headers: "Helvetica";
   --font-interface: "Arimo", sans-serif;
   --font-mermaid: "Arimo", sans-serif;
@@ -4134,6 +4155,7 @@ html[saved-theme="light"] body h4 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #000000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-headers: "Helvetica";
   --font-interface: "Arimo", sans-serif;
   --font-mermaid: "Arimo", sans-serif;
@@ -4415,6 +4437,7 @@ html[saved-theme="light"] body h5 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #000000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-headers: "Helvetica";
   --font-interface: "Arimo", sans-serif;
   --font-mermaid: "Arimo", sans-serif;
@@ -4733,6 +4756,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #ebd9d9);
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
@@ -5619,6 +5643,10 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #ff3e3e);
+  --pill-color-hover: var(--tag-color-hover, #ff3e3e);
+  --pill-color-remove: var(--tag-color, #ff3e3e);
+  --pill-color-remove-hover: var(--tag-color-hover, #ff3e3e);
   font-family: Arimo, sans-serif;
 }
 
@@ -5812,6 +5840,10 @@ html[saved-theme="light"] body .note-properties {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #ff3e3e);
+  --pill-color-hover: var(--tag-color-hover, #ff3e3e);
+  --pill-color-remove: var(--tag-color, #ff3e3e);
+  --pill-color-remove-hover: var(--tag-color-hover, #ff3e3e);
   color: var(--pill-color, rgb(255, 62, 62));
 }
 

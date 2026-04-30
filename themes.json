@@ -57586,7 +57586,18 @@
             "type": "heading",
             "level": 2,
             "collapsed": true,
-            "description": "Sidebars text size and spacing; headings sizes; Kanban font and text size."
+            "description": "Main settings for the interface, general typography and kanban boards.",
+            "description.fr": "Les réglages principaux pour l’interface, la typographie en général et les kanbans."
+          },
+          {
+            "id": "OT-UI-settings",
+            "title": "Interface",
+            "title.fr": "Interface",
+            "type": "heading",
+            "level": 3,
+            "collapsed": true,
+            "description": "Basic interface tweaks.",
+            "description.fr": "Réglages de base de l’interface."
           },
           {
             "id": "OT-UI-font-size",
@@ -57598,8 +57609,8 @@
           },
           {
             "id": "OT-filesNavigator-spacing",
-            "title": "Spacing for the files listing in sidepannels and the settings list in settings pane",
-            "title.fr": "Listing des fichiers dans les panneaux latéraux.",
+            "title": "Spacing for items in sidepanels and settings panel",
+            "title.fr": "Espacement des listes dans les panneaux latéraux et le panneau des settings.",
             "type": "class-select",
             "allowEmpty": false,
             "default": "filesNavigator-spacing-medium",
@@ -57627,11 +57638,89 @@
             ]
           },
           {
+            "id": "OT-viewing-mode-icons",
+            "title": "Viewing mode icon as a true status indicator",
+            "title.fr": "L’icône du mode indique le status",
+            "description": "ON: The indicator on the right of the pane title bar becomes a true mode indicator (Reading / Live Preview / Raw Source). Switch OFF if you prefer the default Obsidian behaviour.",
+            "description.fr": "ON: l’icône d’état du panneau courant, à droite de la barre de titre, indique le mode actuel (Lecture / Live Preview / Source). Mettre à OFF pour avoir le comportement par défaut d’Obsidian.",
+            "type": "class-toggle",
+            "default": true,
+            "addCommand": true
+          },
+          {
+            "id": "OT-tab-title-highlighted",
+            "title": "Highlight current tab",
+            "title.fr": "Tab courant mis en évidence",
+            "description": "Highlight the name of the current note in the tab title.",
+            "description.fr": "Met en évidence sur le tab le nom de la fiche courante.",
+            "type": "class-toggle",
+            "default": false,
+            "addCommand": true
+          },
+          {
+            "id": "OT-suppress-title-bar-breadcrumb",
+            "title": "Hide Title Bar breadcrumb",
+            "title.fr": "Masquer le Fil d’Ariane dans la barre de titre",
+            "description": "Optionally, hide the breadcrumb in the title bar.",
+            "description.fr": "Option: Masquer le “breadcrumb” dans la barre de titre.",
+            "type": "class-toggle",
+            "default": false,
+            "addCommand": true
+          },
+          {
+            "id": "OT-status-bar-padding",
+            "title": "Status Bar padding [px]",
+            "title.fr": "Marges de la barre d’état [px]",
+            "description": "Number of pixels between the status bar and the window border.",
+            "description.fr": "Nombre de pixels entre la “Status Bar” et le bord de la fenêtre.",
+            "type": "variable-number",
+            "default": 6,
+            "format": "px"
+          },
+          {
+            "id": "OT-metadata-label-width",
+            "title": "Width of the properties labels [em]",
+            "title.fr": "Largeur des noms des champs des propriétés [em]",
+            "type": "variable-number",
+            "default": 7,
+            "format": "em"
+          },
+          {
+            "id": "OT-embed-hide-title",
+            "title": "Hide embed titles",
+            "title.fr": "Masquer le titre des transclusions",
+            "description": "Hide the file name at the top of embedded notes and queries.",
+            "description.fr": "Masque le nom du fichier en haut des notes et requêtes incluses.",
+            "type": "class-toggle",
+            "default": true,
+            "addCommand": true
+          },
+          {
+            "id": "OT-canvas-dot-pattern-hidden",
+            "title": "Hide canvas dot pattern",
+            "title.fr": "Cacher les points en fond des canvas",
+            "description": "Hide the dotted background pattern on canvases.",
+            "description.fr": "Masquer le motif de points du fond des canvases.",
+            "type": "class-toggle",
+            "default": false,
+            "addCommand": true
+          },
+          {
+            "id": "OT-typography-settings",
+            "title": "Typography",
+            "title.fr": "Typographie",
+            "type": "heading",
+            "level": 3,
+            "collapsed": true,
+            "description": "Typography settings for all modes.",
+            "description.fr": "Réglage typographiques pour tous les modes."
+          },
+          {
             "id": "OT-headings-scaling",
-            "title": "Scaling of the headings and subheadings",
+            "title": "Headings and subheadings scaling",
             "title.fr": "Accroissement des titres et intertitres",
-            "description": "Different ways of increasing the size of headings from H6 to H1. By default, a choice “generous but not too much”",
-            "description.fr": "Différentes façons de grader la taille des H1 à H6. Par défaut, un choix généreux, mais pas trop.",
+            "description": "Different ways of increasing the size of headings from H6 to H1. By default, a choice “generous but not too much”.",
+            "description.fr": "Différentes façons de grader la taille des H1 à H6. Par défaut, un choix généreux, mais pas trop.",
             "type": "class-select",
             "allowEmpty": false,
             "default": "headings-scaling-OpSpl",
@@ -57642,14 +57731,19 @@
                 "value": "headings-scaling-none"
               },
               {
-                "label": "Minor second",
-                "label.fr": "Seconde mineure",
-                "value": "headings-scaling-minor-second"
+                "label": "Bear style",
+                "label.fr": "dans le style de Bear",
+                "value": "headings-scaling-Bear"
               },
               {
                 "label": "Slowly",
                 "label.fr": "Doucement",
                 "value": "headings-scaling-slight"
+              },
+              {
+                "label": "Minor second",
+                "label.fr": "Seconde mineure",
+                "value": "headings-scaling-minor-second"
               },
               {
                 "label": "Major second",
@@ -57670,10 +57764,138 @@
             ]
           },
           {
+            "id": "OT-vertical-rythm",
+            "title": "Typographical vertical rythm",
+            "title.fr": "Rythme typographique vertical",
+            "description": "Vertical white space around headings and paragraphs.",
+            "description.fr": "Blanc typographique au-dessus et au-dessous des titres, intertitres et paragraphes.",
+            "type": "class-select",
+            "allowEmpty": false,
+            "default": "vertical-rythm-normal",
+            "options": [
+              {
+                "label": "Tight",
+                "label.fr": "Serré",
+                "value": "vertical-rythm-tight"
+              },
+              { "label": "Normal", "value": "vertical-rythm-normal" },
+              {
+                "label": "Generous",
+                "label.fr": "Aéré",
+                "value": "vertical-rythm-generous"
+              },
+              { "label": "Bear", "value": "vertical-rythm-Bear" }
+            ]
+          },
+          {
+            "id": "OT-lists-font-stepdown",
+            "title": "Lists: Text size stepping down",
+            "title.fr": "Listes : taille de texte décroissante",
+            "description": "Use smaller text for deeper list levels.",
+            "description.fr": "Utiliser un texte plus petit pour les niveaux de liste plus profonds.",
+            "type": "class-toggle",
+            "default": false,
+            "addCommand": true
+          },
+          {
+            "id": "OT-lists-vert-spacing",
+            "title": "Lists: vertical spacing, line spacing",
+            "title.fr": "Listes : espacement vertical, interligne",
+            "description": "Control vertical spacing inside lists: normal / tight.",
+            "description.fr": "Contrôler l’espacement vertical à l’intérieur des listes : normal / serré.",
+            "type": "class-select",
+            "allowEmpty": false,
+            "default": "lists-vert-normal",
+            "options": [
+              {
+                "label": "Normal",
+                "label.fr": "Normal",
+                "value": "lists-vert-normal"
+              },
+              {
+                "label": "Tight",
+                "label.fr": "Serré",
+                "value": "lists-vert-tight"
+              }
+            ]
+          },
+          {
+            "id": "OT-lists-horiz-indenting",
+            "title": "Lists: Indenting",
+            "title.fr": "Listes : indentation",
+            "description": "Control horizontal indentation and bullet gap: normal / wide / generous.",
+            "description.fr": "Contrôler l’indentation horizontale et l’écart puce–texte : normale / large / généreuse.",
+            "type": "class-select",
+            "allowEmpty": false,
+            "default": "lists-horiz-normal",
+            "options": [
+              {
+                "label": "Normal",
+                "label.fr": "Normale",
+                "value": "lists-horiz-normal"
+              },
+              {
+                "label": "Wide",
+                "label.fr": "Large",
+                "value": "lists-horiz-wide"
+              },
+              {
+                "label": "Generous",
+                "label.fr": "Généreuse",
+                "value": "lists-horiz-generous"
+              }
+            ]
+          },
+          {
+            "id": "OT-separators-style",
+            "title": "Text separators",
+            "title.fr": "Séparateurs de texte",
+            "description": "Choose the ornamental separator used for Markdown horizontal rules.",
+            "description.fr": "Choisir le séparateur ornemental utilisé pour les règles horizontales Markdown.",
+            "type": "class-select",
+            "allowEmpty": false,
+            "default": "OT-sep-asterism",
+            "options": [
+              {
+                "label": "Asterism",
+                "label.fr": "Astérisme",
+                "value": "OT-sep-asterism"
+              },
+              {
+                "label": "Diamond",
+                "label.fr": "Losange",
+                "value": "OT-sep-diamond"
+              },
+              {
+                "label": "Fleuron",
+                "label.fr": "Fleuron",
+                "value": "OT-sep-fleuron"
+              }
+            ]
+          },
+          {
+            "id": "OT-codeblock-linewrap-OFF",
+            "title": "Suppress line wrapping within code blocks",
+            "title.fr": "Supprimer les retours à la ligne dans les blocs de code",
+            "type": "class-toggle",
+            "default": true,
+            "addCommand": true
+          },
+          {
+            "id": "OT-kanban-settings",
+            "title": "Kanbans (plugin + Board View)",
+            "type": "heading",
+            "level": 3,
+            "collapsed": true,
+            "description": "Kanbans oriented settings.",
+            "description.fr": "Réglages pour les kanbans"
+          },
+          {
             "id": "OT-kanban-font",
-            "title": "Kanban — General font",
-            "title.fr": "Kanban — Fonte",
+            "title": "Kanban: General font",
+            "title.fr": "Kanban : Fonte",
             "description": "It may be nice to choose a different font for the Kanban. Why not a font mimicking handwriting?",
+            "description.fr": "Il peut être intéressant de choisir une fonte différente pour le Kanban, par exemple une écriture manuscrite.",
             "type": "variable-select",
             "default": "Uberhand Pro",
             "options": [
@@ -57724,59 +57946,19 @@
           },
           {
             "id": "OT-kanban-font-size",
-            "title": "Kanban — Size of the cards text [px]",
-            "title.fr": "Kanban — Taille des caractères dans les fiches [px]",
+            "title": "Kanbans: Size of the cards text [px]",
+            "title.fr": "Kanbans : Taille des caractères dans les fiches [px]",
             "type": "variable-number",
-            "default": 16,
+            "default": 17,
             "format": "px"
           },
           {
-            "id": "OT-codeblock-linewrap-OFF",
-            "title": "Suppress line wrapping within code blocks",
-            "title.fr": "Supprimer les retours à la ligne dans les blocs de code",
-            "type": "class-toggle",
-            "default": true
-          },
-          {
-            "id": "OT-tab-title-highlighted",
-            "title": "Highlight current tab",
-            "title.fr": "Tab courant mis en évidence",
-            "description": "Highlight the name of the current note in the tab title",
-            "description.fr": "Met en évidence sur le tab le nom de la fiche courante",
-            "type": "class-toggle",
-            "default": false
-          },
-          {
-            "id": "OT-suppress-title-bar-breadcrumb",
-            "title": "Suppress the Title Bar breadcrumb",
-            "title.fr": "Suppression du “breadcrumb” dans la barre de titre",
-            "type": "class-toggle",
-            "default": false
-          },
-          {
-            "id": "OT-status-bar-padding",
-            "title": "Status Bar padding [px]",
-            "description": "Number of pixels between the status bar and the window border.",
-            "dsecription.fr": "Nombre de pixels entre la “Status Bar” et le bord de la fenêtre.",
+            "id": "OT-kanban-lane-width",
+            "title": "Kanbans: width of the lanes [em]",
+            "title.fr": "Kanbans: largeur des colonnes [em]",
             "type": "variable-number",
-            "default": 6,
-            "format": "px"
-          },
-          {
-            "id": "OT-metadata-label-width",
-            "title": "Width of the properties labels [em]",
-            "description": null,
-            "dsecription.fr": "Largeur des noms des champs des propriétés",
-            "type": "variable-number",
-            "default": 9,
+            "default": 20,
             "format": "em"
-          },
-          {
-            "id": "OT-canvas-dot-pattern-hidden",
-            "title": "Hide canvas dot pattern",
-            "title.fr": "Cacher les points en fond des canvas",
-            "type": "class-toggle",
-            "default": false
           },
           {
             "id": "OT-LIGHT-mode-settings",
@@ -57796,15 +57978,14 @@
             "description.fr": "« Par défaut » signifie les gris neutres et le noir d’Obsidian « nature ».",
             "type": "class-select",
             "allowEmpty": false,
-            "default": "lightPalette-lightBeige",
+            "default": "lightPalette-Beige",
             "options": [
               {
                 "label": "Default for Obsidian",
                 "label.fr": "Par défaut",
                 "value": "lightPalette-OBSIDIAN"
               },
-              { "label": "Art déco", "value": "lightPalette-artDeco" },
-              { "label": "Beige", "value": "lightPalette-beige" },
+              { "label": "Beige", "value": "lightPalette-Beige" },
               {
                 "label": "light Beige",
                 "label.fr": "Beige claire",
@@ -57831,10 +58012,21 @@
                 "value": "lightPalette-pistachio"
               },
               {
+                "label": "CRT 80s — Amber",
+                "label.fr": "Cathodique — Ambre",
+                "value": "lightPalette-crt80s-amber"
+              },
+              {
+                "label": "CRT 80s — Green",
+                "label.fr": "Cathodique — Vert",
+                "value": "lightPalette-crt80s-green"
+              },
+              {
                 "label": "Icy",
                 "label.fr": "Glacé",
                 "value": "lightPalette-icy"
               },
+              { "label": "Ideaverse", "value": "lightPalette-ideaverse" },
               {
                 "label": "Ivory",
                 "label.fr": "Ivoire",
@@ -57896,8 +58088,8 @@
           },
           {
             "id": "OT-TextColor-lightMode",
-            "title": "Text color for body text.",
-            "title.fr": "Couleur du texte des fiches.",
+            "title": "Text color in Reading mode",
+            "title.fr": "Couleur du texte des fiches en mode Lecture / Consultation",
             "description": "“Default” means the color associated with the above choosen general palette.",
             "description.fr": "« Par défaut » signifie la couleur associée à la palette générale choisie ci-dessus.",
             "type": "class-select",
@@ -58041,7 +58233,7 @@
           },
           {
             "id": "OT-pageBackground-lightMode",
-            "title": "Notes background in “reading mode”.",
+            "title": "Notes background in Reading mode",
             "title.fr": "Fond des fiches en mode «Lecture / Consultation»",
             "description": "Different kinds of paper are available. “None” keeps the plain background determined by the palette.",
             "description.fr": "Un fond uni ou un choix de fonds structurés.",
@@ -58114,15 +58306,18 @@
           },
           {
             "id": "paperBackground-in-livePreview-LM",
-            "title": "Paper background also in “Live Preview” mode",
-            "description": "It’s optional to have the paper background also in “Live Preview”.",
+            "title": "Paper background also in Live Preview mode (Light mode)",
+            "title.fr": "Fond papier également en mode Live (mode Light)",
+            "description": "Optionally the paper background can also be used in Live Preview.",
+            "description.fr": "Optionnellement, le fond papier peut aussi être utilisé lorsqu’on édite les fiches.",
             "type": "class-toggle",
-            "default": false
+            "default": false,
+            "addCommand": true
           },
           {
             "id": "OT-inkColor-lightMode",
-            "title": "Text color in writing/editing mode.",
-            "title.fr": "Couleur du texte en mode «Écriture / Édition»",
+            "title": "Text color in Writing / Editing mode",
+            "title.fr": "Couleur du texte en mode Écriture / Édition",
             "description": "“Default” means the same color as in reading mode.",
             "description.fr": "« Par défaut » signifie la même couleur qu’en mode «Lecture / Consultation».",
             "type": "class-select",
@@ -58271,8 +58466,8 @@
           },
           {
             "id": "OT-editingBackgroundColor-lightMode",
-            "title": "Note background in writing/editing mode.",
-            "title.fr": "Couleur du fond de page en mode «Écriture / Édition»",
+            "title": "Notes background in Writing / Editing mode",
+            "title.fr": "Couleur du fond de page en mode «Écriture / Édition»",
             "description": "“Default” means the background associated with the above chosen palette.",
             "description.fr": "Par défaut, le fond déterminé par la palette générale choisie ci-dessus.",
             "type": "class-select",
@@ -58374,58 +58569,24 @@
             ]
           },
           {
-            "id": "textSelection-takesAccentColor-lightMode",
-            "title": "Text selection takes accent color",
+            "id": "OT-colored-headings-lightMode",
+            "title": "Colored H1 to H5 headings (Light mode)",
+            "title.fr": "Titres colorés (H1 à H5, Light mode)",
+            "description": "You may activate the coloring of the headings or keep them like normal text.",
+            "description.fr": "Vous pouvez activer la colorisation des titres H1 à H6 ou bien les laisser dans la couleur du texte courant.",
             "type": "class-toggle",
-            "default": true
+            "addCommand": true
           },
           {
-            "id": "OT-Light-pillsColor",
-            "title": "Color of the pills inside the Properties pannel",
-            "title.fr": "Couleur des “pills” dans le panneau des propriétés",
-            "type": "class-select",
-            "allowEmpty": false,
-            "default": "OT-Light-pills-color-accent",
-            "options": [
-              {
-                "label": "Accent color",
-                "label.fr": "Couleur d’accentuation",
-                "value": "OT-Light-pills-color-accent"
-              },
-              {
-                "label": "Same as normal text",
-                "label.fr": "Comme le texte normal",
-                "value": "OT-Light-pills-color-text"
-              },
-              {
-                "label": "Same as links",
-                "label.fr": "Comme le texte normal",
-                "value": "OT-Light-pills-color-link"
-              },
-              {
-                "label": "Black",
-                "label.fr": "Noir",
-                "value": "OT-Light-pills-color-black"
-              },
-              {
-                "label": "Grey",
-                "label.fr": "Gris",
-                "value": "OT-Light-pills-color-grey"
-              },
-              {
-                "label": "White",
-                "label.fr": "Blanc",
-                "value": "OT-Light-pills-color-white"
-              },
-              {
-                "label": "Theme’s tone",
-                "label.fr": "Athmosphère",
-                "value": "OT-Light-pills-color-theme"
-              }
-            ]
+            "id": "textSelection-takesAccentColor-lightMode",
+            "title": "Text selection takes accent color (Light mode)",
+            "title.fr": "La sélection prend la couleur d’accentuation (mode Light)",
+            "type": "class-toggle",
+            "default": true,
+            "addCommand": true
           },
           {
-            "id": "OT-highlight-color",
+            "id": "OT-highlight-color-light",
             "title": "Highlighting color",
             "title.fr": "Couleur du « Stabilo »",
             "description": "“Default” chooses a color associated with the current general mood.",
@@ -58502,6 +58663,51 @@
             ]
           },
           {
+            "id": "OT-Light-pillsColor",
+            "title": "Color of the pills inside the Properties panel",
+            "title.fr": "Couleur des “pills” dans le panneau des propriétés",
+            "type": "class-select",
+            "allowEmpty": false,
+            "default": "OT-Light-pills-color-accent",
+            "options": [
+              {
+                "label": "Accent color",
+                "label.fr": "Couleur d’accentuation",
+                "value": "OT-Light-pills-color-accent"
+              },
+              {
+                "label": "Same as normal text",
+                "label.fr": "Comme le texte normal",
+                "value": "OT-Light-pills-color-text"
+              },
+              {
+                "label": "Same as links",
+                "label.fr": "Comme le texte normal",
+                "value": "OT-Light-pills-color-link"
+              },
+              {
+                "label": "Black",
+                "label.fr": "Noir",
+                "value": "OT-Light-pills-color-black"
+              },
+              {
+                "label": "Grey",
+                "label.fr": "Gris",
+                "value": "OT-Light-pills-color-grey"
+              },
+              {
+                "label": "White",
+                "label.fr": "Blanc",
+                "value": "OT-Light-pills-color-white"
+              },
+              {
+                "label": "Theme’s tone",
+                "label.fr": "Athmosphère",
+                "value": "OT-Light-pills-color-theme"
+              }
+            ]
+          },
+          {
             "id": "OT-DARK-mode-settings",
             "title": "DARK MODE colors",
             "title.fr": "Couleurs en mode “DARK”",
@@ -58548,6 +58754,16 @@
                 "value": "darkPalette-brown"
               },
               {
+                "label": "CRT 80s — Amber",
+                "label.fr": "Vert cathodique",
+                "value": "darkPalette-crt80s-amber"
+              },
+              {
+                "label": "CRT 80s — Green",
+                "label.fr": "Vert cathodique",
+                "value": "darkPalette-crt80s-green"
+              },
+              {
                 "label": "Green",
                 "label.fr": "Vert",
                 "value": "darkPalette-green"
@@ -58562,6 +58778,7 @@
                 "label.fr": "Glacé",
                 "value": "darkPalette-icy"
               },
+              { "label": "Ideaverse", "value": "darkPalette-ideaverse" },
               {
                 "label": "Ivory",
                 "label.fr": "Ivoire",
@@ -58590,7 +58807,6 @@
                 "label.fr": "Pierre",
                 "value": "darkPalette-sunnyMemos"
               },
-              { "label": "Victorian", "value": "darkPalette-victorian" },
               { "label": "Violet", "value": "darkPalette-violet" },
               {
                 "label": "Yellow",
@@ -58624,8 +58840,8 @@
           },
           {
             "id": "OT-textColor-darkMode",
-            "title": "Text color for body text.",
-            "title.fr": "Couleur du texte des fiches.",
+            "title": "Text color in Reading mode",
+            "title.fr": "Couleur du texte des fiches en mode Lecture / Consultation",
             "description": "“Default” means the color associated with the above chosen general palette.",
             "type": "class-select",
             "allowEmpty": false,
@@ -58759,8 +58975,8 @@
           },
           {
             "id": "OT-pageBackground-darkMode",
-            "title": "Notes background in “reading mode”.",
-            "title.fr": "Fond des fiches en mode «Lecture / Consultation».",
+            "title": "Notes background in Reading mode",
+            "title.fr": "Fond des fiches en mode «Lecture / Consultation»",
             "description": "Different kinds of paper are available. “None” keeps the plain background determined by the palette.",
             "description.fr": "Un fond uni ou un choix de fonds structurés.",
             "type": "class-select",
@@ -58832,17 +59048,20 @@
           },
           {
             "id": "paperBackground-in-livePreview-DM",
-            "title": "Paper background also in “Live Preview” mode",
-            "description": "It’s optional to have the paper background also in “Live Preview”.",
+            "title": "Paper background also in Live Preview (Dark mode)",
+            "title.fr": "Fond papier également en mode “Live” (mode Dark)",
+            "description": "Optionally the paper background can also be used in Live Preview.",
+            "description.fr": "Optionnellement, le fond papier peut aussi être utilisé lorsqu’on édite les fiches.",
             "type": "class-toggle",
-            "default": true
+            "default": true,
+            "addCommand": true
           },
           {
             "id": "OT-inkColor-darkMode",
-            "title": "Text color in writing/editing mode",
-            "title.fr": "Couleur du texte en mode «Écriture / édition»",
+            "title": "Text color in Writing / Editing mode",
+            "title.fr": "Couleur du texte en mode Écriture / Édition",
             "description": "“Default” means the same color as in reading mode.",
-            "description.fr": "« Par défaut » signifie la même couleur qu’en mode «Lecture / Consultation».",
+            "description.fr": "« Par défaut » signifie la même couleur qu’en mode Lecture / Consultation».",
             "type": "class-select",
             "allowEmpty": false,
             "default": "inkColor-darkMode-default",
@@ -58991,8 +59210,8 @@
           },
           {
             "id": "OT-editingBackgroundColor-darkMode",
-            "title": "Note background in writing/editing mode",
-            "title.fr": "Couleur du fond de page en mode «Écriture / édition»",
+            "title": "Notes background in Writing / Editing mode",
+            "title.fr": "Couleur du fond de page en mode Écriture/ Édition",
             "description": "“Default” means the background associated with the above chosen dark palette.",
             "description.fr": "Par défaut, le fond déterminé par la palette générale choisie ci-dessus.",
             "type": "class-select",
@@ -59094,55 +59313,21 @@
             ]
           },
           {
-            "id": "textSelection-takesAccentColor-darkMode",
-            "title": "Text selection takes accent color",
+            "id": "OT-colored-headings-darkMode",
+            "title": "Colored H1 to H5 headings (dark mode)",
+            "title.fr": "Titres colorés (H1 à H5, Dark mode)",
+            "description": "You may activate the coloring of the headings or keep them like normal text.",
+            "description.fr": "Vous pouvez activer la colorisation des titres H1 à H6 ou bien les laisser dans la couleur du texte courant.",
             "type": "class-toggle",
-            "default": true
+            "addCommand": true
           },
           {
-            "id": "OT-Dark-pillsColor",
-            "title": "Color of the pills inside the Properties pannel",
-            "title.fr": "Couleur des “pills” dans le panneau des propriétés",
-            "type": "class-select",
-            "allowEmpty": false,
-            "default": "OT-Dark-pills-color-accent",
-            "options": [
-              {
-                "label": "Accent color",
-                "label.fr": "Couleur d’accentuation",
-                "value": "OT-Dark-pills-color-accent"
-              },
-              {
-                "label": "Same as normal text",
-                "label.fr": "Comme le texte normal",
-                "value": "OT-Dark-pills-color-text"
-              },
-              {
-                "label": "Same as links",
-                "label.fr": "Comme le texte normal",
-                "value": "OT-Dark-pills-color-link"
-              },
-              {
-                "label": "Black",
-                "label.fr": "Noir",
-                "value": "OT-Dark-pills-color-black"
-              },
-              {
-                "label": "Grey",
-                "label.fr": "Gris",
-                "value": "OT-Dark-pills-color-grey"
-              },
-              {
-                "label": "White",
-                "label.fr": "Blanc",
-                "value": "OT-Dark-pills-color-white"
-              },
-              {
-                "label": "Theme’s tone",
-                "label.fr": "Athmosphère",
-                "value": "OT-Dark-pills-color-theme"
-              }
-            ]
+            "id": "textSelection-takesAccentColor-darkMode",
+            "title": "Text selection takes accent color (Dark mode)",
+            "title.fr": "La sélection prend la couleur d’accentuation (mode Dark)",
+            "type": "class-toggle",
+            "default": true,
+            "addCommand": true
           },
           {
             "id": "OT-highlight-color-dark",
@@ -59222,10 +59407,55 @@
             ]
           },
           {
+            "id": "OT-Dark-pillsColor",
+            "title": "Color of the pills inside the Properties panel",
+            "title.fr": "Couleur des “pills” dans le panneau des propriétés",
+            "type": "class-select",
+            "allowEmpty": false,
+            "default": "OT-Dark-pills-color-accent",
+            "options": [
+              {
+                "label": "Accent color",
+                "label.fr": "Couleur d’accentuation",
+                "value": "OT-Dark-pills-color-accent"
+              },
+              {
+                "label": "Same as normal text",
+                "label.fr": "Comme le texte normal",
+                "value": "OT-Dark-pills-color-text"
+              },
+              {
+                "label": "Same as links",
+                "label.fr": "Comme le texte normal",
+                "value": "OT-Dark-pills-color-link"
+              },
+              {
+                "label": "Black",
+                "label.fr": "Noir",
+                "value": "OT-Dark-pills-color-black"
+              },
+              {
+                "label": "Grey",
+                "label.fr": "Gris",
+                "value": "OT-Dark-pills-color-grey"
+              },
+              {
+                "label": "White",
+                "label.fr": "Blanc",
+                "value": "OT-Dark-pills-color-white"
+              },
+              {
+                "label": "Theme’s tone",
+                "label.fr": "Athmosphère",
+                "value": "OT-Dark-pills-color-theme"
+              }
+            ]
+          },
+          {
             "id": "OT-READING-mode-settings",
             "title": "READING mode",
             "title.fr": "Mode «LECTURE / CONSULTATION»",
-            "description": "Adjustments for the comfort of reading. Table styles.",
+            "description": "Adjustments for the comfort of reading. Table styles. Bases. Images.",
             "type": "heading",
             "level": 2,
             "collapsed": true
@@ -59235,36 +59465,48 @@
             "title": "Body text size [px]",
             "title.fr": "Taille des caractères [px]",
             "type": "variable-number",
-            "default": 18,
+            "default": 17,
             "format": "px"
+          },
+          {
+            "id": "OT-readingMode-natural-line-height",
+            "title": "Natural line height for the chosen font (Reading)",
+            "title.fr": "Interligne naturel pour la fonte choisie (en lecture)",
+            "description": "When ON, Reading mode uses more or less the line-height intended by the font designer and the following value is ignored.",
+            "description.fr": "ON signifie que l’interligne sera plus ou moins celui prévu par le créateur de la fonte et la valeur ci-dessous est ignorée.",
+            "type": "class-toggle",
+            "default": false,
+            "addCommand": true
           },
           {
             "id": "OT-readingMode-line-height",
             "title": "Line height [em]",
             "title.fr": "Interligne [em]",
             "type": "variable-number",
-            "default": 1.4,
-            "format": "em"
+            "default": 1.5,
+            "format": "em",
+            "disableIF": ["OT-readingMode-natural-line-height"]
           },
           {
             "id": "OT-readingMode-line-width",
             "title": "Line length [em]",
             "title.fr": "Longueur de la ligne [em]",
             "type": "variable-number",
-            "default": 39,
+            "default": 44,
             "format": "em"
           },
           {
             "id": "OT-readingMode-tableText-percent",
-            "title": "Size of the text in table cells, in percents of the body text. 100 = same size",
-            "title.fr": "Taille des caractères dans les tables, en pourcents du texte normal. 100 = même taille",
+            "title": "Size of the text in table cells (% of body text size). 100 = same size",
+            "title.fr": "Taille des caractères dans les tables, en pourcents du texte normal. 100 = même taille",
             "description": "It’s generally practical to have a smaller text size inside table cells.",
             "type": "variable-number",
             "default": 90
           },
           {
             "id": "OT-tables-style",
-            "title": "Tables",
+            "title": "Tables style",
+            "title.fr": "Style des tables",
             "description": "Three different styles for tables.",
             "description.fr": "Différents styles de tables. Par défaut, le modèle « Obsidian nature ».",
             "type": "class-select",
@@ -59289,9 +59531,19 @@
             ]
           },
           {
+            "id": "OT-bases-hide-header-on",
+            "title": "Bases: hide header in Preview",
+            "title.fr": "Bases : cacher l’en-tête en mode Lecture",
+            "description": "Hide the Bases toolbar/header in note Preview. Use cssclasses: bases-header-on in a note to temporarily show it again.",
+            "description.fr": "Cache la barre d’outils/en-tête des Bases en mode Lecture. Utiliser cssclasses: bases-header-on dans une note pour la réafficher ponctuellement.",
+            "type": "class-toggle",
+            "default": true,
+            "addCommand": true
+          },
+          {
             "id": "OT-images-rendering",
-            "title": "How do you prefer your images?",
-            "title.fr": "Comment préférez-vous vos images?",
+            "title": "Images style",
+            "title.fr": "Style des images",
             "type": "class-select",
             "allowEmpty": false,
             "default": "images-with-shadow",
@@ -59319,117 +59571,170 @@
             ]
           },
           {
+            "id": "OT-img-max-height-preview",
+            "title": "Images max height [in pixels]",
+            "title.fr": "Hauteur maximale des images [en pixels]",
+            "type": "variable-number",
+            "default": 550,
+            "format": "px"
+          },
+          {
             "id": "OT-EDIT-mode-settings",
-            "title": "WRITING/EDITING mode",
-            "title.fr": "Mode «ÉCRITURE / ÉDITION»",
+            "title": "WRITING / EDITING mode",
+            "title.fr": "Mode «ÉCRITURE / ÉDITION»",
             "description": "Adjustments for when you’re editing your notes.",
             "type": "heading",
             "level": 2,
             "collapsed": true
           },
           {
-            "id": "OT-editMode-font",
+            "id": "OT-edit-font",
             "title": "Typeface",
             "title.fr": "Police d’écriture",
-            "description": "“Default” chooses the same font as for reading. Reading font is chosen in the Appearance panel of the Settings.",
+            "description": "Default” chooses the same font as for reading. Reading font is chosen in the Appearance panel of the Settings.",
             "description.fr": "Par défaut, la même qu’en mode LECTURE.",
-            "type": "variable-select",
-            "default": "var(--font-text)",
+            "type": "class-select",
+            "default": "edit-font-Default",
             "options": [
               {
                 "label": "Default",
                 "label.fr": "Par défaut",
-                "value": "var(--font-text)"
+                "value": "edit-font-Default"
               },
               {
                 "label": "American Typewriter",
-                "value": "American Typewriter"
+                "value": "edit-font-AmericanTypewriter"
               },
-              { "label": "Candara", "value": "Candara" },
-              { "label": "Cambria", "value": "Cambria" },
-              { "label": "Cascadia Mono", "value": "Cascadia Mono" },
-              { "label": "Courier", "value": "Courier" },
-              { "label": "DejaVu Sans", "value": "DejaVu Sans" },
-              { "label": "Depot Condensed", "value": "Depot New Condensed" },
-              { "label": "Dico Mono", "value": "Dico Mono" },
-              { "label": "DM Sans", "value": "DM Sans" },
-              { "label": "Etica Mono", "value": "LFT Etica Mono" },
-              { "label": "Georgia", "value": "Georgia" },
-              { "label": "iA Writer Mono", "value": "iA Writer Mono S" },
-              { "label": "iA Writer Duo", "value": "iA Writer Duospace" },
-              { "label": "iA Writer Quattro", "value": "iA Writer Quattro S" },
-              { "label": "IBM Plex Sans", "value": "IBM Plex Sans" },
-              { "label": "IBM Plex Mono", "value": "IBM Plex Mono" },
-              { "label": "IBM Plex Serif", "value": "IBM Plex Serif" },
-              { "label": "Inter", "value": "Inter" },
-              { "label": "JetBrains Mono", "value": "JetBrains Mono" },
-              { "label": "Lato", "value": "Lato" },
-              { "label": "Lucida Sans", "value": "Lucida Sans Std" },
+              { "label": "Avenir Next", "value": "edit-font-Avenir-Next" },
+              { "label": "Bear Sans", "value": "edit-font-Bear-Sans" },
+              { "label": "Candara", "value": "edit-font-Candara" },
+              { "label": "Cambria", "value": "edit-font-Cambria" },
+              { "label": "Cascadia Mono", "value": "edit-font-Cascadia-Mono" },
+              { "label": "Courier", "value": "edit-font-Courier" },
+              { "label": "DejaVu Sans", "value": "edit-font-DejaVu-Sans" },
+              {
+                "label": "Depot Condensed",
+                "value": "edit-font-Depot-Condensed"
+              },
+              { "label": "Dico Mono", "value": "edit-font-Dico-Mono" },
+              { "label": "DM Sans", "value": "edit-font-DM-Sans" },
+              { "label": "Etica Mono", "value": "edit-font-Etica-Mono" },
+              { "label": "Georgia", "value": "edit-font-Georgia" },
+              {
+                "label": "iA Writer Mono",
+                "value": "edit-font-iA-Writer-Mono"
+              },
+              { "label": "iA Writer Duo", "value": "edit-font-iA-Writer-Duo" },
+              {
+                "label": "iA Writer Quattro",
+                "value": "edit-font-iA-Writer-Quattro"
+              },
+              { "label": "IBM Plex Sans", "value": "edit-font-IBM-Plex-Sans" },
+              { "label": "IBM Plex Mono", "value": "edit-font-IBM-Plex-Mono" },
+              {
+                "label": "IBM Plex Serif",
+                "value": "edit-font-IBM-Plex-Serif"
+              },
+              { "label": "Inter", "value": "edit-font-Inter" },
+              {
+                "label": "JetBrains Mono",
+                "value": "edit-font-JetBrains-Mono"
+              },
+              { "label": "Lato", "value": "edit-font-Lato" },
+              { "label": "Lucida Sans", "value": "edit-font-Lucida-Sans" },
               {
                 "label": "Lucida Typewriter",
-                "value": "Lucida Typewriter Std"
+                "value": "edit-font-Lucida-Typewriter"
               },
-              { "label": "Maison Neue", "value": "Maison Neue" },
-              { "label": "Maison Neue Mono", "value": "Maison Neue Mono" },
-              { "label": "Menlo", "value": "Menlo" },
-              { "label": "Muli", "value": "Muli" },
-              { "label": "Myriad", "value": "Myriad Pro" },
-              { "label": "Nexus Typewriter", "value": "Nexus Typewriter Pro" },
-              { "label": "Norms", "value": "TT Norms" },
-              { "label": "Norms Condensed", "value": "TT Norms Std Condensed" },
-              { "label": "Noto Sans", "value": "Noto Sans" },
-              { "label": "Office Code", "value": "Office Code Pro D" },
-              { "label": "Officina Sans", "value": "ITC Officina Sans Std" },
+              { "label": "Maison Neue", "value": "edit-font-Maison-Neue" },
+              {
+                "label": "Maison Neue Mono",
+                "value": "edit-font-Maison-Neue-Mono"
+              },
+              { "label": "Menlo", "value": "edit-font-Menlo" },
+              { "label": "Muli", "value": "edit-font-Muli" },
+              { "label": "Myriad", "value": "edit-font-Myriad" },
+              {
+                "label": "Nexus Typewriter",
+                "value": "edit-font-Nexus-Typewriter"
+              },
+              { "label": "Norms", "value": "edit-font-Norms" },
+              {
+                "label": "Norms Condensed",
+                "value": "edit-font-Norms-Condensed"
+              },
+              { "label": "Noto Sans", "value": "edit-font-Noto-Sans" },
+              { "label": "Office Code", "value": "edit-font-Office-Code" },
+              { "label": "Officina Sans", "value": "edit-font-Officina-Sans" },
               {
                 "label": "Officina Sans Serif",
-                "value": "ITC Officina Serif Std"
+                "value": "edit-font-Officina-Sans-Serif"
               },
-              { "label": "Overpass", "value": "Overpass" },
-              { "label": "Palatino Sans", "value": "Palatino Sans Com" },
+              { "label": "Overpass", "value": "edit-font-Overpass" },
+              { "label": "Palatino Sans", "value": "edit-font-Palatino-Sans" },
               {
                 "label": "Palatino Sans Informal",
-                "value": "Palatino Sans Informal LT Pro"
+                "value": "edit-font-Palatino-Sans-Informal"
               },
-              { "label": "PT Sans", "value": "PT Sans" },
-              { "label": "Questa", "value": "Questa" },
-              { "label": "Questa Sans", "value": "Questa Sans" },
-              { "label": "Questa Slab", "value": "Questa Slab" },
-              { "label": "Roboto", "value": "Roboto" },
-              { "label": "Rockwell", "value": "Rockwell" },
-              { "label": "Sans serif de base", "value": "sans-serif" },
-              { "label": "Siseriff", "value": "Siseriff LT Std" },
-              { "label": "Space Mono", "value": "Space Mono" },
-              { "label": "Stone Humanist", "value": "Stone Humanist ITC Pro" },
-              { "label": "Stone Informal", "value": "Stone Informal ITC Pro" },
-              { "label": "Stone Sans II", "value": "Stone Sans II ITC Com" },
-              { "label": "Stone Serif", "value": "Stone Serif ITC Pro" },
-              { "label": "Source Code", "value": "Source Code Pro" },
-              { "label": "Source Sans 3", "value": "Source Sans 3" },
-              { "label": "Source Serif", "value": "Source Serif Pro" },
-              { "label": "Tisa", "value": "Tisa Pro" },
-              { "label": "Tisa Sans", "value": "Tisa Sans Pro" },
-              { "label": "Trebuchet", "value": "Trebuchet MS" },
-              { "label": "Verdana", "value": "Verdana" }
+              { "label": "PT Sans", "value": "edit-font-PT-Sans" },
+              { "label": "Questa", "value": "edit-font-Questa" },
+              { "label": "Questa Sans", "value": "edit-font-Questa-Sans" },
+              { "label": "Questa Slab", "value": "edit-font-Questa-Slab" },
+              { "label": "Roboto", "value": "edit-font-Roboto" },
+              { "label": "Rockwell", "value": "edit-font-Rockwell" },
+              {
+                "label": "Sans serif de base",
+                "value": "edit-font-sans-serif"
+              },
+              { "label": "Siseriff", "value": "edit-font-Siseriff" },
+              { "label": "Space Mono", "value": "edit-font-Space-Mono" },
+              {
+                "label": "Stone Humanist",
+                "value": "edit-font-Stone-Humanist"
+              },
+              {
+                "label": "Stone Informal",
+                "value": "edit-font-Stone-Informal"
+              },
+              { "label": "Stone Sans II", "value": "edit-font-Stone-Sans-II" },
+              { "label": "Stone Serif", "value": "edit-font-Stone-Serif" },
+              { "label": "Source Code", "value": "edit-font-Source-Code" },
+              { "label": "Source Sans 3", "value": "edit-font-Source-Sans-3" },
+              { "label": "Source Serif", "value": "edit-font-Source-Serif" },
+              { "label": "Tisa", "value": "edit-font-Tisa" },
+              { "label": "Tisa Sans", "value": "edit-font-Tisa-Sans" },
+              { "label": "Trebuchet", "value": "edit-font-Trebuchet" },
+              { "label": "Verdana", "value": "edit-font-Verdana" }
             ]
           },
           {
-            "id": "OT-editMode-text-size",
+            "id": "OT-edit-text-size",
             "title": "Body text size [px]",
             "title.fr": "Taille des caractères [px]",
             "type": "variable-number",
-            "default": 18,
+            "default": 17,
             "format": "px"
           },
           {
-            "id": "OT-editMode-line-height",
+            "id": "OT-edit-natural-line-height",
+            "title": "Natural line height for the chosen font (Edit mode)",
+            "title.fr": "Interligne naturel pour la fonte choisie (en écriture)",
+            "description": "When ON, Editing mode uses more or less the line-height intended by the font designer and the following value is ignored.",
+            "description.fr": "ON signifie qu’en écriture, l’interligne sera plus ou moins celui prévu par le créateur de la fonte et la valeur ci-dessous est ignorée.",
+            "type": "class-toggle",
+            "default": false,
+            "addCommand": true
+          },
+          {
+            "id": "OT-edit-line-height",
             "title": "Line height [em]",
             "title.fr": "Interligne [em]",
             "type": "variable-number",
-            "default": 1.4,
+            "default": 1.5,
             "format": "em"
           },
           {
-            "id": "OT-editMode-line-width",
+            "id": "OT-edit-line-width",
             "title": "Line length [em]",
             "title.fr": "Longueur de la ligne [em]",
             "description": "By default, you get longer lines than plain Obsidian.",
@@ -59439,12 +59744,30 @@
             "format": "em"
           },
           {
-            "id": "OT-editMode-tableText-percent",
-            "title": "Size of the text in table cells, in percents of the body text. 100 = same size",
+            "id": "OT-edit-table-text-percent",
+            "title": "Size of the text in table cells (% of body text size). 100 = same size",
             "title.fr": "Taille des caractères dans les tables, en pourcents du texte normal. 100 = même taille",
             "description": "It’s generally practical to have a smaller text size inside table cells.",
             "type": "variable-number",
             "default": 90
+          },
+          {
+            "id": "OT-table-cell-edit-size-lock",
+            "title": "While editing a table, the chosen text size sticks.",
+            "title.fr": "En mode Live editing, la taille du texte des cellules ne change pas.",
+            "description": "OFF ⭢ When editing a table cell in Live mode, the text size changes to body text size.",
+            "description.fr": "OFF ⭢ En mode Live editing, le texte de la cellule courante prend la taille du texte normal.",
+            "type": "class-toggle",
+            "default": true,
+            "addCommand": true
+          },
+          {
+            "id": "OT-img-max-height-live",
+            "title": "Images max height in Live Preview [in pixels]",
+            "title.fr": "Hauteur maximale des images en “Live Preview” [en pixels]",
+            "type": "variable-number",
+            "default": 150,
+            "format": "px"
           },
           {
             "id": "OlivierPS-support",
@@ -76271,7 +76594,7 @@
             "allowEmpty": false,
             "default": "var(--rp-rose)",
             "options": [
-              { "label": "Lovesans-serif", "value": "var(--rp-love)" },
+              { "label": "Love", "value": "var(--rp-love)" },
               { "label": "Rose", "value": "var(--rp-rose)" },
               { "label": "Gold", "value": "var(--rp-gold)" },
               { "label": "Iris", "value": "var(--rp-iris)" },

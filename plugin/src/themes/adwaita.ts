@@ -1168,6 +1168,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
 }
 
 html[saved-theme="dark"] body h1 {
+  --font-weight: var(--h1-weight, 900);
   color: var(--h1-color, rgb(255, 255, 255));
 }
 
@@ -1307,6 +1308,11 @@ html[saved-theme="dark"] body ol.overflow {
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
+  --icon-color: var(--adwaita-headerbar-fg-color, #ffffff);
+  --icon-color-focused: var(--adwaita-headerbar-fg-color, #ffffff);
+  --icon-color-hover: var(--adwaita-headerbar-fg-color, #ffffff);
+  --tab-text-color-focused: var(--adwaita-headerbar-fg-color, #ffffff);
+  --tab-text-color-focused-active-current: var(--adwaita-headerbar-fg-color, #ffffff);
   background-color: var(--tab-container-background, rgb(48, 48, 48));
 }
 
@@ -2528,6 +2534,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
 }
 
 html[saved-theme="light"] body h1 {
+  --font-weight: var(--h1-weight, 900);
   color: var(--h1-color, rgba(0, 0, 0, 0.8));
 }
 
@@ -2667,6 +2674,11 @@ html[saved-theme="light"] body ol.overflow {
 }
 
 html[saved-theme="light"] body .stacked-page-header {
+  --icon-color: var(--adwaita-headerbar-fg-color, rgba(0, 0, 0, 0.8));
+  --icon-color-focused: var(--adwaita-headerbar-fg-color, rgba(0, 0, 0, 0.8));
+  --icon-color-hover: var(--adwaita-headerbar-fg-color, rgba(0, 0, 0, 0.8));
+  --tab-text-color-focused: var(--adwaita-headerbar-fg-color, rgba(0, 0, 0, 0.8));
+  --tab-text-color-focused-active-current: var(--adwaita-headerbar-fg-color, rgba(0, 0, 0, 0.8));
   background-color: var(--tab-container-background, rgb(255, 255, 255));
 }
 

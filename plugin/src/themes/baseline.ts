@@ -335,6 +335,160 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.1);
+  --background-modifier-border: rgb(var(--gray-80));
+  --background-modifier-border-focus: rgb(var(--gray-70));
+  --background-modifier-border-hover: rgb(var(--gray-80));
+  --background-modifier-hover: rgba(var(--gray-50), 0.16);
+  --background-primary: rgb(var(--gray-100));
+  --background-primary-alt: rgb(var(--gray-90));
+  --background-secondary: rgb(var(--gray-90));
+  --background-secondary-alt: rgb(var(--gray-80));
+  --bases-cards-background: var(--background-primary, #1e1e1e);
+  --bases-cards-cover-background: var(--background-primary-alt, #242424);
+  --bases-embed-border-color: var(--background-modifier-border, #363636);
+  --bases-group-heading-property-color: var(--text-muted, #b3b3b3);
+  --bases-table-border-color: var(--table-border-color, #363636);
+  --bases-table-cell-background-active: var(--background-primary, #1e1e1e);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #242424);
+  --bases-table-cell-background-selected: var(--table-selection, hsla(258, 88%, 66%, 0.1));
+  --bases-table-group-background: var(--background-primary-alt, #242424);
+  --bases-table-header-background: var(--background-primary, #262626);
+  --bases-table-header-background-hover: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+  --bases-table-header-color: var(--text-muted, #666666);
+  --bases-table-row-background-hover: var(--table-row-background-hover, transparent);
+  --bases-table-summary-background: var(--background-primary, #1e1e1e);
+  --bases-table-summary-background-hover: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+  --canvas-background: var(--background-primary, #1e1e1e);
+  --canvas-card-label-color: var(--text-faint, #666666);
+  --canvas-dot-pattern: var(--color-base-30, #363636);
+  --caret-color: var(--text-normal, #dadada);
+  --checkbox-border-color: var(--text-faint, #666666);
+  --checkbox-border-color-hover: var(--text-muted, #b3b3b3);
+  --checkbox-marker-color: var(--background-primary, #1e1e1e);
+  --checklist-done-color: var(--text-muted, #b3b3b3);
+  --code-background: var(--background-primary-alt, #242424);
+  --code-border-color: var(--background-modifier-border, #363636);
+  --code-bracket-background: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+  --collapse-icon-color: var(--text-faint, #666666);
+  --collapse-icon-color-collapsed: var(--text-accent, #b3b3b3);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(calc(var(--accent-h) - 3), calc(var(--accent-s)*1.02), calc(var(--accent-l)*1.15));
+  --color-accent-2: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s)*1.05), calc(var(--accent-l)*1.29));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --divider-color: var(--background-modifier-border, #363636);
+  --flair-background: var(--interactive-normal, #363636);
+  --flair-color: var(--text-normal, #dadada);
+  --footnote-divider-color: var(--metadata-divider-color, #363636);
+  --footnote-divider-color-active: var(--metadata-divider-color-focus, transparent);
+  --footnote-id-color: var(--text-muted, #b3b3b3);
+  --footnote-id-color-no-occurrences: var(--text-faint, #666666);
+  --footnote-input-background: var(--metadata-input-background, transparent);
+  --footnote-input-background-active: var(--metadata-input-background-active, rgba(255, 255, 255, 0.067));
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
+  --graph-node: var(--text-muted, #b3b3b3);
+  --graph-node-focused: var(--text-accent, hsl(255, 89.76%, 75.9%));
+  --graph-node-unresolved: var(--text-faint, #666666);
+  --graph-text: var(--text-normal, #dadada);
+  --heading-formatting: var(--text-faint, #666666);
+  --hr-color: var(--background-modifier-border, #363636);
+  --icon-color: var(--text-muted, #b3b3b3);
+  --icon-color-active: var(--text-accent, hsl(255, 89.76%, 75.9%));
+  --icon-color-focused: var(--text-normal, #dadada);
+  --icon-color-hover: var(--text-muted, #b3b3b3);
+  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
+  --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
+  --input-date-separator: var(--text-faint, #666666);
+  --input-placeholder-color: var(--text-faint, #666666);
+  --input-shadow: 0 0 0 var(--input-border-width) var(--background-modifier-border-hover);
+  --input-shadow-hover: 0 0 0 var(--input-border-width) var(--background-modifier-border-hover);
+  --interactive-accent-hsl: var(--color-accent-hsl, 258, 88%, 66%);
+  --interactive-hover: rgba(var(--gray-80), 0.5);
+  --interactive-normal: rgb(var(--gray-90));
+  --list-marker-color: var(--text-faint, #666666);
+  --list-marker-color-collapsed: var(--text-accent, hsl(255, 89.76%, 75.9%));
+  --list-marker-color-hover: var(--text-muted, #b3b3b3);
+  --menu-background: var(--background-secondary, #262626);
+  --metadata-border-color: var(--background-modifier-border, #363636);
+  --metadata-divider-color: var(--background-modifier-border, #363636);
+  --metadata-input-background-active: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+  --metadata-input-text-color: var(--text-normal, #dadada);
+  --metadata-label-background-active: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+  --metadata-label-text-color: var(--text-muted, #b3b3b3);
+  --metadata-label-text-color-hover: var(--text-muted, #b3b3b3);
+  --metadata-property-background-active: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+  --nav-collapse-icon-color: var(--collapse-icon-color, #666666);
+  --nav-collapse-icon-color-collapsed: var(--text-faint, #666666);
+  --nav-heading-color: var(--text-normal, #dadada);
+  --nav-heading-color-collapsed: var(--text-faint, #666666);
+  --nav-heading-color-collapsed-hover: var(--text-muted, #b3b3b3);
+  --nav-heading-color-hover: var(--text-normal, #dadada);
+  --nav-indentation-guide-color: var(--indentation-guide-color, rgba(255, 255, 255, 0.12));
+  --nav-item-background-active: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+  --nav-item-background-hover: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+  --nav-item-color: var(--text-muted, #b3b3b3);
+  --nav-item-color-active: var(--text-normal, #dadada);
+  --nav-item-color-highlighted: var(--text-accent, hsl(255, 89.76%, 75.9%));
+  --nav-item-color-hover: var(--text-normal, #dadada);
+  --nav-item-color-selected: var(--text-normal, #dadada);
+  --nav-tag-color: var(--text-faint, #666666);
+  --nav-tag-color-active: var(--text-muted, #b3b3b3);
+  --nav-tag-color-hover: var(--text-muted, #b3b3b3);
+  --pdf-background: var(--background-primary, #1e1e1e);
+  --pdf-page-background: var(--background-primary, #1e1e1e);
+  --pdf-sidebar-background: var(--background-primary, #1e1e1e);
+  --pill-color: var(--text-muted, #b3b3b3);
+  --pill-color-hover: var(--text-normal, #dadada);
+  --pill-color-remove: var(--text-faint, #666666);
+  --pill-color-remove-hover: var(--text-accent, hsl(255, 89.76%, 75.9%));
+  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
+  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
+  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
+  --search-clear-button-color: var(--text-muted, #b3b3b3);
+  --search-icon-color: var(--text-muted, #b3b3b3);
+  --search-result-background: var(--background-primary, #1e1e1e);
+  --slider-thumb-border-color: var(--background-modifier-border-hover, #3f3f3f);
+  --slider-track-background: var(--background-modifier-border, #363636);
+  --status-bar-background: var(--background-secondary, #262626);
+  --status-bar-border-color: var(--divider-color, #363636);
+  --status-bar-text-color: var(--text-muted, #b3b3b3);
+  --tab-background-active: var(--background-primary, #1e1e1e);
+  --tab-outline-color: var(--divider-color, #363636);
+  --tab-switcher-background: var(--background-secondary, #262626);
+  --tab-switcher-menubar-background: var(--mobile-sidebar-background, linear-gradient(to top, #262626, transparent));
+  --tab-text-color: var(--text-faint, #666666);
+  --tab-text-color-active: var(--text-muted, #b3b3b3);
+  --tab-text-color-focused: var(--text-muted, #b3b3b3);
+  --tab-text-color-focused-active: var(--text-muted, #dadada);
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(255, 89.76%, 75.9%));
+  --table-add-button-border-color: var(--background-modifier-border, #363636);
+  --table-border-color: var(--background-modifier-border, #363636);
+  --table-column-alt-background: var(--table-background, transparent);
+  --table-drag-handle-color: var(--text-faint, #666666);
+  --table-header-background: var(--table-background, transparent);
+  --table-header-color: var(--text-normal, #dadada);
+  --table-row-alt-background: var(--table-background, transparent);
+  --table-row-alt-background-hover: var(--table-background, transparent);
+  --table-row-background-hover: var(--table-background, transparent);
+  --table-selection: hsla(var(--color-accent-hsl), 0.1);
+  --table-selection-blend-mode: var(--highlight-mix-blend-mode, lighten);
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-color: var(--text-accent, hsl(255, 89.76%, 75.9%));
+  --tag-color-hover: var(--text-accent, hsl(255, 89.76%, 75.9%));
+  --text-accent: var(--color-accent-1, hsl(255, 89.76%, 75.9%));
+  --text-accent-hover: var(--color-accent-2, hsl(253, 92.4%, 85.14%));
+  --text-faint: rgb(var(--gray-60));
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+  --text-muted: rgb(var(--gray-30));
+  --text-normal: rgb(var(--gray-10));
+  --titlebar-border-color: var(--background-modifier-border, #363636);
+  --titlebar-text-color: var(--text-muted, #b3b3b3);
+  --titlebar-text-color-focused: var(--text-normal, #dadada);
+  --vault-profile-color: var(--text-normal, #dadada);
+  --vault-profile-color-hover: var(--vault-profile-color, #dadada);
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
@@ -347,6 +501,160 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.1);
+  --background-modifier-border: rgb(var(--gray-80));
+  --background-modifier-border-focus: rgb(var(--gray-70));
+  --background-modifier-border-hover: rgb(var(--gray-80));
+  --background-modifier-hover: rgba(var(--gray-50), 0.16);
+  --background-primary: rgb(var(--gray-100));
+  --background-primary-alt: rgb(var(--gray-90));
+  --background-secondary: rgb(var(--gray-90));
+  --background-secondary-alt: rgb(var(--gray-80));
+  --bases-cards-background: var(--background-primary, #1e1e1e);
+  --bases-cards-cover-background: var(--background-primary-alt, #242424);
+  --bases-embed-border-color: var(--background-modifier-border, #363636);
+  --bases-group-heading-property-color: var(--text-muted, #b3b3b3);
+  --bases-table-border-color: var(--table-border-color, #363636);
+  --bases-table-cell-background-active: var(--background-primary, #1e1e1e);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #242424);
+  --bases-table-cell-background-selected: var(--table-selection, hsla(258, 88%, 66%, 0.1));
+  --bases-table-group-background: var(--background-primary-alt, #242424);
+  --bases-table-header-background: var(--background-primary, #262626);
+  --bases-table-header-background-hover: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+  --bases-table-header-color: var(--text-muted, #666666);
+  --bases-table-row-background-hover: var(--table-row-background-hover, transparent);
+  --bases-table-summary-background: var(--background-primary, #1e1e1e);
+  --bases-table-summary-background-hover: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+  --canvas-background: var(--background-primary, #1e1e1e);
+  --canvas-card-label-color: var(--text-faint, #666666);
+  --canvas-dot-pattern: var(--color-base-30, #363636);
+  --caret-color: var(--text-normal, #dadada);
+  --checkbox-border-color: var(--text-faint, #666666);
+  --checkbox-border-color-hover: var(--text-muted, #b3b3b3);
+  --checkbox-marker-color: var(--background-primary, #1e1e1e);
+  --checklist-done-color: var(--text-muted, #b3b3b3);
+  --code-background: var(--background-primary-alt, #242424);
+  --code-border-color: var(--background-modifier-border, #363636);
+  --code-bracket-background: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+  --collapse-icon-color: var(--text-faint, #666666);
+  --collapse-icon-color-collapsed: var(--text-accent, #b3b3b3);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(calc(var(--accent-h) - 3), calc(var(--accent-s)*1.02), calc(var(--accent-l)*1.15));
+  --color-accent-2: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s)*1.05), calc(var(--accent-l)*1.29));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --divider-color: var(--background-modifier-border, #363636);
+  --flair-background: var(--interactive-normal, #363636);
+  --flair-color: var(--text-normal, #dadada);
+  --footnote-divider-color: var(--metadata-divider-color, #363636);
+  --footnote-divider-color-active: var(--metadata-divider-color-focus, transparent);
+  --footnote-id-color: var(--text-muted, #b3b3b3);
+  --footnote-id-color-no-occurrences: var(--text-faint, #666666);
+  --footnote-input-background: var(--metadata-input-background, transparent);
+  --footnote-input-background-active: var(--metadata-input-background-active, rgba(255, 255, 255, 0.067));
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
+  --graph-node: var(--text-muted, #b3b3b3);
+  --graph-node-focused: var(--text-accent, hsl(255, 89.76%, 75.9%));
+  --graph-node-unresolved: var(--text-faint, #666666);
+  --graph-text: var(--text-normal, #dadada);
+  --heading-formatting: var(--text-faint, #666666);
+  --hr-color: var(--background-modifier-border, #363636);
+  --icon-color: var(--text-muted, #b3b3b3);
+  --icon-color-active: var(--text-accent, hsl(255, 89.76%, 75.9%));
+  --icon-color-focused: var(--text-normal, #dadada);
+  --icon-color-hover: var(--text-muted, #b3b3b3);
+  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
+  --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
+  --input-date-separator: var(--text-faint, #666666);
+  --input-placeholder-color: var(--text-faint, #666666);
+  --input-shadow: 0 0 0 var(--input-border-width) var(--background-modifier-border-hover);
+  --input-shadow-hover: 0 0 0 var(--input-border-width) var(--background-modifier-border-hover);
+  --interactive-accent-hsl: var(--color-accent-hsl, 258, 88%, 66%);
+  --interactive-hover: rgba(var(--gray-80), 0.5);
+  --interactive-normal: rgb(var(--gray-90));
+  --list-marker-color: var(--text-faint, #666666);
+  --list-marker-color-collapsed: var(--text-accent, hsl(255, 89.76%, 75.9%));
+  --list-marker-color-hover: var(--text-muted, #b3b3b3);
+  --menu-background: var(--background-secondary, #262626);
+  --metadata-border-color: var(--background-modifier-border, #363636);
+  --metadata-divider-color: var(--background-modifier-border, #363636);
+  --metadata-input-background-active: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+  --metadata-input-text-color: var(--text-normal, #dadada);
+  --metadata-label-background-active: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+  --metadata-label-text-color: var(--text-muted, #b3b3b3);
+  --metadata-label-text-color-hover: var(--text-muted, #b3b3b3);
+  --metadata-property-background-active: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+  --nav-collapse-icon-color: var(--collapse-icon-color, #666666);
+  --nav-collapse-icon-color-collapsed: var(--text-faint, #666666);
+  --nav-heading-color: var(--text-normal, #dadada);
+  --nav-heading-color-collapsed: var(--text-faint, #666666);
+  --nav-heading-color-collapsed-hover: var(--text-muted, #b3b3b3);
+  --nav-heading-color-hover: var(--text-normal, #dadada);
+  --nav-indentation-guide-color: var(--indentation-guide-color, rgba(255, 255, 255, 0.12));
+  --nav-item-background-active: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+  --nav-item-background-hover: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+  --nav-item-color: var(--text-muted, #b3b3b3);
+  --nav-item-color-active: var(--text-normal, #dadada);
+  --nav-item-color-highlighted: var(--text-accent, hsl(255, 89.76%, 75.9%));
+  --nav-item-color-hover: var(--text-normal, #dadada);
+  --nav-item-color-selected: var(--text-normal, #dadada);
+  --nav-tag-color: var(--text-faint, #666666);
+  --nav-tag-color-active: var(--text-muted, #b3b3b3);
+  --nav-tag-color-hover: var(--text-muted, #b3b3b3);
+  --pdf-background: var(--background-primary, #1e1e1e);
+  --pdf-page-background: var(--background-primary, #1e1e1e);
+  --pdf-sidebar-background: var(--background-primary, #1e1e1e);
+  --pill-color: var(--text-muted, #b3b3b3);
+  --pill-color-hover: var(--text-normal, #dadada);
+  --pill-color-remove: var(--text-faint, #666666);
+  --pill-color-remove-hover: var(--text-accent, hsl(255, 89.76%, 75.9%));
+  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
+  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
+  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
+  --search-clear-button-color: var(--text-muted, #b3b3b3);
+  --search-icon-color: var(--text-muted, #b3b3b3);
+  --search-result-background: var(--background-primary, #1e1e1e);
+  --slider-thumb-border-color: var(--background-modifier-border-hover, #3f3f3f);
+  --slider-track-background: var(--background-modifier-border, #363636);
+  --status-bar-background: var(--background-secondary, #262626);
+  --status-bar-border-color: var(--divider-color, #363636);
+  --status-bar-text-color: var(--text-muted, #b3b3b3);
+  --tab-background-active: var(--background-primary, #1e1e1e);
+  --tab-outline-color: var(--divider-color, #363636);
+  --tab-switcher-background: var(--background-secondary, #262626);
+  --tab-switcher-menubar-background: var(--mobile-sidebar-background, linear-gradient(to top, #262626, transparent));
+  --tab-text-color: var(--text-faint, #666666);
+  --tab-text-color-active: var(--text-muted, #b3b3b3);
+  --tab-text-color-focused: var(--text-muted, #b3b3b3);
+  --tab-text-color-focused-active: var(--text-muted, #dadada);
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(255, 89.76%, 75.9%));
+  --table-add-button-border-color: var(--background-modifier-border, #363636);
+  --table-border-color: var(--background-modifier-border, #363636);
+  --table-column-alt-background: var(--table-background, transparent);
+  --table-drag-handle-color: var(--text-faint, #666666);
+  --table-header-background: var(--table-background, transparent);
+  --table-header-color: var(--text-normal, #dadada);
+  --table-row-alt-background: var(--table-background, transparent);
+  --table-row-alt-background-hover: var(--table-background, transparent);
+  --table-row-background-hover: var(--table-background, transparent);
+  --table-selection: hsla(var(--color-accent-hsl), 0.1);
+  --table-selection-blend-mode: var(--highlight-mix-blend-mode, lighten);
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-color: var(--text-accent, hsl(255, 89.76%, 75.9%));
+  --tag-color-hover: var(--text-accent, hsl(255, 89.76%, 75.9%));
+  --text-accent: var(--color-accent-1, hsl(255, 89.76%, 75.9%));
+  --text-accent-hover: var(--color-accent-2, hsl(253, 92.4%, 85.14%));
+  --text-faint: rgb(var(--gray-60));
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+  --text-muted: rgb(var(--gray-30));
+  --text-normal: rgb(var(--gray-10));
+  --titlebar-border-color: var(--background-modifier-border, #363636);
+  --titlebar-text-color: var(--text-muted, #b3b3b3);
+  --titlebar-text-color-focused: var(--text-normal, #dadada);
+  --vault-profile-color: var(--text-normal, #dadada);
+  --vault-profile-color-hover: var(--vault-profile-color, #dadada);
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgba(0, 0, 0, 0);
 }`,
@@ -1336,6 +1644,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="check
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -1367,6 +1676,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -1396,6 +1706,9 @@ html[saved-theme="dark"] body .callout[data-callout="banner-icon"] {
   --banner-icon-size: 0px;
   --banner-image-height: 0px;
   --banner-image-radius: 8px;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --block-width-max: calc(100cqw - 64px);
   --block-width-offset: -32px;
   --block-width-wide: min(100cqw, 50rem);
@@ -1485,6 +1798,7 @@ html[saved-theme="dark"] body .callout[data-callout="banner-icon"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', Inter, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -1737,6 +2051,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -1768,6 +2083,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -1799,6 +2115,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -1830,6 +2147,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -1861,6 +2179,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -1892,6 +2211,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -1921,6 +2241,9 @@ html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
   --banner-icon-size: 0px;
   --banner-image-height: 0px;
   --banner-image-radius: 8px;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --block-width-max: calc(100cqw - 64px);
   --block-width-offset: -32px;
   --block-width-wide: min(100cqw, 50rem);
@@ -2010,6 +2333,7 @@ html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', Inter, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -2262,6 +2586,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -2288,6 +2613,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -2319,6 +2645,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -2350,6 +2677,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -2381,6 +2709,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -2412,6 +2741,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -2542,6 +2872,12 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --icon-size: var(--icon-xs, 14px);
+  --icon-stroke: var(--icon-xs-stroke-width, 2.25px);
+  --pill-padding-x: var(--tag-padding-x, 8px);
+  --pill-padding-y: var(--tag-padding-y, 4px);
+  --pill-radius: var(--tag-radius, 8px);
+  --pill-weight: var(--tag-weight, 500);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -2683,6 +3019,12 @@ html[saved-theme="dark"] body .metadata-properties {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --icon-size: var(--icon-xs, 14px);
+  --icon-stroke: var(--icon-xs-stroke-width, 2.25px);
+  --pill-padding-x: var(--tag-padding-x, 8px);
+  --pill-padding-y: var(--tag-padding-y, 4px);
+  --pill-radius: var(--tag-radius, 8px);
+  --pill-weight: var(--tag-weight, 500);
   border-radius: 8px;
 }
 
@@ -3053,6 +3395,161 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.1);
+  --background-modifier-border: rgb(var(--gray-80));
+  --background-modifier-border-focus: rgb(var(--gray-70));
+  --background-modifier-border-hover: rgb(var(--gray-80));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, #ffffff);
+  --background-modifier-hover: rgba(var(--gray-50), 0.16);
+  --background-primary: rgb(var(--gray-100));
+  --background-primary-alt: rgb(var(--gray-90));
+  --background-secondary: rgb(var(--gray-90));
+  --background-secondary-alt: rgb(var(--gray-80));
+  --bases-cards-background: var(--background-primary, #ffffff);
+  --bases-cards-cover-background: var(--background-primary-alt, #fafafa);
+  --bases-embed-border-color: var(--background-modifier-border, #e0e0e0);
+  --bases-group-heading-property-color: var(--text-muted, #5c5c5c);
+  --bases-table-border-color: var(--table-border-color, #e0e0e0);
+  --bases-table-cell-background-active: var(--background-primary, #ffffff);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #fafafa);
+  --bases-table-cell-background-selected: var(--table-selection, hsla(258, 88%, 66%, 0.1));
+  --bases-table-group-background: var(--background-primary-alt, #fafafa);
+  --bases-table-header-background: var(--background-primary, #f6f6f6);
+  --bases-table-header-background-hover: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+  --bases-table-header-color: var(--text-muted, #ababab);
+  --bases-table-row-background-hover: var(--table-row-background-hover, transparent);
+  --bases-table-summary-background: var(--background-primary, #ffffff);
+  --bases-table-summary-background-hover: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+  --canvas-background: var(--background-primary, #ffffff);
+  --canvas-card-label-color: var(--text-faint, #ababab);
+  --canvas-dot-pattern: var(--color-base-30, #e0e0e0);
+  --caret-color: var(--text-normal, #222222);
+  --checkbox-border-color: var(--text-faint, #ababab);
+  --checkbox-border-color-hover: var(--text-muted, #5c5c5c);
+  --checkbox-marker-color: var(--background-primary, #ffffff);
+  --checklist-done-color: var(--text-muted, #5c5c5c);
+  --code-background: var(--background-primary-alt, #fafafa);
+  --code-border-color: var(--background-modifier-border, #e0e0e0);
+  --code-bracket-background: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+  --collapse-icon-color: var(--text-faint, #ababab);
+  --collapse-icon-color-collapsed: var(--text-accent, #5c5c5c);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(calc(var(--accent-h) - 3), calc(var(--accent-s)*1.02), calc(var(--accent-l)*1.15));
+  --color-accent-2: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s)*1.05), calc(var(--accent-l)*1.29));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --divider-color: var(--background-modifier-border, #e0e0e0);
+  --flair-background: var(--interactive-normal, #ffffff);
+  --flair-color: var(--text-normal, #222222);
+  --footnote-divider-color: var(--metadata-divider-color, #e0e0e0);
+  --footnote-divider-color-active: var(--metadata-divider-color-focus, transparent);
+  --footnote-id-color: var(--text-muted, #5c5c5c);
+  --footnote-id-color-no-occurrences: var(--text-faint, #ababab);
+  --footnote-input-background: var(--metadata-input-background, transparent);
+  --footnote-input-background-active: var(--metadata-input-background-active, rgba(0, 0, 0, 0.067));
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
+  --graph-node: var(--text-muted, #5c5c5c);
+  --graph-node-focused: var(--text-accent, hsl(258, 88%, 66%));
+  --graph-node-unresolved: var(--text-faint, #ababab);
+  --graph-text: var(--text-normal, #222222);
+  --heading-formatting: var(--text-faint, #ababab);
+  --hr-color: var(--background-modifier-border, #e0e0e0);
+  --icon-color: var(--text-muted, #5c5c5c);
+  --icon-color-active: var(--text-accent, hsl(258, 88%, 66%));
+  --icon-color-focused: var(--text-normal, #222222);
+  --icon-color-hover: var(--text-muted, #5c5c5c);
+  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
+  --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
+  --input-date-separator: var(--text-faint, #ababab);
+  --input-placeholder-color: var(--text-faint, #ababab);
+  --input-shadow: 0 0 0 var(--input-border-width) var(--background-modifier-border-hover);
+  --input-shadow-hover: 0 0 0 var(--input-border-width) var(--background-modifier-border-hover);
+  --interactive-accent-hsl: var(--color-accent-hsl, 258, 88%, 66%);
+  --interactive-hover: rgba(var(--gray-80), 0.5);
+  --interactive-normal: rgb(var(--gray-90));
+  --list-marker-color: var(--text-faint, #ababab);
+  --list-marker-color-collapsed: var(--text-accent, hsl(258, 88%, 66%));
+  --list-marker-color-hover: var(--text-muted, #5c5c5c);
+  --menu-background: var(--background-secondary, #f6f6f6);
+  --metadata-border-color: var(--background-modifier-border, #e0e0e0);
+  --metadata-divider-color: var(--background-modifier-border, #e0e0e0);
+  --metadata-input-background-active: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+  --metadata-input-text-color: var(--text-normal, #222222);
+  --metadata-label-background-active: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+  --metadata-label-text-color: var(--text-muted, #5c5c5c);
+  --metadata-label-text-color-hover: var(--text-muted, #5c5c5c);
+  --metadata-property-background-active: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+  --nav-collapse-icon-color: var(--collapse-icon-color, #ababab);
+  --nav-collapse-icon-color-collapsed: var(--text-faint, #ababab);
+  --nav-heading-color: var(--text-normal, #222222);
+  --nav-heading-color-collapsed: var(--text-faint, #ababab);
+  --nav-heading-color-collapsed-hover: var(--text-muted, #5c5c5c);
+  --nav-heading-color-hover: var(--text-normal, #222222);
+  --nav-indentation-guide-color: var(--indentation-guide-color, rgba(0, 0, 0, 0.12));
+  --nav-item-background-active: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+  --nav-item-background-hover: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+  --nav-item-color: var(--text-muted, #5c5c5c);
+  --nav-item-color-active: var(--text-normal, #222222);
+  --nav-item-color-highlighted: var(--text-accent, hsl(258, 88%, 66%));
+  --nav-item-color-hover: var(--text-normal, #222222);
+  --nav-item-color-selected: var(--text-normal, #222222);
+  --nav-tag-color: var(--text-faint, #ababab);
+  --nav-tag-color-active: var(--text-muted, #5c5c5c);
+  --nav-tag-color-hover: var(--text-muted, #5c5c5c);
+  --pdf-background: var(--background-primary, #ffffff);
+  --pdf-page-background: var(--background-primary, #ffffff);
+  --pdf-sidebar-background: var(--background-primary, #ffffff);
+  --pill-color: var(--text-muted, #5c5c5c);
+  --pill-color-hover: var(--text-normal, #222222);
+  --pill-color-remove: var(--text-faint, #ababab);
+  --pill-color-remove-hover: var(--text-accent, hsl(258, 88%, 66%));
+  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
+  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
+  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
+  --search-clear-button-color: var(--text-muted, #5c5c5c);
+  --search-icon-color: var(--text-muted, #5c5c5c);
+  --search-result-background: var(--background-primary, #ffffff);
+  --slider-thumb-border-color: var(--background-modifier-border-hover, #d4d4d4);
+  --slider-track-background: var(--background-modifier-border, #e0e0e0);
+  --status-bar-background: var(--background-secondary, #f6f6f6);
+  --status-bar-border-color: var(--divider-color, #e0e0e0);
+  --status-bar-text-color: var(--text-muted, #5c5c5c);
+  --tab-background-active: var(--background-primary, #ffffff);
+  --tab-outline-color: var(--divider-color, #e0e0e0);
+  --tab-switcher-background: var(--background-secondary, #f6f6f6);
+  --tab-switcher-menubar-background: var(--mobile-sidebar-background, linear-gradient(to top, #f6f6f6, transparent));
+  --tab-text-color: var(--text-faint, #ababab);
+  --tab-text-color-active: var(--text-muted, #5c5c5c);
+  --tab-text-color-focused: var(--text-muted, #5c5c5c);
+  --tab-text-color-focused-active: var(--text-muted, #222222);
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(258, 88%, 66%));
+  --table-add-button-border-color: var(--background-modifier-border, #e0e0e0);
+  --table-border-color: var(--background-modifier-border, #e0e0e0);
+  --table-column-alt-background: var(--table-background, transparent);
+  --table-drag-handle-color: var(--text-faint, #ababab);
+  --table-header-background: var(--table-background, transparent);
+  --table-header-color: var(--text-normal, #222222);
+  --table-row-alt-background: var(--table-background, transparent);
+  --table-row-alt-background-hover: var(--table-background, transparent);
+  --table-row-background-hover: var(--table-background, transparent);
+  --table-selection: hsla(var(--color-accent-hsl), 0.1);
+  --table-selection-blend-mode: var(--highlight-mix-blend-mode, darken);
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-color: var(--text-accent, hsl(258, 88%, 66%));
+  --tag-color-hover: var(--text-accent, hsl(258, 88%, 66%));
+  --text-accent: var(--color-accent-1, hsl(258, 88%, 66%));
+  --text-accent-hover: var(--color-accent-2, hsl(255, 89.76%, 75.9%));
+  --text-faint: rgb(var(--gray-60));
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+  --text-muted: rgb(var(--gray-30));
+  --text-normal: rgb(var(--gray-10));
+  --titlebar-border-color: var(--background-modifier-border, #e0e0e0);
+  --titlebar-text-color: var(--text-muted, #5c5c5c);
+  --titlebar-text-color-focused: var(--text-normal, #222222);
+  --vault-profile-color: var(--text-normal, #222222);
+  --vault-profile-color-hover: var(--vault-profile-color, #222222);
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
@@ -3065,6 +3562,161 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.1);
+  --background-modifier-border: rgb(var(--gray-80));
+  --background-modifier-border-focus: rgb(var(--gray-70));
+  --background-modifier-border-hover: rgb(var(--gray-80));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, #ffffff);
+  --background-modifier-hover: rgba(var(--gray-50), 0.16);
+  --background-primary: rgb(var(--gray-100));
+  --background-primary-alt: rgb(var(--gray-90));
+  --background-secondary: rgb(var(--gray-90));
+  --background-secondary-alt: rgb(var(--gray-80));
+  --bases-cards-background: var(--background-primary, #ffffff);
+  --bases-cards-cover-background: var(--background-primary-alt, #fafafa);
+  --bases-embed-border-color: var(--background-modifier-border, #e0e0e0);
+  --bases-group-heading-property-color: var(--text-muted, #5c5c5c);
+  --bases-table-border-color: var(--table-border-color, #e0e0e0);
+  --bases-table-cell-background-active: var(--background-primary, #ffffff);
+  --bases-table-cell-background-disabled: var(--background-primary-alt, #fafafa);
+  --bases-table-cell-background-selected: var(--table-selection, hsla(258, 88%, 66%, 0.1));
+  --bases-table-group-background: var(--background-primary-alt, #fafafa);
+  --bases-table-header-background: var(--background-primary, #f6f6f6);
+  --bases-table-header-background-hover: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+  --bases-table-header-color: var(--text-muted, #ababab);
+  --bases-table-row-background-hover: var(--table-row-background-hover, transparent);
+  --bases-table-summary-background: var(--background-primary, #ffffff);
+  --bases-table-summary-background-hover: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+  --canvas-background: var(--background-primary, #ffffff);
+  --canvas-card-label-color: var(--text-faint, #ababab);
+  --canvas-dot-pattern: var(--color-base-30, #e0e0e0);
+  --caret-color: var(--text-normal, #222222);
+  --checkbox-border-color: var(--text-faint, #ababab);
+  --checkbox-border-color-hover: var(--text-muted, #5c5c5c);
+  --checkbox-marker-color: var(--background-primary, #ffffff);
+  --checklist-done-color: var(--text-muted, #5c5c5c);
+  --code-background: var(--background-primary-alt, #fafafa);
+  --code-border-color: var(--background-modifier-border, #e0e0e0);
+  --code-bracket-background: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+  --collapse-icon-color: var(--text-faint, #ababab);
+  --collapse-icon-color-collapsed: var(--text-accent, #5c5c5c);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(calc(var(--accent-h) - 3), calc(var(--accent-s)*1.02), calc(var(--accent-l)*1.15));
+  --color-accent-2: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s)*1.05), calc(var(--accent-l)*1.29));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --divider-color: var(--background-modifier-border, #e0e0e0);
+  --flair-background: var(--interactive-normal, #ffffff);
+  --flair-color: var(--text-normal, #222222);
+  --footnote-divider-color: var(--metadata-divider-color, #e0e0e0);
+  --footnote-divider-color-active: var(--metadata-divider-color-focus, transparent);
+  --footnote-id-color: var(--text-muted, #5c5c5c);
+  --footnote-id-color-no-occurrences: var(--text-faint, #ababab);
+  --footnote-input-background: var(--metadata-input-background, transparent);
+  --footnote-input-background-active: var(--metadata-input-background-active, rgba(0, 0, 0, 0.067));
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
+  --graph-node: var(--text-muted, #5c5c5c);
+  --graph-node-focused: var(--text-accent, hsl(258, 88%, 66%));
+  --graph-node-unresolved: var(--text-faint, #ababab);
+  --graph-text: var(--text-normal, #222222);
+  --heading-formatting: var(--text-faint, #ababab);
+  --hr-color: var(--background-modifier-border, #e0e0e0);
+  --icon-color: var(--text-muted, #5c5c5c);
+  --icon-color-active: var(--text-accent, hsl(258, 88%, 66%));
+  --icon-color-focused: var(--text-normal, #222222);
+  --icon-color-hover: var(--text-muted, #5c5c5c);
+  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
+  --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
+  --input-date-separator: var(--text-faint, #ababab);
+  --input-placeholder-color: var(--text-faint, #ababab);
+  --input-shadow: 0 0 0 var(--input-border-width) var(--background-modifier-border-hover);
+  --input-shadow-hover: 0 0 0 var(--input-border-width) var(--background-modifier-border-hover);
+  --interactive-accent-hsl: var(--color-accent-hsl, 258, 88%, 66%);
+  --interactive-hover: rgba(var(--gray-80), 0.5);
+  --interactive-normal: rgb(var(--gray-90));
+  --list-marker-color: var(--text-faint, #ababab);
+  --list-marker-color-collapsed: var(--text-accent, hsl(258, 88%, 66%));
+  --list-marker-color-hover: var(--text-muted, #5c5c5c);
+  --menu-background: var(--background-secondary, #f6f6f6);
+  --metadata-border-color: var(--background-modifier-border, #e0e0e0);
+  --metadata-divider-color: var(--background-modifier-border, #e0e0e0);
+  --metadata-input-background-active: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+  --metadata-input-text-color: var(--text-normal, #222222);
+  --metadata-label-background-active: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+  --metadata-label-text-color: var(--text-muted, #5c5c5c);
+  --metadata-label-text-color-hover: var(--text-muted, #5c5c5c);
+  --metadata-property-background-active: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+  --nav-collapse-icon-color: var(--collapse-icon-color, #ababab);
+  --nav-collapse-icon-color-collapsed: var(--text-faint, #ababab);
+  --nav-heading-color: var(--text-normal, #222222);
+  --nav-heading-color-collapsed: var(--text-faint, #ababab);
+  --nav-heading-color-collapsed-hover: var(--text-muted, #5c5c5c);
+  --nav-heading-color-hover: var(--text-normal, #222222);
+  --nav-indentation-guide-color: var(--indentation-guide-color, rgba(0, 0, 0, 0.12));
+  --nav-item-background-active: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+  --nav-item-background-hover: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+  --nav-item-color: var(--text-muted, #5c5c5c);
+  --nav-item-color-active: var(--text-normal, #222222);
+  --nav-item-color-highlighted: var(--text-accent, hsl(258, 88%, 66%));
+  --nav-item-color-hover: var(--text-normal, #222222);
+  --nav-item-color-selected: var(--text-normal, #222222);
+  --nav-tag-color: var(--text-faint, #ababab);
+  --nav-tag-color-active: var(--text-muted, #5c5c5c);
+  --nav-tag-color-hover: var(--text-muted, #5c5c5c);
+  --pdf-background: var(--background-primary, #ffffff);
+  --pdf-page-background: var(--background-primary, #ffffff);
+  --pdf-sidebar-background: var(--background-primary, #ffffff);
+  --pill-color: var(--text-muted, #5c5c5c);
+  --pill-color-hover: var(--text-normal, #222222);
+  --pill-color-remove: var(--text-faint, #ababab);
+  --pill-color-remove-hover: var(--text-accent, hsl(258, 88%, 66%));
+  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
+  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
+  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
+  --search-clear-button-color: var(--text-muted, #5c5c5c);
+  --search-icon-color: var(--text-muted, #5c5c5c);
+  --search-result-background: var(--background-primary, #ffffff);
+  --slider-thumb-border-color: var(--background-modifier-border-hover, #d4d4d4);
+  --slider-track-background: var(--background-modifier-border, #e0e0e0);
+  --status-bar-background: var(--background-secondary, #f6f6f6);
+  --status-bar-border-color: var(--divider-color, #e0e0e0);
+  --status-bar-text-color: var(--text-muted, #5c5c5c);
+  --tab-background-active: var(--background-primary, #ffffff);
+  --tab-outline-color: var(--divider-color, #e0e0e0);
+  --tab-switcher-background: var(--background-secondary, #f6f6f6);
+  --tab-switcher-menubar-background: var(--mobile-sidebar-background, linear-gradient(to top, #f6f6f6, transparent));
+  --tab-text-color: var(--text-faint, #ababab);
+  --tab-text-color-active: var(--text-muted, #5c5c5c);
+  --tab-text-color-focused: var(--text-muted, #5c5c5c);
+  --tab-text-color-focused-active: var(--text-muted, #222222);
+  --tab-text-color-focused-highlighted: var(--text-accent, hsl(258, 88%, 66%));
+  --table-add-button-border-color: var(--background-modifier-border, #e0e0e0);
+  --table-border-color: var(--background-modifier-border, #e0e0e0);
+  --table-column-alt-background: var(--table-background, transparent);
+  --table-drag-handle-color: var(--text-faint, #ababab);
+  --table-header-background: var(--table-background, transparent);
+  --table-header-color: var(--text-normal, #222222);
+  --table-row-alt-background: var(--table-background, transparent);
+  --table-row-alt-background-hover: var(--table-background, transparent);
+  --table-row-background-hover: var(--table-background, transparent);
+  --table-selection: hsla(var(--color-accent-hsl), 0.1);
+  --table-selection-blend-mode: var(--highlight-mix-blend-mode, darken);
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-color: var(--text-accent, hsl(258, 88%, 66%));
+  --tag-color-hover: var(--text-accent, hsl(258, 88%, 66%));
+  --text-accent: var(--color-accent-1, hsl(258, 88%, 66%));
+  --text-accent-hover: var(--color-accent-2, hsl(255, 89.76%, 75.9%));
+  --text-faint: rgb(var(--gray-60));
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+  --text-muted: rgb(var(--gray-30));
+  --text-normal: rgb(var(--gray-10));
+  --titlebar-border-color: var(--background-modifier-border, #e0e0e0);
+  --titlebar-text-color: var(--text-muted, #5c5c5c);
+  --titlebar-text-color-focused: var(--text-normal, #222222);
+  --vault-profile-color: var(--text-normal, #222222);
+  --vault-profile-color-hover: var(--vault-profile-color, #222222);
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgba(0, 0, 0, 0);
 }`,
@@ -4054,6 +4706,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="chec
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -4085,6 +4738,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -4114,6 +4768,9 @@ html[saved-theme="light"] body .callout[data-callout="banner-icon"] {
   --banner-icon-size: 0px;
   --banner-image-height: 0px;
   --banner-image-radius: 8px;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --block-width-max: calc(100cqw - 64px);
   --block-width-offset: -32px;
   --block-width-wide: min(100cqw, 50rem);
@@ -4203,6 +4860,7 @@ html[saved-theme="light"] body .callout[data-callout="banner-icon"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #222222;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', Inter, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -4453,6 +5111,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -4484,6 +5143,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -4515,6 +5175,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -4546,6 +5207,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -4577,6 +5239,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -4608,6 +5271,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -4637,6 +5301,9 @@ html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
   --banner-icon-size: 0px;
   --banner-image-height: 0px;
   --banner-image-radius: 8px;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --block-width-max: calc(100cqw - 64px);
   --block-width-offset: -32px;
   --block-width-wide: min(100cqw, 50rem);
@@ -4726,6 +5393,7 @@ html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #222222;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', Inter, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -4976,6 +5644,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -5002,6 +5671,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -5033,6 +5703,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -5064,6 +5735,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -5095,6 +5767,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -5126,6 +5799,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -5255,6 +5929,12 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --icon-size: var(--icon-xs, 14px);
+  --icon-stroke: var(--icon-xs-stroke-width, 2.25px);
+  --pill-padding-x: var(--tag-padding-x, 8px);
+  --pill-padding-y: var(--tag-padding-y, 4px);
+  --pill-radius: var(--tag-radius, 8px);
+  --pill-weight: var(--tag-weight, 500);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -5396,6 +6076,12 @@ html[saved-theme="light"] body .metadata-properties {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --icon-size: var(--icon-xs, 14px);
+  --icon-stroke: var(--icon-xs-stroke-width, 2.25px);
+  --pill-padding-x: var(--tag-padding-x, 8px);
+  --pill-padding-y: var(--tag-padding-y, 4px);
+  --pill-radius: var(--tag-radius, 8px);
+  --pill-weight: var(--tag-weight, 500);
   border-radius: 8px;
 }
 

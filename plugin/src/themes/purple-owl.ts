@@ -224,6 +224,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #021D33);
   background-color: var(--tab-container-background, rgb(2, 29, 51));
   color: rgb(171, 178, 191);
 }
@@ -243,6 +244,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #021D33);
   background-color: var(--tab-container-background, rgb(2, 29, 51));
   border-left-color: rgb(3, 36, 62);
   color: rgb(171, 178, 191);
@@ -458,6 +460,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, rgba(3, 36, 62, 0.5));
   border-bottom-color: rgb(171, 178, 191);
   border-left-color: rgb(171, 178, 191);
   border-right-color: rgb(171, 178, 191);
@@ -1369,11 +1372,19 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(171, 178, 191);
 }
 
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #ecc48d);
+  --pill-color-hover: var(--tag-color-hover, #ecc48d);
+  --pill-color-remove: var(--tag-color, #ecc48d);
+  --pill-color-remove-hover: var(--tag-color-hover, #ecc48d);
+}
+
 html body a.internal-link.tag-link::before {
   color: rgb(236, 196, 141);
 }
 
 html body h1 {
+  --font-weight: var(--h1-weight, 600);
   color: var(--h1-color, rgb(171, 178, 191));
 }
 
@@ -1383,6 +1394,7 @@ html body h1.article-title {
 }
 
 html body h2 {
+  --font-weight: var(--h2-weight, 600);
   color: var(--h2-color, rgb(171, 178, 191));
 }
 
@@ -1391,18 +1403,22 @@ html body h2.page-title, html h2.page-title a {
 }
 
 html body h3 {
+  --font-weight: var(--h3-weight, 500);
   color: var(--h3-color, rgb(171, 178, 191));
 }
 
 html body h4 {
+  --font-weight: var(--h4-weight, 500);
   color: var(--text-normal, rgb(171, 178, 191));
 }
 
 html body h5 {
+  --font-weight: var(--h5-weight, 500);
   color: var(--text-normal, rgb(171, 178, 191));
 }
 
 html body h6 {
+  --font-weight: var(--h6-weight, 400);
   color: var(--text-muted, rgb(199, 146, 234));
 }
 
@@ -1568,6 +1584,10 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, #ecc48d);
+  --pill-color-hover: var(--tag-color-hover, #ecc48d);
+  --pill-color-remove: var(--tag-color, #ecc48d);
+  --pill-color-remove-hover: var(--tag-color-hover, #ecc48d);
   color: var(--pill-color, rgb(236, 196, 141));
 }
 

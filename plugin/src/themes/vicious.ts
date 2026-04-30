@@ -461,6 +461,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #08090e);
   background-color: var(--background-primary, rgb(8, 9, 14));
   color: rgb(251, 252, 252);
 }
@@ -481,6 +482,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #08090e);
   background-color: var(--tab-container-background, rgb(8, 9, 14));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(251, 252, 252);
@@ -708,6 +710,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #17181e);
   border-bottom-color: rgb(251, 252, 252);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -2375,6 +2378,18 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(39, 80%, 73%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(39, 80%, 73%, 0.2));
+  --pill-border-color: var(--tag-border-color, transparent);
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(39, 80%, 73%, 0.15));
+  --pill-border-width: var(--tag-border-width, 1px);
+  --pill-color: var(--tag-color, hsl(36, 81.6%, 83.95%));
+  --pill-color-hover: var(--tag-color-hover, hsl(36, 81.6%, 83.95%));
+  --pill-color-remove: var(--tag-color, hsl(36, 81.6%, 83.95%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(36, 81.6%, 83.95%));
+  --pill-padding-x: var(--tag-padding-x, 0.56em);
+  --pill-padding-y: var(--tag-padding-y, 0.16em);
+  --pill-radius: var(--tag-radius, 16px);
   background-color: var(--C001, rgb(241, 129, 150));
   border-bottom-color: rgb(8, 9, 14);
   border-bottom-left-radius: 16px;
@@ -2453,14 +2468,20 @@ html[saved-theme="dark"] body hr {
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  --icon-color: var(--800, #08090e);
   color: var(--800, rgb(8, 9, 14));
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  --icon-color: var(--800, #08090e);
   color: var(--800, rgb(8, 9, 14));
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(251, 252, 252);
+}
+
+html[saved-theme="dark"] body li.depth-0 {
+  --icon-color: var(--800, #08090e);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(251, 252, 252);
@@ -2488,6 +2509,7 @@ html[saved-theme="dark"] body footer ul li a {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
+  --colorful: var(--C001-RGB, 241, 129, 150);
   background-color: rgba(var(--colorful), 1);
   border-bottom-color: rgb(251, 252, 252);
   border-bottom-left-radius: 4px;
@@ -2501,6 +2523,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+  --icon-color: var(--800, #08090e);
   color: var(--800, rgb(8, 9, 14));
 }
 
@@ -2508,6 +2531,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
   color: rgb(8, 9, 14);
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
+  --colorful: var(--C001-RGB, 241, 129, 150);
   background-color: rgba(var(--colorful), 1);
   border-bottom-color: rgb(251, 252, 252);
   border-bottom-left-radius: 4px;
@@ -2524,6 +2548,7 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
+  --icon-color: var(--800, #08090e);
   color: var(--800, rgb(8, 9, 14));
 }
 
@@ -2610,6 +2635,18 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(39, 80%, 73%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(39, 80%, 73%, 0.2));
+  --pill-border-color: var(--tag-border-color, transparent);
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(39, 80%, 73%, 0.15));
+  --pill-border-width: var(--tag-border-width, 1px);
+  --pill-color: var(--tag-color, hsl(36, 81.6%, 83.95%));
+  --pill-color-hover: var(--tag-color-hover, hsl(36, 81.6%, 83.95%));
+  --pill-color-remove: var(--tag-color, hsl(36, 81.6%, 83.95%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(36, 81.6%, 83.95%));
+  --pill-padding-x: var(--tag-padding-x, 0.56em);
+  --pill-padding-y: var(--tag-padding-y, 0.16em);
+  --pill-radius: var(--tag-radius, 16px);
   background-color: var(--C001, rgb(241, 129, 150));
   border-radius: 16px;
   color: var(--background-primary, rgb(8, 9, 14));
@@ -3175,6 +3212,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #fbfcfc);
   background-color: var(--background-primary, rgb(251, 252, 252));
   color: rgb(8, 9, 14);
 }
@@ -3195,6 +3233,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #fbfcfc);
   background-color: var(--tab-container-background, rgb(251, 252, 252));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(8, 9, 14);
@@ -3422,6 +3461,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #f1f2f5);
   border-bottom-color: rgb(8, 9, 14);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -5088,6 +5128,18 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(39, 80%, 73%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(39, 80%, 73%, 0.2));
+  --pill-border-color: var(--tag-border-color, transparent);
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(39, 80%, 73%, 0.15));
+  --pill-border-width: var(--tag-border-width, 1px);
+  --pill-color: var(--tag-color, hsl(39, 80%, 73%));
+  --pill-color-hover: var(--tag-color-hover, hsl(39, 80%, 73%));
+  --pill-color-remove: var(--tag-color, hsl(39, 80%, 73%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(39, 80%, 73%));
+  --pill-padding-x: var(--tag-padding-x, 0.56em);
+  --pill-padding-y: var(--tag-padding-y, 0.16em);
+  --pill-radius: var(--tag-radius, 16px);
   background-color: var(--C001, rgb(241, 129, 150));
   border-bottom-color: rgb(251, 252, 252);
   border-bottom-left-radius: 16px;
@@ -5201,6 +5253,7 @@ html[saved-theme="light"] body footer ul li a {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
+  --colorful: var(--C001-RGB, 241, 129, 150);
   background-color: rgba(var(--colorful), 1);
   border-bottom-color: rgb(8, 9, 14);
   border-bottom-left-radius: 4px;
@@ -5221,6 +5274,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
   color: rgb(8, 9, 14);
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
+  --colorful: var(--C001-RGB, 241, 129, 150);
   background-color: rgba(var(--colorful), 1);
   border-bottom-color: rgb(8, 9, 14);
   border-bottom-left-radius: 4px;
@@ -5323,6 +5377,18 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(39, 80%, 73%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(39, 80%, 73%, 0.2));
+  --pill-border-color: var(--tag-border-color, transparent);
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(39, 80%, 73%, 0.15));
+  --pill-border-width: var(--tag-border-width, 1px);
+  --pill-color: var(--tag-color, hsl(39, 80%, 73%));
+  --pill-color-hover: var(--tag-color-hover, hsl(39, 80%, 73%));
+  --pill-color-remove: var(--tag-color, hsl(39, 80%, 73%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(39, 80%, 73%));
+  --pill-padding-x: var(--tag-padding-x, 0.56em);
+  --pill-padding-y: var(--tag-padding-y, 0.16em);
+  --pill-radius: var(--tag-radius, 16px);
   background-color: var(--C001, rgb(241, 129, 150));
   border-radius: 16px;
   color: var(--background-primary, rgb(251, 252, 252));

@@ -646,6 +646,9 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --background-modifier-form-field: var(--search-result-background, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
+  --bases-table-header-background: var(--background-secondary, oklch(27.50% 0.00375 281));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   color: oklch(0.85 0.00375 281);
 }
@@ -666,6 +669,9 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --background-modifier-form-field: var(--search-result-background, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
+  --bases-table-header-background: var(--background-secondary, oklch(27.50% 0.00375 281));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: oklch(1 0.05 281 / 0.0625);
   color: oklch(0.85 0.00375 281);
@@ -799,6 +805,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   --fab-color-active: oklch(85.00% 0.00375 281);
   --flair-background: oklch(34.50% 0.00375 281);
   --flair-color: oklch(85.00% 0.00375 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -1114,6 +1121,9 @@ html[saved-theme="dark"] body .text-highlight {
 }
 
 html[saved-theme="dark"] body del {
+  --bold-color: var(--strikethrough-color, oklch(52.50% 0.0075 281));
+  --italic-color: var(--strikethrough-color, oklch(52.50% 0.0075 281));
+  --text-highlight-bg: var(--hr-color, oklch(100% 0.075 281 / 0.1));
   color: var(--strikethrough-color, oklch(0.525 0.0075 281));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 420;
@@ -1133,6 +1143,7 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
   background-color: var(--checkbox-color, rgb(27, 126, 238));
   border-color: rgb(255, 255, 255);
 }
@@ -1145,6 +1156,7 @@ html[saved-theme="dark"] body p {
   text-decoration-color: oklch(0.7125 0.00375 281);
 }`,
     links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
+  --font-weight: var(--link-weight, 420);
   color: var(--link-external-color, oklab(0.744327 -0.0296497 -0.117664));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--link-weight, 420);
@@ -1154,6 +1166,7 @@ html[saved-theme="dark"] body p {
 }
 
 html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+  --font-weight: var(--link-weight, 420);
   color: var(--link-color, oklab(0.744327 -0.0296497 -0.117664));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--link-weight, 420);
@@ -1163,6 +1176,7 @@ html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcr
 }
 
 html[saved-theme="dark"] body a.internal-link.broken {
+  --font-weight: var(--link-weight, 420);
   color: var(--link-unresolved-color, oklch(0.744327 0.121342 255.857 / 0.75));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--link-weight, 420);
@@ -1181,10 +1195,14 @@ html[saved-theme="dark"] body dt {
 }
 
 html[saved-theme="dark"] body ol > li {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
 }
 
 html[saved-theme="dark"] body ul > li {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
 }
 
@@ -1195,10 +1213,14 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-color: oklch(0.85 0.00375 281);
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
+  --font-weight: var(--link-weight, 420);
   color: var(--text-faint, oklch(0.525 0.0075 281));
 }
 
 html[saved-theme="dark"] body blockquote {
+  --bold-color: var(--blockquote-color, oklch(71.25% 0.00375 281));
+  --italic-color: var(--blockquote-color, oklch(71.25% 0.00375 281));
+  --math-color: color-mix(in oklab, var(--blockquote-color), var(--color-base-80));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
@@ -1264,6 +1286,7 @@ html[saved-theme="dark"] body th {
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
+  --code-radius: var(--radius-sm, 10px);
   background-color: var(--code-background, oklch(1 0.05 281 / 0.05));
   border-bottom-color: oklch(0.85 0.00375 281);
   border-bottom-left-radius: 6px;
@@ -1295,6 +1318,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, oklch(100% 0.05 281 / 0.05));
   border-bottom-color: oklch(0.85 0.00375 281);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -1654,95 +1678,144 @@ html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
   text-decoration-color: oklch(0.85 0.00375 281);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
   text-decoration-color: oklch(0.85 0.00375 281);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
+  --bold-color: var(--checklist-done-color, oklch(52.50% 0.0075 281));
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --code-normal: var(--checklist-done-color, oklch(52.50% 0.0075 281));
+  --italic-color: var(--checklist-done-color, oklch(52.50% 0.0075 281));
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
+  --text-normal: var(--checklist-done-color, oklch(52.50% 0.0075 281));
   color: oklch(0.525 0.0075 281);
   text-decoration: line-through;
   text-decoration-color: oklch(0.525 0.0075 281);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
   text-decoration-color: oklch(0.85 0.00375 281);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
   text-decoration-color: oklch(0.85 0.00375 281);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
   text-decoration-color: oklch(0.85 0.00375 281);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
   text-decoration-color: oklch(0.85 0.00375 281);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
   text-decoration-color: oklch(0.85 0.00375 281);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
   text-decoration-color: oklch(0.85 0.00375 281);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
   text-decoration-color: oklch(0.85 0.00375 281);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
   text-decoration-color: oklch(0.85 0.00375 281);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
+  --bold-color: var(--checklist-done-color, oklch(52.50% 0.0075 281));
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --code-normal: var(--checklist-done-color, oklch(52.50% 0.0075 281));
+  --italic-color: var(--checklist-done-color, oklch(52.50% 0.0075 281));
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
+  --text-normal: var(--checklist-done-color, oklch(52.50% 0.0075 281));
   color: oklch(0.525 0.0075 281);
   text-decoration: line-through;
   text-decoration-color: oklch(0.525 0.0075 281);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
   text-decoration-color: oklch(0.85 0.00375 281);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
   text-decoration-color: oklch(0.85 0.00375 281);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
   text-decoration-color: oklch(0.85 0.00375 281);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
   text-decoration-color: oklch(0.85 0.00375 281);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
   text-decoration-color: oklch(0.85 0.00375 281);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
   color: oklch(0.85 0.00375 281);
   text-decoration-color: oklch(0.85 0.00375 281);
+}
+
+html[saved-theme="dark"] body ul > li.task-list-item {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(77.50% 0.00375 281));
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
@@ -1946,6 +2019,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   --callout-color: 85, 211, 244;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(85, 211, 244);
   border-left-color: rgb(85, 211, 244);
   border-right-color: rgb(85, 211, 244);
@@ -1953,11 +2027,15 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(85, 211, 244));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(77.50% 0.00375 281));
+  --code-background: var(--code-background-alt, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
   color: oklch(0.9325 0 281);
 }
 
@@ -1978,6 +2056,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 85, 211, 244;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(85, 211, 244);
   border-left-color: rgb(85, 211, 244);
   border-right-color: rgb(85, 211, 244);
@@ -1985,11 +2064,15 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(85, 211, 244));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(77.50% 0.00375 281));
+  --code-background: var(--code-background-alt, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
   color: oklch(0.9325 0 281);
 }
 
@@ -2010,6 +2093,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 85, 211, 244;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(85, 211, 244);
   border-left-color: rgb(85, 211, 244);
   border-right-color: rgb(85, 211, 244);
@@ -2017,11 +2101,15 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(85, 211, 244));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(77.50% 0.00375 281));
+  --code-background: var(--code-background-alt, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
   color: oklch(0.9325 0 281);
 }
 
@@ -2042,6 +2130,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 85, 211, 244;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(85, 211, 244);
   border-left-color: rgb(85, 211, 244);
   border-right-color: rgb(85, 211, 244);
@@ -2049,11 +2138,15 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(85, 211, 244));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(77.50% 0.00375 281));
+  --code-background: var(--code-background-alt, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
   color: oklch(0.9325 0 281);
 }
 
@@ -2074,6 +2167,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 85, 211, 244;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(85, 211, 244);
   border-left-color: rgb(85, 211, 244);
   border-right-color: rgb(85, 211, 244);
@@ -2081,11 +2175,15 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(85, 211, 244));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(77.50% 0.00375 281));
+  --code-background: var(--code-background-alt, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
   color: oklch(0.9325 0 281);
 }
 
@@ -2106,6 +2204,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 85, 211, 244;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(85, 211, 244);
   border-left-color: rgb(85, 211, 244);
   border-right-color: rgb(85, 211, 244);
@@ -2113,11 +2212,15 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(85, 211, 244));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(77.50% 0.00375 281));
+  --code-background: var(--code-background-alt, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
   color: oklch(0.9325 0 281);
 }
 
@@ -2138,6 +2241,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 85, 211, 244;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(85, 211, 244);
   border-left-color: rgb(85, 211, 244);
   border-right-color: rgb(85, 211, 244);
@@ -2145,11 +2249,15 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(85, 211, 244));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(77.50% 0.00375 281));
+  --code-background: var(--code-background-alt, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
   color: oklch(0.9325 0 281);
 }
 
@@ -2176,6 +2284,9 @@ html[saved-theme="dark"] body .callout[data-callout="math-cyan"] {
   --background-primary-alt: color-mix(in oklab, oklch(23.50% 0.00125 281), oklch(27.50% 0.00375 281));
   --background-secondary: oklch(27.50% 0.00375 281);
   --background-secondary-alt: oklch(34.50% 0.00375 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(43.75% 0.0075 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(27.00% 0.00375 281);
   --bg-main-outer: oklch(26.25% 0.00375 281);
@@ -2282,6 +2393,7 @@ html[saved-theme="dark"] body .callout[data-callout="math-cyan"] {
   --fab-color-active: oklch(85.00% 0.00375 281);
   --flair-background: oklch(34.50% 0.00375 281);
   --flair-color: oklch(85.00% 0.00375 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2582,6 +2694,9 @@ html[saved-theme="dark"] body .callout[data-callout="math-gray"] {
   --background-primary-alt: color-mix(in oklab, oklch(23.50% 0.00125 281), oklch(27.50% 0.00375 281));
   --background-secondary: oklch(27.50% 0.00375 281);
   --background-secondary-alt: oklch(34.50% 0.00375 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(43.75% 0.0075 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(27.00% 0.00375 281);
   --bg-main-outer: oklch(26.25% 0.00375 281);
@@ -2688,6 +2803,7 @@ html[saved-theme="dark"] body .callout[data-callout="math-gray"] {
   --fab-color-active: oklch(85.00% 0.00375 281);
   --flair-background: oklch(34.50% 0.00375 281);
   --flair-color: oklch(85.00% 0.00375 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2988,6 +3104,9 @@ html[saved-theme="dark"] body .callout[data-callout="math-green"] {
   --background-primary-alt: color-mix(in oklab, oklch(23.50% 0.00125 281), oklch(27.50% 0.00375 281));
   --background-secondary: oklch(27.50% 0.00375 281);
   --background-secondary-alt: oklch(34.50% 0.00375 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(43.75% 0.0075 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(27.00% 0.00375 281);
   --bg-main-outer: oklch(26.25% 0.00375 281);
@@ -3094,6 +3213,7 @@ html[saved-theme="dark"] body .callout[data-callout="math-green"] {
   --fab-color-active: oklch(85.00% 0.00375 281);
   --flair-background: oklch(34.50% 0.00375 281);
   --flair-color: oklch(85.00% 0.00375 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3394,6 +3514,9 @@ html[saved-theme="dark"] body .callout[data-callout="math-grey"] {
   --background-primary-alt: color-mix(in oklab, oklch(23.50% 0.00125 281), oklch(27.50% 0.00375 281));
   --background-secondary: oklch(27.50% 0.00375 281);
   --background-secondary-alt: oklch(34.50% 0.00375 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(43.75% 0.0075 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(27.00% 0.00375 281);
   --bg-main-outer: oklch(26.25% 0.00375 281);
@@ -3500,6 +3623,7 @@ html[saved-theme="dark"] body .callout[data-callout="math-grey"] {
   --fab-color-active: oklch(85.00% 0.00375 281);
   --flair-background: oklch(34.50% 0.00375 281);
   --flair-color: oklch(85.00% 0.00375 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3800,6 +3924,9 @@ html[saved-theme="dark"] body .callout[data-callout="math-orange"] {
   --background-primary-alt: color-mix(in oklab, oklch(23.50% 0.00125 281), oklch(27.50% 0.00375 281));
   --background-secondary: oklch(27.50% 0.00375 281);
   --background-secondary-alt: oklch(34.50% 0.00375 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(43.75% 0.0075 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(27.00% 0.00375 281);
   --bg-main-outer: oklch(26.25% 0.00375 281);
@@ -3906,6 +4033,7 @@ html[saved-theme="dark"] body .callout[data-callout="math-orange"] {
   --fab-color-active: oklch(85.00% 0.00375 281);
   --flair-background: oklch(34.50% 0.00375 281);
   --flair-color: oklch(85.00% 0.00375 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4206,6 +4334,9 @@ html[saved-theme="dark"] body .callout[data-callout="math-pink"] {
   --background-primary-alt: color-mix(in oklab, oklch(23.50% 0.00125 281), oklch(27.50% 0.00375 281));
   --background-secondary: oklch(27.50% 0.00375 281);
   --background-secondary-alt: oklch(34.50% 0.00375 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(43.75% 0.0075 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(27.00% 0.00375 281);
   --bg-main-outer: oklch(26.25% 0.00375 281);
@@ -4312,6 +4443,7 @@ html[saved-theme="dark"] body .callout[data-callout="math-pink"] {
   --fab-color-active: oklch(85.00% 0.00375 281);
   --flair-background: oklch(34.50% 0.00375 281);
   --flair-color: oklch(85.00% 0.00375 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4612,6 +4744,9 @@ html[saved-theme="dark"] body .callout[data-callout="math-purple"] {
   --background-primary-alt: color-mix(in oklab, oklch(23.50% 0.00125 281), oklch(27.50% 0.00375 281));
   --background-secondary: oklch(27.50% 0.00375 281);
   --background-secondary-alt: oklch(34.50% 0.00375 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(43.75% 0.0075 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(27.00% 0.00375 281);
   --bg-main-outer: oklch(26.25% 0.00375 281);
@@ -4718,6 +4853,7 @@ html[saved-theme="dark"] body .callout[data-callout="math-purple"] {
   --fab-color-active: oklch(85.00% 0.00375 281);
   --flair-background: oklch(34.50% 0.00375 281);
   --flair-color: oklch(85.00% 0.00375 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5018,6 +5154,9 @@ html[saved-theme="dark"] body .callout[data-callout="math-red"] {
   --background-primary-alt: color-mix(in oklab, oklch(23.50% 0.00125 281), oklch(27.50% 0.00375 281));
   --background-secondary: oklch(27.50% 0.00375 281);
   --background-secondary-alt: oklch(34.50% 0.00375 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(43.75% 0.0075 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(27.00% 0.00375 281);
   --bg-main-outer: oklch(26.25% 0.00375 281);
@@ -5124,6 +5263,7 @@ html[saved-theme="dark"] body .callout[data-callout="math-red"] {
   --fab-color-active: oklch(85.00% 0.00375 281);
   --flair-background: oklch(34.50% 0.00375 281);
   --flair-color: oklch(85.00% 0.00375 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5424,6 +5564,9 @@ html[saved-theme="dark"] body .callout[data-callout="math-yellow"] {
   --background-primary-alt: color-mix(in oklab, oklch(23.50% 0.00125 281), oklch(27.50% 0.00375 281));
   --background-secondary: oklch(27.50% 0.00375 281);
   --background-secondary-alt: oklch(34.50% 0.00375 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(43.75% 0.0075 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(27.00% 0.00375 281);
   --bg-main-outer: oklch(26.25% 0.00375 281);
@@ -5530,6 +5673,7 @@ html[saved-theme="dark"] body .callout[data-callout="math-yellow"] {
   --fab-color-active: oklch(85.00% 0.00375 281);
   --flair-background: oklch(34.50% 0.00375 281);
   --flair-color: oklch(85.00% 0.00375 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5824,6 +5968,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 85, 211, 244;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(85, 211, 244);
   border-left-color: rgb(85, 211, 244);
   border-right-color: rgb(85, 211, 244);
@@ -5831,11 +5976,15 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(85, 211, 244));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(77.50% 0.00375 281));
+  --code-background: var(--code-background-alt, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
   color: oklch(0.9325 0 281);
 }
 
@@ -5856,6 +6005,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 85, 211, 244;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(85, 211, 244);
   border-left-color: rgb(85, 211, 244);
   border-right-color: rgb(85, 211, 244);
@@ -5863,16 +6013,21 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(85, 211, 244));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(77.50% 0.00375 281));
+  --code-background: var(--code-background-alt, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
   color: oklch(0.9325 0 281);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
   --callout-color: var(--callout-quote, 150, 150, 160);
+  --text-normal: var(--blockquote-color, oklch(71.25% 0.00375 281));
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(150, 150, 160, 0.063), rgba(150, 150, 160, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(150, 150, 160, 0.063), rgba(150, 150, 160, 0.114));
   border-bottom-color: rgba(150, 150, 160, 0.24);
@@ -5888,6 +6043,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 85, 211, 244;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(85, 211, 244);
   border-left-color: rgb(85, 211, 244);
   border-right-color: rgb(85, 211, 244);
@@ -5895,11 +6051,15 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(85, 211, 244));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(77.50% 0.00375 281));
+  --code-background: var(--code-background-alt, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
   color: oklch(0.9325 0 281);
 }
 
@@ -5920,6 +6080,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 85, 211, 244;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(85, 211, 244);
   border-left-color: rgb(85, 211, 244);
   border-right-color: rgb(85, 211, 244);
@@ -5927,11 +6088,15 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(85, 211, 244));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(77.50% 0.00375 281));
+  --code-background: var(--code-background-alt, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
   color: oklch(0.9325 0 281);
 }
 
@@ -5952,6 +6117,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 85, 211, 244;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(85, 211, 244);
   border-left-color: rgb(85, 211, 244);
   border-right-color: rgb(85, 211, 244);
@@ -5959,11 +6125,15 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(85, 211, 244));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(77.50% 0.00375 281));
+  --code-background: var(--code-background-alt, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
   color: oklch(0.9325 0 281);
 }
 
@@ -5984,6 +6154,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 85, 211, 244;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(85, 211, 244);
   border-left-color: rgb(85, 211, 244);
   border-right-color: rgb(85, 211, 244);
@@ -5991,11 +6162,15 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(85, 211, 244));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(77.50% 0.00375 281));
+  --code-background: var(--code-background-alt, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
   color: oklch(0.9325 0 281);
 }
 
@@ -6016,6 +6191,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 85, 211, 244;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(85, 211, 244);
   border-left-color: rgb(85, 211, 244);
   border-right-color: rgb(85, 211, 244);
@@ -6023,11 +6199,15 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(85, 211, 244));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(77.50% 0.00375 281));
+  --code-background: var(--code-background-alt, oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375));
   color: oklch(0.9325 0 281);
 }
 
@@ -6123,6 +6303,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
+  --shadow-input: var(--shadow-sidebar, 0px 0px 12px 0px oklch(from oklch(27.50% 0.00375 281) l 0.00375 h / 0.5));
   background-color: oklch(0.24 0.00375 281 / 0.375);
   border-bottom-color: oklch(1 0.05 281 / 0.0625);
   border-bottom-left-radius: 20px;
@@ -6236,6 +6417,17 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
+  --pill-background: var(--tag-background, hsla(212, 86%, 52%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(212, 86%, 52%, 0.2));
+  --pill-border-color: var(--tag-border-color, oklch(from hsl(212, 86%, 52%) l c h / 0.025));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(212, 86%, 52%, 0.15));
+  --pill-color: var(--tag-color, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%));
+  --pill-color-hover: var(--tag-color-hover, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%));
+  --pill-color-remove: var(--color-accent-2, color-mix(in oklab, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%), transparent 8%));
+  --pill-padding-x: var(--tag-padding-x, 0.75em 0.375em);
+  --pill-radius: var(--tag-radius, 2em);
+  --pill-weight: var(--tag-weight, 490);
   background-color: var(--pill-background, rgba(27, 126, 238, 0.1));
   border-bottom-color: oklch(0.600515 0.189615 255.85 / 0.025);
   border-left-color: oklch(0.600515 0.189615 255.85 / 0.025);
@@ -6250,6 +6442,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  --font-weight: var(--h1-weight, 330);
   color: var(--h1-color, oklch(0.895 0 281));
   font-family: var(--h1-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -6261,6 +6454,8 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  --font-weight: var(--h2-weight, 570);
+  --h1-weight: var(--h1-weight-alt, 330);
   color: var(--h2-color, oklch(0.8825 0 281));
   font-family: var(--h2-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -6271,21 +6466,27 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h3 {
+  --font-weight: var(--h3-weight, 570);
+  --h1-weight: var(--h1-weight-alt, 330);
   color: var(--h3-color, oklch(0.85 0.00375 281));
   font-family: var(--h3-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
+  --font-weight: var(--h4-weight, 570);
+  --h1-weight: var(--h1-weight-alt, 330);
   color: var(--h4-color, oklch(0.85 0.00375 281));
   font-family: var(--h4-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
+  --h1-weight: var(--h1-weight-alt, 330);
   color: var(--h5-color, oklch(0.85 0.00375 281));
   font-family: var(--h5-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
+  --font-weight: var(--h6-weight, 670);
   color: var(--h6-color, oklch(0.775 0.00375 281));
   font-family: var(--h6-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -6317,12 +6518,26 @@ html[saved-theme="dark"] body hr {
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  --nav-item-background-hover: oklab(from var(--trans-faint-20) l a b / 0.025);
+  --nav-item-color: var(--color-base-80, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%));
+  --nav-item-color-active: var(--nav-item-color, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%));
+  --nav-item-color-hover: var(--nav-item-color, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%));
+  --nav-item-weight: var(--font-semi-medium, 490);
+  --nav-item-weight-active: var(--font-semi-medium, 490);
+  --nav-item-weight-hover: var(--font-semi-medium, 490);
   color: var(--nav-item-color, oklab(0.744327 -0.0296497 -0.117664));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--nav-item-weight, 490);
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  --nav-item-background-hover: oklab(from var(--trans-faint-20) l a b / 0.025);
+  --nav-item-color: var(--color-base-80, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%));
+  --nav-item-color-active: var(--nav-item-color, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%));
+  --nav-item-color-hover: var(--nav-item-color, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%));
+  --nav-item-weight: var(--font-semi-medium, 490);
+  --nav-item-weight-active: var(--font-semi-medium, 490);
+  --nav-item-weight-hover: var(--font-semi-medium, 490);
   color: var(--nav-item-color, oklab(0.744327 -0.0296497 -0.117664));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--nav-item-weight, 490);
@@ -6332,6 +6547,13 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
 }
 
 html[saved-theme="dark"] body li.depth-0 {
+  --nav-item-background-hover: oklab(from var(--trans-faint-20) l a b / 0.025);
+  --nav-item-color: var(--color-base-80, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%));
+  --nav-item-color-active: var(--nav-item-color, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%));
+  --nav-item-color-hover: var(--nav-item-color, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%));
+  --nav-item-weight: var(--font-semi-medium, 490);
+  --nav-item-weight-active: var(--font-semi-medium, 490);
+  --nav-item-weight-hover: var(--font-semi-medium, 490);
   font-weight: var(--nav-item-weight, 490);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
@@ -6360,6 +6582,7 @@ html[saved-theme="dark"] body li.depth-0 {
 }
 
 html[saved-theme="dark"] body footer ul li a {
+  --background-modifier-hover: var(--hr-color, oklch(100% 0.075 281 / 0.1));
   color: oklch(0.7125 0.00375 281);
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
@@ -6377,6 +6600,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+  --nav-item-background-hover: oklab(from var(--trans-faint-20) l a b / 0.025);
   color: var(--nav-item-color, oklch(0.7125 0.00375 281));
 }
 
@@ -6397,6 +6621,7 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
+  --nav-item-background-hover: oklab(from var(--trans-faint-20) l a b / 0.025);
   color: var(--nav-item-color, oklch(0.7125 0.00375 281));
 }
 
@@ -6468,6 +6693,7 @@ html[saved-theme="dark"] body .bases-table thead th {
   font-weight: var(--table-header-weight, 520);
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
+  --input-height: var(--metadata-input-height, 2.125rem);
   border-bottom-color: oklch(1 0.05 281 / 0.0625);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -6490,6 +6716,7 @@ html[saved-theme="dark"] body .metadata-properties {
 }
 
 html[saved-theme="dark"] body .note-properties {
+  --input-height: var(--metadata-input-height, 2.125rem);
   border-color: oklch(1 0.05 281 / 0.0625);
   border-radius: 12px;
 }
@@ -6504,11 +6731,23 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
+  --pill-background: var(--tag-background, hsla(212, 86%, 52%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(212, 86%, 52%, 0.2));
+  --pill-border-color: var(--tag-border-color, oklch(from hsl(212, 86%, 52%) l c h / 0.025));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(212, 86%, 52%, 0.15));
+  --pill-color: var(--tag-color, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%));
+  --pill-color-hover: var(--tag-color-hover, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%));
+  --pill-color-remove: var(--color-accent-2, color-mix(in oklab, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%), transparent 8%));
+  --pill-padding-x: var(--tag-padding-x, 0.75em 0.375em);
+  --pill-radius: var(--tag-radius, 2em);
+  --pill-weight: var(--tag-weight, 490);
   background-color: var(--pill-background, rgba(27, 126, 238, 0.1));
   color: var(--pill-color, oklab(0.744327 -0.0296497 -0.117664));
 }
 
 html[saved-theme="dark"] body .note-properties-value {
+  --input-padding: var(--metadata-input-padding, 6px 8px);
   color: oklch(0.7125 0.00375 281);
 }
 
@@ -6608,6 +6847,9 @@ html[saved-theme="dark"] body sup {
 }
 
 html[saved-theme="dark"] body ul.tags > li {
+  --font-weight: var(--link-weight, 420);
+  --tag-padding-y: var(--pill-padding-y, 0.25em);
+  --tag-size: var(--metadata-input-font-size, 0.875em);
   background-color: var(--tag-background, rgba(27, 126, 238, 0.1));
   border-bottom-color: oklch(0.600515 0.189615 255.85 / 0.025);
   border-left-color: oklch(0.600515 0.189615 255.85 / 0.025);
@@ -7244,6 +7486,9 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --background-modifier-form-field: var(--search-result-background, oklch(100% 0 0 / 0.625));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, oklch(100% 0 0 / 0.625));
+  --bases-table-header-background: var(--background-secondary, oklch(96.2% 0.0025 281));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   color: oklch(0.3 0.0005 281);
 }
@@ -7264,6 +7509,9 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --background-modifier-form-field: var(--search-result-background, oklch(100% 0 0 / 0.625));
+  --background-modifier-form-field-hover: var(--background-modifier-form-field, oklch(100% 0 0 / 0.625));
+  --bases-table-header-background: var(--background-secondary, oklch(96.2% 0.0025 281));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: oklch(0 0 0 / 0.0625);
   color: oklch(0.3 0.0005 281);
@@ -7397,6 +7645,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   --fab-color-active: oklch(30% 0.0005 281);
   --flair-background: oklch(0% 0 0 / 0.07);
   --flair-color: oklch(30% 0.0005 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7693,6 +7942,9 @@ html[saved-theme="light"] body .text-highlight {
 }
 
 html[saved-theme="light"] body del {
+  --bold-color: var(--strikethrough-color, oklch(71.5% 0.0105 281));
+  --italic-color: var(--strikethrough-color, oklch(71.5% 0.0105 281));
+  --text-highlight-bg: var(--hr-color, oklch(0% 0 0 / 0.092));
   color: var(--strikethrough-color, oklch(0.715 0.0105 281));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 420;
@@ -7712,6 +7964,7 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
   background-color: var(--checkbox-color, oklab(0.637864 -0.0435936 -0.193248));
   border-color: rgb(0, 0, 0);
 }
@@ -7724,6 +7977,7 @@ html[saved-theme="light"] body p {
   text-decoration-color: oklch(0.465 0.0105 281);
 }`,
     links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
+  --font-weight: var(--link-weight, 420);
   color: var(--link-external-color, rgb(10, 124, 255));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--link-weight, 420);
@@ -7733,6 +7987,7 @@ html[saved-theme="light"] body p {
 }
 
 html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+  --font-weight: var(--link-weight, 420);
   color: var(--link-color, rgb(10, 124, 255));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--link-weight, 420);
@@ -7742,6 +7997,7 @@ html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .bread
 }
 
 html[saved-theme="light"] body a.internal-link.broken {
+  --font-weight: var(--link-weight, 420);
   color: var(--link-unresolved-color, oklch(0.637864 0.198104 257.288 / 0.7));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--link-weight, 420);
@@ -7760,10 +8016,14 @@ html[saved-theme="light"] body dt {
 }
 
 html[saved-theme="light"] body ol > li {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body ul > li {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
 }
 
@@ -7774,10 +8034,14 @@ html[saved-theme="light"] body ul.overflow {
   border-top-color: oklch(0.3 0.0005 281);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
+  --font-weight: var(--link-weight, 420);
   color: var(--text-faint, oklch(0.715 0.0105 281));
 }
 
 html[saved-theme="light"] body blockquote {
+  --bold-color: var(--blockquote-color, oklch(46.5% 0.0105 281));
+  --italic-color: var(--blockquote-color, oklch(46.5% 0.0105 281));
+  --math-color: color-mix(in oklab, var(--blockquote-color), var(--color-base-80));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
@@ -7843,6 +8107,7 @@ html[saved-theme="light"] body th {
 }
 
 html[saved-theme="light"] body pre:has(> code) {
+  --code-radius: var(--radius-sm, 10px);
   background-color: var(--code-background, oklch(0 0 0 / 0.0625));
   border-bottom-color: oklch(0.3 0.0005 281);
   border-bottom-left-radius: 6px;
@@ -7874,6 +8139,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, oklch(0% 0 0 / 0.0625));
   border-bottom-color: oklch(0.3 0.0005 281);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -8233,95 +8499,144 @@ html[saved-theme="light"] body li.task-list-item[data-task="~"] {
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
   text-decoration-color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='*'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
   text-decoration-color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='-'] {
+  --bold-color: var(--checklist-done-color, oklch(71.5% 0.0105 281));
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --code-normal: var(--checklist-done-color, oklch(71.5% 0.0105 281));
+  --italic-color: var(--checklist-done-color, oklch(71.5% 0.0105 281));
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
+  --text-normal: var(--checklist-done-color, oklch(71.5% 0.0105 281));
   color: oklch(0.715 0.0105 281);
   text-decoration: line-through;
   text-decoration-color: oklch(0.715 0.0105 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='/'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
   text-decoration-color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='>'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
   text-decoration-color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='?'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
   text-decoration-color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='I'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
   text-decoration-color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='S'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
   text-decoration-color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='b'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
   text-decoration-color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='c'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
   text-decoration-color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='d'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
   text-decoration-color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='f'] {
+  --bold-color: var(--checklist-done-color, oklch(71.5% 0.0105 281));
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --code-normal: var(--checklist-done-color, oklch(71.5% 0.0105 281));
+  --italic-color: var(--checklist-done-color, oklch(71.5% 0.0105 281));
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
+  --text-normal: var(--checklist-done-color, oklch(71.5% 0.0105 281));
   color: oklch(0.715 0.0105 281);
   text-decoration: line-through;
   text-decoration-color: oklch(0.715 0.0105 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='i'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
   text-decoration-color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='k'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
   text-decoration-color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='l'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
   text-decoration-color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='p'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
   text-decoration-color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='u'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
   text-decoration-color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='w'] {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
   color: oklch(0.3 0.0005 281);
   text-decoration-color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body ul > li.task-list-item {
+  --checkbox-color-hover: oklab(from var(--checkbox-color) calc(l * 1.125) a b);
+  --list-marker-color: var(--list-bullet-color, oklch(55.75% 0.0105 281));
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
@@ -8522,6 +8837,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   --callout-color: 9, 186, 221;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(9, 186, 221);
   border-left-color: rgb(9, 186, 221);
   border-right-color: rgb(9, 186, 221);
@@ -8529,11 +8845,15 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(9, 186, 221));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="light"] body .callout > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --code-background: var(--code-background-alt, oklch(100% 0 0 / 0.75));
   color: oklch(0.24 0.0005 281);
 }
 
@@ -8554,6 +8874,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 9, 186, 221;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(9, 186, 221);
   border-left-color: rgb(9, 186, 221);
   border-right-color: rgb(9, 186, 221);
@@ -8561,11 +8882,15 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(9, 186, 221));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --code-background: var(--code-background-alt, oklch(100% 0 0 / 0.75));
   color: oklch(0.24 0.0005 281);
 }
 
@@ -8586,6 +8911,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 9, 186, 221;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(9, 186, 221);
   border-left-color: rgb(9, 186, 221);
   border-right-color: rgb(9, 186, 221);
@@ -8593,11 +8919,15 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(9, 186, 221));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --code-background: var(--code-background-alt, oklch(100% 0 0 / 0.75));
   color: oklch(0.24 0.0005 281);
 }
 
@@ -8618,6 +8948,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 9, 186, 221;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(9, 186, 221);
   border-left-color: rgb(9, 186, 221);
   border-right-color: rgb(9, 186, 221);
@@ -8625,11 +8956,15 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(9, 186, 221));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --code-background: var(--code-background-alt, oklch(100% 0 0 / 0.75));
   color: oklch(0.24 0.0005 281);
 }
 
@@ -8650,6 +8985,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 9, 186, 221;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(9, 186, 221);
   border-left-color: rgb(9, 186, 221);
   border-right-color: rgb(9, 186, 221);
@@ -8657,11 +8993,15 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(9, 186, 221));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --code-background: var(--code-background-alt, oklch(100% 0 0 / 0.75));
   color: oklch(0.24 0.0005 281);
 }
 
@@ -8682,6 +9022,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 9, 186, 221;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(9, 186, 221);
   border-left-color: rgb(9, 186, 221);
   border-right-color: rgb(9, 186, 221);
@@ -8689,11 +9030,15 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(9, 186, 221));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --code-background: var(--code-background-alt, oklch(100% 0 0 / 0.75));
   color: oklch(0.24 0.0005 281);
 }
 
@@ -8714,6 +9059,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 9, 186, 221;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(9, 186, 221);
   border-left-color: rgb(9, 186, 221);
   border-right-color: rgb(9, 186, 221);
@@ -8721,11 +9067,15 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(9, 186, 221));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --code-background: var(--code-background-alt, oklch(100% 0 0 / 0.75));
   color: oklch(0.24 0.0005 281);
 }
 
@@ -8752,6 +9102,9 @@ html[saved-theme="light"] body .callout[data-callout="math-cyan"] {
   --background-primary-alt: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281));
   --background-secondary: oklch(96.2% 0.0025 281);
   --background-secondary-alt: oklch(99% 0.0005 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(82.50% 0.0025 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(97.5% 0.00125 281);
   --bg-main-outer: oklch(94.5% 0.00625 281);
@@ -8858,6 +9211,7 @@ html[saved-theme="light"] body .callout[data-callout="math-cyan"] {
   --fab-color-active: oklch(30% 0.0005 281);
   --flair-background: oklch(0% 0 0 / 0.07);
   --flair-color: oklch(30% 0.0005 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9139,6 +9493,9 @@ html[saved-theme="light"] body .callout[data-callout="math-gray"] {
   --background-primary-alt: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281));
   --background-secondary: oklch(96.2% 0.0025 281);
   --background-secondary-alt: oklch(99% 0.0005 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(82.50% 0.0025 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(97.5% 0.00125 281);
   --bg-main-outer: oklch(94.5% 0.00625 281);
@@ -9245,6 +9602,7 @@ html[saved-theme="light"] body .callout[data-callout="math-gray"] {
   --fab-color-active: oklch(30% 0.0005 281);
   --flair-background: oklch(0% 0 0 / 0.07);
   --flair-color: oklch(30% 0.0005 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9526,6 +9884,9 @@ html[saved-theme="light"] body .callout[data-callout="math-green"] {
   --background-primary-alt: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281));
   --background-secondary: oklch(96.2% 0.0025 281);
   --background-secondary-alt: oklch(99% 0.0005 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(82.50% 0.0025 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(97.5% 0.00125 281);
   --bg-main-outer: oklch(94.5% 0.00625 281);
@@ -9632,6 +9993,7 @@ html[saved-theme="light"] body .callout[data-callout="math-green"] {
   --fab-color-active: oklch(30% 0.0005 281);
   --flair-background: oklch(0% 0 0 / 0.07);
   --flair-color: oklch(30% 0.0005 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9913,6 +10275,9 @@ html[saved-theme="light"] body .callout[data-callout="math-grey"] {
   --background-primary-alt: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281));
   --background-secondary: oklch(96.2% 0.0025 281);
   --background-secondary-alt: oklch(99% 0.0005 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(82.50% 0.0025 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(97.5% 0.00125 281);
   --bg-main-outer: oklch(94.5% 0.00625 281);
@@ -10019,6 +10384,7 @@ html[saved-theme="light"] body .callout[data-callout="math-grey"] {
   --fab-color-active: oklch(30% 0.0005 281);
   --flair-background: oklch(0% 0 0 / 0.07);
   --flair-color: oklch(30% 0.0005 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10300,6 +10666,9 @@ html[saved-theme="light"] body .callout[data-callout="math-orange"] {
   --background-primary-alt: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281));
   --background-secondary: oklch(96.2% 0.0025 281);
   --background-secondary-alt: oklch(99% 0.0005 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(82.50% 0.0025 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(97.5% 0.00125 281);
   --bg-main-outer: oklch(94.5% 0.00625 281);
@@ -10406,6 +10775,7 @@ html[saved-theme="light"] body .callout[data-callout="math-orange"] {
   --fab-color-active: oklch(30% 0.0005 281);
   --flair-background: oklch(0% 0 0 / 0.07);
   --flair-color: oklch(30% 0.0005 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10687,6 +11057,9 @@ html[saved-theme="light"] body .callout[data-callout="math-pink"] {
   --background-primary-alt: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281));
   --background-secondary: oklch(96.2% 0.0025 281);
   --background-secondary-alt: oklch(99% 0.0005 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(82.50% 0.0025 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(97.5% 0.00125 281);
   --bg-main-outer: oklch(94.5% 0.00625 281);
@@ -10793,6 +11166,7 @@ html[saved-theme="light"] body .callout[data-callout="math-pink"] {
   --fab-color-active: oklch(30% 0.0005 281);
   --flair-background: oklch(0% 0 0 / 0.07);
   --flair-color: oklch(30% 0.0005 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -11074,6 +11448,9 @@ html[saved-theme="light"] body .callout[data-callout="math-purple"] {
   --background-primary-alt: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281));
   --background-secondary: oklch(96.2% 0.0025 281);
   --background-secondary-alt: oklch(99% 0.0005 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(82.50% 0.0025 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(97.5% 0.00125 281);
   --bg-main-outer: oklch(94.5% 0.00625 281);
@@ -11180,6 +11557,7 @@ html[saved-theme="light"] body .callout[data-callout="math-purple"] {
   --fab-color-active: oklch(30% 0.0005 281);
   --flair-background: oklch(0% 0 0 / 0.07);
   --flair-color: oklch(30% 0.0005 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -11461,6 +11839,9 @@ html[saved-theme="light"] body .callout[data-callout="math-red"] {
   --background-primary-alt: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281));
   --background-secondary: oklch(96.2% 0.0025 281);
   --background-secondary-alt: oklch(99% 0.0005 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(82.50% 0.0025 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(97.5% 0.00125 281);
   --bg-main-outer: oklch(94.5% 0.00625 281);
@@ -11567,6 +11948,7 @@ html[saved-theme="light"] body .callout[data-callout="math-red"] {
   --fab-color-active: oklch(30% 0.0005 281);
   --flair-background: oklch(0% 0 0 / 0.07);
   --flair-color: oklch(30% 0.0005 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -11848,6 +12230,9 @@ html[saved-theme="light"] body .callout[data-callout="math-yellow"] {
   --background-primary-alt: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281));
   --background-secondary: oklch(96.2% 0.0025 281);
   --background-secondary-alt: oklch(99% 0.0005 281);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-checkbox: radial-gradient(transparent 50%, oklch(82.50% 0.0025 281) 55% 60%, transparent 65%);
   --bg-main-inner: oklch(97.5% 0.00125 281);
   --bg-main-outer: oklch(94.5% 0.00625 281);
@@ -11954,6 +12339,7 @@ html[saved-theme="light"] body .callout[data-callout="math-yellow"] {
   --fab-color-active: oklch(30% 0.0005 281);
   --flair-background: oklch(0% 0 0 / 0.07);
   --flair-color: oklch(30% 0.0005 281);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -12229,6 +12615,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 9, 186, 221;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(9, 186, 221);
   border-left-color: rgb(9, 186, 221);
   border-right-color: rgb(9, 186, 221);
@@ -12236,11 +12623,15 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(9, 186, 221));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --code-background: var(--code-background-alt, oklch(100% 0 0 / 0.75));
   color: oklch(0.24 0.0005 281);
 }
 
@@ -12261,6 +12652,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 9, 186, 221;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(9, 186, 221);
   border-left-color: rgb(9, 186, 221);
   border-right-color: rgb(9, 186, 221);
@@ -12268,16 +12660,21 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(9, 186, 221));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --code-background: var(--code-background-alt, oklch(100% 0 0 / 0.75));
   color: oklch(0.24 0.0005 281);
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
   --callout-color: var(--callout-quote, 158, 158, 158);
+  --text-normal: var(--blockquote-color, oklch(46.5% 0.0105 281));
   background: rgba(0, 0, 0, 0) radial-gradient(180% 60% at 50% 0%, rgba(158, 158, 158, 0.063), rgba(158, 158, 158, 0.114)) repeat scroll 0% 0% / auto padding-box border-box;
   background-image: radial-gradient(180% 60% at 50% 0%, rgba(158, 158, 158, 0.063), rgba(158, 158, 158, 0.114));
   border-bottom-color: rgba(158, 158, 158, 0.24);
@@ -12293,6 +12690,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 9, 186, 221;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(9, 186, 221);
   border-left-color: rgb(9, 186, 221);
   border-right-color: rgb(9, 186, 221);
@@ -12300,11 +12698,15 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(9, 186, 221));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --code-background: var(--code-background-alt, oklch(100% 0 0 / 0.75));
   color: oklch(0.24 0.0005 281);
 }
 
@@ -12325,6 +12727,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 9, 186, 221;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(9, 186, 221);
   border-left-color: rgb(9, 186, 221);
   border-right-color: rgb(9, 186, 221);
@@ -12332,11 +12735,15 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(9, 186, 221));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --code-background: var(--code-background-alt, oklch(100% 0 0 / 0.75));
   color: oklch(0.24 0.0005 281);
 }
 
@@ -12357,6 +12764,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 9, 186, 221;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(9, 186, 221);
   border-left-color: rgb(9, 186, 221);
   border-right-color: rgb(9, 186, 221);
@@ -12364,11 +12772,15 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(9, 186, 221));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --code-background: var(--code-background-alt, oklch(100% 0 0 / 0.75));
   color: oklch(0.24 0.0005 281);
 }
 
@@ -12389,6 +12801,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 9, 186, 221;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(9, 186, 221);
   border-left-color: rgb(9, 186, 221);
   border-right-color: rgb(9, 186, 221);
@@ -12396,11 +12809,15 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(9, 186, 221));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --code-background: var(--code-background-alt, oklch(100% 0 0 / 0.75));
   color: oklch(0.24 0.0005 281);
 }
 
@@ -12421,6 +12838,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 9, 186, 221;
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
   border-bottom-color: rgb(9, 186, 221);
   border-left-color: rgb(9, 186, 221);
   border-right-color: rgb(9, 186, 221);
@@ -12428,11 +12846,15 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 670);
   color: var(--callout-title-color, rgb(9, 186, 221));
   font-weight: var(--font-medium, 520);
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] > .callout-content {
+  --blockquote-border-color: rgb(var(--callout-color), 0.75);
+  --blockquote-color: var(--color-base-80, oklch(40% 0.0025 281));
+  --code-background: var(--code-background-alt, oklch(100% 0 0 / 0.75));
   color: oklch(0.24 0.0005 281);
 }
 
@@ -12528,6 +12950,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
+  --shadow-input: var(--shadow-sidebar, 0px 0px 8px 0px oklch(62.5% 0 0 / 0.03));
   background-color: oklch(1 0 0 / 0.625);
   border-bottom-color: oklch(0 0 0 / 0.0625);
   border-bottom-left-radius: 20px;
@@ -12641,6 +13064,17 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
+  --pill-background: var(--tag-background, hsla(212, 100%, 52%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(212, 100%, 52%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(212, 100%, 52%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(212, 100%, 52%, 0.15));
+  --pill-color: var(--tag-color, hsl(212, 100%, 52%));
+  --pill-color-hover: var(--tag-color-hover, hsl(212, 100%, 52%));
+  --pill-color-remove: var(--color-accent-2, color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%));
+  --pill-padding-x: var(--tag-padding-x, 0.75em 0.375em);
+  --pill-radius: var(--tag-radius, 2em);
+  --pill-weight: var(--tag-weight, 490);
   background-color: var(--pill-background, rgba(10, 124, 255, 0.1));
   border-bottom-color: rgba(10, 124, 255, 0.15);
   border-left-color: rgba(10, 124, 255, 0.15);
@@ -12655,6 +13089,7 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  --font-weight: var(--h1-weight, 330);
   color: var(--h1-color, oklch(0.24 0.0005 281));
   font-family: var(--h1-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -12666,6 +13101,8 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  --font-weight: var(--h2-weight, 570);
+  --h1-weight: var(--h1-weight-alt, 330);
   color: var(--h2-color, oklch(0.3 0.0005 281));
   font-family: var(--h2-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -12676,21 +13113,27 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  --font-weight: var(--h3-weight, 570);
+  --h1-weight: var(--h1-weight-alt, 330);
   color: var(--h3-color, oklch(0.3 0.0005 281));
   font-family: var(--h3-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
+  --font-weight: var(--h4-weight, 570);
+  --h1-weight: var(--h1-weight-alt, 330);
   color: var(--h4-color, oklch(0.3 0.0005 281));
   font-family: var(--h4-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
+  --h1-weight: var(--h1-weight-alt, 330);
   color: var(--h5-color, oklch(0.4 0.0025 281));
   font-family: var(--h5-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
+  --font-weight: var(--h6-weight, 670);
   color: var(--h6-color, oklch(0.465 0.0105 281));
   font-family: var(--h6-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -12722,12 +13165,26 @@ html[saved-theme="light"] body hr {
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  --nav-item-background-hover: oklab(from var(--trans-faint-20) l a b / 0.025);
+  --nav-item-color: var(--color-base-80, hsl(212, 100%, 52%));
+  --nav-item-color-active: var(--nav-item-color, hsl(212, 100%, 52%));
+  --nav-item-color-hover: var(--nav-item-color, hsl(212, 100%, 52%));
+  --nav-item-weight: var(--font-semi-medium, 490);
+  --nav-item-weight-active: var(--font-semi-medium, 490);
+  --nav-item-weight-hover: var(--font-semi-medium, 490);
   color: var(--nav-item-color, rgb(10, 124, 255));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--nav-item-weight, 490);
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  --nav-item-background-hover: oklab(from var(--trans-faint-20) l a b / 0.025);
+  --nav-item-color: var(--color-base-80, hsl(212, 100%, 52%));
+  --nav-item-color-active: var(--nav-item-color, hsl(212, 100%, 52%));
+  --nav-item-color-hover: var(--nav-item-color, hsl(212, 100%, 52%));
+  --nav-item-weight: var(--font-semi-medium, 490);
+  --nav-item-weight-active: var(--font-semi-medium, 490);
+  --nav-item-weight-hover: var(--font-semi-medium, 490);
   color: var(--nav-item-color, rgb(10, 124, 255));
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--nav-item-weight, 490);
@@ -12737,6 +13194,13 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
 }
 
 html[saved-theme="light"] body li.depth-0 {
+  --nav-item-background-hover: oklab(from var(--trans-faint-20) l a b / 0.025);
+  --nav-item-color: var(--color-base-80, hsl(212, 100%, 52%));
+  --nav-item-color-active: var(--nav-item-color, hsl(212, 100%, 52%));
+  --nav-item-color-hover: var(--nav-item-color, hsl(212, 100%, 52%));
+  --nav-item-weight: var(--font-semi-medium, 490);
+  --nav-item-weight-active: var(--font-semi-medium, 490);
+  --nav-item-weight-hover: var(--font-semi-medium, 490);
   font-weight: var(--nav-item-weight, 490);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
@@ -12765,6 +13229,7 @@ html[saved-theme="light"] body li.depth-0 {
 }
 
 html[saved-theme="light"] body footer ul li a {
+  --background-modifier-hover: var(--hr-color, oklch(0% 0 0 / 0.092));
   color: oklch(0.465 0.0105 281);
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
@@ -12782,6 +13247,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+  --nav-item-background-hover: oklab(from var(--trans-faint-20) l a b / 0.025);
   color: var(--nav-item-color, oklch(0.465 0.0105 281));
 }
 
@@ -12802,6 +13268,7 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
+  --nav-item-background-hover: oklab(from var(--trans-faint-20) l a b / 0.025);
   color: var(--nav-item-color, oklch(0.465 0.0105 281));
 }
 
@@ -12873,6 +13340,7 @@ html[saved-theme="light"] body .bases-table thead th {
   font-weight: var(--table-header-weight, 520);
 }`,
     properties: `html[saved-theme="light"] body .metadata {
+  --input-height: var(--metadata-input-height, 2.125rem);
   border-bottom-color: oklch(0 0 0 / 0.0625);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -12895,6 +13363,7 @@ html[saved-theme="light"] body .metadata-properties {
 }
 
 html[saved-theme="light"] body .note-properties {
+  --input-height: var(--metadata-input-height, 2.125rem);
   border-color: oklch(0 0 0 / 0.0625);
   border-radius: 12px;
 }
@@ -12909,11 +13378,23 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --icon-stroke: var(--icon-xs-stroke-width, 2.125px);
+  --pill-background: var(--tag-background, hsla(212, 100%, 52%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(212, 100%, 52%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(212, 100%, 52%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(212, 100%, 52%, 0.15));
+  --pill-color: var(--tag-color, hsl(212, 100%, 52%));
+  --pill-color-hover: var(--tag-color-hover, hsl(212, 100%, 52%));
+  --pill-color-remove: var(--color-accent-2, color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%));
+  --pill-padding-x: var(--tag-padding-x, 0.75em 0.375em);
+  --pill-radius: var(--tag-radius, 2em);
+  --pill-weight: var(--tag-weight, 490);
   background-color: var(--pill-background, rgba(10, 124, 255, 0.1));
   color: var(--pill-color, rgb(10, 124, 255));
 }
 
 html[saved-theme="light"] body .note-properties-value {
+  --input-padding: var(--metadata-input-padding, 6px 8px);
   color: oklch(0.465 0.0105 281);
 }
 
@@ -13013,6 +13494,9 @@ html[saved-theme="light"] body sup {
 }
 
 html[saved-theme="light"] body ul.tags > li {
+  --font-weight: var(--link-weight, 420);
+  --tag-padding-y: var(--pill-padding-y, 0.25em);
+  --tag-size: var(--metadata-input-font-size, 0.875em);
   background-color: var(--tag-background, rgba(10, 124, 255, 0.1));
   border-bottom-color: rgba(10, 124, 255, 0.15);
   border-left-color: rgba(10, 124, 255, 0.15);

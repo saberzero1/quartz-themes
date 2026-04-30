@@ -345,6 +345,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, rgba(0, 0, 0, 0.03));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0.03));
   color: rgba(0, 0, 0, 0.9);
 }
@@ -365,6 +366,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, rgba(0, 0, 0, 0.03));
   background-color: var(--background-primary, rgb(244, 226, 205));
   border-left-color: rgba(0, 0, 0, 0.2);
   color: rgba(0, 0, 0, 0.9);
@@ -635,6 +637,7 @@ html body p {
   --editor-line-height-small-rem: 1.7rem;
   --flair-background: #ffffff;
   --flair-color: rgba(0, 0, 0, 0.9);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', "Petrona", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -1061,6 +1064,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, rgba(0, 0, 0, 0.03));
   border-bottom-color: rgba(0, 0, 0, 0.9);
   border-left-color: rgba(0, 0, 0, 0.9);
   border-right-color: rgba(0, 0, 0, 0.9);
@@ -2207,6 +2211,10 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, hsl(316.9, 15.4%, 40.8%));
+  --pill-color-hover: var(--tag-color-hover, hsl(316.9, 15.4%, 40.8%));
+  --pill-color-remove: var(--tag-color, hsl(316.9, 15.4%, 40.8%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(316.9, 15.4%, 40.8%));
   border-bottom-left-radius: 31.5px;
   border-bottom-right-radius: 31.5px;
   border-top-left-radius: 31.5px;
@@ -2219,6 +2227,7 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  --font-weight: var(--h1-weight, 500);
   color: var(--h1-color, rgba(0, 0, 0, 0.9));
   font-family: var(--h1-font, Petrona);
 }
@@ -2230,6 +2239,7 @@ html body h1.article-title {
 }
 
 html body h2 {
+  --font-weight: var(--h2-weight, 500);
   color: var(--h2-color, rgba(0, 0, 0, 0.9));
   font-family: var(--h2-font, Petrona);
 }
@@ -2240,21 +2250,25 @@ html body h2.page-title, html h2.page-title a {
 }
 
 html body h3 {
+  --font-weight: var(--h3-weight, 500);
   color: var(--h3-color, rgba(0, 0, 0, 0.9));
   font-family: var(--h3-font, Petrona);
 }
 
 html body h4 {
+  --font-weight: var(--h4-weight, 500);
   color: var(--h4-color, rgba(0, 0, 0, 0.9));
   font-family: var(--h4-font, Petrona);
 }
 
 html body h5 {
+  --font-weight: var(--h5-weight, 500);
   color: var(--h5-color, rgba(0, 0, 0, 0.9));
   font-family: var(--h5-font, Petrona);
 }
 
 html body h6 {
+  --font-weight: var(--h6-weight, 500);
   color: var(--text-normal, rgba(0, 0, 0, 0.9));
   font-family: var(--h6-font, Petrona);
 }
@@ -2442,6 +2456,10 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, hsl(316.9, 15.4%, 40.8%));
+  --pill-color-hover: var(--tag-color-hover, hsl(316.9, 15.4%, 40.8%));
+  --pill-color-remove: var(--tag-color, hsl(316.9, 15.4%, 40.8%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(316.9, 15.4%, 40.8%));
   border-radius: 31.5px;
   color: var(--pill-color, rgb(120, 88, 111));
 }

@@ -182,6 +182,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #fdf6e3);
   background-color: var(--tab-container-background, rgb(253, 246, 227));
 }
 
@@ -194,6 +195,7 @@ html body .page > div#quartz-body div.sidebar {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #fdf6e3);
   background-color: var(--tab-container-background, rgb(253, 246, 227));
 }`,
     code: `html body code {
@@ -211,7 +213,11 @@ html body pre:has(> code) {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    images: `html body img {
+    images: `html body figure {
+  --code-background: var(--ec-frm-edBg, #fdf6e3);
+}
+
+html body img {
   border-bottom-color: rgb(15, 71, 97);
   border-left-color: rgb(15, 71, 97);
   border-right-color: rgb(15, 71, 97);
@@ -704,6 +710,21 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   background-color: var(--background-modifier-hover, rgba(40, 40, 40, 0.08));
 }
 
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(258,
+		88%,
+		66%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(258,
+		88%,
+		66%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(258,
+		88%,
+		66%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(258,
+		88%,
+		66%, 0.15));
+}
+
 html body h1 {
   color: var(--h1-color, rgb(15, 71, 97));
 }
@@ -715,6 +736,7 @@ html body h1.article-title {
 }
 
 html body h2 {
+  --font-weight: var(--h2-weight, 600);
   color: var(--h2-color, rgb(18, 89, 122));
 }
 
@@ -723,18 +745,22 @@ html body h2.page-title, html h2.page-title a {
 }
 
 html body h3 {
+  --font-weight: var(--h3-weight, 400);
   color: var(--h3-color, rgb(22, 108, 148));
 }
 
 html body h4 {
+  --font-weight: var(--h4-weight, 400);
   color: var(--h4-color, rgb(26, 126, 173));
 }
 
 html body h5 {
+  --font-weight: var(--h5-weight, 300);
   color: var(--h5-color, rgb(30, 145, 199));
 }
 
 html body h6 {
+  --font-weight: var(--h6-weight, 300);
   color: var(--h6-color, rgb(34, 164, 224));
 }`,
     scrollbars: `html body .callout {
@@ -758,7 +784,22 @@ html body h6 {
     canvas: `html body .canvas-sidebar {
   background-color: var(--background-primary, rgb(253, 246, 227));
 }`,
-    properties: `html body div#quartz-root {
+    properties: `html body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(258,
+		88%,
+		66%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(258,
+		88%,
+		66%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(258,
+		88%,
+		66%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(258,
+		88%,
+		66%, 0.15));
+}
+
+html body div#quartz-root {
   background-color: var(--background-primary, rgb(253, 246, 227));
 }`,
     stacked: `html body .stacked-page {

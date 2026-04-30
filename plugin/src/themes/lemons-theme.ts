@@ -479,6 +479,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #303030);
   background-color: var(--tab-container-background, rgb(48, 48, 48));
   color: rgb(255, 255, 255);
 }
@@ -499,6 +500,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #303030);
   background-color: var(--tab-container-background, rgb(48, 48, 48));
   border-left-color: rgb(64, 64, 64);
   color: rgb(255, 255, 255);
@@ -627,6 +629,7 @@ html body .page > div#quartz-body div.sidebar.right {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #404040;
   --flair-color: #ffffff;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-default: "??",
     "??",
     Menlo,
@@ -1057,6 +1060,7 @@ html body h2 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #404040;
   --flair-color: #ffffff;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-default: "??",
     "??",
     Menlo,
@@ -1441,6 +1445,7 @@ html body h3 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #404040;
   --flair-color: #ffffff;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-default: "??",
     "??",
     Menlo,
@@ -1825,6 +1830,7 @@ html body h4 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #404040;
   --flair-color: #ffffff;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-default: "??",
     "??",
     Menlo,
@@ -2209,6 +2215,7 @@ html body h5 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #404040;
   --flair-color: #ffffff;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-default: "??",
     "??",
     Menlo,
@@ -2593,6 +2600,7 @@ html body h6 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #404040;
   --flair-color: #ffffff;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-default: "??",
     "??",
     Menlo,
@@ -3010,6 +3018,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #282828);
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
@@ -4409,6 +4418,22 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(46deg,
+    95%,
+    65%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(46deg,
+    95%,
+    65%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(46deg,
+    95%,
+    65%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(46deg,
+    95%,
+    65%, 0.15));
+  --pill-color: var(--tag-color, hsl(46deg, 95%, 61.2%));
+  --pill-color-hover: var(--tag-color-hover, hsl(46deg, 95%, 61.2%));
+  --pill-color-remove: var(--tag-color, hsl(46deg, 95%, 61.2%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(46deg, 95%, 61.2%));
   background-color: var(--pill-background, rgba(251, 211, 81, 0.1));
   border-bottom-color: rgba(251, 211, 81, 0.15);
   border-left-color: rgba(251, 211, 81, 0.15);
@@ -4536,6 +4561,7 @@ html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
+  --lt-file-icon-color: var(--nav-item-color, #a0a0a0);
   color: var(--nav-item-color, rgb(160, 160, 160));
   font-family: "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
 }`,
@@ -4547,6 +4573,7 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 }
 
 html body li.section-li > .section .meta {
+  --lt-file-icon-color: var(--nav-item-color, #a0a0a0);
   color: var(--nav-item-color, rgb(160, 160, 160));
   font-family: "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
 }
@@ -4641,6 +4668,22 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(46deg,
+    95%,
+    65%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(46deg,
+    95%,
+    65%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(46deg,
+    95%,
+    65%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(46deg,
+    95%,
+    65%, 0.15));
+  --pill-color: var(--tag-color, hsl(46deg, 95%, 61.2%));
+  --pill-color-hover: var(--tag-color-hover, hsl(46deg, 95%, 61.2%));
+  --pill-color-remove: var(--tag-color, hsl(46deg, 95%, 61.2%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(46deg, 95%, 61.2%));
   background-color: var(--pill-background, rgba(251, 211, 81, 0.1));
   color: var(--pill-color, rgb(250, 206, 62));
 }

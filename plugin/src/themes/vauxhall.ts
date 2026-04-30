@@ -688,6 +688,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000));
   background-color: var(--tab-container-background, color(srgb 0.0176 0.01936 0.0704));
   color: color(srgb 0.91 0.88 1);
 }
@@ -707,6 +708,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, color-mix(in srgb, hsl(238, 60%, 11%) 40%, #000));
   background-color: var(--tab-container-background, color(srgb 0.0176 0.01936 0.0704));
   border-left-color: color(srgb 0.1096 0.10356 0.2584);
   color: color(srgb 0.91 0.88 1);
@@ -840,6 +842,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000));
   border-bottom-color: color(srgb 0.91 0.88 1);
   border-left-color: color(srgb 0.91 0.88 1);
   border-right-color: color(srgb 0.91 0.88 1);
@@ -1635,6 +1638,9 @@ html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
     hsl(238, 60%, 11%) 90%,
     hsl(255, 100%, 80%)
   );
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, color-mix(
     in srgb,
@@ -1818,6 +1824,7 @@ html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
     hsl(255, 100%, 80%)
   );
   --flair-color: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -3363,6 +3370,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
   background-color: var(--tab-container-background, color(srgb 0.968 0.9688 0.992));
   color: color(srgb 0.125 0 0.5);
 }
@@ -3382,6 +3390,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff));
   background-color: var(--tab-container-background, color(srgb 0.968 0.9688 0.992));
   border-left-color: color(srgb 0.853 0.8298 0.982);
   color: color(srgb 0.125 0 0.5);
@@ -3515,6 +3524,11 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  ));
   border-bottom-color: color(srgb 0.125 0 0.5);
   border-left-color: color(srgb 0.125 0 0.5);
   border-right-color: color(srgb 0.125 0 0.5);
@@ -4306,6 +4320,9 @@ html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
   --background-primary-alt: color-mix(in srgb, hsl(238, 60%, 95%) 50%, #fff);
   --background-secondary: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
   --background-secondary-alt: color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff) 65%, transparent) linear-gradient(color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff), color-mix(in srgb, color-mix(in srgb, hsl(238, 60%, 95%) 40%, #fff) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -4469,6 +4486,7 @@ html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: color-mix(in srgb, hsl(238, 60%, 95%) 25%, #fff);
   --flair-color: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;

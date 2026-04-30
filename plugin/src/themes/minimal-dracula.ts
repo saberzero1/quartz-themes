@@ -283,6 +283,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #191A21);
   background-color: var(--tab-container-background, rgb(25, 26, 33));
   color: rgb(248, 248, 242);
 }
@@ -302,6 +303,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #191A21);
   background-color: var(--tab-container-background, rgb(25, 26, 33));
   border-left-color: rgb(25, 26, 33);
   color: rgb(248, 248, 242);
@@ -475,6 +477,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #191A21);
   border-bottom-color: rgb(248, 248, 242);
   border-left-color: rgb(248, 248, 242);
   border-right-color: rgb(248, 248, 242);
@@ -1616,6 +1619,11 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(248, 248, 242);
 }
 
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, hsl(258, 88%, 66%));
+  --pill-color-remove: var(--tag-color, hsl(258, 88%, 66%));
+}
+
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(138, 92, 245);
 }
@@ -1630,6 +1638,7 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  --font-weight: var(--h2-weight, 700);
   color: var(--h2-color, rgb(248, 248, 242));
 }
 
@@ -1638,18 +1647,22 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h3 {
+  --font-weight: var(--h3-weight, 600);
   color: var(--h3-color, rgb(248, 248, 242));
 }
 
 html[saved-theme="dark"] body h4 {
+  --font-weight: var(--h4-weight, 500);
   color: var(--h4-color, rgb(248, 248, 242));
 }
 
 html[saved-theme="dark"] body h5 {
+  --font-weight: var(--h5-weight, 500);
   color: var(--h5-color, rgb(248, 248, 242));
 }
 
 html[saved-theme="dark"] body h6 {
+  --font-weight: var(--h6-weight, 500);
   color: var(--h6-color, rgb(248, 248, 242));
 }
 
@@ -1825,6 +1838,8 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-color: var(--tag-color, hsl(258, 88%, 66%));
+  --pill-color-remove: var(--tag-color, hsl(258, 88%, 66%));
   color: var(--pill-color, rgb(138, 92, 245));
 }
 
@@ -2186,6 +2201,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #EDE9DA);
   background-color: var(--tab-container-background, rgb(237, 233, 218));
   color: rgb(31, 31, 31);
 }
@@ -2205,6 +2221,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #EDE9DA);
   background-color: var(--tab-container-background, rgb(237, 233, 218));
   border-left-color: rgb(237, 233, 218);
   color: rgb(31, 31, 31);
@@ -2365,6 +2382,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #EDE9DA);
   border-bottom-color: rgb(31, 31, 31);
   border-left-color: rgb(31, 31, 31);
   border-right-color: rgb(31, 31, 31);
@@ -3719,6 +3737,7 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  --font-weight: var(--h2-weight, 700);
   color: var(--h2-color, rgb(31, 31, 31));
 }
 
@@ -3727,18 +3746,22 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  --font-weight: var(--h3-weight, 600);
   color: var(--h3-color, rgb(31, 31, 31));
 }
 
 html[saved-theme="light"] body h4 {
+  --font-weight: var(--h4-weight, 500);
   color: var(--h4-color, rgb(31, 31, 31));
 }
 
 html[saved-theme="light"] body h5 {
+  --font-weight: var(--h5-weight, 500);
   color: var(--h5-color, rgb(31, 31, 31));
 }
 
 html[saved-theme="light"] body h6 {
+  --font-weight: var(--h6-weight, 500);
   color: var(--h6-color, rgb(31, 31, 31));
 }
 

@@ -536,6 +536,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #121212);
   background-color: var(--tab-container-background, rgb(18, 18, 18));
   color: rgb(144, 144, 144);
 }
@@ -556,6 +557,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #121212);
   background-color: var(--tab-container-background, rgb(18, 18, 18));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(144, 144, 144);
@@ -744,6 +746,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #1a1a1a);
   border-bottom-color: rgb(144, 144, 144);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -2002,6 +2005,22 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(106.9879518072deg,
+    62.4060150376%,
+    73.9215686275%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(106.9879518072deg,
+    62.4060150376%,
+    73.9215686275%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(106.9879518072deg,
+    62.4060150376%,
+    73.9215686275%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(106.9879518072deg,
+    62.4060150376%,
+    73.9215686275%, 0.15));
+  --pill-color: var(--tag-color, hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%));
+  --pill-color-hover: var(--tag-color-hover, hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%));
+  --pill-color-remove: var(--tag-color, hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%));
   background-color: var(--pill-background, rgba(165, 230, 147, 0.1));
   border-bottom-color: rgba(165, 230, 147, 0.15);
   border-left-color: rgba(165, 230, 147, 0.15);
@@ -2015,6 +2034,7 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  --font-weight: var(--h1-weight, 500);
   color: var(--h1-color, rgb(255, 255, 255));
   font-family: var(--h1-font, "??", "??", "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
 }
@@ -2026,6 +2046,7 @@ html body h1.article-title {
 }
 
 html body h2 {
+  --font-weight: var(--h2-weight, 500);
   color: var(--h2-color, rgb(255, 255, 255));
   font-family: var(--h2-font, "??", "??", "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
 }
@@ -2036,21 +2057,25 @@ html body h2.page-title, html h2.page-title a {
 }
 
 html body h3 {
+  --font-weight: var(--h3-weight, 500);
   color: var(--h3-color, rgb(255, 255, 255));
   font-family: var(--h3-font, "??", "??", "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
 }
 
 html body h4 {
+  --font-weight: var(--h4-weight, 500);
   color: var(--h4-color, rgb(255, 255, 255));
   font-family: var(--h4-font, "??", "??", "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
 }
 
 html body h5 {
+  --font-weight: var(--h5-weight, 500);
   color: var(--h5-color, rgb(255, 255, 255));
   font-family: var(--h5-font, "??", "??", "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
 }
 
 html body h6 {
+  --font-weight: var(--h6-weight, 500);
   color: var(--h6-color, rgb(255, 255, 255));
   font-family: var(--h6-font, "??", "??", "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace);
 }
@@ -2120,6 +2145,10 @@ html body footer ul li a {
 }
 
 html body .recent-notes > ul.recent-ul > li {
+  --focus-color-active: var(--text-important, #ffffff);
+  --focus-color-hover: var(--color-accent, hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%));
+  --focus-text-color-active: var(--text-important, #ffffff);
+  --focus-text-color-hover: var(--text-accent, hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%));
   border-bottom-color: rgb(144, 144, 144);
   border-left-color: rgb(144, 144, 144);
   border-right-color: rgb(144, 144, 144);
@@ -2136,6 +2165,10 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
   font-family: "??", "??", "??", "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
 }`,
     listPage: `html body li.section-li {
+  --focus-color-active: var(--text-important, #ffffff);
+  --focus-color-hover: var(--color-accent, hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%));
+  --focus-text-color-active: var(--text-important, #ffffff);
+  --focus-text-color-hover: var(--text-accent, hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%));
   border-bottom-color: rgb(144, 144, 144);
   border-left-color: rgb(144, 144, 144);
   border-right-color: rgb(144, 144, 144);
@@ -2246,6 +2279,22 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(106.9879518072deg,
+    62.4060150376%,
+    73.9215686275%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(106.9879518072deg,
+    62.4060150376%,
+    73.9215686275%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(106.9879518072deg,
+    62.4060150376%,
+    73.9215686275%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(106.9879518072deg,
+    62.4060150376%,
+    73.9215686275%, 0.15));
+  --pill-color: var(--tag-color, hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%));
+  --pill-color-hover: var(--tag-color-hover, hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%));
+  --pill-color-remove: var(--tag-color, hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%));
   background-color: var(--pill-background, rgba(165, 230, 147, 0.1));
   color: var(--pill-color, rgb(165, 230, 147));
 }

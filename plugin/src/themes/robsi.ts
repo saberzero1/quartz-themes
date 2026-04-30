@@ -426,6 +426,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #020202);
   background-color: var(--tab-container-background, rgb(2, 2, 2));
   color: rgb(220, 220, 220);
 }
@@ -445,6 +446,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #020202);
   background-color: var(--tab-container-background, rgb(2, 2, 2));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(220, 220, 220);
@@ -577,6 +579,7 @@ html[saved-theme="dark"] body html {
   --fg_dark: rgb(180, 180, 180);
   --flair-background: rgb(8, 8, 8);
   --flair-color: rgb(220, 220, 220);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-note-color: rgb(200, 190, 250);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -971,6 +974,7 @@ html[saved-theme="dark"] body h2 {
   --fg_dark: rgb(180, 180, 180);
   --flair-background: rgb(8, 8, 8);
   --flair-color: rgb(220, 220, 220);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-note-color: rgb(200, 190, 250);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -1319,6 +1323,7 @@ html[saved-theme="dark"] body h3 {
   --fg_dark: rgb(180, 180, 180);
   --flair-background: rgb(8, 8, 8);
   --flair-color: rgb(220, 220, 220);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-note-color: rgb(200, 190, 250);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -1667,6 +1672,7 @@ html[saved-theme="dark"] body h4 {
   --fg_dark: rgb(180, 180, 180);
   --flair-background: rgb(8, 8, 8);
   --flair-color: rgb(220, 220, 220);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-note-color: rgb(200, 190, 250);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2015,6 +2021,7 @@ html[saved-theme="dark"] body h5 {
   --fg_dark: rgb(180, 180, 180);
   --flair-background: rgb(8, 8, 8);
   --flair-color: rgb(220, 220, 220);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-note-color: rgb(200, 190, 250);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2363,6 +2370,7 @@ html[saved-theme="dark"] body h6 {
   --fg_dark: rgb(180, 180, 180);
   --flair-background: rgb(8, 8, 8);
   --flair-color: rgb(220, 220, 220);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-note-color: rgb(200, 190, 250);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2726,6 +2734,7 @@ html[saved-theme="dark"] body p {
   --fg_dark: rgb(180, 180, 180);
   --flair-background: rgb(8, 8, 8);
   --flair-color: rgb(220, 220, 220);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-note-color: rgb(200, 190, 250);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3080,6 +3089,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, rgb(187, 154, 247, 0.05));
   border-bottom-color: rgb(220, 220, 220);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -4291,6 +4301,14 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, rgba(187, 154, 247, 0.15));
+  --pill-background-hover: var(--tag-background-hover, rgba(125, 207, 255, 0.15));
+  --pill-border-color: var(--tag-border-color, hsla(202, 100%, 75%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(202, 100%, 75%, 0.15));
+  --pill-color: var(--tag-color, rgb(187, 154, 247));
+  --pill-color-hover: var(--tag-color-hover, rgb(125, 207, 255));
+  --pill-color-remove: var(--tag-color, rgb(187, 154, 247));
+  --pill-color-remove-hover: var(--tag-color-hover, rgb(125, 207, 255));
   background-color: var(--pill-background, rgba(187, 154, 247, 0.15));
   border-bottom-color: rgba(128, 208, 255, 0.15);
   border-left-color: rgba(128, 208, 255, 0.15);
@@ -4519,11 +4537,20 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, rgba(187, 154, 247, 0.15));
+  --pill-background-hover: var(--tag-background-hover, rgba(125, 207, 255, 0.15));
+  --pill-border-color: var(--tag-border-color, hsla(202, 100%, 75%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(202, 100%, 75%, 0.15));
+  --pill-color: var(--tag-color, rgb(187, 154, 247));
+  --pill-color-hover: var(--tag-color-hover, rgb(125, 207, 255));
+  --pill-color-remove: var(--tag-color, rgb(187, 154, 247));
+  --pill-color-remove-hover: var(--tag-color-hover, rgb(125, 207, 255));
   background-color: var(--pill-background, rgba(187, 154, 247, 0.15));
   color: var(--pill-color, rgb(187, 154, 247));
 }
 
 html[saved-theme="dark"] body .note-properties-value {
+  --input-padding: var(--metadata-input-padding, 8px 10px);
   color: rgb(180, 180, 180);
 }
 
@@ -5050,6 +5077,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #f8fafc);
   background-color: var(--tab-container-background, rgb(248, 250, 252));
   color: rgb(30, 35, 42);
 }
@@ -5069,6 +5097,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #f8fafc);
   background-color: var(--tab-container-background, rgb(248, 250, 252));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(30, 35, 42);
@@ -5200,6 +5229,7 @@ html[saved-theme="light"] body html {
   --fg_dark: rgb(75, 85, 95);
   --flair-background: #e2e8f0;
   --flair-color: rgb(30, 35, 42);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-note-color: rgb(120, 85, 200);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5587,6 +5617,7 @@ html[saved-theme="light"] body h2 {
   --fg_dark: rgb(75, 85, 95);
   --flair-background: #e2e8f0;
   --flair-color: rgb(30, 35, 42);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-note-color: rgb(120, 85, 200);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5928,6 +5959,7 @@ html[saved-theme="light"] body h3 {
   --fg_dark: rgb(75, 85, 95);
   --flair-background: #e2e8f0;
   --flair-color: rgb(30, 35, 42);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-note-color: rgb(120, 85, 200);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6269,6 +6301,7 @@ html[saved-theme="light"] body h4 {
   --fg_dark: rgb(75, 85, 95);
   --flair-background: #e2e8f0;
   --flair-color: rgb(30, 35, 42);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-note-color: rgb(120, 85, 200);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6610,6 +6643,7 @@ html[saved-theme="light"] body h5 {
   --fg_dark: rgb(75, 85, 95);
   --flair-background: #e2e8f0;
   --flair-color: rgb(30, 35, 42);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-note-color: rgb(120, 85, 200);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6951,6 +6985,7 @@ html[saved-theme="light"] body h6 {
   --fg_dark: rgb(75, 85, 95);
   --flair-background: #e2e8f0;
   --flair-color: rgb(30, 35, 42);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-note-color: rgb(120, 85, 200);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7307,6 +7342,7 @@ html[saved-theme="light"] body p {
   --fg_dark: rgb(75, 85, 95);
   --flair-background: #e2e8f0;
   --flair-color: rgb(30, 35, 42);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-note-color: rgb(120, 85, 200);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7655,6 +7691,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, rgba(102, 63, 191, 0.06));
   border-bottom-color: rgb(30, 35, 42);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -8866,6 +8903,14 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, rgba(160, 30, 140, 0.15));
+  --pill-background-hover: var(--tag-background-hover, rgba(0, 120, 180, 0.15));
+  --pill-border-color: var(--tag-border-color, hsla(265, 60%, 55%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(265, 60%, 55%, 0.15));
+  --pill-color: var(--tag-color, rgb(160, 30, 140));
+  --pill-color-hover: var(--tag-color-hover, rgb(0, 120, 180));
+  --pill-color-remove: var(--tag-color, rgb(160, 30, 140));
+  --pill-color-remove-hover: var(--tag-color-hover, rgb(0, 120, 180));
   background-color: var(--pill-background, rgba(160, 30, 140, 0.15));
   border-bottom-color: rgba(129, 71, 209, 0.15);
   border-left-color: rgba(129, 71, 209, 0.15);
@@ -9094,11 +9139,20 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, rgba(160, 30, 140, 0.15));
+  --pill-background-hover: var(--tag-background-hover, rgba(0, 120, 180, 0.15));
+  --pill-border-color: var(--tag-border-color, hsla(265, 60%, 55%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(265, 60%, 55%, 0.15));
+  --pill-color: var(--tag-color, rgb(160, 30, 140));
+  --pill-color-hover: var(--tag-color-hover, rgb(0, 120, 180));
+  --pill-color-remove: var(--tag-color, rgb(160, 30, 140));
+  --pill-color-remove-hover: var(--tag-color-hover, rgb(0, 120, 180));
   background-color: var(--pill-background, rgba(160, 30, 140, 0.15));
   color: var(--pill-color, rgb(160, 30, 140));
 }
 
 html[saved-theme="light"] body .note-properties-value {
+  --input-padding: var(--metadata-input-padding, 8px 10px);
   color: rgb(75, 85, 95);
 }
 

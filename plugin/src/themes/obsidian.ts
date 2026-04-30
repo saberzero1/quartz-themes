@@ -874,6 +874,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #262626);
   background-color: var(--tab-container-background, rgb(38, 38, 38));
   color: rgb(218, 218, 218);
 }
@@ -895,6 +896,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #262626);
   background-color: var(--tab-container-background, rgb(38, 38, 38));
   border-left-color: rgb(54, 54, 54);
   border-left-width: 0px;
@@ -2124,6 +2126,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #f6f6f6);
   background-color: var(--tab-container-background, rgb(246, 246, 246));
   color: rgb(34, 34, 34);
 }
@@ -2145,6 +2148,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #f6f6f6);
   background-color: var(--tab-container-background, rgb(246, 246, 246));
   border-left-color: rgb(224, 224, 224);
   border-left-width: 0px;

@@ -241,6 +241,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #1d2021);
   background-color: var(--tab-container-background, rgb(29, 32, 33));
   color: rgb(235, 219, 178);
 }
@@ -260,6 +261,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #1d2021);
   background-color: var(--tab-container-background, rgb(29, 32, 33));
   border-left-color: rgba(111, 107, 91, 0.15);
   color: rgb(235, 219, 178);
@@ -473,6 +475,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #1d2021);
   border-bottom-color: rgb(235, 219, 178);
   border-left-color: rgb(235, 219, 178);
   border-right-color: rgb(235, 219, 178);
@@ -1362,6 +1365,13 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(124, 85%, 77%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(124, 85%, 77%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(124, 85%, 77%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(124, 85%, 77%, 0.15));
+  --pill-color: var(--tag-color, #91f697);
+  --pill-color-remove: var(--tag-color, #91f697);
+  --pill-padding-y: var(--tag-padding-y, 0.3em);
   background-color: var(--pill-background, rgba(146, 246, 153, 0.1));
   border-bottom-color: rgba(146, 246, 153, 0.15);
   border-left-color: rgba(146, 246, 153, 0.15);
@@ -1385,6 +1395,7 @@ html body h1.article-title {
 }
 
 html body h2 {
+  --font-weight: var(--h2-weight, 600);
   color: var(--h2-color, rgb(0, 148, 137));
   font-family: var(--h2-font, "??", "Euclid Circular A", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -1395,16 +1406,19 @@ html body h2.page-title, html h2.page-title a {
 }
 
 html body h3 {
+  --font-weight: var(--h3-weight, 600);
   color: var(--h3-color, rgb(235, 219, 178));
   font-family: var(--h3-font, "??", "Euclid Circular A", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html body h4 {
+  --font-weight: var(--h4-weight, 600);
   color: var(--h4-color, rgb(235, 219, 178));
   font-family: var(--h4-font, "??", "Euclid Circular A", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html body h5 {
+  --font-weight: var(--h5-weight, 600);
   color: var(--h5-color, rgb(235, 219, 178));
   font-family: var(--h5-font, "??", "Euclid Circular A", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -1553,6 +1567,13 @@ html body .metadata-properties {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(124, 85%, 77%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(124, 85%, 77%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(124, 85%, 77%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(124, 85%, 77%, 0.15));
+  --pill-color: var(--tag-color, #91f697);
+  --pill-color-remove: var(--tag-color, #91f697);
+  --pill-padding-y: var(--tag-padding-y, 0.3em);
   background-color: var(--pill-background, rgba(146, 246, 153, 0.1));
   color: var(--pill-color, rgb(145, 246, 151));
 }

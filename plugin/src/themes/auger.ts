@@ -334,6 +334,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, oklch(27.34% 0.0023 67.5746));
   background-color: var(--background-secondary, oklch(0.2734 0.0023 67.5746));
   color: oklch(0.9901 0.0161 95.22);
 }
@@ -353,6 +354,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, oklch(27.34% 0.0023 67.5746));
   background-color: var(--tab-container-background, oklch(0.2734 0.0023 67.5746));
   border-left-color: rgb(58, 58, 60);
   color: oklch(0.9901 0.0161 95.22);
@@ -629,6 +631,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, oklch(22.28% 0.0025 67.5819));
   border-bottom-color: oklch(0.9901 0.0161 95.22);
   border-bottom-style: solid;
   border-left-color: oklch(0.9901 0.0161 95.22);
@@ -2210,6 +2213,14 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(175, 57%, 65%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(175, 57%, 65%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(175, 57%, 65%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(175, 57%, 65%, 0.15));
+  --pill-color: var(--tag-color, hsl(175 57% 65%));
+  --pill-color-hover: var(--tag-color-hover, hsl(175 57% 65%));
+  --pill-color-remove: var(--tag-color, hsl(175 57% 65%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(175 57% 65%));
   background-color: var(--pill-background, rgba(115, 217, 208, 0.1));
   border-bottom-color: rgba(115, 217, 208, 0.15);
   border-bottom-left-radius: 33.6px;
@@ -2288,16 +2299,22 @@ html[saved-theme="dark"] body hr {
   padding-top: 19.2px;
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  --tw-ease: var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
   color: var(--text-normal, oklch(0.9901 0.0161 95.22));
   font-family: "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  --tw-ease: var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
   color: var(--text-normal, oklch(0.9901 0.0161 95.22));
   font-family: "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.depth-0 {
+  --tw-ease: var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: oklch(0.8463 0.0136 102.156);
@@ -2341,6 +2358,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+  --tw-ease: var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
   color: var(--text-normal, oklch(0.9901 0.0161 95.22));
 }
 
@@ -2365,6 +2383,7 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
+  --tw-ease: var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
   color: var(--text-normal, oklch(0.9901 0.0161 95.22));
 }
 
@@ -2418,6 +2437,7 @@ html[saved-theme="dark"] body .canvas-node-content {
 }
 
 html[saved-theme="dark"] body .canvas-node-file {
+  --tw-leading: var(--leading-relaxed, 1.625);
   color: var(--text-normal, oklch(0.9901 0.0161 95.22));
 }
 
@@ -2473,6 +2493,14 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(175, 57%, 65%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(175, 57%, 65%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(175, 57%, 65%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(175, 57%, 65%, 0.15));
+  --pill-color: var(--tag-color, hsl(175 57% 65%));
+  --pill-color-hover: var(--tag-color-hover, hsl(175 57% 65%));
+  --pill-color-remove: var(--tag-color, hsl(175 57% 65%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(175 57% 65%));
   background-color: var(--pill-background, rgba(115, 217, 208, 0.1));
   border-radius: 33.6px;
   color: var(--pill-color, rgb(115, 217, 208));
@@ -2917,6 +2945,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #f4f4f3);
   background-color: var(--background-secondary, rgb(244, 244, 243));
   color: rgb(58, 54, 51);
 }
@@ -2936,6 +2965,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #f4f4f3);
   background-color: var(--tab-container-background, rgb(244, 244, 243));
   border-left-color: rgb(229, 228, 227);
   color: rgb(58, 54, 51);
@@ -3212,6 +3242,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #f7f7f6);
   border-bottom-color: rgb(58, 54, 51);
   border-bottom-style: solid;
   border-left-color: rgb(58, 54, 51);
@@ -4681,6 +4712,14 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(175, 57%, 33%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(175, 57%, 33%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(175, 57%, 33%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(175, 57%, 33%, 0.15));
+  --pill-color: var(--tag-color, hsl(175 57% 33%));
+  --pill-color-hover: var(--tag-color-hover, hsl(175 57% 33%));
+  --pill-color-remove: var(--tag-color, hsl(175 57% 33%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(175 57% 33%));
   background-color: var(--pill-background, rgba(36, 132, 124, 0.1));
   border-bottom-color: rgba(36, 132, 124, 0.15);
   border-bottom-left-radius: 33.6px;
@@ -4759,16 +4798,22 @@ html[saved-theme="light"] body hr {
   padding-top: 19.2px;
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  --tw-ease: var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
   color: var(--text-normal, rgb(58, 54, 51));
   font-family: "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  --tw-ease: var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
   color: var(--text-normal, rgb(58, 54, 51));
   font-family: "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.depth-0 {
+  --tw-ease: var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(138, 135, 133);
@@ -4812,6 +4857,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+  --tw-ease: var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
   color: var(--text-normal, rgb(58, 54, 51));
 }
 
@@ -4836,6 +4882,7 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
+  --tw-ease: var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
   color: var(--text-normal, rgb(58, 54, 51));
 }
 
@@ -4889,6 +4936,7 @@ html[saved-theme="light"] body .canvas-node-content {
 }
 
 html[saved-theme="light"] body .canvas-node-file {
+  --tw-leading: var(--leading-relaxed, 1.625);
   color: var(--text-normal, rgb(58, 54, 51));
 }
 
@@ -4944,6 +4992,14 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(175, 57%, 33%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(175, 57%, 33%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(175, 57%, 33%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(175, 57%, 33%, 0.15));
+  --pill-color: var(--tag-color, hsl(175 57% 33%));
+  --pill-color-hover: var(--tag-color-hover, hsl(175 57% 33%));
+  --pill-color-remove: var(--tag-color, hsl(175 57% 33%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(175 57% 33%));
   background-color: var(--pill-background, rgba(36, 132, 124, 0.1));
   border-radius: 33.6px;
   color: var(--pill-color, rgb(36, 132, 124));

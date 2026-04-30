@@ -284,6 +284,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   color: rgb(250, 244, 237);
 }
@@ -304,6 +305,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(250, 244, 237);
@@ -477,6 +479,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000));
   border-bottom-color: rgb(250, 244, 237);
   border-left-color: rgb(250, 244, 237);
   border-right-color: rgb(250, 244, 237);

@@ -207,6 +207,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #212121);
   background-color: var(--tab-container-background, rgb(33, 33, 33));
   color: rgb(220, 221, 222);
 }
@@ -226,6 +227,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #212121);
   background-color: var(--tab-container-background, rgb(33, 33, 33));
   border-left-color: rgb(48, 48, 48);
   color: rgb(220, 221, 222);
@@ -382,6 +384,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #252626);
   border-bottom-color: rgb(220, 221, 222);
   border-left-color: rgb(220, 221, 222);
   border-right-color: rgb(220, 221, 222);
@@ -1269,6 +1272,10 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #3e93d8);
+  --pill-color-hover: var(--tag-color-hover, #3e93d8);
+  --pill-color-remove: var(--tag-color, #3e93d8);
+  --pill-color-remove-hover: var(--tag-color-hover, #3e93d8);
   font-family: "??", "??", "Source Code Pro", "Fira Code", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -1468,6 +1475,10 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #3e93d8);
+  --pill-color-hover: var(--tag-color-hover, #3e93d8);
+  --pill-color-remove: var(--tag-color, #3e93d8);
+  --pill-color-remove-hover: var(--tag-color-hover, #3e93d8);
   color: var(--pill-color, rgb(62, 147, 216));
 }
 
@@ -1757,6 +1768,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, rgb(57, 63, 63));
   background-color: var(--tab-container-background, rgb(57, 63, 63));
   color: rgb(46, 51, 56);
 }
@@ -1775,6 +1787,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, rgb(57, 63, 63));
   background-color: var(--tab-container-background, rgb(57, 63, 63));
   border-left-color: rgb(221, 221, 221);
   color: rgb(46, 51, 56);
@@ -1938,6 +1951,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #252626);
   border-bottom-color: rgb(46, 51, 56);
   border-left-color: rgb(46, 51, 56);
   border-right-color: rgb(46, 51, 56);
@@ -2826,6 +2840,10 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, rgb(203, 77, 73));
+  --pill-color-hover: var(--tag-color-hover, rgb(203, 77, 73));
+  --pill-color-remove: var(--tag-color, rgb(203, 77, 73));
+  --pill-color-remove-hover: var(--tag-color-hover, rgb(203, 77, 73));
   font-family: "??", "??", "Source Code Pro", "Fira Code", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -3025,6 +3043,10 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-color: var(--tag-color, rgb(203, 77, 73));
+  --pill-color-hover: var(--tag-color-hover, rgb(203, 77, 73));
+  --pill-color-remove: var(--tag-color, rgb(203, 77, 73));
+  --pill-color-remove-hover: var(--tag-color-hover, rgb(203, 77, 73));
   color: var(--pill-color, rgb(203, 77, 73));
 }
 

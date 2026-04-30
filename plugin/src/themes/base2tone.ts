@@ -221,6 +221,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(260, 16%, 35%));
   background-color: var(--tab-container-background, rgb(84, 75, 104));
   color: rgb(241, 235, 255);
 }
@@ -240,6 +241,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(260, 16%, 35%));
   background-color: var(--tab-container-background, rgb(84, 75, 104));
   border-left-color: rgb(84, 75, 104);
   color: rgb(241, 235, 255);
@@ -428,6 +430,7 @@ html body p {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(260, 18%, 17%);
   --flair-color: hsl(260, 100%, 96%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -721,6 +724,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, hsl(260, 17%, 22%));
   border-bottom-color: rgb(241, 235, 255);
   border-left-color: rgb(241, 235, 255);
   border-right-color: rgb(241, 235, 255);
@@ -1608,6 +1612,13 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(241, 235, 255);
 }
 
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, hsl(260, 75%, 61%));
+  --pill-color-hover: var(--tag-color-hover, hsl(260, 75%, 61%));
+  --pill-color-remove: var(--tag-color, hsl(260, 75%, 61%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(260, 75%, 61%));
+}
+
 html body a.internal-link.tag-link::before {
   color: rgb(131, 81, 230);
 }
@@ -1797,6 +1808,10 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, hsl(260, 75%, 61%));
+  --pill-color-hover: var(--tag-color-hover, hsl(260, 75%, 61%));
+  --pill-color-remove: var(--tag-color, hsl(260, 75%, 61%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(260, 75%, 61%));
   color: var(--pill-color, rgb(131, 81, 230));
 }
 

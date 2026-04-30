@@ -296,6 +296,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2)));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   color: rgb(20, 20, 20);
 }
@@ -315,6 +316,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2)));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgba(20, 19, 19, 0.173);
   color: rgb(20, 20, 20);
@@ -510,6 +512,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #f7f7f7c1);
   border-bottom-color: rgb(20, 20, 20);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1121,6 +1124,7 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
 }
 
 html body .callout .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 900);
   color: var(--callout-title-color, rgb(55, 0, 255));
   font-weight: var(--font-weight, 900);
 }
@@ -1156,6 +1160,7 @@ html body .callout[data-callout="abstract"] .callout-title {
 }
 
 html body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 900);
   color: var(--callout-title-color, rgb(55, 0, 255));
   font-weight: var(--font-weight, 900);
 }
@@ -1191,6 +1196,7 @@ html body .callout[data-callout="bug"] .callout-title {
 }
 
 html body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 900);
   color: var(--callout-title-color, rgb(55, 0, 255));
   font-weight: var(--font-weight, 900);
 }
@@ -1216,6 +1222,9 @@ html body .callout[data-callout="callout"] {
   --background-primary-alt: #f7f7f7c1;
   --background-secondary: linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2));
   --background-secondary-alt: #d5d0d034;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-color: rgba(170, 170, 170, 0);
   --blockquote-border-color: rgba(55, 0, 255, 0.6);
   --blur-background: color-mix(in srgb, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)) 65%, transparent) linear-gradient(linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)), color-mix(in srgb, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)) 65%, transparent));
@@ -1290,6 +1299,7 @@ html body .callout[data-callout="callout"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #f7f7f730;
   --flair-color: rgb(20, 20, 20);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'Pretendard-Regular', serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', 'Noto Serif KR', serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -1510,6 +1520,7 @@ html body .callout[data-callout="danger"] .callout-title {
 }
 
 html body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 900);
   color: var(--callout-title-color, rgb(55, 0, 255));
   font-weight: var(--font-weight, 900);
 }
@@ -1544,6 +1555,7 @@ html body .callout[data-callout="example"] .callout-title {
 }
 
 html body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 900);
   color: var(--callout-title-color, rgb(55, 0, 255));
   font-weight: var(--font-weight, 900);
 }
@@ -1579,6 +1591,7 @@ html body .callout[data-callout="failure"] .callout-title {
 }
 
 html body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 900);
   color: var(--callout-title-color, rgb(55, 0, 255));
   font-weight: var(--font-weight, 900);
 }
@@ -1613,6 +1626,7 @@ html body .callout[data-callout="info"] .callout-title {
 }
 
 html body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 900);
   color: var(--callout-title-color, rgb(55, 0, 255));
   font-weight: var(--font-weight, 900);
 }
@@ -1648,6 +1662,7 @@ html body .callout[data-callout="note"] .callout-title {
 }
 
 html body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 900);
   color: var(--callout-title-color, rgb(55, 0, 255));
   font-weight: var(--font-weight, 900);
 }
@@ -1683,6 +1698,7 @@ html body .callout[data-callout="question"] .callout-title {
 }
 
 html body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 900);
   color: var(--callout-title-color, rgb(55, 0, 255));
   font-weight: var(--font-weight, 900);
 }
@@ -1717,6 +1733,7 @@ html body .callout[data-callout="quote"] .callout-title {
 }
 
 html body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 900);
   color: var(--callout-title-color, rgb(55, 0, 255));
   font-weight: var(--font-weight, 900);
 }
@@ -1752,6 +1769,7 @@ html body .callout[data-callout="success"] .callout-title {
 }
 
 html body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 900);
   color: var(--callout-title-color, rgb(55, 0, 255));
   font-weight: var(--font-weight, 900);
 }
@@ -1787,6 +1805,7 @@ html body .callout[data-callout="tip"] .callout-title {
 }
 
 html body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 900);
   color: var(--callout-title-color, rgb(55, 0, 255));
   font-weight: var(--font-weight, 900);
 }
@@ -1821,6 +1840,7 @@ html body .callout[data-callout="todo"] .callout-title {
 }
 
 html body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 900);
   color: var(--callout-title-color, rgb(55, 0, 255));
   font-weight: var(--font-weight, 900);
 }
@@ -1856,6 +1876,7 @@ html body .callout[data-callout="warning"] .callout-title {
 }
 
 html body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 900);
   color: var(--callout-title-color, rgb(55, 0, 255));
   font-weight: var(--font-weight, 900);
 }
@@ -2011,6 +2032,9 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, rgba(55, 0, 255, 0.2));
+  --pill-color: var(--tag-color, rgb(55, 0, 255));
+  --pill-color-remove: var(--tag-color, rgb(55, 0, 255));
   background-color: var(--pill-background, rgba(55, 0, 255, 0.2));
   font-family: "??", Pretendard-Regular, serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -2030,6 +2054,7 @@ html body h1.article-title {
 }
 
 html body h2 {
+  --font-weight: var(--h2-weight, 700);
   color: var(--h2-color, rgb(20, 20, 20));
   font-family: var(--h2-font, Pretendard-Bold);
 }
@@ -2040,21 +2065,25 @@ html body h2.page-title, html h2.page-title a {
 }
 
 html body h3 {
+  --font-weight: var(--h3-weight, 700);
   color: var(--h3-color, rgb(20, 20, 20));
   font-family: var(--h3-font, Pretendard-Bold);
 }
 
 html body h4 {
+  --font-weight: var(--h4-weight, 700);
   color: var(--h4-color, rgb(20, 20, 20));
   font-family: var(--h4-font, Pretendard-Bold);
 }
 
 html body h5 {
+  --font-weight: var(--h5-weight, 700);
   color: var(--h5-color, rgb(20, 20, 20));
   font-family: var(--h5-font, Pretendard-Bold);
 }
 
 html body h6 {
+  --font-weight: var(--h6-weight, 700);
   color: var(--h6-color, rgb(20, 20, 20));
   font-family: var(--h6-font, Pretendard-Bold);
 }
@@ -2216,6 +2245,9 @@ html body .note-properties {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, rgba(55, 0, 255, 0.2));
+  --pill-color: var(--tag-color, rgb(55, 0, 255));
+  --pill-color-remove: var(--tag-color, rgb(55, 0, 255));
   background-color: var(--pill-background, rgba(55, 0, 255, 0.2));
   color: var(--pill-color, rgb(55, 0, 255));
 }

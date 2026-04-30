@@ -1449,6 +1449,14 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(219, 99%, 53%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(219, 99%, 53%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(219, 99%, 53%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(219, 99%, 53%, 0.15));
+  --pill-color: var(--tag-color, hsl(216, 100.98%, 60.95%));
+  --pill-color-hover: var(--tag-color-hover, hsl(216, 100.98%, 60.95%));
+  --pill-color-remove: var(--tag-color, hsl(216, 100.98%, 60.95%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(216, 100.98%, 60.95%));
   background-color: var(--pill-background, rgba(16, 100, 254, 0.1));
   border-bottom-color: rgba(16, 100, 254, 0.15);
   border-left-color: rgba(16, 100, 254, 0.15);
@@ -1462,6 +1470,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  --font-weight: var(--h1-weight, 400);
   color: var(--text-accent, rgb(56, 136, 255));
   font-family: var(--h1-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
@@ -1472,6 +1481,7 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  --font-weight: var(--h2-weight, 400);
   color: var(--h2-color, rgb(244, 244, 244));
   font-family: var(--h2-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
@@ -1663,6 +1673,14 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(219, 99%, 53%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(219, 99%, 53%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(219, 99%, 53%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(219, 99%, 53%, 0.15));
+  --pill-color: var(--tag-color, hsl(216, 100.98%, 60.95%));
+  --pill-color-hover: var(--tag-color-hover, hsl(216, 100.98%, 60.95%));
+  --pill-color-remove: var(--tag-color, hsl(216, 100.98%, 60.95%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(216, 100.98%, 60.95%));
   background-color: var(--pill-background, rgba(16, 100, 254, 0.1));
   color: var(--pill-color, rgb(56, 136, 255));
 }
@@ -1946,6 +1964,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #F4F4F4);
   background-color: var(--tab-container-background, rgb(244, 244, 244));
   color: rgb(38, 38, 38);
 }
@@ -1964,6 +1983,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #F4F4F4);
   background-color: var(--tab-container-background, rgb(244, 244, 244));
   border-left-color: rgba(0, 0, 0, 0);
   border-left-style: solid;
@@ -3151,6 +3171,14 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(219, 99%, 53%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(219, 99%, 53%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(219, 99%, 53%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(219, 99%, 53%, 0.15));
+  --pill-color: var(--tag-color, #0f62fe);
+  --pill-color-hover: var(--tag-color-hover, #0f62fe);
+  --pill-color-remove: var(--tag-color, #0f62fe);
+  --pill-color-remove-hover: var(--tag-color-hover, #0f62fe);
   background-color: var(--pill-background, rgba(16, 100, 254, 0.1));
   border-bottom-color: rgba(16, 100, 254, 0.15);
   border-left-color: rgba(16, 100, 254, 0.15);
@@ -3164,6 +3192,7 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  --font-weight: var(--h1-weight, 400);
   color: var(--text-accent, rgb(15, 98, 254));
   font-family: var(--h1-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
@@ -3174,6 +3203,7 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  --font-weight: var(--h2-weight, 400);
   color: var(--h2-color, rgb(38, 38, 38));
   font-family: var(--h2-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
@@ -3366,6 +3396,14 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(219, 99%, 53%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(219, 99%, 53%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(219, 99%, 53%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(219, 99%, 53%, 0.15));
+  --pill-color: var(--tag-color, #0f62fe);
+  --pill-color-hover: var(--tag-color-hover, #0f62fe);
+  --pill-color-remove: var(--tag-color, #0f62fe);
+  --pill-color-remove-hover: var(--tag-color-hover, #0f62fe);
   background-color: var(--pill-background, rgba(16, 100, 254, 0.1));
   color: var(--pill-color, rgb(15, 98, 254));
 }

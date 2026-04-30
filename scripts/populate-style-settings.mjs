@@ -14,10 +14,7 @@ import {
 } from "fs";
 import { join } from "path";
 import yaml from "js-yaml";
-import {
-  extractStyleSettings,
-  extractStyleSettingsFromFile,
-} from "../util/postcss-style-settings.mjs";
+import { extractStyleSettings } from "../util/postcss-style-settings.mjs";
 import { sanitizeFilenamePreservingEmojis as sanitize } from "../util/util.mjs";
 
 const THEMES_JSON_PATH = "./themes.json";
@@ -46,23 +43,16 @@ if (shouldExtract) {
     const css = readFileSync(cssPath, "utf8");
     const blocks = extractStyleSettings(css);
 
-    if (blocks.length === 0) {
+    const validBlocks = blocks.filter(
+      (b) => b && (b.id || b.name || (b.settings && b.settings.length > 0)),
+    );
+
+    if (validBlocks.length === 0) {
       noSettings++;
       continue;
     }
 
-    // Use the first (primary) @settings block
-    const primary = blocks[0];
-    if (
-      !primary.id &&
-      !primary.name &&
-      (!primary.settings || primary.settings.length === 0)
-    ) {
-      noSettings++;
-      continue;
-    }
-
-    const yamlOut = yaml.dump(primary, {
+    const yamlOut = yaml.dump(validBlocks, {
       indent: 2,
       lineWidth: -1,
       noRefs: true,
@@ -114,16 +104,32 @@ for (const [themeSlug, themeMeta] of Object.entries(themesJson.themes)) {
     continue;
   }
 
-  const parsed = extractStyleSettingsFromFile(yamlPath);
-  if (parsed.settings.length === 0 && !parsed.id) {
+  let blocks;
+  try {
+    const raw = yaml.load(readFileSync(yamlPath, "utf8"));
+    blocks = Array.isArray(raw) ? raw : [raw];
+  } catch {
     skipped++;
     continue;
   }
 
+  const validBlocks = blocks.filter(
+    (b) => b && (b.id || (b.settings && b.settings.length > 0)),
+  );
+
+  if (validBlocks.length === 0) {
+    skipped++;
+    continue;
+  }
+
+  const primaryId = validBlocks[0].id || "";
+  const primaryName = validBlocks[0].name || "";
+  const allSettings = validBlocks.flatMap((b) => b.settings || []);
+
   themeMeta.style_settings = {
-    id: parsed.id,
-    name: parsed.name,
-    settings: parsed.settings,
+    id: primaryId,
+    name: primaryName,
+    settings: allSettings,
   };
   populated++;
 }

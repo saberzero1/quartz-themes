@@ -687,6 +687,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, color-mix(in srgb, hsl(290, 60%, 11%) 40%, #000));
   background-color: var(--tab-container-background, color(srgb 0.0616 0.0176 0.0704));
   color: color(srgb 0.96 0.88 1);
 }
@@ -706,6 +707,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, color-mix(in srgb, hsl(290, 60%, 11%) 40%, #000));
   background-color: var(--tab-container-background, color(srgb 0.0616 0.0176 0.0704));
   border-left-color: color(srgb 0.225267 0.0996 0.2584);
   color: color(srgb 0.96 0.88 1);
@@ -839,6 +841,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, color-mix(in srgb, hsl(290, 60%, 11%) 80%, #000));
   border-bottom-color: color(srgb 0.96 0.88 1);
   border-left-color: color(srgb 0.96 0.88 1);
   border-right-color: color(srgb 0.96 0.88 1);
@@ -2789,6 +2792,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, color-mix(in srgb, hsl(290, 60%, 95%) 40%, #fff));
   background-color: var(--tab-container-background, color(srgb 0.988 0.968 0.992));
   color: color(srgb 0.333333 0 0.5);
 }
@@ -2808,6 +2812,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, color-mix(in srgb, hsl(290, 60%, 95%) 40%, #fff));
   background-color: var(--tab-container-background, color(srgb 0.988 0.968 0.992));
   border-left-color: color(srgb 0.939667 0.828 0.982);
   color: color(srgb 0.333333 0 0.5);
@@ -2941,6 +2946,11 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, color-mix(
+    in srgb,
+    hsl(290, 60%, 95%) 90%,
+    hsl(280, 100%, 50%)
+  ));
   border-bottom-color: color(srgb 0.333333 0 0.5);
   border-left-color: color(srgb 0.333333 0 0.5);
   border-right-color: color(srgb 0.333333 0 0.5);

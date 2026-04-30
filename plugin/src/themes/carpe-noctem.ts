@@ -243,6 +243,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #1C1E26);
   background-color: var(--tab-container-background, rgb(28, 30, 38));
   color: rgb(195, 221, 250);
 }
@@ -262,6 +263,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #1C1E26);
   background-color: var(--tab-container-background, rgb(28, 30, 38));
   border-left-color: rgb(167, 159, 148);
   color: rgb(195, 221, 250);
@@ -468,6 +470,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #1C1E26);
   border-bottom-color: rgb(195, 221, 250);
   border-left-color: rgb(195, 221, 250);
   border-right-color: rgb(195, 221, 250);
@@ -1372,6 +1375,10 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #83bdff);
+  --pill-color-hover: var(--tag-color-hover, #83bdff);
+  --pill-color-remove: var(--tag-color, #83bdff);
+  --pill-color-remove-hover: var(--tag-color-hover, #83bdff);
   font-family: "??", "??", Cabin, "Alumni Sans", Helvetica, Inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -1571,6 +1578,10 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, #83bdff);
+  --pill-color-hover: var(--tag-color-hover, #83bdff);
+  --pill-color-remove: var(--tag-color, #83bdff);
+  --pill-color-remove-hover: var(--tag-color-hover, #83bdff);
   color: var(--pill-color, rgb(131, 189, 255));
 }
 

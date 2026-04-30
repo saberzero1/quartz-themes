@@ -1,4 +1,5 @@
 import { readFileSync } from "node:fs";
+import type { ClassSettingCSS } from "./types";
 
 export interface ProcessedStyleSettings {
   css: string;
@@ -48,7 +49,7 @@ function rewriteClassSelectors(css: string, className: string): string {
 export function processStyleSettings(
   settings: Record<string, string | number | boolean>,
   themeId: string | string[],
-  classSettingsMap?: Record<string, string>,
+  classSettingsMap?: Record<string, ClassSettingCSS>,
 ): ProcessedStyleSettings {
   const themeIds = Array.isArray(themeId) ? themeId : [themeId];
   const lightVars: string[] = [];
@@ -61,27 +62,22 @@ export function processStyleSettings(
     const settingId = key.slice(matchedId.length + 2);
 
     if (typeof value === "boolean") {
-      // class-toggle: extract pre-compiled CSS for this class
       if (value && classSettingsMap?.[settingId]) {
-        classCSS.push(
-          rewriteClassSelectors(classSettingsMap[settingId], settingId),
-        );
+        emitClassSettingCSS(classSettingsMap[settingId], settingId, classCSS);
       }
       continue;
     }
 
     if (typeof value === "string" && !value) continue;
 
-    // class-select: value is the class name to activate
     if (typeof value === "string" && classSettingsMap) {
-      const classCSSnippet = classSettingsMap[value];
-      if (classCSSnippet !== undefined) {
-        classCSS.push(rewriteClassSelectors(classCSSnippet, value));
+      const entry = classSettingsMap[value];
+      if (entry !== undefined) {
+        emitClassSettingCSS(entry, value, classCSS);
         continue;
       }
     }
 
-    // Themed color: keys end with @@dark or @@light
     if (settingId.endsWith("@@dark")) {
       const varName = settingId.slice(0, -6);
       darkVars.push(`  --${varName}: ${value};`);
@@ -89,7 +85,6 @@ export function processStyleSettings(
       const varName = settingId.slice(0, -7);
       lightVars.push(`  --${varName}: ${value};`);
     } else {
-      // Non-themed variable — apply to both modes
       lightVars.push(`  --${settingId}: ${value};`);
       darkVars.push(`  --${settingId}: ${value};`);
     }
@@ -108,6 +103,58 @@ export function processStyleSettings(
   }
 
   return { css: cssParts.join("\n") };
+}
+
+function emitClassSettingCSS(
+  entry: ClassSettingCSS,
+  className: string,
+  out: string[],
+): void {
+  if (entry.general) {
+    out.push(rewriteClassSelectors(entry.general, className));
+  }
+  if (entry.dark) {
+    const rewritten = rewriteClassSelectors(entry.dark, className);
+    out.push(wrapInDarkScope(rewritten));
+  }
+  if (entry.light) {
+    const rewritten = rewriteClassSelectors(entry.light, className);
+    out.push(wrapInLightScope(rewritten));
+  }
+}
+
+function wrapInDarkScope(css: string): string {
+  return css.replace(/^([^\n{]*)\{/gm, (match, selectorGroup: string) => {
+    const scoped = selectorGroup
+      .split(",")
+      .map((sel) => {
+        const s = sel.trim();
+        if (s.includes("[saved-theme=")) return s;
+        if (s === ":root" || s.startsWith(":root ")) {
+          return s.replace(":root", ':root[saved-theme="dark"]');
+        }
+        return `:root[saved-theme="dark"] ${s}`;
+      })
+      .join(", ");
+    return scoped + " {";
+  });
+}
+
+function wrapInLightScope(css: string): string {
+  return css.replace(/^([^\n{]*)\{/gm, (match, selectorGroup: string) => {
+    const scoped = selectorGroup
+      .split(",")
+      .map((sel) => {
+        const s = sel.trim();
+        if (s.includes("[saved-theme=")) return s;
+        if (s === ":root" || s.startsWith(":root ")) {
+          return s.replace(":root", ':root[saved-theme="light"]');
+        }
+        return `:root[saved-theme="light"] ${s}`;
+      })
+      .join(", ");
+    return scoped + " {";
+  });
 }
 
 export function loadStyleSettings(

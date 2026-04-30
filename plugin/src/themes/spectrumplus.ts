@@ -188,6 +188,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, rgb(27, 27, 27));
   background-color: var(--tab-container-background, rgb(27, 27, 27));
   color: rgb(201, 201, 201);
 }
@@ -203,6 +204,7 @@ html body .page > div#quartz-body div.sidebar {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, rgb(27, 27, 27));
   background-color: var(--tab-container-background, rgb(27, 27, 27));
   color: rgb(201, 201, 201);
 }
@@ -1376,6 +1378,10 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, rgb(255, 190, 0));
+  --pill-color-hover: var(--tag-color-hover, rgb(255, 190, 0));
+  --pill-color-remove: var(--tag-color, rgb(255, 190, 0));
+  --pill-color-remove-hover: var(--tag-color-hover, rgb(255, 190, 0));
   font-family: "JetBrains Mono";
 }
 
@@ -1506,6 +1512,10 @@ html body .metadata-properties {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, rgb(255, 190, 0));
+  --pill-color-hover: var(--tag-color-hover, rgb(255, 190, 0));
+  --pill-color-remove: var(--tag-color, rgb(255, 190, 0));
+  --pill-color-remove-hover: var(--tag-color-hover, rgb(255, 190, 0));
   color: var(--pill-color, rgb(255, 190, 0));
 }
 

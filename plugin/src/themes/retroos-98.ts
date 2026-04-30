@@ -151,6 +151,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, rgb(64, 64, 64));
   background-color: var(--tab-container-background, rgb(64, 64, 64));
 }
 
@@ -167,6 +168,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, rgb(64, 64, 64));
   background-color: var(--tab-container-background, rgb(64, 64, 64));
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
@@ -254,6 +256,10 @@ html[saved-theme="dark"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="dark"] body figcaption {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #050505);
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(5, 5, 5));
@@ -1677,6 +1683,14 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(222, 94%, 19%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(222, 94%, 19%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(222, 94%, 19%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(222, 94%, 19%, 0.15));
+  --pill-color: var(--tag-color, hsl(221, 94.94%, 19.95%));
+  --pill-color-hover: var(--tag-color-hover, hsl(221, 94.94%, 19.95%));
+  --pill-color-remove: var(--tag-color, hsl(221, 94.94%, 19.95%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(221, 94.94%, 19.95%));
   background-color: var(--pill-background, rgba(3, 30, 94, 0.1));
   border-bottom-color: rgba(3, 30, 94, 0.15);
   border-left-color: rgba(3, 30, 94, 0.15);
@@ -1818,6 +1832,14 @@ html[saved-theme="dark"] body .metadata-properties {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(222, 94%, 19%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(222, 94%, 19%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(222, 94%, 19%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(222, 94%, 19%, 0.15));
+  --pill-color: var(--tag-color, hsl(221, 94.94%, 19.95%));
+  --pill-color-hover: var(--tag-color-hover, hsl(221, 94.94%, 19.95%));
+  --pill-color-remove: var(--tag-color, hsl(221, 94.94%, 19.95%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(221, 94.94%, 19.95%));
   background-color: var(--pill-background, rgba(3, 30, 94, 0.1));
   color: var(--pill-color, rgb(3, 33, 99));
 }
@@ -1960,6 +1982,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, silver);
   background-color: var(--tab-container-background, rgb(192, 192, 192));
 }
 
@@ -1972,6 +1995,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, silver);
   background-color: var(--tab-container-background, rgb(192, 192, 192));
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
@@ -3473,6 +3497,14 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(222, 94%, 19%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(222, 94%, 19%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(222, 94%, 19%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(222, 94%, 19%, 0.15));
+  --pill-color: var(--tag-color, hsl(222, 94%, 19%));
+  --pill-color-hover: var(--tag-color-hover, hsl(222, 94%, 19%));
+  --pill-color-remove: var(--tag-color, hsl(222, 94%, 19%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(222, 94%, 19%));
   background-color: var(--pill-background, rgba(3, 30, 94, 0.1));
   border-bottom-color: rgba(3, 30, 94, 0.15);
   border-left-color: rgba(3, 30, 94, 0.15);
@@ -3610,6 +3642,14 @@ html[saved-theme="light"] body .metadata-properties {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(222, 94%, 19%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(222, 94%, 19%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(222, 94%, 19%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(222, 94%, 19%, 0.15));
+  --pill-color: var(--tag-color, hsl(222, 94%, 19%));
+  --pill-color-hover: var(--tag-color-hover, hsl(222, 94%, 19%));
+  --pill-color-remove: var(--tag-color, hsl(222, 94%, 19%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(222, 94%, 19%));
   background-color: var(--pill-background, rgba(3, 30, 94, 0.1));
   color: var(--pill-color, rgb(3, 30, 94));
 }

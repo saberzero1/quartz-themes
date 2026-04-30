@@ -213,6 +213,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #000);
   background-color: var(--tab-container-background, rgb(0, 0, 0));
   color: var(--ion-color, rgb(236, 210, 198));
 }
@@ -232,11 +233,13 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #000);
   background-color: var(--tab-container-background, rgb(0, 0, 0));
   border-left-color: rgba(0, 0, 0, 0);
   color: var(--ion-color, rgb(236, 210, 198));
 }`,
     typography: `html body .markdown-rendered p > b, html b {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(20, 50%, 50%)) drop-shadow(0px 0px 0.125em hsl(20, 50%, 50%)));
   color: var(--ion-color, rgb(249, 240, 236));
   outline: rgb(249, 240, 236) none 0px;
   text-decoration-color: rgb(249, 240, 236);
@@ -255,6 +258,7 @@ html body .markdown-rendered p > i, html i {
 }
 
 html body .markdown-rendered p > strong, html strong {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(20, 50%, 50%)) drop-shadow(0px 0px 0.125em hsl(20, 50%, 50%)));
   color: var(--ion-color, rgb(249, 240, 236));
   outline: rgb(249, 240, 236) none 0px;
   text-decoration-color: rgb(249, 240, 236);
@@ -277,10 +281,16 @@ html body h1.article-title {
 }
 
 html body li.task-list-item input[type="checkbox"] {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px -0.16667em hsl(258, 88%, 50%)) drop-shadow(0px 0px -0.16667em hsl(258, 88%, 50%)));
+  --ion-h: var(--accent-h, 258);
+  --ion-s: var(--accent-s, 88%);
   border-color: rgb(117, 63, 243);
 }
 
 html body li.task-list-item input[type="checkbox"]:checked {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.16667em hsl(258, 88%, 50%)) drop-shadow(0px 0px 0.16667em hsl(258, 88%, 50%)));
+  --ion-h: var(--accent-h, 258);
+  --ion-s: var(--accent-s, 88%);
   background-color: var(--checkbox-color, rgba(0, 0, 0, 0));
   border-color: rgb(255, 255, 255);
 }
@@ -291,18 +301,27 @@ html body p {
   text-decoration-color: rgb(236, 210, 198);
 }`,
     links: `html body a.external-link, html footer a {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.04167em hsl(258, 88%, 50%)) drop-shadow(0px 0px 0.04167em hsl(258, 88%, 50%)));
+  --ion-h: var(--accent-h, 258);
+  --ion-s: var(--accent-s, 88%);
   color: var(--ion-color, rgb(203, 183, 250));
   outline: rgb(203, 183, 250) none 0px;
   text-decoration-color: rgb(203, 183, 250);
 }
 
 html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.04167em hsl(258, 88%, 50%)) drop-shadow(0px 0px 0.04167em hsl(258, 88%, 50%)));
+  --ion-h: var(--accent-h, 258);
+  --ion-s: var(--accent-s, 88%);
   color: var(--ion-color, rgb(203, 183, 250));
   outline: rgb(203, 183, 250) none 0px;
   text-decoration-color: rgb(203, 183, 250);
 }
 
 html body a.internal-link.broken {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.04167em hsl(258, 88%, 50%)) drop-shadow(0px 0px 0.04167em hsl(258, 88%, 50%)));
+  --ion-h: var(--accent-h, 258);
+  --ion-s: var(--accent-s, 88%);
   color: var(--ion-color, rgb(203, 183, 250));
   outline: rgb(203, 183, 250) none 0px;
 }`,
@@ -329,6 +348,9 @@ html body ul.overflow {
   border-top-color: rgb(236, 210, 198);
 }`,
     blockquotes: `html body .data-footnote-backref {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.04167em hsl(258, 88%, 50%)) drop-shadow(0px 0px 0.04167em hsl(258, 88%, 50%)));
+  --ion-h: var(--accent-h, 258);
+  --ion-s: var(--accent-s, 88%);
   color: var(--ion-color, rgb(203, 183, 250));
 }`,
     tables: `html body .table-container {
@@ -358,6 +380,7 @@ html body th {
   color: var(--ion-color, rgb(236, 210, 198));
 }`,
     code: `html body code {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0em hsl(20, 50%, 50%)) drop-shadow(0px 0px 0em hsl(20, 50%, 50%)));
   background-color: var(--code-background, rgb(0, 0, 0));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
@@ -385,6 +408,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #000);
   border-bottom-color: rgb(236, 210, 198);
   border-left-color: rgb(236, 210, 198);
   border-right-color: rgb(236, 210, 198);
@@ -430,6 +454,9 @@ html body .transclude-inner {
   border-top-color: rgb(236, 210, 198);
 }`,
     checkboxes: `html body input[type=checkbox] {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px -0.16667em hsl(258, 88%, 50%)) drop-shadow(0px 0px -0.16667em hsl(258, 88%, 50%)));
+  --ion-h: var(--accent-h, 258);
+  --ion-s: var(--accent-s, 88%);
   border-bottom-color: rgb(117, 63, 243);
   border-left-color: rgb(117, 63, 243);
   border-right-color: rgb(117, 63, 243);
@@ -985,6 +1012,9 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
 }`,
     callouts: `html body .callout .callout-title {
   --callout-color: 2, 122, 255;
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
   border-left-color: rgb(230, 239, 255);
   border-right-color: rgb(230, 239, 255);
@@ -993,15 +1023,24 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
 }
 
 html body .callout .callout-title > .callout-title-inner > p {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout > .callout-content {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary, 83, 223, 221);
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(198, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(198, 100%, 50%)));
+  --ion-h: var(--callout-h, 198);
+  --ion-s: var(--callout-s, 100%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgb(230, 247, 255);
   border-bottom-width: 2px;
@@ -1016,6 +1055,9 @@ html body .callout[data-callout="abstract"] {
 
 html body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 2, 122, 255;
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
   border-left-color: rgb(230, 239, 255);
   border-right-color: rgb(230, 239, 255);
@@ -1024,15 +1066,24 @@ html body .callout[data-callout="abstract"] .callout-title {
 }
 
 html body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="abstract"] > .callout-content {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug, 251, 70, 76);
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(338, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(338, 100%, 50%)));
+  --ion-h: var(--callout-h, 338);
+  --ion-s: var(--callout-s, 100%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgb(255, 230, 239);
   border-bottom-width: 2px;
@@ -1047,6 +1098,9 @@ html body .callout[data-callout="bug"] {
 
 html body .callout[data-callout="bug"] .callout-title {
   --callout-color: 2, 122, 255;
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
   border-left-color: rgb(230, 239, 255);
   border-right-color: rgb(230, 239, 255);
@@ -1055,15 +1109,24 @@ html body .callout[data-callout="bug"] .callout-title {
 }
 
 html body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="bug"] > .callout-content {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="danger"] {
   --callout-color: var(--callout-error, 251, 70, 76);
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(348, 99%, 50%)) drop-shadow(0px 0px 0.125em hsl(348, 99%, 50%)));
+  --ion-h: var(--callout-h, 348);
+  --ion-s: var(--callout-s, 99%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgb(255, 230, 235);
   border-bottom-width: 2px;
@@ -1078,6 +1141,9 @@ html body .callout[data-callout="danger"] {
 
 html body .callout[data-callout="danger"] .callout-title {
   --callout-color: 2, 122, 255;
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
   border-left-color: rgb(230, 239, 255);
   border-right-color: rgb(230, 239, 255);
@@ -1086,15 +1152,24 @@ html body .callout[data-callout="danger"] .callout-title {
 }
 
 html body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="danger"] > .callout-content {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="example"] {
   --callout-color: var(--callout-example, 168, 130, 255);
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(255, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(255, 100%, 50%)));
+  --ion-h: var(--callout-h, 255);
+  --ion-s: var(--callout-s, 100%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgb(236, 230, 255);
   border-bottom-width: 2px;
@@ -1109,6 +1184,9 @@ html body .callout[data-callout="example"] {
 
 html body .callout[data-callout="example"] .callout-title {
   --callout-color: 2, 122, 255;
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
   border-left-color: rgb(230, 239, 255);
   border-right-color: rgb(230, 239, 255);
@@ -1117,15 +1195,24 @@ html body .callout[data-callout="example"] .callout-title {
 }
 
 html body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="example"] > .callout-content {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail, 251, 70, 76);
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(0, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(0, 100%, 50%)));
+  --ion-h: var(--callout-h, 0);
+  --ion-s: var(--callout-s, 100%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgb(255, 230, 230);
   border-bottom-width: 2px;
@@ -1140,6 +1227,9 @@ html body .callout[data-callout="failure"] {
 
 html body .callout[data-callout="failure"] .callout-title {
   --callout-color: 2, 122, 255;
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
   border-left-color: rgb(230, 239, 255);
   border-right-color: rgb(230, 239, 255);
@@ -1148,15 +1238,24 @@ html body .callout[data-callout="failure"] .callout-title {
 }
 
 html body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="failure"] > .callout-content {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="info"] {
   --callout-color: var(--callout-info, 2, 122, 255);
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(187, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(187, 100%, 50%)));
+  --ion-h: var(--callout-h, 187);
+  --ion-s: var(--callout-s, 100%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgb(230, 252, 255);
   border-bottom-width: 2px;
@@ -1171,6 +1270,9 @@ html body .callout[data-callout="info"] {
 
 html body .callout[data-callout="info"] .callout-title {
   --callout-color: 2, 122, 255;
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
   border-left-color: rgb(230, 239, 255);
   border-right-color: rgb(230, 239, 255);
@@ -1179,15 +1281,24 @@ html body .callout[data-callout="info"] .callout-title {
 }
 
 html body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="info"] > .callout-content {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="note"] {
   --callout-color: var(--callout-default, 2, 122, 255);
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgb(230, 239, 255);
   border-bottom-width: 2px;
@@ -1202,6 +1313,9 @@ html body .callout[data-callout="note"] {
 
 html body .callout[data-callout="note"] .callout-title {
   --callout-color: 2, 122, 255;
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
   border-left-color: rgb(230, 239, 255);
   border-right-color: rgb(230, 239, 255);
@@ -1210,15 +1324,24 @@ html body .callout[data-callout="note"] .callout-title {
 }
 
 html body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="note"] > .callout-content {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="question"] {
   --callout-color: var(--callout-question, 233, 151, 63);
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(96, 81%, 50%)) drop-shadow(0px 0px 0.125em hsl(96, 81%, 50%)));
+  --ion-h: var(--callout-h, 96);
+  --ion-s: var(--callout-s, 81%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgb(240, 253, 232);
   border-bottom-width: 2px;
@@ -1233,6 +1356,9 @@ html body .callout[data-callout="question"] {
 
 html body .callout[data-callout="question"] .callout-title {
   --callout-color: 2, 122, 255;
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
   border-left-color: rgb(230, 239, 255);
   border-right-color: rgb(230, 239, 255);
@@ -1241,15 +1367,24 @@ html body .callout[data-callout="question"] .callout-title {
 }
 
 html body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="question"] > .callout-content {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="quote"] {
   --callout-color: var(--callout-quote, 158, 158, 158);
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(0, 0%, 50%)) drop-shadow(0px 0px 0.125em hsl(0, 0%, 50%)));
+  --ion-h: var(--callout-h, 0);
+  --ion-s: var(--callout-s, 0%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgb(242, 242, 242);
   border-bottom-width: 2px;
@@ -1264,6 +1399,9 @@ html body .callout[data-callout="quote"] {
 
 html body .callout[data-callout="quote"] .callout-title {
   --callout-color: 2, 122, 255;
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
   border-left-color: rgb(230, 239, 255);
   border-right-color: rgb(230, 239, 255);
@@ -1272,15 +1410,24 @@ html body .callout[data-callout="quote"] .callout-title {
 }
 
 html body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="quote"] > .callout-content {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="success"] {
   --callout-color: var(--callout-success, 68, 207, 110);
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(144, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(144, 100%, 50%)));
+  --ion-h: var(--callout-h, 144);
+  --ion-s: var(--callout-s, 100%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgb(230, 255, 240);
   border-bottom-width: 2px;
@@ -1295,6 +1442,9 @@ html body .callout[data-callout="success"] {
 
 html body .callout[data-callout="success"] .callout-title {
   --callout-color: 2, 122, 255;
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
   border-left-color: rgb(230, 239, 255);
   border-right-color: rgb(230, 239, 255);
@@ -1303,15 +1453,24 @@ html body .callout[data-callout="success"] .callout-title {
 }
 
 html body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="success"] > .callout-content {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip, 83, 223, 221);
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(171, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(171, 100%, 50%)));
+  --ion-h: var(--callout-h, 171);
+  --ion-s: var(--callout-s, 100%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgb(230, 255, 251);
   border-bottom-width: 2px;
@@ -1326,6 +1485,9 @@ html body .callout[data-callout="tip"] {
 
 html body .callout[data-callout="tip"] .callout-title {
   --callout-color: 2, 122, 255;
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
   border-left-color: rgb(230, 239, 255);
   border-right-color: rgb(230, 239, 255);
@@ -1334,15 +1496,24 @@ html body .callout[data-callout="tip"] .callout-title {
 }
 
 html body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="tip"] > .callout-content {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo, 2, 122, 255);
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(187, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(187, 100%, 50%)));
+  --ion-h: var(--callout-h, 187);
+  --ion-s: var(--callout-s, 100%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgb(230, 252, 255);
   border-bottom-width: 2px;
@@ -1357,6 +1528,9 @@ html body .callout[data-callout="todo"] {
 
 html body .callout[data-callout="todo"] .callout-title {
   --callout-color: 2, 122, 255;
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
   border-left-color: rgb(230, 239, 255);
   border-right-color: rgb(230, 239, 255);
@@ -1365,15 +1539,24 @@ html body .callout[data-callout="todo"] .callout-title {
 }
 
 html body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="todo"] > .callout-content {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning, 233, 151, 63);
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(34, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(34, 100%, 50%)));
+  --ion-h: var(--callout-h, 34);
+  --ion-s: var(--callout-s, 100%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgb(255, 244, 230);
   border-bottom-width: 2px;
@@ -1388,6 +1571,9 @@ html body .callout[data-callout="warning"] {
 
 html body .callout[data-callout="warning"] .callout-title {
   --callout-color: 2, 122, 255;
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
   border-left-color: rgb(230, 239, 255);
   border-right-color: rgb(230, 239, 255);
@@ -1396,10 +1582,16 @@ html body .callout[data-callout="warning"] .callout-title {
 }
 
 html body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
 html body .callout[data-callout="warning"] > .callout-content {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
@@ -1533,40 +1725,48 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(10, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(10, 100%, 50%)));
   color: var(--ion-color, rgb(255, 213, 204));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
 
 html body h1.article-title {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(20, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(20, 100%, 50%)));
   color: var(--ion-color, rgb(255, 221, 204));
 }
 
 html body h2 {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(60, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(60, 100%, 50%)));
   color: var(--ion-color, rgb(255, 255, 204));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
 
 html body h2.page-title, html h2.page-title a {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(20, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(20, 100%, 50%)));
   color: var(--ion-color, rgb(255, 221, 204));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
 
 html body h3 {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(110, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(110, 100%, 50%)));
   color: var(--ion-color, rgb(213, 255, 204));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
 
 html body h4 {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(160, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(160, 100%, 50%)));
   color: var(--ion-color, rgb(204, 255, 238));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
 
 html body h5 {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(210, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(210, 100%, 50%)));
   color: var(--ion-color, rgb(204, 230, 255));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
 
 html body h6 {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(260, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(260, 100%, 50%)));
   color: var(--ion-color, rgb(221, 204, 255));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
@@ -1579,6 +1779,9 @@ html body hr {
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)) drop-shadow(0px 0px 0.125em hsl(217, 100%, 50%)));
+  --ion-h: var(--callout-h, 217);
+  --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
   border-bottom-width: 2px;
   border-left-color: rgb(230, 239, 255);
@@ -1828,6 +2031,9 @@ html body sup {
 }
 
 html body ul.tags > li {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.04167em hsl(258, 88%, 50%)) drop-shadow(0px 0px 0.04167em hsl(258, 88%, 50%)));
+  --ion-h: var(--accent-h, 258);
+  --ion-s: var(--accent-s, 88%);
   color: var(--ion-color, rgb(203, 183, 250));
 }`,
   },

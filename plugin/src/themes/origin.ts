@@ -236,6 +236,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #161616);
   background-color: var(--tab-container-background, rgb(22, 22, 22));
 }
 
@@ -248,6 +249,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #161616);
   background-color: var(--tab-container-background, rgb(22, 22, 22));
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
@@ -354,6 +356,7 @@ html[saved-theme="dark"] body pre:has(> code) {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #161616);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-top-left-radius: 3px;
@@ -1271,6 +1274,10 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, hsl(253, 58%, 39%));
+  --pill-color-hover: var(--tag-color-hover, hsl(253, 58%, 39%));
+  --pill-color-remove: var(--tag-color, hsl(253, 58%, 39%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(253, 58%, 39%));
   font-family: "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
 }
 
@@ -1385,6 +1392,10 @@ html[saved-theme="dark"] body .metadata-properties {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-color: var(--tag-color, hsl(253, 58%, 39%));
+  --pill-color-hover: var(--tag-color-hover, hsl(253, 58%, 39%));
+  --pill-color-remove: var(--tag-color, hsl(253, 58%, 39%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(253, 58%, 39%));
   color: var(--pill-color, rgb(67, 42, 157));
 }
 
@@ -1737,6 +1748,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #f2f3f5);
   background-color: var(--tab-container-background, rgb(242, 243, 245));
   color: rgb(46, 51, 56);
 }
@@ -1755,6 +1767,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #f2f3f5);
   background-color: var(--tab-container-background, rgb(242, 243, 245));
   border-left-color: rgb(221, 221, 221);
   color: rgb(46, 51, 56);
@@ -1946,6 +1959,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #f2f3f5);
   border-bottom-color: rgb(46, 51, 56);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -3048,6 +3062,10 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, hsl(253, 63%, 62%));
+  --pill-color-hover: var(--tag-color-hover, hsl(253, 63%, 62%));
+  --pill-color-remove: var(--tag-color, hsl(253, 63%, 62%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(253, 63%, 62%));
   font-family: "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
 }
 
@@ -3286,6 +3304,10 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-color: var(--tag-color, hsl(253, 63%, 62%));
+  --pill-color-hover: var(--tag-color-hover, hsl(253, 63%, 62%));
+  --pill-color-remove: var(--tag-color, hsl(253, 63%, 62%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(253, 63%, 62%));
   color: var(--pill-color, rgb(124, 97, 219));
 }
 

@@ -205,6 +205,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #232932);
   background-color: var(--tab-container-background, rgb(35, 41, 50));
   color: rgb(210, 216, 225);
 }
@@ -224,6 +225,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #232932);
   background-color: var(--tab-container-background, rgb(35, 41, 50));
   border-left-color: rgb(210, 216, 225);
   color: rgb(210, 216, 225);
@@ -400,6 +402,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #232932);
   border-bottom-color: rgb(210, 216, 225);
   border-left-color: rgb(210, 216, 225);
   border-right-color: rgb(210, 216, 225);
@@ -1291,6 +1294,14 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(152, 56%, 60%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(152, 56%, 60%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(152, 56%, 60%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(152, 56%, 60%, 0.15));
+  --pill-color: var(--tag-color, #61D29D);
+  --pill-color-hover: var(--tag-color-hover, #61D29D);
+  --pill-color-remove: var(--tag-color, #61D29D);
+  --pill-color-remove-hover: var(--tag-color-hover, #61D29D);
   background-color: var(--pill-background, rgba(96, 210, 157, 0.1));
   border-bottom-color: rgba(96, 210, 157, 0.15);
   border-left-color: rgba(96, 210, 157, 0.15);
@@ -1489,6 +1500,14 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(152, 56%, 60%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(152, 56%, 60%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(152, 56%, 60%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(152, 56%, 60%, 0.15));
+  --pill-color: var(--tag-color, #61D29D);
+  --pill-color-hover: var(--tag-color-hover, #61D29D);
+  --pill-color-remove: var(--tag-color, #61D29D);
+  --pill-color-remove-hover: var(--tag-color-hover, #61D29D);
   background-color: var(--pill-background, rgba(96, 210, 157, 0.1));
   color: var(--pill-color, rgb(97, 210, 157));
 }

@@ -173,6 +173,7 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   padding-top: 10px;
 }`,
     tables: `html[saved-theme="dark"] body table {
+  --table-border-radius: var(--radius-s, 11.5px);
   border-bottom-color: rgb(54, 54, 54);
   border-bottom-left-radius: 11.5px;
   border-bottom-right-radius: 11.5px;
@@ -653,6 +654,9 @@ html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
   --background-primary-alt: #242424;
   --background-secondary: #262626;
   --background-secondary-alt: #363636;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -726,6 +730,7 @@ html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-1-open: "╔";
   --folder-2-open: "╔";
   --folder-3-open: "╔";
@@ -943,6 +948,9 @@ html[saved-theme="dark"] body .callout[data-callout="one"] {
   --background-primary-alt: #242424;
   --background-secondary: #262626;
   --background-secondary-alt: #363636;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -1016,6 +1024,7 @@ html[saved-theme="dark"] body .callout[data-callout="one"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-1-open: "╔";
   --folder-2-open: "╔";
   --folder-3-open: "╔";
@@ -1292,6 +1301,9 @@ html[saved-theme="dark"] body .callout[data-callout="three"] {
   --background-primary-alt: #242424;
   --background-secondary: #262626;
   --background-secondary-alt: #363636;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -1365,6 +1377,7 @@ html[saved-theme="dark"] body .callout[data-callout="three"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-1-open: "╔";
   --folder-2-open: "╔";
   --folder-3-open: "╔";
@@ -1621,6 +1634,9 @@ html[saved-theme="dark"] body .callout[data-callout="two"] {
   --background-primary-alt: #242424;
   --background-secondary: #262626;
   --background-secondary-alt: #363636;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -1694,6 +1710,7 @@ html[saved-theme="dark"] body .callout[data-callout="two"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-1-open: "╔";
   --folder-2-open: "╔";
   --folder-3-open: "╔";
@@ -2019,6 +2036,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-radius: var(--tag-radius, 2em);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -2120,6 +2138,7 @@ html[saved-theme="dark"] body hr {
   box-shadow: var(--input-shadow, rgb(54, 54, 54) 0px 0px 0px 1px);
 }`,
     bases: `html[saved-theme="dark"] body .bases-table {
+  --table-border-radius: var(--radius-s, 11.5px);
   border-color: rgb(128, 128, 128) rgb(128, 128, 128) rgb(54, 54, 54);
 }
 
@@ -2137,6 +2156,7 @@ html[saved-theme="dark"] body .bases-table thead th {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-radius: var(--tag-radius, 2em);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-radius: 0px;
 }`,
@@ -2302,6 +2322,7 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
   padding-top: 10px;
 }`,
     tables: `html[saved-theme="light"] body table {
+  --table-border-radius: var(--radius-s, 11.5px);
   border-bottom-color: rgb(224, 224, 224);
   border-bottom-left-radius: 11.5px;
   border-bottom-right-radius: 11.5px;
@@ -2782,6 +2803,9 @@ html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
   --background-primary-alt: #fafafa;
   --background-secondary: #f6f6f6;
   --background-secondary-alt: #fcfcfc;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -2855,6 +2879,7 @@ html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #222222;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-1-open: "╔";
   --folder-2-open: "╔";
   --folder-3-open: "╔";
@@ -3070,6 +3095,9 @@ html[saved-theme="light"] body .callout[data-callout="one"] {
   --background-primary-alt: #fafafa;
   --background-secondary: #f6f6f6;
   --background-secondary-alt: #fcfcfc;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -3143,6 +3171,7 @@ html[saved-theme="light"] body .callout[data-callout="one"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #222222;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-1-open: "╔";
   --folder-2-open: "╔";
   --folder-3-open: "╔";
@@ -3417,6 +3446,9 @@ html[saved-theme="light"] body .callout[data-callout="three"] {
   --background-primary-alt: #fafafa;
   --background-secondary: #f6f6f6;
   --background-secondary-alt: #fcfcfc;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -3490,6 +3522,7 @@ html[saved-theme="light"] body .callout[data-callout="three"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #222222;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-1-open: "╔";
   --folder-2-open: "╔";
   --folder-3-open: "╔";
@@ -3744,6 +3777,9 @@ html[saved-theme="light"] body .callout[data-callout="two"] {
   --background-primary-alt: #fafafa;
   --background-secondary: #f6f6f6;
   --background-secondary-alt: #fcfcfc;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -3817,6 +3853,7 @@ html[saved-theme="light"] body .callout[data-callout="two"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #222222;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-1-open: "╔";
   --folder-2-open: "╔";
   --folder-3-open: "╔";
@@ -4140,6 +4177,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-radius: var(--tag-radius, 2em);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4241,6 +4279,7 @@ html[saved-theme="light"] body hr {
   box-shadow: var(--input-shadow, rgb(224, 224, 224) 0px 0px 0px 1px);
 }`,
     bases: `html[saved-theme="light"] body .bases-table {
+  --table-border-radius: var(--radius-s, 11.5px);
   border-color: rgb(128, 128, 128) rgb(128, 128, 128) rgb(224, 224, 224);
 }
 
@@ -4258,6 +4297,7 @@ html[saved-theme="light"] body .bases-table thead th {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-radius: var(--tag-radius, 2em);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-radius: 0px;
 }`,

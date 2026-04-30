@@ -501,6 +501,10 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #db4040);
+  --pill-color-hover: var(--tag-color-hover, #db4040);
+  --pill-color-remove: var(--tag-color, #db4040);
+  --pill-color-remove-hover: var(--tag-color-hover, #db4040);
   font-family: "??", "??", "Dank Mono", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -555,6 +559,10 @@ html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: var(--table-header-color, rgb(255, 255, 255));
 }`,
     properties: `html[saved-theme="dark"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #db4040);
+  --pill-color-hover: var(--tag-color-hover, #db4040);
+  --pill-color-remove: var(--tag-color, #db4040);
+  --pill-color-remove-hover: var(--tag-color-hover, #db4040);
   color: var(--pill-color, rgb(219, 64, 64));
 }`,
     misc: `html[saved-theme="dark"] body .navigation-progress {

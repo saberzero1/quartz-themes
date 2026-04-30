@@ -273,6 +273,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #131314);
   background-color: var(--tab-container-background, rgb(19, 19, 20));
   color: rgb(201, 199, 205);
 }
@@ -288,6 +289,7 @@ html body .page > div#quartz-body div.sidebar {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #131314);
   background-color: var(--tab-container-background, rgb(19, 19, 20));
   color: rgb(201, 199, 205);
 }`,
@@ -440,6 +442,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, rgba(39, 39, 42, 0.3));
   border-bottom-color: rgb(201, 199, 205);
   border-left-color: rgb(201, 199, 205);
   border-right-color: rgb(201, 199, 205);
@@ -1512,6 +1515,14 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(10, 83%, 77%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(10, 83%, 77%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(10, 83%, 77%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(10, 83%, 77%, 0.15));
+  --pill-color: var(--tag-color, hsl(7, 84.66%, 88.55%));
+  --pill-color-hover: var(--tag-color-hover, hsl(7, 84.66%, 88.55%));
+  --pill-color-remove: var(--tag-color, hsl(7, 84.66%, 88.55%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(7, 84.66%, 88.55%));
   background-color: var(--pill-background, rgba(245, 164, 148, 0.1));
   border-bottom-color: rgba(245, 164, 148, 0.15);
   border-left-color: rgba(245, 164, 148, 0.15);
@@ -1697,6 +1708,14 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(10, 83%, 77%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(10, 83%, 77%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(10, 83%, 77%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(10, 83%, 77%, 0.15));
+  --pill-color: var(--tag-color, hsl(7, 84.66%, 88.55%));
+  --pill-color-hover: var(--tag-color-hover, hsl(7, 84.66%, 88.55%));
+  --pill-color-remove: var(--tag-color, hsl(7, 84.66%, 88.55%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(7, 84.66%, 88.55%));
   background-color: var(--pill-background, rgba(245, 164, 148, 0.1));
   color: var(--pill-color, rgb(251, 207, 201));
 }

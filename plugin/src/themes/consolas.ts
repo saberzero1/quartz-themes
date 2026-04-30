@@ -128,20 +128,27 @@ html body h1.article-title {
   color: var(--color-default, rgb(138, 92, 245));
 }`,
     links: `html body a.external-link, html footer a {
+  --font-weight: var(--link-weight, 450);
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--link-weight, 450);
 }
 
 html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
+  --font-weight: var(--link-weight, 450);
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--link-weight, 450);
 }
 
 html body a.internal-link.broken {
+  --font-weight: var(--link-weight, 450);
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--link-weight, 450);
 }`,
-    blockquotes: `html body blockquote {
+    blockquotes: `html body .data-footnote-backref {
+  --font-weight: var(--link-weight, 450);
+}
+
+html body blockquote {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     tables: `html body table {
@@ -199,6 +206,9 @@ html body tr {
 
 html body pre:has(> code) {
   background-color: var(--code-background, rgb(54, 47, 70));
+}`,
+    images: `html body figure {
+  --code-background: var(--ec-frm-edBg, hsl(258, 20%, 23%));
 }`,
     checkboxes: `html body .katex-display > .katex {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -603,6 +613,7 @@ html body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
 }
 
 html body .callout .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 650);
   font-weight: var(--font-weight, 650);
 }
 
@@ -615,6 +626,7 @@ html body .callout[data-callout="abstract"] .callout-title {
 }
 
 html body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 650);
   font-weight: var(--font-weight, 650);
 }
 
@@ -627,6 +639,7 @@ html body .callout[data-callout="bug"] .callout-title {
 }
 
 html body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 650);
   font-weight: var(--font-weight, 650);
 }
 
@@ -639,6 +652,7 @@ html body .callout[data-callout="danger"] .callout-title {
 }
 
 html body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 650);
   font-weight: var(--font-weight, 650);
 }
 
@@ -651,6 +665,7 @@ html body .callout[data-callout="example"] .callout-title {
 }
 
 html body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 650);
   font-weight: var(--font-weight, 650);
 }
 
@@ -663,6 +678,7 @@ html body .callout[data-callout="failure"] .callout-title {
 }
 
 html body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 650);
   font-weight: var(--font-weight, 650);
 }
 
@@ -675,6 +691,7 @@ html body .callout[data-callout="info"] .callout-title {
 }
 
 html body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 650);
   font-weight: var(--font-weight, 650);
 }
 
@@ -687,6 +704,7 @@ html body .callout[data-callout="note"] .callout-title {
 }
 
 html body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 650);
   font-weight: var(--font-weight, 650);
 }
 
@@ -699,6 +717,7 @@ html body .callout[data-callout="question"] .callout-title {
 }
 
 html body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 650);
   font-weight: var(--font-weight, 650);
 }
 
@@ -711,6 +730,7 @@ html body .callout[data-callout="quote"] .callout-title {
 }
 
 html body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 650);
   font-weight: var(--font-weight, 650);
 }
 
@@ -723,6 +743,7 @@ html body .callout[data-callout="success"] .callout-title {
 }
 
 html body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 650);
   font-weight: var(--font-weight, 650);
 }
 
@@ -735,6 +756,7 @@ html body .callout[data-callout="tip"] .callout-title {
 }
 
 html body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 650);
   font-weight: var(--font-weight, 650);
 }
 
@@ -747,6 +769,7 @@ html body .callout[data-callout="todo"] .callout-title {
 }
 
 html body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 650);
   font-weight: var(--font-weight, 650);
 }
 
@@ -759,6 +782,7 @@ html body .callout[data-callout="warning"] .callout-title {
 }
 
 html body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 650);
   font-weight: var(--font-weight, 650);
 }
 
@@ -911,6 +935,10 @@ html body .metadata-properties {
 html body kbd {
   background-color: var(--code-background, rgb(54, 47, 70));
   font-family: var(--font-monospace, "??", "Fira Code", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
+}
+
+html body ul.tags > li {
+  --font-weight: var(--link-weight, 450);
 }`,
   },
   light: {},

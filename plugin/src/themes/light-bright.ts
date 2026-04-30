@@ -207,6 +207,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(258, 10%, 20%));
   background-color: var(--tab-container-background, rgb(49, 46, 56));
   color: rgb(200, 194, 214);
 }
@@ -227,6 +228,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(258, 10%, 20%));
   background-color: var(--tab-container-background, rgb(49, 46, 56));
   border-left-color: rgb(80, 74, 94);
   color: rgb(200, 194, 214);
@@ -303,16 +305,19 @@ html[saved-theme="dark"] body p {
   text-decoration-color: rgb(172, 152, 221);
 }`,
     links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
+  --font-weight: var(--link-weight, 300);
   font-family: "??", "??", Roboto, Assistant, sans-serif;
   font-weight: var(--link-weight, 300);
 }
 
 html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+  --font-weight: var(--link-weight, 300);
   font-family: "??", "??", Roboto, Assistant, sans-serif;
   font-weight: var(--link-weight, 300);
 }
 
 html[saved-theme="dark"] body a.internal-link.broken {
+  --font-weight: var(--link-weight, 300);
   font-family: "??", "??", Roboto, Assistant, sans-serif;
   font-weight: var(--link-weight, 300);
   text-decoration: rgba(138, 92, 245, 0.3);
@@ -340,7 +345,11 @@ html[saved-theme="dark"] body ul.overflow {
   border-right-color: rgb(200, 194, 214);
   border-top-color: rgb(200, 194, 214);
 }`,
-    blockquotes: `html[saved-theme="dark"] body blockquote {
+    blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
+  --font-weight: var(--link-weight, 300);
+}
+
+html[saved-theme="dark"] body blockquote {
   background-color: var(--background-tertiary, rgba(184, 153, 255, 0.08));
   font-family: "??", "??", Roboto, Assistant, sans-serif;
   padding-bottom: 17px;
@@ -457,6 +466,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, hsl(258, 11.5%, 18.5%));
   border-bottom-color: rgb(200, 194, 214);
   border-left-color: rgb(200, 194, 214);
   border-right-color: rgb(200, 194, 214);
@@ -1088,6 +1098,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -1113,6 +1124,9 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   --background-secondary: hsl(258, 10%, 20%);
   --background-secondary-alt: hsl(258, 12%, 33%);
   --background-tertiary: hsl(258, 100%, 80%, 0.08);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent) linear-gradient(hsl(258, 12%, 33%), color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -1194,6 +1208,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 12%, 33%);
   --flair-color: hsl(258, 20%, 80%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -1390,6 +1405,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -1415,6 +1431,9 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
   --background-secondary: hsl(258, 10%, 20%);
   --background-secondary-alt: hsl(258, 12%, 33%);
   --background-tertiary: hsl(258, 100%, 80%, 0.08);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent) linear-gradient(hsl(258, 12%, 33%), color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -1496,6 +1515,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 12%, 33%);
   --flair-color: hsl(258, 20%, 80%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -1692,6 +1712,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -1717,6 +1738,9 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
   --background-secondary: hsl(258, 10%, 20%);
   --background-secondary-alt: hsl(258, 12%, 33%);
   --background-tertiary: hsl(258, 100%, 80%, 0.08);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent) linear-gradient(hsl(258, 12%, 33%), color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -1798,6 +1822,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 12%, 33%);
   --flair-color: hsl(258, 20%, 80%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -1994,6 +2019,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -2019,6 +2045,9 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
   --background-secondary: hsl(258, 10%, 20%);
   --background-secondary-alt: hsl(258, 12%, 33%);
   --background-tertiary: hsl(258, 100%, 80%, 0.08);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent) linear-gradient(hsl(258, 12%, 33%), color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -2100,6 +2129,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 12%, 33%);
   --flair-color: hsl(258, 20%, 80%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -2296,6 +2326,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -2321,6 +2352,9 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
   --background-secondary: hsl(258, 10%, 20%);
   --background-secondary-alt: hsl(258, 12%, 33%);
   --background-tertiary: hsl(258, 100%, 80%, 0.08);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent) linear-gradient(hsl(258, 12%, 33%), color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -2402,6 +2436,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 12%, 33%);
   --flair-color: hsl(258, 20%, 80%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -2598,6 +2633,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -2623,6 +2659,9 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
   --background-secondary: hsl(258, 10%, 20%);
   --background-secondary-alt: hsl(258, 12%, 33%);
   --background-tertiary: hsl(258, 100%, 80%, 0.08);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent) linear-gradient(hsl(258, 12%, 33%), color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -2704,6 +2743,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 12%, 33%);
   --flair-color: hsl(258, 20%, 80%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -2900,6 +2940,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -2925,6 +2966,9 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
   --background-secondary: hsl(258, 10%, 20%);
   --background-secondary-alt: hsl(258, 12%, 33%);
   --background-tertiary: hsl(258, 100%, 80%, 0.08);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent) linear-gradient(hsl(258, 12%, 33%), color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -3006,6 +3050,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 12%, 33%);
   --flair-color: hsl(258, 20%, 80%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -3202,6 +3247,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -3227,6 +3273,9 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
   --background-secondary: hsl(258, 10%, 20%);
   --background-secondary-alt: hsl(258, 12%, 33%);
   --background-tertiary: hsl(258, 100%, 80%, 0.08);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent) linear-gradient(hsl(258, 12%, 33%), color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -3308,6 +3357,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 12%, 33%);
   --flair-color: hsl(258, 20%, 80%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -3504,6 +3554,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -3529,6 +3580,9 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
   --background-secondary: hsl(258, 10%, 20%);
   --background-secondary-alt: hsl(258, 12%, 33%);
   --background-tertiary: hsl(258, 100%, 80%, 0.08);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent) linear-gradient(hsl(258, 12%, 33%), color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -3610,6 +3664,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 12%, 33%);
   --flair-color: hsl(258, 20%, 80%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -3806,6 +3861,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -3831,6 +3887,9 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
   --background-secondary: hsl(258, 10%, 20%);
   --background-secondary-alt: hsl(258, 12%, 33%);
   --background-tertiary: hsl(258, 100%, 80%, 0.08);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent) linear-gradient(hsl(258, 12%, 33%), color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -3912,6 +3971,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 12%, 33%);
   --flair-color: hsl(258, 20%, 80%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -4108,6 +4168,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -4133,6 +4194,9 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
   --background-secondary: hsl(258, 10%, 20%);
   --background-secondary-alt: hsl(258, 12%, 33%);
   --background-tertiary: hsl(258, 100%, 80%, 0.08);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent) linear-gradient(hsl(258, 12%, 33%), color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -4214,6 +4278,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 12%, 33%);
   --flair-color: hsl(258, 20%, 80%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -4410,6 +4475,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -4435,6 +4501,9 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
   --background-secondary: hsl(258, 10%, 20%);
   --background-secondary-alt: hsl(258, 12%, 33%);
   --background-tertiary: hsl(258, 100%, 80%, 0.08);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent) linear-gradient(hsl(258, 12%, 33%), color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -4516,6 +4585,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 12%, 33%);
   --flair-color: hsl(258, 20%, 80%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -4712,6 +4782,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -4737,6 +4808,9 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --background-secondary: hsl(258, 10%, 20%);
   --background-secondary-alt: hsl(258, 12%, 33%);
   --background-tertiary: hsl(258, 100%, 80%, 0.08);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent) linear-gradient(hsl(258, 12%, 33%), color-mix(in srgb, hsl(258, 12%, 33%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -4818,6 +4892,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 12%, 33%);
   --flair-color: hsl(258, 20%, 80%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -5014,6 +5089,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -5190,11 +5266,13 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-decoration: var(--tag-decoration, underline);
   font-family: "??", "??", "??", Roboto, Assistant, sans-serif;
   font-weight: var(--pill-weight, 300);
 }
 
 html[saved-theme="dark"] body h1 {
+  --font-weight: var(--h1-weight, 600);
   color: var(--h1-color, rgb(200, 194, 214));
   font-family: var(--h1-font, Lato);
 }
@@ -5206,6 +5284,7 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  --font-weight: var(--h2-weight, 400);
   color: var(--h2-color, rgb(200, 194, 214));
   font-family: var(--h2-font, "Work Sans");
 }
@@ -5216,21 +5295,25 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h3 {
+  --font-weight: var(--h3-weight, 400);
   color: var(--h3-color, rgb(200, 194, 214));
   font-family: var(--h3-font, "??", "??", Roboto, Assistant, sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
+  --font-weight: var(--h4-weight, 400);
   color: var(--h4-color, rgb(200, 194, 214));
   font-family: var(--h4-font, "??", "??", Roboto, Assistant, sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
+  --font-weight: var(--h5-weight, 400);
   color: var(--h5-color, rgb(200, 194, 214));
   font-family: var(--h5-font, "??", "??", Roboto, Assistant, sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
+  --font-weight: var(--h6-weight, 400);
   color: var(--h6-color, rgb(200, 194, 214));
   font-family: var(--h6-font, "??", "??", Roboto, Assistant, sans-serif);
 }
@@ -5424,6 +5507,10 @@ html[saved-theme="dark"] body .note-properties-row {
   border-color: rgb(172, 152, 221);
 }
 
+html[saved-theme="dark"] body .note-properties-tags {
+  --pill-decoration: var(--tag-decoration, underline);
+}
+
 html[saved-theme="dark"] body .note-properties-value {
   color: rgb(172, 152, 221);
 }
@@ -5518,6 +5605,7 @@ html[saved-theme="dark"] body sup {
 }
 
 html[saved-theme="dark"] body ul.tags > li {
+  --font-weight: var(--link-weight, 300);
   background-color: var(--tag-background, rgba(0, 0, 0, 0));
 }`,
   },
@@ -5784,6 +5872,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(258, 40%, 94.5%));
   background-color: var(--tab-container-background, rgb(239, 235, 247));
   color: rgb(75, 73, 80);
 }
@@ -5804,6 +5893,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(258, 40%, 94.5%));
   background-color: var(--tab-container-background, rgb(239, 235, 247));
   border-left-color: rgb(223, 218, 236);
   color: rgb(75, 73, 80);
@@ -5881,16 +5971,19 @@ html[saved-theme="light"] body p {
   text-decoration-color: rgb(117, 102, 153);
 }`,
     links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
+  --font-weight: var(--link-weight, 300);
   font-family: "??", "??", Roboto, Assistant, sans-serif;
   font-weight: var(--link-weight, 300);
 }
 
 html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+  --font-weight: var(--link-weight, 300);
   font-family: "??", "??", Roboto, Assistant, sans-serif;
   font-weight: var(--link-weight, 300);
 }
 
 html[saved-theme="light"] body a.internal-link.broken {
+  --font-weight: var(--link-weight, 300);
   font-family: "??", "??", Roboto, Assistant, sans-serif;
   font-weight: var(--link-weight, 300);
   text-decoration: rgba(138, 92, 245, 0.3);
@@ -5919,6 +6012,7 @@ html[saved-theme="light"] body ul.overflow {
   border-top-color: rgb(75, 73, 80);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
+  --font-weight: var(--link-weight, 300);
   color: var(--text-faint, rgba(153, 142, 180, 0.65));
 }
 
@@ -6039,6 +6133,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, hsl(258, 30%, 95.9%));
   border-bottom-color: rgb(75, 73, 80);
   border-left-color: rgb(75, 73, 80);
   border-right-color: rgb(75, 73, 80);
@@ -6674,6 +6769,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -6698,6 +6794,9 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
   --background-primary-alt: hsl(258, 30%, 95.9%);
   --background-secondary: hsl(258, 40%, 94.5%);
   --background-secondary-alt: hsl(258, 40%, 96.5%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent) linear-gradient(hsl(258, 100%, 99.5%), color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -6779,6 +6878,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 100%, 99.5%);
   --flair-color: hsl(258, 5%, 30%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -6973,6 +7073,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -6997,6 +7098,9 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
   --background-primary-alt: hsl(258, 30%, 95.9%);
   --background-secondary: hsl(258, 40%, 94.5%);
   --background-secondary-alt: hsl(258, 40%, 96.5%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent) linear-gradient(hsl(258, 100%, 99.5%), color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -7078,6 +7182,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 100%, 99.5%);
   --flair-color: hsl(258, 5%, 30%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -7272,6 +7377,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -7296,6 +7402,9 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
   --background-primary-alt: hsl(258, 30%, 95.9%);
   --background-secondary: hsl(258, 40%, 94.5%);
   --background-secondary-alt: hsl(258, 40%, 96.5%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent) linear-gradient(hsl(258, 100%, 99.5%), color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -7377,6 +7486,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 100%, 99.5%);
   --flair-color: hsl(258, 5%, 30%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -7571,6 +7681,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -7595,6 +7706,9 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
   --background-primary-alt: hsl(258, 30%, 95.9%);
   --background-secondary: hsl(258, 40%, 94.5%);
   --background-secondary-alt: hsl(258, 40%, 96.5%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent) linear-gradient(hsl(258, 100%, 99.5%), color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -7676,6 +7790,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 100%, 99.5%);
   --flair-color: hsl(258, 5%, 30%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -7870,6 +7985,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -7894,6 +8010,9 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
   --background-primary-alt: hsl(258, 30%, 95.9%);
   --background-secondary: hsl(258, 40%, 94.5%);
   --background-secondary-alt: hsl(258, 40%, 96.5%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent) linear-gradient(hsl(258, 100%, 99.5%), color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -7975,6 +8094,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 100%, 99.5%);
   --flair-color: hsl(258, 5%, 30%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -8169,6 +8289,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -8193,6 +8314,9 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
   --background-primary-alt: hsl(258, 30%, 95.9%);
   --background-secondary: hsl(258, 40%, 94.5%);
   --background-secondary-alt: hsl(258, 40%, 96.5%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent) linear-gradient(hsl(258, 100%, 99.5%), color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -8274,6 +8398,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 100%, 99.5%);
   --flair-color: hsl(258, 5%, 30%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -8468,6 +8593,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -8492,6 +8618,9 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
   --background-primary-alt: hsl(258, 30%, 95.9%);
   --background-secondary: hsl(258, 40%, 94.5%);
   --background-secondary-alt: hsl(258, 40%, 96.5%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent) linear-gradient(hsl(258, 100%, 99.5%), color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -8573,6 +8702,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 100%, 99.5%);
   --flair-color: hsl(258, 5%, 30%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -8767,6 +8897,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -8791,6 +8922,9 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
   --background-primary-alt: hsl(258, 30%, 95.9%);
   --background-secondary: hsl(258, 40%, 94.5%);
   --background-secondary-alt: hsl(258, 40%, 96.5%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent) linear-gradient(hsl(258, 100%, 99.5%), color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -8872,6 +9006,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 100%, 99.5%);
   --flair-color: hsl(258, 5%, 30%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -9066,6 +9201,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -9090,6 +9226,9 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
   --background-primary-alt: hsl(258, 30%, 95.9%);
   --background-secondary: hsl(258, 40%, 94.5%);
   --background-secondary-alt: hsl(258, 40%, 96.5%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent) linear-gradient(hsl(258, 100%, 99.5%), color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -9171,6 +9310,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 100%, 99.5%);
   --flair-color: hsl(258, 5%, 30%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -9365,6 +9505,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -9389,6 +9530,9 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
   --background-primary-alt: hsl(258, 30%, 95.9%);
   --background-secondary: hsl(258, 40%, 94.5%);
   --background-secondary-alt: hsl(258, 40%, 96.5%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent) linear-gradient(hsl(258, 100%, 99.5%), color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -9470,6 +9614,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 100%, 99.5%);
   --flair-color: hsl(258, 5%, 30%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -9664,6 +9809,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -9688,6 +9834,9 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
   --background-primary-alt: hsl(258, 30%, 95.9%);
   --background-secondary: hsl(258, 40%, 94.5%);
   --background-secondary-alt: hsl(258, 40%, 96.5%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent) linear-gradient(hsl(258, 100%, 99.5%), color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -9769,6 +9918,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 100%, 99.5%);
   --flair-color: hsl(258, 5%, 30%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -9963,6 +10113,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -9987,6 +10138,9 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
   --background-primary-alt: hsl(258, 30%, 95.9%);
   --background-secondary: hsl(258, 40%, 94.5%);
   --background-secondary-alt: hsl(258, 40%, 96.5%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent) linear-gradient(hsl(258, 100%, 99.5%), color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -10068,6 +10222,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 100%, 99.5%);
   --flair-color: hsl(258, 5%, 30%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -10262,6 +10417,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -10286,6 +10442,9 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   --background-primary-alt: hsl(258, 30%, 95.9%);
   --background-secondary: hsl(258, 40%, 94.5%);
   --background-secondary-alt: hsl(258, 40%, 96.5%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent) linear-gradient(hsl(258, 100%, 99.5%), color-mix(in srgb, hsl(258, 100%, 99.5%) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -10367,6 +10526,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(258, 100%, 99.5%);
   --flair-color: hsl(258, 5%, 30%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-mermaid: '??', '??', 'Roboto', 'Assistant', sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -10561,6 +10721,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   font-weight: var(--font-weight, 500);
 }
 
@@ -10748,11 +10909,13 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-decoration: var(--tag-decoration, underline);
   font-family: "??", "??", "??", Roboto, Assistant, sans-serif;
   font-weight: var(--pill-weight, 300);
 }
 
 html[saved-theme="light"] body h1 {
+  --font-weight: var(--h1-weight, 600);
   color: var(--h1-color, rgb(61, 57, 70));
   font-family: var(--h1-font, Lato);
 }
@@ -10764,6 +10927,7 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  --font-weight: var(--h2-weight, 400);
   color: var(--h2-color, rgb(61, 57, 70));
   font-family: var(--h2-font, "Work Sans");
 }
@@ -10774,21 +10938,25 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  --font-weight: var(--h3-weight, 400);
   color: var(--h3-color, rgb(61, 57, 70));
   font-family: var(--h3-font, "??", "??", Roboto, Assistant, sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
+  --font-weight: var(--h4-weight, 400);
   color: var(--h4-color, rgb(61, 57, 70));
   font-family: var(--h4-font, "??", "??", Roboto, Assistant, sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
+  --font-weight: var(--h5-weight, 400);
   color: var(--h5-color, rgb(61, 57, 70));
   font-family: var(--h5-font, "??", "??", Roboto, Assistant, sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
+  --font-weight: var(--h6-weight, 400);
   color: var(--h6-color, rgb(61, 57, 70));
   font-family: var(--h6-font, "??", "??", Roboto, Assistant, sans-serif);
 }
@@ -10983,6 +11151,10 @@ html[saved-theme="light"] body .note-properties-row {
   border-color: rgb(117, 102, 153);
 }
 
+html[saved-theme="light"] body .note-properties-tags {
+  --pill-decoration: var(--tag-decoration, underline);
+}
+
 html[saved-theme="light"] body .note-properties-value {
   color: rgb(117, 102, 153);
 }
@@ -11077,6 +11249,7 @@ html[saved-theme="light"] body sup {
 }
 
 html[saved-theme="light"] body ul.tags > li {
+  --font-weight: var(--link-weight, 300);
   background-color: var(--tag-background, rgba(0, 0, 0, 0));
 }`,
   },

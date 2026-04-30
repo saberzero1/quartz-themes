@@ -247,6 +247,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #131821);
   background-color: var(--tab-container-background, rgb(19, 24, 33));
   color: rgb(200, 250, 253);
 }
@@ -266,6 +267,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #131821);
   background-color: var(--tab-container-background, rgb(19, 24, 33));
   border-left-color: rgb(52, 62, 79);
   color: rgb(200, 250, 253);
@@ -1370,6 +1372,7 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, #272f3c);
   background-color: var(--pill-background, rgb(39, 47, 60));
 }
 
@@ -1549,6 +1552,7 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, #272f3c);
   background-color: var(--pill-background, rgb(39, 47, 60));
 }
 

@@ -535,6 +535,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(240, 18%, 20%));
   background-color: var(--tab-container-background, rgb(42, 42, 60));
   color: rgb(245, 240, 235);
 }
@@ -554,6 +555,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(240, 18%, 20%));
   background-color: var(--tab-container-background, rgb(42, 42, 60));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(245, 240, 235);
@@ -767,6 +769,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, hsl(240, 18%, 24%));
   border-bottom-color: rgb(245, 240, 235);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -2100,6 +2103,14 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(16, 80%, 60%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(16, 80%, 60%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(16, 80%, 60%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(16, 80%, 60%, 0.15));
+  --pill-color: var(--tag-color, hsl(16, 80%, 60%));
+  --pill-color-hover: var(--tag-color-hover, hsl(16, 80%, 60%));
+  --pill-color-remove: var(--tag-color, hsl(16, 80%, 60%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(16, 80%, 60%));
   background-color: var(--grotto-properties-color, rgb(245, 240, 235));
   border-bottom-color: rgb(245, 240, 235);
   border-bottom-left-radius: 0px;
@@ -2354,6 +2365,14 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(16, 80%, 60%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(16, 80%, 60%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(16, 80%, 60%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(16, 80%, 60%, 0.15));
+  --pill-color: var(--tag-color, hsl(16, 80%, 60%));
+  --pill-color-hover: var(--tag-color-hover, hsl(16, 80%, 60%));
+  --pill-color-remove: var(--tag-color, hsl(16, 80%, 60%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(16, 80%, 60%));
   background-color: var(--grotto-properties-color, rgb(245, 240, 235));
   border-radius: 0px;
   color: var(--background-primary, rgb(50, 50, 72));
@@ -2999,6 +3018,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(33, 33%, 90%));
   background-color: var(--tab-container-background, rgb(238, 230, 221));
   color: rgb(50, 50, 72);
 }
@@ -3018,6 +3038,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(33, 33%, 90%));
   background-color: var(--tab-container-background, rgb(238, 230, 221));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(50, 50, 72);
@@ -3231,6 +3252,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, hsl(33, 33%, 94%));
   border-bottom-color: rgb(50, 50, 72);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4564,6 +4586,14 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(16, 80%, 60%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(16, 80%, 60%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(16, 80%, 60%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(16, 80%, 60%, 0.15));
+  --pill-color: var(--tag-color, hsl(16, 80%, 60%));
+  --pill-color-hover: var(--tag-color-hover, hsl(16, 80%, 60%));
+  --pill-color-remove: var(--tag-color, hsl(16, 80%, 60%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(16, 80%, 60%));
   background-color: var(--grotto-properties-color, rgb(50, 50, 72));
   border-bottom-color: rgb(50, 50, 72);
   border-bottom-left-radius: 0px;
@@ -4818,6 +4848,14 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(16, 80%, 60%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(16, 80%, 60%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(16, 80%, 60%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(16, 80%, 60%, 0.15));
+  --pill-color: var(--tag-color, hsl(16, 80%, 60%));
+  --pill-color-hover: var(--tag-color-hover, hsl(16, 80%, 60%));
+  --pill-color-remove: var(--tag-color, hsl(16, 80%, 60%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(16, 80%, 60%));
   background-color: var(--grotto-properties-color, rgb(50, 50, 72));
   border-radius: 0px;
   color: var(--background-primary, rgb(245, 240, 235));

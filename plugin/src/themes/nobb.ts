@@ -213,6 +213,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #000000);
   border-bottom-color: rgb(187, 187, 187);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1182,6 +1183,7 @@ html body h2.page-title, html h2.page-title a {
 }
 
 html body h3 {
+  --font-weight: var(--h3-weight, 500);
   color: var(--h3-color, rgb(255, 255, 255));
 }
 

@@ -462,6 +462,10 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #2e2e32);
+  --metadata-property-radius: var(--radius-m, 12px);
+  --metadata-property-radius-focus: var(--radius-m, 12px);
+  --metadata-property-radius-hover: var(--radius-m, 12px);
   background-color: var(--background-secondary, rgb(46, 46, 50));
   color: rgb(255, 255, 255);
 }
@@ -481,6 +485,10 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #2e2e32);
+  --metadata-property-radius: var(--radius-m, 12px);
+  --metadata-property-radius-focus: var(--radius-m, 12px);
+  --metadata-property-radius-hover: var(--radius-m, 12px);
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgba(0, 0, 6, 0.36);
   color: rgb(255, 255, 255);
@@ -526,6 +534,10 @@ html[saved-theme="dark"] body del {
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body footer {
+  --status-bar-border-width: var(--border-width, 1px);
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -693,6 +705,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #2e2e32);
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -2006,6 +2019,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="check
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -2042,6 +2056,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -2075,6 +2090,9 @@ html[saved-theme="dark"] body .callout[data-callout="banner-icon"] {
   --banner-icon-size: 0px;
   --banner-image-height: 0px;
   --banner-image-radius: 9px;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --block-width-max: calc(100cqw - 64px);
   --block-width-offset: -32px;
   --block-width-wide: min(100cqw, 50rem);
@@ -2164,6 +2182,7 @@ html[saved-theme="dark"] body .callout[data-callout="banner-icon"] {
   --dropdown-padding: 0 2.4em 0 0.8em;
   --flair-background: color-mix(in srgb, #2e2e32, #fff 10%);
   --flair-color: #fff;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Adwaita Sans", "Adwaita Sans Text", '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -2408,6 +2427,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -2444,6 +2464,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -2480,6 +2501,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -2516,6 +2538,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -2552,6 +2575,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -2588,6 +2612,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -2621,6 +2646,9 @@ html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
   --banner-icon-size: 0px;
   --banner-image-height: 0px;
   --banner-image-radius: 9px;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --block-width-max: calc(100cqw - 64px);
   --block-width-offset: -32px;
   --block-width-wide: min(100cqw, 50rem);
@@ -2710,6 +2738,7 @@ html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
   --dropdown-padding: 0 2.4em 0 0.8em;
   --flair-background: color-mix(in srgb, #2e2e32, #fff 10%);
   --flair-color: #fff;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Adwaita Sans", "Adwaita Sans Text", '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -2954,6 +2983,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -2985,6 +3015,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -3021,6 +3052,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -3057,6 +3089,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -3093,6 +3126,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -3129,6 +3163,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -3310,6 +3345,12 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --icon-size: var(--icon-xs, 14px);
+  --icon-stroke: var(--icon-xs-stroke-width, 2.25px);
+  --pill-padding-x: var(--tag-padding-x, 8px);
+  --pill-padding-y: var(--tag-padding-y, 4px);
+  --pill-radius: var(--tag-radius, 8px);
+  --pill-weight: var(--tag-weight, 500);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -3411,6 +3452,7 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   color: var(--icon-color, rgb(210, 210, 210));
 }`,
     footer: `html[saved-theme="dark"] body footer {
+  --status-bar-border-width: var(--border-width, 1px);
   background-color: rgba(var(--mono-rgb-100), 0.2);
   border-bottom-color: rgb(210, 210, 210);
   border-bottom-left-radius: 1380px;
@@ -3568,6 +3610,12 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --icon-size: var(--icon-xs, 14px);
+  --icon-stroke: var(--icon-xs-stroke-width, 2.25px);
+  --pill-padding-x: var(--tag-padding-x, 8px);
+  --pill-padding-y: var(--tag-padding-y, 4px);
+  --pill-radius: var(--tag-radius, 8px);
+  --pill-weight: var(--tag-weight, 500);
   border-radius: 8px;
 }
 
@@ -3607,6 +3655,7 @@ html[saved-theme="dark"] body .stacked-page.active {
 }
 
 html[saved-theme="dark"] body .navigation-progress {
+  --status-bar-border-width: var(--border-width, 1px);
   background-color: rgba(var(--mono-rgb-100), 0.2);
 }
 
@@ -4143,6 +4192,10 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #ebebed);
+  --metadata-property-radius: var(--radius-m, 12px);
+  --metadata-property-radius-focus: var(--radius-m, 12px);
+  --metadata-property-radius-hover: var(--radius-m, 12px);
   background-color: var(--background-secondary, rgb(235, 235, 237));
   color: rgb(51, 51, 56);
 }
@@ -4161,6 +4214,10 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #ebebed);
+  --metadata-property-radius: var(--radius-m, 12px);
+  --metadata-property-radius-focus: var(--radius-m, 12px);
+  --metadata-property-radius-hover: var(--radius-m, 12px);
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgba(0, 0, 6, 0.07);
   color: rgb(51, 51, 56);
@@ -4206,6 +4263,10 @@ html[saved-theme="light"] body del {
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(51, 51, 56) none 0px;
   text-decoration-color: rgb(51, 51, 56);
+}
+
+html[saved-theme="light"] body footer {
+  --status-bar-border-width: var(--border-width, 1px);
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -4373,6 +4434,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #f3f3f5);
   border-bottom-color: rgb(51, 51, 56);
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -5625,6 +5687,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="chec
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -5661,6 +5724,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -5694,6 +5758,9 @@ html[saved-theme="light"] body .callout[data-callout="banner-icon"] {
   --banner-icon-size: 0px;
   --banner-image-height: 0px;
   --banner-image-radius: 9px;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --block-width-max: calc(100cqw - 64px);
   --block-width-offset: -32px;
   --block-width-wide: min(100cqw, 50rem);
@@ -5783,6 +5850,7 @@ html[saved-theme="light"] body .callout[data-callout="banner-icon"] {
   --dropdown-padding: 0 2.4em 0 0.8em;
   --flair-background: color-mix(in srgb, #ebebed, #333338 10%);
   --flair-color: #333338;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Adwaita Sans", "Adwaita Sans Text", '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -6025,6 +6093,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -6061,6 +6130,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -6097,6 +6167,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -6133,6 +6204,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -6169,6 +6241,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -6205,6 +6278,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -6238,6 +6312,9 @@ html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
   --banner-icon-size: 0px;
   --banner-image-height: 0px;
   --banner-image-radius: 9px;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --block-width-max: calc(100cqw - 64px);
   --block-width-offset: -32px;
   --block-width-wide: min(100cqw, 50rem);
@@ -6327,6 +6404,7 @@ html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
   --dropdown-padding: 0 2.4em 0 0.8em;
   --flair-background: color-mix(in srgb, #ebebed, #333338 10%);
   --flair-color: #333338;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Adwaita Sans", "Adwaita Sans Text", '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -6569,6 +6647,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -6600,6 +6679,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -6636,6 +6716,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -6672,6 +6753,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -6708,6 +6790,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -6744,6 +6827,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 700);
   color: color-mix(in srgb, rgb(var(--callout-color)), var(--text-normal) 15%);
   font-weight: var(--font-weight, 700);
 }
@@ -6925,6 +7009,12 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --icon-size: var(--icon-xs, 14px);
+  --icon-stroke: var(--icon-xs-stroke-width, 2.25px);
+  --pill-padding-x: var(--tag-padding-x, 8px);
+  --pill-padding-y: var(--tag-padding-y, 4px);
+  --pill-radius: var(--tag-radius, 8px);
+  --pill-weight: var(--tag-weight, 500);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -7026,6 +7116,7 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   color: var(--icon-color, rgb(92, 92, 96));
 }`,
     footer: `html[saved-theme="light"] body footer {
+  --status-bar-border-width: var(--border-width, 1px);
   background-color: rgba(var(--mono-rgb-100), 0.2);
   border-bottom-color: rgb(92, 92, 96);
   border-bottom-left-radius: 1380px;
@@ -7182,6 +7273,12 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --icon-size: var(--icon-xs, 14px);
+  --icon-stroke: var(--icon-xs-stroke-width, 2.25px);
+  --pill-padding-x: var(--tag-padding-x, 8px);
+  --pill-padding-y: var(--tag-padding-y, 4px);
+  --pill-radius: var(--tag-radius, 8px);
+  --pill-weight: var(--tag-weight, 500);
   border-radius: 8px;
 }
 
@@ -7221,6 +7318,7 @@ html[saved-theme="light"] body .stacked-page.active {
 }
 
 html[saved-theme="light"] body .navigation-progress {
+  --status-bar-border-width: var(--border-width, 1px);
   background-color: rgba(var(--mono-rgb-100), 0.2);
 }
 

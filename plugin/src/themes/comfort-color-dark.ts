@@ -152,6 +152,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #202225);
   background-color: var(--tab-container-background, rgb(32, 34, 37));
   color: rgb(187, 192, 197);
 }
@@ -171,6 +172,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #202225);
   background-color: var(--tab-container-background, rgb(32, 34, 37));
   border-left-color: rgba(146, 161, 161, 0.48);
   color: rgb(187, 192, 197);
@@ -363,6 +365,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #36393f);
   border-bottom-color: rgb(187, 192, 197);
   border-left-color: rgb(187, 192, 197);
   border-right-color: rgb(187, 192, 197);
@@ -1247,6 +1250,10 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #ff9640ba);
+  --pill-color-hover: var(--tag-color-hover, #ff9640ba);
+  --pill-color-remove: var(--tag-color, #ff9640ba);
+  --pill-color-remove-hover: var(--tag-color-hover, #ff9640ba);
   border-bottom-left-radius: 26.25px;
   border-bottom-right-radius: 26.25px;
   border-top-left-radius: 26.25px;
@@ -1401,6 +1408,10 @@ html body .note-properties {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, #ff9640ba);
+  --pill-color-hover: var(--tag-color-hover, #ff9640ba);
+  --pill-color-remove: var(--tag-color, #ff9640ba);
+  --pill-color-remove-hover: var(--tag-color-hover, #ff9640ba);
   border-radius: 26.25px;
   color: var(--pill-color, rgba(255, 150, 64, 0.73));
 }

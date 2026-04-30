@@ -199,6 +199,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #241B2F);
   background-color: var(--tab-container-background, rgb(36, 27, 47));
   color: rgb(212, 245, 255);
 }
@@ -218,6 +219,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #241B2F);
   background-color: var(--tab-container-background, rgb(36, 27, 47));
   border-left-color: rgb(253, 139, 253);
   color: rgb(212, 245, 255);
@@ -381,6 +383,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #241734);
   border-bottom-color: rgb(212, 245, 255);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -1355,6 +1358,13 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(212, 245, 255);
 }
 
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #FF1690);
+  --pill-color-hover: var(--tag-color-hover, #FF1690);
+  --pill-color-remove: var(--tag-color, #FF1690);
+  --pill-color-remove-hover: var(--tag-color-hover, #FF1690);
+}
+
 html body a.internal-link.tag-link::before {
   color: rgb(255, 22, 144);
 }
@@ -1567,6 +1577,10 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, #FF1690);
+  --pill-color-hover: var(--tag-color-hover, #FF1690);
+  --pill-color-remove: var(--tag-color, #FF1690);
+  --pill-color-remove-hover: var(--tag-color-hover, #FF1690);
   color: var(--pill-color, rgb(255, 22, 144));
 }
 

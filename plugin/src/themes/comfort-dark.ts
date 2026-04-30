@@ -215,6 +215,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #222222);
   background-color: var(--tab-container-background, rgb(34, 34, 34));
   color: rgb(187, 192, 197);
 }
@@ -234,6 +235,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #222222);
   background-color: var(--tab-container-background, rgb(34, 34, 34));
   border-left-color: rgb(38, 38, 38);
   color: rgb(187, 192, 197);
@@ -398,6 +400,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #383838);
   border-bottom-color: rgb(187, 192, 197);
   border-left-color: rgb(187, 192, 197);
   border-right-color: rgb(187, 192, 197);
@@ -1303,6 +1306,14 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, #123b2b);
+  --pill-background-hover: var(--tag-background-hover, #194a37);
+  --pill-border-color: var(--tag-border-color, hsla(40, 50%, 50%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(40, 50%, 50%, 0.15));
+  --pill-color: var(--tag-color, #bbc0c5);
+  --pill-color-hover: var(--tag-color-hover, #bbc0c5);
+  --pill-color-remove: var(--tag-color, #bbc0c5);
+  --pill-color-remove-hover: var(--tag-color-hover, #bbc0c5);
   background-color: var(--pill-background, rgb(18, 59, 43));
   border-bottom-color: rgba(191, 149, 64, 0.15);
   border-left-color: rgba(191, 149, 64, 0.15);
@@ -1450,6 +1461,14 @@ html body .metadata-properties {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, #123b2b);
+  --pill-background-hover: var(--tag-background-hover, #194a37);
+  --pill-border-color: var(--tag-border-color, hsla(40, 50%, 50%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(40, 50%, 50%, 0.15));
+  --pill-color: var(--tag-color, #bbc0c5);
+  --pill-color-hover: var(--tag-color-hover, #bbc0c5);
+  --pill-color-remove: var(--tag-color, #bbc0c5);
+  --pill-color-remove-hover: var(--tag-color-hover, #bbc0c5);
   background-color: var(--pill-background, rgb(18, 59, 43));
   color: var(--pill-color, rgb(187, 192, 197));
 }

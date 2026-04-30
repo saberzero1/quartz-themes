@@ -194,6 +194,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #f2f3f5);
   background-color: var(--tab-container-background, rgb(242, 243, 245));
   color: rgb(63, 63, 63);
 }
@@ -213,6 +214,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #f2f3f5);
   background-color: var(--tab-container-background, rgb(242, 243, 245));
   border-left-color: rgb(221, 221, 221);
   color: rgb(63, 63, 63);
@@ -372,6 +374,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #f5f5f5);
   border-bottom-color: rgb(63, 63, 63);
   border-left-color: rgb(63, 63, 63);
   border-right-color: rgb(63, 63, 63);
@@ -1259,6 +1262,13 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(63, 63, 63);
 }
 
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #392d78);
+  --pill-color-hover: var(--tag-color-hover, #392d78);
+  --pill-color-remove: var(--tag-color, #392d78);
+  --pill-color-remove-hover: var(--tag-color-hover, #392d78);
+}
+
 html body a.internal-link.tag-link::before {
   color: rgb(57, 45, 120);
 }
@@ -1273,6 +1283,7 @@ html body h1.article-title {
 }
 
 html body h2 {
+  --font-weight: var(--h2-weight, 600);
   color: var(--h2-color, rgb(60, 103, 141));
 }
 
@@ -1281,14 +1292,17 @@ html body h2.page-title, html h2.page-title a {
 }
 
 html body h3 {
+  --font-weight: var(--h3-weight, 600);
   color: var(--h3-color, rgb(105, 125, 158));
 }
 
 html body h4 {
+  --font-weight: var(--h4-weight, 600);
   color: var(--h4-color, rgb(160, 168, 182));
 }
 
 html body h5 {
+  --font-weight: var(--h5-weight, 600);
   color: var(--h5-color, rgb(182, 200, 228));
 }
 
@@ -1449,6 +1463,10 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, #392d78);
+  --pill-color-hover: var(--tag-color-hover, #392d78);
+  --pill-color-remove: var(--tag-color, #392d78);
+  --pill-color-remove-hover: var(--tag-color-hover, #392d78);
   color: var(--pill-color, rgb(57, 45, 120));
 }
 

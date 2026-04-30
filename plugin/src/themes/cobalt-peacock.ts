@@ -300,6 +300,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #011627);
   background-color: var(--tab-container-background, rgb(237, 146, 153));
 }
 
@@ -316,6 +317,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #011627);
   background-color: var(--tab-container-background, rgb(237, 146, 153));
   border-left-color: rgb(1, 14, 26);
 }`,
@@ -398,6 +400,7 @@ html body pre:has(> code) {
   border-top-right-radius: 0px;
 }`,
     images: `html body figure {
+  --code-background: var(--ec-frm-edBg, #011627);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1082,6 +1085,14 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, #011627);
+  --pill-background-hover: var(--tag-background-hover, #ed9299);
+  --pill-border-color: var(--tag-border-color, #011627);
+  --pill-border-color-hover: var(--tag-border-color-hover, #011627);
+  --pill-color: var(--tag-color, #9effff);
+  --pill-color-hover: var(--tag-color-hover, #1F4662);
+  --pill-color-remove: var(--tag-color, #9effff);
+  --pill-color-remove-hover: var(--tag-color-hover, #1F4662);
   background-color: var(--pill-background, rgb(1, 22, 39));
   border-bottom-color: rgb(1, 22, 39);
   border-left-color: rgb(1, 22, 39);
@@ -1250,6 +1261,14 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, #011627);
+  --pill-background-hover: var(--tag-background-hover, #ed9299);
+  --pill-border-color: var(--tag-border-color, #011627);
+  --pill-border-color-hover: var(--tag-border-color-hover, #011627);
+  --pill-color: var(--tag-color, #9effff);
+  --pill-color-hover: var(--tag-color-hover, #1F4662);
+  --pill-color-remove: var(--tag-color, #9effff);
+  --pill-color-remove-hover: var(--tag-color-hover, #1F4662);
   background-color: var(--pill-background, rgb(1, 22, 39));
   color: var(--pill-color, rgb(158, 255, 255));
 }

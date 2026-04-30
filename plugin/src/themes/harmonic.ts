@@ -639,6 +639,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, hsl(0,0%,-1%));
   border-bottom-color: rgb(184, 184, 184);
   border-left-color: rgb(184, 184, 184);
   border-right-color: rgb(184, 184, 184);
@@ -1636,11 +1637,19 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(184, 184, 184);
 }
 
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, hsl(258,88%,66%));
+  --pill-color-hover: var(--tag-color-hover, hsl(258,88%,66%));
+  --pill-color-remove: var(--tag-color, hsl(258,88%,66%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(258,88%,66%));
+}
+
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(138, 92, 245);
 }
 
 html[saved-theme="dark"] body h1 {
+  --font-weight: var(--h1-weight, 400);
   color: var(--h1-color, rgb(184, 184, 184));
   font-family: var(--text-title, mulish);
 }
@@ -1651,6 +1660,7 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  --font-weight: var(--h2-weight, 400);
   color: var(--h2-color, rgb(184, 184, 184));
   font-family: var(--text-title, mulish);
 }
@@ -1661,6 +1671,7 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h3 {
+  --font-weight: var(--h3-weight, 400);
   color: var(--h3-color, rgb(184, 184, 184));
   font-family: var(--text-title, mulish);
 }
@@ -1829,6 +1840,10 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-color: var(--tag-color, hsl(258,88%,66%));
+  --pill-color-hover: var(--tag-color-hover, hsl(258,88%,66%));
+  --pill-color-remove: var(--tag-color, hsl(258,88%,66%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(258,88%,66%));
   color: var(--pill-color, rgb(138, 92, 245));
 }
 
@@ -2410,6 +2425,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, hsl(0,0%,97%));
   border-bottom-color: rgb(48, 48, 48);
   border-left-color: rgb(48, 48, 48);
   border-right-color: rgb(48, 48, 48);
@@ -3407,7 +3423,15 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(48, 48, 48);
 }
 
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, hsl(258,88%,66%));
+  --pill-color-hover: var(--tag-color-hover, hsl(258,88%,66%));
+  --pill-color-remove: var(--tag-color, hsl(258,88%,66%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(258,88%,66%));
+}
+
 html[saved-theme="light"] body h1 {
+  --font-weight: var(--h1-weight, 400);
   color: var(--h1-color, rgb(48, 48, 48));
   font-family: var(--text-title, mulish);
 }
@@ -3418,6 +3442,7 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  --font-weight: var(--h2-weight, 400);
   color: var(--h2-color, rgb(48, 48, 48));
   font-family: var(--text-title, mulish);
 }
@@ -3428,6 +3453,7 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  --font-weight: var(--h3-weight, 400);
   color: var(--h3-color, rgb(48, 48, 48));
   font-family: var(--text-title, mulish);
 }
@@ -3594,6 +3620,13 @@ html[saved-theme="light"] body .note-properties-key {
 
 html[saved-theme="light"] body .note-properties-row {
   border-color: rgb(138, 138, 138);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  --pill-color: var(--tag-color, hsl(258,88%,66%));
+  --pill-color-hover: var(--tag-color-hover, hsl(258,88%,66%));
+  --pill-color-remove: var(--tag-color, hsl(258,88%,66%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(258,88%,66%));
 }
 
 html[saved-theme="light"] body .note-properties-value {

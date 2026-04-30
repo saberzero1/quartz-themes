@@ -781,6 +781,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #1d1d1d);
   background-color: var(--tab-container-background, rgb(29, 29, 29));
   color: rgb(157, 157, 157);
 }
@@ -800,6 +801,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #1d1d1d);
   background-color: var(--tab-container-background, rgb(29, 29, 29));
   border-left-color: rgb(157, 157, 157);
   color: rgb(157, 157, 157);
@@ -1043,6 +1045,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #1d1d1d);
   border-bottom-color: rgb(157, 157, 157);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -2028,6 +2031,9 @@ html[saved-theme="dark"] body .callout[data-callout="sparkle"] {
   --background-primary-alt: #1f1f1f;
   --background-secondary: #1d1d1d;
   --background-secondary-alt: #151515;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #778e55;
   --blockquote-color: #707070;
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -2105,6 +2111,7 @@ html[saved-theme="dark"] body .callout[data-callout="sparkle"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #9d9d9d;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Noto Sans', sans-serif;
   --font-mermaid: '??', 'Noto Sans', sans-serif, 'Noto Sans', sans-serif;
   --font-monospace: '??', '??', 'JetBrains Mono', monospace;
@@ -2604,6 +2611,19 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, #778e55);
+  --pill-background-hover: var(--tag-background-hover, #9db27e);
+  --pill-border-color: var(--tag-border-color, #778e55);
+  --pill-border-color-hover: var(--tag-border-color-hover, #9db27e);
+  --pill-border-width: var(--tag-border-width, 2px);
+  --pill-color: var(--tag-color, #252525);
+  --pill-color-hover: var(--tag-color-hover, #252525);
+  --pill-color-remove: var(--tag-color, #252525);
+  --pill-color-remove-hover: var(--tag-color-hover, #252525);
+  --pill-decoration: var(--tag-decoration, #252525);
+  --pill-decoration-hover: var(--tag-decoration-hover, #252525);
+  --pill-padding-x: var(--tag-padding-x, 2px);
+  --pill-padding-y: var(--tag-padding-y, 2px);
   background-color: var(--pill-background, rgb(119, 142, 85));
   border-bottom-color: rgb(119, 142, 85);
   border-bottom-left-radius: 6px;
@@ -2625,6 +2645,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  --font-weight: var(--h1-weight, 650);
   color: var(--h1-color, rgb(119, 142, 85));
   font-family: var(--h1-font, "Noto Sans", sans-serif);
 }
@@ -2636,6 +2657,7 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  --font-weight: var(--h2-weight, 650);
   color: var(--h2-color, rgb(224, 194, 82));
   font-family: var(--h2-font, "Noto Sans", sans-serif);
 }
@@ -2646,21 +2668,25 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h3 {
+  --font-weight: var(--h3-weight, 650);
   color: var(--h3-color, rgb(132, 158, 95));
   font-family: var(--h3-font, "Noto Sans", sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
+  --font-weight: var(--h4-weight, 650);
   color: var(--h4-color, rgb(228, 201, 103));
   font-family: var(--h4-font, "Noto Sans", sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
+  --font-weight: var(--h5-weight, 650);
   color: var(--h5-color, rgb(145, 168, 110));
   font-family: var(--h5-font, "Noto Sans", sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
+  --font-weight: var(--h6-weight, 650);
   color: var(--h6-color, rgb(232, 209, 125));
   font-family: var(--h6-font, "Noto Sans", sans-serif);
 }
@@ -2875,6 +2901,19 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, #778e55);
+  --pill-background-hover: var(--tag-background-hover, #9db27e);
+  --pill-border-color: var(--tag-border-color, #778e55);
+  --pill-border-color-hover: var(--tag-border-color-hover, #9db27e);
+  --pill-border-width: var(--tag-border-width, 2px);
+  --pill-color: var(--tag-color, #252525);
+  --pill-color-hover: var(--tag-color-hover, #252525);
+  --pill-color-remove: var(--tag-color, #252525);
+  --pill-color-remove-hover: var(--tag-color-hover, #252525);
+  --pill-decoration: var(--tag-decoration, #252525);
+  --pill-decoration-hover: var(--tag-decoration-hover, #252525);
+  --pill-padding-x: var(--tag-padding-x, 2px);
+  --pill-padding-y: var(--tag-padding-y, 2px);
   background-color: var(--pill-background, rgb(119, 142, 85));
   border-radius: 6px;
   color: var(--background-primary, rgb(37, 37, 37));
@@ -3530,6 +3569,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #e1e1e1);
   background-color: var(--tab-container-background, rgb(225, 225, 225));
   color: rgb(64, 64, 64);
 }
@@ -3549,6 +3589,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #e1e1e1);
   background-color: var(--tab-container-background, rgb(225, 225, 225));
   border-left-color: rgb(64, 64, 64);
   color: rgb(64, 64, 64);
@@ -3792,6 +3833,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #e1e1e1);
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4777,6 +4819,9 @@ html[saved-theme="light"] body .callout[data-callout="sparkle"] {
   --background-primary-alt: #d7d7d7;
   --background-secondary: #e1e1e1;
   --background-secondary-alt: #c4c4c4;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #596d3a;
   --blockquote-color: #555555;
   --blur-background: color-mix(in srgb, #ececec 65%, transparent) linear-gradient(#ececec, color-mix(in srgb, #ececec 65%, transparent));
@@ -4854,6 +4899,7 @@ html[saved-theme="light"] body .callout[data-callout="sparkle"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #e1e1e1;
   --flair-color: #404040;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Noto Sans', sans-serif;
   --font-mermaid: '??', 'Noto Sans', sans-serif, 'Noto Sans', sans-serif;
   --font-monospace: '??', '??', 'JetBrains Mono', monospace;
@@ -5352,6 +5398,19 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, #596d3a);
+  --pill-background-hover: var(--tag-background-hover, #303b1f);
+  --pill-border-color: var(--tag-border-color, #596d3a);
+  --pill-border-color-hover: var(--tag-border-color-hover, #303b1f);
+  --pill-border-width: var(--tag-border-width, 2px);
+  --pill-color: var(--tag-color, #ececec);
+  --pill-color-hover: var(--tag-color-hover, #ececec);
+  --pill-color-remove: var(--tag-color, #ececec);
+  --pill-color-remove-hover: var(--tag-color-hover, #ececec);
+  --pill-decoration: var(--tag-decoration, #ececec);
+  --pill-decoration-hover: var(--tag-decoration-hover, #ececec);
+  --pill-padding-x: var(--tag-padding-x, 2px);
+  --pill-padding-y: var(--tag-padding-y, 2px);
   background-color: var(--pill-background, rgb(89, 109, 58));
   border-bottom-color: rgb(89, 109, 58);
   border-bottom-left-radius: 6px;
@@ -5373,6 +5432,7 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  --font-weight: var(--h1-weight, 650);
   color: var(--h1-color, rgb(89, 109, 58));
   font-family: var(--h1-font, "Noto Sans", sans-serif);
 }
@@ -5384,6 +5444,7 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  --font-weight: var(--h2-weight, 650);
   color: var(--h2-color, rgb(64, 64, 64));
   font-family: var(--h2-font, "Noto Sans", sans-serif);
 }
@@ -5394,21 +5455,25 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  --font-weight: var(--h3-weight, 650);
   color: var(--h3-color, rgb(75, 92, 49));
   font-family: var(--h3-font, "Noto Sans", sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
+  --font-weight: var(--h4-weight, 650);
   color: var(--h4-color, rgb(51, 51, 51));
   font-family: var(--h4-font, "Noto Sans", sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
+  --font-weight: var(--h5-weight, 650);
   color: var(--h5-color, rgb(62, 76, 40));
   font-family: var(--h5-font, "Noto Sans", sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
+  --font-weight: var(--h6-weight, 650);
   color: var(--h6-color, rgb(32, 32, 32));
   font-family: var(--h6-font, "Noto Sans", sans-serif);
 }
@@ -5623,6 +5688,19 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, #596d3a);
+  --pill-background-hover: var(--tag-background-hover, #303b1f);
+  --pill-border-color: var(--tag-border-color, #596d3a);
+  --pill-border-color-hover: var(--tag-border-color-hover, #303b1f);
+  --pill-border-width: var(--tag-border-width, 2px);
+  --pill-color: var(--tag-color, #ececec);
+  --pill-color-hover: var(--tag-color-hover, #ececec);
+  --pill-color-remove: var(--tag-color, #ececec);
+  --pill-color-remove-hover: var(--tag-color-hover, #ececec);
+  --pill-decoration: var(--tag-decoration, #ececec);
+  --pill-decoration-hover: var(--tag-decoration-hover, #ececec);
+  --pill-padding-x: var(--tag-padding-x, 2px);
+  --pill-padding-y: var(--tag-padding-y, 2px);
   background-color: var(--pill-background, rgb(89, 109, 58));
   border-radius: 6px;
   color: var(--background-primary, rgb(236, 236, 236));

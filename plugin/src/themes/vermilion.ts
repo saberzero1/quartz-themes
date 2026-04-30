@@ -165,6 +165,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #1c1c1c);
   background-color: var(--tab-container-background, rgb(28, 28, 28));
   color: rgb(144, 144, 144);
 }
@@ -180,6 +181,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #1c1c1c);
   background-color: var(--tab-container-background, rgb(28, 28, 28));
   color: rgb(144, 144, 144);
 }`,
@@ -326,6 +328,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #1c1c1c);
   border-bottom-color: rgb(144, 144, 144);
   border-left-color: rgb(144, 144, 144);
   border-right-color: rgb(144, 144, 144);
@@ -1257,6 +1260,14 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, color-mix(
+		in oklab,
+		#909090 8%,
+		transparent
+	));
+  --pill-color: var(--tag-color, #d8d2c9);
+  --pill-color-remove: var(--tag-color, #d8d2c9);
+  --pill-radius: var(--tag-radius, 4px);
   background-color: var(--pill-background, oklab(0.653347 0.0000296831 0.0000130534 / 0.08));
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -1390,6 +1401,14 @@ html[saved-theme="dark"] body .note-properties {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, color-mix(
+		in oklab,
+		#909090 8%,
+		transparent
+	));
+  --pill-color: var(--tag-color, #d8d2c9);
+  --pill-color-remove: var(--tag-color, #d8d2c9);
+  --pill-radius: var(--tag-radius, 4px);
   background-color: var(--pill-background, oklab(0.653347 0.0000296831 0.0000130534 / 0.08));
   border-radius: 4px;
   color: var(--pill-color, rgb(216, 210, 201));

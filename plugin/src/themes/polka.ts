@@ -378,6 +378,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(221, 29.1375%, 18.404%));
   background-color: var(--tab-container-background, rgb(33, 42, 61));
   color: rgb(250, 247, 245);
 }
@@ -397,6 +398,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(221, 29.1375%, 18.404%));
   background-color: var(--tab-container-background, rgb(33, 42, 61));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(250, 247, 245);
@@ -581,6 +583,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, rgb(10, 18, 30));
   border-bottom-color: rgb(250, 247, 245);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1877,6 +1880,15 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(189, 100%, 49%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(189, 100%, 49%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(189, 100%, 49%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(189, 100%, 49%, 0.15));
+  --pill-color: var(--tag-color, hsl(189, 100%, 49%));
+  --pill-color-hover: var(--tag-color-hover, hsl(189, 100%, 49%));
+  --pill-color-remove: var(--tag-color, hsl(189, 100%, 49%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(189, 100%, 49%));
+  --pill-radius: var(--tag-radius, 4px);
   background-color: var(--pill-background, rgba(0, 212, 250, 0.1));
   border-bottom-color: rgba(0, 212, 250, 0.15);
   border-bottom-left-radius: 4px;
@@ -2129,6 +2141,15 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(189, 100%, 49%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(189, 100%, 49%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(189, 100%, 49%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(189, 100%, 49%, 0.15));
+  --pill-color: var(--tag-color, hsl(189, 100%, 49%));
+  --pill-color-hover: var(--tag-color-hover, hsl(189, 100%, 49%));
+  --pill-color-remove: var(--tag-color, hsl(189, 100%, 49%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(189, 100%, 49%));
+  --pill-radius: var(--tag-radius, 4px);
   background-color: var(--pill-background, rgba(0, 212, 250, 0.1));
   border-radius: 4px;
   color: var(--pill-color, rgb(0, 212, 250));
@@ -2614,6 +2635,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(0, 34.3%, 97.3%));
   background-color: var(--tab-container-background, rgb(250, 246, 246));
   color: rgb(0, 0, 0);
 }
@@ -2633,6 +2655,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(0, 34.3%, 97.3%));
   background-color: var(--tab-container-background, rgb(250, 246, 246));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(0, 0, 0);
@@ -2817,6 +2840,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, rgb(23, 35, 62));
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -4113,6 +4137,15 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(0, 75%, 52%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(0, 75%, 52%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(0, 75%, 52%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(0, 75%, 52%, 0.15));
+  --pill-color: var(--tag-color, hsl(0, 75%, 52%));
+  --pill-color-hover: var(--tag-color-hover, hsl(0, 75%, 52%));
+  --pill-color-remove: var(--tag-color, hsl(0, 75%, 52%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(0, 75%, 52%));
+  --pill-radius: var(--tag-radius, 4px);
   background-color: var(--pill-background, rgba(224, 41, 41, 0.1));
   border-bottom-color: rgba(224, 41, 41, 0.15);
   border-bottom-left-radius: 4px;
@@ -4365,6 +4398,15 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(0, 75%, 52%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(0, 75%, 52%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(0, 75%, 52%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(0, 75%, 52%, 0.15));
+  --pill-color: var(--tag-color, hsl(0, 75%, 52%));
+  --pill-color-hover: var(--tag-color-hover, hsl(0, 75%, 52%));
+  --pill-color-remove: var(--tag-color, hsl(0, 75%, 52%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(0, 75%, 52%));
+  --pill-radius: var(--tag-radius, 4px);
   background-color: var(--pill-background, rgba(224, 41, 41, 0.1));
   border-radius: 4px;
   color: var(--pill-color, rgb(224, 41, 41));

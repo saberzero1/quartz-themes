@@ -383,6 +383,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #0f1116);
   background-color: var(--tab-container-background, rgb(15, 17, 22));
 }
 
@@ -399,6 +400,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #0f1116);
   background-color: var(--tab-container-background, rgb(15, 17, 22));
   border-left-color: rgb(40, 40, 40);
 }
@@ -506,6 +508,9 @@ html body pre:has(> code) {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+}`,
+    images: `html body figure {
+  --code-background: var(--ec-frm-edBg, #0f1116);
 }`,
     embeds: `html body .file-embed {
   background-color: var(--background-primary-alt, rgb(15, 17, 22));
@@ -1141,6 +1146,27 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, hsl(
+    255,
+    89.76%,
+    75.9%
+  ));
+  --pill-color-hover: var(--tag-color-hover, hsl(
+    255,
+    89.76%,
+    75.9%
+  ));
+  --pill-color-remove: var(--tag-color, hsl(
+    255,
+    89.76%,
+    75.9%
+  ));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(
+    255,
+    89.76%,
+    75.9%
+  ));
+  --pill-radius: var(--tag-radius, 0.5em);
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
   border-top-left-radius: 7px;
@@ -1149,6 +1175,22 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
 
 html body h1.article-title {
   font-size: var(--inline-title-size, 40px);
+}
+
+html body h2 {
+  --font-weight: var(--h2-weight, 600);
+}
+
+html body h3 {
+  --font-weight: var(--h3-weight, 600);
+}
+
+html body h4 {
+  --font-weight: var(--h4-weight, 600);
+}
+
+html body h5 {
+  --font-weight: var(--h5-weight, 600);
 }
 
 html body hr {
@@ -1265,6 +1307,27 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, hsl(
+    255,
+    89.76%,
+    75.9%
+  ));
+  --pill-color-hover: var(--tag-color-hover, hsl(
+    255,
+    89.76%,
+    75.9%
+  ));
+  --pill-color-remove: var(--tag-color, hsl(
+    255,
+    89.76%,
+    75.9%
+  ));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(
+    255,
+    89.76%,
+    75.9%
+  ));
+  --pill-radius: var(--tag-radius, 0.5em);
   border-radius: 7px;
 }
 

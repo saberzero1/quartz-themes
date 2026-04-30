@@ -331,6 +331,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #151d28);
   background-color: var(--tab-container-background, rgb(21, 29, 40));
   color: rgb(205, 206, 207);
 }
@@ -350,6 +351,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #151d28);
   background-color: var(--tab-container-background, rgb(21, 29, 40));
   border-left-color: rgb(36, 51, 71);
   color: rgb(205, 206, 207);
@@ -519,6 +521,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #151d28);
   border-bottom-color: rgb(205, 206, 207);
   border-left-color: rgb(205, 206, 207);
   border-right-color: rgb(205, 206, 207);
@@ -1594,6 +1597,14 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(181, 37%, 51%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(181, 37%, 51%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(181, 37%, 51%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(181, 37%, 51%, 0.15));
+  --pill-color: var(--tag-color, hsl(178, 37.74%, 58.65%));
+  --pill-color-hover: var(--tag-color-hover, hsl(178, 37.74%, 58.65%));
+  --pill-color-remove: var(--tag-color, hsl(178, 37.74%, 58.65%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(178, 37.74%, 58.65%));
   background-color: var(--pill-background, rgba(84, 175, 176, 0.1));
   border-bottom-color: rgba(84, 175, 176, 0.15);
   border-left-color: rgba(84, 175, 176, 0.15);
@@ -1606,6 +1617,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  --font-weight: var(--h1-weight, 300);
   color: var(--h1-color, rgb(214, 214, 215));
 }
 
@@ -1616,6 +1628,7 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  --font-weight: var(--h2-weight, 700);
   color: var(--h2-color, rgb(214, 214, 215));
 }
 
@@ -1624,18 +1637,22 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h3 {
+  --font-weight: var(--h3-weight, 700);
   color: var(--h3-color, rgb(214, 214, 215));
 }
 
 html[saved-theme="dark"] body h4 {
+  --font-weight: var(--h4-weight, 700);
   color: var(--h4-color, rgb(214, 214, 215));
 }
 
 html[saved-theme="dark"] body h5 {
+  --font-weight: var(--h5-weight, 700);
   color: var(--h5-color, rgb(214, 214, 215));
 }
 
 html[saved-theme="dark"] body h6 {
+  --font-weight: var(--h6-weight, 700);
   color: var(--h6-color, rgb(214, 214, 215));
 }
 
@@ -1800,6 +1817,14 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(181, 37%, 51%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(181, 37%, 51%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(181, 37%, 51%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(181, 37%, 51%, 0.15));
+  --pill-color: var(--tag-color, hsl(178, 37.74%, 58.65%));
+  --pill-color-hover: var(--tag-color-hover, hsl(178, 37.74%, 58.65%));
+  --pill-color-remove: var(--tag-color, hsl(178, 37.74%, 58.65%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(178, 37.74%, 58.65%));
   background-color: var(--pill-background, rgba(84, 175, 176, 0.1));
   color: var(--pill-color, rgb(110, 189, 187));
 }
@@ -2236,6 +2261,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #eae3dc);
   background-color: var(--tab-container-background, rgb(234, 227, 220));
   color: rgb(61, 43, 90);
 }
@@ -2255,6 +2281,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #eae3dc);
   background-color: var(--tab-container-background, rgb(234, 227, 220));
   border-left-color: rgb(211, 199, 187);
   color: rgb(61, 43, 90);
@@ -2424,6 +2451,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #eae3dc);
   border-bottom-color: rgb(61, 43, 90);
   border-left-color: rgb(61, 43, 90);
   border-right-color: rgb(61, 43, 90);
@@ -3499,6 +3527,14 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(185, 34%, 43%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(185, 34%, 43%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(185, 34%, 43%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(185, 34%, 43%, 0.15));
+  --pill-color: var(--tag-color, hsl(185, 34%, 43%));
+  --pill-color-hover: var(--tag-color-hover, hsl(185, 34%, 43%));
+  --pill-color-remove: var(--tag-color, hsl(185, 34%, 43%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(185, 34%, 43%));
   background-color: var(--pill-background, rgba(72, 141, 147, 0.1));
   border-bottom-color: rgba(72, 141, 147, 0.15);
   border-left-color: rgba(72, 141, 147, 0.15);
@@ -3511,6 +3547,7 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  --font-weight: var(--h1-weight, 300);
   color: var(--h1-color, rgb(48, 43, 93));
 }
 
@@ -3521,6 +3558,7 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  --font-weight: var(--h2-weight, 700);
   color: var(--h2-color, rgb(48, 43, 93));
 }
 
@@ -3529,18 +3567,22 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  --font-weight: var(--h3-weight, 700);
   color: var(--h3-color, rgb(48, 43, 93));
 }
 
 html[saved-theme="light"] body h4 {
+  --font-weight: var(--h4-weight, 700);
   color: var(--h4-color, rgb(48, 43, 93));
 }
 
 html[saved-theme="light"] body h5 {
+  --font-weight: var(--h5-weight, 700);
   color: var(--h5-color, rgb(48, 43, 93));
 }
 
 html[saved-theme="light"] body h6 {
+  --font-weight: var(--h6-weight, 700);
   color: var(--h6-color, rgb(48, 43, 93));
 }
 
@@ -3705,6 +3747,14 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(185, 34%, 43%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(185, 34%, 43%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(185, 34%, 43%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(185, 34%, 43%, 0.15));
+  --pill-color: var(--tag-color, hsl(185, 34%, 43%));
+  --pill-color-hover: var(--tag-color-hover, hsl(185, 34%, 43%));
+  --pill-color-remove: var(--tag-color, hsl(185, 34%, 43%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(185, 34%, 43%));
   background-color: var(--pill-background, rgba(72, 141, 147, 0.1));
   color: var(--pill-color, rgb(72, 141, 147));
 }

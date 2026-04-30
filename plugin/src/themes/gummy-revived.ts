@@ -271,6 +271,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #000000);
   background-color: var(--tab-container-background, rgb(0, 0, 0));
   color: rgb(189, 189, 189);
 }
@@ -290,6 +291,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #000000);
   background-color: var(--tab-container-background, rgb(0, 0, 0));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(189, 189, 189);
@@ -493,6 +495,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #1F1F1F);
   border-bottom-color: rgb(189, 189, 189);
   border-left-color: rgb(189, 189, 189);
   border-right-color: rgb(189, 189, 189);
@@ -2413,6 +2416,8 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
 }
 
 html[saved-theme="dark"] body h1 {
+  --font-weight: var(--h1-weight, 00);
+  --gradient-header: var(--h1-color), var(--chalk-grey-accent), var(--h1-gradient-accent);
   color: var(--h1-color, rgb(221, 221, 221));
   font-family: var(--h1-font, "Peace Sans");
 }
@@ -2423,6 +2428,8 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  --font-weight: var(--h2-weight, 00);
+  --gradient-header: var(--h2-color), var(--chalk-grey-accent), var(--h2-gradient-accent);
   color: var(--h2-color, rgb(221, 221, 221));
   font-family: var(--h2-font, "Peace Sans");
 }
@@ -2433,21 +2440,29 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h3 {
+  --font-weight: var(--h3-weight, 000);
+  --gradient-header: var(--h3-color), var(--chalk-grey-accent), var(--h3-gradient-accent);
   color: var(--h3-color, rgb(221, 221, 221));
   font-family: var(--h3-font, "Peace Sans");
 }
 
 html[saved-theme="dark"] body h4 {
+  --font-weight: var(--h4-weight, 00);
+  --gradient-header: var(--h4-color), var(--chalk-grey-accent), var(--h4-gradient-accent);
   color: var(--h4-color, rgb(221, 221, 221));
   font-family: var(--h4-font, "Peace Sans");
 }
 
 html[saved-theme="dark"] body h5 {
+  --font-weight: var(--h5-weight, 00);
+  --gradient-header: var(--h5-color), var(--chalk-grey-accent), var(--h5-gradient-accent);
   color: var(--h5-color, rgb(221, 221, 221));
   font-family: var(--h5-font, "Peace Sans");
 }
 
 html[saved-theme="dark"] body h6 {
+  --font-weight: var(--h6-weight, 00);
+  --gradient-header: var(--h6-color), var(--chalk-grey-accent), var(--h6-gradient-accent);
   color: var(--h6-color, rgb(221, 221, 221));
   font-family: var(--h6-font, "Peace Sans");
 }
@@ -2965,6 +2980,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #F3F3F3);
   background-color: var(--tab-container-background, rgb(243, 243, 243));
   color: rgb(90, 90, 90);
 }
@@ -2983,6 +2999,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #F3F3F3);
   background-color: var(--tab-container-background, rgb(243, 243, 243));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(90, 90, 90);
@@ -3168,6 +3185,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #FAFAFA);
   border-bottom-color: rgb(90, 90, 90);
   border-left-color: rgb(90, 90, 90);
   border-right-color: rgb(90, 90, 90);
@@ -5073,6 +5091,8 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
 }
 
 html[saved-theme="light"] body h1 {
+  --font-weight: var(--h1-weight, 00);
+  --gradient-header: var(--h1-color), var(--chalk-grey-accent), var(--h1-gradient-accent);
   color: var(--h1-color, rgb(104, 104, 104));
   font-family: var(--h1-font, "Peace Sans");
 }
@@ -5083,6 +5103,8 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  --font-weight: var(--h2-weight, 00);
+  --gradient-header: var(--h2-color), var(--chalk-grey-accent), var(--h2-gradient-accent);
   color: var(--h2-color, rgb(104, 104, 104));
   font-family: var(--h2-font, "Peace Sans");
 }
@@ -5093,21 +5115,29 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  --font-weight: var(--h3-weight, 000);
+  --gradient-header: var(--h3-color), var(--chalk-grey-accent), var(--h3-gradient-accent);
   color: var(--h3-color, rgb(104, 104, 104));
   font-family: var(--h3-font, "Peace Sans");
 }
 
 html[saved-theme="light"] body h4 {
+  --font-weight: var(--h4-weight, 00);
+  --gradient-header: var(--h4-color), var(--chalk-grey-accent), var(--h4-gradient-accent);
   color: var(--h4-color, rgb(104, 104, 104));
   font-family: var(--h4-font, "Peace Sans");
 }
 
 html[saved-theme="light"] body h5 {
+  --font-weight: var(--h5-weight, 00);
+  --gradient-header: var(--h5-color), var(--chalk-grey-accent), var(--h5-gradient-accent);
   color: var(--h5-color, rgb(104, 104, 104));
   font-family: var(--h5-font, "Peace Sans");
 }
 
 html[saved-theme="light"] body h6 {
+  --font-weight: var(--h6-weight, 00);
+  --gradient-header: var(--h6-color), var(--chalk-grey-accent), var(--h6-gradient-accent);
   color: var(--h6-color, rgb(104, 104, 104));
   font-family: var(--h6-font, "Peace Sans");
 }

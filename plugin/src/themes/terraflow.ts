@@ -291,6 +291,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #32302a);
   background-color: var(--glass-bg, rgba(0, 0, 0, 0));
   color: rgb(232, 220, 198);
 }
@@ -310,6 +311,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #32302a);
   background-color: var(--glass-bg, rgba(0, 0, 0, 0));
   border-left-color: rgba(74, 71, 62, 0.533);
   color: rgb(232, 220, 198);
@@ -617,6 +619,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #3a3832);
   border-bottom-color: rgb(232, 220, 198);
   border-left-color: rgb(232, 220, 198);
   border-right-color: rgb(232, 220, 198);
@@ -1251,6 +1254,7 @@ html[saved-theme="dark"] body .callout > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   --callout-color: var(--callout-success, #a8c47a);
+  --callout-color-rgb: var(--callout-success-rgb, 168, 196, 122);
   background: radial-gradient(at 100% 100%, rgba(168, 196, 122, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(168, 196, 122, 0.12) linear-gradient(135deg, rgba(168, 196, 122, 0.05) 0%, rgba(168, 196, 122, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-success-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(168, 196, 122, 0.25) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(168, 196, 122, 0.05) 0%, rgba(168, 196, 122, 0.1) 100%);
@@ -1287,6 +1291,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
   --callout-color: var(--callout-danger, #e74c3c);
+  --callout-color-rgb: var(--callout-danger-rgb, 231, 76, 60);
   background: radial-gradient(at 100% 100%, rgba(231, 76, 60, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(231, 76, 60, 0.12) linear-gradient(135deg, rgba(231, 76, 60, 0.05) 0%, rgba(231, 76, 60, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-danger-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(231, 76, 60, 0.25) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(231, 76, 60, 0.05) 0%, rgba(231, 76, 60, 0.1) 100%);
@@ -1323,6 +1328,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
   --callout-color: var(--callout-danger, #e74c3c);
+  --callout-color-rgb: var(--callout-danger-rgb, 231, 76, 60);
   background: radial-gradient(at 100% 100%, rgba(231, 76, 60, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(231, 76, 60, 0.12) linear-gradient(135deg, rgba(231, 76, 60, 0.05) 0%, rgba(231, 76, 60, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-danger-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(231, 76, 60, 0.25) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(231, 76, 60, 0.05) 0%, rgba(231, 76, 60, 0.1) 100%);
@@ -1359,6 +1365,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
   --callout-color: var(--callout-example, #95b3aa);
+  --callout-color-rgb: var(--callout-example-rgb, 149, 179, 170);
   background: radial-gradient(at 100% 100%, rgba(149, 179, 170, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(149, 179, 170, 0.12) linear-gradient(135deg, rgba(149, 179, 170, 0.05) 0%, rgba(149, 179, 170, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-example-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(149, 179, 170, 0.25) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(149, 179, 170, 0.05) 0%, rgba(149, 179, 170, 0.1) 100%);
@@ -1395,6 +1402,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
   --callout-color: var(--callout-danger, #e74c3c);
+  --callout-color-rgb: var(--callout-danger-rgb, 231, 76, 60);
   background: radial-gradient(at 100% 100%, rgba(231, 76, 60, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(231, 76, 60, 0.12) linear-gradient(135deg, rgba(231, 76, 60, 0.05) 0%, rgba(231, 76, 60, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-danger-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(231, 76, 60, 0.25) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(231, 76, 60, 0.05) 0%, rgba(231, 76, 60, 0.1) 100%);
@@ -1431,6 +1439,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
   --callout-color: var(--callout-info, #e9d5a3);
+  --callout-color-rgb: var(--callout-info-rgb, 233, 213, 163);
   background: radial-gradient(at 100% 100%, rgba(233, 213, 163, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(233, 213, 163, 0.12) linear-gradient(135deg, rgba(233, 213, 163, 0.05) 0%, rgba(233, 213, 163, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-info-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(233, 213, 163, 0.25) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(233, 213, 163, 0.05) 0%, rgba(233, 213, 163, 0.1) 100%);
@@ -1467,6 +1476,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
   --callout-color: var(--callout-note, #f2a882);
+  --callout-color-rgb: var(--callout-note-rgb, 242, 168, 130);
   background: radial-gradient(at 100% 100%, rgba(242, 168, 130, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(242, 168, 130, 0.12) linear-gradient(135deg, rgba(242, 168, 130, 0.05) 0%, rgba(242, 168, 130, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-note-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(242, 168, 130, 0.25) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(242, 168, 130, 0.05) 0%, rgba(242, 168, 130, 0.1) 100%);
@@ -1503,6 +1513,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
   --callout-color: var(--callout-warning, #f39c12);
+  --callout-color-rgb: var(--callout-warning-rgb, 243, 156, 18);
   background: radial-gradient(at 100% 100%, rgba(243, 156, 18, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(243, 156, 18, 0.12) linear-gradient(135deg, rgba(243, 156, 18, 0.05) 0%, rgba(243, 156, 18, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-warning-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(243, 156, 18, 0.25) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(243, 156, 18, 0.05) 0%, rgba(243, 156, 18, 0.1) 100%);
@@ -1539,6 +1550,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
   --callout-color: var(--callout-example, #95b3aa);
+  --callout-color-rgb: var(--callout-example-rgb, 149, 179, 170);
   background: radial-gradient(at 100% 100%, rgba(149, 179, 170, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(149, 179, 170, 0.12) linear-gradient(135deg, rgba(149, 179, 170, 0.05) 0%, rgba(149, 179, 170, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-example-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(149, 179, 170, 0.25) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(149, 179, 170, 0.05) 0%, rgba(149, 179, 170, 0.1) 100%);
@@ -1575,6 +1587,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
   --callout-color: var(--callout-success, #a8c47a);
+  --callout-color-rgb: var(--callout-success-rgb, 168, 196, 122);
   background: radial-gradient(at 100% 100%, rgba(168, 196, 122, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(168, 196, 122, 0.12) linear-gradient(135deg, rgba(168, 196, 122, 0.05) 0%, rgba(168, 196, 122, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-success-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(168, 196, 122, 0.25) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(168, 196, 122, 0.05) 0%, rgba(168, 196, 122, 0.1) 100%);
@@ -1611,6 +1624,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
   --callout-color: var(--callout-success, #a8c47a);
+  --callout-color-rgb: var(--callout-success-rgb, 168, 196, 122);
   background: radial-gradient(at 100% 100%, rgba(168, 196, 122, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(168, 196, 122, 0.12) linear-gradient(135deg, rgba(168, 196, 122, 0.05) 0%, rgba(168, 196, 122, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-success-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(168, 196, 122, 0.25) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(168, 196, 122, 0.05) 0%, rgba(168, 196, 122, 0.1) 100%);
@@ -1647,6 +1661,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
   --callout-color: var(--callout-success, #a8c47a);
+  --callout-color-rgb: var(--callout-success-rgb, 168, 196, 122);
   background: radial-gradient(at 100% 100%, rgba(168, 196, 122, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(168, 196, 122, 0.12) linear-gradient(135deg, rgba(168, 196, 122, 0.05) 0%, rgba(168, 196, 122, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-success-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(168, 196, 122, 0.25) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(168, 196, 122, 0.05) 0%, rgba(168, 196, 122, 0.1) 100%);
@@ -1698,6 +1713,9 @@ html[saved-theme="dark"] body .callout[data-callout="video"] {
   --background-primary-alt: #242424;
   --background-secondary: #32302a;
   --background-secondary-alt: #3a3832;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #f0916f;
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -1772,6 +1790,7 @@ html[saved-theme="dark"] body .callout[data-callout="video"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #e8dcc6;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -1968,6 +1987,7 @@ html[saved-theme="dark"] body .callout[data-callout="video"] {
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning, #f39c12);
+  --callout-color-rgb: var(--callout-warning-rgb, 243, 156, 18);
   background: radial-gradient(at 100% 100%, rgba(243, 156, 18, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(243, 156, 18, 0.12) linear-gradient(135deg, rgba(243, 156, 18, 0.05) 0%, rgba(243, 156, 18, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-warning-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(243, 156, 18, 0.25) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(243, 156, 18, 0.05) 0%, rgba(243, 156, 18, 0.1) 100%);
@@ -2158,6 +2178,14 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(15, 65%, 60%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(15, 65%, 60%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(15, 65%, 60%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(15, 65%, 60%, 0.15));
+  --pill-color: var(--tag-color, #e27a5a);
+  --pill-color-hover: var(--tag-color-hover, #e27a5a);
+  --pill-color-remove: var(--tag-color, #e27a5a);
+  --pill-color-remove-hover: var(--tag-color-hover, #e27a5a);
   background-color: rgba(var(--primary-color-rgb), .18);
   border-bottom-color: rgba(219, 120, 87, 0.15);
   border-bottom-left-radius: 8px;
@@ -2174,6 +2202,8 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  --scale: var(--heading-scale-1, 1.25);
+  --scale-x: var(--heading-scale-x-1, 1.6);
   color: hsl(from var(--heading-primary) h s calc(l * var(--heading-text-multiplier)));
   font-family: var(--heading-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -2183,6 +2213,8 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  --scale: var(--heading-scale-2, 1.1);
+  --scale-x: var(--heading-scale-x-2, 1.5);
   color: hsl(from var(--callout-color) h s calc(l * 1.4));
   font-family: var(--heading-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -2192,21 +2224,29 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h3 {
+  --scale: var(--heading-scale-3, 1.0);
+  --scale-x: var(--heading-scale-x-3, 1.5);
   color: hsl(from var(--callout-color) h s calc(l * 1.4));
   font-family: var(--heading-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
+  --scale: var(--heading-scale-4, 0.8);
+  --scale-x: var(--heading-scale-x-4, 1.2);
   color: hsl(from var(--callout-color) h s calc(l * 1.4));
   font-family: var(--heading-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
+  --scale: var(--heading-scale-5, 0.75);
+  --scale-x: var(--heading-scale-x-5, 1.2);
   color: hsl(from var(--callout-color) h s calc(l * 1.4));
   font-family: var(--heading-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
+  --scale: var(--heading-scale-6, 0.6);
+  --scale-x: var(--heading-scale-x-6, 1.1);
   color: hsl(from var(--callout-color) h s calc(l * 1.4));
   font-family: var(--heading-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -2218,6 +2258,7 @@ html[saved-theme="dark"] body hr {
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-note, #f2a882);
+  --callout-color-rgb: var(--callout-note-rgb, 242, 168, 130);
   border-bottom-color: rgb(232, 220, 198);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 16px;
@@ -2272,6 +2313,9 @@ html[saved-theme="dark"] body footer ul li a {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
+  --nav-collapse-icon-color: var(--folder-text-color, #8ba891);
+  --nav-item-color: var(--folder-text-color, #8ba891);
+  --nav-item-color-hover: var(--folder-text-color, #8ba891);
   background-color: var(--folder-color, rgba(139, 168, 145, 0.12));
   border-bottom-color: rgb(232, 220, 198);
   border-bottom-left-radius: 6px;
@@ -2292,6 +2336,9 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
   color: rgb(139, 168, 145);
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
+  --nav-collapse-icon-color: var(--folder-text-color, #8ba891);
+  --nav-item-color: var(--folder-text-color, #8ba891);
+  --nav-item-color-hover: var(--folder-text-color, #8ba891);
   background-color: var(--folder-color, rgba(139, 168, 145, 0.12));
   border-bottom-color: rgb(232, 220, 198);
   border-bottom-left-radius: 6px;
@@ -2406,6 +2453,14 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(15, 65%, 60%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(15, 65%, 60%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(15, 65%, 60%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(15, 65%, 60%, 0.15));
+  --pill-color: var(--tag-color, #e27a5a);
+  --pill-color-hover: var(--tag-color-hover, #e27a5a);
+  --pill-color-remove: var(--tag-color, #e27a5a);
+  --pill-color-remove-hover: var(--tag-color-hover, #e27a5a);
   background-color: rgba(var(--primary-color-rgb), .18);
   border-radius: 8px;
   color: var(--pill-color, rgb(226, 122, 90));
@@ -2807,6 +2862,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #e6e4da);
   background-color: var(--glass-bg, rgba(0, 0, 0, 0));
   color: rgb(61, 46, 26);
 }
@@ -2826,6 +2882,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #e6e4da);
   background-color: var(--glass-bg, rgba(0, 0, 0, 0));
   border-left-color: rgba(210, 207, 197, 0.533);
   color: rgb(61, 46, 26);
@@ -3132,6 +3189,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #f5efe0);
   border-bottom-color: rgb(61, 46, 26);
   border-left-color: rgb(61, 46, 26);
   border-right-color: rgb(61, 46, 26);
@@ -4119,6 +4177,7 @@ html[saved-theme="light"] body .callout > .callout-content {
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
   --callout-color: var(--callout-success, #798d5d);
+  --callout-color-rgb: var(--callout-success-rgb, 121, 141, 93);
   background: radial-gradient(at 100% 100%, rgba(121, 141, 93, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(121, 141, 93, 0.12) linear-gradient(135deg, rgba(121, 141, 93, 0.01) 0%, rgba(121, 141, 93, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-success-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(121, 141, 93, 0.15) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(121, 141, 93, 0.01) 0%, rgba(121, 141, 93, 0.03) 100%);
@@ -4155,6 +4214,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
   --callout-color: var(--callout-danger, #c0392b);
+  --callout-color-rgb: var(--callout-danger-rgb, 192, 57, 43);
   background: radial-gradient(at 100% 100%, rgba(192, 57, 43, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(192, 57, 43, 0.12) linear-gradient(135deg, rgba(192, 57, 43, 0.01) 0%, rgba(192, 57, 43, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-danger-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(192, 57, 43, 0.15) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(192, 57, 43, 0.01) 0%, rgba(192, 57, 43, 0.03) 100%);
@@ -4191,6 +4251,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
   --callout-color: var(--callout-danger, #c0392b);
+  --callout-color-rgb: var(--callout-danger-rgb, 192, 57, 43);
   background: radial-gradient(at 100% 100%, rgba(192, 57, 43, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(192, 57, 43, 0.12) linear-gradient(135deg, rgba(192, 57, 43, 0.01) 0%, rgba(192, 57, 43, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-danger-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(192, 57, 43, 0.15) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(192, 57, 43, 0.01) 0%, rgba(192, 57, 43, 0.03) 100%);
@@ -4227,6 +4288,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
   --callout-color: var(--callout-example, #779088);
+  --callout-color-rgb: var(--callout-example-rgb, 119, 144, 136);
   background: radial-gradient(at 100% 100%, rgba(119, 144, 136, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(119, 144, 136, 0.12) linear-gradient(135deg, rgba(119, 144, 136, 0.01) 0%, rgba(119, 144, 136, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-example-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(119, 144, 136, 0.15) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(119, 144, 136, 0.01) 0%, rgba(119, 144, 136, 0.03) 100%);
@@ -4263,6 +4325,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
   --callout-color: var(--callout-danger, #c0392b);
+  --callout-color-rgb: var(--callout-danger-rgb, 192, 57, 43);
   background: radial-gradient(at 100% 100%, rgba(192, 57, 43, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(192, 57, 43, 0.12) linear-gradient(135deg, rgba(192, 57, 43, 0.01) 0%, rgba(192, 57, 43, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-danger-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(192, 57, 43, 0.15) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(192, 57, 43, 0.01) 0%, rgba(192, 57, 43, 0.03) 100%);
@@ -4299,6 +4362,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
   --callout-color: var(--callout-info, #d4af37);
+  --callout-color-rgb: var(--callout-info-rgb, 212, 175, 55);
   background: radial-gradient(at 100% 100%, rgba(212, 175, 55, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(212, 175, 55, 0.12) linear-gradient(135deg, rgba(212, 175, 55, 0.01) 0%, rgba(212, 175, 55, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-info-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(212, 175, 55, 0.15) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(212, 175, 55, 0.01) 0%, rgba(212, 175, 55, 0.03) 100%);
@@ -4335,6 +4399,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
   --callout-color: var(--callout-note, #d97756);
+  --callout-color-rgb: var(--callout-note-rgb, 217, 119, 86);
   background: radial-gradient(at 100% 100%, rgba(217, 119, 86, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(217, 119, 86, 0.12) linear-gradient(135deg, rgba(217, 119, 86, 0.01) 0%, rgba(217, 119, 86, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-note-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(217, 119, 86, 0.15) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(217, 119, 86, 0.01) 0%, rgba(217, 119, 86, 0.03) 100%);
@@ -4371,6 +4436,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
   --callout-color: var(--callout-warning, #e67e22);
+  --callout-color-rgb: var(--callout-warning-rgb, 230, 126, 34);
   background: radial-gradient(at 100% 100%, rgba(230, 126, 34, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(230, 126, 34, 0.12) linear-gradient(135deg, rgba(230, 126, 34, 0.01) 0%, rgba(230, 126, 34, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-warning-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(230, 126, 34, 0.15) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(230, 126, 34, 0.01) 0%, rgba(230, 126, 34, 0.03) 100%);
@@ -4407,6 +4473,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
   --callout-color: var(--callout-example, #779088);
+  --callout-color-rgb: var(--callout-example-rgb, 119, 144, 136);
   background: radial-gradient(at 100% 100%, rgba(119, 144, 136, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(119, 144, 136, 0.12) linear-gradient(135deg, rgba(119, 144, 136, 0.01) 0%, rgba(119, 144, 136, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-example-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(119, 144, 136, 0.15) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(119, 144, 136, 0.01) 0%, rgba(119, 144, 136, 0.03) 100%);
@@ -4443,6 +4510,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
   --callout-color: var(--callout-success, #798d5d);
+  --callout-color-rgb: var(--callout-success-rgb, 121, 141, 93);
   background: radial-gradient(at 100% 100%, rgba(121, 141, 93, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(121, 141, 93, 0.12) linear-gradient(135deg, rgba(121, 141, 93, 0.01) 0%, rgba(121, 141, 93, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-success-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(121, 141, 93, 0.15) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(121, 141, 93, 0.01) 0%, rgba(121, 141, 93, 0.03) 100%);
@@ -4479,6 +4547,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
   --callout-color: var(--callout-success, #798d5d);
+  --callout-color-rgb: var(--callout-success-rgb, 121, 141, 93);
   background: radial-gradient(at 100% 100%, rgba(121, 141, 93, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(121, 141, 93, 0.12) linear-gradient(135deg, rgba(121, 141, 93, 0.01) 0%, rgba(121, 141, 93, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-success-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(121, 141, 93, 0.15) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(121, 141, 93, 0.01) 0%, rgba(121, 141, 93, 0.03) 100%);
@@ -4515,6 +4584,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
   --callout-color: var(--callout-success, #798d5d);
+  --callout-color-rgb: var(--callout-success-rgb, 121, 141, 93);
   background: radial-gradient(at 100% 100%, rgba(121, 141, 93, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(121, 141, 93, 0.12) linear-gradient(135deg, rgba(121, 141, 93, 0.01) 0%, rgba(121, 141, 93, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-success-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(121, 141, 93, 0.15) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(121, 141, 93, 0.01) 0%, rgba(121, 141, 93, 0.03) 100%);
@@ -4566,6 +4636,9 @@ html[saved-theme="light"] body .callout[data-callout="video"] {
   --background-primary-alt: #fafafa;
   --background-secondary: #e6e4da;
   --background-secondary-alt: #dfdbd1;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #d97756;
   --blur-background: color-mix(in srgb, #eeece2 65%, transparent) linear-gradient(#eeece2, color-mix(in srgb, #eeece2 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -4640,6 +4713,7 @@ html[saved-theme="light"] body .callout[data-callout="video"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #3d2e1a;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -4834,6 +4908,7 @@ html[saved-theme="light"] body .callout[data-callout="video"] {
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning, #e67e22);
+  --callout-color-rgb: var(--callout-warning-rgb, 230, 126, 34);
   background: radial-gradient(at 100% 100%, rgba(230, 126, 34, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box, rgba(230, 126, 34, 0.12) linear-gradient(135deg, rgba(230, 126, 34, 0.01) 0%, rgba(230, 126, 34, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-warning-rgb), .12);
   background-image: radial-gradient(at 100% 100%, rgba(230, 126, 34, 0.15) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(230, 126, 34, 0.01) 0%, rgba(230, 126, 34, 0.03) 100%);
@@ -5024,6 +5099,14 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(15, 65%, 60%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(15, 65%, 60%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(15, 65%, 60%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(15, 65%, 60%, 0.15));
+  --pill-color: var(--tag-color, #ae4e36);
+  --pill-color-hover: var(--tag-color-hover, #ae4e36);
+  --pill-color-remove: var(--tag-color, #ae4e36);
+  --pill-color-remove-hover: var(--tag-color-hover, #ae4e36);
   background-color: rgba(var(--primary-color-rgb), .15);
   border-bottom-color: rgba(219, 120, 87, 0.15);
   border-bottom-left-radius: 8px;
@@ -5040,6 +5123,8 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  --scale: var(--heading-scale-1, 1.25);
+  --scale-x: var(--heading-scale-x-1, 1.6);
   color: hsl(from var(--heading-primary) h s calc(l * var(--heading-text-multiplier)));
   font-family: var(--heading-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -5049,6 +5134,8 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  --scale: var(--heading-scale-2, 1.1);
+  --scale-x: var(--heading-scale-x-2, 1.5);
   color: hsl(from var(--callout-color) h s calc(l * 1.4));
   font-family: var(--heading-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -5058,21 +5145,29 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  --scale: var(--heading-scale-3, 1.0);
+  --scale-x: var(--heading-scale-x-3, 1.5);
   color: hsl(from var(--callout-color) h s calc(l * 1.4));
   font-family: var(--heading-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
+  --scale: var(--heading-scale-4, 0.8);
+  --scale-x: var(--heading-scale-x-4, 1.2);
   color: hsl(from var(--callout-color) h s calc(l * 1.4));
   font-family: var(--heading-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
+  --scale: var(--heading-scale-5, 0.75);
+  --scale-x: var(--heading-scale-x-5, 1.2);
   color: hsl(from var(--callout-color) h s calc(l * 1.4));
   font-family: var(--heading-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
+  --scale: var(--heading-scale-6, 0.6);
+  --scale-x: var(--heading-scale-x-6, 1.1);
   color: hsl(from var(--callout-color) h s calc(l * 1.4));
   font-family: var(--heading-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -5084,6 +5179,7 @@ html[saved-theme="light"] body hr {
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-note, #d97756);
+  --callout-color-rgb: var(--callout-note-rgb, 217, 119, 86);
   border-bottom-color: rgb(61, 46, 26);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 16px;
@@ -5138,6 +5234,9 @@ html[saved-theme="light"] body footer ul li a {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
+  --nav-collapse-icon-color: var(--folder-text-color, #b8692c);
+  --nav-item-color: var(--folder-text-color, #b8692c);
+  --nav-item-color-hover: var(--folder-text-color, #b8692c);
   background-color: var(--folder-color, rgba(184, 105, 44, 0.12));
   border-bottom-color: rgb(61, 46, 26);
   border-bottom-left-radius: 6px;
@@ -5158,6 +5257,9 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
   color: rgb(184, 105, 44);
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
+  --nav-collapse-icon-color: var(--folder-text-color, #b8692c);
+  --nav-item-color: var(--folder-text-color, #b8692c);
+  --nav-item-color-hover: var(--folder-text-color, #b8692c);
   background-color: var(--folder-color, rgba(184, 105, 44, 0.12));
   border-bottom-color: rgb(61, 46, 26);
   border-bottom-left-radius: 6px;
@@ -5272,6 +5374,14 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(15, 65%, 60%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(15, 65%, 60%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(15, 65%, 60%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(15, 65%, 60%, 0.15));
+  --pill-color: var(--tag-color, #ae4e36);
+  --pill-color-hover: var(--tag-color-hover, #ae4e36);
+  --pill-color-remove: var(--tag-color, #ae4e36);
+  --pill-color-remove-hover: var(--tag-color-hover, #ae4e36);
   background-color: rgba(var(--primary-color-rgb), .15);
   border-radius: 8px;
   color: var(--pill-color, rgb(174, 78, 54));

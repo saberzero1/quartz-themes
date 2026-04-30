@@ -188,6 +188,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #252526);
   background-color: var(--tab-container-background, rgb(37, 37, 38));
 }
 
@@ -200,6 +201,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #252526);
   background-color: var(--tab-container-background, rgb(37, 37, 38));
   border-left-color: rgb(106, 106, 106);
 }
@@ -291,6 +293,10 @@ html body del {
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
 }
 
+html body footer {
+  --bar-height: calc(22px + var(--bar-vertical-padding)*2);
+}
+
 html body li.task-list-item input[type="checkbox"] {
   border-color: rgb(81, 86, 99);
 }
@@ -378,6 +384,9 @@ html body pre:has(> code) {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+}`,
+    images: `html body figure {
+  --code-background: var(--ec-frm-edBg, #1e1e1e);
 }`,
     embeds: `html body .file-embed {
   background-color: var(--background-primary-alt, rgb(30, 30, 30));
@@ -761,6 +770,10 @@ html body .search > .search-container > .search-space > input {
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #569cd6);
+  --pill-color-hover: var(--tag-color-hover, #569cd6);
+  --pill-color-remove: var(--tag-color, #569cd6);
+  --pill-color-remove-hover: var(--tag-color-hover, #569cd6);
   border-bottom-left-radius: 31.5px;
   border-bottom-right-radius: 31.5px;
   border-top-left-radius: 31.5px;
@@ -825,6 +838,7 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
 }`,
     footer: `html body footer {
+  --bar-height: calc(22px + var(--bar-vertical-padding)*2);
   background-color: var(--status-bar-background, rgb(37, 37, 38));
   border-bottom-color: rgb(24, 25, 30);
   border-bottom-width: 1px;
@@ -882,6 +896,10 @@ html body .note-properties {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, #569cd6);
+  --pill-color-hover: var(--tag-color-hover, #569cd6);
+  --pill-color-remove: var(--tag-color, #569cd6);
+  --pill-color-remove-hover: var(--tag-color-hover, #569cd6);
   border-radius: 31.5px;
   color: var(--pill-color, rgb(86, 156, 214));
 }`,
@@ -893,6 +911,7 @@ html body .stacked-page-header {
   background-color: var(--tab-container-background, rgb(53, 53, 53));
 }`,
     misc: `html body .navigation-progress {
+  --bar-height: calc(22px + var(--bar-vertical-padding)*2);
   background-color: var(--status-bar-background, rgb(37, 37, 38));
 }
 

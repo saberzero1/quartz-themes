@@ -274,6 +274,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #191717);
   background-color: var(--tab-container-background, rgb(25, 23, 23));
   color: rgb(234, 218, 217);
 }
@@ -293,6 +294,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #191717);
   background-color: var(--tab-container-background, rgb(25, 23, 23));
   border-left-color: rgb(83, 79, 78);
   color: rgb(234, 218, 217);
@@ -546,6 +548,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #1a1a1a);
   border-bottom-color: rgb(234, 218, 217);
   border-left-color: rgb(234, 218, 217);
   border-right-color: rgb(234, 218, 217);
@@ -1482,6 +1485,10 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #fe750e);
+  --pill-color-hover: var(--tag-color-hover, #fe750e);
+  --pill-color-remove: var(--tag-color, #fe750e);
+  --pill-color-remove-hover: var(--tag-color-hover, #fe750e);
   font-family: "??", "??", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -1490,6 +1497,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  --font-weight: var(--h1-weight, 500);
   color: var(--text-title-h1, rgb(188, 1, 4));
   font-family: var(--h1-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
 }
@@ -1501,6 +1509,7 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  --font-weight: var(--h2-weight, 500);
   color: var(--text-title-h2, rgb(234, 79, 13));
   font-family: var(--h2-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
 }
@@ -1511,21 +1520,25 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h3 {
+  --font-weight: var(--h3-weight, 500);
   color: var(--text-title-h3, rgb(254, 117, 14));
   font-family: var(--h3-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
 }
 
 html[saved-theme="dark"] body h4 {
+  --font-weight: var(--h4-weight, 500);
   color: var(--text-title-h4, rgb(254, 163, 15));
   font-family: var(--h4-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
 }
 
 html[saved-theme="dark"] body h5 {
+  --font-weight: var(--h5-weight, 500);
   color: var(--text-title-h5, rgb(192, 201, 10));
   font-family: var(--h5-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
 }
 
 html[saved-theme="dark"] body h6 {
+  --font-weight: var(--h6-weight, 500);
   color: var(--text-title-h6, rgb(39, 202, 199));
   font-family: var(--h6-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
 }
@@ -1635,6 +1648,10 @@ html[saved-theme="dark"] body .note-properties {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #fe750e);
+  --pill-color-hover: var(--tag-color-hover, #fe750e);
+  --pill-color-remove: var(--tag-color, #fe750e);
+  --pill-color-remove-hover: var(--tag-color-hover, #fe750e);
   color: var(--pill-color, rgb(254, 117, 14));
 }
 
@@ -2033,6 +2050,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #d0baa6);
   background-color: var(--tab-container-background, rgb(208, 186, 166));
   color: rgb(30, 30, 30);
 }
@@ -2052,6 +2070,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #d0baa6);
   background-color: var(--tab-container-background, rgb(208, 186, 166));
   border-left-color: rgb(83, 79, 78);
   color: rgb(30, 30, 30);
@@ -2308,6 +2327,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #b9a693);
   border-bottom-color: rgb(30, 30, 30);
   border-left-color: rgb(30, 30, 30);
   border-right-color: rgb(30, 30, 30);
@@ -3248,6 +3268,10 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #fe750e);
+  --pill-color-hover: var(--tag-color-hover, #fe750e);
+  --pill-color-remove: var(--tag-color, #fe750e);
+  --pill-color-remove-hover: var(--tag-color-hover, #fe750e);
   font-family: "??", "??", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -3256,6 +3280,7 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  --font-weight: var(--h1-weight, 500);
   color: var(--text-title-h1, rgb(188, 1, 4));
   font-family: var(--h1-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
 }
@@ -3267,6 +3292,7 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  --font-weight: var(--h2-weight, 500);
   color: var(--text-title-h2, rgb(234, 79, 13));
   font-family: var(--h2-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
 }
@@ -3277,21 +3303,25 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  --font-weight: var(--h3-weight, 500);
   color: var(--text-title-h3, rgb(254, 117, 14));
   font-family: var(--h3-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
 }
 
 html[saved-theme="light"] body h4 {
+  --font-weight: var(--h4-weight, 500);
   color: var(--text-title-h4, rgb(254, 163, 15));
   font-family: var(--h4-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
 }
 
 html[saved-theme="light"] body h5 {
+  --font-weight: var(--h5-weight, 500);
   color: var(--text-title-h5, rgb(192, 201, 10));
   font-family: var(--h5-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
 }
 
 html[saved-theme="light"] body h6 {
+  --font-weight: var(--h6-weight, 500);
   color: var(--text-title-h6, rgb(39, 202, 199));
   font-family: var(--h6-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
 }
@@ -3459,6 +3489,10 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #fe750e);
+  --pill-color-hover: var(--tag-color-hover, #fe750e);
+  --pill-color-remove: var(--tag-color, #fe750e);
+  --pill-color-remove-hover: var(--tag-color-hover, #fe750e);
   color: var(--pill-color, rgb(254, 117, 14));
 }
 

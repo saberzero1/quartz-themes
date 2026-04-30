@@ -520,6 +520,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(216, 5%, 12.5%));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   color: rgb(204, 212, 224);
 }
@@ -539,6 +540,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(216, 5%, 12.5%));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgba(101, 110, 124, 0.2);
   color: rgb(204, 212, 224);
@@ -577,6 +579,20 @@ html body del {
   color: rgb(204, 212, 224);
   outline: rgb(204, 212, 224) none 0px;
   text-decoration-color: rgb(204, 212, 224);
+}
+
+html body footer {
+  --icon-color: var(--text-muted, hsla(216, 10%, 44.1%));
+  --icon-color-hover: var(--text-muted, hsla(216, 10%, 44.1%));
+  --status-bar-text-color: var(--text-muted, hsla(216, 10%, 44.1%));
+  --tab-text-color: var(--text-faint, hsla(216, 10%, 44.1%));
+  --tab-text-color-active: var(--text-muted, hsla(216, 10%, 44.1%));
+  --tab-text-color-focused: var(--text-muted, hsla(216, 10%, 44.1%));
+  --tab-text-color-focused-active: var(--text-muted, hsla(216, 10%, 44.1%));
+  --text-faint: var(--on-border-dark, hsla(216, 10%, 44.1%));
+  --text-muted: var(--on-border-dark, hsla(216, 10%, 44.1%));
+  --titlebar-text-color: var(--text-muted, hsla(216, 10%, 44.1%));
+  --titlebar-text-color-focused: var(--text-muted, hsla(216, 10%, 44.1%));
 }
 
 html body h1.article-title {
@@ -756,6 +772,7 @@ html body h2 {
             3.57143%,
             20.41667%);
   --flair-color: hsl(216, 24%, 84%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -1169,6 +1186,7 @@ html body h3 {
             3.57143%,
             20.41667%);
   --flair-color: hsl(216, 24%, 84%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -1582,6 +1600,7 @@ html body h4 {
             3.57143%,
             20.41667%);
   --flair-color: hsl(216, 24%, 84%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -1964,6 +1983,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"));
   border-bottom-color: rgb(204, 212, 224);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -3969,6 +3989,22 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(216,
+        25%,
+        49%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(216,
+        25%,
+        49%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(216,
+        25%,
+        49%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(216,
+        25%,
+        49%, 0.15));
+  --pill-color: var(--tag-color, hsl(216, 25%, 45.2%));
+  --pill-color-hover: var(--tag-color-hover, hsl(216, 25%, 45.2%));
+  --pill-color-remove: var(--tag-color, hsl(216, 25%, 45.2%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(216, 25%, 45.2%));
   background-color: var(--pill-background, rgba(94, 119, 156, 0.1));
   border-bottom-color: rgba(94, 119, 156, 0.15);
   border-left-color: rgba(94, 119, 156, 0.15);
@@ -3990,6 +4026,7 @@ html body h1.article-title {
 }
 
 html body h2 {
+  --font-weight: var(--h2-weight, 675);
   color: var(--h2-color, rgb(13, 200, 242));
 }
 
@@ -3998,18 +4035,22 @@ html body h2.page-title, html h2.page-title a {
 }
 
 html body h3 {
+  --font-weight: var(--h3-weight, 650);
   color: var(--h3-color, rgb(114, 213, 165));
 }
 
 html body h4 {
+  --font-weight: var(--h4-weight, 625);
   color: var(--h4-color, rgb(185, 195, 223));
 }
 
 html body h5 {
+  --font-weight: var(--h5-weight, 600);
   color: var(--h5-color, rgb(185, 195, 223));
 }
 
 html body h6 {
+  --font-weight: var(--h6-weight, 575);
   color: var(--h6-color, rgb(185, 195, 223));
 }
 
@@ -4056,6 +4097,17 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   cursor: var(--cursor, pointer);
 }`,
     footer: `html body footer {
+  --icon-color: var(--text-muted, hsla(216, 10%, 44.1%));
+  --icon-color-hover: var(--text-muted, hsla(216, 10%, 44.1%));
+  --status-bar-text-color: var(--text-muted, hsla(216, 10%, 44.1%));
+  --tab-text-color: var(--text-faint, hsla(216, 10%, 44.1%));
+  --tab-text-color-active: var(--text-muted, hsla(216, 10%, 44.1%));
+  --tab-text-color-focused: var(--text-muted, hsla(216, 10%, 44.1%));
+  --tab-text-color-focused-active: var(--text-muted, hsla(216, 10%, 44.1%));
+  --text-faint: var(--on-border-dark, hsla(216, 10%, 44.1%));
+  --text-muted: var(--on-border-dark, hsla(216, 10%, 44.1%));
+  --titlebar-text-color: var(--text-muted, hsla(216, 10%, 44.1%));
+  --titlebar-text-color-focused: var(--text-muted, hsla(216, 10%, 44.1%));
   background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
@@ -4194,10 +4246,27 @@ html body .note-properties-key {
 }
 
 html body .note-properties-row {
+  --pill-radius: var(--radius-s, 0px);
   border-color: rgb(171, 181, 196);
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(216,
+        25%,
+        49%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(216,
+        25%,
+        49%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(216,
+        25%,
+        49%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(216,
+        25%,
+        49%, 0.15));
+  --pill-color: var(--tag-color, hsl(216, 25%, 45.2%));
+  --pill-color-hover: var(--tag-color-hover, hsl(216, 25%, 45.2%));
+  --pill-color-remove: var(--tag-color, hsl(216, 25%, 45.2%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(216, 25%, 45.2%));
   background-color: var(--pill-background, rgba(94, 119, 156, 0.1));
   color: var(--pill-color, rgb(86, 109, 144));
 }
@@ -4223,6 +4292,17 @@ html body ol.overflow {
 }
 
 html body .stacked-page-header {
+  --icon-color: var(--text-muted, hsla(216, 10%, 44.1%));
+  --icon-color-hover: var(--text-muted, hsla(216, 10%, 44.1%));
+  --status-bar-text-color: var(--text-muted, hsla(216, 10%, 44.1%));
+  --tab-text-color: var(--text-faint, hsla(216, 10%, 44.1%));
+  --tab-text-color-active: var(--text-muted, hsla(216, 10%, 44.1%));
+  --tab-text-color-focused: var(--text-muted, hsla(216, 10%, 44.1%));
+  --tab-text-color-focused-active: var(--text-muted, hsla(216, 10%, 44.1%));
+  --text-faint: var(--on-border-dark, hsla(216, 10%, 44.1%));
+  --text-muted: var(--on-border-dark, hsla(216, 10%, 44.1%));
+  --titlebar-text-color: var(--text-muted, hsla(216, 10%, 44.1%));
+  --titlebar-text-color-focused: var(--text-muted, hsla(216, 10%, 44.1%));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
@@ -4238,6 +4318,17 @@ html body .stacked-page.active {
 }
 
 html body .navigation-progress {
+  --icon-color: var(--text-muted, hsla(216, 10%, 44.1%));
+  --icon-color-hover: var(--text-muted, hsla(216, 10%, 44.1%));
+  --status-bar-text-color: var(--text-muted, hsla(216, 10%, 44.1%));
+  --tab-text-color: var(--text-faint, hsla(216, 10%, 44.1%));
+  --tab-text-color-active: var(--text-muted, hsla(216, 10%, 44.1%));
+  --tab-text-color-focused: var(--text-muted, hsla(216, 10%, 44.1%));
+  --tab-text-color-focused-active: var(--text-muted, hsla(216, 10%, 44.1%));
+  --text-faint: var(--on-border-dark, hsla(216, 10%, 44.1%));
+  --text-muted: var(--on-border-dark, hsla(216, 10%, 44.1%));
+  --titlebar-text-color: var(--text-muted, hsla(216, 10%, 44.1%));
+  --titlebar-text-color-focused: var(--text-muted, hsla(216, 10%, 44.1%));
   background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
 }
 

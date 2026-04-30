@@ -260,6 +260,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #413632);
   background-color: var(--background-secondary, rgb(65, 54, 50));
   color: rgb(204, 194, 183);
 }
@@ -279,6 +280,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #413632);
   background-color: var(--background-secondary, rgb(65, 54, 50));
   border-left-color: rgb(80, 68, 49);
   color: rgb(204, 194, 183);
@@ -527,6 +529,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #2b2723);
   background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(204, 194, 183);
   border-left-color: rgb(204, 194, 183);
@@ -1251,6 +1254,9 @@ html[saved-theme="dark"] body .callout[data-callout="col"] {
   --background-primary-alt: #2b2723;
   --background-secondary: #413632;
   --background-secondary-alt: #504431;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #ba945f;
   --blur-background: color-mix(in srgb, #504431 65%, transparent) linear-gradient(#504431, color-mix(in srgb, #504431 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -1325,6 +1331,7 @@ html[saved-theme="dark"] body .callout[data-callout="col"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #504431;
   --flair-color: #ccc2b7;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', "CMU Typewriter Text";
   --font-mermaid: '??', '??', "CMU Typewriter Text";
   --font-monospace: '??', '??', "JetBrains Mono";
@@ -1535,6 +1542,9 @@ html[saved-theme="dark"] body .callout[data-callout="cont"] {
   --background-primary-alt: #2b2723;
   --background-secondary: #413632;
   --background-secondary-alt: #504431;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #ba945f;
   --blur-background: color-mix(in srgb, #504431 65%, transparent) linear-gradient(#504431, color-mix(in srgb, #504431 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -1609,6 +1619,7 @@ html[saved-theme="dark"] body .callout[data-callout="cont"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #504431;
   --flair-color: #ccc2b7;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', "CMU Typewriter Text";
   --font-mermaid: '??', '??', "CMU Typewriter Text";
   --font-monospace: '??', '??', "JetBrains Mono";
@@ -1814,6 +1825,9 @@ html[saved-theme="dark"] body .callout[data-callout="container"] {
   --background-primary-alt: #2b2723;
   --background-secondary: #413632;
   --background-secondary-alt: #504431;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #ba945f;
   --blur-background: color-mix(in srgb, #504431 65%, transparent) linear-gradient(#504431, color-mix(in srgb, #504431 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -1888,6 +1902,7 @@ html[saved-theme="dark"] body .callout[data-callout="container"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #504431;
   --flair-color: #ccc2b7;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', "CMU Typewriter Text";
   --font-mermaid: '??', '??', "CMU Typewriter Text";
   --font-monospace: '??', '??', "JetBrains Mono";
@@ -2570,6 +2585,11 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #ba945f);
+  --pill-color-hover: var(--tag-color-hover, #ba945f);
+  --pill-color-remove: var(--tag-color, #ba945f);
+  --pill-color-remove-hover: var(--tag-color-hover, #ba945f);
+  --pill-radius: var(--tag-radius, 4px);
   background-color: var(--background-secondary, rgba(138, 92, 245, 0.1));
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -2791,6 +2811,7 @@ html[saved-theme="dark"] body .canvas-sidebar {
   color: var(--table-header-color, rgb(204, 194, 183));
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
+  --input-height: var(--metadata-input-height, 1.25rem);
   background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(80, 68, 49);
   border-left-color: rgb(80, 68, 49);
@@ -2818,6 +2839,7 @@ html[saved-theme="dark"] body .metadata-properties {
 }
 
 html[saved-theme="dark"] body .note-properties {
+  --input-height: var(--metadata-input-height, 1.25rem);
   background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(80, 68, 49);
 }
@@ -2831,6 +2853,11 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #ba945f);
+  --pill-color-hover: var(--tag-color-hover, #ba945f);
+  --pill-color-remove: var(--tag-color, #ba945f);
+  --pill-color-remove-hover: var(--tag-color-hover, #ba945f);
+  --pill-radius: var(--tag-radius, 4px);
   background-color: var(--background-secondary, rgba(138, 92, 245, 0.1));
   border-radius: 4px;
   color: var(--pill-color, rgb(186, 148, 95));
@@ -2857,6 +2884,11 @@ html[saved-theme="dark"] body ol.overflow {
 }
 
 html[saved-theme="dark"] body .stacked-page-header {
+  --icon-color: var(--color-base-40, #b2a699);
+  --nav-collapse-icon-color: var(--icon-color, #868074);
+  --nav-item-color: var(--color-base-40, #b2a699);
+  --nav-item-color-active: var(--color-base-40, #ccc2b7);
+  --search-icon-color: var(--icon-color, #b2a699);
   background-color: var(--background-secondary, rgb(65, 54, 50));
 }
 
@@ -3248,6 +3280,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #dabb9a);
   background-color: var(--background-secondary, rgb(218, 187, 154));
   color: rgb(95, 79, 73);
 }
@@ -3267,6 +3300,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #dabb9a);
   background-color: var(--background-secondary, rgb(218, 187, 154));
   border-left-color: rgb(198, 165, 127);
   color: rgb(95, 79, 73);
@@ -3513,6 +3547,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #cbaa87);
   background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(95, 79, 73);
   border-left-color: rgb(95, 79, 73);
@@ -4269,6 +4304,9 @@ html[saved-theme="light"] body .callout[data-callout="col"] {
   --background-primary-alt: #daba97;
   --background-secondary: #dabb9a;
   --background-secondary-alt: #cbaa87;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #800000;
   --blur-background: color-mix(in srgb, #e1c4a6 65%, transparent) linear-gradient(#e1c4a6, color-mix(in srgb, #e1c4a6 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -4342,6 +4380,7 @@ html[saved-theme="light"] body .callout[data-callout="col"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #e1c4a6;
   --flair-color: #5f4f49;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', "CMU Typewriter Text";
   --font-mermaid: '??', '??', "CMU Typewriter Text";
   --font-monospace: '??', '??', "JetBrains Mono";
@@ -4550,6 +4589,9 @@ html[saved-theme="light"] body .callout[data-callout="cont"] {
   --background-primary-alt: #daba97;
   --background-secondary: #dabb9a;
   --background-secondary-alt: #cbaa87;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #800000;
   --blur-background: color-mix(in srgb, #e1c4a6 65%, transparent) linear-gradient(#e1c4a6, color-mix(in srgb, #e1c4a6 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -4623,6 +4665,7 @@ html[saved-theme="light"] body .callout[data-callout="cont"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #e1c4a6;
   --flair-color: #5f4f49;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', "CMU Typewriter Text";
   --font-mermaid: '??', '??', "CMU Typewriter Text";
   --font-monospace: '??', '??', "JetBrains Mono";
@@ -4826,6 +4869,9 @@ html[saved-theme="light"] body .callout[data-callout="container"] {
   --background-primary-alt: #daba97;
   --background-secondary: #dabb9a;
   --background-secondary-alt: #cbaa87;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #800000;
   --blur-background: color-mix(in srgb, #e1c4a6 65%, transparent) linear-gradient(#e1c4a6, color-mix(in srgb, #e1c4a6 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -4899,6 +4945,7 @@ html[saved-theme="light"] body .callout[data-callout="container"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #e1c4a6;
   --flair-color: #5f4f49;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', "CMU Typewriter Text";
   --font-mermaid: '??', '??', "CMU Typewriter Text";
   --font-monospace: '??', '??', "JetBrains Mono";
@@ -5707,6 +5754,11 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #800000);
+  --pill-color-hover: var(--tag-color-hover, #800000);
+  --pill-color-remove: var(--tag-color, #800000);
+  --pill-color-remove-hover: var(--tag-color-hover, #800000);
+  --pill-radius: var(--tag-radius, 4px);
   background-color: var(--background-secondary, rgba(138, 92, 245, 0.1));
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -5931,6 +5983,7 @@ html[saved-theme="light"] body .canvas-sidebar {
   color: var(--table-header-color, rgb(95, 79, 73));
 }`,
     properties: `html[saved-theme="light"] body .metadata {
+  --input-height: var(--metadata-input-height, 1.25rem);
   background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(198, 165, 127);
   border-left-color: rgb(198, 165, 127);
@@ -5958,6 +6011,7 @@ html[saved-theme="light"] body .metadata-properties {
 }
 
 html[saved-theme="light"] body .note-properties {
+  --input-height: var(--metadata-input-height, 1.25rem);
   background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(198, 165, 127);
 }
@@ -5971,6 +6025,11 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #800000);
+  --pill-color-hover: var(--tag-color-hover, #800000);
+  --pill-color-remove: var(--tag-color, #800000);
+  --pill-color-remove-hover: var(--tag-color-hover, #800000);
+  --pill-radius: var(--tag-radius, 4px);
   background-color: var(--background-secondary, rgba(138, 92, 245, 0.1));
   border-radius: 4px;
   color: var(--pill-color, rgb(128, 0, 0));
@@ -5997,6 +6056,11 @@ html[saved-theme="light"] body ol.overflow {
 }
 
 html[saved-theme="light"] body .stacked-page-header {
+  --icon-color: var(--color-base-40, #5b4f4a);
+  --nav-collapse-icon-color: var(--icon-color, #7a6d68);
+  --nav-item-color: var(--color-base-40, #5b4f4a);
+  --nav-item-color-active: var(--color-base-40, #5f4f49);
+  --search-icon-color: var(--icon-color, #5b4f4a);
   background-color: var(--background-secondary, rgb(218, 187, 154));
 }
 

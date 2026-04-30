@@ -527,6 +527,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(200, 38%, 26%));
   background-color: var(--tab-container-background, rgb(41, 75, 91));
   color: rgb(247, 246, 243);
 }
@@ -546,6 +547,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(200, 38%, 26%));
   background-color: var(--tab-container-background, rgb(41, 75, 91));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(247, 246, 243);
@@ -759,6 +761,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, hsl(200, 34%, 34%));
   border-bottom-color: rgb(247, 246, 243);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -2092,6 +2095,14 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(48, 52%, 52%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(48, 52%, 52%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(48, 52%, 52%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(48, 52%, 52%, 0.15));
+  --pill-color: var(--tag-color, hsl(48, 52%, 52%));
+  --pill-color-hover: var(--tag-color-hover, hsl(48, 52%, 52%));
+  --pill-color-remove: var(--tag-color, hsl(48, 52%, 52%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(48, 52%, 52%));
   background-color: var(--grotto-properties-color, rgb(247, 246, 243));
   border-bottom-color: rgb(247, 246, 243);
   border-bottom-left-radius: 0px;
@@ -2346,6 +2357,14 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(48, 52%, 52%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(48, 52%, 52%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(48, 52%, 52%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(48, 52%, 52%, 0.15));
+  --pill-color: var(--tag-color, hsl(48, 52%, 52%));
+  --pill-color-hover: var(--tag-color-hover, hsl(48, 52%, 52%));
+  --pill-color-remove: var(--tag-color, hsl(48, 52%, 52%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(48, 52%, 52%));
   background-color: var(--grotto-properties-color, rgb(247, 246, 243));
   border-radius: 0px;
   color: var(--background-primary, rgb(57, 97, 116));
@@ -2991,6 +3010,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(48, 30%, 86%));
   background-color: var(--tab-container-background, rgb(230, 226, 209));
   color: rgb(57, 97, 116);
 }
@@ -3010,6 +3030,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(48, 30%, 86%));
   background-color: var(--tab-container-background, rgb(230, 226, 209));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(57, 97, 116);
@@ -3223,6 +3244,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, hsl(48, 30%, 92%));
   border-bottom-color: rgb(57, 97, 116);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -4556,6 +4578,14 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(200, 34%, 34%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(200, 34%, 34%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(200, 34%, 34%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(200, 34%, 34%, 0.15));
+  --pill-color: var(--tag-color, hsl(200, 34%, 34%));
+  --pill-color-hover: var(--tag-color-hover, hsl(200, 34%, 34%));
+  --pill-color-remove: var(--tag-color, hsl(200, 34%, 34%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(200, 34%, 34%));
   background-color: var(--grotto-properties-color, rgb(57, 97, 116));
   border-bottom-color: rgb(57, 97, 116);
   border-bottom-left-radius: 0px;
@@ -4810,6 +4840,14 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(200, 34%, 34%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(200, 34%, 34%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(200, 34%, 34%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(200, 34%, 34%, 0.15));
+  --pill-color: var(--tag-color, hsl(200, 34%, 34%));
+  --pill-color-hover: var(--tag-color-hover, hsl(200, 34%, 34%));
+  --pill-color-remove: var(--tag-color, hsl(200, 34%, 34%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(200, 34%, 34%));
   background-color: var(--grotto-properties-color, rgb(57, 97, 116));
   border-radius: 0px;
   color: var(--background-primary, rgb(241, 238, 228));

@@ -76,8 +76,13 @@ function extractClassSettings(themeSlug, styleSettings) {
   for (const classId of classSettingIds) {
     try {
       const [general, dark, light] = extractClassToggleCss(css, classId);
-      const combined = [general, dark, light].filter(Boolean).join("\n");
-      if (combined) result[classId] = combined;
+      if (general || dark || light) {
+        const entry = {};
+        if (general) entry.general = general;
+        if (dark) entry.dark = dark;
+        if (light) entry.light = light;
+        result[classId] = entry;
+      }
     } catch {
       // Malformed CSS — skip this class setting
     }
@@ -852,6 +857,40 @@ function buildModeCSS(data, mode, bothModes, config, aspectMap, warnings) {
       }
       propMap.set(prop, normalized);
     }
+
+    // Bridge declarations: emit custom properties (--*) from the extracted
+    // data that contain var() references and differ from the body baseline.
+    // These are theme-authored variable bridges (e.g. em sets --italic-color
+    // to rgb(var(--ctp-italic))) that are not in the config property whitelist
+    // but are essential for Style Settings overrides to propagate correctly.
+    // Skip body/html selectors — their vars are already in baseVars/:root.
+    const obsidianSel = mapping.obsidianSelector;
+    if (/^(html|body)\b/.test(obsidianSel)) return;
+    for (const [prop, value] of Object.entries(style)) {
+      if (
+        !prop.startsWith("--") ||
+        typeof value !== "string" ||
+        !value.includes("var(")
+      ) {
+        continue;
+      }
+      // Skip if this property already matches the body/root baseline value
+      if (baseVars[prop] === value) continue;
+      let selectorMap = aspectSelectors.get(aspect);
+      if (!selectorMap) {
+        selectorMap = new Map();
+        aspectSelectors.set(aspect, selectorMap);
+      }
+      let propMap = selectorMap.get(selector);
+      if (!propMap) {
+        propMap = new Map();
+        selectorMap.set(selector, propMap);
+      }
+      // Don't overwrite if already set by the config property whitelist
+      if (!propMap.has(prop)) {
+        propMap.set(prop, value);
+      }
+    }
   });
 
   const aspectCSS = {};
@@ -973,10 +1012,13 @@ function renderThemeModule(themeData) {
     Object.keys(themeData.classSettings).length > 0
   ) {
     lines.push("  classSettings: {");
-    for (const [className, css] of Object.entries(themeData.classSettings)) {
-      lines.push(
-        `    ${JSON.stringify(className)}: ${toTemplateLiteral(css)},`,
-      );
+    for (const [className, entry] of Object.entries(themeData.classSettings)) {
+      const parts = [];
+      if (entry.general)
+        parts.push(`general: ${toTemplateLiteral(entry.general)}`);
+      if (entry.dark) parts.push(`dark: ${toTemplateLiteral(entry.dark)}`);
+      if (entry.light) parts.push(`light: ${toTemplateLiteral(entry.light)}`);
+      lines.push(`    ${JSON.stringify(className)}: { ${parts.join(", ")} },`);
     }
     lines.push("  },");
   }
@@ -1319,9 +1361,10 @@ async function main() {
       );
     }
 
-    const allStyleSettings = cssSettingsBlocks
-      ? cssSettingsBlocks.flatMap((b) => b?.settings ?? [])
-      : (themeMeta.style_settings?.settings ?? []);
+    const allStyleSettings =
+      cssSettingsBlocks && cssSettingsBlocks.length > 0
+        ? cssSettingsBlocks.flatMap((b) => b?.settings ?? [])
+        : (themeMeta.style_settings?.settings ?? []);
     const classSettings = extractClassSettings(themeId, allStyleSettings);
 
     const moduleContent = renderThemeModule({

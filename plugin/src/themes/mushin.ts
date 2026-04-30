@@ -208,6 +208,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #2a2a2a);
   background-color: var(--tab-container-background, rgb(42, 42, 42));
   color: rgb(232, 232, 232);
 }
@@ -227,6 +228,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #2a2a2a);
   background-color: var(--tab-container-background, rgb(42, 42, 42));
   border-left-color: rgb(58, 58, 58);
   color: rgb(232, 232, 232);
@@ -439,6 +441,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #222222);
   border-bottom-color: rgb(232, 232, 232);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -1089,6 +1092,9 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   --background-primary-alt: #222222;
   --background-secondary: #2a2a2a;
   --background-secondary-alt: #333333;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #8fa68f;
   --blur-background: color-mix(in srgb, #333333 65%, transparent) linear-gradient(#333333, color-mix(in srgb, #333333 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -1163,6 +1169,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #333333;
   --flair-color: #e8e8e8;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -1388,6 +1395,9 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
   --background-primary-alt: #222222;
   --background-secondary: #2a2a2a;
   --background-secondary-alt: #333333;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #8fa68f;
   --blur-background: color-mix(in srgb, #333333 65%, transparent) linear-gradient(#333333, color-mix(in srgb, #333333 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -1462,6 +1472,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #333333;
   --flair-color: #e8e8e8;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -1687,6 +1698,9 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
   --background-primary-alt: #222222;
   --background-secondary: #2a2a2a;
   --background-secondary-alt: #333333;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #8fa68f;
   --blur-background: color-mix(in srgb, #333333 65%, transparent) linear-gradient(#333333, color-mix(in srgb, #333333 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -1761,6 +1775,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #333333;
   --flair-color: #e8e8e8;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -1986,6 +2001,9 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
   --background-primary-alt: #222222;
   --background-secondary: #2a2a2a;
   --background-secondary-alt: #333333;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #8fa68f;
   --blur-background: color-mix(in srgb, #333333 65%, transparent) linear-gradient(#333333, color-mix(in srgb, #333333 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -2060,6 +2078,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #333333;
   --flair-color: #e8e8e8;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -2285,6 +2304,9 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
   --background-primary-alt: #222222;
   --background-secondary: #2a2a2a;
   --background-secondary-alt: #333333;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #8fa68f;
   --blur-background: color-mix(in srgb, #333333 65%, transparent) linear-gradient(#333333, color-mix(in srgb, #333333 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -2359,6 +2381,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #333333;
   --flair-color: #e8e8e8;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -2584,6 +2607,9 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
   --background-primary-alt: #222222;
   --background-secondary: #2a2a2a;
   --background-secondary-alt: #333333;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #8fa68f;
   --blur-background: color-mix(in srgb, #333333 65%, transparent) linear-gradient(#333333, color-mix(in srgb, #333333 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -2658,6 +2684,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #333333;
   --flair-color: #e8e8e8;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -2884,6 +2911,9 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
   --background-primary-alt: #222222;
   --background-secondary: #2a2a2a;
   --background-secondary-alt: #333333;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #8fa68f;
   --blur-background: color-mix(in srgb, #333333 65%, transparent) linear-gradient(#333333, color-mix(in srgb, #333333 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -2958,6 +2988,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #333333;
   --flair-color: #e8e8e8;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -3184,6 +3215,9 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
   --background-primary-alt: #222222;
   --background-secondary: #2a2a2a;
   --background-secondary-alt: #333333;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #8fa68f;
   --blur-background: color-mix(in srgb, #333333 65%, transparent) linear-gradient(#333333, color-mix(in srgb, #333333 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -3258,6 +3292,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #333333;
   --flair-color: #e8e8e8;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -3483,6 +3518,9 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
   --background-primary-alt: #222222;
   --background-secondary: #2a2a2a;
   --background-secondary-alt: #333333;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #8fa68f;
   --blur-background: color-mix(in srgb, #333333 65%, transparent) linear-gradient(#333333, color-mix(in srgb, #333333 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -3557,6 +3595,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #333333;
   --flair-color: #e8e8e8;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -3784,6 +3823,9 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
   --background-primary-alt: #222222;
   --background-secondary: #2a2a2a;
   --background-secondary-alt: #333333;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #8fa68f;
   --blur-background: color-mix(in srgb, #333333 65%, transparent) linear-gradient(#333333, color-mix(in srgb, #333333 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -3858,6 +3900,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #333333;
   --flair-color: #e8e8e8;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -4083,6 +4126,9 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
   --background-primary-alt: #222222;
   --background-secondary: #2a2a2a;
   --background-secondary-alt: #333333;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #8fa68f;
   --blur-background: color-mix(in srgb, #333333 65%, transparent) linear-gradient(#333333, color-mix(in srgb, #333333 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -4157,6 +4203,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #333333;
   --flair-color: #e8e8e8;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -4383,6 +4430,9 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
   --background-primary-alt: #222222;
   --background-secondary: #2a2a2a;
   --background-secondary-alt: #333333;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #8fa68f;
   --blur-background: color-mix(in srgb, #333333 65%, transparent) linear-gradient(#333333, color-mix(in srgb, #333333 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -4457,6 +4507,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #333333;
   --flair-color: #e8e8e8;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -4682,6 +4733,9 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --background-primary-alt: #222222;
   --background-secondary: #2a2a2a;
   --background-secondary-alt: #333333;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #8fa68f;
   --blur-background: color-mix(in srgb, #333333 65%, transparent) linear-gradient(#333333, color-mix(in srgb, #333333 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -4756,6 +4810,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #333333;
   --flair-color: #e8e8e8;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -5144,6 +5199,10 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #8fa68f);
+  --pill-color-hover: var(--tag-color-hover, #8fa68f);
+  --pill-color-remove: var(--tag-color, #8fa68f);
+  --pill-color-remove-hover: var(--tag-color-hover, #8fa68f);
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -5387,10 +5446,15 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #8fa68f);
+  --pill-color-hover: var(--tag-color-hover, #8fa68f);
+  --pill-color-remove: var(--tag-color, #8fa68f);
+  --pill-color-remove-hover: var(--tag-color-hover, #8fa68f);
   color: var(--pill-color, rgb(143, 166, 143));
 }
 
 html[saved-theme="dark"] body .note-properties-value {
+  --input-padding: var(--metadata-input-padding, 8px 12px);
   color: rgb(168, 168, 168);
 }
 
@@ -5720,6 +5784,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #f0f0f0);
   background-color: var(--tab-container-background, rgb(240, 240, 240));
   color: rgb(44, 44, 44);
 }
@@ -5739,6 +5804,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #f0f0f0);
   background-color: var(--tab-container-background, rgb(240, 240, 240));
   border-left-color: rgb(229, 229, 229);
   color: rgb(44, 44, 44);
@@ -5952,6 +6018,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #f5f5f5);
   border-bottom-color: rgb(44, 44, 44);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -6606,6 +6673,9 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
   --background-primary-alt: #f5f5f5;
   --background-secondary: #f0f0f0;
   --background-secondary-alt: #ebebeb;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #6b7d6b;
   --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -6680,6 +6750,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #f5f5f5;
   --flair-color: #2c2c2c;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -6903,6 +6974,9 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
   --background-primary-alt: #f5f5f5;
   --background-secondary: #f0f0f0;
   --background-secondary-alt: #ebebeb;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #6b7d6b;
   --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -6977,6 +7051,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #f5f5f5;
   --flair-color: #2c2c2c;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -7200,6 +7275,9 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
   --background-primary-alt: #f5f5f5;
   --background-secondary: #f0f0f0;
   --background-secondary-alt: #ebebeb;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #6b7d6b;
   --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -7274,6 +7352,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #f5f5f5;
   --flair-color: #2c2c2c;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -7497,6 +7576,9 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
   --background-primary-alt: #f5f5f5;
   --background-secondary: #f0f0f0;
   --background-secondary-alt: #ebebeb;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #6b7d6b;
   --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -7571,6 +7653,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #f5f5f5;
   --flair-color: #2c2c2c;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -7794,6 +7877,9 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
   --background-primary-alt: #f5f5f5;
   --background-secondary: #f0f0f0;
   --background-secondary-alt: #ebebeb;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #6b7d6b;
   --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -7868,6 +7954,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #f5f5f5;
   --flair-color: #2c2c2c;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -8091,6 +8178,9 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
   --background-primary-alt: #f5f5f5;
   --background-secondary: #f0f0f0;
   --background-secondary-alt: #ebebeb;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #6b7d6b;
   --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -8165,6 +8255,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #f5f5f5;
   --flair-color: #2c2c2c;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -8389,6 +8480,9 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
   --background-primary-alt: #f5f5f5;
   --background-secondary: #f0f0f0;
   --background-secondary-alt: #ebebeb;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #6b7d6b;
   --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -8463,6 +8557,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #f5f5f5;
   --flair-color: #2c2c2c;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -8687,6 +8782,9 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
   --background-primary-alt: #f5f5f5;
   --background-secondary: #f0f0f0;
   --background-secondary-alt: #ebebeb;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #6b7d6b;
   --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -8761,6 +8859,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #f5f5f5;
   --flair-color: #2c2c2c;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -8984,6 +9083,9 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
   --background-primary-alt: #f5f5f5;
   --background-secondary: #f0f0f0;
   --background-secondary-alt: #ebebeb;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #6b7d6b;
   --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -9058,6 +9160,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #f5f5f5;
   --flair-color: #2c2c2c;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -9283,6 +9386,9 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
   --background-primary-alt: #f5f5f5;
   --background-secondary: #f0f0f0;
   --background-secondary-alt: #ebebeb;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #6b7d6b;
   --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -9357,6 +9463,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #f5f5f5;
   --flair-color: #2c2c2c;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -9580,6 +9687,9 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
   --background-primary-alt: #f5f5f5;
   --background-secondary: #f0f0f0;
   --background-secondary-alt: #ebebeb;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #6b7d6b;
   --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -9654,6 +9764,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #f5f5f5;
   --flair-color: #2c2c2c;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -9878,6 +9989,9 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
   --background-primary-alt: #f5f5f5;
   --background-secondary: #f0f0f0;
   --background-secondary-alt: #ebebeb;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #6b7d6b;
   --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -9952,6 +10066,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #f5f5f5;
   --flair-color: #2c2c2c;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -10175,6 +10290,9 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   --background-primary-alt: #f5f5f5;
   --background-secondary: #f0f0f0;
   --background-secondary-alt: #ebebeb;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #6b7d6b;
   --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -10249,6 +10367,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #f5f5f5;
   --flair-color: #2c2c2c;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mermaid: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
@@ -10635,6 +10754,10 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #6b7d6b);
+  --pill-color-hover: var(--tag-color-hover, #6b7d6b);
+  --pill-color-remove: var(--tag-color, #6b7d6b);
+  --pill-color-remove-hover: var(--tag-color-hover, #6b7d6b);
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -10879,10 +11002,15 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #6b7d6b);
+  --pill-color-hover: var(--tag-color-hover, #6b7d6b);
+  --pill-color-remove: var(--tag-color, #6b7d6b);
+  --pill-color-remove-hover: var(--tag-color-hover, #6b7d6b);
   color: var(--pill-color, rgb(107, 125, 107));
 }
 
 html[saved-theme="light"] body .note-properties-value {
+  --input-padding: var(--metadata-input-padding, 8px 12px);
   color: rgb(107, 107, 107);
 }
 

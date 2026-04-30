@@ -1089,6 +1089,14 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > * {
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(258, 88%, 79%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(258, 88%, 79%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(258, 88%, 79%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(258, 88%, 79%, 0.15));
+  --pill-color: var(--tag-color, #eeb662);
+  --pill-color-hover: var(--tag-color-hover, #f7d865);
+  --pill-color-remove: var(--tag-color, #eeb662);
+  --pill-color-remove-hover: var(--tag-color-hover, #f7d865);
   background-color: var(--pill-background, rgba(183, 154, 249, 0.1));
   border-bottom-color: rgba(183, 154, 249, 0.15);
   border-left-color: rgba(183, 154, 249, 0.15);
@@ -1181,6 +1189,14 @@ html[saved-theme="dark"] body .metadata-properties {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(258, 88%, 79%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(258, 88%, 79%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(258, 88%, 79%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(258, 88%, 79%, 0.15));
+  --pill-color: var(--tag-color, #eeb662);
+  --pill-color-hover: var(--tag-color-hover, #f7d865);
+  --pill-color-remove: var(--tag-color, #eeb662);
+  --pill-color-remove-hover: var(--tag-color-hover, #f7d865);
   background-color: var(--pill-background, rgba(183, 154, 249, 0.1));
   color: var(--pill-color, rgb(238, 182, 98));
 }`,
@@ -1847,6 +1863,12 @@ html[saved-theme="light"] body .search > .search-container > .search-space > * {
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, #eeb662);
+  --pill-background-hover: var(--tag-background-hover, #f7d865);
+  --pill-color: var(--tag-color, #222222);
+  --pill-color-hover: var(--tag-color-hover, #222222);
+  --pill-color-remove: var(--tag-color, #222222);
+  --pill-color-remove-hover: var(--tag-color-hover, #222222);
   background-color: var(--pill-background, rgb(238, 182, 98));
   font-family: var(--font-links, "Alegreya SC", Spectral, serif);
 }
@@ -1935,6 +1957,12 @@ html[saved-theme="light"] body .metadata-properties {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, #eeb662);
+  --pill-background-hover: var(--tag-background-hover, #f7d865);
+  --pill-color: var(--tag-color, #222222);
+  --pill-color-hover: var(--tag-color-hover, #222222);
+  --pill-color-remove: var(--tag-color, #222222);
+  --pill-color-remove-hover: var(--tag-color-hover, #222222);
   background-color: var(--pill-background, rgb(238, 182, 98));
   color: var(--pill-color, rgb(34, 34, 34));
 }`,

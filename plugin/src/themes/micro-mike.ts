@@ -824,6 +824,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(220, 12.3%, 14.3%));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   color: rgb(163, 165, 170);
 }
@@ -844,6 +845,8 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(220, 12.3%, 14.3%));
+  --frame-right-space: var(--rightFrameSetTo, 160px);
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgb(29, 32, 37);
   color: rgb(163, 165, 170);
@@ -1390,10 +1393,18 @@ html body dt {
 }
 
 html body ol > li {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: var(--icon-content-color, rgb(163, 165, 170));
 }
 
 html body ul > li {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: var(--icon-content-color, rgb(163, 165, 170));
 }
 
@@ -1478,6 +1489,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, hsl(220, 13%, 9%));
   border-bottom-color: rgb(163, 165, 170);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1800,93 +1812,172 @@ html body li.task-list-item[data-task="~"] {
 }
 
 html body li.task-list-item[data-task='!'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='*'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='-'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='/'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='>'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='?'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='I'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='S'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='b'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='c'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='d'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='f'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='i'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='k'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='l'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='p'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='u'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='w'] {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
   color: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
+}
+
+html body ul > li.task-list-item {
+  --icon-content-color: var(--text-normal, #a3a5aa);
+  --icon-content-font: var(--font-monospace, '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace);
+  --icon-content-weight: var(--font-bold, 700);
+  --icon-mask-color: var(--text-normal, #a3a5aa);
 }
 
 html body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
@@ -2482,6 +2573,11 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-border-color: var(--tag-border-color, transparent);
+  --pill-border-color-hover: var(--tag-border-color-hover, transparent);
+  --pill-padding-x: var(--tag-padding-x, 0px);
+  --pill-padding-y: var(--tag-padding-y, 0px);
+  --pill-radius: var(--tag-radius, 0px);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
@@ -2544,6 +2640,7 @@ html body hr {
   padding-top: 0px;
 }`,
     explorer: `html body .nav-files-container .nav-file-title {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   color: var(--nav-item-color, rgb(179, 179, 179));
   cursor: var(--cursor, default);
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2551,6 +2648,7 @@ html body hr {
 }
 
 html body .nav-files-container .nav-file-title.is-active {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   background-color: var(--nav-item-background-active, rgba(255, 255, 255, 0.067));
   border-bottom-color: rgb(163, 165, 170);
   border-bottom-left-radius: 0px;
@@ -2640,6 +2738,12 @@ html body .canvas-node-content {
 }
 
 html body .canvas-node-file {
+  --h1-line-height: var(--line-height-normal, 1.25em);
+  --h2-line-height: var(--line-height-normal, 1.25em);
+  --h3-line-height: var(--line-height-normal, 1.25em);
+  --h4-line-height: var(--line-height-normal, 1.25em);
+  --line-height-normal: calc(1em*var(--lineMultiplier));
+  --margin-scale: calc(var(--font-text-size)*var(--lineMultiplier));
   color: var(--text-normal, rgb(163, 165, 170));
 }
 
@@ -2672,6 +2776,11 @@ html body .note-properties {
 }
 
 html body .note-properties-tags {
+  --pill-border-color: var(--tag-border-color, transparent);
+  --pill-border-color-hover: var(--tag-border-color-hover, transparent);
+  --pill-padding-x: var(--tag-padding-x, 0px);
+  --pill-padding-y: var(--tag-padding-y, 0px);
+  --pill-radius: var(--tag-radius, 0px);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-radius: 0px;
 }

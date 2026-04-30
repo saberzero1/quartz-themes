@@ -390,6 +390,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, oklch(18% 0.014 279.29));
   background-color: var(--tab-container-background, oklch(0.18 0.014 279.29));
   color: oklch(0.92 0.004 279.29);
 }
@@ -409,6 +410,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, oklch(18% 0.014 279.29));
   background-color: var(--tab-container-background, oklch(0.18 0.014 279.29));
   border-left-color: oklch(0.255 0.021 279.29);
   color: oklch(0.92 0.004 279.29);
@@ -446,6 +448,7 @@ html body .markdown-rendered p > strong, html strong {
 }
 
 html body .text-highlight {
+  --text-normal: var(--highlight-text-color, oklch(12% 0.009 279.29));
   background-color: var(--text-highlight-bg, oklch(0.845 0.174 97.11));
   color: var(--text-normal, oklch(0.12 0.009 279.29));
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -589,6 +592,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, oklch(25.5% 0.021 279.29));
   border-bottom-color: oklch(0.92 0.004 279.29);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -935,6 +939,7 @@ html body li.task-list-item[data-task='*'] {
 }
 
 html body li.task-list-item[data-task='-'] {
+  --checklist-done-color: var(--gray-300, oklch(48.5% 0.039 279.29));
   color: oklch(0.485 0.039 279.29);
   text-decoration: line-through;
   text-decoration-color: oklch(0.485 0.039 279.29);
@@ -1432,6 +1437,8 @@ html body .callout > .callout-content {
 
 html body .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary, oklch(48.5% 0.039 279.29));
+  --callout-content: var(--gray-700, oklch(92% 0.004 279.29));
+  --callout-title-color: var(--gray-500, oklch(74.5% 0.018 279.29));
   background: color(srgb 0.352846 0.364726 0.459747 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.352845 0.364726 0.459747 / 0.6);
@@ -1469,6 +1476,8 @@ html body .callout[data-callout="abstract"] > .callout-content {
 
 html body .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug, oklch(48.5% 0.193 13.65));
+  --callout-content: var(--red-700, oklch(92% 0.034 13.65));
+  --callout-title-color: var(--red-400, oklch(61.5% 0.245 13.65));
   background: color(srgb 0.694829 0.0072342 0.239863 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.694829 0.0072342 0.239863 / 0.6);
@@ -1506,6 +1515,8 @@ html body .callout[data-callout="bug"] > .callout-content {
 
 html body .callout[data-callout="danger"] {
   --callout-color: var(--callout-error, oklch(48.5% 0.193 13.65));
+  --callout-content: var(--red-600, oklch(84.5% 0.079 13.65));
+  --callout-title-color: var(--red-400, oklch(61.5% 0.245 13.65));
   background: color(srgb 0.694829 0.0072342 0.239863 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.694829 0.0072342 0.239863 / 0.6);
@@ -1543,6 +1554,8 @@ html body .callout[data-callout="danger"] > .callout-content {
 
 html body .callout[data-callout="example"] {
   --callout-color: var(--callout-example, oklch(48.5% 0.1 97.11));
+  --callout-content: var(--yellow-800, oklch(96.5% 0.049 97.11));
+  --callout-title-color: var(--yellow-400, oklch(61.5% 0.126 97.11));
   background: color(srgb 0.43539 0.370195 0.000193895 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.43539 0.370195 0.000193895 / 0.6);
@@ -1580,6 +1593,8 @@ html body .callout[data-callout="example"] > .callout-content {
 
 html body .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail, oklch(48.5% 0.193 13.65));
+  --callout-content: var(--red-600, oklch(84.5% 0.079 13.65));
+  --callout-title-color: var(--red-400, oklch(61.5% 0.245 13.65));
   background: color(srgb 0.694829 0.0072342 0.239863 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.694829 0.0072342 0.239863 / 0.6);
@@ -1617,6 +1632,8 @@ html body .callout[data-callout="failure"] > .callout-content {
 
 html body .callout[data-callout="info"] {
   --callout-color: var(--callout-info, oklch(61.5% 0.028 279.29));
+  --callout-content: var(--gray-600, oklch(84.5% 0.01 279.29));
+  --callout-title-color: var(--gray-900, oklch(98% 0.001 279.29));
   background: color(srgb 0.504597 0.514759 0.587372 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.504597 0.514759 0.587372 / 0.6);
@@ -1691,6 +1708,8 @@ html body .callout[data-callout="note"] > .callout-content {
 
 html body .callout[data-callout="question"] {
   --callout-color: var(--callout-question, oklch(48.5% 0.134 46.85));
+  --callout-content: var(--orange-700, oklch(92% 0.037 46.85));
+  --callout-title-color: var(--orange-400, oklch(61.5% 0.17 46.85));
   background: color(srgb 0.600474 0.253404 0.00368491 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.600474 0.253404 0.00368491 / 0.6);
@@ -1728,6 +1747,8 @@ html body .callout[data-callout="question"] > .callout-content {
 
 html body .callout[data-callout="quote"] {
   --callout-color: var(--callout-quote, oklch(48.5% 0.039 279.29));
+  --callout-content: var(--gray-700, oklch(92% 0.004 279.29));
+  --callout-title-color: var(--gray-500, oklch(74.5% 0.018 279.29));
   background: color(srgb 0.352846 0.364726 0.459747 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.352845 0.364726 0.459747 / 0.6);
@@ -1765,6 +1786,8 @@ html body .callout[data-callout="quote"] > .callout-content {
 
 html body .callout[data-callout="success"] {
   --callout-color: var(--callout-success, oklch(48.5% 0.145 140.09));
+  --callout-content: var(--green-700, oklch(92% 0.125 140.09));
+  --callout-title-color: var(--green-500, oklch(74.5% 0.222 140.09));
   background: color(srgb 0.153674 0.444627 0.0730724 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.153674 0.444627 0.0730724 / 0.6);
@@ -1802,6 +1825,8 @@ html body .callout[data-callout="success"] > .callout-content {
 
 html body .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip, oklch(48.5% 0.106 161.65));
+  --callout-content: var(--sea-green-700, oklch(92% 0.118 161.65));
+  --callout-title-color: var(--sea-green-500, oklch(74.5% 0.164 161.65));
   background: color(srgb 0.0116796 0.442945 0.296735 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.0116796 0.442945 0.296735 / 0.6);
@@ -1839,6 +1864,8 @@ html body .callout[data-callout="tip"] > .callout-content {
 
 html body .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo, oklch(48.5% 0.173 260.58));
+  --callout-content: var(--blue-700, oklch(92% 0.027 260.58));
+  --callout-title-color: var(--blue-500, oklch(74.5% 0.111 260.58));
   background: color(srgb 0.108066 0.344328 0.747263 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.108066 0.344328 0.747263 / 0.6);
@@ -1876,6 +1903,8 @@ html body .callout[data-callout="todo"] > .callout-content {
 
 html body .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning, oklch(48.5% 0.134 46.85));
+  --callout-content: var(--orange-700, oklch(92% 0.037 46.85));
+  --callout-title-color: var(--orange-500, oklch(74.5% 0.166 46.85));
   background: color(srgb 0.600474 0.253404 0.00368491 / 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
   border-bottom-color: color(srgb 0.600474 0.253404 0.00368491 / 0.6);
@@ -2029,6 +2058,9 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, oklch(35.5% 0.127 260.58));
+  --pill-color: var(--tag-color, oklch(84.5% 0.06 260.58));
+  --pill-color-remove: var(--tag-color, oklch(84.5% 0.06 260.58));
   background-color: var(--gray-100, oklch(0.255 0.021 279.29));
 }
 
@@ -2037,6 +2069,7 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  --font-weight: var(--h1-weight, 550);
   color: var(--h1-color, oklch(0.615 0.17 288));
   font-family: var(--h1-font, "Bricolage Grotesque");
 }
@@ -2047,6 +2080,7 @@ html body h1.article-title {
 }
 
 html body h2 {
+  --font-weight: var(--h2-weight, 500);
   color: var(--h2-color, rgb(242, 66, 255));
   font-family: var(--h2-font, "Bricolage Grotesque");
 }
@@ -2057,21 +2091,25 @@ html body h2.page-title, html h2.page-title a {
 }
 
 html body h3 {
+  --font-weight: var(--h3-weight, 550);
   color: var(--h3-color, rgb(255, 116, 23));
   font-family: var(--h3-font, "Bricolage Grotesque");
 }
 
 html body h4 {
+  --font-weight: var(--h4-weight, 650);
   color: var(--h4-color, rgb(218, 1, 77));
   font-family: var(--h4-font, "Bricolage Grotesque");
 }
 
 html body h5 {
+  --font-weight: var(--h5-weight, 600);
   color: var(--h5-color, oklch(0.845 0.01 279.29));
   font-family: var(--h5-font, "Bricolage Grotesque");
 }
 
 html body h6 {
+  --font-weight: var(--h6-weight, 650);
   color: var(--h6-color, oklch(0.845 0.01 279.29));
   font-family: var(--h6-font, "Bricolage Grotesque");
 }
@@ -2246,6 +2284,9 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, oklch(35.5% 0.127 260.58));
+  --pill-color: var(--tag-color, oklch(84.5% 0.06 260.58));
+  --pill-color-remove: var(--tag-color, oklch(84.5% 0.06 260.58));
   background-color: var(--gray-100, oklch(0.255 0.021 279.29));
   color: var(--pill-color, oklch(0.845 0.06 260.58));
 }
@@ -2271,6 +2312,7 @@ html body ol.overflow {
 }
 
 html body .stacked-page-header {
+  --frame-left-space: calc(68px - var(--ribbon-width));
   background-color: var(--tab-container-background, oklch(0.18 0.014 279.29));
 }
 

@@ -282,6 +282,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #161616);
   border-bottom-color: rgb(173, 172, 172);
   border-left-color: rgb(173, 172, 172);
   border-right-color: rgb(173, 172, 172);

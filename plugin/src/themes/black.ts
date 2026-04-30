@@ -41,6 +41,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #000);
   background-color: var(--tab-container-background, rgb(0, 0, 0));
 }
 
@@ -53,6 +54,7 @@ html body .page > div#quartz-body div.sidebar {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #000);
   background-color: var(--tab-container-background, rgb(0, 0, 0));
 }`,
     checkboxes: `html body li.task-list-item[data-task="-"] input[type="checkbox"]::after {

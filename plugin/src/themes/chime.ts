@@ -338,6 +338,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #2f2837);
   background-color: var(--tab-container-background, rgb(47, 40, 55));
   color: rgb(160, 167, 196);
 }
@@ -359,6 +360,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #2f2837);
   background-color: var(--tab-container-background, rgb(47, 40, 55));
   border-left-color: rgb(78, 69, 96);
   color: rgb(160, 167, 196);
@@ -567,6 +569,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #413b4e);
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1762,6 +1765,7 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  --font-weight: var(--h2-weight, 600);
   color: var(--h2-color, rgb(160, 167, 196));
   font-family: var(--h2-font, "??", "??", Arima, cursive);
 }
@@ -1772,16 +1776,19 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h3 {
+  --font-weight: var(--h3-weight, 600);
   color: var(--h3-color, rgb(160, 167, 196));
   font-family: var(--h3-font, "??", "??", Arima, cursive);
 }
 
 html[saved-theme="dark"] body h4 {
+  --font-weight: var(--h4-weight, 600);
   color: var(--h4-color, rgb(160, 167, 196));
   font-family: var(--h4-font, "??", "??", Arima, cursive);
 }
 
 html[saved-theme="dark"] body h5 {
+  --font-weight: var(--h5-weight, 600);
   color: var(--h5-color, rgb(160, 167, 196));
   font-family: var(--h5-font, "??", "??", Arima, cursive);
 }
@@ -2430,6 +2437,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #f4ebeb);
   background-color: var(--tab-container-background, rgb(244, 235, 235));
   color: rgb(89, 79, 103);
 }
@@ -2451,6 +2459,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #f4ebeb);
   background-color: var(--tab-container-background, rgb(244, 235, 235));
   border-left-color: rgba(206, 194, 197, 0.467);
   color: rgb(89, 79, 103);
@@ -2673,6 +2682,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #f0e9e4);
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -3856,6 +3866,14 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(323, 30%, 65%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(323, 30%, 65%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(323, 30%, 65%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(323, 30%, 65%, 0.15));
+  --pill-color: var(--tag-color, hsl(323, 30%, 65%));
+  --pill-color-hover: var(--tag-color-hover, hsl(323, 30%, 65%));
+  --pill-color-remove: var(--tag-color, hsl(323, 30%, 65%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(323, 30%, 65%));
   background-color: var(--pill-background, rgba(193, 139, 172, 0.1));
   border-bottom-color: rgba(193, 139, 172, 0.15);
   border-left-color: rgba(193, 139, 172, 0.15);
@@ -3878,6 +3896,7 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  --font-weight: var(--h2-weight, 600);
   color: var(--h2-color, rgb(89, 79, 103));
   font-family: var(--h2-font, "??", "??", Arima, cursive);
 }
@@ -3888,16 +3907,19 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  --font-weight: var(--h3-weight, 600);
   color: var(--h3-color, rgb(89, 79, 103));
   font-family: var(--h3-font, "??", "??", Arima, cursive);
 }
 
 html[saved-theme="light"] body h4 {
+  --font-weight: var(--h4-weight, 600);
   color: var(--h4-color, rgb(89, 79, 103));
   font-family: var(--h4-font, "??", "??", Arima, cursive);
 }
 
 html[saved-theme="light"] body h5 {
+  --font-weight: var(--h5-weight, 600);
   color: var(--h5-color, rgb(89, 79, 103));
   font-family: var(--h5-font, "??", "??", Arima, cursive);
 }
@@ -4096,6 +4118,14 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(323, 30%, 65%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(323, 30%, 65%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(323, 30%, 65%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(323, 30%, 65%, 0.15));
+  --pill-color: var(--tag-color, hsl(323, 30%, 65%));
+  --pill-color-hover: var(--tag-color-hover, hsl(323, 30%, 65%));
+  --pill-color-remove: var(--tag-color, hsl(323, 30%, 65%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(323, 30%, 65%));
   background-color: var(--pill-background, rgba(193, 139, 172, 0.1));
   color: var(--pill-color, rgb(193, 139, 172));
 }

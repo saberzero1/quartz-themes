@@ -325,6 +325,9 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, oklch(24% 0 0));
+  --titlebar-background: var(--background-secondary, oklch(24% 0 0));
+  --titlebar-background-focused: var(--background-secondary, oklch(24% 0 0));
   background-color: var(--tab-container-background, oklch(0.3 0 0));
   color: oklch(1 0 0);
 }
@@ -344,6 +347,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, oklch(24% 0 0));
   background-color: var(--tab-container-background, oklch(0.3 0 0));
   border-left-color: oklch(0.42 0 0);
   color: oklch(1 0 0);
@@ -508,6 +512,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, oklch(27% 0 0));
   border-bottom-color: oklch(1 0 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1598,6 +1603,15 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, color-mix(in oklch,oklch(0.9 0.15 262) 15%,transparent));
+  --pill-background-hover: var(--tag-background-hover, color-mix(in oklch,oklch(0.9 0.15 262) 30%,transparent));
+  --pill-color: var(--tag-color, oklch(0.9 0.15 262));
+  --pill-color-hover: var(--tag-color-hover, oklch(1 0.09 262));
+  --pill-color-remove: var(--tag-color, oklch(0.9 0.15 262));
+  --pill-color-remove-hover: var(--tag-color-hover, oklch(1 0.09 262));
+  --pill-padding-x: var(--tag-padding-x, 0.75em);
+  --pill-padding-y: var(--tag-padding-y, 0.33em);
+  --pill-radius: var(--tag-radius, 12px);
   background-color: var(--pill-background, oklch(0.9 0.15 262 / 0.15));
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1772,6 +1786,9 @@ html[saved-theme="dark"] body .canvas-sidebar {
   font-weight: var(--table-header-weight, 500);
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
+  --checkbox-color: var(--property-input-color, oklch(0.9 0.15 70));
+  --link-color: var(--property-input-color, oklch(0.9 0.15 70));
+  --link-external-color: var(--property-input-color, oklch(0.9 0.15 70));
   border-bottom-color: oklch(0.36 0 0);
   border-left-color: oklch(0.36 0 0);
   border-right-color: oklch(0.36 0 0);
@@ -1788,6 +1805,9 @@ html[saved-theme="dark"] body .metadata-properties {
 }
 
 html[saved-theme="dark"] body .note-properties {
+  --checkbox-color: var(--property-input-color, oklch(0.9 0.15 70));
+  --link-color: var(--property-input-color, oklch(0.9 0.15 70));
+  --link-external-color: var(--property-input-color, oklch(0.9 0.15 70));
   border-color: oklch(0.36 0 0);
 }
 
@@ -1800,6 +1820,15 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, color-mix(in oklch,oklch(0.9 0.15 262) 15%,transparent));
+  --pill-background-hover: var(--tag-background-hover, color-mix(in oklch,oklch(0.9 0.15 262) 30%,transparent));
+  --pill-color: var(--tag-color, oklch(0.9 0.15 262));
+  --pill-color-hover: var(--tag-color-hover, oklch(1 0.09 262));
+  --pill-color-remove: var(--tag-color, oklch(0.9 0.15 262));
+  --pill-color-remove-hover: var(--tag-color-hover, oklch(1 0.09 262));
+  --pill-padding-x: var(--tag-padding-x, 0.75em);
+  --pill-padding-y: var(--tag-padding-y, 0.33em);
+  --pill-radius: var(--tag-radius, 12px);
   background-color: var(--pill-background, oklch(0.9 0.15 262 / 0.15));
   border-radius: 12px;
   color: var(--pill-color, oklch(0.9 0.15 262));
@@ -2230,6 +2259,9 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, oklch(94% 0 0));
+  --titlebar-background: var(--background-secondary, oklch(94% 0 0));
+  --titlebar-background-focused: var(--background-secondary, oklch(94% 0 0));
   background-color: var(--tab-container-background, oklch(1 0 0));
   color: oklch(0 0 0);
 }
@@ -2249,6 +2281,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, oklch(94% 0 0));
   background-color: var(--tab-container-background, oklch(1 0 0));
   border-left-color: oklch(0.82 0 0);
   color: oklch(0 0 0);
@@ -2413,6 +2446,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, oklch(97% 0 0));
   border-bottom-color: oklch(0 0 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -3490,6 +3524,15 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, color-mix(in oklch,oklch(0.4 0.15 262) 15%,transparent));
+  --pill-background-hover: var(--tag-background-hover, color-mix(in oklch,oklch(0.4 0.15 262) 30%,transparent));
+  --pill-color: var(--tag-color, oklch(0.4 0.15 262));
+  --pill-color-hover: var(--tag-color-hover, oklch(0.3 0.15 262));
+  --pill-color-remove: var(--tag-color, oklch(0.4 0.15 262));
+  --pill-color-remove-hover: var(--tag-color-hover, oklch(0.3 0.15 262));
+  --pill-padding-x: var(--tag-padding-x, 0.75em);
+  --pill-padding-y: var(--tag-padding-y, 0.33em);
+  --pill-radius: var(--tag-radius, 12px);
   background-color: var(--pill-background, oklch(0.4 0.15 262 / 0.15));
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -3664,6 +3707,9 @@ html[saved-theme="light"] body .canvas-sidebar {
   font-weight: var(--table-header-weight, 500);
 }`,
     properties: `html[saved-theme="light"] body .metadata {
+  --checkbox-color: var(--property-input-color, oklch(0.4 0.15 70));
+  --link-color: var(--property-input-color, oklch(0.4 0.15 70));
+  --link-external-color: var(--property-input-color, oklch(0.4 0.15 70));
   border-bottom-color: oklch(0.88 0 0);
   border-left-color: oklch(0.88 0 0);
   border-right-color: oklch(0.88 0 0);
@@ -3680,6 +3726,9 @@ html[saved-theme="light"] body .metadata-properties {
 }
 
 html[saved-theme="light"] body .note-properties {
+  --checkbox-color: var(--property-input-color, oklch(0.4 0.15 70));
+  --link-color: var(--property-input-color, oklch(0.4 0.15 70));
+  --link-external-color: var(--property-input-color, oklch(0.4 0.15 70));
   border-color: oklch(0.88 0 0);
 }
 
@@ -3692,6 +3741,15 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, color-mix(in oklch,oklch(0.4 0.15 262) 15%,transparent));
+  --pill-background-hover: var(--tag-background-hover, color-mix(in oklch,oklch(0.4 0.15 262) 30%,transparent));
+  --pill-color: var(--tag-color, oklch(0.4 0.15 262));
+  --pill-color-hover: var(--tag-color-hover, oklch(0.3 0.15 262));
+  --pill-color-remove: var(--tag-color, oklch(0.4 0.15 262));
+  --pill-color-remove-hover: var(--tag-color-hover, oklch(0.3 0.15 262));
+  --pill-padding-x: var(--tag-padding-x, 0.75em);
+  --pill-padding-y: var(--tag-padding-y, 0.33em);
+  --pill-radius: var(--tag-radius, 12px);
   background-color: var(--pill-background, oklch(0.4 0.15 262 / 0.15));
   border-radius: 12px;
   color: var(--pill-color, oklch(0.4 0.15 262));

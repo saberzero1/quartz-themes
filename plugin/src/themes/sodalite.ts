@@ -503,6 +503,22 @@ html body .callout[data-callout="warning"] {
   padding-right: 18px;
   padding-top: 18px;
 }`,
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  --interactive-accent: var(--sdlt-accent-muted, #304F80);
+  --text-muted: var(--sdlt-text-muted, #cacaca);
+  --text-on-accent: var(--sdlt-text-on-accent, #000000);
+}
+
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  --interactive-accent: var(--sdlt-accent-muted, #304F80);
+  --text-muted: var(--sdlt-text-muted, #cacaca);
+  --text-on-accent: var(--sdlt-text-on-accent, #000000);
+}`,
+    toc: `html body li.depth-0 {
+  --interactive-accent: var(--sdlt-accent-muted, #304F80);
+  --text-muted: var(--sdlt-text-muted, #cacaca);
+  --text-on-accent: var(--sdlt-text-on-accent, #000000);
+}`,
     footer: `html body footer {
   background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(179, 179, 179);
@@ -511,6 +527,16 @@ html body .callout[data-callout="warning"] {
   border-right-color: rgb(179, 179, 179);
   border-top-color: rgb(179, 179, 179);
   border-top-width: 0px;
+}`,
+    recentNotes: `html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+  --interactive-accent: var(--sdlt-accent-muted, #304F80);
+  --text-muted: var(--sdlt-text-muted, #cacaca);
+  --text-on-accent: var(--sdlt-text-on-accent, #000000);
+}`,
+    listPage: `html body li.section-li > .section > .desc > h3 > a {
+  --interactive-accent: var(--sdlt-accent-muted, #304F80);
+  --text-muted: var(--sdlt-text-muted, #cacaca);
+  --text-on-accent: var(--sdlt-text-on-accent, #000000);
 }`,
     properties: `html body div#quartz-root {
   background-color: var(--background-primary, rgba(0, 0, 0, 0));

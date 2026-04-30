@@ -652,6 +652,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #343a40);
   background-color: var(--tab-container-background, rgb(52, 58, 64));
   color: rgb(241, 243, 245);
 }
@@ -671,6 +672,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #343a40);
   background-color: var(--tab-container-background, rgb(52, 58, 64));
   border-left-color: rgba(255, 255, 255, 0.05);
   color: rgb(241, 243, 245);
@@ -926,6 +928,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, rgba(255, 255, 255, 0.05));
   border-bottom-color: rgb(241, 243, 245);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2167,6 +2170,33 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(223, 100%, 62%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(223, 100%, 62%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(223, 100%, 62%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(223, 100%, 62%, 0.15));
+  --pill-color: var(--tag-color, hsl(
+    223,
+    100%,
+    58.2%
+  ));
+  --pill-color-hover: var(--tag-color-hover, hsl(
+    223,
+    100%,
+    58.2%
+  ));
+  --pill-color-remove: var(--tag-color, hsl(
+    223,
+    100%,
+    58.2%
+  ));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(
+    223,
+    100%,
+    58.2%
+  ));
+  --pill-padding-x: var(--tag-padding-x, 0.65rem);
+  --pill-padding-y: var(--tag-padding-y, 0.25rem);
+  --pill-radius: var(--tag-radius, 6px);
   background-color: var(--pill-background, rgba(61, 116, 255, 0.1));
   border-bottom-color: rgba(61, 116, 255, 0.15);
   border-bottom-left-radius: 6px;
@@ -2184,6 +2214,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  --font-weight: var(--h1-weight, 600);
   color: var(--h1-color, rgb(241, 243, 245));
 }
 
@@ -2194,6 +2225,7 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  --font-weight: var(--h2-weight, 600);
   color: var(--h2-color, rgb(241, 243, 245));
 }
 
@@ -2202,14 +2234,17 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h3 {
+  --font-weight: var(--h3-weight, 600);
   color: var(--h3-color, rgb(241, 243, 245));
 }
 
 html[saved-theme="dark"] body h4 {
+  --font-weight: var(--h4-weight, 600);
   color: var(--h4-color, rgb(241, 243, 245));
 }
 
 html[saved-theme="dark"] body h5 {
+  --font-weight: var(--h5-weight, 600);
   color: var(--h5-color, rgb(241, 243, 245));
 }
 
@@ -2425,6 +2460,33 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(223, 100%, 62%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(223, 100%, 62%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(223, 100%, 62%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(223, 100%, 62%, 0.15));
+  --pill-color: var(--tag-color, hsl(
+    223,
+    100%,
+    58.2%
+  ));
+  --pill-color-hover: var(--tag-color-hover, hsl(
+    223,
+    100%,
+    58.2%
+  ));
+  --pill-color-remove: var(--tag-color, hsl(
+    223,
+    100%,
+    58.2%
+  ));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(
+    223,
+    100%,
+    58.2%
+  ));
+  --pill-padding-x: var(--tag-padding-x, 0.65rem);
+  --pill-padding-y: var(--tag-padding-y, 0.25rem);
+  --pill-radius: var(--tag-radius, 6px);
   background-color: var(--pill-background, rgba(61, 116, 255, 0.1));
   border-radius: 6px;
   color: var(--pill-color, rgb(42, 102, 255));
@@ -3165,6 +3227,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #e5e3dc);
   background-color: var(--tab-container-background, rgb(229, 227, 220));
   color: rgb(33, 37, 41);
 }
@@ -3184,6 +3247,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #e5e3dc);
   background-color: var(--tab-container-background, rgb(229, 227, 220));
   border-left-color: rgb(229, 227, 220);
   color: rgb(33, 37, 41);
@@ -3439,6 +3503,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, rgba(0, 0, 0, 0.05));
   border-bottom-color: rgb(33, 37, 41);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -4684,6 +4749,17 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(223, 100%, 62%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(223, 100%, 62%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(223, 100%, 62%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(223, 100%, 62%, 0.15));
+  --pill-color: var(--tag-color, hsl(223, 100%, 62%));
+  --pill-color-hover: var(--tag-color-hover, hsl(223, 100%, 62%));
+  --pill-color-remove: var(--tag-color, hsl(223, 100%, 62%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(223, 100%, 62%));
+  --pill-padding-x: var(--tag-padding-x, 0.65rem);
+  --pill-padding-y: var(--tag-padding-y, 0.25rem);
+  --pill-radius: var(--tag-radius, 6px);
   background-color: var(--pill-background, rgba(61, 116, 255, 0.1));
   border-bottom-color: rgba(61, 116, 255, 0.15);
   border-bottom-left-radius: 6px;
@@ -4701,6 +4777,7 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  --font-weight: var(--h1-weight, 600);
   color: var(--h1-color, rgb(33, 37, 41));
 }
 
@@ -4711,6 +4788,7 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  --font-weight: var(--h2-weight, 600);
   color: var(--h2-color, rgb(33, 37, 41));
 }
 
@@ -4719,14 +4797,17 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  --font-weight: var(--h3-weight, 600);
   color: var(--h3-color, rgb(33, 37, 41));
 }
 
 html[saved-theme="light"] body h4 {
+  --font-weight: var(--h4-weight, 600);
   color: var(--h4-color, rgb(33, 37, 41));
 }
 
 html[saved-theme="light"] body h5 {
+  --font-weight: var(--h5-weight, 600);
   color: var(--h5-color, rgb(33, 37, 41));
 }
 
@@ -4942,6 +5023,17 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(223, 100%, 62%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(223, 100%, 62%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(223, 100%, 62%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(223, 100%, 62%, 0.15));
+  --pill-color: var(--tag-color, hsl(223, 100%, 62%));
+  --pill-color-hover: var(--tag-color-hover, hsl(223, 100%, 62%));
+  --pill-color-remove: var(--tag-color, hsl(223, 100%, 62%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(223, 100%, 62%));
+  --pill-padding-x: var(--tag-padding-x, 0.65rem);
+  --pill-padding-y: var(--tag-padding-y, 0.25rem);
+  --pill-radius: var(--tag-radius, 6px);
   background-color: var(--pill-background, rgba(61, 116, 255, 0.1));
   border-radius: 6px;
   color: var(--pill-color, rgb(61, 116, 255));

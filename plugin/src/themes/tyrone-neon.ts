@@ -165,6 +165,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #000000);
   background-color: var(--tab-container-background, rgb(0, 0, 0));
   color: rgb(212, 212, 212);
 }
@@ -185,6 +186,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #000000);
   background-color: var(--tab-container-background, rgb(0, 0, 0));
   border-left-color: rgb(128, 128, 128);
   color: rgb(212, 212, 212);
@@ -347,6 +349,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #000000);
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1329,6 +1332,10 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, hsl(258, 88%, 66%));
+  --pill-color-hover: var(--tag-color-hover, hsl(258, 88%, 66%));
+  --pill-color-remove: var(--tag-color, hsl(258, 88%, 66%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(258, 88%, 66%));
   border-bottom-left-radius: 26.25px;
   border-bottom-right-radius: 26.25px;
   border-top-left-radius: 26.25px;
@@ -1541,6 +1548,10 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-color: var(--tag-color, hsl(258, 88%, 66%));
+  --pill-color-hover: var(--tag-color-hover, hsl(258, 88%, 66%));
+  --pill-color-remove: var(--tag-color, hsl(258, 88%, 66%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(258, 88%, 66%));
   border-radius: 26.25px;
   color: var(--pill-color, rgb(138, 92, 245));
 }
@@ -1779,6 +1790,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #ffffff);
   background-color: var(--tab-container-background, rgb(255, 255, 255));
   color: rgb(64, 64, 64);
 }
@@ -1798,6 +1810,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #ffffff);
   background-color: var(--tab-container-background, rgb(255, 255, 255));
   border-left-color: rgb(128, 128, 128);
   color: rgb(64, 64, 64);
@@ -1952,6 +1965,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #ffffff);
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;

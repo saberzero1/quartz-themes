@@ -465,6 +465,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(0, 0%, 1%));
   background-color: var(--tab-container-background, rgb(3, 3, 3));
   color: rgb(186, 186, 186);
 }
@@ -484,6 +485,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(0, 0%, 1%));
   background-color: var(--tab-container-background, rgb(3, 3, 3));
   border-left-color: rgb(61, 61, 61);
   color: rgb(186, 186, 186);
@@ -702,6 +704,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, hsl(0, 0%, 10%));
   border-bottom-color: rgb(186, 186, 186);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -1714,6 +1717,9 @@ html[saved-theme="dark"] body .callout[data-callout="a"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -1815,6 +1821,7 @@ html[saved-theme="dark"] body .callout[data-callout="a"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2096,6 +2103,9 @@ html[saved-theme="dark"] body .callout[data-callout="activity"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -2197,6 +2207,7 @@ html[saved-theme="dark"] body .callout[data-callout="activity"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2429,6 +2440,9 @@ html[saved-theme="dark"] body .callout[data-callout="add"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -2530,6 +2544,7 @@ html[saved-theme="dark"] body .callout[data-callout="add"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2762,6 +2777,9 @@ html[saved-theme="dark"] body .callout[data-callout="arrow"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -2863,6 +2881,7 @@ html[saved-theme="dark"] body .callout[data-callout="arrow"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3095,6 +3114,9 @@ html[saved-theme="dark"] body .callout[data-callout="b"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -3196,6 +3218,7 @@ html[saved-theme="dark"] body .callout[data-callout="b"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3428,6 +3451,9 @@ html[saved-theme="dark"] body .callout[data-callout="beats"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -3529,6 +3555,7 @@ html[saved-theme="dark"] body .callout[data-callout="beats"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3761,6 +3788,9 @@ html[saved-theme="dark"] body .callout[data-callout="bookmark"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -3862,6 +3892,7 @@ html[saved-theme="dark"] body .callout[data-callout="bookmark"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4143,6 +4174,9 @@ html[saved-theme="dark"] body .callout[data-callout="c"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -4244,6 +4278,7 @@ html[saved-theme="dark"] body .callout[data-callout="c"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4476,6 +4511,9 @@ html[saved-theme="dark"] body .callout[data-callout="cake"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -4577,6 +4615,7 @@ html[saved-theme="dark"] body .callout[data-callout="cake"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4809,6 +4848,9 @@ html[saved-theme="dark"] body .callout[data-callout="calendar"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -4910,6 +4952,7 @@ html[saved-theme="dark"] body .callout[data-callout="calendar"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5142,6 +5185,9 @@ html[saved-theme="dark"] body .callout[data-callout="cancel"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -5243,6 +5289,7 @@ html[saved-theme="dark"] body .callout[data-callout="cancel"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5475,6 +5522,9 @@ html[saved-theme="dark"] body .callout[data-callout="cancelled"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -5576,6 +5626,7 @@ html[saved-theme="dark"] body .callout[data-callout="cancelled"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5808,6 +5859,9 @@ html[saved-theme="dark"] body .callout[data-callout="close"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -5909,6 +5963,7 @@ html[saved-theme="dark"] body .callout[data-callout="close"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6140,6 +6195,9 @@ html[saved-theme="dark"] body .callout[data-callout="comment"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -6241,6 +6299,7 @@ html[saved-theme="dark"] body .callout[data-callout="comment"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6472,6 +6531,9 @@ html[saved-theme="dark"] body .callout[data-callout="cons"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -6573,6 +6635,7 @@ html[saved-theme="dark"] body .callout[data-callout="cons"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6804,6 +6867,9 @@ html[saved-theme="dark"] body .callout[data-callout="d"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -6905,6 +6971,7 @@ html[saved-theme="dark"] body .callout[data-callout="d"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7185,6 +7252,9 @@ html[saved-theme="dark"] body .callout[data-callout="down"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -7286,6 +7356,7 @@ html[saved-theme="dark"] body .callout[data-callout="down"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7517,6 +7588,9 @@ html[saved-theme="dark"] body .callout[data-callout="download"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -7618,6 +7692,7 @@ html[saved-theme="dark"] body .callout[data-callout="download"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7849,6 +7924,9 @@ html[saved-theme="dark"] body .callout[data-callout="e"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -7950,6 +8028,7 @@ html[saved-theme="dark"] body .callout[data-callout="e"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8181,6 +8260,9 @@ html[saved-theme="dark"] body .callout[data-callout="event"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -8282,6 +8364,7 @@ html[saved-theme="dark"] body .callout[data-callout="event"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8562,6 +8645,9 @@ html[saved-theme="dark"] body .callout[data-callout="eye"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -8663,6 +8749,7 @@ html[saved-theme="dark"] body .callout[data-callout="eye"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8943,6 +9030,9 @@ html[saved-theme="dark"] body .callout[data-callout="forwarded"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -9044,6 +9134,7 @@ html[saved-theme="dark"] body .callout[data-callout="forwarded"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9275,6 +9366,9 @@ html[saved-theme="dark"] body .callout[data-callout="g"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -9376,6 +9470,7 @@ html[saved-theme="dark"] body .callout[data-callout="g"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9607,6 +9702,9 @@ html[saved-theme="dark"] body .callout[data-callout="game"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -9708,6 +9806,7 @@ html[saved-theme="dark"] body .callout[data-callout="game"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9939,6 +10038,9 @@ html[saved-theme="dark"] body .callout[data-callout="h"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -10040,6 +10142,7 @@ html[saved-theme="dark"] body .callout[data-callout="h"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10271,6 +10374,9 @@ html[saved-theme="dark"] body .callout[data-callout="handshake"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -10372,6 +10478,7 @@ html[saved-theme="dark"] body .callout[data-callout="handshake"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10603,6 +10710,9 @@ html[saved-theme="dark"] body .callout[data-callout="heart"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -10704,6 +10814,7 @@ html[saved-theme="dark"] body .callout[data-callout="heart"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10935,6 +11046,9 @@ html[saved-theme="dark"] body .callout[data-callout="home"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -11036,6 +11150,7 @@ html[saved-theme="dark"] body .callout[data-callout="home"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -11267,6 +11382,9 @@ html[saved-theme="dark"] body .callout[data-callout="i"] {
   --background-secondary: hsl(0, 0%, 1%);
   --background-secondary-alt: hsl(0, 0%, 8%);
   --base-c-m: 5%;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(234, 104%, 75%);
   --blockquote-border-color: hsl(0, 0%, 24%);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
@@ -11368,6 +11486,7 @@ html[saved-theme="dark"] body .callout[data-callout="i"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 8%);
   --flair-color: hsl(0, 0%, 73%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -12234,6 +12353,21 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(238, 100%, 70%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(238, 100%, 70%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(238, 100%, 70%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(238, 100%, 70%, 0.15));
+  --pill-color: var(--tag-color, hsl(242, 104%, 76%));
+  --pill-color-hover: var(--tag-color-hover, hsl(242, 104%, 76%));
+  --pill-color-remove: var(--tag-rb-text-dark, hsl(238, 40%, 80%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(242, 104%, 76%));
+  --pill-padding-x: var(--tag-padding-x, 6px);
+  --pill-padding-y: var(--tag-padding-y, 2px);
+  --pill-radius: var(--tag-radius, 5px);
+  --tag-rb: hsl(var(--accent-h), 50%, 60%, var(--tag-opacity));
+  --tag-rb-hover: hsl(var(--accent-h), 50%,  60%, var(--tag-opacity-hover));
+  --tag-rb-text-dark: hsl(var(--accent-h), 40%, 80%);
+  --tag-rb-text-light: hsl(var(--accent-h), 60%, 30%);
   background-color: var(--tag-rb, rgba(102, 105, 204, 0.25));
   border-bottom-color: rgb(184, 185, 224);
   border-bottom-left-radius: 5px;
@@ -12251,6 +12385,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  --font-weight: var(--h1-weight, 600);
   color: var(--h1-color, rgb(186, 186, 186));
   font-family: var(--h1-font, "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -12262,6 +12397,7 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  --font-weight: var(--h2-weight, 600);
   color: var(--h2-color, rgb(186, 186, 186));
   font-family: var(--h2-font, "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -12272,16 +12408,19 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h3 {
+  --font-weight: var(--h3-weight, 600);
   color: var(--h3-color, rgb(186, 186, 186));
   font-family: var(--h3-font, "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
+  --font-weight: var(--h4-weight, 600);
   color: var(--h4-color, rgb(186, 186, 186));
   font-family: var(--h4-font, "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
+  --font-weight: var(--h5-weight, 600);
   color: var(--h5-color, rgb(186, 186, 186));
   font-family: var(--h5-font, "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -12500,10 +12639,26 @@ html[saved-theme="dark"] body .note-properties-key {
 }
 
 html[saved-theme="dark"] body .note-properties-row {
+  --pill-background: hsl(var(--color-accent-hsl), 0.15);
   border-color: rgb(166, 166, 166);
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(238, 100%, 70%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(238, 100%, 70%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(238, 100%, 70%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(238, 100%, 70%, 0.15));
+  --pill-color: var(--tag-color, hsl(242, 104%, 76%));
+  --pill-color-hover: var(--tag-color-hover, hsl(242, 104%, 76%));
+  --pill-color-remove: var(--tag-rb-text-dark, hsl(238, 40%, 80%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(242, 104%, 76%));
+  --pill-padding-x: var(--tag-padding-x, 6px);
+  --pill-padding-y: var(--tag-padding-y, 2px);
+  --pill-radius: var(--tag-radius, 5px);
+  --tag-rb: hsl(var(--accent-h), 50%, 60%, var(--tag-opacity));
+  --tag-rb-hover: hsl(var(--accent-h), 50%,  60%, var(--tag-opacity-hover));
+  --tag-rb-text-dark: hsl(var(--accent-h), 40%, 80%);
+  --tag-rb-text-light: hsl(var(--accent-h), 60%, 30%);
   background-color: var(--tag-rb, rgba(102, 105, 204, 0.25));
   border-radius: 5px;
   color: var(--tag-rb-text-dark, rgb(184, 185, 224));
@@ -12609,6 +12764,11 @@ html[saved-theme="dark"] body sup {
 }
 
 html[saved-theme="dark"] body ul.tags > li {
+  --pill-color-remove: var(--tag-rb-text-dark, hsl(238, 40%, 80%));
+  --tag-rb: hsl(var(--accent-h), 50%, 60%, var(--tag-opacity));
+  --tag-rb-hover: hsl(var(--accent-h), 50%,  60%, var(--tag-opacity-hover));
+  --tag-rb-text-dark: hsl(var(--accent-h), 40%, 80%);
+  --tag-rb-text-light: hsl(var(--accent-h), 60%, 30%);
   background-color: var(--tag-rb, rgba(102, 105, 204, 0.25));
   border-bottom-color: rgba(102, 107, 255, 0.15);
   border-bottom-left-radius: 5px;
@@ -13003,6 +13163,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(0, 0%, 98.2%));
   background-color: var(--tab-container-background, rgb(250, 250, 250));
   color: rgb(51, 51, 51);
 }
@@ -13021,6 +13182,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(0, 0%, 98.2%));
   background-color: var(--tab-container-background, rgb(250, 250, 250));
   border-left-color: rgb(219, 215, 215);
   color: rgb(51, 51, 51);
@@ -13239,6 +13401,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, hsl(0, 0%, 97.2%));
   border-bottom-color: rgb(51, 51, 51);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -14250,6 +14413,9 @@ html[saved-theme="light"] body .callout[data-callout="a"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -14351,6 +14517,7 @@ html[saved-theme="light"] body .callout[data-callout="a"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -14629,6 +14796,9 @@ html[saved-theme="light"] body .callout[data-callout="activity"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -14730,6 +14900,7 @@ html[saved-theme="light"] body .callout[data-callout="activity"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -14959,6 +15130,9 @@ html[saved-theme="light"] body .callout[data-callout="add"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -15060,6 +15234,7 @@ html[saved-theme="light"] body .callout[data-callout="add"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -15289,6 +15464,9 @@ html[saved-theme="light"] body .callout[data-callout="arrow"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -15390,6 +15568,7 @@ html[saved-theme="light"] body .callout[data-callout="arrow"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -15619,6 +15798,9 @@ html[saved-theme="light"] body .callout[data-callout="b"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -15720,6 +15902,7 @@ html[saved-theme="light"] body .callout[data-callout="b"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -15949,6 +16132,9 @@ html[saved-theme="light"] body .callout[data-callout="beats"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -16050,6 +16236,7 @@ html[saved-theme="light"] body .callout[data-callout="beats"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -16279,6 +16466,9 @@ html[saved-theme="light"] body .callout[data-callout="bookmark"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -16380,6 +16570,7 @@ html[saved-theme="light"] body .callout[data-callout="bookmark"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -16658,6 +16849,9 @@ html[saved-theme="light"] body .callout[data-callout="c"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -16759,6 +16953,7 @@ html[saved-theme="light"] body .callout[data-callout="c"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -16988,6 +17183,9 @@ html[saved-theme="light"] body .callout[data-callout="cake"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -17089,6 +17287,7 @@ html[saved-theme="light"] body .callout[data-callout="cake"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -17318,6 +17517,9 @@ html[saved-theme="light"] body .callout[data-callout="calendar"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -17419,6 +17621,7 @@ html[saved-theme="light"] body .callout[data-callout="calendar"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -17648,6 +17851,9 @@ html[saved-theme="light"] body .callout[data-callout="cancel"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -17749,6 +17955,7 @@ html[saved-theme="light"] body .callout[data-callout="cancel"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -17978,6 +18185,9 @@ html[saved-theme="light"] body .callout[data-callout="cancelled"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -18079,6 +18289,7 @@ html[saved-theme="light"] body .callout[data-callout="cancelled"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -18308,6 +18519,9 @@ html[saved-theme="light"] body .callout[data-callout="close"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -18409,6 +18623,7 @@ html[saved-theme="light"] body .callout[data-callout="close"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -18637,6 +18852,9 @@ html[saved-theme="light"] body .callout[data-callout="comment"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -18738,6 +18956,7 @@ html[saved-theme="light"] body .callout[data-callout="comment"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -18966,6 +19185,9 @@ html[saved-theme="light"] body .callout[data-callout="cons"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -19067,6 +19289,7 @@ html[saved-theme="light"] body .callout[data-callout="cons"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -19295,6 +19518,9 @@ html[saved-theme="light"] body .callout[data-callout="d"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -19396,6 +19622,7 @@ html[saved-theme="light"] body .callout[data-callout="d"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -19673,6 +19900,9 @@ html[saved-theme="light"] body .callout[data-callout="down"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -19774,6 +20004,7 @@ html[saved-theme="light"] body .callout[data-callout="down"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -20002,6 +20233,9 @@ html[saved-theme="light"] body .callout[data-callout="download"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -20103,6 +20337,7 @@ html[saved-theme="light"] body .callout[data-callout="download"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -20331,6 +20566,9 @@ html[saved-theme="light"] body .callout[data-callout="e"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -20432,6 +20670,7 @@ html[saved-theme="light"] body .callout[data-callout="e"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -20660,6 +20899,9 @@ html[saved-theme="light"] body .callout[data-callout="event"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -20761,6 +21003,7 @@ html[saved-theme="light"] body .callout[data-callout="event"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -21038,6 +21281,9 @@ html[saved-theme="light"] body .callout[data-callout="eye"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -21139,6 +21385,7 @@ html[saved-theme="light"] body .callout[data-callout="eye"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -21416,6 +21663,9 @@ html[saved-theme="light"] body .callout[data-callout="forwarded"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -21517,6 +21767,7 @@ html[saved-theme="light"] body .callout[data-callout="forwarded"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -21745,6 +21996,9 @@ html[saved-theme="light"] body .callout[data-callout="g"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -21846,6 +22100,7 @@ html[saved-theme="light"] body .callout[data-callout="g"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -22074,6 +22329,9 @@ html[saved-theme="light"] body .callout[data-callout="game"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -22175,6 +22433,7 @@ html[saved-theme="light"] body .callout[data-callout="game"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -22403,6 +22662,9 @@ html[saved-theme="light"] body .callout[data-callout="h"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -22504,6 +22766,7 @@ html[saved-theme="light"] body .callout[data-callout="h"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -22732,6 +22995,9 @@ html[saved-theme="light"] body .callout[data-callout="handshake"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -22833,6 +23099,7 @@ html[saved-theme="light"] body .callout[data-callout="handshake"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -23061,6 +23328,9 @@ html[saved-theme="light"] body .callout[data-callout="heart"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -23162,6 +23432,7 @@ html[saved-theme="light"] body .callout[data-callout="heart"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -23390,6 +23661,9 @@ html[saved-theme="light"] body .callout[data-callout="home"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -23491,6 +23765,7 @@ html[saved-theme="light"] body .callout[data-callout="home"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -23719,6 +23994,9 @@ html[saved-theme="light"] body .callout[data-callout="i"] {
   --background-primary-alt: hsl(0, 0%, 97.2%);
   --background-secondary: hsl(0, 0%, 98.2%);
   --background-secondary-alt: hsl(0, 0%, 101.2%);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --bg-box-top: hsl(224, 74%, 73%);
   --blockquote-border-color: hsl(0, 5%, 50%, 0.28);
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
@@ -23820,6 +24098,7 @@ html[saved-theme="light"] body .callout[data-callout="i"] {
   --editing-file-line-width: 700px;
   --flair-background: hsl(0, 0%, 101.2%);
   --flair-color: hsl(0, 0%, 20%);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-theme: 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-mermaid: '??', 'iA Writer Quattro S', 'Nanum Gothic Coding', "MS PGothic",'PingFang SC', '蘋方', '蘋方 SC', "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -24685,6 +24964,21 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(228, 70%, 66%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(228, 70%, 66%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(228, 70%, 66%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(228, 70%, 66%, 0.15));
+  --pill-color: var(--tag-color, hsl(228, 70%, 66%));
+  --pill-color-hover: var(--tag-color-hover, hsl(228, 70%, 66%));
+  --pill-color-remove: var(--tag-rb-text-light, hsl(228, 60%, 30%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(228, 70%, 66%));
+  --pill-padding-x: var(--tag-padding-x, 6px);
+  --pill-padding-y: var(--tag-padding-y, 2px);
+  --pill-radius: var(--tag-radius, 5px);
+  --tag-rb: hsl(var(--accent-h), 50%, 60%, var(--tag-opacity));
+  --tag-rb-hover: hsl(var(--accent-h), 50%,  60%, var(--tag-opacity-hover));
+  --tag-rb-text-dark: hsl(var(--accent-h), 40%, 80%);
+  --tag-rb-text-light: hsl(var(--accent-h), 60%, 30%);
   background-color: var(--tag-rb, rgba(102, 122, 204, 0.25));
   border-bottom-color: rgb(31, 49, 122);
   border-bottom-left-radius: 5px;
@@ -24702,6 +24996,7 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  --font-weight: var(--h1-weight, 600);
   color: var(--h1-color, rgb(51, 51, 51));
   font-family: var(--h1-font, "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -24713,6 +25008,7 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  --font-weight: var(--h2-weight, 600);
   color: var(--h2-color, rgb(51, 51, 51));
   font-family: var(--h2-font, "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -24723,16 +25019,19 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  --font-weight: var(--h3-weight, 600);
   color: var(--h3-color, rgb(51, 51, 51));
   font-family: var(--h3-font, "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
+  --font-weight: var(--h4-weight, 600);
   color: var(--h4-color, rgb(51, 51, 51));
   font-family: var(--h4-font, "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
+  --font-weight: var(--h5-weight, 600);
   color: var(--h5-color, rgb(51, 51, 51));
   font-family: var(--h5-font, "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -24950,10 +25249,26 @@ html[saved-theme="light"] body .note-properties-key {
 }
 
 html[saved-theme="light"] body .note-properties-row {
+  --pill-background: hsl(var(--color-accent-hsl), 0.15);
   border-color: rgb(69, 69, 69);
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(228, 70%, 66%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(228, 70%, 66%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(228, 70%, 66%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(228, 70%, 66%, 0.15));
+  --pill-color: var(--tag-color, hsl(228, 70%, 66%));
+  --pill-color-hover: var(--tag-color-hover, hsl(228, 70%, 66%));
+  --pill-color-remove: var(--tag-rb-text-light, hsl(228, 60%, 30%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(228, 70%, 66%));
+  --pill-padding-x: var(--tag-padding-x, 6px);
+  --pill-padding-y: var(--tag-padding-y, 2px);
+  --pill-radius: var(--tag-radius, 5px);
+  --tag-rb: hsl(var(--accent-h), 50%, 60%, var(--tag-opacity));
+  --tag-rb-hover: hsl(var(--accent-h), 50%,  60%, var(--tag-opacity-hover));
+  --tag-rb-text-dark: hsl(var(--accent-h), 40%, 80%);
+  --tag-rb-text-light: hsl(var(--accent-h), 60%, 30%);
   background-color: var(--tag-rb, rgba(102, 122, 204, 0.25));
   border-radius: 5px;
   color: var(--tag-rb-text-light, rgb(31, 49, 122));
@@ -25058,6 +25373,11 @@ html[saved-theme="light"] body sup {
 }
 
 html[saved-theme="light"] body ul.tags > li {
+  --pill-color-remove: var(--tag-rb-text-light, hsl(228, 60%, 30%));
+  --tag-rb: hsl(var(--accent-h), 50%, 60%, var(--tag-opacity));
+  --tag-rb-hover: hsl(var(--accent-h), 50%,  60%, var(--tag-opacity-hover));
+  --tag-rb-text-dark: hsl(var(--accent-h), 40%, 80%);
+  --tag-rb-text-light: hsl(var(--accent-h), 60%, 30%);
   background-color: var(--tag-rb, rgba(102, 122, 204, 0.25));
   border-bottom-color: rgba(108, 132, 229, 0.15);
   border-bottom-left-radius: 5px;

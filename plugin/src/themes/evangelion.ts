@@ -222,6 +222,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #452f5c);
   background-color: var(--tab-container-background, rgb(69, 47, 92));
   color: rgb(225, 214, 248);
 }
@@ -241,6 +242,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #452f5c);
   background-color: var(--tab-container-background, rgb(69, 47, 92));
   border-left-color: rgb(72, 49, 96);
   color: rgb(225, 214, 248);
@@ -445,6 +447,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #30213f);
   border-bottom-color: rgb(225, 214, 248);
   border-left-color: rgb(225, 214, 248);
   border-right-color: rgb(225, 214, 248);
@@ -1950,6 +1953,12 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, #67478a);
+  --pill-color: var(--tag-color, #87ff5f);
+  --pill-color-hover: var(--tag-color-hover, #875faf);
+  --pill-color-remove: var(--tag-color, #87ff5f);
+  --pill-color-remove-hover: var(--tag-color-hover, #875faf);
+  --pill-radius: var(--tag-radius, 0px);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(135, 255, 95);
   border-bottom-left-radius: 0px;
@@ -2182,6 +2191,12 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, #67478a);
+  --pill-color: var(--tag-color, #87ff5f);
+  --pill-color-hover: var(--tag-color-hover, #875faf);
+  --pill-color-remove: var(--tag-color, #87ff5f);
+  --pill-color-remove-hover: var(--tag-color-hover, #875faf);
+  --pill-radius: var(--tag-radius, 0px);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-radius: 0px;
   color: var(--pill-color, rgb(135, 255, 95));

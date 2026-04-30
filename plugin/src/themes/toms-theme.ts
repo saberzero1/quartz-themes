@@ -209,6 +209,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, black);
   background-color: var(--tab-container-background, rgb(0, 0, 0));
   color: rgb(68, 207, 110);
 }
@@ -228,6 +229,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, black);
   background-color: var(--tab-container-background, rgb(0, 0, 0));
   border-left-color: rgb(48, 104, 80);
   color: rgb(68, 207, 110);
@@ -404,6 +406,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #071821);
   border-bottom-color: rgb(68, 207, 110);
   border-left-color: rgb(68, 207, 110);
   border-right-color: rgb(68, 207, 110);
@@ -1303,6 +1306,10 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #44cf6e);
+  --pill-color-hover: var(--tag-color-hover, #44cf6e);
+  --pill-color-remove: var(--tag-color, #44cf6e);
+  --pill-color-remove-hover: var(--tag-color-hover, #44cf6e);
   font-family: "??", "??", "??", Courier, monospace;
 }
 
@@ -1511,6 +1518,10 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #44cf6e);
+  --pill-color-hover: var(--tag-color-hover, #44cf6e);
+  --pill-color-remove: var(--tag-color, #44cf6e);
+  --pill-color-remove-hover: var(--tag-color-hover, #44cf6e);
   color: var(--pill-color, rgb(68, 207, 110));
 }
 
@@ -1813,6 +1824,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #e0f8cf);
   background-color: var(--tab-container-background, rgb(224, 248, 207));
   color: rgb(7, 24, 33);
 }
@@ -1832,6 +1844,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #e0f8cf);
   background-color: var(--tab-container-background, rgb(224, 248, 207));
   border-left-color: rgb(7, 24, 33);
   color: rgb(7, 24, 33);
@@ -2008,6 +2021,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #cfe6be);
   border-bottom-color: rgb(7, 24, 33);
   border-left-color: rgb(7, 24, 33);
   border-right-color: rgb(7, 24, 33);
@@ -2907,6 +2921,10 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #08b94e);
+  --pill-color-hover: var(--tag-color-hover, #08b94e);
+  --pill-color-remove: var(--tag-color, #08b94e);
+  --pill-color-remove-hover: var(--tag-color-hover, #08b94e);
   font-family: "??", "??", "??", Courier, monospace;
 }
 
@@ -3115,6 +3133,10 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #08b94e);
+  --pill-color-hover: var(--tag-color-hover, #08b94e);
+  --pill-color-remove: var(--tag-color, #08b94e);
+  --pill-color-remove-hover: var(--tag-color-hover, #08b94e);
   color: var(--pill-color, rgb(8, 185, 78));
 }
 

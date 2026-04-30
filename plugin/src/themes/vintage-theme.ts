@@ -158,6 +158,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #5b5b5b);
   background-color: var(--tab-container-background, rgb(91, 91, 91));
   color: rgb(227, 218, 207);
 }
@@ -177,6 +178,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #5b5b5b);
   background-color: var(--tab-container-background, rgb(91, 91, 91));
   color: rgb(227, 218, 207);
 }
@@ -456,6 +458,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #474747);
   border-bottom-color: rgb(227, 218, 207);
   border-left-color: rgb(227, 218, 207);
   border-right-color: rgb(227, 218, 207);
@@ -1574,6 +1577,33 @@ html body .canvas-node-content {
 }
 
 html body .canvas-node-file {
+  --acrtive-line: var(--gray-dark, #4C566A);
+  --background-modifier-border: var(--dark2, #5b5b5b);
+  --background-primary-alt: var(--dark3, #707070);
+  --background-secondary: var(--dark1, #474747);
+  --background-secondary-alt: var(--dark0, #333333);
+  --code-block: var(--light0, #fdf3e7);
+  --inline-code: var(--light0, #fdf3e7);
+  --interactive-accent: var(--light0, #fdf3e7);
+  --interactive-accent-rgb: var(--yellow, #ebc06c);
+  --interactive-before: var(--dark3, #707070);
+  --pre-code: var(--dark1, #474747);
+  --text-a: var(--red2, #d1633e);
+  --text-a-hover: var(--text-normal, #fdf3e7);
+  --text-accent: var(--yellow, #ebc06c);
+  --text-faint: var(--gray, #999999);
+  --text-highlight-bg: var(--yellow, #ebc06c);
+  --text-link: var(--red2, #d1633e);
+  --text-muted: var(--gray, #999999);
+  --text-normal: var(--light0, #fdf3e7);
+  --text-selection: var(--yellow2, #b49c5f);
+  --text-title-h1: var(--light0, #fdf3e7);
+  --text-title-h2: var(--light0, #fdf3e7);
+  --text-title-h3: var(--light0, #fdf3e7);
+  --text-title-h4: var(--light0, #fdf3e7);
+  --text-title-h5: var(--light0, #fdf3e7);
+  --text-title-h6: var(--light0, #fdf3e7);
+  --vim-cursor: var(--yellow, #ebc06c);
   background-color: rgb(51, 51, 51);
   color: var(--text-normal, rgb(253, 243, 231));
 }

@@ -323,6 +323,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #f8f8f8);
   background-color: var(--tab-container-background, rgb(248, 248, 248));
   color: rgb(47, 47, 47);
 }
@@ -342,6 +343,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #f8f8f8);
   background-color: var(--tab-container-background, rgb(248, 248, 248));
   border-left-color: rgb(230, 230, 230);
   color: rgb(47, 47, 47);
@@ -525,6 +527,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #eeeeee);
   border-bottom-color: rgb(47, 47, 47);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1251,6 +1254,7 @@ html body .callout-title {
   --dropdown-padding: 0px 0px 0px 12px;
   --flair-background: #ffffff;
   --flair-color: #2f2f2f;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'Inter', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', 'Inter', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -1950,6 +1954,21 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(45, 100%, 50%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(45, 100%, 50%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(45, 100%, 50%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(45, 100%, 50%, 0.15));
+  --pill-color: var(--tag-color, hsl(45, 100%, 50%));
+  --pill-color-hover: var(--tag-color-hover, hsl(45, 100%, 50%));
+  --pill-color-remove: var(--tag-rb-text-light, #BB72D6);
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(45, 100%, 50%));
+  --pill-padding-x: var(--tag-padding-x, 4px);
+  --pill-padding-y: var(--tag-padding-y, 0px);
+  --pill-radius: var(--tag-radius, 5px);
+  --tag-rb: rgba(var(--color-pink-rgb), var(--tag-opacity));
+  --tag-rb-hover: rgba(var(--color-pink-rgb), var(--tag-opacity-hover));
+  --tag-rb-text-dark: var(--color-pink, #BB72D6);
+  --tag-rb-text-light: var(--color-pink, #BB72D6);
   background-color: var(--tag-rb, rgba(187, 114, 214, 0.25));
   border-bottom-color: rgb(187, 114, 214);
   border-bottom-left-radius: 5px;
@@ -2201,6 +2220,21 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(45, 100%, 50%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(45, 100%, 50%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(45, 100%, 50%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(45, 100%, 50%, 0.15));
+  --pill-color: var(--tag-color, hsl(45, 100%, 50%));
+  --pill-color-hover: var(--tag-color-hover, hsl(45, 100%, 50%));
+  --pill-color-remove: var(--tag-rb-text-light, #BB72D6);
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(45, 100%, 50%));
+  --pill-padding-x: var(--tag-padding-x, 4px);
+  --pill-padding-y: var(--tag-padding-y, 0px);
+  --pill-radius: var(--tag-radius, 5px);
+  --tag-rb: rgba(var(--color-pink-rgb), var(--tag-opacity));
+  --tag-rb-hover: rgba(var(--color-pink-rgb), var(--tag-opacity-hover));
+  --tag-rb-text-dark: var(--color-pink, #BB72D6);
+  --tag-rb-text-light: var(--color-pink, #BB72D6);
   background-color: var(--tag-rb, rgba(187, 114, 214, 0.25));
   border-radius: 5px;
   color: var(--tag-rb-text-light, rgb(187, 114, 214));
@@ -2302,6 +2336,11 @@ html body sup {
 }
 
 html body ul.tags > li {
+  --pill-color-remove: var(--tag-rb-text-light, #BB72D6);
+  --tag-rb: rgba(var(--color-pink-rgb), var(--tag-opacity));
+  --tag-rb-hover: rgba(var(--color-pink-rgb), var(--tag-opacity-hover));
+  --tag-rb-text-dark: var(--color-pink, #BB72D6);
+  --tag-rb-text-light: var(--color-pink, #BB72D6);
   background-color: var(--tag-rb, rgba(187, 114, 214, 0.25));
   border-bottom-color: rgba(255, 191, 0, 0.15);
   border-bottom-left-radius: 5px;

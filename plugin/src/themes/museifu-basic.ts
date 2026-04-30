@@ -179,6 +179,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, rgb(24, 24, 24));
   background-color: var(--tab-container-background, rgb(24, 24, 24));
   color: color(srgb 0.862096 0.80824 0.98776);
 }
@@ -199,6 +200,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, rgb(24, 24, 24));
   background-color: var(--tab-container-background, rgb(24, 24, 24));
   border-left-color: rgba(0, 0, 0, 0);
   color: color(srgb 0.862096 0.80824 0.98776);
@@ -402,6 +404,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%));
   border-bottom-color: color(srgb 0.862096 0.80824 0.98776);
   border-left-color: color(srgb 0.862096 0.80824 0.98776);
   border-right-color: color(srgb 0.862096 0.80824 0.98776);
@@ -1023,6 +1026,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -1062,6 +1066,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -1101,6 +1106,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -1140,6 +1146,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -1179,6 +1186,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -1218,6 +1226,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -1257,6 +1266,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -1296,6 +1306,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -1335,6 +1346,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -1374,6 +1386,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -1413,6 +1426,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -1452,6 +1466,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -1491,6 +1506,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -1530,6 +1546,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -2126,6 +2143,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, rgb(197, 197, 197));
   background-color: var(--tab-container-background, rgb(197, 197, 197));
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
@@ -2146,6 +2164,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, rgb(197, 197, 197));
   background-color: var(--tab-container-background, rgb(197, 197, 197));
   border-left-color: rgba(0, 0, 0, 0);
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
@@ -2354,6 +2373,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%));
   border-bottom-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-left-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-right-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
@@ -2975,6 +2995,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -3014,6 +3035,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -3053,6 +3075,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -3092,6 +3115,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -3131,6 +3155,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -3170,6 +3195,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -3209,6 +3235,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -3248,6 +3275,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -3287,6 +3315,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -3326,6 +3355,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -3365,6 +3395,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -3404,6 +3435,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -3443,6 +3475,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 
@@ -3482,6 +3515,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, bold);
   font-weight: var(--font-weight, 700);
 }
 

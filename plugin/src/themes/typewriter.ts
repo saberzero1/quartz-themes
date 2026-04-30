@@ -409,6 +409,11 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(
+    30,
+    11.5%,
+    20.4%
+  ));
   background-color: var(--tab-container-background, rgb(58, 52, 46));
   color: rgb(197, 184, 161);
 }
@@ -428,6 +433,11 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(
+    30,
+    11.5%,
+    20.4%
+  ));
   background-color: var(--tab-container-background, rgb(58, 52, 46));
   border-left-color: rgb(51, 51, 51);
   color: rgb(197, 184, 161);
@@ -614,6 +624,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #202020);
   border-bottom-color: rgb(197, 184, 161);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1608,6 +1619,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
 }
 
 html[saved-theme="dark"] body h1 {
+  --font-weight: var(--h1-weight, 600);
   color: var(--h1-color, rgb(197, 184, 161));
   font-family: var(--h1-font, "iA Writer Quattro S");
 }
@@ -1618,6 +1630,7 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  --font-weight: var(--h2-weight, 600);
   color: var(--h2-color, rgb(197, 184, 161));
   font-family: var(--h2-font, "iA Writer Quattro S");
 }
@@ -1628,21 +1641,25 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h3 {
+  --font-weight: var(--h3-weight, 550);
   color: var(--h3-color, rgb(197, 184, 161));
   font-family: var(--h3-font, "iA Writer Quattro S");
 }
 
 html[saved-theme="dark"] body h4 {
+  --font-weight: var(--h4-weight, 550);
   color: var(--h4-color, rgb(197, 184, 161));
   font-family: var(--h4-font, "iA Writer Quattro S");
 }
 
 html[saved-theme="dark"] body h5 {
+  --font-weight: var(--h5-weight, 550);
   color: var(--h5-color, rgb(197, 184, 161));
   font-family: var(--h5-font, "iA Writer Quattro S");
 }
 
 html[saved-theme="dark"] body h6 {
+  --font-weight: var(--h6-weight, 550);
   color: var(--h6-color, rgb(197, 184, 161));
   font-family: var(--h6-font, "iA Writer Quattro S");
 }
@@ -1796,6 +1813,7 @@ html[saved-theme="dark"] body .canvas-sidebar {
   color: var(--table-header-color, rgb(197, 184, 161));
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
+  --input-height: var(--metadata-input-height, 2rem);
   border-bottom-color: rgb(51, 51, 51);
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
@@ -1814,6 +1832,7 @@ html[saved-theme="dark"] body .metadata-properties {
 }
 
 html[saved-theme="dark"] body .note-properties {
+  --input-height: var(--metadata-input-height, 2rem);
   border-color: rgb(51, 51, 51);
 }
 
@@ -2572,6 +2591,11 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(
+    42,
+    34%,
+    84%
+  ));
   background-color: var(--tab-container-background, rgb(228, 220, 200));
   color: rgb(38, 38, 38);
 }
@@ -2591,6 +2615,11 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(
+    42,
+    34%,
+    84%
+  ));
   background-color: var(--tab-container-background, rgb(228, 220, 200));
   border-left-color: rgb(230, 230, 230);
   color: rgb(38, 38, 38);
@@ -2785,6 +2814,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #eee8d5);
   border-bottom-color: rgb(38, 38, 38);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -3770,6 +3800,26 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, hsl(
+    129,
+    31.9%,
+    46.7%
+  ));
+  --pill-color-hover: var(--tag-color-hover, hsl(
+    129,
+    31.9%,
+    46.7%
+  ));
+  --pill-color-remove: var(--tag-color, hsl(
+    129,
+    31.9%,
+    46.7%
+  ));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(
+    129,
+    31.9%,
+    46.7%
+  ));
   border-bottom-left-radius: 26.016px;
   border-bottom-right-radius: 26.016px;
   border-top-left-radius: 26.016px;
@@ -3782,6 +3832,7 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  --font-weight: var(--h1-weight, 600);
   color: var(--h1-color, rgb(38, 38, 38));
   font-family: var(--h1-font, "iA Writer Quattro S");
 }
@@ -3792,6 +3843,7 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  --font-weight: var(--h2-weight, 600);
   color: var(--h2-color, rgb(38, 38, 38));
   font-family: var(--h2-font, "iA Writer Quattro S");
 }
@@ -3802,21 +3854,25 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  --font-weight: var(--h3-weight, 550);
   color: var(--h3-color, rgb(38, 38, 38));
   font-family: var(--h3-font, "iA Writer Quattro S");
 }
 
 html[saved-theme="light"] body h4 {
+  --font-weight: var(--h4-weight, 550);
   color: var(--h4-color, rgb(38, 38, 38));
   font-family: var(--h4-font, "iA Writer Quattro S");
 }
 
 html[saved-theme="light"] body h5 {
+  --font-weight: var(--h5-weight, 550);
   color: var(--h5-color, rgb(38, 38, 38));
   font-family: var(--h5-font, "iA Writer Quattro S");
 }
 
 html[saved-theme="light"] body h6 {
+  --font-weight: var(--h6-weight, 550);
   color: var(--h6-color, rgb(38, 38, 38));
   font-family: var(--h6-font, "iA Writer Quattro S");
 }
@@ -3970,6 +4026,7 @@ html[saved-theme="light"] body .canvas-sidebar {
   color: var(--table-header-color, rgb(38, 38, 38));
 }`,
     properties: `html[saved-theme="light"] body .metadata {
+  --input-height: var(--metadata-input-height, 2rem);
   border-bottom-color: rgb(230, 230, 230);
   border-left-color: rgb(230, 230, 230);
   border-right-color: rgb(230, 230, 230);
@@ -3988,6 +4045,7 @@ html[saved-theme="light"] body .metadata-properties {
 }
 
 html[saved-theme="light"] body .note-properties {
+  --input-height: var(--metadata-input-height, 2rem);
   border-color: rgb(230, 230, 230);
 }
 
@@ -4000,6 +4058,26 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-color: var(--tag-color, hsl(
+    129,
+    31.9%,
+    46.7%
+  ));
+  --pill-color-hover: var(--tag-color-hover, hsl(
+    129,
+    31.9%,
+    46.7%
+  ));
+  --pill-color-remove: var(--tag-color, hsl(
+    129,
+    31.9%,
+    46.7%
+  ));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(
+    129,
+    31.9%,
+    46.7%
+  ));
   border-radius: 26.016px;
   color: var(--pill-color, rgb(81, 157, 92));
 }

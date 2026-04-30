@@ -335,6 +335,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(258, 29.33333%, 15%));
   background-color: var(--tab-container-background, rgb(34, 27, 49));
   color: rgb(198, 189, 219);
 }
@@ -354,6 +355,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(258, 29.33333%, 15%));
   background-color: var(--tab-container-background, rgb(34, 27, 49));
   border-left-color: rgb(79, 63, 115);
   color: rgb(198, 189, 219);
@@ -479,6 +481,8 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
+  --color: var(--accent-rgb, from hsl(258, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
   background-color: rgba(var(--color) / var(--opacity));
   font-family: "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-bottom: 8px;
@@ -492,6 +496,7 @@ html[saved-theme="dark"] body blockquote {
 }
 
 html[saved-theme="dark"] body table {
+  --text-highlight-bg: rgba(var(--accent-rgb) / var(--opacity));
   color: rgb(198, 189, 219);
   font-family: "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   margin-left: 237.469px;
@@ -562,6 +567,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, rgba(from hsl(258, 88%, 66%) r g b / 0.15));
   border-bottom-color: rgb(198, 189, 219);
   border-left-color: rgb(198, 189, 219);
   border-right-color: rgb(198, 189, 219);
@@ -1217,6 +1223,9 @@ html[saved-theme="dark"] body .callout > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary, from hsl(185, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(185, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.3608 0.909334 0.9592 / 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / var(--opacity));
   border-bottom-color: color(srgb 0.3608 0.909334 0.9592 / 0.25);
@@ -1244,6 +1253,9 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug, from hsl(5, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(5, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.9592 0.410667 0.3608 / 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / var(--opacity));
   border-bottom-color: color(srgb 0.9592 0.410667 0.3608 / 0.25);
@@ -1271,6 +1283,9 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
   --callout-color: var(--callout-error, from hsl(5, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(5, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.9592 0.410667 0.3608 / 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / var(--opacity));
   border-bottom-color: color(srgb 0.9592 0.410667 0.3608 / 0.25);
@@ -1298,6 +1313,9 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
   --callout-color: var(--callout-example, from hsl(270, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(270, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.66 0.3608 0.9592 / 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / var(--opacity));
   border-bottom-color: color(srgb 0.66 0.3608 0.9592 / 0.25);
@@ -1325,6 +1343,9 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail, from hsl(5, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(5, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.9592 0.410667 0.3608 / 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / var(--opacity));
   border-bottom-color: color(srgb 0.9592 0.410667 0.3608 / 0.25);
@@ -1352,6 +1373,9 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
   --callout-color: var(--callout-info, from hsl(210, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(210, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.3608 0.66 0.9592 / 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / var(--opacity));
   border-bottom-color: color(srgb 0.3608 0.66 0.9592 / 0.25);
@@ -1379,6 +1403,9 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
   --callout-color: var(--callout-default, from hsl(210, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(210, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.3608 0.66 0.9592 / 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / var(--opacity));
   border-bottom-color: color(srgb 0.3608 0.66 0.9592 / 0.25);
@@ -1406,6 +1433,9 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
   --callout-color: var(--callout-question, from hsl(25, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(25, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.9592 0.610133 0.3608 / 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / var(--opacity));
   border-bottom-color: color(srgb 0.9592 0.610133 0.3608 / 0.25);
@@ -1433,6 +1463,9 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
   --callout-color: var(--callout-quote, from hsl(258, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(258, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.54032 0.3608 0.9592 / 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / var(--opacity));
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.25);
@@ -1460,6 +1493,9 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
   --callout-color: var(--callout-success, from hsl(100, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(100, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.560267 0.9592 0.3608 / 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / var(--opacity));
   border-bottom-color: color(srgb 0.560267 0.9592 0.3608 / 0.25);
@@ -1487,6 +1523,9 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip, from hsl(185, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(185, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.3608 0.909334 0.9592 / 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / var(--opacity));
   border-bottom-color: color(srgb 0.3608 0.909334 0.9592 / 0.25);
@@ -1514,6 +1553,9 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo, from hsl(210, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(210, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.3608 0.66 0.9592 / 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / var(--opacity));
   border-bottom-color: color(srgb 0.3608 0.66 0.9592 / 0.25);
@@ -1541,6 +1583,9 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning, from hsl(25, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(25, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.9592 0.610133 0.3608 / 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / var(--opacity));
   border-bottom-color: color(srgb 0.9592 0.610133 0.3608 / 0.25);
@@ -1745,6 +1790,9 @@ html[saved-theme="dark"] body hr {
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, from hsl(210, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(210, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   border-bottom-color: color(srgb 0.3608 0.66 0.9592 / 0.25);
   border-left-color: color(srgb 0.3608 0.66 0.9592 / 0.25);
   border-right-color: color(srgb 0.3608 0.66 0.9592 / 0.25);
@@ -1874,7 +1922,11 @@ html[saved-theme="dark"] body .canvas-sidebar {
   background-color: var(--background-secondary, rgb(34, 27, 49));
   border-color: rgb(198, 189, 219);
 }`,
-    bases: `html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
+    bases: `html[saved-theme="dark"] body .bases-table {
+  --text-highlight-bg: rgba(var(--accent-rgb) / var(--opacity));
+}
+
+html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
   background-color: var(--table-row-alt-background, color(srgb 0.54032 0.3608 0.9592 / 0.15));
 }
 
@@ -2354,6 +2406,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(258, 29.33333%, 95%));
   background-color: var(--tab-container-background, rgb(241, 239, 246));
   color: rgb(45, 36, 66);
 }
@@ -2373,6 +2426,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(258, 29.33333%, 95%));
   background-color: var(--tab-container-background, rgb(241, 239, 246));
   border-left-color: rgb(184, 173, 210);
   color: rgb(45, 36, 66);
@@ -2492,6 +2546,8 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
+  --color: var(--accent-rgb, from hsl(258, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
   background-color: rgba(var(--color) / 0.1);
   font-family: "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-bottom: 8px;
@@ -2505,6 +2561,7 @@ html[saved-theme="light"] body blockquote {
 }
 
 html[saved-theme="light"] body table {
+  --text-highlight-bg: rgba(var(--accent-rgb) / var(--opacity));
   color: rgb(45, 36, 66);
   font-family: "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   margin-left: 237.469px;
@@ -2575,6 +2632,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, rgba(from hsl(258, 88%, 66%) r g b / 0.1));
   border-bottom-color: rgb(45, 36, 66);
   border-left-color: rgb(45, 36, 66);
   border-right-color: rgb(45, 36, 66);
@@ -3231,6 +3289,9 @@ html[saved-theme="light"] body .callout > .callout-content {
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary, from hsl(185, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(185, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.3608 0.909334 0.9592 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / 0.1);
   border-bottom-color: color(srgb 0.3608 0.909334 0.9592 / 0.25);
@@ -3258,6 +3319,9 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug, from hsl(5, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(5, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.9592 0.410667 0.3608 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / 0.1);
   border-bottom-color: color(srgb 0.9592 0.410667 0.3608 / 0.25);
@@ -3285,6 +3349,9 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
   --callout-color: var(--callout-error, from hsl(5, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(5, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.9592 0.410667 0.3608 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / 0.1);
   border-bottom-color: color(srgb 0.9592 0.410667 0.3608 / 0.25);
@@ -3312,6 +3379,9 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
   --callout-color: var(--callout-example, from hsl(270, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(270, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.66 0.3608 0.9592 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / 0.1);
   border-bottom-color: color(srgb 0.66 0.3608 0.9592 / 0.25);
@@ -3339,6 +3409,9 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail, from hsl(5, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(5, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.9592 0.410667 0.3608 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / 0.1);
   border-bottom-color: color(srgb 0.9592 0.410667 0.3608 / 0.25);
@@ -3366,6 +3439,9 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
   --callout-color: var(--callout-info, from hsl(210, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(210, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.3608 0.66 0.9592 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / 0.1);
   border-bottom-color: color(srgb 0.3608 0.66 0.9592 / 0.25);
@@ -3393,6 +3469,9 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
   --callout-color: var(--callout-default, from hsl(210, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(210, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.3608 0.66 0.9592 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / 0.1);
   border-bottom-color: color(srgb 0.3608 0.66 0.9592 / 0.25);
@@ -3420,6 +3499,9 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
   --callout-color: var(--callout-question, from hsl(25, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(25, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.9592 0.610133 0.3608 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / 0.1);
   border-bottom-color: color(srgb 0.9592 0.610133 0.3608 / 0.25);
@@ -3447,6 +3529,9 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
   --callout-color: var(--callout-quote, from hsl(258, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(258, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.54032 0.3608 0.9592 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / 0.1);
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.25);
@@ -3474,6 +3559,9 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
   --callout-color: var(--callout-success, from hsl(100, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(100, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.560267 0.9592 0.3608 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / 0.1);
   border-bottom-color: color(srgb 0.560267 0.9592 0.3608 / 0.25);
@@ -3501,6 +3589,9 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip, from hsl(185, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(185, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.3608 0.909334 0.9592 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / 0.1);
   border-bottom-color: color(srgb 0.3608 0.909334 0.9592 / 0.25);
@@ -3528,6 +3619,9 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo, from hsl(210, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(210, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.3608 0.66 0.9592 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / 0.1);
   border-bottom-color: color(srgb 0.3608 0.66 0.9592 / 0.25);
@@ -3555,6 +3649,9 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning, from hsl(25, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(25, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   background: color(srgb 0.9592 0.610133 0.3608 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--color) / 0.1);
   border-bottom-color: color(srgb 0.9592 0.610133 0.3608 / 0.25);
@@ -3759,6 +3856,9 @@ html[saved-theme="light"] body hr {
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, from hsl(210, 88%, 66%) r g b);
+  --color: var(--callout-color, from hsl(210, 88%, 66%) r g b);
+  --hr-color: rgb(var(--color));
+  --text-highlight-bg: rgba(var(--color) / calc(var(--opacity)*2));
   border-bottom-color: color(srgb 0.3608 0.66 0.9592 / 0.25);
   border-left-color: color(srgb 0.3608 0.66 0.9592 / 0.25);
   border-right-color: color(srgb 0.3608 0.66 0.9592 / 0.25);
@@ -3888,7 +3988,11 @@ html[saved-theme="light"] body .canvas-sidebar {
   background-color: var(--background-primary, rgb(249, 248, 251));
   border-color: rgb(45, 36, 66);
 }`,
-    bases: `html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
+    bases: `html[saved-theme="light"] body .bases-table {
+  --text-highlight-bg: rgba(var(--accent-rgb) / var(--opacity));
+}
+
+html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
   background-color: var(--table-row-alt-background, color(srgb 0.54032 0.3608 0.9592 / 0.1));
 }
 

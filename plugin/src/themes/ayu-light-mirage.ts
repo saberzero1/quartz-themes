@@ -376,6 +376,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, rgb(31 36 48));
   background-color: var(--tab-container-background, rgb(31, 36, 48));
   color: rgb(204, 202, 194);
 }
@@ -395,6 +396,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, rgb(31 36 48));
   background-color: var(--tab-container-background, rgb(31, 36, 48));
   border-left-color: rgb(23, 27, 36);
   color: rgb(204, 202, 194);
@@ -578,6 +580,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, rgb(28 33 43));
   border-bottom-color: rgb(204, 202, 194);
   border-left-color: rgb(204, 202, 194);
   border-right-color: rgb(204, 202, 194);
@@ -1201,6 +1204,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(115, 208, 255));
   font-weight: var(--font-weight, 500);
 }
@@ -1229,6 +1233,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(115, 208, 255));
   font-weight: var(--font-weight, 500);
 }
@@ -1257,6 +1262,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(115, 208, 255));
   font-weight: var(--font-weight, 500);
 }
@@ -1285,6 +1291,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(115, 208, 255));
   font-weight: var(--font-weight, 500);
 }
@@ -1313,6 +1320,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(115, 208, 255));
   font-weight: var(--font-weight, 500);
 }
@@ -1341,6 +1349,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(115, 208, 255));
   font-weight: var(--font-weight, 500);
 }
@@ -1369,6 +1378,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(115, 208, 255));
   font-weight: var(--font-weight, 500);
 }
@@ -1397,6 +1407,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(115, 208, 255));
   font-weight: var(--font-weight, 500);
 }
@@ -1425,6 +1436,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(115, 208, 255));
   font-weight: var(--font-weight, 500);
 }
@@ -1453,6 +1465,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(115, 208, 255));
   font-weight: var(--font-weight, 500);
 }
@@ -1481,6 +1494,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(115, 208, 255));
   font-weight: var(--font-weight, 500);
 }
@@ -1509,6 +1523,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(115, 208, 255));
   font-weight: var(--font-weight, 500);
 }
@@ -1537,6 +1552,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(115, 208, 255));
   font-weight: var(--font-weight, 500);
 }
@@ -1565,6 +1581,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(115, 208, 255));
   font-weight: var(--font-weight, 500);
 }
@@ -1702,6 +1719,14 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, rgb(92 207 230 / 0.2));
+  --pill-background-hover: var(--tag-background-hover, rgb(92 207 230 / 0.4));
+  --pill-border-color: var(--tag-border-color, hsla(40, 100%, 70%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(40, 100%, 70%, 0.15));
+  --pill-color: var(--tag-color, rgb(92 207 230));
+  --pill-color-hover: var(--tag-color-hover, rgb(92 207 230 / 0.8));
+  --pill-color-remove: var(--tag-color, rgb(92 207 230));
+  --pill-color-remove-hover: var(--tag-color-hover, rgb(92 207 230 / 0.8));
   background-color: var(--pill-background, rgba(92, 207, 230, 0.2));
   border-bottom-color: rgba(255, 204, 102, 0.15);
   border-left-color: rgba(255, 204, 102, 0.15);
@@ -1715,6 +1740,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  --font-weight: var(--h1-weight, 500);
   color: var(--h1-color, rgb(255, 173, 102));
   font-family: var(--h1-font, "??", Lora, Songti, Batang, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -1725,6 +1751,7 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  --font-weight: var(--h2-weight, 500);
   color: var(--h2-color, rgb(255, 208, 115));
   font-family: var(--h2-font, "??", Lora, Songti, Batang, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -1735,21 +1762,25 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h3 {
+  --font-weight: var(--h3-weight, 500);
   color: var(--h3-color, rgb(255, 223, 179));
   font-family: var(--h3-font, "??", Lora, Songti, Batang, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
+  --font-weight: var(--h4-weight, 500);
   color: var(--h4-color, rgb(242, 158, 116));
   font-family: var(--h4-font, "??", Lora, Songti, Batang, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
+  --font-weight: var(--h5-weight, 600);
   color: var(--h5-color, rgb(242, 158, 116));
   font-family: var(--h5-font, "??", Lora, Songti, Batang, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
+  --font-weight: var(--h6-weight, 700);
   color: var(--h6-color, rgb(242, 158, 116));
   font-family: var(--h6-font, "??", Lora, Songti, Batang, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -1925,6 +1956,14 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, rgb(92 207 230 / 0.2));
+  --pill-background-hover: var(--tag-background-hover, rgb(92 207 230 / 0.4));
+  --pill-border-color: var(--tag-border-color, hsla(40, 100%, 70%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(40, 100%, 70%, 0.15));
+  --pill-color: var(--tag-color, rgb(92 207 230));
+  --pill-color-hover: var(--tag-color-hover, rgb(92 207 230 / 0.8));
+  --pill-color-remove: var(--tag-color, rgb(92 207 230));
+  --pill-color-remove-hover: var(--tag-color-hover, rgb(92 207 230 / 0.8));
   background-color: var(--pill-background, rgba(92, 207, 230, 0.2));
   color: var(--pill-color, rgb(92, 207, 230));
 }
@@ -2401,6 +2440,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, rgb(248 249 250));
   background-color: var(--tab-container-background, rgb(248, 249, 250));
   color: rgb(92, 97, 102);
 }
@@ -2420,6 +2460,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, rgb(248 249 250));
   background-color: var(--tab-container-background, rgb(248, 249, 250));
   border-left-color: rgba(107, 125, 143, 0.12);
   color: rgb(92, 97, 102);
@@ -2603,6 +2644,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, rgb(243 244 245));
   border-bottom-color: rgb(92, 97, 102);
   border-left-color: rgb(92, 97, 102);
   border-right-color: rgb(92, 97, 102);
@@ -3226,6 +3268,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(57, 158, 230));
   font-weight: var(--font-weight, 500);
 }
@@ -3254,6 +3297,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(57, 158, 230));
   font-weight: var(--font-weight, 500);
 }
@@ -3282,6 +3326,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(57, 158, 230));
   font-weight: var(--font-weight, 500);
 }
@@ -3310,6 +3355,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(57, 158, 230));
   font-weight: var(--font-weight, 500);
 }
@@ -3338,6 +3384,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(57, 158, 230));
   font-weight: var(--font-weight, 500);
 }
@@ -3366,6 +3413,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(57, 158, 230));
   font-weight: var(--font-weight, 500);
 }
@@ -3394,6 +3442,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(57, 158, 230));
   font-weight: var(--font-weight, 500);
 }
@@ -3422,6 +3471,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(57, 158, 230));
   font-weight: var(--font-weight, 500);
 }
@@ -3450,6 +3500,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(57, 158, 230));
   font-weight: var(--font-weight, 500);
 }
@@ -3478,6 +3529,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(57, 158, 230));
   font-weight: var(--font-weight, 500);
 }
@@ -3506,6 +3558,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(57, 158, 230));
   font-weight: var(--font-weight, 500);
 }
@@ -3534,6 +3587,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(57, 158, 230));
   font-weight: var(--font-weight, 500);
 }
@@ -3562,6 +3616,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(57, 158, 230));
   font-weight: var(--font-weight, 500);
 }
@@ -3590,6 +3645,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 500);
   color: var(--callout-title-color, rgb(57, 158, 230));
   font-weight: var(--font-weight, 500);
 }
@@ -3727,6 +3783,14 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, rgb(85 180 212 / 0.2));
+  --pill-background-hover: var(--tag-background-hover, rgb(85 180 212 / 0.4));
+  --pill-border-color: var(--tag-border-color, hsla(35, 100%, 60%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(35, 100%, 60%, 0.15));
+  --pill-color: var(--tag-color, rgb(85 180 212));
+  --pill-color-hover: var(--tag-color-hover, rgb(85 180 212 / 0.8));
+  --pill-color-remove: var(--tag-color, rgb(85 180 212));
+  --pill-color-remove-hover: var(--tag-color-hover, rgb(85 180 212 / 0.8));
   background-color: var(--pill-background, rgba(85, 180, 212, 0.2));
   border-bottom-color: rgba(255, 170, 51, 0.15);
   border-left-color: rgba(255, 170, 51, 0.15);
@@ -3740,6 +3804,7 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  --font-weight: var(--h1-weight, 500);
   color: var(--h1-color, rgb(250, 141, 62));
   font-family: var(--h1-font, "??", Lora, Songti, Batang, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -3750,6 +3815,7 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  --font-weight: var(--h2-weight, 500);
   color: var(--h2-color, rgb(242, 174, 73));
   font-family: var(--h2-font, "??", Lora, Songti, Batang, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -3760,21 +3826,25 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  --font-weight: var(--h3-weight, 500);
   color: var(--h3-color, rgb(230, 186, 126));
   font-family: var(--h3-font, "??", Lora, Songti, Batang, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
+  --font-weight: var(--h4-weight, 500);
   color: var(--h4-color, rgb(237, 147, 102));
   font-family: var(--h4-font, "??", Lora, Songti, Batang, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
+  --font-weight: var(--h5-weight, 600);
   color: var(--h5-color, rgb(237, 147, 102));
   font-family: var(--h5-font, "??", Lora, Songti, Batang, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
+  --font-weight: var(--h6-weight, 700);
   color: var(--h6-color, rgb(237, 147, 102));
   font-family: var(--h6-font, "??", Lora, Songti, Batang, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -3950,6 +4020,14 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, rgb(85 180 212 / 0.2));
+  --pill-background-hover: var(--tag-background-hover, rgb(85 180 212 / 0.4));
+  --pill-border-color: var(--tag-border-color, hsla(35, 100%, 60%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(35, 100%, 60%, 0.15));
+  --pill-color: var(--tag-color, rgb(85 180 212));
+  --pill-color-hover: var(--tag-color-hover, rgb(85 180 212 / 0.8));
+  --pill-color-remove: var(--tag-color, rgb(85 180 212));
+  --pill-color-remove-hover: var(--tag-color-hover, rgb(85 180 212 / 0.8));
   background-color: var(--pill-background, rgba(85, 180, 212, 0.2));
   color: var(--pill-color, rgb(85, 180, 212));
 }

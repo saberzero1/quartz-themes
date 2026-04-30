@@ -283,6 +283,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #282828);
   background-color: var(--tab-container-background, rgb(40, 40, 40));
   color: rgb(235, 219, 178);
 }
@@ -389,6 +390,7 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -603,6 +605,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #282828);
   background-color: var(--tab-container-background, rgb(40, 40, 40));
   border-left-color: rgba(168, 168, 168, 0.2);
   color: rgb(235, 219, 178);
@@ -709,6 +712,7 @@ html body .page > div#quartz-body div.sidebar.right {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -1069,6 +1073,7 @@ html body h2 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -1377,6 +1382,7 @@ html body h3 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -1683,6 +1689,7 @@ html body h4 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -1989,6 +1996,7 @@ html body h5 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -2295,6 +2303,7 @@ html body h6 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -2615,6 +2624,7 @@ html body p {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -2928,6 +2938,7 @@ html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -3241,6 +3252,7 @@ html body a.internal-link.broken {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -3764,6 +3776,7 @@ html body li.task-list-item[data-task="!"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -4088,6 +4101,7 @@ html body li.task-list-item[data-task="*"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -4400,6 +4414,7 @@ html body li.task-list-item[data-task="-"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -4708,6 +4723,7 @@ html body li.task-list-item[data-task="/"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -5068,6 +5084,7 @@ html body li.task-list-item[data-task=">"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -5372,6 +5389,7 @@ html body li.task-list-item[data-task="?"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -5712,6 +5730,7 @@ html body li.task-list-item[data-task="I"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -6052,6 +6071,7 @@ html body li.task-list-item[data-task="S"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -6396,6 +6416,7 @@ html body li.task-list-item[data-task="b"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -6700,6 +6721,7 @@ html body li.task-list-item[data-task="c"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -7004,6 +7026,7 @@ html body li.task-list-item[data-task="d"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -7312,6 +7335,7 @@ html body li.task-list-item[data-task="f"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -7624,6 +7648,7 @@ html body li.task-list-item[data-task="i"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -7932,6 +7957,7 @@ html body li.task-list-item[data-task="k"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -8236,6 +8262,7 @@ html body li.task-list-item[data-task="l"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -8552,6 +8579,7 @@ html body li.task-list-item[data-task="p"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -8872,6 +8900,7 @@ html body li.task-list-item[data-task="u"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -9180,6 +9209,7 @@ html body li.task-list-item[data-task="w"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -10224,6 +10254,7 @@ html body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -10562,6 +10593,7 @@ html body .callout-title {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -10871,6 +10903,7 @@ html body .callout-title > .callout-title-inner > p {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -11093,6 +11126,9 @@ html body .callout[data-callout="abstract"] {
   --background-primary-alt: #242424;
   --background-secondary: #282828;
   --background-secondary-alt: #3c3836;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #e8d8a3;
   --blur-background: color-mix(in srgb, #3c3836 65%, transparent) linear-gradient(#3c3836, color-mix(in srgb, #3c3836 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -11180,6 +11216,7 @@ html body .callout[data-callout="abstract"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -11432,6 +11469,9 @@ html body .callout[data-callout="bug"] {
   --background-primary-alt: #242424;
   --background-secondary: #282828;
   --background-secondary-alt: #3c3836;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #e8d8a3;
   --blur-background: color-mix(in srgb, #3c3836 65%, transparent) linear-gradient(#3c3836, color-mix(in srgb, #3c3836 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -11519,6 +11559,7 @@ html body .callout[data-callout="bug"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -11771,6 +11812,9 @@ html body .callout[data-callout="danger"] {
   --background-primary-alt: #242424;
   --background-secondary: #282828;
   --background-secondary-alt: #3c3836;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #e8d8a3;
   --blur-background: color-mix(in srgb, #3c3836 65%, transparent) linear-gradient(#3c3836, color-mix(in srgb, #3c3836 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -11858,6 +11902,7 @@ html body .callout[data-callout="danger"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -12110,6 +12155,9 @@ html body .callout[data-callout="example"] {
   --background-primary-alt: #242424;
   --background-secondary: #282828;
   --background-secondary-alt: #3c3836;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #e8d8a3;
   --blur-background: color-mix(in srgb, #3c3836 65%, transparent) linear-gradient(#3c3836, color-mix(in srgb, #3c3836 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -12197,6 +12245,7 @@ html body .callout[data-callout="example"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -12449,6 +12498,9 @@ html body .callout[data-callout="failure"] {
   --background-primary-alt: #242424;
   --background-secondary: #282828;
   --background-secondary-alt: #3c3836;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #e8d8a3;
   --blur-background: color-mix(in srgb, #3c3836 65%, transparent) linear-gradient(#3c3836, color-mix(in srgb, #3c3836 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -12536,6 +12588,7 @@ html body .callout[data-callout="failure"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -12788,6 +12841,9 @@ html body .callout[data-callout="info"] {
   --background-primary-alt: #242424;
   --background-secondary: #282828;
   --background-secondary-alt: #3c3836;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #e8d8a3;
   --blur-background: color-mix(in srgb, #3c3836 65%, transparent) linear-gradient(#3c3836, color-mix(in srgb, #3c3836 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -12875,6 +12931,7 @@ html body .callout[data-callout="info"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -13127,6 +13184,9 @@ html body .callout[data-callout="note"] {
   --background-primary-alt: #242424;
   --background-secondary: #282828;
   --background-secondary-alt: #3c3836;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #e8d8a3;
   --blur-background: color-mix(in srgb, #3c3836 65%, transparent) linear-gradient(#3c3836, color-mix(in srgb, #3c3836 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -13214,6 +13274,7 @@ html body .callout[data-callout="note"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -13466,6 +13527,9 @@ html body .callout[data-callout="question"] {
   --background-primary-alt: #242424;
   --background-secondary: #282828;
   --background-secondary-alt: #3c3836;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #e8d8a3;
   --blur-background: color-mix(in srgb, #3c3836 65%, transparent) linear-gradient(#3c3836, color-mix(in srgb, #3c3836 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -13553,6 +13617,7 @@ html body .callout[data-callout="question"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -13805,6 +13870,9 @@ html body .callout[data-callout="quote"] {
   --background-primary-alt: #242424;
   --background-secondary: #282828;
   --background-secondary-alt: #3c3836;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #e8d8a3;
   --blur-background: color-mix(in srgb, #3c3836 65%, transparent) linear-gradient(#3c3836, color-mix(in srgb, #3c3836 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -13892,6 +13960,7 @@ html body .callout[data-callout="quote"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -14144,6 +14213,9 @@ html body .callout[data-callout="success"] {
   --background-primary-alt: #242424;
   --background-secondary: #282828;
   --background-secondary-alt: #3c3836;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #e8d8a3;
   --blur-background: color-mix(in srgb, #3c3836 65%, transparent) linear-gradient(#3c3836, color-mix(in srgb, #3c3836 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -14231,6 +14303,7 @@ html body .callout[data-callout="success"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -14483,6 +14556,9 @@ html body .callout[data-callout="tip"] {
   --background-primary-alt: #242424;
   --background-secondary: #282828;
   --background-secondary-alt: #3c3836;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #e8d8a3;
   --blur-background: color-mix(in srgb, #3c3836 65%, transparent) linear-gradient(#3c3836, color-mix(in srgb, #3c3836 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -14570,6 +14646,7 @@ html body .callout[data-callout="tip"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -14822,6 +14899,9 @@ html body .callout[data-callout="todo"] {
   --background-primary-alt: #242424;
   --background-secondary: #282828;
   --background-secondary-alt: #3c3836;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #e8d8a3;
   --blur-background: color-mix(in srgb, #3c3836 65%, transparent) linear-gradient(#3c3836, color-mix(in srgb, #3c3836 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -14909,6 +14989,7 @@ html body .callout[data-callout="todo"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -15161,6 +15242,9 @@ html body .callout[data-callout="warning"] {
   --background-primary-alt: #242424;
   --background-secondary: #282828;
   --background-secondary-alt: #3c3836;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: #e8d8a3;
   --blur-background: color-mix(in srgb, #3c3836 65%, transparent) linear-gradient(#3c3836, color-mix(in srgb, #3c3836 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -15248,6 +15332,7 @@ html body .callout[data-callout="warning"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #3c3836;
   --flair-color: #ebdbb2;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-heading: "Share Tech Mono", "Courier New", monospace;
   --font-interface: "Share Tech Mono", "Courier New", monospace;
   --font-mermaid: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -15722,6 +15807,10 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #e8d8a3);
+  --pill-color-hover: var(--tag-color-hover, #e8d8a3);
+  --pill-color-remove: var(--tag-color, #e8d8a3);
+  --pill-color-remove-hover: var(--tag-color-hover, #e8d8a3);
   font-family: "Share Tech Mono", "Courier New", monospace;
 }
 
@@ -15783,6 +15872,7 @@ html body hr {
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
+  --current-callout-color: var(--callout-color-note, 107, 140, 164);
   border-bottom-color: rgb(235, 219, 178);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -15955,6 +16045,10 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, #e8d8a3);
+  --pill-color-hover: var(--tag-color-hover, #e8d8a3);
+  --pill-color-remove: var(--tag-color, #e8d8a3);
+  --pill-color-remove-hover: var(--tag-color-hover, #e8d8a3);
   color: var(--pill-color, rgb(232, 216, 163));
 }
 

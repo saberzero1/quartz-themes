@@ -133,7 +133,12 @@ html body html {
 }
 
 html body li.task-list-item input[type="checkbox"] {
+  --background-modifier-form-field: var(--strict-color-1, #101010);
   border-radius: 0px;
+}
+
+html body li.task-list-item input[type="checkbox"]:checked {
+  --background-modifier-form-field: var(--strict-color-1, #101010);
 }`,
     tables: `html body table {
   margin-top: var(--heading-spacing, 0px);
@@ -185,6 +190,7 @@ html body pre:has(> code) {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #000000);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -205,6 +211,7 @@ html body img {
   border-top-right-radius: 0px;
 }`,
     checkboxes: `html body input[type=checkbox] {
+  --background-modifier-form-field: var(--strict-color-1, #101010);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -614,6 +621,7 @@ html body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html body .search > .search-button {
+  --background-modifier-form-field: var(--strict-color-1, #101010);
   background-color: rgb(16, 16, 16);
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 0px;
@@ -646,6 +654,10 @@ html body .search > .search-container > .search-space > .search-layout, html .se
   border-top-right-radius: 0px;
 }
 
+html body .search > .search-container > .search-space > input {
+  --background-modifier-form-field: var(--strict-color-1, #101010);
+}
+
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -661,10 +673,14 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, none);
+  --pill-padding-x: var(--tag-padding-x, 0);
+  --pill-padding-y: var(--tag-padding-y, 0);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
 }
 
 html body h1 {
+  --font-weight: var(--h1-weight, 600);
   color: var(--h1-color, rgb(0, 187, 0));
 }
 
@@ -674,18 +690,22 @@ html body h1.article-title {
 }
 
 html body h2 {
+  --font-weight: var(--h2-weight, 600);
   color: var(--h2-color, rgb(0, 187, 0));
 }
 
 html body h3 {
+  --font-weight: var(--h3-weight, 600);
   color: var(--h3-color, rgb(0, 187, 0));
 }
 
 html body h4 {
+  --font-weight: var(--h4-weight, 600);
   color: var(--h4-color, rgb(0, 187, 0));
 }
 
 html body h5 {
+  --font-weight: var(--h5-weight, 600);
   color: var(--h5-color, rgb(0, 187, 0));
 }
 
@@ -763,12 +783,19 @@ html body .note-properties {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, none);
+  --pill-padding-x: var(--tag-padding-x, 0);
+  --pill-padding-y: var(--tag-padding-y, 0);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
 }`,
     stacked: `html body .stacked-page-header {
   background-color: var(--tab-container-background, rgb(38, 38, 38));
 }`,
-    misc: `html body kbd {
+    misc: `html body input[type=text] {
+  --background-modifier-form-field: var(--strict-color-1, #101010);
+}
+
+html body kbd {
   background-color: var(--code-background, rgb(0, 0, 0));
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 0px;

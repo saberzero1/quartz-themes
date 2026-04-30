@@ -349,6 +349,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #14161a);
   background-color: var(--tab-container-background, rgb(20, 22, 26));
   color: rgb(228, 231, 234);
 }
@@ -368,6 +369,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #14161a);
   background-color: var(--tab-container-background, rgb(20, 22, 26));
   border-left-color: rgb(37, 39, 46);
   color: rgb(228, 231, 234);
@@ -536,6 +538,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #20232a);
   border-bottom-color: rgb(228, 231, 234);
   border-left-color: rgb(228, 231, 234);
   border-right-color: rgb(228, 231, 234);
@@ -1647,6 +1650,14 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, #d2a5c4);
+  --pill-background-hover: var(--tag-background-hover, #84bfcf);
+  --pill-border-color: var(--tag-border-color, hsla(210, 40%, 50%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(210, 40%, 50%, 0.15));
+  --pill-color: var(--tag-color, #d2a5c4);
+  --pill-color-hover: var(--tag-color-hover, #84bfcf);
+  --pill-color-remove: var(--tag-color, #d2a5c4);
+  --pill-color-remove-hover: var(--tag-color-hover, #84bfcf);
   background-color: var(--pill-background, rgb(210, 165, 196));
   border-bottom-color: rgba(77, 128, 179, 0.15);
   border-left-color: rgba(77, 128, 179, 0.15);
@@ -1859,6 +1870,14 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, #d2a5c4);
+  --pill-background-hover: var(--tag-background-hover, #84bfcf);
+  --pill-border-color: var(--tag-border-color, hsla(210, 40%, 50%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(210, 40%, 50%, 0.15));
+  --pill-color: var(--tag-color, #d2a5c4);
+  --pill-color-hover: var(--tag-color-hover, #84bfcf);
+  --pill-color-remove: var(--tag-color, #d2a5c4);
+  --pill-color-remove-hover: var(--tag-color-hover, #84bfcf);
   background-color: var(--pill-background, rgb(210, 165, 196));
   color: var(--pill-color, rgb(210, 165, 196));
 }

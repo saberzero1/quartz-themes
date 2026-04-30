@@ -116,6 +116,9 @@ html body a.internal-link.broken {
 html body pre:has(> code) {
   background-color: var(--code-background, rgb(22, 22, 22));
 }`,
+    images: `html body figure {
+  --code-background: var(--ec-frm-edBg, #161616);
+}`,
     embeds: `html body .file-embed {
   background-color: var(--background-primary-alt, rgb(22, 22, 22));
 }
@@ -862,6 +865,13 @@ html body .callout[data-callout="warning"] {
   background-color: var(--prompt-background, rgb(38, 38, 38));
 }
 
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #814CFF);
+  --pill-color-hover: var(--tag-color-hover, #814CFF);
+  --pill-color-remove: var(--tag-color, #814CFF);
+  --pill-color-remove-hover: var(--tag-color-hover, #814CFF);
+}
+
 html body a.internal-link.tag-link::before {
   color: rgb(129, 76, 255);
 }`,
@@ -882,6 +892,10 @@ html body a.internal-link.tag-link::before {
   padding-top: 0px;
 }`,
     properties: `html body .note-properties-tags {
+  --pill-color: var(--tag-color, #814CFF);
+  --pill-color-hover: var(--tag-color-hover, #814CFF);
+  --pill-color-remove: var(--tag-color, #814CFF);
+  --pill-color-remove-hover: var(--tag-color-hover, #814CFF);
   color: var(--pill-color, rgb(129, 76, 255));
 }
 

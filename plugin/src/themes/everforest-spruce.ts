@@ -285,6 +285,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #232A2E);
   background-color: var(--tab-container-background, rgb(35, 42, 46));
   color: rgb(211, 198, 170);
 }
@@ -304,6 +305,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #232A2E);
   background-color: var(--tab-container-background, rgb(35, 42, 46));
   border-left-color: rgb(52, 63, 68);
   color: rgb(211, 198, 170);
@@ -492,6 +494,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #2D353B);
   border-bottom-color: rgb(211, 198, 170);
   border-left-color: rgb(211, 198, 170);
   border-right-color: rgb(211, 198, 170);
@@ -1096,6 +1099,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 400);
   font-weight: var(--font-weight, 400);
 }
 
@@ -1113,6 +1117,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 400);
   font-weight: var(--font-weight, 400);
 }
 
@@ -1130,6 +1135,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 400);
   font-weight: var(--font-weight, 400);
 }
 
@@ -1147,6 +1153,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 400);
   font-weight: var(--font-weight, 400);
 }
 
@@ -1164,6 +1171,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 400);
   font-weight: var(--font-weight, 400);
 }
 
@@ -1181,6 +1189,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 400);
   font-weight: var(--font-weight, 400);
 }
 
@@ -1198,6 +1207,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 400);
   font-weight: var(--font-weight, 400);
 }
 
@@ -1215,6 +1225,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 400);
   font-weight: var(--font-weight, 400);
 }
 
@@ -1232,6 +1243,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 400);
   font-weight: var(--font-weight, 400);
 }
 
@@ -1249,6 +1261,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 400);
   font-weight: var(--font-weight, 400);
 }
 
@@ -1266,6 +1279,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 400);
   font-weight: var(--font-weight, 400);
 }
 
@@ -1283,6 +1297,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 400);
   font-weight: var(--font-weight, 400);
 }
 
@@ -1300,6 +1315,7 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 400);
   font-weight: var(--font-weight, 400);
 }
 
@@ -1317,6 +1333,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 400);
   font-weight: var(--font-weight, 400);
 }
 
@@ -1448,6 +1465,14 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(83, 34%, 63%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(83, 34%, 63%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(83, 34%, 63%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(83, 34%, 63%, 0.15));
+  --pill-color: var(--tag-color, hsl(80, 34.68%, 72.45%));
+  --pill-color-hover: var(--tag-color-hover, hsl(80, 34.68%, 72.45%));
+  --pill-color-remove: var(--tag-color, hsl(80, 34.68%, 72.45%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(80, 34.68%, 72.45%));
   background-color: var(--pill-background, rgba(168, 193, 129, 0.1));
   border-bottom-color: rgba(168, 193, 129, 0.15);
   border-left-color: rgba(168, 193, 129, 0.15);
@@ -1645,6 +1670,14 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(83, 34%, 63%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(83, 34%, 63%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(83, 34%, 63%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(83, 34%, 63%, 0.15));
+  --pill-color: var(--tag-color, hsl(80, 34.68%, 72.45%));
+  --pill-color-hover: var(--tag-color-hover, hsl(80, 34.68%, 72.45%));
+  --pill-color-remove: var(--tag-color, hsl(80, 34.68%, 72.45%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(80, 34.68%, 72.45%));
   background-color: var(--pill-background, rgba(168, 193, 129, 0.1));
   color: var(--pill-color, rgb(193, 209, 160));
 }

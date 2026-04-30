@@ -648,6 +648,10 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, oklch(
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
+  ));
   background-color: var(--tab-container-background, oklch(0.18 0.0651659 292.489));
 }
 
@@ -665,6 +669,10 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, oklch(
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
+  ));
   background-color: var(--tab-container-background, oklch(0.18 0.0651659 292.489));
   border-left-color: oklch(0.12 0.0651659 322.489);
 }
@@ -737,6 +745,7 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
   border-color: rgb(255, 255, 255);
 }`,
     links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
+  --font-weight: var(--link-weight, 700);
   color: var(--link-external-color, oklch(0.7 0.08 26.4067));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--link-weight, 700);
@@ -745,6 +754,7 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
 }
 
 html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+  --font-weight: var(--link-weight, 700);
   color: var(--link-color, oklch(0.8 0.08 292.489));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--link-weight, 700);
@@ -753,6 +763,7 @@ html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcr
 }
 
 html[saved-theme="dark"] body a.internal-link.broken {
+  --font-weight: var(--link-weight, 700);
   color: var(--link-unresolved-color, oklch(0.8 0.08 292.489 / 0.6));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--link-weight, 700);
@@ -764,7 +775,11 @@ html[saved-theme="dark"] body a.internal-link.broken {
   border-right-style: ridge;
   border-top-style: ridge;
 }`,
-    blockquotes: `html[saved-theme="dark"] body blockquote {
+    blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
+  --font-weight: var(--link-weight, 700);
+}
+
+html[saved-theme="dark"] body blockquote {
   background-color: var(--blockquote-background-color, oklch(0.18 0.0651659 292.489 / 0.4));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-bottom: 4px;
@@ -852,6 +867,10 @@ html[saved-theme="dark"] body pre:has(> code) {
   padding-top: 0px;
 }`,
     images: `html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, oklch(from oklch(
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
+  ) 10% c h / 50%));
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-top-left-radius: 12px;
@@ -1445,6 +1464,10 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-border-width: var(--tag-border-width, 1px);
+  --pill-color: var(--tag-color, oklch(from oklch(from hsl(258, 88%, 66%) l c h) 80% c h / 75%));
+  --pill-color-remove: var(--tag-color, oklch(from oklch(from hsl(258, 88%, 66%) l c h) 80% c h / 75%));
+  --pill-radius: var(--tag-radius, 8px);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-bottom-width: 1px;
@@ -1561,6 +1584,9 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-width: 0px;
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
+  --folder-color: var(--folder-color-1, oklch(
+    from #d32f2f 70% 20% h
+  ));
   background-color: oklch(
     from var(--folder-color) l var(--chroma-folder) h / 30%
   );
@@ -1582,6 +1608,9 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-width: 1px;
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
+  --folder-color: var(--folder-color-1, oklch(
+    from #d32f2f 70% 20% h
+  ));
   background-color: oklch(
     from var(--folder-color) l var(--chroma-folder) h / 30%
   );
@@ -1694,6 +1723,10 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-border-width: var(--tag-border-width, 1px);
+  --pill-color: var(--tag-color, oklch(from oklch(from hsl(258, 88%, 66%) l c h) 80% c h / 75%));
+  --pill-color-remove: var(--tag-color, oklch(from oklch(from hsl(258, 88%, 66%) l c h) 80% c h / 75%));
+  --pill-radius: var(--tag-radius, 8px);
   border-radius: 8px;
   color: var(--pill-color, oklch(0.8 0.21722 292.489 / 0.75));
 }
@@ -1734,6 +1767,13 @@ html[saved-theme="dark"] body kbd {
 }
 
 html[saved-theme="dark"] body ul.tags > li {
+  --font-weight: var(--link-weight, 700);
+  --tag-background: oklch(from var(--tag-color) l c h / 10%);
+  --tag-background-hover: oklch(from var(--tag-color) l c h / 30%);
+  --tag-border-color: var(--tag-color, oklch(from oklch(from hsl(258, 88%, 66%) l c h) 80% c h / 75%));
+  --tag-border-color-hover: var(--tag-border-color, oklch(from oklch(from hsl(258, 88%, 66%) l c h) 80% c h / 75%));
+  --tag-color-hover: var(--tag-color, oklch(from oklch(from hsl(258, 88%, 66%) l c h) 80% c h / 75%));
+  --tag-padding-x: var(--size-4-1, 4px);
   background-color: var(--tag-background, oklch(0.8 0.21722 292.489 / 0.1));
   border-bottom-color: oklch(0.8 0.21722 292.489 / 0.75);
   border-bottom-left-radius: 8px;
@@ -2293,6 +2333,9 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, oklch(
+    from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
+  ));
   background-color: var(--tab-container-background, oklch(0.8 0.0756873 293.559));
 }
 
@@ -2310,6 +2353,9 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, oklch(
+    from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
+  ));
   background-color: var(--tab-container-background, oklch(0.8 0.0756873 293.559));
   border-left-color: oklch(0.65 0.0756873 323.559);
 }
@@ -2382,6 +2428,7 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked 
   border-color: rgb(0, 0, 0);
 }`,
     links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
+  --font-weight: var(--link-weight, 700);
   color: var(--link-external-color, oklch(0.5 0.12 26.4067));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--link-weight, 700);
@@ -2390,6 +2437,7 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked 
 }
 
 html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+  --font-weight: var(--link-weight, 700);
   color: var(--link-color, oklch(0.35 0.12 293.559));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--link-weight, 700);
@@ -2398,6 +2446,7 @@ html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .bread
 }
 
 html[saved-theme="light"] body a.internal-link.broken {
+  --font-weight: var(--link-weight, 700);
   color: var(--link-unresolved-color, oklch(0.5 0.12 293.559 / 0.6));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--link-weight, 700);
@@ -2409,7 +2458,11 @@ html[saved-theme="light"] body a.internal-link.broken {
   border-right-style: ridge;
   border-top-style: ridge;
 }`,
-    blockquotes: `html[saved-theme="light"] body blockquote {
+    blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
+  --font-weight: var(--link-weight, 700);
+}
+
+html[saved-theme="light"] body blockquote {
   background-color: var(--blockquote-background-color, oklch(0.8 0.0756873 293.559 / 0.4));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-bottom: 4px;
@@ -2497,6 +2550,9 @@ html[saved-theme="light"] body pre:has(> code) {
   padding-top: 0px;
 }`,
     images: `html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, oklch(from oklch(
+    from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
+  ) 85% c h / 50%));
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-top-left-radius: 12px;
@@ -3090,6 +3146,10 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-border-width: var(--tag-border-width, 1px);
+  --pill-color: var(--tag-color, oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 40% c h / 75%));
+  --pill-color-remove: var(--tag-color, oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 40% c h / 75%));
+  --pill-radius: var(--tag-radius, 8px);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-bottom-width: 1px;
@@ -3211,6 +3271,9 @@ html[saved-theme="light"] body footer ul li a {
   color: oklch(1 0.0756873 263.559);
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
+  --folder-color: var(--folder-color-1, oklch(
+    from #d32f2f 50% 30% h
+  ));
   background-color: oklch(
     from var(--folder-color) l var(--chroma-folder) h / 30%
   );
@@ -3232,6 +3295,9 @@ html[saved-theme="light"] body footer ul li a {
   border-top-width: 1px;
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
+  --folder-color: var(--folder-color-1, oklch(
+    from #d32f2f 50% 30% h
+  ));
   background-color: oklch(
     from var(--folder-color) l var(--chroma-folder) h / 30%
   );
@@ -3344,6 +3410,10 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-border-width: var(--tag-border-width, 1px);
+  --pill-color: var(--tag-color, oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 40% c h / 75%));
+  --pill-color-remove: var(--tag-color, oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 40% c h / 75%));
+  --pill-radius: var(--tag-radius, 8px);
   border-radius: 8px;
   color: var(--pill-color, oklch(0.4 0.189218 293.559 / 0.75));
 }
@@ -3384,6 +3454,13 @@ html[saved-theme="light"] body kbd {
 }
 
 html[saved-theme="light"] body ul.tags > li {
+  --font-weight: var(--link-weight, 700);
+  --tag-background: oklch(from var(--tag-color) l c h / 10%);
+  --tag-background-hover: oklch(from var(--tag-color) l c h / 30%);
+  --tag-border-color: var(--tag-color, oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 40% c h / 75%));
+  --tag-border-color-hover: var(--tag-border-color, oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 40% c h / 75%));
+  --tag-color-hover: var(--tag-color, oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 40% c h / 75%));
+  --tag-padding-x: var(--size-4-1, 4px);
   background-color: var(--tag-background, oklch(0.4 0.189218 293.559 / 0.1));
   border-bottom-color: oklch(0.4 0.189218 293.559 / 0.75);
   border-bottom-left-radius: 8px;

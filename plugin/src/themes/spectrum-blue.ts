@@ -147,6 +147,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #1b1b1b);
   background-color: var(--tab-container-background, rgb(27, 27, 27));
   color: rgb(237, 237, 237);
 }
@@ -166,6 +167,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #1b1b1b);
   background-color: var(--tab-container-background, rgb(27, 27, 27));
   border-left-color: rgb(60, 60, 60);
   color: rgb(237, 237, 237);

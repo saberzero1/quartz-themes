@@ -507,6 +507,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #001122);
   background-color: var(--background-primary, rgb(0, 17, 34));
 }
 
@@ -523,6 +524,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #001122);
   background-color: var(--tab-container-background, rgb(0, 17, 34));
   border-left-color: rgba(0, 127, 255, 0.063);
 }
@@ -623,6 +625,7 @@ html[saved-theme="dark"] body html {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -982,6 +985,7 @@ html[saved-theme="dark"] body h2 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -1327,6 +1331,7 @@ html[saved-theme="dark"] body h3 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -1672,6 +1677,7 @@ html[saved-theme="dark"] body h4 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -2017,6 +2023,7 @@ html[saved-theme="dark"] body h5 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -2362,6 +2369,7 @@ html[saved-theme="dark"] body h6 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -2722,7 +2730,11 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-right-color: rgba(0, 127, 255, 0.22);
   border-top-color: rgba(0, 127, 255, 0.22);
 }`,
-    images: `html[saved-theme="dark"] body img {
+    images: `html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #001122);
+}
+
+html[saved-theme="dark"] body img {
   border-bottom-color: rgb(0, 163, 255);
   border-left-color: rgb(0, 163, 255);
   border-right-color: rgb(0, 163, 255);
@@ -3009,6 +3021,9 @@ html[saved-theme="dark"] body .callout[data-callout="b-blue"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -3026,6 +3041,7 @@ html[saved-theme="dark"] body .callout[data-callout="b-blue"] {
   --callout-error: 251, 70, 76;
   --callout-example: 168, 130, 255;
   --callout-fail: 251, 70, 76;
+  --callout-icon: var(--mu-box-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>');
   --callout-important: 83, 223, 221;
   --callout-info: 2, 122, 255;
   --callout-padding: 12px 12px 12px 24px;
@@ -3086,6 +3102,7 @@ html[saved-theme="dark"] body .callout[data-callout="b-blue"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -3357,6 +3374,9 @@ html[saved-theme="dark"] body .callout[data-callout="b-green"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -3374,6 +3394,7 @@ html[saved-theme="dark"] body .callout[data-callout="b-green"] {
   --callout-error: 251, 70, 76;
   --callout-example: 168, 130, 255;
   --callout-fail: 251, 70, 76;
+  --callout-icon: var(--mu-box-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>');
   --callout-important: 83, 223, 221;
   --callout-info: 2, 122, 255;
   --callout-padding: 12px 12px 12px 24px;
@@ -3434,6 +3455,7 @@ html[saved-theme="dark"] body .callout[data-callout="b-green"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -3705,6 +3727,9 @@ html[saved-theme="dark"] body .callout[data-callout="b-orange"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -3722,6 +3747,7 @@ html[saved-theme="dark"] body .callout[data-callout="b-orange"] {
   --callout-error: 251, 70, 76;
   --callout-example: 168, 130, 255;
   --callout-fail: 251, 70, 76;
+  --callout-icon: var(--mu-box-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>');
   --callout-important: 83, 223, 221;
   --callout-info: 2, 122, 255;
   --callout-padding: 12px 12px 12px 24px;
@@ -3782,6 +3808,7 @@ html[saved-theme="dark"] body .callout[data-callout="b-orange"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -4053,6 +4080,9 @@ html[saved-theme="dark"] body .callout[data-callout="b-pink"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -4070,6 +4100,7 @@ html[saved-theme="dark"] body .callout[data-callout="b-pink"] {
   --callout-error: 251, 70, 76;
   --callout-example: 168, 130, 255;
   --callout-fail: 251, 70, 76;
+  --callout-icon: var(--mu-box-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>');
   --callout-important: 83, 223, 221;
   --callout-info: 2, 122, 255;
   --callout-padding: 12px 12px 12px 24px;
@@ -4130,6 +4161,7 @@ html[saved-theme="dark"] body .callout[data-callout="b-pink"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -4401,6 +4433,9 @@ html[saved-theme="dark"] body .callout[data-callout="b-purple"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -4418,6 +4453,7 @@ html[saved-theme="dark"] body .callout[data-callout="b-purple"] {
   --callout-error: 251, 70, 76;
   --callout-example: 168, 130, 255;
   --callout-fail: 251, 70, 76;
+  --callout-icon: var(--mu-box-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>');
   --callout-important: 83, 223, 221;
   --callout-info: 2, 122, 255;
   --callout-padding: 12px 12px 12px 24px;
@@ -4478,6 +4514,7 @@ html[saved-theme="dark"] body .callout[data-callout="b-purple"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -4749,6 +4786,9 @@ html[saved-theme="dark"] body .callout[data-callout="b-red"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -4766,6 +4806,7 @@ html[saved-theme="dark"] body .callout[data-callout="b-red"] {
   --callout-error: 251, 70, 76;
   --callout-example: 168, 130, 255;
   --callout-fail: 251, 70, 76;
+  --callout-icon: var(--mu-box-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>');
   --callout-important: 83, 223, 221;
   --callout-info: 2, 122, 255;
   --callout-padding: 12px 12px 12px 24px;
@@ -4826,6 +4867,7 @@ html[saved-theme="dark"] body .callout[data-callout="b-red"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -5097,6 +5139,9 @@ html[saved-theme="dark"] body .callout[data-callout="b-yellow"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -5114,6 +5159,7 @@ html[saved-theme="dark"] body .callout[data-callout="b-yellow"] {
   --callout-error: 251, 70, 76;
   --callout-example: 168, 130, 255;
   --callout-fail: 251, 70, 76;
+  --callout-icon: var(--mu-box-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>');
   --callout-important: 83, 223, 221;
   --callout-info: 2, 122, 255;
   --callout-padding: 12px 12px 12px 24px;
@@ -5174,6 +5220,7 @@ html[saved-theme="dark"] body .callout[data-callout="b-yellow"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -5445,6 +5492,9 @@ html[saved-theme="dark"] body .callout[data-callout="book"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -5522,6 +5572,7 @@ html[saved-theme="dark"] body .callout[data-callout="book"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -5809,6 +5860,9 @@ html[saved-theme="dark"] body .callout[data-callout="clip"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -5886,6 +5940,7 @@ html[saved-theme="dark"] body .callout[data-callout="clip"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -6157,6 +6212,9 @@ html[saved-theme="dark"] body .callout[data-callout="comment"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -6234,6 +6292,7 @@ html[saved-theme="dark"] body .callout[data-callout="comment"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -6505,6 +6564,9 @@ html[saved-theme="dark"] body .callout[data-callout="con"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -6582,6 +6644,7 @@ html[saved-theme="dark"] body .callout[data-callout="con"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -6853,6 +6916,9 @@ html[saved-theme="dark"] body .callout[data-callout="cons"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -6930,6 +6996,7 @@ html[saved-theme="dark"] body .callout[data-callout="cons"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -7249,6 +7316,9 @@ html[saved-theme="dark"] body .callout[data-callout="fc"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -7326,6 +7396,7 @@ html[saved-theme="dark"] body .callout[data-callout="fc"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -7591,6 +7662,9 @@ html[saved-theme="dark"] body .callout[data-callout="fc-group"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -7668,6 +7742,7 @@ html[saved-theme="dark"] body .callout[data-callout="fc-group"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -7935,6 +8010,9 @@ html[saved-theme="dark"] body .callout[data-callout="g-black"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -7952,6 +8030,7 @@ html[saved-theme="dark"] body .callout[data-callout="g-black"] {
   --callout-error: 251, 70, 76;
   --callout-example: 168, 130, 255;
   --callout-fail: 251, 70, 76;
+  --callout-icon: var(--mu-gallery-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z" fill="#00a3ffcf" stroke="none" stroke-width="0"/><path d="m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z" fill="currentColor" stroke="none" stroke-width="0"/></svg>');
   --callout-important: 83, 223, 221;
   --callout-info: 2, 122, 255;
   --callout-padding: 12px 12px 12px 24px;
@@ -8012,6 +8091,7 @@ html[saved-theme="dark"] body .callout[data-callout="g-black"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -8284,6 +8364,9 @@ html[saved-theme="dark"] body .callout[data-callout="g-gray"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -8301,6 +8384,7 @@ html[saved-theme="dark"] body .callout[data-callout="g-gray"] {
   --callout-error: 251, 70, 76;
   --callout-example: 168, 130, 255;
   --callout-fail: 251, 70, 76;
+  --callout-icon: var(--mu-gallery-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z" fill="#00a3ffcf" stroke="none" stroke-width="0"/><path d="m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z" fill="currentColor" stroke="none" stroke-width="0"/></svg>');
   --callout-important: 83, 223, 221;
   --callout-info: 2, 122, 255;
   --callout-padding: 12px 12px 12px 24px;
@@ -8361,6 +8445,7 @@ html[saved-theme="dark"] body .callout[data-callout="g-gray"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -8633,6 +8718,9 @@ html[saved-theme="dark"] body .callout[data-callout="g-white"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -8650,6 +8738,7 @@ html[saved-theme="dark"] body .callout[data-callout="g-white"] {
   --callout-error: 251, 70, 76;
   --callout-example: 168, 130, 255;
   --callout-fail: 251, 70, 76;
+  --callout-icon: var(--mu-gallery-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z" fill="#00a3ffcf" stroke="none" stroke-width="0"/><path d="m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z" fill="currentColor" stroke="none" stroke-width="0"/></svg>');
   --callout-important: 83, 223, 221;
   --callout-info: 2, 122, 255;
   --callout-padding: 12px 12px 12px 24px;
@@ -8710,6 +8799,7 @@ html[saved-theme="dark"] body .callout[data-callout="g-white"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -8982,6 +9072,9 @@ html[saved-theme="dark"] body .callout[data-callout="h1-blue"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -9059,6 +9152,7 @@ html[saved-theme="dark"] body .callout[data-callout="h1-blue"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -9330,6 +9424,9 @@ html[saved-theme="dark"] body .callout[data-callout="h1-green"] {
   --background-primary-alt: #212121;
   --background-secondary: #001122;
   --background-secondary-alt: #383838;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf20;
   --blockquote-border-color: #007fff;
   --blockquote-color: #dadada;
@@ -9407,6 +9504,7 @@ html[saved-theme="dark"] body .callout[data-callout="h1-green"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #dadada;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -9978,6 +10076,18 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(254, 80%, 68%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(254, 80%, 68%, 0.2));
+  --pill-border-color: var(--tag-border-color, #0072d33f);
+  --pill-border-color-hover: var(--tag-border-color-hover, #00bfff);
+  --pill-border-width: var(--tag-border-width, 1px);
+  --pill-color: var(--tag-color, hsl(251, 81.6%, 78.2%));
+  --pill-color-hover: var(--tag-color-hover, hsl(249, 84%, 87.72%));
+  --pill-color-remove: var(--tag-color, hsl(251, 81.6%, 78.2%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(249, 84%, 87.72%));
+  --pill-padding-x: var(--tag-padding-x, 8px);
+  --pill-padding-y: var(--tag-padding-y, 4px);
+  --pill-radius: var(--tag-radius, 1em);
   background-color: var(--pill-background, rgba(139, 108, 239, 0.1));
   border-bottom-color: rgba(0, 114, 211, 0.247);
   border-bottom-left-radius: 14.928px;
@@ -9998,6 +10108,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  --font-weight: var(--h1-weight, 800);
   color: var(--h1-color, rgb(0, 163, 255));
   font-family: var(--h1-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
@@ -10008,6 +10119,7 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  --font-weight: var(--h2-weight, 800);
   color: var(--h2-color, rgb(0, 163, 255));
   font-family: var(--h2-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
@@ -10018,21 +10130,25 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h3 {
+  --font-weight: var(--h3-weight, 800);
   color: var(--h3-color, rgb(0, 163, 255));
   font-family: var(--h3-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
+  --font-weight: var(--h4-weight, 800);
   color: var(--h4-color, rgb(0, 163, 255));
   font-family: var(--h4-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
+  --font-weight: var(--h5-weight, 800);
   color: var(--h5-color, rgb(0, 163, 255));
   font-family: var(--h5-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
+  --font-weight: var(--h6-weight, 800);
   color: var(--h6-color, rgb(0, 163, 255));
   font-family: var(--h6-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
@@ -10193,6 +10309,18 @@ html[saved-theme="dark"] body .note-properties {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(254, 80%, 68%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(254, 80%, 68%, 0.2));
+  --pill-border-color: var(--tag-border-color, #0072d33f);
+  --pill-border-color-hover: var(--tag-border-color-hover, #00bfff);
+  --pill-border-width: var(--tag-border-width, 1px);
+  --pill-color: var(--tag-color, hsl(251, 81.6%, 78.2%));
+  --pill-color-hover: var(--tag-color-hover, hsl(249, 84%, 87.72%));
+  --pill-color-remove: var(--tag-color, hsl(251, 81.6%, 78.2%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(249, 84%, 87.72%));
+  --pill-padding-x: var(--tag-padding-x, 8px);
+  --pill-padding-y: var(--tag-padding-y, 4px);
+  --pill-radius: var(--tag-radius, 1em);
   background-color: var(--pill-background, rgba(139, 108, 239, 0.1));
   border-radius: 14.928px;
   color: var(--pill-color, rgb(171, 154, 245));
@@ -10778,6 +10906,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #d1dfff);
   background-color: var(--background-primary, rgb(209, 223, 255));
   color: rgb(0, 0, 0);
 }
@@ -10797,6 +10926,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #d1dfff);
   background-color: var(--tab-container-background, rgb(209, 223, 255));
   border-left-color: rgba(0, 127, 255, 0.063);
   color: rgb(0, 0, 0);
@@ -10898,6 +11028,7 @@ html[saved-theme="light"] body html {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -11287,6 +11418,7 @@ html[saved-theme="light"] body h2 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -11629,6 +11761,7 @@ html[saved-theme="light"] body h3 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -11971,6 +12104,7 @@ html[saved-theme="light"] body h4 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -12313,6 +12447,7 @@ html[saved-theme="light"] body h5 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -12655,6 +12790,7 @@ html[saved-theme="light"] body h6 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -13061,6 +13197,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #f1f1ff);
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
@@ -13480,6 +13617,9 @@ html[saved-theme="light"] body .callout[data-callout="b-blue"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -13497,6 +13637,7 @@ html[saved-theme="light"] body .callout[data-callout="b-blue"] {
   --callout-error: 233, 49, 71;
   --callout-example: 120, 82, 238;
   --callout-fail: 233, 49, 71;
+  --callout-icon: var(--mu-box-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>');
   --callout-important: 0, 191, 188;
   --callout-info: 8, 109, 221;
   --callout-padding: 12px 12px 12px 24px;
@@ -13557,6 +13698,7 @@ html[saved-theme="light"] body .callout[data-callout="b-blue"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -13825,6 +13967,9 @@ html[saved-theme="light"] body .callout[data-callout="b-green"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -13842,6 +13987,7 @@ html[saved-theme="light"] body .callout[data-callout="b-green"] {
   --callout-error: 233, 49, 71;
   --callout-example: 120, 82, 238;
   --callout-fail: 233, 49, 71;
+  --callout-icon: var(--mu-box-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>');
   --callout-important: 0, 191, 188;
   --callout-info: 8, 109, 221;
   --callout-padding: 12px 12px 12px 24px;
@@ -13902,6 +14048,7 @@ html[saved-theme="light"] body .callout[data-callout="b-green"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -14170,6 +14317,9 @@ html[saved-theme="light"] body .callout[data-callout="b-orange"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -14187,6 +14337,7 @@ html[saved-theme="light"] body .callout[data-callout="b-orange"] {
   --callout-error: 233, 49, 71;
   --callout-example: 120, 82, 238;
   --callout-fail: 233, 49, 71;
+  --callout-icon: var(--mu-box-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>');
   --callout-important: 0, 191, 188;
   --callout-info: 8, 109, 221;
   --callout-padding: 12px 12px 12px 24px;
@@ -14247,6 +14398,7 @@ html[saved-theme="light"] body .callout[data-callout="b-orange"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -14515,6 +14667,9 @@ html[saved-theme="light"] body .callout[data-callout="b-pink"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -14532,6 +14687,7 @@ html[saved-theme="light"] body .callout[data-callout="b-pink"] {
   --callout-error: 233, 49, 71;
   --callout-example: 120, 82, 238;
   --callout-fail: 233, 49, 71;
+  --callout-icon: var(--mu-box-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>');
   --callout-important: 0, 191, 188;
   --callout-info: 8, 109, 221;
   --callout-padding: 12px 12px 12px 24px;
@@ -14592,6 +14748,7 @@ html[saved-theme="light"] body .callout[data-callout="b-pink"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -14860,6 +15017,9 @@ html[saved-theme="light"] body .callout[data-callout="b-purple"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -14877,6 +15037,7 @@ html[saved-theme="light"] body .callout[data-callout="b-purple"] {
   --callout-error: 233, 49, 71;
   --callout-example: 120, 82, 238;
   --callout-fail: 233, 49, 71;
+  --callout-icon: var(--mu-box-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>');
   --callout-important: 0, 191, 188;
   --callout-info: 8, 109, 221;
   --callout-padding: 12px 12px 12px 24px;
@@ -14937,6 +15098,7 @@ html[saved-theme="light"] body .callout[data-callout="b-purple"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -15205,6 +15367,9 @@ html[saved-theme="light"] body .callout[data-callout="b-red"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -15222,6 +15387,7 @@ html[saved-theme="light"] body .callout[data-callout="b-red"] {
   --callout-error: 233, 49, 71;
   --callout-example: 120, 82, 238;
   --callout-fail: 233, 49, 71;
+  --callout-icon: var(--mu-box-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>');
   --callout-important: 0, 191, 188;
   --callout-info: 8, 109, 221;
   --callout-padding: 12px 12px 12px 24px;
@@ -15282,6 +15448,7 @@ html[saved-theme="light"] body .callout[data-callout="b-red"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -15550,6 +15717,9 @@ html[saved-theme="light"] body .callout[data-callout="b-yellow"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -15567,6 +15737,7 @@ html[saved-theme="light"] body .callout[data-callout="b-yellow"] {
   --callout-error: 233, 49, 71;
   --callout-example: 120, 82, 238;
   --callout-fail: 233, 49, 71;
+  --callout-icon: var(--mu-box-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>');
   --callout-important: 0, 191, 188;
   --callout-info: 8, 109, 221;
   --callout-padding: 12px 12px 12px 24px;
@@ -15627,6 +15798,7 @@ html[saved-theme="light"] body .callout[data-callout="b-yellow"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -15895,6 +16067,9 @@ html[saved-theme="light"] body .callout[data-callout="book"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -15972,6 +16147,7 @@ html[saved-theme="light"] body .callout[data-callout="book"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -16261,6 +16437,9 @@ html[saved-theme="light"] body .callout[data-callout="clip"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -16338,6 +16517,7 @@ html[saved-theme="light"] body .callout[data-callout="clip"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -16606,6 +16786,9 @@ html[saved-theme="light"] body .callout[data-callout="comment"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -16683,6 +16866,7 @@ html[saved-theme="light"] body .callout[data-callout="comment"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -16951,6 +17135,9 @@ html[saved-theme="light"] body .callout[data-callout="con"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -17028,6 +17215,7 @@ html[saved-theme="light"] body .callout[data-callout="con"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -17296,6 +17484,9 @@ html[saved-theme="light"] body .callout[data-callout="cons"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -17373,6 +17564,7 @@ html[saved-theme="light"] body .callout[data-callout="cons"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -17704,6 +17896,9 @@ html[saved-theme="light"] body .callout[data-callout="fc"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -17781,6 +17976,7 @@ html[saved-theme="light"] body .callout[data-callout="fc"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -18043,6 +18239,9 @@ html[saved-theme="light"] body .callout[data-callout="fc-group"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -18120,6 +18319,7 @@ html[saved-theme="light"] body .callout[data-callout="fc-group"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -18384,6 +18584,9 @@ html[saved-theme="light"] body .callout[data-callout="g-black"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -18401,6 +18604,7 @@ html[saved-theme="light"] body .callout[data-callout="g-black"] {
   --callout-error: 233, 49, 71;
   --callout-example: 120, 82, 238;
   --callout-fail: 233, 49, 71;
+  --callout-icon: var(--mu-gallery-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z" fill="#00a3ffcf" stroke="none" stroke-width="0"/><path d="m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z" fill="currentColor" stroke="none" stroke-width="0"/></svg>');
   --callout-important: 0, 191, 188;
   --callout-info: 8, 109, 221;
   --callout-padding: 12px 12px 12px 24px;
@@ -18461,6 +18665,7 @@ html[saved-theme="light"] body .callout[data-callout="g-black"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -18730,6 +18935,9 @@ html[saved-theme="light"] body .callout[data-callout="g-gray"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -18747,6 +18955,7 @@ html[saved-theme="light"] body .callout[data-callout="g-gray"] {
   --callout-error: 233, 49, 71;
   --callout-example: 120, 82, 238;
   --callout-fail: 233, 49, 71;
+  --callout-icon: var(--mu-gallery-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z" fill="#00a3ffcf" stroke="none" stroke-width="0"/><path d="m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z" fill="currentColor" stroke="none" stroke-width="0"/></svg>');
   --callout-important: 0, 191, 188;
   --callout-info: 8, 109, 221;
   --callout-padding: 12px 12px 12px 24px;
@@ -18807,6 +19016,7 @@ html[saved-theme="light"] body .callout[data-callout="g-gray"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -19076,6 +19286,9 @@ html[saved-theme="light"] body .callout[data-callout="g-white"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -19093,6 +19306,7 @@ html[saved-theme="light"] body .callout[data-callout="g-white"] {
   --callout-error: 233, 49, 71;
   --callout-example: 120, 82, 238;
   --callout-fail: 233, 49, 71;
+  --callout-icon: var(--mu-gallery-callout-icon, '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z" fill="#00a3ffcf" stroke="none" stroke-width="0"/><path d="m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z" fill="currentColor" stroke="none" stroke-width="0"/></svg>');
   --callout-important: 0, 191, 188;
   --callout-info: 8, 109, 221;
   --callout-padding: 12px 12px 12px 24px;
@@ -19153,6 +19367,7 @@ html[saved-theme="light"] body .callout[data-callout="g-white"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -19422,6 +19637,9 @@ html[saved-theme="light"] body .callout[data-callout="h1-blue"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -19499,6 +19717,7 @@ html[saved-theme="light"] body .callout[data-callout="h1-blue"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -19767,6 +19986,9 @@ html[saved-theme="light"] body .callout[data-callout="h1-green"] {
   --background-primary-alt: #e1e1e1;
   --background-secondary: #d1dfff;
   --background-secondary-alt: #ffffff;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-background-color: #cfcfcf88;
   --blockquote-border-color: #007fff;
   --blockquote-color: #000;
@@ -19844,6 +20066,7 @@ html[saved-theme="light"] body .callout[data-callout="h1-green"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #007fff18;
   --flair-color: #000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -20480,6 +20703,18 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(254, 80%, 68%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(254, 80%, 68%, 0.2));
+  --pill-border-color: var(--tag-border-color, #0072d33f);
+  --pill-border-color-hover: var(--tag-border-color-hover, #00bfff);
+  --pill-border-width: var(--tag-border-width, 1px);
+  --pill-color: var(--tag-color, hsl(254, 80%, 68%));
+  --pill-color-hover: var(--tag-color-hover, hsl(251, 81.6%, 78.2%));
+  --pill-color-remove: var(--tag-color, hsl(254, 80%, 68%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(251, 81.6%, 78.2%));
+  --pill-padding-x: var(--tag-padding-x, 8px);
+  --pill-padding-y: var(--tag-padding-y, 4px);
+  --pill-radius: var(--tag-radius, 1em);
   background-color: var(--pill-background, rgba(139, 108, 239, 0.1));
   border-bottom-color: rgba(0, 114, 211, 0.247);
   border-bottom-left-radius: 14.928px;
@@ -20500,6 +20735,7 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  --font-weight: var(--h1-weight, 800);
   color: var(--h1-color, rgb(0, 114, 211));
   font-family: var(--h1-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
@@ -20510,6 +20746,7 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  --font-weight: var(--h2-weight, 800);
   color: var(--h2-color, rgb(0, 114, 211));
   font-family: var(--h2-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
@@ -20520,21 +20757,25 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  --font-weight: var(--h3-weight, 800);
   color: var(--h3-color, rgb(0, 114, 211));
   font-family: var(--h3-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
+  --font-weight: var(--h4-weight, 800);
   color: var(--h4-color, rgb(0, 114, 211));
   font-family: var(--h4-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
+  --font-weight: var(--h5-weight, 800);
   color: var(--h5-color, rgb(0, 114, 211));
   font-family: var(--h5-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
+  --font-weight: var(--h6-weight, 800);
   color: var(--h6-color, rgb(0, 114, 211));
   font-family: var(--h6-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
@@ -20741,6 +20982,18 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(254, 80%, 68%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(254, 80%, 68%, 0.2));
+  --pill-border-color: var(--tag-border-color, #0072d33f);
+  --pill-border-color-hover: var(--tag-border-color-hover, #00bfff);
+  --pill-border-width: var(--tag-border-width, 1px);
+  --pill-color: var(--tag-color, hsl(254, 80%, 68%));
+  --pill-color-hover: var(--tag-color-hover, hsl(251, 81.6%, 78.2%));
+  --pill-color-remove: var(--tag-color, hsl(254, 80%, 68%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(251, 81.6%, 78.2%));
+  --pill-padding-x: var(--tag-padding-x, 8px);
+  --pill-padding-y: var(--tag-padding-y, 4px);
+  --pill-radius: var(--tag-radius, 1em);
   background-color: var(--pill-background, rgba(139, 108, 239, 0.1));
   border-radius: 14.928px;
   color: var(--pill-color, rgb(139, 108, 239));

@@ -158,6 +158,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #111111);
   background-color: var(--tab-container-background, rgb(17, 17, 17));
 }
 
@@ -174,6 +175,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #111111);
   background-color: var(--tab-container-background, rgb(17, 17, 17));
   border-left-color: rgb(138, 92, 245);
 }`,
@@ -253,6 +255,7 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-top-right-radius: 0px;
 }`,
     images: `html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #262626);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1015,6 +1018,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #d5d5d5);
   background-color: var(--tab-container-background, rgb(213, 213, 213));
 }
 
@@ -1031,6 +1035,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #d5d5d5);
   background-color: var(--tab-container-background, rgb(213, 213, 213));
   border-left-color: rgb(152, 115, 247);
 }`,
@@ -1110,6 +1115,7 @@ html[saved-theme="light"] body pre:has(> code) {
   border-top-right-radius: 0px;
 }`,
     images: `html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #f6f6f6);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;

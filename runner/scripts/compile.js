@@ -2105,7 +2105,6 @@ function fallbackStyle(selector, property) {
 
 function isIncludedVariable(key) {
   const includedPrefixes = [
-    "--",
     "--callout-",
     "--checkbox-",
     "--code-",

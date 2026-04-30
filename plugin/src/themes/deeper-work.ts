@@ -309,6 +309,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #161b22);
   background-color: var(--tab-container-background, rgb(22, 27, 34));
   color: rgb(201, 209, 217);
 }
@@ -328,6 +329,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #161b22);
   background-color: var(--tab-container-background, rgb(22, 27, 34));
   border-left-color: rgb(33, 38, 45);
   color: rgb(201, 209, 217);
@@ -453,6 +455,10 @@ html body del {
   color: rgb(201, 209, 217);
   outline: rgb(201, 209, 217) none 0px;
   text-decoration-color: rgb(201, 209, 217);
+}
+
+html body footer {
+  --bar-height: calc(22px + var(--bar-vertical-padding)*2);
 }
 
 html body h1.article-title {
@@ -587,6 +593,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #161b22);
   border-bottom-color: rgb(201, 209, 217);
   border-left-color: rgb(201, 209, 217);
   border-right-color: rgb(201, 209, 217);
@@ -1541,6 +1548,13 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(201, 209, 217);
 }
 
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #388bfd);
+  --pill-color-hover: var(--tag-color-hover, #388bfd);
+  --pill-color-remove: var(--tag-color, #388bfd);
+  --pill-color-remove-hover: var(--tag-color-hover, #388bfd);
+}
+
 html body a.internal-link.tag-link::before {
   color: rgb(56, 139, 253);
 }
@@ -1588,14 +1602,20 @@ html body hr {
   padding-right: 24px;
 }`,
     explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  --text-normal: var(--text-muted, #6e7681);
   color: var(--nav-item-color, rgb(110, 118, 129));
 }
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  --text-normal: var(--text-muted, #6e7681);
   color: var(--nav-item-color, rgb(110, 118, 129));
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(201, 209, 217);
+}
+
+html body li.depth-0 {
+  --text-normal: var(--text-muted, #6e7681);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(110, 118, 129);
@@ -1605,6 +1625,7 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   color: var(--icon-color, rgb(110, 118, 129));
 }`,
     footer: `html body footer {
+  --bar-height: calc(22px + var(--bar-vertical-padding)*2);
   background-color: var(--status-bar-background, rgb(22, 27, 34));
   border-bottom-color: rgb(13, 17, 23);
   border-bottom-width: 1px;
@@ -1631,6 +1652,7 @@ html body .recent-notes > ul.recent-ul > li {
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+  --text-normal: var(--text-muted, #6e7681);
   color: var(--nav-item-color, rgb(110, 118, 129));
 }
 
@@ -1649,6 +1671,7 @@ html body li.section-li > .section .meta {
 }
 
 html body li.section-li > .section > .desc > h3 > a {
+  --text-normal: var(--text-muted, #6e7681);
   color: var(--nav-item-color, rgb(110, 118, 129));
 }
 
@@ -1734,6 +1757,10 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, #388bfd);
+  --pill-color-hover: var(--tag-color-hover, #388bfd);
+  --pill-color-remove: var(--tag-color, #388bfd);
+  --pill-color-remove-hover: var(--tag-color-hover, #388bfd);
   color: var(--pill-color, rgb(56, 139, 253));
 }
 
@@ -1773,6 +1800,7 @@ html body .stacked-page.active {
 }
 
 html body .navigation-progress {
+  --bar-height: calc(22px + var(--bar-vertical-padding)*2);
   background-color: var(--status-bar-background, rgb(22, 27, 34));
 }
 

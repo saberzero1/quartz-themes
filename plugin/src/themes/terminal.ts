@@ -262,6 +262,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #000000);
   background-color: var(--tab-container-background, rgb(0, 0, 0));
   color: rgb(21, 208, 13);
 }
@@ -281,6 +282,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #000000);
   background-color: var(--tab-container-background, rgb(0, 0, 0));
   border-left-color: rgb(21, 208, 13);
   color: rgb(21, 208, 13);
@@ -514,6 +516,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #000000);
   border-bottom-color: rgb(21, 208, 13);
   border-left-color: rgb(21, 208, 13);
   border-right-color: rgb(21, 208, 13);
@@ -1512,6 +1515,7 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #000000;
   --flair-color: #15d00d;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', Fira Code, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -1707,6 +1711,10 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #15d00d);
+  --pill-color-hover: var(--tag-color-hover, #15d00d);
+  --pill-color-remove: var(--tag-color, #15d00d);
+  --pill-color-remove-hover: var(--tag-color-hover, #15d00d);
   border-bottom-left-radius: 24.5px;
   border-bottom-right-radius: 24.5px;
   border-top-left-radius: 24.5px;
@@ -1796,6 +1804,8 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
 }
 
 html body footer ul li a {
+  --status-bar-background: var(--the-color, #15d00d);
+  --status-bar-text-color: var(--the-background-color, #000000);
   color: var(--status-bar-text-color, rgb(0, 0, 0));
 }`,
     recentNotes: `html body .recent-notes > h3 {
@@ -1918,6 +1928,10 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, #15d00d);
+  --pill-color-hover: var(--tag-color-hover, #15d00d);
+  --pill-color-remove: var(--tag-color, #15d00d);
+  --pill-color-remove-hover: var(--tag-color-hover, #15d00d);
   border-radius: 24.5px;
   color: var(--pill-color, rgb(21, 208, 13));
 }

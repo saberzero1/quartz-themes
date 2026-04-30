@@ -41,6 +41,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, semi-transparent);
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
@@ -57,6 +58,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, semi-transparent);
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }`,
     typography: `html body .markdown-rendered p > b, html b {

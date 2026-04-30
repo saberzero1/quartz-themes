@@ -220,6 +220,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #110f10);
   background-color: var(--tab-container-background, rgb(17, 15, 16));
   color: rgb(163, 165, 170);
 }
@@ -239,6 +240,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #110f10);
   background-color: var(--tab-container-background, rgb(17, 15, 16));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(163, 165, 170);
@@ -408,6 +410,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #7452504f);
   border-bottom-color: rgb(163, 165, 170);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1676,6 +1679,11 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background-hover: var(--tag-background-hover, #372622);
+  --pill-color: var(--tag-color, #74593D);
+  --pill-color-hover: var(--tag-color-hover, #B0A79E);
+  --pill-color-remove: var(--tag-color, #74593D);
+  --pill-color-remove-hover: var(--tag-color-hover, #B0A79E);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
 }
 
@@ -1899,6 +1907,11 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-background-hover: var(--tag-background-hover, #372622);
+  --pill-color: var(--tag-color, #74593D);
+  --pill-color-hover: var(--tag-color-hover, #B0A79E);
+  --pill-color-remove: var(--tag-color, #74593D);
+  --pill-color-remove-hover: var(--tag-color-hover, #B0A79E);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
   color: var(--pill-color, rgb(116, 89, 61));
 }

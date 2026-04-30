@@ -839,6 +839,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #fcfcfc);
   background-color: var(--tab-container-background, rgb(252, 252, 252));
   color: rgb(0, 0, 0);
 }
@@ -853,6 +854,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #fcfcfc);
   background-color: var(--tab-container-background, rgb(252, 252, 252));
   color: rgb(0, 0, 0);
 }
@@ -1059,6 +1061,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #FFFFFF);
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
@@ -1695,6 +1698,10 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #DBF1FF);
+  --pill-color-hover: var(--tag-color-hover, #DBF1FF);
+  --pill-color-remove: var(--tag-color, #DBF1FF);
+  --pill-color-remove-hover: var(--tag-color-hover, #DBF1FF);
   font-family: "??", "??", "Helvetica Neue", Roboto, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -1886,6 +1893,10 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #DBF1FF);
+  --pill-color-hover: var(--tag-color-hover, #DBF1FF);
+  --pill-color-remove: var(--tag-color, #DBF1FF);
+  --pill-color-remove-hover: var(--tag-color-hover, #DBF1FF);
   color: var(--pill-color, rgb(219, 241, 255));
 }
 

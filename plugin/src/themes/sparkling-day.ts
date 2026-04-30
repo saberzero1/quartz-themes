@@ -172,6 +172,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #F5F5F5);
   background-color: var(--tab-container-background, rgb(245, 245, 245));
   color: rgb(18, 16, 25);
 }
@@ -187,6 +188,7 @@ html body .page > div#quartz-body div.sidebar {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #F5F5F5);
   background-color: var(--tab-container-background, rgb(245, 245, 245));
   color: rgb(18, 16, 25);
 }
@@ -1300,6 +1302,13 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(18, 16, 25);
 }
 
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #FF3366);
+  --pill-color-hover: var(--tag-color-hover, #FF3366);
+  --pill-color-remove: var(--tag-color, #FF3366);
+  --pill-color-remove-hover: var(--tag-color-hover, #FF3366);
+}
+
 html body a.internal-link.tag-link::before {
   color: rgb(255, 51, 102);
 }
@@ -1422,6 +1431,10 @@ html body .canvas-sidebar {
   color: var(--table-header-color, rgb(18, 16, 25));
 }`,
     properties: `html body .note-properties-tags {
+  --pill-color: var(--tag-color, #FF3366);
+  --pill-color-hover: var(--tag-color-hover, #FF3366);
+  --pill-color-remove: var(--tag-color, #FF3366);
+  --pill-color-remove-hover: var(--tag-color-hover, #FF3366);
   color: var(--pill-color, rgb(255, 51, 102));
 }
 

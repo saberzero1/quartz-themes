@@ -99,6 +99,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, rgb(45, 45, 45));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   color: rgb(255, 255, 255);
 }
@@ -114,6 +115,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, rgb(45, 45, 45));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   color: rgb(255, 255, 255);
 }
@@ -248,6 +250,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, rgb(33, 19, 19));
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
@@ -1396,6 +1399,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, rgb(240, 240, 240));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   color: rgb(12, 9, 9);
 }
@@ -1411,6 +1415,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, rgb(240, 240, 240));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   color: rgb(12, 9, 9);
 }
@@ -1545,6 +1550,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, rgb(255, 255, 255));
   border-bottom-color: rgb(12, 9, 9);
   border-left-color: rgb(12, 9, 9);
   border-right-color: rgb(12, 9, 9);

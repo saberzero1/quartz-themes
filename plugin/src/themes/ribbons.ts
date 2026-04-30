@@ -167,6 +167,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #3B342E);
   background-color: var(--tab-container-background, rgb(59, 52, 46));
   color: rgb(199, 184, 158);
 }
@@ -182,6 +183,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #3B342E);
   background-color: var(--tab-container-background, rgb(59, 52, 46));
   color: rgb(199, 184, 158);
 }
@@ -277,6 +279,8 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
+  --blockquote-border-color: var(--text-faint, #e1d0b388);
+  --el-margin-bottom: var(--size-4-2, 8px);
   font-family: "My Quote font", "New York Small";
   font-style: var(--blockquote-font-style, italic);
   padding-bottom: var(--size-4-2, 8px);
@@ -1059,6 +1063,9 @@ html[saved-theme="dark"] body .callout[data-callout="combat"] {
   --background-primary-alt: #242424;
   --background-secondary: #3B342E;
   --background-secondary-alt: #363636;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -1135,6 +1142,7 @@ html[saved-theme="dark"] body .callout[data-callout="combat"] {
   --field-img: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwEAYAAAAHkiXEAAAFsmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIgogICAgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgeG1wOkNyZWF0ZURhdGU9IjIwMjQtMTEtMDhUMTg6MzQ6NDYtMDMwMCIKICAgeG1wOk1vZGlmeURhdGU9IjIwMjQtMTEtMDhUMTg6NTY6NTMtMDM6MDAiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMjQtMTEtMDhUMTg6NTY6NTMtMDM6MDAiCiAgIHBob3Rvc2hvcDpEYXRlQ3JlYXRlZD0iMjAyNC0xMS0wOFQxODozNDo0Ni0wMzAwIgogICBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIgogICBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiCiAgIGV4aWY6UGl4ZWxYRGltZW5zaW9uPSI0OCIKICAgZXhpZjpQaXhlbFlEaW1lbnNpb249IjQ4IgogICBleGlmOkNvbG9yU3BhY2U9IjEiCiAgIHRpZmY6SW1hZ2VXaWR0aD0iNDgiCiAgIHRpZmY6SW1hZ2VMZW5ndGg9IjQ4IgogICB0aWZmOlJlc29sdXRpb25Vbml0PSIyIgogICB0aWZmOlhSZXNvbHV0aW9uPSIzMDAvMSIKICAgdGlmZjpZUmVzb2x1dGlvbj0iMzAwLzEiPgogICA8ZGM6dGl0bGU+CiAgICA8cmRmOkFsdD4KICAgICA8cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPmZpZWxkPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6dGl0bGU+CiAgIDx4bXBNTTpIaXN0b3J5PgogICAgPHJkZjpTZXE+CiAgICAgPHJkZjpsaQogICAgICBzdEV2dDphY3Rpb249InByb2R1Y2VkIgogICAgICBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZmZpbml0eSBEZXNpZ25lciAyIDIuNS41IgogICAgICBzdEV2dDp3aGVuPSIyMDI0LTExLTA4VDE4OjU2OjUzLTAzOjAwIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwveG1wTU06SGlzdG9yeT4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+Cjw/eHBhY2tldCBlbmQ9InIiPz7BHqT2AAAABGNJQ1AJEgAAOaDHBgAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAflJREFUeJztm6FuAkEQho/SpFWF4NGgwQAOi2lCMCV9gJYXOFFdAQmK5CwIUgnpOyDOnb1XgIBDklLxMyHUNNzt7X/AfObPCjKb+e9mJuxeJp/NZ/NZRyFxx97AraMGkFEDyKgBZNQAMmoAmXvbAT+m7nev22xi1evZjp8Mvv/52n/2vobDc39p3QDQakE7HU789EAyoFqFbrfQ3BOeoJ89Zz/ngzd5H3u/1noANpw5rCoVaBBcWuJNY7kJv3ShuRzU9+3GTx+JG4Anv1jEajSCLpfQfj/p+GnHeA84LTXyxEviCwVou43Ss9mYjn9pRDbgdJyUqUaaq9R4KTWrFVQSP59HjXttxHwDZI6XcVKmmiCASo0fDJD49TpevOvDcAm6vHGSjbEmrImPhv4XREYNIKMGkFEDyKgBZNQAMmoAGTWAjBpARg0gowaQUQPIqAFk1AAypGsp6Qcnfo8PWL29QxsNqJz8xUcN+AMSX6thNR5Dy2Wo3AMKQ+h0Cp3NosZTAw6cJn6xgO52UNeFeh4OnuToNT43b8BpqZlMoJL4eh0JlzNu89y8AUBqfKkEdd2kEy/oFOQ4zrG5So33PFuR1QDHcY5TTRiarvH/YawEmbotzEWmGnvENODaLtdGHyejktEPtbloDyCjBpBRA8ioAWTUADJqAJlfpRKc2kIVESUAAAAASUVORK5CYII=");
   --flair-background: #363636;
   --flair-color: #C7B89E;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', "My Text font", "New York", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -1434,6 +1442,9 @@ html[saved-theme="dark"] body .callout[data-callout="letter"] {
   --background-primary-alt: #242424;
   --background-secondary: #3B342E;
   --background-secondary-alt: #363636;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -1510,6 +1521,7 @@ html[saved-theme="dark"] body .callout[data-callout="letter"] {
   --field-img: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwEAYAAAAHkiXEAAAFsmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIgogICAgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgeG1wOkNyZWF0ZURhdGU9IjIwMjQtMTEtMDhUMTg6MzQ6NDYtMDMwMCIKICAgeG1wOk1vZGlmeURhdGU9IjIwMjQtMTEtMDhUMTg6NTY6NTMtMDM6MDAiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMjQtMTEtMDhUMTg6NTY6NTMtMDM6MDAiCiAgIHBob3Rvc2hvcDpEYXRlQ3JlYXRlZD0iMjAyNC0xMS0wOFQxODozNDo0Ni0wMzAwIgogICBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIgogICBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiCiAgIGV4aWY6UGl4ZWxYRGltZW5zaW9uPSI0OCIKICAgZXhpZjpQaXhlbFlEaW1lbnNpb249IjQ4IgogICBleGlmOkNvbG9yU3BhY2U9IjEiCiAgIHRpZmY6SW1hZ2VXaWR0aD0iNDgiCiAgIHRpZmY6SW1hZ2VMZW5ndGg9IjQ4IgogICB0aWZmOlJlc29sdXRpb25Vbml0PSIyIgogICB0aWZmOlhSZXNvbHV0aW9uPSIzMDAvMSIKICAgdGlmZjpZUmVzb2x1dGlvbj0iMzAwLzEiPgogICA8ZGM6dGl0bGU+CiAgICA8cmRmOkFsdD4KICAgICA8cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPmZpZWxkPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6dGl0bGU+CiAgIDx4bXBNTTpIaXN0b3J5PgogICAgPHJkZjpTZXE+CiAgICAgPHJkZjpsaQogICAgICBzdEV2dDphY3Rpb249InByb2R1Y2VkIgogICAgICBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZmZpbml0eSBEZXNpZ25lciAyIDIuNS41IgogICAgICBzdEV2dDp3aGVuPSIyMDI0LTExLTA4VDE4OjU2OjUzLTAzOjAwIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwveG1wTU06SGlzdG9yeT4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+Cjw/eHBhY2tldCBlbmQ9InIiPz7BHqT2AAAABGNJQ1AJEgAAOaDHBgAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAflJREFUeJztm6FuAkEQho/SpFWF4NGgwQAOi2lCMCV9gJYXOFFdAQmK5CwIUgnpOyDOnb1XgIBDklLxMyHUNNzt7X/AfObPCjKb+e9mJuxeJp/NZ/NZRyFxx97AraMGkFEDyKgBZNQAMmoAmXvbAT+m7nev22xi1evZjp8Mvv/52n/2vobDc39p3QDQakE7HU789EAyoFqFbrfQ3BOeoJ89Zz/ngzd5H3u/1noANpw5rCoVaBBcWuJNY7kJv3ShuRzU9+3GTx+JG4Anv1jEajSCLpfQfj/p+GnHeA84LTXyxEviCwVou43Ss9mYjn9pRDbgdJyUqUaaq9R4KTWrFVQSP59HjXttxHwDZI6XcVKmmiCASo0fDJD49TpevOvDcAm6vHGSjbEmrImPhv4XREYNIKMGkFEDyKgBZNQAMmoAGTWAjBpARg0gowaQUQPIqAFk1AAypGsp6Qcnfo8PWL29QxsNqJz8xUcN+AMSX6thNR5Dy2Wo3AMKQ+h0Cp3NosZTAw6cJn6xgO52UNeFeh4OnuToNT43b8BpqZlMoJL4eh0JlzNu89y8AUBqfKkEdd2kEy/oFOQ4zrG5So33PFuR1QDHcY5TTRiarvH/YawEmbotzEWmGnvENODaLtdGHyejktEPtbloDyCjBpBRA8ioAWTUADJqAJlfpRKc2kIVESUAAAAASUVORK5CYII=");
   --flair-background: #363636;
   --flair-color: #C7B89E;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', "My Text font", "New York", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -1788,6 +1800,9 @@ html[saved-theme="dark"] body .callout[data-callout="rules"] {
   --background-primary-alt: #242424;
   --background-secondary: #3B342E;
   --background-secondary-alt: #363636;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -1865,6 +1880,7 @@ html[saved-theme="dark"] body .callout[data-callout="rules"] {
   --field-img: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwEAYAAAAHkiXEAAAFsmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIgogICAgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgeG1wOkNyZWF0ZURhdGU9IjIwMjQtMTEtMDhUMTg6MzQ6NDYtMDMwMCIKICAgeG1wOk1vZGlmeURhdGU9IjIwMjQtMTEtMDhUMTg6NTY6NTMtMDM6MDAiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMjQtMTEtMDhUMTg6NTY6NTMtMDM6MDAiCiAgIHBob3Rvc2hvcDpEYXRlQ3JlYXRlZD0iMjAyNC0xMS0wOFQxODozNDo0Ni0wMzAwIgogICBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIgogICBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiCiAgIGV4aWY6UGl4ZWxYRGltZW5zaW9uPSI0OCIKICAgZXhpZjpQaXhlbFlEaW1lbnNpb249IjQ4IgogICBleGlmOkNvbG9yU3BhY2U9IjEiCiAgIHRpZmY6SW1hZ2VXaWR0aD0iNDgiCiAgIHRpZmY6SW1hZ2VMZW5ndGg9IjQ4IgogICB0aWZmOlJlc29sdXRpb25Vbml0PSIyIgogICB0aWZmOlhSZXNvbHV0aW9uPSIzMDAvMSIKICAgdGlmZjpZUmVzb2x1dGlvbj0iMzAwLzEiPgogICA8ZGM6dGl0bGU+CiAgICA8cmRmOkFsdD4KICAgICA8cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPmZpZWxkPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6dGl0bGU+CiAgIDx4bXBNTTpIaXN0b3J5PgogICAgPHJkZjpTZXE+CiAgICAgPHJkZjpsaQogICAgICBzdEV2dDphY3Rpb249InByb2R1Y2VkIgogICAgICBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZmZpbml0eSBEZXNpZ25lciAyIDIuNS41IgogICAgICBzdEV2dDp3aGVuPSIyMDI0LTExLTA4VDE4OjU2OjUzLTAzOjAwIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwveG1wTU06SGlzdG9yeT4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+Cjw/eHBhY2tldCBlbmQ9InIiPz7BHqT2AAAABGNJQ1AJEgAAOaDHBgAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAflJREFUeJztm6FuAkEQho/SpFWF4NGgwQAOi2lCMCV9gJYXOFFdAQmK5CwIUgnpOyDOnb1XgIBDklLxMyHUNNzt7X/AfObPCjKb+e9mJuxeJp/NZ/NZRyFxx97AraMGkFEDyKgBZNQAMmoAmXvbAT+m7nev22xi1evZjp8Mvv/52n/2vobDc39p3QDQakE7HU789EAyoFqFbrfQ3BOeoJ89Zz/ngzd5H3u/1noANpw5rCoVaBBcWuJNY7kJv3ShuRzU9+3GTx+JG4Anv1jEajSCLpfQfj/p+GnHeA84LTXyxEviCwVou43Ss9mYjn9pRDbgdJyUqUaaq9R4KTWrFVQSP59HjXttxHwDZI6XcVKmmiCASo0fDJD49TpevOvDcAm6vHGSjbEmrImPhv4XREYNIKMGkFEDyKgBZNQAMmoAGTWAjBpARg0gowaQUQPIqAFk1AAypGsp6Qcnfo8PWL29QxsNqJz8xUcN+AMSX6thNR5Dy2Wo3AMKQ+h0Cp3NosZTAw6cJn6xgO52UNeFeh4OnuToNT43b8BpqZlMoJL4eh0JlzNu89y8AUBqfKkEdd2kEy/oFOQ4zrG5So33PFuR1QDHcY5TTRiarvH/YawEmbotzEWmGnvENODaLtdGHyejktEPtbloDyCjBpBRA8ioAWTUADJqAJlfpRKc2kIVESUAAAAASUVORK5CYII=");
   --flair-background: #363636;
   --flair-color: #C7B89E;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', "My Text font", "New York", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -2287,6 +2303,7 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h3 {
+  --font-weight: var(--h3-weight, bold);
   color: var(--h3-color, rgb(216, 136, 116));
   font-family: var(--h3-font, "My Headings font", "New York Extra Large");
 }
@@ -2297,6 +2314,7 @@ html[saved-theme="dark"] body h4 {
 }
 
 html[saved-theme="dark"] body h5 {
+  --font-weight: var(--h5-weight, bold);
   color: var(--h5-color, rgb(216, 136, 116));
   font-family: var(--h5-font, "My Table font", "SF Compact Rounded");
 }
@@ -2598,6 +2616,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #F1EDF6);
   background-color: var(--tab-container-background, rgb(241, 237, 246));
   color: rgb(0, 0, 0);
 }
@@ -2613,6 +2632,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #F1EDF6);
   background-color: var(--tab-container-background, rgb(241, 237, 246));
   color: rgb(0, 0, 0);
 }
@@ -2708,6 +2728,8 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
+  --blockquote-border-color: var(--text-faint, rgba(80, 80, 80, 0.65));
+  --el-margin-bottom: var(--size-4-2, 8px);
   font-family: "My Quote font", "New York Small";
   font-style: var(--blockquote-font-style, italic);
   padding-bottom: var(--size-4-2, 8px);
@@ -3489,6 +3511,9 @@ html[saved-theme="light"] body .callout[data-callout="combat"] {
   --background-primary-alt: #fafafa;
   --background-secondary: #F1EDF6;
   --background-secondary-alt: #fcfcfc;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, #FBF8F4 65%, transparent) linear-gradient(#FBF8F4, color-mix(in srgb, #FBF8F4 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -3565,6 +3590,7 @@ html[saved-theme="light"] body .callout[data-callout="combat"] {
   --field-img: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwEAYAAAAHkiXEAAAFsmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIgogICAgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgeG1wOkNyZWF0ZURhdGU9IjIwMjQtMTEtMDhUMTg6MzQ6NDYtMDMwMCIKICAgeG1wOk1vZGlmeURhdGU9IjIwMjQtMTEtMDhUMTg6NTc6MzItMDM6MDAiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMjQtMTEtMDhUMTg6NTc6MzItMDM6MDAiCiAgIHBob3Rvc2hvcDpEYXRlQ3JlYXRlZD0iMjAyNC0xMS0wOFQxODozNDo0Ni0wMzAwIgogICBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIgogICBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiCiAgIGV4aWY6UGl4ZWxYRGltZW5zaW9uPSI0OCIKICAgZXhpZjpQaXhlbFlEaW1lbnNpb249IjQ4IgogICBleGlmOkNvbG9yU3BhY2U9IjEiCiAgIHRpZmY6SW1hZ2VXaWR0aD0iNDgiCiAgIHRpZmY6SW1hZ2VMZW5ndGg9IjQ4IgogICB0aWZmOlJlc29sdXRpb25Vbml0PSIyIgogICB0aWZmOlhSZXNvbHV0aW9uPSIzMDAvMSIKICAgdGlmZjpZUmVzb2x1dGlvbj0iMzAwLzEiPgogICA8ZGM6dGl0bGU+CiAgICA8cmRmOkFsdD4KICAgICA8cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPmZpZWxkPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6dGl0bGU+CiAgIDx4bXBNTTpIaXN0b3J5PgogICAgPHJkZjpTZXE+CiAgICAgPHJkZjpsaQogICAgICBzdEV2dDphY3Rpb249InByb2R1Y2VkIgogICAgICBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZmZpbml0eSBEZXNpZ25lciAyIDIuNS41IgogICAgICBzdEV2dDp3aGVuPSIyMDI0LTExLTA4VDE4OjU3OjMyLTAzOjAwIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwveG1wTU06SGlzdG9yeT4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+Cjw/eHBhY2tldCBlbmQ9InIiPz5dG1dIAAAABGNJQ1AJEgAAOaDHBgAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAjZJREFUeJztm71LA0EUxFejiIiQQrESGyNEi0AaGxGxsBCj+A9YCsIhFoqVIBZip63YCDYKKWIaEYOCKFilkXCFacTCRlAUVAghFrNnSMDCu72bfLxfM2xxzrJz+/bhbVrCoXAoHFICiVb2BJodCYCMBEBGAiAjAZCRAMi0BW0Yt+N23I7dYTT7ErS/P9i5bDQbzUaT6/99MvAAwOgidHyK42+cCbcPkgKIbEC/PqFzNt6g0g5nPv8HO/li1evfCewMwIRVBqPINTRfqLeFN03Ah/CkBe3qgNq5YP1rD98DwJvfO4+RFYa+9kGPt/32r3WMnwGVpcZ5461naPcYdFOh9Hx0mvavN1wHUNlOOl2Nc7hGTqFdM9C3e+hmHxb+ds2tb6PhcQc4fbzTTjpdTT4GdWr8iYWFf09482s8DJegP9vJXbM+jYOxQ7jZ20m3yP+CyEgAZCQAMhIAGQmAjARARgIgIwGQkQDISABkJAAyEgAZCYCMBECGdC2l9sEXv/ZHjBL6+snwEXRIf/lTJa8+sgOqwMJHhzHaH4EuDUDHr6CFB2hmAXppu/WTHaCpXPi9XmhxEHowDU334MPTd0o/llIeafoAKkvNmr69UdTXZZbPsOD5tF/+UoKUUuUa35+EHq7ohS/47dz0OwA4h2tJ1/h0T1DOEoBSqtzVPD1U1XjfMRaAqdvCJHQ7mdnS43oJ4Pdy7YTXidQGN+dBO7bID7W5SBdERgIgIwGQkQDISABkJAAyP97KoS6FT5uZAAAAAElFTkSuQmCC");
   --flair-background: #ffffff;
   --flair-color: black;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', "My Text font", "New York", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -3862,6 +3888,9 @@ html[saved-theme="light"] body .callout[data-callout="letter"] {
   --background-primary-alt: #fafafa;
   --background-secondary: #F1EDF6;
   --background-secondary-alt: #fcfcfc;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, #FBF8F4 65%, transparent) linear-gradient(#FBF8F4, color-mix(in srgb, #FBF8F4 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -3938,6 +3967,7 @@ html[saved-theme="light"] body .callout[data-callout="letter"] {
   --field-img: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwEAYAAAAHkiXEAAAFsmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIgogICAgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgeG1wOkNyZWF0ZURhdGU9IjIwMjQtMTEtMDhUMTg6MzQ6NDYtMDMwMCIKICAgeG1wOk1vZGlmeURhdGU9IjIwMjQtMTEtMDhUMTg6NTc6MzItMDM6MDAiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMjQtMTEtMDhUMTg6NTc6MzItMDM6MDAiCiAgIHBob3Rvc2hvcDpEYXRlQ3JlYXRlZD0iMjAyNC0xMS0wOFQxODozNDo0Ni0wMzAwIgogICBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIgogICBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiCiAgIGV4aWY6UGl4ZWxYRGltZW5zaW9uPSI0OCIKICAgZXhpZjpQaXhlbFlEaW1lbnNpb249IjQ4IgogICBleGlmOkNvbG9yU3BhY2U9IjEiCiAgIHRpZmY6SW1hZ2VXaWR0aD0iNDgiCiAgIHRpZmY6SW1hZ2VMZW5ndGg9IjQ4IgogICB0aWZmOlJlc29sdXRpb25Vbml0PSIyIgogICB0aWZmOlhSZXNvbHV0aW9uPSIzMDAvMSIKICAgdGlmZjpZUmVzb2x1dGlvbj0iMzAwLzEiPgogICA8ZGM6dGl0bGU+CiAgICA8cmRmOkFsdD4KICAgICA8cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPmZpZWxkPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6dGl0bGU+CiAgIDx4bXBNTTpIaXN0b3J5PgogICAgPHJkZjpTZXE+CiAgICAgPHJkZjpsaQogICAgICBzdEV2dDphY3Rpb249InByb2R1Y2VkIgogICAgICBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZmZpbml0eSBEZXNpZ25lciAyIDIuNS41IgogICAgICBzdEV2dDp3aGVuPSIyMDI0LTExLTA4VDE4OjU3OjMyLTAzOjAwIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwveG1wTU06SGlzdG9yeT4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+Cjw/eHBhY2tldCBlbmQ9InIiPz5dG1dIAAAABGNJQ1AJEgAAOaDHBgAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAjZJREFUeJztm71LA0EUxFejiIiQQrESGyNEi0AaGxGxsBCj+A9YCsIhFoqVIBZip63YCDYKKWIaEYOCKFilkXCFacTCRlAUVAghFrNnSMDCu72bfLxfM2xxzrJz+/bhbVrCoXAoHFICiVb2BJodCYCMBEBGAiAjAZCRAMi0BW0Yt+N23I7dYTT7ErS/P9i5bDQbzUaT6/99MvAAwOgidHyK42+cCbcPkgKIbEC/PqFzNt6g0g5nPv8HO/li1evfCewMwIRVBqPINTRfqLeFN03Ah/CkBe3qgNq5YP1rD98DwJvfO4+RFYa+9kGPt/32r3WMnwGVpcZ5461naPcYdFOh9Hx0mvavN1wHUNlOOl2Nc7hGTqFdM9C3e+hmHxb+ds2tb6PhcQc4fbzTTjpdTT4GdWr8iYWFf09482s8DJegP9vJXbM+jYOxQ7jZ20m3yP+CyEgAZCQAMhIAGQmAjARARgIgIwGQkQDISABkJAAyEgAZCYCMBECGdC2l9sEXv/ZHjBL6+snwEXRIf/lTJa8+sgOqwMJHhzHaH4EuDUDHr6CFB2hmAXppu/WTHaCpXPi9XmhxEHowDU334MPTd0o/llIeafoAKkvNmr69UdTXZZbPsOD5tF/+UoKUUuUa35+EHq7ohS/47dz0OwA4h2tJ1/h0T1DOEoBSqtzVPD1U1XjfMRaAqdvCJHQ7mdnS43oJ4Pdy7YTXidQGN+dBO7bID7W5SBdERgIgIwGQkQDISABkJAAyP97KoS6FT5uZAAAAAElFTkSuQmCC");
   --flair-background: #ffffff;
   --flair-color: black;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', "My Text font", "New York", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -4214,6 +4244,9 @@ html[saved-theme="light"] body .callout[data-callout="rules"] {
   --background-primary-alt: #fafafa;
   --background-secondary: #F1EDF6;
   --background-secondary-alt: #fcfcfc;
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: hsl(257, 88.88%, 70.95%);
   --blur-background: color-mix(in srgb, #FBF8F4 65%, transparent) linear-gradient(#FBF8F4, color-mix(in srgb, #FBF8F4 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -4291,6 +4324,7 @@ html[saved-theme="light"] body .callout[data-callout="rules"] {
   --field-img: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwEAYAAAAHkiXEAAAFsmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIgogICAgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgeG1wOkNyZWF0ZURhdGU9IjIwMjQtMTEtMDhUMTg6MzQ6NDYtMDMwMCIKICAgeG1wOk1vZGlmeURhdGU9IjIwMjQtMTEtMDhUMTg6NTc6MzItMDM6MDAiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMjQtMTEtMDhUMTg6NTc6MzItMDM6MDAiCiAgIHBob3Rvc2hvcDpEYXRlQ3JlYXRlZD0iMjAyNC0xMS0wOFQxODozNDo0Ni0wMzAwIgogICBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIgogICBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiCiAgIGV4aWY6UGl4ZWxYRGltZW5zaW9uPSI0OCIKICAgZXhpZjpQaXhlbFlEaW1lbnNpb249IjQ4IgogICBleGlmOkNvbG9yU3BhY2U9IjEiCiAgIHRpZmY6SW1hZ2VXaWR0aD0iNDgiCiAgIHRpZmY6SW1hZ2VMZW5ndGg9IjQ4IgogICB0aWZmOlJlc29sdXRpb25Vbml0PSIyIgogICB0aWZmOlhSZXNvbHV0aW9uPSIzMDAvMSIKICAgdGlmZjpZUmVzb2x1dGlvbj0iMzAwLzEiPgogICA8ZGM6dGl0bGU+CiAgICA8cmRmOkFsdD4KICAgICA8cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPmZpZWxkPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6dGl0bGU+CiAgIDx4bXBNTTpIaXN0b3J5PgogICAgPHJkZjpTZXE+CiAgICAgPHJkZjpsaQogICAgICBzdEV2dDphY3Rpb249InByb2R1Y2VkIgogICAgICBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZmZpbml0eSBEZXNpZ25lciAyIDIuNS41IgogICAgICBzdEV2dDp3aGVuPSIyMDI0LTExLTA4VDE4OjU3OjMyLTAzOjAwIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwveG1wTU06SGlzdG9yeT4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+Cjw/eHBhY2tldCBlbmQ9InIiPz5dG1dIAAAABGNJQ1AJEgAAOaDHBgAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAjZJREFUeJztm71LA0EUxFejiIiQQrESGyNEi0AaGxGxsBCj+A9YCsIhFoqVIBZip63YCDYKKWIaEYOCKFilkXCFacTCRlAUVAghFrNnSMDCu72bfLxfM2xxzrJz+/bhbVrCoXAoHFICiVb2BJodCYCMBEBGAiAjAZCRAMi0BW0Yt+N23I7dYTT7ErS/P9i5bDQbzUaT6/99MvAAwOgidHyK42+cCbcPkgKIbEC/PqFzNt6g0g5nPv8HO/li1evfCewMwIRVBqPINTRfqLeFN03Ah/CkBe3qgNq5YP1rD98DwJvfO4+RFYa+9kGPt/32r3WMnwGVpcZ5461naPcYdFOh9Hx0mvavN1wHUNlOOl2Nc7hGTqFdM9C3e+hmHxb+ds2tb6PhcQc4fbzTTjpdTT4GdWr8iYWFf09482s8DJegP9vJXbM+jYOxQ7jZ20m3yP+CyEgAZCQAMhIAGQmAjARARgIgIwGQkQDISABkJAAyEgAZCYCMBECGdC2l9sEXv/ZHjBL6+snwEXRIf/lTJa8+sgOqwMJHhzHaH4EuDUDHr6CFB2hmAXppu/WTHaCpXPi9XmhxEHowDU334MPTd0o/llIeafoAKkvNmr69UdTXZZbPsOD5tF/+UoKUUuUa35+EHq7ohS/47dz0OwA4h2tJ1/h0T1DOEoBSqtzVPD1U1XjfMRaAqdvCJHQ7mdnS43oJ4Pdy7YTXidQGN+dBO7bID7W5SBdERgIgIwGQkQDISABkJAAyP97KoS6FT5uZAAAAAElFTkSuQmCC");
   --flair-background: #ffffff;
   --flair-color: black;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', "My Text font", "New York", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -4711,6 +4745,7 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  --font-weight: var(--h3-weight, bold);
   color: var(--h3-color, rgb(119, 34, 13));
   font-family: var(--h3-font, "My Headings font", "New York Extra Large");
 }
@@ -4721,6 +4756,7 @@ html[saved-theme="light"] body h4 {
 }
 
 html[saved-theme="light"] body h5 {
+  --font-weight: var(--h5-weight, bold);
   color: var(--h5-color, rgb(119, 34, 13));
   font-family: var(--h5-font, "My Table font", "SF Compact Rounded");
 }

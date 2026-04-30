@@ -679,6 +679,13 @@ html body .callout[data-callout="warning"] {
   font-family: Lato, sans-serif;
 }
 
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #f1f0ee);
+  --pill-color-hover: var(--tag-color-hover, #d9363f);
+  --pill-color-remove: var(--tag-color, #f1f0ee);
+  --pill-color-remove-hover: var(--tag-color-hover, #d9363f);
+}
+
 html body a.internal-link.tag-link::before {
   color: rgb(241, 240, 238);
 }
@@ -747,6 +754,10 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
   border-color: rgb(54, 54, 54) rgb(54, 54, 54) rgb(236, 236, 236);
 }`,
     properties: `html body .note-properties-tags {
+  --pill-color: var(--tag-color, #f1f0ee);
+  --pill-color-hover: var(--tag-color-hover, #d9363f);
+  --pill-color-remove: var(--tag-color, #f1f0ee);
+  --pill-color-remove-hover: var(--tag-color-hover, #d9363f);
   color: var(--pill-color, rgb(241, 240, 238));
 }`,
     misc: `html body ul.tags > li {

@@ -208,6 +208,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #0f5172);
   background-color: var(--tab-container-background, rgb(15, 81, 114));
   color: rgb(220, 221, 222);
 }
@@ -227,6 +228,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #0f5172);
   background-color: var(--tab-container-background, rgb(15, 81, 114));
   border-left-color: rgb(0, 0, 0);
   color: rgb(220, 221, 222);
@@ -422,6 +424,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, rgb(5, 5, 5));
   border-bottom-color: rgb(220, 221, 222);
   border-left-color: rgb(220, 221, 222);
   border-right-color: rgb(220, 221, 222);
@@ -1322,6 +1325,10 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #28b0ff);
+  --pill-color-hover: var(--tag-color-hover, #28b0ff);
+  --pill-color-remove: var(--tag-color, #28b0ff);
+  --pill-color-remove-hover: var(--tag-color-hover, #28b0ff);
   font-family: "??", "??", Cairo, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -1527,6 +1534,10 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #28b0ff);
+  --pill-color-hover: var(--tag-color-hover, #28b0ff);
+  --pill-color-remove: var(--tag-color, #28b0ff);
+  --pill-color-remove-hover: var(--tag-color-hover, #28b0ff);
   color: var(--pill-color, rgb(40, 176, 255));
 }
 
@@ -1852,6 +1863,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #eeb157);
   background-color: var(--tab-container-background, rgb(238, 177, 87));
   color: rgb(46, 51, 56);
 }
@@ -1871,6 +1883,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #eeb157);
   background-color: var(--tab-container-background, rgb(238, 177, 87));
   border-left-color: rgb(75, 110, 139);
   color: rgb(46, 51, 56);
@@ -2074,6 +2087,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #e0ded2);
   border-bottom-color: rgb(46, 51, 56);
   border-left-color: rgb(46, 51, 56);
   border-right-color: rgb(46, 51, 56);
@@ -2982,6 +2996,10 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #914a29);
+  --pill-color-hover: var(--tag-color-hover, #914a29);
+  --pill-color-remove: var(--tag-color, #914a29);
+  --pill-color-remove-hover: var(--tag-color-hover, #914a29);
   font-family: "??", "??", Cairo, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -3188,6 +3206,10 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #914a29);
+  --pill-color-hover: var(--tag-color-hover, #914a29);
+  --pill-color-remove: var(--tag-color, #914a29);
+  --pill-color-remove-hover: var(--tag-color-hover, #914a29);
   color: var(--pill-color, rgb(145, 74, 41));
 }
 

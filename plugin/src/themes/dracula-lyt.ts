@@ -457,6 +457,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #15131f);
   background-color: var(--tab-container-background, rgb(21, 19, 31));
   color: rgb(248, 248, 242);
 }
@@ -476,6 +477,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #15131f);
   background-color: var(--tab-container-background, rgb(21, 19, 31));
   border-left-color: rgb(52, 58, 75);
   color: rgb(248, 248, 242);
@@ -781,6 +783,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #23212d);
   border-bottom-color: rgb(114, 195, 213);
   border-left-color: rgb(114, 195, 213);
   border-right-color: rgb(114, 195, 213);
@@ -1716,6 +1719,10 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #bd93f9);
+  --pill-color-hover: var(--tag-color-hover, #bd93f9);
+  --pill-color-remove: var(--tag-color, #bd93f9);
+  --pill-color-remove-hover: var(--tag-color-hover, #bd93f9);
   font-family: "??", "??", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--pill-weight, 500);
 }
@@ -1939,6 +1946,10 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, #bd93f9);
+  --pill-color-hover: var(--tag-color-hover, #bd93f9);
+  --pill-color-remove: var(--tag-color, #bd93f9);
+  --pill-color-remove-hover: var(--tag-color-hover, #bd93f9);
   color: var(--pill-color, rgb(189, 147, 249));
 }
 

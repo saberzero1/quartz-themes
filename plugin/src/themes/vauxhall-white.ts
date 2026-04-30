@@ -687,6 +687,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, color-mix(in srgb, hsl(228, 20%, 11%) 40%, #000));
   background-color: var(--tab-container-background, color(srgb 0.0352 0.03872 0.0528));
   color: color(srgb 0.928 0.936 0.952);
 }
@@ -706,6 +707,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, color-mix(in srgb, hsl(228, 20%, 11%) 40%, #000));
   background-color: var(--tab-container-background, color(srgb 0.0352 0.03872 0.0528));
   border-left-color: color(srgb 0.1552 0.165787 0.2028);
   color: color(srgb 0.928 0.936 0.952);
@@ -839,6 +841,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, color-mix(in srgb, hsl(228, 20%, 11%) 80%, #000));
   border-bottom-color: color(srgb 0.928 0.936 0.952);
   border-left-color: color(srgb 0.928 0.936 0.952);
   border-right-color: color(srgb 0.928 0.936 0.952);
@@ -2789,6 +2792,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, color-mix(in srgb, hsl(228, 30%, 90%) 40%, #fff));
   background-color: var(--tab-container-background, color(srgb 0.948 0.9528 0.972));
   color: color(srgb 0 0 0);
 }
@@ -2808,6 +2812,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, color-mix(in srgb, hsl(228, 30%, 90%) 40%, #fff));
   background-color: var(--tab-container-background, color(srgb 0.948 0.9528 0.972));
   border-left-color: color(srgb 0.783 0.7938 0.837);
   color: color(srgb 0 0 0);
@@ -2941,6 +2946,11 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, color-mix(
+    in srgb,
+    hsl(228, 30%, 90%) 90%,
+    hsl(220, 0%, 0%)
+  ));
   border-bottom-color: color(srgb 0 0 0);
   border-left-color: color(srgb 0 0 0);
   border-right-color: color(srgb 0 0 0);

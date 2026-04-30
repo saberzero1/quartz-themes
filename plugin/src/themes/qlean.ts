@@ -422,6 +422,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #171717);
   background-color: var(--tab-container-background, rgb(23, 23, 23));
   color: rgb(212, 212, 212);
 }
@@ -441,6 +442,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #171717);
   background-color: var(--tab-container-background, rgb(23, 23, 23));
   border-left-color: rgb(64, 64, 64);
   color: rgb(212, 212, 212);
@@ -534,6 +536,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #d4d4d4;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif;
   --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
@@ -884,6 +887,7 @@ html[saved-theme="dark"] body h2 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #d4d4d4;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif;
   --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
@@ -1168,6 +1172,7 @@ html[saved-theme="dark"] body h3 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #d4d4d4;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif;
   --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
@@ -1452,6 +1457,7 @@ html[saved-theme="dark"] body h4 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #d4d4d4;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif;
   --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
@@ -1736,6 +1742,7 @@ html[saved-theme="dark"] body h5 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #d4d4d4;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif;
   --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
@@ -2020,6 +2027,7 @@ html[saved-theme="dark"] body h6 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #d4d4d4;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif;
   --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
@@ -2397,6 +2405,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #262626);
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -4263,6 +4272,15 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(0, 0%, 90%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(0, 0%, 90%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(0, 0%, 90%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(0, 0%, 90%, 0.15));
+  --pill-color: var(--tag-color, hsl(0, 0%, 90%));
+  --pill-color-hover: var(--tag-color-hover, hsl(0, 0%, 90%));
+  --pill-color-remove: var(--tag-color, hsl(0, 0%, 90%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(0, 0%, 90%));
+  --pill-radius: var(--tag-radius, 0em);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgba(230, 230, 230, 0.5);
   border-bottom-left-radius: 0px;
@@ -4519,6 +4537,15 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(0, 0%, 90%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(0, 0%, 90%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(0, 0%, 90%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(0, 0%, 90%, 0.15));
+  --pill-color: var(--tag-color, hsl(0, 0%, 90%));
+  --pill-color-hover: var(--tag-color-hover, hsl(0, 0%, 90%));
+  --pill-color-remove: var(--tag-color, hsl(0, 0%, 90%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(0, 0%, 90%));
+  --pill-radius: var(--tag-radius, 0em);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-radius: 0px;
   color: var(--text-strong, rgb(245, 245, 245));
@@ -5059,6 +5086,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #f5f5f5);
   background-color: var(--tab-container-background, rgb(245, 245, 245));
   color: rgb(64, 64, 64);
 }
@@ -5078,6 +5106,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #f5f5f5);
   background-color: var(--tab-container-background, rgb(245, 245, 245));
   border-left-color: rgb(212, 212, 212);
   color: rgb(64, 64, 64);
@@ -5171,6 +5200,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #404040;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif;
   --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
@@ -5519,6 +5549,7 @@ html[saved-theme="light"] body h2 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #404040;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif;
   --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
@@ -5801,6 +5832,7 @@ html[saved-theme="light"] body h3 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #404040;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif;
   --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
@@ -6083,6 +6115,7 @@ html[saved-theme="light"] body h4 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #404040;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif;
   --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
@@ -6365,6 +6398,7 @@ html[saved-theme="light"] body h5 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #404040;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif;
   --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
@@ -6647,6 +6681,7 @@ html[saved-theme="light"] body h6 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #404040;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif;
   --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
@@ -7022,6 +7057,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #e5e5e5);
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -8888,6 +8924,15 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(0, 0%, 10%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(0, 0%, 10%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(0, 0%, 10%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(0, 0%, 10%, 0.15));
+  --pill-color: var(--tag-color, hsl(0, 0%, 10%));
+  --pill-color-hover: var(--tag-color-hover, hsl(0, 0%, 10%));
+  --pill-color-remove: var(--tag-color, hsl(0, 0%, 10%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(0, 0%, 10%));
+  --pill-radius: var(--tag-radius, 0em);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgba(26, 26, 26, 0.5);
   border-bottom-left-radius: 0px;
@@ -9144,6 +9189,15 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(0, 0%, 10%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(0, 0%, 10%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(0, 0%, 10%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(0, 0%, 10%, 0.15));
+  --pill-color: var(--tag-color, hsl(0, 0%, 10%));
+  --pill-color-hover: var(--tag-color-hover, hsl(0, 0%, 10%));
+  --pill-color-remove: var(--tag-color, hsl(0, 0%, 10%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(0, 0%, 10%));
+  --pill-radius: var(--tag-radius, 0em);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-radius: 0px;
   color: var(--text-strong, rgb(23, 23, 23));

@@ -48,10 +48,22 @@ export interface ThemeData {
   extras?: string;
   /**
    * Pre-extracted CSS for class-toggle and class-select Style Settings.
-   * Maps class name → unconditional CSS (with body.class selector stripped).
+   * Maps class name → mode-scoped CSS (with body.class selector stripped).
    * Generated at build time from the raw theme CSS.
+   *
+   * Each entry contains up to three CSS strings:
+   * - `general`: CSS that applies regardless of mode
+   * - `dark`: CSS that should only apply in dark mode
+   * - `light`: CSS that should only apply in light mode
    */
-  classSettings?: Record<string, string>;
+  classSettings?: Record<string, ClassSettingCSS>;
+}
+
+/** Mode-scoped CSS for a single class-toggle or class-select setting. */
+export interface ClassSettingCSS {
+  general?: string;
+  dark?: string;
+  light?: string;
 }
 
 /** Metadata about a theme (modes, variations, fonts). */

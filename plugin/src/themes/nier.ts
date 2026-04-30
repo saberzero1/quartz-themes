@@ -239,6 +239,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #afaa96);
   background-color: var(--tab-container-background, rgb(175, 170, 150));
   color: rgb(73, 70, 61);
 }
@@ -258,6 +259,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #afaa96);
   background-color: var(--tab-container-background, rgb(175, 170, 150));
   border-left-color: rgb(0, 0, 0);
   color: rgb(73, 70, 61);
@@ -319,6 +321,7 @@ html body p {
   text-decoration-color: rgb(105, 104, 104);
 }`,
     links: `html body a.external-link, html footer a {
+  --font-weight: var(--link-weight, 500);
   color: var(--link-external-color, rgb(46, 0, 184));
   font-weight: var(--link-weight, 500);
   outline: rgb(46, 0, 184) none 0px;
@@ -327,6 +330,7 @@ html body p {
 }
 
 html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
+  --font-weight: var(--link-weight, 500);
   color: var(--link-color, rgb(148, 3, 3));
   font-weight: var(--link-weight, 500);
   outline: rgb(148, 3, 3) none 0px;
@@ -334,6 +338,7 @@ html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
 }
 
 html body a.internal-link.broken {
+  --font-weight: var(--link-weight, 500);
   color: var(--link-unresolved-color, rgb(57, 0, 0));
   font-weight: var(--link-weight, 500);
   outline: rgb(57, 0, 0) none 0px;
@@ -363,6 +368,7 @@ html body ul.overflow {
   border-top-color: rgb(73, 70, 61);
 }`,
     blockquotes: `html body .data-footnote-backref {
+  --font-weight: var(--link-weight, 500);
   color: var(--text-faint, rgb(81, 86, 99));
 }`,
     tables: `html body .table-container {
@@ -419,6 +425,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, rgba(255, 255, 255, 0.352));
   border-bottom-color: rgb(73, 70, 61);
   border-left-color: rgb(73, 70, 61);
   border-right-color: rgb(73, 70, 61);
@@ -1334,6 +1341,13 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, rgba(172, 167, 147, 255));
+  --pill-background-hover: var(--tag-background-hover, rgba(172, 167, 147, 255));
+  --pill-border-color: var(--tag-border-color, hsla(219, 56%, 55%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(219, 56%, 55%, 0.15));
+  --pill-padding-x: var(--tag-padding-x, 4px);
+  --pill-padding-y: var(--tag-padding-y, 2px);
+  --pill-radius: var(--tag-radius, 4px);
   background-color: var(--pill-background, rgb(172, 167, 147));
   border-bottom-color: rgba(76, 121, 205, 0.15);
   border-bottom-left-radius: 4px;
@@ -1548,6 +1562,13 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, rgba(172, 167, 147, 255));
+  --pill-background-hover: var(--tag-background-hover, rgba(172, 167, 147, 255));
+  --pill-border-color: var(--tag-border-color, hsla(219, 56%, 55%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(219, 56%, 55%, 0.15));
+  --pill-padding-x: var(--tag-padding-x, 4px);
+  --pill-padding-y: var(--tag-padding-y, 2px);
+  --pill-radius: var(--tag-radius, 4px);
   background-color: var(--pill-background, rgb(172, 167, 147));
   border-radius: 4px;
   color: var(--pill-color, rgb(73, 70, 61));
@@ -1644,6 +1665,7 @@ html body sup {
 }
 
 html body ul.tags > li {
+  --font-weight: var(--link-weight, 500);
   background-color: var(--tag-background, rgb(172, 167, 147));
   border-bottom-color: rgba(76, 121, 205, 0.15);
   border-bottom-left-radius: 4px;

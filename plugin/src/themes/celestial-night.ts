@@ -417,6 +417,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #262b3b);
   background-color: var(--tab-container-background, rgb(38, 43, 59));
   color: rgb(205, 209, 223);
 }
@@ -436,6 +437,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #262b3b);
   background-color: var(--tab-container-background, rgb(38, 43, 59));
   border-left-color: rgb(59, 63, 86);
   color: rgb(205, 209, 223);
@@ -503,6 +505,7 @@ html body p {
   text-decoration-color: rgb(136, 144, 166);
 }`,
     links: `html body a.external-link, html footer a {
+  --link-color: var(--glow-color, white);
   color: var(--link-external-color, rgb(255, 255, 255));
   font-family: "??", Bookerly, "Source Han Serif", "Noto Serif JP", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(255, 255, 255) none 0px;
@@ -512,6 +515,7 @@ html body p {
 }
 
 html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
+  --link-color: var(--glow-color, white);
   color: var(--link-color, rgb(255, 255, 255));
   font-family: "??", Bookerly, "Source Han Serif", "Noto Serif JP", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(255, 255, 255) none 0px;
@@ -520,6 +524,7 @@ html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
 }
 
 html body a.internal-link.broken {
+  --link-color: var(--glow-color, white);
   color: var(--link-unresolved-color, rgb(255, 255, 255));
   font-family: "??", Bookerly, "Source Han Serif", "Noto Serif JP", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(255, 255, 255) none 0px;
@@ -628,6 +633,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #222a38);
   border-bottom-color: rgb(205, 209, 223);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1876,6 +1882,17 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, #262b3b);
+  --pill-background-hover: var(--tag-background-hover, hsla(41, 100%, 100%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(41, 100%, 100%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(41, 100%, 100%, 0.15));
+  --pill-border-width: var(--tag-border-width, 1px);
+  --pill-color: var(--tag-color, hsl(38, 102%, 115%));
+  --pill-color-hover: var(--tag-color-hover, hsl(38, 102%, 115%));
+  --pill-color-remove: var(--tag-color, hsl(38, 102%, 115%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(38, 102%, 115%));
+  --pill-radius: var(--tag-radius, 1em);
+  --pill-weight: var(--tag-weight, 300);
   background-color: var(--pill-background, rgb(38, 43, 59));
   border-bottom-color: rgba(255, 255, 255, 0.15);
   border-bottom-left-radius: 14px;
@@ -1898,6 +1915,7 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  --font-weight: var(--h1-weight, 900);
   color: var(--glow-color, rgb(255, 255, 255));
   font-family: var(--h1-font, Merienda);
   text-shadow: rgba(255, 255, 255, 0.61) 0px 0px 30px, rgba(93, 182, 255, 0.318) 0px 0px 10px;
@@ -1910,6 +1928,7 @@ html body h1.article-title {
 }
 
 html body h2 {
+  --font-weight: var(--h2-weight, 800);
   color: var(--glow-color, rgb(255, 255, 255));
   font-family: var(--h2-font, Merienda);
   text-shadow: rgba(255, 255, 255, 0.61) 0px 0px 30px, rgba(93, 182, 255, 0.318) 0px 0px 10px;
@@ -1922,24 +1941,28 @@ html body h2.page-title, html h2.page-title a {
 }
 
 html body h3 {
+  --font-weight: var(--h3-weight, 700);
   color: var(--glow-color, rgb(255, 255, 255));
   font-family: var(--h3-font, Merienda);
   text-shadow: rgba(255, 255, 255, 0.61) 0px 0px 30px, rgba(93, 182, 255, 0.318) 0px 0px 10px;
 }
 
 html body h4 {
+  --font-weight: var(--h4-weight, 600);
   color: var(--glow-color, rgb(255, 255, 255));
   font-family: var(--h4-font, Merienda);
   text-shadow: rgba(255, 255, 255, 0.61) 0px 0px 30px, rgba(93, 182, 255, 0.318) 0px 0px 10px;
 }
 
 html body h5 {
+  --font-weight: var(--h5-weight, 500);
   color: var(--glow-color, rgb(255, 255, 255));
   font-family: var(--h5-font, Merienda);
   text-shadow: rgba(255, 255, 255, 0.61) 0px 0px 30px, rgba(93, 182, 255, 0.318) 0px 0px 10px;
 }
 
 html body h6 {
+  --font-weight: var(--h6-weight, 400);
   color: var(--glow-color, rgb(255, 255, 255));
   font-family: var(--h6-font, Merienda);
   text-shadow: rgba(255, 255, 255, 0.61) 0px 0px 30px, rgba(93, 182, 255, 0.318) 0px 0px 10px;
@@ -2143,6 +2166,17 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, #262b3b);
+  --pill-background-hover: var(--tag-background-hover, hsla(41, 100%, 100%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(41, 100%, 100%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(41, 100%, 100%, 0.15));
+  --pill-border-width: var(--tag-border-width, 1px);
+  --pill-color: var(--tag-color, hsl(38, 102%, 115%));
+  --pill-color-hover: var(--tag-color-hover, hsl(38, 102%, 115%));
+  --pill-color-remove: var(--tag-color, hsl(38, 102%, 115%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(38, 102%, 115%));
+  --pill-radius: var(--tag-radius, 1em);
+  --pill-weight: var(--tag-weight, 300);
   background-color: var(--pill-background, rgb(38, 43, 59));
   border-radius: 14px;
   color: var(--pill-color, rgb(255, 255, 255));

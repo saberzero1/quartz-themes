@@ -209,6 +209,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(203, 8%, 23%));
   background-color: var(--tab-container-background, rgb(54, 60, 63));
   color: rgba(255, 255, 255, 0.9);
 }
@@ -228,6 +229,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(203, 8%, 23%));
   background-color: var(--tab-container-background, rgb(54, 60, 63));
   border-left-color: rgba(255, 255, 255, 0.14);
   color: rgba(255, 255, 255, 0.9);
@@ -386,6 +388,7 @@ html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcr
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #2a2a2a;
   --flair-color: rgba(255, 255, 255, 0.9);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -674,6 +677,7 @@ html[saved-theme="dark"] body a.internal-link.broken {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #2a2a2a;
   --flair-color: rgba(255, 255, 255, 0.9);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -961,6 +965,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, hsl(203, 8%, 26%));
   border-bottom-color: rgba(255, 255, 255, 0.9);
   border-left-color: rgba(255, 255, 255, 0.9);
   border-right-color: rgba(255, 255, 255, 0.9);
@@ -1935,6 +1940,13 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgba(255, 255, 255, 0.9);
 }
 
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, rgba(255, 255, 255, 0.45));
+  --pill-color-hover: var(--tag-color-hover, rgba(255, 255, 255, 0.45));
+  --pill-color-remove: var(--tag-color, rgba(255, 255, 255, 0.45));
+  --pill-color-remove-hover: var(--tag-color-hover, rgba(255, 255, 255, 0.45));
+}
+
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgba(255, 255, 255, 0.45);
 }
@@ -2131,6 +2143,10 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-color: var(--tag-color, rgba(255, 255, 255, 0.45));
+  --pill-color-hover: var(--tag-color-hover, rgba(255, 255, 255, 0.45));
+  --pill-color-remove: var(--tag-color, rgba(255, 255, 255, 0.45));
+  --pill-color-remove-hover: var(--tag-color-hover, rgba(255, 255, 255, 0.45));
   color: var(--pill-color, rgba(255, 255, 255, 0.45));
 }
 
@@ -2440,6 +2456,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(203, 8%, 96%));
   background-color: var(--tab-container-background, rgb(244, 245, 246));
   color: rgba(55, 53, 47, 0.9);
 }
@@ -2458,6 +2475,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(203, 8%, 96%));
   background-color: var(--tab-container-background, rgb(244, 245, 246));
   border-left-color: rgba(55, 53, 47, 0.14);
   color: rgba(55, 53, 47, 0.9);
@@ -2616,6 +2634,7 @@ html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .bread
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #f2f3f5;
   --flair-color: rgba(55, 53, 47, 0.9);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -2902,6 +2921,7 @@ html[saved-theme="light"] body a.internal-link.broken {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #f2f3f5;
   --flair-color: rgba(55, 53, 47, 0.9);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -3187,6 +3207,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, hsl(203, 8%, 96%));
   border-bottom-color: rgba(55, 53, 47, 0.9);
   border-left-color: rgba(55, 53, 47, 0.9);
   border-right-color: rgba(55, 53, 47, 0.9);
@@ -4155,6 +4176,13 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgba(55, 53, 47, 0.9);
 }
 
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, rgba(55, 53, 47, 0.45));
+  --pill-color-hover: var(--tag-color-hover, rgba(55, 53, 47, 0.45));
+  --pill-color-remove: var(--tag-color, rgba(55, 53, 47, 0.45));
+  --pill-color-remove-hover: var(--tag-color-hover, rgba(55, 53, 47, 0.45));
+}
+
 html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgba(55, 53, 47, 0.45);
 }
@@ -4350,6 +4378,10 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-color: var(--tag-color, rgba(55, 53, 47, 0.45));
+  --pill-color-hover: var(--tag-color-hover, rgba(55, 53, 47, 0.45));
+  --pill-color-remove: var(--tag-color, rgba(55, 53, 47, 0.45));
+  --pill-color-remove-hover: var(--tag-color-hover, rgba(55, 53, 47, 0.45));
   color: var(--pill-color, rgba(55, 53, 47, 0.45));
 }
 

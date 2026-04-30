@@ -405,6 +405,23 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #140e66);
+  --icon-color: var(--light-ink-alt, #fafafd);
+  --icon-color-active: var(--light-ink-alt, #fafafd);
+  --icon-color-focused: var(--light-ink-alt, #fafafd);
+  --icon-color-hover: var(--light-ink-alt, #fafafd);
+  --nav-heading-color: var(--light-ink-alt, #fafafd);
+  --nav-heading-color-collapsed: var(--light-ink-alt, #fafafd);
+  --nav-heading-color-collapsed-hover: var(--light-ink-alt, #fafafd);
+  --nav-tag-background: var(--leather-color-alt, #2117a9);
+  --nav-tag-color: var(--light-ink-alt, #fafafd);
+  --nav-tag-color-active: var(--light-ink-alt, #fafafd);
+  --nav-tag-color-hover: var(--light-ink-alt, #fafafd);
+  --tab-text-color-focused-active-current: var(--light-ink-alt, #fafafd);
+  --text-faint: var(--light-ink-fainted, rgba(245, 246, 248, 0.65));
+  --text-muted: var(--light-ink-muted, rgba(245, 246, 248, 0.85));
+  --vault-profile-color: var(--light-ink-alt, #fafafd);
+  --vault-profile-color-hover: var(--light-ink-alt, #fafafd);
   background-color: var(--tab-container-background, rgb(20, 14, 102));
   color: rgb(245, 246, 248);
 }
@@ -424,6 +441,23 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #140e66);
+  --icon-color: var(--light-ink-alt, #fafafd);
+  --icon-color-active: var(--light-ink-alt, #fafafd);
+  --icon-color-focused: var(--light-ink-alt, #fafafd);
+  --icon-color-hover: var(--light-ink-alt, #fafafd);
+  --nav-heading-color: var(--light-ink-alt, #fafafd);
+  --nav-heading-color-collapsed: var(--light-ink-alt, #fafafd);
+  --nav-heading-color-collapsed-hover: var(--light-ink-alt, #fafafd);
+  --nav-tag-background: var(--leather-color-alt, #2117a9);
+  --nav-tag-color: var(--light-ink-alt, #fafafd);
+  --nav-tag-color-active: var(--light-ink-alt, #fafafd);
+  --nav-tag-color-hover: var(--light-ink-alt, #fafafd);
+  --tab-text-color-focused-active-current: var(--light-ink-alt, #fafafd);
+  --text-faint: var(--light-ink-fainted, rgba(245, 246, 248, 0.65));
+  --text-muted: var(--light-ink-muted, rgba(245, 246, 248, 0.85));
+  --vault-profile-color: var(--light-ink-alt, #fafafd);
+  --vault-profile-color-hover: var(--light-ink-alt, #fafafd);
   background-color: var(--tab-container-background, rgb(20, 14, 102));
   border-left-color: rgb(79, 145, 232);
   color: rgb(245, 246, 248);
@@ -609,6 +643,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, rgba(79, 145, 232, 0.2));
   border-bottom-color: rgb(245, 246, 248);
   border-left-color: rgb(245, 246, 248);
   border-right-color: rgb(245, 246, 248);
@@ -1236,7 +1271,21 @@ html[saved-theme="dark"] body .callout > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
+  --callout-bug: var(--color-base-50-rgb, 79,145,232);
   --callout-color: var(--callout-summary, 79,145,232);
+  --callout-default: var(--color-base-50-rgb, 79,145,232);
+  --callout-error: var(--color-base-50-rgb, 79,145,232);
+  --callout-example: var(--color-base-50-rgb, 79,145,232);
+  --callout-fail: var(--color-base-50-rgb, 79,145,232);
+  --callout-important: var(--color-base-50-rgb, 79,145,232);
+  --callout-info: var(--color-base-50-rgb, 79,145,232);
+  --callout-question: var(--color-base-50-rgb, 79,145,232);
+  --callout-quote: var(--color-base-50-rgb, 79,145,232);
+  --callout-success: var(--color-base-50-rgb, 79,145,232);
+  --callout-summary: var(--color-base-50-rgb, 79,145,232);
+  --callout-tip: var(--color-base-50-rgb, 79,145,232);
+  --callout-todo: var(--color-base-50-rgb, 79,145,232);
+  --callout-warning: var(--color-base-50-rgb, 79,145,232);
   background: rgba(79, 145, 232, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(79, 145, 232, 0.25);
   border-bottom-width: 2px;
@@ -1267,7 +1316,21 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
+  --callout-bug: var(--color-base-50-rgb, 79,145,232);
   --callout-color: var(--callout-bug, 79,145,232);
+  --callout-default: var(--color-base-50-rgb, 79,145,232);
+  --callout-error: var(--color-base-50-rgb, 79,145,232);
+  --callout-example: var(--color-base-50-rgb, 79,145,232);
+  --callout-fail: var(--color-base-50-rgb, 79,145,232);
+  --callout-important: var(--color-base-50-rgb, 79,145,232);
+  --callout-info: var(--color-base-50-rgb, 79,145,232);
+  --callout-question: var(--color-base-50-rgb, 79,145,232);
+  --callout-quote: var(--color-base-50-rgb, 79,145,232);
+  --callout-success: var(--color-base-50-rgb, 79,145,232);
+  --callout-summary: var(--color-base-50-rgb, 79,145,232);
+  --callout-tip: var(--color-base-50-rgb, 79,145,232);
+  --callout-todo: var(--color-base-50-rgb, 79,145,232);
+  --callout-warning: var(--color-base-50-rgb, 79,145,232);
   background: rgba(79, 145, 232, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(79, 145, 232, 0.25);
   border-bottom-width: 2px;
@@ -1298,7 +1361,21 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
+  --callout-bug: var(--color-base-50-rgb, 79,145,232);
   --callout-color: var(--callout-error, 79,145,232);
+  --callout-default: var(--color-base-50-rgb, 79,145,232);
+  --callout-error: var(--color-base-50-rgb, 79,145,232);
+  --callout-example: var(--color-base-50-rgb, 79,145,232);
+  --callout-fail: var(--color-base-50-rgb, 79,145,232);
+  --callout-important: var(--color-base-50-rgb, 79,145,232);
+  --callout-info: var(--color-base-50-rgb, 79,145,232);
+  --callout-question: var(--color-base-50-rgb, 79,145,232);
+  --callout-quote: var(--color-base-50-rgb, 79,145,232);
+  --callout-success: var(--color-base-50-rgb, 79,145,232);
+  --callout-summary: var(--color-base-50-rgb, 79,145,232);
+  --callout-tip: var(--color-base-50-rgb, 79,145,232);
+  --callout-todo: var(--color-base-50-rgb, 79,145,232);
+  --callout-warning: var(--color-base-50-rgb, 79,145,232);
   background: rgba(79, 145, 232, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(79, 145, 232, 0.25);
   border-bottom-width: 2px;
@@ -1329,7 +1406,21 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
+  --callout-bug: var(--color-base-50-rgb, 79,145,232);
   --callout-color: var(--callout-example, 79,145,232);
+  --callout-default: var(--color-base-50-rgb, 79,145,232);
+  --callout-error: var(--color-base-50-rgb, 79,145,232);
+  --callout-example: var(--color-base-50-rgb, 79,145,232);
+  --callout-fail: var(--color-base-50-rgb, 79,145,232);
+  --callout-important: var(--color-base-50-rgb, 79,145,232);
+  --callout-info: var(--color-base-50-rgb, 79,145,232);
+  --callout-question: var(--color-base-50-rgb, 79,145,232);
+  --callout-quote: var(--color-base-50-rgb, 79,145,232);
+  --callout-success: var(--color-base-50-rgb, 79,145,232);
+  --callout-summary: var(--color-base-50-rgb, 79,145,232);
+  --callout-tip: var(--color-base-50-rgb, 79,145,232);
+  --callout-todo: var(--color-base-50-rgb, 79,145,232);
+  --callout-warning: var(--color-base-50-rgb, 79,145,232);
   background: rgba(79, 145, 232, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(79, 145, 232, 0.25);
   border-bottom-width: 2px;
@@ -1360,7 +1451,21 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
+  --callout-bug: var(--color-base-50-rgb, 79,145,232);
   --callout-color: var(--callout-fail, 79,145,232);
+  --callout-default: var(--color-base-50-rgb, 79,145,232);
+  --callout-error: var(--color-base-50-rgb, 79,145,232);
+  --callout-example: var(--color-base-50-rgb, 79,145,232);
+  --callout-fail: var(--color-base-50-rgb, 79,145,232);
+  --callout-important: var(--color-base-50-rgb, 79,145,232);
+  --callout-info: var(--color-base-50-rgb, 79,145,232);
+  --callout-question: var(--color-base-50-rgb, 79,145,232);
+  --callout-quote: var(--color-base-50-rgb, 79,145,232);
+  --callout-success: var(--color-base-50-rgb, 79,145,232);
+  --callout-summary: var(--color-base-50-rgb, 79,145,232);
+  --callout-tip: var(--color-base-50-rgb, 79,145,232);
+  --callout-todo: var(--color-base-50-rgb, 79,145,232);
+  --callout-warning: var(--color-base-50-rgb, 79,145,232);
   background: rgba(79, 145, 232, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(79, 145, 232, 0.25);
   border-bottom-width: 2px;
@@ -1391,7 +1496,21 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
+  --callout-bug: var(--color-base-50-rgb, 79,145,232);
   --callout-color: var(--callout-info, 79,145,232);
+  --callout-default: var(--color-base-50-rgb, 79,145,232);
+  --callout-error: var(--color-base-50-rgb, 79,145,232);
+  --callout-example: var(--color-base-50-rgb, 79,145,232);
+  --callout-fail: var(--color-base-50-rgb, 79,145,232);
+  --callout-important: var(--color-base-50-rgb, 79,145,232);
+  --callout-info: var(--color-base-50-rgb, 79,145,232);
+  --callout-question: var(--color-base-50-rgb, 79,145,232);
+  --callout-quote: var(--color-base-50-rgb, 79,145,232);
+  --callout-success: var(--color-base-50-rgb, 79,145,232);
+  --callout-summary: var(--color-base-50-rgb, 79,145,232);
+  --callout-tip: var(--color-base-50-rgb, 79,145,232);
+  --callout-todo: var(--color-base-50-rgb, 79,145,232);
+  --callout-warning: var(--color-base-50-rgb, 79,145,232);
   background: rgba(79, 145, 232, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(79, 145, 232, 0.25);
   border-bottom-width: 2px;
@@ -1422,7 +1541,21 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
+  --callout-bug: var(--color-base-50-rgb, 79,145,232);
   --callout-color: var(--callout-default, 79,145,232);
+  --callout-default: var(--color-base-50-rgb, 79,145,232);
+  --callout-error: var(--color-base-50-rgb, 79,145,232);
+  --callout-example: var(--color-base-50-rgb, 79,145,232);
+  --callout-fail: var(--color-base-50-rgb, 79,145,232);
+  --callout-important: var(--color-base-50-rgb, 79,145,232);
+  --callout-info: var(--color-base-50-rgb, 79,145,232);
+  --callout-question: var(--color-base-50-rgb, 79,145,232);
+  --callout-quote: var(--color-base-50-rgb, 79,145,232);
+  --callout-success: var(--color-base-50-rgb, 79,145,232);
+  --callout-summary: var(--color-base-50-rgb, 79,145,232);
+  --callout-tip: var(--color-base-50-rgb, 79,145,232);
+  --callout-todo: var(--color-base-50-rgb, 79,145,232);
+  --callout-warning: var(--color-base-50-rgb, 79,145,232);
   background: rgba(79, 145, 232, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(79, 145, 232, 0.25);
   border-bottom-width: 2px;
@@ -1453,7 +1586,21 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
+  --callout-bug: var(--color-base-50-rgb, 79,145,232);
   --callout-color: var(--callout-question, 79,145,232);
+  --callout-default: var(--color-base-50-rgb, 79,145,232);
+  --callout-error: var(--color-base-50-rgb, 79,145,232);
+  --callout-example: var(--color-base-50-rgb, 79,145,232);
+  --callout-fail: var(--color-base-50-rgb, 79,145,232);
+  --callout-important: var(--color-base-50-rgb, 79,145,232);
+  --callout-info: var(--color-base-50-rgb, 79,145,232);
+  --callout-question: var(--color-base-50-rgb, 79,145,232);
+  --callout-quote: var(--color-base-50-rgb, 79,145,232);
+  --callout-success: var(--color-base-50-rgb, 79,145,232);
+  --callout-summary: var(--color-base-50-rgb, 79,145,232);
+  --callout-tip: var(--color-base-50-rgb, 79,145,232);
+  --callout-todo: var(--color-base-50-rgb, 79,145,232);
+  --callout-warning: var(--color-base-50-rgb, 79,145,232);
   background: rgba(79, 145, 232, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(79, 145, 232, 0.25);
   border-bottom-width: 2px;
@@ -1484,7 +1631,21 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
+  --callout-bug: var(--color-base-50-rgb, 79,145,232);
   --callout-color: var(--callout-quote, 79,145,232);
+  --callout-default: var(--color-base-50-rgb, 79,145,232);
+  --callout-error: var(--color-base-50-rgb, 79,145,232);
+  --callout-example: var(--color-base-50-rgb, 79,145,232);
+  --callout-fail: var(--color-base-50-rgb, 79,145,232);
+  --callout-important: var(--color-base-50-rgb, 79,145,232);
+  --callout-info: var(--color-base-50-rgb, 79,145,232);
+  --callout-question: var(--color-base-50-rgb, 79,145,232);
+  --callout-quote: var(--color-base-50-rgb, 79,145,232);
+  --callout-success: var(--color-base-50-rgb, 79,145,232);
+  --callout-summary: var(--color-base-50-rgb, 79,145,232);
+  --callout-tip: var(--color-base-50-rgb, 79,145,232);
+  --callout-todo: var(--color-base-50-rgb, 79,145,232);
+  --callout-warning: var(--color-base-50-rgb, 79,145,232);
   background: rgba(79, 145, 232, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(79, 145, 232, 0.25);
   border-bottom-width: 2px;
@@ -1515,7 +1676,21 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
+  --callout-bug: var(--color-base-50-rgb, 79,145,232);
   --callout-color: var(--callout-success, 79,145,232);
+  --callout-default: var(--color-base-50-rgb, 79,145,232);
+  --callout-error: var(--color-base-50-rgb, 79,145,232);
+  --callout-example: var(--color-base-50-rgb, 79,145,232);
+  --callout-fail: var(--color-base-50-rgb, 79,145,232);
+  --callout-important: var(--color-base-50-rgb, 79,145,232);
+  --callout-info: var(--color-base-50-rgb, 79,145,232);
+  --callout-question: var(--color-base-50-rgb, 79,145,232);
+  --callout-quote: var(--color-base-50-rgb, 79,145,232);
+  --callout-success: var(--color-base-50-rgb, 79,145,232);
+  --callout-summary: var(--color-base-50-rgb, 79,145,232);
+  --callout-tip: var(--color-base-50-rgb, 79,145,232);
+  --callout-todo: var(--color-base-50-rgb, 79,145,232);
+  --callout-warning: var(--color-base-50-rgb, 79,145,232);
   background: rgba(79, 145, 232, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(79, 145, 232, 0.25);
   border-bottom-width: 2px;
@@ -1546,7 +1721,21 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
+  --callout-bug: var(--color-base-50-rgb, 79,145,232);
   --callout-color: var(--callout-tip, 79,145,232);
+  --callout-default: var(--color-base-50-rgb, 79,145,232);
+  --callout-error: var(--color-base-50-rgb, 79,145,232);
+  --callout-example: var(--color-base-50-rgb, 79,145,232);
+  --callout-fail: var(--color-base-50-rgb, 79,145,232);
+  --callout-important: var(--color-base-50-rgb, 79,145,232);
+  --callout-info: var(--color-base-50-rgb, 79,145,232);
+  --callout-question: var(--color-base-50-rgb, 79,145,232);
+  --callout-quote: var(--color-base-50-rgb, 79,145,232);
+  --callout-success: var(--color-base-50-rgb, 79,145,232);
+  --callout-summary: var(--color-base-50-rgb, 79,145,232);
+  --callout-tip: var(--color-base-50-rgb, 79,145,232);
+  --callout-todo: var(--color-base-50-rgb, 79,145,232);
+  --callout-warning: var(--color-base-50-rgb, 79,145,232);
   background: rgba(79, 145, 232, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(79, 145, 232, 0.25);
   border-bottom-width: 2px;
@@ -1577,7 +1766,21 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
+  --callout-bug: var(--color-base-50-rgb, 79,145,232);
   --callout-color: var(--callout-todo, 79,145,232);
+  --callout-default: var(--color-base-50-rgb, 79,145,232);
+  --callout-error: var(--color-base-50-rgb, 79,145,232);
+  --callout-example: var(--color-base-50-rgb, 79,145,232);
+  --callout-fail: var(--color-base-50-rgb, 79,145,232);
+  --callout-important: var(--color-base-50-rgb, 79,145,232);
+  --callout-info: var(--color-base-50-rgb, 79,145,232);
+  --callout-question: var(--color-base-50-rgb, 79,145,232);
+  --callout-quote: var(--color-base-50-rgb, 79,145,232);
+  --callout-success: var(--color-base-50-rgb, 79,145,232);
+  --callout-summary: var(--color-base-50-rgb, 79,145,232);
+  --callout-tip: var(--color-base-50-rgb, 79,145,232);
+  --callout-todo: var(--color-base-50-rgb, 79,145,232);
+  --callout-warning: var(--color-base-50-rgb, 79,145,232);
   background: rgba(79, 145, 232, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(79, 145, 232, 0.25);
   border-bottom-width: 2px;
@@ -1608,7 +1811,21 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
+  --callout-bug: var(--color-base-50-rgb, 79,145,232);
   --callout-color: var(--callout-warning, 79,145,232);
+  --callout-default: var(--color-base-50-rgb, 79,145,232);
+  --callout-error: var(--color-base-50-rgb, 79,145,232);
+  --callout-example: var(--color-base-50-rgb, 79,145,232);
+  --callout-fail: var(--color-base-50-rgb, 79,145,232);
+  --callout-important: var(--color-base-50-rgb, 79,145,232);
+  --callout-info: var(--color-base-50-rgb, 79,145,232);
+  --callout-question: var(--color-base-50-rgb, 79,145,232);
+  --callout-quote: var(--color-base-50-rgb, 79,145,232);
+  --callout-success: var(--color-base-50-rgb, 79,145,232);
+  --callout-summary: var(--color-base-50-rgb, 79,145,232);
+  --callout-tip: var(--color-base-50-rgb, 79,145,232);
+  --callout-todo: var(--color-base-50-rgb, 79,145,232);
+  --callout-warning: var(--color-base-50-rgb, 79,145,232);
   background: rgba(79, 145, 232, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(79, 145, 232, 0.25);
   border-bottom-width: 2px;
@@ -1704,6 +1921,11 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
+  --background-modifier-form-field-hover: var(--leather-color-alt, #2117a9);
+  --background-primary: var(--leather-color, #140e66);
+  --search-clear-button-color: var(--light-ink-alt, #fafafd);
+  --text-muted: var(--light-ink-muted, rgba(245, 246, 248, 0.85));
+  --text-normal: var(--light-ink, #f5f6f8);
   background-color: var(--prompt-background, rgb(13, 51, 101));
   border-bottom-color: rgba(227, 132, 33, 0.85);
   border-bottom-width: 2px;
@@ -1743,6 +1965,11 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout.display-results {
+  --background-modifier-form-field-hover: var(--leather-color-alt, #2117a9);
+  --background-primary: var(--leather-color, #140e66);
+  --search-clear-button-color: var(--light-ink-alt, #fafafd);
+  --text-muted: var(--light-ink-muted, rgba(245, 246, 248, 0.85));
+  --text-normal: var(--light-ink, #f5f6f8);
   border-bottom-color: rgba(227, 132, 33, 0.85);
   border-bottom-width: 2px;
   border-left-color: rgba(227, 132, 33, 0.85);
@@ -1775,6 +2002,16 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, rgba(227, 132, 33, 0.85));
+  --pill-background-hover: var(--tag-background-hover, rgba(227, 132, 33, 0.85));
+  --pill-border-color: var(--tag-border-color, hsla(244, 76%, 38%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(244, 76%, 38%, 0.15));
+  --pill-color: var(--tag-color, #0d3365);
+  --pill-color-hover: var(--tag-color-hover, #124588);
+  --pill-color-remove: var(--tag-color, #0d3365);
+  --pill-color-remove-hover: var(--tag-color-hover, #124588);
+  --pill-padding-x: var(--tag-padding-x, 0.75em);
+  --pill-padding-y: var(--tag-padding-y, 0.12em);
   background-color: var(--pill-background, rgba(227, 132, 33, 0.85));
   border-bottom-color: rgba(33, 23, 171, 0.15);
   border-left-color: rgba(33, 23, 171, 0.15);
@@ -1833,7 +2070,21 @@ html[saved-theme="dark"] body hr {
   border-right-color: rgb(79, 145, 232);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
+  --callout-bug: var(--color-base-50-rgb, 79,145,232);
   --callout-color: var(--callout-default, 79,145,232);
+  --callout-default: var(--color-base-50-rgb, 79,145,232);
+  --callout-error: var(--color-base-50-rgb, 79,145,232);
+  --callout-example: var(--color-base-50-rgb, 79,145,232);
+  --callout-fail: var(--color-base-50-rgb, 79,145,232);
+  --callout-important: var(--color-base-50-rgb, 79,145,232);
+  --callout-info: var(--color-base-50-rgb, 79,145,232);
+  --callout-question: var(--color-base-50-rgb, 79,145,232);
+  --callout-quote: var(--color-base-50-rgb, 79,145,232);
+  --callout-success: var(--color-base-50-rgb, 79,145,232);
+  --callout-summary: var(--color-base-50-rgb, 79,145,232);
+  --callout-tip: var(--color-base-50-rgb, 79,145,232);
+  --callout-todo: var(--color-base-50-rgb, 79,145,232);
+  --callout-warning: var(--color-base-50-rgb, 79,145,232);
   border-bottom-color: rgba(79, 145, 232, 0.25);
   border-bottom-width: 2px;
   border-left-color: rgba(79, 145, 232, 0.25);
@@ -1877,6 +2128,7 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
 }
 
 html[saved-theme="dark"] body footer ul li a {
+  --background-modifier-hover: var(--color-base-30, #1b68cd);
   color: rgba(245, 246, 248, 0.85);
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
@@ -1963,6 +2215,7 @@ html[saved-theme="dark"] body .canvas-node-group {
 }
 
 html[saved-theme="dark"] body .canvas-sidebar {
+  --color-accent: var(--light-ink-alt, #fafafd);
   background-color: var(--background-secondary, rgb(20, 14, 102));
   border-color: rgb(245, 246, 248);
 }`,
@@ -2016,6 +2269,16 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, rgba(227, 132, 33, 0.85));
+  --pill-background-hover: var(--tag-background-hover, rgba(227, 132, 33, 0.85));
+  --pill-border-color: var(--tag-border-color, hsla(244, 76%, 38%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(244, 76%, 38%, 0.15));
+  --pill-color: var(--tag-color, #0d3365);
+  --pill-color-hover: var(--tag-color-hover, #124588);
+  --pill-color-remove: var(--tag-color, #0d3365);
+  --pill-color-remove-hover: var(--tag-color-hover, #124588);
+  --pill-padding-x: var(--tag-padding-x, 0.75em);
+  --pill-padding-y: var(--tag-padding-y, 0.12em);
   background-color: var(--pill-background, rgba(227, 132, 33, 0.85));
   color: var(--pill-color, rgb(13, 51, 101));
 }
@@ -2085,6 +2348,8 @@ html[saved-theme="dark"] body input[type=text] {
 }
 
 html[saved-theme="dark"] body kbd {
+  --code-background: var(--leather-color-alt, #2117a9);
+  --code-normal: var(--light-ink-alt, #fafafd);
   background-color: var(--code-background, rgb(33, 23, 169));
   border-bottom-color: rgb(250, 250, 253);
   border-left-color: rgb(250, 250, 253);
@@ -2485,6 +2750,23 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #172847);
+  --icon-color: var(--light-ink-alt, #e4e4ff);
+  --icon-color-active: var(--light-ink-alt, #e4e4ff);
+  --icon-color-focused: var(--light-ink-alt, #e4e4ff);
+  --icon-color-hover: var(--light-ink-alt, #e4e4ff);
+  --nav-heading-color: var(--light-ink-alt, #e4e4ff);
+  --nav-heading-color-collapsed: var(--light-ink-alt, #e4e4ff);
+  --nav-heading-color-collapsed-hover: var(--light-ink-alt, #e4e4ff);
+  --nav-tag-background: var(--leather-color-alt, #1d335a);
+  --nav-tag-color: var(--light-ink-alt, #e4e4ff);
+  --nav-tag-color-active: var(--light-ink-alt, #e4e4ff);
+  --nav-tag-color-hover: var(--light-ink-alt, #e4e4ff);
+  --tab-text-color-focused-active-current: var(--light-ink-alt, #e4e4ff);
+  --text-faint: var(--light-ink-fainted, rgba(248, 248, 255, 0.65));
+  --text-muted: var(--light-ink-muted, rgba(248, 248, 255, 0.85));
+  --vault-profile-color: var(--light-ink-alt, #e4e4ff);
+  --vault-profile-color-hover: var(--light-ink-alt, #e4e4ff);
   background-color: var(--tab-container-background, rgb(23, 40, 71));
   color: rgb(3, 5, 9);
 }
@@ -2504,6 +2786,23 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #172847);
+  --icon-color: var(--light-ink-alt, #e4e4ff);
+  --icon-color-active: var(--light-ink-alt, #e4e4ff);
+  --icon-color-focused: var(--light-ink-alt, #e4e4ff);
+  --icon-color-hover: var(--light-ink-alt, #e4e4ff);
+  --nav-heading-color: var(--light-ink-alt, #e4e4ff);
+  --nav-heading-color-collapsed: var(--light-ink-alt, #e4e4ff);
+  --nav-heading-color-collapsed-hover: var(--light-ink-alt, #e4e4ff);
+  --nav-tag-background: var(--leather-color-alt, #1d335a);
+  --nav-tag-color: var(--light-ink-alt, #e4e4ff);
+  --nav-tag-color-active: var(--light-ink-alt, #e4e4ff);
+  --nav-tag-color-hover: var(--light-ink-alt, #e4e4ff);
+  --tab-text-color-focused-active-current: var(--light-ink-alt, #e4e4ff);
+  --text-faint: var(--light-ink-fainted, rgba(248, 248, 255, 0.65));
+  --text-muted: var(--light-ink-muted, rgba(248, 248, 255, 0.85));
+  --vault-profile-color: var(--light-ink-alt, #e4e4ff);
+  --vault-profile-color-hover: var(--light-ink-alt, #e4e4ff);
   background-color: var(--tab-container-background, rgb(23, 40, 71));
   border-left-color: rgb(110, 110, 236);
   color: rgb(3, 5, 9);
@@ -2689,6 +2988,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, rgba(110, 110, 236, 0.2));
   border-bottom-color: rgb(3, 5, 9);
   border-left-color: rgb(3, 5, 9);
   border-right-color: rgb(3, 5, 9);
@@ -3316,7 +3616,21 @@ html[saved-theme="light"] body .callout > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
+  --callout-bug: var(--color-base-50-rgb, 110,110,236);
   --callout-color: var(--callout-summary, 110,110,236);
+  --callout-default: var(--color-base-50-rgb, 110,110,236);
+  --callout-error: var(--color-base-50-rgb, 110,110,236);
+  --callout-example: var(--color-base-50-rgb, 110,110,236);
+  --callout-fail: var(--color-base-50-rgb, 110,110,236);
+  --callout-important: var(--color-base-50-rgb, 110,110,236);
+  --callout-info: var(--color-base-50-rgb, 110,110,236);
+  --callout-question: var(--color-base-50-rgb, 110,110,236);
+  --callout-quote: var(--color-base-50-rgb, 110,110,236);
+  --callout-success: var(--color-base-50-rgb, 110,110,236);
+  --callout-summary: var(--color-base-50-rgb, 110,110,236);
+  --callout-tip: var(--color-base-50-rgb, 110,110,236);
+  --callout-todo: var(--color-base-50-rgb, 110,110,236);
+  --callout-warning: var(--color-base-50-rgb, 110,110,236);
   background: rgba(110, 110, 236, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(110, 110, 236, 0.25);
   border-bottom-width: 2px;
@@ -3347,7 +3661,21 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
+  --callout-bug: var(--color-base-50-rgb, 110,110,236);
   --callout-color: var(--callout-bug, 110,110,236);
+  --callout-default: var(--color-base-50-rgb, 110,110,236);
+  --callout-error: var(--color-base-50-rgb, 110,110,236);
+  --callout-example: var(--color-base-50-rgb, 110,110,236);
+  --callout-fail: var(--color-base-50-rgb, 110,110,236);
+  --callout-important: var(--color-base-50-rgb, 110,110,236);
+  --callout-info: var(--color-base-50-rgb, 110,110,236);
+  --callout-question: var(--color-base-50-rgb, 110,110,236);
+  --callout-quote: var(--color-base-50-rgb, 110,110,236);
+  --callout-success: var(--color-base-50-rgb, 110,110,236);
+  --callout-summary: var(--color-base-50-rgb, 110,110,236);
+  --callout-tip: var(--color-base-50-rgb, 110,110,236);
+  --callout-todo: var(--color-base-50-rgb, 110,110,236);
+  --callout-warning: var(--color-base-50-rgb, 110,110,236);
   background: rgba(110, 110, 236, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(110, 110, 236, 0.25);
   border-bottom-width: 2px;
@@ -3378,7 +3706,21 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
+  --callout-bug: var(--color-base-50-rgb, 110,110,236);
   --callout-color: var(--callout-error, 110,110,236);
+  --callout-default: var(--color-base-50-rgb, 110,110,236);
+  --callout-error: var(--color-base-50-rgb, 110,110,236);
+  --callout-example: var(--color-base-50-rgb, 110,110,236);
+  --callout-fail: var(--color-base-50-rgb, 110,110,236);
+  --callout-important: var(--color-base-50-rgb, 110,110,236);
+  --callout-info: var(--color-base-50-rgb, 110,110,236);
+  --callout-question: var(--color-base-50-rgb, 110,110,236);
+  --callout-quote: var(--color-base-50-rgb, 110,110,236);
+  --callout-success: var(--color-base-50-rgb, 110,110,236);
+  --callout-summary: var(--color-base-50-rgb, 110,110,236);
+  --callout-tip: var(--color-base-50-rgb, 110,110,236);
+  --callout-todo: var(--color-base-50-rgb, 110,110,236);
+  --callout-warning: var(--color-base-50-rgb, 110,110,236);
   background: rgba(110, 110, 236, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(110, 110, 236, 0.25);
   border-bottom-width: 2px;
@@ -3409,7 +3751,21 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
+  --callout-bug: var(--color-base-50-rgb, 110,110,236);
   --callout-color: var(--callout-example, 110,110,236);
+  --callout-default: var(--color-base-50-rgb, 110,110,236);
+  --callout-error: var(--color-base-50-rgb, 110,110,236);
+  --callout-example: var(--color-base-50-rgb, 110,110,236);
+  --callout-fail: var(--color-base-50-rgb, 110,110,236);
+  --callout-important: var(--color-base-50-rgb, 110,110,236);
+  --callout-info: var(--color-base-50-rgb, 110,110,236);
+  --callout-question: var(--color-base-50-rgb, 110,110,236);
+  --callout-quote: var(--color-base-50-rgb, 110,110,236);
+  --callout-success: var(--color-base-50-rgb, 110,110,236);
+  --callout-summary: var(--color-base-50-rgb, 110,110,236);
+  --callout-tip: var(--color-base-50-rgb, 110,110,236);
+  --callout-todo: var(--color-base-50-rgb, 110,110,236);
+  --callout-warning: var(--color-base-50-rgb, 110,110,236);
   background: rgba(110, 110, 236, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(110, 110, 236, 0.25);
   border-bottom-width: 2px;
@@ -3440,7 +3796,21 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
+  --callout-bug: var(--color-base-50-rgb, 110,110,236);
   --callout-color: var(--callout-fail, 110,110,236);
+  --callout-default: var(--color-base-50-rgb, 110,110,236);
+  --callout-error: var(--color-base-50-rgb, 110,110,236);
+  --callout-example: var(--color-base-50-rgb, 110,110,236);
+  --callout-fail: var(--color-base-50-rgb, 110,110,236);
+  --callout-important: var(--color-base-50-rgb, 110,110,236);
+  --callout-info: var(--color-base-50-rgb, 110,110,236);
+  --callout-question: var(--color-base-50-rgb, 110,110,236);
+  --callout-quote: var(--color-base-50-rgb, 110,110,236);
+  --callout-success: var(--color-base-50-rgb, 110,110,236);
+  --callout-summary: var(--color-base-50-rgb, 110,110,236);
+  --callout-tip: var(--color-base-50-rgb, 110,110,236);
+  --callout-todo: var(--color-base-50-rgb, 110,110,236);
+  --callout-warning: var(--color-base-50-rgb, 110,110,236);
   background: rgba(110, 110, 236, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(110, 110, 236, 0.25);
   border-bottom-width: 2px;
@@ -3471,7 +3841,21 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
+  --callout-bug: var(--color-base-50-rgb, 110,110,236);
   --callout-color: var(--callout-info, 110,110,236);
+  --callout-default: var(--color-base-50-rgb, 110,110,236);
+  --callout-error: var(--color-base-50-rgb, 110,110,236);
+  --callout-example: var(--color-base-50-rgb, 110,110,236);
+  --callout-fail: var(--color-base-50-rgb, 110,110,236);
+  --callout-important: var(--color-base-50-rgb, 110,110,236);
+  --callout-info: var(--color-base-50-rgb, 110,110,236);
+  --callout-question: var(--color-base-50-rgb, 110,110,236);
+  --callout-quote: var(--color-base-50-rgb, 110,110,236);
+  --callout-success: var(--color-base-50-rgb, 110,110,236);
+  --callout-summary: var(--color-base-50-rgb, 110,110,236);
+  --callout-tip: var(--color-base-50-rgb, 110,110,236);
+  --callout-todo: var(--color-base-50-rgb, 110,110,236);
+  --callout-warning: var(--color-base-50-rgb, 110,110,236);
   background: rgba(110, 110, 236, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(110, 110, 236, 0.25);
   border-bottom-width: 2px;
@@ -3502,7 +3886,21 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
+  --callout-bug: var(--color-base-50-rgb, 110,110,236);
   --callout-color: var(--callout-default, 110,110,236);
+  --callout-default: var(--color-base-50-rgb, 110,110,236);
+  --callout-error: var(--color-base-50-rgb, 110,110,236);
+  --callout-example: var(--color-base-50-rgb, 110,110,236);
+  --callout-fail: var(--color-base-50-rgb, 110,110,236);
+  --callout-important: var(--color-base-50-rgb, 110,110,236);
+  --callout-info: var(--color-base-50-rgb, 110,110,236);
+  --callout-question: var(--color-base-50-rgb, 110,110,236);
+  --callout-quote: var(--color-base-50-rgb, 110,110,236);
+  --callout-success: var(--color-base-50-rgb, 110,110,236);
+  --callout-summary: var(--color-base-50-rgb, 110,110,236);
+  --callout-tip: var(--color-base-50-rgb, 110,110,236);
+  --callout-todo: var(--color-base-50-rgb, 110,110,236);
+  --callout-warning: var(--color-base-50-rgb, 110,110,236);
   background: rgba(110, 110, 236, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(110, 110, 236, 0.25);
   border-bottom-width: 2px;
@@ -3533,7 +3931,21 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
+  --callout-bug: var(--color-base-50-rgb, 110,110,236);
   --callout-color: var(--callout-question, 110,110,236);
+  --callout-default: var(--color-base-50-rgb, 110,110,236);
+  --callout-error: var(--color-base-50-rgb, 110,110,236);
+  --callout-example: var(--color-base-50-rgb, 110,110,236);
+  --callout-fail: var(--color-base-50-rgb, 110,110,236);
+  --callout-important: var(--color-base-50-rgb, 110,110,236);
+  --callout-info: var(--color-base-50-rgb, 110,110,236);
+  --callout-question: var(--color-base-50-rgb, 110,110,236);
+  --callout-quote: var(--color-base-50-rgb, 110,110,236);
+  --callout-success: var(--color-base-50-rgb, 110,110,236);
+  --callout-summary: var(--color-base-50-rgb, 110,110,236);
+  --callout-tip: var(--color-base-50-rgb, 110,110,236);
+  --callout-todo: var(--color-base-50-rgb, 110,110,236);
+  --callout-warning: var(--color-base-50-rgb, 110,110,236);
   background: rgba(110, 110, 236, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(110, 110, 236, 0.25);
   border-bottom-width: 2px;
@@ -3564,7 +3976,21 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
+  --callout-bug: var(--color-base-50-rgb, 110,110,236);
   --callout-color: var(--callout-quote, 110,110,236);
+  --callout-default: var(--color-base-50-rgb, 110,110,236);
+  --callout-error: var(--color-base-50-rgb, 110,110,236);
+  --callout-example: var(--color-base-50-rgb, 110,110,236);
+  --callout-fail: var(--color-base-50-rgb, 110,110,236);
+  --callout-important: var(--color-base-50-rgb, 110,110,236);
+  --callout-info: var(--color-base-50-rgb, 110,110,236);
+  --callout-question: var(--color-base-50-rgb, 110,110,236);
+  --callout-quote: var(--color-base-50-rgb, 110,110,236);
+  --callout-success: var(--color-base-50-rgb, 110,110,236);
+  --callout-summary: var(--color-base-50-rgb, 110,110,236);
+  --callout-tip: var(--color-base-50-rgb, 110,110,236);
+  --callout-todo: var(--color-base-50-rgb, 110,110,236);
+  --callout-warning: var(--color-base-50-rgb, 110,110,236);
   background: rgba(110, 110, 236, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(110, 110, 236, 0.25);
   border-bottom-width: 2px;
@@ -3595,7 +4021,21 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
+  --callout-bug: var(--color-base-50-rgb, 110,110,236);
   --callout-color: var(--callout-success, 110,110,236);
+  --callout-default: var(--color-base-50-rgb, 110,110,236);
+  --callout-error: var(--color-base-50-rgb, 110,110,236);
+  --callout-example: var(--color-base-50-rgb, 110,110,236);
+  --callout-fail: var(--color-base-50-rgb, 110,110,236);
+  --callout-important: var(--color-base-50-rgb, 110,110,236);
+  --callout-info: var(--color-base-50-rgb, 110,110,236);
+  --callout-question: var(--color-base-50-rgb, 110,110,236);
+  --callout-quote: var(--color-base-50-rgb, 110,110,236);
+  --callout-success: var(--color-base-50-rgb, 110,110,236);
+  --callout-summary: var(--color-base-50-rgb, 110,110,236);
+  --callout-tip: var(--color-base-50-rgb, 110,110,236);
+  --callout-todo: var(--color-base-50-rgb, 110,110,236);
+  --callout-warning: var(--color-base-50-rgb, 110,110,236);
   background: rgba(110, 110, 236, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(110, 110, 236, 0.25);
   border-bottom-width: 2px;
@@ -3626,7 +4066,21 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
+  --callout-bug: var(--color-base-50-rgb, 110,110,236);
   --callout-color: var(--callout-tip, 110,110,236);
+  --callout-default: var(--color-base-50-rgb, 110,110,236);
+  --callout-error: var(--color-base-50-rgb, 110,110,236);
+  --callout-example: var(--color-base-50-rgb, 110,110,236);
+  --callout-fail: var(--color-base-50-rgb, 110,110,236);
+  --callout-important: var(--color-base-50-rgb, 110,110,236);
+  --callout-info: var(--color-base-50-rgb, 110,110,236);
+  --callout-question: var(--color-base-50-rgb, 110,110,236);
+  --callout-quote: var(--color-base-50-rgb, 110,110,236);
+  --callout-success: var(--color-base-50-rgb, 110,110,236);
+  --callout-summary: var(--color-base-50-rgb, 110,110,236);
+  --callout-tip: var(--color-base-50-rgb, 110,110,236);
+  --callout-todo: var(--color-base-50-rgb, 110,110,236);
+  --callout-warning: var(--color-base-50-rgb, 110,110,236);
   background: rgba(110, 110, 236, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(110, 110, 236, 0.25);
   border-bottom-width: 2px;
@@ -3657,7 +4111,21 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
+  --callout-bug: var(--color-base-50-rgb, 110,110,236);
   --callout-color: var(--callout-todo, 110,110,236);
+  --callout-default: var(--color-base-50-rgb, 110,110,236);
+  --callout-error: var(--color-base-50-rgb, 110,110,236);
+  --callout-example: var(--color-base-50-rgb, 110,110,236);
+  --callout-fail: var(--color-base-50-rgb, 110,110,236);
+  --callout-important: var(--color-base-50-rgb, 110,110,236);
+  --callout-info: var(--color-base-50-rgb, 110,110,236);
+  --callout-question: var(--color-base-50-rgb, 110,110,236);
+  --callout-quote: var(--color-base-50-rgb, 110,110,236);
+  --callout-success: var(--color-base-50-rgb, 110,110,236);
+  --callout-summary: var(--color-base-50-rgb, 110,110,236);
+  --callout-tip: var(--color-base-50-rgb, 110,110,236);
+  --callout-todo: var(--color-base-50-rgb, 110,110,236);
+  --callout-warning: var(--color-base-50-rgb, 110,110,236);
   background: rgba(110, 110, 236, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(110, 110, 236, 0.25);
   border-bottom-width: 2px;
@@ -3688,7 +4156,21 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
+  --callout-bug: var(--color-base-50-rgb, 110,110,236);
   --callout-color: var(--callout-warning, 110,110,236);
+  --callout-default: var(--color-base-50-rgb, 110,110,236);
+  --callout-error: var(--color-base-50-rgb, 110,110,236);
+  --callout-example: var(--color-base-50-rgb, 110,110,236);
+  --callout-fail: var(--color-base-50-rgb, 110,110,236);
+  --callout-important: var(--color-base-50-rgb, 110,110,236);
+  --callout-info: var(--color-base-50-rgb, 110,110,236);
+  --callout-question: var(--color-base-50-rgb, 110,110,236);
+  --callout-quote: var(--color-base-50-rgb, 110,110,236);
+  --callout-success: var(--color-base-50-rgb, 110,110,236);
+  --callout-summary: var(--color-base-50-rgb, 110,110,236);
+  --callout-tip: var(--color-base-50-rgb, 110,110,236);
+  --callout-todo: var(--color-base-50-rgb, 110,110,236);
+  --callout-warning: var(--color-base-50-rgb, 110,110,236);
   background: rgba(110, 110, 236, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(110, 110, 236, 0.25);
   border-bottom-width: 2px;
@@ -3784,6 +4266,11 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
+  --background-modifier-form-field-hover: var(--leather-color-alt, #1d335a);
+  --background-primary: var(--leather-color, #172847);
+  --search-clear-button-color: var(--light-ink-alt, #e4e4ff);
+  --text-muted: var(--light-ink-muted, rgba(248, 248, 255, 0.85));
+  --text-normal: var(--light-ink, #f8f8ff);
   background-color: var(--prompt-background, rgb(248, 248, 255));
   border-bottom-color: rgba(17, 29, 52, 0.85);
   border-bottom-width: 2px;
@@ -3823,6 +4310,11 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout.display-results {
+  --background-modifier-form-field-hover: var(--leather-color-alt, #1d335a);
+  --background-primary: var(--leather-color, #172847);
+  --search-clear-button-color: var(--light-ink-alt, #e4e4ff);
+  --text-muted: var(--light-ink-muted, rgba(248, 248, 255, 0.85));
+  --text-normal: var(--light-ink, #f8f8ff);
   border-bottom-color: rgba(17, 29, 52, 0.85);
   border-bottom-width: 2px;
   border-left-color: rgba(17, 29, 52, 0.85);
@@ -3855,6 +4347,16 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, rgba(17, 29, 52, 0.85));
+  --pill-background-hover: var(--tag-background-hover, rgba(17, 29, 52, 0.85));
+  --pill-border-color: var(--tag-border-color, hsla(240, 77%, 68%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(240, 77%, 68%, 0.15));
+  --pill-color: var(--tag-color, #d1d1ff);
+  --pill-color-hover: var(--tag-color-hover, #d1d1ff);
+  --pill-color-remove: var(--tag-color, #d1d1ff);
+  --pill-color-remove-hover: var(--tag-color-hover, #d1d1ff);
+  --pill-padding-x: var(--tag-padding-x, 0.75em);
+  --pill-padding-y: var(--tag-padding-y, 0.12em);
   background-color: var(--pill-background, rgba(17, 29, 52, 0.85));
   border-bottom-color: rgba(111, 111, 236, 0.15);
   border-left-color: rgba(111, 111, 236, 0.15);
@@ -3913,7 +4415,21 @@ html[saved-theme="light"] body hr {
   border-right-color: rgb(110, 110, 236);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
+  --callout-bug: var(--color-base-50-rgb, 110,110,236);
   --callout-color: var(--callout-default, 110,110,236);
+  --callout-default: var(--color-base-50-rgb, 110,110,236);
+  --callout-error: var(--color-base-50-rgb, 110,110,236);
+  --callout-example: var(--color-base-50-rgb, 110,110,236);
+  --callout-fail: var(--color-base-50-rgb, 110,110,236);
+  --callout-important: var(--color-base-50-rgb, 110,110,236);
+  --callout-info: var(--color-base-50-rgb, 110,110,236);
+  --callout-question: var(--color-base-50-rgb, 110,110,236);
+  --callout-quote: var(--color-base-50-rgb, 110,110,236);
+  --callout-success: var(--color-base-50-rgb, 110,110,236);
+  --callout-summary: var(--color-base-50-rgb, 110,110,236);
+  --callout-tip: var(--color-base-50-rgb, 110,110,236);
+  --callout-todo: var(--color-base-50-rgb, 110,110,236);
+  --callout-warning: var(--color-base-50-rgb, 110,110,236);
   border-bottom-color: rgba(110, 110, 236, 0.25);
   border-bottom-width: 2px;
   border-left-color: rgba(110, 110, 236, 0.25);
@@ -3957,6 +4473,7 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
 }
 
 html[saved-theme="light"] body footer ul li a {
+  --background-modifier-hover: var(--color-base-30, #9696ff);
   color: rgba(3, 5, 9, 0.85);
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
@@ -4096,6 +4613,16 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, rgba(17, 29, 52, 0.85));
+  --pill-background-hover: var(--tag-background-hover, rgba(17, 29, 52, 0.85));
+  --pill-border-color: var(--tag-border-color, hsla(240, 77%, 68%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(240, 77%, 68%, 0.15));
+  --pill-color: var(--tag-color, #d1d1ff);
+  --pill-color-hover: var(--tag-color-hover, #d1d1ff);
+  --pill-color-remove: var(--tag-color, #d1d1ff);
+  --pill-color-remove-hover: var(--tag-color-hover, #d1d1ff);
+  --pill-padding-x: var(--tag-padding-x, 0.75em);
+  --pill-padding-y: var(--tag-padding-y, 0.12em);
   background-color: var(--pill-background, rgba(17, 29, 52, 0.85));
   color: var(--pill-color, rgb(209, 209, 255));
 }
@@ -4165,6 +4692,8 @@ html[saved-theme="light"] body input[type=text] {
 }
 
 html[saved-theme="light"] body kbd {
+  --code-background: var(--leather-color-alt, #1d335a);
+  --code-normal: var(--light-ink-alt, #e4e4ff);
   background-color: var(--code-background, rgb(29, 51, 90));
   border-bottom-color: rgb(228, 228, 255);
   border-left-color: rgb(228, 228, 255);

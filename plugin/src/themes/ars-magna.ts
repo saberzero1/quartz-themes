@@ -190,6 +190,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(203, 8%, 20%));
   background-color: var(--tab-container-background, rgb(47, 52, 55));
   color: rgba(240, 240, 240, 0.9);
 }
@@ -209,6 +210,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(203, 8%, 20%));
   background-color: var(--tab-container-background, rgb(47, 52, 55));
   border-left-color: rgba(240, 240, 240, 0.14);
   color: rgba(240, 240, 240, 0.9);
@@ -369,6 +371,7 @@ html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #2a2a2a;
   --flair-color: rgba(240, 240, 240, 0.9);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -661,6 +664,7 @@ html body a.internal-link.broken {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #2a2a2a;
   --flair-color: rgba(240, 240, 240, 0.9);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -949,6 +953,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, hsl(203, 8%, 25%));
   border-bottom-color: rgba(240, 240, 240, 0.9);
   border-left-color: rgba(240, 240, 240, 0.9);
   border-right-color: rgba(240, 240, 240, 0.9);
@@ -1928,6 +1933,13 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgba(240, 240, 240, 0.9);
 }
 
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, rgba(240, 240, 240, 0.45));
+  --pill-color-hover: var(--tag-color-hover, rgba(240, 240, 240, 0.45));
+  --pill-color-remove: var(--tag-color, rgba(240, 240, 240, 0.45));
+  --pill-color-remove-hover: var(--tag-color-hover, rgba(240, 240, 240, 0.45));
+}
+
 html body a.internal-link.tag-link::before {
   color: rgba(240, 240, 240, 0.45);
 }
@@ -2124,6 +2136,10 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, rgba(240, 240, 240, 0.45));
+  --pill-color-hover: var(--tag-color-hover, rgba(240, 240, 240, 0.45));
+  --pill-color-remove: var(--tag-color, rgba(240, 240, 240, 0.45));
+  --pill-color-remove-hover: var(--tag-color-hover, rgba(240, 240, 240, 0.45));
   color: var(--pill-color, rgba(240, 240, 240, 0.45));
 }
 

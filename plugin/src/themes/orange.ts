@@ -133,6 +133,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #141414);
   background-color: var(--tab-container-background, rgb(20, 20, 20));
   color: rgb(204, 204, 204);
 }
@@ -148,6 +149,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #141414);
   background-color: var(--tab-container-background, rgb(20, 20, 20));
   color: rgb(204, 204, 204);
 }`,
@@ -295,6 +297,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #0A0A0A);
   border-bottom-color: rgb(204, 204, 204);
   border-left-color: rgb(204, 204, 204);
   border-right-color: rgb(204, 204, 204);
@@ -1160,6 +1163,14 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(30, 61%, 50%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(30, 61%, 50%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(30, 61%, 50%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(30, 61%, 50%, 0.15));
+  --pill-color: var(--tag-color, hsl(27, 62.22%, 57.5%));
+  --pill-color-hover: var(--tag-color-hover, hsl(27, 62.22%, 57.5%));
+  --pill-color-remove: var(--tag-color, hsl(27, 62.22%, 57.5%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(27, 62.22%, 57.5%));
   background-color: var(--pill-background, rgba(205, 128, 50, 0.1));
   border-bottom-color: rgba(205, 128, 50, 0.15);
   border-left-color: rgba(205, 128, 50, 0.15);
@@ -1288,6 +1299,14 @@ html[saved-theme="dark"] body .bases-table thead th {
   font-weight: var(--table-header-weight, 700);
 }`,
     properties: `html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(30, 61%, 50%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(30, 61%, 50%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(30, 61%, 50%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(30, 61%, 50%, 0.15));
+  --pill-color: var(--tag-color, hsl(27, 62.22%, 57.5%));
+  --pill-color-hover: var(--tag-color-hover, hsl(27, 62.22%, 57.5%));
+  --pill-color-remove: var(--tag-color, hsl(27, 62.22%, 57.5%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(27, 62.22%, 57.5%));
   background-color: var(--pill-background, rgba(205, 128, 50, 0.1));
   color: var(--pill-color, rgb(214, 140, 79));
 }

@@ -231,6 +231,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #070707);
   background-color: var(--tab-container-background, rgb(7, 7, 7));
   color: rgb(73, 80, 78);
 }
@@ -250,6 +251,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #070707);
   background-color: var(--tab-container-background, rgb(7, 7, 7));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(73, 80, 78);
@@ -441,6 +443,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, #070707);
   border-bottom-color: rgb(73, 80, 78);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1070,6 +1073,7 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
 }
 
 html body .callout .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 200);
   color: var(--callout-title-color, rgb(76, 94, 117));
   font-weight: var(--font-weight, 200);
 }
@@ -1109,6 +1113,7 @@ html body .callout[data-callout="abstract"] .callout-title {
 }
 
 html body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 200);
   color: var(--callout-title-color, rgb(76, 94, 117));
   font-weight: var(--font-weight, 200);
 }
@@ -1148,6 +1153,7 @@ html body .callout[data-callout="bug"] .callout-title {
 }
 
 html body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 200);
   color: var(--callout-title-color, rgb(76, 94, 117));
   font-weight: var(--font-weight, 200);
 }
@@ -1187,6 +1193,7 @@ html body .callout[data-callout="danger"] .callout-title {
 }
 
 html body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 200);
   color: var(--callout-title-color, rgb(76, 94, 117));
   font-weight: var(--font-weight, 200);
 }
@@ -1226,6 +1233,7 @@ html body .callout[data-callout="example"] .callout-title {
 }
 
 html body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 200);
   color: var(--callout-title-color, rgb(76, 94, 117));
   font-weight: var(--font-weight, 200);
 }
@@ -1265,6 +1273,7 @@ html body .callout[data-callout="failure"] .callout-title {
 }
 
 html body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 200);
   color: var(--callout-title-color, rgb(76, 94, 117));
   font-weight: var(--font-weight, 200);
 }
@@ -1304,6 +1313,7 @@ html body .callout[data-callout="info"] .callout-title {
 }
 
 html body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 200);
   color: var(--callout-title-color, rgb(76, 94, 117));
   font-weight: var(--font-weight, 200);
 }
@@ -1343,6 +1353,7 @@ html body .callout[data-callout="note"] .callout-title {
 }
 
 html body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 200);
   color: var(--callout-title-color, rgb(76, 94, 117));
   font-weight: var(--font-weight, 200);
 }
@@ -1382,6 +1393,7 @@ html body .callout[data-callout="question"] .callout-title {
 }
 
 html body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 200);
   color: var(--callout-title-color, rgb(76, 94, 117));
   font-weight: var(--font-weight, 200);
 }
@@ -1421,6 +1433,7 @@ html body .callout[data-callout="quote"] .callout-title {
 }
 
 html body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 200);
   color: var(--callout-title-color, rgb(76, 94, 117));
   font-weight: var(--font-weight, 200);
 }
@@ -1460,6 +1473,7 @@ html body .callout[data-callout="success"] .callout-title {
 }
 
 html body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 200);
   color: var(--callout-title-color, rgb(76, 94, 117));
   font-weight: var(--font-weight, 200);
 }
@@ -1499,6 +1513,7 @@ html body .callout[data-callout="tip"] .callout-title {
 }
 
 html body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 200);
   color: var(--callout-title-color, rgb(76, 94, 117));
   font-weight: var(--font-weight, 200);
 }
@@ -1538,6 +1553,7 @@ html body .callout[data-callout="todo"] .callout-title {
 }
 
 html body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 200);
   color: var(--callout-title-color, rgb(76, 94, 117));
   font-weight: var(--font-weight, 200);
 }
@@ -1577,6 +1593,7 @@ html body .callout[data-callout="warning"] .callout-title {
 }
 
 html body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+  --font-weight: var(--callout-title-weight, 200);
   color: var(--callout-title-color, rgb(76, 94, 117));
   font-weight: var(--font-weight, 200);
 }
@@ -1734,6 +1751,10 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #4C5E75);
+  --pill-color-hover: var(--tag-color-hover, #3D4241);
+  --pill-color-remove: var(--tag-color, #4C5E75);
+  --pill-color-remove-hover: var(--tag-color-hover, #3D4241);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-bottom-left-radius: 24.5px;
   border-bottom-right-radius: 24.5px;
@@ -1948,6 +1969,7 @@ html body .canvas-sidebar {
   color: var(--table-header-color, rgb(73, 80, 78));
 }`,
     properties: `html body .metadata {
+  --input-height: var(--metadata-input-height, 24.5px);
   border-bottom-color: rgb(7, 7, 7);
   border-left-color: rgb(7, 7, 7);
   border-right-color: rgb(7, 7, 7);
@@ -1966,6 +1988,7 @@ html body .metadata-properties {
 }
 
 html body .note-properties {
+  --input-height: var(--metadata-input-height, 24.5px);
   border-color: rgb(7, 7, 7);
 }
 
@@ -1978,6 +2001,10 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, #4C5E75);
+  --pill-color-hover: var(--tag-color-hover, #3D4241);
+  --pill-color-remove: var(--tag-color, #4C5E75);
+  --pill-color-remove-hover: var(--tag-color-hover, #3D4241);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-radius: 24.5px;
   color: var(--pill-color, rgb(76, 94, 117));

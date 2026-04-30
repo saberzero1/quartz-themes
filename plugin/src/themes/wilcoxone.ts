@@ -229,6 +229,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(227, 56%, 13%));
   background-color: var(--tab-container-background, rgb(15, 23, 52));
   color: rgb(232, 238, 231);
 }
@@ -248,6 +249,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(227, 56%, 13%));
   background-color: var(--tab-container-background, rgb(15, 23, 52));
   border-left-color: rgb(51, 65, 148);
   color: rgb(232, 238, 231);
@@ -480,6 +482,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, hsl(227, 66%, 11%));
   border-bottom-color: rgb(232, 238, 231);
   border-left-color: rgb(232, 238, 231);
   border-right-color: rgb(232, 238, 231);
@@ -1376,6 +1379,10 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, hsl(176, 16%, 64%));
+  --pill-color-hover: var(--tag-color-hover, hsl(176, 16%, 64%));
+  --pill-color-remove: var(--tag-color, hsl(176, 16%, 64%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(176, 16%, 64%));
   font-family: "??", "??", Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--pill-weight, 300);
 }
@@ -1585,6 +1592,10 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-color: var(--tag-color, hsl(176, 16%, 64%));
+  --pill-color-hover: var(--tag-color-hover, hsl(176, 16%, 64%));
+  --pill-color-remove: var(--tag-color, hsl(176, 16%, 64%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(176, 16%, 64%));
   color: var(--pill-color, rgb(149, 178, 176));
 }
 

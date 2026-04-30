@@ -662,6 +662,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, rgb(22, 22, 22));
   background-color: var(--tab-container-background, rgb(22, 22, 22));
   color: rgb(244, 244, 240);
 }
@@ -681,6 +682,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, rgb(22, 22, 22));
   background-color: var(--tab-container-background, rgb(22, 22, 22));
   border-left-color: rgb(58, 56, 56);
   color: rgb(244, 244, 240);
@@ -932,6 +934,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, rgb(38, 38, 37));
   border-bottom-color: rgb(244, 244, 240);
   border-left-color: rgb(244, 244, 240);
   border-right-color: rgb(244, 244, 240);
@@ -2301,6 +2304,9 @@ html[saved-theme="dark"] body .callout[data-callout="alarm"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -2407,6 +2413,7 @@ html[saved-theme="dark"] body .callout[data-callout="alarm"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2667,6 +2674,9 @@ html[saved-theme="dark"] body .callout[data-callout="annotation"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -2773,6 +2783,7 @@ html[saved-theme="dark"] body .callout[data-callout="annotation"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3033,6 +3044,9 @@ html[saved-theme="dark"] body .callout[data-callout="aside"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -3139,6 +3153,7 @@ html[saved-theme="dark"] body .callout[data-callout="aside"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3400,6 +3415,9 @@ html[saved-theme="dark"] body .callout[data-callout="bookmark"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -3506,6 +3524,7 @@ html[saved-theme="dark"] body .callout[data-callout="bookmark"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3799,6 +3818,9 @@ html[saved-theme="dark"] body .callout[data-callout="cons"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -3905,6 +3927,7 @@ html[saved-theme="dark"] body .callout[data-callout="cons"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4165,6 +4188,9 @@ html[saved-theme="dark"] body .callout[data-callout="cue"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -4271,6 +4297,7 @@ html[saved-theme="dark"] body .callout[data-callout="cue"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4564,6 +4591,9 @@ html[saved-theme="dark"] body .callout[data-callout="debug"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -4670,6 +4700,7 @@ html[saved-theme="dark"] body .callout[data-callout="debug"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4930,6 +4961,9 @@ html[saved-theme="dark"] body .callout[data-callout="event"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -5036,6 +5070,7 @@ html[saved-theme="dark"] body .callout[data-callout="event"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5362,6 +5397,9 @@ html[saved-theme="dark"] body .callout[data-callout="favorite"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -5468,6 +5506,7 @@ html[saved-theme="dark"] body .callout[data-callout="favorite"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5728,6 +5767,9 @@ html[saved-theme="dark"] body .callout[data-callout="favourite"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -5834,6 +5876,7 @@ html[saved-theme="dark"] body .callout[data-callout="favourite"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6094,6 +6137,9 @@ html[saved-theme="dark"] body .callout[data-callout="grid"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -6198,6 +6244,7 @@ html[saved-theme="dark"] body .callout[data-callout="grid"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6454,6 +6501,9 @@ html[saved-theme="dark"] body .callout[data-callout="idea"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -6560,6 +6610,7 @@ html[saved-theme="dark"] body .callout[data-callout="idea"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6853,6 +6904,9 @@ html[saved-theme="dark"] body .callout[data-callout="location"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -6959,6 +7013,7 @@ html[saved-theme="dark"] body .callout[data-callout="location"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7219,6 +7274,9 @@ html[saved-theme="dark"] body .callout[data-callout="negative"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -7325,6 +7383,7 @@ html[saved-theme="dark"] body .callout[data-callout="negative"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7618,6 +7677,9 @@ html[saved-theme="dark"] body .callout[data-callout="notification"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -7724,6 +7786,7 @@ html[saved-theme="dark"] body .callout[data-callout="notification"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7984,6 +8047,9 @@ html[saved-theme="dark"] body .callout[data-callout="positive"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -8090,6 +8156,7 @@ html[saved-theme="dark"] body .callout[data-callout="positive"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8350,6 +8417,9 @@ html[saved-theme="dark"] body .callout[data-callout="pros"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -8456,6 +8526,7 @@ html[saved-theme="dark"] body .callout[data-callout="pros"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8782,6 +8853,9 @@ html[saved-theme="dark"] body .callout[data-callout="reference"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -8888,6 +8962,7 @@ html[saved-theme="dark"] body .callout[data-callout="reference"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9148,6 +9223,9 @@ html[saved-theme="dark"] body .callout[data-callout="reminder"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -9254,6 +9332,7 @@ html[saved-theme="dark"] body .callout[data-callout="reminder"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9514,6 +9593,9 @@ html[saved-theme="dark"] body .callout[data-callout="reward"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -9620,6 +9702,7 @@ html[saved-theme="dark"] body .callout[data-callout="reward"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9880,6 +9963,9 @@ html[saved-theme="dark"] body .callout[data-callout="site"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -9986,6 +10072,7 @@ html[saved-theme="dark"] body .callout[data-callout="site"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10378,6 +10465,9 @@ html[saved-theme="dark"] body .callout[data-callout="win"] {
   --background-secondary-alt: rgb(22, 22, 22);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(58, 56, 56);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -10484,6 +10574,7 @@ html[saved-theme="dark"] body .callout[data-callout="win"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10937,6 +11028,16 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --icon-size: var(--icon-xs, 16px);
+  --icon-stroke: var(--icon-xs-stroke-width, 1px);
+  --pill-background: var(--tag-background, rgba(102, 153, 97, 0.15));
+  --pill-background-hover: var(--tag-background-hover, rgba(102, 153, 97, 0.25));
+  --pill-border-color: var(--tag-border-color, rgba(102, 153, 97, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, rgba(102, 153, 97, 0.25));
+  --pill-color: var(--tag-color, rgb(102, 153, 97));
+  --pill-color-hover: var(--tag-color-hover, rgb(102, 153, 97));
+  --pill-color-remove: var(--tag-color, rgb(102, 153, 97));
+  --pill-color-remove-hover: var(--tag-color-hover, rgb(102, 153, 97));
   background-color: var(--pill-background, rgba(102, 153, 97, 0.15));
   border-bottom-color: rgba(102, 153, 97, 0.15);
   border-left-color: rgba(102, 153, 97, 0.15);
@@ -10950,6 +11051,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  --font-weight: var(--h1-weight, 600);
   color: var(--h1-color, rgb(244, 244, 240));
   font-family: var(--h1-font, "??", Inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -10961,6 +11063,7 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  --font-weight: var(--h2-weight, 600);
   color: var(--h2-color, rgb(244, 244, 240));
   font-family: var(--h2-font, "??", Inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -10971,16 +11074,19 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h3 {
+  --font-weight: var(--h3-weight, 600);
   color: var(--h3-color, rgb(244, 244, 240));
   font-family: var(--h3-font, "??", Inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
+  --font-weight: var(--h4-weight, 600);
   color: var(--h4-color, rgb(244, 244, 240));
   font-family: var(--h4-font, "??", Inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
+  --font-weight: var(--h5-weight, 600);
   color: var(--h5-color, rgb(244, 244, 240));
   font-family: var(--h5-font, "??", Inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -11163,6 +11269,16 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --icon-size: var(--icon-xs, 16px);
+  --icon-stroke: var(--icon-xs-stroke-width, 1px);
+  --pill-background: var(--tag-background, rgba(102, 153, 97, 0.15));
+  --pill-background-hover: var(--tag-background-hover, rgba(102, 153, 97, 0.25));
+  --pill-border-color: var(--tag-border-color, rgba(102, 153, 97, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, rgba(102, 153, 97, 0.25));
+  --pill-color: var(--tag-color, rgb(102, 153, 97));
+  --pill-color-hover: var(--tag-color-hover, rgb(102, 153, 97));
+  --pill-color-remove: var(--tag-color, rgb(102, 153, 97));
+  --pill-color-remove-hover: var(--tag-color-hover, rgb(102, 153, 97));
   background-color: var(--pill-background, rgba(102, 153, 97, 0.15));
   color: var(--pill-color, rgb(102, 153, 97));
 }
@@ -11926,6 +12042,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, rgb(244, 244, 240));
   background-color: var(--tab-container-background, rgb(244, 244, 240));
   color: rgb(22, 22, 22);
 }
@@ -11945,6 +12062,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, rgb(244, 244, 240));
   background-color: var(--tab-container-background, rgb(244, 244, 240));
   border-left-color: rgb(226, 224, 220);
   color: rgb(22, 22, 22);
@@ -12196,6 +12314,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, rgba(226, 224, 220, 0.5));
   border-bottom-color: rgb(22, 22, 22);
   border-left-color: rgb(22, 22, 22);
   border-right-color: rgb(22, 22, 22);
@@ -13565,6 +13684,9 @@ html[saved-theme="light"] body .callout[data-callout="alarm"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -13671,6 +13793,7 @@ html[saved-theme="light"] body .callout[data-callout="alarm"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -13929,6 +14052,9 @@ html[saved-theme="light"] body .callout[data-callout="annotation"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -14035,6 +14161,7 @@ html[saved-theme="light"] body .callout[data-callout="annotation"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -14293,6 +14420,9 @@ html[saved-theme="light"] body .callout[data-callout="aside"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -14399,6 +14529,7 @@ html[saved-theme="light"] body .callout[data-callout="aside"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -14658,6 +14789,9 @@ html[saved-theme="light"] body .callout[data-callout="bookmark"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -14764,6 +14898,7 @@ html[saved-theme="light"] body .callout[data-callout="bookmark"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -15055,6 +15190,9 @@ html[saved-theme="light"] body .callout[data-callout="cons"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -15161,6 +15299,7 @@ html[saved-theme="light"] body .callout[data-callout="cons"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -15419,6 +15558,9 @@ html[saved-theme="light"] body .callout[data-callout="cue"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -15525,6 +15667,7 @@ html[saved-theme="light"] body .callout[data-callout="cue"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -15816,6 +15959,9 @@ html[saved-theme="light"] body .callout[data-callout="debug"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -15922,6 +16068,7 @@ html[saved-theme="light"] body .callout[data-callout="debug"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -16180,6 +16327,9 @@ html[saved-theme="light"] body .callout[data-callout="event"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -16286,6 +16436,7 @@ html[saved-theme="light"] body .callout[data-callout="event"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -16610,6 +16761,9 @@ html[saved-theme="light"] body .callout[data-callout="favorite"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -16716,6 +16870,7 @@ html[saved-theme="light"] body .callout[data-callout="favorite"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -16974,6 +17129,9 @@ html[saved-theme="light"] body .callout[data-callout="favourite"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -17080,6 +17238,7 @@ html[saved-theme="light"] body .callout[data-callout="favourite"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -17338,6 +17497,9 @@ html[saved-theme="light"] body .callout[data-callout="grid"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -17442,6 +17604,7 @@ html[saved-theme="light"] body .callout[data-callout="grid"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -17696,6 +17859,9 @@ html[saved-theme="light"] body .callout[data-callout="idea"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -17802,6 +17968,7 @@ html[saved-theme="light"] body .callout[data-callout="idea"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -18093,6 +18260,9 @@ html[saved-theme="light"] body .callout[data-callout="location"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -18199,6 +18369,7 @@ html[saved-theme="light"] body .callout[data-callout="location"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -18457,6 +18628,9 @@ html[saved-theme="light"] body .callout[data-callout="negative"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -18563,6 +18737,7 @@ html[saved-theme="light"] body .callout[data-callout="negative"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -18854,6 +19029,9 @@ html[saved-theme="light"] body .callout[data-callout="notification"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -18960,6 +19138,7 @@ html[saved-theme="light"] body .callout[data-callout="notification"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -19218,6 +19397,9 @@ html[saved-theme="light"] body .callout[data-callout="positive"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -19324,6 +19506,7 @@ html[saved-theme="light"] body .callout[data-callout="positive"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -19582,6 +19765,9 @@ html[saved-theme="light"] body .callout[data-callout="pros"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -19688,6 +19874,7 @@ html[saved-theme="light"] body .callout[data-callout="pros"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -20012,6 +20199,9 @@ html[saved-theme="light"] body .callout[data-callout="reference"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -20118,6 +20308,7 @@ html[saved-theme="light"] body .callout[data-callout="reference"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -20376,6 +20567,9 @@ html[saved-theme="light"] body .callout[data-callout="reminder"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -20482,6 +20676,7 @@ html[saved-theme="light"] body .callout[data-callout="reminder"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -20740,6 +20935,9 @@ html[saved-theme="light"] body .callout[data-callout="reward"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -20846,6 +21044,7 @@ html[saved-theme="light"] body .callout[data-callout="reward"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -21104,6 +21303,9 @@ html[saved-theme="light"] body .callout[data-callout="site"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -21210,6 +21412,7 @@ html[saved-theme="light"] body .callout[data-callout="site"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -21600,6 +21803,9 @@ html[saved-theme="light"] body .callout[data-callout="win"] {
   --background-secondary-alt: rgb(244, 244, 240);
   --background-selected: rgba(142, 140, 139, 0.2);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
+  --bases-embed-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+  --bases-table-header-background-hover: rgba(var(--callout-color), 0.1);
   --blockquote-border-color: rgb(226, 224, 220);
   --blue: hsl(217.1, 31.4%, 47.5%);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
@@ -21706,6 +21912,7 @@ html[saved-theme="light"] body .callout[data-callout="win"] {
   --focus: hsl(199.5, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', Inter,sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -22157,6 +22364,16 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --icon-size: var(--icon-xs, 16px);
+  --icon-stroke: var(--icon-xs-stroke-width, 1px);
+  --pill-background: var(--tag-background, rgba(246, 141, 69, 0.15));
+  --pill-background-hover: var(--tag-background-hover, rgba(246, 141, 69, 0.25));
+  --pill-border-color: var(--tag-border-color, rgba(246, 141, 69, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, rgba(246, 141, 69, 0.25));
+  --pill-color: var(--tag-color, rgb(246, 141, 69));
+  --pill-color-hover: var(--tag-color-hover, rgb(246, 141, 69));
+  --pill-color-remove: var(--tag-color, rgb(246, 141, 69));
+  --pill-color-remove-hover: var(--tag-color-hover, rgb(246, 141, 69));
   background-color: var(--pill-background, rgba(246, 141, 69, 0.15));
   border-bottom-color: rgba(246, 141, 69, 0.15);
   border-left-color: rgba(246, 141, 69, 0.15);
@@ -22170,6 +22387,7 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  --font-weight: var(--h1-weight, 600);
   color: var(--h1-color, rgb(22, 22, 22));
   font-family: var(--h1-font, "??", Inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -22181,6 +22399,7 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  --font-weight: var(--h2-weight, 600);
   color: var(--h2-color, rgb(22, 22, 22));
   font-family: var(--h2-font, "??", Inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -22191,16 +22410,19 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  --font-weight: var(--h3-weight, 600);
   color: var(--h3-color, rgb(22, 22, 22));
   font-family: var(--h3-font, "??", Inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
+  --font-weight: var(--h4-weight, 600);
   color: var(--h4-color, rgb(22, 22, 22));
   font-family: var(--h4-font, "??", Inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
+  --font-weight: var(--h5-weight, 600);
   color: var(--h5-color, rgb(22, 22, 22));
   font-family: var(--h5-font, "??", Inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -22383,6 +22605,16 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --icon-size: var(--icon-xs, 16px);
+  --icon-stroke: var(--icon-xs-stroke-width, 1px);
+  --pill-background: var(--tag-background, rgba(246, 141, 69, 0.15));
+  --pill-background-hover: var(--tag-background-hover, rgba(246, 141, 69, 0.25));
+  --pill-border-color: var(--tag-border-color, rgba(246, 141, 69, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, rgba(246, 141, 69, 0.25));
+  --pill-color: var(--tag-color, rgb(246, 141, 69));
+  --pill-color-hover: var(--tag-color-hover, rgb(246, 141, 69));
+  --pill-color-remove: var(--tag-color, rgb(246, 141, 69));
+  --pill-color-remove-hover: var(--tag-color-hover, rgb(246, 141, 69));
   background-color: var(--pill-background, rgba(246, 141, 69, 0.15));
   color: var(--pill-color, rgb(246, 141, 69));
 }

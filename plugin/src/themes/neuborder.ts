@@ -405,6 +405,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #F6F6F6);
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   color: var(--color-activated-tab-header, rgb(0, 0, 0));
 }
@@ -424,6 +425,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #F6F6F6);
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgb(234, 234, 234);
   color: rgb(0, 0, 0);
@@ -629,6 +631,7 @@ html body html {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #fcfcfc;
   --flair-color: #000000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -917,6 +920,19 @@ html body del {
   text-decoration-color: rgb(0, 0, 0);
 }
 
+html body footer {
+  --icon-color: var(--text-muted, hsl(232, 60%, 50%));
+  --icon-color-hover: var(--text-muted, hsl(232, 60%, 50%));
+  --status-bar-text-color: var(--text-muted, hsl(232, 60%, 50%));
+  --tab-text-color: var(--text-faint, hsl(232, 60%, 50%));
+  --tab-text-color-active: var(--text-muted, hsl(232, 60%, 50%));
+  --tab-text-color-focused: var(--text-muted, hsl(232, 60%, 50%));
+  --tab-text-color-focused-active: var(--text-muted, hsl(232, 60%, 50%));
+  --text-faint: var(--on-border, hsl(232, 60%, 50%));
+  --text-muted: var(--on-border, hsl(232, 60%, 50%));
+  --titlebar-text-color: var(--text-muted, hsl(232, 60%, 50%));
+}
+
 html body h1.article-title {
   color: var(--text-normal, rgb(0, 0, 0));
 }
@@ -1089,6 +1105,7 @@ html body h2 {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #fcfcfc;
   --flair-color: #000000;
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -2568,6 +2585,30 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(232,
+    80%,
+    64%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(232,
+    80%,
+    64%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(232,
+    80%,
+    64%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(232,
+    80%,
+    64%, 0.15));
+  --pill-color: var(--tag-color, hsl(232, 
+    80%, 
+    64%));
+  --pill-color-hover: var(--tag-color-hover, hsl(232, 
+    80%, 
+    64%));
+  --pill-color-remove: var(--tag-color, hsl(232, 
+    80%, 
+    64%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(232, 
+    80%, 
+    64%));
   background-color: var(--pill-background, rgba(90, 109, 237, 0.1));
   border-bottom-color: rgba(90, 109, 237, 0.15);
   border-left-color: rgba(90, 109, 237, 0.15);
@@ -2641,6 +2682,16 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   color: var(--icon-color, rgb(35, 35, 35));
 }`,
     footer: `html body footer {
+  --icon-color: var(--text-muted, hsl(232, 60%, 50%));
+  --icon-color-hover: var(--text-muted, hsl(232, 60%, 50%));
+  --status-bar-text-color: var(--text-muted, hsl(232, 60%, 50%));
+  --tab-text-color: var(--text-faint, hsl(232, 60%, 50%));
+  --tab-text-color-active: var(--text-muted, hsl(232, 60%, 50%));
+  --tab-text-color-focused: var(--text-muted, hsl(232, 60%, 50%));
+  --tab-text-color-focused-active: var(--text-muted, hsl(232, 60%, 50%));
+  --text-faint: var(--on-border, hsl(232, 60%, 50%));
+  --text-muted: var(--on-border, hsl(232, 60%, 50%));
+  --titlebar-text-color: var(--text-muted, hsl(232, 60%, 50%));
   border-bottom-color: rgb(234, 234, 234);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -2711,6 +2762,7 @@ html body ul.section-ul {
 }
 
 html body .darkmode svg {
+  --icon-size: var(--icon-l, 20px);
   color: rgb(51, 71, 204);
   stroke: rgb(51, 71, 204);
 }`,
@@ -2778,6 +2830,30 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(232,
+    80%,
+    64%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(232,
+    80%,
+    64%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(232,
+    80%,
+    64%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(232,
+    80%,
+    64%, 0.15));
+  --pill-color: var(--tag-color, hsl(232, 
+    80%, 
+    64%));
+  --pill-color-hover: var(--tag-color-hover, hsl(232, 
+    80%, 
+    64%));
+  --pill-color-remove: var(--tag-color, hsl(232, 
+    80%, 
+    64%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(232, 
+    80%, 
+    64%));
   background-color: var(--pill-background, rgba(90, 109, 237, 0.1));
   color: var(--pill-color, rgb(90, 109, 237));
 }
@@ -2802,6 +2878,16 @@ html body ol.overflow {
 }
 
 html body .stacked-page-header {
+  --icon-color: var(--text-muted, hsl(232, 60%, 50%));
+  --icon-color-hover: var(--text-muted, hsl(232, 60%, 50%));
+  --status-bar-text-color: var(--text-muted, hsl(232, 60%, 50%));
+  --tab-text-color: var(--text-faint, hsl(232, 60%, 50%));
+  --tab-text-color-active: var(--text-muted, hsl(232, 60%, 50%));
+  --tab-text-color-focused: var(--text-muted, hsl(232, 60%, 50%));
+  --tab-text-color-focused-active: var(--text-muted, hsl(232, 60%, 50%));
+  --text-faint: var(--on-border, hsl(232, 60%, 50%));
+  --text-muted: var(--on-border, hsl(232, 60%, 50%));
+  --titlebar-text-color: var(--text-muted, hsl(232, 60%, 50%));
   background-color: var(--background-tertiary, rgb(232, 241, 252));
 }
 
@@ -2814,6 +2900,19 @@ html body .stacked-page.active {
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
+}
+
+html body .navigation-progress {
+  --icon-color: var(--text-muted, hsl(232, 60%, 50%));
+  --icon-color-hover: var(--text-muted, hsl(232, 60%, 50%));
+  --status-bar-text-color: var(--text-muted, hsl(232, 60%, 50%));
+  --tab-text-color: var(--text-faint, hsl(232, 60%, 50%));
+  --tab-text-color-active: var(--text-muted, hsl(232, 60%, 50%));
+  --tab-text-color-focused: var(--text-muted, hsl(232, 60%, 50%));
+  --tab-text-color-focused-active: var(--text-muted, hsl(232, 60%, 50%));
+  --text-faint: var(--on-border, hsl(232, 60%, 50%));
+  --text-muted: var(--on-border, hsl(232, 60%, 50%));
+  --titlebar-text-color: var(--text-muted, hsl(232, 60%, 50%));
 }
 
 html body .page-header h2.page-title {

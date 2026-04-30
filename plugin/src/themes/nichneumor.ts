@@ -287,6 +287,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #31333c);
   background-color: var(--tab-container-background, rgb(26, 27, 32));
   color: rgb(221, 223, 238);
 }
@@ -306,6 +307,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #31333c);
   background-color: var(--tab-container-background, rgb(26, 27, 32));
   border-left-color: rgb(65, 66, 79);
   color: rgb(221, 223, 238);
@@ -446,6 +448,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #2a2b33);
   border-bottom-color: rgb(221, 223, 238);
   border-left-color: rgb(221, 223, 238);
   border-right-color: rgb(221, 223, 238);
@@ -2081,6 +2084,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #cbc2b8);
   background-color: var(--tab-container-background, rgb(219, 209, 198));
   color: rgb(37, 36, 35);
 }
@@ -2100,6 +2104,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #cbc2b8);
   background-color: var(--tab-container-background, rgb(219, 209, 198));
   border-left-color: rgb(193, 184, 174);
   color: rgb(37, 36, 35);
@@ -2240,6 +2245,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #d1c7bd);
   border-bottom-color: rgb(37, 36, 35);
   border-left-color: rgb(37, 36, 35);
   border-right-color: rgb(37, 36, 35);

@@ -188,6 +188,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #191919);
   background-color: var(--tab-container-background, rgb(25, 25, 25));
   color: rgb(204, 204, 204);
 }
@@ -208,6 +209,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #191919);
   background-color: var(--tab-container-background, rgb(25, 25, 25));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(204, 204, 204);
@@ -341,6 +343,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #191919);
   border-bottom-color: rgb(204, 204, 204);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -1749,6 +1752,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #efefef);
   background-color: var(--tab-container-background, rgb(239, 239, 239));
   color: rgb(64, 64, 64);
 }
@@ -1769,6 +1773,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #efefef);
   background-color: var(--tab-container-background, rgb(239, 239, 239));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(64, 64, 64);
@@ -1907,6 +1912,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #efefef);
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;

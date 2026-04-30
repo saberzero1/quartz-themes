@@ -505,6 +505,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(300,  6%, 18%));
   background-color: var(--tab-container-background, rgb(49, 43, 49));
   color: rgb(48, 145, 113);
 }
@@ -524,6 +525,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(300,  6%, 18%));
   background-color: var(--tab-container-background, rgb(49, 43, 49));
   border-left-color: rgb(98, 119, 188);
   color: rgb(48, 145, 113);
@@ -841,6 +843,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, hsl(300,  6%, 18%));
   border-bottom-color: rgb(48, 145, 113);
   border-left-color: rgb(48, 145, 113);
   border-right-color: rgb(48, 145, 113);
@@ -2631,6 +2634,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(15, 20%, 88%));
   background-color: var(--tab-container-background, rgb(231, 221, 218));
   color: rgb(38, 34, 38);
 }
@@ -2650,6 +2654,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(15, 20%, 88%));
   background-color: var(--tab-container-background, rgb(231, 221, 218));
   border-left-color: rgb(84, 106, 182);
   color: rgb(38, 34, 38);
@@ -2967,6 +2972,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, hsl(15, 20%, 88%));
   border-bottom-color: rgb(38, 34, 38);
   border-left-color: rgb(38, 34, 38);
   border-right-color: rgb(38, 34, 38);
@@ -4013,6 +4019,10 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, hsl(226, 40%, 52%));
+  --pill-color-hover: var(--tag-color-hover, hsl(226, 40%, 52%));
+  --pill-color-remove: var(--tag-color, hsl(226, 40%, 52%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(226, 40%, 52%));
   background-color: hsl(var(--color-caution));
   border-bottom-color: rgb(239, 233, 231);
   border-bottom-left-radius: 25px;
@@ -4286,6 +4296,10 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-color: var(--tag-color, hsl(226, 40%, 52%));
+  --pill-color-hover: var(--tag-color-hover, hsl(226, 40%, 52%));
+  --pill-color-remove: var(--tag-color, hsl(226, 40%, 52%));
+  --pill-color-remove-hover: var(--tag-color-hover, hsl(226, 40%, 52%));
   background-color: hsl(var(--color-caution));
   border-radius: 25px;
   color: hsl(var(--color-base-1));

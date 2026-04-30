@@ -154,6 +154,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #141414);
   background-color: var(--tab-container-background, rgb(20, 20, 20));
   color: rgb(204, 204, 204);
 }
@@ -173,6 +174,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #141414);
   background-color: var(--tab-container-background, rgb(20, 20, 20));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(204, 204, 204);
@@ -1721,6 +1723,8 @@ html[saved-theme="dark"] body ul.section-ul {
 }
 
 html[saved-theme="dark"] body .darkmode svg {
+  --icon-size: var(--icon-l, 18px);
+  --icon-stroke: var(--icon-l-stroke-width, 1.75px);
   color: rgb(112, 112, 112);
   stroke: rgb(112, 112, 112);
 }`,
@@ -1983,6 +1987,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #fcfcfc);
   background-color: var(--tab-container-background, rgb(252, 252, 252));
   color: rgb(26, 26, 26);
 }
@@ -2002,6 +2007,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #fcfcfc);
   background-color: var(--tab-container-background, rgb(252, 252, 252));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(26, 26, 26);
@@ -3550,6 +3556,8 @@ html[saved-theme="light"] body ul.section-ul {
 }
 
 html[saved-theme="light"] body .darkmode svg {
+  --icon-size: var(--icon-l, 18px);
+  --icon-stroke: var(--icon-l-stroke-width, 1.75px);
   color: rgb(181, 179, 177);
   stroke: rgb(181, 179, 177);
 }`,

@@ -278,6 +278,7 @@ html body {
 }
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, color-mix(in srgb, rgb(0, 53, 107) 90%, black 100%));
   background-color: var(--tab-container-background, color(srgb 0 0.098452 0.198762));
   color: rgb(245, 245, 245);
 }
@@ -298,6 +299,7 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, color-mix(in srgb, rgb(0, 53, 107) 90%, black 100%));
   background-color: var(--tab-container-background, color(srgb 0 0.098452 0.198762));
   border-left-color: rgb(255, 239, 0);
   color: rgb(245, 245, 245);
@@ -535,6 +537,7 @@ html body figcaption {
 }
 
 html body figure {
+  --code-background: var(--ec-frm-edBg, color-mix(in srgb, rgb(0, 53, 107) 30%, transparent));
   border-bottom-color: rgb(245, 245, 245);
   border-left-color: rgb(245, 245, 245);
   border-right-color: rgb(245, 245, 245);
@@ -1568,6 +1571,12 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, color-mix(in srgb, rgb(0, 127, 255) 40%, transparent));
+  --pill-color: var(--tag-color, rgb(255, 239, 0));
+  --pill-color-remove: var(--tag-color, rgb(255, 239, 0));
+  --pill-padding-x: var(--tag-padding-x, 0.3em);
+  --pill-padding-y: var(--tag-padding-y, 0.1em);
+  --pill-radius: var(--tag-radius, 4px);
   background-color: var(--pill-background, color(srgb 0 0.498039 1 / 0.4));
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -1815,6 +1824,12 @@ html body .note-properties-row {
 }
 
 html body .note-properties-tags {
+  --pill-background: var(--tag-background, color-mix(in srgb, rgb(0, 127, 255) 40%, transparent));
+  --pill-color: var(--tag-color, rgb(255, 239, 0));
+  --pill-color-remove: var(--tag-color, rgb(255, 239, 0));
+  --pill-padding-x: var(--tag-padding-x, 0.3em);
+  --pill-padding-y: var(--tag-padding-y, 0.1em);
+  --pill-radius: var(--tag-radius, 4px);
   background-color: var(--pill-background, color(srgb 0 0.498039 1 / 0.4));
   border-radius: 4px;
   color: var(--pill-color, rgb(255, 239, 0));

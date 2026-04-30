@@ -316,6 +316,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(0, 0%, 19%));
   background-color: var(--tab-container-background, rgb(48, 48, 48));
 }
 
@@ -328,6 +329,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(0, 0%, 19%));
   background-color: var(--tab-container-background, rgb(48, 48, 48));
 }`,
     typography: `html[saved-theme="dark"] body h1.article-title {
@@ -382,6 +384,10 @@ html[saved-theme="dark"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="dark"] body figcaption {
   font-family: system-ui;
+}
+
+html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, hsl(0, 0%, 19%));
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(39, 38, 39));
@@ -619,6 +625,18 @@ html[saved-theme="dark"] body .callout > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary, 52, 170, 180);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(52, 170, 180, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(52, 170, 180, 0.25);
   border-bottom-left-radius: 12px;
@@ -655,6 +673,18 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug, 237,  51,  59);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(237, 51, 59, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(237, 51, 59, 0.25);
   border-bottom-left-radius: 12px;
@@ -691,6 +721,18 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
   --callout-color: var(--callout-error, 237,  51,  59);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(237, 51, 59, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(237, 51, 59, 0.25);
   border-bottom-left-radius: 12px;
@@ -727,6 +769,18 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
   --callout-color: var(--callout-example, 192,  97, 203);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(192, 97, 203, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(192, 97, 203, 0.25);
   border-bottom-left-radius: 12px;
@@ -763,6 +817,18 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail, 237,  51,  59);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(237, 51, 59, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(237, 51, 59, 0.25);
   border-bottom-left-radius: 12px;
@@ -799,6 +865,18 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
   --callout-color: var(--callout-info, 53, 132, 228);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(53, 132, 228, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(53, 132, 228, 0.25);
   border-bottom-left-radius: 12px;
@@ -835,6 +913,18 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
   --callout-color: var(--callout-default, 154, 153, 150);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(154, 153, 150, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(154, 153, 150, 0.25);
   border-bottom-left-radius: 12px;
@@ -871,6 +961,18 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
   --callout-color: var(--callout-question, 229, 165,  10);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(229, 165, 10, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(229, 165, 10, 0.25);
   border-bottom-left-radius: 12px;
@@ -907,6 +1009,18 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
   --callout-color: var(--callout-quote, 181, 131,  90);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(181, 131, 90, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(181, 131, 90, 0.25);
   border-bottom-left-radius: 12px;
@@ -943,6 +1057,18 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
   --callout-color: var(--callout-success, 51, 209, 122);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(51, 209, 122, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(51, 209, 122, 0.25);
   border-bottom-left-radius: 12px;
@@ -979,6 +1105,18 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip, 52, 170, 180);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(52, 170, 180, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(52, 170, 180, 0.25);
   border-bottom-left-radius: 12px;
@@ -1015,6 +1153,18 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo, 53, 132, 228);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(53, 132, 228, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(53, 132, 228, 0.25);
   border-bottom-left-radius: 12px;
@@ -1051,6 +1201,18 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning, 255, 120,   0);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(255, 120, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(255, 120, 0, 0.25);
   border-bottom-left-radius: 12px;
@@ -1193,6 +1355,14 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(213, 88%, 66%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(213, 88%, 66%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(213, 88%, 66%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(213, 88%, 66%, 0.15));
+  --pill-color: var(--tag-color, #62a0ea);
+  --pill-color-hover: var(--tag-color-hover, #62a0ea);
+  --pill-color-remove: var(--tag-color, #62a0ea);
+  --pill-color-remove-hover: var(--tag-color-hover, #62a0ea);
   background-color: var(--pill-background, rgba(92, 161, 245, 0.1));
   border-bottom-color: rgba(92, 161, 245, 0.15);
   border-bottom-left-radius: 24.36px;
@@ -1210,6 +1380,18 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 154, 153, 150);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   border-bottom-color: rgba(154, 153, 150, 0.25);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1280,6 +1462,14 @@ html[saved-theme="dark"] body .darkmode svg {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(213, 88%, 66%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(213, 88%, 66%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(213, 88%, 66%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(213, 88%, 66%, 0.15));
+  --pill-color: var(--tag-color, #62a0ea);
+  --pill-color-hover: var(--tag-color-hover, #62a0ea);
+  --pill-color-remove: var(--tag-color, #62a0ea);
+  --pill-color-remove-hover: var(--tag-color-hover, #62a0ea);
   background-color: var(--pill-background, rgba(92, 161, 245, 0.1));
   border-radius: 24.36px;
   color: var(--pill-color, rgb(98, 160, 234));
@@ -1633,6 +1823,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, hsl(0, 0%, 92%));
   background-color: var(--tab-container-background, rgb(235, 235, 235));
 }
 
@@ -1645,6 +1836,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, hsl(0, 0%, 92%));
   background-color: var(--tab-container-background, rgb(235, 235, 235));
 }`,
     typography: `html[saved-theme="light"] body h1.article-title {
@@ -1699,6 +1891,10 @@ html[saved-theme="light"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="light"] body figcaption {
   font-family: system-ui;
+}
+
+html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, hsl(0, 0%, 92%));
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(242, 242, 242));
@@ -1936,6 +2132,18 @@ html[saved-theme="light"] body .callout > .callout-content {
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary, 52, 170, 180);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(52, 170, 180, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(52, 170, 180, 0.25);
   border-bottom-left-radius: 12px;
@@ -1972,6 +2180,18 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug, 224,  27,  36);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(224, 27, 36, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(224, 27, 36, 0.25);
   border-bottom-left-radius: 12px;
@@ -2008,6 +2228,18 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
   --callout-color: var(--callout-error, 224,  27,  36);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(224, 27, 36, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(224, 27, 36, 0.25);
   border-bottom-left-radius: 12px;
@@ -2044,6 +2276,18 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
   --callout-color: var(--callout-example, 145,  65, 172);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(145, 65, 172, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(145, 65, 172, 0.25);
   border-bottom-left-radius: 12px;
@@ -2080,6 +2324,18 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail, 224,  27,  36);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(224, 27, 36, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(224, 27, 36, 0.25);
   border-bottom-left-radius: 12px;
@@ -2116,6 +2372,18 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
   --callout-color: var(--callout-info, 53, 132, 228);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(53, 132, 228, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(53, 132, 228, 0.25);
   border-bottom-left-radius: 12px;
@@ -2152,6 +2420,18 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
   --callout-color: var(--callout-default, 94,  92, 100);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(94, 92, 100, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(94, 92, 100, 0.25);
   border-bottom-left-radius: 12px;
@@ -2188,6 +2468,18 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
   --callout-color: var(--callout-question, 229, 165,  10);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(229, 165, 10, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(229, 165, 10, 0.25);
   border-bottom-left-radius: 12px;
@@ -2224,6 +2516,18 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
   --callout-color: var(--callout-quote, 152, 106,  68);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(152, 106, 68, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(152, 106, 68, 0.25);
   border-bottom-left-radius: 12px;
@@ -2260,6 +2564,18 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
   --callout-color: var(--callout-success, 46, 194, 126);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(46, 194, 126, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(46, 194, 126, 0.25);
   border-bottom-left-radius: 12px;
@@ -2296,6 +2612,18 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip, 52, 170, 180);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(52, 170, 180, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(52, 170, 180, 0.25);
   border-bottom-left-radius: 12px;
@@ -2332,6 +2660,18 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo, 53, 132, 228);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(53, 132, 228, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(53, 132, 228, 0.25);
   border-bottom-left-radius: 12px;
@@ -2368,6 +2708,18 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning, 255, 120,   0);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   background: rgba(255, 120, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(255, 120, 0, 0.25);
   border-bottom-left-radius: 12px;
@@ -2510,6 +2862,14 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-background: var(--tag-background, hsla(213, 88%, 66%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(213, 88%, 66%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(213, 88%, 66%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(213, 88%, 66%, 0.15));
+  --pill-color: var(--tag-color, #1c71d8);
+  --pill-color-hover: var(--tag-color-hover, #1c71d8);
+  --pill-color-remove: var(--tag-color, #1c71d8);
+  --pill-color-remove-hover: var(--tag-color-hover, #1c71d8);
   background-color: var(--pill-background, rgba(92, 161, 245, 0.1));
   border-bottom-color: rgba(92, 161, 245, 0.15);
   border-bottom-left-radius: 24.36px;
@@ -2527,6 +2887,18 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 94,  92, 100);
+  --checkbox-color: rgb(var(--callout-color));
+  --checkbox-color-hover: rgba(var(--callout-color), 75%);
+  --h1-color: rgba(var(--callout-color), 75%);
+  --h2-color: rgb(var(--callout-color));
+  --link-color: rgb(var(--callout-color));
+  --link-color-hover: rgba(var(--callout-color), 85%);
+  --link-decoration-color: rgba(var(--callout-color), 50%);
+  --link-external-color: rgb(var(--callout-color));
+  --link-external-color-hover: rgba(var(--callout-color), 85%);
+  --link-unresolved-color: rgb(var(--callout-color));
+  --link-unresolved-color-hover: rgba(var(--callout-color), 45%);
+  --link-unresolved-decoration-color: rgba(var(--callout-color), 50%);
   border-bottom-color: rgba(94, 92, 100, 0.25);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -2597,6 +2969,14 @@ html[saved-theme="light"] body .darkmode svg {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-background: var(--tag-background, hsla(213, 88%, 66%, 0.1));
+  --pill-background-hover: var(--tag-background-hover, hsla(213, 88%, 66%, 0.2));
+  --pill-border-color: var(--tag-border-color, hsla(213, 88%, 66%, 0.15));
+  --pill-border-color-hover: var(--tag-border-color-hover, hsla(213, 88%, 66%, 0.15));
+  --pill-color: var(--tag-color, #1c71d8);
+  --pill-color-hover: var(--tag-color-hover, #1c71d8);
+  --pill-color-remove: var(--tag-color, #1c71d8);
+  --pill-color-remove-hover: var(--tag-color-hover, #1c71d8);
   background-color: var(--pill-background, rgba(92, 161, 245, 0.1));
   border-radius: 24.36px;
   color: var(--pill-color, rgb(28, 113, 216));

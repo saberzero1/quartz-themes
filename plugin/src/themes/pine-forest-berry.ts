@@ -247,6 +247,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #3b4252);
   background-color: var(--tab-container-background, rgb(59, 66, 82));
   color: rgb(248, 248, 242);
 }
@@ -266,6 +267,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #3b4252);
   background-color: var(--tab-container-background, rgb(59, 66, 82));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(248, 248, 242);
@@ -469,6 +471,7 @@ html[saved-theme="dark"] body figcaption {
 }
 
 html[saved-theme="dark"] body figure {
+  --code-background: var(--ec-frm-edBg, #2a2c32);
   border-bottom-color: rgb(248, 248, 242);
   border-left-color: rgb(248, 248, 242);
   border-right-color: rgb(248, 248, 242);
@@ -1527,6 +1530,13 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: var(--text-normal, rgb(248, 248, 242));
 }
 
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #f2bd77);
+  --pill-color-hover: var(--tag-color-hover, #f2bd77);
+  --pill-color-remove: var(--tag-color, #f2bd77);
+  --pill-color-remove-hover: var(--tag-color-hover, #f2bd77);
+}
+
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(242, 189, 119);
 }
@@ -1733,6 +1743,10 @@ html[saved-theme="dark"] body .note-properties-row {
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #f2bd77);
+  --pill-color-hover: var(--tag-color-hover, #f2bd77);
+  --pill-color-remove: var(--tag-color, #f2bd77);
+  --pill-color-remove-hover: var(--tag-color-hover, #f2bd77);
   color: var(--pill-color, rgb(242, 189, 119));
 }
 
@@ -2075,6 +2089,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+  --bases-table-header-background: var(--background-secondary, #f2f2f2);
   background-color: var(--tab-container-background, rgb(242, 242, 242));
   color: rgb(21, 24, 30);
 }
@@ -2094,6 +2109,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, #f2f2f2);
   background-color: var(--tab-container-background, rgb(242, 242, 242));
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(21, 24, 30);
@@ -2297,6 +2313,7 @@ html[saved-theme="light"] body figcaption {
 }
 
 html[saved-theme="light"] body figure {
+  --code-background: var(--ec-frm-edBg, #e6e6e6);
   border-bottom-color: rgb(21, 24, 30);
   border-left-color: rgb(21, 24, 30);
   border-right-color: rgb(21, 24, 30);
@@ -3355,6 +3372,13 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: var(--text-normal, rgb(21, 24, 30));
 }
 
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  --pill-color: var(--tag-color, #eea444);
+  --pill-color-hover: var(--tag-color-hover, #eea444);
+  --pill-color-remove: var(--tag-color, #eea444);
+  --pill-color-remove-hover: var(--tag-color-hover, #eea444);
+}
+
 html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(238, 164, 68);
 }
@@ -3561,6 +3585,10 @@ html[saved-theme="light"] body .note-properties-row {
 }
 
 html[saved-theme="light"] body .note-properties-tags {
+  --pill-color: var(--tag-color, #eea444);
+  --pill-color-hover: var(--tag-color-hover, #eea444);
+  --pill-color-remove: var(--tag-color, #eea444);
+  --pill-color-remove-hover: var(--tag-color-hover, #eea444);
   color: var(--pill-color, rgb(238, 164, 68));
 }
 
