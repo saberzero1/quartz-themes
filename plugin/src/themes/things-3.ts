@@ -24,6 +24,8 @@ export const theme: ThemeData = {
   --accent-h: 213;
   --accent-l: 70%;
   --accent-s: 100%;
+  --anim-duration-fast: 0.2s;
+  --anim-duration-medium: 0.3s;
   --anim-motion-jumpy: cubic-bezier(.58,.53,.57,1.16);
   --background-modifier-border: var(--color-base-30, rgba(0, 0, 0, 0.2));
   --background-modifier-error: var(--color-red, #f83366);
@@ -330,12 +332,14 @@ html[saved-theme="dark"] body p {
   color: var(--link-external-color, rgb(156, 205, 255));
   outline: rgb(156, 205, 255) none 0px;
   text-decoration-color: rgb(156, 205, 255);
+  transition: opacity 0.2s ease-in-out;
 }
 
 html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: var(--link-color, rgb(156, 205, 255));
   outline: rgb(156, 205, 255) none 0px;
   text-decoration-color: rgb(156, 205, 255);
+  transition: opacity 0.2s ease-in-out;
 }
 
 html[saved-theme="dark"] body a.internal-link.broken {
@@ -343,6 +347,7 @@ html[saved-theme="dark"] body a.internal-link.broken {
   outline: rgb(156, 205, 255) none 0px;
   text-decoration: rgba(102, 171, 255, 0.3);
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(102, 171, 255, 0.3));
+  transition: opacity 0.2s ease-in-out;
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   background-color: var(--blockquote-background-color, rgba(128, 128, 128, 0.07));
@@ -1381,6 +1386,8 @@ html[saved-theme="dark"] body ul.tags > li {
   --accent-h: 210;
   --accent-l: 38%;
   --accent-s: 100%;
+  --anim-duration-fast: 0.2s;
+  --anim-duration-medium: 0.3s;
   --anim-motion-jumpy: cubic-bezier(.58,.53,.57,1.16);
   --background-modifier-border: var(--color-base-30, rgba(200, 200, 200, 0.1));
   --background-modifier-error: var(--color-red, #f83366);
@@ -1705,12 +1712,14 @@ html[saved-theme="light"] body p {
   color: var(--link-external-color, rgb(0, 98, 193));
   outline: rgb(0, 98, 193) none 0px;
   text-decoration-color: rgb(0, 98, 193);
+  transition: opacity 0.2s ease-in-out;
 }
 
 html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: var(--link-color, rgb(0, 98, 193));
   outline: rgb(0, 98, 193) none 0px;
   text-decoration-color: rgb(0, 98, 193);
+  transition: opacity 0.2s ease-in-out;
 }
 
 html[saved-theme="light"] body a.internal-link.broken {
@@ -1718,6 +1727,7 @@ html[saved-theme="light"] body a.internal-link.broken {
   outline: rgb(0, 98, 193) none 0px;
   text-decoration: rgba(0, 97, 194, 0.3);
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(0, 97, 194, 0.3));
+  transition: opacity 0.2s ease-in-out;
 }`,
     lists: `html[saved-theme="light"] body dd {
   color: rgb(45, 46, 52);

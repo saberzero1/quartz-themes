@@ -279,7 +279,7 @@ body {
     text-decoration-color: rgb(0, 98, 193);
     text-decoration-line: var(--link-external-decoration, underline);
     text-decoration-style: solid;
-    transition: opacity 0.14s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
     transform: none;
     user-select: text;
     animation-name: none;
@@ -320,7 +320,7 @@ body {
     text-decoration-color: rgb(0, 98, 193);
     text-decoration-line: var(--link-decoration, underline);
     text-decoration-style: solid;
-    transition: opacity 0.14s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
     transform: none;
     user-select: text;
     animation-name: none;
@@ -360,7 +360,7 @@ body {
     text-decoration-color: var(--link-unresolved-decoration-color, rgba(0, 97, 194, 0.3));
     text-decoration-line: var(--link-decoration, underline);
     text-decoration-style: var(--link-unresolved-decoration-style, solid);
-    transition: opacity 0.14s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
     transform: none;
     user-select: text;
     animation-name: none;
@@ -4090,7 +4090,7 @@ html[saved-theme="dark"] {
       text-decoration-color: rgb(156, 205, 255);
       text-decoration-line: var(--link-external-decoration, underline);
       text-decoration-style: solid;
-      transition: opacity 0.14s ease-in-out;
+      transition: opacity 0.2s ease-in-out;
       transform: none;
       user-select: text;
       animation-name: none;
@@ -4131,7 +4131,7 @@ html[saved-theme="dark"] {
       text-decoration-color: rgb(156, 205, 255);
       text-decoration-line: var(--link-decoration, underline);
       text-decoration-style: solid;
-      transition: opacity 0.14s ease-in-out;
+      transition: opacity 0.2s ease-in-out;
       transform: none;
       user-select: text;
       animation-name: none;
@@ -4171,7 +4171,7 @@ html[saved-theme="dark"] {
       text-decoration-color: var(--link-unresolved-decoration-color, rgba(102, 171, 255, 0.3));
       text-decoration-line: var(--link-decoration, underline);
       text-decoration-style: var(--link-unresolved-decoration-style, solid);
-      transition: opacity 0.14s ease-in-out;
+      transition: opacity 0.2s ease-in-out;
       transform: none;
       user-select: text;
       animation-name: none;

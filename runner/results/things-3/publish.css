@@ -807,7 +807,7 @@ body.theme-light {
   --accent-h: 210 !important;
   --accent-l: 38% !important;
   --accent-s: 100% !important;
-  --anim-duration-fast: 140ms !important;
+  --anim-duration-fast: 0.2s !important;
   --anim-duration-moderate: 300ms !important;
   --anim-duration-none: 0 !important;
   --anim-duration-slow: 560ms !important;
@@ -1266,6 +1266,7 @@ body.theme-light {
   --prompt-input-background: #dee0e5 !important;
   --properties-background: var(--background-secondary, #f5f6f8) !important;
   --text-extreme: #000000 !important;
+  --anim-duration-medium: 0.3s !important;
   --color-red-trans: rgba(255, 83, 131, 0.3) !important;
   --metadata-property-box-shadow: none !important;
   --mobile-glass-border: color-mix(
@@ -2084,7 +2085,7 @@ body.theme-dark {
   --accent-h: 213 !important;
   --accent-l: 70% !important;
   --accent-s: 100% !important;
-  --anim-duration-fast: 140ms !important;
+  --anim-duration-fast: 0.2s !important;
   --anim-duration-moderate: 300ms !important;
   --anim-duration-none: 0 !important;
   --anim-duration-slow: 560ms !important;
@@ -2527,6 +2528,7 @@ body.theme-dark {
   --prompt-input-background: #474747 !important;
   --properties-background: rgb(35, 35, 35) !important;
   --text-extreme: #ffffff !important;
+  --anim-duration-medium: 0.3s !important;
   --color-red-trans: rgba(255, 83, 131, 0.3) !important;
   --metadata-property-box-shadow: none !important;
   --mobile-glass-border: color-mix(
@@ -2582,7 +2584,7 @@ body body.theme-light .markdown-rendered a.external-link {
   text-decoration-color: rgb(0, 98, 193);
   text-decoration-line: var(--link-external-decoration, underline);
   text-decoration-style: solid;
-  transition: opacity 0.14s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   transform: none;
   user-select: text;
   animation-name: none;
@@ -2621,7 +2623,7 @@ body body.theme-light .markdown-rendered a.internal-link {
   text-decoration-color: rgb(0, 98, 193);
   text-decoration-line: var(--link-decoration, underline);
   text-decoration-style: solid;
-  transition: opacity 0.14s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   transform: none;
   user-select: text;
   animation-name: none;
@@ -2663,7 +2665,7 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   );
   text-decoration-line: var(--link-decoration, underline);
   text-decoration-style: var(--link-unresolved-decoration-style, solid);
-  transition: opacity 0.14s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   transform: none;
   user-select: text;
   animation-name: none;
@@ -4969,7 +4971,7 @@ body body.theme-dark .markdown-rendered a.external-link {
   text-decoration-color: rgb(156, 205, 255);
   text-decoration-line: var(--link-external-decoration, underline);
   text-decoration-style: solid;
-  transition: opacity 0.14s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   transform: none;
   user-select: text;
   animation-name: none;
@@ -5008,7 +5010,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
   text-decoration-color: rgb(156, 205, 255);
   text-decoration-line: var(--link-decoration, underline);
   text-decoration-style: solid;
-  transition: opacity 0.14s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   transform: none;
   user-select: text;
   animation-name: none;
@@ -5050,7 +5052,7 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   );
   text-decoration-line: var(--link-decoration, underline);
   text-decoration-style: var(--link-unresolved-decoration-style, solid);
-  transition: opacity 0.14s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   transform: none;
   user-select: text;
   animation-name: none;

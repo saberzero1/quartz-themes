@@ -592,7 +592,7 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, 0, 1, -684.62, 0);
+  transform: matrix(1, 0, 0, 1, -944.736, 0);
 }
 
 html body .page > div#quartz-body div.sidebar {
@@ -964,7 +964,7 @@ html body del {
   font-family: var(--font-interface, "Share Tech Mono", "Courier New", monospace);
   outline: rgb(176, 108, 90) none 0px;
   text-decoration-color: rgb(176, 108, 90);
-  transform: matrix(1, 0, 0, 1, 0.178748, 0);
+  transform: matrix(1, 0, 0, 1, 0.186058, 0);
 }
 
 html body h1.article-title {

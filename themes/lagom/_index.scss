@@ -3129,7 +3129,7 @@ body {
   ul.tags > li {
     background-color: var(--tag-background, rgba(138, 92, 245, 0.1));
     color: var(--tag-color, rgb(138, 92, 245));
-    border: 0px solid rgba(138, 92, 245, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-top-left-radius: 24.5px;
     border-top-right-radius: 24.5px;
     border-bottom-left-radius: 24.5px;
@@ -7662,7 +7662,7 @@ html[saved-theme="dark"] {
     ul.tags > li {
       background-color: var(--tag-background, rgba(138, 92, 245, 0.1));
       color: var(--tag-color, rgb(166, 138, 249));
-      border: 0px solid rgba(138, 92, 245, 0.15);
+      border: 1px solid rgba(0, 0, 0, 0.3);
       border-top-left-radius: 24.5px;
       border-top-right-radius: 24.5px;
       border-bottom-left-radius: 24.5px;
